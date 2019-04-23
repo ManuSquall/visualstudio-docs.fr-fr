@@ -19,17 +19,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84f00ce07c2eb5e417141b6139d11b44cccf3362
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 096d15b82e256df2bc35bc443c248e8ca0662c19
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948289"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661852"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Enregistrer des données avec les méthodes DBDirect du TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Cette procédure pas à pas fournit des instructions détaillées pour l’exécution des instructions SQL directement sur une base de données en utilisant les méthodes DBDirect d’un TableAdapter. Les méthodes DBDirect d’un TableAdapter fournissent un niveau élevé de contrôle sur vos mises à jour de base de données. Vous pouvez les utiliser pour exécuter des instructions SQL et les procédures stockées en appelant l’individu `Insert`, `Update`, et `Delete` méthodes selon les besoins de votre application (par opposition à surchargées `Update` méthode qui effectue la mise à jour Instructions INSERT et DELETE dans un seul appel).  
   
  Pendant cette procédure pas à pas, vous allez apprendre à :  

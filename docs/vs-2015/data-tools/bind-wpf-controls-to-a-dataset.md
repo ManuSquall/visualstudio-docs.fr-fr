@@ -18,17 +18,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 94b6c5d7e1695b4b9ef2d1b383575a8806b112db
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 663665c77a966d793930326ae04f8d30c71de771
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951354"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665517"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Lier des contrôles WPF à un dataset
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Dans cette procédure pas à pas, vous allez créer une application WPF qui contient des contrôles liés aux données. Les contrôles sont liés aux enregistrements produit encapsulés dans un dataset. Vous allez également ajouter des boutons pour parcourir les produits et enregistrer les modifications apportées aux enregistrements produit.  
   
  Cette procédure pas à pas décrit les tâches suivantes :  

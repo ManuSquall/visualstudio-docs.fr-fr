@@ -18,17 +18,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9c7854e982a369816a9dac2c54df48e98ec6d3b7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 85f57d03ac52562c5cbebc27f410570c03e33d3f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804232"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668169"
 ---
 # <a name="troubleshooting-net-framework-targeting-errors"></a>Dépannage des erreurs de ciblage du .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Cette rubrique décrit les erreurs MSBuild qui peuvent se produire en raison de problèmes de référence et la façon dont vous pouvez résoudre ces erreurs.  
   
 ## <a name="you-have-referenced-a-project-or-assembly-that-targets-a-different-version-of-the-net-framework"></a>Vous avez référencé un projet ou un assembly qui cible une version différente du .NET Framework  
@@ -58,7 +57,7 @@ Cette rubrique décrit les erreurs MSBuild qui peuvent se produire en raison de 
 >  Après la fermeture et la ré-ouverture votre projet, vous devez également le régénérer pour vérifier que toutes les références sont correctement résolues.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour cibler une version du .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
+ [Guide pratique pour Cibler une Version du .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)   
  [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1)   
  [Ciblage d’une version spécifique du .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md)   
  [Multiciblage](../msbuild/msbuild-multitargeting-overview.md)

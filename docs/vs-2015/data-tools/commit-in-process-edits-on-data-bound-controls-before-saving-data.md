@@ -21,17 +21,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d703ef271dfec09b277db2c2702679b8087b4b88
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 813e49ab316f1fe74daa7a797dd6e16a878667d1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950046"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664581"
 ---
 # <a name="commit-in-process-edits-on-data-bound-controls-before-saving-data"></a>Valider des modifications in-process sur des contrôles liés aux données avant d’enregistrer des données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Lorsque vous modifiez les valeurs dans des contrôles liés aux données, les utilisateurs doivent sortir pour valider la valeur mise à jour dans la source de données sous-jacente, le contrôle est lié à l’enregistrement en cours. Lorsque vous faites glisser des éléments à partir de la [fenêtre Sources de données](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) sur un formulaire, le premier élément que vous déposez génère du code dans le **enregistrer** événement de clic du bouton du <xref:System.Windows.Forms.BindingNavigator>. Ce code appelle la <xref:System.Windows.Forms.BindingSource.EndEdit%2A> méthode de la <xref:System.Windows.Forms.BindingSource>. Par conséquent, l’appel à la <xref:System.Windows.Forms.BindingSource.EndEdit%2A> méthode est générée uniquement pour la première <xref:System.Windows.Forms.BindingSource> qui est ajouté au formulaire.  
   
  L’appel de <xref:System.Windows.Forms.BindingSource.EndEdit%2A> valide toutes les modifications en cours de tous les contrôles liés aux données modifiés. Par conséquent, si un contrôle lié aux données a encore le focus et que vous cliquez sur le bouton **Enregistrer**, toutes les modifications en attente dans ce contrôle sont validées avant l’enregistrement réel (la méthode `TableAdapterManager.UpdateAll`).  

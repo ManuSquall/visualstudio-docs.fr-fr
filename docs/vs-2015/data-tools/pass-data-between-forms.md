@@ -20,17 +20,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d2546266d1b050de6a08e7ba8e2f1526acc0291b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 9a109490c4ff89c6a9f45533fc1305d915522621
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951210"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668936"
 ---
 # <a name="pass-data-between-forms"></a>Passer des données entre des formulaires
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Cette procédure pas à pas fournit des instructions détaillées pour passer des données d'un formulaire à l'autre. Les tables customers et orders de Northwind, un formulaire permet aux utilisateurs de sélectionner un client et un deuxième formulaire affiche les commandes du client sélectionné. Cette procédure pas à pas montre comment créer une méthode sur la deuxième forme qui reçoit des données à partir de la première forme.  
   
 > [!NOTE]

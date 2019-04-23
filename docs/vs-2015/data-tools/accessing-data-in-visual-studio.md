@@ -22,16 +22,15 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 5165cf21328b8af1cda63384a5dafbc8dfc2d849
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 02d40062b1202a261aa7be4ae306329a6a93b37a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001708"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669456"
 ---
 # <a name="accessing-data-in-visual-studio"></a>L’accès aux données dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Dans Visual Studio, vous pouvez créer des applications qui se connectent à des données dans n’importe quel produit de base de données ou un service, dans n’importe quel format, n’importe où, sur un ordinateur local, sur un réseau local, ou dans un cloud public, privé ou hybride.
 
@@ -78,7 +77,7 @@ Dans Visual Studio, vous pouvez créer des applications qui se connectent à des
 
  Pour obtenir une documentation accès aux données spécifiquement liée à ASP.NET, consultez [utilisation des données](http://www.asp.net/web-forms/overview/presenting-and-managing-data) sur le site ASP.NET. Pour obtenir un didacticiel sur l’utilisation d’Entity Framework avec ASP.NET MVC, consultez [mise en route avec Entity Framework 6 Code First avec MVC 5](http://www.asp.net/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
 
- Des applications de Windows Platform (UWP) universelle en C# ou Visual Basic peuvent utiliser le Kit de développement logiciel Microsoft Azure pour .NET pour accéder à stockage Azure et autres services Azure. La classe Windows.Web.HttpClient permet la communication avec n’importe quel service RESTful. Pour plus d’informations, consultez [comment se connecter à un serveur HTTP à l’aide de Windows.Web.Http](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
+ Des applications de Windows Platform (UWP) universelle en c# ou Visual Basic peuvent utiliser le Kit de développement logiciel Microsoft Azure pour .NET pour accéder à stockage Azure et autres services Azure. La classe Windows.Web.HttpClient permet la communication avec n’importe quel service RESTful. Pour plus d’informations, consultez [comment se connecter à un serveur HTTP à l’aide de Windows.Web.Http](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
 
  Stockage des données sur l’ordinateur local, l’approche recommandée consiste à utiliser SQLite, qui s’exécute dans le même processus que l’application. Si une couche de mappage objet-relationnel (ORM) est requise, vous pouvez utiliser Entity Framework. Pour plus d’informations, consultez [accès aux données](https://msdn.microsoft.com/windows/uwp/data-access/index) dans le centre de développement Windows.
 

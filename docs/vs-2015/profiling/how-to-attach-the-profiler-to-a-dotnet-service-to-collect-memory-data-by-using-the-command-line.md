@@ -9,14 +9,14 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2568b04e999a1b887e918a07ff8233ea9bf289a1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b6d205a3a8abddadc714aea4aa913ff064518920
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802376"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663477"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>Comment : attacher le profileur à un service .NET pour collecter des données de mémoire en utilisant la ligne de commande
+# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>Procédure : Attacher le Profiler à un Service .NET pour collecter des données de mémoire à l’aide de la ligne de commande
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette rubrique explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour attacher le profileur à un service [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] et pour collecter des données de mémoire. Vous pouvez collecter des données sur le nombre et la taille des allocations de mémoire, ainsi que des données sur la durée de vie des objets en mémoire.  
@@ -83,7 +83,6 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
    |    [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`     |                                                                                                                    Spécifie le compteur de performances Windows dont les données doivent être collectées au cours du profilage.                                                                                                                     |
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                  À utiliser avec **/wincounter** uniquement. Spécifie le nombre de millisecondes écoulées entre les événements de collecte du compteur de performances Windows. La valeur par défaut est de 500 ms.                                                                                   |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                     Spécifie l’événement du Suivi d’événements pour Windows (ETW) qui doit être collecté au cours du profilage. Les événements ETW sont collectés dans un fichier séparé (.etl).                                                                                     |
-
 
 8. Attachez le profileur au service. Type :  
 

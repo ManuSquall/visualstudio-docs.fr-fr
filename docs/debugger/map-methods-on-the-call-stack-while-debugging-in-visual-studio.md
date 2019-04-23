@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da49cd81ea309df2d8e2bd0b4c41c28a84564fa8
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: fd8928f204da4a3af15918a598df6241cd39df85
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526088"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665673"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>Créer une carte visuelle de la pile des appels pendant le débogage (C#, Visual Basic, C++, JavaScript)
 
@@ -45,7 +45,7 @@ Pour une procédure pas à pas, regardez cette vidéo : [Vidéo : Déboguez vi
 Pour plus d’informations des commandes et des actions que vous pouvez utiliser des cartes de code, consultez [Parcourir et réorganiser des cartes de code](../modeling/browse-and-rearrange-code-maps.md).
 
 >[!IMPORTANT]
->Vous pouvez créer uniquement dans les cartes de code [Visual Studio Enterprise edition](https://visualstudio.microsoft.com/downloads/).
+>Vous pouvez créer uniquement dans les cartes de code [Visual Studio Enterprise edition](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019).
 
 Voici un rapide coup de œil à une carte de code :
 
@@ -53,11 +53,11 @@ Voici un rapide coup de œil à une carte de code :
 
 ##  <a name="MapStack"></a> Mapper la pile des appels
 
-1. Dans Visual Studio Enterprise C#, Visual Basic, C++ ou JavaScript du projet, démarrez le débogage en sélectionnant **déboguer** > **démarrer le débogage** ou en appuyant sur **F5**.
+1. Dans Visual Studio Enterprise C#, Visual Basic, C++, ou JavaScript du projet, démarrez le débogage en sélectionnant **déboguer** > **démarrer le débogage** ou en appuyant sur **F5** .
 
 1. Une fois votre application passe en mode arrêt ou que vous parcourez une fonction, sélectionnez **déboguer** > **carte de Code**, ou appuyez sur **Ctrl**+**MAJ** +**`**.
 
-   La pile d'appels actuelle apparaît en orange sur une nouvelle carte de code :
+   La pile d’appels actuelle apparaît en orange sur une nouvelle carte de code :
 
    ![Voir pile des appels sur carte de code](../debugger/media/debuggermap_seeundocallstack.png "DebuggerMap_SeeUndoCallStack")
 

@@ -13,35 +13,35 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 90f7fe4d3e4b316f48aed46c40b3d24e0969a536
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
-ms.translationtype: MT
+ms.openlocfilehash: 7eb266eda25198f6d270ebcf48086141a73dcb9c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504430"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665452"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Déployer une solution Office à l’aide de ClickOnce
   Vous pouvez déployer votre solution Office plus rapidement en utilisant ClickOnce. Si vous publiez des mises à jour, votre solution les détecte et les installe automatiquement. Toutefois, avec ClickOnce, vous devez installer votre solution séparément pour chaque utilisateur d'un ordinateur. Par conséquent, vous devez envisager d’utiliser le programme d’installation de Windows (*.msi*) si plusieurs utilisateurs exécutent votre solution sur le même ordinateur.
 
 ## <a name="in-this-topic"></a>Dans cette rubrique
 
-- [Publier la solution](#Publish)
+- [Publiez la solution](#Publish)
 
-- [Déterminer comment accorder un niveau de confiance à la solution](#Trust)
+- [Décidez comment vous souhaitez accorder une confiance à la solution](#Trust)
 
 - [Aider les utilisateurs à installer la solution](#Helping)
 
-- [Placer le document d'une solution sur l'ordinateur de l'utilisateur final (personnalisations au niveau du document uniquement)](#Put)
+- [Placer le document d’une solution sur l’ordinateur de l’utilisateur final (personnalisations au niveau du document uniquement)](#Put)
 
-- [Placer le document d'une solution sur un serveur exécutant SharePoint (personnalisations au niveau du document uniquement)](#SharePoint)
+- [Placer le document d’une solution sur un serveur qui exécute SharePoint (personnalisations au niveau du document uniquement)](#SharePoint)
 
-- [Créer un programme d'installation personnalisé](#Custom)
+- [Créer un programme d’installation personnalisé](#Custom)
 
 - [Publier une mise à jour](#Update)
 
-- [Modifier l'emplacement d'installation d'une solution](#Location)
+- [Modifier l’emplacement d’installation d’une solution](#Location)
 
-- [Restaurer la version antérieure d'une solution](#Roll)
+- [Restaurer une version antérieure d’une solution](#Roll)
 
   Pour plus d’informations sur la façon de déployer une solution Office en créant un fichier Windows Installer, consultez [déployer une solution Office à l’aide du programme d’installation de Windows](../vsto/deploying-an-office-solution-by-using-windows-installer.md).
 
@@ -92,8 +92,8 @@ ms.locfileid: "59504430"
     |Option|Description|
     |------------|-----------------|
     |**Télécharger les composants requis à partir du site web du fournisseur de composants**|L'utilisateur est invité à télécharger et à installer les composants requis du fournisseur.|
-    |**Télécharger les composants requis à partir de l'emplacement de mon application**|Les logiciels requis sont installés avec la solution. Si vous choisissez cette option, Visual Studio copie tous les packages de composants requis dans l'emplacement de publication à votre place. Pour que cette option fonctionne, les packages de composants requis doivent être sur l'ordinateur de développement.|
-    |**Télécharger les composants requis depuis l'emplacement suivant**|Visual Studio copie tous les packages de composants requis dans l'emplacement que vous spécifiez et les installe avec la solution.|
+    |**Télécharger les composants requis à partir de l’emplacement de mon application**|Les logiciels requis sont installés avec la solution. Si vous choisissez cette option, Visual Studio copie tous les packages de composants requis dans l'emplacement de publication à votre place. Pour que cette option fonctionne, les packages de composants requis doivent être sur l'ordinateur de développement.|
+    |**Télécharger les composants requis depuis l’emplacement suivant**|Visual Studio copie tous les packages de composants requis dans l'emplacement que vous spécifiez et les installe avec la solution.|
 
      Consultez [boîte de dialogue composants requis](../ide/reference/prerequisites-dialog-box.md).
 
@@ -340,12 +340,11 @@ ms.locfileid: "59504430"
 
  Dans le cadre du processus d’installation personnalisée, appelez l’outil de programme d’installation pour les solutions Office (*VSTOInstaller.exe*), qui est installé dans l’emplacement suivant par défaut :
 
- *%commonprogramfiles%\microsoft shared\VSTO\10.0\VSTOInstaller.exe*
+ *%CommonProgramFiles%\Microsoft shared\VSTO\10.0\VSTOInstaller.exe*
 
  Si l’outil n’est pas dans cet emplacement, vous pouvez utiliser la **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSTO Runtime Setup\v4\InstallerPath** ou **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSTO Runtime Setup\v4 \InstallerPath** clé de Registre pour rechercher le chemin d’accès à cet outil.
 
  Vous pouvez utiliser les paramètres suivants avec *VSTOinstaller.exe*.
-
 
 | Paramètre | Définition |
 |------------------| - |
@@ -461,7 +460,7 @@ ms.locfileid: "59504430"
 
 - [Déployer une solution Office](../vsto/deploying-an-office-solution.md)
 - [Publier les solutions Office](../vsto/deploying-an-office-solution-by-using-clickonce.md)
-- [Procédure : Publier une solution Office à l’aide de ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
-- [Procédure : Installer une solution ClickOnce Office](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)
-- [Procédure : Publier une solution de Office au niveau du document sur un serveur SharePoint à l’aide de ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)
+- [Guide pratique pour Publier une solution Office à l’aide de ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8)
+- [Guide pratique pour Installer une solution ClickOnce Office](https://msdn.microsoft.com/14702f48-9161-4190-994c-78211fe18065)
+- [Guide pratique pour Publier une solution de Office au niveau du document sur un serveur SharePoint à l’aide de ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58)
 - [Créer un programme d’installation personnalisé pour une solution office de ClickOnce](https://msdn.microsoft.com/3e5887ed-155f-485d-b8f6-3c02c074085e)

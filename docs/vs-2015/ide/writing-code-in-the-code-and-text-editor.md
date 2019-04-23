@@ -60,12 +60,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbfb22a5854d8d966548e113f10c6fdb0ddc070a
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
-ms.translationtype: MT
+ms.openlocfilehash: 5953afed3ede465cab03677c00e2e930ac6b6cb4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366612"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665741"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Écriture de code dans l'éditeur de code et de texte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -171,7 +171,6 @@ La commande « Naviguer vers » de Visual Studio effectue une recherche de vot
     À mesure que vous tapez, les résultats s’affichent dans une liste déroulante sous la zone de texte.
 1. Pour accéder à un élément, sélectionnez-le dans la liste.
 
-
 ### <a name="filter-your-search"></a>Filtrer votre recherche
 
 Pour limiter votre recherche aux symboles de code, faites précéder la requête naviguer vers avec un «\@» caractères. Par exemple, si vous recherchez `@application`, Naviguer vers affiche uniquement les classes qui contiennent le mot « application ».
@@ -191,29 +190,29 @@ Cette fonctionnalité est particulièrement utile si votre code contient des nom
 
 -   [Paramètres de Visual Basic](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
 
--   [À l’aide de l’environnement de développement Visual Studio pour c#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
+-   [Utilisation de l’environnement de développement Visual Studio pour C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
 
 -   [Options, Éditeur de texte, JavaScript, Mise en forme](../ide/reference/options-text-editor-javascript-formatting.md)  
 
 ## <a name="in-this-section"></a>Dans cette section  
 
--   [Finding and Replacing Text](../ide/finding-and-replacing-text.md)  
+-   [Recherche et remplacement de texte](../ide/finding-and-replacing-text.md)  
 
 -   [Encodages et sauts de ligne](../ide/encodings-and-line-breaks.md)  
 
--   [mode Plan](../ide/outlining.md)  
+-   [Mode Plan](../ide/outlining.md)  
 
 -   [Refactorisation](../ide/refactoring-in-visual-studio.md)  
 
 -   [Conseils de productivité](../ide/productivity-tips-for-visual-studio.md)  
 
--   [Using IntelliSense](../ide/using-intellisense.md)  
+-   [Utilisation de la fonctionnalité IntelliSense](../ide/using-intellisense.md)  
 
 -   [Personnalisation de l’éditeur](../ide/customizing-the-editor.md)  
 
--   [Procédure : Suivre votre Code en personnalisant la barre de défilement](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
+-   [Guide pratique pour suivre votre code en personnalisant la barre de défilement](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
 
--   [Procédure : Afficher et modifier le Code à l’aide d’aperçu de définition (Alt + F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
+-   [Guide pratique pour afficher et modifier le code avec l’Aperçu de définition (Alt + F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
 
 -   [Effectuer des actions rapides avec des ampoules](../ide/perform-quick-actions-with-light-bulbs.md)  
 
@@ -227,7 +226,7 @@ Cette fonctionnalité est particulièrement utile si votre code contient des nom
 
 -   [Utilisation de la liste des tâches](../ide/using-the-task-list.md)  
 
--   [Rechercher les modifications de code et d'autres historiques](../ide/find-code-changes-and-other-history-with-codelens.md)  
+-   [Rechercher les modifications de code et d’autres historiques](../ide/find-code-changes-and-other-history-with-codelens.md)  
 
 ## <a name="see-also"></a>Voir aussi  
- [Environnement IDE de Visual Studio](../ide/visual-studio-ide.md)
+ [IDE Visual Studio](../ide/visual-studio-ide.md)

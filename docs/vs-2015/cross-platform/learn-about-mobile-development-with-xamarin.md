@@ -6,17 +6,16 @@ ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 85b63fe01335b75f4286bcc3d19960ab3b873509
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 4d75c93f2ff1678b1d9790462bc816ea35f8acd9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781694"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662073"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>En savoir plus sur le développement pour appareils mobiles avec Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Cette rubrique vous dirige vers des supports de présentation qui vous permettent de comprendre le développement d’applications mobiles multiplateformes avec Xamarin. Si vous n’avez pas encore installé Visual Studio et Xamarin, commencez d’abord le processus [Setup and install](../cross-platform/setup-and-install.md) , puis revenez ici pour consulter ces ressources pendant l’exécutant des programmes d’installation.  
   
 > [!NOTE]
@@ -24,15 +23,15 @@ Cette rubrique vous dirige vers des supports de présentation qui vous permetten
 >   
 >  N’hésitez pas non plus à consulter les rubriques « Notions de base » et à revenir ultérieurement dans les rubriques « Approfondissement ».  
   
-## <a name="essentials-introduction-to-xamarin"></a>Notions de base : introduction à Xamarin  
+## <a name="essentials-introduction-to-xamarin"></a>Notions de base : Introduction à Xamarin  
  *10 à 20 minutes*  
   
 1.  [Applications mobiles dans Visual Studio avec Xamarin](https://www.visualstudio.com/explore/xamarin-vs) (visualstudio.com) fournit un récapitulatif des principales caractéristiques de Xamarin.  
   
 2.  [Building Cross-Platform Mobile Apps using C# and Visual Studio](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2015-Final-Release-Event/Building-cross-platform-mobile-apps-using-C-and-Visual-Studio-2015) (Channel9, 15 minutes et 16 secondes) avec l’expert Xamarin James Montemagno. Les trois premières minutes sont une vue d’ensemble de Xamarin, suivie de démonstrations de code.  
   
-## <a name="essentials-overview-of-the-visual-studio-and-xamarin-environment"></a>Notions de base : vue d’ensemble de l’environnement Visual Studio et Xamarin  
- *5-15 minutes*  
+## <a name="essentials-overview-of-the-visual-studio-and-xamarin-environment"></a>Notions de base : Vue d’ensemble de l’environnement Visual Studio et Xamarin  
+ *5 à 15 minutes*  
   
 - Vous effectuerez la plupart de votre travail sur l’ordinateur Windows disposant de Visual Studio et Xamarin. Sur cet ordinateur, vous générez directement des applications Windows et Android, que vous exécutez et déboguez sur un appareil ou un émulateur. Vous générez, vous exécutez et vous déboguez aussi à distance des applications iOS via le Mac. Visual Studio sur l’ordinateur Windows peut également se connecter au concepteur de storyboard iOS et au simulateur iOS.  
   
@@ -42,7 +41,7 @@ Cette rubrique vous dirige vers des supports de présentation qui vous permetten
   
   ![Relation entre les ordinateurs de développement Windows et Mac dans un environnement Xamarin](../cross-platform/media/crossplat-xamarin-learn-1.png "CrossPlat Xamarin Learn 1")  
   
-## <a name="essentials-how-projects-are-structured"></a>Éléments fondamentaux Structure des projets  
+## <a name="essentials-how-projects-are-structured"></a>Notions de base : Structure des projets  
  *10 à 30 minutes*  
   
 1.  [Sharing Code Options](http://developer.xamarin.com/guides/cross-platform/application_fundamentals/building_cross_platform_applications/sharing_code_options/) (xamarin.com). Nous recommandons d’utiliser l’option de bibliothèques de classes portables, car elle offre une meilleure prise en charge de l’utilisation des seules API .NET qui sont prises en charge sur toutes les plateformes cibles. La plupart des code de logique métier résidera dans la bibliothèque PCL, y compris l’accès aux bases de données, les appels aux API REST et les appels aux composants Xamarin portables (consultez [aller plus loin : Composants Xamarin](#components) à la fin de cette rubrique). Le code commun de l’interface utilisateur écrit avec Xamarin.Forms peut également se trouver dans une bibliothèque de classes portables.  
@@ -52,7 +51,7 @@ Cette rubrique vous dirige vers des supports de présentation qui vous permetten
 ## <a name="essentials-native-and-xamarinforms-ui-layers"></a>Notions de base : couches d’interface utilisateur natives et de Xamarin.Forms  
  *10 à 40 minutes*  
   
- Xamarin fournit deux façons de créer des applications natives. Xamarin Native et Xamarin.Forms.  
+ Xamarin propose deux méthodes pour créer des applications natives : Xamarin Native et Xamarin.Forms.  
   
  Avec Xamarin Native, vous pouvez écrire du code d’interface utilisateur distinct pour chaque plateforme cible : iOS, Android et Windows.  Cette méthode fournit un accès direct aux API spécifiques à une plateforme, ce qui vous permet d’offrir une expérience d’interface utilisateur personnalisée pour chaque plateforme.  Elle fournit également un accès complet au concepteur et aux commandes natifs de chaque plateforme pour faciliter la création de l’interface utilisateur correspondante.  
   
@@ -93,7 +92,7 @@ Cette rubrique vous dirige vers des supports de présentation qui vous permetten
   
 2.  **Simulateur iOS d’Apple.** Pour en savoir plus, consultez [Getting Started with the iOS Simulator](https://developer.apple.com/library/prerelease/content/documentation/IDEs/Conceptual/iOS_Simulator_Guide/GettingStartedwithiOSSimulator/GettingStartedwithiOSSimulator.html#//apple_ref/doc/uid/TP40012848-CH5-SW1) (apple.com).  
   
-3.  **Émulateur Windows Phone de Microsoft.** Pour en savoir plus, consultez [Émulateur Windows Phone pour Windows Phone 8](https://msdn.microsoft.com/library/dn632391.aspx).  
+3.  **Émulateur Windows Phone de Microsoft.** Pour en savoir plus, consultez [Émulateur Windows Phone pour Windows Phone 8](https://msdn.microsoft.com/library/dn632391.aspx).  
   
 ##  <a name="components"></a> Approfondissement : Composants Xamarin  
  *10 minutes*  

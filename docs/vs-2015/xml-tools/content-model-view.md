@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c0a25766327f2e074c4b7f8adf1ccde5a46895d9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e3834e22f67001e38096032037f33c5d184a5330
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952320"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668897"
 ---
 # <a name="content-model-view"></a>Vue de modèle de contenu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 La vue de modèle de contenu fournit une représentation graphique des nœuds de schéma locaux et globaux et de leurs composants, notamment les types simples et complexes, les éléments, les groupes de modèles, les attributs et les groupes d'attributs. Il est impossible d'afficher les commentaires et les instructions de traitement XML dans la vue de modèle de contenu. La vue de modèle de contenu contient deux panneaux : un **espace de travail** panneau qui contient une liste des nœuds dans le [espace de travail Concepteur de schémas XML](../xml-tools/xml-schema-designer-workspace.md)et l’aire de conception dans laquelle vous pouvez voir le modèle de contenu de schéma les nœuds sont sélectionnés dans le **espace de travail** Panneau de configuration. La vue de modèle de contenu comprend également la barre d'outils Concepteur de schémas XML et la barre de fil d'Ariane (breadcrumb).  
   
  Dans l'image suivante, le panneau Espace de travail contient six nœuds de schéma. Le nœud `purchaseOrder` est sélectionné dans le panneau Espace de travail et est affiché dans l'aire de conception.  

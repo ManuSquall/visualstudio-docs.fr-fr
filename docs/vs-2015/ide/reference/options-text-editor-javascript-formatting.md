@@ -13,17 +13,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 545d5ff9530de577a553923eea3cb208bd5bc68e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 81532137b98b415a598a2770b19c3df8ce14f135
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54794408"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666466"
 ---
 # <a name="options-text-editor-javascript-formatting"></a>Options, Éditeur de texte, JavaScript, Mise en forme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Utilisez la page **Mise en forme** de la boîte de dialogue **Options** pour définir les options de mise en forme du code dans l’éditeur de code. Pour accéder à cette page, dans la barre de menus, choisissez **Outils**, **Options**, puis développez **Éditeur de texte**, **JavaScript** et **Mise en forme**.  
   
  [!INCLUDE[note_settings_general](../../includes/note-settings-general-md.md)]  

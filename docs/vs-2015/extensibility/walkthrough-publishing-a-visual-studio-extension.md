@@ -11,18 +11,17 @@ ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0d32428c7a7b1f481771aacaf3e2b0dadfde5db6
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: f8cec34f5eb814dfd236aa5fab46bcc811c8c88f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001354"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669703"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension"></a>Procédure pas à pas : Publication d'une extension Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **Remarque** : La galerie Visual Studio est remplacée par la place de marché Visual Studio. Consultez la dernière version de cette rubrique pour plus d’informations.
-
 
 Cette procédure pas à pas vous montre comment publier une extension Visual Studio sur la galerie Visual Studio. Lorsque vous ajoutez votre extension dans la galerie, les développeurs peuvent utiliser **Extensions et mises à jour** pour y rechercher des extensions nouvelles et mises à jour.
 
@@ -32,7 +31,7 @@ Cette procédure pas à pas vous montre comment publier une extension Visual Stu
 ## <a name="create-a-visual-studio-extension"></a>Créer une Extension Visual Studio
  Dans ce cas, nous allons utiliser une extension de package Visual Studio par défaut, mais les mêmes étapes sont valides pour chaque type d’extension.
 
-1.  Créer un VSPackage en C# nommé `TestPublishing` qui a une commande de menu. Pour plus d’informations, consultez [création d’une Extension avec une commande de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).
+1.  Créer un VSPackage en c# nommé `TestPublishing` qui a une commande de menu. Pour plus d’informations, consultez [création d’une Extension avec une commande de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
 ## <a name="test-the-extension"></a>Tester l’Extension
  Avant de distribuer l’extension, générer et tester pour vous assurer qu’il est installé correctement dans l’instance expérimentale de Visual Studio.

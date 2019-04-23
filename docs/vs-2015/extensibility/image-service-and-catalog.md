@@ -6,12 +6,12 @@ ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 95d3de67dce269696bdd3fbea7ec562511bd0347
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
-ms.translationtype: MT
+ms.openlocfilehash: 6e40401b533d5fcaad8dc9bb4530580608efaad9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "59001240"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670223"
 ---
 # <a name="image-service-and-catalog"></a>Catalogue et service d’images
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -160,7 +160,6 @@ Ce livre de recettes contient des conseils et meilleures pratiques pour arrêter
       <!-- optional NativeResource element -->  
  </Source>  
 ```  
-
 
 |               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -669,7 +668,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
  **ManifestToCode**  
 
- Le manifeste de l’outil Code prend un fichier de manifeste d’image et génère un fichier de wrapper pour référencer les valeurs de manifeste dans le code (C++, C# ou VB) ou des fichiers .vsct.  
+ Le manifeste de l’outil Code prend un fichier de manifeste d’image et génère un fichier de wrapper pour référencer les valeurs de manifeste dans le code (C++, c# ou VB) ou des fichiers .vsct.  
 
  **ImageLibraryViewer**  
 

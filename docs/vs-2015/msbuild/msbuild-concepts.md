@@ -11,17 +11,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b12406af6894c8478c6f142c98edf064f2c58280
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ab699ad2a70a63fe3f8124cc87960f104a3b4cc2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770864"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663308"
 ---
 # <a name="msbuild-concepts"></a>Concepts MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] fournit un schéma XML de base qui vous permet de contrôler la manière dont la plateforme de génération génère les logiciels. Pour spécifier les composants de la génération et comment ils doivent être générés, utilisez ces quatre parties de MSBuild : propriétés, éléments, tâches et cibles.  
   
 ## <a name="related-topics"></a>Rubriques connexes  
@@ -34,7 +33,7 @@ ms.locfileid: "54770864"
 |[Tâches](../msbuild/msbuild-tasks.md)|Indique comment créer une unité de code exécutable qui peut être utilisée par [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] afin d'exécuter des opérations de génération atomiques.|  
 |[Comparaison des propriétés et des éléments](../msbuild/comparing-properties-and-items.md)|Compare les propriétés et les éléments MSBuild. Les deux permettent de transmettre des informations aux tâches, d’évaluer des conditions et de stocker les valeurs qui peuvent être référencées dans le fichier projet.|  
 |[Caractères spéciaux MSBuild](../msbuild/msbuild-special-characters.md)|Explique comment insérer certains caractères dans des séquences d’échappement que [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] réserve pour une utilisation particulière dans des contextes spécifiques.|  
-|[Procédure pas à pas : création d’un fichier projet MSBuild en partant de zéro](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Indique comment créer de façon incrémentielle un fichier projet de base, en utilisant uniquement un éditeur de texte.|  
-|[Procédure pas à pas : utilisation de MSBuild](../msbuild/walkthrough-using-msbuild.md)|Présente les blocs de construction de MSBuild et indique comment écrire, manipuler et déboguer des projets MSBuild sans fermer l’environnement de développement intégré (IDE) de Visual Studio.|  
+|[Procédure pas à pas : Création d’un fichier de projet MSBuild à partir de zéro](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Indique comment créer de façon incrémentielle un fichier projet de base, en utilisant uniquement un éditeur de texte.|  
+|[Procédure pas à pas : Utiliser MSBuild](../msbuild/walkthrough-using-msbuild.md)|Présente les blocs de construction de MSBuild et indique comment écrire, manipuler et déboguer des projets MSBuild sans fermer l’environnement de développement intégré (IDE) de Visual Studio.|  
 |[Informations de référence sur MSBuild](../msbuild/msbuild-reference.md)|Renvoie aux documents contenant les informations de référence.|  
 |[MSBuild](http://msdn.microsoft.com/e39f13f7-1e1d-4435-95ca-0c222bca071c)|Présente une vue d’ensemble du schéma XML d’un fichier projet et montre comment il contrôle les processus qui génèrent les logiciels.|

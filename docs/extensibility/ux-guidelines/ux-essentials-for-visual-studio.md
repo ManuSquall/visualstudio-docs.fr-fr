@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7be75a00925fbd3220934d50432f625c66fee9d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 063818aa828305eedfc184231f2dc4de4eec981c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723498"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667453"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>UX Essentials pour Visual Studio
 ## <a name="best-practices"></a>meilleures pratiques recommandées.
@@ -102,7 +102,6 @@ ms.locfileid: "56723498"
 
 #### <a name="example-video-links-in-team-explorer"></a>Exemple : les liens vidéo dans Team Explorer
 Forcer l’utilisateur à lire le texte explicatif avant de faire disparaître de l’interface utilisateur est un anti-modèle dans Visual Studio. Liens correctement conçues, la vidéo doivent afficher une info-bulle avec des informations supplémentaires sur le pointage et en cliquant sur le «&times;» devrait faire disparaître le message sans avoir besoin d’interagir avec.
-
 
  ![Texte explicatif anti&#45;modèle &#45; incorrect](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />Modèle de lien vidéo incorrect
 

@@ -23,17 +23,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cb1bdb99db405962f487bc9ec13de961f352ec48
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 7c2dce31d5d2d2564c4a277b479dbf1e463b4632
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949862"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666133"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Lier des contrôles à des images d’une base de données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Vous pouvez utiliser la **des Sources de données** fenêtre pour lier une image dans une base de données à un contrôle dans votre application. Par exemple, vous pouvez lier une image à un <xref:System.Windows.Controls.Image> contrôler dans une application WPF, ou à un <xref:System.Windows.Forms.PictureBox> contrôle dans une application Windows Forms.  
   
  Images dans une base de données sont généralement stockées en tant que tableaux d’octets. Les éléments dans le **des Sources de données** fenêtre stockés sous forme de tableaux d’octets ont leur contrôle de type définie sur **aucun** par défaut, étant donné que les tableaux d’octets peuvent contenir tout ce à partir d’un simple tableau d’octets au fichier exécutable d’une grande application. Pour créer un contrôle lié aux données pour un élément de tableau d’octets dans le **des Sources de données** fenêtre qui représente une image, vous devez sélectionner le contrôle à créer.  

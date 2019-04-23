@@ -13,17 +13,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fd113acc6c79a6e8307969cbb3ed71705b739a19
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 87f8f60985f9dfe8629cfd96bcffc9926b8a56e1
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762229"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662008"
 ---
 # <a name="accessibility-for-people-with-disabilities"></a>Accessibilité pour les personnes handicapées
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Microsoft s’engage à faciliter l’utilisation de ses produits et services. Les rubriques suivantes fournissent des informations sur les fonctionnalités, produits et services visant à rendre Microsoft [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] plus accessible aux personnes handicapées.  
   
 -   [Fonctionnalités d’accessibilité de Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)  

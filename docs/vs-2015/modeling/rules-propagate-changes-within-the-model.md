@@ -12,12 +12,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e7c7d3eec918895632d07be8c4a015e228743945
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 32aff234b5b45df4154d47f94c975828f31b71fe
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953722"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668338"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Propagation de modifications dans le modèle par des règles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -133,7 +133,6 @@ namespace ExampleNamespace
 
 - Dérivez la classe de règle d’une des classes de base suivantes :  
 
-
   |                             Classe de base                              |                                                                                                                                                                                                                                                                                                                                                                              Déclencheur                                                                                                                                                                                                                                                                                                                                                                              |
   |---------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
   |           <xref:Microsoft.VisualStudio.Modeling.AddRule>            |                                                                                                                                                                                                                                                                                                                        Un élément, un lien ou une forme est ajoutée.<br /><br /> Cela permet de détecter de nouvelles relations, en plus de nouveaux éléments.                                                                                                                                                                                                                                                                                                                        |
@@ -146,7 +145,6 @@ namespace ExampleNamespace
   |   <xref:Microsoft.VisualStudio.Modeling.TransactionBeginningRule>   |                                                                                                                                                                                                                                                                                                                                                              Exécuté lorsqu’une transaction est créée.                                                                                                                                                                                                                                                                                                                                                              |
   |  <xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule>   |                                                                                                                                                                                                                                                                                                                                                      Exécutée lorsque la transaction est sur le point d’être validée.                                                                                                                                                                                                                                                                                                                                                      |
   |  <xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule>  |                                                                                                                                                                                                                                                                                                                                                     Exécutée lorsque la transaction est sur le point d’être restaurée.                                                                                                                                                                                                                                                                                                                                                     |
-
 
 - Chaque classe a une méthode que vous substituez. Type `override` dans votre classe pour la détection. Le paramètre de cette méthode identifie l’élément qui est en cours de modification.  
 

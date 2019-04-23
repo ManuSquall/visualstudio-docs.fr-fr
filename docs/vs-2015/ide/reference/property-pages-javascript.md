@@ -17,17 +17,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2ae8687a63f4f49a84a67a2c504ee5bf11769128
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f239da7816f72b9204364303113d32f5e06c4fd8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768140"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661904"
 ---
 # <a name="property-pages-javascript"></a>Pages de propriétés (JavaScript)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Les **Pages de propriétés** permettent d’accéder aux paramètres d’un projet. Vous pouvez utiliser les pages qui s’affichent dans les **Pages de propriétés** pour modifier les propriétés d’un projet.  
   
  Pour accéder aux propriétés d’un projet, sélectionnez un nœud de projet dans l’**Explorateur de solutions**. Dans le menu **Projet**, cliquez sur **Propriétés**.  
@@ -54,7 +53,7 @@ Les **Pages de propriétés** permettent d’accéder aux paramètres d’un pro
  **Chemin de sortie**  
  Spécifie l'emplacement des fichiers de sortie pour la configuration du projet. Le chemin d'accès est relatif. Si vous entrez un chemin d'accès absolu, le chemin d'accès absolu est enregistré dans le projet. Le chemin d'accès par défaut est bin\Debug.  
   
- Quand vous utilisez des configurations de build simplifiées, le système de projet détermine s’il faut générer une version Debug ou une version Release. Quand vous cliquez sur **Debug**, **Démarrer le débogage** (ou que vous appuyez sur F5), la build est placée à l’emplacement de débogage, indépendamment du **Chemin de sortie** que vous spécifiez. Cependant, la commande **Générer la solution** du menu **Générer** la place à l’emplacement que vous spécifiez. Pour activer les configurations de build avancées, dans la barre de menus, choisissez **Outils**, **Options**. Dans la boîte de dialogue **Options**, développez **Projets et solutions**, sélectionnez **Général**, puis décochez la case **Afficher les configurations de build avancées**. Vous pouvez ainsi contrôler manuellement toutes les valeurs de configuration et s’il faut générer une version Debug ou Release. Pour plus d’informations, consultez [NIB : général, projets et Solutions, boîte de dialogue Options](http://msdn.microsoft.com/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).  
+ Quand vous utilisez des configurations de build simplifiées, le système de projet détermine s’il faut générer une version Debug ou une version Release. Quand vous cliquez sur **Debug**, **Démarrer le débogage** (ou que vous appuyez sur F5), la build est placée à l’emplacement de débogage, indépendamment du **Chemin de sortie** que vous spécifiez. Cependant, la commande **Générer la solution** du menu **Générer** la place à l’emplacement que vous spécifiez. Pour activer les configurations de build avancées, dans la barre de menus, choisissez **Outils**, **Options**. Dans la boîte de dialogue **Options**, développez **Projets et solutions**, sélectionnez **Général**, puis décochez la case **Afficher les configurations de build avancées**. Vous pouvez ainsi contrôler manuellement toutes les valeurs de configuration et s’il faut générer une version Debug ou Release. Pour plus d’informations, consultez [NIB : Général, projets et Solutions, Options de boîte de dialogue](http://msdn.microsoft.com/8f8e37e8-b28d-4b13-bfeb-ea4d3312aeca).  
   
  **Langue par défaut**  
  Spécifie la langue par défaut pour le projet. L’option de langue sélectionnée dans **Horloge, langue et région** dans le Panneau de configuration spécifie la langue préférée de l’utilisateur. En spécifiant une langue par défaut pour le projet, vous vous assurez que les ressources linguistiques par défaut spécifiées sont utilisées si la langue préférée de l'utilisateur ne correspond pas aux ressources linguistiques fournies dans l'application.  

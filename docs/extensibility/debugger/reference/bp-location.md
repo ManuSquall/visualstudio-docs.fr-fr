@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcae8b30a0bcd7275bc0e2bebd45f834f43269d9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 85f8c915f5c0d6d81214220f78c7db0544777cda
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679337"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663321"
 ---
 # <a name="bplocation"></a>BP_LOCATION
 Spécifie le type de structure utilisée pour décrire l’emplacement du point d’arrêt.
@@ -55,31 +55,31 @@ public struct BP_LOCATION {
 
 `bpLocation`.`bplocCodeFileLine`
 
- (C++ uniquement) Contient le [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md) structure si `bpLocationType`  =  `BPLT_CODE_FILE_LINE`.
+ [C++ uniquement] Contient le [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md) structure si `bpLocationType`  =  `BPLT_CODE_FILE_LINE`.
 
 `bpLocation.bplocCodeFuncOffset`
 
- (C++ uniquement) Contient le [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md) structure si `bpLocationType`  =  `BPLT_CODE_FUNC_OFFSET`.
+ [C++ uniquement] Contient le [BP_LOCATION_CODE_FUNC_OFFSET](../../../extensibility/debugger/reference/bp-location-code-func-offset.md) structure si `bpLocationType`  =  `BPLT_CODE_FUNC_OFFSET`.
 
 `bpLocation.bplocCodeContext`
 
- (C++ uniquement) Contient le [BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md) structure si `bpLocationType`  =  `BPLT_CODE_CONTEXT`.
+ [C++ uniquement] Contient le [BP_LOCATION_CODE_CONTEXT](../../../extensibility/debugger/reference/bp-location-code-context.md) structure si `bpLocationType`  =  `BPLT_CODE_CONTEXT`.
 
 `bpLocation.bplocCodeString`
 
- (C++ uniquement) Contient le [BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md) structure si `bpLocationType`  =  `BPLT_CODE_STRING`.
+ [C++ uniquement] Contient le [BP_LOCATION_CODE_STRING](../../../extensibility/debugger/reference/bp-location-code-string.md) structure si `bpLocationType`  =  `BPLT_CODE_STRING`.
 
 `bpLocation.bplocCodeAddress`
 
- (C++ uniquement) Contient le [BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md) structure si `bpLocationType`  =  `BPLT_CODE_ADDRESS`.
+ [C++ uniquement] Contient le [BP_LOCATION_CODE_ADDRESS](../../../extensibility/debugger/reference/bp-location-code-address.md) structure si `bpLocationType`  =  `BPLT_CODE_ADDRESS`.
 
 `bpLocation.bplocDataString`
 
- (C++ uniquement) Contient le [BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md) structure si `bpLocationType`  =  `BPLT_DATA_STRING`.
+ [C++ uniquement] Contient le [BP_LOCATION_DATA_STRING](../../../extensibility/debugger/reference/bp-location-data-string.md) structure si `bpLocationType`  =  `BPLT_DATA_STRING`.
 
 `bpLocation.bplocResolution`
 
- (C++ uniquement) Contient le [BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md) structure si `bpLocationType`  =  `BPLT_RESOLUTION`.
+ [C++ uniquement] Contient le [BP_LOCATION_RESOLUTION](../../../extensibility/debugger/reference/bp-location-resolution.md) structure si `bpLocationType`  =  `BPLT_RESOLUTION`.
 
 `unionmember1`
 
@@ -99,7 +99,6 @@ public struct BP_LOCATION {
 
 ## <a name="remarks"></a>Notes
 Cette structure est un membre de la [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) et [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) structures.
-
 
  [C# uniquement] Le `unionmemberX` membres sont interprétées selon le tableau suivant. Rechercher vers le bas de la colonne de gauche pour le `bpLocationType` valeur puis rechercher dans les autres colonnes pour déterminer ce que chaque `unionmemberX` membre représente et marshaler le `unionmemberX` en conséquence. Consultez l’exemple pour savoir comment interpréter une partie de cette structure en c#.
 
@@ -139,7 +138,7 @@ namespace MyPackage
 }
 ```
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : msdbg.h
 
 Espace de noms : Microsoft.VisualStudio.Debugger.Interop

@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 50e601d03901484ed6e759fb336b1effa5b37841
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 43c4f50b5793933065b2f3ff4342d4aabdbd130b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949716"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669979"
 ---
 # <a name="how-to-create-an-xml-schema-from-an-xml-document"></a>Procédure : création d'un schéma XML à partir d'un document XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 L'éditeur XML permet de créer un schéma de langage XSD (XML Schema definition) à partir d'un document XML. Le document d'instance XML détermine la façon dont le schéma est généré, comme suit :  
   
 - Si le document XML n'a pas de schéma ni de DTD (définition de type de document) associée, les données du document XML sont utilisées pour inférer un nouveau schéma XML.  

@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9ff3f206f57a544053498def16318e0ed65b64ab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6171ca233af1ec2af71f11d3248a9d2e670c156b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938748"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665855"
 ---
 # <a name="how-to-turn-pluralization-on-and-off-or-designer"></a>Procédure : activer et désactiver la pluralisation (Concepteur O/R)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Par défaut, lorsque vous faites glisser des objets de base de données qui ont des noms se terminant par s ou ies de **Explorateur de serveurs**/**Database Explorer** sur la [outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md), les noms des classes d’entité générées sont modifiés à partir d’au pluriel au singulier. C'est pour insister sur le fait que la classe d'entité instanciée mappe à un enregistrement unique de données. Par exemple, l'ajout d'une table Customers au [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] génère une classe d'entité nommée Customer parce que la classe gérera les données d'un seul client.  
   
 > [!NOTE]

@@ -17,17 +17,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f0abb70297436e75bbe4d9b6b24b4aeb3a7a341
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 280cc2fa94b8ea8167da2168cd4fff90bb8fa612
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949859"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663230"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Créer des tables de recherche dans des applications Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Le terme *table de recherche* décrit les contrôles qui sont liés aux tables de données connexes deux. Ces contrôles de recherche affichent les données à partir de la première table selon une valeur sélectionnée dans la seconde table.  
   
  Vous pouvez créer des tables de recherche en faisant glisser le nœud principal d’une table parent (à partir de la [fenêtre Sources de données](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)) sur un contrôle de votre formulaire qui est déjà lié à la colonne dans la table enfant connexe.  

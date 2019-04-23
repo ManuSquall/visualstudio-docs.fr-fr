@@ -19,16 +19,15 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dedfc71636983a9cbe634551a88eb3de45cb1d99
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 96acd1039f9293e6efb64f2726fc53a4c33cdc31
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950338"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667181"
 ---
 # <a name="bind-objects-in-visual-studio"></a>Lier des objets dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Visual Studio fournit des outils de conception pour travailler avec des objets personnalisés comme source de données dans votre application. Lorsque vous souhaitez stocker des données à partir d’une base de données dans un objet que vous lier aux contrôles d’interface utilisateur, l’approche recommandée consiste à utiliser Entity Framework pour générer l’ou les classes. Entité Frameworkautogenerates tous le suivi des modifications code réutilisable, ce qui signifie que les modifications apportées aux objets locaux sont automatiquement rendues persistantes dans la base de données lorsque vous appelez AcceptChanges sur l’objet DbSet.    Pour plus d’informations, consultez [Documentation d’Entity Framework](https://ef.readthedocs.org/en/latest/).
 

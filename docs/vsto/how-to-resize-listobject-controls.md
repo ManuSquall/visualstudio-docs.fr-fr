@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6d996cfcfb9dd8c63cf31b203905b486b3a1c82
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: af494a87b2feea10d121e59931e51ef3dd344f67
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598464"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669300"
 ---
 # <a name="how-to-resize-listobject-controls"></a>Procédure : Redimensionner les contrôles ListObject
   Vous définissez la taille d’un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> lorsque vous l’ajoutez à un classeur Microsoft Office Excel. Toutefois, vous souhaiterez peut-être le redimensionner ultérieurement. Par exemple, vous pourriez modifier une liste à deux colonnes en liste à trois colonnes.
@@ -43,7 +43,6 @@ ms.locfileid: "56598464"
  Pour redimensionner une liste, vous pouvez cliquer sur l’une des poignées de redimensionnement et la faire glisser, ou vous pouvez redéfinir sa taille dans la boîte de dialogue **Redimensionner la liste** .
 
 ### <a name="to-resize-a-list-by-using-the-resize-list-dialog-box"></a>Pour redimensionner une liste à l’aide de la boîte de dialogue Redimensionner la liste
-
 
 1.  Cliquez n’importe où dans le <xref:Microsoft.Office.Tools.Excel.ListObject> table. Le **outils de tableau** > **conception** onglet du ruban s’affiche.
 

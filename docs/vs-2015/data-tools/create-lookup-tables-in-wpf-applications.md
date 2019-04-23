@@ -22,17 +22,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbeaf44d767779281a3af4fe41f97a827a38c097
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: b25a86617fdead402a2bcc3e6d901868caad840e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58953367"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663780"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Créer des tables de recherche dans des applications WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Le terme *table de recherche* (parfois appelé un *liaison de correspondance*) décrit un contrôle qui affiche des informations à partir d’une table de données basée sur la valeur d’un champ de clé étrangère dans une autre table. Vous pouvez créer une table de recherche en faisant glisser le nœud principal d’une table parente ou de l’objet dans le **des Sources de données** fenêtre sur un contrôle qui est déjà lié à une colonne ou une propriété dans une table enfant connexe.  
   
  Par exemple, considérez une table de `Orders` dans une base de données de ventes. Chaque enregistrement dans le `Orders` table inclut un `CustomerID` qui indique le client ayant passé la commande. Le `CustomerID` est une clé étrangère qui pointe vers un enregistrement de client dans le `Customers` table. Lorsque vous affichez une liste de commandes à partir de la `Orders` table, vous souhaiterez afficher le nom réel au lieu du `CustomerID`. Étant donné que le nom du client est dans le `Customers` table, vous devez créer une table de recherche pour afficher le nom du client. La table de recherche utilise le `CustomerID` valeur dans le `Orders` d’eux pour naviguer jusqu'à la relation et retourne le nom du client.  

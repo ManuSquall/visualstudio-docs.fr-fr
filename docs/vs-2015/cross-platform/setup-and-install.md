@@ -6,17 +6,16 @@ ms.assetid: 2cfcad00-352c-4161-814c-f5ae32d8ada8
 caps.latest.revision: 19
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 26733c576a8bfd260368697ba0791a665afa46ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6f0282e94d252040f05091ddb25c17857c3a74b6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54781707"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663857"
 ---
 # <a name="setup-and-install"></a>Configurer et installer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Pour générer des applications natives iOS, Android et Windows à partir d’une base de code C#/.NET commune en utilisant Xamarin, vous avez besoin des éléments suivants :  
   
 - Pour travailler avec des applications Windows et Android : un ordinateur de développement Windows où Visual Studio 2015 et Xamarin 4 sont installés (voir la remarque ci-dessous). (Vous pouvez également utiliser Visual Studio 2013 en suivant les instructions relatives à l’[installation directe de Xamarin](https://developer.xamarin.com/guides/cross-platform/getting_started/requirements/#install) (xamarin.com).)   
@@ -73,7 +72,7 @@ Si vous rencontrez des problèmes d’utilisation de Xamarin après les phases d
   
         ![Sélectionner l’option Xamarin sous Développement multiplateforme pour appareils mobiles](../cross-platform/media/cross-plat-xamarin-setup-2.png "Configuration multiplateforme de Xamarin 2")  
   
-   2.  Pour Windows 10 : **Développement Mobile multiplateforme > émulateur Microsoft Visual Studio pour Android**. Remarque : Si vous utilisez un ordinateur Windows 7 (ou version antérieure), ou si vous exécutez Windows sur un Mac, vérifiez que cette case est *décochée*. Consultez « Remarque pour les émulateurs sur des ordinateurs Windows » après l’étape 5. Vous pouvez également laisser cette case décochée, si vous avez l’intention de déboguer uniquement sur les appareils Android physiques.  
+   2.  Pour Windows 8 + : **Développement Mobile multiplateforme > émulateur Microsoft Visual Studio pour Android**. Remarque : Si vous utilisez un ordinateur Windows 7 (ou version antérieure), ou si vous exécutez Windows sur un Mac, vérifiez que cette case est *décochée*. Consultez « Remarque pour les émulateurs sur des ordinateurs Windows » après l’étape 5. Vous pouvez également laisser cette case décochée, si vous avez l’intention de déboguer uniquement sur les appareils Android physiques.  
   
    3.  (Facultatif) Si vous prévoyez de cibler des appareils Windows, cochez aussi **Développement d’applications Windows et web > Outils de développement d’applications Windows universelles** et/ou **Outils Windows 8.1 et Windows Phone 8.0/8.1**. Des options y sont proposées pour l’installation d’images d’émulateurs dont le chargement prend davantage de temps : vous pouvez toujours revenir au programme d’installation de Visual Studio pour les ajouter ultérieurement.  
   

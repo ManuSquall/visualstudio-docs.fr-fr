@@ -8,16 +8,15 @@ ms.assetid: 30f137e6-595d-4ce7-b8f5-415b07c1caa2
 caps.latest.revision: 33
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: f9ad50aea8da784d05f3852860186bb029e67a54
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
-ms.translationtype: MTE95
+ms.openlocfilehash: 2352f32b36ab7b2973897599be1fd29859fafc17
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954106"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665686"
 ---
 # <a name="build-apps-with-native-ui-using-xamarin-in-visual-studio"></a>Créer des applications Xamarin avec une interface utilisateur native dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Une fois que vous avez effectué les étapes dans [Configurer et installer](../cross-platform/setup-and-install.md) et [Vérifier votre environnement Xamarin](../cross-platform/verify-your-xamarin-environment.md), cette procédure pas à pas vous montre comment générer une application Xamarin de base (ci-dessous) avec des couches d’IU (interface utilisateur) natives. Avec une IU native, le code partagé réside dans une bibliothèque de classes portable (PCL), et les projets de plateforme individuels contiennent les définitions d’IU.
 
@@ -248,7 +247,7 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
 
 7.  Dans la fenêtre **Propriétés**, définissez les propriétés suivantes (vous pouvez éventuellement trier la liste par ordre alphabétique à l’aide du bouton de tri situé dans la barre d’outils de la fenêtre Propriétés) :
 
-    |Property|Value|
+    |Propriété|Value|
     |--------------|-----------|
     |**text**|**Search by Zip Code**|
     |**ID**|`@+id/ZipCodeSearchLabel`|
@@ -302,7 +301,7 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
 
 10. À partir de la **Boîte à outils**, faites glisser un contrôle **Number** sur **RelativeLayout**, placez-le sous l’étiquette **Zip Code**. Définissez ensuite les propriétés suivantes :
 
-    |Property|Value|
+    |Propriété|Value|
     |--------------|-----------|
     |**ID**|`@+id/zipCodeEntry`|
     |**layout_marginLeft**|`10dp`|
@@ -325,7 +324,7 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
 
 11. À partir de la **Boîte à outils**, faites glisser un contrôle **Button** sur le contrôle **RelativeLayout**, puis placez-le à droite du contrôle zipCodeEntry. Définissez ensuite ces propriétés :
 
-    |Property|Value|
+    |Propriété|Value|
     |--------------|-----------|
     |**ID**|`@+id/weatherBtn`|
     |**texte**|**Obtenir la météo**|
@@ -519,7 +518,7 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
 
 2.  Sélectionnez la cible de l’appareil ou de l’émulateur approprié, puis démarrez l’application en appuyant sur la touche F5.
 
-3.  Sur l’appareil ou dans l’émulateur, dans la zone d’édition, tapez un code postal valide pour les États-Unis (par exemple 60601), puis appuyez sur **Get Weather**. Les données météorologiques de cette région apparaissent ensuite dans les contrôles.
+3.  Sur l’appareil ou dans l’émulateur, tapez un code postal valid dans la zone d’édition (par exemple : 60601), puis appuyez sur **Get Weather**. Les données météorologiques de cette région apparaissent ensuite dans les contrôles.
 
      ![Application météo pour Android et Windows Phone](../cross-platform/media/xamarin-getstarted-results.png "Xamarin_GetStarted_Results")
 
@@ -625,7 +624,7 @@ Une fois que vous avez effectué les étapes dans [Configurer et installer](../c
 
 2.  Démarrez l'application en appuyant sur la touche F5.
 
-3.  Dans l’émulateur Windows Phone, dans la zone d’édition, tapez un code postal valide pour les États-Unis (par exemple 60601), puis appuyez sur **Get Weather**. Les données météorologiques de cette région apparaissent ensuite dans les contrôles.
+3.  Dans l’émulateur Windows Phone, tapez un code postal valid dans la zone d’édition (par exemple : 60601), puis appuyez sur **Get Weather**. Les données météorologiques de cette région apparaissent ensuite dans les contrôles.
 
      ![Version Windows de l’application en cours d’exécution](../cross-platform/media/xamarin-getstarted-results-windows.png "Xamarin_GetStarted_Results_Windows")
 

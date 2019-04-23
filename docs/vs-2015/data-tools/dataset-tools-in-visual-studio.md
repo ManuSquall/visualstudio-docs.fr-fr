@@ -53,16 +53,15 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 723b074b51e97282f67a8e490ec6b109e765dbc9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 553d4f7ca61bbc01e72e8735b0007d2f08876e71
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949693"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666505"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Outils de dataset dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 REMARQUE]
 >  Jeux de données et les classes connexes sont des technologies .NET héritées à partir du début des années 2000 qui permettent aux applications d’utiliser les données en mémoire, tandis que les applications sont déconnectées de la base de données. Ils sont particulièrement utiles pour les applications qui permettent aux utilisateurs de modifier des données et conserver les modifications apportées à la base de données. Bien que les jeux de données s’est avérés une technologie très réussie, nous recommandons d’utilisent Entity Framework nouvelles applications .NET. Entity Framework fournit un moyen plus naturel pour travailler avec des données tabulaires en tant que modèles d’objet, et elle possède une interface de programmation plus simple.

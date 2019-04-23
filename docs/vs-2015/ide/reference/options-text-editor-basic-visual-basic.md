@@ -18,17 +18,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 244c7224d0008c21250da68b518c1a0a55755545
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 068475e24e77969886afbfc806cb2e85c1f368dc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54800709"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667935"
 ---
 # <a name="options-text-editor-basic-visual-basic"></a>Options, Éditeur de texte, De base (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 La page de propriétés **Spécifique à VB**, accessible via le menu **Outils**, dans la boîte de dialogue **Options**, puis dans le dossier **Éditeur de texte** et son dossier **De base**, contient les propriétés suivantes :  
   
  **Insertion automatique des constructions de fin**  

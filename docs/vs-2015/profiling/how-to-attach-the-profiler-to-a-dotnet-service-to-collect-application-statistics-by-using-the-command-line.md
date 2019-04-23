@@ -9,14 +9,14 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 402d0c4de07cb827bbad389c447dedd2dc79d7ef
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7dac95cd91e6dd2ba20b9cdee216aeedb8d8c39a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760176"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668416"
 ---
-# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>Comment : attacher le profileur à un service .NET pour collecter des statistiques d'applications en utilisant la ligne de commande
+# <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>Procédure : Attacher le Profiler à un Service .NET pour collecter des statistiques d’Application à l’aide de la ligne de commande
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette rubrique explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour attacher le profileur à un service .NET Framework et pour collecter des statistiques de performances avec la méthode d’échantillonnage.  
@@ -73,7 +73,6 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                         À utiliser avec **/wincounter** uniquement. Spécifie le nombre de millisecondes écoulées entre les événements de collecte du compteur de performances Windows. La valeur par défaut est de 500 ms.                                                                          |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                            Spécifie l’événement du Suivi d’événements pour Windows (ETW) qui doit être collecté au cours du profilage. Les événements ETW sont collectés dans un fichier séparé (.etl).                                                                            |
 
-
 7. Si nécessaire, démarrez le service.  
 
 8. Attachez le profileur au service. Type :  
@@ -91,7 +90,7 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
    |[/sys](../profiling/sys-vsperfcmd.md)[`:``Interval`]|Remplace l’événement d’échantillonnage par des appels système du processus vers le noyau du système d’exploitation (syscalls). Si `Interval` est spécifié, définit le nombre d’appels entre chaque échantillon. La valeur par défaut est 10.|  
    |[/counter](../profiling/counter.md) **:** `Config`|Remplace l’événement et l’intervalle d’échantillonnage par le compteur de performances du processeur et l’intervalle spécifiés dans `Config`.|  
 
-   -   **targetclr** : `Version` spécifie la version du common language runtime (CLR) à profiler lorsque plusieurs versions du runtime sont chargées dans une application. Optionnel.  
+   -   **targetclr** : `Version` spécifie la version du common language runtime (CLR) à profiler lorsque plusieurs versions du runtime sont chargées dans une application. Facultatif.  
 
 ## <a name="controlling-data-collection"></a>Contrôle de la collection de données  
  Quand le service s’exécute, vous pouvez utiliser les options de **VSPerfCmd.exe** pour démarrer et arrêter l’écriture des données dans le fichier de données du profileur. Le fait de pouvoir contrôler la collecte vous permet de collecter des données pour une phase spécifique de l’exécution du programme, telle que le démarrage ou l’arrêt de l’application.  

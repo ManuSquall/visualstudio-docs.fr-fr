@@ -35,12 +35,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 9e863a4106ea81dc06ef84fb812bbb32c6e94b07
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.openlocfilehash: 63c6dfde0f4f097b4bfa595c0e594ba80020cedc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790509"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669784"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>Commencer une session de débogage pour une application UWP
 
@@ -51,7 +51,7 @@ Cet article décrit comment démarrer une session de débogage de Visual Studio 
 > À partir de Visual Studio 2019, les applications UWP pour HTML et JavaScript n’est plus en charge.
 ::: moniker-end
 ::: moniker range="vs-2017"
-Dans Visual Studio 2017, la plupart des commandes et des options indiquées dans cet article s’appliquent également aux applications UWP pour HTML et JavaScript. Où les commandes sont différentes entre gérés et les applications C++, les applications JavaScript sont généralement le même que les commandes pour les applications C++ UWP.
+Dans Visual Studio 2017, la plupart des commandes et des options indiquées dans cet article s’appliquent également aux applications UWP pour HTML et JavaScript. Où les commandes sont différents entre gérés et C++ applications, les applications JavaScript généralement sont les mêmes que les commandes pour C++ applications UWP.
 ::: moniker-end
 
 ##  <a name="BKMK_The_easy_way_to_start_debugging"></a>Démarrer le débogage à partir de la barre d’outils de Visual Studio
@@ -98,9 +98,9 @@ Pour configurer les options de débogage supplémentaires, utilisez la page de p
 
      ![C#et la page de propriétés de débogage de projet Visual Basic](../debugger/media/dbg_csvb_debugpropertypage.png)
 
-   - Pour les applications C++, sélectionnez **propriétés de Configuration** > **débogage**.
+   - Pour C++ applications, sélectionnez **propriétés de Configuration** > **débogage**.
 
-     ![Page de propriétés de débogage de l’application UWP C++](../debugger/media/dbg_cpp_debugpropertypage.png)
+     ![C++Page des propriétés de débogage des applications UWP](../debugger/media/dbg_cpp_debugpropertypage.png)
 
 ###  <a name="BKMK_Choose_the_debugger_to_use"></a> Choisir le débogueur à utiliser
 
@@ -112,17 +112,16 @@ Dans les applications C++, Visual Studio débogue le code natif par défaut. Vou
 
 - Pour C# et les applications Visual Basic, sélectionnez une des débogueurs suivantes à partir de la **type d’Application** et **type de processus d’arrière-plan** menus déroulants sous **type de débogueur** sur le **déboguer** page de propriétés.
 
-- Pour les applications C++, sélectionnez un des débogueurs suivantes à partir de la **Type de débogueur** liste déroulante sur le **débogage** page de propriétés.
+- Pour C++ applications, sélectionnez une des débogueurs suivantes à partir de la **Type de débogueur** liste déroulante sur le **débogage** page de propriétés.
 
 |||
 |-|-|
 |**Managé uniquement**|Déboguez le code managé dans votre application. Le code JavaScript et le code natif C/C++ sont ignorés.|
 |**Natif uniquement**|Déboguez le code natif C/C++ dans votre application. Le code managé et le code JavaScript sont ignorés.|
-|**Mixte (natif et managé)**|Déboguez le code natif et managé C/C++ dans votre application. Le code JavaScript est ignoré. Dans les projets C++, cette option est appelée **managé et natif**.|
+|**Mixte (natif et managé)**|Déboguez le code natif et managé C/C++ dans votre application. Le code JavaScript est ignoré. Dans C++ projets, cette option est appelée **managé et natif**.|
 |**Script**|Déboguez le code JavaScript dans votre application. Le code managé et le code natif sont ignorés.|
-|**Code natif avec script**|Déboguer le code C/C++ natif et le code JavaScript dans votre application. Le code managé est ignoré. Disponible dans les projets C++ ou uniquement les tâches en arrière-plan.|
+|**Code natif avec script**|Déboguer le code C/C++ natif et le code JavaScript dans votre application. Le code managé est ignoré. Disponible dans C++ projets ou en arrière-plan uniquement aux tâches.|
 |**GPU uniquement (C++ AMP)**|Déboguez le code C++ natif qui s'exécute sur une unité de traitement graphique (GPU). Disponible dans les projets C++ uniquement.|
-
 
 ###  <a name="BKMK__Optional__Disable_network_loopbacks"></a> Désactiver les bouclages de réseau (facultatifs)
 
@@ -132,10 +131,10 @@ Dans les applications C++, Visual Studio débogue le code natif par défaut. Vou
 
 -   Pour C# et les applications Visual Basic, désélectionnez le **autoriser le bouclage de réseau local** case à cocher sous **options de démarrage** sur le **déboguer** page de propriétés.
 
--   Pour les applications Visual C++, sélectionnez **non** à partir de la **autoriser le bouclage de réseau Local** liste déroulante sur le **débogage** page de propriétés.
+-   Pour Visual C++ applications, sélectionnez **non** à partir de la **autoriser le bouclage de réseau Local** liste déroulante sur le **débogage** page de propriétés.
 
 ###  <a name="BKMK__Optional__Reinstall_the_app_when_you_start_debugging"></a> Réinstallez l’application lorsque vous démarrez le débogage (facultatif)
- Pour diagnostiquer les problèmes d’installation avec un C# ou une application Visual Basic, sélectionnez **désinstaller et réinstaller mon package** sur le **déboguer** page de propriétés. Cette option recrée l’installation d’origine lorsque vous démarrez le débogage. Cette option n’est pas disponible pour les projets C++.
+ Pour diagnostiquer les problèmes d’installation avec un C# ou une application Visual Basic, sélectionnez **désinstaller et réinstaller mon package** sur le **déboguer** page de propriétés. Cette option recrée l’installation d’origine lorsque vous démarrez le débogage. Cette option n’est pas disponible pour C++ projets.
 
 ###  <a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a> Définir les options d’authentification pour le débogage distant
 
@@ -147,7 +146,7 @@ Le **universel (protocole non chiffré)** mode d’authentification est pour les
 
 - Pour C# et les applications Visual Basic, sur le **déboguer** page de propriétés, sélectionnez **Machine distante** en tant que le **appareil cible**. Ensuite, sélectionnez **aucun** ou **universel (protocole non chiffré)** pour **Mode d’authentification**.
 
-- Pour les applications C++, sélectionnez **Machine distante** sous **débogueur à lancer** sur le **débogage** page de propriétés. Ensuite, sélectionnez **aucune authentification** ou **universel (protocole non chiffré)** pour **Type d’authentification**.
+- Pour C++ applications, sélectionnez **Machine distante** sous **débogueur à lancer** sur le **débogage** page de propriétés. Ensuite, sélectionnez **aucune authentification** ou **universel (protocole non chiffré)** pour **Type d’authentification**.
 
 > [!CAUTION]
 > Il n’existe aucune sécurité du réseau lorsque vous exécutez le débogueur distant dans **aucun** ou **universel (protocole non chiffré)** modes. Choisissez ces modes uniquement sur des réseaux approuvés que vous êtes sûr ne sont pas exposés à un code malveillant ou de trafic hostile.
@@ -164,7 +163,7 @@ Par défaut, Visual Studio démarre l’application immédiatement lorsque vous 
 
 - Pour C# et les applications Visual Basic, sélectionnez **ne pas lancer, mais déboguer mon code au démarrage** sous **options de démarrage** sur le **déboguer** page de propriétés.
 
-- Pour les applications C++, sélectionnez **non** à partir de la **lancer l’Application** liste déroulante sur le **débogage** page de propriétés.
+- Pour C++ applications, sélectionnez **non** à partir de la **lancer l’Application** liste déroulante sur le **débogage** page de propriétés.
 
 Pour plus d’informations sur le débogage des tâches en arrière-plan, consultez [déclencheur suspendre, reprendre, événements et d’arrière-plan pour les applications UWP](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).
 

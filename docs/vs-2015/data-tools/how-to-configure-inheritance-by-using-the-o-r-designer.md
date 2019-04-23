@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d4dfa0f5eb59b055b2dd16e9f8ac1554247c85a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: ff50d721b55c4035b636f40d6ccb55cbbd6d79b6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949991"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662268"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Procédure : Configurer l’héritage à l’aide du Concepteur O/R
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 L'[!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]) prend en charge le concept d'héritage à table unique qui est souvent implémenté dans les systèmes relationnels. L'héritage à table unique fait appel à une seule table de base de données qui contient des champs pour les informations parent et enfant. Avec les données relationnelles, une colonne de discriminateur contient la valeur qui détermine à quelle classe tout enregistrement appartient.  
   
  Prenons par exemple une table Persons qui contient tous les employées d'une société. Certaines personnes sont des employés et d'autres des responsables. La table Persons contient une colonne nommée `EmployeeType` qui a une valeur de 1 pour les responsables et une valeur de 2 pour les employés ; c'est la colonne de discriminateur. Dans ce scénario, vous pouvez créer une sous-classe d'employés et remplir la classe avec uniquement des enregistrements ayant une valeur `EmployeeType` de 2. Vous pouvez également supprimer les colonnes qui ne s'appliquent à aucune de ces classes.  
@@ -28,7 +27,7 @@ L'[!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUD
   
 ### <a name="to-create-inherited-data-classes"></a>Pour créer des classes de données héritées  
   
-1.  Ouvrez le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] en ajoutant un **Classes LINQ to SQL** élément à un projet Visual Basic ou C# existant.  
+1.  Ouvrez le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] en ajoutant un **Classes LINQ to SQL** élément à un projet Visual Basic ou c# existant.  
   
 2.  Faites glisser la table à utiliser comme classe de base vers le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   

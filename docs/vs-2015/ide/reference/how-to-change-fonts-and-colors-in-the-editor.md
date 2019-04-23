@@ -15,17 +15,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d3b9957d9eb08c8e6398866fa4b4dd51dbcea70
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8ce14dacb805839a1e61d8cf56753cedd312c162
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799106"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661865"
 ---
-# <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Guide pratique pour modifier les polices et les couleurs utilisées dans l’éditeur
+# <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Procédure : Modifier les polices et couleurs utilisées dans l’éditeur
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Vous pouvez modifier le type de police par défaut, ajuster la taille de police et modifier les couleurs de premier plan et d’arrière-plan pour divers **éléments affichés** sous forme de texte dans l’éditeur de code. Lors de la modification des paramètres de police, gardez à l’esprit les informations suivantes :  
   
 -   Les paramètres **Police** et **Taille** s’appliquent à l’ensemble des éléments de texte dans tous les éditeurs [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
@@ -58,4 +57,4 @@ Vous pouvez modifier le type de police par défaut, ajuster la taille de police 
  [Personnalisation de l’éditeur](../../ide/customizing-the-editor.md)   
  [Boîte de dialogue Options de l’éditeur de texte](../../ide/reference/text-editor-options-dialog-box.md)   
  [Écriture de code](../../ide/writing-code-in-the-code-and-text-editor.md)   
- [Guide pratique pour modifier les polices et les couleurs dans Visual Studio](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+ [Guide pratique pour changer les polices et les couleurs](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

@@ -16,24 +16,24 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d1a3b0c7672af9cf10804c84db5103a93ff3ad80
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
-ms.translationtype: MT
+ms.openlocfilehash: f356f0a13b9a1b9ecf3a8096b29c1f0c9c6f275a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "59001837"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662606"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801 : Passez en revue les paramètres inutilisés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Pour obtenir la dernière documentation sur Visual Studio, consultez [CA1801 : Passez en revue les paramètres inutilisés](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters) sur docs.microsoft.com.  
+Pour obtenir la dernière documentation sur Visual Studio, consultez [CA1801 : Passez en revue les paramètres inutilisés](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters).  
   
 |||  
 |-|-|  
 |TypeName|ReviewUnusedParameters|  
 |CheckId|CA1801|  
 |Category|Microsoft.Usage|  
-|Modification avec rupture|Sans rupture - Si le membre n’est pas visible en dehors de l’assembly, quelle que soit la modification que vous apportez.<br /><br /> Sans rupture - Si vous modifiez le membre pour utiliser le paramètre dans son corps.<br /><br /> Avec rupture - Si vous supprimez le paramètre et il est visible en dehors de l’assembly.|  
+|Modification avec rupture|Sans rupture - Si le membre n’est pas visible en dehors de l’assembly, quelle que soit la modification vous apporter.<br /><br /> Sans rupture - Si vous modifiez le membre pour utiliser le paramètre dans son corps.<br /><br /> Avec rupture - Si vous supprimez le paramètre et il est visible en dehors de l’assembly.|  
   
 ## <a name="cause"></a>Cause  
  Une signature de méthode inclut un paramètre qui n'est pas utilisé dans le corps de la méthode. Cette règle n’examine pas les méthodes suivantes :  
