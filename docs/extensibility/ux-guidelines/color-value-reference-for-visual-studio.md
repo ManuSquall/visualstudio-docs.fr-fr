@@ -9,12 +9,12 @@ ms.topic: conceptual
 ms.assetid: 694ffb31-132c-4d63-b930-8254e7c50c25
 ms.reviewer: Jamie.Young
 manager: jillfra
-ms.openlocfilehash: 20fbe41bef16527ee66d0e87de8456ed1c65b865
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 64d2396215ab8c27607e5d1734cdc8cdfe675db6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428828"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118082"
 ---
 # <a name="color-value-reference-for-visual-studio"></a>Référence de valeur de couleur pour Visual Studio
 
@@ -26,13 +26,13 @@ Pour les jetons de couleur à utiliser avec l’interface utilisateur existante,
 
 Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 
--   **Toujours copier les teintes de premier plan et arrière-plan ensemble.** Ne choisissez pas un premier plan à partir d’un élément d’interface utilisateur et un arrière-plan d’une autre parce que vous aimez les teintes.
+- **Toujours copier les teintes de premier plan et arrière-plan ensemble.** Ne choisissez pas un premier plan à partir d’un élément d’interface utilisateur et un arrière-plan d’une autre parce que vous aimez les teintes.
 
--   **Il s’agit de codes hexadécimaux, pas les jetons de couleur.** Vous ne pouvez pas utiliser les noms de jeton de couleur réelle de ces éléments d’interface utilisateur, car vous ne pouvez pas contrôler la façon dont les jetons peuvent être modifiés à l’avenir. Au lieu de cela, créer des jetons au sein de votre propre catégorie et utilisez les valeurs de teinte indiquées dans les tables. Jetons de couleur pour l’interface utilisateur existante se trouve dans [partagé des couleurs pour Visual Studio](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md).
+- **Il s’agit de codes hexadécimaux, pas les jetons de couleur.** Vous ne pouvez pas utiliser les noms de jeton de couleur réelle de ces éléments d’interface utilisateur, car vous ne pouvez pas contrôler la façon dont les jetons peuvent être modifiés à l’avenir. Au lieu de cela, créer des jetons au sein de votre propre catégorie et utilisez les valeurs de teinte indiquées dans les tables. Jetons de couleur pour l’interface utilisateur existante se trouve dans [partagé des couleurs pour Visual Studio](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md).
 
 - **Les échantillons de contraste élevés sont affichés pour la comparaison uniquement.** Utilisez le nom de la couleur système pour l’interface utilisateur de contraste élevé et n’utilisez pas un sélecteur de couleur ou de la pipette sur ces échantillons. Les échantillons de contraste élevés dans cette rubrique reflètent le thème de contraste élevé, #1 dans Windows. Les couleurs aura un aspect différents dans les autres thèmes à contraste élevé.
 
--   **Pour de meilleurs résultats, couleur de la paire définit avec interface utilisateur semblable à l’exemple.**
+- **Pour de meilleurs résultats, couleur de la paire définit avec interface utilisateur semblable à l’exemple.**
 
 ## <a name="properties-window"></a>Fenêtre Propriétés
 
@@ -96,7 +96,7 @@ Lorsque vous utilisez ce guide de référence, n’oubliez pas :
 | Premier plan : pointage | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![#FFF1F1F1 swatch](../../extensibility/ux-guidelines/media/F1F1F1.png "#FFF1F1F1 swatch")<br />`#FFF1F1F1` | ![Nuance de #FF1E1E1E](../../extensibility/ux-guidelines/media/1E1E1E.png "#FF1E1E1E échantillon")<br />`#FF1E1E1E` | ![Nuance de HighlightText](../../extensibility/ux-guidelines/media/HCHighlightText.png "HighlightText échantillon")<br />`HighlightText` |
 | Présentation | ![Nuance de #FFEEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 échantillon")<br />`#FFEEEEF2` | ![#FF292929 swatch](../../extensibility/ux-guidelines/media/292929.png "#FF292929 swatch")<br />`#FF292929` | ![Nuance de #FFEEEEF2](../../extensibility/ux-guidelines/media/EEEEF2.png "#FFEEEEF2 échantillon")<br />`#FFEEEEF2` | ![Nuance de contrôle](../../extensibility/ux-guidelines/media/HCControl.png "nuance de contrôle")<br />`Control` |
 | Arrière-plan : pointage | ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5` | ![#FF3E3E40 swatch](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 swatch")<br />`#FF3E3E40` | ![Nuance de #FFFFFCF4](../../extensibility/ux-guidelines/media/FFFCF4.png "#FFFFFCF4 échantillon")<br />`#FFFFFCF4` | ![Mettez en surbrillance la nuance](../../extensibility/ux-guidelines/media/HCHighlight.png "nuance de mise en surbrillance")<br />`Highlight` |
-| Bordure | Aucun. | Aucun | Aucun | Aucun. |
+| Bordure | Aucun. | Aucun. | Aucun. | Aucun. |
 | Bordure : pointage | ![#FFC9DEF5 swatch](../../extensibility/ux-guidelines/media/C9DEF5.png "#FFC9DEF5 swatch")<br />`#FFC9DEF5` | ![#FF3E3E40 swatch](../../extensibility/ux-guidelines/media/3E3E40.png "#FF3E3E40 swatch")<br />`#FF3E3E40` | ![#FFE5C365 swatch](../../extensibility/ux-guidelines/media/E5C365.png "##FFE5C365 swatch")<br />`#FFE5C365` | ![Nuance de WindowFrame](../../extensibility/ux-guidelines/media/HCWindowFrame.png "WindowFrame échantillon")<br />`WindowFrame` |
 
 ### <a name="category-group"></a>Groupe de catégories

@@ -9,29 +9,29 @@ helpviewer_keywords:
 ms.assetid: 700e80a4-c1e1-4178-af53-45e86dd2c08b
 caps.latest.revision: 9
 manager: jillfra
-ms.openlocfilehash: fd041724eaf13395ad2e85427de35faa86374abd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2d5ba5a271cd7132d9750fc0569b801022aeb932
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953224"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117850"
 ---
 # <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Procédure : Créer un. Fichier VSCT d’un existant. Fichiers CTC
 Vous pouvez créer un fichier .vsct XML à partir d’un fichier source .ctc de table de commande existant. Ainsi, vous pouvez tirer parti du nouveau format du compilateur (VSTC) de table de commande [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] XML.  
   
 ### <a name="to-create-a-vsct-file-from-a-ctc-file"></a>Pour créer un fichier .vsct à partir d’un fichier .ctc  
   
-1.  Obtenez une copie du langage Perl.  
+1. Obtenez une copie du langage Perl.  
   
-2.  Obtenir une copie du script Perl ConvertCTCToVSCT.pl, généralement situé dans le  *\<chemin d’installation de Visual Studio SDK >* \VisualStudioIntegration\Tools\bin dossier.  
+2. Obtenir une copie du script Perl ConvertCTCToVSCT.pl, généralement situé dans le  *\<chemin d’installation de Visual Studio SDK >* \VisualStudioIntegration\Tools\bin dossier.  
   
-3.  Obtenez une copie du fichier source .ctc à convertir.  
+3. Obtenez une copie du fichier source .ctc à convertir.  
   
-4.  Placez les fichiers dans le même répertoire.  
+4. Placez les fichiers dans le même répertoire.  
   
-5.  Dans la fenêtre d’invite de commandes [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , accédez au répertoire.  
+5. Dans la fenêtre d’invite de commandes [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , accédez au répertoire.  
   
-6.  Type  
+6. Type  
   
     ```  
     perl.exe ConvertCTCtoVSCT.pl PkgCmd.ctc PkgCmd.vsct  

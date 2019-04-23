@@ -13,12 +13,12 @@ caps.latest.revision: 44
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b64be59e1a962eb23ef12ba49e8b4fa73bd7a44
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d0b98d57500ad2115abfcbd229d29009afdda059
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948339"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114224"
 ---
 # <a name="capturing-graphics-information"></a>Capture d'informations graphiques
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,9 +60,9 @@ Capturez les informations graphiques de votre application Direct3D pour pouvoir 
   
 ##### <a name="to-configure-graphics-diagnostics-capture-options"></a>Pour configurer les options de capture de Graphics Diagnostics  
   
-1.  Dans la barre de menus, choisissez Outils, Options. La boîte de dialogue Options s'affiche.  
+1. Dans la barre de menus, choisissez Outils, Options. La boîte de dialogue Options s'affiche.  
   
-2.  Dans la liste des catégories d’options sur la gauche, choisissez Graphics Diagnostics, puis configurez les options Graphics Diagnostics de votre choix.  
+2. Dans la liste des catégories d’options sur la gauche, choisissez Graphics Diagnostics, puis configurez les options Graphics Diagnostics de votre choix.  
   
      **Collecter les piles des appels durant la capture (ralentit la capture)**  
      Cochez cette case pour collecter les piles des appels. Par défaut, les piles des appels ne sont pas collectées. Pour capturer les piles des appels, vérifiez que la case **Collecter les piles des appels durant la capture (ralentit la capture)** est cochée pour permettre la collecte, puis définissez l’option **pour les marqueurs de dessin, de répartition, de présentation et de performances** (par défaut) pour collecter uniquement les piles des appels les plus importantes, ou l’option **pour tout** afin de collecter toutes les piles des appels. Pour arrêter plus tard de collecter les piles des appels, décochez la case **Collecter les piles des appels durant la capture (ralentit la capture)**.  

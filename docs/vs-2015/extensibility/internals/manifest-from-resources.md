@@ -6,12 +6,12 @@ ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d67b80feb38e6f1c00c6cf4d1fc1d7915a33dbd9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 33d3094c599ddc8cb472bd6defa211f57e85e84f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953430"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112830"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,25 +43,25 @@ Le manifeste à partir de l’outil de ressources est une application console qu
   
  **Exemples**  
   
--   ManifestFromResources /resources:D:\Images                       /assembly:My.Assembly.Name                       /isNative  
+- ManifestFromResources /resources:D:\Images                       /assembly:My.Assembly.Name                       /isNative  
   
--   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest  
+- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest  
   
--   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds  
+- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds  
   
 ## <a name="notes"></a>Notes  
   
--   L’outil prend uniquement en charge les fichiers .png et .xaml. D’autres types de fichier image ou seront ignorés. Un avertissement est généré pour tous les types non pris en charge rencontrés lors de l’analyse les ressources. Si non pris en charge les images sont trouvent lorsque l’outil a terminé l’analyse les ressources, une erreur sera générée  
+- L’outil prend uniquement en charge les fichiers .png et .xaml. D’autres types de fichier image ou seront ignorés. Un avertissement est généré pour tous les types non pris en charge rencontrés lors de l’analyse les ressources. Si non pris en charge les images sont trouvent lorsque l’outil a terminé l’analyse les ressources, une erreur sera générée  
   
--   En suivant le format recommandé pour les images .png, l’outil définir la valeur de la dimension de la taille de la .png à la taille du format spécifié, même si elle diffère de la taille réelle de l’image.  
+- En suivant le format recommandé pour les images .png, l’outil définir la valeur de la dimension de la taille de la .png à la taille du format spécifié, même si elle diffère de la taille réelle de l’image.  
   
--   Le format de la largeur/hauteur peut être omis pour les images .png, mais l’outil lit la largeur/hauteur réelle de l’image et les utiliser pour la valeur de dimension de la taille de l’image.  
+- Le format de la largeur/hauteur peut être omis pour les images .png, mais l’outil lit la largeur/hauteur réelle de l’image et les utiliser pour la valeur de dimension de la taille de l’image.  
   
--   Exécution de cet outil sur la même bande d’image plusieurs fois pour la même .imagemanifest entraîne manifestes des entrées en double, car l’outil tente de fractionner la bande d’images en images autonomes et ajoutez-les au manifeste existant.  
+- Exécution de cet outil sur la même bande d’image plusieurs fois pour la même .imagemanifest entraîne manifestes des entrées en double, car l’outil tente de fractionner la bande d’images en images autonomes et ajoutez-les au manifeste existant.  
   
--   Fusion (en omettant /newGuids ou /newIds) doit être effectuée uniquement pour les manifestes générés par un outil. Manifestes qui ont été personnalisés ou générés par d’autres moyens ne peuvent pas être fusionnées correctement.  
+- Fusion (en omettant /newGuids ou /newIds) doit être effectuée uniquement pour les manifestes générés par un outil. Manifestes qui ont été personnalisés ou générés par d’autres moyens ne peuvent pas être fusionnées correctement.  
   
--   Les manifestes sont générés pour les assemblys natifs devrez peut-être être modifié manuellement après génération pour rendre les symboles de l’ID correspond à la ressource ID à partir du fichier .rc de l’assembly natif.  
+- Les manifestes sont générés pour les assemblys natifs devrez peut-être être modifié manuellement après génération pour rendre les symboles de l’ID correspond à la ressource ID à partir du fichier .rc de l’assembly natif.  
   
 ## <a name="sample-output"></a>Résultat de l'exemple  
  **Manifeste de l’image simple**  

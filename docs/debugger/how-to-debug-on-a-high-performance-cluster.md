@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f50d72990ec0fb47ec880e3c267ef4e52225837d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 550008a0bf77ee11feb047b953798ed6a8276396
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649418"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113714"
 ---
 # <a name="how-to-debug-on-a-high-performance-cluster-c-visual-basic-c"></a>Procédure : Déboguer sur un Cluster hautement performant (C#, Visual Basic, C++)
 
@@ -37,31 +37,31 @@ Le débogage d'un programme multitraitement sur un cluster hautement performant 
 
 ### <a name="to-open-the-breakpoint-filter-dialog-box"></a>Pour ouvrir la boîte de dialogue Filtre de point d'arrêt
 
-1.  Cliquez avec le bouton droit sur un glyphe de point d’arrêt dans une fenêtre source, la fenêtre **Code machine**, **Pile des appels** ou **Points d’arrêt**.
+1. Cliquez avec le bouton droit sur un glyphe de point d’arrêt dans une fenêtre source, la fenêtre **Code machine**, **Pile des appels** ou **Points d’arrêt**.
 
-2.  Dans le menu contextuel, cliquez sur **Filtre**. Cette option peut s’afficher en haut ou dans le sous-menu sous **Points d’arrêt**.
+2. Dans le menu contextuel, cliquez sur **Filtre**. Cette option peut s’afficher en haut ou dans le sous-menu sous **Points d’arrêt**.
 
 ### <a name="to-set-a-breakpoint-on-a-specific-computer"></a>Pour définir un point d'arrêt sur un ordinateur spécifique
 
-1.  Obtenez le nom de l’ordinateur dans la fenêtre **Processus**.
+1. Obtenez le nom de l’ordinateur dans la fenêtre **Processus**.
 
-2.  Sélectionnez un point d’arrêt et ouvrez la boîte de dialogue **Filtre de point d’arrêt**, comme décrit dans la procédure précédente.
+2. Sélectionnez un point d’arrêt et ouvrez la boîte de dialogue **Filtre de point d’arrêt**, comme décrit dans la procédure précédente.
 
-3.  Dans la boîte de dialogue **Filtre de point d’arrêt**, tapez :
+3. Dans la boîte de dialogue **Filtre de point d’arrêt**, tapez :
 
      MachineName =*nom_de_votre_ordinateur*
 
      Pour créer un filtre plus complexe, vous pouvez associer des clauses à l'aide de `&`, de l'opérateur AND, `||`, de l'opérateur OR `!`, de l'opérateur NOT et de parenthèses.
 
-4.  Cliquez sur **OK**.
+4. Cliquez sur **OK**.
 
 ### <a name="to-set-a-breakpoint-on-a-specific-process"></a>Pour définir un point d'arrêt sur un processus spécifique
 
-1.  Obtenez le nom du processus ou le numéro d’identifiant du processus de la fenêtre **Processus**.
+1. Obtenez le nom du processus ou le numéro d’identifiant du processus de la fenêtre **Processus**.
 
-2.  Sélectionnez un point d’arrêt et ouvrez la boîte de dialogue **Filtre de point d’arrêt**, comme décrit dans la première procédure.
+2. Sélectionnez un point d’arrêt et ouvrez la boîte de dialogue **Filtre de point d’arrêt**, comme décrit dans la première procédure.
 
-3.  Dans la boîte de dialogue **Filtre de point d’arrêt**, tapez :
+3. Dans la boîte de dialogue **Filtre de point d’arrêt**, tapez :
 
      `ProcessName =`  *nom_de_votre_processeur*
 
@@ -71,15 +71,15 @@ Le débogage d'un programme multitraitement sur un cluster hautement performant 
 
      Pour créer un filtre plus complexe, vous pouvez associer des clauses à l'aide de `&`, de l'opérateur AND, `||`, de l'opérateur OR `!`, de l'opérateur NOT et de parenthèses.
 
-4.  Cliquez sur **OK**.
+4. Cliquez sur **OK**.
 
 ### <a name="to-set-a-breakpoint-on-a-specific-thread"></a>Pour définir un point d'arrêt sur un thread spécifique
 
-1.  Obtenez le nom du thread ou le numéro d’ID de thread dans la fenêtre **Threads**.
+1. Obtenez le nom du thread ou le numéro d’ID de thread dans la fenêtre **Threads**.
 
-2.  Sélectionnez un point d’arrêt et ouvrez la boîte de dialogue **Filtre de point d’arrêt**, comme décrit dans la première procédure.
+2. Sélectionnez un point d’arrêt et ouvrez la boîte de dialogue **Filtre de point d’arrêt**, comme décrit dans la première procédure.
 
-3.  Dans la boîte de dialogue **Filtre de point d’arrêt**, tapez :
+3. Dans la boîte de dialogue **Filtre de point d’arrêt**, tapez :
 
      `ThreadName =` *nom_de_votre_thread*
 
@@ -89,7 +89,7 @@ Le débogage d'un programme multitraitement sur un cluster hautement performant 
 
      Pour créer un filtre plus complexe, vous pouvez associer des clauses à l'aide de `&`, de l'opérateur AND, `||`, de l'opérateur OR `!`, de l'opérateur NOT et de parenthèses.
 
-4.  Cliquez sur **OK**.
+4. Cliquez sur **OK**.
 
 ## <a name="example"></a>Exemple
  L'exemple suivant montre comment créer un filtre pour un point d'arrêt sur un ordinateur nommé `marvin` et un thread nommé `fourier1`.

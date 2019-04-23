@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: da46fc4309be1575ffde3d42f8b2c984986ce15b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 1a2dab234f56b9d6ab1368ac87f4da9c5fae4125
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720053"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113129"
 ---
 # <a name="expression-evaluation-interfaces"></a>Interfaces d’évaluation des expressions
 > [!IMPORTANT]
@@ -28,11 +28,11 @@ ms.locfileid: "56720053"
 
  Chaque interface dans le tableau affiche le composant que vous pouvez l’implémenter dans la liste suivante :
 
--   Déboguer le moteur (DE)
+- Déboguer le moteur (DE)
 
--   Évaluateur d’expression (EE)
+- Évaluateur d’expression (EE)
 
--   Visual Studio (VS)
+- Visual Studio (VS)
 
 |Interface|Implémenté par|Description|
 |---------------|--------------------|-----------------|

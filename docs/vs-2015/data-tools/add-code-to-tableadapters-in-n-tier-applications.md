@@ -17,12 +17,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed2a999fc3480bda8aa534d3dd32a00f5ff5c039
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 3c3ddcb99163fe3548f020094647566c1779f5d9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651917"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115365"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Ajouter du code aux TableAdapters dans des applications multiniveaux
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,17 +43,17 @@ Vous pouvez étendre les fonctionnalités d’un `TableAdapter` en créant un fi
   
 ### <a name="to-add-user-code-to-a-tableadapter-in-an-n-tier-application"></a>Pour ajouter du code de l’utilisateur à un TableAdapter dans une architecture multiniveau  
   
-1.  Recherchez le projet qui contient le fichier .xsd (le jeu de données).  
+1. Recherchez le projet qui contient le fichier .xsd (le jeu de données).  
   
-2.  Double-cliquez sur le **.xsd** fichier à ouvrir le jeu de données.  
+2. Double-cliquez sur le **.xsd** fichier à ouvrir le jeu de données.  
   
-3.  Cliquez sur le `TableAdapter` que vous souhaitez ajouter le code et sélectionnez**afficher le Code**.  
+3. Cliquez sur le `TableAdapter` que vous souhaitez ajouter le code et sélectionnez**afficher le Code**.  
   
      Une classe partielle est créée et s’ouvre dans l’éditeur de Code.  
   
-4.  Ajoutez le code à l’intérieur de la déclaration de classe partielle.  
+4. Ajoutez le code à l’intérieur de la déclaration de classe partielle.  
   
-5.  L’exemple suivant montre où ajouter le code pour le `CustomersTableAdapter` dans le `NorthwindDataSet`:  
+5. L’exemple suivant montre où ajouter le code pour le `CustomersTableAdapter` dans le `NorthwindDataSet`:  
   
     ```vb  
     Partial Public Class CustomersTableAdapter  

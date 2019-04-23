@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a782fe1b69fba6a61b790cb5a6fa8c79f20e5e1d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: dd579e6bf434903ecc1e2fe60b1e62d54c165034
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649145"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114364"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Page Références, Concepteur de projets (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,9 +46,9 @@ Utilisez la page **Références** du **Concepteur de projet** pour gérer des r�
 >  Quand le système de projet trouve une référence d’assembly, le système résout la référence en regardant aux emplacements ci-dessous, dans l’ordre suivant :  
 > 
 > 1. Dossier du projet. Les fichiers du dossier du projet s’affichent dans l’**Explorateur de solutions** quand **Afficher tous les fichiers** n’est pas en vigueur.  
->    2.  Dossiers spécifiés dans la boîte de dialogue **Chemins des références**.  
->    3.  Dossiers qui affichent des fichiers dans la boîte de dialogue **Ajouter une référence**.  
->    4.  Dossier obj du projet. (Quand vous ajoutez une référence COM à votre projet, un ou plusieurs assemblys peuvent être ajoutés au dossier obj du projet.)  
+>    2. Dossiers spécifiés dans la boîte de dialogue **Chemins des références**.  
+>    3. Dossiers qui affichent des fichiers dans la boîte de dialogue **Ajouter une référence**.  
+>    4. Dossier obj du projet. (Quand vous ajoutez une référence COM à votre projet, un ou plusieurs assemblys peuvent être ajoutés au dossier obj du projet.)  
   
  **Références**  
  Cette liste affiche toutes les références dans le projet, utilisées ou non.  
@@ -80,11 +80,11 @@ Utilisez la page **Références** du **Concepteur de projet** pour gérer des r�
  **Mettre à jour l’importation utilisateur**  
  Sélectionnez un espace de noms défini par l’utilisateur dans la liste d’espaces de noms, tapez un nouveau nom pour cet espace dans la zone **Espaces de noms importés**, puis cliquez sur ce bouton pour valider le nouvel espace de noms. Le bouton n’est actif que si l’espace de noms sélectionné est l’un de ceux que vous avez ajoutés à la liste à l’aide du bouton **Ajouter une importation utilisateur**. Vous pouvez ajouter :  
   
--   Des classes ou des espaces de noms, par exemple <xref:System.Math?displayProperty=fullName>.  
+- Des classes ou des espaces de noms, par exemple <xref:System.Math?displayProperty=fullName>.  
   
--   Des importations avec alias, par exemple `VB=Microsoft.VisualBasic`.  
+- Des importations avec alias, par exemple `VB=Microsoft.VisualBasic`.  
   
--   Des espaces de noms XML, par exemple `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.  
+- Des espaces de noms XML, par exemple `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.  
   
 ## <a name="see-also"></a>Voir aussi  
  [NIB Comment : Ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter référence](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   

@@ -8,12 +8,12 @@ ms.assetid: 585b0a3a-f85b-4f92-81bb-9ca499bb8a89
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f07cb45d6b77fc554475558fddba34792c0d8a55
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 94c8335b8d723ef20c04cfffe6b3788d71ecaa4f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949894"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118121"
 ---
 # <a name="creating-an-extension-with-a-tool-window"></a>Création d’une extension avec une fenêtre d’outil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,15 +25,15 @@ Dans cette procédure, vous allez apprendre à utiliser le modèle de projet VSI
   
 ### <a name="creating-a-tool-window"></a>Création d’une fenêtre outil  
   
-1.  Créez un projet VSIX nommé **FirstWindow**. Vous pouvez trouver le modèle de projet VSIX dans le **nouveau projet** boîte de dialogue sous **Visual C# / extensibilité**.  
+1. Créez un projet VSIX nommé **FirstWindow**. Vous pouvez trouver le modèle de projet VSIX dans le **nouveau projet** boîte de dialogue sous **Visual c# / extensibilité**.  
   
-2.  Quand le projet s’ouvre, ajoutez un modèle d’élément de fenêtre outil nommé **FirstWindow**. Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **Ajouter / nouvel élément**. Dans le **ajouter un nouvel élément** boîte de dialogue, accédez à **Visual C# / extensibilité** et sélectionnez **fenêtre d’outil personnalisé**. Dans le **nom** en bas de la fenêtre, modifiez le nom de fichier de fenêtre outil à **FirstWindow.cs**.  
+2. Quand le projet s’ouvre, ajoutez un modèle d’élément de fenêtre outil nommé **FirstWindow**. Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **Ajouter / nouvel élément**. Dans le **ajouter un nouvel élément** boîte de dialogue, accédez à **Visual c# / extensibilité** et sélectionnez **fenêtre d’outil personnalisé**. Dans le **nom** en bas de la fenêtre, modifiez le nom de fichier de fenêtre outil à **FirstWindow.cs**.  
   
-3.  Générez le projet et commencez le débogage.  
+3. Générez le projet et commencez le débogage.  
   
      L’instance expérimentale de Visual Studio s’affiche. Pour plus d’informations sur l’instance expérimentale, consultez [l’Instance expérimentale](../extensibility/the-experimental-instance.md).  
   
-4.  Dans l’instance expérimentale, accédez à **vue / autres Windows**.  
+4. Dans l’instance expérimentale, accédez à **vue / autres Windows**.  
   
      Vous devez voir un élément de menu pour **FirstWindow**. Cliquez dessus.  
   

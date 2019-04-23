@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e305ba59eaf5a0f60ec84d40ee9888ac17982c42
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0ba49e1ab3e25e3f22a9ca8642673aa0a62869f6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650627"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114767"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Couleurs et styles pour Visual Studio
 
@@ -85,7 +85,7 @@ Parfois, vous devez autoriser l’utilisateur final à personnaliser votre inter
 
 ![Outils &gt; boîte de dialogue Options](../../extensibility/ux-guidelines/media/0301-a_toolsoptionsdialog.png "a_ToolsOptionsDialog-0301")<br />Outils &gt; boîte de dialogue Options
 
-##  <a name="BKMK_TheVSColorService"></a> Le Service VSColor
+## <a name="BKMK_TheVSColorService"></a> Le Service VSColor
 
 Visual Studio fournit un service de couleur d’environnement, également appelé le service VSColor ou le service de couleur du shell. Ce service vous permet de lier les valeurs de couleur de vos éléments d’interface utilisateur à un jeu contenant des couleurs pour chaque thème de couleurs de nom-valeur. Le service de VSColor doit être utilisé pour tous les éléments d’interface utilisateur, afin que les couleurs changent pour refléter le thème sélectionné par l’utilisateur actuel et automatiquement afin que l’interface utilisateur liée au service de couleur d’environnement seront intègre avec les nouveaux thèmes dans les futures versions de Visual Studio.
 
@@ -267,7 +267,7 @@ protected override void Dispose(bool disposing)
 }
 ```
 
-##  <a name="BKMK_ChoosingHighContrastColors"></a> Choix de couleurs à contraste élevé
+## <a name="BKMK_ChoosingHighContrastColors"></a> Choix de couleurs à contraste élevé
 
 ### <a name="overview"></a>Vue d'ensemble
 
@@ -330,7 +330,7 @@ Nombreux éléments d’interface utilisateur courants ont déjà des couleurs �
 | WindowFrame | : Bordure de l’IDE |
 | WindowText | -Premier plan d’onglet masquage automatique<br />-Premier plan onglet de fenêtre outil sélectionné<br />-Onglet de fenêtre de document inactif et premier plan inactif ou désélectionné onglet provisoire<br />-Premier plan par défaut de vue et arborescence pointage sur glyphe non sélectionné<br />-Bordure onglet sélectionné de la fenêtre outil<br />-Barre de défilement thumb arrière-plan, la bordure et glyphe |
 
-##  <a name="BKMK_ExposingColorsForEndUsers"></a> Exposition des couleurs pour les utilisateurs finaux
+## <a name="BKMK_ExposingColorsForEndUsers"></a> Exposition des couleurs pour les utilisateurs finaux
 
 ### <a name="overview"></a>Vue d'ensemble
 

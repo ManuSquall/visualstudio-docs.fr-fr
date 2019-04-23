@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6821275f7511b48ac6472b468480e6248463b253
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6fb65b66bed790a306280a437a1722abea27848a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704876"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113441"
 ---
 # <a name="task-class---internal-members"></a>Classe de tâche - membres internes
 Cet article décrit les membres internes de la <xref:System.Threading.Tasks.Task?displayProperty=fullName> classe qui vous aident à implémenter un débogueur personnalisé. Pour obtenir des informations générales sur cette classe, consultez le <xref:System.Threading.Tasks.Task> article de référence.
@@ -49,7 +49,7 @@ Cet article décrit les membres internes de la <xref:System.Threading.Tasks.Task
 
 ### <a name="fields"></a>Champs
 
-|Name|Description|
+|Nom|Description|
 |----------|-----------------|
 |[m_action](../../extensibility/debugger/m-action-field.md)|Délégué qui représente le code à exécuter dans le <xref:System.Threading.Tasks.Task> objet.|
 |[m_contingentProperties](../../extensibility/debugger/m-contingentproperties-field.md)|Stocke des propriétés supplémentaires de la <xref:System.Threading.Tasks.Task> objet.|
@@ -67,17 +67,17 @@ Cet article décrit les membres internes de la <xref:System.Threading.Tasks.Task
 ## <a name="remarks"></a>Notes
  Les méthodes internes suivantes sont utiles pour un moteur de débogage, car ils servent à indiquer l’entrée de <xref:System.Threading.Tasks.Task> d’exécution de code :
 
--   `Execute`
+- `Execute`
 
--   `ExecuteEntry`
+- `ExecuteEntry`
 
--   `ExecuteWithThreadLocal`
+- `ExecuteWithThreadLocal`
 
--   `Finish`
+- `Finish`
 
--   `InnerInvoke`
+- `InnerInvoke`
 
--   `InternalWait`
+- `InternalWait`
 
 ## <a name="see-also"></a>Voir aussi
 - <xref:System.Threading.Tasks.Task?displayProperty=fullName>
