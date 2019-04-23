@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9fa577b5e68ac93847589e67b2e2110b1a0c9a37
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: bd1535841a01b6e188383d74ed3b6124b4a325f6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656452"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052557"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Procédure : Exclure des fichiers de la build
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Dans un fichier projet, vous pouvez utiliser des caractères génériques pour i
   
 #### <a name="to-include-all-cs-or-vb-files-except-form2"></a>Pour inclure tous les fichiers .cs ou .vb à l’exception de Form2  
   
--   Utilisez l’un des attributs `Include` et `Exclude` suivants :  
+- Utilisez l’un des attributs `Include` et `Exclude` suivants :  
   
     ```  
     <CSFile Include="*.cs" Exclude="Form2.cs"/>  
@@ -53,7 +53,7 @@ Dans un fichier projet, vous pouvez utiliser des caractères génériques pour i
   
 #### <a name="to-include-all-cs-or-vb-files-except-form2-and-form3"></a>Pour inclure tous les fichiers .cs ou .vb à l’exception de Form2 et de Form3  
   
--   Utilisez l’un des attributs `Include` et `Exclude` suivants :  
+- Utilisez l’un des attributs `Include` et `Exclude` suivants :  
   
     ```  
     <CSFile Include="*.cs" Exclude="Form2.cs;Form3.cs"/>  
@@ -67,7 +67,7 @@ Dans un fichier projet, vous pouvez utiliser des caractères génériques pour i
   
 #### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>Pour inclure tous les fichiers .jpg des sous-répertoires du répertoire Images, à l’exception de ceux du répertoire Version2  
   
--   Utilisez les attributs `Include` et `Exclude` suivants :  
+- Utilisez les attributs `Include` et `Exclude` suivants :  
   
     ```  
     <JPGFile  
@@ -83,7 +83,7 @@ Dans un fichier projet, vous pouvez utiliser des caractères génériques pour i
   
 #### <a name="to-include-the-file-formulavb-only-in-release-builds"></a>Pour inclure le fichier Formula.vb uniquement dans les versions Release  
   
--   Utilisez un attribut `Condition` semblable à ce qui suit :  
+- Utilisez un attribut `Condition` semblable à ce qui suit :  
   
     ```  
     <Compile  

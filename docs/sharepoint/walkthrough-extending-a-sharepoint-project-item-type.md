@@ -14,34 +14,34 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 150f267b7663bdb6335d1fe39f463e1b8635bfbf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a88bfb7d117f646a74c4242cbf851711e9179196
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620523"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057860"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>Procédure pas à pas : Étendre un type d’élément de projet SharePoint
   Vous pouvez utiliser la **modèle de connectivité de données métiers** élément de projet pour créer un modèle pour le service de connectivité de données métiers (BDC) dans SharePoint. Par défaut, lorsque vous créez un modèle à l’aide de cet élément de projet, les données dans le modèle ne sont pas affichées aux utilisateurs. Vous devez également créer une liste externe dans SharePoint pour permettre aux utilisateurs d’afficher les données.
 
  Dans cette procédure pas à pas, vous allez créer une extension pour le **modèle de connectivité de données métiers** élément de projet. Les développeurs peuvent utiliser l’extension pour créer une liste externe dans leur projet qui affiche les données dans le modèle BDC. Cette procédure pas à pas décrit les tâches suivantes :
 
--   Création d’une extension Visual Studio qui exécute deux tâches principales :
+- Création d’une extension Visual Studio qui exécute deux tâches principales :
 
-    -   Il génère une liste externe qui affiche les données dans un modèle BDC. L’extension utilise le modèle d’objet pour le système de projet SharePoint pour générer un *Elements.xml* fichier qui définit la liste. Il ajoute également le fichier au projet afin qu’il est déployé avec le modèle BDC.
+    - Il génère une liste externe qui affiche les données dans un modèle BDC. L’extension utilise le modèle d’objet pour le système de projet SharePoint pour générer un *Elements.xml* fichier qui définit la liste. Il ajoute également le fichier au projet afin qu’il est déployé avec le modèle BDC.
 
-    -   Il ajoute un élément de menu contextuel pour le **modèle de connectivité de données métiers** éléments de projet des **l’Explorateur de solutions**. Les développeurs peuvent cliquer sur cet élément de menu pour générer une liste externe pour le modèle BDC.
+    - Il ajoute un élément de menu contextuel pour le **modèle de connectivité de données métiers** éléments de projet des **l’Explorateur de solutions**. Les développeurs peuvent cliquer sur cet élément de menu pour générer une liste externe pour le modèle BDC.
 
--   Création d’un package d’Extension Visual Studio (VSIX) pour déployer l’assembly d’extension.
+- Création d’un package d’Extension Visual Studio (VSIX) pour déployer l’assembly d’extension.
 
--   Test de l’extension.
+- Test de l’extension.
 
 ## <a name="prerequisites"></a>Prérequis
  Vous avez besoin des composants suivants sur l’ordinateur de développement pour effectuer cette procédure pas à pas :
 
 - Éditions prises en charge de Microsoft Windows, SharePoint et Visual Studio.
 
-- L’[!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]opérateur Cette procédure pas à pas utilise le **projet VSIX** modèle dans le Kit de développement logiciel pour créer un package VSIX pour déployer l’élément de projet. Pour plus d’informations, consultez [étendre les outils SharePoint dans Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
+- [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]. Cette procédure pas à pas utilise le **projet VSIX** modèle dans le Kit de développement logiciel pour créer un package VSIX pour déployer l’élément de projet. Pour plus d’informations, consultez [étendre les outils SharePoint dans Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md).
 
   Connaissance des concepts suivants est utile, mais pas obligatoire, pour suivre la procédure pas à pas :
 
@@ -60,76 +60,76 @@ ms.locfileid: "56620523"
 
 #### <a name="to-create-the-vsix-project"></a>Pour créer le projet VSIX
 
-1.  Démarrez [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Démarrez [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2.  Dans la barre de menus, choisissez **Fichier** > **Nouveau** > **Projet**.
+2. Dans la barre de menus, choisissez **Fichier** > **Nouveau** > **Projet**.
 
-3.  Dans le **nouveau projet** boîte de dialogue, développez le **Visual C#** ou **Visual Basic** nœuds, puis choisissez le **extensibilité** nœud.
+3. Dans le **nouveau projet** boîte de dialogue, développez le **Visual C#** ou **Visual Basic** nœuds, puis choisissez le **extensibilité** nœud.
 
     > [!NOTE]
     >  Le **extensibilité** nœud est disponible uniquement si vous installez le SDK Visual Studio. Pour plus d’informations, consultez la section conditions préalables plus haut dans cette rubrique.
 
-4.  Dans la liste en haut de la **nouveau projet** boîte de dialogue, sélectionnez **.NET Framework 4.5**.
+4. Dans la liste en haut de la **nouveau projet** boîte de dialogue, sélectionnez **.NET Framework 4.5**.
 
      Extensions des outils SharePoint nécessitent des fonctionnalités dans cette version du .NET Framework.
 
-5.  Choisissez le **projet VSIX** modèle.
+5. Choisissez le **projet VSIX** modèle.
 
-6.  Dans le **nom** , entrez **GenerateExternalDataLists**, puis choisissez le **OK** bouton.
+6. Dans le **nom** , entrez **GenerateExternalDataLists**, puis choisissez le **OK** bouton.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le **GenerateExternalDataLists** projet **l’Explorateur de solutions**.
 
-7.  Si le fichier source.extension.vsixmanifest ne s’ouvre pas automatiquement, ouvrez son menu contextuel dans le projet GenerateExternalDataLists, puis choisissez **ouvrir**
+7. Si le fichier source.extension.vsixmanifest ne s’ouvre pas automatiquement, ouvrez son menu contextuel dans le projet GenerateExternalDataLists, puis choisissez **ouvrir**
 
-8.  Vérifiez que le fichier source.extension.vsixmanifest dispose d’une entrée non vide (Entrez Contoso) pour le champ auteur, enregistrez le fichier et fermez-le.
+8. Vérifiez que le fichier source.extension.vsixmanifest dispose d’une entrée non vide (Entrez Contoso) pour le champ auteur, enregistrez le fichier et fermez-le.
 
 #### <a name="to-create-the-extension-project"></a>Pour créer le projet d’extension
 
-1.  Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le **GenerateExternalDataLists** nœud de la solution, choisissez **ajouter**, puis choisissez **denouveauprojet**.
+1. Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le **GenerateExternalDataLists** nœud de la solution, choisissez **ajouter**, puis choisissez **denouveauprojet**.
 
-2.  Dans le **ajouter un nouveau projet** boîte de dialogue, développez le **Visual C#** ou **Visual Basic** nœuds, puis choisissez le **Windows** nœud.
+2. Dans le **ajouter un nouveau projet** boîte de dialogue, développez le **Visual C#** ou **Visual Basic** nœuds, puis choisissez le **Windows** nœud.
 
-3.  Dans la liste en haut de la boîte de dialogue, choisissez **.NET Framework 4.5**.
+3. Dans la liste en haut de la boîte de dialogue, choisissez **.NET Framework 4.5**.
 
-4.  Dans la liste des modèles de projet, choisissez **bibliothèque de classes**.
+4. Dans la liste des modèles de projet, choisissez **bibliothèque de classes**.
 
-5.  Dans le **nom** , entrez **BdcProjectItemExtension**, puis choisissez le **OK** bouton.
+5. Dans le **nom** , entrez **BdcProjectItemExtension**, puis choisissez le **OK** bouton.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] Ajoute le **BdcProjectItemExtension** projet à la solution et ouvre le fichier de code Class1 par défaut.
 
-6.  Supprimer le fichier de code Class1 du projet.
+6. Supprimer le fichier de code Class1 du projet.
 
 ## <a name="configure-the-extension-project"></a>Configurer le projet d’extension
  Avant d’écrire du code pour créer l’extension d’élément de projet, ajoutez les fichiers de code et des références d’assembly au projet d’extension.
 
 #### <a name="to-configure-the-project"></a>Pour configurer le projet
 
-1.  Dans le projet BdcProjectItemExtension, ajoutez deux fichiers de code qui portent les noms suivants :
+1. Dans le projet BdcProjectItemExtension, ajoutez deux fichiers de code qui portent les noms suivants :
 
-    -   ProjectItemExtension
+    - ProjectItemExtension
 
-    -   GenerateExternalDataLists
+    - GenerateExternalDataLists
 
-2.  Choisissez le projet BdcProjectItemExtension, puis, dans la barre de menus, **projet** > **ajouter une référence**.
+2. Choisissez le projet BdcProjectItemExtension, puis, dans la barre de menus, **projet** > **ajouter une référence**.
 
-3.  Sous le **assemblys** nœud, choisissez le **Framework** nœud, puis sélectionnez la case à cocher pour chacun des assemblys suivants :
+3. Sous le **assemblys** nœud, choisissez le **Framework** nœud, puis sélectionnez la case à cocher pour chacun des assemblys suivants :
 
-    -   System.ComponentModel.Composition
+    - System.ComponentModel.Composition
 
-    -   WindowsBase
+    - WindowsBase
 
-4.  Sous le **assemblys** nœud, choisissez le **Extensions** nœud et sélectionnez la case à cocher pour l’assembly suivant :
+4. Sous le **assemblys** nœud, choisissez le **Extensions** nœud et sélectionnez la case à cocher pour l’assembly suivant :
 
-    -   Microsoft.VisualStudio.SharePoint
+    - Microsoft.VisualStudio.SharePoint
 
-5.  Sélectionnez le bouton **OK** .
+5. Sélectionnez le bouton **OK** .
 
 ## <a name="define-the-project-item-extension"></a>Définir l’extension d’élément de projet
  Créer une classe qui définit l’extension pour le **modèle de connectivité de données métiers** élément de projet. Pour définir l’extension, la classe implémente le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> interface. Implémentez cette interface chaque fois que vous souhaitez étendre un type d’élément de projet existant.
 
 #### <a name="to-define-the-project-item-extension"></a>Pour définir l’extension d’élément de projet
 
-1.  Collez le code suivant dans le fichier de code ProjectItemExtension.
+1. Collez le code suivant dans le fichier de code ProjectItemExtension.
 
     > [!NOTE]
     >  Après avoir ajouté ce code, le projet aura des erreurs de compilation. Ces erreurs disparaissent lorsque vous ajoutez du code dans les étapes ultérieures.
@@ -142,7 +142,7 @@ ms.locfileid: "56620523"
 
 #### <a name="to-create-the-external-data-lists"></a>Pour créer des listes de données externes
 
-1.  Collez le code suivant dans le fichier de code GenerateExternalDataLists.
+1. Collez le code suivant dans le fichier de code GenerateExternalDataLists.
 
      [!code-vb[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#2](../sharepoint/codesnippet/VisualBasic/generateexternaldatalists/bdcprojectitemextension/generateexternaldatalists.vb#2)]
      [!code-csharp[SPExtensibility.ProjectItemExtension.BDCGenerateExternalDataLists#2](../sharepoint/codesnippet/CSharp/generateexternaldatalists/bdcprojectitemextension/generateexternaldatalists.cs#2)]
@@ -152,35 +152,35 @@ ms.locfileid: "56620523"
 
 #### <a name="to-build-the-solution"></a>Pour générer la solution
 
-1.  Dans la barre de menus, choisissez **Générer**  >  **Générer la solution**.
+1. Dans la barre de menus, choisissez **Générer**  >  **Générer la solution**.
 
 ## <a name="create-a-vsix-package-to-deploy-the-project-item-extension"></a>Créer un package VSIX pour déployer l’extension d’élément de projet
  Pour déployer l’extension, utilisez le projet VSIX dans votre solution pour créer un package VSIX. Tout d’abord, configurez le package VSIX en modifiant le fichier source.extension.vsixmanifest qui est inclus dans le projet VSIX. Ensuite, créez le package VSIX en générant la solution.
 
 #### <a name="to-configure-and-create-the-vsix-package"></a>Pour configurer et créer le package VSIX
 
-1.  Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le fichier source.extension.vsixmanifest dans le projet GenerateExternalDataLists, puis choisissez **ouvrir**.
+1. Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le fichier source.extension.vsixmanifest dans le projet GenerateExternalDataLists, puis choisissez **ouvrir**.
 
      Visual Studio ouvre le fichier dans l’éditeur de manifeste. Le fichier source.extension.vsixmanifest est que la base du fichier extension.vsixmanifest est requis par tous les packages VSIX. Pour plus d’informations sur ce fichier, consultez [VSIX Extension schéma 1.0 référence](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).
 
-2.  Dans le **Product Name** , entrez **Générateur de liste de données externe**.
+2. Dans le **Product Name** , entrez **Générateur de liste de données externe**.
 
-3.  Dans le **auteur** , entrez **Contoso**.
+3. Dans le **auteur** , entrez **Contoso**.
 
-4.  Dans le **Description** , entrez **une extension pour les éléments de projet de modèle de connectivité de données métiers qui peut être utilisé pour générer des listes de données externes**.
+4. Dans le **Description** , entrez **une extension pour les éléments de projet de modèle de connectivité de données métiers qui peut être utilisé pour générer des listes de données externes**.
 
-5.  Sur le **actifs** onglet de l’éditeur, choisissez le **New** bouton.
+5. Sur le **actifs** onglet de l’éditeur, choisissez le **New** bouton.
 
      Le **ajouter un nouveau composant** boîte de dialogue s’affiche.
 
-6.  Dans le **Type** , choisissez **Microsoft.VisualStudio.MefComponent**.
+6. Dans le **Type** , choisissez **Microsoft.VisualStudio.MefComponent**.
 
     > [!NOTE]
     >  Cette valeur correspond à la `MefComponent` élément dans le fichier extension.vsixmanifest. Cet élément spécifie le nom d’un assembly d’extension dans le package VSIX. Pour plus d’informations, consultez [MEFComponent, élément (schéma VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
-7.  Dans le **Source** , choisissez **un projet dans la solution actuelle**.
+7. Dans le **Source** , choisissez **un projet dans la solution actuelle**.
 
-8.  Dans le **projet** , choisissez **BdcProjectItemExtension**, puis choisissez le **OK** bouton.
+8. Dans le **projet** , choisissez **BdcProjectItemExtension**, puis choisissez le **OK** bouton.
 
 9. Dans la barre de menus, choisissez **Générer**  >  **Générer la solution**.
 
@@ -195,33 +195,33 @@ ms.locfileid: "56620523"
 
 #### <a name="to-start-debugging-the-extension"></a>Pour démarrer le débogage de l’extension
 
-1.  Si nécessaire, redémarrez Visual Studio en tant qu’administrateur et ouvrez la solution GenerateExternalDataLists.
+1. Si nécessaire, redémarrez Visual Studio en tant qu’administrateur et ouvrez la solution GenerateExternalDataLists.
 
-2.  Dans le projet BdcProjectItemExtension, ouvrez le fichier de code ProjectItemExtension, puis ajoutez un point d’arrêt à la ligne de code dans le `Initialize` (méthode).
+2. Dans le projet BdcProjectItemExtension, ouvrez le fichier de code ProjectItemExtension, puis ajoutez un point d’arrêt à la ligne de code dans le `Initialize` (méthode).
 
-3.  Ouvrez le fichier de code GenerateExternalDataLists et puis ajoutez un point d’arrêt à la première ligne de code dans le `GenerateExternalDataLists_Execute` (méthode).
+3. Ouvrez le fichier de code GenerateExternalDataLists et puis ajoutez un point d’arrêt à la première ligne de code dans le `GenerateExternalDataLists_Execute` (méthode).
 
-4.  Démarrer le débogage en choisissant le **F5** clé ou, dans la barre de menus, choisissez **déboguer** > **démarrer le débogage**.
+4. Démarrer le débogage en choisissant le **F5** clé ou, dans la barre de menus, choisissez **déboguer** > **démarrer le débogage**.
 
      Visual Studio installe l’extension %UserProfile%\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Contoso\External externe\1. 0 de liste de données et démarre une instance expérimentale de Visual Studio. Vous allez tester l’élément de projet dans cette instance de Visual Studio.
 
 #### <a name="to-test-the-extension"></a>Pour tester l’extension
 
-1.  Dans l’instance expérimentale de Visual Studio, dans la barre de menus, choisissez **fichier** > **New** > **projet**.
+1. Dans l’instance expérimentale de Visual Studio, dans la barre de menus, choisissez **fichier** > **New** > **projet**.
 
-2.  Dans le **nouveau projet** boîte de dialogue, développez le **modèles** nœud, développez le **Visual C#** nœud, développez le **SharePoint** nœud, puis Choisissez **2010**.
+2. Dans le **nouveau projet** boîte de dialogue, développez le **modèles** nœud, développez le **Visual C#** nœud, développez le **SharePoint** nœud, puis Choisissez **2010**.
 
-3.  Dans la liste en haut de la boîte de dialogue, assurez-vous que **.NET Framework 3.5** est sélectionné. Pour les projets [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] requièrent cette version du .NET Framework.
+3. Dans la liste en haut de la boîte de dialogue, assurez-vous que **.NET Framework 3.5** est sélectionné. Pour les projets [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] requièrent cette version du .NET Framework.
 
-4.  Dans la liste des modèles de projet, choisissez **projet SharePoint 2010**.
+4. Dans la liste des modèles de projet, choisissez **projet SharePoint 2010**.
 
-5.  Dans le **nom** , entrez **SharePointProjectTestBDC**, puis choisissez le **OK** bouton.
+5. Dans le **nom** , entrez **SharePointProjectTestBDC**, puis choisissez le **OK** bouton.
 
-6.  Dans l’Assistant Personnalisation de SharePoint, entrez l’URL du site que vous souhaitez utiliser pour le débogage, choisissez **déployer en tant que solution de batterie**, puis choisissez le **Terminer** bouton.
+6. Dans l’Assistant Personnalisation de SharePoint, entrez l’URL du site que vous souhaitez utiliser pour le débogage, choisissez **déployer en tant que solution de batterie**, puis choisissez le **Terminer** bouton.
 
-7.  Ouvrez le menu contextuel pour le projet SharePointProjectTestBDC, choisissez **ajouter**, puis choisissez **un nouvel élément**.
+7. Ouvrez le menu contextuel pour le projet SharePointProjectTestBDC, choisissez **ajouter**, puis choisissez **un nouvel élément**.
 
-8.  Dans le **ajouter NewItem - SharePointProjectTestBDC** boîte de dialogue, développez le nœud de la langue installée, développez le **SharePoint** nœud.
+8. Dans le **ajouter NewItem - SharePointProjectTestBDC** boîte de dialogue, développez le nœud de la langue installée, développez le **SharePoint** nœud.
 
 9. Choisissez le **2010** nœud, puis choisissez le **modèle de connectivité de données métiers (Solution de batterie uniquement)** modèle.
 
@@ -262,35 +262,35 @@ ms.locfileid: "56620523"
 
 #### <a name="to-remove-the-external-data-list-from-the-sharepoint-site"></a>Pour supprimer la liste de données externes à partir du site SharePoint
 
-1.  Dans la zone Lancement rapide du site SharePoint, choisissez le **Entity1DataList** liste.
+1. Dans la zone Lancement rapide du site SharePoint, choisissez le **Entity1DataList** liste.
 
-2.  Dans le ruban sur le site SharePoint, choisissez le **liste** onglet.
+2. Dans le ruban sur le site SharePoint, choisissez le **liste** onglet.
 
-3.  Sur le **liste** sous l’onglet le **paramètres** de groupe, choisissez **liste paramètres**.
+3. Sur le **liste** sous l’onglet le **paramètres** de groupe, choisissez **liste paramètres**.
 
-4.  Sous **autorisations et gestion**, choisissez **supprimer cette liste**, puis choisissez **OK** pour confirmer que vous souhaitez envoyer la liste à la Corbeille.
+4. Sous **autorisations et gestion**, choisissez **supprimer cette liste**, puis choisissez **OK** pour confirmer que vous souhaitez envoyer la liste à la Corbeille.
 
-5.  Fermez le navigateur web.
+5. Fermez le navigateur web.
 
 #### <a name="to-remove-the-bdc-model-from-the-sharepoint-site"></a>Pour supprimer le modèle BDC à partir du site SharePoint
 
-1.  Dans l’instance expérimentale de Visual Studio, dans la barre de menus, choisissez **Build** > **Retract**.
+1. Dans l’instance expérimentale de Visual Studio, dans la barre de menus, choisissez **Build** > **Retract**.
 
      Visual Studio supprime le modèle BDC à partir du site SharePoint.
 
 #### <a name="to-remove-the-project-item-extension-from-visual-studio"></a>Pour supprimer l’extension d’élément de projet à partir de Visual Studio
 
-1.  Dans l’instance expérimentale de Visual Studio, dans la barre de menus, choisissez **outils** > **Extensions et mises à jour**.
+1. Dans l’instance expérimentale de Visual Studio, dans la barre de menus, choisissez **outils** > **Extensions et mises à jour**.
 
      La boîte de dialogue **Extensions et mises à jour** s’ouvre.
 
-2.  Dans la liste des extensions, choisissez **Générateur de liste de données externe**, puis choisissez le **désinstallation** bouton.
+2. Dans la liste des extensions, choisissez **Générateur de liste de données externe**, puis choisissez le **désinstallation** bouton.
 
-3.  Dans la boîte de dialogue qui s’affiche, choisissez **Oui** pour confirmer que vous souhaitez désinstaller l’extension.
+3. Dans la boîte de dialogue qui s’affiche, choisissez **Oui** pour confirmer que vous souhaitez désinstaller l’extension.
 
-4.  Choisissez **redémarrer maintenant** pour terminer la désinstallation.
+4. Choisissez **redémarrer maintenant** pour terminer la désinstallation.
 
-5.  Fermez les deux instances de Visual Studio (l’instance expérimentale et l’instance dans laquelle la solution GenerateExternalDataLists est ouverte).
+5. Fermez les deux instances de Visual Studio (l’instance expérimentale et l’instance dans laquelle la solution GenerateExternalDataLists est ouverte).
 
 ## <a name="see-also"></a>Voir aussi
 - [Étendre le système de projet SharePoint](../sharepoint/extending-the-sharepoint-project-system.md)

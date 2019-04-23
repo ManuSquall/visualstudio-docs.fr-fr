@@ -8,12 +8,12 @@ ms.assetid: 8fb1334b-d78c-405f-98b4-786e9f6b58d7
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4cf661407273cfe731867fc79bef0f13d19c1f95
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b5151f739dfe464ae948eb4b4716f659b7a7913
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950872"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044185"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo, élément (modèles Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,19 +54,19 @@ Spécifie une expression facultative afin de la faire correspondre à une ou plu
   
  La syntaxe d'expression valide est définie comme suit :  
   
--   L’expression de fonctionnalité, tel que « (VisualC &#124; CSharp) + (MSTest &#124; NUnit) ».  
+- L’expression de fonctionnalité, tel que « (VisualC &#124; CSharp) + (MSTest &#124; NUnit) ».  
   
--   Le «&#124;» est l’opérateur OR.  
+- Le «&#124;» est l’opérateur OR.  
   
--   Le « & » et « + » caractères sont les deux opérateurs AND.  
+- Le « & » et « + » caractères sont les deux opérateurs AND.  
   
--   Le caractère « ! » est l'opérateur NOT.  
+- Le caractère « ! » est l'opérateur NOT.  
   
--   Les parenthèses forcent l'ordre de priorité de l'évaluation.  
+- Les parenthèses forcent l'ordre de priorité de l'évaluation.  
   
--   Une expression null ou vide est évaluée comme une correspondance.  
+- Une expression null ou vide est évaluée comme une correspondance.  
   
--   Fonctionnalités de projet peuvent être n’importe quel caractère à l’exception des caractères réservés suivants : « ''  :;,+-*/\\! ~&#124;& %$@^() ={}[] <> ? \t\b\n\r  
+- Fonctionnalités de projet peuvent être n’importe quel caractère à l’exception des caractères réservés suivants : « ''  :;,+-*/\\! ~&#124;& %$@^() ={}[] <> ? \t\b\n\r  
   
 ## <a name="example"></a>Exemple  
  L'exemple suivant indique trois modèles différents. `Template1` s'applique à tous les types de projet C# ou à n'importe quel autre type de projet qui prend en charge la fonctionnalité `WindowsAppContainer`. `Template2` s'applique à tous les projets C# de n'importe quel type. `Template3` s'applique aux projets C# qui ne sont pas des projets `WindowsAppContainer`.  

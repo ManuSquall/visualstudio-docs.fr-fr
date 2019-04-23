@@ -15,14 +15,14 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 476d117b04b648c2893885700d94a157399cea15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: bcf6a06ee89bcc3ba691b38e98cf8bf43d9c063b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802420"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048045"
 ---
-# <a name="how-to-add-comments-to-class-diagrams-class-designer"></a>Comment : ajouter des commentaires aux diagrammes de classes (Concepteur de classes)
+# <a name="how-to-add-comments-to-class-diagrams-class-designer"></a>Procédure : Ajouter des commentaires à des diagrammes de classes (Concepteur de classes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez utiliser des zones de commentaire pour annoter les diagrammes de classes. Une zone de commentaire comprend la propriété **Text** dans laquelle vous pouvez taper du texte. Les zones de commentaire sont présentes uniquement sur la surface du diagramme et pas dans le code.  
@@ -33,9 +33,9 @@ Vous pouvez utiliser des zones de commentaire pour annoter les diagrammes de cla
   
 ### <a name="to-add-a-comment"></a>Pour ajouter un commentaire  
   
-1.  Faites glisser un commentaire de la **Boîte à outils du Concepteur de classes** vers le diagramme de classes.  
+1. Faites glisser un commentaire de la **Boîte à outils du Concepteur de classes** vers le diagramme de classes.  
   
-2.  Cliquez dans la nouvelle zone de commentaire du diagramme et tapez votre texte.  
+2. Cliquez dans la nouvelle zone de commentaire du diagramme et tapez votre texte.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Utilisation des diagrammes de classes (Concepteur de classes)](../ide/working-with-class-diagrams-class-designer.md)   

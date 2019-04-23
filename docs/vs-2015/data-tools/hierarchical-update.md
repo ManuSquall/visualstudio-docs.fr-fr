@@ -24,12 +24,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e2839cf3fdd780ffbf2c3cfb50e086996cfc865e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 17eb5c1ca2ad35b7a510c5a70d3ad5c5f741c69d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663295"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063398"
 ---
 # <a name="hierarchical-update"></a>Mise à jour hiérarchique
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,11 +99,11 @@ Mise à jour hiérarchique * désigne le processus d’enregistrement des donné
   
 #### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>Pour ajouter du code afin de valider les enregistrements parents dans le dataset avant d’ajouter de nouveaux enregistrements enfants  
   
-1.  Créez un gestionnaire d'événements pour l'événement `OrdersBindingSource.AddingNew`.  
+1. Créez un gestionnaire d'événements pour l'événement `OrdersBindingSource.AddingNew`.  
   
-    -   Ouvrez **Form1** en mode conception, sélectionnez **OrdersBindingSource** dans la barre des composants, sélectionnez **événements** dans le **propriétés** fenêtre, et puis double-cliquez sur le **AddingNew** événement.  
+    - Ouvrez **Form1** en mode conception, sélectionnez **OrdersBindingSource** dans la barre des composants, sélectionnez **événements** dans le **propriétés** fenêtre, et puis double-cliquez sur le **AddingNew** événement.  
   
-2.  Ajouter une ligne de code au gestionnaire d’événements qui appelle la `CustomersBindingSource.EndEdit` (méthode). Le code du gestionnaire d'événements `OrdersBindingSource_AddingNew` doit ressembler à ce qui suit :  
+2. Ajouter une ligne de code au gestionnaire d’événements qui appelle la `CustomersBindingSource.EndEdit` (méthode). Le code du gestionnaire d'événements `OrdersBindingSource_AddingNew` doit ressembler à ce qui suit :  
   
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#2](../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs#2)]
      [!code-vb[VSProDataOrcasHierarchicalUpdate#2](../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb#2)]  

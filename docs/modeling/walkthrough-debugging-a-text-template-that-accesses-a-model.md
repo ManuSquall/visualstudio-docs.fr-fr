@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 915bbc86422af4d60605934c3e7359087eba102e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b314dc9eedbf99ba130772ac226d45239b4de455
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938109"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045055"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Procédure pas à pas : Débogage d’un modèle de texte accédant à un modèle
 Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de langage spécifique à un domaine, vous obtiendrez des erreurs lorsque le moteur transforme le modèle de code source ou lors de la compilation du code généré. La procédure suivante montre quelques opérations que vous pouvez faire pour déboguer un modèle de texte.
@@ -38,11 +38,11 @@ Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de lang
 
 #### <a name="to-create-a-text-template"></a>Pour créer un modèle de texte
 
-1.  Générez la solution et commencer à l’exécuter dans le débogueur. (Sur le **Build** menu, cliquez sur **régénérer la Solution**, puis, dans le **déboguer** menu, cliquez sur **démarrer le débogage**.) Une nouvelle instance de Visual Studio ouvre le projet de débogage.
+1. Générez la solution et commencer à l’exécuter dans le débogueur. (Sur le **Build** menu, cliquez sur **régénérer la Solution**, puis, dans le **déboguer** menu, cliquez sur **démarrer le débogage**.) Une nouvelle instance de Visual Studio ouvre le projet de débogage.
 
-2.  Ajoutez un fichier texte nommé `DebugTest.tt` au projet de débogage.
+2. Ajoutez un fichier texte nommé `DebugTest.tt` au projet de débogage.
 
-3.  Assurez-vous que le **un outil personnalisé** a la valeur de propriété de DebugTest.tt `TextTemplatingFileGenerator`.
+3. Assurez-vous que le **un outil personnalisé** a la valeur de propriété de DebugTest.tt `TextTemplatingFileGenerator`.
 
 ## <a name="debugging-directives-that-access-a-model-from-a-text-template"></a>Débogage des directives qui accèdent à un modèle à partir d’un modèle de texte
  Avant que vous pouvez accéder à un modèle à partir des instructions et expressions dans un modèle de texte, vous devez d’abord appeler un processeur de directive généré. Appeler le processeur de directive généré rend les classes dans votre modèle disponibles pour le code de modèle de texte en tant que propriétés. Pour plus d’informations, consultez [l’accès à des modèles à partir de modèles de texte](../modeling/accessing-models-from-text-templates.md).
@@ -51,7 +51,7 @@ Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de lang
 
 #### <a name="to-debug-an-incorrect-directive-name"></a>Pour déboguer un nom de directive incorrect
 
-1.  Remplacez le code dans DebugTest.tt par le code suivant :
+1. Remplacez le code dans DebugTest.tt par le code suivant :
 
     > [!NOTE]
     >  Le code contient une erreur. Vous risquez d’introduire l’erreur pour la déboguer.
@@ -87,7 +87,7 @@ Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de lang
     #>
     ```
 
-2.  Dans **l’Explorateur de solutions**, DebugTest.tt d’avec le bouton droit, puis cliquez sur **exécuter un outil personnalisé**.
+2. Dans **l’Explorateur de solutions**, DebugTest.tt d’avec le bouton droit, puis cliquez sur **exécuter un outil personnalisé**.
 
      Le **liste d’erreurs** fenêtre affiche cette erreur :
 
@@ -95,9 +95,9 @@ Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de lang
 
      Dans ce cas, l’appel de directive contient un nom de directive incorrect. Vous avez spécifié `modelRoot` comme le nom de la directive, mais le nom de directive correct est `DebuggingTestLanguage`.
 
-3.  Double-cliquez sur l’erreur dans le **liste d’erreurs** fenêtre pour accéder au code.
+3. Double-cliquez sur l’erreur dans le **liste d’erreurs** fenêtre pour accéder au code.
 
-4.  Pour corriger le code, remplacez le nom de la directive par `DebuggingTestLanguage`.
+4. Pour corriger le code, remplacez le nom de la directive par `DebuggingTestLanguage`.
 
      La modification est mis en surbrillance.
 
@@ -109,13 +109,13 @@ Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de lang
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=ExampleModel" #>
     ```
 
-5.  Dans **l’Explorateur de solutions**, DebugTest.tt d’avec le bouton droit, puis cliquez sur **exécuter un outil personnalisé**.
+5. Dans **l’Explorateur de solutions**, DebugTest.tt d’avec le bouton droit, puis cliquez sur **exécuter un outil personnalisé**.
 
      Maintenant, le système transforme le modèle de texte et génère le fichier de sortie correspondant. Vous ne verrez pas toutes les erreurs dans le **liste d’erreurs** fenêtre.
 
 #### <a name="to-debug-an-incorrect-property-name"></a>Pour déboguer un nom de propriété incorrecte
 
-1.  Remplacez le code dans DebugTest.tt par le code suivant :
+1. Remplacez le code dans DebugTest.tt par le code suivant :
 
     > [!NOTE]
     >  Le code contient une erreur. Vous risquez d’introduire l’erreur pour la déboguer.
@@ -151,7 +151,7 @@ Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de lang
     #>
     ```
 
-2.  Dans **l’Explorateur de solutions**, DebugTest.tt d’avec le bouton droit, puis cliquez sur **exécuter un outil personnalisé**.
+2. Dans **l’Explorateur de solutions**, DebugTest.tt d’avec le bouton droit, puis cliquez sur **exécuter un outil personnalisé**.
 
      Le **liste d’erreurs** fenêtre apparaît et affiche l’un de ces erreurs :
 
@@ -169,9 +169,9 @@ Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de lang
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=LibraryModel" #>
     ```
 
-3.  Double-cliquez sur l’erreur dans la fenêtre liste d’erreurs pour accéder au code.
+3. Double-cliquez sur l’erreur dans la fenêtre liste d’erreurs pour accéder au code.
 
-4.  Pour corriger le code, remplacez le nom de propriété par `LibraryModel` dans le code de modèle de texte.
+4. Pour corriger le code, remplacez le nom de propriété par `LibraryModel` dans le code de modèle de texte.
 
      Les modifications sont mises en surbrillance.
 
@@ -206,6 +206,6 @@ Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de lang
     #>
     ```
 
-5.  Dans **l’Explorateur de solutions**, DebugTest.tt d’avec le bouton droit, puis cliquez sur **exécuter un outil personnalisé**.
+5. Dans **l’Explorateur de solutions**, DebugTest.tt d’avec le bouton droit, puis cliquez sur **exécuter un outil personnalisé**.
 
      Maintenant, le système transforme le modèle de texte et génère le fichier de sortie correspondant. Vous ne verrez pas toutes les erreurs dans le **liste d’erreurs** fenêtre.

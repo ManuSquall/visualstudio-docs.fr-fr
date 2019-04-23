@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8d2a359d49102daf4c221632fd275f9ef06e324
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 58b2495adf66f6c83bc631650e2a0f06f5b7cdd0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963981"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047383"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>Rendre persistante la propriété d’un élément de projet
 Voulez-vous conserver une propriété que vous ajoutez à un élément de projet, telles que l’auteur d’un fichier source. Pour ce faire, vous pouvez stocker la propriété dans le fichier projet.
@@ -27,7 +27,7 @@ Voulez-vous conserver une propriété que vous ajoutez à un élément de projet
 
 ## <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>Pour obtenir la hiérarchie de projet avec l’objet DTE
 
-1.  Ajoutez le code suivant à votre VSPackage :
+1. Ajoutez le code suivant à votre VSPackage :
 
     ```csharp
     EnvDTE.DTE dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));
@@ -41,7 +41,7 @@ Voulez-vous conserver une propriété que vous ajoutez à un élément de projet
 
 ## <a name="to-persist-the-project-item-property-with-the-dte-object"></a>Pour conserver la propriété d’élément de projet avec l’objet DTE
 
-1.  Ajoutez le code suivant au code donné dans la méthode dans la procédure précédente :
+1. Ajoutez le code suivant au code donné dans la méthode dans la procédure précédente :
 
     ```csharp
     IVsBuildPropertyStorage buildPropertyStorage =
@@ -58,7 +58,7 @@ Voulez-vous conserver une propriété que vous ajoutez à un élément de projet
 
 ## <a name="to-obtain-the-project-hierarchy-using-ivsmonitorselection"></a>Pour obtenir la hiérarchie de projet à l’aide de IVsMonitorSelection
 
-1.  Ajoutez le code suivant à votre VSPackage :
+1. Ajoutez le code suivant à votre VSPackage :
 
     ```csharp
     IVsHierarchy hierarchy = null;
@@ -102,7 +102,7 @@ Voulez-vous conserver une propriété que vous ajoutez à un élément de projet
 
 ## <a name="to-persist-the-selected-project-item-property-given-the-project-hierarchy"></a>Pour conserver la propriété d’élément de projet sélectionné, étant donné la hiérarchie de projet
 
-1.  Ajoutez le code suivant au code donné dans la méthode dans la procédure précédente :
+1. Ajoutez le code suivant au code donné dans la méthode dans la procédure précédente :
 
     ```csharp
     IVsBuildPropertyStorage buildPropertyStorage =

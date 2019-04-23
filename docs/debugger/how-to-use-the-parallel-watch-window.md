@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c1ca4bab90105e00f556c7595dcea622f963aef9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 6e41e3df54245b023a86f20921c4bfd4de74a952
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684830"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051295"
 ---
 # <a name="set-a-watch-on-variables-in-parallel-threads-in-visual-studio-c-visual-basic-c"></a>Définir un espion sur les Variables dans des Threads parallèles dans Visual Studio (C#, Visual Basic, C++)
 Dans la fenêtre Espion parallèle, vous pouvez simultanément afficher les valeurs qu'une expression contient sur plusieurs threads. Chaque ligne représente un thread s'exécutant dans une application, mais un thread peut être représenté dans plusieurs lignes. Plus spécifiquement, chaque ligne représente un appel de fonction dont la signature de la fonction correspond à la fonctionnalité sur le frame de pile actuel. Vous pouvez trier, réorganiser, supprimer et regrouper les éléments qui figurent dans les colonnes. Vous pouvez marquer ou supprimer l'indicateur, figer et libérer (reprendre) les threads. Les colonnes suivantes sont affichées dans la fenêtre **Espion parallèle** :
@@ -42,49 +42,49 @@ Dans la fenêtre Espion parallèle, vous pouvez simultanément afficher les vale
 
 ### <a name="to-display-the-parallel-watch-window"></a>Pour afficher la fenêtre Espion parallèle
 
-1.  Définissez un point d'arrêt dans le code.
+1. Définissez un point d'arrêt dans le code.
 
-2.  Dans la barre de menus, choisissez **Débogage**, puis **Démarrer le débogage**. Attendez que l'application atteigne le point d'arrêt.
+2. Dans la barre de menus, choisissez **Débogage**, puis **Démarrer le débogage**. Attendez que l'application atteigne le point d'arrêt.
 
-3.  Dans la barre de menus, sélectionnez **Déboguer**, **Fenêtres**, **Espion parallèle**, puis sélectionnez une fenêtre Espion. Vous pouvez ouvrir quatre fenêtres maximum.
+3. Dans la barre de menus, sélectionnez **Déboguer**, **Fenêtres**, **Espion parallèle**, puis sélectionnez une fenêtre Espion. Vous pouvez ouvrir quatre fenêtres maximum.
 
 ### <a name="to-add-a-watch-expression"></a>Pour ajouter une expression espionne
 
--   Sélectionnez une de l’essai à blanc *ajouter un espion* colonnes, puis entrez une expression espionne.
+- Sélectionnez une de l’essai à blanc *ajouter un espion* colonnes, puis entrez une expression espionne.
 
 ### <a name="to-flag-or-unflag-a-thread"></a>Pour marquer ou supprimer l'indicateur d'un thread
 
--   Sélectionnez la colonne d’indicateur pour la ligne (première colonne), ou ouvrez le menu contextuel pour le thread et choisissez **indicateur** ou **supprimer l’indicateur**.
+- Sélectionnez la colonne d’indicateur pour la ligne (première colonne), ou ouvrez le menu contextuel pour le thread et choisissez **indicateur** ou **supprimer l’indicateur**.
 
 ### <a name="to-display-only-flagged-threads"></a>Pour afficher seulement les threads avec indicateur
 
--   Choisissez le **afficher uniquement avec indicateur** situé dans l’angle supérieur gauche de la **espion parallèle** fenêtre.
+- Choisissez le **afficher uniquement avec indicateur** situé dans l’angle supérieur gauche de la **espion parallèle** fenêtre.
 
 ### <a name="to-switch-to-another-thread"></a>Pour basculer vers un autre thread
 
--   Double-cliquez sur la colonne de thread actuelle (la deuxième colonne). (Raccourci : sélectionnez la ligne et appuyez sur Entrée.)
+- Double-cliquez sur la colonne de thread actuelle (la deuxième colonne). (Clavier : Sélectionnez la ligne et appuyez sur ENTRÉE.)
 
 ### <a name="to-sort-a-column"></a>Pour trier une colonne
 
--   Sélectionnez le titre de la colonne.
+- Sélectionnez le titre de la colonne.
 
 ### <a name="to-group-threads"></a>Pour regrouper des threads
 
--   Ouvrez le menu contextuel de la fenêtre Espion parallèle, choisissez **Grouper par**, puis l’élément de sous-menu approprié.
+- Ouvrez le menu contextuel de la fenêtre Espion parallèle, choisissez **Grouper par**, puis l’élément de sous-menu approprié.
 
 ### <a name="to-freeze-or-thaw-threads"></a>Pour figer ou libérer les threads
 
--   Ouvrez le menu contextuel de la ligne par défaut et choisissez **Figer** ou **Libérer**.
+- Ouvrez le menu contextuel de la ligne par défaut et choisissez **Figer** ou **Libérer**.
 
 ### <a name="to-export-the-data-in-the-parallel-watch-window"></a>Pour exporter les données dans la fenêtre Espion parallèle
 
--   Cliquez sur le bouton **Ouvrir dans Excel**, puis sélectionnez **Ouvrir dans Excel** ou **Exporter au format CSV**.
+- Cliquez sur le bouton **Ouvrir dans Excel**, puis sélectionnez **Ouvrir dans Excel** ou **Exporter au format CSV**.
 
 ### <a name="to-filter-by-a-boolean-expression"></a>Pour filtrer en fonction d'une expression booléenne
 
--   Entrez une expression booléenne dans la zone **Filtrer par expression booléenne**. Le débogueur évalue l'expression de chaque contexte de thread. Seules les lignes avec la valeur `true` sont affichées.
+- Entrez une expression booléenne dans la zone **Filtrer par expression booléenne**. Le débogueur évalue l'expression de chaque contexte de thread. Seules les lignes avec la valeur `true` sont affichées.
 
 ## <a name="see-also"></a>Voir aussi
 - [Déboguer les applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Guide pratique pour utiliser la fenêtre Threads GPU](../debugger/how-to-use-the-gpu-threads-window.md)
-- [Procédure pas-à-pas : débogage d’une application C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
+- [Procédure pas à pas : Débogage d’une Application C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

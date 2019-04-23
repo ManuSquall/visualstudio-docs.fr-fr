@@ -9,25 +9,25 @@ helpviewer_keywords:
 ms.assetid: 847717c9-477d-4ac9-8b2c-2da878912478
 caps.latest.revision: 11
 manager: jillfra
-ms.openlocfilehash: 91c1527de5a5af57602350f317507f97bac53810
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 83608d768940158dcdab427a557577677e56f7c8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938548"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056170"
 ---
 # <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Procédure : Créer un. Fichier VSCT d’un existant. Fichier de directeur technique
 Vous pouvez créer un fichier .vsct XML à partir d’un fichier .cto binaire existant. Cela vous permet de tirer parti du nouveau format de compilateur de la table de commande. Ce processus fonctionne même si le fichier .cto a été compilé à partir d’un fichier .ctc. Vous pouvez modifier et compiler le fichier .vsct dans un autre fichier .cto.  
   
 ### <a name="to-create-a-vsct-file-from-a-cto-file"></a>Pour créer un fichier .vsct à partir d’un fichier .cto  
   
-1.  Obtenez des copies du fichier .cto et de son fichier .ctsym correspondant.  
+1. Obtenez des copies du fichier .cto et de son fichier .ctsym correspondant.  
   
-2.  Placez les fichiers dans le même répertoire que le compilateur vsct.exe.  
+2. Placez les fichiers dans le même répertoire que le compilateur vsct.exe.  
   
-3.  À l’invite de commandes Visual Studio, accédez au répertoire qui contient les fichiers .cto et .ctsym.  
+3. À l’invite de commandes Visual Studio, accédez au répertoire qui contient les fichiers .cto et .ctsym.  
   
-4.  Tapez **vsct.exe** _ctofilename_**.cto** _vsctfilename_**.vsct -S**_symfilename_**.ctsym**.  
+4. Tapez **vsct.exe** _ctofilename_**.cto** _vsctfilename_**.vsct -S**_symfilename_**.ctsym**.  
   
      `ctofilename` est le nom du fichier .cto, `vsctfilename` est le nom du fichier vsct que vous souhaitez créer et `symfilename` est le nom du fichier .ctsym.  
   

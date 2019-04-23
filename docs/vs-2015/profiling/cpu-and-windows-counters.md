@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3a540648977c76c354ab21a75b79305c0310a4e7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7b16691a3837bcdeee87b40b36b5b669d671b938
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800438"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046245"
 ---
 # <a name="cpu-and-windows-counters"></a>Compteurs UC et Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Le profileur Visual Studio permet de collecter les données de performances qui 
   
  **Spécifications**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
 >  Les fonctionnalités de sécurité renforcée de Windows 8 et Windows Server 2012 ont imposé des changements importants dans la façon dont le profileur Visual Studio collecte les données sur ces plateformes. Les applications Windows Store demandent aussi de nouvelles techniques de collecte. Consultez [Outils d’analyse des performances sur les applications Windows 8 et Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
@@ -104,24 +104,24 @@ Le profileur Visual Studio permet de collecter les données de performances qui 
   
 ##### <a name="to-view-a-list-of-a-list-of-window-counters-that-are-supported-on-the-current-platform"></a>Pour afficher la liste des compteurs Windows pris en charge sur la plateforme actuelle  
   
-1.  Dans l’Explorateur de performances, cliquez avec le bouton droit sur la session de performance, puis cliquez sur **Propriétés**.  
+1. Dans l’Explorateur de performances, cliquez avec le bouton droit sur la session de performance, puis cliquez sur **Propriétés**.  
   
-2.  Cliquez sur **Compteurs Windows**.  
+2. Cliquez sur **Compteurs Windows**.  
   
-3.  Sélectionnez **Collecter les compteurs Windows**.  
+3. Sélectionnez **Collecter les compteurs Windows**.  
   
-4.  Dans la liste **Catégorie de compteurs**, sélectionnez un groupe de compteurs. Le compteur Windows du groupe s’affiche dans la zone de liste.  
+4. Dans la liste **Catégorie de compteurs**, sélectionnez un groupe de compteurs. Le compteur Windows du groupe s’affiche dans la zone de liste.  
   
-     **Remarque** Cliquez sur **Annuler** pour revenir à la configuration de collecte de compteur précédente.  
+     **Remarque :** cliquez sur **Annuler** pour revenir à la configuration précédente de la collecte de compteur.  
   
 ### <a name="command-line"></a>Ligne de commande  
  L’outil en ligne de commande [VSPerfCmd](../profiling/vsperfcmd.md) permet de répertorier les compteurs UC qui sont disponibles sur un ordinateur à partir de la ligne de commande.  
   
 ##### <a name="to-list-of-cpu-counters-that-are-supported-on-the-current-platform"></a>Pour répertorier les compteurs UC pris en charge sur la plateforme actuelle  
   
-1.  Ouvrez une fenêtre d’invite de commandes.  
+1. Ouvrez une fenêtre d’invite de commandes.  
   
-2.  Type  
+2. Type  
   
      **\<Répertoire Visual Studio Performance Tools>\VSPerfCmd /querycounters**  
   
@@ -131,6 +131,6 @@ Le profileur Visual Studio permet de collecter les données de performances qui 
   
 ## <a name="see-also"></a>Voir aussi  
  [Vues d’ensemble](../profiling/overviews-performance-tools.md)   
- [Guide pratique pour choisir des événements d’échantillonnage](../profiling/how-to-choose-sampling-events.md)   
- [Guide pratique pour collecter les données des compteurs UC](../profiling/how-to-collect-cpu-counter-data.md)   
+ [Guide pratique pour Choisissez les événements d’échantillonnage](../profiling/how-to-choose-sampling-events.md)   
+ [Guide pratique pour Collecter les données des compteurs UC](../profiling/how-to-collect-cpu-counter-data.md)   
  [Guide pratique pour collecter les données des compteurs Windows](../profiling/how-to-collect-windows-counter-data.md)

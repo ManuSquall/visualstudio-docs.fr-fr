@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0fad2851be48c0b3dfc3546794d5b9907f55918a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ae63dd41e18b9226967b77b8adec2f45d05d9447
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637371"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057171"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>Procédure : Mapper des schémas à des feuilles de calcul à l’intérieur de Visual Studio
   Alors que la feuille de calcul est ouvert dans Visual Studio, vous pouvez mapper un schéma XML à une feuille de calcul. Vous utilisez les mêmes outils de Microsoft Office Excel que vous utilisez lorsque le classeur est ouvert en dehors de Visual Studio. Le projet Office crée les mêmes objets que vous mappiez le schéma à la feuille de calcul avant ou après avoir créé votre solution Excel.
@@ -34,28 +34,28 @@ ms.locfileid: "56637371"
 
 ## <a name="to-map-an-xml-schema-to-an-excel-worksheet-in-visual-studio"></a>Pour mapper un schéma XML à une feuille de calcul Excel dans Visual Studio
 
-1.  Ouvrez le projet de modèle ou de classeur Excel à l’intérieur de Visual Studio.
+1. Ouvrez le projet de modèle ou de classeur Excel à l’intérieur de Visual Studio.
 
-2.  Cliquez dans la feuille de calcul pour déplacer le focus vers le concepteur.
+2. Cliquez dans la feuille de calcul pour déplacer le focus vers le concepteur.
 
-3.  Dans le ruban, cliquez sur l'onglet **Développeur** .
+3. Dans le ruban, cliquez sur l'onglet **Développeur** .
 
     > [!NOTE]
     >  Si l'onglet **Développeur** n'est pas visible, vous devez tout d'abord l'afficher. Pour plus d'informations, voir [Procédure : Afficher l’onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
-4.  Dans le **XML** de groupe, cliquez sur **Source**.
+4. Dans le **XML** de groupe, cliquez sur **Source**.
 
      Le **Source XML** fenêtre s’ouvre.
 
-5.  Dans le **Source XML** fenêtre, cliquez sur **mappes XML**.
+5. Dans le **Source XML** fenêtre, cliquez sur **mappes XML**.
 
      Le **mappes XML** boîte de dialogue s’ouvre.
 
-6.  Dans le **mappes XML** boîte de dialogue, cliquez sur **ajouter**.
+6. Dans le **mappes XML** boîte de dialogue, cliquez sur **ajouter**.
 
-7.  Accédez à votre fichier de schéma, sélectionnez-le, puis cliquez sur **Open**.
+7. Accédez à votre fichier de schéma, sélectionnez-le, puis cliquez sur **Open**.
 
-8.  Cliquez sur **OK**.
+8. Cliquez sur **OK**.
 
      Le schéma est représenté dans le **Source XML** fenêtre. Dans votre projet, typé <xref:System.Data.DataSet> est généré en fonction du schéma et un <xref:System.Windows.Forms.BindingSource> est créé.
 

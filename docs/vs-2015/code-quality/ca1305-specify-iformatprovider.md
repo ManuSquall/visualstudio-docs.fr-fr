@@ -15,12 +15,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a31dfbae3ca07f913a5ddad3cf0a788cd9c62b73
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 11e1d9614c4f2a512c56f84117d28363e80c6b90
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948024"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048099"
 ---
 # <a name="ca1305-specify-iformatprovider"></a>CA1305 : Spécifier IFormatProvider
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "58948024"
 ## <a name="cause"></a>Cause
  Une méthode ou un constructeur appelle un ou plusieurs membres qui ont des surcharges qui acceptent un <xref:System.IFormatProvider?displayProperty=fullName> paramètre et la méthode ou le constructeur n’appelle pas la surcharge qui accepte le <xref:System.IFormatProvider> paramètre. Cette règle ignore les appels aux [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] méthodes sont documentées comme ignorant le <xref:System.IFormatProvider> paramètre et en outre les méthodes suivantes :
 
--   <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
+- <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
 
--   <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName>
+- <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName>
 
--   <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>
+- <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>
 
 ## <a name="rule-description"></a>Description de la règle
  Quand un <xref:System.Globalization.CultureInfo?displayProperty=fullName> ou <xref:System.IFormatProvider> objet n’est pas fourni, la valeur par défaut qui est fournie par le membre surchargé n’est peut-être pas l’effet souhaité dans tous les paramètres régionaux. En outre, [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] membres choisissent la culture par défaut et la mise en forme basée sur des hypothèses qui peuvent ne pas être correctes pour votre code. Pour vous assurer que le code fonctionne comme prévu pour vos scénarios, vous devez fournir des informations spécifiques à la culture selon les consignes suivantes :

@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6f59af23f25fee628ec20b77e10e0a48afdd564d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 6971da256d638b8248e49235a4d8d3ded71dc10e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669053"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056768"
 ---
 # <a name="how-to-create-an-association-relationship-between-linq-to-sql-classes-or-designer"></a>Procédure : Créer une association (relation) entre les classes LINQ to SQL (Concepteur O/R)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ Les associations entre classes d'entité dans [!INCLUDE[vbtecdlinq](../includes/
   
 ### <a name="to-create-an-association-between-entity-classes"></a>Pour créer une association entre des classes d'entité  
   
-1.  Cliquez avec le bouton droit sur la classe d’entité qui représente la classe parente dans l’association, pointez sur **Ajouter**, puis cliquez sur **Association**.  
+1. Cliquez avec le bouton droit sur la classe d’entité qui représente la classe parente dans l’association, pointez sur **Ajouter**, puis cliquez sur **Association**.  
   
-2.  Vérifiez que la **Classe parente** correcte est sélectionnée dans la boîte de dialogue **Éditeur d’associations**.  
+2. Vérifiez que la **Classe parente** correcte est sélectionnée dans la boîte de dialogue **Éditeur d’associations**.  
   
-3.  Sélectionnez la **Classe enfant** dans la zone de liste déroulante.  
+3. Sélectionnez la **Classe enfant** dans la zone de liste déroulante.  
   
-4.  Sélectionnez les **Propriétés d’association** qui lient les classes. En général, un mappage à la relation de clé étrangère définie dans la base de données est alors établi. Par exemple, dans l’association Customers et Orders, la **propriétés d’Association** sont les CustomerID pour chaque classe.  
+4. Sélectionnez les **Propriétés d’association** qui lient les classes. En général, un mappage à la relation de clé étrangère définie dans la base de données est alors établi. Par exemple, dans l’association Customers et Orders, la **propriétés d’Association** sont les CustomerID pour chaque classe.  
   
-5.  Cliquez sur **OK** pour créer l’association.  
+5. Cliquez sur **OK** pour créer l’association.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

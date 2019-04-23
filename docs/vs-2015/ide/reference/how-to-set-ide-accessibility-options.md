@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e01d73457a0b6bf6da2114a4ae967c25f9953a9a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 18f03e2bd37d8275685f34a65c9ab96740ed80a3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670323"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051620"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Guide pratique pour définir les options d'accessibilité IDE
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ ms.locfileid: "59670323"
   
 ##### <a name="to-change-the-size-of-text-in-text-based-tool-windows-and-editors"></a>Pour modifier la taille du texte dans les éditeurs et les fenêtres Outil de texte  
   
-1.  Dans le menu **Outils** , choisissez **Options**.  
+1. Dans le menu **Outils** , choisissez **Options**.  
   
-2.  Choisissez **Polices et couleurs** dans le dossier **Environnement**.  
+2. Choisissez **Polices et couleurs** dans le dossier **Environnement**.  
   
-3.  Sélectionnez une option dans le menu déroulant **Afficher les paramètres de**.  
+3. Sélectionnez une option dans le menu déroulant **Afficher les paramètres de**.  
   
      Pour modifier la taille de police du texte dans un éditeur, choisissez **Éditeur de texte**.  
   
@@ -56,16 +56,16 @@ ms.locfileid: "59670323"
   
      Pour modifier la taille de police du texte dans la saisie semi-automatique des instructions, choisissez **Saisie semi-automatique des instructions**.  
   
-4.  Dans **Afficher les éléments**, sélectionnez **Texte brut**.  
+4. Dans **Afficher les éléments**, sélectionnez **Texte brut**.  
   
-5.  Dans **Police**, sélectionnez un nouveau type de police.  
+5. Dans **Police**, sélectionnez un nouveau type de police.  
   
-6.  Dans **Taille**, sélectionnez une nouvelle taille de police.  
+6. Dans **Taille**, sélectionnez une nouvelle taille de police.  
   
     > [!NOTE]
     >  Pour rétablir la taille du texte pour les éditeurs et les fenêtres Outil de texte, choisissez **Par défaut**.  
   
-7.  Cliquez sur **OK**.  
+7. Cliquez sur **OK**.  
   
 ### <a name="changing-the-colors-used-in-the-ide"></a>Modification des couleurs utilisées dans l’IDE  
  Vous pouvez également choisir de modifier les couleurs par défaut pour le texte, les indicateurs en marge, l’espace blanc et les éléments de code dans l’éditeur.  
@@ -75,40 +75,40 @@ ms.locfileid: "59670323"
   
 ##### <a name="to-change-the-color-of-items-in-the-editor"></a>Pour changer la couleur des éléments dans l’éditeur  
   
-1.  Dans le menu **Outils** , choisissez **Options**.  
+1. Dans le menu **Outils** , choisissez **Options**.  
   
-2.  Choisissez **Polices et couleurs** dans le dossier **Environnement**.  
+2. Choisissez **Polices et couleurs** dans le dossier **Environnement**.  
   
-3.  Dans **Afficher les paramètres de**, choisissez **Éditeur de texte**.  
+3. Dans **Afficher les paramètres de**, choisissez **Éditeur de texte**.  
   
-4.  Dans **Afficher les éléments**, sélectionnez un élément dont vous avez besoin de modifier l’affichage, tel que **Texte brut**, **Marge des indicateurs**, **Espaces blancs visibles**, **Nom d’attribut HTML** ou **Attribut XML**.  
+4. Dans **Afficher les éléments**, sélectionnez un élément dont vous avez besoin de modifier l’affichage, tel que **Texte brut**, **Marge des indicateurs**, **Espaces blancs visibles**, **Nom d’attribut HTML** ou **Attribut XML**.  
   
-5.  Sélectionnez les paramètres d’affichage parmi les options suivantes : **Premier plan de l’élément**, **Arrière-plan de l’élément** et **Gras**.  
+5. Sélectionnez les paramètres d’affichage parmi les options suivantes : **Premier plan de l’élément**, **Arrière-plan de l’élément** et **Gras**.  
   
-6.  Cliquez sur **OK**.  
+6. Cliquez sur **OK**.  
   
 ## <a name="toolbars"></a>Barres d'outils  
  Pour améliorer l’accessibilité et la facilité d’utilisation de la barre d’outils, vous pouvez ajouter du texte aux boutons de barre d’outils.  
   
 #### <a name="to-assign-text-to-toolbar-buttons"></a>Pour affecter un texte à des boutons de barre d’outils  
   
-1.  Dans le menu **Outils**, choisissez **Personnaliser**.  
+1. Dans le menu **Outils**, choisissez **Personnaliser**.  
   
-2.  Dans la boîte de dialogue **Personnaliser**, sélectionnez l’onglet **Commandes**.  
+2. Dans la boîte de dialogue **Personnaliser**, sélectionnez l’onglet **Commandes**.  
   
-3.  Sélectionnez **Barre d’outils**, puis choisissez le nom de la barre d’outils qui contient le bouton pour lequel vous souhaitez afficher le texte.  
+3. Sélectionnez **Barre d’outils**, puis choisissez le nom de la barre d’outils qui contient le bouton pour lequel vous souhaitez afficher le texte.  
   
-4.  Dans la liste, sélectionnez la commande que vous souhaitez modifier.  
+4. Dans la liste, sélectionnez la commande que vous souhaitez modifier.  
   
-5.  Choisissez **Modifier la sélection**.  
+5. Choisissez **Modifier la sélection**.  
   
-6.  Choisissez **Image et texte**.  
+6. Choisissez **Image et texte**.  
   
 #### <a name="to-modify-the-buttons-displayed-text"></a>Pour modifier le texte du bouton à afficher  
   
-1.  Sélectionnez de nouveau **Modifier la sélection**.  
+1. Sélectionnez de nouveau **Modifier la sélection**.  
   
-2.  À côté de **Nom**, insérez une nouvelle légende pour le bouton sélectionné.  
+2. À côté de **Nom**, insérez une nouvelle légende pour le bouton sélectionné.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonctionnalités d’accessibilité de Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)   

@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ea744b4939b128f99a38f52e0b4b509c8da25c7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d486ae5c056be37c0284d39fabaa6945f5c91659
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944245"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045029"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Présentation des modèles, des classes et des relations
 Un langage spécifique à un domaine (DSL) est défini par son fichier de définition DSL, ainsi que tout code de programme personnalisé que vous pouvez écrire. La plupart du code du programme dans la solution DSL est généré à partir de ce fichier.
@@ -44,7 +44,7 @@ Un langage spécifique à un domaine (DSL) est défini par son fichier de défin
 
  Cette illustration montre un modèle qui a été créé par l’utilisateur d’une bibliothèque DSL de la musique. Albums de musique sont représentées par des zones qui contiennent des listes de chansons. Artistes sont représentées par des zones aux angles arrondis et sont connectés aux albums auquel ils ont contribué.
 
- ![Modèle d’instance du DSL généré](../modeling/media/music_instance.png)
+ ![Modèle d'instance du DSL généré](../modeling/media/music_instance.png)
 
  La définition DSL sépare deux aspects. L’apparence des éléments de modèle sur le diagramme de modèle est défini à l’aide des classes de formes et des classes de connecteur. Les informations contenues dans le modèle sont définies à l’aide des classes de domaine et les relations de domaine.
 
@@ -61,13 +61,13 @@ Un langage spécifique à un domaine (DSL) est défini par son fichier de défin
 
  Pour réorganiser le diagramme de définition DSL, vous pouvez :
 
--   Échange principal et référencer des vues à l’aide de la **déplacer l’arborescence ici** et **fractionner l’arborescence** commandes. Cliquez sur une classe de domaine unique pour afficher ces commandes.
+- Échange principal et référencer des vues à l’aide de la **déplacer l’arborescence ici** et **fractionner l’arborescence** commandes. Cliquez sur une classe de domaine unique pour afficher ces commandes.
 
--   Réorganiser les classes de domaine et les classes de formes en appuyant sur Ctrl + haut et Ctrl + bas.
+- Réorganiser les classes de domaine et les classes de formes en appuyant sur Ctrl + haut et Ctrl + bas.
 
--   Réduire ou développer des classes à l’aide de l’icône en haut à droite de chaque forme.
+- Réduire ou développer des classes à l’aide de l’icône en haut à droite de chaque forme.
 
--   Réduire les parties de l’arborescence en cliquant sur le signe moins (-) en bas d’une classe de domaine.
+- Réduire les parties de l’arborescence en cliquant sur le signe moins (-) en bas d’une classe de domaine.
 
 ## <a name="inheritance"></a>Héritage
  Classes de domaine peuvent être définies à l’aide de l’héritage. Pour créer une dérivation de l’héritage, cliquez sur l’outil de l’héritage, cliquez sur la classe dérivée, puis cliquez sur la classe de base. Un élément de modèle possède toutes les propriétés qui sont définies sur sa propre classe de domaine, ainsi que toutes les propriétés héritées de la classe de base. Il hérite également ses rôles dans les relations.

@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c22128d20bf83a8c6f2295b79653eabb3439c4b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 345e58b2c2a783bc9ffda8b915bf8baa66ad375a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953094"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046966"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications"></a>Procédure : Suspendre l’activation des URL des applications ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ En règle générale, une application [!INCLUDE[ndptecclick](../includes/ndptecc
   
 #### <a name="to-disable-url-activation-for-your-application"></a>Pour désactiver l'activation d'URL pour votre application  
   
-1.  Ouvrez votre manifeste de déploiement dans MageUI.exe. Si vous n’en n'avez pas encore créé un, suivez les étapes de [procédure pas à pas : déploiement manuel d’une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+1. Ouvrez votre manifeste de déploiement dans MageUI.exe. Si vous n’en n'avez pas encore créé un, suivez les étapes de [procédure pas à pas : déploiement manuel d’une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
-2.  Sélectionnez l’onglet **Options de déploiement**.  
+2. Sélectionnez l’onglet **Options de déploiement**.  
   
-3.  Décochez la case **Exécuter automatiquement l’application après l’installation**.  
+3. Décochez la case **Exécuter automatiquement l’application après l’installation**.  
   
-4.  Enregistrez et signez le manifeste.  
+4. Enregistrez et signez le manifeste.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Publication d’applications ClickOnce](../deployment/publishing-clickonce-applications.md)

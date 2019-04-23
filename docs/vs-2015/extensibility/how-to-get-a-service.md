@@ -10,12 +10,12 @@ ms.assetid: 1f000020-8fb7-4e39-8e1e-2e38c7fec3d4
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4310dadc1e4e1d601b5e1e7401749d44b132174e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 46ef86b8cde506aad3e00aa6b5dbc6470c0087de
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950722"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052179"
 ---
 # <a name="how-to-get-a-service"></a>Procédure : Obtenir un service
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,11 +28,11 @@ Vous devez souvent obtenir des services Visual Studio pour accéder aux différe
   
 ## <a name="getting-a-service-from-an-initialized-vspackage"></a>Obtention d’un service à partir d’un VSPackage initialisé  
   
-1.  Chaque extension de Visual Studio commence par un projet de déploiement VSIX qui contiendra les ressources de l’extension. Créer un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projet VSIX nommé `GetServiceExtension`. Vous pouvez trouver le modèle de projet VSIX dans le **nouveau projet** boîte de dialogue sous **Visual C# / extensibilité**.  
+1. Chaque extension de Visual Studio commence par un projet de déploiement VSIX qui contiendra les ressources de l’extension. Créer un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projet VSIX nommé `GetServiceExtension`. Vous pouvez trouver le modèle de projet VSIX dans le **nouveau projet** boîte de dialogue sous **Visual c# / extensibilité**.  
   
-2.  Ajoutez maintenant un modèle d’élément de commande personnalisée nommé **GetServiceCommand**. Dans le **ajouter un nouvel élément** boîte de dialogue, accédez à **Visual C# / extensibilité** et sélectionnez **commande personnalisée**. Dans le **nom** en bas de la fenêtre, modifiez le nom de fichier de commande pour **GetServiceCommand.cs**. Pour plus d’informations sur la création d’une commande personnalisée, [création d’une Extension avec une commande de Menu](../extensibility/creating-an-extension-with-a-menu-command.md)  
+2. Ajoutez maintenant un modèle d’élément de commande personnalisée nommé **GetServiceCommand**. Dans le **ajouter un nouvel élément** boîte de dialogue, accédez à **Visual c# / extensibilité** et sélectionnez **commande personnalisée**. Dans le **nom** en bas de la fenêtre, modifiez le nom de fichier de commande pour **GetServiceCommand.cs**. Pour plus d’informations sur la création d’une commande personnalisée, [création d’une Extension avec une commande de Menu](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
-3.  Dans GetServiceCommand.cs, supprimez le corps de la méthode MenuItemCommand et ajoutez le code suivant :  
+3. Dans GetServiceCommand.cs, supprimez le corps de la méthode MenuItemCommand et ajoutez le code suivant :  
   
     ```csharp  
     IVsActivityLog activityLog = ServiceProvider.GetService(typeof(SVsActivityLog)) as IVsActivityLog;  
@@ -43,9 +43,9 @@ Vous devez souvent obtenir des services Visual Studio pour accéder aux différe
   
      Ce code obtient un service SVsActivityLog et caste vers une <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interface, ce qui peut être utilisé pour écrire dans le journal d’activité. Pour voir un exemple, consultez [Comment : Utiliser le journal d’activité](../extensibility/how-to-use-the-activity-log.md).  
   
-4.  Générez le projet et commencez le débogage. L’instance expérimentale s’affiche.  
+4. Générez le projet et commencez le débogage. L’instance expérimentale s’affiche.  
   
-5.  Dans le menu Outils de l’instance expérimentale, recherchez le **GetServiceCommand appeler** bouton. Lorsque vous cliquez sur ce bouton, vous devez voir une boîte de message indiquant que **trouvé le service de journal d’activité.**  
+5. Dans le menu Outils de l’instance expérimentale, recherchez le **GetServiceCommand appeler** bouton. Lorsque vous cliquez sur ce bouton, vous devez voir une boîte de message indiquant que **trouvé le service de journal d’activité.**  
   
 ## <a name="getting-a-service-from-a-tool-window-or-control-container"></a>Obtention d’un service à partir d’un conteneur de contrôle ou de la fenêtre outil  
  Parfois, vous devrez peut-être obtenir un service à partir d’une fenêtre outil ou le contrôle conteneur qui n’a pas été installé, ou bien a été installé avec un fournisseur de services qui ne sait pas sur le service que vous souhaitez. Par exemple, vous souhaiterez peut-être écrire dans le journal d’activité à partir d’un contrôle.  

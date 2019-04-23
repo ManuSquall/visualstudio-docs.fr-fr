@@ -19,12 +19,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 96acd1039f9293e6efb64f2726fc53a4c33cdc31
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: ee820bc246e11b722d663ecc6a6037f182bc2c33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667181"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053115"
 ---
 # <a name="bind-objects-in-visual-studio"></a>Lier des objets dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,17 +42,17 @@ Visual Studio fournit des outils de conception pour travailler avec des objets p
 ## <a name="examples-of-using-custom-objects-as-data-sources"></a>Exemples d’utilisation des objets personnalisés comme sources de données
  Bien qu’il existe des innombrables façons d’implémenter votre logique d’application lorsque vous travaillez avec des objets comme source de données, il les bases de données sont quelques opérations standards qui peuvent être simplifiées en utilisant les objets TableAdapter générés Visual Studio pour SQL. Cette page explique comment implémenter ces processus standards à l’aide de TableAdapters.It ne vise pas comme guide pour la création de vos objets personnalisés. Par exemple, vous allez généralement effectuer les opérations standards suivantes indépendamment de l’implémentation spécifique de vos objets, ou la logique de l’application :
 
--   Chargement des données dans des objets (généralement à partir d’une base de données).
+- Chargement des données dans des objets (généralement à partir d’une base de données).
 
--   Création d’une collection typée d’objets.
+- Création d’une collection typée d’objets.
 
--   Ajout et suppression d’objets dans une collection.
+- Ajout et suppression d’objets dans une collection.
 
--   Afficher les données d’objet aux utilisateurs sur un formulaire.
+- Afficher les données d’objet aux utilisateurs sur un formulaire.
 
--   Modification des données dans un objet.
+- Modification des données dans un objet.
 
--   Enregistrer les données à partir d’objets dans la base de données.
+- Enregistrer les données à partir d’objets dans la base de données.
 
 > [!NOTE]
 >  Afin de mieux comprendre et fournir le contexte pour les exemples de cette page, nous vous suggérons d’effectuer ce qui suit : [Procédure pas à pas : Connexion aux données dans des objets (Windows Forms)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05). Cette procédure pas à pas crée les objets présentés ici.

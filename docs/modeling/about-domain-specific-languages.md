@@ -9,26 +9,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63d7e895f0a7e57160e10c4b6020b2bf73ae477d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4684a0256e01cafe79fc90ae1ae97dfc2be047d6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939487"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046819"
 ---
 # <a name="about-domain-specific-languages"></a>À propos des langages spécifiques à un domaine
 
-Contrairement à un langage à usage général tel que C# ou UML, un langage spécifique à un domaine (DSL) est conçu pour exprimer des instructions dans un espace de problème particulier, ou un domaine.
+Contrairement à un langage à usage général tel que c# ou UML, un langage spécifique à un domaine (DSL) est conçu pour exprimer des instructions dans un espace de problème particulier, ou un domaine.
 
 DSL Well-Known inclure des expressions régulières et SQL. Chaque DSL est largement préférable à un langage à usage général pour décrire les opérations de chaînes de texte ou une base de données, mais bien pire pour décrire les idées qui sont en dehors de sa propre étendue. Secteurs d’activité individuels ont également leurs propres DSL. Par exemple, dans le secteur des télécommunications, appelez description langues sont couramment utilisées pour spécifier la séquence des États dans un appel téléphonique et en l’air secteur du voyage une norme que DSL est utilisé pour décrire les réservations de vol.
 
 Votre entreprise et votre projet également y spécial des concepts qui peuvent être décrite avec une solution DSL. Par exemple, vous pouvez définir un DSL pour l’une de ces applications :
 
--   Plan des chemins d’accès de navigation dans un site Web.
+- Plan des chemins d’accès de navigation dans un site Web.
 
--   Schémas de câblage de composants électroniques.
+- Schémas de câblage de composants électroniques.
 
--   Réseaux des tapis roulants et matériel pour un aéroport de manutention de bagages.
+- Réseaux des tapis roulants et matériel pour un aéroport de manutention de bagages.
 
 Lorsque vous concevez une solution DSL, vous définissez un *de classe de domaine* pour chacun des concepts importants dans le domaine, par exemple une page web, lamp ou aéroport bureau d’enregistrement. Vous définissez *relations de domaine* comme lien hypertexte, câble ou un tapis roulant pour relier les concepts.
 
@@ -114,12 +114,12 @@ Un langage spécifique à un domaine peut fournir les avantages suivants :
 
 La plupart des équipes de développement de logiciels qui utilisent des langages spécifiques à un domaine suivez ces étapes pour créer et utiliser leurs modèles :
 
--   L’équipe distingue les parties variables du domaine à partir des parties qui ne changent jamais.
+- L’équipe distingue les parties variables du domaine à partir des parties qui ne changent jamais.
 
--   Les développeurs d’écrire du code pour les parties fixes et laissent les points d’extension pour les parties variables.
+- Les développeurs d’écrire du code pour les parties fixes et laissent les points d’extension pour les parties variables.
 
--   Le développeur de logiciels senior ou l’architecte crée un langage spécifique à un domaine qui incorpore les modèles de conception des parties fixes du domaine et les points d’extension pour les parties variables.
+- Le développeur de logiciels senior ou l’architecte crée un langage spécifique à un domaine qui incorpore les modèles de conception des parties fixes du domaine et les points d’extension pour les parties variables.
 
--   Le développeur de logiciels senior ou l’architecte déploie le langage spécifique à un domaine pour les développeurs des diverses applications que l’équipe produit.
+- Le développeur de logiciels senior ou l’architecte déploie le langage spécifique à un domaine pour les développeurs des diverses applications que l’équipe produit.
 
--   Chaque développeur crée un modèle qui s’applique à l’application spécifique.
+- Chaque développeur crée un modèle qui s’applique à l’application spécifique.

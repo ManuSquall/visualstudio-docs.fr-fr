@@ -14,21 +14,21 @@ ms.assetid: f1cd947f-eba2-411e-8e84-8ca86f608643
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4a25f72fccfd072243d6d0fdfd1d311c1a3bb6f4
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 941d49a530b14e2af64ddcb599dd775feb347de0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841446"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053225"
 ---
 # <a name="expected-catch"></a>'catch' attendu
 Vous avez utilisé la gestion des exceptions **essayez** bloquer, mais n’avez pas écrit associé **catch** instruction. Le mécanisme de gestion des exceptions requiert que le code peut échouer, ainsi que le code qui ne doit pas s’exécuter si une exception se produit, être encapsulées à l’intérieur d’un **essayez** bloc. Exceptions sont levées à partir la **essayez** bloquer à l’aide de la **lever** instruction et interceptées en dehors de la **essayez** bloc avec un ou plusieurs **catch**instructions.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
--   Ajouter associé **catch** bloc.  
+- Ajouter associé **catch** bloc.  
   
--   Essayez d’utiliser un **enfin** bloquer au lieu d’un **catch** bloc.  
+- Essayez d’utiliser un **enfin** bloquer au lieu d’un **catch** bloc.  
   
 ## <a name="see-also"></a>Voir aussi  
  [try... catch... finally, instruction](../../javascript/reference/try-dot-dot-dot-catch-dot-dot-dot-finally-statement-javascript.md)   

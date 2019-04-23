@@ -16,12 +16,12 @@ caps.latest.revision: 83
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ce0acf7c1c63f0d1c05d1e1d3b59dc7a5d28862a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6f5c4c474ad737add8580381e7fda5fb0b0c1afc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949282"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044835"
 ---
 # <a name="t4-text-template-directives"></a>Directives de modèles de texte T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,37 +39,44 @@ Les directives fournissent des instructions au moteur de transformation de modè
  En général, les directives sont les premiers éléments d'un fichier modèle ou d'un fichier inclus. Vous ne devez pas les placer à l'intérieur d'un bloc de code `<#...#>` ou après un bloc de fonctionnalité de classe `<#+...#>`.  
   
  [Directive du modèle T4](../modeling/t4-template-directive.md)  
- ```  
+
+```  
 <#@ template [language="VB"] [hostspecific="true|TrueFromBase"] [debug="true"] [inherits="templateBaseClass"] [culture="code"] [compilerOptions="options"] [visibility="internal"] [linePragmas="false"] #>  
 ```  
   
  [Directive du paramètre T4](../modeling/t4-parameter-directive.md)  
- ```  
+
+```  
 <#@ parameter type="Full.TypeName" name="ParameterName" #>  
 ```  
   
  [Directive de sortie T4](../modeling/t4-output-directive.md)  
- ```  
+
+```  
 <#@ output extension=".fileNameExtension" [encoding="encoding"] #>  
 ```  
   
  [Directive d’assembly T4](../modeling/t4-assembly-directive.md)  
- ```  
+
+```  
 <#@ assembly name="[assembly strong name|assembly file name]" #>  
 ```  
   
  [Directive d’importation T4](../modeling/t4-import-directive.md)  
- ```  
+
+```  
 <#@ import namespace="namespace" #>  
 ```  
   
  [Directive d’inclusion T4](../modeling/t4-include-directive.md)  
- ```  
+
+```  
 <#@ include file="filePath" #>  
 ```  
   
  [Directive CleanUpBehavior T4](../modeling/t4-cleanupbehavior-directive.md)  
- ```  
+
+```  
 <#@ CleanupBehavior processor="T4VSHost" CleanupAfterProcessingtemplate="true" #>  
 ```  
   

@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32c96bf9e206a70f5de38459460d8bdcaee571cc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: c5d7d5fa0a53ead2f49f89df37943d734a1b73fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666557"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045340"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Spécifier les symboles (.pdb) et les fichiers sources dans le débogueur Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -128,9 +128,9 @@ Sur le **outils** > **Options** > **débogage** > **symboles** page, vous pouvez
 
 4. Spécifiez les modules que vous souhaitez que le débogueur à charger à partir de la **emplacements du fichier (.pdb) de symboles** lorsqu’il démarre.
 
-   -  Sélectionnez **charger tous les modules, sauf exclus** (la valeur par défaut) pour charger tous les symboles pour tous les modules dans l’emplacement du fichier de symboles, à l’exception des modules que vous excluez spécifiquement. Pour exclure certains modules, sélectionnez **spécifier les modules exclus**, sélectionnez le **+** icône, tapez les noms des modules à exclure, puis sélectionnez **OK**.
+   - Sélectionnez **charger tous les modules, sauf exclus** (la valeur par défaut) pour charger tous les symboles pour tous les modules dans l’emplacement du fichier de symboles, à l’exception des modules que vous excluez spécifiquement. Pour exclure certains modules, sélectionnez **spécifier les modules exclus**, sélectionnez le **+** icône, tapez les noms des modules à exclure, puis sélectionnez **OK**.
 
-   -  Pour charger uniquement les modules que vous spécifiez à partir des emplacements de fichier de symboles, sélectionnez **charge les modules spécifiés uniquement**. Sélectionnez **spécifier les modules inclus**, sélectionnez le **+** icône, tapez les noms des modules à inclure, puis sélectionnez **OK**. Les fichiers de symboles pour les autres modules ne sont pas chargés.
+   - Pour charger uniquement les modules que vous spécifiez à partir des emplacements de fichier de symboles, sélectionnez **charge les modules spécifiés uniquement**. Sélectionnez **spécifier les modules inclus**, sélectionnez le **+** icône, tapez les noms des modules à inclure, puis sélectionnez **OK**. Les fichiers de symboles pour les autres modules ne sont pas chargés.
 
 5. Sélectionnez **OK**.
 
@@ -199,7 +199,7 @@ Générer avec **/debug** pour créer un *.pdb* fichier. Vous pouvez générer d
 
 Définir le *web.config* fichier de votre application ASP.NET en mode débogage. En mode débogage, ASP.NET génère des symboles pour les fichiers générés dynamiquement et le débogueur peut être attaché à l'application ASP.NET. Visual Studio définit cela automatiquement lorsque vous commencez le débogage, si vous avez créé votre projet à partir du modèle de projets web.
 
-##  <a name="manage-symbols-while-debugging"></a>Gérer les symboles lors du débogage
+## <a name="manage-symbols-while-debugging"></a>Gérer les symboles lors du débogage
 
 Vous pouvez utiliser la **Modules**, **pile des appels**, **variables locales**, **automatique**, ou n’importe quel **espion** fenêtre à charger symboles ou modifier les options de symbole lors du débogage. Pour plus d’informations, consultez [vous familiariser avec la façon dont le débogueur s’attache à votre application](../debugger/debugger-tips-and-tricks.md#modules_window).
 
@@ -224,10 +224,10 @@ Pendant le débogage, le **Modules** fenêtre affiche les modules de code que le
 
 Il existe plusieurs façons pour le débogueur s’arrête dans du code qui n’a pas de fichiers sources ou de symboles disponibles :
 
--  Pas à pas détaillé de code.
--  Arrêter dans le code à partir d’un point d’arrêt ou une exception.
--  Basculer vers un autre thread.
--  Modifier le frame de pile en double-cliquant sur un frame dans la **pile des appels** fenêtre.
+- Pas à pas détaillé de code.
+- Arrêter dans le code à partir d’un point d’arrêt ou une exception.
+- Basculer vers un autre thread.
+- Modifier le frame de pile en double-cliquant sur un frame dans la **pile des appels** fenêtre.
 
 Dans ce cas, le débogueur affiche le **chargé des symboles non** ou **aucune Source a été chargée** pages pour vous aider à trouver et charger les symboles nécessaires ou la source.
 
@@ -235,11 +235,11 @@ Dans ce cas, le débogueur affiche le **chargé des symboles non** ou **aucune S
 
 **Pour utiliser la page de document aucun symbole chargé pour aider à trouver et charger des symboles manquants :**
 
--   Pour modifier le chemin de recherche, sélectionnez un chemin d’accès non sélectionné, ou **nouveau chemin d’accès** ou **nouveau chemin VSTS** et entrez ou sélectionnez un nouveau chemin d’accès. Sélectionnez **charger** pour effectuer une nouvelle recherche les chemins d’accès et de charger le fichier de symboles s’il est trouvé.
--   Pour remplacer les options de symbole et réessayer les chemins de recherche, sélectionnez **Parcourir et rechercher \<exécutable-name >**. Le fichier de symboles est chargé s’il est trouvé, ou **Explorateur de fichiers** s’ouvre pour vous pouvez de sélectionner manuellement le fichier de symboles.
--   Pour ouvrir le **Options** > **débogage** > **symboles** page, sélectionnez **modifier les paramètres de symbole**.
--   Pour afficher le code machine dans une nouvelle fenêtre une fois, sélectionnez **afficher le code machine**, ou sélectionnez **boîte de dialogue Options** pour définir l’option pour toujours afficher le code machine lorsque les fichiers sources ou de symboles sont introuvables.
--   Pour afficher les emplacements de recherche et le résultat, développez **les informations de chargement de symboles**.
+- Pour modifier le chemin de recherche, sélectionnez un chemin d’accès non sélectionné, ou **nouveau chemin d’accès** ou **nouveau chemin VSTS** et entrez ou sélectionnez un nouveau chemin d’accès. Sélectionnez **charger** pour effectuer une nouvelle recherche les chemins d’accès et de charger le fichier de symboles s’il est trouvé.
+- Pour remplacer les options de symbole et réessayer les chemins de recherche, sélectionnez **Parcourir et rechercher \<exécutable-name >**. Le fichier de symboles est chargé s’il est trouvé, ou **Explorateur de fichiers** s’ouvre pour vous pouvez de sélectionner manuellement le fichier de symboles.
+- Pour ouvrir le **Options** > **débogage** > **symboles** page, sélectionnez **modifier les paramètres de symbole**.
+- Pour afficher le code machine dans une nouvelle fenêtre une fois, sélectionnez **afficher le code machine**, ou sélectionnez **boîte de dialogue Options** pour définir l’option pour toujours afficher le code machine lorsque les fichiers sources ou de symboles sont introuvables.
+- Pour afficher les emplacements de recherche et le résultat, développez **les informations de chargement de symboles**.
 
 Si le débogueur recherche le *.pdb* fichier une fois que vous exécutez une des options et pouvez extraire le fichier source en utilisant les informations dans le *.pdb* fichier, il affiche la source. Sinon, elle affiche un **aucune Source a été chargée** page qui décrit le problème, avec des liens vers les actions susceptibles de résoudre le problème.
 

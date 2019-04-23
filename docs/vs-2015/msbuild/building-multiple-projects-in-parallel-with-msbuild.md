@@ -13,21 +13,21 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c74db546307767b352387b1627310794ec833b0f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c420c4546a836d1440bdb150eba1319ad6218622
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650380"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050244"
 ---
 # <a name="building-multiple-projects-in-parallel-with-msbuild"></a>Génération parallèle de plusieurs projets avec MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez utiliser MSBuild pour générer plus rapidement plusieurs projets en les exécutant en parallèle. Pour exécuter des builds en parallèle, vous utilisez les paramètres suivants sur un ordinateur multicœur ou multiprocesseur :  
   
--   Le commutateur `/maxcpucount` à une invite de commande.  
+- Le commutateur `/maxcpucount` à une invite de commande.  
   
--   Le paramètre de tâche <xref:Microsoft.Build.Tasks.MSBuild.BuildInParallel%2A> sur une tâche MSBuild.  
+- Le paramètre de tâche <xref:Microsoft.Build.Tasks.MSBuild.BuildInParallel%2A> sur une tâche MSBuild.  
   
 > [!NOTE]
 >  Le commutateur **/verbosity** (**/v**) sur une ligne de commande peut aussi affecter les performances de génération. Les performances de génération risquent de diminuer si le niveau de détail de vos informations de journal de génération est défini sur « détaillé » ou « diagnostic ». Ces niveaux sont utilisés pour le dépannage. Pour plus d’informations, consultez [Obtention de journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md) et [Référence de ligne de commande](../msbuild/msbuild-command-line-reference.md).  

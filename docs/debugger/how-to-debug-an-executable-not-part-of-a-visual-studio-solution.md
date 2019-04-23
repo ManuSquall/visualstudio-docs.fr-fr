@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49636dc4a43d56afe6d9307fc7ec2ddd44a6c37f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 2db4cf8a678b6c20693dcc9c1e730d83f0d5ca7a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690199"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051334"
 ---
 # <a name="debug-an-app-that-isnt-part-of-a-visual-studio-solution-c-c-visual-basic-f"></a>Déboguer une application qui ne fait pas partie d’une solution Visual Studio (C++, C#, Visual Basic, F#)
 
@@ -35,7 +35,7 @@ L’approche habituelle pour déboguer une application qui n’existe pas dans V
 
 Attachement à une application requiert des étapes manuelles que prennent quelques secondes. En raison de ce délai, attachement ne vous aider à déboguer un problème de démarrage, ou une application qui n’attend pas de l’utilisateur d’entrée et se termine rapidement.
 
-Dans ces situations, vous pouvez créer un projet Visual Studio EXE pour l’application, ou l’importer dans une existante C#, Visual Basic ou C++ solution. Tous les langages de programmation ne prennent pas en charge les projets EXE.
+Dans ces situations, vous pouvez créer un projet Visual Studio EXE pour l’application, ou l’importer dans une existante C#, Visual Basic, ou C++ solution. Tous les langages de programmation ne prennent pas en charge les projets EXE.
 
 >[!IMPORTANT]
 >Fonctionnalités de débogage pour une application qui n’a pas été intégré dans Visual Studio sont limitées, si vous attachez à l’application ou l’ajoutez à une solution Visual Studio.
@@ -58,7 +58,7 @@ Dans ces situations, vous pouvez créer un projet Visual Studio EXE pour l’app
 
 ### <a name="to-import-an-app-into-an-existing-visual-studio-solution"></a>Pour importer une application dans une solution Visual Studio existante
 
-1.  Avec C++, C#, ou Visual Basic solution ouverte dans Visual Studio, sélectionnez **fichier** > **ajouter** > **projet existant**.
+1. Avec un C++, C#, ou Visual Basic solution ouverte dans Visual Studio, sélectionnez **fichier** > **ajouter** > **projet existant**.
 
 1. Dans le **ouvrir un projet** boîte de dialogue, sélectionnez **tous les fichiers projet**, le cas échéant, dans la liste déroulante à côté **nom de fichier**.
 

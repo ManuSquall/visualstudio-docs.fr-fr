@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c9ba42ca1a4fefa337e488f3bb3e2879a0446aea
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: b9822dda92a096e3c497d468865d3ed9fd56e16d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223232"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046915"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>Créer des diagrammes de dépendance à partir de votre code
 
@@ -43,13 +43,13 @@ Avant de créer un diagramme de dépendances, assurez-vous que votre solution co
 > [!NOTE]
 > Diagrammes de dépendance ne sont pas pris en charge pour les projets .NET Core dans Visual Studio.
 
-1.  Sur le **Architecture** menu, choisissez **nouveau diagramme de dépendance**.
+1. Sur le **Architecture** menu, choisissez **nouveau diagramme de dépendance**.
 
-2.  Sous **modèles**, choisissez **diagramme de dépendances**.
+2. Sous **modèles**, choisissez **diagramme de dépendances**.
 
-3.  Nommez le diagramme.
+3. Nommez le diagramme.
 
-4.  Dans **ajouter au projet de modélisation**, recherchez et sélectionnez un projet de modélisation existant dans votre solution.
+4. Dans **ajouter au projet de modélisation**, recherchez et sélectionnez un projet de modélisation existant dans votre solution.
 
      ou
 
@@ -58,7 +58,7 @@ Avant de créer un diagramme de dépendances, assurez-vous que votre solution co
     > [!NOTE]
     > Le diagramme de la dépendance doit exister à l’intérieur d’un projet de modélisation. Toutefois, vous pouvez le lier à des éléments situés n'importe où dans la solution.
 
-5.  Veillez à enregistrer le projet de modélisation et le diagramme de dépendances.
+5. Veillez à enregistrer le projet de modélisation et le diagramme de dépendances.
 
 ## <a name="drag-and-drop-or-copy-and-paste-from-a-code-map"></a>Faites glisser et déposez, ou copiez et collez à partir d’une carte de Code
 
@@ -101,19 +101,19 @@ Avant de créer un diagramme de dépendances, assurez-vous que votre solution co
 
  Le nombre indiqué sur une couche représente le nombre d’artefacts liés à cette couche. Toutefois, à la lecture de ce nombre, souvenez-vous de ce qui suit :
 
--   Si une couche est liée à un artefact contenant d'autres artefacts, mais n'est pas directement liée à ces autres artefacts, le nombre représentera uniquement les artefacts auxquels elle est directement liée. Toutefois, les autres artefacts sont inclus dans l'analyse pendant la validation de couche.
+- Si une couche est liée à un artefact contenant d'autres artefacts, mais n'est pas directement liée à ces autres artefacts, le nombre représentera uniquement les artefacts auxquels elle est directement liée. Toutefois, les autres artefacts sont inclus dans l'analyse pendant la validation de couche.
 
      Par exemple, si une couche est liée à un espace de noms unique, le nombre d'artefacts liés est égal à 1, même si l'espace de noms contient des classes. Si la couche a également des liens vers chaque classe de l'espace de noms, le nombre comprendra les classes liées.
 
--   Si une couche contient d'autres couches liées à des artefacts, la couche du conteneur est également liée à ces artefacts, même si le nombre indiqué sur la couche du conteneur ne comprend pas ces artefacts.
+- Si une couche contient d'autres couches liées à des artefacts, la couche du conteneur est également liée à ces artefacts, même si le nombre indiqué sur la couche du conteneur ne comprend pas ces artefacts.
 
 ## <a name="Managing"></a> Gérer les liens entre les couches et les artefacts
 
-1.  Sur le diagramme de la dépendance, ouvrez le menu contextuel de la couche, puis choisissez **afficher les liens**.
+1. Sur le diagramme de la dépendance, ouvrez le menu contextuel de la couche, puis choisissez **afficher les liens**.
 
      **Explorateur de couches** affiche les liens d’artefact pour la couche sélectionnée.
 
-2.  Utilisez les tâches suivantes pour gérer ces liens :
+2. Utilisez les tâches suivantes pour gérer ces liens :
 
 |**To**|**Dans l’Explorateur de couches**|
 |-|-|
@@ -150,17 +150,17 @@ Avant de créer un diagramme de dépendances, assurez-vous que votre solution co
 ## <a name="Codemaps"></a> Découvrir des modèles et des dépendances sur une carte de code
  Lors de la création des diagrammes de dépendance, vous pouvez également créer **cartes de code**. Ces diagrammes peuvent vous aider à découvrir des modèles et des dépendances quand vous explorez le code. Utilisez l'Explorateur de solutions, l'Affichage de classes ou l'Explorateur d'objets pour explorer les assemblys, les espaces de noms et les classes, qui correspondent souvent à des couches existantes. Pour plus d'informations sur les cartes de code, consultez :
 
--   [Mapper les dépendances à travers vos solutions](../modeling/map-dependencies-across-your-solutions.md)
+- [Mapper les dépendances à travers vos solutions](../modeling/map-dependencies-across-your-solutions.md)
 
--   [Utiliser des cartes de code pour déboguer vos applications](../modeling/use-code-maps-to-debug-your-applications.md)
+- [Utiliser des cartes de code pour déboguer vos applications](../modeling/use-code-maps-to-debug-your-applications.md)
 
--   [Rechercher des problèmes potentiels à l’aide des analyseurs de carte du code](../modeling/find-potential-problems-using-code-map-analyzers.md)
+- [Rechercher des problèmes potentiels à l’aide des analyseurs de carte du code](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
 ## <a name="see-also"></a>Voir aussi
 
 - [Prise en charge de l’édition pour l’architecture et les outils de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)
 - [Vidéo : Valider les dépendances de votre architecture en temps réel](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
-- [Diagrammes de dépendance : Référence](../modeling/layer-diagrams-reference.md)
-- [Diagrammes de dépendance : Guidelines](../modeling/layer-diagrams-guidelines.md)
+- [Diagrammes de dépendance : Informations de référence](../modeling/layer-diagrams-reference.md)
+- [Diagrammes de dépendance : Recommandations](../modeling/layer-diagrams-guidelines.md)
 - [Validation du code avec des diagrammes de dépendance](../modeling/validate-code-with-layer-diagrams.md)
 - [Visualiser du code](../modeling/visualize-code.md)

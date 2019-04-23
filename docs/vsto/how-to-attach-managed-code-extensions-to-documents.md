@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c0faac79e99b425eadd4e43c88b0a04dba670731
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 18ca5e0cbf341f27454377c544e20cd2aba1388f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646771"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044262"
 ---
 # <a name="how-to-attach-managed-code-extensions-to-documents"></a>Procédure : Attacher des extensions de code managé à des documents
   Vous pouvez attacher un assembly de personnalisation à un document Microsoft Office Word existant ou d’un classeur Microsoft Office Excel. Le document ou le classeur peut être dans n’importe quel format de fichier qui est pris en charge par les projets Microsoft Office et les outils de développement dans Visual Studio. Pour plus d’informations, consultez [Architecture des personnalisations au niveau du document](../vsto/architecture-of-document-level-customizations.md).
@@ -34,21 +34,21 @@ ms.locfileid: "56646771"
 
 ### <a name="to-attach-managed-code-extensions-to-a-document"></a>Pour attacher des extensions de code managé à un document
 
-1.  Dans un projet qui ne nécessite pas de Microsoft Office, par exemple une application console ou un projet Windows Forms, ajoutez une référence à la *Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll* et  *Microsoft.VisualStudio.Tools.Applications.Runtime.dll* assemblys.
+1. Dans un projet qui ne nécessite pas de Microsoft Office, par exemple une application console ou un projet Windows Forms, ajoutez une référence à la *Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll* et  *Microsoft.VisualStudio.Tools.Applications.Runtime.dll* assemblys.
 
-2.  Ajoutez le code suivant **importations** ou **à l’aide de** instructions au début du fichier de code.
+2. Ajoutez le code suivant **importations** ou **à l’aide de** instructions au début du fichier de code.
 
      [!code-csharp[Trin_VstcoreDeployment#4](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#4)]
      [!code-vb[Trin_VstcoreDeployment#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#4)]
 
-3.  Appelez la méthode statique <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> (méthode).
+3. Appelez la méthode statique <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> (méthode).
 
      Le code suivant exemple utilise le <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> de surcharge. Cette surcharge prend le chemin d’accès complet du document et un <xref:System.Uri> qui spécifie l’emplacement du manifeste de déploiement pour la personnalisation que vous voulez attacher au document. Cet exemple suppose qu’un document Word nommé **Documentword1.docx** est sur le bureau, et que le manifeste de déploiement se trouve dans un dossier nommé **publier** qui se trouve également sur le bureau.
 
      [!code-csharp[Trin_VstcoreDeployment#3](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#3)]
      [!code-vb[Trin_VstcoreDeployment#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#3)]
 
-4.  Générez le projet et exécutez l’application sur l’ordinateur où vous souhaitez attacher la personnalisation. L’ordinateur doit disposer de Visual Studio 2010 Tools pour Office Runtime est installé.
+4. Générez le projet et exécutez l’application sur l’ordinateur où vous souhaitez attacher la personnalisation. L’ordinateur doit disposer de Visual Studio 2010 Tools pour Office Runtime est installé.
 
 ## <a name="see-also"></a>Voir aussi
 - [Gérer des documents sur un serveur à l’aide de la classe ServerDocument](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)

@@ -18,12 +18,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 45ca2bd23c6da7d86b65cc05c0b0dee670e2718f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 48b5d8406f5b5c6d43afadf9e544914e6133090c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949992"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046936"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Procédure : Publier une application ClickOnce à l’aide de l’Assistant Publication
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ Pour mettre une application ClickOnce à la disposition des utilisateurs, vous d
   
 4. Dans la page **Comment les utilisateurs installeront-ils l’application ?**, sélectionnez l’emplacement auquel les utilisateurs devront accéder pour installer l’application :  
   
-   -   Si les utilisateurs effectuent l’installation à partir d’un site web, cliquez sur **À partir d’un site web**, puis entrez une URL qui correspond au chemin de fichier entré à l’étape précédente. Cliquez sur **Suivant**. (Cette option est généralement utilisée quand vous spécifiez une adresse FTP comme emplacement de publication. Le téléchargement direct à partir de FTP n'est pas pris en charge. Vous devez donc entrer une URL ici.)   
+   - Si les utilisateurs effectuent l’installation à partir d’un site web, cliquez sur **À partir d’un site web**, puis entrez une URL qui correspond au chemin de fichier entré à l’étape précédente. Cliquez sur **Suivant**. (Cette option est généralement utilisée quand vous spécifiez une adresse FTP comme emplacement de publication. Le téléchargement direct à partir de FTP n'est pas pris en charge. Vous devez donc entrer une URL ici.)   
   
-   -   Si les utilisateurs installent directement l’application à partir du partage de fichiers, cliquez sur **À partir d’un chemin UNC ou d’un partage de fichiers**, puis cliquez sur **Suivant**. (Il s’agit de la publication des emplacements de la forme c:\deploy\myapp ou \\\server\myapp.)  
+   - Si les utilisateurs installent directement l’application à partir du partage de fichiers, cliquez sur **À partir d’un chemin UNC ou d’un partage de fichiers**, puis cliquez sur **Suivant**. (Il s’agit de la publication des emplacements de la forme c:\deploy\myapp ou \\\server\myapp.)  
   
-   -   Si les utilisateurs installent l’application à partir d’un média amovible, cliquez sur **À partir d’un CD-ROM ou DVD-ROM**, puis cliquez sur **Suivant**.  
+   - Si les utilisateurs installent l’application à partir d’un média amovible, cliquez sur **À partir d’un CD-ROM ou DVD-ROM**, puis cliquez sur **Suivant**.  
   
 5. Dans la page **L’application sera-t-elle disponible hors connexion ?**, cliquez sur l’option appropriée :  
   

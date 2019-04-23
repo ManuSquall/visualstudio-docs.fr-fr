@@ -9,12 +9,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b6d205a3a8abddadc714aea4aa913ff064518920
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 91c993697103417eb3ba39e3c6d2929baee9311a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663477"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046421"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>Procédure : Attacher le Profiler à un Service .NET pour collecter des données de mémoire à l’aide de la ligne de commande
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,16 +88,16 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
 
     **VSPerfCmd**  [/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
 
-   -   Spécifiez l’ID de processus ou le nom de processus du service. Vous pouvez afficher les ID et les noms de processus de tous les processus en cours d’exécution dans le Gestionnaire des tâches de Windows.  
+   - Spécifiez l’ID de processus ou le nom de processus du service. Vous pouvez afficher les ID et les noms de processus de tous les processus en cours d’exécution dans le Gestionnaire des tâches de Windows.  
 
-   -   **targetclr** : `Version` spécifie la version du common language runtime (CLR) à profiler lorsque plusieurs versions du runtime sont chargées dans une application. Optionnel.  
+   - **targetclr** : `Version` spécifie la version du common language runtime (CLR) à profiler lorsque plusieurs versions du runtime sont chargées dans une application. Optionnel.  
 
 ## <a name="controlling-data-collection"></a>Contrôle de la collection de données  
  Pendant l’exécution du service, vous pouvez utiliser les options de **VSPerfCmd.exe** pour démarrer et arrêter l’écriture des données dans le fichier de données du profileur. Le fait de pouvoir contrôler la collecte vous permet de collecter des données pour une phase spécifique de l’exécution du programme, comme le démarrage ou l’arrêt de l’application.  
 
 #### <a name="to-start-and-stop-data-collection"></a>Pour démarrer et arrêter la collecte de données  
 
--   Les paires d’options **VSPerfCmd** suivantes permettent de démarrer et d’arrêter la collecte des données. Spécifiez chaque option sur une ligne de commande distincte. Vous pouvez activer et désactiver la collecte de données à plusieurs reprises.  
+- Les paires d’options **VSPerfCmd** suivantes permettent de démarrer et d’arrêter la collecte des données. Spécifiez chaque option sur une ligne de commande distincte. Vous pouvez activer et désactiver la collecte de données à plusieurs reprises.  
 
     |Option|Description|  
     |------------|-----------------|  
@@ -110,23 +110,23 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
 
 #### <a name="to-end-a-profiling-session"></a>Pour terminer une session de profilage  
 
-1.  Effectuez une des opérations suivantes pour détacher le profileur de l’application cible :  
+1. Effectuez une des opérations suivantes pour détacher le profileur de l’application cible :  
 
-    -   Arrêtez le service.  
+    - Arrêtez le service.  
 
          - ou -  
 
-    -   Tapez **VSPerfCmd /detach**  
+    - Tapez **VSPerfCmd /detach**  
 
-2.  Fermez le profileur. Type :  
+2. Fermez le profileur. Type :  
 
      **VSPerfCmd /shutdown**  
 
-3.  (Facultatif) Effacez les variables d’environnement de profilage. Type :  
+3. (Facultatif) Effacez les variables d’environnement de profilage. Type :  
 
      **VSPerfClrEnv /globaloff**  
 
-4.  Redémarrez l'ordinateur.  
+4. Redémarrez l'ordinateur.  
 
 ## <a name="see-also"></a>Voir aussi  
  [Profilage de services](../profiling/command-line-profiling-of-services.md)   
