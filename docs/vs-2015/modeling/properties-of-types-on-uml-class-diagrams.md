@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 520843ee596e67de5d4e804e90302f931a1d3b57
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 17d18a485e57b896aaf3f40b0cfdab63e10dce2c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953956"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062228"
 ---
 # <a name="properties-of-types-on-uml-class-diagrams"></a>Propriétés de types dans des diagrammes de classes UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +28,15 @@ Dans un diagramme de classes UML, un *type* est une classe, une interface ou une
 > [!NOTE]
 >  Cette rubrique traite des propriétés de types dans les diagrammes de classes UML Pour plus d’informations, consultez les rubriques suivantes :  
   
--   [Diagrammes de classes UML : Informations de référence](../modeling/uml-class-diagrams-reference.md)  
+- [Diagrammes de classes UML : Informations de référence](../modeling/uml-class-diagrams-reference.md)  
   
--   [Diagrammes de classes UML : Recommandations](../modeling/uml-class-diagrams-guidelines.md)  
+- [Diagrammes de classes UML : Recommandations](../modeling/uml-class-diagrams-guidelines.md)  
   
--   [Propriétés d’attributs dans des diagrammes de classes UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
+- [Propriétés d’attributs dans des diagrammes de classes UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)  
   
--   [Propriétés d’opérations dans des diagrammes de classes UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
+- [Propriétés d’opérations dans des diagrammes de classes UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)  
   
--   [Propriétés des associations dans les diagrammes de classes UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
+- [Propriétés des associations dans les diagrammes de classes UML](../modeling/properties-of-associations-on-uml-class-diagrams.md)  
   
 ## <a name="properties"></a>Properties  
  Il s'agit des propriétés d'une classe, interface ou énumération.  
@@ -54,8 +54,8 @@ Dans un diagramme de classes UML, un *type* est une classe, une interface ou une
 |**Visibilité**|Public|Classe, Interface, Énumération|-Public - visible globalement.<br />-Private : ce type est visible dans le package auquel il appartient.<br />-Package - visible dans le package.|  
 |**Éléments de travail**|{0} associé|Tous les éléments|Nombre d'éléments de travail associés à cet élément. Pour associer des éléments de travail, consultez [lier des éléments de modèle et des éléments de travail](../modeling/link-model-elements-and-work-items.md).|  
 |**Description**|(vide)|Tous les éléments|Vous pouvez consigner des remarques générales concernant l'élément.|  
-|**Liaison de modèle**|(aucune)|Classe, Interface, Énumération|Si la valeur n'est pas vide, ce type est défini en liant des valeurs de paramètres à cette classe de modèle. Développez la propriété pour afficher les liaisons des paramètres du modèle.|  
-|**Paramètres de modèle**|(aucune)|Classe, Interface, Énumération|Si la valeur n'est pas vide, il s'agit d'une classe de modèle qui a les paramètres répertoriés ici. Pour ajouter des paramètres ou afficher les propriétés de paramètres individuels, cliquez sur **[...]** .|  
+|**Liaison de modèle**|(aucun)|Classe, Interface, Énumération|Si la valeur n'est pas vide, ce type est défini en liant des valeurs de paramètres à cette classe de modèle. Développez la propriété pour afficher les liaisons des paramètres du modèle.|  
+|**Paramètres de modèle**|(aucun)|Classe, Interface, Énumération|Si la valeur n'est pas vide, il s'agit d'une classe de modèle qui a les paramètres répertoriés ici. Pour ajouter des paramètres ou afficher les propriétés de paramètres individuels, cliquez sur **[...]** .|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Propriétés d’attributs dans des diagrammes de classes UML](../modeling/properties-of-attributes-on-uml-class-diagrams.md)   

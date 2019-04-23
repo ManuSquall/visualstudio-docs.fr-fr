@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3d99b76e1ca9c67c0cd29bd435759b529d97b348
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: c303ab86409a082c3a6817adc526ded432ea54bf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665992"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063177"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Procédure pas à pas : Importer une page maître personnalisée et la page de site avec une image
   Cette procédure pas à pas montre comment importer une page maître personnalisée SharePoint et une page de site qui ont une image dans un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projet SharePoint.
@@ -36,26 +36,26 @@ ms.locfileid: "59665992"
 ## <a name="prerequisites"></a>Prérequis
  Vous devez disposer des composants suivants pour terminer cette procédure pas à pas :
 
--   Éditions prises en charge [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] et SharePoint.
+- Éditions prises en charge [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] et SharePoint.
 
--   Visual Studio.
+- Visual Studio.
 
--   SharePoint Designer 2010.
+- SharePoint Designer 2010.
 
 ## <a name="create-items-in-sharepoint-designer"></a>Créer des éléments dans SharePoint Designer
  Cet exemple montre comment créer trois éléments dans SharePoint Designer pour l’exportation : une page maître personnalisée, une page de site qui fait référence à la page maître personnalisée et un fichier image à afficher sur la page du site. L’image est ajoutée au dossier /images/ dans SharePoint.
 
 #### <a name="to-create-a-custom-master-page-in-sharepoint-designer"></a>Pour créer une page maître personnalisée dans SharePoint Designer
 
-1.  Dans SharePoint Designer, dans le volet de Navigation, choisissez le **Pages maîtres** objet de site.
+1. Dans SharePoint Designer, dans le volet de Navigation, choisissez le **Pages maîtres** objet de site.
 
-2.  Sur le **Pages maîtres** ruban, choisissez **Page maître vierge**.
+2. Sur le **Pages maîtres** ruban, choisissez **Page maître vierge**.
 
-3.  Choisissez la nouvelle page maître, puis, dans le **Pages maîtres** ruban, choisissez **modifier le fichier**.
+3. Choisissez la nouvelle page maître, puis, dans le **Pages maîtres** ruban, choisissez **modifier le fichier**.
 
-4.  En bas de SharePoint Designer, choisissez le **Code** onglet.
+4. En bas de SharePoint Designer, choisissez le **Code** onglet.
 
-5.  Remplacez le balisage existant par le balisage suivant.
+5. Remplacez le balisage existant par le balisage suivant.
 
     ```aspx-csharp
     <%@ Master Language="C#" %>
@@ -76,39 +76,39 @@ ms.locfileid: "59665992"
     </html>
     ```
 
-6.  Enregistrez la page, choisissez le **Pages maîtres** onglet et renommer la page maître en tant que **mybasic1.master**.
+6. Enregistrez la page, choisissez le **Pages maîtres** onglet et renommer la page maître en tant que **mybasic1.master**.
 
 ## <a name="add-an-image-to-the-content-database-in-sharepoint-designer"></a>Ajouter une image à la base de données contenu dans SharePoint Designer
  Vous pouvez maintenant ajouter une image à afficher sur la page du site. L’image est déployée sur la base de données de contenu SharePoint.
 
 #### <a name="to-add-an-image-to-the-content-database-in-sharepoint-designer"></a>Pour ajouter une image à la base de données contenu dans SharePoint Designer
 
-1.  Dans le volet de Navigation, choisissez le **tous les fichiers** objet de site et, dans l’arborescence de commandes, choisissez le **images** dossier.
+1. Dans le volet de Navigation, choisissez le **tous les fichiers** objet de site et, dans l’arborescence de commandes, choisissez le **images** dossier.
 
-2.  Sur le **tous les fichiers** ruban, choisissez **importer des fichiers**, choisissez un fichier de votre choix, puis le **OK** bouton. Dans cet exemple, le fichier est nommé **myimg1.png**.
+2. Sur le **tous les fichiers** ruban, choisissez **importer des fichiers**, choisissez un fichier de votre choix, puis le **OK** bouton. Dans cet exemple, le fichier est nommé **myimg1.png**.
 
      Si vous le souhaitez, vous pouvez créer un sous-dossier pour vous aider à organiser les images.
 
-3.  Fermer le **importation** boîte de dialogue.
+3. Fermer le **importation** boîte de dialogue.
 
 ## <a name="create-a-site-page"></a>Créer une page de site
  Cette page de site de base utilise la page maître personnalisée et affiche l’image que vous avez ajouté à l’étape précédente.
 
 #### <a name="to-create-a-site-page"></a>Pour créer une page de site
 
-1.  Dans le volet de Navigation, choisissez le **Pages de Site** objet.
+1. Dans le volet de Navigation, choisissez le **Pages de Site** objet.
 
-2.  Sur le **Pages** ruban, choisissez le **Page** bouton, choisissez la **ASPX** page, tapez, puis nommez le nouveau fichier **mycontentpage1.aspx**.
+2. Sur le **Pages** ruban, choisissez le **Page** bouton, choisissez la **ASPX** page, tapez, puis nommez le nouveau fichier **mycontentpage1.aspx**.
 
      Si vous le souhaitez, vous pouvez créer un sous-dossier pour vous aider à organiser les pages du site.
 
-3.  Dans la liste de pages de site, choisissez **MyContentPage1.aspx** pour ouvrir sa page de propriétés, puis, en bas de la page, choisissez le **modifier le fichier** lien.
+3. Dans la liste de pages de site, choisissez **MyContentPage1.aspx** pour ouvrir sa page de propriétés, puis, en bas de la page, choisissez le **modifier le fichier** lien.
 
      Si un message s’affiche et indique que cette page ne contient pas toutes les régions qui sont modifiables en mode sans échec et vous demande si vous souhaitez ouvrir cette page en mode avancé, choisissez le **Oui** bouton.
 
-4.  En bas de la page, choisissez le **Code** bouton.
+4. En bas de la page, choisissez le **Code** bouton.
 
-5.  Remplacez le balisage existant par le balisage suivant.
+5. Remplacez le balisage existant par le balisage suivant.
 
     ```aspx-csharp
     <%@ Import Namespace="Microsoft.SharePoint.ApplicationPages" %>
@@ -124,22 +124,22 @@ ms.locfileid: "59665992"
     </asp:Content>
     ```
 
-6.  Enregistrez la page de site mis à jour.
+6. Enregistrez la page de site mis à jour.
 
 ## <a name="export-the-items-from-sharepoint"></a>Exporter les éléments à partir de SharePoint
  Exporter les éléments à partir de SharePoint à une solution SharePoint (*.wsp*) fichier.
 
 #### <a name="to-export-items-from-sharepoint-designer"></a>Pour exporter des éléments à partir de SharePoint Designer
 
-1.  Dans SharePoint Designer, dans le volet de Navigation, choisissez le **Site d’équipe** objet, puis, dans le **Site** ruban, choisissez **enregistrer comme modèle**.
+1. Dans SharePoint Designer, dans le volet de Navigation, choisissez le **Site d’équipe** objet, puis, dans le **Site** ruban, choisissez **enregistrer comme modèle**.
 
-2.  Dans le **enregistrer comme modèle** boîte de dialogue, entrez un nom de fichier et le nom du modèle, sélectionnez le **inclure du contenu** case à cocher, puis choisissez le **OK** bouton.
+2. Dans le **enregistrer comme modèle** boîte de dialogue, entrez un nom de fichier et le nom du modèle, sélectionnez le **inclure du contenu** case à cocher, puis choisissez le **OK** bouton.
 
      Cette opération enregistre le contenu du site dans le *.wsp* fichier.
 
-3.  Une fois que les exportations de la solution, choisissez le **galerie de solutions** lien pour afficher la liste des fichiers de solution disponible.
+3. Une fois que les exportations de la solution, choisissez le **galerie de solutions** lien pour afficher la liste des fichiers de solution disponible.
 
-4.  Ouvrez le menu contextuel pour le nouveau *.wsp* de fichiers, puis choisissez **enregistrer la cible sous** à l’enregistrer dans le système.
+4. Ouvrez le menu contextuel pour le nouveau *.wsp* de fichiers, puis choisissez **enregistrer la cible sous** à l’enregistrer dans le système.
 
 ## <a name="import-the-items-into-visual-studio"></a>Importer les éléments dans Visual Studio
  Importer le *.wsp* votre fichier en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Une fois que le contenu est importé, vous pouvez personnaliser il, ajouter d’autres éléments et ensuite de le déployer.
@@ -166,9 +166,9 @@ ms.locfileid: "59665992"
 
     Si une page maître existante est marquée en tant que Page maître par défaut ou Page maître personnalisée, vous obtiendrez une erreur de déploiement qui stipule que la page maître ne peut pas être supprimée. Pour éviter ce problème, procédez comme suit :
 
-   -   Si la page maître existante est définie en tant que Page maître par défaut, définissez temporairement une autre page maître en tant que Page maître par défaut. Après avoir déployé les fichiers sur SharePoint, définissez votre nouvelle page maître en tant que Page maître par défaut.
+   - Si la page maître existante est définie en tant que Page maître par défaut, définissez temporairement une autre page maître en tant que Page maître par défaut. Après avoir déployé les fichiers sur SharePoint, définissez votre nouvelle page maître en tant que Page maître par défaut.
 
-   -   Si la page maître existante est définie en tant que Page maître personnalisée, définissez temporairement une autre page maître en tant que Page maître personnalisée. Après avoir déployé les fichiers sur SharePoint, définissez votre nouvelle page maître en tant que Page maître personnalisée.
+   - Si la page maître existante est définie en tant que Page maître personnalisée, définissez temporairement une autre page maître en tant que Page maître personnalisée. Après avoir déployé les fichiers sur SharePoint, définissez votre nouvelle page maître en tant que Page maître personnalisée.
 
 6. Dans la barre de menus, choisissez **Build** > **déployer la Solution**.
 

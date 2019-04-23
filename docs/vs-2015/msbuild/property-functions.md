@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8bcb8aadc2fb2a2f836fccde56e283b38cbc213d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 85fb100e09dd61e836404ecf98f8f7292ff2ee86
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649236"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065179"
 ---
 # <a name="property-functions"></a>Fonctions de propriétés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,45 +27,45 @@ Dans les versions 4 et 4.5 de .NET Framework, des fonctions de propriété peu
   
  **Dans cette rubrique :**  
   
--   [Syntaxe des fonctions de propriétés](#BKMK_Syntax)  
+- [Syntaxe des fonctions de propriétés](#BKMK_Syntax)  
   
-    -   [Fonctions de propriétés de type chaîne](#BKMK_String)  
+    - [Fonctions de propriétés de type chaîne](#BKMK_String)  
   
-    -   [Fonctions de propriétés statiques](#BKMK_Static)  
+    - [Fonctions de propriétés statiques](#BKMK_Static)  
   
-    -   [Appel de méthodes d’instance sur des propriétés statiques](#BKMK_InstanceMethods)  
+    - [Appel de méthodes d’instance sur des propriétés statiques](#BKMK_InstanceMethods)  
   
-    -   [Fonctions de propriétés MSBuild](#BKMK_PropertyFunctions)  
+    - [Fonctions de propriétés MSBuild](#BKMK_PropertyFunctions)  
   
--   [Fonctions de propriétés imbriquées](#BKMK_Nested)  
+- [Fonctions de propriétés imbriquées](#BKMK_Nested)  
   
--   [Fonction MSBuild DoesTaskHostExist](#BKMK_DoesTaskHostExist)  
+- [Fonction MSBuild DoesTaskHostExist](#BKMK_DoesTaskHostExist)  
   
--   [Fonction MSBuild GetDirectoryNameOfFileAbove](#BKMK_GetDirectoryNameOfFileAbove)  
+- [Fonction MSBuild GetDirectoryNameOfFileAbove](#BKMK_GetDirectoryNameOfFileAbove)  
   
--   [Fonction MSBuild GetRegistryValue](#BKMK_GetRegistryValue)  
+- [Fonction MSBuild GetRegistryValue](#BKMK_GetRegistryValue)  
   
--   [Fonction MSBuild GetRegistryValueFromView](#BKMK_GetRegistryValueFromView)  
+- [Fonction MSBuild GetRegistryValueFromView](#BKMK_GetRegistryValueFromView)  
   
--   [Fonction MSBuild MakeRelative](#BKMK_MakeRelative)  
+- [Fonction MSBuild MakeRelative](#BKMK_MakeRelative)  
   
--   [Fonction MSBuild ValueOrDefault](#BKMK_ValueOrDefault)  
+- [Fonction MSBuild ValueOrDefault](#BKMK_ValueOrDefault)  
   
-##  <a name="BKMK_Syntax"></a> Syntaxe des fonctions de propriétés  
+## <a name="BKMK_Syntax"></a> Syntaxe des fonctions de propriétés  
  Il y a trois sortes de fonctions de propriété. Chaque fonction a une syntaxe différente :  
   
--   Fonctions de propriété (d'instance) de chaîne  
+- Fonctions de propriété (d'instance) de chaîne  
   
--   Fonctions de propriété statique  
+- Fonctions de propriété statique  
   
--   Fonctions de propriété MSBuild  
+- Fonctions de propriété MSBuild  
   
-###  <a name="BKMK_String"></a> Fonctions de propriétés de type chaîne  
+### <a name="BKMK_String"></a> Fonctions de propriétés de type chaîne  
  Toutes les valeurs de propriété de build sont simplement des valeurs de chaîne. Vous pouvez utiliser des méthodes (d'instance) de chaîne pour effectuer des opérations sur toutes les valeurs de propriété. Par exemple, vous pouvez extraire le nom du lecteur (les trois premiers caractères) d’une propriété de build qui représente un chemin d’accès complet à l’aide de ce code :  
   
  `$(ProjectOutputFolder.Substring(0,3))`  
   
-###  <a name="BKMK_Static"></a> Fonctions de propriétés statiques  
+### <a name="BKMK_Static"></a> Fonctions de propriétés statiques  
  Dans votre script de génération, vous pouvez accéder aux propriétés et aux méthodes statiques de nombreuses classes système. Pour obtenir la valeur d’une propriété statique, utilisez la syntaxe suivante, où *Class* est le nom de la classe système et *Property* le nom de la propriété.  
   
  `$([Class]::Property)`  
@@ -166,7 +166,7 @@ Dans les versions 4 et 4.5 de .NET Framework, des fonctions de propriété peu
   
 - System.IO.File::ReadAllText  
   
-###  <a name="BKMK_InstanceMethods"></a> Appel de méthodes d’instance sur des propriétés statiques  
+### <a name="BKMK_InstanceMethods"></a> Appel de méthodes d’instance sur des propriétés statiques  
  Si vous accédez à une propriété statique qui retourne une instance d'un objet, vous pouvez appeler les méthodes d'instance de cet objet. Pour appeler une méthode d’instance, utilisez la syntaxe suivante, où *Class* est le nom de la classe système, *Property* le nom de la propriété, *Method* le nom de la méthode et *(Parameters)* la liste des paramètres de la méthode :  
   
  `$([Class]::Property.Method(Parameters))`  
@@ -177,7 +177,7 @@ Dans les versions 4 et 4.5 de .NET Framework, des fonctions de propriété peu
   
  `<Today>$([System.DateTime]::Now.ToString("yyyy.MM.dd"))</Today>`  
   
-###  <a name="BKMK_PropertyFunctions"></a> Fonctions de propriétés MSBuild  
+### <a name="BKMK_PropertyFunctions"></a> Fonctions de propriétés MSBuild  
  Vous pouvez accéder à plusieurs méthodes statiques dans votre build, qui prennent en charge des fonctions liées à l'arithmétique, à la logique au niveau du bit et aux caractères d'échappement. Vous accédez à ces méthodes en utilisant la syntaxe suivante, où *Method* est le nom de la méthode et *Parameters* la liste des paramètres de la méthode.  
   
  `$([MSBuild]::Method(Parameters))`  
@@ -207,7 +207,7 @@ Dans les versions 4 et 4.5 de .NET Framework, des fonctions de propriété peu
 |entier BitwiseXor(entier premier, entier second)|Effectue un `XOR` au niveau du bit sur le premier et le second entier (premier ^ second).|  
 |entier BitwiseNot(entier premier)|Effectue un `NOT` au niveau du bit (~premier).|  
   
-##  <a name="BKMK_Nested"></a> Fonctions de propriétés imbriquées  
+## <a name="BKMK_Nested"></a> Fonctions de propriétés imbriquées  
  Vous pouvez combiner des fonctions de propriété pour former des fonctions plus complexes, comme dans l'exemple suivant.  
   
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`  
@@ -216,7 +216,7 @@ Dans les versions 4 et 4.5 de .NET Framework, des fonctions de propriété peu
   
  Des métadonnées peuvent également apparaître dans des fonctions de propriété imbriquées. Pour plus d’informations, consultez l’article [Batching (Traitement par lot MSBuild)](../msbuild/msbuild-batching.md).  
   
-##  <a name="BKMK_DoesTaskHostExist"></a> Fonction MSBuild DoesTaskHostExist  
+## <a name="BKMK_DoesTaskHostExist"></a> Fonction MSBuild DoesTaskHostExist  
  La fonction de propriété `DoesTaskHostExist` de MSBuild retourne une valeur indiquant si un hôte de tâche est actuellement installé pour les valeurs de runtime et d'architecture spécifiées.  
   
  La syntaxe de cette fonction de propriété est la suivante :  
@@ -225,7 +225,7 @@ Dans les versions 4 et 4.5 de .NET Framework, des fonctions de propriété peu
 $[MSBuild]::DoesTaskHostExist(string theRuntime, string theArchitecture)  
 ```  
   
-##  <a name="BKMK_GetDirectoryNameOfFileAbove"></a> Fonction MSBuild GetDirectoryNameOfFileAbove  
+## <a name="BKMK_GetDirectoryNameOfFileAbove"></a> Fonction MSBuild GetDirectoryNameOfFileAbove  
  La fonction de propriété MSBuild `GetDirectoryNameOfFileAbove` recherche un fichier dans les répertoires situés sous le répertoire actif du chemin d'accès.  
   
  La syntaxe de cette fonction de propriété est la suivante :  
@@ -240,7 +240,7 @@ $[MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile)
 <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), EnlistmentInfo.props))\EnlistmentInfo.props" Condition=" '$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), EnlistmentInfo.props))' != '' " />  
 ```  
   
-##  <a name="BKMK_GetRegistryValue"></a> Fonction MSBuild GetRegistryValue  
+## <a name="BKMK_GetRegistryValue"></a> Fonction MSBuild GetRegistryValue  
  La propriété de fonction MSBuild `GetRegistryValue` retourne la valeur d'une clé de Registre. Cette fonction prend deux arguments, le nom de la clé et le nom de la valeur, et retourne la valeur qui se trouve dans le Registre. Si vous ne spécifiez pas un nom de valeur, la valeur par défaut est retournée.  
   
  Les exemples suivants montrent comment cette fonction est utilisée :  
@@ -252,7 +252,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
   
 ```  
   
-##  <a name="BKMK_GetRegistryValueFromView"></a> Fonction MSBuild GetRegistryValueFromView  
+## <a name="BKMK_GetRegistryValueFromView"></a> Fonction MSBuild GetRegistryValueFromView  
  La fonction de propriété MSBuild `GetRegistryValueFromView` extrait des données du Registre système en fonction de la clé de Registre, de la valeur et d'une ou plusieurs vues ordonnées du Registre. La clé et la valeur sont recherchées dans chaque vue du Registre dans l'ordre, jusqu'à ce qu'elles soient trouvées.  
   
  Le syntaxe de cette fonction de propriété est :  
@@ -277,7 +277,7 @@ $([MSBuild]::GetRegistryValue(`HKEY_LOCAL_MACHINE\SOFTWARE\(SampleName)`, `(Samp
   
  extrait les données de SLRuntimeInstallPath de la clé ReferenceAssemblies, en recherchant d'abord dans la vue de Registre 64 bits puis dans la vue de Registre 32 bits.  
   
-##  <a name="BKMK_MakeRelative"></a> Fonction MSBuild MakeRelative  
+## <a name="BKMK_MakeRelative"></a> Fonction MSBuild MakeRelative  
  La fonction de propriété MSBuild `MakeRelative` retourne le chemin d'accès relatif du second chemin par rapport au premier chemin. Chaque chemin peut être un fichier ou un dossier.  
   
  La syntaxe de cette fonction de propriété est la suivante :  
@@ -306,7 +306,7 @@ Output:
 -->  
 ```  
   
-##  <a name="BKMK_ValueOrDefault"></a> Fonction MSBuild ValueOrDefault  
+## <a name="BKMK_ValueOrDefault"></a> Fonction MSBuild ValueOrDefault  
  La fonction de propriété MSBuild `ValueOrDefault` retourne le premier argument, sauf s'il est null ou vide. Si le premier argument est null ou vide, la fonction retourne le second argument.  
   
  L'exemple suivant montre comment cette fonction est utilisée.  

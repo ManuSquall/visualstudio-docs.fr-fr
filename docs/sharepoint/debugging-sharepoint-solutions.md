@@ -15,27 +15,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 57133b97ede20c0ed28eecbec6e3cea964f9558a
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: cffed1a3905ca1a1aceb9d2cfdcf4abc89f83574
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873108"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060798"
 ---
 # <a name="debug-sharepoint-solutions"></a>Déboguer des solutions SharePoint
   Vous pouvez déboguer des solutions SharePoint à l’aide de la [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] débogueur. Lorsque vous démarrez le débogage, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] déploie les fichiers de projet sur le serveur SharePoint, puis ouvre une instance du site SharePoint dans le navigateur Web. Les sections suivantes expliquent comment déboguer des applications SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
--   [Activer le débogage](#enable-debugging)
+- [Activer le débogage](#enable-debugging)
 
--   [Processus de débogage et de déploiement F5](#f5-debug-and-deployment-process)
+- [Processus de débogage et de déploiement F5](#f5-debug-and-deployment-process)
 
--   [Fonctionnalités de projet SharePoint](#sharepoint-project-features)
+- [Fonctionnalités de projet SharePoint](#sharepoint-project-features)
 
--   [Déboguer des workflows](#debug-workflows)
+- [Déboguer des workflows](#debug-workflows)
 
--   [Déboguer les récepteurs d’événements de fonctionnalité](#debug-feature-event-receivers)
+- [Déboguer les récepteurs d’événements de fonctionnalité](#debug-feature-event-receivers)
 
--   [Activer les informations de débogage d’ehanced](#enable-enhanced-debugging-information)
+- [Activer les informations de débogage d’ehanced](#enable-enhanced-debugging-information)
 
 ## <a name="enable-debugging"></a>Activer le débogage
  Lorsque vous déboguez tout d’abord une solution SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], une boîte de dialogue vous avertit que le fichier web.config n’est pas configuré pour activer le débogage. (Le fichier web.config est créé lorsque vous installez SharePoint server. Pour plus d’informations, consultez [utilisation des fichiers Web.config](http://go.microsoft.com/fwlink/?LinkID=149266).) La boîte de dialogue vous donne la possibilité d’exécution du projet sans débogage ou en modifiant le fichier web.config pour activer le débogage. Si vous choisissez la première option, le projet s’exécute normalement. Si vous choisissez la deuxième option, le fichier web.config est configuré pour :
@@ -77,11 +77,11 @@ ms.locfileid: "57873108"
 
  Pour annuler les modifications et désactiver le débogage, modifier les paramètres suivants [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] dans le fichier web.config :
 
--   Désactiver la pile des appels (`CallStack="false"`)
+- Désactiver la pile des appels (`CallStack="false"`)
 
--   Activer les erreurs personnalisées en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (`<customErrors mode="On" />`)
+- Activer les erreurs personnalisées en [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] (`<customErrors mode="On" />`)
 
--   Désactiver le débogage de compilation (`<compilation debug="false">`)
+- Désactiver le débogage de compilation (`<compilation debug="false">`)
 
 ## <a name="f5-debug-and-deployment-process"></a>Processus de débogage et de déploiement F5
  Lorsque vous exécutez votre projet SharePoint en mode débogage, le processus de déploiement SharePoint effectue les tâches suivantes :

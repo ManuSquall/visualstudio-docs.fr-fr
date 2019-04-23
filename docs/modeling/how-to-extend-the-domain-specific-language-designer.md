@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a5343fc177afce6baa6d9f4727d118606cc1b57
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 85a4356837180d13428acf34636f28cca668a423
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415965"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063151"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Procédure : Étendre le Concepteur Domain-Specific Language
 
@@ -26,23 +26,23 @@ Configurer un projet qui contient le code de votre extension et un projet VSIX q
 
 ### <a name="to-create-a-dsl-designer-extension-solution"></a>Pour créer une Solution d’Extension concepteur DSL
 
-1.  Créer un projet à l’aide du **bibliothèque de classes** modèle de projet. Ce projet contiendra le code de vos extensions.
+1. Créer un projet à l’aide du **bibliothèque de classes** modèle de projet. Ce projet contiendra le code de vos extensions.
 
-2.  Créer un nouveau **projet VSIX** projet.
+2. Créer un nouveau **projet VSIX** projet.
 
      Sélectionnez **ajouter à la Solution**.
 
      *Source.extension.vsixmanifest* s’ouvre dans l’éditeur de manifeste VSIX.
 
-3.  Au-dessus du champ de contenu, cliquez sur **ajouter du contenu**.
+3. Au-dessus du champ de contenu, cliquez sur **ajouter du contenu**.
 
-4.  Dans le **ajouter du contenu** boîte de dialogue, définissez **sélectionner un Type de contenu** à **composant MEF**et définissez **projet** à votre projet de bibliothèque de classes.
+4. Dans le **ajouter du contenu** boîte de dialogue, définissez **sélectionner un Type de contenu** à **composant MEF**et définissez **projet** à votre projet de bibliothèque de classes.
 
-5.  Cliquez sur **sélectionner des éditions** et assurez-vous que l’option **Visual Studio Enterprise** est activée.
+5. Cliquez sur **sélectionner des éditions** et assurez-vous que l’option **Visual Studio Enterprise** est activée.
 
-6.  Assurez-vous que le projet VSIX est le projet de démarrage de la solution.
+6. Assurez-vous que le projet VSIX est le projet de démarrage de la solution.
 
-7.  Dans le projet de bibliothèque de classes, ajoutez des références aux assemblys suivants :
+7. Dans le projet de bibliothèque de classes, ajoutez des références aux assemblys suivants :
 
      Microsoft.VisualStudio.CoreUtility
 
@@ -68,17 +68,17 @@ Pour tester les extensions dans cette rubrique, générer et exécuter la soluti
 
 Pour déployer les extensions principale de Visual Studio et à d’autres ordinateurs, procédez comme suit :
 
-1.  Rechercher le fichier d’installation de VSIX dans votre projet VSIX dans emplacement\\*\*\\\*.vsix
+1. Rechercher le fichier d’installation de VSIX dans votre projet VSIX dans emplacement\\*\*\\\*.vsix
 
-2.  Copiez ce fichier à l’ordinateur cible et dans l’Explorateur Windows (ou Explorateur de fichiers), double-cliquez dessus.
+2. Copiez ce fichier à l’ordinateur cible et dans l’Explorateur Windows (ou Explorateur de fichiers), double-cliquez dessus.
 
      Le Gestionnaire d’extensions Visual Studio s’ouvre pour vérifier que l’extension a été installée.
 
 Pour désinstaller l’extension, procédez comme suit :
 
-1.  Dans Visual Studio, sur le **outils** menu, cliquez sur **Gestionnaire d’extensions**.
+1. Dans Visual Studio, sur le **outils** menu, cliquez sur **Gestionnaire d’extensions**.
 
-2.  Sélectionnez l’extension et supprimez-le.
+2. Sélectionnez l’extension et supprimez-le.
 
 ## <a name="add-a-shortcut-menu-command"></a>Ajouter une commande de Menu contextuel
 

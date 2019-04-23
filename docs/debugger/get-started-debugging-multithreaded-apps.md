@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5535228f8e070128cfa2479d8017d3a88dc0915c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f07791a02c5e84722e8193f21b7ed2fe37bdd7f9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790249"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064282"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Commencer le débogage d’applications multithread (C#, Visual Basic, C++)
 
@@ -234,17 +234,17 @@ Vous devez tout d’abord un projet d’application multithread. Voici un exempl
 
 ### <a name="ShowThreadsInSource"></a>Découvrir le marqueur de thread  
 
-1.  Dans la barre d’outils Déboguer, sélectionnez le **afficher les Threads dans la Source** bouton ![afficher les Threads dans la Source](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker").
+1. Dans la barre d’outils Déboguer, sélectionnez le **afficher les Threads dans la Source** bouton ![afficher les Threads dans la Source](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker").
 
 2. Appuyez sur **F11** une fois pour la débogueur une ligne de code d’avance.
 
-3.  Examinez la reliure située sur le côté gauche de la fenêtre. Sur cette ligne, vous verrez un *marqueur de thread* icône ![marqueur de Thread](../debugger/media/dbg-thread-marker.png "ThreadMarker") qui ressemble à deux threads tordues. Le marqueur de thread indique qu'un thread est interrompu à cet emplacement.
+3. Examinez la reliure située sur le côté gauche de la fenêtre. Sur cette ligne, vous verrez un *marqueur de thread* icône ![marqueur de Thread](../debugger/media/dbg-thread-marker.png "ThreadMarker") qui ressemble à deux threads tordues. Le marqueur de thread indique qu'un thread est interrompu à cet emplacement.
 
     Un marqueur de thread peut être partiellement masqué par un point d’arrêt.
 
-4.  Placez le pointeur sur le marqueur de thread. Un DataTip s’affiche vous indiquant le numéro d’identification de nom et le thread pour chaque thread interrompu. Dans ce cas, le nom est probablement `<noname>`.
+4. Placez le pointeur sur le marqueur de thread. Un DataTip s’affiche vous indiquant le numéro d’identification de nom et le thread pour chaque thread interrompu. Dans ce cas, le nom est probablement `<noname>`.
 
-5.  Sélectionnez le marqueur de thread pour afficher les options disponibles dans le menu contextuel.
+5. Sélectionnez le marqueur de thread pour afficher les options disponibles dans le menu contextuel.
 
 ### <a name="ParallelStacks"></a>Afficher les emplacements de thread
 
@@ -260,7 +260,7 @@ Dans le **piles parallèles** fenêtre, vous pouvez basculer entre une vue Threa
     - Deux threads ont entré le `ServerClass.InstanceMethod`, un d'entre eux est le thread actuel (flèche jaune), tandis que l’autre thread a cessé dans `Thread.Sleep`.
     - Un nouveau thread (à droite) est également en cours de démarrage, mais est arrêté sur `ThreadHelper.ThreadStart`.
 
-2.  Avec le bouton droit des entrées dans le **piles parallèles** fenêtre pour voir les options disponibles dans le menu contextuel.
+2. Avec le bouton droit des entrées dans le **piles parallèles** fenêtre pour voir les options disponibles dans le menu contextuel.
 
     Vous pouvez effectuer différentes actions à partir de ces menus contextuels, mais pour ce didacticiel, nous allons présenter plusieurs de ces détails dans le **espion parallèle** fenêtre (sections suivantes).
 
@@ -292,14 +292,14 @@ Vous pouvez signaler des threads pour effectuer le suivi des threads importants 
 
     Tous les threads sélectionnés sont signalés. Maintenant, vous pouvez filtrer pour afficher uniquement les threads avec indicateur.
 
-3.  Dans le **espion parallèle** fenêtre, sélectionnez le **afficher uniquement les Threads avec indicateur** bouton ![afficher les Threads avec indicateur](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker").
+3. Dans le **espion parallèle** fenêtre, sélectionnez le **afficher uniquement les Threads avec indicateur** bouton ![afficher les Threads avec indicateur](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker").
 
     Uniquement les threads avec indicateur s’affichent dans la liste.
 
     > [!TIP]
     > Une fois que vous avez marqué des threads, vous pouvez cliquez sur une ligne de code dans l’éditeur de code et choisissez **exécuter les Threads avec indicateur au curseur**. Veillez à choisir le code que tous les threads avec indicateur atteindront. Visual Studio va suspendre les threads sur la ligne sélectionnée de code, facilitant ainsi contrôler l’ordre d’exécution par [gel et libération des threads](#bkmk_freeze).
 
-4.  Sélectionnez le **afficher uniquement les Threads avec indicateur** bouton Nouveau pour revenir au **afficher tous les Threads** mode.
+4. Sélectionnez le **afficher uniquement les Threads avec indicateur** bouton Nouveau pour revenir au **afficher tous les Threads** mode.
 
 5. Pour supprimer l’indicateur de threads, cliquez sur un ou plusieurs threads avec indicateur dans le **espion parallèle** fenêtre et sélectionnez **supprimer l’indicateur**.
 
@@ -308,17 +308,17 @@ Vous pouvez signaler des threads pour effectuer le suivi des threads importants 
 > [!TIP]
 > Vous pouvez figer et libérer (suspendre et reprendre) les threads pour contrôler l’ordre dans lequel threads exécutent le travail. Cela peut vous aider à résoudre les problèmes d’accès concurrentiel tels que les interblocages et conditions de concurrence critique.
 
-1.  Dans le **espion parallèle** fenêtre, avec toutes les lignes sélectionnées, le bouton droit et sélectionnez **Figer**.
+1. Dans le **espion parallèle** fenêtre, avec toutes les lignes sélectionnées, le bouton droit et sélectionnez **Figer**.
 
     Dans la deuxième colonne, une icône de pause apparaît pour chaque ligne. L’icône de pause indique que le thread est figé.
 
-2.  Désélectionnez toutes les autres lignes en sélectionnant une ligne uniquement.
+2. Désélectionnez toutes les autres lignes en sélectionnant une ligne uniquement.
 
-3.  Cliquez sur une ligne et sélectionnez **libérer**.
+3. Cliquez sur une ligne et sélectionnez **libérer**.
 
     L’icône de pause disparaît sur cette ligne, indiquant que le thread est figé n’est plus.
 
-4.  Basculez vers l’éditeur de code et appuyez sur **F11**. Seul le thread non figé s’exécute.
+4. Basculez vers l’éditeur de code et appuyez sur **F11**. Seul le thread non figé s’exécute.
 
     L’application peut également instancier certains nouveaux threads. Les nouveaux threads sont sans indicateur et ne sont pas gelés.
 

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39f94442e89cee6a615497376ad7baa9c85b7797
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a1b6ef478b9f3661690383623df7c89fae28bb0c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625528"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063541"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>Associer une zone de formulaire à une classe de message Outlook
   Vous pouvez spécifier les éléments Microsoft Office Outlook qui affichent une zone de formulaire en associant la zone de formulaire à la classe de message de chaque élément. Par exemple, si vous souhaitez ajouter une zone de formulaire au bas d’un élément de messagerie, vous pouvez associer la zone de formulaire avec le `IPM.Note` classe de message.
@@ -50,9 +50,9 @@ ms.locfileid: "56625528"
 ## <a name="associate-a-form-region-with-an-outlook-message-class"></a>Associer une zone de formulaire à une classe de message Outlook
  Il existe deux façons pour associer une zone de formulaire à une classe de message :
 
--   Utilisez le **nouvelle zone de formulaire Outlook** Assistant.
+- Utilisez le **nouvelle zone de formulaire Outlook** Assistant.
 
--   Appliquer des attributs de classe.
+- Appliquer des attributs de classe.
 
 ### <a name="use-the-new-outlook-form-region-wizard"></a>Utilisez l’Assistant Nouvelle zone de formulaire Outlook
  Sur la page finale de le **nouvelle zone de formulaire Outlook** Assistant, vous pouvez sélectionner les classes de message standard et tapez les noms des classes de message personnalisées que vous souhaitez associer à la zone de formulaire.

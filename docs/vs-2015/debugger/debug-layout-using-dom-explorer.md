@@ -18,12 +18,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cb6de5edcd94b0391c090b0f68658258134375aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2e9292464ee117cf79a249c1c1a0636edb931c1d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948169"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063230"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>Déboguer la disposition avec l’Explorateur DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 #### <a name="to-fix-the-layout-issue"></a>Pour résoudre le problème de disposition  
   
-1.  Dans Visual Studio, créez une application de Store qui utilise le modèle de projet Hub/Pivot.  
+1. Dans Visual Studio, créez une application de Store qui utilise le modèle de projet Hub/Pivot.  
   
-2.  Dans le dossier partagé pages\hub, ouvrez hub.css.  
+2. Dans le dossier partagé pages\hub, ouvrez hub.css.  
   
-3.  Remplacez le code CSS suivant :  
+3. Remplacez le code CSS suivant :  
   
     ```css  
     .hubpage .hub .section4 .sub-image-row img {  
@@ -65,22 +65,22 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
     }  
     ```  
   
-4.  Sélectionnez le projet appName.WindowsPhone ou appName.Windows dans l’Explorateur de solutions, puis choisissez **Définir comme projet de démarrage** dans le menu contextuel du projet.  
+4. Sélectionnez le projet appName.WindowsPhone ou appName.Windows dans l’Explorateur de solutions, puis choisissez **Définir comme projet de démarrage** dans le menu contextuel du projet.  
   
-5.  Selon votre projet de démarrage, sélectionnez **Emulator 8.1 WVGA 4 pouces 512 Mo** ou **Simulateur** dans la liste déroulante de la barre d’outils Déboguer (**Ordinateur local** est la valeur par défaut).  
+5. Selon votre projet de démarrage, sélectionnez **Emulator 8.1 WVGA 4 pouces 512 Mo** ou **Simulateur** dans la liste déroulante de la barre d’outils Déboguer (**Ordinateur local** est la valeur par défaut).  
   
      ![Sélection d’une cible de débogage](../debugger/media/js-dom-debug-target-emu.png "JS_DOM_Debug_Target_Emu")  
   
-6.  Appuyez sur F5 pour exécuter l’application en mode débogage.  
+6. Appuyez sur F5 pour exécuter l’application en mode débogage.  
   
-7.  Ouvrez Section 4 en faisant défiler ou glisser l’écran.  
+7. Ouvrez Section 4 en faisant défiler ou glisser l’écran.  
   
     > [!TIP]
     >  Placez le simulateur ou l’émulateur Windows Phone juste à côté de la fenêtre Visual Studio afin de voir immédiatement les résultats de vos sélections et des modifications que vous apportez aux styles CSS.  
   
      Lors du chargement de Section 4, vous constatez que les images inférieures ne s’affichent pas correctement. Chaque image d’élément apparaît divisée en deux (la moitié gauche étant manquante).  
   
-8.  Basculez vers Visual Studio et choisissez **Sélectionner un élément** dans l’explorateur DOM (ou appuyez sur Ctrl+B). Le mode de sélection est alors modifié pour vous permettre de sélectionner un élément en cliquant dessus, et l’application est mise en premier plan. Le mode est restauré à la suite d’un seul clic.  
+8. Basculez vers Visual Studio et choisissez **Sélectionner un élément** dans l’explorateur DOM (ou appuyez sur Ctrl+B). Le mode de sélection est alors modifié pour vous permettre de sélectionner un élément en cliquant dessus, et l’application est mise en premier plan. Le mode est restauré à la suite d’un seul clic.  
   
     > [!TIP]
     >  Vous pouvez aussi utiliser les touches de direction ou d’autres méthodes pour sélectionner directement les éléments HTML dans l’explorateur DOM. Pour plus d’informations sur la sélection d’éléments, consultez [Guide de démarrage rapide : Déboguer le code HTML et CSS](../debugger/quickstart-debug-html-and-css.md).  
@@ -105,11 +105,11 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
      Cette vue fournit des informations utiles sur l’élément :  
   
-    -   Les couleurs correspondent à la mise en surbrillance de zone qui apparaît dans le simulateur lorsque vous pointez sur des éléments. La couleur bleu représente le \<img > dimensions de l’élément. La couleur brun tanné représente les valeurs de marge.  
+    - Les couleurs correspondent à la mise en surbrillance de zone qui apparaît dans le simulateur lorsque vous pointez sur des éléments. La couleur bleu représente le \<img > dimensions de l’élément. La couleur brun tanné représente les valeurs de marge.  
   
-    -   La marge de gauche (margin-left) est définie, ce qui donne une indication sur la cause du problème, car elle correspond au symptôme (couleur noire dans la partie gauche des images).  
+    - La marge de gauche (margin-left) est définie, ce qui donne une indication sur la cause du problème, car elle correspond au symptôme (couleur noire dans la partie gauche des images).  
   
-    -   Les zones qui affichent des valeurs de 0 pixels (par exemple, Remplissage, Bordure et Marge) laissent penser que les propriétés CSS correspondantes ne sont probablement pas définies.  
+    - Les zones qui affichent des valeurs de 0 pixels (par exemple, Remplissage, Bordure et Marge) laissent penser que les propriétés CSS correspondantes ne sont probablement pas définies.  
   
 11. Pour voir comment la règle margin-left est appliquée, sélectionnez l’onglet **Calculé** et regardez sous la règle margin-left. Vous pouvez voir que la règle est définie avec une valeur 5em, mais la valeur calculée est égale à 66.66px ou 146.66px, en fonction de votre périphérique cible.  
   

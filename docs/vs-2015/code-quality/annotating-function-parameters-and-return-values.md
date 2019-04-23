@@ -126,12 +126,12 @@ caps.latest.revision: 17
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 7cd46ee8fd7d9f8a404d930d25257c38f2c1b68f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f16859b3c879e2d3abb64105c50f8ec4934d17e5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950937"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061513"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Annotation de paramètres de fonction et valeurs de retour
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -143,27 +143,27 @@ Cet article décrit les utilisations courantes des annotations pour les paramèt
   
  **Annotations et Descriptions**  
   
--   `_In_`  
+- `_In_`  
   
      Annote les paramètres d’entrée qui sont des valeurs scalaires, structures, des pointeurs vers des structures et autres.  Peut être utilisé explicitement sur les valeurs scalaires simples.  Le paramètre doit être valide dans un état préliminaire et ne sera pas modifié.  
   
--   `_Out_`  
+- `_Out_`  
   
      Annote les paramètres de sortie qui sont des valeurs scalaires, structures, des pointeurs vers des structures et autres.  Ne s’appliquent pas cela à un objet qui ne peut pas retourner une valeur, par exemple, une valeur scalaire qui est passée par valeur.  Le paramètre ne devra pas être valide dans un état préalable mais doit être valide dans un état postérieur à.  
   
--   `_Inout_`  
+- `_Inout_`  
   
      Annote un paramètre qui est modifié par la fonction.  Il doit être valide à la fois état avant ou après, mais il est supposé pour avoir des valeurs différentes avant et après l’appel. Devez appliquer à une valeur modifiable.  
   
--   `_In_z_`  
+- `_In_z_`  
   
      Pointeur vers une chaîne se terminant par null qui est utilisée en tant qu’entrée.  La chaîne doit être valide dans un état préalable.  Variantes de `PSTR`, lequel déjà les annotations correctes, sont par défaut.  
   
--   `_Inout_z_`  
+- `_Inout_z_`  
   
      Pointeur vers un tableau de caractères se terminant par null qui sera modifié.  Il doit être valide avant et après l’appel, mais la valeur est supposée avoir été modifié.  Le terminateur null peut-être être déplacé, mais uniquement les éléments jusqu'à la marque de fin null d’origine est accessible.  
   
--   `_In_reads_(s)`  
+- `_In_reads_(s)`  
   
      `_In_reads_bytes_(s)`  
   
@@ -171,15 +171,15 @@ Cet article décrit les utilisations courantes des annotations pour les paramèt
   
      Le `_bytes_` variante indique la taille en octets au lieu d’éléments. Utilisez-le uniquement lorsque la taille ne peut pas être exprimée en tant qu’éléments.  Par exemple, `char` chaînes utiliserait le `_bytes_` variante uniquement si la fonction d’un texte similaire qui utilise `wchar_t` serait.  
   
--   `_In_reads_z_(s)`  
+- `_In_reads_z_(s)`  
   
      Pointeur vers un tableau se terminant par null et a une taille connue. Les éléments jusqu'à la marque de fin null, ou `s` s’il n’existe aucune marque de fin null — doit être valide dans un état préalable.  Si la taille est connue en octets, à l’échelle `s` par la taille d’élément.  
   
--   `_In_reads_or_z_(s)`  
+- `_In_reads_or_z_(s)`  
   
      Pointeur vers un tableau qui est terminée ou a une taille connue, ou les deux. Les éléments jusqu'à la marque de fin null, ou `s` s’il n’existe aucune marque de fin null — doit être valide dans un état préalable.  Si la taille est connue en octets, à l’échelle `s` par la taille d’élément.  (Utilisé pour le `strn` famille.)  
   
--   `_Out_writes_(s)`  
+- `_Out_writes_(s)`  
   
      `_Out_writes_bytes_(s)`  
   
@@ -191,11 +191,11 @@ Cet article décrit les utilisations courantes des annotations pour les paramèt
   
      Le `_bytes_` variante indique la taille en octets au lieu d’éléments. Utilisez-le uniquement lorsque la taille ne peut pas être exprimée en tant qu’éléments.  Par exemple, `char` chaînes utiliserait le `_bytes_` variante uniquement si la fonction d’un texte similaire qui utilise `wchar_t` serait.  
   
--   `_Out_writes_z_(s)`  
+- `_Out_writes_z_(s)`  
   
      Un pointeur vers un tableau de `s` éléments.  Les éléments n’ont pas soit valide dans un état préalable.  Dans l’état postérieur à, les éléments de configuration via le terminateur null, qui doit être présent, doit être valide.  Si la taille est connue en octets, à l’échelle `s` par la taille d’élément.  
   
--   `_Inout_updates_(s)`  
+- `_Inout_updates_(s)`  
   
      `_Inout_updates_bytes_(s)`  
   
@@ -203,11 +203,11 @@ Cet article décrit les utilisations courantes des annotations pour les paramèt
   
      Le `_bytes_` variante indique la taille en octets au lieu d’éléments. Utilisez-le uniquement lorsque la taille ne peut pas être exprimée en tant qu’éléments.  Par exemple, `char` chaînes utiliserait le `_bytes_` variante uniquement si la fonction d’un texte similaire qui utilise `wchar_t` serait.  
   
--   `_Inout_updates_z_(s)`  
+- `_Inout_updates_z_(s)`  
   
      Pointeur vers un tableau se terminant par null et a une taille connue. Les éléments de configuration via le terminateur null, qui doit être présent, doit être valide à la fois état avant ou après.  La valeur dans l’état postérieur à est présumée être différente de la valeur dans l’état préalable ; Cela inclut l’emplacement de la marque de fin null. Si la taille est connue en octets, à l’échelle `s` par la taille d’élément.  
   
--   `_Out_writes_to_(s,c)`  
+- `_Out_writes_to_(s,c)`  
   
      `_Out_writes_bytes_to_(s,c)`  
   
@@ -223,7 +223,7 @@ Cet article décrit les utilisations courantes des annotations pour les paramèt
   
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`  
   
--   `_Inout_updates_to_(s,c)`  
+- `_Inout_updates_to_(s,c)`  
   
      `_Inout_updates_bytes_to_(s,c)`  
   
@@ -231,11 +231,11 @@ Cet article décrit les utilisations courantes des annotations pour les paramèt
   
      Le `_bytes_` variante indique la taille en octets au lieu d’éléments. Utilisez-le uniquement lorsque la taille ne peut pas être exprimée en tant qu’éléments.  Par exemple, `char` chaînes utiliserait le `_bytes_` variante uniquement si la fonction d’un texte similaire qui utilise `wchar_t` serait.  
   
--   `_Inout_updates_z_(s)`  
+- `_Inout_updates_z_(s)`  
   
      Pointeur vers un tableau se terminant par null et a une taille connue. Les éléments de configuration via le terminateur null, qui doit être présent, doit être valide à la fois état avant ou après.  La valeur dans l’état postérieur à est présumée être différente de la valeur dans l’état préalable ; Cela inclut l’emplacement de la marque de fin null. Si la taille est connue en octets, à l’échelle `s` par la taille d’élément.  
   
--   `_Out_writes_to_(s,c)`  
+- `_Out_writes_to_(s,c)`  
   
      `_Out_writes_bytes_to_(s,c)`  
   
@@ -251,7 +251,7 @@ Cet article décrit les utilisations courantes des annotations pour les paramèt
   
      `void *memcpy(_Out_writes_bytes_all_(s) char *p1,    _In_reads_bytes_(s) char *p2,    _In_ int s); void * wordcpy(_Out_writes_all_(s) DWORD *p1,     _In_reads_(s) DWORD *p2,    _In_ int s);`  
   
--   `_Inout_updates_to_(s,c)`  
+- `_Inout_updates_to_(s,c)`  
   
      `_Inout_updates_bytes_to_(s,c)`  
   
@@ -259,7 +259,7 @@ Cet article décrit les utilisations courantes des annotations pour les paramèt
   
      Le `_bytes_` variante indique la taille en octets au lieu d’éléments. Utilisez-le uniquement lorsque la taille ne peut pas être exprimée en tant qu’éléments.  Par exemple, `char` chaînes utiliserait le `_bytes_` variante uniquement si la fonction d’un texte similaire qui utilise `wchar_t` serait.  
   
--   `_Inout_updates_all_(s)`  
+- `_Inout_updates_all_(s)`  
   
      `_Inout_updates_bytes_all_(s)`  
   
@@ -271,19 +271,19 @@ Cet article décrit les utilisations courantes des annotations pour les paramèt
   
      Le `_bytes_` variante indique la taille en octets au lieu d’éléments. Utilisez-le uniquement lorsque la taille ne peut pas être exprimée en tant qu’éléments.  Par exemple, `char` chaînes utiliserait le `_bytes_` variante uniquement si la fonction d’un texte similaire qui utilise `wchar_t` serait.  
   
--   `_In_reads_to_ptr_(p)`  
+- `_In_reads_to_ptr_(p)`  
   
      Un pointeur vers un tableau pour lequel l’expression `p` – `_Curr_` (autrement dit, `p` moins `_Curr_`) est défini par la norme du langage approprié.  Les éléments antérieurs à `p` doit être valide dans un état préalable.  
   
--   `_In_reads_to_ptr_z_(p)`  
+- `_In_reads_to_ptr_z_(p)`  
   
      Un pointeur vers un tableau se terminant par null pour lequel l’expression `p` – `_Curr_` (autrement dit, `p` moins `_Curr_`) est défini par la norme du langage approprié.  Les éléments antérieurs à `p` doit être valide dans un état préalable.  
   
--   `_Out_writes_to_ptr_(p)`  
+- `_Out_writes_to_ptr_(p)`  
   
      Un pointeur vers un tableau pour lequel l’expression `p` – `_Curr_` (autrement dit, `p` moins `_Curr_`) est défini par la norme du langage approprié.  Les éléments antérieurs à `p` n’avez pas à être valide dans un état préliminaire et doit être valide dans un état postérieur à.  
   
--   `_Out_writes_to_ptr_z_(p)`  
+- `_Out_writes_to_ptr_z_(p)`  
   
      Un pointeur vers un tableau se terminant par null pour lequel l’expression `p` – `_Curr_` (autrement dit, `p` moins `_Curr_`) est défini par la norme du langage approprié.  Les éléments antérieurs à `p` n’avez pas à être valide dans un état préliminaire et doit être valide dans un état postérieur à.  
   
@@ -391,59 +391,59 @@ Cet article décrit les utilisations courantes des annotations pour les paramèt
   
  **Annotations et Descriptions**  
   
--   `_Outref_`  
+- `_Outref_`  
   
      Résultat doit être valide dans un état postérieur à et ne peut pas être null.  
   
--   `_Outref_result_maybenull_`  
+- `_Outref_result_maybenull_`  
   
      Résultat doit être valid dans un état postérieur à, mais peut être null dans un état postérieur à.  
   
--   `_Outref_result_buffer_(s)`  
+- `_Outref_result_buffer_(s)`  
   
      Résultat doit être valide dans un état postérieur à et ne peut pas être null. Pointe vers une mémoire tampon valide de taille `s` éléments.  
   
--   `_Outref_result_bytebuffer_(s)`  
+- `_Outref_result_bytebuffer_(s)`  
   
      Résultat doit être valide dans un état postérieur à et ne peut pas être null. Pointe vers une mémoire tampon valide de taille `s` octets.  
   
--   `_Outref_result_buffer_to_(s, c)`  
+- `_Outref_result_buffer_to_(s, c)`  
   
      Résultat doit être valide dans un état postérieur à et ne peut pas être null. Pointe vers une mémoire tampon de `s` éléments, dont le premier `c` sont valides.  
   
--   `_Outref_result_bytebuffer_to_(s, c)`  
+- `_Outref_result_bytebuffer_to_(s, c)`  
   
      Résultat doit être valide dans un état postérieur à et ne peut pas être null. Pointe vers une mémoire tampon de `s` octets dont la première `c` sont valides.  
   
--   `_Outref_result_buffer_all_(s)`  
+- `_Outref_result_buffer_all_(s)`  
   
      Résultat doit être valide dans un état postérieur à et ne peut pas être null. Pointe vers une mémoire tampon valide de taille `s` éléments valides.  
   
--   `_Outref_result_bytebuffer_all_(s)`  
+- `_Outref_result_bytebuffer_all_(s)`  
   
      Résultat doit être valide dans un état postérieur à et ne peut pas être null. Pointe vers une mémoire tampon valide de `s` octets d’éléments valides.  
   
--   `_Outref_result_buffer_maybenull_(s)`  
+- `_Outref_result_buffer_maybenull_(s)`  
   
      Résultat doit être valid dans un état postérieur à, mais peut être null dans un état postérieur à. Pointe vers une mémoire tampon valide de taille `s` éléments.  
   
--   `_Outref_result_bytebuffer_maybenull_(s)`  
+- `_Outref_result_bytebuffer_maybenull_(s)`  
   
      Résultat doit être valid dans un état postérieur à, mais peut être null dans un état postérieur à. Pointe vers une mémoire tampon valide de taille `s` octets.  
   
--   `_Outref_result_buffer_to_maybenull_(s, c)`  
+- `_Outref_result_buffer_to_maybenull_(s, c)`  
   
      Résultat doit être valid dans un état postérieur à, mais peut être null dans un état postérieur à. Pointe vers une mémoire tampon de `s` éléments, dont le premier `c` sont valides.  
   
--   `_Outref_result_bytebuffer_to_maybenull_(s,c)`  
+- `_Outref_result_bytebuffer_to_maybenull_(s,c)`  
   
      Résultat doit être valid dans un état postérieur à, mais peut être null dans l’état de publication. Pointe vers une mémoire tampon de `s` octets dont la première `c` sont valides.  
   
--   `_Outref_result_buffer_all_maybenull_(s)`  
+- `_Outref_result_buffer_all_maybenull_(s)`  
   
      Résultat doit être valid dans un état postérieur à, mais peut être null dans l’état de publication. Pointe vers une mémoire tampon valide de taille `s` éléments valides.  
   
--   `_Outref_result_bytebuffer_all_maybenull_(s)`  
+- `_Outref_result_bytebuffer_all_maybenull_(s)`  
   
      Résultat doit être valid dans un état postérieur à, mais peut être null dans l’état de publication. Pointe vers une mémoire tampon valide de `s` octets d’éléments valides.  
   
@@ -457,7 +457,7 @@ Cet article décrit les utilisations courantes des annotations pour les paramèt
 ## <a name="other-common-annotations"></a>Autres Annotations courants  
  **Annotations et Descriptions**  
   
--   `_In_range_(low, hi)`  
+- `_In_range_(low, hi)`  
   
      `_Out_range_(low, hi)`  
   
@@ -476,13 +476,13 @@ Cet article décrit les utilisations courantes des annotations pour les paramèt
     > [!IMPORTANT]
     >  Bien que les noms contiennent « in » et « out », la sémantique de `_In_` et `_Out_` faire **pas** s’appliquent à ces annotations.  
   
--   `_Pre_equal_to_(expr)`  
+- `_Pre_equal_to_(expr)`  
   
      `_Post_equal_to_(expr)`  
   
      La valeur annotée est identique `expr`.  Équivalent à `_Satisfies_(_Curr_ == expr)` qui est appliqué à l’objet annoté avec les conditions d’états préalable ou post-États appropriées.  
   
--   `_Struct_size_bytes_(size)`  
+- `_Struct_size_bytes_(size)`  
   
      S’applique à une déclaration de struct ou une classe.  Indique qu’un objet valide de ce type peut être plus grand que le type déclaré, avec le nombre d’octets donné par `size`.  Exemple :  
   
