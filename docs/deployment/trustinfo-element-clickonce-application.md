@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca75dc2afd49576cecc0fb89afd11744f098b170
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: e3dd75e8c88f87991abbdaa74a711b8f3c7324b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631612"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042236"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt;, élément (application ClickOnce)
 Décrit les autorisations de sécurité minimales dont doit disposer l’application pour qu’elle s’exécute sur l’ordinateur client.
@@ -78,28 +78,28 @@ Décrit les autorisations de sécurité minimales dont doit disposer l’applica
 ## <a name="permissionset"></a>PermissionSet
  Obligatoire. Cet élément est un enfant de l’élément `applicationRequestMinimum` et contient l’élément `IPermission` . Cet élément comprend les attributs suivants.
 
--   `ID`
+- `ID`
 
      Obligatoire. Identifie le jeu d’autorisations. Cet attribut peut avoir n’importe quelle valeur. L’ID est référencé dans les attributs `defaultAssemblyRequest` et `assemblyRequest` .
 
--   `version`
+- `version`
 
      Obligatoire. Identifie la version de l’autorisation. En général, cette valeur est égale à `1`.
 
 ## <a name="ipermission"></a>IPermission
  Optionnel. Cet élément est un enfant de l’élément `PermissionSet` . L’élément `IPermission` identifie entièrement une classe d’autorisation dans le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. L’élément `IPermission` comprend les attributs suivants, mais il peut en avoir d’autres qui correspondent aux propriétés de la classe d’autorisation. Pour trouver la syntaxe d’une autorisation spécifique, consultez les exemples figurant dans le fichier Security.config.
 
--   `class`
+- `class`
 
      Obligatoire. Identifie la classe d’autorisation par son nom fort. Par exemple, le code suivant identifie le type `FileDialogPermission` .
 
      `System.Security.Permissions.FileDialogPermission, mscorlib, Version=1.2.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`
 
--   `version`
+- `version`
 
      Obligatoire. Identifie la version de l’autorisation. En général, cette valeur est égale à `1`.
 
--   `Unrestricted`
+- `Unrestricted`
 
      Obligatoire. Indique si l’application doit se voir accorder cette autorisation sans aucune limite. Si cet attribut a la valeur `true`, l’autorisation est accordée à l’application de manière inconditionnelle. Si cet attribut a la valeur `false`, ou s’il n’est pas défini, des restrictions sont imposées à l’application en fonction d’attributs spécifiques à l’autorisation définis dans la balise `IPermission` . Prenez les autorisations suivantes :
 
@@ -119,18 +119,18 @@ Décrit les autorisations de sécurité minimales dont doit disposer l’applica
 ## <a name="defaultassemblyrequest"></a>defaultAssemblyRequest
  Optionnel. Identifie le jeu d’autorisations accordé à tous les assemblys. Cet élément est un enfant de l’élément `applicationRequestMinimum` et contient l’attribut suivant.
 
--   `permissionSetReference`
+- `permissionSetReference`
 
      Obligatoire. Identifie l’ID du jeu d’autorisations qui est l’autorisation par défaut. Le jeu d’autorisations est déclaré dans l’élément `PermissionSet` .
 
 ## <a name="assemblyrequest"></a>assemblyRequest
  Optionnel. Identifie les autorisations d’un assembly spécifique. Cet élément est un enfant de l’élément `applicationRequestMinimum` et comprend les attributs suivants.
 
--   `Name`
+- `Name`
 
      Obligatoire. Identifie le nom de l’assembly.
 
--   `permissionSetReference`
+- `permissionSetReference`
 
      Obligatoire. Identifie l’ID du jeu d’autorisations dont a besoin cet assembly. Le jeu d’autorisations est déclaré dans l’élément `PermissionSet` .
 
@@ -156,7 +156,7 @@ Décrit les autorisations de sécurité minimales dont doit disposer l’applica
 
    Optionnel. Indique si l’application nécessite l’accès aux éléments protégés de l’interface utilisateur. La valeur peut être `true` ou `false`(false étant la valeur par défaut). Seules les applications signées doivent avoir la valeur true.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Si une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] demande davantage d’autorisations que celles accordées par défaut par l’ordinateur client, le Gestionnaire de confiance du common language runtime demande à l’utilisateur s’il souhaite accorder à l’application ce niveau de privilège élevé. S’il refuse, l’application ne fonctionne pas ; s’il accepte, elle s’exécute avec les autorisations demandées.
 
  Toutes les autorisations demandées à l’aide de `defaultAssemblyRequest` et d’ `assemblyRequest` sont accordées sans demander confirmation à l’utilisateur si le manifeste de déploiement dispose d’une licence de confiance valide.

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d039de309e1e9d5ec80d469d4d1329aad7118e71
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b51f26a4ea2dec50c5ee90c38f49412866b6f866
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625463"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041900"
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>Procédure : Redimensionner des contrôles dans les cellules de feuille de calcul
   Lorsque vous redimensionnez des colonnes ou des lignes sur une feuille de calcul, tous les contrôles hôtes dans les cellules se redimensionnent automatiquement la hauteur ou largeur de la cellule qui a été redimensionnée. Contrôles Windows Forms ne se redimensionnent pas automatiquement par défaut.
@@ -35,13 +35,13 @@ ms.locfileid: "56625463"
 
 ### <a name="to-make-controls-resize-with-cells-at-design-time"></a>Pour que les contrôles à redimensionner des cellules au moment du design
 
-1.  À partir de la **boîte à outils**, faites glisser un contrôle Windows Forms à une feuille de calcul.
+1. À partir de la **boîte à outils**, faites glisser un contrôle Windows Forms à une feuille de calcul.
 
-2.  Cliquez sur le contrôle, puis cliquez sur **Format contrôle**.
+2. Cliquez sur le contrôle, puis cliquez sur **Format contrôle**.
 
-3.  Dans le **Format contrôle** boîte de dialogue, cliquez sur le **propriétés** onglet.
+3. Dans le **Format contrôle** boîte de dialogue, cliquez sur le **propriétés** onglet.
 
-4.  Sous **positionnement de l’objet**, sélectionnez le **déplacez et redimensionnez des cellules** option, puis cliquez sur **OK**.
+4. Sous **positionnement de l’objet**, sélectionnez le **déplacez et redimensionnez des cellules** option, puis cliquez sur **OK**.
 
      Lorsque vous redimensionnez la cellule qui contient le contrôle, le contrôle est redimensionné pour s’ajuster à la cellule.
 
@@ -50,7 +50,7 @@ ms.locfileid: "56625463"
 
 ### <a name="to-make-controls-resize-with-cells-at-run-time"></a>Pour que les contrôles à redimensionner des cellules en cours d’exécution
 
-1.  Ajouter un contrôle à la plage A1.
+1. Ajouter un contrôle à la plage A1.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#5](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#5)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#5)]
@@ -60,15 +60,15 @@ ms.locfileid: "56625463"
 ## <a name="reset-control-placement"></a>Réinitialiser le positionnement de contrôle
  Vous pouvez réinitialiser le positionnement et redimensionnement du contrôle en définissant le `Placement` propriété à une des opérations suivantes <xref:Microsoft.Office.Interop.Excel.XlPlacement> valeurs :
 
--   <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>
+- <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>
 
--   <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlMove>
+- <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlMove>
 
--   <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlMoveAndSize>
+- <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlMoveAndSize>
 
 ### <a name="to-change-the-behavior-of-a-control-so-that-it-does-not-resize-or-move-with-the-cell"></a>Pour modifier le comportement d’un contrôle afin qu’il ne pas redimensionner ou déplacer la cellule
 
-1.  Appelez la propriété de positionnement du contrôle et définissez la valeur sur <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>.
+1. Appelez la propriété de positionnement du contrôle et définissez la valeur sur <xref:Microsoft.Office.Interop.Excel.XlPlacement.xlFreeFloating>.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#6)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#6)]

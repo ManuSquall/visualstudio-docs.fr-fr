@@ -11,12 +11,12 @@ ms.assetid: 4a7eb360-de83-41d5-be53-3cfb160d19f9
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: dcf653654005b75a889bcafd668fbb9313572ff2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 1cdd172c2960024da8b12735764161d36498c4e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001360"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039140"
 ---
 # <a name="deploying-custom-start-pages"></a>Déploiement de pages de démarrage personnalisées
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,9 +57,9 @@ Vous pouvez déployer les Pages de démarrage personnalisées à l’aide de dé
   
 ##### <a name="to-create-an-all-users-deployment"></a>Pour créer un déploiement pour tous les utilisateurs  
   
-1.  Ouvrez le fichier extension.vsixmanifest en mode code.  
+1. Ouvrez le fichier extension.vsixmanifest en mode code.  
   
-2.  Dans le `Identifier` élément du manifeste vsix, ajoutez un `AllUsers` élément qui a la valeur `true`.  
+2. Dans le `Identifier` élément du manifeste vsix, ajoutez un `AllUsers` élément qui a la valeur `true`.  
   
     ```  
     <AllUsers>true</AllUsers>  
@@ -67,9 +67,9 @@ Vous pouvez déployer les Pages de démarrage personnalisées à l’aide de dé
   
      Ainsi, le programme d’installation de vsix demander des autorisations d’administrateur et ensuite installer les fichiers sur \Common7\IDE\Extensions.  
   
-3.  Ouvrez le fichier .pkgdef.  
+3. Ouvrez le fichier .pkgdef.  
   
-4.  Modifier le .pkgdef pour définir la page de démarrage par défaut sous HKLM en ajoutant le code suivant, où *MyStartPage.xaml* est le nom du fichier .xaml qui contient votre Page de démarrage.  
+4. Modifier le .pkgdef pour définir la page de démarrage par défaut sous HKLM en ajoutant le code suivant, où *MyStartPage.xaml* est le nom du fichier .xaml qui contient votre Page de démarrage.  
   
      [$RootKey$\StartPage\Default]  
   
@@ -84,11 +84,11 @@ Vous pouvez déployer les Pages de démarrage personnalisées à l’aide de dé
   
 #### <a name="to-manually-install-a-custom-start-page"></a>Pour installer manuellement une Page de démarrage personnalisée  
   
-1.  Copiez le fichier .xaml qui contient le balisage de Page de démarrage, ainsi que les fichiers autres que des assemblys et les coller dans le dossier \StartPages\ de l’utilisateur.  
+1. Copiez le fichier .xaml qui contient le balisage de Page de démarrage, ainsi que les fichiers autres que des assemblys et les coller dans le dossier \StartPages\ de l’utilisateur.  
   
-2.  Si la Page de démarrage requiert des assemblys, copiez-les et collez-les dans... \\ *Dossier d’installation de visual Studio*\Common7\IDE\PrivateAssemblies\\.  
+2. Si la Page de démarrage requiert des assemblys, copiez-les et collez-les dans... \\ *Dossier d’installation de visual Studio*\Common7\IDE\PrivateAssemblies\\.  
   
-3.  Dans le **personnaliser la Page de démarrage** liste sur le **démarrage** options, sélectionnez la nouvelle Page de démarrage. Pour plus d’informations, consultez [Personnalisation de la page de démarrage](../ide/customizing-the-start-page-for-visual-studio.md).  
+3. Dans le **personnaliser la Page de démarrage** liste sur le **démarrage** options, sélectionnez la nouvelle Page de démarrage. Pour plus d’informations, consultez [Personnalisation de la page de démarrage](../ide/customizing-the-start-page-for-visual-studio.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Personnalisation de la Page de démarrage](../ide/customizing-the-start-page-for-visual-studio.md)   

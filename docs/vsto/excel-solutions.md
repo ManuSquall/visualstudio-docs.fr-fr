@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f96543c3f2cca5c067eea4af4b14bc67d7d129c7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 69616c4406e6a608e406e479e5fc2de2dcbc2844
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600538"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041519"
 ---
 # <a name="excel-solutions"></a>solutions Excel
   Visual Studio fournit des modèles de projet à l'aide desquels vous pouvez créer des personnalisations de niveau document et des compléments VSTO pour Microsoft Office Excel. Vous pouvez utiliser ces solutions pour automatiser Excel, étendre les fonctionnalités Excel et personnaliser l'interface utilisateur Excel. Pour plus d’informations sur les différences entre personnalisations au niveau du document et des Compléments VSTO, consultez [présentation du développement de solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -43,20 +43,20 @@ ms.locfileid: "56600538"
 
  Cette rubrique fournit les informations suivantes :
 
--   [Automatiser Excel](#automating).
+- [Automatiser Excel](#automating).
 
--   [Développer des personnalisations au niveau du document pour Excel](#doclevel).
+- [Développer des personnalisations au niveau du document pour Excel](#doclevel).
 
--   [Développer des Compléments VSTO pour Excel](#applevel).
+- [Développer des Compléments VSTO pour Excel](#applevel).
 
--   [Personnaliser l’interface utilisateur d’Excel](#UI).
+- [Personnaliser l’interface utilisateur d’Excel](#UI).
 
-##  <a name="automating"></a> Automatiser Excel
+## <a name="automating"></a> Automatiser Excel
  Le modèle objet Excel expose de nombreux types que vous pouvez utiliser pour automatiser Excel. Par exemple, vous pouvez créer des graphiques par programmation, mettre en forme des feuilles de calcul et définir les valeurs de plages et de cellules. Pour plus d’informations, consultez [vue d’ensemble du modèle d’objet Excel](../vsto/excel-object-model-overview.md).
 
  Lorsque vous développez des solutions Excel dans Visual Studio, vous pouvez également utiliser les *éléments hôtes* et les *contrôles hôtes* dans vos solutions. Il s'agit d'objets qui étendent certains objets couramment utilisés dans le modèle objet Excel, tels que les objets <xref:Microsoft.Office.Interop.Excel.Worksheet> et <xref:Microsoft.Office.Interop.Excel.Range> . Les objets étendus se comportent comme les objets Excel dont ils dépendent, mais ils ajoutent des événements supplémentaires et des fonctionnalités de liaison de données aux objets. Pour plus d’informations, consultez [automatisation d’Excel à l’aide d’objets étendus](../vsto/automating-excel-by-using-extended-objects.md).
 
-##  <a name="doclevel"></a> Développer des personnalisations au niveau du document pour Excel
+## <a name="doclevel"></a> Développer des personnalisations au niveau du document pour Excel
  Une personnalisation au niveau du document pour Microsoft Office Excel se compose d'un assembly qui est associé à un classeur spécifique. L'assembly augmente généralement les fonctionnalités du classeur en personnalisant l'interface utilisateur et en automatisant Excel. Contrairement à un complément VSTO, qui est associé à Excel lui-même, les fonctionnalités que vous implémentez dans une personnalisation sont disponibles uniquement lorsque le classeur associé est ouvert dans Excel.
 
  Pour créer un projet de personnalisation au niveau du document pour Excel, utilisez le classeur Excel ou les modèles de projet de modèle Excel dans le **nouveau projet** boîte de dialogue de Visual Studio. Pour plus d'informations, voir [Procédure : Créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
@@ -68,7 +68,7 @@ ms.locfileid: "56600538"
 
  Pour plus d’informations sur ces classes générées et autres fonctionnalités que vous pouvez utiliser dans un projet au niveau du document, consultez [programmer des personnalisations au niveau du document](../vsto/programming-document-level-customizations.md).
 
-##  <a name="applevel"></a> Développer des Compléments VSTO pour Excel
+## <a name="applevel"></a> Développer des Compléments VSTO pour Excel
  Un complément VSTO pour Microsoft Office Excel se compose d'un assembly qui est chargé par Excel. L'assembly augmente généralement les fonctionnalités Excel en personnalisant l'interface utilisateur et en automatisant Excel. Contrairement à une personnalisation au niveau du document, qui est associée à un classeur spécifique, les fonctionnalités que vous implémentez dans un complément, VSTO ne sont pas limitées à un seul classeur.
 
  Pour créer un projet de complément VSTO pour Excel, utilisez le classeur Excel ou les modèles de projet de modèle Excel dans le **nouveau projet** boîte de dialogue de Visual Studio. Pour plus d'informations, voir [Procédure : Créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
@@ -80,7 +80,7 @@ ms.locfileid: "56600538"
 
  Pour plus d’informations sur la `ThisAddIn` classe et autres fonctionnalités de Visual Studio que vous pouvez utiliser dans un complément VSTO, consultez [programme VSTO Add-Ins](../vsto/programming-vsto-add-ins.md).
 
-##  <a name="UI"></a> Personnaliser l’interface utilisateur d’Excel
+## <a name="UI"></a> Personnaliser l’interface utilisateur d’Excel
  Il existe différentes façons de personnaliser l'interface utilisateur d'Excel. Certaines options sont disponibles pour tous les types de projets, tandis que d'autres options sont disponibles uniquement pour les compléments VSTO ou les personnalisations au niveau du document.
 
 ### <a name="options-for-all-project-types"></a>Options pour tous les types de projet

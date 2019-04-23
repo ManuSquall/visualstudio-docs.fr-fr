@@ -22,12 +22,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 281ce4ed9f56121ab607aeb49c3ee5b20d5ebe02
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c22989b48c05884bc92eeb017f3a5e124fbc1fec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938578"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039862"
 ---
 # <a name="localizing-clickonce-applications"></a>Localisation des applications ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ La localisation consiste à adapter votre application à une culture spécifique
   
  Cette rubrique décrit trois façons de déployer une application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] pour d'autres cultures :  
   
--   Inclure tous les assemblys satellites dans un déploiement unique.  
+- Inclure tous les assemblys satellites dans un déploiement unique.  
   
--   Générer un seul déploiement pour chaque culture, avec un seul assembly satellite chacune.  
+- Générer un seul déploiement pour chaque culture, avec un seul assembly satellite chacune.  
   
--   Télécharger les assemblys satellites à la demande.  
+- Télécharger les assemblys satellites à la demande.  
   
 ## <a name="including-all-satellite-assemblies-in-a-deployment"></a>Ajout de tous les assemblys satellites dans un déploiement  
  Au lieu de publier plusieurs déploiements [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], vous pouvez publier un seul déploiement [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] qui contient tous les assemblys satellites.  
@@ -77,9 +77,9 @@ La localisation consiste à adapter votre application à une culture spécifique
   
  Vous avez trois options pour tester les déploiements localisés avant de mettre votre application à la disposition des clients :  
   
--   Vous pouvez exécuter votre application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] sur les versions localisées de Windows appropriées.  
+- Vous pouvez exécuter votre application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] sur les versions localisées de Windows appropriées.  
   
--   Vous pouvez définir la propriété <xref:System.Threading.Thread.CurrentUICulture%2A> par programmation dans votre application. (Cette propriété doit être définie avant d'appeler la méthode <xref:System.Windows.Forms.Application.Run%2A>.)  
+- Vous pouvez définir la propriété <xref:System.Threading.Thread.CurrentUICulture%2A> par programmation dans votre application. (Cette propriété doit être définie avant d'appeler la méthode <xref:System.Windows.Forms.Application.Run%2A>.)  
   
 ## <a name="see-also"></a>Voir aussi  
  [\<assemblyIdentity > élément](../deployment/assemblyidentity-element-clickonce-deployment.md)   

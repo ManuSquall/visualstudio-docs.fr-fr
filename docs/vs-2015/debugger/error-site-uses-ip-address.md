@@ -18,12 +18,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e040c45079c9e4b82337cbd1e4b5d7d8306e1a32
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 46eace1c566a2810c5914a49654f8393f425fdee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947776"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040868"
 ---
 # <a name="error-site-uses-ip-address"></a>Erreur : le site utilise l’adresse IP
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,11 +34,11 @@ Cette erreur se produit lorsque le débogueur essaie de s'auto-attacher à une a
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
-1.  Utilisez plutôt la procédure d’attachement manuel (dans le menu Déboguer, choisissez **Attacher au processus**).  
+1. Utilisez plutôt la procédure d’attachement manuel (dans le menu Déboguer, choisissez **Attacher au processus**).  
   
      - ou -  
   
-2.  Modifiez le paramètre **Identification de site web d’IIS**.  
+2. Modifiez le paramètre **Identification de site web d’IIS**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage d’applications web : erreurs et dépannage](../debugger/debugging-web-applications-errors-and-troubleshooting.md)

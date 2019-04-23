@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f5aa84c4f7a39a5e5b7a1ee3458c09397bc81f37
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1cd9619eae1f0c74cb7b8096d6c51163157d934c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953582"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042052"
 ---
 # <a name="develop-tests-from-a-model"></a>Développer des tests à partir d'un modèle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,17 +46,17 @@ Vous pouvez utiliser les spécifications et les modèles architecturaux pour mie
   
  Les instructions suivantes peuvent être utiles :  
   
--   Chaque cas d'usage doit avoir plusieurs tests, pour les itinéraires principaux et pour les résultats exceptionnels.  
+- Chaque cas d'usage doit avoir plusieurs tests, pour les itinéraires principaux et pour les résultats exceptionnels.  
   
--   Quand vous décrivez un cas d'usage dans le modèle d'impératifs, il est plus important de définir sa post-condition, autrement dit l'objectif atteint, que de décrire en détail les procédures suivies par l'utilisateur pour atteindre l'objectif. Par exemple, la post-condition de Commander un repas pourrait être qu'un Restaurant a préparé un repas pour un Client et que le client a payé. La post-condition correspond aux critères que vos tests doivent vérifier.  
+- Quand vous décrivez un cas d'usage dans le modèle d'impératifs, il est plus important de définir sa post-condition, autrement dit l'objectif atteint, que de décrire en détail les procédures suivies par l'utilisateur pour atteindre l'objectif. Par exemple, la post-condition de Commander un repas pourrait être qu'un Restaurant a préparé un repas pour un Client et que le client a payé. La post-condition correspond aux critères que vos tests doivent vérifier.  
   
--   Basez des tests distincts sur les clauses distinctes de la post-condition. Par exemple, créez des tests distincts pour informer le restaurant de la commande et pour recevoir le paiement du client. Cette séparation offre les avantages suivants :  
+- Basez des tests distincts sur les clauses distinctes de la post-condition. Par exemple, créez des tests distincts pour informer le restaurant de la commande et pour recevoir le paiement du client. Cette séparation offre les avantages suivants :  
   
-    -   Les modifications de différents aspects des impératifs se produisent souvent indépendamment. En séparant les tests en différents aspects de cette manière, vous simplifiez la mise à jour des tests en cas de modification des impératifs.  
+    - Les modifications de différents aspects des impératifs se produisent souvent indépendamment. En séparant les tests en différents aspects de cette manière, vous simplifiez la mise à jour des tests en cas de modification des impératifs.  
   
-    -   Si le plan de développement implémente un aspect du cas d'usage avant un autre, vous pouvez activer les tests séparément à mesure que le développement progresse.  
+    - Si le plan de développement implémente un aspect du cas d'usage avant un autre, vous pouvez activer les tests séparément à mesure que le développement progresse.  
   
--   Lors de la conception des tests, séparez le choix des données de test du code ou du script qui détermine si la post-condition a été remplie. Par exemple, un test d’une fonction arithmétique simple peut être : Entrée 4 ; Vérifiez que la sortie est 2. Au lieu de cela, concevez le script en tant que : Choisissez une entrée ; multiplier le résultat par lui-même et vérifiez que le résultat est l’entrée d’origine. Ce style vous permet de faire varier les entrées de test sans modifier le corps principal du test.  
+- Lors de la conception des tests, séparez le choix des données de test du code ou du script qui détermine si la post-condition a été remplie. Par exemple, un test d’une fonction arithmétique simple peut être : Entrée 4 ; Vérifiez que la sortie est 2. Au lieu de cela, concevez le script en tant que : Choisissez une entrée ; multiplier le résultat par lui-même et vérifiez que le résultat est l’entrée d’origine. Ce style vous permet de faire varier les entrées de test sans modifier le corps principal du test.  
   
 #### <a name="linking-tests-to-use-cases"></a>Liaison de tests à des cas d'usage  
  Si vous utilisez [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] pour concevoir et exécuter vos tests, vous pouvez organiser vos tests sous spécification, cas d’usage ou des éléments de travail récit utilisateur. Vous pouvez lier ces éléments de travail à des cas d'usage dans votre modèle. Cela vous permet d'effectuer un suivi rapide des modifications d'impératifs lors des tests et vous aide à suivre la progression de chaque cas d'usage.  
@@ -147,32 +147,32 @@ Assert (countAfter == countBefore = 1);
   
  Du point de vue des tests, un modèle d'impératifs peut être considéré comme un raccourci pour les tests. Ainsi, il est important de maintenir la relation entre les tests et le modèle tout au long du projet.  
   
-##  <a name="Attaching"></a> Attachement de cas de Test aux éléments de modèle  
+## <a name="Attaching"></a> Attachement de cas de Test aux éléments de modèle  
  Si votre projet utilise [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], vous pouvez lier des tests aux éléments de votre modèle. Cela vous permet d'identifier rapidement les tests affectés par une modification des impératifs et de suivre dans quelle mesure un impératif a été satisfait.  
   
  Vous pouvez lier des tests à tous les types d'éléments. Voici quelques exemples :  
   
--   Lier un cas d'usage aux tests qui l'utilisent.  
+- Lier un cas d'usage aux tests qui l'utilisent.  
   
--   Écrire les clauses d'une post-condition de cas d'usage, ou objectif, dans les commentaires associés au cas d'usage, puis lier des tests à chaque commentaire.  
+- Écrire les clauses d'une post-condition de cas d'usage, ou objectif, dans les commentaires associés au cas d'usage, puis lier des tests à chaque commentaire.  
   
--   Écrire des règles invariantes dans des commentaires dans les diagrammes de classes ou d'activités et les lier à des tests.  
+- Écrire des règles invariantes dans des commentaires dans les diagrammes de classes ou d'activités et les lier à des tests.  
   
--   Lier des tests à un diagramme d'activités ou à des activités spécifiques.  
+- Lier des tests à un diagramme d'activités ou à des activités spécifiques.  
   
--   Lier une suite de tests au composant ou au sous-système qu'elle teste.  
+- Lier une suite de tests au composant ou au sous-système qu'elle teste.  
   
 #### <a name="to-link-tests-to-a-model-element-or-relationship"></a>Pour lier des tests à un élément de modèle ou à une relation  
   
-1.  Dans [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], créez un impératif et basez une suite de tests dessus. Pour savoir comment procéder, consultez [test de l’application](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+1. Dans [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], créez un impératif et basez une suite de tests dessus. Pour savoir comment procéder, consultez [test de l’application](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
      L'impératif que vous créez est un élément de travail dans [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Il peut s'agir d'un élément de travail Récit utilisateur, Spécification ou Cas d'usage, selon le modèle de processus utilisé par votre projet avec [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Pour plus d’informations, consultez [le suivi du travail à l’aide de Visual Studio Team Services ou Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
   
-2.  Liez l'élément de travail Spécification à un ou plusieurs éléments dans votre modèle.  
+2. Liez l'élément de travail Spécification à un ou plusieurs éléments dans votre modèle.  
   
      Dans un diagramme de modélisation, avec le bouton droit à un élément, commentaire ou une relation, puis cliquez sur **lien vers l’élément de travail**. Pour plus d’informations, consultez [lier des éléments de modèle et des éléments de travail](../modeling/link-model-elements-and-work-items.md).  
   
-3.  Ajoutez à la suite de tests des cas de test qui vérifient l'impératif exprimé dans l'élément de modèle.  
+3. Ajoutez à la suite de tests des cas de test qui vérifient l'impératif exprimé dans l'élément de modèle.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Créer des modèles pour votre application](../modeling/create-models-for-your-app.md)   

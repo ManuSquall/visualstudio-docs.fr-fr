@@ -9,17 +9,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 59f2c4ba05b0e802f1daa303db0646a94f36fd31
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 575be3277dd7d876b19b9c557643cb05831255a5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953935"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670431"
 ---
 # <a name="xml-schema-explorer"></a>Explorateur de schémas XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 L'Explorateur de schémas XML est intégré à Microsoft Visual Studio et l'Éditeur XML pour vous permettre d'utiliser les schémas en langage XSD (XML Schema Definition). Lorsque vous ouvrez un fichier de schéma XML, le **jeu de schémas** nœud apparaît dans l’Explorateur de schémas XML. Tous les schémas inclus, importés ou redéfinis pour votre fichier cible, ainsi que tous les fichiers référencés via une instruction `include` ou `import`, s'affichent également dans l'Explorateur de schémas XML.  
   
  L'Explorateur de schémas XML vous permet d'effectuer les opérations suivantes :  

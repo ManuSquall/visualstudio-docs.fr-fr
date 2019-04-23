@@ -22,12 +22,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 83a685b0dfc9b4f260d082230a5b58dcb025eff4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a882a1523d89f547f98389e6ad3e6baf32cbb01c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950692"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039353"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>Procédure : Restaurer des commandes de débogueur masquées
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,19 +38,19 @@ Lorsque vous installez Visual Studio, vous êtes invité à choisir un jeu de pa
   
 ### <a name="to-restore-hidden-debugger-commands"></a>Pour restaurer des commandes de débogueur masquées  
   
-1.  Un projet étant ouvert, dans le menu **Outils**, cliquez sur **Personnaliser**.  
+1. Un projet étant ouvert, dans le menu **Outils**, cliquez sur **Personnaliser**.  
   
-2.  Dans la boîte de dialogue **Personnaliser**, cliquez sur l'onglet **Commandes**.  
+2. Dans la boîte de dialogue **Personnaliser**, cliquez sur l'onglet **Commandes**.  
   
-3.  Dans le menu déroulant **Barre de menus :**, sélectionnez le menu **Déboguer** qui doit contenir la commande restaurée.  
+3. Dans le menu déroulant **Barre de menus :**, sélectionnez le menu **Déboguer** qui doit contenir la commande restaurée.  
   
-4.  Cliquez sur le **ajouter commande...** disproportionnée.  
+4. Cliquez sur le **ajouter commande...** disproportionnée.  
   
-5.  Dans la zone **Ajouter une commande**, sélectionnez la commande que vous souhaitez ajouter, puis cliquez sur **OK**.  
+5. Dans la zone **Ajouter une commande**, sélectionnez la commande que vous souhaitez ajouter, puis cliquez sur **OK**.  
   
-6.  Répétez l'étape précédente pour ajouter une autre commande.  
+6. Répétez l'étape précédente pour ajouter une autre commande.  
   
-7.  Cliquez sur **Fermer** lorsque vous avez terminé d'ajouter des commandes au menu.  
+7. Cliquez sur **Fermer** lorsque vous avez terminé d'ajouter des commandes au menu.  
   
     > [!WARNING]
     >  Certains éléments du menu n'apparaissent que lorsque le débogueur se trouve dans un mode spécifique, tel que le mode exécution ou le mode arrêt. Par conséquent, un élément que vous avez ajouté n'est pas forcément immédiatement visible lorsque vous avez terminé ces étapes.  
@@ -60,21 +60,21 @@ Lorsque vous installez Visual Studio, vous êtes invité à choisir un jeu de pa
   
 #### <a name="to-import-new-ide-settings"></a>Pour importer de nouveaux paramètres IDE  
   
-1.  Dans le menu **Outils**, cliquez sur **Importation et exportation des paramètres**.  
+1. Dans le menu **Outils**, cliquez sur **Importation et exportation des paramètres**.  
   
-2.  Sur la page **Bienvenue dans l'Assistant Importation et exportation des paramètres**, cliquez sur **Importer les paramètres d'environnement sélectionnés**, puis cliquez sur **Suivant**.  
+2. Sur la page **Bienvenue dans l'Assistant Importation et exportation des paramètres**, cliquez sur **Importer les paramètres d'environnement sélectionnés**, puis cliquez sur **Suivant**.  
   
-3.  Sur la page **Enregistrer les paramètres actuels**, enregistrez ou non vos paramètres existants, puis cliquez sur **Suivant**.  
+3. Sur la page **Enregistrer les paramètres actuels**, enregistrez ou non vos paramètres existants, puis cliquez sur **Suivant**.  
   
-4.  Sur la page **Choisir une collection de paramètres à importer**, dans le dossier **Paramètres par défaut**, choisissez une collection de paramètres de développement dotés des commandes à utiliser. Si vous ne savez pas quelle collection choisir, essayez **Paramètres de développement généraux** ou **Paramètres de développement Visual C++**, option qui fournit le plus grand nombre de commandes de débogueur.  
+4. Sur la page **Choisir une collection de paramètres à importer**, dans le dossier **Paramètres par défaut**, choisissez une collection de paramètres de développement dotés des commandes à utiliser. Si vous ne savez pas quelle collection choisir, essayez **Paramètres de développement généraux** ou **Paramètres de développement Visual C++**, option qui fournit le plus grand nombre de commandes de débogueur.  
   
-5.  Cliquez sur **Suivant**.  
+5. Cliquez sur **Suivant**.  
   
-6.  Sur la page **Choisir les paramètres à importer**, sous **Options**, assurez-vous que **Débogage** est sélectionné. Désactivez les autres cases à cocher, sauf si vous souhaitez également importer ces paramètres.  
+6. Sur la page **Choisir les paramètres à importer**, sous **Options**, assurez-vous que **Débogage** est sélectionné. Désactivez les autres cases à cocher, sauf si vous souhaitez également importer ces paramètres.  
   
-7.  Cliquez sur **Terminer**.  
+7. Cliquez sur **Terminer**.  
   
-8.  Sur la page **Importation terminée**, examinez les erreurs associées à la réinitialisation de vos paramètres sous **Détails**.  
+8. Sur la page **Importation terminée**, examinez les erreurs associées à la réinitialisation de vos paramètres sous **Détails**.  
   
 9. Cliquez sur **Fermer**.  
   

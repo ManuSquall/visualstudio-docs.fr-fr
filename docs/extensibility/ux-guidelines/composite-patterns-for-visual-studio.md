@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 633ab9d446c65b9408c0e069695d22889e7943d1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: d8808804c5b99918e68169e4ab5510cdb5c634a8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723069"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670496"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Modèles composites pour Visual Studio
 Modèles composites combinent des éléments de conception et d’interaction dans des configurations distinctes. Les modèles composites plus importantes dans Visual Studio en matière de cohérence sont les suivantes :
@@ -393,7 +393,6 @@ Modèles composites combinent des éléments de conception et d’interaction da
 ####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a> Apparence de sélection de graphique d’objet
  Les poignées sont des carrés dessinés dans un rectangle autour de la zone englobante de l’objet. Le tableau ci-dessous montre des exemples des différents États qu’un objet graphique peut avoir avec la poignée de dimensionnement et apparence Édition sur place. La taille des poignées doit être liée à la bordure de fenêtre et edge à l’aide de mesures la **GetSystemMetrics** API.
 
-
 | État | Apparence | Détails des visuels |
 |-------------------------|---------------| - |
 | **Non sélectionné** | Par défaut | ![État du bouton par défaut](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713-10_DefaultState") |
@@ -435,7 +434,6 @@ Modèles composites combinent des éléments de conception et d’interaction da
 >  **Le focus** et **sélection** sont des concepts différents. *Le focus* indique de quelle interface utilisateur de l’élément cible pour recevoir une entrée ne sont pas explicitement dirigée vers un autre objet, tandis que *sélection* fait référence à l’état d’inclusion d’un objet dans un ensemble d’objets sur lesquels suivantes opérations peuvent avoir lieu.
 
  Les sélections dans les listes peuvent être contiguës, disjoint, ou une région. Lorsque les sélections multiples sont autorisées, contiguës et disjointe sélection doit toujours être prise en charge, lors de la prise en charge des sélections de région (zone) sont facultatif. Sélections de région sont initiées en faisant glisser dans l’espace blanc du corps de la liste.
-
 
 | Object | Sélection |
 |--------|------------|

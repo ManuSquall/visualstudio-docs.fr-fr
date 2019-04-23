@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b47b1b1a776d27c2a75c9303c34255aff8622eb7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 71fbafb46db563c56bafb926b66b88bc39fda2ed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952437"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039344"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Procédure : Créer un Package de programme d’amorçage localisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,11 +27,11 @@ Après avoir créé un package de programme d'amorçage, vous pouvez créer des 
   
  Par défaut, Visual Studio 2010 inclut des packages de programme d'amorçage localisés uniquement pour .NET Framework 4, .NET Framework 4 Client Profile, F# Runtime 2.0 et F# Runtime 4.0. Vous pouvez créer des packages localisés pour d'autres programmes d'amorçage en trois étapes.  
   
-1.  Créez un dossier nommé d’après le nom des paramètres régionaux dans \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*Nom_package_programme_amorçage*.  
+1. Créez un dossier nommé d’après le nom des paramètres régionaux dans \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*Nom_package_programme_amorçage*.  
   
-2.  Créez un fichier qui contient les termes du contrat de licence logiciel du package du programme d’amorçage et placez-le dans le nouveau dossier.  
+2. Créez un fichier qui contient les termes du contrat de licence logiciel du package du programme d’amorçage et placez-le dans le nouveau dossier.  
   
-3.  Créez un manifeste du package nommé package.xml, mettez à jour les chaînes et la culture, puis placez le fichier dans le nouveau dossier. Si vous avez déjà créé un programme d'amorçage de Visual Studio dans la langue cible, vous pouvez copier le fichier Visual Studio package.xml et le changer durant cette étape.  
+3. Créez un manifeste du package nommé package.xml, mettez à jour les chaînes et la culture, puis placez le fichier dans le nouveau dossier. Si vous avez déjà créé un programme d'amorçage de Visual Studio dans la langue cible, vous pouvez copier le fichier Visual Studio package.xml et le changer durant cette étape.  
   
 > [!NOTE]
 >  Si vous utilisez un projet d’installation pour déployer les applications, vous pouvez localiser votre application en changeant la propriété **Localization**.  
@@ -40,7 +40,7 @@ Après avoir créé un package de programme d'amorçage, vous pouvez créer des 
   
 ### <a name="to-create-a-localized-bootstrapper-package"></a>Pour créer un package de programme d'amorçage localisé  
   
-1.  Créez un dossier nommé en fonction du nom des paramètres régionaux.  
+1. Créez un dossier nommé en fonction du nom des paramètres régionaux.  
   
      Sur les ordinateurs 32 bits, créez le dossier dans le Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*Nom_package_programme_amorçage*\ dossier.  
   
@@ -65,33 +65,33 @@ Après avoir créé un package de programme d'amorçage, vous pouvez créer des 
     |Russe|ru|  
     |Turc|tr|  
   
-2.  Créez un fichier qui contient les termes du contrat de licence logiciel du package du programme d’amorçage et placez-le dans le nouveau dossier.  
+2. Créez un fichier qui contient les termes du contrat de licence logiciel du package du programme d’amorçage et placez-le dans le nouveau dossier.  
   
-3.  Créez un manifeste du package nommé package.xml et placez-le dans le nouveau dossier. Pour plus d'informations, voir [Procédure : Créer un manifeste de Package](../deployment/how-to-create-a-package-manifest.md).  
+3. Créez un manifeste du package nommé package.xml et placez-le dans le nouveau dossier. Pour plus d'informations, voir [Procédure : Créer un manifeste de Package](../deployment/how-to-create-a-package-manifest.md).  
   
-4.  Mettez à jour la section `<Strings>` du manifeste du package pour que les chaînes soient dans la langue appropriée en fonction des paramètres régionaux.  
+4. Mettez à jour la section `<Strings>` du manifeste du package pour que les chaînes soient dans la langue appropriée en fonction des paramètres régionaux.  
   
-5.  Changez la valeur de `<String Name="Culture">` pour qu'elle corresponde au nom du dossier.  
+5. Changez la valeur de `<String Name="Culture">` pour qu'elle corresponde au nom du dossier.  
   
-6.  Enregistrez le fichier package.xml.  
+6. Enregistrez le fichier package.xml.  
   
 ### <a name="to-create-a-bootstrapper-package-for-net-framework-35-service-pack-1-localized-in-french"></a>Pour créer un package de programme d'amorçage pour .NET Framework 3.5 Service Pack 1 localisé en français  
   
-1.  Créez un dossier nommé fr. Le nom du dossier doit correspondre au nom des paramètres régionaux.  
+1. Créez un dossier nommé fr. Le nom du dossier doit correspondre au nom des paramètres régionaux.  
   
      Sur les ordinateurs 32 bits, créez le dossier dans le dossier \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\.  
   
      Sur les ordinateurs 64 bits, créez le dossier dans le dossier \Program Files (86)\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\.  
   
-2.  Placez une version localisée des termes du contrat de licence logiciel dans le dossier fr.  
+2. Placez une version localisée des termes du contrat de licence logiciel dans le dossier fr.  
   
-3.  Copiez le fichier \Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\en\package.xml dans le dossier fr, puis ouvrez le fichier dans le Concepteur XML.  
+3. Copiez le fichier \Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\en\package.xml dans le dossier fr, puis ouvrez le fichier dans le Concepteur XML.  
   
-4.  Mettez à jour la section `<Strings>` du manifeste du package pour que les chaînes d'erreur soient en français.  
+4. Mettez à jour la section `<Strings>` du manifeste du package pour que les chaînes d'erreur soient en français.  
   
-5.  Changez la valeur de `<String Name="Culture">` en fr.  
+5. Changez la valeur de `<String Name="Culture">` en fr.  
   
-6.  Enregistrez le fichier package.xml.  
+6. Enregistrez le fichier package.xml.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Création de packages de programme d’amorçage](../deployment/creating-bootstrapper-packages.md)   

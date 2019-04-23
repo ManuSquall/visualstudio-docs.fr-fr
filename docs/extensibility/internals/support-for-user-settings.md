@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bba2a948ef9554434ad1032bcbfb8b54dfe8d4c3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 2c358f80284083625dfe8c0eb3484c95000beb63
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622720"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670444"
 ---
 # <a name="support-for-user-settings"></a>Prise en charge des paramètres utilisateur
 Un VSPackage peut définir une ou plusieurs catégories de paramètres qui sont des groupes de variables d’état qui persistent lorsqu’un utilisateur choisit le **importer/exporter les paramètres** commande sur le **outils** menu. Pour activer cette persistance, vous utilisez les paramètres API dans le [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].
@@ -50,11 +50,10 @@ Un VSPackage peut définir une ou plusieurs catégories de paramètres qui sont 
 
  AlternateParent = CategoryName
 
-
-| Name | Type | Données | Description |
+| Nom | Type | Données | Description |
 |-----------------|--------| - | - |
 | (Default) | REG_SZ | Nom du Point de paramètres personnalisés | Nom de la clé, `<CSPName`>, est le nom non localisé du Point de paramètres personnalisés.<br /><br /> Pour les implémentations basées sur MPF, nom de la clé est obtenu en combinant le `categoryName` et `objectName` arguments de la <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> constructeur dans `categoryName_objectName`.<br /><br /> La clé peut être vide ou il peut contenir l’ID de référence à la chaîne localisée dans une DLL satellite. Cette valeur est obtenue à partir de la `objectNameResourceID` l’argument de la <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> constructeur. |
 | Package | REG_SZ | GUID | Le GUID du VSPackage qui implémente le Point de paramètres personnalisés.<br /><br /> Implémentations basées sur l’utilisation de MPF le <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> de classe, utilisez le constructeur `objectType` argument contenant le VSPackage <xref:System.Type> et de la réflexion pour obtenir cette valeur. |
 | Category | REG_SZ | GUID | GUID identifiant la catégorie de paramètres.<br /><br /> Pour les implémentations basées sur les assemblys PIA, cette valeur peut être arbitrairement choisis GUID, qui le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE transmet à la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ExportSettings%2A> et le <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ImportSettings%2A> méthodes. Toutes les implémentations de ces deux méthodes doivent vérifier leurs arguments GUID.<br /><br /> Pour les implémentations basées sur MPF, ce GUID est obtenu par le <xref:System.Type> de la classe implémentant le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] mécanisme de paramètres. |
-| ResourcePackage | REG_SZ | GUID | Facultatif.<br /><br /> Chemin d’accès au satellite DLL contenant des chaînes localisées si le VSPackage implémentation ne fournit pas les.<br /><br /> MPF utilise la réflexion pour obtenir la ressource correcte VSPackage, donc la <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> classe ne définit pas cet argument. |
-| AlternateParent | REG_SZ | Nom du dossier sous la page Outils/Options contenant ce Point de paramètres personnalisés. | Facultatif.<br /><br /> Vous devez définir cette valeur uniquement si une implémentation de paramètres prend en charge **Outils/Options** pages qui utilisent le mécanisme de persistance dans le [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] plutôt que le mécanisme dans le modèle automation pour enregistrer l’état.<br /><br /> Dans ce cas, la valeur dans la clé AlternateParent est la `topic` section de la `topic.sub-topic` chaîne utilisée pour identifier le particulier **ToolsOptions** page. Par exemple, pour le **ToolsOptions** page `"TextEditor.Basic"` la valeur de AlternateParent serait `"TextEditor"`.<br /><br /> Lorsque <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> génère le Point de paramètres personnalisés, il est le même que le nom de catégorie. |
+| ResourcePackage | REG_SZ | GUID | Optionnel.<br /><br /> Chemin d’accès au satellite DLL contenant des chaînes localisées si le VSPackage implémentation ne fournit pas les.<br /><br /> MPF utilise la réflexion pour obtenir la ressource correcte VSPackage, donc la <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> classe ne définit pas cet argument. |
+| AlternateParent | REG_SZ | Nom du dossier sous la page Outils/Options contenant ce Point de paramètres personnalisés. | Optionnel.<br /><br /> Vous devez définir cette valeur uniquement si une implémentation de paramètres prend en charge **Outils/Options** pages qui utilisent le mécanisme de persistance dans le [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] plutôt que le mécanisme dans le modèle automation pour enregistrer l’état.<br /><br /> Dans ce cas, la valeur dans la clé AlternateParent est la `topic` section de la `topic.sub-topic` chaîne utilisée pour identifier le particulier **ToolsOptions** page. Par exemple, pour le **ToolsOptions** page `"TextEditor.Basic"` la valeur de AlternateParent serait `"TextEditor"`.<br /><br /> Lorsque <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> génère le Point de paramètres personnalisés, il est le même que le nom de catégorie. |

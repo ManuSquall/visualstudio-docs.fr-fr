@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0ed7f7106b22cabc2e30c4f979aacda1823ea7d8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 140aaa93272f6c10bb85a405cb2f875f2b6b464a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651930"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037523"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Ressources pour la conception d'applications accessibles
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,33 +28,33 @@ Utilisez les liens suivants pour trouver des informations sur les technologies q
   
 ## <a name="technologies"></a>Technologies  
   
--   **Microsoft Active Accessibility** Technologie COM qui améliore l’intégration des options d’accessibilité aux applications s’exécutant sur Microsoft Windows. Elle fournit des bibliothèques de liens dynamiques qui sont incorporées au système d'exploitation, ainsi qu'une interface COM et des éléments de programmation d'application qui fournissent des méthodes fiables pour exposer des informations sur les éléments d'interface utilisateur. Pour plus d’informations, consultez [http://msdn.microsoft.com/library/windows/desktop/dd373592(v=vs.85).aspx](http://msdn.microsoft.com/library/windows/desktop/dd373592\(v=vs.85\).aspx).  
+- **Microsoft Active Accessibility** Technologie COM qui améliore l’intégration des options d’accessibilité aux applications s’exécutant sur Microsoft Windows. Elle fournit des bibliothèques de liens dynamiques qui sont incorporées au système d'exploitation, ainsi qu'une interface COM et des éléments de programmation d'application qui fournissent des méthodes fiables pour exposer des informations sur les éléments d'interface utilisateur. Pour plus d’informations, consultez [http://msdn.microsoft.com/library/windows/desktop/dd373592(v=vs.85).aspx](http://msdn.microsoft.com/library/windows/desktop/dd373592\(v=vs.85\).aspx).  
   
--   **Technologies Microsoft .NET Speech** Le SDK Microsoft .NET Speech rassemble des contrôles Microsoft [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)], un complément vocal pour Microsoft Internet Explorer, des exemples d’applications et de la documentation permettant aux développeurs web de créer, déboguer et déployer des applications [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)] prenant en charge la reconnaissance vocale. Les outils sont intégrés de façon transparente à Microsoft Visual Studio, ce qui permet aux développeurs de tirer parti d'un environnement de développement familier. Pour plus d’informations, consultez [http://msdn.microsoft.com/library/ms950383.aspx](http://msdn.microsoft.com/library/ms950383.aspx).  
+- **Technologies Microsoft .NET Speech** Le SDK Microsoft .NET Speech rassemble des contrôles Microsoft [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)], un complément vocal pour Microsoft Internet Explorer, des exemples d’applications et de la documentation permettant aux développeurs web de créer, déboguer et déployer des applications [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)] prenant en charge la reconnaissance vocale. Les outils sont intégrés de façon transparente à Microsoft Visual Studio, ce qui permet aux développeurs de tirer parti d'un environnement de développement familier. Pour plus d’informations, consultez [http://msdn.microsoft.com/library/ms950383.aspx](http://msdn.microsoft.com/library/ms950383.aspx).  
   
--   **Présentation de SAMI 1.0** La technologie SAMI (Synchronized Accessible Media Interchange) permet aux développeurs de créer une légende pour le contenu audio des applications multimédias sur PC. Pour plus d’informations, consultez [http://msdn.microsoft.com/library/ms971327.aspx](http://msdn.microsoft.com/library/ms971327.aspx).  
+- **Présentation de SAMI 1.0** La technologie SAMI (Synchronized Accessible Media Interchange) permet aux développeurs de créer une légende pour le contenu audio des applications multimédias sur PC. Pour plus d’informations, consultez [http://msdn.microsoft.com/library/ms971327.aspx](http://msdn.microsoft.com/library/ms971327.aspx).  
   
 ## <a name="windows-applications"></a>Applications Windows  
   
--   [Procédure pas à pas : Création d’une Application Windows Accessible](http://msdn.microsoft.com/library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b) cette rubrique fournit des instructions détaillées pour inclure les cinq critères d’accessibilité pour le logo Certifié pour Windows dans un exemple d’application Windows.  
+- [Procédure pas à pas : Création d’une Application Windows Accessible](http://msdn.microsoft.com/library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b) cette rubrique fournit des instructions détaillées pour inclure les cinq critères d’accessibilité pour le logo Certifié pour Windows dans un exemple d’application Windows.  
   
--   **Recommandations en matière de design de l’interface utilisateur clavier** Cet article technique explique comment concevoir l’interface utilisateur d’une application Windows pour permettre aux utilisateurs de s’en servir à partir du clavier. Pour plus d’informations, consultez [http://msdn2.microsoft.com/library/ms971323.aspx](http://msdn2.microsoft.com/library/ms971323.aspx).  
+- **Recommandations en matière de design de l’interface utilisateur clavier** Cet article technique explique comment concevoir l’interface utilisateur d’une application Windows pour permettre aux utilisateurs de s’en servir à partir du clavier. Pour plus d’informations, consultez [http://msdn2.microsoft.com/library/ms971323.aspx](http://msdn2.microsoft.com/library/ms971323.aspx).  
   
--   **Accessibilité de la console** Cet article technique décrit les API et événements qui permettent d’exposer la console dans Windows XP pour les options d’accessibilité. Pour plus d’informations, consultez [http://msdn2.microsoft.com/library/ms971319.aspx](http://msdn2.microsoft.com/library/ms971319.aspx).  
+- **Accessibilité de la console** Cet article technique décrit les API et événements qui permettent d’exposer la console dans Windows XP pour les options d’accessibilité. Pour plus d’informations, consultez [http://msdn2.microsoft.com/library/ms971319.aspx](http://msdn2.microsoft.com/library/ms971319.aspx).  
   
 ## <a name="web-sites"></a>Sites web  
   
--   [Procédure pas à pas : Directives d’accessibilité pour l’aide de contrôles Image, les contrôles Menu et AutoPostBack](http://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) cette rubrique fournit des instructions détaillées pour inclure des contrôles accessibles dans un exemple de page Web, ainsi que des conseils de conception d’accessibilité pour le Web.  
+- [Procédure pas à pas : Directives d’accessibilité pour l’aide de contrôles Image, les contrôles Menu et AutoPostBack](http://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) cette rubrique fournit des instructions détaillées pour inclure des contrôles accessibles dans un exemple de page Web, ainsi que des conseils de conception d’accessibilité pour le Web.  
   
--   **Amélioration de l’accessibilité des pages web** Cet article technique répertorie les éléments HTML 3.2 accessibles, ainsi que les éléments qui peuvent être rendus accessibles dans le cadre du développement de sites web. Pour plus d’informations, consultez [http://msdn2.microsoft.com/library/ms971309.aspx](http://msdn2.microsoft.com/library/ms971309.aspx).  
+- **Amélioration de l’accessibilité des pages web** Cet article technique répertorie les éléments HTML 3.2 accessibles, ainsi que les éléments qui peuvent être rendus accessibles dans le cadre du développement de sites web. Pour plus d’informations, consultez [http://msdn2.microsoft.com/library/ms971309.aspx](http://msdn2.microsoft.com/library/ms971309.aspx).  
   
--   **Création de pages web accessibles en DHTML** Cet article technique répertorie les éléments HTML 4.0 accessibles, ainsi que les conseils de design concernant l’accessibilité pour le web. Pour plus d’informations, consultez [http://msdn2.microsoft.com/library/ms528445.aspx](http://msdn2.microsoft.com/library/ms528445.aspx).  
+- **Création de pages web accessibles en DHTML** Cet article technique répertorie les éléments HTML 4.0 accessibles, ainsi que les conseils de design concernant l’accessibilité pour le web. Pour plus d’informations, consultez [http://msdn2.microsoft.com/library/ms528445.aspx](http://msdn2.microsoft.com/library/ms528445.aspx).  
   
--   **Texte de remplacement pour les pages web inaccessibles** Cet article technique décrit l’utilisation des langages XML et XSLT pour fournir plusieurs affichages de la même page web, par exemple pour produire des versions au format texte uniquement. Pour plus d’informations, consultez [http://msdn2.microsoft.com/library/aa468593.aspx](http://msdn2.microsoft.com/library/aa468593.aspx).  
+- **Texte de remplacement pour les pages web inaccessibles** Cet article technique décrit l’utilisation des langages XML et XSLT pour fournir plusieurs affichages de la même page web, par exemple pour produire des versions au format texte uniquement. Pour plus d’informations, consultez [http://msdn2.microsoft.com/library/aa468593.aspx](http://msdn2.microsoft.com/library/aa468593.aspx).  
   
 ### <a name="third-party-resources"></a>Ressources tierces  
   
--   **Initiative du W3C (World Wide Web Consortium) concernant l’accessibilité web** Ce site web fournit des recommandations et des techniques pour le développement de sites web accessibles. Pour plus d’informations, consultez [http://www.w3.org/WAI/GL/](http://www.w3.org/WAI/GL/).  
+- **Initiative du W3C (World Wide Web Consortium) concernant l’accessibilité web** Ce site web fournit des recommandations et des techniques pour le développement de sites web accessibles. Pour plus d’informations, consultez [http://www.w3.org/WAI/GL/](http://www.w3.org/WAI/GL/).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonctionnalités d’accessibilité de Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)

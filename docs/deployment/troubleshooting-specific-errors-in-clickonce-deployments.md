@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46b7a159fb2d15f817cad47817262202397d3981
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: c2d337a1ed97524dc04c8154fe2b074baf0921ca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654319"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042379"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Dépanner des erreurs spécifiques dans les déploiements ClickOnce
 Cet article répertorie les erreurs courantes qui peuvent se produire lorsque vous déployez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application et fournit les étapes pour résoudre chaque problème.
@@ -81,9 +81,9 @@ Cet article répertorie les erreurs courantes qui peuvent se produire lorsque vo
 
  Vous devez procédez comme suit :
 
--   Vérifiez que l’identité du manifeste de déploiement, d’identité du manifeste d’application et l’identité de l’application EXE principale sont toutes uniques.
+- Vérifiez que l’identité du manifeste de déploiement, d’identité du manifeste d’application et l’identité de l’application EXE principale sont toutes uniques.
 
--   Vérifiez que les chemins d’accès ne sont pas plus de 100 caractères. Si votre application contient des chemins d’accès de fichier sont trop longs, vous risquez de dépasser les limitations sur le chemin d’accès maximal, que vous pouvez stocker. Essayez de raccourcir les chemins d’accès et le réinstaller.
+- Vérifiez que les chemins d’accès ne sont pas plus de 100 caractères. Si votre application contient des chemins d’accès de fichier sont trop longs, vous risquez de dépasser les limitations sur le chemin d’accès maximal, que vous pouvez stocker. Essayez de raccourcir les chemins d’accès et le réinstaller.
 
 #### <a name="privatepath-settings-in-application-config-file-are-not-honored"></a>Les paramètres PrivatePath définis dans le fichier de configuration d’application ne sont pas respectés.
  Pour utiliser PrivatePath (chemins d’accès de détection de Fusion), l’application doit demander l’autorisation de confiance totale. Essayez de modifier le manifeste d’application pour demander une confiance totale, puis réessayez.
@@ -112,9 +112,9 @@ Cet article répertorie les erreurs courantes qui peuvent se produire lorsque vo
 #### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>Vous avez essayé de vous connecter avec un certificat dans votre magasin de certificats et une boîte de message vide
  Dans le **signature** boîte de dialogue, vous devez :
 
--   Sélectionnez **signer avec un certificat stocké**, et
+- Sélectionnez **signer avec un certificat stocké**, et
 
--   Sélectionnez un certificat dans la liste ; le premier certificat n’est pas la sélection par défaut.
+- Sélectionnez un certificat dans la liste ; le premier certificat n’est pas la sélection par défaut.
 
 #### <a name="clicking-the-dont-sign-button-causes-an-exception"></a>En cliquant sur le bouton « Se ne » provoque une exception
  Ce problème est un bogue connu. Tous les [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestes sont requis pour être signé. Sélectionnez simplement une des options de signature, puis cliquez sur **OK**.

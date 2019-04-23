@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c45b62e2fb1d6e104621a7fdc285ca208364a22
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 5286f79f55f2a09122fb551911162bd609ce3bb2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54802614"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040557"
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Procédure pas à pas : création d'un composant simple avec Visual C# ou Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ En suivant cette procédure pas-à-pas, vous vous familiariserez avec la plupart
 > [!NOTE]
 >  Cette procédure pas-à-pas est basée sur Visual Studio Professional, qui offre le modèle d'application WPF sur lequel vous allez vous baser pour générer le projet. Visual Studio Express pour Windows Desktop offre également ce modèle, mais pas Visual Studio Express pour Windows et Visual Studio Express pour le Web. Pour obtenir une présentation de l’utilisation de Visual Studio Express pour Windows, consultez le [Centre de développement des applications du Windows Store](http://msdn.microsoft.com/windows/apps/br229519). Pour obtenir une présentation de l’utilisation de Visual Studio Express pour le web, consultez [Get Started with ASP.NET](http://www.asp.net/get-started)(Prise en main d’ASP.NET). De plus, votre édition de Visual Studio et les paramètres que vous utilisez déterminent les noms et les emplacements des éléments de l'interface utilisateur. Consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
-##  <a name="BKMK_ConfigureIDE"></a> Configurer l'IDE  
+## <a name="BKMK_ConfigureIDE"></a> Configurer l'IDE  
  Au premier démarrage de Visual Studio, Visual Studio vous invite à vous connecter avec un compte de service Microsoft, [Se connecter à Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2013/06/28/welcome-sign-in-to-visual-studio.aspx). Vous n'avez pas besoin de vous connecter immédiatement ; vous pouvez le faire ultérieurement.  
   
  Lors de votre lancement de Visual Studio, vous devez choisir une combinaison de paramètres qui applique un ensemble de personnalisations prédéfinies à l'IDE. Chaque combinaison de paramètres a été conçue pour vous faciliter le développement d'applications.  
@@ -69,7 +69,7 @@ En suivant cette procédure pas-à-pas, vous vous familiariserez avec la plupart
   
    Le thème de couleur utilisé pour les images dans le reste de cette procédure pas à pas est le thème clair. Pour plus d’informations sur la personnalisation de l’IDE, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
-##  <a name="BKMK_CreateApp"></a> Créer une application simple  
+## <a name="BKMK_CreateApp"></a> Créer une application simple  
   
 ### <a name="create-the-project"></a>Créer le projet  
  Lorsque vous créez une application dans Visual Studio, vous créez d'abord un projet et une solution. Pour cet exemple, vous allez créer un projet Windows Presentation Foundation.  
@@ -199,7 +199,7 @@ En suivant cette procédure pas-à-pas, vous vous familiariserez avec la plupart
   
 ##### <a name="add-code-to-display-message-boxes"></a>Ajoutez le code pour afficher des boîtes de message  
   
-1.  Dans l'aire de conception, double-cliquez sur le bouton **Afficher** .  
+1. Dans l'aire de conception, double-cliquez sur le bouton **Afficher** .  
   
      Greetings.xaml.vb ou Greetings.xaml.cs s'ouvre, avec le curseur dans l'événement Button_Click. Vous pouvez également ajouter un gestionnaire d'événements Click comme suit (si le code collé présente une ligne ondulée rouge sous les noms, vous n'avez probablement pas sélectionné ni renommé les contrôles RadioButton sur l'aire de conception) :  
   
@@ -220,7 +220,7 @@ En suivant cette procédure pas-à-pas, vous vous familiariserez avec la plupart
     }  
     ```  
   
-2.  Pour Visual Basic, entrez le code suivant :  
+2. Pour Visual Basic, entrez le code suivant :  
   
     ```vb  
     If RadioButton1.IsChecked = True Then  
@@ -245,9 +245,9 @@ En suivant cette procédure pas-à-pas, vous vous familiariserez avec la plupart
     }  
     ```  
   
-3.  Enregistrez l'application.  
+3. Enregistrez l'application.  
   
-##  <a name="BKMK_DebugTest"></a> Déboguer et tester l'application  
+## <a name="BKMK_DebugTest"></a> Déboguer et tester l'application  
  Vous déboguerez ensuite l'application pour rechercher les erreurs et tester l'affichage correct des deux boîtes de message. Les instructions suivantes expliquent comment générer et lancer le débogueur. Pour plus d’informations, vous pourrez ultérieurement consulter [Génération d’une application WPF (WPF)](http://msdn.microsoft.com/library/a58696fd-bdad-4b55-9759-136dfdf8b91c) et [Débogage WPF](../debugger/debugging-wpf.md).  
   
 ### <a name="find-and-fix-errors"></a>Rechercher et corriger des erreurs  
@@ -280,29 +280,29 @@ En suivant cette procédure pas-à-pas, vous vous familiariserez avec la plupart
   
 ##### <a name="to-add-breakpoints"></a>Pour ajouter des points d'arrêt  
   
-1.  Ouvrez Greetings.xaml.vb ou Greetings.xaml.cs, puis sélectionnez la ligne suivante : `MessageBox.Show("Hello.")`  
+1. Ouvrez Greetings.xaml.vb ou Greetings.xaml.cs, puis sélectionnez la ligne suivante : `MessageBox.Show("Hello.")`  
   
-2.  Ajoutez un point d'arrêt à partir du menu en sélectionnant **Déboguer**, puis **Basculer le point d'arrêt**.  
+2. Ajoutez un point d'arrêt à partir du menu en sélectionnant **Déboguer**, puis **Basculer le point d'arrêt**.  
   
      ![Commande Basculer le point d’arrêt du menu Débogage](../ide/media/exploreide-togglebreakpoint.png "ExploreIDE-ToggleBreakpoint")  
   
      Un cercle rouge apparaît à côté de la ligne de code dans la bordure gauche de la fenêtre de l’éditeur.  
   
-3.  Sélectionnez la ligne suivante : `MessageBox.Show("Goodbye.")`.  
+3. Sélectionnez la ligne suivante : `MessageBox.Show("Goodbye.")`.  
   
-4.  Appuyez sur la touche F9 pour ajouter un point d'arrêt, puis sur la touche F5 pour démarrer le débogage.  
+4. Appuyez sur la touche F9 pour ajouter un point d'arrêt, puis sur la touche F5 pour démarrer le débogage.  
   
-5.  Dans la fenêtre **Greetings** , choisissez la case d'option **Hello** , puis le bouton **Afficher** .  
+5. Dans la fenêtre **Greetings** , choisissez la case d'option **Hello** , puis le bouton **Afficher** .  
   
      La ligne `MessageBox.Show("Hello.")` est mise en surbrillance en jaune. Dans la partie inférieure de l'IDE, les fenêtres Automatique, Variables locales et Espion sont ancrées ensemble sur le côté gauche. Les fenêtres Pile des appels, Points d'arrêt, Commande, Immédiat et Sortie sont ancrées ensemble sur le côté droit.  
   
-6.  Dans la barre de menus, choisissez **Déboguer**, **Pas à pas sortant**.  
+6. Dans la barre de menus, choisissez **Déboguer**, **Pas à pas sortant**.  
   
      L'application reprend l'exécution et une boîte de message affiche le mot « Hello ».  
   
-7.  Choisissez le bouton **OK** dans la boîte de message pour la fermer.  
+7. Choisissez le bouton **OK** dans la boîte de message pour la fermer.  
   
-8.  Dans la fenêtre **Greetings** , choisissez la case d'option **Goodbye** , puis le bouton **Afficher** .  
+8. Dans la fenêtre **Greetings** , choisissez la case d'option **Goodbye** , puis le bouton **Afficher** .  
   
      La ligne `MessageBox.Show("Goodbye.")` est mise en surbrillance en jaune.  
   

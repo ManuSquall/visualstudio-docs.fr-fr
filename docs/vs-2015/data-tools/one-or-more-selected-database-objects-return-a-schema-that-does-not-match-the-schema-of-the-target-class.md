@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: df23a6e2a4288c6370a339d37d151283fe3afa8f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 79e7b2a406338e5ecfacf41f9c0485a35c2d97d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655554"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043027"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>Un ou plusieurs des objets de base de données sélectionnés retournent un schéma qui ne correspond pas au schéma de la classe cible
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ Un ou plusieurs des objets de base de données sélectionnés retournent un sch�
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
-1.  Cliquez sur **OK** pour fermer la boîte de dialogue.  
+1. Cliquez sur **OK** pour fermer la boîte de dialogue.  
   
-2.  Sélectionnez un objet de base de données qui retourne des données correspondants au schéma de la classe cible (classe dans laquelle l’objet de base de données a été déposé dans le Concepteur O/R).  
+2. Sélectionnez un objet de base de données qui retourne des données correspondants au schéma de la classe cible (classe dans laquelle l’objet de base de données a été déposé dans le Concepteur O/R).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

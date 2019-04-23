@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2722286af0d4c95fec30593047bedf1fe0ba4d2d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dd0372ca3264bedd6fbb17ef3c8326471cb6e99f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951584"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037866"
 ---
 # <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810 : Initialisez les champs statiques de type référence en ligne
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ ms.locfileid: "58951584"
 
  Les vérifications des constructeurs statiques peuvent diminuer les performances. Un constructeur statique est souvent utilisé uniquement pour initialiser des champs statiques, auquel cas vous devez uniquement vous assurer que l’initialisation statique se produit avant le premier accès d’un champ statique. Le `beforefieldinit` comportement est approprié pour celles-ci et la plupart des autres types. Il est inadapté uniquement lors de l’initialisation statique affecte l’état global et une des opérations suivantes est remplie :
 
--   L’effet sur l’état global est coûteuse et n’est pas obligatoire si le type n’est pas utilisé.
+- L’effet sur l’état global est coûteuse et n’est pas obligatoire si le type n’est pas utilisé.
 
--   Les effets de l’état global sont accessibles sans accéder à tous les champs statiques du type.
+- Les effets de l’état global sont accessibles sans accéder à tous les champs statiques du type.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, initialisez toutes les données statiques lorsqu’elles sont déclarées et supprimez le constructeur statique.

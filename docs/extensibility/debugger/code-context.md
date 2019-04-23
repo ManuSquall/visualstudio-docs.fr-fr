@@ -10,25 +10,25 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 114537976561e72a9b1922c41d94ffa5e7ce613b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 9b02d5697260a9b212029ce1db4b7edb22de34c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714542"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038917"
 ---
 # <a name="code-context"></a>Contexte de code
 Dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] débogage, un **contexte de code**:
 
--   Fournit une abstraction d’une position dans le code comme connu du moteur de débogage (dé). Pour la plupart des architectures d’exécution dès aujourd'hui, un contexte de code peut être considéré comme une adresse dans le flux d’instructions d’un programme. Pour les langues non traditionnel, où code ne peut pas être représenté par des instructions, un contexte de code peut être représenté par d’autres moyens.
+- Fournit une abstraction d’une position dans le code comme connu du moteur de débogage (dé). Pour la plupart des architectures d’exécution dès aujourd'hui, un contexte de code peut être considéré comme une adresse dans le flux d’instructions d’un programme. Pour les langues non traditionnel, où code ne peut pas être représenté par des instructions, un contexte de code peut être représenté par d’autres moyens.
 
--   Décrit la position actuelle dans le flux d’exécution du programme que vous déboguez.
+- Décrit la position actuelle dans le flux d’exécution du programme que vous déboguez.
 
--   Existe uniquement lorsqu’un programme s’est arrêté à un point d’arrêt.
+- Existe uniquement lorsqu’un programme s’est arrêté à un point d’arrêt.
 
--   A un contexte de document associé.
+- A un contexte de document associé.
 
--   Est implémentée par un [IDebugCodeContext2](../../extensibility/debugger/reference/idebugcodecontext2.md) interface.
+- Est implémentée par un [IDebugCodeContext2](../../extensibility/debugger/reference/idebugcodecontext2.md) interface.
 
 ## <a name="see-also"></a>Voir aussi
 - [Contexte de document](../../extensibility/debugger/document-context.md)

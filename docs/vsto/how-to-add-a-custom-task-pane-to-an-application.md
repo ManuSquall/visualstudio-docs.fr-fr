@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b531fdbbd637d2d505d44ea27bcdfb5350ad36a6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 047728f00fae9dbf3cf2511300beaa84c2201cdd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616779"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039828"
 ---
 # <a name="how-to-add-a-custom-task-pane-to-an-application"></a>Procédure : Ajouter un volet Office personnalisé à une application
   Vous pouvez ajouter un volet des tâches personnalisé aux applications répertoriées ci-dessus à l’aide du complément VSTO. Pour plus d’informations, consultez [volets de tâches personnalisés](../vsto/custom-task-panes.md).
@@ -32,30 +32,30 @@ ms.locfileid: "56616779"
 
 ### <a name="to-add-a-custom-task-pane-to-an-application"></a>Pour ajouter un volet des tâches personnalisé à une application
 
-1.  Ouvrez ou créez un projet de complément VSTO pour l’une des applications répertoriées ci-dessus. Pour plus d'informations, voir [Procédure : Créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Ouvrez ou créez un projet de complément VSTO pour l'une des applications répertoriées ci-dessus. Pour plus d'informations, voir [Procédure : Créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2.  Dans le menu **Projet** , cliquez sur **Ajouter un contrôle utilisateur**.
+2. Dans le menu **Projet** , cliquez sur **Ajouter un contrôle utilisateur**.
 
-3.  Dans le **ajouter un nouvel élément** boîte de dialogue, changez le nom du nouveau contrôle utilisateur à **MyUserControl**, puis cliquez sur **ajouter**.
+3. Dans le **ajouter un nouvel élément** boîte de dialogue, changez le nom du nouveau contrôle utilisateur à **MyUserControl**, puis cliquez sur **ajouter**.
 
      Le contrôle utilisateur s'ouvre dans le concepteur.
 
-4.  Ajouter un ou plusieurs contrôles Windows Forms à partir de la **boîte à outils** au contrôle utilisateur.
+4. Ajouter un ou plusieurs contrôles Windows Forms à partir de la **boîte à outils** au contrôle utilisateur.
 
-5.  Ouvrez le **ThisAddIn.cs** ou **ThisAddIn.vb** fichier de code.
+5. Ouvrez le **ThisAddIn.cs** ou **ThisAddIn.vb** fichier de code.
 
-6.  Ajoutez le code suivant à la classe `ThisAddIn` . Ce code déclare des instances de `MyUserControl` et <xref:Microsoft.Office.Tools.CustomTaskPane> en tant que membres de la classe `ThisAddIn` .
+6. Ajoutez le code suivant à la classe `ThisAddIn` . Ce code déclare des instances de `MyUserControl` et <xref:Microsoft.Office.Tools.CustomTaskPane> en tant que membres de la classe `ThisAddIn` .
 
      [!code-vb[Trin_TaskPaneBasic#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb#1)]
      [!code-csharp[Trin_TaskPaneBasic#1](../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs#1)]
 
-7.  Ajoutez le code ci-après au gestionnaire d'événements `ThisAddIn_Startup`. Ce code crée <xref:Microsoft.Office.Tools.CustomTaskPane> en ajoutant l'objet `MyUserControl` à la collection `CustomTaskPanes` . Le code affiche également le volet des tâches.
+7. Ajoutez le code ci-après au gestionnaire d'événements `ThisAddIn_Startup`. Ce code crée <xref:Microsoft.Office.Tools.CustomTaskPane> en ajoutant l'objet `MyUserControl` à la collection `CustomTaskPanes` . Le code affiche également le volet des tâches.
 
      [!code-vb[Trin_TaskPaneBasic#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb#2)]
      [!code-csharp[Trin_TaskPaneBasic#2](../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs#2)]
 
     > [!NOTE]
-    >  Ce code associe votre volet des tâches personnalisé à la fenêtre active de l’application. Pour certaines applications, vous pouvez modifier ce code afin de vous assurer que le volet des tâches s’affiche avec les autres documents ou éléments de l’application. Pour plus d’informations, consultez [volets de tâches personnalisés](../vsto/custom-task-panes.md).
+    >  Ce code associe votre volet des tâches personnalisé à la fenêtre active de l'application. Pour certaines applications, vous pouvez modifier ce code afin de vous assurer que le volet des tâches s'affiche avec les autres documents ou éléments de l'application. Pour plus d’informations, consultez [volets de tâches personnalisés](../vsto/custom-task-panes.md).
 
 ## <a name="see-also"></a>Voir aussi
 - [Personnalisation de l’interface utilisateur Office](../vsto/office-ui-customization.md)

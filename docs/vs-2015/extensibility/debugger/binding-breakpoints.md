@@ -10,12 +10,12 @@ ms.assetid: 70737387-c52f-4dae-8865-77d4b203bf25
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b94960130ef0b384a7e3a946dcbd2a4e4794252f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fc7f68093432c96d496921ea593b6e936bad8302
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953098"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039703"
 ---
 # <a name="binding-breakpoints"></a>Liaison de points d’arrêt
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,15 +25,15 @@ Si l’utilisateur définit un point d’arrêt, peut-être en appuyant sur F9, 
 ## <a name="setting-a-breakpoint"></a>Définition d'un point d'arrêt  
  Définir un point d’arrêt d’est un processus en deux étapes, car le code ou les données affectées par le point d’arrêt encore peut-être pas disponibles. Tout d’abord, le point d’arrêt doit être décrit, et ensuite, comme le code ou données devient disponibles, il doit être lié à ce code ou de données, comme suit :  
   
-1.  Le point d’arrêt est demandé par les moteurs de débogage pertinentes (DEs), et ensuite le point d’arrêt est lié au code ou des données qu’il est disponible.  
+1. Le point d’arrêt est demandé par les moteurs de débogage pertinentes (DEs), et ensuite le point d’arrêt est lié au code ou des données qu’il est disponible.  
   
-2.  La demande de point d’arrêt est envoyée à la session de débogage, ce qui les envoie à tous les DEs pertinentes. N’importe quel DE qui choisit de gérer le point d’arrêt crée un correspondant en attente de point d’arrêt.  
+2. La demande de point d’arrêt est envoyée à la session de débogage, ce qui les envoie à tous les DEs pertinentes. N’importe quel DE qui choisit de gérer le point d’arrêt crée un correspondant en attente de point d’arrêt.  
   
-3.  La session de débogage collecte les points d’arrêt en attente et les envoie vers le package de débogage (le composant de débogage de Visual Studio).  
+3. La session de débogage collecte les points d’arrêt en attente et les envoie vers le package de débogage (le composant de débogage de Visual Studio).  
   
-4.  Le package de débogage vous invite à la session de débogage pour lier le point d’arrêt en attente à du code ou des données. La session de débogage envoie cette demande à tous les DEs pertinentes.  
+4. Le package de débogage vous invite à la session de débogage pour lier le point d’arrêt en attente à du code ou des données. La session de débogage envoie cette demande à tous les DEs pertinentes.  
   
-5.  Si le D’est en mesure de lier le point d’arrêt, il envoie qu'un point d’arrêt lié un événement à la session de débogage. Si ce n’est pas le cas, il envoie un événement d’erreur de point d’arrêt à la place.  
+5. Si le D’est en mesure de lier le point d’arrêt, il envoie qu'un point d’arrêt lié un événement à la session de débogage. Si ce n’est pas le cas, il envoie un événement d’erreur de point d’arrêt à la place.  
   
 ## <a name="pending-breakpoints"></a>Points d’arrêt en attente  
  Un point d’arrêt en attente peut lier à plusieurs emplacements de code. Par exemple, une ligne de code source pour un modèle C++ peut lier à chaque séquence de code généré à partir du modèle. La session de débogage peut utiliser un événement lié du point d’arrêt pour énumérer les contextes de code liés à un point d’arrêt au moment de que l’événement a été envoyé. Plusieurs contextes de code peuvent être liés ultérieurement, donc le DE peut envoyer que plusieurs point d’arrêt lié des événements pour chaque demande de liaison. Toutefois, un DE doit envoyer uniquement un événement d’erreur de point d’arrêt par demande de liaison.  
