@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dfbaf72f39bd4a61458abc1e2f75572e210c6cfe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4a06ad526cd16335a664ae833f61cb0052a215fc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951627"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054937"
 ---
 # <a name="customizing-copy-behavior"></a>Personnalisation du comportement de la commande copier
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -217,7 +217,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
  **Laisser l’utilisateur glisser -déplacer des éléments.**  
  Voir [Guide pratique pour Ajouter un gestionnaire glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md).  
   
-##  <a name="customizeLinks"></a> Personnalisation du comportement de copie de lien  
+## <a name="customizeLinks"></a> Personnalisation du comportement de copie de lien  
  Quand l'utilisateur copie un élément, le comportement standard est que tout élément incorporé est également copié. Vous pouvez modifier le comportement de copie standard. Dans la définition DSL, sélectionnez un rôle au côté « un » d’une relation et dans la fenêtre Propriétés, définissez la **propage la copie** valeur.  
   
  ![Propage la propriété de copie du rôle de domaine](../modeling/media/dslpropagatescopy.png "DslPropagatesCopy")  
@@ -291,9 +291,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
   
  Définissez deux méthodes dans votre classe ElementOperations :  
   
--   `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)`, qui détermine si l'élément source peut être déplacé sur le diagramme, le connecteur ou la forme cible.  
+- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)`, qui détermine si l'élément source peut être déplacé sur le diagramme, le connecteur ou la forme cible.  
   
--   `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)`, qui combine l'élément source dans la cible.  
+- `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)`, qui combine l'élément source dans la cible.  
   
 ### <a name="canmerge"></a>CanMerge()  
  `CanMerge()` est appelée pour déterminer le retour qui doit être fourni à l'utilisateur quand la souris se déplace sur le diagramme. Les paramètres de la méthode sont l'élément sur lequel la souris est placée et les données concernant la source à partir de laquelle l'opération de déplacement a été effectuée. L'utilisateur peut faire glisser un élément à partir de n'importe quel emplacement à l'écran. Ainsi, l'objet source peut être de nombreux types différents et peut être sérialisé dans différents formats. Si la source est un modèle DSL ou UML, le paramètre de données et la sérialisation d'un <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Les opérations de glissement, de copie et de boîte à outils utilise des ElementGroupPrototypes pour représenter des fragments de modèles.  

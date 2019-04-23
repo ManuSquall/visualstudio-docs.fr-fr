@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: e0e4c47ebeece4720a80b50a4f95921e204dbca6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba4b166cc409dd2c50c258a9b82ee34c22e9b084
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949552"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054766"
 ---
 # <a name="managing-the-toolbox"></a>Managing the Toolbox
 Le [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] permet à un VSPackage, tel qu’un éditeur ou un concepteur, de gérer l’appartenance et l’apparence de la **boîte à outils**.  
@@ -27,9 +27,9 @@ Le [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] permet à un VSPackage, tel qu
   
  Cette prise en charge est limitée aux éditeurs et concepteurs nécessitant ce qui suit :  
   
-1.  L’implémentation d’un objet usine pour fournir des instances de l’éditeur ou du concepteur. Pour plus d’informations sur l’implémentation d’un objet usine pour un concepteur ou un éditeur, consultez [Editor Factories](../extensibility/editor-factories.md).  
+1. L’implémentation d’un objet usine pour fournir des instances de l’éditeur ou du concepteur. Pour plus d’informations sur l’implémentation d’un objet usine pour un concepteur ou un éditeur, consultez [Editor Factories](../extensibility/editor-factories.md).  
   
-2.  Inscription de l’onglet de boîte à outils qui est activé automatiquement si l’éditeur ou le concepteur est ouvert.  
+2. Inscription de l’onglet de boîte à outils qui est activé automatiquement si l’éditeur ou le concepteur est ouvert.  
   
 ## <a name="controlling-the-toolbox"></a>Contrôle de la boîte à outils  
  En complément de la prise en charge de l’automatisation, le [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] fournit les interfaces suivantes qui permettent aux VSPackages un plus grand contrôle sur la gestion de la **boîte à outils** .  

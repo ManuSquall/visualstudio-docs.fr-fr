@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 348ddd00d6f6db0ac4080030d2ecaa5b73c57f18
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f14924ac9464cc6239564f775a122551a9d94c15
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335192"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055195"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>Élément AppliesTo (modèles Visual Studio)
 
@@ -60,19 +60,19 @@ Une valeur texte est requise. Ce texte spécifie les fonctionnalités du projet.
 
 La syntaxe d'expression valide est définie comme suit :
 
--   L’expression de fonctionnalité, tel que « (VisualC &#124; CSharp) + (MSTest &#124; NUnit) ».
+- L’expression de fonctionnalité, tel que « (VisualC &#124; CSharp) + (MSTest &#124; NUnit) ».
 
--   Le «&#124;» est l’opérateur OR.
+- Le «&#124;» est l’opérateur OR.
 
--   Les caractères « & » et « + » sont tous les deux des opérateurs AND.
+- Le « & » et « + » caractères sont les deux opérateurs AND.
 
--   Le caractère « ! » est l'opérateur NOT.
+- Le caractère « ! » est l'opérateur NOT.
 
--   Les parenthèses forcent l'ordre de priorité de l'évaluation.
+- Les parenthèses forcent l'ordre de priorité de l'évaluation.
 
--   Une expression null ou vide est évaluée comme une correspondance.
+- Une expression null ou vide est évaluée comme une correspondance.
 
--   Fonctionnalités de projet peuvent être n’importe quel caractère à l’exception des caractères réservés suivants : « ''  :;,+-*/\\! ~&#124;& %$@^() ={}[] <> ? \t\b\n\r
+- Fonctionnalités de projet peuvent être n’importe quel caractère à l’exception des caractères réservés suivants : « ''  :;,+-*/\\! ~&#124;& %$@^() ={}[] <> ? \t\b\n\r
 
 ## <a name="example"></a>Exemple
 
