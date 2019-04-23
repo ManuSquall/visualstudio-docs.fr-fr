@@ -1,5 +1,5 @@
 ---
-title: Extraire l’Interface (refactorisation C#) | Microsoft Docs
+title: Extraire l’Interface (refactorisation c#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e59864cabf638f4525165ed4f31c42fff748bf26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 55b24facd3a9ec935277a42c211a64d824ed6d7f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949857"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116743"
 ---
 # <a name="extract-interface-refactoring-c"></a>Refactorisation d'extraction d'interface (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Extraire l’Interface est une opération de refactorisation qui offre un moyen 
   
 ### <a name="to-use-extract-interface"></a>Pour utiliser extraire l’Interface  
   
-1.  Créez une application console nommée `ExtractInterface`, puis remplacez `Program` par le code suivant  
+1. Créez une application console nommée `ExtractInterface`, puis remplacez `Program` par le code suivant  
   
     ```csharp  
     // Invoke Extract Interface on ProtoA.  
@@ -45,7 +45,7 @@ Extraire l’Interface est une opération de refactorisation qui offre un moyen 
     }  
     ```  
   
-2.  Avec le curseur positionné dans `MethodB`, puis cliquez sur **extraire l’Interface** sur le **refactoriser** menu.  
+2. Avec le curseur positionné dans `MethodB`, puis cliquez sur **extraire l’Interface** sur le **refactoriser** menu.  
   
      Le **extraire l’Interface** boîte de dialogue s’affiche.  
   
@@ -53,9 +53,9 @@ Extraire l’Interface est une opération de refactorisation qui offre un moyen 
   
      Vous pouvez également cliquer sur la souris, pointez sur **refactoriser**, puis cliquez sur **extraire l’Interface** pour afficher le **extraire l’Interface** boîte de dialogue.  
   
-3.  Cliquez sur **sélectionner tout**.  
+3. Cliquez sur **sélectionner tout**.  
   
-4.  Cliquez sur **OK**.  
+4. Cliquez sur **OK**.  
   
      Vous voyez le nouveau fichier, IProtoA.cs et le code suivant :  
   

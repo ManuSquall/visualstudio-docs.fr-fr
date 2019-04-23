@@ -12,12 +12,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 709643cf082e8018153459845bba55fa133d1332
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: aba17e94486ca04e12055c7bf9959f927440c53d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656252"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089371"
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Comment : utiliser des caractères XML réservés dans les fichiers projet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Lorsque vous créez des fichiers projet, vous devrez peut-être utiliser des car
   
 #### <a name="to-use-double-quotes-in-a-project-file"></a>Pour utiliser des guillemets doubles dans un fichier projet  
   
--   Remplacez les guillemets doubles par l’entité nommée correspondante, &quot;. Par exemple, pour placer des guillemets doubles autour de la liste d’éléments `EXEFile`, tapez :  
+- Remplacez les guillemets doubles par l’entité nommée correspondante, &quot;. Par exemple, pour placer des guillemets doubles autour de la liste d’éléments `EXEFile`, tapez :  
   
     ```  
     <Message Text="The output file is "@(EXEFile)"."/>  

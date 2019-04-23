@@ -19,12 +19,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 948cbe88f39b0a39fc23ff8307c3e3484fb9438c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 73e2c3f2c9736fd762a9e763827ed641ea5069f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952050"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092121"
 ---
 # <a name="how-to-create-a-product-manifest"></a>Procédure : Créer un manifeste de produit
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,11 +37,11 @@ Pour déployer les composants requis pour votre application, vous pouvez créer 
   
 #### <a name="to-create-the-product-manifest"></a>Pour créer le manifeste de produit  
   
-1.  Créez un répertoire pour le package de programme d’amorçage. Cet exemple utilise C:\package.  
+1. Créez un répertoire pour le package de programme d’amorçage. Cet exemple utilise C:\package.  
   
-2.  Dans Visual Studio, créez un nouveau fichier XML appelé `product.xml`et l’enregistrer dans le dossier C:\package.  
+2. Dans Visual Studio, créez un nouveau fichier XML appelé `product.xml`et l’enregistrer dans le dossier C:\package.  
   
-3.  Ajoutez le code XML suivant pour décrire le code XML de l’espace de noms et de produit pour le package. Remplacez le code de produit par un identificateur unique pour le package.  
+3. Ajoutez le code XML suivant pour décrire le code XML de l’espace de noms et de produit pour le package. Remplacez le code de produit par un identificateur unique pour le package.  
   
     ```  
     <Product  
@@ -49,7 +49,7 @@ Pour déployer les composants requis pour votre application, vous pouvez créer 
     ProductCode="Custom.Bootstrapper.Package">  
     ```  
   
-4.  Ajoutez du code XML pour spécifier que le package a une dépendance. Cet exemple utilise une dépendance sur Microsoft Windows Installer 3.1.  
+4. Ajoutez du code XML pour spécifier que le package a une dépendance. Cet exemple utilise une dépendance sur Microsoft Windows Installer 3.1.  
   
     ```  
     <RelatedProducts>  
@@ -57,7 +57,7 @@ Pour déployer les composants requis pour votre application, vous pouvez créer 
       </RelatedProducts>  
     ```  
   
-5.  Ajoutez le code XML pour répertorier tous les fichiers qui se trouvent dans le package de programme d’amorçage. Cet exemple utilise le nom de fichier de package CorePackage.msi.  
+5. Ajoutez le code XML pour répertorier tous les fichiers qui se trouvent dans le package de programme d’amorçage. Cet exemple utilise le nom de fichier de package CorePackage.msi.  
   
     ```  
     <PackageFiles>  
@@ -65,16 +65,16 @@ Pour déployer les composants requis pour votre application, vous pouvez créer 
     </PackageFiles>  
     ```  
   
-6.  Copiez ou déplacez le fichier CorePackage.msi dans le dossier C:\package.  
+6. Copiez ou déplacez le fichier CorePackage.msi dans le dossier C:\package.  
   
-7.  Ajoutez du code XML pour installer le package à l’aide des commandes de programme d’amorçage. Le programme d’amorçage ajoute automatiquement le **/qn** indicateur au fichier .msi, qui va installer en mode silencieux. Si le fichier est un .exe, le programme d’amorçage exécute le fichier .exe à l’aide de l’interpréteur de commandes. Le code XML suivant ne montre aucun argument pour CorePackage.msi, mais vous pouvez placer l’argument de ligne de commande dans l’attribut Arguments.  
+7. Ajoutez du code XML pour installer le package à l’aide des commandes de programme d’amorçage. Le programme d’amorçage ajoute automatiquement le **/qn** indicateur au fichier .msi, qui va installer en mode silencieux. Si le fichier est un .exe, le programme d’amorçage exécute le fichier .exe à l’aide de l’interpréteur de commandes. Le code XML suivant ne montre aucun argument pour CorePackage.msi, mais vous pouvez placer l’argument de ligne de commande dans l’attribut Arguments.  
   
     ```  
     <Commands>  
         <Command PackageFile="CorePackage.msi" Arguments="">  
     ```  
   
-8.  Ajoutez le code XML suivant pour vérifier si ce package du programme d’amorçage est installé. Remplacez le code de produit par le GUID pour le composant redistribuable.  
+8. Ajoutez le code XML suivant pour vérifier si ce package du programme d’amorçage est installé. Remplacez le code de produit par le GUID pour le composant redistribuable.  
   
     ```  
     <InstallChecks>  

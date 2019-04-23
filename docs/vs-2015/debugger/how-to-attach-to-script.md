@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 76418913aa725a7858f292d625cb7584b62694e5
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: ab9388697b4f33b0c523a6239bda911e3ba47a52
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001516"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118251"
 ---
 # <a name="how-to-attach-to-script"></a>Procédure : attacher à un script
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,21 +37,21 @@ Cette rubrique explique comment attacher manuellement le débogueur Visual Studi
   
 2. Dans la boîte de dialogue **Attacher au processus**, recherchez le processus de script à attacher dans la liste **Processus disponibles**. Vous pouvez identifier les processus de script dans la colonne **Type**.  
   
-   1.  Si le processus que vous souhaitez déboguer est en cours d'exécution sur un autre ordinateur, sélectionnez d'abord l'ordinateur distant. Pour plus d'informations, voir [Procédure : sélectionner un ordinateur distant](http://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba).  
+   1. Si le processus que vous souhaitez déboguer est en cours d'exécution sur un autre ordinateur, sélectionnez d'abord l'ordinateur distant. Pour plus d'informations, voir [Procédure : sélectionner un ordinateur distant](http://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba).  
   
-   2.  Si le processus s’exécute sous un compte d’utilisateur différent, cochez la case **Afficher les processus de tous les utilisateurs** .  
+   2. Si le processus s’exécute sous un compte d’utilisateur différent, cochez la case **Afficher les processus de tous les utilisateurs** .  
   
-   3.  Si vous êtes connecté via une **Connexion Bureau à distance**, cochez la case **Afficher les processus de toutes les sessions**.  
+   3. Si vous êtes connecté via une **Connexion Bureau à distance**, cochez la case **Afficher les processus de toutes les sessions**.  
   
 3. Cliquez sur le processus que vous voulez attacher.  
   
 4. Dans le **attacher à** zone, vous devez voir **code de Script** ou **automatique : Code de script**. Si un élément différent est affiché, suivez ces étapes :  
   
-   1.  Cliquez sur **Sélectionner**.  
+   1. Cliquez sur **Sélectionner**.  
   
-   2.  Dans la boîte de dialogue **Sélectionner le type de code**, sélectionnez **Script** sous **Déboguer ces types de codes**.  
+   2. Dans la boîte de dialogue **Sélectionner le type de code**, sélectionnez **Script** sous **Déboguer ces types de codes**.  
   
-   3.  Cliquez sur **OK**.  
+   3. Cliquez sur **OK**.  
   
 5. Cliquez sur **Attacher**.  
   

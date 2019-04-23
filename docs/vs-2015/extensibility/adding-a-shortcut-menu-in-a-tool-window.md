@@ -13,12 +13,12 @@ ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5587c559615bcf6ae17a445490951c32741086c3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 604e5792c17e1458faccfd6518ab8cd5e7e303f2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953284"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093733"
 ---
 # <a name="adding-a-shortcut-menu-in-a-tool-window"></a>Ajout d’un menu contextuel dans une fenêtre d’outil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,12 +36,12 @@ Cette procédure pas à pas place un menu contextuel dans une fenêtre outil. Un
   
 ## <a name="creating-the-tool-window-shortcut-menu-package"></a>Création du Package de Menu de raccourci de fenêtre outil  
   
-1.  Créez un projet VSIX nommé `TWShortcutMenu` et ajoutez un modèle de fenêtre outil nommé **menu de raccourcis** à celui-ci. Pour plus d’informations sur la création d’une fenêtre outil, consultez [création d’une Extension avec une fenêtre outil](../extensibility/creating-an-extension-with-a-tool-window.md).  
+1. Créez un projet VSIX nommé `TWShortcutMenu` et ajoutez un modèle de fenêtre outil nommé **menu de raccourcis** à celui-ci. Pour plus d’informations sur la création d’une fenêtre outil, consultez [création d’une Extension avec une fenêtre outil](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
 ## <a name="specifying-the-shortcut-menu"></a>En spécifiant le Menu contextuel  
  Un menu contextuel comme celle illustrée dans cette procédure pas à pas permet à l’utilisateur sélectionner dans une liste de couleurs qui sont utilisées pour remplir l’arrière-plan de la fenêtre outil.  
   
-1.  Dans ShortcutMenuPackage.vsct, recherchez dans l’élément GuidSymbol nommé guidShortcutMenuPackageCmdSet et déclarez le menu contextuel, groupe de menus contextuels et les options de menu. L’élément GuidSymbol doit maintenant ressembler à ceci :  
+1. Dans ShortcutMenuPackage.vsct, recherchez dans l’élément GuidSymbol nommé guidShortcutMenuPackageCmdSet et déclarez le menu contextuel, groupe de menus contextuels et les options de menu. L’élément GuidSymbol doit maintenant ressembler à ceci :  
   
     ```xml  
     <GuidSymbol name="guidShortcutMenuPackageCmdSet" value="{00000000-0000-0000-0000-0000}"> // your GUID here  
@@ -54,7 +54,7 @@ Cette procédure pas à pas place un menu contextuel dans une fenêtre outil. Un
     </GuidSymbol>  
     ```  
   
-2.  Juste avant l’élément de boutons, créer un élément de Menus, puis définissez le menu contextuel qu’il contient.  
+2. Juste avant l’élément de boutons, créer un élément de Menus, puis définissez le menu contextuel qu’il contient.  
   
     ```vb  
     <Menus>  
@@ -69,7 +69,7 @@ Cette procédure pas à pas place un menu contextuel dans une fenêtre outil. Un
   
      Un menu contextuel n’a pas de parent, car il n’est pas partie d’un menu ou une barre d’outils.  
   
-3.  Créer un élément de groupes avec un élément de groupe qui contient les éléments de menu contextuel et associer le groupe avec le menu contextuel.  
+3. Créer un élément de groupes avec un élément de groupe qui contient les éléments de menu contextuel et associer le groupe avec le menu contextuel.  
   
     ```xml  
     <Groups>  
@@ -79,7 +79,7 @@ Cette procédure pas à pas place un menu contextuel dans une fenêtre outil. Un
     </Groups>  
     ```  
   
-4.  Dans l’élément de boutons, définissez les commandes individuelles qui apparaîtront dans le menu contextuel. L’élément de boutons doit ressembler à ceci :  
+4. Dans l’élément de boutons, définissez les commandes individuelles qui apparaîtront dans le menu contextuel. L’élément de boutons doit ressembler à ceci :  
   
     ```xml  
     <Buttons>  
@@ -114,7 +114,7 @@ Cette procédure pas à pas place un menu contextuel dans une fenêtre outil. Un
     </Buttons>  
     ```  
   
-5.  Dans ShortcutMenuPackageGuids.cs, ajoutez que les définitions de la commande définir le GUID, le menu contextuel et les éléments de menu.  
+5. Dans ShortcutMenuPackageGuids.cs, ajoutez que les définitions de la commande définir le GUID, le menu contextuel et les éléments de menu.  
   
     ```csharp  
     public const string guidShortcutMenuPackageCmdSet = "00000000-0000-0000-0000-00000000"; // your GUID will differ  
@@ -129,16 +129,16 @@ Cette procédure pas à pas place un menu contextuel dans une fenêtre outil. Un
 ## <a name="implementing-the-shortcut-menu"></a>Implémenter le Menu contextuel  
  Cette section met en œuvre le menu contextuel et ses commandes.  
   
-1.  Dans ShortcutMenu.cs, la fenêtre outil peut obtenir le service de commande de menu, mais le contrôle qu’il contient ne peut pas. Les étapes suivantes montrent comment rendre le service de commande de menu disponibles pour le contrôle utilisateur.  
+1. Dans ShortcutMenu.cs, la fenêtre outil peut obtenir le service de commande de menu, mais le contrôle qu’il contient ne peut pas. Les étapes suivantes montrent comment rendre le service de commande de menu disponibles pour le contrôle utilisateur.  
   
-2.  Dans ShortcutMenu.cs, ajoutez le code suivant à l’aide d’instructions :  
+2. Dans ShortcutMenu.cs, ajoutez le code suivant à l’aide d’instructions :  
   
     ```csharp  
     using Microsoft.VisualStudio.Shell;  
     using System.ComponentModel.Design;  
     ```  
   
-3.  Substituer la méthode Initialize() de la fenêtre outil pour obtenir le service de commande de menu et ajouter le contrôle, en passant le service de commande de menu pour le constructeur :  
+3. Substituer la méthode Initialize() de la fenêtre outil pour obtenir le service de commande de menu et ajouter le contrôle, en passant le service de commande de menu pour le constructeur :  
   
     ```csharp  
     protected override void Initialize()  
@@ -148,7 +148,7 @@ Cette procédure pas à pas place un menu contextuel dans une fenêtre outil. Un
     }  
     ```  
   
-4.  Dans le constructeur de fenêtre outil du menu de raccourcis, supprimez la ligne qui ajoute le contrôle. Le constructeur doit maintenant ressembler à ceci :  
+4. Dans le constructeur de fenêtre outil du menu de raccourcis, supprimez la ligne qui ajoute le contrôle. Le constructeur doit maintenant ressembler à ceci :  
   
     ```csharp  
     public ShortcutMenu() : base(null)  
@@ -159,7 +159,7 @@ Cette procédure pas à pas place un menu contextuel dans une fenêtre outil. Un
     }  
     ```  
   
-5.  Dans ShortcutMenuControl.xaml.cs, ajoutez un champ privé pour le service de commande de menu et modifiez le constructeur du contrôle pour tirer le service de commande de menu. Puis utilisez le service de commande de menu pour ajouter les commandes de menu contextuel. Le constructeur ShortcutMenuControl doit maintenant ressembler à ce qui suit. Le Gestionnaire de commandes est défini ultérieurement.  
+5. Dans ShortcutMenuControl.xaml.cs, ajoutez un champ privé pour le service de commande de menu et modifiez le constructeur du contrôle pour tirer le service de commande de menu. Puis utilisez le service de commande de menu pour ajouter les commandes de menu contextuel. Le constructeur ShortcutMenuControl doit maintenant ressembler à ce qui suit. Le Gestionnaire de commandes est défini ultérieurement.  
   
     ```csharp  
     public ShortcutMenuControl(OleMenuCommandService service)  
@@ -185,7 +185,7 @@ Cette procédure pas à pas place un menu contextuel dans une fenêtre outil. Un
     }  
     ```  
   
-6.  Dans ShortcutMenuControl.xaml, ajoutez un <xref:System.Windows.UIElement.MouseRightButtonDown> événements au niveau supérieur <xref:System.Windows.Controls.UserControl> élément. Le fichier XAML doit maintenant ressembler à ceci :  
+6. Dans ShortcutMenuControl.xaml, ajoutez un <xref:System.Windows.UIElement.MouseRightButtonDown> événements au niveau supérieur <xref:System.Windows.Controls.UserControl> élément. Le fichier XAML doit maintenant ressembler à ceci :  
   
     ```vb  
     <UserControl x:Class="TWShortcutMenu.ShortcutMenuControl"  
@@ -207,7 +207,7 @@ Cette procédure pas à pas place un menu contextuel dans une fenêtre outil. Un
     </UserControl>  
     ```  
   
-7.  Dans ShortcutMenuControl.xaml.cs, ajoutez un stub pour le Gestionnaire d’événements.  
+7. Dans ShortcutMenuControl.xaml.cs, ajoutez un stub pour le Gestionnaire d’événements.  
   
     ```csharp  
     private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)  
@@ -216,7 +216,7 @@ Cette procédure pas à pas place un menu contextuel dans une fenêtre outil. Un
     }  
     ```  
   
-8.  Ajoutez le code suivant à l’aide des instructions dans le même fichier :  
+8. Ajoutez le code suivant à l’aide des instructions dans le même fichier :  
   
     ```csharp  
     using Microsoft.VisualStudio.Shell;  
@@ -270,13 +270,13 @@ Cette procédure pas à pas place un menu contextuel dans une fenêtre outil. Un
   
 ## <a name="testing-the-tool-window-features"></a>Tester les fonctionnalités de la fenêtre outil  
   
-1.  Générez le projet et commencez le débogage. L’instance expérimentale s’affiche.  
+1. Générez le projet et commencez le débogage. L’instance expérimentale s’affiche.  
   
-2.  Dans l’instance expérimentale, cliquez sur **vue / autres Windows**, puis cliquez sur **menu de raccourcis**. Cette opération doit s’afficher la fenêtre outil.  
+2. Dans l’instance expérimentale, cliquez sur **vue / autres Windows**, puis cliquez sur **menu de raccourcis**. Cette opération doit s’afficher la fenêtre outil.  
   
-3.  Avec le bouton droit dans le corps de la fenêtre outil. Un menu contextuel qui contient une liste de couleurs doit s’afficher.  
+3. Avec le bouton droit dans le corps de la fenêtre outil. Un menu contextuel qui contient une liste de couleurs doit s’afficher.  
   
-4.  Cliquez sur une couleur dans le menu contextuel. La couleur d’arrière-plan de fenêtre outil doit être remplacée par la couleur sélectionnée.  
+4. Cliquez sur une couleur dans le menu contextuel. La couleur d’arrière-plan de fenêtre outil doit être remplacée par la couleur sélectionnée.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Commandes, Menus et barres d’outils](../extensibility/internals/commands-menus-and-toolbars.md)   

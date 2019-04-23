@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : création d’une application de bureau WPF connectée à un service mobile Azure | Microsoft Docs'
+title: 'Procédure pas à pas : Créer une Application de bureau WPF connectée à un Service Mobile Azure | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-designers
@@ -9,56 +9,56 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 21e8a2e56da1ab319cbd3f78c70d696a2388d2d3
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
-ms.translationtype: MTE95
+ms.openlocfilehash: a4d4d6a8399d3d40eaefe86ed9cbb3105729f08a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195071"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118017"
 ---
-# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Procédure pas à pas : création d’une application de bureau WPF connectée à un service mobile Azure
+# <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Procédure pas à pas : Créer une Application de bureau WPF connectée à un Service Mobile Azure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidement une application de bureau moderne qui utilise un service mobile Azure pour stocker et fournir des données.  
   
-##  <a name="Requirements"></a> Composants requis  
+## <a name="Requirements"></a> Composants requis  
  Les éléments suivants sont nécessaires pour effectuer cette procédure pas à pas :  
   
--   Visual Studio 2015 – toute version prenant en charge le développement WPF.  
+- Visual Studio 2015 – toute version prenant en charge le développement WPF.  
   
--   Un compte Microsoft Azure actif.  
+- Un compte Microsoft Azure actif.  
   
-    -   Vous pouvez créer un compte d’évaluation gratuit [ici](http://azure.microsoft.com/pricing/free-trial/).  
+    - Vous pouvez créer un compte d’évaluation gratuit [ici](http://azure.microsoft.com/pricing/free-trial/).  
   
-    -   Vous pouvez activer les [avantages pour les abonné MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F). Votre abonnement MSDN vous donne des crédits chaque mois utilisables pour les services Azure payants.  
+    - Vous pouvez activer les [avantages pour les abonné MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F). Votre abonnement MSDN vous donne des crédits chaque mois utilisables pour les services Azure payants.  
   
 ## <a name="create-a-project-and-add-references"></a>Créer un projet et ajouter des références  
  La première étape consiste à créer un projet WPF et ajouter un package NuGet permettant de se connecter à Azure Mobile Services.  
   
 #### <a name="to-create-the-project"></a>Pour créer le projet  
   
-1.  Dans la barre de menus, sélectionnez **Fichier**, **Nouveau**, **Projet**.  
+1. Dans la barre de menus, sélectionnez **Fichier**, **Nouveau**, **Projet**.  
   
-2.  Dans la boîte de dialogue **Nouveau projet** , développez le nœud **Visual C#** ou **Visual Basic** et choisissez le nœud **Windows** , puis développez le nœud **Windows** et choisissez le nœud **Bureau classique** .  
+2. Dans la boîte de dialogue **Nouveau projet** , développez le nœud **Visual C#** ou **Visual Basic** et choisissez le nœud **Windows** , puis développez le nœud **Windows** et choisissez le nœud **Bureau classique** .  
   
-3.  Dans la liste de modèles, choisissez le modèle **Application WPF** .  
+3. Dans la liste de modèles, choisissez le modèle **Application WPF** .  
   
-4.  Dans la boîte de dialogue **Nom** , entrez `WPFQuickStart`, puis choisissez le bouton **OK** .  
+4. Dans la boîte de dialogue **Nom** , entrez `WPFQuickStart`, puis choisissez le bouton **OK** .  
   
      Le projet est créé et les fichiers projet sont ajoutés à l’ **Explorateur de solutions**. Le concepteur pour la fenêtre d’application par défaut nommée **MainWindow.xaml** s’affiche.  
   
 #### <a name="to-add-a-reference-to-the-windows-azure-mobile-services-sdk"></a>Pour ajouter une référence au kit de développement logiciel (SDK) Microsoft Azure Mobile Services  
   
-1.  Dans l’ **Explorateur de solutions**, ouvrez le menu contextuel du nœud **Références** et choisissez **Gérer les packages NuGet**.  
+1. Dans l’ **Explorateur de solutions**, ouvrez le menu contextuel du nœud **Références** et choisissez **Gérer les packages NuGet**.  
   
-2.  Dans la boîte de dialogue **Gestionnaire de package NuGet**, choisissez le champ **Rechercher** et entrez `mobileservices`.  
+2. Dans la boîte de dialogue **Gestionnaire de package NuGet**, choisissez le champ **Rechercher** et entrez `mobileservices`.  
   
-3.  Dans le volet gauche, choisissez **WindowsAzure.MobileServices**, puis, dans le volet droit, choisissez le bouton **Installer** .  
+3. Dans le volet gauche, choisissez **WindowsAzure.MobileServices**, puis, dans le volet droit, choisissez le bouton **Installer** .  
   
     > [!NOTE]
     >  Si une boîte de dialogue **Aperçu** s’affiche, passez en revue les modifications proposées, puis choisissez le bouton **OK** .  
   
-4.  Dans la boîte de dialogue **Acceptation de la licence** , passez en revue les termes du contrat de licence, puis acceptez-les en choisissant le bouton **J’accepte** .  
+4. Dans la boîte de dialogue **Acceptation de la licence** , passez en revue les termes du contrat de licence, puis acceptez-les en choisissant le bouton **J’accepte** .  
   
      Les références nécessaires sont ajoutées à l’ **Explorateur de solutions**.  
   
@@ -70,17 +70,17 @@ Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidemen
   
 #### <a name="to-add-a-user-control"></a>Pour ajouter un contrôle utilisateur  
   
-1.  Dans l’ **Explorateur de solutions**, ouvrez le menu contextuel du nœud **WPFQuickStart** et choisissez **Ajouter**, **Nouveau projet**.  
+1. Dans l’ **Explorateur de solutions**, ouvrez le menu contextuel du nœud **WPFQuickStart** et choisissez **Ajouter**, **Nouveau projet**.  
   
-2.  Nommez le dossier `Common`.  
+2. Nommez le dossier `Common`.  
   
-3.  Ouvrez le menu contextuel du dossier **Common** et choisissez **Ajouter**, **Contrôle utilisateur**.  
+3. Ouvrez le menu contextuel du dossier **Common** et choisissez **Ajouter**, **Contrôle utilisateur**.  
   
-4.  Dans la boîte de dialogue **Ajouter un nouvel élément** , choisissez le champ Nom et entrez `QuickStartTask`, puis choisissez le bouton **Ajouter** .  
+4. Dans la boîte de dialogue **Ajouter un nouvel élément** , choisissez le champ Nom et entrez `QuickStartTask`, puis choisissez le bouton **Ajouter** .  
   
      Le contrôle utilisateur est ajouté au projet et le fichier **QuickStartTask.xaml** s’ouvre dans le concepteur.  
   
-5.  Dans le volet inférieur du concepteur, sélectionnez les balises `<Grid>` et `</Grid>` et remplacez-les par le code XAML suivant :  
+5. Dans le volet inférieur du concepteur, sélectionnez les balises `<Grid>` et `</Grid>` et remplacez-les par le code XAML suivant :  
   
     ```xaml  
     <Grid VerticalAlignment="Top">  
@@ -100,9 +100,9 @@ Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidemen
   
      ![Contrôle utilisateur QuickStartTask](../designers/media/wpfquickstart1.PNG "WPFQuickStart1")  
   
-6.  Dans l’ **Explorateur de solutions**, développez le nœud **QuickStartTask.xaml** et ouvrez le fichier **QuickStartTask.xaml.cs** ou **QuickStartTask.xaml.vb** .  
+6. Dans l’ **Explorateur de solutions**, développez le nœud **QuickStartTask.xaml** et ouvrez le fichier **QuickStartTask.xaml.cs** ou **QuickStartTask.xaml.vb** .  
   
-7.  Dans l’éditeur de code, remplacez l’espace de noms `namespace WPFQuickStart.Common` (C#) ou la méthode `Public Class QuickStartTask` (VB) par le code suivant :  
+7. Dans l’éditeur de code, remplacez l’espace de noms `namespace WPFQuickStart.Common` (C#) ou la méthode `Public Class QuickStartTask` (VB) par le code suivant :  
   
     ```csharp  
     namespace WPFQuickStart.Common  
@@ -200,27 +200,27 @@ Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidemen
   
      Ce code utilise les propriétés de dépendance pour définir les valeurs des champs number, title et description au moment de l’exécution.  
   
-8.  Dans la barre de menus, choisissez **Générer**, **Générer WPFQuickStart** pour générer le contrôle utilisateur.  
+8. Dans la barre de menus, choisissez **Générer**, **Générer WPFQuickStart** pour générer le contrôle utilisateur.  
   
 #### <a name="to-create-and-modify-the-main-window"></a>Pour créer et modifier la fenêtre principale  
   
-1.  Dans l’ **Explorateur de solutions**, ouvrez le fichier **MainWindow.xaml** .  
+1. Dans l’ **Explorateur de solutions**, ouvrez le fichier **MainWindow.xaml** .  
   
-2.  **Important**. Cette étape concerne uniquement C#. Si vous utilisez Visual Basic, passez à l’étape suivante. Dans le volet inférieur du concepteur, recherchez la ligne `xmlns:local=”clr-namespace:WPFQuickStart”` et remplacez-la par le code XAML suivant :  
+2. **Important**. Cette étape concerne uniquement C#. Si vous utilisez Visual Basic, passez à l’étape suivante. Dans le volet inférieur du concepteur, recherchez la ligne `xmlns:local=”clr-namespace:WPFQuickStart”` et remplacez-la par le code XAML suivant :  
   
     ```xaml  
     xmlns:local=”clr-namespace:WPFQuickStart.Common”  
     ```  
   
-3.  Dans la boîte de dialogue **Propriétés** , développez le nœud de catégorie **Common** et choisissez la propriété **Title** , puis entrez `WPF Todo List` et appuyez sur la touche **Entrée** .  
+3. Dans la boîte de dialogue **Propriétés** , développez le nœud de catégorie **Common** et choisissez la propriété **Title** , puis entrez `WPF Todo List` et appuyez sur la touche **Entrée** .  
   
      Notez que l’élément **Title** de la fenêtre XAML est remplacé par la nouvelle valeur. Vous pouvez modifier des propriétés XAML dans la fenêtre XAML ou la fenêtre **Propriétés** , les modifications sont synchronisées.  
   
-4.  Dans la fenêtre XAML, définissez la valeur de l’élément **Height** sur `768`et la valeur de la propriété **Width** sur `1280`.  
+4. Dans la fenêtre XAML, définissez la valeur de l’élément **Height** sur `768`et la valeur de la propriété **Width** sur `1280`.  
   
      Ces éléments correspondent aux propriétés **Height** et **Width** de la catégorie **Disposition** de la fenêtre **Propriétés** .  
   
-5.  Sélectionnez les balises `<Grid>` et `</Grid>` , et remplacez-les par le code XAML suivant :  
+5. Sélectionnez les balises `<Grid>` et `</Grid>` , et remplacez-les par le code XAML suivant :  
   
     ```xaml  
     <Grid>  
@@ -290,9 +290,9 @@ Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidemen
     > [!NOTE]
     >  Pendant l’application des procédures suivantes, vous pouvez observer des erreurs dans la **Liste d’erreurs** , si elle est ouverte. Ne vous inquiétez pas, ces erreurs disparaissent à la fin des procédures restantes.  
   
-6.  Dans l’ **Explorateur de solutions**, développez le nœud **MainWindow.xaml** et ouvrez le fichier **MainWindow.xaml.cs** ou **MainWindow.xaml.vb** .  
+6. Dans l’ **Explorateur de solutions**, développez le nœud **MainWindow.xaml** et ouvrez le fichier **MainWindow.xaml.cs** ou **MainWindow.xaml.vb** .  
   
-7.  Dans l’éditeur de code, ajoutez les directives `using` ou `Imports` suivantes en haut du fichier :  
+7. Dans l’éditeur de code, ajoutez les directives `using` ou `Imports` suivantes en haut du fichier :  
   
     ```csharp  
     using Microsoft.WindowsAzure.MobileServices;  
@@ -304,7 +304,7 @@ Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidemen
     Imports Newtonsoft.Json  
     ```  
   
-8.  Remplacez tout le code de l’espace de noms **WPFQuickStart** (C#) ou de la classe **MainWindow** (VB) par le code suivant :  
+8. Remplacez tout le code de l’espace de noms **WPFQuickStart** (C#) ou de la classe **MainWindow** (VB) par le code suivant :  
   
     ```csharp  
     namespace WPFQuickStart  
@@ -475,31 +475,31 @@ Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidemen
   
 #### <a name="to-create-a-mobile-service"></a>Pour créer un service mobile  
   
-1.  Ouvrez un navigateur web et connectez-vous à votre portail Microsoft Azure, puis choisissez l’onglet **Mobile Services** .  
+1. Ouvrez un navigateur web et connectez-vous à votre portail Microsoft Azure, puis choisissez l’onglet **Mobile Services** .  
   
-2.  Choisissez le bouton **Nouveau**, puis, dans la boîte de dialogue contextuelle, choisissez **Calculer**, **Service mobile, Créer**.  
+2. Choisissez le bouton **Nouveau**, puis, dans la boîte de dialogue contextuelle, choisissez **Calculer**, **Service mobile, Créer**.  
   
-3.  Dans la boîte de dialogue **Nouveau service mobile** , choisissez la zone de texte **URL** et entrez `wpfquickstart01`.  
+3. Dans la boîte de dialogue **Nouveau service mobile** , choisissez la zone de texte **URL** et entrez `wpfquickstart01`.  
   
     > [!NOTE]
     >  Vous devez peut-être modifier la partie numérique de l’URL. Microsoft Azure nécessite une URL unique pour chaque service mobile.  
   
      Cela définit l’URL du service `https://wpfquickstart01.azure-mobile.net/`.  
   
-4.  Dans la liste **Base de données** , choisissez une option de base de données. Comme il s’agit d’une application qui ne sera probablement pas beaucoup utilisée, choisissez l’option **Créer une base de données SQL gratuite de 20 Mo** , ou choisissez la base de données gratuite déjà associée à votre abonnement.  
+4. Dans la liste **Base de données** , choisissez une option de base de données. Comme il s’agit d’une application qui ne sera probablement pas beaucoup utilisée, choisissez l’option **Créer une base de données SQL gratuite de 20 Mo** , ou choisissez la base de données gratuite déjà associée à votre abonnement.  
   
-5.  Dans la liste **Région** , choisissez le centre de données dans lequel déployer le service mobile, puis choisissez le bouton **Suivant** (flèche droite).  
+5. Dans la liste **Région** , choisissez le centre de données dans lequel déployer le service mobile, puis choisissez le bouton **Suivant** (flèche droite).  
   
     > [!NOTE]
     >  Pour ce service, vous utilisez le paramètre par défaut **Principal** , **JavaScript**.  
   
-6.  Si vous créez une base de données, dans la page **Spécifier les paramètres de base de données** , dans la liste **Serveur** , choisissez **Nouveau serveur de base de données SQL**, entrez votre **Nom de connexion SQL** et votre **Mot de passe**, puis choisissez le bouton **Terminé** (coche).  
+6. Si vous créez une base de données, dans la page **Spécifier les paramètres de base de données** , dans la liste **Serveur** , choisissez **Nouveau serveur de base de données SQL**, entrez votre **Nom de connexion SQL** et votre **Mot de passe**, puis choisissez le bouton **Terminé** (coche).  
   
-7.  Si vous avez choisi une base de données existante, dans la page **Paramètres de base de données** , entrez votre **Mot de passe de connexion** , puis choisissez le bouton **Terminé** (coche).  
+7. Si vous avez choisi une base de données existante, dans la page **Paramètres de base de données** , entrez votre **Mot de passe de connexion** , puis choisissez le bouton **Terminé** (coche).  
   
      Le processus de création du service mobile démarre. Une fois le processus terminé, l’état passe à **Prêt** , et vous pouvez passer à l’étape suivante.  
   
-8.  Dans le portail, sélectionnez le service mobile nouvellement créé, puis choisissez le bouton **Gérer les clés** .  
+8. Dans le portail, sélectionnez le service mobile nouvellement créé, puis choisissez le bouton **Gérer les clés** .  
   
 9. Dans la boîte de dialogue **Gérer les clés d’accès** , copiez la **Clé d’application**.  
   
@@ -507,17 +507,17 @@ Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidemen
   
 #### <a name="to-create-a-table"></a>Pour créer une table  
   
-1.  Dans le portail Microsoft Azure, choisissez la flèche vers la droite à côté du nom de votre service mobile, et dans la barre de menus, choisissez **Données**, puis le lien **Ajouter une table** .  
+1. Dans le portail Microsoft Azure, choisissez la flèche vers la droite à côté du nom de votre service mobile, et dans la barre de menus, choisissez **Données**, puis le lien **Ajouter une table** .  
   
-2.  Dans la boîte de dialogue **Créer une table** , dans la zone de texte **Nom de la table** , entrez `TodoItem`, puis choisissez le bouton **Terminé** (coche).  
+2. Dans la boîte de dialogue **Créer une table** , dans la zone de texte **Nom de la table** , entrez `TodoItem`, puis choisissez le bouton **Terminé** (coche).  
   
      Attendez que la table soit créée et passez à la dernière procédure.  
   
 #### <a name="to-add-a-declaration-for-the-mobile-service"></a>Pour ajouter une déclaration pour le service mobile  
   
-1.  Retournez dans Visual Studio. Dans l’ **Explorateur de solutions**, développez le nœud **App.xaml** (C#) ou **Application.xaml** (Visual Basic) et ouvrez le fichier **App.xaml.cs** ou **App.xaml.vb** .  
+1. Retournez dans Visual Studio. Dans l’ **Explorateur de solutions**, développez le nœud **App.xaml** (C#) ou **Application.xaml** (Visual Basic) et ouvrez le fichier **App.xaml.cs** ou **App.xaml.vb** .  
   
-2.  Dans l’éditeur de code, ajoutez les directives `using` ou **Imports** suivantes en haut du fichier :  
+2. Dans l’éditeur de code, ajoutez les directives `using` ou **Imports** suivantes en haut du fichier :  
   
     ```csharp  
     using Microsoft.WindowsAzure.MobileServices;  
@@ -527,7 +527,7 @@ Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidemen
     Imports Microsoft.WindowsAzure.MobileServices  
     ```  
   
-3.  Ajoutez la déclaration suivante à la classe, en remplaçant *YOUR-SERVICE_HERE* par le nom de l’URL de votre service et *YOUR-KEY_HERE* par la clé d’application que vous avez copiée dans la procédure précédente :  
+3. Ajoutez la déclaration suivante à la classe, en remplaçant *YOUR-SERVICE_HERE* par le nom de l’URL de votre service et *YOUR-KEY_HERE* par la clé d’application que vous avez copiée dans la procédure précédente :  
   
     ```csharp  
     public static MobileServiceClient MobileService = new MobileServiceClient(  
@@ -547,17 +547,17 @@ Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidemen
   
 #### <a name="to-run-the-application"></a>Pour exécuter l’application  
   
-1.  Dans la barre de menus, choisissez **Déboguer**, **Démarrer le débogage** (ou appuyez sur F5).  
+1. Dans la barre de menus, choisissez **Déboguer**, **Démarrer le débogage** (ou appuyez sur F5).  
   
-2.  Dans la boîte de dialogue **Insert a TodoItem** , entrez `Do something`, puis choisissez le bouton **Enregistrer** .  
+2. Dans la boîte de dialogue **Insert a TodoItem** , entrez `Do something`, puis choisissez le bouton **Enregistrer** .  
   
-3.  Entrée `Do something else`, puis choisissez le bouton **Enregistrer** .  
+3. Entrée `Do something else`, puis choisissez le bouton **Enregistrer** .  
   
      Notez que les deux entrées sont ajoutées à la liste **Query and Update Data** , comme indiqué dans l’illustration suivante.  
   
      ![Les éléments TODO sont ajoutés à la liste.](../designers/media/wpfquickstart3.PNG "WPFQuickStart3")  
   
-4.  Cochez la case de l’entrée **Do something else** dans la liste.  
+4. Cochez la case de l’entrée **Do something else** dans la liste.  
   
      Cette action appelle la méthode **UpdateCheckedTodoItem** et supprime l’élément de la liste et de la base de données.  
   
@@ -569,5 +569,5 @@ Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidemen
  Vous pouvez vous connecter aux bases de données SQL ou à d’autres sources de données à l’aide d’Azure Mobile Services. Consultez la [Documentation sur Mobile Services](http://azure.microsoft.com/services/app-service/mobile/).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : ma première application de bureau WPF](../designers/walkthrough-my-first-wpf-desktop-application2.md)   
+ [Procédure pas à pas : Ma première Application de bureau WPF](../designers/walkthrough-my-first-wpf-desktop-application2.md)   
  [Créer des applications de bureau modernes à l’aide de Windows Presentation Foundation](../designers/create-modern-desktop-applications-with-windows-presentation-foundation.md)

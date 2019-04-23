@@ -41,12 +41,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e5d3017d293b8288df9b5d7bdbe09fe2e901fa58
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 65f3a3abfe7e49872c7131a247d74612200bf42a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865981"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091016"
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Projets Office dans l’environnement Visual Studio
   En termes de développement, les projets Microsoft Office offrent une expérience similaire à d'autres types de projets dans Visual Studio, tels que les projets Windows Forms. Lorsque vous créez ou ouvrez un projet Office, les éléments de projet s'affichent dans l' **Explorateur de solutions**. Pour les projets au niveau du document, le document (le document Word ou le classeur Excel) s'ouvre dans Visual Studio et se comporte comme un concepteur visuel.
@@ -73,7 +73,7 @@ ms.locfileid: "54865981"
 ### <a name="temporary-certificates"></a>Certificats temporaires
  Les projets Office incluent également un certificat temporaire nommé *nom_projet*_TemporaryKey.pfx. Ce certificat est utilisé pour signer les manifestes de déploiement et d'application du projet pendant le développement. Pour plus d’informations, consultez [accorder une confiance à des solutions Office](../vsto/granting-trust-to-office-solutions.md) et [solutions Office Secure](../vsto/securing-office-solutions.md).
 
-###  <a name="hiddenfiles"></a> Fichiers projet masqués
+### <a name="hiddenfiles"></a> Fichiers projet masqués
  Plusieurs fichiers projet sont masqués par défaut. Ces fichiers sont générés par Visual Studio et ils diffèrent par type de projet. Pour afficher les fichiers masqués, cliquez sur **Afficher tous les fichiers** dans l' **Explorateur de solutions**.
 
  Ne modifiez pas les fichiers projet masqués. La modification directe de ces fichiers n'est pas prise en charge et peut endommager votre projet. Les fichiers projet masqués sont régénérés à chaque fois que certaines modifications sont effectuées dans le document. Si vous apportez des modifications manuelles à un fichier projet masqué, ces modifications seront perdues lorsque le fichier sera régénéré.

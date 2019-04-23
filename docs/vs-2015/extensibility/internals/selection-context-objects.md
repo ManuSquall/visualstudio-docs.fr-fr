@@ -11,12 +11,12 @@ ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3824edb97306dd7730c8d57b955afeab6df816a1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7e1a43997d56f8d89f194fb83d20c1f160378873
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952821"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092186"
 ---
 # <a name="selection-context-objects"></a>Objets de contexte de sélection
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ Le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] l’environnement de dévelop
   
   La séquence suivante montre le cours typique de suivi de sélection.  
   
-1.  L’IDE récupère le contexte de sélection à partir de la fenêtre qui vient d’être ouverte et le place dans le contexte de la sélection globale. Si le contexte de sélection utilise HIERARCHY_DONTPROPAGATE ou SELCONTAINER_DONTPROPAGATE, ces informations ne sont pas propagées vers le contexte global. Pour plus d’informations, consultez [vos commentaires à l’utilisateur](../../extensibility/internals/feedback-to-the-user.md).  
+1. L’IDE récupère le contexte de sélection à partir de la fenêtre qui vient d’être ouverte et le place dans le contexte de la sélection globale. Si le contexte de sélection utilise HIERARCHY_DONTPROPAGATE ou SELCONTAINER_DONTPROPAGATE, ces informations ne sont pas propagées vers le contexte global. Pour plus d’informations, consultez [vos commentaires à l’utilisateur](../../extensibility/internals/feedback-to-the-user.md).  
   
-2.  Événements de notification sont diffusés à n’importe quel package Visual Studio qui les demande.  
+2. Événements de notification sont diffusés à n’importe quel package Visual Studio qui les demande.  
   
-3.  Le VSPackage agit sur les événements qu’il reçoit en effectuant des activités telles que la mise à jour d’une hiérarchie, la réactivation d’un outil ou autres tâches similaires.  
+3. Le VSPackage agit sur les événements qu’il reçoit en effectuant des activités telles que la mise à jour d’une hiérarchie, la réactivation d’un outil ou autres tâches similaires.  
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>   

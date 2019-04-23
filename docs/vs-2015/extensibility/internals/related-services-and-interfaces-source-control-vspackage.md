@@ -11,12 +11,12 @@ ms.assetid: 3e96e838-5675-46bb-99cf-40d420086038
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5497c74c75c9c5a97672152ab521e1ccf141b540
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0c5b040a8c5d0cbe2daff07f279cfd6a78cbd2b7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948921"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118108"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>Services et interfaces associés (VSPackage de contrôle de code source)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ Cette section répertorie toutes les interfaces associées à un VSPackage dans 
   
  Les interfaces sont :  
   
--   Obligatoire : L’entité appropriée (contrôle de code source VSPackage, Stub de contrôle de code Source, de projet) doit implémenter l’interface.  
+- Obligatoire : L’entité appropriée (contrôle de code source VSPackage, Stub de contrôle de code Source, de projet) doit implémenter l’interface.  
   
--   Recommandé : L’entité doit implémenter cette interface ; Sinon, les fonctionnalités de contrôle de code source peuvent être limitées.  
+- Recommandé : L’entité doit implémenter cette interface ; Sinon, les fonctionnalités de contrôle de code source peuvent être limitées.  
   
--   Facultatif : l’entité peut implémenter cette interface pour fournir un ensemble de fonctionnalités plus riches.  
+- Facultatif : l’entité peut implémenter cette interface pour fournir un ensemble de fonctionnalités plus riches.  
   
 |Interface|Objectif|Implémenté par|Implémenter ?|  
 |---------------|-------------|--------------------|----------------|  

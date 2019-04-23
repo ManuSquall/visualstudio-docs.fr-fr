@@ -23,12 +23,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7566d3a89ff27cc473b9352c7e0f02492dc736d1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0ea1e932f7651439dcb9a1ff85094bd30e5239bb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953412"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116149"
 ---
 # <a name="how-to-edit-a-register-value"></a>Procédure : Modifier une valeur de Registre
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ La fenêtre Registres est disponible uniquement si le débogage au niveau des ad
   
 ### <a name="to-change-the-value-of-a-register"></a>Pour modifier la valeur d'un Registre  
   
-1.  Dans la fenêtre **Registres**, utilisez la touche Tab ou la souris pour placer le point d’insertion sur la valeur à modifier. Quand vous commencez à taper, le curseur doit se trouver en face de la valeur à remplacer.  
+1. Dans la fenêtre **Registres**, utilisez la touche Tab ou la souris pour placer le point d’insertion sur la valeur à modifier. Quand vous commencez à taper, le curseur doit se trouver en face de la valeur à remplacer.  
   
-2.  Tapez la nouvelle valeur.  
+2. Tapez la nouvelle valeur.  
   
     > [!CAUTION]
     >  Modifier des valeurs de registres (principalement des registres EIP et EBP) peut affecter l'exécution du programme.  

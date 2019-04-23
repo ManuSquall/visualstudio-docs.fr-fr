@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50ca0b96ecee2c3537ce88c4468efee48c7cd732
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cd02491b42e9e6a5d677eca35ccde2aa559352c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940775"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096879"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Propagation de modifications en dehors du modèle par des gestionnaires d'événements
 
@@ -25,21 +25,21 @@ La surface graphique et autres contrôles d’interface utilisateur sont des exe
 
 ### <a name="to-define-a-store-event"></a>Pour définir un événement de magasin
 
-1.  Choisissez le type d’événement que vous souhaitez surveiller. Pour obtenir une liste complète, consultez les propriétés de <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Chaque propriété correspond à un type d’événement. Les plus fréquemment utilisés sont des types des événements :
+1. Choisissez le type d’événement que vous souhaitez surveiller. Pour obtenir une liste complète, consultez les propriétés de <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Chaque propriété correspond à un type d’événement. Les plus fréquemment utilisés sont des types des événements :
 
-    -   `ElementAdded` -déclenché lorsqu’un élément de modèle, lien de relation, forme ou un connecteur est créé.
+    - `ElementAdded` -déclenché lorsqu’un élément de modèle, lien de relation, forme ou un connecteur est créé.
 
-    -   ElementPropertyChanged - déclenchée lorsque la valeur d’un `Normal` de propriété de domaine est modifiée. L’événement est déclenché uniquement si les valeurs anciennes et nouvelles ne sont pas égales. L’événement ne peut pas être appliqué aux propriétés de stockage calculées et personnalisées.
+    - ElementPropertyChanged - déclenchée lorsque la valeur d’un `Normal` de propriété de domaine est modifiée. L’événement est déclenché uniquement si les valeurs anciennes et nouvelles ne sont pas égales. L’événement ne peut pas être appliqué aux propriétés de stockage calculées et personnalisées.
 
          Il ne peut pas être appliqué aux propriétés du rôle qui correspondent aux liens de relation. Au lieu de cela, utilisez `ElementAdded` pour surveiller la relation de domaine.
 
-    -   `ElementDeleted` -déclenché après un élément de modèle, relation, forme ou le lien a été supprimé. Vous pouvez toujours accéder les valeurs de propriété de l’élément, mais il n’aura pas de relations à d’autres éléments.
+    - `ElementDeleted` -déclenché après un élément de modèle, relation, forme ou le lien a été supprimé. Vous pouvez toujours accéder les valeurs de propriété de l’élément, mais il n’aura pas de relations à d’autres éléments.
 
-2.  Ajoutez une définition de classe partielle pour _Votre_solution_dsl_**DocData** dans un fichier de code séparé dans le **DslPackage** projet.
+2. Ajoutez une définition de classe partielle pour _Votre_solution_dsl_**DocData** dans un fichier de code séparé dans le **DslPackage** projet.
 
-3.  Écrivez le code de l’événement comme une méthode, comme dans l’exemple suivant. Il peut être `static`, sauf si vous souhaitez accéder à `DocData`.
+3. Écrivez le code de l’événement comme une méthode, comme dans l’exemple suivant. Il peut être `static`, sauf si vous souhaitez accéder à `DocData`.
 
-4.  Substituer `OnDocumentLoaded()` pour inscrire le gestionnaire. Si vous avez plusieurs gestionnaires, vous pouvez les inscrire dans le même emplacement.
+4. Substituer `OnDocumentLoaded()` pour inscrire le gestionnaire. Si vous avez plusieurs gestionnaires, vous pouvez les inscrire dans le même emplacement.
 
 L’emplacement du code d’inscription n’est pas critique. `DocView.LoadView()` est un autre emplacement.
 
@@ -160,11 +160,11 @@ private static void AlbumTitleAdjuster(object sender,
 
 Si vous écrivez un événement qui met à jour le magasin :
 
--   Utilisez `store.InUndoRedoOrRollback` pour éviter d’effectuer des modifications aux éléments de modèle d’annulation. Le Gestionnaire de transactions tous les éléments figurant dans le magasin à son état d’origine.
+- Utilisez `store.InUndoRedoOrRollback` pour éviter d’effectuer des modifications aux éléments de modèle d’annulation. Le Gestionnaire de transactions tous les éléments figurant dans le magasin à son état d’origine.
 
--   Utilisez `store.InSerializationTransaction` afin d’éviter d’apporter des modifications pendant que le modèle est chargé à partir du fichier.
+- Utilisez `store.InSerializationTransaction` afin d’éviter d’apporter des modifications pendant que le modèle est chargé à partir du fichier.
 
--   Vos modifications entraîne davantage d’événements à déclencher. Veillez à éviter une boucle infinie.
+- Vos modifications entraîne davantage d’événements à déclencher. Veillez à éviter une boucle infinie.
 
 ## <a name="store-event-types"></a>Types d’événements Store
 

@@ -13,12 +13,12 @@ ms.assetid: 4479ac61-18a9-4a30-b213-9921c5af9a26
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bdaae4fcf52beccabadfa8abd4800c2e96698c42
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 134b4e2d58b0581a14d387e8601cc0bdc57cb56b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950429"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089248"
 ---
 # <a name="idebugboundbreakpoint2getbreakpointresolution"></a>IDebugBoundBreakpoint2::GetBreakpointResolution
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -43,9 +43,9 @@ int GetBreakpointResolution( 
  `ppBPResolution`  
  [out] Retourne le [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) interface qui représente une des opérations suivantes :  
   
--   L’objet de résolution de point d’arrêt qui décrit l’emplacement dans le code où un point d’arrêt de code a été liée.  
+- L’objet de résolution de point d’arrêt qui décrit l’emplacement dans le code où un point d’arrêt de code a été liée.  
   
--   L’emplacement de données où un point d’arrêt est lié.  
+- L’emplacement de données où un point d’arrêt est lié.  
   
 ## <a name="return-value"></a>Valeur de retour  
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Retourne `E_BP_DELETED` si l’état de l’objet de point d’arrêt lié est défini sur `BPS_DELETED` (dans le cadre de la [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) énumération).  

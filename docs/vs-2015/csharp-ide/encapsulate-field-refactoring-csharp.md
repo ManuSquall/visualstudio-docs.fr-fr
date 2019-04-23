@@ -1,5 +1,5 @@
 ---
-title: Encapsuler le champ (refactorisation C#) | Microsoft Docs
+title: Encapsuler le champ (refactorisation c#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -16,12 +16,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ee56c4588bbbd3ec5cfca03bbd18c6dec1732fbf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a2c8d54b1625a4097d6b5a0acf6555d74fe83001
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948765"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116600"
 ---
 # <a name="encapsulate-field-refactoring-c"></a>Encapsuler le champ (Refactorisation C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Le **encapsuler le champ** opération de refactorisation vous permet de créer r
   
 ### <a name="to-create-a-property-from-a-field"></a>Pour créer une propriété à partir d'un champ  
   
-1.  Créez une application console nommée `EncapsulateFieldExample`, puis remplacez `Program` par l'exemple de code suivant.  
+1. Créez une application console nommée `EncapsulateFieldExample`, puis remplacez `Program` par l'exemple de code suivant.  
   
     ```csharp  
     class Square  
@@ -58,13 +58,13 @@ Le **encapsuler le champ** opération de refactorisation vous permet de créer r
     }  
     ```  
   
-2.  Dans le [éditeur de Code](../ide/writing-code-in-the-code-and-text-editor.md), placez le curseur dans la déclaration, sur le nom du champ que vous voulez encapsuler. Dans l'exemple ci-dessous, placez le curseur sur le mot `width` :  
+2. Dans le [éditeur de Code](../ide/writing-code-in-the-code-and-text-editor.md), placez le curseur dans la déclaration, sur le nom du champ que vous voulez encapsuler. Dans l'exemple ci-dessous, placez le curseur sur le mot `width` :  
   
     ```csharp  
     public int width, height;  
     ```  
   
-3.  Sur le **refactoriser** menu, cliquez sur **encapsuler le champ**.  
+3. Sur le **refactoriser** menu, cliquez sur **encapsuler le champ**.  
   
      Le **encapsuler le champ** boîte de dialogue s’affiche.  
   
@@ -72,11 +72,11 @@ Le **encapsuler le champ** opération de refactorisation vous permet de créer r
   
      Vous pouvez également cliquer sur le curseur, pointer vers **refactoriser**, puis cliquez sur **encapsuler le champ** pour afficher le **encapsuler le champ** boîte de dialogue.  
   
-4.  Spécifiez les paramètres.  
+4. Spécifiez les paramètres.  
   
-5.  Appuyez sur entrée ou cliquez sur le **OK** bouton.  
+5. Appuyez sur entrée ou cliquez sur le **OK** bouton.  
   
-6.  Si vous avez sélectionné le **aperçu des modifications de référence** option, puis le **aperçu des modifications de référence** fenêtre s’ouvre. Cliquez sur le **appliquer** bouton.  
+6. Si vous avez sélectionné le **aperçu des modifications de référence** option, puis le **aperçu des modifications de référence** fenêtre s’ouvre. Cliquez sur le **appliquer** bouton.  
   
      Le code d'accesseur `get` et `set` suivant est affiché dans votre fichier source :  
   

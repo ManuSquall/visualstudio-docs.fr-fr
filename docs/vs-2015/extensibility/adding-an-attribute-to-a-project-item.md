@@ -10,12 +10,12 @@ ms.assetid: 404a71d5-cce5-44e7-9eaf-d747c794fedb
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5b4ceb80a76843de8eb0fc42c7212e5fbecb330c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1740ac4dfdeb64d5b4b2b0aab264845de9c186dd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949467"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117614"
 ---
 # <a name="adding-an-attribute-to-a-project-item"></a>Ajout d’un attribut à un élément de projet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Les méthodes <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage
   
 #### <a name="to-add-an-attribute-to-a-project-item"></a>Pour ajouter un attribut à un élément de projet  
   
--   Le code suivant utilise la <xref:EnvDTE.DTE> objet automation et la <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> méthode pour ajouter un attribut à un élément de projet. L’ID d’élément de projet est obtenu à partir du nom d’élément projet « program.cs ». L’attribut « MyAttribute » est ajouté à cet élément de projet et la valeur « MyValue ».  
+- Le code suivant utilise la <xref:EnvDTE.DTE> objet automation et la <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> méthode pour ajouter un attribut à un élément de projet. L’ID d’élément de projet est obtenu à partir du nom d’élément projet « program.cs ». L’attribut « MyAttribute » est ajouté à cet élément de projet et la valeur « MyValue ».  
   
     ```  
     EnvDTE.DTE dte = (EnvDTE.DTE)Package.GetGlobalService(typeof(EnvDTE.DTE));  

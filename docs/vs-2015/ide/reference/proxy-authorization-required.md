@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b0c197a15962d12e101e0d3ab164d706375620d9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 74f8fdd738c613977a73cc3d79b5ba880c7e6e74
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648245"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116093"
 ---
 # <a name="proxy-authorization-required"></a>Autorisation du proxy requise
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -23,29 +23,29 @@ Cette erreur se produit généralement lorsque les utilisateurs sont connectés 
   
 ## <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
--   Redémarrez Visual Studio. Une boîte de dialogue d'authentification du proxy doit s'afficher. Entrez vos informations d'identification dedans.  
+- Redémarrez Visual Studio. Une boîte de dialogue d'authentification du proxy doit s'afficher. Entrez vos informations d'identification dedans.  
   
--   Si l'étape ci-dessus ne résout pas le problème, cela est peut-être dû au fait que votre serveur proxy ne demande pas d'informations d'identification pour les adresses http://go.microsoft.com, mais uniquement pour les adresses *. visualStudio.com. Pour ces serveurs, vous devez ajouter les éléments suivants à la liste verte pour débloquer tous les scénarios de connexion dans Visual Studio :  
+- Si l'étape ci-dessus ne résout pas le problème, cela est peut-être dû au fait que votre serveur proxy ne demande pas d'informations d'identification pour les adresses http://go.microsoft.com, mais uniquement pour les adresses *. visualStudio.com. Pour ces serveurs, vous devez ajouter les éléments suivants à la liste verte pour débloquer tous les scénarios de connexion dans Visual Studio :  
   
-    -   *.windows.net  
+    - *.windows.net  
   
-    -   *.microsoftonline.com  
+    - *.microsoftonline.com  
   
-    -   *.visualstudio.com  
+    - *.visualstudio.com  
   
-    -   *.microsoft.com  
+    - *.microsoft.com  
   
-    -   *.live.com  
+    - *.live.com  
   
--   Sinon, vous pouvez supprimer le http://go.microsoft.com à partir de la liste verte d’adresses afin que la boîte de dialogue de l’authentification de proxy s’affiche à la fois pour le http://go.microsoft.com adresse et les points de terminaison de serveur lors du redémarrage de Visual Studio.  
+- Sinon, vous pouvez supprimer le http://go.microsoft.com à partir de la liste verte d’adresses afin que la boîte de dialogue de l’authentification de proxy s’affiche à la fois pour le http://go.microsoft.com adresse et les points de terminaison de serveur lors du redémarrage de Visual Studio.  
   
--   OU  
+- OU  
   
--   Si vous voulez utiliser vos informations d'identification par défaut avec votre proxy, vous pouvez procéder comme suit :  
+- Si vous voulez utiliser vos informations d'identification par défaut avec votre proxy, vous pouvez procéder comme suit :  
   
-    1.  Recherchez devenv.exe.config (le fichier de configuration de devenv.exe) dans **%ProgramFiles%\Microsoft Visual Studio 14.0\Common7\IDE** (ou **%ProgramFiles(x86)%\Microsoft Visual Studio 14.0\Common7\IDE**).  
+    1. Recherchez devenv.exe.config (le fichier de configuration de devenv.exe) dans **%ProgramFiles%\Microsoft Visual Studio 14.0\Common7\IDE** (ou **%ProgramFiles(x86)%\Microsoft Visual Studio 14.0\Common7\IDE**).  
   
-    2.  Dans le fichier de configuration, recherchez le bloc `<system.net>` , puis et ajoutez le code suivant :  
+    2. Dans le fichier de configuration, recherchez le bloc `<system.net>` , puis et ajoutez le code suivant :  
   
         ```xml  
         <defaultProxy enabled="true" useDefaultCredentials="true">  
@@ -56,6 +56,6 @@ Cette erreur se produit généralement lorsque les utilisateurs sont connectés 
   
          Vous devez insérer l'adresse proxy correcte de votre réseau dans `proxyaddress="<http://<yourproxy:port#>`.  
   
--   OU  
+- OU  
   
--   Vous pouvez également suivre les instructions fournies dans [cette publication](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx) pour ajouter du code qui vous permettra d’utiliser le proxy.
+- Vous pouvez également suivre les instructions fournies dans [cette publication](http://blogs.msdn.com/b/rido/archive/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy.aspx) pour ajouter du code qui vous permettra d’utiliser le proxy.

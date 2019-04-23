@@ -8,12 +8,12 @@ ms.assetid: c730edb6-5099-4c16-85a8-08def09f1455
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 796d5f3f233310157b0784e213b81237e767055b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1da992ebdb5c3d4e0381cdc388dcf6ad5d2af66c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951682"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091146"
 ---
 # <a name="installing-the-visual-studio-sdk"></a>Installer le SDK Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,26 +26,26 @@ ms.locfileid: "58951682"
 > [!NOTE]
 >  Dans l’exécutable d’installation, le SDK Visual Studio est appelé **outils d’extensibilité Visual Studio**.  
   
-1.  Démarrez l’installation de Visual Studio 2015. Vous pouvez installer n’importe quelle édition de Visual Studio sauf Express.  
+1. Démarrez l’installation de Visual Studio 2015. Vous pouvez installer n’importe quelle édition de Visual Studio sauf Express.  
   
-2.  Dans le premier écran, sélectionnez **personnalisé**, et non **par défaut**. Cliquez sur **Suivant**.  
+2. Dans le premier écran, sélectionnez **personnalisé**, et non **par défaut**. Cliquez sur **Suivant**.  
   
-3.  Vous devez voir une arborescence de fonctionnalités personnalisées. Ouvrez **outils courants**. Vous devriez voir **outils d’extensibilité Visual Studio** .  
+3. Vous devez voir une arborescence de fonctionnalités personnalisées. Ouvrez **outils courants**. Vous devriez voir **outils d’extensibilité Visual Studio** .  
   
      ![VSSDKInstall](../extensibility/media/vssdkinstall.png "VSSDKInstall")  
   
-4.  Vérifiez **outils d’extensibilité Visual Studio** , puis cliquez sur **suivant** et poursuivre l’installation.  
+4. Vérifiez **outils d’extensibilité Visual Studio** , puis cliquez sur **suivant** et poursuivre l’installation.  
   
 ## <a name="installing-the-visual-studio-sdk-after-installing-visual-studio"></a>Installer le SDK Visual Studio après l’installation de Visual Studio  
  Si vous décidez d’installer le SDK Visual Studio après avoir effectué votre installation de Visual Studio, vous devez suivre la procédure suivante :  
   
-1.  Accédez à **le panneau de configuration / programmes / programmes et fonctionnalités**, puis recherchez **Visual Studio 2015**. Vous pouvez installer le SDK Visual Studio pour n’importe quelle édition de Visual Studio 2015, à l’exception d’Express.  
+1. Accédez à **le panneau de configuration / programmes / programmes et fonctionnalités**, puis recherchez **Visual Studio 2015**. Vous pouvez installer le SDK Visual Studio pour n’importe quelle édition de Visual Studio 2015, à l’exception d’Express.  
   
-2.  Avec le bouton droit **Visual Studio 2015**, puis cliquez sur **modification**. Vous devez voir la page d’installation.  
+2. Avec le bouton droit **Visual Studio 2015**, puis cliquez sur **modification**. Vous devez voir la page d’installation.  
   
-3.  Suivez la même procédure que dans **l’installation du Kit de développement logiciel Visual Studio en tant que partie d’une Installation de Visual Studio** ci-dessus.  
+3. Suivez la même procédure que dans **l’installation du Kit de développement logiciel Visual Studio en tant que partie d’une Installation de Visual Studio** ci-dessus.  
   
-4.  Cliquez sur le **outils d’extensibilité Visual Studio** lien pour installer le SDK Visual Studio.  
+4. Cliquez sur le **outils d’extensibilité Visual Studio** lien pour installer le SDK Visual Studio.  
   
 ## <a name="installing-the-visual-studio-sdk-from-a-solution"></a>Installer le SDK Visual Studio à partir d’une Solution  
  Si vous ouvrez une solution avec un projet d’extensibilité sans d’abord installer l’extensibilité de Visual Studio, vous êtes invité par une barre d’informations en surbrillance au-dessus de l’Explorateur de solutions. Il doit ressembler à ce qui suit :  

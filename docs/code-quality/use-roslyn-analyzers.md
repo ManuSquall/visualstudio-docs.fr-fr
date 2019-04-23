@@ -11,16 +11,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 30d8423481705a26f1275db8fb37c497b889dc84
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.openlocfilehash: 56637ee7826b944d739e170faf22ae354abd8adc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515335"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080811"
 ---
 # <a name="use-roslyn-analyzers"></a>Utiliser les analyseurs Roslyn
 
-Règles de l’analyseur .NET compiler Platform (« Roslyn »), ou *diagnostics*, analyser votre code C# ou Visual Basic en cours de frappe. Chacun des diagnostics a un état de gravité et la suppression par défaut qui peut être remplacé pour votre projet. Cet article décrit la gravité de règle de paramètre, à l’aide des ensembles de règles et suppression des violations.
+Règles de l’analyseur .NET compiler Platform (« Roslyn »), ou *diagnostics*, analyser votre code c# ou Visual Basic en cours de frappe. Chacun des diagnostics a un état de gravité et la suppression par défaut qui peut être remplacé pour votre projet. Cet article décrit la gravité de règle de paramètre, à l’aide des ensembles de règles et suppression des violations.
 
 ## <a name="analyzers-in-solution-explorer"></a>Analyseurs dans l’Explorateur de solutions
 
@@ -108,42 +108,42 @@ Vous pouvez modifier le niveau de gravité d’une règle à partir de **l’Exp
 
 Il existe plusieurs moyens de supprimer les violations de règle :
 
-- Pour supprimer toutes les violations actuelles, sélectionnez **analyser** > **exécuter l’analyse du Code et supprimer les problèmes actifs** sur la barre de menus. Cela est parfois appelé « planification ».
+- À partir de la **analyser** menu
 
-- Pour supprimer un diagnostic à partir de **l’Explorateur de solutions**, définir son niveau de gravité **aucun**.
+   Sélectionnez **analyser** > **exécuter l’analyse du Code et supprimer les problèmes actifs** sur la barre de menus pour supprimer toutes les violations actuelles. Cela est parfois appelé « planification ».
 
-- Pour supprimer un diagnostic à partir de l’éditeur d’ensemble de règles, décochez la case en regard de son nom ou la valeur **Action** à **aucun**.
+- À partir de **l’Explorateur de solutions**
 
-- Pour supprimer un diagnostic à partir de l’éditeur de code, placez le curseur dans la ligne de code avec la violation et appuyez sur **Ctrl**+**.** Pour ouvrir le **Actions rapides** menu. Sélectionnez **supprimer CAxxxx** > **dans la Source** ou **supprimer CAxxxx** > **dans le fichier de Suppression**.
+   Pour supprimer une violation dans **l’Explorateur de solutions**, définir la gravité de la règle **aucun**.
+
+- À partir de la **Éditeur d’ensemble de règles**
+
+   Pour supprimer une violation de l’éditeur d’ensemble de règles, décochez la case en regard de son nom ou la valeur **Action** à **aucun**.
+
+- À partir de la **éditeur de code**
+
+   Pour supprimer une violation de l’éditeur de code, placez le curseur dans la ligne de code avec la violation et appuyez sur **Ctrl**+**.** Pour ouvrir le **Actions rapides** menu. Sélectionnez **supprimer CAXXXX** > **dans la Source/dans le fichier de Suppression**.
 
    ![Supprimer le diagnostic à partir du menu actions rapides](media/suppress-diagnostic-from-editor.png)
 
-- Pour supprimer un diagnostic à partir de la **liste d’erreurs**, consultez [supprimer les violations de la liste d’erreurs](#suppress-violations-from-the-error-list).
+- À partir de la **liste d’erreurs**
 
-### <a name="suppress-violations-from-the-error-list"></a>Supprimer les violations de la liste d’erreurs
+   Vous pouvez supprimer un ou plusieurs diagnostics à partir de la **liste d’erreurs** en sélectionnant celles que vous souhaitez supprimer, puis en cliquant et en sélectionnant **supprimer** > **dans Source/In Le fichier de suppression**.
 
-Vous pouvez supprimer un ou plusieurs diagnostics à partir de la **liste d’erreurs** en sélectionnant celles que vous souhaitez supprimer, puis en cliquant et en sélectionnant **supprimer** > **dans la Source**  ou **supprimer** > **dans le fichier de Suppression**.
+   - Si vous supprimez **dans la Source**, le **aperçu des modifications** boîte de dialogue s’ouvre et affiche un aperçu de la C# [#pragma warning](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) ou Visual Basic [#Disable avertissement](/dotnet/visual-basic/language-reference/directives/directives) directive qui est ajoutée au code source.
 
-- Si vous sélectionnez **dans la Source**, le **aperçu des modifications** boîte de dialogue s’ouvre et affiche un aperçu du langage C# [#pragma warning](/dotnet/csharp/language-reference/preprocessor-directives/preprocessor-pragma-warning) ou Visual Basic [#Disable warning](/dotnet/visual-basic/language-reference/directives/directives) directive qui est ajoutée au code source.
+      ![Aperçu de l’ajout de #pragma warning dans le fichier de code](media/pragma-warning-preview.png)
 
-   ![Aperçu de l’ajout de #pragma warning dans le fichier de code](media/pragma-warning-preview.png)
+   - Si vous sélectionnez **dans le fichier de Suppression**, le **aperçu des modifications** boîte de dialogue s’ouvre et affiche un aperçu de la <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribut qui est ajouté au fichier suppressions globales.
 
-- Si vous sélectionnez **dans le fichier de Suppression**, le **aperçu des modifications** boîte de dialogue s’ouvre et affiche un aperçu de la <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribut qui est ajouté au fichier suppressions globales.
+      ![Aperçu de l’ajout de l’attribut SuppressMessage pour le fichier de suppression](media/preview-changes-in-suppression-file.png)
 
-   ![Aperçu de l’ajout de l’attribut SuppressMessage pour le fichier de suppression](media/preview-changes-in-suppression-file.png)
+   Dans le **aperçu des modifications** boîte de dialogue, sélectionnez **appliquer**.
 
-Dans le **aperçu des modifications** boîte de dialogue, sélectionnez **appliquer**.
-
-Le **liste d’erreurs** affiche des diagnostics, ou la règle violations, à la fois en direct de l’analyse du code et génèrent. Étant donné que les diagnostics de build peuvent être obsolètes, par exemple, si vous avez modifié le code pour corriger la violation mais que vous n’avez pas reconstruit, vous ne peut pas supprimer ces diagnostics à partir de la **liste d’erreurs**. Toutefois, les diagnostics d’analyse en temps réel ou IntelliSense, sont toujours à jour avec des sources en cours et peut être supprimées à partir de la **liste d’erreurs**. Si l’option de suppression est désactivée dans le menu contextuel, ou un contexte, il est probable, car vous en avez un ou plusieurs diagnostics dans votre sélection de build. Pour exclure les diagnostics de build de votre sélection, basculer le **liste d’erreurs** filtre source à partir de **Build + IntelliSense** à **Intellisense uniquement**. Ensuite, sélectionnez les tests de diagnostic que vous souhaitez supprimer et procéder comme indiqué précédemment.
-
-![Filtre de liste d’erreur source dans Visual Studio](media/error-list-filter.png)
-
-> [!NOTE]
-> Dans un projet .NET Core, si vous ajoutez une référence à un projet qui a les analyseurs NuGet, ces analyseurs sont automatiquement ajoutés au projet dépendant trop. Pour désactiver ce comportement, par exemple si le projet dépendant est un projet de test unitaire, marquez le package NuGet comme privée dans le *.csproj* ou *.vbproj* fichier du projet référencé :
->
-> ```xml
-> <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.6.0" PrivateAssets="all" />
-> ```
+   > [!NOTE]
+   > Si vous ne voyez pas le **supprimer** option de menu dans **l’Explorateur de solutions**, la violation provient probablement build et d’analyse en temps réel pas. Le **liste d’erreurs** affiche des diagnostics, ou la règle violations, à la fois en direct de l’analyse du code et génèrent. Étant donné que les diagnostics de build peuvent être obsolètes, par exemple, si vous avez modifié le code pour corriger la violation mais que vous n’avez pas reconstruit, vous ne peut pas supprimer ces diagnostics à partir de la **liste d’erreurs**. Diagnostics d’analyse en temps réel ou IntelliSense, sont toujours à jour avec des sources en cours et peut être supprimées à partir de la **liste d’erreurs**. Pour exclure *build* diagnostics à partir de votre sélection, basculer le **liste d’erreurs** filtre source à partir de **Build + IntelliSense** à **Intellisense uniquement**. Ensuite, sélectionnez les tests de diagnostic que vous souhaitez supprimer et procéder comme indiqué précédemment.
+   >
+   > ![Filtre de liste d’erreur source dans Visual Studio](media/error-list-filter.png)
 
 ## <a name="command-line-usage"></a>Utilisation de ligne de commande
 
@@ -169,6 +169,14 @@ msbuild myproject.csproj /target:rebuild /verbosity:minimal
 L’illustration suivante montre la sortie de génération de ligne de commande à partir de la génération d’un projet qui contient une violation de règle analyzer :
 
 ![Sortie MSBuild avec violation de règle](media/command-line-build-analyzers.png)
+
+## <a name="dependent-projects"></a>Projets dépendants
+
+Dans un projet .NET Core, si vous ajoutez une référence à un projet qui a les analyseurs NuGet, ces analyseurs sont automatiquement ajoutés au projet dépendant trop. Pour désactiver ce comportement, par exemple si le projet dépendant est un projet de test unitaire, marquez le package NuGet comme privée dans le *.csproj* ou *.vbproj* fichier du projet référencé en définissant le **PrivateAssets** attribut :
+
+```xml
+<PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.0" PrivateAssets="all" />
+```
 
 ## <a name="see-also"></a>Voir aussi
 

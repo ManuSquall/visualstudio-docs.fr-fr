@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb47aa94dbf444e27fd149e2e16c723677f973eb
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: 8b4c763ff31c6c62a177c77f8886f1de305a5170
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537557"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097321"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Découvrez des conseils de productivité et des astuces pour le débogueur dans Visual Studio
 
@@ -74,17 +74,17 @@ Il est facile d’afficher des variables à l’aide des fenêtres du débogueur
 
 #### <a name="to-create-an-object-id"></a>Pour créer un ID d’objet
 
-1.  Définissez un point d’arrêt quasi une variable que vous souhaitez suivre.
+1. Définissez un point d’arrêt quasi une variable que vous souhaitez suivre.
 
-2.  Démarrez le débogueur (**F5**) et arrêtez sur le point d’arrêt.
+2. Démarrez le débogueur (**F5**) et arrêtez sur le point d’arrêt.
 
 3. Recherchez la variable dans le **variables locales** fenêtre (**Déboguer > Windows > variables locales**), avec le bouton droit de la variable, puis sélectionnez **Make Object ID**.
 
     ![Créer un ID d’objet](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
 
-4.  Le symbole **$** et un nombre s’affichent alors dans la fenêtre **Variables locales** . Cette variable est l’ID d’objet.
+4. Le symbole **$** et un nombre s’affichent alors dans la fenêtre **Variables locales** . Cette variable est l’ID d’objet.
 
-5.  Avec le bouton droit de la variable d’ID objet et choisissez **ajouter un espion**.
+5. Avec le bouton droit de la variable d’ID objet et choisissez **ajouter un espion**.
 
 Pour plus d’informations, consultez [créer un ID d’objet](../debugger/watch-and-quickwatch-windows.md#bkmk_objectIds).
 
@@ -126,13 +126,13 @@ Si vous avez besoin de déboguer les types de problèmes qui sont communes aux a
 
 #### <a name="to-show-threads-in-your-source-code"></a>Pour afficher les threads dans votre code source
 
-1.  Pendant le débogage, cliquez sur le **afficher les Threads dans la Source** bouton ![afficher les Threads dans la Source](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") dans le **déboguer** barre d’outils.
+1. Pendant le débogage, cliquez sur le **afficher les Threads dans la Source** bouton ![afficher les Threads dans la Source](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") dans le **déboguer** barre d’outils.
 
-2.  Examinez la reliure située sur le côté gauche de la fenêtre. Sur cette ligne, vous voyez un *marqueur de thread* icône ![marqueur de Thread](../debugger/media/dbg-thread-marker.png "ThreadMarker") qui ressemble à deux threads de maillage. Le marqueur de thread indique qu'un thread est interrompu à cet emplacement.
+2. Examinez la reliure située sur le côté gauche de la fenêtre. Sur cette ligne, vous voyez un *marqueur de thread* icône ![marqueur de Thread](../debugger/media/dbg-thread-marker.png "ThreadMarker") qui ressemble à deux threads de maillage. Le marqueur de thread indique qu'un thread est interrompu à cet emplacement.
 
     Notez qu’un marqueur de thread peut être partiellement masqué par un point d’arrêt.
 
-3.  Placez le pointeur sur le marqueur de thread. Un DataTip apparaît. Le DataTip vous indique le nom et le numéro d'ID de thread de chaque thread interrompu.
+3. Placez le pointeur sur le marqueur de thread. Un DataTip apparaît. Le DataTip vous indique le nom et le numéro d'ID de thread de chaque thread interrompu.
 
     Vous pouvez également afficher l’emplacement de threads dans le [fenêtre Piles parallèles](../debugger/get-started-debugging-multithreaded-apps.md).
 
