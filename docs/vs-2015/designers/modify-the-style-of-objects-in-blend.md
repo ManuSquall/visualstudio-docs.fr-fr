@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0d488149302e21f6e46f1c20a32fb7aecefe8337
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: c1f2f4dc5eb4c285b99a72a58836e5f81b3ef30f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869300"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088455"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Modifier le style des objets dans Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,18 +25,18 @@ Le moyen le plus simple de personnaliser un objet est d’en définir les propri
   
  **Dans cette rubrique** :  
   
--   [Pinceaux : modifier l’apparence d’un objet](#Brushes)  
+- [Pinceaux : Modifier l’apparence d’un objet](#Brushes)  
   
--   [Styles et modèles : créer une apparence cohérente pour les contrôles](#Styles)  
+- [Styles et modèles : Créer une apparence cohérente pour les contrôles](#Styles)  
   
--   [États visuels : modifier l’apparence d’un contrôle en fonction de son état](#Visual)  
+- [États visuels : Modifier l’apparence d’un contrôle en fonction de son état](#Visual)  
   
--   [Ressources : créer des couleurs, des styles et des modèles et les réutiliser ultérieurement](#Resources)  
+- [Ressources : Créer des couleurs, des styles et des modèles et les réutiliser ultérieurement](#Resources)  
   
-##  <a name="Brushes"></a> Pinceaux : modifier l’apparence d’un objet  
+## <a name="Brushes"></a> Pinceaux : modifier l’apparence d’un objet  
  Appliquez un pinceau à un objet si vous voulez modifier son apparence.  
   
- **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Brushes Editor (Éditeur de pinceaux)](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor).  
+ **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [éditeur de pinceaux](http://www.popscreen.com/v/6A4mO/Microsoft-Expression-Blend-The-Brushes-Editor).  
   
 ### <a name="paint-a-repeating-image-or-pattern-on-an-object"></a>Peindre une image ou un motif qui se répète sur un objet  
  Vous pouvez peindre une image ou un motif qui se répète sur un objet à l’aide d’un *pinceau mosaïque*.  
@@ -55,14 +55,14 @@ Le moyen le plus simple de personnaliser un objet est d’en définir les propri
   
  ![](../designers/media/fb6c90e0-153c-48fe-b563-e601beac6227.png "fb6c90e0-153c-48fe-b563-e601beac6227") ![](../designers/media/e261b99f-7d8f-4d91-bc84-19c7beccc255.png "e261b99f-7d8f-4d91-bc84-19c7beccc255")  
   
- **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Tile Brushes (Pinceaux mosaïques)](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes).  
+ **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [pinceaux de mosaïque](http://www.popscreen.com/v/6A4iM/Microsoft-Expression-Blend-Tile-Brushes).  
   
-##  <a name="Styles"></a> Styles et modèles : créer une apparence cohérente pour les contrôles  
+## <a name="Styles"></a> Styles et modèles : créer une apparence cohérente parmi les contrôles  
  Vous pouvez concevoir l'apparence et le comportement d'un même contrôle et appliquer cette conception à d'autres contrôles pour vous éviter d'avoir à les gérer un à un.  
   
- **Avez-vous intérêt à utiliser un style ?** Si vous voulez simplement définir des propriétés par défaut (comme la couleur d’un bouton), utilisez un *style*. Vous pouvez modifier un contrôle même après lui avoir appliqué un style.  
+ **Avez-vous intérêt à utiliser un style ?**  : si vous voulez simplement définir des propriétés par défaut (comme la couleur d’un bouton), utilisez un *style*. Vous pouvez modifier un contrôle même après lui avoir appliqué un style.  
   
- **Avez-vous intérêt à utiliser un modèle ?** Si vous voulez changer la structure d’un contrôle, utilisez un *modèle*. Si vous envisagez de convertir un graphique ou un logo en bouton, sachez que vous ne pouvez pas modifier un contrôle après lui avoir appliqué un modèle.  
+ **Avez-vous intérêt à utiliser un modèle ?**  : si vous voulez changer la structure d’un contrôle, utilisez un *modèle*. Si vous envisagez de convertir un graphique ou un logo en bouton, sachez que vous ne pouvez pas modifier un contrôle après lui avoir appliqué un modèle.  
   
 ### <a name="create-a-template-or-style"></a>Créer un modèle ou un style  
  Il existe deux façons de créer un modèle. Vous pouvez soit convertir un objet de la planche graphique en contrôle, soit baser votre modèle sur un contrôle existant.  
@@ -92,7 +92,7 @@ Le moyen le plus simple de personnaliser un objet est d’en définir les propri
 >   
 >  ![](../designers/media/4a5612e1-7a28-4587-b870-0fe7112ec2ad.png "4a5612e1-7a28-4587-b870-0fe7112ec2ad")  
   
- **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Create a style (Créer un style)](https://www.youtube.com/watch?v=W8YdXDPeKdc).  
+ **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [créer un style](https://www.youtube.com/watch?v=W8YdXDPeKdc).  
   
 ### <a name="apply-a-style-or-template-to-a-control"></a>Appliquer un style ou un modèle à un contrôle  
  Cliquez avec le bouton droit sur un objet dans le panneau [Objets et chronologie](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57), choisissez **Modifier un modèle**, puis **Appliquer la ressource**.  
@@ -102,19 +102,19 @@ Le moyen le plus simple de personnaliser un objet est d’en définir les propri
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Restaurer le style ou le modèle par défaut d'un contrôle  
  Sélectionnez le contrôle puis, dans le panneau [Propriétés](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57), recherchez la propriété **Style** ou **Modèle**. Cliquez ensuite sur **Options avancées** ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb"), puis sur **Réinitialiser** dans le menu contextuel.  
   
-##  <a name="Visual"></a> États visuels : modifier l’apparence d’un contrôle en fonction de son état  
+## <a name="Visual"></a> États visuels : modifier l’apparence d’un contrôle en fonction de son état  
  Les contrôles peuvent avoir des apparences visuelles différentes en fonction des interactions de l'utilisateur. Par exemple, vous pouvez faire en sorte qu'un bouton devienne vert quand un utilisateur clique dessus ou qu'il exécute une animation. Vous pouvez raccourcir ou allonger la durée entre les états visuels à l'aide de transitions.  
   
  ![](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png "a95c671a-5639-40b9-83db-1e6b214330d5")  
   
- **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [Manage the state of your WPF controls (Gérer l’état de vos contrôles WPF)](https://www.youtube.com/watch?v=m0PlkF5i6uw).  
+ **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [gérer l’état de vos contrôles WPF](https://www.youtube.com/watch?v=m0PlkF5i6uw).  
   
-##  <a name="Resources"></a> Ressources : créer des couleurs, des styles et des modèles et les réutiliser ultérieurement  
+## <a name="Resources"></a> Ressources : créer des couleurs, des styles et des modèles, et les réutiliser ultérieurement  
  Vous pouvez convertir pratiquement tous les éléments de votre projet en ressource. Une ressource consiste simplement en un objet que vous pouvez réutiliser à différents endroits dans votre application. Par exemple, vous pouvez créer une couleur, en faire une ressource, puis appliquer cette couleur à plusieurs objets. Pour modifier la couleur de tous ces objets, il vous suffit de modifier la ressource de couleur.  
   
  ![](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png "89203705-cf66-46e0-B153-52a23cd744f7") ![](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png "6bff8b19-3cd5-41a0-bbf9-ff65532d5aae")  
   
- **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [A brief touch on resources (Bref survol des ressources)](http://www.popscreen.com/v/6A4k7/Microsoft-Expression-Blend-Brief-Touch-on-Resources).  
+ **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [brève des ressources](http://www.popscreen.com/v/6A4k7/Microsoft-Expression-Blend-Brief-Touch-on-Resources).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Création d’une interface utilisateur à l’aide de Blend pour Visual Studio](../designers/creating-a-ui-by-using-blend-for-visual-studio.md)

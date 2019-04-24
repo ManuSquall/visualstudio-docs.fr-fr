@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: 157617ae085a5d298b1e552d0280b98f63e1fc0b
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: c99d7d01009ef064056f0ca91688ad043880cffd
+ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324784"
+ms.lasthandoff: 03/27/2019
+ms.locfileid: "58515188"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Créer des projets R dans Visual Studio
 

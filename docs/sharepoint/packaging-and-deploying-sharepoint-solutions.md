@@ -14,25 +14,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 297fefddd45b080af236da0b4fe53649e7d630cf
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 4c187865518c9556d63d9e5e632ec5c658fc3e0f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867562"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040842"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>Empaqueter et déployer des solutions SharePoint
   En règle générale, une solution SharePoint est déployée sur un serveur SharePoint à l’aide d’un fichier de package (.wsp) de solution. Vous pouvez utiliser Visual Studio pour organiser vos éléments de projet SharePoint en fonctionnalités et pour créer un package pour déployer vos fonctionnalités SharePoint.
 
  Cette rubrique fournit les informations suivantes :
 
--   [Créer des fonctionnalités et des packages](#create-features-and-packages)
+- [Créer des fonctionnalités et des packages](#create-features-and-packages)
 
--   [Prise en charge des outils de packaging et de fonctionnalité](#feature-and-packaging-tool-support)
+- [Prise en charge des outils de packaging et de fonctionnalité](#feature-and-packaging-tool-support)
 
--   [Déployer des solutions SharePoint](#deploy-sharepoint-solutions)
+- [Déployer des solutions SharePoint](#deploy-sharepoint-solutions)
 
--   [Déployer des fichiers dans les solutions SharePoint](#deploy-files-in-sharepoint-solutions)
+- [Déployer des fichiers dans les solutions SharePoint](#deploy-files-in-sharepoint-solutions)
 
 ## <a name="create-features-and-packages"></a>Créer des fonctionnalités et des packages
  Vous pouvez utiliser Visual Studio pour regrouper des éléments SharePoint connexes dans un *fonctionnalité*. Par exemple, une fonctionnalité pour une définition de liste de Contacts peut inclure l’instance de liste et la définition de liste. Vous pouvez combiner ces deux éléments dans une fonctionnalité unique à des fins de déploiement. Pour plus d’informations sur les fonctionnalités, consultez [bloc de construction : Fonctionnalités](http://go.microsoft.com/fwlink/?LinkID=169183).
@@ -42,11 +42,11 @@ ms.locfileid: "57867562"
 ## <a name="feature-and-packaging-tool-support"></a>Prise en charge des outils de packaging et de fonctionnalité
  Vous pouvez utiliser les outils de développement SharePoint dans Visual Studio pour rapidement organiser vos fichiers SharePoint en fonctionnalités et les packages de solution pour simplifier le déploiement. Vous pouvez utiliser les outils suivants pour configurer le package de solution et de fonctionnalité.
 
--   Concepteur de fonctionnalités et le Concepteur de packages.
+- Concepteur de fonctionnalités et le Concepteur de packages.
 
--   Explorateur de package, une fenêtre outil.
+- Explorateur de package, une fenêtre outil.
 
--   Explorateur de solutions.
+- Explorateur de solutions.
 
 ### <a name="feature-designer-and-package-designer"></a>Concepteur de fonctionnalités et le Concepteur de packages
  Vous pouvez créer des fonctionnalités, définir des étendues et marquer les autres fonctionnalités en tant que dépendances à l’aide du Concepteur de fonctionnalités. Le concepteur affiche également le fichier XML final qui décrit chaque fonctionnalité. Pour plus d’informations, consultez [fonctionnalités SharePoint créer](../sharepoint/creating-sharepoint-features.md).

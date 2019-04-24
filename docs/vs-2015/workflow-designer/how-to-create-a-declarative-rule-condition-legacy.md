@@ -13,12 +13,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ba2db8f1accafab1bdb20eacab73b2a963391075
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dbdcc268b71f2926307b500126840391dd5308fd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947131"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039528"
 ---
 # <a name="how-to-create-a-declarative-rule-condition-legacy"></a>Procédure : Créer une condition de règle déclarative (héritée)
 Cette rubrique décrit comment déclarer une condition de règle à l'aide du [!INCLUDE[wfd1](../includes/wfd1-md.md)] hérité qui cible le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -27,37 +27,37 @@ Cette rubrique décrit comment déclarer une condition de règle à l'aide du [!
   
  Les conditions de règle déclaratives sont utilisées dans les activités Windows Workflow Foundation prédéfinies suivantes :  
   
--   [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
+- [ConditionedActivityGroup](http://go.microsoft.com/fwlink?LinkID=65017)  
   
--   [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
+- [IfElseBranchActivity](http://go.microsoft.com/fwlink?LinkID=65034)  
   
--   [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
+- [ReplicatorActivity](http://go.microsoft.com/fwlink?LinkID=65039)  
   
--   [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
+- [WhileActivity](http://go.microsoft.com/fwlink?LinkID=65049)  
   
--   [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)  
+- [SequentialWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65040)  
   
--   [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)  
+- [StateMachineWorkflowActivity](http://go.microsoft.com/fwlink?LinkID=65045)  
   
 ### <a name="to-create-a-declarative-rule-condition-using-the-rule-condition-editor"></a>Pour créer une condition de règle déclarative à l'aide de l'Éditeur de conditions de règle  
   
-1.  Dans l’activité **propriétés** fenêtre, cliquez sur le **Condition** propriété ou **UntilCondition** propriété, en fonction de l’activité.  
+1. Dans l’activité **propriétés** fenêtre, cliquez sur le **Condition** propriété ou **UntilCondition** propriété, en fonction de l’activité.  
   
-2.  Sélectionnez **Condition de règle déclarative** dans la liste pour la propriété.  
+2. Sélectionnez **Condition de règle déclarative** dans la liste pour la propriété.  
   
-3.  Développez le **Condition** ou **UntilCondition** propriété.  
+3. Développez le **Condition** ou **UntilCondition** propriété.  
   
-4.  Cliquez sur le **ConditionName** propriété.  
+4. Cliquez sur le **ConditionName** propriété.  
   
-5.  Cliquez sur le **ConditionName** ellipses **[...]**  pour ouvrir le **sélectionner la Condition** boîte de dialogue.  
+5. Cliquez sur le **ConditionName** ellipses **[...]**  pour ouvrir le **sélectionner la Condition** boîte de dialogue.  
   
-6.  Cliquez sur **nouvelle Condition** pour ouvrir le **éditeur de conditions de règle** boîte de dialogue.  
+6. Cliquez sur **nouvelle Condition** pour ouvrir le **éditeur de conditions de règle** boîte de dialogue.  
   
-7.  Tapez l’expression pour la condition dans le **Condition** zone de texte.  
+7. Tapez l’expression pour la condition dans le **Condition** zone de texte.  
   
      Pour plus d’informations sur la création d’expressions de condition, consultez [boîte de dialogue Éditeur de Condition de règle (hérité)](../workflow-designer/rule-condition-editor-dialog-box-legacy.md).  
   
-8.  Lorsque vous avez terminé de créer l’expression de condition, cliquez sur **OK** pour fermer la boîte de dialogue et créer la condition de règle avec affectation de nom.  
+8. Lorsque vous avez terminé de créer l’expression de condition, cliquez sur **OK** pour fermer la boîte de dialogue et créer la condition de règle avec affectation de nom.  
   
      Le **sélectionner la Condition** boîte de dialogue s’ouvre.  
   

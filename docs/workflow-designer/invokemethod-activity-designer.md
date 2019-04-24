@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32e595247b147d9a775fcea0299c291d9027aea9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: eed5d81cce05b316ef7593639e868936e7f2fa69
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942984"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039251"
 ---
 # <a name="invokemethod-activity-designer"></a>Concepteur d'activités InvokeMethod
 
@@ -49,11 +49,11 @@ Méthodes comportant des arguments appelés **TargetObject** ou **résultat** ne
 
 L'algorithme permettant d'inscrire les paramètres dans <xref:System.Activities.Activity.CacheMetadata%2A> est présenté dans la liste suivante :
 
-1.  Inscrivez l'argument <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>.
+1. Inscrivez l'argument <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>.
 
-2.  Inscrivez l'argument <xref:System.Activities.Statements.InvokeMethod.Result%2A>.
+2. Inscrivez l'argument <xref:System.Activities.Statements.InvokeMethod.Result%2A>.
 
-3.  Effectuez une itération au sein de la collection <xref:System.Activities.Statements.InvokeMethod.Parameters%2A> et inscrivez chaque argument.
+3. Effectuez une itération au sein de la collection <xref:System.Activities.Statements.InvokeMethod.Parameters%2A> et inscrivez chaque argument.
 
 L’exception qui en résulte est de type <xref:System.Activities.InvalidWorkflowException> avec le message suivant : 'InvokeMethod' : Une variable, RuntimeArgument ou un permet de delegateargument, de déjà existe avec le nom 'TargetObject'. Les noms doivent être uniques au sein de la portée de l'environnement.
 

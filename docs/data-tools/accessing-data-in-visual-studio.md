@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3adedb95931dfc2f683595fc97bb98821e32fb38
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 16cbdb0a673f503dcee49b7a323d1453ee93532a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983492"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659720"
 ---
 # <a name="access-data-in-visual-studio"></a>Accéder aux données dans Visual Studio
 
@@ -27,7 +27,7 @@ Dans Visual Studio, vous pouvez créer des applications qui se connectent à des
 
 Pour les applications avec JavaScript, Python, PHP, Ruby ou C++, vous connectez aux données comme vous le faites rien d’autre, en obtenant des bibliothèques et d’écriture de code. Pour les applications .NET, Visual Studio fournit des outils que vous pouvez utiliser pour Explorer les sources de données, créer des modèles d’objet pour stocker et manipuler des données en mémoire et lier des données à l’interface utilisateur. Microsoft Azure fournit des kits SDK pour .NET, Java, Node.js, PHP, Python, Ruby et les applications mobiles et les outils dans Visual Studio pour la connexion au stockage Azure.
 
-Les listes suivantes présentent quelques-uns des nombreux systèmes base de données et de stockage qui peuvent être utilisés à partir de Visual Studio. Le [Microsoft Azure](https://azure.microsoft.com/) offres sont des services de données qui incluent tous les d’approvisionnement et d’administration de la banque de données sous-jacente. Le **développement Azure** charge de travail dans [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) vous permet de travailler avec des banques de données Azure directement à partir de Visual Studio.
+Les listes suivantes présentent quelques-uns des nombreux systèmes base de données et de stockage qui peuvent être utilisés à partir de Visual Studio. Le [Microsoft Azure](https://azure.microsoft.com/) offres sont des services de données qui incluent tous les d’approvisionnement et d’administration de la banque de données sous-jacente. Le **développement Azure** charge de travail dans [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) vous permet de travailler avec des banques de données Azure directement à partir de Visual Studio.
 
 ![Charge de travail Développement Azure](media/azure-development-workload.png)
 
@@ -86,7 +86,7 @@ Tous les accès aux données .NET, y compris dans .NET Core, est basé sur ADO.N
 
 Pour l’accès aux données la documentation relative à ASP.NET, consultez [utilisation des données](https://www.asp.net/web-forms/overview/presenting-and-managing-data) sur le site ASP.NET. Pour obtenir un didacticiel sur l’utilisation d’Entity Framework avec ASP.NET MVC, consultez [mise en route avec Entity Framework 6 Code First avec MVC 5](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application).
 
-Les applications universelles Windows Platform (UWP) dans C# ou Visual Basic peuvent utiliser le Kit de développement logiciel Microsoft Azure pour .NET pour accéder à stockage Azure et autres services Azure. La classe Windows.Web.HttpClient permet la communication avec n’importe quel service RESTful. Pour plus d’informations, consultez [comment se connecter à un serveur HTTP à l’aide de Windows.Web.Http](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
+Des applications de Windows Platform (UWP) universelle en c# ou Visual Basic peuvent utiliser le Kit de développement logiciel Microsoft Azure pour .NET pour accéder à stockage Azure et autres services Azure. La classe Windows.Web.HttpClient permet la communication avec n’importe quel service RESTful. Pour plus d’informations, consultez [comment se connecter à un serveur HTTP à l’aide de Windows.Web.Http](https://msdn.microsoft.com/library/windows/apps/dn469430.aspx).
 
 Stockage des données sur l’ordinateur local, l’approche recommandée consiste à utiliser SQLite, qui s’exécute dans le même processus que l’application. Si une couche de mappage objet-relationnel (ORM) est requise, vous pouvez utiliser Entity Framework. Pour plus d’informations, consultez [accès aux données](/windows/uwp/data-access/index) dans le centre de développement Windows.
 
@@ -150,7 +150,7 @@ Installer [prennent en charge de Python dans Visual Studio](../python/overview-o
 
 [Les données dans les Solutions Office](../vsto/data-in-office-solutions.md)&mdash;contient des liens vers des rubriques qui expliquent comment fonctionnent les données dans les solutions Office. Cela inclut des informations sur la programmation orientée schéma, la mise en cache des données et accès aux données côté serveur.
 
-[LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)&mdash;décrit les fonctionnalités de requête intégrées aux C# et Visual Basic et le modèle commun pour interroger des bases de données relationnelles, les documents XML, les jeux de données et les collections en mémoire.
+[LINQ (Language-Integrated Query)](/dotnet/csharp/linq/)&mdash;décrit les fonctionnalités de requête intégrées dans c# et Visual Basic et le modèle commun pour interroger des bases de données relationnelles, les documents XML, les jeux de données et les collections en mémoire.
 
 [Outils XML dans Visual Studio](../xml-tools/xml-tools-in-visual-studio.md)&mdash;aborde l’utilisation des fonctionnalités XML du .NET Framework de données, le débogage XSLT, XML et l’architecture de requête XML.
 

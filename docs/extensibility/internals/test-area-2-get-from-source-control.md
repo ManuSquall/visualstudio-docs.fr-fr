@@ -1,5 +1,5 @@
 ---
-title: 'Zone de test 2 : Obtenir à partir du contrôle de code Source | Microsoft Docs'
+title: 'Zone de test 2 : Obtenir à partir du contrôle de code Source | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6e6a9f71a1ebda6e6366096881fb681a864ce31
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0d7942aa658208143aea3c3ae3a09eb677568f17
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630871"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067181"
 ---
-# <a name="test-area-2-get-from-source-control"></a>Zone de test 2 : Obtenir à partir du contrôle de code Source
+# <a name="test-area-2-get-from-source-control"></a>Zone de test 2 : Obtenir à partir du contrôle de code source
 Cette zone de test traite des cas de test pour la récupération des éléments à partir de la banque des versions par le biais de la commande Get. Ces cas de test peuvent être appliquées aux deux types et aux projets Web.
 
 ## <a name="command-menu-access"></a>Accès au Menu de commande
@@ -26,13 +26,13 @@ Cette zone de test traite des cas de test pour la récupération des éléments 
 
 ##### <a name="get-latest-version"></a>Obtenir la dernière Version :
 
--   **Fichier**, **contrôle de code Source**, **obtenir la dernière Version**.
+- **Fichier**, **contrôle de code Source**, **obtenir la dernière Version**.
 
--   **Fichier**, **obtenir la dernière Version**.
+- **Fichier**, **obtenir la dernière Version**.
 
--   Menu contextuel, **obtenir la dernière Version**.
+- Menu contextuel, **obtenir la dernière Version**.
 
--   Télécharger : **Fichier**, **contrôle de code Source**, **obtenir**.
+- Télécharger : **Fichier**, **contrôle de code Source**, **obtenir**.
 
 ## <a name="expected-behavior"></a>Comportement attendu
 

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3df17c9b52a7660da20cb036ad4aad702e86d931
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 06505798dcff86507cfc52c4209bf038776f7fac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690719"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100467"
 ---
 # <a name="idebugfunctionobject2"></a>IDebugFunctionObject2
 > [!IMPORTANT]
@@ -35,11 +35,11 @@ IDebugFunctionObject2 : IUnknown
 ## <a name="notes-for-callers"></a>Notes de publication pour les appelants
  Méthodes de cette interface différeront de ceux de **IDebugFunctionObject** comme suit :
 
--   Le **IDebugEvaluate** méthode accepte des indicateurs.
+- Le **IDebugEvaluate** méthode accepte des indicateurs.
 
--   Le **CreateObject** méthode accepte des indicateurs et un délai d’expiration.
+- Le **CreateObject** méthode accepte des indicateurs et un délai d’expiration.
 
--   Le **CreateStringObjectWithLength** méthode prend une longueur.
+- Le **CreateStringObjectWithLength** méthode prend une longueur.
 
 ## <a name="methods"></a>Méthodes
  Cette interface implémente les méthodes suivantes :
@@ -50,7 +50,7 @@ IDebugFunctionObject2 : IUnknown
 |[CreateStringObjectWithLength](../../../extensibility/debugger/reference/idebugfunctionobject2-createstringobjectwithlength.md)|Crée un objet de chaîne qui a la longueur spécifiée.|
 |[Evaluate](../../../extensibility/debugger/reference/idebugfunctionobject2-evaluate.md)|Appelle la fonction et retourne la valeur obtenue en tant qu’objet.|
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : EE.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

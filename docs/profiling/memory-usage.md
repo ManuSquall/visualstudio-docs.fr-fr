@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dd36bf3381c2b3bdd604dad9bc1aaf3ad37b36d4
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: bcb24742a4387a84bba0b52763cdb559280c24c4
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868982"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232773"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Mesurer l’utilisation de la mémoire dans Visual Studio
 
@@ -54,13 +54,13 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
 4.  Choisissez **Utilisation de la mémoire** avec **Sélectionner les outils** dans la barre d’outils.
 
-     ![Afficher les outils de diagnostics](../profiling/media/DiagToolsSelectTool.png "DiagToolsSelectTool")
+     ![Afficher les outils de diagnostics](../profiling/media/diag-tools-select-tool-2.png "DiagToolsSelectTool")
 
 5.  Cliquez sur **Déboguer / Démarrer le débogage** (ou **Démarrer** dans la barre d’outils, ou **F5**).
 
      Lorsque l’application est chargée, la vue Résumé des outils de diagnostics s’affiche.
 
-     ![Onglet Résumé des outils de diagnostics](../profiling/media/DiagToolsSummaryTab.png "DiagToolsSummaryTab")
+     ![Onglet Résumé des outils de diagnostics](../profiling/media/diag-tools-summary-tab-2.png "DiagToolsSummaryTab")
 
      > [!NOTE]
      >  Comme la collecte des données de la mémoire peut affecter les performances du débogage de vos applications natives ou en mode mixte, les instantanés de la mémoire sont désactivés par défaut. Pour activer les instantanés dans des applications natives ou en mode mixte, démarrez une session de débogage (touche de raccourci : **F5**). Quand la fenêtre **Outils de diagnostic** apparaît, choisissez l’onglet **Utilisation de la mémoire**, puis choisissez **Profilage du tas**.
@@ -121,7 +121,7 @@ Pour analyser l’utilisation de la mémoire, cliquez sur un des liens qui ouvre
 
  L’arborescence **Types référencés** affiche les références qui sont détenues par le type sélectionné dans le volet du haut.
 
- ![Affichage du rapport des types référencés managés](../profiling/media/dbgdiag_mem_managedtypesreport_referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")
+ ![Affichage Rapport des types référencés managés](../profiling/media/dbgdiag_mem_managedtypesreport_referencedtypes.png "DBGDIAG_MEM_ManagedTypesReport_ReferencedTypes")
 
  Pour afficher les instances d’un type sélectionné dans le volet du haut, choisissez l’icône ![Icône d’instance](../profiling/media/dbgdiag_mem_instanceicon.png "DBGDIAG_MEM_InstanceIcon").
 
@@ -162,7 +162,7 @@ Le rapport des modifications ajoute des colonnes (marquées par la mention **(Di
 
 ## <a name="blogs-and-videos"></a>Blogs et vidéos
 
-[Analyser l’UC et la mémoire pendant le débogage](https://devblogs.microsoft.com/visualstudio/analyze-cpu-memory-while-debugging/)
+[Analyser le processeur et la mémoire pendant le débogage](https://devblogs.microsoft.com/visualstudio/analyze-cpu-memory-while-debugging/)
 
 [Blog Visual C++ : Profilage de la mémoire dans Visual C++ 2015](https://devblogs.microsoft.com/cppblog/memory-profiling-in-visual-c-2015/)
 

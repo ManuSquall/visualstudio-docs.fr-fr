@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 311503aed0787fece7985d7df1f6dc2d4ddd03b2
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: b2c3aad870112b580078f2dbb849f9ee1a771ed0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526241"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040992"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Procédure : Générer un extrait XML à partir d’un schéma XML
 
@@ -21,25 +21,25 @@ L’éditeur XML a la possibilité de générer des extraits XML à partir d’u
 
 Cette fonction n'est disponible que pour les éléments. Les règles suivantes s'appliquent également :
 
--   L'élément doit avoir un type de schéma associé ; autrement dit, l'élément doit être valide par rapport à un schéma associé. Le type de schéma ne peut pas être abstract et doit contenir les attributs et/ou éléments enfants obligatoires.
+- L'élément doit avoir un type de schéma associé ; autrement dit, l'élément doit être valide par rapport à un schéma associé. Le type de schéma ne peut pas être abstract et doit contenir les attributs et/ou éléments enfants obligatoires.
 
--   L'élément actuel dans l'éditeur doit être vide et dépourvu d'attributs. Par exemple, toutes les écritures suivantes sont valides.
+- L'élément actuel dans l'éditeur doit être vide et dépourvu d'attributs. Par exemple, toutes les écritures suivantes sont valides.
 
-    -   `<Account`
+    - `<Account`
 
-    -   `<Account>`
+    - `<Account>`
 
-    -   `<Account></Account>`
+    - `<Account></Account>`
 
--   Le curseur doit être placé immédiatement à droite du nom de l'élément.
+- Le curseur doit être placé immédiatement à droite du nom de l'élément.
 
 L'extrait généré contient tous les attributs et éléments requis. Si `minOccurs` est supérieur à un, le nombre minimal d'instances requises de cet élément est inclus dans l'extrait, jusqu'à 100 instances. Toutes les valeurs fixes trouvées dans le schéma engendrent des valeurs fixes dans l'extrait. Les éléments `xsd:any` et `xsd:anyAttribute` sont ignorés et n'engendrent aucune construction d'extrait supplémentaire.
 
 Des valeurs par défaut sont générées et notées comme valeurs modifiables. Si le schéma spécifie une valeur par défaut, celle-ci est utilisée. Toutefois, si la valeur par défaut du schéma est une chaîne vide, l'éditeur génère les valeurs par défaut de la manière suivante :
 
--   Si le type de schéma contient des facettes d'énumération, que ce soit directement ou indirectement par le biais de membres d'un type d'union, la première valeur énumérée trouvée dans le modèle Objet du schéma est utilisée comme valeur par défaut.
+- Si le type de schéma contient des facettes d'énumération, que ce soit directement ou indirectement par le biais de membres d'un type d'union, la première valeur énumérée trouvée dans le modèle Objet du schéma est utilisée comme valeur par défaut.
 
--   Si le type de schéma est un type atomique, l'éditeur cherche ce type atomique et en insère le nom. Pour un type simple dérivé, il utilise le type simple de base. Pour un type de liste, le type atomique est l'`itemType`. Pour une union, le type atomique est celui du premier `memberType`.
+- Si le type de schéma est un type atomique, l'éditeur cherche ce type atomique et en insère le nom. Pour un type simple dérivé, il utilise le type simple de base. Pour un type de liste, le type atomique est l'`itemType`. Pour une union, le type atomique est celui du premier `memberType`.
 
 ## <a name="example"></a>Exemple
 
@@ -50,31 +50,31 @@ Des valeurs par défaut sont générées et notées comme valeurs modifiables. S
 
 ### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Pour créer un nouveau fichier XML et l’associer à un schéma XML
 
-1.  Sur le **fichier** menu, pointez sur **New**, puis cliquez sur **fichier**.
+1. Sur le **fichier** menu, pointez sur **New**, puis cliquez sur **fichier**.
 
-2.  Sélectionnez **fichier XML** dans le **modèles** volet et cliquez sur **Open**.
+2. Sélectionnez **fichier XML** dans le **modèles** volet et cliquez sur **Open**.
 
      Un nouveau fichier s'ouvre dans l'éditeur. Il contient une déclaration XML par défaut, `<?xml version="1.0" encoding="utf-8">`.
 
-3.  Dans la fenêtre de propriétés de document, cliquez sur le bouton Parcourir (**...** ) sur le **schémas** champ.
+3. Dans la fenêtre de propriétés de document, cliquez sur le bouton Parcourir (**...** ) sur le **schémas** champ.
 
      Le **schémas XSD** boîte de dialogue s’affiche.
 
-4.  Cliquez sur **Ajouter**.
+4. Cliquez sur **Ajouter**.
 
      Le **ouvrir le schéma XSD** boîte de dialogue s’affiche.
 
-5.  Sélectionnez le fichier de schéma et cliquez sur **Open**.
+5. Sélectionnez le fichier de schéma et cliquez sur **Open**.
 
-6.  Cliquez sur **OK**.
+6. Cliquez sur **OK**.
 
      Le schéma XML est désormais associée au document XML.
 
 ### <a name="to-generate-an-xml-snippet"></a>Pour générer un extrait XML
 
-1.  Entrez `<` dans le volet de l'éditeur.
+1. Entrez `<` dans le volet de l'éditeur.
 
-2.  La liste des membres affiche les éléments possibles :
+2. La liste des membres affiche les éléments possibles :
 
      **!--** pour ajouter un commentaire.
 
@@ -84,11 +84,11 @@ Des valeurs par défaut sont générées et notées comme valeurs modifiables. S
 
      **Contact** pour ajouter l’élément racine.
 
-3.  Sélectionnez **Contact** dans la liste des membres et appuyez sur **entrée**.
+3. Sélectionnez **Contact** dans la liste des membres et appuyez sur **entrée**.
 
      L’éditeur ajoute l’étiquette de début `<Contact` et place le curseur après le nom de l’élément.
 
-4.  Appuyez sur **onglet** pour générer des données XML pour le `Contact` élément basé sur ses informations de schéma.
+4. Appuyez sur **onglet** pour générer des données XML pour le `Contact` élément basé sur ses informations de schéma.
 
 ## <a name="input"></a>Entrée
 

@@ -4,23 +4,23 @@ titleSuffix: ''
 description: Une procédure pas à pas des principes de base de Django dans le contexte de projets Visual Studio, expliquant en particulier comment prendre en charge des fichiers statiques, ajouter des pages à l’application et utiliser l’héritage du modèle
 ms.date: 11/19/2018
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e649dd6b802f99c73b99e5980039d0fef6e5a86f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 54a80ef606a553846ef5be7a86ed4183f3ffde57
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957245"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365702"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance"></a>Étape 3 : Prendre en charge les fichiers statiques, ajouter des pages et utiliser l’héritage du modèle
 
-**Étape précédente : [Créer une application Django avec des vues et des modèles de pages](learn-django-in-visual-studio-step-02-create-an-app.md)**
+**Étape précédente : [Créer une application Django avec des affichages et des modèles de pages ](learn-django-in-visual-studio-step-02-create-an-app.md)**
 
 Dans les étapes précédentes de ce tutoriel, vous avez appris comment créer une application Django minimale avec une seule page HTML autonome. Les applications web modernes sont cependant composées en général de nombreuses pages et utilisent des ressources partagées, comme des fichiers CSS et JavaScript, pour offrir un comportement et un style cohérents.
 
@@ -275,7 +275,7 @@ Les étapes suivantes démontrent l’héritage :
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
-> [Utiliser le modèle de projet Web Django complet](learn-django-in-visual-studio-step-04-full-django-project-template.md)
+> [Utiliser le modèle de projet web Django complet](learn-django-in-visual-studio-step-04-full-django-project-template.md)
 
 ## <a name="go-deeper"></a>Approfondir la question
 

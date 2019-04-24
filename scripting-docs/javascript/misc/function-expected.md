@@ -14,12 +14,12 @@ ms.assetid: f62ade94-9f6f-4832-9b9b-49a06a385bbe
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41d1ecc982dcdc4d494fc167e4784e9121bec15e
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 4442143b2766ed3608a852d0f811a6b943fd19df
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843933"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117047"
 ---
 # <a name="function-expected"></a>Fonction attendue
 Soit vous avez tenté d’appeler une de la **prototype de fonction** méthodes sur un objet qui n’était pas un `Function` objet, ou utilisé un objet dans un contexte d’appel de fonction. Par exemple, le code suivant génère cette erreur, car **exemple** n’est pas une fonction.  
@@ -31,9 +31,9 @@ var x = example();           // Try and call example as if it were a function.
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
--   Appelez uniquement **prototype de fonction** méthodes sur `Function` objets.  
+- Appelez uniquement **prototype de fonction** méthodes sur `Function` objets.  
   
--   Vérifiez que vous utilisez l’opérateur d’appel de fonction `()` pour appeler les fonctions uniquement.  
+- Vérifiez que vous utilisez l’opérateur d’appel de fonction `()` pour appeler les fonctions uniquement.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Objet de fonction](../../javascript/reference/function-object-javascript.md)   

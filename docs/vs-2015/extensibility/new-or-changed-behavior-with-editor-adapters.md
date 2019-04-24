@@ -10,12 +10,12 @@ ms.assetid: 5555b116-cfdb-4773-ba62-af80fda64abd
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 79f0a700b64abffe93d79d284ce2f45a76b3e6a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fc7ddaf7ec67a1e33248d5ce424868849200d3e6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947208"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073616"
 ---
 # <a name="new-or-changed-behavior-with-editor-adapters"></a>Comportement nouveau ou modifié avec les adaptateurs de l’éditeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,32 +85,32 @@ Si vous mettez à jour le code qui a été écrit par rapport à des versions an
   
  Les méthodes affectées sont les suivantes (la liste n’est pas exhaustive) :  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.CenterLines%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.CenterLines%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetCaretPos%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetCaretPos%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetLineAndColumn%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetLineAndColumn%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetNearestPosition%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetNearestPosition%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetPointOfLineColumn%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetPointOfLineColumn%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetTextStream%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetTextStream%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWordExtent%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetWordExtent%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.PositionCaretForEditing%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.PositionCaretForEditing%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.ReplaceTextOnLine%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.ReplaceTextOnLine%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetCaretPos%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetCaretPos%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetSelection%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetSelection%2A>  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetTopLine%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.SetTopLine%2A>  
   
 #### <a name="outlining"></a>mode Plan  
- Les clients de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> s’affiche uniquement les régions en mode plan qui ont été ajoutées à l’aide de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A>ou <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSessionEx.AddHiddenRegionsEx%2A>. Ils ne voient pas les régions ad hoc, car ils ne sont pas ajoutés par les cartes de l’éditeur. De même, ces clients ne verront pas ajoutées par les langages (y compris C# et C++) qui utilisent le nouveau code de l’éditeur, plutôt que les adaptateurs de l’éditeur de régions en mode plan.  
+ Les clients de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> s’affiche uniquement les régions en mode plan qui ont été ajoutées à l’aide de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A>ou <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSessionEx.AddHiddenRegionsEx%2A>. Ils ne voient pas les régions ad hoc, car ils ne sont pas ajoutés par les cartes de l’éditeur. De même, ces clients ne verront pas ajoutées par les langages (y compris c# et C++) qui utilisent le nouveau code de l’éditeur, plutôt que les adaptateurs de l’éditeur de régions en mode plan.  
   
 #### <a name="line-heights"></a>Hauteurs de ligne  
  Dans le nouvel éditeur, les lignes de texte peuvent avoir différentes hauteurs, en fonction de la taille de police et les transformations de ligne possibles qui peuvent se déplacer à la ligne par rapport à d’autres lignes. La hauteur de ligne retournée par les méthodes telles que <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.GetLineHeight%2A> correspond à la hauteur d’une ligne à l’aide de la taille de police par défaut avec aucun transformations de ligne appliquées. Cette hauteur peut ou peut ne pas refléter la hauteur réelle d’une ligne dans la vue.  
@@ -120,7 +120,7 @@ Si vous mettez à jour le code qui a été écrit par rapport à des versions an
   
 #### <a name="intellisense"></a>IntelliSense  
   
--   Le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateTipWindow%2A> méthode échouera si vous passez dans une classe qui n’implémente pas <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextTipWindow2> ou <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow3>. Win32 personnalisé owner-drawn les fenêtres contextuelles ne sont plus prises en charge.  
+- Le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsIntellisenseHost.UpdateTipWindow%2A> méthode échouera si vous passez dans une classe qui n’implémente pas <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextTipWindow2> ou <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodTipWindow3>. Win32 personnalisé owner-drawn les fenêtres contextuelles ne sont plus prises en charge.  
   
 #### <a name="smarttags"></a>SmartTags  
  Il n’existe aucune prise en charge de l’adaptateur pour les balises actives, créée avec <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagData>, <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow>, et <xref:Microsoft.VisualStudio.TextManager.Interop.IVsSmartTagTipWindow2> interfaces.  

@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f3e882818471014df66ef160521a6e9111a47a27
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ed3eeb8e2907eb71a75884a19f174774055783c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949702"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062241"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Définition d'une stratégie de verrouillage pour créer des segments en lecture seule
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,15 +58,15 @@ partition.SetLocks(Locks.Delete);
 ### <a name="using-locks"></a>L’utilisation de verrous  
  Vous pouvez utiliser des verrous pour implémenter des schémas tels que les exemples suivants :  
   
--   Interdire les modifications apportées à tous les éléments et les relations à l’exception de ceux qui représentent des commentaires. Cela permet aux utilisateurs d’annoter un modèle sans le modifier.  
+- Interdire les modifications apportées à tous les éléments et les relations à l’exception de ceux qui représentent des commentaires. Cela permet aux utilisateurs d’annoter un modèle sans le modifier.  
   
--   Interdire les modifications dans la partition par défaut, mais autoriser les modifications dans la partition de schéma. L’utilisateur peut réorganiser le diagramme, mais vous ne pouvez pas modifier le modèle sous-jacent.  
+- Interdire les modifications dans la partition par défaut, mais autoriser les modifications dans la partition de schéma. L’utilisateur peut réorganiser le diagramme, mais vous ne pouvez pas modifier le modèle sous-jacent.  
   
--   Interdire les modifications vers le Store à l’exception d’un groupe d’utilisateurs qui sont inscrits dans une base de données distincte. Pour d’autres utilisateurs, le schéma et le modèle sont en lecture seule.  
+- Interdire les modifications vers le Store à l’exception d’un groupe d’utilisateurs qui sont inscrits dans une base de données distincte. Pour d’autres utilisateurs, le schéma et le modèle sont en lecture seule.  
   
--   Interdire les modifications du modèle si une propriété booléenne du diagramme est définie sur true. Fournir une commande de menu pour modifier cette propriété. Cela permet de garantir aux utilisateurs qui ils n’effectuent pas modifie accidentellement.  
+- Interdire les modifications du modèle si une propriété booléenne du diagramme est définie sur true. Fournir une commande de menu pour modifier cette propriété. Cela permet de garantir aux utilisateurs qui ils n’effectuent pas modifie accidentellement.  
   
--   Interdire l’ajout et suppression d’éléments et les relations de classes particuliers, mais autoriser les modifications de propriété. Cela fournit aux utilisateurs un formulaire fixe dans lequel ils peuvent entrer les propriétés.  
+- Interdire l’ajout et suppression d’éléments et les relations de classes particuliers, mais autoriser les modifications de propriété. Cela fournit aux utilisateurs un formulaire fixe dans lequel ils peuvent entrer les propriétés.  
   
 ## <a name="lock-values"></a>Valeurs de verrouillage  
  Verrous peuvent être définies sur un Store, une Partition ou un ModelElement individuel. Verrous est un `Flags` énumération : vous pouvez combiner ses valeurs à l’aide de «&#124;».  
@@ -97,9 +97,9 @@ partition.SetLocks(Locks.Delete);
   
  Pour définir une stratégie de verrouillage, vous devez :  
   
--   Créez une classe qui implémente <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy>.  
+- Créez une classe qui implémente <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy>.  
   
--   Ajouter cette classe pour les services qui sont disponibles via le DocData de votre DSL.  
+- Ajouter cette classe pour les services qui sont disponibles via le DocData de votre DSL.  
   
 ### <a name="to-define-a-locking-policy"></a>Pour définir une stratégie de verrouillage  
  <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> a la définition suivante :  

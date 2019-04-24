@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: a99cdc4e8c9a4b7551574c93ad6ccdb8c44479df
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: f0d1a9e24c965af9513b3c2645bcee35f916f436
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927043"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048591"
 ---
 # <a name="troubleshoot-service-references"></a>Dépanner les références de service
 
@@ -33,9 +33,9 @@ Lorsque vous retournez un `DataSet` ou `DataTable` à partir d’un service, vou
 
 Pour corriger cette erreur :
 
-1.  Dans **l’Explorateur de solutions**, double-cliquez sur le *app.config* fichier pour l’ouvrir.
+1. Dans **l’Explorateur de solutions**, double-cliquez sur le *app.config* fichier pour l’ouvrir.
 
-2.  Recherchez le `MaxReceivedMessageSize` propriété et lui donner une plus grande valeur.
+2. Recherchez le `MaxReceivedMessageSize` propriété et lui donner une plus grande valeur.
 
 ## <a name="cannot-find-a-service-in-my-solution"></a>Impossible de trouver un service dans ma solution
 
@@ -43,17 +43,17 @@ Lorsque vous cliquez sur le **Discover** situé dans le **ajouter des référenc
 
 Pour corriger cette erreur :
 
--   Dans **l’Explorateur de solutions**, cliquez sur le projet bibliothèque du Service WCF, puis cliquez sur **Build**.
+- Dans **l’Explorateur de solutions**, cliquez sur le projet bibliothèque du Service WCF, puis cliquez sur **Build**.
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Erreur d’accès à un service sur un bureau à distance
 
-Lorsqu’un utilisateur accède à un service WCF hébergé sur le Web via une connexion Bureau à distance et l’utilisateur ne dispose pas des autorisations d’administration, l’authentification NTLM est utilisée. Si l’utilisateur ne dispose pas des autorisations d’administration, l’utilisateur peut recevoir le message d’erreur suivant : « la requête HTTP n’est pas autorisée avec le schéma d’authentification client 'Anonyme'. L’en-tête d’authentification reçu du serveur était 'NTLM'. »
+Lorsqu’un utilisateur accède à un service WCF hébergé sur le Web via une connexion Bureau à distance et l’utilisateur ne dispose pas des autorisations d’administration, l’authentification NTLM est utilisée. Si l’utilisateur ne dispose pas des autorisations d’administration, l’utilisateur peut recevoir le message d’erreur suivant : « La requête HTTP n’est pas autorisée avec le schéma d’authentification client 'Anonyme'. L’en-tête d’authentification reçu du serveur était 'NTLM'. »
 
 Pour corriger cette erreur :
 
-1.  Dans le projet de site Web, ouvrez le **propriétés** pages.
+1. Dans le projet de site Web, ouvrez le **propriétés** pages.
 
-2.  Sur le **Options de démarrage** onglet, désactivez le **l’authentification NTLM** case à cocher.
+2. Sur le **Options de démarrage** onglet, désactivez le **l’authentification NTLM** case à cocher.
 
     > [!NOTE]
     > Vous devez désactiver l’authentification NTLM uniquement pour les sites Web contenant exclusivement des services WCF. La sécurité pour les services WCF est gérée via la configuration dans le *web.config* fichier. Cela rend l’authentification NTLM inutiles.
@@ -74,19 +74,19 @@ Si le projet de service est supprimé de la solution, cette dépendance de gén�
 
 Pour corriger cette erreur, vous devrez manuellement régénérer le projet de service :
 
-1.  Dans le menu **Outils** , cliquez sur **Options**.
+1. Dans le menu **Outils**, cliquez sur **Options**.
 
-2.  Dans le **Options** boîte de dialogue, développez **projets et Solutions**, puis sélectionnez **général**.
+2. Dans le **Options** boîte de dialogue, développez **projets et Solutions**, puis sélectionnez **général**.
 
-3.  Assurez-vous que le **Show advanced les configurations de build** case à cocher est sélectionnée, puis cliquez sur **OK**.
+3. Assurez-vous que le **Show advanced les configurations de build** case à cocher est sélectionnée, puis cliquez sur **OK**.
 
-4.  Charger le projet de service WCF.
+4. Charger le projet de service WCF.
 
-5.  Dans le **Configuration Manager** boîte de dialogue, définissez la **configuration de solution Active** à **déboguer**. Pour plus d’informations, consultez [Guide pratique pour créer et modifier des configurations](../ide/how-to-create-and-edit-configurations.md).
+5. Dans le **Configuration Manager** boîte de dialogue, définissez la **configuration de solution Active** à **déboguer**. Pour plus d'informations, voir [Procédure : créer et modifier des configurations](../ide/how-to-create-and-edit-configurations.md).
 
-6.  Dans **l’Explorateur de solutions**, sélectionnez le projet de service WCF.
+6. Dans **l’Explorateur de solutions**, sélectionnez le projet de service WCF.
 
-7.  Sur le **Build** menu, cliquez sur **reconstruire** pour recréer le projet de service WCF.
+7. Sur le **Build** menu, cliquez sur **reconstruire** pour recréer le projet de service WCF.
 
 ## <a name="wcf-data-services-do-not-display-in-the-browser"></a>WCF Data Services ne s’affichent pas dans le navigateur
 
@@ -94,13 +94,13 @@ Quand il tente d’afficher une représentation XML des données dans un [!INCLU
 
 Pour corriger cette erreur, désactivez les flux RSS :
 
-1.  Dans Internet Explorer, accédez au menu **Outils** et cliquez sur **Options Internet**.
+1. Dans Internet Explorer, accédez au menu **Outils** et cliquez sur **Options Internet**.
 
-2.  Sur le **contenu** sous l’onglet le **flux** , cliquez sur **paramètres**.
+2. Sur le **contenu** sous l’onglet le **flux** , cliquez sur **paramètres**.
 
-3.  Dans le **paramètres de flux** boîte de dialogue, désactivez le **activer le mode lecture du flux** case à cocher, puis cliquez sur **OK**.
+3. Dans le **paramètres de flux** boîte de dialogue, désactivez le **activer le mode lecture du flux** case à cocher, puis cliquez sur **OK**.
 
-4.  Cliquez sur **OK** pour fermer la boîte de dialogue **Options Internet**.
+4. Cliquez sur **OK** pour fermer la boîte de dialogue **Options Internet**.
 
 ## <a name="see-also"></a>Voir aussi
 

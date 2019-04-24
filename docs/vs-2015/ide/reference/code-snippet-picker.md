@@ -15,17 +15,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 328ed2afe4c942c2db16ebca214b7a3dfa631138
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a986303025460d6ca57cd3aa836a9f61f1804461
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789833"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648833"
 ---
 # <a name="code-snippet-picker"></a>Sélecteur d'extraits de code
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 L’éditeur de code [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fournit un **sélecteur d’extraits de code** qui vous permet, en quelques clics de souris, d’insérer des blocs de code prêts à l’emploi dans le document actif.  
   
  La procédure d’affichage du **sélecteur d’extraits de code** varie en fonction du langage que vous utilisez.  
@@ -46,7 +45,7 @@ L’éditeur de code [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fournit un 
   
 - SQL : cliquez avec le bouton droit à l’emplacement voulu dans l’éditeur de code pour afficher le menu contextuel, puis cliquez sur **Insérer un extrait**.  
   
-  Dans la plupart des langages de développement Visual Studio, vous pouvez utiliser le **Gestionnaire des extraits de code** pour ajouter des dossiers à la **Liste des dossiers** dans laquelle le **sélecteur d’extraits de code** recherche les fichiers d’extraits XML. Vous pouvez également créer vos propres extraits à ajouter à la liste. Pour plus d’informations, consultez [Procédure pas à pas : création d’un extrait de code](../../ide/walkthrough-creating-a-code-snippet.md).  
+  Dans la plupart des langages de développement Visual Studio, vous pouvez utiliser le **Gestionnaire des extraits de code** pour ajouter des dossiers à la **Liste des dossiers** dans laquelle le **sélecteur d’extraits de code** recherche les fichiers d’extraits XML. Vous pouvez également créer vos propres extraits à ajouter à la liste. Pour plus d’informations, consultez [Procédure pas à pas : Création d’un extrait de Code](../../ide/walkthrough-creating-a-code-snippet.md).  
   
 ## <a name="uielement-list"></a>Liste des éléments d’interface  
  Nom d'élément  

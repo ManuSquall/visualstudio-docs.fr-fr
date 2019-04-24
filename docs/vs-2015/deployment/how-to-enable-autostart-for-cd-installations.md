@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6266f487e2e0c66e532297c3fdae3fd3e5498052
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c4bd14060517793d28e24818a051df63efb8f0e0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950500"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061097"
 ---
 # <a name="how-to-enable-autostart-for-cd-installations"></a>Procédure : Activer le démarrage automatique pour les installations depuis un CD-ROM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Lorsque vous déployez un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]
   
 ### <a name="to-enable-autostart"></a>Pour activer le démarrage automatique  
   
-1.  Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
+1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
   
-2.  Cliquez sur l’onglet **Publier**.  
+2. Cliquez sur l’onglet **Publier**.  
   
-3.  Cliquez sur le bouton **Options**.  
+3. Cliquez sur le bouton **Options**.  
   
      Le **Options de publication** boîte de dialogue s’affiche.  
   
-4.  Cliquez sur **déploiement**.  
+4. Cliquez sur **déploiement**.  
   
-5.  Sélectionnez le **installations pour CD-ROM, démarrer automatiquement l’installation lorsque le CD est inséré** case à cocher.  
+5. Sélectionnez le **installations pour CD-ROM, démarrer automatiquement l’installation lorsque le CD est inséré** case à cocher.  
   
      Un fichier Autorun.inf sera copié à l’emplacement de publication lorsque l’application est publiée.  
   

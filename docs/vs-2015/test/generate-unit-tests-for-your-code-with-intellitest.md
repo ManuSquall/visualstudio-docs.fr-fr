@@ -10,12 +10,12 @@ ms.assetid: cd9ff940-e948-4d28-a72c-b291ef5c1e90
 caps.latest.revision: 35
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c6d880ef434eafd7aee3ffbc5f7d8f80a68a4b25
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 304b26f8724413dceef8126434861bd7128d588c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790506"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085010"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Générer des tests unitaires pour votre code avec IntelliTest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ IntelliTest explore votre code .NET pour générer des données de test et une s
 ### <a name="explore-use-intellitest-to-explore-your-code-and-generate-unit-tests"></a>Exploration : Utiliser IntelliTest pour explorer votre code et générer des tests unitaires  
  Pour générer des tests unitaires, vos types doivent être publics. Sinon, [créez d’abord des tests unitaires](#NoRun) avant de les générer.  
   
-1.  Ouvrez votre solution dans Visual Studio. Ouvrez ensuite le fichier de classe comprenant les méthodes à tester.  
+1. Ouvrez votre solution dans Visual Studio. Ouvrez ensuite le fichier de classe comprenant les méthodes à tester.  
   
-2.  Cliquez avec le bouton droit sur une méthode dans votre code et choisissez **Exécuter IntelliTest** pour générer des tests unitaires pour le code de votre méthode.  
+2. Cliquez avec le bouton droit sur une méthode dans votre code et choisissez **Exécuter IntelliTest** pour générer des tests unitaires pour le code de votre méthode.  
   
      ![Cliquer avec le bouton droit dans votre méthode pour générer des tests unitaires](../test/media/runpex.png "RunPEX")  
   
@@ -50,7 +50,7 @@ IntelliTest explore votre code .NET pour générer des données de test et une s
   
 ### <a name="persist-save-the-unit-tests-as-a-regression-suite"></a>Persistance : Enregistrer les tests unitaires comme une suite de régression  
   
-1.  Sélectionnez les lignes de données que vous souhaitez enregistrer avec le test unitaire paramétrable dans un projet de test.  
+1. Sélectionnez les lignes de données que vous souhaitez enregistrer avec le test unitaire paramétrable dans un projet de test.  
   
      ![Sélectionner des tests, puis cliquer avec le bouton droit et choisir Enregistrer](../test/media/savepextests.png "SavePEXTests")  
   
@@ -64,13 +64,13 @@ IntelliTest explore votre code .NET pour générer des données de test et une s
   
 ### <a name="assist-use-intellitest-to-focus-code-exploration"></a>Assistance : Utiliser IntelliTest pour vous concentrer sur l’exploration du code  
   
-1.  Si vous avez du code plus complexe, IntelliTest vous aide à vous concentrer sur l'exploration de votre code. Par exemple, si vous avez une méthode avec une interface comme paramètre et que plusieurs classes implémentent cette interface, IntelliTest découvre ces classes et génère un avertissement.  
+1. Si vous avez du code plus complexe, IntelliTest vous aide à vous concentrer sur l'exploration de votre code. Par exemple, si vous avez une méthode avec une interface comme paramètre et que plusieurs classes implémentent cette interface, IntelliTest découvre ces classes et génère un avertissement.  
   
      Passez en revue les avertissements et décidez de la marche à suivre.  
   
      ![Afficher les avertissements](../test/media/pexviewwarning.png "PEXViewWarning")  
   
-2.  Après avoir étudié le code et identifié les parties à tester, vous pouvez traiter l'avertissement et choisir les classes à utiliser pour tester l'interface.  
+2. Après avoir étudié le code et identifié les parties à tester, vous pouvez traiter l'avertissement et choisir les classes à utiliser pour tester l'interface.  
   
      ![Cliquer avec le bouton droit sur l’avertissement et choisir Corriger](../test/media/pexfixwarning.png "PEXFixWarning")  
   
@@ -78,14 +78,14 @@ IntelliTest explore votre code .NET pour générer des données de test et une s
   
      `[assembly: PexUseType(typeof(Camera))]`  
   
-3.  Vous pouvez à présent relancer IntelliTest pour générer un test unitaire paramétrable et des données de test en utilisant simplement la classe que vous avez corrigée.  
+3. Vous pouvez à présent relancer IntelliTest pour générer un test unitaire paramétrable et des données de test en utilisant simplement la classe que vous avez corrigée.  
   
      ![Réexécuter IntelliTest pour générer les données de test](../test/media/pexwarningsfixed.png "PEXWarningsFixed")  
   
 ### <a name="specify-use-intellitest-to-validate-correctness-properties-that-you-specify-in-code"></a>Spécification : Utiliser IntelliTest pour valider les propriétés de correction que vous spécifiez dans le code  
  Spécifiez la relation générale entre les entrées et les sorties que les tests unitaires générés doivent valider. Cette spécification est encapsulée dans une méthode qui ressemble à une méthode de test, mais qui est quantifiée de façon universelle. Il s'agit de la méthode de test unitaire paramétré, et les assertions que vous faites doivent contenir toutes les valeurs d'entrée possibles qu'IntelliTest peut générer.  
   
-##  <a name="QandALink"></a> Q et R  
+## <a name="QandALink"></a> Q et R  
   
 ### <a name="q-can-you-use-intellitest-for-unmanaged-code"></a>Q : Pouvez-vous utiliser IntelliTest pour du code non managé ?  
  **R :** Non, IntelliTest fonctionne uniquement avec du code managé.  
@@ -95,13 +95,13 @@ IntelliTest explore votre code .NET pour générer des données de test et une s
   
  Si vous avez un test qui peut réussir en dépit de certaines exceptions, vous pouvez définir l'un des attributs suivants en fonction de vos besoins au niveau de la méthode de test, de la classe de test ou de l'assembly :  
   
--   **PexAllowedExceptionAttribute**  
+- **PexAllowedExceptionAttribute**  
   
--   **PexAllowedExceptionFromTypeAttribute**  
+- **PexAllowedExceptionFromTypeAttribute**  
   
--   **PexAllowedExceptionFromTypeUnderTestAttribute**  
+- **PexAllowedExceptionFromTypeUnderTestAttribute**  
   
--   **PexAllowedExceptionFromAssemblyAttribute**  
+- **PexAllowedExceptionFromAssemblyAttribute**  
   
 ### <a name="q-can-i-add-assumptions-to-the-parameterized-unit-test"></a>Q : puis-je ajouter des hypothèses au test unitaire paramétrable ?  
  **R :** Oui, utilisez des hypothèses afin de spécifier les données de test non nécessaires pour le test unitaire d’une méthode spécifique. Utilisez la classe <xref:Microsoft.Pex.Framework.PexAssume> pour ajouter des hypothèses. Par exemple, vous pouvez ajouter une hypothèse selon laquelle la variable lengths n'a pas la valeur NULL.  
@@ -117,7 +117,7 @@ IntelliTest explore votre code .NET pour générer des données de test et une s
   
  Si vous ajoutez une assertion et que vous relancez IntelliTest, ce dernier vérifie que votre assertion est valide et le test échoue si elle ne l’est pas.  
   
-###  <a name="NoRun"></a> Q : Puis-je générer des tests unitaires paramétrables sans exécuter auparavant IntelliTest ?  
+### <a name="NoRun"></a> Q : Puis-je générer des tests unitaires paramétrables sans exécuter auparavant IntelliTest ?  
  **R :** Oui, cliquez avec le bouton droit sur la classe ou la méthode, puis choisissez **Créer IntelliTest**.  
   
  ![Cliquer avec le bouton droit sur l’éditeur, choisir Créer IntelliTest](../test/media/pexcreateintellitest.png "PEXCreateIntelliTest")  

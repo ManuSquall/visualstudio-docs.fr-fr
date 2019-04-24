@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e63b1d767fca3514f6f765c56362d0e395496fc4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 26dc068ca15de93cc2b0a3ac68b83d1d351bcad4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793303"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110594"
 ---
 # <a name="walkthrough-creating-a-realistic-3-d-billiard-ball"></a>Procédure pas à pas : Création d’une boule de billard 3D réaliste
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,22 +23,22 @@ Cette procédure pas à pas montre comment créer une boule de billard 3D réali
   
  Ce document illustre ces activités :  
   
--   Création de l’apparence de base d’une boule de billard à l’aide des outils de forme et de texture  
+- Création de l’apparence de base d’une boule de billard à l’aide des outils de forme et de texture  
   
--   Ajout de profondeur à l’aide du modèle d’éclairage Lambert  
+- Ajout de profondeur à l’aide du modèle d’éclairage Lambert  
   
--   Amélioration de l’apparence de base à l’aide des surbrillances spéculaires  
+- Amélioration de l’apparence de base à l’aide des surbrillances spéculaires  
   
--   Création d’un sens de l’espace en reflétant l’environnement  
+- Création d’un sens de l’espace en reflétant l’environnement  
   
 ## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous aurez besoin des composants et compétences suivants :  
   
--   Un outil d’assemblage de textures dans un mappage de cube, tel que l’outil de texture DirectX fourni avec le SDK DirectX de juin 2010.  
+- Un outil d’assemblage de textures dans un mappage de cube, tel que l’outil de texture DirectX fourni avec le SDK DirectX de juin 2010.  
   
--   Une bonne connaissance de l’Éditeur d’images dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
+- Une bonne connaissance de l’Éditeur d’images dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
--   Une bonne connaissance du concepteur Shader dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
+- Une bonne connaissance du concepteur Shader dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
 ## <a name="creating-the-basic-appearance-with-shape-and-texture"></a>Création de l’apparence de base avec les outils de forme et de texture  
  En infographie, les éléments d’apparence les plus basiques sont la forme et la couleur. Dans une simulation sur ordinateur, il est courant d’utiliser un modèle 3D pour représenter la forme d’un objet réel. Le détail des couleurs est ensuite appliqué à la surface du modèle à l’aide d’une carte de texture.  
@@ -87,7 +87,7 @@ Cette procédure pas à pas montre comment créer une boule de billard 3D réali
   
 3. Appliquez la texture que vous avez créée lors de la procédure précédente en configurant les propriétés de texture. Affectez **Texture1** comme valeur de la propriété **Texture** du nœud **Échantillon de texture**, puis spécifiez le fichier de texture en utilisant la propriété **Nom de fichier** du groupe de propriétés **Texture1** de la même fenêtre de propriétés.  
   
-   Pour plus d’informations sur la façon d’appliquer une texture dans votre nuanceur, consultez [Guide pratique pour créer un nuanceur de texture de base](../designers/how-to-create-a-basic-texture-shader.md).  
+   Pour plus d’informations sur la façon d’appliquer une texture dans votre nuanceur, consultez [Guide pratique pour Créer un nuanceur de Texture de base](../designers/how-to-create-a-basic-texture-shader.md).  
   
    Votre boule de billard doit maintenant ressembler à ceci :  
   
@@ -108,7 +108,7 @@ Cette procédure pas à pas montre comment créer une boule de billard 3D réali
   
 - Si vous le souhaitez, vous pouvez ajuster le comportement de l’éclairage en configurant la propriété **MaterialDiffuse** du graphique de nuanceur. Pour accéder aux propriétés du graphique de nuanceur, choisissez une zone vide de l’aire de conception puis, dans la fenêtre **Propriétés**, recherchez la propriété à laquelle vous souhaitez accéder.  
   
-  Pour plus d’informations sur la façon d’appliquer l’éclairage Lambert dans votre nuanceur, consultez [Guide pratique pour créer un nuanceur Lambert de base](../designers/how-to-create-a-basic-lambert-shader.md).  
+  Pour plus d’informations sur la façon d’appliquer l’éclairage Lambert dans votre nuanceur, consultez [Guide pratique pour Créer un nuanceur Lambert de base](../designers/how-to-create-a-basic-lambert-shader.md).  
   
   Quand l’éclairage Lambert est appliqué, la boule de billard doit ressembler à ceci :  
   
@@ -129,7 +129,7 @@ Cette procédure pas à pas montre comment créer une boule de billard 3D réali
   
 2. Si vous le souhaitez, vous pouvez ajuster le comportement de la surbrillance spéculaire en configurant les propriétés spéculaires (**MaterialSpecular** et **MaterialSpecularPower**) du graphique de nuanceur. Pour accéder aux propriétés du graphique de nuanceur, choisissez une zone vide de l’aire de conception puis, dans la fenêtre **Propriétés**, recherchez la propriété à laquelle vous souhaitez accéder.  
   
-   Pour plus d’informations sur la façon d’appliquer les surbrillances spéculaires dans votre nuanceur, consultez [Guide pratique pour créer un nuanceur Phong de base](../designers/how-to-create-a-basic-phong-shader.md).  
+   Pour plus d’informations sur la façon d’appliquer les surbrillances spéculaires dans votre nuanceur, consultez [Guide pratique pour Créer un nuanceur Phong de base](../designers/how-to-create-a-basic-phong-shader.md).  
   
    Quand une mise en surbrillance spéculaire est appliquée, la boule de billard doit ressembler à ceci :  
   
@@ -215,7 +215,7 @@ Cette procédure pas à pas montre comment créer une boule de billard 3D réali
    Dans cette image finale, notez comment les effets que vous avez ajoutés se combinent pour créer une boule de billard très convaincante. La forme, la texture et l’éclairage créent l’apparence de base d’un objet 3D. Les reflets et les surbrillances spéculaires rendent la boule de billard plus intéressante et intégrée à l’environnement.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : exporter un nuanceur](../designers/how-to-export-a-shader.md)   
+ [Guide pratique pour Exporter un nuanceur](../designers/how-to-export-a-shader.md)   
  [Guide pratique pour Appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
  [Concepteur de nuanceur](../designers/shader-designer.md)   
  [Éditeur d’images](../designers/image-editor.md)   

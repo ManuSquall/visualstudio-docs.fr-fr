@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c46df4218a12c0f9a155567aeee0c007d0a19c53
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a9fc9cf214a8aebd663a7de29528790aa3cc0b46
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598204"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104224"
 ---
 # <a name="how-to-programmatically-access-outlook-contacts"></a>Procédure : Accéder par programmation aux contacts Outlook
   Cet exemple recherche tous les contacts dont le nom contient une chaîne de recherche spécifié.
@@ -32,7 +32,7 @@ ms.locfileid: "56598204"
 ## <a name="compile-the-code"></a>Compiler le code
  Cet exemple nécessite :
 
--   Les contacts dont le nom contient la chaîne «**Na «** (par exemple, Tzipi Butnaru) dans le **Contacts** dossier.
+- Les contacts dont le nom contient la chaîne «**Na «** (par exemple, Tzipi Butnaru) dans le **Contacts** dossier.
 
 ## <a name="see-also"></a>Voir aussi
 - [Utiliser des éléments de contact](../vsto/working-with-contact-items.md)

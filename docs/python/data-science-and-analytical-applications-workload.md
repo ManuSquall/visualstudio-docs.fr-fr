@@ -3,18 +3,18 @@ title: Charge de travail Applications de science et analyse des données
 description: Cette charge de travail Visual Studio regroupe Python, F# et les distributions de leur runtime respectif, Anaconda inclus. (R est inclus dans Visual Studio 2017 uniquement.)
 ms.date: 02/28/2019
 ms.topic: overview
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 44dfa13059e16338111bbeb2eb2f0bc6d6b44408
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: dbebf486680375622e6dc313a71e82f541107fc8
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324924"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366326"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Installer la prise en charge de la science des données dans Visual Studio
 
@@ -22,13 +22,13 @@ La charge de travail Applications de science et analyse des données, que vous s
 
 ::: moniker range="vs-2017"
 - [Python et Anaconda](../python/overview-of-python-tools-for-visual-studio.md)
-- [F# avec le .NET Framework](/dotnet/fsharp/)
+- [F# avec .NET Framework](/dotnet/fsharp/)
 - [R et Microsoft R Client](../rtvs/index.md)
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 - [Python](../python/overview-of-python-tools-for-visual-studio.md)
-- [F# avec le .NET Framework](/dotnet/fsharp/)
+- [F# avec .NET Framework](/dotnet/fsharp/)
 ::: moniker-end
 
 ![Charge de travail Applications de science et analyse des données dans le programme d’installation de Visual Studio](media/workload/data-science-workload.png)

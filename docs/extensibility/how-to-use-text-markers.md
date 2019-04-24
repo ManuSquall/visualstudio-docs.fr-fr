@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f847fa2ba58c8d3278a4ecec1c7d7ddc204f27e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 7575368a39aa7b6306336883327e2f7b9cafa8a8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707495"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109710"
 ---
 # <a name="how-to-use-text-markers"></a>Procédure : Utiliser des marqueurs de texte
 Marqueurs de texte peuvent être appliqués pour modifier un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> objet.
@@ -24,17 +24,17 @@ Marqueurs de texte peuvent être appliqués pour modifier un <xref:Microsoft.Vis
 
 ### <a name="to-apply-text-markers"></a>Pour appliquer des marqueurs de texte
 
-1.  Pour obtenir une instance de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> classe.
+1. Pour obtenir une instance de la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> classe.
 
     > [!NOTE]
     >  L’éditeur principal applique automatiquement des marqueurs de texte standard à tout document qu’il est en train de modifier, et il ne doit pas être nécessaire appliquer explicitement les marqueurs de texte standard.
 
-2.  Obtenir un ID de type de marqueur de la marque vous intéressent en appelant le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A> méthode avec le `GUID` du marqueur de texte que vous souhaitez travailler avec.
+2. Obtenir un ID de type de marqueur de la marque vous intéressent en appelant le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A> méthode avec le `GUID` du marqueur de texte que vous souhaitez travailler avec.
 
     > [!NOTE]
     >  N’utilisez pas le `GUID` du VSPackage ou du service qui fournit le marqueur de texte.
 
-3.  Utilisez l’ID de type de marqueur obtenu en appelant le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A> méthode en tant que paramètre pour appeler le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> méthode ou le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> méthode pour appliquer un marqueur de texte à une région donnée de texte.
+3. Utilisez l’ID de type de marqueur obtenu en appelant le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A> méthode en tant que paramètre pour appeler le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> méthode ou le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> méthode pour appliquer un marqueur de texte à une région donnée de texte.
 
 ### <a name="to-add-features-to-text-markers"></a>Pour ajouter des fonctionnalités aux marqueurs de texte
 

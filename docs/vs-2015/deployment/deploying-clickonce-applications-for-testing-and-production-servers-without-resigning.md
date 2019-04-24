@@ -20,12 +20,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2354f65e1b042682a0e58a0dbb4bc12712bb47e3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c853e24da3f203d67874d7b9740d3239abd78c14
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947685"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066596"
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Déploiement d'applications ClickOnce pour des serveurs de test et de production sans nouvelle signature
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ Cette rubrique présente une nouvelle fonctionnalité de ClickOnce présentée d
   
  Les développeurs tiers et éditeurs de logiciels peuvent participer à cette fonctionnalité, ce qui facilite pour leurs clients à mettre à jour leurs applications. Cette fonctionnalité peut être utilisée dans les situations suivantes :  
   
--   Lors de la mise à jour une application, pas la première installation d’une application.  
+- Lors de la mise à jour une application, pas la première installation d’une application.  
   
--   Lorsqu’il n'existe qu’une seule configuration de l’application sur un ordinateur. Par exemple, si une application est configurée pour pointer vers les deux bases de données, vous ne pouvez pas utiliser cette fonctionnalité.  
+- Lorsqu’il n'existe qu’une seule configuration de l’application sur un ordinateur. Par exemple, si une application est configurée pour pointer vers les deux bases de données, vous ne pouvez pas utiliser cette fonctionnalité.  
   
 ## <a name="excluding-deploymentprovider-from-deployment-manifests"></a>Exclusion de deploymentProvider de manifestes de déploiement  
  Dans le .NET Framework 2.0 et .NET Framework 3.0, toute application ClickOnce installée sur le système pour la disponibilité hors connexion doit spécifier un `deploymentProvider` dans son manifeste de déploiement. Le `deploymentProvider` est souvent appelé à l’emplacement de la mise à jour ; il est l’emplacement dans lequel ClickOnce recherchera les mises à jour de l’application. Cette exigence, associée à la nécessité pour les éditeurs d’applications se connectent leurs déploiements, rendait difficile pour une entreprise mettre à jour une application ClickOnce à partir d’un fournisseur ou d’autres fournisseurs tiers. Elle rend également plus difficile à déployer la même application à partir de plusieurs emplacements sur le même réseau.  

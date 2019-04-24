@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b298beadf6ffd3a59e5cdd44981a63bed1746cf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4b188be0a8ff3c8bac6dc8fd2b5474756a1565f3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951979"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090020"
 ---
 # <a name="0x2x4x-msaa-variants"></a>Variantes MSAA 0x/2x/4x
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,13 +36,13 @@ Substitue les paramètres d‘anticrénelage MSSA (Multi-Sample Anti-Aliasing) s
   
 - L'objet `D3D11_TEXTURE2D_DESC` passé dans `pDesc` décrit une cible de rendu, à savoir :  
   
-  -   L'indicateur D3D11_BIND_TARGET ou D3D11_BIND_DEPTH_STENCIL est défini pour le membre BindFlags.  
+  - L'indicateur D3D11_BIND_TARGET ou D3D11_BIND_DEPTH_STENCIL est défini pour le membre BindFlags.  
   
-  -   Le membre Usage a la valeur D3D11_USAGE_DEFAULT.  
+  - Le membre Usage a la valeur D3D11_USAGE_DEFAULT.  
   
-  -   Le membre CPUAccessFlags a la valeur 0.  
+  - Le membre CPUAccessFlags a la valeur 0.  
   
-  -   Le membre MipLevels a la valeur 1.  
+  - Le membre MipLevels a la valeur 1.  
   
 - L'appareil prend en charge le nombre d'échantillons demandé (0, 2 ou 4) et la qualité d'échantillon (0) pour le format cible de rendu demandé (membre D3D11_TEXTURE2D_DESC::Format), ce qui est déterminé par `ID3D11Device::CheckMultisampleQualityLevels`.  
   

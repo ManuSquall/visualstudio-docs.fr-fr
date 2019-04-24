@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b7817454cc2c5789975e064dec7a58d8e857a145
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6fafeeb386e1dd40067620d529cb25023d3f0f29
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947684"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087936"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Procédure : Spécifier un autre emplacement pour les mises à jour du déploiement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,27 +33,27 @@ Vous pouvez installer votre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md
   
 ### <a name="specifying-an-alternate-location-for-updates-by-using-mageuiexe-windows-forms-based-utility"></a>Spécification d’un autre emplacement pour les mises à jour à l’aide de MageUI.exe (utilitaire Windows Forms)  
   
-1.  Ouvrez une invite de commande de .NET Framework et tapez :  
+1. Ouvrez une invite de commande de .NET Framework et tapez :  
   
      **mageui.exe**  
   
-2.  Sur le **fichier** menu, choisissez **ouvrir** pour ouvrir le manifeste de déploiement de votre application.  
+2. Sur le **fichier** menu, choisissez **ouvrir** pour ouvrir le manifeste de déploiement de votre application.  
   
-3.  Sélectionnez l’onglet **Options de déploiement**.  
+3. Sélectionnez l’onglet **Options de déploiement**.  
   
-4.  Dans la zone de texte nommé **Launch Location**, entrez l’URL vers le répertoire qui contient le manifeste de déploiement des mises à jour de l’application.  
+4. Dans la zone de texte nommé **Launch Location**, entrez l’URL vers le répertoire qui contient le manifeste de déploiement des mises à jour de l’application.  
   
-5.  Enregistrez le manifeste de déploiement.  
+5. Enregistrez le manifeste de déploiement.  
   
 ### <a name="specifying-an-alternate-location-for-updates-by-using-mageexe"></a>Spécification d’un autre emplacement pour les mises à jour à l’aide de Mage.exe  
   
-1.  Ouvrez une invite de commandes du .NET Framework.  
+1. Ouvrez une invite de commandes du .NET Framework.  
   
-2.  Définissez l’emplacement de mise à jour à l’aide de la commande suivante. Dans cet exemple, **HelloWorld.exe.application** est le chemin d’accès à votre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifeste d’application, qui a toujours l’extension .application, et **http://adatum.com/Update/Path** est l’URL que [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] rechercheront des mises à jour de l’application.  
+2. Définissez l’emplacement de mise à jour à l’aide de la commande suivante. Dans cet exemple, **HelloWorld.exe.application** est le chemin d’accès à votre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifeste d’application, qui a toujours l’extension .application, et **http://adatum.com/Update/Path** est l’URL que [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] rechercheront des mises à jour de l’application.  
   
      **Mage-mettre à jour HelloWorld.exe.application - ProviderUrl http://adatum.com/Update/Path**  
   
-3.  Enregistrez le fichier.  
+3. Enregistrez le fichier.  
   
     > [!NOTE]
     >  Vous devez maintenant resigner le fichier avec Mage.exe. Pour plus d’informations, consultez [Procédure pas à pas : déploiement manuel d’une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  

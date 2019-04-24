@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cda0284bd9ae4b0f68a8bb0fa779959f52650bdd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d75bfd7634e068224b12168390193773c198957a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937348"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058523"
 ---
 # <a name="model-user-requirements"></a>Modéliser les besoins des utilisateurs
 
@@ -56,7 +56,7 @@ Vous pouvez créer plusieurs vues différentes des impératifs des utilisateurs.
 
 Notez que la plupart des types de diagrammes peuvent être utilisés à d’autres fins. Pour une vue d’ensemble des types de diagrammes, consultez [créer des modèles pour votre application](../modeling/create-models-for-your-app.md).
 
-##  <a name="BusinessRules"></a> Showing Business Rules
+## <a name="BusinessRules"></a> Showing Business Rules
 
 Une règle métier est un impératif qui n’est associé à aucun cas d’usage particulier et doit être respecté à l’échelle du système.
 
@@ -70,25 +70,25 @@ Toutefois, vous pouvez exprimer de nombreuses règles dynamiques plus efficaceme
 
 Notez qu’ici le choix porte sur la façon dont vous définissez les impératifs et que cette décision est indépendante de la façon dont vous implémentez les impératifs dans le code du programme.
 
-Les rubriques suivantes fournissent des informations supplémentaires :
+Les rubriques suivantes fournissent des informations supplémentaires :
 
 |Pour en savoir plus sur|Lecture|
 |-|-|
 |Comment développer du code qui respecte des règles métier|[Modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md)|
 
-##  <a name="QoSRequirements"></a> Describing Quality of Service Requirements
+## <a name="QoSRequirements"></a> Describing Quality of Service Requirements
 
-Il existe plusieurs catégories d’impératifs de qualité de service. Il s'agit notamment des catégories suivantes :
+Il existe plusieurs catégories d’impératifs de qualité de service. Il s'agit notamment des types suivants :
 
--   Performances
+- Performances
 
--   Sécurité
+- Sécurité
 
--   Facilité d'utilisation
+- Facilité d'utilisation
 
--   Fiabilité
+- Fiabilité
 
--   Robustesse
+- Robustesse
 
 Vous pouvez inclure certains de ces impératifs dans les descriptions de cas d’usage particuliers. D’autres impératifs ne sont spécifiques à aucun cas d’usage et il est plus efficace de les rédiger dans un document distinct. Dans la mesure du possible, essayez d’adhérer à la terminologie définie par le modèle d’impératifs. Dans l’exemple suivant, notez que les principaux termes utilisés dans l’impératif sont les titres des acteurs, des cas d’usage et des classes des illustrations précédentes :
 

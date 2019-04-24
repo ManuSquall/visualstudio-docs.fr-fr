@@ -19,17 +19,16 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 79900957453464ea5f5dcf338f447dbe01399d11
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: cc6c7af3732f2f96ad53651b146898b655b68fdd
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760094"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647925"
 ---
 # <a name="security-page-project-designer"></a>Page Sécurité, Concepteur de projets
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 La page **Sécurité** du **Concepteur de projets** permet de configurer les paramètres de sécurité d’accès du code pour les applications qui sont déployées à l’aide d’un déploiement [!INCLUDE[ndptecclick](../../includes/ndptecclick-md.md)]. Pour plus d’informations, consultez [Sécurité d’accès du code pour les applications ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md).  
   
  Pour accéder à la page **Sécurité**, cliquez sur un nœud de projet dans **l’Explorateur de solutions**, puis cliquez sur **Propriétés** dans le menu **Projet**. Quand le **Concepteur de projets** apparaît, cliquez sur l’onglet **Sécurité**.  
@@ -41,7 +40,7 @@ La page **Sécurité** du **Concepteur de projets** permet de configurer les par
 > [!NOTE]
 >  Lors de la publication d’une application à l’aide de l’Assistant **Publication**, cette option est automatiquement activée.  
   
- Quand vous sélectionnez cette option, vous avez la possibilité de sélectionner l’une des deux cases d’option suivantes : **Il s’agit d’une application de confiance totale** ou **Il s’agit d’une application de confiance partielle**.  
+ Quand vous sélectionnez cette option, vous pouvez choisir l’une des deux cases d’option suivantes : **Il s’agit d’une application de confiance totale** ou **Il s’agit d’une application de confiance partielle**.  
   
  Cette option est sélectionnée par défaut pour les projets d’application de navigateur web WPF.  
   
@@ -75,10 +74,10 @@ La page **Sécurité** du **Concepteur de projets** permet de configurer les par
  <xref:System.Security.Permissions.WebBrowserPermission>   
  <xref:System.Security.Permissions.MediaPermission>   
  [Sécurité d’accès du code pour les applications ClickOnce](../../deployment/code-access-security-for-clickonce-applications.md)   
- [Guide pratique pour activer les paramètres de sécurité ClickOnce](../../deployment/how-to-enable-clickonce-security-settings.md)   
- [Guide pratique pour définir une zone de sécurité pour une application ClickOnce](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
- [Guide pratique pour définir des autorisations personnalisées pour une application ClickOnce](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
- [Guide pratique pour déboguer une application ClickOnce avec des autorisations restreintes](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [Guide pratique pour Activer les paramètres de sécurité ClickOnce](../../deployment/how-to-enable-clickonce-security-settings.md)   
+ [Guide pratique pour Définir une Zone de sécurité pour une Application ClickOnce](../../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)   
+ [Guide pratique pour Définir des autorisations personnalisées pour une Application ClickOnce](../../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   
+ [Guide pratique pour Déboguer une Application ClickOnce avec des autorisations restreintes](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
  [Sécurité et déploiement ClickOnce](../../deployment/clickonce-security-and-deployment.md)   
  [Informations de référence sur les propriétés de projet](../../ide/reference/project-properties-reference.md)   
  [Paramètres de sécurité avancés, boîte de dialogue](../../ide/reference/advanced-security-settings-dialog-box.md)

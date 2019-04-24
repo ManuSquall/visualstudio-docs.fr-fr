@@ -11,10 +11,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7ea593ad5f88ba29f6b1c0d7c64a129b8f71c7f5
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58857072"
 ---
 # <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Questions fréquentes sur le débogage d’instantané dans Visual Studio
@@ -60,7 +60,7 @@ Le Débogueur de capture instantanée doit ouvrir un ensemble de ports pour déb
 ## <a name="see-also"></a>Voir aussi
 
 - [Débogage dans Visual Studio](../debugger/index.md)
-- [Déboguer des applications ASP.NET en production avec le Débogueur de capture instantanée](../debugger/debug-live-azure-applications.md)
-- [Déboguer des machines virtuelles\groupes de machines virtuelles identiques Azure ASP.NET en production à l’aide du Débogueur de capture instantanée](../debugger/debug-live-azure-virtual-machines.md)
-- [Déboguer Azure Kubernetes ASP.NET en production avec le Débogueur de capture instantanée](../debugger/debug-live-azure-kubernetes.md)
-- [Résolution des problèmes et problèmes connus du débogage d’instantané](../debugger/debug-live-azure-apps-troubleshooting.md)
+- [Déboguer des applications ASP.NET en production à l’aide du débogueur de capture instantanée](../debugger/debug-live-azure-applications.md)
+- [Débogage en direct ASP.NET Azure virtuel Machines\Virtual Machines identiques à l’aide du débogueur de capture instantanée](../debugger/debug-live-azure-virtual-machines.md)
+- [Déboguer ASP.NET Azure Kubernetes en direct à l’aide du débogueur de capture instantanée](../debugger/debug-live-azure-kubernetes.md)
+- [Problèmes connus et dépannage pour le débogage d’instantané](../debugger/debug-live-azure-apps-troubleshooting.md)

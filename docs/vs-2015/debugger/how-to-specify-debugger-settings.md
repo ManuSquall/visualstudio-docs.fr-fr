@@ -23,12 +23,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4ad4e95f9032c3182da3fe59cee16e4ccc3066c4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 54cb1f67aa1738126fd78e2406c076a4fefa8823
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953547"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051454"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Procédure : spécifier les paramètres du débogueur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vous pouvez utiliser divers p
 
 ### <a name="to-set-debugger-options"></a>Pour définir les options du débogueur
 
-1.  Dans le menu **Outils**, cliquez sur **Options**.  
+1. Dans le menu **Outils**, cliquez sur **Options**.  
 
-2.  Dans la boîte de dialogue **Options**, ouvrez le dossier **Débogage**.  
+2. Dans la boîte de dialogue **Options**, ouvrez le dossier **Débogage**.  
 
-3.  Dans le dossier **Débogage**, choisissez la catégorie d’options souhaitée.  
+3. Dans le dossier **Débogage**, choisissez la catégorie d’options souhaitée.  
 
      Les options les plus courantes se trouvent dans la catégorie **général**. Pour plus d’informations, consultez [Général, Débogage, Boîte de dialogue Options](../debugger/general-debugging-options-dialog-box.md).  
 
-4.  Activez ou désactivez les options souhaitées. Appuyez sur F1 pour obtenir de l'aide concernant les options.
+4. Activez ou désactivez les options souhaitées. Appuyez sur F1 pour obtenir de l'aide concernant les options.  
 
 ## <a name="see-also"></a>Voir aussi
  [Général, Débogage, boîte de dialogue Options](../debugger/general-debugging-options-dialog-box.md)

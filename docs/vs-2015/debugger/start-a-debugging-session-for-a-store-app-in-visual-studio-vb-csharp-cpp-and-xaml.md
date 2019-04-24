@@ -34,12 +34,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 129b94087b19ebed9f95ec29dd093f3c18e42e87
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fc5dfaa203e3e915075ad819fa859be46b9e2b7a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947908"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095345"
 ---
 # <a name="start-a-debugging-session-for-a-store-app-in-visual-studio-vb-c-c-and-xaml"></a>Démarrer une session de débogage pour une application du Windows Store dans Visual Studio (VB, C#, C++ et XAML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 > [!NOTE]
 >  Pour les applications écrites en JavaScript et HTML, consultez [démarrer une session de débogage (JavaScript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md).
 
-##  <a name="BKMK_In_this_topic"></a> Dans cette rubrique
+## <a name="BKMK_In_this_topic"></a> Dans cette rubrique
  [La méthode simple pour démarrer le débogage](#BKMK_The_easy_way_to_start_debugging)
 
  [Configurer la session de débogage](#BKMK_Configure_the_debugging_session)
@@ -82,41 +82,41 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 
 - [Attacher le débogueur à une application en cours de exécution](#BKMK_Attach_the_debugger_to_a_running_app_)
 
-  -   [Configurer l'application pour l'exécuter en mode débogage](#BKMK_Set_the_app_to_run_in_debug_mode)
+  - [Configurer l'application pour l'exécuter en mode débogage](#BKMK_Set_the_app_to_run_in_debug_mode)
 
-  -   [Attacher le débogueur](#BKMK_Attach_the_debugger)
+  - [Attacher le débogueur](#BKMK_Attach_the_debugger)
 
-##  <a name="BKMK_The_easy_way_to_start_debugging"></a> La méthode simple pour démarrer le débogage
+## <a name="BKMK_The_easy_way_to_start_debugging"></a> La méthode simple pour démarrer le débogage
 
 1. Ouvrez la solution d'application dans Visual Studio.
 
 2. Appuyez sur F5.
 
-   Visual Studio génère et démarre l'application avec le débogueur attaché. L'exécution se poursuit jusqu'à ce qu'un point d'arrêt soit atteint, que vous suspendiez manuellement l'exécution, qu'une exception non gérée se produise ou que l'application se termine. Pour plus d’informations, consultez [parcourir une session de débogage (Xaml et C#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md) .
+   Visual Studio génère et démarre l'application avec le débogueur attaché. L'exécution se poursuit jusqu'à ce qu'un point d'arrêt soit atteint, que vous suspendiez manuellement l'exécution, qu'une exception non gérée se produise ou que l'application se termine. Pour plus d’informations, consultez [parcourir une session de débogage (Xaml et c#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md) .
 
-##  <a name="BKMK_Configure_the_debugging_session"></a> Configurer la session de débogage
+## <a name="BKMK_Configure_the_debugging_session"></a> Configurer la session de débogage
 
-###  <a name="BKMK_Open_the_debugging_property_page_for_the_project"></a> Ouvrir la page des propriétés de débogage du projet
+### <a name="BKMK_Open_the_debugging_property_page_for_the_project"></a> Ouvrir la page des propriétés de débogage du projet
 
-1.  Dans l'Explorateur de solutions, sélectionnez le projet. Dans le menu contextuel, choisissez **Propriétés**.
+1. Dans l'Explorateur de solutions, sélectionnez le projet. Dans le menu contextuel, choisissez **Propriétés**.
 
-2.  Cela permet d'ouvrir la page des propriétés de débogage du projet :
+2. Cela permet d'ouvrir la page des propriétés de débogage du projet :
 
-    -   Pour les applications Visual C# et Visual Basic, choisissez **Déboguer**.
+    - Pour les applications Visual C# et Visual Basic, choisissez **Déboguer**.
 
          ![C&#35; &#47; page de propriétés de débogage de projets VB](../debugger/media/dbg-csvb-debugpropertypage.png "DBG_CsVb_DebugPropertyPage")
 
-    -   Pour les applications Visual C++, développez le nœud **Propriétés de configuration**  , puis choisissez **Débogage**.
+    - Pour les applications Visual C++, développez le nœud **Propriétés de configuration**  , puis choisissez **Débogage**.
 
          ![C&#43; &#43; page de propriétés de débogage de l’application Windows Store](../debugger/media/dbg-cpp-debugpropertypage.png "DBG_CPP_DebugPropertyPage")
 
-###  <a name="BKMK_Choose_the_build_configuration_options"></a> Choisir les options de configuration de build
+### <a name="BKMK_Choose_the_build_configuration_options"></a> Choisir les options de configuration de build
 
-1.  Dans la liste **Configuration** , choisissez **Déboguer** ou **(Debug) active**.
+1. Dans la liste **Configuration** , choisissez **Déboguer** ou **(Debug) active**.
 
-2.  Dans la liste **Plateforme** , sélectionnez la plateforme cible à générer. Dans la plupart des cas, **Any CPU** (**Toutes les plateformes** dans Visual C++) est le meilleur choix.
+2. Dans la liste **Plateforme** , sélectionnez la plateforme cible à générer. Dans la plupart des cas, **Any CPU** (**Toutes les plateformes** dans Visual C++) est le meilleur choix.
 
-###  <a name="BKMK_Choose_the_deployment_target"></a> Sélectionner la cible de déploiement
+### <a name="BKMK_Choose_the_deployment_target"></a> Sélectionner la cible de déploiement
  ![S’applique uniquement à Windows](../debugger/media/windows-only-content.png "windows_only_content")
 
  Vous pouvez déployer et déboguer une application Windows Store sur l'ordinateur Visual Studio, dans le simulateur Visual Studio sur l'ordinateur local ou sur un appareil distant.
@@ -137,9 +137,9 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 
 - Entrez le nom ou l'adresse IP de l'ordinateur distant.
 
-  -   Pour les applications C# et Visual Basic, entrez le nom ou l'adresse IP dans la zone **Ordinateur distant** .
+  - Pour les applications C# et Visual Basic, entrez le nom ou l'adresse IP dans la zone **Ordinateur distant** .
 
-  -   Pour les applications C++, entrez le nom ou l'adresse IP dans la zone **Nom de l'ordinateur** .
+  - Pour les applications C++, entrez le nom ou l'adresse IP dans la zone **Nom de l'ordinateur** .
 
 - Choisissez l'ordinateur distant dans la boîte de dialogue **Sélectionner une connexion du débogueur distant** .
 
@@ -158,7 +158,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 
   Vous pouvez déployer et déboguer une application Windows Phone Store sur un appareil ou sur l'un des émulateurs Windows Phone de Visual Studio. Sélectionnez l'appareil ou l'émulateur dans la liste **Appareil cible** .
 
-###  <a name="BKMK_Choose_the_debugger_to_use"></a> Choisir le débogueur à utiliser
+### <a name="BKMK_Choose_the_debugger_to_use"></a> Choisir le débogueur à utiliser
  Par défaut, Visual Studio débogue le code managé dans des applications C# et Visual Basic.
 
  Pour les applications C# et Visual Basic, vous pouvez choisir de déboguer le code managé et natif C/C++ dans votre application. Activez la case à cocher **Activer le débogage de code non managé** pour inclure le code natif dans votre session de débogage.
@@ -181,30 +181,30 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 
  Pour les applications Windows Phone Store, vous pouvez aussi choisir d'utiliser le débogueur pour les processus en arrière-plan à partir de **Processus de tâche en arrière-plan**.
 
-###  <a name="BKMK__Optional__Delay_starting_the_debug_session"></a> Différer le démarrage de la session de débogage (facultatif)
+### <a name="BKMK__Optional__Delay_starting_the_debug_session"></a> Différer le démarrage de la session de débogage (facultatif)
  Par défaut, Visual Studio démarre immédiatement l'application lorsque vous démarrez le débogage. Vous pouvez également démarrer une session de débogage et retarder le démarrage de votre application. Lorsque vous choisissez cette option, l'application est lancée dans le débogueur lorsqu'elle est lancée depuis l'écran Démarrer ou par un contrat d'activation, ou lorsqu'elle est démarrée par un autre processus ou méthode. Vous pouvez également différer le démarrage de votre application lorsque vous souhaitez déboguer une tâche en arrière-plan alors que l'application proprement dite n'est pas en cours d'exécution.
 
  Pour différer le lancement de votre application, vous pouvez :
 
--   Pour les applications Visual C# et Visual Basic, sélectionnez **Ne pas lancer, mais déboguer mon code au démarrage** dans la page des propriétés **Déboguer** .
+- Pour les applications Visual C# et Visual Basic, sélectionnez **Ne pas lancer, mais déboguer mon code au démarrage** dans la page des propriétés **Déboguer** .
 
--   Pour les applications Visual C++, choisissez **Oui** dans la liste **Lancer l'application** sur la page des propriétés **Débogage** .
+- Pour les applications Visual C++, choisissez **Oui** dans la liste **Lancer l'application** sur la page des propriétés **Débogage** .
 
-###  <a name="BKMK__Optional__Disable_network_loopbacks"></a> Désactiver les bouclages de réseau (facultatif)
+### <a name="BKMK__Optional__Disable_network_loopbacks"></a> Désactiver les bouclages de réseau (facultatif)
  ![S’applique uniquement à Windows](../debugger/media/windows-only-content.png "windows_only_content")
 
  Pour des raisons de sécurité, une application Windows Store installée en mode standard n'est pas autorisée à effectuer des appels réseau vers le périphérique sur lequel elle est installée. Par défaut, le déploiement Visual Studio crée une exemption à cette règle pour l'application déployée. Cette exemption vous permet de tester les procédures de communication sur un seul ordinateur. Avant d'envoyer votre application au Windows Store, vous devez la tester sans l'exemption.
 
  Pour supprimer l'exemption du bouclage de réseau :
 
--   Pour les applications Visual C# et Visual Basic, désactivez la case à cocher **Autoriser le bouclage de réseau local** sur la page des propriétés **Déboguer** .
+- Pour les applications Visual C# et Visual Basic, désactivez la case à cocher **Autoriser le bouclage de réseau local** sur la page des propriétés **Déboguer** .
 
--   Pour les applications Visual C++, choisissez **Non** dans la liste **Autoriser le bouclage de réseau local** sur la page des propriétés **Débogage** .
+- Pour les applications Visual C++, choisissez **Non** dans la liste **Autoriser le bouclage de réseau local** sur la page des propriétés **Débogage** .
 
-###  <a name="BKMK__Optional__Reinstall_the_app_when_you_start_debugging"></a> Réinstaller l'application au démarrage du débogage (facultatif)
+### <a name="BKMK__Optional__Reinstall_the_app_when_you_start_debugging"></a> Réinstaller l'application au démarrage du débogage (facultatif)
  Pour diagnostiquer les problèmes liés à l'installation et à la configuration initiale de votre application Visual C# ou Visual Basic, choisissez **Désinstaller et réinstaller mon package** sur la page des propriétés **Déboguer**  pour recréer une installation d'origine lorsque vous démarrez le débogage. Cette option n'est pas disponible pour les projets Visual C++.
 
-###  <a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a> (Facultatif) Désactivez la condition d'authentification pour démarrer le débogueur distant
+### <a name="BKMK__Optional__Disable_authentication_requirement_to_start_the_remote_debugger"></a> (Facultatif) Désactivez la condition d'authentification pour démarrer le débogueur distant
  ![S’applique uniquement à Windows](../debugger/media/windows-only-content.png "windows_only_content")
 
  Par défaut, vous devez fournir des informations d'identification pour exécuter le débogueur distant.
@@ -220,19 +220,19 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 
    [Dans cette rubrique](#BKMK_In_this_topic)
 
-##  <a name="BKMK_Start_the_debugging_session"></a> Démarrer la session de débogage
+## <a name="BKMK_Start_the_debugging_session"></a> Démarrer la session de débogage
 
-###  <a name="BKMK_Start_debugging__F5_"></a> Démarrer le débogage (F5)
+### <a name="BKMK_Start_debugging__F5_"></a> Démarrer le débogage (F5)
  Lorsque vous choisissez **démarrer le débogage** (clavier : F5) sur le **déboguer** menu, Visual Studio lance l’application avec le débogueur attaché. L'exécution se poursuit jusqu'à ce qu'un point d'arrêt soit atteint, que vous suspendiez manuellement l'exécution, qu'une exception se produise ou que l'application se termine.
 
-###  <a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a> Démarrer le débogage (F5), mais différer le démarrage de l'application
+### <a name="BKMK_Start_debugging__F5__but_delay_the_app_start"></a> Démarrer le débogage (F5), mais différer le démarrage de l'application
  Vous pouvez configurer l'application pour s'exécuter en mode débogage, mais la démarrer par une autre méthode que le débogueur. Vous pouvez par exemple déboguer le lancement de votre application depuis le menu Démarrer ou déboguer un processus en arrière-plan dans l'application sans la démarrer. Procédez comme suit pour retarder le démarrage de l'application :
 
 - Dans la page des propriétés **Débogage** de l'application (**Déboguer** dans Visual C++)
 
-  -   Pour les applications Visual C# et Visual Basic, choisissez **Ne pas lancer, mais déboguer mon code au démarrage**.
+  - Pour les applications Visual C# et Visual Basic, choisissez **Ne pas lancer, mais déboguer mon code au démarrage**.
 
-  -   Pour les applications Visual C++, choisissez **Oui** dans la liste **Lancer l'application** .
+  - Pour les applications Visual C++, choisissez **Oui** dans la liste **Lancer l'application** .
 
 - Choisissez **démarrer le débogage** sur le **déboguer** menu (clavier : F5).
 
@@ -242,7 +242,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 
   . Pour plus d’informations sur le débogage des tâches en arrière-plan, consultez [déclencheur suspendre, reprendre, événements et d’arrière-plan pour le Windows Store)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).
 
-###  <a name="BKMK_Start_an_installed_app_in_the_debugger"></a> Démarrer une application installée dans le débogueur
+### <a name="BKMK_Start_an_installed_app_in_the_debugger"></a> Démarrer une application installée dans le débogueur
  Lorsque vous lancez le débogage en appuyant sur la touche F5, Visual Studio génère et déploie l'application, la configure pour s'exécuter en mode débogage, puis la démarre. Pour démarrer une application déjà installée sur un périphérique, utilisez la boîte de dialogue Déboguer le package d'application déjà installé. Cette procédure est utile lorsque vous devez déboguer une application installée depuis Windows Store, ou lorsque vous disposez des fichiers source de l'application, mais pas de projet Visual Studio pour cette dernière. Par exemple, vous pouvez avoir un système de génération personnalisée qui n'utilise pas les projets ou les solutions Visual Studio.
 
  Vous pouvez installer l'application sur le périphérique local ou sur un périphérique distant.  Vous pouvez démarrer l'application immédiatement, ou bien la configurer pour s'exécuter dans le débogueur au démarrage de ce dernier par un autre processus ou une autre méthode, depuis le menu Démarrer ou par un contrat d'activation, par exemple. Vous pouvez également configurer l'application pour s'exécuter en mode débogage lorsque vous souhaitez déboguer un processus en arrière-plan sans démarrer l'application. Pour plus d’informations, consultez [déclencheur suspendre, reprendre, événements et d’arrière-plan pour le Windows Store)](../debugger/how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio.md).
@@ -256,13 +256,11 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 
 2. Choisissez l'une des options suivantes dans la liste :
 
-
    |                    |                                                                                                                                                                                                                                                                                                                                                                                                           |
    |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    | **Ordinateur local**  |                                                                                                                Déboguez l'application dans la session active sur votre ordinateur local. Consultez [Run Windows Store des applications sur l’ordinateur local](../debugger/run-windows-store-apps-on-the-local-machine.md).                                                                                                                 |
    |   **Simulateur**    | Déboguez l'application dans le simulateur Visual Studio pour les applications [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] . Le simulateur est une fenêtre du Bureau qui permet de déboguer les fonctionnalités du périphérique, comme les mouvements tactiles et la rotation du périphérique, qui ne sont pas disponibles sur l'ordinateur local. Consultez [Run Windows Store des applications dans le simulateur](../debugger/run-windows-store-apps-in-the-simulator.md). |
    | **Ordinateur distant** |                          Déboguez l'application sur un périphérique qui est connecté à l'ordinateur local sur un intranet ou directement connecté via un câble Ethernet. Pour déboguer à distance, les outils de contrôle à distance Visual Studio doivent être installés et en cours d'exécution sur le périphérique distant. Consultez [applications Run Windows Store sur un ordinateur distant](../debugger/run-windows-store-apps-on-a-remote-machine.md).                           |
-
 
 3. Choisissez l'application dans la liste **Packages d'application installés** .
 
@@ -272,32 +270,32 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 
    Lorsque vous cliquez sur **Démarrer**, l'application démarre ou est configurée pour s'exécuter en mode débogage.
 
-###  <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a> Attacher le débogueur à une application en cours de exécution
+### <a name="BKMK_Attach_the_debugger_to_a_running_app_"></a> Attacher le débogueur à une application en cours de exécution
  Pour attacher le débogueur à une application [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] , vous devez utiliser Debuggable Package Manager pour configurer l'application à exécuter en mode débogage. Debuggable Package Manager est installé avec les outils de contrôle à distance Visual Studio.
 
  Attacher le débogueur à une application est utile lorsque vous devez déboguer une application déjà installée, telle qu'une application qui a été installée à partir de [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)]. L'attachement est requis lorsque vous possédez les fichiers sources de l'application, mais que vous n'avez pas de projet Visual Studio pour l'application. Par exemple, vous pouvez avoir un système de génération personnalisée qui n'utilise pas les projets ou les solutions Visual Studio.
 
  Attacher le débogueur à une application nécessite les étapes suivantes :
 
-1.  Configurez l'application pour l'exécuter en mode débogage. Cela doit s'effectuer lorsque l'application n'est pas en cours d'exécution.
+1. Configurez l'application pour l'exécuter en mode débogage. Cela doit s'effectuer lorsque l'application n'est pas en cours d'exécution.
 
-2.  Démarrez l'application. Vous pouvez démarrer l'application à partir de l'écran Démarre, avec un contrat d'exécution ou tout autre méthode.
+2. Démarrez l'application. Vous pouvez démarrer l'application à partir de l'écran Démarre, avec un contrat d'exécution ou tout autre méthode.
 
-3.  Attacher le débogueur à l'application en cours d'exécution.
+3. Attacher le débogueur à l'application en cours d'exécution.
 
-####  <a name="BKMK_Set_the_app_to_run_in_debug_mode"></a> Configurer l'application pour l'exécuter en mode débogage
+#### <a name="BKMK_Set_the_app_to_run_in_debug_mode"></a> Configurer l'application pour l'exécuter en mode débogage
 
-1.  Installez les outils de contrôle à distance Visual Studio sur le périphérique où l'application est installée. Consultez la page [Installation des outils de contrôle à distance](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx#BKMK_Installing_the_Remote_Tools).
+1. Installez les outils de contrôle à distance Visual Studio sur le périphérique où l'application est installée. Consultez la page [Installation des outils de contrôle à distance](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx#BKMK_Installing_the_Remote_Tools).
 
-2.  Sur l'écran Démarrer, recherchez `Debuggable Package Manager` , puis démarrez-le.
+2. Sur l'écran Démarrer, recherchez `Debuggable Package Manager` , puis démarrez-le.
 
      Une fenêtre PowerShell correctement configurée pour l'applet de commande AppxDebug s'affiche.
 
-3.  Pour activer le débogage d'une application, vous devez spécifier l'identificateur PackageFullName de l'application. Pour afficher une liste de toutes les applications qui incluent PackageFullName, entrez `Get-AppxPackage` à l'invite de PowerShell.
+3. Pour activer le débogage d'une application, vous devez spécifier l'identificateur PackageFullName de l'application. Pour afficher une liste de toutes les applications qui incluent PackageFullName, entrez `Get-AppxPackage` à l'invite de PowerShell.
 
-4.  À l'invite de PowerShell, entrez `Enable-AppxDebug` *PackageFullName* , où *PackageFullName* est l'identificateur PackageFullName de l'application.
+4. À l'invite de PowerShell, entrez `Enable-AppxDebug` *PackageFullName* , où *PackageFullName* est l'identificateur PackageFullName de l'application.
 
-####  <a name="BKMK_Attach_the_debugger"></a> Attacher le débogueur
+#### <a name="BKMK_Attach_the_debugger"></a> Attacher le débogueur
  Pour attacher le débogueur :
 
 1. Dans le menu **Débogage** , sélectionnez **Attacher au processus**.
@@ -306,19 +304,19 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 
 2. Pour attacher une application sur un périphérique distant, spécifiez le périphérique distant dans la zone **Qualificateur** . Vous pouvez :
 
-   -   Entrez le nom dans la zone **Qualificateur** .
+   - Entrez le nom dans la zone **Qualificateur** .
 
-   -   Cliquez sur la flèche Bas dans la zone **Qualificateur** , puis choisissez le périphérique dans une liste que vous avez associée précédemment.
+   - Cliquez sur la flèche Bas dans la zone **Qualificateur** , puis choisissez le périphérique dans une liste que vous avez associée précédemment.
 
-   -   Choisissez **Rechercher** pour sélectionner le périphérique dans une liste de périphériques sur votre sous-réseau local.
+   - Choisissez **Rechercher** pour sélectionner le périphérique dans une liste de périphériques sur votre sous-réseau local.
 
 3. Spécifiez le type de code à déboguer dans la zone **Attacher à** .
 
     Choisissez **Sélectionner** , puis effectuez l'une des opérations suivantes :
 
-   -   Choisissez **Déterminer automatiquement le type de code à déboguer**
+   - Choisissez **Déterminer automatiquement le type de code à déboguer**
 
-   -   Choisissez **Déboguer ces types de codes** , puis sélectionnez un ou plusieurs types dans la liste.
+   - Choisissez **Déboguer ces types de codes** , puis sélectionnez un ou plusieurs types dans la liste.
 
 4. Dans la liste **Processus disponibles**  , sélectionnez le processus de l'application.
 

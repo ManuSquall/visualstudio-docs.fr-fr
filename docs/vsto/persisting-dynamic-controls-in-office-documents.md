@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 48b2cc1402243bfedb7b22280b4a161235cb9957
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 8fd44d535cd8a9920ebc3de37d0c483a19dac8f8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863511"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117978"
 ---
 # <a name="persist-dynamic-controls-in-office-documents"></a>Conserver les contrôles dynamiques dans les documents Office
 
@@ -76,11 +76,11 @@ Dans les compléments VSTO, les contrôles sont supprimés mais les wrappers Act
 
 Vous pouvez recréer des contrôles Windows Forms supprimés lorsque l’utilisateur ouvre de nouveau le document. Pour ce faire, votre solution doit effectuer les tâches suivantes :
 
-1.  Stocker des informations sur la taille, l’emplacement et l’état des contrôles lorsque le document est enregistré ou fermé. Dans une personnalisation au niveau du document, vous pouvez enregistrer les données dans le cache de données dans le document. Dans un complément VSTO, vous pouvez enregistrer les données à une partie XML personnalisée dans le document.
+1. Stocker des informations sur la taille, l’emplacement et l’état des contrôles lorsque le document est enregistré ou fermé. Dans une personnalisation au niveau du document, vous pouvez enregistrer les données dans le cache de données dans le document. Dans un complément VSTO, vous pouvez enregistrer les données à une partie XML personnalisée dans le document.
 
-2.  Recréez les contrôles dans un événement qui est déclenché lors de l’ouverture du document. Dans les projets au niveau du document, vous pouvez le faire dans les gestionnaires d’évènements `Sheet`*n*`_Startup` ou `ThisDocument_Startup` . Dans les projets de complément VSTO, vous pouvez le faire dans les gestionnaires d’événements pour les événements <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> ou <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> .
+2. Recréez les contrôles dans un événement qui est déclenché lors de l’ouverture du document. Dans les projets au niveau du document, vous pouvez le faire dans les gestionnaires d’évènements `Sheet`*n*`_Startup` ou `ThisDocument_Startup` . Dans les projets de complément VSTO, vous pouvez le faire dans les gestionnaires d’événements pour les événements <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookOpen> ou <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen> .
 
-###  <a name="removingActiveX"></a> Supprimer les wrappers ActiveX dans un complément
+### <a name="removingActiveX"></a> Supprimer les wrappers ActiveX dans un complément
 
 Lorsque vous ajoutez des contrôles Windows Forms dynamiques à des documents en utilisant un complément, VSTO, vous pouvez empêcher les wrappers ActiveX des contrôles d’apparaître dans le document la prochaine fois qu’il est ouvert de plusieurs manières.
 

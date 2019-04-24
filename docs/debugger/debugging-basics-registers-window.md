@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 21fafd202fd89666cedb1132d9647f2f1d95f4b9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: df01776b5a7f2437c704c2b389c7d0929be5901c
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685051"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584517"
 ---
 # <a name="about-the-registers-window-in-visual-studio-c-c-visual-basic-f"></a>À propos de la fenêtre registres dans Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -47,7 +47,23 @@ La fenêtre **Registres** est disponible uniquement si le débogage au niveau de
  La fenêtre **Registres** vous permet de faire plus que simplement afficher le contenu d'un registre. Lorsque vous êtes en mode arrêt dans du code natif, vous pouvez cliquer sur le contenu d'un Registre et modifier la valeur. Cette opération ne doit pas être réalisée à l'aveuglette. Sauf si vous comprenez le Registre que vous êtes en train de modifier et les données qu'il contient, la modification inconsidérée peut provoquer un incident du programme ou avoir d'autres conséquences non désirées. Malheureusement, l'explication détaillée des jeux de registres des différents processeurs Intel et compatibles va bien au-delà de l'objet de cette brève introduction.
 
 ## <a name="register-groups"></a>Groupes de registres
- Pour des raisons de clarté, la fenêtre **Registres** classe les registres par groupes. Si vous cliquez avec le bouton droit sur la fenêtre **Registres**, un menu contextuel contenant une liste de groupes s'affiche. Vous pouvez afficher ou masquer des groupes selon vos besoins.
+
+Pour des raisons de clarté, la fenêtre **Registres** classe les registres par groupes. Si vous cliquez avec le bouton droit sur la fenêtre **Registres**, un menu contextuel contenant une liste de groupes s'affiche. Vous pouvez afficher ou masquer des groupes selon vos besoins.
+
+## <a name="register-flags"></a>Inscrire des indicateurs
+
+Pour les processeurs Intel x86, vous pouvez voir les indicateurs suivants dans le **inscrit** fenêtre. Pendant une session de débogage, vous pouvez également modifier ces indicateurs.
+
+|Indicateur|Valeur définie|
+|-|-|
+|Dépassement|OV = 1|
+|Sens|UP = 1|
+|Interrupt|EI = 1|
+|Sign|PL = 1|
+|Zéro|ZR = 1|
+|Report auxiliaire|AC = 1|
+|Parité|PE = 1|
+|Carry|CY = 1|
 
 ## <a name="see-also"></a>Voir aussi
 - [Guide pratique pour utiliser la fenêtre Registres](../debugger/how-to-use-the-registers-window.md)

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6cd79925023a32a68ff4a9ac5f86f85d9c6798bf
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 93c30d9966dabdf7ad7b42bbad6ecbae5679e636
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843592"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070333"
 ---
 # <a name="save-data-in-project-files"></a>Enregistrer les données dans les fichiers projet
 Un sous-type de projet peut enregistrer et récupérer des données spécifiques au sous-type dans le fichier projet. Managed Package Framework (MPF) fournit deux interfaces pour accomplir cette tâche :
@@ -32,7 +32,7 @@ Un sous-type de projet peut enregistrer et récupérer des données spécifiques
 
 ### <a name="to-save-a-build-related-data-in-the-project-file"></a>Pour enregistrer une version des données liées dans le fichier projet
 
--   Appelez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> méthode pour enregistrer un chemin d’accès complet du fichier projet.
+- Appelez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> méthode pour enregistrer un chemin d’accès complet du fichier projet.
 
     ```
     private SpecializedProject project;
@@ -47,7 +47,7 @@ Un sous-type de projet peut enregistrer et récupérer des données spécifiques
 
 ### <a name="to-retrieve-build-related-data-from-the-project-file"></a>Pour récupérer la génération des données liées à partir du fichier de projet
 
--   Appelez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetPropertyValue%2A> méthode pour récupérer un chemin d’accès complet du fichier projet.
+- Appelez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetPropertyValue%2A> méthode pour récupérer un chemin d’accès complet du fichier projet.
 
     ```
     private SpecializedProject project;
@@ -64,7 +64,7 @@ Un sous-type de projet peut enregistrer et récupérer des données spécifiques
 
 ### <a name="to-save-non-build-related-data-in-the-project-file"></a>Pour enregistrer les non-génération des données liées dans le fichier projet
 
-1.  Implémentez la <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.IsFragmentDirty%2A> méthode pour déterminer si un fragment XML a été modifiée depuis son dernier enregistrée dans son fichier actuel.
+1. Implémentez la <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.IsFragmentDirty%2A> méthode pour déterminer si un fragment XML a été modifiée depuis son dernier enregistrée dans son fichier actuel.
 
     ```
     public int IsFragmentDirty(uint storage, out int pfDirty)
@@ -94,7 +94,7 @@ Un sous-type de projet peut enregistrer et récupérer des données spécifiques
     }
     ```
 
-2.  Implémentez la <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> méthode pour enregistrer les données XML dans le fichier projet.
+2. Implémentez la <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> méthode pour enregistrer les données XML dans le fichier projet.
 
     ```
     public int Save(ref Guid guidFlavor, uint storage, out string pbstrXMLFragment, int fClearDirty)
@@ -145,7 +145,7 @@ Un sous-type de projet peut enregistrer et récupérer des données spécifiques
 
 ### <a name="to-retrieve-non-build-related-data-in-the-project-file"></a>Pour récupérer des données connexes de non-build dans le fichier projet
 
-1.  Implémentez la <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.InitNew%2A> méthode pour initialiser les propriétés d’extension de projet et d’autres données indépendantes du build. Cette méthode est appelée s’il n’existe aucune donnée de configuration XML présente dans le fichier projet.
+1. Implémentez la <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.InitNew%2A> méthode pour initialiser les propriétés d’extension de projet et d’autres données indépendantes du build. Cette méthode est appelée s’il n’existe aucune donnée de configuration XML présente dans le fichier projet.
 
     ```
     public int InitNew(ref Guid guidFlavor, uint storage)
@@ -161,7 +161,7 @@ Un sous-type de projet peut enregistrer et récupérer des données spécifiques
         return VSConstants.S_OK;
     ```
 
-2.  Implémentez la <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> méthode pour charger les données XML à partir du fichier projet.
+2. Implémentez la <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> méthode pour charger les données XML à partir du fichier projet.
 
     ```
     public int Load(ref Guid guidFlavor, uint storage, string pszXMLFragment)

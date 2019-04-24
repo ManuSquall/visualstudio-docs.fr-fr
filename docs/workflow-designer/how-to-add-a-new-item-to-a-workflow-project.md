@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 44d68b83f9364885ea33af2184f2a911bf916325
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: 6f0fb6c013e3df041e750344c09fb19f8c43b254
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222332"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649587"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Procédure : Ajouter un nouvel élément à un projet de flux de travail
 
@@ -21,8 +21,7 @@ Une fois que vous avez créé un projet de flux de travail, vous pouvez ajouter 
 
 Le tableau suivant répertorie les éléments Windows Workflow Foundation (WF) que vous pouvez ajouter à un projet de flux de travail :
 
-
-| Name | Description |
+| Nom | Description |
 |-| - |
 | Activité | Activité à composer d'autres activités. Sélection de cet élément ajoute le même fichier XAML au projet que ceux obtenus lors de la sélection du **bibliothèque d’activités** modèle pour un nouveau projet. Pour plus d’informations sur cette procédure, consultez [créer un projet de flux de travail](creating-a-workflow-project.md). |
 | Concepteur d'activités | Concepteur pour personnaliser l’expérience au moment du design d’une activité. Sélection de cet élément ajoute les mêmes fichiers au projet que ceux obtenus lors de la sélection du **Bibliothèque ActivityDesigner** modèle pour un nouveau projet. |

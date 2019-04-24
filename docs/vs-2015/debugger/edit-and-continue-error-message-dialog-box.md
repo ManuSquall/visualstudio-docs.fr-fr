@@ -19,41 +19,41 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 73018dcdc34d3a824ff13da13fc12d03b8d13a7e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5437ef982309ef8595f08283f2685e93d346e764
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952040"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076626"
 ---
 # <a name="edit-and-continue-error-message-dialog-box"></a>Message d'erreur de Modifier &amp; Continuer, boîte de dialogue
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette boîte de dialogue s’affiche lorsque vous déboguez dans un langage qui prend en charge Modifier & Continuer, mais **Modifier & Continuer** n’est pas disponible pour le type de modifications du code que vous avez apportées. Le message d'erreur affiché dans la boîte de dialogue fournit une explication plus détaillée. Les raisons pouvant justifier l'affichage de cette boîte de dialogue sont les suivantes :  
   
--   Vous avez essayé de modifier un code managé alors que le débogage non managé était activé. Modifier &amp; Continuer ne fonctionne pas en débogage en mode mixte.  
+- Vous avez essayé de modifier un code managé alors que le débogage non managé était activé. Modifier &amp; Continuer ne fonctionne pas en débogage en mode mixte.  
   
--   Vous avez essayé de modifier le code SQL Server.  
+- Vous avez essayé de modifier le code SQL Server.  
   
--   Vous avez essayé de modifier le code en déboguant un Dr. Watson.  
+- Vous avez essayé de modifier le code en déboguant un Dr. Watson.  
   
--   Vous avez essayé de modifier le code après une exception non gérée s’est produite et l’option «**dérouler la pile des appels sur les exceptions non gérées**» n’a été sélectionné.  
+- Vous avez essayé de modifier le code après une exception non gérée s’est produite et l’option «**dérouler la pile des appels sur les exceptions non gérées**» n’a été sélectionné.  
   
--   Vous avez essayé de modifier le code pendant le débogage d'une application d'exécution incorporée.  
+- Vous avez essayé de modifier le code pendant le débogage d'une application d'exécution incorporée.  
   
--   Vous avez essayé de modifier le code dans un programme que vous avez attaché à plutôt que de commencer le **déboguer** menu.  
+- Vous avez essayé de modifier le code dans un programme que vous avez attaché à plutôt que de commencer le **déboguer** menu.  
   
--   Vous avez essayé de modifier un code optimisé.  
+- Vous avez essayé de modifier un code optimisé.  
   
--   Vous avez essayé de modifier du code managé alors que la cible est une application 64 bits. Pour utiliser Modifier &amp; Continuer, vous devez affecter x86 à la cible. (*Projet* **propriétés**, **compiler** onglet, **paramètres avancés du compilateur** paramètre.).  
+- Vous avez essayé de modifier du code managé alors que la cible est une application 64 bits. Pour utiliser Modifier &amp; Continuer, vous devez affecter x86 à la cible. (*Projet* **propriétés**, **compiler** onglet, **paramètres avancés du compilateur** paramètre.).  
   
--   Vous avez tenté de modifier le code d'un assembly qui a été modifié pendant le débogage et a été rechargé.  
+- Vous avez tenté de modifier le code d'un assembly qui a été modifié pendant le débogage et a été rechargé.  
   
--   Vous avez tenté de modifier le code d'un assembly qui n'a pas été chargé.  
+- Vous avez tenté de modifier le code d'un assembly qui n'a pas été chargé.  
   
--   Vous avez commencé à déboguer une version ancienne de votre application (étant donné que la nouvelle version comporte des erreurs de build).  
+- Vous avez commencé à déboguer une version ancienne de votre application (étant donné que la nouvelle version comporte des erreurs de build).  
   
--   Vous avez tenté de modifier le code d'édition pendant son exécution.  
+- Vous avez tenté de modifier le code d'édition pendant son exécution.  
   
 ## <a name="uielement-list"></a>Liste des éléments d’interface  
  **OK**  

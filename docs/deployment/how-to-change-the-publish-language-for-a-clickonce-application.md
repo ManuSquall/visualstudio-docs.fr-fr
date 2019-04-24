@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67ac7693d4332c4dc5d6eae3fb89cf3e9a9c2384
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 7e5bf51fd416fd9ccbb2343c17412984858429da
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54953028"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115287"
 ---
 # <a name="how-to-change-the-publish-language-for-a-clickonce-application"></a>Procédure : Changer la langue de publication d’une application ClickOnce
 
@@ -34,15 +34,15 @@ Le `Publish language` propriété peut être définie le **Options de publicatio
 
 ## <a name="to-change-the-publish-language"></a>Pour modifier la langue de publication
 
-1.  Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.
+1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.
 
-2.  Cliquez sur l’onglet **Publier**.
+2. Cliquez sur l’onglet **Publier**.
 
-3.  Cliquez sur le **Options** bouton pour ouvrir la **Options de publication** boîte de dialogue.
+3. Cliquez sur le **Options** bouton pour ouvrir la **Options de publication** boîte de dialogue.
 
-4.  Cliquez sur **Description**.
+4. Cliquez sur **Description**.
 
-5.  Dans le **Options de publication** boîte de dialogue zone, sélectionnez une langue et culture à partir de la **langue de publication** liste déroulante, puis cliquez sur **OK**.
+5. Dans le **Options de publication** boîte de dialogue zone, sélectionnez une langue et culture à partir de la **langue de publication** liste déroulante, puis cliquez sur **OK**.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -1,5 +1,5 @@
 ---
-title: 'Comment : spécifier les fichiers journaux détaillés pour les déploiements ClickOnce | Microsoft Docs'
+title: 'Procédure : Spécifier les fichiers journaux détaillés pour les déploiements ClickOnce | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,14 +15,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffc7fbdace660a894352623a3ff8765a165b5556
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 70c83c31ba8c415de9c2a7be8f60c9c6ee8ba9ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619496"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111530"
 ---
-# <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Guide pratique pour spécifier des fichiers journaux détaillés pour les déploiements ClickOnce
+# <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Procédure : Spécifier des fichiers journaux détaillés pour les déploiements ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] conserve les fichiers de journaux d’activité pour tous les déploiements. Ces journaux documentent les détails relatifs à l’installation, l’initialisation, la mise à jour et la désinstallation une [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement. Pour davantage de détails qui [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] écritures à ces fichiers journaux, utilisez l’Éditeur du Registre (*regedit.exe*) pour spécifier le niveau de détail.
 
 > [!CAUTION]
@@ -32,13 +32,13 @@ ms.locfileid: "56619496"
 
 ### <a name="to-specify-verbose-log-files"></a>Pour spécifier les fichiers journaux détaillés
 
-1.  Ouvrez *Regedit.exe*.
+1. Ouvrez *Regedit.exe*.
 
-2.  Accédez au nœud **HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment**.
+2. Accédez au nœud **HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment**.
 
-3.  Si nécessaire, créez une nouvelle valeur de chaîne nommée `LogVerbosityLevel`.
+3. Si nécessaire, créez une nouvelle valeur de chaîne nommée `LogVerbosityLevel`.
 
-4.  Définissez la valeur de `LogVerbosityLevel` sur `1`.
+4. Définissez la valeur de `LogVerbosityLevel` sur `1`.
 
 ## <a name="see-also"></a>Voir aussi
 - [Dépanner des déploiements ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)

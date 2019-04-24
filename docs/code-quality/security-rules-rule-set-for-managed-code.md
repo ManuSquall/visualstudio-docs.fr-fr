@@ -9,10 +9,10 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 45c51a6c5496686ef84b17341c97f00680a80bdd
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366040"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Ensemble de règles des règles de sécurité pour le code managé
@@ -64,7 +64,7 @@ Vous devez inclure la règle de règles de sécurité Microsoft pour optimiser l
 |[CA2149](../code-quality/ca2149-transparent-methods-must-not-call-into-native-code.md)|Les méthodes transparentes ne doivent pas appeler du code natif|
 |[CA2210](../code-quality/ca2210-assemblies-should-have-valid-strong-names.md)|Les assemblys doivent porter des noms forts valides|
 |[CA2300](ca2300-do-not-use-insecure-deserializer-binaryformatter.md)|N’utilisez pas le désérialiseur non sécurisé BinaryFormatter|
-|[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)|N’appelez pas BinaryFormatter.Deserialize sans définition préalable BinaryFormatter.Binder|
+|[CA2301](ca2301-do-not-call-binaryformatter-deserialize-without-first-setting-binaryformatter-binder.md)|N’appelez pas BinaryFormatter.Deserialize sans définir BinaryFormatter.Binder au préalable|
 |[CA2302](ca2302-ensure-binaryformatter-binder-is-set-before-calling-binaryformatter-deserialize.md)|Vérifiez que BinaryFormatter.Binder est défini avant d’appeler BinaryFormatter.Deserialize|
 |[CA3001](../code-quality/ca3001-review-code-for-sql-injection-vulnerabilities.md)|Passez en revue le code pour détecter les vulnérabilités de l’injection SQL|
 |[CA3002](../code-quality/ca3002-review-code-for-xss-vulnerabilities.md)|Passez en revue le code pour détecter les vulnérabilités des scripts XSS|

@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7864728237e1fc84958d3edea6806508f1339902
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8340867406e99fd6c6f84d1dc84d89a395a338fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947787"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106863"
 ---
 # <a name="how-to-debug-a-partial-trust-application"></a>Procédure : Déboguer une Application de confiance partielle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,41 +45,41 @@ S'applique aux applications Windows et console.
   
 ### <a name="to-choose-a-zone-for-your-partial-trust-application"></a>Pour choisir une zone pour votre application de confiance partielle  
   
-1.  À partir de la **projet** menu, choisissez _nom_projet_**propriétés**.  
+1. À partir de la **projet** menu, choisissez _nom_projet_**propriétés**.  
   
-2.  Dans le *nom_projet* pages de propriétés, cliquez sur le **sécurité** page.  
+2. Dans le *nom_projet* pages de propriétés, cliquez sur le **sécurité** page.  
   
-3.  Sélectionnez **activer les paramètres de sécurité ClickOnce**.  
+3. Sélectionnez **activer les paramètres de sécurité ClickOnce**.  
   
-4.  Sous **Zone votre application sera installée à partir de**, cliquez sur la zone de liste déroulante et choisissez la zone que vous souhaitez simuler l’application en cours d’installation à partir de.  
+4. Sous **Zone votre application sera installée à partir de**, cliquez sur la zone de liste déroulante et choisissez la zone que vous souhaitez simuler l’application en cours d’installation à partir de.  
   
      Le **autorisations requises par l’application** grille affiche toutes les autorisations disponibles. La coche indique les autorisations accordées à votre application.  
   
-5.  Si vous choisissez la zone **(personnalisé)**, sélectionnez les paramètres personnalisés corrects dans le **paramètre** colonne de la **autorisations** grille.  
+5. Si vous choisissez la zone **(personnalisé)**, sélectionnez les paramètres personnalisés corrects dans le **paramètre** colonne de la **autorisations** grille.  
   
-6.  Cliquez sur **OK** pour fermer les pages de propriétés.  
+6. Cliquez sur **OK** pour fermer les pages de propriétés.  
   
 ### <a name="to-add-an-extra-permission-when-a-security-exception-occurs"></a>Pour ajouter une autorisation supplémentaire lorsqu'une exception de sécurité se produit  
   
-1.  Le **Assistant Exception** boîte de dialogue s’affiche avec le message : **SecurityException n’était pas gérée.**  
+1. Le **Assistant Exception** boîte de dialogue s’affiche avec le message : **SecurityException n’était pas gérée.**  
   
-2.  Dans le **Assistant Exception** boîte de dialogue **Actions**, cliquez sur **ajouter une autorisation au projet**.  
+2. Dans le **Assistant Exception** boîte de dialogue **Actions**, cliquez sur **ajouter une autorisation au projet**.  
   
-3.  Le **redémarrer le débogage** boîte de dialogue s’affiche.  
+3. Le **redémarrer le débogage** boîte de dialogue s’affiche.  
   
-    -   Si vous souhaitez redémarrer la session de débogage avec la nouvelle autorisation, cliquez sur **Oui**.  
+    - Si vous souhaitez redémarrer la session de débogage avec la nouvelle autorisation, cliquez sur **Oui**.  
   
-    -   Si vous ne souhaitez pas redémarrer à ce stade, cliquez sur **non**.  
+    - Si vous ne souhaitez pas redémarrer à ce stade, cliquez sur **non**.  
   
 ### <a name="to-view-extra-permissions-added-while-debugging"></a>Pour afficher les autorisations supplémentaires ajoutées pendant le débogage  
   
-1.  À partir de la **projet** menu, choisissez _nom_projet_**propriétés**.  
+1. À partir de la **projet** menu, choisissez _nom_projet_**propriétés**.  
   
-2.  Dans le *nom_projet* pages de propriétés, cliquez sur le **sécurité** page.  
+2. Dans le *nom_projet* pages de propriétés, cliquez sur le **sécurité** page.  
   
-3.  Examinez le **autorisations requises par l’application** grille. Toute autorisation supplémentaire que vous avez ajouté a deux icônes le **inclus** colonne : la coche normale associée ayant inclus toutes les autorisations et une icône supplémentaire qui ressemble à un ballon contenant la lettre « i ».  
+3. Examinez le **autorisations requises par l’application** grille. Toute autorisation supplémentaire que vous avez ajouté a deux icônes le **inclus** colonne : la coche normale associée ayant inclus toutes les autorisations et une icône supplémentaire qui ressemble à un ballon contenant la lettre « i ».  
   
-4.  Utilisez la barre de défilement verticale pour consulter l’intégralité **autorisations requises par l’application** grille.  
+4. Utilisez la barre de défilement verticale pour consulter l’intégralité **autorisations requises par l’application** grille.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md)   

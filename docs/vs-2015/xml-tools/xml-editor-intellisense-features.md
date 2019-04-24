@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b8299e96f6ec074ce82dcd1fd872e56886c2d19b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9c691eea7417e882ee3b73e9f2adc538714b486a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953929"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094659"
 ---
 # <a name="xml-editor-intellisense-features"></a>Fonctionnalités IntelliSense de l'Éditeur XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 L’Éditeur XML offre des fonctionnalités IntelliSense complètes comparables à celles d’autres éditeurs de langage fournis dans Visual Studio. Cette section explique comment vous pouvez utiliser IntelliSense avec des documents en langage XSD (XML Schema Definition) et XSLT.  
   
 ## <a name="intellisense-in-an-xsd-document"></a>IntelliSense dans un document XSD  
@@ -86,19 +85,19 @@ L’Éditeur XML offre des fonctionnalités IntelliSense complètes comparables 
   
  L'éditeur XML offre cette fonctionnalité pour les éléments suivants :  
   
--   Les étiquettes de début et de fin qui se correspondent.  
+- Les étiquettes de début et de fin qui se correspondent.  
   
--   Toute paire de «\<» ou « > » crochets pointus.  
+- Toute paire de «\<» ou « > » crochets pointus.  
   
--   Le début et la fin de commentaires  
+- Le début et la fin de commentaires  
   
--   Le début et la fin d'instructions de traitement  
+- Le début et la fin d'instructions de traitement  
   
--   Le début et la fin de blocs CDATA  
+- Le début et la fin de blocs CDATA  
   
--   Le début et la fin de déclarations DTD  
+- Le début et la fin de déclarations DTD  
   
--   Les guillemets ouvrants et fermants des attributs  
+- Les guillemets ouvrants et fermants des attributs  
   
 ## <a name="modifying-the-intellisense-options"></a>Modification des options IntelliSense  
  Les fonctions IntelliSense et de saisie semi-automatique sont activées par défaut. Vous pouvez toutefois modifier cette sélection par défaut en changeant les paramètres dans Outils\Options.  
@@ -113,11 +112,11 @@ L’Éditeur XML offre des fonctionnalités IntelliSense complètes comparables 
   
 #### <a name="to-change-the-auto-completion-behavior"></a>Pour modifier le comportement de la saisie semi-automatique  
   
-1.  Sélectionnez **Options** dans le menu **Outils**.  
+1. Sélectionnez **Options** dans le menu **Outils**.  
   
-2.  Développez **éditeur de texte**, développez **XML**, puis sélectionnez **divers**.  
+2. Développez **éditeur de texte**, développez **XML**, puis sélectionnez **divers**.  
   
-3.  Apporter des modifications à la **insertion automatique** section et cliquez sur **OK**.  
+3. Apporter des modifications à la **insertion automatique** section et cliquez sur **OK**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Éditeur XML](../xml-tools/xml-editor.md)   

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5941dec4b21e044873a2ae95ae7682867b4bd67
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 3dd516151f7a3656da1bae195870e8cc29528cfa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037016"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075244"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>Procédure : Vérifier les paramètres des propriétés IIS
 
@@ -35,13 +35,13 @@ Vous pouvez définir les propriétés d'une application Web à l'aide de l'outil
 
 ## <a name="to-check-iis-settings-for-the-web-application"></a>Pour vérifier les paramètres IIS pour l'application Web
 
-1. Ouvrez la fenêtre **Outils d’administration**. Sur le **Démarrer** menu, pointez sur **programmes**, puis cliquez sur **outils d’administration**. Si **Outils d’administration** n’apparaît pas dans le menu **Programmes**, recherchez-le dans le **Panneau de configuration**.
+1. Ouvrez le **outils d’administration** fenêtre : Sur le **Démarrer** menu, pointez sur **programmes**, puis cliquez sur **outils d’administration**. Si **Outils d’administration** n’apparaît pas dans le menu **Programmes**, recherchez-le dans le **Panneau de configuration**.
 
-   -   Sur Windows 2000, sélectionnez **Gestionnaire des services Internet**.
+   - Sur Windows 2000, sélectionnez **Gestionnaire des services Internet**.
 
-   -   Sur Windows XP, sélectionnez **Services IIS (Internet Information Services)**.
+   - Sur Windows XP, sélectionnez **Services IIS (Internet Information Services)**.
 
-   -   Sur Windows Server 2003, double-cliquez sur **Gérer votre serveur**.
+   - Sur Windows Server 2003, double-cliquez sur **Gérer votre serveur**.
 
         La fenêtre **Gérer votre serveur** s’ouvre. Sous **Serveur d’applications**, cliquez sur **Gérer ce serveur d’applications**.
 
@@ -53,23 +53,23 @@ Vous pouvez définir les propriétés d'une application Web à l'aide de l'outil
 
 4. Vérifiez les paramètres de sécurité de l'application Web :
 
-   1.  Dans la fenêtre **Propriétés** de l’application web, cliquez sur l’onglet **Sécurité du répertoire**, puis sur **Modifier**.
+   1. Dans la fenêtre **Propriétés** de l’application web, cliquez sur l’onglet **Sécurité du répertoire**, puis sur **Modifier**.
 
-   2.  Dans la boîte de dialogue **Méthodes d’authentification**, sélectionnez **Activer la connexion anonyme** et **Authentification Windows intégrée** si elles ne sont pas déjà sélectionnées.
+   2. Dans la boîte de dialogue **Méthodes d’authentification**, sélectionnez **Activer la connexion anonyme** et **Authentification Windows intégrée** si elles ne sont pas déjà sélectionnées.
 
-   3.  Cliquez sur **OK** pour fermer la boîte de dialogue **Méthodes d’authentification**.
+   3. Cliquez sur **OK** pour fermer la boîte de dialogue **Méthodes d’authentification**.
 
 5. Pour une application ATL Server, vérifiez que le verbe DEBUG est associé à votre extension ISAPI. Pour plus d'informations, voir [Procédure : Associer le verbe DEBUG avec l’Extension](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e).
 
 6. Pour une application [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], vérifiez que le dossier virtuel de l’application comporte un nom d’application défini dans le **Gestionnaire des services Internet (IIS)**, le **Gestionnaire des services Internet** ou les **Services IIS (Internet Information Services)**.
 
-   1.  Dans la fenêtre **Propriétés** de l’application web, sélectionnez l’onglet **Répertoire** si l’application est dans un répertoire virtuel, ou l’onglet **Répertoire de base** si l’application se trouve sur un site web.
+   1. Dans la fenêtre **Propriétés** de l’application web, sélectionnez l’onglet **Répertoire** si l’application est dans un répertoire virtuel, ou l’onglet **Répertoire de base** si l’application se trouve sur un site web.
 
-   2.  Vérifiez que le nom dans le **Chemin local** correspond au nom du répertoire où l’application a été réellement déployée.
+   2. Vérifiez que le nom dans le **Chemin local** correspond au nom du répertoire où l’application a été réellement déployée.
 
-   3.  Sous **Paramètres d’application**, tapez le nom du répertoire racine qui contient l’application.
+   3. Sous **Paramètres d’application**, tapez le nom du répertoire racine qui contient l’application.
 
-   4.  Cliquez sur **OK** pour fermer la boîte de dialogue **Propriétés**.
+   4. Cliquez sur **OK** pour fermer la boîte de dialogue **Propriétés**.
 
 7. Pour une application [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], cliquez sur l’onglet **ASP.NET** et vérifiez que la version correcte de [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] est spécifiée.
 

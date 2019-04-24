@@ -10,29 +10,29 @@ ms.assetid: 6be80904-e66c-4cae-8891-1113b799fb01
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9a2898bb5736e6731d200fd4a05e84aeae8adb42
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5c9ea20e42ada09bd9ff2a5ab5fdb6222839380c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949346"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108046"
 ---
 # <a name="program-control"></a>Contrôle du programme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Dans Visual Studio, le débogage, tous l’exécution pas à pas suivantes et en continuant de routines de se produisent au niveau du programme :  
   
--   Définition de l’instruction suivante, autrement dit, définition de votre ordinateur à la prochaine instruction à exécuter dans un environnement de frame particulier  
+- Définition de l’instruction suivante, autrement dit, définition de votre ordinateur à la prochaine instruction à exécuter dans un environnement de frame particulier  
   
--   L’exécution, autrement dit, continuer quitter le mode pas à pas  
+- L’exécution, autrement dit, continuer quitter le mode pas à pas  
   
--   Pas à pas à l’instruction suivante  
+- Pas à pas à l’instruction suivante  
   
--   Continuer avec le mode actuel de l’exécution pas à pas  
+- Continuer avec le mode actuel de l’exécution pas à pas  
   
--   Suspendre les threads contenues par le programme  
+- Suspendre les threads contenues par le programme  
   
--   La reprise des threads contenues par le programme  
+- La reprise des threads contenues par le programme  
   
 > [!NOTE]
 >  Affichage de la pile des appels est implémenté au niveau du thread. Pour énumérer les informations de frame lors de l’affichage de la pile des appels pour un thread, vous devez implémenter toutes les méthodes de la [IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interface.  

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 77de080a9ec5a0e00c2990f436c081623790722e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ab8c437285a55013e2c0367865044ee12ba061ed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612710"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071806"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Entrées de Registre pour les Compléments VSTO
   Vous devez créer un ensemble spécifique d'entrées de Registre quand vous déployez des compléments VSTO créés à l'aide de Visual Studio. Ces entrées de Registre fournissent des informations qui permettent à l'application Microsoft Office de découvrir et de charger le complément VSTO.
@@ -78,7 +78,7 @@ ms.locfileid: "56612710"
 |**LoadBehavior**|REG_DWORD|Obligatoire. Valeur qui spécifie le moment où l'application tente de charger le complément VSTO, ainsi que l'état actuel du complément VSTO (chargé ou non chargé).<br /><br /> Par défaut, cette entrée a la valeur 3, ce qui indique que le complément VSTO est chargé au démarrage. Pour plus d’informations, consultez [LoadBehavior values](#LoadBehavior). **Remarque :**  Si un utilisateur désactive le complément, VSTO, cette action modifie **LoadBehavior** valeur dans le **HKEY_CURRENT_USER** ruche du Registre. Pour chaque utilisateur, la valeur de la **LoadBehavior** dans la ruche HKEY_CURRENT_USER remplace la valeur par défaut **LoadBehavior** définies dans le **HKEY_LOCAL_MACHINE** hive.|
 |**Manifest**|REG_SZ|Obligatoire. Chemin d'accès complet du manifeste de déploiement du complément VSTO. Le chemin d'accès peut être un emplacement sur l'ordinateur local, un partage réseau (UNC) ou un serveur web (HTTP).<br /><br /> Si vous utilisez Windows Installer pour déployer la solution, vous devez ajouter le préfixe **file:///** au chemin d'accès du **manifeste** . Vous devez également ajouter la chaîne  **&#124;vstolocal** (autrement dit, le caractère barre verticale **&#124;** suivie **vstolocal**) à la fin de ce chemin d’accès. Cela permet de garantir que votre solution est chargée à partir du dossier d'installation, et non à partir du cache ClickOnce. Pour plus d’informations, consultez [déployer une solution Office à l’aide du programme d’installation de Windows](../vsto/deploying-an-office-solution-by-using-windows-installer.md). **Remarque :**  Lorsque vous générez un VSTO Add-in sur l’ordinateur de développement, Visual Studio ajoute automatiquement le  **&#124;vstolocal** chaîne pour cette entrée de Registre.|
 
-###  <a name="OutlookEntries"></a> Entrées de Registre des zones de formulaire Outlook
+### <a name="OutlookEntries"></a> Entrées de Registre des zones de formulaire Outlook
  Si vous créez une zone de formulaire personnalisée dans un complément VSTO pour Outlook, des entrées de Registre supplémentaires sont utilisées pour inscrire la zone de formulaire dans Outlook. Ces entrées sont créées sous une autre clé de Registre pour chaque classe de message prise en charge par la zone de formulaire. Ces clés de Registre sont à l’emplacement suivant, où *racine* est **HKEY_CURRENT_USER** ou **HKEY_LOCAL_MACHINE**.
 
  *Racine*\Software\Microsoft\Office\Outlook\FormRegions\\*message, classe*
@@ -87,7 +87,7 @@ ms.locfileid: "56612710"
 
  Pour plus d’informations sur les entrées de Registre des zones de formulaire, consultez [spécifier l’emplacement d’une zone de formulaire dans un formulaire personnalisé](/office/vba/outlook/Concepts/Creating-Form-Regions/specify-the-location-of-a-form-region-in-a-custom-form). Pour plus d’informations sur les zones de formulaire Outlook, consultez [zones de formulaire Outlook créer](../vsto/creating-outlook-form-regions.md).
 
-##  <a name="LoadBehavior"></a> Valeurs de LoadBehavior
+## <a name="LoadBehavior"></a> Valeurs de LoadBehavior
  Le **LoadBehavior** entrée sous le *racine*\Software\Microsoft\Office\\*nom de l’application*\Addins\\*complément ID* clé contient une combinaison au niveau du bit des valeurs qui spécifient le comportement d’exécution de la macro complémentaire VSTO. Le bit d'ordre le plus bas (valeurs 0 et 1) indique si le complément VSTO est actuellement chargé ou non chargé. Les autres bits indiquent le moment où l'application tente de charger le complément VSTO.
 
  En règle générale, le **LoadBehavior** entrée est destinée à être définie sur 0, 3 ou 16 (au format décimal) lorsque le module additionnel VSTO est installé sur les ordinateurs des utilisateurs finaux. Par défaut, Visual Studio affecte la valeur 3 à l'entrée **LoadBehavior** du complément VSTO quand vous le générez ou que vous le publiez.

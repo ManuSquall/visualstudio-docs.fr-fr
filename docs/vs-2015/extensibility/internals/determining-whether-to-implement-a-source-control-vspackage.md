@@ -10,12 +10,12 @@ ms.assetid: 60b3326e-e7e2-4729-95fc-b682e7ad5c99
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b47cfde4bbc228aa31d911a9499b74e12b78250c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cff53700dcd6a80f841108d5a2b486dcb0ba7a11
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950038"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090840"
 ---
 # <a name="determining-whether-to-implement-a-source-control-vspackage"></a>Déterminer s’il faut implémenter un VSPackage de contrôle de code source
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ Cette section décrit plus en détail les choix de plug-ins de contrôle de code
   
  Si vous souhaitez implémenter une solution de contrôle de source qui fournit une flexibilité et contrôle plus riche sur l’interface utilisateur et la logique de contrôle de code source, vous pouvez préférer l’itinéraire de l’intégration de package de contrôle source. Vous pouvez :  
   
-1.  Inscrire votre propre contrôle de source de package Visual Studio (consultez [inscription et sélection](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)).  
+1. Inscrire votre propre contrôle de source de package Visual Studio (consultez [inscription et sélection](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)).  
   
-2.  Remplacez le contrôle de code source par défaut l’interface utilisateur avec votre interface utilisateur personnalisée (consultez [Interface utilisateur personnalisée](../../extensibility/internals/custom-user-interface-source-control-vspackage.md)).  
+2. Remplacez le contrôle de code source par défaut l’interface utilisateur avec votre interface utilisateur personnalisée (consultez [Interface utilisateur personnalisée](../../extensibility/internals/custom-user-interface-source-control-vspackage.md)).  
   
-3.  Spécifiez des glyphes à utiliser et gérer les événements de glyphe de l’Explorateur de solutions (voir [contrôle de glyphe](../../extensibility/internals/glyph-control-source-control-vspackage.md)).  
+3. Spécifiez des glyphes à utiliser et gérer les événements de glyphe de l’Explorateur de solutions (voir [contrôle de glyphe](../../extensibility/internals/glyph-control-source-control-vspackage.md)).  
   
-4.  Gérer les événements de modification de la requête et d’enregistrement des requêtes (consultez [modifier les requêtes d’enregistrement des requêtes](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)).  
+4. Gérer les événements de modification de la requête et d’enregistrement des requêtes (consultez [modifier les requêtes d’enregistrement des requêtes](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Création d’un plug-in de contrôle de code source](../../extensibility/internals/creating-a-source-control-plug-in.md)

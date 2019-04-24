@@ -13,12 +13,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a62aacf8ad702aca19531876c57aaf45b10ce639
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ccf761521d43e3f5ff9d12a4af7fbae4addcddc9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948933"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100519"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personnalisation de la création et du mouvement des éléments
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,9 +89,9 @@ Vous pouvez autoriser un élément à faire glisser vers un autre, à partir de 
   
 2. Pour permettre aux utilisateurs de fusionner les éléments sur `ExampleElement` formes, créer un nouveau EMD dans le `ExampleElement` de classe de domaine :  
   
-   1.  Dans **Explorateur DSL**, développez **Classes de domaine**. Avec le bouton droit `ExampleElement` puis cliquez sur **ajouter nouvelle Directive de fusion**.  
+   1. Dans **Explorateur DSL**, développez **Classes de domaine**. Avec le bouton droit `ExampleElement` puis cliquez sur **ajouter nouvelle Directive de fusion**.  
   
-   2.  Assurez-vous que le **détails DSL** fenêtre est ouverte, afin que vous puissiez voir les détails de la nouvelle EMD. (Menu : **Afficher**, **autres Windows**, **détails DSL**.)  
+   2. Assurez-vous que le **détails DSL** fenêtre est ouverte, afin que vous puissiez voir les détails de la nouvelle EMD. (Menu : **Afficher**, **autres Windows**, **détails DSL**.)  
   
 3. Définir le **classe d’indexation** dans la fenêtre Détails DSL, pour définir quelle classe d’éléments peut être fusionné sur `ExampleElement` objets.  
   
@@ -119,29 +119,29 @@ Vous pouvez autoriser un élément à faire glisser vers un autre, à partir de 
   
 5. Tester la solution DSL :  
   
-   1.  Appuyez sur F5 pour régénérer et exécuter la solution.  
+   1. Appuyez sur F5 pour régénérer et exécuter la solution.  
   
         La reconstruction prendra plus de temps que d’habitude, car le code généré sera actualisé à partir de modèles de texte à se conformer à la nouvelle définition DSL.  
   
-   2.  Lorsque l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a démarré, ouvrez un fichier de modèle de votre DSL. Créer des éléments de l’exemple.  
+   2. Lorsque l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a démarré, ouvrez un fichier de modèle de votre DSL. Créer des éléments de l’exemple.  
   
-   3.  Faites glisser à partir de la **élément exemple** outil sur une forme existante.  
+   3. Faites glisser à partir de la **élément exemple** outil sur une forme existante.  
   
         Une nouvelle forme s’affiche, et il est lié à la forme existante avec un connecteur.  
   
-   4.  Copier une forme existante. Sélectionnez une autre forme et collez.  
+   4. Copier une forme existante. Sélectionnez une autre forme et collez.  
   
         Une copie de la première forme est créée.  Il a un nouveau nom, et il est lié à la deuxième forme avec un connecteur.  
   
    Notez les points suivants à partir de cette procédure :  
   
--   En créant des Directives de fusion d’éléments, vous pouvez autoriser n’importe quelle classe d’élément pour accepter n’importe quel autre. Le EMD est créé dans la classe de domaine de réception et de la classe de domaine accepté est spécifiée dans le **Index, classe** champ.  
+- En créant des Directives de fusion d’éléments, vous pouvez autoriser n’importe quelle classe d’élément pour accepter n’importe quel autre. Le EMD est créé dans la classe de domaine de réception et de la classe de domaine accepté est spécifiée dans le **Index, classe** champ.  
   
--   En définissant les chemins d’accès, vous pouvez spécifier quels liens doivent être utilisé pour connecter le nouvel élément au modèle existant.  
+- En définissant les chemins d’accès, vous pouvez spécifier quels liens doivent être utilisé pour connecter le nouvel élément au modèle existant.  
   
      Les liens que vous spécifiez doivent inclure une relation d’incorporation.  
   
--   Le EMD affecte à la création de la boîte à outils ainsi que les opérations de collage.  
+- Le EMD affecte à la création de la boîte à outils ainsi que les opérations de collage.  
   
      Si vous écrivez du code personnalisé qui crée de nouveaux éléments, vous pouvez appeler explicitement la EMD à l’aide de la `ElementOperations.Merge` (méthode). Cela permet de s’assurer que votre code lie les nouveaux éléments dans le modèle de la même façon que les autres opérations. Pour plus d’informations, consultez [personnalisation du comportement de copie](../modeling/customizing-copy-behavior.md).  
   
@@ -150,21 +150,21 @@ Vous pouvez autoriser un élément à faire glisser vers un autre, à partir de 
   
 #### <a name="to-write-custom-accept-code-to-restrict-what-the-user-can-add"></a>Pour écrire du code d’acceptation personnalisée pour limiter ce que l’utilisateur peut ajouter  
   
-1.  Créer une solution DSL à l’aide de la **langage Minimal** modèle de solution. Ouvrez le diagramme de définition DSL.  
+1. Créer une solution DSL à l’aide de la **langage Minimal** modèle de solution. Ouvrez le diagramme de définition DSL.  
   
-2.  Dans l’Explorateur DSL, développez **Classes de domaine**, `ExampleModel`, **Directives de fusion d’éléments**. Sélectionnez la directive de fusion d’élément nommé `ExampleElement`.  
+2. Dans l’Explorateur DSL, développez **Classes de domaine**, `ExampleModel`, **Directives de fusion d’éléments**. Sélectionnez la directive de fusion d’élément nommé `ExampleElement`.  
   
      Cette EMD contrôle comment l’utilisateur peut créer nouveau `ExampleElement` objets dans le modèle, par exemple en faisant glisser à partir de la boîte à outils.  
   
-3.  Dans le **détails DSL** fenêtre, sélectionnez **acceptation personnalisée d’utilise**.  
+3. Dans le **détails DSL** fenêtre, sélectionnez **acceptation personnalisée d’utilise**.  
   
-4.  Régénérez la solution. Cela prendra plus de temps que d’habitude, car le code généré sera actualisé à partir du modèle.  
+4. Régénérez la solution. Cela prendra plus de temps que d’habitude, car le code généré sera actualisé à partir du modèle.  
   
      Une erreur de build seront signalées, similaire à : « Company.ElementMergeSample.ExampleElement ne contient pas une définition pour CanMergeExampleElement... »  
   
      Vous devez implémenter la méthode `CanMergeExampleElement`.  
   
-5.  Créer un nouveau fichier de code dans le **Dsl** projet. Remplacez son contenu par le code suivant et remplacez l’espace de noms l’espace de noms de votre projet.  
+5. Créer un nouveau fichier de code dans le **Dsl** projet. Remplacez son contenu par le code suivant et remplacez l’espace de noms l’espace de noms de votre projet.  
   
     ```csharp  
     using Microsoft.VisualStudio.Modeling;  
@@ -194,19 +194,19 @@ Vous pouvez autoriser un élément à faire glisser vers un autre, à partir de 
   
      Cet exemple simple restreint le nombre d’éléments qui peuvent être fusionnées dans le modèle parent. Pour des conditions plus intéressantes, la méthode peut inspecter les propriétés et les liens de l’objet de réception. Il peut également inspecter les propriétés des éléments de fusionnées, qui sont exécutées dans un <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Pour plus d’informations sur `ElementGroupPrototypes`, consultez [personnalisation du comportement de copie](../modeling/customizing-copy-behavior.md). Pour plus d’informations sur la façon d’écrire du code qui lit un modèle, consultez [navigation et la mise à jour un modèle dans le Code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
-6.  Tester la solution DSL :  
+6. Tester la solution DSL :  
   
-    1.  Appuyez sur F5 pour régénérer la solution. Lorsque l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] s’ouvre, ouvrez une instance de votre DSL.  
+    1. Appuyez sur F5 pour régénérer la solution. Lorsque l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] s’ouvre, ouvrez une instance de votre DSL.  
   
-    2.  Créer de nouveaux éléments de plusieurs façons :  
+    2. Créer de nouveaux éléments de plusieurs façons :  
   
-        1.  Faites glisser à partir de la **élément exemple** outil sur le diagramme.  
+        1. Faites glisser à partir de la **élément exemple** outil sur le diagramme.  
   
-        2.  Dans le **Explorateur de modèles d’exemple**, cliquez sur le nœud racine, puis cliquez sur **ajouter un nouvel élément d’exemple**.  
+        2. Dans le **Explorateur de modèles d’exemple**, cliquez sur le nœud racine, puis cliquez sur **ajouter un nouvel élément d’exemple**.  
   
-        3.  Copiez et collez un élément sur le diagramme.  
+        3. Copiez et collez un élément sur le diagramme.  
   
-    3.  Vérifiez que vous ne pouvez pas utiliser une des manières suivantes pour ajouter plus de quatre éléments au modèle. Il s’agit, car ils utilisent tous la Directive de fusion.  
+    3. Vérifiez que vous ne pouvez pas utiliser une des manières suivantes pour ajouter plus de quatre éléments au modèle. Il s’agit, car ils utilisent tous la Directive de fusion.  
   
 ## <a name="example-adding-custom-merge-code-to-an-emd"></a>Exemple : Ajout de code personnalisé de fusion à une directive EMD  
  Dans le code de la fusion personnalisée, vous pouvez définir ce qui se passe lorsque l’utilisateur fait glisser un outil ou colle un élément sur un élément. Il existe deux façons de définir une fusion personnalisée :  
@@ -219,19 +219,19 @@ Vous pouvez autoriser un élément à faire glisser vers un autre, à partir de 
   
 #### <a name="to-override-mergerelate"></a>Pour remplacer MergeRelate  
   
-1.  Dans la définition DSL, assurez-vous que vous avez défini le EMD auquel vous souhaitez ajouter le code. Si vous le souhaitez, vous pouvez ajouter des chemins d’accès et définir accepter du code personnalisé comme décrit dans les sections précédentes.  
+1. Dans la définition DSL, assurez-vous que vous avez défini le EMD auquel vous souhaitez ajouter le code. Si vous le souhaitez, vous pouvez ajouter des chemins d’accès et définir accepter du code personnalisé comme décrit dans les sections précédentes.  
   
-2.  Dans le diagramme DslDefinition, sélectionnez la classe réceptrice de la fusion. En règle générale, c’est la classe à la fin de la source d’une relation d’incorporation.  
+2. Dans le diagramme DslDefinition, sélectionnez la classe réceptrice de la fusion. En règle générale, c’est la classe à la fin de la source d’une relation d’incorporation.  
   
      Par exemple, dans une solution DSL générée à partir de la solution de langage Minimal, sélectionnez `ExampleModel`.  
   
-3.  Dans le **propriétés** fenêtre, définissez **génère une Double dérivée** à **true**.  
+3. Dans le **propriétés** fenêtre, définissez **génère une Double dérivée** à **true**.  
   
-4.  Régénérez la solution.  
+4. Régénérez la solution.  
   
-5.  Inspecter le contenu de **Dsl\Generated Files\DomainClasses.cs**. Recherche de méthodes nommées `MergeRelate` et examinez leur contenu. Cela vous aidera à écrire vos propres versions.  
+5. Inspecter le contenu de **Dsl\Generated Files\DomainClasses.cs**. Recherche de méthodes nommées `MergeRelate` et examinez leur contenu. Cela vous aidera à écrire vos propres versions.  
   
-6.  Dans un nouveau fichier de code, écrivez une classe partielle pour la classe réceptrice et remplacer le `MergeRelate` (méthode). N’oubliez pas d’appeler la méthode de base. Exemple :  
+6. Dans un nouveau fichier de code, écrivez une classe partielle pour la classe réceptrice et remplacer le `MergeRelate` (méthode). N’oubliez pas d’appeler la méthode de base. Exemple :  
   
     ```csharp  
     partial class ExampleModel  
@@ -285,23 +285,23 @@ Vous pouvez autoriser un élément à faire glisser vers un autre, à partir de 
   
 #### <a name="to-create-a-forward-merge-directive"></a>Pour créer une directive de fusion vers l’avant  
   
-1.  Créer un [!INCLUDE[dsl](../includes/dsl-md.md)] solution à l’aide du modèle de modèle de composant.  
+1. Créer un [!INCLUDE[dsl](../includes/dsl-md.md)] solution à l’aide du modèle de modèle de composant.  
   
-2.  Afficher le **Explorateur DSL** en ouvrant DslDefinition.dsl.  
+2. Afficher le **Explorateur DSL** en ouvrant DslDefinition.dsl.  
   
-3.  Dans le **Explorateur DSL**, développez **Classes de domaine**.  
+3. Dans le **Explorateur DSL**, développez **Classes de domaine**.  
   
-4.  Le **ComponentPort** de classe de domaine abstraite est la classe de base des deux **InPort** et **OutPort**. Avec le bouton droit **ComponentPort** puis cliquez sur **ajouter nouvelle Directive de fusion**.  
+4. Le **ComponentPort** de classe de domaine abstraite est la classe de base des deux **InPort** et **OutPort**. Avec le bouton droit **ComponentPort** puis cliquez sur **ajouter nouvelle Directive de fusion**.  
   
      Un nouveau **Directive de fusion** nœud apparaît sous la **Directives de fusion d’éléments** nœud.  
   
-5.  Sélectionnez le **Directive de fusion** nœud et ouvrez le **détails DSL** fenêtre.  
+5. Sélectionnez le **Directive de fusion** nœud et ouvrez le **détails DSL** fenêtre.  
   
-6.  Dans la liste de classe de l’indexation, sélectionnez **ComponentPort**.  
+6. Dans la liste de classe de l’indexation, sélectionnez **ComponentPort**.  
   
-7.  Sélectionnez **transférer la fusion à une autre classe de domaine**.  
+7. Sélectionnez **transférer la fusion à une autre classe de domaine**.  
   
-8.  Dans la liste de sélection de chemin d’accès, développez **ComponentPort**, développez **ComponentHasPorts**, puis sélectionnez **composant**.  
+8. Dans la liste de sélection de chemin d’accès, développez **ComponentPort**, développez **ComponentHasPorts**, puis sélectionnez **composant**.  
   
      Le nouveau chemin d’accès doit se présenter comme ceci :  
   

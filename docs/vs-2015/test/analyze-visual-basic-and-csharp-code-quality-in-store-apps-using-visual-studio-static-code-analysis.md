@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9353b4c3f5f5f073a0658d2cf506a46e13d3662c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: daa26ed2e893d4e11b9f2e18ef5127aafe847b96
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795674"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108335"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Analyser la qualité du code Visual Basic et C# dans les applications du Windows Store à l'aide de l'analyse statique du code Visual Studio
 
@@ -42,7 +42,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 
  [Avertissements de l’analyse du code Visual Basic et C#](../test/analyze-visual-basic-and-csharp-code-quality-in-store-apps-using-visual-studio-static-code-analysis.md#BKMK_Warnings)
 
-##  <a name="BKMK_Run"></a> Exécution de l’analyse du code
+## <a name="BKMK_Run"></a> Exécution de l’analyse du code
  Pour exécuter l'analyse du code sur votre solution Visual Studio :
 
 - Dans le menu **Générer**, choisissez **Exécuter l’analyse du code sur la solution**.
@@ -57,12 +57,12 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 
    ![Fenêtre Analyse du code](../test/media/ca-managed-collapsed.png "CA_Managed_Collapsed")
 
-##  <a name="BKMK_Analyze"></a> Analyse et résolution des avertissements de l’analyse du code
+## <a name="BKMK_Analyze"></a> Analyse et résolution des avertissements de l’analyse du code
  Pour analyser un avertissement spécifique, cliquez sur son titre dans la fenêtre Analyse du code. L'avertissement se développe pour afficher des informations détaillées sur le problème.
 
  ![Avertissements liés à l’analyse du code développé](../test/media/ca-managed-callouts.png "CA_Managed_Callouts")
 
- Lorsque vous développez un avertissement, la ligne de code à l’origine de l’avertissement est mise en surbrillance dans l’éditeur de Visual Studio Code.
+ Lorsque vous développez un avertissement, la ligne de code à l’origine de l’avertissement est mise en surbrillance dans l’éditeur de code Visual Studio.
 
  ![Mise en surbrillance du texte d’analyse du code](../test/media/ca-managed-sourceline.png "CA_Managed_SourceLine")
 
@@ -71,12 +71,12 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 > [!TIP]
 >  Vous pouvez réexécuter l'analyse du code dans la fenêtre Analyse du code. Cliquez sur le bouton **Analyser** et choisissez l’étendue de l’analyse. Vous pouvez réexécuter l'analyse sur la solution complète ou sur un projet sélectionné.
 
-##  <a name="BKMK_Suppress"></a> Suppression des avertissements de l’analyse du code
+## <a name="BKMK_Suppress"></a> Suppression des avertissements de l’analyse du code
  Vous pouvez décider, dans certaines situations, de ne pas corriger un avertissement de l'analyse du code. Vous pouvez décider que la résolution de l'avertissement requiert un recodage trop important par rapport à la probabilité que le problème se produise dans une implémentation réelle de votre code. Vous pouvez également estimer que l'analyse utilisée dans l'avertissement est inadéquate pour le contexte particulier. Vous pouvez supprimer des avertissements individuels afin qu'ils n'apparaissent plus dans la fenêtre Analyse du code.
 
  Pour supprimer un avertissement :
 
-1. Si les informations détaillées ne s’affichent pas, cliquez sur le titre de l’avertissement pour le développer.
+1. Si les informations détaillées ne s'affichent pas, cliquez sur le titre de l'avertissement pour le développer.
 
 2. Choisissez le lien **Actions** au bas de l’avertissement.
 
@@ -88,14 +88,14 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 
      Votre décision de supprimer l'avertissement dans le fichier source ou dans le fichier de suppression dépend de votre style de codage et de vos besoins.
 
-##  <a name="BKMK_Search"></a> Explorer et filtrer les résultats d’analyse du code
+## <a name="BKMK_Search"></a> Explorer et filtrer les résultats d’analyse du code
  Vous pouvez effectuer une recherche dans de longues listes de messages d'avertissement, et vous pouvez filtrer les avertissements dans les solutions à projets multiples.
 
  ![Explorer et filtrer la fenêtre d’analyse du code](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
  Dans [!INCLUDE[vs_dev11_expwin_long](../includes/vs-dev11-expwin-long-md.md)], tous les avertissements de l'analyse du code ont le niveau de gravité Avertissement.
 
-##  <a name="BKMK_Warnings"></a> Avertissements de l’analyse du code Visual Basic et C#
+## <a name="BKMK_Warnings"></a> Avertissements de l’analyse du code Visual Basic et C#
  L'analyse du code génère les avertissements suivants :
 
  [CA1001 : Les types qui possèdent des champs supprimables doivent être supprimables](http://msdn.microsoft.com/library/ms182172.aspx)

@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6cdcb13c493fbffb147d2f91c48bfff5b37e3a6d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c75708afa3c230dcc4bba308cf2d7c97b77d802b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598267"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050924"
 ---
 # <a name="automate-word-by-using-extended-objects"></a>Automatiser Word à l’aide d’objets étendus
   Quand vous développez des solutions Word dans Visual Studio, vous pouvez également utiliser des *éléments hôtes* et des *contrôles hôtes*dans vos solutions. Il s’agit d’objets qui étendent certains objets couramment utilisés dans le modèle objet Word (autrement dit, le modèle objet exposé par l’assembly PIA (Primary Interop Assembly) pour Word), par exemple les objets <xref:Microsoft.Office.Interop.Word.Document> et <xref:Microsoft.Office.Interop.Word.ContentControl> . Les objets étendus se comportent comme les objets Word sur lesquels ils sont basés, mais ils ajoutent des événements supplémentaires et des fonctionnalités de liaison de données aux objets.
@@ -46,13 +46,13 @@ ms.locfileid: "56598267"
 
  Pour plus d’informations sur les contrôles hôtes que vous pouvez utiliser dans les projets Word, consultez les rubriques suivantes :
 
--   [Contrôles de contenu](../vsto/content-controls.md)
+- [Contrôles de contenu](../vsto/content-controls.md)
 
--   [Bookmark (contrôle)](../vsto/bookmark-control.md)
+- [Bookmark (contrôle)](../vsto/bookmark-control.md)
 
--   [XMLNode, contrôle](../vsto/xmlnode-control.md)
+- [XMLNode, contrôle](../vsto/xmlnode-control.md)
 
--   [XMLNodes, contrôle](../vsto/xmlnodes-control.md)
+- [XMLNodes, contrôle](../vsto/xmlnodes-control.md)
 
 ## <a name="see-also"></a>Voir aussi
 - [Guide pratique pour Ajouter des contrôles de contenu à des documents Word](../vsto/how-to-add-content-controls-to-word-documents.md)

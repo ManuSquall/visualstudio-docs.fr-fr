@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e0f63555cbda069c3db0a3a1d5819292fc3cda14
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 51dfdc95748690f43809244dc14ae2662d8aec39
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799703"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086596"
 ---
 # <a name="help-viewer-administrator-guide"></a>Guide de l'administrateur Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,13 +60,13 @@ La visionneuse d’aide vous permet de gérer les installations locales d’aide
   
 ##### <a name="to-install-english-content-from-the-internet"></a>Pour installer le contenu en anglais à partir d’Internet  
   
-1.  Choisissez **Démarrer**, puis **Exécuter**.  
+1. Choisissez **Démarrer**, puis **Exécuter**.  
   
-2.  Tapez la commande suivante :  
+2. Tapez la commande suivante :  
   
      C:\Program Files (x86)\Microsoft Help Viewer\v2.2\hlpctntmgr.exe /operation install /catalogname VisualStudio14 /locale en-us  
   
-3.  Appuyez sur Entrée.  
+3. Appuyez sur Entrée.  
   
 ## <a name="deploying-pre-installed-local-help-content-on-client-computers"></a>Déploiement du contenu d’aide locale préinstallé sur les ordinateurs clients  
  Vous pouvez installer un ensemble de contenu à partir d’une source en ligne sur un ordinateur, puis copier cet ensemble de contenu installé sur d’autres ordinateurs.  
@@ -117,31 +117,31 @@ La visionneuse d’aide vous permet de gérer les installations locales d’aide
   
 ##### <a name="to-package-the-content"></a>Pour créer un package du contenu  
   
-1.  Créez un répertoire pour copier le contenu en vue d’un déploiement ultérieur.  
+1. Créez un répertoire pour copier le contenu en vue d’un déploiement ultérieur.  
   
      Par exemple : c:\VS12Help.  
   
-2.  Ouvrez cmd.exe avec des autorisations d’administrateur.  
+2. Ouvrez cmd.exe avec des autorisations d’administrateur.  
   
-3.  Accédez au dossier créé à l’étape 1.  
+3. Accédez au dossier créé à l’étape 1.  
   
-4.  Tapez la commande suivante :  
+4. Tapez la commande suivante :  
   
      Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \<*nomdossier*>\ /y /e /k /o  
   
-     Exemple : `Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 c:\VS12Help\ /y /e /k /o`.  
+     Par exemple :`Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 c:\VS12Help\ /y /e /k /o`  
   
 ### <a name="deploying-the-content"></a>Déploiement du contenu  
   
 ##### <a name="to-deploy-the-content"></a>Pour déployer le contenu  
   
-1.  Créez un partage réseau et copiez le contenu d’aide à cet emplacement.  
+1. Créez un partage réseau et copiez le contenu d’aide à cet emplacement.  
   
      Par exemple, copiez le contenu du dossier c:\VS12Help dans \\\monserveur\VS12Help.  
   
-2.  Créez un fichier .bat pour contenir le script de déploiement du contenu d’aide. Comme le client est susceptible de ne pas pouvoir lire les fichiers en cours de suppression dans le cadre de l’émission, vous devez désactiver le client avant d’émettre des mises à jour.  
+2. Créez un fichier .bat pour contenir le script de déploiement du contenu d’aide. Comme le client est susceptible de ne pas pouvoir lire les fichiers en cours de suppression dans le cadre de l’émission, vous devez désactiver le client avant d’émettre des mises à jour.  
   
-     Par exemple :  
+     Exemple :  
   
     ```  
     REM - copy pre-ripped content to ProgramData  
@@ -199,7 +199,7 @@ La visionneuse d’aide vous permet de gérer les installations locales d’aide
     :CONTINUE  
     ```  
   
-3.  Exécutez le fichier bat sur les ordinateurs locaux sur lesquels le contenu d’aide doit être installé.  
+3. Exécutez le fichier bat sur les ordinateurs locaux sur lesquels le contenu d’aide doit être installé.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Arguments de ligne de commande pour Help Content Manager](../ide/command-line-arguments-for-the-help-content-manager.md)   

@@ -1,5 +1,5 @@
 ---
-title: À l’aide de l’infrastructure de Package gérée pour implémenter un Type de projet (C#) | Microsoft Docs
+title: À l’aide de l’infrastructure de Package gérée pour implémenter un Type de projet (c#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,26 +12,26 @@ ms.assetid: 926de536-eead-415b-9451-f1ddc8c44630
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d83f26183c422d39e69dfe106443dae54f576899
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 86e250c5a5922df52acea7445c97862a00cdc826
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953667"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066831"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>Utilisation de l’infrastructure de package gérée pour implémenter un type de projet (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Managed Package Framework (MPF) fournit les classes C# vous pouvez utiliser ou hériter pour implémenter vos propres types de projet. MPF implémente la plupart des interfaces de que Visual Studio attend un type de projet pour fournir, en vous laissant permettant de vous concentrer sur l’implémentation de l’exactitude de votre type de projet.  
+Managed Package Framework (MPF) fournit les classes c# vous pouvez utiliser ou hériter pour implémenter vos propres types de projet. MPF implémente la plupart des interfaces de que Visual Studio attend un type de projet pour fournir, en vous laissant permettant de vous concentrer sur l’implémentation de l’exactitude de votre type de projet.  
   
 ## <a name="using-the-mpf-project-source-code"></a>En utilisant le Code Source du projet MPF  
  Managed Package Framework pour les projets (MPFProj) fournit des classes d’assistance pour créer et gérer le nouveau système de projet. Contrairement aux autres classes dans le MPF, les classes du projet ne sont pas inclus dans les assemblys fournis avec Visual Studio. Au lieu de cela, les classes du projet sont fournis en tant que code source à [MPF de projets 2013](http://mpfproj12.codeplex.com).  
   
  Pour ajouter ce projet à votre solution VSPackage, procédez comme suit :  
   
-1.  Télécharger les fichiers MPFProj à *MPFProjectDir*.  
+1. Télécharger les fichiers MPFProj à *MPFProjectDir*.  
   
-2.  Dans le *MPFProjectDir*\Dev10\Src\CSharp\ProjectBase.file, modifiez le bloc suivant :  
+2. Dans le *MPFProjectDir*\Dev10\Src\CSharp\ProjectBase.file, modifiez le bloc suivant :  
   
 ```  
 <!-- Provide a default value for $(ProjectBasePath) -->  
@@ -40,11 +40,11 @@ Managed Package Framework (MPF) fournit les classes C# vous pouvez utiliser ou h
   </PropertyGroup>  
 ```  
   
-1.  Créez un projet VSPackage.  
+1. Créez un projet VSPackage.  
   
-2.  Décharger le projet VSPackage.  
+2. Décharger le projet VSPackage.  
   
-3.  Modifier le fichier .csproj VSPackage en ajoutant le bloc suivant avant les autres `<Import>` blocs :  
+3. Modifier le fichier .csproj VSPackage en ajoutant le bloc suivant avant les autres `<Import>` blocs :  
   
 ```  
 <Import Project="MPFProjectDir\Dev10\Src\CSharp\ProjectBase.files" />  
@@ -56,17 +56,17 @@ Managed Package Framework (MPF) fournit les classes C# vous pouvez utiliser ou h
   </PropertyGroup>  
 ```  
   
-1.  Enregistrez le projet.  
+1. Enregistrez le projet.  
   
-2.  Fermez et rouvrez la solution VSPackage.  
+2. Fermez et rouvrez la solution VSPackage.  
   
-3.  Rouvrez le projet VSPackage. Vous devriez voir un répertoire nommé ProjectBase.  
+3. Rouvrez le projet VSPackage. Vous devriez voir un répertoire nommé ProjectBase.  
   
-4.  Ajoutez la référence suivante au projet VSPackage :  
+4. Ajoutez la référence suivante au projet VSPackage :  
   
      Microsoft.Build.Tasks.4.0  
   
-5.  Générez le projet.  
+5. Générez le projet.  
   
 ## <a name="hierarchy-classes"></a>Hiérarchie des Classes  
  Le tableau suivant récapitule les classes dans le MPFProj qui prennent en charge des hiérarchies de projet. Pour plus d’informations, consultez [hiérarchies et sélection](../../extensibility/internals/hierarchies-and-selection.md).  

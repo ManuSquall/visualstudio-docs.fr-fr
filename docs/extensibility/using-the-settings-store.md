@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f5c2d39ce4652b6c41d80e919cca93c83c38fb2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 59f26e4e8972f02740db45760e5b2e876c300bd1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684999"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045399"
 ---
 # <a name="using-the-settings-store"></a>Utilisation de la banque de paramètres
 Il existe deux types de magasins de paramètres :
@@ -77,11 +77,11 @@ Il existe deux types de magasins de paramètres :
 
 #### <a name="to-use-a-registry-editor-to-verify-configuration-settings"></a>Pour utiliser un éditeur du Registre pour vérifier les paramètres de configuration
 
-1.  Ouvrez Regedit.exe.
+1. Ouvrez Regedit.exe.
 
-2.  Accédez à HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\.
+2. Accédez à HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\.
 
     > [!NOTE]
     >  Assurez-vous que vous examinez la clé qui contient \14.0Exp_Config\ et pas \14.0_Config\\. Lorsque vous exécutez l’instance expérimentale de Visual Studio, les paramètres de configuration sont dans la ruche de Registre « 14.0Exp_Config ».
 
-3.  Développez le nœud \Installed Products\. Si le message dans les étapes précédentes est **Microsoft Windows Phone Developer Tools installé : True**, alors \Installed Products\ doit contenir un nœud d’outils de développement de Microsoft Windows Phone. Si le message est **Microsoft Windows Phone Developer Tools installé : False**, alors \Installed Products\ ne doit pas contenir un nœud d’outils de développement de Microsoft Windows Phone.
+3. Développez le nœud \Installed Products\. Si le message dans les étapes précédentes est **Microsoft Windows Phone Developer Tools installé : True**, alors \Installed Products\ doit contenir un nœud d’outils de développement de Microsoft Windows Phone. Si le message est **Microsoft Windows Phone Developer Tools installé : False**, alors \Installed Products\ ne doit pas contenir un nœud d’outils de développement de Microsoft Windows Phone.

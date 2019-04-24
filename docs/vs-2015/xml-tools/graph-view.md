@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bf9f92e56d9405a5945fe160860175d575e57cc4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3e2b51128e851252d3949e6cfde122a52a09af6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948371"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110542"
 ---
 # <a name="graph-view"></a>Vue Graphique
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 La vue du graphique fournit une représentation graphique des nœuds de schéma globaux et des relations entre les nœuds. Notez que la vue du graphique ne vous permet pas de modifier la disposition du jeu de schémas sur l'aire de conception. La vue du graphique comprend également la barre d'outils Concepteur de schémas XML et la barre de fil d'Ariane (breadcrumb).  
   
  L'image suivante montre la vue du graphique avec six nœuds globaux sur son aire de conception.  
@@ -116,11 +115,11 @@ La vue du graphique fournit une représentation graphique des nœuds de schéma 
 ## <a name="undoredo"></a>Annuler/Rétablir  
  La fonction d'annulation/de rétablissement est activée dans la vue du graphique pour les actions suivantes :  
   
--   Ajout d'un nœud unique par glisser-déplacer.  
+- Ajout d'un nœud unique par glisser-déplacer.  
   
--   Ajout de plusieurs nœuds de la fenêtre des résultats de la recherche dans des requêtes de l'Explorateur de schémas ou de la vue de départ.  
+- Ajout de plusieurs nœuds de la fenêtre des résultats de la recherche dans des requêtes de l'Explorateur de schémas ou de la vue de départ.  
   
--   Suppression d'un ou plusieurs nœuds.  
+- Suppression d'un ou plusieurs nœuds.  
   
 ## <a name="zoom"></a>Zoom  
  Le zoom est disponible dans le coin inférieur droit de la vue du graphique.  

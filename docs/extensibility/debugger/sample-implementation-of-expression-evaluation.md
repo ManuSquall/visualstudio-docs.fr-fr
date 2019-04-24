@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2afb20f2a337008bc3d3b7fe3dd6aaa5b3f163cf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f7b933277a2c509356037e585b7d2256a587c233
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684973"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090539"
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>Exemple d’implémentation de l’évaluation d’expression
 > [!IMPORTANT]
@@ -27,11 +27,11 @@ ms.locfileid: "56684973"
 
  Le `IDebugExpressionEvaluator::Parse` effectue les tâches suivantes :
 
-1.  (C++ uniquement) Analyse l’expression pour rechercher des erreurs.
+1. [C++ uniquement] Analyse l’expression pour rechercher des erreurs.
 
-2.  Instancie une classe (appelée `CParsedExpression` dans cet exemple) qui exécute le `IDebugParsedExpression` de l’interface et la stocke dans la classe de l’expression à analyser.
+2. Instancie une classe (appelée `CParsedExpression` dans cet exemple) qui exécute le `IDebugParsedExpression` de l’interface et la stocke dans la classe de l’expression à analyser.
 
-3.  Retourne le `IDebugParsedExpression` de l’interface à partir de la `CParsedExpression` objet.
+3. Retourne le `IDebugParsedExpression` de l’interface à partir de la `CParsedExpression` objet.
 
 > [!NOTE]
 >  Dans les exemples qui suivent et dans l’exemple MyCEE, l’évaluateur d’expression ne sépare pas l’analyse de l’évaluation.

@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d4dfa0f5eb59b055b2dd16e9f8ac1554247c85a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9c4c8cea0b29994bb880dd0d93832da0e875cc56
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949991"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115599"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Procédure : Configurer l’héritage à l’aide du Concepteur O/R
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 L'[!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]) prend en charge le concept d'héritage à table unique qui est souvent implémenté dans les systèmes relationnels. L'héritage à table unique fait appel à une seule table de base de données qui contient des champs pour les informations parent et enfant. Avec les données relationnelles, une colonne de discriminateur contient la valeur qui détermine à quelle classe tout enregistrement appartient.  
   
  Prenons par exemple une table Persons qui contient tous les employées d'une société. Certaines personnes sont des employés et d'autres des responsables. La table Persons contient une colonne nommée `EmployeeType` qui a une valeur de 1 pour les responsables et une valeur de 2 pour les employés ; c'est la colonne de discriminateur. Dans ce scénario, vous pouvez créer une sous-classe d'employés et remplir la classe avec uniquement des enregistrements ayant une valeur `EmployeeType` de 2. Vous pouvez également supprimer les colonnes qui ne s'appliquent à aucune de ces classes.  
@@ -28,27 +27,27 @@ L'[!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUD
   
 ### <a name="to-create-inherited-data-classes"></a>Pour créer des classes de données héritées  
   
-1.  Ouvrez le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] en ajoutant un **Classes LINQ to SQL** élément à un projet Visual Basic ou C# existant.  
+1. Ouvrez le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] en ajoutant un **Classes LINQ to SQL** élément à un projet Visual Basic ou c# existant.  
   
-2.  Faites glisser la table à utiliser comme classe de base vers le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
+2. Faites glisser la table à utiliser comme classe de base vers le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
-3.  Faites glisser une deuxième copie de la table sur le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] et renommez-la. C'est la classe dérivée, ou sous-classe.  
+3. Faites glisser une deuxième copie de la table sur le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] et renommez-la. C'est la classe dérivée, ou sous-classe.  
   
-4.  Cliquez sur **Héritage** sous l’onglet **Concepteur Objet Relationnel** de la **Boîte à outils**, puis sur la sous-classe (la table que vous avez renommée) et connectez-la à la classe de base.  
+4. Cliquez sur **Héritage** sous l’onglet **Concepteur Objet Relationnel** de la **Boîte à outils**, puis sur la sous-classe (la table que vous avez renommée) et connectez-la à la classe de base.  
   
     > [!NOTE]
     >  Cliquez sur l’élément **Héritage** dans la **Boîte à outils** et relâchez le bouton de la souris, cliquez sur la seconde copie de la classe que vous avez créée à l’étape 3, puis cliquez sur la première classe que vous avez créée à l’étape 2. La flèche sur la ligne d'héritage pointe sur la première classe.  
   
-5.  Dans chaque classe, supprimez toutes les propriétés d'objet que vous ne souhaitez pas voir apparaître et qui ne sont pas utilisées pour des associations. Vous recevrez une erreur si vous tentez de supprimer des propriétés de l’objet utilisées pour les associations : [La propriété \<nom de propriété > ne peut pas être supprimé, car il participe à l’association \<nom de l’association >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).  
+5. Dans chaque classe, supprimez toutes les propriétés d'objet que vous ne souhaitez pas voir apparaître et qui ne sont pas utilisées pour des associations. Vous recevrez une erreur si vous tentez de supprimer des propriétés de l’objet utilisées pour les associations : [La propriété \<nom de propriété > ne peut pas être supprimé, car il participe à l’association \<nom de l’association >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).  
   
     > [!NOTE]
     >  Comme une classe dérivée hérite des propriétés définies dans sa classe de base, les mêmes colonnes ne peuvent pas être définies dans chaque classe. (Les colonnes sont implémentées sous forme de propriétés.) Vous pouvez activer la création de colonnes dans la classe dérivée en définissant le Modificateur d'héritage sur la propriété dans la classe de base. Pour plus d’informations, consultez [NOT IN BUILD : Substitution de propriétés et méthodes](http://msdn.microsoft.com/2167e8f5-1225-4b13-9ebd-02591ba90213).  
   
-6.  Sélectionnez la ligne d'héritage dans le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
+6. Sélectionnez la ligne d'héritage dans le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
-7.  Dans le **propriétés** fenêtre, définissez la **propriété de discriminateur** au nom de colonne qui est utilisé pour distinguer les enregistrements dans vos classes.  
+7. Dans le **propriétés** fenêtre, définissez la **propriété de discriminateur** au nom de colonne qui est utilisé pour distinguer les enregistrements dans vos classes.  
   
-8.  Affectez à la propriété **Valeur de discriminateur de classe dérivée** la valeur dans la base de données qui désigne l’enregistrement comme type hérité. (Il s'agit de la valeur stockée dans la colonne de discriminateur et qui est utilisée pour désigner la classe héritée.)  
+8. Affectez à la propriété **Valeur de discriminateur de classe dérivée** la valeur dans la base de données qui désigne l’enregistrement comme type hérité. (Il s'agit de la valeur stockée dans la colonne de discriminateur et qui est utilisée pour désigner la classe héritée.)  
   
 9. Affectez à la propriété **Valeur de discriminateur de classe de base** la valeur qui désigne l’enregistrement comme type de base. (Il s'agit de la valeur stockée dans la colonne de discriminateur et qui est utilisée pour désigner la classe de base.)  
   

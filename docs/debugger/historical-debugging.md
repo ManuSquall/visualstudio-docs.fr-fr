@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edf0bc2b233a44893e9a526e172fa75043ebaa42
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: e44e62997cac1060047de03253880bbf577935da
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689263"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075321"
 ---
 # <a name="historical-debugging-c-visual-basic-c"></a>Débogage d’historique (C#, Visual Basic, C++)
 
@@ -31,8 +31,8 @@ Le débogage d'historique est un mode de débogage qui repose sur les informatio
 
 ## <a name="how-do-i-start-using-historical-debugging"></a>Comment utiliser le débogage d’historique ?
 
- IntelliTrace est activé par défaut. Il vous suffit est de déterminer les événements et les appels de fonction présentent un intérêt pour vous, et si vous souhaitez afficher les captures instantanées de votre état complet des applications. Pour plus d’informations sur l’identification de ce que vous voulez rechercher, consultez [Fonctionnalités d’IntelliTrace](../debugger/intellitrace-features.md). Prise en charge de la fonctionnalité varie selon la langue et application type.
+IntelliTrace est activé par défaut. Il vous suffit est de déterminer les événements et les appels de fonction présentent un intérêt pour vous, et si vous souhaitez afficher les captures instantanées de votre état complet des applications. Pour plus d’informations sur l’identification de ce que vous voulez rechercher, consultez [Fonctionnalités d’IntelliTrace](../debugger/intellitrace-features.md). Prise en charge de la fonctionnalité varie selon la langue et application type.
 
- - Pour afficher des captures instantanées avec le débogage d’historique, consultez [Inspecter les États d’application précédent à l’aide d’IntelliTrace](../debugger/view-historical-application-state.md)
- - Pour savoir comment inspecter des variables et parcourir le code, consultez [Inspecter votre application avec le débogage d’historique](../debugger/historical-debugging-inspect-app.md)
- - Pour en savoir plus sur le débogage avec des événements IntelliTrace, consultez [procédure pas à pas : utilisation d’IntelliTrace](../debugger/walkthrough-using-intellitrace.md).
+- Pour afficher des captures instantanées avec le débogage d’historique, consultez [Inspecter les États d’application précédent à l’aide d’IntelliTrace](../debugger/view-historical-application-state.md)
+- Pour savoir comment inspecter des variables et parcourir le code, consultez [Inspecter votre application avec le débogage d’historique](../debugger/historical-debugging-inspect-app.md)
+- Pour en savoir plus sur le débogage avec des événements IntelliTrace, consultez [procédure pas à pas : À l’aide d’IntelliTrace](../debugger/walkthrough-using-intellitrace.md).

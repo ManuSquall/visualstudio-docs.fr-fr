@@ -11,12 +11,12 @@ ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3ef6037220337f0dc5005952849c9700703709f2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: e8bc80e28979a1adf86f4b0490f84cc393450521
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001645"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096130"
 ---
 # <a name="vsix-project-template"></a>Modèle de projet VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,37 +48,37 @@ Vous pouvez utiliser le modèle de projet VSIX pour encapsuler une ou plusieurs 
   
 #### <a name="to-package-an-extension-by-using-a-vsix-project"></a>Pour un package d’extension à l’aide d’un projet VSIX  
   
-1.  Générer les projets qui composent votre extension.  
+1. Générer les projets qui composent votre extension.  
   
-2.  Créez un projet VSIX à l’aide de la **projet VSIX** modèle.  
+2. Créez un projet VSIX à l’aide de la **projet VSIX** modèle.  
   
      Source.extension.vsixmanifest s’ouvre dans **Concepteur de manifeste**.  
   
-3.  Sur le **actifs** , choisir le **New** bouton.  
+3. Sur le **actifs** , choisir le **New** bouton.  
   
      Le **ajouter un nouveau composant** boîte de dialogue s’affiche.  
   
-4.  Dans le **Type** liste, choisissez le type d’extension à ajouter.  
+4. Dans le **Type** liste, choisissez le type d’extension à ajouter.  
   
-5.  Pour ajouter un élément d’extension ou le contenu qui est inclus dans la solution actuelle (par exemple, un modèle d’élément ou un assembly compilé), procédez comme suit :  
+5. Pour ajouter un élément d’extension ou le contenu qui est inclus dans la solution actuelle (par exemple, un modèle d’élément ou un assembly compilé), procédez comme suit :  
   
-    1.  Dans le **Source** , choisissez **un projet dans la solution actuelle**.  
+    1. Dans le **Source** , choisissez **un projet dans la solution actuelle**.  
   
-    2.  Dans le **projet** , sélectionnez le nom de l’extension.  
+    2. Dans le **projet** , sélectionnez le nom de l’extension.  
   
-    3.  Dans le **incorporé dans ce dossier** , entrez le nom d’un dossier dans lequel incorporer la ressource, puis choisissez le **OK** bouton.  
+    3. Dans le **incorporé dans ce dossier** , entrez le nom d’un dossier dans lequel incorporer la ressource, puis choisissez le **OK** bouton.  
   
-6.  Pour ajouter une extension ou un élément de contenu qui n’est pas inclus dans la solution actuelle, procédez comme suit :  
+6. Pour ajouter une extension ou un élément de contenu qui n’est pas inclus dans la solution actuelle, procédez comme suit :  
   
-    1.  Dans le **Source** zone de liste, choisissez **fichier sur le système de fichiers**.  
+    1. Dans le **Source** zone de liste, choisissez **fichier sur le système de fichiers**.  
   
-    2.  Dans le **chemin d’accès** champ, entrez le chemin d’accès complet au fichier d’extension compilées ou compressé ou utilisez le **Parcourir** bouton pour accéder au fichier.  
+    2. Dans le **chemin d’accès** champ, entrez le chemin d’accès complet au fichier d’extension compilées ou compressé ou utilisez le **Parcourir** bouton pour accéder au fichier.  
   
-    3.  Dans le **incorporé dans ce dossier** , entrez le nom d’un dossier dans lequel incorporer la ressource, puis choisissez le **OK** bouton.  
+    3. Dans le **incorporé dans ce dossier** , entrez le nom d’un dossier dans lequel incorporer la ressource, puis choisissez le **OK** bouton.  
   
-7.  Si vous souhaitez que votre package pour inclure des extensions supplémentaires, ajoutez-les de la même manière.  
+7. Si vous souhaitez que votre package pour inclure des extensions supplémentaires, ajoutez-les de la même manière.  
   
-8.  Générez la solution.  
+8. Générez la solution.  
   
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] génère un fichier .vsix contenant un fichier de manifeste VSIX, un fichier [Content_Types] .xml et toutes les ressources de l’extension que vous avez ajouté au projet.  
   

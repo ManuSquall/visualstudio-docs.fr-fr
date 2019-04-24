@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54284b9e1e55e4e3a3ba8b8237b9420cbf195089
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: b5c763e18f30bec27837e248a27546df821ef33f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704044"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065582"
 ---
 # <a name="attach-after-a-launch"></a>Attachement après un lancement
 Une fois un programme démarre, la session de débogage est prête à attacher le moteur de débogage (dé) dudit programme.
@@ -23,9 +23,9 @@ Une fois un programme démarre, la session de débogage est prête à attacher l
 ## <a name="design-decisions"></a>Décisions de conception
  Étant donné que la communication est plus facile au sein d’un espace d’adressage partagé, vous devez choisir entre deux approches de conception : définir la communication entre la session de débogage et l’Allemagne. Ou bien, définir la communication entre l’Allemagne et le programme. Le choix entre les éléments suivants :
 
--   S’il est plus judicieux de configurer la communication entre la session de débogage et l’Allemagne, la session de débogage crée l’Allemagne et vous demande de l’Allemagne à joindre au programme. Cette conception laisse la session de débogage et DE ensemble dans un espace d’adressage et l’environnement d’exécution et le programme dans un autre.
+- S’il est plus judicieux de configurer la communication entre la session de débogage et l’Allemagne, la session de débogage crée l’Allemagne et vous demande de l’Allemagne à joindre au programme. Cette conception laisse la session de débogage et DE ensemble dans un espace d’adressage et l’environnement d’exécution et le programme dans un autre.
 
--   S’il est plus judicieux de configurer la communication entre l’Allemagne et le programme, l’environnement d’exécution crée l’Allemagne. Cette conception laisse le SDM dans un espace d’adressage et l’Allemagne, environnement d’exécution et programme ensemble dans un autre. Cette conception est typique d’un dé est implémentée avec un interpréteur pour exécuter des langages de script.
+- S’il est plus judicieux de configurer la communication entre l’Allemagne et le programme, l’environnement d’exécution crée l’Allemagne. Cette conception laisse le SDM dans un espace d’adressage et l’Allemagne, environnement d’exécution et programme ensemble dans un autre. Cette conception est typique d’un dé est implémentée avec un interpréteur pour exécuter des langages de script.
 
     > [!NOTE]
     >  Comment le D’attache au programme est dépend de l’implémentation. Communication entre l’Allemagne et le programme est également dépend de l’implémentation.

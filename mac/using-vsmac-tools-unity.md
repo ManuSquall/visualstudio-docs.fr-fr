@@ -3,14 +3,14 @@ title: Utilisation des outils Visual Studio pour Mac pour Unity
 description: Ce guide explique comment utiliser l’extension Outils Visual Studio pour Mac pour Unity
 author: therealjohn
 ms.author: johmil
-ms.date: 07/17/2017
+ms.date: 04/02/2019
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
-ms.openlocfilehash: d4df59273db1fab8492b36e87e48e0e770072f17
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 8d2cff0f2366a1f59dc70db7fd36415e853e1d2e
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027300"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857006"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>Utilisation des outils Visual Studio pour Mac pour Unity
 
@@ -103,6 +103,13 @@ Pour démarrer le débogage :
 
 3. Quand le jeu s’exécute dans l’éditeur Unity, tout en étant connecté à Visual Studio, les points d’arrêt rencontrés suspendent l’exécution du jeu et affichent la ligne de code où le jeu a rencontré le point d’arrêt dans Visual Studio pour Mac.
 
+
+### <a name="start-debugging-in-a-single-step"></a>Commencer le débogage en une seule étape
+
+Commencer le débogage et lire l’éditeur Unity sont des opérations qui peuvent être effectuées en une seule étape, directement à partir de Visual Studio pour Mac, en choisissant la configuration **Attacher à Unity et lire**.
+
+![Sélectionner Attacher à Unity et lire](media/using-vsmac-tools-unity-image8.png)
+
 ### <a name="stop-debugging"></a>Arrêter le débogage
 
 Pour arrêter le débogage :
@@ -110,5 +117,8 @@ Pour arrêter le débogage :
 1. Cliquez sur le bouton **Arrêter** dans Visual Studio pour Mac ou appuyez sur **MAJ + Commande + Entrée**.
 
    ![Cliquer sur Arrêter dans Visual Studio](media/using-vsmac-tools-unity-image7.png)
+
+> [!NOTE]
+> Si vous avez démarré le débogage à l’aide de la configuration **Attacher à Unity et lire**, le bouton **Arrêter** permet également d’arrêter l’éditeur Unity.
 
 Pour en savoir plus sur le débogage dans Visual Studio pour Mac, consultez [Utilisation du débogueur](debugging.md).

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6002ed1748a5848e43628c88ec0395a0d4053ed
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 829ceea8f4acf0f884e3345e05053d368489d9ea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712019"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049020"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>Bien démarrer avec les extensions d’éditeur et de service de langage
 Vous pouvez utiliser des extensions de l’éditeur pour ajouter des fonctionnalités de service de langage telles que le mode plan, correspondance des accolades, IntelliSense et des ampoules à votre propre langage de programmation ou à n’importe quel type de contenu. Vous pouvez également personnaliser l’apparence et le comportement de l’éditeur Visual Studio, par exemple le texte de coloration, marges, les ornements et les autres éléments visuels. Vous pouvez également définir votre propre type de contenu et spécifier l’apparence et le comportement des vues de texte dans lequel votre contenu s’affiche.
@@ -82,9 +82,9 @@ Vous pouvez utiliser des extensions de l’éditeur pour ajouter des fonctionnal
 
  Vous pouvez également créer éditeur composants MEF à partir d’une extension de Package Visual Studio. Les procédures suivantes pour plus d’informations, consultez :
 
--   [Procédure pas à pas : À l’aide d’une invite de commandes avec une extension de l’éditeur](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)
+- [Procédure pas à pas : À l’aide d’une invite de commandes avec une extension de l’éditeur](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)
 
--   [Procédure pas à pas : À l’aide d’une touche de raccourci avec une extension de l’éditeur](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)
+- [Procédure pas à pas : À l’aide d’une touche de raccourci avec une extension de l’éditeur](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)
 
 ## <a name="see-also"></a>Voir aussi
 - [Points d’extension éditeur et le service de langage](../extensibility/language-service-and-editor-extension-points.md)

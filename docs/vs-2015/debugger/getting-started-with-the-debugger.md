@@ -14,20 +14,20 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d30c45c0601b6e291604275fdc9cfc4f3b5def6d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e093abd5e836bcb7ee236979c00d574a07ecfd3d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948177"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109517"
 ---
 # <a name="getting-started-with-the-debugger"></a>Prise en main du débogueur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le débogueur Visual Studio est facile à utiliser dans n'importe quel langage. Nous allons montrer ici comment déboguer un programme C# simple, mais vous pouvez appliquer les mêmes étapes à du code dans d'autres langages, comme C++ et JavaScript.  
   
-##  <a name="BKMK_Start_debugging_a_VS_project"></a> Déboguer un projet de base en C#  
- Nous allons commencer par une application de console C# simple (**fichier / nouveau / projet**, puis sélectionnez **Visual C#** , puis sélectionnez **Application Console**). Si vous n’avez jamais travaillé avec Visual Studio, consultez [procédure pas à pas : Créer une Application Simple](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). Le **Main** méthode ajoute 1 à une variable entière 10 fois juste et affiche le résultat sur la console :  
+## <a name="BKMK_Start_debugging_a_VS_project"></a> Déboguer un projet de base en c#  
+ Nous allons commencer par une application de console c# simple (**fichier / nouveau / projet**, puis sélectionnez **Visual C#** , puis sélectionnez **Application Console**). Si vous n’avez jamais travaillé avec Visual Studio, consultez [procédure pas à pas : Créer une Application Simple](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). Le **Main** méthode ajoute 1 à une variable entière 10 fois juste et affiche le résultat sur la console :  
   
 ```csharp  
 static void Main(string[] args)  
@@ -51,7 +51,7 @@ static void Main(string[] args)
   
  Pour plus d’informations sur les points d’arrêt, consultez [à l’aide des points d’arrêt](../debugger/using-breakpoints.md).  
   
-##  <a name="BKMK_Inspect_Variables"></a> Inspecter des Variables  
+## <a name="BKMK_Inspect_Variables"></a> Inspecter des Variables  
  Débogage souvent implique la recherche des variables qui ne contiennent pas les valeurs que vous souhaitez à un moment donné. Nous allons montrer quelques-unes des méthodes que vous pouvez inspecter les variables.  
   
  Redémarrez le débogage. L'exécution s'arrête avant l'exécution du code `Console.WriteLine`. Vous pouvez provoquer son exécution en pas à pas détaillé à l’avance (cliquez sur **déboguer / Over** ou **F10**). Dans ce cas vous auriez pouvez choisir **pas à pas détaillé** (**F11**) et obtenir le même résultat ; nous expliquerons la différence par la suite. La ligne avec la dernière accolade de la méthode doit être passée en jaune. Regardez la fenêtre de console. Vous devriez voir **10**.  

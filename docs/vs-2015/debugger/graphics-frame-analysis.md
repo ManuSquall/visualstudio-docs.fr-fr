@@ -11,12 +11,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b02f1035a8b149ba8cfc1152bb83d1410bd86350
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d93c18f1b62ef7171fb35af896a8e9adbc461680
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950867"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053531"
 ---
 # <a name="graphics-frame-analysis"></a>Analyse des frames graphiques
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -139,7 +139,7 @@ Utilisez l'analyse des frames graphiques dans Visual Studio Graphics Analyzer po
   
  L'analyse des frames limite le nombre de nouvelles tentatives à 10. Si votre plateforme a recours à une gestion de l'alimentation agressive ou au « clock gating », cela peut entraîner l'échec de l'analyse des frames et le signalement d'une erreur pour dépassement de la limite de nouvelles tentatives. Vous pouvez atténuer ce problème en réinitialisant la gestion de l'alimentation de votre plateforme et en choisissant une vitesse d'horloge moins agressive, si la plateforme le permet.  
   
-##  <a name="HardwareSupport"></a> Prise en charge matérielle  
+## <a name="HardwareSupport"></a> Prise en charge matérielle  
   
 ### <a name="timestamps-and-occlusion-queries"></a>Horodateurs et requêtes d'occlusion  
  Les horodateurs sont pris en charge sur toutes les plateformes prenant en charge l'analyse des frames. Les requêtes d'occlusion en profondeur (nécessaires au compteur Pixels bloqués) sont prises en charge sur les plateformes qui prennent en charge le niveau de fonctionnalité 9.2 ou supérieur.  
@@ -182,7 +182,7 @@ Utilisez l'analyse des frames graphiques dans Visual Studio Graphics Analyzer po
 > [!NOTE]
 >  Cela vaut uniquement pour les appels d'API Direct3D que vous utilisez, et non aux niveaux de fonctionnalité. Du moment que vous utilisez l'API Direct3D 11, Direct3D 11.1 ou Direct3D 11.2, l'analyse des frames fonctionnera quel que soit le niveau de fonctionnalité utilisé.  
   
-##  <a name="Variants"></a> Variantes  
+## <a name="Variants"></a> Variantes  
  Chaque modification apportée par l’analyse des frames au mode d’affichage d’un frame en cours de lecture est appelée *variante*. Les variantes examinées par l'analyse des frames correspondent à des modifications courantes et relativement simples que vous pourriez apporter pour améliorer les performance de rendu ou la qualité visuelle de votre application (par exemple, en réduisant la taille des textures, en utilisant la compression de texture ou en autorisant différents types d'anticrénelage). Les variantes substituent le contexte et les paramètres de rendu habituels de votre application. Voici un résumé :  
   
 |Variante|Description|  

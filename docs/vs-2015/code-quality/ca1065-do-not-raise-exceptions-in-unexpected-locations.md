@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 08c91b7a1f649340c3b0c9bece6b8b1b94c74324
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6c5a393c32d7f7182fc3226689e24d20a4cae1ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949742"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095351"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065 : Ne pas lever d'exceptions dans les emplacements inattendus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,24 +65,24 @@ ms.locfileid: "58949742"
 
  Les exceptions suivantes sont autorisées à être levée à partir d’une méthode get de propriété :
 
--   <xref:System.InvalidOperationException?displayProperty=fullName> et tous les dérivés (y compris <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> et tous les dérivés (y compris <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
--   <xref:System.NotSupportedException?displayProperty=fullName> et tous les dérivés
+- <xref:System.NotSupportedException?displayProperty=fullName> et tous les dérivés
 
--   <xref:System.ArgumentException?displayProperty=fullName> (uniquement à partir d’indexé d’obtention)
+- <xref:System.ArgumentException?displayProperty=fullName> (uniquement à partir d’indexé d’obtention)
 
--   <xref:System.Collections.Generic.KeyNotFoundException> (uniquement à partir d’indexé d’obtention)
+- <xref:System.Collections.Generic.KeyNotFoundException> (uniquement à partir d’indexé d’obtention)
 
 ### <a name="event-accessor-methods"></a>Méthodes d’accesseur d’événement
  Accesseurs d’événement doivent être des opérations simples qui ne lèvent pas d’exceptions. Un événement ne doit pas lever une exception lorsque vous essayez d’ajouter ou supprimer un gestionnaire d’événements.
 
  Les exceptions suivantes sont autorisées à être levée à partir d’un accesseur d’événement :
 
--   <xref:System.InvalidOperationException?displayProperty=fullName> et tous les dérivés (y compris <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> et tous les dérivés (y compris <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
--   <xref:System.NotSupportedException?displayProperty=fullName> et tous les dérivés
+- <xref:System.NotSupportedException?displayProperty=fullName> et tous les dérivés
 
--   <xref:System.ArgumentException> et dérivés
+- <xref:System.ArgumentException> et dérivés
 
 ### <a name="equals-methods"></a>Méthodes Equals
  Ce qui suit **est égal à** méthodes lever d’exceptions :

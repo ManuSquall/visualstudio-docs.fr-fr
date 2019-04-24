@@ -9,17 +9,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 219ba8c35cf67e3675f565b89607e6d518599dfd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0d02f72a686d0f271e387e550122451db34c019a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952387"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668026"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Datasets typés et non typés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Un dataset typé est un jeu de données est tout d’abord dérivé de la base de <xref:System.Data.DataSet> classe et utilise ensuite les informations à partir de la **Concepteur de Dataset**, qui est stocké dans un fichier .xsd, pour générer un nouveau fortement typée de classe de jeu de données. Informations à partir du schéma (tables, colonnes et ainsi de suite) sont générées et compilées dans cette nouvelle classe de jeu de données comme un ensemble de propriétés et des objets de première classe. Parce qu’un dataset typé hérite de la base de <xref:System.Data.DataSet> (classe), la classe typée suppose que toutes les fonctionnalités de la <xref:System.Data.DataSet> classe et peut être utilisé avec les méthodes qui prennent une instance d’un <xref:System.Data.DataSet> classe en tant que paramètre.  
   
  Un dataset non typé, n’a en revanche, aucun schéma intégré correspondant. Comme dans un dataset typé, il contient des tables, colonnes et ainsi de suite, mais ceux-ci sont exposés uniquement en tant que collections. (Toutefois, une fois que vous créez manuellement les tables et autres éléments de données dans un dataset non typé, vous pouvez exporter la structure du dataset en tant que schéma à l’aide du jeu de données <xref:System.Data.DataSet.WriteXmlSchema%2A> méthode.)  

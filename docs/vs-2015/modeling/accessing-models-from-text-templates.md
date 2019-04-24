@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a1a2ddeb3ab46bba30a505782fdd18d7df49574d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1052529bb743091398b55535b231597c6609add9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953207"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110490"
 ---
 # <a name="accessing-models-from-text-templates"></a>Accès aux modèles depuis des modèles de texte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,15 +57,15 @@ Here is a list of elements in the model:
   
  Notez les points suivants concernant ce modèle :  
   
--   Le modèle peut utiliser les classes de domaine, les propriétés et les relations que vous avez défini dans la définition DSL.  
+- Le modèle peut utiliser les classes de domaine, les propriétés et les relations que vous avez défini dans la définition DSL.  
   
--   Le modèle de charge le fichier de modèle que vous spécifiez dans le `requires` propriété.  
+- Le modèle de charge le fichier de modèle que vous spécifiez dans le `requires` propriété.  
   
--   Une propriété dans `this` contient l’élément racine. À partir de là, votre code peut accéder à d’autres éléments du modèle. Le nom de la propriété est généralement identique à la classe de domaine racine de votre DSL. Dans cet exemple, il s’agit de `this.ExampleModel`.  
+- Une propriété dans `this` contient l’élément racine. À partir de là, votre code peut accéder à d’autres éléments du modèle. Le nom de la propriété est généralement identique à la classe de domaine racine de votre DSL. Dans cet exemple, il s’agit de `this.ExampleModel`.  
   
--   Bien que le langage dans lequel sont écrits les fragments de code c#, vous pouvez générer le texte de tout type. Vous pouvez également écrire le code dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] en ajoutant la propriété `language="VB"` à la `template` directive.  
+- Bien que le langage dans lequel sont écrits les fragments de code c#, vous pouvez générer le texte de tout type. Vous pouvez également écrire le code dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] en ajoutant la propriété `language="VB"` à la `template` directive.  
   
--   Pour déboguer le modèle, vous devez ajouter `debug="true"` à la `template` directive. Le modèle s’ouvre dans une autre instance de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] si une exception se produit. Si vous souhaitez arrêter le débogueur à un moment précis dans le code, insérez l’instruction `System.Diagnostics.Debugger.Break();`  
+- Pour déboguer le modèle, vous devez ajouter `debug="true"` à la `template` directive. Le modèle s’ouvre dans une autre instance de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] si une exception se produit. Si vous souhaitez arrêter le débogueur à un moment précis dans le code, insérez l’instruction `System.Diagnostics.Debugger.Break();`  
   
      Pour plus d’informations, consultez [débogage d’un modèle de texte T4](../modeling/debugging-a-t4-text-template.md).  
   
@@ -80,9 +80,9 @@ Here is a list of elements in the model:
   
  Le processeur de directive DSL effectue deux tâches principales :  
   
--   Elle insère efficacement des directives d’assembly et l’importation dans le modèle qui fait référence à votre DSL. Cela vous permet d’utiliser vos classes de domaine dans le code du modèle.  
+- Elle insère efficacement des directives d’assembly et l’importation dans le modèle qui fait référence à votre DSL. Cela vous permet d’utiliser vos classes de domaine dans le code du modèle.  
   
--   Il charge le fichier que vous spécifiez dans le `requires` paramètre et définit une propriété `this` qui fait référence à l’élément racine du modèle chargé.  
+- Il charge le fichier que vous spécifiez dans le `requires` paramètre et définit une propriété `this` qui fait référence à l’élément racine du modèle chargé.  
   
 ## <a name="validating-the-model-before-running-the-template"></a>Validation du modèle avant d’exécuter le modèle  
  Vous pouvez provoquer le modèle être validée avant que le modèle est exécuté.  
@@ -100,7 +100,7 @@ Here is a list of elements in the model:
   
    Si une erreur se produit, il est signalé dans la fenêtre des erreurs, et le fichier de résultats contiendra un message d’erreur.  
   
-##  <a name="Multiple"></a> L’accès à plusieurs modèles à partir d’un modèle de texte  
+## <a name="Multiple"></a> L’accès à plusieurs modèles à partir d’un modèle de texte  
   
 > [!NOTE]
 >  Cette méthode vous permet de lire plusieurs modèles dans le même modèle, mais ne prend pas en charge les références ModelBus. Pour lire des modèles qui sont reliées par des références ModelBus, consultez [à l’aide de Visual Studio ModelBus dans un modèle de texte](../modeling/using-visual-studio-modelbus-in-a-text-template.md).  

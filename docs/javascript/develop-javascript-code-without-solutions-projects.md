@@ -13,21 +13,21 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 30479614158686ee50ba704bcf148760136138f0
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 3d6e3479fe27c5d88b58f096ab5405d75c6c98e3
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796762"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857838"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Développer du code JavaScript et TypeScript dans Visual Studio sans solutions ni projets
 
-Visual Studio 2017 introduit la possibilité de [développer du code sans projets ni solutions](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md), ce qui vous permet d’ouvrir un dossier de code et de commencer immédiatement à utiliser des fonctionnalités d’édition avancées, par exemple IntelliSense, la recherche, la refactorisation, le débogage et bien plus encore. Outre ces fonctionnalités, Node.js Tools pour Visual Studio ajoute la prise en charge de la génération de fichiers TypeScript, la gestion de packages npm et l’exécution de scripts npm.
+À compte de Visual Studio 2017, vous pouvez [développer du code sans projets ni solutions](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md), ce qui vous permet d’ouvrir un dossier de code et de commencer immédiatement à utiliser des fonctionnalités d’édition avancées, par exemple IntelliSense, la recherche, la refactorisation, le débogage et bien plus encore. Outre ces fonctionnalités, Node.js Tools pour Visual Studio ajoute la prise en charge de la génération de fichiers TypeScript, la gestion de packages npm et l’exécution de scripts npm.
 
 Pour commencer, dans la barre d’outils, sélectionnez **Fichier** > **Ouvrir** > **Dossier**. L’Explorateur de solutions affiche tous les fichiers dans le dossier et vous pouvez les ouvrir pour commencer à les modifier. En arrière-plan, Visual Studio indexe les fichiers pour activer npm, la génération et les fonctionnalités de débogage.
 
 > [!IMPORTANT]
-> Visual Studio 2017 version 15.8 est nécessaire pour la plupart des fonctionnalités décrites dans cet article, y compris l’intégration npm.
+> Visual Studio 2017 version 15.8 ou ultérieure est nécessaire pour la plupart des fonctionnalités décrites dans cet article, y compris l’intégration npm.
 
 ## <a name="npm-integration"></a>Intégration npm
 

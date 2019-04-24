@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 645346098b954fb57f5bb09f5ee97cfa48302150
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8c02dbf550ca1621a17d2b674a522e1e4f4bcc1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948633"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038904"
 ---
 # <a name="how-to-extend-the-domain-specific-language-designer"></a>Procédure : Étendre le Concepteur Domain-Specific Language
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,25 +28,25 @@ Vous pouvez créer des extensions au concepteur qui vous permet de modifier des 
   
 #### <a name="to-create-a-dsl-designer-extension-solution"></a>Pour créer une Solution d’Extension concepteur DSL  
   
-1.  Créer un nouveau projet à l’aide du modèle de projet bibliothèque de classes. Dans le **nouveau projet** boîte de dialogue, cliquez sur **Visual C#** et, dans la fenêtre du milieu, cliquez sur **bibliothèque de classes**.  
+1. Créer un nouveau projet à l’aide du modèle de projet bibliothèque de classes. Dans le **nouveau projet** boîte de dialogue, cliquez sur **Visual C#** et, dans la fenêtre du milieu, cliquez sur **bibliothèque de classes**.  
   
      Ce projet contiendra le code de vos extensions.  
   
-2.  Créer un nouveau projet à l’aide du modèle de projet VSIX. Dans le **nouveau projet** boîte de dialogue, développez **Visual C#**, cliquez sur **extensibilité**et puis dans la fenêtre du milieu, sélectionnez **projet VSIX**.  
+2. Créer un nouveau projet à l’aide du modèle de projet VSIX. Dans le **nouveau projet** boîte de dialogue, développez **Visual C#**, cliquez sur **extensibilité**et puis dans la fenêtre du milieu, sélectionnez **projet VSIX**.  
   
      Sélectionnez **ajouter à la Solution**.  
   
      Source.extension.vsixmanifest s’ouvre dans l’éditeur de manifeste VSIX.  
   
-3.  Au-dessus du champ de contenu, cliquez sur **ajouter du contenu**.  
+3. Au-dessus du champ de contenu, cliquez sur **ajouter du contenu**.  
   
-4.  Dans le **ajouter du contenu** boîte de dialogue, définissez **sélectionner un Type de contenu** à **composant MEF**et définissez **projet** à votre projet de bibliothèque de classes.  
+4. Dans le **ajouter du contenu** boîte de dialogue, définissez **sélectionner un Type de contenu** à **composant MEF**et définissez **projet** à votre projet de bibliothèque de classes.  
   
-5.  Cliquez sur **sélectionner des éditions** et assurez-vous que l’option **Visual Studio Enterprise** est activée.  
+5. Cliquez sur **sélectionner des éditions** et assurez-vous que l’option **Visual Studio Enterprise** est activée.  
   
-6.  Assurez-vous que le projet VSIX est le projet de démarrage de la solution.  
+6. Assurez-vous que le projet VSIX est le projet de démarrage de la solution.  
   
-7.  Dans le projet de bibliothèque de classes, ajoutez des références aux assemblys suivants :  
+7. Dans le projet de bibliothèque de classes, ajoutez des références aux assemblys suivants :  
   
      Microsoft.VisualStudio.CoreUtility  
   

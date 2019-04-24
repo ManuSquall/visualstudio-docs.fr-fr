@@ -12,12 +12,12 @@ ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 28588f04119eea31dfb0f32beb3b78376aa1b6b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c63f6c98153c9f7a9fab171b3caddd57df717cc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950871"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107799"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>Ajout d’un contrôleur de menu à une barre d’outils
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,7 +114,7 @@ Cette procédure pas à pas s’appuie sur le [Ajout d’une barre d’outils à
   
 ## <a name="implementing-the-menu-controller-commands"></a>Implémentation des commandes du contrôleur de Menu  
   
-1.  Dans TWTestCommandPackageGuids.cs, ajoutez ID de commande pour les éléments du trois menu après l’ID de commande existante.  
+1. Dans TWTestCommandPackageGuids.cs, ajoutez ID de commande pour les éléments du trois menu après l’ID de commande existante.  
   
     ```csharp  
     public const int cmdidMCItem1 = 0x130;  
@@ -122,13 +122,13 @@ Cette procédure pas à pas s’appuie sur le [Ajout d’une barre d’outils à
     public const int cmdidMCItem3 = 0x132;  
     ```  
   
-2.  Dans TWTestCommand.cs, ajoutez le code suivant en haut de la classe TWTestCommand.  
+2. Dans TWTestCommand.cs, ajoutez le code suivant en haut de la classe TWTestCommand.  
   
     ```csharp  
     private int currentMCCommand; // The currently selected menu controller command  
     ```  
   
-3.  Dans le constructeur TWTestCommand, après le dernier appel à la `AddCommand` (méthode), ajoutez le code pour acheminer les événements pour chaque commande grâce aux gestionnaires mêmes.  
+3. Dans le constructeur TWTestCommand, après le dernier appel à la `AddCommand` (méthode), ajoutez le code pour acheminer les événements pour chaque commande grâce aux gestionnaires mêmes.  
   
     ```csharp  
     for (int i = TWTestCommandPackageGuids.cmdidMCItem1; i <=  
@@ -149,7 +149,7 @@ Cette procédure pas à pas s’appuie sur le [Ajout d’une barre d’outils à
     }  
     ```  
   
-4.  Ajoutez un gestionnaire d’événements à la classe TWTestCommand pour marquer la commande sélectionnée comme activé.  
+4. Ajoutez un gestionnaire d’événements à la classe TWTestCommand pour marquer la commande sélectionnée comme activé.  
   
     ```csharp  
     private void OnMCItemQueryStatus(object sender, EventArgs e)  
@@ -162,7 +162,7 @@ Cette procédure pas à pas s’appuie sur le [Ajout d’une barre d’outils à
     }  
     ```  
   
-5.  Ajoutez un gestionnaire d’événements qui affiche un MessageBox lorsque l’utilisateur sélectionne une commande sur le contrôleur de menu :  
+5. Ajoutez un gestionnaire d’événements qui affiche un MessageBox lorsque l’utilisateur sélectionne une commande sur le contrôleur de menu :  
   
     ```csharp  
     private void OnMCItemClicked(object sender, EventArgs e)  
@@ -214,13 +214,13 @@ Cette procédure pas à pas s’appuie sur le [Ajout d’une barre d’outils à
   
 ## <a name="testing-the-menu-controller"></a>Test du contrôleur de Menu  
   
-1.  Générez le projet et commencez le débogage. Vous devez voir l’instance expérimentale.  
+1. Générez le projet et commencez le débogage. Vous devez voir l’instance expérimentale.  
   
-2.  Ouvrez le **Test ToolWindow** sur le **vue / autres Windows** menu.  
+2. Ouvrez le **Test ToolWindow** sur le **vue / autres Windows** menu.  
   
      Le contrôleur de menu s’affiche dans la barre d’outils dans la fenêtre outil et affiche **MC élément 1**.  
   
-3.  Cliquez sur le bouton de contrôleur de menu à gauche de la flèche.  
+3. Cliquez sur le bouton de contrôleur de menu à gauche de la flèche.  
   
      Vous devez voir trois éléments, le premier d'entre eux est sélectionné et a une zone de mise en surbrillance autour de son icône. Cliquez sur **MC élément 3**.  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e61790245acbbb7c16b573220d0aca2a633acb2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9330a41d0888532640774891386011f6b8dbfc24
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938936"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106018"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Informations de référence sur le langage DGML (Directed Graph Markup Language)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Le langage DGML (Directed Graph Markup Language) décrit les informations utilis
 > [!NOTE]
 >  Lorsque vous modifiez un fichier .dgml, IntelliSense vous aide à identifier les attributs qui sont disponibles pour chaque élément, ainsi que leurs valeurs. Pour spécifier la couleur dans un attribut, utilisez le nom des couleurs courantes (« Bleu », par exemple) ou des valeurs hexadécimales ARVB (« #ffa0b1c3 », par exemple). Le langage DGML utilise un sous-ensemble réduit de formats de définition de couleur WPF (Windows Presentation Foundation). Pour plus d’informations, consultez [couleurs classe](http://go.microsoft.com/fwlink/?LinkId=182345).  
   
-##  <a name="DGML"></a> Syntaxe du langage DGML  
+## <a name="DGML"></a> Syntaxe du langage DGML  
  Le tableau suivant décrit les types d'éléments utilisés en langage DGML :  
   
 - `<DirectedGraph></DirectedGraph>`  
@@ -302,7 +302,7 @@ Le langage DGML (Directed Graph Markup Language) décrit les informations utilis
   </DirectedGraph>  
   ```  
   
-###  <a name="AddAlias"></a> Alias pour les chemins d’accès fréquemment utilisés  
+### <a name="AddAlias"></a> Alias pour les chemins d’accès fréquemment utilisés  
  Lorsque vous remplacez des chemins d'accès fréquemment utilisés par des alias, vous réduisez la taille du fichier .dgml, ainsi que la durée nécessaire au téléchargement et à l'enregistrement du fichier. Pour créer un alias, ajoutez une section `<Paths></Paths>` à la fin du fichier .dgml. Dans cette section, ajoutez un élément `<Path/>` pour définir un alias pour le chemin d'accès :  
   
 ```xml  

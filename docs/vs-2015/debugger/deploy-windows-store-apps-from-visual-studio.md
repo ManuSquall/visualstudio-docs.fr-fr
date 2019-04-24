@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 520113d97bdf41d750cad340c0ab8868eb85f603
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 73b4350a2e7f277a11f4d6650d8089df0f87fe4d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954112"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116392"
 ---
 # <a name="deploy-windows-store-apps-from-visual-studio"></a>Déployer des applications du Windows Store à partir de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ S’applique uniquement à Windows] (.. /Image/windows_only_content.png « wind
 
 - Déploiement d'une application qui est déboguée quand elle est démarrée par une autre application ou méthode.
 
-##  <a name="BKMK_In_this_topic"></a> Dans cette rubrique
+## <a name="BKMK_In_this_topic"></a> Dans cette rubrique
  Dans cette rubrique, vous pouvez apprendre :
 
  [Comment déployer une application du Windows Store](#BKMK_How_to_deploy_a_Windows_Store_app)
@@ -49,25 +49,25 @@ S’applique uniquement à Windows] (.. /Image/windows_only_content.png « wind
 
  [Options de déploiement](#BKMK_Deployment_options)
 
-##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Comment déployer une application du Windows Store
+## <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Comment déployer une application du Windows Store
  Le déploiement manuel d'une application obéit à une procédure simple :
 
-1.  Si le déploiement s'effectue sur un périphérique distant, spécifiez le nom ou l'adresse IP du périphérique dans la page des propriétés du projet du projet de démarrage de l'application. (Les étapes associées sont répertoriées plus bas dans cette rubrique.)
+1. Si le déploiement s'effectue sur un périphérique distant, spécifiez le nom ou l'adresse IP du périphérique dans la page des propriétés du projet du projet de démarrage de l'application. (Les étapes associées sont répertoriées plus bas dans cette rubrique.)
 
-2.  Dans la barre d'outils Déboguer de Visual Studio, choisissez la cible de déploiement dans la liste déroulante située à côté du bouton **Démarrer le débogage** .
+2. Dans la barre d'outils Déboguer de Visual Studio, choisissez la cible de déploiement dans la liste déroulante située à côté du bouton **Démarrer le débogage** .
 
      ![Exécuter sur l’ordinateur Local](../debugger/media/vsrun-f5-local.png "VSRUN_F5_Local")
 
-3.  Dans le menu **Générer** , choisissez **Déployer**.
+3. Dans le menu **Générer** , choisissez **Déployer**.
 
-##  <a name="BKMK_How_to_specify_a_remote_device"></a> Comment spécifier un périphérique distant
+## <a name="BKMK_How_to_specify_a_remote_device"></a> Comment spécifier un périphérique distant
  **Conditions préalables**
 
  Pour déployer une application sur un périphérique distant :
 
--   Une licence de développeur doit être installée sur le périphérique distant.
+- Une licence de développeur doit être installée sur le périphérique distant.
 
--   Les outils de contrôle à distance Visual Studio doivent être installés sur le périphérique distant et le Remote Debugging Monitor doit être en cours d'exécution.
+- Les outils de contrôle à distance Visual Studio doivent être installés sur le périphérique distant et le Remote Debugging Monitor doit être en cours d'exécution.
 
      Le déploiement utilise le canal réseau du débogueur distant pour envoyer les fichiers de l'application sur le périphérique distant.
 
@@ -101,7 +101,7 @@ S’applique uniquement à Windows] (.. /Image/windows_only_content.png « wind
 
 8. Entrez le nom du réseau du périphérique distant dans la zone **Ordinateur distant** ou cliquez sur **Rechercher** pour sélectionner le périphérique dans la boîte de dialogue **Sélectionner une connexion du débogueur distant** .
 
-##  <a name="BKMK_Deployment_options"></a> Options de déploiement
+## <a name="BKMK_Deployment_options"></a> Options de déploiement
  Vous pouvez définir les options de déploiement suivantes sur la page de propriétés de débogage du projet de démarrage.
 
  **Autoriser le bouclage de réseau** pour des raisons de sécurité, un [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] application est installée en mode standard n’est pas autorisée à effectuer des appels réseau à l’appareil n’est installé sur. Par défaut, le déploiement Visual Studio crée une exemption à cette règle pour l'application déployée. Cette exemption vous permet de tester les procédures de communication sur un seul ordinateur. Avant d'envoyer votre application au [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)], vous devez la tester sans l'exemption.

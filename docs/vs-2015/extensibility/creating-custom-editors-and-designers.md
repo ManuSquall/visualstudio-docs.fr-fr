@@ -11,12 +11,12 @@ ms.assetid: b6a5e8b2-0ae1-4fc3-812d-09d40051b435
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8dd9b637571bfd7d2480992c7a2fef74a0d5b393
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dc94d11a5ed118f0133657ebf5b966623a199d64
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950432"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064386"
 ---
 # <a name="creating-custom-editors-and-designers"></a>Création d’éditeurs et de concepteurs personnalisés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,23 +51,23 @@ L’environnement de développement intégré (IDE) Visual Studio peut héberger
 ## <a name="editor-design-decisions"></a>Décisions de conception de l’éditeur  
  Les questions de conception suivantes vous aideront à choisir le type de l’éditeur de meilleures adapté à votre application :  
   
--   Votre application enregistrera ses données dans des fichiers ou pas ? Si elle enregistrera ses données dans les fichiers, ils seront dans un format standard ou personnalisé ?  
+- Votre application enregistrera ses données dans des fichiers ou pas ? Si elle enregistrera ses données dans les fichiers, ils seront dans un format standard ou personnalisé ?  
   
      Si vous utilisez un format de fichier standard, les autres types de projet en plus de votre projet sera capable d’ouvrir et lire/écrire des données leur. Toutefois, si vous utilisez un format de fichier personnalisé, uniquement le type de votre projet sera capable d’ouvrir et lire/écrire des données leur.  
   
      Si votre projet utilise des fichiers, vous devez personnaliser l’éditeur standard. Si votre projet n’utilise pas de fichiers, mais utilise plutôt des éléments dans une base de données ou autre référentiel, vous devez créer un éditeur personnalisé.  
   
--   Votre éditeur n’a besoin pour héberger des contrôles ActiveX ?  
+- Votre éditeur n’a besoin pour héberger des contrôles ActiveX ?  
   
      Si votre éditeur héberge des contrôles ActiveX, puis implémenter un éditeur d’activation sur place, comme indiqué dans [Activation en Place](../misc/in-place-activation.md). Si elle n’héberge pas de contrôles ActiveX, puis utilisez un éditeur d’incorporation simplifié, ou personnaliser la [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] éditeur par défaut.  
   
--   Votre éditeur prendra en charge plusieurs vues ? Si vous souhaitez que les vues de votre éditeur soient visibles en même temps que l’éditeur par défaut, vous devez prendre en charge plusieurs vues.  
+- Votre éditeur prendra en charge plusieurs vues ? Si vous souhaitez que les vues de votre éditeur soient visibles en même temps que l’éditeur par défaut, vous devez prendre en charge plusieurs vues.  
   
      Si votre éditeur doit prendre en charge plusieurs vues, les données de document et les objets de vue de document pour l’éditeur doivent être des objets distincts. Pour plus d’informations, consultez [prenant en charge plusieurs vues de Document](../extensibility/supporting-multiple-document-views.md).  
   
      Si votre éditeur prend en charge plusieurs vues, vous prévoyez d’utiliser le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] implémentation de mémoire tampon de texte de l’éditeur de base (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objet) pour votre objet de données de document ? Autrement dit, vous souhaitez prendre en charge de votre éditeur vue côte à côte avec la [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] éditeur principal ? La possibilité de procéder est la base du Concepteur de formulaires...  
   
--   Si vous avez besoin pour héberger un éditeur externe, l’éditeur incorporable dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]?  
+- Si vous avez besoin pour héberger un éditeur externe, l’éditeur incorporable dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]?  
   
      Si elle peut être incorporée, vous devez créer une fenêtre hôte pour l’éditeur externe et appelez ensuite la <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> (méthode) et définissez le <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> valeur d’énumération à `DP_External`. Si l’éditeur ne peut pas être incorporé, l’IDE crée automatiquement une fenêtre distincte pour celui-ci.  
   

@@ -26,12 +26,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4cde65af7de5ff56c2420116c026c61793fcf983
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 87e0280534eaf97fefebe54712b0f0b12e14bdac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799308"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077275"
 ---
 # <a name="understanding-build-configurations"></a>Présentation des configurations de build
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Vous pouvez enregistrer différentes configurations de propriétés de solution 
 > [!NOTE]
 >  Si les paramètres de configuration de solution ne figurent pas dans la barre d’outils et si vous ne pouvez pas accéder au **Gestionnaire de configurations**, les paramètres de développement de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] peuvent être appliqués. Pour plus d'informations, voir [Procédure : Gérer les Configurations de paramètres du développeur Visual Basic appliqués](../ide/how-to-manage-build-configurations-with-visual-basic-developer-settings-applied.md).  
   
- Par défaut, les configurations Debug et Release sont incluses dans les projets créés à l'aide des modèles [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Une configuration Debug prend en charge le débogage d’une application, et une configuration Release génère une version de l’application qui peut être déployée. Pour plus d’informations, consultez [Guide pratique pour définir des configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md). Vous pouvez également créer des configurations de solution et des configurations de projet personnalisées. Pour plus d’informations, consultez [Guide pratique pour créer et modifier des configurations](../ide/how-to-create-and-edit-configurations.md).  
+ Par défaut, les configurations Debug et Release sont incluses dans les projets créés à l'aide des modèles [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Une configuration Debug prend en charge le débogage d’une application, et une configuration Release génère une version de l’application qui peut être déployée. Pour plus d'informations, voir [Procédure : Définir des configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md). Vous pouvez également créer des configurations de solution et des configurations de projet personnalisées. Pour plus d'informations, voir [Procédure : Créer et modifier des configurations](../ide/how-to-create-and-edit-configurations.md).  
   
 ## <a name="solution-configurations"></a>Configurations de solutions  
  Une configuration de solution spécifie comment les projets de la solution doivent être générés et déployés. Pour modifier une configuration de solution ou en définir une nouvelle, dans le **Gestionnaire de configurations**, sous **Configuration de la solution active**, choisissez **Modifier** ou **Nouveau**.  
@@ -69,23 +69,23 @@ Vous pouvez enregistrer différentes configurations de propriétés de solution 
 ## <a name="how-visual-studio-assigns-project-configurations"></a>Comment Visual Studio assigne des configurations de projet  
  Lorsque vous définissez une nouvelle configuration de solution sans copier les paramètres d'une configuration existante, Visual Studio utilise les critères ci-après pour assigner des configurations de projet par défaut. Les critères sont évalués dans l'ordre indiqué.  
   
-1.  Si un projet a un nom de configuration (*\<nom de la configuration> \<nom de la plateforme>*) qui correspond exactement au nom de la nouvelle configuration de solution, cette configuration est attribuée. Les noms de configuration ne respectent pas la casse.  
+1. Si un projet a un nom de configuration (*\<nom de la configuration> \<nom de la plateforme>*) qui correspond exactement au nom de la nouvelle configuration de solution, cette configuration est attribuée. Les noms de configuration ne respectent pas la casse.  
   
-2.  Si le projet a un nom de configuration dont une partie indique un nom de configuration identique à la nouvelle configuration de solution, cette configuration est assignée, même si l'autre partie du nom indique une plateforme différente.  
+2. Si le projet a un nom de configuration dont une partie indique un nom de configuration identique à la nouvelle configuration de solution, cette configuration est assignée, même si l'autre partie du nom indique une plateforme différente.  
   
-3.  Si aucun nom ne correspond en partie au nom de configuration, la première configuration répertoriée dans le projet est assignée.  
+3. Si aucun nom ne correspond en partie au nom de configuration, la première configuration répertoriée dans le projet est assignée.  
   
 ## <a name="how-visual-studio-assigns-solution-configurations"></a>Comment Visual Studio assigne des configurations de solution  
  Quand vous créez une configuration de projet (dans le **Gestionnaire de configurations**, en choisissant **Nouveau** dans le menu déroulant de la colonne **Configuration** de ce projet) et que vous cochez la case **Créer des configurations de solutions**, Visual Studio recherche une configuration de solution du même nom pour générer le projet sur chaque plateforme prise en charge. Dans certains cas, Visual Studio renomme des configurations de solution existantes ou en définit de nouvelles.  
   
  Visual Studio utilise les critères ci-après pour assigner des configurations de solution.  
   
--   Si une configuration de projet ne spécifie pas de plateforme ou spécifie seulement une plateforme, une configuration de solution portant le même nom que la nouvelle configuration de projet est utilisée si elle existe déjà, ou ajoutée dans le cas contraire. Le nom par défaut de cette configuration de solution n’inclut pas le nom d’une plateforme ; il prend la forme *\<nom de la configuration de projet*.  
+- Si une configuration de projet ne spécifie pas de plateforme ou spécifie seulement une plateforme, une configuration de solution portant le même nom que la nouvelle configuration de projet est utilisée si elle existe déjà, ou ajoutée dans le cas contraire. Le nom par défaut de cette configuration de solution n’inclut pas le nom d’une plateforme ; il prend la forme *\<nom de la configuration de projet*.  
   
--   Si un projet prend en charge plusieurs plateformes, une configuration de solution est trouvée ou ajoutée pour chaque plateforme prise en charge. Le nom de chaque configuration de solution comprend le nom de la configuration de projet et celui de la plateforme, et se présente sous la forme *\<nom de la configuration de projet> \<nom de la plateforme*.  
+- Si un projet prend en charge plusieurs plateformes, une configuration de solution est trouvée ou ajoutée pour chaque plateforme prise en charge. Le nom de chaque configuration de solution comprend le nom de la configuration de projet et celui de la plateforme, et se présente sous la forme *\<nom de la configuration de projet> \<nom de la plateforme*.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : génération d’une application](../ide/walkthrough-building-an-application.md)   
+ [Procédure pas à pas : Création d’une Application](../ide/walkthrough-building-an-application.md)   
  [Compilation et génération](../ide/compiling-and-building-in-visual-studio.md)   
  [Projets et solutions](../ide/solutions-and-projects-in-visual-studio.md)   
  [Référence à la génération C/C++](http://msdn.microsoft.com/library/100b4ccf-572c-4d1f-970c-fa0bc0cc0d2d)   

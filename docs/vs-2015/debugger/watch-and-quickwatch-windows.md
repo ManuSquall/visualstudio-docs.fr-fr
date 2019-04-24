@@ -24,12 +24,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6fa22e93a767df599815c87e5809faddb674854b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d1a6167759d35dd67142e1919423df6aa380fe88
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953394"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063528"
 ---
 # <a name="watch-and-quickwatch-windows"></a>Espion et Espion express, fenêtres
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,15 +54,15 @@ static void Main(string[] args)
   
  Vous pouvez observer la variable a dans la fenêtre Espion express de la façon suivante :  
   
-1.  Définissez un point d’arrêt sur la ligne `a = a + b;` .  
+1. Définissez un point d’arrêt sur la ligne `a = a + b;` .  
   
-2.  Démarrez le débogage. L’exécution s’interrompt au point d’arrêt.  
+2. Démarrez le débogage. L’exécution s’interrompt au point d’arrêt.  
   
-3.  Ouvrez la fenêtre **Espion express** (cliquez avec le bouton droit sur a, puis choisissez **Déboguer/Espion express**ou **Maj+F9**). Vous pouvez ouvrir la fenêtre et ajouter la variable a à la fenêtre **Expression** , puis cliquer sur **Réévaluer**. La variable a s’affiche alors dans la fenêtre **Valeurs** avec une valeur égale à 2.  
+3. Ouvrez la fenêtre **Espion express** (cliquez avec le bouton droit sur a, puis choisissez **Déboguer/Espion express**ou **Maj+F9**). Vous pouvez ouvrir la fenêtre et ajouter la variable a à la fenêtre **Expression** , puis cliquer sur **Réévaluer**. La variable a s’affiche alors dans la fenêtre **Valeurs** avec une valeur égale à 2.  
   
-4.  La fenêtre **Espion express** étant une boîte de dialogue modale, vous ne pouvez pas poursuivre le débogage tant qu’elle est ouverte. Vous pouvez ajouter la variable à la fenêtre **Espion** en cliquant sur **Ajouter un espion**.  
+4. La fenêtre **Espion express** étant une boîte de dialogue modale, vous ne pouvez pas poursuivre le débogage tant qu’elle est ouverte. Vous pouvez ajouter la variable à la fenêtre **Espion** en cliquant sur **Ajouter un espion**.  
   
-5.  Fermez la fenêtre **Espion express** . Dès lors, vous pouvez poursuivre le débogage pendant que vous observez la valeur dans la fenêtre **Espion** .  
+5. Fermez la fenêtre **Espion express** . Dès lors, vous pouvez poursuivre le débogage pendant que vous observez la valeur dans la fenêtre **Espion** .  
   
 ## <a name="observing-variables-with-the-watch-window"></a>Observation de variables dans la fenêtre Espion  
  Vous pouvez observer plusieurs variables dans la fenêtre **Espion** . Par exemple, si vous avez le code suivant :  
@@ -112,7 +112,7 @@ static void Main(string[] args)
   
  ![WatchExpressionError](../debugger/media/watchexpressionerror.png "WatchExpressionError")  
   
-##  <a name="bkmk_refreshWatch"></a> Actualisation des valeurs obsolètes dans la fenêtre Espion  
+## <a name="bkmk_refreshWatch"></a> Actualisation des valeurs obsolètes dans la fenêtre Espion  
  Dans certaines circonstances, une icône d’actualisation (cercle avec deux flèches ou cercle avec deux lignes ondulées) peut apparaître pendant l’évaluation d’une expression dans la fenêtre **Espion** .  Par exemple, si vous avez désactivé l’évaluation de propriété (**Outils/Options/Débogage/Activer l’évaluation de la propriété et d’autres appels de fonction implicite**) et que vous avez le code suivant :  
   
 ```csharp  
@@ -143,7 +143,7 @@ static void Main(string[] args)
   
   Si vous voyez une icône représentant un cercle avec deux lignes ondulées qui s’apparentent à des fils, c’est que l’expression n’a pas été évaluée en raison d’une possible dépendance inter-threads. En d’autres termes, l’évaluation du code nécessite l’exécution temporaire d’autres threads dans votre application. Quand vous êtes en mode arrêt, tous les threads de votre application sont généralement arrêtés. Permettre à d’autres threads de s’exécuter temporairement peut avoir des effets inattendus sur l’état de votre programme et pousse le débogueur à ignorer certains événements tels que les points d’arrêt et les exceptions levées sur ces threads.  
   
-##  <a name="bkmk_sideEffects"></a> Side Effects and Expressions  
+## <a name="bkmk_sideEffects"></a> Side Effects and Expressions  
  Évaluer certaines expressions peut modifier la valeur d’une variable ou affecter d’une manière ou d’une autre l’état de votre programme. Par exemple, l’évaluation de l’expression suivante modifie la valeur de `var1`:  
   
 ```  
@@ -202,17 +202,17 @@ public class Program
   
  Vous pouvez ajouter une référence à cet objet `Person` dans la fenêtre **Espion** comme ceci :  
   
-1.  Définissez un point d’arrêt dans le code quelque temps après que l’objet a été créé.  
+1. Définissez un point d’arrêt dans le code quelque temps après que l’objet a été créé.  
   
-2.  Démarrez le débogage et quand l’exécution s’interrompt au point d’arrêt, recherchez la variable dans la fenêtre **Variables locales** , cliquez dessus avec le bouton droit, puis sélectionnez **Générer ID de l’objet**.  
+2. Démarrez le débogage et quand l’exécution s’interrompt au point d’arrêt, recherchez la variable dans la fenêtre **Variables locales** , cliquez dessus avec le bouton droit, puis sélectionnez **Générer ID de l’objet**.  
   
-3.  Le symbole **$** et un nombre s’affichent alors dans la fenêtre **Variables locales** . Il s’agit de l’ID d’objet.  
+3. Le symbole **$** et un nombre s’affichent alors dans la fenêtre **Variables locales** . Il s’agit de l’ID d’objet.  
   
-4.  Ajoutez l’ID d’objet à la fenêtre Espion.  
+4. Ajoutez l’ID d’objet à la fenêtre Espion.  
   
-5.  Définissez un point d’arrêt là où vous voulez observer le comportement de l’objet.  Dans le code ci-dessus, ce serait dans la méthode `DoSomething()` .  
+5. Définissez un point d’arrêt là où vous voulez observer le comportement de l’objet.  Dans le code ci-dessus, ce serait dans la méthode `DoSomething()` .  
   
-6.  Poursuivez le débogage et quand l’exécution s’arrête dans la méthode `DoSomething()` , la fenêtre **Espion** affiche l’objet `Person` .  
+6. Poursuivez le débogage et quand l’exécution s’arrête dans la méthode `DoSomething()` , la fenêtre **Espion** affiche l’objet `Person` .  
   
 > [!NOTE]
 >  Si vous voulez afficher les propriétés de l’objet, telles que `Person.Name` dans l’exemple ci-dessus, vous devez avoir activé l’évaluation de propriété.  

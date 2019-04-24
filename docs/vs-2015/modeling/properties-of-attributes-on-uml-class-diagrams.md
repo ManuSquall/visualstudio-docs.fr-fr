@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 27affdb42f6f5ad1dd4c880b87e3cbf737d52921
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 24575f125c07a016bef4742e010cbdd51f6c75e9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948060"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647931"
 ---
 # <a name="properties-of-attributes-on-uml-class-diagrams"></a>Propriétés d’attributs dans des diagrammes de classes UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,14 +51,13 @@ Dans un diagramme de classes UML, vous pouvez ajouter des *attributs* aux classe
 
  Pour afficher les propriétés d’un attribut, cliquez avec le bouton droit dessus, puis cliquez sur **Propriétés**.  
 
-
 |   **Property**    | **Default**  |                                                                                                                                                                                                         Description                                                                                                                                                                                                          |
 |-------------------|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Valeur par défaut** |   (vide)    |                                                                                                                                                                               Valeur de l’attribut quand le classifieur est instancié.                                                                                                                                                                                |
 | **Est en lecture seule**  |    False     |                                                                                                                                                                                    Si la valeur est true, la valeur de l’attribut ne peut pas être modifiée.                                                                                                                                                                                    |
 |   **Est statique**   |    False     |                                                                                                                    Si la valeur est true, une valeur unique pour cet attribut est partagée entre toutes les instances de ce type.<br /><br /> Si la valeur est true, le nom de l’attribut est souligné là où il apparaît sur le diagramme.                                                                                                                    |
 |     **Name**      | (un nouveau nom) |                                                                                                                                                                                        Doit être unique dans le classifieur propriétaire.                                                                                                                                                                                        |
-|     **Type**      |    (aucune)    |                                                Type primitif, comme **Entier**, ou type défini dans le modèle. Vous ne pouvez pas utiliser des types non primitifs comme **Décimal** , car la valeur doit être encodée dans les métadonnées. Si vous entrez un nom pour un nouveau type dans cette propriété, un type est ajouté à la section **Types non spécifiés** de l’Explorateur de modèles UML.                                                 |
+|     **Type**      |    (aucun)    |                                                Type primitif, comme **Entier**, ou type défini dans le modèle. Vous ne pouvez pas utiliser des types non primitifs comme **Décimal** , car la valeur doit être encodée dans les métadonnées. Si vous entrez un nom pour un nouveau type dans cette propriété, un type est ajouté à la section **Types non spécifiés** de l’Explorateur de modèles UML.                                                 |
 |  **Visibilité**   |    Public    |                                     Les valeurs autorisées et les caractères qui apparaissent dans la signature sont les suivants :<br /><br /> **+ Public** - visible globalement<br /><br /> **- Privé** : non visible en dehors du type propriétaire<br /><br /> **# Protégé** : visible pour les types dérivés du propriétaire<br /><br /> **~ Package** : visible pour d’autres types au sein du même package                                      |
 |  **Éléments de travail**   | {0} associé |                                                                                                                          Nombre d’éléments de travail associés. Lecture seule.<br /><br /> Pour plus d’informations, consultez [lier des éléments de modèle et des éléments de travail](../modeling/link-model-elements-and-work-items.md).                                                                                                                           |
 |    **Est une feuille**    |    False     |                                                                                                                                                                    Si la valeur est true, l’autorisation de la redéfinition de cet attribut dans les types dérivés n’est pas prévue.                                                                                                                                                                     |

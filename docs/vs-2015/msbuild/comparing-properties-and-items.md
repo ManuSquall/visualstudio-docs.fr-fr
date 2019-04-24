@@ -11,22 +11,21 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9418bd27d2f089b57cc2fb2abcf7b6610342f32d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 66fc8065e81b8b93e73ec034a166e3d5645d4b6b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758452"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095826"
 ---
 # <a name="comparing-properties-and-items"></a>Comparaison des propriétés et des éléments
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Les propriétés et les éléments MSBuild permettent de transmettre des informations aux tâches, d’évaluer des conditions et de stocker les valeurs qui peuvent être référencées dans le fichier projet.  
   
--   Les propriétés sont des paires nom-valeur. Pour plus d’informations, consultez l’article [Propriétés MSBuild](msbuild-properties1.md).  
+- Les propriétés sont des paires nom-valeur. Pour plus d’informations, consultez l’article [Propriétés MSBuild](msbuild-properties1.md).  
   
--   Les éléments sont des objets qui représentent généralement des fichiers. Des collections de métadonnées peuvent être associées aux objets d’élément. Les métadonnées sont des paires nom-valeur. Pour plus d’informations, consultez l’article [Éléments](../msbuild/msbuild-items.md).  
+- Les éléments sont des objets qui représentent généralement des fichiers. Des collections de métadonnées peuvent être associées aux objets d’élément. Les métadonnées sont des paires nom-valeur. Pour plus d’informations, consultez l’article [Éléments](../msbuild/msbuild-items.md).  
   
 ## <a name="scalars-and-vectors"></a>Scalaires et vecteurs  
  Comme les propriétés MSBuild sont des paires nom-valeur qui ont seulement une valeur de chaîne, elles sont souvent décrites en tant que *scalaires*. Comme les types d’élément MSBuild sont des listes d’éléments, ils sont souvent décrits comme des *vecteurs*. Toutefois, en pratique, les propriétés peuvent représenter plusieurs valeurs, et les types d’élément peuvent posséder zéro ou un élément.  
@@ -97,15 +96,15 @@ Les propriétés et les éléments MSBuild permettent de transmettre des informa
   
 - Pendant la phase d’évaluation d’une génération :  
   
-  -   Les propriétés sont définies et modifiées dans l’ordre dans lequel elles apparaissent. Les fonctions de propriétés sont exécutées. Les valeurs de propriété de la forme $(PropertyName) sont développées dans des expressions. La valeur de propriété est définie sur l’expression développée.  
+  - Les propriétés sont définies et modifiées dans l’ordre dans lequel elles apparaissent. Les fonctions de propriétés sont exécutées. Les valeurs de propriété de la forme $(PropertyName) sont développées dans des expressions. La valeur de propriété est définie sur l’expression développée.  
   
-  -   Les définitions d’élément sont créées et modifiées dans l’ordre dans lequel elles apparaissent. Les fonctions de propriétés ont déjà été développées dans des expressions. Les valeurs de métadonnées sont définies sur les expressions développées.  
+  - Les définitions d’élément sont créées et modifiées dans l’ordre dans lequel elles apparaissent. Les fonctions de propriétés ont déjà été développées dans des expressions. Les valeurs de métadonnées sont définies sur les expressions développées.  
   
-  -   Les types d’élément sont définis et modifiés dans l’ordre dans lequel ils apparaissent. Les valeurs d’éléments de la forme @(ItemType) sont développées. Les transformations d’élément sont également développées. Les fonctions et valeurs de propriétés ont déjà été développées dans des expressions. La liste d’éléments et les valeurs de métadonnées sont définies sur les expressions développées.  
+  - Les types d’élément sont définis et modifiés dans l’ordre dans lequel ils apparaissent. Les valeurs d’éléments de la forme @(ItemType) sont développées. Les transformations d’élément sont également développées. Les fonctions et valeurs de propriétés ont déjà été développées dans des expressions. La liste d’éléments et les valeurs de métadonnées sont définies sur les expressions développées.  
   
 - Pendant la phase d’exécution d’une génération :  
   
-  -   Les propriétés et les éléments qui sont définis dans des cibles sont évalués ensemble dans l’ordre dans lequel ils apparaissent. Les fonctions de propriétés sont exécutées, et les valeurs de propriétés sont développées dans des expressions. Les valeurs d’éléments et les transformations d’élément sont également développées. Les valeurs de propriétés, les valeurs de types d’élément et les valeurs de métadonnées sont définies sur les expressions développées.  
+  - Les propriétés et les éléments qui sont définis dans des cibles sont évalués ensemble dans l’ordre dans lequel ils apparaissent. Les fonctions de propriétés sont exécutées, et les valeurs de propriétés sont développées dans des expressions. Les valeurs d’éléments et les transformations d’élément sont également développées. Les valeurs de propriétés, les valeurs de types d’élément et les valeurs de métadonnées sont définies sur les expressions développées.  
   
 ### <a name="subtle-effects-of-the-evaluation-order"></a>Effets discrets de l’ordre d’évaluation  
  Dans la phase d’évaluation d’une génération, l’évaluation des propriétés précède celle des éléments. Néanmoins, les valeurs de certaines propriétés peuvent sembler dépendre des valeurs d’éléments. Examinez le script ci-dessous.  

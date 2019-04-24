@@ -10,19 +10,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b47db7802a6e174d8efff054fe9a6454fa6ef73
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 06844e8723cc118d6cc10c44c5c788e48c206684
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643676"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101026"
 ---
 # <a name="properties-window-overview"></a>Vue d'ensemble de la fenêtre Propriétés
 Le **propriétés** fenêtre permet d’afficher les propriétés d’objets sélectionnés dans les deux principaux types de fenêtres disponibles dans le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE). Ces deux types de fenêtres sont :
 
--   Fenêtres d’outils tels que navigateur de l’Explorateur de solutions, affichage de classes et objets
+- Fenêtres d’outils tels que navigateur de l’Explorateur de solutions, affichage de classes et objets
 
--   Fenêtres de document contenant ces éditeurs et les concepteurs en tant que le Concepteur de formulaires, un éditeur XML et un éditeur HTML
+- Fenêtres de document contenant ces éditeurs et les concepteurs en tant que le Concepteur de formulaires, un éditeur XML et un éditeur HTML
 
 ## <a name="using-the-properties-window"></a>À l’aide de la fenêtre Propriétés
  Le **propriétés** fenêtre affiche les propriétés d’un ou plusieurs éléments sélectionnés. Si plusieurs éléments sont sélectionnés, l’intersection de toutes les propriétés pour tous les objets sélectionnés s’affiche.

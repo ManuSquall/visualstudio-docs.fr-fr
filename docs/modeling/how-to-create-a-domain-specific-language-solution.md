@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 01f229e3763777784fab193034eb79a643f5da13
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 9b1799ac2e7124f79d10dcc8860a994e2f182ea7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416187"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051347"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Procédure : Créer une solution de langage spécifique à un domaine
 Un langage spécifique à un domaine (DSL) est créé à l’aide d’une solution Visual Studio spécialisée.
@@ -54,9 +54,9 @@ Avant de commencer cette procédure, installez ces composants :
 
 3. Entrez une extension de nom de fichier le **Extension de fichier** page. Il doit être unique dans votre ordinateur, et dans tous les ordinateurs sur lesquels vous souhaitez installer la solution DSL. Vous devez voir le message **aucune application ou les éditeurs de Visual Studio n’utilisent cette extension**.
 
-   -   Si vous avez utilisé l’extension de nom de fichier dans la précédente DSL expérimentale qui n’ont pas été entièrement installé, vous pouvez les désactiver arrière à l’aide de la **réinitialiser l’Instance expérimentale** outil, qui se trouve dans le menu Visual Studio SDK.
+   - Si vous avez utilisé l’extension de nom de fichier dans la précédente DSL expérimentale qui n’ont pas été entièrement installé, vous pouvez les désactiver arrière à l’aide de la **réinitialiser l’Instance expérimentale** outil, qui se trouve dans le menu Visual Studio SDK.
 
-   -   Si une autre Extension Visual Studio qui utilise cette extension de fichier a été entièrement installée sur votre ordinateur, envisagez de le désinstaller. Sur le **outils** menu, cliquez sur **Gestionnaire d’extensions**.
+   - Si une autre Extension Visual Studio qui utilise cette extension de fichier a été entièrement installée sur votre ordinateur, envisagez de le désinstaller. Sur le **outils** menu, cliquez sur **Gestionnaire d’extensions**.
 
 4. Examiner et ajuster si nécessaire, les champs dans les pages restantes de l’Assistant. Lorsque vous êtes satisfait des paramètres, cliquez sur **Terminer**. Pour plus d’informations sur les paramètres, consultez [Pages de l’Assistant concepteur DSL](#settings).
 
@@ -73,7 +73,7 @@ Avant de commencer cette procédure, installez ces composants :
 Choisissez un modèle qui est similaire à la solution DSL que vous souhaitez créer. Les différents modèles fournissent des points de départ pratiques. Lorsque vous sélectionnez un modèle de solution, l’Assistant affiche une description. Pour plus d’informations sur les modèles de solution, consultez [choix d’un modèle de Solution de langage spécifique à un domaine](../modeling/choosing-a-domain-specific-language-solution-template.md).
 
  **Que voulez-vous nommer votre langage spécifique à un domaine ?**
-La valeur par défaut est le nom de la solution. Code est généré à partir de cette valeur. Il doit être valide comme nom de classe C#.
+La valeur par défaut est le nom de la solution. Code est généré à partir de cette valeur. Il doit être valide comme nom de classe c#.
 
 ### <a name="file-extension-page"></a>Page Extension de fichier
  **Quelle extension doit modéliser fichiers utilisent ?**
@@ -85,15 +85,15 @@ Tapez une nouvelle extension de fichier.
 
  Si vous voyez une liste d’outils ou des packages, vous devez effectuer une des opérations suivantes :
 
--   Tapez une extension de fichier différent.
+- Tapez une extension de fichier différent.
 
      \- ou -
 
--   Réinitialiser l’Instance expérimentale de Visual Studio. Annule toutes des DSL que vous avez créées précédemment. Sur le **Démarrer** menu, cliquez sur **tous les programmes**, **Microsoft Visual Studio 2010 SDK**, **outils**, puis **réinitialiser le Instance de Microsoft Visual Studio 2010 expérimentale**. Vous pouvez reconstruire les autres DSL que vous souhaitez utiliser à nouveau.
+- Réinitialiser l’Instance expérimentale de Visual Studio. Annule toutes des DSL que vous avez créées précédemment. Sur le **Démarrer** menu, cliquez sur **tous les programmes**, **Microsoft Visual Studio 2010 SDK**, **outils**, puis **réinitialiser le Instance de Microsoft Visual Studio 2010 expérimentale**. Vous pouvez reconstruire les autres DSL que vous souhaitez utiliser à nouveau.
 
      \- ou -
 
--   Si une Extension Visual Studio qui utilise cette extension de fichier a été entièrement installée sur votre ordinateur, désinstallez-la. Sur le **outils** menu, cliquez sur **Gestionnaire d’extensions**.
+- Si une Extension Visual Studio qui utilise cette extension de fichier a été entièrement installée sur votre ordinateur, désinstallez-la. Sur le **outils** menu, cliquez sur **Gestionnaire d’extensions**.
 
 ### <a name="product-settings-page"></a>Page des paramètres de produit
  **Quel est le nom du produit auquel appartient le nouveau langage spécifique à un domaine ?**

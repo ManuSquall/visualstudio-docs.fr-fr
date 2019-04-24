@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2ae3ee33f47a60a74148698424ad58397e0cb577
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0187f7dede25900cdf3a78fdbfe2899e5f318472
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952294"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043443"
 ---
 # <a name="install-a-uml-profile"></a>Installer un profil UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,21 +29,21 @@ Vous pouvez étendre Visual Studio avec un profil UML. Un profil vous permet d'a
   
 ### <a name="to-install-a-uml-profile-on-your-computer"></a>Pour installer un profil UML sur votre ordinateur  
   
-1.  Le profil doit vous avoir été donné sous la forme d'un fichier d'Extension Visual Studio (`.vsix`). Il peut y avoir d'autres fonctionnalités dans le même fichier.  
+1. Le profil doit vous avoir été donné sous la forme d'un fichier d'Extension Visual Studio (`.vsix`). Il peut y avoir d'autres fonctionnalités dans le même fichier.  
   
      Déplacez le fichier `.vsix` vers un emplacement approprié sur votre ordinateur.  
   
-2.  Double-cliquez sur le fichier `.vsix` dans l'Explorateur Windows (ou l'Explorateur de fichiers) ou ouvrez-le dans [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
+2. Double-cliquez sur le fichier `.vsix` dans l'Explorateur Windows (ou l'Explorateur de fichiers) ou ouvrez-le dans [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
   
-3.  Cliquez sur **installer** dans la boîte de dialogue qui s’affiche.  
+3. Cliquez sur **installer** dans la boîte de dialogue qui s’affiche.  
   
-4.  Pour désinstaller ou temporairement désactiver l’extension, ouvrez **Gestionnaire d’extensions** à partir de la **outils** menu.  
+4. Pour désinstaller ou temporairement désactiver l’extension, ouvrez **Gestionnaire d’extensions** à partir de la **outils** menu.  
   
 ### <a name="to-uninstall-or-disable-a-profile-extension"></a>Pour désinstaller ou désactiver une extension de profil  
   
-1.  Dans Visual Studio **outils** menu, cliquez sur **Gestionnaire d’extensions**.  
+1. Dans Visual Studio **outils** menu, cliquez sur **Gestionnaire d’extensions**.  
   
-2.  Cliquez sur l’extension que vous souhaitez supprimer, puis cliquez sur **désactiver** ou **désinstallation**.  
+2. Cliquez sur l’extension que vous souhaitez supprimer, puis cliquez sur **désactiver** ou **désinstallation**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Personnaliser votre modèle avec des profils et stéréotypes](../modeling/customize-your-model-with-profiles-and-stereotypes.md)   

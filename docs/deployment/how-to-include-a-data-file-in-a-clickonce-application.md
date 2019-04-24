@@ -1,5 +1,5 @@
 ---
-title: 'Comment : inclure un fichier de données dans une Application ClickOnce | Microsoft Docs'
+title: 'Procédure : Inclure un fichier de données dans une Application ClickOnce | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 470ee530a61ecba5c1acd40be88c469fee6d4f5e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: fd2db09937ad76c0ea4c990fcdba5c34a0f8f66c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596267"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093876"
 ---
-# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Guide pratique pour inclure un fichier de données dans une application ClickOnce
+# <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Procédure : Inclure un fichier de données dans une application ClickOnce
 Chaque [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application que vous installez est affectée à un répertoire de données sur le disque local de l’ordinateur de destination dans lequel l’application peut gérer ses propres données. Fichiers de données peuvent inclure n’importe quel type de fichiers : fichiers texte, fichiers XML ou même base de données Microsoft Access (*.mdb*) les fichiers. Les procédures suivantes vous montrent comment ajouter un fichier de données de n’importe quel type dans votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application.
 
 ### <a name="to-include-a-data-file-by-using-mageexe"></a>Pour inclure un fichier de données à l’aide de Mage.exe
@@ -60,25 +60,25 @@ Chaque [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applica
 
 ### <a name="to-include-a-data-file-by-using-mageuiexe"></a>Pour inclure un fichier de données à l’aide de MageUI.exe
 
-1.  Ajouter le fichier de données à votre répertoire de l’application avec le reste des fichiers de votre application.
+1. Ajouter le fichier de données à votre répertoire de l’application avec le reste des fichiers de votre application.
 
-2.  En règle générale, le répertoire de votre application sera un répertoire étiqueté avec la version actuelle du déploiement, par exemple, v1.0.0.0.
+2. En règle générale, le répertoire de votre application sera un répertoire étiqueté avec la version actuelle du déploiement, par exemple, v1.0.0.0.
 
-3.  Sur le **fichier** menu, cliquez sur **ouvrir** pour ouvrir votre manifeste d’application.
+3. Sur le **fichier** menu, cliquez sur **ouvrir** pour ouvrir votre manifeste d’application.
 
-4.  Sélectionnez le **fichiers** onglet.
+4. Sélectionnez le **fichiers** onglet.
 
-5.  Dans la zone de texte en haut de l’onglet, entrez le répertoire qui contient les fichiers de votre application, puis cliquez sur **Populate**.
+5. Dans la zone de texte en haut de l’onglet, entrez le répertoire qui contient les fichiers de votre application, puis cliquez sur **Populate**.
 
      Votre fichier de données s’affiche dans la grille.
 
-6.  Définir le **Type de fichier** valeur du fichier de données à **données**.
+6. Définir le **Type de fichier** valeur du fichier de données à **données**.
 
-7.  Enregistrez le manifeste d’application et signer à nouveau le fichier.
+7. Enregistrez le manifeste d’application et signer à nouveau le fichier.
 
      *MageUI.exe* vous invite à resigner le fichier.
 
-8.  Signer à nouveau votre manifeste de déploiement
+8. Signer à nouveau votre manifeste de déploiement
 
      Vous devez resigner votre manifeste de déploiement, car son hachage du manifeste d’application a changé.
 

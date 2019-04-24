@@ -14,17 +14,17 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e31c459d2d5ce8dc114605716c09f8360eca23d3
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 67dab4c732faa04af44800f740d78c4ce4f9dc80
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "59001843"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664110"
 ---
 # <a name="ca1726-use-preferred-terms"></a>CA1726 : Utilisez les termes par défaut
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Pour obtenir la dernière documentation sur Visual Studio, consultez [CA1726 : Utiliser des termes](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms) sur docs.microsoft.com.  
+Pour obtenir la dernière documentation sur Visual Studio, consultez [CA1726 : Utiliser des termes](https://docs.microsoft.com/visualstudio/code-quality/ca1726-use-preferred-terms).  
   
 |||  
 |-|-|  
@@ -41,30 +41,30 @@ Pour obtenir la dernière documentation sur Visual Studio, consultez [CA1726 : 
   
 |Terme obsolète|Terme favori|  
 |-------------------|--------------------|  
-|ne sont pas|AreNot|  
-|Annulé|Canceled|  
-|Ne peut pas|Ne peut pas|  
-|ComPlus|EnterpriseServices|  
-|Impossible|CouldNot|  
-|Didnt|DidNot|  
-|Lecteur|DoesNot|  
-|Dont|DoNot|  
-|Indicateur ou indicateurs|Il n’existe aucun terme de remplacement. Ne pas utiliser.|  
-|Hadnt|HadNot|  
-|N’a pas encore|HasNot|  
-|ne l’avez pas|HaveNot|  
-|Indices|Index|  
-|Isnt|IsNot|  
-|LogIn|LogOn|  
-|LogOut|LogOff|  
-|Shouldnt|ShouldNot|  
-|SignOn|SignIn|  
-|SignOff|SignOut|  
-|Wasnt|WasNot|  
-|n’ont pas été|WereNot|  
-|Ne doit pas|WillNot|  
-|Wouldnt|WouldNot|  
-|Accessible en écriture|Accessible en écriture|  
+|`Arent`|`AreNot`|
+|`Cancelled`|`Canceled`|
+|`Cant`|`Cannot`|
+|`ComPlus`|`EnterpriseServices`|
+|`Couldnt`|`CouldNot`|
+|`Didnt`|`DidNot`|
+|`Doesnt`|`DoesNot`|
+|`Dont`|`DoNot`|
+|`Flag` ou `Flags`|Il n’existe aucun terme de remplacement. Ne pas utiliser.|
+|`Hadnt`|`HadNot`|
+|`Hasnt`|`HasNot`|
+|`Havent`|`HaveNot`|
+|`Indices`|`Indexes`|
+|`Isnt`|`IsNot`|
+|`LogIn`|`LogOn`|
+|`LogOut`|`LogOff`|
+|`Shouldnt`|`ShouldNot`|
+|`SignOn`|`SignIn`|
+|`SignOff`|`SignOut`|
+|`Wasnt`|`WasNot`|
+|`Werent`|`WereNot`|
+|`Wont`|`WillNot`|
+|`Wouldnt`|`WouldNot`|
+|`Writeable`|`Writable`|
   
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations  
  Pour corriger une violation de cette règle, remplacez le terme par le terme de remplacement par défaut.  

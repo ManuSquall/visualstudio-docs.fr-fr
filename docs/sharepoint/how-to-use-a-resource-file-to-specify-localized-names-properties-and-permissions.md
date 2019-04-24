@@ -19,31 +19,31 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9014b344e030f3763037395f5fb96d446c0132f0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2be88a29d3e9e3da9d1963aa1226ffca0a0a2bbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621550"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066531"
 ---
 # <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>Procédure : Utilisez un fichier de ressources pour spécifier des autorisations, les propriétés et les noms localisés
   En utilisant un fichier de ressources, vous pouvez fournir des noms localisés, définir des propriétés et appliquer des autorisations tor objets qui sont définis dans un modèle de connectivité de données métiers (BDC). Pour spécifier ces informations, vous ajoutez un **ressource de connectivité de données métiers** élément à un projet qui contient un **modèle de connectivité de données métiers** élément. Puis vous spécifiez des noms, les propriétés et les autorisations en modifiant le code XML pour le fichier de ressources.
 
 ### <a name="to-add-a-bdc-resource-file-to-a-sharepoint-project"></a>Pour ajouter un fichier de ressources BDC à un projet SharePoint
 
-1.  Dans **l’Explorateur de solutions**, développez le dossier du projet SharePoint, puis choisissez le dossier qui contient le modèle BDC.
+1. Dans **l’Explorateur de solutions**, développez le dossier du projet SharePoint, puis choisissez le dossier qui contient le modèle BDC.
 
-2.  Dans la barre de menus, choisissez **Projet** > **Ajouter un nouvel élément**.
+2. Dans la barre de menus, choisissez **Projet** > **Ajouter un nouvel élément**.
 
-3.  Développez le **SharePoint** nœud, puis choisissez le **2010** nœud.
+3. Développez le **SharePoint** nœud, puis choisissez le **2010** nœud.
 
-4.  Dans le **ajouter un nouvel élément** boîte de dialogue, sélectionnez **élément de ressource de connectivité de données métiers**.
+4. Dans le **ajouter un nouvel élément** boîte de dialogue, sélectionnez **élément de ressource de connectivité de données métiers**.
 
-5.  Dans le **nom** zone, spécifiez le nom du fichier de ressources, puis choisissez le **ajouter** bouton.
+5. Dans le **nom** zone, spécifiez le nom du fichier de ressources, puis choisissez le **ajouter** bouton.
 
      Un fichier de ressources qui porte l’extension .bdcr est ajouté au projet et ouvert pour modification.
 
-6.  Ajoutez le code XML pour définir les noms localisés, les propriétés et les autorisations que vous souhaitez appliquer le modèle BDC.
+6. Ajoutez le code XML pour définir les noms localisés, les propriétés et les autorisations que vous souhaitez appliquer le modèle BDC.
 
      Pour plus d’informations sur la définition de ces éléments, consultez [modèle et les fichiers de ressources](http://go.microsoft.com/fwlink/?LinkID=169283).
 

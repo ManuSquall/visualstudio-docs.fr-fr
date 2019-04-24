@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Résumé des fonctionnalités Python disponibles dans Visual Studio, qui en font le meilleur IDE Python sur Windows (également appelé Python Tools pour Visual Studio, ou PTVS).
 ms.date: 03/12/2019
 ms.topic: overview
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 411b2e918658fa786885ccebf3f6c5703ddd9eb0
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 2c6e17b0556b324e0dde6fe188b9d21efb542778
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195006"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366872"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Utiliser Python dans Visual Studio sur Windows
 
@@ -54,7 +54,7 @@ Utilisez la commande **Ouvrir une fenêtre interactive** pour exécuter Python e
 Pour plus d'informations :
 
 - [Gérer des environnements Python](managing-python-environments-in-visual-studio.md)
-- [Référence sur les environnements Python](python-environments-window-tab-reference.md)
+- [Informations de référence sur les environnements Python](python-environments-window-tab-reference.md)
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Large éventail de fonctionnalités de modification, IntelliSense et d’inclusion de code
 
@@ -82,14 +82,14 @@ Visual Studio prend également en charge IPython/Jupyter dans l’environnement 
 
 Pour plus d'informations :
 
-- [Fenêtre interactive](python-interactive-repl-in-visual-studio.md)
+- [Fenêtre Interactive](python-interactive-repl-in-visual-studio.md)
 - [IPython dans Visual Studio](interactive-repl-ipython.md)
 
 ## <a name="project-system-and-project-and-item-templates"></a>Système de projet, et modèles de projet et d’élément
 
 ::: moniker range=">=vs-2019"
 > [!Note]
-> Visual Studio 2019 prend en charge l’ouverture d’un dossier contenant le code Python et l’exécution de ce code sans créer de fichiers projet et solution Visual Studio. Pour plus d’informations, consultez [Démarrage rapide : Ouvrir et exécuter du code Python dans un dossier](quickstart-05-python-visual-studio-open-folder.md). L’utilisation d’un fichier projet présente toutefois des avantages, comme expliqué dans cette section.
+> Visual Studio 2019 prend en charge l’ouverture d’un dossier contenant le code Python et l’exécution de ce code sans créer de fichiers projet et solution Visual Studio. Pour plus d’informations, consultez [Démarrage rapide : Ouvrez et exécutez du code Python dans un dossier ](quickstart-05-python-visual-studio-open-folder.md). L’utilisation d’un fichier projet présente toutefois des avantages, comme expliqué dans cette section.
 ::: moniker-end
 
 Visual Studio vous permet de gérer la complexité d’un projet à mesure qu’il croît. Un *projet Visual Studio* contient bien plus qu’une structure de dossiers : il inclut une présentation de la façon dont les différents fichiers sont utilisés et comment ils sont liés entre eux. Visual Studio vous permet de distinguer le code d’application, le code de test, les pages web, JavaScript, les scripts de génération, entre autres, qui activent ensuite des fonctionnalités propres aux fichiers. Une solution Visual Studio, en outre, vous permet de gérer plusieurs projets associés, comme un projet Python et un projet d’extension C++.
@@ -98,7 +98,7 @@ Visual Studio vous permet de gérer la complexité d’un projet à mesure qu’
 
 Les modèles de projet et d’élément automatisent le processus de configuration des différents types de projets et de fichiers, ce qui vous fait gagner un temps précieux et vous évite d’avoir à gérer des détails complexes et sujets aux erreurs. Visual Studio fournit des modèles pour le web, Azure, la science des données, la console et d’autres types de projets, ainsi que des modèles pour les fichiers comme les classes Python, les tests unitaires, la configuration web Azure, HTML et même les applications Django.
 
-[![Modèles de projet et d’élément Python dans Visual Studio](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
+[![PModèles de projet et d’élément Python dans Visual Studio](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
 
 Pour plus d'informations :
 
@@ -130,7 +130,7 @@ Pour plus d'informations :
 
 Le profilage collecte les données relatives à l’utilisation de votre application. Visual Studio prend en charge le profilage avec les interpréteurs CPython et offre la possibilité de comparer les performances entre différentes séquences de profilage.
 
-[![Résultats du profileur Visual Studio pour un projet Python](media/profiling-results.png)](media/profiling-results.png#lightbox)
+[![VRésultats du profileur Visual Studio pour un projet Python](media/profiling-results.png)](media/profiling-results.png#lightbox)
 
 Pour plus d'informations :
 
@@ -156,11 +156,11 @@ Pour plus d’informations, consultez [Kit SDK Azure pour Python](/python/azure/
 
 ## <a name="questions-and-answers"></a>Questions et réponses
 
-**Q. Est que la prise en charge de Python est disponible avec Visual Studio pour Mac ?**
+**Q. Python est-il pris en charge avec Visual Studio pour Mac ?**
 
 Un fichier . Pas pour l’instant, mais vous pouvez voter pour la demande sur [Communauté des développeurs](https://developercommunity.visualstudio.com/content/idea/351820/python-tools-for-visual-studio-mac.html). La documentation [Visual Studio pour Mac](/visualstudio/mac/) identifie les types actuels de développement qu’il prend en charge. En attendant, Visual Studio Code sur Windows, Mac et Linux [fonctionne bien avec Python via les extensions disponibles](https://code.visualstudio.com/docs/languages/python).
 
-**Q. Que puis-je utiliser pour créer une interface utilisateur avec Python ?**
+**Q. Que peut-on utiliser pour créer une interface utilisateur avec Python ?**
 
 Un fichier . Dans ce domaine, le principal moyen est d’utiliser [Qt Project](https://www.qt.io/qt-for-application-development/), avec des liaisons pour Python appelées [PySide (la liaison officielle)](https://wiki.qt.io/PySide) (consultez également les [téléchargements PySide](https://download.qt.io/official_releases/pyside/.)) et [PyQt](https://wiki.python.org/moin/PyQt). Pour l’instant, la prise en charge de Python dans Visual Studio n’inclut pas d’outils spécifiques pour le développement d’interface utilisateur.
 

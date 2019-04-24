@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e27194d830e880fd9ae28065e69fa140d9201dc2
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ccdb211312a6f53e7f519b7fac0e3ac28aab2429
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54762011"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058628"
 ---
 # <a name="lines-view"></a>Lignes, vue
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ La vue Lignes est disponible uniquement pour les données du profileur collecté
   
  Une instruction est identifiée par les éléments suivants :  
   
--   Le fichier source contenant l’instruction de fonction.  
+- Le fichier source contenant l’instruction de fonction.  
   
--   La fonction contenant l’instruction.  
+- La fonction contenant l’instruction.  
   
--   La ligne source au niveau de laquelle l’instruction commence.  
+- La ligne source au niveau de laquelle l’instruction commence.  
   
--   Le caractère de la ligne source au niveau duquel l’instruction commence.  
+- Le caractère de la ligne source au niveau duquel l’instruction commence.  
   
--   La ligne source au niveau de laquelle l’instruction se termine.  
+- La ligne source au niveau de laquelle l’instruction se termine.  
   
--   Le caractère de la ligne source au niveau duquel l’instruction se termine.  
+- Le caractère de la ligne source au niveau duquel l’instruction se termine.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Lignes, vue - Données d’échantillonnage](../profiling/lines-view-sampling-data.md)   

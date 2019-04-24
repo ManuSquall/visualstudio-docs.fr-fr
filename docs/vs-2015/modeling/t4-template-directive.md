@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 608ba29c9f2068ce053fd6b92ba053eb45869ddd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 71d7dc0fc208fa3c108019f6324c3d053673e918
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950417"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070834"
 ---
 # <a name="t4-template-directive"></a>Directive du modèle T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ En général, un modèle de texte T4 [!INCLUDE[vsprvs](../includes/vsprvs-md.md
  `compilerOptions="optimize+"`  
   
  Valeurs valides :  
- Toutes les options du compilateur valides. Pour plus d’informations, consultez [C# Options du compilateur classées par catégorie](http://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) et [Visual Basic Compiler Options Listed by catégorie](http://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).  
+ Toutes les options du compilateur valides. Pour plus d’informations, consultez [c# Options du compilateur classées par catégorie](http://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) et [Visual Basic Compiler Options Listed by catégorie](http://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).  
   
  Ignoré pour les modèles au moment de l'exécution (prétraités).  
   
@@ -55,7 +55,8 @@ En général, un modèle de texte T4 [!INCLUDE[vsprvs](../includes/vsprvs-md.md
   
 ## <a name="debug-attribute"></a>attribut de débogage  
  Exemple :  
- ```  
+
+```  
 debug="true"  
 ```  
   
@@ -70,7 +71,8 @@ debug="true"
   
 ## <a name="hostspecific-attribute"></a>attribut hostspecific  
  Exemple :  
- ```  
+
+```  
 hostspecific="true"  
 ```  
   
@@ -144,7 +146,8 @@ Squares of numbers:
  Plus généralement, vous spécifiez un autre modèle prétraité comme classe de base. Le modèle de base fournit des blocs de texte communs, qui peuvent être entrelacés avec du texte des modèles dérivés. Vous pouvez utiliser des blocs de fonctionnalité de classe `<#+ ... #>` pour définir des méthodes qui contiennent des fragments de texte. Par exemple, vous pouvez placer l'infrastructure du texte de sortie dans le modèle de base, en fournissant des méthodes virtuelles qui peuvent être substituées dans les modèles dérivés :  
   
  Modèle de texte au moment de l'exécution (prétraité) BaseTemplate.tt :  
- ```scr  
+
+```scr  
 This is the common header.  
 <#   
   SpecificFragment1();   
@@ -163,7 +166,8 @@ This is the common footer.
 ```  
   
  Modèle de texte au moment de l'exécution (prétraité) DerivedTemplate1.tt :  
- ```csharp  
+
+```csharp  
 <#@ template language="C#" inherits="BaseTemplate" #>  
 <#   
   // Run the base template:  
@@ -188,12 +192,14 @@ protected override void SpecificFragment2()
 ```  
   
  Code d'application pour appeler DerivedTemplate1 :  
- ```csharp  
+
+```csharp  
 Console.WriteLine(new DerivedTemplate().TransformText());  
 ```  
   
  Résultat :  
- ```  
+
+```  
 This is the common header.  
    Fragment 1 for DerivedTemplate1  
 A common central text.  

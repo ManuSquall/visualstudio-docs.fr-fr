@@ -1,5 +1,5 @@
 ---
-title: 'Comment : Pg préc ou vers le bas dans la mémoire | Microsoft Docs'
+title: 'Procédure : Page précédente ou suivante en mémoire | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b554a197afe2deef3619551af2d45d4a80708afe
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 4b8452100eb744d019c0f4c8d5e62566ac761210
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715360"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072746"
 ---
-# <a name="how-to-page-up-or-down-in-memory"></a>Comment : se déplacer d'une page vers le haut ou vers le bas dans la mémoire
+# <a name="how-to-page-up-or-down-in-memory"></a>Procédure : Se déplacer d’une page vers le haut ou vers le bas dans la mémoire
 
 Quand vous affichez le contenu de la mémoire dans la fenêtre **Mémoire** ou **Code Machine**, vous pouvez vous servir de la barre de défilement verticale pour vous déplacer dans l’espace mémoire.
 
@@ -44,7 +44,7 @@ Quand vous affichez le contenu de la mémoire dans la fenêtre **Mémoire** ou *
 
 #### <a name="to-move-up-or-down-one-instruction"></a>Pour monter ou descendre d'une instruction
 
--   Cliquez sur la flèche en haut ou en bas de la barre de défilement vertical.
+- Cliquez sur la flèche en haut ou en bas de la barre de défilement vertical.
 
 ## <a name="see-also"></a>Voir aussi
 - [Fenêtres Mémoire](../debugger/memory-windows.md)

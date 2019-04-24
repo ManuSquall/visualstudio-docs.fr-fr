@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
 caps.latest.revision: 8
 ms.author: gregvanl
-ms.openlocfilehash: fdaa8396049da2a0d875282b13eb2744bedbdd29
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ccdba95816d77e5282e978d508da581d9240ef06
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947435"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664312"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Procédure : Utiliser le contexte de l’interface utilisateur basé sur une règle pour les extensions Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -137,8 +137,6 @@ Visual Studio permet le chargement de VSPackages lorsque certains connu <xref:Mi
 |ActiveProjectCapability :\<Expression >|Le terme est true lorsque les fonctionnalités de projet actif correspond à l’expression fournie. Une expression peut être quelque chose comme VB &#124; CSharp|
 |SolutionHasProjectCapability :\<Expression >|Similaire à ci-dessus mais terme a la valeur true lorsque la solution a n’importe quel projet chargé qui correspond à l’expression.|
 |SolutionHasProjectFlavor:\<projectTypeGuid>|Le terme sera true chaque fois qu’une solution de projet qui est versionnés (agrégé) et a une version de mise en correspondance du GUID du type de projet donné.|
-
-
 
 ## <a name="compatibility-with-cross-version-extension"></a>Compatibilité avec l’extension d’entre versions
  Contextes d’interface utilisateur en est une nouvelle fonctionnalité dans Visual Studio 2015 et ne serait pas être déplacée vers les versions antérieures de règles. Ceci pose un problème avec les extensions/packages qui ciblent plusieurs versions de Visual Studio qui doivent être chargés automatiquement dans Visual Studio 2013 et versions antérieures, mais peuvent tirer parti des contextes d’interface utilisateur basé sur une règle afin d’éviter d’être chargées automatiquement dans Visual Studio 2015.

@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 728241c4f8cf8609c453f83f0237d2bdc8410f35
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: caf878f6ea43a7f041285fb02b2f32175ca862b1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953719"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057184"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Procédure : Utiliser l’éditeur d’expressions
 L'éditeur d'expressions est un contrôle de [!INCLUDE[wfd1](../includes/wfd1-md.md)] utilisé dans de nombreuses activités de flux de travail pour entrer et évaluer des expressions. Il fournit une expérience d’édition IDE complète, comprenant, entre autres fonctionnalités, IntelliSense, la colorisation, ParamInfo et les tildes d’erreur. Le compilateur valide l'expression après sa saisie. Si l'expression n'est pas valide, une icône d'erreur s'affiche. L’éditeur peut également être ouvert comme un **Éditeur d’Expression** boîte de dialogue.  
@@ -25,29 +25,29 @@ L'éditeur d'expressions est un contrôle de [!INCLUDE[wfd1](../includes/wfd1-md
   
  Le **Éditeur d’Expression** se comporte comme suit :  
   
--   Si le focus n'est pas sur l'éditeur d'expressions, celui-ci a l'apparence d'un contrôle TextBlock normal.  
+- Si le focus n'est pas sur l'éditeur d'expressions, celui-ci a l'apparence d'un contrôle TextBlock normal.  
   
--   Lorsque le focus se trouve sur l'éditeur d'expressions, celui-ci adopte l'apparence et le comportement du contrôle de l'éditeur d'expressions. Lorsqu'il perd le focus, il reprend l'apparence d'un TextBlock classique.  
+- Lorsque le focus se trouve sur l'éditeur d'expressions, celui-ci adopte l'apparence et le comportement du contrôle de l'éditeur d'expressions. Lorsqu'il perd le focus, il reprend l'apparence d'un TextBlock classique.  
   
--   Si vous placez le focus sur l'éditeur d'expressions dans un Workflow Designer réhébergé, il se comporte comme un contrôle TextBox. Lorsque le Workflow Designer réhébergé perd le focus, l'éditeur d'expressions reprend l'apparence d'un TextBlock normal.  
+- Si vous placez le focus sur l'éditeur d'expressions dans un Workflow Designer réhébergé, il se comporte comme un contrôle TextBox. Lorsque le Workflow Designer réhébergé perd le focus, l'éditeur d'expressions reprend l'apparence d'un TextBlock normal.  
   
 > [!NOTE]
 >  IntelliSense pour l'éditeur d'expressions est uniquement disponible dans [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Qu'il soit exécuté dans [!INCLUDE[vs2010](../includes/vs2010-md.md)] ou réhébergé, le compilateur valide l'expression une fois qu'elle a été entrée et l'éditeur d'expressions affiche une icône d'erreur si l'expression n'est pas valide.  
   
 ### <a name="using-the-expression-editor"></a>Utilisation de l'éditeur d'expressions  
   
-1.  Dans [!INCLUDE[vs2010](../includes/vs2010-md.md)], ouvrez un projet de flux de travail nouveau ou existant.  
+1. Dans [!INCLUDE[vs2010](../includes/vs2010-md.md)], ouvrez un projet de flux de travail nouveau ou existant.  
   
-2.  Par exemple, ajoutez l'activité <xref:System.Activities.Statements.Assign> à votre flux de travail.  
+2. Par exemple, ajoutez l'activité <xref:System.Activities.Statements.Assign> à votre flux de travail.  
   
     > [!NOTE]
     >  Plusieurs activités de flux de travail ont des éditeurs d'expressions. Des TextBlocks d’expression s’affichent également dans le concepteur de variables, le concepteur d’arguments et le concepteur d’arguments dynamique. L'activité <xref:System.Activities.Statements.Assign> est utilisée à titre d'exemple.  
   
-3.  Cliquez sur l'éditeur d'expressions à gauche dans le concepteur d'activités pour l'activité <xref:System.Activities.Statements.Assign>.  
+3. Cliquez sur l'éditeur d'expressions à gauche dans le concepteur d'activités pour l'activité <xref:System.Activities.Statements.Assign>.  
   
      Les chaînes en filigrane grises  **\<à >** et  **\<entrer une Expression VB >** est des chaînes de texte de la valeur par défaut pour les éditeurs d’expressions dans le <xref:System.Activities.Statements.Assign> activité.  
   
-4.  Entrez votre expression. Si vous entrez une chaîne, n'oubliez pas de l'entourer de guillemets. Si vous choisissez de lier l’argument Expression à une variable, n’utilisez pas de guillemets.  
+4. Entrez votre expression. Si vous entrez une chaîne, n'oubliez pas de l'entourer de guillemets. Si vous choisissez de lier l’argument Expression à une variable, n’utilisez pas de guillemets.  
   
      Lorsque vous avez fini, sélectionnez une région ou une zone en dehors de l'éditeur d'expressions pour déplacer le focus vers une autre partie du concepteur. Le compilateur valide alors l'expression, comme décrit précédemment.  
   

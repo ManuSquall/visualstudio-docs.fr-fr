@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f62318da0fc60a0fa9200d8ec11bdc4bb567ad86
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: f6cd0ac349d332f7e07d4f0ce6e5567cb5deb63c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954385"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067064"
 ---
 # <a name="manage-side-by-side-file-associations"></a>Gérer les associations de fichiers de côte à côte
 
@@ -81,9 +81,9 @@ Désinstallation d’un VSPackage qui écrit des entrées de Registre pour les a
 
 - Demandez à l’utilisateur d’exécuter une réparation de la version du VSPackage que l’utilisateur veut être propriétaire de l’association de fichiers.
 
--   Fournir un programme exécutable qui réécrit les entrées de Registre appropriées.
+- Fournir un programme exécutable qui réécrit les entrées de Registre appropriées.
 
--   Fournir une configuration options page ou boîte de dialogue qui permet aux utilisateurs de choisir les associations de fichiers et de récupérer des associations perdues. Demandez aux utilisateurs de s’exécuter après la désinstallation.
+- Fournir une configuration options page ou boîte de dialogue qui permet aux utilisateurs de choisir les associations de fichiers et de récupérer des associations perdues. Demandez aux utilisateurs de s’exécuter après la désinstallation.
 
 ## <a name="see-also"></a>Voir aussi
 

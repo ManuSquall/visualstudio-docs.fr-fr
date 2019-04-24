@@ -21,23 +21,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e80504e14e6468dc4d9efa31258bdbf6150a649
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: d0a6a6d8312dba4ae89e773fc2be8fa0b9984e0b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690343"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094305"
 ---
 # <a name="debugging-options-dialog-box"></a>Débogage, boîte de dialogue Options
 Le dossier **Débogage**, dans la boîte de dialogue **Options** du menu **Outils** comporte les pages suivantes, qui vous permettent de spécifier les options de l’outil de débogage.
 
--   [Général, Débogage, boîte de dialogue Options](../debugger/general-debugging-options-dialog-box.md)
+- [Général, Débogage, boîte de dialogue Options](../debugger/general-debugging-options-dialog-box.md)
 
--   [Juste-à-temps, Débogage, boîte de dialogue Options](../debugger/just-in-time-debugging-options-dialog-box.md)
+- [Juste-à-temps, Débogage, boîte de dialogue Options](../debugger/just-in-time-debugging-options-dialog-box.md)
 
--   [Fenêtre Sortie, Débogage, boîte de dialogue Options](../debugger/output-window-debugging-options-dialog-box.md)
+- [Fenêtre Sortie, Débogage, boîte de dialogue Options](../debugger/output-window-debugging-options-dialog-box.md)
 
--   [Symboles, Débogage, boîte de dialogue Options](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
+- [Symboles, Débogage, boîte de dialogue Options](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 
 ## <a name="see-also"></a>Voir aussi
 - [Sécurité du débogueur](../debugger/debugger-security.md)

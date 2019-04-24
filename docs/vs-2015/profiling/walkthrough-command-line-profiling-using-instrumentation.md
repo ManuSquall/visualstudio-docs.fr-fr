@@ -13,37 +13,37 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 053904df9a4930385d25c90c310c3199ce1d664f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d5b7e8dbe12f9c57c101c8f877dfcb0c6ee3196f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755431"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064691"
 ---
-# <a name="walkthrough-command-line-profiling-using-instrumentation"></a>Procédure pas à pas : profilage de la ligne de commande à l’aide de l’instrumentation
+# <a name="walkthrough-command-line-profiling-using-instrumentation"></a>Procédure pas à pas : Profilage à l’aide d’Instrumentation de ligne de commande
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette procédure pas à pas explique comment profiler une application autonome [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] pour collecter les données de temporisation et de nombre d’appels détaillées à l’aide de la méthode d’instrumentation des outils de profilage. Dans cette procédure pas à pas, vous accomplirez les tâches suivantes :  
   
--   Utiliser l’outil en ligne de commande [VSInstr](../profiling/vsinstr.md) pour générer des binaires instrumentés  
+- Utiliser l’outil en ligne de commande [VSInstr](../profiling/vsinstr.md) pour générer des binaires instrumentés  
   
--   Utiliser l’outil [VSPerfCLREnv](../profiling/vsperfclrenv.md) pour définir les variables d’environnement afin de collecter des données de profilage .NET  
+- Utiliser l’outil [VSPerfCLREnv](../profiling/vsperfclrenv.md) pour définir les variables d’environnement afin de collecter des données de profilage .NET  
   
--   Utiliser l’outil [VSPerfCmd](../profiling/vsperfcmd.md) pour collecter des données de profilage  
+- Utiliser l’outil [VSPerfCmd](../profiling/vsperfcmd.md) pour collecter des données de profilage  
   
--   Utiliser l’outil [VSPerfReport](../profiling/vsperfreport.md) pour générer des rapports des données de profilage basés sur les fichiers  
+- Utiliser l’outil [VSPerfReport](../profiling/vsperfreport.md) pour générer des rapports des données de profilage basés sur les fichiers  
   
 ## <a name="prerequisites"></a>Prérequis  
   
--   [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)]  
+- [!INCLUDE[vsprvsts](../includes/vsprvsts-md.md)]  
   
--   Bonne connaissance de C#  
+- Bonne connaissance de C#  
   
--   Compréhension intermédiaire de l’utilisation des outils en ligne de commande  
+- Compréhension intermédiaire de l’utilisation des outils en ligne de commande  
   
--   Une copie de l’[exemple PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md)  
+- Une copie de l’[exemple PeopleTrax](../profiling/peopletrax-sample-profiling-tools.md)  
   
--   Pour utiliser les informations fournies par le profilage, il est préférable de disposer des informations de symboles de débogage. Pour plus d’informations, consultez [Guide pratique pour référencer les informations de symboles Windows](../profiling/how-to-reference-windows-symbol-information.md).  
+- Pour utiliser les informations fournies par le profilage, il est préférable de disposer des informations de symboles de débogage. Pour plus d'informations, voir [Procédure : Informations de symboles de référence Windows](../profiling/how-to-reference-windows-symbol-information.md).  
   
 ## <a name="command-line-profiling-using-the-instrumentation-method"></a>Profilage à l’aide d’outils en ligne de commande et de la méthode d’instrumentation  
  L’instrumentation est une méthode de profilage par laquelle des versions des binaires profilés spécialement générées contiennent des fonctions de sonde qui collectent les informations de temporisation à l’entrée et à la sortie des fonctions dans un module instrumenté. Étant donné que cette méthode de profilage est plus lourde que l’échantillonnage, elle entraîne une surcharge plus importante. En outre, les binaires instrumentés sont plus volumineux que les binaires Debug ou Release et ne sont pas destinés à être déployés.  
@@ -53,19 +53,19 @@ Cette procédure pas à pas explique comment profiler une application autonome [
   
 #### <a name="to-profile-the-peopletrax-application-by-using-the-instrumentation-method"></a>Pour profiler l’application PeopleTrax à l’aide de la méthode d’instrumentation  
   
-1.  Installez l’exemple d’application PeopleTrax et générez la version Release.  
+1. Installez l’exemple d’application PeopleTrax et générez la version Release.  
   
-2.  Ouvrez une fenêtre d’invite de commandes et ajoutez le répertoire **Outils de profilage** à la variable d’environnement Path locale.  
+2. Ouvrez une fenêtre d’invite de commandes et ajoutez le répertoire **Outils de profilage** à la variable d’environnement Path locale.  
   
-3.  Définissez le répertoire de travail sur le répertoire contenant les binaires PeopleTrax.  
+3. Définissez le répertoire de travail sur le répertoire contenant les binaires PeopleTrax.  
   
-4.  Créez un répertoire destiné à contenir les rapports basés sur les fichiers. Tapez la commande suivante :  
+4. Créez un répertoire destiné à contenir les rapports basés sur les fichiers. Tapez la commande suivante :  
   
     ```  
     md Reports  
     ```  
   
-5.  Utilisez l’outil en ligne de commande VSInstr pour instrumenter les binaires dans l’application. Tapez les commandes suivantes sur des lignes de commande distinctes :  
+5. Utilisez l’outil en ligne de commande VSInstr pour instrumenter les binaires dans l’application. Tapez les commandes suivantes sur des lignes de commande distinctes :  
   
     ```  
     VSInstr PeopleTrax.exe  
@@ -77,19 +77,19 @@ Cette procédure pas à pas explique comment profiler une application autonome [
   
      **Remarque** Par défaut, VSInstr enregistre une sauvegarde non instrumentée du fichier d’origine. Le nom du fichier de sauvegarde porte l’extension .orig. Par exemple, la version d’origine de « MonApp.exe » serait enregistrée sous le nom « MonApp.exe.orig ».  
   
-6.  Tapez la commande suivante pour définir les variables d’environnement appropriées :  
+6. Tapez la commande suivante pour définir les variables d’environnement appropriées :  
   
     ```  
     VsPerfCLREnv /traceon  
     ```  
   
-7.  Pour démarrer le profileur, tapez la commande suivante :  
+7. Pour démarrer le profileur, tapez la commande suivante :  
   
     ```  
     VsPerfCmd /start:trace /output:Reports\Report.vsp  
     ```  
   
-8.  Une fois que vous avez démarré le profileur en mode trace, exécutez la version instrumentée du processus PeopleTrax.exe pour collecter des données.  
+8. Une fois que vous avez démarré le profileur en mode trace, exécutez la version instrumentée du processus PeopleTrax.exe pour collecter des données.  
   
      La fenêtre d’application **PeopleTrax** s’affiche.  
   

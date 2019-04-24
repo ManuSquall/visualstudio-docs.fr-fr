@@ -15,10 +15,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 740ef26af6f1f84d23ef27de5176df1b3de98b34
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59232494"
 ---
 # <a name="ca1505-avoid-unmaintainable-code"></a>CA1505 : Éviter le code impossible à maintenir
@@ -50,5 +50,5 @@ Vous pouvez supprimer cet avertissement lorsque le type de méthode ne peut pas 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Avertissements liés à la maintenabilité](../code-quality/maintainability-warnings.md)
-- [Mesurer la complexité et la maintenabilité du code managé](../code-quality/code-metrics-values.md)
+- [Avertissements de la facilité de maintenance](../code-quality/maintainability-warnings.md)
+- [Mesurer la complexité et la facilité de maintenance du code managé](../code-quality/code-metrics-values.md)

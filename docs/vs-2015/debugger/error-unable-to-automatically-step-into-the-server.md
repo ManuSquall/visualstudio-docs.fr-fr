@@ -22,12 +22,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9b12509de2e2ba536d9d54d11a41924d86bf5667
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2d979b53f4bd5962a01fa5eb1b77cc7c81c68a4a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951804"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102417"
 ---
 # <a name="error-unable-to-automatically-step-into-the-server"></a>Erreur : Impossible d’effectuer automatiquement un pas à pas détaillé sur le serveur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,9 +40,9 @@ L’erreur affiche le message suivant :
   
  Causes possibles :  
   
--   Le fichier web.config pour votre application [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] n’affecte pas la valeur "true" au débogage (consultez [Mode débogage dans les applications ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)).  
+- Le fichier web.config pour votre application [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] n’affecte pas la valeur "true" au débogage (consultez [Mode débogage dans les applications ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)).  
   
--   Une version de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] a été installée après l’installation de Visual Studio. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] doit être installé avant Visual Studio. Pour résoudre ce problème, dans le **Panneau de configuration**Windows, accédez à **Programmes et Fonctionnalités** afin de réparer votre installation Visual Studio.  
+- Une version de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] a été installée après l’installation de Visual Studio. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] doit être installé avant Visual Studio. Pour résoudre ce problème, dans le **Panneau de configuration**Windows, accédez à **Programmes et Fonctionnalités** afin de réparer votre installation Visual Studio.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Erreurs de débogage à distance et dépannage](../debugger/remote-debugging-errors-and-troubleshooting.md)   

@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f6a4ea19013aefa1b3d078ce5993d48b4694989c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b5b8d24f01f7882e8c760918119a03a1c489c727
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949735"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059875"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Parcourir une session de débogage dans Visual Studio (XAML et C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,17 +35,17 @@ Ce guide de démarrage rapide montre comment naviguer dans les sessions de débo
 ## <a name="in-this-topic"></a>Dans cette rubrique
  Vous allez apprendre à :
 
--   [Créer un exemple d'application](#BKMK_CreateTheApplication)
+- [Créer un exemple d'application](#BKMK_CreateTheApplication)
 
--   [Définir et exécuter un point d'arrêt, exécuter une méthode pas-à-pas et examiner les données du programme](#BKMK_StepInto)
+- [Définir et exécuter un point d'arrêt, exécuter une méthode pas-à-pas et examiner les données du programme](#BKMK_StepInto)
 
--   [Pas à pas détaillé, principal et sortant des méthodes](#BKMK_StepIntoOverOut)
+- [Pas à pas détaillé, principal et sortant des méthodes](#BKMK_StepIntoOverOut)
 
--   [Définir un point d'arrêt conditionnel, exécuter le curseur et visualiser une variable](#BKMK_ConditionCursorVisualize)
+- [Définir un point d'arrêt conditionnel, exécuter le curseur et visualiser une variable](#BKMK_ConditionCursorVisualize)
 
--   [Modifier et continuer, récupérer à partir d'une exception](#BKMK_EditContinueRecoverExceptions)
+- [Modifier et continuer, récupérer à partir d'une exception](#BKMK_EditContinueRecoverExceptions)
 
-##  <a name="BKMK_CreateTheApplication"></a> Créer un exemple d'application
+## <a name="BKMK_CreateTheApplication"></a> Créer un exemple d'application
  Le débogage est centré sur le code. Ainsi, l'exemple d'application utilise l'infrastructure de l'application Windows Store pour créer un fichier source dans lequel vous pouvez découvrir comment fonctionne la navigation dans une session de débogage et comment examiner et modifier l'état du programme. Tous les appels de code s'effectuent à partir du constructeur de la page principale. Aucun contrôle n'est ajouté et aucun événement n'est traité.
 
  **Créer une application Windows Store C# par défaut.** Ouvrez Visual Studio. Sur la page d'accueil, cliquez sur le lien **Nouveau projet** . Dans la boîte de dialogue Nouveau projet, choisissez **Visual C#** dans la liste **Installé** , puis **Windows Store**. Dans la liste de modèles de projet, choisissez **Application**. Visual Studio crée une solution et un projet, puis affiche le concepteur MainPage.xaml et l'éditeur de code XAML.
@@ -56,7 +56,7 @@ Ce guide de démarrage rapide montre comment naviguer dans les sessions de débo
 
  Vous pouvez désormais vous référer aux exemples contenus dans cette rubrique.
 
-##  <a name="BKMK_StepInto"></a> Définir et exécuter un point d'arrêt, exécuter une méthode pas-à-pas et examiner les données du programme
+## <a name="BKMK_StepInto"></a> Définir et exécuter un point d'arrêt, exécuter une méthode pas-à-pas et examiner les données du programme
  La méthode la plus courante que vous pouvez démarrer une session de débogage consiste à choisir **démarrer le débogage** à partir de la **déboguer** menu (clavier : F5). L'exécution démarre et se poursuit jusqu'à ce qu'un point d'arrêt soit atteint, que vous suspendiez manuellement l'exécution, qu'une exception se produise ou que l'application se termine.
 
  Lorsque l'exécution est suspendue dans le débogueur, affichez la valeur d'une variable active dans une bulle d'informations en plaçant le pointeur de la souris au-dessus de la variable. Vous pouvez également ouvrir les fenêtres Variables locales et Automatique pour afficher les listes des variables actives et de leurs valeurs actuelles. L'ajout d'une ou plusieurs variables dans une fenêtre Espion permet de se concentrer sur la valeur des variables lorsque l'exécution de l'application se poursuit.
@@ -112,7 +112,7 @@ Ce guide de démarrage rapide montre comment naviguer dans les sessions de débo
 
   Examinez plusieurs variables dans une fenêtre Espion. Les valeurs des variables espionnées, comme les valeurs affichées dans les fenêtres Variables locales et les bulles d'informations, sont mises à jour chaque fois que l'exécution est suspendue. Vous pouvez également ajouter des variables dans la fenêtre Espion de l'éditeur de code. Sélectionnez la variable à espionner, cliquez avec le bouton droit, puis choisissez **Ajouter un espion**.
 
-##  <a name="BKMK_StepIntoOverOut"></a> Pas à pas détaillé, principal et sortant des méthodes
+## <a name="BKMK_StepIntoOverOut"></a> Pas à pas détaillé, principal et sortant des méthodes
  Contrairement à l'exécution pas-à-pas d'une méthode appelée par une méthode parente, le survol d'une méthode exécute la méthode enfant, puis suspend l'exécution de la méthode d'appel lorsque l'exécution de la méthode parent reprend. Vous pouvez exécuter un survol d'une méthode lorsque vous êtes familiarisé avec le mode de fonctionnement de la méthode et que vous êtes sûr que l'exécution n'affectera pas le problème que vous analysez.
 
  Le survol d'une ligne de code qui ne contient pas d'appel de méthode exécute la ligne comme s'il s'agissait d'une exécution pas-à-pas.
@@ -144,7 +144,7 @@ Ce guide de démarrage rapide montre comment naviguer dans les sessions de débo
 
  **Arrêter le débogage.** Dans le menu Déboguer, choisissez Arrêter le débogage (clavier : MAJ + F5). La session de débogage se termine.
 
-##  <a name="BKMK_ConditionCursorVisualize"></a> Définir un point d'arrêt conditionnel, exécuter le curseur et visualiser une variable
+## <a name="BKMK_ConditionCursorVisualize"></a> Définir un point d'arrêt conditionnel, exécuter le curseur et visualiser une variable
  Un point d'arrêt conditionnel désigne une condition qui entraîne la suspension de l'exécution par le débogueur. La condition est spécifiée par une expression de code qui peut être évaluée comme valeur true ou false. Par exemple, vous pouvez utiliser un point d'arrêt conditionnel pour examiner l'état du programme dans une méthode souvent appelée uniquement si une variable atteint une certaine valeur.
 
  L'exécution jusqu'au curseur revient à définir un point d'arrêt ponctuel. Lorsque l'exécution est suspendue, sélectionnez une ligne dans le code source et reprenez l'exécution jusqu'à la ligne sélectionnée. Par exemple, vous pouvez exécuter pas-à-pas une boucle dans une méthode et confirmer que le code dans la boucle est exécuté correctement. Au lieu d'une exécution pas-à-pas pour chaque itération de la boucle, lancez l'exécution jusqu'au curseur qui est positionné après l'exécution de la boucle.
@@ -180,7 +180,7 @@ Ce guide de démarrage rapide montre comment naviguer dans les sessions de débo
 
  **Arrêter le débogage.** Dans le menu Déboguer, choisissez Arrêter le débogage (clavier : MAJ + F5). La session de débogage se termine.
 
-##  <a name="BKMK_EditContinueRecoverExceptions"></a> Modifier et continuer, récupérer à partir d'une exception
+## <a name="BKMK_EditContinueRecoverExceptions"></a> Modifier et continuer, récupérer à partir d'une exception
  Dans certaines circonstances, lorsque vous vous arrêtez dans le code du débogueur Visual Studio vous avez la possibilité de modifier la valeur des variables et même la logique des instructions. Cette fonctionnalité est appelée « modifier et continuer ».
 
  La fonction modifier et continuer peut être particulièrement utile lorsque vous vous arrêtez au niveau d'une exception. Au lieu de s'arrêter et de redémarrer le débogage d'une procédure longue et complexe pour éviter l'exception, vous pouvez « dérouler » l'exception pour déplacer l'exécution au point juste avant l'endroit où l'exception s'est produite, puis modifier la variable ou l'instruction incriminée et continuer la session de débogage en cours dans un état qui n'entraîne pas d'exception.

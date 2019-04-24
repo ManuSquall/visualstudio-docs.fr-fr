@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d37ef5efcdc7e559e19fcce396e8c87875bdf59
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ca4e817ae33d3129259de619e07bf256e6f544bd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626594"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092316"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Comment VSPackages ajoute des éléments d’interface utilisateur
 Un VSPackage peut ajouter des éléments d’interface (UI) utilisateur, par exemple, les menus, barres d’outils et de l’outil windows, à Visual Studio par le biais de la *.vsct* fichier.
@@ -27,11 +27,11 @@ Un VSPackage peut ajouter des éléments d’interface (UI) utilisateur, par exe
 ## <a name="the-visual-studio-command-table-architecture"></a>L’architecture de table de commande de Visual Studio
  Comme indiqué, l’architecture de table de commande prend en charge les principes d’architecture susmentionnés. Les principes derrière les abstractions, les structures de données et les outils de l’architecture de table de commande sont les suivantes :
 
--   Il existe trois types de base d’éléments : menus, les commandes et les groupes. Menus peuvent être exposées dans l’interface utilisateur comme les menus, sous-menus, des barres d’outils ou des fenêtres Outil. Les commandes sont des procédures qui l’utilisateur peut exécuter dans l’IDE, et ils peuvent être exposées en tant qu’éléments de menu, des boutons, des zones de liste ou d’autres contrôles. Les groupes sont des conteneurs pour les menus et commandes.
+- Il existe trois types de base d’éléments : menus, les commandes et les groupes. Menus peuvent être exposées dans l’interface utilisateur comme les menus, sous-menus, des barres d’outils ou des fenêtres Outil. Les commandes sont des procédures qui l’utilisateur peut exécuter dans l’IDE, et ils peuvent être exposées en tant qu’éléments de menu, des boutons, des zones de liste ou d’autres contrôles. Les groupes sont des conteneurs pour les menus et commandes.
 
--   Chaque élément est spécifié par une définition qui décrit l’élément, sa priorité par rapport aux autres éléments et les indicateurs qui modifient son comportement.
+- Chaque élément est spécifié par une définition qui décrit l’élément, sa priorité par rapport aux autres éléments et les indicateurs qui modifient son comportement.
 
--   Chaque élément possède un positionnement qui décrit le parent de l’élément. Un élément peut avoir plusieurs parents, afin qu’elle peut apparaître dans plusieurs emplacements dans l’interface utilisateur.
+- Chaque élément possède un positionnement qui décrit le parent de l’élément. Un élément peut avoir plusieurs parents, afin qu’elle peut apparaître dans plusieurs emplacements dans l’interface utilisateur.
 
      Chaque commande doit avoir un groupe parent, même si elle est le seul enfant de ce groupe. Chaque menu standard doit avoir également un groupe parent. Barres d’outils et fenêtres Outil agissent comme leurs propres parents. Un groupe peut avoir comme son parent de la barre de menus de Visual Studio principale, ou n’importe quel menu, barre d’outils ou de fenêtre outil.
 
@@ -74,15 +74,15 @@ Un VSPackage peut ajouter des éléments d’interface (UI) utilisateur, par exe
 ### <a name="menus-groups-and-commands"></a>Menus, les groupes et les commandes
  Lorsqu’un menu, un groupe ou une commande possède un GUID et l’ID, il peut être ajouté à l’IDE. Chaque élément d’interface utilisateur doit disposer des éléments suivants :
 
--   Un `guid` attribut qui correspond au nom de la `GuidSymbol` élément défini sous l’élément d’interface utilisateur.
+- Un `guid` attribut qui correspond au nom de la `GuidSymbol` élément défini sous l’élément d’interface utilisateur.
 
--   Un `id` attribut qui correspond au nom d’associé `IDSymbol` élément.
+- Un `id` attribut qui correspond au nom d’associé `IDSymbol` élément.
 
      Ensemble, le `guid` et `id` attributs composent le *signature* de l’élément d’interface utilisateur.
 
--   Un `priority` attribut qui détermine l’emplacement de l’élément d’interface utilisateur dans son menu parent ou le groupe.
+- Un `priority` attribut qui détermine l’emplacement de l’élément d’interface utilisateur dans son menu parent ou le groupe.
 
--   Un [élément Parent](../../extensibility/parent-element.md) qui a `guid` et `id` attributs qui spécifient la signature du menu parent ou du groupe.
+- Un [élément Parent](../../extensibility/parent-element.md) qui a `guid` et `id` attributs qui spécifient la signature du menu parent ou du groupe.
 
 #### <a name="menus"></a>Menus
  Chaque menu est défini comme un [élément de Menu](../../extensibility/menu-element.md) dans la `Menus` section. Menus doivent avoir `guid`, `id`, et `priority` attributs et un `Parent` élément et également les attributs supplémentaires suivants et enfants :
@@ -263,17 +263,17 @@ priority="0x0100" type="Menu">
 #### <a name="general-requirements"></a>Exigences générales
  Votre commande doit passer à la série de tests suivante avant de pouvoir être affichée et activé :
 
--   La commande est correctement positionnée.
+- La commande est correctement positionnée.
 
--   Le `DefaultInvisible` indicateur n’est pas défini.
+- Le `DefaultInvisible` indicateur n’est pas défini.
 
--   Le menu parent ou la barre d’outils est visible.
+- Le menu parent ou la barre d’outils est visible.
 
--   La commande n’est pas invisible en raison d’une entrée de contexte dans le [élément VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) section.
+- La commande n’est pas invisible en raison d’une entrée de contexte dans le [élément VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) section.
 
--   Code de VSPackage qui implémente le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface affiche et permet d’exécuter la commande. Aucun code d’interface interceptée et l’action.
+- Code de VSPackage qui implémente le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface affiche et permet d’exécuter la commande. Aucun code d’interface interceptée et l’action.
 
--   Lorsqu’un utilisateur clique sur votre commande, il devient soumis à la procédure décrite dans [algorithme de routage](../../extensibility/internals/command-routing-algorithm.md).
+- Lorsqu’un utilisateur clique sur votre commande, il devient soumis à la procédure décrite dans [algorithme de routage](../../extensibility/internals/command-routing-algorithm.md).
 
 ## <a name="call-pre-defined-commands"></a>Appeler des commandes prédéfinies
  Le [élément UsedCommands](../../extensibility/usedcommands-element.md) permet aux VSPackages pour accéder aux commandes qui sont fournies par les autres VSPackages ou par l’IDE. Pour ce faire, créez un [élément UsedCommand](../../extensibility/usedcommand-element.md) ayant le GUID et l’ID de la commande à utiliser. Cela garantit que la commande sera chargée par Visual Studio, même si elle n’est pas partie de la configuration actuelle de Visual Studio. Pour plus d’informations, consultez [élément UsedCommand](../../extensibility/usedcommand-element.md).

@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aebe99754b19579bbc3475e0eb9a6941da43e558
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ac9352af6bd22ca2cc21545945d56a10db2c458f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948184"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074386"
 ---
 # <a name="hlsl-shader-debugger"></a>Débogueur du nuanceur HLSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,9 +53,9 @@ Le débogueur HLSL de Visual Studio Graphics Analyzer vous aide à comprendre co
   
 #### <a name="to-start-the-hlsl-debugger-from-the-graphics-pipeline-stages-window"></a>Pour démarrer le débogueur HLSL à partir de la fenêtre Étapes de canalisation Graphics  
   
-1.  Dans la fenêtre **Étapes de canalisation Graphics**, recherchez l’étape de pipeline associée au nuanceur que vous souhaitez déboguer.  
+1. Dans la fenêtre **Étapes de canalisation Graphics**, recherchez l’étape de pipeline associée au nuanceur que vous souhaitez déboguer.  
   
-2.  Sous le titre de l’étape de pipeline, choisissez **Démarrer le débogage**, qui apparaît sous la forme d’une petite flèche verte.  
+2. Sous le titre de l’étape de pipeline, choisissez **Démarrer le débogage**, qui apparaît sous la forme d’une petite flèche verte.  
   
     > [!NOTE]
     >  Ce point d'entrée dans le débogueur HLSL débogue uniquement le premier thread nuanceur pour l'étape correspondante, c'est-à-dire le premier vertex ou le premier pixel qui est traité. Vous pouvez utiliser la fonctionnalité Historique des pixels pour accéder à d'autres threads de ces étapes du nuanceur.  

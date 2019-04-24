@@ -19,12 +19,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 39c5c5062841dd0a9c5c34e86d96c5d2fc6ac2be
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cd3cbbcd740c0f124b8ab4379204a9d425cd541c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954092"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039542"
 ---
 # <a name="how-to-debug-web-applications"></a>Procédure : Déboguer des Applications Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,25 +33,25 @@ ms.locfileid: "58954092"
   
  Pour déboguer une application [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] :  
   
--   Vous devez disposer des autorisations requises. Pour plus d'informations, voir [System Requirements](../debugger/aspnet-debugging-system-requirements.md).  
+- Vous devez disposer des autorisations requises. Pour plus d'informations, voir [System Requirements](../debugger/aspnet-debugging-system-requirements.md).  
   
--   [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] le débogage doit être activé dans **propriétés du projet**.  
+- [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] le débogage doit être activé dans **propriétés du projet**.  
   
--   Le fichier de configuration de votre application (Web.config) doit avoir pour valeur mode débogage. En mode débogage, [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] génère des symboles pour les fichiers générés dynamiquement et le débogueur peut être attaché à l'application [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] définit cela automatiquement lorsque vous commencez le débogage, si vous avez créé votre projet à partir du modèle de projets Web.  
+- Le fichier de configuration de votre application (Web.config) doit avoir pour valeur mode débogage. En mode débogage, [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] génère des symboles pour les fichiers générés dynamiquement et le débogueur peut être attaché à l'application [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] définit cela automatiquement lorsque vous commencez le débogage, si vous avez créé votre projet à partir du modèle de projets Web.  
   
--   Pour plus d'informations, voir [Procédure : Activer le débogage pour les Applications ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md).  
+- Pour plus d'informations, voir [Procédure : Activer le débogage pour les Applications ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md).  
   
 ### <a name="to-debug-a-web-application-during-development"></a>Pour déboguer une application Web lors du développement  
   
-1.  Sur le **déboguer** menu, cliquez sur **Démarrer** pour commencer le débogage de l’application Web.  
+1. Sur le **déboguer** menu, cliquez sur **Démarrer** pour commencer le débogage de l’application Web.  
   
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] génère le projet d'application Web, déploie l'application si nécessaire, démarre le serveur de développement ASP.NET si vous effectuez un débogage localement, et crée un attachement au processus de traitement [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
   
-2.  Utilisez le débogueur pour définir et effacer les points d'arrêt, effectuer du pas à pas et d'autres opérations de débogage, comme pour n'importe quelle application.  
+2. Utilisez le débogueur pour définir et effacer les points d'arrêt, effectuer du pas à pas et d'autres opérations de débogage, comme pour n'importe quelle application.  
   
      Pour plus d’informations, consultez [principes fondamentaux du débogueur](../debugger/debugger-basics.md).  
   
-3.  Sur le **déboguer** menu, cliquez sur **arrêter le débogage** à la fin de la session de débogage, ou, dans le **fichier** menu dans Internet Explorer, cliquez sur **fermer**.  
+3. Sur le **déboguer** menu, cliquez sur **arrêter le débogage** à la fin de la session de débogage, ou, dans le **fichier** menu dans Internet Explorer, cliquez sur **fermer**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage d’applications et de scripts web](../debugger/debugging-web-applications-and-script.md)   

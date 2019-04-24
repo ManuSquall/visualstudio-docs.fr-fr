@@ -11,12 +11,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 41f89449ab412a53d779bfc3fb4cf9ac52ded239
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aa8ec46036bbb9a133f2036f1c54cad87d064618
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953720"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105485"
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Prise en charge des éditions de Visual Studio pour la visualisation &amp; Modeling SDK
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ Les éléments suivants sont des listes d’éditions de Visual Studio qui sont 
 ## <a name="deployment-editions"></a>Éditions de déploiement
  [!INCLUDE[dsl](../includes/dsl-md.md)] prend en charge les configurations suivantes pour déployer les langages spécifiques à un domaine que vous créez :
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
--   Visual Studio Professional
+- Visual Studio Professional
 
--   Package redistribuable Visual Studio Shell (mode intégré) redistributable package
+- Package redistribuable Visual Studio Shell (mode intégré) redistributable package
 
--   Package redistribuable Visual Studio Shell (mode isolé) package redistribuable
+- Package redistribuable Visual Studio Shell (mode isolé) package redistribuable
 
 > [!NOTE]
 >  Pour rendre un DSL puisse s’exécuter sur un produit Shell, vous devez définir le **pris en charge les éditions de Visual Studio** champ dans le manifeste d’Extension. Pour plus d’informations, consultez [Déploiement de solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).

@@ -22,17 +22,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8f6e1bf48d80362a4f51e10583c5827eff8fe932
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 08442d6044ca978e69f199e76c4668db63c319da
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758317"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086271"
 ---
 # <a name="copy-task"></a>Copy, tâche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Copie les fichiers à un nouvel emplacement du système de fichiers.  
   
 ## <a name="parameters"></a>Paramètres  
@@ -53,21 +52,21 @@ Copie les fichiers à un nouvel emplacement du système de fichiers.
 ## <a name="warnings"></a>Avertissements  
  Des avertissements sont enregistrés, notamment ceux-ci :  
   
--   `Copy.DestinationIsDirectory`  
+- `Copy.DestinationIsDirectory`  
   
--   `Copy.SourceIsDirectory`  
+- `Copy.SourceIsDirectory`  
   
--   `Copy.SourceFileNotFound`  
+- `Copy.SourceFileNotFound`  
   
--   `Copy.CreatesDirectory`  
+- `Copy.CreatesDirectory`  
   
--   `Copy.HardLinkComment`  
+- `Copy.HardLinkComment`  
   
--   `Copy.RetryingAsFileCopy`  
+- `Copy.RetryingAsFileCopy`  
   
--   `Copy.FileComment`  
+- `Copy.FileComment`  
   
--   `Copy.RemovingReadOnlyAttribute`  
+- `Copy.RemovingReadOnlyAttribute`  
   
 ## <a name="remarks"></a>Remarques  
  Le paramètre `DestinationFolder` ou `DestinationFiles` doit être spécifié, mais pas les deux. Si les deux paramètres sont spécifiés, la tâche échoue, et une erreur est enregistrée.  

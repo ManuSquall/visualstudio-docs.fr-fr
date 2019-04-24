@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1ecfff316a6daa4fe7f0b1fc0619f7dd7961c682
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 15a07796278faad43f95b33c020b167f07daa009
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "59001129"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105628"
 ---
 # <a name="graphics-event-list"></a>Liste des événements Graphics
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ La liste des événements Graphics dans Visual Studio Graphics Analyzer vous per
   
 ##### <a name="to-change-the-event-list-view-mode"></a>Pour modifier le mode d'affichage de la liste des événements  
   
--   Dans la fenêtre **Liste des événements Graphics** , au-dessus de la liste des événements, repérez la liste déroulante **Affichage** et choisissez l'affichage **Chronologie** ou **Appels de dessin** .  
+- Dans la fenêtre **Liste des événements Graphics** , au-dessus de la liste des événements, repérez la liste déroulante **Affichage** et choisissez l'affichage **Chronologie** ou **Appels de dessin** .  
   
 ### <a name="filtering-events"></a>Filtrage des événements  
  Vous pouvez utiliser la zone Rechercher (située dans l'angle supérieur droit de la fenêtre **Liste des événements Graphics** ) pour filtrer la liste des événements et afficher uniquement ceux dont le nom contient les mots clés spécifiés. Vous pouvez spécifier des mots clés uniques comme `Vertex`(comme dans l’illustration précédente) ou des mots clés multiples en utilisant une liste délimitée par des points-virgules, comme `Draw;Primitive`(qui correspond aux événements dont le nom contient `Draw` ou `Primitive` ). Comme les recherches respectent les espaces (par exemple `VSSet``VS Set` sont des recherches différentes), spécifiez vos recherches avec soin.  

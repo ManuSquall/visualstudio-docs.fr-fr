@@ -14,12 +14,12 @@ ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 598daccecbd2b03d0df117262571f6f511e2a247
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2feef3cbe72b7eb8db96052236fe483733e22273
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953429"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107747"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>GUID et ID des commandes Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,11 +54,11 @@ Les valeurs GUID et l’ID de commandes incluses dans l’environnement de déve
 ### <a name="special-cases"></a>Cas particuliers
  Dans les cas suivants, le texte de menu ou le texte d’info-bulle peut pas correspondre exactement à ce qui figure dans la définition de commande.
 
--   Les éléments de menu qui incluent un caractère souligné, telles que la **impression** commande sur le **fichier** menu, dans lequel le P est souligné.
+- Les éléments de menu qui incluent un caractère souligné, telles que la **impression** commande sur le **fichier** menu, dans lequel le P est souligné.
 
      Les caractères qui sont précédés du caractère « & » dans les noms d’élément de menu sont affichés comme souligné. Toutefois, les fichiers .vsct sont écrits en XML, qui utilise le caractère « & » pour indiquer les caractères spéciaux et nécessite qu’une esperluette qui doit être affichée doit être développée sous&amp;'. Par conséquent, dans un fichier .vsct, le **impression** commande apparaît sous la forme «&amp;impression ».
 
--   Les commandes qui ont un texte dynamique, tel que **enregistrer** *nom de fichier actuel*et généré dynamiquement des éléments de menu, tels que des éléments sur le **fichiers récents** liste.
+- Les commandes qui ont un texte dynamique, tel que **enregistrer** *nom de fichier actuel*et généré dynamiquement des éléments de menu, tels que des éléments sur le **fichiers récents** liste.
 
      Il n’existe aucun moyen fiable pour effectuer une recherche sur texte dynamique. Au lieu de cela, rechercher un groupe qui héberge la commande souhaitée en consultant [GUID et ID de Visual Studio Menus](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) ou [GUID et ID de Visual Studio barres d’outils](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)et la recherche de l’ID de ce groupe. Si la définition de la commande n’a pas le groupe que sa [élément Parent](../../extensibility/parent-element.md), SharedCmdPlace.vsct et ShellCmdPlace.vsct (ou VsDbgCmdPlace.vsct pour les commandes de débogueur) recherchez un `<CommandPlacement>` élément qui définit le parent de la commande. SharedCmdPlace.vsct, ShellCmdPlace.vsct, andVsDbgCmdPlace.vsct se trouvent dans le *chemin d’installation de Visual Studio SDK*\VisualStudioIntegration\Common\Inc\ dossier.
 

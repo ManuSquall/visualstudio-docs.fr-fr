@@ -16,17 +16,17 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ffe24127fc0b02b2abb8b4c91ff57345cf88ff7f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 020dd35d225d8629a8061d1a74b234b62960c830
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953864"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056157"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>Générer du code à partir de diagrammes de classes UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Pour générer le code Visual C# .NET à partir de diagrammes de classes UML dans Visual Studio, utilisez le **générer le Code** commande. Par défaut, la commande génère un type C# pour chaque type UML que vous sélectionnez. Vous pouvez modifier et étendre ce comportement en modifiant ou en copiant les modèles de texte qui génèrent le code. Vous pouvez spécifier un comportement distinct pour les types contenus dans les différents packages de votre modèle.  
+Pour générer le code Visual c# .NET à partir de diagrammes de classes UML dans Visual Studio, utilisez le **générer le Code** commande. Par défaut, la commande génère un type C# pour chaque type UML que vous sélectionnez. Vous pouvez modifier et étendre ce comportement en modifiant ou en copiant les modèles de texte qui génèrent le code. Vous pouvez spécifier un comportement distinct pour les types contenus dans les différents packages de votre modèle.  
 
  Le **générer le Code** commande est particulièrement adaptée à la génération de code à partir de la sélection de l’utilisateur d’éléments et à la génération d’un fichier pour chaque classe UML ou un autre élément. Par exemple, la capture d'écran présente deux fichiers C# générés à partir de deux classes UML.  
 
@@ -53,11 +53,11 @@ Pour générer le code Visual C# .NET à partir de diagrammes de classes UML dan
 
 2. Sur un diagramme de classes ou dans **Explorateur de modèles UML**, sélectionner des éléments à partir de laquelle vous souhaitez générer le code. Vous pouvez sélectionner l'un des éléments suivants :  
 
-   -   Un ensemble spécifique d'éléments.  
+   - Un ensemble spécifique d'éléments.  
 
-   -   Un package ou le modèle, pour générer le code à partir de son contenu.  
+   - Un package ou le modèle, pour générer le code à partir de son contenu.  
 
-   -   Le diagramme, pour en sélectionner tous les éléments.  
+   - Le diagramme, pour en sélectionner tous les éléments.  
 
 3. Ouvrez le menu contextuel pour un élément sélectionné, puis choisissez **générer le Code**.  
 
@@ -71,7 +71,7 @@ Pour générer le code Visual C# .NET à partir de diagrammes de classes UML dan
 
    Certains tests de validation sont appliqués au modèle pour vérifier qu'il peut être traduit en C#. Si ces tests échouent, un message d'erreur est affiché et la génération de code n'est pas exécutée. Si vous avez créé une commande de menu de validation, le code n’est pas généré pour tout élément pour lequel votre commande de validation échoue. Pour plus d’informations, consultez [définir des contraintes de validation pour les modèles UML](../modeling/define-validation-constraints-for-uml-models.md).  
 
-##  <a name="default"></a> Transformations de génération de Code par défaut  
+## <a name="default"></a> Transformations de génération de Code par défaut  
  Cette section résume les résultats produits par le **générer le Code** commande, sauf si vous personnalisez la commande. Pour plus d’informations, consultez [personnalisation de la commande Generate Code](#custom).  
 
 - Un type C# est produit pour chaque type que vous avez sélectionné dans le modèle UML. Chaque type est placé dans un fichier de code séparé sous le **GeneratedCode** dossier.  
@@ -86,7 +86,7 @@ Pour générer le code Visual C# .NET à partir de diagrammes de classes UML dan
 
   En ajoutant un stéréotype à chaque type UML, vous pouvez contrôler un plus grand nombre de propriétés du type C# généré.  
 
-|**Pour créer ce type C#**|**Dessiner ce type UML**|**Appliquer ce stéréotype**|  
+|**Pour créer ce type c#**|**Dessiner ce type UML**|**Appliquer ce stéréotype**|  
 |---------------------------------|----------------------------|-------------------------------|  
 |Classe|Classe|\<Aucun > ou<br /><br /> C# class|  
 |Interface|Interface|\<Aucun > ou<br /><br /> C# interface|  
@@ -101,7 +101,7 @@ Pour générer le code Visual C# .NET à partir de diagrammes de classes UML dan
 2. Dans le **propriétés** fenêtre, cliquez sur la flèche déroulante dans le **stéréotypes** propriété et sélectionnez la case à cocher pour le stéréotype que vous souhaitez appliquer.  
 
    > [!TIP]
-   >  Si les stéréotypes C# ne s'affichent pas, activez le profil C# pour le modèle ou pour un package qui contient les éléments de modèle auxquels vous vous intéressez. Sélectionnez le package ou la racine du modèle dans **Explorateur de modèles UML**. Ensuite, dans le **propriétés** fenêtre, choisissez **profil**, puis activez le profil C#.  
+   >  Si les stéréotypes C# ne s'affichent pas, activez le profil C# pour le modèle ou pour un package qui contient les éléments de modèle auxquels vous vous intéressez. Sélectionnez le package ou la racine du modèle dans **Explorateur de modèles UML**. Ensuite, dans le **propriétés** fenêtre, choisissez **profil**, puis activez le profil c#.  
 
 3. Développez le **stéréotypes** propriété pour afficher les propriétés supplémentaires que vous pouvez définir.  
 
@@ -112,7 +112,7 @@ Pour générer le code Visual C# .NET à partir de diagrammes de classes UML dan
 
  De plus, chaque stéréotype fournit plusieurs propriétés supplémentaires que vous pouvez définir. Ces valeurs sont traduites en mots clés appropriés dans le code C#. Par exemple, si vous définissez la propriété `Is Static` sur une classe, la classe C# sera `static`.  
 
- Pour définir ces propriétés supplémentaires, sélectionnez la classe ou un autre élément dans le diagramme. Dans la fenêtre Propriétés, développez **stéréotypes**, puis développez le stéréotype C#, tel que **classe C#**.  Pour les classes, ces propriétés supplémentaires incluent :  
+ Pour définir ces propriétés supplémentaires, sélectionnez la classe ou un autre élément dans le diagramme. Dans la fenêtre Propriétés, développez **stéréotypes**, puis développez le stéréotype c#, tel que **classe c#**.  Pour les classes, ces propriétés supplémentaires incluent :  
 
 - CLR Attributes  
 
@@ -126,7 +126,7 @@ Pour générer le code Visual C# .NET à partir de diagrammes de classes UML dan
 
   Chaque attribut et opération dispose également de propriétés de stéréotype que vous pouvez définir. Si vous ne voyez pas les propriétés sur un nouvel attribut, exécutez **générer le Code**.  
 
-##  <a name="custom"></a> Personnalisation de la commande Generate Code  
+## <a name="custom"></a> Personnalisation de la commande Generate Code  
  Le **générer le Code** commande fonctionne en transformant vos éléments de modèle à l’aide d’un ensemble de modèles de texte. Pour plus d’informations sur les modèles de texte, consultez [génération de Code et modèles de texte T4](../modeling/code-generation-and-t4-text-templates.md).  
 
  Les modèles sont spécifiés dans un ensemble de *liaisons de modèles de texte*. Une liaison de modèle de texte spécifie quel modèle doit être appliqué, où la sortie générée doit être placée et autres paramètres de la **générer le Code** commande.  
@@ -164,7 +164,6 @@ Pour générer le code Visual C# .NET à partir de diagrammes de classes UML dan
 
 4. Dans la boîte de dialogue, définissez les propriétés de la liaison de modèle de texte.  
 
-
    |    **Property**    |                                                                                                                                                                                                                                                                                                                    **Description**                                                                                                                                                                                                                                                                                                                    |
    |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |        Nom        |                                                                                                                                                                                                                                                  Nom pour cette liaison. Pour substituer une liaison héritée d’un modèle ou d’un package contenant, utilisez le même nom que la liaison à substituer.                                                                                                                                                                                                                                                  |
@@ -174,10 +173,9 @@ Pour générer le code Visual C# .NET à partir de diagrammes de classes UML dan
    |  Répertoire cible  |                                                                                          Dossier dans lequel le fichier cible est généré. Le chemin d’accès est relatif au dossier du projet.<br /><br /> Vous pouvez utiliser l'expression `{PackageStructure}` pour insérer un chemin d'accès qui correspond aux noms des packages contenants. La valeur par défaut est `\GeneratedCode\{PackageStructure}`. Vous pouvez également inclure des variables d'environnement telles que %TEMP% ou %HomePath%. **Important :** `{PackageStructure}` peut uniquement être utilisée dans le **répertoire cible** propriété.                                                                                          |
    | Chemin d’accès au fichier de modèle |                                                                                                                                                           Modèle qui exécutera la transformation.<br /><br /> Vous pouvez utiliser les modèles fournis ou créer le vôtre. Les modèles fournis se trouvent à l'emplacement suivant :<br /><br /> …\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Extensibility\Templates\Text\                                                                                                                                                           |
 
-
 5. Vous pouvez joindre à un élément le nombre de liaisons de votre choix.  
 
-##  <a name="writing"></a> Écriture d’un modèle de texte  
+## <a name="writing"></a> Écriture d’un modèle de texte  
  Vous pouvez écrire vos propres modèles de texte. Les modèles de texte peuvent générer un code programme ou tout autre type de fichier texte.  
 
  Nous vous recommandons de commencer par modifier des copies des modèles standard. Vous pouvez copier les modèles à partir des emplacements suivants :  

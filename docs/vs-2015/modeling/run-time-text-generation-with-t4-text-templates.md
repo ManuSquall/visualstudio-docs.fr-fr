@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2290ec08ea64a2775b3e4ced171dbf14399219cb
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 37fa7bafb77c67d29ff9625fa04388f9dd826f8e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001369"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059264"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Génération de texte durant l'exécution à l'aide des modèles de texte T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,16 +53,16 @@ This report is Company Confidential.
   
 #### <a name="to-create-a-run-time-text-template"></a>Pour créer un modèle de texte d’exécution  
   
-1.  Dans l’Explorateur de solutions, dans le menu contextuel de votre projet, choisissez **ajouter**, **un nouvel élément**.  
+1. Dans l’Explorateur de solutions, dans le menu contextuel de votre projet, choisissez **ajouter**, **un nouvel élément**.  
   
-2.  Dans le **ajouter un nouvel élément** boîte de dialogue, sélectionnez **modèle de texte Runtime**. (Dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] regardez sous **communs\Général**.)  
+2. Dans le **ajouter un nouvel élément** boîte de dialogue, sélectionnez **modèle de texte Runtime**. (Dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] regardez sous **communs\Général**.)  
   
-3.  Tapez un nom pour votre fichier de modèle.  
+3. Tapez un nom pour votre fichier de modèle.  
   
     > [!NOTE]
     >  Le nom du fichier modèle sera utilisé comme nom de classe dans le code généré. Par conséquent, il ne doit pas avoir d’espaces ni ponctuation.  
   
-4.  Sélectionnez **Ajouter**.  
+4. Sélectionnez **Ajouter**.  
   
      Un nouveau fichier est créé qui a l’extension **.tt**. Son **un outil personnalisé** propriété est définie sur **TextTemplatingFilePreprocessor**. Il contient les lignes suivantes :  
   
@@ -79,18 +79,18 @@ This report is Company Confidential.
   
 #### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>Pour convertir un fichier texte existant à un modèle au moment de l’exécution  
   
-1.  Incluez le fichier dans votre [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projet. Dans l’Explorateur de solutions, dans le menu contextuel du projet, choisissez **ajouter**, **élément existant**.  
+1. Incluez le fichier dans votre [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projet. Dans l’Explorateur de solutions, dans le menu contextuel du projet, choisissez **ajouter**, **élément existant**.  
   
-2.  Définir le fichier **outils personnalisés** propriété **TextTemplatingFilePreprocessor**. Dans l’Explorateur de solutions, dans le menu contextuel du fichier, choisissez **propriétés**.  
+2. Définir le fichier **outils personnalisés** propriété **TextTemplatingFilePreprocessor**. Dans l’Explorateur de solutions, dans le menu contextuel du fichier, choisissez **propriétés**.  
   
     > [!NOTE]
     >  Si la propriété est déjà définie, assurez-vous qu’il s’agit **TextTemplatingFilePreprocessor** et non **TextTemplatingFileGenerator**. Cela peut se produire si vous incluez un fichier qui comporte déjà l’extension **.tt**.  
   
-3.  Modifier l’extension de nom de fichier **.tt**. Bien que cette étape est facultative, il vous permet d’éviter l’ouverture du fichier dans un éditeur incorrect.  
+3. Modifier l’extension de nom de fichier **.tt**. Bien que cette étape est facultative, il vous permet d’éviter l’ouverture du fichier dans un éditeur incorrect.  
   
-4.  Supprimer les espaces ou la ponctuation de la partie principale du nom de fichier. Par exemple « My Web Page.tt » est incorrect, mais « MyWebPage.tt » est correct. Le nom de fichier sera utilisé comme nom de classe dans le code généré.  
+4. Supprimer les espaces ou la ponctuation de la partie principale du nom de fichier. Par exemple « My Web Page.tt » est incorrect, mais « MyWebPage.tt » est correct. Le nom de fichier sera utilisé comme nom de classe dans le code généré.  
   
-5.  Insérez la ligne suivante au début du fichier. Si vous travaillez dans un projet Visual Basic, remplacez « C# » avec « VB ».  
+5. Insérez la ligne suivante au début du fichier. Si vous travaillez dans un projet Visual Basic, remplacez « C# » avec « VB ».  
   
      `<#@ template language="C#" #>`  
   

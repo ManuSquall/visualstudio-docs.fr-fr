@@ -8,12 +8,12 @@ ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: 32
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6f512ac0788128db87269407c10ae400268283f5
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 229893e13da06253398da32cfef4a85402a4787a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57873542"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094552"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Test des applications SharePoint 2010 avec des tests codés de l'interface utilisateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,16 +22,16 @@ L'ajout de tests codés de l'interface utilisateur dans une application SharePoi
   
  **Spécifications**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 ## <a name="what-else-should-i-know-about-coded-ui-tests"></a>Que dois-je savoir d'autre sur les tests codés de l'interface utilisateur ?  
  Pour en savoir plus sur les avantages de l’utilisation de tests codés de l’interface utilisateur, consultez [Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md) et [Testing for Continuous Delivery with Visual Studio 2012 – Chapter 5 Automating System Tests (Test de la livraison continue avec Visual Studio 2012 - Chapitre 5 Automatisation des tests système)](http://go.microsoft.com/fwlink/?LinkID=255196).  
   
  **Notes**  
   
--   ![Prérequis](../test/media/prereq.png "Prereq") Les tests codés de l’interface utilisateur pour les applications SharePoint ne sont pris en charge qu’avec SharePoint 2010.  
+- ![Prérequis](../test/media/prereq.png "Prereq") Les tests codés de l’interface utilisateur pour les applications SharePoint ne sont pris en charge qu’avec SharePoint 2010.  
   
--   ![Prérequis](../test/media/prereq.png "Prereq") Les contrôles pour Visio et PowerPoint 2010 ne sont pas pris en charge dans votre application SharePoint.  
+- ![Prérequis](../test/media/prereq.png "Prereq") Les contrôles pour Visio et PowerPoint 2010 ne sont pas pris en charge dans votre application SharePoint.  
   
 ## <a name="creating-a-coded-ui-test-for-your-sharepoint-app"></a>Créer un test d'interface utilisateur codé pour votre application SharePoint  
  La[création de tests codés de l'interface utilisateur](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate) pour vos applications SharePoint 2010 est identique à la création de tests pour d'autres types d'applications. L'enregistrement et la lecture sont pris en charge pour tous les contrôles sur l'interface de modification Web. L'interface de sélection des catégories et des composants WebPart est constituée de contrôles Web standard.  
@@ -53,7 +53,7 @@ L'ajout de tests codés de l'interface utilisateur dans une application SharePoi
 > [!WARNING]
 >  La saisie de texte dans une cellule Excel, suivie d'une pression sur une touche de direction, ne fonctionne pas correctement. Utilisez la souris pour sélectionner des cellules.  
   
- Si vous enregistrez des actions dans une cellule vide, vous devez modifier le code en double cliquant sur la cellule puis en effectuant une opération de définition de texte. Cela est nécessaire car un clic sur la cellule, suivi d'une action du clavier, active `textarea` dans la cellule. L'enregistrement simple de `setvalue` dans la cellule vide recherche `editbox` qui n'est pas présent jusqu'à ce qu'un clic soit effectué sur la cellule. Par exemple :  
+ Si vous enregistrez des actions dans une cellule vide, vous devez modifier le code en double cliquant sur la cellule puis en effectuant une opération de définition de texte. Cela est nécessaire car un clic sur la cellule, suivi d'une action du clavier, active `textarea` dans la cellule. L'enregistrement simple de `setvalue` dans la cellule vide recherche `editbox` qui n'est pas présent jusqu'à ce qu'un clic soit effectué sur la cellule. Exemple :  
   
 ```csharp  
 Mouse.DoubliClick(uiItemCell,new Point(31,14));  
@@ -62,14 +62,14 @@ uiGridKeyboardInputEdit.Text=value;
   
  Si vous enregistrez des actions dans une cellule qui n’est pas vide, l’enregistrement est un peu plus compliqué, car le temps que vous ajoutiez du texte dans une cellule, un nouveau contrôle \<div> est ajouté en tant qu’enfant de la cellule. Le nouveau contrôle \<div> contient le texte que vous venez d’entrer. L’enregistreur doit enregistrer les actions sur le nouveau contrôle \<div>, mais il ne le peut pas, car le nouveau contrôle \<div> n’existe pas tant que le test n’est pas activé. Vous devez apporter manuellement les modifications de code suivantes pour résoudre ce problème.  
   
-1.  Accédez à l'initialisation des cellules et définissez `RowIndex` et `ColumnIndex` comme des propriétés principales :  
+1. Accédez à l'initialisation des cellules et définissez `RowIndex` et `ColumnIndex` comme des propriétés principales :  
   
     ```csharp  
     this.mUIItemCell.SearchProperties[HtmlCell.PropertyNames. RowIndex] = "3";   
     this.mUIItemCell.SearchProperties[HtmlCell.PropertyNames. ColumnIndex] = "3";  
     ```  
   
-2.  Recherchez l'enfant `HtmlDiv` de la cellule :  
+2. Recherchez l'enfant `HtmlDiv` de la cellule :  
   
     ```csharp  
     private UITestControl getControlToDoubleClick(HtmlCell cell)   
@@ -85,13 +85,13 @@ uiGridKeyboardInputEdit.Text=value;
   
     ```  
   
-3.  Ajoutez du code pour une action de double-clic de la souris sur `HtmlDiv`:  
+3. Ajoutez du code pour une action de double-clic de la souris sur `HtmlDiv`:  
   
     ```csharp  
     Mouse.DoubleClick(uIItemPane, new Point(31, 14)); )  
     ```  
   
-4.  Ajoutez du code pour définir le texte sur `TextArea`:  
+4. Ajoutez du code pour définir le texte sur `TextArea`:  
   
     ```csharp  
     uIGridKeyboardInputEdit.Text = value; }  
@@ -114,15 +114,15 @@ uiGridKeyboardInputEdit.Text=value;
   
 #### <a name="testing-silverlight-web-parts"></a>Test des composants WebPart Silverlight  
   
-1.  Démarrez Fiddler.  
+1. Démarrez Fiddler.  
   
-2.  Effacez le cache du navigateur. Cela est nécessaire car le fichier XAP, qui contient la DLL du programme d'assistance d'UI Automation de Silverlight, est généralement mis en cache. Nous devons nous assurer que le fichier XAP modifié est utilisé. Pour cela, nous désactivons le cache du navigateur.  
+2. Effacez le cache du navigateur. Cela est nécessaire car le fichier XAP, qui contient la DLL du programme d'assistance d'UI Automation de Silverlight, est généralement mis en cache. Nous devons nous assurer que le fichier XAP modifié est utilisé. Pour cela, nous désactivons le cache du navigateur.  
   
-3.  Ouvrez la page Web.  
+3. Ouvrez la page Web.  
   
-4.  Démarrez l'enregistreur et générez le code comme vous le feriez pour un test normal de l'application Web.  
+4. Démarrez l'enregistreur et générez le code comme vous le feriez pour un test normal de l'application Web.  
   
-5.  Vous devez confirmer que le code généré fait référence au fichier Microsoft.VisualStudio.TestTools.UITest.Extension.Silverlight.dll.  
+5. Vous devez confirmer que le code généré fait référence au fichier Microsoft.VisualStudio.TestTools.UITest.Extension.Silverlight.dll.  
   
      Pour plus d’informations, consultez [UI Testing SharePoint 2010 with Visual Studio 2012](http://blogs.msdn.com/b/visualstudioalm/archive/2012/11/01/ui-testing-sharepoint-2010-with-visual-studio-2012.aspx)  
   

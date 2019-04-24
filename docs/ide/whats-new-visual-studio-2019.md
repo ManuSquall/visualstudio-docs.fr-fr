@@ -2,7 +2,7 @@
 title: Nouveautés de Visual Studio 2019
 titleSuffix: ''
 description: Découvrez les nouvelles fonctionnalités de Visual Studio 2019.
-ms.date: 04/03/2019
+ms.date: 04/04/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: b38f75f1172e96e3dc2576a199949fdbb0c32f68
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.openlocfilehash: 399207f81ec1f25e6a5169235820989c1b2c34e4
+ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58866742"
+ms.lasthandoff: 04/10/2019
+ms.locfileid: "59477539"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Nouveautés de Visual Studio 2019
 
@@ -34,10 +34,10 @@ Avec Visual Studio 2019, vous allez bénéficier des meilleurs outils et servic
 Voici un récapitulatif général des nouveautés :
 
 * **[Développement](#develop)**  : Restez concentré et productif en profitant de performances améliorées, d’un nettoyage instantané du code et de meilleurs résultats de recherche.
-* **[Collaboration](#collaborate)**  : Collaborez naturellement via un workflow « cloud-first », une édition et un débogage en temps réel, et des revues de code directement dans Visual Studio.
+* **[Collaboration](#collaborate)**  : Collaborez naturellement via un workflow « Git-first », une édition et un débogage en temps réel, et des revues de code directement dans Visual Studio.
 * **[Déboguage](#debug)**  : Mettez en évidence des valeurs spécifiques pour y accéder, optimisez l’utilisation de la mémoire et prenez des captures instantanées automatiques de l’exécution de votre application.
 
-Pour une liste complète de tout ce qui est nouveau dans cette version, consultez les [notes de publication](/visualstudio/releases/2019/release-notes/). 
+Pour une liste complète de tout ce qui est nouveau dans cette version, consultez les [notes de publication](/visualstudio/releases/2019/release-notes/).
 
 ## <a name="develop"></a>Développer
 
@@ -55,11 +55,11 @@ La nouvelle logique de recherche approximative permet de trouver tout ce dont vo
 
 ### <a name="refactorings"></a>Refactorisations
 
-De nouvelles refactorisations C# simplifient l’organisation de votre code. Il vous suffit d’appeler les refactorisations en appuyant sur **Ctrl +.** et en sélectionnant l’action que vous souhaitez effectuer. 
+Il existe un grand nombre de nouvelles refactorisations extrêmement utiles dans C# qui vous permettent d’organiser votre code plus facilement. Elles apparaissent comme suggestions dans l’ampoule et comprennent des actions, telles que le déplacement des membres vers une classe d’interface ou de base, l’ajustement des espaces de noms pour correspondre à la structure des dossiers, la conversion de boucles foreach en requêtes Linq et plus encore.
 
    ![Animation de l’expérience de refactorisations dans Visual Studio 2019](media/vs-2019/refactorings.gif)
 
-Nous avons ajouté un grand nombre de nouvelles refactorisations, notamment celle qui vous permet de wrapper les paramètres de méthode.
+Il vous suffit d’appeler les refactorisations en appuyant sur **Ctrl +.** et en sélectionnant l’action que vous souhaitez effectuer.
 
 ### <a name="intellicode"></a>IntelliCode
 
@@ -78,7 +78,7 @@ Au départ, seul C# était pris en charge dans la préversion de l’extension I
 
 Et si vous utilisez C#, nous avons également ajouté la possibilité d’entraîner un modèle personnalisé sur votre propre code.
 
-Pour plus d’informations sur IntelliCode, consultez le billet de blog [Code more, scroll less with Visual Studio IntelliCode](https://devblogs.microsoft.com/visualstudio/code-more-scroll-less-with-visual-studio-intellicode/). 
+Pour plus d’informations sur IntelliCode, consultez le billet de blog [Code more, scroll less with Visual Studio IntelliCode](https://devblogs.microsoft.com/visualstudio/code-more-scroll-less-with-visual-studio-intellicode/).
 
 ### <a name="code-cleanup"></a>Nettoyage du code
 
@@ -142,7 +142,7 @@ Nous avons pris les points d’arrêt de données C++, jusqu’ici exclusifs, et
 
    ![Animation qui montre les points d’arrêt de données de débogage dans Visual Studio 2019](media/vs-2019/debug-data-breakpoints.gif)
 
-Donc, si vous codez en C++ ou .NET Core, les points d’arrêt de données peuvent être une bonne alternative aux points d’arrêt ordinaires. Les points d’arrêt de données conviennent aussi très bien aux scénarios où vous devez trouver où un objet global est modifié, ajouté ou supprimé dans une liste. 
+Donc, si vous codez en C++ ou .NET Core, les points d’arrêt de données peuvent être une bonne alternative aux points d’arrêt ordinaires. Les points d’arrêt de données conviennent aussi très bien aux scénarios où vous devez trouver où un objet global est modifié, ajouté ou supprimé dans une liste.
 
 Et, si vous êtes développeur C++ qui développe de grandes applications, Visual Studio 2019 crée des symboles hors processus, ce qui vous permet de déboguer ces applications sans rencontrer de problèmes liés à la mémoire.
 
@@ -166,7 +166,7 @@ Prenez une capture instantanée de l’exécution de votre application dans le c
 
 Nous avons ajouté la prise en charge du ciblage des applications ASP.NET (Core et desktop) qui s’exécutent sur une machine virtuelle Azure. Nous avons aussi ajouté la prise en charge des applications qui s’exécutent dans Azure Kubernetes Service. Snapshot Debugger peut vous aider à résoudre beaucoup plus vite les problèmes rencontrés dans les environnements de production.
 
-Pour plus d’informations, consultez la page [Déboguer des applications Azure ASP.NET en direct avec le Débogueur de capture instantanée](../debugger/debug-live-azure-applications.md).
+Pour plus d’informations, voir la page [Déboguer des applications Azure ASP.NET en production avec le Débogueur de capture instantanée](../debugger/debug-live-azure-applications.md) et le billet de blog [Présentation du débogage avec voyage dans le temps pour Visual Studio Enterprise 2019](https://devblogs.microsoft.com/visualstudio/introducing-time-travel-debugging-for-visual-studio-enterprise-2019/).
 
 ## <a name="give-us-feedback"></a>Envoyer vos commentaires
 

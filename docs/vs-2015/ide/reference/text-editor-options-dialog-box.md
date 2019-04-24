@@ -21,30 +21,29 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4e81a2168516974fef40dad5cf46b3aff77fc54a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 82c314870acfa3cbb836a7570d62a6f0c5ac8884
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788097"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649067"
 ---
 # <a name="text-editor-options-dialog-box"></a>Éditeur de texte, boîte de dialogue Options
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Les options de l’éditeur définies dans la boîte de dialogue **Options** permettent de personnaliser l’apparence et le comportement de l’éditeur.  
   
 ## <a name="in-this-section"></a>Dans cette section  
- [Guide pratique pour modifier les polices et les couleurs utilisées dans l’éditeur](../../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)  
+ [Guide pratique pour changer les polices et les couleurs dans l’éditeur](../../ide/reference/how-to-change-fonts-and-colors-in-the-editor.md)  
  Explique comment modifier les polices et les couleurs de l’éditeur.  
   
  [Guide pratique pour gérer le retour automatique à la ligne dans l’éditeur](../../ide/reference/how-to-manage-word-wrap-in-the-editor.md)  
  Décrit les options de retour automatique à la ligne.  
   
- [Guide pratique pour afficher les numéros de ligne dans l’éditeur](../../ide/reference/how-to-display-line-numbers-in-the-editor.md)  
+ [Guide pratique pour afficher les numéros de ligne dans l’Éditeur](../../ide/reference/how-to-display-line-numbers-in-the-editor.md)  
  Explique comment activer les numéros de ligne.  
   
- [Guide pratique pour afficher des URL en tant que liens dans l’éditeur](../../ide/reference/how-to-display-urls-as-links-in-the-editor.md)  
+ [Guide pratique pour afficher des URL en tant que liens dans l’Éditeur](../../ide/reference/how-to-display-urls-as-links-in-the-editor.md)  
  Explique comment mettre en forme les URL afin qu’elles s’affichent sous forme de liens.  
   
  [Définition d’options d’éditeur spécifiques du langage](../../ide/reference/setting-language-specific-editor-options.md)  

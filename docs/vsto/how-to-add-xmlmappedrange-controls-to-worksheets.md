@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6f055ba84c4e6a6b48c13f3eef9a433eb4c5b3e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cef35cd1aa19ad27e7c47227b726a44756b0fae8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605844"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085714"
 ---
 # <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>Procédure : Ajouter des contrôles XMLMappedRange aux feuilles de calcul
   Lorsque vous mappez un élément XML à une cellule dans Microsoft Office Excel, Visual Studio ajoute automatiquement un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> contrôle à votre feuille de calcul.
@@ -30,30 +30,30 @@ ms.locfileid: "56605844"
 
 ## <a name="to-add-an-xmlmappedrange-control-to-a-worksheet"></a>Pour ajouter un contrôle XMLMappedRange à une feuille de calcul
 
-1.  Ouvrez le classeur Excel dans le concepteur Visual Studio.
+1. Ouvrez le classeur Excel dans le concepteur Visual Studio.
 
-2.  Ouvrez la feuille de calcul où vous souhaitez ajouter le contrôle.
+2. Ouvrez la feuille de calcul où vous souhaitez ajouter le contrôle.
 
-3.  Sur le **développeur** , cliquez sur **Source**.
+3. Sur le **développeur** , cliquez sur **Source**.
 
     > [!NOTE]
     >  Si le **développeur** onglet n’est pas visible sur le ruban, vous devez l’activer. Pour plus d'informations, voir [Procédure : Afficher l’onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
      Le **Source XML** volet s’affiche.
 
-4.  Dans le **Source XML** volet de tâches, cliquez sur **mappes XML**.
+4. Dans le **Source XML** volet de tâches, cliquez sur **mappes XML**.
 
-5.  Dans le **mappes XML** boîte de dialogue, cliquez sur **ajouter**.
+5. Dans le **mappes XML** boîte de dialogue, cliquez sur **ajouter**.
 
      Le **Source XML** boîte de dialogue s’affiche.
 
-6.  Sélectionnez un schéma XML à partir de la **Source XML** boîte de dialogue et cliquez sur **Open**.
+6. Sélectionnez un schéma XML à partir de la **Source XML** boîte de dialogue et cliquez sur **Open**.
 
      Le schéma est ajouté à la **mappes XML** boîte de dialogue.
 
-7.  Dans le **mappes XML** boîte de dialogue, cliquez sur **OK**.
+7. Dans le **mappes XML** boîte de dialogue, cliquez sur **OK**.
 
-8.  Faites glisser un élément à partir de la **Source XML** volet des tâches vers une cellule sur la feuille de calcul.
+8. Faites glisser un élément à partir de la **Source XML** volet des tâches vers une cellule sur la feuille de calcul.
 
      Un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> est créé et ajouté au projet.
 

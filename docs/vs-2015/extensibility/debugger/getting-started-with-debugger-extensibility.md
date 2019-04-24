@@ -12,12 +12,12 @@ ms.assetid: d6ce6f43-1409-4bf7-93cd-f3464ca23504
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 12701abf66d49a3b462502700b3b57933369b6e8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d1c616c7cf8ed90ec3d76046892167b9b742a1b0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947714"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085673"
 ---
 # <a name="getting-started-with-debugger-extensibility"></a>Bien démarrer avec l’extensibilité du débogueur
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ Le [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] fournit les informations do
   
  Utiliser au mieux le [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], vous devez être familiarisé avec les éléments suivants :  
   
--   Le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] l’environnement de développement intégré (IDE)  
+- Le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] l’environnement de développement intégré (IDE)  
   
--   Le langage de programmation C++  
+- Le langage de programmation C++  
   
--   ATL COM  
+- ATL COM  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Feuille de route pour l’extension du débogueur](../../extensibility/debugger/roadmap-for-extending-the-debugger.md)  

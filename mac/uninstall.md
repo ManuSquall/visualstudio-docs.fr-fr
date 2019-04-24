@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: 2a0b1e14dd822c159484dcaed052a13a35d43939
-ms.sourcegitcommit: 59c48e1e42b48ad25a4e198af670faa4d8dae370
+ms.openlocfilehash: ef208a9f74c1c8ee1ccb6df2c1e54917cd354be3
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/10/2019
-ms.locfileid: "54204331"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856445"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Désinstallation de Visual Studio pour Mac
 
@@ -25,7 +25,7 @@ Si Xamarin Studio était installé sur votre machine, vous devez également suiv
 
 Deux scripts permettent de désinstaller Visual Studio pour Mac et tous les composants de votre machine :
 
-- [Script Visual Studio et Xamarin](#visual-studio-for-mac-and-xamarin-script)
+- [Script Xamarin et Visual Studio](#visual-studio-for-mac-and-xamarin-script)
 - [Script .NET Core](#net-core-script)
 
 Les sections suivantes fournissent des informations sur le téléchargement et l’utilisation des scripts.
@@ -36,9 +36,9 @@ Vous pouvez désinstaller Visual Studio et les composants Xamarin en une seule f
 
 Ce script de désinstallation contient la plupart des commandes que vous pouvez trouver dans l’article. Le script omet trois éléments centraux en raison de possibles dépendances externes. Pour éviter cela, accédez à la section correspondante ci-dessous et supprimez-les manuellement :
 
-- **[Désinstaller Mono](#uninstall-mono-sdk-mdk)**
-- **[Désinstaller Android AVD](#uninstall-android-avd)**
-- **[Désinstaller Android SDK et Java SDK](#uninstall-android-sdk-and-java-sdk)**
+- **[Désinstallation de Mono](#uninstall-mono-sdk-mdk)**
+- **[Désinstallation d’Android AVD](#uninstall-android-avd)**
+- **[Désinstallation du kit Android SDK et du SDK Java](#uninstall-android-sdk-and-java-sdk)**
 
 Pour exécuter le script, effectuez les étapes suivantes :
 
@@ -96,6 +96,7 @@ rm -rf ~/Library/VisualStudio
 rm -rf ~/Library/Preferences/Xamarin/
 rm -rf ~/Library/Application\ Support/VisualStudio
 rm -rf ~/Library/Application\ Support/VisualStudio/7.0/LocalInstall/Addins/
+rm -rf ~/Library/Application\ Support/VisualStudio/8.0/LocalInstall/Addins/
 ```
 
 Si vous souhaitez supprimer également le répertoire suivant, incluant divers fichiers et dossiers Xamarin, sachez avant tout qu’il contient les clés de signature Android. Pour plus d’informations, voir la section **[Désinstaller Android SDK et Java SDK](#uninstall-android-sdk-and-java-sdk)** :
@@ -194,8 +195,8 @@ sudo /Library/Frameworks/Xamarin.Interactive.framework/Versions/Current/uninstal
 
 Pour les versions antérieures, vous devez supprimer manuellement les artefacts suivants :
 
-* Supprimez l’application Workbooks dans`"/Applications/Xamarin Workbooks.app"`
-* Supprimez l’application Inspector dans`"Applications/Xamarin Inspector.app"`
+* Supprimez l’application Workbooks dans `"/Applications/Xamarin Workbooks.app"`
+* Supprimez l’application Inspector dans `"Applications/Xamarin Inspector.app"`
 * Supprimez les compléments : `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Interactive"` et `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Inspector"`
 * Supprimez Inspector et les fichiers de prise en charge ici : `/Library/Frameworks/Xamarin.Interactive.framework` et `/Library/Frameworks/Xamarin.Inspector.framework`
 
@@ -216,6 +217,22 @@ rm -rf ~/Library/Logs/XamarinInstaller/
 rm -rf ~/Library/Logs/VisualStudioInstaller/
 rm -rf ~/Library/Preferences/Xamarin/
 rm -rf "~/Library/Preferences/Visual Studio/"
+```
+
+## <a name="uninstall-visual-studio-2019-for-mac-preview"></a>Désinstaller la préversion de Visual Studio 2019 pour Mac
+
+La préversion de Visual Studio 2019 pour Mac a été lancée en tant que préversion indépendante, ce qui vous permet de continuer à travailler avec votre installation de Visual Studio 2017 pour Mac côte à côte.
+
+Maintenant que Visual Studio 2019 pour Mac a été publié, vous pouvez supprimer sans risque l’application Visual Studio 2019 pour Mac (préversion).
+
+Pour désinstaller le bundle d’applications en préversion, sélectionnez **Visual Studio (préversion)** à partir de votre dossier **Applications**, puis cliquez sur **Placer dans la corbeille**, comme illustré dans l’image suivante :
+
+![sélection de l’option « Placer dans la corbeille » dans le Finder](media/uninstall-remove-vspreview.png)
+
+Vous pouvez également supprimer le fichier plist de la préversion avec la commande suivante :
+
+```bash
+rm -rf ~/Library/Preferences/com.microsoft.visual-studio-preview.plist
 ```
 
 ## <a name="see-also"></a>Voir aussi

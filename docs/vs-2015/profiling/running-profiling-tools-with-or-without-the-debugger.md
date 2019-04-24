@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 910c2f6e71820c079eb92fdc7adf61d9e67d0001
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 806eeba9b3dfee8dc45c90f0a6d2f99ed0772ec7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783388"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054064"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Exécution des outils de profilage avec ou sans le débogueur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,19 +26,19 @@ Visual Studio offre désormais une sélection d’outils d’analyse des perform
   
  Voici quelques questions qui pourront vous aider à déterminer le type d'outil le mieux adapté à vos besoins :  
   
-1.  Le problème a-t-il été détecté lors du développement de l’application ou dans une version finale ?  
+1. Le problème a-t-il été détecté lors du développement de l’application ou dans une version finale ?  
   
      Si le problème est apparu au cours du développement, il est probablement inutile d’exécuter les outils d’analyse des performances dans une version Release. Si le problème a été décelé dans une version Release, reproduisez le problème avec une configuration Release, puis déterminez si le débogueur peut oui ou non vous aider à effectuer un examen plus approfondi.  
   
-2.  Le problème est-il causé par une utilisation intensive du processeur ?  
+2. Le problème est-il causé par une utilisation intensive du processeur ?  
   
      De nombreux problèmes résultent de mauvaises performances externes, comme celles liées aux opérations d'E/S sur les fichiers ou à la réactivité du réseau. Ainsi, que vous exécutiez les outils d'analyse des performances avec ou sans le débogueur, vous ne devriez pas voir beaucoup de différence. Si votre problème est dû à des appels nécessitant une utilisation importante du processeur, la différence entre les configurations Release et Debug peut être considérable. Dans ce cas, vous devrez probablement vérifier si le problème se manifeste dans la version Release avant d’utiliser les outils intégrés au débogueur.  
   
-3.  Avez-vous besoin de mesurer les performances avec précision ou est-ce qu'une valeur approximative est acceptable ?  
+3. Avez-vous besoin de mesurer les performances avec précision ou est-ce qu'une valeur approximative est acceptable ?  
   
      Les versions Debug ne proposent pas certaines optimisations offertes par les versions Release, comme l’incorporation des constantes et des appels de fonction, le nettoyage des chemins de code inutilisés ou encore le stockage des variables sans que celles-ci ne puissent être utilisées par le débogueur. Le débogueur lui-même affecte les performances, car il effectue certaines opérations qui sont nécessaires pour le débogage (notamment l'interception des événements d'exception et de chargement de module). Les valeurs des performances dans les outils intégrés au débogueur ont une marge de précision de l'ordre du dixième de milliseconde. Les valeurs des performances pour les configurations Release avec les outils non intégrés au débogueur sont beaucoup plus précises.  
   
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Collecter les données de profilage pendant le débogage  
+## <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Collecter les données de profilage pendant le débogage  
  La section suivante porte sur le débogage local. Vous pouvez trouver des informations à propos du débogage sur un appareil, ou débogage à distance, dans les sections suivantes.  
   
 1. Ouvrez le projet que vous voulez déboguer, puis cliquez sur **Déboguer/Démarrer le débogage** (ou **Démarrer** dans la barre d’outils ou **F5**).  
@@ -74,7 +74,7 @@ Visual Studio offre désormais une sélection d’outils d’analyse des perform
   
 1. Ouvrez le projet dans Visual Studio.  
   
-2. Dans le menu **Déboguer**, choisissez **Profileur de performances...** (Touche de raccourci : Alt+F2).  
+2. Dans le menu **Déboguer**, choisissez **Profileur de performances...** (Touche de raccourci : ALT + F2).  
   
 3. Dans la page de lancement des outils de diagnostic, choisissez un ou plusieurs outils à exécuter dans la session. Seuls les outils applicables au type de projet, au système d'exploitation et au langage de programmation sont affichés. Lorsque vous choisissez un outil de diagnostic, les sélections d'outils qui ne peuvent pas être exécutées dans la même session de diagnostic sont désactivées. Voici comment se présenteraient vos choix pour une application universelle Windows C# :  
   
@@ -125,17 +125,17 @@ Visual Studio offre désormais une sélection d’outils d’analyse des perform
  L’exécution d’une session de diagnostic sur un PC distant ou sur une tablette requiert que les outils de contrôle à distance Visual Studio soient installés et en cours d’exécution sur la cible distante. Pour les applications pour ordinateur, consultez [Débogage à distance](../debugger/remote-debugging.md).  Pour les applications universelles Windows, consultez [Exécuter des applications du Windows Store sur un ordinateur distant](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
 ## <a name="blog-posts-and-msdn-articles-from-the-diagnostics-development-team"></a>Billets de blog et articles MSDN de l’équipe de développement Diagnostics  
- [Magazine MSDN : Analyser les performances pendant le débogage dans Visual Studio 2015](https://msdn.microsoft.com/magazine/dn973013.aspx)  
+ [MSDN Magazine : Analyse des performances lors d’un débogage dans Visual Studio 2015](https://msdn.microsoft.com/magazine/dn973013.aspx)  
   
- [Magazine MSDN : IntelliTrace permet de diagnostiquer les problèmes plus rapidement](https://msdn.microsoft.com/magazine/dn973014.aspx)  
+ [MSDN Magazine : Utilisation d’IntelliTrace pour un diagnostic plus rapide des problèmes](https://msdn.microsoft.com/magazine/dn973014.aspx)  
   
- [Billet de blog : Diagnosing Event Handler Leaks with the Memory Usage Tool in Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015.aspx)  
+ [Billet de blog : Diagnostic des problèmes de fuite de mémoire avec l’outil Utilisation de la mémoire de Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015.aspx)  
   
  [Vidéo : Historical Debugging with IntelliTrace in Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)  
   
- [Vidéo : Debugging Performance Issues Using Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731)  
+ [Vidéo : Debugging Performance Issues Using Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731)  
   
- [Conseils sur les performances : Performance Information at-a-glance while Debugging with Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)  
+ [PerfTips : Informations de performances en un coup d’œil lors du débogage avec Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)  
   
  [Diagnostic Tools debugger window in Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
   

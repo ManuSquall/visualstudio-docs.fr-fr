@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 93165a1534ed01dca057fc13059858c4c3e7a81c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0a440fbd87e85a72b2807ea09c7af61adf9f8af7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953016"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108358"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Déploiement d'un processeur de directive personnalisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,27 +48,27 @@ Pour utiliser un processeur de directive personnalisé dans [!INCLUDE[vsprvs](..
   
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>Pour développer un processeur de directive personnalisé dans un projet VSIX  
   
-1.  Créez un projet VSIX dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+1. Créez un projet VSIX dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-    -   Dans le **nouveau projet** boîte de dialogue, développez **Visual Basic** ou **Visual C#**, puis développez **extensibilité**. Cliquez sur **projet VSIX**.  
+    - Dans le **nouveau projet** boîte de dialogue, développez **Visual Basic** ou **Visual C#**, puis développez **extensibilité**. Cliquez sur **projet VSIX**.  
   
-2.  Dans **source.extension.vsixmanifest**, définissez le type de contenu et les éditions prises en charge.  
+2. Dans **source.extension.vsixmanifest**, définissez le type de contenu et les éditions prises en charge.  
   
-    1.  Dans l’extension VSIX, l’éditeur de manifeste sur le **actifs** , choisir **New** et définissez les propriétés du nouvel élément :  
+    1. Dans l’extension VSIX, l’éditeur de manifeste sur le **actifs** , choisir **New** et définissez les propriétés du nouvel élément :  
   
          **Type de contenu** = **VSPackage**  
   
          **Projet source** = \<*le projet actuel*>  
   
-    2.  Cliquez sur **éditions sélectionnées** et vérifiez les types d’installation sur lequel vous souhaitez que le processeur de directive pour être utilisable.  
+    2. Cliquez sur **éditions sélectionnées** et vérifiez les types d’installation sur lequel vous souhaitez que le processeur de directive pour être utilisable.  
   
-3.  Ajoutez un fichier .pkgdef et définissez ses propriétés de sorte qu'il soit inclus dans l'extension VSIX.  
+3. Ajoutez un fichier .pkgdef et définissez ses propriétés de sorte qu'il soit inclus dans l'extension VSIX.  
   
-    1.  Créez un fichier texte et nommez-le \< *assemblyName*> .pkgdef.  
+    1. Créez un fichier texte et nommez-le \< *assemblyName*> .pkgdef.  
   
          \<*assemblyName*> est généralement le même que le nom du projet.  
   
-    2.  Sélectionnez-le dans l'Explorateur de solutions et définissez ses propriétés comme suit :  
+    2. Sélectionnez-le dans l'Explorateur de solutions et définissez ses propriétés comme suit :  
   
          **Action de génération** = **contenu**  
   
@@ -76,9 +76,9 @@ Pour utiliser un processeur de directive personnalisé dans [!INCLUDE[vsprvs](..
   
          **Inclure dans VSIX** = **True**  
   
-    3.  Définissez le nom de l'extension VSIX et assurez-vous que l'ID est unique.  
+    3. Définissez le nom de l'extension VSIX et assurez-vous que l'ID est unique.  
   
-4.  Ajoutez le texte suivant au fichier .pkgdef.  
+4. Ajoutez le texte suivant au fichier .pkgdef.  
   
     ```  
     [$RootKey$\TextTemplating]  
@@ -91,46 +91,46 @@ Pour utiliser un processeur de directive personnalisé dans [!INCLUDE[vsprvs](..
   
      Remplacez les noms suivants par vos propres noms : `CustomDirectiveProcessorName`, `NamespaceName`, `ClassName`, `AssemblyName`.  
   
-5.  Ajoutez les références suivantes au projet :  
+5. Ajoutez les références suivantes au projet :  
   
-    -   **Microsoft.VisualStudio.TextTemplating.\*.0**  
+    - **Microsoft.VisualStudio.TextTemplating.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**  
+    - **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.VSHost.\*.0**  
+    - **Microsoft.VisualStudio.TextTemplating.VSHost.\*.0**  
   
-6.  Ajoutez la classe de votre processeur de directive personnalisé au projet.  
+6. Ajoutez la classe de votre processeur de directive personnalisé au projet.  
   
      Il s'agit d'une classe publique qui doit implémenter <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> ou <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>.  
   
 #### <a name="to-install-the-custom-directive-processor"></a>Pour installer le processeur de directive Personnalisé  
   
-1.  Dans l’Explorateur Windows (Explorateur de fichiers dans Windows 8), ouvrez le répertoire de build (en général, bin\Debug ou bin\Release).  
+1. Dans l’Explorateur Windows (Explorateur de fichiers dans Windows 8), ouvrez le répertoire de build (en général, bin\Debug ou bin\Release).  
   
-2.  Si vous voulez installer le processeur de directive sur un autre ordinateur, copiez sur ce dernier le fichier .vsix.  
+2. Si vous voulez installer le processeur de directive sur un autre ordinateur, copiez sur ce dernier le fichier .vsix.  
   
-3.  Double-cliquez sur le fichier .vsix. Le programme d'installation des extensions [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] apparaît.  
+3. Double-cliquez sur le fichier .vsix. Le programme d'installation des extensions [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] apparaît.  
   
-4.  Redémarrez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Vous pourrez désormais exécuter des modèles de texte qui contiennent des directives faisant référence au processeur de directive personnalisé. Chaque directive se présente comme suit :  
+4. Redémarrez [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Vous pourrez désormais exécuter des modèles de texte qui contiennent des directives faisant référence au processeur de directive personnalisé. Chaque directive se présente comme suit :  
   
      `<#@ CustomDirective Processor="CustomDirectiveProcessorName" parameter1="value1" … #>`  
   
 #### <a name="to-uninstall-or-temporarily-disable-the-custom-directive-processor"></a>Pour désinstaller ou temporairement désactiver le processeur de directive personnalisé  
   
-1.  Dans le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **outils** menu, cliquez sur **Gestionnaire d’extensions**.  
+1. Dans le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **outils** menu, cliquez sur **Gestionnaire d’extensions**.  
   
-2.  Sélectionnez l’extension VSIX qui contient le processeur de directive, puis cliquez sur **désinstallation** ou **désactiver**.  
+2. Sélectionnez l’extension VSIX qui contient le processeur de directive, puis cliquez sur **désinstallation** ou **désactiver**.  
   
 ### <a name="troubleshooting-a-directive-processor-in-a-vsix"></a>Dépannage d'un processeur de directive dans une extension VSIX  
  Si le processeur de directive ne fonctionne pas, les suggestions suivantes peuvent vous aider :  
   
--   Le nom de processeur que vous spécifiez dans la directive personnalisée doit correspondre à la valeur `CustomDirectiveProcessorName` que vous avez indiquée dans le fichier .pkgdef.  
+- Le nom de processeur que vous spécifiez dans la directive personnalisée doit correspondre à la valeur `CustomDirectiveProcessorName` que vous avez indiquée dans le fichier .pkgdef.  
   
--   Votre méthode `IsDirectiveSupported` doit retourner la valeur `true` lorsque le nom de votre `CustomDirective` lui est passé.  
+- Votre méthode `IsDirectiveSupported` doit retourner la valeur `true` lorsque le nom de votre `CustomDirective` lui est passé.  
   
--   Si vous ne voyez pas l’extension dans le Gestionnaire d’extensions, mais le système vous autorisera pas à installer, supprimez-la de **%localappdata%\Microsoft\VisualStudio\\\*. 0\Extensions\\** .  
+- Si vous ne voyez pas l’extension dans le Gestionnaire d’extensions, mais le système vous autorisera pas à installer, supprimez-la de **%localappdata%\Microsoft\VisualStudio\\\*. 0\Extensions\\** .  
   
--   Ouvrez le fichier .vsix et inspectez son contenu. Pour l'ouvrir, remplacez l'extension de nom du fichier par .zip. Vérifiez qu'il contient les fichiers .dll, .pkgdef et extension.vsixmanifest. Le fichier extension.vsixmanifest doit comporter la liste appropriée dans le nœud SupportedProducts, ainsi qu'un nœud VsPackage sous le nœud de contenu :  
+- Ouvrez le fichier .vsix et inspectez son contenu. Pour l'ouvrir, remplacez l'extension de nom du fichier par .zip. Vérifiez qu'il contient les fichiers .dll, .pkgdef et extension.vsixmanifest. Le fichier extension.vsixmanifest doit comporter la liste appropriée dans le nœud SupportedProducts, ainsi qu'un nœud VsPackage sous le nœud de contenu :  
   
      `<Content>`  
   
@@ -174,15 +174,15 @@ Pour utiliser un processeur de directive personnalisé dans [!INCLUDE[vsprvs](..
   
 3. Ajoutez une clé de Registre ayant le même nom que la classe du processeur de directive.  
   
-   -   Dans l’arborescence du Registre, cliquez sur le **DirectiveProcessors** nœud, pointez sur **New**, puis cliquez sur **clé**.  
+   - Dans l’arborescence du Registre, cliquez sur le **DirectiveProcessors** nœud, pointez sur **New**, puis cliquez sur **clé**.  
   
 4. Dans le nouveau nœud, ajoutez des valeurs de chaîne pour Class, CodeBase ou Assembly, en fonction des tableaux suivants.  
   
-   1.  Cliquez sur le nœud que vous avez créé, pointez sur **New**, puis cliquez sur **valeur de chaîne**.  
+   1. Cliquez sur le nœud que vous avez créé, pointez sur **New**, puis cliquez sur **valeur de chaîne**.  
   
-   2.  Modifiez le nom de la valeur.  
+   2. Modifiez le nom de la valeur.  
   
-   3.  Double-cliquez sur le nom et modifiez les données.  
+   3. Double-cliquez sur le nom et modifiez les données.  
   
    Si le processeur de directive personnalisé ne se trouve pas dans le GAC, les sous-clés de Registre doivent se présenter comme dans le tableau suivant :  
   

@@ -16,12 +16,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: be6ebe9e2031b24442f368b626d53b15a043023c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b6d6a49dd9b90172686a90d92e6b630dd70b5cf0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938409"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048885"
 ---
 # <a name="how-to-flag-and-unflag-threads"></a>Procédure : Ajouter et supprimer les indicateurs des threads
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,33 +32,33 @@ Vous pouvez signaler un thread auquel vous souhaitez accorder une attention part
   
 ### <a name="to-flag-or-unflag-a-thread-by-using-the-threads-window"></a>Pour ajouter ou supprimer l'indicateur d'un thread à l'aide de la fenêtre Threads  
   
--   Dans le **Threads** fenêtre, recherchez le thread qui vous intéresse et cliquez sur l’icône d’indicateur pour activer ou désactiver l’indicateur.  
+- Dans le **Threads** fenêtre, recherchez le thread qui vous intéresse et cliquez sur l’icône d’indicateur pour activer ou désactiver l’indicateur.  
   
 ### <a name="to-unflag-all-threads"></a>Pour supprimer tous les indicateurs de thread  
   
--   Dans la fenêtre **Threads**, cliquez avec le bouton droit sur un thread, puis cliquez sur **Tous les threads sans indicateur**.  
+- Dans la fenêtre **Threads**, cliquez avec le bouton droit sur un thread, puis cliquez sur **Tous les threads sans indicateur**.  
   
 ### <a name="to-display-only-flagged-threads"></a>Pour afficher seulement les threads avec indicateur  
   
--   Cliquez sur le bouton indicateur dans la fenêtre de débogage.  
+- Cliquez sur le bouton indicateur dans la fenêtre de débogage.  
   
 ### <a name="to-flag-just-my-code"></a>Pour signaler Uniquement mon code  
   
-1.  Dans la barre d’outils en haut de la fenêtre **Threads**, cliquez sur l’icône d’indicateur.  
+1. Dans la barre d’outils en haut de la fenêtre **Threads**, cliquez sur l’icône d’indicateur.  
   
-2.  Dans la liste déroulante, cliquez sur **Signaler uniquement mon code**.  
+2. Dans la liste déroulante, cliquez sur **Signaler uniquement mon code**.  
   
 ### <a name="to-flag-threads-that-are-associated-with-selected-modules"></a>Pour signaler des threads associés aux modules sélectionnés  
   
-1.  Dans la barre d’outils de la fenêtre **Threads**, cliquez sur l’icône d’indicateur.  
+1. Dans la barre d’outils de la fenêtre **Threads**, cliquez sur l’icône d’indicateur.  
   
-2.  Dans la liste déroulante, cliquez sur **Signaler la sélection de modules personnalisés**.  
+2. Dans la liste déroulante, cliquez sur **Signaler la sélection de modules personnalisés**.  
   
-3.  Dans la boîte de dialogue **Sélectionner les modules**, sélectionnez les modules souhaités.  
+3. Dans la boîte de dialogue **Sélectionner les modules**, sélectionnez les modules souhaités.  
   
-4.  (Facultatif) Dans la zone **Rechercher**, saisissez une chaîne pour rechercher des modules spécifiques.  
+4. (Facultatif) Dans la zone **Rechercher**, saisissez une chaîne pour rechercher des modules spécifiques.  
   
-5.  Cliquez sur **OK**.  
+5. Cliquez sur **OK**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Déboguer les applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   

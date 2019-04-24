@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40a8901b60c25e29f038aee634ed54519501a925
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1c9ea6398ca02291bb9dc11693c98336cd33b14b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954000"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061986"
 ---
 # <a name="layer-diagrams-reference"></a>Diagrammes de couche : Référence
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Dans Visual Studio, vous pouvez utiliser un *diagramme de couche* pour visualise
 |4|**Commentaire**|Permet d'ajouter des remarques générales au diagramme ou aux éléments du diagramme.|  
 |5|**Lien de commentaire**|Permet de lier des commentaires aux éléments du diagramme.|  
   
-##  <a name="Explorer"></a> Explorateur de couches  
+## <a name="Explorer"></a> Explorateur de couches  
  Vous pouvez lier chaque couche aux artefacts de votre solution, tels que des projets, des classes, des espaces de noms, des fichiers projet et d'autres parties de votre logiciel. Le nombre indiqué sur une couche représente le nombre d’artefacts liés à cette couche. Toutefois, quand vous lisez le nombre d'artefacts sur une couche, tenez compte des points suivants :  
   
 - Si une couche est liée à un artefact contenant d'autres artefacts, mais n'est pas directement liée à ces autres artefacts, le nombre représentera uniquement les artefacts auxquels elle est directement liée. Toutefois, les autres artefacts sont inclus dans l'analyse pendant la validation de couche.  
@@ -80,7 +80,7 @@ Dans Visual Studio, vous pouvez utiliser un *diagramme de couche* pour visualise
   
 #### <a name="to-examine-the-linked-artifacts"></a>Pour examiner les artefacts liés  
   
--   Sur le diagramme de couche, ouvrez le menu contextuel pour une ou plusieurs couches, puis choisissez **afficher les liens**.  
+- Sur le diagramme de couche, ouvrez le menu contextuel pour une ou plusieurs couches, puis choisissez **afficher les liens**.  
   
      **Explorateur de couches** s’ouvre et affiche les artefacts liés aux couches sélectionnées. **Explorateur de couches** a une colonne qui affiche chacune des propriétés des liens d’artefact.  
   

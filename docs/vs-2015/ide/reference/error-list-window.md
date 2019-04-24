@@ -16,17 +16,16 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 080bc6b8efe5407a372ef2e22c53d04fa977e057
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9dc94abdfb35bc4537f0ba80f96f393157263e63
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785769"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658147"
 ---
 # <a name="error-list-window"></a>Liste d'erreurs, fenêtre
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 REMARQUE]
 >  La liste d'erreurs affiche des informations sur un message d'erreur spécifique. Vous pouvez copier le numéro d'erreur ou le texte de la chaîne d'erreur dans la fenêtre Sortie. Pour afficher la fenêtre Sortie, appuyez sur Ctrl+Alt+O. Consultez [Sortie, fenêtre](../../ide/reference/output-window.md).  
   

@@ -26,12 +26,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fcb5126d5281a62c9af55ba9e4283df4e1c3819c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1da5ba504c22f78ebd3c0705bd5ee903fb4a2997
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949187"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060564"
 ---
 # <a name="how-to-find-which-dll-your-program-crashed-in"></a>Procédure : Trouver quelle DLL votre programme a causé l’arrêt
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,17 +43,17 @@ REMARQUE]
   
 ### <a name="to-find-where-a-crash-occurred-using-the-modules-window"></a>Pour savoir où une panne s'est produite à l'aide de la fenêtre Modules  
   
-1.  Notez l'adresse où la panne s'est produite.  
+1. Notez l'adresse où la panne s'est produite.  
   
-2.  Dans le menu **Déboguer**, sélectionnez **Fenêtres**, puis cliquez sur **Modules**.  
+2. Dans le menu **Déboguer**, sélectionnez **Fenêtres**, puis cliquez sur **Modules**.  
   
-3.  Dans la fenêtre **Modules**, trouvez la colonne **Adresse**. Faites défiler la fenêtre à l'aide de la barre de défilement, si nécessaire.  
+3. Dans la fenêtre **Modules**, trouvez la colonne **Adresse**. Faites défiler la fenêtre à l'aide de la barre de défilement, si nécessaire.  
   
-4.  Cliquez sur le bouton **Adresse** en haut de la colonne pour trier les DLL par adresse.  
+4. Cliquez sur le bouton **Adresse** en haut de la colonne pour trier les DLL par adresse.  
   
-5.  Recherchez dans la liste triée la DLL dont la plage d'adresse contient l'emplacement de la panne.  
+5. Recherchez dans la liste triée la DLL dont la plage d'adresse contient l'emplacement de la panne.  
   
-6.  Les colonnes **Nom** et **Chemin d’accès** vous indiquent le nom et le chemin de la DLL.  
+6. Les colonnes **Nom** et **Chemin d’accès** vous indiquent le nom et le chemin de la DLL.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Guide pratique pour Déboguer des DLL natives](../debugger/how-to-debug-native-dlls.md)   

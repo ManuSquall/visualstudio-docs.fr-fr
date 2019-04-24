@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c1bf4f23ffc6d06313c39f0ffe25b9f1a6ffe595
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5958eb6fb8fd14dd510fa87d900efa76cb6f6a87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601034"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040714"
 ---
 # <a name="ribbon-object-model-overview"></a>Présentation du modèle objet de ruban
   Le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] expose un modèle objet fortement typé que vous pouvez utiliser pour obtenir et définir les propriétés des contrôles de ruban lors de l’exécution. Par exemple, vous pouvez remplir des contrôles de menu, ou afficher et dynamiquement masquer des contrôles en fonction du contexte. Vous pouvez également ajouter des onglets, des groupes et des contrôles à un ruban, mais uniquement avant le chargement du ruban par l’application Office. Pour plus d’informations, consultez [définir des propriétés qui passent en lecture seule](#SettingReadOnlyProperties).
@@ -26,12 +26,12 @@ ms.locfileid: "56601034"
 
  Ce modèle d’objet de ruban se compose principalement de la [classe du ruban](#RibbonClass), [ruban événements](#RibbonEvents), et [les classes de contrôle de ruban](#RibbonControlClasses).
 
-##  <a name="RibbonClass"></a> Classe du ruban
+## <a name="RibbonClass"></a> Classe du ruban
  Lorsque vous ajoutez un nouveau **ruban (Concepteur visuel)** d’élément à un projet, Visual Studio ajoute un **ruban** classe à votre projet. Le **ruban** classe hérite de la <xref:Microsoft.Office.Tools.Ribbon.RibbonBase> classe.
 
  Cette classe s’affiche comme une classe partielle qui est partagée entre le fichier de code de ruban et le fichier de code du Concepteur de ruban.
 
-##  <a name="RibbonEvents"></a> Événements de ruban
+## <a name="RibbonEvents"></a> Événements de ruban
  Le **ruban** classe contient les trois événements suivants :
 
 |Événement|Description|
@@ -40,7 +40,7 @@ ms.locfileid: "56601034"
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.LoadImage>|Vous permet de cache des images dans la personnalisation du ruban lors du chargement du ruban. Vous pouvez obtenir un gain de performances légère si vous écrivez du code pour mettre en cache les images de ruban dans ce gestionnaire d’événements. Pour plus d'informations, consultez <xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon.LoadImage>.|
 |<xref:Microsoft.Office.Tools.Ribbon.RibbonBase.Close>|Déclenché lorsque l’instance de ruban se ferme.|
 
-##  <a name="RibbonControlClasses"></a> Contrôles de ruban
+## <a name="RibbonControlClasses"></a> Contrôles de ruban
  Le <xref:Microsoft.Office.Tools.Ribbon> espace de noms contient un type pour chaque contrôle que vous voyez dans le **contrôles de ruban Office** groupe de la **boîte à outils**.
 
  Le tableau suivant présente le type pour chaque `Ribbon` contrôle. Pour obtenir une description de chaque contrôle, consultez [vue d’ensemble du ruban](../vsto/ribbon-overview.md).
@@ -89,7 +89,7 @@ ms.locfileid: "56601034"
 |Obtenir les groupes un <xref:Microsoft.Office.Tools.Ribbon.RibbonTab>.|Utilisez la propriété <xref:Microsoft.Office.Tools.Ribbon.RibbonTab.Groups%2A>.|
 |Spécifiez le nombre de lignes et colonnes qui apparaissent dans un <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>.|Utilisez le <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> et <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> propriétés.|
 
-##  <a name="SettingReadOnlyProperties"></a> Définir les propriétés qui passent en lecture seule
+## <a name="SettingReadOnlyProperties"></a> Définir les propriétés qui passent en lecture seule
  Certaines propriétés peuvent être définies uniquement avant le chargement du ruban. Il existe trois emplacements où définir ces propriétés :
 
 - Dans Visual Studio **propriétés** fenêtre.
@@ -126,7 +126,7 @@ ms.locfileid: "56601034"
  [!code-vb[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.vb#2)]
  [!code-csharp[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.cs#2)]
 
-###  <a name="ReadOnlyProperties"></a> Propriétés qui passent en lecture seule
+### <a name="ReadOnlyProperties"></a> Propriétés qui passent en lecture seule
  Le tableau suivant présente les propriétés qui peuvent être définies uniquement avant le chargement du ruban.
 
 > [!NOTE]

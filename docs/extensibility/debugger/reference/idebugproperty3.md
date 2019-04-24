@@ -12,23 +12,23 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cbce619e15006736a2f36bf1d3ab360f6b964a2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e73310d8a1cff3b640896d9bb5883cf2508bda6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705922"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069651"
 ---
 # <a name="idebugproperty3"></a>IDebugProperty3
 Cette interface prend en charge :
 
--   Récupération d’une chaîne de longueur arbitraire associée à la propriété.
+- Récupération d’une chaîne de longueur arbitraire associée à la propriété.
 
--   Association d’un ID unique à la propriété.
+- Association d’un ID unique à la propriété.
 
--   Récupération d’une liste des visionneuses personnalisées pour la propriété.
+- Récupération d’une liste des visionneuses personnalisées pour la propriété.
 
--   Définition de la valeur d’une propriété avec la capacité à signaler les erreurs résultantes
+- Définition de la valeur d’une propriété avec la capacité à signaler les erreurs résultantes
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -58,7 +58,7 @@ IDebugProperty3 : IDebugProperty2
 ## <a name="remarks"></a>Notes
 - [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) est la meilleure méthode pour le Gestionnaire de session de débogage (SDM) pour définir la valeur d’une propriété.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

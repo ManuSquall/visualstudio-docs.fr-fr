@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3eca61e696fea82952e3efde5cea1f6164d5bab5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 1e99ee6c9570f3bb73bc70f230f31e153a8a0da1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775844"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054150"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>Spécification d'événements de build personnalisés dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,30 +25,30 @@ En spécifiant un événement de build personnalisé, vous pouvez automatiquemen
 
  Pour obtenir des informations spécifiques sur le langage de programmation que vous utilisez, consultez les rubriques suivantes :
 
--   Visual Basic--[Guide pratique pour spécifier des événements de build (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
+- Visual Basic--[Guide pratique pour Spécifier des événements de build (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
--   Visual C# et F#--[Guide pratique pour spécifier des événements de build (C#)](../ide/how-to-specify-build-events-csharp.md).
+- Visual C# et F#--[Comment : Spécifier les événements de Build (C#)](../ide/how-to-specify-build-events-csharp.md).
 
--   Visual C++--[Spécifications d’événements de build](http://msdn.microsoft.com/library/788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc).
+- Visual C++--[Spécifications d’événements de build](http://msdn.microsoft.com/library/788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc).
 
 ## <a name="syntax"></a>Syntaxe
  Les événements de build suivent la même syntaxe que les commandes DOS, mais vous pouvez utiliser des macros pour créer plus facilement des événements de build. Pour obtenir la liste des macros disponibles, consultez [Ligne de commande de l’événement pré-build/post-build, boîte de dialogue](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md).
 
  Pour de meilleurs résultats, suivez ces conseils de mise en forme :
 
--   Ajouter une instruction `call` avant tous les événements de build qui exécutent des fichiers .bat.
+- Ajouter une instruction `call` avant tous les événements de build qui exécutent des fichiers .bat.
 
      Exemple : `call C:\MyFile.bat`
 
      Exemple : `call C:\MyFile.bat call C:\MyFile2.bat`
 
--   Placez les chemins d'accès de fichier entre guillemets.
+- Placez les chemins d'accès de fichier entre guillemets.
 
      Exemple (pour [!INCLUDE[win8](../includes/win8-md.md)]) : "%ProgramFiles(x86)%\Microsoft SDKs\Windows\v8.0A\Bin\NETFX 4.0 Tools\gacutil.exe" -if "$(TargetPath)"
 
--   Séparez les commandes à l'aide de sauts de ligne.
+- Séparez les commandes à l'aide de sauts de ligne.
 
--   Incluez des caractères génériques si nécessaire.
+- Incluez des caractères génériques si nécessaire.
 
      Exemple : `for %I in (*.txt *.doc *.html) do copy %I c:\`*mon_répertoire*`\`
 

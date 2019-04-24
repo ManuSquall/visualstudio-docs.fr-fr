@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e368d22a876ddb29770416ba5bbbb2a7995d576
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3c87339e26e5b08fbcbdcde94d43c9f0009e1a22
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950576"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232416"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Ajouter la prise en charge de l’éditeur Visual Studio pour d’autres langages
 
@@ -44,45 +44,48 @@ Actuellement, Visual Studio fournit la prise en charge de la coloration syntaxiq
 |CSS|INI|LUA|R|Swift|XML|
 |Docker|Jade|Make|Ruby|TypeScript|YAML|
 
-Outre la coloration syntaxique et la saisie semi-automatique des instructions de base, Visual Studio propose également une fonctionnalité appelée [Naviguer vers](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Elle vous permet de rechercher rapidement des fichiers de code, des chemins de fichier et des symboles de code. Visual Studio fournit la prise en charge de Naviguer vers pour les langages suivants.
+Outre la coloration syntaxique et la saisie semi-automatique des instructions de base, Visual Studio propose également une fonctionnalité appelée [Naviguer vers](https://blogs.msdn.microsoft.com/benwilli/2015/04/09/visual-studio-tip-3-use-navigate-to/). Elle permet de rechercher rapidement des fichiers de code, des chemins de fichier et des symboles de code. Visual Studio fournit la prise en charge de Naviguer vers pour les langages suivants.
 
--   Go
+- Go
 
--   Java
+- Java
 
--   JavaScript
+- JavaScript
 
--   PHP
+- PHP
 
--   TypeScript
+- TypeScript
 
--   Visual Basic
+- Visual Basic
 
--   Visual C++
+- Visual C++
 
--   C#
+- C#
 
 Tous ces types de fichiers offrent les fonctionnalités décrites précédemment même si la prise en charge d’un langage donné n’a pas encore été installée. L’installation de la prise en charge spécialisée pour certains langages peut fournir une prise en charge de langage supplémentaire, comme IntelliSense ou d’autres fonctionnalités de langage avancées comme les ampoules.
 
 ## <a name="add-support-for-non-supported-languages"></a>Ajouter la prise en charge des langages non pris en charge
 
-Visual Studio 2015 Update 1 et versions ultérieures fournissent la prise en charge des langages dans l’éditeur à l’aide des [grammaires TextMate](https://manual.macromates.com/en/language_grammars). Si votre langage de programmation préféré n’est pas pris en charge dans l’éditeur Visual Studio, recherchez tout d’abord sur le web. Un lot TextMate existe peut-être déjà pour ce langage. Si vous n’en trouvez aucun, vous pouvez ajouter la prise en charge vous-même dans Visual Studio 2015 Update 1 ou ultérieur en créant un modèle de lot TextMate pour des extraits de code et des grammaires de langage.
+Visual Studio assure la prise en charge des langages dans l’éditeur avec des [grammaires TextMate](https://manual.macromates.com/en/language_grammars). Si votre langage de programmation préféré n’est pas pris en charge dans l’éditeur Visual Studio, recherchez tout d’abord sur le web &mdash; il est possible qu’un bundle TextMate existe déjà pour ce langage. Si vous n’en trouvez pas, vous pouvez ajouter la prise en charge vous-même en créant un modèle de bundle TextMate pour les extraits de code et les grammaires du langage.
 
 Ajoutez les nouvelles grammaires TextMate pour Visual Studio dans le dossier suivant :
 
 *%userprofile%\\.vs\Extensions*
 
-Sous ce chemin de base, ajoutez le ou les dossiers suivants s’ils s’appliquent à votre situation :
+Sous ce chemin de base, ajoutez les dossiers suivants s’ils s’appliquent à votre situation :
 
 |Nom du dossier|Description|
 |-----------------|-----------------|
 |\\*\<nom_langage>*|Dossier du langage. Remplacez *\<nom_langage>* par le nom du langage. Par exemple, *\Matlab*.|
 |*\Syntaxes*|Dossier de la grammaire. Contient les fichiers *.json* de grammaire du langage, tels que *Matlab.json*.|
-|*\Extraits de code*|Dossier des extraits de code. Contient les extraits de code du langage.|
+|*\Snippets*|Dossier des extraits de code. Contient les extraits de code du langage.|
 
-Dans Windows, la résolution de *%userprofile%* donne le chemin suivant : *c:\Users\\\<nom_utilisateur>*. Si le dossier d’extensions n’existe pas sur votre système, vous devez le créer. Si le dossier existe déjà, il est masqué.
+Dans Windows, la résolution de *%userprofile%* donne le chemin suivant : *c:\Users\\\<nom_utilisateur>*. Si le dossier *Extensions* n’existe pas sur votre système, vous devrez le créer. Si le dossier existe déjà, il est masqué.
 
-Pour plus d’informations sur la création de grammaires TextMate, consultez [TextMate - Introduction to Language Grammars: How to add source code syntax highlighting embedded in HTML Comment ajouter la coloration syntaxique du code source incorporée en HTML](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) (TextMate - Présentation des grammaires de langage : comment ajouter la coloration syntaxique du code source incorporée en HTML) et [Notes on how to create a Language Grammar and Custom Theme for a Textmate Bundle](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle) (Remarques sur la création d’une grammaire de langage et d’un thème personnalisé pour un lot Textmate).
+> [!TIP]
+> S’il y a des fichiers ouverts dans l’éditeur, vous devrez les fermer et les rouvrir pour afficher la coloration syntaxique après avoir ajouté les grammaires TextMate.
+
+Pour plus d’informations sur la création de grammaires TextMate, voir [TextMate – Présentation des grammaires de langage](https://developmentality.wordpress.com/2011/02/08/textmate-introduction-to-language-grammars/) et [Remarques sur la création d’une grammaire de langage et d’un thème personnalisé pour un bundle TextMate](https://benparizek.com/notebook/notes-on-how-to-create-a-language-grammar-and-custom-theme-for-a-textmate-bundle).
 
 ## <a name="see-also"></a>Voir aussi
 

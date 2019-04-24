@@ -17,17 +17,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9019eb6265d0a8c4c633aa7eddadd00df0a33596
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 5f4faa9038a5931dec376903f166301f27f00b37
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54790254"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656230"
 ---
 # <a name="parametergroup-element"></a>ParameterGroup, élément
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Contient une liste facultative de paramètres qui seront présents sur la tâche générée par un `UsingTask``TaskFactory`. Pour plus d’informations, consultez [UsingTask, élément (MSBuild)](../msbuild/usingtask-element-msbuild.md).  
   
  \<Project>  

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a81bcfc6c9f5db47c2140e68a7b609efc92bf8fe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bd6562a48a66c1c73cd281fb4510e2df737f6a04
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610513"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107266"
 ---
 # <a name="how-to-programmatically-run-excel-calculations"></a>Procédure : Exécuter des calculs Excel par programmation
   Vous utilisez un processus similaire pour exécuter des calculs un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle ou un objet de plage Excel natif.
@@ -32,12 +32,12 @@ ms.locfileid: "56610513"
 
 ### <a name="to-run-calculations-in-a-namedrange-control"></a>Pour exécuter des calculs dans un contrôle NamedRange
 
-1.  Créez la plage nommée.
+1. Créez la plage nommée.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#75](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#75)]
      [!code-vb[Trin_VstcoreExcelAutomation#75](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#75)]
 
-2.  Appelez le <xref:Microsoft.Office.Tools.Excel.NamedRange.Calculate%2A> méthode de la plage spécifiée.
+2. Appelez le <xref:Microsoft.Office.Tools.Excel.NamedRange.Calculate%2A> méthode de la plage spécifiée.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#76](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#76)]
      [!code-vb[Trin_VstcoreExcelAutomation#76](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#76)]
@@ -46,12 +46,12 @@ ms.locfileid: "56610513"
 
 ### <a name="to-run-calculations-in-a-native-excel-range"></a>Pour exécuter des calculs dans une plage Excel native
 
-1.  Créez la plage nommée.
+1. Créez la plage nommée.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#30](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#30)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#30](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#30)]
 
-2.  Appelez le <xref:Microsoft.Office.Interop.Excel.Range.Calculate%2A> méthode de la plage spécifiée.
+2. Appelez le <xref:Microsoft.Office.Interop.Excel.Range.Calculate%2A> méthode de la plage spécifiée.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#31](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#31)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#31](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#31)]

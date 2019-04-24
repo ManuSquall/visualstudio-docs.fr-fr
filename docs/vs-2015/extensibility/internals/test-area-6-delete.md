@@ -11,12 +11,12 @@ ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 206835d92a2fca27bed2cbb8a96b99e6b7c8a082
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3ffe786b5bc5f6d0bb0233fbb431988e0145611d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948211"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094866"
 ---
 # <a name="test-area-6-delete"></a>Zone de test 6 : Supprimer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,13 +38,13 @@ Cette zone de test plug-in de contrôle de code source couvre les actions de sup
 ## <a name="expected-behavior"></a>Comportement attendu  
  Le comportement attendu pour les cas de test dans la zone de test delete est :  
   
--   Élément supprimé n’est plus visible dans **l’Explorateur de solutions**.  
+- Élément supprimé n’est plus visible dans **l’Explorateur de solutions**.  
   
--   Le parent du projet supprimé ou de l’élément est extrait en fonction des besoins (et éventuellement avec une invite de commandes.)  
+- Le parent du projet supprimé ou de l’élément est extrait en fonction des besoins (et éventuellement avec une invite de commandes.)  
   
--   Une fois que vous supprimez un checked out ou élément ajouté, il n’apparaît pas dans le **archivages en attente** fenêtre.  
+- Une fois que vous supprimez un checked out ou élément ajouté, il n’apparaît pas dans le **archivages en attente** fenêtre.  
   
--   L’élément existe dans le magasin de contrôle source, même après la suppression, toujours et doit être purgée manuellement.  
+- L’élément existe dans le magasin de contrôle source, même après la suppression, toujours et doit être purgée manuellement.  
   
 |Action|Étapes de test|Résultats attendus pour vérifier|  
 |------------|----------------|--------------------------------|  

@@ -12,12 +12,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a8f71557dc7939e9b96c3d6cd3f2382ada69b493
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 77529ad9957694b1ea1853b3e8b1b1cc29c45e2b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774599"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067038"
 ---
 # <a name="troubleshooting-the-help-viewer"></a>Résolution des problèmes liés à la Visionneuse d'aide
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,15 +32,15 @@ Cette rubrique traite des problèmes que vous pouvez rencontrer avec Help Viewer
   
 #### <a name="to-activate-windows-search-service"></a>Pour activer le service Windows Search  
   
-1.  Démarrez le Gestionnaire de serveur.  
+1. Démarrez le Gestionnaire de serveur.  
   
-2.  Dans le volet de navigation de gauche, choisissez **Rôles**.  
+2. Dans le volet de navigation de gauche, choisissez **Rôles**.  
   
-3.  Dans le volet Résumé des rôles, choisissez **Ajouter le rôle**.  
+3. Dans le volet Résumé des rôles, choisissez **Ajouter le rôle**.  
   
-4.  Choisissez le rôle Services de fichiers, puis cliquez sur le bouton **Suivant**.  
+4. Choisissez le rôle Services de fichiers, puis cliquez sur le bouton **Suivant**.  
   
-5.  Choisissez le service de rôle Windows Search.  
+5. Choisissez le service de rôle Windows Search.  
   
 ## <a name="additional-resources"></a>Ressources supplémentaires  
  Vous pouvez obtenir plus d’informations sur Help Viewer et envoyer vos commentaires à son sujet en utilisant les ressources suivantes :  

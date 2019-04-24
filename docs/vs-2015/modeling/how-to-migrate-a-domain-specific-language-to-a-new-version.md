@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 22addb1c98f72f265665ca5737180c24744b0f32
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: acccb96f4d4092727e72d1d72103e26d7be96511
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951397"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110323"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Procédure : Migrer un langage spécifique à un domaine vers une nouvelle version
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ Vous pouvez migrer des projets qui définissent et utilisent le langage spécifi
   
 #### <a name="to-prepare-projects-for-migration"></a>Pour préparer des projets pour la migration.  
   
--   Assurez-vous que le **.csproj** et **.sln** fichiers peuvent être écrits. S’ils sont sous contrôle de code source, assurez-vous qu’ils sont extraits.  
+- Assurez-vous que le **.csproj** et **.sln** fichiers peuvent être écrits. S’ils sont sous contrôle de code source, assurez-vous qu’ils sont extraits.  
   
--   Effectuez une copie des dossiers que vous voulez migrer.  
+- Effectuez une copie des dossiers que vous voulez migrer.  
   
 ## <a name="migrating-a-collection-of-projects"></a>Migration d’une Collection de projets  
   
@@ -42,7 +42,7 @@ Vous pouvez migrer des projets qui définissent et utilisent le langage spécifi
   
 1. Démarrez l’outil de Migration de DSL.  
   
-   -   Double-cliquez sur l’outil dans l’Explorateur Windows (ou Explorateur de fichiers) ou de démarrer l’outil à partir d’une invite de commandes. L’outil se trouve dans cet emplacement :  
+   - Double-cliquez sur l’outil dans l’Explorateur Windows (ou Explorateur de fichiers) ou de démarrer l’outil à partir d’une invite de commandes. L’outil se trouve dans cet emplacement :  
   
         **%ProgramFiles%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**  
   
@@ -54,37 +54,37 @@ Vous pouvez migrer des projets qui définissent et utilisent le langage spécifi
   
 3. Passez en revue l’arborescence de projets et décochez les projets que vous ne souhaitez pas convertir.  
   
-   -   Sélectionnez un projet ou une solution pour afficher la liste des modifications pour rend l’outil.  
+   - Sélectionnez un projet ou une solution pour afficher la liste des modifications pour rend l’outil.  
   
        > [!NOTE]
        >  Les cases à cocher qui apparaissent en regard des noms de dossier n’ont aucun effet. Vous devez développer les dossiers pour inspecter les projets et solutions.  
   
 4. Convertir les projets.  
   
-   1.  Cliquez sur **convertir**.  
+   1. Cliquez sur **convertir**.  
   
         Avant de chaque fichier de projet est converti, une copie de _projet_**.csproj** est enregistré en tant que _projet_**. vs2008.csproj**  
   
         Une copie de chaque _solution_**.sln** est enregistré en tant que _solution_**. vs2008.sln**  
   
-   2.  Examiner les échecs de conversion sont signalés.  
+   2. Examiner les échecs de conversion sont signalés.  
   
         Échecs sont signalés dans la fenêtre texte. En outre, l’arborescence affiche un indicateur rouge sur chaque nœud qui n’a pas pu convertir. Vous pouvez cliquer sur le nœud pour obtenir plus d’informations sur cet échec.  
   
 5. **Transformer tous les modèles** dans les solutions contenant correctement converti des projets.  
   
-   1.  Ouvrez la solution.  
+   1. Ouvrez la solution.  
   
-   2.  Cliquez sur le **transformer tous les modèles** bouton dans l’en-tête de l’Explorateur de solutions.  
+   2. Cliquez sur le **transformer tous les modèles** bouton dans l’en-tête de l’Explorateur de solutions.  
   
        > [!NOTE]
        >  Vous pouvez effectuer cette étape inutiles. Pour plus d’informations, consultez [comment automatiser transformer tous les modèles](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 6. Mettre à jour votre code personnalisé dans les projets convertis.  
   
-   -   Tentez de générer les projets et examiner les échecs.  
+   - Tentez de générer les projets et examiner les échecs.  
   
-   -   Tester votre concepteur.  
+   - Tester votre concepteur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Nouveautés de la visualisation et de la modélisation dans le SDK](../misc/what-s-new-in-visualization-and-modeling-sdk.md)

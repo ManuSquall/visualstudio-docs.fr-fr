@@ -17,17 +17,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f0abb70297436e75bbe4d9b6b24b4aeb3a7a341
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 76c55d45e279a3fcf6579c77bf7d226c7baf13d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949859"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102976"
 ---
 # <a name="create-lookup-tables-in-windows-forms-applications"></a>Créer des tables de recherche dans des applications Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Le terme *table de recherche* décrit les contrôles qui sont liés aux tables de données connexes deux. Ces contrôles de recherche affichent les données à partir de la première table selon une valeur sélectionnée dans la seconde table.  
   
  Vous pouvez créer des tables de recherche en faisant glisser le nœud principal d’une table parent (à partir de la [fenêtre Sources de données](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992)) sur un contrôle de votre formulaire qui est déjà lié à la colonne dans la table enfant connexe.  
@@ -36,25 +35,25 @@ Le terme *table de recherche* décrit les contrôles qui sont liés aux tables d
   
 ## <a name="to-databind-a-lookup-control"></a>Pour lier un contrôle de recherche  
   
-1.  Ouvrez la fenêtre **Sources de données**.  
+1. Ouvrez la fenêtre **Sources de données**.  
   
     > [!NOTE]
     > Les tables de recherche nécessitent que les deux tables ou objets connexes sont disponibles dans le **des Sources de données** fenêtre.
   
-2.  Développez les nœuds dans le **des Sources de données** fenêtre jusqu'à ce que vous pouvez voir la table parente et toutes ses colonnes et la table enfant connexe et toutes ses colonnes.  
+2. Développez les nœuds dans le **des Sources de données** fenêtre jusqu'à ce que vous pouvez voir la table parente et toutes ses colonnes et la table enfant connexe et toutes ses colonnes.  
   
     > [!NOTE]
     >  Le nœud de la table enfant est le nœud qui apparaît sous la forme d’un nœud enfant développable dans la table parente.  
   
-3.  Modifier le type de déplacement de la table enfant à **détails** en sélectionnant **détails** à partir de la liste de contrôle sur le nœud de la table enfant. Pour plus d’informations, consultez [définir le contrôle à créer lors du déplacement de la fenêtre Sources de données](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+3. Modifier le type de déplacement de la table enfant à **détails** en sélectionnant **détails** à partir de la liste de contrôle sur le nœud de la table enfant. Pour plus d’informations, consultez [définir le contrôle à créer lors du déplacement de la fenêtre Sources de données](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
-4.  Recherchez le nœud qui lie les deux tables (le `CustomerID` nœud dans l’exemple précédent). Modifiez son type de déplacement à un <xref:System.Windows.Forms.ComboBox> en sélectionnant **ComboBox** à partir de la liste de contrôle.  
+4. Recherchez le nœud qui lie les deux tables (le `CustomerID` nœud dans l’exemple précédent). Modifiez son type de déplacement à un <xref:System.Windows.Forms.ComboBox> en sélectionnant **ComboBox** à partir de la liste de contrôle.  
   
-5.  Faites glisser le nœud de la table enfant principale à partir de la **des Sources de données** fenêtre vers votre formulaire.  
+5. Faites glisser le nœud de la table enfant principale à partir de la **des Sources de données** fenêtre vers votre formulaire.  
   
      Supprimer des contrôles liés aux données (avec des étiquettes descriptives) et un outil (<xref:System.Windows.Forms.BindingNavigator>) apparaissent sur le formulaire. Un [DataSet](../data-tools/dataset-tools-in-visual-studio.md), TableAdapter, <xref:System.Windows.Forms.BindingSource>, et <xref:System.Windows.Forms.BindingNavigator> s’affichent dans la barre d’état du composant.  
   
-6.  Maintenant, faites glisser le nœud de la table parent principal à partir de la **des Sources de données** fenêtre directement sur le contrôle de recherche (le <xref:System.Windows.Forms.ComboBox>).  
+6. Maintenant, faites glisser le nœud de la table parent principal à partir de la **des Sources de données** fenêtre directement sur le contrôle de recherche (le <xref:System.Windows.Forms.ComboBox>).  
   
      Les liaisons de recherche sont désormais établis. Consultez le tableau ci-dessous pour les propriétés spécifiques qui ont été définies sur le contrôle.  
   

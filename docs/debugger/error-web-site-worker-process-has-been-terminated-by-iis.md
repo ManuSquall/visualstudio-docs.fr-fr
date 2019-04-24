@@ -1,5 +1,5 @@
 ---
-title: 'Erreur : le processus de travail de site Web a été interrompu par IIS | Microsoft Docs'
+title: 'Erreur : Processus de travail de site Web a été interrompu par IIS | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d951486d41e3449410f6f815b3b355a281e0898
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 2d89eabec0c199b1b8df7eeb78d0e629d4a70b2e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698870"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072654"
 ---
-# <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Erreur : le processus de travail de site Web a été interrompu par IIS.
+# <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Erreur : Le processus Worker du site web a été arrêté par IIS
 Le débogueur a arrêté l’exécution du code sur le site web. Résultat : Internet Information Services (IIS) a supposé que le processus de travail avait cessé de répondre. Par conséquent, IIS a mis fin au processus de traitement.
 
  Pour continuer le débogage, vous devez configurer IIS de sorte qu'il autorise la poursuite du processus de traitement. Ce message d'erreur n'apparaît pas avec les versions d'IIS antérieures à IIS 7.
@@ -30,9 +30,9 @@ Le débogueur a arrêté l’exécution du code sur le site web. Résultat : In
 
 1. Ouvrez la fenêtre **Outils d’administration**.
 
-   1.  Cliquez sur **Démarrer**, puis choisissez **Panneau de configuration**.
+   1. Cliquez sur **Démarrer**, puis choisissez **Panneau de configuration**.
 
-   2.  Dans **Panneau de configuration**, sélectionnez **Basculer vers l’affichage classique**, si nécessaire, puis double-cliquez sur **Outils d’administration**.
+   2. Dans **Panneau de configuration**, sélectionnez **Basculer vers l’affichage classique**, si nécessaire, puis double-cliquez sur **Outils d’administration**.
 
 2. Dans la fenêtre **Outils d’administration**, double-cliquez sur **Gestionnaire des services Internet (IIS)**.
 

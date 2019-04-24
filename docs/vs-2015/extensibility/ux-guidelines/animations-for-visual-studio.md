@@ -8,12 +8,12 @@ ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
 caps.latest.revision: 3
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 241a9f628ab731552a01b2ccbefe55fe53dbe3e0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bd51e99f59f22eb31252be2a41c3b3fb5e89f846
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948253"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077249"
 ---
 # <a name="animations-for-visual-studio"></a>Animations pour Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -23,39 +23,39 @@ ms.locfileid: "58948253"
 ### <a name="animation-best-practices-in-visual-studio"></a>Meilleures pratiques de l’animation dans Visual Studio
  Suivez ces règles pour garantir des styles d’animation conviviale et cohérente au sein de l’IDE de Visual Studio.
 
--   **Soyez sélectif.** Limiter les animations à celles qui remplissent une fonction spécifique.
+- **Soyez sélectif.** Limiter les animations à celles qui remplissent une fonction spécifique.
 
--   **Minutage et vitesse sont importantes** pour vous assurer que l’impression de transitions naturelle et rapide :
+- **Minutage et vitesse sont importantes** pour vous assurer que l’impression de transitions naturelle et rapide :
 
-    -   Effectuer des transitions animées au sein d’une demi-seconde (500 millisecondes).
+    - Effectuer des transitions animées au sein d’une demi-seconde (500 millisecondes).
 
-    -   Les animations qui seraient produisent fréquemment doivent être suffisamment rapide pour qu’elles n’interrompront pas le flux de travail de l’utilisateur.
+    - Les animations qui seraient produisent fréquemment doivent être suffisamment rapide pour qu’elles n’interrompront pas le flux de travail de l’utilisateur.
 
-    -   Animations ne doivent pas être tellement rapide ou souffrent qu’il est difficile à comprendre, mais pas tellement lent qu’elle effectue un impatiente la transition se terminer.
+    - Animations ne doivent pas être tellement rapide ou souffrent qu’il est difficile à comprendre, mais pas tellement lent qu’elle effectue un impatiente la transition se terminer.
 
-    -   Utilisez le minutage de variable pour mettre en évidence d’importance. Par exemple, lors de la navigation dans une séquence d’éléments sur un diagramme de classes, permet d’accélérer le déplacement entre les transitions entre les éléments puis ralentir pour vous concentrer sur les éléments importants.
+    - Utilisez le minutage de variable pour mettre en évidence d’importance. Par exemple, lors de la navigation dans une séquence d’éléments sur un diagramme de classes, permet d’accélérer le déplacement entre les transitions entre les éléments puis ralentir pour vous concentrer sur les éléments importants.
 
--   **Utiliser l’accélération non linéaire progressive** d’un état à un autre, donner une idée de calme et physique mouvement
+- **Utiliser l’accélération non linéaire progressive** d’un état à un autre, donner une idée de calme et physique mouvement
 
--   Dans la mesure du possible, **utiliser une animation subtile pointage** pour indiquer les éléments interactifs sous la souris.
+- Dans la mesure du possible, **utiliser une animation subtile pointage** pour indiquer les éléments interactifs sous la souris.
 
--   Si vous reposent largement sur les animations dans vos fonctionnalités puis **fournissent un moyen de les mettre hors tension** localement (pour toutes les fonctionnalités) en tant qu’option dans le **Outils > Options** boîte de dialogue.
+- Si vous reposent largement sur les animations dans vos fonctionnalités puis **fournissent un moyen de les mettre hors tension** localement (pour toutes les fonctionnalités) en tant qu’option dans le **Outils > Options** boîte de dialogue.
 
--   **Qu’une seule animation doit se produire à la fois** et d’indiquer qu’un seul élément d’information.
+- **Qu’une seule animation doit se produire à la fois** et d’indiquer qu’un seul élément d’information.
 
--   **Subtilité est importante.** Dans la plupart des cas, l’animation n’a à l’attention de l’utilisateur à la demande pour satisfaire à ses objectifs. Modifications subtiles dans la synchronisation, de séquencement et de comportement peuvent affecter considérablement la perception et peuvent faire la différence entre une animation efficace et inefficace.
+- **Subtilité est importante.** Dans la plupart des cas, l’animation n’a à l’attention de l’utilisateur à la demande pour satisfaire à ses objectifs. Modifications subtiles dans la synchronisation, de séquencement et de comportement peuvent affecter considérablement la perception et peuvent faire la différence entre une animation efficace et inefficace.
 
--   Lors de l’utilisation d’animation pour attirer l’attention sur quelque chose, **vous assurer qu’il est intéressant d’interrompre l’utilisateur**d’idée.
+- Lors de l’utilisation d’animation pour attirer l’attention sur quelque chose, **vous assurer qu’il est intéressant d’interrompre l’utilisateur**d’idée.
 
--   **Lors de l’affichage de progression ou l’état** via animation :
+- **Lors de l’affichage de progression ou l’état** via animation :
 
-    -   Cesse d’afficher le déplacement de progression lorsque le processus sous-jacent n’est pas avancer.
+    - Cesse d’afficher le déplacement de progression lorsque le processus sous-jacent n’est pas avancer.
 
-    -   Distinguer les processus indéterminés des processus déterminées.
+    - Distinguer les processus indéterminés des processus déterminées.
 
-    -   Vérifiez qu’une animation identifiables États d’exécution et l’échec.
+    - Vérifiez qu’une animation identifiables États d’exécution et l’échec.
 
-    -   Réduire l’utilisation des animations d’effet qui indiquent l’état et vous assurer qu’une valeur réelle en fournissant des informations supplémentaires d’utilisation réelle. En cas d’urgence et les changements d’état temporaires sont des exemples
+    - Réduire l’utilisation des animations d’effet qui indiquent l’état et vous assurer qu’une valeur réelle en fournissant des informations supplémentaires d’utilisation réelle. En cas d’urgence et les changements d’état temporaires sont des exemples
 
 #### <a name="do-not"></a>Ne pas :
 
@@ -71,15 +71,15 @@ ms.locfileid: "58948253"
 
 ### <a name="animation-metrics"></a>Métriques d’animation
 
--   Le système doit visiblement réagir aux mouvements de l’utilisateur en moins de 10 millisecondes.
+- Le système doit visiblement réagir aux mouvements de l’utilisateur en moins de 10 millisecondes.
 
--   Transitions animées ne doivent pas durer plues de 500 millisecondes pour se terminer.
+- Transitions animées ne doivent pas durer plues de 500 millisecondes pour se terminer.
 
--   La première consiste à compenser les transitions qui nécessitent des temps de plus de temps pour le séparer en deux parties ; par exemple, la première partie d’une animation peut être le conteneur de contenu vide (jusqu'à 500 millisecondes) suivi de l’atténuation de contenu dans le conteneur (jusqu'à 500 millisecondes).
+- La première consiste à compenser les transitions qui nécessitent des temps de plus de temps pour le séparer en deux parties ; par exemple, la première partie d’une animation peut être le conteneur de contenu vide (jusqu'à 500 millisecondes) suivi de l’atténuation de contenu dans le conteneur (jusqu'à 500 millisecondes).
 
--   Pour les temps de chargement peuvent être calculés, un indicateur de progression déterminante (indicateur de progression de terminé en %) est préférable.
+- Pour les temps de chargement peuvent être calculés, un indicateur de progression déterminante (indicateur de progression de terminé en %) est préférable.
 
--   Pour les temps de chargement qui ne peut pas être calculés, un indicateur d’occupation comme un curseur ou une animation en rotation embedded (chargement ou indicateur de travail) est approprié.
+- Pour les temps de chargement qui ne peut pas être calculés, un indicateur d’occupation comme un curseur ou une animation en rotation embedded (chargement ou indicateur de travail) est approprié.
 
 ### <a name="animation-as-communicator"></a>Animation en tant que communicator
  Dans l’interface utilisateur de Visual Studio, l’animation fonctionne uniquement comme un outil de communication.  Il est utilisé pour communiquer une variété d’informations, telles que des modifications structurelles dans l’interface utilisateur ; par exemple, quand un menu s’ouvre ou ferme. Animation peut aider à visualiser le comportement dépendant du temps des systèmes complexes, telles que de la visualisation de progression d’installation ou être utilisée pour attirer l’attention des alertes et notifications.
@@ -96,61 +96,61 @@ ms.locfileid: "58948253"
 ##### <a name="data"></a>Données
  Illustrer des informations complexes et de variable :
 
--   Naviguer entre les visualisations informations tels que les graphiques
+- Naviguer entre les visualisations informations tels que les graphiques
 
--   Pas à pas détaillé dans une séquence, la visite guidée et la pagination
+- Pas à pas détaillé dans une séquence, la visite guidée et la pagination
 
--   Appel de détails, pointant vers et mise en évidence des informations spécifiques
+- Appel de détails, pointant vers et mise en évidence des informations spécifiques
 
--   Détails de la superposition et des informations supplémentaires sur un élément ayant le focus
+- Détails de la superposition et des informations supplémentaires sur un élément ayant le focus
 
--   Transformation d’une représentation structurelle ou d’organisation à l’autre
+- Transformation d’une représentation structurelle ou d’organisation à l’autre
 
--   Représentant les modifications au fil du temps à l’aide de curseurs de temps, les roues jog et shuttle et contrôles de transport (lecture, arrêt et pause).
+- Représentant les modifications au fil du temps à l’aide de curseurs de temps, les roues jog et shuttle et contrôles de transport (lecture, arrêt et pause).
 
 ##### <a name="relationships"></a>Relations
 
--   Illustrent comment les éléments sont liés entre eux ou les éléments associés à un élément donné.
+- Illustrent comment les éléments sont liés entre eux ou les éléments associés à un élément donné.
 
--   Afficher les relations parent-enfant et hiérarchies ou les frères
+- Afficher les relations parent-enfant et hiérarchies ou les frères
 
--   Un seul élément génère une autre
+- Un seul élément génère une autre
 
--   Un seul élément réduit à un autre élément
+- Un seul élément réduit à un autre élément
 
--   Un seul élément attaché à un autre
+- Un seul élément attaché à un autre
 
 ##### <a name="state"></a>État
 
--   Mises à jour de contenu.
+- Mises à jour de contenu.
 
--   Sélection et le focus utilisateur
+- Sélection et le focus utilisateur
 
--   Progression
+- Progression
 
--   Erreurs
+- Erreurs
 
 ##### <a name="structure"></a>Structure
 
--   Glissement de la structure sur un nœud
+- Glissement de la structure sur un nœud
 
--   Réorientation
+- Réorientation
 
--   Réduire et agrandir, ou développer et réduire
+- Réduire et agrandir, ou développer et réduire
 
 ##### <a name="sequence"></a>Séquence
 
--   Séquence de diaporama
+- Séquence de diaporama
 
--   Défiler les images
+- Défiler les images
 
 ##### <a name="time"></a>réflexion
 
--   Afficher les modifications dans le temps, d’intervalle de temps et de capture vidéo
+- Afficher les modifications dans le temps, d’intervalle de temps et de capture vidéo
 
--   Déplacer vers mettre, Annuler et rétablir
+- Déplacer vers mettre, Annuler et rétablir
 
--   Restaurer l’état de l’historique
+- Restaurer l’état de l’historique
 
 #### <a name="attract-attention"></a>Attirer votre attention
  Si l’objectif est pour attirer l’attention de l’utilisateur en un seul élément hors plusieurs ou pour avertir l’utilisateur pour les informations mises à jour, une animation peut être appropriée. Par exemple, votre page de démarrage des applications peut-être utiliser un bouton de mise en route qui glisse en place une fois que la page se charge.
@@ -159,43 +159,43 @@ ms.locfileid: "58948253"
 
 ##### <a name="alert"></a>Alerte
 
--   Avertir l’utilisateur, l’attention, afficher la progression
+- Avertir l’utilisateur, l’attention, afficher la progression
 
--   Afficher les que quelque chose est effectuée correctement ou non ou afficher la progression ou les modifications de la progression
+- Afficher les que quelque chose est effectuée correctement ou non ou afficher la progression ou les modifications de la progression
 
--   Demander aux utilisateurs lors d’une tâche, telles que la recherche d’informations en ligne ou en savoir plus sur la tâche actuelle
+- Demander aux utilisateurs lors d’une tâche, telles que la recherche d’informations en ligne ou en savoir plus sur la tâche actuelle
 
 ##### <a name="notifications"></a>Notifications
 
--   Alerter l’utilisateur sur une condition d’erreur
+- Alerter l’utilisateur sur une condition d’erreur
 
--   Interrompre l’utilisateur pour voir s’il souhaite assister à quelque chose d’autre
+- Interrompre l’utilisateur pour voir s’il souhaite assister à quelque chose d’autre
 
--   Doucement informe l’utilisateur un processus terminée ou qui a changé, tel que lorsqu’un téléchargement est terminé.
+- Doucement informe l’utilisateur un processus terminée ou qui a changé, tel que lorsqu’un téléchargement est terminé.
 
 #### <a name="simulate"></a>Simuler
  Cette catégorie couvre physicality et dimensionnalité.
 
--   Illustrer d'où proviennent les objets ou où ils accèdent à
+- Illustrer d'où proviennent les objets ou où ils accèdent à
 
--   Développer et réduire ou ouvrir et fermer
+- Développer et réduire ou ouvrir et fermer
 
--   Panoramique, le défilement et la page active
+- Panoramique, le défilement et la page active
 
--   Empilement et l’ordre de plan
+- Empilement et l’ordre de plan
 
--   Carrousel et accordion
+- Carrousel et accordion
 
--   Retourner et faire pivoter l’interface utilisateur
+- Retourner et faire pivoter l’interface utilisateur
 
 #### <a name="response-and-progress-indicators"></a>Indicateurs de réponse et de progression
  Indicateurs de progression ont quelques avantages importants :
 
--   Les deux indicateurs de progression déterminée et indéterminé rassurer l’utilisateur que le système n’est pas tombé en panne et travaille sur le problème.
+- Les deux indicateurs de progression déterminée et indéterminé rassurer l’utilisateur que le système n’est pas tombé en panne et travaille sur le problème.
 
--   Indicateurs déterminées donner à l’utilisateur que la progression d’une idée de l’avancement de l’action, ainsi que d’un sentiment de plus proches de la fin.
+- Indicateurs déterminées donner à l’utilisateur que la progression d’une idée de l’avancement de l’action, ainsi que d’un sentiment de plus proches de la fin.
 
-##  <a name="BKMK_AnimationPatterns"></a> Modèles d’animation
+## <a name="BKMK_AnimationPatterns"></a> Modèles d’animation
 
 ### <a name="overview"></a>Vue d'ensemble
  Les animations dans Visual Studio sont conçues pour répondre à une fonction spécifique et pas entraver la productivité des utilisateurs. Caractéristiques d’animation générales à respecter pour inclure :
@@ -232,11 +232,11 @@ ms.locfileid: "58948253"
 
 ##### <a name="examples"></a>Exemples
 
--   Masquer les fenêtres Outil
+- Masquer les fenêtres Outil
 
--   Interface utilisateur, telles que IntelliSense et aide sur les paramètres d’éditeur activés par le clavier
+- Interface utilisateur, telles que IntelliSense et aide sur les paramètres d’éditeur activés par le clavier
 
--   Régions de code de développer et réduire
+- Régions de code de développer et réduire
 
 #### <a name="fade-in-and-fade-out"></a>Apparition en fondu et fondu
  Avec ce modèle, un élément d’interface utilisateur passe de non visible (opacité de 0 %) à visible (opacité de 100 %), ou vice versa :
@@ -248,21 +248,21 @@ ms.locfileid: "58948253"
 
 ##### <a name="animation-properties"></a>Propriétés de l’animation
 
--   Opacité de départ : 0 % pour le fondu, 100 % pour le fondu
+- Opacité de départ : 0 % pour le fondu, 100 % pour le fondu
 
--   Opacité de fin : 100 % pour le fondu, 0 % pour le fondu
+- Opacité de fin : 100 % pour le fondu, 0 % pour le fondu
 
--   Durée : 200 millisecondes autonome, 100 millisecondes lorsqu’il est utilisé en tant que partie d’une séquence d’animation de combinaison
+- Durée : 200 millisecondes autonome, 100 millisecondes lorsqu’il est utilisé en tant que partie d’une séquence d’animation de combinaison
 
--   Accélération de style : Sinus InOut
+- Accélération de style : Sinus InOut
 
 ##### <a name="examples"></a>Exemples
 
--   Masquer les fenêtres Outil
+- Masquer les fenêtres Outil
 
--   Menu Ouvrir et fermer
+- Menu Ouvrir et fermer
 
--   Transitions d’onglet en arrière-plan et de premier plan
+- Transitions d’onglet en arrière-plan et de premier plan
 
 #### <a name="color-blend-from-a-to-b"></a>Mélange de couleurs de A à B
  Avec ce modèle, un élément d’interface utilisateur change de couleur A par couleur b :
@@ -274,19 +274,19 @@ ms.locfileid: "58948253"
 
 ##### <a name="animation-properties"></a>Propriétés de l’animation
 
--   Couleur de début : L’interface utilisateur spécifique
+- Couleur de début : L’interface utilisateur spécifique
 
--   Couleur de fin : L’interface utilisateur spécifique
+- Couleur de fin : L’interface utilisateur spécifique
 
--   Durée : 200 millisecondes autonome, 100 millisecondes lorsqu’il est utilisé en tant que partie d’une séquence d’animation de combinaison
+- Durée : 200 millisecondes autonome, 100 millisecondes lorsqu’il est utilisé en tant que partie d’une séquence d’animation de combinaison
 
--   Accélération de style : Sinus InOut
+- Accélération de style : Sinus InOut
 
 ##### <a name="examples"></a>Exemples
 
--   Transitions d’état de fenêtre de document (active, la dernière actives et inactives)
+- Transitions d’état de fenêtre de document (active, la dernière actives et inactives)
 
--   Transitions d’état de fenêtre d’outils (ayant le focus et inactif)
+- Transitions d’état de fenêtre d’outils (ayant le focus et inactif)
 
 #### <a name="expand-and-contract"></a>Être accrus ou réduits
  Avec ce modèle, un élément d’interface utilisateur se développe dans X, Y ou les deux sens :
@@ -298,19 +298,19 @@ ms.locfileid: "58948253"
 
 ##### <a name="animation-properties"></a>Propriétés de l’animation
 
--   Échelle x : % ou une dimension spécifique (en pixels)
+- Échelle x : % ou une dimension spécifique (en pixels)
 
--   Mise à l’échelle Y : % ou une dimension spécifique (en pixels)
+- Mise à l’échelle Y : % ou une dimension spécifique (en pixels)
 
--   Position d’ancrage : En règle générale supérieur gauche (pour les langues de gauche à droite) ou supérieur droit (pour les langues de droite à gauche)
+- Position d’ancrage : En règle générale supérieur gauche (pour les langues de gauche à droite) ou supérieur droit (pour les langues de droite à gauche)
 
--   Durée : 200 millisecondes autonome, 100 millisecondes lorsqu’il est utilisé en tant que partie d’une séquence d’animation de combinaison
+- Durée : 200 millisecondes autonome, 100 millisecondes lorsqu’il est utilisé en tant que partie d’une séquence d’animation de combinaison
 
 ##### <a name="examples"></a>Exemples
 
--   Volet d’Explorateur de l’architecture développer / réduire
+- Volet d’Explorateur de l’architecture développer / réduire
 
--   Élément de Page de démarrage développer / réduire
+- Élément de Page de démarrage développer / réduire
 
 #### <a name="x-y-position-change"></a>X-Y positionner la modification
  Avec ce modèle, un élément d’interface utilisateur change sa position X ou Y ou les deux :
@@ -322,15 +322,15 @@ ms.locfileid: "58948253"
 
 ##### <a name="animation-properties"></a>Propriétés de l’animation
 
--   Position à partir de X et Y : L’interface utilisateur spécifique
+- Position à partir de X et Y : L’interface utilisateur spécifique
 
--   Fin X et Y position : L’interface utilisateur spécifique
+- Fin X et Y position : L’interface utilisateur spécifique
 
--   Chemin d’accès de mouvement : Aucun.
+- Chemin d’accès de mouvement : Aucun.
 
--   Durée : 200 millisecondes autonome, 100 millisecondes lorsqu’il est utilisé en tant que partie d’une séquence d’animation de combinaison
+- Durée : 200 millisecondes autonome, 100 millisecondes lorsqu’il est utilisé en tant que partie d’une séquence d’animation de combinaison
 
--   Accélération de style : Sinus InOut
+- Accélération de style : Sinus InOut
 
 ##### <a name="example"></a>Exemple
  Réorganisation de l’onglet
@@ -345,11 +345,11 @@ ms.locfileid: "58948253"
 
 ##### <a name="animation-properties"></a>Propriétés de l’animation
 
--   Degré de rotation : 360
+- Degré de rotation : 360
 
--   Centre de rotation : Milieu de l’objet
+- Centre de rotation : Milieu de l’objet
 
--   Durée : Continuous
+- Durée : Continuous
 
 ##### <a name="example"></a>Exemple
  Indicateur de progression indéterminée (rotation)

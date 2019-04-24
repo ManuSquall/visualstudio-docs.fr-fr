@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c2be46e61438c555fc7ee7d523b3ff9b758c0a15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5b6e661a79f190e5befdbcf5c28ec0f4bd29ebf4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951174"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061578"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Procédure : créer des classes LINQ to SQL mappées à des tables et à des vues (Concepteur O/R)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ Classes LINQ to SQL qui sont mappées aux tables de base de données et les vues
 
 #### <a name="to-create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>Pour créer des classes LINQ to SQL mappées à des tables ou vues de base de données
 
-1.  Dans **Server**/**Database Explorer**, développez **Tables** ou **vues** et localisez la table de base de données ou afficher ou que vous souhaitez à utiliser dans votre application.
+1. Dans **Server**/**Database Explorer**, développez **Tables** ou **vues** et localisez la table de base de données ou afficher ou que vous souhaitez à utiliser dans votre application.
 
-2.  Faites glisser la table ou la vue vers le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].
+2. Faites glisser la table ou la vue vers le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].
 
      Une classe d'entité est créée et apparaît dans l'aire de conception. La classe d'entité a des propriétés qui mappent aux colonnes de la table ou de la vue sélectionnée.
 
@@ -43,22 +43,22 @@ Classes LINQ to SQL qui sont mappées aux tables de base de données et les vues
 
 #### <a name="to-create-an-object-data-source-based-on-linq-to-sql-entity-classes"></a>Pour créer un objet source de données basé sur des classes d'entité LINQ to SQL
 
-1.  Dans le menu **Générer**, cliquez sur **Générer la solution** pour générer votre projet.
+1. Dans le menu **Générer**, cliquez sur **Générer la solution** pour générer votre projet.
 
-2.  Dans le menu **Données** , cliquez sur **Afficher les sources de données**.
+2. Dans le menu **Données** , cliquez sur **Afficher les sources de données**.
 
-3.  Dans la fenêtre **Sources de données** , cliquez sur **Ajouter une nouvelle source de données**.
+3. Dans la fenêtre **Sources de données** , cliquez sur **Ajouter une nouvelle source de données**.
 
-4.  Dans la page **Choisir un type de source de données**, cliquez sur **Objet**, puis sur **Suivant**.
+4. Dans la page **Choisir un type de source de données**, cliquez sur **Objet**, puis sur **Suivant**.
 
-5.  Développez les nœuds, puis localisez et sélectionnez votre classe.
+5. Développez les nœuds, puis localisez et sélectionnez votre classe.
 
     > [!NOTE]
     > Si la classe **Customer** n’est pas disponible, quittez l’Assistant, générez le projet et réexécutez l’Assistant.
 
-6.  Cliquez sur **Terminer** pour créer la source de données et ajouter la classe d’entité **Customer** à la fenêtre **Sources de données**.
+6. Cliquez sur **Terminer** pour créer la source de données et ajouter la classe d’entité **Customer** à la fenêtre **Sources de données**.
 
-7.  Faites glisser les éléments de la fenêtre **Sources de données** sur le formulaire.
+7. Faites glisser les éléments de la fenêtre **Sources de données** sur le formulaire.
 
 ## <a name="see-also"></a>Voir aussi
 

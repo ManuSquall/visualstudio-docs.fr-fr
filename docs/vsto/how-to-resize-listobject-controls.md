@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6d996cfcfb9dd8c63cf31b203905b486b3a1c82
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1ff4080b7b658af5911a0372562954899628bb92
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598464"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102677"
 ---
 # <a name="how-to-resize-listobject-controls"></a>Procédure : Redimensionner les contrôles ListObject
   Vous définissez la taille d’un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> lorsque vous l’ajoutez à un classeur Microsoft Office Excel. Toutefois, vous souhaiterez peut-être le redimensionner ultérieurement. Par exemple, vous pourriez modifier une liste à deux colonnes en liste à trois colonnes.
@@ -39,48 +39,47 @@ ms.locfileid: "56598464"
 
   ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vers la vidéo") pour une démonstration vidéo connexe, consultez [How do I: Ajouter des colonnes à un objet de liste lié aux données lors de l’exécution ? ](http://go.microsoft.com/fwlink/?LinkID=130318).
 
-##  <a name="designtime"></a> Redimensionner un contrôle ListObject au moment du design
+## <a name="designtime"></a> Redimensionner un contrôle ListObject au moment du design
  Pour redimensionner une liste, vous pouvez cliquer sur l’une des poignées de redimensionnement et la faire glisser, ou vous pouvez redéfinir sa taille dans la boîte de dialogue **Redimensionner la liste** .
 
 ### <a name="to-resize-a-list-by-using-the-resize-list-dialog-box"></a>Pour redimensionner une liste à l’aide de la boîte de dialogue Redimensionner la liste
 
+1. Cliquez n’importe où dans le <xref:Microsoft.Office.Tools.Excel.ListObject> table. Le **outils de tableau** > **conception** onglet du ruban s’affiche.
 
-1.  Cliquez n’importe où dans le <xref:Microsoft.Office.Tools.Excel.ListObject> table. Le **outils de tableau** > **conception** onglet du ruban s’affiche.
-
-2.  Dans la section Propriétés, cliquez sur **redimensionner le tableau**.
+2. Dans la section Propriétés, cliquez sur **redimensionner le tableau**.
 
     ![VSTO_ResizeTable](../vsto/media/vsto-resizetable.png)
 
-3.  Sélectionnez la nouvelle plage de données pour votre table.
+3. Sélectionnez la nouvelle plage de données pour votre table.
 
-4.  Cliquez sur **OK**.
+4. Cliquez sur **OK**.
 
-##  <a name="runtimedoclevel"></a> Redimensionner un contrôle ListObject au moment de l’exécution dans un projet au niveau du document
+## <a name="runtimedoclevel"></a> Redimensionner un contrôle ListObject au moment de l’exécution dans un projet au niveau du document
  Vous pouvez redimensionner un <xref:Microsoft.Office.Tools.Excel.ListObject> contrôle lors de l’exécution à l’aide de la <xref:Microsoft.Office.Tools.Excel.ListObject.Resize%2A> (méthode). Vous ne pouvez pas utiliser cette méthode pour déplacer le contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> vers un nouvel emplacement sur la feuille de calcul. Les en-têtes doivent rester sur la même ligne et le contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> redimensionné doit chevaucher l’objet de liste d’origine. Le contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> redimensionné doit contenir une ligne d’en-tête et au moins une ligne de données.
 
 ### <a name="to-resize-a-list-object-programmatically"></a>Pour redimensionner un objet de liste par programmation
 
-1.  Créez un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> qui couvre les cellules **A1** à **A3** sur `Sheet1`.
+1. Créez un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> qui couvre les cellules **A1** à **A3** sur `Sheet1`.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#6)]
      [!code-vb[Trin_VstcoreHostControlsExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#6)]
 
-2.  Redimensionnez la liste pour inclure les cellules **A1** à **C5**.
+2. Redimensionnez la liste pour inclure les cellules **A1** à **C5**.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#7)]
      [!code-vb[Trin_VstcoreHostControlsExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#7)]
 
-##  <a name="runtimeaddin"></a> Redimensionner un contrôle ListObject au moment de l’exécution dans un projet de complément VSTO
+## <a name="runtimeaddin"></a> Redimensionner un contrôle ListObject au moment de l’exécution dans un projet de complément VSTO
  Vous pouvez redimensionner un <xref:Microsoft.Office.Tools.Excel.ListObject> contrôle sur une feuille de calcul ouverte lors de l’exécution. Pour plus d’informations sur l’ajout d’un <xref:Microsoft.Office.Tools.Excel.ListObject> le contrôle à une feuille de calcul en utilisant un complément, VSTO, consultez [Comment : Ajouter des contrôles ListObject aux feuilles de calcul](../vsto/how-to-add-listobject-controls-to-worksheets.md).
 
 ### <a name="to-resize-a-list-object-programmatically"></a>Pour redimensionner un objet de liste par programmation
 
-1.  Créez un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> qui couvre les cellules **A1** à **A3** sur `Sheet1`.
+1. Créez un contrôle <xref:Microsoft.Office.Tools.Excel.ListObject> qui couvre les cellules **A1** à **A3** sur `Sheet1`.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#12](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#12)]
      [!code-vb[Trin_Excel_Dynamic_Controls#12](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#12)]
 
-2.  Redimensionnez la liste pour inclure les cellules **A1** à **C5**.
+2. Redimensionnez la liste pour inclure les cellules **A1** à **C5**.
 
      [!code-csharp[Trin_Excel_Dynamic_Controls#13](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#13)]
      [!code-vb[Trin_Excel_Dynamic_Controls#13](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#13)]

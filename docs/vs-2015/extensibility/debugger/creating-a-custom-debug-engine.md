@@ -12,12 +12,12 @@ ms.assetid: 52794238-6fae-451c-bf1c-99f344c6f173
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a0617d23b49af182504406417023b0d907cadf27
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 829e484ffe4968cdb89ff04e4e7f145decd07c9c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947408"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111517"
 ---
 # <a name="creating-a-custom-debug-engine"></a>Création d’un moteur de débogage personnalisé
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,15 +31,15 @@ Un moteur de débogage (dé) est un composant qui permet le débogage d’archit
   
  Création d’un dé se compose des étapes suivantes :  
   
-1.  L’inscription d’un dé avec Visual Studio  
+1. L’inscription d’un dé avec Visual Studio  
   
-2.  Activation d’un programme à déboguer  
+2. Activation d’un programme à déboguer  
   
-3.  Évaluation de contrôle et l’état d’exécution  
+3. Évaluation de contrôle et l’état d’exécution  
   
-4.  Envoi d’événements  
+4. Envoi d’événements  
   
-5.  Arrêt et détachement  
+5. Arrêt et détachement  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Inscription d’un moteur de débogage personnalisé](../../extensibility/debugger/registering-a-custom-debug-engine.md)  

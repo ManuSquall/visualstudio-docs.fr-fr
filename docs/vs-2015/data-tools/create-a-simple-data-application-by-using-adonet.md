@@ -14,18 +14,17 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f3c5dd921ab9c86d197d22aea63bad86264bb5b
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 234c289cd039485163aa201516c418bacaed590b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58949613"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047423"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Créer une application de données simple à l’aide d’ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
-Quand vous créez une application qui manipule les données d'une base de données, vous effectuez des tâches élémentaires, comme définir les chaînes de connexion, insérer les données et exécuter les procédures stockées. En suivant cette rubrique, vous pouvez découvrir comment interagir avec une base de données à partir d’une application de « formulaires de données » de Windows Forms simple à l’aide de Visual C# ou Visual Basic et ADO.NET.  Toutes les technologies de données .NET, y compris les datasets, LINQ to SQL et Entity Framework — finalement les étapes qui sont très similaires à celles présentées dans cet article.  
+Quand vous créez une application qui manipule les données d'une base de données, vous effectuez des tâches élémentaires, comme définir les chaînes de connexion, insérer les données et exécuter les procédures stockées. En suivant cette rubrique, vous pouvez découvrir comment interagir avec une base de données à partir d’une application de « formulaires de données » de Windows Forms simple à l’aide de Visual c# ou Visual Basic et ADO.NET.  Toutes les technologies de données .NET, y compris les datasets, LINQ to SQL et Entity Framework — finalement les étapes qui sont très similaires à celles présentées dans cet article.  
   
  Cet article montre un moyen simple d’obtenir des données en dehors d’une base de données de manière très rapide. Si votre application a besoin de modifier les données de manières non triviale et mettre à jour de la base de données, vous devez envisager l’utilisation de Entity Framework et à l’aide de la liaison de données à synchroniser automatiquement les contrôles d’interface utilisateur pour les modifications dans les données sous-jacentes.  
   
@@ -34,17 +33,17 @@ Quand vous créez une application qui manipule les données d'une base de donné
   
  **Dans cette rubrique**  
   
--   [Configurer la base de données](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_setupthesampledatabase)  
+- [Configurer la base de données](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_setupthesampledatabase)  
   
--   [Créer les formulaires et ajouter des contrôles](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_createtheformsandaddcontrols)  
+- [Créer les formulaires et ajouter des contrôles](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_createtheformsandaddcontrols)  
   
--   [Store de la chaîne de connexion](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_storetheconnectionstring)  
+- [Store de la chaîne de connexion](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_storetheconnectionstring)  
   
--   [Récupérer la chaîne de connexion](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_retrievetheconnectionstring)  
+- [Récupérer la chaîne de connexion](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_retrievetheconnectionstring)  
   
--   [Écrivez le code des formulaires](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_writethecodefortheforms)  
+- [Écrivez le code des formulaires](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_writethecodefortheforms)  
   
--   [Tester votre application](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_testyourapplication)  
+- [Tester votre application](../data-tools/create-a-simple-data-application-by-using-adonet.md#BKMK_testyourapplication)  
   
 ## <a name="prerequisites"></a>Prérequis  
  Pour créer l'application, vous aurez besoin des éléments suivants :  
@@ -57,12 +56,12 @@ Quand vous créez une application qui manipule les données d'une base de donné
   
 - Chaîne de connexion de la base de données, une fois que vous l'avez configurée. Vous pouvez trouver cette valeur en ouvrant **Explorateur d’objets SQL Server**, ouvrez le menu contextuel pour la base de données, sélectionnez **propriétés**, puis faites défiler jusqu'à la **ConnectionString** propriété.  
   
-  Cette rubrique suppose que vous êtes familiarisé avec les fonctionnalités de base de l'IDE de Visual Studio et que vous pouvez créer une application Windows Forms, ajouter des formulaires à ce projet, placer des boutons et autres contrôles sur les formulaires, définir les propriétés de ces contrôles et coder des événements simples. Si vous n’êtes pas familiarisé avec ces tâches, nous vous suggérons d’effectuer la [mise en route avec Visual C# et Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) avant de commencer cette rubrique.  
+  Cette rubrique suppose que vous êtes familiarisé avec les fonctionnalités de base de l'IDE de Visual Studio et que vous pouvez créer une application Windows Forms, ajouter des formulaires à ce projet, placer des boutons et autres contrôles sur les formulaires, définir les propriétés de ces contrôles et coder des événements simples. Si vous n’êtes pas familiarisé avec ces tâches, nous vous suggérons d’effectuer la [mise en route avec Visual c# et Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) avant de commencer cette rubrique.  
   
-##  <a name="BKMK_setupthesampledatabase"></a> Configurer la base de données  
+## <a name="BKMK_setupthesampledatabase"></a> Configurer la base de données  
  L'exemple de base de données pour cette procédure pas à pas inclut les tables Customer et Orders. Initialement, les tables ne contiennent pas de données, mais vous les ajouterez quand vous exécuterez l'application que vous allez créer. La base de données dispose également de cinq procédures stockées simples. [Créer une base de données SQL à l’aide d’un script](../data-tools/create-a-sql-database-by-using-a-script.md) contient un script Transact-SQL qui crée les tables, les clés primaires et étrangères, les contraintes et les procédures stockées.  
   
-##  <a name="BKMK_createtheformsandaddcontrols"></a> Créer les formulaires et ajouter des contrôles  
+## <a name="BKMK_createtheformsandaddcontrols"></a> Créer les formulaires et ajouter des contrôles  
   
 1. Créer un projet pour une application Windows Forms et nommez-le SimpleDataApp.  
   
@@ -70,11 +69,11 @@ Quand vous créez une application qui manipule les données d'une base de donné
   
 2. Ajoutez deux formulaires Windows à votre projet afin qu’il comporte trois formulaires, puis attribuez-leur les noms suivants :  
   
-   -   Navigation  
+   - Navigation  
   
-   -   NewCustomer  
+   - NewCustomer  
   
-   -   FillOrCancel  
+   - FillOrCancel  
   
 3. Pour chaque formulaire, ajoutez les zones de texte, les boutons et les autres contrôles indiqués dans les illustrations suivantes. Pour chaque contrôle, définissez les propriétés que les tables décrivent.  
   
@@ -120,33 +119,33 @@ Quand vous créez une application qui manipule les données d'une base de donné
 |Bouton|Name = btnFillOrder|  
 |Bouton|Name = btnFinishUpdates|  
   
-##  <a name="BKMK_storetheconnectionstring"></a> Store de la chaîne de connexion  
+## <a name="BKMK_storetheconnectionstring"></a> Store de la chaîne de connexion  
  Quand votre application tente d'ouvrir une connexion à la base de données, elle doit avoir accès à la chaîne de connexion. Pour éviter d’entrer la chaîne manuellement sur chaque formulaire, stocker la chaîne dans le fichier App.config dans votre projet, puis créez une méthode qui retourne la chaîne lorsque la méthode est appelée à partir de n’importe quel formulaire de votre application.  
   
  Vous pouvez trouver la chaîne de connexion dans **Explorateur d’objets SQL Server** en double-cliquant sur la base de données, en sélectionnant **propriétés**, puis en recherchant la propriété ConnectionString. Utilisez Ctrl + A pour sélectionner la chaîne.  
   
-1.  Dans **l’Explorateur de solutions**, sélectionnez le **propriétés** nœud sous le projet, puis sélectionnez **Settings.settings**.  
+1. Dans **l’Explorateur de solutions**, sélectionnez le **propriétés** nœud sous le projet, puis sélectionnez **Settings.settings**.  
   
-2.  Dans le **nom** colonne, entrez `connString`.  
+2. Dans le **nom** colonne, entrez `connString`.  
   
-3.  Dans le **Type** liste, sélectionnez **(chaîne de connexion)**.  
+3. Dans le **Type** liste, sélectionnez **(chaîne de connexion)**.  
   
-4.  Dans le **étendue** liste, sélectionnez **Application**.  
+4. Dans le **étendue** liste, sélectionnez **Application**.  
   
-5.  Dans le **valeur** colonne, entrez votre chaîne de connexion (sans les guillemets à l’extérieur), puis enregistrez vos modifications.  
+5. Dans le **valeur** colonne, entrez votre chaîne de connexion (sans les guillemets à l’extérieur), puis enregistrez vos modifications.  
   
 > [!NOTE]
 >  Dans une application réelle, vous devez stocker en toute sécurité, comme décrit dans la chaîne de connexion [chaînes de connexion et les fichiers de Configuration](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8).  
   
-##  <a name="BKMK_retrievetheconnectionstring"></a> Récupérer la chaîne de connexion  
+## <a name="BKMK_retrievetheconnectionstring"></a> Récupérer la chaîne de connexion  
   
-1.  Dans la barre de menus, sélectionnez **projet** > **ajouter une référence**, puis ajoutez une référence à System.Configuration.dll.  
+1. Dans la barre de menus, sélectionnez **projet** > **ajouter une référence**, puis ajoutez une référence à System.Configuration.dll.  
   
-2.  Dans la barre de menus, sélectionnez **projet** > **ajouter une classe** à ajouter un fichier de classe à votre projet, puis nommez le fichier `Utility`.  
+2. Dans la barre de menus, sélectionnez **projet** > **ajouter une classe** à ajouter un fichier de classe à votre projet, puis nommez le fichier `Utility`.  
   
      Visual Studio crée le fichier et l’affiche dans **l’Explorateur de solutions**.  
   
-3.  Dans le fichier Utility, remplacez le code d'espace réservé par le code suivant. Notez les commentaires numérotés (précédés de Util-) qui identifient les sections du code. Le tableau qui suit le code souligne des points clés.  
+3. Dans le fichier Utility, remplacez le code d'espace réservé par le code suivant. Notez les commentaires numérotés (précédés de Util-) qui identifient les sections du code. Le tableau qui suit le code souligne des points clés.  
   
     ```csharp  
     using System;  
@@ -218,16 +217,16 @@ Quand vous créez une application qui manipule les données d'une base de donné
     |-------------|-----------------|  
     |Util-1|Ajouter l’espace de noms `System.Configuration`|  
     |Util-2|Définissez une variable `returnValue` et initialisez-la sur `null` (C#) ou `Nothing` (Visual Basic).|  
-    |Util-3|Même si vous avez entré `connString` comme nom de la chaîne de connexion dans le **propriétés** fenêtre, vous devez spécifier `"SimpleDataApp.Properties.Settings.connString"` (C#) ou `"SimpleDataApp.My.MySettings.connString"` (Visual Basic) dans le code.|  
+    |Util-3|Même si vous avez entré `connString` comme nom de la chaîne de connexion dans le **propriétés** fenêtre, vous devez spécifier `"SimpleDataApp.Properties.Settings.connString"` (c#) ou `"SimpleDataApp.My.MySettings.connString"` (Visual Basic) dans le code.|  
   
-##  <a name="BKMK_writethecodefortheforms"></a> Écrivez le code des formulaires  
+## <a name="BKMK_writethecodefortheforms"></a> Écrivez le code des formulaires  
  Cette section contient des vues d'ensemble de ce que fait chaque formulaire et indique le code qui crée les formulaires. Les commentaires numérotés identifient des sections du code.  
   
 ### <a name="navigation-form"></a>Formulaire Navigation  
  Le formulaire Navigation s'ouvre quand vous exécutez l'application. Le bouton **Ajouter un compte** ouvre le formulaire NewCustomer. Le bouton **Remplir ou annuler les commandes** ouvre le formulaire FillOrCancel. Le bouton **Quitter** ferme l’application.  
   
 #### <a name="make-the-navigation-form-the-startup-form"></a>Faire du formulaire Navigation le formulaire de démarrage  
- Si vous utilisez C#, dans **l’Explorateur de solutions**, ouvrez le fichier Program.cs et modifiez la `Application.Run` ligne à ceci : `Application.Run(new Navigation());`  
+ Si vous utilisez c#, dans **l’Explorateur de solutions**, ouvrez le fichier Program.cs et modifiez la `Application.Run` ligne à ceci : `Application.Run(new Navigation());`  
   
  Si vous utilisez Visual Basic, dans **l’Explorateur de solutions**, ouvrez le **propriétés** fenêtre, sélectionnez le **Application** onglet, puis sélectionnez  **SimpleDataApp.Navigation** dans le **formulaire de démarrage** liste.  
   
@@ -1140,5 +1139,5 @@ End Namespace
 |FC-8|Ajoutez le code au gestionnaire d'événements Click pour `btnFillOrder`. Ce code exécute la procédure stockée `Sales.uspFillOrder`.|  
 |FC-9|Créez une méthode pour vérifier que `OrderID` est prêt à envoyer en tant que paramètre à la `SqlCommand` objet.<br /><br /> -Assurez-vous que qu’un ID a été entré dans `txtOrderID`.<br />-Utilisez `Regex.IsMatch` pour définir un contrôle simple des caractères de type non entier.<br />-Vous avez déclaré le `parsedOrderID` variable au niveau FC-2.<br />-Si l’entrée est valide, convertir le texte en entier et stockez la valeur dans la `parsedOrderID` variable.<br />-Permet d’encapsuler le `isOrderID` méthode autour de la `btnFindByOrderID`, `btnCancelOrder`, et `btnFillOrder` gestionnaires d’événements Click.|  
   
-##  <a name="BKMK_testyourapplication"></a> Tester votre application  
+## <a name="BKMK_testyourapplication"></a> Tester votre application  
  Sélectionnez la touche F5 pour générer et tester votre application après avoir codé chaque gestionnaire d’événements Click, puis après avoir terminé le codage.

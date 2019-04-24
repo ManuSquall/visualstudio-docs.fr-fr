@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a4a8a8dfdbf34a52e48a47d691436188cca9c70
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 79f991954c1c54811496628576283c3c0b4330a2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951928"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065107"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Impossible de créer une association &lt;nom de l’association&gt;. Les types de propriétés ne correspondent pas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Impossible de créer une association \<nom de l’association>. Les types de propriétés ne correspondent pas. Les propriétés n’ont pas de types correspondants : \<noms des propriétés>.  
   
  Les associations sont définies par les **Propriétés d’association** sélectionnées dans la boîte de dialogue **Éditeur d’associations**. Les propriétés de part et d'autre de l'association doivent avoir le même type de données.  
@@ -28,13 +27,13 @@ Impossible de créer une association \<nom de l’association>. Les types de pro
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
-1.  Examinez le message et prenez note des propriétés mentionnées dans le message.  
+1. Examinez le message et prenez note des propriétés mentionnées dans le message.  
   
-2.  Cliquez sur **OK** pour fermer la boîte de dialogue.  
+2. Cliquez sur **OK** pour fermer la boîte de dialogue.  
   
-3.  Inspectez les **Propriétés d’association** et sélectionnez des propriétés du même type de données.  
+3. Inspectez les **Propriétés d’association** et sélectionnez des propriétés du même type de données.  
   
-4.  Cliquez sur **OK**.  
+4. Cliquez sur **OK**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Guide pratique pour Créer une association (relation) entre les classes LINQ to SQL (Concepteur O/R)](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)   

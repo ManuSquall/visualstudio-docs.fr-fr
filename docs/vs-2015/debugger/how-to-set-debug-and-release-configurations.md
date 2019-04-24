@@ -35,12 +35,12 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 93aa6d9f6e821dba012009e90ba6f9be51641703
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: da8b3b32eae5d3045216f562dc7db25fb1f3264a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938947"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048190"
 ---
 # <a name="how-to-set-debug-and-release-configurations"></a>Procédure : Jeu de Configurations Debug et Release
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,9 +57,9 @@ Les projets Visual Studio ont des configurations Release et Debug distinctes pou
   
 ### <a name="to-change-the-build-configuration"></a>Pour changer la configuration de build  
   
-1.  Dans le menu Générer : cliquez sur **générer / Gestionnaire de Configuration**, puis sélectionnez **déboguer** ou **version**.  
+1. Dans le menu Générer : cliquez sur **générer / Gestionnaire de Configuration**, puis sélectionnez **déboguer** ou **version**.  
   
-2.  Dans la barre d’outils, choisissez **déboguer** ou **version** à partir de la **Configurations de Solution** zone de liste.  
+2. Dans la barre d’outils, choisissez **déboguer** ou **version** à partir de la **Configurations de Solution** zone de liste.  
   
      ![configuration de build de barre d’outils](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")  
   

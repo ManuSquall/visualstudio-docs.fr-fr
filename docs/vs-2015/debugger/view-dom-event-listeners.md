@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ed3a4e4f67ef8a7cc1e13e513d2f03db5f755363
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 12a4f736217374eefa32dda30111da5e71fbab39
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001789"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110477"
 ---
 # <a name="view-dom-event-listeners"></a>Afficher les écouteurs d'événements DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,23 +41,23 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 
 #### <a name="to-view-event-listeners"></a>Pour afficher les écouteurs d'événements
 
-1.  Dans Visual Studio, créez une application JavaScript qui utilise le modèle de projet Application Pivot Windows Phone.
+1. Dans Visual Studio, créez une application JavaScript qui utilise le modèle de projet Application Pivot Windows Phone.
 
-2.  Avec le modèle est ouvert dans Visual Studio, sélectionnez **Emulator 8.1 WVGA 4 pouces 512 Mo** dans la liste déroulante dans la barre d’outils de débogage dans le débogueur :
+2. Avec le modèle est ouvert dans Visual Studio, sélectionnez **Emulator 8.1 WVGA 4 pouces 512 Mo** dans la liste déroulante dans la barre d’outils de débogage dans le débogueur :
 
      ![Sélection d’une cible de débogage](../debugger/media/js-dom-debug-target-emu.png "JS_DOM_Debug_Target_Emu")
 
-3.  Appuyez sur F5 pour exécuter l'application en mode débogage.
+3. Appuyez sur F5 pour exécuter l'application en mode débogage.
 
-4.  Dans l’application en cours d’exécution, accédez à la **Section 3** élément de tableau croisé dynamique.
+4. Dans l’application en cours d’exécution, accédez à la **Section 3** élément de tableau croisé dynamique.
 
-5.  Passez dans Visual Studio (Alt+Tab ou F12).
+5. Passez dans Visual Studio (Alt+Tab ou F12).
 
-6.  Dans l'explorateur DOM, sélectionnez `Find` dans le coin supérieur droit.
+6. Dans l'explorateur DOM, sélectionnez `Find` dans le coin supérieur droit.
 
-7.  Tapez `ListView`, puis appuyez sur Entrée.
+7. Tapez `ListView`, puis appuyez sur Entrée.
 
-8.  Si nécessaire, choisissez le **suivant** bouton pour rechercher le `DIV` élément qui représente le `ListView` contrôle (cet élément a un `data-win-control` valeur `WinJS.UI.ListView`).
+8. Si nécessaire, choisissez le **suivant** bouton pour rechercher le `DIV` élément qui représente le `ListView` contrôle (cet élément a un `data-win-control` valeur `WinJS.UI.ListView`).
 
      L'élément `DIV` doit maintenant être sélectionné dans l'Explorateur DOM.
 
@@ -75,16 +75,16 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 
      Le **événements** onglet affiche les écouteurs d’événements pour n’importe quel élément que vous choisissez dans la liste hiérarchique.
 
-###  <a name="Tips"></a> Conseils pour résoudre les problèmes liés aux écouteurs d’événements
+### <a name="Tips"></a> Conseils pour résoudre les problèmes liés aux écouteurs d’événements
  Dans certains scénarios d’application, les écouteurs d’événements doivent être explicitement supprimés à l’aide de [removeEventListener](http://msdn.microsoft.com/library/ie/ff975250\(v=vs.85\).aspx). Utilisez le **événements** onglet dans l’Explorateur DOM pour tester si les écouteurs d’événements ont été supprimés à partir d’éléments DOM lors de l’exécution de code. Voici quelques conseils qui vous aideront à résoudre ces types de problèmes :
 
--   Pour les applications qui utilisent le modèle de navigation de page unique implémentée dans Visual Studio [modèles de projet](http://msdn.microsoft.com/library/windows/apps/hh758331.aspx), il est généralement pas nécessaire supprimer des écouteurs d’événements inscrits pour les objets, tels que les éléments DOM, qui font partie d’une page. Dans ce scénario, un élément DOM et ses écouteurs d'événements associés ont la même durée de vie et peuvent être récupérés par le garbage collector.
+- Pour les applications qui utilisent le modèle de navigation de page unique implémentée dans Visual Studio [modèles de projet](http://msdn.microsoft.com/library/windows/apps/hh758331.aspx), il est généralement pas nécessaire supprimer des écouteurs d’événements inscrits pour les objets, tels que les éléments DOM, qui font partie d’une page. Dans ce scénario, un élément DOM et ses écouteurs d'événements associés ont la même durée de vie et peuvent être récupérés par le garbage collector.
 
--   Si la durée de vie de l'objet ou de l'élément DOM est différente de l'écouteur d'événements associé, il se peut que vous deviez appeler la méthode `removeEventListener`. Par exemple, si vous utilisez l'événement `window.onresize`, vous devrez peut-être supprimer l'écouteur d'événements si vous quittez la page où vous gérez l'événement.
+- Si la durée de vie de l'objet ou de l'élément DOM est différente de l'écouteur d'événements associé, il se peut que vous deviez appeler la méthode `removeEventListener`. Par exemple, si vous utilisez l'événement `window.onresize`, vous devrez peut-être supprimer l'écouteur d'événements si vous quittez la page où vous gérez l'événement.
 
--   Si `removeEventListener` ne réussit pas à supprimer l'écouteur spécifié, il se peut qu'il soit appelé sur une autre instance de l'objet. Vous pouvez utiliser la [bind, méthode (Function)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) méthode pour résoudre ce problème lorsque vous ajoutez l’écouteur.
+- Si `removeEventListener` ne réussit pas à supprimer l'écouteur spécifié, il se peut qu'il soit appelé sur une autre instance de l'objet. Vous pouvez utiliser la [bind, méthode (Function)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) méthode pour résoudre ce problème lorsque vous ajoutez l’écouteur.
 
--   Pour supprimer un écouteur d’événements qui a été ajouté à l’aide [bind, méthode (Function)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) ou en utilisant une fonction anonyme, stockez une instance de la fonction lorsque vous ajoutez l’écouteur. Voici une seule façon d’utiliser ce modèle sans risque :
+- Pour supprimer un écouteur d’événements qui a été ajouté à l’aide [bind, méthode (Function)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) ou en utilisant une fonction anonyme, stockez une instance de la fonction lorsque vous ajoutez l’écouteur. Voici une seule façon d’utiliser ce modèle sans risque :
 
     ```javascript
     // You could use the following code within the constructor function of an object, or
@@ -104,9 +104,9 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
     elem.addEventListener('mouseup', this._handlerFunc.bind(this));
     ```
 
--   Vous ne pouvez pas supprimer un écouteur d'événements en utilisant `removeEventListener` si vous l'avez ajouté à l'aide de l'attribut `obj.on<eventname>`, tel que `window.onresize = handlerFunc`.
+- Vous ne pouvez pas supprimer un écouteur d'événements en utilisant `removeEventListener` si vous l'avez ajouté à l'aide de l'attribut `obj.on<eventname>`, tel que `window.onresize = handlerFunc`.
 
--   Utiliser l’Analyseur de mémoire JavaScript à [mémoire JavaScript](../profiling/javascript-memory.md) dans votre application. Les écouteurs d'événements qui doivent être explicitement supprimés peuvent apparaître comme une fuite de mémoire.
+- Utiliser l’Analyseur de mémoire JavaScript à [mémoire JavaScript](../profiling/javascript-memory.md) dans votre application. Les écouteurs d'événements qui doivent être explicitement supprimés peuvent apparaître comme une fuite de mémoire.
 
 ## <a name="see-also"></a>Voir aussi
 

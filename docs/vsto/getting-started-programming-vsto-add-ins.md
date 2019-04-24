@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1b16b8e4e15c304f6e349d2f831ca879a4f7a183
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7b709012dafe0db3dcc0959908a1e6b4d9e07e21
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618833"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061985"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>Commencer à programmer des Compléments VSTO
   Vous pouvez utiliser des compléments VSTO pour automatiser des applications Microsoft Office, étendre les fonctionnalités de l’application et personnaliser son interface utilisateur. Pour plus d’informations sur les différences de compléments VSTO à d’autres types de solutions Office que vous pouvez créer à l’aide de Visual Studio, consultez [présentation du développement de solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -40,19 +40,19 @@ ms.locfileid: "56618833"
 
  Pour plus d'informations sur les modèles objet d'applications Microsoft Office spécifiques, consultez les rubriques suivantes :
 
--   [Vue d’ensemble du modèle d’objet Excel](../vsto/excel-object-model-overview.md)
+- [Vue d’ensemble du modèle d’objet Excel](../vsto/excel-object-model-overview.md)
 
--   [Vue d’ensemble du modèle d’objet Word](../vsto/word-object-model-overview.md)
+- [Vue d’ensemble du modèle d’objet Word](../vsto/word-object-model-overview.md)
 
--   [Vue d’ensemble du modèle d’objet Outlook](../vsto/outlook-object-model-overview.md)
+- [Vue d’ensemble du modèle d’objet Outlook](../vsto/outlook-object-model-overview.md)
 
--   [Solutions InfoPath](../vsto/infopath-solutions.md)
+- [Solutions InfoPath](../vsto/infopath-solutions.md)
 
--   [Solutions PowerPoint](../vsto/powerpoint-solutions.md)
+- [Solutions PowerPoint](../vsto/powerpoint-solutions.md)
 
--   [Solutions Project](../vsto/project-solutions.md)
+- [Solutions Project](../vsto/project-solutions.md)
 
--   [Présentation du modèle objet de Visio](../vsto/visio-object-model-overview.md)
+- [Présentation du modèle objet de Visio](../vsto/visio-object-model-overview.md)
 
 ## <a name="customize-the-user-interface-of-applications"></a>Personnaliser l’interface utilisateur des applications
  Il existe différentes façons de personnaliser l’interface utilisateur de l’application hôte à l’aide un VSTO Add-in :

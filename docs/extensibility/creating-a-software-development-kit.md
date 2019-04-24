@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e9f75cfd94ccbf4262771f6278b429006eba939
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: e9882fd89e149a8b24813ec9edb53e86b0e72b59
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324066"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052075"
 ---
 # <a name="create-a-software-development-kit"></a>Création d’un kit de développement logiciel
 Un kit de développement logiciel (SDK) est une collection d’API que vous pouvez référencer en tant qu’un seul élément dans Visual Studio. Le **Gestionnaire de références** boîte de dialogue répertorie tous les kits de développement logiciel qui sont pertinents pour le projet. Lorsque vous ajoutez un kit SDK à un projet, les API sont disponibles dans Visual Studio.
@@ -30,7 +30,7 @@ Un kit de développement logiciel (SDK) est une collection d’API que vous pouv
 
 - [SDK d’extension](#ExtensionSDKs)
 
-##  <a name="PlatformSDKs"></a> Kits SDK de plateforme
+## <a name="PlatformSDKs"></a> Kits SDK de plateforme
  Les kits de développement Platform SDK sont requis pour développer des applications pour une plateforme. Par exemple, le [!INCLUDE[win81](../debugger/includes/win81_md.md)] SDK est nécessaire pour développer des applications pour [!INCLUDE[win81](../debugger/includes/win81_md.md)].
 
 ### <a name="installation"></a>Installation
@@ -50,7 +50,6 @@ Un kit de développement logiciel (SDK) est une collection d’API que vous pouv
                         \[arch]
 ```
 
-
 | Nœud | Description |
 |------------------------| - |
 | *Références* dossier | Contient les fichiers binaires qui contiennent des API qui peuvent être codées. Il peut s’agir de fichiers de métadonnées Windows (WinMD) ou des assemblys. |
@@ -59,7 +58,7 @@ Un kit de développement logiciel (SDK) est une collection d’API que vous pouv
 | *Architecture* dossier | Pris en charge *architecture* dossier peut exister. Visual Studio prend en charge les architectures suivantes : x86, x64, ARM et neutre. Remarque : Win32 est mappé à x86 et AnyCPU mappe à neutre.<br /><br /> MSBuild recherche uniquement sous *\CommonConfiguration\neutral* de développement logiciel Platform SDK. |
 | *SDKManifest.xml* | Ce fichier décrit comment Visual Studio doit utiliser le Kit de développement. Examinez le manifeste SDK pour [!INCLUDE[win81](../debugger/includes/win81_md.md)]:<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName :** La valeur que l’Explorateur d’objets affiche dans la liste de navigation.<br /><br /> **PlatformIdentity :** L’existence de cet attribut indique à Visual Studio et MSBuild que le SDK est un kit platform SDK et que les références ajoutées à partir de celui-ci ne doit pas être copiés localement.<br /><br /> **TargetFramework :** Cet attribut est utilisé par Visual Studio pour vous assurer qu’uniquement les projets qui ciblent les Frameworks mêmes tel que spécifié dans la valeur de cet attribut peut consommer le Kit de développement.<br /><br /> **MinVSVersion :** Cet attribut est utilisé par Visual Studio pour utiliser uniquement les kits de développement logiciel qui s’y appliquent.<br /><br /> **Référence :** Cet attribut doit être spécifié pour que les références qui contiennent des contrôles. Pour plus d’informations sur la façon de spécifier si une référence contient des contrôles, voir ci-dessous. |
 
-##  <a name="ExtensionSDKs"></a> SDK d’extension
+## <a name="ExtensionSDKs"></a> SDK d’extension
  Les sections suivantes décrivent ce que vous devez faire pour déployer un kit SDK d’extension.
 
 ### <a name="installation"></a>Installation
@@ -73,13 +72,13 @@ Un kit de développement logiciel (SDK) est une collection d’API que vous pouv
 
  Si vous souhaitez utiliser un autre emplacement, vous devez effectuer une des deux opérations :
 
-1.  Spécifier dans une clé de Registre :
+1. Spécifier dans une clé de Registre :
 
      **Kits de développement logiciel HKLM\Software\Microsoft\Microsoft\<plateforme cible > \v < numéro de version de plateforme\>\ExtensionSDKs\<SDKName >\<SDKVersion >**\
 
      et ajoutez une sous-clé (par défaut) qui a la valeur `<path to SDK><SDKName><SDKVersion>`.
 
-2.  Ajoutez la propriété MSBuild `SDKReferenceDirectoryRoot` à votre fichier projet. La valeur de cette propriété est une liste délimitée par des points-virgules des répertoires dans lesquels résident le SDK d’Extension que vous souhaitez référencer.
+2. Ajoutez la propriété MSBuild `SDKReferenceDirectoryRoot` à votre fichier projet. La valeur de cette propriété est une liste délimitée par des points-virgules des répertoires dans lesquels résident le SDK d’Extension que vous souhaitez référencer.
 
 ### <a name="installation-layout"></a>Disposition d’installation
  SDK d’extension ont la disposition d’installation suivantes :
@@ -174,7 +173,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 
     WindowsAppContainer identifie les projets pour [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] applications.
 
-8. SupportPrefer32Bit : Valeurs prises en charge sont « True » et « False ». La valeur par défaut est « True ». Si la valeur est définie sur « False », MSBuild retourne une erreur pour [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] projets (ou un avertissement pour les projets de bureau) si le projet qui référence le SDK Prefer32Bit activé. Pour plus d’informations sur Prefer32Bit, consultez [Build, page du Concepteur de projet (C#)](../ide/reference/build-page-project-designer-csharp.md) ou [page compiler, Concepteur de projets (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md).
+8. SupportPrefer32Bit : Valeurs prises en charge sont « True » et « False ». La valeur par défaut est « True ». Si la valeur est définie sur « False », MSBuild retourne une erreur pour [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] projets (ou un avertissement pour les projets de bureau) si le projet qui référence le SDK Prefer32Bit activé. Pour plus d’informations sur Prefer32Bit, consultez [Build, page du Concepteur de projet (c#)](../ide/reference/build-page-project-designer-csharp.md) ou [page compiler, Concepteur de projets (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md).
 
 9. SupportedArchitectures : Une liste délimitée par des architectures prenant en charge le Kit de développement. MSBuild affiche un avertissement si l’architecture SDK ciblé dans le projet de consommation n’est pas pris en charge. Si cet attribut n’est pas spécifié, MSBuild affiche jamais ce type d’alerte.
 
@@ -192,10 +191,10 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 
 16. Référence de fichier : Spécifiée pour que les références qui contiennent des contrôles ou sont les Winmd natifs. Pour plus d’informations sur la façon de spécifier si une référence contient des contrôles, consultez [spécifier l’emplacement des éléments de boîte à outils](#ToolboxItems) ci-dessous.
 
-##  <a name="ToolboxItems"></a> Spécifiez l’emplacement des éléments de boîte à outils
+## <a name="ToolboxItems"></a> Spécifiez l’emplacement des éléments de boîte à outils
  L’élément ToolBoxItems de la *SDKManifest.xml* schéma spécifie la catégorie et l’emplacement des éléments de boîte à outils dans les kits SDK de plateforme et d’extension. Les exemples suivants montrent comment spécifier des emplacements différents. Cela s’applique aux références WinMD ou DLL.
 
-1.  Placer des contrôles dans la catégorie par défaut de boîte à outils.
+1. Placer des contrôles dans la catégorie par défaut de boîte à outils.
 
     ```
     <File Reference = "sample.winmd">
@@ -203,7 +202,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-2.  Placez les contrôles sous un nom de catégorie particulier.
+2. Placez les contrôles sous un nom de catégorie particulier.
 
     ```
     <File Reference = "sample.winmd">
@@ -211,7 +210,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-3.  Placez les contrôles sous les noms de catégorie particulière.
+3. Placez les contrôles sous les noms de catégorie particulière.
 
     ```
     <File Reference = "sample.winmd">
@@ -222,7 +221,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-4.  Placer des contrôles sous les noms de catégorie différente dans Blend et Visual Studio.
+4. Placer des contrôles sous les noms de catégorie différente dans Blend et Visual Studio.
 
     ```
     // Blend accepts a slightly different structure for the category name because it allows a path rather than a single category.
@@ -232,7 +231,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-5.  Énumérer des contrôles spécifiques différemment dans Blend et Visual Studio.
+5. Énumérer des contrôles spécifiques différemment dans Blend et Visual Studio.
 
     ```
     <File Reference = "sample.winmd">
@@ -243,7 +242,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-6.  Énumérer des contrôles spécifiques et les placer sous le chemin d’accès de courants de Visual Studio, ou uniquement dans le groupe tous les contrôles.
+6. Énumérer des contrôles spécifiques et les placer sous le chemin d’accès de courants de Visual Studio, ou uniquement dans le groupe tous les contrôles.
 
     ```
     <File Reference = "sample.winmd">
@@ -254,7 +253,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-7.  Énumérer des contrôles spécifiques et afficher uniquement un ensemble spécifique de ChooseItems sans les en cours dans la boîte à outils.
+7. Énumérer des contrôles spécifiques et afficher uniquement un ensemble spécifique de ChooseItems sans les en cours dans la boîte à outils.
 
     ```
     <File Reference = "sample.winmd">

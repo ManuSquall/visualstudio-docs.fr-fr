@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2b164933b3d695e1a680e26629b093b59009b502
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f0758d9eb5a003b0353ceb4fee21996d90685fa5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950536"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111231"
 ---
 # <a name="bc-texture-compression-variant"></a>Variante de compression de texture BC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ Permet la compression de blocs sur les textures dont le format de pixel est une 
   
 - L'objet `D3D11_TEXTURE2D_DESC` passé dans `pDesc` décrit une ressource de nuanceur qui ne change pas, à savoir :  
   
-  -   Seul l'indicateur D3D11_BIND_SHADER_RESOURCE du membre BindFlags est défini.  
+  - Seul l'indicateur D3D11_BIND_SHADER_RESOURCE du membre BindFlags est défini.  
   
-  -   Le membre Usage a la valeur D3D11_USAGE_DEFAULT ou D3D11_USAGE_IMMUTABLE.  
+  - Le membre Usage a la valeur D3D11_USAGE_DEFAULT ou D3D11_USAGE_IMMUTABLE.  
   
-  -   Le membre CPUAccessFlags a la valeur 0 (aucun accès à l'UC).  
+  - Le membre CPUAccessFlags a la valeur 0 (aucun accès à l'UC).  
   
-  -   Le membre Count du membre SamplerDesc a la valeur 1 (pas d'anticrénelage MSAA (Multi-Sample Anti-Aliasing)).  
+  - Le membre Count du membre SamplerDesc a la valeur 1 (pas d'anticrénelage MSAA (Multi-Sample Anti-Aliasing)).  
   
 - Les données initiales sont fournies à l'appel à `CreateTexture2D`.  
   

@@ -20,27 +20,27 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d805333bd8a2cce43340e61573b082dfdff7db0e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: cdfa5724b25a551a65318fea3ebcaf52d7f397ba
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610907"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084570"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>Résoudre les erreurs dans les solutions Office
   Vous pouvez rencontrer des problèmes quand vous effectuez les tâches suivantes en développant des solutions Office dans Visual Studio :
 
--   [Créer, mettre à niveau et ouvrir des projets](#creating)
+- [Créer, mettre à niveau et ouvrir des projets](#creating)
 
--   [Utiliser les concepteurs](#designers)
+- [Utiliser les concepteurs](#designers)
 
--   [Écrire du code](#code)
+- [Écrire du code](#code)
 
--   [Générer des projets](#building)
+- [Générer des projets](#building)
 
--   [Déboguer des projets](#debugging)
+- [Déboguer des projets](#debugging)
 
-##  <a name="creating"></a> Créer, mettre à niveau et ouvrir des projets
+## <a name="creating"></a> Créer, mettre à niveau et ouvrir des projets
  Vous pouvez rencontrer les erreurs suivantes quand vous créez ou ouvrez des projets Office.
 
 ### <a name="the-project-cannot-be-created"></a>Le projet ne peut pas être créé.
@@ -60,13 +60,13 @@ ms.locfileid: "56610907"
 
  Ces erreurs peuvent se produire si vous essayez de créer un projet basé sur un classeur dont les informations personnelles ont été supprimées à l'aide de l'inspecteur de document. Pour éviter cette erreur, effectuez les opérations suivantes avant de créer le projet.
 
-1.  Ouvrez le classeur dans Excel.
+1. Ouvrez le classeur dans Excel.
 
-2.  Dans Excel, ouvrez le Centre de gestion de la confidentialité.
+2. Dans Excel, ouvrez le Centre de gestion de la confidentialité.
 
-3.  Sur le **Options de confidentialité** onglet désactivez le **supprimer les informations personnelles à partir des propriétés de fichier Enregistrer** case à cocher.
+3. Sur le **Options de confidentialité** onglet désactivez le **supprimer les informations personnelles à partir des propriétés de fichier Enregistrer** case à cocher.
 
-4.  Enregistrez le classeur et fermez Excel.
+4. Enregistrez le classeur et fermez Excel.
 
 ### <a name="cannot-open-a-project-after-migration"></a>Impossible d’ouvrir un projet après la migration
  Après la migration d'une solution Office vers Microsoft Office 2010, le projet ne peut pas être ouvert sur un ordinateur de développement doté uniquement de la version 2007 de Microsoft Office System. Vous pouvez voir les erreurs suivantes.
@@ -84,17 +84,17 @@ ms.locfileid: "56610907"
 
  Une fois la mise à niveau du projet terminée, vous pourrez désinstaller Visual Studio 2005 Tools pour Office Second Edition Runtime de l'ordinateur de développement s'il n'est pas utilisé par d'autres solutions Office.
 
-##  <a name="designers"></a> Utiliser les concepteurs
+## <a name="designers"></a> Utiliser les concepteurs
  Vous pouvez rencontrer les erreurs suivantes en utilisant le document, le classeur ou le concepteur de feuille de calcul dans des projets de niveau document.
 
 ### <a name="designer-failed-to-load-correctly"></a>Échec du chargement du Concepteur
  Visual Studio ne peut pas ouvrir le concepteur dans les cas suivants :
 
--   Excel ou Word est déjà ouvert et affiche une boîte de dialogue modale. Pour ouvrir le concepteur, vérifiez si une boîte de dialogue Excel ou Word est ouverte, et fermez toute boîte de dialogue modale ouverte. Si aucune boîte de dialogue modale n'est ouverte, certaines actions supplémentaires peuvent être requises avant la réponse d'Excel ou de Word.
+- Excel ou Word est déjà ouvert et affiche une boîte de dialogue modale. Pour ouvrir le concepteur, vérifiez si une boîte de dialogue Excel ou Word est ouverte, et fermez toute boîte de dialogue modale ouverte. Si aucune boîte de dialogue modale n'est ouverte, certaines actions supplémentaires peuvent être requises avant la réponse d'Excel ou de Word.
 
--   Le projet est en cours de débogage. Pour ouvrir le concepteur, arrêtez ou terminez le débogage.
+- Le projet est en cours de débogage. Pour ouvrir le concepteur, arrêtez ou terminez le débogage.
 
--   Un complément Excel VSTO qui est installé sur l'ordinateur de développement affiche une boîte de dialogue au démarrage d'Excel. Pour créer un projet de niveau document Excel, vous devez tout d’abord désactiver le complément VSTO.
+- Un complément Excel VSTO qui est installé sur l'ordinateur de développement affiche une boîte de dialogue au démarrage d'Excel. Pour créer un projet de niveau document Excel, vous devez tout d’abord désactiver le complément VSTO.
 
 ### <a name="controls-appear-as-black-rectangles-on-the-document-or-worksheet"></a>Contrôles apparaissent sous forme de rectangles noirs sur le document ou la feuille de calcul
  Si vous groupez des contrôles dans un document ou une feuille de calcul, Visual Studio ne reconnaît plus les contrôles. Contrôles groupés ne sont pas accessibles dans le **propriétés** fenêtre et qu’ils apparaissent sous forme de rectangles noirs sur le document ou la feuille de calcul. Vous devez dissocier les contrôles pour restaurer leurs fonctionnalités.
@@ -105,10 +105,10 @@ ms.locfileid: "56610907"
 ### <a name="insert-clip-art-command-does-nothing-in-the-visual-studio-designer"></a>Commande d’insertion clip art ne fait rien dans le concepteur Visual Studio
  Lorsqu’Excel ou Word est ouvert dans le concepteur Visual Studio, en cliquant sur le **images clipart** bouton sur le **Illustrations** onglet dans le ruban n’ouvre pas le **images clipart** volet de tâches. Pour ajouter des images clipart, vous devez ouvrir la copie du classeur ou du document qui se trouve dans le dossier du projet principal (pas la copie qui se trouve dans le *\bin* dossier) en dehors de Visual Studio, ajouter l’image clipart, puis enregistrez le classeur ou le document.
 
-##  <a name="code"></a> Écrire du code
+## <a name="code"></a> Écrire du code
  Vous pouvez rencontrer les erreurs suivantes quand vous écrivez du code dans des projets Office.
 
-### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>Certains événements des objets Office ne sont pas accessibles lors de l’utilisation de c#
+### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>Certains événements des objets Office ne sont pas accessibles lors de l’utilisation de C\#
  Dans certains cas, une erreur du compilateur comme celle ci-dessous peut s'afficher quand vous essayez d'accéder à un événement particulier d'une instance d'un type d'assembly PIA (Primary Interop Assembly) Office dans un projet Visual C#.
 
  « Ambiguïté entre 'Microsoft.Office.Interop.Excel._Application.NewWorkbook' et 'Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook' »
@@ -170,7 +170,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 
  Même si vous avez importé l’espace de noms Word ou Excel et que vous avez accès à toutes les classes qu’il contient, vous devez qualifier complètement tous les types avec Word ou Excel pour supprimer l’ambiguïté de l’espace de noms.
 
-##  <a name="building"></a> Générer des projets
+## <a name="building"></a> Générer des projets
  Vous pouvez rencontrer les erreurs suivantes quand vous générez des projets Office.
 
 ### <a name="cannot-build-a-document-level-project-that-is-based-on-a-document-with-restricted-permissions"></a>Impossible de créer un projet au niveau du document qui est basé sur un document avec des autorisations restreintes
@@ -183,7 +183,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ### <a name="compiler-errors-occur-after-a-namedrange-control-is-deleted"></a>Erreurs du compilateur se produisent après la suppression d’un contrôle NamedRange
  Si vous supprimez un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> d'une feuille de calcul qui n'est pas la feuille de calcul active dans le concepteur, il est possible que le code généré automatiquement ne soit pas supprimé de votre projet et que des erreurs du compilateur se produisent. Pour vous assurer que le code est supprimé, vous devez toujours sélectionner la feuille de calcul qui contient le contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> pour qu'elle devienne la feuille de calcul active avant la suppression du contrôle. Si le code généré automatiquement n'est pas supprimé quand vous supprimez le contrôle, vous pouvez entraîner la suppression du code par le concepteur en activant la feuille de calcul et en apportant une modification afin que la feuille de calcul soit marquée comme modifiée. Quand vous recréez le projet, le code est supprimé.
 
-##  <a name="debugging"></a> Déboguer des projets
+## <a name="debugging"></a> Déboguer des projets
  Vous pouvez rencontrer les erreurs suivantes quand vous déboguez des projets Office.
 
 ### <a name="prompt-to-uninstall-appears-when-you-publish-and-install-a-solution-on-the-development-computer"></a>L’invite de désinstallation s’affiche lorsque vous publiez et installez une solution sur l’ordinateur de développement

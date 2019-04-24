@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3fd601b48489e7334013e1e9438c1b6a580457d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 94775b717a3095d54d3fa52e3d2a5325dc3d21c5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698935"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075790"
 ---
 # <a name="16-bpp-render-target-format-variant"></a>Restituer variante de Format cible de 16 bpp
 Affecte aux pixels le format DXGI_FORMAT_B5G6R5_UNORM pour toutes les cibles de rendu et toutes les mémoires tampons d'arrière-plan.
@@ -45,14 +45,14 @@ Les applications qui font partie d’une chaîne de permutation ont un format de
 
    Les architectures GPU qui utilisent des techniques de rendu en mosaïque peuvent voir les avantages de performance significatifs à l’aide d’un format de mémoire tampon de trame de 16 bpp. Cette amélioration est, car une plus grande partie de la mémoire tampon de trame peut tenir dans le cache des tampons frame local de chaque mosaïque. Les architectures de rendu en mosaïque sont parfois rencontrées dans les GPU des combinés mobiles et des tablettes ; elles sont peu courantes en dehors de cette niche.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Le format cible de rendu est réinitialisé en DXGI_FORMAT_B5G6R5_UNORM à chaque appel à `ID3D11Device::CreateTexture2D`, qui est chargé de créer une cible de rendu. Plus précisément, le format est substitué quand l'objet D3D11_TEXTURE2D_DESC passé dans pDesc décrit une cible de rendu ; à savoir :
 
--   L'indicateur D3D11_BIND_REDNER_TARGET est défini pour le membre BindFlags.
+- L'indicateur D3D11_BIND_REDNER_TARGET est défini pour le membre BindFlags.
 
--   L'indicateur D3D11_BIND_DEPTH_STENCIL est effacé pour le membre BindFlags.
+- L'indicateur D3D11_BIND_DEPTH_STENCIL est effacé pour le membre BindFlags.
 
--   Le membre Usage a la valeur D3D11_USAGE_DEFAULT.
+- Le membre Usage a la valeur D3D11_USAGE_DEFAULT.
 
 ## <a name="restrictions-and-limitations"></a>Restrictions et limitations
  Sachant que le format B5G6R5 n'a pas de canal alpha, le contenu alpha n'est pas conservé par cette variante. Si le rendu de votre application nécessite la présence d'un canal alpha dans votre cible de rendu, il vous suffit de passer au format B5G6R5.

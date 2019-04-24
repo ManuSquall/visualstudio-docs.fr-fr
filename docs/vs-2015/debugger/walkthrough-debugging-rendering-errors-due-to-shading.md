@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 42627b336bb83d915b2af96f0ee569a305212f6d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b4c158c4ce6762b69f73a55915cc459f84cd7fff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950080"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067155"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Procédure pas à pas : débogage des erreurs de rendu dues à l’ombrage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ Cette procédure pas à pas montre comment utiliser Graphics Diagnostics dans [!
   
  Cette procédure pas à pas montre comment effectuer les opérations suivantes :  
   
--   Examiner le document du journal de graphiques pour identifier les pixels qui indiquent le problème.  
+- Examiner le document du journal de graphiques pour identifier les pixels qui indiquent le problème.  
   
--   Utiliser la fenêtre **Historique des pixels Graphics** pour examiner l’état des pixels plus en détail.  
+- Utiliser la fenêtre **Historique des pixels Graphics** pour examiner l’état des pixels plus en détail.  
   
--   Utiliser le **débogueur HLSL** pour examiner les nuanceurs de sommets et de pixels.  
+- Utiliser le **débogueur HLSL** pour examiner les nuanceurs de sommets et de pixels.  
   
 ## <a name="scenario"></a>Scénario  
  La coloration incorrecte des objets se produit le plus souvent quand un nuanceur de sommets passe des informations incorrectes ou incomplètes à un nuanceur de pixels.  

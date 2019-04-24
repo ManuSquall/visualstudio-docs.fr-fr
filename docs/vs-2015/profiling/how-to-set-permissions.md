@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour définir les autorisations | Microsoft Docs
+title: 'Procédure : Définir les autorisations | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,14 +15,14 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 61276307516052673f07a6798673b9998cb609fb
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.openlocfilehash: d44ae7d3eb4c01434e2a8b6f2cf7c0391c749ad7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54833834"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114565"
 ---
-# <a name="how-to-set-permissions"></a>Guide pratique pour définir les autorisations
+# <a name="how-to-set-permissions"></a>Procédure : Définir des autorisations
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette rubrique indique comment l’administrateur d’un ordinateur accorde les autorisations de sécurité exigées pour le profilage à un utilisateur ou un groupe qui ne dispose pas des autorisations d’administrateur sur cet ordinateur.  
@@ -42,25 +42,25 @@ Cette rubrique indique comment l’administrateur d’un ordinateur accorde les 
   
 ### <a name="to-create-a-user-account-that-has-user-permissions"></a>Pour créer un compte d’utilisateur disposant d’autorisations utilisateurs  
   
-1.  Cliquez avec le bouton droit sur **Poste de travail**, puis cliquez sur **Gérer**.  
+1. Cliquez avec le bouton droit sur **Poste de travail**, puis cliquez sur **Gérer**.  
   
      La fenêtre **Gestion de l’ordinateur** s’ouvre.  
   
-2.  Développez **Utilisateurs et groupes locaux**.  
+2. Développez **Utilisateurs et groupes locaux**.  
   
-3.  Cliquez avec le bouton droit sur le dossier **Utilisateurs**, puis cliquez sur **Nouvel utilisateur**.  
+3. Cliquez avec le bouton droit sur le dossier **Utilisateurs**, puis cliquez sur **Nouvel utilisateur**.  
   
      La boîte de dialogue **Nouvel utilisateur** s’affiche.  
   
-4.  Renseignez les champs de cette boîte de dialogue avec les informations du compte d’utilisateur que vous créez. Spécifiez un mot de passe. Cochez éventuellement la case qui exige que l’utilisateur modifie le mot de passe à la prochaine connexion.  
+4. Renseignez les champs de cette boîte de dialogue avec les informations du compte d’utilisateur que vous créez. Spécifiez un mot de passe. Cochez éventuellement la case qui exige que l’utilisateur modifie le mot de passe à la prochaine connexion.  
   
-5.  Cliquez sur **Créer**, puis sur **Fermer**.  
+5. Cliquez sur **Créer**, puis sur **Fermer**.  
   
      Le nouvel utilisateur apparaît dans le groupe Utilisateurs, un groupe d’utilisateurs qui ne disposent pas d’autorisations d’administrateur.  
   
 ### <a name="to-grant-access-to-shared-project-files"></a>Pour accorder l’accès aux fichiers projet partagés  
   
-1.  Dans l’Explorateur Windows (ou l’Explorateur de fichiers), localisez la racine de l’arborescence de dossiers pour accéder aux fichiers projet utilisés par cet utilisateur et partagés par l’équipe du projet.  
+1. Dans l’Explorateur Windows (ou l’Explorateur de fichiers), localisez la racine de l’arborescence de dossiers pour accéder aux fichiers projet utilisés par cet utilisateur et partagés par l’équipe du projet.  
   
      Le chemin de ce dossier peut se présenter comme suit :  
   
@@ -68,17 +68,17 @@ Cette rubrique indique comment l’administrateur d’un ordinateur accorde les 
     D:\ourProject  
     ```  
   
-2.  Cliquez avec le bouton droit sur le dossier, puis cliquez sur **Propriétés**.  
+2. Cliquez avec le bouton droit sur le dossier, puis cliquez sur **Propriétés**.  
   
      La boîte de dialogue**Propriétés de \<nom_dossier>** s’affiche.  
   
-3.  Cliquez sur l'onglet **Sécurité** .  
+3. Cliquez sur l'onglet **Sécurité** .  
   
-4.  Cliquez sur le nom du compte de l’utilisateur dans la zone **Noms de groupes ou d’utilisateurs**.  
+4. Cliquez sur le nom du compte de l’utilisateur dans la zone **Noms de groupes ou d’utilisateurs**.  
   
-5.  Dans la zone **Autorisations pour \<nom_utilisateur>**, cochez la case en regard de **Contrôle total**.  
+5. Dans la zone **Autorisations pour \<nom_utilisateur>**, cochez la case en regard de **Contrôle total**.  
   
-6.  Cliquez sur **OK**.  
+6. Cliquez sur **OK**.  
   
      Cette procédure accorde à l’utilisateur les autorisations pour l’arborescence de dossiers partagés qui commence par le dossier sélectionné à l’étape 5.  
   
@@ -112,11 +112,11 @@ Cette rubrique indique comment l’administrateur d’un ordinateur accorde les 
   
     Cette commande accorde au compte \<nom_utilisateur> ou \<nom_groupe> l’accès aux outils de profilage. L’option \<right> détermine les fonctionnalités de profilage accessibles à l’utilisateur. \<right> option peut avoir une ou plusieurs des valeurs suivantes :  
   
-   -   FullAccess : autorise l’accès à toutes les méthodes de profilage, notamment la collecte des données de performance à partir des services, l’échantillonnage et le profilage intersession.  
+   - FullAccess : autorise l’accès à toutes les méthodes de profilage, notamment la collecte des données de performance à partir des services, l’échantillonnage et le profilage intersession.  
   
-   -   SampleProfiling : autorise l’accès aux méthodes de profilage d’échantillon.  
+   - SampleProfiling : autorise l’accès aux méthodes de profilage d’échantillon.  
   
-   -   CrossSession : autorise l’accès au profilage intersession exigé pour les services de profilage.  
+   - CrossSession : autorise l’accès au profilage intersession exigé pour les services de profilage.  
   
 5. (Facultatif) Pour conserver les résultats de l’une des étapes précédentes après le redémarrage de l’ordinateur, exécutez la commande suivante :  
   

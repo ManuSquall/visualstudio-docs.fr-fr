@@ -13,12 +13,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f0db19d3dfb92658f2aa15e457659b5d4d34ec3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 28e307bd91d468e0efff840d2b6f469b000f243f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801451"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105424"
 ---
 # <a name="cores-view-zoom-tool"></a>Outil Zoom de l'affichage Cœurs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ Le contrôle Zoom est un curseur qui vous permet d’effectuer un zoom avant et 
   
 ## <a name="other-ways-to-zoom"></a>Autres moyens d’effectuer un zoom  
   
--   Zoom avant : faites glisser pour sélectionner une zone dans la vue de la chronologie. Quand vous relâchez le bouton de la souris, l’affichage de la chronologie effectue un zoom avant sur la plage sélectionnée.  
+- Zoom avant : faites glisser pour sélectionner une zone dans la vue de la chronologie. Quand vous relâchez le bouton de la souris, l’affichage de la chronologie effectue un zoom avant sur la plage sélectionnée.  
   
--   Zoom avant et arrière : pointez sur la chronologie, puis appuyez sur Ctrl tout en actionnant la roulette de la souris.  
+- Zoom avant et arrière : Placez le curseur sur la chronologie et appuyez sur CTRL pendant que vous déplacez la roulette de souris.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Vue Cœurs](../profiling/cores-view.md)

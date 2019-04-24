@@ -1,5 +1,5 @@
 ---
-title: 'Comment : démarrer Spy ++ | Microsoft Docs'
+title: 'Procédure : Démarrer Spy ++ | Microsoft Docs'
 ms.date: 12/16/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91eda74b4f83f38434117ab1217d0a20d66d2842
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 85e253491a4cb3713b5920c9abd09f9396298319
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712448"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099141"
 ---
-# <a name="how-to-start-spy"></a>Comment : démarrer Spy++
+# <a name="how-to-start-spy"></a>Procédure : Démarrer Spy++
 
 Vous pouvez démarrer Spy ++ à partir de Visual Studio ou à une invite de commandes.
 
@@ -30,8 +30,8 @@ Vous pouvez démarrer Spy ++ à partir de Visual Studio ou à une invite de comm
 
 Spy ++ requiert les composants suivants. Vous pouvez sélectionner ces composants à partir de Visual Studio Installer en sélectionnant le **composants individuels** onglet, puis en sélectionnant les composants suivants.
 
-* Sous débogage et test, sélectionnez **outils de profilage C++**
-* Sous les activités de développement, sélectionnez **les fonctionnalités de base C++ de Visual Studio**
+* Sous débogage et test, sélectionnez  **C++ outils de profilage**
+* Sous les activités de développement, sélectionnez **Visual Studio C++ fonctionnalités de base**
 
 Si vous apporté des modifications, suivez les invites pour installer ces composants.
 
@@ -46,9 +46,9 @@ Sur le **outils** menu, sélectionnez **Spy ++**.
 
 ## <a name="start-spy-at-a-command-prompt"></a>Démarrer Spy ++ à une invite de commandes
 
-1.  Dans une fenêtre d’invite de commandes, accédez au dossier qui contient spyxx.exe. En règle générale, le chemin d’accès à ce dossier est... \\ *Dossier d’installation de visual Studio*\Common7\Tools\\.
+1. Dans une fenêtre d’invite de commandes, accédez au dossier qui contient spyxx.exe. En règle générale, le chemin d’accès à ce dossier est... \\ *Dossier d’installation de visual Studio*\Common7\Tools\\.
 
-2.  Entrez **spyxx.exe**.
+2. Entrez **spyxx.exe**.
 
 ## <a name="see-also"></a>Voir aussi
 - [Utilisation de Spy++](../debugger/using-spy-increment.md)

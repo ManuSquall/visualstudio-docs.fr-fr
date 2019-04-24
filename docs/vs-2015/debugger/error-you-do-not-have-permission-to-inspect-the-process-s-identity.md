@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f173be87987cbc8bcfb3390dfdaaf5eab7501bb6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d66eacb1b7f5205ea430d7154f67d05bdd047a74
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950205"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080739"
 ---
 # <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>Erreur : Vous n’êtes pas autorisé à inspecter le processus&#39;identité de s
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,23 +30,23 @@ Vous n'êtes pas autorisé à inspecter l'identité du processus. Cela peut êtr
   
 ### <a name="to-enable-terminal-services"></a>Pour activer les services Terminal Server  
   
-1.  Cliquez sur **Démarrer**, puis choisissez **Panneau de configuration**.  
+1. Cliquez sur **Démarrer**, puis choisissez **Panneau de configuration**.  
   
-2.  Dans le Panneau de configuration, sélectionnez si nécessaire **Basculer vers l’affichage classique**, puis double-cliquez sur **Outils d’administration**.  
+2. Dans le Panneau de configuration, sélectionnez si nécessaire **Basculer vers l’affichage classique**, puis double-cliquez sur **Outils d’administration**.  
   
-3.  Dans la fenêtre **Outils d’administration**, double-cliquez sur **Gestion de l’ordinateur**.  
+3. Dans la fenêtre **Outils d’administration**, double-cliquez sur **Gestion de l’ordinateur**.  
   
-4.  Dans la fenêtre Gestion de l’ordinateur, développez le nœud **Services et applications**.  
+4. Dans la fenêtre Gestion de l’ordinateur, développez le nœud **Services et applications**.  
   
-5.  Sous **Services et applications**, cliquez sur **Services**.  
+5. Sous **Services et applications**, cliquez sur **Services**.  
   
      Une liste de services apparaît dans le volet droit.  
   
-6.  Dans la liste **Services**, cliquez avec le bouton droit sur **Services Terminal Server**, puis choisissez **Propriétés**.  
+6. Dans la liste **Services**, cliquez avec le bouton droit sur **Services Terminal Server**, puis choisissez **Propriétés**.  
   
-7.  Dans le **propriétés des Services Terminal Server** fenêtre, accédez à la **général** onglet et définissez **type de démarrage** à **manuel**.  
+7. Dans le **propriétés des Services Terminal Server** fenêtre, accédez à la **général** onglet et définissez **type de démarrage** à **manuel**.  
   
-8.  Cliquez sur **OK**.  
+8. Cliquez sur **OK**.  
   
 9. Redémarrez l'ordinateur.  
   
@@ -54,17 +54,17 @@ Vous n'êtes pas autorisé à inspecter l'identité du processus. Cela peut êtr
   
 ### <a name="to-enable-remote-desktop"></a>Pour activer le Bureau à distance  
   
-1.  Cliquez sur **Démarrer**, puis cliquez avec le bouton droit sur **Poste de travail**.  
+1. Cliquez sur **Démarrer**, puis cliquez avec le bouton droit sur **Poste de travail**.  
   
-2.  Choisissez **Propriétés**.  
+2. Choisissez **Propriétés**.  
   
      La fenêtre **Propriétés système** s’affiche.  
   
-3.  Cliquez sur **À distance**.  
+3. Cliquez sur **À distance**.  
   
-4.  Sous **Bureau à distance**, sélectionnez **Autoriser les utilisateurs à se connecter à distance à cet ordinateur**.  
+4. Sous **Bureau à distance**, sélectionnez **Autoriser les utilisateurs à se connecter à distance à cet ordinateur**.  
   
-5.  Cliquez sur **OK**.  
+5. Cliquez sur **OK**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Erreurs et résolution des problèmes du débogage distant](../debugger/remote-debugging-errors-and-troubleshooting.md)

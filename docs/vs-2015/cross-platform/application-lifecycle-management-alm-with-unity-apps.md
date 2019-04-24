@@ -9,17 +9,16 @@ caps.latest.revision: 14
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: b37f379fc60a260e7c16e87d7c1553429e73fbad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6c572d76389c5914f4a9b01b82677449ec1db28b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778589"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097165"
 ---
 # <a name="application-lifecycle-management-alm-with-unity-apps"></a>Application Lifecycle Management (ALM) avec les applications Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Le développement d'applications pour des plateformes modernes implique de nombreuses activités qui vont bien au-delà de la simple écriture de code. Ces activités, appelées DevOps (développement + opérations), couvrent le cycle de vie complet de l’application et incluent la planification et le suivi du travail, la conception et l’implémentation du code, la gestion d’un référentiel de code source, l’exécution des builds, la gestion des intégrations continues et des déploiements en continu, les tests (y compris les tests unitaires et les tests d’interface utilisateur), différentes formes de diagnostics dans les environnements de développement et de production, ainsi que la surveillance en temps réel des performances des applications et des comportements des utilisateurs via la télémétrie et l’analyse.  
   
  Visual Studio, Visual Studio Team Services et Team Foundation Server fournissent de nombreuses fonctionnalités DevOps, également appelées fonctionnalités Application Lifecycle Management (ALM). Beaucoup d’entre elles sont applicables aux projets multiplateformes, notamment les jeux et les applications graphiques immersives créés avec Unity, en particulier quand C# est utilisé comme langage de script. Toutefois, comme Unity possède son propre environnement de développement et son propre moteur d'exécution, plusieurs fonctionnalités ALM ne s'appliquent pas comme elles le feraient pour d'autres types de projets créés dans Visual Studio.  
@@ -40,9 +39,9 @@ Le développement d'applications pour des plateformes modernes implique de nombr
 |Créer des rapports sur la progression et la visualiser|Oui||  
   
 ## <a name="modeling"></a>Modélisation  
- Lien de référence : **[Analyse et modélisation de l’architecture](../modeling/analyze-and-model-your-architecture.md)**  
+ Lien de référence : **[Analyse et modélisation de l’Architecture](../modeling/analyze-and-model-your-architecture.md)**  
   
- Commentaire général : bien que ces fonctionnalités de conception soient indépendantes du langage de codage ou qu’elles utilisent des langages .NET tels que C#, elles opèrent selon un modèle d’application traditionnel avec des hiérarchies d’objets et des relations de classes. La conception d'un jeu dans Unity implique un modèle entièrement différent, à savoir des relations d'objets graphiques, de sons, de nuanceurs, de scripts, etc. Pour cette raison, les outils de diagramme de modélisation Visual Studio ne sont pas particulièrement pertinents pour l'ensemble d'un projet Unity. Ils peuvent être utilisés pour gérer les relations au sein des scripts C#, mais ce n'est qu'une partie de l'ensemble.  
+ Commentaire général : Bien que ces fonctionnalités de conception soient indépendantes du langage de codage ou utilisent des langages .NET tels que C#, elles opèrent selon un modèle d'application traditionnel avec des hiérarchies d'objets et des relations de classes. La conception d'un jeu dans Unity implique un modèle entièrement différent, à savoir des relations d'objets graphiques, de sons, de nuanceurs, de scripts, etc. Pour cette raison, les outils de diagramme de modélisation Visual Studio ne sont pas particulièrement pertinents pour l'ensemble d'un projet Unity. Ils peuvent être utilisés pour gérer les relations au sein des scripts C#, mais ce n'est qu'une partie de l'ensemble.  
   
 |Fonctionnalité|Prise en charge avec Unity|Commentaires supplémentaires|  
 |-------------|--------------------------|-------------------------|  
@@ -67,13 +66,13 @@ Le développement d'applications pour des plateformes modernes implique de nombr
   
  Considérations particulières sur la gestion de version avec Unity :  
   
-1.  Unity assure le suivi des métadonnées relatives aux ressources de jeu dans une bibliothèque opaque unique qui est masquée par défaut. Pour maintenir la synchronisation des fichiers et des métadonnées, il est nécessaire de rendre visibles les métadonnées et de les stocker dans des segments plus gérables. Pour plus d’informations, consultez [Utilisation des systèmes de gestion de version externes avec Unity](http://docs.unity3d.com/Manual/ExternalVersionControlSystemSupport.html) (documentation Unity).  
+1. Unity assure le suivi des métadonnées relatives aux ressources de jeu dans une bibliothèque opaque unique qui est masquée par défaut. Pour maintenir la synchronisation des fichiers et des métadonnées, il est nécessaire de rendre visibles les métadonnées et de les stocker dans des segments plus gérables. Pour plus d’informations, consultez [Utilisation des systèmes de gestion de version externes avec Unity](http://docs.unity3d.com/Manual/ExternalVersionControlSystemSupport.html) (documentation Unity).  
   
-2.  Tous les fichiers et dossiers figurant dans un projet Unity ne sont pas appropriés pour le contrôle de code source, comme cela est également décrit dans le lien ci-dessus. Les dossiers Assets et ProjectSettings doivent être ajoutés, contrairement aux dossiers Library et Temp. Pour obtenir une liste supplémentaire de fichiers générés qui ne sont pas traités par le contrôle de code source, consultez la discussion [How to use Git for Unity3D source control?](http://stackoverflow.com/questions/18225126/how-to-use-git-for-unity3d-source-control) sur StackOverflow. De leur côté, de nombreux développeurs ont également blogué sur ce sujet.  
+2. Tous les fichiers et dossiers figurant dans un projet Unity ne sont pas appropriés pour le contrôle de code source, comme cela est également décrit dans le lien ci-dessus. Les dossiers Assets et ProjectSettings doivent être ajoutés, contrairement aux dossiers Library et Temp. Pour obtenir une liste supplémentaire de fichiers générés qui ne sont pas traités par le contrôle de code source, consultez la discussion [How to use Git for Unity3D source control?](http://stackoverflow.com/questions/18225126/how-to-use-git-for-unity3d-source-control) sur StackOverflow. De leur côté, de nombreux développeurs ont également blogué sur ce sujet.  
   
-3.  Les ressources binaires d'un projet Unity, telles que les textures et les fichiers audio, peuvent occuper une grande quantité de stockage. Des systèmes de contrôle de code source tels que Git stockent une copie unique d'un fichier pour chaque modification effectuée, même si la modification affecte uniquement une petite partie du fichier. Cette opération peut provoquer la saturation du référentiel Git. Pour résoudre ce problème, les développeurs Unity choisissent souvent de n'ajouter que les ressources finales à leur référentiel et d'utiliser un autre moyen de conserver un historique de l'utilisation de leurs ressources, telles que OneDrive, DropBox ou git-annex. Cette approche fonctionne, car il n'est généralement pas nécessaire de gérer les versions de telles ressources avec les modifications du code source. Généralement, les développeurs définissent aussi le mode de sérialisation de ressources de l'éditeur du projet sur Forcer le texte pour stocker les fichiers de séquence dans du texte plutôt que dans un format binaire, ce qui permet des fusions dans le contrôle de code source. Pour plus d’informations, consultez [Paramètres de l’éditeur](http://docs.unity3d.com/Manual/class-EditorManager.html) (documentation Unity).  
+3. Les ressources binaires d'un projet Unity, telles que les textures et les fichiers audio, peuvent occuper une grande quantité de stockage. Des systèmes de contrôle de code source tels que Git stockent une copie unique d'un fichier pour chaque modification effectuée, même si la modification affecte uniquement une petite partie du fichier. Cette opération peut provoquer la saturation du référentiel Git. Pour résoudre ce problème, les développeurs Unity choisissent souvent de n'ajouter que les ressources finales à leur référentiel et d'utiliser un autre moyen de conserver un historique de l'utilisation de leurs ressources, telles que OneDrive, DropBox ou git-annex. Cette approche fonctionne, car il n'est généralement pas nécessaire de gérer les versions de telles ressources avec les modifications du code source. Généralement, les développeurs définissent aussi le mode de sérialisation de ressources de l'éditeur du projet sur Forcer le texte pour stocker les fichiers de séquence dans du texte plutôt que dans un format binaire, ce qui permet des fusions dans le contrôle de code source. Pour plus d’informations, consultez [Paramètres de l’éditeur](http://docs.unity3d.com/Manual/class-EditorManager.html) (documentation Unity).  
   
-## <a name="build"></a>Générer  
+## <a name="build"></a>Build  
  Lien de référence : **[Build](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692)**  
   
 |Fonctionnalité|Prise en charge avec Unity|Commentaires supplémentaires|  
@@ -97,7 +96,7 @@ Le développement d'applications pour des plateformes modernes implique de nombr
 |[Utiliser l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md)|Non|Les tests codés de l'interface utilisateur s'appuient sur des contrôles lisibles dans l'interface utilisateur de l'application. Les applications Unity sont graphiques par nature et le contenu n'est donc pas lisible par les outils de test codés de l'interface utilisateur.|  
   
 ## <a name="improve-code-quality"></a>Améliorer la qualité du code  
- Lien de référence : **[Améliorer la qualité du code](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
+ Lien de référence : **[Améliorer la qualité du Code](http://msdn.microsoft.com/library/73baa961-c21f-43fe-bb92-3f59ae9b5945)**  
   
 |Fonctionnalité|Prise en charge avec Unity|Commentaires supplémentaires|  
 |-------------|--------------------------|-------------------------|  

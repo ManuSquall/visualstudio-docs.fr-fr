@@ -13,14 +13,14 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f794f1c988215f8899dce495f725b3a9c14a435
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b10434f92a5d310d2f53c4a1c1ff7ab3a84bc1ca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788163"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045772"
 ---
-# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Guide pratique pour spécifier une icône d'application (Visual Basic, C#)
+# <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Procédure : Spécifier une icône d’Application (Visual Basic, C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La propriété `Icon` d'un projet spécifie le fichier de l'icône (.ico) qui sera affichée pour l'application compilée dans l'Explorateur de fichiers et dans la barre des tâches Windows.  
@@ -32,13 +32,13 @@ La propriété `Icon` d'un projet spécifie le fichier de l'icône (.ico) qui se
   
 ### <a name="to-specify-an-application-icon"></a>Pour spécifier une icône d'application  
   
-1.  Dans l’**Explorateur de solutions**, choisissez un nœud de projet (pas le nœud **Solution**).  
+1. Dans l’**Explorateur de solutions**, choisissez un nœud de projet (pas le nœud **Solution**).  
   
-2.  Dans la barre de menus, choisissez **Projet**, **Propriétés**.  
+2. Dans la barre de menus, choisissez **Projet**, **Propriétés**.  
   
-3.  Quand le **Concepteur de projet** apparaît, choisissez l’onglet **Application**.  
+3. Quand le **Concepteur de projet** apparaît, choisissez l’onglet **Application**.  
   
-4.  **(Visual Basic)** Dans la liste **Icône**, sélectionnez un fichier icône (.ico).  
+4. **(Visual Basic)** Dans la liste **Icône**, sélectionnez un fichier icône (.ico).  
   
      **C#** À côté de la liste **Icône**, choisissez le bouton **\<Parcourir...>**, puis accédez à l’emplacement du fichier icône souhaité.  
   

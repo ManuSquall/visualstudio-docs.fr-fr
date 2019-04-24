@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2aaf61ada4167f29f1c6d4754ced7c9757054a88
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dc428d70e036da311d2cf3050cec9e94a13782e3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953926"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089976"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>Procédure : Définir des points d’arrêt dans les workflows
 Lorsque vous utilisez [!INCLUDE[wfd1](../includes/wfd1-md.md)], vous pouvez définir des points d'arrêt sur vos workflows graphiques comme vous le feriez dans du code Visual Basic ou C#. Comme prévu, l'exécution de workflow s'arrête à chaque point d'arrêt que vous définissez.  
@@ -32,9 +32,9 @@ Lorsque vous utilisez [!INCLUDE[wfd1](../includes/wfd1-md.md)], vous pouvez déf
   
 ### <a name="to-set-a-breakpoint-on-an-activity-in-the-design-view"></a>Pour définir un point d'arrêt sur une activité en mode Design  
   
-1.  Sélectionnez l'activité sur laquelle vous voulez que le débogueur s'arrête.  
+1. Sélectionnez l'activité sur laquelle vous voulez que le débogueur s'arrête.  
   
-2.  Sur le **déboguer** menu, sélectionnez **point d’arrêt**. Une icône rouge s'affiche dans l'angle supérieur gauche de l'activité.  
+2. Sur le **déboguer** menu, sélectionnez **point d’arrêt**. Une icône rouge s'affiche dans l'angle supérieur gauche de l'activité.  
   
      Ou bien, vous pouvez également appuyer sur le raccourci **F9** après la sélection de l’activité, ou vous pouvez avec le bouton droit de l’activité et sélectionner **point d’arrêt** puis **Insert point d’arrêt**dans le menu contextuel.  
   

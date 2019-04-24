@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b63c6b91ec4b93129014d1d7213d8426a4565c2c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: e45a2d0527e1d245a0d034310939bd1601db8adc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645925"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666453"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; élément (programme d’amorçage)
 Le `InstallChecks` élément prend en charge le démarrage d’une variété de tests sur l’ordinateur local pour vous assurer que toutes les conditions préalables requises pour une application ont été installés.
@@ -97,7 +97,6 @@ Le `InstallChecks` élément prend en charge le démarrage d’une variété de 
 
  `FileCheck` ne contient aucun élément et a les attributs suivants.
 
-
 | Attribut | Description |
 |-----------------| - |
 | `Property` | Obligatoire. Le nom de la propriété pour stocker le résultat. Cette propriété peut être référencée à partir d’un test sous le `InstallConditions` élément, qui est un enfant de le `Command` élément. Pour plus d’informations, consultez [ \<commandes > élément](../deployment/commands-element-bootstrapper.md). |
@@ -115,7 +114,7 @@ Le `InstallChecks` élément prend en charge le démarrage d’une variété de 
 |---------------|-----------------|
 |`Property`|Obligatoire. Le nom de la propriété pour stocker le résultat. Cette propriété peut être référencée à partir d’un test sous le `InstallConditions` élément, qui est un enfant de le `Command` élément. Pour plus d’informations, consultez [ \<commandes > élément](../deployment/commands-element-bootstrapper.md).|
 |`Product`|Obligatoire. Le GUID pour le produit installé.|
-|`Feature`|Optionnel. Le GUID pour une fonctionnalité spécifique de l’application installée.|
+|`Feature`|Facultatif. Le GUID pour une fonctionnalité spécifique de l’application installée.|
 
 ## <a name="registrycheck"></a>RegistryCheck
  Cet élément est un élément enfant facultatif de `InstallChecks`. Pour chaque instance de `RegistryCheck`, le programme d’amorçage vérifie si la clé de Registre spécifiée existe, ou si elle a la valeur indiquée.
@@ -126,7 +125,7 @@ Le `InstallChecks` élément prend en charge le démarrage d’une variété de 
 |---------------|-----------------|
 |`Property`|Obligatoire. Le nom de la propriété pour stocker le résultat. Cette propriété peut être référencée à partir d’un test sous le `InstallConditions` élément, qui est un enfant de le `Command` élément. Pour plus d’informations, consultez [ \<commandes > élément](../deployment/commands-element-bootstrapper.md).|
 |`Key`|Obligatoire. Nom de la clé de Registre.|
-|`Value`|Optionnel. Le nom de la valeur de Registre à récupérer. La valeur par défaut consiste à retourner le texte de la valeur par défaut. `Value` doit être une chaîne ou une valeur DWORD.|
+|`Value`|Facultatif. Le nom de la valeur de Registre à récupérer. La valeur par défaut consiste à retourner le texte de la valeur par défaut. `Value` doit être une chaîne ou une valeur DWORD.|
 
 ## <a name="registryfilecheck"></a>RegistryFileCheck
  Cet élément est un élément enfant facultatif de `InstallChecks`. Pour chaque instance de `RegistryFileCheck`, le programme d’amorçage récupère la version du fichier spécifié, essayant d’abord de récupérer le chemin d’accès au fichier à partir de la clé de Registre spécifiée. Cela est particulièrement utile si vous souhaitez rechercher un fichier dans un répertoire spécifié en tant que valeur dans le Registre.
@@ -137,11 +136,11 @@ Le `InstallChecks` élément prend en charge le démarrage d’une variété de 
 |---------------|-----------------|
 |`Property`|Obligatoire. Le nom de la propriété pour stocker le résultat. Cette propriété peut être référencée à partir d’un test sous le `InstallConditions` élément, qui est un enfant de le `Command` élément. Pour plus d’informations, consultez [ \<commandes > élément](../deployment/commands-element-bootstrapper.md).|
 |`Key`|Obligatoire. Nom de la clé de Registre. Sa valeur est interprétée comme le chemin d’accès vers un fichier, à moins que le `File` attribut est défini. Si cette clé n’existe pas, `Property` n’est pas définie.|
-|`Value`|Optionnel. Le nom de la valeur de Registre à récupérer. La valeur par défaut consiste à retourner le texte de la valeur par défaut. `Value` doit être une chaîne.|
+|`Value`|Facultatif. Le nom de la valeur de Registre à récupérer. La valeur par défaut consiste à retourner le texte de la valeur par défaut. `Value` doit être une chaîne.|
 |`FileName`|Optionnel. Le nom d’un fichier. Si spécifié, la valeur obtenue à partir de la clé de Registre est censée pour être un chemin de répertoire, et ce nom est ajouté à ce dernier. Si non spécifié, la valeur retournée à partir du Registre est censée pour être le chemin complet vers un fichier.|
-|`SearchDepth`|Optionnel. La profondeur à partir duquel rechercher des sous-dossiers pour le fichier nommé. La recherche respecte la profondeur en premier. La valeur par défaut est 0, ce qui limite la recherche sur le dossier de niveau supérieur spécifié par la valeur de la clé de Registre.|
+|`SearchDepth`|Facultatif. La profondeur à partir duquel rechercher des sous-dossiers pour le fichier nommé. La recherche respecte la profondeur en premier. La valeur par défaut est 0, ce qui limite la recherche sur le dossier de niveau supérieur spécifié par la valeur de la clé de Registre.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Si les éléments sous `InstallChecks` définissent les tests à exécuter, ils ne les exécutent pas. Pour exécuter les tests, vous devez créer `Command` éléments situés sous le `Commands` élément.
 
 ## <a name="example"></a>Exemple
@@ -165,7 +164,7 @@ Le `InstallChecks` élément prend en charge le démarrage d’une variété de 
 ## <a name="predefined-properties"></a>Propriétés prédéfinies
  Le tableau suivant répertorie les `BypassIf` et `FailIf` éléments :
 
-|Property|Notes|Valeurs possibles|
+|Propriété|Notes|Valeurs possibles|
 |--------------|-----------|---------------------|
 |`Version9X`|Numéro de version d’un système d’exploitation Windows 9 X.|4.10 = Windows 98|
 |`VersionNT`|Numéro de version d’un système d’exploitation Windows NT.|Major.Minor.ServicePack<br /><br /> 5.0 = Windows 2000<br /><br /> 5.1.0 = Windows XP<br /><br /> 5.1.2 = Windows XP Professionnel SP2<br /><br /> 5.2.0 = Windows Server 2003|

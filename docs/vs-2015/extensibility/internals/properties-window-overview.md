@@ -10,21 +10,21 @@ ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 224fb081f21701433a84121985f90351225036e5
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: e43893af3275258c49e3e23348afb106416636a6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58947926"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113844"
 ---
 # <a name="properties-window-overview"></a>Vue d'ensemble de la fenêtre Propriétés
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Le **propriétés** fenêtre permet d’afficher les propriétés d’objets sélectionnés dans les deux principaux types de fenêtres disponibles dans le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] l’environnement de développement intégré (IDE). Ces deux types de fenêtres sont :  
   
--   Fenêtres d’outils tels que navigateur de l’Explorateur de solutions, affichage de classes et objets  
+- Fenêtres d’outils tels que navigateur de l’Explorateur de solutions, affichage de classes et objets  
   
--   Fenêtres de document contenant ces éditeurs et les concepteurs en tant que le Concepteur de formulaires, un éditeur XML et un éditeur HTML  
+- Fenêtres de document contenant ces éditeurs et les concepteurs en tant que le Concepteur de formulaires, un éditeur XML et un éditeur HTML  
   
 ## <a name="using-the-properties-window"></a>À l’aide de la fenêtre Propriétés  
  Le **propriétés** fenêtre affiche les propriétés d’un ou plusieurs éléments sélectionnés. Si plusieurs éléments sont sélectionnés, l’intersection de toutes les propriétés pour tous les objets sélectionnés s’affiche.  

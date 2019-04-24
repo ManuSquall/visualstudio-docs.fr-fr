@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05458481a691f74f1746860e537d915dcad90efc
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.openlocfilehash: 5c5a57c41753c8689e83da2a6f8473fa643a657f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428750"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041576"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Naviguer dans le code avec le débogueur Visual Studio
 
@@ -44,7 +44,7 @@ Si vous interrompez dans le code n’ayant pas source ou au symbole (*.pdb*) les
 
 Vous n’êtes pas obligé toujours démarrer le débogage en démarrant une application au début. Vous pouvez également appuyer sur **F11** à [détaillé code](#BKMK_Step_into__over__or_out_of_the_code), appuyez sur **F10** à [ignorer le code](#BKMK_Step_over_Step_out), ou [exécuter jusqu'à un emplacement spécifique ou fonction](#BKMK_Break_into_code_by_using_breakpoints_or_Break_All).
 
-##  <a name="step-through-code"></a>Exécuter le code pas à pas
+## <a name="step-through-code"></a>Exécuter le code pas à pas
 
 Les commandes d’étape de débogueur vous aider à inspecter l’état de votre application ou en savoir plus sur son flux d’exécution.
 
@@ -75,7 +75,7 @@ Dans un appel à plusieurs fonctions imbriquées, **Pas à pas détaillé** va j
 >[!TIP]
 >Quand vous exécutez chaque ligne de code, vous pouvez pointer sur les variables pour voir leurs valeurs, ou utiliser le [variables locales](autos-and-locals-windows.md) et [espion](watch-and-quickwatch-windows.md) pour observer les valeurs à modifier. Vous pouvez également suivre la pile des appels lors de l’entrer dans les fonctions. Consultez [mapper les méthodes sur la pile des appels pendant le débogage](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
 
-###  <a name="BKMK_Step_over_Step_out"></a> Parcourir le code et d’ignorer certaines fonctions
+### <a name="BKMK_Step_over_Step_out"></a> Parcourir le code et d’ignorer certaines fonctions
 
 Vous pouvez s’intéressent pas à une fonction pendant le débogage, ou vous savez qu’il fonctionne, comme le code de bibliothèque bien testée. Vous pouvez utiliser les commandes suivantes pour ignorer le code. Les fonctions exécutent toujours, mais le débogueur ignore au-dessus d’eux.
 
@@ -84,7 +84,7 @@ Vous pouvez s’intéressent pas à une fonction pendant le débogage, ou vous s
 |**F10**|**Pas à pas principal**|Si la ligne actuelle contient un appel de fonction, **pas à pas principal** exécute le code, puis suspend l’exécution à la première ligne de code après le retour de la fonction appelée.|
 |**Maj**+**F11**|**Pas à pas sortant**|**Pas à pas sortant** continue de s’exécuter de code et suspend l’exécution lorsque la fonction active est retournée. Le débogueur ignore via la fonction active.|
 
-##  <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> Exécuter à un emplacement spécifique ou d’une fonction
+## <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> Exécuter à un emplacement spécifique ou d’une fonction
 
 Vous pouvez exécuter directement à un emplacement spécifique ou la fonction lorsque vous savez exactement quel code que vous souhaitez inspecter ou que vous savez où vous souhaitez démarrer le débogage.
 
@@ -139,7 +139,7 @@ Pendant la suspension dans le débogueur, vous pouvez pointer sur une instructio
 
 Pour vous arrêter dans la ligne de code dans une application en cours d’exécution disponible suivante, sélectionnez **déboguer** > **interrompre tout**, ou appuyez sur **Ctrl**+**Alt**  + **Rompre**.
 
-##  <a name="BKMK_Set_the_next_statement_to_execute"></a> Déplacez le pointeur pour modifier le flux d’exécution
+## <a name="BKMK_Set_the_next_statement_to_execute"></a> Déplacez le pointeur pour modifier le flux d’exécution
 
 Bien que le débogueur est suspendu, une flèche jaune dans la marge du code source ou **désassemblage** fenêtre marque l’emplacement de la prochaine instruction à exécuter. Vous pouvez modifier l’instruction suivante à exécuter déplacer cette flèche. Vous pouvez ignorer une partie du code, ou revenir à une ligne précédente. Déplacer le pointeur est utile dans les situations telles que d’ignorer une section de code qui contient un bogue connu.
 
@@ -181,7 +181,7 @@ Pour charger des symboles de Microsoft, consultez [configurer des emplacements d
 
 1. Dans le **Modules** fenêtre, vous pouvez indiquer à qui les modules ont des symboles chargés dans le **état du symbole** colonne. Cliquez sur le module que vous souhaitez charger des symboles pour, puis sélectionnez **charger les symboles**.
 
-##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Effectuer un pas à pas détaillé dans des propriétés et des opérateurs au sein du code managé
+## <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Effectuer un pas à pas détaillé dans des propriétés et des opérateurs au sein du code managé
  Par défaut, le débogueur effectue un pas à pas principal sur les propriétés et les opérateurs dans le code managé. Dans la plupart des cas, cela fournit une meilleure expérience de débogage. Pour activer l’exécution pas à pas détaillé des propriétés ou des opérateurs, choisissez **déboguer** > **Options**. Dans la page **Débogage** > **Général**, désactivez la case à cocher **Pas à pas principal dans les propriétés et les opérateurs (Managé uniquement)**.
 
 ## <a name="see-also"></a>Voir aussi

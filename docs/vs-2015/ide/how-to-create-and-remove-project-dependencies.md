@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e4ce804664f78bd4ec329f7e4e66008053291c77
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 26857824cac478936837a125068bd610dfc4c837
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54799770"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117627"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Comment : créer et supprimer les dépendances d'un projet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,18 +49,18 @@ Quand vous générez une solution qui contient plusieurs projets, vous pouvez ê
   
 ### <a name="to-remove-dependencies-from-projects"></a>Pour supprimer des dépendances de projets  
   
-1.  Dans l'Explorateur de solutions, sélectionnez un projet.  
+1. Dans l'Explorateur de solutions, sélectionnez un projet.  
   
-2.  Dans le menu **Projet**, choisissez **Dépendances du projet**.  
+2. Dans le menu **Projet**, choisissez **Dépendances du projet**.  
   
      La boîte de dialogue **Dépendances du projet** s’ouvre.  
   
     > [!NOTE]
     >  L’option **Dépendances du projet** n’est disponible que dans une solution comportant plusieurs projets.  
   
-3.  Sous l’onglet **Dépendances**, sélectionnez un projet à partir du menu déroulant **Projet**.  
+3. Sous l’onglet **Dépendances**, sélectionnez un projet à partir du menu déroulant **Projet**.  
   
-4.  Dans le champ **Dépend de**, décochez la case en regard de tout autre projet qui n’est plus une dépendance de ce projet.  
+4. Dans le champ **Dépend de**, décochez la case en regard de tout autre projet qui n’est plus une dépendance de ce projet.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Génération et nettoyage de solutions et de projets dans Visual Studio](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)   

@@ -53,16 +53,15 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 723b074b51e97282f67a8e490ec6b109e765dbc9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d45fcbd8bd84bb9b6510d4143d3250e2e67ad1b6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949693"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085375"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Outils de dataset dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 REMARQUE]
 >  Jeux de données et les classes connexes sont des technologies .NET héritées à partir du début des années 2000 qui permettent aux applications d’utiliser les données en mémoire, tandis que les applications sont déconnectées de la base de données. Ils sont particulièrement utiles pour les applications qui permettent aux utilisateurs de modifier des données et conserver les modifications apportées à la base de données. Bien que les jeux de données s’est avérés une technologie très réussie, nous recommandons d’utilisent Entity Framework nouvelles applications .NET. Entity Framework fournit un moyen plus naturel pour travailler avec des données tabulaires en tant que modèles d’objet, et elle possède une interface de programmation plus simple.
@@ -76,23 +75,23 @@ REMARQUE]
 ## <a name="dataset-workflow"></a>Jeu de données de flux de travail
  Visual Studio fournit de nombreux outils pour simplifier l’utilisation des jeux de données. Le workflow de bout en bout de base est :
 
--   Utilisez le **Source de données** fenêtre pour créer un nouveau jeu de données à partir d’une ou plusieurs sources de données. Utilisez le **Concepteur de Dataset** pour configurer le jeu de données et définissez ses propriétés. Par exemple, vous devez spécifier les tables à partir de la source de données à inclure et quelles colonnes de chaque table. Choisissez soigneusement préserver la quantité de mémoire qui nécessite le jeu de données. Pour plus d’informations, consultez [Créer et configurer des datasets](../data-tools/create-and-configure-datasets-in-visual-studio.md).
+- Utilisez le **Source de données** fenêtre pour créer un nouveau jeu de données à partir d’une ou plusieurs sources de données. Utilisez le **Concepteur de Dataset** pour configurer le jeu de données et définissez ses propriétés. Par exemple, vous devez spécifier les tables à partir de la source de données à inclure et quelles colonnes de chaque table. Choisissez soigneusement préserver la quantité de mémoire qui nécessite le jeu de données. Pour plus d’informations, consultez [Créer et configurer des datasets](../data-tools/create-and-configure-datasets-in-visual-studio.md).
 
--   Spécifier les relations entre les tables afin que les clés étrangères sont gérées correctement. Pour plus d’informations, consultez [remplir des jeux de données à l’aide de TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md).
+- Spécifier les relations entre les tables afin que les clés étrangères sont gérées correctement. Pour plus d’informations, consultez [remplir des jeux de données à l’aide de TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md).
 
--   Utilisez le **Assistant Configuration de TableAdapter** pour spécifier la requête ou la procédure stockée qui remplira le jeu de données et les opérations de base de données (update, delete et ainsi de suite) à implémenter. Pour plus d'informations, voir ces rubriques :
+- Utilisez le **Assistant Configuration de TableAdapter** pour spécifier la requête ou la procédure stockée qui remplira le jeu de données et les opérations de base de données (update, delete et ainsi de suite) à implémenter. Pour plus d'informations, voir ces rubriques :
 
-    -   [Remplir des datasets à l’aide de TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
+    - [Remplir des datasets à l’aide de TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
 
-    -   [Modifier des données dans des datasets](../data-tools/edit-data-in-datasets.md)
+    - [Modifier des données dans des datasets](../data-tools/edit-data-in-datasets.md)
 
-    -   [Valider les données dans des datasets](../data-tools/validate-data-in-datasets.md)
+    - [Valider les données dans des datasets](../data-tools/validate-data-in-datasets.md)
 
-    -   [Enregistrer les données dans la base de données](../data-tools/save-data-back-to-the-database.md)
+    - [Enregistrer les données dans la base de données](../data-tools/save-data-back-to-the-database.md)
 
--   Interroger et rechercher les données dans le jeu de données. Pour plus d’informations, consultez [jeux de données de requête](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] permet de [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) sur les données dans un <xref:System.Data.DataSet> objet. Pour plus d’informations, [consultez LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17).
+- Interroger et rechercher les données dans le jeu de données. Pour plus d’informations, consultez [jeux de données de requête](../data-tools/query-datasets.md). [!INCLUDE[linq_dataset](../includes/linq-dataset-md.md)] permet de [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) sur les données dans un <xref:System.Data.DataSet> objet. Pour plus d’informations, [consultez LINQ to DataSet](http://msdn.microsoft.com/library/743e3755-3ecb-45a2-8d9b-9ed41f0dcf17).
 
--   Utilisez le **des Sources de données** fenêtre pour lier des contrôles d’interface utilisateur pour le jeu de données ou des colonnes individuelles et pour spécifier les colonnes qui sont modifiables par l’utilisateur. Pour plus d’informations, consultez [lier des contrôles aux données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
+- Utilisez le **des Sources de données** fenêtre pour lier des contrôles d’interface utilisateur pour le jeu de données ou des colonnes individuelles et pour spécifier les colonnes qui sont modifiables par l’utilisateur. Pour plus d’informations, consultez [lier des contrôles aux données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).
 
 ## <a name="datasets-and-n-tier-architecture"></a>Architecture de jeux de données et des applications multicouches
  Pour plus d’informations sur les jeux de données dans les applications multicouches, consultez [fonctionne avec les jeux de données dans les applications multicouches](../data-tools/work-with-datasets-in-n-tier-applications.md).

@@ -8,12 +8,12 @@ ms.assetid: 26de91b8-45e3-4976-a20e-a3bd1942ddcb
 caps.latest.revision: 13
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5af016c0ef1e38a4ae7ca42d79ed2030821d0369
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8faf41bb838880b1f0f747f1feb9d3a318b2f1c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797364"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117406"
 ---
 # <a name="troubleshooting-code-coverage"></a>Dépannage de la couverture du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,9 +45,9 @@ L'outil d'analyse de couverture du code dans Visual Studio collecte des données
 ### <a name="youre-looking-at-a-previous-result"></a>Vous consultez un résultat antérieur  
  Lorsque vous modifiez et exécutez à nouveau vos tests, un résultat de couverture du code antérieur peut être visible, y compris la coloration du code de cette exécution antérieure.  
   
-1.  Exécutez Analyser la couverture du code.  
+1. Exécutez Analyser la couverture du code.  
   
-2.  Vérifiez que vous avez sélectionné le jeu de résultats le plus récent dans la fenêtre Résultats de la couverture du code.  
+2. Vérifiez que vous avez sélectionné le jeu de résultats le plus récent dans la fenêtre Résultats de la couverture du code.  
   
 ### <a name="pdb-symbol-files-are-unavailable"></a>Les fichiers .pdb (symbole) ne sont pas disponibles  
  Analyse  
@@ -107,17 +107,17 @@ L'outil d'analyse de couverture du code dans Visual Studio collecte des données
  Résolution  
  Il existe deux types d'erreurs possibles :  
   
--   **Erreur XML**  
+- **Erreur XML**  
   
      Ouvrez le fichier .runsettings dans l'éditeur XML de Visual Studio. Recherchez les indications des erreurs.  
   
--   **Erreur d’expressions régulières**  
+- **Erreur d’expressions régulières**  
   
      Chaque chaîne du fichier est une expression régulière. Vérifiez la présence d’erreurs pour chaque expression régulière. Recherchez en particulier :  
   
-    -   Parenthèses non appariées (…) ou parenthèses sans séquence d’échappement \\(...\\). Si vous souhaitez faire correspondre une parenthèse dans la chaîne de recherche, vous devez l'échapper. Par exemple, pour faire correspondre à une fonction, utilisez : `.*MyFunction\(double\)`  
+    - Parenthèses non appariées (…) ou parenthèses sans séquence d’échappement \\(...\\). Si vous souhaitez faire correspondre une parenthèse dans la chaîne de recherche, vous devez l'échapper. Par exemple, pour faire correspondre à une fonction, utilisez : `.*MyFunction\(double\)`  
   
-    -   Astérisque ou plus au début d'une expression. Pour faire correspondre à n'importe quelle chaîne de caractères, utilisez un point suivi d'un astérisque : `.*`  
+    - Astérisque ou plus au début d'une expression. Pour faire correspondre à n'importe quelle chaîne de caractères, utilisez un point suivi d'un astérisque : `.*`  
   
 ### <a name="custom-runsettings-file-with-incorrect-exclusions"></a>Fichier .runsettings personnalisé avec des exclusions non valides  
  Analyse  

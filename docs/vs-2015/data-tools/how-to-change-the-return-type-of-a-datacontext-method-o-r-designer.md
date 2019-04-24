@@ -9,17 +9,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2002b79b156ff3eaf537d71b6131da6832fabdb0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3e44a2c9b5fab120432f412e7c70f35c8e1ecafd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949636"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077470"
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>Procédure : modifier le type de retour d’une méthode DataContext (Concepteur O/R)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Le type de retour d’une méthode <xref:System.Data.Linq.DataContext> (créée selon une procédure stockée ou fonction) diffère selon l’endroit où vous placez la procédure stockée ou la fonction dans le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Si vous déposez directement un élément sur une classe d'entité existante, une méthode <xref:System.Data.Linq.DataContext> ayant le type de retour de la classe d'entité est créée (si le schéma des données a été retourné par la procédure stockée ou si la fonction correspond à la forme de la classe d'entité). Si vous déposez un élément dans une zone vide du [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], une méthode <xref:System.Data.Linq.DataContext> qui retourne un type généré automatiquement est créée. Vous pouvez modifier le type de retour d’une méthode <xref:System.Data.Linq.DataContext> après l’avoir ajoutée au volet de méthodes. Pour inspecter ou modifier le type de retour d’une méthode <xref:System.Data.Linq.DataContext>, sélectionnez-la et cliquez sur la propriété **Type de retour** dans la fenêtre **Propriétés**.  
   
 > [!NOTE]
@@ -29,19 +28,19 @@ Le type de retour d’une méthode <xref:System.Data.Linq.DataContext> (créée 
   
 ### <a name="to-change-the-return-type-of-a-datacontext-method-from-the-auto-generated-type-to-an-entity-class"></a>Pour modifier le type de retour d’une méthode DataContext du type généré automatiquement vers une classe d’entité  
   
-1.  Sélectionnez la méthode <xref:System.Data.Linq.DataContext> dans le volet de méthodes.  
+1. Sélectionnez la méthode <xref:System.Data.Linq.DataContext> dans le volet de méthodes.  
   
-2.  Sélectionnez **Type de retour** dans la fenêtre **Propriétés**, puis sélectionnez une classe d’entité disponible dans la liste **Type de retour**. Si la classe d’entité souhaitée n’est pas dans la liste, ajoutez-la ou créez-la dans le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] pour l’ajouter à la liste.  
+2. Sélectionnez **Type de retour** dans la fenêtre **Propriétés**, puis sélectionnez une classe d’entité disponible dans la liste **Type de retour**. Si la classe d’entité souhaitée n’est pas dans la liste, ajoutez-la ou créez-la dans le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] pour l’ajouter à la liste.  
   
-3.  Enregistrez le fichier .dbml.  
+3. Enregistrez le fichier .dbml.  
   
 ### <a name="to-change-the-return-type-of-a-datacontext-method-from-an-entity-class-back-to-the-auto-generated-type"></a>Pour modifier le type de retour d'une méthode DataContext d'une classe d'entité vers le type généré automatiquement  
   
-1.  Sélectionnez la méthode <xref:System.Data.Linq.DataContext> dans le volet de méthodes et supprimez-la.  
+1. Sélectionnez la méthode <xref:System.Data.Linq.DataContext> dans le volet de méthodes et supprimez-la.  
   
-2.  Faites glisser l’objet de base de données à partir de **Explorateur de serveurs**/**Database Explorer** dans une zone vide du Concepteur O/R.  
+2. Faites glisser l’objet de base de données à partir de **Explorateur de serveurs**/**Database Explorer** dans une zone vide du Concepteur O/R.  
   
-3.  Enregistrez le fichier .dbml.  
+3. Enregistrez le fichier .dbml.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

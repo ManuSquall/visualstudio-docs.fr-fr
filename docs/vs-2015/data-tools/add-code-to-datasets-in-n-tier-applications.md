@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4308fb0aa39120704c5537188407a9686e9b13a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 078230c2b80d364b68fb127f18fc21a0b931cbce
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947986"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106668"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Ajouter du code à des datasets dans des applications multiniveaux
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ Par défaut, une fois que vous séparez le dataset et `TableAdapter` code, le r�
 
 ## <a name="add-code-to-datasets-in-n-tier-applications"></a>Ajouter du code à des datasets dans des applications multiniveaux
 
-1.  Recherchez le projet qui contient le fichier .xsd (le jeu de données).
+1. Recherchez le projet qui contient le fichier .xsd (le jeu de données).
 
-2.  Sélectionnez le **.xsd** fichier à ouvrir le jeu de données.
+2. Sélectionnez le **.xsd** fichier à ouvrir le jeu de données.
 
-3.  Avec le bouton droit de la table de données à laquelle vous souhaitez ajouter du code (le nom de table dans la barre de titre), puis sélectionnez **afficher le Code**.
+3. Avec le bouton droit de la table de données à laquelle vous souhaitez ajouter du code (le nom de table dans la barre de titre), puis sélectionnez **afficher le Code**.
 
      Une classe partielle est créée et s’ouvre dans l’éditeur de Code.
 
-4.  Ajoutez le code à l’intérieur de la déclaration de classe partielle.
+4. Ajoutez le code à l’intérieur de la déclaration de classe partielle.
 
      L’exemple suivant indique où ajouter le code au CustomersDataTable dans NorthwindDataSet :
 

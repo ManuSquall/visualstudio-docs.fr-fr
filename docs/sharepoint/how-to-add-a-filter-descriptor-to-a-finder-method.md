@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ee555376a2943cb29344aad2ed94da2b8ab2ae36
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: dc6492b52cb739c49bdba9f231ebcda313a66105
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617780"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068663"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>Procédure : Ajouter un descripteur de filtre à une méthode de recherche
   Descripteurs de filtre permettent aux consommateurs du modèle transmettre des valeurs aux méthodes avant leur exécution. Pour plus d’informations, consultez [concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -29,25 +29,25 @@ ms.locfileid: "56617780"
 
 ### <a name="to-add-a-filter-descriptor-to-a-finder-method"></a>Pour ajouter un descripteur de filtre à une méthode de recherche
 
-1.  Dans le **détails de méthode BDC** fenêtre, développez le nœud d’une méthode de recherche, développez le **paramètres** nœud, puis ajoutez un paramètre d’entrée. Pour plus d'informations, voir [Procédure : Ajouter un paramètre à une méthode](../sharepoint/how-to-add-a-parameter-to-a-method.md).
+1. Dans le **détails de méthode BDC** fenêtre, développez le nœud d’une méthode de recherche, développez le **paramètres** nœud, puis ajoutez un paramètre d’entrée. Pour plus d'informations, voir [Procédure : Ajouter un paramètre à une méthode](../sharepoint/how-to-add-a-parameter-to-a-method.md).
 
-2.  Dans le **détails de la méthode** fenêtre, choisissez le descripteur de type du paramètre.
+2. Dans le **détails de la méthode** fenêtre, choisissez le descripteur de type du paramètre.
 
-3.  Dans la barre de menus, choisissez **vue** > **fenêtre Propriétés**.
+3. Dans la barre de menus, choisissez **vue** > **fenêtre Propriétés**.
 
-4.  Dans le **propriétés** fenêtre, définissez la **nom de Type** propriété à un type de données qui est approprié pour le filtre.
+4. Dans le **propriétés** fenêtre, définissez la **nom de Type** propriété à un type de données qui est approprié pour le filtre.
 
      Par exemple, un filtre peut utiliser une date de commande pour limiter le nombre de commandes client retournées par la méthode. Pour prendre en charge ce filtre, le **nom de Type** propriété du descripteur de type doit être définie sur **System.DateTime**.
 
-5.  Dans le **détails de la méthode** fenêtre, développez le **descripteurs de filtre** nœud.
+5. Dans le **détails de la méthode** fenêtre, développez le **descripteurs de filtre** nœud.
 
-6.  Dans **ajouter un descripteur de filtre** , choisissez **créer un descripteur de filtre**.
+6. Dans **ajouter un descripteur de filtre** , choisissez **créer un descripteur de filtre**.
 
      Un nouveau descripteur de filtre apparaît sous le **descripteurs de filtre** nœud.
 
-7.  Dans la barre de menus, choisissez **vue** > **fenêtre Propriétés**.
+7. Dans la barre de menus, choisissez **vue** > **fenêtre Propriétés**.
 
-8.  Dans le **propriétés** fenêtre, choisissez le **Type** propriété.
+8. Dans le **propriétés** fenêtre, choisissez le **Type** propriété.
 
 9. Dans la liste qui s’affiche pour le **Type** propriété, choisissez le modèle de filtrage que vous le souhaitez.
 

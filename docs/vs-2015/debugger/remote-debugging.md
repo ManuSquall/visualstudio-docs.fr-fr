@@ -19,12 +19,12 @@ caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a22442e390929e4b378d3e2e39d32656ff59e951
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a6fe3d3f144b192ef14ff52c942c75d9edd1be85
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001609"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076209"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Vous pouvez télécharger les outils à distance directement sur l’appareil ou
 
 ### <a name="to-download-and-install-the-remote-tools"></a>Pour télécharger et installer les outils à distance
   
-1.  Sur l’appareil ou serveur machine que vous souhaitez déboguer (plutôt que l’ordinateur qui exécute Visual Studio), obtenir la version des outils à distance.
+1. Sur l’appareil ou serveur machine que vous souhaitez déboguer (plutôt que l’ordinateur qui exécute Visual Studio), obtenir la version des outils à distance.
 
     |Version|Lien|Notes|
     |-|-|-|
@@ -47,14 +47,14 @@ Vous pouvez télécharger les outils à distance directement sur l’appareil ou
     |Visual Studio 2013|[Outils à distance](https://msdn.microsoft.com/library/bt727f1t(v=vs.120).aspx#BKMK_Installing_the_Remote_Tools)|Télécharger la page dans la documentation de Visual Studio 2013|
     |Visual Studio 2012|[Outils à distance](https://msdn.microsoft.com/library/bt727f1t(v=vs.110).aspx#BKMK_Installing_the_Remote_Tools)|Télécharger la page dans la documentation de Visual Studio 2012|
   
-2.  Sur la page de téléchargement, choisissez la version des outils qui correspond à votre système d’exploitation (x 86, x64 ou ARM version) et téléchargez les outils à distance.
+2. Sur la page de téléchargement, choisissez la version des outils qui correspond à votre système d’exploitation (x 86, x64 ou ARM version) et téléchargez les outils à distance.
   
     > [!IMPORTANT]
     >  Nous vous recommandons de qu'installer la version la plus récente des outils à distance qui correspond à votre version de Visual Studio. Versions incompatibles ne sont pas recommandées.  
     >   
     >  En outre, vous devez installer les outils à distance qui ont la même architecture que le système d’exploitation sur lequel vous souhaitez l’installer. En d’autres termes, si vous souhaitez déboguer une application 32 bits sur un ordinateur distant exécutant un système d’exploitation de 64 bits, vous devez installer la version 64 bits des outils à distance sur l’ordinateur distant.  
   
-3.  Une fois que vous avez terminé de télécharger le fichier exécutable, suivez les instructions pour installer l’application sur l’ordinateur distant. Consultez [instructions d’installation](#bkmk_setup)
+3. Une fois que vous avez terminé de télécharger le fichier exécutable, suivez les instructions pour installer l’application sur l’ordinateur distant. Consultez [instructions d’installation](#bkmk_setup)
 
 Si vous tentez de copier le débogueur distant (msvsmon.exe) sur l’ordinateur distant et l’exécuter, n’oubliez pas que le **Assistant Configuration Remote Debugger** (**rdbgwiz.exe**) est installé uniquement lorsque vous téléchargez le outils et vous devrez peut-être utiliser l’Assistant pour la configuration ultérieurement, en particulier si vous souhaitez que le débogueur distant s’exécute en tant que service. Pour plus d’informations, consultez [(facultatif) configurer le débogueur distant en tant que service](#bkmk_configureService) ci-dessous.
 
@@ -75,31 +75,30 @@ Vous pouvez trouver le débogueur distant (**msvsmon.exe**) sur un ordinateur av
 > [!TIP] 
 > Pour l’installation de ligne de commande et référence de ligne de commande, consultez la page d’aide **msvsmon.exe** en tapant ``msvsmon.exe /?`` dans la ligne de commande sur l’ordinateur avec Visual Studio est installé (ou accédez à **aide / utilisation**dans le débogueur distant).
 
-  
 ## <a name="supported-operating-systems"></a>Supported Operating Systems  
  L’ordinateur distant doit exécuter l’un des systèmes d’exploitation suivants :  
   
--   Windows 10  
+- Windows 10  
   
--   Windows 8 ou 8.1  
+- Windows 8 ou 8.1  
   
--   Windows 7 Service Pack 1  
+- Windows 7 Service Pack 1  
   
--   Windows Server 2012 ou Windows Server 2012 R2  
+- Windows Server 2012 ou Windows Server 2012 R2  
   
--   Windows Server 2008 Service Pack 2, Windows Server 2008 R2 Service Pack 1  
+- Windows Server 2008 Service Pack 2, Windows Server 2008 R2 Service Pack 1  
   
 ## <a name="supported-hardware-configurations"></a>Configurations matérielles prises en charge  
   
--   Processeur 1,6 GHz minimum  
+- Processeur 1,6 GHz minimum  
   
--   1 Go de RAM (1,5 Go s’il s’agit d’une machine virtuelle)  
+- 1 Go de RAM (1,5 Go s’il s’agit d’une machine virtuelle)  
   
--   1 Go d’espace disque disponible  
+- 1 Go d’espace disque disponible  
   
--   Disque dur 5400 tr/min  
+- Disque dur 5400 tr/min  
   
--   Carte vidéo DirectX 9 s’exécutant avec une résolution d’affichage de 1024 x 768 ou supérieure  
+- Carte vidéo DirectX 9 s’exécutant avec une résolution d’affichage de 1024 x 768 ou supérieure  
   
 ## <a name="network-configuration"></a>Configuration réseau  
  L’ordinateur distant et l’ordinateur Visual Studio doivent être connectés sur un réseau, un groupe de travail, un groupe résidentiel ou directement connectés à l’aide d’un câble Ethernet. Le débogage sur Internet n’est pas pris en charge.  
@@ -148,7 +147,7 @@ Vous pouvez trouver le débogueur distant (**msvsmon.exe**) sur un ordinateur av
    > [!WARNING]
   >  Vous pouvez choisir d'exécuter les outils de contrôle à distance en mode Aucune authentification, mais ce mode est fortement déconseillé. Il n'existe aucune sécurité du réseau lorsque vous lancez l'exécution dans ce mode. Sélectionnez le mode Aucune authentification uniquement si vous êtes sûr que le réseau n’est pas exposé à des failles de sécurité liées à des programmes malveillants ou du trafic dangereux.
 
-##  <a name="bkmk_configureService"></a> (Facultatif) Configurer le débogueur distant en tant que service
+## <a name="bkmk_configureService"></a> (Facultatif) Configurer le débogueur distant en tant que service
  Pour déboguer dans ASP.NET et d’autres environnements de serveur, vous devez exécuter le débogueur distant en tant qu’administrateur ou, si vous souhaitez qu’il est toujours en cours d’exécution, exécutez le débogueur distant en tant que service.
   
  Si vous souhaitez configurer le débogueur distant en tant que service, procédez comme suit.  
@@ -283,16 +282,16 @@ Vous pouvez trouver le débogueur distant (**msvsmon.exe**) sur un ordinateur av
   
  Pour plus d’informations, consultez l’aide du débogage distant (appuyez sur **F1** dans la fenêtre du débogueur distant, ou cliquez sur **aide / utilisation**). D’autres informations sont disponibles dans [Modification du chargement des symboles distants .NET dans Visual Studio 2012 et 2013](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx).  
   
-##  <a name="bkmk_winstoreAzure"></a> Débogage à distance sur les applications Windows Store et Azure  
+## <a name="bkmk_winstoreAzure"></a> Débogage à distance sur les applications Windows Store et Azure  
  Pour plus d’informations sur le débogage distant avec les applications du Windows Store, consultez [déboguer et tester des applications du Windows Store sur un appareil distant à partir de Visual Studio](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx).  
   
  Pour plus d’informations sur le débogage sur Azure, consultez une des rubriques suivantes :  
   
--   [Débogage d’un Service Cloud ou une Machine virtuelle dans Visual Studio](../azure/vs-azure-tools-debug-cloud-services-virtual-machines.md)  
+- [Débogage d’un Service Cloud ou une Machine virtuelle dans Visual Studio](../azure/vs-azure-tools-debug-cloud-services-virtual-machines.md)  
   
--   [Débogage du serveur principal .NET dans Visual Studio](http://blogs.msdn.com/b/azuremobile/archive/2014/03/14/debugging-net-backend-in-visual-studio.aspx)  
+- [Débogage du serveur principal .NET dans Visual Studio](http://blogs.msdn.com/b/azuremobile/archive/2014/03/14/debugging-net-backend-in-visual-studio.aspx)  
   
--   Introduction au débogage à distance sur Sites Web Azure ([partie 1](http://azure.microsoft.com/blog/2014/05/06/introduction-to-remote-debugging-on-azure-web-sites/), [partie 2](http://azure.microsoft.com/blog/2014/05/07/introduction-to-remote-debugging-azure-web-sites-part-2-inside-remote-debugging/), [partie 3](http://azure.microsoft.com/blog/2014/05/08/introduction-to-remote-debugging-on-azure-web-sites-part-3-multi-instance-environment-and-git/)).  
+- Introduction au débogage à distance sur Sites Web Azure ([partie 1](http://azure.microsoft.com/blog/2014/05/06/introduction-to-remote-debugging-on-azure-web-sites/), [partie 2](http://azure.microsoft.com/blog/2014/05/07/introduction-to-remote-debugging-azure-web-sites-part-2-inside-remote-debugging/), [partie 3](http://azure.microsoft.com/blog/2014/05/08/introduction-to-remote-debugging-on-azure-web-sites-part-3-multi-instance-environment-and-git/)).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md)   

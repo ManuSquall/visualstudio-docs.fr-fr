@@ -15,17 +15,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8c734e6bd41e91ba208a13e36c06f04111cac5ba
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ca10710d87777cdaeead42015d46cc6d489c907e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790095"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072634"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Options, Éditeur de texte, C/C++, Avancé
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 En modifiant ces options, vous pouvez changer le comportement lié à IntelliSense et la base de données de navigation quand vous programmez en C ou C++.  
   
  Pour accéder à cette page, dans le volet gauche de la boîte de dialogue **Options**, développez **Éditeur de texte**, **C/C++**, puis choisissez **Avancé**.  
@@ -74,19 +73,19 @@ En modifiant ces options, vous pouvez changer le comportement lié à IntelliSen
   
  Définissez cette option à l’aide d’une somme des options suivantes :  
   
--   0 - Aucun  
+- 0 - Aucun  
   
--   1 - Général  
+- 1 - Général  
   
--   2 - Inactif  
+- 2 - Inactif  
   
--   4 - Élément de travail  
+- 4 - Élément de travail  
   
--   8 - IntelliSense  
+- 8 - IntelliSense  
   
--   16 - ACPerf  
+- 16 - ACPerf  
   
--   32 - ClassView  
+- 32 - ClassView  
   
 ## <a name="fallback-location"></a>Emplacement de secours  
  L’emplacement de secours est l’endroit où les fichiers de support IntelliSense et SDF (par exemple, iPCH) sont placés quand l’emplacement principal (même répertoire que la solution) n’est pas utilisé. Cette situation peut se produire si l’utilisateur n’a pas l’autorisation d’écrire dans le répertoire de solution ou si le répertoire de solution se trouve sur un appareil lent. L’emplacement de secours par défaut est le répertoire temp de l’utilisateur.  

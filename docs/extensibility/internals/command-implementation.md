@@ -10,21 +10,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0e6b9776f94c802502bc393f2b8c262408d443e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 61f35521271df7d3f34e5f10ebf40d502c0f8596
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335621"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089751"
 ---
 # <a name="command-implementation"></a>Implémentation de la commande
 Pour implémenter une commande dans un VSPackage, vous devez effectuer les tâches suivantes :
 
-1.  Dans le *.vsct* de fichiers, configurer un groupe de commandes et puis ajoutez la commande à celui-ci. Pour plus d’informations, consultez [fichiers Visual Studio command table (.vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
+1. Dans le *.vsct* de fichiers, configurer un groupe de commandes et puis ajoutez la commande à celui-ci. Pour plus d’informations, consultez [fichiers Visual Studio command table (.vsct)](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md).
 
-2.  Inscrire la commande avec Visual Studio.
+2. Inscrire la commande avec Visual Studio.
 
-3.  Implémenter la commande.
+3. Implémenter la commande.
 
 Les sections suivantes expliquent comment inscrire et implémenter des commandes.
 
@@ -61,29 +61,29 @@ if ( null != mcs )
 ## <a name="querystatus-methods"></a>Méthodes QueryStatus
  Si vous implémentez soit le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> méthode ou le <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> (méthode), recherchez le GUID de la commande jeu auquel appartient la commande et l’ID de la commande. Respectez les règles ci-dessous.
 
--   Si le GUID n’est pas reconnu, votre implémentation de soit la méthode doit retourner <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_UNKNOWNGROUP>.
+- Si le GUID n’est pas reconnu, votre implémentation de soit la méthode doit retourner <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_UNKNOWNGROUP>.
 
--   Si votre implémentation de deux méthodes reconnaît le GUID, mais n’a pas implémenté la commande, la méthode doit retourner <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.
+- Si votre implémentation de deux méthodes reconnaît le GUID, mais n’a pas implémenté la commande, la méthode doit retourner <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED>.
 
--   Si votre implémentation de deux méthodes reconnaît le GUID et la commande, la méthode doit définir le champ Indicateurs de commande de chaque commande (dans le `prgCmds` paramètre) à l’aide de ce qui suit <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> indicateurs :
+- Si votre implémentation de deux méthodes reconnaît le GUID et la commande, la méthode doit définir le champ Indicateurs de commande de chaque commande (dans le `prgCmds` paramètre) à l’aide de ce qui suit <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> indicateurs :
 
-    -   `OLECMDF_SUPPORTED`: La commande est prise en charge.
+    - `OLECMDF_SUPPORTED`: La commande est prise en charge.
 
-    -   `OLECMDF_INVISIBLE`: La commande ne doit pas être visible.
+    - `OLECMDF_INVISIBLE`: La commande ne doit pas être visible.
 
-    -   `OLECMDF_LATCHED`: La commande est activée et a été activée.
+    - `OLECMDF_LATCHED`: La commande est activée et a été activée.
 
-    -   `OLECMDF_ENABLED`: La commande est activée.
+    - `OLECMDF_ENABLED`: La commande est activée.
 
-    -   `OLECMDF_DEFHIDEONCTXTMENU`: La commande doit être masquée s’il apparaît dans un menu contextuel.
+    - `OLECMDF_DEFHIDEONCTXTMENU`: La commande doit être masquée s’il apparaît dans un menu contextuel.
 
-    -   `OLECMDF_NINCHED`: La commande est un contrôleur de menu et n’est pas activée, mais sa liste déroulante n’est pas vide et qu’il est toujours disponible. (Cet indicateur est rarement utilisé.)
+    - `OLECMDF_NINCHED`: La commande est un contrôleur de menu et n’est pas activée, mais sa liste déroulante n’est pas vide et qu’il est toujours disponible. (Cet indicateur est rarement utilisé.)
 
--   Si la commande a été définie dans le *.vsct* de fichiers avec le `TextChanges` indicateur, définissez les paramètres suivants :
+- Si la commande a été définie dans le *.vsct* de fichiers avec le `TextChanges` indicateur, définissez les paramètres suivants :
 
-    -   Définir le `rgwz` élément de la `pCmdText` paramètre vers le nouveau texte de la commande.
+    - Définir le `rgwz` élément de la `pCmdText` paramètre vers le nouveau texte de la commande.
 
-    -   Définir le `cwActual` élément de la `pCmdText` paramètre à la taille de la chaîne de commande.
+    - Définir le `cwActual` élément de la `pCmdText` paramètre à la taille de la chaîne de commande.
 
 En outre, assurez-vous que le contexte actuel n’est pas une fonction d’automatisation, sauf si votre commande est conçu spécifiquement pour gérer les fonctions d’automatisation.
 

@@ -19,17 +19,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 17832cb68d61947f7e6e2aba0f502792e8794e50
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 6783b3e20c004e4270876dd8ee6b8b574a810d66
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54776942"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648976"
 ---
 # <a name="readlinesfromfile-task"></a>ReadLinesFromFile, tâche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Lit une liste d’éléments à partir d’un fichier texte.  
   
 ## <a name="parameters"></a>Paramètres  

@@ -9,22 +9,21 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 09df214f5537ac81c7fb9802a34b48ee01ceb75b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f79b57d01a091e3617e7470297aa6205aa4e20e0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952756"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041858"
 ---
 # <a name="the-designer-cannot-be-modified-while-debugging"></a>Le concepteur ne peut pas être modifié lors du débogage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Ce message apparaît lors d'une tentative de modification des éléments dans le Concepteur O/R alors que l'application s'exécute en mode de débogage. Lorsque l'application s'exécute en mode de débogage, le Concepteur O/R est accessible en lecture seule.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
--   Cliquez sur **arrêter le débogage** sur le **déboguer** menu.  
+- Cliquez sur **arrêter le débogage** sur le **déboguer** menu.  
   
      L'application cesse de déboguer et les éléments du Concepteur O/R peuvent être modifiés.  
   

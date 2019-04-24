@@ -19,30 +19,30 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b31d5c7d22ae209b46bdd4c422f6c3e7473ec8e0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ae2bb442edbeb49de25b44056263607fa4f26111
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758682"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071640"
 ---
-# <a name="walkthrough-improving-ui-responsiveness-html"></a>Procédure pas à pas : amélioration de la réactivité de l'interface utilisateur (HTML)
+# <a name="walkthrough-improving-ui-responsiveness-html"></a>Procédure pas à pas : Amélioration de la réactivité de l’interface utilisateur (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette procédure pas à pas vous guide dans le processus d’identification et de résolution d’un problème de performance à l’aide du [profileur de réactivité de l’interface utilisateur XAML](../profiling/html-ui-responsiveness.md). Le profileur est disponible dans Visual Studio pour les applications universelles Windows et du Windows Store en JavaScript. Dans ce scénario, vous créez une application de test de performance qui met à jour les éléments DOM trop fréquemment, et vous utilisez le profileur pour identifier et résoudre ce problème.  
   
 ### <a name="creating-and-running-the-performance-test-app"></a>Création et exécution de l'application de test de performance  
   
-1.  Dans Visual Studio, créez un projet JavaScript Windows universel. (Sélectionnez **Fichier / Nouveau / Projet**. Dans le volet gauche, sélectionnez **JavaScript** , **Windows**, **Windows 10**, puis **Universel** ou **Windows Phone**.)  
+1. Dans Visual Studio, créez un projet JavaScript Windows universel. (Sélectionnez **Fichier / Nouveau / Projet**. Dans le volet gauche, sélectionnez **JavaScript** , **Windows**, **Windows 10**, puis **Universel** ou **Windows Phone**.)  
   
-2.  > [!IMPORTANT]
+2. > [!IMPORTANT]
     >  Les résultats du diagnostic présentés dans cette rubrique concernent une application Windows 8.  
   
-3.  Dans le volet central, sélectionnez un des modèles de projet vide, comme **Application vide**.  
+3. Dans le volet central, sélectionnez un des modèles de projet vide, comme **Application vide**.  
   
-4.  Dans la zone **Nom**, spécifiez un nom, par exemple `JS_Perf_Tester`, puis choisissez **OK**.  
+4. Dans la zone **Nom**, spécifiez un nom, par exemple `JS_Perf_Tester`, puis choisissez **OK**.  
   
-5.  Dans l’**Explorateur de solutions**, ouvrez default.html et collez le code suivant entre les balises \<body> :  
+5. Dans l’**Explorateur de solutions**, ouvrez default.html et collez le code suivant entre les balises \<body> :  
   
     ```html  
     <div class="wrapper">  
@@ -50,7 +50,7 @@ Cette procédure pas à pas vous guide dans le processus d’identification et d
     </div>  
     ```  
   
-6.  Ouvrez default.css et ajoutez le CSS suivant :  
+6. Ouvrez default.css et ajoutez le CSS suivant :  
   
     ```css  
     #content {  
@@ -59,7 +59,7 @@ Cette procédure pas à pas vous guide dans le processus d’identification et d
     }  
     ```  
   
-7.  Ouvrez default.js et remplacez l'ensemble du code par le code suivant :  
+7. Ouvrez default.js et remplacez l'ensemble du code par le code suivant :  
   
     ```javascript  
     (function () {  
@@ -148,7 +148,7 @@ Cette procédure pas à pas vous guide dans le processus d’identification et d
   
     ```  
   
-8.  Appuyez sur la touche F5 pour démarrer le débogage. Vérifiez que le bouton **En attente de valeurs** apparaît dans la page.  
+8. Appuyez sur la touche F5 pour démarrer le débogage. Vérifiez que le bouton **En attente de valeurs** apparaît dans la page.  
   
 9. Choisissez **En attente de valeurs** et vérifiez que le texte et la couleur du bouton sont mis à jour toutes les secondes. Ceci est normal.  
   
@@ -202,11 +202,11 @@ Cette procédure pas à pas vous guide dans le processus d’identification et d
   
      ![Événement de la minuterie](../profiling/media/js-htmlviz-app-timer.png "JS_HTMLViz_App_Timer")  
   
-     Différentes informations peuvent être collectées à partir des données. Par exemple :  
+     Différentes informations peuvent être collectées à partir des données. Exemple :  
   
-    -   Chaque événement `Timer`, coloré pour être identifié comme un événement de script, inclut un appel à `document.createElement`, suivi d'un calcul de style et d'un appel à `style.backgroundColor` et `appendChild()`.  
+    - Chaque événement `Timer`, coloré pour être identifié comme un événement de script, inclut un appel à `document.createElement`, suivi d'un calcul de style et d'un appel à `style.backgroundColor` et `appendChild()`.  
   
-    -   Dans le bref intervalle de temps sélectionné (environ une à deux secondes), un grand nombre d'événements `Timer`, `Layout` et `Paint` se produisent. Les événements `Timer` se produisent beaucoup plus souvent que ce qui apparaît de la mise à jour effectuée toutes les secondes après le lancement de l’application et l’utilisation du bouton **En attente de valeurs**.  
+    - Dans le bref intervalle de temps sélectionné (environ une à deux secondes), un grand nombre d'événements `Timer`, `Layout` et `Paint` se produisent. Les événements `Timer` se produisent beaucoup plus souvent que ce qui apparaît de la mise à jour effectuée toutes les secondes après le lancement de l’application et l’utilisation du bouton **En attente de valeurs**.  
   
 10. Pour lancer une analyse, cliquez sur le lien vers la fonction anonyme pour un des événements `Timer` situés dans la partie inférieure gauche du volet. La fonction suivante s'ouvre dans default.js :  
   
@@ -225,7 +225,7 @@ Cette procédure pas à pas vous guide dans le processus d’identification et d
   
 ### <a name="fixing-the-performance-issue"></a>Résoudre le problème de performance  
   
-1.  Remplacez la fonction `update()` par le code suivant :  
+1. Remplacez la fonction `update()` par le code suivant :  
   
     ```javascript  
     function update() {  
@@ -240,7 +240,7 @@ Cette procédure pas à pas vous guide dans le processus d’identification et d
   
      Cette version corrigée du code inclut un délai de 1000 millisecondes qui a été omis de la version antérieure du code, ce qui provoque l'utilisation d'une valeur de délai par défaut. À partir de données de profileur, la valeur par défaut est zéro milliseconde, ce qui entraîne l'exécution de la fonction `setValues()` trop fréquemment.  
   
-2.  Exécutez à nouveau le profileur de réactivité de l'interface utilisateur HTML et consultez le graphique d'utilisation de l'UC. Vous constaterez que les événements excessifs ont disparu et que l'utilisation de l'UC s'approche de zéro. Problème résolu !  
+2. Exécutez à nouveau le profileur de réactivité de l'interface utilisateur HTML et consultez le graphique d'utilisation de l'UC. Vous constaterez que les événements excessifs ont disparu et que l'utilisation de l'UC s'approche de zéro. Problème résolu !  
   
 ## <a name="see-also"></a>Voir aussi  
  [Réactivité de l’interface utilisateur HTML](../profiling/html-ui-responsiveness.md)

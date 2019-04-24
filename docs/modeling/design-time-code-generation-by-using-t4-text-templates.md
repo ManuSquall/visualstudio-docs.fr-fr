@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 524d50a946091325be5c27bd7ae55dd5dc720a1d
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: b4cfca45d2ad1979b091c668854990ce9a7c0311
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415694"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090418"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Génération de code durant la conception à l'aide de modèles de texte T4
 Modèles de texte T4 au moment du design vous permettent de générer du code de programme et d’autres fichiers dans votre projet Visual Studio. En règle générale, vous écrivez les modèles pour qu’ils varient le code qu’ils génèrent en fonction des données à partir d’un *modèle*. Un modèle est un fichier ou une base de données qui contient des informations clés sur les exigences de votre application.
@@ -141,9 +141,9 @@ Les modèles de texte vous permettent d'utiliser du code de programme pour varie
 
 #### <a name="to-generate-program-code-or-resources"></a>Pour générer du code de programme ou des ressources
 
-1.  Modifiez la directive de sortie pour générer un fichier du type approprié, tel que .cs, .vb, .resx ou .xml.
+1. Modifiez la directive de sortie pour générer un fichier du type approprié, tel que .cs, .vb, .resx ou .xml.
 
-2.  Insérez du code qui générera le code de solution nécessaire. Par exemple, si vous souhaitez générer trois déclarations de champ de nombres entiers dans une classe :
+2. Insérez du code qui générera le code de solution nécessaire. Par exemple, si vous souhaitez générer trois déclarations de champ de nombres entiers dans une classe :
 
     ```csharp
 
@@ -176,7 +176,7 @@ Les modèles de texte vous permettent d'utiliser du code de programme pour varie
 
     ```
 
-3.  Enregistrez le fichier est inspectez le fichier généré, qui contient maintenant le code suivant :
+3. Enregistrez le fichier est inspectez le fichier généré, qui contient maintenant le code suivant :
 
     ```csharp
     class MyGeneratedClass {
@@ -341,12 +341,10 @@ Warning("A warning message");
 
 4. Vérifiez les propriétés suivantes de la **.tt** fichier :
 
-
    | | |
    |-|-|
    | **Outil personnalisé =** | **TextTemplatingFileGenerator** |
    | **Action de génération =** | **Aucun** |
-
 
 5. Insérez les lignes suivantes au début du fichier :
 

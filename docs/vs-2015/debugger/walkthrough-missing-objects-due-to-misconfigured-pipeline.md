@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 800fa29682460991ca28a0dacb6d5b5a4a9838d4
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 01366bfd0f32f9cbf731613339f2c592873e2623
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58947909"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114104"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Procédure pas à pas : objets manquants en raison d’un pipeline mal configuré
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ Cette procédure pas à pas montre comment utiliser les outils Graphics Diagnost
   
  Cette procédure pas à pas décrit les tâches suivantes :  
   
--   Utilisation de la **liste des événements Graphics** pour rechercher les sources potentielles du problème.  
+- Utilisation de la **liste des événements Graphics** pour rechercher les sources potentielles du problème.  
   
--   Utilisation de la fenêtre **Étapes de canalisation Graphics** pour examiner l’effet de l’appel de l’API Direct3D `DrawIndexed` .  
+- Utilisation de la fenêtre **Étapes de canalisation Graphics** pour examiner l’effet de l’appel de l’API Direct3D `DrawIndexed` .  
   
--   Inspection du contexte de périphérique pour confirmer qu’aucune étape de nuanceur n’a été définie.  
+- Inspection du contexte de périphérique pour confirmer qu’aucune étape de nuanceur n’a été définie.  
   
--   Utilisation de la fenêtre **Étapes de canalisation Graphics** avec la **Pile des appels des événements Graphics** pour aider à trouver la source du nuanceur de pixels non défini.  
+- Utilisation de la fenêtre **Étapes de canalisation Graphics** avec la **Pile des appels des événements Graphics** pour aider à trouver la source du nuanceur de pixels non défini.  
   
 ## <a name="scenario"></a>Scénario  
  Quand un objet est manquant dans une application 3D, c’est parfois dû au fait que l’une des étapes du nuanceur n’est pas définie avant le rendu de l’objet. Dans les applications qui ont des besoins de rendu simples, la source de cette erreur se situe généralement quelque part dans la pile des appels de dessin de l’objet. Toutefois, en guise d’optimisation, certaines applications rassemblent des objets qui ont des programmes nuanceurs, des textures ou d’autres données en commun pour minimiser la surcharge liée au changement d’état. Dans ces applications, la source de l’erreur peut être dissimulée au fond du système de traitement par lot, plutôt que située dans la pile des appels de l’appel de dessin. Comme le scénario de cette procédure pas à pas illustre une application ayant des besoins de rendu simples, la source de l’erreur se trouve dans la pile des appels.  

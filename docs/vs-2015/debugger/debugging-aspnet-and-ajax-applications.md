@@ -19,21 +19,21 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d1322300992359f386a43c7feef41053611bb866
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2547c9edb501ac8536b06548ab23a5262515ca78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948393"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116782"
 ---
 # <a name="debugging-aspnet-and-ajax-applications"></a>Débogage d’applications ASP.NET et AJAX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le débogage d'applications Web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ressemble au débogage d'un Windows Form ou d'une application Windows quelconque, ces applications impliquant dans l'un et l'autre cas des contrôles et des événements. Il existe néanmoins aussi des différences fondamentales entre elles :  
   
--   Assurer le suivi de l'état est plus complexe dans une application Web.  
+- Assurer le suivi de l'état est plus complexe dans une application Web.  
   
--   Dans une application Windows, le code à déboguer se trouve essentiellement rassemblé au même endroit ; dans une application Web, le code peut se trouver sur le client et sur le serveur. Alors que le code [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] se trouve entièrement sur le serveur, il peut y avoir également du code JavaScript ou [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] sur le client.  
+- Dans une application Windows, le code à déboguer se trouve essentiellement rassemblé au même endroit ; dans une application Web, le code peut se trouver sur le client et sur le serveur. Alors que le code [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] se trouve entièrement sur le serveur, il peut y avoir également du code JavaScript ou [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] sur le client.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Préparation du débogage ASP.NET](../debugger/preparing-to-debug-aspnet.md)  

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 89aab0b0217fb92d4b2e8c30c0e8a2798cea171c
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: e011d564af02bf6370536086ad0c95b5432cfa04
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354841"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504222"
 ---
 # <a name="quickstart-debug-aspnet-with-the-visual-studio-debugger"></a>Démarrage rapide : Déboguer du code ASP.NET avec le débogueur Visual Studio
 
@@ -28,7 +28,7 @@ Le débogueur Visual Studio fournit de nombreuses fonctionnalités puissantes po
 1. Ouvrez Visual Studio.
 
     ::: moniker range=">=vs-2019"
-    Tapez **Ctrl+Q** pour ouvrir la zone de recherche, tapez **asp.net**, choisissez **Modèles**, puis choisissez **Créer une application web ASP.NET Core**. Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
+    Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **Ctrl+Q** pour ouvrir la zone de recherche, tapez **asp.net**, choisissez **Modèles**, puis choisissez **Créer une application web ASP.NET Core**. Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, sous **Visual C#**, choisissez **Web** puis, dans le volet central, choisissez **Application web ASP.NET Core**. Tapez un nom comme **MyDbgApp**, puis cliquez sur **OK**.
@@ -138,4 +138,4 @@ Pour plus d’informations sur l’utilisation de Modifier & Continuer et sur l
 Dans ce tutoriel, vous avez découvert comment démarrer le débogueur, parcourir le code pas à pas et inspecter des variables. Vous pouvez obtenir une présentation générale des fonctionnalités du débogueur et suivre des liens qui donnent accès à plus d’informations.
 
 > [!div class="nextstepaction"]
-> [Visite guidée des fonctionnalités du débogueur](../debugger/debugger-feature-tour.md)
+> [Présentation du débogueur](../debugger/debugger-feature-tour.md)

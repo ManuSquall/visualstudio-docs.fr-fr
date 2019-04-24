@@ -10,12 +10,12 @@ ms.assetid: d5aef766-a24c-4f1f-ac9b-e5462b6627d4
 caps.latest.revision: 41
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 192d97d8d2096b37d2dd52d2ed942ccb595456d0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 37e0ae51589d85ac52ec962fb3cb193fc37a7ad4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54795790"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081253"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Meilleures pratiques pour les tests codés de l'interface utilisateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Cette rubrique décrit les pratiques recommandées à suivre pour développer de
   
  **Spécifications**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 ## <a name="best-practices"></a>Meilleures pratiques  
  Utilisez les instructions suivantes pour créer un test codé de l'interface utilisateur flexible.  
@@ -64,11 +64,11 @@ Cette rubrique décrit les pratiques recommandées à suivre pour développer de
   
 - Si un contrôle a une assertion qui n'est plus valide :  
   
-  -   Supprimez la méthode qui contient l'assertion.  
+  - Supprimez la méthode qui contient l'assertion.  
   
-  -   Supprimez l'appel à cette méthode depuis la méthode de test.  
+  - Supprimez l'appel à cette méthode depuis la méthode de test.  
   
-  -   Ajouter une nouvelle assertion en faisant glisser le bouton en forme de croix sur le contrôle d'interface utilisateur, ouvrez le mappage d'interface utilisateur, puis ajoutez la nouvelle assertion.  
+  - Ajouter une nouvelle assertion en faisant glisser le bouton en forme de croix sur le contrôle d'interface utilisateur, ouvrez le mappage d'interface utilisateur, puis ajoutez la nouvelle assertion.  
   
   Pour plus d’informations sur la manière d’enregistrer des tests codés de l’interface utilisateur, consultez [Utiliser l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md).  
   

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c0bc46684d94470bb5e12cbdbecb5538ceb89606
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c2d58ea5d23ed8b302b6ec2a0352f23b0eeeff66
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936072"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066518"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Procédure : Supprimer les avertissements d’analyse de code pour le code généré
 Les compilateurs de code managé génèrent souvent un code qui est ajouté à un projet pour faciliter le développement de code rapide. En outre, les développeurs utilisent souvent des outils tiers pour aider à développer rapidement des applications. Ces outils génèrent également le code qui est ajouté au projet.
@@ -27,8 +27,8 @@ Les compilateurs de code managé génèrent souvent un code qui est ajouté à u
 
 ### <a name="to-suppress-warnings-for-generated-code-in-a-project"></a>Pour supprimer des avertissements pour du code généré dans un projet
 
-1.  Cliquez sur le projet dans l’Explorateur de solutions, puis cliquez sur **propriétés**.
+1. Cliquez sur le projet dans l’Explorateur de solutions, puis cliquez sur **propriétés**.
 
-2.  Cliquez sur **analyse du Code**.
+2. Cliquez sur **analyse du Code**.
 
-3.  Sélectionnez le **supprimer les résultats du code généré** case à cocher.
+3. Sélectionnez le **supprimer les résultats du code généré** case à cocher.

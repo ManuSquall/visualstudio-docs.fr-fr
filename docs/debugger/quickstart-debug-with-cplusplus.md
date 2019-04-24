@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ee57fe4d2df3a9d1fa9f4f8a624e7b63caa1f7fd
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: ac95fc54b410700f3ce28f3ace6192787400d64b
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58475953"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504209"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Démarrage rapide : Déboguer du code C++ avec le débogueur Visual Studio
 
@@ -28,7 +28,7 @@ Le débogueur Visual Studio fournit de nombreuses fonctionnalités puissantes po
 1. Ouvrez Visual Studio et créez un projet.
 
     ::: moniker range=">=vs-2019"
-    Tapez **Ctrl+Q** pour ouvrir la zone de recherche, tapez **c++**, choisissez **Modèles**, puis choisissez **Créer un projet d’application console**. Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
+    Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **Ctrl+Q** pour ouvrir la zone de recherche, tapez **c++**, choisissez **Modèles**, puis choisissez **Créer un projet d’application console**. Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, sous **Visual C++**, choisissez **Windows Desktop** puis, dans le volet central, choisissez **Application console Windows**. Tapez ensuite un nom tel que **MyDbgApp** et cliquez sur **OK**.
@@ -138,4 +138,4 @@ Pour plus d’informations sur l’utilisation de Modifier & Continuer et sur l
 Dans ce tutoriel, vous avez découvert comment démarrer le débogueur, parcourir le code pas à pas et inspecter des variables. Vous pouvez obtenir une présentation générale des fonctionnalités du débogueur et suivre des liens qui donnent accès à plus d’informations.
 
 > [!div class="nextstepaction"]
-> [Visite guidée des fonctionnalités du débogueur](../debugger/debugger-feature-tour.md)
+> [Présentation du débogueur](../debugger/debugger-feature-tour.md)

@@ -16,16 +16,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26fdadf92fa94efe0a08fdf090e5a295e2f65096
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 6841b8a91cec24f467f6e3f684cbb27e25c9fa63
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999975"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045614"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications"></a>Procédure : Suspendre l’activation des URL des applications ClickOnce
 
-En règle générale, une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] se lance automatiquement immédiatement après son installation à partir d’un serveur web. Pour des raisons de sécurité, vous pouvez décider de désactiver ce comportement et d’inviter plutôt les utilisateurs à lancer l’application à partir du menu **Démarrer**. La procédure suivante décrit comment désactiver l'activation d'URL.
+En règle générale, une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] se lance automatiquement immédiatement après son installation à partir d'un serveur web. Pour des raisons de sécurité, vous pouvez décider de désactiver ce comportement et d’inviter plutôt les utilisateurs à lancer l’application à partir du menu **Démarrer**. La procédure suivante décrit comment désactiver l'activation d'URL.
 
 Cette technique peut être utilisée uniquement pour les applications [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] installées sur l'ordinateur de l'utilisateur à partir d'un serveur web. Elle ne peut pas être utilisée pour les applications en ligne uniquement, qui peuvent être lancées uniquement à l'aide de leur URL. Pour plus d’informations sur la différence entre les applications en ligne uniquement et les applications installées, consultez [Choix d’une stratégie de déploiement ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).
 
@@ -35,13 +35,13 @@ Cette procédure utilise l’outil du Kit de développement logiciel (SDK) Windo
 
 ### <a name="to-disable-url-activation-for-your-application"></a>Pour désactiver l'activation d'URL pour votre application
 
-1.  Ouvrez votre manifeste de déploiement dans MageUI.exe. Si vous n’en n'avez pas encore créé un, suivez les étapes de [procédure pas à pas : Déployer manuellement une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+1. Ouvrez votre manifeste de déploiement dans MageUI.exe. Si vous n’en n'avez pas encore créé un, suivez les étapes de [procédure pas à pas : Déployer manuellement une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
-2.  Sélectionnez l’onglet **Options de déploiement**.
+2. Sélectionnez l’onglet **Options de déploiement**.
 
-3.  Décochez la case **Exécuter automatiquement l’application après l’installation**.
+3. Décochez la case **Exécuter automatiquement l’application après l’installation**.
 
-4.  Enregistrez et signez le manifeste.
+4. Enregistrez et signez le manifeste.
 
 ## <a name="see-also"></a>Voir aussi
 

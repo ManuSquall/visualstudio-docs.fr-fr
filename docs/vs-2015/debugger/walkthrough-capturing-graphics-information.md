@@ -9,12 +9,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5ad2f63bdbbad7d4427454e69806b06937b259b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9ebd0453347084d1662c6bc7837fc1e96f498fbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950005"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053882"
 ---
 # <a name="walkthrough-capturing-graphics-information"></a>Procédure pas à pas : Capture d'informations graphiques
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,18 +23,18 @@ Cette procédure pas à pas montre comment utiliser Graphics Diagnostics dans [!
   
  Cette procédure pas à pas décrit les tâches suivantes :  
   
--   Raccordement de Graphics Diagnostics à votre application  
+- Raccordement de Graphics Diagnostics à votre application  
   
--   Capture d'informations graphiques  
+- Capture d'informations graphiques  
   
 ## <a name="capturing-graphics-information"></a>Capture d'informations graphiques  
  Pour utiliser les outils Graphics Diagnostics, vous devez d'abord capturer les informations graphiques dont ils ont besoin. Pour activer la capture, utilisez la commande **Démarrer les diagnostics** pour raccorder Graphics Diagnostics à votre application lors de son démarrage.  
   
 #### <a name="to-enable-the-capture-of-graphics-information-after-a-project-or-solution-is-loaded"></a>Pour activer la capture des informations graphiques après le chargement d’un projet ou d’une solution  
   
-1.  Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], chargez un fichier projet ou solution pour l’application dont vous souhaitez capturer les informations graphiques.  
+1. Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], chargez un fichier projet ou solution pour l’application dont vous souhaitez capturer les informations graphiques.  
   
-2.  Dans la barre d’outils Graphics Diagnostics, choisissez **Démarrer les diagnostics**.  
+2. Dans la barre d’outils Graphics Diagnostics, choisissez **Démarrer les diagnostics**.  
   
 #### <a name="to-enable-the-capture-of-graphics-information-without-loading-a-project-or-solution"></a>Pour activer la capture des informations graphiques sans charger de projet ou solution  
   
@@ -59,7 +59,7 @@ Cette procédure pas à pas montre comment utiliser Graphics Diagnostics dans [!
 ## <a name="next-steps"></a>Étapes suivantes  
  Cette procédure pas à pas vous a montré comment capturer manuellement des informations graphiques. Pour franchir une étape supplémentaire, envisagez cette possibilité :  
   
--   Découvrez comment analyser les informations graphiques capturées à l’aide des outils Graphics Diagnostics. Consultez [vue d’ensemble](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
+- Découvrez comment analyser les informations graphiques capturées à l’aide des outils Graphics Diagnostics. Consultez [vue d’ensemble](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Capturing Graphics Information](../debugger/capturing-graphics-information.md)

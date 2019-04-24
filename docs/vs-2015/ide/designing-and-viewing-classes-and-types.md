@@ -17,12 +17,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b4d9636a29485430be92ab622ae8ce56712f22aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c41dc9df835cc3799a35620730927b338224ea14
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756857"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045042"
 ---
 # <a name="designing-and-viewing-classes-and-types"></a>Conception et affichage des classes et des types
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ Concevez, visualisez et refactorisez les classes et d'autres types dans votre co
   
  Voici plus d'informations sur ce que vous pouvez faire avec les diagrammes de classes :  
   
--   **Concevoir** : modifiez le code de votre projet en changeant le diagramme de classes. Ajoutez de nouveaux éléments et supprimez ceux dont vous n'avez pas besoin. Vos changements sont répercutés dans le code.  
+- **Concevoir** : modifiez le code de votre projet en changeant le diagramme de classes. Ajoutez de nouveaux éléments et supprimez ceux dont vous n'avez pas besoin. Vos changements sont répercutés dans le code.  
   
--   **Visualiser** : comprenez la structure de votre projet en affichant ses classes dans un diagramme. Personnalisez votre diagramme pour pouvoir vous concentrer sur les détails du projet qui vous intéressent le plus. Enregistrez votre diagramme pour pouvoir l'utiliser plus tard à des fins de démonstration ou de documentation.  
+- **Visualiser** : comprenez la structure de votre projet en affichant ses classes dans un diagramme. Personnalisez votre diagramme pour pouvoir vous concentrer sur les détails du projet qui vous intéressent le plus. Enregistrez votre diagramme pour pouvoir l'utiliser plus tard à des fins de démonstration ou de documentation.  
   
--   **Refactoriser** : substituez des méthodes, renommez des identificateurs, refactorisez des paramètres, et implémentez des interfaces et des classes abstraites.  
+- **Refactoriser** : substituez des méthodes, renommez des identificateurs, refactorisez des paramètres, et implémentez des interfaces et des classes abstraites.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Utilisation des classes et d’autres types (Concepteur de classes)](../ide/working-with-classes-and-other-types-class-designer.md)  

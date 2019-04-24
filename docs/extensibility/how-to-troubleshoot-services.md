@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b943322fe6172eaaf196cc3f842da9ec0838d8cc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 681564b2148fb9554e80105c2e18b1d220bb37ea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702393"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111647"
 ---
 # <a name="how-to-troubleshoot-services"></a>Procédure : Résoudre les problèmes des services
 Il existe plusieurs problèmes courants qui peuvent se produire lorsque vous essayez d’obtenir un service :
@@ -52,9 +52,9 @@ if (log == null) return;
 
 2. Lorsque vous appelez la méthode GetService, utilisez le type de service et pas le type d’interface. Lors de la demande d’un service à partir de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], <xref:Microsoft.VisualStudio.Shell.Package> extrait le GUID du type. Un service sera introuvable si les conditions suivantes sont réunies :
 
-   1.  Un type d’interface est passé à la méthode GetService au lieu du type de service.
+   1. Un type d’interface est passé à la méthode GetService au lieu du type de service.
 
-   2.  Aucun GUID n’est explicitement affectée à l’interface. Par conséquent, le système crée un GUID par défaut pour un objet en fonction des besoins.
+   2. Aucun GUID n’est explicitement affectée à l’interface. Par conséquent, le système crée un GUID par défaut pour un objet en fonction des besoins.
 
 3. Assurez-vous que le VSPackage demandant le service a été placé. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] sites d’un VSPackage après la construction et avant d’appeler <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.
 

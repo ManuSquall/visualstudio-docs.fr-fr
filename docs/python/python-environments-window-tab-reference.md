@@ -3,19 +3,19 @@ title: Référence sur la fenêtre Environnements Python
 description: Cet article donne des informations sur chacun des onglets qui s’affichent sur la fenêtre Environnements Python dans Visual Studio.
 ms.date: 03/18/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d8e60b92b7c76c22c35edbe42d60644583f37123
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 578f73aabfb8b5a4c8336c8611f634b8947c8885
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355774"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366521"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Référence sur les onglets de la fenêtre Environnements Python
 
@@ -46,8 +46,8 @@ Fournit des commandes et des informations de base pour l’environnement :
 
 | Commande | Description |
 | --- | --- |
-| **Définir cet environnement par défaut pour les nouveaux projets** | Définit l’environnement actif, ce qui risque d’interrompre brièvement le fonctionnement de Visual Studio (2017 version 15.5 et antérieure) pendant le chargement de la base de données IntelliSense. Les environnements avec de nombreux packages peuvent être interrompus pendant plus longtemps. |
-| **Visiter le site web du distributeur** | Dans un navigateur, ouvre l’URL fournie par la distribution Python. Python 3.x, par exemple, accède à python.org. |
+| **Make this environment the default for new projects (Définir cet environnement par défaut pour les nouveaux projets)** | Définit l’environnement actif, ce qui risque d’interrompre brièvement le fonctionnement de Visual Studio (2017 version 15.5 et antérieure) pendant le chargement de la base de données IntelliSense. Les environnements avec de nombreux packages peuvent être interrompus pendant plus longtemps. |
+| **Visit the distributor’s website (Visiter le site web du serveur de distribution)** | Dans un navigateur, ouvre l’URL fournie par la distribution Python. Python 3.x, par exemple, accède à python.org. |
 | **Ouvrir une fenêtre interactive** | Ouvre la [fenêtre (REPL) interactive](python-interactive-repl-in-visual-studio.md) pour cet environnement au sein de Visual Studio, en appliquant tous les [scripts de démarrage (voir ci-dessous)](#startup-scripts). |
 | **Explorer les scripts interactifs** | Consultez [Scripts de démarrage](#startup-scripts). |
 | **Utiliser le mode interactif IPython** | Quand cette option est définie, ouvre la fenêtre **Interactive** avec IPython par défaut. Cela permet d’activer les tracés inline, ainsi que la syntaxe IPython étendue telle que `name?`pour afficher l’aide, et `!command` pour les commandes de l’interpréteur de commandes. Cette option est recommandée lors de l’utilisation d’une distribution Anaconda, car elle nécessite des packages supplémentaires. Pour plus d’informations, consultez [Utiliser IPython dans la fenêtre interactive](interactive-repl-ipython.md). |
@@ -60,7 +60,7 @@ Quand vous utilisez des fenêtres interactives dans votre flux de travail quotid
 
 Les scripts de démarrage contiennent du code que la fenêtre **Interactive** charge et exécute automatiquement, notamment les importations, les définitions de fonctions et, littéralement, tout autre élément. Ces scripts sont référencés de deux manières :
 
-1. Quand vous installez un environnement, Visual Studio crée un dossier *Documents\Visual Studio <version>\Python Scripts\\\<environnement>* où &lt;version&gt; correspond à la version de Visual Studio (comme 2017 ou 2019) et où &lt;environnement&gt; correspond au nom de l’environnement. Vous pouvez facilement accéder au dossier spécifique à l’environnement avec la commande **Explorer les scripts interactifs**. Quand vous démarrez la fenêtre **Interactive** pour cet environnement, elle charge et exécute tous les fichiers *.py* qui s’y trouvent dans l’ordre alphabétique.
+1. Quand vous installez un environnement, Visual Studio crée un dossier *Documents\Visual Studio \<version>\Python Scripts\\\<environnement>*, où &lt;version&gt; correspond à la version de Visual Studio (par exemple, 2017 ou 2019) et &lt;environnement&gt; au nom de l’environnement. Vous pouvez facilement accéder au dossier spécifique à l’environnement avec la commande **Explorer les scripts interactifs**. Quand vous démarrez la fenêtre **Interactive** pour cet environnement, elle charge et exécute tous les fichiers *.py* qui s’y trouvent dans l’ordre alphabétique.
 
 1. Le contrôle **Scripts** sous l’onglet **Outils** > **Options** > **Python** > **Fenêtres interactives** (consultez [Options des fenêtres interactives](python-support-options-and-settings-in-visual-studio.md#interactive-windows-options)) est destiné à spécifier un dossier supplémentaire pour les scripts de démarrage qui sont chargés et exécutés dans tous les environnements. Toutefois, cette fonctionnalité ne fonctionne pas actuellement.
 
@@ -78,13 +78,13 @@ S’il est disponible, l’onglet **Configure** contient les informations décri
 | Champ | Description |
 | --- | --- |
 | **Description** | Le nom à donner à l’environnement. |
-| **Prefix path** (Chemin du préfixe) | L’emplacement du dossier de base de l’interpréteur. En indiquant cette valeur et en cliquant sur **Détecter automatiquement**, Visual Studio tente de renseigner les autres champs pour vous. |
-| **Interpreter Path** (Chemin d’interpréteur) | Chemin de l’exécutable de l’interpréteur. En règle générale, il s’agit du chemin de préfixe suivi de **python.exe** |
-| **Windowed interpreter** (Interpréteur avec fenêtre) | Chemin de l’exécutable qui n’est pas celui de la console. Bien souvent, il s’agit du chemin de préfixe suivi de **pythonw.exe**. |
-| **Chemin d’accès à la bibliothèque**<br/>(s’il est disponible) | Spécifie la racine de la bibliothèque standard, mais cette valeur peut être ignorée si Visual Studio est en mesure de demander un chemin d’accès plus précis à partir de l’interpréteur. |
+| **Chemin du préfixe** | L’emplacement du dossier de base de l’interpréteur. En indiquant cette valeur et en cliquant sur **Détecter automatiquement**, Visual Studio tente de renseigner les autres champs pour vous. |
+| **Chemin de l’interpréteur** | Chemin de l’exécutable de l’interpréteur. En règle générale, il s’agit du chemin de préfixe suivi de **python.exe** |
+| **Interpréteur fenêtré** | Chemin de l’exécutable qui n’est pas celui de la console. Bien souvent, il s’agit du chemin de préfixe suivi de **pythonw.exe**. |
+| **Chemin de la bibliothèque**<br/>(s’il est disponible) | Spécifie la racine de la bibliothèque standard, mais cette valeur peut être ignorée si Visual Studio est en mesure de demander un chemin d’accès plus précis à partir de l’interpréteur. |
 | **Version du langage** | Sélectionnée à partir du menu déroulant. |
 | **Architecture** | Normalement détectée et renseignée automatiquement, sinon **32 bits** ou **64 bits** est spécifié. |
-| **Path environment variable** (Variable d’environnement de chemin d’accès) | La variable d’environnement que l’interpréteur utilise pour rechercher les chemins de recherche. Visual Studio modifie la valeur de la variable lors du démarrage de Python pour qu’il contienne les chemins de recherche du projet. En général, cette propriété doit avoir la valeur **PYTHONPATH**, mais certains interpréteurs utilisent une autre valeur. |
+| **Variable d’environnement du chemin** | La variable d’environnement que l’interpréteur utilise pour rechercher les chemins de recherche. Visual Studio modifie la valeur de la variable lors du démarrage de Python pour qu’il contienne les chemins de recherche du projet. En général, cette propriété doit avoir la valeur **PYTHONPATH**, mais certains interpréteurs utilisent une autre valeur. |
 
 ## <a name="packages-tab"></a>Onglet packages
 

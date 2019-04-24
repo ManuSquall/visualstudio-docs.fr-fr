@@ -8,14 +8,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: daa4203ccdcbce89f1eb09efdd9433210bcbc987
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 4f818d89a51603bf2698e6c1db034f5341f23098
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856643"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086559"
 ---
-# <a name="whats-new-in-the-visual-studio-2019-sdk"></a>Quelles sont les nouveautés dans le Kit de développement logiciel Visual Studio 2019
+# <a name="whats-new-in-the-visual-studio-2019-sdk"></a>Nouveautés du SDK Visual Studio 2019
 
 Le SDK Visual Studio a les fonctionnalités nouvelles et mises à jour suivantes pour Visual Studio 2019.
 

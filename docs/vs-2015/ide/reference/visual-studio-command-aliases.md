@@ -17,16 +17,15 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c0f277ca35552da9deb476d56c15a7b2434463e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 573c120aafdf520b137e3fb50251ed8606f5c43a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763407"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654371"
 ---
 # <a name="visual-studio-command-aliases"></a>Alias de commandes Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
-
 
 Les alias constituent un moyen rapide d’entrer une commande dans la zone **Rechercher/Commande** ou la fenêtre **Commande** en abrégeant le texte nécessaire pour exécuter la commande. Par exemple, au lieu d’entrer le texte `>File.OpenFile` pour afficher la boîte de dialogue **Ouvrir un fichier**, vous pouvez utiliser l’alias prédéfini `>of`.
 

@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 90f0c73abb33a2da9c2735bcbc16b5559437bc65
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 836f3485eb923476271d6a2bae7899d66bd67db7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54765010"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054623"
 ---
 # <a name="working-with-visual-c-code-class-designer"></a>Utilisation du code Visual C++ (Concepteur de classes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,19 +33,19 @@ Le Concepteur de classes affiche une aire de conception visuelle appelée *diagr
   
  Le Concepteur de classes prend en charge les éléments de code C++ suivants :  
   
--   Classe (ressemble à une forme de classe managée, mais peut avoir plusieurs relations d'héritage)  
+- Classe (ressemble à une forme de classe managée, mais peut avoir plusieurs relations d'héritage)  
   
--   Classe anonyme (affiche le nom généré de l'Affichage de classes pour le type anonyme)  
+- Classe anonyme (affiche le nom généré de l'Affichage de classes pour le type anonyme)  
   
--   Classe de modèle  
+- Classe de modèle  
   
--   Struct  
+- Struct  
   
--   Enum  
+- Enum  
   
--   Macro (montre l'affichage post-traité de la macro)  
+- Macro (montre l'affichage post-traité de la macro)  
   
--   TypeDef  
+- TypeDef  
   
 > [!NOTE]
 >  Cela est différent du diagramme de classes UML, que vous pouvez créer dans un projet de modélisation. Pour plus d’informations, consultez [Diagrammes de classes UML : indications](../modeling/uml-class-diagrams-reference.md).  
@@ -84,27 +84,27 @@ Le Concepteur de classes affiche une aire de conception visuelle appelée *diagr
 ### <a name="troubleshooting-other-error-messages"></a>Résolution d'autres messages d'erreur  
  Vous pouvez trouver de l'aide sur la résolution des erreurs et des avertissements dans les forums publics Microsoft Developer Network (MSDN). Consultez le [Forum du Concepteur de classes Visual Studio](http://go.microsoft.com/fwlink/?linkid=160754).  
   
-##  <a name="limitations"></a> Limitations pour les éléments de code C++  
+## <a name="limitations"></a> Limitations pour les éléments de code C++  
   
--   Quand un projet Visual C++ est chargé, le Concepteur de classes fonctionne en lecture seule. Vous pouvez modifier le diagramme de classes, mais vous ne pouvez pas réenregistrer les modifications du diagramme de classes dans le code source.  
+- Quand un projet Visual C++ est chargé, le Concepteur de classes fonctionne en lecture seule. Vous pouvez modifier le diagramme de classes, mais vous ne pouvez pas réenregistrer les modifications du diagramme de classes dans le code source.  
   
--   Le Concepteur de classes prend en charge uniquement la sémantique C++ native. Pour les projets Visual C++ compilés dans le code managé, le Concepteur de classes visualise seulement les éléments de code qui sont des types natifs. Par conséquent, vous pouvez ajouter un diagramme de classes à un projet, mais le Concepteur de classes ne vous autorise pas à visualiser les éléments dans lesquels la propriété `IsManaged` a la valeur `true` (autrement dit, les types valeur et types référence).  
+- Le Concepteur de classes prend en charge uniquement la sémantique C++ native. Pour les projets Visual C++ compilés dans le code managé, le Concepteur de classes visualise seulement les éléments de code qui sont des types natifs. Par conséquent, vous pouvez ajouter un diagramme de classes à un projet, mais le Concepteur de classes ne vous autorise pas à visualiser les éléments dans lesquels la propriété `IsManaged` a la valeur `true` (autrement dit, les types valeur et types référence).  
   
--   Pour les projets Visual C++, le Concepteur de classes lit uniquement la définition du type. Par exemple, supposons que vous définissez un type dans un fichier d'en-tête (.h) et que vous définissez ses membres dans un fichier d'implémentation (.cpp). Si vous appelez « Afficher le diagramme de classes » sur le fichier d'implémentation (.cpp), le Concepteur de classes n'affiche rien. Autre exemple, si vous appelez « Afficher le diagramme de classes » sur un fichier .cpp qui utilise une instruction `#include` pour inclure d'autres fichiers, mais qui ne contient pas de définitions de classe réelles, le Concepteur de classes n'affiche toujours rien.  
+- Pour les projets Visual C++, le Concepteur de classes lit uniquement la définition du type. Par exemple, supposons que vous définissez un type dans un fichier d'en-tête (.h) et que vous définissez ses membres dans un fichier d'implémentation (.cpp). Si vous appelez « Afficher le diagramme de classes » sur le fichier d'implémentation (.cpp), le Concepteur de classes n'affiche rien. Autre exemple, si vous appelez « Afficher le diagramme de classes » sur un fichier .cpp qui utilise une instruction `#include` pour inclure d'autres fichiers, mais qui ne contient pas de définitions de classe réelles, le Concepteur de classes n'affiche toujours rien.  
   
--   Les fichiers IDL (.idl) qui définissent des interfaces COM et des bibliothèques de types ne s'affichent pas dans les diagrammes, sauf s'ils sont compilés en code C++ natif.  
+- Les fichiers IDL (.idl) qui définissent des interfaces COM et des bibliothèques de types ne s'affichent pas dans les diagrammes, sauf s'ils sont compilés en code C++ natif.  
   
--   Le Concepteur de classes ne prend pas en charge les fonctions et variables globales.  
+- Le Concepteur de classes ne prend pas en charge les fonctions et variables globales.  
   
--   Le Concepteur de classes ne prend pas en charge les unions. Il s'agit d'un type spécial de classe dans laquelle la mémoire allouée est uniquement suffisante pour la plus grande donnée membre de l'union.  
+- Le Concepteur de classes ne prend pas en charge les unions. Il s'agit d'un type spécial de classe dans laquelle la mémoire allouée est uniquement suffisante pour la plus grande donnée membre de l'union.  
   
--   Le Concepteur de classes n'affiche pas les types de données de base comme `int` et `char`.  
+- Le Concepteur de classes n'affiche pas les types de données de base comme `int` et `char`.  
   
--   Le Concepteur de classes n'affiche pas les types qui sont définis en dehors du projet actuel si le projet n'a pas de références correctes à ces types.  
+- Le Concepteur de classes n'affiche pas les types qui sont définis en dehors du projet actuel si le projet n'a pas de références correctes à ces types.  
   
--   Le Concepteur de classes peut afficher les types imbriqués, mais pas les relations entre un type imbriqué et d'autres types.  
+- Le Concepteur de classes peut afficher les types imbriqués, mais pas les relations entre un type imbriqué et d'autres types.  
   
--   Le Concepteur de classes ne peut pas afficher les types void ou dérivés d'un type void.  
+- Le Concepteur de classes ne peut pas afficher les types void ou dérivés d'un type void.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Conception et affichage des classes et des types](../ide/designing-and-viewing-classes-and-types.md)   

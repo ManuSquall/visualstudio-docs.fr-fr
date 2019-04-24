@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 38ea7865d625e2d5a04591848ecc7c3375d654f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 30bb4050399bf7a6d9120f7e5454b26ce505af35
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951306"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061552"
 ---
 # <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>Procédure : Spécifier un nom de menu Démarrer pour une application ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,17 +37,17 @@ Quand un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application est 
   
 ### <a name="to-specify-a-start-menu-name"></a>Pour spécifier un nom de menu Démarrer  
   
-1.  Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
+1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
   
-2.  Cliquez sur l’onglet **Publier**.  
+2. Cliquez sur l’onglet **Publier**.  
   
-3.  Cliquez sur le **Options** bouton pour ouvrir la **Options de publication** boîte de dialogue.  
+3. Cliquez sur le **Options** bouton pour ouvrir la **Options de publication** boîte de dialogue.  
   
-4.  Cliquez sur **Description**.  
+4. Cliquez sur **Description**.  
   
-5.  Dans le **Options de publication** boîte de dialogue, entrez le nom à afficher dans la zone **Product name**.  
+5. Dans le **Options de publication** boîte de dialogue, entrez le nom à afficher dans la zone **Product name**.  
   
-6.  Si vous le souhaitez, vous pouvez entrer un nom de serveur de publication dans **nom de l’éditeur**.  
+6. Si vous le souhaitez, vous pouvez entrer un nom de serveur de publication dans **nom de l’éditeur**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Publication d’applications ClickOnce](../deployment/publishing-clickonce-applications.md)   

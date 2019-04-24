@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Objets manquants en raison Pipeline mal configuré | Microsoft Docs'
+title: 'Procédure pas à pas : Objets manquants en raison de Pipeline mal configuré | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ed8ac02d-b38f-4055-82fb-67757c2ccbb9
@@ -8,25 +8,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b32b76a4f063cd15d5f36db6ea8b672dbeda4d54
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: edffb60e59d2f8a9c8c9fe417bedb4d578215c9c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698051"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097607"
 ---
-# <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Procédure pas à pas : objets manquants en raison d'un pipeline mal configuré
+# <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Procédure pas à pas : objets manquants en raison d’un pipeline mal configuré
 Cette procédure pas à pas montre comment utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour examiner un objet qui est manquant, car un nuanceur de pixels n’a pas été défini.
 
  Cette procédure pas à pas décrit les tâches suivantes :
 
--   Utilisation de la **liste des événements Graphics** pour rechercher les sources potentielles du problème.
+- Utilisation de la **liste des événements Graphics** pour rechercher les sources potentielles du problème.
 
--   Utilisation de la fenêtre **Étapes de canalisation Graphics** pour examiner l’effet de l’appel de l’API Direct3D `DrawIndexed` .
+- Utilisation de la fenêtre **Étapes de canalisation Graphics** pour examiner l’effet de l’appel de l’API Direct3D `DrawIndexed` .
 
--   Inspection du contexte de périphérique pour confirmer qu’aucune étape de nuanceur n’a été définie.
+- Inspection du contexte de périphérique pour confirmer qu’aucune étape de nuanceur n’a été définie.
 
--   Utilisation de la fenêtre **Étapes de canalisation Graphics** avec la **Pile des appels des événements Graphics** pour aider à trouver la source du nuanceur de pixels non défini.
+- Utilisation de la fenêtre **Étapes de canalisation Graphics** avec la **Pile des appels des événements Graphics** pour aider à trouver la source du nuanceur de pixels non défini.
 
 ## <a name="scenario"></a>Scénario
  Quand un objet est manquant dans une application 3D, c’est parfois dû au fait que l’une des étapes du nuanceur n’est pas définie avant le rendu de l’objet. Dans les applications qui ont des besoins de rendu simples, la source de cette erreur se situe généralement quelque part dans la pile des appels de dessin de l’objet. Toutefois, en guise d’optimisation, certaines applications rassemblent des objets qui ont des programmes nuanceurs, des textures ou d’autres données en commun pour minimiser la surcharge liée au changement d’état. Dans ces applications, la source de l’erreur peut être dissimulée au fond du système de traitement par lot, plutôt que située dans la pile des appels de l’appel de dessin. Comme le scénario de cette procédure pas à pas illustre une application ayant des besoins de rendu simples, la source de l’erreur se trouve dans la pile des appels.

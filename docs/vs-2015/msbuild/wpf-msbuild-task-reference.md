@@ -19,17 +19,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 51a052dea0a828201400086e25880124cb4a05c1
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 785e3960148d627e437d15e8662dfd76dccc53c0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54776981"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659330"
 ---
 # <a name="wpf-msbuild-task-reference"></a>Référence des tâches MSBuild WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Le processus de génération de Windows Presentation Foundation (WPF) étend Microsoft Build Engine (MSBuild) avec un ensemble de tâches de génération supplémentaires, notamment des tâches pour compiler le balisage et traiter les ressources.  
   
 ## <a name="in-this-section"></a>Dans cette section  

@@ -11,12 +11,12 @@ ms.assetid: ffc89814-a7df-44fc-aef5-dd3dfeb28a9b
 caps.latest.revision: 49
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1b419568490e41b135c2c7c801154f6550c546e9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d93d14383ec755f14619f4d126c7f676acafc6c2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771463"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070106"
 ---
 # <a name="unit-tests-for-generic-methods"></a>Tests unitaires pour les méthodes génériques
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,20 +29,20 @@ Vous pouvez générer des tests unitaires pour les méthodes génériques exacte
 ## <a name="examples"></a>Exemples  
  Les exemples suivants illustrent des tests unitaires pour les génériques :  
   
--   [Modification du code de test généré](#EditingGeneratedTestCode). Cet exemple a deux sections, Code de test généré et Code de test modifié. Il montre comment modifier le code de test brut généré à partir d'une méthode générique dans une méthode de test utile.  
+- [Modification du code de test généré](#EditingGeneratedTestCode). Cet exemple a deux sections, Code de test généré et Code de test modifié. Il montre comment modifier le code de test brut généré à partir d'une méthode générique dans une méthode de test utile.  
   
--   [Utilisation d’une contrainte de type](#TypeConstraintNotSatisfied). Cet exemple montre un test unitaire pour une méthode générique qui utilise une contrainte de type. Dans cet exemple, la contrainte de type n'est pas satisfaite.  
+- [Utilisation d’une contrainte de type](#TypeConstraintNotSatisfied). Cet exemple montre un test unitaire pour une méthode générique qui utilise une contrainte de type. Dans cet exemple, la contrainte de type n'est pas satisfaite.  
   
-###  <a name="EditingGeneratedTestCode"></a> Exemple 1 : Modification du code de test généré  
+### <a name="EditingGeneratedTestCode"></a> Exemple 1 : Modification du Code de Test généré  
  Le code de test de cette section teste une méthode de code sous test nommée `SizeOfLinkedList()`. Cette méthode retourne un entier qui spécifie le nombre de nœuds dans la liste liée.  
   
  Le premier exemple de code, dans la section Code de test généré, affiche le code de test non modifié comme il a été généré par Visual Studio Enterprise. Le deuxième exemple, dans la section Code de test modifié, montre comment vous pourriez lui faire tester le fonctionnement de la méthode SizeOfLinkedList pour deux types de données différents, `int` et `char`.  
   
  Ce code illustre deux méthodes :  
   
--   une méthode d'assistance au test, `SizeOfLinkedListTestHelper<T>()`. Par défaut, une méthode d'assistance au test contient « TestHelper » dans son nom.  
+- une méthode d'assistance au test, `SizeOfLinkedListTestHelper<T>()`. Par défaut, une méthode d'assistance au test contient « TestHelper » dans son nom.  
   
--   une méthode de test, `SizeOfLinkedListTest()`. Chaque méthode de test est marquée avec l'attribut TestMethod.  
+- une méthode de test, `SizeOfLinkedListTest()`. Chaque méthode de test est marquée avec l'attribut TestMethod.  
   
 #### <a name="generated-test-code"></a>Code de test généré  
  Le code de test suivant a été généré à partir de la méthode `SizeOfLinkedList()`. Comme il s'agit du test généré non modifié, il doit être modifié pour tester correctement la méthode SizeOfLinkedList.  
@@ -74,22 +74,22 @@ public void SizeOfLinkedListTest()
 ##### <a name="test-helper-method"></a>Méthode d'assistance au test  
  La méthode d'assistance au test effectue les étapes suivantes qui correspondent aux lignes du code Étape 1 à Étape 5.  
   
-1.  Créer une liste liée générique.  
+1. Créer une liste liée générique.  
   
-2.  Ajouter quatre nœuds à la liste liée. Le type de données du contenu de ces nœuds est inconnu.  
+2. Ajouter quatre nœuds à la liste liée. Le type de données du contenu de ces nœuds est inconnu.  
   
-3.  Assigner la taille attendue de la liste liée à la variable `expected`.  
+3. Assigner la taille attendue de la liste liée à la variable `expected`.  
   
-4.  Calculer la taille réelle de la liste liée et l'assigner à la variable `actual`.  
+4. Calculer la taille réelle de la liste liée et l'assigner à la variable `actual`.  
   
-5.  Comparer `actual` à `expected` dans une instruction Assert. Si la variable réelle n'est pas égale à celle attendue, le test échoue.  
+5. Comparer `actual` à `expected` dans une instruction Assert. Si la variable réelle n'est pas égale à celle attendue, le test échoue.  
   
 ##### <a name="test-method"></a>Méthode de test  
  La méthode de test est compilée dans le code qui est appelé lorsque vous exécutez le test nommé SizeOfLinkedListTest. Elle effectue les étapes suivantes qui correspondent aux lignes du code Étape 6 à Étape 7.  
   
-1.  Spécifiez `<int>` lorsque vous appelez la méthode d'assistance au test pour vérifier que le test fonctionne pour les variables `integer`.  
+1. Spécifiez `<int>` lorsque vous appelez la méthode d'assistance au test pour vérifier que le test fonctionne pour les variables `integer`.  
   
-2.  Spécifiez `<char>` lorsque vous appelez la méthode d'assistance au test pour vérifier que le test fonctionne pour les variables `char`.  
+2. Spécifiez `<char>` lorsque vous appelez la méthode d'assistance au test pour vérifier que le test fonctionne pour les variables `char`.  
   
 ```  
   
@@ -117,9 +117,9 @@ public void SizeOfLinkedListTest()
 ```  
   
 > [!NOTE]
->  Chaque fois que le test SizeOfLinkedListTest est exécuté, sa méthode TestHelper est appelée deux fois. L'instruction Assert doit chaque fois prendre la valeur True pour que le test réussisse. Si le test échoue, il peut être difficile de savoir lequel de l'appel ayant spécifié `<int>` ou de l'appel ayant spécifié `<char>` a provoqué son échec. Pour trouver la réponse, vous pouvez examiner la pile des appels ou définir des points d'arrêt dans votre méthode de test, puis déboguer pendant l'exécution du test. Pour plus d’informations, consultez [Comment : effectuer un débogage lors de l’exécution d’un test dans une solution ASP.NET](http://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).  
+>  Chaque fois que le test SizeOfLinkedListTest est exécuté, sa méthode TestHelper est appelée deux fois. L'instruction Assert doit chaque fois prendre la valeur True pour que le test réussisse. Si le test échoue, il peut être difficile de savoir lequel de l'appel ayant spécifié `<int>` ou de l'appel ayant spécifié `<char>` a provoqué son échec. Pour trouver la réponse, vous pouvez examiner la pile des appels ou définir des points d'arrêt dans votre méthode de test, puis déboguer pendant l'exécution du test. Pour plus d'informations, voir [Procédure : Déboguer pendant l’exécution d’un Test dans une Solution ASP.NET](http://msdn.microsoft.com/library/de4d7aa1-4a1e-467e-a19b-4a85ec245b8b).  
   
-###  <a name="TypeConstraintNotSatisfied"></a> Exemple 2 : Utilisation d’une contrainte de type  
+### <a name="TypeConstraintNotSatisfied"></a> Exemple 2 : À l’aide d’une contrainte de Type  
  Cet exemple montre un test unitaire pour une méthode générique qui utilise une contrainte de type non satisfaite. La première section affiche le code du projet de code sous test. La contrainte de type est mise en surbrillance.  
   
  La deuxième section affiche le code du projet de test.  

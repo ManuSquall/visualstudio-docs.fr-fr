@@ -15,14 +15,14 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 97e69abaef4fb5066082ad2170fe25cad0a51b18
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e9e12894a6c526e70e9d2ea814c2634a271098d4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779184"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104263"
 ---
-# <a name="how-to-specify-build-events-visual-basic"></a>Comment : spécifier des événements de build (Visual Basic)
+# <a name="how-to-specify-build-events-visual-basic"></a>Procédure : Spécifier des événements de build (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez utiliser des événements de build en Visual Basic pour exécuter des scripts, des macros ou d’autres actions dans le cadre du processus de compilation. Les événements pré-build se produisent avant la compilation, tandis que les événements post-build se produisent après la compilation.  
@@ -36,13 +36,13 @@ Vous pouvez utiliser des événements de build en Visual Basic pour exécuter de
   
 #### <a name="to-specify-a-build-event"></a>Pour spécifier un événement de build  
   
-1.  Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
+1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
   
-2.  Cliquez sur l’onglet **Compiler**.  
+2. Cliquez sur l’onglet **Compiler**.  
   
-3.  Cliquez sur le bouton **Événements de build** pour ouvrir la boîte de dialogue **Événements de build**.  
+3. Cliquez sur le bouton **Événements de build** pour ouvrir la boîte de dialogue **Événements de build**.  
   
-4.  Entrez les arguments de ligne de commande pour votre action pré-build ou post-build, puis cliquez sur **OK**.  
+4. Entrez les arguments de ligne de commande pour votre action pré-build ou post-build, puis cliquez sur **OK**.  
   
     > [!NOTE]
     >  Ajoutez une instruction `call` avant toutes les commandes post-build qui exécutent des fichiers .bat. Par exemple, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.  
@@ -50,7 +50,7 @@ Vous pouvez utiliser des événements de build en Visual Basic pour exécuter de
     > [!NOTE]
     >  Si votre événement pré-build ou post-build ne s’exécute pas correctement, vous pouvez terminer la génération en faisant en sorte que l’action d’événement s’achève avec un code autre que zéro (0), qui indique une action réussie.  
   
-## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>Exemple : Comment modifier les informations de manifeste à l’aide d’un événement post-build  
+## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>Exemple : Comment modifier les informations de manifeste à l’aide d’un événement post-Build  
  La procédure suivante montre comment définir la version minimale du système d’exploitation dans le manifeste d’application à l’aide d’une commande .exe appelée à partir d’un événement post-build (fichier .exe.manifest dans le répertoire du projet). La version minimale du système d’exploitation est un nombre en quatre parties, tel que 4.10.0.0. Pour ce faire, la commande modifie la section `<dependentOS>` du manifeste :  
   
 ```  
@@ -126,15 +126,15 @@ Vous pouvez utiliser des événements de build en Visual Basic pour exécuter de
   
 #### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>Pour appeler un événement post-build afin de modifier le manifeste d’application  
   
-1.  Créez une application Windows pour le projet à publier. Dans le menu **Fichier**, cliquez sur **Nouveau**, puis sur **Projet**.  
+1. Créez une application Windows pour le projet à publier. Dans le menu **Fichier**, cliquez sur **Nouveau**, puis sur **Projet**.  
   
-2.  Dans la boîte de dialogue **Nouveau projet**, dans le nœud **Visual Basic**, sélectionnez **Windows**, puis le modèle **Application Windows**. Attribuez un nom au projet `VBWinApp`.  
+2. Dans la boîte de dialogue **Nouveau projet**, dans le nœud **Visual Basic**, sélectionnez **Windows**, puis le modèle **Application Windows**. Attribuez un nom au projet `VBWinApp`.  
   
-3.  Après avoir sélectionné le projet dans l’**Explorateur de solutions**, dans le menu **Projet**, cliquez sur **Propriétés**.  
+3. Après avoir sélectionné le projet dans l’**Explorateur de solutions**, dans le menu **Projet**, cliquez sur **Propriétés**.  
   
-4.  Dans le Concepteur de projets, accédez à la page **Publier** et définissez **Emplacement de publication** sur `C:\TEMP\`.  
+4. Dans le Concepteur de projets, accédez à la page **Publier** et définissez **Emplacement de publication** sur `C:\TEMP\`.  
   
-5.  Publiez le projet en cliquant sur **Publier maintenant**.  
+5. Publiez le projet en cliquant sur **Publier maintenant**.  
   
      Le fichier manifeste est généré et placé dans `C:\TEMP\VBWinApp_1_0_0_0\VBWinApp.exe.manifest`. Pour consulter le manifeste, cliquez avec le bouton droit sur le fichier, puis cliquez successivement sur **Ouvrir avec**, **Sélectionner le programme dans une liste** et **Bloc-notes**.  
   
@@ -144,9 +144,9 @@ Vous pouvez utiliser des événements de build en Visual Basic pour exécuter de
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />  
     ```  
   
-6.  Dans le Concepteur de projets, accédez à l’onglet **Compiler**, puis cliquez sur le bouton **Événements de build** pour ouvrir la boîte de dialogue **Événements de build**.  
+6. Dans le Concepteur de projets, accédez à l’onglet **Compiler**, puis cliquez sur le bouton **Événements de build** pour ouvrir la boîte de dialogue **Événements de build**.  
   
-7.  Dans la zone **Ligne de commande de l’événement post-build**, entrez la commande suivante :  
+7. Dans la zone **Ligne de commande de l’événement post-build**, entrez la commande suivante :  
   
      `C:\TEMP\ChangeOSVersionVB.exe "$(TargetPath).manifest" 5.1.2600.0`  
   
@@ -154,7 +154,7 @@ Vous pouvez utiliser des événements de build en Visual Basic pour exécuter de
   
      La macro `$(TargetPath)` exprime le chemin complet de l’exécutable en cours de création. Ainsi, $(TargetPath).manifest spécifie le manifeste d’application créé dans le répertoire bin. La publication copie ce manifeste vers l’emplacement de publication que vous avez défini.  
   
-8.  Republiez le projet. Accédez à la page **Publier** et cliquez sur **Publier maintenant**.  
+8. Republiez le projet. Accédez à la page **Publier** et cliquez sur **Publier maintenant**.  
   
      Réaffichez le manifeste. Pour consulter le manifeste, accédez au répertoire de publication, cliquez avec le bouton droit sur le fichier, puis cliquez successivement sur **Ouvrir avec**, **Sélectionner le programme dans une liste** et **Bloc-notes**.  
   

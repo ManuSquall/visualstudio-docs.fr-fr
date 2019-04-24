@@ -21,17 +21,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e78b4efa9c56a46ea182d3ff3b77a7452d0c547f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9991adc9d770487c646c97da81b6245ae65ba5f5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938576"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075374"
 ---
 # <a name="relationships-in-datasets"></a>Relations dans les jeux de données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Jeux de données qui contiennent des données connexes tables utilisent <xref:System.Data.DataRelation> objets pour représenter une relation parent/enfant entre les tables et pour retourner des enregistrements connexes à partir de l’autre. Ajout de tables associées aux jeux de données à l’aide de la **Assistant de Configuration de Source de données**, ou le **Concepteur de Dataset**, crée et configure le <xref:System.Data.DataRelation> objet pour vous.  
   
  Le <xref:System.Data.DataRelation> objet effectue deux fonctions :  
@@ -85,23 +84,23 @@ Jeux de données qui contiennent des données connexes tables utilisent <xref:Sy
   
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>Pour créer une relation entre deux tables de données  
   
-1.  Ouvrez votre dataset dans le **Concepteur de DataSet**. Pour plus d'informations, voir [Procédure : Ouvrir un jeu de données dans le Concepteur de Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Ouvrez votre dataset dans le **Concepteur de DataSet**. Pour plus d'informations, voir [Procédure : Ouvrir un jeu de données dans le Concepteur de Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
-2.  Faites glisser un **Relation** de l’objet à partir de la **DataSet** boîte à outils vers la table de données enfant dans la relation.  
+2. Faites glisser un **Relation** de l’objet à partir de la **DataSet** boîte à outils vers la table de données enfant dans la relation.  
   
      Le **Relation** boîte de dialogue s’ouvre, remplissage de la **Table enfant** boîte avec la table que vous avez fait glisser le **Relation** sur l’objet.  
   
-3.  Sélectionnez la table parente à partir de la **Table parente** boîte. La table parente contient des enregistrements sur le côté « un » d’une relation un-à-plusieurs.  
+3. Sélectionnez la table parente à partir de la **Table parente** boîte. La table parente contient des enregistrements sur le côté « un » d’une relation un-à-plusieurs.  
   
-4.  Vérifiez que la table enfant correcte s’affiche dans le **Table enfant** boîte. La table enfant contient des enregistrements sur le côté « plusieurs » d’une relation un-à-plusieurs.  
+4. Vérifiez que la table enfant correcte s’affiche dans le **Table enfant** boîte. La table enfant contient des enregistrements sur le côté « plusieurs » d’une relation un-à-plusieurs.  
   
-5.  Tapez un nom pour la relation dans le **nom** zone, ou laissez le nom par défaut basé sur les tables sélectionnées. Ceci est le nom de la valeur réelle <xref:System.Data.DataRelation> objet dans le code.  
+5. Tapez un nom pour la relation dans le **nom** zone, ou laissez le nom par défaut basé sur les tables sélectionnées. Ceci est le nom de la valeur réelle <xref:System.Data.DataRelation> objet dans le code.  
   
-6.  Sélectionnez les colonnes qui joignent les tables dans le **colonnes clés** et **les colonnes clés étrangères** répertorie.  
+6. Sélectionnez les colonnes qui joignent les tables dans le **colonnes clés** et **les colonnes clés étrangères** répertorie.  
   
-7.  Indiquez si vous souhaitez créer une relation, contrainte ou les deux. Pour plus d’informations, consultez [Introduction aux objets DataRelation](http://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192).  
+7. Indiquez si vous souhaitez créer une relation, contrainte ou les deux. Pour plus d’informations, consultez [Introduction aux objets DataRelation](http://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192).  
   
-8.  Activez ou désactivez le **Relation imbriquée** boîte. En sélectionnant cette option définit la <xref:System.Data.DataRelation.Nested%2A> propriété `true`, et entraîne des lignes de la relation d’imbrication dans la colonne parente lorsque ces lignes sont écrites en tant que données XML ou synchronisés avec l’enfant <xref:System.Xml.XmlDataDocument>. Pour plus d’informations, consultez [d’imbrication de DataRelations](http://msdn.microsoft.com/library/9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab).  
+8. Activez ou désactivez le **Relation imbriquée** boîte. En sélectionnant cette option définit la <xref:System.Data.DataRelation.Nested%2A> propriété `true`, et entraîne des lignes de la relation d’imbrication dans la colonne parente lorsque ces lignes sont écrites en tant que données XML ou synchronisés avec l’enfant <xref:System.Xml.XmlDataDocument>. Pour plus d’informations, consultez [d’imbrication de DataRelations](http://msdn.microsoft.com/library/9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab).  
   
 9. Définissez les règles à appliquer lorsque vous apportez des modifications aux enregistrements dans ces tables. Pour plus d'informations, consultez <xref:System.Data.Rule>.  
   
@@ -109,6 +108,6 @@ Jeux de données qui contiennent des données connexes tables utilisent <xref:Sy
   
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>Pour afficher un nom de relation dans le Concepteur de Dataset  
   
-1.  Ouvrez votre dataset dans le **Concepteur de DataSet**. Pour plus d'informations, voir [Procédure : Ouvrir un jeu de données dans le Concepteur de Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Ouvrez votre dataset dans le **Concepteur de DataSet**. Pour plus d'informations, voir [Procédure : Ouvrir un jeu de données dans le Concepteur de Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
-2.  À partir de la **données** menu, sélectionnez le **afficher les étiquettes de Relation** commande pour afficher le nom de la relation. Désactivez cette commande pour masquer le nom de la relation.
+2. À partir de la **données** menu, sélectionnez le **afficher les étiquettes de Relation** commande pour afficher le nom de la relation. Désactivez cette commande pour masquer le nom de la relation.

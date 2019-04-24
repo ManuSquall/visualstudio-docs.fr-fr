@@ -12,17 +12,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7b7916cbd3a7faa633baf53a18686779dc2b386c
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58857760"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Résolution des problèmes et problèmes connus du débogage de capture instantanée dans Visual Studio.
 
 Si les étapes décrites dans cet article ne résolvent pas votre problème, contactez snaphelp@microsoft.com.
 
-## <a name="issue-snappoint-does-not-turn-on"></a>Problème : Le snappoint ne s’active pas
+## <a name="issue-snappoint-does-not-turn-on"></a>Problème : Point d’ancrage n’active pas
 
 Si une icône d’avertissement ![Icône d’avertissement de snappoint](../debugger/media/snapshot-troubleshooting-snappoint-warning-icon.png "Icône d’avertissement de snappoint") apparaît sur le snappoint au lieu de l’icône standard, c’est le signe que le snappoint n’est pas activé.
 
@@ -32,7 +32,7 @@ Suivez ces étapes :
 
 1. Vérifiez que vous utilisez la version du code source qui servi à générer et à déployer votre app.isua1. Assurez-vous de charger les symboles adaptés à votre déploiement. Pour cela, affichez la fenêtre **Modules** pendant le débogage de capture instantanée et vérifiez que la colonne Fichier de symboles indique qu’un fichier .pdb est chargé pour le module en cours de débogage. Le Débogueur de capture instantanée tentera de télécharger et d’utiliser automatiquement les symboles de votre déploiement.
 
-## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Problème : Les symboles ne se chargent pas à l’ouverture d’une capture instantanée
+## <a name="issue-symbols-do-not-load-when-i-open-a-snapshot"></a>Problème : Symboles ne se chargent pas lorsque j’ouvre une capture instantanée
 
 Si la fenêtre suivante apparaît, c’est le signe que les symboles n’ont pas été chargés.
 
@@ -48,7 +48,7 @@ Suivez ces étapes :
 
 - Si, en revanche, votre organisation utilise un serveur de symboles ou place les symboles dans un autre chemin, utilisez les paramètres des symboles pour charger les symboles adaptés à votre déploiement.
 
-## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Problème : L’option « Joindre le Débogueur de capture instantanée » n’apparaît pas dans Cloud Explorer
+## <a name="issue-i-cannot-see-the-attach-snapshot-debugger-option-in-the-cloud-explorer"></a>Problème : Je ne vois pas l’option « Attacher le débogueur instantané » dans l’Explorateur de Cloud
 
 Suivez ces étapes :
 
@@ -67,7 +67,7 @@ Suivez ces étapes :
   - Azure Kubernetes Services – Applications ASP.NET Core exécutées sur .NET Core 2.2 (ou une version ultérieure) sur Ubuntu 18.04.
 ::: moniker-end
 
-## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Problème : Seules des captures instantanées limitées apparaissent dans les Outils de diagnostic
+## <a name="issue-i-only-see-throttled-snapshots-in-the-diagnostic-tools"></a>Problème : Je vois seulement limité des instantanés dans les outils de Diagnostic
 
 ![Snappoint limité](../debugger/media/snapshot-troubleshooting-throttled-snapshots.png "Snappoint limité")
 
@@ -75,7 +75,7 @@ Suivez ces étapes :
 
 - Les captures instantanées occupent peu de mémoire, mais présentent un coût de validation. Si le Débogueur de capture instantanée détecte que votre serveur subit une lourde charge de mémoire, il ne prend pas de captures instantanées. Pour supprimer des captures instantanées déjà prises, arrêtez la session du Débogueur de capture instantanée, puis réessayez.
 
-## <a name="issue-snapshot-debugging-with-multiple-versions-of-the-visual-studio-gives-me-errors"></a>Problème : Le débogage de capture instantanée avec plusieurs versions de Visual Studio donne des erreurs
+## <a name="issue-snapshot-debugging-with-multiple-versions-of-the-visual-studio-gives-me-errors"></a>Problème : Débogage d’instantané avec plusieurs versions de Visual Studio me donne des erreurs
 
 Visual Studio 2019 exige une version plus récente de l’extension de site Débogueur de capture instantanée sur le service Azure App Service.  Cette version n’est pas compatible avec l’ancienne version de l’extension de site du Débogueur de capture instantanée utilisée par Visual Studio 2017.  Si vous essayez de joindre le Débogueur de capture instantanée de Visual Studio 2019 à un service Azure App Service qui avait fait l’objet d’un débogage par le Débogueur de capture instantanée de Visual Studio 2017, vous obtenez l’erreur suivante :
 
@@ -90,7 +90,7 @@ Pour résoudre ce problème, supprimez les paramètres d’application suivants 
 - INSTRUMENTATIONENGINE_EXTENSION_VERSION
 - SNAPSHOTDEBUGGER_EXTENSION_VERSION
 
-## <a name="issue-i-am-having-problems-snapshot-debugging-and-i-need-to-enable-more-logging"></a>Problème : Le débogage de capture instantanée fonctionne mal alors que j’ai besoin de davantage de journalisation
+## <a name="issue-i-am-having-problems-snapshot-debugging-and-i-need-to-enable-more-logging"></a>Problème : Je rencontre des problèmes de débogage d’instantané et j’ai besoin activer la journalisation plus
 
 ### <a name="enable-agent-logs"></a>Activer les journaux d’agent
 
@@ -100,9 +100,9 @@ Les journaux d’agent se trouvent aux emplacements suivants :
 
 - App Service :
   - Accédez au site Kudu de votre service App Service (soit votreappservice.**scm**.azurewebsites.net), puis à Console de débogage.
-  - Les journaux d’agent sont stockés dans le répertoire D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\.
+  - Journaux de l’agent sont stockés dans le répertoire suivant :  D:\home\LogFiles\SiteExtensions\DiagnosticsAgentLogs\
 - VM/VMSS :
-  - Connectez-vous à votre machine virtuelle. Les journaux d’agent sont stockés  sous C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<Version>\SnapshotDebuggerAgent_*.txt
+  - Connectez-vous à votre machine virtuelle, l’agent sont stockés comme suit :  C:\WindowsAzure\Logs\Plugins\Microsoft.Azure.Diagnostics.IaaSDiagnostics\<Version>\SnapshotDebuggerAgent_*.txt
 - AKS :
   - Accédez au répertoire /tmp/diag/AgentLogs/*.
 
@@ -114,7 +114,7 @@ Les journaux d’instrumentation se trouvent aux emplacements suivants :
   - La journalisation des erreurs est automatiquement envoyée à D:\Home\LogFiles\eventlog.xml. Les événements sont marqués <<Provider Name="Instrumentation Engine" //>> ou « Production Breakpoints ».
 - VM/VMSS :
   - Connectez-vous à votre machine virtuelle et ouvrez l’observateur d’événements.
-  - Ouvrez la vue *Journaux Windows > Application*.
+  - Ouvrez l’affichage suivant : *Les journaux Windows > Application*.
   - *Filtrez le journal actuel* par *Source de l’événement* avec des *Points d’arrêt de production* ou le *Moteur d’instrumentation*.
 - AKS :
   - Journalisation du moteur d’instrumentation à l’adresse /tmp/diag/log.txt (définissez MicrosoftInstrumentationEngine_FileLogPath dans le fichier DockerFile).
@@ -142,7 +142,7 @@ Le débogage de capture instantanée et Application Insights dépendent d’un I
 ## <a name="see-also"></a>Voir aussi
 
 - [Débogage dans Visual Studio](../debugger/index.md)
-- [Déboguer des applications ASP.NET en production avec le Débogueur de capture instantanée](../debugger/debug-live-azure-applications.md)
-- [Déboguer des Machines virtuelles/groupes de machines virtuelles identiques Azure ASP.NET en production avec le Débogueur de capture instantanée](../debugger/debug-live-azure-virtual-machines.md)
-- [Déboguer Azure Kubernetes ASP.NET en production avec le Débogueur de capture instantanée](../debugger/debug-live-azure-kubernetes.md)
-- [Questions fréquentes (FAQ) sur le débogage d’instantané](../debugger/debug-live-azure-apps-faq.md)
+- [Déboguer des applications ASP.NET en production à l’aide du débogueur de capture instantanée](../debugger/debug-live-azure-applications.md)
+- [Débogage en direct ASP.NET Azure virtuel Machines\Virtual Machines identiques à l’aide du débogueur de capture instantanée](../debugger/debug-live-azure-virtual-machines.md)
+- [Déboguer ASP.NET Azure Kubernetes en direct à l’aide du débogueur de capture instantanée](../debugger/debug-live-azure-kubernetes.md)
+- [FAQ pour le débogage d’instantané](../debugger/debug-live-azure-apps-faq.md)

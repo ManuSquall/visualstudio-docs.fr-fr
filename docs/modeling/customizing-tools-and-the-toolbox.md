@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae5873462c2938ab4215d1cd4837c496e235ab35
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e06317aa91cf71d109a2e90bc955aa28cc4b4903
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913364"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101858"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Personnalisation des outils et de la boîte à outils
 
@@ -38,15 +38,15 @@ Editor
 
 Dans cette partie de l'Explorateur DSL, vous pouvez :
 
--   Créer des onglets. Les onglets définissent les en-têtes de section de la boîte à outils.
+- Créer des onglets. Les onglets définissent les en-têtes de section de la boîte à outils.
 
--   Créer des outils.
+- Créer des outils.
 
--   Copier et coller des outils.
+- Copier et coller des outils.
 
--   Monter ou descendre des outils dans la liste.
+- Monter ou descendre des outils dans la liste.
 
--   Supprimer des onglets et des outils.
+- Supprimer des onglets et des outils.
 
 > [!IMPORTANT]
 > Pour ajouter ou coller des éléments dans un Explorateur DSL, cliquez avec le bouton droit sur le grand-parent du nouveau nœud. Par exemple, pour ajouter un outil, cliquez sur l’onglet et non le **outils** nœud. Pour ajouter un onglet, cliquez sur le **éditeur** nœud.
@@ -59,36 +59,36 @@ Le **Générateur de connexion** propriété d’un outil de connexion fait réf
 
 #### <a name="to-add-a-tool-to-the-toolbox"></a>Pour ajouter un outil à la boîte à outils
 
-1.  Vous créez généralement un outil d'élément après avoir créé une classe de formes et l'avoir mappée sur une classe de domaines.
+1. Vous créez généralement un outil d'élément après avoir créé une classe de formes et l'avoir mappée sur une classe de domaines.
 
      Vous créez généralement un outil de connecteur après avoir créé une classe de connecteurs et l'avoir mappée sur une relation de référence.
 
-2.  Dans l’Explorateur DSL, développez le **éditeur** nœud et le **onglets de boîte à outils** nœud.
+2. Dans l’Explorateur DSL, développez le **éditeur** nœud et le **onglets de boîte à outils** nœud.
 
      Cliquez sur un nœud d’onglet de boîte à outils, puis cliquez sur **ajouter un nouvel outil élément** ou **ajouter un nouvel outil de connexion**.
 
-3.  Définir le **icône Boîte à outils** propriété pour faire référence à une bitmap 16 x 16.
+3. Définir le **icône Boîte à outils** propriété pour faire référence à une bitmap 16 x 16.
 
      Si vous souhaitez définir une nouvelle icône, créez un fichier bitmap dans l’Explorateur de solutions dans le **Dsl\Resources** dossier. Le fichier doit avoir les valeurs de propriété suivantes : **Action de génération** = **contenu**; **Copy to Output Directory** = **ne copiez pas**.
 
-4.  **Pour un outil d’élément :** Définir le **classe** propriété de l’outil pour faire référence à une classe de domaine concrète qui est mappée à une forme.
+4. **Pour un outil d’élément :** Définir le **classe** propriété de l’outil pour faire référence à une classe de domaine concrète qui est mappée à une forme.
 
      **Pour un outil de connecteur :** Définir le **Générateur de connexion** propriété de l’outil à un des éléments qui sont proposées dans la liste déroulante. Les générateurs de connexions sont automatiquement créés lorsque vous mappez un connecteur sur une relation de domaine. Si vous avez créé récemment un connecteur, vous devez normalement sélectionner le générateur de connexions associé.
 
-5.  Pour tester la solution DSL, appuyez sur F5 ou CTRL + F5 et dans l’instance expérimentale de Visual Studio, ouvrez un exemple de fichier de modèle. Le nouvel outil doit apparaître sur la boîte à outils. Faites-le glisser vers le diagramme pour vérifier qu'un nouvel élément a été créé.
+5. Pour tester la solution DSL, appuyez sur F5 ou CTRL + F5 et dans l’instance expérimentale de Visual Studio, ouvrez un exemple de fichier de modèle. Le nouvel outil doit apparaître sur la boîte à outils. Faites-le glisser vers le diagramme pour vérifier qu'un nouvel élément a été créé.
 
      Si l’outil n’apparaît pas, arrêtez l’expérimentale de Visual Studio. Dans le Windows **Démarrer** menu, exécutez **réinitialiser l’Instance expérimentale de Microsoft Visual Studio 2010**. Dans le menu **Générer**, cliquez sur **Régénérer la solution**. Puis, testez à nouveau le DSL.
 
 ## <a name="customizing"></a> Personnalisation des outils d’élément
  Par défaut, l'outil crée une seule instance de la classe spécifiée, mais vous pouvez modifier ce comportement de deux façons :
 
--   Définissez Directives de fusion d'éléments sur d'autres classes, en leur permettant d'accepter de nouvelles instances de cette classe et de créer des liens supplémentaires lorsque le nouvel élément est créé. Par exemple, vous pouvez autoriser l'utilisateur à déposer un Commentaire sur un autre élément et à créer ainsi un lien de référence entre les deux éléments.
+- Définissez Directives de fusion d'éléments sur d'autres classes, en leur permettant d'accepter de nouvelles instances de cette classe et de créer des liens supplémentaires lorsque le nouvel élément est créé. Par exemple, vous pouvez autoriser l'utilisateur à déposer un Commentaire sur un autre élément et à créer ainsi un lien de référence entre les deux éléments.
 
      Ces personnalisations affectent aussi ce qui se passe quand l'utilisateur colle ou fait glisser un élément.
 
      Pour plus d’informations, consultez [personnalisation de la création d’élément et le déplacement des](../modeling/customizing-element-creation-and-movement.md).
 
--   Écrivez le code pour personnaliser l'outil de telle sorte qu'il puisse créer des groupes d'éléments. L'outil est initialisé par des méthodes de ToolboxHelper.cs que vous pouvez remplacer. Pour plus d’informations, consultez [création de groupes d’éléments à partir d’un outil](#groups).
+- Écrivez le code pour personnaliser l'outil de telle sorte qu'il puisse créer des groupes d'éléments. L'outil est initialisé par des méthodes de ToolboxHelper.cs que vous pouvez remplacer. Pour plus d’informations, consultez [création de groupes d’éléments à partir d’un outil](#groups).
 
 ## <a name="groups"></a> Création de groupes d’éléments à partir d’un outil
  Chaque outil d'élément contient un prototype des éléments qu'il doit créer. Par défaut, chaque outil d'élément crée un seul élément, mais il est également possible de créer un groupe d'objets liés avec un seul outil. Pour ce faire, vous initialisez l'outil avec un <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> qui contient les éléments liés.
@@ -236,6 +236,6 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
 - [Personnalisation de la création et du mouvement des éléments](../modeling/customizing-element-creation-and-movement.md)
 - [Personnalisation du comportement de la copie](../modeling/customizing-copy-behavior.md)
-- [Guide pratique pour Ajouter un gestionnaire glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md)
+- [Guide pratique pour ajouter un gestionnaire glisser-déplacer](../modeling/how-to-add-a-drag-and-drop-handler.md)
 - [Navigation et mise à jour d’un modèle dans le code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [Exemple de diagrammes de circuit DSL](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)

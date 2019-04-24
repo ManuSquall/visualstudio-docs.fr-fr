@@ -10,12 +10,12 @@ ms.assetid: 891c1eb4-f6d0-4073-8df0-2859dbd417ca
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 108910c52033af3574a004cf314be2628fd54122
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3f045175eae165b75a887ada2716b19f34fc228b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947650"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088949"
 ---
 # <a name="how-to-suppress-file-change-notifications"></a>Procédure : Supprimer les Notifications de modification de fichier
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,19 +26,19 @@ Lorsque le fichier physique qui représente la mémoire tampon a été modifié,
   
 ### <a name="to-suppress-file-change-notification"></a>Pour supprimer la notification de modification de fichier  
   
-1.  Appelez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> méthode pour déterminer quel objet de mémoire tampon de texte est associé à votre fichier ouvert.  
+1. Appelez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> méthode pour déterminer quel objet de mémoire tampon de texte est associé à votre fichier ouvert.  
   
-2.  Direct le <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objet qui est analyse en mémoire pour ignorer les modifications de fichiers en obtenant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl> interface à partir de la <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objet (données de document), puis en implémentant la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A> méthode avec le `fIgnore` paramètre la valeur `true`.  
+2. Direct le <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objet qui est analyse en mémoire pour ignorer les modifications de fichiers en obtenant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl> interface à partir de la <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objet (données de document), puis en implémentant la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A> méthode avec le `fIgnore` paramètre la valeur `true`.  
   
-3.  Appelez les méthodes sur le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> et <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> interfaces pour mettre à jour de la mémoire <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objet avec les modifications de fichier (par exemple, lorsqu’un champ est ajouté à votre composant).  
+3. Appelez les méthodes sur le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> et <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> interfaces pour mettre à jour de la mémoire <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objet avec les modifications de fichier (par exemple, lorsqu’un champ est ajouté à votre composant).  
   
-4.  Mettre à jour le fichier sur disque avec les modifications sans prendre en compte les modifications de que l’utilisateur est peut-être en cours d’exécution en attente.  
+4. Mettre à jour le fichier sur disque avec les modifications sans prendre en compte les modifications de que l’utilisateur est peut-être en cours d’exécution en attente.  
   
      De cette façon, lorsque vous dirigez la <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> notifications de modification d’objet pour reprendre l’analyse de fichier, la mémoire tampon en mémoire reflète les modifications que vous avez générée, ainsi que toutes les autres modifications en attente. Le fichier sur le disque reflète le code le plus récent généré par vos soins et toute enregistrée précédemment des modifications apportées par l’utilisateur dans le code utilisateur a été modifié.  
   
-5.  Appeler le <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A> méthode pour informer le <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objet pour reprendre la surveillance pour les notifications de modification de fichier en définissant le `fIgnore` paramètre `false`.  
+5. Appeler le <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl.IgnoreFileChanges%2A> méthode pour informer le <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> objet pour reprendre la surveillance pour les notifications de modification de fichier en définissant le `fIgnore` paramètre `false`.  
   
-6.  Si vous envisagez d’apporter plusieurs modifications au fichier, comme dans le cas du contrôle de code source (SCC), vous devez indiquer le service de modification de fichier global suspendre temporairement les notifications de modification de fichier.  
+6. Si vous envisagez d’apporter plusieurs modifications au fichier, comme dans le cas du contrôle de code source (SCC), vous devez indiquer le service de modification de fichier global suspendre temporairement les notifications de modification de fichier.  
   
      Par exemple, si vous réécrivez le fichier et que vous modifiez l’horodatage, vous devez suspendre les notifications de modification de fichier, comme les opérations de réécriture et timestample chaque nombre comme événement de changement d’un fichier distinct. Pour activer la notification de modification de fichier global vous devez plutôt appeler la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx.IgnoreFile%2A> (méthode).  
   

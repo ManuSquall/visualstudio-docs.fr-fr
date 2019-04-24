@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90c6456789762943422384755212edef1456a499
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f85963712fa1b051ea7256e6f805fe8e7c7e70d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705383"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056548"
 ---
 # <a name="walkthrough-create-a-custom-editor"></a>Procédure pas à pas : Créer un éditeur personnalisé
 Le modèle de projet VSPackage peut créer un éditeur personnalisé simple en C++. Le modèle de projet VSPackage n’est plus prend en charge que les projets c# ou Visual Basic. Pour plus d’informations, consultez [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
@@ -28,21 +28,21 @@ Le modèle de projet VSPackage peut créer un éditeur personnalisé simple en C
 
 ### <a name="to-create-a-vspackage-using-the-visual-studio-package-template"></a>Pour créer un VSPackage à l’aide du modèle de package Visual Studio
 
-1.  Créez un projet avec le modèle de Package Visual Studio.
+1. Créez un projet avec le modèle de Package Visual Studio.
 
-2.  Sélectionnez le **éditeur personnalisé** , cliquez sur **suivant**. Le **Options de l’éditeur** page s’affiche.
+2. Sélectionnez le **éditeur personnalisé** , cliquez sur **suivant**. Le **Options de l’éditeur** page s’affiche.
 
-3.  Tapez le nom de votre éditeur dans le **nom d’éditeur** boîte. Tapez l’extension de fichier que vous souhaitez associer à votre éditeur dans le **Extension de fichier** boîte. Votre éditeur est disponible pour les fichiers avec cette extension. L’extension de fichier est enregistrée pour Visual Studio uniquement, pas pour Windows. Tapez le nom de fichier par défaut pour les nouveaux documents créés avec votre éditeur dans le **nom de fichier par défaut** boîte.
+3. Tapez le nom de votre éditeur dans le **nom d’éditeur** boîte. Tapez l’extension de fichier que vous souhaitez associer à votre éditeur dans le **Extension de fichier** boîte. Votre éditeur est disponible pour les fichiers avec cette extension. L’extension de fichier est enregistrée pour Visual Studio uniquement, pas pour Windows. Tapez le nom de fichier par défaut pour les nouveaux documents créés avec votre éditeur dans le **nom de fichier par défaut** boîte.
 
-4.  Cliquez sur **Terminer** pour créer votre VSPackage dans le dossier que vous avez spécifié.
+4. Cliquez sur **Terminer** pour créer votre VSPackage dans le dossier que vous avez spécifié.
 
 ### <a name="to-test-your-custom-editor"></a>Pour tester votre éditeur personnalisé
 
-1.  Sur le **fichier** menu, pointez sur **New** puis cliquez sur **fichier**.
+1. Sur le **fichier** menu, pointez sur **New** puis cliquez sur **fichier**.
 
-2.  Dans le **modèles installés** volet de la **nouveau fichier** boîte de dialogue, sélectionnez le modèle de fichier, puis le fichier de type vous inscrit.
+2. Dans le **modèles installés** volet de la **nouveau fichier** boîte de dialogue, sélectionnez le modèle de fichier, puis le fichier de type vous inscrit.
 
-3.  Cliquez sur **Open** pour afficher et modifier le document.
+3. Cliquez sur **Open** pour afficher et modifier le document.
 
      L’éditeur prend en charge les opérations couper-coller, rechercher et remplacer et open-and-load.
 

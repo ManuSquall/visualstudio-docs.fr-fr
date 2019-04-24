@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bfefb49b2dea575a7a99c2531a6f241872cd4704
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 61fb1302ffb0a068122c333e196178dfa2b30d86
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629987"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078939"
 ---
 # <a name="how-to-programmatically-create-new-visio-documents"></a>Procédure : Créer par programme des documents Visio
   Quand vous créez un dessin Microsoft Office Visio, vous l’ajoutez à la collection `Microsoft.Office.Interop.Visio.Documents` de documents Visio ouverts. Ainsi, la méthode `Microsoft.Office.Interop.Visio.Documents.Add` crée un dessin Visio. Pour plus d’informations, consultez la documentation de référence VBA de la méthode [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) .
@@ -27,7 +27,7 @@ ms.locfileid: "56629987"
 
 ### <a name="to-create-a-new-document"></a>Pour créer un document
 
--   Utilisez la méthode `Microsoft.Office.Interop.Visio.Documents.Add` pour créer un document vierge qui n’est pas basé sur un modèle.
+- Utilisez la méthode `Microsoft.Office.Interop.Visio.Documents.Add` pour créer un document vierge qui n’est pas basé sur un modèle.
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#1](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#1)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#1](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#1)]
@@ -37,7 +37,7 @@ ms.locfileid: "56629987"
 
 ### <a name="to-create-a-new-document-that-is-copied-from-an-existing-document"></a>Pour créer un document copié à partir d’un document existant
 
--   Appelez la méthode `Microsoft.Office.Interop.Visio.Documents.Add` et spécifiez le chemin du diagramme Visio.
+- Appelez la méthode `Microsoft.Office.Interop.Visio.Documents.Add` et spécifiez le chemin du diagramme Visio.
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#2](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#2)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#2](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#2)]
@@ -47,7 +47,7 @@ ms.locfileid: "56629987"
 
 ### <a name="to-create-a-new-stencil-that-is-copied-from-an-existing-stencil"></a>Pour créer un gabarit copié à partir d’un gabarit existant
 
--   Appelez la méthode `Microsoft.Office.Interop.Visio.Documents.Add` et spécifiez le chemin du gabarit.
+- Appelez la méthode `Microsoft.Office.Interop.Visio.Documents.Add` et spécifiez le chemin du gabarit.
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#3](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#3)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#3](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#3)]
@@ -57,7 +57,7 @@ ms.locfileid: "56629987"
 
 ### <a name="to-create-a-new-document-that-is-based-on-an-existing-template"></a>Pour créer un document basé sur un modèle existant
 
--   Appelez la méthode `Microsoft.Office.Interop.Visio.Documents.Add` et spécifiez le chemin du modèle.
+- Appelez la méthode `Microsoft.Office.Interop.Visio.Documents.Add` et spécifiez le chemin du modèle.
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#4](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#4)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#4](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#4)]
@@ -65,11 +65,11 @@ ms.locfileid: "56629987"
 ## <a name="compile-the-code"></a>Compiler le code
  Cet exemple de code doit respecter la condition suivante :
 
--   Un document Visio nommé `myDrawing.vsd` doit se trouver dans un répertoire nommé `Test` dans le *Mes Documents* dossier (pour Windows XP et versions antérieures) ou le *Documents* dossier (Windows Vista).
+- Un document Visio nommé `myDrawing.vsd` doit se trouver dans un répertoire nommé `Test` dans le *Mes Documents* dossier (pour Windows XP et versions antérieures) ou le *Documents* dossier (Windows Vista).
 
--   Un document Visio nommé `myStencil.vss` doit se trouver dans un répertoire nommé `Test` dans le *Mes Documents* dossier (pour Windows XP et versions antérieures) ou le *Documents* dossier (Windows Vista).
+- Un document Visio nommé `myStencil.vss` doit se trouver dans un répertoire nommé `Test` dans le *Mes Documents* dossier (pour Windows XP et versions antérieures) ou le *Documents* dossier (Windows Vista).
 
--   Un document Visio nommé `myTemplate.vst` doit se trouver dans un répertoire nommé `Test` dans le *Mes Documents* dossier (pour Windows XP et versions antérieures) ou le *Documents* dossier (Windows Vista).
+- Un document Visio nommé `myTemplate.vst` doit se trouver dans un répertoire nommé `Test` dans le *Mes Documents* dossier (pour Windows XP et versions antérieures) ou le *Documents* dossier (Windows Vista).
 
 ## <a name="see-also"></a>Voir aussi
 - [Solutions Visio](../vsto/visio-solutions.md)

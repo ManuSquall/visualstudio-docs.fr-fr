@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6ad84f5a0db677ca9efa9d24b1963959010f25e3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 77fa9442289851aff91d8d9bfc55e581edfa774a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602021"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117538"
 ---
 # <a name="ribbon-xml"></a>Élément XML Ribbon
   L’élément Ruban (XML) vous permet de personnaliser un ruban à l’aide de XML. Utilisez l’élément Ruban (XML) si vous souhaitez personnaliser le ruban d’une manière qui n’est pas pris en charge par l’élément Ruban (Concepteur visuel). Pour obtenir une comparaison de ce que vous pouvez faire avec chaque élément, consultez [vue d’ensemble du ruban](../vsto/Ribbon-overview.md).
@@ -55,9 +55,9 @@ ms.locfileid: "56602021"
 ## <a name="define-the-behavior-of-the-custom-ribbon"></a>Définir le comportement du ruban personnalisé
  Vous pouvez répondre aux actions de l’utilisateur, telles qu’un clic sur un bouton du ruban, en créant *méthodes de rappel*. Les méthodes de rappel ressemblent aux événements figurant dans les contrôles Windows Forms, mais elles sont identifiées par un attribut dans le code XML de l'élément d'interface utilisateur. Vous écrivez des méthodes dans la classe du ruban et un contrôle appelle la méthode qui porte le même nom que la valeur d'attribut. Par exemple, vous pouvez créer une méthode de rappel qui est appelée lorsqu’un utilisateur clique sur un bouton sur le ruban. Deux étapes sont nécessaires pour créer une méthode de rappel :
 
--   Assignez un attribut à un contrôle dans le fichier XML du ruban, qui identifie une méthode de rappel dans votre code.
+- Assignez un attribut à un contrôle dans le fichier XML du ruban, qui identifie une méthode de rappel dans votre code.
 
--   Définissez la méthode de rappel dans la classe du ruban.
+- Définissez la méthode de rappel dans la classe du ruban.
 
 > [!NOTE]
 >  Outlook requiert une étape supplémentaire. Pour plus d’informations, consultez [personnaliser un ruban pour Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
@@ -77,7 +77,7 @@ ms.locfileid: "56602021"
 
  De nombreux types différents de méthodes de rappel peuvent être affectés aux contrôles du ruban. Pour obtenir une liste complète des méthodes de rappel disponibles pour chaque contrôle, consultez l’article technique [personnaliser l’interface utilisateur ruban d’Office (2007) pour les développeurs (partie 3 sur 3)](/previous-versions/office/developer/office-2007/aa722523(v=office.12)).
 
-###  <a name="CallBackMethods"></a> Définir des méthodes de rappel
+### <a name="CallBackMethods"></a> Définir des méthodes de rappel
  Définissez vos méthodes de rappel dans la classe du ruban, dans le fichier de code du ruban. Une méthode de rappel a plusieurs conditions requises :
 
 - Elle doit être déclarée comme publique.
@@ -93,7 +93,7 @@ ms.locfileid: "56602021"
   [!code-csharp[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#2)]
   [!code-vb[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#2)]
 
-##  <a name="RibbonDescriptorFile"></a> Référence de fichier XML du ruban
+## <a name="RibbonDescriptorFile"></a> Référence de fichier XML du ruban
  Vous pouvez définir votre ruban personnalisé en ajoutant des éléments et attributs dans le fichier XML du ruban. Par défaut, le fichier XML du ruban contient le code XML suivant.
 
 ```xml
@@ -132,7 +132,7 @@ ms.locfileid: "56602021"
 
  Les éléments et les attributs par défaut figurant dans le fichier XML du ruban sont un petit sous-ensemble des éléments et attributs disponibles. Pour obtenir une liste complète des éléments disponibles et des attributs, consultez l’article technique [personnaliser l’interface utilisateur ruban d’Office (2007) pour les développeurs (partie 2 sur 3)](/previous-versions/office/developer/office-2007/aa338199(v=office.12)).
 
-##  <a name="RibbonExtensionClass"></a> Référence de classe du ruban
+## <a name="RibbonExtensionClass"></a> Référence de classe du ruban
  Visual Studio génère la classe du ruban dans le fichier de code du ruban. Ajoutez les méthodes de rappel pour les contrôles sur le ruban à cette classe. Cette classe implémente l'interface <xref:Microsoft.Office.Core.IRibbonExtensibility> .
 
  Le tableau suivant décrit les méthodes par défaut de cette classe.

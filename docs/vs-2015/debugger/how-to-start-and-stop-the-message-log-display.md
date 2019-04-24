@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc3619136b103230efae183b49d4c7d3ba00880d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d2e31fc094b777b328347bdcd783b69f1539f246
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948904"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102196"
 ---
 # <a name="how-to-start-and-stop-the-message-log-display"></a>Procédure : Démarrer et arrêter l’affichage du journal des messages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,8 +27,8 @@ Quand un [vue Messages](../debugger/messages-view.md) fenêtre est active, un **
   
 ### <a name="to-start-the-message-log-display"></a>Pour démarrer l’affichage du journal des messages  
   
-1.  À partir de la **Messages** menu, choisissez **Start Logging**.  
+1. À partir de la **Messages** menu, choisissez **Start Logging**.  
   
 ### <a name="to-stop-the-message-log-display"></a>Pour arrêter l’affichage du journal des messages  
   
-1.  À partir de la **Messages** menu, choisissez **Stop Logging**.
+1. À partir de la **Messages** menu, choisissez **Stop Logging**.

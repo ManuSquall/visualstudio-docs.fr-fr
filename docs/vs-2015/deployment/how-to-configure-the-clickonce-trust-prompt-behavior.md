@@ -19,12 +19,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f5a1174f96e34773aac524562d6f62514e92ba5e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 58e5f0e9154137097a94637799966ee94818fca4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "59001168"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047045"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Procédure : Configurer le comportement de l’invite d’approbation ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,19 +56,19 @@ Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si l
   
 #### <a name="to-enable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Pour activer l’invite d’approbation ClickOnce à l’aide de l’Éditeur du Registre  
   
-1.  Ouvrez l’Éditeur du Registre :  
+1. Ouvrez l’Éditeur du Registre :  
   
-    1.  Cliquez sur **Démarrer** puis sur **Exécuter**.  
+    1. Cliquez sur **Démarrer** puis sur **Exécuter**.  
   
-    2.  Dans le **Open** , tapez `regedit` (ou `regedit32` sur 32 bits Windows), puis cliquez sur **OK**.  
+    2. Dans le **Open** , tapez `regedit` (ou `regedit32` sur 32 bits Windows), puis cliquez sur **OK**.  
   
-2.  Recherchez la clé de Registre suivante :  
+2. Recherchez la clé de Registre suivante :  
   
      \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel  
   
      Si la clé n’existe pas, créez-le.  
   
-3.  Ajoutez les sous-clés suivantes en tant que **valeur de chaîne**, si elles n’existent pas déjà, avec les valeurs associées présentées dans le tableau suivant.  
+3. Ajoutez les sous-clés suivantes en tant que **valeur de chaîne**, si elles n’existent pas déjà, avec les valeurs associées présentées dans le tableau suivant.  
   
     |Sous-clé de valeur de chaîne|Value|  
     |-------------------------|-----------|  
@@ -82,9 +82,9 @@ Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si l
   
 #### <a name="to-enable-the-clickonce-trust-prompt-programmatically"></a>Pour activer l’invite d’approbation ClickOnce par programmation  
   
-1.  Créer une application console Visual Basic ou Visual C# dans Visual Studio.  
+1. Créer une application console Visual Basic ou Visual c# dans Visual Studio.  
   
-2.  Ouvrez le fichier Program.vb ou Program.cs pour l’édition et ajoutez le code suivant.  
+2. Ouvrez le fichier Program.vb ou Program.cs pour l’édition et ajoutez le code suivant.  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -108,26 +108,26 @@ Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si l
     key.Close();  
     ```  
   
-3.  Générez et exécutez l’application.  
+3. Générez et exécutez l’application.  
   
 ## <a name="restricting-the-clickonce-trust-prompt"></a>Restriction de l’invite d’approbation ClickOnce  
  Restreindre l’invite d’approbation afin que les solutions doivent être signées avec des certificats Authenticode dont l’identité est connue avant que les utilisateurs soient invités à une décision d’approbation.  
   
 #### <a name="to-restrict-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Pour restreindre l’invite d’approbation ClickOnce à l’aide de l’Éditeur du Registre  
   
-1.  Ouvrez l’Éditeur du Registre :  
+1. Ouvrez l’Éditeur du Registre :  
   
-    1.  Cliquez sur **Démarrer** puis sur **Exécuter**.  
+    1. Cliquez sur **Démarrer** puis sur **Exécuter**.  
   
-    2.  Dans le **Open** , tapez `regedit` (ou `regedit32` sur 32 bits Windows), puis cliquez sur **OK**.  
+    2. Dans le **Open** , tapez `regedit` (ou `regedit32` sur 32 bits Windows), puis cliquez sur **OK**.  
   
-2.  Recherchez la clé de Registre suivante :  
+2. Recherchez la clé de Registre suivante :  
   
      \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel  
   
      Si la clé n’existe pas, créez-le.  
   
-3.  Ajoutez les sous-clés suivantes en tant que **valeur de chaîne**, si elles n’existent pas déjà, avec les valeurs associées présentées dans le tableau suivant.  
+3. Ajoutez les sous-clés suivantes en tant que **valeur de chaîne**, si elles n’existent pas déjà, avec les valeurs associées présentées dans le tableau suivant.  
   
     |Sous-clé de valeur de chaîne|Value|  
     |-------------------------|-----------|  
@@ -139,9 +139,9 @@ Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si l
   
 #### <a name="to-restrict-the-clickonce-trust-prompt-programmatically"></a>Pour restreindre l’invite d’approbation ClickOnce par programmation  
   
-1.  Créer une application console Visual Basic ou Visual C# dans Visual Studio.  
+1. Créer une application console Visual Basic ou Visual c# dans Visual Studio.  
   
-2.  Ouvrez le fichier Program.vb ou Program.cs pour l’édition et ajoutez le code suivant.  
+2. Ouvrez le fichier Program.vb ou Program.cs pour l’édition et ajoutez le code suivant.  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -165,26 +165,26 @@ Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si l
     key.Close();  
     ```  
   
-3.  Générez et exécutez l’application.  
+3. Générez et exécutez l’application.  
   
 ## <a name="disabling-the-clickonce-trust-prompt"></a>La désactivation de l’invite d’approbation ClickOnce  
  Vous pouvez désactiver l’invite d’approbation afin que les utilisateurs finaux reçoivent pas l’option d’installation des solutions qui ne sont pas déjà approuvées dans leur stratégie de sécurité.  
   
 #### <a name="to-disable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Pour désactiver l’invite d’approbation ClickOnce à l’aide de l’Éditeur du Registre  
   
-1.  Ouvrez l’Éditeur du Registre :  
+1. Ouvrez l’Éditeur du Registre :  
   
-    1.  Cliquez sur **Démarrer** puis sur **Exécuter**.  
+    1. Cliquez sur **Démarrer** puis sur **Exécuter**.  
   
-    2.  Dans le **Open** , tapez `regedit` (ou `regedit32` sur 32 bits Windows), puis cliquez sur **OK**.  
+    2. Dans le **Open** , tapez `regedit` (ou `regedit32` sur 32 bits Windows), puis cliquez sur **OK**.  
   
-2.  Recherchez la clé de Registre suivante :  
+2. Recherchez la clé de Registre suivante :  
   
      \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel  
   
      Si la clé n’existe pas, créez-le.  
   
-3.  Ajoutez les sous-clés suivantes en tant que **valeur de chaîne**, si elles n’existent pas déjà, avec les valeurs associées présentées dans le tableau suivant.  
+3. Ajoutez les sous-clés suivantes en tant que **valeur de chaîne**, si elles n’existent pas déjà, avec les valeurs associées présentées dans le tableau suivant.  
   
     |Sous-clé de valeur de chaîne|Value|  
     |-------------------------|-----------|  
@@ -196,9 +196,9 @@ Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si l
   
 #### <a name="to-disable-the-clickonce-trust-prompt-programmatically"></a>Pour désactiver l’invite d’approbation ClickOnce par programmation  
   
-1.  Créer une application console Visual Basic ou Visual C# dans Visual Studio.  
+1. Créer une application console Visual Basic ou Visual c# dans Visual Studio.  
   
-2.  Ouvrez le fichier Program.vb ou Program.cs pour l’édition et ajoutez le code suivant.  
+2. Ouvrez le fichier Program.vb ou Program.cs pour l’édition et ajoutez le code suivant.  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -223,7 +223,7 @@ Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si l
   
     ```  
   
-3.  Générez et exécutez l’application.  
+3. Générez et exécutez l’application.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Sécurisation des applications ClickOnce](../deployment/securing-clickonce-applications.md)   

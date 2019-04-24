@@ -7,26 +7,26 @@ ms.date: 07/12/2018
 ms.topic: conceptual
 description: Découvrez comment intégrer correctement votre organisation aux abonnements Visual Studio après la migration vers le portail d’administration.
 searchscope: VS Subscription
-ms.openlocfilehash: 188842272f7e4ee102829f961b29b4d5ffbf70dc
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 3b12f5ad2d4f83759c6247f3498eb3da9d376991
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154177"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897606"
 ---
 # <a name="onboard-to-the-visual-studio-subscriptions-administration-portal-after-your-organization-is-migrated"></a>Effectuer l’intégration au portail d’administration des abonnements Visual Studio après la migration de votre organisation
 
 Si vous avez géré les abonnements Visual Studio dans le centre de gestion des licences en volume (VLSC) Microsoft et que vous avez récemment visité le site pour gérer des abonnements, vous remarquerez que la gestion des abonnements n’est plus disponible dans le VLSC. Votre processus de gestion des abonnements devait ressembler à ça :
 > [!div class="mx-imgBorder"]
-> ![Capture d’écran du VLSC Microsoft, avec l’onglet Abonnements mis en surbrillance](_img/post-migration-onboarding/vlsc-subscriptions.png)
+> ![Capture d’écran du Centre de gestion des licences en volume Microsoft, avec l’onglet Abonnements mis en surbrillance](_img/post-migration-onboarding/vlsc-subscriptions.png)
 
 Toutefois, les abonnements sont désormais gérés via un nouveau portail appelé portail d’administration abonnements Visual Studio. En général, le contact principal ou le destinataire des notifications pour le contrat de licence en volume de votre organisation effectue cette procédure. Si ce n’est pas le cas, les informations suivantes vous permettent d’accéder à la gestion des abonnements.
 
 Vous pouvez rencontrer un des cas suivants :
 
-1. [Le contact principal n’a pas effectué le processus d’intégration.](#onboarding-not-completed-by-primary-contact)
-2. [Le contact principal a effectué l’intégration, mais ne vous a pas ajouté en tant qu’administrateur. Vos informations d’identification ont été répertoriées dans VLSC.](#primary-contact-did-not-provide-you-administrator-access)
-3. [Le contact principal a effectué l’intégration, mais ne vous a pas ajouté en tant qu’administrateur. Vos informations d’identification n’ont pas été répertoriées dans VLSC.](#Your-credentials-were-not-listed-in-VLSC-prior-to-migration)
+1. [L’interlocuteur principal n’a pas effectué le processus d’intégration.](#onboarding-not-completed-by-primary-contact)
+2. [L’interlocuteur principal a effectué l’intégration, mais ne vous a pas ajouté comme administrateur. Vos informations d’identification ont été répertoriées dans le Centre de gestion des licences en volume.](#primary-contact-did-not-provide-you-administrator-access)
+3. [L’interlocuteur principal a effectué l’intégration, mais ne vous a pas ajouté comme administrateur. Vos informations d’identification n’ont pas été répertoriées dans le Centre de gestion des licences en volume.](#your-credentials-were-not-listed-in-vlsc-prior-to-migration)
 
 <sup>1</sup> Si vous êtes le contact principal ou le destinataire des notifications et que vous n’avez pas terminé le processus d’intégration, vous devez suivre les étapes du scénario un afin de configurer de votre organisation.
 

@@ -11,17 +11,17 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cf7f84d8900443d6fec9b84995c569ef21ed0e86
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0f92b4053006aa5da3c28d9330b372466f84d0fd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953217"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113987"
 ---
 # <a name="the-text-template-transformation-process"></a>Processus de transformation du modèle de texte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le processus de transformation de modèle de texte prend un fichier de modèle de texte comme entrée et génère un nouveau fichier texte comme sortie. Par exemple, vous pouvez utiliser des modèles de texte pour générer du code Visual Basic ou C#, ou vous pouvez générer un rapport HTML.  
+Le processus de transformation de modèle de texte prend un fichier de modèle de texte comme entrée et génère un nouveau fichier texte comme sortie. Par exemple, vous pouvez utiliser des modèles de texte pour générer du code Visual Basic ou c#, ou vous pouvez générer un rapport HTML.  
   
  Trois composants prennent part à ce processus : le moteur, l’hôte et les processeurs de directive. Le moteur contrôle le processus ; Il interagit avec l’hôte et le processeur de directive pour produire le fichier de sortie. L’hôte fournit toutes les interactions avec l’environnement, comme la localisation des fichiers et les assemblys. Le processeur de directive ajoute des fonctionnalités, telles que la lecture des données à partir d’un fichier XML ou une base de données.  
   
@@ -41,19 +41,19 @@ Le processus de transformation de modèle de texte prend un fichier de modèle d
 ## <a name="the-host"></a>L’hôte  
  L’hôte est responsable de tout ce qui est lié à l’environnement en dehors du processus de transformation, y compris les éléments suivants :  
   
--   Localisation des fichiers texte et binaires demandés par le moteur ou un processeur de directive. L’hôte peut rechercher des répertoires et le global assembly cache pour localiser les assemblys. Il peut rechercher du code de processeur de directive personnalisé pour le moteur. L’hôte peut également rechercher et lire des fichiers texte et retourner leur contenu sous forme de chaînes.  
+- Localisation des fichiers texte et binaires demandés par le moteur ou un processeur de directive. L’hôte peut rechercher des répertoires et le global assembly cache pour localiser les assemblys. Il peut rechercher du code de processeur de directive personnalisé pour le moteur. L’hôte peut également rechercher et lire des fichiers texte et retourner leur contenu sous forme de chaînes.  
   
--   Fournissant des listes d’assemblys standards et d’espaces de noms utilisés par le moteur pour créer la classe de transformation générée.  
+- Fournissant des listes d’assemblys standards et d’espaces de noms utilisés par le moteur pour créer la classe de transformation générée.  
   
--   En fournissant le domaine d’application qui est utilisé lorsque le moteur compile et exécute la classe de transformation générée. Un domaine d’application distinct est utilisé afin de protéger l’application hôte des erreurs contenues dans le code du modèle.  
+- En fournissant le domaine d’application qui est utilisé lorsque le moteur compile et exécute la classe de transformation générée. Un domaine d’application distinct est utilisé afin de protéger l’application hôte des erreurs contenues dans le code du modèle.  
   
--   Écriture du fichier de sortie générée.  
+- Écriture du fichier de sortie générée.  
   
--   Définition de l’extension par défaut pour le fichier de sortie généré.  
+- Définition de l’extension par défaut pour le fichier de sortie généré.  
   
--   Gestion des erreurs de transformation de modèle de texte. Par exemple, l’hôte peut afficher les erreurs dans l’interface utilisateur ou les écrire dans un fichier. (Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], erreurs sont affichées dans la fenêtre de Message d’erreur.)  
+- Gestion des erreurs de transformation de modèle de texte. Par exemple, l’hôte peut afficher les erreurs dans l’interface utilisateur ou les écrire dans un fichier. (Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], erreurs sont affichées dans la fenêtre de Message d’erreur.)  
   
--   Si un utilisateur a appelé une directive sans fournir une valeur, en fournissant une valeur de paramètre obligatoire. Le processeur de directive peut spécifier le nom de la directive et le paramètre et demander à l’hôte pour fournir une valeur par défaut, le cas échéant.  
+- Si un utilisateur a appelé une directive sans fournir une valeur, en fournissant une valeur de paramètre obligatoire. Le processeur de directive peut spécifier le nom de la directive et le paramètre et demander à l’hôte pour fournir une valeur par défaut, le cas échéant.  
   
 ## <a name="directives-and-directive-processors"></a>Directives et des processeurs de Directive  
  Une directive est une commande dans votre modèle de texte. Il fournit des paramètres pour le processus de génération. Directives définissent généralement la source et le type du modèle ou d’autres entrées et l’extension de nom de fichier du fichier de sortie.  

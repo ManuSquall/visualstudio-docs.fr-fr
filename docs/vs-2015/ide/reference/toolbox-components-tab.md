@@ -11,17 +11,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 121474dcc7abcfb01ff992558f3ce0a245444e9f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0ebbf8a0492537ee40062fb17bb338d46c228a9a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54775886"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652863"
 ---
 # <a name="toolbox-components-tab"></a>Boîte à outils, onglet Composants
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Affiche les composants que vous pouvez ajouter aux concepteurs [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] et [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. En plus des composants [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] inclus avec [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], tels que les composants <xref:System.Messaging.MessageQueue> et <xref:System.Diagnostics.EventLog>, vous pouvez ajouter vos propres composants ou des composants tiers à cet onglet. Pour plus d’informations, consultez [Comment : manipuler des onglets de boîte à outils](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
   
  Pour afficher cet onglet, dans le menu **Affichage**, sélectionnez **Boîte à outils**. Dans la **boîte à outils**, sélectionnez l’onglet **Composants**.  

@@ -8,25 +8,25 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc41b980b012254ac263e027f1dd0361405c8366
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: e61da4205840f1831f956a31f5ebc00525b8cafc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954006"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086635"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Procédure pas à pas : Créer un à l’aide du Kit de développement logiciel C# ou Visual Basic
 Dans cette procédure pas à pas, vous allez apprendre à créer un kit de développement de bibliothèque mathématique simple à l’aide de Visual c#, puis d’empaqueter le Kit de développement logiciel en tant qu’une Extension Visual Studio (VSIX). Vous allez effectuer les procédures suivantes :
 
--   [Pour créer le composant SimpleMath Windows Runtime](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createClassLibrary)
+- [Pour créer le composant SimpleMath Windows Runtime](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createClassLibrary)
 
--   [Pour créer le projet d’extension SimpleMathVSIX](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createVSIX)
--   [Pour créer un exemple d’application qui utilise la bibliothèque de classes](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createSample)
+- [Pour créer le projet d’extension SimpleMathVSIX](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createVSIX)
+- [Pour créer un exemple d’application qui utilise la bibliothèque de classes](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createSample)
 
 ## <a name="prerequisites"></a>Prérequis
  Pour suivre cette procédure pas à pas, vous devez installer le Kit de développement logiciel (SDK) Visual Studio. Pour plus d’informations, consultez [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
-##  <a name="createClassLibrary"></a> Pour créer le composant SimpleMath Windows Runtime
+## <a name="createClassLibrary"></a> Pour créer le composant SimpleMath Windows Runtime
 
 1. Dans la barre de menus, choisissez **fichier** > **New** > **nouveau projet**.
 
@@ -54,25 +54,25 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
 
 9. Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le **SimpleMath** nœud de projet, puis choisissez **Build**.
 
-##  <a name="createVSIX"></a> Pour créer le projet d’extension SimpleMathVSIX
+## <a name="createVSIX"></a> Pour créer le projet d’extension SimpleMathVSIX
 
-1.  Dans le menu contextuel pour le **Solution 'SimpleMath'** nœud, choisissez **ajouter** > **nouveau projet**.
+1. Dans le menu contextuel pour le **Solution 'SimpleMath'** nœud, choisissez **ajouter** > **nouveau projet**.
 
-2.  Dans la liste des modèles, développez **Visual C#** ou **Visual Basic**, choisissez le **extensibilité** nœud, puis choisissez le **projet VSIX** modèle.
+2. Dans la liste des modèles, développez **Visual C#** ou **Visual Basic**, choisissez le **extensibilité** nœud, puis choisissez le **projet VSIX** modèle.
 
-3.  Dans le **nom** , spécifiez **SimpleMathVSIX**, puis choisissez le **OK** bouton.
+3. Dans le **nom** , spécifiez **SimpleMathVSIX**, puis choisissez le **OK** bouton.
 
-4.  Dans **l’Explorateur de solutions**, choisissez le **source.extension.vsixmanifest** élément.
+4. Dans **l’Explorateur de solutions**, choisissez le **source.extension.vsixmanifest** élément.
 
-5.  Dans la barre de menus, sélectionnez **Afficher** > **Code**.
+5. Dans la barre de menus, sélectionnez **Afficher** > **Code**.
 
-6.  Remplacez le code XML existant par le code XML suivant :
+6. Remplacez le code XML existant par le code XML suivant :
 
      [!code-xml[CreatingAnSDKUsingWinRT#1](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_2.xml)]
 
-7.  Dans **l’Explorateur de solutions**, choisissez le **SimpleMathVSIX** projet.
+7. Dans **l’Explorateur de solutions**, choisissez le **SimpleMathVSIX** projet.
 
-8.  Dans la barre de menus, choisissez **Projet** > **Ajouter un nouvel élément**.
+8. Dans la barre de menus, choisissez **Projet** > **Ajouter un nouvel élément**.
 
 9. Dans la liste des **éléments communs**, développez **données**, puis choisissez **fichier XML**.
 
@@ -83,6 +83,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
 12. Remplacez le contenu du fichier par le code XML suivant :
 
     **C#**
+
     ```xml
     <FileList
       DisplayName="WinRT Math Library (CS)"
@@ -95,6 +96,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
     ```
 
     **Visual Basic**
+
     ```xml
     <FileList
       DisplayName="WinRT Math Library (VB)"
@@ -149,7 +151,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
 
 30. Choisissez le **installer** bouton, attendez que l’installation se termine, puis redémarrez Visual Studio.
 
-##  <a name="createSample"></a> Pour créer un exemple d’application qui utilise la bibliothèque de classes
+## <a name="createSample"></a> Pour créer un exemple d’application qui utilise la bibliothèque de classes
 
 1. Dans la barre de menus, choisissez **fichier** > **New** > **nouveau projet**.
 
@@ -176,6 +178,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
 10. Dans **l’Explorateur de solutions**, ouvrez **MainPage.xaml**et remplacez son contenu par le XAML suivant :
 
     **C#**
+
     ```xml
     <Page
         x:Class="WinRTMathTestCS.MainPage"
@@ -201,6 +204,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
     ```
 
     **Visual Basic**
+
     ```xml
     <Page
         x:Class="WinRTMathTest.MainPage"

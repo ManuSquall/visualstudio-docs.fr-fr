@@ -12,12 +12,12 @@ ms.assetid: 0c561617-fb86-476d-8bd1-c6e5e7464c65
 caps.latest.revision: 45
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c88dbb1ac3b2c9419dc111843e360623dd15c7fe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4978a2a8d176ecf3c270bad32a1ae9f82397a642
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948397"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065803"
 ---
 # <a name="creating-reusable-groups-of-buttons"></a>Création de groupes de boutons réutilisables
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,13 +28,13 @@ Un groupe de commandes est une collection de commandes qui apparaissent toujours
   
 ### <a name="to-create-a-reusable-group-of-buttons"></a>Pour créer un groupe réutilisable de boutons  
   
-1.  Créez un projet VSIX nommé `ReusableButtons`. Pour plus d’informations, consultez [création d’une Extension avec une commande de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1. Créez un projet VSIX nommé `ReusableButtons`. Pour plus d’informations, consultez [création d’une Extension avec une commande de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  Quand le projet s’ouvre, ajoutez un modèle d’élément de commande personnalisée nommé **ReusableCommand**. Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **Ajouter / nouvel élément**. Dans le **ajouter un nouvel élément** boîte de dialogue, accédez à **Visual C# / extensibilité** et sélectionnez **commande personnalisée**. Dans le **nom** en bas de la fenêtre, modifiez le nom de fichier de commande pour **ReusableCommand.cs**.  
+2. Quand le projet s’ouvre, ajoutez un modèle d’élément de commande personnalisée nommé **ReusableCommand**. Dans le **l’Explorateur de solutions**, cliquez sur le nœud du projet et sélectionnez **Ajouter / nouvel élément**. Dans le **ajouter un nouvel élément** boîte de dialogue, accédez à **Visual c# / extensibilité** et sélectionnez **commande personnalisée**. Dans le **nom** en bas de la fenêtre, modifiez le nom de fichier de commande pour **ReusableCommand.cs**.  
   
-3.  Dans le fichier .vsct, accédez à la section Symbols et recherchez l’élément GuidSymbol qui contient les groupes et les commandes pour le projet. Il doit être nommé guidReusableCommandPackageCmdSet.  
+3. Dans le fichier .vsct, accédez à la section Symbols et recherchez l’élément GuidSymbol qui contient les groupes et les commandes pour le projet. Il doit être nommé guidReusableCommandPackageCmdSet.  
   
-4.  Ajouter un IDSymbol pour chaque bouton que vous ajouterez au groupe, comme dans l’exemple suivant.  
+4. Ajouter un IDSymbol pour chaque bouton que vous ajouterez au groupe, comme dans l’exemple suivant.  
   
     ```xml  
     <GuidSymbol name="guidReusableCommandPackageCmdSet" value="{7f383b2a-c6b9-4c1d-b4b8-a26dc5b60ca1}">  
@@ -46,7 +46,7 @@ Un groupe de commandes est une collection de commandes qui apparaissent toujours
   
      Par défaut, le modèle d’élément de commande crée un groupe nommé **MyGroup** et un bouton qui porte le nom que vous avez fourni avec une entrée IDSymbol pour chacun.  
   
-5.  Dans la section groupes, créer un élément de groupe qui a les mêmes attributs GUID et l’ID que ceux indiqués dans la section de symboles. Vous pouvez également utiliser un groupe existant, ou utiliser l’entrée fournie par le modèle de commande, comme dans l’exemple suivant. Ce groupe apparaisse sur le **outils** menu  
+5. Dans la section groupes, créer un élément de groupe qui a les mêmes attributs GUID et l’ID que ceux indiqués dans la section de symboles. Vous pouvez également utiliser un groupe existant, ou utiliser l’entrée fournie par le modèle de commande, comme dans l’exemple suivant. Ce groupe apparaisse sur le **outils** menu  
   
     ```xml  
     <Groups>  
@@ -58,7 +58,7 @@ Un groupe de commandes est une collection de commandes qui apparaissent toujours
   
 ### <a name="to-create-a-group-of-buttons-for-reuse"></a>Pour créer un groupe de boutons pour une réutilisation  
   
-1.  Vous pouvez placer une commande ou un menu dans un groupe en utilisant le groupe en tant que parent dans la définition de la commande ou le menu, soit en plaçant le menu ou une commande dans le groupe à l’aide de la section CommandPlacements.  
+1. Vous pouvez placer une commande ou un menu dans un groupe en utilisant le groupe en tant que parent dans la définition de la commande ou le menu, soit en plaçant le menu ou une commande dans le groupe à l’aide de la section CommandPlacements.  
   
      Dans la section boutons définir un bouton qui a votre groupe en tant que son parent, ou utilisez le bouton qui est fourni par le modèle de package, comme illustré dans l’exemple suivant.  
   
@@ -72,7 +72,7 @@ Un groupe de commandes est une collection de commandes qui apparaissent toujours
     </Button>  
     ```  
   
-2.  Si un bouton doit apparaître dans plusieurs groupes, créez une entrée dans la section CommandPlacements, qui doit être placée après la section Commands. Définissez les attributs GUID et l’ID de l’élément CommandPlacement correspondent à celles du bouton que vous souhaitez positionner et définissez le GUID et l’ID de son élément Parent à ceux du groupe cible, comme indiqué dans l’exemple suivant.  
+2. Si un bouton doit apparaître dans plusieurs groupes, créez une entrée dans la section CommandPlacements, qui doit être placée après la section Commands. Définissez les attributs GUID et l’ID de l’élément CommandPlacement correspondent à celles du bouton que vous souhaitez positionner et définissez le GUID et l’ID de son élément Parent à ceux du groupe cible, comme indiqué dans l’exemple suivant.  
   
     ```xml  
     <CommandPlacements>  
@@ -87,7 +87,7 @@ Un groupe de commandes est une collection de commandes qui apparaissent toujours
   
 ### <a name="to-put-a-reusable-group-of-buttons-on-a-menu"></a>Pour placer un groupe réutilisable de boutons sur un menu  
   
-1.  Créer une entrée dans le `CommandPlacements` section. Définir le GUID et l’ID de la `CommandPlacement` élément à ceux de votre groupe et définissez le parent GUID et l’ID à ceux de l’emplacement cible.  
+1. Créer une entrée dans le `CommandPlacements` section. Définir le GUID et l’ID de la `CommandPlacement` élément à ceux de votre groupe et définissez le parent GUID et l’ID à ceux de l’emplacement cible.  
   
      La section CommandPlacements doit être placée juste après la section de commandes :  
   

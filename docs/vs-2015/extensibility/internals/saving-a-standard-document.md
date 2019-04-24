@@ -12,12 +12,12 @@ ms.assetid: d692fedf-b46e-4d60-84bd-578635042235
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 74f77112965e774bc2fcb278be08f6e9b61774d7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5040070287db6486fa62c9010fe023be31b04cbe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949382"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052478"
 ---
 # <a name="saving-a-standard-document"></a>Enregistrement d’un document standard
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,11 +53,11 @@ Enregistrer, enregistrer sous et enregistrer tout gestion des commandes pour un 
   
 #### <a name="to-change-file-ownership-to-the-miscellaneous-files-project"></a>Pour modifier la propriété de fichier pour le projet fichiers divers  
   
-1.  Interroger le Service pour le <xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager> interface.  
+1. Interroger le Service pour le <xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager> interface.  
   
      Un pointeur vers <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2> est retourné.  
   
-2.  Appelez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> (`pszMkDocumentNew`, `punkWindowFrame`) méthode pour transférer le document vers la nouvelle hiérarchie. La hiérarchie de l’exécution de la commande Enregistrer sous appelle cette méthode.  
+2. Appelez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager2.TransferDocument%2A> (`pszMkDocumentNew`, `punkWindowFrame`) méthode pour transférer le document vers la nouvelle hiérarchie. La hiérarchie de l’exécution de la commande Enregistrer sous appelle cette méthode.  
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   

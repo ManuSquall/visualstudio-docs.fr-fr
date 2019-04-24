@@ -1,5 +1,5 @@
 ---
-title: Refactorisation (C#) | Microsoft Docs
+title: Refactorisation (c#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,31 +18,31 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 78ac19ac0e992b51affdbf6a0e6e3268ddfa52d0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ca7a85bf7ace1f9aeb0e47e031cda5f793df2331
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951604"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046316"
 ---
 # <a name="refactoring-c"></a>Refactorisation (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La refactorisation consiste à améliorer votre code après que qu’il a été écrit par la modification de la structure interne du code sans modifier le comportement du code externe.  
   
- Visual C# fournit les commandes de refactorisation suivantes sur le **Refactoring** menu :  
+ Visual c# fournit les commandes de refactorisation suivantes sur le **Refactoring** menu :  
   
--   [Extraire la méthode (Refactorisation C#)](../csharp-ide/extract-method-refactoring-csharp.md)  
+- [Extraire la méthode (Refactorisation C#)](../csharp-ide/extract-method-refactoring-csharp.md)  
   
--   [Refactorisation de changement de nom (C#)](../csharp-ide/rename-refactoring-csharp.md)  
+- [Refactorisation de changement de nom (C#)](../csharp-ide/rename-refactoring-csharp.md)  
   
--   [Encapsuler le champ (Refactorisation C#)](../csharp-ide/encapsulate-field-refactoring-csharp.md)  
+- [Encapsuler le champ (Refactorisation C#)](../csharp-ide/encapsulate-field-refactoring-csharp.md)  
   
--   [Refactorisation d’extraction d’interface (C#)](../csharp-ide/extract-interface-refactoring-csharp.md)  
+- [Refactorisation d’extraction d’interface (C#)](../csharp-ide/extract-interface-refactoring-csharp.md)  
   
--   [Supprimer les paramètres (Refactorisation C#)](../csharp-ide/remove-parameters-refactoring-csharp.md)  
+- [Supprimer les paramètres (Refactorisation C#)](../csharp-ide/remove-parameters-refactoring-csharp.md)  
   
--   [Réorganiser les paramètres (opération de refactorisation C#)](../csharp-ide/reorder-parameters-refactoring-csharp.md)  
+- [Réorganiser les paramètres (opération de refactorisation C#)](../csharp-ide/reorder-parameters-refactoring-csharp.md)  
   
 ## <a name="multi-project-refactoring"></a>Refactorisation de plusieurs projets  
  Visual Studio prend en charge la refactorisation de plusieurs projets pour les projets qui se trouvent dans la même solution. Toutes les opérations de refactorisation qui corriger des références entre fichiers corrigent ces références dans tous les projets de la même langue. Cela fonctionne pour toutes les références projet à projet. Par exemple, si vous disposez d’une application de console qui fait référence à une bibliothèque de classes, lorsque vous renommez un type de bibliothèque de classe (à l’aide de la `Rename` opération de refactorisation), les références au type de bibliothèque de classe dans l’application de console sont à jour également.  
@@ -69,7 +69,7 @@ La refactorisation consiste à améliorer votre code après que qu’il a été 
   
  Le **résultats de la vérification** boîte de dialogue peut vous avertir si le moteur de refactorisation détecte des erreurs de compilation ou découvre qu’une opération de refactorisation relie par inadvertance une référence de code à lier à quelque chose de différent à partir de ce qu’il était lié à l’origine (problème de reliaison).  
   
- Pour activer les résultats de la vérification des fonctionnalités, sur le **outils** menu, cliquez sur **Options**. Dans le **Options** boîte de dialogue, développez **éditeur de texte**, puis développez **C#**. Cliquez sur **avancé** et sélectionnez le **vérifier les résultats de la refactorisation** case à cocher.  
+ Pour activer les résultats de la vérification des fonctionnalités, sur le **outils** menu, cliquez sur **Options**. Dans le **Options** boîte de dialogue, développez **éditeur de texte**, puis développez **c#**. Cliquez sur **avancé** et sélectionnez le **vérifier les résultats de la refactorisation** case à cocher.  
   
  Le **résultats de la vérification** boîte de dialogue distingue deux types de problèmes de reliaison.  
   
@@ -107,5 +107,5 @@ class Example
  Si vous utilisez la refactorisation pour renommer `OtherMethod` à `Method`, cette boîte de dialogue s’affiche. La référence dans `Main` maintenant fait référence à la méthode surchargée qui accepte un `int` paramètre au lieu de la méthode surchargée qui accepte un `object` paramètre.  
   
 ## <a name="see-also"></a>Voir aussi  
- [À l’aide de l’environnement de développement Visual Studio pour C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)   
+ [À l’aide de l’environnement de développement Visual Studio pour c#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)   
  [Guide pratique pour restaurer les extraits de code de refactorisation C#](../ide/how-to-restore-csharp-refactoring-snippets.md)

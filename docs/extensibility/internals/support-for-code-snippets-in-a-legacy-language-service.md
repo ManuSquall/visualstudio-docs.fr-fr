@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10067cdf06035b08c56fbcc92440b460a9b7733b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 70d438107b7cbe05b0a1c0049dff8e26c286de89
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612099"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043959"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Prise en charge des extraits de code dans un service de langage hérité
 Un extrait de code est un morceau de code est inséré dans le fichier source. L’extrait de code est un modèle basé sur XML avec un ensemble de champs. Ces champs sont mis en surbrillance une fois que l’extrait de code est inséré et peut avoir des valeurs différentes en fonction du contexte dans lequel l’extrait de code est inséré. Immédiatement après que l’extrait de code est inséré, le service de langage peut mettre en forme l’extrait de code.
@@ -39,11 +39,11 @@ Un extrait de code est un morceau de code est inséré dans le fichier source. L
 ## <a name="providing-support-for-code-snippets"></a>Prise en charge pour les extraits de Code
  Pour activer la prise en charge des extraits de code, vous devez fournir ou installer les extraits de code et vous devez fournir les moyens pour l’utilisateur d’insérer ces extraits de code. Il existe trois étapes de permettre la prise en charge des extraits de code :
 
-1.  Installation des fichiers d’extrait de code.
+1. Installation des fichiers d’extrait de code.
 
-2.  L’activation des extraits de code pour votre service de langage.
+2. L’activation des extraits de code pour votre service de langage.
 
-3.  Appeler le <xref:Microsoft.VisualStudio.Package.ExpansionProvider> objet.
+3. Appeler le <xref:Microsoft.VisualStudio.Package.ExpansionProvider> objet.
 
 ### <a name="installing-the-snippet-files"></a>Installation des fichiers d’extrait de code
  Tous les extraits de code pour une langue sont stockés en tant que modèles dans des fichiers XML, généralement un modèle d’extrait par fichier. Pour plus d’informations sur le schéma XML utilisé pour les modèles d’extrait de code, consultez [référence de schéma des extraits de Code](../../ide/code-snippets-schema-reference.md). Chaque modèle d’extrait de code est identifié avec un ID de langue. Ce langage ID est spécifié dans le Registre et qu’il est placé dans le `Language` attribut de la \<Code > balise dans le modèle.
@@ -115,9 +115,9 @@ Un extrait de code est un morceau de code est inséré dans le fichier source. L
 ### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>Insérer un extrait de Code à l’aide d’une commande de Menu
  Pour utiliser une commande de menu pour afficher le navigateur de l’extrait de code, vous ajoutez une commande de menu et appelez ensuite la <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> méthode dans le <xref:Microsoft.VisualStudio.Package.ExpansionProvider> interface en réponse à cette commande de menu.
 
-1.  Ajouter une commande et un bouton à votre fichier .vsct. Vous trouverez des instructions permettant d’effectuer dans [création d’une Extension avec une commande de Menu](../../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Ajouter une commande et un bouton à votre fichier .vsct. Vous trouverez des instructions permettant d’effectuer dans [création d’une Extension avec une commande de Menu](../../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2.  Dérivez une classe de la <xref:Microsoft.VisualStudio.Package.ViewFilter> classe et substituer la <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> méthode pour indiquer la prise en charge de la nouvelle commande de menu. Cet exemple permet toujours de la commande de menu.
+2. Dérivez une classe de la <xref:Microsoft.VisualStudio.Package.ViewFilter> classe et substituer la <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> méthode pour indiquer la prise en charge de la nouvelle commande de menu. Cet exemple permet toujours de la commande de menu.
 
     ```csharp
     using Microsoft.VisualStudio.Package;
@@ -153,7 +153,7 @@ Un extrait de code est un morceau de code est inséré dans le fichier source. L
     }
     ```
 
-3.  Remplacer le <xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A> méthode dans le <xref:Microsoft.VisualStudio.Package.ViewFilter> classe pour obtenir le <xref:Microsoft.VisualStudio.Package.ExpansionProvider> objet et appelez le <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> méthode sur cet objet.
+3. Remplacer le <xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A> méthode dans le <xref:Microsoft.VisualStudio.Package.ViewFilter> classe pour obtenir le <xref:Microsoft.VisualStudio.Package.ExpansionProvider> objet et appelez le <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> méthode sur cet objet.
 
     ```csharp
     using Microsoft.VisualStudio.Package;
@@ -205,15 +205,15 @@ Un extrait de code est un morceau de code est inséré dans le fichier source. L
 
      Les méthodes suivantes dans le <xref:Microsoft.VisualStudio.Package.ExpansionProvider> classe sont appelées par Visual Studio dans l’ordre indiqué au cours du processus de l’insertion de l’extrait de code :
 
-4.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>
+4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>
 
-5.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>
+5. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>
 
-6.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>
+6. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>
 
-7.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>
+7. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>
 
-8.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>
+8. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>
 
      Après le <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A> est appelée, l’extrait de code a été inséré et le <xref:Microsoft.VisualStudio.Package.ExpansionProvider> objet est en mode édition spéciale utilisé pour la modification d’un extrait de code qui vient d’être inséré.
 

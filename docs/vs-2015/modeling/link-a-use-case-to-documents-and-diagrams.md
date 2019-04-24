@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7e6e6bc1cd9794534f13915ffb41956e423e94c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 012ab6828364af155b52bc19d9a83564b2126a6b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953013"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088676"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>Lier un cas d'usage à des documents et diagrammes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,45 +40,45 @@ Vous pouvez lier un cas d'usage dans un diagramme de cas d'usage à un autre dia
   
 ### <a name="to-open-a-document-associated-with-an-artifact"></a>Pour ouvrir un document associé à un artefact  
   
--   Dans le diagramme de cas d'usage, double-cliquez sur la forme de l'artefact.  
+- Dans le diagramme de cas d'usage, double-cliquez sur la forme de l'artefact.  
   
      Le document associé s'ouvre.  
   
 ### <a name="to-link-a-use-case-to-a-diagram-or-file-in-the-same-solution"></a>Pour lier un cas d'usage à un diagramme ou à un fichier dans la même solution  
   
-1.  Dessinez un diagramme (tel qu'un diagramme de séquence ou un diagramme d'activités) pour illustrer un scénario du cas d'usage.  
+1. Dessinez un diagramme (tel qu'un diagramme de séquence ou un diagramme d'activités) pour illustrer un scénario du cas d'usage.  
   
-2.  Revenez au diagramme de cas d'usage.  
+2. Revenez au diagramme de cas d'usage.  
   
-3.  Faites glisser le diagramme ou le fichier de l'Explorateur de solutions vers une partie vide du diagramme de cas d'usage.  
+3. Faites glisser le diagramme ou le fichier de l'Explorateur de solutions vers une partie vide du diagramme de cas d'usage.  
   
-4.  Se connecter à partir de l’artefact à utilisation cas en utilisant un **dépendance**.  
+4. Se connecter à partir de l’artefact à utilisation cas en utilisant un **dépendance**.  
   
 ### <a name="to-link-to-a-solution-file-such-as-a-word-document-or-powerpoint-presentation"></a>Pour créer un lien vers un fichier de solution tel qu'un document Word ou une présentation PowerPoint  
   
-1.  Ajoutez le document à la solution.  
+1. Ajoutez le document à la solution.  
   
-    1.  Déplacez le document Word dans le même dossier Windows que la solution.  
+    1. Déplacez le document Word dans le même dossier Windows que la solution.  
   
-    2.  Dans l’Explorateur de solutions, cliquez sur la solution, pointez sur **ajouter**, puis cliquez sur **élément existant**.  
+    2. Dans l’Explorateur de solutions, cliquez sur la solution, pointez sur **ajouter**, puis cliquez sur **élément existant**.  
   
-    3.  Accédez au document Word et cliquez sur **ajouter**.  
+    3. Accédez au document Word et cliquez sur **ajouter**.  
   
          Le document Word s'affiche dans un dossier de solution dans l'Explorateur de solutions.  
   
-2.  Faites glisser le document Word de l'Explorateur de solutions vers une partie vide du diagramme de cas d'usage.  
+2. Faites glisser le document Word de l'Explorateur de solutions vers une partie vide du diagramme de cas d'usage.  
   
      Un nouvel artefact s'affiche.  
   
-3.  Se connecter à partir de l’artefact à utilisation cas en utilisant un **dépendance**.  
+3. Se connecter à partir de l’artefact à utilisation cas en utilisant un **dépendance**.  
   
 ### <a name="to-link-to-a-shared-document-onenote-element-or-web-page"></a>Pour créer un lien vers un élément OneNote, une page web ou un document partagé  
   
-1.  Obtenez l'URL de l'élément partagé. Il peut s’agir, par exemple, un début de chemin d’accès de fichier réseau '\\\\», ou une page web ou URL Sharepoint commençant par « http:// » ou un lien vers une section OneNote, page ou un paragraphe de début « onenote : ».  
+1. Obtenez l'URL de l'élément partagé. Il peut s’agir, par exemple, un début de chemin d’accès de fichier réseau '\\\\», ou une page web ou URL Sharepoint commençant par « http:// » ou un lien vers une section OneNote, page ou un paragraphe de début « onenote : ».  
   
-2.  Dans la boîte à outils, cliquez sur **artefact** puis cliquez sur dans le diagramme de cas d’usage.  
+2. Dans la boîte à outils, cliquez sur **artefact** puis cliquez sur dans le diagramme de cas d’usage.  
   
-3.  Une fois le nouvel artefact sélectionné, tapez ou collez l’URL dans le **Hyperlink** propriété.  
+3. Une fois le nouvel artefact sélectionné, tapez ou collez l’URL dans le **Hyperlink** propriété.  
   
     > [!NOTE]
     >  Si vous souhaitez fournir un chemin d’accès de fichier, il est préférable de choisir un fichier dans un espace de travail commun (commençant par «\\\\»), ou un fichier dans votre solution Visual Studio. Cela garantit que le chemin d'accès au fichier restera valide sur l'ordinateur d'un autre membre de l'équipe ou en cas de déplacement de la solution. Pour ajouter un document tel qu’un document Word à votre solution, avec le bouton droit de la solution dans l’Explorateur de solutions, pointez sur **ajouter** puis cliquez sur **élément existant**.  

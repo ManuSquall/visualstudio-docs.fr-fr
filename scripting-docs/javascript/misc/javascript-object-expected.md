@@ -14,19 +14,19 @@ ms.assetid: cc7cc32b-e444-4afa-9be1-802c83fdf5ae
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5632d56af7b8b6ef2a07f0f0a4c7bf270875a643
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: ceaae323c974a1f41b6f5bd2a3ca093ef7c0b2d9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840310"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084295"
 ---
 # <a name="javascript-object-expected"></a>Objet JavaScript attendu
 Vous avez tenté de passer un non -[!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] objet à une fonction intégrée qui attend un [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] objet. Différentes fonctions intégrées nécessitent les objets définis dans [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] (par opposition à des objets définis par l’hôte ou un composant externe comme un contrôle).  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
--   Vérifiez que l’objet que vous transmettez comme un paramètre est du type correct.  
+- Vérifiez que l’objet que vous transmettez comme un paramètre est du type correct.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Objets et tableaux](../../javascript/objects-and-arrays-javascript.md)   

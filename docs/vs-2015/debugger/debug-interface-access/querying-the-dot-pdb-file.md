@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0e0f08256d8852e707c3f6acf37ed6addc2ef831
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3cb95da9bc6405d313aa32e208d68df4327db6f4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949458"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087896"
 ---
 # <a name="querying-the-pdb-file"></a>Interrogation du fichier .Pdb
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Un fichier de base de données de programme (.pdb extension) est un fichier bina
   
 ### <a name="to-query-the-pdb-file"></a>Pour interroger le fichier .pdb  
   
-1.  Acquérir une source de données en créant un [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md) interface.  
+1. Acquérir une source de données en créant un [IDiaDataSource](../../debugger/debug-interface-access/idiadatasource.md) interface.  
   
     ```cpp#  
     CComPtr<IDiaDataSource> pSource;  
@@ -44,7 +44,7 @@ Un fichier de base de données de programme (.pdb extension) est un fichier bina
     }  
     ```  
   
-2.  Appelez [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) ou [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) pour charger les informations de débogage.  
+2. Appelez [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) ou [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) pour charger les informations de débogage.  
   
     ```cpp#  
     wchar_t wszFilename[ _MAX_PATH ];  
@@ -58,7 +58,7 @@ Un fichier de base de données de programme (.pdb extension) est un fichier bina
     }  
     ```  
   
-3.  Appelez [IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md) pour ouvrir un [IDiaSession](../../debugger/debug-interface-access/idiasession.md) pour accéder aux informations de débogage.  
+3. Appelez [IDiaDataSource::openSession](../../debugger/debug-interface-access/idiadatasource-opensession.md) pour ouvrir un [IDiaSession](../../debugger/debug-interface-access/idiasession.md) pour accéder aux informations de débogage.  
   
     ```cpp#  
     CComPtr<IDiaSession> psession;  
@@ -68,7 +68,7 @@ Un fichier de base de données de programme (.pdb extension) est un fichier bina
     }  
     ```  
   
-4.  Utilisez les méthodes de `IDiaSession` pour rechercher des symboles dans la source de données.  
+4. Utilisez les méthodes de `IDiaSession` pour rechercher des symboles dans la source de données.  
   
     ```cpp#  
     CComPtr<IDiaSymbol> pglobal;  
@@ -78,7 +78,7 @@ Un fichier de base de données de programme (.pdb extension) est un fichier bina
     }  
     ```  
   
-5.  Utilisez le `IDiaEnum*` interfaces pour énumérer et parcourir les symboles ou d’autres éléments d’informations de débogage.  
+5. Utilisez le `IDiaEnum*` interfaces pour énumérer et parcourir les symboles ou d’autres éléments d’informations de débogage.  
   
     ```cpp#  
     CComPtr<IDiaEnumTables> pTables;  

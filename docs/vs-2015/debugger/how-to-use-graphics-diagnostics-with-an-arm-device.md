@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f2a606d6b22dabc8bab0477a240499021a4312c3
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 7ae934de4a9f0dbcf4076d7402abd138eac20268
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001375"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104874"
 ---
 # <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>Procédure : Utiliser Graphics Diagnostics avec un appareil ARM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,9 +28,9 @@ Graphics Diagnostics prend en charge le débogage distant des applications Direc
   
 #### <a name="to-enable-remote-debugging-on-your-arm-based-device"></a>Pour activer le débogage distant sur votre appareil ARM  
   
-1.  Installer le [stratégie de Kits ARM](http://msdn.microsoft.com/windows/desktop/dn469188) sur votre appareil ARM.  
+1. Installer le [stratégie de Kits ARM](http://msdn.microsoft.com/windows/desktop/dn469188) sur votre appareil ARM.  
   
-2.  Installer le [les outils de débogage à distance](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015) sur votre appareil ARM.  
+2. Installer le [les outils de débogage à distance](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015) sur votre appareil ARM.  
   
 > [!IMPORTANT]
 >  Pour les appareils Windows Phone 8.1, vous serez peut-être amené à inscrire votre téléphone pour le développement. Pour cela, vous devez être inscrit en tant que développeur. Pour plus d’informations, consultez [comment déployer et exécuter une application pour Windows Phone 8](http://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx).  
@@ -39,11 +39,11 @@ Graphics Diagnostics prend en charge le débogage distant des applications Direc
   
 #### <a name="to-configure-and-start-graphics-diagnostics-on-your-device"></a>Pour configurer et démarrer Graphics Diagnostics sur votre appareil  
   
-1.  Sur le **plateformes Solution** liste déroulante, sélectionnez **ARM** afin que votre appareil ARM seront disponible en tant que cible de débogage distant.  
+1. Sur le **plateformes Solution** liste déroulante, sélectionnez **ARM** afin que votre appareil ARM seront disponible en tant que cible de débogage distant.  
   
-2.  Sur le **cible de débogage** liste déroulante, sélectionnez votre appareil ARM.  
+2. Sur le **cible de débogage** liste déroulante, sélectionnez votre appareil ARM.  
   
-3.  Dans le menu, choisissez **déboguer**, **Graphics**, **démarrer les Diagnostics**. (Clavier : Alt+F5)  
+3. Dans le menu, choisissez **déboguer**, **Graphics**, **démarrer les Diagnostics**. (Clavier : Alt+F5)  
   
 ## <a name="see-also"></a>Voir aussi  
  [Exécuter des applications de Store de Windows sur un ordinateur distant](../debugger/run-windows-store-apps-on-a-remote-machine.md)   

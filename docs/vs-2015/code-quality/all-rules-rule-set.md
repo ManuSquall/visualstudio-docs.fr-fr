@@ -9,18 +9,18 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e1b60c67cab2ed624d00b0c34ddcb01c213a3806
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 41757f4bf9054199584ead564edb3c2942877d5f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950052"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060024"
 ---
 # <a name="all-rules-rule-set"></a>Ensemble de règles de toutes les règles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L’ensemble de règles de toutes les règles contient toutes les règles pour le code natif et managé. L’ensemble de règles inclut toutes les règles qui sont décrites dans les rubriques suivantes :  
   
-1.  [Avertissements liés à l’analyse de code C/C++](../code-quality/code-analysis-for-c-cpp-warnings.md)  
+1. [Avertissements liés à l’analyse de code C/C++](../code-quality/code-analysis-for-c-cpp-warnings.md)  
   
-2.  [Analyse du code pour les avertissements liés au code managé](../code-quality/code-analysis-for-managed-code-warnings.md)
+2. [Analyse du code pour les avertissements liés au code managé](../code-quality/code-analysis-for-managed-code-warnings.md)

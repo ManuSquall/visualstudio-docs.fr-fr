@@ -21,12 +21,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 55ccb6ffd319f725fade42a6e8490f0b0dc22b0f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ece89b3e05e775b5aea50be3643653b258667935
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948691"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055104"
 ---
 # <a name="how-to-debug-inline-assembly-code"></a>Procédure : déboguer du code assembleur inline
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,9 +40,9 @@ REMARQUE]
   
 #### <a name="to-debug-inline-assembly-code"></a>Pour déboguer du code assembleur inline  
   
-1.  Utilisez la fenêtre **Code Machine** pour afficher les instructions assembleur.  
+1. Utilisez la fenêtre **Code Machine** pour afficher les instructions assembleur.  
   
-2.  Utilisez la fenêtre **Registres** pour afficher le contenu du registre.  
+2. Utilisez la fenêtre **Registres** pour afficher le contenu du registre.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité du débogueur](../debugger/debugger-security.md)   

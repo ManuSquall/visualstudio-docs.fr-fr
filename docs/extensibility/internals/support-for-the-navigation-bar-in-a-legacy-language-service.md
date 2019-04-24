@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdac288755ca02face6f3422e2da0c78629e2905
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: eccbf178b3515cd23695d899749beb478e942ff7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604029"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085926"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Prise en charge de la barre de navigation dans un service de langage hérité
 La barre de Navigation en haut de la vue de l’éditeur affiche les types et membres dans le fichier. Types sont affichés dans la liste déroulante gauche, et les membres sont affichés dans le droit de la liste déroulante. Lorsque l’utilisateur sélectionne un type, le signe insertion est placé sur la première ligne du type. Lorsque l’utilisateur sélectionne un membre, le signe insertion est placé sur la définition du membre. Les zones de liste déroulante sont mis à jour pour refléter l’emplacement actuel du signe insertion.
@@ -68,24 +68,24 @@ namespace TestLanguagePackage
 
   Une implémentation de la <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> méthode effectue généralement les étapes suivantes :
 
-1.  Obtenir la liste des déclarations actuelles pour le fichier source.
+1. Obtenir la liste des déclarations actuelles pour le fichier source.
 
      Il existe plusieurs façons d’alimenter les listes. Une approche consiste à créer une méthode personnalisée sur votre version de la <xref:Microsoft.VisualStudio.Package.LanguageService> classe qui appelle le <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> méthode avec un motif pour l’analyse personnalisée qui retourne une liste de toutes les déclarations. Une autre approche peut consister à appeler le <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> méthode directement à partir de la <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> méthode avec la raison de l’analyse personnalisée. Une troisième approche peut consister à mettre en cache les déclarations dans le <xref:Microsoft.VisualStudio.Package.AuthoringScope> classe retournée par la dernière opération d’analyse complète dans le <xref:Microsoft.VisualStudio.Package.LanguageService> classe et de le récupérer à partir de la <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> (méthode).
 
-2.  Remplir ou mettre à jour de la liste des types.
+2. Remplir ou mettre à jour de la liste des types.
 
      Le contenu de la liste des types peut mettre à jour lorsque la source a changé ou si vous avez choisi de modifier le style du texte des types selon la position du signe insertion actuel. Notez que cette position est passée à la <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> (méthode).
 
-3.  Déterminer le type à sélectionner dans la liste des types selon la position du signe insertion actuel.
+3. Déterminer le type à sélectionner dans la liste des types selon la position du signe insertion actuel.
 
      Vous pouvez rechercher les déclarations qui ont été obtenues à l’étape 1 pour rechercher le type qui définit la position du signe insertion actuel et puis rechercher la liste de types de ce type déterminer son index dans la liste des types.
 
-4.  Remplir ou mettre à jour de la liste des membres en fonction du type sélectionné.
+4. Remplir ou mettre à jour de la liste des membres en fonction du type sélectionné.
 
      La liste des membres reflète ce qui est actuellement affiché dans le **membres** liste déroulante. Le contenu de la liste des membres peut-être être mis à jour si la source a changé ou si vous affichez uniquement les membres du type sélectionné et le type sélectionné a changé. Si vous choisissez d’afficher tous les membres dans le fichier source, le style du texte de chaque membre dans la liste doit être mis à jour si le type sélectionné a changé.
 
-5.  Déterminer le membre à sélectionner dans la liste des membres selon la position du signe insertion actuel.
+5. Déterminer le membre à sélectionner dans la liste des membres selon la position du signe insertion actuel.
 
      Rechercher les déclarations qui ont été obtenues à l’étape 1 pour le membre qui contient la position du signe insertion actuel, puis recherchez la liste des membres de ce membre déterminer son index dans la liste des membres.
 
-6.  Retourner `true` si des modifications ont été apportées pour les listes ou les sélections dans les listes.
+6. Retourner `true` si des modifications ont été apportées pour les listes ou les sélections dans les listes.

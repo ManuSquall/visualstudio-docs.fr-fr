@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
 manager: jillfra
-ms.openlocfilehash: 6bde8ba3acd88936e482124f189fd35f7a1d6421
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 209f5956d77e714f7f663693f9ac22241d428480
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938555"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105060"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Marshaling des paramètres d’assembly PIA Visual Studio
 Les VSPackages sont écrits en code managé peut devoir appeler ou être appelé par du code COM non managé. En règle générale, les arguments de méthode sont transformées ou marshalés, automatiquement par le marshaleur d’interopérabilité. Cependant, parfois arguments ne peuvent pas être transformées de manière simple. Dans ce cas, les paramètres de prototype de méthode assembly d’interopérabilité sont utilisés pour faire correspondre les paramètres de la fonction COM aussi fidèlement que possible. Pour plus d’informations, consultez [Marshaling d’interopérabilité](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
@@ -28,11 +28,11 @@ Les VSPackages sont écrits en code managé peut devoir appeler ou être appelé
   
  La documentation de référence pour chaque méthode contient trois sections correspondantes :  
   
--   Le [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] prototype de fonction COM.  
+- Le [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] prototype de fonction COM.  
   
--   Le prototype de méthode d’assembly d’interopérabilité.  
+- Le prototype de méthode d’assembly d’interopérabilité.  
   
--   Une liste des paramètres COM et une brève description de chacun d’eux.  
+- Une liste des paramètres COM et une brève description de chacun d’eux.  
   
 ##### <a name="look-for-differences-between-the-two-prototypes"></a>Rechercher les différences entre les deux prototypes  
  La plupart des problèmes d’interopérabilité dérivent des incompatibilités entre la définition d’un type particulier dans une interface COM et la définition du même type dans le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] assemblys d’interopérabilité. Par exemple, considérez la différence dans la capacité à passer un `null` valeur dans un paramètre [out]. Vous devez rechercher les différences entre les deux prototypes et prendre en compte leurs conséquences pour les données transmises.  
@@ -79,17 +79,17 @@ else
 > [!NOTE]
 >  Les méthodes suivantes sont connus pour passer `IUnknown` des pointeurs d’objet en tant que type <xref:System.IntPtr>. Les gérer comme décrit dans cette section.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.CreateProject%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.CreateProject%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>  
   
 ### <a name="optional-out-parameters"></a>Facultatif de [paramètres out]  
  Recherchez les paramètres qui sont définis en tant que [out] type de données (`int`, `object`, et ainsi de suite) dans le modèle COM interface, mais qui sont définis en tant que tableaux du même type de données dans le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prototype de méthode d’assembly d’interopérabilité.  

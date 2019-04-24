@@ -10,86 +10,86 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85561ff823362941b09b52189c0187dc65997e23
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 085e5ae408155227c1d60e312b7e9623be2e3897
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716413"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064451"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>Procédure pas à pas : Ajouter des fonctionnalités à un éditeur personnalisé
 Après avoir créé un éditeur personnalisé, vous pouvez ajouter davantage de fonctionnalités à ce dernier.
 
 ## <a name="to-create-an-editor-for-a-vspackage"></a>Pour créer un éditeur pour un VSPackage
 
-1.  Créer un éditeur personnalisé en utilisant le modèle de projet de Package Visual Studio.
+1. Créer un éditeur personnalisé en utilisant le modèle de projet de Package Visual Studio.
 
      Pour plus d’informations, consultez [Procédure pas à pas : Créer un éditeur personnalisé](../extensibility/walkthrough-creating-a-custom-editor.md).
 
-2.  Décidez si vous souhaitez que votre éditeur pour prendre en charge un seul ou plusieurs vues.
+2. Décidez si vous souhaitez que votre éditeur pour prendre en charge un seul ou plusieurs vues.
 
      Un éditeur qui prend en charge la **nouvelle fenêtre** commande, ou a le mode formulaire et en mode code, nécessite des objets de données de document distinct et les objets de vue de document. Dans un éditeur qui prend en charge qu’une seule vue, l’objet de données de document et l’objet de vue de document peuvent être implémentés sur le même objet.
 
      Pour obtenir un exemple de plusieurs vues, consultez [prendre en charge plusieurs vues de document](../extensibility/supporting-multiple-document-views.md).
 
-3.  Implémenter une fabrique d’éditeur en configurant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interface.
+3. Implémenter une fabrique d’éditeur en configurant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interface.
 
      Pour plus d’informations, consultez [fabriques d’éditeur](../extensibility/editor-factories.md).
 
-4.  Décider si vous souhaitez que votre éditeur à utiliser l’activation sur place ou incorporation pour gérer la fenêtre des objets document vue simplifiée.
+4. Décider si vous souhaitez que votre éditeur à utiliser l’activation sur place ou incorporation pour gérer la fenêtre des objets document vue simplifiée.
 
      Une fenêtre d’éditeur incorporation simplifiée héberge une vue de document standard, pendant une fenêtre d’éditeur d’activation sur place héberge un contrôle ActiveX ou un autre objet active en tant que document vue. Pour plus d’informations, consultez [simplifié incorporation](../extensibility/simplified-embedding.md) et [In situ d’activation](../extensibility/in-place-activation.md).
 
-5.  Implémentez le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface pour gérer les commandes.
+5. Implémentez le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface pour gérer les commandes.
 
-6.  Fournir la persistance de document et de réponse aux modifications de fichier externe :
+6. Fournir la persistance de document et de réponse aux modifications de fichier externe :
 
-    1.  Pour conserver le fichier, vous devez implémenter <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> et <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> sur l’objet de données de document de votre éditeur.
+    1. Pour conserver le fichier, vous devez implémenter <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> et <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> sur l’objet de données de document de votre éditeur.
 
-    2.  Pour répondre aux modifications de fichier externe, implémentez <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl> sur l’objet de données de document de votre éditeur.
+    2. Pour répondre aux modifications de fichier externe, implémentez <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl> sur l’objet de données de document de votre éditeur.
 
         > [!NOTE]
         >  Appelez `QueryService` sur <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> pour obtenir un pointeur vers `IVsFileChangeEx`.
 
-7.  Coordonner les événements de modification de document avec contrôle de code source. Procédez comme suit :
+7. Coordonner les événements de modification de document avec contrôle de code source. Procédez comme suit :
 
-    1.  Obtenir un pointeur vers `IVsQueryEditQuerySave2` en appelant `QueryService` sur <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>.
+    1. Obtenir un pointeur vers `IVsQueryEditQuerySave2` en appelant `QueryService` sur <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave>.
 
-    2.  Lorsque le premier événement de modification se produit, appelez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> (méthode).
+    2. Lorsque le premier événement de modification se produit, appelez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> (méthode).
 
          Cette méthode invite l’utilisateur à extraire le fichier si elle n’est pas déjà extrait. Veillez à gérer une condition « fichier non extrait » pour éviter des erreurs.
 
-    3.  De même, avant d’enregistrer le fichier, appelez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A> (méthode).
+    3. De même, avant d’enregistrer le fichier, appelez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A> (méthode).
 
          Cette méthode invite l’utilisateur à enregistrer le fichier s’il n’a pas été enregistré ou si elle a changé depuis le dernier enregistrement.
 
-8.  Activer la **propriétés** fenêtre pour afficher les propriétés pour le texte sélectionné dans l’éditeur. Procédez comme suit :
+8. Activer la **propriétés** fenêtre pour afficher les propriétés pour le texte sélectionné dans l’éditeur. Procédez comme suit :
 
-    1.  Appelez <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> chaque sélection de texte temps change, en passant dans votre implémentation de <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>.
+    1. Appelez <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> chaque sélection de texte temps change, en passant dans votre implémentation de <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer>.
 
-    2.  Appelez `QueryService` sur <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> service pour obtenir un pointeur vers <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>.
+    2. Appelez `QueryService` sur <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> service pour obtenir un pointeur vers <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection>.
 
 9. Permettre aux utilisateurs de faire glisser des éléments entre l’éditeur et le **boîte à outils**, ou entre des éditeurs externes (tels que Microsoft Word) et le **boîte à outils**. Procédez comme suit :
 
-    1.  Implémentez `IDropTarget` sur votre éditeur pour alerter l’IDE que votre éditeur est une cible de dépôt.
+    1. Implémentez `IDropTarget` sur votre éditeur pour alerter l’IDE que votre éditeur est une cible de dépôt.
 
-    2.  Implémentez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser> interface sur la vue afin de votre éditeur peut activer et désactiver des éléments dans le **boîte à outils**.
+    2. Implémentez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxUser> interface sur la vue afin de votre éditeur peut activer et désactiver des éléments dans le **boîte à outils**.
 
-    3.  Implémentez <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.ResetDefaults%2A> et appelez `QueryService` sur <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox> service pour obtenir un pointeur vers le <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> interfaces.
+    3. Implémentez <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.ResetDefaults%2A> et appelez `QueryService` sur <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox> service pour obtenir un pointeur vers le <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox2> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox3> interfaces.
 
          Ces étapes permettent à votre VSPackage à ajouter de nouveaux éléments à la **boîte à outils**.
 
 10. Si vous décidez d’autres fonctionnalités facultatives pour votre éditeur.
 
-    -   Si vous souhaitez que votre éditeur pour prendre en charge les rechercher et remplacer des commandes, implémenter <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget>.
+    - Si vous souhaitez que votre éditeur pour prendre en charge les rechercher et remplacer des commandes, implémenter <xref:Microsoft.VisualStudio.TextManager.Interop.IVsFindTarget>.
 
-    -   Si vous souhaitez utiliser une fenêtre outil structure du document dans votre éditeur, implémenter `IVsDocOutlineProvider`.
+    - Si vous souhaitez utiliser une fenêtre outil structure du document dans votre éditeur, implémenter `IVsDocOutlineProvider`.
 
-    -   Si vous souhaitez utiliser une barre d’état dans votre éditeur, implémenter <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> et appelez `QueryService` pour <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> pour obtenir un pointeur vers `IVsStatusBar`.
+    - Si vous souhaitez utiliser une barre d’état dans votre éditeur, implémenter <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> et appelez `QueryService` pour <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> pour obtenir un pointeur vers `IVsStatusBar`.
 
          Par exemple, un éditeur peut afficher la ligne / informations sur les colonnes, le mode de sélection (diffuser en continu / zone) et le mode d’insertion (insert / /overstrike).
 
-    -   Si vous souhaitez que votre éditeur pour prendre en charge la `Undo` commande, la méthode recommandée consiste à utiliser le modèle de gestionnaire d’annulation OLE. Comme alternative, vous pouvez avoir le handle de l’éditeur le `Undo` commande directement.
+    - Si vous souhaitez que votre éditeur pour prendre en charge la `Undo` commande, la méthode recommandée consiste à utiliser le modèle de gestionnaire d’annulation OLE. Comme alternative, vous pouvez avoir le handle de l’éditeur le `Undo` commande directement.
 
 11. Créer un registre d’informations, y compris les GUID pour le VSPackage, les menus, l’éditeur et autres fonctionnalités.
 
@@ -148,9 +148,9 @@ Après avoir créé un éditeur personnalisé, vous pouvez ajouter davantage de 
 
 - Il existe deux emplacements un éditeur personnalisé peut exposer des objets automation :
 
-  -   `Document.Object`
+  - `Document.Object`
 
-  -   `Window.Object`
+  - `Window.Object`
 
 ## <a name="see-also"></a>Voir aussi
 - [Contribuer au modèle automation](../extensibility/internals/contributing-to-the-automation-model.md)

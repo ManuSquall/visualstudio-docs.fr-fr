@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d2959707048cb3223b6866c3c8aa4c04cc146077
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: eb56d2f9b6d2d5c08956d48f4f53a46305d9fd26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875448"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117927"
 ---
 # <a name="xml-schemas-and-data-in-document-level-customizations"></a>Schémas XML et des données dans les personnalisations au niveau du document
   **Important** les informations mentionnées dans cette rubrique concernant Microsoft Word sont présentée exclusivement pour le bénéfice et l’utilisation des individus et les organisations qui se trouvent en dehors des États-Unis et ses territoires ou qui utilisent ou développement les programmes qui s’exécutent sur des produits de Microsoft Word qui ont été concédés sous licence par Microsoft avant janvier 2010, lorsque Microsoft supprimé une implémentation de fonctionnalités spécifiques liés à XML personnalisé à partir de Microsoft Word. Ces informations concernant Microsoft Word ne peuvent pas être lues ou utilisées par les individus ou organisations dans les États-Unis ou dans ses territoires qui sont à l’aide d’ou de développer des programmes qui s’exécutent sur des produits de Microsoft Word qui ont été concédés sous licence par Microsoft après le 10 janvier 2010 ; ces produits ne comportent pas le même que les produits sous licence avant cette date ou acheté et concédés sous licence pour une utilisation en dehors des États-Unis.
@@ -40,16 +40,16 @@ ms.locfileid: "54875448"
 
  Il existe deux objets principaux :
 
--   Schéma XML (fichier XSD). Pour chaque schéma dans le classeur, Visual Studio ajoute un schéma au projet. Il peut s’agit d’un élément de projet avec une extension XSD dans **l’Explorateur de solutions**.
+- Schéma XML (fichier XSD). Pour chaque schéma dans le classeur, Visual Studio ajoute un schéma au projet. Il peut s’agit d’un élément de projet avec une extension XSD dans **l’Explorateur de solutions**.
 
--   Une classe <xref:System.Data.DataSet> typée. Cette classe est créée selon le schéma. Cette classe de jeu de données est visible dans **affichage de classes**.
+- Une classe <xref:System.Data.DataSet> typée. Cette classe est créée selon le schéma. Cette classe de jeu de données est visible dans **affichage de classes**.
 
 ## <a name="objects-created-when-schema-elements-are-mapped-to-excel-worksheets"></a>Objets créés lorsque des éléments de schéma sont mappés aux feuilles de calcul Excel
  Lorsque vous mappez un élément de schéma à partir de la **Source XML** volet de tâches à une feuille de calcul, Visual Studio crée plusieurs objets automatiquement et les ajoute à votre projet :
 
--   Contrôles. Pour chaque objet mappé dans le classeur, un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> contrôle (pour les éléments de schéma non répétitif) ou un <xref:Microsoft.Office.Tools.Excel.ListObject> contrôle (pour répéter des éléments de schéma) est créé dans le modèle de programmation. Le <xref:Microsoft.Office.Tools.Excel.ListObject> contrôle peut être supprimé uniquement en supprimant les mappages et les objets mappés du classeur. Pour plus d’informations sur les contrôles, consultez [éléments hôtes et héberger de vue d’ensemble des contrôles](../vsto/host-items-and-host-controls-overview.md).
+- Contrôles. Pour chaque objet mappé dans le classeur, un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> contrôle (pour les éléments de schéma non répétitif) ou un <xref:Microsoft.Office.Tools.Excel.ListObject> contrôle (pour répéter des éléments de schéma) est créé dans le modèle de programmation. Le <xref:Microsoft.Office.Tools.Excel.ListObject> contrôle peut être supprimé uniquement en supprimant les mappages et les objets mappés du classeur. Pour plus d’informations sur les contrôles, consultez [éléments hôtes et héberger de vue d’ensemble des contrôles](../vsto/host-items-and-host-controls-overview.md).
 
--   BindingSource. Lorsque vous créez un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> en mappant un élément de schéma non répétitif à la feuille de calcul, un <xref:System.Windows.Forms.BindingSource> est créé et le <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> contrôle est lié à la <xref:System.Windows.Forms.BindingSource>. Vous devez lier le <xref:System.Windows.Forms.BindingSource> à une instance de la source de données qui correspond au schéma mappé au document, telles qu’une instance de typée <xref:System.Data.DataSet> classe qui a été créé. Créer la liaison en définissant le <xref:System.Windows.Forms.BindingSource.DataSource%2A> et <xref:System.Windows.Forms.BindingSource.DataMember%2A> propriétés, qui sont exposées dans le **propriétés** fenêtre.
+- BindingSource. Lorsque vous créez un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> en mappant un élément de schéma non répétitif à la feuille de calcul, un <xref:System.Windows.Forms.BindingSource> est créé et le <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> contrôle est lié à la <xref:System.Windows.Forms.BindingSource>. Vous devez lier le <xref:System.Windows.Forms.BindingSource> à une instance de la source de données qui correspond au schéma mappé au document, telles qu’une instance de typée <xref:System.Data.DataSet> classe qui a été créé. Créer la liaison en définissant le <xref:System.Windows.Forms.BindingSource.DataSource%2A> et <xref:System.Windows.Forms.BindingSource.DataMember%2A> propriétés, qui sont exposées dans le **propriétés** fenêtre.
 
     > [!NOTE]
     >  Le <xref:System.Windows.Forms.BindingSource> n’est pas créé pour <xref:Microsoft.Office.Tools.Excel.ListObject> objets. Vous devez lier manuellement les <xref:Microsoft.Office.Tools.Excel.ListObject> à la source de données en définissant le <xref:System.Windows.Forms.BindingSource.DataSource%2A> et <xref:System.Windows.Forms.BindingSource.DataMember%2A> propriétés dans le **propriétés** fenêtre.

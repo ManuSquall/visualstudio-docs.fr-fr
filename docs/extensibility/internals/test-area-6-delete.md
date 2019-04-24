@@ -1,5 +1,5 @@
 ---
-title: 'Zone de test 6 : Delete | Microsoft Docs'
+title: 'Zone de test 6 : Delete | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f62b580b72f7910f8d5a688acc8df61361286c0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a1763e51a09ba797bd22c85ba998e1533aa18f97
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627920"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050758"
 ---
-# <a name="test-area-6-delete"></a>Zone de test 6 : Supprimer
+# <a name="test-area-6-delete"></a>Zone de test 6 : Supprimer
 Cette zone de test plug-in de contrôle de code source couvre les actions de suppression.
 
  Contrôle de code source répond pour supprimer des actions dans **l’Explorateur de solutions**.
@@ -36,13 +36,13 @@ Cette zone de test plug-in de contrôle de code source couvre les actions de sup
 ## <a name="expected-behavior"></a>Comportement attendu
  Le comportement attendu pour les cas de test dans la zone de test delete est :
 
--   Élément supprimé n’est plus visible dans **l’Explorateur de solutions**.
+- Élément supprimé n’est plus visible dans **l’Explorateur de solutions**.
 
--   Le parent du projet supprimé ou de l’élément est extrait en fonction des besoins (et éventuellement avec une invite de commandes.)
+- Le parent du projet supprimé ou de l’élément est extrait en fonction des besoins (et éventuellement avec une invite de commandes.)
 
--   Une fois que vous supprimez un checked out ou élément ajouté, il n’apparaît pas dans le **archivages en attente** fenêtre.
+- Une fois que vous supprimez un checked out ou élément ajouté, il n’apparaît pas dans le **archivages en attente** fenêtre.
 
--   L’élément existe dans le magasin de contrôle source, même après la suppression, toujours et doit être purgée manuellement.
+- L’élément existe dans le magasin de contrôle source, même après la suppression, toujours et doit être purgée manuellement.
 
 |Action|Étapes de test|Résultats attendus pour vérifier|
 |------------|----------------|--------------------------------|

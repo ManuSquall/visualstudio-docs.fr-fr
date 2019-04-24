@@ -14,12 +14,12 @@ caps.latest.revision: 364
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 18e5effdd2398ce3532c73c1d9f9941554b2043b
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
-ms.translationtype: MTE95
+ms.openlocfilehash: bd06e1b6eb74a6a356c085bdade2733e29d54023
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195162"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041833"
 ---
 # <a name="what39s-new-in-visual-studio-2015"></a>Nouveautés de Visual Studio 2015
 [!INCLUDE[vs2017banner](./includes/vs2017banner.md)]
@@ -123,15 +123,15 @@ Pour en savoir plus sur les nombreuses améliorations et nouvelles fonctionnalit
 ## <a name="cross-platform-debugging-support"></a>Prise en charge du débogage multiplateforme
  Vous pouvez utiliser Visual Studio pour créer et déboguer des applications mobiles natives qui s'exécutent sur des appareils Windows, iOS et Android. Utilisez l’ [émulateur Visual Studio pour Android](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/12/introducing-visual-studio-s-emulator-for-android.aspx), ou connectez un appareil et déboguez votre code directement dans Visual Studio.
 
--   **JavaScript / Cordova**. Utilisez [Visual Studio Tools pour Apache Cordova](http://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) pour créer des applications natives pour Windows, iOS et Android avec JavaScript.
+- **JavaScript / Cordova**. Utilisez [Visual Studio Tools pour Apache Cordova](http://msdn.microsoft.com/library/dn879821\(v=vs.140\).aspx) pour créer des applications natives pour Windows, iOS et Android avec JavaScript.
 
      [Déboguer votre application](http://msdn.microsoft.com/library/c2a4a1d4-a4e8-47ec-811f-ad207c54f4d1) dans la bibliothèque MSDN est la description détaillée de la prise en charge de Cordova de débogage Visual Studio.
 
--   **C# / Xamarin**. Utilisez [Xamarin](http://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) pour créer des applications natives pour Windows, iOS et Android dans Visual Studio avec le langage C#.
+- **C# / Xamarin**. Utilisez [Xamarin](http://msdn.microsoft.com/library/dn879698\(v=vs.140\).aspx) pour créer des applications natives pour Windows, iOS et Android dans Visual Studio avec le langage C#.
 
      Les articles[Debugging](http://developer.xamarin.com/guides/ios/deployment,_testing,_and_metrics/debugging_in_xamarin_ios/) (iOS) et [Debug on Device](http://developer.xamarin.com/guides/android/deployment,_testing,_and_metrics/debugging_with_xamarin_android/) des [guides du développeur Xamarin](http://developer.xamarin.com/guides) décrivent le débogage.
 
--   **C++ / Android**. Utilisez les modèles de [Visual C++ pour le développement mobile multiplateforme](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) , ainsi que les outils tiers, tels que [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) , pour créer des applications natives pour Windows et Android.
+- **C++ / Android**. Utilisez les modèles de [Visual C++ pour le développement mobile multiplateforme](cross-platform/visual-cpp-for-cross-platform-mobile-development.md) , ainsi que les outils tiers, tels que [Android NDK](https://developer.android.com/tools/sdk/ndk/index.html) , pour créer des applications natives pour Windows et Android.
 
 ## <a name="debugging-and-diagnostics"></a>Débogage et diagnostics
 
@@ -140,7 +140,7 @@ Pour plus d’informations sur les nouveautés introduite dans les diagnostics, 
 Voici une liste d'outils nouveaux ou améliorés qui effectuent différents types d'analyses et de diagnostics sur votre code :
 
 ### <a name="perftips"></a>Conseils sur les performances
- Les conseils pour les performances indiquent le temps d'exécution des méthodes durant le débogage, ce qui vous permet d'identifier rapidement les goulots d'étranglement, sans avoir à invoquer le profileur. Pour commencer, consultez [Conseils sur les performances : Performance Information at-a-glance while Debugging with Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
+ Les conseils pour les performances indiquent le temps d'exécution des méthodes durant le débogage, ce qui vous permet d'identifier rapidement les goulots d'étranglement, sans avoir à invoquer le profileur. Pour commencer, consultez [PerfTips : Informations de performances en un coup d’œil lors du débogage avec Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)
 
 ### <a name="error-list"></a>Liste d'erreurs
  La liste d'erreurs prend désormais en charge le filtrage sur n'importe quelle colonne. Elle affiche aussi une vue dynamique des erreurs, des avertissements et de l'analyse du code dans l'ensemble de votre solution C# ou Visual Basic, au fur et à mesure que vous tapez, même quand un changement de code produit des milliers d'avertissements. La nouvelle liste d'erreurs est compatible avec les usages existants. Pour plus d'informations, consultez [Error List Window](./ide/reference/error-list-window.md).
@@ -179,18 +179,18 @@ Voici une liste d'outils nouveaux ou améliorés qui effectuent différents type
 ### <a name="notification-hub"></a>Hub de notification
  L'interface utilisateur du hub de notification a été simplifiée pour faciliter des analyses rapides. Des types de notifications ont été ajoutés, qui concernent notamment des problèmes de performances, des problèmes de rendu et des défaillances. Vous pouvez aussi désormais indiquer à Visual Studio d'arrêter d'afficher une notification. Pour plus d’informations, consultez [Notifications de Visual Studio](./ide/visual-studio-notifications.md).
 
-### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens : découvrez ce qui est arrivé à votre code (éditions Enterprise et Professional uniquement)
+### <a name="codelens-find-what-happened-to-your-code-enterprise-and-professional-editions-only"></a>CodeLens : Trouver qu’est-il arrivé à votre code (éditions Enterprise et Professional uniquement)
  Ne perdez pas le fil : recherchez des informations relatives à votre code sans quitter l’éditeur. Vous pouvez examiner les modifications et autres éléments de l’historique pour les éléments de travail, bogues, révisions du code, etc. pour le code stocké dans Visual Studio Online (VSO) ou dans Team Foundation Server (TFS).
 
  Dans Visual Studio Enterprise et Visual Studio Professional, vous pouvez désormais effectuer les opérations suivantes :
 
 - Obtenir l'historique d'un fichier de code entier dans l'éditeur Visual Studio.
 
-   ![CodeLens : obtenir des détails sur le fichier de code](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
+   ![CodeLens : Obtenir des détails du fichier de code](./ide/media/codelensfilelevel.png "CodeLensFileLevel")
 
 - Consulter un graphique indiquant les personnes qui ont modifié votre code. Cette fonctionnalité vous permet de découvrir des modèles dans les modifications effectuées par votre équipe, et d’en évaluer l’impact.
 
-   ![CodeLens : voir l’historique des modifications du code sous forme de graphique](./ide/media/codelens.png "CodeLens")
+   ![CodeLens : Consultez l’historique des modifications du code sous forme de graphique](./ide/media/codelens.png "CodeLens")
 
 - Afficher rapidement la date de dernière modification de votre code.
 

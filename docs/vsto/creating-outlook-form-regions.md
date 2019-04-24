@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9d25325eb6f0fac952cbecff13cacde2d5354762
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ea3f72a26938a50cddbb622565173be603436ba3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621365"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092758"
 ---
 # <a name="create-outlook-form-regions"></a>Créer des zones de formulaire Outlook
   Vous pouvez utiliser des zones de formulaire pour personnaliser des formulaires Microsoft Office Outlook. Visual Studio fournit des outils avancés qui simplifient la conception, le développement et le débogage des zones de formulaire.
@@ -30,23 +30,23 @@ ms.locfileid: "56621365"
 
  Cette rubrique fournit les informations suivantes :
 
--   [Avantages de l’utilisation de zones de formulaire](#Enhance)
+- [Avantages de l’utilisation de zones de formulaire](#Enhance)
 
--   [Ajoutez une zone de formulaire Outlook à votre projet](#Adding)
+- [Ajoutez une zone de formulaire Outlook à votre projet](#Adding)
 
--   [Utiliser le Concepteur de zones de formulaire](#UsingFormRegionDesigner)
+- [Utiliser le Concepteur de zones de formulaire](#UsingFormRegionDesigner)
 
--   [Utiliser une zone de formulaire conçue dans Outlook](#UsingFormRegionDesignedOutlook)
+- [Utiliser une zone de formulaire conçue dans Outlook](#UsingFormRegionDesignedOutlook)
 
--   [Ajouter du code personnalisé à une zone de formulaire](#AddingCustomCode)
+- [Ajouter du code personnalisé à une zone de formulaire](#AddingCustomCode)
 
--   [Générez le projet](#Building)
+- [Générez le projet](#Building)
 
--   [Déboguer une zone de formulaire](#Debugging)
+- [Déboguer une zone de formulaire](#Debugging)
 
--   [Déployer une zone de formulaire](#Deploying)
+- [Déployer une zone de formulaire](#Deploying)
 
-##  <a name="Enhance"></a> Avantages de l’utilisation de zones de formulaire
+## <a name="Enhance"></a> Avantages de l’utilisation de zones de formulaire
  Les zones de formulaire offrent de nombreuses améliorations par rapport au développement de formulaires Outlook classiques :
 
 - personnalisation de la page par défaut de n'importe quel formulaire standard,
@@ -59,10 +59,10 @@ ms.locfileid: "56621365"
 
   Pour plus d’informations, consultez [personnaliser des pages et des zones de formulaire](/office/vba/outlook/Concepts/Forms/customizing-form-pages-and-form-regions).
 
-##  <a name="Adding"></a> Ajoutez une zone de formulaire Outlook à votre projet
- Vous pouvez utiliser la **nouvelle zone de formulaire Outlook** Assistant pour concevoir une nouvelle zone de formulaire ou importer une zone de formulaire conçue dans Outlook. En outre, si vous disposez d’une zone de formulaire que vous avez utilisée dans un autre projet de complément VSTO Outlook, vous pouvez réutiliser votre zone de formulaire existante.
+## <a name="Adding"></a> Ajoutez une zone de formulaire Outlook à votre projet
+ Vous pouvez utiliser la **nouvelle zone de formulaire Outlook** Assistant pour concevoir une nouvelle zone de formulaire ou importer une zone de formulaire conçue dans Outlook. En outre, si vous disposez d'une zone de formulaire que vous avez utilisée dans un autre projet de complément VSTO Outlook, vous pouvez réutiliser votre zone de formulaire existante.
 
-###  <a name="CreatingFormRegion"></a> Créer une nouvelle zone de formulaire à l’aide de l’Assistant
+### <a name="CreatingFormRegion"></a> Créer une nouvelle zone de formulaire à l’aide de l’Assistant
  Pour créer une zone de formulaire, ajoutez un **zone de formulaire Outlook** élément à un projet de complément Outlook VSTO. Cette opération démarre le **nouvelle zone de formulaire Outlook** Assistant.
 
  Utilisez cet Assistant pour indiquer si vous voulez concevoir une nouvelle zone de formulaire ou importer une zone de formulaire conçue dans Outlook. Pour plus d’informations sur la conception d’une zone de formulaire, consultez [utiliser le Concepteur de zones de formulaire](#UsingFormRegionDesigner). Pour plus d’informations sur l’utilisation d’une zone de formulaire conçue dans Outlook, consultez [importer une zone de formulaire conçue dans Outlook](#UsingFormRegionDesignedOutlook).
@@ -83,11 +83,11 @@ ms.locfileid: "56621365"
 #### <a name="form-region-files"></a>Fichiers de zone de formulaire
  Lorsque vous terminez la **nouvelle zone de formulaire Outlook** Assistant, Visual Studio ajoute automatiquement les fichiers suivants à votre projet :
 
--   Un fichier de code de zone de formulaire. Ce fichier porte le nom que vous spécifiez pour le **zone de formulaire Outlook** d’élément dans le **ajouter un nouvel élément** boîte de dialogue. Ajoutez à ce fichier du code pour gérer les événements de zone de formulaire.
+- Un fichier de code de zone de formulaire. Ce fichier porte le nom que vous spécifiez pour le **zone de formulaire Outlook** d’élément dans le **ajouter un nouvel élément** boîte de dialogue. Ajoutez à ce fichier du code pour gérer les événements de zone de formulaire.
 
--   Un fichier de code du Concepteur de zones de formulaire. Ce fichier contient le code généré par le Concepteur de zones de formulaire et ne doit pas être modifié directement.
+- Un fichier de code du Concepteur de zones de formulaire. Ce fichier contient le code généré par le Concepteur de zones de formulaire et ne doit pas être modifié directement.
 
--   Un stockage de formulaire Outlook (*.ofs*) fichier.
+- Un stockage de formulaire Outlook (*.ofs*) fichier.
 
     > [!NOTE]
     >  Ce fichier est ajouté uniquement au projet si vous importez une zone de formulaire conçue dans Outlook.
@@ -101,12 +101,12 @@ ms.locfileid: "56621365"
 
  La plus grande partie de la classe de fabrique de zones de formulaire est implémentée dans le fichier du Concepteur de zones de formulaire. Toutefois, le gestionnaire d'événements `FormRegionInitializing` est exposé dans le fichier de code de la zone de formulaire. Vous pouvez utiliser ce gestionnaire d'événements pour spécifier si Outlook doit afficher la zone de formulaire. Pour plus d’informations, consultez [gérer les événements de zone de formulaire](#HandlingFormRegionEvents).
 
-###  <a name="AddingExistingFormRegion"></a> Ajoutez une zone de formulaire existante à votre projet
+### <a name="AddingExistingFormRegion"></a> Ajoutez une zone de formulaire existante à votre projet
  Si vous disposez d'une zone de formulaire Outlook que vous avez utilisée dans un autre projet Outlook, vous pouvez la réutiliser dans votre projet de complément VSTO Outlook actuel à l'aide de la boîte de dialogue **Ajouter un élément existant** .
 
  La zone de formulaire existante doit avoir un fichier de code (*.vb* ou *.cs*) ; vous ne pouvez pas ajouter de stockage de formulaire Outlook (*.ofs*) fichiers à l’aide de la **ajouter un élément existant** boîte de dialogue. Toutefois, vous pouvez créer une nouvelle zone de formulaire en important un fichier de stockage de formulaire Outlook. Pour plus d'informations, voir [Procédure : Ajouter une zone de formulaire à un projet de complément Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).
 
-##  <a name="UsingFormRegionDesigner"></a> Utiliser le Concepteur de zones de formulaire
+## <a name="UsingFormRegionDesigner"></a> Utiliser le Concepteur de zones de formulaire
  Le Concepteur de zones de formulaire vous aide à concevoir la disposition et l'apparence d'une zone de formulaire. Vous pouvez faire glisser des contrôles managés vers l’aire du concepteur, double-cliquez sur les contrôles pour ouvrir des gestionnaires d’événements et définir les propriétés dans le **propriétés** fenêtre.
 
 > [!NOTE]
@@ -124,7 +124,7 @@ ms.locfileid: "56621365"
 
   Le Concepteur de zones de formulaire prend en charge uniquement les contrôles managés. Vous ne pouvez pas ajouter de contrôles Outlook natifs.
 
-##  <a name="UsingFormRegionDesignedOutlook"></a> Importer une zone de formulaire conçue dans Outlook
+## <a name="UsingFormRegionDesignedOutlook"></a> Importer une zone de formulaire conçue dans Outlook
  Quand vous concevez une zone de formulaire dans Outlook, vous pouvez lui ajouter des contrôles Outlook natifs. Les contrôles Outlook natifs vous permettent de créer une liaison avec les données Outlook au moment du design. Toutefois, vous ne pouvez pas utiliser ensuite le Concepteur de zones de formulaire pour ajouter des contrôles managés ou modifier la conception de la zone de formulaire.
 
  Vous pouvez importer des zones de formulaire dans un projet de complément VSTO Outlook à l’aide de la **nouvelle zone de formulaire Outlook** Assistant. Sur le **Choisissez comment vous souhaitez créer la zone de formulaire** , sélectionnez **importer un fichier de stockage de formulaire Outlook (.ofs)**. Vous pouvez ensuite accéder à l’emplacement d’un fichier de stockage de formulaire Outlook (*.ofs*) fichier. (Outlook enregistre les zones de formulaire en tant que *.ofs* fichiers.)
@@ -143,12 +143,12 @@ ms.locfileid: "56621365"
 ### <a name="update-an-imported-form-regions-design"></a>Mettre à jour de la conception d’une zone formulaire importée
  Vous pouvez ajouter, supprimer ou modifier des contrôles dans la zone de formulaire. Avant cela, sauvegardez tout le code que vous avez ajouté au fichier de code de la zone de formulaire. Ensuite, ouvrir le *.ofs* fichier dans Outlook, modifiez la zone de formulaire, puis enregistrez les modifications. Utilisez le **nouvelle zone de formulaire Outlook** Assistant pour importer le texte modifié *.ofs* fichier. Vous pouvez ensuite coller votre code dans le fichier de code de la nouvelle zone de formulaire.
 
-##  <a name="AddingCustomCode"></a> Ajouter du code personnalisé à une zone de formulaire
+## <a name="AddingCustomCode"></a> Ajouter du code personnalisé à une zone de formulaire
  L'espace de noms <xref:Microsoft.Office.Tools.Outlook> vous donne accès aux classes qui représentent la zone de formulaire, à l'élément Outlook qui affiche la zone de formulaire et à d'autres éléments utiles. Le **zone de formulaire Outlook** élément ajoute automatiquement une référence à cet assembly dans le projet et insère le texte approprié **à l’aide de** ou **importations** instruction en haut de la fichier de code de zone de formulaire.
 
  Vous pouvez utiliser des classes, des méthodes et des propriétés dans l’espace de noms `Microsoft.Office.Interop.Outlook` pour accomplir la plupart de vos tâches de programmation Outlook. Pour plus d’informations sur le modèle objet Outlook, consultez [vue d’ensemble du modèle d’objet Outlook](../vsto/outlook-object-model-overview.md). Pour obtenir des exemples de tâches courantes qui utilisent le modèle objet Outlook, consultez [solutions Outlook](../vsto/outlook-solutions.md).
 
-###  <a name="HandlingFormRegionEvents"></a> Gérer les événements de zone de formulaire
+### <a name="HandlingFormRegionEvents"></a> Gérer les événements de zone de formulaire
  Le **zone de formulaire Outlook** élément ajoute automatiquement les gestionnaires de trois événements suivants au fichier de code de la zone de formulaire.
 
 |Événement|Description|
@@ -157,7 +157,7 @@ ms.locfileid: "56621365"
 |FormRegionShowing|Se produit après la création d'une instance de la zone de formulaire, mais avant l'affichage de la zone de formulaire.|
 |FormRegionClosed|Se produit avant la fermeture de la zone de formulaire.|
 
-##  <a name="Building"></a> Générez le projet
+## <a name="Building"></a> Générez le projet
  Quand vous générez un projet de complément VSTO Outlook qui contient une zone de formulaire, Visual Studio ajoute les informations suivantes dans le Registre :
 
 - une clé pour chaque classe de message associée à une ou plusieurs zones de formulaire,
@@ -166,13 +166,13 @@ ms.locfileid: "56621365"
 
   Outlook utilise ces informations pour charger les zones de formulaire.
 
-##  <a name="Debugging"></a> Déboguer une zone de formulaire
+## <a name="Debugging"></a> Déboguer une zone de formulaire
  Pour déboguer un complément VSTO Outlook contenant une zone de formulaire, procédez comme pour tout autre projet [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Quand vous démarrez le débogueur [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], Visual Studio démarre automatiquement Outlook.
 
  Pour afficher la zone de formulaire, vous devez ouvrir l'élément Outlook approprié. Par exemple, si une zone de formulaire adjacente est ajoutée au bas d'un élément de messagerie, ouvrez un élément de messagerie.
 
-##  <a name="Deploying"></a> Déployer une zone de formulaire
- Les zones de formulaire sont déployées automatiquement avec le complément VSTO Outlook associé. Il est donc inutile d’exécuter des tâches spéciales pour déployer une zone de formulaire. Pour plus d’informations sur le déploiement des Compléments VSTO, consultez [déployer une solution Office](../vsto/deploying-an-office-solution.md).
+## <a name="Deploying"></a> Déployer une zone de formulaire
+ Les zones de formulaire sont déployées automatiquement avec le complément VSTO Outlook associé. Il est donc inutile d'exécuter des tâches spéciales pour déployer une zone de formulaire. Pour plus d’informations sur le déploiement des Compléments VSTO, consultez [déployer une solution Office](../vsto/deploying-an-office-solution.md).
 
 ## <a name="related-topics"></a>Rubriques connexes
 

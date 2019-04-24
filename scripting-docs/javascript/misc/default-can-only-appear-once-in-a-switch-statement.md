@@ -14,19 +14,19 @@ ms.assetid: a94100f4-6ee5-4759-b635-9d309e47111e
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a5d31a74900e8eee5daa97bb7f9af5146b237e04
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 24162efcc720d9c0073f8a5799c6278b8d3c8c62
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842180"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107825"
 ---
 # <a name="default-can-only-appear-once-in-a-switch-statement"></a>'default' ne peut apparaître qu'une fois dans une instruction 'switch'
 Vous avez tenté d’utiliser le **par défaut** instruction plusieurs fois dans une instruction switch. Le cas par défaut est toujours la dernière instruction case dans une instruction switch (c’est le cas de passage).  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
--   Supprimez les supplémentaire **par défaut** cas les instructions à partir de votre `switch` instruction (utilisez à la plupart des instruction case par défaut dans votre instruction switch).  
+- Supprimez les supplémentaire **par défaut** cas les instructions à partir de votre `switch` instruction (utilisez à la plupart des instruction case par défaut dans votre instruction switch).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Instruction switch](../../javascript/reference/switch-statement-javascript.md)   

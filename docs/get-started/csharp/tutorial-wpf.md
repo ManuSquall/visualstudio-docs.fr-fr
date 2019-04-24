@@ -2,7 +2,8 @@
 title: 'Tutoriel : Application Hello World avec WPF (Windows Presentation Foundation) en C#'
 description: Créez une application de bureau Windows .NET simple en C# avec Visual Studio à l’aide du framework d’interface utilisateur WPF (Windows Presentation Foundation).
 ms.custom: seodec18, get-started
-ms.date: 03/14/2019
+ms.date: 03/28/2019
+ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
 dev_langs:
@@ -13,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 173f2320b0117d31cbd3d0b999f2e24c40a5860b
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 706b365834e9e0b96e885cdae9ff25f1f70d1e76
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325186"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856873"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>Tutoriel : Créer une application simple en C\#
 
@@ -28,7 +29,7 @@ Avec ce didacticiel, vous allez vous familiariser avec la plupart des outils, bo
 Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) pour l’installer gratuitement.
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) pour l’installer gratuitement.
+Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) pour l’installer gratuitement.
 ::: moniker-end
 
 ## <a name="configure-the-ide"></a>Configurer l'IDE
@@ -47,7 +48,7 @@ Après le démarrage de Visual Studio, vous voyez les fenêtres Outil, les menus
 
 ::: moniker range=">=vs-2019"
 
-Quand vous lancez Visual Studio, la fenêtre de démarrage s’ouvre en premier. Sélectionnez **Continuer sans code** pour ouvrir l’environnement de développement. Vous allez voir les fenêtres Outils, les menus et barres d’outils ainsi que l’espace de la fenêtre principale. Les fenêtres Outil sont ancrées sur les côtés gauche et droit de la fenêtre d'application. **Lancement rapide**, la barre de menus et la barre d'outils standard sont situés en haut. Quand vous chargez une solution ou un projet, les éditeurs et les concepteurs apparaissent dans l’espace central de la fenêtre d’application. Quand vous développez une application, vous passez la majeure partie de votre temps dans cette zone centrale.
+Quand vous lancez Visual Studio, la fenêtre de démarrage s’ouvre en premier. Sélectionnez **Continuer sans code** pour ouvrir l’environnement de développement. Vous allez voir les fenêtres Outils, les menus et barres d’outils ainsi que l’espace de la fenêtre principale. Les fenêtres Outils sont ancrées sur les côtés gauche et droit de la fenêtre d’application. Une zone de recherche, la barre de menus et la barre d’outils standard sont situées en haut. Quand vous chargez une solution ou un projet, les éditeurs et les concepteurs apparaissent dans l’espace central de la fenêtre d’application. Quand vous développez une application, vous passez la majeure partie de votre temps dans cette zone centrale.
 
 ::: moniker-end
 
@@ -55,41 +56,54 @@ Quand vous lancez Visual Studio, la fenêtre de démarrage s’ouvre en premier.
 
 Lorsque vous créez une application dans Visual Studio, vous créez d'abord un projet et une solution. Pour cet exemple, vous allez créer un projet WPF (Windows Presentation Foundation).
 
+::: moniker range="vs-2017"
+
 1. Créer un nouveau projet. Dans la barre de menus, sélectionnez **Fichier** > **Nouveau** > **Projet**.
 
-     ::: moniker range="vs-2017"
      ![Dans la barre de menus, choisissez Fichier, Nouveau, Projet](../media/exploreide-filenewproject.png)
-     ::: moniker-end
-     ::: moniker range=">=vs-2019"
-     [Dans la barre de menus, choisissez Fichier, Nouveau, Projet](../media/vs-2019/exploreide-filenewproject-vs2019.png)
-     ::: moniker-end
 
-::: moniker range="vs-2017"
-2. Dans la boîte de dialogue**Nouveau projet**, sélectionnez la catégorie **Installé** > **Visual C#** > **Bureau Windows**, puis sélectionnez le modèle **Application WPF (.NET Framework)**. Nommez le projet **HelloWPFApp** et sélectionnez **OK**.
+1. Dans la boîte de dialogue**Nouveau projet**, sélectionnez la catégorie **Installé** > **Visual C#** > **Bureau Windows**, puis sélectionnez le modèle **Application WPF (.NET Framework)**. Nommez le projet **HelloWPFApp** et sélectionnez **OK**.
 
      ![Modèle Application WPF dans la boîte de dialogue Nouveau projet de Visual Studio](media/exploreide-newprojectcsharp.png)
-::: moniker-end
-::: moniker range=">=vs-2019"
-2. Sur l’écran **Créer un projet**, recherchez « WPF », choisissez **Application WPF (.NET Framework)**, puis choisissez **Suivant**.
-
-   ![Modèle Application WPF dans la boîte de dialogue Nouveau projet de Visual Studio](media/vs-2019/exploreide-newprojectcsharp-vs2019.png)
-
-3. Sur l’écran suivant, nommez le projet **HelloWPFApp** et choisissez **Créer**.
-::: moniker-end
 
 Visual Studio crée la solution et le projet HelloWPFApp, et affiche les différents fichiers dans **l’Explorateur de solutions**. Le **Concepteur WPF** affiche une vue Design et une vue XAML pour *MainWindow.xaml* dans une vue fractionnée. Vous pouvez faire glisser le séparateur pour afficher une partie plus ou moins grande de chacune des vues. Vous pouvez choisir d'afficher uniquement le mode visuel ou uniquement le mode XAML. Les éléments suivants apparaissent dans l' **Explorateur de solutions**:
 
-::: moniker range="vs-2017"
 ![Explorateur de solutions avec fichiers HelloWPFApp chargés](../media/exploreide-hellowpfappfiles.png)
-::: moniker-end
-::: moniker range=">=vs-2019"
-![Explorateur de solutions avec fichiers HelloWPFApp chargés](../media/vs-2019/exploreide-hellowpfappfiles.png)
-::: moniker-end
 
 > [!NOTE]
 > Pour plus d’informations sur XAML (Extensible Application Markup Language), voir la page [Vue d’ensemble de XAML pour WPF](/dotnet/framework/wpf/advanced/xaml-overview-wpf).
 
 Après avoir créé le projet, vous pouvez le personnaliser. Dans la fenêtre **Propriétés** (disponible dans le menu **Affichage** ), vous pouvez afficher et modifier les options des éléments du projet, des contrôles et des autres éléments d'une application.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Ouvrez Visual Studio 2019.
+
+1. Dans la fenêtre de démarrage, choisissez **Créer un projet**.
+
+   ![Afficher la fenêtre « Créer un projet »](../../get-started/media/vs-2019/start-window-create-new-project.png)
+
+
+2. Sur l’écran **Créer un projet**, recherchez « WPF », choisissez **Application WPF (.NET Framework)**, puis choisissez **Suivant**.
+
+   ![Modèle Application WPF dans la boîte de dialogue Créer un projet](media/vs-2019/exploreide-newprojectcsharp-vs2019.png)
+
+3. Sur l’écran suivant, nommez le projet **HelloWPFApp** et choisissez **Créer**.
+
+   ![Dans la fenêtre Configurer votre nouveau projet, nommez votre projet « HelloWPFApp ».](./media/vs-2019/exploreide-nameproject.png)
+
+Visual Studio crée la solution et le projet HelloWPFApp, et affiche les différents fichiers dans **l’Explorateur de solutions**. Le **Concepteur WPF** affiche une vue Design et une vue XAML pour *MainWindow.xaml* dans une vue fractionnée. Vous pouvez faire glisser le séparateur pour afficher une partie plus ou moins grande de chacune des vues. Vous pouvez choisir d'afficher uniquement le mode visuel ou uniquement le mode XAML. Les éléments suivants apparaissent dans l' **Explorateur de solutions**:
+
+![Explorateur de solutions avec fichiers HelloWPFApp chargés](../media/vs-2019/exploreide-hellowpfappfiles.png)
+
+> [!NOTE]
+> Pour plus d’informations sur XAML (Extensible Application Markup Language), voir la page [Vue d’ensemble de XAML pour WPF](/dotnet/framework/wpf/advanced/xaml-overview-wpf).
+
+Après avoir créé le projet, vous pouvez le personnaliser. Pour cela, choisissez **Fenêtre Propriétés** dans le menu **Affichage**. Ensuite, vous pouvez afficher et changer les options des éléments du projet, des contrôles et d’autres éléments d’une application.
+
+::: moniker-end
 
 ### <a name="change-the-name-of-mainwindowxaml"></a>Changer le nom de MainWindow.xaml
 
@@ -109,7 +123,7 @@ Nous allons ajouter trois types de contrôles à cette application : un contrôl
 
 ### <a name="add-a-textblock-control"></a>Pour ajouter un contrôle TextBlock
 
-1. Appuyez sur **Ctrl**+**Q** pour appeler **Lancement rapide** et tapez **Boîte à outils**. Choisissez **Affichage > Boîte à outils** dans la liste des résultats.
+1. Entrez **Ctrl**+**Q** pour activer la zone de recherche et tapez **Boîte à outils**. Choisissez **Affichage > Boîte à outils** dans la liste des résultats.
 
 2. Dans la fenêtre **Boîte à outils**, développez le nœud **Contrôles WPF communs** pour afficher le contrôle TextBlock.
 

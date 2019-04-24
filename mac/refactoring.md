@@ -1,17 +1,17 @@
 ---
 title: Refactorisation du code
-description: La réorganisation du code dans Visual Studio pour Mac est simplifiée via l’utilisation de l’analyse du code source.
+description: Affinage du code avec Visual Studio pour Mac et des actions rapides.
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 03/29/2019
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
-ms.openlocfilehash: d7df01e2d2c6e4acb347b40cb82a04bee9394fe1
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 48e290fddd1c4b7c95ac5e76cb6cf5908247e6f6
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335387"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856513"
 ---
 # <a name="refactoring"></a>Refactorisation
 
@@ -23,25 +23,45 @@ L’intégration de Visual Studio pour Mac à Roslyn, la plateforme de compilate
 
 ## <a name="renaming"></a>Renommage
 
-La commande de refactorisation *Renommer* peut être utilisée sur n’importe quel identificateur du code (par exemple un nom de classe, un nom de propriété, etc.) pour rechercher toutes les occurrences de cet identificateur et les changer. Pour renommer un symbole, cliquez avec le bouton droit sur celui-ci et choisissez **Refactoriser > Renommer**, ou la combinaison de touches **Cmd+R** :
+La commande de refactorisation *Renommer* peut être utilisée sur n’importe quel identificateur du code (par exemple un nom de classe, un nom de propriété, etc.) pour rechercher toutes les occurrences de cet identificateur et les changer. Pour renommer un symbole, cliquez dessus avec le bouton droit, puis choisissez **Renommer...**, ou utilisez la combinaison de touches **Cmd (⌘) + R** :
 
 ![Élément de menu Renommer](media/refactoring-renaming1.png)
 
-Ceci met en évidence le symbole et toutes les références à celui-ci. Quand vous commencez à taper un nouveau nom, il change automatiquement toutes les références dans votre code. Vous pouvez indiquer que le renommage a été effectué en appuyant sur **Entrée** :
+Ceci met en évidence le symbole et toutes les références à celui-ci. Quand vous commencez à taper un nouveau nom, il change automatiquement toutes les références figurant dans votre code. Vous pouvez valider vos changements en appuyant sur **Entrée** :
 
 ![Renommage et identificateur](media/refactoring-renaming2.png)
 
-## <a name="context-actions"></a>Actions contextuelles
+## <a name="quick-actions"></a>Actions rapides
 
-Les actions contextuelles vous permettent d’inspecter le code C# et de voir toutes les options de refactorisation possibles.
+Les actions rapides vous permettent de refactoriser, générer ou modifier facilement le code en une seule action.
 
-Les éléments contextuels **Résoudre** et **Refactoriser** sont combinés en un seul élément *Correction rapide...* qui vous propose toutes les actions contextuelles disponibles :
+Les actions rapides peuvent servir à :
+
+* Appliquer un correctif de code en cas de violation de règle de l’analyseur de code
+* Supprimer une violation de règle de l’analyseur de code
+* Appliquer une refactorisation (par exemple, rendre inline une variable temporaire)
+* Générer du code (par exemple, introduire une variable locale)
+
+Les actions rapides peuvent être appliquées en utilisant les icônes en forme d’ampoule ![icône en forme d’ampoule](media/quick-actions-light-bulb-icon.png) ou de tournevis ![icône en forme de tournevis](media/quick-actions-screwdriver-icon.png), ou en appuyant sur **Option (⌥)**+**Entrée** quand le curseur se trouve sur une ligne de code pour laquelle une action est disponible. Vous voyez une ampoule d’erreur ![icône en forme d’ampoule d’erreur](media/quick-actions-error-light-bulb-icon.png) s’il existe une ligne ondulée rouge indiquant une erreur, pour laquelle Visual Studio met à disposition un correctif.
+
+Des éditeurs tiers peuvent fournir des diagnostics et des suggestions personnalisés pour n’importe quel langage, par exemple dans le cadre d’un Kit de développement logiciel (SDK). Dans ce cas, les ampoules Visual Studio s’allument en fonction des règles établies.
+
+### <a name="quick-action-icons"></a>Icônes d’actions rapides
+L’icône qui s’affiche quand une action rapide est disponible donne une indication du type de correctif ou de refactorisation disponible. L’icône en forme de *tournevis* ![icône en forme de tournevis](media/quick-actions-screwdriver-icon.png) indique simplement que des actions sont disponibles pour modifier le code, mais vous ne devez pas nécessairement les utiliser. L’icône en forme *d’ampoule jaune* ![icône en forme d’ampoule](media/quick-actions-light-bulb-icon.png) indique qu’il existe des actions disponibles que vous *devez* effectuer pour améliorer votre code. L’icône en forme *d’ampoule d’erreur* ![icône en forme d’ampoule d’erreur](media/quick-actions-error-light-bulb-icon.png) indique qu’une action est disponible pour résoudre une erreur dans votre code.
+
+### <a name="to-see-a-light-bulb-or-screwdriver"></a>Pour afficher une ampoule ou un tournevis
+
+- Si un correctif est disponible, les ampoules apparaissent spontanément quand vous placez le pointeur de la souris à l’emplacement d’une erreur.
+
+   ![Ampoule avec pointage de la souris](media/refactoring-lightbulb-hover.png)
+
+- Les ampoules et tournevis apparaissent dans la marge de gauche de l’éditeur quand vous déplacez le signe insertion dans une ligne de code pour lequel une action rapide est disponible.
+
+- Appuyez sur **Option (⌥)**+**Entrée** n’importe où sur une ligne pour voir la liste des actions rapides et refactorisations disponibles.
 
 ![Afficher les éléments contextuels](media/refactoring-context-action.png)
 
 En passant le pointeur de la souris sur les actions contextuelles, vous obtenez un aperçu de ce qui est ajouté ou supprimé dans votre code.
-
-Vous pouvez aussi appuyer sur **Option+Entrée** n’importe où dans votre code :
 
 ![Option Entrer les éléments contextuels](media/refactoring-image2a.png)
 
@@ -53,47 +73,9 @@ Il existe plus de 100 actions possibles qui peuvent être suggérées, qui sont
 
 ![Actions de l’analyse du code source C#](media/refactoring-image3a.png)
 
-### <a name="common-context-actions"></a>Actions contextuelles courantes
+### <a name="common-quick-actions"></a>Actions rapides courantes
 
-Certaines des actions contextuelles les plus couramment utilisées sont expliquées ci-dessous.
-
-#### <a name="extract-method"></a>Extraire la méthode
-
-L’opération de refactorisation Extraire la méthode vous permet de créer une nouvelle méthode en extrayant une sélection de code dans un membre existant. Cette action effectue deux opérations :
-
-* Elle crée une méthode qui contient le code sélectionné.
-* Elle appelle la nouvelle méthode là où se trouvait le code sélectionné.
-
-##### <a name="example"></a>Exemple
-
-1. Ajoutez le code suivant :
-
-```csharp
-    class MainClass
-    {
-
-        double CalculatePyramidVolume(double baseArea, double height)
-        {
-
-            double volume = (baseArea * height) / 3;
-
-            return volume;
-        }
-    }
-```
-
-2. Mettez en surbrillance la ligne `double volume = (baseArea * height) / 3;`, cliquez avec le bouton droit sur celle-ci et sélectionnez **Refactoriser > Extraire la méthode**.
-
-3. Utilisez les touches de direction pour sélectionner l’emplacement de la nouvelle méthode dans votre code.
-
-#### <a name="encapsulate-field"></a>Encapsuler le champ
-
-L’opération Encapsuler le champ vous permet de créer une propriété à partir d’un champ existant et met à jour votre code pour référencer la propriété nouvellement créée. En créant une propriété qui encapsule votre champ, vous empêchez un accès direct à votre champ public, ce qui signifie que qu’autres objets ne peuvent pas le modifier.
-
-Cette action effectue les opérations suivantes :
-
-* Elle change le modificateur d’accès en privé.
-* Elle génère une méthode getter et une méthode setter pour le champ (sauf si le champ est en lecture seule, auquel cas elle crée seulement une méthode getter).
+Vous pouvez en apprendre plus sur les actions rapides courantes dans l’article [Actions rapides courantes](/visualstudio/ide/common-quick-actions).
 
 ## <a name="source-analysis"></a>Analyse du code source
 

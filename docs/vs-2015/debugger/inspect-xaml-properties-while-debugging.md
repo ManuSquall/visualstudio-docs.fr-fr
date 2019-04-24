@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 010f9b7b0d77bca8bd264ab8a3561743c616dc1f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 52d978472f057359cb2b1e0375f2d7ba524d1925
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950755"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101429"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Inspecter les propriétés XAML en phase de débogage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,10 +103,10 @@ private void button_Click(object sender, RoutedEventArgs e)
 ## <a name="using-xaml-tools-with-running-applications"></a>Utilisation des outils XAML avec les applications en cours d'exécution  
  Vous pouvez utiliser ces outils XAML même quand vous ne disposez pas du code source. Quand vous effectuez l’attachement à une application XAML en cours d’exécution, vous pouvez utiliser l’**arborescence d’éléments visuels en direct** également sur les éléments d’interface utilisateur de cette application. En voici un exemple qui utilise la même application de test WPF que précédemment.  
   
-1.  Démarrez l’application **TestXaml** dans la configuration Release. Vous ne pouvez pas attacher à un processus qui s’exécute dans une configuration **Debug**.  
+1. Démarrez l’application **TestXaml** dans la configuration Release. Vous ne pouvez pas attacher à un processus qui s’exécute dans une configuration **Debug**.  
   
-2.  Ouvrez une deuxième instance de Visual Studio et cliquez sur **déboguer / attacher au processus**. Recherchez **TestXaml.exe** dans la liste des processus disponibles, puis cliquez sur **Attacher**.  
+2. Ouvrez une deuxième instance de Visual Studio et cliquez sur **déboguer / attacher au processus**. Recherchez **TestXaml.exe** dans la liste des processus disponibles, puis cliquez sur **Attacher**.  
   
-3.  L'application démarre.  
+3. L'application démarre.  
   
-4.  Dans la deuxième instance de Visual Studio, ouvrez le **Live Visual Tree** (**déboguer / Windows / arborescence d’éléments visuels en direct**). Vous devez voir les éléments d’interface utilisateur **TestXaml** et vous devez pouvoir les manipuler comme vous l’avez fait lors du débogage direct de l’application.
+4. Dans la deuxième instance de Visual Studio, ouvrez le **Live Visual Tree** (**déboguer / Windows / arborescence d’éléments visuels en direct**). Vous devez voir les éléments d’interface utilisateur **TestXaml** et vous devez pouvoir les manipuler comme vous l’avez fait lors du débogage direct de l’application.

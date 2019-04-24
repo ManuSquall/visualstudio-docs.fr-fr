@@ -28,12 +28,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c6a020ffcd3fa458bb0e1c5bdffd3716ed23f225
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 4d80f8b9a6786d84d645a91dead2ac05a829718b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801210"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115066"
 ---
 # <a name="viewing-the-structure-of-code"></a>Affichage de la structure du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Vous pouvez examiner les objets et les membres dans des projets Visual Studio, a
 > [!NOTE]
 >  L’édition de Visual Studio et les paramètres que vous utilisez peuvent affecter les fonctionnalités de l’environnement IDE. Elles peuvent différer de celles décrites dans cette rubrique.  
   
-##  <a name="BKMK_ClassView"></a> Affichage de classes (Visual Basic, C#, C++)  
+## <a name="BKMK_ClassView"></a> Affichage de classes (Visual Basic, C#, C++)  
  L’**affichage de classes** est illustré dans le cadre de l’**Explorateur de solutions** ainsi que dans une fenêtre distincte. La fenêtre **Affichage de classes** affiche les éléments d’une application. Le volet supérieur affiche les espaces de noms, les types, les interfaces, les énumérations et les classes, alors que le volet inférieur affiche les membres qui appartiennent au type sélectionné dans le volet supérieur. Cette fenêtre vous permet d’accéder aux définitions des membres dans le code source (ou dans l’**Explorateur d’objets** si l’élément est défini en dehors de votre solution).  
   
  Il est inutile de compiler un projet pour afficher ses éléments dans la fenêtre **Affichage de classes**. La fenêtre est actualisée quand vous modifiez le code dans votre projet.  
@@ -110,7 +110,7 @@ Vous pouvez examiner les objets et les membres dans des projets Visual Studio, a
 |**Atteindre la référence**|Affiche une référence au type ou au membre dans le code source, si elle est disponible.|  
 |**Afficher la hiérarchie d’appels**|Affiche la méthode sélectionnée dans la fenêtre **Hiérarchie d’appels**.|  
   
-##  <a name="BKMK_CallHierarchy"></a> Hiérarchie d’appels (Visual Basic, C#, C++)  
+## <a name="BKMK_CallHierarchy"></a> Hiérarchie d’appels (Visual Basic, C#, C++)  
  La fenêtre **Hiérarchie d’appels** indique où une méthode donnée (ou une propriété ou un constructeur) est appelée, et répertorie les méthodes qui sont appelées à partir de cette méthode. Vous pouvez afficher plusieurs niveaux du graphique des appels, qui montre les relations appelant/appelé parmi les méthodes dans une portée spécifiée.  
   
  Vous pouvez afficher la fenêtre **Hiérarchie d’appels** en sélectionnant une méthode (ou une propriété ou un constructeur), puis en choisissant **Afficher la hiérarchie d’appels** dans le menu contextuel. L'affichage doit ressembler à l'illustration suivante.  
@@ -135,7 +135,7 @@ Fenêtre Hiérarchie d'appels
 |**Copier**|Copie le nœud sélectionné (mais pas ses sous-nœuds).|  
 |**Actualiser**|Actualise les informations.|  
   
-##  <a name="BKMK_ObjectBrowser"></a> Explorateur d’objets  
+## <a name="BKMK_ObjectBrowser"></a> Explorateur d’objets  
  L’**Explorateur d’objets** affiche les descriptions du code dans vos projets.  
   
  Vous pouvez filtrer ce que vous souhaitez afficher dans l’**Explorateur d’objets**. À l’aide de la liste déroulante située en haut de la fenêtre, vous pouvez choisir parmi les options suivantes :  
@@ -194,7 +194,7 @@ Fenêtre Hiérarchie d'appels
 |**Atteindre la référence**|Affiche une référence au type ou au membre dans le code source, si elle est disponible.|  
 |**Afficher la hiérarchie d’appels**|Affiche la méthode sélectionnée dans la fenêtre **Hiérarchie d’appels**.|  
   
-##  <a name="BKMK_CodeDefinition"></a> Fenêtre Définition de code (C#, C++)  
+## <a name="BKMK_CodeDefinition"></a> Fenêtre Définition de code (C#, C++)  
  La fenêtre **Définition de code** affiche la définition d’un type ou membre sélectionné dans le projet actif. Le type ou le membre peut être sélectionné dans l'éditeur de code ou dans une fenêtre d'affichage de code.  
   
  Cette fenêtre est en lecture seule mais vous pouvez y définir des points d'arrêt ou des signets. Pour modifier la définition affichée, choisissez **Modifier la définition** dans le menu contextuel. Cela ouvre le fichier source dans l'éditeur de code et place le point d'insertion sur la ligne où la définition commence.  

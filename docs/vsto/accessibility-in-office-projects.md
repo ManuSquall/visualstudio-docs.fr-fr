@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e35819371a751aa8047adbacd77f55ea257831a1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a54c9d5322b35092d635edd00e3b200ee67997a9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944973"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070041"
 ---
 # <a name="accessibility-in-office-projects"></a>Accessibilité dans les projets Office
 
@@ -40,21 +40,21 @@ Dans la plupart des cas, les projets Office dans Visual Studio répondent à l�
 
 #### <a name="to-view-shortcut-keys-for-ribbon-tabs-and-controls-in-the-designer"></a>Pour afficher les touches de raccourci pour les commandes et onglets ruban dans le Concepteur
 
-1.  Dans Visual Studio, sur le **outils** menu, cliquez sur **Options**.
+1. Dans Visual Studio, sur le **outils** menu, cliquez sur **Options**.
 
-2.  Développez le **outils Office** nœud, puis sélectionnez **clavier Microsoft Office Excel** ou **clavier Microsoft Office Word**, le cas échéant.
+2. Développez le **outils Office** nœud, puis sélectionnez **clavier Microsoft Office Excel** ou **clavier Microsoft Office Word**, le cas échéant.
 
-3.  Sélectionnez **schéma de clavier dynamique**.
+3. Sélectionnez **schéma de clavier dynamique**.
 
      Un message s’affiche indiquant que vous devez redémarrer Visual Studio pour que la modification prenne effet.
 
-4.  Cliquez sur **OK**.
+4. Cliquez sur **OK**.
 
-5.  Redémarrez Visual Studio et rouvrez votre projet.
+5. Redémarrez Visual Studio et rouvrez votre projet.
 
-6.  Ouvrez le Concepteur de document ou classeur pour votre projet.
+6. Ouvrez le Concepteur de document ou classeur pour votre projet.
 
-7.  Appuyez sur **F6** pour afficher les touches de raccourci pour le ruban.
+7. Appuyez sur **F6** pour afficher les touches de raccourci pour le ruban.
 
 ## <a name="accessibility-at-runtime"></a>Accessibilité lors de l’exécution
 

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b9cd7e785b1c4ffa8613b6f5440a33b99dd2de6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 727bf173336a25f380cc938c3252530f86f22ab8
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955308"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647451"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Modifier le style des objets dans Blend
 
@@ -78,13 +78,13 @@ Dans la boîte de dialogue **Créer une ressource de style**, vous pouvez soit n
 
 ### <a name="apply-a-style-or-template-to-a-control"></a>Appliquer un style ou un modèle à un contrôle
 
-Cliquez avec le bouton droit sur un objet dans le panneau [Objets et chronologie](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-objects-and-timeline-panel), choisissez **Modifier un modèle**, puis **Appliquer la ressource**.
+Cliquez avec le bouton droit sur un objet dans la fenêtre [Objets et chronologie](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#objects-and-timeline-window), choisissez **Modifier un modèle**, puis **Appliquer la ressource**.
 
 ![Menu Appliquer la ressource](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png)
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Restaurer le style ou le modèle par défaut d'un contrôle
 
-Sélectionnez le contrôle puis, dans le panneau [Propriétés](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-properties-panel), recherchez la propriété **Style** ou **Modèle**. Sélectionnez **Options avancées**, puis cliquez sur **Réinitialiser** dans le menu contextuel.
+Sélectionnez le contrôle puis, dans la fenêtre [Propriétés](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#properties-window), recherchez la propriété **Style** ou **Modèle**. Sélectionnez **Options avancées**, puis cliquez sur **Réinitialiser** dans le menu contextuel.
 
 ## <a name="visual-states-change-the-appearance-of-a-control-based-on-its-state"></a>États visuels : modifier l’apparence d’un contrôle en fonction de son état
 

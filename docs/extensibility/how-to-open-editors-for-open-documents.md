@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89fba307b40d7e0b8ede2d437b214e3f58929c39
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 654fdb6a921a0d6a25490b17f6f0ce3ffafa4ae4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702484"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085582"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Procédure : Ouvrir des éditeurs pour les documents ouverts
 Avant d’un projet s’ouvre une fenêtre de document, le projet devez d’abord déterminer si le fichier est déjà ouvert dans la fenêtre de document pour un autre éditeur. Le fichier peut être soit ouvert dans un éditeur spécifique au projet ou un des éditeurs standards inscrit avec [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
@@ -46,11 +46,11 @@ Avant d’un projet s’ouvre une fenêtre de document, le projet devez d’abor
 
 ### <a name="to-open-a-standard-editor-for-an-open-file"></a>Pour ouvrir un éditeur standard d’un fichier ouvert
 
-1.  Appelez <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.
+1. Appelez <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.
 
      Cette méthode vérifie d’abord que le document n’est pas déjà ouvert en appelant <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>. Si le document est déjà ouvert, sa fenêtre d’éditeur est remontée.
 
-2.  Si le document n’est pas ouvert, puis suivez les étapes de [Comment : Ouvrir des éditeurs standard](../extensibility/how-to-open-standard-editors.md).
+2. Si le document n’est pas ouvert, puis suivez les étapes de [Comment : Ouvrir des éditeurs standard](../extensibility/how-to-open-standard-editors.md).
 
 ## <a name="see-also"></a>Voir aussi
 - [Ouvrir et enregistrer des éléments de projet](../extensibility/internals/opening-and-saving-project-items.md)

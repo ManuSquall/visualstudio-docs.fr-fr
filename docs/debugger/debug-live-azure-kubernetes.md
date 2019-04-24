@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 64ebe649b9cf2dab9f52d1968d52fbad38769402
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 949f17b97a670ceb279333dbd3a00fe5e4cb715e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856688"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654709"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>Déboguer ASP.NET Azure Kubernetes Services en production avec le Débogueur de capture instantanée
 
@@ -29,15 +29,15 @@ Les snappoints et les logpoints sont similaires aux points d’arrêt, mais cont
 Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
 > [!div class="checklist"]
-> * Démarrer le Débogueur de capture instantanée
+> * lancer le Débogueur de capture instantanée ;
 > * Définir un snappoint et afficher un instantané
 > * Définir un logpoint
 
 ## <a name="prerequisites"></a>Prérequis
 
-* Le Débogueur de capture instantanée pour Azure Kubernetes Services est uniquement disponible pour Visual Studio 2019 Enterprise préversion ou version ultérieure avec la **charge de travail de développement Azure**. (Sous l’onglet **Composants individuels**, vous le trouverez sous **Débogage et test** > **Débogueur de capture instantanée**.)
+* Débogueur de captures instantanées pour les Services de Azure Kubernetes est uniquement disponible pour Visual Studio 2019 Enterprise ou une version ultérieure avec le **charge de travail de développement Azure**. (Dans l’onglet **Composants individuels**, vous le trouverez sous **Débogage et test** > **Débogueur de capture instantanée**.)
 
-    S’il n’est pas déjà installé, installez [Visual Studio 2019 Enterprise préversion](https://visualstudio.microsoft.com/vs/preview/).
+    S’il n’est pas déjà installé, installez [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/vs/).
 
 * La collecte de capture instantanée est disponible pour les applications web Azure Kubernetes Services suivantes :
   * Applications ASP.NET Core exécutées sur .NET Core 2.2 (ou une version ultérieure) sur Debian 9.
@@ -66,7 +66,7 @@ Visual Studio est maintenant en mode Débogage de capture instantanée.
 
    La fenêtre **Modules** indique que tous les modules sont chargés pour Azure App Service (choisissez **Déboguer > Fenêtres > Modules** pour l’ouvrir).
 
-   ![Consulter la fenêtre Modules](../debugger/media/snapshot-modules.png)
+   ![Fenêtre Vérifier les modules](../debugger/media/snapshot-modules.png)
 
 ## <a name="set-a-snappoint"></a>Définir un snappoint
 
@@ -95,13 +95,13 @@ Lorsqu’un snappoint est activé, il prend une capture instantanée chaque fois
 
    ![Inspecter les données de capture instantanée](../debugger/media/snapshot-inspect-data.png)
 
-   Dans cette vue, vous pouvez pointer sur les variables pour afficher les DataTips, utilisez les fenêtres **Variables locales**, **Suivi**, et **Pile des appels**, et évaluer des expressions.
+   Dans cette vue, vous pouvez pointer sur les variables pour afficher les DataTips, utiliser les fenêtres **Variables locales**, **Suivi**, et **Pile des appels** et évaluer des expressions.
 
-    Le site web lui-même est toujours en ligne ; les utilisateurs finaux ne sont pas affectés. Par défaut, le snappoint ne prend qu’une capture instantanée : dès que c’est fait, ce dernier se désactive. Si vous souhaitez prendre une autre capture instantanée sur le snappoint, vous pouvez le réactiver en cliquant sur **Mettre à jour la collecte**.
+    Le site web proprement dit est toujours en ligne ; les utilisateurs finaux ne sont pas affectés. Par défaut, le snappoint ne prend qu’une capture instantanée : dès que c’est fait, il se désactive. Si vous souhaitez prendre une autre capture instantanée sur le snappoint, vous pouvez le réactiver en cliquant sur **Mettre à jour la collecte**.
 
 Vous pouvez également ajouter d’autres snappoints à votre application et les activer avec le bouton **Mettre à jour la collecte**.
 
-**Vous avez besoin d'aide ?** Voir les pages [Résolution des problèmes et problèmes connus](../debugger/debug-live-azure-apps-troubleshooting.md) et [FAQ du débogage de captures instantanées](../debugger/debug-live-azure-apps-faq.md).
+**Besoin d’aide ?** Voir les pages [Résolution des problèmes et problèmes connus](../debugger/debug-live-azure-apps-troubleshooting.md) et [FAQ du débogage de captures instantanées](../debugger/debug-live-azure-apps-faq.md).
 
 ## <a name="set-a-conditional-snappoint"></a>Définir un snappoint conditionnel
 
@@ -117,7 +117,7 @@ S’il vous est difficile de recréer un état particulier de votre application,
 
    ![Taper une expression](../debugger/media/snapshot-snappoint-conditions.png)
 
-   Dans l’illustration précédente, la capture instantanée n’est pas prise pour le snappoint que si `visitor.FirstName == "Dan"`.
+   Dans l’illustration précédente, la capture instantanée n’est prise pour le snappoint que si `visitor.FirstName == "Dan"`.
 
 ## <a name="set-a-logpoint"></a>Définir un logpoint
 
@@ -144,4 +144,4 @@ Nous avons vu comment prendre une capture instantanée lorsqu’un snappoint est
 Dans ce tutoriel, vous avez appris à utiliser le Débogueur de capture instantanée pour Azure Kubernetes. Peut-être souhaitez-vous en savoir plus sur cette fonctionnalité.
 
 > [!div class="nextstepaction"]
-> [Questions fréquentes (FAQ) sur le débogage d’instantané](../debugger/debug-live-azure-apps-faq.md)
+> [FAQ pour le débogage d’instantané](../debugger/debug-live-azure-apps-faq.md)

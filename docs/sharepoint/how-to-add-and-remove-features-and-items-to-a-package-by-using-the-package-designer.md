@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f76abaaa1210320c14175be2bb47828b7bd06aa9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 654773f5a5e46960f8c015cc6f731e16332fcdd7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608095"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094318"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Procédure : Ajouter et supprimer des fonctionnalités et des éléments dans un package à l’aide du Concepteur de packages
   Lorsque vous créez une solution SharePoint, Visual Studio ajoute les fonctionnalités de SharePoint par défaut pour le package dans la solution. Avant son déploiement final, vous pouvez ajouter et supprimer des éléments de projet SharePoint et des fonctionnalités pour modifier le package SharePoint.
@@ -52,7 +52,7 @@ ms.locfileid: "56608095"
 
 #### <a name="to-remove-sharepoint-features-with-the-package-designer"></a>Pour supprimer des fonctionnalités SharePoint avec le Concepteur de packages
 
-1.  Dans le **éléments dans le Package** , sélectionnez un élément que vous souhaitez supprimer, puis choisissez le **supprimer** (<) bouton, ou choisissez le **supprimer tout** bouton (<<) à supprimer tous les éléments.
+1. Dans le **éléments dans le Package** , sélectionnez un élément que vous souhaitez supprimer, puis choisissez le **supprimer** (<) bouton, ou choisissez le **supprimer tout** bouton (<<) à supprimer tous les éléments.
 
      Les éléments SharePoint s’affichent dans le **éléments dans la Solution** liste.
 

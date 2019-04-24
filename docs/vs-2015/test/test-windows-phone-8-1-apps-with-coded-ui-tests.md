@@ -8,12 +8,12 @@ ms.assetid: 7b866776-f2d5-4823-8d15-919f889db26f
 caps.latest.revision: 31
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 74d86998657a380e4cef1f3ee6ca0d87bccb3507
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c2514454f1aa1c1899c45edac80f7990d8208fdd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54765097"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052088"
 ---
 # <a name="test-windows-uwp-and-81-phone-apps-with-coded-ui-tests"></a>Tester des applications Windows UWP et des applications Windows Phone 8.1 avec des tests codés de l’interface utilisateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,23 +22,23 @@ Utilisez cette procédure pas à pas afin de créer des tests de l’interface u
   
 ## <a name="create-a-simple-windows-phone-app"></a>Créer une application Windows Phone simple  
   
-1.  Créer un projet pour une application Windows Phone vide à l’aide d’un modèle Visual C# ou Visual Basic.  
+1. Créer un projet pour une application Windows Phone vide à l’aide d’un modèle Visual C# ou Visual Basic.  
   
      ![Créer une application Windows Phone](../test/media/cuit-phone-app-newproject.png "CUIT_Phone_App_NewProject")  
   
-2.  Dans l’Explorateur de solutions, ouvrez MainPage.xaml. Dans la barre d’outils, faites glisser un contrôle bouton et un contrôle textbox sur l’aire de conception.  
+2. Dans l’Explorateur de solutions, ouvrez MainPage.xaml. Dans la barre d’outils, faites glisser un contrôle bouton et un contrôle textbox sur l’aire de conception.  
   
      ![Ajouter des contrôles à MainPage.xaml](../test/media/cuit-phone-app-addcontrols.png "CUIT_Phone_App_AddControls")  
   
-3.  Dans la fenêtre Propriétés, nommez le contrôle bouton.  
+3. Dans la fenêtre Propriétés, nommez le contrôle bouton.  
   
      ![Nommer le contrôle bouton](../test/media/cuit-phone-namebutton.png "CUIT_Phone_NameButton")  
   
-4.  Nommez le contrôle textbox.  
+4. Nommez le contrôle textbox.  
   
      ![Nommer le contrôle textbox](../test/media/cuit-phone-nametesxtbox.png "CUIT_Phone_NameTesxtBox")  
   
-5.  Sur l’aire de conception, double-cliquez sur le contrôle bouton et ajoutez le code suivant :  
+5. Sur l’aire de conception, double-cliquez sur le contrôle bouton et ajoutez le code suivant :  
   
     ```csharp  
     private void button_Click_1(object sender, RoutedEventArgs e)  
@@ -58,15 +58,15 @@ Utilisez cette procédure pas à pas afin de créer des tests de l’interface u
     End Class  
     ```  
   
-6.  Appuyez sur F5 pour exécuter votre application Windows Phone dans l’émulateur et vérifier si elle fonctionne.  
+6. Appuyez sur F5 pour exécuter votre application Windows Phone dans l’émulateur et vérifier si elle fonctionne.  
   
      ![Exécuter l’application Windows Phone](../test/media/cuit-phone-runapp.png "CUIt_Phone_RunApp")  
   
-7.  Quittez l’émulateur.  
+7. Quittez l’émulateur.  
   
 ## <a name="deploy-the-windows-phone-app"></a>Déployer l’application Windows Phone  
   
-1.  Pour qu’un test codé de l’interface utilisateur puisse mapper les contrôles d’une application, vous devez la déployer.  
+1. Pour qu’un test codé de l’interface utilisateur puisse mapper les contrôles d’une application, vous devez la déployer.  
   
      ![Déployer l’application Windows Phone](../test/media/cuit-phone-deploy.png "CUIT_Phone_Deploy")  
   
@@ -287,7 +287,7 @@ Utilisez cette procédure pas à pas afin de créer des tests de l’interface u
   
 ## <a name="run-the-coded-ui-test"></a>Exécuter le test codé de l’interface utilisateur  
   
-1.  Générez votre test et exécutez-le à l’aide de l’Explorateur de tests.  
+1. Générez votre test et exécutez-le à l’aide de l’Explorateur de tests.  
   
      ![Générer et exécuter le test à l’aide de l’Explorateur de tests](../test/media/cuit-phone-runtestexplorer.png "CUIT_Phone_RunTestExplorer")  
   
@@ -299,7 +299,7 @@ Utilisez cette procédure pas à pas afin de créer des tests de l’interface u
   
      ![Résultats de l’Explorateur de tests](../test/media/cuit-phone-runtestexplorerresults.png "CUIT_Phone_RunTestExplorerResults")  
   
-##  <a name="TestingPhoneAppsCodedUI_DataDriven"></a> Utiliser les tests codés de l’interface utilisateur pilotés par les données sur des applications Windows Phone  
+## <a name="TestingPhoneAppsCodedUI_DataDriven"></a> Utiliser les tests codés de l’interface utilisateur pilotés par les données sur des applications Windows Phone  
  Pour tester différentes conditions, un test codé de l’interface utilisateur peut être exécuté plusieurs fois avec différents jeux de données.  
   
  Les tests codés de l’interface utilisateur pilotés par les données pour Windows Phone sont définis à l’aide de l’attribut DataRow sur une méthode de test. Dans l’exemple suivant, x et y utilisent les valeurs 1 et 2 pour la première itération et -1 et -2 pour la seconde itération du test.  
@@ -314,26 +314,26 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
   
 ## <a name="q--a"></a>Questions et réponses  
   
-### <a name="q-do-i-have-to-deploy-the-windows-phone-app-in-the-emulator-in-order-to-map-ui-controls"></a>Q : suis-je obligé de déployer l’application Windows Phone dans l’émulateur pour mapper des contrôles d’interface utilisateur ?  
- **R**: oui, le générateur de test codé de l’interface utilisateur exige qu’un émulateur soit en cours d’exécution et que l’application soit déployée dessus. Sinon, il génère un message d’erreur signalant qu’aucun émulateur en cours d’exécution n’a été détecté.  
+### <a name="q-do-i-have-to-deploy-the-windows-phone-app-in-the-emulator-in-order-to-map-ui-controls"></a>Q : Je dois déployer l’application Windows Phone dans l’émulateur pour mapper les contrôles d’interface utilisateur ?  
+ **R** : Oui, le Générateur de test codé de l’interface utilisateur requiert qu’un émulateur s’exécuter et que l’application soit déployée à ce dernier. Sinon, il génère un message d’erreur signalant qu’aucun émulateur en cours d’exécution n’a été détecté.  
   
-###  <a name="TestingPhoneAppsCodedUI_EmulatorDevice"></a> Q : les tests peuvent-ils être exécutés uniquement sur l’émulateur, ou puis-je aussi utiliser un périphérique physique ?  
+### <a name="TestingPhoneAppsCodedUI_EmulatorDevice"></a> Q : Tests peuvent-ils être exécutés uniquement sur l’émulateur, ou puis-je aussi utiliser un périphérique physique ?  
  **R** : L’option est prise en charge. Vous pouvez modifier la cible d’exécution des tests en changeant le type d’émulateur ou en sélectionnant Périphérique dans la barre d’outils Périphérique. Si vous sélectionnez Périphérique, un appareil Phone Blue doit être connecté à l’un des ports USB de l’ordinateur.  
   
  ![Sélectionner la version de l’émulateur ou l’appareil physique](../test/media/cuit-phone-testtarget.png "CUIT_Phone_TestTarget")  
   
-### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>Q : pourquoi l’option d’enregistrement de mon test codé de l’interface utilisateur ne figure-t-elle pas dans la boîte de dialogue Générer le code pour le test codé de l’interface utilisateur ?  
- **R**: l’option d’enregistrement n’est pas prise en charge pour les applications Windows Phone.  
+### <a name="q-why-dont-i-see-the-option-to-record-my-coded-ui-test-in-the-generate-code-for-a-coded-ui-test-dialog"></a>Q : Pourquoi ne pas voir l’option d’enregistrement de mon test codé de l’interface utilisateur de générer le Code pour une boîte de dialogue de Test codé de l’interface utilisateur ?  
+ **R** : L’option d’enregistrement n’est pas pris en charge pour les applications Windows Phone.  
   
-### <a name="q-can-i-create-a-coded-ui-test-for-my-windows-phone-apps-based-on-winjs-silverlight-or-html5"></a>Q : puis-je créer un test codé de l’interface utilisateur pour mes applications Windows Phone basées sur WinJS, Silverlight ou HTML5 ?  
- **R**: Non, seules les applications XAML sont prises en charge.  
+### <a name="q-can-i-create-a-coded-ui-test-for-my-windows-phone-apps-based-on-winjs-silverlight-or-html5"></a>Q : Puis-je créer un test codé de l’interface utilisateur pour mes applications Windows Phone basées sur WinJS, Silverlight ou HTML5 ?  
+ **R** : Non, seules les applications XAML de base sont pris en charge.  
   
-### <a name="q-can-i-create-coded-ui-tests-for-my-windows-phone-apps-on-a-system-that-is-not-running-windows-81-or-windows-10"></a>Q : puis-je créer des tests codés de l’interface utilisateur pour mes applications Windows Phone sur un système qui n’exécute pas Windows 8.1 ou Windows 10 ?  
- **R**: non, les modèles Projet de test codé de l’interface utilisateur sont disponibles seulement sur Windows 8.1 et Windows 10. Pour créer l’automation pour les applications de plateforme Windows universelle, vous aurez besoin de Windows 10.  
+### <a name="q-can-i-create-coded-ui-tests-for-my-windows-phone-apps-on-a-system-that-is-not-running-windows-81-or-windows-10"></a>Q : Puis-je créer des tests codés d’IU pour mes applications Windows Phone sur un système qui n’exécute pas Windows 8.1 ou Windows 10 ?  
+ **R** : Non, les modèles de projet de Test codé de l’interface utilisateur ne sont uniquement disponibles sur Windows 8.1 et Windows 10. Pour créer l’automation pour les applications de plateforme Windows universelle, vous aurez besoin de Windows 10.  
 
 <a name="uwpapps"></a>  
-### <a name="q-how-do-i-create-coded-ui-tests-for-universal-windows-platform-uwp-apps"></a>Q : comment créer des tests codés de l’interface utilisateur pour les applications de plateforme Windows universelle ?  
- **R**: selon la plateforme où vous testez votre application de plateforme Windows universelle, créez le projet de test codé de l’interface utilisateur de l’une des façons suivantes :  
+### <a name="q-how-do-i-create-coded-ui-tests-for-universal-windows-platform-uwp-apps"></a>Q : Comment créer des tests codés d’IU pour les applications de plateforme universelle Windows (UWP) ?  
+ **R** : Selon la plateforme où vous testez votre application UWP, créez le projet de test codé de l’interface utilisateur dans une des manières suivantes :  
   
 - Une application de plateforme Windows universelle s’exécutant sur un ordinateur local s’exécutera comme une application de Store. Pour tester, vous devez utiliser le modèle **Projet de test codé de l’interface utilisateur (Windows)** . Pour trouver ce modèle quand vous créez un projet, accédez au nœud **Windows**, **Universel** . Vous pouvez aussi accéder au nœud **Windows**, **Windows 8**, **Windows** .  
   
@@ -341,17 +341,17 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
   
   Une fois le projet créé, la création d’un test se fait de la même façon qu’auparavant.  
   
-### <a name="q-can-i-select-controls-that-are-outside-the-emulator"></a>Q : puis-je sélectionner des contrôles qui sont en dehors de l’émulateur ?  
+### <a name="q-can-i-select-controls-that-are-outside-the-emulator"></a>Q : Puis-je sélectionner des contrôles situés en dehors de l’émulateur ?  
  **R** : Non, le générateur ne les détecte pas.  
   
-### <a name="q-can-i-use-the-coded-ui-test-builder-to-map-controls-using-a-physical-phone-device"></a>Q : puis-je utiliser le générateur de test codé de l’interface utilisateur pour mapper des contrôles à l’aide d’un périphérique physique (téléphone) ?  
- **R**: non, le générateur ne peut mapper des éléments d’interface utilisateur que si votre application a été déployée sur l’émulateur.  
+### <a name="q-can-i-use-the-coded-ui-test-builder-to-map-controls-using-a-physical-phone-device"></a>Q : Puis-je utiliser le Générateur de test codé de l’interface utilisateur pour mapper les contrôles à l’aide d’un appareil phone physique ?  
+ **R** : Non, le générateur peut uniquement mapper des éléments d’interface utilisateur si votre application a été déployée sur l’émulateur.  
   
-### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Q : pourquoi ne puis-je pas modifier le code du fichier UIMap.Designer ?  
- **R**: toutes les modifications de code que vous effectuez dans le fichier UIMapDesigner.cs sont remplacées chaque fois que vous générez du code dans UIMap - Générateur de test codé de l’interface utilisateur. Si vous devez modifier une méthode enregistrée, vous devez la copier dans le fichier UIMap.cs et la renommer. Le fichier UIMap.cs peut être utilisé pour remplacer les méthodes et les propriétés dans le fichier UIMapDesigner.cs. Vous devez supprimer la référence à la méthode d’origine dans le fichier Coded UITest.cs et la remplacer par le nom de la méthode renommée.  
+### <a name="q-why-cant-i-modify-the-code-in-the-uimapdesigner-file"></a>Q : Pourquoi ne puis-je pas modifier le code dans le fichier UIMap.Designer ?  
+ **R** : Toutes les modifications de code que vous effectuées dans le fichier UIMapDesigner.cs seront remplacées chaque fois que vous générez du code dans UIMap - Générateur de test codé de l'interface utilisateur. Si vous devez modifier une méthode enregistrée, vous devez la copier dans le fichier UIMap.cs et la renommer. Le fichier UIMap.cs peut être utilisé pour remplacer les méthodes et les propriétés dans le fichier UIMapDesigner.cs. Vous devez supprimer la référence à la méthode d’origine dans le fichier Coded UITest.cs et la remplacer par le nom de la méthode renommée.  
   
-### <a name="q-can-i-run-a-coded-ui-test-on-my-windows-phone-app-from-the-command-line"></a>Q : puis-je exécuter un test codé de l’interface utilisateur sur mon application Windows Phone à partir de la ligne de commande ?  
- **R**: Oui, vous pouvez utiliser un fichier runsettings pour spécifier le périphérique cible pour l’exécution du test. Par exemple :  
+### <a name="q-can-i-run-a-coded-ui-test-on-my-windows-phone-app-from-the-command-line"></a>Q : Puis-je exécuter un test codé de l’interface utilisateur dans mon application Windows Phone à partir de la ligne de commande ?  
+ **R** : Oui, vous utilisez un fichier runsettings pour spécifier le périphérique cible pour l’exécution de tests. Exemple :  
   
  **vstest.console.exe "pathToYourCodedUITestDll" /settings:devicetarget.runsettings**  
   
@@ -369,7 +369,7 @@ public void DataDrivingDemo_MyTestMethod(int x, int y)
 </RunSettings>  
 ```  
   
-### <a name="q-what-are-the-differences-between-coded-ui-tests-for-xaml-based-windows-store-apps-and-windows-phone-apps"></a>Q : quelles sont les différences entre les tests codés de l’interface utilisateur pour applications du Windows Store en XAML et les applications Windows Phone ?  
+### <a name="q-what-are-the-differences-between-coded-ui-tests-for-xaml-based-windows-store-apps-and-windows-phone-apps"></a>Q : Quelles sont les différences entre les tests codés de l’interface utilisateur pour les applications de Store de Windows basée sur XAML et les applications Windows Phone ?  
  **R** : Voici quelques-unes des principales différences :  
   
 |Fonctionnalité|Applications Windows Store|Applications Windows Phone|  

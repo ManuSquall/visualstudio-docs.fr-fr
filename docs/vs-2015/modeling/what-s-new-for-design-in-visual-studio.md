@@ -13,12 +13,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84b5ed45bfa7117eec4cbaa86ad9ca4533339d62
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 148da7602d8198a4c85e2a7fbee2107b4e9662d1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001696"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039057"
 ---
 # <a name="whats-new-for-design-in-visual-studio-in-visual-studio-2015"></a>Quelles sont les nouveautés en matière de conception dans Visual Studio dans Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Cette version de Visual Studio inclut les améliorations suivantes pour vous aid
 
 - **Navigateur de l'architecture**. Vous ne pouvez plus utiliser le Navigateur de l'architecture pour créer des diagrammes. Mais vous pouvez toujours utiliser l'Explorateur de solutions.
 
-##  <a name="VersionSupport"></a> Prise en charge de l’édition pour l’architecture et les outils de modélisation
+## <a name="VersionSupport"></a> Prise en charge de l’édition pour l’architecture et les outils de modélisation
 
 Visual Studio 2015 est disponible dans plusieurs éditions. N’est pas en charge l’architecture et les outils de modélisation. Le tableau ci-après décrit la disponibilité de chaque outil.
 

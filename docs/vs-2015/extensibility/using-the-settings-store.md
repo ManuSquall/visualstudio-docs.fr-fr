@@ -10,12 +10,12 @@ ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8de2772f4281616837ca96b5911409f6316d5bb0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 87a561ed3596b98f35e26e19e2c5851534aba564
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948372"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094817"
 ---
 # <a name="using-the-settings-store"></a>Utilisation de la banque de paramètres
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +31,9 @@ Il existe deux types de magasins de paramètres :
 ## <a name="creating-the-example-project"></a>Création de l’exemple de projet  
  Cette section montre comment créer un projet d’extension simple avec une commande de menu pour la démonstration.  
   
-1.  Chaque extension de Visual Studio commence par un projet de déploiement VSIX qui contiendra les ressources de l’extension. Créer un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projet VSIX nommé `SettingsStoreExtension`. Vous pouvez trouver le modèle de projet VSIX dans le **nouveau projet** boîte de dialogue sous **Visual C# / extensibilité**.  
+1. Chaque extension de Visual Studio commence par un projet de déploiement VSIX qui contiendra les ressources de l’extension. Créer un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projet VSIX nommé `SettingsStoreExtension`. Vous pouvez trouver le modèle de projet VSIX dans le **nouveau projet** boîte de dialogue sous **Visual c# / extensibilité**.  
   
-2.  Ajoutez maintenant un modèle d’élément de commande personnalisée nommé **SettingsStoreCommand**. Dans le **ajouter un nouvel élément** boîte de dialogue, accédez à **Visual C# / extensibilité** et sélectionnez **commande personnalisée**. Dans le **nom** en bas de la fenêtre, modifiez le nom de fichier de commande pour **SettingsStoreCommand.cs**. Pour plus d’informations sur la création d’une commande personnalisée, consultez [création d’une Extension avec une commande de Menu](../extensibility/creating-an-extension-with-a-menu-command.md)  
+2. Ajoutez maintenant un modèle d’élément de commande personnalisée nommé **SettingsStoreCommand**. Dans le **ajouter un nouvel élément** boîte de dialogue, accédez à **Visual c# / extensibilité** et sélectionnez **commande personnalisée**. Dans le **nom** en bas de la fenêtre, modifiez le nom de fichier de commande pour **SettingsStoreCommand.cs**. Pour plus d’informations sur la création d’une commande personnalisée, consultez [création d’une Extension avec une commande de Menu](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
 ## <a name="using-the-configuration-settings-store"></a>À l’aide du Store de paramètres de Configuration  
  Cette section montre comment détecter et d’afficher les paramètres de configuration.  
@@ -79,11 +79,11 @@ Il existe deux types de magasins de paramètres :
   
 #### <a name="to-use-a-registry-editor-to-verify-configuration-settings"></a>Pour utiliser un éditeur du Registre pour vérifier les paramètres de configuration  
   
-1.  Ouvrez Regedit.exe.  
+1. Ouvrez Regedit.exe.  
   
-2.  Accédez à HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\.  
+2. Accédez à HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\.  
   
     > [!NOTE]
     >  Assurez-vous que vous examinez la clé qui contient \14.0Exp_Config\ et pas \14.0_Config\\. Lorsque vous exécutez l’instance expérimentale de Visual Studio, les paramètres de configuration sont dans la ruche de Registre « 14.0Exp_Config ».  
   
-3.  Développez le nœud \Installed Products\. Si le message dans les étapes précédentes est **Microsoft Windows Phone Developer Tools installé : True**, alors \Installed Products\ doit contenir un nœud d’outils de développement de Microsoft Windows Phone. Si le message est **Microsoft Windows Phone Developer Tools installé : False**, alors \Installed Products\ ne doit pas contenir un nœud d’outils de développement de Microsoft Windows Phone.
+3. Développez le nœud \Installed Products\. Si le message dans les étapes précédentes est **Microsoft Windows Phone Developer Tools installé : True**, alors \Installed Products\ doit contenir un nœud d’outils de développement de Microsoft Windows Phone. Si le message est **Microsoft Windows Phone Developer Tools installé : False**, alors \Installed Products\ ne doit pas contenir un nœud d’outils de développement de Microsoft Windows Phone.

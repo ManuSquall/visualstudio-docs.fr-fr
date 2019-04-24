@@ -24,16 +24,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dfc0482152b3da0b52950ab6389cc9f7d9e83e3a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: afcada407060af2072e3cf1c30e86153762890b5
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54974278"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584387"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>Vue inscrire des valeurs dans la fenêtre Registres (C#, C++, Visual Basic, F#)
 
-Le **inscrit** fenêtre affiche le contenu du Registre lors du débogage de Visual Studio. Pour une introduction avancée aux concepts qui sous-tendent les registres et la **inscrit** fenêtre, consultez [éléments fondamentaux du débogage : la fenêtre Registres](../debugger/debugging-basics-registers-window.md).
+Le **inscrit** fenêtre affiche le contenu du Registre lors du débogage de Visual Studio. Pour une introduction avancée aux concepts qui sous-tendent les registres et la **inscrit** fenêtre, consultez [éléments fondamentaux du débogage : Registres (fenêtre)](../debugger/debugging-basics-registers-window.md).
 
 > [!NOTE]
 > Informations de Registre ne sont pas disponibles pour le script ou des applications SQL.
@@ -41,6 +41,8 @@ Le **inscrit** fenêtre affiche le contenu du Registre lors du débogage de Visu
 Pendant le débogage, inscrire la modification des valeurs pendant l’exécution de code dans votre application. Les valeurs qui ont été modifiés récemment s’affichent en rouge dans le **inscrit** fenêtre.
 
 Pour réduire l’encombrement, la fenêtre **Registres** classe les registres en groupes, lesquels varient en fonction de la plateforme et du type de processeur. Vous pouvez afficher ou masquer des groupes de registres. Pour plus d'informations, voir [Procédure : Afficher et masquer les groupes de registres](../debugger/how-to-display-and-hide-register-groups.md).
+
+Pour plus d’informations sur les indicateurs que vous consultez dans la **inscrit** fenêtre, consultez [sur la fenêtre historiques des transactions](../debugger/debugging-basics-registers-window.md)
 
 Il est possible de modifier les valeurs des registres. Pour plus d'informations, voir [Procédure : Modifier une valeur de registre](../debugger/how-to-edit-a-register-value.md).
 

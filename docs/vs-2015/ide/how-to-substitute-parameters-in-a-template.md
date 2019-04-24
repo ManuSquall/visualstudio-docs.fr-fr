@@ -12,14 +12,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 97a8a99e160e4d488e44cc9e084789fe3a005eb1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: be004820967f85de41b11c38031722b87a5af375
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780289"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039412"
 ---
-# <a name="how-to-substitute-parameters-in-a-template"></a>Comment : substituer des paramètres dans un modèle
+# <a name="how-to-substitute-parameters-in-a-template"></a>Procédure : Substituer des paramètres dans un modèle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez remplacer les paramètres d'un modèle, tels que les noms de classes et les espaces de noms, lors de la création d'un fichier basé sur ce modèle. Pour obtenir une liste exhaustive des paramètres de modèle, consultez [Paramètres de modèle](../ide/template-parameters.md).  
@@ -29,7 +29,7 @@ Vous pouvez remplacer les paramètres d'un modèle, tels que les noms de classes
   
 #### <a name="to-use-a-parameter-to-replace-namespace-name-with-the-project-name"></a>Pour remplacer le nom de l'espace de noms par le nom du projet à l'aide d'un paramètre  
   
-1.  Ajoutez le paramètre dans l'un ou plusieurs des fichiers de code du modèle. Par exemple :  
+1. Ajoutez le paramètre dans l'un ou plusieurs des fichiers de code du modèle. Exemple :  
   
     ```  
     namespace $safeprojectname$  
@@ -38,9 +38,9 @@ Vous pouvez remplacer les paramètres d'un modèle, tels que les noms de classes
     > [!NOTE]
     >  Les paramètres d’un modèle s’écrivent au format $*parameter*$.  
   
-2.  Dans le fichier .vstemplate du modèle, localisez l'élément `ProjectItem` qui inclut ce fichier.  
+2. Dans le fichier .vstemplate du modèle, localisez l'élément `ProjectItem` qui inclut ce fichier.  
   
-3.  Définissez l'attribut `ReplaceParameters` à la valeur `true` pour l'élément `ProjectItem`. Par exemple :  
+3. Définissez l'attribut `ReplaceParameters` à la valeur `true` pour l'élément `ProjectItem`. Exemple :  
   
     ```  
     <ProjectItem ReplaceParameters="true">Class1.cs</ProjectItem>  

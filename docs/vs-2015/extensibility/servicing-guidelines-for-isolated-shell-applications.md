@@ -11,12 +11,12 @@ ms.assetid: 747d1a47-b8b3-4e8b-93c0-768724be48f2
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 13ec970b309c09bdbd0bffbc0a10c42b862ebe9b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 093690c293ff6857eedc50d5eccc793d7d5bb114
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951266"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097399"
 ---
 # <a name="servicing-guidelines-for-isolated-shell-applications"></a>Instructions de maintenance pour les Applications de Shell isolé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,11 +34,11 @@ Lorsque vous distribuez une application de shell isolé Visual Studio, vous deve
   
  Lorsque vous utilisez des actions personnalisées dans un programme d’installation, vous devez vous assurer que chaque action personnalisée au moment de l’installation doit avoir une action personnalisée correspondante pour annuler l’action lorsque l’utilisateur désinstalle l’application. Si votre programme d’installation échoue pour fournir correspondant désinstalle action personnalisée, suppression de votre application reste partiellement installé.  
   
--   Une action personnalisée qui s’appuie sur une version spécifique d’un fichier ou le hachage de valeurs échoue lors de la modification de ces versions de mises à jour logicielles ou valeurs de hachage. Dans ce cas votre action personnalisée doit mettre à jour manuellement ces valeurs. Un autre problème se produit si les versions d’un fichier ou le hachage de valeurs sont partagées entre les versions de produit. Évitez cette dépendance chaque fois que possible.  
+- Une action personnalisée qui s’appuie sur une version spécifique d’un fichier ou le hachage de valeurs échoue lors de la modification de ces versions de mises à jour logicielles ou valeurs de hachage. Dans ce cas votre action personnalisée doit mettre à jour manuellement ces valeurs. Un autre problème se produit si les versions d’un fichier ou le hachage de valeurs sont partagées entre les versions de produit. Évitez cette dépendance chaque fois que possible.  
   
 ### <a name="accounting-for-shared-files"></a>Gestion des comptes pour les fichiers partagés  
  Fichiers partagés ont les mêmes noms et sont installés au même emplacement par plusieurs produits. Ces produits peuvent différer dans la version, référence (SKU Stock Keeping Unit) ou les deux, et les produits peuvent coexister sur un ordinateur donné. Toutefois, les fichiers partagés créer des problèmes de maintenance pour plusieurs raisons :  
   
--   La mise à jour des fichiers partagés peut entraîner des problèmes de compatibilité des applications, car une mise à jour à une application peut changer la version d’un fichier utilisé par une autre application n’a pas été mis à jour. Programmes d’installation pour les produits qui partagent des références de nombre de fichiers pour les fichiers partagés. Par conséquent, la désinstallation d’un produit n’affecte pas les fichiers partagés au-delà de décrémenter le nombre d’instances installées.  
+- La mise à jour des fichiers partagés peut entraîner des problèmes de compatibilité des applications, car une mise à jour à une application peut changer la version d’un fichier utilisé par une autre application n’a pas été mis à jour. Programmes d’installation pour les produits qui partagent des références de nombre de fichiers pour les fichiers partagés. Par conséquent, la désinstallation d’un produit n’affecte pas les fichiers partagés au-delà de décrémenter le nombre d’instances installées.  
   
--   Le programme d’installation de l’ingénierie QFE (Quick Fix) rétablit les versions des fichiers pour les versions des produits pris en charge par le programme d’installation du correctif QFE. Ce processus potentiellement s'arrête une application qui a remis un fichier partagé mis à jour.
+- Le programme d’installation de l’ingénierie QFE (Quick Fix) rétablit les versions des fichiers pour les versions des produits pris en charge par le programme d’installation du correctif QFE. Ce processus potentiellement s'arrête une application qui a remis un fichier partagé mis à jour.

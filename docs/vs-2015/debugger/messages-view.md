@@ -13,12 +13,12 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14569a915dc1da4d8628283dfa1aae5338502de1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3765b9804224549c98b57cd1b0a44f0330d278b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950765"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080577"
 ---
 # <a name="messages-view"></a>Affichage Messages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,21 +34,21 @@ Vue Messages Spy++
   
 #### <a name="to-open-a-messages-view-for-a-window-process-or-thread"></a>Pour ouvrir un affichage de Messages pour une fenêtre, un processus ou un thread  
   
-1.  Déplacer le focus à un [Windows vue](../debugger/windows-view.md), [vue processus](../debugger/processes-view.md), ou [vue Threads](../debugger/threads-view.md) fenêtre.  
+1. Déplacer le focus à un [Windows vue](../debugger/windows-view.md), [vue processus](../debugger/processes-view.md), ou [vue Threads](../debugger/threads-view.md) fenêtre.  
   
-2.  Recherchez le nœud de l’élément dont vous souhaitez examiner les messages, puis sélectionnez-le.  
+2. Recherchez le nœud de l’élément dont vous souhaitez examiner les messages, puis sélectionnez-le.  
   
-3.  À partir de la **Spy** menu, choisissez **Messages du journal**.  
+3. À partir de la **Spy** menu, choisissez **Messages du journal**.  
   
      Le [la boîte de dialogue Options des messages](../debugger/message-options-dialog-box.md) s’ouvre.  
   
-4.  Sélectionnez les options pour le message que vous souhaitez afficher.  
+4. Sélectionnez les options pour le message que vous souhaitez afficher.  
   
-5.  Appuyez sur **OK** pour commencer la journalisation des messages.  
+5. Appuyez sur **OK** pour commencer la journalisation des messages.  
   
      Ouvre la fenêtre d’affichage des Messages, ainsi qu’un **Messages** menu est ajouté à la barre d’outils Spy ++. Selon les options sélectionnées, messages commencent le streaming dans la fenêtre d’affichage de Messages active.  
   
-6.  Lorsque vous avez suffisamment de messages, choisissez **Stop Logging** à partir de la **Messages** menu.  
+6. Lorsque vous avez suffisamment de messages, choisissez **Stop Logging** à partir de la **Messages** menu.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Contrôler la vue Messages](../debugger/how-to-control-messages-view.md)  

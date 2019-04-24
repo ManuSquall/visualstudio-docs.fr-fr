@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e5c03fa6a04abd06af9e24b83977d491e9809265
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c8520084b57fdf0f831f62626593832d03c25636
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953532"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107864"
 ---
 # <a name="updating-shapes-and-connectors-to-reflect-the-model"></a>Mise à jour des formes et des connecteurs pour refléter le modèle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ## <a name="set-shape-map-properties-to-control-the-visibility-of-a-decorator"></a>Définir les propriétés de mappage de forme pour contrôler la visibilité d’un décorateur  
  Vous pouvez contrôler la visibilité d’un décorateur sans écrire de code de programme, en configurant le mappage entre la forme et de la classe de domaine dans la définition DSL. Pour plus d’informations, consultez les rubriques suivantes :  
   
--   [Guide pratique pour Contrôler la visibilité d’un Decorator-redirection](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)  
+- [Guide pratique pour Contrôler la visibilité d’un Decorator-redirection](../misc/how-to-control-the-visibility-of-a-decorator-redirect.md)  
   
--   [Guide pratique pour définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md)  
+- [Guide pratique pour définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md)  
   
 ## <a name="expose-the-color-and-style-of-a-shape-as-properties"></a>Exposer la couleur et le style d’une forme en tant que propriétés  
  Dans la définition DSL, la classe de forme avec le bouton droit, pointez sur **ajouter les objets exposés**, puis cliquez sur l’un des éléments tels que **couleur de remplissage**.  
@@ -115,7 +115,7 @@ partial class MyLanguageDiagram
   
  Cette méthode peut être utilisée à la fois pour les propriétés de domaine et non-magasin de fonctionnalités, telles que la taille de la forme.  
   
-##  <a name="OnAssociatedProperty"></a> Utiliser AssociateValueWith() pour mettre à jour d’autres fonctionnalités d’une forme  
+## <a name="OnAssociatedProperty"></a> Utiliser AssociateValueWith() pour mettre à jour d’autres fonctionnalités d’une forme  
  Pour certaines fonctionnalités d’une forme, telles que s’il a une ombre, ou le style de flèche d’un connecteur, il n’existe aucune méthode intégrée d’exposer la fonctionnalité comme une propriété de domaine.  Modifications apportées à ces fonctionnalités ne sont pas sous le contrôle du système de transaction. Par conséquent, il n’est pas approprié de les mettre à jour à l’aide de règles, étant donné que les règles ne sont pas appelés lorsque l’utilisateur exécute la commande Annuler.  
   
  Au lieu de cela, vous pouvez mettre à jour des fonctionnalités à l’aide de <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnAssociatedPropertyChanged%2A>. Dans l’exemple suivant, le style de flèche d’un connecteur est contrôlé par une valeur d’une propriété de domaine dans la relation qui affiche le connecteur :  

@@ -9,24 +9,23 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 35b45a407b5c07bc5c6ab6db87e972b3787890ad
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ac5507722a62942dbca67518c2f6689bf29aacfc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953809"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065706"
 ---
 # <a name="one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer"></a>Un ou plusieurs éléments sélectionnés contient un type de données non pris en charge par le concepteur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Un ou plusieurs des éléments déplacés à partir de **Explorateur de serveurs**/**Database Explorer** sur le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] contient un type de données qui n’est pas pris en charge par le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] (par exemple, [Types CLR définis par l’utilisateur](http://msdn.microsoft.com/library/9f70e0b0-3a0d-4eb1-b914-07a5d0c167c2)).  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
-1.  Créez une vue basée sur la table souhaitée qui n'inclut pas le type de données non pris en charge.  
+1. Créez une vue basée sur la table souhaitée qui n'inclut pas le type de données non pris en charge.  
   
-2.  Faites glisser la vue à partir de **Explorateur de serveurs**/**Database Explorer** sur le concepteur.  
+2. Faites glisser la vue à partir de **Explorateur de serveurs**/**Database Explorer** sur le concepteur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

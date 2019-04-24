@@ -12,12 +12,12 @@ ms.assetid: 34853412-ab8a-4caa-9601-7d0727b2985d
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: baefb34bf098b9d5b712267a88303b25a2d5687d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b7845d80b895d1b4c68afc59f2d2fe821be11f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951240"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102794"
 ---
 # <a name="adding-and-removing-property-pages"></a>Ajout et suppression de pages de propriétés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Le Concepteur de projet fournit un emplacement centralisé pour la gestion des p
   
 #### <a name="to-remove-a-property-page-in-project-designer"></a>Pour supprimer une page de propriétés dans le Concepteur de projets  
   
-1.  Remplacer le `GetProperty(uint itemId, int propId, out object property)` méthode pour filtrer les pages de propriétés et obtenir un `clsids` liste.  
+1. Remplacer le `GetProperty(uint itemId, int propId, out object property)` méthode pour filtrer les pages de propriétés et obtenir un `clsids` liste.  
   
     ```vb  
     Protected Overrides int GetProperty(uint itemId, int propId, out object property)  
@@ -75,7 +75,7 @@ Le Concepteur de projet fournit un emplacement centralisé pour la gestion des p
     }  
     ```  
   
-2.  Supprimer le **des événements de Build** obtenu de la page à partir de `clsids` liste.  
+2. Supprimer le **des événements de Build** obtenu de la page à partir de `clsids` liste.  
   
     ```vb  
     Private buildEventsPageGuid As String = "{1E78F8DB-6C07-4D61-A18F-7514010ABD56}"  
@@ -111,7 +111,7 @@ Le Concepteur de projet fournit un emplacement centralisé pour la gestion des p
   
 #### <a name="to-add-a-property-page-in-project-designer"></a>Pour ajouter une page de propriétés dans le Concepteur de projets  
   
-1.  Créer une page de propriétés que vous souhaitez ajouter.  
+1. Créer une page de propriétés que vous souhaitez ajouter.  
   
     ```vb  
     Class DeployPropertyPage  
@@ -156,7 +156,7 @@ Le Concepteur de projet fournit un emplacement centralisé pour la gestion des p
     }  
     ```  
   
-2.  Inscrire votre nouvelle page de propriétés.  
+2. Inscrire votre nouvelle page de propriétés.  
   
     ```vb  
     <MSVSIP.ProvideObject(GetType(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)>  
@@ -166,7 +166,7 @@ Le Concepteur de projet fournit un emplacement centralisé pour la gestion des p
     [MSVSIP.ProvideObject(typeof(DeployPropertyPage), RegisterUsing = RegistrationMethod.CodeBase)]  
     ```  
   
-3.  Remplacer le `GetProperty(uint itemId, int propId, out object property)` méthode pour filtrer les pages de propriétés, d’obtenir un `clsids` répertorier et ajouter une nouvelle page de propriétés.  
+3. Remplacer le `GetProperty(uint itemId, int propId, out object property)` méthode pour filtrer les pages de propriétés, d’obtenir un `clsids` répertorier et ajouter une nouvelle page de propriétés.  
   
     ```vb  
     Protected Overrides Function GetProperty(ByVal itemId As UInteger, ByVal propId As Integer, ByRef [property] As Object) As Integer  

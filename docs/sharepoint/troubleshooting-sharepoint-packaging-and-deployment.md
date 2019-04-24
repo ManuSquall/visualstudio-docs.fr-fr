@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ed0801e9654e1d2f78f2ed49f47dabe6f0e619ab
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 0c949f9a5d8c56f44e0754715d056b4d3837f76a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54868038"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087597"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>Résoudre les problèmes de déploiement et empaquetage de SharePoint
   Cette rubrique couvre différents problèmes que vous pouvez rencontrer lorsque vous empaquetez et déployez des solutions SharePoint.
@@ -65,7 +65,7 @@ ms.locfileid: "54868038"
    Vous pouvez ajouter des étapes de déploiement personnalisées pour les autres modifications le **F5** comportement. Pour plus d’informations, consultez [Procédure pas à pas : Créer une étape de déploiement personnalisée pour les projets SharePoint](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md).
 
 ## <a name="delay-displaying-sharepoint-page-when-deploy-visual-web-part"></a>Différer l’affichage de page SharePoint lorsque déployez le composant visual web part
- L’affichage de la page SharePoint prend un certain temps lors du déploiement d’un composant Visual Web Part dans le dossier Bin sur [!INCLUDE[wiprlhext](../sharepoint/includes/wiprlhext-md.md)], [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] ou [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)]. Si vous modifiez des fichiers dans un répertoire [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] de niveau supérieur, tel que le répertoire bin, l'application Web entière est recompilée. Cela peut différer de 25 secondes le rendu de la page SharePoint.
+ L'affichage de la page SharePoint prend un certain temps lors du déploiement d'un composant Visual Web Part dans le dossier Bin sur [!INCLUDE[wiprlhext](../sharepoint/includes/wiprlhext-md.md)], [!INCLUDE[win7](../sharepoint/includes/win7-md.md)] ou [!INCLUDE[winsvr08](../sharepoint/includes/winsvr08-md.md)]. Si vous modifiez des fichiers dans un répertoire [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] de niveau supérieur, tel que le répertoire bin, l'application Web entière est recompilée. Cela peut différer de 25 secondes le rendu de la page SharePoint.
 
 ### <a name="error-message"></a>Message d'erreur
  Aucun.
@@ -73,9 +73,9 @@ ms.locfileid: "54868038"
 ### <a name="resolution"></a>Résolution
  Pour contourner ce problème, exécutez les étapes suivantes :
 
-1.  Installez la mise à jour KB967535 comme indiqué dans l’article du Support de Microsoft [corriger : Un correctif est disponible pour résoudre deux problèmes dans ASP.NET sur IIS 7.0 pour Windows Vista et Windows Server 2008](http://go.microsoft.com/fwlink/?LinkId=179055).
+1. Installez la mise à jour KB967535 comme indiqué dans l’article du Support de Microsoft [corriger : Un correctif est disponible pour résoudre deux problèmes dans ASP.NET sur IIS 7.0 pour Windows Vista et Windows Server 2008](http://go.microsoft.com/fwlink/?LinkId=179055).
 
-2.  Ajoutez la ligne suivante au fichier Web.config :
+2. Ajoutez la ligne suivante au fichier Web.config :
 
     ```xml
     <compilation batch="false" optimizeCompilations="true">
@@ -97,13 +97,13 @@ ms.locfileid: "54868038"
  Erreur lors de l’étape de déploiement 'Ajouter une Solution' : Une fonctionnalité avec l’ID [#] a déjà été installée dans cette batterie de serveurs. Utilisez l’attribut force pour installer à nouveau la fonctionnalité de façon explicite.
 
 ### <a name="resolution"></a>Résolution
- Cette erreur est due au mode de retrait des fonctionnalités d’éléments Visual Web Part dans SharePoint. Pour déployer correctement le composant visual Web part, redéployez la solution en choisissant le **F5** clé.
+ Cette erreur est due au mode de retrait des fonctionnalités d'éléments Visual Web Part dans SharePoint. Pour déployer correctement le composant visual Web part, redéployez la solution en choisissant le **F5** clé.
 
 ## <a name="warning-appears-when-deploying-nested-user-controls"></a>Avertissement s’affiche lors du déploiement des contrôles utilisateur imbriqués
  Cet avertissement se produit lorsque vous déployez une solution SharePoint qui contient des contrôles utilisateur imbriqués, tels qu'un composant Visual Web Part qui contient un contrôle utilisateur ou un contrôle utilisateur qui contient un composant Visual Web Part ou un autre contrôle utilisateur. Cet avertissement se produit si vous ajoutez un contrôle à un concepteur en le faisant glisser à partir de la boîte à outils ou en utilisant la @Register directive dans la vue de Source.
 
 ### <a name="error-message"></a>Message d'erreur
- Avertissement 1 l’élément ' [*nom du contrôle*]' n’est pas un élément connu. Ceci peut se produire s’il existe une erreur de compilation dans le site web ou si le fichier Web.config est manquant.
+ Avertissement 1 l’élément ' [*nom du contrôle*]' n’est pas un élément connu. Ceci peut se produire s'il existe une erreur de compilation dans le site Web ou si le fichier Web.config est manquant.
 
 ### <a name="resolution"></a>Résolution
  Si le [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] système de projet n’a pas connaissance d’un contrôle utilisateur imbriqué, il ne peut pas fournir IntelliSense et il émet l’avertissement. Le système de projet n’a pas connaissance d’un contrôle utilisateur imbriqué si le projet n’est pas généré et le concepteur n’est pas fermé puis rouvert, ou si le retrait automatique est activée, ce qui entraîne le contrôle utilisateur doit être retirée de la ruche SharePoint après le débogage.

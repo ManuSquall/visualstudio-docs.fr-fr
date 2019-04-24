@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b3ae815bb0f9a11b19c711a3a860f8734701cc39
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 3fc21eb85c46d74fabc777147b14575babd9be8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54775825"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113012"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Raccourcis clavier et souris dans le diagramme de classes et dans la fenêtre Détails de classe(Concepteur de classes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +28,15 @@ Vous pouvez utiliser le clavier en plus de la souris pour naviguer dans le Conce
   
  **Dans cette rubrique**  
   
--   [Utilisation de la souris dans le Concepteur de classes](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDesigner)  
+- [Utilisation de la souris dans le Concepteur de classes](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDesigner)  
   
--   [Utilisation de la souris dans la fenêtre Détails de classe](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDetails)  
+- [Utilisation de la souris dans la fenêtre Détails de classe](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#MouseClassDetails)  
   
--   [Utilisation du clavier dans le Concepteur de classes](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDesigner)  
+- [Utilisation du clavier dans le Concepteur de classes](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDesigner)  
   
--   [Utilisation du clavier dans la fenêtre Détails de classe](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)  
+- [Utilisation du clavier dans la fenêtre Détails de classe](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md#KeyboardClassDetails)  
   
-##  <a name="MouseClassDesigner"></a> Utilisation de la souris dans le Concepteur de classes  
+## <a name="MouseClassDesigner"></a> Utilisation de la souris dans le Concepteur de classes  
  Les actions de la souris suivantes sont prises en charge dans les diagrammes de classes :  
   
 |Combinaison avec la souris|Contexte|Description|  
@@ -49,20 +49,20 @@ Vous pouvez utiliser le clavier en plus de la souris pour naviguer dans le Conce
 |Ctrl+roulette de la souris|Diagramme de classes|Effectue un zoom.|  
 |Ctrl+Maj+clic|Diagramme de classes|Effectue un zoom.|  
   
-##  <a name="MouseClassDetails"></a> Utilisation de la souris dans la fenêtre Détails de classe  
+## <a name="MouseClassDetails"></a> Utilisation de la souris dans la fenêtre Détails de classe  
  À l'aide de la souris, vous pouvez modifier l'apparence de la fenêtre Détails de classe et des données qui y sont affichées, en procédant comme suit :  
   
--   Cliquez sur une cellule modifiable pour en modifier le contenu. Vos modifications sont répercutées partout où ces données sont stockées ou affichées, y compris dans la fenêtre Propriétés et dans le code source.  
+- Cliquez sur une cellule modifiable pour en modifier le contenu. Vos modifications sont répercutées partout où ces données sont stockées ou affichées, y compris dans la fenêtre Propriétés et dans le code source.  
   
--   Cliquez sur une cellule dans une ligne pour afficher les propriétés de l'élément représenté par cette ligne dans la fenêtre Propriétés.  
+- Cliquez sur une cellule dans une ligne pour afficher les propriétés de l'élément représenté par cette ligne dans la fenêtre Propriétés.  
   
--   Pour modifier la largeur d'une colonne, faites glisser la bordure droite de l'en-tête de colonne en fonction de la largeur de colonne souhaitée.  
+- Pour modifier la largeur d'une colonne, faites glisser la bordure droite de l'en-tête de colonne en fonction de la largeur de colonne souhaitée.  
   
--   Développez ou réduisez les nœuds de compartiment ou de propriété en cliquant sur les flèches situées à gauche de la ligne.  
+- Développez ou réduisez les nœuds de compartiment ou de propriété en cliquant sur les flèches situées à gauche de la ligne.  
   
--   La fenêtre Détails de classe comporte plusieurs boutons permettant d'ajouter de nouveaux membres à la classe actuelle et de naviguer entre les compartiments des membres dans la grille de la fenêtre Détails de classe. Pour plus d'informations, consultez la section sur les boutons de la fenêtre Détails de classe.  
+- La fenêtre Détails de classe comporte plusieurs boutons permettant d'ajouter de nouveaux membres à la classe actuelle et de naviguer entre les compartiments des membres dans la grille de la fenêtre Détails de classe. Pour plus d'informations, consultez la section sur les boutons de la fenêtre Détails de classe.  
   
-##  <a name="KeyboardClassDesigner"></a> Utilisation du clavier dans le Concepteur de classes  
+## <a name="KeyboardClassDesigner"></a> Utilisation du clavier dans le Concepteur de classes  
  Les actions du clavier suivantes sont prises en charge dans les diagrammes de classes :  
   
 |Touche|Contexte|Description|  
@@ -89,7 +89,7 @@ Vous pouvez utiliser le clavier en plus de la souris pour naviguer dans le Conce
 |MAJ+TAB|Tous les contextes|Fait naviguer jusqu'à l'enfant précédent dans le même parent (prend en charge l'habillage).|  
 |Espace|Tous les contextes|Active ou désactive la sélection de l'élément actuel.|  
   
-##  <a name="KeyboardClassDetails"></a> Utilisation du clavier dans la fenêtre Détails de classe  
+## <a name="KeyboardClassDetails"></a> Utilisation du clavier dans la fenêtre Détails de classe  
   
 > [!NOTE]
 >  Les combinaisons de touches suivantes ont été choisies pour reproduire spécifiquement l’expérience de saisie du code.  

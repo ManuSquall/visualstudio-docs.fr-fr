@@ -8,56 +8,59 @@ ms.assetid: 8d11b9a0-6175-4f2e-8e7f-79daee1bfd41
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c8d0dfb8a7758d0619557f6c54056cd88ec68771
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 87520a7e17d194d7f5cc28665a6f23466bface65
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950779"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086427"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Couleurs partagées pour Visual Studio
+
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Quand vous concevez l’interface utilisateur qui utilise des éléments d’interpréteur de commandes Visual Studio, ou si vous voulez que votre élément d’interface soit cohérent avec des fonctionnalités similaires, utilisez des noms de jeton existants dans les fichiers de définition de package pour choisir et assigner des couleurs. Ainsi, votre interface utilisateur reste cohérente avec l’environnement Visual Studio global et elle se met à jour automatiquement quand des thèmes sont ajoutés ou mis à jour.
 
- Cet article décrit les éléments d’interface utilisateur communs et les noms de jeton qu’ils utilisent, que vous pouvez référencer pour créer une interface utilisateur similaire. Pour plus d’informations sur la façon d’accéder à ces jetons de couleur, consultez [The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).
+Cet article décrit les éléments d’interface utilisateur communs et les noms de jeton qu’ils utilisent, que vous pouvez référencer pour créer une interface utilisateur similaire. Pour plus d’informations sur la façon d’accéder à ces jetons de couleur, consultez [The VSColor Service](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_TheVSColorService).
 
- Assurez-vous d’utiliser correctement les noms de jeton :
+Assurez-vous d’utiliser correctement les noms de jeton :
 
--   **Utiliser des noms de jeton basés sur la fonction, pas sur la couleur elle-même.** Les couleurs partagées communes sont associées à des éléments d’interface spécifiques et uniquement destinées à être utilisées pour des fonctionnalités identiques ou similaires. Par exemple, ne réutilisez pas la couleur d’une zone de liste modifiable enfoncée pour une animation de progression en rotation juste parce que vous aimez la couleur. Les fonctions de la zone de liste modifiable et l’animation sont différentes, et si la couleur associée à la zone de liste modifiable change, elle peut ne plus convenir à votre élément d’animation. Une utilisation cohérente des couleurs permet de guider vos utilisateurs et d’éviter toute confusion.
+- **Utiliser des noms de jeton basés sur la fonction, pas sur la couleur elle-même.** Les couleurs partagées communes sont associées à des éléments d’interface spécifiques et uniquement destinées à être utilisées pour des fonctionnalités identiques ou similaires. Par exemple, ne réutilisez pas la couleur d’une zone de liste modifiable enfoncée pour une animation de progression en rotation juste parce que vous aimez la couleur. Les fonctions de la zone de liste modifiable et l’animation sont différentes, et si la couleur associée à la zone de liste modifiable change, elle peut ne plus convenir à votre élément d’animation. Une utilisation cohérente des couleurs permet de guider vos utilisateurs et d’éviter toute confusion.
 
--   **Utiliser des couleurs d’arrière-plan et de texte dans la combinaison correcte.** Les couleurs d’arrière-plan destinées à être utilisées avec du texte possèdent une couleur de texte associée. N’utilisez pas de couleurs de texte autres que celles spécifiées pour l’arrière-plan. En l’absence de couleur de texte associée, n’utilisez pas cette couleur d’arrière-plan pour n’importe quelle surface sur laquelle vous voulez présenter du texte. Des combinaisons d’autres couleurs de texte et d’arrière-plan peuvent donner une interface illisible.
+- **Utiliser des couleurs d’arrière-plan et de texte dans la combinaison correcte.** Les couleurs d’arrière-plan destinées à être utilisées avec du texte possèdent une couleur de texte associée. N’utilisez pas de couleurs de texte autres que celles spécifiées pour l’arrière-plan. En l’absence de couleur de texte associée, n’utilisez pas cette couleur d’arrière-plan pour n’importe quelle surface sur laquelle vous voulez présenter du texte. Des combinaisons d’autres couleurs de texte et d’arrière-plan peuvent donner une interface illisible.
 
--   **Utiliser les couleurs de contrôle qui sont appropriées à leur emplacement.** Dans certains états, certains contrôles Visual Studio ne présentent pas des couleurs de bordure et d’arrière-plan distinctes. Au lieu de cela, ils sélectionnent ces couleurs dans les surfaces qui se trouvent derrière. Veillez à toujours utiliser les noms de jeton qui conviennent à l’emplacement où vous placez le contrôle.
+- **Utiliser les couleurs de contrôle qui sont appropriées à leur emplacement.** Dans certains états, certains contrôles Visual Studio ne présentent pas des couleurs de bordure et d’arrière-plan distinctes. Au lieu de cela, ils sélectionnent ces couleurs dans les surfaces qui se trouvent derrière. Veillez à toujours utiliser les noms de jeton qui conviennent à l’emplacement où vous placez le contrôle.
 
 > [!IMPORTANT]
->  N’utilisez pas les jetons trouvés dans les catégories « Page d’accueil » ou « Cider ».
+> N’utilisez pas les jetons trouvés dans les catégories « Page d’accueil » ou « Cider ».
 
 ## <a name="command-structures"></a>Structures de commande
 
-###  <a name="BKMK_CommandMenus"></a> Menus
- Menus peuvent se produire à plusieurs endroits dans Visual Studio : la barre de menus principale incorporée dans le document ou l’outil windows, ou sur avec le bouton droit à divers endroits de l’IDE. Les implémentations de menus associées aux autres éléments d’interface utilisateur sont décrites dans la section de l’élément correspondant. Vous devez toujours utiliser l’implémentation de menu standard fournie par l’environnement Visual Studio. Toutefois, dans de rares cas, vous n’aurez peut-être pas accès aux menus Visual Studio standard. Dans ce cas, utilisez les noms de jeton suivants pour vous assurer que votre interface utilisateur est cohérente avec les autres menus dans Visual Studio.
+### <a name="BKMK_CommandMenus"></a> Menus
 
- ![Ligne rouge de menus](../../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303-000_MenuRedline")
+Menus peuvent se produire à plusieurs endroits dans Visual Studio : la barre de menus principale incorporée dans le document ou l’outil windows, ou sur avec le bouton droit à divers endroits de l’IDE. Les implémentations de menus associées aux autres éléments d’interface utilisateur sont décrites dans la section de l’élément correspondant. Vous devez toujours utiliser l’implémentation de menu standard fournie par l’environnement Visual Studio. Toutefois, dans de rares cas, vous n’aurez peut-être pas accès aux menus Visual Studio standard. Dans ce cas, utilisez les noms de jeton suivants pour vous assurer que votre interface utilisateur est cohérente avec les autres menus dans Visual Studio.
 
- Utilisez...
- -   chaque fois que vous devez créer un menu personnalisé.
+![Ligne rouge de menus](../../extensibility/ux-guidelines/media/0303-000-menuredline.png "0303-000_MenuRedline")
+
+Utilisez...
+- chaque fois que vous devez créer un menu personnalisé.
 
 - quand vous voulez faire correspondre un nouveau composant d’interface utilisateur aux menus Visual Studio.
 
-  N’utilisez pas...
-  la couleur d’arrière-plan toute seule. Utilisez toujours la combinaison arrière-plan/premier plan spécifiée.
+N’utilisez pas...
+la couleur d’arrière-plan toute seule. Utilisez toujours la combinaison arrière-plan/premier plan spécifiée.
 
 #### <a name="menu-title"></a>Titre de menu
- Les titres de menu comprennent un arrière-plan, une bordure et le texte du titre, ainsi qu’un glyphe facultatif, généralement quand le menu se trouve dans une barre de commandes.
 
- ![Ligne rouge de titre de menu](../../extensibility/ux-guidelines/media/0303-001-menutitleredline.png "0303-001_MenuTitleRedline")
+Les titres de menu comprennent un arrière-plan, une bordure et le texte du titre, ainsi qu’un glyphe facultatif, généralement quand le menu se trouve dans une barre de commandes.
 
- Utilisez...
+![Ligne rouge de titre de menu](../../extensibility/ux-guidelines/media/0303-001-menutitleredline.png "0303-001_MenuTitleRedline")
+
+Utilisez...
 chaque fois que vous créez un titre de menu personnalisé.
 
- N’utilisez pas...
- -   pour tout élément que vous ne voulez pas toujours faire correspondre au titre de menu.
+N’utilisez pas...
+- pour tout élément que vous ne voulez pas toujours faire correspondre au titre de menu.
 
 - dans une combinaison arrière-plan/premier plan autre que celle spécifiée.
 
@@ -192,15 +195,16 @@ chaque fois que vous créez un titre de menu personnalisé.
   Aucun.
 
 #### <a name="menu"></a>Menu
- Un élément de menu individuel comporte le texte du menu et éventuellement une icône, une case à cocher ou un glyphe de sous-menu. Sa couleur d’arrière-plan et de texte change au passage du curseur de la souris. Ce jeton de couleur est une paire arrière-plan/premier plan.
 
- ![Ligne rouge d’éléments de menu](../../extensibility/ux-guidelines/media/0303-009-menuitemredline.png "0303-009_MenuItemRedline")
+Un élément de menu individuel comporte le texte du menu et éventuellement une icône, une case à cocher ou un glyphe de sous-menu. Sa couleur d’arrière-plan et de texte change au passage du curseur de la souris. Ce jeton de couleur est une paire arrière-plan/premier plan.
 
- Utilisez...
+![Ligne rouge d’éléments de menu](../../extensibility/ux-guidelines/media/0303-009-menuitemredline.png "0303-009_MenuItemRedline")
+
+Utilisez...
 pour toute liste déroulante lancée à partir d’une barre de menus ou barre de commandes.
 
- N’utilisez pas...
- -   pour toute liste déroulante qui apparaît dans un autre contexte.
+N’utilisez pas...
+- pour toute liste déroulante qui apparaît dans un autre contexte.
 
 - dans une combinaison arrière-plan/premier plan autre que celle spécifiée.
 
@@ -351,32 +355,34 @@ pour toute liste déroulante lancée à partir d’une barre de menus ou barre d
   `Environment.CommandBarSelectedIconDisabled`
 
 ### <a name="command-bar"></a>Barre de commandes
- La barre de commandes peut apparaître à plusieurs endroits dans l’IDE Visual Studio, notamment dans l’interface de commande et incorporée dans des fenêtres de document ou d’outil.
 
- En règle générale, utilisez toujours l’implémentation de barre de commandes standard fournie par l’environnement Visual Studio. L’utilisation du mécanisme standard permet à tous les détails visuels d’apparaître correctement et aux éléments interactifs de se comporter de manière cohérente avec les autres contrôles de barre de commandes Visual Studio. Toutefois, si vous avez besoin de créer votre propre barre de commandes, assurez-vous d’utiliser un style adéquat avec les noms de jeton suivants.
+La barre de commandes peut apparaître à plusieurs endroits dans l’IDE Visual Studio, notamment dans l’interface de commande et incorporée dans des fenêtres de document ou d’outil.
 
- ![Ligne rouge de barre de commandes](../../extensibility/ux-guidelines/media/0303-018-commandbarredline.png "0303-018_CommandBarRedline")
+En règle générale, utilisez toujours l’implémentation de barre de commandes standard fournie par l’environnement Visual Studio. L’utilisation du mécanisme standard permet à tous les détails visuels d’apparaître correctement et aux éléments interactifs de se comporter de manière cohérente avec les autres contrôles de barre de commandes Visual Studio. Toutefois, si vous avez besoin de créer votre propre barre de commandes, assurez-vous d’utiliser un style adéquat avec les noms de jeton suivants.
 
- ![Ligne rouge de bouton de dépassement de capacité](../../extensibility/ux-guidelines/media/0303-019-overflowbuttonredline.png "0303-019_OverflowButtonRedline")
+![Ligne rouge de barre de commandes](../../extensibility/ux-guidelines/media/0303-018-commandbarredline.png "0303-018_CommandBarRedline")
 
- Utilisez...
+![Ligne rouge de bouton de dépassement de capacité](../../extensibility/ux-guidelines/media/0303-019-overflowbuttonredline.png "0303-019_OverflowButtonRedline")
+
+Utilisez...
 aux endroits où vous avez besoin d’une barre de commandes incorporée alors que vous ne pouvez pas utiliser l’implémentation de barre de commandes Visual Studio standard.
 
- N’utilisez pas...
- -   pour les éléments d’interface utilisateur non similaires à une barre de commandes.
+N’utilisez pas...
+- pour les éléments d’interface utilisateur non similaires à une barre de commandes.
 
--   pour les composants de barre de commandes autres que ceux pour lesquels des noms de jeton sont spécifiés.
+- pour les composants de barre de commandes autres que ceux pour lesquels des noms de jeton sont spécifiés.
 
 #### <a name="command-bar-group"></a>Groupe de barres de commandes
- Un groupe de barres de commandes se compose d’un ensemble de contrôles de barre de commandes et peut contenir tout nombre de boutons, boutons partagés, menus déroulants, zones de liste modifiable ou menus. Les couleurs de ces contrôles sont régies par des noms de jeton distincts et sont décrites individuellement dans une autre section de ce guide. Un trait de séparation est utilisé pour diviser un groupe de barres de commandes en sous-groupes associés.
 
- ![Ligne rouge de groupe de barres de commande](../../extensibility/ux-guidelines/media/0303-020-commandbargroupredline.png "0303-020_CommandBarGroupRedline")
+Un groupe de barres de commandes se compose d’un ensemble de contrôles de barre de commandes et peut contenir tout nombre de boutons, boutons partagés, menus déroulants, zones de liste modifiable ou menus. Les couleurs de ces contrôles sont régies par des noms de jeton distincts et sont décrites individuellement dans une autre section de ce guide. Un trait de séparation est utilisé pour diviser un groupe de barres de commandes en sous-groupes associés.
 
- Utilisez...
+![Ligne rouge de groupe de barres de commande](../../extensibility/ux-guidelines/media/0303-020-commandbargroupredline.png "0303-020_CommandBarGroupRedline")
+
+Utilisez...
 aux endroits où vous avez besoin d’une barre de commandes incorporée alors que vous ne pouvez pas utiliser l’implémentation de barre de commandes Visual Studio standard.
 
- N’utilisez pas...
- -   pour les éléments d’interface utilisateur non similaires à une barre de commandes.
+N’utilisez pas...
+- pour les éléments d’interface utilisateur non similaires à une barre de commandes.
 
 - pour les composants de barre de commandes autres que ceux pour lesquels des noms de jeton sont spécifiés.
 
@@ -407,15 +413,16 @@ aux endroits où vous avez besoin d’une barre de commandes incorporée alors q
   `Environment.CommandBarToolBarSeparatorHighlight`
 
 #### <a name="command-icons"></a>Icônes de commande
- ![Ligne rouge d’icône de commande](../../extensibility/ux-guidelines/media/0303-021-commandiconredline1.png "0303-021_CommandIconRedline1")
 
- ![Ligne rouge d’icône de commande](../../extensibility/ux-guidelines/media/0303-022-commandiconredline2.png "0303-022_CommandIconRedline2")
+![Ligne rouge d’icône de commande](../../extensibility/ux-guidelines/media/0303-021-commandiconredline1.png "0303-021_CommandIconRedline1")
 
- Utilisez...
+![Ligne rouge d’icône de commande](../../extensibility/ux-guidelines/media/0303-022-commandiconredline2.png "0303-022_CommandIconRedline2")
+
+Utilisez...
 pour les boutons à placer sur une barre de commandes.
 
- N’utilisez pas...
- -   pour les contrôles qui possèdent leurs propres noms de jeton.
+N’utilisez pas...
+- pour les contrôles qui possèdent leurs propres noms de jeton.
 
 - dans une combinaison arrière-plan/premier plan autre que celle spécifiée.
 
@@ -551,20 +558,20 @@ pour les boutons à placer sur une barre de commandes.
 
   N/A
 
-####  <a name="BKMK_CommandComboBox"></a> Zone de liste déroulante
+#### <a name="BKMK_CommandComboBox"></a> Zone de liste déroulante
 
 > [!IMPORTANT]
->  Les zones de liste modifiable ressemblent aux listes déroulantes, mais elles comprennent une zone de texte modifiable. Si votre liste déroulante n’inclut pas de zone de texte modifiable, utilisez les jetons de couleur disponibles sous [Drop-down](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).
+> Les zones de liste modifiable ressemblent aux listes déroulantes, mais elles comprennent une zone de texte modifiable. Si votre liste déroulante n’inclut pas de zone de texte modifiable, utilisez les jetons de couleur disponibles sous [Drop-down](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).
 
- ![Ligne rouge de zone de liste déroulante](../../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303-029_ComboBoxRedline")
+![Ligne rouge de zone de liste déroulante](../../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303-029_ComboBoxRedline")
 
- Utilisez...
- -   pour créer des zones de liste modifiable personnalisées.
+Utilisez...
+- pour créer des zones de liste modifiable personnalisées.
 
 - pour créer un contrôle de barre de commandes similaire à une zone de liste modifiable.
 
   N’utilisez pas...
-  -   pour tout élément que vous ne voulez pas toujours faire correspondre à l’interface utilisateur de la barre de commandes.
+  - pour tout élément que vous ne voulez pas toujours faire correspondre à l’interface utilisateur de la barre de commandes.
 
 - quand vous avez accès à une zone de liste modifiable qui comporte un style.
 
@@ -798,18 +805,18 @@ pour les boutons à placer sur une barre de commandes.
 
   `Environment.ComboBoxDisabledGlyph`
 
-####  <a name="BKMK_CommandDropDown"></a> Drop-down
+#### <a name="BKMK_CommandDropDown"></a> Drop-down
 
 > [!IMPORTANT]
->  Les listes déroulantes ressemblent aux zones de liste modifiable, mais elles ne disposent pas de zones de texte modifiable. Si votre liste déroulante inclut une zone de texte modifiable, utilisez les jetons de couleur disponibles sous [Combo box](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).
+> Les listes déroulantes ressemblent aux zones de liste modifiable, mais elles ne disposent pas de zones de texte modifiable. Si votre liste déroulante inclut une zone de texte modifiable, utilisez les jetons de couleur disponibles sous [Combo box](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).
 
- ![DROP&#45;vers le bas ligne rouge](../../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303-042_DropdownRedline")
+![DROP&#45;vers le bas ligne rouge](../../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303-042_DropdownRedline")
 
- Utilisez...
+Utilisez...
 quand vous créez des contrôles de liste déroulante personnalisés.
 
- N’utilisez pas...
- -   pour tout élément qui n’est pas similaire à une liste déroulante.
+N’utilisez pas...
+- pour tout élément qui n’est pas similaire à une liste déroulante.
 
 - pour les zones de liste modifiable ou les boutons partagés.
 
@@ -1010,15 +1017,16 @@ quand vous créez des contrôles de liste déroulante personnalisés.
   `Environment.DropDownDisabledGlyph`
 
 #### <a name="split-button"></a>Bouton Fractionner
- Les boutons partagés partagent de nombreux noms de jeton avec d’autres contrôles de barre de commandes, tels que des boutons, menus et texte de barre de commandes. Toutes les actions nécessaires et les noms de jeton bouton de liste déroulante sont répétés ici par commodité. Les listes déroulantes de bouton partagé sont des implémentations de la barre de commandes [Menus](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus).
 
- ![Ligne rouge de bouton partagé](../../extensibility/ux-guidelines/media/0303-053-splitbuttonredline.png "0303-053_SplitButtonRedline")
+Les boutons partagés partagent de nombreux noms de jeton avec d’autres contrôles de barre de commandes, tels que des boutons, menus et texte de barre de commandes. Toutes les actions nécessaires et les noms de jeton bouton de liste déroulante sont répétés ici par commodité. Les listes déroulantes de bouton partagé sont des implémentations de la barre de commandes [Menus](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus).
 
- Utilisez...
+![Ligne rouge de bouton partagé](../../extensibility/ux-guidelines/media/0303-053-splitbuttonredline.png "0303-053_SplitButtonRedline")
+
+Utilisez...
 quand vous créez un bouton partagé personnalisé.
 
- N’utilisez pas...
- -   pour les autres types de boutons.
+N’utilisez pas...
+- pour les autres types de boutons.
 
 - dans une combinaison arrière-plan/premier plan autre que celle spécifiée.
 
@@ -1425,7 +1433,7 @@ pour toute interface utilisateur que vous ne voulez pas modifier automatiquement
   quand vous créez des onglets de document personnalisés.
 
   N’utilisez pas...
-  -   pour des onglets provisoires (en version préliminaire).
+  - pour des onglets provisoires (en version préliminaire).
 
 - pour toute interface utilisateur que vous ne voulez pas modifier automatiquement si l’interpréteur de commandes comporte une mise à jour de thème.
 
@@ -1538,15 +1546,16 @@ pour toute interface utilisateur que vous ne voulez pas modifier automatiquement
  Défini sur la même couleur que l’arrière-plan.
 
 #### <a name="preview-tab"></a>Onglet d’aperçu
- L’onglet d’aperçu apparaît du côté droit du canal d’onglet de document quand l’utilisateur clique sur un élément dans la fenêtre Outil de l’Explorateur de solutions. Il sert d’aperçu du document et donne également à l’utilisateur la possibilité de laisser le document ouvert sur le côté gauche du canal d’onglet de document. Une seul onglet d’aperçu peut être ouvert à la fois. Les onglets d’aperçu possèdent deux états, arrière-plan et sélectionné, comme les onglets ouverts, et leur état actif peut être avec ou sans focus.
 
- ![Ligne rouge d’onglet d’aperçu](../../extensibility/ux-guidelines/media/0303-078-previewtabredline.png "0303-078_PreviewTabRedline")
+L’onglet d’aperçu apparaît du côté droit du canal d’onglet de document quand l’utilisateur clique sur un élément dans la fenêtre Outil de l’Explorateur de solutions. Il sert d’aperçu du document et donne également à l’utilisateur la possibilité de laisser le document ouvert sur le côté gauche du canal d’onglet de document. Une seul onglet d’aperçu peut être ouvert à la fois. Les onglets d’aperçu possèdent deux états, arrière-plan et sélectionné, comme les onglets ouverts, et leur état actif peut être avec ou sans focus.
 
- Utilisez...
+![Ligne rouge d’onglet d’aperçu](../../extensibility/ux-guidelines/media/0303-078-previewtabredline.png "0303-078_PreviewTabRedline")
+
+Utilisez...
 à tout endroit où vous créez un aperçu provisoire quand vous voulez faire correspondre un élément à la couleur d’onglet d’aperçu actuelle.
 
- N’utilisez pas...
- -   pour tout type de document ou d’onglet qui n’est pas provisoire (en version préliminaire).
+N’utilisez pas...
+- pour tout type de document ou d’onglet qui n’est pas provisoire (en version préliminaire).
 
 - pour toute interface utilisateur que vous ne voulez pas modifier automatiquement si l’interpréteur de commandes comporte une mise à jour de thème.
 
@@ -1661,15 +1670,16 @@ pour toute interface utilisateur que vous ne voulez pas modifier automatiquement
   Défini sur la même couleur que l’arrière-plan.
 
 #### <a name="document-overflow-button"></a>Bouton de dépassement de capacité de document
- Le bouton de dépassement de capacité de document est présent si un ou plusieurs documents sont ouverts, que l’espace vertical défini dans la configuration actuelle suffise ou non pour loger tous les onglets de document. Le menu déroulant de dépassement de capacité de document, contrôlé par les couleurs **CommandBarMenu** (consultez [Menus](../../misc/shared-colors.md#BKMK_CommandMenus)), présente la liste de tous les documents ouverts, à la fois visibles et masqués, ainsi que le glyphe de dépassement de capacité change selon que tous les documents ouverts sont affichés dans le canal d’onglet.
 
- ![Ligne rouge de dépassement de capacité](../../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303-083_OverflowRedline")
+Le bouton de dépassement de capacité de document est présent si un ou plusieurs documents sont ouverts, que l’espace vertical défini dans la configuration actuelle suffise ou non pour loger tous les onglets de document. Le menu déroulant de dépassement de capacité de document, contrôlé par les couleurs **CommandBarMenu** (consultez [Menus](../../misc/shared-colors.md#BKMK_CommandMenus)), présente la liste de tous les documents ouverts, à la fois visibles et masqués, ainsi que le glyphe de dépassement de capacité change selon que tous les documents ouverts sont affichés dans le canal d’onglet.
 
- Utilisez...
+![Ligne rouge de dépassement de capacité](../../extensibility/ux-guidelines/media/0303-083-overflowredline.png "0303-083_OverflowRedline")
+
+Utilisez...
 quand vous créez un bouton de dépassement de capacité de document personnalisé.
 
- N’utilisez pas...
- -   pour une interface utilisateur qui n’est pas similaire à un bouton de dépassement de capacité.
+N’utilisez pas...
+- pour une interface utilisateur qui n’est pas similaire à un bouton de dépassement de capacité.
 
 - pour des boutons de dépassement de capacité de barre de commandes.
 
@@ -1895,13 +1905,14 @@ pour toute interface utilisateur que vous ne voulez pas modifier automatiquement
  `Environment.TitleBarDragHandle`
 
 #### <a name="title-bar-buttons"></a>Boutons de barre de titre
- ![Ligne rouge de bouton de barre de titre](../../extensibility/ux-guidelines/media/0303-095-titlebarbuttonredline.png "0303-095_TitleBarButtonRedline")
 
- Utilisez...
+![Ligne rouge de bouton de barre de titre](../../extensibility/ux-guidelines/media/0303-095-titlebarbuttonredline.png "0303-095_TitleBarButtonRedline")
+
+Utilisez...
 pour les boutons qui apparaissent dans l’interface utilisateur et qui utilisent les jetons de couleur des barres de titre de fenêtre Outil.
 
- N’utilisez pas...
- -   pour les boutons qui apparaissent à d’autres endroits.
+N’utilisez pas...
+- pour les boutons qui apparaissent à d’autres endroits.
 
 - dans une combinaison arrière-plan/premier plan autre que celle spécifiée.
 
@@ -2227,7 +2238,7 @@ pour toute interface utilisateur que vous ne voulez pas modifier automatiquement
   quand vous concevez une zone de recherche personnalisée.
 
   N’utilisez pas...
-  -   pour tout élément qui n’est pas une zone de recherche.
+  - pour tout élément qui n’est pas une zone de recherche.
 
 - pour tout élément que vous ne voulez pas toujours faire correspondre à l’interface utilisateur de la zone de recherche.
 
@@ -2516,17 +2527,18 @@ pour toute interface utilisateur que vous ne voulez pas modifier automatiquement
   Aucun.
 
 #### <a name="search-drop-down-lists"></a>Listes déroulantes de recherche
- Le menu déroulant de la zone de recherche est susceptible d’être légèrement plus complexe que les autres menus déroulants dans Visual Studio. Les sections « options de recherche » et « recherches suggérées » peuvent apparaître seules ou ensemble dans le menu et chacune possède une couleur distincte. Une ligne sépare également ces deux sections quand elles apparaissent ensemble et une bordure entoure l’ensemble du menu déroulant.
 
- ![Liste de recherche&#45;vers le bas ligne rouge](../../extensibility/ux-guidelines/media/0303-124-searchdropdownredline.png "0303-124_SearchDropdownRedline")
+Le menu déroulant de la zone de recherche est susceptible d’être légèrement plus complexe que les autres menus déroulants dans Visual Studio. Les sections « options de recherche » et « recherches suggérées » peuvent apparaître seules ou ensemble dans le menu et chacune possède une couleur distincte. Une ligne sépare également ces deux sections quand elles apparaissent ensemble et une bordure entoure l’ensemble du menu déroulant.
 
- Utilisez...
- -   quand vous créez une liste déroulante de recherche personnalisée.
+![Liste de recherche&#45;vers le bas ligne rouge](../../extensibility/ux-guidelines/media/0303-124-searchdropdownredline.png "0303-124_SearchDropdownRedline")
+
+Utilisez...
+- quand vous créez une liste déroulante de recherche personnalisée.
 
 - les noms de jeton corrects pour les composants de liste corrects.
 
   N’utilisez pas...
-  -   pour les listes déroulantes qui apparaissent dans d’autres contextes.
+  - pour les listes déroulantes qui apparaissent dans d’autres contextes.
 
 - dans une combinaison arrière-plan/premier plan autre que celle spécifiée.
 
@@ -2906,16 +2918,17 @@ quand vous créez une interface utilisateur que vous voulez faire correspondre a
 
  `Environment.ScrollBarArrowGlyphPressed`
 
-###  <a name="BKMK_TreeView"></a> Vue d’arborescence
- Plusieurs fenêtres d’outil, notamment l’Explorateur de solutions, l’Explorateur de serveurs et l’Affichage de classes, implémentent un schéma d’organisation hiérarchique dont les couleurs sont contrôlées par les noms de couleur de la catégorie TreeView. Tous les éléments d’une arborescence ont des couleurs d’arrière-plan et de texte. Les éléments qui possèdent des éléments enfants imbriqués ont également des glyphes qui indiquent si l’élément est développé ou réduit.
+### <a name="BKMK_TreeView"></a> Vue d’arborescence
 
- ![Ligne rouge d’arborescence](../../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303-147_TreeViewRedline")
+Plusieurs fenêtres d’outil, notamment l’Explorateur de solutions, l’Explorateur de serveurs et l’Affichage de classes, implémentent un schéma d’organisation hiérarchique dont les couleurs sont contrôlées par les noms de couleur de la catégorie TreeView. Tous les éléments d’une arborescence ont des couleurs d’arrière-plan et de texte. Les éléments qui possèdent des éléments enfants imbriqués ont également des glyphes qui indiquent si l’élément est développé ou réduit.
 
- Utilisez...
+![Ligne rouge d’arborescence](../../extensibility/ux-guidelines/media/0303-147-treeviewredline.png "0303-147_TreeViewRedline")
+
+Utilisez...
 à tout endroit où vous avez besoin d’implémenter un affichage d’organisation hiérarchique.
 
- N’utilisez pas...
- -   pour tout élément qui n’est pas similaire à une arborescence.
+N’utilisez pas...
+- pour tout élément qui n’est pas similaire à une arborescence.
 
 - dans une combinaison arrière-plan/premier plan autre que celle spécifiée.
 
@@ -3332,13 +3345,14 @@ pour toute interface utilisateur qui n’est pas un contrôle de case à cocher.
  `CommonControls.CheckBoxGlyphFocused`
 
 ### <a name="drop-boxcombo-box-controls"></a>Contrôles de zone déroulante/zone de liste modifiable
- ![DROP&#45;vers le bas&#47;ligne rouge de zone de liste déroulante](../../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303-167_DropDownComboBoxRedline")
 
- Utilisez...
+![DROP&#45;vers le bas&#47;ligne rouge de zone de liste déroulante](../../extensibility/ux-guidelines/media/0303-167-dropdowncomboboxredline.png "0303-167_DropDownComboBoxRedline")
+
+Utilisez...
 pour les zones déroulantes et les zones de liste modifiable qui font partie de la zone de configuration de document.
 
- N’utilisez pas...
- -   pour toute interface utilisateur qui n’est pas une zone déroulante ou une zone de liste modifiable.
+N’utilisez pas...
+- pour toute interface utilisateur qui n’est pas une zone déroulante ou une zone de liste modifiable.
 
 - pour un [Drop-down](../../misc/shared-colors.md#BKMK_CommandDropDown) ou [Combo box](../../misc/shared-colors.md#BKMK_CommandComboBox) dans la barre de commandes.
 
@@ -3690,17 +3704,18 @@ pour toute interface utilisateur qui n’est pas un contrôle tabulaire ou de gr
  Aucun.
 
 ## <a name="manifest-designer"></a>Concepteur de manifeste
- Le concepteur de manifeste sert à faciliter l’édition du fichier manifeste dans des projets Windows 8 et Windows Phone 8. Même s’il n’existe aucune infrastructure partagée disponible à la consommation, vous avez peut-être intérêt à faire correspondre la disposition et les couleurs des onglets d’orientation/de navigation à la structure générale. Pour plus d’informations sur la disposition, consultez [Layout for Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).
 
- ![Ligne rouge de Concepteur de manifeste](../../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303-175_ManifestDesignerRedline")
+Le concepteur de manifeste sert à faciliter l’édition du fichier manifeste dans des projets Windows 8 et Windows Phone 8. Même s’il n’existe aucune infrastructure partagée disponible à la consommation, vous avez peut-être intérêt à faire correspondre la disposition et les couleurs des onglets d’orientation/de navigation à la structure générale. Pour plus d’informations sur la disposition, consultez [Layout for Visual Studio](../../extensibility/ux-guidelines/layout-for-visual-studio.md).
 
- Utilisez...
- -   pour les concepteurs qui sont similaires au concepteur de manifeste.
+![Ligne rouge de Concepteur de manifeste](../../extensibility/ux-guidelines/media/0303-175-manifestdesignerredline.png "0303-175_ManifestDesignerRedline")
+
+Utilisez...
+- pour les concepteurs qui sont similaires au concepteur de manifeste.
 
 - au lieu d’utiliser des contrôles d’onglet commun en haut d’un éditeur au sein de la zone de configuration de document.
 
-  N’utilisez pas...
-  -   si vous avez plus de six onglets.
+N’utilisez pas...
+- si vous avez plus de six onglets.
 
 - pour toute interface utilisateur qui n’est pas structurée comme le concepteur de manifeste.
 
@@ -3964,15 +3979,16 @@ pour tout autre type d’interface utilisateur.
 ## <a name="shell"></a>Shell
 
 ### <a name="background"></a>Présentation
- L’arrière-plan de l’environnement comporte deux couches. La couche inférieure est une couleur unie qui recouvre l’ensemble de l’IDE. La couche supérieure se place sous l’interface de commande et entre les canaux à masquage automatique de la fenêtre Outil situés sur les côtés gauche et droit de l’IDE. Depuis Visual Studio 2013, les couches d’arrière-plan supérieure et inférieure sont définies sur la même couleur dans les thèmes clairs et foncés.
 
- ![Ligne rouge d’arrière-plan de shell](../../extensibility/ux-guidelines/media/0303-187-shellbackgroundredline.png "0303-187_ShellBackgroundRedline")
+L’arrière-plan de l’environnement comporte deux couches. La couche inférieure est une couleur unie qui recouvre l’ensemble de l’IDE. La couche supérieure se place sous l’interface de commande et entre les canaux à masquage automatique de la fenêtre Outil situés sur les côtés gauche et droit de l’IDE. Depuis Visual Studio 2013, les couches d’arrière-plan supérieure et inférieure sont définies sur la même couleur dans les thèmes clairs et foncés.
 
- Utilisez...
+![Ligne rouge d’arrière-plan de shell](../../extensibility/ux-guidelines/media/0303-187-shellbackgroundredline.png "0303-187_ShellBackgroundRedline")
+
+Utilisez...
 pour les endroits que vous voulez faire correspondre à l’arrière-plan de l’environnement Visual Studio.
 
- N’utilisez pas...
- -   en tant que remplissage pour les endroits qui ne sont pas des surfaces d’arrière-plan.
+N’utilisez pas...
+- en tant que remplissage pour les endroits qui ne sont pas des surfaces d’arrière-plan.
 
 - en guise d’arrière-plan sur lequel placer des éléments de premier plan.
 
@@ -4009,17 +4025,18 @@ pour les endroits que vous voulez faire correspondre à l’arrière-plan de l�
   `Environment.EnvironmentBackgroundGradientMiddle2`
 
 ### <a name="command-shelf"></a>Interface de commande
- Deux ensembles de noms de jeton sont utilisés pour les arrière-plans de l’interface de commande : un jeu pour l’emplacement de la barre de menus et l’autre pour l’emplacement des barres de commandes. Un groupe de barres de commandes possède ses propres valeurs de couleur d’arrière-plan, lesquelles sont décrites dans la section « Barre de commandes ». Le texte de la barre de menus et des barres de commandes est traité dans les sections qui leur sont dédiées.
 
- ![Ligne rouge d’interface de commande](../../extensibility/ux-guidelines/media/0303-188-commandshelfredline.png "0303-188_CommandShelfRedline")
+Deux ensembles de noms de jeton sont utilisés pour les arrière-plans de l’interface de commande : un jeu pour l’emplacement de la barre de menus et l’autre pour l’emplacement des barres de commandes. Un groupe de barres de commandes possède ses propres valeurs de couleur d’arrière-plan, lesquelles sont décrites dans la section « Barre de commandes ». Le texte de la barre de menus et des barres de commandes est traité dans les sections qui leur sont dédiées.
 
- Utilisez...
- -   pour les zones où vous placez des menus ou barres d’outils.
+![Ligne rouge d’interface de commande](../../extensibility/ux-guidelines/media/0303-188-commandshelfredline.png "0303-188_CommandShelfRedline")
+
+Utilisez...
+- pour les zones où vous placez des menus ou barres d’outils.
 
 - avec l’arrière-plan correct / ? combinaison de nom du jeton de premier plan.
 
-  N’utilisez pas...
-  pour les zones qui ne sont pas similaires à une interface de commande.
+N’utilisez pas...
+pour les zones qui ne sont pas similaires à une interface de commande.
 
   Composant
 

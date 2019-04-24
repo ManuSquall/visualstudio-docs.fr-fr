@@ -18,12 +18,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0dbedf6f2bc0832fa3ba54f691cbf713ccb533a9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3a229111a2aa4dd633d0728d3a1156c6a8048094
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939143"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059953"
 ---
 # <a name="how-to-enable-debugging-for-aspnet-applications"></a>Procédure : Activer le débogage pour les Applications ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,32 +35,32 @@ Pour activer le débogage, vous devez l’activer à la fois dans la page **Prop
   
 ### <a name="to-enable-aspnet-debugging-in-the-project-properties-visual-basicc"></a>Pour activer le débogage ASP.NET dans les propriétés de projet (Visual Basic/C#)  
   
-1.  Dans l’ **Explorateur de solutions**, cliquez avec le bouton droit sur le nom d’un projet web, puis sélectionnez **Propriétés**.  
+1. Dans l’ **Explorateur de solutions**, cliquez avec le bouton droit sur le nom d’un projet web, puis sélectionnez **Propriétés**.  
   
-2.  Dans la page de propriétés du projet, cliquez sur l’onglet **Web** .  
+2. Dans la page de propriétés du projet, cliquez sur l’onglet **Web** .  
   
-3.  Sous **Débogueurs**, cochez la case **ASP.NET** .  
+3. Sous **Débogueurs**, cochez la case **ASP.NET** .  
   
 ### <a name="to-enable-debugging-in-the-webconfig-file"></a>Pour activer le débogage dans un fichier web.config  
   
-1.  Ouvrez le fichier web.config dans l’éditeur de texte standard ou l’analyseur XML de votre choix.  
+1. Ouvrez le fichier web.config dans l’éditeur de texte standard ou l’analyseur XML de votre choix.  
   
     > [!NOTE]  
     > Vous ne pouvez pas accéder au fichier à distance si vous utilisez un navigateur web. Pour des raisons de sécurité, [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] configure Microsoft IIS pour empêcher le navigateur d’accéder directement aux fichiers web.config. Si vous essayez d’accéder à un fichier de configuration à l’aide d’un navigateur, vous obtenez une erreur 403 d’accès HTTP (interdit).  
   
-2.  Le fichier web.config est un fichier XML qui contient des sections imbriquées marquées par des balises. Recherchez l’élément `configuration/system.web/compilation` . Si l’élément de compilation n’existe pas, créez-le.  
+2. Le fichier web.config est un fichier XML qui contient des sections imbriquées marquées par des balises. Recherchez l’élément `configuration/system.web/compilation` . Si l’élément de compilation n’existe pas, créez-le.  
   
-3.  Si l’élément `compilation` ne contient pas d’attribut `debug` , ajoutez cet attribut à l’élément.  
+3. Si l’élément `compilation` ne contient pas d’attribut `debug` , ajoutez cet attribut à l’élément.  
   
-4.  Assurez-vous que l’attribut `debug` est défini sur `true`.  
+4. Assurez-vous que l’attribut `debug` est défini sur `true`.  
   
 Le fichier web.config doit ressembler à l’exemple suivant. Notez qu’il peut y avoir des sections entre les éléments de configuration et les éléments system.web :  
   
--   sections d’éléments entre les éléments de configuration et les éléments system.web  
+- sections d’éléments entre les éléments de configuration et les éléments system.web  
   
--   sections d’éléments entre les éléments system.web et les éléments de compilation  
+- sections d’éléments entre les éléments system.web et les éléments de compilation  
   
--   L’élément de compilation peut contenir d’autres éléments et attributs  
+- L’élément de compilation peut contenir d’autres éléments et attributs  
   
 ## <a name="example"></a>Exemple  
   

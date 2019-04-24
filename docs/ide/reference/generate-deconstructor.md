@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8887f4cd6b4dcd7f08e808f1271f5d546d6a224c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f24fa988cf14bbf48fe157e2b9ee538d3eff2f35
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58159177"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537528"
 ---
 # <a name="generate-a-deconstructor-in-visual-studio"></a>Générer un constructeur dans Visual Studio
 
@@ -28,19 +28,19 @@ Cette génération de code s’applique à :
 
 **Pourquoi :** Vous pouvez taper manuellement un déconstructeur, mais cette fonctionnalité génère le stub pour vous avec les paramètres de sortie appropriés.
 
-## <a name="generate-deconstructor"></a>Générer un déconstructeur
+## <a name="generate-a-deconstructor"></a>Générer un déconstructeur
 
 1. Déclarez un nouveau type en spécifiant les paramètres de sortie de votre choix. Cette déclaration provoque une erreur si aucune instance de déconstruction correspondante n’est trouvée.
 
    ![Erreur liée à un déconstructeur manquant](media/deconstruct.png)
 
-2. Effectuez ensuite l’une des procédures suivantes :
+2. Effectuez l’une des étapes suivantes :
 
    - **Clavier**
-      - Placez votre curseur dans votre déclaration et appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
+      - Placez le curseur dans votre déclaration, puis sélectionnez Ctrl+. pour afficher le menu **Actions rapides et refactorisations**.
    - **Souris**
       - Cliquez avec le bouton droit et sélectionnez le menu **Actions rapides et refactorisations**.
-      - Cliquez sur le bouton ![Tournevis](media/screwdriver.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne vide dans la classe.
+      - Sélectionnez ![Tournevis](media/screwdriver.png) qui apparaît dans la marge de gauche si le curseur de texte se trouve déjà sur la ligne vide dans la classe.
 
       ![Générer un déconstructeur (correctif de code)](media/deconstruct-codefix.png)
 

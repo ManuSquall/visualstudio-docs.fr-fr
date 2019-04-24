@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2fc0db508fc06cc5b80db589ba7ebd88bc3221be
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 25c4359a5ff64a3ddd229e872aa8a52303c22bf2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950423"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068429"
 ---
 # <a name="understanding-the-dsl-code"></a>Fonctionnement du code DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,15 +47,15 @@ Une solution DSL (Domain-Specific Language) génère une API que vous pouvez uti
   
  Nous vous recommandons vivement de ne pas modifier le code généré directement, car vos modifications seront perdues quand vous regénérerez la solution. Au lieu de cela, pour personnaliser votre DSL :  
   
--   Ajustez les nombreux paramètres dans la définition DSL.  
+- Ajustez les nombreux paramètres dans la définition DSL.  
   
--   Écrivez des classes partielles dans des fichiers de code distincts pour substituer les méthodes qui sont définies dans, ou héritées par, les classes générées. Dans certains cas, vous devez définir le **génère une Double dérivée** option d’une classe dans la définition DSL, afin d’être en mesure de substituer une méthode générée.  
+- Écrivez des classes partielles dans des fichiers de code distincts pour substituer les méthodes qui sont définies dans, ou héritées par, les classes générées. Dans certains cas, vous devez définir le **génère une Double dérivée** option d’une classe dans la définition DSL, afin d’être en mesure de substituer une méthode générée.  
   
--   Définissez des options dans la définition DSL pour que le code généré fournisse des « raccordements » pour votre propre code.  
+- Définissez des options dans la définition DSL pour que le code généré fournisse des « raccordements » pour votre propre code.  
   
      Par exemple, si vous définissez la **a un constructeur personnalisé** option d’une classe de domaine et puis générez la solution, vous verrez des messages d’erreur. Quand vous double-cliquez sur l'un de ces messages d'erreur, des commentaires s'affichent dans le code généré pour expliquer ce que votre code personnalisé doit fournir.  
   
--   Écrivez vos propres modèles de texte pour générer du code spécifique à votre application. Vous pouvez utiliser des fichiers Include pour partager des parties de modèles communes à de nombreux projets et vous pouvez créer des modèles de projets [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour configurer des projets initialisés avec votre propre structure de fichiers.  
+- Écrivez vos propres modèles de texte pour générer du code spécifique à votre application. Vous pouvez utiliser des fichiers Include pour partager des parties de modèles communes à de nombreux projets et vous pouvez créer des modèles de projets [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour configurer des projets initialisés avec votre propre structure de fichiers.  
   
 ## <a name="generated-files-in-dsl"></a>Fichiers générés dans la solution DSL  
  Les fichiers générés suivants apparaissent dans le **Dsl** projet.  

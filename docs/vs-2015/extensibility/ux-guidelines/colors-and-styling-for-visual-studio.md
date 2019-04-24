@@ -8,12 +8,12 @@ ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3b32779fe2d852e21eacf888e7b2326830fa9829
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 257c5944ee1939849c4163fef518abf513183998
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948460"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095813"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Couleurs et styles pour Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -49,7 +49,6 @@ ms.locfileid: "58948460"
 |Vous avez une fonctionnalité individuelle ou un groupe de fonctionnalités, et il n’existe aucune couleur partagé pour les éléments similaires.|**Couleurs personnalisées**|Noms de jeton de couleur qui sont spécifiques à une zone et pas destiné à être partagé avec toute autre interface utilisateur|
 |Voulez-vous autoriser l’utilisateur final de personnaliser l’interface utilisateur ou du contenu (par exemple, pour les éditeurs de texte ou les fenêtres du concepteur spécialisés).|**Personnalisation de l’utilisateur final**<br /><br /> **(Outils > boîte de dialogue Options)**|Paramètres définis dans la page « Polices et couleurs » de la **Outils > Options** boîte de dialogue ou une page spécialisée spécifique à une fonction de l’interface utilisateur.|
 
-
 ### <a name="visual-studio-themes"></a>Thèmes Visual Studio
  Visual Studio propose trois thèmes de couleur différente : clair, sombre ou bleu. Il détecte également le mode de contraste élevé, ce qui est un thème de couleur de l’échelle du système conçu pour l’accessibilité.
 
@@ -80,8 +79,7 @@ ms.locfileid: "58948460"
 
  **Outils > boîte de dialogue Options**
 
-
-##  <a name="BKMK_TheVSColorService"></a> Le Service VSColor
+## <a name="BKMK_TheVSColorService"></a> Le Service VSColor
  Visual Studio fournit un service de couleur d’environnement, également appelé le service VSColor ou le service de couleur du shell. Ce service vous permet de lier les valeurs de couleur de vos éléments d’interface utilisateur à un jeu contenant des couleurs pour chaque thème de couleurs de nom-valeur. Le service de VSColor doit être utilisé pour tous les éléments d’interface utilisateur, afin que les couleurs changent pour refléter le thème sélectionné par l’utilisateur actuel et automatiquement afin que l’interface utilisateur liée au service de couleur d’environnement seront intègre avec les nouveaux thèmes dans les futures versions de Visual Studio.
 
 ### <a name="how-the-service-works"></a>Fonctionnement du service
@@ -116,7 +114,7 @@ pUIShell2->GetVSSysColorEx(VSCOLOR_COLOR_NAME, &rgbLOCAL_COLOR);
  **REMARQUE :** Les valeurs COLORREF retournées par **GetVSSysColorEx()** contiennent simplement R, G, composants B d’une couleur de thème. Si une entrée de thème utilise la transparence, la valeur de canal alpha est ignorée avant de retourner. Par conséquent, si la couleur de l’environnement d’intérêt doit être utilisée dans un emplacement où le canal de transparence est importante, vous devez utiliser IVsUIShell5.GetThemedColor au lieu de IVsUIShell2::GetVSSysColorEx, comme décrit plus loin dans cette rubrique.
 
 ##### <a name="from-managed-code"></a>À partir du code managé
- Il est assez simple d’accéder au service VSColor dans le code natif. Si vous travaillez via du code managé, toutefois, déterminer comment utiliser le service peut être difficile. Dans cette optique, Voici un extrait de code C# illustrant ce processus :
+ Il est assez simple d’accéder au service VSColor dans le code natif. Si vous travaillez via du code managé, toutefois, déterminer comment utiliser le service peut être difficile. Dans cette optique, Voici un extrait de code c# illustrant ce processus :
 
 ```
 private void VSColorPaint(object sender, System.Windows.Forms.PaintEventArgs e)
@@ -258,18 +256,18 @@ protected override void Dispose(bool disposing)
 }
 ```
 
-##  <a name="BKMK_ChoosingHighContrastColors"></a> Choix de couleurs à contraste élevé
+## <a name="BKMK_ChoosingHighContrastColors"></a> Choix de couleurs à contraste élevé
 
 ### <a name="overview"></a>Vue d'ensemble
  Windows utilise plusieurs thèmes à contraste élevé au niveau du système qui augmentent le contraste des couleurs de texte, les arrière-plans et les images, de rendre les éléments apparaissent plus distincte sur l’écran. Pour des raisons d’accessibilité, il est important que les éléments d’interface Visual Studio répondent correctement lorsque les utilisateurs basculer vers un thème à contraste élevé.
 
  Seule une poignée de couleurs système peut servir pour les thèmes à contraste élevé. Lorsque vous choisissez votre système de noms de couleur, n’oubliez pas les conseils suivants :
 
-1.  **Choisissez des couleurs système qui ont la même signification sémantique** que l’élément qui sont de couleurs. Par exemple, si vous choisissez une couleur de contraste élevé pour du texte dans une fenêtre, utilisez WindowText et ControlText pas.
+1. **Choisissez des couleurs système qui ont la même signification sémantique** que l’élément qui sont de couleurs. Par exemple, si vous choisissez une couleur de contraste élevé pour du texte dans une fenêtre, utilisez WindowText et ControlText pas.
 
-2.  **Choisissez des paires de premier plan/arrière-plan** ensemble ou vous ne serez pas certain que votre choix de couleurs fonctionnent dans tous les thèmes à contraste élevé.
+2. **Choisissez des paires de premier plan/arrière-plan** ensemble ou vous ne serez pas certain que votre choix de couleurs fonctionnent dans tous les thèmes à contraste élevé.
 
-3.  **Déterminer quelles parties de votre interface utilisateur sont les plus importants et assurez-vous que les zones de contenu seront ressortir.** Vous allez perdre beaucoup de détails des différences subtiles dans teinte de couleur seraient normalement faire la distinction, l’utilisation de couleurs de bordure fort est donc courant pour définir les zones de contenu, car il n’existe aucune variantes de couleur pour les différentes zones de contenu.
+3. **Déterminer quelles parties de votre interface utilisateur sont les plus importants et assurez-vous que les zones de contenu seront ressortir.** Vous allez perdre beaucoup de détails des différences subtiles dans teinte de couleur seraient normalement faire la distinction, l’utilisation de couleurs de bordure fort est donc courant pour définir les zones de contenu, car il n’existe aucune variantes de couleur pour les différentes zones de contenu.
 
 ### <a name="system-color-set"></a>Jeu de couleurs système
  La table sur [Blog de l’équipe WPF : Référence de SystemColors](http://blogs.msdn.com/b/wpf/archive/2010/11/30/systemcolors-reference.aspx) indique l’ensemble complet des noms de couleurs système et les teintes correspondantes affichées dans chaque thème.
@@ -325,7 +323,7 @@ protected override void Dispose(bool disposing)
 |WindowFrame|: Bordure de l’IDE|
 |WindowText|-Premier plan d’onglet masquage automatique<br />-Premier plan onglet de fenêtre outil sélectionné<br />-Onglet de fenêtre de document inactif et premier plan inactif ou désélectionné onglet provisoire<br />-Premier plan par défaut de vue et arborescence pointage sur glyphe non sélectionné<br />-Bordure onglet sélectionné de la fenêtre outil<br />-Glyphe, bordure et barre de défilement thumb en arrière-plan|
 
-##  <a name="BKMK_ExposingColorsForEndUsers"></a> Exposition des couleurs pour les utilisateurs finaux
+## <a name="BKMK_ExposingColorsForEndUsers"></a> Exposition des couleurs pour les utilisateurs finaux
 
 ### <a name="overview"></a>Vue d'ensemble
  Parfois, vous devez autoriser l’utilisateur final à personnaliser votre interface utilisateur, tels que lorsque vous créez un éditeur de code ou l’aire de conception. La plus courante pour ce faire consiste à l’aide de la **Outils > Options** boîte de dialogue. À moins que vous avez hautement spécialisées l’interface utilisateur qui nécessite des contrôles spéciaux, le moyen le plus simple pour présenter la personnalisation consiste à utiliser le **polices et couleurs** page au sein de la **environnement** section de la boîte de dialogue. Pour chaque élément que vous exposez pour la personnalisation, l’utilisateur peut choisir de modifier la couleur de premier plan, couleur d’arrière-plan ou les deux.
@@ -337,13 +335,13 @@ protected override void Dispose(bool disposing)
 
  Pour implémenter des catégories personnalisées ou afficher les éléments, un VSPackage doit :
 
--   **Créez ou identifiez des catégories dans le Registre.** Implémentation de l’IDE de le **polices et couleurs** page de propriétés utilise ces informations pour interroger correctement pour le service prenant en charge d’une catégorie donnée.
+- **Créez ou identifiez des catégories dans le Registre.** Implémentation de l’IDE de le **polices et couleurs** page de propriétés utilise ces informations pour interroger correctement pour le service prenant en charge d’une catégorie donnée.
 
--   **Créez ou identifiez les groupes dans le Registre (facultatif).** Il peut être utile de définir un groupe, qui représente l’union de deux ou plusieurs catégories. Si un groupe est défini, l’IDE fusionne les sous-catégories automatiquement et distribue les éléments affichés dans le groupe.
+- **Créez ou identifiez les groupes dans le Registre (facultatif).** Il peut être utile de définir un groupe, qui représente l’union de deux ou plusieurs catégories. Si un groupe est défini, l’IDE fusionne les sous-catégories automatiquement et distribue les éléments affichés dans le groupe.
 
--   **Implémenter la prise en charge de l’IDE.**
+- **Implémenter la prise en charge de l’IDE.**
 
--   **Gérer les modifications de police et de couleur.**
+- **Gérer les modifications de police et de couleur.**
 
 #### <a name="to-create-or-identify-categories"></a>Pour créer ou identifier des catégories
  Construire un type spécial de l’entrée de Registre de catégorie sous [HKLM\SOFTWARE\Microsoft \Visual Studio\\< version de Visual Studio\>\FontAndColors\\< catégorie\>]. \<Catégorie > est le nom non localisé de la catégorie.
@@ -428,11 +426,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\FontAndColors\CSharp T
 
  **REMARQUE :**
 
--   « NameID » = l’ID de ressource du nom de catégorie localisée dans votre package.
+- « NameID » = l’ID de ressource du nom de catégorie localisée dans votre package.
 
--   « ToolWindowPackage » = GUID du Package
+- « ToolWindowPackage » = GUID du Package
 
--   « Catégorie » = « {9FF46859-A47E-47bf-8AC5-EC3DBE69D1FE} » est juste un exemple et la valeur réelle peut être un nouveau GUID fourni par l’implémenteur.
+- « Catégorie » = « {9FF46859-A47E-47bf-8AC5-EC3DBE69D1FE} » est juste un exemple et la valeur réelle peut être un nouveau GUID fourni par l’implémenteur.
 
 ### <a name="set-the-font-and-color-property-category-guid"></a>Définir la police et couleur propriété GUID de catégorie
  L’exemple de code ci-dessous montre comment définir des GUID de catégorie.

@@ -13,14 +13,14 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: a84b24dff387e0a93058c07e9f6d7b6cfe503d49
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 255c82b09e87180149756ce684f001652f4b962a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935587"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058719"
 ---
-# <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Procédure pas à pas : Connecter un hôte à un processeur de Directive généré
+# <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>Procédure pas à pas : Connecter un hôte à un processeur de directive généré
 
 Vous pouvez écrire votre propre hôte qui traite les modèles de texte. Un hôte personnalisé de base est illustré dans [procédure pas à pas : Création d’un hôte de modèle de texte personnalisé](../modeling/walkthrough-creating-a-custom-text-template-host.md). Vous pouvez étendre cet hôte pour ajouter des fonctions telles que la génération de plusieurs fichiers de sortie.
 
@@ -41,7 +41,6 @@ Cette procédure pas à pas comprend les tâches suivantes :
 
 Pour définir un DSL, vous devez avoir installé les composants suivants :
 
-
 | | |
 |-|-|
 | Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](http://go.microsoft.com/fwlink/?LinkId=185579) |
@@ -58,13 +57,13 @@ Dans cette procédure pas à pas, vous utilisez l’Assistant Concepteur de lang
 
 1. Créer une solution de langage spécifique à un domaine qui présente les caractéristiques suivantes :
 
-   -   Nom : DSLMinimalTest
+   - Nom : DSLMinimalTest
 
-   -   Modèle de solution : Langage minimal
+   - Modèle de solution : Langage minimal
 
-   -   Extension de fichier : min
+   - Extension de fichier : min
 
-   -   Nom de la société : Fabrikam
+   - Nom de la société : Fabrikam
 
    Pour plus d’informations sur la création d’une solution de langage spécifique à un domaine, consultez [Comment : Créer une solution de langage spécifique à un domaine](../modeling/how-to-create-a-domain-specific-language-solution.md).
 
@@ -89,27 +88,27 @@ Dans cette procédure pas à pas, vous utilisez l’Assistant Concepteur de lang
 
 Après avoir généré le processeur de directive, vous vous connectez le processeur de directive et l’hôte de modèle de texte personnalisé que vous avez créé dans [procédure pas à pas : Création d’un hôte de modèle de texte personnalisé](../modeling/walkthrough-creating-a-custom-text-template-host.md).
 
-1.  Ouvrez la solution CustomHost.
+1. Ouvrez la solution CustomHost.
 
-2.  Dans le menu **Projet**, cliquez sur **Ajouter une référence**.
+2. Dans le menu **Projet**, cliquez sur **Ajouter une référence**.
 
      Le **ajouter une référence** boîte de dialogue s’ouvre avec le **.NET** onglet qui s’affiché.
 
-3.  Ajoutez les références suivantes :
+3. Ajoutez les références suivantes :
 
-    -   Microsoft.VisualStudio.Modeling.Sdk.11.0
+    - Microsoft.VisualStudio.Modeling.Sdk.11.0
 
-    -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
+    - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0
 
-    -   Microsoft.VisualStudio.TextTemplating.11.0
+    - Microsoft.VisualStudio.TextTemplating.11.0
 
-    -   Microsoft.VisualStudio.TextTemplating.Interfaces.11.0
+    - Microsoft.VisualStudio.TextTemplating.Interfaces.11.0
 
-    -   Microsoft.VisualStudio.TextTemplating.Modeling.11.0
+    - Microsoft.VisualStudio.TextTemplating.Modeling.11.0
 
-    -   Microsoft.VisualStudio.TextTemplating.VSHost.11.0
+    - Microsoft.VisualStudio.TextTemplating.VSHost.11.0
 
-4.  En haut de Program.cs ou Module1.vb, ajoutez la ligne de code suivante :
+4. En haut de Program.cs ou Module1.vb, ajoutez la ligne de code suivante :
 
     ```csharp
     using Microsoft.Win32;
@@ -119,7 +118,7 @@ Après avoir généré le processeur de directive, vous vous connectez le proces
     Imports Microsoft.Win32
     ```
 
-5.  Recherchez le code de la propriété `StandardAssemblyReferences`et remplacez-le par le code suivant :
+5. Recherchez le code de la propriété `StandardAssemblyReferences`et remplacez-le par le code suivant :
 
     > [!NOTE]
     > Dans cette étape, vous ajoutez des références aux assemblys qui sont requis par le processeur de directive généré qui prend en charge votre hôte.
@@ -155,7 +154,7 @@ Après avoir généré le processeur de directive, vous vous connectez le proces
     }
     ```
 
-6.  Recherchez le code de la fonction `ResolveDirectiveProcessor`et remplacez-le par le code suivant :
+6. Recherchez le code de la fonction `ResolveDirectiveProcessor`et remplacez-le par le code suivant :
 
     > [!IMPORTANT]
     > Ce code contient des références de codées en dur pour le nom du processeur de directive généré auquel vous souhaitez vous connecter. Vous pouvez facilement commettre cela plus générales, auquel cas il vérifie tous les processeurs de directive figurant dans le Registre et tente de trouver une correspondance. Dans ce cas, l’hôte fonctionnerait avec n’importe quel processeur de directive généré.
@@ -229,9 +228,9 @@ Après avoir généré le processeur de directive, vous vous connectez le proces
             }
     ```
 
-7.  Dans le menu **Fichier**, cliquez sur **Enregistrer tout**.
+7. Dans le menu **Fichier**, cliquez sur **Enregistrer tout**.
 
-8.  Dans le menu **Générer** , cliquez sur **Générer la solution**.
+8. Dans le menu **Générer** , cliquez sur **Générer la solution**.
 
 ## <a name="test-the-custom-host-with-the-directive-processor"></a>Tester l’hôte avec le processeur de Directive personnalisé
 
@@ -239,9 +238,9 @@ Pour tester l’hôte de modèle de texte personnalisé, vous devez tout d’abo
 
 ### <a name="create-a-text-template-to-test-the-custom-host"></a>Créer un modèle de texte pour tester l’hôte personnalisé
 
-1.  Créez un fichier texte et nommez-le `TestTemplateWithDP.tt`. Vous pouvez utiliser n’importe quel éditeur de texte, tel que le bloc-notes, pour créer le fichier.
+1. Créez un fichier texte et nommez-le `TestTemplateWithDP.tt`. Vous pouvez utiliser n’importe quel éditeur de texte, tel que le bloc-notes, pour créer le fichier.
 
-2.  Ajoutez le code suivant au fichier texte :
+2. Ajoutez le code suivant au fichier texte :
 
     > [!NOTE]
     > Le langage de programmation du modèle de texte n’a pas besoin de correspondre à celui de l’hôte personnalisé.
@@ -313,15 +312,15 @@ Pour tester l’hôte de modèle de texte personnalisé, vous devez tout d’abo
     #>
     ```
 
-3.  Dans le code, remplacez \<votre chemin d’accès > avec le chemin d’accès du fichier Sample.min à partir du langage spécifique à la conception que vous avez créé dans la première procédure.
+3. Dans le code, remplacez \<votre chemin d’accès > avec le chemin d’accès du fichier Sample.min à partir du langage spécifique à la conception que vous avez créé dans la première procédure.
 
-4.  Enregistrez et fermez le fichier.
+4. Enregistrez et fermez le fichier.
 
 ### <a name="test-the-custom-host"></a>Tester l’hôte personnalisé
 
-1.  Ouvrez une fenêtre Invite de commandes.
+1. Ouvrez une fenêtre Invite de commandes.
 
-2.  Tapez le chemin d’accès du fichier exécutable de l’hôte personnalisé, mais n’appuyez pas encore sur ENTRÉE.
+2. Tapez le chemin d’accès du fichier exécutable de l’hôte personnalisé, mais n’appuyez pas encore sur ENTRÉE.
 
      Par exemple, tapez :
 
@@ -330,9 +329,9 @@ Pour tester l’hôte de modèle de texte personnalisé, vous devez tout d’abo
     > [!NOTE]
     > Au lieu de taper l’adresse, vous pouvez parcourir le fichier CustomHost.exe dans **Windows Explorer**, puis faites glisser le fichier dans la fenêtre d’invite de commandes.
 
-3.  Tapez un espace.
+3. Tapez un espace.
 
-4.  Tapez le chemin d'accès du fichier modèle de texte, puis appuyez sur ENTRÉE.
+4. Tapez le chemin d'accès du fichier modèle de texte, puis appuyez sur ENTRÉE.
 
      Par exemple, tapez :
 
@@ -343,11 +342,11 @@ Pour tester l’hôte de modèle de texte personnalisé, vous devez tout d’abo
 
      L’application hôte personnalisée s’exécute et démarre le processus de transformation de modèle de texte.
 
-5.  Dans **Windows Explorer**, accédez au dossier qui contient le fichier TestTemplateWithDP.txt.
+5. Dans **Windows Explorer**, accédez au dossier qui contient le fichier TestTemplateWithDP.txt.
 
      Le dossier contient également le fichier TestTemplateWithDP1.txt.
 
-6.  Ouvrez ce fichier pour afficher les résultats de la transformation du modèle de texte.
+6. Ouvrez ce fichier pour afficher les résultats de la transformation du modèle de texte.
 
      Les résultats de la sortie de texte générée s’affiche et doit ressembler à ceci :
 
@@ -363,4 +362,4 @@ Pour tester l’hôte de modèle de texte personnalisé, vous devez tout d’abo
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Procédure pas à pas : Création d’un hôte de modèle de texte personnalisé](../modeling/walkthrough-creating-a-custom-text-template-host.md)
+- [Procédure pas à pas : Créer un hôte de modèle de texte personnalisé](../modeling/walkthrough-creating-a-custom-text-template-host.md)

@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f1b98429f8d80d14acd6ce7951b9eb116f827ead
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0d607300bc42bd0428655a9590ab2e6dcc2a7043
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938108"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063138"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project-legacy"></a>Procédure : Ajouter un nouvel élément à un projet de workflow (hérité)
 Après avoir créé un projet de workflow à l'aide du [!INCLUDE[wfd1](../includes/wfd1-md.md)] hérité fourni par [!INCLUDE[vs2010](../includes/vs2010-md.md)] qui cible le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], vous pouvez ajouter à votre projet des éléments [!INCLUDE[wf](../includes/wf-md.md)] et d'autres éléments [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] qui vous sont familiers.  
@@ -37,15 +37,15 @@ Après avoir créé un projet de workflow à l'aide du [!INCLUDE[wfd1](../includ
   
 ### <a name="to-add-a-new-item-to-a-workflow-project"></a>Pour ajouter un nouvel élément à un projet de workflow  
   
-1.  Sur le **projet** menu, cliquez sur **ajouter un nouvel élément**.  
+1. Sur le **projet** menu, cliquez sur **ajouter un nouvel élément**.  
   
      Le **ajouter un nouvel élément** boîte de dialogue s’ouvre.  
   
-2.  Sélectionnez un élément.  
+2. Sélectionnez un élément.  
   
      Le tableau précédent répertorie les sélections Windows Workflow Foundation disponibles.  
   
-3.  Cliquez sur **ajouter** pour ajouter l’élément au projet de workflow.  
+3. Cliquez sur **ajouter** pour ajouter l’élément au projet de workflow.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Création de projets de flux de travail hérités](../workflow-designer/creating-legacy-workflow-projects.md)

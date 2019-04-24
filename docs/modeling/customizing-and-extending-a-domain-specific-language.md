@@ -9,23 +9,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 140a79e3771e4097a58c6974c8e088006ae2105a
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 8383e82091ec9cc62f5b08dcc89f1e1e74239030
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415653"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096788"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Personnalisation et extension d'un langage spécifique à un domaine
 Visual Studio de modélisation et de visualisation Kit de développement logiciel (SDK) VISUALIZATION fournit plusieurs niveaux à laquelle vous pouvez définir des outils de modélisation :
 
-1.  Définir un langage spécifique à un domaine (DSL) à l’aide du diagramme de définition DSL. Vous pouvez rapidement créer une solution DSL avec une notation visuelle, un formulaire XML lisible et les outils de base qui sont requises pour générer le code et autres artefacts.
+1. Définir un langage spécifique à un domaine (DSL) à l’aide du diagramme de définition DSL. Vous pouvez rapidement créer une solution DSL avec une notation visuelle, un formulaire XML lisible et les outils de base qui sont requises pour générer le code et autres artefacts.
 
      Pour plus d’informations, consultez [comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md).
 
-2.  Affinez la solution DSL à l’aide de fonctionnalités plus avancées de la définition DSL. Par exemple, vous pouvez ajouter des liens supplémentaires lorsque l’utilisateur crée un élément. Ces techniques sont principalement réalisées dans la définition DSL et certaines nécessitent quelques lignes de code de programme.
+2. Affinez la solution DSL à l’aide de fonctionnalités plus avancées de la définition DSL. Par exemple, vous pouvez ajouter des liens supplémentaires lorsque l’utilisateur crée un élément. Ces techniques sont principalement réalisées dans la définition DSL et certaines nécessitent quelques lignes de code de programme.
 
-3.  Étendez vos outils de modélisation à l’aide du code de programme. Le Kit VMSDK a été conçu spécifiquement pour simplifier l'intégration à vos extensions avec le code généré à partir de la définition DSL.  Pour plus d’informations, consultez [écriture de Code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md).
+3. Étendez vos outils de modélisation à l’aide du code de programme. Le Kit VMSDK a été conçu spécifiquement pour simplifier l'intégration à vos extensions avec le code généré à partir de la définition DSL.  Pour plus d’informations, consultez [écriture de Code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
 > [!NOTE]
 >  Lorsque vous avez mis à jour le fichier de définitions DSL, n’oubliez pas de cliquer sur **transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions avant de régénérer votre solution.

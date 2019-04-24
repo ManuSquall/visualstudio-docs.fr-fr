@@ -12,12 +12,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3120cee504de8565f5caf80034678e9788da70ed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 28f8cd324079a50a20312022ea6daaba843f8564
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951201"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100324"
 ---
 # <a name="walkthrough-creating-a-custom-text-template-host"></a>Procédure pas à pas : Création d'un hôte de modèle de texte personnalisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,31 +31,31 @@ Un *modèle de texte*<em>hôte</em> fournit un environnement qui permet la *mote
   
  Cette procédure pas à pas décrit les tâches suivantes :  
   
--   Création d'un hôte de modèle de texte personnalisé.  
+- Création d'un hôte de modèle de texte personnalisé.  
   
--   Test de l'hôte personnalisé.  
+- Test de l'hôte personnalisé.  
   
 ## <a name="prerequisites"></a>Prérequis  
  Pour effectuer cette procédure pas à pas, vous devez disposer des éléments suivants :  
   
--   Visual Studio 2010 ou version ultérieure  
+- Visual Studio 2010 ou version ultérieure  
   
--   SDK Visual Studio  
+- SDK Visual Studio  
   
 ## <a name="creating-a-custom-text-template-host"></a>Création d'un hôte de modèle de texte personnalisé  
  Dans cette procédure pas à pas, vous allez créer un hôte personnalisé dans une application exécutable qui peut être appelée à partir de la ligne de commande. L’application accepte un fichier modèle de texte comme argument, lit le modèle, appelle le moteur pour transformer le modèle et affiche toutes les erreurs qui se produisent dans la fenêtre d’invite de commandes.  
   
 #### <a name="to-create-a-custom-host"></a>Pour créer un hôte personnalisé  
   
-1.  Dans Visual Studio, créez une application console Visual Basic ou C# nommée CustomHost.  
+1. Dans Visual Studio, créez une application console Visual Basic ou C# nommée CustomHost.  
   
-2.  Ajoutez des références aux assemblys suivants :  
+2. Ajoutez des références aux assemblys suivants :  
   
-    -   **Microsoft.VisualStudio.TextTemplating.\*.0**  
+    - **Microsoft.VisualStudio.TextTemplating.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 et versions ultérieures**  
+    - **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 et versions ultérieures**  
   
-3.  Remplacez le code du fichier Program.cs ou Module1.vb par le code suivant :  
+3. Remplacez le code du fichier Program.cs ou Module1.vb par le code suivant :  
   
     ```csharp  
     using System;  
@@ -714,22 +714,22 @@ Un *modèle de texte*<em>hôte</em> fournit un environnement qui permet la *mote
     End Namespace  
     ```  
   
-4.  Pour [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] uniquement, ouvrez le **projet** menu, puis cliquez sur **propriétés de CustomHost**. Dans le **objet de démarrage** , cliquez sur **CustomHost.Program**.  
+4. Pour [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] uniquement, ouvrez le **projet** menu, puis cliquez sur **propriétés de CustomHost**. Dans le **objet de démarrage** , cliquez sur **CustomHost.Program**.  
   
-5.  Dans le menu **Fichier**, cliquez sur **Enregistrer tout**.  
+5. Dans le menu **Fichier**, cliquez sur **Enregistrer tout**.  
   
-6.  Dans le menu **Générer** , cliquez sur **Générer la solution**.  
+6. Dans le menu **Générer** , cliquez sur **Générer la solution**.  
   
 ## <a name="testing-the-custom-host"></a>Test de l'hôte personnalisé  
  Pour tester l'hôte personnalisé, vous allez écrire un modèle de texte, puis exécuter l'hôte personnalisé, lui passer le nom du modèle de texte et vérifier que le modèle est transformé.  
   
 #### <a name="to-create-a-text-template-to-test-the-custom-host"></a>Pour créer un modèle de texte pour tester l'hôte personnalisé  
   
-1.  Créez un fichier texte et nommez-le `TestTemplate.tt`.  
+1. Créez un fichier texte et nommez-le `TestTemplate.tt`.  
   
      Vous pouvez utiliser n'importe quel éditeur de texte (tel que le Bloc-notes) pour créer le fichier.  
   
-2.  Ajoutez le code suivant au fichier :  
+2. Ajoutez le code suivant au fichier :  
   
     > [!NOTE]
     >  Le langage de programmation du modèle de texte ne doit pas nécessairement correspondre à celui de l'hôte personnalisé.  
@@ -772,13 +772,13 @@ Un *modèle de texte*<em>hôte</em> fournit un environnement qui permet la *mote
   
     ```  
   
-3.  Enregistrez et fermez le fichier.  
+3. Enregistrez et fermez le fichier.  
   
 #### <a name="to-test-the-custom-host"></a>Pour tester l'hôte personnalisé  
   
-1.  Ouvrez la fenêtre Invite de commandes.  
+1. Ouvrez la fenêtre Invite de commandes.  
   
-2.  Tapez le chemin d’accès du fichier exécutable de l’hôte personnalisé, mais n’appuyez pas encore sur ENTRÉE.  
+2. Tapez le chemin d’accès du fichier exécutable de l’hôte personnalisé, mais n’appuyez pas encore sur ENTRÉE.  
   
      Par exemple, tapez :  
   
@@ -787,9 +787,9 @@ Un *modèle de texte*<em>hôte</em> fournit un environnement qui permet la *mote
     > [!NOTE]
     >  Au lieu de taper l’adresse, vous pouvez parcourir le fichier CustomHost.exe dans **Windows Explorer** puis faites glisser le fichier dans la fenêtre d’invite de commandes.  
   
-3.  Tapez un espace.  
+3. Tapez un espace.  
   
-4.  Tapez le chemin d'accès du fichier modèle de texte, puis appuyez sur ENTRÉE.  
+4. Tapez le chemin d'accès du fichier modèle de texte, puis appuyez sur ENTRÉE.  
   
      Par exemple, tapez :  
   
@@ -800,11 +800,11 @@ Un *modèle de texte*<em>hôte</em> fournit un environnement qui permet la *mote
   
      L'application hôte personnalisée s'exécute et accomplit le processus de transformation du modèle de texte.  
   
-5.  Dans **Windows Explorer**, accédez au dossier qui contient le fichier TestTemplate.tt.  
+5. Dans **Windows Explorer**, accédez au dossier qui contient le fichier TestTemplate.tt.  
   
      Ce dossier inclut également le fichier TestTemplate1.txt.  
   
-6.  Ouvrez ce fichier pour afficher les résultats de la transformation du modèle de texte.  
+6. Ouvrez ce fichier pour afficher les résultats de la transformation du modèle de texte.  
   
      La sortie de texte générée qui apparaît se présente comme suit :  
   

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9d5f137fdce3a50f95b3dfa641bd684d5aab060
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8a2e6bf4ffd22c6f4e3c63315a1c4a221f621c08
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952695"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063034"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Procédure : Modifier une commande de menu standard dans un langage spécifique à un domaine
 
@@ -28,15 +28,15 @@ Vous pouvez modifier le comportement de certaines des commandes standard qui son
 
 ### <a name="to-discover-what-commands-you-can-modify"></a>Pour découvrir les commandes que vous pouvez modifier
 
-1.  Dans le `DslPackage` projet, ouvrez `GeneratedCode\CommandSet.cs`. Ce fichier C# se trouve dans l’Explorateur de solutions comme une filiale de `CommandSet.tt`.
+1. Dans le `DslPackage` projet, ouvrez `GeneratedCode\CommandSet.cs`. Ce fichier c# se trouve dans l’Explorateur de solutions comme une filiale de `CommandSet.tt`.
 
-2.  Trouver les classes dans ce fichier se terminent par «`CommandSet`», par exemple `Language1CommandSet` et `Language1ClipboardCommandSet`.
+2. Trouver les classes dans ce fichier se terminent par «`CommandSet`», par exemple `Language1CommandSet` et `Language1ClipboardCommandSet`.
 
-3.  Dans chaque classe de jeu de commandes, tapez « `override` » suivi d'un espace. IntelliSense affiche une liste des méthodes que vous pouvez substituer. Chaque commande à une paire de méthodes dont le nom commence par « `ProcessOnStatus` » et « `ProcessOnMenu` ».
+3. Dans chaque classe de jeu de commandes, tapez « `override` » suivi d'un espace. IntelliSense affiche une liste des méthodes que vous pouvez substituer. Chaque commande à une paire de méthodes dont le nom commence par « `ProcessOnStatus` » et « `ProcessOnMenu` ».
 
-4.  Notez parmi les classes de jeu de commandes celle qui contient la commande à modifier.
+4. Notez parmi les classes de jeu de commandes celle qui contient la commande à modifier.
 
-5.  Fermez le fichier sans enregistrer vos modifications.
+5. Fermez le fichier sans enregistrer vos modifications.
 
     > [!NOTE]
     > En temps normal, vous ne devez pas modifier les fichiers qui ont été générés. Toute modification sera perdue lors de la prochaine génération des fichiers.
@@ -47,15 +47,15 @@ Créez un fichier qui contient une déclaration partielle de la classe de jeu de
 
 ### <a name="to-extend-the-command-set-class"></a>Pour développer la classe de jeu de commandes
 
-1.  Dans l'Explorateur de solutions, dans le projet DslPackage, ouvrez le dossier GeneratedCode, puis regardez sous CommandSet.tt et ouvrez son fichier généré CommandSet.cs. Notez l'espace de noms et le nom de la première classe qui y est définie. Par exemple, vous pouvez voir :
+1. Dans l'Explorateur de solutions, dans le projet DslPackage, ouvrez le dossier GeneratedCode, puis regardez sous CommandSet.tt et ouvrez son fichier généré CommandSet.cs. Notez l'espace de noms et le nom de la première classe qui y est définie. Par exemple, vous pouvez voir :
 
      `namespace Company.Language1`
 
      `{ ...  internal partial class Language1CommandSet : ...`
 
-2.  Dans **DslPackage**, créez un dossier nommé **Code personnalisé**. Dans ce dossier, créez un nouveau fichier de classe nommé `CommandSet.cs`.
+2. Dans **DslPackage**, créez un dossier nommé **Code personnalisé**. Dans ce dossier, créez un nouveau fichier de classe nommé `CommandSet.cs`.
 
-3.  Dans le nouveau fichier, écrivez une déclaration partielle dont l'espace de noms et le nom sont les mêmes que ceux de la classe partielle générée. Exemple :
+3. Dans le nouveau fichier, écrivez une déclaration partielle dont l'espace de noms et le nom sont les mêmes que ceux de la classe partielle générée. Exemple :
 
     ```csharp
     using System;
@@ -128,17 +128,17 @@ Si votre code modifie le magasin, par exemple s'il crée, supprime ou met à jou
 
 Les fragments suivants sont souvent utiles dans ces méthodes :
 
--   `this.CurrentSelection`. La forme sur laquelle l'utilisateur a cliqué avec le bouton droit est toujours incluse dans cette liste de formes et de connecteurs. Si l'utilisateur clique sur une partie vierge du diagramme, ce dernier est le seul membre de la liste.
+- `this.CurrentSelection`. La forme sur laquelle l'utilisateur a cliqué avec le bouton droit est toujours incluse dans cette liste de formes et de connecteurs. Si l'utilisateur clique sur une partie vierge du diagramme, ce dernier est le seul membre de la liste.
 
--   `this.IsDiagramSelected()` - `true` Si l’utilisateur a cliqué sur une partie vide du diagramme.
+- `this.IsDiagramSelected()` - `true` Si l’utilisateur a cliqué sur une partie vide du diagramme.
 
--   `this.IsCurrentDiagramEmpty()`
+- `this.IsCurrentDiagramEmpty()`
 
--   `this.IsSingleSelection()` - l'utilisateur n'a pas sélectionné plusieurs formes.
+- `this.IsSingleSelection()` - l'utilisateur n'a pas sélectionné plusieurs formes.
 
--   `this.SingleSelection` - forme ou diagramme sur lequel l'utilisateur a cliqué avec le bouton droit.
+- `this.SingleSelection` - forme ou diagramme sur lequel l'utilisateur a cliqué avec le bouton droit.
 
--   `shape.ModelElement as MyLanguageElement` - élément de modèle représenté par une forme.
+- `shape.ModelElement as MyLanguageElement` - élément de modèle représenté par une forme.
 
 Pour plus d’informations sur la façon de naviguer à partir d’un élément à l’élément et sur la création des objets et des liens, consultez [navigation et la mise à jour un modèle dans le Code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
@@ -146,7 +146,7 @@ Pour plus d’informations sur la façon de naviguer à partir d’un élément 
 
 - <xref:System.ComponentModel.Design.MenuCommand>
 - [Écriture de code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-- [Guide pratique pour Ajouter une commande au Menu contextuel](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)
+- [Guide pratique pour ajouter une commande au menu contextuel](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)
 - [Comment VSPackages ajoute des éléments de l’interface utilisateur](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Fichiers Visual Studio Command Table (.Vsct)](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [Schéma de référence XML VSCT](../extensibility/vsct-xml-schema-reference.md)

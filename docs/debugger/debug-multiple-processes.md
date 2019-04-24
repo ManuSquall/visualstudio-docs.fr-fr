@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d9c592663e32b8050644d459b8db45f3f0f5307
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 160e219b6fc2ab314f8d0dd91043c18101f2c3a5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630741"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097139"
 ---
 # <a name="debug-multiple-processes-c-visual-basic-c"></a>Déboguer plusieurs processus (C#, Visual Basic, C++)
 
@@ -48,11 +48,11 @@ Pour démarrer le débogage d’un projet à partir de **l’Explorateur de solu
 
 1. Sélectionnez **sélection actuelle**, **projet de démarrage unique** et un fichier projet, ou **plusieurs projets de démarrage**.
 
-   Si vous sélectionnez **plusieurs projets de démarrage**, vous pouvez modifier l’ordre de démarrage et l’action à entreprendre pour chaque projet : **Démarrer**, **démarrer sans débogage**, ou **Aucun**.
+   Si vous sélectionnez **plusieurs projets de démarrage**, vous pouvez modifier l’ordre de démarrage et l’action à entreprendre pour chaque projet : **Démarrer**, **démarrer sans débogage**, ou **aucun**.
 
 1. Sélectionnez **appliquer**, ou **OK** pour appliquer et fermer la boîte de dialogue.
 
-###  <a name="BKMK_Attach_to_a_process"></a> Attacher à un processus
+### <a name="BKMK_Attach_to_a_process"></a> Attacher à un processus
 
 Le débogueur peut également *attacher* pour les applications qui s’exécutent dans des processus en dehors de Visual Studio, y compris sur des appareils distants. Une fois que vous attachez à une application, vous pouvez utiliser le débogueur Visual Studio. Fonctionnalités de débogage peuvent être limitée. Cela dépend si l’application a été générée avec les informations de débogage, si vous avez accès au code source de l’application, et si le compilateur JIT effectue le suivi des informations de débogage.
 
@@ -69,7 +69,7 @@ Pour plus d’informations, consultez [attacher au processus en cours d’exécu
 >[!NOTE]
 >Le débogueur n'effectue pas un attachement automatique à un processus enfant démarré par un processus débogué, même si le projet enfant se trouve dans la même solution. Pour déboguer un processus enfant, attacher au processus enfant après son démarrage, ou configurer l’Éditeur du Registre Windows pour démarrer le processus enfant dans une nouvelle instance de débogueur.
 
-###  <a name="BKMK_Automatically_start_an_process_in_the_debugger"></a> Utilisez l’Éditeur du Registre pour démarrer automatiquement un processus dans le débogueur
+### <a name="BKMK_Automatically_start_an_process_in_the_debugger"></a> Utilisez l’Éditeur du Registre pour démarrer automatiquement un processus dans le débogueur
 
 Parfois, vous devrez peut-être déboguer le code de démarrage d’une application est lancée par un autre processus. C'est le cas des services et des actions d'installation personnalisée. Vous pouvez avoir le débogueur lancer et joindre automatiquement à l’application.
 
@@ -93,7 +93,7 @@ Parfois, vous devrez peut-être déboguer le code de démarrage d’une applicat
 
    ![Entrée de démarrage du débogueur automatique dans regedit.exe](../debugger/media/dbg_execution_automaticstart_result.png "entrée de démarrage du débogueur automatique dans regedit.exe")
 
-##  <a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a> Déboguer avec plusieurs processus
+## <a name="BKMK_Switch_processes__break_and_continue_execution__step_through_source"></a> Déboguer avec plusieurs processus
 <a name="BKMK_Configure_the_execution_behavior_of_multiple_processes"></a>
 
 Lorsque vous déboguez une application avec plusieurs processus, les commandes de débogueur avec rupture, exécution pas à pas et poursuite de l’opération affectent tous les processus par défaut. Par exemple, lorsqu’un processus est interrompu à un point d’arrêt, l’exécution de tous les autres processus est également interrompue. Vous pouvez changer ce comportement par défaut pour mieux contrôler les cibles des commandes d’exécution.
@@ -102,7 +102,7 @@ Lorsque vous déboguez une application avec plusieurs processus, les commandes d
 
 - Sous **outils** (ou **déboguer**) > **Options** > **débogage** > **général**, activez ou désactivez le **arrêter tous les processus lorsqu’un processus s’arrête** case à cocher.
 
-###  <a name="BKMK_Break__step__and_continue_commands"></a> Commandes Arrêter, Exécuter pas à pas et Continuer
+### <a name="BKMK_Break__step__and_continue_commands"></a> Commandes Arrêter, Exécuter pas à pas et Continuer
 
 Le tableau suivant décrit les comportements de débogage commandes lorsque le **arrêter tous les processus lorsqu’un processus s’arrête** case à cocher est sélectionné ou désélectionné :
 
@@ -117,12 +117,12 @@ Le tableau suivant décrit les comportements de débogage commandes lorsque le *
 |**Processus** fenêtre > **arrêter le processus**|N/A|Le processus sélectionné s'interrompt.<br />D'autres processus conservent leur état existant (Suspendu ou En cours d'exécution).|
 |**Processus** fenêtre > **continuer le processus**|N/A|Le processus sélectionné reprend.<br />D'autres processus conservent leur état existant (Suspendu ou En cours d'exécution).|
 
-###  <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> Rechercher les fichiers sources et de symboles (.pdb)
+### <a name="BKMK_Find_the_source_and_symbol___pdb__files"></a> Rechercher les fichiers sources et de symboles (.pdb)
 Pour naviguer dans le code source d’un processus, le débogueur doit accéder à ses fichiers sources et les fichiers de symboles. Pour plus d’informations, consultez [Spécifier les fichiers de symboles (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
-Si vous ne pouvez pas accéder aux fichiers d’un processus, vous pouvez accéder à l’aide de la **désassemblage** fenêtre. Pour plus d’informations, consultez [Comment : utiliser la fenêtre code machine](../debugger/how-to-use-the-disassembly-window.md).
+Si vous ne pouvez pas accéder aux fichiers d’un processus, vous pouvez accéder à l’aide de la **désassemblage** fenêtre. Pour plus d'informations, voir [Procédure : Utiliser la fenêtre Code Machine](../debugger/how-to-use-the-disassembly-window.md).
 
-###  <a name="BKMK_Switch_between_processes"></a> Basculer entre processus
+### <a name="BKMK_Switch_between_processes"></a> Basculer entre processus
 
 Vous pouvez attacher plusieurs processus lorsque vous déboguez, mais seul un processus est actif dans le débogueur à un moment donné. Vous pouvez définir le processus actif ou *actuel* dans la barre d’outils **Emplacement de débogage** ou dans la fenêtre **Processus**. Pour basculer entre les processus, les deux processus doivent être en mode arrêt.
 

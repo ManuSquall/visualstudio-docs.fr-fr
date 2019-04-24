@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 45e741882e8da2b5ed419540e40f3be40278d540
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f5bd94892a0321346adeacbcad2655a4ab62c6a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950735"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038328"
 ---
 # <a name="ca2109-review-visible-event-handlers"></a>CA2109 : Passez en revue les gestionnaires d'événements visibles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,18 +42,18 @@ ms.locfileid: "58950735"
 
  Une demande ne peut pas protéger de manière fiable une méthode appelée par un gestionnaire d’événements. Demandes de sécurité contribuent protéger le code contre les appelants non fiables en examinant les appelants sur la pile des appels. Code qui ajoute un gestionnaire d’événements à un événement n’est pas nécessairement présent sur la pile des appels lorsque les méthodes de gestionnaire d’événements sont exécutées. Par conséquent, la pile des appels peut avoir uniquement hautement approuvé les appelants lorsque la méthode de gestionnaire d’événements est appelée. Cela entraîne des demandes faites par la méthode de gestionnaire d’événements réussisse. En outre, l’autorisation demandée peut être déclarée lorsque la méthode est appelée. Pour ces raisons, le risque de correction d’une violation de cette règle ne peut être évalué après avoir examiné la méthode de gestion des événements. Lorsque vous examinez votre code, considérez les points suivants :
 
--   Votre gestionnaire d’événements effectue des opérations dangereuses ou exploitables, telles que la déclaration d’autorisations ou la suppression des autorisations de code non managé ?
+- Votre gestionnaire d’événements effectue des opérations dangereuses ou exploitables, telles que la déclaration d’autorisations ou la suppression des autorisations de code non managé ?
 
--   Quelles sont les menaces de sécurité vers et à partir de votre code, car il peut s’exécuter à tout moment avec uniquement hautement approuvé les appelants sur la pile ?
+- Quelles sont les menaces de sécurité vers et à partir de votre code, car il peut s’exécuter à tout moment avec uniquement hautement approuvé les appelants sur la pile ?
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, examinez la méthode et évaluez les éléments suivants :
 
--   Vous pouvez rendre la méthode de gestion des événements non publics ?
+- Vous pouvez rendre la méthode de gestion des événements non publics ?
 
--   Vous pouvez déplacer toutes les fonctionnalités dangereuses hors du Gestionnaire d’événements ?
+- Vous pouvez déplacer toutes les fonctionnalités dangereuses hors du Gestionnaire d’événements ?
 
--   Si une demande de sécurité est imposée, il est possible d’une autre manière ?
+- Si une demande de sécurité est imposée, il est possible d’une autre manière ?
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Supprimez un avertissement de cette règle uniquement après un examen minutieux de la sécurité pour vous assurer que votre code ne constitue pas une menace de sécurité.

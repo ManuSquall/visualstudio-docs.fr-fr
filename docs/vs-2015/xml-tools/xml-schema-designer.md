@@ -9,26 +9,25 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fe81190bca91aba4655e551026458c9047739d66
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 72d5defa8a9cef04a4564d8974859de024c97dea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952898"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108696"
 ---
 # <a name="xml-schema-designer"></a>Concepteur de schémas XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Le Concepteur de schémas XML (Concepteur XSD) est un outil graphique qui vous permet de visualiser un jeu de schémas à des niveaux différents d'abstraction. Voici les principaux composants du Concepteur XSD :    
   
--   [Explorateur de schémas XML](../xml-tools/xml-schema-explorer.md) vous permet de parcourir et naviguez dans l’arborescence de schéma XML et effectuer des recherches.  
+- [Explorateur de schémas XML](../xml-tools/xml-schema-explorer.md) vous permet de parcourir et naviguez dans l’arborescence de schéma XML et effectuer des recherches.  
   
--   Le [vue de départ](../xml-tools/start-view.md) est le point de lancement du concepteur XSD ; à partir de la vue de départ, vous pouvez naviguer vers d’autres vues du concepteur XSD et afficher les détails de votre jeu de schémas.  
+- Le [vue de départ](../xml-tools/start-view.md) est le point de lancement du concepteur XSD ; à partir de la vue de départ, vous pouvez naviguer vers d’autres vues du concepteur XSD et afficher les détails de votre jeu de schémas.  
   
--   Le [vue du graphique](../xml-tools/graph-view.md) vous permet d’afficher un aperçu d’un jeu de schémas et les relations entre les nœuds de schéma.  
+- Le [vue du graphique](../xml-tools/graph-view.md) vous permet d’afficher un aperçu d’un jeu de schémas et les relations entre les nœuds de schéma.  
   
--   Le [affichage du modèle de contenu](../xml-tools/content-model-view.md) fournit une représentation graphique des détails des nœuds de schéma locaux et globaux, y compris les types simples et complexes, des éléments, des groupes, des attributs et des groupes d’attributs.  
+- Le [affichage du modèle de contenu](../xml-tools/content-model-view.md) fournit une représentation graphique des détails des nœuds de schéma locaux et globaux, y compris les types simples et complexes, des éléments, des groupes, des attributs et des groupes d’attributs.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Explorateur de schémas XML](../xml-tools/xml-schema-explorer.md)  

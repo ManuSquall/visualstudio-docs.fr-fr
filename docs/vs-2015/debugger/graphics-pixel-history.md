@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e1df80c41c71b02b8dfc8d99553e2d5b22afdd8a
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: a7e89f2c7b9e834f9896ca3609fd3211e2d41862
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59000380"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044068"
 ---
 # <a name="graphics-pixel-history"></a>Historique des pixels Graphics
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ La fenêtre Historique des pixels Graphics dans Visual Studio Graphics Analyzer 
   
  Vous pouvez développer chaque primitive pour examiner la façon dont la sortie du nuanceur de pixels a été fusionnée avec la couleur de pixel existante pour produire la couleur résultante. À ce stade, vous pouvez également examiner ou déboguer le code du nuanceur de pixels associé à la primitive. En outre, vous pouvez développer davantage le nœud du nuanceur de sommets pour examiner l'entrée du nuanceur de sommets.  
   
-###  <a name="exclusion"></a> Exclusion de primitive  
+### <a name="exclusion"></a> Exclusion de primitive  
  Si une primitive ne peut pas affecter la couleur d'un pixel, l'exclusion peut se produire pour diverses raisons. Chaque raison est représentée par une icône décrite dans ce tableau :  
   
 |Icône|Raison de l'exclusion|  
@@ -55,22 +55,22 @@ La fenêtre Historique des pixels Graphics dans Visual Studio Graphics Analyzer 
   
 ##### <a name="to-view-a-shaders-source-code"></a>Pour afficher le code source d'un nuanceur  
   
-1.  Dans la fenêtre **Historique des pixels Graphics**, localisez l’appel de dessin qui correspond au nuanceur que vous souhaitez examiner, puis développez-le.  
+1. Dans la fenêtre **Historique des pixels Graphics**, localisez l’appel de dessin qui correspond au nuanceur que vous souhaitez examiner, puis développez-le.  
   
-2.  Sous l’appel de dessin que vous venez de développer, sélectionnez une primitive qui illustre le problème qui vous intéresse, puis développez-la.  
+2. Sous l’appel de dessin que vous venez de développer, sélectionnez une primitive qui illustre le problème qui vous intéresse, puis développez-la.  
   
-3.  Sous la primitive qui vous intéresse, suivez le lien du titre du nuanceur. Par exemple, suivez le lien **Nuanceur de sommets obj:30** pour afficher le code source du nuanceur de sommets.  
+3. Sous la primitive qui vous intéresse, suivez le lien du titre du nuanceur. Par exemple, suivez le lien **Nuanceur de sommets obj:30** pour afficher le code source du nuanceur de sommets.  
   
     > [!TIP]
     >  Le numéro d’objet, **obj:30**, identifie ce nuanceur dans toute l’interface Graphics Analyzer, par exemple dans la table des objets et la fenêtre Étapes de canalisation.  
   
 ##### <a name="to-debug-a-shader"></a>Pour déboguer un nuanceur  
   
-1.  Dans la fenêtre **Historique des pixels Graphics**, localisez l’appel de dessin qui correspond au nuanceur que vous souhaitez examiner, puis développez-le.  
+1. Dans la fenêtre **Historique des pixels Graphics**, localisez l’appel de dessin qui correspond au nuanceur que vous souhaitez examiner, puis développez-le.  
   
-2.  Sous l'appel de dessin que vous venez de développer, sélectionnez ensuite une primitive qui illustre le problème qui vous intéresse, puis développez-la.  
+2. Sous l'appel de dessin que vous venez de développer, sélectionnez ensuite une primitive qui illustre le problème qui vous intéresse, puis développez-la.  
   
-3.  Sous la primitive qui vous intéresse, choisissez **Démarrer le débogage**. La valeur par défaut de ce point d'entrée dans le débogueur HLSL correspond au premier appel du nuanceur pour la primitive correspondante, c'est-à-dire le premier pixel ou sommet traité par le nuanceur. Il existe un seul pixel associé à la primitive, mais il existe plusieurs appels de nuanceur de sommets pour les lignes et les triangles.  
+3. Sous la primitive qui vous intéresse, choisissez **Démarrer le débogage**. La valeur par défaut de ce point d'entrée dans le débogueur HLSL correspond au premier appel du nuanceur pour la primitive correspondante, c'est-à-dire le premier pixel ou sommet traité par le nuanceur. Il existe un seul pixel associé à la primitive, mais il existe plusieurs appels de nuanceur de sommets pour les lignes et les triangles.  
   
      Si vous souhaitez déboguer l’appel de nuanceur de sommets pour un sommet spécifique, développez le lien de titre VertexShader, recherchez le sommet qui vous intéresse, puis choisissez **Démarrer le débogage** à côté.  
   

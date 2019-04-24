@@ -1,7 +1,7 @@
 ---
 title: Mettre à jour une installation réseau
 description: Découvrez comment mettre à jour une installation réseau de Visual Studio à l’aide de la commande --layout
-ms.date: 2/22/2019
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4f7f7a7297b7cc48b9300c21875af5a0971136e1
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: a92a20db8b24b83975ad5c25738fbc3af776a031
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58475979"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790405"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>Mettre à jour une installation réseau de Visual Studio
 
@@ -30,44 +30,55 @@ Il est possible de mettre à jour une disposition d’installation réseau de Vi
 
 Pour actualiser le partage d’installation réseau et inclure les dernières mises à jour, exécutez la commande `--layout` pour télécharger de manière incrémentielle les packages mis à jour.
 
-**Nouveautés de la version 15.3** : Si vous avez sélectionné une disposition partielle lors de la création de la disposition réseau, ces paramètres sont enregistrés.  Toutes les commandes de disposition futures utilisent les options précédentes ainsi que toutes les nouvelles options que vous indiquez. Si vous vous servez d’une disposition d’une version antérieure, vous devez utiliser les mêmes paramètres de ligne de commande que ceux que vous avez utilisés quand vous avez créé la disposition d’installation réseau (autrement dit, les mêmes charges de travail et langues) pour mettre à jour son contenu.
+::: moniker range="vs-2017"
 
-Si vous hébergez une disposition sur un partage de fichiers, vous devez mettre à jour une copie privée de la disposition (par exemple, c:\vs2017offline) et, une fois que tout le contenu mis à jour est téléchargé, la copier sur votre partage de fichiers (par exemple, \\serveur\produits\VS2017). Si vous ne le faites pas, il est très probable que les utilisateurs exécutant le programme d’installation pendant que vous mettez à jour la disposition ne soient pas en mesure de récupérer tout le contenu de la disposition, puisque celui-ci n’est pas encore totalement à jour.
+**Nouveautés de la version 15.3** : Si vous avez sélectionné une disposition partielle lors de la création de la disposition réseau, ces paramètres sont enregistrés. Toutes les commandes de disposition futures utilisent les options précédentes ainsi que toutes les nouvelles options que vous indiquez. Si vous vous servez d’une disposition d’une version antérieure, vous devez utiliser les mêmes paramètres de ligne de commande que ceux que vous avez utilisés quand vous avez créé la disposition d’installation réseau (autrement dit, les mêmes charges de travail et langues) pour mettre à jour son contenu.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Si vous avez sélectionné une disposition partielle lors de la création de la disposition réseau, ces paramètres sont enregistrés. Toutes les commandes de disposition futures utilisent les options précédentes ainsi que toutes les nouvelles options que vous indiquez.
+
+::: moniker-end
+
+Si vous hébergez une disposition sur un partage de fichiers, vous devez mettre à jour une copie privée de la disposition (par exemple, c:\vsoffline) et, une fois que tout le contenu mis à jour est téléchargé, la copier sur votre partage de fichiers (par exemple, \\serveur\produits\VS). Si vous ne le faites pas, il est très probable que les utilisateurs exécutant le programme d’installation pendant que vous mettez à jour la disposition ne soient pas en mesure de récupérer tout le contenu de la disposition, puisque celui-ci n’est pas encore totalement à jour.
 
 Intéressons-nous de plus près à quelques exemples de création et de mise à jour d’une disposition :
 
 * Tout d’abord, voyons un exemple montrant comment créer une disposition avec une charge de travail pour l’anglais uniquement :
 
   ```cmd
-  vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --lang en-US
+  vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --lang en-US
   ```
 
 * Voici comment mettre à jour cette même disposition vers une version plus récente. Vous n’êtes pas obligé de spécifier les paramètres de ligne de commande supplémentaires. Les paramètres précédents étaient enregistrés et ils vont être utilisés par toutes les commandes de disposition suivantes dans ce dossier de disposition.
 
   ```cmd
-  vs_enterprise.exe --layout c:\VS2017Layout
+  vs_enterprise.exe --layout c:\VSLayout
   ```
 
 * Voici comment mettre à jour votre disposition avec une version plus récente en mode sans assistance. L’opération de disposition exécute le processus d’installation dans une nouvelle fenêtre de console. La fenêtre reste ouverte pour que les utilisateurs puissent voir le résultat final, ainsi qu’un récapitulatif des erreurs qui se sont produites. Si vous effectuez une opération de disposition en mode sans assistance (par exemple, si vous avez un script qui est exécuté régulièrement pour mettre à jour votre disposition vers la version la plus récente), utilisez le paramètre `--passive` pour que le processus ferme automatiquement la fenêtre.
 
   ```cmd
-  vs_enterprise.exe --layout c:\VS2017Layout --passive
+  vs_enterprise.exe --layout c:\VSLayout --passive
   ```
 
-* Voici comment ajouter une charge de travail supplémentaire et une langue localisée.  (Cette commande ajoute la charge de travail Azure.)  À présent, Managed Desktop et Azure sont inclus dans cette disposition.  Les ressources de langue pour l’anglais et l’allemand sont également englobées pour toutes ces charges de travail.  De plus, la disposition est mise à jour avec la dernière version disponible.
+* Voici comment ajouter une charge de travail supplémentaire et une langue localisée.  (Cette commande ajoute la charge de travail *Développement Azure*.)  À présent, Managed Desktop et Azure sont inclus dans cette disposition.  Les ressources de langue pour l’anglais et l’allemand sont également englobées pour toutes ces charges de travail.  De plus, la disposition est mise à jour avec la dernière version disponible.
 
   ```cmd
-  vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
+  vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
   ```
 
     > [!IMPORTANT]
-    > Une opération de mise à jour n’installe pas les derniers composants facultatifs ajoutés, même si vous les incluez dans une section d’« ajout » du [fichier réponse](automated-installation-with-response-file.md). Cela est dû au fait que l’opération d’ajout n’est pas utilisée durant une mise à jour.<br>
+    > Une opération de mise à jour n’installe pas les derniers composants facultatifs ajoutés, même si vous les incluez dans une section d’« ajout » du [fichier réponse](automated-installation-with-response-file.md). Cela est dû au fait que l’opération d’ajout n’est pas utilisée durant une mise à jour.
+    >
     > **Solution de contournement** : Exécutez une opération de modification distincte, après une mise à niveau, pour installer les composants manquants.
 
-* Et pour finir, voici comment ajouter une charge de travail et une langue localisée supplémentaires sans mettre à jour la version. (Cette commande ajoute la charge de travail ASP.NET & Web.)  Désormais, les charges de travail Managed Desktop, Azure et ASP.NET & Web sont incluses dans cette disposition. Les ressources de langue pour l’anglais, l’allemand et le français sont également englobées pour toutes ces charges de travail.  Toutefois, la disposition n’a été pas mise à jour vers la toute dernière version disponible lors de l’exécution de cette commande. Elle reste à la version existante.
+* Et pour finir, voici comment ajouter une charge de travail et une langue localisée supplémentaires sans mettre à jour la version. (Cette commande ajoute la charge de travail *Développement web et ASP.NET*.)  Désormais, les charges de travail Managed Desktop, Azure, Développement web et ASP.NET sont incluses dans cette disposition. Les ressources de langue pour l’anglais, l’allemand et le français sont également englobées pour toutes ces charges de travail.  Toutefois, la disposition n’a été pas mise à jour vers la toute dernière version disponible lors de l’exécution de cette commande. Elle reste à la version existante.
 
   ```cmd
-  vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion
+  vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion
   ```
 
 ## <a name="how-to-deploy-an-update-to-client-machines"></a>Comment déployer une mise à jour sur les ordinateurs clients
@@ -78,9 +89,22 @@ Selon la configuration de votre environnement réseau, une mise à jour peut êt
   * Exécutez le programme d’installation de Visual Studio.
   * Cliquez ensuite sur **Mettre à jour**.
 
+::: moniker range="vs-2017"
+
 * Les administrateurs peuvent mettre à jour les déploiements de clients de Visual Studio sans aucune intervention utilisateur avec deux commandes distinctes :
   * Mettez tout d’abord à jour Visual Studio Installer : <br>```vs_enterprise.exe --quiet --update```
   * Mettez ensuite à jour l’application Visual Studio proprement dite : <br>```vs_enterprise.exe update --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" --quiet --wait --norestart```
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+* Les administrateurs peuvent mettre à jour les déploiements de clients de Visual Studio sans aucune intervention utilisateur avec deux commandes distinctes :
+  * Mettez tout d’abord à jour Visual Studio Installer : <br>```vs_enterprise.exe --quiet --update```
+  * Mettez ensuite à jour l’application Visual Studio proprement dite : <br>```vs_enterprise.exe update --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise" --quiet --wait --norestart```
+
+::: moniker-end
+
 
 > [!NOTE]
 > Utilisez la [commande vswhere.exe](tools-for-managing-visual-studio-instances.md) pour identifier le chemin d’installation d’une instance existante de Visual Studio sur un ordinateur client.
@@ -99,7 +123,7 @@ vs_enterprise.exe --layout <layoutDir> --verify
 Le fichier vs_enterprise.exe peut être appelé à l’intérieur du répertoire layoutDir.
 
 > [!NOTE]
-> Certains fichiers de métadonnées importantes, qui sont nécessaires à l’option `--verify`, doivent se trouver dans le cache hors connexion de la disposition. Si ces fichiers de métadonnées sont manquants, "--verify" ne peut pas s’exécuter et le programme d’installation signale une erreur. Si vous rencontrez cette erreur, recréez une nouvelle disposition en mode hors connexion dans un dossier différent (ou dans le même dossier de cache hors connexion). Pour cela, exécutez la même commande de disposition que celle que vous avez utilisée pour créer la disposition hors connexion initiale. Par exemple, `Vs_enterprise.exe --layout <layoutDir>`.
+> Certains fichiers de métadonnées importantes, qui sont nécessaires à l’option `--verify`, doivent se trouver dans le cache hors connexion de la disposition. Si ces fichiers de métadonnées sont manquants, "--verify" ne peut pas s’exécuter et le programme d’installation signale une erreur. Si vous rencontrez cette erreur, recréez une nouvelle disposition en mode hors connexion dans un dossier différent (ou dans le même dossier de cache hors connexion). Pour cela, exécutez la même commande de disposition que celle que vous avez utilisée pour créer la disposition hors connexion initiale. Par exemple, `vs_enterprise.exe --layout <layoutDir>`.
 
 Comme Microsoft fournit régulièrement des mises à jour de Visual Studio, la version de la nouvelle disposition que vous créez peut donc être différente de celle de la disposition initiale.
 
@@ -137,7 +161,7 @@ vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> --clean <
 Vous pouvez aussi appeler le fichier vs_enterprise.exe à l’intérieur du répertoire &lt;layoutDir&gt;. Voici un exemple :
 
 ```cmd
-c:\VS2017Layout\vs_enterprise.exe --layout c:\VS2017Layout --clean c:\VS2017Layout\Archive\1cd70189-fc55-4583-8ad8-a2711e928325\Catalog.json --clean c:\VS2017Layout\Archive\d420889f-6aad-4ba4-99e4-ed7833795a10\Catalog.json
+c:\VSLayout\vs_enterprise.exe --layout c:\VSLayout --clean c:\VSLayout\Archive\1cd70189-fc55-4583-8ad8-a2711e928325\Catalog.json --clean c:\VS2017Layout\Archive\d420889f-6aad-4ba4-99e4-ed7833795a10\Catalog.json
 ```
 
 Lorsque vous exécutez cette commande, le programme d’installation analyse votre dossier de cache hors connexion pour trouver la liste des fichiers à supprimer. Vous avez ensuite la possibilité de revoir les fichiers qui vont être supprimés pour confirmer les suppressions.

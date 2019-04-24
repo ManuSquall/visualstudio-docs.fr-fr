@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2fa3e57660b6ac68fdc792f3837a9766b497a78b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b9b38288b081d4fb856b433255bf355c13f819ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951853"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053857"
 ---
 # <a name="how-to-run-code-analysis-manually-for-managed-code"></a>Procédure : Exécuter manuellement l’analyse du Code pour le Code managé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,6 +25,6 @@ L’outil d’analyse de code vous fournit des informations sur les erreurs éve
   
 ### <a name="to-run-code-analysis-manually"></a>Pour exécuter l’analyse du code manuellement  
   
-1.  Dans **l’Explorateur de solutions**, cliquez sur le projet.  
+1. Dans **l’Explorateur de solutions**, cliquez sur le projet.  
   
-2.  Sur le **analyser** menu, cliquez sur **exécuter l’analyse du Code sur** *nom_projet*.
+2. Sur le **analyser** menu, cliquez sur **exécuter l’analyse du Code sur** *nom_projet*.

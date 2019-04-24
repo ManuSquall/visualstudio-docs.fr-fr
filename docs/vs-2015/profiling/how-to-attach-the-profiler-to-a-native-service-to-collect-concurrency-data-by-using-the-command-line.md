@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour attacher le profileur à un service natif pour collecter des données concurrentielles en utilisant la ligne de commande | Microsoft Docs
+title: 'Procédure : attacher le profileur à un service natif pour collecter des données concurrentielles en utilisant la ligne de commande | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,14 +9,14 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 77aa3500b867b63dd9049307c2e3e5986a1cba61
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 5b9c46631fcd3ada0946748b515366b4f1b3362a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780855"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070561"
 ---
-# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line"></a>Guide pratique pour attacher le profileur à un service natif pour collecter des données concurrentielles en utilisant la ligne de commande
+# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line"></a>Procédure : Attacher le Profiler à un Service natif pour collecter des données concurrentielles en utilisant la ligne de commande
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette rubrique explique comment utiliser les outils en ligne de commande des outils de profilage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour attacher le profileur à un service natif (C/C++) et pour collecter des données de concurrence de processus et de threads à l’aide de la méthode d’échantillonnage.  
@@ -55,7 +55,6 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des out
    |       [/automark](../profiling/automark.md) **:** `Interval`       | À utiliser avec **/wincounter** uniquement. Spécifie le nombre de millisecondes écoulées entre les événements de collecte du compteur de performances Windows. La valeur par défaut est de 500 ms. |
    |     [/events](../profiling/events-vsperfcmd.md) **:** `Config`     |       Spécifie l’événement du Suivi d’événements pour Windows (ETW) qui doit être collecté au cours du profilage. Les événements ETW sont collectés dans un fichier séparé (.etl).       |
 
-
 3. Attachez le profileur au service en tapant la commande suivante dans la fenêtre d’invite de commandes :  
 
     **VSPerfCmd /attach:** `PID`  
@@ -67,7 +66,7 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des out
 
 #### <a name="to-start-and-stop-data-collection"></a>Pour démarrer et arrêter la collecte de données  
 
--   Les paires d’options du tableau suivant permettent de démarrer et d’arrêter la collecte des données. Spécifiez chaque option sur une ligne de commande distincte. Vous pouvez activer et désactiver la collecte de données à plusieurs reprises.  
+- Les paires d’options du tableau suivant permettent de démarrer et d’arrêter la collecte des données. Spécifiez chaque option sur une ligne de commande distincte. Vous pouvez activer et désactiver la collecte de données à plusieurs reprises.  
 
     |Option|Description|  
     |------------|-----------------|  
@@ -80,10 +79,10 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des out
 
 #### <a name="to-end-a-profiling-session"></a>Pour terminer une session de profilage  
 
-1.  Détachez le profileur de l’application cible en arrêtant le service ou en tapant la commande suivante dans la fenêtre d’invite de commandes :  
+1. Détachez le profileur de l’application cible en arrêtant le service ou en tapant la commande suivante dans la fenêtre d’invite de commandes :  
 
      Tapez **VSPerfCmd /detach**  
 
-2.  Fermez le profileur en tapant ce qui suit à l’invite de commandes :  
+2. Fermez le profileur en tapant ce qui suit à l’invite de commandes :  
 
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)

@@ -11,12 +11,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a97dfc6e7f93602b50102da51127fff6169ac3dc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d2f2a70df72f6dfcdc8946ca2f5afec9efa21a65
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949305"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059238"
 ---
 # <a name="warning-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-39file39"></a>Avertissement : la dépendance &#39;fichier&#39; dans le projet &#39;projet&#39; ne peut pas être copié dans le répertoire d’exécution, car elle remplacerait la référence &#39;fichier.&#39;
 Un conflit existe entre des dépendances ; plusieurs fichiers d’assembly distincts ayant le même nom doivent être copiés dans le répertoire bin pour permettre à l’application de s’exécuter. Le répertoire d’exécution peut résoudre le conflit, car l’une des dépendances est une référence principale.  
@@ -31,7 +31,7 @@ Un conflit existe entre des dépendances ; plusieurs fichiers d’assembly disti
   
  **Pour corriger cette erreur**  
   
--   Copiez un (ou aucun) fichier d’assembly dans le répertoire bin, ce que vous pouvez faire en plaçant le fichier d’assembly dans le Global Assembly Cache. Le Global Assembly Cache résout les conflits de noms de fichiers. Aucune copie locale du fichier d’assembly n’est créée, car le common language runtime sait rechercher les assemblys dans le Global Assembly Cache. Pour plus d’informations, consultez [Working with Assemblies and the Global Assembly Cache](http://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433) et [Error: the dependency 'file' in project 'project' cannot be copied to the run directory because it would conflict with dependency 'file'](/visualstudio/misc/error-dependency-file?view=vs-2015).  
+- Copiez un (ou aucun) fichier d’assembly dans le répertoire bin, ce que vous pouvez faire en plaçant le fichier d’assembly dans le Global Assembly Cache. Le Global Assembly Cache résout les conflits de noms de fichiers. Aucune copie locale du fichier d’assembly n’est créée, car le common language runtime sait rechercher les assemblys dans le Global Assembly Cache. Pour plus d’informations, consultez [Working with Assemblies and the Global Assembly Cache](http://msdn.microsoft.com/library/8a18e5c2-d41d-49ef-abcb-7c27e2469433) et [Error: the dependency 'file' in project 'project' cannot be copied to the run directory because it would conflict with dependency 'file'](/visualstudio/misc/error-dependency-file?view=vs-2015).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Gestion des références dans un projet](../ide/managing-references-in-a-project.md)   

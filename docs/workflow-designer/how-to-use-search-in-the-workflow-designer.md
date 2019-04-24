@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b1d29c4398e6b6c377ab493c495951f942d15965
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0a80bfecaa288eabc0161d0262535a7912411f78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942386"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091289"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>Procédure : Utiliser la recherche dans le concepteur de workflow
 
@@ -23,13 +23,13 @@ Pour faciliter la création de flux de travail plus volumineuses et complexes, v
 
 Recherche rapide identifie les éléments suivants dans le concepteur :
 
--   Propriétés des objets <xref:System.Activities.Activity>, des objets <xref:System.Activities.Statements.FlowNode>, des objets <xref:System.Activities.Statements.State>, des transitions, et d'autres éléments de contrôle de flux personnalisés.
+- Propriétés des objets <xref:System.Activities.Activity>, des objets <xref:System.Activities.Statements.FlowNode>, des objets <xref:System.Activities.Statements.State>, des transitions, et d'autres éléments de contrôle de flux personnalisés.
 
--   Variables
+- Variables
 
--   Arguments
+- Arguments
 
--   Expressions
+- Expressions
 
 ### <a name="use-quick-find"></a>Utiliser la recherche rapide
 
@@ -47,8 +47,8 @@ Rechercher dans les fichiers localise les chaînes dans les fichiers de flux de 
 
 ### <a name="use-find-in-files"></a>Utiliser la commande Rechercher dans les fichiers
 
-1.  Dans Visual Studio, appuyez sur **Ctrl**+**MAJ**+**F**, ou sélectionnez **modifier**  >   **Rechercher et remplacer** > **rechercher dans les fichiers**.
+1. Dans Visual Studio, appuyez sur **Ctrl**+**MAJ**+**F**, ou sélectionnez **modifier**  >   **Rechercher et remplacer** > **rechercher dans les fichiers**.
 
-2.  Entrez l’élément recherché dans le **rechercher** zone de texte et cliquez sur **Rechercher tout**.
+2. Entrez l’élément recherché dans le **rechercher** zone de texte et cliquez sur **Rechercher tout**.
 
-3.  Résultat de la recherche est indiqué dans le **résultat de la recherche** vue. Double-cliquez sur un élément de résultat navigue vers l’activité qui contient la correspondance dans le Concepteur de flux de travail.
+3. Résultat de la recherche est indiqué dans le **résultat de la recherche** vue. Double-cliquez sur un élément de résultat navigue vers l’activité qui contient la correspondance dans le Concepteur de flux de travail.

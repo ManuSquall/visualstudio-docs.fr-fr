@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 15fca04d921fb423bafccbeef56c9f3ff499d05d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3ca6fc205585d832f4dadc5f4ce4709a71c7b6fe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753949"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059199"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organiser les objets en conteneurs de disposition dans le concepteur XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,26 +35,26 @@ Réfléchissez à l'endroit où vous souhaitez faire figurer les objets dans une
   
  Les panneaux de disposition suivants sont les plus couramment utilisés, mais il en existe d'autres. Vous les trouverez tous dans le panneau **Composants**.  
   
--   [Grid](#Grid)  
+- [Grid](#Grid)  
   
--   [UniformGrid](#Uniform)  
+- [UniformGrid](#Uniform)  
   
--   [Canvas](#Canvas)  
+- [Canvas](#Canvas)  
   
--   [StackPanel](#Stack)  
+- [StackPanel](#Stack)  
   
--   [WrapPanel](#Wrap)  
+- [WrapPanel](#Wrap)  
   
--   [DockPanel](#Dock)  
+- [DockPanel](#Dock)  
   
-###  <a name="Grid"></a> Grid  
+### <a name="Grid"></a> Grid  
  Permet de disposer les objets dans des lignes et des colonnes.  
   
  ![](../designers/media/98b234b2-ac3b-441f-9136-98375fee87b7.png "98b234b2-ac3b-441F-9136-98375fee87b7")  
   
  **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [à l’aide des grilles](http://www.popscreen.com/v/6A4hj/Microsoft-Expression-Blend-Using-Grids)  
   
-###  <a name="Uniform"></a> UniformGrid  
+### <a name="Uniform"></a> UniformGrid  
  Permet de disposer les objets dans des régions de grille égales ou uniformes. Ce panneau est très pratique pour organiser une liste d'images.  
   
  ![](../designers/media/928b9284-a7e8-4678-875a-656b80b78076.png "928b9284-a7e8-4678-875a-656b80b78076")  
@@ -63,21 +63,21 @@ Réfléchissez à l'endroit où vous souhaitez faire figurer les objets dans une
   
  **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [utilisation d’un UniformGrid](http://www.popscreen.com/v/6A4iq/Microsoft-Expression-Blend-Working-with-a-UniformGrid)  
   
-###  <a name="Canvas"></a> Canvas  
+### <a name="Canvas"></a> Canvas  
  Permet de disposer les objets librement. Quand les utilisateurs exécutent votre application, ces éléments ont des positions fixes sur l'écran.  
   
  ![](../designers/media/e1ae27f0-3a57-454e-b580-877dcea8836d.png "e1ae27f0-3a57-454e-b580-877dcea8836d")  
   
  **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [utilisation de la zone de dessin](http://www.popscreen.com/v/6A4hT/Microsoft-Expression-Blend-Working-with-the-Canvas)  
   
-###  <a name="Stack"></a> StackPanel  
+### <a name="Stack"></a> StackPanel  
  Permet de disposer les objets dans une seule ligne horizontale ou verticale.  
   
  ![](../designers/media/a85a7b57-b0a8-495e-b985-f0291e41d093.png "a85a7b57-b0a8-495E-b985-f0291e41d093")  
   
  **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [utilisation de StackPanel et WrapPanel](http://www.popscreen.com/v/6A4i5/Microsoft-Expression-Blend-Using-the-StackPanel-and-WrapPanel)  
   
-###  <a name="Wrap"></a> WrapPanel  
+### <a name="Wrap"></a> WrapPanel  
  Permet de disposer les objets les uns à la suite des autres, de gauche à droite. Quand il n’y a plus de place à l’extrémité droite du panneau, il *renvoie* le contenu à la ligne suivante, et ainsi de suite de gauche à droite et de haut en bas. Vous pouvez aussi disposer un panneau de renvoi à la ligne à la verticale de sorte que les objets se suivent de haut en bas et de gauche à droite.  
   
  (Disponible uniquement pour les projets WPF)  
@@ -86,7 +86,7 @@ Réfléchissez à l'endroit où vous souhaitez faire figurer les objets dans une
   
  **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [utilisation de StackPanel et WrapPanel](http://www.popscreen.com/v/6A4i5/Microsoft-Expression-Blend-Using-the-StackPanel-and-WrapPanel)  
   
-###  <a name="Dock"></a> DockPanel  
+### <a name="Dock"></a> DockPanel  
  Permet de disposer les objets de telle sorte qu’il restent, ou s’*ancrent*, sur un bord du panneau.  
   
  (Disponible uniquement pour les projets WPF)  
@@ -96,36 +96,36 @@ Réfléchissez à l'endroit où vous souhaitez faire figurer les objets dans une
  **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [WPF - DockPanel](https://www.youtube.com/watch?v=EBH_OIM-zPo)  
   
 ## <a name="layout-controls"></a>Contrôles de disposition  
- Vous pouvez aussi ajouter vos objets à des contrôles de disposition. Ils n’offrent pas autant de fonctionnalités qu’un panneau de disposition, mais ils peuvent s’avérer utiles pour certains scénarios.  
+ Vous pouvez aussi ajouter vos objets à des contrôles de disposition. Ils n'offrent pas autant de fonctionnalités qu'un panneau de disposition, mais ils peuvent s'avérer utiles pour certains scénarios.  
   
  Les contrôles de disposition suivants sont les plus couramment utilisés, mais il en existe d'autres. Vous les trouverez tous dans le panneau **Composants**.  
   
--   [Border](#Border)  
+- [Border](#Border)  
   
--   [Fenêtre contextuelle](#Popup)  
+- [Fenêtre contextuelle](#Popup)  
   
--   [ScrollViewer](#Scroll)  
+- [ScrollViewer](#Scroll)  
   
--   [UniformGrid](#Uniform)  
+- [UniformGrid](#Uniform)  
   
--   [Viewbox](#View)  
+- [Viewbox](#View)  
   
-###  <a name="Border"></a> Border  
+### <a name="Border"></a> Border  
  Permet de créer une bordure, un arrière-plan ou les deux autour d'un objet. Vous ne pouvez ajouter qu’un seul objet à un **Border**. Si vous voulez appliquer une bordure ou un arrière-plan à plusieurs objets, ajoutez un panneau de disposition au **Border**. Ajoutez ensuite les objets à ce panneau ou contrôle.  
   
  ![](../designers/media/e761238b-99fd-43c5-bbc4-57538b8289ff.png "e761238b-99fd-43c5-bbc4-57538b8289ff")  
   
  **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [utilisation de Borders](http://www.popscreen.com/v/6A4hB/Microsoft-Expression-Blend-Working-with-Borders)  
   
-###  <a name="Popup"></a> Popup  
+### <a name="Popup"></a> Popup  
  Permet d'afficher des informations ou des options à l'intention des utilisateurs dans une fenêtre. Vous ne pouvez ajouter qu’un seul objet à un **Popup**. Par défaut, un **Popup** contient un **Grid**, mais vous disposez d’autres options.  
   
-###  <a name="Scroll"></a> ScrollViewer  
+### <a name="Scroll"></a> ScrollViewer  
  Permet aux utilisateurs de faire défiler une page ou une de ses zones vers le bas. Sachant que vous ne pouvez ajouter qu’un seul objet à un **ScrollViewer**, il est judicieux d’ajouter un panneau de disposition tel qu’un **Grid** ou un **StackPanel**.  
   
  ![](../designers/media/06b326d4-f23d-41a6-b26b-e1aff37572a7.png "06b326d4-f23d-41a6-b26b-e1aff37572a7")  
   
-###  <a name="View"></a> Viewbox  
+### <a name="View"></a> Viewbox  
  Met à l'échelle les objets à la façon d'un contrôle de zoom. Vous ne pouvez ajouter qu’un seul objet à un **Viewbox**. Si vous voulez appliquer cet effet à plusieurs objets, ajoutez un panneau de disposition au **ViewBox**, puis ajoutez vos contrôles à ce panneau.  
   
  (Disponible uniquement pour les projets WPF)  

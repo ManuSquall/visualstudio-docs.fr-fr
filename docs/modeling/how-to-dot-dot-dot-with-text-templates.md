@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 82309eb9288dffb1fca0a3917b764ffb9040ab9d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 89436ba28cd47463709fca9b7d6293dab934b549
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937169"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095930"
 ---
 # <a name="how-to--with-text-templates"></a>Comment : écrire avec des modèles de texte
 Modèles de texte dans Visual Studio fournissent un moyen utile de génération de texte quelconque. Vous pouvez utiliser des modèles de texte pour générer du texte en cours d’exécution dans le cadre de votre application et au moment du design pour générer une partie de votre code de projet. Cette rubrique récapitule les plus fréquemment posées « Comment faire... ? » questions.
@@ -26,21 +26,21 @@ Modèles de texte dans Visual Studio fournissent un moyen utile de génération 
 ### <a name="generate-part-of-my-application-code"></a>Générer une partie de mon code d’application
  J’ai une configuration ou *modèle* dans un fichier ou une base de données. Une ou plusieurs parties de mon code dépendent de ce modèle.
 
--   Générer certaines de vos fichiers de code à partir de modèles de texte. Pour plus d’informations, consultez [génération de Code au moment du Design à l’aide de modèles de texte T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md) et [quelle est la meilleure façon de commencer à écrire un modèle ?](#starting).
+- Générer certaines de vos fichiers de code à partir de modèles de texte. Pour plus d’informations, consultez [génération de Code au moment du Design à l’aide de modèles de texte T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md) et [quelle est la meilleure façon de commencer à écrire un modèle ?](#starting).
 
 ### <a name="generate-files-at-run-time-passing-data-into-the-template"></a>Générer des fichiers en cours d’exécution, en passant des données dans le modèle
  Au moment de l’exécution, mon application génère des fichiers texte, tels que des rapports, qui contiennent un mélange de texte standard et les données. Je souhaite éviter d’écrire des centaines de `write` instructions.
 
--   Ajouter un modèle de texte du runtime à votre projet. Ce modèle crée une classe dans votre code, que vous pouvez instancier et utiliser pour générer du texte. Vous pouvez passer des données à ce dernier dans les paramètres du constructeur. Pour plus d’informations, consultez [génération de texte d’exécution avec les modèles de texte T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
+- Ajouter un modèle de texte du runtime à votre projet. Ce modèle crée une classe dans votre code, que vous pouvez instancier et utiliser pour générer du texte. Vous pouvez passer des données à ce dernier dans les paramètres du constructeur. Pour plus d’informations, consultez [génération de texte d’exécution avec les modèles de texte T4](../modeling/run-time-text-generation-with-t4-text-templates.md).
 
--   Si vous souhaitez générer à partir de modèles qui sont uniquement disponibles au moment de l’exécution, vous pouvez utiliser des modèles de texte standard. Si vous écrivez une extension Visual Studio, vous pouvez appeler le service de création de modèles de texte. Pour plus d’informations, consultez [appel d’une Transformation de texte dans une Extension VS](../modeling/invoking-text-transformation-in-a-vs-extension.md). Dans d’autres contextes, vous pouvez utiliser le moteur de création de modèles de texte. Pour plus d'informations, consultez <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>.
+- Si vous souhaitez générer à partir de modèles qui sont uniquement disponibles au moment de l’exécution, vous pouvez utiliser des modèles de texte standard. Si vous écrivez une extension Visual Studio, vous pouvez appeler le service de création de modèles de texte. Pour plus d’informations, consultez [appel d’une Transformation de texte dans une Extension VS](../modeling/invoking-text-transformation-in-a-vs-extension.md). Dans d’autres contextes, vous pouvez utiliser le moteur de création de modèles de texte. Pour plus d'informations, consultez <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>.
 
      Utilisez le \<#@parameter#> directive pour transmettre des paramètres à ces modèles. Pour plus d’informations, consultez [Directive du paramètre T4](../modeling/t4-parameter-directive.md).
 
 ### <a name="read-another-project-file-from-a-template"></a>Lire un autre fichier projet à partir d’un modèle
  Pour lire un fichier depuis le même projet Visual Studio en tant que le modèle :
 
--   Insérez `hostSpecific="true"` dans la directive `<#@template#>`.
+- Insérez `hostSpecific="true"` dans la directive `<#@template#>`.
 
      Dans votre code, utilisez `this.Host.ResolvePath(filename)` pour obtenir le chemin d’accès complet du fichier.
 
@@ -66,11 +66,11 @@ Modèles de texte dans Visual Studio fournissent un moyen utile de génération 
 ### <a name="generate-many-files-from-one-model-schema"></a>Générer de nombreux fichiers à partir d’un schéma de modèle
  Si vous générez souvent des fichiers à partir de modèles qui ont le même schéma XML ou de base de données :
 
--   Envisager d’écrire un processeur de directive. Cela vous permet de remplacer plusieurs instructions assembly et import dans chaque modèle avec une directive personnalisée unique. Le processeur de directive peut également charger et analyser le fichier de modèle. Pour plus d’informations, consultez [processeurs de Directive modèles de création personnalisé T4 texte](../modeling/creating-custom-t4-text-template-directive-processors.md).
+- Envisager d’écrire un processeur de directive. Cela vous permet de remplacer plusieurs instructions assembly et import dans chaque modèle avec une directive personnalisée unique. Le processeur de directive peut également charger et analyser le fichier de modèle. Pour plus d’informations, consultez [processeurs de Directive modèles de création personnalisé T4 texte](../modeling/creating-custom-t4-text-template-directive-processors.md).
 
 ### <a name="generate-files-from-a-complex-model"></a>Générer des fichiers à partir d’un modèle complexe
 
--   Envisagez de créer un langage spécifique à un domaine (DSL) pour représenter le modèle. Cela rend beaucoup plus facile d’écrire les modèles, car vous utilisez des types et des propriétés qui reflètent les noms des éléments dans votre modèle. Vous n’avez pas à analyser le fichier ou de parcourir les nœuds XML. Exemple :
+- Envisagez de créer un langage spécifique à un domaine (DSL) pour représenter le modèle. Cela rend beaucoup plus facile d’écrire les modèles, car vous utilisez des types et des propriétés qui reflètent les noms des éléments dans votre modèle. Vous n’avez pas à analyser le fichier ou de parcourir les nœuds XML. Exemple :
 
      `foreach (Book book in this.Library) { ... }`
 
@@ -93,21 +93,21 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 
 ### <a name="execute-text-templates-in-the-build-process"></a>Exécuter des modèles de texte dans le processus de génération
 
--   Pour plus d’informations, consultez [génération de Code dans un processus de génération](../modeling/code-generation-in-a-build-process.md).
+- Pour plus d’informations, consultez [génération de Code dans un processus de génération](../modeling/code-generation-in-a-build-process.md).
 
 ## <a name="more-general-questions"></a>Questions plus générales
 
 ### <a name="starting"></a> Quel est le meilleur moyen pour commencer à écrire un modèle de texte ?
 
-1.  Écrire un exemple spécifique du fichier généré.
+1. Écrire un exemple spécifique du fichier généré.
 
-2.  Transformer en un modèle de texte en insérant la `<#@template #>` directive et les directives et code qui sont requis pour charger le fichier d’entrée ou le modèle.
+2. Transformer en un modèle de texte en insérant la `<#@template #>` directive et les directives et code qui sont requis pour charger le fichier d’entrée ou le modèle.
 
-3.  Remplacez progressivement des parties du fichier avec expression et les blocs de code.
+3. Remplacez progressivement des parties du fichier avec expression et les blocs de code.
 
 ### <a name="what-is-a-model"></a>Qu’est un « modèle » ?
 
--   L’entrée lue par votre modèle. Il peut être dans un fichier ou dans une base de données. Il peut être XML, ou un dessin Visio, ou un langage spécifique à un domaine (DSL) ou un modèle UML, ou il peut s’agir de texte brut. Il pourrait être répartie sur plusieurs fichiers. En général, plusieurs modèles lit un seul modèle.
+- L’entrée lue par votre modèle. Il peut être dans un fichier ou dans une base de données. Il peut être XML, ou un dessin Visio, ou un langage spécifique à un domaine (DSL) ou un modèle UML, ou il peut s’agir de texte brut. Il pourrait être répartie sur plusieurs fichiers. En général, plusieurs modèles lit un seul modèle.
 
      La conséquence de « modèle » est qu’elle représente un aspect de votre entreprise plus directement que le code du programme généré ou d’autres fichiers. Par exemple, il peut représenter le plan d’un réseau de communications, chargés de superviser sera votre logiciel généré.
 
@@ -118,8 +118,8 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 
 ### <a name="what-best-practices-are-there-for-text-templates"></a>Les « meilleures pratiques » existe-t-il pour les modèles de texte ?
 
--   Pour plus d’informations, consultez [instructions pour l’écriture de modèles de texte T4](../modeling/guidelines-for-writing-t4-text-templates.md).
+- Pour plus d’informations, consultez [instructions pour l’écriture de modèles de texte T4](../modeling/guidelines-for-writing-t4-text-templates.md).
 
 ### <a name="what-is-t4"></a>Qu’est « T4 » ?
 
--   Un autre nom pour les fonctionnalités de modèle de texte Visual Studio décrites ici. La version précédente, ce qui n’était pas publiée, a été une abréviation de « Transformation de modèle de texte ».
+- Un autre nom pour les fonctionnalités de modèle de texte Visual Studio décrites ici. La version précédente, ce qui n’était pas publiée, a été une abréviation de « Transformation de modèle de texte ».
