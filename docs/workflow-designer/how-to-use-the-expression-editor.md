@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fee9738cfce003ef19d311856304d87f6a4b2f15
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ce46f1db900aa5c37b49a1cc228290d7d99d29a2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918908"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117250"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Procédure : Utiliser l’éditeur d’expressions
 
@@ -36,18 +36,18 @@ Le **Éditeur d’Expression** se comporte comme suit :
 
 ## <a name="use-the-expression-editor"></a>Utiliser l’éditeur d’expressions
 
-1.  Dans Visual Studio, ouvrez un projet de flux de travail nouveau ou existant.
+1. Dans Visual Studio, ouvrez un projet de flux de travail nouveau ou existant.
 
-2.  Par exemple, ajoutez l'activité <xref:System.Activities.Statements.Assign> à votre flux de travail.
+2. Par exemple, ajoutez l'activité <xref:System.Activities.Statements.Assign> à votre flux de travail.
 
     > [!NOTE]
-    > Plusieurs activités de flux de travail ont des éditeurs d'expressions. Des TextBlocks d'expression s'affichent également dans le concepteur de variables, le concepteur d'arguments et le concepteur d'arguments dynamique. L'activité <xref:System.Activities.Statements.Assign> est utilisée à titre d'exemple.
+    > Plusieurs activités de flux de travail ont des éditeurs d'expressions. Des TextBlocks d’expression s’affichent également dans le concepteur de variables, le concepteur d’arguments et le concepteur d’arguments dynamique. L'activité <xref:System.Activities.Statements.Assign> est utilisée à titre d'exemple.
 
-3.  Cliquez sur l'éditeur d'expressions à gauche dans le concepteur d'activités pour l'activité <xref:System.Activities.Statements.Assign>.
+3. Cliquez sur l'éditeur d'expressions à gauche dans le concepteur d'activités pour l'activité <xref:System.Activities.Statements.Assign>.
 
      Les chaînes en filigrane grises  **\<à >** et  **\<entrer une Expression VB >** est des chaînes de texte de la valeur par défaut pour les éditeurs d’expressions dans le <xref:System.Activities.Statements.Assign> activité.
 
-4.  Entrez votre expression. Si vous entrez une chaîne, n'oubliez pas de l'entourer de guillemets. Si vous choisissez de lier l’argument Expression à une variable, n’utilisez pas de guillemets.
+4. Entrez votre expression. Si vous entrez une chaîne, n'oubliez pas de l'entourer de guillemets. Si vous choisissez de lier l’argument Expression à une variable, n’utilisez pas de guillemets.
 
      Lorsque vous avez terminé, sélectionnez une région ou une zone en dehors de l’éditeur d’expressions pour déplacer le focus vers une autre partie du concepteur. Un décalage le focus d’indique au compilateur de valider l’expression, comme décrit précédemment.
 

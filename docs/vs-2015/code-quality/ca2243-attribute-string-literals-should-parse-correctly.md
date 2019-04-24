@@ -15,12 +15,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 770c805489e358252151dc8e777941a267f76363
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f23db8a9674de621090be70067a555ef4fca2b99
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949277"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061422"
 ---
 # <a name="ca2243-attribute-string-literals-should-parse-correctly"></a>CA2243 : Les littéraux de chaîne d'attribut doivent être analysés correctement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,11 +55,11 @@ ms.locfileid: "58949277"
 
  La règle est déclenchée par les éléments suivants :
 
--   Paramètres qui contiennent « version » et ne peut pas être analysées à System.Version.
+- Paramètres qui contiennent « version » et ne peut pas être analysées à System.Version.
 
--   Paramètres qui contiennent des 'guid' et ne peut pas être analysées à System.Guid.
+- Paramètres qui contiennent des 'guid' et ne peut pas être analysées à System.Guid.
 
--   Paramètres qui contiennent « uri », « urn » ou « url » et ne peut pas être analysées en System.Uri.
+- Paramètres qui contiennent « uri », « urn » ou « url » et ne peut pas être analysées en System.Uri.
 
 ## <a name="see-also"></a>Voir aussi
  [CA1054 : Paramètres de l’URI ne doivent pas être de chaînes](../code-quality/ca1054-uri-parameters-should-not-be-strings.md)

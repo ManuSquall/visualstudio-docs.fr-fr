@@ -9,17 +9,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 44ca85ad785c0a2ef634a989ca5289ab368f0316
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 1a550b4a6634604594da0893e3f420fd9c38ca3c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54796609"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650731"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Framework cible et plateforme cible (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Un projet peut être généré pour s’exécuter sur un *framework cible*, qui est une version particulière du .NET Framework, et sur une *plateforme cible*, qui est une architecture logicielle particulière.  Par exemple, vous pouvez cibler une application pour qu'elle s'exécute sur le .NET Framework 2.0, sur une plateforme 32 bits qui est compatible avec la famille de processeurs 802x86 (« x86 »). La combinaison de framework cible et de plateforme cible porte le nom de *contexte cible*.  
   
 ## <a name="target-framework-and-profile"></a>Version cible du .NET Framework et profil cible  

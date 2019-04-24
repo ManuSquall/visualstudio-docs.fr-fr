@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 877309d0c1922364995d6370aa416933b5d90949
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dcff0d559894e8d4ba322e4e8ebab71000a3809e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697492"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083554"
 ---
 # <a name="send-the-required-events"></a>Envoyer les événements requis
 Utilisez cette procédure pour l’envoi des événements requis.
@@ -23,15 +23,15 @@ Utilisez cette procédure pour l’envoi des événements requis.
 ## <a name="process-for-sending-required-events"></a>Processus d’envoi d’événements requis
  Les événements suivants sont requis, dans cet ordre, lors de la création d’un débogage du moteur de (dé) et en l’attachant à un programme :
 
-1.  Envoyer un [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) objet d’événement pour le Gestionnaire de session de débogage (SDM) lors de l’Allemagne est initialisé pour un ou plusieurs programmes dans un processus de débogage.
+1. Envoyer un [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) objet d’événement pour le Gestionnaire de session de débogage (SDM) lors de l’Allemagne est initialisé pour un ou plusieurs programmes dans un processus de débogage.
 
-2.  Lorsque le programme à déboguer est attaché au, envoyer un [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) objet d’événement pour le SDM. Cet événement peut être un événement d’arrêt en cours, en fonction de votre conception de moteur.
+2. Lorsque le programme à déboguer est attaché au, envoyer un [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) objet d’événement pour le SDM. Cet événement peut être un événement d’arrêt en cours, en fonction de votre conception de moteur.
 
-3.  Si le programme est attaché au lorsque le processus est lancé, envoyez un [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) objet d’événement pour le SDM pour notifier l’IDE du nouveau thread. Cet événement peut être un événement d’arrêt en cours, en fonction de votre conception de moteur.
+3. Si le programme est attaché au lorsque le processus est lancé, envoyez un [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) objet d’événement pour le SDM pour notifier l’IDE du nouveau thread. Cet événement peut être un événement d’arrêt en cours, en fonction de votre conception de moteur.
 
-4.  Envoyer un [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) objet d’événement pour le SDM quand le programme en cours de débogage est terminé le chargement ou lorsque l’attacher au programme est terminée. Cet événement doit être un événement d’arrêt.
+4. Envoyer un [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) objet d’événement pour le SDM quand le programme en cours de débogage est terminé le chargement ou lorsque l’attacher au programme est terminée. Cet événement doit être un événement d’arrêt.
 
-5.  Si l’application à déboguer est lancée, envoyer un [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) objet d’événement pour le SDM lors de la première instruction du code dans l’architecture de l’exécution est sur le point d’être exécutée. Cet événement est toujours un arrêt. Lors de l’exécution pas à pas dans la session de débogage, l’IDE s’arrête sur cet événement.
+5. Si l’application à déboguer est lancée, envoyer un [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) objet d’événement pour le SDM lors de la première instruction du code dans l’architecture de l’exécution est sur le point d’être exécutée. Cet événement est toujours un arrêt. Lors de l’exécution pas à pas dans la session de débogage, l’IDE s’arrête sur cet événement.
 
 > [!NOTE]
 >  De nombreux langages utilisent des initialiseurs globaux ou les fonctions externes précompilées (à partir de la bibliothèque CRT ou le _Main) au début de leur code. Si la langue du programme que vous déboguez contient un de ces types d’éléments avant le point d’entrée initial, ce code est exécuté et l’événement de point d’entrée est envoyé lorsque l’utilisateur point d’entrée, tel que **principal** ou `WinMain`, est atteint.

@@ -3,14 +3,14 @@ title: Connexion à Visual Studio pour Mac
 description: Guide pratique pour se connecter à Visual Studio pour Mac
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 04/02/2019
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
-ms.openlocfilehash: e34a1a65e168b92f5002fc52586cae8967b46d3a
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: fe3b3ce45f72028e6081a849a9b10cad7a9916b5
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953873"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857461"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>Se connecter à Visual Studio pour Mac
 
@@ -24,7 +24,7 @@ Avant de vous connecter à Visual Studio pour Mac, vérifiez que vous êtes conn
 
 Pour vous connecter à Visual Studio pour Mac, procédez comme suit :
 
-1. Cliquez dans la page d’accueil sur le lien **Se connecter** pour afficher la boîte de dialogue Comptes, puis appuyez sur le bouton **Connexion** :
+1. Cliquez sur le bouton **Se connecter avec Microsoft** de la fenêtre de connexion :
 
     ![Boîte de dialogue Comptes dans Visual Studio pour Mac](media/signing-in-image12.png)
 
@@ -34,7 +34,7 @@ Pour vous connecter à Visual Studio pour Mac, procédez comme suit :
 
     Vous ne pouvez pas utiliser les informations d’identification Xamarin pour vous connecter à Visual Studio pour Mac.
 
-3. Une fois connecté, vous allez voir votre type de licence. Dans cette boîte de dialogue, vous pouvez ajouter des comptes Microsoft supplémentaires que vous souhaitez utiliser :
+3. Une fois que vous êtes connecté, la fenêtre de démarrage de Visual Studio 2019 pour Mac s’affiche. À partir de là, vous pouvez ouvrir ou créer un projet :
 
     ![Connexion réussie](media/signing-in-image14.png)
 
@@ -42,7 +42,9 @@ Pour vous connecter à Visual Studio pour Mac, procédez comme suit :
 
 Visual Studio pour Mac prend en charge l’ajout de plusieurs comptes à votre compte de personnalisation. Ces comptes supplémentaires vous permettent d’accéder à des ressources, comme Azure, à partir de n’importe quel compte ajouté.
 
-Pour ajouter des comptes d’utilisateur supplémentaires, suivez les étapes de la section [Guide pratique pour se connecter à Visual Studio pour Mac](#how-to-sign-in-to-visual-studio-for-mac).
+Pour ajouter des comptes d’utilisateur supplémentaires, choisissez le menu **Visual Studio > Compte...** à partir de Visual Studio pour Mac. Cliquez sur le bouton **Ajouter...** pour entrer des informations d’identification de compte supplémentaires.
+
+![Gérer les comptes](media/signing-in-image15.png)
 
 ## <a name="see-also"></a>Voir aussi
 

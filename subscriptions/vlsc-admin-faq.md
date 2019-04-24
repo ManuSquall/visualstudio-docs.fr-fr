@@ -7,12 +7,12 @@ ms.date: 03/13/2018
 ms.topic: conceptual
 description: Questions fréquentes (FAQ) sur la migration de l’administration du Centre de gestion des licences en volume
 searchscope: VS Subscription
-ms.openlocfilehash: d9f066fdb17af7e876a1fc7af611fa5cb48edba9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 43b5ff7aeddf5ba1d938709e9f395f50395d0f3d
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145263"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897658"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Migration de l’administration des abonnements Visual Studio
 
@@ -36,7 +36,7 @@ Il s’agit d’une transition massive, qui sera effectuée par phases, jusqu’
 Votre organisation n’a pas besoin de s’inscrire à Azure AD, mais elle peut le faire à tout moment. Si vous choisissez d’intégrer Azure AD, vous pouvez le faire sans frais en utilisant le niveau gratuit pour Azure AD. Avec Azure Active Directory, vous pouvez protéger votre organisation avec une meilleure sécurité, un plus grand contrôle et une fiabilité à long terme. Cependant, si vous n’êtes pas prêt pour Azure AD, vous pouvez continuer à utiliser vos comptes Microsoft comme vous le faites aujourd’hui.
 
 ### <a name="how-do-i-know-when-my-organization-will-be-migrated"></a>Comment savoir quand mon organisation sera migrée ?
-Les contacts principaux et les contacts pour les notifications reçoivent un e-mail les invitant à effectuer le processus d’intégration une semaine avant la migration de votre organisation. Les gestionnaires d’abonnements reçoivent également un e-mail les informant que nous avons contacté les contacts principaux et les contacts pour les notifications, et que nous leur avons fourni des informations sur la façon de garantir la réussite de l’intégration. Découvrez comment [localiser les contacts principaux et les contacts pour les notifications de votre organisation](#how-do-i-find-out-who-my-primary-or-notices-contact-is?).
+Les contacts principaux et les contacts pour les notifications reçoivent un e-mail les invitant à effectuer le processus d’intégration une semaine avant la migration de votre organisation. Les gestionnaires d’abonnements reçoivent également un e-mail les informant que nous avons contacté les contacts principaux et les contacts pour les notifications, et que nous leur avons fourni des informations sur la façon de garantir la réussite de l’intégration. Découvrez comment [localiser les contacts principaux et les contacts pour les notifications de votre organisation](#how-do-i-find-out-who-my-primary-or-notices-contact-is).
 
 ### <a name="is-onboarding-different-from-migration"></a>L’intégration est-elle différente de la migration ?
 Oui.  Ce processus est constitué de deux phases. Configurer (ou intégrer) votre organisation avant la migration garantit que votre travail d’administrateur ne sera pas interrompu. Une fois que nous avons migré les informations de votre organisation, vous pouvez gérer les abonnements Visual Studio dans le nouveau portail. Si les contacts principaux et les contacts pour les notifications n’effectuent pas l’intégration avant la migration, les gestionnaires d’abonnements sont bloqués et ne peuvent pas gérer les abonnements tant que le processus d’intégration n’a pas été effectué.
@@ -44,7 +44,7 @@ Oui.  Ce processus est constitué de deux phases. Configurer (ou intégrer) votr
 ### <a name="what-is-the-onboarding-process"></a>Qu’est-ce que le processus d’intégration ?
 Un e-mail est envoyé aux contacts principaux et aux contacts pour les notifications, les invitant à effectuer le processus d’intégration.
 Voici des instructions sur le processus.
-1. **Recherche de votre numéro de client public (PCN) et connexion :**
+1. **Recherche du numéro PCN et connexion :**
 
     a. Dans l’e-mail, les contacts principaux et les contacts pour les notifications sont indiqués avec un lien unique et les trois derniers chiffres de leur numéro PCN (Public Customer Number).*
 
@@ -54,7 +54,7 @@ Voici des instructions sur le processus.
 
     d. Ils sont ensuite invités à entrer le numéro PCN.
 
-2. **Configurez vos administrateurs :**
+2. **Configuration des administrateurs :**
 
     Après avoir entré le numéro PCN, ils sont dirigés vers la page où ils peuvent ajouter des super administrateurs et des administrateurs (auparavant appelés gestionnaires d’abonnements). Dans l’idéal, ceci doit être effectué avant la date de la migration de votre organisation, de façon à éviter toute interruption dans la gestion de vos abonnements.
 
@@ -106,8 +106,8 @@ Pour obtenir les informations les plus récentes concernant cette migration, vis
 
 - [Support](https://visualstudio.microsoft.com/subscriptions/support/) pour les abonnements et la gestion Visual Studio
 
-- [Guide pratique pour trouver mon PCN](find-pcn.md)
+- [Guide pratique pour trouver son numéro PCN](find-pcn.md)
 
-- [Guide pratique pour trouver votre contact principal ou votre contact pour les notifications](find-primary-contact.md)
+- [Guide pratique pour trouver son interlocuteur principal ou son interlocuteur pour les notifications](find-primary-contact.md)
 
 - [Vidéo](https://www.youtube.com/watch?v=ZmnywYGSFMg&list=PLReL099Y5nRfDyvvwzNDBaZe7qTxmuM2T&index=1&t=0s) sur l’intégration de votre organisation et la gestion des administrateurs

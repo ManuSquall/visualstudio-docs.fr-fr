@@ -1,5 +1,5 @@
 ---
-title: 'Comment : récupérer les informations de chaîne de requête dans une Application ClickOnce en ligne | Microsoft Docs'
+title: 'Procédure : Récupérer les informations de chaîne de requête dans une Application ClickOnce en ligne | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,14 +15,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 496328eb8911ad03d34c02e17d92f9a782b149da
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: e218cfb3514333e48f2c5d59d55664de1bbd906a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599192"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095854"
 ---
-# <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Guide pratique pour récupérer les informations de chaîne de requête dans une application ClickOnce en ligne
+# <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Procédure : Récupérer les informations de chaîne de requête dans une application ClickOnce en ligne
 La *chaîne de requête* est la partie d’une URL commençant par un point d’interrogation ( ?) qui contient des informations arbitraires sous la forme *nom=valeur*. Supposez que vous avez une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] nommée `WindowsApp1` que vous hébergez sur `servername`, et que vous souhaitez passer une valeur pour la variable `username` quand l’application démarre. Votre code peut ressembler à ce qui suit :
 
  `http://servername/WindowsApp1.application?username=joeuser`
@@ -39,19 +39,19 @@ La *chaîne de requête* est la partie d’une URL commençant par un point d’
 > [!NOTE]
 >  Avant de décider d’activer cette fonctionnalité, consultez la section « Sécurité » plus loin dans cette rubrique.
 
- Pour plus d’informations sur la création d’un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] à l’aide du déploiement *Mage.exe* ou *MageUI.exe*, consultez [procédure pas à pas : déployer manuellement une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+ Pour plus d’informations sur la création d’un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] à l’aide du déploiement *Mage.exe* ou *MageUI.exe*, consultez [procédure pas à pas : Déployer manuellement une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
 > [!NOTE]
 >  À compter du .NET Framework 3.5 SP1, vous pouvez passer des arguments de ligne de commande à une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] hors connexion. Si vous souhaitez fournir des arguments à l’application, vous pouvez passer des paramètres au fichier de raccourci avec l’extension .APPREF-MS.
 
 ### <a name="to-obtain-query-string-information-from-a-clickonce-application"></a>Pour obtenir des informations de chaîne de requête à partir d’une application ClickOnce
 
-1.  Placez le code suivant dans votre projet. Pour que ce code fonctionne, vous devez avoir une référence à System.Web et ajouter des instructions `using` ou `Imports` pour System.Web, System.Collections.Specialized et System.Deployment.Application.
+1. Placez le code suivant dans votre projet. Pour que ce code fonctionne, vous devez avoir une référence à System.Web et ajouter des instructions `using` ou `Imports` pour System.Web, System.Collections.Specialized et System.Deployment.Application.
 
      [!code-csharp[ClickOnceQueryString#1](../deployment/codesnippet/CSharp/how-to-retrieve-query-string-information-in-an-online-clickonce-application_1.cs)]
      [!code-vb[ClickOnceQueryString#1](../deployment/codesnippet/VisualBasic/how-to-retrieve-query-string-information-in-an-online-clickonce-application_1.vb)]
 
-2.  Appelez la fonction précédemment définie pour récupérer un <xref:System.Collections.DictionaryBase.Dictionary%2A> des paramètres de chaîne de requête, indexés par nom.
+2. Appelez la fonction précédemment définie pour récupérer un <xref:System.Collections.DictionaryBase.Dictionary%2A> des paramètres de chaîne de requête, indexés par nom.
 
 ### <a name="to-enable-query-string-passing-in-a-clickonce-application-with-mageuiexe"></a>Pour activer le transfert de chaînes de requête dans une application ClickOnce avec MageUI.exe
 

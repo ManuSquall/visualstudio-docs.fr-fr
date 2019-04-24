@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e1d0a0cd2b82c16871e157e6f78c766895c34b3
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 2d79c56cfeb2c1a5ef6f83ef64c005fd794c1f29
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415042"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096905"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Ajouter une validation d’architecture personnalisée aux diagrammes de dépendance
 
@@ -75,7 +75,7 @@ Si vous souhaitez créer une extension VSIX qui contient des validateurs de couc
 
 ### <a name="to-add-layer-validation-to-a-separate-vsix"></a>Pour ajouter la validation de couche à une extension VSIX séparée
 
-1. Créer un nouveau **bibliothèque de classes** projet. Ce projet contiendra la classe de validation de couche.
+1. Créez un projet de **Bibliothèque de classes**. Ce projet contiendra la classe de validation de couche.
 
 2. Rechercher ou créer un **projet VSIX** dans votre solution. Un projet VSIX contient un fichier nommé **source.extension.vsixmanifest**.
 
@@ -83,9 +83,9 @@ Si vous souhaitez créer une extension VSIX qui contient des validateurs de couc
 
 4. Dans **source.extension.vsixmanifest**, sous **Composants**, ajoutez le projet de validation de couche en tant que composant MEF :
 
-    1.  Choisissez **Nouveau**.
+    1. Choisissez **Nouveau**.
 
-    2.  Dans la boîte de dialogue **Ajouter un nouveau composant** , définissez les éléments suivants :
+    2. Dans la boîte de dialogue **Ajouter un nouveau composant** , définissez les éléments suivants :
 
          **Type** = **Microsoft.VisualStudio.MefComponent**
 
@@ -95,9 +95,9 @@ Si vous souhaitez créer une extension VSIX qui contient des validateurs de couc
 
 5. Vous devez également l’ajouter en tant que validation de couche :
 
-    1.  Choisissez **Nouveau**.
+    1. Choisissez **Nouveau**.
 
-    2.  Dans la boîte de dialogue **Ajouter un nouveau composant** , définissez les éléments suivants :
+    2. Dans la boîte de dialogue **Ajouter un nouveau composant** , définissez les éléments suivants :
 
          **Type** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**. Cette option ne figure pas dans la liste déroulante. Vous devez l’entrer au clavier.
 
@@ -125,7 +125,7 @@ Si vous souhaitez créer une extension VSIX qui contient des validateurs de couc
 
 9. Pour installer l’extension VSIX dans l’instance principale de Visual Studio, ou sur un autre ordinateur, recherchez le **.vsix** de fichiers dans le **bin** répertoire du projet VSIX. Copiez-le sur l’ordinateur sur lequel vous souhaitez installer l’extension VSIX. Double-cliquez sur le fichier VSIX dans l’Explorateur Windows.
 
-##  <a name="programming"></a> Programmation de la validation
+## <a name="programming"></a> Programmation de la validation
 
 Pour définir une extension de validation de couche, définissez une classe avec les caractéristiques suivantes :
 
@@ -194,7 +194,7 @@ Chaque nœud et chaque lien sont associés à une ou plusieurs catégories qui s
 
 Les liens des couches vers les éléments dans le code ont la catégorie « Représente ».
 
-##  <a name="debugging"></a> Débogage de la validation
+## <a name="debugging"></a> Débogage de la validation
 
 Pour déboguer votre extension de validation de couche, appuyez sur Ctrl+F5. Une instance expérimentale de Visual Studio s’ouvre. Dans cette instance, ouvrez ou créez un modèle de couche. Ce modèle doit être associé au code et doit avoir au moins une dépendance.
 
@@ -226,7 +226,7 @@ Démarrez toujours l’instance expérimentale en appuyant sur Ctrl+F5 (**Exécu
 
 Pour installer votre extension de validation sur un ordinateur sur lequel une version appropriée de Visual Studio est installée, ouvrez le fichier VSIX sur l’ordinateur cible.
 
-##  <a name="example"></a> Example code
+## <a name="example"></a> Example code
 
 ```csharp
 using System;

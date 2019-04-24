@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cf5a7c3f7587869a30ca2f367915fba1a42ec262
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5813a6f89062bf53f7f8c0b57b4ed3a8ef9c4edf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642974"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091432"
 ---
 # <a name="how-to-include-files-by-using-a-module"></a>Procédure : Inclure des fichiers à l’aide d’un module
   *Modules* (à ne pas confondre avec [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] modules) sont des conteneurs qui vous permettent de déployer des fichiers tels que les pages maîtres ASPX, des fichiers texte ou des images sur SharePoint.
@@ -29,31 +29,31 @@ ms.locfileid: "56642974"
 
 #### <a name="to-add-a-module"></a>Pour ajouter un module
 
-1.  Dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], ouvrez ou créez un projet SharePoint.
+1. Dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], ouvrez ou créez un projet SharePoint.
 
      Pour plus d’informations, consultez [SharePoint modèles d’élément de projet et le projet](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
-2.  Dans **l’Explorateur de solutions**, choisissez le nœud du projet, puis, dans la barre de menus, choisissez **projet** > **ajouter un nouvel élément**.
+2. Dans **l’Explorateur de solutions**, choisissez le nœud du projet, puis, dans la barre de menus, choisissez **projet** > **ajouter un nouvel élément**.
 
      La boîte de dialogue **Ajouter un nouvel élément** s’ouvre.
 
-3.  Dans la liste de modèles SharePoint, choisissez le **Module** modèle, puis choisissez le **ajouter** bouton.
+3. Dans la liste de modèles SharePoint, choisissez le **Module** modèle, puis choisissez le **ajouter** bouton.
 
      Cette étape crée un nœud dans le projet nommé Module1.
 
-4.  Sous Module1, supprimez le *Sample.txt* fichier.
+4. Sous Module1, supprimez le *Sample.txt* fichier.
 
      Sample.txt est inclus dans tous les nouveaux modules par exemple à des fins et n’est pas nécessaire. (Notez que la suppression du fichier supprime également son entrée à partir du module *Elements.xml* fichier.)
 
-5.  Si vous souhaitez que vos fichiers à déployer sur une structure de dossiers particulière dans SharePoint, créez ces dossiers sous Module1 dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] en choisissant le nœud Module1, puis, dans la barre de menus, choisissez **projet**, **New Dossier**.
+5. Si vous souhaitez que vos fichiers à déployer sur une structure de dossiers particulière dans SharePoint, créez ces dossiers sous Module1 dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] en choisissant le nœud Module1, puis, dans la barre de menus, choisissez **projet**, **New Dossier**.
 
-6.  Choisissez le dossier dans lequel vous souhaitez ajouter le fichier, puis, dans la barre de menus, choisissez **projet**, **ajouter un élément existant**.
+6. Choisissez le dossier dans lequel vous souhaitez ajouter le fichier, puis, dans la barre de menus, choisissez **projet**, **ajouter un élément existant**.
 
-7.  Choisissez un ou plusieurs fichiers que vous souhaitez déployer sur SharePoint, puis choisissez le **ajouter** bouton.
+7. Choisissez un ou plusieurs fichiers que vous souhaitez déployer sur SharePoint, puis choisissez le **ajouter** bouton.
 
      Lorsque vous ajoutez un fichier au projet, une entrée pour qu’il est automatiquement ajoutée au fichier Elements.xml du module. Lorsque le projet est déployé, les fichiers sont copiés vers SharePoint server, relatif au répertoire du projet racine, qui est spécifié par le **fichier** l’élément **Url** attribut, tel que `Url="Module1/New Folder/SomeFile.doc`. Si vous souhaitez modifier l’emplacement de déploiement pour un fichier, soit le déplacer vers un autre dossier dans **l’Explorateur de solutions** ou modifier ses **Url** paramètre.
 
-8.  Pour tous les fichiers que vous souhaitez voir apparaître dans une bibliothèque de documents, ajoutez le `Type="GhostableInLibrary"` leur entrée dans l’attribut *Elements.xml*. Par exemple :
+8. Pour tous les fichiers que vous souhaitez voir apparaître dans une bibliothèque de documents, ajoutez le `Type="GhostableInLibrary"` leur entrée dans l’attribut *Elements.xml*. Par exemple :
 
     ```xml
     <File Path="Module1\Some Folder\SomePage.aspx" Url="Module1/Some Folder/SomePage.aspx" Type="GhostableInLibrary" />

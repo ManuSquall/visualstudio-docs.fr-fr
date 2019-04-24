@@ -11,12 +11,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 640217b9ee9a8cb51ed11931d0d66b2c98e0a165
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f938e08d2bc9363be5e3f9e1ac247dea36f25a80
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953955"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064828"
 ---
 # <a name="link-uml-model-updates-by-using-transactions"></a>Lier des mises à jour de modèles UML à l'aide de transactions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,15 +62,15 @@ Lorsque vous définissez une extension des concepteurs UML dans Visual Studio, v
   
  Notez les points suivants :  
   
--   Vous devez toujours inclure `Commit()` à la fin de la transaction. Si une transaction est supprimée sans avoir été validée, elle sera restaurée. Autrement dit, le modèle sera restauré à son état au début de la transaction.  
+- Vous devez toujours inclure `Commit()` à la fin de la transaction. Si une transaction est supprimée sans avoir été validée, elle sera restaurée. Autrement dit, le modèle sera restauré à son état au début de la transaction.  
   
--   Si une exception se produit et n'est pas interceptée dans la transaction, celle-ci sera restaurée. Placer le bloc `using` de la transaction à l'intérieur d'un bloc `try…catch` est une pratique courante.  
+- Si une exception se produit et n'est pas interceptée dans la transaction, celle-ci sera restaurée. Placer le bloc `using` de la transaction à l'intérieur d'un bloc `try…catch` est une pratique courante.  
   
--   Vous pouvez imbriquer des transactions.  
+- Vous pouvez imbriquer des transactions.  
   
--   Vous pouvez fournir un nom non vide à `BeginTransaction()`.  
+- Vous pouvez fournir un nom non vide à `BeginTransaction()`.  
   
--   Seul le magasin de modèles UML est affecté par ces transactions. Les transactions de modélisation n'affectent pas les variables, les magasins externes comme les fichiers et les bases de données, les diagrammes de couche et les modèles de code.  
+- Seul le magasin de modèles UML est affecté par ces transactions. Les transactions de modélisation n'affectent pas les variables, les magasins externes comme les fichiers et les bases de données, les diagrammes de couche et les modèles de code.  
   
 ## <a name="example"></a>Exemple  
   

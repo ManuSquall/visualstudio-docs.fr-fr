@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5542e1ddde595bd22b34d339fd422e003a0ef0e7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 08303b672fe45db4b6ccfcb5a64be5115e660186
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618599"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069432"
 ---
 # <a name="how-to-programmatically-save-visio-documents"></a>Procédure : Enregistrer des documents Visio par programmation
   Il existe plusieurs façons d’enregistrer des documents Microsoft Office Visio :
@@ -35,7 +35,7 @@ ms.locfileid: "56618599"
 
 ### <a name="to-save-a-document"></a>Pour enregistrer un document
 
--   Appelez la méthode `Microsoft.Office.Interop.Visio.Document.Save` de la classe `Microsoft.Office.Tools.Visio.Document` d’un document enregistré précédemment.
+- Appelez la méthode `Microsoft.Office.Interop.Visio.Document.Save` de la classe `Microsoft.Office.Tools.Visio.Document` d’un document enregistré précédemment.
 
      Pour utiliser cet exemple de code, exécutez-le à partir de la classe `ThisAddIn` de votre projet.
 
@@ -50,7 +50,7 @@ ms.locfileid: "56618599"
 
 ### <a name="to-save-the-active-visio-document-with-a-new-name"></a>Pour enregistrer le document Visio actif sous un nouveau nom
 
--   Appelez la méthode `Microsoft.Office.Interop.Visio.Document.SaveAs` du `Microsoft.Office.Tools.Visio.Document` que vous souhaitez enregistrer, en utilisant un chemin complet incluant un nom du fichier. Si un fichier du même nom existe déjà dans ce dossier, il est automatiquement remplacé.
+- Appelez la méthode `Microsoft.Office.Interop.Visio.Document.SaveAs` du `Microsoft.Office.Tools.Visio.Document` que vous souhaitez enregistrer, en utilisant un chemin complet incluant un nom du fichier. Si un fichier du même nom existe déjà dans ce dossier, il est automatiquement remplacé.
 
      Pour utiliser cet exemple de code, exécutez-le à partir de la classe `ThisAddIn` de votre projet.
 
@@ -62,7 +62,7 @@ ms.locfileid: "56618599"
 
 ### <a name="to-save-document-with-a-new-name-and-specified-arguments"></a>Pour enregistrer un document sous un nouveau nom avec des arguments spécifiés
 
--   Appelez la méthode `Microsoft.Office.Interop.Visio.Document.SaveAsEx` du `Microsoft.Office.Tools.Visio.Document` que vous souhaitez enregistrer, en utilisant un chemin complet incluant un nom du fichier. Si un fichier du même nom existe déjà dans ce dossier, une exception est levée.
+- Appelez la méthode `Microsoft.Office.Interop.Visio.Document.SaveAsEx` du `Microsoft.Office.Tools.Visio.Document` que vous souhaitez enregistrer, en utilisant un chemin complet incluant un nom du fichier. Si un fichier du même nom existe déjà dans ce dossier, une exception est levée.
 
      L’exemple de code suivant enregistre le document actif sous un nouveau nom, marque le document en lecture seule et affiche le document dans la liste des derniers fichiers utilisés. Pour utiliser cet exemple de code, exécutez-le à partir de la classe `ThisAddIn` de votre projet.
 
@@ -72,7 +72,7 @@ ms.locfileid: "56618599"
 ## <a name="compile-the-code"></a>Compiler le code
  Cet exemple de code doit respecter la condition suivante :
 
--   Pour enregistrer un document qui possède un nouveau nom, un répertoire nommé `Test` doit se trouver dans le *Mes Documents* dossier (pour Windows XP et versions antérieures) ou le *Documents* dossier (Windows Vista).
+- Pour enregistrer un document qui possède un nouveau nom, un répertoire nommé `Test` doit se trouver dans le *Mes Documents* dossier (pour Windows XP et versions antérieures) ou le *Documents* dossier (Windows Vista).
 
 ## <a name="see-also"></a>Voir aussi
 - [Solutions Visio](../vsto/visio-solutions.md)

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 640936fbe0218bbb8e6d710547c39a4bfbf0bc9e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 36c49d3447a5f1fafcf4601057c66ebedcb193ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918115"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087480"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>Partage de classes entre plusieurs DSL à l'aide d'une bibliothèque DSL
 Dans Visual Studio Visualization and Modeling SDK, vous pouvez créer une définition DSL incomplète que vous pouvez importer dans un autre DSL. Cela vous permet de tenir compte des parties communes des modèles similaires.
@@ -21,11 +21,11 @@ Dans Visual Studio Visualization and Modeling SDK, vous pouvez créer une défin
 
 #### <a name="to-create-a-dsl-library"></a>Pour créer une bibliothèque DSL
 
-1.  Créez un projet DSL, puis choisissez le modèle de solution de bibliothèque DSL.
+1. Créez un projet DSL, puis choisissez le modèle de solution de bibliothèque DSL.
 
      Un seul projet DSL sera créé avec un modèle vide.
 
-2.  Vous pouvez ajouter des classes de domaine, relations, formes et ainsi de suite.
+2. Vous pouvez ajouter des classes de domaine, relations, formes et ainsi de suite.
 
      Les éléments dans la bibliothèque est inutile former une arborescence d’incorporation unique.
 
@@ -33,15 +33,15 @@ Dans Visual Studio Visualization and Modeling SDK, vous pouvez créer une défin
 
      Envisagez de définir le **modificateur d’héritage** des classes de domaine pour `Abstract`.
 
-3.  Vous pouvez ajouter des éléments que vous définissez dans l’Explorateur DSL, tels que les générateurs de connexions.
+3. Vous pouvez ajouter des éléments que vous définissez dans l’Explorateur DSL, tels que les générateurs de connexions.
 
-4.  Vous pouvez ajouter des personnalisations qui nécessitent du code supplémentaire, telles que les contraintes de validation.
+4. Vous pouvez ajouter des personnalisations qui nécessitent du code supplémentaire, telles que les contraintes de validation.
 
-5.  Cliquez sur **transformer tous les modèles**.
+5. Cliquez sur **transformer tous les modèles**.
 
-6.  Générez le projet.
+6. Générez le projet.
 
-7.  Lorsque vous distribuez le DSL pour d’autres personnes à utiliser, vous devez fournir l’assembly compilé (DLL) et le fichier `DslDefinition.dsl`. Vous pouvez trouver l’assembly compilé dans un dossier sous `Dsl\bin\*`
+7. Lorsque vous distribuez le DSL pour d’autres personnes à utiliser, vous devez fournir l’assembly compilé (DLL) et le fichier `DslDefinition.dsl`. Vous pouvez trouver l’assembly compilé dans un dossier sous `Dsl\bin\*`
 
 #### <a name="to-import-a-dsl-library"></a>Pour importer une bibliothèque DSL
 

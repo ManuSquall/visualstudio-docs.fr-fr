@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 071a18af0532a55946087f7c47535405d0d3b40e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 28e2358b92080bd56cfda9d395f87e5c188da221
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949053"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062917"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Définition d'une image d'arrière-plan dans un schéma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,21 +25,21 @@ Dans le Kit de développement logiciel (SDK) de visualisation et de modélisatio
   
 #### <a name="to-set-a-background-image-for-a-generated-designer"></a>Pour définir une image d'arrière-plan pour un concepteur généré  
   
-1.  Copiez le fichier image que vous souhaitez utiliser comme arrière-plan du diagramme dans le répertoire Dsl\Resources du projet actif.  
+1. Copiez le fichier image que vous souhaitez utiliser comme arrière-plan du diagramme dans le répertoire Dsl\Resources du projet actif.  
   
-2.  Dans **l’Explorateur de solutions**, cliquez sur le dossier Dsl\Resources, pointez sur **ajouter**, puis cliquez sur **élément existant**.  
+2. Dans **l’Explorateur de solutions**, cliquez sur le dossier Dsl\Resources, pointez sur **ajouter**, puis cliquez sur **élément existant**.  
   
-3.  Dans le **ajouter un élément existant** boîte de dialogue, accédez au dossier Dsl\Resources.  
+3. Dans le **ajouter un élément existant** boîte de dialogue, accédez au dossier Dsl\Resources.  
   
-4.  Dans le **types de fichiers** , cliquez sur **fichiers Image**.  
+4. Dans le **types de fichiers** , cliquez sur **fichiers Image**.  
   
-5.  Cliquez sur le fichier image que vous avez copiée dans le répertoire, puis cliquez sur **ajouter**.  
+5. Cliquez sur le fichier image que vous avez copiée dans le répertoire, puis cliquez sur **ajouter**.  
   
-6.  Cliquez sur Dsl, puis cliquez sur **propriétés** pour ouvrir les propriétés du projet Dsl.  
+6. Cliquez sur Dsl, puis cliquez sur **propriétés** pour ouvrir les propriétés du projet Dsl.  
   
-7.  Sur le **ressources** sous l’onglet **ce projet ne contient pas un fichier de ressources par défaut. Cliquez ici pour en créer un.**  
+7. Sur le **ressources** sous l’onglet **ce projet ne contient pas un fichier de ressources par défaut. Cliquez ici pour en créer un.**  
   
-8.  Ajoutez le fichier image au fichier de ressources en faisant glisser l’image à partir de **l’Explorateur de solutions** dans la fenêtre de ressources.  
+8. Ajoutez le fichier image au fichier de ressources en faisant glisser l’image à partir de **l’Explorateur de solutions** dans la fenêtre de ressources.  
   
 9. Ouvrez le menu fichier, puis cliquez sur l'option d'enregistrement des propriétés du projet.  
   

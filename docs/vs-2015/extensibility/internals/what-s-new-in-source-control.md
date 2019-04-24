@@ -11,12 +11,12 @@ ms.assetid: bcf85418-18fb-4824-9dae-d14bf3d56a77
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 27623c22664e9d3c6b651615465e6abe812ea408
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 31b55c57f47f25814eff24f13bcf91408468d0f4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001489"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087308"
 ---
 # <a name="what39s-new-in-source-control-in-visual-studio-2015"></a>Ce que&#39;nouveauté d’un contrôle de code Source dans Visual Studio 2015
 
@@ -33,17 +33,17 @@ Dans [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] vous pouvez fournir une s
   
  La procédure suivante donne une vue d’ensemble de ce qui est nécessaire pour implémenter un package de contrôle de code source. Pour plus d’informations, consultez [création d’un VSPackage de contrôle de code Source](../../extensibility/internals/creating-a-source-control-vspackage.md).  
   
-1.  Créer un VSPackage qui offre un service de contrôle de source privée.  
+1. Créer un VSPackage qui offre un service de contrôle de source privée.  
   
-2.  Implémenter les interfaces dans les services relatifs au contrôle de code source sont offerts par [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (par exemple, le <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider> interface).  
+2. Implémenter les interfaces dans les services relatifs au contrôle de code source sont offerts par [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] (par exemple, le <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider> interface).  
   
-3.  Inscrire votre VSPackage de contrôle de code source.  
+3. Inscrire votre VSPackage de contrôle de code source.  
   
-4.  Implémenter le contrôle de code source toutes l’interface utilisateur, y compris les éléments de menu, des boîtes de dialogue, des barres d’outils et des menus contextuels.  
+4. Implémenter le contrôle de code source toutes l’interface utilisateur, y compris les éléments de menu, des boîtes de dialogue, des barres d’outils et des menus contextuels.  
   
-5.  Tous les événements relatifs au contrôle de source sont passés à votre contrôle de code source VSackage lorsqu’il est actif et doit être gérée par votre VSPackage.  
+5. Tous les événements relatifs au contrôle de source sont passés à votre contrôle de code source VSackage lorsqu’il est actif et doit être gérée par votre VSPackage.  
   
-6.  Votre contrôle de code source VSPackage doit écouter les événements tels que ceux implémentation le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> interface ainsi que les événements de Document de projet de suivi (TPD) (implémenté par le <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> interface) et prendre les mesures nécessaires.  
+6. Votre contrôle de code source VSPackage doit écouter les événements tels que ceux implémentation le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> interface ainsi que les événements de Document de projet de suivi (TPD) (implémenté par le <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> interface) et prendre les mesures nécessaires.  
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>   

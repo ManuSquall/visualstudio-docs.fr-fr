@@ -11,12 +11,12 @@ ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6c6722078f2f25bfb2a14b44e001b0f2921e8ad5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bf0d5e29138f27956dff52571296395507d44976
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954076"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055416"
 ---
 # <a name="registering-single-file-generators"></a>Inscription de générateurs de fichier unique
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Pour mettre à disposition dans un outil personnalisé [!INCLUDE[vsprvs](../../i
   
 ### <a name="to-register-a-custom-tool"></a>Pour inscrire un outil personnalisé  
   
-1.  Inscrire l’outil personnalisé DLL soit dans le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Registre local ou dans le Registre système, sous HKEY_CLASSES_ROOT.  
+1. Inscrire l’outil personnalisé DLL soit dans le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Registre local ou dans le Registre système, sous HKEY_CLASSES_ROOT.  
   
      Par exemple, voici les informations d’inscription pour l’outil personnalisé MSDataSetGenerator géré, est fourni avec [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]:  
   
@@ -38,17 +38,17 @@ Pour mettre à disposition dans un outil personnalisé [!INCLUDE[vsprvs](../../i
     "Assembly"="Microsoft.VSDesigner, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a"  
     ```  
   
-2.  Créer une clé de Registre dans le texte souhaité [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] hive sous générateurs\\*GUID* où *GUID* est le GUID défini par le système de projet ou le service de langage spécifique. Le nom de la clé devient le nom de programmation de votre outil personnalisé. La clé de l’outil personnalisé a les valeurs suivantes :  
+2. Créer une clé de Registre dans le texte souhaité [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] hive sous générateurs\\*GUID* où *GUID* est le GUID défini par le système de projet ou le service de langage spécifique. Le nom de la clé devient le nom de programmation de votre outil personnalisé. La clé de l’outil personnalisé a les valeurs suivantes :  
   
-    -   (Default)  
+    - (Default)  
   
          Optionnel. Fournit une description conviviale de l’outil personnalisé. Ce paramètre est facultatif mais recommandé.  
   
-    -   CLSID  
+    - CLSID  
   
          Obligatoire. Spécifie l’identificateur de la bibliothèque de classes du composant COM qui implémente <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.  
   
-    -   GeneratesDesignTimeSource  
+    - GeneratesDesignTimeSource  
   
          Obligatoire. Indique si les types des fichiers générés par cet outil personnalisé sont rendus disponibles aux concepteurs visuels. La valeur de ce paramètre doit être (zéro) 0 pour les types non disponibles aux concepteurs visuels ou 1 (un) pour les types disponibles aux concepteurs visuels.  
   

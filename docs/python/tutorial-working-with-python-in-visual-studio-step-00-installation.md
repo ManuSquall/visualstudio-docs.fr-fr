@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Étape 0 (conditions préalables d’installation) d’une procédure pas à pas portant sur l’utilisation de Python dans Visual Studio.
 ms.date: 01/28/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8a67b471a798a1a7aaf35b713f22d60d98f54dc5
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 96c067d4c55a5df4d9343e60360142466e8f218f
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355092"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59367015"
 ---
 # <a name="install-python-support-in-visual-studio"></a>Installer la prise en charge de Python dans Visual Studio
 
@@ -47,5 +47,5 @@ ms.locfileid: "58355092"
 ## <a name="see-also"></a>Voir aussi
 
 - [Identifier manuellement un interpréteur Python existant](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
-- [Installer la prise en charge de Python dans Visual Studio 2015 et antérieur](installing-python-support-in-visual-studio.md)
+- [Installer la prise en charge de Python dans Visual Studio 2015 et les versions antérieures](installing-python-support-in-visual-studio.md)
 - [Emplacements d’installation](installing-python-support-in-visual-studio.md#install-locations)

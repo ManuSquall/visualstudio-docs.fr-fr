@@ -23,14 +23,14 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a73beba7ee41c52c60a4aaa3864a7ef112784dd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c7161d8115f8cc99f830293cdf5f957a2264f5a0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756984"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041180"
 ---
-# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Guide pratique pour ajouter ou supprimer des références à l’aide du gestionnaire de références
+# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procédure : Ajouter ou supprimer des références à l’aide du Gestionnaire de références
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez utiliser la boîte de dialogue **Gestionnaire de références** pour ajouter et gérer des références aux composants développés par vous, par Microsoft ou par une autre société. Si vous développez une application Windows universelle, votre projet référence automatiquement toutes les DLL correctes du kit SDK Windows. Si vous développez une application .NET, votre projet référence automatiquement mscorlib.dll. Certaines API .NET sont exposées dans des composants que vous devez ajouter manuellement. Les références à des composants COM ou à des composants personnalisés doivent être ajoutées manuellement.  
@@ -45,13 +45,13 @@ Vous pouvez utiliser la boîte de dialogue **Gestionnaire de références** pour
   
    Le **Gestionnaire de références** s’ouvre et affiche la liste des références disponibles par groupe. Le type de projet détermine quel groupe parmi les suivants s'affiche :  
   
--   Assemblys, avec les sous-groupes Framework et Extensions.  
+- Assemblys, avec les sous-groupes Framework et Extensions.  
   
--   Solution, avec le sous-groupe Projets.  
+- Solution, avec le sous-groupe Projets.  
   
--   Windows, avec les sous-groupes Principal et Extensions. Vous pouvez explorer les références dans le SDK Windows ou les SDK de l’extension à l’aide de l’**Explorateur d’objets**.  
+- Windows, avec les sous-groupes Principal et Extensions. Vous pouvez explorer les références dans le SDK Windows ou les SDK de l’extension à l’aide de l’**Explorateur d’objets**.  
   
--   Parcourir, avec le sous-groupe Récent.  
+- Parcourir, avec le sous-groupe Récent.  
   
 ## <a name="assemblies-tab"></a>Onglet Assemblys  
  L’onglet **Assemblys** répertorie tous les assemblys .NET Framework qui sont disponibles pour le référencement. L’onglet **Assemblys** ne répertorie par les assemblys du Global Assembly Cache (GAC), car ils appartiennent à l’environnement d’exécution. Si vous déployez ou copiez une application qui contient une référence à un assembly enregistré dans le GAC, cet assembly ne sera ni déployé ni copié avec l'application, quelle que soit la valeur du paramètre Copie locale. Pour plus d’informations, consultez [Références de projet](http://go.microsoft.com/fwlink/?LinkId=238512).  
@@ -66,13 +66,13 @@ Vous pouvez utiliser la boîte de dialogue **Gestionnaire de références** pour
   
 1. Framework : répertorie tous les assemblys qui constituent le Framework ciblé.  
   
-   -   Les assemblys publiés se trouvent dans le Framework complet et sont énumérés dans la liste de Framework lorsque votre projet cible un profil de Framework ciblé. Les assemblys sont publiés en gris pour les différencier de ceux qui existent dans le profil de Framework ciblé du projet. Par exemple, si un projet cible le client .NET Framework 4, la liste Framework indique les assemblys publiés à partir de .NET Framework 4. Quand un utilisateur ajoute un assembly publié, cet utilisateur est averti qu’une fois la boîte de dialogue **Gestionnaire de références** fermée le projet sera reciblé vers .NET Framework 4 et l’assembly publié sera ajouté.  
+   - Les assemblys publiés se trouvent dans le Framework complet et sont énumérés dans la liste de Framework lorsque votre projet cible un profil de Framework ciblé. Les assemblys sont publiés en gris pour les différencier de ceux qui existent dans le profil de Framework ciblé du projet. Par exemple, si un projet cible le client .NET Framework 4, la liste Framework indique les assemblys publiés à partir de .NET Framework 4. Quand un utilisateur ajoute un assembly publié, cet utilisateur est averti qu’une fois la boîte de dialogue **Gestionnaire de références** fermée le projet sera reciblé vers .NET Framework 4 et l’assembly publié sera ajouté.  
   
-   -   Les projets pour les applications [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] contiennent des références à tous les assemblys du [!INCLUDE[net_win8_profile](../includes/net-win8-profile-md.md)] ciblé par défaut sur la création de projet. Dans les projets managés, un nœud en lecture seule dans le dossier Références de l’**Explorateur de solutions** indique la référence au Framework complet. Par conséquent, l'onglet Framework n'énumère pas les assemblys à partir du Framework et affiche à la place le message suivant : « Tous les assemblys .NET Framework sont déjà référencés. Utilisez l'Explorateur d'objets pour explorer les références dans le Framework. » Pour les projets d'application de bureau, l'onglet Framework énumère les assemblys du .NET Framework ciblé. Par ailleurs, l'utilisateur doit ajouter les références nécessaires à l'application.  
+   - Les projets pour les applications [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] contiennent des références à tous les assemblys du [!INCLUDE[net_win8_profile](../includes/net-win8-profile-md.md)] ciblé par défaut sur la création de projet. Dans les projets managés, un nœud en lecture seule dans le dossier Références de l’**Explorateur de solutions** indique la référence au Framework complet. En conséquence, l’onglet Framework n’énumère pas les assemblys du .NET Framework et affiche à la place le message suivant : « Tous les assemblys .NET Framework sont déjà référencés. Utilisez l'Explorateur d'objets pour explorer les références dans le Framework. » Pour les projets d'application de bureau, l'onglet Framework énumère les assemblys du .NET Framework ciblé. Par ailleurs, l'utilisateur doit ajouter les références nécessaires à l'application.  
   
 2. Les extensions répertorient tous les assemblys que les fournisseurs externes de composants et les contrôles ont développés pour étendre le Framework ciblé. Selon l'objectif de l'application utilisateur, ces assemblys peuvent être nécessaires.  
   
-   -   Les extensions sont remplies en énumérant les assemblys stockés dans les emplacements suivants :  
+   - Les extensions sont remplies en énumérant les assemblys stockés dans les emplacements suivants :  
   
        ```  
        32-bit machine:  
@@ -88,17 +88,17 @@ Vous pouvez utiliser la boîte de dialogue **Gestionnaire de références** pour
   
    Certains composants dans la liste peuvent ne pas être indiqués, selon la version [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] de votre projet. Cela peut se produire dans les conditions suivantes :  
   
--   Un composant qui utilise une version récente du .NET Framework est incompatible avec un projet qui cible une version antérieure du .NET Framework.  
+- Un composant qui utilise une version récente du .NET Framework est incompatible avec un projet qui cible une version antérieure du .NET Framework.  
   
-     Pour plus d’informations sur le changement de la version cible du .NET Framework pour un projet, consultez [Guide pratique pour cibler une version du .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
+     Pour plus d’informations sur la façon de modifier la version cible du .NET Framework dans un projet, consultez [Guide pratique pour Cibler une version du .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
--   Un composant qui utilise le [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] est incompatible avec un projet qui cible le [!INCLUDE[net_v45](../includes/net-v45-md.md)].  
+- Un composant qui utilise le [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] est incompatible avec un projet qui cible le [!INCLUDE[net_v45](../includes/net-v45-md.md)].  
   
      Lorsque vous créez une application, certains projets ciblent le [!INCLUDE[net_v45](../includes/net-v45-md.md)] par défaut. Pour plus d’informations, consultez [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).  
   
--   Évitez si possible d'ajouter des références de fichier aux sorties d'un autre projet de la même solution, car cela risquerait de provoquer des erreurs de compilation. Utilisez l’onglet **Projets** de la boîte de dialogue **Ajouter une référence** afin de créer des références entre projets. Cela facilite le développement en équipe, en permettant une meilleure gestion des bibliothèques de classes créées dans vos projets. Pour plus d’informations, consultez [Dépannage de références rompues](../ide/troubleshooting-broken-references.md).  
+- Évitez si possible d'ajouter des références de fichier aux sorties d'un autre projet de la même solution, car cela risquerait de provoquer des erreurs de compilation. Utilisez l’onglet **Projets** de la boîte de dialogue **Ajouter une référence** afin de créer des références entre projets. Cela facilite le développement en équipe, en permettant une meilleure gestion des bibliothèques de classes créées dans vos projets. Pour plus d’informations, consultez [Dépannage de références rompues](../ide/troubleshooting-broken-references.md).  
   
--   > [!NOTE]
+- > [!NOTE]
     >  Dans Visual Studio 2015, une référence de fichier est créée au lieu d'une référence de projet si la version cible du .NET Framework d'un projet est 4.5 et que la version cible du de l'autre projet est 2, 3, 3.5 ou 4.0.  
   
 #### <a name="to-display-an-assembly-in-the-add-reference-dialog-box"></a>Pour afficher un assembly dans la boîte de dialogue Ajouter une référence  
@@ -163,7 +163,7 @@ Vous pouvez utiliser la boîte de dialogue **Gestionnaire de références** pour
 ### <a name="core-subgroup"></a>Sous-groupe Principal  
  Le sous-groupe Principal répertorie tous les WinMDs (pour les éléments Windows Runtime) dans le kit SDK de la version Windows ciblée.  
   
- Les projets d'application [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] contiennent des références à tous les WinMDs du kit SDK [!INCLUDE[win8](../includes/win8-md.md)] par défaut sur la création de projet. Dans les projets managés, un nœud en lecture seule dans le dossier Références de l’**Explorateur de solutions** indique la référence au SDK [!INCLUDE[win8](../includes/win8-md.md)] complet. En conséquence, le sous-groupe principal du Gestionnaire de références n’énumère pas les assemblys à partir de la [!INCLUDE[win8](../includes/win8-md.md)] SDK et affiche à la place un message : « Le Kit de développement logiciel Windows est déjà référencé. Utilisez l'Explorateur d'objets pour explorer les références dans le Kit de développement logiciel Windows. »  
+ Les projets d'application [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] contiennent des références à tous les WinMDs du kit SDK [!INCLUDE[win8](../includes/win8-md.md)] par défaut sur la création de projet. Dans les projets managés, un nœud en lecture seule dans le dossier Références de l’**Explorateur de solutions** indique la référence au SDK [!INCLUDE[win8](../includes/win8-md.md)] complet. En conséquence, le sous-groupe principal du Gestionnaire de références n’énumère pas les assemblys à partir de la [!INCLUDE[win8](../includes/win8-md.md)] SDK et affiche à la place un message : « Le SDK Windows est déjà référencé. Utilisez l'Explorateur d'objets pour explorer les références dans le Kit de développement logiciel Windows. »  
   
  Dans les projets du Bureau, le sous-groupe Principal ne s'affiche pas par défaut. Vous pouvez ajouter le Windows Runtime en ouvrant le menu contextuel du nœud du projet, en choisissant **Décharger le projet**, en ajoutant l’extrait de code suivant, et en rouvrant le projet (sur le nœud du projet, choisissez **Recharger le projet**). Quand vous appelez la boîte de dialogue**Gestionnaire de références**, le sous-groupe Principal s’affiche.  
   
@@ -196,9 +196,9 @@ Vous pouvez utiliser la boîte de dialogue **Gestionnaire de références** pour
   
  Quand vous effectuez une référence de fichier pour un fichier WinMD, la disposition attendue est la suivante : les fichiers *nom_fichier*.winmd, *nom_fichier*.dll et *nom_fichier*.pri sont placés les uns aux côtés des autres. Si vous référencez un fichier WinMD dans les scénarios suivants, un ensemble incomplet de fichiers est copié dans le répertoire de sortie du projet et, par conséquent, des erreurs de rendu et d'exécution se produisent.  
   
--   **Composant natif** : un projet natif crée un fichier WinMD pour chaque ensemble d’espaces de noms disjoint et une DLL qui contient l’implémentation. Les WinMD auront des noms disparates. En faisant référence à ce fichier du composant natif, MSBuild ne sait pas que les WinMD nommés différemment constituent un composant. Ainsi, seuls les fichiers *nom_fichier*.dll et *nom_fichier*.winmd portant le même nom sont copiés, et des erreurs d’exécution se produisent. Pour contourner ce problème, créez un kit SDK d’extension. Pour plus d’informations, consultez [Création d’un SDK](../extensibility/creating-a-software-development-kit.md).  
+- **Composant natif** : un projet natif crée un fichier WinMD pour chaque ensemble d’espaces de noms disjoint et une DLL qui contient l’implémentation. Les WinMD auront des noms disparates. En faisant référence à ce fichier du composant natif, MSBuild ne sait pas que les WinMD nommés différemment constituent un composant. Ainsi, seuls les fichiers *nom_fichier*.dll et *nom_fichier*.winmd portant le même nom sont copiés, et des erreurs d’exécution se produisent. Pour contourner ce problème, créez un kit SDK d’extension. Pour plus d’informations, consultez [Création d’un SDK](../extensibility/creating-a-software-development-kit.md).  
   
--   **Utilisation de contrôles** : au minimum, un contrôle XAML comprend un fichier *nom_fichier*.winmd, *nom_fichier*.dll, *nom_fichier*.pri, *nom_xaml*.xaml et *nom_image*.jpg. Quand le projet est généré, les fichiers de ressources associés à la référence de fichier ne sont pas copiés dans le répertoire de sortie du projet. Seuls les fichiers *nom_fichier*.winmd, *nom_fichier*.dll et *nom_fichier*.pri sont copiés. Une erreur de build est journalisée pour indiquer à l’utilisateur que les ressources *nom_xaml*.xaml et *nom_image*.jpg sont manquantes. Pour que l'opération réussisse, l'utilisateur doit copier manuellement les fichiers de ressources dans le répertoire de sortie du projet pour la génération et le débogage/l'exécution. Pour contourner ce problème, créez un SDK de l’extension en suivant les étapes décrites dans [Création d’un SDK](../extensibility/creating-a-software-development-kit.md), ou modifiez le fichier projet pour ajouter la propriété suivante :  
+- **Utilisation de contrôles** : au minimum, un contrôle XAML comprend un fichier *nom_fichier*.winmd, *nom_fichier*.dll, *nom_fichier*.pri, *nom_xaml*.xaml et *nom_image*.jpg. Quand le projet est généré, les fichiers de ressources associés à la référence de fichier ne sont pas copiés dans le répertoire de sortie du projet. Seuls les fichiers *nom_fichier*.winmd, *nom_fichier*.dll et *nom_fichier*.pri sont copiés. Une erreur de build est journalisée pour indiquer à l’utilisateur que les ressources *nom_xaml*.xaml et *nom_image*.jpg sont manquantes. Pour que l'opération réussisse, l'utilisateur doit copier manuellement les fichiers de ressources dans le répertoire de sortie du projet pour la génération et le débogage/l'exécution. Pour contourner ce problème, créez un SDK de l’extension en suivant les étapes décrites dans [Création d’un SDK](../extensibility/creating-a-software-development-kit.md), ou modifiez le fichier projet pour ajouter la propriété suivante :  
   
     ```  
     <PropertyGroup>  
@@ -216,5 +216,5 @@ Vous pouvez utiliser la boîte de dialogue **Gestionnaire de références** pour
  La barre de recherche de la boîte de dialogue **Gestionnaire de références** fonctionne sur l’onglet situé dans le focus. Par exemple, si un utilisateur tape « système » dans la barre de recherche alors que l’onglet **Solution** est affiché, la recherche ne retourne aucun résultat à moins que la solution consiste en un nom de projet contenant « système ».  
   
 ## <a name="see-also"></a>Voir aussi  
- [(NIB) Guide pratique pour Ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter référence](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
+ [NIB Comment : Ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter référence](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
  [Gestion des références dans un projet](../ide/managing-references-in-a-project.md)

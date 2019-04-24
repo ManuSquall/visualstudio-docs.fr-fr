@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7590350fdcfb74f90cd4441e97503a60b298c66
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 44b8e31fea497bff928ce19e5cb165c7809883cb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954278"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104562"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>Ajouter une extension du protocole de serveur de langage
 
@@ -259,7 +259,6 @@ namespace MockLanguageExtension
         [BaseDefinition(CodeRemoteContentDefinition.CodeRemoteContentTypeName)]
         internal static ContentTypeDefinition BarContentTypeDefinition;
 
-
         [Export]
         [FileExtension(".bar")]
         [ContentType("bar")]
@@ -297,6 +296,7 @@ Suivez ces étapes ci-dessous pour ajouter la prise en charge des paramètres à
         "foo.maxNumberOfProblems": -1
     }
     ```
+
 2. Avec le bouton droit sur le fichier JSON et sélectionnez **propriétés**. Modification la **Build** action pour « Content » et le « inclure dans VSIX' true à la propriété.
 
 3. Implémenter ConfigurationSections et retourner la liste des préfixes pour les paramètres définis dans le fichier JSON (dans Visual Studio Code, il serait correspondre au nom de la section de configuration dans le fichier package.json) :
@@ -319,6 +319,7 @@ Suivez ces étapes ci-dessous pour ajouter la prise en charge des paramètres à
     ```
 
     Aperçu :
+
     ```
     [$RootKey$\OpenFolder\Settings\VSWorkspaceSettings\MockLanguageExtension]
     @="$PackageFolder$\MockLanguageExtensionSettings.json"

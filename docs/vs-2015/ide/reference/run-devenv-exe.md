@@ -16,17 +16,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 120ff132ac33a156cdf734ee0e17f4cfade9380c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 68e5dcc5ff2e78fe87bbaad639c93f5532ea74fe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54768891"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065673"
 ---
 # <a name="run-devenvexe"></a>/Run (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Compile et exécute la solution ou le projet spécifié.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -45,9 +44,9 @@ devenv {/run|/r} {SolutionName|ProjectName}
 ## <a name="remarks"></a>Remarques  
  Compile et exécute la solution ou le projet spécifié en fonction des paramètres spécifiés pour la configuration de la solution active. Ce commutateur lance l’environnement de développement intégré (IDE) et le maintient actif à la fin de l’exécution du projet ou de la solution.  
   
--   Placez entre guillemets doubles les chaînes contenant des espaces.  
+- Placez entre guillemets doubles les chaînes contenant des espaces.  
   
--   Les informations résumées, notamment les erreurs, peuvent être affichées dans la fenêtre **Commande**, ou dans tout fichier journal spécifié avec le commutateur `/out`.  
+- Les informations résumées, notamment les erreurs, peuvent être affichées dans la fenêtre **Commande**, ou dans tout fichier journal spécifié avec le commutateur `/out`.  
   
 ## <a name="example"></a>Exemple  
  Cet exemple exécute la solution `MySolution` en utilisant la configuration de déploiement active.  

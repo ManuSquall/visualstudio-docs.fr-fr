@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cbbad30fca5dd3ffbaa09c270f6a0b0400d9ea22
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4843f1e49e705e42a58afa8a882018463ce46f7b
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640790"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366755"
 ---
 # <a name="analyze-cpu-usage"></a>Analyser l’utilisation de l’UC
 
@@ -56,12 +56,16 @@ En règle générale, c’est l’ordinateur local qui réplique le mieux l’ex
 
 Le rapport de diagnostic est trié par **Total UC**, du plus élevé au plus bas. Changez l’ordre de tri ou la colonne de tri en sélectionnant les en-têtes de colonnes. Utiliser la liste déroulante **Filtre** pour sélectionner ou désélectionner des threads à afficher, et utilisez la zone **Rechercher** pour rechercher un nœud ou un thread spécifique.
 
+::: moniker range=">=vs-2019"
+À compter de Visual Studio 2019, vous pouvez cliquer sur les boutons **Développer le chemin réactif** et **Afficher le chemin réactif** pour afficher les appels de fonction qui présentent la plus grande consommation du processeur dans l’arborescence des appels.
+::: moniker-end
+
 ###  <a name="BKMK_Call_tree_data_columns"></a> Colonnes de données d’utilisation de l’UC
 
 |||
 |-|-|
-|**Total UC [unité, %]**|![% total, équation de données](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> Millisecondes et pourcentage d’UC utilisés par les appels à la fonction, et fonctions appelées par la fonction, durant la plage de temps sélectionnée. Cette information est différente du graphe chronologique **Utilisation de l’UC**, qui compare l’activité totale de l’UC durant une plage de temps à la quantité totale d’UC disponible.|
-|**Temps UC exclusif [unité, %]**|![% auto, équation](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> Millisecondes et pourcentage d’UC utilisés par les appels à la fonction durant la plage de temps sélectionnée, à l’exclusion des fonctions appelées par la fonction.|
+|**Total processeur [unité, %]**|![% total, équation de données](../profiling/media/cpu_use_wt_totalpercentequation.png "CPU_USE_WT_TotalPercentEquation")<br /><br /> Millisecondes et pourcentage d’UC utilisés par les appels à la fonction, et fonctions appelées par la fonction, durant la plage de temps sélectionnée. Cette information est différente du graphe chronologique **Utilisation de l’UC**, qui compare l’activité totale de l’UC durant une plage de temps à la quantité totale d’UC disponible.|
+|**Processeur auto [unité, %]**|![% auto, équation](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> Millisecondes et pourcentage d’UC utilisés par les appels à la fonction durant la plage de temps sélectionnée, à l’exclusion des fonctions appelées par la fonction.|
 |**Module**|Nom du module contenant la fonction.
 
 ###  <a name="BKMK_The_CPU_Usage_call_tree"></a> Arborescence des appels d'utilisation du processeur
@@ -70,7 +74,12 @@ Pour afficher l’arborescence des appels, sélectionnez le nœud parent dans le
 
 ####  <a name="BKMK_Call_tree_structure"></a> Structure de l’arborescence des appels
 
- ![Structure d’arborescence des appels](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "Structure d’arborescence des appels")
+::: moniker range=">=vs-2019"
+![Structure d’arborescence des appels](../profiling/media/vs-2019/cpu-use-wt-getmaxnumbercalltree-annotated.png "Structure d’arborescence des appels")
+::: moniker-end
+::: moniker range="vs-2017"
+![Structure d’arborescence des appels](../profiling/media/cpu_use_wt_getmaxnumbercalltree_annotated.png "Structure d’arborescence des appels")
+::: moniker-end
 
 |||
 |-|-|
@@ -81,19 +90,24 @@ Pour afficher l’arborescence des appels, sélectionnez le nœud parent dans le
 
 ####  <a name="BKMK_External_Code"></a> Code externe
 
- Les fonctions système et framework qui sont exécutées par votre code sont appelées *code externe*. Les fonctions de code externe démarrent et arrêtent l’application, dessinent l’interface utilisateur, contrôlent les threads et fournissent d’autres services de bas niveau à l’application. Dans la plupart des cas, vous ne serez pas intéressé par le code externe ; par conséquent, l’arborescence des appels de l’utilisation de l’UC regroupe les fonctions externes d’une méthode utilisateur en un seul nœud **[Code externe]** .
+Les fonctions système et framework qui sont exécutées par votre code sont appelées *code externe*. Les fonctions de code externe démarrent et arrêtent l’application, dessinent l’interface utilisateur, contrôlent les threads et fournissent d’autres services de bas niveau à l’application. Dans la plupart des cas, vous ne serez pas intéressé par le code externe ; par conséquent, l’arborescence des appels de l’utilisation de l’UC regroupe les fonctions externes d’une méthode utilisateur en un seul nœud **[Code externe]** .
 
- Pour voir les chemins d’appel du code externe, sélectionnez **Afficher le code externe** dans la liste déroulante **Filtrer** de la page principale des rapports de diagnostic (volet droit), puis sélectionnez **Appliquer**. La vue **Arborescence des appels** de la page **Utilisation de l’UC** page étend alors les appels de code externe. (La liste déroulante **Filtrer** est disponible sur la page principale des diagnostics, et non sur les vues détaillées.)
+Pour voir les chemins d’appel du code externe, sélectionnez **Afficher le code externe** dans la liste déroulante **Filtrer** de la page principale des rapports de diagnostic (volet droit), puis sélectionnez **Appliquer**. La vue **Arborescence des appels** de la page **Utilisation de l’UC** page étend alors les appels de code externe. (La liste déroulante **Filtrer** est disponible sur la page principale des diagnostics, et non sur les vues détaillées.)
 
- ![Afficher le code externe](../profiling/media/cpu_use_wt_filterview.png "Afficher le code externe")
+![Afficher le code externe](../profiling/media/cpu_use_wt_filterview.png "Afficher le code externe")
 
- De nombreuses chaînes d’appels de code externe sont profondément imbriquées ; par conséquent, la largeur de la chaîne peut dépasser la largeur d’affichage de la colonne **Nom de la fonction**. Les noms des fonctions apparaissent alors comme **...**.
+De nombreuses chaînes d’appels de code externe sont profondément imbriquées ; par conséquent, la largeur de la chaîne peut dépasser la largeur d’affichage de la colonne **Nom de la fonction**. Les noms des fonctions apparaissent alors comme **...**.
 
- ![Code externe imbriqué dans l’arborescence des appels](../profiling/media/cpu_use_wt_showexternalcodetoowide.png "Code externe imbriqué dans l’arborescence des appels")
+![Code externe imbriqué dans l’arborescence des appels](../profiling/media/cpu_use_wt_showexternalcodetoowide.png "Code externe imbriqué dans l’arborescence des appels")
 
- Pour rechercher un nom de fonction, utilisez la zone de recherche. Placez le curseur sur la ligne sélectionnée ou utilisez la barre de défilement horizontale pour afficher les données.
+Pour rechercher un nom de fonction, utilisez la zone de recherche. Placez le curseur sur la ligne sélectionnée ou utilisez la barre de défilement horizontale pour afficher les données.
 
- ![Rechercher du code externe imbriqué](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "Rechercher du code externe imbriqué")
+::: moniker range=">=vs-2019"
+![Rechercher du code externe imbriqué](../profiling/media/vs-2019/cpu-use-wt-showexternalcodetoowide-found.png "Rechercher du code externe imbriqué")
+::: moniker-end
+::: moniker range="vs-2017"
+![Rechercher du code externe imbriqué](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "Rechercher du code externe imbriqué")
+::: moniker-end
 
 ###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Fonctions asynchrones de l'arborescence des appels de l'utilisation du processeur
 
@@ -107,7 +121,7 @@ Développez les méthodes générées pour voir ce qui se passe :
 
 ![Nœud asynchrone développé](media/cpu_use_wt_getmaxnumberasync_expandedcalltree.png "Nœud asynchrone développé")
 
-- `MainPage::GetMaxNumberAsyncButton_Click` gère simplement la liste des valeurs de la tâche, calcule le nombre maximal de résultats et affiche la sortie.
+- `MainPage::GetMaxNumberAsyncButton_Click` gère simplement la liste des valeurs de la tâche, calcule le résultat maximal et affiche la sortie.
 
 - `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext` affiche l'activité requise pour planifier et lancer les 48 tâches qui encapsulent l'appel à `GetNumberAsync`.
 

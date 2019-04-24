@@ -17,12 +17,12 @@ ms.assetid: d65d2c04-dd84-42b0-b956-555b11f5a645
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8a32606b97e2831c2074c1feeaa71e74c116fdc4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 97ce429a7140d7b95393c2dcb8b34491b3adfefa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952453"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118043"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>Commutateurs de ligne de commande Devenv pour le développement VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ ms.locfileid: "58952453"
   
  Tâches :  
   
--   Déploiement d’applications dans des configurations prédéfinies d’en dehors de l’IDE.  
+- Déploiement d’applications dans des configurations prédéfinies d’en dehors de l’IDE.  
   
--   Automatiquement la génération de projets à l’aide de la présélection paramètres de build ou des configurations de débogage.  
+- Automatiquement la génération de projets à l’aide de la présélection paramètres de build ou des configurations de débogage.  
   
--   Chargement de l’IDE dans des configurations spécifiques, à partir d’en dehors de l’IDE. En outre, vous pouvez personnaliser l’IDE lors de son lancement.  
+- Chargement de l’IDE dans des configurations spécifiques, à partir d’en dehors de l’IDE. En outre, vous pouvez personnaliser l’IDE lors de son lancement.  
   
 ## <a name="guidelines-for-switches"></a>Instructions pour les commutateurs  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] documentation décrit les commutateurs de ligne de commande devenv de niveau de l’utilisateur. Pour plus d’informations, consultez [commutateurs de ligne de commande Devenv](../ide/reference/devenv-command-line-switches.md). Devenv prend également en charge les commutateurs de ligne de commande supplémentaires qui sont utiles au développement VSPackage, déploiement et débogage.  

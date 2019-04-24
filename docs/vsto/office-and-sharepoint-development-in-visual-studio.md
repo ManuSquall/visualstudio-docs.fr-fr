@@ -21,25 +21,25 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4eb2e58070a4be9d9dd5d70fdaddfd5eee997a41
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1af1b3ea3f8996d1d9aed2245514c51751f11bc2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607055"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112388"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Développement Office et SharePoint dans Visual Studio
   Vous pouvez étendre Microsoft Office et SharePoint en créant une application légère ou un complément que les utilisateurs téléchargent à partir d’ [Office Store](https://store.office.com/) ou d’un catalogue d’organisation, ou en créant une solution .NET Framework que les utilisateurs installent sur un ordinateur.
 
  Dans cette rubrique :
 
--   [Créer des compléments pour Office et SharePoint](#Apps)
+- [Créer des compléments pour Office et SharePoint](#Apps)
 
--   [Créer un complément VSTO](#Add-ins)
+- [Créer un complément VSTO](#Add-ins)
 
--   [Créer une solution SharePoint](#Solutions)
+- [Créer une solution SharePoint](#Solutions)
 
-##  <a name="Apps"></a> Créer des compléments pour Office et SharePoint
+## <a name="Apps"></a> Créer des compléments pour Office et SharePoint
  Office 2013 et SharePoint 2013 présentent un nouveau modèle de complément qui vous permet de créer, de distribuer et de monétiser des compléments qui étendent Office et SharePoint.  Ces compléments peuvent être exécutés dans Office ou SharePoint Online, et les utilisateurs ont la possibilité d’utiliser de nombreux appareils pour interagir avec.
 
  Découvrez comment utiliser le nouveau [modèle de complément Office](/office/dev/add-ins/overview/office-add-ins) pour étendre l’expérience Office pour vos utilisateurs.
@@ -81,7 +81,7 @@ ms.locfileid: "56607055"
 |Comparer les compléments pour SharePoint avec les solutions SharePoint traditionnelles.|[Compléments SharePoint par rapport aux solutions de SharePoint](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
 |Choisir entre la création d’un complément SharePoint et la création d’une solution SharePoint.|[Choisir entre des compléments SharePoint et des solutions SharePoint](/sharepoint/dev/general-development/sharepoint-server-application-lifecycle-management)|
 
-##  <a name="Add-ins"></a> Créer un complément VSTO
+## <a name="Add-ins"></a> Créer un complément VSTO
  Créer un complément VSTO pour cibler Office 2007 ou Office 2010, ou pour étendre Office 2013 et Office 2016 au-delà de ce qui est possible avec les compléments Office. Les compléments VSTO s’exécutent uniquement sur le bureau. Les utilisateurs doivent installer des Compléments VSTO, donc ils sont généralement plus difficiles à déployer et prendre en charge.  Votre complément VSTO peut cependant être intégré plus étroitement à Office. Par exemple, il peut ajouter des onglets et des contrôles au ruban Office et effectuer des tâches d'automatisation avancées telles que la fusion de documents ou la modification de graphiques. Vous pouvez tirer parti du .NET Framework, et utiliser C# et Visual Basic pour interagir avec des objets Office.
 
  Voici un exemple quelles un complément VSTO peut faire. Ce complément VSTO ajoute des contrôles de ruban, un volet des tâches personnalisé et une boîte de dialogue dans PowerPoint.
@@ -95,7 +95,7 @@ ms.locfileid: "56607055"
 |Comparer les différentes façons dont vous pouvez étendre Office et déterminer si vous devez utiliser un complément VSTO ou un complément Office.|[Feuille de route pour les compléments Office, VSTO et VBA](https://blogs.msdn.microsoft.com/officeapps/2013/06/18/roadmap-for-apps-for-office-vsto-and-vba/)|
 |Créer un complément VSTO.|[Création de compléments VSTO avec Visual Studio](create-vsto-add-ins-for-office-by-using-visual-studio.md)|
 
-##  <a name="Solutions"></a> Créer une solution SharePoint
+## <a name="Solutions"></a> Créer une solution SharePoint
  Créez une solution SharePoint pour cibler SharePoint Foundation 2010 et SharePoint Server 2010, ou pour étendre SharePoint 2013 et SharePoint 2016 au-delà de ce qui est possible avec un complément SharePoint.
 
  Les solutions SharePoint nécessitent des serveurs de batterie SharePoint locaux. Les administrateurs doivent les installer. De plus, comme les solutions s'exécutent dans SharePoint, elles peuvent affecter les performances du serveur. Toutefois, les solutions fournissent un accès plus détaillé aux objets SharePoint. En outre, lorsque vous créez une solution SharePoint, vous pouvez tirer parti du .NET Framework, et utiliser C# et Visual Basic pour interagir avec des objets SharePoint.

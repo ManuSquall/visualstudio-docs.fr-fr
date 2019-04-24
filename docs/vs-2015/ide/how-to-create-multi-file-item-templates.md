@@ -13,14 +13,14 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4616cb2f0e908b3228061288da05ce01543afdc4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c6c6dde1880881bfb236909fde6ce6deb6bf596f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785898"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056901"
 ---
-# <a name="how-to-create-multi-file-item-templates"></a>Comment : créer des modèles d'élément multifichier
+# <a name="how-to-create-multi-file-item-templates"></a>Procédure : Créer des modèles d’élément multifichier
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Il arrive que les modèles d’élément spécifient un seul élément, mais cet élément est parfois composé de plusieurs fichiers. Par exemple, un modèle d’élément Windows Forms pour Visual Basic nécessite les trois fichiers suivants :  
@@ -35,9 +35,9 @@ Il arrive que les modèles d’élément spécifient un seul élément, mais cet
   
 ### <a name="to-manually-create-a-multi-file-item-template"></a>Pour créer manuellement un modèle d’élément multifichier  
   
-1.  Créez le modèle d’élément de la même manière qu’un modèle d’élément à fichier unique. Pour plus d’informations, consultez [Guide pratique pour créer des modèles d’élément](../ide/how-to-create-item-templates.md).  
+1. Créez le modèle d’élément de la même manière qu’un modèle d’élément à fichier unique. Pour plus d'informations, voir [Procédure : Créer des modèles d’élément](../ide/how-to-create-item-templates.md).  
   
-2.  Ajoutez des attributs `TargetFileName` à chaque élément `ProjectItem`. Affectez aux attributs `TargetFileName` la valeur $fileinputname$.*FileExtension*, où *FileExtension* est l’extension du nom du fichier qui est inclut dans le modèle. Par exemple :  
+2. Ajoutez des attributs `TargetFileName` à chaque élément `ProjectItem`. Affectez aux attributs `TargetFileName` la valeur $fileinputname$.*FileExtension*, où *FileExtension* est l’extension du nom du fichier qui est inclut dans le modèle. Exemple :  
   
     ```  
     <ProjectItem TargetFileName="$fileinputname$.vb">  
@@ -53,9 +53,9 @@ Il arrive que les modèles d’élément spécifient un seul élément, mais cet
   
      Quand vous ajoutez à un projet un élément dérivé de ce modèle, les noms de fichiers sont basés sur le nom que l’utilisateur a entré dans la boîte de dialogue **Ajouter un nouvel élément**.  
   
-3.  Sélectionnez les fichiers à inclure dans votre modèle, cliquez avec le bouton droit sur la sélection, cliquez sur **Envoyer vers**, puis cliquez sur **Dossier compressé**. Les fichiers que vous avez sélectionnés sont compressés dans un fichier .zip.  
+3. Sélectionnez les fichiers à inclure dans votre modèle, cliquez avec le bouton droit sur la sélection, cliquez sur **Envoyer vers**, puis cliquez sur **Dossier compressé**. Les fichiers que vous avez sélectionnés sont compressés dans un fichier .zip.  
   
-4.  Placez le fichier .zip à l’emplacement du modèle d’élément utilisateur. Par défaut, ce répertoire est \Mes documents\Visual Studio *Version*\Templates\ItemTemplates\\. Pour plus d’informations, consultez [Guide pratique pour localiser et organiser les modèles](../ide/how-to-locate-and-organize-project-and-item-templates.md).  
+4. Placez le fichier .zip à l’emplacement du modèle d’élément utilisateur. Par défaut, ce répertoire est \Mes documents\Visual Studio *Version*\Templates\ItemTemplates\\. Pour plus d'informations, voir [Procédure : Localiser et organiser les modèles](../ide/how-to-locate-and-organize-project-and-item-templates.md).  
   
 ## <a name="example"></a>Exemple  
  L’exemple suivant présente un modèle Windows Forms [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Quand vous créez un élément à partir de ce modèle, les noms des trois fichiers créés correspondent aux noms entrés dans la boîte de dialogue **Ajouter un nouvel élément**.  
@@ -85,6 +85,6 @@ Il arrive que les modèles d’élément spécifient un seul élément, mais cet
   
 ## <a name="see-also"></a>Voir aussi  
  [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)   
- [Guide pratique pour créer des modèles d’élément](../ide/how-to-create-item-templates.md)   
+ [Guide pratique pour Créer des modèles d’élément](../ide/how-to-create-item-templates.md)   
  [Paramètres de modèle](../ide/template-parameters.md)   
  [Guide pratique pour substituer des paramètres dans un modèle](../ide/how-to-substitute-parameters-in-a-template.md)

@@ -6,12 +6,12 @@ ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c878eb55dbbdeacf0984b399949b2c3bbb7550b8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e1607ec4863c7e2b21cd69dd57ca4203e3cf4dbf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952841"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063671"
 ---
 # <a name="vsix-color-compiler"></a>Compilateur de couleur VSIX
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -149,15 +149,15 @@ L’outil compilateur de couleur Visual Studio Extension est une application de 
   
  **Exemples**  
   
--   VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef  
+- VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef  
   
--   /NoLogo de VsixColorCompiler D:\xml\colors.xml  
+- /NoLogo de VsixColorCompiler D:\xml\colors.xml  
   
 ## <a name="notes"></a>Notes  
   
--   Cet outil nécessite l’installation de la dernière version du runtime VC ++.  
+- Cet outil nécessite l’installation de la dernière version du runtime VC ++.  
   
--   Uniquement les fichiers uniques sont prises en charge. La conversion en bloc par le biais de chemins d’accès du dossier n’est pas pris en charge.  
+- Uniquement les fichiers uniques sont prises en charge. La conversion en bloc par le biais de chemins d’accès du dossier n’est pas pris en charge.  
   
 ## <a name="sample-output"></a>Résultat de l'exemple  
  Le fichier .pkgdef généré par l’outil sera similaire à la ci-dessous clés :  

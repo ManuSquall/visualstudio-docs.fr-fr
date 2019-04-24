@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 154ae0a55b3d85136209131e644cda9f696ef59a
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: ebc255e41e8e73739f83e69ab120f397cc46f49c
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355563"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897710"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>Tutoriel : Créer une application Node.js et Express dans Visual Studio
 
@@ -78,7 +78,7 @@ Dans ce tutoriel, vous commencez avec un projet simple contenant du code pour un
 1. Créer un nouveau projet.
 
     ::: moniker range=">=vs-2019"
-    Tapez **Ctrl+Q** pour ouvrir la zone de recherche, tapez **Node.js**, puis choisissez **Créer une nouvelle application Azure Node.js Express 4 de base** (JavaScript). Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
+    Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **Ctrl+Q** pour ouvrir la zone de recherche, tapez **Node.js**, puis choisissez **Créer une nouvelle application Azure Node.js Express 4 de base** (JavaScript). Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans la boîte de dialogue **Nouveau projet**, développez **JavaScript**, puis choisissez **Node.js**. Dans le volet central, choisissez **Application Azure Node.js Express 4 de base**, puis **OK**.
@@ -186,7 +186,7 @@ IntelliSense est un outil Visual Studio qui vous aide pendant que vous écrivez 
 
 1. Corrigez le code en ajoutant la virgule (`,`) avant `"data"`.
 
-    La ligne de code corrigée doit ressembler à ceci : `res.render('index', { title: 'Express', "data": getData() });`
+    La ligne de code corrigée devrait se présenter ainsi : `res.render('index', { title: 'Express', "data": getData() });`
 
 ## <a name="set-a-breakpoint"></a>Définir un point d'arrêt
 
@@ -204,7 +204,12 @@ Vous allez ensuite exécuter l’application avec le débogueur Visual Studio at
 
 1. Sélectionnez la cible de débogage (par exemple, Microsoft Edge ou Chrome) dans la barre d’outils Débogage.
 
+    ::: moniker range=">=vs-2019"
+    ![Sélectionner la cible de débogage](../javascript/media/vs-2019/tutorial-nodejs-deploy-target.png)
+    ::: moniker-end
+    ::: moniker range="vs-2017"
     ![Sélectionner la cible de débogage](../javascript/media/tutorial-nodejs-deploy-target.png)
+    ::: moniker-end
 
     Si Chrome est disponible sur votre ordinateur, mais n’apparaît pas dans les options, choisissez **Naviguer avec** dans la liste déroulante des cibles de débogage et sélectionnez Chrome comme cible de navigateur par défaut (choisissez **Définir comme programme par défaut**).
 

@@ -17,12 +17,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7a25d2bf4c814bf946aa64cfb126e119f50913d5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c9642902bf334ce83f95a9113059683f183c6116
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950544"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113779"
 ---
 # <a name="how-to-display-wpf-trace-information"></a>Procédure : Afficher les informations de trace WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,23 +33,23 @@ ms.locfileid: "58950544"
   
 ### <a name="to-enable-or-customize-wpf-trace-information"></a>Pour activer ou personnaliser les informations de trace WPF  
   
-1.  Dans le menu **Outils**, sélectionnez **Options**.  
+1. Dans le menu **Outils**, sélectionnez **Options**.  
   
-2.  Dans la boîte de dialogue **Options**, ouvrez le nœud **Débogage** dans la zone située à gauche.  
+2. Dans la boîte de dialogue **Options**, ouvrez le nœud **Débogage** dans la zone située à gauche.  
   
-3.  Sous **Débogage**, cliquez sur **Fenêtre Sortie**.  
+3. Sous **Débogage**, cliquez sur **Fenêtre Sortie**.  
   
-4.  Sous **Paramètres généraux de sortie**, sélectionnez **Toute sortie du débogage**.  
+4. Sous **Paramètres généraux de sortie**, sélectionnez **Toute sortie du débogage**.  
   
-5.  Dans la zone à droite, recherchez **Paramètres de trace WPF**.  
+5. Dans la zone à droite, recherchez **Paramètres de trace WPF**.  
   
-6.  Ouvrez le nœud **Paramètres de trace WPF**.  
+6. Ouvrez le nœud **Paramètres de trace WPF**.  
   
-7.  Sous **Paramètres de trace WPF**, cliquez sur la catégorie de paramètres que vous voulez activer (par exemple **Liaison de données**).  
+7. Sous **Paramètres de trace WPF**, cliquez sur la catégorie de paramètres que vous voulez activer (par exemple **Liaison de données**).  
   
      Un contrôle de liste déroulante s’affiche dans la colonne Paramètres en regard de **Liaison de données** ou de la catégorie sur laquelle vous avez cliqué.  
   
-8.  Cliquez sur la liste déroulante et sélectionnez le type d’informations de trace que vous souhaitez voir : **Tous les**, **critique**, **erreur**, **avertissement**, **informations**, **Verbose**, ou **ActivityTracing**.  
+8. Cliquez sur la liste déroulante et sélectionnez le type d’informations de trace que vous souhaitez voir : **Tous les**, **critique**, **erreur**, **avertissement**, **informations**, **Verbose**, ou **ActivityTracing**.  
   
      **Critique** permet de tracer uniquement les événements « Critique ».  
   
@@ -69,23 +69,23 @@ ms.locfileid: "58950544"
   
 ### <a name="to-disable-wpf-trace-information"></a>Pour désactiver les informations de trace WPF  
   
-1.  Dans le menu **Outils**, sélectionnez **Options**.  
+1. Dans le menu **Outils**, sélectionnez **Options**.  
   
-2.  Dans la boîte de dialogue **Options**, ouvrez le nœud **Débogage** dans la zone située à gauche.  
+2. Dans la boîte de dialogue **Options**, ouvrez le nœud **Débogage** dans la zone située à gauche.  
   
-3.  Sous **Débogage**, cliquez sur **Fenêtre Sortie**.  
+3. Sous **Débogage**, cliquez sur **Fenêtre Sortie**.  
   
-4.  Dans la zone à droite, recherchez **Paramètres de trace WPF**.  
+4. Dans la zone à droite, recherchez **Paramètres de trace WPF**.  
   
-5.  Ouvrez le nœud **Paramètres de trace WPF**.  
+5. Ouvrez le nœud **Paramètres de trace WPF**.  
   
-6.  Sous **Paramètres de trace WPF**, cliquez sur la catégorie de paramètres que vous voulez activer (par exemple **Liaison de données**).  
+6. Sous **Paramètres de trace WPF**, cliquez sur la catégorie de paramètres que vous voulez activer (par exemple **Liaison de données**).  
   
      Un contrôle de liste déroulante s’affiche dans la colonne Paramètres en regard de **Liaison de données** ou de la catégorie sur laquelle vous avez cliqué.  
   
-7.  Cliquez sur la liste déroulante et sélectionnez **Inactif**.  
+7. Cliquez sur la liste déroulante et sélectionnez **Inactif**.  
   
-8.  Cliquez sur **OK**.  
+8. Cliquez sur **OK**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage de WPF](../debugger/debugging-wpf.md)

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce6345a07aa8476dd9d102e71bbfd8cdfd848d93
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 663bc7a2add5e436cb7b0166387d6e3638087a1a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707040"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653773"
 ---
 # <a name="tool-window-display-configuration"></a>Configuration de l’affichage fenêtre outil
 Quand un VSPackage enregistre une fenêtre outil, de la position par défaut, de taille, de style d’ancrage et d’autres informations de visibilité est spécifié dans les valeurs facultatives. Pour plus d’informations sur l’inscription de fenêtre outil, consultez [Windows d’outil dans le Registre](../extensibility/tool-windows-in-the-registry.md)
@@ -35,10 +35,9 @@ HKEY_LOCAL_MACHINE\
               (Default)       = reg_sz: <Package GUID>Name            = reg_sz: <name of tool window>Float           = reg_sz: <position>Style           = reg_sz: <dock style>Window          = reg_sz: <window GUID>Orientation     = reg_sz: <orientation>DontForceCreate = reg_dword: 0x00000000
 ```
 
-
-| Name | Type | Données | Description |
+| Nom | Type | Données | Description |
 |-----------------|-----------| - | - |
-| Name | REG_SZ | « Nom court s’affiche ici » | Un nom court qui décrit la fenêtre outil. Utilisé uniquement pour référence dans le Registre. |
+| Nom | REG_SZ | « Nom court s’affiche ici » | Un nom court qui décrit la fenêtre outil. Utilisé uniquement pour référence dans le Registre. |
 | Float | REG_SZ | "X1,Y1,X2,Y2" | Quatre valeurs séparées par des virgules. X1, Y1 est la coordonnée de l’angle supérieur gauche de la fenêtre outil. X2, Y2 est la coordonnée de l’angle inférieur droit. Toutes les valeurs sont en coordonnées d’écran. |
 | Style | REG_SZ | « MDI »<br /><br /> « Flotter »<br /><br /> « Lié »<br /><br /> « Onglets »<br /><br /> "AlwaysFloat" | Un mot clé spécifiant initial afficher l’état de la fenêtre outil.<br /><br /> « MDI » = ancrée avec fenêtre MDI.<br /><br /> « Flotter » = flottante.<br /><br /> « Lié » = lié à une autre fenêtre (spécifiée dans l’entrée de fenêtre).<br /><br /> « Onglets » = combinées avec une autre fenêtre d’outil.<br /><br /> « AlwaysFloat » = ne peut pas être ancrée.<br /><br /> Pour plus d’informations, consultez la section commentaires ci-dessous. |
 | Fenêtre | REG_SZ | *\<GUID>* | Le GUID d’une fenêtre à laquelle la fenêtre outil peut être liée ou avec onglets. Le GUID peut appartenir à un de vos propres windows ou l’une des fenêtres dans le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE. |
@@ -85,10 +84,10 @@ HKEY_LOCAL_MACHINE\
                 <GUID>    = reg_sz:
 ```
 
-|Name|Type|Données|Description|
+|Nom|Type|Données|Description|
 |----------|----------|----------|-----------------|
 |(Default)|REG_SZ|Aucun.|Laissez vide.|
-|*\<GUID>*|REG_DWORD ou REG_SZ|0 ou une chaîne descriptive.|Facultatif. Nom de l’entrée doit être le GUID d’une commande nécessitant une visibilité. La valeur conserve seulement une chaîne informative. En règle générale, la valeur est un `reg_dword` définie sur 0.|
+|*\<GUID>*|REG_DWORD ou REG_SZ|0 ou une chaîne descriptive.|Optionnel. Nom de l’entrée doit être le GUID d’une commande nécessitant une visibilité. La valeur conserve seulement une chaîne informative. En règle générale, la valeur est un `reg_dword` définie sur 0.|
 
 ### <a name="example"></a>Exemple
 

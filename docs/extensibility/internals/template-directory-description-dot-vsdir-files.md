@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a51deb24a2ba0088db8ed9a7acc1f8324f1fa92b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 89152fcb003886087704107f2d4c2a66d3313cc3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605690"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050360"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Fichiers de description de répertoire de modèles (.Vsdir)
 Un fichier de description de répertoire de modèle (.vsdir) est un fichier texte qui permet à l’environnement de développement intégré (IDE) pour afficher les dossiers, les fichiers .vsz de l’Assistant et les fichiers de modèle qui sont associés à votre projet dans les boîtes de dialogue. Le contenu inclut un enregistrement par fichier ou dossier. Tous les fichiers .vsdir dans un emplacement référencé sont fusionnés, bien que .vsdir qu’un seul fichier est généralement fourni pour décrire plusieurs dossiers, les Assistants ou les fichiers de modèle.
@@ -36,7 +36,6 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 ## <a name="fields"></a>Champs
  Le tableau suivant répertorie les champs spécifiés pour chaque enregistrement.
 
-
 | Champ | Description |
 | - | - |
 | Nom de chemin d’accès relatif (RelPathName) | Le nom du fichier .vsz, de modèle ou de dossier, tel que HeaderFile.h ou MyWizard.vsz. Ce champ peut également être un nom utilisé pour représenter un dossier. |
@@ -51,17 +50,17 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 
  Lorsque vous créez un fichier de l’Assistant, vous devez également envisager les problèmes suivants.
 
--   N’importe quel champ non requis pour lequel il n’existe pas de données significatives doit contenir un 0 (zéro) comme espace réservé.
+- N’importe quel champ non requis pour lequel il n’existe pas de données significatives doit contenir un 0 (zéro) comme espace réservé.
 
--   Si aucun nom localisé n’est fourni, le nom de chemin d’accès relatif est utilisé dans le fichier de l’Assistant.
+- Si aucun nom localisé n’est fourni, le nom de chemin d’accès relatif est utilisé dans le fichier de l’Assistant.
 
--   DLLPath substitue clsidPackage pour l’emplacement de l’icône.
+- DLLPath substitue clsidPackage pour l’emplacement de l’icône.
 
--   Si aucune icône n’est définie, l’environnement IDE remplace l’icône par défaut pour un fichier qui a cette extension.
+- Si aucune icône n’est définie, l’environnement IDE remplace l’icône par défaut pour un fichier qui a cette extension.
 
--   Si aucun nom de base suggérée est fourni, 'Project' est utilisé.
+- Si aucun nom de base suggérée est fourni, 'Project' est utilisé.
 
--   Si vous supprimez les fichiers .vsz, des dossiers ou fichiers de modèle, vous devez également supprimer leurs enregistrements associés à partir du fichier .vsdir.
+- Si vous supprimez les fichiers .vsz, des dossiers ou fichiers de modèle, vous devez également supprimer leurs enregistrements associés à partir du fichier .vsdir.
 
 ## <a name="see-also"></a>Voir aussi
 - [Assistants](../../extensibility/internals/wizards.md)

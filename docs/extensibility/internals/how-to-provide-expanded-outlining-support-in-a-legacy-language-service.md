@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4da92ce51af2165f6754ee5959fb78d31d260e2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: dfa2b4f659fc33a9a651d750cbd1b844a04f67a8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634381"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105381"
 ---
 # <a name="how-to-provide-expanded-outlining-support-in-a-legacy-language-service"></a>Procédure : Fournir une prise en charge étendue de mode plan dans un service de langage hérité
 Il existe deux options pour étendre la prise en charge en mode plan pour votre langage au-delà de la prise en charge la **réduire aux définitions** commande. Vous pouvez ajouter des régions en mode de plan contrôlés par l’éditeur et ajouter des régions en mode plan de contrôlé par le client.
@@ -27,15 +27,15 @@ Il existe deux options pour étendre la prise en charge en mode plan pour votre 
 
 ### <a name="to-implement-an-editor-controlled-outline-region"></a>Pour implémenter une région en mode de plan contrôlés par l’éditeur
 
-1.  Appelez `QueryService` pour <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>
+1. Appelez `QueryService` pour <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>
 
      Cela retourne un pointeur vers <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager>.
 
-2.  Appelez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A>, en passant un pointeur pour une mémoire tampon de texte donnée. Cela retourne un pointeur vers le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> objet pour la mémoire tampon.
+2. Appelez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A>, en passant un pointeur pour une mémoire tampon de texte donnée. Cela retourne un pointeur vers le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> objet pour la mémoire tampon.
 
-3.  Appelez <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> sur <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> pour un pointeur vers <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession>.
+3. Appelez <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> sur <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> pour un pointeur vers <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession>.
 
-4.  Appelez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> pour ajouter un ou plusieurs nouvelles hiérarchiques régions à la fois.
+4. Appelez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> pour ajouter un ou plusieurs nouvelles hiérarchiques régions à la fois.
 
      Cette méthode vous permet de spécifier l’étendue de texte pour le plan, si les régions en mode plan existantes sont supprimées ou conservées, et si la région en mode plan est développée ou réduite par défaut.
 
@@ -44,13 +44,13 @@ Il existe deux options pour étendre la prise en charge en mode plan pour votre 
 
 ### <a name="to-implement-a-client-controlled-outline-region"></a>Pour implémenter une région en mode plan de contrôlé par le client
 
-1.  Appelez `QueryService` pour <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>. Cela retourne un pointeur vers <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager>.
+1. Appelez `QueryService` pour <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager>. Cela retourne un pointeur vers <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager>.
 
-2.  Appelez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A>, en passant un pointeur pour une mémoire tampon de texte donnée. Ce paramètre détermine si une texte masqué session existe déjà pour la mémoire tampon.
+2. Appelez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.GetHiddenTextSession%2A>, en passant un pointeur pour une mémoire tampon de texte donnée. Ce paramètre détermine si une texte masqué session existe déjà pour la mémoire tampon.
 
-3.  Si une texte session existe déjà, vous n’avez pas besoin créer un et un pointeur à l’objet de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> est retourné. Utilisez ce pointeur pour énumérer et créer des régions en mode plan. Sinon, appelez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A> pour créer une session de texte masqué pour la mémoire tampon. Un pointeur vers le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> est retourné.
+3. Si une texte session existe déjà, vous n’avez pas besoin créer un et un pointeur à l’objet de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> est retourné. Utilisez ce pointeur pour énumérer et créer des régions en mode plan. Sinon, appelez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A> pour créer une session de texte masqué pour la mémoire tampon. Un pointeur vers le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> est retourné.
 
     > [!NOTE]
     >  Lorsque vous appelez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager.CreateHiddenTextSession%2A>, vous pouvez spécifier un client de texte masqué (autrement dit, un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextClient> objet). Ce client vous avertit quand un texte masqué ou région en mode plan est développée ou réduite par l’utilisateur.
 
-4.  Appelez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> structure) paramètre : Spécifiez la valeur <xref:Microsoft.VisualStudio.TextManager.Interop.HIDDEN_REGION_TYPE> dans le `iType` membre de la <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> structure pour indiquer que vous créez une région en mode plan, plutôt que d’une zone masquée. Spécifiez si la région est contrôlé par le client ou contrôlés par l’éditeur dans le `dwBehavior` membre de la <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> structure. Votre implémentation de mode plan intelligente peut contenir un mélange de régions en mode plan contrôlé par l’éditeur et par le client. Spécifiez le texte de bannière s’affiche lorsque votre région en mode plan est réduite, tels que «... », dans le `pszBanner` membre de la <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> structure. Texte de bannière par défaut de l’éditeur pour une zone masquée est «... ».
+4. Appelez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession.AddHiddenRegions%2A> structure) paramètre : Spécifiez la valeur <xref:Microsoft.VisualStudio.TextManager.Interop.HIDDEN_REGION_TYPE> dans le `iType` membre de la <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> structure pour indiquer que vous créez une région en mode plan, plutôt que d’une zone masquée. Spécifiez si la région est contrôlé par le client ou contrôlés par l’éditeur dans le `dwBehavior` membre de la <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> structure. Votre implémentation de mode plan intelligente peut contenir un mélange de régions en mode plan contrôlé par l’éditeur et par le client. Spécifiez le texte de bannière s’affiche lorsque votre région en mode plan est réduite, tels que «... », dans le `pszBanner` membre de la <xref:Microsoft.VisualStudio.TextManager.Interop.NewHiddenRegion> structure. Texte de bannière par défaut de l’éditeur pour une zone masquée est «... ».

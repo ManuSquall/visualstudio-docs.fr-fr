@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0425929908f17b33de71a49b03ae8de729f28309
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 400961eaa14b87d70a685a87be5df48ac92c8281
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681893"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047551"
 ---
 # <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>Afficher les DLL et les exécutables dans la fenêtre Modules (C#, C++, Visual Basic, F#)
 
@@ -73,9 +73,9 @@ Le **état du symbole** colonne dans le **Modules** fenêtre montre quels module
 
 **Pour modifier le comportement d’un module spécifique de chargement de symboles :**
 
-1.  Dans la fenêtre **Modules**, cliquez avec le bouton droit sur le module.
+1. Dans la fenêtre **Modules**, cliquez avec le bouton droit sur le module.
 
-1.  Dans le menu contextuel, sélectionnez ou désélectionnez **charge automatiquement**. Modifications prennent effet dans la prochaine session de débogage.
+1. Dans le menu contextuel, sélectionnez ou désélectionnez **charge automatiquement**. Modifications prennent effet dans la prochaine session de débogage.
 
 ## <a name="see-also"></a>Voir aussi
 - [Interruption de l’exécution](/previous-versions/visualstudio/visual-studio-2010/7z9se2d8(v=vs.100))

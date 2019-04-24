@@ -18,17 +18,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bbba71e6c1e636abe160036f10c1de1d11004a65
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: db6ea3e2b19b655c3a1ec8dedf60409b8706f3cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948604"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059030"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>Étendre les fonctionnalités d’un TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Vous pouvez étendre les fonctionnalités d’un TableAdapter en ajoutant du code au fichier de classe partielle du TableAdapter.  
   
  Le code qui définit un TableAdapter est régénéré lorsque des modifications sont apportées au TableAdapter dans le **Concepteur de Dataset**, ou quand un Assistant modifie la configuration d’un TableAdapter. Pour empêcher que votre code en cours de suppression pendant la régénération d’un TableAdapter, ajoutez le code au fichier de classe partielle du TableAdapter.  
@@ -42,13 +41,13 @@ Vous pouvez étendre les fonctionnalités d’un TableAdapter en ajoutant du cod
   
 #### <a name="to-create-a-partial-class-for-a-tableadapter"></a>Pour créer une classe partielle pour un TableAdapter  
   
-1.  Ajouter une nouvelle classe à votre projet en accédant à la **projet** menu et en sélectionnant**ajouter une classe**.  
+1. Ajouter une nouvelle classe à votre projet en accédant à la **projet** menu et en sélectionnant**ajouter une classe**.  
   
-2.  Nommez la classe `CustomersTableAdapterExtended`.  
+2. Nommez la classe `CustomersTableAdapterExtended`.  
   
-3.  Sélectionnez **Ajouter**.  
+3. Sélectionnez **Ajouter**.  
   
-4.  Remplacez le code avec le nom de classe partielle pour votre projet et un espace de noms approprié comme suit :  
+4. Remplacez le code avec le nom de classe partielle pour votre projet et un espace de noms approprié comme suit :  
   
      [!code-csharp[VbRaddataTableAdapters#2](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/CustomersTableAdapterExtended.cs#2)]
      [!code-vb[VbRaddataTableAdapters#2](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/CustomersTableAdapterExtended.vb#2)]  

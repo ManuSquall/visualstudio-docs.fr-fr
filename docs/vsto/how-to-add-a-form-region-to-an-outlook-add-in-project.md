@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 97d8883ef22fc91b708726fddca60cf757e3d9a8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 139cdb0314783c76352cc499256fb89610354843
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610617"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083944"
 ---
 # <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>Procédure : Ajouter une zone de formulaire à un projet de complément Outlook
   Créez une zone de formulaire pour étendre un formulaire Microsoft Office Outlook standard ou personnalisé à l’aide de l’Assistant **Nouvelle zone de formulaire Outlook** . Vous pouvez créer une zone de formulaire et concevoir l’interface utilisateur dans Visual Studio, ou vous pouvez importer une zone de formulaire conçue dans Outlook et ajouter du code Visual Basic ou C#.
@@ -33,26 +33,26 @@ ms.locfileid: "56610617"
 
 ### <a name="to-add-a-new-form-region-to-an-outlook-project"></a>Pour ajouter une nouvelle zone de formulaire à un projet Outlook
 
-1.  Ouvrez ou créez un projet de complément VSTO Outlook dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Pour plus d'informations, voir [Procédure : Créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Ouvrez ou créez un projet de complément VSTO Outlook dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Pour plus d'informations, voir [Procédure : Créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2.  Dans l’ **Explorateur de solutions**, sélectionnez le nœud de projet de complément Outlook VSTO.
+2. Dans l’ **Explorateur de solutions**, sélectionnez le nœud de projet de complément Outlook VSTO.
 
-3.  Dans le menu **Projet** , cliquez sur **Ajouter un nouvel élément**.
+3. Dans le menu **Projet** , cliquez sur **Ajouter un nouvel élément**.
 
-4.  Dans la boîte de dialogue **Ajouter un nouvel élément** , sélectionnez **Zone de formulaire Outlook**.
+4. Dans la boîte de dialogue **Ajouter un nouvel élément** , sélectionnez **Zone de formulaire Outlook**.
 
-5.  Tapez un nom pour la zone de formulaire dans la zone **Nom** , puis cliquez sur **Ajouter**.
+5. Tapez un nom pour la zone de formulaire dans la zone **Nom** , puis cliquez sur **Ajouter**.
 
      Le **zone de formulaire NewOutlook** Assistant démarre.
 
-6.  Dans la page **Sélectionnez la méthode de création de la zone de formulaire** , indiquez si vous souhaitez concevoir la zone de formulaire en faisant glisser des contrôles managés vers un concepteur visuel ou importer une zone de formulaire conçue dans Outlook.
+6. Dans la page **Sélectionnez la méthode de création de la zone de formulaire** , indiquez si vous souhaitez concevoir la zone de formulaire en faisant glisser des contrôles managés vers un concepteur visuel ou importer une zone de formulaire conçue dans Outlook.
 
     > [!NOTE]
     >  Si vous choisissez d’importer une zone de formulaire conçue dans Outlook, vous devez spécifier l’emplacement d’un stockage de formulaire Outlook (*.ofs*) fichier. Vous ne pouvez pas ajouter des contrôles managés à une zone de formulaire que vous concevez dans Outlook. Vous pouvez uniquement ajouter du code-behind à l’interface utilisateur existante. Pour plus d’informations, consultez [zones de formulaire Outlook créer](../vsto/creating-outlook-form-regions.md).
 
-7.  Dans la page **Sélectionnez le type de zone de formulaire que vous souhaitez créer** , passez en revue les types de zones de formulaire et sélectionnez-en un, puis cliquez sur **Suivant**. Pour plus d’informations sur les types de zones de formulaire, consultez [zones de formulaire Outlook créer](../vsto/creating-outlook-form-regions.md).
+7. Dans la page **Sélectionnez le type de zone de formulaire que vous souhaitez créer** , passez en revue les types de zones de formulaire et sélectionnez-en un, puis cliquez sur **Suivant**. Pour plus d’informations sur les types de zones de formulaire, consultez [zones de formulaire Outlook créer](../vsto/creating-outlook-form-regions.md).
 
-8.  Dans la page **Fournissez un texte descriptif et sélectionnez vos préférences d’affichage** , dans la zone **Nom** , tapez un nom pour la zone de formulaire. Pour les types de zones de formulaire de substitution et de remplacement global, les zones **Titre** et **Description** sont également disponibles.
+8. Dans la page **Fournissez un texte descriptif et sélectionnez vos préférences d’affichage** , dans la zone **Nom** , tapez un nom pour la zone de formulaire. Pour les types de zones de formulaire de substitution et de remplacement global, les zones **Titre** et **Description** sont également disponibles.
 
      Pour savoir où le nom, le titre et la description apparaissent dans Outlook lorsque vous déployez la zone de formulaire, consultez [zones de formulaire Outlook créer](../vsto/creating-outlook-form-regions.md).
 

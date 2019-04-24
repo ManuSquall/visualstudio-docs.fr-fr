@@ -33,12 +33,12 @@ caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 8d855fb41624e357a62d9eb773cc5e42606572f7
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 66c4aafb380d50ec0faafce931b8ce73e5138e6f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58954195"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052387"
 ---
 # <a name="annotating-locking-behavior"></a>Annotation du comportement de verrouillage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,11 +58,11 @@ Pour éviter les bogues d'accès concurrentiel dans votre programme multithread,
   
  Quelques règles de propriété concernant les threads à garder en tête :  
   
--   Les verrous de rotation sont des verrous non numérotés qui ont une propriété de thread précise.  
+- Les verrous de rotation sont des verrous non numérotés qui ont une propriété de thread précise.  
   
--   Les mutex et les sections critiques sont des verrous numérotés qui ont une propriété de thread précise.  
+- Les mutex et les sections critiques sont des verrous numérotés qui ont une propriété de thread précise.  
   
--   Les sémaphores et les événements sont des verrous numérotés qui n'ont pas de propriété de thread précise.  
+- Les sémaphores et les événements sont des verrous numérotés qui n'ont pas de propriété de thread précise.  
   
 ## <a name="locking-annotations"></a>Annotations de verrouillage  
  Le tableau suivant répertorie les annotations de verrouillage.  

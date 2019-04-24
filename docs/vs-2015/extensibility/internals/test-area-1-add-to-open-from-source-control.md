@@ -11,12 +11,12 @@ ms.assetid: 5b3b5b08-5e9b-41be-ac72-c63957faed22
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 14bf97822957088f704ffbfefe24ea20b55f14ac
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 71ead1b49c9bcefc193f8e1c896b35a478a771a3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952235"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064854"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Zone de test 1 : Ajouter / Ouvrir à partir du contrôle de code Source
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,32 +26,32 @@ Ce contrôle de source de plug-in de test couvre zone Placement solutions ou pro
 ## <a name="command-menu-access"></a>Accès au Menu de commande  
  Ce qui suit [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] menu chemins d’environnement de développement intégré sont utilisés dans les cas de test :  
   
--   Pour [!INCLUDE[vsvss](../../includes/vsvss-md.md)], ouvrir à partir du contrôle de code source : **Fichier**, **Open**, **projet**/**Solution**; recherchez dans le [!INCLUDE[vsvss](../../includes/vsvss-md.md)] emplacement.  
+- Pour [!INCLUDE[vsvss](../../includes/vsvss-md.md)], ouvrir à partir du contrôle de code source : **Fichier**, **Open**, **projet**/**Solution**; recherchez dans le [!INCLUDE[vsvss](../../includes/vsvss-md.md)] emplacement.  
   
--   Pour les autres source plug-ins de contrôle, ouvrez à partir du contrôle de code source : **Fichier**, **contrôle de code Source**, **ouvrir à partir du contrôle de code Source**.  
+- Pour les autres source plug-ins de contrôle, ouvrez à partir du contrôle de code source : **Fichier**, **contrôle de code Source**, **ouvrir à partir du contrôle de code Source**.  
   
--   Ajouter au contrôle de code source : **Fichier**, **contrôle de code Source**, **ajouter la Solution au fichier de contrôle de Source**, **contrôle de code Source**, **ajouter des projets sélectionnés au contrôle de code Source**.  
+- Ajouter au contrôle de code source : **Fichier**, **contrôle de code Source**, **ajouter la Solution au fichier de contrôle de Source**, **contrôle de code Source**, **ajouter des projets sélectionnés au contrôle de code Source**.  
   
--   Menu contextuel (projet/Solution), **ajouter la Solution au contrôle de code Source**.  
+- Menu contextuel (projet/Solution), **ajouter la Solution au contrôle de code Source**.  
   
--   Ajoutez à partir du contrôle de code source : **Fichier**, **contrôle de code Source**, **ajouter le projet à partir du contrôle de code Source**.  
+- Ajoutez à partir du contrôle de code source : **Fichier**, **contrôle de code Source**, **ajouter le projet à partir du contrôle de code Source**.  
   
--   Pour [!INCLUDE[vsvss](../../includes/vsvss-md.md)], ajouter à partir de la source de contrôle est également disponible à partir de **fichier**, **ajouter**, **projet existant**; recherchez dans le [!INCLUDE[vsvss](../../includes/vsvss-md.md)] emplacement.  
+- Pour [!INCLUDE[vsvss](../../includes/vsvss-md.md)], ajouter à partir de la source de contrôle est également disponible à partir de **fichier**, **ajouter**, **projet existant**; recherchez dans le [!INCLUDE[vsvss](../../includes/vsvss-md.md)] emplacement.  
   
     > [!NOTE]
     >  Un chemin d’accès d’un fichier local ou d’un serveur IIS local (serveur web) peut être utilisé dans ce test.  
   
 ## <a name="expected-behavior"></a>Comportement attendu  
   
--   Pour chaque type de projet pris en charge, un utilisateur doit être en mesure de « Ajouter à » et « Ouvrir à partir de « contrôle de code Source.  
+- Pour chaque type de projet pris en charge, un utilisateur doit être en mesure de « Ajouter à » et « Ouvrir à partir de « contrôle de code Source.  
   
--   Lorsqu’un projet est ajouté au contrôle de code Source, un correspondant \< *nom_projet*> fichier .vspscc (fichier hint de projet) est créé. Il contient des informations de liste et de connexion de fichier d’exclusion. Ne supprimez pas ce fichier, car il contient des informations spécifiques au projet.  
+- Lorsqu’un projet est ajouté au contrôle de code Source, un correspondant \< *nom_projet*> fichier .vspscc (fichier hint de projet) est créé. Il contient des informations de liste et de connexion de fichier d’exclusion. Ne supprimez pas ce fichier, car il contient des informations spécifiques au projet.  
   
--   Lorsqu’une solution est ajoutée au contrôle de code source, un correspondant \< *SolutionName*> .vssscc (triple S) fichier est créé. Le fichier texte contient des informations de connexion et une liste de fichiers d’exclusion, semblable au fichier projet indicateur. Ce fichier est temporaire et existe uniquement dans la base de données de contrôle de code source.  
+- Lorsqu’une solution est ajoutée au contrôle de code source, un correspondant \< *SolutionName*> .vssscc (triple S) fichier est créé. Le fichier texte contient des informations de connexion et une liste de fichiers d’exclusion, semblable au fichier projet indicateur. Ce fichier est temporaire et existe uniquement dans la base de données de contrôle de code source.  
   
--   Lorsqu’une solution est ouverte à partir du contrôle de code source, un \< *SolutionName*> fichier .vsscc (double S) qui existe uniquement dans la base de données du contrôle de code source, est créé localement dans un fichier temporaire. Ce fichier contient le chemin d’accès à partir du dossier de connexion de solution dans le fichier solution. Ce fichier est temporaire et la copie locale est supprimée lors de l’opération « Ouvrir à partir de contrôle de code Source » est terminée.  
+- Lorsqu’une solution est ouverte à partir du contrôle de code source, un \< *SolutionName*> fichier .vsscc (double S) qui existe uniquement dans la base de données du contrôle de code source, est créé localement dans un fichier temporaire. Ce fichier contient le chemin d’accès à partir du dossier de connexion de solution dans le fichier solution. Ce fichier est temporaire et la copie locale est supprimée lors de l’opération « Ouvrir à partir de contrôle de code Source » est terminée.  
   
--   Une fois un projet est ajouté au contrôle de source, vous pouvez effectuer des actions de contrôle source dessus (extraction, Get et ainsi de suite).  
+- Une fois un projet est ajouté au contrôle de source, vous pouvez effectuer des actions de contrôle source dessus (extraction, Get et ainsi de suite).  
   
 ## <a name="test-cases"></a>Cas de test  
  Les éléments suivants sont des cas de test spécifiques pour l’ajouter à / ouvrir à partir de la zone de test de contrôle de code Source.  

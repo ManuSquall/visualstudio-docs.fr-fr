@@ -12,21 +12,21 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 29590b96a8d8d2ad8fbddaf0d97b9ed55e6aadf2
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e89b677113a04f286be3201a6b76d78fd5d191c2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763596"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044016"
 ---
 # <a name="adding-references-using-nuget-versus-an-extension-sdk"></a>Ajout de références avec NuGet ou un kit SDK d’extension
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dans les projets Visual Studio, vous pouvez fournir un package pour la consommation avec l’extension NuGet pour Visual Studio ou avec un kit SDK. En décrivant les ressemblances et les différences entre les deux mécanismes, cette rubrique peut vous aider à choisir la plus adaptée à votre tâche.  
   
--   NuGet est un système de gestion de packages open source qui simplifie le processus d’intégration de bibliothèques dans une solution de projet. Pour plus d’informations, consultez une [présentation de NuGet](http://go.microsoft.com/fwlink/?LinkId=254877).  
+- NuGet est un système de gestion de packages open source qui simplifie le processus d’intégration de bibliothèques dans une solution de projet. Pour plus d’informations, consultez une [présentation de NuGet](http://go.microsoft.com/fwlink/?LinkId=254877).  
   
--   Un kit SDK est une collection de fichiers que Visual Studio traite comme un seul élément de référence. Quand vous affichez la boîte de dialogue **Gestionnaire de références**, vous voyez la liste de tous les kits SDK pertinents pour le projet ouvert. Quand vous ajoutez un kit SDK à un projet, vous pouvez accéder à tout son contenu dans IntelliSense, la **Boîte à outils**, les concepteurs, l’**Explorateur d’objets**, MSBuild, le déploiement, le débogage et l’empaquetage. Pour plus d’informations sur les kits SDK, consultez [Création d’un Kit de développement logiciel](../extensibility/creating-a-software-development-kit.md).  
+- Un kit SDK est une collection de fichiers que Visual Studio traite comme un seul élément de référence. Quand vous affichez la boîte de dialogue **Gestionnaire de références**, vous voyez la liste de tous les kits SDK pertinents pour le projet ouvert. Quand vous ajoutez un kit SDK à un projet, vous pouvez accéder à tout son contenu dans IntelliSense, la **Boîte à outils**, les concepteurs, l’**Explorateur d’objets**, MSBuild, le déploiement, le débogage et l’empaquetage. Pour plus d’informations sur les kits SDK, consultez [Création d’un Kit de développement logiciel](../extensibility/creating-a-software-development-kit.md).  
   
 ## <a name="which-mechanism-should-i-use"></a>Quel mécanisme dois-je utiliser ?  
  Le tableau suivant vous permet de comparer les fonctionnalités de référencement d’un SDK avec celles de NuGet.  

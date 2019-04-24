@@ -16,17 +16,16 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5bd6df873bf1aadbec4b12763369c60f127819c0
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.openlocfilehash: 19fe581985ec173099790311517c0442a9c29c2f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54834421"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662580"
 ---
 # <a name="msbuild-task-reference"></a>Informations de référence sur les tâches MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Les tâches fournissent le code exécuté pendant le processus de génération. Les tâches de la liste suivante sont incluses dans [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Quand [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] est installé, des tâches supplémentaires sont disponibles pour générer des projets [!INCLUDE[vcprvc](../includes/vcprvc-md.md)]. Pour plus d’informations, consultez [Tâches Visual C++](../msbuild/msbuild-tasks-specific-to-visual-cpp.md).  
   
  Outre les paramètres répertoriés dans les rubriques de cette section, chaque tâche comprend les paramètres suivants :  
@@ -34,7 +33,7 @@ Les tâches fournissent le code exécuté pendant le processus de génération. 
 |Paramètre|Description|  
 |---------------|-----------------|  
 |`Condition`|Paramètre `String` facultatif.<br /><br /> Expression `Boolean` utilisée par le moteur [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] pour déterminer si cette tâche va être exécutée. Pour plus d’informations sur les conditions prises en charge par [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], consultez [Conditions](../msbuild/msbuild-conditions.md).|  
-|`ContinueOnError`|Paramètre facultatif. Peut contenir l’une des valeurs suivantes :<br /><br /> -   **WarnAndContinue** ou **true**. En cas d’échec d’une tâche, l’exécution des tâches suivantes de l’élément [Target](../msbuild/target-element-msbuild.md) et de la génération se poursuit, et toutes les erreurs de la tâche sont considérées comme des avertissements.<br />-   **ErrorAndContinue**. En cas d’échec d’une tâche, l’exécution des tâches suivantes de l’élément `Target` et de la génération se poursuit, et toutes les erreurs de la tâche sont considérées comme des erreurs.<br />-   **ErrorAndStop** ou **false** (par défaut). En cas d’échec d’une tâche, les tâches restantes de l’élément `Target` et de la génération ne sont pas exécutées, et tout l’élément `Target` ainsi que la génération sont considérés comme étant en échec.<br /><br /> Les versions de .NET Framework antérieures à 4.5 prenaient en charge uniquement les valeurs `true` et `false`.<br /><br /> Pour plus d’informations, consultez [Guide pratique pour ignorer des erreurs dans des tâches](../msbuild/how-to-ignore-errors-in-tasks.md).|  
+|`ContinueOnError`|Paramètre facultatif. Peut contenir l’une des valeurs suivantes :<br /><br /> -   **WarnAndContinue** ou **true**. En cas d’échec d’une tâche, l’exécution des tâches suivantes de l’élément [Target](../msbuild/target-element-msbuild.md) et de la génération se poursuit, et toutes les erreurs de la tâche sont considérées comme des avertissements.<br />-   **ErrorAndContinue**. En cas d’échec d’une tâche, l’exécution des tâches suivantes de l’élément `Target` et de la génération se poursuit, et toutes les erreurs de la tâche sont considérées comme des erreurs.<br />-   **ErrorAndStop** ou **false** (par défaut). En cas d’échec d’une tâche, les tâches restantes de l’élément `Target` et de la génération ne sont pas exécutées, et tout l’élément `Target` ainsi que la génération sont considérés comme étant en échec.<br /><br /> Les versions de .NET Framework antérieures à 4.5 prenaient en charge uniquement les valeurs `true` et `false`.<br /><br /> Pour plus d'informations, voir [Procédure : Ignorer les erreurs dans les tâches](../msbuild/how-to-ignore-errors-in-tasks.md).|  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Classe de base de tâche](../msbuild/task-base-class.md)  

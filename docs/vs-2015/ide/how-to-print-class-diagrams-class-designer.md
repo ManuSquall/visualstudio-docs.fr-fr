@@ -12,26 +12,26 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 907bc7d4366cc5bb8a92ec1f8537c932e8b4a06f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 98ee448c7e8bd2429f575aeb022a2a12e943bc1b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758154"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075686"
 ---
-# <a name="how-to-print-class-diagrams-class-designer"></a>Comment : imprimer des diagrammes de classes (Concepteur de classes)
+# <a name="how-to-print-class-diagrams-class-designer"></a>Procédure : Imprimer des diagrammes de classes (Concepteur de classes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez imprimer un diagramme de classes à l’aide de la fonctionnalité d’impression de Visual Studio.  
   
 ### <a name="to-print-a-class-diagram"></a>Pour imprimer un diagramme de classes  
   
-1.  Affichez le diagramme de classes. Si nécessaire, sélectionnez l’onglet Diagramme de classes pour l’afficher.  
+1. Affichez le diagramme de classes. Si nécessaire, sélectionnez l’onglet Diagramme de classes pour l’afficher.  
   
-2.  Cliquez sur **Imprimer** dans le menu **Fichier**.  
+2. Cliquez sur **Imprimer** dans le menu **Fichier**.  
   
      L’intégralité du diagramme de classes sera imprimé. Notez que vous devrez peut-être ajuster les paramètres dans la boîte de dialogue Mise en page pour imprimer à la taille voulue.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour copier des éléments d’un diagramme de classes vers un document Microsoft Office (Concepteur de classes)](../ide/how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer.md)   
+ [Guide pratique pour Copier des éléments de diagramme de classes vers un Document Microsoft Office (Concepteur de classes)](../ide/how-to-copy-class-diagram-elements-to-a-microsoft-office-document-class-designer.md)   
  [Guide pratique pour exporter des diagrammes de classes comme images (Concepteur de classes)](../ide/how-to-export-class-diagrams-as-images-class-designer.md)

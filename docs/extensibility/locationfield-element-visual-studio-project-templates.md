@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6dba30926b3afafae6cb32e159a98d4155438c08
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f55c67fbad80b05431ed13439584d3a94fa88c65
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679953"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078302"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>LocationField, élément (modèles de projet Visual Studio)
 Spécifie si le **emplacement** zone de texte dans le **nouveau projet** boîte de dialogue est activée, désactivée ou masquée pour le modèle de projet.
@@ -51,11 +51,11 @@ Spécifie si le **emplacement** zone de texte dans le **nouveau projet** boîte 
 
  Valeurs texte valides sont :
 
--   `Enabled`, qui spécifie que le **emplacement** zone de la **nouveau projet** boîte de dialogue est activée.
+- `Enabled`, qui spécifie que le **emplacement** zone de la **nouveau projet** boîte de dialogue est activée.
 
--   `Disabled`, qui spécifie que le **emplacement** zone de la **nouveau projet** boîte de dialogue est désactivée.
+- `Disabled`, qui spécifie que le **emplacement** zone de la **nouveau projet** boîte de dialogue est désactivée.
 
--   `Hidden`, qui spécifie que le **emplacement** zone de la **nouveau projet** boîte de dialogue est masquée.
+- `Hidden`, qui spécifie que le **emplacement** zone de la **nouveau projet** boîte de dialogue est masquée.
 
 ## <a name="remarks"></a>Notes
  La valeur par défaut est `Enabled`.

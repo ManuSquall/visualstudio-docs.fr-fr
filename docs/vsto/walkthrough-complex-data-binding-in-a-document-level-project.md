@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aa8370dcf36eb13b6ba1491efc5def55a93fff34
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: aabd45871e55fd22b9b9e35597555fd13b15d6eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643104"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052530"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Procédure pas à pas : Liaison de données complexe dans un projet au niveau du document
   Cette procédure pas à pas illustre les principes fondamentaux de la liaison de données complexe dans un projet au niveau du document. Vous pouvez lier plusieurs cellules dans une feuille de calcul Microsoft Office Excel aux champs dans la base de données Northwind SQL Server.
@@ -40,20 +40,20 @@ ms.locfileid: "56643104"
 ## <a name="prerequisites"></a>Prérequis
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] ou [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] ou [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
--   Accès à un serveur avec la base de données Northwind SQL Server.
+- Accès à un serveur avec la base de données Northwind SQL Server.
 
--   Autorisations pour lire et écrire dans la base de données SQL Server.
+- Autorisations pour lire et écrire dans la base de données SQL Server.
 
 ## <a name="create-a-new-project"></a>Créer un nouveau projet
  La première étape consiste à créer un projet de classeur Excel.
 
 ### <a name="to-create-a-new-project"></a>Pour créer un projet
 
-1.  Créer un projet de classeur Excel portant le nom **Ma liaison de données complexe**. Dans l’Assistant, sélectionnez **créer un nouveau document**.
+1. Créer un projet de classeur Excel portant le nom **Ma liaison de données complexe**. Dans l’Assistant, sélectionnez **créer un nouveau document**.
 
      Pour plus d'informations, voir [Procédure : Créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -91,15 +91,15 @@ ms.locfileid: "56643104"
 
 #### <a name="to-add-a-list-object"></a>Pour ajouter un objet de liste
 
-1.  Vérifiez que le **mes Binding.xlsx de données complexe** classeur est ouvert dans le concepteur Visual Studio, avec **Sheet1** affiché.
+1. Vérifiez que le **mes Binding.xlsx de données complexe** classeur est ouvert dans le concepteur Visual Studio, avec **Sheet1** affiché.
 
-2.  Ouvrez le **des Sources de données** fenêtre et sélectionnez le **employés** nœud.
+2. Ouvrez le **des Sources de données** fenêtre et sélectionnez le **employés** nœud.
 
-3.  Cliquez sur la flèche déroulante qui s’affiche.
+3. Cliquez sur la flèche déroulante qui s’affiche.
 
-4.  Sélectionnez **ListObject** dans la liste déroulante.
+4. Sélectionnez **ListObject** dans la liste déroulante.
 
-5.  Faites glisser le **employés** table à cellule **A6**.
+5. Faites glisser le **employés** table à cellule **A6**.
 
      Un <xref:Microsoft.Office.Tools.Excel.ListObject> contrôle nommé `EmployeesListObject` est créé dans la cellule **A6**. En même temps, un <xref:System.Windows.Forms.BindingSource> nommé `EmployeesBindingSource`, un adaptateur de table et un <xref:System.Data.DataSet> instance sont ajoutés au projet. Le contrôle est lié à la <xref:System.Windows.Forms.BindingSource>, qui est à son tour lié à la <xref:System.Data.DataSet> instance.
 
@@ -132,7 +132,7 @@ ms.locfileid: "56643104"
 
 ### <a name="to-save-changes-to-the-database"></a>Pour enregistrer les modifications apportées à la base de données
 
-1.  Ajouter un gestionnaire d’événements pour le <xref:System.Windows.Forms.Control.Click> événements de la `button`et ajoutez le code suivant pour valider toutes les modifications qui ont été apportées dans le jeu de données à la base de données.
+1. Ajouter un gestionnaire d’événements pour le <xref:System.Windows.Forms.Control.Click> événements de la `button`et ajoutez le code suivant pour valider toutes les modifications qui ont été apportées dans le jeu de données à la base de données.
 
      [!code-csharp[Trin_VstcoreDataExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#10)]
      [!code-vb[Trin_VstcoreDataExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#10)]
@@ -142,33 +142,33 @@ ms.locfileid: "56643104"
 
 ### <a name="to-test-the-data-binding"></a>Pour tester la liaison de données
 
--   Appuyez sur **F5**.
+- Appuyez sur **F5**.
 
      Vérifiez que lorsque le classeur s’ouvre, l’objet de liste est remplie avec les données à partir de la **employés** table.
 
 ### <a name="to-modify-data"></a>Pour modifier des données
 
-1.  Cliquez sur la cellule **B7**, qui doit contenir le nom **Davolio**.
+1. Cliquez sur la cellule **B7**, qui doit contenir le nom **Davolio**.
 
-2.  Tapez le nom **Anderson**, puis appuyez sur **entrée**.
+2. Tapez le nom **Anderson**, puis appuyez sur **entrée**.
 
 ### <a name="to-modify-a-column-header"></a>Pour modifier un en-tête de colonne
 
-1.  Cliquez sur la cellule qui contient l’en-tête de colonne **LastName**.
+1. Cliquez sur la cellule qui contient l’en-tête de colonne **LastName**.
 
-2.  Type **nom**, y compris un espace entre les deux mots, puis appuyez sur **entrée**.
+2. Type **nom**, y compris un espace entre les deux mots, puis appuyez sur **entrée**.
 
 ### <a name="to-save-data"></a>Pour enregistrer les données
 
-1.  Cliquez sur **enregistrer** sur la feuille de calcul.
+1. Cliquez sur **enregistrer** sur la feuille de calcul.
 
-2.  Quittez Excel. Cliquez sur **non** lorsque vous êtes invité à enregistrer les modifications apportées.
+2. Quittez Excel. Cliquez sur **non** lorsque vous êtes invité à enregistrer les modifications apportées.
 
-3.  Appuyez sur **F5** à exécuter à nouveau le projet.
+3. Appuyez sur **F5** à exécuter à nouveau le projet.
 
      L’objet de liste est remplie avec les données à partir de la **employés** table.
 
-4.  Notez que le nom dans la cellule **B7** est toujours **Anderson**, c'est-à-dire les données modifier apportées et de nouveau enregistré dans la base de données. L’en-tête de colonne **LastName** a changé sa forme d’origine sans espace, car l’en-tête de colonne n’est pas lié à la base de données et vous n’avez pas enregistré les modifications apportées à la feuille de calcul.
+4. Notez que le nom dans la cellule **B7** est toujours **Anderson**, c'est-à-dire les données modifier apportées et de nouveau enregistré dans la base de données. L’en-tête de colonne **LastName** a changé sa forme d’origine sans espace, car l’en-tête de colonne n’est pas lié à la base de données et vous n’avez pas enregistré les modifications apportées à la feuille de calcul.
 
 ### <a name="to-add-new-rows"></a>Pour ajouter de nouvelles lignes
 
@@ -184,44 +184,44 @@ ms.locfileid: "56643104"
 
 ### <a name="to-delete-rows"></a>Pour supprimer des lignes
 
--   Cliquez sur le nombre 16 (ligne 16) sur le côté gauche de la feuille de calcul, puis cliquez sur **supprimer**.
+- Cliquez sur le nombre 16 (ligne 16) sur le côté gauche de la feuille de calcul, puis cliquez sur **supprimer**.
 
 ### <a name="to-sort-the-rows-in-the-list"></a>Pour trier les lignes dans la liste
 
-1.  Sélectionnez une cellule dans la liste.
+1. Sélectionnez une cellule dans la liste.
 
      Boutons fléchés apparaissent dans chaque en-tête de colonne.
 
-2.  Cliquez sur la flèche dans le **nom** en-tête de colonne.
+2. Cliquez sur la flèche dans le **nom** en-tête de colonne.
 
-3.  Cliquez sur **tri croissant**.
+3. Cliquez sur **tri croissant**.
 
      Les lignes sont triées par ordre alphabétique par nom de famille.
 
 ### <a name="to-filter-information"></a>Pour filtrer les informations
 
-1.  Sélectionnez une cellule dans la liste.
+1. Sélectionnez une cellule dans la liste.
 
-2.  Cliquez sur la flèche dans le **titre** en-tête de colonne.
+2. Cliquez sur la flèche dans le **titre** en-tête de colonne.
 
-3.  Cliquez sur **commercial**.
+3. Cliquez sur **commercial**.
 
      La liste affiche uniquement les lignes qui ont **représentant commercial** dans le **titre** colonne.
 
-4.  Cliquez sur la flèche dans le **titre** en-tête de colonne à nouveau.
+4. Cliquez sur la flèche dans le **titre** en-tête de colonne à nouveau.
 
-5.  Cliquez sur **(All)**.
+5. Cliquez sur **(All)**.
 
      De filtrage est supprimé et toutes les lignes apparaissent.
 
 ## <a name="next-steps"></a>Étapes suivantes
  Cette procédure pas à pas montre les principes fondamentaux de la liaison d’une table dans une base de données à un objet de liste. Voici quelques tâches susceptibles de venir après :
 
--   Mettre en cache les données afin qu’il peut être utilisé en mode hors connexion. Pour plus d'informations, voir [Procédure : Mettre en cache les données pour une utilisation hors connexion ou sur un serveur](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).
+- Mettre en cache les données afin qu’il peut être utilisé en mode hors connexion. Pour plus d'informations, voir [Procédure : Mettre en cache les données pour une utilisation hors connexion ou sur un serveur](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).
 
--   Déployer la solution. Pour plus d’informations, consultez [déployer une solution Office](../vsto/deploying-an-office-solution.md).
+- Déployer la solution. Pour plus d’informations, consultez [déployer une solution Office](../vsto/deploying-an-office-solution.md).
 
--   Créer une relation maître/détail entre un champ et une table. Pour plus d’informations, consultez [Procédure pas à pas : Créer une relation maître/détail à l’aide d’un dataset mis en cache](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).
+- Créer une relation maître/détail entre un champ et une table. Pour plus d’informations, consultez [Procédure pas à pas : Créer une relation maître/détail à l’aide d’un dataset mis en cache](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).
 
 ## <a name="see-also"></a>Voir aussi
 - [Lier des données aux contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md)

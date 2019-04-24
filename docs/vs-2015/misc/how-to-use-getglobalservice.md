@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 4cdf5ab5-9f09-4caf-9011-2dcb2c62f1b7
 caps.latest.revision: 14
 manager: jillfra
-ms.openlocfilehash: 0161b3e44b44567166a337d94101778074561e80
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 1c1fb48e4bb354ef403b39b0f1320ead92f43967
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58949553"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054365"
 ---
 # <a name="how-to-use-getglobalservice"></a>Procédure : Utilisation d’un GetGlobalService
 Parfois, vous devrez peut-être obtenir un service à partir d’une fenêtre outil ou le contrôle conteneur qui n’a pas été installé, ou bien a été installé avec un fournisseur de services qui ne sait pas sur le service que vous souhaitez. Par exemple, vous souhaiterez peut-être écrire dans le journal d’activité à partir d’un contrôle. Pour plus d’informations sur ces scénarios et d’autres, consultez [Comment : Dépanner les Services](../extensibility/how-to-troubleshoot-services.md).  
@@ -25,15 +25,15 @@ Parfois, vous devrez peut-être obtenir un service à partir d’une fenêtre ou
   
  Heureusement, <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> fonctionne correctement la plupart du temps.  
   
--   Si un VSPackage fournit un service connu uniquement à un autre package Visual Studio, le VSPackage demandant le service est placé avant le VSPackage pour fournir que le service est chargé.  
+- Si un VSPackage fournit un service connu uniquement à un autre package Visual Studio, le VSPackage demandant le service est placé avant le VSPackage pour fournir que le service est chargé.  
   
--   Si une fenêtre outil est créée par un VSPackage, le VSPackage est placé avant la création de la fenêtre outil.  
+- Si une fenêtre outil est créée par un VSPackage, le VSPackage est placé avant la création de la fenêtre outil.  
   
--   Si un conteneur de contrôle est hébergé par une fenêtre outil créée par un VSPackage, le VSPackage est placé avant le conteneur de contrôle est créé.  
+- Si un conteneur de contrôle est hébergé par une fenêtre outil créée par un VSPackage, le VSPackage est placé avant le conteneur de contrôle est créé.  
   
 ### <a name="to-get-a-service-from-within-a-tool-window-or-control-container"></a>Pour obtenir un service à partir d’un conteneur de contrôle ou de la fenêtre outil  
   
--   Insérez ce code dans le constructeur, une fenêtre outil ou un conteneur de contrôle :  
+- Insérez ce code dans le constructeur, une fenêtre outil ou un conteneur de contrôle :  
   
      [!code-csharp[UseGetGlobalService#1](../snippets/csharp/VS_Snippets_VSSDK/usegetglobalservice/cs/getglobalservicepackage.cs#1)]
      [!code-vb[UseGetGlobalService#1](../snippets/visualbasic/VS_Snippets_VSSDK/usegetglobalservice/vb/getglobalservicepackage.vb#1)]  

@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 173ab11e85853324089f1dee66cd047e0afb7f13
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8757b04423037d821d7b74293e508f567975da57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948818"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047930"
 ---
 # <a name="ca1304-specify-cultureinfo"></a>CA1304 : Spécifier CultureInfo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "58948818"
 ## <a name="cause"></a>Cause
  Une méthode ou un constructeur appelle un membre qui a une surcharge qui accepte un <xref:System.Globalization.CultureInfo?displayProperty=fullName> paramètre et la méthode ou le constructeur n’appelle pas la surcharge qui accepte le <xref:System.Globalization.CultureInfo> paramètre. Cette règle ignore les appels aux méthodes suivantes :
 
--   <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
+- <xref:System.Activator.CreateInstance%2A?displayProperty=fullName>
 
--   <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName>
+- <xref:System.Resources.ResourceManager.GetObject%2A?displayProperty=fullName>
 
--   <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>
+- <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>
 
 ## <a name="rule-description"></a>Description de la règle
  Quand un <xref:System.Globalization.CultureInfo> ou <xref:System.IFormatProvider?displayProperty=fullName> objet n’est pas fourni, la valeur par défaut qui est fournie par le membre surchargé n’est peut-être pas l’effet souhaité dans tous les paramètres régionaux. En outre, [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] membres choisissent la culture par défaut et la mise en forme basée sur des hypothèses qui peuvent ne pas être correctes pour votre code. Pour que le code fonctionne comme prévu pour vos scénarios, vous devez fournir des informations spécifiques à la culture selon les consignes suivantes :

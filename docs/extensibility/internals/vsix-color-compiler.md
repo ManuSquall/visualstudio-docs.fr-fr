@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa425b945b2694ed11e77116611ba45cf21cf6e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: daf5b32ce8088dbb020fdaf484013dd1a1889826
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605157"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112336"
 ---
 # <a name="vsix-color-compiler"></a>Compilateur de couleur VSIX
 L’outil compilateur de couleur Visual Studio Extension est une application de console qui prend un fichier .xml qui représente les couleurs des thèmes Visual Studio existants et les convertit en un .pkgdef de fichiers afin que ces couleurs peuvent être utilisées dans Visual Studio. Car il est facile de comparer les différences entre les fichiers .xml, cet outil est utile pour la gestion des couleurs personnalisées dans le contrôle de code source. Elle également peut être raccordé à des environnements de build afin que la sortie de la build est un fichier .pkgdef valide.
@@ -53,7 +53,7 @@ L’outil compilateur de couleur Visual Studio Extension est une application de 
 |||
 |-|-|
 |**Attribut**|**Définition**|
-|Name|[Obligatoire] Le nom du thème|
+|Nom|[Obligatoire] Le nom du thème|
 |GUID|[Obligatoire] GUID du thème (doivent correspondre à la mise en forme de GUID)|
 
  Lorsque vous créez des couleurs personnalisées pour Visual Studio, ces couleurs doivent être définis pour les thèmes suivants. Si aucune couleur n’existe pour un thème particulier, Visual Studio tente de charger les couleurs de manquants à partir de ce thème clair.
@@ -79,7 +79,7 @@ L’outil compilateur de couleur Visual Studio Extension est une application de 
 |||
 |-|-|
 |**Attribut**|**Définition**|
-|Name|[Obligatoire] Le nom de la catégorie|
+|Nom|[Obligatoire] Le nom de la catégorie|
 |GUID|[Obligatoire] GUID de la catégorie (doivent correspondre à la mise en forme de GUID)|
 
  **Color**
@@ -96,7 +96,7 @@ L’outil compilateur de couleur Visual Studio Extension est une application de 
 |||
 |-|-|
 |**Attribut**|**Définition**|
-|Name|[Obligatoire] Le nom de la couleur|
+|Nom|[Obligatoire] Le nom de la couleur|
 
  **Arrière-plan et/ou de premier plan**
 
@@ -149,15 +149,15 @@ L’outil compilateur de couleur Visual Studio Extension est une application de 
 
  **Exemples**
 
--   VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef
+- VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef
 
--   /NoLogo de VsixColorCompiler D:\xml\colors.xml
+- /NoLogo de VsixColorCompiler D:\xml\colors.xml
 
 ## <a name="notes"></a>Notes
 
--   Cet outil nécessite l’installation de la dernière version du runtime VC ++.
+- Cet outil nécessite l’installation de la dernière version du runtime VC ++.
 
--   Uniquement les fichiers uniques sont prises en charge. La conversion en bloc par le biais de chemins d’accès du dossier n’est pas pris en charge.
+- Uniquement les fichiers uniques sont prises en charge. La conversion en bloc par le biais de chemins d’accès du dossier n’est pas pris en charge.
 
 ## <a name="sample-output"></a>Résultat de l'exemple
  Le fichier .pkgdef généré par l’outil sera similaire à la ci-dessous clés :

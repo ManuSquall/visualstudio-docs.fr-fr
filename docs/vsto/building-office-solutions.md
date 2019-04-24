@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 000a036b90d1fa44f24a8340770790ab216c1d85
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 17ca737e0796230b9af207bf2f203700676ac630
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945415"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078926"
 ---
 # <a name="build-office-solutions"></a>Générer des solutions Office
   En général, la génération et le débogage de projets Office sont identiques à la génération et au débogage d’autres types de projets dans Visual Studio, tels que les Windows Forms. Les rubriques de cette section expliquent les différences qui existent. Pour obtenir des informations générales sur la façon de créer des applications, consultez [compiler et générer dans Visual Studio](../ide/compiling-and-building-in-visual-studio.md).
@@ -45,15 +45,15 @@ ms.locfileid: "55945415"
 ### <a name="document-level-projects"></a>Projets au niveau du document
  Quand vous générez un projet au niveau du document, les éléments suivants sont inclus dans la sortie du projet :
 
--   Une copie du document de projet.
+- Une copie du document de projet.
 
--   L’assembly de projet et tous les assemblys référencés dont la propriété **Copie locale** a la valeur **true**.
+- L’assembly de projet et tous les assemblys référencés dont la propriété **Copie locale** a la valeur **true**.
 
--   Le manifeste d’application, qui porte l’extension de nom de fichier *.manifest*. Pour plus d’informations, consultez [manifestes d’Application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).
+- Le manifeste d’application, qui porte l’extension de nom de fichier *.manifest*. Pour plus d’informations, consultez [manifestes d’Application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).
 
--   Le manifeste de déploiement, qui porte l’extension de nom de fichier *.vsto*. Pour plus d’informations, consultez [manifestes de déploiement pour les solutions Office](../vsto/deployment-manifests-for-office-solutions.md).
+- Le manifeste de déploiement, qui porte l’extension de nom de fichier *.vsto*. Pour plus d’informations, consultez [manifestes de déploiement pour les solutions Office](../vsto/deployment-manifests-for-office-solutions.md).
 
--   Une base de données de programme (*PDB*) fichier.
+- Une base de données de programme (*PDB*) fichier.
 
 > [!NOTE]
 >  Si vous générez une solution au niveau du document à un emplacement distant et non pas sur l’ordinateur local, ajoutez le chemin complet de la liste des emplacements approuvés dans le Centre de gestion de la confidentialité de l’application. Pour plus d’informations, consultez la section intitulée Granting Trust to Documents dans [solutions Office Secure](../vsto/securing-office-solutions.md).

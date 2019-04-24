@@ -4,23 +4,23 @@ titleSuffix: ''
 description: Une procédure pas à pas montrant les principes de base de Flask dans le contexte de projets Visual Studio, en particulier les fonctionnalités des modèles Projet web Flask de sondage et Projet web Flask/Jade de sondage.
 ms.date: 01/07/2019
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 77c33bc24162af0aacba9e86108a4301cdb882e6
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 734a192a00ee0c509ed16e71a8629837155888ae
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195188"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366144"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Étape 5 : Utiliser le modèle de projet web Flask Sondage
 
-**Étape précédente : [Utiliser le modèle de projet web Flask complet](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
+**Étape précédente : [Utiliser le modèle Projet web Flask complet](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
 
 Une fois que vous avez compris le modèle « Projet web Flask » de Visual Studio, vous pouvez passer au troisième modèle Flask, « Projet web Flask de sondage », qui est créé à partir de la même base de code.
 

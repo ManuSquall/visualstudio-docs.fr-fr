@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8cdfa140614117e00e0ad3cc813c7f33d7a47b75
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 0ba49e1ab3e25e3f22a9ca8642673aa0a62869f6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55027709"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114767"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Couleurs et styles pour Visual Studio
 
@@ -85,7 +85,7 @@ Parfois, vous devez autoriser l’utilisateur final à personnaliser votre inter
 
 ![Outils &gt; boîte de dialogue Options](../../extensibility/ux-guidelines/media/0301-a_toolsoptionsdialog.png "a_ToolsOptionsDialog-0301")<br />Outils &gt; boîte de dialogue Options
 
-##  <a name="BKMK_TheVSColorService"></a> Le Service VSColor
+## <a name="BKMK_TheVSColorService"></a> Le Service VSColor
 
 Visual Studio fournit un service de couleur d’environnement, également appelé le service VSColor ou le service de couleur du shell. Ce service vous permet de lier les valeurs de couleur de vos éléments d’interface utilisateur à un jeu contenant des couleurs pour chaque thème de couleurs de nom-valeur. Le service de VSColor doit être utilisé pour tous les éléments d’interface utilisateur, afin que les couleurs changent pour refléter le thème sélectionné par l’utilisateur actuel et automatiquement afin que l’interface utilisateur liée au service de couleur d’environnement seront intègre avec les nouveaux thèmes dans les futures versions de Visual Studio.
 
@@ -113,7 +113,6 @@ Dans le fichier vsshell80.idl, dans l’énumération `__VSSYSCOLOREX` a des con
 
 Si vous stockez un stylet ou un pinceau avec une nouvelle couleur, vous devez `AdviseBroadcastMessages` (sur le shell Visual Studio) et écouter `WM_SYSCOLORCHANGE` et `WM_THEMECHANGED` messages.
 
-
 Pour accéder au service de couleur en code natif, vous allez effectuer un appel qui ressemble à ceci :
 
 ```
@@ -125,7 +124,7 @@ pUIShell2->GetVSSysColorEx(VSCOLOR_COLOR_NAME, &rgbLOCAL_COLOR);
 
 ##### <a name="from-managed-code"></a>À partir du code managé
 
-Il est assez simple d’accéder au service VSColor dans le code natif. Si vous travaillez via du code managé, toutefois, déterminer comment utiliser le service peut être difficile. Dans cette optique, Voici un extrait de code C# illustrant ce processus :
+Il est assez simple d’accéder au service VSColor dans le code natif. Si vous travaillez via du code managé, toutefois, déterminer comment utiliser le service peut être difficile. Dans cette optique, Voici un extrait de code c# illustrant ce processus :
 
 ```csharp
 private void VSColorPaint(object sender, System.Windows.Forms.PaintEventArgs e)
@@ -268,7 +267,7 @@ protected override void Dispose(bool disposing)
 }
 ```
 
-##  <a name="BKMK_ChoosingHighContrastColors"></a> Choix de couleurs à contraste élevé
+## <a name="BKMK_ChoosingHighContrastColors"></a> Choix de couleurs à contraste élevé
 
 ### <a name="overview"></a>Vue d'ensemble
 
@@ -331,7 +330,7 @@ Nombreux éléments d’interface utilisateur courants ont déjà des couleurs �
 | WindowFrame | : Bordure de l’IDE |
 | WindowText | -Premier plan d’onglet masquage automatique<br />-Premier plan onglet de fenêtre outil sélectionné<br />-Onglet de fenêtre de document inactif et premier plan inactif ou désélectionné onglet provisoire<br />-Premier plan par défaut de vue et arborescence pointage sur glyphe non sélectionné<br />-Bordure onglet sélectionné de la fenêtre outil<br />-Barre de défilement thumb arrière-plan, la bordure et glyphe |
 
-##  <a name="BKMK_ExposingColorsForEndUsers"></a> Exposition des couleurs pour les utilisateurs finaux
+## <a name="BKMK_ExposingColorsForEndUsers"></a> Exposition des couleurs pour les utilisateurs finaux
 
 ### <a name="overview"></a>Vue d'ensemble
 
@@ -359,7 +358,7 @@ Construire un type spécial de l’entrée de Registre de catégorie sous `[HKLM
 
 Remplir le Registre avec deux valeurs :
 
-| Name | Type | Données | Description |
+| Nom | Type | Données | Description |
 | --- | --- | --- | --- |
 | Category | REG_SZ | GUID | Un GUID est créé pour identifier la catégorie |
 | Package | REG_SZ | GUID | Le GUID du service VSPackage qui prend en charge de la catégorie |
@@ -372,7 +371,7 @@ Construire un type spécial de l’entrée de Registre de catégorie sous `[HKLM
 
 Remplir le Registre avec deux valeurs :
 
-| Name | Type | Données | Description |
+| Nom | Type | Données | Description |
 |--- | --- | --- | --- |
 | Category | REG_SZ | GUID | Un GUID est créé pour identifier la catégorie |
 | Package | REG_SZ | GUID | Le GUID du service VSPackage qui prend en charge de la catégorie |

@@ -12,12 +12,12 @@ ms.assetid: ad9beac3-4f8d-4093-ad0e-6fb00444a709
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8057aa7f2e69d88f6e9cbdf20f9d13105aa031c1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ab746bfd3e8854fddd83f3fdde49a5d0dda397ca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947965"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052790"
 ---
 # <a name="support-for-user-settings"></a>Prise en charge des paramètres utilisateur
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ Un VSPackage peut définir une ou plusieurs catégories de paramètres qui sont 
   
  Une entrée de Registre qui est appelée un Point de paramètres personnalisés et un GUID définit la catégorie de paramètres d’un VSPackage. Un VSPackage peut prendre en charge plusieurs catégories de paramètres, chacun défini par un Point de paramètres personnalisés.  
   
--   Les implémentations de paramètres qui sont basées sur les assemblys d’interopérabilité (à l’aide de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> interface) doit créer le Point de paramètres personnalisés en modifiant le Registre ou à l’aide d’un script de bureau d’enregistrement (fichier .rgs). Pour plus d'informations, consultez [Creating Registrar Scripts](http://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
+- Les implémentations de paramètres qui sont basées sur les assemblys d’interopérabilité (à l’aide de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings> interface) doit créer le Point de paramètres personnalisés en modifiant le Registre ou à l’aide d’un script de bureau d’enregistrement (fichier .rgs). Pour plus d'informations, consultez [Creating Registrar Scripts](http://msdn.microsoft.com/library/cbd5024b-8061-4a71-be65-7fee90374a35).  
   
--   Code qui utilise Managed Package Framework (MPF) doit créer des Points de paramètres personnalisés en attachant un <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> au VSPackage pour chaque Point de paramètres personnalisés.  
+- Code qui utilise Managed Package Framework (MPF) doit créer des Points de paramètres personnalisés en attachant un <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> au VSPackage pour chaque Point de paramètres personnalisés.  
   
      Si un VSPackage unique prend en charge plusieurs Points de paramètres personnalisés, chaque Point de paramètres personnalisés est implémentée par une classe distincte, et chacun est enregistré par une instance unique de la <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> classe. Par conséquent, une implémentation de classe de paramètres peuvent prendre en charge plusieurs catégories de paramètres.  
   

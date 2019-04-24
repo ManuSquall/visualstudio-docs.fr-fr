@@ -3,19 +3,19 @@ title: Démarrage rapide - Créer un projet Python à l’aide d’un modèle
 description: Ce guide de démarrage rapide aide à créer un projet Visual Studio pour Python à l’aide du modèle prédéfini pour une application Flask de base.
 ms.date: 12/06/2018
 ms.topic: quickstart
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b1a26f3bc5e47f0aac7385bb9b1197da0a72396d
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 089be3e6f28a939979f6bd97097ea7558824b493
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355407"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365949"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>Démarrage rapide : Créer un projet Python à partir d’un modèle dans Visual Studio
 
@@ -75,7 +75,7 @@ Une fois que vous avez [installé la prise en charge de Python dans Visual Studi
 
 1. Sélectionnez **Déboguer** > **Exécuter sans débogage** pour exécuter l’application et ouvrir un navigateur sur `localhost:5555`.
 
-**Question : Quels sont les autres modèles Python offerts par Visual Studio ?**
+**Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Quels sont les autres modèles Python proposés par Visual Studio ?**
 
 **Réponse** : Lorsque la charge de travail Python est installée, Visual Studio offre de nombreux modèles de projet, notamment pour les [infrastructures web Flask, Bottle et Django](../python/python-web-application-project-templates.md), Azure Cloud Services et différents scénarios d’apprentissage automatique. Il existe même un modèle pour créer un projet à partir d’une structure de dossiers existante contenant une application Python. Vous pouvez y accéder par la boîte de dialogue **Fichier** > **Nouveau** > **Projet** en sélectionnant le nœud de langage **Python** et ses nœuds enfants.
 
@@ -83,7 +83,7 @@ Visual Studio propose également divers *modèles d’éléments* ou de fichiers
 
 Les modèles peuvent faire gagner beaucoup de temps au démarrage d’un projet ou lors de la création d’un fichier. Ils permettent également de se renseigner sur les différents types d’applications et les différentes structures de code. Prenez quelques minutes pour créer des projets et des éléments à partir des modèles pour vous familiariser avec leur contenu.
 
-**Question : Peut-on également utiliser des modèles Cookiecutter ?**
+**Question : J'utilise un certificat X.509 avec mon service et j'obtiens une System.Security.Cryptography.CryptographicException. Peut-on également utiliser des modèles Cookiecutter ?**
 
 **Réponse** : Oui. En fait, Visual Studio fournit une intégration directe avec Cookiecutter, que vous pouvez découvrir via [Démarrage rapide : Créer un projet à partir d’un modèle Cookiecutter](../python/quickstart-04-python-in-visual-studio-project-from-cookiecutter.md).
 
@@ -95,5 +95,5 @@ Les modèles peuvent faire gagner beaucoup de temps au démarrage d’un projet 
 ## <a name="see-also"></a>Voir aussi
 
 - [Identifier manuellement un interpréteur Python existant](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)
-- [Installer la prise en charge de Python dans Visual Studio 2015 et antérieur](installing-python-support-in-visual-studio.md)
+- [Installer la prise en charge de Python dans Visual Studio 2015 et les versions antérieures](installing-python-support-in-visual-studio.md)
 - [Emplacements d’installation](installing-python-support-in-visual-studio.md#install-locations)

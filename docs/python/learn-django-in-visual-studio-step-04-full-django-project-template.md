@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Une procédure pas à pas des principes de base de Django dans le contexte de projets Visual Studio, en particulier les fonctionnalités fournies par le modèle de projet Web Django.
 ms.date: 11/19/2018
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e9f356a8b6af23e587bf5f22ea99c64218f0dee7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c778d830b20797962306700a5af938eb3a3bb142
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943426"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366196"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>Étape 4 : Utiliser le modèle de projet web Django complet
 

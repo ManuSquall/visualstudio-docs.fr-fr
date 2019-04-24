@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f655979e010ea7aa0dafee78648a970cb2e3229
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 499e6c2b34fcc5261ab8fb3a87a24e2cc0959d8c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704772"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113740"
 ---
 # <a name="extend-the-status-bar"></a>Étendre la barre d’état
 Vous pouvez utiliser la barre d’état Visual Studio en bas de l’IDE pour afficher des informations.
@@ -32,9 +32,9 @@ Vous pouvez utiliser la barre d’état Visual Studio en bas de l’IDE pour aff
 
 ### <a name="read-and-write-to-the-status-bar"></a>Lire et écrire dans la barre d’état
 
-1.  Créez un projet VSIX nommé **TestStatusBarExtension** et ajoutez une commande de menu nommée **TestStatusBarCommand**.
+1. Créez un projet VSIX nommé **TestStatusBarExtension** et ajoutez une commande de menu nommée **TestStatusBarCommand**.
 
-2.  Dans *TestStatusBarCommand.cs*, remplacez le code de méthode de gestionnaire de commande (`MenuItemCallback`) par le code suivant :
+2. Dans *TestStatusBarCommand.cs*, remplacez le code de méthode de gestionnaire de commande (`MenuItemCallback`) par le code suivant :
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -68,17 +68,17 @@ Vous pouvez utiliser la barre d’état Visual Studio en bas de l’IDE pour aff
     }
     ```
 
-3.  Compilez le code et démarrer le débogage.
+3. Compilez le code et démarrer le débogage.
 
-4.  Ouvrez le **outils** menu dans l’instance expérimentale de Visual Studio. Cliquez sur le **TestStatusBarCommand appeler** bouton.
+4. Ouvrez le **outils** menu dans l’instance expérimentale de Visual Studio. Cliquez sur le **TestStatusBarCommand appeler** bouton.
 
      Vous devez voir que le texte dans la barre maintenant lectures **nous venons de la barre d’état.** et la boîte de message qui s’affiche comporte le même texte.
 
 ### <a name="update-the-progress-bar"></a>Mettre à jour de la barre de progression
 
-1.  Dans cette procédure, nous allons montrer comment initialiser et mettre à jour de la barre de progression.
+1. Dans cette procédure, nous allons montrer comment initialiser et mettre à jour de la barre de progression.
 
-2.  Ouvrez le *TestStatusBarCommand.cs* fichier et remplacez le `MenuItemCallback` méthode avec le code suivant :
+2. Ouvrez le *TestStatusBarCommand.cs* fichier et remplacez le `MenuItemCallback` méthode avec le code suivant :
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -102,21 +102,21 @@ Vous pouvez utiliser la barre d’état Visual Studio en bas de l’IDE pour aff
     }
     ```
 
-3.  Compilez le code et démarrer le débogage.
+3. Compilez le code et démarrer le débogage.
 
-4.  Ouvrez le **outils** menu dans l’instance expérimentale de Visual Studio. Cliquez sur **TestStatusBarCommand appeler** bouton.
+4. Ouvrez le **outils** menu dans l’instance expérimentale de Visual Studio. Cliquez sur **TestStatusBarCommand appeler** bouton.
 
      Vous devez voir que le texte dans la barre maintenant lectures **écriture dans la barre de progression.** Vous devez également voir la barre de progression est mise à jour par seconde pendant 20 secondes. Après cela, la barre d’état et la barre de progression sont effacées.
 
 ### <a name="display-an-animation"></a>Afficher une animation
 
-1.  La barre d’état affiche une animation de boucle qui indique soit une opération longue (par exemple, la génération de plusieurs projets dans une solution). Si vous ne voyez pas cette animation, assurez-vous que vous avez la bonne **outils** > **Options** paramètres :
+1. La barre d’état affiche une animation de boucle qui indique soit une opération longue (par exemple, la génération de plusieurs projets dans une solution). Si vous ne voyez pas cette animation, assurez-vous que vous avez la bonne **outils** > **Options** paramètres :
 
      Accédez à la **outils** > **Options** > **général** onglet et décochez la case **ajuster automatiquement l’expérience visuelle selon le client performances**. Puis activez sous-l’option de **activer l’expérience visuelle améliorée**. Vous devez maintenant être en mesure de voir l’animation lorsque vous générez le projet dans votre instance expérimentale de Visual Studio.
 
      Dans cette procédure, nous affichons l’animation de Visual Studio standard, qui représente la création d’un projet ou une solution.
 
-2.  Ouvrez le *TestStatusBarCommand.cs* fichier et remplacez le `MenuItemCallback` méthode avec le code suivant :
+2. Ouvrez le *TestStatusBarCommand.cs* fichier et remplacez le `MenuItemCallback` méthode avec le code suivant :
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -137,8 +137,8 @@ Vous pouvez utiliser la barre d’état Visual Studio en bas de l’IDE pour aff
     }
     ```
 
-3.  Compilez le code et démarrer le débogage.
+3. Compilez le code et démarrer le débogage.
 
-4.  Ouvrez le **outils** menu dans l’instance expérimentale de Visual Studio et cliquez sur **TestStatusBarCommand appeler**.
+4. Ouvrez le **outils** menu dans l’instance expérimentale de Visual Studio et cliquez sur **TestStatusBarCommand appeler**.
 
      Lorsque vous voyez la boîte de message, vous devez également voir l’animation dans la barre d’état à l’extrême droite. Lorsque vous fermez la boîte de message, l’animation disparaît.

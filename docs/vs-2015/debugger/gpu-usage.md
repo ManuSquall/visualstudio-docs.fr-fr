@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: edeb59f08dba3328c464782dd685b24c6bcda852
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: eef55dd0e5af443379b2685ccab9bd2de8074e0d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949463"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066706"
 ---
 # <a name="gpu-usage"></a>Utilisation du GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,11 +117,11 @@ Servez-vous de l'outil Utilisation du GPU dans le hub Performances et diagnostic
   
 #### <a name="to-postpone-profiling-from-the-start-of-the-app"></a>Pour reporter le profilage au démarrage de l'application :  
   
-1.  Dans le menu principal, choisissez **Déboguer**, puis **Performances et diagnostics** (clavier : appuyez sur Alt+F2).  
+1. Dans le menu principal, choisissez **Déboguer**, puis **Performances et diagnostics** (clavier : appuyez sur Alt+F2).  
   
-2.  Dans le hub Performances et diagnostics, suivez le lien **Paramètres** à côté de l’option **Utilisation du GPU**.  
+2. Dans le hub Performances et diagnostics, suivez le lien **Paramètres** à côté de l’option **Utilisation du GPU**.  
   
-3.  Sous **Configuration du profilage GPU**, dans la page de propriétés **Général**, décochez la case **Commencer le profilage au démarrage de l’application** pour reporter le profilage.  
+3. Sous **Configuration du profilage GPU**, dans la page de propriétés **Général**, décochez la case **Commencer le profilage au démarrage de l’application** pour reporter le profilage.  
   
      ![Configurer le moment du démarrage de la collecte de données d’utilisation du GPU](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
   
@@ -130,7 +130,7 @@ Servez-vous de l'outil Utilisation du GPU dans le hub Performances et diagnostic
   
  Quand vous reportez la collection des informations de profilage à l’aide de ce paramètre, un lien supplémentaire devient disponible dans la partie inférieure de la fenêtre de l’outil Utilisation du GPU au moment où vous exécutez votre application dans l’outil Utilisation du GPU. Pour commencer à collecter des informations de profilage, choisissez le lien **Démarrer** dans le message **Commencer à collecter des données détaillées d’utilisation GPU supplémentaires**.  
   
-##  <a name="hwsupport"></a> Prise en charge du matériel et des pilotes  
+## <a name="hwsupport"></a> Prise en charge du matériel et des pilotes  
  Le matériel et les pilotes GPU suivants sont pris en charge :  
   
 |Fournisseur|Description du GPU|Version de pilote nécessaire|  
@@ -143,10 +143,10 @@ Servez-vous de l'outil Utilisation du GPU dans le hub Performances et diagnostic
   
 ## <a name="see-also"></a>Voir aussi  
   
--   [Résoudre les problèmes graphiques complexes liés à votre jeu à l’aide des outils DirectX (vidéo)](http://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)  
+- [Résoudre les problèmes graphiques complexes liés à votre jeu à l’aide des outils DirectX (vidéo)](http://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)  
   
--   [Outil Utilisation du GPU dans Visual Studio (vidéo)](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)  
+- [Outil Utilisation du GPU dans Visual Studio (vidéo)](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)  
   
--   [Outil Utilisation du GPU dans Visual Studio 2013 Update 4 CTP1 (blog)](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)  
+- [Outil Utilisation du GPU dans Visual Studio 2013 Update 4 CTP1 (blog)](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)  
   
--   [Utilisation du GPU pour DirectX dans Visual Studio (blog)](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx)
+- [Utilisation du GPU pour DirectX dans Visual Studio (blog)](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx)

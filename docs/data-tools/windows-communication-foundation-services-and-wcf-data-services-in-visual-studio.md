@@ -35,12 +35,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b253c4e3447b8d7cd76dcef010adf99addb7bf9d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 57b66473333bfe5e22c3f5aca47764bb789a33cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933663"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045186"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Services Windows Communication Foundation et services de données WCF dans Visual Studio
 
@@ -91,7 +91,7 @@ Après la création d’un client WCF, vous référencez le service dans votre c
 
 ## <a name="wcf-tools-in-visual-studio"></a>Outils WCF dans Visual Studio
 
-Visual Studio fournit des outils pour vous aider à créer des services WCF et des clients WCF. Pour une procédure pas à pas qui montre les outils, consultez [procédure pas à pas : création d’un service WCF simple dans les Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md).
+Visual Studio fournit des outils pour vous aider à créer des services WCF et des clients WCF. Pour une procédure pas à pas qui montre les outils, consultez [procédure pas à pas : Création d’un service WCF simple dans les Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md).
 
 ### <a name="create-and-test-wcf-services"></a>Créer et tester les services WCF
 
@@ -129,7 +129,7 @@ Le **ajouter une référence de Service** boîte de dialogue vous permet d’ent
 
 Le **configurer les références de Service** boîte de dialogue vous permet de personnaliser la configuration pour un service. Vous pouvez modifier l’adresse pour un service, spécifiez le niveau d’accès, le comportement asynchrone et les types de contrat de message et configurer la réutilisation du type.
 
-## <a name="how-to-select-a-service-endpoint"></a>Comment : sélectionner un point de terminaison de service
+## <a name="how-to-select-a-service-endpoint"></a>Procédure : Sélectionnez un point de terminaison de service
 
 Certains services Windows Communication Foundation (WCF) exposent plusieurs points de terminaison via lequel un client peut communiquer avec le service. Par exemple, un service peut exposer un point de terminaison qui utilise une liaison HTTP et de nom d’utilisateur et de sécurité de mot de passe et un deuxième point de terminaison qui utilise FTP et l’authentification Windows. Le premier point de terminaison peut être utilisé par les applications qui accèdent au service en dehors d’un pare-feu, tandis que la seconde peut être utilisée sur un intranet.
 
@@ -139,9 +139,9 @@ Dans ce cas, vous pouvez spécifier le `endpointConfigurationName` en tant que p
 
 ### <a name="to-select-a-service-endpoint"></a>Pour sélectionner un point de terminaison de service
 
-1.  Ajoutez une référence à un service WCF en double-cliquant sur le nœud du projet dans **l’Explorateur de solutions** et en choisissant **ajouter une référence de service**.
+1. Ajoutez une référence à un service WCF en double-cliquant sur le nœud du projet dans **l’Explorateur de solutions** et en choisissant **ajouter une référence de service**.
 
-2.  Dans l’éditeur de Code, ajoutez un constructeur pour la référence de service :
+2. Dans l’éditeur de Code, ajoutez un constructeur pour la référence de service :
 
     ```vb
     Dim proxy As New ServiceReference.Service1Client(
@@ -154,26 +154,26 @@ Dans ce cas, vous pouvez spécifier le `endpointConfigurationName` en tant que p
     > [!NOTE]
     > Remplacez *ServiceReference* avec l’espace de noms pour la référence de service et remplacez *Service1Client* avec le nom du service.
 
-3.  Une liste IntelliSense affiche qui inclut les surcharges du constructeur. Sélectionnez le `endpointConfigurationName As String` de surcharge.
+3. Une liste IntelliSense affiche qui inclut les surcharges du constructeur. Sélectionnez le `endpointConfigurationName As String` de surcharge.
 
-4.  Suivant la surcharge, tapez `=` *ConfigurationName*, où *ConfigurationName* est le nom du point de terminaison que vous souhaitez utiliser.
+4. Suivant la surcharge, tapez `=` *ConfigurationName*, où *ConfigurationName* est le nom du point de terminaison que vous souhaitez utiliser.
 
     > [!NOTE]
     > Si vous ne connaissez pas les noms des points de terminaison disponibles, vous les trouverez dans le *app.config* fichier.
 
 ### <a name="to-find-the-available-endpoints-for-a-wcf-service"></a>Pour rechercher les points de terminaison disponibles pour un service WCF
 
-1.  Dans **l’Explorateur de solutions**, avec le bouton droit le **app.config** de fichiers pour le projet qui contient la référence de service, puis cliquez sur **Open**. Le fichier apparaît dans l’éditeur de Code.
+1. Dans **l’Explorateur de solutions**, avec le bouton droit le **app.config** de fichiers pour le projet qui contient la référence de service, puis cliquez sur **Open**. Le fichier apparaît dans l’éditeur de Code.
 
-2.  Recherchez le `<Client>` balise dans le fichier.
+2. Recherchez le `<Client>` balise dans le fichier.
 
-3.  Rechercher en dessous de la `<Client>` balise pour une balise qui commence par `<Endpoint>`.
+3. Rechercher en dessous de la `<Client>` balise pour une balise qui commence par `<Endpoint>`.
 
      Si la référence de service fournit plusieurs points de terminaison, il y aura deux ou plusieurs `<Endpoint` balises.
 
-4.  À l’intérieur de la `<EndPoint>` balise, vous trouverez un `name="` *service quelconque* `"` paramètre (où *service quelconque* représente un nom de point de terminaison). C’est le nom du point de terminaison qui peut être passé à la `endpointConfigurationName As String` surcharge d’un constructeur pour une référence de service.
+4. À l’intérieur de la `<EndPoint>` balise, vous trouverez un `name="` *service quelconque* `"` paramètre (où *service quelconque* représente un nom de point de terminaison). C’est le nom du point de terminaison qui peut être passé à la `endpointConfigurationName As String` surcharge d’un constructeur pour une référence de service.
 
-## <a name="how-to-call-a-service-method-asynchronously"></a>Comment : appeler une méthode de service de façon asynchrone
+## <a name="how-to-call-a-service-method-asynchronously"></a>Procédure : Appeler une méthode de service de façon asynchrone
 
 La plupart des méthodes dans les services Windows Communication Foundation (WCF) peut être appelée de manière synchrone ou asynchrone. Appel d’une méthode asynchrone permet à votre application continuer à travailler pendant que la méthode est appelée lorsqu’il fonctionne sur une connexion lente.
 
@@ -186,47 +186,47 @@ Par défaut, lorsqu’une référence de service est ajoutée à un projet, il e
 
 ### <a name="to-call-a-service-method-asynchronously"></a>Pour appeler une méthode de service de façon asynchrone
 
-1.  Dans **l’Explorateur de solutions**, sélectionnez la référence de service.
+1. Dans **l’Explorateur de solutions**, sélectionnez la référence de service.
 
-2.  Sur le **projet** menu, cliquez sur **configurer la référence de Service**.
+2. Sur le **projet** menu, cliquez sur **configurer la référence de Service**.
 
-3.  Dans le **configurer la référence de Service** boîte de dialogue, sélectionnez le **générer des opérations asynchrones** case à cocher.
+3. Dans le **configurer la référence de Service** boîte de dialogue, sélectionnez le **générer des opérations asynchrones** case à cocher.
 
-## <a name="how-to-bind-data-returned-by-a-service"></a>Comment : lier des données retournées par un service
+## <a name="how-to-bind-data-returned-by-a-service"></a>Procédure : Lier des données retournées par un service
 
 Vous pouvez lier des données retournées par un service Windows Communication Foundation (WCF) à un contrôle comme vous pouvez lier n’importe quelle autre source de données à un contrôle. Lorsque vous ajoutez une référence à un service WCF, si le service contient des types composites qui retournent des données, ils sont automatiquement ajoutés à la **des Sources de données** fenêtre.
 
 ### <a name="to-bind-a-control-to-single-data-field-returned-by-a-wcf-service"></a>Pour lier un contrôle à un seul champ de données retournée par un service WCF
 
-1.  Dans le menu **Données** , cliquez sur **Afficher les sources de données**.
+1. Dans le menu **Données** , cliquez sur **Afficher les sources de données**.
 
    La fenêtre **Sources de données** apparaît.
 
-2.  Dans le **des Sources de données** fenêtre, développez le nœud de votre référence de service. Tous les types composites retournés par l’affichage du service.
+2. Dans le **des Sources de données** fenêtre, développez le nœud de votre référence de service. Tous les types composites retournés par l’affichage du service.
 
-3.  Développez le nœud d’un type. Les champs de données pour ce type s’affichent.
+3. Développez le nœud d’un type. Les champs de données pour ce type s’affichent.
 
-4.  Sélectionnez un champ et cliquez sur la flèche déroulante pour afficher une liste des contrôles qui sont disponibles pour le type de données.
+4. Sélectionnez un champ et cliquez sur la flèche déroulante pour afficher une liste des contrôles qui sont disponibles pour le type de données.
 
-5.  Cliquez sur le type de contrôle auquel vous souhaitez lier.
+5. Cliquez sur le type de contrôle auquel vous souhaitez lier.
 
-6.  Faites glisser le champ vers un formulaire. Le contrôle est ajouté au formulaire, avec un <xref:System.Windows.Forms.BindingSource> composant et un <xref:System.Windows.Forms.BindingNavigator> composant.
+6. Faites glisser le champ vers un formulaire. Le contrôle est ajouté au formulaire, avec un <xref:System.Windows.Forms.BindingSource> composant et un <xref:System.Windows.Forms.BindingNavigator> composant.
 
-7.  Répétez les étapes 4 à 6 pour les autres champs que vous souhaitez lier.
+7. Répétez les étapes 4 à 6 pour les autres champs que vous souhaitez lier.
 
 ### <a name="to-bind-a-control-to-composite-type-returned-by-a-wcf-service"></a>Pour lier un contrôle au type composite retourné par un service WCF
 
-1.  Sur le **données** menu, sélectionnez **afficher les Sources de données**. La fenêtre **Sources de données** apparaît.
+1. Sur le **données** menu, sélectionnez **afficher les Sources de données**. La fenêtre **Sources de données** apparaît.
 
-2.  Dans le **des Sources de données** fenêtre, développez le nœud de votre référence de service. Tous les types composites retournés par l’affichage du service.
+2. Dans le **des Sources de données** fenêtre, développez le nœud de votre référence de service. Tous les types composites retournés par l’affichage du service.
 
-3.  Sélectionnez un nœud pour un type, cliquez sur la flèche déroulante pour afficher une liste des options disponibles.
+3. Sélectionnez un nœud pour un type, cliquez sur la flèche déroulante pour afficher une liste des options disponibles.
 
-4.  Cliquez sur **DataGridView** pour afficher les données dans une grille ou **détails** pour afficher les données dans des contrôles individuels.
+4. Cliquez sur **DataGridView** pour afficher les données dans une grille ou **détails** pour afficher les données dans des contrôles individuels.
 
-5.  Faites glisser le nœud vers le formulaire. Les contrôles sont ajoutés au formulaire, avec un <xref:System.Windows.Forms.BindingSource> composant et un <xref:System.Windows.Forms.BindingNavigator> composant.
+5. Faites glisser le nœud vers le formulaire. Les contrôles sont ajoutés au formulaire, avec un <xref:System.Windows.Forms.BindingSource> composant et un <xref:System.Windows.Forms.BindingNavigator> composant.
 
-## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>Comment : configurer un service pour réutiliser les types existants
+## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>Procédure : Configurer un service pour réutiliser les types existants
 
 Lorsqu’une référence de service est ajoutée à un projet, des types définis dans le service sont générés dans le projet local. Dans de nombreux cas, cela crée des types en double lorsqu’un service utilise des types courants de .NET Framework ou lorsque les types sont définis dans une bibliothèque partagée.
 
@@ -234,33 +234,33 @@ Pour éviter ce problème, les types dans les assemblys référencés sont parta
 
 ### <a name="to-disable-type-sharing-in-a-single-assembly"></a>Pour désactiver le partage de type dans un assembly unique
 
-1.  Dans **l’Explorateur de solutions**, sélectionnez la référence de service.
+1. Dans **l’Explorateur de solutions**, sélectionnez la référence de service.
 
-2.  Sur le **projet** menu, cliquez sur **configurer la référence de Service**.
+2. Sur le **projet** menu, cliquez sur **configurer la référence de Service**.
 
-3.  Dans le **configurer les références de Service** boîte de dialogue, sélectionnez **réutiliser les types dans les assemblys référencés spécifiés**.
+3. Dans le **configurer les références de Service** boîte de dialogue, sélectionnez **réutiliser les types dans les assemblys référencés spécifiés**.
 
-4.  Sélectionnez la case à cocher pour chaque assembly dans lequel vous souhaitez activer le partage de type. Pour désactiver le partage de type d’un assembly, laissez la case à cocher.
+4. Sélectionnez la case à cocher pour chaque assembly dans lequel vous souhaitez activer le partage de type. Pour désactiver le partage de type d’un assembly, laissez la case à cocher.
 
 ### <a name="to-disable-type-sharing-in-all-assemblies"></a>Pour désactiver le partage de type dans tous les assemblys
 
-1.  Dans **l’Explorateur de solutions**, sélectionnez la référence de service.
+1. Dans **l’Explorateur de solutions**, sélectionnez la référence de service.
 
-2.  Sur le **projet** menu, cliquez sur **configurer la référence de Service**.
+2. Sur le **projet** menu, cliquez sur **configurer la référence de Service**.
 
-3.  Dans le **configurer les références de Service** boîte de dialogue, désactivez le **réutiliser les types dans les assemblys référencés** case à cocher.
+3. Dans le **configurer les références de Service** boîte de dialogue, désactivez le **réutiliser les types dans les assemblys référencés** case à cocher.
 
 ## <a name="related-topics"></a>Rubriques connexes
 
 | Titre | Description |
 | - | - |
-| [Procédure pas à pas : création d’un service WPF simple dans Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md) | Fournit une démonstration détaillée de création et utilisation des services WCF dans Visual Studio. |
+| [Procédure pas à pas : Création d’un service WCF simple dans Windows Forms](../data-tools/walkthrough-creating-a-simple-wcf-service-in-windows-forms.md) | Fournit une démonstration détaillée de création et utilisation des services WCF dans Visual Studio. |
 | [Procédure pas à pas : Création d’un service de données WCF avec WPF et Entity Framework](../data-tools/walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework.md) | Fournit une démonstration pas à pas montrant comment créer et utiliser des Services de données WCF dans Visual Studio. |
 | [Utilisation des outils de développement WCF](/dotnet/framework/wcf/using-the-wcf-development-tools) | Explique comment créer et tester les services WCF dans Visual Studio. |
 | | [Guide pratique pour ajouter, mettre à jour ou supprimer une référence de service de données WCF](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md) |
 | [Dépannage des références de service](../data-tools/troubleshooting-service-references.md) | Présente certaines erreurs courantes qui peuvent se produire avec les références de service et comment les éviter. |
 | [Débogage de services WCF](../debugger/debugging-wcf-services.md) | Décrit les problèmes de débogage courants et les techniques que vous pouvez rencontrer lors du débogage de services WCF. |
-| [Procédure pas à pas : Création d’une application de données multiniveau](../data-tools/walkthrough-creating-an-n-tier-data-application.md) | Fournit des instructions pas à pas pour créer un dataset typé et diviser le code du TableAdapter et du dataset en plusieurs projets. |
+| [Procédure pas à pas : Création d’une application de données multiniveaux](../data-tools/walkthrough-creating-an-n-tier-data-application.md) | Fournit des instructions pas à pas pour créer un dataset typé et diviser le code du TableAdapter et du dataset en plusieurs projets. |
 | [Configurer la boîte de dialogue Référence de service](../data-tools/configure-service-reference-dialog-box.md) | Décrit les éléments d’interface utilisateur de la **configurer la référence de Service** boîte de dialogue. |
 
 ## <a name="reference"></a>Référence

@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b4b9adf7d453ba1ecb0d3c0e3dc494c2e6b24fbc
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: ec546997d5c6ff75a3ccba1e60e9fe7a4b5b7c74
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58953402"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112596"
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Procédure : Exécuter une transformation XSLT à partir de l’éditeur XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 L'Éditeur XML permet d'associer une feuille de style XSLT à un document XML, d'effectuer la transformation et d'en afficher le résultat. Le résultat de la transformation XSLT est affiché dans une nouvelle fenêtre de document.  
   
  Le **sortie** propriété spécifie le nom de fichier pour la sortie. Si le **sortie** propriété est vide, un nom de fichier est généré dans votre répertoire temporaire. L'extension du fichier est basée sur l'élément `xsl:output` de votre feuille de style et peut être .xml, .txt ou .htm.  
@@ -28,17 +27,17 @@ L'Éditeur XML permet d'associer une feuille de style XSLT à un document XML, d
   
 ### <a name="to-execute-an-xslt-transformation-from-an-xml-document"></a>Pour exécuter une transformation XSLT à partir d'un document XML  
   
-1.  Ouvrez un document XML dans l'éditeur XML.  
+1. Ouvrez un document XML dans l'éditeur XML.  
   
-2.  Associez une feuille de style XSLT au document XML.  
+2. Associez une feuille de style XSLT au document XML.  
   
-    -   Ajoutez une instruction de traitement `xml-stylesheet` au document XML. Par exemple, ajoutez la ligne `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>` au prologue du document.  
+    - Ajoutez une instruction de traitement `xml-stylesheet` au document XML. Par exemple, ajoutez la ligne `<?xml-stylesheet type='text/xsl' href='filename.xsl'?>` au prologue du document.  
   
          - ou -  
   
-    -   Ajouter la feuille de style XSLT à l’aide du **propriétés** fenêtre. Dans le document **fenêtre Propriétés**, cliquez sur le **Parcourir** bouton pour le **feuille de style** champ, sélectionnez la feuille de style XSLT, puis cliquez sur **ouvrir**.  
+    - Ajouter la feuille de style XSLT à l’aide du **propriétés** fenêtre. Dans le document **fenêtre Propriétés**, cliquez sur le **Parcourir** bouton pour le **feuille de style** champ, sélectionnez la feuille de style XSLT, puis cliquez sur **ouvrir**.  
   
-3.  Cliquez sur le **ShowXSL sortie** bouton sur le **éditeur XML** barre d’outils.  
+3. Cliquez sur le **ShowXSL sortie** bouton sur le **éditeur XML** barre d’outils.  
   
     > [!NOTE]
     >  Si aucune feuille de style n'est associée au document XML, une boîte de dialogue vous invite à la spécifier.  
@@ -47,22 +46,22 @@ L'Éditeur XML permet d'associer une feuille de style XSLT à un document XML, d
   
 ### <a name="to-execute-an-xslt-transformation-from-an-xslt-style-sheet"></a>Pour exécuter une transformation XSLT à partir d'une feuille de style XSLT  
   
-1.  Ouvrez une feuille de style XSLT dans l'éditeur XML.  
+1. Ouvrez une feuille de style XSLT dans l'éditeur XML.  
   
-2.  Spécifiez un document XML dans le **entrée** champ du document **propriétés** fenêtre.  
+2. Spécifiez un document XML dans le **entrée** champ du document **propriétés** fenêtre.  
   
     > [!NOTE]
     >  Le document XML est le document d'entrée utilisé pour la transformation. Si un document n’est pas spécifié lors de la transformation XSLT est démarrée, le **ouvrir le fichier** boîte de dialogue s’affiche et vous pouvez spécifier un document à ce moment-là.  
   
-3.  Cliquez sur le **ShowXSLT sortie** bouton sur le **éditeur XML** barre d’outils.  
+3. Cliquez sur le **ShowXSLT sortie** bouton sur le **éditeur XML** barre d’outils.  
   
      Le résultat de la transformation XSLT est affiché dans une nouvelle fenêtre de document.  
   
 ### <a name="to-provide-a-different-output-file-name"></a>Pour spécifier un autre nom de fichier de sortie  
   
-1.  Spécifiez un nom de fichier dans le **sortie** champ du document **propriétés** fenêtre.  
+1. Spécifiez un nom de fichier dans le **sortie** champ du document **propriétés** fenêtre.  
   
-2.  Cliquez sur le **ShowXSLT sortie** bouton sur le **éditeur XML** barre d’outils.  
+2. Cliquez sur le **ShowXSLT sortie** bouton sur le **éditeur XML** barre d’outils.  
   
      Le résultat de la transformation XSLT s’affiche dans une nouvelle fenêtre de document et de l’éditeur utilisé dans la fenêtre de sortie dépend de l’extension de fichier de votre **sortie** propriété de document.  
   

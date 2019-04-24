@@ -15,12 +15,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 19191d8812d198b6a72ec8b6bdc8e75ef9d8f4ee
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3fb1a6255539ded989c5ad9638fc961d606a19f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949853"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097107"
 ---
 # <a name="ca1039-lists-are-strongly-typed"></a>CA1039 : Les listes sont fortement typées
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,17 +35,17 @@ ms.locfileid: "58949853"
 ## <a name="cause"></a>Cause
  Type de public ou protégé implémente <xref:System.Collections.IList?displayProperty=fullName> mais ne fournit pas de méthode fortement typée pour une ou plusieurs des opérations suivantes :
 
--   IList.Item
+- IList.Item
 
--   IList.Add
+- IList.Add
 
--   IList.Contains
+- IList.Contains
 
--   IList.IndexOf
+- IList.IndexOf
 
--   IList.Insert
+- IList.Insert
 
--   IList.Remove
+- IList.Remove
 
 ## <a name="rule-description"></a>Description de la règle
  Cette règle requiert <xref:System.Collections.IList> implémentations fournissent fortement des membres typés afin que les utilisateurs ne doivent pas effectuer un cast des arguments à la <xref:System.Object?displayProperty=fullName> tapez lorsqu’ils utilisent les fonctionnalités fournies par l’interface. Le <xref:System.Collections.IList> interface est implémentée par les collections d’objets qui sont accessibles par index. Cette règle suppose que le type qui implémente <xref:System.Collections.IList> procède ainsi pour gérer une collection d’instances d’un type plus fort que <xref:System.Object>.

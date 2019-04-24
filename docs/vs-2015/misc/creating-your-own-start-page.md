@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: jillfra
-ms.openlocfilehash: 001af82f976728b55d2f3b2c3f47d3f39a9e2e73
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 662ee0ba4659e09b02f120bac5b3eaa728add6d9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001510"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037893"
 ---
 # <a name="creating-your-own-start-page"></a>Création de votre propre page de démarrage
 Vous pouvez créer une page de démarrage personnalisée en utilisant le modèle de projet Page de démarrage ou en créant une page de démarrage vierge.  
@@ -28,22 +28,22 @@ Vous pouvez créer une page de démarrage personnalisée en utilisant le modèle
   
 #### <a name="to-create-a-custom-start-page-by-using-the-start-page-project-template"></a>Pour créer une page de démarrage personnalisée à l’aide du modèle de projet Page de démarrage  
   
-1.  Téléchargez et installez le [modèle de projet Page de démarrage](http://go.microsoft.com/fwlink/?LinkId=186204) à partir de la galerie Visual Studio.  
+1. Téléchargez et installez le [modèle de projet Page de démarrage](http://go.microsoft.com/fwlink/?LinkId=186204) à partir de la galerie Visual Studio.  
   
     > [!WARNING]
     >  À l’heure actuelle, le modèle de projet Page de démarrage Visual Studio 2010 n’a pas encore été mis à jour. Pour plus d’informations sur la mise à niveau de ce modèle, consultez [Comment : Mise à niveau d’une Page de démarrage personnalisée Visual Studio](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
   
-2.  Une fois que vous avez installé le modèle, utilisez-le pour créer une nouvelle page de démarrage.  
+2. Une fois que vous avez installé le modèle, utilisez-le pour créer une nouvelle page de démarrage.  
   
-3.  Dans le volet gauche de la boîte de dialogue Nouveau projet, sous **Modèles installés**, développez le nœud **Autres types de projets** , puis cliquez sur **Extensibilité**.  
+3. Dans le volet gauche de la boîte de dialogue Nouveau projet, sous **Modèles installés**, développez le nœud **Autres types de projets** , puis cliquez sur **Extensibilité**.  
   
-4.  Dans le volet central, cliquez sur **Page de démarrage personnalisée**, puis nommez votre projet et cliquez sur **OK**.  
+4. Dans le volet central, cliquez sur **Page de démarrage personnalisée**, puis nommez votre projet et cliquez sur **OK**.  
   
      Visual Studio crée un projet Page de démarrage qui est une copie intégrale de la page de démarrage de Visual Studio.  
   
-5.  Dans l’ **Explorateur de solutions**, ouvrez **StartPage.xaml**.  
+5. Dans l’ **Explorateur de solutions**, ouvrez **StartPage.xaml**.  
   
-6.  Modifiez StartPage.xaml.  
+6. Modifiez StartPage.xaml.  
   
      Vous pouvez afficher votre travail en appuyant sur F5 pour ouvrir une instance expérimentale de Visual Studio à l’aide de la page de démarrage personnalisée installée.  
   

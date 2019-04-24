@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ebe26e81bdee6be1b2e3a795f50c753d9bb66814
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: eb76233e968ad8212d15fbcc815c31ffd0f1838a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949257"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059173"
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118 : Vérifier l'utilisation de SuppressUnmanagedCodeSecurityAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ ms.locfileid: "58949257"
 
  La stratégie de sécurité par défaut n’accorde pas l’autorisation de code non managé à un assembly, sauf si elle s’exécute à partir de l’ordinateur local, soit un membre d’un des groupes suivants :
 
--   Mon groupe de codes de Zone ordinateur
+- Mon groupe de codes de Zone ordinateur
 
--   Groupe de codes de nom fort Microsoft
+- Groupe de codes de nom fort Microsoft
 
--   Groupe de codes de nom fort ECMA
+- Groupe de codes de nom fort ECMA
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Examinez soigneusement votre code pour vous assurer que cet attribut est absolument nécessaire. Si vous n’êtes pas familiarisé avec la sécurité du code managé, ou que vous ne comprenez pas les implications de sécurité de l’utilisation de cet attribut, supprimez-le de votre code. Si l’attribut est requis, vous devez vous assurer que les appelants ne peuvent pas utiliser votre code à des fins malveillantes. Si votre code n’a pas l’autorisation d’exécution de code non managé, cet attribut n’a aucun effet et doit être supprimé.

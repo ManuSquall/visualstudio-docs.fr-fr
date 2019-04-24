@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0a5344c2c816224151b6498bb5512bd0fec35356
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 6a72f78e89af41509711c94a00c8ab11b11fc549
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415212"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018218"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Outils de détection et de gestion des instances de Visual Studio
 
@@ -31,7 +31,7 @@ Il existe plusieurs outils qui vous permettent de détecter et gérer les instal
 
 Nous avons mis à disposition plusieurs outils qui vous aideront à détecter et à gérer les instances de Visual Studio installées sur les ordinateurs clients :
 
-* [VSWhere](https://github.com/microsoft/vswhere) : fichier exécutable intégré à Visual Studio ou disponible dans le cadre d’une distribution distincte qui vous permet de trouver l’emplacement de toutes les instances de Visual Studio sur un ordinateur particulier.
+* [vswhere](https://github.com/microsoft/vswhere) : exécutable intégré à Visual Studio ou disponible dans le cadre d’une distribution distincte qui permet de trouver l’emplacement de toutes les instances de Visual Studio sur un ordinateur.
 * [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell) : Scripts PowerShell qui utilisent l’API de configuration de l’installation pour identifier les instances installées de Visual Studio.
 * [VS-Setup-Samples](https://github.com/microsoft/vs-setup-samples) : Exemples C# et C++ qui montrent comment utiliser l’API de configuration de l’installation pour interroger une installation existante.
 
@@ -39,7 +39,7 @@ De plus, l’[API de configuration de l’installation](<xref:Microsoft.VisualSt
 
 ## <a name="using-vswhereexe"></a>Utilisation de vswhere.exe
 
-`vswhere.exe` est automatiquement inclus dans Visual Studio (à compter de Visual Studio 2017 version 15.2 et ultérieure), ou vous pouvez le télécharger à partir de [la page des versions de VSWhere](https://github.com/Microsoft/vswhere/releases). Utilisez `vswhere -?` pour obtenir des informations d’aide sur l’outil. Par exemple, cette commande affiche toutes les versions de Visual Studio, y compris les anciennes versions du produit et les préversions, et retourne les résultats au format JSON :
+`vswhere.exe` est automatiquement inclus dans Visual Studio (à compter de Visual Studio 2017 15.2 et versions ultérieures) ; vous pouvez sinon le télécharger sur la [page des versions de vswhere](https://github.com/Microsoft/vswhere/releases). Utilisez `vswhere -?` pour obtenir des informations d’aide sur l’outil. Par exemple, cette commande affiche toutes les versions de Visual Studio, y compris les anciennes versions du produit et les préversions, et retourne les résultats au format JSON :
 
 ```cmd
 C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json
@@ -69,7 +69,7 @@ Comme ces entrées ne sont pas stockées dans le Registre global, il existe des 
    ```
 
    > [!NOTE]
-   > `<config>` correspond à l’instance de Visual Studio que vous souhaitez parcourir.
+   > `<config>` correspond à l’instance de Visual Studio à parcourir.
 
 Vous êtes invité à fournir un nom de ruche, qui devient le nom de votre ruche isolée. Après cela, vous devez être en mesure de parcourir le Registre sous la ruche isolée que vous avez créée.
 
@@ -80,4 +80,4 @@ Vous êtes invité à fournir un nom de ruche, qui devient le nom de votre ruche
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Guide de l’administrateur Visual Studio](visual-studio-administrator-guide.md)
+* [Guide de l’administrateur de Visual Studio](visual-studio-administrator-guide.md)

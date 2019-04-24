@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bb038fdebdfefeb5f401860c17b5567028c3bb77
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c4241464fe8a43af882fbdbad0f898838e8fd897
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621342"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068364"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>Procédure : Ajouter des contrôles au mode Backstage
   Vous pouvez utiliser le Concepteur de ruban pour ajouter des contrôles au menu qui s’ouvre lorsque vous cliquez sur le **fichier** onglet. Lorsque vous exécutez l’application, les contrôles que vous ajoutez à la **fichier** onglet s’affiche un groupe nommé **Add-ins**.
@@ -36,31 +36,31 @@ ms.locfileid: "56621342"
 
 ### <a name="to-add-controls-to-backstage-view"></a>Pour ajouter des contrôles au mode Backstage
 
-1.  Ouvrez l’élément Ruban en mode Design.
+1. Ouvrez l’élément Ruban en mode Design.
 
      Pour plus d’informations sur la façon d’ajouter un **ruban (Concepteur visuel)** d’élément à votre projet, consultez [Comment : Commencer la personnalisation du ruban](../vsto/how-to-get-started-customizing-the-ribbon.md).
 
-2.  Dans le Concepteur de ruban, cliquez sur le **fichier** onglet.
+2. Dans le Concepteur de ruban, cliquez sur le **fichier** onglet.
 
      Un concepteur de menus s’affiche. Cette aire de conception ne contient pas tous les contrôles.
 
-3.  À partir de la **contrôles de ruban Office** onglet de la **boîte à outils**, faites glisser les contrôles suivants sur le Concepteur de menus :
+3. À partir de la **contrôles de ruban Office** onglet de la **boîte à outils**, faites glisser les contrôles suivants sur le Concepteur de menus :
 
-    -   Bouton
+    - Bouton
 
-    -   Case à cocher
+    - Case à cocher
 
-    -   Galerie
+    - Galerie
 
-    -   Menu
+    - Menu
 
-    -   Séparateur
+    - Séparateur
 
-    -   SplitButton
+    - SplitButton
 
-    -   ToggleButton
+    - ToggleButton
 
-4.  Faites glisser les contrôles pour les déplacer vers les nouveaux emplacements sur le menu.
+4. Faites glisser les contrôles pour les déplacer vers les nouveaux emplacements sur le menu.
 
 ## <a name="see-also"></a>Voir aussi
 - [Vue d’ensemble du ruban](../vsto/ribbon-overview.md)

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1522b2567c05a9c3a61091813a8b5e18315433f
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 4ec56ae4345405cfc704a97ec624f9c2e4d96a5b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54863446"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061204"
 ---
 # <a name="how-to-populate-documents-with-data-from-a-database"></a>Procédure : Remplir des documents avec des données à partir d’une base de données
 
@@ -36,11 +36,11 @@ L'exemple suivant montre comment ajouter des contrôles liés aux données dans 
 
 ### <a name="to-populate-a-document-with-data-from-a-database"></a>Remplir un document avec les données d'une base de données
 
-1.  Ouvrez un projet au niveau du document Word dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], avec le document ouvert dans le concepteur.
+1. Ouvrez un projet au niveau du document Word dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], avec le document ouvert dans le concepteur.
 
-2.  Ouvrez le **des Sources de données** fenêtre et créer une source de données à partir d’une base de données. Pour plus d’informations, consultez [ajouter de nouvelles connexions](../data-tools/add-new-connections.md).
+2. Ouvrez le **des Sources de données** fenêtre et créer une source de données à partir d’une base de données. Pour plus d’informations, consultez [ajouter de nouvelles connexions](../data-tools/add-new-connections.md).
 
-3.  Faites glisser le champ souhaité à partir de la **des Sources de données** fenêtre vers votre document.
+3. Faites glisser le champ souhaité à partir de la **des Sources de données** fenêtre vers votre document.
 
 Un contrôle de contenu est ajouté au document. Le type de contrôle de contenu dépend du type de données du champ sélectionné. Pour plus d’informations, consultez [contrôles de contenu](../vsto/content-controls.md).
 
@@ -50,19 +50,19 @@ Vous pouvez ajouter un autre contrôle en sélectionnant le champ de données da
 
 Outre le contrôle, les objets de données suivants sont automatiquement ajoutés à votre projet :
 
--   Un dataset typé qui encapsule les tables de données auxquelles vous êtes connecté dans la base de données. Pour plus d’informations, consultez [outils de Dataset dans Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
+- Un dataset typé qui encapsule les tables de données auxquelles vous êtes connecté dans la base de données. Pour plus d’informations, consultez [outils de Dataset dans Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
--   Un <xref:System.Windows.Forms.BindingSource> qui connecte le contrôle au dataset typé. Pour plus d’informations, consultez [vue d’ensemble du composant BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview).
+- Un <xref:System.Windows.Forms.BindingSource> qui connecte le contrôle au dataset typé. Pour plus d’informations, consultez [vue d’ensemble du composant BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview).
 
--   Un TableAdapter qui connecte le dataset typé à la base de données. Pour plus d’informations, consultez [créer et configurer des TableAdapters](../data-tools/create-and-configure-tableadapters.md).
+- Un TableAdapter qui connecte le dataset typé à la base de données. Pour plus d’informations, consultez [créer et configurer des TableAdapters](../data-tools/create-and-configure-tableadapters.md).
 
--   Un TableAdapterManager, qui est utilisé pour coordonner des adaptateurs de table dans le jeu de données pour activer les mises à jour hiérarchiques. Pour plus d’informations, consultez [mise à jour hiérarchique](../data-tools/hierarchical-update.md) et [TableAdapterManager référence](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).
+- Un TableAdapterManager, qui est utilisé pour coordonner des adaptateurs de table dans le jeu de données pour activer les mises à jour hiérarchiques. Pour plus d’informations, consultez [mise à jour hiérarchique](../data-tools/hierarchical-update.md) et [TableAdapterManager référence](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).
 
 Lorsque vous exécutez le projet, le contrôle affiche le premier enregistrement de la source de données. Vous pouvez utiliser le <xref:System.Windows.Forms.BindingSource> pour permettre aux utilisateurs de faire défiler les enregistrements.
 
 ### <a name="to-scroll-through-the-records"></a>Pour faire défiler les enregistrements
 
--   Utilisez les méthodes <xref:System.Windows.Forms.BindingSource> telles que <xref:System.Windows.Forms.BindingSource.MoveNext%2A> et <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.
+- Utilisez les méthodes <xref:System.Windows.Forms.BindingSource> telles que <xref:System.Windows.Forms.BindingSource.MoveNext%2A> et <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.
 
 Pour plus d’informations sur l’envoi des mises à jour pour le dataset typé et la base de données, consultez [Comment : Mettre à jour une source de données avec des données à partir d’un contrôle hôte](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 

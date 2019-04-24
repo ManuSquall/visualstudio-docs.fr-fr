@@ -10,12 +10,12 @@ ms.assetid: c782175c-cce4-4bd0-8374-4a897ceb1b3d
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8cd48e7338823c94ad9a16f1b087daac6abe8f6e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a208fabd3d205793763698cde0f6fe367c7bb8b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948958"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067831"
 ---
 # <a name="command-implementation"></a>Implémentation de commande
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -69,23 +69,23 @@ if ( null != mcs )
   
 - Si votre implémentation de deux méthodes reconnaît le GUID et la commande, la méthode doit définir le champ Indicateurs de commande de chaque commande (dans le `prgCmds` paramètre) en utilisant les indicateurs suivants :  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Si la commande est prise en charge.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Si la commande est prise en charge.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Si la commande ne doit pas être visible.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Si la commande ne doit pas être visible.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Si la commande est activée et qu’il semble avoir été archivé.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Si la commande est activée et qu’il semble avoir été archivé.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Si la commande est activée.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Si la commande est activée.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Si la commande doit être masquée s’il apparaît dans un menu contextuel.  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Si la commande doit être masquée s’il apparaît dans un menu contextuel.  
   
-  -   <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Si la commande est un contrôleur de menu et n’est pas activée, mais sa liste déroulante n’est pas vide et qu’il est toujours disponible. (Cet indicateur est rarement utilisé.)  
+  - <xref:Microsoft.VisualStudio.OLE.Interop.OLECMDF> Si la commande est un contrôleur de menu et n’est pas activée, mais sa liste déroulante n’est pas vide et qu’il est toujours disponible. (Cet indicateur est rarement utilisé.)  
   
 - Si la commande a été définie dans le fichier .vsct avec le `TextChanges` indicateur, définissez les paramètres suivants :  
   
-  -   Définir le `rgwz` élément de la `pCmdText` paramètre vers le nouveau texte de la commande.  
+  - Définir le `rgwz` élément de la `pCmdText` paramètre vers le nouveau texte de la commande.  
   
-  -   Définir le `cwActual` élément de la `pCmdText` paramètre à la taille de la chaîne de commande.  
+  - Définir le `cwActual` élément de la `pCmdText` paramètre à la taille de la chaîne de commande.  
   
   Également vous assurer que le contexte actuel n’est pas une fonction d’automatisation, sauf si votre commande est conçu spécifiquement pour gérer les fonctions d’automatisation.  
   

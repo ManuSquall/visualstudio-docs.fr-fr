@@ -23,22 +23,22 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ed3e54852ef9e6718f2f027c8aca608f11200b1d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f6351dd9db7e6f8f29bdd15f376f84511c64bfe7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950953"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116613"
 ---
 # <a name="context-operator-c"></a>Opérateur de contexte (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez utiliser l’opérateur de contexte en C++ pour qualifier l’emplacement d’un point d’arrêt, un nom de variable ou une expression. L’opérateur de contexte est utile pour spécifier un nom issu d’une portée externe qui serait sinon masqué par un nom local.  
   
-##  <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> Syntaxe  
+## <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> Syntaxe  
  Il existe deux façons de spécifier le contexte :  
   
-1.  {,,[*module*] } *expression*  
+1. {,,[*module*] } *expression*  
   
      Les accolades doivent contenir deux virgules et le nom ou le chemin complet du module (fichier exécutable ou DLL).  
   
@@ -48,7 +48,7 @@ Vous pouvez utiliser l’opérateur de contexte en C++ pour qualifier l’emplac
     {,,EXAMPLE.dll}SomeFunction  
     ```  
   
-2.  *module*!*expression*  
+2. *module*!*expression*  
   
     ```cpp  
     EXAMPLE.dll!SomeFunction  
@@ -66,12 +66,12 @@ Vous pouvez utiliser l’opérateur de contexte en C++ pour qualifier l’emplac
   
   Lorsque l’évaluateur d’expression rencontre un symbole dans une expression, il recherche le symbole en procédant dans l’ordre suivant :  
   
-1.  Portée lexicale, vers l’extérieur, du bloc actuel (série d’instructions entre accolades) au bloc englobant. Le bloc actuel est le code contenant l’emplacement actuel (adresse du pointeur d’instruction).  
+1. Portée lexicale, vers l’extérieur, du bloc actuel (série d’instructions entre accolades) au bloc englobant. Le bloc actuel est le code contenant l’emplacement actuel (adresse du pointeur d’instruction).  
   
-2.  Portée de la fonction. La fonction actuelle.  
+2. Portée de la fonction. La fonction actuelle.  
   
-3.  Portée de la classe, si l’emplacement actuel se trouve à l’intérieur d’une fonction membre C++. La portée de la classe comprend toutes les classes de base. L’évaluateur d’expression utilise les règles de dominance classiques.  
+3. Portée de la classe, si l’emplacement actuel se trouve à l’intérieur d’une fonction membre C++. La portée de la classe comprend toutes les classes de base. L’évaluateur d’expression utilise les règles de dominance classiques.  
   
-4.  Symboles globaux dans le module actuel.  
+4. Symboles globaux dans le module actuel.  
   
-5.  Symboles publics dans le programme actuel.
+5. Symboles publics dans le programme actuel.

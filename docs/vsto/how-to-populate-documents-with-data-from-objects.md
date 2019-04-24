@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 571c010aa8b9cda1002a152ed2d528e22b1aa57e
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 7cb221715ef1c2a50bc60e1725db3b1d8721f165
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865786"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083024"
 ---
 # <a name="how-to-populate-documents-with-data-from-objects"></a>Procédure : Remplir des documents avec des données à partir d’objets
 
@@ -28,11 +28,11 @@ Vous pouvez accéder aux projets au niveau du document pour Microsoft Office en 
 
 Vous devez effectuer trois étapes de base pour remplir le document à l’aide des données d’un objet :
 
--   Ajoutez un contrôle au document que vous pouvez lier aux données.
+- Ajoutez un contrôle au document que vous pouvez lier aux données.
 
--   Ajoutez un objet de données au document.
+- Ajoutez un objet de données au document.
 
--   Connectez l’objet de données à BindingSource.
+- Connectez l’objet de données à BindingSource.
 
 ## <a name="to-add-a-data-object"></a>Pour ajouter un objet de données
 
@@ -48,23 +48,23 @@ Dans les projets de complément VSTO, vous créez les contrôles et les liez au 
 
 Pour vous connecter à l’objet de données à BindingSource :
 
-1.  Faites glisser le champ de données que vous souhaitez de la fenêtre **Sources de données** vers votre document. Cela entraîne la création automatique d’un contrôle.
+1. Faites glisser le champ de données que vous souhaitez de la fenêtre **Sources de données** vers votre document. Cela entraîne la création automatique d’un contrôle.
 
-2.  Dans votre code, créez une instance du type de l’objet que vous avez choisi pour la source de données.
+2. Dans votre code, créez une instance du type de l’objet que vous avez choisi pour la source de données.
 
-3.  Assignez l’instance à la propriété <xref:System.Windows.Forms.BindingSource.DataSource%2A> de <xref:System.Windows.Forms.BindingSource>.
+3. Assignez l’instance à la propriété <xref:System.Windows.Forms.BindingSource.DataSource%2A> de <xref:System.Windows.Forms.BindingSource>.
 
 ### <a name="application-level-projects"></a>Projets de niveau application
 
 Pour vous connecter à l’objet de données à BindingSource :
 
-1.  Dans votre code, créez une instance du type de l’objet associé à la source de données.
+1. Dans votre code, créez une instance du type de l’objet associé à la source de données.
 
-2.  Créez une instance de <xref:System.Windows.Forms.BindingSource>.
+2. Créez une instance de <xref:System.Windows.Forms.BindingSource>.
 
-3.  Assignez l’instance de la source de données à la propriété <xref:System.Windows.Forms.BindingSource.DataSource%2A> de <xref:System.Windows.Forms.BindingSource>.
+3. Assignez l’instance de la source de données à la propriété <xref:System.Windows.Forms.BindingSource.DataSource%2A> de <xref:System.Windows.Forms.BindingSource>.
 
-4.  Ajoutez la source de données en tant que liaison de données au contrôle.
+4. Ajoutez la source de données en tant que liaison de données au contrôle.
 
 ## <a name="see-also"></a>Voir aussi
 

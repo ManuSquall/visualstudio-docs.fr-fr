@@ -26,17 +26,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 372985c0878abbcfd42eab795cf8e2372bf65dd7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 079264d2687d382aa79e526d829687f2a60f6882
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948602"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106629"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>Accéder directement à la base de données avec un TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Outre le `InsertCommand`, `UpdateCommand`, et `DeleteCommand`, les TableAdapters sont créés avec des méthodes qui peuvent être exécutées directement sur la base de données. Ces méthodes (`TableAdapter.Insert`, `TableAdapter.Update`, et `TableAdapter.Delete`) peut être appelé pour manipuler des données directement dans la base de données.  
   
  Si vous ne souhaitez pas créer ces méthodes directes, affectez à la `GenerateDbDirectMethods` propriété `false` dans le **propriétés** fenêtre. Si toutes les requêtes sont ajoutés à un TableAdapter en plus de la requête principale du TableAdapter, ils sont des requêtes autonomes qui ne génèrent pas ces méthodes DbDirect.  
@@ -46,7 +45,7 @@ Outre le `InsertCommand`, `UpdateCommand`, et `DeleteCommand`, les TableAdapters
   
 #### <a name="to-insert-new-records-directly-into-a-database"></a>Pour insérer de nouveaux enregistrements directement dans une base de données  
   
--   Appelez le TableAdapter `Insert` méthode, en passant les valeurs pour chaque colonne en tant que paramètres. La procédure suivante utilise le `Region` de table dans le databaseas Northwind un exemple.  
+- Appelez le TableAdapter `Insert` méthode, en passant les valeurs pour chaque colonne en tant que paramètres. La procédure suivante utilise le `Region` de table dans le databaseas Northwind un exemple.  
   
     > [!NOTE]
     >  Si vous n’avez pas d’instance disponible, instanciez le TableAdapter que vous souhaitez utiliser.  
@@ -56,7 +55,7 @@ Outre le `InsertCommand`, `UpdateCommand`, et `DeleteCommand`, les TableAdapters
   
 #### <a name="to-update-records-directly-in-a-database"></a>Pour mettre à jour des enregistrements directement dans une base de données  
   
--   Appelez le TableAdapter `Update` méthode, en passant les valeurs nouvelles et originale pour chaque colonne en tant que paramètres.  
+- Appelez le TableAdapter `Update` méthode, en passant les valeurs nouvelles et originale pour chaque colonne en tant que paramètres.  
   
     > [!NOTE]
     >  Si vous n’avez pas d’instance disponible, instanciez le TableAdapter que vous souhaitez utiliser.  
@@ -66,7 +65,7 @@ Outre le `InsertCommand`, `UpdateCommand`, et `DeleteCommand`, les TableAdapters
   
 #### <a name="to-delete-records-directly-from-a-database"></a>Pour supprimer des enregistrements directement à partir d’une base de données  
   
--   Appelez le TableAdapter `Delete` méthode, en passant les valeurs pour chaque colonne en tant que paramètres de la `Delete` (méthode). La procédure suivante utilise le `Region` de table dans le databaseas Northwind un exemple.  
+- Appelez le TableAdapter `Delete` méthode, en passant les valeurs pour chaque colonne en tant que paramètres de la `Delete` (méthode). La procédure suivante utilise le `Region` de table dans le databaseas Northwind un exemple.  
   
     > [!NOTE]
     >  Si vous n’avez pas d’instance disponible, instanciez le TableAdapter que vous souhaitez utiliser.  

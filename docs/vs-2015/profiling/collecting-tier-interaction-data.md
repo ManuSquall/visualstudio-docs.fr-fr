@@ -16,12 +16,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: abe38162f20fb73de04301e97974dc348d704b6f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a20266c870316be9b6be67e661d13eb4e6fdbaee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54770884"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047223"
 ---
 # <a name="collecting-tier-interaction-data"></a>Collecte de données d’interaction de couche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,11 +42,11 @@ Le profilage d’interaction de couche fournit des informations supplémentaires
   
 ### <a name="to-add-tier-interaction-data-to-a-profiling-run-by-using-the-performance-session-property-pages"></a>Pour ajouter des données d’interaction de couche à une exécution de profilage à l’aide des pages de propriétés de session de performance  
   
-1.  Dans l’Explorateur de performances, choisissez **Propriétés** dans le menu contextuel.  
+1. Dans l’Explorateur de performances, choisissez **Propriétés** dans le menu contextuel.  
   
-2.  Dans la page **Interactions de couche**, cochez la case **Activer le profilage d’interaction de couche**.  
+2. Dans la page **Interactions de couche**, cochez la case **Activer le profilage d’interaction de couche**.  
   
-3.  Dans l’Explorateur de performances, sélectionnez le nœud **Cibles**, puis spécifiez le projet, le fichier exécutable ou le site web que vous voulez profiler.  
+3. Dans l’Explorateur de performances, sélectionnez le nœud **Cibles**, puis spécifiez le projet, le fichier exécutable ou le site web que vous voulez profiler.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interactions de couche, vue](../profiling/tier-interactions-view.md)

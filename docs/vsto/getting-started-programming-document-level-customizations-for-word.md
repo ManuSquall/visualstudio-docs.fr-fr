@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 41fb80c229d016658b030d6ebf6981051c5de096
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2b2872ca6496444cbb3878dc39800a8661400a76
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631495"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056326"
 ---
 # <a name="get-started-programming-document-level-customizations-for-word"></a>Prise en main de programmation de personnalisations au niveau du document pour Word
   Si vous êtes novice dans la création de personnalisations au niveau du document pour Microsoft Office Word à l’aide de Visual Studio, voici ce que vous devez savoir.
@@ -44,11 +44,11 @@ ms.locfileid: "56631495"
 
  Pour plus d’informations, consultez les rubriques suivantes :
 
--   [Programmer des personnalisations au niveau du document](../vsto/programming-document-level-customizations.md)
+- [Programmer des personnalisations au niveau du document](../vsto/programming-document-level-customizations.md)
 
--   [Automatiser Word à l’aide d’objets étendus](../vsto/automating-word-by-using-extended-objects.md)
+- [Automatiser Word à l’aide d’objets étendus](../vsto/automating-word-by-using-extended-objects.md)
 
--   [Éléments hôtes et la vue d’ensemble des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)
+- [Éléments hôtes et la vue d’ensemble des contrôles hôtes](../vsto/host-items-and-host-controls-overview.md)
 
 ## <a name="customize-the-user-interface-of-word"></a>Personnaliser l’interface utilisateur de Word
  La plupart des solutions Microsoft Office Modifier l’interface utilisateur (IU) de l’application Office pour fournir aux utilisateurs d’interagir avec la solution. Il existe plusieurs façons dans laquelle vous pouvez modifier l’interface utilisateur de Word à l’aide d’une personnalisation au niveau du document. Par exemple, vous pouvez ajouter des contrôles au ruban, et vous pouvez afficher un volet actions. Pour plus d’informations, consultez [personnalisation de l’interface utilisateur Office](../vsto/office-ui-customization.md).

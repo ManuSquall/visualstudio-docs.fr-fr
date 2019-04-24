@@ -16,17 +16,17 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dd53eef6cb5dc7b7144375f5d0f6b47e11913ed3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e439521d9a81bc418eb403bb87ee9576605b8e66
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778340"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055496"
 ---
-# <a name="how-to-find-topics-in-the-table-of-contents"></a>Comment : rechercher des rubriques dans la table des matières
+# <a name="how-to-find-topics-in-the-table-of-contents"></a>Procédure : Rechercher des rubriques dans la table des matières
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Sous l’onglet **Sommaire**, vous pouvez utiliser la table des matières pour rechercher des informations. La table des matières est une liste pouvant être développée qui contient toutes les rubriques des livres installés. Pour des informations d’accessibilité relatives à la navigation dans la table des matières, consultez [Touches de raccourci (Help Viewer)](../ide/shortcut-keys-help-viewer.md).  
+Sous l’onglet **Sommaire**, vous pouvez utiliser la table des matières pour rechercher des informations. La table des matières est une liste extensible qui contient toutes les rubriques des livres installés. Pour des informations d’accessibilité relatives à la navigation dans la table des matières, consultez [Touches de raccourci (Help Viewer)](../ide/shortcut-keys-help-viewer.md).  
   
 > [!IMPORTANT]
 >  Le nombre de rubriques disponibles dans la table des matières dépend du filtre que vous avez sélectionné.  
@@ -36,9 +36,9 @@ Sous l’onglet **Sommaire**, vous pouvez utiliser la table des matières pour r
   
 #### <a name="to-filter-the-toc"></a>Pour filtrer la table des matières  
   
-1.  Choisissez l’onglet **Sommaire**.  
+1. Choisissez l’onglet **Sommaire**.  
   
-2.  Dans la zone de texte **Filtrer le contenu**, entrez un terme.  
+2. Dans la zone de texte **Filtrer le contenu**, entrez un terme.  
   
 > [!NOTE]
 >  Si le filtre met trop longtemps à s’exécuter, vous pouvez afficher les résultats plus rapidement à l’aide de l’opérateur de recherche avancé `title:`.  
@@ -48,9 +48,9 @@ Sous l’onglet **Sommaire**, vous pouvez utiliser la table des matières pour r
   
 #### <a name="to-synchronize-the-toc-with-the-topic-window"></a>Pour synchroniser la table des matières avec la fenêtre de rubrique  
   
-1.  Affichez une rubrique.  
+1. Affichez une rubrique.  
   
-2.  Cliquez sur le bouton **Afficher une rubrique dans le sommaire** dans la barre d’outils ou appuyez sur Ctrl + S.  
+2. Cliquez sur le bouton **Afficher une rubrique dans le sommaire** dans la barre d’outils ou appuyez sur Ctrl + S.  
   
      L’onglet **Sommaire** s’ouvre et affiche l’emplacement de la rubrique dans la table des matières.  
   

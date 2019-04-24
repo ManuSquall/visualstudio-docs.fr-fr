@@ -27,12 +27,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c8498397e45aad889d575c4ec337d107755b2dba
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 207beb085046748a4eaabdff025cd461c5ddba26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788263"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073357"
 ---
 # <a name="using-the-toolbox"></a>Utilisation de la boîte à outils
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,23 +48,23 @@ Vous pouvez utiliser la boîte à outils pour ajouter des contrôles et d'autres
   
  Vous pouvez réorganiser les éléments d'un onglet de la boîte à outils ou ajouter des onglets et des éléments personnalisés à l'aide des commandes suivantes du menu contextuel :  
   
--   **Renommer un élément** : renomme l’élément sélectionné.  
+- **Renommer un élément** : renomme l’élément sélectionné.  
   
--   **Afficher tout** : affiche tous les contrôles possibles (pas seulement ceux qui s’appliquent au concepteur actuel).  
+- **Afficher tout** : affiche tous les contrôles possibles (pas seulement ceux qui s’appliquent au concepteur actuel).  
   
--   **Vue Liste** : affiche les contrôles sous forme de liste verticale. Si cette option est décochée, les contrôles apparaissent horizontalement.  
+- **Vue Liste** : affiche les contrôles sous forme de liste verticale. Si cette option est décochée, les contrôles apparaissent horizontalement.  
   
--   **Choisir les éléments** : ouvre la boîte de dialogue **Choisir des éléments de boîte à outils**, dans laquelle vous pouvez spécifier les éléments qui apparaissent dans la **boîte à outils**. Vous pouvez afficher ou masquer un élément en cochant ou en décochant sa case.  
+- **Choisir les éléments** : ouvre la boîte de dialogue **Choisir des éléments de boîte à outils**, dans laquelle vous pouvez spécifier les éléments qui apparaissent dans la **boîte à outils**. Vous pouvez afficher ou masquer un élément en cochant ou en décochant sa case.  
   
--   **Trier les éléments par ordre alphabétique** : trie les éléments par leur nom.  
+- **Trier les éléments par ordre alphabétique** : trie les éléments par leur nom.  
   
--   **Réinitialiser la barre d’outils** : restaure les paramètres et éléments par défaut de la boîte à outils.  
+- **Réinitialiser la barre d’outils** : restaure les paramètres et éléments par défaut de la boîte à outils.  
   
--   **Ajouter un onglet** : ajoute un nouvel onglet à la boîte à outils.  
+- **Ajouter un onglet** : ajoute un nouvel onglet à la boîte à outils.  
   
--   **Monter** : déplace l’élément sélectionné vers le haut.  
+- **Monter** : déplace l’élément sélectionné vers le haut.  
   
--   **Descendre** : déplace l’élément sélectionné vers le bas.  
+- **Descendre** : déplace l’élément sélectionné vers le bas.  
   
 ## <a name="creating-and-distributing-custom-toolbox-controls"></a>Création et distribution de contrôles de boîte à outils personnalisés  
  Vous pouvez créer un contrôle de boîte à outils personnalisé en Visual Basic ou Visual C#, et vous pouvez démarrer avec un modèle de projet basé sur [Windows Presentation Foundation](../extensibility/creating-a-wpf-toolbox-control.md) ou [Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md). Vous pouvez ensuite distribuer votre contrôle à vos collègues ou le publier sur le web à l’aide du [programme d’installation de contrôles de boîte à outils](http://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx).

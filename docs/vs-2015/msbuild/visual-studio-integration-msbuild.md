@@ -19,17 +19,16 @@ caps.latest.revision: 26
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fedbee06d37ff62b4ccefc812f0c77064ba67025
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
-ms.translationtype: MTE95
+ms.openlocfilehash: 048307c6c8117a77a57da6dc20f2615ae82feb0c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194507"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117497"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Intégration de Visual Studio (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Visual Studio héberge[!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] pour charger et générer des projets managés. Dans la mesure où [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] est responsable du projet, la plupart des projets au format [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] peut être utilisé sans problème dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], même si le projet a été créé par un outil différent et possède un processus de génération personnalisé.  
   
  Cette rubrique décrit des aspects spécifiques de l'hébergement de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dans [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] qui doivent être pris en compte lors de la personnalisation des projets et des fichiers .targets que vous souhaitez charger et générer dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Vous serez ainsi assuré que les fonctionnalités [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], telles qu'IntelliSense et le débogage fonctionnent pour votre projet personnalisé.  
@@ -70,20 +69,20 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="in-process-compilers"></a>Compilateurs in-process  
  Lorsque c'est possible, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tente d'utiliser la version intra-processus du compilateur [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] pour améliorer les performances. (Non applicable à [!INCLUDE[csprcs](../includes/csprcs-md.md)].) Pour un fonctionnement correct, les conditions suivantes doivent être respectées :  
   
--   Une cible du projet doit contenir une tâche nommée `Vbc` pour les projets [!INCLUDE[vbprvb](../includes/vbprvb-md.md)].  
+- Une cible du projet doit contenir une tâche nommée `Vbc` pour les projets [!INCLUDE[vbprvb](../includes/vbprvb-md.md)].  
   
--   Le paramètre `UseHostCompilerIfAvailable` de la tâche doit avoir la valeur true.  
+- Le paramètre `UseHostCompilerIfAvailable` de la tâche doit avoir la valeur true.  
   
 ## <a name="design-time-intellisense"></a>IntelliSense au moment du design  
  Pour bénéficier de la prise en charge d'IntelliSense dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] avant la génération d'un assembly de sortie, les conditions suivantes doivent être respectées :  
   
--   Il doit exister une cible nommée `Compile`.  
+- Il doit exister une cible nommée `Compile`.  
   
--   La cible `Compile` ou l'une de ses dépendances doit appeler la tâche du compilateur du projet, par exemple `Csc` ou `Vbc`.  
+- La cible `Compile` ou l'une de ses dépendances doit appeler la tâche du compilateur du projet, par exemple `Csc` ou `Vbc`.  
   
--   La cible `Compile` ou l'une de ses dépendances doit faire en sorte que le compilateur reçoive tous les paramètres nécessaires à IntelliSense, en particulier toutes les références.  
+- La cible `Compile` ou l'une de ses dépendances doit faire en sorte que le compilateur reçoive tous les paramètres nécessaires à IntelliSense, en particulier toutes les références.  
   
--   Les conditions répertoriées dans la section « Compilateurs in-process » doivent être respectées.  
+- Les conditions répertoriées dans la section « Compilateurs in-process » doivent être respectées.  
   
 ## <a name="building-solutions"></a>Création de solutions  
  Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], l'ordre des générations de projets et du fichier solution est contrôlé par [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] lui-même. Lors de la génération d'une solution avec msbuild.exe à partir de la ligne de commande, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] analyse le fichier solution et classe les générations de projets. Dans les deux cas, les projets sont générés individuellement en fonction de l'ordre des dépendances et les références entre projets ne sont pas parcourues. En revanche, lors de la génération de projets individuels avec msbuild.exe, les références entre projets sont parcourues.  
@@ -128,22 +127,22 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="design-time-target-execution"></a>Exécution des cibles au moment du design  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tente d'exécuter des cibles portant certains noms lorsqu'il charge un projet. Il s'agit notamment des cibles `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths` et `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] exécute ces cibles afin que le compilateur puisse être initialisé pour fournir IntelliSense, que le débogueur puisse être initialisé et que les références affichées dans l'Explorateur de solutions puissent être résolues. En l'absence de ces cibles, le projet se charge et effectue une génération correcte, mais l'expérience au moment du design dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ne sera pas complètement fonctionnelle.  
   
-##  <a name="BKMK_EditingProjects"></a> Editing Project Files in Visual Studio  
+## <a name="BKMK_EditingProjects"></a> Editing Project Files in Visual Studio  
  Pour modifier directement un projet [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], vous pouvez ouvrir le fichier projet dans l'Éditeur XML de Visual Studio.  
   
 #### <a name="to-unload-and-edit-a-project-file-in-visual-studio"></a>Pour décharger et modifier un fichier projet dans Visual Studio  
   
-1.  Dans l' **Explorateur de solutions**, ouvrez le menu contextuel du projet et choisissez **Décharger le projet**.  
+1. Dans l' **Explorateur de solutions**, ouvrez le menu contextuel du projet et choisissez **Décharger le projet**.  
   
      Le projet est alors marqué **(non disponible)**.  
   
-2.  Dans l’**Explorateur de solutions**, ouvrez le menu contextuel du projet indisponible et choisissez **Modifier \<Fichier projet>**.  
+2. Dans l’**Explorateur de solutions**, ouvrez le menu contextuel du projet indisponible et choisissez **Modifier \<Fichier projet>**.  
   
      Le fichier projet s'ouvre dans l'Éditeur XML de Visual Studio.  
   
-3.  Modifiez, enregistrez, puis fermez le fichier projet.  
+3. Modifiez, enregistrez, puis fermez le fichier projet.  
   
-4.  Dans l' **Explorateur de solutions**, ouvrez le menu contextuel du projet indisponible et choisissez **Recharger le projet**.  
+4. Dans l' **Explorateur de solutions**, ouvrez le menu contextuel du projet indisponible et choisissez **Recharger le projet**.  
   
 ## <a name="intellisense-and-validation"></a>IntelliSense et validation  
  Lors de l'utilisation de l'Éditeur XML pour modifier des fichiers projet, IntelliSense et la validation sont pilotés par les fichiers de schéma [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Ceux-ci sont installés dans le cache des schémas, qui se trouve dans *\<Répertoire d’installation de Visual Studio>* \Xml\Schemas\1033\MSBuild.  
@@ -159,21 +158,21 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="reference-resolution"></a>Résolution de référence  
  La résolution des références est le processus consistant à utiliser des éléments de référence stockés dans un fichier projet pour localiser les assemblys actifs. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] doit déclencher la résolution de références pour afficher les propriétés détaillées de chaque référence dans la fenêtre **Propriétés**. La liste suivante décrit les trois types de références et leur mode de résolution.  
   
--   Références d'assembly :  
+- Références d'assembly :  
   
      Le système de projet appelle une cible avec le nom connu `ResolveAssemblyReferences`. Cette cible doit produire des éléments avec le nom de type d'élément `ReferencePath`. Chacun de ces éléments doit avoir une spécification d'élément (la valeur de l'attribut `Include` d'un élément) qui contient le chemin d'accès complet à la référence. Les éléments doivent avoir toutes les métadonnées des éléments d'entrée passés en plus des nouvelles métadonnées suivantes :  
   
-    -   `CopyLocal`, indiquant si l'assembly doit être copié dans le dossier de sortie ; la valeur peut être true ou false.  
+    - `CopyLocal`, indiquant si l'assembly doit être copié dans le dossier de sortie ; la valeur peut être true ou false.  
   
-    -   `OriginalItemSpec`, contenant la spécification d'élément d'origine de la référence.  
+    - `OriginalItemSpec`, contenant la spécification d'élément d'origine de la référence.  
   
-    -   `ResolvedFrom`, avec la valeur "{TargetFrameworkDirectory}" s'il a été résolu à partir du répertoire [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
+    - `ResolvedFrom`, avec la valeur "{TargetFrameworkDirectory}" s'il a été résolu à partir du répertoire [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
   
--   Références COM :  
+- Références COM :  
   
      Le système de projet appelle une cible avec le nom connu `ResolveCOMReferences`. Cette cible doit produire des éléments avec le nom de type d'élément `ComReferenceWrappers`. Chacun de ces éléments doit posséder une spécification d'élément qui contient le chemin d'accès complet à l'assembly d'interopérabilité pour la référence COM. Les éléments doivent avoir toutes les métadonnées des éléments d'entrée passés, en plus de nouvelles métadonnées portant le nom `CopyLocal`, qui indiquent si l'assembly doit être copié dans le dossier de sortie ; la valeur peut être true ou false.  
   
--   Références natives  
+- Références natives  
   
      Le système de projet appelle une cible avec le nom connu `ResolveNativeReferences`. Cette cible doit produire des éléments avec le nom de type d'élément `NativeReferenceFile`. Les éléments doivent avoir toutes les métadonnées des éléments d'entrée passés, en plus d'une nouvelle métadonnée nommée `OriginalItemSpec`, contenant la spécification d'élément d'origine de la référence.  
   
@@ -183,7 +182,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
  Pour des builds classiques dans Visual Studio, la vérification des mises à jour rapide ne s'applique pas, et le projet est généré comme si vous appeliez la build dans une invite de commandes.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour étendre le processus de génération Visual Studio](../msbuild/how-to-extend-the-visual-studio-build-process.md)   
+ [Guide pratique pour Étendre le processus de génération Visual Studio](../msbuild/how-to-extend-the-visual-studio-build-process.md)   
  [Démarrage d’une build à partir de l’IDE](../msbuild/starting-a-build-from-within-the-ide.md)   
  [Inscription des extensions du .NET Framework](../msbuild/registering-extensions-of-the-dotnet-framework.md)   
  [Concepts MSBuild](../msbuild/msbuild-concepts.md)   

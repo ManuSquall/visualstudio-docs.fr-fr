@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 89e1b8460ccfa99a1adef93ed6bcd78990f75d67
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 316243f53871c9411af08d6721f2ca590fadea99
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792959"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078614"
 ---
 # <a name="application-timeline"></a>Chronologie de l'application
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,20 +27,20 @@ Utilisez le profileur **Chronologie de l'application** pour rechercher et corrig
   
  Vous pouvez utiliser cet outil sur les plateformes suivantes :  
   
-1.  Applications universelles Windows (sur Windows 10)  
+1. Applications universelles Windows (sur Windows 10)  
   
-2.  Windows Store 8.1  
+2. Windows Store 8.1  
   
-3.  Windows Phone 8.1 (Plateforme XAML commune)  
+3. Windows Phone 8.1 (Plateforme XAML commune)  
   
-4.  Windows Presentation Foundation (.Net 4.0 et ultérieur)  
+4. Windows Presentation Foundation (.Net 4.0 et ultérieur)  
   
-5.  Windows 7  
+5. Windows 7  
   
 > [!NOTE]
 >  Vous pouvez collecter et analyser les données d'utilisation de l'UC et les données de consommation d'énergie en même temps que les données de **Chronologie de l'application** . Consultez [exécuter les outils de profilage sans débogage](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
   
-##  <a name="BKMK_Collect_Timeline_data_for_your_app"></a> Collecter les données de chronologie de l’application  
+## <a name="BKMK_Collect_Timeline_data_for_your_app"></a> Collecter les données de chronologie de l’application  
  Vous pouvez profiler la réactivité de votre application sur votre ordinateur local, sur votre appareil connecté, sur le simulateur ou les émulateurs Visual Studio, ou sur un appareil distant. Consultez [exécuter les outils de profilage sans débogage](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01).  
   
 > [!TIP]
@@ -48,51 +48,51 @@ Utilisez le profileur **Chronologie de l'application** pour rechercher et corrig
   
  Les étapes de base sont les suivantes :  
   
-1.  Ouvrez votre application XAML.  
+1. Ouvrez votre application XAML.  
   
-2.  Cliquez sur **Déboguer -> Profileur de performances...**. Vous devez voir une liste des outils de profilage dans la fenêtre .diagsession.  
+2. Cliquez sur **Déboguer -> Profileur de performances...**. Vous devez voir une liste des outils de profilage dans la fenêtre .diagsession.  
   
-3.  Sélectionnez **Chronologie de l'application** , puis cliquez sur **Démarrer** dans le bas de la fenêtre.  
+3. Sélectionnez **Chronologie de l'application** , puis cliquez sur **Démarrer** dans le bas de la fenêtre.  
   
     > [!NOTE]
     >  Il est possible qu'une fenêtre Contrôle de compte d'utilisateur apparaisse et vous demande l'autorisation d'exécuter VsEtwCollector.exe. Cliquez sur **Oui**.  
   
-4.  Exécutez le scénario qui vous intéresse quant au profilage dans votre application pour collecter des données de performances.  
+4. Exécutez le scénario qui vous intéresse quant au profilage dans votre application pour collecter des données de performances.  
   
-5.  Pour arrêter le profilage, revenez à la fenêtre .diagsession et cliquez sur **Arrêter** dans le haut de la fenêtre.  
+5. Pour arrêter le profilage, revenez à la fenêtre .diagsession et cliquez sur **Arrêter** dans le haut de la fenêtre.  
   
      Visual Studio analyse les données collectées et affiche les résultats.  
   
      ![Rapport du profileur de chronologie](../profiling/media/timeline-base.png "TIMELINE_Base")  
   
-##  <a name="BKMK_Analyze_Timeline_profiling_data"></a> Analyser les données de profilage de la chronologie  
+## <a name="BKMK_Analyze_Timeline_profiling_data"></a> Analyser les données de profilage de la chronologie  
  Après avoir collecté les données de profilage, vous pouvez utiliser ces étapes pour démarrer votre analyse :  
   
-1.  Consultez les informations dans les graphiques **Utilisation de threads d'interface utilisateur** et **Débit visuel (i/s)** puis utilisez les barres de navigation de la chronologie pour sélectionner une plage horaire à analyser.  
+1. Consultez les informations dans les graphiques **Utilisation de threads d'interface utilisateur** et **Débit visuel (i/s)** puis utilisez les barres de navigation de la chronologie pour sélectionner une plage horaire à analyser.  
   
-2.  À l'aide des informations des graphiques **Utilisation des threads de l'interface utilisateur** ou **Débit visuel (i/s)** , examinez les détails de la vue **Détails de la chronologie** pour découvrir les causes possibles d'un manque apparent de réactivité.  
+2. À l'aide des informations des graphiques **Utilisation des threads de l'interface utilisateur** ou **Débit visuel (i/s)** , examinez les détails de la vue **Détails de la chronologie** pour découvrir les causes possibles d'un manque apparent de réactivité.  
   
-###  <a name="BKMK_Report_scenarios_categories_and_events"></a> Scénarios de rapport, catégories et événements  
+### <a name="BKMK_Report_scenarios_categories_and_events"></a> Scénarios de rapport, catégories et événements  
  L'outil **Chronologie de l'application** affiche les données de la chronologie pour les scénarios, les catégories et les événements liés aux performances XAML.  
   
-###  <a name="BKMK_Diagnostic_session_timeline"></a> Chronologie de session de diagnostic  
+### <a name="BKMK_Diagnostic_session_timeline"></a> Chronologie de session de diagnostic  
  ![Chronologie des performances et des diagnostics](../profiling/media/diaghub-timelinewithusermarks.png "DIAGHUB_TimelineWithUserMarks")  
   
  La règle située en haut de la page affiche la chronologie des informations profilées. Cette chronologie s'applique aux deux graphiques **Utilisation de threads d'interface utilisateur** et **Débit visuel** . Vous pouvez limiter la portée du rapport en faisant glisser les barres de navigation sur la chronologie pour sélectionner un segment de la chronologie.  
   
  La chronologie affiche également les marques utilisateur que vous avez insérées, et les événements de cycle de vie de l'activation de l'application.  
   
-###  <a name="BKMK_UI_thread_utilization_graph"></a> Graphique d’utilisation du thread d’interface utilisateur  
+### <a name="BKMK_UI_thread_utilization_graph"></a> Graphique d’utilisation du thread d’interface utilisateur  
  ![Graphique d’utilisation du processeur](../profiling/media/timeline-cpuutilization.png "TIMELINE_CpuUtilization")  
   
  Le graphique **Utilisation des threads d'interface utilisateur (%)** est un graphique à barres qui affiche la quantité relative de temps passé dans une catégorie pendant un intervalle de collecte.  
   
-###  <a name="BKMK_Visual_throughput_FPS_graph"></a> Graphique du débit visuel (images par seconde)  
+### <a name="BKMK_Visual_throughput_FPS_graph"></a> Graphique du débit visuel (images par seconde)  
  ![Graphique du débit visuel](../profiling/media/timeline-visualthroughput.png "TIMELINE_VisualThroughput")  
   
  Le diagramme linéaire **Débit visuel (i/s)** montre les images par seconde (FPS) sur l'interface utilisateur et le thread de composition pour l'application.  
   
-###  <a name="BKMK_Timeline_details_"></a> Détails de la chronologie  
+### <a name="BKMK_Timeline_details_"></a> Détails de la chronologie  
  C'est dans la vue Détails que vous passerez le plus de temps à analyser le rapport. Il montre une vue détaillée de l’utilisation de l’UC par votre application, en fonction de la catégorie du sous-système du framework d’interface utilisateur ou du composant système qui a consommé l'UC.  
   
  Les événements suivants sont pris en charge :  
@@ -109,7 +109,7 @@ Utilisez le profileur **Chronologie de l'application** pour rechercher et corrig
 > [!TIP]
 >  Choisissez l'outil **Utilisation de l'UC** ainsi que l'outil **Chronologie de l'application** quand vous démarrez le profilage pour afficher les méthodes de l'application qui s'exécutent sur le thread d'interface utilisateur. Le déplacement d'un code d'application de longue durée vers un thread d'arrière-plan peut améliorer la réactivité de l'interface utilisateur.  
   
-####  <a name="BKMK_Customizing_Timeline_details_"></a> Personnalisation des détails de la chronologie  
+#### <a name="BKMK_Customizing_Timeline_details_"></a> Personnalisation des détails de la chronologie  
  Utilisez la barre à outils **Détails de la chronologie** pour trier, filtrer et spécifier les annotations des entrées de la vue **Détails de la chronologie** .  
   
 |||  
@@ -120,6 +120,6 @@ Utilisez le profileur **Chronologie de l'application** pour rechercher et corrig
 |![Personnaliser les informations de détails de chronologie](../profiling/media/timeline-viewsettings.png "TIMELINE_ViewSettings")|Permet de spécifier des annotations sur les événements.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Blog de l’équipe WPF : New UI Performance Analysis Tool for WPF Applications](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx)   
+ [Blog de l’équipe WPF : New UI Performance Analysis Tool for WPF Applications](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx)   
  [Meilleures pratiques pour les performances des applications du Windows Store en C++, C# et Visual Basic](http://msdn.microsoft.com/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
  [Optimisation des performances des applications WPF](http://msdn.microsoft.com/library/ac8c6aa3-3c68-4a24-9827-3b6c829c1ebf)

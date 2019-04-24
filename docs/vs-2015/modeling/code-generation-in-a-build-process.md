@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 61301fce94ab1359a10249f739d2bf613ebfdda8
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f2146c8a15292ddc9233c8e10b8f58f5212df0c5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001372"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077600"
 ---
 # <a name="code-generation-in-a-build-process"></a>Génération de code dans un processus de génération
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,31 +27,31 @@ Il existe quelques différences en matière de possibilités offertes par les t�
 
 Cela signifie que vous ne pouvez pas accéder aux éléments tels que les noms de fichiers projet de la même manière lorsque vous générez un modèle de texte dans MSBuild. Toutefois, vous pouvez [passer des informations sur l’environnement dans les modèles de texte et les processeurs de directive à l’aide des paramètres de build](#parameters).
 
-##  <a name="buildserver"></a> Configurer vos ordinateurs
+## <a name="buildserver"></a> Configurer vos ordinateurs
 
 Pour activer les tâches de génération sur votre ordinateur de développement, installez [Modeling SDK pour Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148).
 
 Si [votre serveur de builds](http://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9) s’exécute sur un ordinateur sur lequel Visual Studio n’est pas installé, copiez les fichiers suivants sur l’ordinateur de build à partir de votre ordinateur de développement. Remplacez ‘*’ par les numéros de version les plus récents.
 
--   $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
+- $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
 
-    -   Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
 
-    -   Microsoft.TextTemplating.Build.Tasks.dll
+    - Microsoft.TextTemplating.Build.Tasks.dll
 
-    -   Microsoft.TextTemplating.targets
+    - Microsoft.TextTemplating.targets
 
--   $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
+- $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
 
-    -   Microsoft.VisualStudio.TextTemplating.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.*.0.dll
 
-    -   Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (plusieurs fichiers)
+    - Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (plusieurs fichiers)
 
-    -   Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
 
--   $(ProgramFiles)\Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
+- $(ProgramFiles)\Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
 
-    -   Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
 
 ## <a name="to-edit-the-project-file"></a>Pour modifier le fichier projet
 
@@ -90,7 +90,7 @@ Après cette ligne, insérez l'importation de modèles de texte :
 
 Il existe des propriétés que vous pouvez insérer dans votre fichier projet afin de contrôler la tâche de transformation :
 
--   Exécutez la tâche de transformation au début de chaque génération :
+- Exécutez la tâche de transformation au début de chaque génération :
 
     ```xml
     <PropertyGroup>
@@ -98,7 +98,7 @@ Il existe des propriétés que vous pouvez insérer dans votre fichier projet af
     </PropertyGroup>
     ```
 
--   Remplacez les fichiers en lecture seule, par exemple, car ils ne sont pas vérifiés :
+- Remplacez les fichiers en lecture seule, par exemple, car ils ne sont pas vérifiés :
 
     ```xml
     <PropertyGroup>
@@ -106,7 +106,7 @@ Il existe des propriétés que vous pouvez insérer dans votre fichier projet af
     </PropertyGroup>
     ```
 
--   Transformez chaque modèle à chaque fois :
+- Transformez chaque modèle à chaque fois :
 
     ```xml
     <PropertyGroup>
@@ -213,7 +213,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-##  <a name="parameters"></a> Passer des données de contexte de build dans les modèles
+## <a name="parameters"></a> Passer des données de contexte de build dans les modèles
 
 Vous pouvez définir des valeurs de paramètre dans le fichier projet. Par exemple, vous pouvez passer des propriétés de build et [variables d’environnement](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
@@ -234,7 +234,7 @@ Dans un modèle de texte, définissez `hostspecific` dans la directive de modèl
 The project folder is: <#= ProjectFolder #>
 ```
 
-##  <a name="msbuild"></a> À l’aide des propriétés du projet dans l’assembly et directives #include
+## <a name="msbuild"></a> À l’aide des propriétés du projet dans l’assembly et directives #include
 
 Les macros Visual Studio telles que $(SolutionDir) ne fonctionnent pas dans MSBuild. Vous pouvez utiliser des propriétés de projet à la place.
 
@@ -271,13 +271,13 @@ Si vous mettez à jour un fichier inclus ou tout autre fichier lu par le modèle
 
 **Ce que sont les autres options pour la transformation de modèles de texte ?**
 
--   Le [utilitaire TextTransform](../modeling/generating-files-with-the-texttransform-utility.md) peut être utilisée dans les scripts de commande. Dans la plupart des cas, il est plus facile d'utiliser MSBuild.
+- Le [utilitaire TextTransform](../modeling/generating-files-with-the-texttransform-utility.md) peut être utilisée dans les scripts de commande. Dans la plupart des cas, il est plus facile d'utiliser MSBuild.
 
--   [Appel d’une transformation de texte dans une extension VS](../modeling/invoking-text-transformation-in-a-vs-extension.md)
+- [Appel d’une transformation de texte dans une extension VS](../modeling/invoking-text-transformation-in-a-vs-extension.md)
 
--   [Les modèles de texte au moment du design](../modeling/design-time-code-generation-by-using-t4-text-templates.md) sont transformés par Visual Studio.
+- [Les modèles de texte au moment du design](../modeling/design-time-code-generation-by-using-t4-text-templates.md) sont transformés par Visual Studio.
 
--   [Modèles de texte d’exécution](../modeling/run-time-text-generation-with-t4-text-templates.md) sont transformés en cours d’exécution dans votre application.
+- [Modèles de texte d’exécution](../modeling/run-time-text-generation-with-t4-text-templates.md) sont transformés en cours d’exécution dans votre application.
 
 ## <a name="read-more"></a>En lire plus
 

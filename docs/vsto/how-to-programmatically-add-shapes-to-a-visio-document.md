@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1abc85ade942a0f9d8f88322f1117f32c94bd258
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e172ff57fb784d6ae768dde1e705ef645b3f9a9c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644469"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117783"
 ---
 # <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>Procédure : Ajouter par programmation des formes à un document Visio
   Vous pouvez ajouter des formes à un document Microsoft Office Visio en récupérant les formes de base d’un gabarit et en déplaçant les formes sur la page active.
@@ -29,7 +29,7 @@ ms.locfileid: "56644469"
 
 ### <a name="to-add-shapes-to-a-visio-document"></a>Pour ajouter des formes à un document Visio
 
--   Dans un document actif, récupérez les formes de base de la collection Documents.Masters et déplacez les formes sur celui-ci. Vous pouvez récupérer une forme de base à l’aide du nom de l’index ou de la forme de base.
+- Dans un document actif, récupérez les formes de base de la collection Documents.Masters et déplacez les formes sur celui-ci. Vous pouvez récupérer une forme de base à l’aide du nom de l’index ou de la forme de base.
 
      L’exemple de code suivant crée un document Visio vierge, puis l’ouvre avec le gabarit **Formes de base** ancré. Le code récupère ensuite plusieurs formes et les déplace sur la page active.
 

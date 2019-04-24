@@ -20,12 +20,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bb94438a17fdc718b28503c8e258b959a16a90ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 10b4efd574dd5829e4717b168dc4e565476e9b52
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948768"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102949"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Se connecter à des données dans une base de données Access (Windows Forms)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,30 +40,30 @@ Vous pouvez vous connecter à une base de données Access (un fichier .mdf ou un
   
 #### <a name="to-create-the-dataset"></a>Pour créer le groupe de données  
   
-1.  Ouvrez l’application Windows Forms à laquelle vous voulez connecter des données.  
+1. Ouvrez l’application Windows Forms à laquelle vous voulez connecter des données.  
   
-2.  Sur le **vue** menu, sélectionnez **Windows autres** > **des Sources de données**.  
+2. Sur le **vue** menu, sélectionnez **Windows autres** > **des Sources de données**.  
   
      ![Afficher d’autres Sources de données Windows](../data-tools/media/viewdatasources.png "ViewDataSources")  
   
-3.  Dans la fenêtre **Sources de données** , cliquez sur **Ajouter une nouvelle source de données**.  
+3. Dans la fenêtre **Sources de données** , cliquez sur **Ajouter une nouvelle source de données**.  
   
      ![Ajouter une nouvelle Source de données](../data-tools/media/dataaddnewdatasource.png "dataAddNewDataSource")  
   
-4.  Sélectionnez **base de données** sur le **choisir un Type de Source de données** page, puis sélectionnez **suivant**.  
+4. Sélectionnez **base de données** sur le **choisir un Type de Source de données** page, puis sélectionnez **suivant**.  
   
-5.  Sélectionnez **Dataset** sur le **choisir un modèle de base de données** page, puis sélectionnez **suivant**.  
+5. Sélectionnez **Dataset** sur le **choisir un modèle de base de données** page, puis sélectionnez **suivant**.  
   
-6.  Dans la page **Choisir votre connexion de données**, sélectionnez **Nouvelle connexion** pour configurer une nouvelle connexion de données.  
+6. Dans la page **Choisir votre connexion de données**, sélectionnez **Nouvelle connexion** pour configurer une nouvelle connexion de données.  
   
-7.  Modifier le **source de données** à **fournisseur de données .NET Framework pour OLE DB**.  
+7. Modifier le **source de données** à **fournisseur de données .NET Framework pour OLE DB**.  
   
      ![Modifier le fournisseur de données OLE DB](../data-tools/media/datachangedatasourceoledb.png "dataChangeDataSourceOLEDB")  
   
     > [!IMPORTANT]
     >  Bien qu’une source de données de **du fichier de base de données Microsoft Access (OLE DB)** peut sembler être le bon choix, vous utilisez ce type de source de données uniquement pour les fichiers de base de données .mdb.  
   
-8.  Dans **fournisseur OLE DB**, sélectionnez **Microsoft Office 12.0 Access Database Engine fournisseur OLE DB**.  
+8. Dans **fournisseur OLE DB**, sélectionnez **Microsoft Office 12.0 Access Database Engine fournisseur OLE DB**.  
   
      ![OLE DB fournisseur Microsoft Office Access 12.0](../data-tools/media/dataoledbprovideroffice12access.png "dataOLEDBProviderOffice12Access")  
   
@@ -87,23 +87,23 @@ Vous pouvez vous connecter à une base de données Access (un fichier .mdf ou un
   
 #### <a name="to-create-the-dataset"></a>Pour créer le groupe de données  
   
-1.  Ouvrez l’application Windows Forms à laquelle vous voulez connecter des données.  
+1. Ouvrez l’application Windows Forms à laquelle vous voulez connecter des données.  
   
-2.  Sur le **vue** menu, sélectionnez **Windows autres** > **des Sources de données**.  
+2. Sur le **vue** menu, sélectionnez **Windows autres** > **des Sources de données**.  
   
      ![Afficher d’autres Sources de données Windows](../data-tools/media/viewdatasources.png "ViewDataSources")  
   
-3.  Dans la fenêtre **Sources de données** , cliquez sur **Ajouter une nouvelle source de données**.  
+3. Dans la fenêtre **Sources de données** , cliquez sur **Ajouter une nouvelle source de données**.  
   
-4.  Sélectionnez **base de données** sur le **choisir un Type de Source de données** page, puis sélectionnez **suivant**.  
+4. Sélectionnez **base de données** sur le **choisir un Type de Source de données** page, puis sélectionnez **suivant**.  
   
-5.  Sélectionnez **Dataset** sur le **choisir un modèle de base de données** page, puis sélectionnez **suivant**.  
+5. Sélectionnez **Dataset** sur le **choisir un modèle de base de données** page, puis sélectionnez **suivant**.  
   
-6.  Dans la page **Choisir votre connexion de données**, sélectionnez **Nouvelle connexion** pour configurer une nouvelle connexion de données.  
+6. Dans la page **Choisir votre connexion de données**, sélectionnez **Nouvelle connexion** pour configurer une nouvelle connexion de données.  
   
-7.  Si la source de données n’est pas **du fichier de base de données Microsoft Access (OLE DB)**, sélectionnez **modification** pour ouvrir le **modifier la Source de données** boîte de dialogue et sélectionnez **Microsoft Accéder au fichier de base de données**, puis sélectionnez **OK**.  
+7. Si la source de données n’est pas **du fichier de base de données Microsoft Access (OLE DB)**, sélectionnez **modification** pour ouvrir le **modifier la Source de données** boîte de dialogue et sélectionnez **Microsoft Accéder au fichier de base de données**, puis sélectionnez **OK**.  
   
-8.  Dans le **nom de fichier de base de données**, spécifiez le chemin d’accès et le nom du fichier .mdb auquel vous souhaitez vous connecter, puis sélectionnez **OK**.  
+8. Dans le **nom de fichier de base de données**, spécifiez le chemin d’accès et le nom du fichier .mdb auquel vous souhaitez vous connecter, puis sélectionnez **OK**.  
   
      ![Ajouter le fichier de connexion de base de données Access](../data-tools/media/dataaddconnectionaccessmdb.png "dataAddConnectionAccessMDB")  
   
@@ -123,11 +123,11 @@ Vous pouvez vous connecter à une base de données Access (un fichier .mdf ou un
 ## <a name="next-steps"></a>Étapes suivantes  
  Le jeu de données que vous venez de créer est maintenant disponible dans le **des Sources de données** fenêtre. Vous pouvez à présent effectuer l’une des tâches suivantes :  
   
--   Sélectionnez des éléments dans le **des Sources de données** fenêtre et faites-les glisser jusqu'à votre formulaire (voir [lier les formulaires Windows contrôle aux données dans Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)).  
+- Sélectionnez des éléments dans le **des Sources de données** fenêtre et faites-les glisser jusqu'à votre formulaire (voir [lier les formulaires Windows contrôle aux données dans Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)).  
   
--   Ouvrez la source de données dans le Concepteur de Dataset pour ajouter ou modifier les objets qui composent le jeu de données.  
+- Ouvrez la source de données dans le Concepteur de Dataset pour ajouter ou modifier les objets qui composent le jeu de données.  
   
--   Ajouter une logique de validation pour le <xref:System.Data.DataTable.ColumnChanging> ou <xref:System.Data.DataTable.RowChanging> événement les tables de données dans le jeu de données (voir [valider des données dans les jeux de données](../data-tools/validate-data-in-datasets.md)).  
+- Ajouter une logique de validation pour le <xref:System.Data.DataTable.ColumnChanging> ou <xref:System.Data.DataTable.RowChanging> événement les tables de données dans le jeu de données (voir [valider des données dans les jeux de données](../data-tools/validate-data-in-datasets.md)).  
   
 ## <a name="see-also"></a>Voir aussi
 

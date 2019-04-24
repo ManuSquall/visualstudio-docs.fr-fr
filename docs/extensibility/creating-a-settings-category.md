@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e88fbc023d495bb4fbad795d2013a9fe3a5c883
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 2c757f2ee7dc69e53f492d4dfa37c2ca95b4af70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54941231"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100584"
 ---
 # <a name="create-a-settings-category"></a>Créer une catégorie de paramètres
 
@@ -33,11 +33,11 @@ Pour démarrer cette procédure pas à pas, vous devez tout d’abord effectuer 
 
 ### <a name="to-create-a-settings-category"></a>Pour créer une catégorie de paramètres
 
-1.  Terminer la [créer une page d’Options](../extensibility/creating-an-options-page.md).
+1. Terminer la [créer une page d’Options](../extensibility/creating-an-options-page.md).
 
-2.  Ouvrez le *VSPackage.resx* fichier, puis ajoutez ces ressources de chaîne de trois :
+2. Ouvrez le *VSPackage.resx* fichier, puis ajoutez ces ressources de chaîne de trois :
 
-    |Name|Value|
+    |Nom|Value|
     |----------|-----------|
     |106|Ma catégorie|
     |107|Mes paramètres|
@@ -48,7 +48,7 @@ Pour démarrer cette procédure pas à pas, vous devez tout d’abord effectuer 
     > [!NOTE]
     >  Parmi ces trois, uniquement le nom de catégorie n’apparaît pas dans le **importation et exportation de paramètres** Assistant.
 
-3.  Dans *MyToolsOptionsPackage.cs*, ajoutez un `float` propriété nommée `OptionFloat` à la `OptionPageGrid` classe, comme indiqué dans l’exemple suivant.
+3. Dans *MyToolsOptionsPackage.cs*, ajoutez un `float` propriété nommée `OptionFloat` à la `OptionPageGrid` classe, comme indiqué dans l’exemple suivant.
 
     ```csharp
     public class OptionPageGrid : DialogPage
@@ -78,39 +78,39 @@ Pour démarrer cette procédure pas à pas, vous devez tout d’abord effectuer 
     > [!NOTE]
     >  Le `OptionPageGrid` catégorie nommée « My Category » maintenant se compose des deux propriétés, `OptionInteger` et `OptionFloat`.
 
-4.  Ajouter un <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> à la `MyToolsOptionsPackage` classe et donnez-lui le nom de la catégorie « My Category », attribuez-lui le NomObjet « Mes paramètres », puis isToolsOptionPage la valeur true. Définir categoryResourceID, objectNameResourceID et DescriptionResourceID à la ressource de chaîne correspondant Qu'id créés précédemment.
+4. Ajouter un <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> à la `MyToolsOptionsPackage` classe et donnez-lui le nom de la catégorie « My Category », attribuez-lui le NomObjet « Mes paramètres », puis isToolsOptionPage la valeur true. Définir categoryResourceID, objectNameResourceID et DescriptionResourceID à la ressource de chaîne correspondant Qu'id créés précédemment.
 
     ```csharp
     [ProvideProfileAttribute(typeof(OptionPageGrid),
         "My Category", "My Settings", 106, 107, isToolsOptionPage:true, DescriptionResourceID = 108)]
     ```
 
-5.  Générez le projet et commencez le débogage. Dans l’instance expérimentale, vous devez voir que **ma Page de grille** a maintenant des valeurs integer et float.
+5. Générez le projet et commencez le débogage. Dans l’instance expérimentale, vous devez voir que **ma Page de grille** a maintenant des valeurs integer et float.
 
 ## <a name="examine-the-settings-file"></a>Examinez le fichier de paramètres
  Dans cette section, vous exportez les valeurs de catégorie de propriété vers un fichier de paramètres. Vous examinez le fichier et réimportez les valeurs dans la catégorie de propriété.
 
-1.  Démarrez le projet en mode débogage en appuyant sur **F5**. Cela démarre l’instance expérimentale.
+1. Démarrez le projet en mode débogage en appuyant sur **F5**. Cela démarre l’instance expérimentale.
 
-2.  Ouvrez le **outils** > **Options** boîte de dialogue.
+2. Ouvrez le **outils** > **Options** boîte de dialogue.
 
-3.  Dans l’arborescence de commandes dans le volet gauche, développez **ma catégorie** puis cliquez sur **ma Page de grille**.
+3. Dans l’arborescence de commandes dans le volet gauche, développez **ma catégorie** puis cliquez sur **ma Page de grille**.
 
-4.  Modifiez la valeur de **OptionFloat** à 3.1416 et **OptionInteger** et 12. Cliquez sur **OK**.
+4. Modifiez la valeur de **OptionFloat** à 3.1416 et **OptionInteger** et 12. Cliquez sur **OK**.
 
-5.  Dans le menu **Outils**, cliquez sur **Importation et exportation des paramètres**.
+5. Dans le menu **Outils**, cliquez sur **Importation et exportation des paramètres**.
 
      Le **importation et exportation de paramètres** Assistant s’affiche.
 
-6.  Assurez-vous que **exporter les paramètres d’environnement sélectionnés** est sélectionnée, puis cliquez sur **suivant**.
+6. Assurez-vous que **exporter les paramètres d’environnement sélectionnés** est sélectionnée, puis cliquez sur **suivant**.
 
      Le **choisir les paramètres à exporter** page s’affiche.
 
-7.  Cliquez sur **mes paramètres**.
+7. Cliquez sur **mes paramètres**.
 
      Le **Description** devient **OptionInteger et OptionFloat**.
 
-8.  Assurez-vous que l’option **mes paramètres** est la seule catégorie est sélectionnée, puis cliquez sur **suivant**.
+8. Assurez-vous que l’option **mes paramètres** est la seule catégorie est sélectionnée, puis cliquez sur **suivant**.
 
      Le **nom de votre fichier de paramètres** page s’affiche.
 

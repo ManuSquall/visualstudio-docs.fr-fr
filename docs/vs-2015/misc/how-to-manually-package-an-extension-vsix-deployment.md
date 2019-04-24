@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
 manager: jillfra
-ms.openlocfilehash: 3537879481430490d32ab30f8f6a2f9f7353659b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 81bf6c5ef975d7ce154c1d8bb987e962dfdf4ec2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949771"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040739"
 ---
 # <a name="how-to-manually-package-an-extension-vsix-deployment"></a>Procédure : Manuellement un Package d’Extension (déploiement VSIX)
 Vous pouvez créer un package VSIX pour encapsuler une extension [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour le déploiement. Il existe trois façons de créer un package :  
@@ -33,25 +33,25 @@ Vous pouvez créer un package VSIX pour encapsuler une extension [!INCLUDE[vsprv
   
 #### <a name="to-manually-create-a-vsix-package"></a>Pour créer manuellement un package VSIX  
   
-1.  Créez une extension Visual Studio d’un type pris en charge par le schéma VSIX.  
+1. Créez une extension Visual Studio d’un type pris en charge par le schéma VSIX.  
   
-2.  Créez un fichier XML, puis nommez-le `extension.vsixmanifest`.  
+2. Créez un fichier XML, puis nommez-le `extension.vsixmanifest`.  
   
-3.  Remplissez le fichier extension.vsixmanifest selon le schéma VSIX. Pour obtenir un exemple de manifeste, consultez [PackageManifest Element (Root Element, VSX Schema)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  
+3. Remplissez le fichier extension.vsixmanifest selon le schéma VSIX. Pour obtenir un exemple de manifeste, consultez [PackageManifest Element (Root Element, VSX Schema)](http://msdn.microsoft.com/f8ae42ba-775a-4d2b-976a-f556e147f187).  
   
-4.  Créez un deuxième fichier XML, puis nommez-le `[Content_Types].xml`.  
+4. Créez un deuxième fichier XML, puis nommez-le `[Content_Types].xml`.  
   
-5.  Renseignez le fichier [Content_Types] .xml comme spécifié dans [la Structure de la Content_types\].xml fichier](../extensibility/the-structure-of-the-content-types-dot-xml-file.md).  
+5. Renseignez le fichier [Content_Types] .xml comme spécifié dans [la Structure de la Content_types\].xml fichier](../extensibility/the-structure-of-the-content-types-dot-xml-file.md).  
   
-6.  Placez les deux fichiers XML dans un répertoire avec l’extension à déployer.  
+6. Placez les deux fichiers XML dans un répertoire avec l’extension à déployer.  
   
      Dans le cas d’un modèle de projet ou d’un modèle d’élément, placez le fichier .zip qui contient le modèle dans le même dossier que les fichiers XML. Ne placez pas les fichiers XML dans le fichier .zip.  
   
      Dans tous les autres cas, placez les fichiers XML dans le même répertoire que la sortie de génération.  
   
-7.  Dans l’Explorateur Windows, cliquez avec le bouton droit sur le dossier qui contient le contenu de l’extension et les deux fichiers XML, cliquez sur **Envoyer vers**, puis cliquez sur **Dossier compressé**.  
+7. Dans l’Explorateur Windows, cliquez avec le bouton droit sur le dossier qui contient le contenu de l’extension et les deux fichiers XML, cliquez sur **Envoyer vers**, puis cliquez sur **Dossier compressé**.  
   
-8.  Renommez le fichier .zip que vous venez de créer *nom_fichier*.vsix, où *nom_fichier* correspond au nom du fichier redistribuable qui installe votre package.  
+8. Renommez le fichier .zip que vous venez de créer *nom_fichier*.vsix, où *nom_fichier* correspond au nom du fichier redistribuable qui installe votre package.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Proposent des Extensions de Visual Studio](../extensibility/shipping-visual-studio-extensions.md)   

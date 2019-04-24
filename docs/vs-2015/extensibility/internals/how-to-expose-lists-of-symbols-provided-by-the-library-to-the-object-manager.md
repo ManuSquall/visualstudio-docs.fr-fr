@@ -14,12 +14,12 @@ ms.assetid: 19757068-bdaa-4e7e-85d6-f8ce5026a859
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 269c26d1b2caa56ba3306d151cff1a7607ac837c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ca01f28b7f0ad7c1e4bad5ee13e6e21a5f2f7e2f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953747"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106772"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Procédure : Exposer des listes de symboles fournies par la bibliothèque au Gestionnaire d’objets
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Les outils de consultation de symboles, **affichage de classes**, **Explorateur 
   
 #### <a name="to-provide-lists-of-symbols-to-the-object-manager"></a>Pour fournir des listes de symboles pour le Gestionnaire d’objets  
   
-1.  Obtenir le nombre d’éléments dans la liste des symboles en implémentant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A> (méthode). L’exemple suivant montre comment le Gestionnaire d’objets Obtient les informations sur le nombre d’éléments dans la liste.  
+1. Obtenir le nombre d’éléments dans la liste des symboles en implémentant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A> (méthode). L’exemple suivant montre comment le Gestionnaire d’objets Obtient les informations sur le nombre d’éléments dans la liste.  
   
     ```vb  
     Protected m_Methods As System.Collections.Generic.SortedList(Of String, Method) = New System.Collections.Generic.SortedList(Of String, Method)()  
@@ -59,7 +59,7 @@ Les outils de consultation de symboles, **affichage de classes**, **Explorateur 
   
     ```  
   
-2.  Obtenir des informations sur les catégories et les attributs d’un élément de liste donné en implémentant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A> (méthode). Les catégories d’élément sont spécifiés dans le <xref:Microsoft.VisualStudio.Shell.Interop.LIB_CATEGORY> énumération. L’exemple suivant illustre la façon dont le Gestionnaire d’objets Obtient les attributs d’éléments pour une catégorie donnée.  
+2. Obtenir des informations sur les catégories et les attributs d’un élément de liste donné en implémentant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A> (méthode). Les catégories d’élément sont spécifiés dans le <xref:Microsoft.VisualStudio.Shell.Interop.LIB_CATEGORY> énumération. L’exemple suivant illustre la façon dont le Gestionnaire d’objets Obtient les attributs d’éléments pour une catégorie donnée.  
   
     ```vb  
     Public Function GetCategoryField2(ByVal index As UInteger, ByVal Category As Integer, ByRef pfCatField As UInteger) As Integer  
@@ -154,7 +154,7 @@ Les outils de consultation de symboles, **affichage de classes**, **Explorateur 
   
     ```  
   
-3.  Obtenir la représentation textuelle d’un élément de liste donné en implémentant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A> (méthode). L’exemple suivant montre comment obtenir le nom complet d’un élément donné.  
+3. Obtenir la représentation textuelle d’un élément de liste donné en implémentant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A> (méthode). L’exemple suivant montre comment obtenir le nom complet d’un élément donné.  
   
     ```vb  
     Public Function GetTextWithOwnership(<System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.OLE.Interop.ULONG")> ByVal index As UInteger, <System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.Shell.Interop.VSTREETEXTOPTIONS")> ByVal tto As Microsoft.VisualStudio.Shell.Interop.VSTREETEXTOPTIONS, <System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.OLE.Interop.WCHAR")> ByRef ppszText As String) As Integer  
@@ -172,7 +172,7 @@ Les outils de consultation de symboles, **affichage de classes**, **Explorateur 
   
     ```  
   
-4.  Obtenir les informations de l’icône pour un élément de liste donné en implémentant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A> (méthode). L’icône représente le type (classe, méthode et ainsi de suite) et accessibilité (privée, publique et ainsi de suite) d’un élément de liste. L’exemple suivant montre comment obtenir les informations de l’icône selon un attribut de l’élément donné.  
+4. Obtenir les informations de l’icône pour un élément de liste donné en implémentant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A> (méthode). L’icône représente le type (classe, méthode et ainsi de suite) et accessibilité (privée, publique et ainsi de suite) d’un élément de liste. L’exemple suivant montre comment obtenir les informations de l’icône selon un attribut de l’élément donné.  
   
     ```vb  
     Public Overridable Function GetDisplayData(ByVal index As UInteger, ByVal pData As Microsoft.VisualStudio.Shell.Interop.VSTREEDISPLAYDATA()) As Integer  
@@ -254,7 +254,7 @@ Les outils de consultation de symboles, **affichage de classes**, **Explorateur 
   
     ```  
   
-5.  Obtenir les informations sur un élément de liste donné peut être développé en implémentant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> (méthode). L’exemple suivant montre comment obtenir les informations sur indique si un élément donné peut être développé.  
+5. Obtenir les informations sur un élément de liste donné peut être développé en implémentant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> (méthode). L’exemple suivant montre comment obtenir les informations sur indique si un élément donné peut être développé.  
   
     ```vb  
     Public Function GetExpandable(ByVal index As UInteger, ByRef pfExpandable As Integer) As Integer  
@@ -281,7 +281,7 @@ Les outils de consultation de symboles, **affichage de classes**, **Explorateur 
   
     ```  
   
-6.  Obtenir la liste enfant de symboles d’un élément de liste donné en implémentant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> (méthode). L’exemple suivant montre comment obtenir une liste enfant de symboles d’un élément donné pour **appeler** ou **appelants** graphiques.  
+6. Obtenir la liste enfant de symboles d’un élément de liste donné en implémentant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> (méthode). L’exemple suivant montre comment obtenir une liste enfant de symboles d’un élément donné pour **appeler** ou **appelants** graphiques.  
   
     ```vb  
     ' Call graph list.  

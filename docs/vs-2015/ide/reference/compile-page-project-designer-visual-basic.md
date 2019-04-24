@@ -19,17 +19,16 @@ caps.latest.revision: 65
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 928d3c4fe3e90c731f56eba4e7275772fdcd76c2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3dd58013cb26e8533a5b898a0e5cd1df3be1b262
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778910"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649054"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Page Compiler, Concepteur de projets (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 La page **Compiler** du Concepteur de projets vous permet de spécifier les instructions de compilation. Vous pouvez également spécifier dans cette page les options avancées du compilateur et les événements pré-build ou post-build.  
   
  Pour accéder à la page **Compiler**, choisissez un nœud de projet (pas le nœud **Solution**) dans **l’Explorateur de solutions**. Ensuite, choisissez **Projet**, **Propriétés** dans la barre de menus. Quand le Concepteur de projets apparaît, cliquez sur l’onglet **Compiler**.  
@@ -172,6 +171,6 @@ La page **Compiler** du Concepteur de projets vous permet de spécifier les inst
 ## <a name="see-also"></a>Voir aussi  
  [Configurations de projets Debug et Release](http://msdn.microsoft.com/0440b300-0614-4511-901a-105b771b236e)   
  [Gestion des propriétés de compilation](http://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
- [Guide pratique pour spécifier des événements de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
+ [Guide pratique pour Spécifier les événements de Build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
  [Compilateur de ligne de commande de Visual Basic](http://msdn.microsoft.com/library/6b57c444-50c7-4b88-8f59-ed65cff5e05c)   
  [Guide pratique pour créer et modifier des configurations](../../ide/how-to-create-and-edit-configurations.md)

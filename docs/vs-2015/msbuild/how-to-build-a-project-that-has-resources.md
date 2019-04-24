@@ -14,17 +14,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b45d2dfedcc020a5b6206e4c419c0e4b7f9b0f02
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0806df31b7e1f225ecefc823cbcbdb0a72ff2058
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54803999"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660266"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Comment : générer un projet qui dispose de ressources
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Si vous générez les versions localisées d’un projet, tous les éléments de l’interface utilisateur doivent être séparés dans des fichiers de ressources correspondant aux différentes langues. Si le projet utilise uniquement des chaînes, les fichiers de ressources peuvent utiliser des fichiers texte. Vous pouvez également utiliser des fichiers .resx comme fichiers de ressources.  
   
 ## <a name="compiling-resources-with-msbuild"></a>Compilation des ressources avec MSBuild  

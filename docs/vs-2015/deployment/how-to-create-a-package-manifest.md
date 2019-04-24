@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 725f2a7882b0825795ac75906bdfd6ef1cfef669
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c711c50ab484cc88b1d6aff5c8e3018cead69953
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953689"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046013"
 ---
 # <a name="how-to-create-a-package-manifest"></a>Procédure : Créer un manifeste de Package
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ Pour déployer les composants requis pour votre application, vous pouvez utilise
   
 #### <a name="to-create-the-package-manifest"></a>Pour créer le manifeste du package  
   
-1.  Créez un répertoire pour le package de programme d’amorçage. Cet exemple utilise C:\package.  
+1. Créez un répertoire pour le package de programme d’amorçage. Cet exemple utilise C:\package.  
   
-2.  Créez un sous-répertoire avec le nom des paramètres régionaux, par exemple en pour l’anglais.  
+2. Créez un sous-répertoire avec le nom des paramètres régionaux, par exemple en pour l’anglais.  
   
-3.  Dans Visual Studio, créez un fichier XML nommé `package.xml`et l’enregistrer dans le dossier C:\package\en.  
+3. Dans Visual Studio, créez un fichier XML nommé `package.xml`et l’enregistrer dans le dossier C:\package\en.  
   
-4.  Ajoutez du code XML pour répertorier le nom du package du programme d’amorçage, la culture pour ce manifeste de package localisé et le contrat de licence facultatif. Le code XML suivant utilise les variables `DisplayName` et `Culture`, qui sont définies dans un élément ultérieur.  
+4. Ajoutez du code XML pour répertorier le nom du package du programme d’amorçage, la culture pour ce manifeste de package localisé et le contrat de licence facultatif. Le code XML suivant utilise les variables `DisplayName` et `Culture`, qui sont définies dans un élément ultérieur.  
   
     ```  
     <Package  
@@ -53,7 +53,7 @@ Pour déployer les composants requis pour votre application, vous pouvez utilise
         LicenseAgreement="eula.txt">  
     ```  
   
-5.  Ajoutez du code XML pour répertorier tous les fichiers qui se trouvent dans le répertoire de paramètres régionaux spécifiques. Le code XML suivant utilise un fichier nommé eula.txt qui n’est applicable pour le **en** paramètres régionaux.  
+5. Ajoutez du code XML pour répertorier tous les fichiers qui se trouvent dans le répertoire de paramètres régionaux spécifiques. Le code XML suivant utilise un fichier nommé eula.txt qui n’est applicable pour le **en** paramètres régionaux.  
   
     ```  
     <PackageFiles>  
@@ -61,7 +61,7 @@ Pour déployer les composants requis pour votre application, vous pouvez utilise
     </PackageFiles>  
     ```  
   
-6.  Ajoutez le code XML pour définir des chaînes localisables pour le package de programme d’amorçage. Le code XML suivant ajoute des chaînes d’erreur pour les paramètres régionaux en.  
+6. Ajoutez le code XML pour définir des chaînes localisables pour le package de programme d’amorçage. Le code XML suivant ajoute des chaînes d’erreur pour les paramètres régionaux en.  
   
     ```  
       <Strings>  
@@ -74,7 +74,7 @@ Pour déployer les composants requis pour votre application, vous pouvez utilise
     </Strings>  
     ```  
   
-7.  Copiez le dossier C:\package vers le répertoire du programme d’amorçage de Visual Studio. Pour Visual Studio 2010, il s’agit de l’annuaire de SDKs\Windows\v7.0A\Bootstrapper\Packages \Program Files\Microsoft.  
+7. Copiez le dossier C:\package vers le répertoire du programme d’amorçage de Visual Studio. Pour Visual Studio 2010, il s’agit de l’annuaire de SDKs\Windows\v7.0A\Bootstrapper\Packages \Program Files\Microsoft.  
   
 ## <a name="example"></a>Exemple  
  Le manifeste du package contient des informations de paramètres régionaux spécifiques, tels que les messages d’erreur, les termes du contrat de licence de logiciel et les modules linguistiques.  

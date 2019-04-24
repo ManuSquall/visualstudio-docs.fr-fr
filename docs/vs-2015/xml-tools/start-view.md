@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 733d72f9fdf0d172e5d61d44120f212787d70050
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cb0cc75abced1d94fbedccf46b8953df78db7d28
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953411"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651251"
 ---
 # <a name="start-view"></a>vue de départ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 La vue de départ est le point de lancement du Concepteur de schémas XML (XSD). Lorsque vous créez un fichier XSD, la vue de départ est initialement affichée.  
   
  La vue de départ contient deux sections principales, le *filigrane* et **détails du jeu de schéma** volet. Elle comprend également la barre d'outils, qui est disponible dans toutes les vues du Concepteur XSD.  

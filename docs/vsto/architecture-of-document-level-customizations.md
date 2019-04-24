@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dcd465ebef68a6627935b00438f6c218938eb3de
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2ec9dcc6f5458e33e5ea215d65aacd48c622f111
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629467"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051998"
 ---
 # <a name="architecture-of-document-level-customizations"></a>Architecture des personnalisations au niveau du document
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] comprend des projets pour créer des personnalisations au niveau du document pour Microsoft Office Word et Microsoft Office Excel. Cette rubrique décrit les aspects suivants des personnalisations au niveau du document :
@@ -39,7 +39,7 @@ ms.locfileid: "56629467"
 
   Pour obtenir des informations générales sur la création de personnalisations au niveau du document, consultez [présentation du développement de solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md), [prise en main de programmation de personnalisations au niveau du document pour Word](../vsto/getting-started-programming-document-level-customizations-for-word.md), et [prise en main de programmation de personnalisations au niveau du document pour Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md).
 
-##  <a name="UnderstandingCustomizations"></a> Comprendre les personnalisations
+## <a name="UnderstandingCustomizations"></a> Comprendre les personnalisations
  Quand vous utilisez les Outils de développement Office dans Visual Studio pour générer une personnalisation au niveau du document, vous créez un assembly de code managé associé à un document spécifique. On dit d’un document ou classeur lié à un assembly qu’il a des extensions de code managé. Pour plus d’informations, consultez [conception et créer des solutions Office](../vsto/designing-and-creating-office-solutions.md).
 
  Quand un utilisateur ouvre le document, l’assembly est chargé par l’application Microsoft Office. Une fois l’assembly chargé, la personnalisation peut répondre à des événements pendant que le document est ouvert. La personnalisation peut également exécuter un appel dans le modèle objet pour automatiser et étendre l’application pendant que le document est ouvert, et elle peut utiliser toutes les classes du [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)].
@@ -57,18 +57,18 @@ ms.locfileid: "56629467"
 #### <a name="design-time"></a>Moment du design
  L’expérience au moment du design comprend les étapes suivantes :
 
-1.  Le développeur crée un projet au niveau du document dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Le projet comprend le document et l’assembly qui s’exécute derrière le document. Le document peut déjà exister (créée par un concepteur), ou un nouveau document peut être créé en même temps que le projet.
+1. Le développeur crée un projet au niveau du document dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Le projet comprend le document et l’assembly qui s’exécute derrière le document. Le document peut déjà exister (créée par un concepteur), ou un nouveau document peut être créé en même temps que le projet.
 
-2.  Le concepteur (le développeur qui crée le projet ou une autre personne) crée l’apparence finale du document pour l’utilisateur final.
+2. Le concepteur (le développeur qui crée le projet ou une autre personne) crée l’apparence finale du document pour l’utilisateur final.
 
 #### <a name="runtime"></a>Runtime
  L’expérience au moment de l’exécution comprend les étapes suivantes :
 
-1.  L’utilisateur final ouvre un document ou un classeur qui a des extensions de code managé.
+1. L’utilisateur final ouvre un document ou un classeur qui a des extensions de code managé.
 
-2.  Le document ou le classeur charge l’assembly compilé.
+2. Le document ou le classeur charge l’assembly compilé.
 
-3.  L’assembly répond aux événements à mesure que l’utilisateur travaille dans le document ou le classeur.
+3. L’assembly répond aux événements à mesure que l’utilisateur travaille dans le document ou le classeur.
 
 #### <a name="developer-and-end-user-perspective-compared"></a>Comparé des perspectives de développeur et l’utilisateur final
  Étant donné que le développeur travaille principalement dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]et l’utilisateur final dans Word ou Excel, il existe deux façons de comprendre les personnalisations au niveau du document.
@@ -97,7 +97,7 @@ ms.locfileid: "56629467"
 
   Si vous souhaitez que vos utilisateurs finaux utilisent des personnalisations dans ces formats de fichiers, générez et déployez une personnalisation qui utilise l’un des formats de fichiers pris en charge spécifiés dans le tableau ci-dessus. Après avoir installé la personnalisation, les utilisateurs finaux peuvent enregistrer le document dans le Document XML Word (*\*xml*) format ou le Document XML Word 2003 (*\*xml*) format et le personnalisation continue de fonctionner comme prévu.
 
-##  <a name="Components"></a> Composants des personnalisations
+## <a name="Components"></a> Composants des personnalisations
  Les principaux composants d’une personnalisation sont le document et l’assembly. Outre ces composants, il en existe plusieurs autres qui jouent un rôle important dans la manière dont les applications Microsoft Office découvrent et chargent les personnalisations.
 
 ### <a name="deployment-manifest-and-application-manifest"></a>Manifeste de déploiement et manifeste d’application
@@ -108,7 +108,7 @@ ms.locfileid: "56629467"
 
  Pour plus d’informations, consultez [Visual Studio tools pour Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
-##  <a name="HowCustomizationsWork"></a> Fonctionnement des personnalisations avec les applications Microsoft Office
+## <a name="HowCustomizationsWork"></a> Fonctionnement des personnalisations avec les applications Microsoft Office
  Quand un utilisateur ouvre un document qui fait partie d’une personnalisation Microsoft Office, l’application utilise le manifeste de déploiement lié au document pour rechercher et charger la version la plus récente de l’assembly de personnalisation. L’emplacement du manifeste de déploiement est stocké dans une propriété de document personnalisée nommée **AssemblyLocation**. La chaîne qui identifie cet emplacement est insérée dans la propriété lorsque vous générez la solution.
 
  Le manifeste de déploiement pointe vers le manifeste d’application, qui pointe vers l’assembly le plus récent. Pour plus d’informations, consultez [manifestes d’Application et déploiement dans les solutions Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).
@@ -123,21 +123,21 @@ ms.locfileid: "56629467"
 ### <a name="loading-process"></a>Processus de chargement
  Les étapes suivantes se produisent lorsqu’un utilisateur ouvre un document qui fait partie d’une solution Microsoft Office.
 
-1.  L’application Microsoft Office vérifie les propriétés de document personnalisées pour voir si des extensions de code managé sont associées au document. Pour plus d’informations, consultez [vue d’ensemble des propriétés de document personnalisées](../vsto/custom-document-properties-overview.md).
+1. L’application Microsoft Office vérifie les propriétés de document personnalisées pour voir si des extensions de code managé sont associées au document. Pour plus d’informations, consultez [vue d’ensemble des propriétés de document personnalisées](../vsto/custom-document-properties-overview.md).
 
-2.  S’il existe des extensions de code managé, l’application charge *VSTOEE.dll*, les charges *VSTOLoader.dll*. Ils ne sont pas gérés DLL qui sont les composants du chargeur pour Visual Studio 2010 Tools pour Office runtime. Pour plus d’informations, consultez [Visual Studio Tools pour Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).
+2. S’il existe des extensions de code managé, l’application charge *VSTOEE.dll*, les charges *VSTOLoader.dll*. Ils ne sont pas gérés DLL qui sont les composants du chargeur pour Visual Studio 2010 Tools pour Office runtime. Pour plus d’informations, consultez [Visual Studio Tools pour Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
-3.  *VSTOLoader.dll* charge le [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] et démarre la partie managée de le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
+3. *VSTOLoader.dll* charge le [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] et démarre la partie managée de le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
 
-4.  Si le document est ouvert à partir d’un emplacement autre que l’ordinateur local, le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] vérifie que l’emplacement du document figure dans la liste **Emplacements approuvés** dans les **Paramètres du Centre de gestion de la confidentialité** pour cette application Office. Si l’emplacement du document n’est pas un emplacement approuvé, la personnalisation n’est pas approuvée et le processus de chargement est arrêté.
+4. Si le document est ouvert à partir d’un emplacement autre que l’ordinateur local, le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] vérifie que l’emplacement du document figure dans la liste **Emplacements approuvés** dans les **Paramètres du Centre de gestion de la confidentialité** pour cette application Office. Si l’emplacement du document n’est pas un emplacement approuvé, la personnalisation n’est pas approuvée et le processus de chargement est arrêté.
 
-5.  Le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] installe la solution si ce n’est déjà fait, télécharge les manifestes de déploiement et d’application les plus récents, et exécute une série de vérifications de sécurité. Pour plus d’informations, consultez [solutions Office Secure](../vsto/securing-office-solutions.md).
+5. Le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] installe la solution si ce n’est déjà fait, télécharge les manifestes de déploiement et d’application les plus récents, et exécute une série de vérifications de sécurité. Pour plus d’informations, consultez [solutions Office Secure](../vsto/securing-office-solutions.md).
 
-6.  Si l’exécution de la personnalisation est approuvée, le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] utilise le manifeste de déploiement et le manifeste d’application pour rechercher des mises à jour de l’assembly. Si une nouvelle version de l'assembly est disponible, le runtime la télécharge dans le cache de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] sur l'ordinateur client. Pour plus d’informations, consultez [déployer une solution Office](../vsto/deploying-an-office-solution.md).
+6. Si l’exécution de la personnalisation est approuvée, le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] utilise le manifeste de déploiement et le manifeste d’application pour rechercher des mises à jour de l’assembly. Si une nouvelle version de l'assembly est disponible, le runtime la télécharge dans le cache de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] sur l'ordinateur client. Pour plus d’informations, consultez [déployer une solution Office](../vsto/deploying-an-office-solution.md).
 
-7.  Le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] crée un domaine d’application dans lequel charger l’assembly de la personnalisation.
+7. Le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] crée un domaine d’application dans lequel charger l’assembly de la personnalisation.
 
-8.  Le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] charge l’assembly de la personnalisation dans le domaine d’application.
+8. Le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] charge l’assembly de la personnalisation dans le domaine d’application.
 
 9. Le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] appelle le gestionnaire d’événements **Startup** dans votre assembly de personnalisation. Pour plus d’informations, consultez [événements dans les projets Office](../vsto/events-in-office-projects.md)
 

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88690e57e1781e9fe43b3cf4108c62fab189a988
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 56332c58c48903a13a5b1538cf18986ba81e20a7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949029"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059004"
 ---
 # <a name="t4-template-directive"></a>Directive du modèle T4
 
@@ -68,7 +68,7 @@ Valeurs valides :
 
 `true`
 
-`false` (par défaut)
+`false` (valeur par défaut)
 
 Si l'attribut `debug` a la valeur `true`, le fichier de code intermédiaire contient des informations qui permettent au débogueur d'identifier plus précisément la position, dans votre modèle, où s'est produit un arrêt ou une exception.
 
@@ -88,7 +88,7 @@ Valeurs valides :
 
 `true`
 
-`false` (par défaut)
+`false` (valeur par défaut)
 
 `trueFromBase`
 
@@ -128,7 +128,7 @@ Exemple :
 
 Valeurs valides :
 
-`C#` (par défaut)
+`C#` (valeur par défaut)
 
 `VB`
 
@@ -206,13 +206,15 @@ protected override void SpecificFragment2()
 #>
 ```
 
- Code d'application pour appeler DerivedTemplate1 :
- ```csharp
+Code d'application pour appeler DerivedTemplate1 :
+
+```csharp
 Console.WriteLine(new DerivedTemplate().TransformText());
 ```
 
- Résultat :
- ```
+Résultat :
+
+```
 This is the common header.
    Fragment 1 for DerivedTemplate1
 A common central text.
@@ -243,11 +245,11 @@ Exemple :
 
 Valeurs valides :
 
-`true` (par défaut)
+`true` (valeur par défaut)
 
 `false`
 
-L’assignation de la valeur false à cet attribut permet de supprimer les étiquettes qui identifient les numéros de ligne dans le code généré. Cela signifie que le compilateur signale toutes les erreurs en utilisant les numéros de ligne du code généré. Cela vous donne davantage d'options de débogage, car vous pouvez choisir de déboguer le modèle de texte ou le code généré.
+L'assignation de la valeur false à cet attribut permet de supprimer les balises qui identifient les numéros de ligne dans le code généré. Cela signifie que le compilateur signale toutes les erreurs en utilisant les numéros de ligne du code généré. Cela vous donne davantage d'options de débogage, car vous pouvez choisir de déboguer le modèle de texte ou le code généré.
 
 Cet attribut peut également utile si vous ne trouvez que les noms de fichiers absolus dans les pragmas sont à l’origine des fusions perturbante sous contrôle de code source.
 
@@ -259,7 +261,7 @@ Exemple :
 
 Valeurs valides :
 
-`public` (par défaut)
+`public` (valeur par défaut)
 
 `internal`
 

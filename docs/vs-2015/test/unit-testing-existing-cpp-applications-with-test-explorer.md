@@ -8,12 +8,12 @@ ms.assetid: 7d08de69-c32e-4f0b-89aa-75347b15fb82
 caps.latest.revision: 13
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3952f73c214c0d7070005f28140e048136279215
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 2558ec2c222bf07ad23c1d00fb3d99b4de5d9f25
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760221"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087441"
 ---
 # <a name="unit-testing-existing-c-applications-with-test-explorer"></a>Applications C++ existantes de tests unitaires avec Test Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,35 +53,35 @@ Nous vous recommandons, avant de modifier une application existante, de vérifie
   
 ## <a name="creating-the-tests"></a>Créer les tests  
   
-###  <a name="staticLink"></a> Pour changer le code testé en une bibliothèque statique  
+### <a name="staticLink"></a> Pour changer le code testé en une bibliothèque statique  
   
 - Si vos tests doivent utiliser des membres qui ne sont pas exportés par un projet testé et que le projet de test est généré sous forme d'une bibliothèque dynamique, pensez à le convertir en bibliothèque statique.  
   
-  1.  Dans l’Explorateur de solutions, dans le menu contextuel du projet testé, choisissez **Propriétés**. La fenêtre des propriétés du projet s'ouvre.  
+  1. Dans l’Explorateur de solutions, dans le menu contextuel du projet testé, choisissez **Propriétés**. La fenêtre des propriétés du projet s'ouvre.  
   
-  2.  Choisissez **Propriétés de configuration**, **Général**.  
+  2. Choisissez **Propriétés de configuration**, **Général**.  
   
-  3.  Définissez **Type de configuration** sur **Bibliothèque statique (.lib)**.  
+  3. Définissez **Type de configuration** sur **Bibliothèque statique (.lib)**.  
   
   Poursuivez avec la procédure [Pour lier les tests aux fichiers objets ou bibliothèques](#objectRef).  
   
-###  <a name="projectRef"></a> Pour référencer des fonctions exportées depuis le projet de test  
+### <a name="projectRef"></a> Pour référencer des fonctions exportées depuis le projet de test  
   
 - Si un projet testé exporte les fonctions que vous souhaitez tester, vous pouvez ajouter une référence au projet de code à partir du projet de test.  
   
-  1.  Créez un projet de test C++.  
+  1. Créez un projet de test C++.  
   
-      1.  Dans le menu **Fichier**, choisissez **Nouveau**, **Projet**, **Visual C++, Test**, **Projet de test unitaire C++**.  
+      1. Dans le menu **Fichier**, choisissez **Nouveau**, **Projet**, **Visual C++, Test**, **Projet de test unitaire C++**.  
   
-  2.  Dans l’Explorateur de solutions, dans le menu contextuel du projet de test, choisissez **Références**. La fenêtre des propriétés du projet s'ouvre.  
+  2. Dans l’Explorateur de solutions, dans le menu contextuel du projet de test, choisissez **Références**. La fenêtre des propriétés du projet s'ouvre.  
   
-  3.  Sélectionnez **Propriétés communes**, **Structure et références**, puis cliquez sur le bouton **Ajouter une nouvelle référence**.  
+  3. Sélectionnez **Propriétés communes**, **Structure et références**, puis cliquez sur le bouton **Ajouter une nouvelle référence**.  
   
-  4.  Sélectionnez **Projets**, puis le projet à tester.  
+  4. Sélectionnez **Projets**, puis le projet à tester.  
   
        Choisissez le bouton **Ajouter** .  
   
-  5.  Dans les propriétés du projet de test, ajoutez l'emplacement du projet testé aux répertoires Include.  
+  5. Dans les propriétés du projet de test, ajoutez l'emplacement du projet testé aux répertoires Include.  
   
        Choisissez **Propriétés de configuration**, **Répertoires VC++**, **Répertoires Include**.  
   
@@ -89,39 +89,39 @@ Nous vous recommandons, avant de modifier une application existante, de vérifie
   
   Passez à [Écrire les tests unitaires](#addTests).  
   
-###  <a name="objectRef"></a> Pour lier les tests aux fichiers objets ou bibliothèques  
+### <a name="objectRef"></a> Pour lier les tests aux fichiers objets ou bibliothèques  
   
 - Si le code testé n’exporte pas les fonctions que vous souhaitez tester, vous pouvez ajouter le fichier de sortie **.obj** ou **.lib** aux dépendances du projet de test.  
   
-  1.  Créez un projet de test C++.  
+  1. Créez un projet de test C++.  
   
-      1.  Dans le menu **Fichier**, choisissez **Nouveau**, **Projet**, **Visual C++, Test**, **Projet de test unitaire C++**.  
+      1. Dans le menu **Fichier**, choisissez **Nouveau**, **Projet**, **Visual C++, Test**, **Projet de test unitaire C++**.  
   
-  2.  Dans l’Explorateur de solutions, dans le menu contextuel du projet de test, choisissez **Propriétés**. La fenêtre des propriétés du projet s'ouvre.  
+  2. Dans l’Explorateur de solutions, dans le menu contextuel du projet de test, choisissez **Propriétés**. La fenêtre des propriétés du projet s'ouvre.  
   
-  3.  Choisissez **Propriétés de configuration**, **Éditeur de liens**, **Entrée**, **Dépendances supplémentaires**.  
+  3. Choisissez **Propriétés de configuration**, **Éditeur de liens**, **Entrée**, **Dépendances supplémentaires**.  
   
        Choisissez **Modifier**, puis ajoutez les noms des fichiers **.obj** ou **.lib**. N’utilisez pas les chemins d’accès complets.  
   
-  4.  Choisissez **Propriétés de configuration**, **Éditeur de liens**, **Général**, **Répertoires de bibliothèques supplémentaires**.  
+  4. Choisissez **Propriétés de configuration**, **Éditeur de liens**, **Général**, **Répertoires de bibliothèques supplémentaires**.  
   
        Choisissez **Modifier**, puis ajoutez le chemin d’accès au répertoire des fichiers **.obj** ou **.lib**. Le chemin d’accès se trouve généralement dans le dossier de build du projet testé.  
   
-  5.  Choisissez **Propriétés de configuration**, **Répertoires VC++**, **Répertoires Include**.  
+  5. Choisissez **Propriétés de configuration**, **Répertoires VC++**, **Répertoires Include**.  
   
        Choisissez **Modifier**, puis ajoutez le répertoire d’en-tête du projet testé.  
   
   Passez à [Écrire les tests unitaires](#addTests).  
   
-###  <a name="sameProject"></a> Pour ajouter des tests unitaires dans le même projet  
+### <a name="sameProject"></a> Pour ajouter des tests unitaires dans le même projet  
   
 1. Modifiez les propriétés du projet du code du produit pour inclure les en-têtes et les fichiers bibliothèques qui sont requis pour le test unitaire.  
   
-   1.  Dans l'Explorateur de solutions, dans le menu contextuel du projet testé, choisissez Propriétés. La fenêtre des propriétés du projet s'ouvre.  
+   1. Dans l'Explorateur de solutions, dans le menu contextuel du projet testé, choisissez Propriétés. La fenêtre des propriétés du projet s'ouvre.  
   
-   2.  Choisissez **Propriétés de configuration**, **Répertoires VC++**.  
+   2. Choisissez **Propriétés de configuration**, **Répertoires VC++**.  
   
-   3.  Modifiez les répertoires Include et de bibliothèques :  
+   3. Modifiez les répertoires Include et de bibliothèques :  
   
        |||  
        |-|-|  
@@ -130,15 +130,15 @@ Nous vous recommandons, avant de modifier une application existante, de vérifie
   
 2. Ajoutez un fichier de test unitaire C++ :  
   
-   -   Dans l’Explorateur de solutions, dans le menu contextuel du projet, choisissez **Ajouter**, **Nouvel élément**, puis **Test unitaire C++**.  
+   - Dans l’Explorateur de solutions, dans le menu contextuel du projet, choisissez **Ajouter**, **Nouvel élément**, puis **Test unitaire C++**.  
   
    Passez à [Écrire les tests unitaires](#addTests).  
   
-##  <a name="addTests"></a> Écrire les tests unitaires  
+## <a name="addTests"></a> Écrire les tests unitaires  
   
 1. Dans chaque fichier de code de test unitaire, ajoutez une instruction `#include` pour les en-têtes du projet testé.  
   
-2. Ajoutez les classes et les méthodes de test aux fichiers de code de test unitaire. Par exemple :  
+2. Ajoutez les classes et les méthodes de test aux fichiers de code de test unitaire. Exemple :  
   
    ```cpp  
    #include "stdafx.h"  
@@ -166,4 +166,4 @@ Nous vous recommandons, avant de modifier une application existante, de vérifie
   
 2. Dans l'Explorateur de tests, choisissez **Exécuter tout**.  
   
-   Pour plus d’informations, consultez [Démarrage rapide : développement piloté par les tests avec l’Explorateur de tests](../test/quick-start-test-driven-development-with-test-explorer.md).
+   Pour plus d’informations, consultez [démarrage rapide : Développement avec l’Explorateur de tests piloté par test](../test/quick-start-test-driven-development-with-test-explorer.md).

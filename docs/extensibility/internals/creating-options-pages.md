@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d05b64f2245e4710f501ed8a24f7052cc310b30
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d87e4002bd920a3b189886ae29bc7cf3a6ccf61f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633081"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044500"
 ---
 # <a name="create-options-pages"></a>Créer des pages d’options
 Dans le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] infrastructure de package gérée, les classes dérivées de <xref:Microsoft.VisualStudio.Shell.DialogPage> étendre le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE en ajoutant **Options** pages sous le **outils** menu.
@@ -25,9 +25,9 @@ Dans le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] infrastruct
 
  Étant donné que l’environnement instancie l’objet qui implémente un particulier **Outils/Options** page lorsque cette page est affichée par l’IDE :
 
--   Un **Option outils** page doit être implémentée sur son propre objet et non sur l’objet qui implémente un VSPackage.
+- Un **Option outils** page doit être implémentée sur son propre objet et non sur l’objet qui implémente un VSPackage.
 
--   Un objet ne peut pas implémenter plusieurs **Outils/Options** pages.
+- Un objet ne peut pas implémenter plusieurs **Outils/Options** pages.
 
 ## <a name="register-as-a-tools-options-page-provider"></a>Enregistrer en tant qu’un fournisseur de la page Outils/Options
  Une configuration utilisateur prise en charge de VSPackage via **Outils/Options** pages indique les objets fournissant ces **Outils/Options** pages en appliquant des instances de <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> appliquée à la <xref:Microsoft.VisualStudio.Shell.Package>implémentation.

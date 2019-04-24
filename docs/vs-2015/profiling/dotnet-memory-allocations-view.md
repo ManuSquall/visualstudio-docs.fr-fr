@@ -16,12 +16,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 563826c63d851e412b7c74a99f5b8a9ad1c1556e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a3c24d8aa984ddc947d3c532020974a196192940
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798805"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082384"
 ---
 # <a name="net-memory-allocations-view"></a>Mode Allocations de mémoire .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ La vue Allocations liste les types qui ont été créés au cours de l’exécut
 ## <a name="highlighting-the-execution-hot-path"></a>Mise en surbrillance du chemin réactif d’exécution  
  Vous pouvez trouver le chemin d’exécution de l’arborescence des appels qui a créé le plus d’objets du type parent.  
   
--   Pour afficher le chemin le plus actif, cliquez avec le bouton droit sur le type ou la fonction, puis cliquez sur **Développer le chemin réactif**.  
+- Pour afficher le chemin le plus actif, cliquez avec le bouton droit sur le type ou la fonction, puis cliquez sur **Développer le chemin réactif**.  
   
 |Colonne|Description|  
 |------------|-----------------|  

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cad2d1a83ed60cde4f3a410f8183e5ee6074321c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: b6b0c4f870de455238c02f5dbecbc0c5d56dfbc9
+ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983908"
+ms.lasthandoff: 03/28/2019
+ms.locfileid: "58567826"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>Publier une application sur IIS en important des paramètres de publication dans Visual Studio
 
@@ -56,9 +56,9 @@ Un fichier de paramètres de publication (*\*.publishsettings*) est différent d
 
 ## <a name="create-a-new-aspnet-project-in-visual-studio"></a>Créer un projet ASP.NET dans Visual Studio
 
-1. Sur l’ordinateur exécutant Visual Studio, choisissez **Fichier** > **Nouveau projet**.
+1. Sur l’ordinateur exécutant Visual Studio, créez un projet.
 
-1. Sous **Visual C#**  ou **Visual Basic**, choisissez **Web** puis, dans le volet central choisissez **Application web ASP.NET (.NET Framework)** ou (pour C# uniquement) **Application web ASP.NET Core**, puis cliquez sur **OK**.
+    Choisissez le modèle adéquat. Dans cet exemple, choisissez **Application web ASP.NET (.NET Framework)** ou (pour C# uniquement) **Application web ASP.NET Core**, puis cliquez sur **OK**.
 
     Si vous ne voyez pas les modèles de projet spécifiés, cliquez sur le lien **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**. Visual Studio Installer est lancé. Installez la charge de travail **Développement web et ASP.NET**.
 

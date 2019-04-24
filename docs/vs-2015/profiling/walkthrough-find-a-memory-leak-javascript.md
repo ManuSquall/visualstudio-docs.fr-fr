@@ -16,14 +16,14 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 88f9d8fc871f182bb3a6d7f36c3648982e7a9684
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 0533ed4a4d1fc45b41f1e324b087cc0e249e1083
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780932"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100444"
 ---
-# <a name="walkthrough-find-a-memory-leak-javascript"></a>Procédure pas à pas : rechercher une fuite de mémoire (JavaScript)
+# <a name="walkthrough-find-a-memory-leak-javascript"></a>Procédure pas à pas : Rechercher une fuite de mémoire (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.png « windows_and_phone_content »)  
@@ -34,18 +34,18 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 ### <a name="running-the-javascript-memory-analyzer-test-app"></a>Exécution de l'application test de l'analyseur de mémoire JavaScript  
   
-1.  Dans Visual Studio, sélectionnez **Fichier**, **Nouveau**, **Projet**.  
+1. Dans Visual Studio, sélectionnez **Fichier**, **Nouveau**, **Projet**.  
   
-2.  Dans le volet gauche, sélectionnez **JavaScript** , **Windows**, **Windows 8**, puis **Universel** ou **Applications Windows Phone**.  
+2. Dans le volet gauche, sélectionnez **JavaScript** , **Windows**, **Windows 8**, puis **Universel** ou **Applications Windows Phone**.  
   
     > [!IMPORTANT]
     >  Les résultats d'utilisation de la mémoire présentés dans cette rubrique sont testés par rapport à une application Windows 8.  
   
-3.  Choisissez le modèle de projet **Application vide** dans le volet du milieu.  
+3. Choisissez le modèle de projet **Application vide** dans le volet du milieu.  
   
-4.  Dans la zone **Nom** , spécifiez un nom, par exemple `JS_Mem_Tester`, puis choisissez **OK**.  
+4. Dans la zone **Nom** , spécifiez un nom, par exemple `JS_Mem_Tester`, puis choisissez **OK**.  
   
-5.  Dans l’**Explorateur de solutions**, ouvrez default.html et collez le code suivant entre les balises \<body> :  
+5. Dans l’**Explorateur de solutions**, ouvrez default.html et collez le code suivant entre les balises \<body> :  
   
     ```html  
     <div class="wrapper">  
@@ -57,7 +57,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
     > [!IMPORTANT]
     >  Si vous utilisez un modèle d'application universelle Windows 8.1, vous devez mettre à jour le code HTML et CSS dans les projets .Windows et .WindowsPhone.  
   
-6.  Ouvrez default.css et ajoutez le CSS suivant :  
+6. Ouvrez default.css et ajoutez le CSS suivant :  
   
     ```css  
     .memleak {  
@@ -65,7 +65,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
     }  
     ```  
   
-7.  Ouvrez default.js et remplacez l'ensemble du code par le code suivant :  
+7. Ouvrez default.js et remplacez l'ensemble du code par le code suivant :  
   
     ```javascript  
     (function () {  
@@ -126,7 +126,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
     })();  
     ```  
   
-8.  Appuyez sur la touche F5 pour démarrer le débogage. Vérifiez que le bouton **Fuite de mémoire** apparaît sur la page.  
+8. Appuyez sur la touche F5 pour démarrer le débogage. Vérifiez que le bouton **Fuite de mémoire** apparaît sur la page.  
   
 9. Basculez à nouveau vers Visual Studio (Alt+Tab) et appuyez sur Maj + F5 pour arrêter le débogage.  
   
@@ -224,7 +224,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
     > [!TIP]
     >  Parfois, la recherche d'un objet par rapport à l'objet `Global` peut aider à identifier cet objet. Pour cela, ouvrez le menu contextuel de l'identificateur et choisissez **Afficher en vue racine**.  
   
-##  <a name="FixingMemory"></a> Résolution du problème de mémoire  
+## <a name="FixingMemory"></a> Résolution du problème de mémoire  
   
 1. Les données révélées par le profileur vous permettent d'examiner le code responsable de la suppression d'éléments DOM avec un ID d'« élément ». Cela se produit dans la fonction `initialize()`.  
   

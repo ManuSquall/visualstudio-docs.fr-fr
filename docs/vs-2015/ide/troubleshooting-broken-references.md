@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbc1bff5ad547a946efa3edcd5c21cc6de4fad07
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ed23ea566bb27eaa8a315473fdf5345764ad5384
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780525"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113948"
 ---
 # <a name="troubleshooting-broken-references"></a>Dépannage de références rompues
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,11 +54,11 @@ Si votre application tente d’utiliser une référence rompue, une erreur d’e
   
 #### <a name="to-fix-a-broken-project-reference-by-correcting-the-reference-path"></a>Pour réparer une référence de projet rompue en corrigeant son chemin  
   
-1.  Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le nœud de votre projet, puis cliquez sur **Propriétés**.  
+1. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le nœud de votre projet, puis cliquez sur **Propriétés**.  
   
-2.  Le **Concepteur de projet** s’affiche.  
+2. Le **Concepteur de projet** s’affiche.  
   
-3.  Si vous utilisez Visual Basic, sélectionnez la page **Références**, puis cliquez sur le bouton **Chemins d’accès des références**. Dans la boîte de dialogue **Chemins d’accès des références**, tapez le chemin du dossier contenant l’élément que vous voulez référencer dans le champ **Dossier**, puis cliquez sur le bouton **Ajouter un dossier**.  
+3. Si vous utilisez Visual Basic, sélectionnez la page **Références**, puis cliquez sur le bouton **Chemins d’accès des références**. Dans la boîte de dialogue **Chemins d’accès des références**, tapez le chemin du dossier contenant l’élément que vous voulez référencer dans le champ **Dossier**, puis cliquez sur le bouton **Ajouter un dossier**.  
   
      - ou -  
   
@@ -69,20 +69,20 @@ Si votre application tente d’utiliser une référence rompue, une erreur d’e
   
 #### <a name="to-fix-a-broken-project-reference-for-a-file-that-no-longer-exists-on-your-drive"></a>Pour réparer une référence de projet rompue pour un fichier qui n’existe plus sur le lecteur  
   
--   Supprimez la référence.  
+- Supprimez la référence.  
   
--   Si la référence existe dans un autre emplacement sur votre ordinateur, lisez-la à partir de cet emplacement.  
+- Si la référence existe dans un autre emplacement sur votre ordinateur, lisez-la à partir de cet emplacement.  
   
--   Pour plus d’informations, consultez [NIB Comment : ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter une référence](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+- Pour plus d’informations, consultez [NIB Comment : ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter une référence](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 ## <a name="referenced-file-has-been-renamed"></a>Un fichier référencé a été renommé  
  Il est possible que le fichier référencé ait été renommé.  
   
 #### <a name="to-fix-a-broken-reference-for-a-file-that-has-been-renamed"></a>Pour réparer une référence rompue d’un fichier qui a été renommé  
   
--   Supprimez la référence, puis ajoutez une référence au fichier renommé.  
+- Supprimez la référence, puis ajoutez une référence au fichier renommé.  
   
--   Si la référence existe dans un autre emplacement sur votre ordinateur, vous devez la lire à partir de cet emplacement. Pour plus d’informations, consultez [NIB Comment : ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter une référence](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
+- Si la référence existe dans un autre emplacement sur votre ordinateur, vous devez la lire à partir de cet emplacement. Pour plus d’informations, consultez [NIB Comment : ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter une référence](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 ## <a name="network-connection-or-authentication-has-failed"></a>La connexion réseau ou l’authentification a échoué  
  Il peut exister quantité de raisons expliquant l’inaccessibilité des fichiers : un échec de la connexion réseau ou de l’authentification, par exemple. À chaque cause d’un problème peut être associée une solution unique ; par exemple, vous devrez peut-être contacter l’administrateur local pour qu’il vous donne accès aux ressources nécessaires. Toutefois, il est toujours possible de supprimer la référence et de réparer le code qui l’utilise. Pour plus d’informations, consultez [NIB Comment : ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter une référence](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  

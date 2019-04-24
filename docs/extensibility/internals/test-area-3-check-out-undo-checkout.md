@@ -1,5 +1,5 @@
 ---
-title: 'Zone de test 3 : Vérification-annuler l’extraction | Microsoft Docs'
+title: 'Zone de test 3 : Vérification-annuler l’extraction | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -13,14 +13,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 772e238367f16d95fa47d661f8a4bd24091524d1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: eb95c5475c653e60c863ddf093d3a92e0c70cf45
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605651"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048086"
 ---
-# <a name="test-area-3-check-outundo-checkout"></a>Zone de test 3 : Découvrez / annuler l’extraction
+# <a name="test-area-3-check-outundo-checkout"></a>Zone de test 3 : Découvrez / annuler l’extraction
 Cette zone de test plug-in de contrôle de code source comporte articles de modification et de restauration à partir de la banque des versions via le **Check Out** et **annuler l’extraction** commandes.
 
 **Découvrez**: Marque un élément dans la banque des versions comme extrait, modifie la copie locale en lecture/écriture.
@@ -33,21 +33,21 @@ Ce qui suit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] menu ch
 
 ##### <a name="check-out"></a>Vérifier :
 
--   **Fichier**, **contrôle de code Source**, **extraire**.
+- **Fichier**, **contrôle de code Source**, **extraire**.
 
--   **Fichier**, **extraire**.
+- **Fichier**, **extraire**.
 
--   Menu contextuel, **extraire**.
+- Menu contextuel, **extraire**.
 
--   Annuler l’extraction : **Fichier**, **contrôle de code Source**, **annuler l’extraction**.
+- Annuler l’extraction : **Fichier**, **contrôle de code Source**, **annuler l’extraction**.
 
 ## <a name="common-expected-behavior"></a>Comportement attendu commun
 
--   Après l’opération d’extraction, l’ou les fichiers cibles et/ou les dossiers sont marqués comme extrait dans la banque des versions.
+- Après l’opération d’extraction, l’ou les fichiers cibles et/ou les dossiers sont marqués comme extrait dans la banque des versions.
 
--   La banque des versions attributs de l’extraction à l’utilisateur approprié.
+- La banque des versions attributs de l’extraction à l’utilisateur approprié.
 
--   La date et heure de l’extraction sont corrects (par les paramètres de l’utilisateur).
+- La date et heure de l’extraction sont corrects (par les paramètres de l’utilisateur).
 
 ## <a name="test-cases"></a>Cas de test
 
@@ -74,11 +74,11 @@ Lorsque l’utilisateur se reconnecte à la version stocker, les États d’extr
 
 #### <a name="expected-behavior"></a>Comportement attendu
 
--   Impossible d’utiliser **Out exclusivement** commande tout en étant déconnecté à partir de la banque des versions.
+- Impossible d’utiliser **Out exclusivement** commande tout en étant déconnecté à partir de la banque des versions.
 
--   Impossible d’utiliser **annuler l’extraction** commande tout en étant déconnecté à partir de la banque des versions.
+- Impossible d’utiliser **annuler l’extraction** commande tout en étant déconnecté à partir de la banque des versions.
 
--   **Partagé Check Out** commande fonctionne.
+- **Partagé Check Out** commande fonctionne.
 
 |Action|Étapes de test|Résultats attendus pour vérifier|
 |------------|----------------|--------------------------------|
@@ -89,13 +89,13 @@ Lorsque l’utilisateur se reconnecte à la version stocker, les États d’extr
 
 #### <a name="expected-behavior"></a>Comportement attendu
 
--   Après l’opération d’extraction, l’ou les fichiers cibles et/ou les dossiers sont marqués comme extrait dans la banque des versions.
+- Après l’opération d’extraction, l’ou les fichiers cibles et/ou les dossiers sont marqués comme extrait dans la banque des versions.
 
--   La banque des versions attributs de l’extraction à l’utilisateur approprié.
+- La banque des versions attributs de l’extraction à l’utilisateur approprié.
 
--   La date et heure de l’extraction sont corrects (par les paramètres de l’utilisateur).
+- La date et heure de l’extraction sont corrects (par les paramètres de l’utilisateur).
 
--   La copie locale du fichier cible ou du dossier est accessible en écriture.
+- La copie locale du fichier cible ou du dossier est accessible en écriture.
 
 |Action|Étapes de test|Résultats attendus pour vérifier|
 |------------|----------------|--------------------------------|
@@ -108,13 +108,13 @@ Lorsque l’utilisateur se reconnecte à la version stocker, les États d’extr
 
 #### <a name="expected-behavior"></a>Comportement attendu
 
--   Après l’opération d’extraction, l’ou les fichiers cibles et/ou les dossiers sont marqués comme extrait dans la banque des versions.
+- Après l’opération d’extraction, l’ou les fichiers cibles et/ou les dossiers sont marqués comme extrait dans la banque des versions.
 
--   La banque des versions attributs de l’extraction à l’utilisateur approprié.
+- La banque des versions attributs de l’extraction à l’utilisateur approprié.
 
--   La date et heure de l’extraction est correct (selon les paramètres de l’utilisateur).
+- La date et heure de l’extraction est correct (selon les paramètres de l’utilisateur).
 
--   La copie locale du fichier cible ou du dossier est accessible en écriture.
+- La copie locale du fichier cible ou du dossier est accessible en écriture.
 
 |Action|Étapes de test|Résultats attendus pour vérifier|
 |------------|----------------|--------------------------------|
@@ -126,9 +126,9 @@ Lorsque l’utilisateur se reconnecte à la version stocker, les États d’extr
 
 #### <a name="expected-behavior"></a>Comportement attendu
 
--   La valeur par défaut est basé sur l’utilisateur **extraire la Version locale** paramètre. Si l’utilisateur a choisi d’extraire la version locale, la valeur par défaut pour l’annulation de l’extraction est toujours revenir à la version extraite.
+- La valeur par défaut est basé sur l’utilisateur **extraire la Version locale** paramètre. Si l’utilisateur a choisi d’extraire la version locale, la valeur par défaut pour l’annulation de l’extraction est toujours revenir à la version extraite.
 
--   Après l’acceptation de la restauration, les icônes dans **l’Explorateur de solutions** sont mises à jour d’affectée fichiers et l’élément est supprimé de la **archivages en attente** fenêtre.
+- Après l’acceptation de la restauration, les icônes dans **l’Explorateur de solutions** sont mises à jour d’affectée fichiers et l’élément est supprimé de la **archivages en attente** fenêtre.
 
 |Action|Étapes de test|Résultats attendus pour vérifier|
 |------------|----------------|--------------------------------|

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0f4add2a01a9fd26fe5479bbf6ba54f25e8b2e14
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f24b86f51d658ea2f228f1e72d18394fcba4b47b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625697"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072817"
 ---
 # <a name="required-changes-to-run-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Modifications requises pour exécuter les projets Office que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5
   Si le framework cible d’un projet Office est remplacé par la [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou version ultérieure à partir d’une version antérieure du .NET Framework, vous devez effectuer les tâches suivantes pour vous assurer que la solution puisse s’exécuter sur l’ordinateur de développement et sur les ordinateurs des utilisateurs finaux :
@@ -30,7 +30,7 @@ ms.locfileid: "56625697"
 
 - Les utilisateurs finaux doivent également réinstaller la solution si vous l'avez précédemment déployée à l'aide de ClickOnce avant d'avoir changé la version cible de .NET Framework.
 
-  Pour plus d’informations sur chacune de ces tâches, consultez les sections correspondantes ci-dessous.
+  Pour plus d'informations sur chacune de ces tâches, consultez les sections correspondantes ci-dessous.
 
 ## <a name="remove-the-securitytransparent-attribute-from-projects-that-you-upgrade-from-visual-studio-2008"></a>Supprimer l’attribut SecurityTransparent des projets que vous mettez à niveau à partir de Visual Studio 2008
  Si vous mettez à niveau un projet Office à partir de Visual Studio 2008 et que la version cible de .Net Framework du projet est ensuite remplacée par [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou une version ultérieure, vous devez supprimer <xref:System.Security.SecurityTransparentAttribute> du projet. Visual Studio ne supprime pas automatiquement cet attribut. Si vous ne supprimez pas cet attribut, un message d'erreur s'affiche lorsque vous compilez le projet.
@@ -39,14 +39,14 @@ ms.locfileid: "56625697"
 
 #### <a name="to-remove-the-securitytransparentattribute"></a>Pour supprimer l'attribut SecurityTransparentAttribute
 
-1.  Le projet étant ouvert dans Visual Studio, ouvrez l' **Explorateur de solutions**.
+1. Le projet étant ouvert dans Visual Studio, ouvrez l' **Explorateur de solutions**.
 
-2.  Sous le nœud **Propriétés** (pour C#) ou le nœud **My Project** (pour Visual Basic), double-cliquez sur le fichier de code AssemblyInfo pour l'ouvrir dans l'éditeur de code.
+2. Sous le nœud **Propriétés** (pour C#) ou le nœud **My Project** (pour Visual Basic), double-cliquez sur le fichier de code AssemblyInfo pour l'ouvrir dans l'éditeur de code.
 
     > [!NOTE]
     >  Dans les projets Visual Basic, vous devez cliquer sur le bouton **Afficher tous les fichiers** de l' **Explorateur de solutions** pour afficher le fichier de code AssemblyInfo.
 
-3.  Recherchez le <xref:System.Security.SecurityTransparentAttribute> et supprimez-le du fichier ou commentez-le.
+3. Recherchez le <xref:System.Security.SecurityTransparentAttribute> et supprimez-le du fichier ou commentez-le.
 
     ```vb
     <Assembly: SecurityTransparent()>

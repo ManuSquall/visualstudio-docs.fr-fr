@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89ddfd81c68ed2ef675052d1fbba524f0a03cfc2
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: 5ce63a9f5ab04748975521c225d207bee2b0937b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232812"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089554"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Couleurs partagées pour Visual Studio
 Lorsque vous concevez l’interface utilisateur qui utilise des éléments communs du shell Visual Studio, ou vous souhaitez que votre élément d’interface pour être cohérent avec des fonctionnalités similaires, vous pouvez utiliser des noms de jeton existants dans les fichiers de définition de package pour choisir et assigner des couleurs. Ainsi, votre interface utilisateur reste cohérente avec l’environnement Visual Studio global et elle se met à jour automatiquement quand des thèmes sont ajoutés ou mis à jour.
@@ -22,11 +22,11 @@ Cet article décrit les éléments d’interface utilisateur communs et les noms
 
 Assurez-vous d’utiliser correctement les noms de jeton :
 
--   **Utilisez des noms de jeton basés sur la fonction et non sur la couleur elle-même.** Les couleurs partagées communes sont associées à des éléments d’interface spécifiques et uniquement destinées à être utilisées pour des fonctionnalités identiques ou similaires. Par exemple, ne réutilisez pas la couleur d’une zone de liste modifiable enfoncée pour une animation de progression en rotation juste parce que vous aimez la couleur. Les fonctions de la zone de liste modifiable et l’animation sont différentes, et si la couleur associé avec les modifications de zone de liste modifiable, il peut ne plus être une couleur appropriée pour votre élément d’animation. Une utilisation cohérente des couleurs permet de guider vos utilisateurs et d’éviter toute confusion.
+- **Utiliser des noms de jeton basés sur la fonction, pas sur la couleur elle-même.** Les couleurs partagées communes sont associées à des éléments d’interface spécifiques et uniquement destinées à être utilisées pour des fonctionnalités identiques ou similaires. Par exemple, ne réutilisez pas la couleur d’une zone de liste modifiable enfoncée pour une animation de progression en rotation juste parce que vous aimez la couleur. Les fonctions de la zone de liste modifiable et l’animation sont différentes, et si la couleur associé avec les modifications de zone de liste modifiable, il peut ne plus être une couleur appropriée pour votre élément d’animation. Une utilisation cohérente des couleurs permet de guider vos utilisateurs et d’éviter toute confusion.
 
--   **Associez correctement les couleurs d’arrière-plan et de texte.** Les couleurs d’arrière-plan destinées à être utilisées avec du texte possèdent une couleur de texte associée. N’utilisez pas de couleurs de texte autres que celles spécifiées pour l’arrière-plan. S’il n’est pas une couleur de texte associée, n’utilisez pas cette couleur d’arrière-plan pour n’importe quelle surface sur laquelle vous vous attendez afficher le texte. Autres combinaisons de couleurs de texte et d’arrière-plan peuvent entraîner une interface illisible.
+- **Utiliser des couleurs d’arrière-plan et de texte dans la combinaison correcte.** Les couleurs d’arrière-plan destinées à être utilisées avec du texte possèdent une couleur de texte associée. N’utilisez pas de couleurs de texte autres que celles spécifiées pour l’arrière-plan. S’il n’est pas une couleur de texte associée, n’utilisez pas cette couleur d’arrière-plan pour n’importe quelle surface sur laquelle vous vous attendez afficher le texte. Autres combinaisons de couleurs de texte et d’arrière-plan peuvent entraîner une interface illisible.
 
--   **Utilisez des couleurs de contrôle appropriées à leur emplacement.** Dans certains États, certains contrôles Visual Studio n’ont une bordure distincte et couleurs d’arrière-plan. Au lieu de cela, ils sélectionnent ces couleurs dans les surfaces qui se trouvent derrière. Veillez à toujours utiliser les noms de jeton qui conviennent à l’emplacement où vous placez le contrôle.
+- **Utiliser les couleurs de contrôle qui sont appropriées à leur emplacement.** Dans certains États, certains contrôles Visual Studio n’ont une bordure distincte et couleurs d’arrière-plan. Au lieu de cela, ils sélectionnent ces couleurs dans les surfaces qui se trouvent derrière. Veillez à toujours utiliser les noms de jeton qui conviennent à l’emplacement où vous placez le contrôle.
 
 > [!IMPORTANT]
 > N’utilisez pas les jetons trouvés dans les catégories « Page d’accueil » ou « Cider ».
@@ -623,13 +623,13 @@ Si possible, utilisez le contrôle de recherche commun fourni par l’environnem
 
 Une zone de recherche peut être dans plusieurs états, dont certains s’excluent mutuellement :
 
--   Les états « avec focus » ou « sans focus » font référence à la présence ou non du curseur dans la zone de texte.
+- Les états « avec focus » ou « sans focus » font référence à la présence ou non du curseur dans la zone de texte.
 
--   Les états « actif » ou « inactif » font référence à l’éventuel entrée par l’utilisateur d’une requête de recherche dans la zone de texte.
+- Les états « actif » ou « inactif » font référence à l’éventuel entrée par l’utilisateur d’une requête de recherche dans la zone de texte.
 
--   L’état « pointage » signifie que l’utilisateur a placé le curseur de la souris au-dessus de la zone de recherche (cet état remplace tous les autres états).
+- L’état « pointage » signifie que l’utilisateur a placé le curseur de la souris au-dessus de la zone de recherche (cet état remplace tous les autres états).
 
--   L’état « désactivé » signifie que la fonctionnalité de recherche est désactivée pour le contexte actuel.
+- L’état « désactivé » signifie que la fonctionnalité de recherche est désactivée pour le contexte actuel.
 
 ![Zone de recherche (ligne rouge)](../../extensibility/ux-guidelines/media/0303-110_searchboxredline.png "0303-110_SearchBoxRedline")<br />Zone de recherche (ligne rouge)
 
@@ -854,7 +854,7 @@ Menu de liste déroulante de la zone de recherche a susceptibles d’être lég�
 | Arrière-plan de lien | `SearchControl.PopupButtonMouseDownBackgroundGradientBegin`<br />(Points de dégradé pour ce jeton ne pas utilisé dans l’interface utilisateur à thème.) |
 | Premier plan (texte de lien) | `SearchControl.PopupButtonMouseDownText` |
 
-###  <a name="BKMK_TreeView"></a> Vues de l’arborescence
+### <a name="BKMK_TreeView"></a> Vues de l’arborescence
 Plusieurs fenêtres d’outils, y compris l’Explorateur de solutions, l’Explorateur de serveurs et l’affichage de classes, implémentent un schéma d’organisation hiérarchique dont les couleurs sont contrôlées par les noms de couleur de la `TreeView` catégorie. Tous les éléments d’une arborescence ont des couleurs d’arrière-plan et de texte. Les éléments qui possèdent des éléments enfants imbriqués ont également des glyphes qui indiquent si l’élément est développé ou réduit.
 
 ![Vue arborescente (ligne rouge)](../../extensibility/ux-guidelines/media/0303-147_treeviewredline.png "0303-147_TreeViewRedline")<br />Vue arborescente (ligne rouge)
@@ -1037,7 +1037,7 @@ Le concepteur de manifeste sert à faciliter l’édition du fichier manifeste d
 
 ## <a name="command-structures"></a>Structures de commande
 
-###  <a name="BKMK_CommandMenus"></a> Menus
+### <a name="BKMK_CommandMenus"></a> Menus
 Menus peuvent se produire à plusieurs endroits dans Visual Studio : la barre de menus principale incorporée dans le document ou l’outil windows, ou sur avec le bouton droit à divers endroits de l’IDE. Les implémentations de menus associées aux autres éléments d’interface utilisateur sont décrites dans la section de l’élément correspondant. Vous devez toujours utiliser l’implémentation de menu standard fournie par l’environnement Visual Studio. Toutefois, dans de rares cas, vous n’aurez peut-être pas accès aux menus Visual Studio standard. Dans ce cas, utilisez les noms de jeton suivants pour vous assurer que votre interface utilisateur est cohérente avec les autres menus dans Visual Studio.
 
 ![Menu de Visual Studio (ligne rouge)](../../extensibility/ux-guidelines/media/0303-000_menuredline.png "0303-000_MenuRedline")<br />Menu de Visual Studio (ligne rouge)
@@ -1278,7 +1278,7 @@ Un groupe de barres de commandes se compose d’un ensemble de contrôles de bar
 | Premier plan (texte) | `Environment.CommandBarTextInactive` |
 | Bordure | N/A |
 
-####  <a name="BKMK_CommandComboBox"></a> Zones de liste déroulante de barre de commande
+#### <a name="BKMK_CommandComboBox"></a> Zones de liste déroulante de barre de commande
 
 > [!IMPORTANT]
 > Les zones de liste modifiable ressemblent aux listes déroulantes, mais elles comprennent une zone de texte modifiable. Si votre liste déroulante n’inclut pas de zone de texte modifiable, utilisez les jetons de couleur pour [barre listes déroulantes de commandes](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown).
@@ -1410,7 +1410,7 @@ Un groupe de barres de commandes se compose d’un ensemble de contrôles de bar
 | Présentation | Aucun. |
 | Premier plan (glyphe) | `Environment.ComboBoxDisabledGlyph` |
 
-####  <a name="BKMK_CommandDropDown"></a> Commande Barres déroulantes
+#### <a name="BKMK_CommandDropDown"></a> Commande Barres déroulantes
 
 > [!IMPORTANT]
 >  Les listes déroulantes ressemblent aux zones de liste modifiable, mais elles ne disposent pas de zones de texte modifiable. Si votre liste déroulante inclut une zone de texte modifiable, utilisez les jetons de couleur pour [barre des zones de liste déroulante de commandes](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox).
@@ -1713,9 +1713,9 @@ Les onglets de document figurent dans le canal d’onglet pour indiquer quels do
 #### <a name="open-document-tabs"></a>Onglets de document ouvert
 Chaque document ouvert possède un onglet dans le canal d’onglet de document qui affiche son nom. Les documents peuvent être soit sélectionnés, soit ouverts en arrière-plan et leurs onglets reflètent ces états :
 
--   L’onglet sélectionné représente le document actuellement affiché dans la zone de configuration de document. Un onglet sélectionné a une bordure de document qui s’étend sur le bord supérieur de la zone de configuration de document.
+- L’onglet sélectionné représente le document actuellement affiché dans la zone de configuration de document. Un onglet sélectionné a une bordure de document qui s’étend sur le bord supérieur de la zone de configuration de document.
 
--   Les onglets d’arrière-plan sont les onglets de document qui ne sont pas l’onglet actuellement sélectionné. Une fois que vous cliquez dessus, ils deviennent l’onglet sélectionné et acquièrent toutes les couleurs d’arrière-plan, de bordure et de texte de ces noms de jeton.
+- Les onglets d’arrière-plan sont les onglets de document qui ne sont pas l’onglet actuellement sélectionné. Une fois que vous cliquez dessus, ils deviennent l’onglet sélectionné et acquièrent toutes les couleurs d’arrière-plan, de bordure et de texte de ces noms de jeton.
 
 ![Open document tab (redline)](../../extensibility/ux-guidelines/media/0303-073_opendocumenttabredline.png "0303-073_OpenDocumentTabRedline")<br />Onglet de document ouvert (ligne rouge)
 
@@ -1949,7 +1949,6 @@ Visual Studio prend en charge l’étiquetage, qui permet à un utilisateur de d
 
 ![Sélectionné la balise de fermeture (&times;) glyphe au pointage](../../extensibility/ux-guidelines/media/0303-185_tagselectedhover.png "0303-185_TagSelectedHover")<br />Sélectionné la balise de fermeture (&times;) glyphe au pointage
 
-
 | Élément | Nom du jeton : Category.color |
 | --- | --- |
 | Présentation | `Tag.TagSelectedGlyphHoverBackground` |
@@ -2090,7 +2089,7 @@ La bordure de barre de titre n’est pas une véritable bordure, il est une lign
 | Bordure | `Environment.TitleBarActiveBorder`<br />(Défini sur la même couleur comme arrière-plan). |
 | Faire glisser la poignée | `Environment.TitleBarDragHandleActive` |
 
-**Barre de titre sans focus**
+**Barre de titre inactive**
 
 ![Barre de titre inactive](../../extensibility/ux-guidelines/media/0303-094_titlebarunfocused.png "0303-094_TitleBarUnfocused")<br />Barre de titre sans focus
 
@@ -2176,7 +2175,7 @@ La bordure de barre de titre n’est pas une véritable bordure, il est une lign
 | --- | --- |
 | ... n’importe où vous créez l’interface utilisateur que vous souhaitez faire correspondre les fenêtres Outil. | ... pour toute interface utilisateur que vous ne souhaitez pas modifier automatiquement si l’interpréteur de commandes comporte une mise à jour de thème. |
 
-**Onglet de fenêtre Outil sélectionné, avec focus**
+**Onglet fenêtre outil sélectionné, avec focus**
 
 ![Sélectionnée, le focus d’onglet de fenêtre outil](../../extensibility/ux-guidelines/media/0303-103_toolwindowtabfocused.png "0303-103_ToolWindowTabFocused")<br />Onglet de fenêtre Outil sélectionné, avec focus
 
@@ -2186,7 +2185,7 @@ La bordure de barre de titre n’est pas une véritable bordure, il est une lign
 | Premier plan (texte) | `Environment.ToolWindowTabSelectedActiveText` |
 | Bordure | `Environment.ToolWindowTabSelectedBorder`<br />(Défini sur la même couleur comme arrière-plan). |
 
-**Onglet de fenêtre Outil sélectionné, sans focus**
+**Onglet fenêtre outil sélectionné, sans focus**
 
 ![Onglet fenêtre outil sélectionné, sans focus](../../extensibility/ux-guidelines/media/0303-104_toolwindowtabunfocused.png "0303-104_ToolWindowTabUnfocused")<br />Onglet de fenêtre Outil sélectionné, sans focus
 

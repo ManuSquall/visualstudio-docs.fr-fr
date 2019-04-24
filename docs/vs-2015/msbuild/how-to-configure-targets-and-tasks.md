@@ -9,17 +9,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 036705b8184b0c2465b92d616bec399c769fc496
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e5771158e23acb399b3446e784e27825bb15d705
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758224"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658982"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Guide pratique pour configurer les cibles et les tâches
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Des tâches MSBuild sélectionnées peuvent être définies pour s’exécuter dans l’environnement qu’elles ciblent, quel que soit l’environnement de l’ordinateur de développement. Par exemple, quand vous utilisez un ordinateur 64 bits pour générer une application ciblant une architecture 32 bits, les tâches sélectionnées sont exécutées dans un processus 32 bits.  
   
 > [!NOTE]

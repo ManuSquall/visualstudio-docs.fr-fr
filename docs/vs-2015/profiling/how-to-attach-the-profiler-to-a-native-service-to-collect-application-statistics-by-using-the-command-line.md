@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour attacher le profileur à un service natif et collecter des statistiques d’application en utilisant la ligne de commande | Microsoft Docs
+title: 'Procédure : Attacher le profileur à un service natif et collecter des statistiques d’application en utilisant la ligne de commande | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,14 +9,14 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6382d4e674640426d2676531f06dc720b3c7eb4b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 214a7fc8144d50dac52a5be1b45d9d5fc2b4a633
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793157"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078601"
 ---
-# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>Comment : attacher le profileur à un service natif pour collecter des statistiques d'applications en utilisant la ligne de commande
+# <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>Procédure : Attacher le Profiler à un Service natif pour collecter des statistiques d’applications en utilisant la ligne de commande
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette rubrique explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour attacher le profileur à un service natif et pour collecter des statistiques de performances avec la méthode d’échantillonnage.  
@@ -61,7 +61,6 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                           À utiliser avec **/wincounter** uniquement. Spécifie le nombre de millisecondes écoulées entre les événements de collecte du compteur de performances Windows. La valeur par défaut est de 500 ms.                                                                            |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                              Spécifie l’événement du Suivi d’événements pour Windows (ETW) qui doit être collecté au cours du profilage. Les événements ETW sont collectés dans un fichier séparé (.etl).                                                                              |
 
-
 4. Attachez le profileur au service. Type :  
 
     **VSPerfCmd /attach:** `PID` [`Sample Event`]  
@@ -82,7 +81,7 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
 
 #### <a name="to-start-and-stop-data-collection"></a>Pour démarrer et arrêter la collecte de données  
 
--   Les paires d’options **VSPerfCmd** suivantes permettent de démarrer et d’arrêter la collecte des données. Spécifiez chaque option sur une ligne de commande distincte. Vous pouvez activer et désactiver la collecte de données à plusieurs reprises.  
+- Les paires d’options **VSPerfCmd** suivantes permettent de démarrer et d’arrêter la collecte des données. Spécifiez chaque option sur une ligne de commande distincte. Vous pouvez activer et désactiver la collecte de données à plusieurs reprises.  
 
     |Option|Description|  
     |------------|-----------------|  
@@ -95,15 +94,15 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
 
 #### <a name="to-end-a-profiling-session"></a>Pour terminer une session de profilage  
 
-1.  Effectuez une des opérations suivantes pour détacher le profileur de l’application cible :  
+1. Effectuez une des opérations suivantes pour détacher le profileur de l’application cible :  
 
-    -   Arrêtez le service.  
+    - Arrêtez le service.  
 
          - ou -  
 
-    -   Tapez **VSPerfCmd /detach**  
+    - Tapez **VSPerfCmd /detach**  
 
-2.  Fermez le profileur. Type :  
+2. Fermez le profileur. Type :  
 
      **VSPerfCmd /shutdown**  
 

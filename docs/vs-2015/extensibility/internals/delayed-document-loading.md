@@ -8,12 +8,12 @@ ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e3f3948756022c71e54699822715cf9a5b6d7896
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5565749a21614bb0b882beab8c83ed63bc839229
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948241"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116925"
 ---
 # <a name="delayed-document-loading"></a>Chargement de document différé
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,17 +29,17 @@ Lorsqu’un utilisateur ouvre de nouveau une solution Visual Studio, la plupart 
   
 - Le frame de fenêtre méthode GetProperty <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> sur toutes les propriétés suivantes :  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
-  -   <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
+  - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>  
   
   Si votre extension utilise du code managé, vous ne devez pas appeler <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A> , sauf si vous êtes certain que le document n’est pas dans l’état en attente de l’initialisation ou que vous souhaitez que le document soit entièrement initialisé pour... Il s’agit, car cette méthode retourne toujours la documentation de l’objet de données, créant si nécessaire. Au lieu de cela, vous devez appeler une des méthodes sur l’interface IVsRunningDocumentTable4.  
   

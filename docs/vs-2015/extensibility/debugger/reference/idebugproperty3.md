@@ -12,25 +12,25 @@ ms.assetid: 8f9be68d-4490-4eca-8f6b-8a10ed77e226
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c38f0a891c6ee57ad2d483e48e06624fa9bccdf1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 272946c80f5df2c96d4cf2bf20ea988c71766d46
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949123"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100571"
 ---
 # <a name="idebugproperty3"></a>IDebugProperty3
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
 Cette interface prend en charge :  
   
--   Récupération d’une chaîne de longueur arbitraire associée à la propriété.  
+- Récupération d’une chaîne de longueur arbitraire associée à la propriété.  
   
--   Association d’un ID unique à la propriété.  
+- Association d’un ID unique à la propriété.  
   
--   Récupération d’une liste des visionneuses personnalisées pour la propriété.  
+- Récupération d’une liste des visionneuses personnalisées pour la propriété.  
   
--   Définition de la valeur d’une propriété avec la capacité à signaler les erreurs résultantes  
+- Définition de la valeur d’une propriété avec la capacité à signaler les erreurs résultantes  
   
 ## <a name="syntax"></a>Syntaxe  
   

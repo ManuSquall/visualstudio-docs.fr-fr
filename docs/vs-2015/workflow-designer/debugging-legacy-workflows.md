@@ -13,12 +13,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7585d824ea6abf7df0aab5dc07c88abe9ff97081
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b98c520dc96b6f3c6467bbcaf8e48d9cff8791d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948589"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048734"
 ---
 # <a name="debugging-legacy-workflows"></a>Débogage de workflows hérités
 Si vous utilisez le [!INCLUDE[wfd1](../includes/wfd1-md.md)] hérité dans [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] pour créer des applications [!INCLUDE[wf](../includes/wf-md.md)] qui ciblent le .NET Framework 3.0 ou 3.5, vous pouvez déboguer vos workflows comme tout autre programme en définissant des points d'arrêt, en créant des attachements à des processus et en examinant les threads et la pile des appels. Vous avez également la possibilité d'effectuer un débogage à distance.  
@@ -27,7 +27,7 @@ Si vous utilisez le [!INCLUDE[wfd1](../includes/wfd1-md.md)] hérité dans [!INC
 >  Si plusieurs versions de Visual Studio ont été installées et désinstallées sur votre ordinateur, le débogage WF3 peut échouer pour l'une des raisons suivantes :  
 > 
 > - Les points d'arrêt ne sont pas atteints.  
->   -   Le message suivant s'affiche :  
+>   - Le message suivant s'affiche :  
 > 
 >   **Impossible de démarrer le débogage sur le serveur web. Le débogueur n'est pas installé correctement.  Impossible de déboguer le type de code demandé.  Exécutez le programme d’installation pour installer ou réparer le débogueur.**  
 > 

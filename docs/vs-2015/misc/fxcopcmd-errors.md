@@ -10,12 +10,12 @@ ms.assetid: bb614ed0-1b7c-4b56-99ae-da50ef6cfef9
 caps.latest.revision: 12
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b5c7b62ce9e117b348daaa54da3d397346b6eab0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 016f22591deb019718c8271cf0b307d3f4c597c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948855"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043106"
 ---
 # <a name="fxcopcmd-errors"></a>FxCopCmd (erreurs)
 FxCopCmd ne considère pas toutes les erreurs comme irrécupérable. Si FxCopCmd dispose d’informations suffisantes pour effectuer une analyse partielle, il effectue l’analyse et signale les erreurs qui se sont produites. Le code d’erreur, qui est un entier 32 bits, contient une combinaison au niveau du bit des valeurs numériques qui correspondent aux erreurs.  
@@ -40,13 +40,13 @@ FxCopCmd ne considère pas toutes les erreurs comme irrécupérable. Si FxCopCmd
   
  L’erreur d’analyse est retournée pour les erreurs irrécupérables. Il indique que l’analyse a échoué. Le cas échéant, le code d’erreur contient également la cause sous-jacente de l’erreur irrécupérable. Les conditions suivantes génèrent des erreurs irrécupérables :  
   
--   L’analyse n’a pas pu être effectuée provoquée par l’entrée insuffisante.  
+- L’analyse n’a pas pu être effectuée provoquée par l’entrée insuffisante.  
   
--   L’analyse a levé une exception non gérée par FxCopCmd.  
+- L’analyse a levé une exception non gérée par FxCopCmd.  
   
--   Le fichier projet spécifié est introuvable ou est endommagé.  
+- Le fichier projet spécifié est introuvable ou est endommagé.  
   
--   L’option de sortie n’a pas été spécifiée ou le fichier n’a pas pu être écrites.  
+- L’option de sortie n’a pas été spécifiée ou le fichier n’a pas pu être écrites.  
   
     > [!NOTE]
     >  Le code retour FxCopCmd « Erreur des références d’Assembly » 0 x 200 en lui-même est un avertissement plutôt qu’une erreur. Ce code de retour indique que des références indirectes manquantes ont été trouvés, mais que FxCopCmd a été en mesure de les gérer. Il s’agit d’un avertissement qu’il est possible que certains résultats de l’analyse a été compromises. Envisagez le code de retour « Erreur des références d’Assembly » comme une erreur lorsqu’il est combiné avec n’importe quel autre code de retour.  

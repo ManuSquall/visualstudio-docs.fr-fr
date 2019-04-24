@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7c904e74793710dedc96d4a769d4f6c61a15e69
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 834651f525ccb292f82d5cf0ab5a7068a1cf7f20
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54760769"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108306"
 ---
 # <a name="how-to-create-a-basic-3-d-model"></a>Procédure : Créer un modèle 3D de base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,15 +23,15 @@ Ce document montre comment utiliser l'éditeur de modèle pour créer un modèle
   
  Ce document illustre ces activités :  
   
--   Ajout d’objets à une scène  
+- Ajout d’objets à une scène  
   
--   Sélection des faces et des arêtes  
+- Sélection des faces et des arêtes  
   
--   Translation des sélections  
+- Translation des sélections  
   
--   Utilisation des outils **Subdiviser la face** et **Extruder la face**  
+- Utilisation des outils **Subdiviser la face** et **Extruder la face**  
   
--   Utilisation de la commande **Effectuer une triangulation**  
+- Utilisation de la commande **Effectuer une triangulation**  
   
 ## <a name="creating-a-basic-3-d-model"></a>Création d’un modèle 3D de base  
  Vous pouvez utiliser l'éditeur de modèle pour créer et modifier des modèles et scènes 3D pour votre jeu ou application. Les étapes suivantes indiquent comment utiliser l'éditeur de modèle pour créer un modèle 3D simplifié d'une maison. Un modèle simplifié peut être utilisé comme un substitut pour des ressources artistiques finales qui ne sont pas encore créées, comme un maillage pour la détection de collision ou comme un modèle de bas niveau de détail à utiliser lorsque l'objet qu'il représente est trop loin pour bénéficier d'un rendu plus détaillé.  

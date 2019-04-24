@@ -30,12 +30,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d459f641983960fdd7c4c1ded3b90c0a578c42b3
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 253f86f83805d11d7a1a6475fcbaf4eb76bfbc50
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873666"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081240"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analyser et modéliser votre architecture
 
@@ -69,39 +69,39 @@ Les cartes de code vous aident à voir l’organisation et les relations dans vo
 
 **Utilisations courantes :**
 
--   Examiner le code de programme pour mieux comprendre sa structure et ses dépendances, la manière de le mettre à jour, puis estimer le coût des modifications proposées.
+- Examiner le code de programme pour mieux comprendre sa structure et ses dépendances, la manière de le mettre à jour, puis estimer le coût des modifications proposées.
 
 **Voir :**
 
--   [Mapper les dépendances à travers vos solutions](../modeling/map-dependencies-across-your-solutions.md)
--   [Utiliser des cartes de code pour déboguer vos applications](../modeling/use-code-maps-to-debug-your-applications.md)
--   [Rechercher des problèmes potentiels à l’aide des analyseurs de carte du code](../modeling/find-potential-problems-using-code-map-analyzers.md)
+- [Mapper les dépendances à travers vos solutions](../modeling/map-dependencies-across-your-solutions.md)
+- [Utiliser des cartes de code pour déboguer vos applications](../modeling/use-code-maps-to-debug-your-applications.md)
+- [Rechercher des problèmes potentiels à l’aide des analyseurs de carte du code](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
 ### <a name="dependency-diagram"></a>Diagramme de dépendances
 Diagrammes de dépendance vous permettent de définir la structure d’une application en tant qu’ensemble de couches ou de blocs avec des dépendances explicites. Vous pouvez exécuter la validation pour détecter les conflits entre les dépendances dans le code et décrites dans un diagramme de dépendance.
 
 **Utilisations courantes :**
 
--   Stabiliser la structure de l’application au moyen de nombreuses modifications pendant sa durée de vie.
--   Détecter les conflits de dépendance involontaires avant d’archiver les modifications apportées au code.
+- Stabiliser la structure de l’application au moyen de nombreuses modifications pendant sa durée de vie.
+- Détecter les conflits de dépendance involontaires avant d’archiver les modifications apportées au code.
 
 **Voir :**
 
--   [Créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)
--   [Diagrammes de dépendance : Informations de référence](../modeling/layer-diagrams-reference.md)
--   [Validation du code avec des diagrammes de dépendance](../modeling/validate-code-with-layer-diagrams.md)
+- [Créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)
+- [Diagrammes de dépendance : Informations de référence](../modeling/layer-diagrams-reference.md)
+- [Validation du code avec des diagrammes de dépendance](../modeling/validate-code-with-layer-diagrams.md)
 
 ### <a name="domain-specific-language-dsl"></a>Langage spécifique à un domaine (DSL)
 Un langage spécifique à un domaine est une notation que vous concevez dans un but spécifique. Dans Visual Studio, il est en général graphique.
 
 **Utilisations courantes :**
 
--   Générer ou configurer certaines parties de l’application. Un travail est requis pour développer la notation et les outils. Le résultat est ainsi plus adapté à votre domaine qu'une personnalisation UML.
--   Pour les grands projets ou dans les lignes de produits où l’investissement effectué dans le développement du langage spécifique à un domaine et ses outils est amorti par son utilisation dans plusieurs projets.
+- Générer ou configurer certaines parties de l’application. Un travail est requis pour développer la notation et les outils. Le résultat est ainsi plus adapté à votre domaine qu’une personnalisation UML.
+- Pour les grands projets ou dans les lignes de produits où l’investissement effectué dans le développement du langage spécifique à un domaine et ses outils est amorti par son utilisation dans plusieurs projets.
 
 **Voir :**
 
--   [SDK de modélisation pour Visual Studio - Langages spécifiques à un domaine](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
+- [SDK de modélisation pour Visual Studio - Langages spécifiques à un domaine](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
 
 ## <a name="where-can-i-get-more-information"></a>Où peut-on obtenir plus d’informations ?
 

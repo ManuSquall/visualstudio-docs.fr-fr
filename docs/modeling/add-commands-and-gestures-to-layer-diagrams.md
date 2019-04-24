@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 630934ce6915191ccb111e8bc061d8faacc421f7
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: ce8bc44bf506cf315420aad4108832f7461f1c70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415471"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077873"
 ---
 # <a name="add-commands-and-gestures-to-dependency-diagrams"></a>Ajouter des commandes et des mouvements aux diagrammes de dépendance
 
@@ -66,7 +66,7 @@ Pour créer une extension, la méthode la plus rapide consiste à utiliser le mo
 
 Si vous souhaitez créer une extension VSIX qui contient des commandes, des validateurs de couche et d’autres extensions, nous vous recommandons de créer un projet pour définir l’extension VSIX et des projets distincts pour les gestionnaires.
 
-1. Créer un nouveau **bibliothèque de classes** projet. Ce projet contiendra les classes des commandes ou des gestionnaires de mouvements.
+1. Créez un projet de **Bibliothèque de classes**. Ce projet contiendra les classes des commandes ou des gestionnaires de mouvements.
 
    > [!NOTE]
    > Vous pouvez définir plusieurs classes de gestionnaires de mouvements ou de commandes dans une bibliothèque de classes, mais vous devez définir les classes de validation de couche dans une bibliothèque de classes distincte.
@@ -108,7 +108,7 @@ Si vous souhaitez créer une extension VSIX qui contient des commandes, des vali
 
 8. Pour installer l’extension VSIX dans l’instance principale de Visual Studio, ou sur un autre ordinateur, recherchez le **.vsix** de fichiers dans le **bin** répertoire du projet VSIX. Copiez-le sur l’ordinateur sur lequel vous souhaitez installer l’extension VSIX. Double-cliquez sur le fichier VSIX dans l’Explorateur de fichiers.
 
-##  <a name="command"></a> Définition d’une commande de menu
+## <a name="command"></a> Définition d’une commande de menu
 
 Vous pouvez ajouter plusieurs définitions de commandes de menu à un projet de commande ou de mouvement existant. Chaque commande est définie par une classe dont les caractéristiques sont les suivantes :
 
@@ -124,11 +124,11 @@ Vous pouvez ajouter plusieurs définitions de commandes de menu à un projet de 
 
 - Les méthodes qui implémentent `ICommandExtension` sont les suivantes :
 
-  -   `string Text {get;}` : l’étiquette qui apparaît dans le menu.
+  - `string Text {get;}` : l’étiquette qui apparaît dans le menu.
 
-  -   `void QueryStatus(IMenuCommand command)` : appelée quand l’utilisateur clique avec le bouton droit sur le diagramme et détermine si la commande doit être visible et activée pour la sélection actuelle de l’utilisateur.
+  - `void QueryStatus(IMenuCommand command)` : appelée quand l’utilisateur clique avec le bouton droit sur le diagramme et détermine si la commande doit être visible et activée pour la sélection actuelle de l’utilisateur.
 
-  -   `void Execute(IMenuCommand command)` : appelée quand l’utilisateur sélectionne la commande.
+  - `void Execute(IMenuCommand command)` : appelée quand l’utilisateur sélectionne la commande.
 
 - Pour déterminer la sélection actuelle, vous pouvez importer `IDiagramContext`:
 
@@ -212,7 +212,7 @@ namespace MyLayerExtension // Change to your preference.
 }
 ```
 
-##  <a name="gesture"></a> Définition d’un gestionnaire de mouvements
+## <a name="gesture"></a> Définition d’un gestionnaire de mouvements
 
 Un gestionnaire de mouvements réagit lorsque l’utilisateur fait glisser des éléments sur le diagramme de dépendance, et lorsque l’utilisateur double-clique sur n’importe où dans le diagramme.
 
@@ -238,7 +238,7 @@ namespace MyLayerExtensions // change to your preference
 
 Notez les points suivants concernant les gestionnaires de mouvements :
 
--   Les membres de `IGestureExtension` sont les suivants :
+- Les membres de `IGestureExtension` sont les suivants :
 
      **OnDoubleClick** : appelée quand l’utilisateur double-clique n’importe où sur le diagramme.
 
@@ -246,7 +246,7 @@ Notez les points suivants concernant les gestionnaires de mouvements :
 
      **OnDragDrop** : appelée quand l’utilisateur dépose un élément sur le diagramme.
 
--   Le premier argument de chaque méthode est un `IShape`, à partir duquel vous pouvez obtenir l’élément de couche. Exemple :
+- Le premier argument de chaque méthode est un `IShape`, à partir duquel vous pouvez obtenir l’élément de couche. Exemple :
 
     ```csharp
     public void OnDragDrop(IShape target, IDataObject data)
@@ -259,7 +259,7 @@ Notez les points suivants concernant les gestionnaires de mouvements :
     }
     ```
 
--   Les gestionnaires pour certains types d’éléments déplacés sont déjà définis. Par exemple, l’utilisateur peut déplacer les éléments à partir de l’Explorateur de solutions vers un diagramme de dépendances. Vous ne pouvez pas définir un gestionnaire de glissement pour ces types d’éléments. Dans ces cas-là, vos méthodes `DragDrop` ne seront pas appelées.
+- Les gestionnaires pour certains types d’éléments déplacés sont déjà définis. Par exemple, l’utilisateur peut déplacer les éléments à partir de l’Explorateur de solutions vers un diagramme de dépendances. Vous ne pouvez pas définir un gestionnaire de glissement pour ces types d’éléments. Dans ces cas-là, vos méthodes `DragDrop` ne seront pas appelées.
 
 ## <a name="see-also"></a>Voir aussi
 

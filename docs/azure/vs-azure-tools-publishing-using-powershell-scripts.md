@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: dab9cd1600e77a480ca49c131aee2dbdcb8f0521
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 16ad197d40c05c9250b281b733a1bc6f95c9a2e0
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194760"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857487"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>Utilisation de scripts Windows PowerShell pour publier des environnements de développement et de test
 
@@ -24,7 +24,7 @@ Lorsque vous créez une application web dans Visual Studio, vous pouvez génér
 
 ## <a name="prerequisites"></a>Prérequis
 
-* Visual Studio 2015 ou version ultérieure avec la **charge de travail Azure** installée, ou Visual Studio 2013 et Kit de développement logiciel (SDK) Azure 2.3 ou version ultérieure. Voir [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc). (Vous n’avez pas besoin du kit de développement logiciel (SDK) Azure pour générer les scripts pour les projets web. Cette fonctionnalité s’adresse aux projets web, et non aux rôles web dans les services cloud.)
+* Visual Studio 2015 ou version ultérieure avec la **charge de travail Azure** installée, ou Visual Studio 2013 et Kit de développement logiciel (SDK) Azure 2.3 ou version ultérieure. Voir [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019). (Vous n’avez pas besoin du kit de développement logiciel (SDK) Azure pour générer les scripts pour les projets web. Cette fonctionnalité s’adresse aux projets web, et non aux rôles web dans les services cloud.)
 * Azure PowerShell 0.7.4 ou version ultérieure. Consultez [Installation et configuration d’Azure PowerShell](/powershell/azure/overview).
 * [Windows PowerShell 3.0](http://go.microsoft.com/?linkid=9811175) ou version ultérieure.
 

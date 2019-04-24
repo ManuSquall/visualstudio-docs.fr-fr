@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b638bb1e300fd03d358c338c10dec4844f4e4adc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: edce61d7f5cf8f84c021b759fdaee1c06bf68ccb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801490"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044919"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>Visualisation des événements EventSource comme marqueurs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,11 +26,11 @@ Le visualiseur concurrentiel peut afficher des événements EventSource comme ma
   
 ### <a name="marker-type"></a>Type de marqueur  
   
-1.  Les événements ayant l’[Opcode](http://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) win:Start ou win:Stop sont traités en tant que début ou fin d’un intervalle, respectivement.  Les intervalles imbriqués ou se chevauchant ne peuvent pas être affichés. Les paires d’événements qui commencent sur un thread et se terminent sur un autre ne peuvent pas être affichées.  
+1. Les événements ayant l’[Opcode](http://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) win:Start ou win:Stop sont traités en tant que début ou fin d’un intervalle, respectivement.  Les intervalles imbriqués ou se chevauchant ne peuvent pas être affichés. Les paires d’événements qui commencent sur un thread et se terminent sur un autre ne peuvent pas être affichées.  
   
-2.  Un événement dont l’Opcode n’est ni win:Start ni win:Stop est traité en tant qu’indicateur de marqueur, sauf si son champ [Level](http://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) a pour valeur minimale win:Verbose.  
+2. Un événement dont l’Opcode n’est ni win:Start ni win:Stop est traité en tant qu’indicateur de marqueur, sauf si son champ [Level](http://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) a pour valeur minimale win:Verbose.  
   
-3.  Dans tous les autres cas, l’événement est traité en tant que message.  
+3. Dans tous les autres cas, l’événement est traité en tant que message.  
   
 ### <a name="importance"></a>Importance  
  Le tableau suivant établit une correspondance entre le niveau d’événement et l’importance du marqueur.  

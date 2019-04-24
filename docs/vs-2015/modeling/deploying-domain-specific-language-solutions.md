@@ -11,20 +11,20 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 082bde3704354fa85555e9ee3dc868441ac86dee
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 46eaf9fbd0e8de48b1f3838af4081bc15ed582d4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951614"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063567"
 ---
 # <a name="deploying-domain-specific-language-solutions"></a>Déploiement de solutions de langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez installer une langue spécifique à un domaine sur votre ordinateur ou sur d’autres ordinateurs. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] doit déjà être installé sur l’ordinateur cible.  
   
--   [Déploiement MSI et VSIX d’un langage spécifique à un domaine](../modeling/msi-and-vsix-deployment-of-a-dsl.md)  
+- [Déploiement MSI et VSIX d’un langage spécifique à un domaine](../modeling/msi-and-vsix-deployment-of-a-dsl.md)  
   
--   [Plusieurs langages spécifiques à un domaine dans une même solution](../modeling/multiple-dsls-in-one-solution.md)  
+- [Plusieurs langages spécifiques à un domaine dans une même solution](../modeling/multiple-dsls-in-one-solution.md)  
   
--   [Déploiement du shell VS](../modeling/vs-shell-deployment.md)
+- [Déploiement du shell VS](../modeling/vs-shell-deployment.md)

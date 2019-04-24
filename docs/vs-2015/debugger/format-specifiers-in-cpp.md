@@ -28,12 +28,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e7547f4c675bc7c68c61e86ef61a6285bfb65fb2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba950d55dcb4a4a0e1a06b40b1ed00ee3f58e54e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949112"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116210"
 ---
 # <a name="format-specifiers-in-c"></a>Spécificateurs de format en C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Vous pouvez modifier le format dans lequel une valeur est affichée dans la fen�
 >  Le débogueur natif Visual Studio utilise un nouveau moteur de débogage. Dans le cadre de cette modification, de nouveaux spécificateurs de format ont été ajoutés et d’anciens spécificateurs ont été supprimés. Le débogueur plus ancien est toujours utilisé quand vous effectuez un débogage d’interopérabilité (native et managée à la fois) avec C++/CLI. Les sections suivantes présentent les spécificateurs de format pour chaque moteur de débogage.  
 > 
 > - [Spécificateurs de format](#BKMK_Visual_Studio_2012_format_specifiers) décrit les spécificateurs de format dans le nouveau moteur de débogage.  
->   -   [Spécificateurs de format pour le débogage d’interopérabilité avec C++/CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) décrit les spécificateurs de format dans l’ancien moteur de débogage.  
+>   - [Spécificateurs de format pour le débogage d’interopérabilité avec C++/CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) décrit les spécificateurs de format dans l’ancien moteur de débogage.  
   
 ## <a name="using-format-specifiers"></a>Utilisation des spécificateurs de format  
  Si vous avez le code suivant :  
@@ -63,7 +63,7 @@ int main() {
   
  ![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")  
   
-##  <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> Spécificateurs de format  
+## <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> Spécificateurs de format  
  Les tableaux suivants indiquent les spécificateurs de format que vous pouvez utiliser dans Visual Studio. Les spécificateurs en gras ne sont pas pris en charge pour le débogage d’interopérabilité avec C++/CLI.  
   
 |Spécificateur|Format|Valeur d’espion d’origine|Valeur affichée|  
@@ -94,7 +94,7 @@ int main() {
 > [!NOTE]
 >  Quand le spécificateur de format **hv** est présent, le débogueur tente de déterminer la taille de la mémoire tampon et d’afficher le nombre d’éléments approprié. Comme il n’est pas toujours possible pour le débogueur de rechercher la taille exacte de la mémoire tampon d’un tableau, vous devez utiliser un spécificateur de taille `(pBuffer,[bufferSize])` chaque fois que cela est possible. Le spécificateur de format **hv** est destiné aux scénarios dans lesquels la taille de la mémoire tampon n’est pas immédiatement disponible  
   
-###  <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> Spécificateurs de taille pour les pointeurs en tant que tableaux  
+### <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> Spécificateurs de taille pour les pointeurs en tant que tableaux  
  Si vous avez un pointeur vers un objet que vous souhaitez afficher sous forme de tableau, vous pouvez utiliser un entier ou une expression pour spécifier le nombre d’éléments du tableau :  
   
 |Spécificateur|Format|Valeur d’espion d’origine|Valeur affichée|  
@@ -103,7 +103,7 @@ int main() {
 |**[exp]**|Expression C++ valide qui correspond à un entier.|pBuffer,[bufferSize]|Affiche pBuffer sous forme d’un tableau d’éléments `bufferSize` .|  
 |**expand(n)**|Expression C++ valide qui correspond à un entier|pBuffer, expand(2)|Affiche le troisième élément de  `pBuffer`.|  
   
-##  <a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> Spécificateurs de format pour le débogage d’interopérabilité avec C++/CLI  
+## <a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> Spécificateurs de format pour le débogage d’interopérabilité avec C++/CLI  
  Les spécificateurs en **gras** sont pris en charge uniquement pour le débogage de code natif et C++/CLI.  
   
 |Spécificateur|Format|Valeur d’espion d’origine|Valeur affichée|  
@@ -126,7 +126,7 @@ int main() {
 |wm|Numéros de messages Windows|0x0010|WM_CLOSE|  
 |!|format brut, ignorant toutes les personnalisations d’affichage de type de données|\<représentation personnalisée>|4|  
   
-###  <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Emplacements de mémoire des spécificateurs de format dans le débogage d’interopérabilité avec C++/CLI  
+### <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Emplacements de mémoire des spécificateurs de format dans le débogage d’interopérabilité avec C++/CLI  
  Le tableau suivant contient les symboles de mise en forme pour les emplacements de mémoire. Vous pouvez utiliser un spécificateur d’emplacement de mémoire avec n’importe quelle valeur ou expression correspondant à un emplacement.  
   
 |Symbole|Format|Valeur d’espion d’origine|Valeur affichée|  
@@ -139,7 +139,7 @@ int main() {
 |**mq**|2 mots quadruples|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|  
 |**mu**|caractères de 2 octets (Unicode)|0x0012ffac|0x0012ffac 8478 77f4 ffff ffff 0000 0000 0000 0000|  
   
-###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> Spécificateur de taille pour les pointeurs en tant que tableaux dans le débogage d’interopérabilité avec C++/CLI  
+### <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> Spécificateur de taille pour les pointeurs en tant que tableaux dans le débogage d’interopérabilité avec C++/CLI  
  Si vous avez un pointeur vers un objet que vous souhaitez afficher sous forme de tableau, vous pouvez utiliser un entier pour spécifier le nombre d’éléments du tableau :  
   
 |Spécificateur|Format|Expression|Valeur affichée|  

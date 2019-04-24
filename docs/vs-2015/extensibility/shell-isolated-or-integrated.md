@@ -14,12 +14,12 @@ ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9d8b08dfe812245a21160fa2f16b4c94728785ae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 17da1ff036227b50e507fd564618c4f53cf430c3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952617"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116379"
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell (isolé ou intégré)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Vous pouvez créer votre propre application basée sur Visual Studio en mode int
 >  Si vous collectez des données d’utilisation distincts à partir de vos clients via votre application, vous devez fournir des avis approprié aux utilisateurs de votre application de ce que vous collectez.  Lorsque vous distribuez le logiciel shell isolé ou intégré dans le cadre de votre application, en fonction de la licence Visual Studio Software Development Kit, vous devez inclure un des éléments suivants :  
 > 
 > - le contrat de licence utilisateur final dans le cadre de votre licence de l’application  
->   -   votre propre CLUF qui nécessite de vos clients à accepter les termes qui protègent le Visual Studio intégré ou isolé de shell au moins autant que les termes de licence utilisateur final Microsoft pour le logiciel de l’interpréteur de commandes  
+>   - votre propre CLUF qui nécessite de vos clients à accepter les termes qui protègent le Visual Studio intégré ou isolé de shell au moins autant que les termes de licence utilisateur final Microsoft pour le logiciel de l’interpréteur de commandes  
   
 ## <a name="additional-resources"></a>Ressources supplémentaires  
  Pour plus d’informations sur les packages redistribuables, consultez le [téléchargements de Visual Studio Extensibility](http://go.microsoft.com/fwlink/?LinkID=119298) site Web.  

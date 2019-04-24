@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c59d6ba8b6e807b4380a3f7abad3869e5108448
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8c374dc5cc616f58cb81a1191b095971561df9b1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951049"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052881"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Procédure pas à pas : Génération de Code à l’aide de modèles de texte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,9 +86,9 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
   
 ##### <a name="to-create-the-project"></a>Pour créer le projet  
   
-1.  Dans le menu **Fichier** , cliquez sur **Nouveau** , puis sur **Projet**.  
+1. Dans le menu **Fichier** , cliquez sur **Nouveau** , puis sur **Projet**.  
   
-2.  Cliquez sur le nœud **Visual C#** puis, dans le volet **Modèles** , cliquez sur **Application console**.  
+2. Cliquez sur le nœud **Visual C#** puis, dans le volet **Modèles** , cliquez sur **Application console**.  
   
 ### <a name="add-a-prototype-xml-file-to-the-project"></a>Ajouter un fichier XML de prototype au projet  
  L’objectif de ce fichier consiste à fournir des exemples des types de nœuds XML que vous souhaitez que votre application puisse lire. Il peut s’agir d’un fichier qui sera utilisé pour tester votre application. Le modèle produira une classe C# pour chaque type de nœud dans ce fichier.  

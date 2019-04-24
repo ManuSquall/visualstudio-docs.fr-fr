@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6664bf9ed0e77b99b7d5482907fe07f155fe6162
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bb12d80c581b0ea0b605932083cf4f62fe764e30
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947100"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073486"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Générer et configurer votre application à partir de modèles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,27 +54,27 @@ Vous pouvez générer ou configurer certaines parties de votre application à pa
 ## <a name="developing-a-derived-application"></a>Développement d'une application dérivée  
  Voici quelques consignes générales qui pourront vous être utiles.  
   
--   **Commencez spécifique, puis généralisez.** Écrivez tout d'abord une version spécifique de votre application. Cette version doit fonctionner dans un ensemble de conditions. Une fois satisfait de son bon fonctionnement, vous pouvez faire en sorte que certaines parties dérivent d'un modèle. Étendez progressivement les parties dérivées.  
+- **Commencez spécifique, puis généralisez.** Écrivez tout d'abord une version spécifique de votre application. Cette version doit fonctionner dans un ensemble de conditions. Une fois satisfait de son bon fonctionnement, vous pouvez faire en sorte que certaines parties dérivent d'un modèle. Étendez progressivement les parties dérivées.  
   
      Par exemple, concevez un site web qui a un ensemble spécifique de pages web avant de concevoir une application web qui présente des pages définies dans un modèle.  
   
--   **Modélisez les aspects variants.** Identifiez les aspects qui varieront, soit d'un déploiement à un autre, soit dans le temps à mesure que les impératifs changeront. Il s'agit des aspects qui doivent être dérivés d'un modèle.  
+- **Modélisez les aspects variants.** Identifiez les aspects qui varieront, soit d'un déploiement à un autre, soit dans le temps à mesure que les impératifs changeront. Il s'agit des aspects qui doivent être dérivés d'un modèle.  
   
      Par exemple, si l'ensemble de pages web et de liens entre elles change, mais que le style et le format des pages est toujours le même, le modèle doit décrire les liens, mais il n'est pas nécessaire qu'il décrive le format des pages.  
   
--   **Séparez les aspects.** Si les aspects variables peuvent être divisés en zones indépendantes, utilisez des modèles distincts pour chaque zone. Avec ModelBus, vous pouvez définir des opérations qui affectent à la fois les modèles et les contraintes entre eux.  
+- **Séparez les aspects.** Si les aspects variables peuvent être divisés en zones indépendantes, utilisez des modèles distincts pour chaque zone. Avec ModelBus, vous pouvez définir des opérations qui affectent à la fois les modèles et les contraintes entre eux.  
   
      Par exemple, utilisez un modèle pour définir la navigation entre les pages web et un autre modèle pour définir la disposition des pages. Pour plus d’informations, consultez [intégrer des modèles UML avec d’autres modèles et outils](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
   
--   **Modélisez les impératifs, pas la solution.** Concevez le code DSL ou adaptez le code UML pour qu'il décrive les impératifs des utilisateurs. En revanche, ne concevez pas la notation en fonction des aspects variables de l'implémentation.  
+- **Modélisez les impératifs, pas la solution.** Concevez le code DSL ou adaptez le code UML pour qu'il décrive les impératifs des utilisateurs. En revanche, ne concevez pas la notation en fonction des aspects variables de l'implémentation.  
   
      Par exemple, le modèle de navigation web doit représenter des pages web et des liens hypertexte entre elles. Le modèle de navigation web ne doit pas représenter des fragments de code HTML ou des classes de votre application.  
   
--   **Générer ou interpréter ?** Si les impératifs d'un déploiement particulier ne changeront que rarement, générez le code de programme à partir du modèle. Si les impératifs peuvent changer fréquemment ou coexister dans plusieurs variantes dans le même déploiement, écrivez l'application pour qu'elle puisse lire et interpréter un modèle.  
+- **Générer ou interpréter ?** Si les impératifs d'un déploiement particulier ne changeront que rarement, générez le code de programme à partir du modèle. Si les impératifs peuvent changer fréquemment ou coexister dans plusieurs variantes dans le même déploiement, écrivez l'application pour qu'elle puisse lire et interpréter un modèle.  
   
      Par exemple, si vous utilisez votre modèle de site web pour développer une série de sites web différents et installés séparément, vous devez générer le code du site à partir du modèle. En revanche, si vous utilisez votre modèle pour contrôler un site qui change chaque jour, il est préférable d'écrire un serveur web qui lit le modèle et présente le site en conséquence.  
   
--   **UML ou DSL ?** Vous pouvez créer votre notation de modélisation à l'aide de stéréotypes pour étendre UML. Définissez un diagramme DSL s'il n'existe aucun diagramme UML adapté. Évitez toutefois de compromettre la sémantique standard UML.  
+- **UML ou DSL ?** Vous pouvez créer votre notation de modélisation à l'aide de stéréotypes pour étendre UML. Définissez un diagramme DSL s'il n'existe aucun diagramme UML adapté. Évitez toutefois de compromettre la sémantique standard UML.  
   
      Par exemple, un diagramme de classes UML est une collection de cases et de flèches ; avec cette notation, vous pouvez théoriquement définir n'importe quoi. Cependant, nous vous déconseillons d'utiliser le diagramme de classes, sauf quand vous décrivez réellement un ensemble de types. Par exemple, vous pourriez adapter les diagrammes de classes pour décrire différents types de pages web.  
   

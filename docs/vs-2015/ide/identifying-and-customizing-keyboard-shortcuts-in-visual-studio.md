@@ -19,12 +19,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9a2d6420abc9b9d70ce23c1dc8dc1aab5941119f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a39a2ef42463bd781f6bb8a24e3cfbc10b937b90
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54798985"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056066"
 ---
 # <a name="identifying-and-customizing-keyboard-shortcuts-in-visual-studio"></a>Identification et personnalisation des raccourcis clavier dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,48 +52,48 @@ Vous pouvez identifier les raccourcis clavier pour les commandes Visual Studio, 
 > [!NOTE]
 >  Les paramètres et l'édition de Visual Studio peuvent modifier le nom et l'emplacement des commandes de menu et les options qui apparaissent dans les boîtes de dialogue. Cette rubrique est basée sur les **Paramètres de développement généraux**.
 
-##  <a name="bkmk_identify"></a> Identification d’un raccourci clavier
+## <a name="bkmk_identify"></a> Identification d’un raccourci clavier
 
-1.  Dans la barre de menus, sélectionnez **Outils**, **Options**.
+1. Dans la barre de menus, sélectionnez **Outils**, **Options**.
 
-2.  Développez **Environnement**, puis choisissez **Clavier**.
+2. Développez **Environnement**, puis choisissez **Clavier**.
 
      ![Afficher les raccourcis clavier dans la boîte de dialogue Options](../ide/media/optionskeyboard.png "OptionsKeyboard")
 
-3.  Dans la zone **Afficher les commandes contenant**, entrez tout ou partie du nom de la commande sans espaces.
+3. Dans la zone **Afficher les commandes contenant**, entrez tout ou partie du nom de la commande sans espaces.
 
      Vous pouvez, par exemple, rechercher des commandes pour **solutionexplorer**.
 
-4.  Dans la liste, choisissez la commande correcte.
+4. Dans la liste, choisissez la commande correcte.
 
      Par exemple, vous pouvez choisir **View.SolutionExplorer**.
 
-5.  Si la commande a un raccourci clavier, elle apparaît dans la liste **Raccourcis de la commande sélectionnée**.
+5. Si la commande a un raccourci clavier, elle apparaît dans la liste **Raccourcis de la commande sélectionnée**.
 
      ![Afficher le raccourci d’une commande spécifiée](../ide/media/viewshortcut.png "ViewShortcut")
 
-##  <a name="bkmk_assign"></a> Personnalisation d’un raccourci clavier
+## <a name="bkmk_assign"></a> Personnalisation d’un raccourci clavier
 
-1.  Dans la barre de menus, sélectionnez **Outils**, **Options**.
+1. Dans la barre de menus, sélectionnez **Outils**, **Options**.
 
-2.  Développez le dossier **Environnement**, puis choisissez **Clavier**.
+2. Développez le dossier **Environnement**, puis choisissez **Clavier**.
 
      ![Afficher les raccourcis clavier dans la boîte de dialogue Options](../ide/media/optionskeyboard.png "OptionsKeyboard")
 
-3.  Dans la zone **Afficher les commandes contenant**, entrez tout ou partie du nom de la commande sans espaces.
+3. Dans la zone **Afficher les commandes contenant**, entrez tout ou partie du nom de la commande sans espaces.
 
      Vous pouvez, par exemple, rechercher des commandes pour **solutionexplorer**.
 
-4.  Dans la liste, choisissez la commande à laquelle vous souhaitez associer un raccourci clavier.
+4. Dans la liste, choisissez la commande à laquelle vous souhaitez associer un raccourci clavier.
 
-5.  Dans la liste **Utiliser un nouveau raccourci dans**, choisissez la zone de fonctionnalités dans laquelle vous voulez utiliser le raccourci.
+5. Dans la liste **Utiliser un nouveau raccourci dans**, choisissez la zone de fonctionnalités dans laquelle vous voulez utiliser le raccourci.
 
      Par exemple, choisissez **Global** si vous voulez que le raccourci fonctionne dans tous les contextes. Vous pouvez utiliser n'importe quel raccourci qui n'est pas mappé (comme Global) dans un autre éditeur. Sinon, l'éditeur substitue le raccourci.
 
     > [!NOTE]
     >  Vous ne pouvez pas affecter les touches suivantes dans le cadre d’un raccourci clavier dans **Global** : Impr. écran/SYSTÈME, Arrêt défil., Pause/Attn, Tab, Verr. maj, Inser, Début, Fin, Pge préc., Pge suiv., touche du logo Windows, la touche Application, touches de direction ou touche Entrée ; Verr. num., Suppr ou Effacer sur le pavé numérique ; la combinaison Ctrl+Alt+Suppr.
 
-6.  Dans la zone **Appuyer sur les touches de raccourci**, entrez le raccourci à utiliser.
+6. Dans la zone **Appuyer sur les touches de raccourci**, entrez le raccourci à utiliser.
 
     > [!NOTE]
     >  Vous pouvez créer un raccourci qui associe une lettre avec la touche Alt, la touche Ctrl, ou les deux. Vous pouvez également créer un raccourci qui associe la touche Maj et une lettre avec la touche Alt, la touche Ctrl, ou les deux.
@@ -102,45 +102,45 @@ Vous pouvez identifier les raccourcis clavier pour les commandes Visual Studio, 
 
      ![Attribuer un autre raccourci à une commande](../ide/media/reassignshortcut.png "ReassignShortcut")
 
-7.  Choisissez le bouton **Assigner**.
+7. Choisissez le bouton **Assigner**.
 
     > [!NOTE]
     >  Si vous spécifiez un raccourci différent pour une commande, choisissez le bouton **Assigner**, puis choisissez le bouton **Annuler**. La boîte de dialogue se ferme, mais le changement n’est pas restauré.
 
-##  <a name="bkmk_transfer"></a> Partage des raccourcis clavier personnalisés
+## <a name="bkmk_transfer"></a> Partage des raccourcis clavier personnalisés
  Vous pouvez partager les raccourcis clavier personnalisés en les exportant vers un fichier, puis en donnant le fichier à d'autres utilisateurs afin de pouvoir importer les données.
 
 #### <a name="to-export-only-keyboard-shortcuts"></a>Pour exporter uniquement les raccourcis clavier
 
-1.  Dans la barre de menus, choisissez **Outils**, **Importation et exportation de paramètres**.
+1. Dans la barre de menus, choisissez **Outils**, **Importation et exportation de paramètres**.
 
-2.  Choisissez **Exporter les paramètres d’environnement sélectionnés**, puis choisissez le bouton **Suivant**.
+2. Choisissez **Exporter les paramètres d’environnement sélectionnés**, puis choisissez le bouton **Suivant**.
 
-3.  Sous **Quels paramètres souhaitez-vous exporter ?**, décochez la case **Tous les paramètres**, développez **Options**, puis **Environnement**.
+3. Sous **Quels paramètres souhaitez-vous exporter ?**, décochez la case **Tous les paramètres**, développez **Options**, puis **Environnement**.
 
-4.  Cochez la case **Clavier**, puis choisissez le bouton **Suivant**.
+4. Cochez la case **Clavier**, puis choisissez le bouton **Suivant**.
 
      ![Exporter uniquement les raccourcis clavier personnalisés](../ide/media/exportshortcuts.png "ExportShortcuts")
 
-5.  Dans les zones **Comment voulez-vous appeler votre fichier des paramètres ?** et **Stocker mon fichier des paramètres dans ce répertoire**, laissez les valeurs par défaut ou spécifiez des valeurs différentes, puis choisissez le bouton **Terminer**.
+5. Dans les zones **Comment voulez-vous appeler votre fichier des paramètres ?** et **Stocker mon fichier des paramètres dans ce répertoire**, laissez les valeurs par défaut ou spécifiez des valeurs différentes, puis choisissez le bouton **Terminer**.
 
-     Par défaut, les raccourcis sont stockés dans un fichier du dossier %USERPROFILE%\Documents\Visual Studio 2013\Settings. Le nom du fichier reflète la date à laquelle vous avez exporté les paramètres, et l’extension est .vssettings.
+     Par défaut, les raccourcis sont stockés dans un fichier du dossier %USERPROFILE%\Documents\Visual Studio 2013\Settings. Le nom du fichier reflète la date à laquelle vous avez exporté les paramètres, et l'extension est .vssettings.
 
 #### <a name="to-import-only-keyboard-shortcuts"></a>Pour importer uniquement les raccourcis clavier
 
-1.  Dans la barre de menus, choisissez **Outils**, **Importation et exportation de paramètres**.
+1. Dans la barre de menus, choisissez **Outils**, **Importation et exportation de paramètres**.
 
-2.  Choisissez la case d’option **Importer les paramètres d’environnement sélectionnés**, puis le bouton **Suivant**.
+2. Choisissez la case d’option **Importer les paramètres d’environnement sélectionnés**, puis le bouton **Suivant**.
 
-3.  Choisissez la case d’option **Non, importer simplement de nouveaux paramètres en remplaçant mes paramètres actuels**, puis choisissez le bouton **Suivant**.
+3. Choisissez la case d’option **Non, importer simplement de nouveaux paramètres en remplaçant mes paramètres actuels**, puis choisissez le bouton **Suivant**.
 
-4.  Sous **Mes paramètres**, choisissez le fichier qui contient les raccourcis que vous souhaitez importer, ou choisissez le bouton **Parcourir** pour rechercher le fichier approprié.
+4. Sous **Mes paramètres**, choisissez le fichier qui contient les raccourcis que vous souhaitez importer, ou choisissez le bouton **Parcourir** pour rechercher le fichier approprié.
 
-5.  Choisissez le bouton **Suivant**.
+5. Choisissez le bouton **Suivant**.
 
-6.  Sous **Quels paramètres voulez-vous importer ?**, décochez la case **Tous les paramètres**, développez **Options**, puis **Environnement**.
+6. Sous **Quels paramètres voulez-vous importer ?**, décochez la case **Tous les paramètres**, développez **Options**, puis **Environnement**.
 
-7.  Cochez la case **Clavier**, puis choisissez le bouton **Terminer**.
+7. Cochez la case **Clavier**, puis choisissez le bouton **Terminer**.
 
      ![Importer uniquement les raccourcis clavier personnalisés](../ide/media/importshortcuts.png "ImportShortcuts")
 

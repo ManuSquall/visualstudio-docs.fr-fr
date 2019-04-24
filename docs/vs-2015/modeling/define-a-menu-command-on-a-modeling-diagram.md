@@ -11,12 +11,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a01681c4674fd5a47d4f5f795f78899df00e770
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: ef029cc6e931509997ad6f094adedc7d96e4bcd3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938268"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670317"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Définir une commande de menu sur un diagramme de modélisation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,6 @@ Dans Visual Studio, vous pouvez définir des éléments de menu supplémentaires
 
 2. Ajoutez les références suivantes à votre projet.  
 
-
    |                                                                                                    Référence                                                                                                    |                                                                                                  Ce que cela vous permet de faire                                                                                                  |
    |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |                                                                                        System.ComponentModel.Composition                                                                                        |                                         Définir des composants à l’aide de [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).                                          |
@@ -74,7 +73,6 @@ Dans Visual Studio, vous pouvez définir des éléments de menu supplémentaires
    |                                                                                  Microsoft.VisualStudio.Modeling.Sdk.[version]                                                                                  | Définir des gestionnaires d’événements de modèle.<br /><br /> Encapsuler des séries de modifications apportées à votre modèle. Pour plus d’informations, consultez [mises à jour du modèle UML de lien à l’aide de transactions](../modeling/link-uml-model-updates-by-using-transactions.md). |
    |                                                            Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]<br /><br /> (n’est pas toujours obligatoire)                                                             |                                                                                   Accéder à des éléments de diagramme supplémentaires pour les gestionnaires de mouvements.                                                                                   |
    | Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer<br /><br /> Obligatoire uniquement pour les commandes sur des diagrammes de couche. Pour plus d’informations, consultez [étendre des diagrammes de couche](../modeling/extend-layer-diagrams.md). |                                                                                             Définir des commandes sur un diagramme de couche.                                                                                              |
-
 
 3. Ajouter un fichier de classe au projet et affecter le code suivant comme contenu.  
 

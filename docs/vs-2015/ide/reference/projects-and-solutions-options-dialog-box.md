@@ -12,17 +12,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1294de78e93709bc60cd94be97613f032725bf5c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9c4876aedd12b2284982304b16049691ce6c9b0d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758199"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652889"
 ---
 # <a name="projects-and-solutions-options-dialog-box"></a>Projets et solutions, boîte de dialogue Options
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Définit le chemin par défaut des dossiers du projet [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] et détermine le comportement par défaut de la fenêtre **Sortie**, de la **Liste des tâches** et de l’**Explorateur de solutions** au fur et à mesure que les projets sont développés et générés. Pour accéder à cette boîte de dialogue, cliquez sur **Outils / Options**, développez **Projets et solutions**, puis cliquez sur **Général**.  
   
 > [!NOTE]
@@ -33,10 +32,10 @@ Définit le chemin par défaut des dossiers du projet [!INCLUDE[vsprvs](../../in
  Définit l’emplacement par défaut où sont créés les projets et les répertoires et dossiers de solution. Plusieurs boîtes de dialogue utilisent aussi l'emplacement défini dans cette option comme point de démarrage des dossiers. Par exemple, la boîte de dialogue Ouvrir un projet utilise cet emplacement pour le raccourci Mes projets.  
   
  **Emplacement des modèles des projets utilisateur**  
- Définit l’emplacement par défaut utilisé par la boîte de dialogue **Nouveau projet** pour créer la liste de **Mes modèles**. Pour plus d’informations, consultez [Guide pratique pour localiser et organiser les modèles](../../ide/how-to-locate-and-organize-project-and-item-templates.md).  
+ Définit l’emplacement par défaut utilisé par la boîte de dialogue **Nouveau projet** pour créer la liste de **Mes modèles**. Pour plus d'informations, voir [Procédure : Localiser et organiser les modèles](../../ide/how-to-locate-and-organize-project-and-item-templates.md).  
   
  **Emplacement des modèles des éléments utilisateur**  
- Définit l’emplacement par défaut utilisé par la boîte de dialogue **Ajouter un nouvel élément** pour créer la liste de **Mes modèles**. Pour plus d’informations, consultez [Guide pratique pour localiser et organiser les modèles](../../ide/how-to-locate-and-organize-project-and-item-templates.md).  
+ Définit l’emplacement par défaut utilisé par la boîte de dialogue **Ajouter un nouvel élément** pour créer la liste de **Mes modèles**. Pour plus d'informations, voir [Procédure : Localiser et organiser les modèles](../../ide/how-to-locate-and-organize-project-and-item-templates.md).  
   
  **Toujours afficher la liste d’erreurs à la fin de la génération avec erreurs**  
  Ouvre la fenêtre **Liste d’erreurs** à l’achèvement de build, uniquement en cas d’échec de la génération du projet. Les erreurs qui se produisent pendant le processus de génération sont affichées. Lorsque cette option est désactivée, les erreurs persistent, mais la fenêtre ne s'ouvre pas quand la génération est terminée. Cette option est activée par défaut.  
@@ -59,7 +58,7 @@ Définit le chemin par défaut des dossiers du projet [!INCLUDE[vsprvs](../../in
  Si vous tentez de créer un projet ou d’ouvrir un projet existant dans un emplacement qui n’est pas totalement fiable (par exemple, un chemin UNC ou un chemin HTTP), un message s’affiche. Utilisez cette option pour spécifier si le message s'affiche chaque fois que vous essayez de créer ou d'ouvrir un projet dans un emplacement qui n'est pas entièrement fiable.  
   
  **Afficher la fenêtre Sortie au démarrage de la génération**  
- Affiche automatiquement la fenêtre Sortie dans l'IDE au démarrage des générations de la solution. Pour plus d’informations, consultez [How to: Control the Output Window](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858) (Guide pratique pour contrôler la fenêtre Sortie). Cette option est activée par défaut.  
+ Affiche automatiquement la fenêtre Sortie dans l'IDE au démarrage des générations de la solution. Pour plus d'informations, voir [Procédure : Contrôler la fenêtre sortie](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858). Cette option est activée par défaut.  
   
  **Inviter à utiliser des noms symboliques au moment de renommer les fichiers**  
  Lorsque cette option est sélectionnée, un message s'affiche et demande si [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] doit également renommer toutes les références du projet à l'élément de code.  

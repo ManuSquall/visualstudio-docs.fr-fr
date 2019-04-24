@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d27e104aec3719e3f88e75cb326082913068b44b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 344a2dbe0e629f62f609806008b963be2be058a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54793085"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108707"
 ---
 # <a name="filtering-report-views"></a>Filtrage des vues des rapports
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ Vous pouvez appliquer des filtres aux fichiers de données de profilage pour lim
   
 #### <a name="to-create-a-profiler-report-filter"></a>Pour créer un filtre de rapport de profileur  
   
-1.  Si la fenêtre Filtre de la vue Rapport de performances n’est pas affichée, cliquez sur **Afficher le filtre** sur la barre d’outils de la vue Rapport de performances.  
+1. Si la fenêtre Filtre de la vue Rapport de performances n’est pas affichée, cliquez sur **Afficher le filtre** sur la barre d’outils de la vue Rapport de performances.  
   
      Le Filtre de la vue Rapport de performances est un tableau. Chaque ligne du tableau représente une clause du filtre. Vous pouvez ajouter autant de clauses que vous le souhaitez à un filtre.  
   
-2.  Pour chaque clause que vous voulez ajouter à un filtre, sélectionnez ou entrez des valeurs dans les champs suivants d’une ligne.  
+2. Pour chaque clause que vous voulez ajouter à un filtre, sélectionnez ou entrez des valeurs dans les champs suivants d’une ligne.  
   
     |Champ|Description|  
     |-----------|-----------------|  
@@ -44,7 +44,7 @@ Vous pouvez appliquer des filtres aux fichiers de données de profilage pour lim
     |**Operator**|Sélectionnez l’opérateur qui spécifie la relation qui doit exister dans la clause entre le champ et la valeur.<br /><br /> =    Égal<br /><br /> <>  Différent de<br /><br /> <    Inférieur à<br /><br /> >    Supérieur à<br /><br /> <=  Inférieur ou égal à<br /><br /> >=  Supérieur ou égal à|  
     |**Valeur**|Sélectionnez ou entrez la valeur à rechercher. Certains champs répertorient les valeurs disponibles.|  
   
-3.  
+3. 
   
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>Pour créer un filtre de rapport de profileur à partir de la vue du rapport Marques  
   
@@ -66,33 +66,33 @@ Vous pouvez appliquer des filtres aux fichiers de données de profilage pour lim
   
 #### <a name="to-load-an-existing-filter-from-a-file"></a>Pour charger un filtre existant à partir d’un fichier  
   
-1.  Dans la barre d’outils de la vue Rapport de performances, cliquez sur **Importer un filtre**.  
+1. Dans la barre d’outils de la vue Rapport de performances, cliquez sur **Importer un filtre**.  
   
      La boîte de dialogue **Charger un filtre** s’affiche.  
   
-2.  Spécifiez l’emplacement et le nom de fichier du fichier de filtre (.vspf) à charger.  
+2. Spécifiez l’emplacement et le nom de fichier du fichier de filtre (.vspf) à charger.  
   
 #### <a name="to-execute-a-filter"></a>Pour exécuter un filtre  
   
--   Dans la barre d’outils de la vue Rapport de performances, cliquez sur **Exécuter le filtre**.  
+- Dans la barre d’outils de la vue Rapport de performances, cliquez sur **Exécuter le filtre**.  
   
 #### <a name="to-stop-a-filter-that-is-taking-too-long-to-execute"></a>Pour arrêter un filtre dont l’exécution est trop longue  
   
--   Dans la barre d’outils de la vue Rapport de performances, cliquez sur **Arrêter le filtre**.  
+- Dans la barre d’outils de la vue Rapport de performances, cliquez sur **Arrêter le filtre**.  
   
 #### <a name="to-remove-a-filter-on-a-report-view"></a>Pour supprimer un filtre sur une vue de rapport  
   
-1.  Supprimer les lignes des clauses dans le Filtre de la vue Rapport de performances.  
+1. Supprimer les lignes des clauses dans le Filtre de la vue Rapport de performances.  
   
-2.  Dans la barre d’outils de la vue Rapport de performances, cliquez sur **Exécuter le filtre**.  
+2. Dans la barre d’outils de la vue Rapport de performances, cliquez sur **Exécuter le filtre**.  
   
 #### <a name="to-save-a-filter-to-a-file"></a>Pour enregistrer un filtre dans un fichier  
   
-1.  Dans la barre d’outils de la vue Rapport de performances, cliquez sur **Exporter le filtre**.  
+1. Dans la barre d’outils de la vue Rapport de performances, cliquez sur **Exporter le filtre**.  
   
      La boîte de dialogue **Enregistrer le filtre** s’affiche.  
   
-2.  Spécifiez l’emplacement et le nom de fichier du fichier de filtre (.vspf) à enregistrer.  
+2. Spécifiez l’emplacement et le nom de fichier du fichier de filtre (.vspf) à enregistrer.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Personnalisation des vues des rapports des outils d’analyse des performances](../profiling/customizing-performance-tools-report-views.md)

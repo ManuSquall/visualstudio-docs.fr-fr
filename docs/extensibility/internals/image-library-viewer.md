@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5457c0b4e7b355c130fedbdbba456b550a35f1ee
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 749441e960363fe208e3ad67288180c1935db35f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633250"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084815"
 ---
 # <a name="image-library-viewer"></a>Visionneuse de bibliothèque d’images
 L’outil Visual Studio Image Library Viewer peut charger et rechercher des manifestes d’images, permettant à l’utilisateur pour les manipuler dans la même façon Visual Studio. L’utilisateur peut modifier en arrière-plan, tailles, PPP, contraste élevé et autres paramètres. L’outil affiche des informations de chargement pour chaque manifeste de l’image également et affiche des informations de source de chaque image dans le manifeste de l’image. Cet outil est utile pour :
@@ -224,9 +224,9 @@ L’outil Visual Studio Image Library Viewer peut charger et rechercher des mani
 
 ## <a name="notes"></a>Notes
 
--   Par défaut, l’outil permet d’extraire plusieurs manifestes d’images présents dans le répertoire d’installation de Visual Studio. Est le seul qui a des monikers publiquement consommables le **Microsoft.VisualStudio.ImageCatalog** manifeste. GUID : ae27a6b0-e345-4288-96df-5eaf394ee369 (faire **pas** remplacer ce GUID dans un manifeste personnalisé) Type : KnownMonikers
+- Par défaut, l’outil permet d’extraire plusieurs manifestes d’images présents dans le répertoire d’installation de Visual Studio. Est le seul qui a des monikers publiquement consommables le **Microsoft.VisualStudio.ImageCatalog** manifeste. GUID : ae27a6b0-e345-4288-96df-5eaf394ee369 (faire **pas** remplacer ce GUID dans un manifeste personnalisé) Type : KnownMonikers
 
--   L’outil tente de lancement pour charger tous les manifestes d’image qu’il trouve, donc il peut prendre plusieurs secondes pour l’application s’affiche réellement. Il peut également être lente ou ne répondent pas lors du chargement des manifestes.
+- L’outil tente de lancement pour charger tous les manifestes d’image qu’il trouve, donc il peut prendre plusieurs secondes pour l’application s’affiche réellement. Il peut également être lente ou ne répondent pas lors du chargement des manifestes.
 
 ## <a name="sample-output"></a>Résultat de l'exemple
  Cet outil ne génère pas de sortie.

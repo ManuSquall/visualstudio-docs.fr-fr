@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dcef749068dfb1f13e5b08160a70dda168b771ee
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: 57d89fec51cf73d310e3ad2e18b3d4270bd8ff74
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232851"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041979"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Procédure : Inclure des prérequis dans une application ClickOnce
 Avant de distribuer les logiciels requis avec une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], vous devez d'abord télécharger les packages d'installation de ces composants requis sur votre ordinateur de développement. Quand vous publiez une application et que vous choisissez **Télécharger les composants requis à partir de l’emplacement de mon application**, une erreur se produit lorsque les packages d’installation ne sont pas dans le dossier **Packages**.
@@ -21,7 +21,7 @@ Avant de distribuer les logiciels requis avec une application [!INCLUDE[ndpteccl
 > [!NOTE]
 >  Pour ajouter un package d’installation pour le .NET Framework, consultez [Guide de déploiement de .NET Framework pour les développeurs](/dotnet/framework/deployment/deployment-guide-for-developers).
 
-##  <a name="Package"></a> Pour ajouter un package d’installation à l’aide de Package.xml
+## <a name="Package"></a> Pour ajouter un package d’installation à l’aide de Package.xml
 
 1. Dans l’Explorateur de fichiers, ouvrez le dossier **Packages**.
 
@@ -50,4 +50,4 @@ Avant de distribuer les logiciels requis avec une application [!INCLUDE[ndpteccl
     Vous pouvez maintenant distribuer le package d'installation avec votre application.
 
 ## <a name="see-also"></a>Voir aussi
-- [Procédure : Installer les composants requis avec une application ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+- [Guide pratique pour Installer les composants requis avec une application ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)

@@ -27,17 +27,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 691500690470f66bced8fdec5ff885a2d1f0d73b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a1a66ae20065546d5a42b990d0ba0009d0657ed0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761625"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656022"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Polices et couleurs, Environnement, boîte de dialogue Options
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet d’établir un jeu de polices et un modèle de couleurs personnalisés pour divers éléments d’interface utilisateur dans l’environnement de développement intégré (IDE). Vous pouvez accéder à cette boîte de dialogue en cliquant sur **Outils / Options**, puis en sélectionnant **Environnement / Polices et couleurs**. Si cette page n’apparaît pas dans la liste, sélectionnez **Afficher tous les paramètres** dans la boîte de dialogue **Options**.  
   
 > [!NOTE]
@@ -128,7 +127,7 @@ La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet
 |**Zone non couverte**|Code non couvert par un test unitaire.|  
 |**Zone partiellement couverte**|Code partiellement couvert par un test unitaire.|  
 |**Zone couverte**|Code complètement couvert par un test unitaire.|  
-|**Commentaire CSS**|Commentaire dans des feuilles de style en cascade. Par exemple :<br /><br /> /* commentaire \*/|  
+|**Commentaire CSS**|Commentaire dans des feuilles de style en cascade. Exemple :<br /><br /> /* commentaire \*/|  
 |**Mot clé CSS**|Mots clés dans la feuille de style en cascade.|  
 |**Nom de propriété CSS**|Nom d'une propriété, par exemple Background.|  
 |**Valeur de propriété CSS**|Valeur assignée à une propriété, par exemple blue.|  
@@ -164,7 +163,7 @@ La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet
 |**Marqueur SQL DML**|S'applique à l'éditeur Transact-SQL. Les instructions DML dans cet éditeur sont marquées avec un cadre englobant bleu par défaut.|  
 |**Code périmé**|Code annulé et remplacé en attente d'une mise à jour. Dans certains cas, Modifier & Continuer ne peut pas appliquer immédiatement les modifications du code, mais ce sera le cas plus tard, durant le débogage. Cela se produit si vous modifiez une fonction qui doit appeler la fonction en cours d'exécution, ou si vous ajoutez plus de 64 octets de nouvelles variables à une fonction en attente dans la pile des appels. Dans ce cas, le débogueur affiche la boîte de dialogue "Avertissement : code périmé". Par ailleurs, le code annulé et remplacé continue à s'exécuter jusqu'à ce que la fonction en question s'arrête et soit appelée à nouveau. Modifier & Continuer applique les modifications du code à ce moment-là.|  
 |**String**|Littéraux de chaîne.|  
-|**String (C# @ Verbatim)**|Les littéraux de chaîne en C# sont interprétés textuellement. Par exemple :<br /><br /> @"x"|  
+|**String (C# @ Verbatim)**|Les littéraux de chaîne en C# sont interprétés textuellement. Exemple :<br /><br /> @"x"|  
 |**Erreur de syntaxe**|Erreurs d'analyse.|  
 |**Raccourci de la liste des tâches**|Si le raccourci **Liste des tâches** est ajouté à une ligne, et si la marge des indicateurs est désactivée, la ligne est mise en surbrillance.|  
 |**Point de trace (Désactivé)**|Non utilisé.|  
@@ -236,4 +235,4 @@ La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet
 ## <a name="see-also"></a>Voir aussi  
  [Environnement, boîte de dialogue Options](../../ide/reference/environment-options-dialog-box.md)   
  [Boîte de dialogue Options](../../ide/reference/options-dialog-box-visual-studio.md)   
- [Guide pratique pour modifier les polices et les couleurs dans Visual Studio](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+ [Guide pratique pour changer les polices et les couleurs](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

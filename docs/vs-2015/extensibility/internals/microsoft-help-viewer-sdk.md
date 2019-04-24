@@ -8,27 +8,27 @@ ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e4a72acafa4e2ad8de757541312a13f203f73559
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e08a443513bb6043ec2f3841067021ffc65dd92d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948332"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099002"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Kit SDK de Microsoft Help Viewer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Cet article contient les tâches suivantes pour les intégrateurs de la visionneuse d’aide Visual Studio :
 
--   Création d’une rubrique (prise en charge de la touche F1)
+- Création d’une rubrique (prise en charge de la touche F1)
 
--   Création d’un package de contenu de la personnalisation de Help Viewer
+- Création d’un package de contenu de la personnalisation de Help Viewer
 
--   Déploiement d’un ensemble d’articles
+- Déploiement d’un ensemble d’articles
 
--   Ajout d’aide pour l’interpréteur de commandes de Visual Studio (intégré ou isolé)
+- Ajout d’aide pour l’interpréteur de commandes de Visual Studio (intégré ou isolé)
 
--   Ressources supplémentaires
+- Ressources supplémentaires
 
 ### <a name="creating-a-topic-f1-support"></a>Création d’une rubrique (prise en charge de la touche F1)
  Cette section fournit une vue d’ensemble des composants d’une rubrique présentée, exigences de rubrique, une brève description de la création d’une rubrique (y compris les exigences de prise en charge de F1) et enfin, une rubrique d’exemple avec son résultat du rendu.
@@ -63,7 +63,7 @@ Cet article contient les tâches suivantes pour les intégrateurs de la visionne
 
 - javascript
 
-- CSharp ou C#
+- CSharp ou c#
 
 - cplusplus ou Visual c++ ou c ++
 
@@ -132,17 +132,17 @@ Cet article contient les tâches suivantes pour les intégrateurs de la visionne
 
  Le corps (sans l’en-tête et le pied de page) de la rubrique contient des liens de page, une section Remarque, une zone réductible, un extrait de code et une section de texte spécifique du langage.  Consultez la section Personnalisation pour plus d’informations sur ces zones de la rubrique présentée.
 
-1.  Ajouter une balise de titre de rubrique :  `<div class="title">Contoso Topic 4</div>`
+1. Ajouter une balise de titre de rubrique :  `<div class="title">Contoso Topic 4</div>`
 
-2.  Ajoutez une section Remarque : `<div class="alert"> add your table tag and text </div>`
+2. Ajoutez une section Remarque : `<div class="alert"> add your table tag and text </div>`
 
-3.  Ajoutez une zone réductible :  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
+3. Ajoutez une zone réductible :  `<CollapsibleArea Expanded="1" Title="Collapsible Area Test Heading"> add text  </CollapsibleArea>`
 
-4.  Ajouter un extrait de code :  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
+4. Ajouter un extrait de code :  `<CodeSnippet EnableCopyCode="true" Language="CSharp" ContainsMarkup="false" DisplayLanguage="C#" > a block of code </CodeSnippet>`
 
-5.  Ajouter du texte spécifique de langage de code :  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Notez que devLangnu = vous permet d’entrer d’autres langages. Par exemple, devLangnu = « Fortran » affichera Fortran lors de l’extrait de code DisplayLanguage = Fortran
+5. Ajouter du texte spécifique de langage de code :  `<LanguageSpecificText devLangcs="CS" devLangvb="VB" devLangcpp="C++" devLangnu="F#" />` Notez que devLangnu = vous permet d’entrer d’autres langages. Par exemple, devLangnu = « Fortran » affichera Fortran lors de l’extrait de code DisplayLanguage = Fortran
 
-6.  Ajouter des liens de page : `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
+6. Ajouter des liens de page : `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
 >  Remarque : pour non-langue prise en charge nouveau « Affichage » (exemple, F#, Cobol, Fortran) la colorisation de code dans l’extrait de code sera monochrome.
@@ -296,13 +296,13 @@ some F# code
 
 1. Définir le **VendorContent** valeur sous la clé de Registre Help 2.1 :
 
-   -   Pour les systèmes d’exploitation 32 bits :
+   - Pour les systèmes d’exploitation 32 bits :
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v2.1\Catalogs\VisualStudio12
 
         "VendorContent"=dword:00000001
 
-   -   Pour les systèmes d’exploitation 64 bits :
+   - Pour les systèmes d’exploitation 64 bits :
 
         HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Help\v2.1\Catalogs\VisualStudio12
 

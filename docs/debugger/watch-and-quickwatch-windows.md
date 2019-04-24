@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d8cd119ab39939de6562adcb962679874d528283
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366807"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>Regardez des variables avec les fenêtres Espion et Espion express
@@ -231,8 +231,8 @@ Pour actualiser **affichage dynamique** valeurs, sélectionnez le [icône d’ac
 
 Pour afficher uniquement les **affichage dynamique** pour un objet, ajoutez un **dynamique** spécificateur de format après le nom de l’objet dynamique dans le **espion** fenêtre :
 
-- Pour C# : `ObjectName, dynamic`
-- Pour Visual Basic `$dynamic, ObjectName`
+- Pour C# : `ObjectName, dynamic`
+- Pour Visual Basic : `$dynamic, ObjectName`
 
 >[!NOTE]
 >- Le C# débogueur ne réévalue automatiquement les valeurs dans le **affichage dynamique** quand vous passez à la ligne de code suivante.

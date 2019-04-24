@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 67cfc63c74755b10d7b3d274c0925d83b9a2d24c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8e75f5a584dd0522240f8b4d45cb28107bca38e3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948219"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113406"
 ---
 # <a name="how-to-configure-code-analysis-for-an-aspnet-web-application"></a>Procédure : Configurer l’analyse du code pour une application web ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,24 +25,24 @@ Dans [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] et [!INCLUDE[vsUltShor
   
 ### <a name="to-configure-a-rule-set-for-an-aspnet-page-framework-project"></a>Pour configurer un ensemble de règles pour un projet d'infrastructure de page ASP.NET  
   
-1.  Sélectionnez le site Web dans **l’Explorateur de solutions**.  
+1. Sélectionnez le site Web dans **l’Explorateur de solutions**.  
   
-2.  Sur le **analyser** menu, cliquez sur **configurer l’analyse du Code pour le Site Web**.  
+2. Sur le **analyser** menu, cliquez sur **configurer l’analyse du Code pour le Site Web**.  
   
-3.  Si vous avez sélectionné la solution et la solution comporte plusieurs projets, sélectionnez le build cible et configuration de système d’exploitation le **Configuration** et **plateforme** répertorie.  
+3. Si vous avez sélectionné la solution et la solution comporte plusieurs projets, sélectionnez le build cible et configuration de système d’exploitation le **Configuration** et **plateforme** répertorie.  
   
-4.  Pour chaque projet dans la solution, cliquez sur le **l’ensemble de règles** colonne, puis cliquez sur le nom de la règle de configuration pour exécuter.  
+4. Pour chaque projet dans la solution, cliquez sur le **l’ensemble de règles** colonne, puis cliquez sur le nom de la règle de configuration pour exécuter.  
   
-5.  Par défaut, l’analyse du code est exécutée sur tous les projets dans la solution. Pour désactiver ou activer l’analyse du code pour un projet particulier, procédez comme suit :  
+5. Par défaut, l’analyse du code est exécutée sur tous les projets dans la solution. Pour désactiver ou activer l’analyse du code pour un projet particulier, procédez comme suit :  
   
-    1.  Cliquez sur le nom de projet, puis sur Propriétés.  
+    1. Cliquez sur le nom de projet, puis sur Propriétés.  
   
-    2.  Cochez ou décochez la **Enable Code Analysis** case à cocher. Vous pouvez également exécuter l’analyse du code manuellement en sélectionnant **exécuter l’analyse du Code sur le Site Web** à partir de la **analyser** menu.  
+    2. Cochez ou décochez la **Enable Code Analysis** case à cocher. Vous pouvez également exécuter l’analyse du code manuellement en sélectionnant **exécuter l’analyse du Code sur le Site Web** à partir de la **analyser** menu.  
   
-6.  Dans le **exécuter cet ensemble de règles** déroulante liste, procédez comme suit :  
+6. Dans le **exécuter cet ensemble de règles** déroulante liste, procédez comme suit :  
   
-    -   Sélectionnez l’ensemble de règles que vous souhaitez utiliser.  
+    - Sélectionnez l’ensemble de règles que vous souhaitez utiliser.  
   
-    -   Sélectionnez  **\<Parcourir >** pour spécifier une règle personnalisée existante définie qui n’est pas dans la liste.  
+    - Sélectionnez  **\<Parcourir >** pour spécifier une règle personnalisée existante définie qui n’est pas dans la liste.  
   
-    -   Définissez un ensemble de règles personnalisé. Pour plus d’informations, consultez [création d’ensembles de règles personnalisés](../code-quality/creating-custom-code-analysis-rule-sets.md).
+    - Définissez un ensemble de règles personnalisé. Pour plus d’informations, consultez [création d’ensembles de règles personnalisés](../code-quality/creating-custom-code-analysis-rule-sets.md).

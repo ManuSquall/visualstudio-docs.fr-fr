@@ -12,12 +12,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3ebf931773577add65a7479c7dcd90da9c58c556
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fbd12f7579cc401284515de1f950ad2a9809dbca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949291"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116587"
 ---
 # <a name="standard-stereotypes-for-uml-models"></a>Stéréotypes standard pour les modèles UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,37 +41,37 @@ Vous pouvez ajouter des stéréotypes à des éléments de modèle UML pour four
   
 #### <a name="to-link-a-profile-to-a-model-or-a-package"></a>Pour lier un profil à un modèle ou à un package  
   
-1.  Ouvrez **Explorateur de modèles UML**. Sur le **Architecture** menu, pointez sur **Windows**, puis cliquez sur **Explorateur de modèles UML**.  
+1. Ouvrez **Explorateur de modèles UML**. Sur le **Architecture** menu, pointez sur **Windows**, puis cliquez sur **Explorateur de modèles UML**.  
   
-2.  Recherchez un package ou un modèle qui contient tous les éléments auxquels vous souhaitez appliquer les stéréotypes dans le profil.  
+2. Recherchez un package ou un modèle qui contient tous les éléments auxquels vous souhaitez appliquer les stéréotypes dans le profil.  
   
-3.  Cliquez sur le package ou le modèle, puis sur **propriétés**.  
+3. Cliquez sur le package ou le modèle, puis sur **propriétés**.  
   
-4.  Dans le **propriétés** fenêtre, définissez la **profils** propriété pour les profils que vous souhaitez.  
+4. Dans le **propriétés** fenêtre, définissez la **profils** propriété pour les profils que vous souhaitez.  
   
 #### <a name="to-remove-the-link-between-a-profile-and-a-model-or-package"></a>Pour supprimer le lien entre un profil et un modèle ou un package  
   
-1.  Dans l’Explorateur de modèles UML, cliquez sur le modèle ou le package, puis **propriétés**.  
+1. Dans l’Explorateur de modèles UML, cliquez sur le modèle ou le package, puis **propriétés**.  
   
-2.  Dans la fenêtre Propriétés, définissez la **profils** propriété vide.  
+2. Dans la fenêtre Propriétés, définissez la **profils** propriété vide.  
   
     > [!NOTE]
     >  Vous pouvez dissocier un profil uniquement si aucun des éléments du modèle ou du package n'utilise les stéréotypes de ce profil.  
   
 #### <a name="to-apply-a-stereotype-to-a-model-element"></a>Pour appliquer un stéréotype à un élément de modèle  
   
-1.  Avec le bouton droit sur un diagramme ou dans l’élément de modèle **Explorateur de modèles UML**, puis cliquez sur **propriétés**.  
+1. Avec le bouton droit sur un diagramme ou dans l’élément de modèle **Explorateur de modèles UML**, puis cliquez sur **propriétés**.  
   
-2.  Cliquez sur le **stéréotypes** propriété et sélectionnez les stéréotypes que vous souhaitez appliquer.  
+2. Cliquez sur le **stéréotypes** propriété et sélectionnez les stéréotypes que vous souhaitez appliquer.  
   
      Les stéréotypes sélectionnés sont affichés entre « chevrons » dans l'élément de modèle pour la plupart des types d'éléments.  
   
     > [!NOTE]
     >  Si vous ne voyez pas le **stéréotypes** propriété, ou si le stéréotype souhaité n’apparaît pas, vérifiez que l’élément de modèle est à l’intérieur d’un package ou un modèle auquel le profil approprié a été lié.  
   
-3.  Certains stéréotypes vous permettent de définir les valeurs de propriétés supplémentaires pour l'élément de modèle. Pour afficher ces propriétés, développez le **stéréotypes** propriété.  
+3. Certains stéréotypes vous permettent de définir les valeurs de propriétés supplémentaires pour l'élément de modèle. Pour afficher ces propriétés, développez le **stéréotypes** propriété.  
   
-###  <a name="L2"></a> Profil Standard L2  
+### <a name="L2"></a> Profil Standard L2  
  Vous pouvez utiliser les stéréotypes suivants pour préciser la signification des éléments de modèle UML, à moins que le lien vers le profil n'ait été supprimé du modèle.  
   
  La signification exacte de ces stéréotypes est déterminée par vos propres conventions locales et par les outils que vous pouvez utiliser pour traiter le modèle.  
@@ -111,7 +111,7 @@ Vous pouvez ajouter des stéréotypes à des éléments de modèle UML pour four
 |type|Classe|Spécifie le comportement d'un objet sans déclarer comment il est implémenté. Un objet est un membre d'un type s'il est conforme à la spécification.|  
 |utility|Classe|Collection de fonctions statiques. La classe n'a pas d'instances.|  
   
-###  <a name="L3"></a> Profil Standard L3  
+### <a name="L3"></a> Profil Standard L3  
  Vous pouvez utiliser les stéréotypes suivants pour préciser la signification des éléments de modèle UML, à moins que le profil n'ait été dissocié du modèle.  
   
  La signification exacte de ces stéréotypes est déterminée par vos propres conventions locales et par les outils que vous pouvez utiliser pour traiter le modèle.  
@@ -122,7 +122,7 @@ Vous pouvez ajouter des stéréotypes à des éléments de modèle UML pour four
 |metaModel|Modèle|Définit un langage de modélisation tel qu'une variante d'UML ou un langage spécifique à un domaine.|  
 |systemModel|Modèle|Modèle qui est une collection de modèles qui s'appliquent au même système, par exemple une spécification, une réalisation et des relations de suivi entre elles.|  
   
-##  <a name="NetProfile"></a> Profil c#  
+## <a name="NetProfile"></a> Profil c#  
  Les stéréotypes définis dans ce profil vous permettent d'indiquer qu'un élément de modèle est destiné à une traduction en code de programme. Chaque stéréotype définit des propriétés supplémentaires que vous pouvez définir sur l'élément de modèle.  
   
  Pour rendre ces stéréotypes disponibles, liez un modèle ou un package au profil C#. Vous pouvez ensuite appliquer les stéréotypes à des éléments de modèle dans ce modèle ou ce package.  

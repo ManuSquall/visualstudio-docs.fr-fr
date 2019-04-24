@@ -12,23 +12,23 @@ ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 053d8ff8f7e75224b05b1a722ba1bce03cd53a59
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4c7a4af5928f1d7b803e882c1826e451982389bc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948438"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093928"
 ---
 # <a name="sccgetprojpath-function"></a>Fonction SccGetProjPath
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette fonction invite l’utilisateur à un chemin d’accès du projet, qui est une chaîne qui est uniquement explicite pour le plug-in de contrôle de code source. Elle est appelée lorsque l’utilisateur est :  
   
--   Création d’un projet  
+- Création d’un projet  
   
--   Ajouter un projet existant au contrôle de version  
+- Ajouter un projet existant au contrôle de version  
   
--   Une tentative de recherche d’un projet de contrôle de version existant  
+- Une tentative de recherche d’un projet de contrôle de version existant  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -72,13 +72,13 @@ SCCRTN SccGetProjPath (
   
 |Entrant|Interprétation|  
 |--------------|--------------------|  
-|true|L’utilisateur peut créer un nouveau projet.|  
-|false|L’utilisateur ne peut pas créer un nouveau projet.|  
+|TRUE|L’utilisateur peut créer un nouveau projet.|  
+|FALSE|L’utilisateur ne peut pas créer un nouveau projet.|  
   
 |Sortant|Interprétation|  
 |--------------|--------------------|  
-|true|Un nouveau projet a été créé.|  
-|false|Un projet existant a été sélectionné.|  
+|TRUE|Un nouveau projet a été créé.|  
+|FALSE|Un projet existant a été sélectionné.|  
   
 ## <a name="return-value"></a>Valeur de retour  
  L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :  

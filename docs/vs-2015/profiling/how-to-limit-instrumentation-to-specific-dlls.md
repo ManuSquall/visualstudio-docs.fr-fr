@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour limiter l’instrumentation à des DLL spécifiques | Microsoft Docs
+title: 'Procédure : Limiter l’instrumentation à des DLL spécifiques | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -11,61 +11,61 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 93d2e85455544a52d7ed6e9d49c5e93b5c771a3f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 1806e39e70d98ce7f47dda6bbc32a8f261b96acd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779493"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091315"
 ---
-# <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Procédure : limiter l’instrumentation à des DLL spécifiques
+# <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Procédure : Instrumentation de limite à des DLL spécifiques
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La méthode de profilage par instrumentation vous permet de limiter la collecte de données de profilage à une ou plusieurs DLL d’une application. Pour profiler une ou plusieurs DLL d’une application, créez une session de performance qui comprenne ces fichiers .dll en tant que cibles. Vous pouvez spécifier les DLL à profiler en tant que projets dans une solution [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ou en tant que fichiers binaires indépendants.  
   
 ### <a name="to-limit-instrumentation-to-specific-dlls-in-a-visual-studio-solution"></a>Pour limiter l’instrumentation à certaines DLL dans une solution Visual Studio  
   
-1.  Ouvrez la solution qui contient la DLL dans [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
+1. Ouvrez la solution qui contient la DLL dans [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
   
-2.  Dans le menu **Analyser**, sélectionnez **Lancer l’Assistant Performance**.  
+2. Dans le menu **Analyser**, sélectionnez **Lancer l’Assistant Performance**.  
   
-3.  Choisissez **Instrumentation** comme méthode de profilage, puis cliquez sur **Suivant**.  
+3. Choisissez **Instrumentation** comme méthode de profilage, puis cliquez sur **Suivant**.  
   
-4.  Dans la page **Laquelle des cibles disponibles suivantes voulez-vous profiler ?**, sélectionnez le nom du projet .dll, puis cliquez sur **Suivant**.  
+4. Dans la page **Laquelle des cibles disponibles suivantes voulez-vous profiler ?**, sélectionnez le nom du projet .dll, puis cliquez sur **Suivant**.  
   
-5.  Cliquez sur **Terminer** pour quitter l’Assistant et afficher la nouvelle session de performance dans l’**Explorateur de performances**.  
+5. Cliquez sur **Terminer** pour quitter l’Assistant et afficher la nouvelle session de performance dans l’**Explorateur de performances**.  
   
-6.  Cliquez avec le bouton droit sur **Cibles**, puis sélectionnez **Ajouter un projet cible**.  
+6. Cliquez avec le bouton droit sur **Cibles**, puis sélectionnez **Ajouter un projet cible**.  
   
-7.  Dans la liste **Ajouter un projet cible**, sélectionnez le projet exécutable que vous voulez utiliser pour la DLL.  
+7. Dans la liste **Ajouter un projet cible**, sélectionnez le projet exécutable que vous voulez utiliser pour la DLL.  
   
      Optionnel. Vous pouvez ajouter autant de projets de DLL que vous le voulez pour le profilage.  
   
-8.  Pour empêcher la collecte de données pour un projet ajouté, cliquez sur le nom du projet, puis décochez la case **Instrumenter**.  
+8. Pour empêcher la collecte de données pour un projet ajouté, cliquez sur le nom du projet, puis décochez la case **Instrumenter**.  
   
 ### <a name="to-specify-specific-dlls-to-profile-as-independent-binaries"></a>Pour spécifier des DLL à profiler en tant que fichiers binaires indépendants  
   
-1.  Ouvrez [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
+1. Ouvrez [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
   
-2.  Dans le menu **Analyser**, sélectionnez **Lancer l’Assistant Performance**.  
+2. Dans le menu **Analyser**, sélectionnez **Lancer l’Assistant Performance**.  
   
-3.  Dans la page **Laquelle des cibles disponibles suivantes voulez-vous profiler ?**, sélectionnez l’option **Profiler une bibliothèque de liens dynamiques**, puis cliquez sur **Suivant**.  
+3. Dans la page **Laquelle des cibles disponibles suivantes voulez-vous profiler ?**, sélectionnez l’option **Profiler une bibliothèque de liens dynamiques**, puis cliquez sur **Suivant**.  
   
-4.  Dans la deuxième page de l’Assistant, effectuez les étapes suivantes :  
+4. Dans la deuxième page de l’Assistant, effectuez les étapes suivantes :  
   
-    -   Dans **Chemin d’accès de la DLL**, tapez le chemin et le nom du fichier .dll que vous voulez profiler. Vous pouvez également cliquer sur le bouton de sélection (...) pour rechercher le fichier dans la boîte de dialogue **Bibliothèque de liens dynamiques à profiler**. Notez que vous devez spécifier la copie du fichier .dll qui sera lancé par le fichier exécutable (.exe) que vous allez sélectionner.  
+    - Dans **Chemin d’accès de la DLL**, tapez le chemin et le nom du fichier .dll que vous voulez profiler. Vous pouvez également cliquer sur le bouton de sélection (...) pour rechercher le fichier dans la boîte de dialogue **Bibliothèque de liens dynamiques à profiler**. Notez que vous devez spécifier la copie du fichier .dll qui sera lancé par le fichier exécutable (.exe) que vous allez sélectionner.  
   
-    -   Dans **Chemin d’accès de l’exécutable**, tapez le chemin et le nom du fichier exécutable (.exe) qui doit exécuter le fichier .dll. Vous pouvez également cliquer sur le bouton de sélection (...) pour rechercher le fichier dans la boîte de dialogue **Exécutable à lancer**.  
+    - Dans **Chemin d’accès de l’exécutable**, tapez le chemin et le nom du fichier exécutable (.exe) qui doit exécuter le fichier .dll. Vous pouvez également cliquer sur le bouton de sélection (...) pour rechercher le fichier dans la boîte de dialogue **Exécutable à lancer**.  
   
-    -   Optionnel. Dans **Arguments de ligne de commande**, tapez les arguments de ligne de commande que vous voulez passer au fichier exécutable. Si nécessaire, spécifiez le répertoire de travail de l’application dans **Répertoire de travail**.  
+    - Optionnel. Dans **Arguments de ligne de commande**, tapez les arguments de ligne de commande que vous voulez passer au fichier exécutable. Si nécessaire, spécifiez le répertoire de travail de l’application dans **Répertoire de travail**.  
   
-    -   Cliquez sur **Suivant**.  
+    - Cliquez sur **Suivant**.  
   
-5.  Choisissez **Instrumentation** comme méthode de profilage, puis cliquez sur **Suivant**.  
+5. Choisissez **Instrumentation** comme méthode de profilage, puis cliquez sur **Suivant**.  
   
-6.  Cliquez sur **Terminer** pour quitter l’Assistant et afficher la nouvelle session de performance dans l’**Explorateur de performances**.  
+6. Cliquez sur **Terminer** pour quitter l’Assistant et afficher la nouvelle session de performance dans l’**Explorateur de performances**.  
   
-7.  Optionnel. Pour ajouter des fichiers .dll, cliquez avec le bouton droit sur **Cibles**, puis sélectionnez **Ajouter un fichier binaire cible**. Sélectionnez les fichiers dans la boîte de dialogue **Ajouter un fichier binaire cible**.  
+7. Optionnel. Pour ajouter des fichiers .dll, cliquez avec le bouton droit sur **Cibles**, puis sélectionnez **Ajouter un fichier binaire cible**. Sélectionnez les fichiers dans la boîte de dialogue **Ajouter un fichier binaire cible**.  
   
     > [!NOTE]
     >  Ne spécifiez pas le fichier exécutable (.exe) qui exécute les DLL.  

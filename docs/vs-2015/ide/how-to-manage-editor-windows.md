@@ -14,14 +14,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e28232db66663cb668a28a33d12daa8ff3f210ce
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 107b42500bbe2daed0d03d3e23e4817c9c3b3fc4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761638"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089924"
 ---
-# <a name="how-to-manage-editor-windows"></a>Comment : gérer les fenêtres de l'Éditeur
+# <a name="how-to-manage-editor-windows"></a>Procédure : Gérer Windows de l’éditeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous avez la possibilité de travailler sur le code à plusieurs emplacements à la fois. Pour cela, vous pouvez fractionner une fenêtre de l’éditeur ou ouvrir plusieurs instances de fenêtres de l’éditeur.  
@@ -34,9 +34,9 @@ Vous avez la possibilité de travailler sur le code à plusieurs emplacements à
   
 #### <a name="to-split-a-pane"></a>Pour fractionner un volet  
   
-1.  Cliquez dans la fenêtre de l’éditeur pour la rendre active.  
+1. Cliquez dans la fenêtre de l’éditeur pour la rendre active.  
   
-2.  Dans le menu **Fenêtre**, sélectionnez **Fractionner**.  
+2. Dans le menu **Fenêtre**, sélectionnez **Fractionner**.  
   
      La zone d’édition se divise en deux volets séparés par une barre de fractionnement. Vous pouvez faire défiler le contenu de ces volets indépendamment pour afficher et modifier les différentes parties du document actif en même temps. Toutes les modifications effectuées dans un volet sont répercutées dans l’autre volet.  
   
@@ -45,14 +45,14 @@ Vous avez la possibilité de travailler sur le code à plusieurs emplacements à
   
 #### <a name="to-return-to-single-pane-view"></a>Pour revenir à l’affichage simple  
   
--   Dans le menu **Fenêtre**, sélectionnez **Supprimer le fractionnement**.  
+- Dans le menu **Fenêtre**, sélectionnez **Supprimer le fractionnement**.  
   
 ## <a name="creating-new-windows"></a>Création de fenêtres  
  Vous pouvez également créer plusieurs instances d’une fenêtre de l’éditeur. Avec cette fonctionnalité, vous pouvez ouvrir un long document dans plusieurs instances de l’éditeur pour afficher et modifier les différentes parties du document simultanément dans des fenêtres de l’éditeur distinctes et en plein écran.  
   
 #### <a name="to-create-a-new-window"></a>Pour créer une fenêtre  
   
--   Dans le menu **Fenêtre**, cliquez sur **Nouvelle fenêtre**.  
+- Dans le menu **Fenêtre**, cliquez sur **Nouvelle fenêtre**.  
   
      Une nouvelle instance avec onglet de l’éditeur est ajoutée.  
   

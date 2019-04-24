@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 49bc9f56a07319c9edad1522c5e44b0bb35e92a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1576dfc54622f42e87ff2e9a951eed321300b1e4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951608"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039286"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>Créer des requêtes TableAdapter paramétrées
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,11 +46,11 @@ Vous créez des requêtes TableAdapter paramétrées dans le Concepteur de Datas
   
 ### <a name="create-a-parameterized-query-while-designing-a-data-bound-form"></a>Créer une requête paramétrable lors de la création d’un formulaire lié aux données  
   
-1.  Sélectionnez un contrôle dans votre formulaire déjà lié à un dataset. Pour plus d’informations, consultez [lier les formulaires Windows contrôle aux données dans Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).  
+1. Sélectionnez un contrôle dans votre formulaire déjà lié à un dataset. Pour plus d’informations, consultez [lier les formulaires Windows contrôle aux données dans Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md).  
   
-2.  Sur le **données** menu, sélectionnez**ajouter une requête**.  
+2. Sur le **données** menu, sélectionnez**ajouter une requête**.  
   
-3.  Utilisez la boîte de dialogue **Générateur de critères de recherche**, en ajoutant une clause WHERE avec les paramètres souhaités à l’instruction SQL.  
+3. Utilisez la boîte de dialogue **Générateur de critères de recherche**, en ajoutant une clause WHERE avec les paramètres souhaités à l’instruction SQL.  
   
 ### <a name="add-a-query-to-an-existing-data-bound-form"></a>Ajouter une requête à un formulaire lié aux données existant  
   
@@ -91,11 +91,11 @@ S’il s’agissait d’une requête sur un TableAdapter, vous pouvez rechercher
   
 ### <a name="enable-a-query-to-accept-null-values"></a>Activer une requête d’accepter les valeurs null  
   
-1.  Dans le **Concepteur de Dataset**, sélectionnez la requête TableAdapter qui doit accepter les valeurs de paramètre null.  
+1. Dans le **Concepteur de Dataset**, sélectionnez la requête TableAdapter qui doit accepter les valeurs de paramètre null.  
   
-2.  Dans le **propriétés** fenêtre, sélectionnez **paramètres**. Appuyez sur le bouton de sélection (**...** ) pour ouvrir la **éditeur de collections Parameters**.  
+2. Dans le **propriétés** fenêtre, sélectionnez **paramètres**. Appuyez sur le bouton de sélection (**...** ) pour ouvrir la **éditeur de collections Parameters**.  
   
-3.  Sélectionnez le paramètre qui autorise les valeurs null et définissez le **AllowDbNull** propriété `true`.  
+3. Sélectionnez le paramètre qui autorise les valeurs null et définissez le **AllowDbNull** propriété `true`.  
   
 ## <a name="see-also"></a>Voir aussi
 

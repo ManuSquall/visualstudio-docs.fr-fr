@@ -1,5 +1,5 @@
 ---
-title: 'Diagrammes de dépendance : Recommandations'
+title: 'Diagrammes de dépendance : Recommandations'
 ms.date: 09/28/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb6908db6b111f2ff67f2e1ca3761b11c302f5d4
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: f5973643d8f87b4c992209e6512c51bc275de60b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223817"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090115"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagrammes de dépendance : recommandations
 
@@ -39,21 +39,21 @@ Les étapes suivantes fournissent une vue d’ensemble de l’utilisation des di
 > [!NOTE]
 > Ces étapes s'affichent selon un ordre approximatif. Vous souhaiterez probablement superposer les tâches, les réorganiser en fonction de votre propre cas et les réexaminer au début de chaque itération de votre projet.
 
-1.  [Créer un diagramme de dépendances](#Create) pour toute l’application, ou pour une couche qu’il contient.
+1. [Créer un diagramme de dépendances](#Create) pour toute l’application, ou pour une couche qu’il contient.
 
-2.  [Définir des couches pour représenter les zones fonctionnelles principales ou composants](#CreateLayers) de votre application. Nommez ces couches d'après leur fonction, par exemple, « Présentation » ou « Services ». Si vous avez une solution Visual Studio, vous pouvez associer chaque couche à une collection de *artefacts*, tels que des projets, espaces de noms, fichiers et ainsi de suite.
+2. [Définir des couches pour représenter les zones fonctionnelles principales ou composants](#CreateLayers) de votre application. Nommez ces couches d'après leur fonction, par exemple, « Présentation » ou « Services ». Si vous avez une solution Visual Studio, vous pouvez associer chaque couche à une collection de *artefacts*, tels que des projets, espaces de noms, fichiers et ainsi de suite.
 
-3.  [Découvrez les dépendances existantes](#Generate) entre les couches.
+3. [Découvrez les dépendances existantes](#Generate) entre les couches.
 
-4.  [Modifier les couches et les dépendances](#EditArchitecture) pour afficher la mise à jour que vous souhaitez que le code afin de refléter de conception.
+4. [Modifier les couches et les dépendances](#EditArchitecture) pour afficher la mise à jour que vous souhaitez que le code afin de refléter de conception.
 
-5.  [Concevez les nouvelles zones de votre application](#NewAreas) en créant des couches pour représenter les blocs architecturaux principal ou les composants et en définissant des dépendances pour montrer comment chaque couche utilise les autres.
+5. [Concevez les nouvelles zones de votre application](#NewAreas) en créant des couches pour représenter les blocs architecturaux principal ou les composants et en définissant des dépendances pour montrer comment chaque couche utilise les autres.
 
-6.  [Modifier la disposition et l’apparence du diagramme](#EditLayout) pour vous aider à discuter avec des collègues.
+6. [Modifier la disposition et l’apparence du diagramme](#EditLayout) pour vous aider à discuter avec des collègues.
 
-7.  [Valider le code par rapport au diagramme de dépendance](#Validate) pour mettre en évidence les conflits entre le code et l’architecture que vous avez besoin.
+7. [Valider le code par rapport au diagramme de dépendance](#Validate) pour mettre en évidence les conflits entre le code et l’architecture que vous avez besoin.
 
-8.  [Mettre à jour le code pour se conformer à la nouvelle architecture](#UpdateCode). Développez le code de manière itérative et refactorisez-le jusqu'à ce que la validation n'affiche aucun conflit.
+8. [Mettre à jour le code pour se conformer à la nouvelle architecture](#UpdateCode). Développez le code de manière itérative et refactorisez-le jusqu'à ce que la validation n'affiche aucun conflit.
 
 9. [Inclure la validation de couche dans le processus de génération](#BuildValidation) pour vous assurer que le code continue à respecter votre conception.
 
@@ -79,11 +79,11 @@ Lors de la mise à jour d'une application peu familière, vous pouvez également
 
 Consultez :
 
--   [Créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)
+- [Créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)
 
--   [Utiliser des cartes de code pour déboguer vos applications](../modeling/use-code-maps-to-debug-your-applications.md)
+- [Utiliser des cartes de code pour déboguer vos applications](../modeling/use-code-maps-to-debug-your-applications.md)
 
--   [Mapper les dépendances à travers vos solutions](../modeling/map-dependencies-across-your-solutions.md)
+- [Mapper les dépendances à travers vos solutions](../modeling/map-dependencies-across-your-solutions.md)
 
 ## <a name="Generate"></a> Découvrir les dépendances existantes entre les couches
 
@@ -123,13 +123,13 @@ Si ce n’est pas le cas, le code sera plus difficile à modifier pour toute sa 
 
 Lorsque vous démarrez le développement d'un nouveau projet, ou d'une nouvelle partie d'un nouveau projet, vous pouvez dessiner des couches et des dépendances pour aider à identifier les principaux composants avant de commencer à développer le code.
 
--   **Afficher des modèles architecturaux identifiables** dans vos diagrammes de dépendance, si possible. Par exemple, un diagramme de dépendances qui décrit une application bureautique peut inclure des couches telles que présentation, logique de domaine et Store de données. Un diagramme de dépendances qui couvre une fonctionnalité unique au sein d’une application peut avoir des couches telles que modèle, vue et contrôleur. Pour plus d’informations sur ces modèles, consultez [Patterns & Practices : Architecture d’application](http://go.microsoft.com/fwlink/?LinkId=145794).
+- **Afficher des modèles architecturaux identifiables** dans vos diagrammes de dépendance, si possible. Par exemple, un diagramme de dépendances qui décrit une application bureautique peut inclure des couches telles que présentation, logique de domaine et Store de données. Un diagramme de dépendances qui couvre une fonctionnalité unique au sein d’une application peut avoir des couches telles que modèle, vue et contrôleur. Pour plus d’informations sur ces modèles, consultez [Patterns & Practices : Architecture d’application](http://go.microsoft.com/fwlink/?LinkId=145794).
 
--   **Créer un artefact de code pour chaque couche** comme un espace de noms, une classe ou un composant. Il est ainsi plus facile de suivre le code et de lier les artefacts de code aux couches. Dès que vous créez un artefact, liez-le à la couche appropriée.
+- **Créer un artefact de code pour chaque couche** comme un espace de noms, une classe ou un composant. Il est ainsi plus facile de suivre le code et de lier les artefacts de code aux couches. Dès que vous créez un artefact, liez-le à la couche appropriée.
 
--   **Vous n’êtes pas obligé de lier la plupart des classes et autres artefacts aux couches** , car ils font partie d’artefacts plus importants tels que des espaces de noms que vous avez déjà liés aux couches.
+- **Vous n’êtes pas obligé de lier la plupart des classes et autres artefacts aux couches** , car ils font partie d’artefacts plus importants tels que des espaces de noms que vous avez déjà liés aux couches.
 
--   **Créer un nouveau diagramme pour une nouvelle fonctionnalité**. En règle générale, il y a un ou plusieurs diagrammes de dépendance décrivant toute l’application. Si vous concevez une nouvelle fonctionnalité dans l’application, ne modifiez pas les diagrammes existants ou ne la leur ajoutez pas. Créez à la place votre propre diagramme qui reflète les nouvelles parties du code. Les couches du nouveau diagramme peuvent inclure la présentation, la logique de domaine et les couches de base de données pour la nouvelle fonctionnalité.
+- **Créer un nouveau diagramme pour une nouvelle fonctionnalité**. En règle générale, il y a un ou plusieurs diagrammes de dépendance décrivant toute l’application. Si vous concevez une nouvelle fonctionnalité dans l’application, ne modifiez pas les diagrammes existants ou ne la leur ajoutez pas. Créez à la place votre propre diagramme qui reflète les nouvelles parties du code. Les couches du nouveau diagramme peuvent inclure la présentation, la logique de domaine et les couches de base de données pour la nouvelle fonctionnalité.
 
      Lorsque vous générez l’application, votre code est validé par rapport au diagramme global et à votre diagramme de fonctionnalités détaillé.
 
@@ -137,11 +137,11 @@ Lorsque vous démarrez le développement d'un nouveau projet, ou d'une nouvelle 
 
 Pour vous aider à identifier des couches et des dépendances ou à en discuter avec les membres de l'équipe, modifiez l'aspect et la disposition du diagramme comme suit :
 
--   Modifiez les tailles, formes et positions des couches.
+- Modifiez les tailles, formes et positions des couches.
 
--   Modifiez les couleurs des couches et des dépendances.
+- Modifiez les couleurs des couches et des dépendances.
 
-    -   Sélectionnez un ou plusieurs couches ou dépendances, avec le bouton droit, puis cliquez sur **propriétés**. Dans le **propriétés** fenêtre, modifiez le **couleur** propriété.
+    - Sélectionnez un ou plusieurs couches ou dépendances, avec le bouton droit, puis cliquez sur **propriétés**. Dans le **propriétés** fenêtre, modifiez le **couleur** propriété.
 
 ## <a name="Validate"></a> Valider le code par rapport au diagramme
 
@@ -149,17 +149,17 @@ Lorsque vous avez modifié le diagramme, vous pouvez le valider par rapport au c
 
 Consultez :
 
--   [Validation du code avec des diagrammes de dépendance](../modeling/validate-code-with-layer-diagrams.md)
+- [Validation du code avec des diagrammes de dépendance](../modeling/validate-code-with-layer-diagrams.md)
 
--   [Inclure la Validation de couche dans le processus de génération](#BuildValidation)
+- [Inclure la Validation de couche dans le processus de génération](#BuildValidation)
 
 ## <a name="UpdateCode"></a> Mettre à jour le code pour se conformer à la nouvelle architecture
 
 En règle générale, les erreurs apparaissent la première fois que vous validez du code par rapport à un diagramme de dépendance mis à jour. Ces erreurs peuvent avoir plusieurs causes :
 
--   Un artefact est assigné à une couche inappropriée. Dans ce cas, déplacez l'artefact.
+- Un artefact est assigné à une couche inappropriée. Dans ce cas, déplacez l'artefact.
 
--   Un artefact, tel qu'une classe, utilise une autre classe d'une manière qui génère un conflit avec votre architecture. Dans ce cas, refactorisez le code pour supprimer la dépendance.
+- Un artefact, tel qu'une classe, utilise une autre classe d'une manière qui génère un conflit avec votre architecture. Dans ce cas, refactorisez le code pour supprimer la dépendance.
 
 Pour résoudre ces erreurs, mettez à jour le code de façon à ce que la validation ne génère plus d'erreur. Il s'agit généralement d'un processus itératif. Pour plus d’informations sur ces erreurs, consultez [valider du code avec des diagrammes de dépendance](../modeling/validate-code-with-layer-diagrams.md).
 
@@ -174,5 +174,5 @@ Pour vous assurer que les futures modifications dans le code sont conformes aux 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Diagrammes de dépendance : Référence](../modeling/layer-diagrams-reference.md)
+- [Diagrammes de dépendance : Informations de référence](../modeling/layer-diagrams-reference.md)
 - [Créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)

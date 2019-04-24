@@ -11,12 +11,12 @@ ms.assetid: 01370792-b5da-4e46-9ce2-7dd326587141
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8064ffec4b98c1a05d8236b11bec226a08f20321
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 90650b8b3c3432fce05b03a25033977e68f60fca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948088"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112947"
 ---
 # <a name="test-area-8-plug-in-switching"></a>Zone de test 8 : Commutation de plug-in
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ Le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] l’environnement de dévelop
 ## <a name="command-menu-access"></a>Accès au Menu de commande  
  Ce qui suit [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] menu chemins d’environnement de développement intégré sont utilisés dans les cas de test.  
   
--   Contrôle de code source en cours plug-in : **Outils** -> **Options** -> **contrôle de code Source** -> **sélection du plug-in**.  
+- Contrôle de code source en cours plug-in : **Outils** -> **Options** -> **contrôle de code Source** -> **sélection du plug-in**.  
   
--   Modifier la source de liaison de contrôle : **Fichier** -> **contrôle de code Source** -> **modifier le contrôle de code Source**...  
+- Modifier la source de liaison de contrôle : **Fichier** -> **contrôle de code Source** -> **modifier le contrôle de code Source**...  
   
 ## <a name="common-expected-behavior"></a>Comportement attendu commun  
  Il est possible de modifier le plug-in pour une solution de contrôle de code source sans quitter Visual Studio ou de recharger la solution. En outre, le plug-in de contrôle source actuel change automatiquement celle utilisée par une solution quand cette solution est chargée.  

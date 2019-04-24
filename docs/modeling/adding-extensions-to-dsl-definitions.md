@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9f39c45382fc55144f8200c3951fb4a229b7a43
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: fa5c02fc28e7ffec4765d94758c838ab149e7ac3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867369"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064191"
 ---
 # <a name="add-extensions-to-dsl-definitions"></a>Ajouter des extensions à des définitions DSL
 
@@ -20,15 +20,15 @@ Extension de définition DSL vous permet de créer un package d’extensions à 
 
 Extensions DSL peuvent inclure les fonctionnalités suivantes :
 
--   Propriétés des éléments de modèle et de présentation
+- Propriétés des éléments de modèle et de présentation
 
--   Éléments décoratifs pour les formes et connecteurs
+- Éléments décoratifs pour les formes et connecteurs
 
--   Classes, des relations, formes et connecteurs
+- Classes, des relations, formes et connecteurs
 
--   Contraintes de validation
+- Contraintes de validation
 
--   Onglets et des éléments de boîte à outils
+- Onglets et des éléments de boîte à outils
 
 Un utilisateur d’un langage DSL étendu peut créer et enregistrer un modèle qui contient les instances des fonctionnalités supplémentaires. Le modèle peut être lu par d’autres utilisateurs qui ont installé l’extension appropriée. Les utilisateurs qui n’ont pas installé l’extension ne peut pas utiliser les fonctionnalités supplémentaires, mais ils peuvent mettre à jour et enregistrer un modèle sans perdre les fonctionnalités supplémentaires.
 

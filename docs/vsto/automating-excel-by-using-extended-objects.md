@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 03ea220bf886352a05cc67bdd44a9504dcd86964
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a8a08b58871652cea6332f4239e9da98b28f28e0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600852"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070054"
 ---
 # <a name="automate-excel-by-using-extended-objects"></a>Automatiser Excel à l’aide d’objets étendus
   Quand vous développez des solutions Excel dans Visual Studio, vous pouvez également utiliser les *éléments hôtes* et les *contrôles hôtes*dans vos solutions. Il s'agit d'objets qui étendent certains objets couramment utilisés dans le modèle objet Excel (autrement dit, le modèle objet exposé par l'assembly PIA (Primary Interop Assembly) pour Excel), par exemple les objets <xref:Microsoft.Office.Interop.Excel.Worksheet> et <xref:Microsoft.Office.Interop.Excel.Range> . Les objets étendus se comportent comme les objets Excel dont ils dépendent. Toutefois, ils ajoutent des fonctionnalités supplémentaires telles que de nouveaux événements et la liaison de données aux objets.
@@ -37,11 +37,11 @@ ms.locfileid: "56600852"
 ## <a name="excel-host-items"></a>Éléments hôtes Excel
  Les projets Excel vous permettent d'accéder à plusieurs éléments hôtes :
 
--   <xref:Microsoft.Office.Tools.Excel.Worksheet>. Cet élément hôte contient et représente une feuille de calcul dans votre projet. Il sert également de conteneur pour les contrôles managés, notamment les contrôles hôtes et les contrôles Windows Forms. En outre, il gère les informations relatives aux contrôles sur sa surface. Pour plus d’informations, consultez [élément hôte de feuille de calcul](../vsto/worksheet-host-item.md).
+- <xref:Microsoft.Office.Tools.Excel.Worksheet>. Cet élément hôte contient et représente une feuille de calcul dans votre projet. Il sert également de conteneur pour les contrôles managés, notamment les contrôles hôtes et les contrôles Windows Forms. En outre, il gère les informations relatives aux contrôles sur sa surface. Pour plus d’informations, consultez [élément hôte de feuille de calcul](../vsto/worksheet-host-item.md).
 
--   <xref:Microsoft.Office.Tools.Excel.Workbook>. Cet élément hôte représente le classeur de votre projet. Il sert de conteneur pour les composants partagés par toutes les feuilles de calcul du classeur. Pour plus d’informations, consultez [élément hôte de classeur](../vsto/workbook-host-item.md).
+- <xref:Microsoft.Office.Tools.Excel.Workbook>. Cet élément hôte représente le classeur de votre projet. Il sert de conteneur pour les composants partagés par toutes les feuilles de calcul du classeur. Pour plus d’informations, consultez [élément hôte de classeur](../vsto/workbook-host-item.md).
 
--   <xref:Microsoft.Office.Tools.Excel.ChartSheet>. Cet élément hôte est une feuille de calcul Excel qui contient uniquement un graphique et expose des événements.
+- <xref:Microsoft.Office.Tools.Excel.ChartSheet>. Cet élément hôte est une feuille de calcul Excel qui contient uniquement un graphique et expose des événements.
 
      Quand vous ajoutez une feuille de graphique au moment du design en tant que nouvelle feuille dans votre projet de personnalisation au niveau du document Microsoft Office Excel, Visual Studio crée automatiquement un élément hôte <xref:Microsoft.Office.Tools.Excel.ChartSheet> .
 
@@ -52,13 +52,13 @@ ms.locfileid: "56600852"
 
  Pour plus d'informations sur les contrôles hôtes que vous pouvez utiliser dans les projets Excel, consultez les rubriques suivantes :
 
--   [Contrôle de graphique](../vsto/chart-control.md)
+- [Contrôle de graphique](../vsto/chart-control.md)
 
--   [ListObject (contrôle)](../vsto/listobject-control.md)
+- [ListObject (contrôle)](../vsto/listobject-control.md)
 
--   [NamedRange (contrôle)](../vsto/namedrange-control.md)
+- [NamedRange (contrôle)](../vsto/namedrange-control.md)
 
--   [XmlMappedRange control](../vsto/xmlmappedrange-control.md)
+- [XmlMappedRange control](../vsto/xmlmappedrange-control.md)
 
 ## <a name="see-also"></a>Voir aussi
 - [Guide pratique pour Remplir des contrôles ListObject de données](../vsto/how-to-fill-listobject-controls-with-data.md)

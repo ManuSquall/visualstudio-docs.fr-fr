@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2de28fec7c196364566642866a80706ccd7850de
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1318ed7c69ffd2aeaa178d081e5241c02ea1021c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912688"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063216"
 ---
 # <a name="how-to-print-diagrams-from-the-graph-view-and-the-content-model-view"></a>Procédure : Imprimer des diagrammes à partir de la vue du graphique et l’affichage du modèle de contenu
 
@@ -21,13 +21,13 @@ Cette rubrique explique comment imprimer un diagramme à partir de la vue du gra
 
 ## <a name="to-print-diagrams-from-the-xml-schema-designer"></a>Pour imprimer des diagrammes à partir du Concepteur de schémas XML
 
-1.  Ouvrez un fichier XSD dans Visual Studio et ajoutez des nœuds à la [espace de travail du Concepteur de schémas XML](../xml-tools/xml-schema-designer-workspace.md).
+1. Ouvrez un fichier XSD dans Visual Studio et ajoutez des nœuds à la [espace de travail du Concepteur de schémas XML](../xml-tools/xml-schema-designer-workspace.md).
 
-2.  Exporter le diagramme dans un fichier XPS à l’aide de la **exporter le diagramme en tant qu’Image** élément de menu contextuel (clic droit) dans l’aire de conception de la vue du graphique ou de l’affichage du modèle de contenu.
+2. Exporter le diagramme dans un fichier XPS à l’aide de la **exporter le diagramme en tant qu’Image** élément de menu contextuel (clic droit) dans l’aire de conception de la vue du graphique ou de l’affichage du modèle de contenu.
 
      Lorsque vous exportez un diagramme à partir de la vue du graphique, l’aire de conception entière est exportée vers le fichier XPS. Lorsque vous exportez un diagramme à partir de l’affichage du modèle de contenu et plusieurs nœuds s’affiche sur l’aire de conception de l’affichage modèle de contenu, seul le premier nœud est exporté vers le fichier XPS.
 
-3.  Imprimez l’image enregistrée dans le fichier XPS à l’aide d’une visionneuse XPS.
+3. Imprimez l’image enregistrée dans le fichier XPS à l’aide d’une visionneuse XPS.
 
 ## <a name="see-also"></a>Voir aussi
 

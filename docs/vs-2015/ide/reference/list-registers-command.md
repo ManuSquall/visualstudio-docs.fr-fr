@@ -15,17 +15,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6fadd5429b351eb2393aa0823dec133749b32c83
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6f9eaa1299ec49cf20713723e822f8fc641401d8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763037"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658537"
 ---
 # <a name="list-registers-command"></a>Afficher les registres, commande
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Affiche la valeur des registres sélectionnés et vous permet de modifier la liste de registres à afficher.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -38,7 +37,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
   
 ## <a name="switches"></a>Commutateurs  
  /Display [{`register`&#124;`registerGroup`}...]  
- Affiche les valeurs du `register` ou `registerGroup` spécifié. Si aucun `register` ni `registerGroup` n’est spécifié, la liste par défaut de registres est affichée. Si aucun commutateur n’est spécifié, le comportement est le même. Par exemple :  
+ Affiche les valeurs du `register` ou `registerGroup` spécifié. Si aucun `register` ni `registerGroup` n’est spécifié, la liste par défaut de registres est affichée. Si aucun commutateur n’est spécifié, le comportement est le même. Exemple :  
   
  `Debug.ListRegisters /Display eax`  
   
@@ -55,7 +54,7 @@ Debug.ListRegisters [/Display [{register|registerGroup}...]] [/List]
  /Unwatch [{`register`&#124;`registerGroup`}...]  
  Supprime une ou plusieurs valeurs de `register` ou `registerGroup` de la liste.  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  L’alias `r` peut être utilisé à la place de `Debug.ListRegisters`.  
   
 ## <a name="example"></a>Exemple  
@@ -67,5 +66,5 @@ r /Display Flags
   
 ## <a name="see-also"></a>Voir aussi  
  [Commandes Visual Studio](../../ide/reference/visual-studio-commands.md)   
- [Concepts de base du débogage : fenêtre Registres](../../debugger/debugging-basics-registers-window.md)   
+ [Principes de base pour le débogage : Registres (fenêtre)](../../debugger/debugging-basics-registers-window.md)   
  [Guide pratique pour utiliser la fenêtre Registres](../../debugger/how-to-use-the-registers-window.md)

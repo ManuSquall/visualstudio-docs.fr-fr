@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b9c98411e378601280d36dbe4720864177d4019
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: af666497deb20f3c2d9125b4beb452f24cabbbd2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537635"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099891"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>Demander au débogueur les éléments à afficher à l’aide de l’attribut DebuggerDisplay (C#, Visual Basic, F#, C++/CLI)
 La <xref:System.Diagnostics.DebuggerDisplayAttribute> contrôle la façon dont un objet, une propriété ou un champ s’affiche dans les fenêtres de variables du débogueur. Cet attribut peut être appliqué aux éléments suivants : types, délégués, propriétés, champs et assemblys.
@@ -89,6 +89,7 @@ public sealed class MyClass
     }
 }
 ```
+
 Le «, nq « suffixe indique à l’évaluateur d’expression à supprimer les guillemets lors de l’affichage de la valeur finale (nq = sans guillemets).
 
 ## <a name="example"></a>Exemple
@@ -147,7 +148,7 @@ class MyHashtable
         hashtable = new Hashtable();
     }
 
-    private string DebuggerDisplay { get { return "Count = " + hashtable.Count); } }
+    private string DebuggerDisplay { get { return "Count = " + hashtable.Count; } }
 
     private class HashtableDebugView
     {

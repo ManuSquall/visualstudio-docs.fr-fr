@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6426572ff346debba32029024a96c9cc5af52ff4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 0485b6649396239d2b6501c65e801a03767d5df1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699676"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082293"
 ---
 # <a name="add-a-toolbar"></a>Ajouter une barre d’outils
 Cette procédure pas à pas montre comment ajouter une barre d’outils à l’IDE Visual Studio.
@@ -35,7 +35,7 @@ Cette procédure pas à pas montre comment ajouter une barre d’outils à l’I
 
 ## <a name="create-a-toolbar-for-the-ide"></a>Créer une barre d’outils pour l’IDE
 
-1.  Dans *ToolbarTestCommandPackage.vsct*, recherchez la section de symboles. Dans l’élément GuidSymbol nommé guidToolbarTestCommandPackageCmdSet, ajoutez les déclarations pour une barre d’outils et un groupe de la barre d’outils, comme suit.
+1. Dans *ToolbarTestCommandPackage.vsct*, recherchez la section de symboles. Dans l’élément GuidSymbol nommé guidToolbarTestCommandPackageCmdSet, ajoutez les déclarations pour une barre d’outils et un groupe de la barre d’outils, comme suit.
 
     ```xml
     <IDSymbol name="Toolbar" value="0x1000" />
@@ -43,7 +43,7 @@ Cette procédure pas à pas montre comment ajouter une barre d’outils à l’I
 
     ```
 
-2.  En haut de la section Commands, créez une section de Menus. Ajoutez un élément de Menu à la section de Menus pour définir votre barre d’outils.
+2. En haut de la section Commands, créez une section de Menus. Ajoutez un élément de Menu à la section de Menus pour définir votre barre d’outils.
 
     ```xml
     <Menus>
@@ -60,7 +60,7 @@ Cette procédure pas à pas montre comment ajouter une barre d’outils à l’I
 
      Barres d’outils ne peuvent pas être imbriquées telles que des sous-menus. Par conséquent, vous n’avez pas lui affecter un groupe parent. En outre, il est inutile de définir une priorité, car l’utilisateur peut déplacer des barres d’outils. En règle générale, un placement initial d’une barre d’outils est défini par programmation, mais les modifications ultérieures apportées par l’utilisateur sont conservées.
 
-3.  Dans le [groupes](../extensibility/groups-element.md) section, après l’entrée de groupe existant, définir un [groupe](../extensibility/group-element.md) élément destiné à contenir les commandes de la barre d’outils.
+3. Dans le [groupes](../extensibility/groups-element.md) section, après l’entrée de groupe existant, définir un [groupe](../extensibility/group-element.md) élément destiné à contenir les commandes de la barre d’outils.
 
     ```xml
     <Group guid="guidToolbarTestCommandPackageCmdSet" id="ToolbarGroup"
@@ -69,7 +69,7 @@ Cette procédure pas à pas montre comment ajouter une barre d’outils à l’I
     </Group>
     ```
 
-4.  Afficher le bouton sur la barre d’outils. Dans la section boutons, remplacez le bloc Parent dans le bouton de la barre d’outils. Le bloc de bouton résultant doit ressembler à ceci :
+4. Afficher le bouton sur la barre d’outils. Dans la section boutons, remplacez le bloc Parent dans le bouton de la barre d’outils. Le bloc de bouton résultant doit ressembler à ceci :
 
     ```xml
     <Button guid="guidToolbarTestCommandPackageCmdSet" id="ToolbarTestCommandId" priority="0x0100" type="Button">
@@ -83,11 +83,11 @@ Cette procédure pas à pas montre comment ajouter une barre d’outils à l’I
 
      Par défaut, si une barre d’outils n’a aucune commande, il n’apparaît pas.
 
-5.  Générez le projet et commencez le débogage. L’instance expérimentale doit apparaître.
+5. Générez le projet et commencez le débogage. L’instance expérimentale doit apparaître.
 
-6.  Avec le bouton droit de la barre de menus de Visual Studio pour obtenir la liste des barres d’outils. Sélectionnez **barre d’outils de Test**.
+6. Avec le bouton droit de la barre de menus de Visual Studio pour obtenir la liste des barres d’outils. Sélectionnez **barre d’outils de Test**.
 
-7.  Vous devez maintenant voir votre barre d’outils sous forme d’icône à droite de l’icône de recherche dans les fichiers. Lorsque vous cliquez sur l’icône, vous devez voir une boîte de message indiquant que **ToolbarTestCommandPackage. Inside IDEToolbar.ToolbarTestCommand.MenuItemCallback()**.
+7. Vous devez maintenant voir votre barre d’outils sous forme d’icône à droite de l’icône de recherche dans les fichiers. Lorsque vous cliquez sur l’icône, vous devez voir une boîte de message indiquant que **ToolbarTestCommandPackage. Inside IDEToolbar.ToolbarTestCommand.MenuItemCallback()**.
 
 ## <a name="see-also"></a>Voir aussi
 - [Commandes, menus et barres d’outils](../extensibility/internals/commands-menus-and-toolbars.md)

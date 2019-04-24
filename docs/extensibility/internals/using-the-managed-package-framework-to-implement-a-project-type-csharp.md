@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdefaf3dfbce124ecfee9ab6f5c0479fe12930f8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8f233e2256fc4baef9ee6ca7f07d3d7b71b68b47
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627764"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112299"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>Utilisation de l’infrastructure de package gérée pour implémenter un type de projet (C#)
 Managed Package Framework (MPF) fournit les classes c# vous pouvez utiliser ou hériter pour implémenter vos propres types de projet. MPF implémente la plupart des interfaces de que Visual Studio attend un type de projet pour fournir, en vous laissant permettant de vous concentrer sur l’implémentation de l’exactitude de votre type de projet.
@@ -27,9 +27,9 @@ Managed Package Framework (MPF) fournit les classes c# vous pouvez utiliser ou h
 
  Pour ajouter ce projet à votre solution VSPackage, procédez comme suit :
 
-1.  Télécharger les fichiers MPFProj à *MPFProjectDir*.
+1. Télécharger les fichiers MPFProj à *MPFProjectDir*.
 
-2.  Dans le *MPFProjectDir*\Dev10\Src\CSharp\ProjectBase.file, modifiez le bloc suivant :
+2. Dans le *MPFProjectDir*\Dev10\Src\CSharp\ProjectBase.file, modifiez le bloc suivant :
 
 ```
 <!-- Provide a default value for $(ProjectBasePath) -->
@@ -38,11 +38,11 @@ Managed Package Framework (MPF) fournit les classes c# vous pouvez utiliser ou h
   </PropertyGroup>
 ```
 
-1.  Créez un projet VSPackage.
+1. Créez un projet VSPackage.
 
-2.  Décharger le projet VSPackage.
+2. Décharger le projet VSPackage.
 
-3.  Modifier le fichier .csproj VSPackage en ajoutant le bloc suivant avant les autres `<Import>` blocs :
+3. Modifier le fichier .csproj VSPackage en ajoutant le bloc suivant avant les autres `<Import>` blocs :
 
 ```
 <Import Project="MPFProjectDir\Dev10\Src\CSharp\ProjectBase.files" />
@@ -54,17 +54,17 @@ Managed Package Framework (MPF) fournit les classes c# vous pouvez utiliser ou h
   </PropertyGroup>
 ```
 
-1.  Enregistrez le projet.
+1. Enregistrez le projet.
 
-2.  Fermez et rouvrez la solution VSPackage.
+2. Fermez et rouvrez la solution VSPackage.
 
-3.  Rouvrez le projet VSPackage. Vous devriez voir un répertoire nommé ProjectBase.
+3. Rouvrez le projet VSPackage. Vous devriez voir un répertoire nommé ProjectBase.
 
-4.  Ajoutez la référence suivante au projet VSPackage :
+4. Ajoutez la référence suivante au projet VSPackage :
 
      Microsoft.Build.Tasks.4.0
 
-5.  Générez le projet.
+5. Générez le projet.
 
 ## <a name="hierarchy-classes"></a>Hiérarchie des Classes
  Le tableau suivant récapitule les classes dans le MPFProj qui prennent en charge des hiérarchies de projet. Pour plus d’informations, consultez [hiérarchies et sélection](../../extensibility/internals/hierarchies-and-selection.md).

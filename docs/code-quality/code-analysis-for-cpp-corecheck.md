@@ -10,12 +10,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 6db375422e4a8d21d9b82cac82a07fed45e7d279
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 0b725d0ee49590062ebdde9a1ef27f838678ccf5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796814"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652109"
 ---
 # <a name="c-core-guidelines-checker-reference"></a>Référence des vérificateurs C++ Core Guidelines
 
@@ -107,12 +107,9 @@ Expression '% expr %' : Aucun tableau de DÉSINTÉGRATION de pointeur. Consulte
 
 [C26435 SINGLE_VIRTUAL_SPECIFICATION](c26435.md) fonction '% symbole %' doit spécifier un seul 'virtual', 'override' ou 'final'. Consultez [C.128 : Fonctions virtuelles doivent spécifier un seul de virtuel, substitution, ou final](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
 
-
 [C26436 NEED_VIRTUAL_DTOR](C26436.md) le type '% symbole % avec une fonction virtuelle a besoin d’un destructeur non virtuel public virtuel ou protégé. Consultez [C++ Core Guidelines C.35](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#c35-a-base-class-destructor-should-be-either-public-and-virtual-or-protected-and-nonvirtual).
 
-
 [C26443 NO_EXPLICIT_DTOR_OVERRIDE](c26443.md) destructeur de substitution n’employez pas explicites 'override' ou 'virtual' spécificateurs. Consultez [C.128 : Fonctions virtuelles doivent spécifier un seul de virtuel, substitution, ou final](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
-
 
 ## <a name="type-group"></a>TYPE de groupe
 
@@ -205,7 +202,6 @@ Consultez [GSL.view des recommandations C++ Core : Affichage](https://github.co
 
 [C26449 NO_SPAN_FROM_TEMPORARY](c26449.md) 
  `gsl::span` ou `std::string_view` créé à partir d’une table temporaire ne sont pas valides lorsque temporaire est invalidée. Consultez [C++ Core Guidelines : GSL.view : Vues](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#gslview-views).
-
 
 ## <a name="deprecated-warnings"></a>Avertissements déconseillées
 

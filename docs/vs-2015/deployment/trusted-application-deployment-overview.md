@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 34d643d3a5966ac287773b2d01d88596d51239f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b8081946da2053d257691c8ec5dc2b1302e4d75
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954082"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105836"
 ---
 # <a name="trusted-application-deployment-overview"></a>Vue d'ensemble du déploiement d'applications approuvées
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,15 +58,15 @@ Cette rubrique offre une vue d’ensemble du déploiement d’applications [!INC
   
   Vous devez suivre ces étapes pour tirer parti du déploiement d'applications approuvées :  
   
-1.  Obtenir un certificat pour l'éditeur.  
+1. Obtenir un certificat pour l'éditeur.  
   
-2.  Ajouter l'éditeur au magasin d'éditeurs approuvés sur tous les clients.  
+2. Ajouter l'éditeur au magasin d'éditeurs approuvés sur tous les clients.  
   
-3.  Créer votre application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] .  
+3. Créer votre application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] .  
   
-4.  Signer le manifeste de déploiement avec le certificat de l'éditeur.  
+4. Signer le manifeste de déploiement avec le certificat de l'éditeur.  
   
-5.  Publier le déploiement d'applications sur les ordinateurs clients.  
+5. Publier le déploiement d'applications sur les ordinateurs clients.  
   
 ### <a name="obtain-a-certificate-for-the-publisher"></a>Obtenir un certificat pour l'éditeur  
  Les certificats numériques sont un composant principal du système de sécurité et d'authentification de Microsoft Authenticode. Authenticode est un composant standard du système d'exploitation Windows. Toutes les applications [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] doivent être signées avec un certificat numérique, qu'elles participent ou non au déploiement d'applications approuvées. Pour obtenir une explication complète du fonctionne d’Authenticode avec [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], consultez [ClickOnce et Authenticode](../deployment/clickonce-and-authenticode.md).  
@@ -78,9 +78,9 @@ Cette rubrique offre une vue d’ensemble du déploiement d’applications [!INC
   
  Si vous ne déployez pas votre application dans un environnement de bureau géré, vous disposez des options suivantes pour ajouter un certificat au magasin d'éditeurs approuvés :  
   
--   Espace de noms <xref:System.Security.Cryptography?displayProperty=fullName> .  
+- Espace de noms <xref:System.Security.Cryptography?displayProperty=fullName> .  
   
--   CertMgr.exe, composant d'Internet Explorer qui, par conséquent, existe sur Windows 98 et toutes les versions ultérieures. Pour plus d’informations, consultez [Certmgr.exe (outil de gestionnaire de certificats)](http://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb).  
+- CertMgr.exe, composant d'Internet Explorer qui, par conséquent, existe sur Windows 98 et toutes les versions ultérieures. Pour plus d’informations, consultez [Certmgr.exe (outil de gestionnaire de certificats)](http://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb).  
   
 ### <a name="create-a-clickonce-application"></a>Créer une application ClickOnce  
  Une application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] est une application cliente [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] combinée avec des fichiers manifestes qui décrivent l'application et fournissent les paramètres d'installation. Vous pouvez transformer votre programme en application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] à l'aide de la commande **Publier** dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Vous pouvez également générer tous les fichiers requis pour le déploiement [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] à l'aide des outils inclus dans le [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Pour obtenir des instructions détaillées sur [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] déploiement, consultez [procédure pas à pas : déploiement manuel d’une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  

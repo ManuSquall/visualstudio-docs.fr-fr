@@ -14,25 +14,25 @@ ms.assetid: b6a54a93-7fc9-459a-bdd6-f42d1ce40b5f
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 49a465345ad7cb70fc21d1a253816162daf939a8
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 6ec548ff629663e647d2d153ff87caa4edb1dd21
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843657"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086076"
 ---
 # <a name="invalid-character-javascript"></a>Caractère non valide (JavaScript)
 Composé d’un identificateur à l’aide d’une (ou les caractères) ne pas reconnu comme valide par le [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] compilateur. Caractères valides utilisent les règles suivantes :  
   
--   Le premier caractère doit être une lettre ASCII (majuscule ou minuscule) ou un trait de soulignement (_).  
+- Le premier caractère doit être une lettre ASCII (majuscule ou minuscule) ou un trait de soulignement (_).  
   
--   Les caractères suivants peuvent être des lettres ASCII, des nombres ou des traits de soulignement.  
+- Les caractères suivants peuvent être des lettres ASCII, des nombres ou des traits de soulignement.  
   
--   Le nom d’identificateur ne peut pas être un mot réservé.  
+- Le nom d’identificateur ne peut pas être un mot réservé.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
--   Évitez d’utiliser des caractères qui ne sont pas dans le cadre de la [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] définition de langage.  
+- Évitez d’utiliser des caractères qui ne sont pas dans le cadre de la [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] définition de langage.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Variables](../../javascript/variables-javascript.md)   

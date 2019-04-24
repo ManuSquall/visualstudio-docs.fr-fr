@@ -18,12 +18,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db0aaaee01c27fa4588cc2268cd3106abfcc739e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d91263dc0f66c048e308505e461c8b1536b77a06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763112"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109809"
 ---
 # <a name="creating-solutions-and-projects"></a>Création de projets et de solutions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Les projets sont les conteneurs logiques pour tout ce qui est nécessaire pour g
 ## <a name="adding-single-files-at-the-solution-level"></a>Ajout de fichiers uniques au niveau de la solution  
  Vous pouvez parfois avoir un fichier auquel plusieurs projets font référence, ou qui contient du texte ou des données diverses qui appartiennent logiquement au niveau de la solution plutôt qu’à un projet spécifique.  Pour ajouter un élément à une solution  
   
-1.  Cliquez avec le bouton droit sur le nœud de la solution dans l’**Explorateur de solutions** et choisissez **Ajouter &#124; Nouvel élément** ou **Ajouter &#124; Élément existant**.  
+1. Cliquez avec le bouton droit sur le nœud de la solution dans l’**Explorateur de solutions** et choisissez **Ajouter &#124; Nouvel élément** ou **Ajouter &#124; Élément existant**.  
   
 ## <a name="creating-empty-solutions"></a>Création de solutions vides  
  Bien qu'un projet doive résider dans une solution, vous pouvez créer une solution qui n'a aucun projet.  
@@ -87,11 +87,11 @@ Les projets sont les conteneurs logiques pour tout ce qui est nécessaire pour g
   
 ##### <a name="to-delete-a-solution"></a>Pour supprimer une solution  
   
-1.  Dans l' **Explorateur de solutions**, cliquez avec le bouton droit sur la solution à supprimer, puis sélectionnez **Ouvrir le dossier dans l'Explorateur de fichiers**.  
+1. Dans l' **Explorateur de solutions**, cliquez avec le bouton droit sur la solution à supprimer, puis sélectionnez **Ouvrir le dossier dans l'Explorateur de fichiers**.  
   
-2.  Dans l'Explorateur de fichiers, remontez d'un niveau.  
+2. Dans l'Explorateur de fichiers, remontez d'un niveau.  
   
-3.  Sélectionnez le répertoire contenant la solution et appuyez sur Suppr.  
+3. Sélectionnez le répertoire contenant la solution et appuyez sur Suppr.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Projets et solutions](../ide/solutions-and-projects-in-visual-studio.md)   

@@ -1,7 +1,7 @@
 ---
 title: Installer et utiliser derrière un pare-feu ou un serveur proxy
 description: Passez en revue les URL de domaine à ajouter à la liste verte, ainsi que les ports et protocoles à ouvrir, si votre organisation utilise un pare-feu ou un serveur proxy
-ms.date: 07/10/2018
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b483115daf15d7bf44c188e76993e5ffaedab699
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 227525b08e45832041b573fbb7cf3719484d1b8e
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323842"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857526"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Installer et utiliser Visual Studio et les services Azure derrière un pare-feu ou un serveur proxy
 
@@ -102,7 +102,7 @@ Pour vous assurer que vous avez accès à tout ce dont vous avez besoin lorsque 
 | Informations de référentiel GitHub | api.github.com | https | 443 | Requis pour l’obtention d’informations supplémentaires sur les packages Bower |
 | Linters Web | Eslint.org<br><br>www.Bing.com <br><br>www.coffeelint.org | http | 80 | |
 | Cookiecutter<br>Modèle Explorer<br>découverte <br><br>Cookiecutter <br>Projet Explorer<br> création | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org | https | 443<br> | Permet de détecter les modèles en ligne à partir de notre flux recommandé et de dépôts GitHub <br><br>Permet de créer un projet à partir d’un modèle cookiecutter qui requiert une installation à la demande unique d’un package Python cookiecutter à partir de l’index du package Python (PyPI) |
-| Package Python <br>découverte<br><br>Package Python <br>gestion<br><br>Python <br>Nouveau projet <br>C++ | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | https | 443 | Offre la possibilité de rechercher des packages pip<br><br>Permet d’installer le pip automatiquement s’il est manquant <br><br> Permet de créer le <br><br>Permet de résoudre les modèles de projets Python suivants dans la boîte de dialogue Nouveau projet pour les URL du modèle de cookiecutter :<br> - Projet Classifier<br>- Projet clustering <br> - Projet Regression <br> - PyGame avec PyKinect <br> - Projet Pyvot |
+| Package Python <br>découverte<br><br>Package Python <br>gestion<br><br>Nouveau <br>Python <br> projet <br>C++ | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | https | 443 | Offre la possibilité de rechercher des packages pip<br><br>Permet d’installer le pip automatiquement s’il est manquant <br><br>Permet de résoudre les nouveaux modèles de projets Python suivants pour les URL du modèle de cookiecutter :<br> - Projet Classifier<br>- Projet clustering <br> - Projet Regression <br> - PyGame avec PyKinect <br> - Projet Pyvot |
 | Office Web <br>complément <br> manifeste <br>Vérification <br>Service | verificationservice.osi.office.net | https | 443 | Permet de valider les manifestes pour les compléments Office Web |
 | SharePoint et <br>Compléments Office | sharepoint.com | https | 443 | Permet de publier et tester des compléments Office et SharePoint sur SharePoint Online |
 | Workflow Manager <br>Service de test<br> Hôte | | http | 12292 | Une règle de pare-feu créée automatiquement pour le test des compléments SharePoint avec des workflows |
@@ -141,6 +141,7 @@ Voici d’autres options de support :
 
 ## <a name="see-also"></a>Voir aussi
 
+* [Exigences de connectivité pour Live Share](/visualstudio/liveshare/reference/connectivity/)
 * [Créer une installation réseau de Visual Studio](create-a-network-installation-of-visual-studio.md)
 * [Résoudre les problèmes liés aux erreurs réseau dans Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
 * [Guide de l’administrateur Visual Studio](visual-studio-administrator-guide.md)

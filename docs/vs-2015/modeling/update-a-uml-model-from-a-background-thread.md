@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cd0707ec7838ffb2dcebc8a176c79810f2614133
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d5a7ad318b5bd9fac41d5e8835169e4075d1da67
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953187"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093005"
 ---
 # <a name="update-a-uml-model-from-a-background-thread"></a>Mettre à jour un modèle UML à partir d'un thread d'arrière-plan
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,30 +23,30 @@ Il peut parfois être utile apporter des modifications à un modèle dans un thr
   
  Toutefois, vous devez savoir que le magasin UML n'est pas thread-safe. Les précautions suivantes sont importantes :  
   
--   Chaque mise à jour d'un modèle ou d'un diagramme doit être effectuée dans le thread d'interface utilisateur. Le thread d'arrière-plan doit utiliser <xref:System.Windows.Forms.Control.Invoke%2A> ou `Dispatcher.`<xref:System.Windows.Threading.Dispatcher.Invoke%2A> pour que le thread d'interface utilisateur effectue réellement les mises à jour.  
+- Chaque mise à jour d'un modèle ou d'un diagramme doit être effectuée dans le thread d'interface utilisateur. Le thread d'arrière-plan doit utiliser <xref:System.Windows.Forms.Control.Invoke%2A> ou `Dispatcher.`<xref:System.Windows.Threading.Dispatcher.Invoke%2A> pour que le thread d'interface utilisateur effectue réellement les mises à jour.  
   
--   Si vous regroupez une série de modifications dans une transaction unique, nous vous recommandons d'empêcher l'utilisateur de modifier le modèle pendant que la transaction est en cours. Autrement, les modifications apportées par l'utilisateur feront partie de la même transaction. Vous pouvez empêcher l'utilisateur d'apporter des modifications en affichant une boîte de dialogue modale. Si vous le souhaitez, vous pouvez fournir un bouton Annuler dans la boîte de dialogue. L'utilisateur peut voir les modifications à mesure qu'elles se produisent.  
+- Si vous regroupez une série de modifications dans une transaction unique, nous vous recommandons d'empêcher l'utilisateur de modifier le modèle pendant que la transaction est en cours. Autrement, les modifications apportées par l'utilisateur feront partie de la même transaction. Vous pouvez empêcher l'utilisateur d'apporter des modifications en affichant une boîte de dialogue modale. Si vous le souhaitez, vous pouvez fournir un bouton Annuler dans la boîte de dialogue. L'utilisateur peut voir les modifications à mesure qu'elles se produisent.  
   
 ## <a name="example"></a>Exemple  
  Cet exemple utilise un thread d'arrière-plan pour apporter plusieurs modifications à un modèle. Une boîte de dialogue permet d'exclure l'utilisateur pendant que le thread s'exécute. Dans cet exemple simple, la boîte de dialogue ne contient pas de bouton Annuler. Toutefois, il serait facile d'ajouter cette fonctionnalité.  
   
 #### <a name="to-run-the-example"></a>Pour exécuter l'exemple  
   
-1. Créez un gestionnaire de commandes dans un projet C#, comme décrit dans [définir une commande de menu sur un diagramme de modélisation](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
+1. Créez un gestionnaire de commandes dans un projet c#, comme décrit dans [définir une commande de menu sur un diagramme de modélisation](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
   
 2. Assurez-vous que le projet comprend des références aux assemblys suivants :  
   
-   -   Microsoft.VisualStudio.ArchitectureTools.Extensibility  
+   - Microsoft.VisualStudio.ArchitectureTools.Extensibility  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.[version]  
+   - Microsoft.VisualStudio.Modeling.Sdk.[version]  
   
-   -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]  
+   - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]  
   
-   -   Microsoft.VisualStudio.Uml.Interfaces  
+   - Microsoft.VisualStudio.Uml.Interfaces  
   
-   -   System.ComponentModel.Composition  
+   - System.ComponentModel.Composition  
   
-   -   System.Windows.Forms  
+   - System.Windows.Forms  
   
 3. Ajoutez au projet un formulaire Windows nommé **ProgressForm**. Il doit afficher un message indiquant que les mises à jour sont en cours. Il n'est pas nécessaire qu'il contienne d'autres contrôles.  
   
@@ -162,9 +162,9 @@ namespace BackgroundThreadProgressUI // CHANGE TO YOUR NAMESPACE
   
 #### <a name="to-allow-the-user-to-cancel-the-thread-in-the-example"></a>Pour permettre à l'utilisateur d'annuler le thread dans l'exemple  
   
-1.  Ajoutez un bouton Annuler à la boîte de dialogue de progression.  
+1. Ajoutez un bouton Annuler à la boîte de dialogue de progression.  
   
-2.  Ajoutez le code suivant à la boîte de dialogue de progression :  
+2. Ajoutez le code suivant à la boîte de dialogue de progression :  
   
      `public event MethodInvoker Cancel;`  
   
@@ -176,7 +176,7 @@ namespace BackgroundThreadProgressUI // CHANGE TO YOUR NAMESPACE
   
      `}`  
   
-3.  Dans la méthode Execute(), insérez cette ligne après la construction du formulaire :  
+3. Dans la méthode Execute(), insérez cette ligne après la construction du formulaire :  
   
      `form.Cancel += delegate() { worker.CancelAsync(); };`  
   

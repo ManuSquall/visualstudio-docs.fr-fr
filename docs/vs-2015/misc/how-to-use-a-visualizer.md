@@ -23,12 +23,12 @@ ms.assetid: d2611385-0134-4387-8c5a-979fe625a462
 caps.latest.revision: 37
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7ec7527e51175b82d06a35ad7a6bc26856acf5dd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c0344b9961e7ade31864d70c7d7422f328983abd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949784"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100974"
 ---
 # <a name="how-to-use-a-visualizer"></a>Procédure : Utiliser un visualiseur
 Vous pouvez utiliser un visualiseur afin d'afficher le contenu d'une variable ou d'un objet de façon explicite pour le type de données. Vous pouvez utiliser des visualiseurs depuis **DataTips**, un **espion** fenêtre, le **automatique** fenêtre, ou le **variables locales** fenêtre.  
@@ -40,15 +40,15 @@ Vous pouvez utiliser un visualiseur afin d'afficher le contenu d'une variable ou
   
 ### <a name="to-open-a-visualizer"></a>Pour ouvrir un visualiseur  
   
-1.  Cliquez sur l’icône de loupe qui apparaît en regard d’un nom de variable dans **DataTips**, un **espion** fenêtre, ou dans le **automatique**, **variables locales**, ou **Espion express** fenêtre.  
+1. Cliquez sur l’icône de loupe qui apparaît en regard d’un nom de variable dans **DataTips**, un **espion** fenêtre, ou dans le **automatique**, **variables locales**, ou **Espion express** fenêtre.  
   
      Une liste de visualiseurs s'affiche.  
   
-2.  Cliquez sur le visualiseur à utiliser.  
+2. Cliquez sur le visualiseur à utiliser.  
   
 ### <a name="to-use-a-visualizer-for-managed-code-during-remote-debugging"></a>Pour utiliser un visualiseur pour le code managé pendant le débogage distant  
   
--   Copiez la DLL de visualiseur vers l'ordinateur distant avant de démarrer la session de débogage.  
+- Copiez la DLL de visualiseur vers l'ordinateur distant avant de démarrer la session de débogage.  
   
      Le chemin d’accès à la DLL doit être le même sur les ordinateurs local et distant. Ce chemin d'accès peut correspondre à l'un ou l'autre des emplacements suivants :  
   

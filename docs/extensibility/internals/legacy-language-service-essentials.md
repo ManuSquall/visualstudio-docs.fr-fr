@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8c081a2836c4dbb85f7d9af789deeda667a2a27
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 582006c7b9629911f9d403fdab6af0637eb9337c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616870"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661891"
 ---
 # <a name="legacy-language-service-essentials"></a>Éléments fondamentaux du service de langage hérité
 Vous devez fournir un service de langage pour intégrer un langage de programmation dans Visual Studio. Cette rubrique décrit les fonctionnalités disponibles dans les services de langage hérité.
@@ -41,7 +41,6 @@ Vous devez fournir un service de langage pour intégrer un langage de programmat
  La plupart de ces fonctionnalités requièrent le service de langage pour analyser le code source. Vous pouvez souvent réutiliser les jetons et l’analyse du code pour votre compilateur ou l’interpréteur.
 
  Les fonctionnalités suivantes sont liées à la prise en charge des langages de programmation mais ne font pas partie des services de langage :
-
 
 | Fonctionnalité | Description |
 |-----------------------| - |

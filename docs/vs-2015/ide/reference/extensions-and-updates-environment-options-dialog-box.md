@@ -11,17 +11,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8eaf16ac81f5b8347955e97d71f82e37e7feff38
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 16b8d2214d9f81115d183eb1b4e6765dcd33d37e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756333"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655100"
 ---
 # <a name="extensions-and-updates-environment-options-dialog-box"></a>Extensions et mises à jour, Environnement, boîte de dialogue Options
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Utilisez cette page pour définir les options selon lesquelles Visual Studio effectue les mises à jour, et comment les extensions sont mises à jour et découvertes.  
   
 ### <a name="automatically-check-for-updates"></a>Rechercher automatiquement les mises à jour  
@@ -30,11 +29,11 @@ Utilisez cette page pour définir les options selon lesquelles Visual Studio eff
 ### <a name="automatically-update-extensions"></a>Mettre à jour automatiquement les extensions  
  Quand elle est activée, cette option met à jour les extensions sans demander confirmation. Pour plus d’informations, consultez [Recherche et utilisation des extensions Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).  
   
-### <a name="load-user-extensions-when-running-as-administrator"></a>Charger les extensions par utilisateur lors d’une exécution en tant qu’administrateur  
+### <a name="load-user-extensions-when-running-as-administrator"></a>Charger les extensions par utilisateur lors d'une exécution en tant qu'administrateur  
  Pour plus d’informations, consultez [Recherche et utilisation des extensions Visual Studio](../../ide/finding-and-using-visual-studio-extensions.md).  
   
-### <a name="additional-extension-galleries"></a>Galeries d’extensions supplémentaires  
- Une fonctionnalité de la version Enterprise qui permet la prise en charge des galeries d’extensions propriétaires. Pour plus d’informations, consultez [Galeries privées](../../extensibility/private-galleries.md).  
+### <a name="additional-extension-galleries"></a>Galeries d'extensions supplémentaires  
+ Une fonctionnalité de la version Enterprise qui permet la prise en charge des galeries d'extensions propriétaires. Pour plus d’informations, consultez [Galeries privées](../../extensibility/private-galleries.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Environnement, boîte de dialogue Options](../../ide/reference/environment-options-dialog-box.md)

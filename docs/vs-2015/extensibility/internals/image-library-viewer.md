@@ -6,12 +6,12 @@ ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cdd01551472a3cf619d9156e0db20ad3b7c4931e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 93fa86fcac429b38c1e727f39f8c94611310119c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951957"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062596"
 ---
 # <a name="image-library-viewer"></a>Visionneuse de bibliothèque d’images
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -224,9 +224,9 @@ L’outil Visual Studio Image Library Viewer peut charger et rechercher des mani
   
 ## <a name="notes"></a>Notes  
   
--   Par défaut, l’outil permet d’extraire plusieurs manifestes d’images présents dans le répertoire d’installation de Visual Studio. Est le seul qui a des monikers publiquement consommables le **Microsoft.VisualStudio.ImageCatalog** manifeste. GUID : ae27a6b0-e345-4288-96df-5eaf394ee369 (faire **pas** remplacer ce GUID dans un manifeste personnalisé) Type : KnownMonikers  
+- Par défaut, l’outil permet d’extraire plusieurs manifestes d’images présents dans le répertoire d’installation de Visual Studio. Est le seul qui a des monikers publiquement consommables le **Microsoft.VisualStudio.ImageCatalog** manifeste. GUID : ae27a6b0-e345-4288-96df-5eaf394ee369 (faire **pas** remplacer ce GUID dans un manifeste personnalisé) Type : KnownMonikers  
   
--   L’outil tente de lancement pour charger tous les manifestes d’image qu’il trouve, donc il peut prendre plusieurs secondes pour l’application s’affiche réellement. Il peut également être lente ou ne répondent pas lors du chargement des manifestes.  
+- L’outil tente de lancement pour charger tous les manifestes d’image qu’il trouve, donc il peut prendre plusieurs secondes pour l’application s’affiche réellement. Il peut également être lente ou ne répondent pas lors du chargement des manifestes.  
   
 ## <a name="sample-output"></a>Résultat de l'exemple  
  Cet outil ne génère pas de sortie.

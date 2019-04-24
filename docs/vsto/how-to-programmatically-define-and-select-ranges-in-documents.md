@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d95690af1b1712aa374a4e9717c8c3bc6ac17fed
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6cdfe722e957eaae97b587940a1b8fb3db1112c6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599902"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078861"
 ---
 # <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>Procédure : Définir et sélectionner des plages dans les documents par programmation
   Vous pouvez définir une plage dans un document Microsoft Office Word en utilisant un objet <xref:Microsoft.Office.Interop.Word.Range>. Vous pouvez sélectionner la totalité du document dans une de plusieurs façons, par exemple, à l’aide de la <xref:Microsoft.Office.Interop.Word.Range.Select%2A> méthode de la <xref:Microsoft.Office.Interop.Word.Range> de l’objet, ou en utilisant la propriété de contenu de la <xref:Microsoft.Office.Tools.Word.Document> classe (dans une personnalisation au niveau du document) ou la <xref:Microsoft.Office.Interop.Word.Document> classe (dans un Complément VSTO).
@@ -33,14 +33,14 @@ ms.locfileid: "56599902"
 
 ### <a name="to-define-a-range-in-a-document-level-customization"></a>Pour définir une plage dans une personnalisation au niveau du document
 
-1.  Ajoutez la plage au document en passant un caractère de début et de fin à la méthode <xref:Microsoft.Office.Tools.Word.Document.Range%2A> de la classe <xref:Microsoft.Office.Tools.Word.Document>. Pour utiliser cet exemple de code, exécutez-le à partir de la classe `ThisDocument` de votre projet.
+1. Ajoutez la plage au document en passant un caractère de début et de fin à la méthode <xref:Microsoft.Office.Tools.Word.Document.Range%2A> de la classe <xref:Microsoft.Office.Tools.Word.Document>. Pour utiliser cet exemple de code, exécutez-le à partir de la classe `ThisDocument` de votre projet.
 
      [!code-vb[Trin_VstcoreWordAutomation#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#18)]
      [!code-csharp[Trin_VstcoreWordAutomation#18](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#18)]
 
 ### <a name="to-define-a-range-by-using-a-vsto-add-in"></a>Pour définir une plage en utilisant un complément VSTO
 
-1.  Ajoutez la plage au document en passant un caractère de début et de fin à la méthode <xref:Microsoft.Office.Interop.Word._Document.Range%2A> de la classe <xref:Microsoft.Office.Interop.Word.Document>. L'exemple de code suivant ajoute une plage au document actif. Pour utiliser cet exemple de code, exécutez-le à partir de la classe `ThisAddIn` de votre projet.
+1. Ajoutez la plage au document en passant un caractère de début et de fin à la méthode <xref:Microsoft.Office.Interop.Word._Document.Range%2A> de la classe <xref:Microsoft.Office.Interop.Word.Document>. L'exemple de code suivant ajoute une plage au document actif. Pour utiliser cet exemple de code, exécutez-le à partir de la classe `ThisAddIn` de votre projet.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#18)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#18](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#18)]
@@ -50,7 +50,7 @@ ms.locfileid: "56599902"
 
 ### <a name="to-select-the-entire-document-as-a-range-by-using-the-select-method"></a>Pour sélectionner la totalité du document comme plage à l'aide de la méthode Select
 
-1.  Utilisez la méthode <xref:Microsoft.Office.Interop.Word.Range.Select%2A> d'un <xref:Microsoft.Office.Interop.Word.Range>qui contient la totalité du document. Pour utiliser l'exemple de code suivant, exécutez-le à partir de la classe `ThisDocument` de votre projet.
+1. Utilisez la méthode <xref:Microsoft.Office.Interop.Word.Range.Select%2A> d'un <xref:Microsoft.Office.Interop.Word.Range>qui contient la totalité du document. Pour utiliser l'exemple de code suivant, exécutez-le à partir de la classe `ThisDocument` de votre projet.
 
      [!code-vb[Trin_VstcoreWordAutomation#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#19)]
      [!code-csharp[Trin_VstcoreWordAutomation#19](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#19)]
@@ -75,12 +75,12 @@ ms.locfileid: "56599902"
 
 ### <a name="to-select-a-sentence-by-manually-setting-the-start-and-end-values"></a>Pour sélectionner une phrase en définissant manuellement les valeurs de début et de fin
 
-1.  Créez une variable de plage.
+1. Créez une variable de plage.
 
      [!code-vb[Trin_VstcoreWordAutomation#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#23)]
      [!code-csharp[Trin_VstcoreWordAutomation#23](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#23)]
 
-2.  Vérification pour voir s’il existe au moins deux phrases dans le document, définissez la *Démarrer* et *fin* arguments de la plage, puis sélectionnez la plage.
+2. Vérification pour voir s’il existe au moins deux phrases dans le document, définissez la *Démarrer* et *fin* arguments de la plage, puis sélectionnez la plage.
 
      [!code-vb[Trin_VstcoreWordAutomation#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#24)]
      [!code-csharp[Trin_VstcoreWordAutomation#24](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#24)]
@@ -90,7 +90,7 @@ ms.locfileid: "56599902"
 
 ### <a name="to-select-the-entire-document-as-a-range-by-using-the-select-method"></a>Pour sélectionner la totalité du document comme plage à l'aide de la méthode Select
 
-1.  Utilisez la méthode <xref:Microsoft.Office.Interop.Word.Range.Select%2A> d'un <xref:Microsoft.Office.Interop.Word.Range>qui contient la totalité du document. L'exemple de code suivant sélectionne le contenu du document actif. Pour utiliser cet exemple de code, exécutez-le à partir de la classe `ThisAddIn` de votre projet.
+1. Utilisez la méthode <xref:Microsoft.Office.Interop.Word.Range.Select%2A> d'un <xref:Microsoft.Office.Interop.Word.Range>qui contient la totalité du document. L'exemple de code suivant sélectionne le contenu du document actif. Pour utiliser cet exemple de code, exécutez-le à partir de la classe `ThisAddIn` de votre projet.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#19](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#19)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#19](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#19)]
@@ -115,12 +115,12 @@ ms.locfileid: "56599902"
 
 ### <a name="to-select-a-sentence-by-manually-setting-the-start-and-end-values"></a>Pour sélectionner une phrase en définissant manuellement les valeurs de début et de fin
 
-1.  Créez une variable de plage.
+1. Créez une variable de plage.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#23)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#23](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#23)]
 
-2.  Vérification pour voir s’il existe au moins deux phrases dans le document, définissez la *Démarrer* et *fin* arguments de la plage, puis sélectionnez la plage.
+2. Vérification pour voir s’il existe au moins deux phrases dans le document, définissez la *Démarrer* et *fin* arguments de la plage, puis sélectionnez la plage.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#24)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#24](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#24)]

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d814576c4f071c9e90dd71d56c3bde8da43260f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ed19972fb2f71104357977554984ae43f886c950
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609915"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084360"
 ---
 # <a name="expose-project-objects"></a>Exposer des objets du projet
 
@@ -28,7 +28,7 @@ Il est couramment utilisée pour les projets exposer une collection de projets p
 
 ## <a name="to-contribute-a-vspackage-specific-object-for-a-project"></a>De contribuer un objet VSPackage spécifique pour un projet
 
-1.  Ajouter les clés appropriées à la *.pkgdef* fichier de votre VSPackage.
+1. Ajouter les clés appropriées à la *.pkgdef* fichier de votre VSPackage.
 
      Par exemple, voici le *.pkgdef* paramètres pour le projet de langage C++ :
 
@@ -39,7 +39,7 @@ Il est couramment utilisée pour les projets exposer une collection de projets p
     "VCProjectEngineEventsObject"=""
     ```
 
-2.  Implémenter le code dans le <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> méthode, comme dans l’exemple suivant.
+2. Implémenter le code dans le <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> méthode, comme dans l’exemple suivant.
 
     ```cpp
     STDMETHODIMP CVsPackage::GetAutomationObject(

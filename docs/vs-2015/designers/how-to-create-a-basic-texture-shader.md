@@ -9,12 +9,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 66a25c56e50db0caecf4aa7a314be529e2caba12
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9dda948921c702367859afe32ad75a7998460587
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54793432"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048565"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>Procédure : créer un nuanceur de texture de base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,15 +23,15 @@ Ce document indique comment utiliser le concepteur de nuanceur et DGSL (Directed
   
  Ce document illustre ces activités :  
   
--   Suppression de nœuds d’un graphique du nuanceur  
+- Suppression de nœuds d’un graphique du nuanceur  
   
--   Ajout de nœuds à un graphique  
+- Ajout de nœuds à un graphique  
   
--   Définition des paramètres de nuanceur  
+- Définition des paramètres de nuanceur  
   
--   Définition de la visibilité de paramètre  
+- Définition de la visibilité de paramètre  
   
--   Connexion de nœuds  
+- Connexion de nœuds  
   
 ## <a name="creating-a-basic-texture-shader"></a>Création d’un nuanceur de texture de base  
  Vous pouvez implémenter un nuanceur de texture unique de base en écrivant les valeurs de couleur et alpha d’un échantillon de texture directement dans la couleur de sortie finale.  

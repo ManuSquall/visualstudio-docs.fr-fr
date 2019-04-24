@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46e93b07ddf65d50ebf92f04eda14e93fbfeba74
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 9e368a318b2f6c552ce815c839e73f0a18ea5c9b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323384"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648799"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Procédure : Installer un plug-in de contrôle de code source
 Création d’un contrôle de source de plug-in implique trois étapes :
@@ -61,7 +61,6 @@ Création d’un contrôle de source de plug-in implique trois étapes :
    | - |--------------|
    | HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\HideInVisualStudio | 1 |
    | HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\DisableSccManager | 1 |
-
 
 3. Ajouter la sous-clé, **SourceCodeControlProvider**, sous le **HKEY_LOCAL_MACHINE** clé dans le **logiciel** sous-clé.
 

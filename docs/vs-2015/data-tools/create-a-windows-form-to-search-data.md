@@ -20,17 +20,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cd800e5d31189487689781c1f04cd82479893dfa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a6080539a3f8b5f93a8d6fcd144dbd26dbd9eeaf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950282"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667012"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Créer un Windows Form pour rechercher des données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Un scénario d'application courant consiste à afficher les données sélectionnées dans un formulaire. Par exemple, supposons que vous souhaitiez afficher les commandes d'un client spécifique ou les détails d'une commande spécifique. Dans ce scénario, un utilisateur entre des informations dans un formulaire, puis une requête est exécutée prenant l'entrée de l'utilisateur comme paramètre. C'est-à-dire que les données sont sélectionnées selon une requête paramétrable. La requête retourne uniquement les données répondant aux critères entrés par l'utilisateur. Cette procédure pas à pas indique comment créer une requête retournant les clients d'une ville spécifique et modifier l'interface utilisateur de sorte que les utilisateurs puissent entrer un nom de ville et appuyer sur un bouton pour exécuter la requête.  
   
  L'utilisation des requêtes paramétrables renforce l'efficacité de votre application en utilisant la base de données de la meilleure manière possible : pour filtrer rapidement des enregistrements. À l’inverse, si vous interrogez une table de base de données entière, que vous la transférez sur le réseau et que vous utilisez la logique d’application pour trouver les enregistrements souhaités, votre application peut devenir lente et perdre en efficacité.  

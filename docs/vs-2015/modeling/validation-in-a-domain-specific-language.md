@@ -12,12 +12,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3057d333cfc3b08298a5329a34ef52a51556e4ec
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cc3890ee8392088592aef16dcc120637da74e285
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953725"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113454"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Validation dans un langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,13 +58,13 @@ En tant qu'auteur d'un langage spécifique à un domaine (DSL), vous pouvez déf
   
 1. Activez la validation dans le **éditeur\validation** nœud :  
   
-   1.  Ouvrez **Dsl\DslDefinition.dsl**.  
+   1. Ouvrez **Dsl\DslDefinition.dsl**.  
   
-   2.  Dans l’Explorateur DSL, développez le **éditeur** nœud et sélectionnez **Validation**.  
+   2. Dans l’Explorateur DSL, développez le **éditeur** nœud et sélectionnez **Validation**.  
   
-   3.  Dans la fenêtre Propriétés, définissez la **utilise** propriétés à `true`. Il est plus pratique de définir toutes ces propriétés.  
+   3. Dans la fenêtre Propriétés, définissez la **utilise** propriétés à `true`. Il est plus pratique de définir toutes ces propriétés.  
   
-   4.  Cliquez sur **transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions.  
+   4. Cliquez sur **transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions.  
   
 2. Écrivez les définitions de classe partielle pour une ou plusieurs de vos classes de domaine ou relations de domaine. Écrivez ces définitions dans un fichier de code dans le **Dsl** projet.  
   
@@ -74,7 +74,7 @@ En tant qu'auteur d'un langage spécifique à un domaine (DSL), vous pouvez déf
    [ValidationState(ValidationState.Enabled)]  
    ```  
   
-   -   Par défaut, cet attribut activera aussi la validation pour les classes dérivées. Si vous voulez désactiver la validation pour une classe dérivée spécifique, vous pouvez utiliser `ValidationState.Disabled`.  
+   - Par défaut, cet attribut activera aussi la validation pour les classes dérivées. Si vous voulez désactiver la validation pour une classe dérivée spécifique, vous pouvez utiliser `ValidationState.Disabled`.  
   
 4. Ajoutez les méthodes de validation aux classes. Chaque méthode de validation peut avoir un nom quelconque, mais un seul paramètre de type <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext>.  
   
@@ -304,7 +304,7 @@ namespace Company.FamilyTree
   
  Les gestionnaires sont aussi appelés après les opérations Annuler ou Rétablir qui affectent les liens ou les éléments.  
   
-##  <a name="custom"></a> Catégories de Validation personnalisées  
+## <a name="custom"></a> Catégories de Validation personnalisées  
  En plus des catégories de validation standard, telles que Menu ou Ouvrir, vous pouvez définir vos propres catégories. Vous pouvez invoquer ces catégories à partir du code de programme. L'utilisateur ne peut pas les appeler directement.  
   
  Une utilisation classique des catégories personnalisées consiste à définir une catégorie qui teste si le modèle satisfait aux conditions préalables d'un outil particulier.  
@@ -332,7 +332,7 @@ validationController.ValidateCustom
    "PreconditionsForGeneratePartsList");  
 ```  
   
-##  <a name="alternatives"></a> Alternatives à la Validation  
+## <a name="alternatives"></a> Alternatives à la Validation  
  Les contraintes de validation signalent les erreurs, mais ne modifient pas le modèle. Si, à la place, vous voulez empêcher que le modèle ne devienne non valide, vous pouvez utiliser d'autres techniques.  
   
  Cependant, ces techniques ne sont pas recommandées. Il est généralement préférable de laisser l'utilisateur décider de la façon dont un modèle non valide doit être corrigé.  

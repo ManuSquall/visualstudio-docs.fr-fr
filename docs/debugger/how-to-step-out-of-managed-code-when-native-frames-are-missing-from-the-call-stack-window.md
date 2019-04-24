@@ -23,12 +23,12 @@ manager: jillfra
 ms.workload:
 - cplusplus
 - dotnet
-ms.openlocfilehash: 25021f0c3daffdaf59633fdb9bff0e2659f43d2e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 1efe109741c306d45ce7f7749193f5b638b76949
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55043023"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112869"
 ---
 # <a name="how-to-step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-window"></a>Procédure : Pas à pas sortant du code managé quand des images natives manquent dans la fenêtre Pile des appels
 
@@ -39,9 +39,9 @@ Si votre code intègre des frames natifs invisibles dans la fenêtre **Pile des 
 
 ## <a name="step-out-of-managed-code-when-native-frames-are-missing-from-the-call-stack-display"></a>Sortir pas à pas du code managé quand les frames natifs n’apparaissent pas dans la fenêtre Pile des appels
 
-1.  Dans le code natif, définissez un point d'arrêt d'emplacement après l'appel de code managé.
+1. Dans le code natif, définissez un point d'arrêt d'emplacement après l'appel de code managé.
 
-2.  Dans le menu **Déboguer**, sélectionnez **Continuer**.
+2. Dans le menu **Déboguer**, sélectionnez **Continuer**.
 
      Une fois que l'appel de code managé sera terminé, l'exécution s'arrêtera au point d'arrêt dans le code natif.
 

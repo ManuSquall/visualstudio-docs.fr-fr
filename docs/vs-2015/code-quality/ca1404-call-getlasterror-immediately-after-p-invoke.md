@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a7f1f4d036bd035368cce10684899d880481e37b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e33c724d2cebb9423f2e475d95bf42ac5e2cc966
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938240"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053284"
 ---
 # <a name="ca1404-call-getlasterror-immediately-after-pinvoke"></a>CA1404 : Appeler GetLastError immédiatement après P/Invoke
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ ms.locfileid: "58938240"
 
  La règle ignore les appels à ce qui suit membres gérés lorsqu’ils se produisent entre l’appel à la plateforme d’appel de méthode et l’appel à <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A>. Ces membres ne changent pas l’erreur code et s’avèrent utiles pour déterminer la réussite d’une plateforme les appels de méthode d’appel.
 
--   <xref:System.IntPtr.Zero?displayProperty=fullName>
+- <xref:System.IntPtr.Zero?displayProperty=fullName>
 
--   <xref:System.IntPtr.op_Equality%2A?displayProperty=fullName>
+- <xref:System.IntPtr.op_Equality%2A?displayProperty=fullName>
 
--   <xref:System.IntPtr.op_Inequality%2A?displayProperty=fullName>
+- <xref:System.IntPtr.op_Inequality%2A?displayProperty=fullName>
 
--   <xref:System.Runtime.InteropServices.SafeHandle.IsInvalid%2A?displayProperty=fullName>
+- <xref:System.Runtime.InteropServices.SafeHandle.IsInvalid%2A?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, placez l’appel à <xref:System.Runtime.InteropServices.Marshal.GetLastWin32Error%2A> afin qu’il suive immédiatement l’appel à la plateforme appeler la méthode.

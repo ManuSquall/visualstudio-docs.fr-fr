@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d130208d022db07fe21b0c9879aa0964dffce3f2
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: a43be698fd908737c96f9de3cf346b48e84f27fc
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790522"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504456"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Faire fonctionner le code dans Visual Studio
 
@@ -156,6 +156,6 @@ Pour plus d’informations sur les tests unitaires dans Visual Studio et comment
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Visite guidée des fonctionnalités du débogueur](../debugger/debugger-feature-tour.md)
-- [En savoir plus sur l’utilisation du débogueur](../debugger/debugger-feature-tour.md)
+- [Présentation du débogueur](../debugger/debugger-feature-tour.md)
+- [En savoir plus sur l’utilisation du débogueur](../debugger/index.md)
 - [Générer et corriger du code](../ide/code-generation-in-visual-studio.md)

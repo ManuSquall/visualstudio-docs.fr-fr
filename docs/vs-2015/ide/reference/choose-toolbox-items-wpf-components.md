@@ -14,17 +14,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 773ecc04569850546f03fd0cdb68bfe1a81a79f9
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 4cbfaea72633f6f4bbeb7da3bf6e7c02069889f9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54835024"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647700"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Choisir des éléments de boîte à outils, Composants WPF
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Cet onglet de la boîte de dialogue **Choisir des éléments de boîte à outils** affiche la liste des contrôles Windows Presentation Foundation (WPF) disponibles sur votre ordinateur local. Pour afficher la liste, sélectionnez **Choisir des éléments de boîte à outils** dans le menu **Outils** pour afficher la boîte de dialogue **Choisir des éléments de boîte à outils**, puis sélectionnez l’onglet **Composants WPF**. Pour trier la liste des composants, cliquez sur un en-tête de colonne.  
   
 - Lorsque la case en regard d’un composant est cochée, une icône de ce composant s’affiche dans la **boîte à outils**.  

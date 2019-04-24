@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8cdfcec130897fc7014cb820e7efdcc4f3dcacb1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ab1a2dcbf39be6f8e0366dcdccdaea168ad37c87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679877"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102599"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 
@@ -73,7 +73,7 @@ Type de message. Le tableau suivant répertorie les valeurs prises en charge pou
 
 ## <a name="structures"></a>Structures
 
-###  <a name="LinkSccMsgDataIsCancelled"></a> SccMsgDataIsCancelled
+### <a name="LinkSccMsgDataIsCancelled"></a> SccMsgDataIsCancelled
 
 ```cpp
 typedef struct {
@@ -83,7 +83,7 @@ typedef struct {
 
  Cette structure est envoyée avec la `SCC_MSG_BACKGROUND_IS_CANCELLED` message. Il est utilisé pour communiquer l’ID de l’opération d’arrière-plan qui a été annulée.
 
-###  <a name="LinkSccMsgDataOnBeforeGetFile"></a> SccMsgDataOnBeforeGetFile
+### <a name="LinkSccMsgDataOnBeforeGetFile"></a> SccMsgDataOnBeforeGetFile
 
 ```cpp
 typedef struct {
@@ -94,7 +94,7 @@ typedef struct {
 
  Cette structure est envoyée avec la `SCC_MSG_BACKGROUND_ON_BEFORE_GET_FILE` message. Il est utilisé pour communiquer le nom du fichier sur le point d’être récupérées et l’ID de l’opération d’arrière-plan qui effectue la récupération.
 
-###  <a name="LinkSccMsgDataOnAfterGetFile"></a> SccMsgDataOnAfterGetFile
+### <a name="LinkSccMsgDataOnAfterGetFile"></a> SccMsgDataOnAfterGetFile
 
 ```cpp
 typedef struct {
@@ -106,7 +106,7 @@ typedef struct {
 
  Cette structure est envoyée avec la `SCC_MSG_BACKGROUND_ON_AFTER_GET_FILE` message. Il est utilisé pour communiquer le résultat de la récupération du fichier spécifié, ainsi que l’ID de l’opération d’arrière-plan qui a effectué la récupération. Consultez les valeurs de retour pour la [SccGet](../extensibility/sccget-function.md) pour ce qui peut être donné en conséquence.
 
-###  <a name="LinkSccMsgDataOnMessage"></a> SccMsgDataOnMessage
+### <a name="LinkSccMsgDataOnMessage"></a> SccMsgDataOnMessage
 
 ```cpp
 typedef struct {

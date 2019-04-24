@@ -20,12 +20,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c698b84ec3af759a4c276e0129e628abba9212f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c60405331ebab909e8056d4800bd43b208c92493
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953953"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087142"
 ---
 # <a name="uml-activity-diagrams-reference"></a>Diagrammes d’activités UML : Référence
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ Un *diagramme d’activités* montre un processus d’entreprise ou un processus
 |13|**Action envoyer un Signal**|Action qui envoie un message ou un signal à une autre activité ou à un thread simultané dans la même activité. Le type et le contenu du message sont déduits du titre de l'action ou spécifiés dans des commentaires supplémentaires.<br /><br /> L'action peut envoyer des données dans le signal, qui peuvent être passées à l'action dans un flux d'objet ou une broche d'entrée (16).|  
 |14|**Action Accepter un événement**|Action qui attend la réception d'un message ou d'un signal pour continuer l'action. Le type du message que l'action peut recevoir est déduit du titre ou spécifié dans des commentaires supplémentaires.<br /><br /> Si l'action n'a aucun flux de contrôle entrant, elle produit un jeton chaque fois qu'elle reçoit un message.<br /><br /> L'action peut recevoir des données dans le signal, qui peuvent être passées dans un flux d'objet ou une broche d'entrée (17).<br /><br /> -   **IsUnmarshall** : si la valeur est true, il peut y avoir plusieurs broches de sortie typées et données y sont démarshalées. Si la valeur est false, toutes les données apparaissent sur une seule broche.|  
   
-###  <a name="DataFlow"></a> Flux de données  
+### <a name="DataFlow"></a> Flux de données  
  Vous pouvez décrire le flux de données d'une action à une autre. Pour plus d'informations sur les éléments utilisés dans cette section, consultez la section Dessin de flux de données de la rubrique Instructions pour dessiner un diagramme d'activités.  
   
  ![Diagramme d’activités montrant le flux de données](../modeling/media/uml-actovdata.png "UML_ActOvData")  

@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 387ec5814e0b5a2a8c2169198a3ceebad47e10d4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c2d06098d1643f4c9b5e64206cdf94362a2c97b4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599478"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040144"
 ---
 # <a name="ribbon-overview"></a>Vue d’ensemble du ruban
   Le ruban est une façon d’organiser les commandes associées afin qu’ils soient plus faciles à trouver. Les commandes apparaissent sous forme de contrôles sur le ruban. Les contrôles sont organisés en *groupes* le long d’une bande horizontale sur le bord supérieur d’une fenêtre d’application. Les groupes connexes sont organisés sur les onglets.
@@ -91,14 +91,14 @@ ms.locfileid: "56599478"
  Pour plus d'informations, consultez [Ribbon XML](../vsto/ribbon-xml.md).
 
 ## <a name="add-multiple-ribbon-items-to-a-project"></a>Ajouter plusieurs éléments de ruban à un projet
- Vous pouvez ajouter plusieurs éléments de ruban à un seul projet. Cela est utile si vous souhaitez effectuer l’une des deux tâches suivantes :
+ Vous pouvez ajouter plusieurs éléments de ruban à un seul projet. Cela est utile si vous souhaitez effectuer l'une des deux tâches suivantes :
 
--   Créer des rubans pour Outlook *inspecteurs*. Pour plus d’informations, consultez [personnaliser un ruban pour Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
+- Créer des rubans pour Outlook *inspecteurs*. Pour plus d’informations, consultez [personnaliser un ruban pour Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
     > [!NOTE]
-    >  Un inspecteur est une fenêtre qui s’ouvre lorsque les utilisateurs effectuent certaines tâches, telles que la création d’un message électronique.
+    >  Un inspecteur est une fenêtre qui s'ouvre lorsque les utilisateurs effectuent certaines tâches, telles que la création d'un message électronique.
 
--   Sélectionnez le ruban à afficher lors de l’exécution.
+- Sélectionnez le ruban à afficher lors de l’exécution.
 
 ### <a name="select-which-ribbons-to-display-at-runtime"></a>Sélectionnez les rubans à afficher lors de l’exécution
  Comme un projet peut contenir plusieurs rubans, vous pouvez sélectionner le ruban à afficher lors de l’exécution.

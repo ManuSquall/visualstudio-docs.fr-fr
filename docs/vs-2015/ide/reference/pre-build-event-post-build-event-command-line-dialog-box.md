@@ -34,17 +34,16 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d3e6597e8b288e85c6bd49d3c8e843fd464bf094
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 938f0c9ce735ddfbca07bb9f2448fa71d243b634
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753376"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658028"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Ligne de commande de l’événement pré-build/post-build, boîte de dialogue
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Vous pouvez taper des événements pré-build ou post-build pour la [page Événements de build du Concepteur de projets (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) directement dans la zone d’édition, ou vous pouvez sélectionner des macros pré-build et post-build dans une liste de macros disponibles.  
   
 > [!NOTE]
@@ -94,5 +93,5 @@ Vous pouvez taper des événements pré-build ou post-build pour la [page Évén
 ## <a name="see-also"></a>Voir aussi  
  [Spécification d’événements de build personnalisés dans Visual Studio](../../ide/specifying-custom-build-events-in-visual-studio.md)   
  [Événements de build, page du Concepteur de projet (C#)](../../ide/reference/build-events-page-project-designer-csharp.md)   
- [Guide pratique pour spécifier des événements de build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
+ [Guide pratique pour Spécifier les événements de Build (Visual Basic)](../../ide/how-to-specify-build-events-visual-basic.md)   
  [Guide pratique pour spécifier des événements de build (C#)](../../ide/how-to-specify-build-events-csharp.md)

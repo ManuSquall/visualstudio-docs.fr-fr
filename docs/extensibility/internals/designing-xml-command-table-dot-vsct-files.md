@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a833478a8dec3b9fe82b22295482fed6f5562d14
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1e70a64e01e388af61127fd76f4a2fcee8e5a9b9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641544"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091562"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>Concevoir des fichiers XML command table (.vsct)
 Une table de commande XML (*.vsct*) fichier décrit la disposition et l’apparence des éléments de commande pour un VSPackage. Éléments de commande incluent des boutons, des zones de liste déroulante, des menus, des barres d’outils et des groupes d’éléments de la commande. Cet article décrit les fichiers de table de commande XML, comment elles affectent les menus et éléments de commande et comment les créer.
@@ -98,19 +98,19 @@ Vous pouvez utiliser la *vsct.exe* compilateur de convertir un existant *.cto* d
 ## <a name="vsct-file-design-guidelines"></a>instructions de conception du fichier .vsct
  À la conception avec succès un *.vsct* de fichiers, suivez ces instructions.
 
--   Commandes peuvent être placés uniquement dans les groupes, groupes peuvent être placés uniquement dans les menus et menus peuvent être placés uniquement dans les groupes. Uniquement les menus sont réellement affichées dans l’IDE, les groupes et les commandes ne sont pas.
+- Commandes peuvent être placés uniquement dans les groupes, groupes peuvent être placés uniquement dans les menus et menus peuvent être placés uniquement dans les groupes. Uniquement les menus sont réellement affichées dans l’IDE, les groupes et les commandes ne sont pas.
 
--   Sous-menus ne peut pas être directement attribués à un menu, mais doivent être attribués à un groupe, qui est assigné à son tour à un menu.
+- Sous-menus ne peut pas être directement attribués à un menu, mais doivent être attribués à un groupe, qui est assigné à son tour à un menu.
 
--   Commandes, des sous-menus et des groupes peuvent avoir à un groupe de parentage ou menu à l’aide du champ parent de leur définition directive.
+- Commandes, des sous-menus et des groupes peuvent avoir à un groupe de parentage ou menu à l’aide du champ parent de leur définition directive.
 
--   Organisation d’une table de commande uniquement via les champs dans les directives parent a une limitation importante. Les directives qui définissent des objets peuvent prendre l’argument qu’un seul parent.
+- Organisation d’une table de commande uniquement via les champs dans les directives parent a une limitation importante. Les directives qui définissent des objets peuvent prendre l’argument qu’un seul parent.
 
--   Réutilisation des commandes, des groupes ou des sous-menus requiert l’utilisation d’une directive de nouveau pour créer une nouvelle instance de l’objet avec son propre `GUID:ID` paire.
+- Réutilisation des commandes, des groupes ou des sous-menus requiert l’utilisation d’une directive de nouveau pour créer une nouvelle instance de l’objet avec son propre `GUID:ID` paire.
 
--   Chaque `GUID:ID` paire doit être unique. Réutilisation d’une commande, par exemple, placée dans un menu, une barre d’outils, ou dans un menu contextuel, est gérée par le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface.
+- Chaque `GUID:ID` paire doit être unique. Réutilisation d’une commande, par exemple, placée dans un menu, une barre d’outils, ou dans un menu contextuel, est gérée par le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface.
 
--   Commandes et sous-menus peuvent également être affectés à plusieurs groupes et les groupes peuvent être affectés à plusieurs menus en utilisant la [élément Commands](../../extensibility/commands-element.md).
+- Commandes et sous-menus peuvent également être affectés à plusieurs groupes et les groupes peuvent être affectés à plusieurs menus en utilisant la [élément Commands](../../extensibility/commands-element.md).
 
 ## <a name="vsct-file-notes"></a>notes de fichiers .vsct
  Si vous apportez des modifications à un *.vsct* fichier une fois que vous les compilez et placez dans une DLL satellite native, vous devez exécuter **devenv.exe /setup /nosetupvstemplates**. Ainsi, les ressources de VSPackage spécifiées dans le Registre expérimental d’être relus et de la base de données interne qui décrit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] à reconstruire.

@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f7d80071871ebe970a9584a1ac40cead7b59ac26
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1bbcbc2411d261b4ddec9423896dc21acc3e0033
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605716"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073733"
 ---
 # <a name="bind-data-to-controls-in-office-solutions"></a>Lier des données aux contrôles dans les solutions Office
   Vous pouvez lier des contrôles Windows Forms et des *contrôles hôtes* dans un document Microsoft Office Word ou une feuille de calcul Microsoft Office Excel à une source de données pour que les contrôles affichent automatiquement les données. Vous pouvez lier des données à des contrôles dans des projets de niveau application et au niveau du document.
@@ -73,22 +73,22 @@ ms.locfileid: "56605716"
 ### <a name="bind-data-in-document-level-projects-at-design-time"></a>Lier des données dans les projets au niveau du document au moment du design
  Les rubriques suivantes présentent des exemples de liaison de données au moment du design :
 
--   [Guide pratique pour Remplir des feuilles de calcul avec des données à partir d’une base de données](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [Guide pratique pour Remplir des feuilles de calcul avec des données à partir d’une base de données](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
 
--   [Guide pratique pour Remplir des documents avec des données à partir d’une base de données](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [Guide pratique pour Remplir des documents avec des données à partir d’une base de données](../vsto/how-to-populate-documents-with-data-from-a-database.md)
 
--   [Guide pratique pour Remplir des documents avec des données à partir d’objets](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [Guide pratique pour Remplir des documents avec des données à partir d’objets](../vsto/how-to-populate-documents-with-data-from-objects.md)
 
--   [Guide pratique pour Remplir des documents avec des données à partir des services](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [Guide pratique pour Remplir des documents avec des données à partir des services](../vsto/how-to-populate-documents-with-data-from-services.md)
 
--   [Guide pratique pour Faites défiler les enregistrements de base de données dans une feuille de calcul](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
+- [Guide pratique pour Faites défiler les enregistrements de base de données dans une feuille de calcul](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
 
 ### <a name="bind-data-in-vsto-add-in-projects"></a>Lier des données dans les projets de complément VSTO
  Dans les projets de complément VSTO, vous pouvez ajouter des contrôles uniquement lors de l’exécution. Les rubriques suivantes présentent des exemples de liaison de données au moment de l’exécution :
 
--   [Procédure pas à pas : Liaison de données simple dans un projet de complément VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)
+- [Procédure pas à pas : Liaison de données simple dans un projet de complément VSTO](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)
 
--   [Procédure pas à pas : Liaison de données complexe dans un projet de complément VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)
+- [Procédure pas à pas : Liaison de données complexe dans un projet de complément VSTO](../vsto/walkthrough-complex-data-binding-in-vsto-add-in-project.md)
 
 ## <a name="update-data-that-is-bound-to-host-controls"></a>Mettre à jour les données liées aux contrôles hôtes
  La liaison de données entre une source de données et un contrôle hôte implique une mise à jour de données bidirectionnelle. Avec la liaison de données simple, les modifications de la source de données sont répercutées automatiquement dans le contrôle hôte, mais les modifications du contrôle hôte nécessitent un appel explicite pour mettre à jour la source de données. En effet, dans certains cas les modifications d’un champ lié aux données ne sont acceptées que si elles sont accompagnées de modifications dans un autre champ lié aux données. Par exemple, vous pouvez avoir deux champs, un pour l’âge et un autre pour les années d’expérience. L’expérience ne peut pas dépasser l’âge. Un utilisateur ne peut pas mettre à jour l’âge de 50 à 25 puis l’expérience de 30 à 10 à moins d’apporter les modifications en même temps. Pour résoudre ce problème, les champs avec liaison de données simple ne sont mis à jour qu’une fois que les mises à jour ont été envoyées explicitement par le code.

@@ -18,17 +18,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4ddb6ad55a8d90a3e9d4f5b2568885cbe49fb66c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6980ecc7676afd978f8dfd243ef8f383413ad83d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948305"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074881"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Enregistrer les données d’un objet dans une base de données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Vous pouvez enregistrer des données dans des objets à une base de données en passant les valeurs à partir de votre objet à une des méthodes DBDirect du TableAdapter (par exemple, `TableAdapter.Insert`).
   
  Pour enregistrer des données à partir d’une collection d’objets, parcourez la collection d’objets (par exemple, une boucle for-next) et envoyez les valeurs pour chaque objet à la base de données à l’aide d’une des méthodes DBDirect du TableAdapter.  
@@ -46,7 +45,7 @@ Vous pouvez enregistrer des données dans des objets à une base de données en 
   
 ### <a name="to-save-new-records-from-an-object-to-a-database"></a>Pour enregistrer les nouveaux enregistrements à partir d’un objet dans une base de données  
   
--   Créer les enregistrements en passant les valeurs pour le `TableAdapter.Insert` (méthode).  
+- Créer les enregistrements en passant les valeurs pour le `TableAdapter.Insert` (méthode).  
   
      L’exemple suivant crée un nouvel enregistrement de client dans le `Customers` table en passant les valeurs dans le `currentCustomer` de l’objet à le `TableAdapter.Insert` (méthode).  
   
@@ -55,7 +54,7 @@ Vous pouvez enregistrer des données dans des objets à une base de données en 
   
 ### <a name="to-update-existing-records-from-an-object-to-a-database"></a>Pour mettre à jour les enregistrements existants à partir d’un objet à une base de données  
   
--   Modifier les enregistrements en appelant le `TableAdapter.Update` (méthode), en passant les nouvelles valeurs à mettre à jour l’enregistrement et en passant les valeurs d’origine pour rechercher l’enregistrement.  
+- Modifier les enregistrements en appelant le `TableAdapter.Update` (méthode), en passant les nouvelles valeurs à mettre à jour l’enregistrement et en passant les valeurs d’origine pour rechercher l’enregistrement.  
   
     > [!NOTE]
     >  Votre objet doit conserver les valeurs d’origine afin de les passer à la `Update` (méthode). Cet exemple utilise des propriétés avec un `orig` préfixe pour stocker les valeurs d’origine.  
@@ -67,7 +66,7 @@ Vous pouvez enregistrer des données dans des objets à une base de données en 
   
 ### <a name="to-delete-existing-records-from-a-database"></a>Pour supprimer des enregistrements existants à partir d’une base de données  
   
--   Supprimer les enregistrements en appelant le `TableAdapter.Delete` (méthode) et en passant les valeurs d’origine pour rechercher l’enregistrement.  
+- Supprimer les enregistrements en appelant le `TableAdapter.Delete` (méthode) et en passant les valeurs d’origine pour rechercher l’enregistrement.  
   
     > [!NOTE]
     >  Votre objet doit conserver les valeurs d’origine afin de les passer à la `Delete` (méthode). Cet exemple utilise des propriétés avec un `orig` préfixe pour stocker les valeurs d’origine.  

@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cf6423162b497ef5bf8cfc56f9ec780838be8ca0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9531e3e36c6689e4a162649fcb9364067e5f6a13
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627374"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106616"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>Procédure pas à pas : Code d’appel dans un complément VSTO à partir de VBA
   Cette procédure pas à pas montre comment exposer un objet dans un complément VSTO à d’autres solutions Microsoft Office, notamment des compléments VSTO VBA (Visual Basic pour Applications) et COM.
@@ -45,16 +45,16 @@ ms.locfileid: "56627374"
 ## <a name="prerequisites"></a>Prérequis
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   Microsoft Excel
+- Microsoft Excel
 
 ## <a name="create-the-vsto-add-in-project"></a>Créer le projet de complément VSTO
  La première étape consiste à créer un projet de complément VSTO pour Excel.
 
 ### <a name="to-create-a-new-project"></a>Pour créer un projet
 
-1.  Créez un projet de complément VSTO Excel nommé **ExcelImportData**à l’aide du modèle de projet de complément VSTO Excel. Pour plus d'informations, voir [Procédure : Créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Créez un projet de complément VSTO Excel nommé **ExcelImportData**à l’aide du modèle de projet de complément VSTO Excel. Pour plus d'informations, voir [Procédure : Créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ouvre le fichier de code **ThisAddIn.cs** ou **ThisAddIn.vb** et ajoute le projet **ExcelImportData** à l' **Explorateur de solutions**.
 
@@ -65,18 +65,18 @@ ms.locfileid: "56627374"
 
 ### <a name="to-define-a-class-that-you-can-expose-to-other-office-solutions"></a>Pour définir une classe pouvant être exposée à d'autres solutions Office
 
-1.  Dans le menu **Projet** , cliquez sur **Ajouter une classe**.
+1. Dans le menu **Projet** , cliquez sur **Ajouter une classe**.
 
-2.  Dans la boîte de dialogue **Ajouter un nouvel élément** , remplacez le nom de la nouvelle classe par **AddInUtilities**, puis cliquez sur **Ajouter**.
+2. Dans la boîte de dialogue **Ajouter un nouvel élément** , remplacez le nom de la nouvelle classe par **AddInUtilities**, puis cliquez sur **Ajouter**.
 
      Le fichier **AddInUtilities.cs** ou **AddInUtilities.vb** s'ouvre dans l'éditeur de code.
 
-3.  Ajoutez les instructions suivantes au début du fichier.
+3. Ajoutez les instructions suivantes au début du fichier.
 
      [!code-csharp[Trin_AddInInteropWalkthrough#2](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#2)]
      [!code-vb[Trin_AddInInteropWalkthrough#2](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#2)]
 
-4.  Remplacez la classe `AddInUtilities` par le code suivant :
+4. Remplacez la classe `AddInUtilities` par le code suivant :
 
      [!code-csharp[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/AddInUtilities.cs#3)]
      [!code-vb[Trin_AddInInteropWalkthrough#3](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/AddInUtilities.vb#3)]
@@ -88,16 +88,16 @@ ms.locfileid: "56627374"
 
 ### <a name="to-expose-the-addinutilities-class-to-other-office-solutions"></a>Pour exposer la classe AddInUtilities à d'autres Solutions Office
 
-1.  Dans l' **Explorateur de solutions**, développez **Excel**.
+1. Dans l' **Explorateur de solutions**, développez **Excel**.
 
-2.  Cliquez avec le bouton droit sur **ThisAddIn.cs** ou **ThisAddIn.vb**, puis cliquez sur **Afficher le code**.
+2. Cliquez avec le bouton droit sur **ThisAddIn.cs** ou **ThisAddIn.vb**, puis cliquez sur **Afficher le code**.
 
-3.  Ajoutez le code suivant à la classe `ThisAddIn` .
+3. Ajoutez le code suivant à la classe `ThisAddIn` .
 
      [!code-csharp[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/CSharp/Trin_AddInInteropWalkthrough/ThisAddIn.cs#1)]
      [!code-vb[Trin_AddInInteropWalkthrough#1](../vsto/codesnippet/VisualBasic/Trin_AddInInteropWalkthrough/ThisAddIn.vb#1)]
 
-4.  Dans le menu **Générer** , cliquez sur **Générer la solution**.
+4. Dans le menu **Générer** , cliquez sur **Générer la solution**.
 
      Vérifiez que la solution se génère sans erreur.
 
@@ -106,24 +106,24 @@ ms.locfileid: "56627374"
 
 ### <a name="to-test-your-vsto-add-in"></a>Pour tester votre complément VSTO
 
-1.  Appuyez sur **F5** pour exécuter votre projet.
+1. Appuyez sur **F5** pour exécuter votre projet.
 
-2.  Dans Excel, enregistrez le classeur actif en tant que classeur Excel prenant en charge les macros (*.xlsm) dans un emplacement pratique, tel que le Bureau.
+2. Dans Excel, enregistrez le classeur actif en tant que classeur Excel prenant en charge les macros (*.xlsm) dans un emplacement pratique, tel que le Bureau.
 
-3.  Dans le ruban, cliquez sur l'onglet **Développeur** .
+3. Dans le ruban, cliquez sur l'onglet **Développeur** .
 
     > [!NOTE]
     >  Si l'onglet **Développeur** n'est pas visible, vous devez tout d'abord l'afficher. Pour plus d'informations, voir [Procédure : Afficher l’onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
-4.  Dans le groupe **Code** , cliquez sur **Visual Basic**.
+4. Dans le groupe **Code** , cliquez sur **Visual Basic**.
 
      Visual Basic Editor s'ouvre.
 
-5.  Dans la fenêtre **Projet** , double-cliquez sur **ThisWorkbook**.
+5. Dans la fenêtre **Projet** , double-cliquez sur **ThisWorkbook**.
 
      Le fichier de code de l'objet `ThisWorkbook` s'ouvre.
 
-6.  Ajoutez le code VBA suivant au fichier de code. Ce code obtient d’abord un objet COMAddIn qui représente le **ExcelImportData** complément VSTO. Ensuite, le code utilise la propriété d’objet de l’objet COMAddIn pour appeler le `ImportData` (méthode).
+6. Ajoutez le code VBA suivant au fichier de code. Ce code obtient d’abord un objet COMAddIn qui représente le **ExcelImportData** complément VSTO. Ensuite, le code utilise la propriété d’objet de l’objet COMAddIn pour appeler le `ImportData` (méthode).
 
     ```vb
     Sub CallVSTOMethod()
@@ -135,20 +135,20 @@ ms.locfileid: "56627374"
     End Sub
     ```
 
-7.  Appuyez sur **F5**.
+7. Appuyez sur **F5**.
 
-8.  Assurez-vous qu'une nouvelle feuille de calcul **Imported Data** a été ajoutée au classeur. Vérifiez également que la cellule A1 contient la chaîne **This is my data**.
+8. Assurez-vous qu'une nouvelle feuille de calcul **Imported Data** a été ajoutée au classeur. Vérifiez également que la cellule A1 contient la chaîne **This is my data**.
 
 9. Quittez Excel.
 
 ## <a name="next-steps"></a>Étapes suivantes
  Pour en savoir plus sur la programmation de compléments VSTO, consultez les rubriques suivantes :
 
--   Utiliser la classe `ThisAddIn` pour automatiser l'application hôte et effectuer d'autres tâches dans les projets de complément VSTO. Pour plus d’informations, consultez [programme VSTO Add-ins](../vsto/programming-vsto-add-ins.md).
+- Utiliser la classe `ThisAddIn` pour automatiser l'application hôte et effectuer d'autres tâches dans les projets de complément VSTO. Pour plus d’informations, consultez [programme VSTO Add-ins](../vsto/programming-vsto-add-ins.md).
 
--   Créer un volet des tâches personnalisé dans un complément VSTO. Pour plus d’informations, consultez [volets de tâches personnalisés](../vsto/custom-task-panes.md) et [Comment : Ajouter un volet Office personnalisé à une application](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
+- Créer un volet des tâches personnalisé dans un complément VSTO. Pour plus d’informations, consultez [volets de tâches personnalisés](../vsto/custom-task-panes.md) et [Comment : Ajouter un volet Office personnalisé à une application](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
 
--   Personnaliser le ruban dans un complément, VSTO. Pour plus d’informations, consultez [vue d’ensemble du ruban](../vsto/ribbon-overview.md) et [Comment : Commencer la personnalisation du ruban](../vsto/how-to-get-started-customizing-the-ribbon.md).
+- Personnaliser le ruban dans un complément, VSTO. Pour plus d’informations, consultez [vue d’ensemble du ruban](../vsto/ribbon-overview.md) et [Comment : Commencer la personnalisation du ruban](../vsto/how-to-get-started-customizing-the-ribbon.md).
 
 ## <a name="see-also"></a>Voir aussi
 - [Programmer des Compléments VSTO](../vsto/programming-vsto-add-ins.md)

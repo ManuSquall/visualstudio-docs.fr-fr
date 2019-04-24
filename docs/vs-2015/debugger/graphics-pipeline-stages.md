@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ebbb10f0c317e79e22c8eb49b59e4e58a82b9d77
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cd93ddb6e1d574460593f992f880ccd53d800842
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952164"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097334"
 ---
 # <a name="graphics-pipeline-stages"></a>Étapes de canalisation Graphics
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,14 +46,14 @@ La fenêtre Étapes de canalisation Graphics vous permet de comprendre comment u
   
 ##### <a name="to-view-a-shaders-source-code"></a>Pour afficher le code source d'un nuanceur  
   
--   Dans la fenêtre **Étapes de canalisation Graphics**, localisez l’étape de nuanceur qui correspond au nuanceur que vous souhaitez examiner. Sous l’image d’aperçu, suivez le lien du titre de l’étape de nuanceur. Par exemple, suivez le lien **Nuanceur de sommets obj:30** pour afficher le code source du nuanceur de sommets.  
+- Dans la fenêtre **Étapes de canalisation Graphics**, localisez l’étape de nuanceur qui correspond au nuanceur que vous souhaitez examiner. Sous l’image d’aperçu, suivez le lien du titre de l’étape de nuanceur. Par exemple, suivez le lien **Nuanceur de sommets obj:30** pour afficher le code source du nuanceur de sommets.  
   
     > [!TIP]
     >  Le numéro d’objet, **obj:30**, identifie ce nuanceur dans toute l’interface Graphics Analyzer, par exemple dans la table des objets et la fenêtre Historique des pixels.  
   
 ##### <a name="to-debug-a-shader"></a>Pour déboguer un nuanceur  
   
--   Dans la fenêtre **Étapes de canalisation Graphics**, localisez l’étape de nuanceur qui correspond au nuanceur que vous souhaitez déboguer. Puis, sous l’image d’aperçu, choisissez **Démarrer le débogage**. La valeur par défaut de ce point d'entrée dans le débogueur HLSL correspond au premier appel du nuanceur pour l'étape correspondante, c'est-à-dire le premier pixel, le premier sommet ou la première primitive traitée par le nuanceur durant cet appel de dessin. Les appels de ce nuanceur pour un pixel ou un sommet spécifique sont accessibles via la fenêtre **Historique des pixels Graphics**.  
+- Dans la fenêtre **Étapes de canalisation Graphics**, localisez l’étape de nuanceur qui correspond au nuanceur que vous souhaitez déboguer. Puis, sous l’image d’aperçu, choisissez **Démarrer le débogage**. La valeur par défaut de ce point d'entrée dans le débogueur HLSL correspond au premier appel du nuanceur pour l'étape correspondante, c'est-à-dire le premier pixel, le premier sommet ou la première primitive traitée par le nuanceur durant cet appel de dessin. Les appels de ce nuanceur pour un pixel ou un sommet spécifique sont accessibles via la fenêtre **Historique des pixels Graphics**.  
   
 ### <a name="the-pipeline-stages"></a>Étapes de canalisation  
  La fenêtre Étapes de canalisation affiche uniquement les étapes de canalisation actives durant l'appel de dessin. Chaque étape de canalisation Graphics transforme l'entrée de l'étape précédente et passe le résultat à l'étape suivante. La première étape (Assembleur d’entrée) récupère les données d’index et de sommet de votre application en entrée. La toute dernière étape (Fusion de sortie) combine les pixels qui viennent d’être rendus au contenu actuel du tampon de frame ou de la cible de rendu en tant que sortie pour produire l’image finale que vous voyez sur votre écran.  

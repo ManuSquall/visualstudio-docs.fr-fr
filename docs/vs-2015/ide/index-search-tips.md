@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a05e767330f0c1df5b30af6660a3f6e5ba4971e4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 1072d38adac020a1b9976d17f98ddf8882d7cb22
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764976"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044211"
 ---
 # <a name="index-search-tips"></a>Conseils de recherche d'index
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,32 +31,32 @@ Vous pouvez rechercher des informations se trouvant dans l’index en entrant de
   
 ### <a name="general-guidelines"></a>Indications générales  
   
--   Faites défiler les entrées d’index. Toutes les rubriques ne sont pas indexées de la même façon, et celle qui peut vous aider peut être plus haut ou plus bas que prévu dans la liste.  
+- Faites défiler les entrées d’index. Toutes les rubriques ne sont pas indexées de la même façon, et celle qui peut vous aider peut être plus haut ou plus bas que prévu dans la liste.  
   
--   Omettez les articles tels que « un » ou « le », car l’index les ignore.  
+- Omettez les articles tels que « un » ou « le », car l’index les ignore.  
   
--   Inversez les mots entrés si vous ne trouvez pas les entrées souhaitées.  
+- Inversez les mots entrés si vous ne trouvez pas les entrées souhaitées.  
   
      Par exemple, si « débogage de code assembleur inline » n’affiche aucune entrée correspondante, essayez de taper « code assembleur, débogage inline ».  
   
--   Utilisez des filtres avec l’onglet **Index** pour réduire le nombre de résultats.  
+- Utilisez des filtres avec l’onglet **Index** pour réduire le nombre de résultats.  
   
 ### <a name="syntax-tips"></a>Conseils de syntaxe  
  Si vous ne trouvez pas d’entrée pour le mot ou l’expression que vous avez entré, essayez ce qui suit :  
   
--   Tapez les premières lettres ou la racine du mot. En entrant une chaîne partielle, vous pouvez accéder aux rubriques qui ont été indexées avec des mots clés au singulier ou au pluriel.  
+- Tapez les premières lettres ou la racine du mot. En entrant une chaîne partielle, vous pouvez accéder aux rubriques qui ont été indexées avec des mots clés au singulier ou au pluriel.  
   
      Par exemple, entrez « propriét » pour commencer votre recherche au-dessus de « propriété » et de « propriétés ».  
   
--   Entrez le substantif correspondant au verbe pour la tâche que vous souhaitez effectuer. Pour rechercher des entrées d’index plus spécifiques, ajoutez un mot qui décrit exactement ce que vous voulez.  
+- Entrez le substantif correspondant au verbe pour la tâche que vous souhaitez effectuer. Pour rechercher des entrées d’index plus spécifiques, ajoutez un mot qui décrit exactement ce que vous voulez.  
   
      Par exemple, tapez « exécution » pour obtenir plus d’entrées et « exécution de programmes » pour en obtenir moins.  
   
--   Entrez des adjectifs autonomes. Pour affiner les résultats, ajoutez un mot qui décrit exactement ce que vous voulez.  
+- Entrez des adjectifs autonomes. Pour affiner les résultats, ajoutez un mot qui décrit exactement ce que vous voulez.  
   
      Par exemple, entrez "COM+" pour obtenir un grand nombre d’entrées ou "composants COM+" pour en obtenir moins.  
   
--   Entrez un synonyme du mot ou du verbe que vous recherchez.  
+- Entrez un synonyme du mot ou du verbe que vous recherchez.  
   
      Par exemple, si vous avez entré le « building » substantif essayez « création » à la place.  
   

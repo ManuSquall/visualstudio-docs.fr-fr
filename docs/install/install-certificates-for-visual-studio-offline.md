@@ -1,7 +1,7 @@
 ---
 title: Installer les certificats nécessaires à une installation hors connexion
 description: Découvrez comment installer des certificats pour une installation hors connexion de Visual Studio.
-ms.date: 01/15/2019
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 249a611bf9db43f31b2370a4a2b4c760cb4ebf64
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 4ef5df077aabb02c9e9a4b46b0cfcbda76263b72
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323066"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789339"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>Installer les certificats nécessaires à l’installation hors connexion de Visual Studio
 
@@ -34,17 +34,29 @@ Il existe trois options pour installer ou mettre à jour des certificats dans un
 
 ### <a name="option-1---manually-install-certificates-from-a-layout-folder"></a>Option 1 : Installer manuellement les certificats à partir d’un dossier de disposition
 
+::: moniker range="vs-2017"
+
 Lorsque vous créez une disposition réseau, les certificats nécessaires sont téléchargés dans le dossier des certificats. Vous pouvez alors installer les certificats manuellement en double-cliquant sur chaque fichier de certificat et en suivant les étapes de l’Assistant du gestionnaire de certificats. Si le système vous demande un mot de passe, laissez-le vide.
 
 **Mise à jour** : Pour Visual Studio 2017 version 15.8 Preview 2 ou version ultérieure, vous pouvez installer manuellement les certificats en cliquant avec le bouton droit sur chacun des fichiers de certificat, en sélectionnant Installer le certificat, puis en suivant l’Assistant Gestionnaire de certificats.
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Lorsque vous créez une disposition réseau, les certificats nécessaires sont téléchargés dans le dossier des certificats. Vous pouvez installer manuellement les certificats en cliquant avec le bouton droit sur chacun des fichiers de certificat, en sélectionnant Installer le certificat, puis en suivant l’Assistant Gestionnaire de certificats. Si le système vous demande un mot de passe, laissez-le vide.
+
+::: moniker-end
+
 ### <a name="option-2---distribute-trusted-root-certificates-in-an-enterprise-environment"></a>Option 2 : Distribuer les certificats racines approuvés dans un environnement d’entreprise
 
-Pour une entreprise équipée d’ordinateurs hors connexion qui n’ont pas les derniers certificats racines, un administrateur peut utiliser les instructions de la page [Configurer les racines de confiance et les certificats non autorisés](https://technet.microsoft.com/library/dn265983.aspx) pour les mettre à jour.
+Pour une entreprise équipée d’ordinateurs hors connexion qui n’ont pas les derniers certificats racines, un administrateur peut utiliser les instructions de la page [Configurer les racines de confiance et les certificats non autorisés](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn265983(v=ws.11)) pour les mettre à jour.
 
 ### <a name="option-3---install-certificates-as-part-of-a-scripted-deployment-of-visual-studio"></a>Option 3 : Installer les certificats dans le cadre d’un déploiement de Visual Studio à base de script
 
 Si vous écrivez un script du déploiement de Visual Studio dans un environnement hors connexion sur des postes de travail clients, vous devez suivre ces étapes :
+
+::: moniker range="vs-2017"
 
 1. Copiez [l’outil Gestionnaire de certificat](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool) (certmgr.exe) dans le partage d’installation (par exemple, \\server\share\vs2017). Certmgr.exe n’est pas inclus dans Windows, mais il est disponible dans le [SDK Windows](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
 
@@ -86,7 +98,39 @@ Si vous écrivez un script du déploiement de Visual Studio dans un environnemen
 
 3. Déployez le fichier de commandes sur le client. Cette commande doit être exécutée à partir d’un processus avec élévation de privilèges.
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Copiez l’[outil Gestionnaire de certificat](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool) (certmgr.exe) dans le partage d’installation (par exemple, \\server\share\vs2019). Certmgr.exe n’est pas inclus dans Windows, mais il est disponible dans le [SDK Windows](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
+
+2. Créez un fichier de commandes avec les commandes suivantes :
+
+   ```cmd
+   certmgr.exe -add [layout path]\certificates\manifestRootCertificate.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
+
+   certmgr.exe -add [layout path]\certificates\manifestCounterSignRootCertificate.cer -n "Microsoft Root Certificate Authority 2010" -s -r LocalMachine root
+
+   certmgr.exe -add [layout path]\certificates\vs_installer_opc.RootCertificate.cer -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
+   ```
+   
+   Vous pouvez également créer un fichier de commandes qui utilise certutil.exe, fourni avec Windows, avec les commandes suivantes :
+   
+      ```cmd
+   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer
+
+   certutil.exe -addstore -f "Root" [layout path]\certificates\manifestCounterSignRootCertificate.cer"
+
+   certutil.exe -addstore -f "Root" "[layout path]\certificates\vs_installer_opc.RootCertificate.cer"
+   ```
+
+3. Déployez le fichier de commandes sur le client. Cette commande doit être exécutée à partir d’un processus avec élévation de privilèges.
+
+::: moniker-end
+
 ## <a name="what-are-the-certificates-files-in-the-certificates-folder"></a>Quels sont les fichiers de certificats qui se trouvent dans le dossier des certificats ?
+
+::: moniker range="vs-2017"
 
 Les trois fichiers .P12 figurant dans ce dossier contiennent chacun un certificat intermédiaire et un certificat racine. La plupart des systèmes tenus à jour via Windows Update disposent déjà de ces certificats.
 
@@ -108,6 +152,30 @@ Les trois fichiers .P12 figurant dans ce dossier contiennent chacun un certifica
 
 **Mise à jour** : Pour Visual Studio 2017 version 15.8 Preview 2 ou version ultérieure, Visual Studio Installer requiert uniquement l’installation des certificats racines sur le système.
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+* **ManifestSignCertificates.p12** contient :
+    * Certificat intermédiaire : **Microsoft Code Signing PCA 2011**
+        * Non requis Le cas échéant, améliore les performances dans certains scénarios.
+    * Certificat racine : **Microsoft Root Certificate Authority 2011**
+        * Obligatoire sur les systèmes Windows 7 Service Pack 1 qui ne disposent pas des dernières mises à jour Windows.
+* **ManifestCounterSignCertificates.p12** contient :
+    * Certificat intermédiaire : **Microsoft Time-Stamp PCA 2010**
+        * Non requis Le cas échéant, améliore les performances dans certains scénarios.
+    * Certificat racine : **Microsoft Root Certificate Authority 2010**
+        * Obligatoire pour les systèmes Windows 7 Service Pack 1 qui ne disposent pas des dernières mises à jour Windows.
+* **Vs_installer_opc.SignCertificates.p12** contient :
+    * Certificat intermédiaire : **Microsoft Code Signing PCA**
+        * Obligatoire pour tous les systèmes. Notez que les systèmes dotés de toutes les mises à jour appliquées à partir de Windows Update n’ont peut-être pas ce certificat.
+    * Certificat racine : **Microsoft Root Certificate Authority**
+        * Obligatoire. Ce certificat est fourni avec les systèmes exécutant Windows 7 ou version ultérieure.
+
+Visual Studio Installer requiert uniquement l’installation des certificats racines sur le système.
+
+::: moniker-end
+
 ## <a name="why-are-the-certificates-from-the-certificates-folder-not-installed-automatically"></a>Pourquoi les certificats du dossier de certificats ne sont-ils pas installés automatiquement ?
 
 Quand une signature est vérifiée dans un environnement en ligne, les API Windows sont utilisées pour télécharger les certificats et les ajouter au système. La vérification que le certificat est approuvé et autorisé via les paramètres d’administration se produit pendant ce processus. Ce processus de vérification ne peut pas se produire dans la plupart des environnements hors connexion. L’installation manuelle des certificats permet aux administrateurs d’entreprise de s’assurer que les certificats sont approuvés et conformes à la stratégie de sécurité de leur organisation.
@@ -117,7 +185,7 @@ Quand une signature est vérifiée dans un environnement en ligne, les API Windo
 Une manière de vérifier l’installation du système consiste à suivre ces étapes :
 
 1. Exécutez **mmc.exe**.<br/>
-  a. Cliquez sur Fichier et sélectionnez **Ajouter/Supprimer un composant logiciel enfichable**.<br/>
+  a. Cliquez sur **Fichier** et sélectionnez **Ajouter/Supprimer un composant logiciel enfichable**.<br/>
   b. Double-cliquez sur **Certificats**, sélectionnez **Compte d’ordinateur** et cliquez sur **Suivant**.<br/>
   c. Sélectionnez **Ordinateur local**, cliquez sur **Terminer**, puis sur **OK**.<br/>
   d. Développez **Certificats (ordinateur local)**.<br/>
@@ -127,7 +195,7 @@ Une manière de vérifier l’installation du système consiste à suivre ces é
    f. Développez **Autorités de certification intermédiaires** et sélectionnez **Certificats**.<br/>
     * Recherchez les certificats intermédiaires obligatoires dans cette liste.<br/>
 
-2. Cliquez sur Fichier et sélectionnez **Ajouter/Supprimer un composant logiciel enfichable**.<br/>
+2. Cliquez sur **Fichier** et sélectionnez **Ajouter/Supprimer un composant logiciel enfichable**.<br/>
   a. Double-cliquez sur **Certificats**, sélectionnez **Mon compte d’utilisateur**, cliquez sur **Terminer**, puis sur **OK**.<br/>
   b. Développez **Certificats – Utilisateur actuel**.<br/>
   c. Développez **Autorités de certification intermédiaires** et sélectionnez **Certificats**.<br/>

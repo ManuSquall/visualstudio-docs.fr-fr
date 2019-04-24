@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b7fb3b82d56038695c728d2125658a7f51d31f6
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 94d4ac86f40f887eed9d858f10614441d88c9c54
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870476"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108865"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menus et commandes de Visual Studio
 ## <a name="command-usage"></a>Utilisation de la commande
@@ -33,11 +33,11 @@ ms.locfileid: "57870476"
 ##### <a name="do-not-create-icons-for-every-command"></a>Ne créez pas d’icônes pour chaque commande.
  Réfléchissez bien avant de créer une icône de commande. Icônes doivent être créées uniquement pour les commandes qui :
 
--   s’affichent sur une barre d’outils par défaut.
+- s’affichent sur une barre d’outils par défaut.
 
--   sont susceptibles d’être ajoutées par les utilisateurs à une barre d’outils via le **personnaliser...**  boîte de dialogue.
+- sont susceptibles d’être ajoutées par les utilisateurs à une barre d’outils via le **personnaliser...**  boîte de dialogue.
 
--   avoir une icône associée à la même action dans un autre produit Microsoft.
+- avoir une icône associée à la même action dans un autre produit Microsoft.
 
 ##### <a name="limit-the-addition-of-keyboard-shortcuts"></a>Limite de l’ajout de raccourcis clavier
  La grande majorité des utilisateurs utilisent une toute petite partie de tous les raccourcis disponibles. En cas de doute, ne liez pas votre fonctionnalité à un raccourci clavier. Travail avec votre utilisateur rencontrer l’équipe avant d’ajouter de nouveaux raccourcis.
@@ -75,65 +75,65 @@ ms.locfileid: "57870476"
 
 ##### <a name="core-menus"></a>Menus principaux
 
--   Fichier
+- Fichier
 
--   Modifier
+- Modifier
 
--   Vue
+- Vue
 
--   Outils
+- Outils
 
--   Fenêtre
+- Fenêtre
 
--   Help
+- Help
 
 ##### <a name="project-specific-menus"></a>Menus spécifiques au projet
 
--   Projet
+- Projet
 
--   Build
+- Build
 
--   Débogage
+- Débogage
 
 ##### <a name="context-specific-menus"></a>Menus spécifiques au contexte
 
--   Équipe
+- Équipe
 
--   Données
+- Données
 
--   Tester
+- Tester
 
--   Architecture
+- Architecture
 
--   Analyze
+- Analyze
 
 ##### <a name="document-specific-menus"></a>Menus spécifiques au document
 
--   Format
+- Format
 
--   Table
+- Table
 
 ##### <a name="when-designing-main-menus-adhere-to-these-rules"></a>Lorsque vous concevez des menus principaux, respecter ces règles :
 
--   Ne dépassez pas 25 éléments de niveau supérieur dans un contexte donné
+- Ne dépassez pas 25 éléments de niveau supérieur dans un contexte donné
 
--   Menus ne doivent jamais dépasser 600 pixels en hauteur.
+- Menus ne doivent jamais dépasser 600 pixels en hauteur.
 
--   Évaluer un menu principal dans plusieurs contextes, comme dans l’Édition intégrale et le profil général.
+- Évaluer un menu principal dans plusieurs contextes, comme dans l’Édition intégrale et le profil général.
 
--   Menus volants sont acceptables.
+- Menus volants sont acceptables.
 
--   Menus volants doivent contenir au moins trois éléments et pas plus de sept.
+- Menus volants doivent contenir au moins trois éléments et pas plus de sept.
 
--   Menus volants doivent aller qu’un seul niveau de profondeur : certains éléments de menu de Visual Studio comportent des sous-menus en cascade, mais ce modèle n’est pas recommandée.
+- Menus volants doivent aller qu’un seul niveau de profondeur : certains éléments de menu de Visual Studio comportent des sous-menus en cascade, mais ce modèle n’est pas recommandée.
 
--   Utilisez des séparateurs pas plus de six. Regroupements doivent respecter l’illustration suivante :
+- Utilisez des séparateurs pas plus de six. Regroupements doivent respecter l’illustration suivante :
 
      ![Instructions pour le regroupement du menu principal](../../extensibility/ux-guidelines/media/0501-b_mainmenus.png "0501-b_MainMenus")
 
--   Alors qu’il n’est pas nécessaire pour que chaque regroupement dans la figure, l’ajout de regroupements supplémentaires est limité.
+- Alors qu’il n’est pas nécessaire pour que chaque regroupement dans la figure, l’ajout de regroupements supplémentaires est limité.
 
--   Chaque regroupement doit avoir de deux à sept éléments de menu.
+- Chaque regroupement doit avoir de deux à sept éléments de menu.
 
 #### <a name="main-menu-ordering"></a>Commande de menu principal
  Avant d’ajouter un nouvel élément de niveau supérieur, envisagez de placer la commande dans un menu de niveau supérieur existant. Lorsque vous ajoutez un nouveau menu de niveau supérieur, veillez à placer dans l’emplacement approprié. Décider si le menu est spécifique au projet, de contexte ou de document. Conservez le nom de menu de niveau supérieur concis et n'utiliser qu’un seul mot.
@@ -145,30 +145,30 @@ ms.locfileid: "57870476"
 
  Lorsque vous concevez des menus contextuels, respecter les mêmes règles que pour le menu principal et en outre :
 
--   Ne dépassez pas 25 des éléments de menu de niveau supérieur.
+- Ne dépassez pas 25 des éléments de menu de niveau supérieur.
 
--   Menus volants sont acceptables, mais doit pas dépasser un niveau de profondeur - n’utilisez jamais de menus volants en cascade.
+- Menus volants sont acceptables, mais doit pas dépasser un niveau de profondeur - n’utilisez jamais de menus volants en cascade.
 
--   Utilisez des séparateurs pas plus de six.
+- Utilisez des séparateurs pas plus de six.
 
 ### <a name="command-placement-in-toolbars"></a>Placement de commande dans les barres d’outils
 
 #### <a name="general-toolbars"></a>Barres d’outils généraux
  Lorsque vous concevez et organisation des barres d’outils, suivez ces normes :
 
--   N’utilisez pas plusieurs verbes par un bouton. Un bouton = une seule action.
+- N’utilisez pas plusieurs verbes par un bouton. Un bouton = une seule action.
 
--   Utilisez le texte en même temps que l’icône uniquement si elle doit être complété avec l’étiquette.
+- Utilisez le texte en même temps que l’icône uniquement si elle doit être complété avec l’étiquette.
 
--   Utiliser une zone de liste déroulante exclusivement pour les propriétés qui changent plusieurs fois dans une session. Exposer dans le cas contraire, la propriété ailleurs.
+- Utiliser une zone de liste déroulante exclusivement pour les propriétés qui changent plusieurs fois dans une session. Exposer dans le cas contraire, la propriété ailleurs.
 
--   La largeur d’une zone de liste déroulante doit être égal à la largeur de l’élément le plus long dans la zone + 30 %. Par exemple, si l’élément le plus long est 200 pixels, la zone de liste déroulante doit être 260 pixels de large.
+- La largeur d’une zone de liste déroulante doit être égal à la largeur de l’élément le plus long dans la zone + 30 %. Par exemple, si l’élément le plus long est 200 pixels, la zone de liste déroulante doit être 260 pixels de large.
 
--   Limitez l’utilisation de séparateurs. L’utilisation d’un séparateur en regard d’une liste déroulante est un anti-modèle, étant donné que la forme de la liste déroulante lui-même agit comme un séparateur visuel.
+- Limitez l’utilisation de séparateurs. L’utilisation d’un séparateur en regard d’une liste déroulante est un anti-modèle, étant donné que la forme de la liste déroulante lui-même agit comme un séparateur visuel.
 
--   Groupes de l’icône doivent contenir de trois à six icônes.
+- Groupes de l’icône doivent contenir de trois à six icônes.
 
--   Si le résultat de qualificateurs dans plusieurs commandes utiles, utiliser un bouton partagé qui stocke le dernier paramètre :
+- Si le résultat de qualificateurs dans plusieurs commandes utiles, utiliser un bouton partagé qui stocke le dernier paramètre :
 
      ![Boutons Fractionner dans Visual Studio](../../extensibility/ux-guidelines/media/0501-c_splitbuttons.png "0501-c_SplitButtons")
 
@@ -229,13 +229,13 @@ ms.locfileid: "57870476"
 
 #### <a name="when-naming-commands"></a>Lorsque d’affectation de noms commandes :
 
--   Construire le texte afin qu’il soit facilement localisable. Pour plus d’informations sur la localisation de texte, consultez [meilleures pratiques de localisation](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps#localization-best-practices).
+- Construire le texte afin qu’il soit facilement localisable. Pour plus d’informations sur la localisation de texte, consultez [meilleures pratiques de localisation](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps#localization-best-practices).
 
--   Être concis. Les commandes doivent utiliser pas plus de trois mots.
+- Être concis. Les commandes doivent utiliser pas plus de trois mots.
 
--   Utiliser la mise en majuscules des mots en majuscule : la première lettre de chaque mot doit être en majuscules. Pour plus d’informations sur la mise en forme dans Visual Studio, consultez [style de texte](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).
+- Utiliser la mise en majuscules des mots en majuscule : la première lettre de chaque mot doit être en majuscules. Pour plus d’informations sur la mise en forme dans Visual Studio, consultez [style de texte](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).
 
--   Prenez en compte dans lequel la commande sera placée. Il est dans un menu de niveau supérieur ou un menu volant ? Par exemple, lorsque les commandes d’alignement de regroupement dans un menu volant, la commande de niveau supérieur doivent être « Alignement » et les commandes de menu volant doit être « Gauche » « Droite », « Center », « Justify » et ainsi de suite. Il serait redondant pour nommer les commandes de menu volant « Aligner à gauche » ou « Right Align. »
+- Prenez en compte dans lequel la commande sera placée. Il est dans un menu de niveau supérieur ou un menu volant ? Par exemple, lorsque les commandes d’alignement de regroupement dans un menu volant, la commande de niveau supérieur doivent être « Alignement » et les commandes de menu volant doit être « Gauche » « Droite », « Center », « Justify » et ainsi de suite. Il serait redondant pour nommer les commandes de menu volant « Aligner à gauche » ou « Right Align. »
 
      ![Menu Format Visual Studio](../../extensibility/ux-guidelines/media/0502-a_formatmenu.png "0502-a_FormatMenu")
 
@@ -244,20 +244,20 @@ ms.locfileid: "57870476"
 
 #### <a name="use-an-icon-with-a-command-only-if"></a>Utiliser une icône avec un commande que si :
 
--   La même commande possède une icône associée dans un autre produit Microsoft principales, tel que celui des applications Microsoft Office.
+- La même commande possède une icône associée dans un autre produit Microsoft principales, tel que celui des applications Microsoft Office.
 
--   La commande sera placée dans une barre d’outils par défaut.
+- La commande sera placée dans une barre d’outils par défaut.
 
--   La commande est une commande de spécialisation que les utilisateurs sont susceptibles d’ajouter à une barre d’outils à l’aide de la **« Personnaliser... »** boîte de dialogue.
+- La commande est une commande de spécialisation que les utilisateurs sont susceptibles d’ajouter à une barre d’outils à l’aide de la **« Personnaliser... »** boîte de dialogue.
 
 ## <a name="access-and-shortcut-keys"></a>Clés d’accès et de raccourci
 
 ### <a name="overview"></a>Vue d'ensemble
  Il existe deux types d’affectations du clavier :
 
--   **Clés d’accès** (également appelé accélérateurs) autorisent l’accès de clavier via les menus pour la commande et à chaque contrôle label dans la boîte de dialogue interface utilisateur. Clés d’accès sont principalement à des fins d’accessibilité sont attribués à tous les menus et la plupart des contrôles de boîte de dialogue, ne sont pas destinés à être retenu, affectent uniquement la fenêtre active et sont localisés.
+- **Clés d’accès** (également appelé accélérateurs) autorisent l’accès de clavier via les menus pour la commande et à chaque contrôle label dans la boîte de dialogue interface utilisateur. Clés d’accès sont principalement à des fins d’accessibilité sont attribués à tous les menus et la plupart des contrôles de boîte de dialogue, ne sont pas destinés à être retenu, affectent uniquement la fenêtre active et sont localisés.
 
--   **Touches de raccourci** principalement utiliser contrôle (Ctrl) et les séquences de touches de fonction (Fn). Elles sont plus conçues pour les utilisateurs expérimentés et aide la productivité. Ils sont assignés uniquement à des commandes les plus fréquemment utilisées et autoriser l’accès rapide tout en ignorant le menu principal. Touches de raccourci sont destinées à être retenu, et pour cette raison doit être affectée cohérent avec le schéma de profil. Schémas de touches de raccourci peuvent varier à partir d’un profil à un profil. Un utilisateur peut personnaliser les touches de raccourci via **Outils > Options > clavier**.
+- **Touches de raccourci** principalement utiliser contrôle (Ctrl) et les séquences de touches de fonction (Fn). Elles sont plus conçues pour les utilisateurs expérimentés et aide la productivité. Ils sont assignés uniquement à des commandes les plus fréquemment utilisées et autoriser l’accès rapide tout en ignorant le menu principal. Touches de raccourci sont destinées à être retenu, et pour cette raison doit être affectée cohérent avec le schéma de profil. Schémas de touches de raccourci peuvent varier à partir d’un profil à un profil. Un utilisateur peut personnaliser les touches de raccourci via **Outils > Options > clavier**.
 
 ### <a name="assigning-access-keys"></a>Affectation des clés d’accès
  Clés d’accès sont constitués de touches Alt plus d’alphanumériques. Affecter une touche d’accès à chaque élément de menu sans exception. Suivez Windows et des conventions communes pour l’affectation des clés d’accès. par exemple, la clé d’accès **fichier > nouveau** doit toujours être **Alt, F, N**.
@@ -285,6 +285,6 @@ ms.locfileid: "57870476"
 
   Il n’est pas un moyen simple de vérifier la disponibilité de raccourci. Si vous souhaitez ajouter un raccourci, procédez comme suit :
 
-1.  Vérifiez la liste des [raccourcis de Visual Studio 2013](http://visualstudioshortcuts.com/2013/) pour déterminer s’il existe des commandes similaires aux vôtres avec groupe.
+1. Vérifiez la liste des [raccourcis de Visual Studio 2013](http://visualstudioshortcuts.com/2013/) pour déterminer s’il existe des commandes similaires aux vôtres avec groupe.
 
-2.  Accédez à **Outils > Options > environnement > clavier** et tester votre raccourci. Vérifiez que chaque schéma de configuration du clavier est répertorié sous « Appliquer le schéma de mappage de clavier supplémentaires suivantes. » Vérification des profils général, C#, VB et C++, comme ceux partagent les raccourcis uniques. Le raccourci est disponible s’il n’est pas mappé dans un de ces emplacements.
+2. Accédez à **Outils > Options > environnement > clavier** et tester votre raccourci. Vérifiez que chaque schéma de configuration du clavier est répertorié sous « Appliquer le schéma de mappage de clavier supplémentaires suivantes. » Vérification des profils général, c#, VB et C++, comme ceux partagent les raccourcis uniques. Le raccourci est disponible s’il n’est pas mappé dans un de ces emplacements.

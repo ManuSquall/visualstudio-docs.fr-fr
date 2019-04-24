@@ -5,12 +5,12 @@ ms.topic: conceptual
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e7c7e93fa0ba58f7888212c48e28d21bd564ae7c
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 3cf836ed59dadba71314aa38cd4d2907bee384a6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526306"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051633"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>Procédure pas à pas : Utiliser XSLT hierarchy
 
@@ -69,7 +69,7 @@ L'exemple dans cette rubrique illustre le débogage dans une feuille de style r�
     </xsl:stylesheet>
     ```
 
-3.  Ajoutez le code suivant *xslinclude.xsl* fichier :
+3. Ajoutez le code suivant *xslinclude.xsl* fichier :
 
     ```xml
     <?xml version='1.0'?>
@@ -103,11 +103,11 @@ L'exemple dans cette rubrique illustre le débogage dans une feuille de style r�
     </xsl:stylesheet>
     ```
 
-4.  Ajouter un point d’arrêt au niveau de l’instruction `<xsl:include href="xslincludefile.xsl" />`.
+4. Ajouter un point d’arrêt au niveau de l’instruction `<xsl:include href="xslincludefile.xsl" />`.
 
-5.  Démarrez le débogage.
+5. Démarrez le débogage.
 
-6.  Lorsque le débogueur s’arrête au niveau de l’instruction `<xsl:include href="xslincludefile.xsl" />`, appuyez sur la **pas à pas détaillé** bouton. Le débogage peut être poursuivi dans la feuille de style référencée. La hiérarchie est visible et le concepteur affiche le chemin d’accès correct.
+6. Lorsque le débogueur s’arrête au niveau de l’instruction `<xsl:include href="xslincludefile.xsl" />`, appuyez sur la **pas à pas détaillé** bouton. Le débogage peut être poursuivi dans la feuille de style référencée. La hiérarchie est visible et le concepteur affiche le chemin d’accès correct.
 
 ## <a name="see-also"></a>Voir aussi
 

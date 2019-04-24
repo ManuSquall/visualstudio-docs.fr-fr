@@ -14,23 +14,23 @@ ms.assetid: 3070cc6c-1138-4655-a7ac-723379f48f94
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: fb3610a41579311e3be8f14483b606a8a9bdc031
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 9e5d0418f09d208d8919a2c431c818e236b62b29
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840482"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112999"
 ---
 # <a name="expected-"></a>';' attendu
 Vous avez tenté de placer plusieurs instructions sur une ligne, mais s’est pas séparez-les par des points-virgules. Des points-virgules servent à terminer les instructions. Bien que vous pouvez placer plusieurs instructions sur une seule ligne, chacun d’eux doit être délimité de la suivante par un point-virgule.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
--   Marquer la fin de chaque instruction par un point-virgule.  
+- Marquer la fin de chaque instruction par un point-virgule.  
   
--   Assurez-vous que vos appels de fonction utilisent correctement les parenthèses.  
+- Assurez-vous que vos appels de fonction utilisent correctement les parenthèses.  
   
--   Assurez-vous que vous n’avez pas oublié les points-virgules dans l’en-tête d’un **pour** boucle.  
+- Assurez-vous que vous n’avez pas oublié les points-virgules dans l’en-tête d’un **pour** boucle.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Écriture de code JavaScript](../../javascript/writing-javascript-code.md)

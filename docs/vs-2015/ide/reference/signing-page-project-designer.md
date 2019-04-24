@@ -20,17 +20,16 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 59f8cb15db6f93c76275fd1d8318ae04df998cf7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 01bfaf5ee9143a3122f779ab8292210b90da771f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788724"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59650394"
 ---
 # <a name="signing-page-project-designer"></a>Page Signature, Concepteur de projets
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Utilisez la page **Signature** du **Concepteur de projet** pour signer les manifestes d’application et de déploiement, et pour signer l’assembly (signature avec nom fort).  
   
  Notez que la signature des manifestes d’application et de déploiement est un processus différent de la signature des assemblys, même si ces deux tâches sont effectuées dans la page **Signature**.  
@@ -41,7 +40,7 @@ Utilisez la page **Signature** du **Concepteur de projet** pour signer les manif
   
 ## <a name="application-and-deployment-manifest-signing"></a>Signature de manifestes d’application et de déploiement  
  Case à cocher **Signer les manifestes ClickOnce**  
- Cochez cette case pour signer les manifestes d’application et de déploiement à l’aide d’une paire de clés publique/privée. Pour plus d’informations sur cette procédure, consultez [Guide pratique pour signer des manifestes d’application et de déploiement](../../ide/how-to-sign-application-and-deployment-manifests.md).  
+ Cochez cette case pour signer les manifestes d’application et de déploiement à l’aide d’une paire de clés publique/privée. Pour plus d’informations sur la manière de procéder, consultez [Guide pratique pour signer des manifestes d’application et de déploiement](../../ide/how-to-sign-application-and-deployment-manifests.md).  
   
  Bouton **Sélectionner dans Store**  
  Permet de sélectionner un certificat existant à partir du magasin de certificats personnel de l’utilisateur actuel. Vous pouvez sélectionner l’un de ces certificats pour signer vos manifestes d’application et de déploiement.  
@@ -67,9 +66,9 @@ Utilisez la page **Signature** du **Concepteur de projet** pour signer les manif
   
 ## <a name="assembly-signing"></a>Signature d’assemblys  
  Case à cocher **Signer l’assembly**.  
- Cochez cette case pour signer l’assembly et créer un fichier de clé de nom fort. Pour plus d’informations sur la signature d’assemblys à l’aide du **Concepteur de projet**, consultez [Comment : signer un assembly (Visual Studio)](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564).  
+ Cochez cette case pour signer l’assembly et créer un fichier de clé de nom fort. Pour plus d’informations sur la signature d’assemblys à l’aide du **Concepteur de projet**, consultez [Guide pratique pour signer un assembly (Visual Studio)](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564).  
   
- Cette option utilise l’outil Al.exe fourni par le [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)] pour signer l’assembly. Pour plus d’informations sur Al.exe, consultez [Comment : signer un assembly avec un nom fort](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67).  
+ Cette option utilise l’outil Al.exe fourni par le [!INCLUDE[winsdklong](../../includes/winsdklong-md.md)] pour signer l’assembly. Pour plus d’informations sur Al.exe, consultez [Guide pratique pour signer un assembly avec un nom fort](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67).  
   
  Liste **Choisir un fichier de clé de nom fort**  
  Permet de spécifier un fichier de clé de nom fort nouveau ou existant pour signer l’assembly. Sélectionnez **\<Parcourir...>** pour sélectionner un fichier de clé existant.  
@@ -93,7 +92,7 @@ Utilisez la page **Signature** du **Concepteur de projet** pour signer les manif
  [Informations de référence sur les propriétés de projet](../../ide/reference/project-properties-reference.md)   
  [Gestion d’assembly et signature de manifeste](../../ide/managing-assembly-and-manifest-signing.md)   
  [Signature avec nom fort pour les applications managées](http://msdn.microsoft.com/5fef3490-c519-4363-94fd-8b1ad260dab5)   
- [Guide pratique pour signer des manifestes d’application et de déploiement](../../ide/how-to-sign-application-and-deployment-manifests.md)   
- [Guide pratique pour signer un assembly (Visual Studio)](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564)   
- [Guide pratique pour signer un assembly avec un nom fort](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)   
+ [Guide pratique pour Application de connexion et les manifestes de déploiement](../../ide/how-to-sign-application-and-deployment-manifests.md)   
+ [Guide pratique pour Signer un Assembly (Visual Studio)](http://msdn.microsoft.com/f468a7d3-234c-4353-924d-8e0ae5896564)   
+ [Guide pratique pour Signer un Assembly avec un nom fort](http://msdn.microsoft.com/library/2c30799a-a826-46b4-a25d-c584027a6c67)   
  [Assemblys avec nom fort](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)

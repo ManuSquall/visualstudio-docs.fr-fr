@@ -25,33 +25,32 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 24aae7066d3fb14a298c780e5cd9f7e91901821e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: acab2df1ff39d5f245baf27642f1ab71104671a7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948511"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069781"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Créer une base de données SQL à l’aide d’un concepteur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Vous pouvez explorer les tâches de base, telles que l’ajout de tables et définition des colonnes, à l’aide de Visual Studio pour créer et mettre à jour un fichier de base de données locale dans SQL Server Express LocalDB. Après avoir terminé cette procédure pas à pas, vous pouvez découvrir des fonctionnalités plus avancées en utilisant votre base de données locale comme point de départ d'autres procédures pas à pas qui en ont besoin.  
   
  Vous pouvez également créer une base de données à l’aide de SQL Server Management Studio (un téléchargement distinct) ou des instructions Transact-SQL dans le **Explorateur d’objets SQL Server** fenêtre outil dans Visual Studio.  
   
  Au cours de cette procédure, vous exécuterez les tâches suivantes :  
   
--   [Créer un projet et un fichier de base de données locale](../data-tools/create-a-sql-database-by-using-a-designer.md#BKMK_CreateNewSQLDB)  
+- [Créer un projet et un fichier de base de données locale](../data-tools/create-a-sql-database-by-using-a-designer.md#BKMK_CreateNewSQLDB)  
   
--   [Créer des tables, colonnes, clés primaires et les clés étrangères](../data-tools/create-a-sql-database-by-using-a-designer.md#BKMK_CreateNewTbls)  
+- [Créer des tables, colonnes, clés primaires et les clés étrangères](../data-tools/create-a-sql-database-by-using-a-designer.md#BKMK_CreateNewTbls)  
   
--   [Remplir les tables de données](../data-tools/create-a-sql-database-by-using-a-designer.md#BKMK_Populating)  
+- [Remplir les tables de données](../data-tools/create-a-sql-database-by-using-a-designer.md#BKMK_Populating)  
   
 ## <a name="prerequisites"></a>Prérequis  
  Pour effectuer cette procédure pas à pas, vérifiez que vous avez installé SQL Server Data Tools. Sur le **vue** menu, vous devez voir **Explorateur d’objets SQL Server**. Si elle n’y ne figure pas, accédez à **Ajout / Suppression de programmes**, cliquez sur **Visual Studio 2015**, sélectionnez **modification**, activez la case à côté **deSQLServerDataTools**.  
   
-##  <a name="BKMK_CreateNewSQLDB"></a> Créer un projet et un fichier de base de données locale  
+## <a name="BKMK_CreateNewSQLDB"></a> Créer un projet et un fichier de base de données locale  
   
 #### <a name="to-create-a-project-and-a-database-file"></a>Pour créer un projet et un fichier de base de données  
   
@@ -73,22 +72,22 @@ Vous pouvez explorer les tâches de base, telles que l’ajout de tables et déf
   
    En ouvrant la fenêtre de propriétés pour la base de données, vous pouvez consulter la chaîne de connexion et l'emplacement du fichier principal .mdf. Vous verrez que le fichier de base de données est dans le dossier du projet.  
   
--   Dans Visual Studio, sélectionnez **vue** > **Explorateur d’objets SQL Server** si cette fenêtre n’est pas déjà ouverte. Ouvrez la fenêtre Propriétés en développant le **des connexions de données** nœud, ouvrez le menu contextuel de SampleDatabase.mdf, puis en sélectionnant **propriétés**.  
+- Dans Visual Studio, sélectionnez **vue** > **Explorateur d’objets SQL Server** si cette fenêtre n’est pas déjà ouverte. Ouvrez la fenêtre Propriétés en développant le **des connexions de données** nœud, ouvrez le menu contextuel de SampleDatabase.mdf, puis en sélectionnant **propriétés**.  
   
--   Vous pouvez également sélectionner **vue** > **Explorateur de serveurs**, si cette fenêtre n’est pas déjà ouverte. Ouvrez la fenêtre Propriétés en développant le **des connexions de données** nœud. Ouvrez le menu contextuel de SampleDatabase.mdf, puis sélectionnez **propriétés**.  
+- Vous pouvez également sélectionner **vue** > **Explorateur de serveurs**, si cette fenêtre n’est pas déjà ouverte. Ouvrez la fenêtre Propriétés en développant le **des connexions de données** nœud. Ouvrez le menu contextuel de SampleDatabase.mdf, puis sélectionnez **propriétés**.  
   
-##  <a name="BKMK_CreateNewTbls"></a> Créer des tables, colonnes, clés primaires et les clés étrangères  
+## <a name="BKMK_CreateNewTbls"></a> Créer des tables, colonnes, clés primaires et les clés étrangères  
  Dans cette section, vous créerez des tables, une clé primaire dans chaque table, et quelques lignes d'exemples de données. La procédure suivante vous donnera une idée de la façon dont ces informations peuvent apparaître dans une application. Vous créerez également une clé étrangère pour spécifier comment les enregistrements d'une table peuvent correspondre aux enregistrements de l'autre table.  
   
 #### <a name="to-create-the-customers-table"></a>Pour créer la table Customers  
   
-1.  Dans **Explorateur de serveurs** ou **Explorateur d’objets SQL Server**, développez le **des connexions de données** nœud, puis développez le **SampleDatabase.mdf**nœud.  
+1. Dans **Explorateur de serveurs** ou **Explorateur d’objets SQL Server**, développez le **des connexions de données** nœud, puis développez le **SampleDatabase.mdf**nœud.  
   
-2.  Ouvrez le menu contextuel pour **Tables**, puis sélectionnez **ajouter une nouvelle Table**.  
+2. Ouvrez le menu contextuel pour **Tables**, puis sélectionnez **ajouter une nouvelle Table**.  
   
      Le **Concepteur de tables** s’ouvre et affiche une grille avec une ligne par défaut, qui représente une seule colonne de la table que vous créez. En ajoutant des lignes à la grille, vous définissez des colonnes supplémentaires dans la table.  
   
-3.  Dans la grille, ajoutez une ligne pour chaque entrée suivante :  
+3. Dans la grille, ajoutez une ligne pour chaque entrée suivante :  
   
     |Nom de la colonne|Type de données|Null autorisé|  
     |-----------------|---------------|-----------------|  
@@ -97,11 +96,11 @@ Vous pouvez explorer les tâches de base, telles que l’ajout de tables et déf
     |`ContactName`|`nvarchar (50)`|True (sélectionné)|  
     |`Phone`|`nvarchar (24)`|True (sélectionné)|  
   
-4.  Ouvrez le menu contextuel pour le `CustomerID` de ligne, puis sélectionnez **définir la clé primaire**.  
+4. Ouvrez le menu contextuel pour le `CustomerID` de ligne, puis sélectionnez **définir la clé primaire**.  
   
-5.  Ouvrez le menu contextuel pour la ligne par défaut, puis sélectionnez **supprimer**.  
+5. Ouvrez le menu contextuel pour la ligne par défaut, puis sélectionnez **supprimer**.  
   
-6.  Nommez la table Customers en mettant à jour la première ligne du volet de script afin qu'elle corresponde à l'exemple suivant :  
+6. Nommez la table Customers en mettant à jour la première ligne du volet de script afin qu'elle corresponde à l'exemple suivant :  
   
     ```  
     CREATE TABLE [dbo].[Customers]  
@@ -111,15 +110,15 @@ Vous pouvez explorer les tâches de base, telles que l’ajout de tables et déf
   
      ![Concepteur de tables](../data-tools/media/raddata-table-designer.png "raddata Concepteur de tables")  
   
-7.  Dans le coin supérieur gauche de la **Concepteur de tables**, sélectionnez le **mise à jour** bouton.  
+7. Dans le coin supérieur gauche de la **Concepteur de tables**, sélectionnez le **mise à jour** bouton.  
   
-8.  Dans le **mises à jour de la base de données aperçu** boîte de dialogue, sélectionnez le **mise à jour la base de données** bouton.  
+8. Dans le **mises à jour de la base de données aperçu** boîte de dialogue, sélectionnez le **mise à jour la base de données** bouton.  
   
      Vos modifications sont enregistrées dans le fichier de base de données local.  
   
 #### <a name="to-create-the-orders-table"></a>Pour créer la table Orders  
   
-1.  Ajoutez une table, puis ajoutez une ligne pour chaque entrée dans le tableau suivant :  
+1. Ajoutez une table, puis ajoutez une ligne pour chaque entrée dans le tableau suivant :  
   
     |Nom de la colonne|Type de données|Null autorisé|  
     |-----------------|---------------|-----------------|  
@@ -128,64 +127,64 @@ Vous pouvez explorer les tâches de base, telles que l’ajout de tables et déf
     |`OrderDate`|`datetime`|True (sélectionné)|  
     |`OrderQuantity`|`int`|True (sélectionné)|  
   
-2.  Définissez **OrderID** comme clé primaire, puis supprimez la ligne par défaut.  
+2. Définissez **OrderID** comme clé primaire, puis supprimez la ligne par défaut.  
   
-3.  Nommez la table Orders en mettant à jour la première ligne du volet de script afin qu'elle corresponde à l'exemple suivant :  
+3. Nommez la table Orders en mettant à jour la première ligne du volet de script afin qu'elle corresponde à l'exemple suivant :  
   
     ```  
     CREATE TABLE [dbo].[Orders]  
     ```  
   
-4.  Dans le coin supérieur gauche de la **Concepteur de tables**, sélectionnez le **mise à jour** bouton.  
+4. Dans le coin supérieur gauche de la **Concepteur de tables**, sélectionnez le **mise à jour** bouton.  
   
-5.  Dans le **mises à jour de la base de données aperçu** boîte de dialogue, sélectionnez le **mise à jour la base de données** bouton.  
+5. Dans le **mises à jour de la base de données aperçu** boîte de dialogue, sélectionnez le **mise à jour la base de données** bouton.  
   
      Vos modifications sont enregistrées dans le fichier de base de données local.  
   
 #### <a name="to-create-a-foreign-key"></a>Pour créer une clé étrangère  
   
-1.  Dans le volet contextuel sur le côté droit de la grille, ouvrez le menu contextuel pour **clés étrangères**, puis sélectionnez **ajouter une nouvelle clé étrangère**, comme le montre l’illustration suivante.  
+1. Dans le volet contextuel sur le côté droit de la grille, ouvrez le menu contextuel pour **clés étrangères**, puis sélectionnez **ajouter une nouvelle clé étrangère**, comme le montre l’illustration suivante.  
   
      ![Ajout d’une clé étrangère dans le Concepteur de tables](../data-tools/media/foreignkey.png "ForeignKey")  
   
-2.  Dans la zone de texte qui s’affiche, remplacez **ToTable** avec `Customers`.  
+2. Dans la zone de texte qui s’affiche, remplacez **ToTable** avec `Customers`.  
   
-3.  Dans le volet T-SQL, mettez à jour la dernière ligne pour correspondre à l’exemple suivant :  
+3. Dans le volet T-SQL, mettez à jour la dernière ligne pour correspondre à l’exemple suivant :  
   
     ```  
     CONSTRAINT [FK_Orders_Customers] FOREIGN KEY ([CustomerID]) REFERENCES [Customers]([CustomerID])  
     ```  
   
-4.  Dans le coin supérieur gauche de la **Concepteur de tables**, sélectionnez le **mise à jour** bouton.  
+4. Dans le coin supérieur gauche de la **Concepteur de tables**, sélectionnez le **mise à jour** bouton.  
   
-5.  Dans le **mises à jour de la base de données aperçu** boîte de dialogue, sélectionnez le **mise à jour la base de données** bouton.  
+5. Dans le **mises à jour de la base de données aperçu** boîte de dialogue, sélectionnez le **mise à jour la base de données** bouton.  
   
      Vos modifications sont enregistrées dans le fichier de base de données local.  
   
-##  <a name="BKMK_Populating"></a> Remplir les tables de données  
+## <a name="BKMK_Populating"></a> Remplir les tables de données  
   
 #### <a name="to-populate-the-tables-with-data"></a>Pour remplir les tables avec des données  
   
-1.  Dans **Explorateur de serveurs** ou **Explorateur d’objets SQL Server**, développez le nœud de la base de données.  
+1. Dans **Explorateur de serveurs** ou **Explorateur d’objets SQL Server**, développez le nœud de la base de données.  
   
-2.  Ouvrez le menu contextuel pour le **Tables** nœud, sélectionnez **Actualiser**, puis développez le **Tables** nœud.  
+2. Ouvrez le menu contextuel pour le **Tables** nœud, sélectionnez **Actualiser**, puis développez le **Tables** nœud.  
   
-3.  Ouvrez le menu contextuel pour la table Customers, puis sélectionnez **afficher les données de Table**.  
+3. Ouvrez le menu contextuel pour la table Customers, puis sélectionnez **afficher les données de Table**.  
   
-4.  Ajoutez les données voulues pour au moins trois clients.  
+4. Ajoutez les données voulues pour au moins trois clients.  
   
      Vous pouvez spécifier cinq caractères de votre choix comme ID de client, mais choisissez-en au moins un que vous pouvez mémoriser pour l'utiliser ultérieurement dans cette procédure.  
   
-5.  Ouvrez le menu contextuel de la table Orders, puis sélectionnez **afficher les données de Table**.  
+5. Ouvrez le menu contextuel de la table Orders, puis sélectionnez **afficher les données de Table**.  
   
-6.  Ajoutez des données pour au moins trois commandes.  
+6. Ajoutez des données pour au moins trois commandes.  
   
     > [!IMPORTANT]
     >  Vérifiez que tous les ID de commande et quantités commandées sont des entiers et que chaque ID client correspond à une valeur que vous avez spécifiée dans la colonne CustomerID de la table Customers.  
   
-7.  Dans la barre de menus, sélectionnez **fichier** > **Enregistrer tout**.  
+7. Dans la barre de menus, sélectionnez **fichier** > **Enregistrer tout**.  
   
-8.  Dans la barre de menus, sélectionnez **fichier** > **fermer la Solution**.  
+8. Dans la barre de menus, sélectionnez **fichier** > **fermer la Solution**.  
   
     > [!NOTE]
     >  Il est recommandé de sauvegarder le fichier de base de données que vous venez de créer en copiant et en collant la copie dans un autre emplacement ou en renommant la copie.  

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 137755ae4e1bfab97cbaec063a29a95caa1d9cd6
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 6239bc351872dc7a945c3fbff8ad1ed13817c3ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865019"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082787"
 ---
 # <a name="how-to-populate-documents-with-data-from-services"></a>Procédure : Remplir des documents avec des données à partir des services
 
@@ -33,21 +33,21 @@ L’exemple suivant montre comment ajouter des contrôles liés aux données à 
 
 ## <a name="to-populate-a-document-level-project-with-data-from-a-web-service"></a>Pour remplir un projet au niveau du document avec des données à partir d’un service web
 
-1.  Ouvrez la fenêtre **Sources de données** et créez une source de données de service pour votre projet. Pour plus d’informations, consultez [Ajouter de nouvelles sources de données](../data-tools/add-new-data-sources.md).
+1. Ouvrez la fenêtre **Sources de données** et créez une source de données de service pour votre projet. Pour plus d’informations, consultez [Ajouter de nouvelles sources de données](../data-tools/add-new-data-sources.md).
 
-2.  Faites glisser le tableau ou le champ que vous souhaitez à partir de la fenêtre **Sources de données** vers votre document.
+2. Faites glisser le tableau ou le champ que vous souhaitez à partir de la fenêtre **Sources de données** vers votre document.
 
      Un contrôle est créé sur le document, un <xref:System.Windows.Forms.BindingSource> lié à la classe d’objet dans votre projet est créé, et des classes sont générées pour le service.
 
-3.  Dans votre code, créez une instance de la classe de service web auquel vous connecté à l’étape 1.
+3. Dans votre code, créez une instance de la classe de service web auquel vous connecté à l’étape 1.
 
-4.  S’il existe des propriétés qui sont requises pour la communication avec le service web, créer des instances de ces propriétés.
+4. S’il existe des propriétés qui sont requises pour la communication avec le service web, créer des instances de ces propriétés.
 
-5.  Créez et envoyez une demande de données à l’aide des méthodes exposées par le service web et des éventuelles instances de propriétés que vous avez créées à l’étape 4.
+5. Créez et envoyez une demande de données à l’aide des méthodes exposées par le service web et des éventuelles instances de propriétés que vous avez créées à l’étape 4.
 
      Les méthodes que vous utilisez dépendent de l’offre de ce que le service web.
 
-6.  Affectez la réponse du service web pour le <xref:System.Windows.Forms.BindingSource.DataSource%2A> propriété de la <xref:System.Windows.Forms.BindingSource>.
+6. Affectez la réponse du service web pour le <xref:System.Windows.Forms.BindingSource.DataSource%2A> propriété de la <xref:System.Windows.Forms.BindingSource>.
 
 Lorsque vous exécutez le projet, les contrôles affichent le premier enregistrement de la source de données. Vous pouvez activer l’exploration des enregistrements en gérant les événements monétaires à l’aide des objets dans le <xref:System.Windows.Forms.BindingSource>.
 

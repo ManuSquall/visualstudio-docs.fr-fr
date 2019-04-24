@@ -17,37 +17,37 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ffefb9f6542bbbb44d732116a348045660cf78b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 71fdd358c03604b196b0a57a9667f40dfb92b049
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950852"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073967"
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>Développement d'applications avec Workflow Designer
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] est un concepteur visuel et un débogueur pour la construction graphique et le débogage d'applications [!INCLUDE[wf](../includes/wf-md.md)] dans le [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] hébergé dans l'environnement de développement [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Il vous permet de composer une application de workflow composite, une bibliothèque d'activités ou un service [!INCLUDE[indigo1](../includes/indigo1-md.md)] via l'utilisation de modèles et de concepteurs d'activités. [!INCLUDE[crabout](../includes/crabout-md.md)] flux de travail, consultez le [Windows Workflow Foundation &#91;.NET Framework 4&#93;](http://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66).  
   
  Voici plusieurs nouvelles fonctionnalités de conception qui distinguent cette nouvelle version de[!INCLUDE[wfd2](../includes/wfd2-md.md)] des versions antérieures de [!INCLUDE[wfd2](../includes/wfd2-md.md)] :  
   
--   [!INCLUDE[wfd2](../includes/wfd2-md.md)] est construit à l'aide de [!INCLUDE[avalon1](../includes/avalon1-md.md)]. Cela améliore l'expérience des concepteurs d'activités et les performances des workflows grands et complexes.  
+- [!INCLUDE[wfd2](../includes/wfd2-md.md)] est construit à l'aide de [!INCLUDE[avalon1](../includes/avalon1-md.md)]. Cela améliore l'expérience des concepteurs d'activités et les performances des workflows grands et complexes.  
   
--   Les activités personnalisées sont maintenant conçues avec [!INCLUDE[avalon2](../includes/avalon2-md.md)], à l'aide de XAML, et le modèle de programmation pour la création de concepteurs d'activités a été simplifié.  
+- Les activités personnalisées sont maintenant conçues avec [!INCLUDE[avalon2](../includes/avalon2-md.md)], à l'aide de XAML, et le modèle de programmation pour la création de concepteurs d'activités a été simplifié.  
   
--   Une activité d'organigramme a été implémentée, afin de vous permettre de visualiser le flux du programme à l'aide du style de modélisation d'organigramme habituel.  
+- Une activité d'organigramme a été implémentée, afin de vous permettre de visualiser le flux du programme à l'aide du style de modélisation d'organigramme habituel.  
   
--   [!INCLUDE[wfd2](../includes/wfd2-md.md)] dispose d'un nouveau concepteur de variables qui vous permet de déclarer et de limiter des variables dans vos workflows, en les liant à des activités.  
+- [!INCLUDE[wfd2](../includes/wfd2-md.md)] dispose d'un nouveau concepteur de variables qui vous permet de déclarer et de limiter des variables dans vos workflows, en les liant à des activités.  
   
--   Dans [!INCLUDE[vs2010](../includes/vs2010-md.md)], [!INCLUDE[wfd2](../includes/wfd2-md.md)] fournit des fonctionnalités IntelliSense complètes lors de la création d'expressions Visual Basic dans vos workflows [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)].  
+- Dans [!INCLUDE[vs2010](../includes/vs2010-md.md)], [!INCLUDE[wfd2](../includes/wfd2-md.md)] fournit des fonctionnalités IntelliSense complètes lors de la création d'expressions Visual Basic dans vos workflows [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)].  
   
--   L'expérience de débogage s'étend maintenant en XAML, ce qui vous permet de définir des points d'arrêt dans votre définition de workflow XAML et d'effectuer un pas à pas détaillé dans votre code XAML au moment de l'exécution, ce qui fournit une expérience comparable à celle que procure le code managé.  
+- L'expérience de débogage s'étend maintenant en XAML, ce qui vous permet de définir des points d'arrêt dans votre définition de workflow XAML et d'effectuer un pas à pas détaillé dans votre code XAML au moment de l'exécution, ce qui fournit une expérience comparable à celle que procure le code managé.  
   
--   Le réhébergement de [!INCLUDE[wfd2](../includes/wfd2-md.md)] hors de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] est considérablement simplifié par rapport aux versions précédentes, ne nécessitant maintenant que quelques lignes de code.  
+- Le réhébergement de [!INCLUDE[wfd2](../includes/wfd2-md.md)] hors de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] est considérablement simplifié par rapport aux versions précédentes, ne nécessitant maintenant que quelques lignes de code.  
   
--   La nouvelle <xref:System.Activities.Statements.Flowchart> activité et ses [organigramme](../workflow-designer/flowchart-activity-designer.md) vous permettent de visualiser votre flux de programme à l’aide du style de modélisation d’organigramme habituel.  
+- La nouvelle <xref:System.Activities.Statements.Flowchart> activité et ses [organigramme](../workflow-designer/flowchart-activity-designer.md) vous permettent de visualiser votre flux de programme à l’aide du style de modélisation d’organigramme habituel.  
   
--   Les activités de messagerie ont été améliorées, vous permettant d'écrire des services [!INCLUDE[indigo1](../includes/indigo1-md.md)] entièrement déclaratifs (sans code).  
+- Les activités de messagerie ont été améliorées, vous permettant d'écrire des services [!INCLUDE[indigo1](../includes/indigo1-md.md)] entièrement déclaratifs (sans code).  
   
--   Le **ajouter une référence de Service...** fonctionnalité vous permet de générer automatiquement des activités qui accèdent aux services Web.  
+- Le **ajouter une référence de Service...** fonctionnalité vous permet de générer automatiquement des activités qui accèdent aux services Web.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Utilisation du Concepteur de flux de travail](../workflow-designer/using-the-workflow-designer.md)  

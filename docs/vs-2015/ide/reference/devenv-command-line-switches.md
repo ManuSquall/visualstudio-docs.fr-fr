@@ -21,17 +21,16 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3e6a888a5f904c194bcdb6f5c844dbed3084449
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 4eadb8c9553873f43ad9435ad43fae00f57affcb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54754969"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050703"
 ---
 # <a name="devenv-command-line-switches"></a>Commutateurs de la ligne de commande de Devenv
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Devenv vous permet de définir diverses options pour l’environnement de développement intégré (IDE) et également de créer, déboguer et déployer des projets à partir de la ligne de commande. Utilisez ces commutateurs pour exécuter l’IDE à partir d’un script ou d’un fichier .bat, par exemple, un script de génération nocturne, ou pour lancer l’IDE avec une configuration particulière.  
   
 > [!NOTE]
@@ -47,24 +46,24 @@ Devenv vous permet de définir diverses options pour l’environnement de dével
   
  Les règles de syntaxe pour les commutateurs `devenv` ressemblent à celles d’autres utilitaires de ligne de commande DOS. Les règles de syntaxe suivantes s’appliquent à tous les commutateurs `devenv` et leurs arguments :  
   
--   Les commandes commencent par `devenv`.  
+- Les commandes commencent par `devenv`.  
   
--   Les commutateurs ne respectent pas la casse.  
+- Les commutateurs ne respectent pas la casse.  
   
--   Quand vous spécifiez une solution ou un projet, le premier argument est le nom du fichier solution ou projet, y compris le chemin du fichier.  
+- Quand vous spécifiez une solution ou un projet, le premier argument est le nom du fichier solution ou projet, y compris le chemin du fichier.  
   
--   Si le premier argument est un fichier qui n’est pas une solution ou un projet, ce fichier s’ouvre dans l’éditeur approprié, dans une nouvelle instance de l’IDE.  
+- Si le premier argument est un fichier qui n’est pas une solution ou un projet, ce fichier s’ouvre dans l’éditeur approprié, dans une nouvelle instance de l’IDE.  
   
--   Quand vous fournissez un nom de fichier projet au lieu d’un nom de fichier solution, une commande `devenv` recherche le dossier parent du fichier projet pour un fichier solution du même nom. Par exemple, la commande `devenv /build myproject1.vbproj` recherche le dossier parent d’un fichier solution nommé « myproject1.sln ».  
+- Quand vous fournissez un nom de fichier projet au lieu d’un nom de fichier solution, une commande `devenv` recherche le dossier parent du fichier projet pour un fichier solution du même nom. Par exemple, la commande `devenv /build myproject1.vbproj` recherche le dossier parent d’un fichier solution nommé « myproject1.sln ».  
   
     > [!NOTE]
     >  Un seul fichier solution référençant ce projet doit se trouver dans son dossier parent. Si le dossier parent ne contient aucun fichier solution référençant ce projet, ou si le dossier parent contient au moins deux fichiers solution qui le référencent, un fichier solution temporaire est créé, qui est nommé pour ce projet et y fait référence.  
   
--   Quand les chemins et les noms de fichier comportent des espaces, vous devez les placer entre guillemets doubles (""). Par exemple, "c:\project a\\".  
+- Quand les chemins et les noms de fichier comportent des espaces, vous devez les placer entre guillemets doubles (""). Par exemple, "c:\project a\\".  
   
--   Insérez un espace entre les commutateurs et les arguments de la même ligne. Par exemple, la commande **devenv /log output.txt** ouvre l’IDE et produit toutes les informations de journal de la session dans le fichier output.txt.  
+- Insérez un espace entre les commutateurs et les arguments de la même ligne. Par exemple, la commande **devenv /log output.txt** ouvre l’IDE et produit toutes les informations de journal de la session dans le fichier output.txt.  
   
--   Vous ne pouvez pas utiliser la syntaxe des critères spéciaux dans les commandes `devenv`.  
+- Vous ne pouvez pas utiliser la syntaxe des critères spéciaux dans les commandes `devenv`.  
   
 ## <a name="devenv-switches"></a>Commutateurs devenv  
  Utilisez les commutateurs de ligne de commande suivants pour afficher l’IDE et effectuer la tâche décrite.  

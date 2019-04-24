@@ -16,12 +16,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f3456ec773b233da3ef2be1dfa7731460bdf6b44
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4cc41376905dd5bd5df5711d2de3edf1ea1d04dd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948033"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085036"
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000 : Supprimer les objets avant la mise hors de portée
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,11 +46,11 @@ ms.locfileid: "58948033"
   
  Voici certaines situations où l’instruction using n’est pas suffisante pour protéger des objets IDisposable et peut provoquer CA2000 se produise.  
   
--   Retour d’un objet jetable nécessite que l’objet est construit dans un bloc try/finally en dehors d’un à l’aide de bloc.  
+- Retour d’un objet jetable nécessite que l’objet est construit dans un bloc try/finally en dehors d’un à l’aide de bloc.  
   
--   L’initialisation des membres d’un objet jetable ne doit pas être effectué dans le constructeur d’une instruction.  
+- L’initialisation des membres d’un objet jetable ne doit pas être effectué dans le constructeur d’une instruction.  
   
--   Constructeurs d’imbrication qui sont protégés uniquement par un gestionnaire d’exceptions. Par exemple :  
+- Constructeurs d’imbrication qui sont protégés uniquement par un gestionnaire d’exceptions. Par exemple :  
   
     ```  
     using (StreamReader sr = new StreamReader(new FileStream("C:\myfile.txt", FileMode.Create)))  
@@ -59,7 +59,7 @@ ms.locfileid: "58948033"
   
      provoque CA2000 parce qu’un échec dans la construction de l’objet StreamReader peut entraîner l’objet FileStream jamais en cours de fermeture.  
   
--   Objets dynamiques doivent utiliser un objet de clichés instantanés pour implémenter le modèle Dispose des objets IDisposable.  
+- Objets dynamiques doivent utiliser un objet de clichés instantanés pour implémenter le modèle Dispose des objets IDisposable.  
   
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements  
  Ne supprimez pas un avertissement de cette règle, sauf si vous avez appelé une méthode sur votre objet qui appelle `Dispose`, tel que <xref:System.IO.Stream.Close%2A>, ou si la méthode qui a déclenché l’avertissement retourne un objet IDisposable encapsule votre objet.  

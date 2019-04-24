@@ -1,5 +1,5 @@
 ---
-title: 'Comment : développer et réduire des arborescences Spy ++ | Microsoft Docs'
+title: 'Procédure : Développer et réduire des arborescences Spy ++ | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a99a221199d2e02b66fd717cdd722091bd724eea
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 786c71f568bc44eeecdd44dfd91462ad00dda445
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687599"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071185"
 ---
-# <a name="how-to-expand-and-collapse-spy-trees"></a>Comment : développer et réduire des arborescences Spy++
-Vous pouvez développer et réduire les vues de Windows, les processus et les Threads à l’aide de deux méthodes : en cliquant sur les icônes dans la fenêtre ou à l’aide de la **arborescence** menu. Le + et - icônes dans l’arborescence agissent comme ils le font dans la fenêtre de projet Visual C++.
+# <a name="how-to-expand-and-collapse-spy-trees"></a>Procédure : Développer et réduire des arborescences Spy++
+Vous pouvez développer et réduire les vues de Windows, les processus et les Threads à l’aide de deux méthodes : en cliquant sur les icônes dans la fenêtre ou à l’aide de la **arborescence** menu. Le + et - icônes dans l’arborescence agissent comme ils le font dans le visuel C++ fenêtre du projet.
 
  Le **arborescence** menu contient quatre commandes :
 
@@ -34,9 +34,9 @@ Vous pouvez développer et réduire les vues de Windows, les processus et les Th
 
 ### <a name="to-expand-or-collapse-spy-trees"></a>Pour développer ou réduire des arborescences Spy ++
 
-1.  Mettez en surbrillance un des éléments dans la vue de Windows, des processus ou Threads.
+1. Mettez en surbrillance un des éléments dans la vue de Windows, des processus ou Threads.
 
-2.  À partir de la **arborescence** menu, choisissez une du développer ou réduire des commandes.
+2. À partir de la **arborescence** menu, choisissez une du développer ou réduire des commandes.
 
 ## <a name="see-also"></a>Voir aussi
 - [Utilisation de Spy++](../debugger/using-spy-increment.md)

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 64a0fb4dbc91ff09bddf037a8ce140f134e41e43
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2e1855c64e88cdf45715654eede780aaa20d0258
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614660"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091419"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Procédure : Afficher l’onglet Développeur sur le ruban
   Pour accéder à la **développeur** onglet sur le ruban d’une application Office, vous devez le configurer pour afficher l’onglet, car il n’apparaît pas par défaut. Par exemple, vous devez afficher cet onglet pour ajouter un <xref:Microsoft.Office.Tools.Word.GroupContentControl> à une personnalisation au niveau du document pour Word.
@@ -34,9 +34,9 @@ ms.locfileid: "56614660"
 
 ## <a name="to-show-the-developer-tab"></a>Pour afficher l'onglet Développeur
 
-1.  Démarrez l'une des applications Office prises en charge dans cette rubrique. Consultez le **s’applique à :** Remarque plus haut dans cette rubrique.
+1. Démarrez l'une des applications Office prises en charge dans cette rubrique. Consultez le **s’applique à :** Remarque plus haut dans cette rubrique.
 
-2.  Sur le **fichier** , choisir le **Options** bouton.
+2. Sur le **fichier** , choisir le **Options** bouton.
 
      L’illustration suivante montre le **fichier** onglet et **Options** bouton dans Office 2010.
 
@@ -50,19 +50,19 @@ ms.locfileid: "56614660"
 
      ![Le bouton Options dans Outlook 2013 Preview](../vsto/media/vsto-office2013-optionsbutton.png "bouton Options dans Outlook 2013 Preview")
 
-3.  Dans le _ApplicationName_**Options** boîte de dialogue, sélectionnez le **personnaliser le ruban** bouton.
+3. Dans le _ApplicationName_**Options** boîte de dialogue, sélectionnez le **personnaliser le ruban** bouton.
 
      L’illustration suivante montre le **Options** boîte de dialogue et le **personnaliser le ruban** bouton dans Excel 2010. L'emplacement de ce bouton est similaire dans toutes les autres applications répertoriées dans la section « S'applique à » au début de cette rubrique.
 
      ![Bouton Personnaliser le ruban](../vsto/media/vsto-office2010-customizeribbonbutton.png "bouton le personnaliser le ruban")
 
-4.  Dans la liste des onglets principaux, sélectionnez le **développeur** case à cocher.
+4. Dans la liste des onglets principaux, sélectionnez le **développeur** case à cocher.
 
      L’illustration suivante montre le **développeur** case à cocher dans Word 2010 et [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)]. L'emplacement de cette case à cocher est similaire dans toutes les autres applications répertoriées dans la section « S'applique à » au début de cette rubrique.
 
      ![La case à cocher développeur dans la boîte de dialogue Options Word](../vsto/media/vsto-office2010-developercheckbox.png "The Developer case à cocher dans la boîte de dialogue Options Word")
 
-5.  Choisissez le **OK** bouton pour fermer la **Options** boîte de dialogue.
+5. Choisissez le **OK** bouton pour fermer la **Options** boîte de dialogue.
 
 ## <a name="see-also"></a>Voir aussi
 - [Personnalisation de l’interface utilisateur Office](../vsto/office-ui-customization.md)

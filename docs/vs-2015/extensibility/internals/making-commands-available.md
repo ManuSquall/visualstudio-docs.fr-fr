@@ -13,21 +13,21 @@ ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f709786d908d5bfe4ef4db04916801a5cd6a7366
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 78561db4bbf9517cc3fbcd5d9ac6ca36fcafbe05
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952935"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071224"
 ---
 # <a name="making-commands-available"></a>Rendre les commandes disponibles
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Lorsque plusieurs packages VS sont ajoutés à Visual Studio, l’interface utilisateur (IU) peut devenir trop avec les commandes. Vous pouvez programmer votre package afin de réduire ce problème, comme suit :  
   
--   Programme du package afin qu’il est chargé uniquement lorsqu’un utilisateur en a besoin.  
+- Programme du package afin qu’il est chargé uniquement lorsqu’un utilisateur en a besoin.  
   
--   Le package du programme afin que ses commandes sont affichées uniquement quand elles peuvent être requises dans le contexte de l’état actuel de l’environnement de développement intégré (IDE).  
+- Le package du programme afin que ses commandes sont affichées uniquement quand elles peuvent être requises dans le contexte de l’état actuel de l’environnement de développement intégré (IDE).  
   
 ## <a name="delayed-loading"></a>Chargement différé  
  La manière classique pour activer le chargement différé consiste à concevoir le VSPackage afin que ses commandes sont affichées dans l’interface utilisateur, mais le package lui-même n’est pas chargé jusqu'à ce qu’un utilisateur clique sur une des commandes. Pour ce faire, dans le fichier .vsct, créer des commandes qui n’ont aucun indicateur de commande.  
@@ -94,11 +94,11 @@ Lorsque plusieurs packages VS sont ajoutés à Visual Studio, l’interface util
 ### <a name="custom-context-guids"></a>GUID de contexte personnalisé  
  Si un contexte de la commande appropriée que GUID n’est pas déjà défini, vous pouvez définir un dans votre package Visual Studio et programmez ensuite qu’il soit actif ou inactif, en fonction des besoins pour contrôler la visibilité de vos commandes. Utilisez le <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> service :  
   
--   Inscrire le GUID de contexte (en appelant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> méthode).  
+- Inscrire le GUID de contexte (en appelant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> méthode).  
   
--   Obtenir l’état d’un contexte `GUID` (en appelant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> méthode).  
+- Obtenir l’état d’un contexte `GUID` (en appelant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> méthode).  
   
--   Activer le contexte `GUID`s et désactiver (en appelant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> méthode).  
+- Activer le contexte `GUID`s et désactiver (en appelant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> méthode).  
   
     > [!CAUTION]
     >  Assurez-vous que votre VSPackage n’affecte pas l’état de n’importe quel GUID de contexte existant, car d’autres packages VS dépendent les.  

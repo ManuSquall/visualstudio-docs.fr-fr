@@ -9,28 +9,27 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b4a0ef367be3fd2bbe79472a04437230c0b51180
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e631f73a6714cf26b55cf9907095fc322467d3cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950333"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053895"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Avertissement. Vous avez effectué certaines modifications dans la boîte de dialogue Configurer le comportement mais elles n'ont pas été appliquées.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Avertissement. Vous avez effectué certaines modifications dans la boîte de dialogue Configurer le comportement mais elles n'ont pas été appliquées. Souhaitez-vous appliquer vos modifications ?  
   
  Le **configurer le comportement** boîte de dialogue vous permet de configurer le comportement Insert, Update et Delete pour toutes les classes disponibles. Ce message apparaît quand vous sélectionnez une nouvelle combinaison de **Classe** et de **Comportement** et que la modification précédente n’a pas encore été appliquée.  
   
 ### <a name="to-apply-the-change-and-continue"></a>Pour appliquer la modification et continuer  
   
--   Cliquez sur **Oui** pour appliquer la modification à la **Classe** et au **Comportement** sélectionnés.  
+- Cliquez sur **Oui** pour appliquer la modification à la **Classe** et au **Comportement** sélectionnés.  
   
 ### <a name="to-cancel-the-previous-change-and-continue"></a>Pour annuler le changement précédent et continuer  
   
--   Cliquez sur **Non** pour annuler la modification de la **Classe** et du **Comportement** sélectionnés.  
+- Cliquez sur **Non** pour annuler la modification de la **Classe** et du **Comportement** sélectionnés.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

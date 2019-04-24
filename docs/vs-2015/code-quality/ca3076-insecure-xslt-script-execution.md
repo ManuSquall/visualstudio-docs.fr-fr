@@ -8,12 +8,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d82414b94caee2f1ccbb823e94d9168e5502df8c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 903074787169a8889db89a85d65129c1b97c13e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938246"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096957"
 ---
 # <a name="ca3076-insecure-xslt-script-execution"></a>CA3076 : Exécution non sécurisée de script XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ ms.locfileid: "58938246"
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
--   Remplacez l’argument XsltSettings non sécurisé par XsltSettings.<xref:System.Xml.Xsl.XsltSettings.Default%2A> ou avec une instance qui a désactivé l’exécution de script et de fonction document.
+- Remplacez l’argument XsltSettings non sécurisé par XsltSettings.<xref:System.Xml.Xsl.XsltSettings.Default%2A> ou avec une instance qui a désactivé l’exécution de script et de fonction document.
 
--   Remplacez l’argument <xref:System.Xml.XmlResolver> par la valeur null ou une instance de <xref:System.Xml.XmlSecureResolver> .
+- Remplacez l’argument <xref:System.Xml.XmlResolver> par la valeur null ou une instance de <xref:System.Xml.XmlSecureResolver> .
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Sauf si vous êtes sûr que l’entrée provient d’une source fiable, ne supprimez aucune règle de cet avertissement.

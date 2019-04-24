@@ -10,12 +10,12 @@ ms.assetid: 3f59a285-6c33-4ae3-a4fb-ec1f5aa21bd1
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 589e392530238249eefb789170f4f986b24a8551
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ae47942e9b686ac02623e4b3f2d0681babf879f9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948747"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084026"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>Managed Extensibility Framework (MEF) dans l’éditeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,25 +84,25 @@ internal IClassificationTypeRegistryService ClassificationRegistry;
   
 #### <a name="to-consume-editor-functionality-from-a-mef-component-part"></a>Pour utiliser la fonctionnalité d’éditeur à partir d’un composant MEF  
   
-1.  Ajoutez des références à System.Composition.ComponentModel.dll, qui est dans le global assembly cache (GAC), et pour les assemblys de l’éditeur.  
+1. Ajoutez des références à System.Composition.ComponentModel.dll, qui est dans le global assembly cache (GAC), et pour les assemblys de l’éditeur.  
   
-2.  Ajouter les informations pertinentes à l’aide d’instructions.  
+2. Ajouter les informations pertinentes à l’aide d’instructions.  
   
     ```  
     using System.ComponentModel.Composition;  
     using Microsoft.VisualStudio.Text;  
     ```  
   
-3.  Ajouter le `[Import]` attribut à votre interface de service, comme suit.  
+3. Ajouter le `[Import]` attribut à votre interface de service, comme suit.  
   
     ```  
     [Import]  
     ITextBufferFactoryService textBufferService;  
     ```  
   
-4.  Lorsque vous avez obtenu le service, vous pouvez utiliser l’un de ses composants.  
+4. Lorsque vous avez obtenu le service, vous pouvez utiliser l’un de ses composants.  
   
-5.  Lorsque vous avez compilé votre assembly, placez-le dans le... Dossier \Common7\IDE\Components\ de votre installation de Visual Studio.  
+5. Lorsque vous avez compilé votre assembly, placez-le dans le... Dossier \Common7\IDE\Components\ de votre installation de Visual Studio.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Points d’extension du service de langage et de l’éditeur](../extensibility/language-service-and-editor-extension-points.md)

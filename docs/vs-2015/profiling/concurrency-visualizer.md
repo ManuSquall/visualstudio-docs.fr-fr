@@ -16,12 +16,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 23d07f3ca3585030317a97f941d2b9ca0c36f9e8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7c86228d21323d1928acb9fc94582fbb9d320248
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779115"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084841"
 ---
 # <a name="concurrency-visualizer"></a>Visualiseur concurrentiel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ REMARQUE]
 >  Le visualiseur concurrentiel est une extension facultative de Visual Studio. Vous pouvez télécharger le visualiseur concurrentiel et les Outils de collecte du visualiseur concurrentiel à partir des liens suivants :  
 > 
 > - Télécharger l’extension              [Visualiseur concurrentiel](https://visualstudiogallery.msdn.microsoft.com/a6c24ce9-beec-4545-9261-293061436ee9) .  
->   -   Télécharger les              [Outils de collecte du visualiseur concurrentiel pour Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103).  
+>   - Télécharger les              [Outils de collecte du visualiseur concurrentiel pour Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103).  
 > 
 >   [L’utilitaire en ligne de commande du visualiseur concurrentiel (CVCollectionCmd)](../profiling/concurrency-visualizer-command-line-utility-cvcollectioncmd.md) permet de recueillir des traces à partir de la ligne de commande que vous pouvez afficher dans le visualiseur concurrentiel pour Visual Studio 2015. Vous pouvez utiliser cet outil sur des ordinateurs sur lesquels Visual Studio n’est pas installé.  
   

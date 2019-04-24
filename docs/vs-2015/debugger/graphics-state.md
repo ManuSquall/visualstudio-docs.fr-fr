@@ -11,12 +11,12 @@ caps.latest.revision: 5
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 670ad5e28dad02c59ac20dee8cab75a52ae650ce
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 485969b40fdcedd2ec8835de8d9c9a699aba9e79
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947995"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091783"
 ---
 # <a name="graphics-state"></a>État graphique
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ La fenêtre État dans Visual Studio Graphics Diagnostics vous permet de compren
   
 ##### <a name="to-change-the-state-view"></a>Pour modifier l'affichage des états  
   
--   Dans la fenêtre État, dans le coin supérieur gauche juste en dessous de la barre de titre, choisissez le bouton qui correspond au style d'affichage d'état à utiliser.  
+- Dans la fenêtre État, dans le coin supérieur gauche juste en dessous de la barre de titre, choisissez le bouton qui correspond au style d'affichage d'état à utiliser.  
   
-    -   **Afficher la vue des états de l’entrée API**  
+    - **Afficher la vue des états de l’entrée API**  
   
-    -   **Afficher la vue des états logiques**  
+    - **Afficher la vue des états logiques**  
   
-    -   **Afficher la vue des états épinglés**  
+    - **Afficher la vue des états épinglés**  
   
 > [!IMPORTANT]
 >  Vous devez épingler l’état dans **Afficher la vue des états de l’entrée API** ou dans **Afficher la vue des états logiques** pour qu’il s’affiche dans **Afficher la vue des états épinglés**.  
@@ -67,8 +67,8 @@ La fenêtre État dans Visual Studio Graphics Diagnostics vous permet de compren
   
 ##### <a name="to-pin-state-in-place"></a>Pour épingler l'état sur place  
   
-1.  Dans la fenêtre État, recherchez l'état qui vous intéresse. Vous devrez peut-être développer l'état de niveau supérieur pour trouver les détails qui vous intéressent.  
+1. Dans la fenêtre État, recherchez l'état qui vous intéresse. Vous devrez peut-être développer l'état de niveau supérieur pour trouver les détails qui vous intéressent.  
   
-2.  Placez le curseur sur l'état qui vous intéresse. Une icône d'épingle s'affiche à gauche de l'élément d'état.  
+2. Placez le curseur sur l'état qui vous intéresse. Une icône d'épingle s'affiche à gauche de l'élément d'état.  
   
-3.  Choisissez l'icône d'épingle pour épingler l'élément d'état sur place.
+3. Choisissez l'icône d'épingle pour épingler l'élément d'état sur place.

@@ -1,5 +1,5 @@
 ---
-title: 'Comment : installer les composants requis avec une Application ClickOnce | Microsoft Docs'
+title: 'Procédure : Installer les composants requis avec une Application ClickOnce | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,20 +16,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eadf78a2d72d94fa7d1f613e26b8fadc36a1c805
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: b0535ec606722ec162804718e7ee14bdd4714f4b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633419"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077008"
 ---
-# <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Guide pratique pour installer les composants requis avec une application ClickOnce
+# <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Procédure : Installer des prérequis avec une application ClickOnce
 Tous les [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applications requièrent que la version correcte du .NET Framework est installée sur un ordinateur avant de pouvoir exécuter ; de nombreuses applications ont également autres conditions préalables requises. Lorsque vous publiez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application, vous pouvez choisir un ensemble de composants requis à empaqueter avec votre application. Au moment de l’installation, une vérification sera effectuée pour chaque composant requis déterminer s’il existe déjà ; Si pas il sera installé avant d’installer le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application.
 
  Au lieu d’empaquetage et publication des conditions préalables, vous pouvez également spécifier un emplacement de téléchargement pour les composants. Par exemple, au lieu d’inclure les composants requis avec chaque application que vous publiez, vous pouvez utiliser un partage de fichiers centralisé ou un emplacement Web qui contient les programmes d’installation pour tous vos composants requis, au moment de l’installation, les composants seront téléchargés et installer à partir de cet emplacement.
 
 > [!IMPORTANT]
->  Vous devez ajouter des packages de programme d’installation préalable sur votre ordinateur de développement avant de publier votre premier [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application. Pour plus d’informations, consultez [Comment : inclure les composants requis avec une Application ClickOnce](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md).
+>  Vous devez ajouter des packages de programme d’installation préalable sur votre ordinateur de développement avant de publier votre premier [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application. Pour plus d'informations, voir [Procédure : Inclure des prérequis dans une application ClickOnce](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md).
 
  Conditions préalables sont gérés dans le **prérequis** boîte de dialogue, accessible à partir de la **publier** volet de la **Concepteur de projets**.
 
@@ -38,31 +38,31 @@ Tous les [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] appli
 
 ### <a name="to-specify-prerequisites-to-install-with-a-clickonce-application"></a>Pour spécifier les composants requis à installer avec une application ClickOnce
 
-1.  Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.
+1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.
 
-2.  Sélectionnez le **publier** volet.
+2. Sélectionnez le **publier** volet.
 
-3.  Cliquez sur le **prérequis** bouton pour ouvrir la **conditions préalables** boîte de dialogue.
+3. Cliquez sur le **prérequis** bouton pour ouvrir la **conditions préalables** boîte de dialogue.
 
-4.  Dans la boîte de dialogue **Composants requis** , vérifiez que la case à cocher **Créer un programme d'installation des composants requis** est activée.
+4. Dans la boîte de dialogue **Composants requis** , vérifiez que la case à cocher **Créer un programme d'installation des composants requis** est activée.
 
-5.  Dans le **prérequis** liste, vérifiez les composants que vous souhaitez installer, puis cliquez sur **OK**.
+5. Dans le **prérequis** liste, vérifiez les composants que vous souhaitez installer, puis cliquez sur **OK**.
 
      Les composants sélectionnés seront empaquetés et publiés en même temps que votre application.
 
 ### <a name="to-specify-a-different-download-location-for-prerequisites"></a>Pour spécifier un autre emplacement de téléchargement pour les composants requis
 
-1.  Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.
+1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.
 
-2.  Sélectionnez le **publier** volet.
+2. Sélectionnez le **publier** volet.
 
-3.  Cliquez sur le **prérequis** bouton pour ouvrir la **conditions préalables** boîte de dialogue.
+3. Cliquez sur le **prérequis** bouton pour ouvrir la **conditions préalables** boîte de dialogue.
 
-4.  Dans la boîte de dialogue **Composants requis** , vérifiez que la case à cocher **Créer un programme d'installation des composants requis** est activée.
+4. Dans la boîte de dialogue **Composants requis** , vérifiez que la case à cocher **Créer un programme d'installation des composants requis** est activée.
 
-5.  Dans le **spécifier l’emplacement d’installation des composants requis** section, sélectionnez **télécharger les composants requis depuis l’emplacement suivant**.
+5. Dans le **spécifier l’emplacement d’installation des composants requis** section, sélectionnez **télécharger les composants requis depuis l’emplacement suivant**.
 
-6.  Sélectionnez un emplacement dans la liste déroulante, ou entrez une URL, un chemin d’accès de fichier ou un emplacement FTP, puis cliquez sur **OK.**
+6. Sélectionnez un emplacement dans la liste déroulante, ou entrez une URL, un chemin d’accès de fichier ou un emplacement FTP, puis cliquez sur **OK.**
 
     > [!NOTE]
     >  Il se peut que vous devez vous assurer que les programmes d’installation pour les composants spécifiés existent à l’emplacement spécifié.

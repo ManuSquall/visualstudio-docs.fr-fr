@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 60231333a084ef62e069f3e3aba9bee8bd25daed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4ade2b369cd1c9e0371acacfcd63b06a2d89e58a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953279"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066702"
 ---
 # <a name="how-to-start-spy"></a>Procédure : Démarrer Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Vous pouvez démarrer Spy ++ à partir de Visual Studio ou à une invite de comm
   
 ### <a name="to-start-spy-from-visual-studio"></a>Pour démarrer Spy ++ à partir de Visual Studio  
   
--   Sur le **outils** menu, cliquez sur **Spy ++**.  
+- Sur le **outils** menu, cliquez sur **Spy ++**.  
   
      Étant donné que Spy ++ s’exécute indépendamment, après le démarrage, vous pouvez fermer Visual Studio.  
   
@@ -39,9 +39,9 @@ Vous pouvez démarrer Spy ++ à partir de Visual Studio ou à une invite de comm
   
 ### <a name="to-start-spy-at-a-command-prompt"></a>Pour démarrer Spy ++ à une invite de commandes  
   
-1.  Dans une fenêtre d’invite de commandes, accédez au dossier qui contient spyxx.exe. En règle générale, le chemin d’accès de ce dossier est... \\ *Dossier d’installation de visual Studio*\Common7\Tools\\.  
+1. Dans une fenêtre d’invite de commandes, accédez au dossier qui contient spyxx.exe. En règle générale, le chemin d’accès de ce dossier est... \\ *Dossier d’installation de visual Studio*\Common7\Tools\\.  
   
-2.  Type **spyxx.exe** puis appuyez sur ENTRÉE.  
+2. Type **spyxx.exe** puis appuyez sur ENTRÉE.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Utilisation de Spy++](../debugger/using-spy-increment.md)   

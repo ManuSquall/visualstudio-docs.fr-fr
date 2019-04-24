@@ -10,12 +10,12 @@ ms.date: 06/28/2018
 ms.author: mikejo
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: 049d8500f9f3f2a8695d686484ea48f84f2e034b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3790d370e969a913db31c3bab139b2c42ef97d22
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950437"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105425"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>Configurer les diagnostics pour Azure Cloud Services et les machines virtuelles Azure
 Quand vous devez résoudre les problèmes d’un service cloud ou d’une machine virtuelle Azure, vous pouvez utiliser Visual Studio pour configurer plus facilement les diagnostics Azure. Les diagnostics capturent les données système et les données de journalisation sur les machines virtuelles et sur les instances de machine virtuelle qui exécutent votre service cloud. Les données de diagnostic sont transférées à un compte de stockage que vous choisissez. Pour plus d’informations sur la journalisation des diagnostics dans Azure, consultez [Activer la journalisation des diagnostics pour les applications web dans Azure App Service](/azure/app-service/web-sites-enable-diagnostic-log).
@@ -150,12 +150,13 @@ Si vous utilisez Azure SDK 2.6 ou ultérieur et que vous voulez spécifier une s
 
 Si vous utilisez Azure SDK 2.5 et que vous voulez spécifier une source de données personnalisée, vous pouvez l’ajouter à la section `WindowsEventLog` du fichier diagnostics.wadcfgx, comme dans l’exemple suivant :
 
-```
+```xml
 <WindowsEventLog scheduledTransferPeriod="PT1M">
    <DataSource name="Application!*" />
    <DataSource name="CustomDataSource!*" />
 </WindowsEventLog>
 ```
+
 ### <a name="performance-counters"></a>Compteurs de performance
 Les informations d’un compteur de performances peuvent vous aider à localiser des goulets d’étranglement système et à affiner les performances des applications et du système. Pour plus d’informations, consultez [Créer et utiliser des compteurs de performances dans une application Azure](https://msdn.microsoft.com/library/azure/hh411542.aspx) . Pour capturer des compteurs de performances, cochez la case **Activer le transfert des compteurs de performances**. Pour augmenter ou diminuer l’intervalle entre les transferts des journaux des événements vers votre compte de stockage, changez la valeur de **Période de transfert (min)**. Activez les cases à cocher correspondant aux compteurs de performances que vous voulez suivre.
 

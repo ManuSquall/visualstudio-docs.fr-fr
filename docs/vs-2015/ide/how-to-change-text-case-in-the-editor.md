@@ -12,14 +12,14 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 167e4f4b8977ed847823fb6db101f207142d6b4d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 5c6743f7466f1b6d2e17c1dbf9da523c87e63e77
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799741"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060317"
 ---
-# <a name="how-to-change-text-case-in-the-editor"></a>Guide pratique pour modifier la casse du texte dans l'Éditeur
+# <a name="how-to-change-text-case-in-the-editor"></a>Procédure : Modifier la casse du texte dans l’éditeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez utiliser des commandes de menu ou des raccourcis clavier pour mettre le texte sélectionné tout en majuscules ou tout en minuscules.  
@@ -31,11 +31,11 @@ Vous pouvez utiliser des commandes de menu ou des raccourcis clavier pour mettre
   
 #### <a name="to-switch-text-to-upper-case"></a>Pour mettre le texte en majuscules  
   
-1.  Sélectionnez le texte à convertir.  
+1. Sélectionnez le texte à convertir.  
   
-2.  Dans le menu **Edition**, sélectionnez **Options avancées**.  
+2. Dans le menu **Edition**, sélectionnez **Options avancées**.  
   
-3.  Pour mettre le texte tout en majuscules, choisissez **Majuscules** ou appuyez sur **Ctrl**+**Maj**+**U**.  
+3. Pour mettre le texte tout en majuscules, choisissez **Majuscules** ou appuyez sur **Ctrl**+**Maj**+**U**.  
   
      — ou —  
   

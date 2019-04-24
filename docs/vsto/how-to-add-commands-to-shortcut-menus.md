@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dac53bc06cb06200dd61adca27fa4894c3c4d8dc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3b20b10a37908e2c9744aeac63bb3eda091da478
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598178"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074490"
 ---
 # <a name="how-to-add-commands-to-shortcut-menus"></a>Procédure : Ajouter des commandes aux menus contextuels
   Cette rubrique montre comment ajouter des commandes à un menu contextuel dans une application Office à l’aide un VSTO Add-in.
@@ -27,26 +27,26 @@ ms.locfileid: "56598178"
 
 ### <a name="to-add-commands-to-shortcut-menus-in-office"></a>Pour ajouter des commandes à des menus contextuels dans Office
 
-1.  Ajoutez un élément **Ribbon XML** à un projet au niveau du document ou de complément VSTO. Pour plus d'informations, voir [Procédure : Commencer la personnalisation du ruban](../vsto/how-to-get-started-customizing-the-ribbon.md). Vers l'avant
+1. Ajoutez un élément **Ribbon XML** à un projet au niveau du document ou de complément VSTO. Pour plus d'informations, voir [Procédure : Commencer la personnalisation du ruban](../vsto/how-to-get-started-customizing-the-ribbon.md). Vers l'avant
 
-2.  Dans l’**Explouateur de solutions**, sélectionnez **ThisAddin.cs** ou **ThisAddin.vb**.
+2. Dans l’**Explouateur de solutions**, sélectionnez **ThisAddin.cs** ou **ThisAddin.vb**.
 
-3.  Dans la barre de menus, sélectionnez **Afficher** > **Code**.
+3. Dans la barre de menus, sélectionnez **Afficher** > **Code**.
 
      Le fichier de classe **ThisAddin** s’ouvre dans l’éditeur de code.
 
-4.  Ajoutez le code suivant à la classe **ThisAddin** . Ce code substitue la méthode `CreateRibbonExtensibilityObject` et retourne la classe Ribbon XML à l'application Office.
+4. Ajoutez le code suivant à la classe **ThisAddin** . Ce code substitue la méthode `CreateRibbonExtensibilityObject` et retourne la classe Ribbon XML à l'application Office.
 
      [!code-csharp[Trin_WordAddIn_Menus#1](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#1)]
      [!code-vb[Trin_WordAddIn_Menus#1](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#1)]
 
-5.  Dans l’ **Explorateur de solutions**, sélectionnez le fichier XML de ruban. Par défaut, le fichier XML du ruban est nommé *Ribbon1.xml*.
+5. Dans l’ **Explorateur de solutions**, sélectionnez le fichier XML de ruban. Par défaut, le fichier XML du ruban est nommé *Ribbon1.xml*.
 
-6.  Dans la barre de menus, sélectionnez **Afficher** > **Code**.
+6. Dans la barre de menus, sélectionnez **Afficher** > **Code**.
 
      Le fichier XML de ruban s’ouvre dans l’éditeur de code.
 
-7.  Dans l’éditeur de code, ajoutez le code XML qui décrit le menu contextuel et le contrôle à ajouter au menu contextuel.
+7. Dans l’éditeur de code, ajoutez le code XML qui décrit le menu contextuel et le contrôle à ajouter au menu contextuel.
 
      L’exemple suivant ajoute un bouton, un menu et un contrôle de galerie au menu contextuel d’un document Word. L’ID du contrôle de ce menu contextuel est ContextMenuText. Pour obtenir la liste complète de contrôle Office 2010 ID, consultez [les fichiers d’aide Office 2010 : Identificateurs de contrôle interface Office fluent utilisateur](http://go.microsoft.com/fwlink/?LinkID=181052).
 
@@ -70,7 +70,7 @@ ms.locfileid: "56598178"
     </customUI>
     ```
 
-8.  Dans l’ **Explorateur de solutions**, choisissez **MyRibbon.cs** ou **MyRibbon.vb**.
+8. Dans l’ **Explorateur de solutions**, choisissez **MyRibbon.cs** ou **MyRibbon.vb**.
 
 9. Ajoutez une méthode de rappel à la `Ribbon1` classe pour chaque contrôle que vous souhaitez gérer.
 

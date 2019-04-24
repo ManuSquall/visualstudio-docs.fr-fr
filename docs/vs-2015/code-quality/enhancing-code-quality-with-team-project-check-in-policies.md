@@ -12,12 +12,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 02c6b2912d828f566236aa8f24868ae9314d743e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c7b95155db18e9aa879b11cadf21b33cb0189ff9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938248"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103366"
 ---
 # <a name="enhancing-code-quality-with-team-project-check-in-policies"></a>Amélioration de la qualité du code avec des stratégies d’archivage de projet d’équipe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,13 +26,13 @@ Quand vous utilisez le contrôle de version Team Foundation, vous pouvez créer 
   
  Vous pouvez spécifier les stratégies d’archivage de projet d’équipe suivantes :  
   
--   **Builds**: Nécessite que les arrêts de build qui ont été créés pendant une génération soient résolus avant un nouvel archivage.  
+- **Builds**: Nécessite que les arrêts de build qui ont été créés pendant une génération soient résolus avant un nouvel archivage.  
   
--   **Commentaires de l’ensemble de modifications**: Nécessite que les utilisateurs fassent des commentaires lors de la vérification des modifications.  
+- **Commentaires de l’ensemble de modifications**: Nécessite que les utilisateurs fassent des commentaires lors de la vérification des modifications.  
   
--   **Analyse du code**: Exige que l’analyse du code soit exécutée avant l’archivage.  
+- **Analyse du code**: Exige que l’analyse du code soit exécutée avant l’archivage.  
   
--   **Éléments de travail**: Exige qu’un ou plusieurs éléments de travail soient associés à l’archivage.  
+- **Éléments de travail**: Exige qu’un ou plusieurs éléments de travail soient associés à l’archivage.  
   
 > [!IMPORTANT]
 >  Pour utiliser les stratégies d’archivage, vous devez être connecté à [!INCLUDE[vststfsLong](../includes/vststfslong-md.md)].  

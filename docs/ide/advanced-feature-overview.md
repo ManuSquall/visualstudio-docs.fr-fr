@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 416c5e62cf4984219be79572b3b2929a86c29590
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: f7a9fdb7d6f17df009920e1677c615cb41df7f6c
+ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790535"
+ms.lasthandoff: 04/11/2019
+ms.locfileid: "59504300"
 ---
 # <a name="features-of-visual-studio"></a>Fonctionnalités de Visual Studio
 
@@ -100,7 +100,7 @@ L’**Explorateur d’objets SQL Server** de Visual Studio offre une vue des obj
 
 ## <a name="debug-test-and-improve-your-code"></a>Déboguer, tester et améliorer votre code
 
-Lorsque vous écrivez du code, vous devez l’exécuter, tester ses performances et rechercher les bogues. Le système de débogage de pointe de Visual Studio vous permet de déboguer du code en cours d’exécution dans votre projet local, sur un appareil distant ou sur un [émulateur d’appareil](../cross-platform/visual-studio-emulator-for-android.md). Vous pouvez parcourir le code instruction par instruction et en examiner les variables. Vous pouvez définir des points d’arrêt qui sont atteints seulement quand une condition spécifiée a la valeur true. Vous pouvez gérer les options de débogage dans l’éditeur de code lui-même, pour ne pas avoir à quitter votre code. Pour en savoir plus sur le processus de débogage de Visual Studio, consultez [Visite guidée des fonctionnalités de débogage](../debugger/debugger-feature-tour.md).
+Lorsque vous écrivez du code, vous devez l’exécuter, tester ses performances et rechercher les bogues. Le système de débogage de pointe de Visual Studio vous permet de déboguer du code en cours d’exécution dans votre projet local, sur un appareil distant ou sur un [émulateur d’appareil](../cross-platform/visual-studio-emulator-for-android.md). Vous pouvez parcourir le code instruction par instruction et en examiner les variables. Vous pouvez définir des points d’arrêt qui sont atteints seulement quand une condition spécifiée a la valeur true. Vous pouvez gérer les options de débogage dans l’éditeur de code lui-même, pour ne pas avoir à quitter votre code. Pour en savoir plus sur le processus de débogage de Visual Studio, consultez [Visite guidée du débogueur](../debugger/debugger-feature-tour.md).
 
 Pour en savoir plus sur l’amélioration des performances de vos applications, consultez les fonctionnalités de [profilage](../profiling/profiling-feature-tour.md) de Visual Studio.
 
@@ -139,5 +139,5 @@ Pour en savoir plus sur l’extension de Visual Studio, consultez [Étendre l’
 ## <a name="see-also"></a>Voir aussi
 
 - [Vue d’ensemble de l’IDE de Visual Studio](../get-started/visual-studio-ide.md)
-- [Nouveautés dans Visual Studio 2017](../ide/whats-new-visual-studio-2017.md)
+- [Nouveautés de Visual Studio 2017](../ide/whats-new-visual-studio-2017.md)
 - [Nouveautés de Visual Studio 2019](../ide/whats-new-visual-studio-2019.md)

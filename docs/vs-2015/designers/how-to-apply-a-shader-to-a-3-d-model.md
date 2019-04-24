@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cde839deb71358936410c4e4ca4269d3ce2ee88f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a55c1e71242e59c04066c09efa2375c4bafc485b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793463"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094775"
 ---
 # <a name="how-to-apply-a-shader-to-a-3-d-model"></a>Procédure : Appliquer un nuanceur à un modèle 3D
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Ce document indique comment utiliser l’éditeur de modèle pour appliquer un n
   
  Ce document illustre cette activité :  
   
--   Application d’un nuanceur à un modèle 3D  
+- Application d’un nuanceur à un modèle 3D  
   
 ## <a name="applying-a-shader-to-a-3-d-model"></a>Application d’un nuanceur à un modèle 3D  
  Vous pouvez appliquer un effet de nuanceur à un modèle 3D pour lui donner une apparence intéressante.  
@@ -44,6 +44,6 @@ Ce document indique comment utiliser l’éditeur de modèle pour appliquer un n
   
 ## <a name="see-also"></a>Voir aussi  
  [Guide pratique pour Créer un modèle 3D de base](../designers/how-to-create-a-basic-3-d-model.md)   
- [Comment : créer un nuanceur de couleur de base](../designers/how-to-create-a-basic-color-shader.md)   
+ [Guide pratique pour Créer un nuanceur de couleur de base](../designers/how-to-create-a-basic-color-shader.md)   
  [Éditeur de modèle](../designers/model-editor.md)   
  [Concepteur Shader](../designers/shader-designer.md)

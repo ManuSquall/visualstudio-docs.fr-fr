@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 340dc798cdff3276df78b6cbf13065f7e769cb23
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: acba0174fde52886d3be7ec6288148171fe40cca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763451"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104978"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Création d'applications en langues bidirectionnelles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,53 +30,53 @@ Vous pouvez utiliser Visual Studio pour créer des applications qui affichent co
   
 ## <a name="types-of-application-that-support-bi-directional-languages"></a>Types d’applications qui prennent en charge les langues bidirectionnelles  
   
-1.  Applications Windows. Vous pouvez créer des applications entièrement bidirectionnelles prenant en charge le texte bidirectionnel, l’ordre de lecture de droite à gauche et la mise en miroir (c’est-à-dire l’inversement de la disposition des fenêtres, des menus, des boîtes de dialogue, etc.). À l’exception de la mise en miroir, ces fonctionnalités sont disponibles par défaut ou en tant que paramètres de propriété. La mise en miroir est prise en charge par défaut pour certaines fonctionnalités, telles que les boîtes de message. Dans d’autres cas, vous devez implémenter la mise en miroir dans votre code. Pour plus d’informations, consultez [Prise en charge bidirectionnelle pour les applications Windows Forms](http://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2).  
+1. Applications Windows. Vous pouvez créer des applications entièrement bidirectionnelles prenant en charge le texte bidirectionnel, l’ordre de lecture de droite à gauche et la mise en miroir (c’est-à-dire l’inversement de la disposition des fenêtres, des menus, des boîtes de dialogue, etc.). À l’exception de la mise en miroir, ces fonctionnalités sont disponibles par défaut ou en tant que paramètres de propriété. La mise en miroir est prise en charge par défaut pour certaines fonctionnalités, telles que les boîtes de message. Dans d’autres cas, vous devez implémenter la mise en miroir dans votre code. Pour plus d’informations, consultez [Prise en charge bidirectionnelle pour les applications Windows Forms](http://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2).  
   
-2.  Applications web. Les services web prennent en charge l’envoi et la réception de texte UTF-8 et Unicode. Ils sont donc adaptés aux applications qui impliquent des langues bidirectionnelles. Les applications web clientes s’appuient sur les navigateurs pour leur interface utilisateur. Le degré de prise en charge bidirectionnelle d’une application web dépend donc du degré de prise en charge du navigateur. Dans Visual Studio, vous pouvez créer des applications avec prise en charge de l’arabe ou de l’hébreu, de l’ordre de lecture de droite à gauche, de l’encodage des fichiers et des paramètres de culture locale. Pour plus d’informations, consultez [Prise en charge bidirectionnelle pour les applications web ASP.NET](http://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03).  
+2. Applications web. Les services web prennent en charge l’envoi et la réception de texte UTF-8 et Unicode. Ils sont donc adaptés aux applications qui impliquent des langues bidirectionnelles. Les applications web clientes s’appuient sur les navigateurs pour leur interface utilisateur. Le degré de prise en charge bidirectionnelle d’une application web dépend donc du degré de prise en charge du navigateur. Dans Visual Studio, vous pouvez créer des applications avec prise en charge de l’arabe ou de l’hébreu, de l’ordre de lecture de droite à gauche, de l’encodage des fichiers et des paramètres de culture locale. Pour plus d’informations, consultez [Prise en charge bidirectionnelle pour les applications web ASP.NET](http://msdn.microsoft.com/library/5576f9b1-9b86-41ef-8354-092d366bcd03).  
   
-3.  Les applications consoles. Les applications console ne prennent pas en charge le texte en langue bidirectionnelle. Cela est dû à la façon dont Windows fonctionne avec les applications console.  
+3. Les applications consoles. Les applications console ne prennent pas en charge le texte en langue bidirectionnelle. Cela est dû à la façon dont Windows fonctionne avec les applications console.  
   
 ## <a name="visual-studio-features-that-are-fully-supported"></a>Fonctionnalités de Visual Studio qui sont entièrement prises en charge  
  Dans Visual Studio, au moment du design, vous pouvez utiliser les langues bidirectionnelles des façons suivantes :  
   
--   **Saisie de texte** Visual Studio prend en charge le format Unicode. Par conséquent, si votre système est configuré d’après les paramètres régionaux et la langue d’entrée souhaités, vous pouvez saisir du texte en arabe ou en hébreu (la prise en charge de l’arabe comprend les signes kachidé et les signes diacritiques).  
+- **Saisie de texte** Visual Studio prend en charge le format Unicode. Par conséquent, si votre système est configuré d’après les paramètres régionaux et la langue d’entrée souhaités, vous pouvez saisir du texte en arabe ou en hébreu (la prise en charge de l’arabe comprend les signes kachidé et les signes diacritiques).  
   
--   **Noms d’objets** Vous pouvez utiliser les langues bidirectionnelles pour attribuer des noms aux solutions, projets, fichiers, dossiers, etc. Dans le code, vous pouvez utiliser les langues bidirectionnelles pour les noms de variables, de classes, d’objets, d’attributs, de métadonnées et d’autres éléments.  
+- **Noms d’objets** Vous pouvez utiliser les langues bidirectionnelles pour attribuer des noms aux solutions, projets, fichiers, dossiers, etc. Dans le code, vous pouvez utiliser les langues bidirectionnelles pour les noms de variables, de classes, d’objets, d’attributs, de métadonnées et d’autres éléments.  
   
--   **Encodage des fichiers** Vous pouvez enregistrer et ouvrir des fichiers avec un encodage Unicode ou spécifique à une langue. Pour plus d’informations, consultez [Guide pratique pour enregistrer et ouvrir des fichiers avec encodage](../ide/how-to-save-and-open-files-with-encoding.md).  
+- **Encodage des fichiers** Vous pouvez enregistrer et ouvrir des fichiers avec un encodage Unicode ou spécifique à une langue. Pour plus d'informations, voir [Procédure : Enregistrer et ouvrir des fichiers avec encodage](../ide/how-to-save-and-open-files-with-encoding.md).  
   
 ## <a name="features-with-limited-or-no-support"></a>Fonctionnalités avec prise en charge limitée et fonctionnalités non prises en charge  
  Certaines fonctionnalités courantes des applications pour langues bidirectionnelles ne sont pas entièrement prises en charge par Visual Studio, voire pas du tout. Elles incluent notamment :  
   
--   **Ordre de lecture de droite à gauche** Par défaut, les contrôles de saisie de texte que vous utilisez dans Visual Studio utilisent l’ordre de lecture de gauche à droite. Dans la plupart des cas, vous pouvez utiliser des méthodes Windows standard pour changer l’ordre de lecture. Par exemple, vous pouvez appuyer sur Ctrl+Maj droite pour que la fenêtre Propriétés prenne en charge l’ordre de lecture de droite à gauche.  
+- **Ordre de lecture de droite à gauche** Par défaut, les contrôles de saisie de texte que vous utilisez dans Visual Studio utilisent l’ordre de lecture de gauche à droite. Dans la plupart des cas, vous pouvez utiliser des méthodes Windows standard pour changer l’ordre de lecture. Par exemple, vous pouvez appuyer sur Ctrl+Maj droite pour que la fenêtre Propriétés prenne en charge l’ordre de lecture de droite à gauche.  
   
      Cependant, l’ordre de lecture de droite à gauche n’est pas pris en charge partout dans Visual Studio. Voici certaines exceptions :  
   
-    -   Les cases à cocher, listes déroulantes et autres contrôles des boîtes de dialogue Visual Studio utilisent toujours l’ordre de lecture de gauche à droite.  
+    - Les cases à cocher, listes déroulantes et autres contrôles des boîtes de dialogue Visual Studio utilisent toujours l’ordre de lecture de gauche à droite.  
   
-    -   L’éditeur de code (et éditeur de texte) ne prend pas en charge l’ordre de lecture de droite à gauche. Vous pouvez entrer du texte dans une langue bidirectionnelle, mais l’ordre de lecture restera de gauche à droite.  
+    - L’éditeur de code (et éditeur de texte) ne prend pas en charge l’ordre de lecture de droite à gauche. Vous pouvez entrer du texte dans une langue bidirectionnelle, mais l’ordre de lecture restera de gauche à droite.  
   
 ## <a name="naming-things-using-arabic-or-hebrew-text"></a>Attributions de noms avec du texte en arabe ou en hébreu  
  Vous pouvez utiliser du texte en arabe ou en hébreu pour attribuer des noms aux dossiers, variables ou autres objets. Quand vous utilisez l’arabe, vous pouvez utiliser les caractères arabes, y compris les signes kachidé et les signes diacritiques.  
   
  Les éléments suivants peuvent être nommés en arabe et en hébreu, et sont gérés correctement par Visual Studio :  
   
--   Les noms de solutions, de projets et de fichiers, y compris les dossiers que vous incluez dans le chemin du projet. L’Explorateur de solutions affiche les noms d’éléments et de solutions correctement.  
+- Les noms de solutions, de projets et de fichiers, y compris les dossiers que vous incluez dans le chemin du projet. L’Explorateur de solutions affiche les noms d’éléments et de solutions correctement.  
   
--   Contenu des fichiers. Vous pouvez ouvrir ou enregistrer des fichiers avec encodage Unicode ou avec une page de code sélectionnée.  
+- Contenu des fichiers. Vous pouvez ouvrir ou enregistrer des fichiers avec encodage Unicode ou avec une page de code sélectionnée.  
   
     > [!NOTE]
     >  L’éditeur de code est un cas particulier. Pour plus de détails, voir ci-dessous.  
   
--   Éléments de données. L’**Explorateur de serveurs** affiche correctement ces éléments et vous permet de les modifier.  
+- Éléments de données. L’**Explorateur de serveurs** affiche correctement ces éléments et vous permet de les modifier.  
   
--   Éléments copiés dans le Presse-papiers Windows.  
+- Éléments copiés dans le Presse-papiers Windows.  
   
--   Attributs et métadonnées.  
+- Attributs et métadonnées.  
   
--   Valeurs de propriétés. Vous pouvez utiliser l’arabe ou l’hébreu texte dans la fenêtre Propriétés. La fenêtre vous permet de basculer entre l’ordre de lecture de droite à gauche et celui de gauche à droite à l’aide de séquences de touches Windows standard (CTRL + Maj droite pour l’ordre de droite à gauche, et CTRL + Maj gauche pour l’ordre de gauche à droite).  
+- Valeurs de propriétés. Vous pouvez utiliser l’arabe ou l’hébreu texte dans la fenêtre Propriétés. La fenêtre vous permet de basculer entre l’ordre de lecture de droite à gauche et celui de gauche à droite à l’aide de séquences de touches Windows standard (CTRL + Maj droite pour l’ordre de droite à gauche, et CTRL + Maj gauche pour l’ordre de gauche à droite).  
   
--   Code et texte littéral. Dans l’éditeur de code (qui est également l’éditeur de texte), vous pouvez utiliser l’arabe ou l’hébreu pour nommer des classes, des fonctions, des variables, des propriétés, des littéraux de chaîne, des attributs; etc. Toutefois, l’éditeur ne prend pas en charge l’ordre de lecture de droite à gauche et le texte commence toujours à la marge de gauche.  
+- Code et texte littéral. Dans l’éditeur de code (qui est également l’éditeur de texte), vous pouvez utiliser l’arabe ou l’hébreu pour nommer des classes, des fonctions, des variables, des propriétés, des littéraux de chaîne, des attributs; etc. Toutefois, l’éditeur ne prend pas en charge l’ordre de lecture de droite à gauche et le texte commence toujours à la marge de gauche.  
   
     > [!TIP]
     >  Il est recommandé de placer des littéraux de chaîne dans les fichiers de ressources au lieu de les coder en dur dans vos programmes. Pour plus d’informations, consultez [Procédure pas à pas : Localisation de Windows Forms](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5).  
@@ -84,7 +84,7 @@ Vous pouvez utiliser Visual Studio pour créer des applications qui affichent co
     > [!NOTE]
     >  Vous devez être cohérent dans la façon dont vous faites référence aux objets nommés dans ces langues. Par exemple, si vous utilisez des signes kachidé pour nommer une variable en arabe, vous devrez toujours utiliser des signes kachidé dans vos références à cette variable, sinon une erreur se produira.  
   
--   Commentaires de code. Vous pouvez créer des commentaires en arabe ou en hébreu. Vous pouvez également utiliser ces langues dans le générateur de commentaires.  
+- Commentaires de code. Vous pouvez créer des commentaires en arabe ou en hébreu. Vous pouvez également utiliser ces langues dans le générateur de commentaires.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Prise en charge bidirectionnelle pour les applications Windows Forms](http://msdn.microsoft.com/library/7b622fa4-f390-4e4d-b624-83a1917cccf2)   

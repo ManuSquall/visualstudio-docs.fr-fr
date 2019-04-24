@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ac7771e657b546fdfced7033067d6de26256b96
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 28cc20d00a9846fa119666b01aea2efab3a128ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335647"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066414"
 ---
 # <a name="project-subtypes-design"></a>Conception de sous-types de projets
 
@@ -23,11 +23,11 @@ Sous-types de projet permettent aux VSPackages d’étendre les projets basés s
 
  Les rubriques suivantes décrivent en détail la conception de base et l’implémentation de sous-types de projet :
 
--   Conception du sous-type de projet.
+- Conception du sous-type de projet.
 
--   Agrégation de plusieurs niveaux.
+- Agrégation de plusieurs niveaux.
 
--   Prise en charge des Interfaces.
+- Prise en charge des Interfaces.
 
 ## <a name="project-subtype-design"></a>Conception de sous-type de projet
 
@@ -73,11 +73,11 @@ Les sous-types de projet peuvent étendre le système de projet de base en éten
 
 Une implémentation de sous-type de projet qui encapsule un sous-type de projet de niveau inférieur doit être programmées de manière coopérative pour autoriser le sous-type de projet interne fonctionner correctement. Une liste des responsabilités de programmation comprend :
 
--   Le <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> implémentation du sous-type de projet qui encapsule le sous-type interne doit déléguer à la <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> implémentation de sous-type de projet interne pour les deux <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> et <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> méthodes.
+- Le <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> implémentation du sous-type de projet qui encapsule le sous-type interne doit déléguer à la <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> implémentation de sous-type de projet interne pour les deux <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> et <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> méthodes.
 
--   Le <xref:EnvDTE80.IInternalExtenderProvider> implémentation du sous-type de projet de wrapper doit déléguer à celle de son sous-type de projet interne. En particulier, l’implémentation de <xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A> doit obtenir la chaîne des noms de sous-type de projet interne et puis concaténer les chaînes qu’il veut ajouter en tant que les extendeurs.
+- Le <xref:EnvDTE80.IInternalExtenderProvider> implémentation du sous-type de projet de wrapper doit déléguer à celle de son sous-type de projet interne. En particulier, l’implémentation de <xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A> doit obtenir la chaîne des noms de sous-type de projet interne et puis concaténer les chaînes qu’il veut ajouter en tant que les extendeurs.
 
--   Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> implémentation d’un sous-type de projet de wrapper doit instancier la <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg> objet de son interne sous-type de projet et maintenez-le enfoncé comme un délégué privé, étant donné que seulement de l’objet de configuration de projet du projet de base sait directement que le wrapper objet de configuration de sous-type de projet existe. Le sous-type de projet externe peut initialement choisissez qu’elle souhaite gérer directement des interfaces de configuration, puis de déléguer le reste à l’implémentation du sous-type de projet interne de <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>.
+- Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> implémentation d’un sous-type de projet de wrapper doit instancier la <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg> objet de son interne sous-type de projet et maintenez-le enfoncé comme un délégué privé, étant donné que seulement de l’objet de configuration de projet du projet de base sait directement que le wrapper objet de configuration de sous-type de projet existe. Le sous-type de projet externe peut initialement choisissez qu’elle souhaite gérer directement des interfaces de configuration, puis de déléguer le reste à l’implémentation du sous-type de projet interne de <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>.
 
 ## <a name="supporting-interfaces"></a>Prise en charge des Interfaces
 

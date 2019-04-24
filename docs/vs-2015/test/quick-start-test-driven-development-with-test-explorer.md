@@ -1,5 +1,5 @@
 ---
-title: 'Démarrage rapide : développement piloté avec l’Explorateur de tests | Microsoft Docs'
+title: 'Démarrage rapide : Développement avec l’Explorateur de tests piloté par test | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-test
@@ -8,25 +8,25 @@ ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: af763149df8997e711677d978468a57d276cb636
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: f45e9c466bcb99dd0fecb00702441d3d97899a52
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868922"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108982"
 ---
-# <a name="quick-start-test-driven-development-with-test-explorer"></a>Démarrage rapide : développement piloté avec l’Explorateur de tests
+# <a name="quick-start-test-driven-development-with-test-explorer"></a>Démarrage rapide : Développement piloté par les tests avec l’Explorateur de tests
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Nous vous recommandons de créer des tests unitaires pour que votre code continue à s'exécuter correctement dans de nombreuses étapes incrémentielles de développement. Vous pouvez utiliser plusieurs Infrastructures pour écrire des tests unitaires, y compris ceux développés par des tiers. Certaines infrastructures de tests sont spécialisées pour les tests dans différents langages ou sur différentes plateformes. L'explorateur de tests fournit une interface unique pour les tests unitaires dans l'une de ces infrastructures. Les adaptateurs sont disponibles pour les infrastructures les plus couramment utilisées, et vous pouvez écrire vos propres adaptateurs pour d'autres frameworks.  
   
  L'Explorateur de tests remplace les fenêtres de test unitaire trouvées dans les éditions antérieures de Visual Studio. Ses avantages incluent :  
   
--   Exécution du .NET, de code non managé, de code de base de données et d'autres sortes de tests à l'aide d'une interface unique.  
+- Exécution du .NET, de code non managé, de code de base de données et d'autres sortes de tests à l'aide d'une interface unique.  
   
--   Utilisation du framework de tests unitaires de votre choix, par exemple NUnit ou MSTest.  
+- Utilisation du framework de tests unitaires de votre choix, par exemple NUnit ou MSTest.  
   
--   Consultez dans une seule fenêtre toutes les informations dont vous avez besoin.  
+- Consultez dans une seule fenêtre toutes les informations dont vous avez besoin.  
   
 ## <a name="using-test-explorer"></a>Utilisation de l'Explorateur de tests  
  ![Explorateur de tests unitaires montrant le bouton Exécuter tout](../test/media/unittestexplorer-beta.png "UnitTestExplorer(beta)")  
@@ -37,13 +37,13 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
   
     Par exemple, pour créer un test qui utilise le framework MSTest :  
   
-   1.  Créez un projet de test.  
+   1. Créez un projet de test.  
   
         Dans la boîte de dialogue **Nouveau projet** , développez **Visual Basic**, **Visual C#**, ou **Visual C++**, puis choisissez **Test**.  
   
         Sélectionnez **Projet de test unitaire**.  
   
-   2.  Écrivez chaque test unitaire sous forme de méthode. Ajoutez devant chaque méthode de test l'attribut `[TestMethod]` .  
+   2. Écrivez chaque test unitaire sous forme de méthode. Ajoutez devant chaque méthode de test l'attribut `[TestMethod]` .  
   
 2. Si les tests individuels n’ont aucune dépendance qui les empêche d’être exécutés dans n’importe quel ordre, activez l’exécution parallèle des tests avec le bouton bascule ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") dans la barre d’outils. Cela peut réduire sensiblement le temps nécessaire pour exécuter tous les tests.  
   
@@ -53,13 +53,13 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
   
     L'Explorateur de tests ouvre et affiche un résumé des résultats.  
   
-   **Pour afficher une liste complète des tests :** Choisissez **Afficher tout** dans une catégorie.  
+   **Pour voir une liste complète des tests :** Choisissez **Tout afficher** dans une catégorie.  
   
-   **Pour afficher les détails d'un résultat de test :** Sélectionnez le test dans l'Explorateur de tests pour afficher des détails tels que les messages d'exception dans le volet d'informations.  
+   **Pour voir les détails d’un résultat de test :** Sélectionnez le test dans l’Explorateur de tests pour voir des détails tels que les messages d’exception dans le volet d’informations.  
   
-   **Pour accéder au code d'un test :** Double-cliquez sur le test dans l'Explorateur de tests ou choisissez **Ouvrir un test** dans le menu contextuel.  
+   **Pour accéder au code d’un test :** Double-cliquez sur le test dans l’Explorateur de tests, ou choisissez **Ouvrir un test** dans le menu contextuel.  
   
-   **Pour déboguer un test :** Ouvrez le menu contextuel d'un ou de plusieurs tests, puis choisissez **Déboguer les tests sélectionnés**.  
+   **Pour déboguer un test :** Ouvrez le menu contextuel d’un ou de plusieurs tests, puis choisissez **Déboguer les tests sélectionnés**.  
   
 > [!IMPORTANT]
 >  Les résultats affichés concernent la série la plus récente. La barre de résultats colorée montre uniquement les résultats des tests qui ont été exécutés. Par exemple, si vous exécutez plusieurs tests et que certains d'entre eux échouent puis que vous n'exécutez que les tests réussis, la barre de résultats affiche tout en vert.  
@@ -67,7 +67,7 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
 > [!NOTE]
 >  Si aucun test n'apparaît, vérifiez que vous avez installé un adaptateur pour connecter l'Explorateur de tests à l'infrastructure de test que vous utilisez. Pour plus d’informations, consultez [utiliser un autre framework de test](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
   
-##  <a name="walkthrough"></a> Procédure pas à pas : Utilisation de tests unitaires pour développer une méthode  
+## <a name="walkthrough"></a> Procédure pas à pas : À l’aide de Tests unitaires pour développer une méthode  
  Cette procédure pas-à-pas montre comment développer une méthode testée en C# à l'aide de l'infrastructure des tests unitaires Microsoft. Vous pouvez facilement l'adapter à d'autres langages et utiliser d'autres infrastructures de tests comme NUnit. Pour plus d’informations, consultez [Usa autre framework de test](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
   
 #### <a name="creating-the-test-and-method"></a>Créer le test et la méthode  
@@ -76,7 +76,7 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
   
 2. Créez un projet de test.  
   
-   -   Dans la boîte de dialogue **Nouveau projet** , choisissez **Visual C#**, **Test** puis **Projet de test unitaire**.  
+   - Dans la boîte de dialogue **Nouveau projet** , choisissez **Visual C#**, **Test** puis **Projet de test unitaire**.  
   
         ![Nouveaux projets de code et de test](../test/media/unittestexplorerwalk1.png "UnitTestExplorerWalk1")  
   
@@ -102,15 +102,15 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
   
 4. Générez la méthode à partir du test.  
   
-   1.  Placez le curseur sur `Rooter`, puis dans le menu contextuel, choisissez **Générer**, **Nouveau type**.  
+   1. Placez le curseur sur `Rooter`, puis dans le menu contextuel, choisissez **Générer**, **Nouveau type**.  
   
-   2.  Dans la boîte de dialogue **Générer un nouveau type** , définissez **Projet** sur le projet de bibliothèque de classes. Dans cet exemple, il s’agit de `MyMath`.  
+   2. Dans la boîte de dialogue **Générer un nouveau type** , définissez **Projet** sur le projet de bibliothèque de classes. Dans cet exemple, il s’agit de `MyMath`.  
   
-   3.  Placez le curseur sur `SquareRoot`, puis dans le menu contextuel, choisissez **Générer**, **Stub de méthode**.  
+   3. Placez le curseur sur `SquareRoot`, puis dans le menu contextuel, choisissez **Générer**, **Stub de méthode**.  
   
 5. Exécutez le test unitaire.  
   
-   1.  Dans le menu **Test** , choisissez **Exécuter les tests unitaires**, **Tous les tests**.  
+   1. Dans le menu **Test** , choisissez **Exécuter les tests unitaires**, **Tous les tests**.  
   
         La solution se génère et s'exécute.  
   
@@ -130,7 +130,7 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
   
 #### <a name="after-every-change-make-all-the-tests-pass"></a>Après chaque modification, faites en sorte que tous les tests réussissent  
   
-1.  Dans `MyMath\Rooter.cs`, améliorez le code de `SquareRoot`:  
+1. Dans `MyMath\Rooter.cs`, améliorez le code de `SquareRoot`:  
   
     ```csharp  
     public double SquareRoot(double input)  
@@ -139,7 +139,7 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
      }  
     ```  
   
-2.  Dans l'Explorateur de tests, choisissez **Exécuter tout**.  
+2. Dans l'Explorateur de tests, choisissez **Exécuter tout**.  
   
      Le code se génère et le test s'exécute.  
   
@@ -149,7 +149,7 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
   
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>Ajouter des tests pour étendre la plage d'entrées  
   
-1.  Pour renforcer votre confiance dans le fonctionnement de votre code dans tous les cas, ajoutez des tests qui essaient un plus grand nombre de valeurs d'entrée.  
+1. Pour renforcer votre confiance dans le fonctionnement de votre code dans tous les cas, ajoutez des tests qui essaient un plus grand nombre de valeurs d'entrée.  
   
     > [!TIP]
     >  Évitez de modifier les tests existants qui réussissent. Au lieu de cela, ajoutez de nouveaux tests. Modifiez les tests existants uniquement lorsque les besoins des utilisateurs changent. Cette stratégie permet de garantir que vous ne perdez pas de fonctionnalités existantes à mesure que vous travaillez pour étendre le code.  
@@ -180,13 +180,13 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
     }  
     ```  
   
-2.  Dans l'Explorateur de tests, choisissez **Exécuter tout**.  
+2. Dans l'Explorateur de tests, choisissez **Exécuter tout**.  
   
      Le nouveau test échoue bien que le premier test réussisse toujours.  
   
      Pour rechercher le point de défaillance, sélectionnez le test qui a échoué, puis dans la partie inférieure de l'Explorateur de tests, sélectionnez l'élément supérieur de la **Trace de la pile**.  
   
-3.  Examinez la méthode de test pour voir ce qui peut être erroné. Dans la classe `MyMath.Rooter` , réécrivez le code :  
+3. Examinez la méthode de test pour voir ce qui peut être erroné. Dans la classe `MyMath.Rooter` , réécrivez le code :  
   
     ```  
     public double SquareRoot(double input)  
@@ -202,13 +202,13 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
     }  
     ```  
   
-4.  Dans l'Explorateur de tests, choisissez **Exécuter tout**.  
+4. Dans l'Explorateur de tests, choisissez **Exécuter tout**.  
   
      Les deux tests ont réussi maintenant.  
   
 #### <a name="add-tests-for-exceptional-cases"></a>Ajouter des tests pour des cas exceptionnels  
   
-1.  Ajouter un test pour les entrées négatives :  
+1. Ajouter un test pour les entrées négatives :  
   
     ```csharp  
     [TestMethod]  
@@ -227,15 +227,15 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
      }  
     ```  
   
-2.  Dans l'Explorateur de tests, choisissez **Exécuter tout**.  
+2. Dans l'Explorateur de tests, choisissez **Exécuter tout**.  
   
      La méthode testée s'exécute en boucle et doit être annulée manuellement.  
   
-3.  Sélectionnez **Annuler**.  
+3. Sélectionnez **Annuler**.  
   
      Le test s'arrête au bout de 10 secondes.  
   
-4.  Corrigez le code de la méthode :  
+4. Corrigez le code de la méthode :  
   
     ```csharp  
   
@@ -248,13 +248,13 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
     ...  
     ```  
   
-5.  Dans l'Explorateur de tests, choisissez **Exécuter tout**.  
+5. Dans l'Explorateur de tests, choisissez **Exécuter tout**.  
   
      Tous les tests réussissent.  
   
 #### <a name="refactor-without-changing-tests"></a>Refactoriser sans modifier les tests  
   
-1.  Simplifiez le code, mais ne modifiez pas les tests.  
+1. Simplifiez le code, mais ne modifiez pas les tests.  
   
     > [!TIP]
     >  La *refactorisation* est une modification destinée à améliorer les performances du code ou à en simplifier la compréhension. Elle n'est pas destinée à modifier le comportement du code. Les tests ne sont donc pas modifiés.  
@@ -283,7 +283,7 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
     }  
     ```  
   
-2.  Choisissez **Exécuter tout**.  
+2. Choisissez **Exécuter tout**.  
   
      Tous les tests réussissent encore.  
   

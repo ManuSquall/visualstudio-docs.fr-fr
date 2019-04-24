@@ -11,12 +11,12 @@ ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 77363b0ed4635559007680e9923575eac222fbcb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fa0acb706d0b5cb6a37578ab6cb7b707850c5949
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952714"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070626"
 ---
 # <a name="creating-a-multi-instance-tool-window"></a>Création d’une fenêtre d’outil multi-instance
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,14 +27,14 @@ Vous pouvez programmer une fenêtre outil afin que plusieurs instances de celui-
   
 ## <a name="creating-a-basic-single-instance-tool-window"></a>Création d’une fenêtre d’outil Basic (uniques)  
   
-1.  Créez un projet nommé **MultiInstanceToolWindow** en utilisant le modèle VSIX et ajouter un modèle d’élément de fenêtre outil personnalisé nommé **MIToolWindow**.  
+1. Créez un projet nommé **MultiInstanceToolWindow** en utilisant le modèle VSIX et ajouter un modèle d’élément de fenêtre outil personnalisé nommé **MIToolWindow**.  
   
     > [!NOTE]
     >  Pour plus d’informations sur la création d’une extension avec une fenêtre outil, consultez [création d’une Extension avec une fenêtre outil](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
 ## <a name="making-a-tool-window-multi-instance"></a>Rendre une instance de multiples de fenêtre outil  
   
-1.  Ouvrez le **MIToolWindowPackage.cs** de fichiers et de trouver le `ProvideToolWindow` attribut. et le `MultiInstances=true` paramètre, comme indiqué dans l’exemple suivant.  
+1. Ouvrez le **MIToolWindowPackage.cs** de fichiers et de trouver le `ProvideToolWindow` attribut. et le `MultiInstances=true` paramètre, comme indiqué dans l’exemple suivant.  
   
     ```csharp  
     [PackageRegistration(UseManagedResourcesOnly = true)]  
@@ -46,15 +46,15 @@ Vous pouvez programmer une fenêtre outil afin que plusieurs instances de celui-
     {. . .}  
     ```  
   
-2.  Dans le fichier MIToolWindowCommand.cs, recherchez la méthode ShowToolWindos(). Dans cette méthode, appelez le <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> (méthode) et définissez son `create` indicateur `false` afin qu’il effectue une itération dans les instances de la fenêtre Outil existantes jusqu'à une disponible `id` est trouvé.  
+2. Dans le fichier MIToolWindowCommand.cs, recherchez la méthode ShowToolWindos(). Dans cette méthode, appelez le <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> (méthode) et définissez son `create` indicateur `false` afin qu’il effectue une itération dans les instances de la fenêtre Outil existantes jusqu'à une disponible `id` est trouvé.  
   
-3.  Pour créer une instance de la fenêtre outil, appelez le <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> (méthode) et définissez son `id` à des valeurs disponibles et ses `create` indicateur `true`.  
+3. Pour créer une instance de la fenêtre outil, appelez le <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> (méthode) et définissez son `id` à des valeurs disponibles et ses `create` indicateur `true`.  
   
      Par défaut, la valeur de la `id` paramètre de la <xref:Microsoft.VisualStudio.Shell.Package.FindToolWindow%2A> méthode est `0`. Cela rend une fenêtre outil à instance unique. Pour plus d’une instance d’héberger, chaque instance doit avoir son propre `id`.  
   
-4.  Appelez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> méthode sur le <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> objet qui est retourné par la <xref:Microsoft.VisualStudio.Shell.ToolWindowPane.Frame%2A> propriété de l’instance de la fenêtre outil.  
+4. Appelez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> méthode sur le <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> objet qui est retourné par la <xref:Microsoft.VisualStudio.Shell.ToolWindowPane.Frame%2A> propriété de l’instance de la fenêtre outil.  
   
-5.  Par défaut, le `ShowToolWindow` méthode qui est créé par le modèle d’élément de fenêtre outil crée une fenêtre outil à instance unique. L’exemple suivant montre comment modifier le `ShowToolWindow` méthode pour créer plusieurs instances.  
+5. Par défaut, le `ShowToolWindow` méthode qui est créé par le modèle d’élément de fenêtre outil crée une fenêtre outil à instance unique. L’exemple suivant montre comment modifier le `ShowToolWindow` méthode pour créer plusieurs instances.  
   
     ```csharp  
     private void ShowToolWindow(object sender, EventArgs e)  

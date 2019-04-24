@@ -13,12 +13,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f6b3b1ebf4f25f1f37d2094a0e53447a4418044a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 29d4ee5455a05bfac98debc2f6ebdbb06b813f31
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001579"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059849"
 ---
 # <a name="model-user-requirements"></a>Modéliser les besoins des utilisateurs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Visual Studio vous aide à comprendre, discuter et communiquer les besoins de vo
   
  Notez que la plupart des types de diagrammes peuvent être utilisés à d’autres fins. Pour une vue d’ensemble des types de diagrammes, consultez [créer des modèles pour votre application](../modeling/create-models-for-your-app.md). Pour plus d’informations de base sur le dessin de diagrammes, consultez [modèles et diagrammes UML modifier](../modeling/edit-uml-models-and-diagrams.md).  
   
-##  <a name="UseCases"></a> Décrivant l’utilisation de votre système  
+## <a name="UseCases"></a> Décrivant l’utilisation de votre système  
  Créez des diagrammes de cas d’usage pour décrire qui utilise le système et dans quel but. Un cas d’usage correspond à un objectif d’un utilisateur du système et à la procédure qu’il applique pour atteindre cet objectif.  
   
  Par exemple, un système de vente de repas en ligne doit permettre aux clients de choisir des éléments dans un menu et aux restaurants proposant ce service de mettre à jour le menu. Vous pouvez résumer tout cela dans un diagramme de cas d’usage :  
@@ -93,7 +93,7 @@ Visual Studio vous aide à comprendre, discuter et communiquer les besoins de vo
 |Éléments dans un diagramme de cas d’usage|[Diagrammes de cas d’usage UML : Informations de référence](../modeling/uml-use-case-diagrams-reference.md)|  
 |Comment développer du code à partir de cas d’usage|[Modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="RequirementsClasses"></a> Définition des termes utilisés pour décrire les impératifs  
+## <a name="RequirementsClasses"></a> Définition des termes utilisés pour décrire les impératifs  
  Vous pouvez utiliser des diagrammes de classes UML pour vous aider à développer une terminologie cohérente des concepts métier utilisés aux fins suivantes :  
   
 - Par les utilisateurs eux-mêmes pour discuter de l’entreprise au sein de laquelle le système s’exécute.  
@@ -140,7 +140,7 @@ Visual Studio vous aide à comprendre, discuter et communiquer les besoins de vo
   
  Dans un diagramme de classes conceptuelles, il est généralement inutile de placer des flèches sur les associations pour représenter la navigabilité. En effet, le diagramme ne représente pas une implémentation. Les associations représentent des relations entre des objets du monde réel. Ce qui suit [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension rendre des flèches non directionnelles la valeur par défaut : [Exemple : Fonctionnalités de modélisation de domaine UML](http://go.microsoft.com/fwlink/?LinkId=213849).  
   
-##  <a name="BusinessRules"></a> Showing Business Rules  
+## <a name="BusinessRules"></a> Showing Business Rules  
  Une règle métier est un impératif qui n’est associé à aucun cas d’usage particulier et doit être respecté à l’échelle du système.  
   
  De nombreuses règles métier sont des contraintes sur les relations entre les classes conceptuelles. Vous pouvez écrire ces *des règles métier statiques* sous forme de commentaires associés aux classes pertinentes sur un diagramme de classes conceptuelles. Exemple :  
@@ -161,7 +161,7 @@ Visual Studio vous aide à comprendre, discuter et communiquer les besoins de vo
 |Éléments d’un diagramme de classes conceptuelles|[Diagrammes de classes UML : Informations de référence](../modeling/uml-class-diagrams-reference.md)|  
 |Comment développer du code qui respecte des règles métier|[Modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="QoSRequirements"></a> Describing Quality of Service Requirements  
+## <a name="QoSRequirements"></a> Describing Quality of Service Requirements  
  Il existe plusieurs catégories d’impératifs de qualité de service. Il s'agit notamment des types suivants :  
   
 - Performances  
@@ -185,7 +185,7 @@ Visual Studio vous aide à comprendre, discuter et communiquer les besoins de vo
 |Ajout de documents supplémentaires à des cas d’usage|[Lier un cas d’usage à des documents et diagrammes](../modeling/link-a-use-case-to-documents-and-diagrams.md)|  
 |Comment développer du code conforme aux impératifs de qualité de service|[Modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="Workflow"></a> Montrant le flux de travail entre les utilisateurs et votre système  
+## <a name="Workflow"></a> Montrant le flux de travail entre les utilisateurs et votre système  
  Vous pouvez utiliser un diagramme d’activités pour montrer le flux de travail entre différents cas d’usage. Il est souvent utile de commencer un modèle d’impératifs en dessinant un diagramme d’activités qui montre les principales tâches effectuées par les utilisateurs, à la fois dans et en dehors du système.  
   
  Exemple :  
@@ -206,7 +206,7 @@ Visual Studio vous aide à comprendre, discuter et communiquer les besoins de vo
 |Éléments sur un diagramme d’activités|[Diagrammes d’activités UML : Informations de référence](../modeling/uml-activity-diagrams-reference.md)|  
 |Comment développer du code à partir de diagrammes d’activités|[Modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md)|  
   
-##  <a name="Sequences"></a> Affichage des interactions entre les utilisateurs et votre système  
+## <a name="Sequences"></a> Affichage des interactions entre les utilisateurs et votre système  
  Vous pouvez utiliser un diagramme de séquence pour montrer l’échange de messages entre votre système et des acteurs externes ou entre différentes parties de votre système. Vous obtenez ainsi une vue des étapes dans un cas d’usage qui montre très clairement la séquence d’interactions. Les diagrammes de séquence sont particulièrement utiles quand plusieurs parties interagissent dans un cas d’usage ou quand votre système a une API.  
   
  Exemple :  

@@ -3,19 +3,19 @@ title: Mode d’application des chemins de recherche Python
 description: Visual Studio fournit un moyen plus spécifique de spécifier des chemins de recherche pour les environnements et les projets afin d’éviter d’utiliser des variables à l’échelle du système.
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 55995d53f763bcc3f13338e52b255135bbefa15b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 37ce9d7b1853dfecc9e0ec33ca08c3c3fa0571e0
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58147733"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59365338"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Comment Visual Studio utilise les chemins de recherche Python
 
@@ -51,4 +51,4 @@ Vous pouvez également ajouter les fichiers ayant une extension *.zip* ou *.egg*
 - [Gérer les environnements Python dans Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Sélectionner un interpréteur pour un projet](selecting-a-python-environment-for-a-project.md)
 - [Utiliser requirements.txt pour les dépendances](managing-required-packages-with-requirements-txt.md)
-- [Référence sur la fenêtre Environnements Python](python-environments-window-tab-reference.md)
+- [Informations de référence sur la fenêtre Environnements Python](python-environments-window-tab-reference.md)

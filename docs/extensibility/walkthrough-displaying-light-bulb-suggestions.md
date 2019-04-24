@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ce896b0d0039f8ae06680b730fc7bd3793a8206
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d0799bdff6957e811c365fe153a722d25e306366
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694424"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086674"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>Procédure pas à pas : Afficher des suggestions ampoule
 Les ampoules sont des icônes dans l’éditeur Visual Studio développent pour afficher un ensemble d’actions, par exemple, des correctifs pour les problèmes identifiés par les analyseurs de code intégrés ou la refactorisation de code.
@@ -41,19 +41,19 @@ Les ampoules sont des icônes dans l’éditeur Visual Studio développent pour 
 
 ## <a name="create-a-managed-extensibility-framework-mef-project"></a>Créer un projet Managed Extensibility Framework (MEF)
 
-1.  Créez un projet c# VSIX. (Dans le **nouveau projet** boîte de dialogue, sélectionnez **Visual c# / extensibilité**, puis **projet VSIX**.) Nommez la solution `LightBulbTest`.
+1. Créez un projet c# VSIX. (Dans le **nouveau projet** boîte de dialogue, sélectionnez **Visual c# / extensibilité**, puis **projet VSIX**.) Nommez la solution `LightBulbTest`.
 
-2.  Ajouter un **classifieur d’éditeur** modèle d’élément au projet. Pour plus d’informations, consultez [créer une extension avec un éditeur de modèle d’élément](../extensibility/creating-an-extension-with-an-editor-item-template.md).
+2. Ajouter un **classifieur d’éditeur** modèle d’élément au projet. Pour plus d’informations, consultez [créer une extension avec un éditeur de modèle d’élément](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 
-3.  Supprimez les fichiers de classe existants.
+3. Supprimez les fichiers de classe existants.
 
-4.  Ajoutez la référence suivante au projet et définissez **copie locale** à `False`:
+4. Ajoutez la référence suivante au projet et définissez **copie locale** à `False`:
 
      *Microsoft.VisualStudio.Language.Intellisense*
 
-5.  Ajoutez un nouveau fichier de classe et nommez-le **LightBulbTest**.
+5. Ajoutez un nouveau fichier de classe et nommez-le **LightBulbTest**.
 
-6.  Ajoutez le code suivant à l’aide d’instructions :
+6. Ajoutez le code suivant à l’aide d’instructions :
 
     ```csharp
     using System;
@@ -72,7 +72,7 @@ Les ampoules sont des icônes dans l’éditeur Visual Studio développent pour 
 
 ## <a name="implement-the-light-bulb-source-provider"></a>Implémenter le fournisseur de code source d’ampoule
 
-1.  Dans le *LightBulbTest.cs* fichier de classe, de supprimer la classe LightBulbTest. Ajoutez une classe nommée **TestSuggestedActionsSourceProvider** qui implémente <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>. Exporter avec un nom de **Actions suggérées de Test** et un <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de « texte ».
+1. Dans le *LightBulbTest.cs* fichier de classe, de supprimer la classe LightBulbTest. Ajoutez une classe nommée **TestSuggestedActionsSourceProvider** qui implémente <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>. Exporter avec un nom de **Actions suggérées de Test** et un <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de « texte ».
 
     ```csharp
     [Export(typeof(ISuggestedActionsSourceProvider))]
@@ -81,14 +81,14 @@ Les ampoules sont des icônes dans l’éditeur Visual Studio développent pour 
     internal class TestSuggestedActionsSourceProvider : ISuggestedActionsSourceProvider
     ```
 
-2.  Dans la classe de fournisseur de source, importez le <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> et l’ajouter en tant que propriété.
+2. Dans la classe de fournisseur de source, importez le <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> et l’ajouter en tant que propriété.
 
     ```csharp
     [Import(typeof(ITextStructureNavigatorSelectorService))]
     internal ITextStructureNavigatorSelectorService NavigatorService { get; set; }
     ```
 
-3.  Implémentez le <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider.CreateSuggestedActionsSource%2A> méthode pour retourner un <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource> objet. La source est abordée dans la section suivante.
+3. Implémentez le <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider.CreateSuggestedActionsSource%2A> méthode pour retourner un <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource> objet. La source est abordée dans la section suivante.
 
     ```csharp
     public ISuggestedActionsSource CreateSuggestedActionsSource(ITextView textView, ITextBuffer textBuffer)
@@ -104,13 +104,13 @@ Les ampoules sont des icônes dans l’éditeur Visual Studio développent pour 
 ## <a name="implement-the-isuggestedactionsource"></a>Implémenter le ISuggestedActionSource
  La source de l’action suggérée est responsable de la collecte de l’ensemble des actions suggérées et les ajouter dans le contexte approprié. Dans ce cas, le contexte est le mot actuel et les actions suggérées sont **UpperCaseSuggestedAction** et **LowerCaseSuggestedAction**, qui est abordé dans la section suivante.
 
-1.  Ajoutez une classe **TestSuggestedActionsSource** qui implémente <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.
+1. Ajoutez une classe **TestSuggestedActionsSource** qui implémente <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>.
 
     ```csharp
     internal class TestSuggestedActionsSource : ISuggestedActionsSource
     ```
 
-2.  Ajouter des champs privés, en lecture seule pour le fournisseur de code source action suggérée, la mémoire tampon de texte et l’affichage de texte.
+2. Ajouter des champs privés, en lecture seule pour le fournisseur de code source action suggérée, la mémoire tampon de texte et l’affichage de texte.
 
     ```csharp
     private readonly TestSuggestedActionsSourceProvider m_factory;
@@ -118,7 +118,7 @@ Les ampoules sont des icônes dans l’éditeur Visual Studio développent pour 
     private readonly ITextView m_textView;
     ```
 
-3.  Ajoutez un constructeur qui définit les champs privés.
+3. Ajoutez un constructeur qui définit les champs privés.
 
     ```csharp
     public TestSuggestedActionsSource(TestSuggestedActionsSourceProvider testSuggestedActionsSourceProvider, ITextView textView, ITextBuffer textBuffer)
@@ -129,7 +129,7 @@ Les ampoules sont des icônes dans l’éditeur Visual Studio développent pour 
     }
     ```
 
-4.  Ajoutez une méthode privée qui retourne le mot qui est actuellement sous le curseur. La méthode suivante ressemble à l’emplacement actuel du curseur et vous demande le navigateur de structure de texte pour l’étendue du mot. Si le curseur se trouve sur un mot, le <xref:Microsoft.VisualStudio.Text.Operations.TextExtent> est retourné dans le paramètre out ; sinon, le `out` paramètre est `null` et la méthode retourne `false`.
+4. Ajoutez une méthode privée qui retourne le mot qui est actuellement sous le curseur. La méthode suivante ressemble à l’emplacement actuel du curseur et vous demande le navigateur de structure de texte pour l’étendue du mot. Si le curseur se trouve sur un mot, le <xref:Microsoft.VisualStudio.Text.Operations.TextExtent> est retourné dans le paramètre out ; sinon, le `out` paramètre est `null` et la méthode retourne `false`.
 
     ```csharp
     private bool TryGetWordUnderCaret(out TextExtent wordExtent)
@@ -154,7 +154,7 @@ Les ampoules sont des icônes dans l’éditeur Visual Studio développent pour 
     }
     ```
 
-5.  Implémentez la méthode <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.HasSuggestedActionsAsync%2A>. L’éditeur appelle cette méthode pour déterminer s’il faut afficher l’ampoule. Cet appel est effectué souvent, par exemple, chaque fois que le curseur se déplace d’une ligne vers un autre, ou lorsque la souris pointe sur un soulignement ondulé d’erreur. Il est asynchrone afin d’autoriser d’autres opérations de l’interface utilisateur à effectuer pendant l’utilisation de cette méthode. Dans la plupart des cas, cette méthode doit effectuer certaines l’analyse et l’analyse de la ligne active, donc le traitement peut prendre un certain temps.
+5. Implémentez la méthode <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.HasSuggestedActionsAsync%2A>. L’éditeur appelle cette méthode pour déterminer s’il faut afficher l’ampoule. Cet appel est effectué souvent, par exemple, chaque fois que le curseur se déplace d’une ligne vers un autre, ou lorsque la souris pointe sur un soulignement ondulé d’erreur. Il est asynchrone afin d’autoriser d’autres opérations de l’interface utilisateur à effectuer pendant l’utilisation de cette méthode. Dans la plupart des cas, cette méthode doit effectuer certaines l’analyse et l’analyse de la ligne active, donc le traitement peut prendre un certain temps.
 
      Dans cette implémentation, il obtient de manière asynchrone le <xref:Microsoft.VisualStudio.Text.Operations.TextExtent> et détermine si l’étendue est significative, par exemple, s’il comporte du texte autre qu’un espace blanc.
 
@@ -174,7 +174,7 @@ Les ampoules sont des icônes dans l’éditeur Visual Studio développent pour 
     }
     ```
 
-6.  Implémentez le <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.GetSuggestedActions%2A> (méthode), qui retourne un tableau de <xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet> objets qui contiennent les différentes <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction> objets. Cette méthode est appelée lorsque l’ampoule est développé.
+6. Implémentez le <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.GetSuggestedActions%2A> (méthode), qui retourne un tableau de <xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet> objets qui contiennent les différentes <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction> objets. Cette méthode est appelée lorsque l’ampoule est développé.
 
     > [!WARNING]
     >  Vous devez vous assurer que les implémentations de `HasSuggestedActionsAsync()` et `GetSuggestedActions()` sont cohérent ; qui est, si `HasSuggestedActionsAsync()` retourne `true`, puis `GetSuggestedActions()` doit avoir certaines actions à afficher. Dans de nombreux cas, `HasSuggestedActionsAsync()` est appelé juste avant `GetSuggestedActions()`, mais cela n’est pas toujours le cas. Par exemple, si l’utilisateur appelle l’ampoule actions en appuyant sur (**CTRL +** .) uniquement `GetSuggestedActions()` est appelée.
@@ -194,13 +194,13 @@ Les ampoules sont des icônes dans l’éditeur Visual Studio développent pour 
     }
     ```
 
-7.  Définir un `SuggestedActionsChanged` événement.
+7. Définir un `SuggestedActionsChanged` événement.
 
     ```csharp
     public event EventHandler<EventArgs> SuggestedActionsChanged;
     ```
 
-8.  Pour effectuer l’implémentation, ajoutez des implémentations pour les `Dispose()` et `TryGetTelemetryId()` méthodes. Vous ne souhaitez pas effectuer de télémétrie, alors retourner simplement `false` et la valeur est le GUID `Empty`.
+8. Pour effectuer l’implémentation, ajoutez des implémentations pour les `Dispose()` et `TryGetTelemetryId()` méthodes. Vous ne souhaitez pas effectuer de télémétrie, alors retourner simplement `false` et la valeur est le GUID `Empty`.
 
     ```csharp
     public void Dispose()
@@ -217,9 +217,9 @@ Les ampoules sont des icônes dans l’éditeur Visual Studio développent pour 
 
 ## <a name="implement-light-bulb-actions"></a>Implémenter des actions d’ampoule
 
-1.  Dans le projet, ajoutez une référence à *Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll* et définissez **copie locale** à `False`.
+1. Dans le projet, ajoutez une référence à *Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll* et définissez **copie locale** à `False`.
 
-2.  Créez deux classes, la première nommée `UpperCaseSuggestedAction` et la seconde nommée `LowerCaseSuggestedAction`. Ces deux classes implémentent <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>.
+2. Créez deux classes, la première nommée `UpperCaseSuggestedAction` et la seconde nommée `LowerCaseSuggestedAction`. Ces deux classes implémentent <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>.
 
     ```csharp
     internal class UpperCaseSuggestedAction : ISuggestedAction
@@ -228,7 +228,7 @@ Les ampoules sont des icônes dans l’éditeur Visual Studio développent pour 
 
      Elles sont identiques, sauf que l’une appelle <xref:System.String.ToUpper%2A> et l’autre appelle <xref:System.String.ToLower%2A>. Les étapes suivantes traitent uniquement de la classe d’action de mise en majuscules, mais vous devez implémenter les deux classes. Appliquez les étapes d’implémentation de l’action de mise en majuscules comme modèle pour l’implémentation de l’action de mise en minuscules.
 
-3.  Ajoutez le code suivant à l’aide des instructions pour ces classes :
+3. Ajoutez le code suivant à l’aide des instructions pour ces classes :
 
     ```csharp
     using Microsoft.VisualStudio.Imaging.Interop;
@@ -239,7 +239,7 @@ Les ampoules sont des icônes dans l’éditeur Visual Studio développent pour 
 
     ```
 
-4.  Déclarez un ensemble de champs privés.
+4. Déclarez un ensemble de champs privés.
 
     ```csharp
     private ITrackingSpan m_span;
@@ -248,7 +248,7 @@ Les ampoules sont des icônes dans l’éditeur Visual Studio développent pour 
     private ITextSnapshot m_snapshot;
     ```
 
-5.  Ajoutez un constructeur qui définit les champs.
+5. Ajoutez un constructeur qui définit les champs.
 
     ```csharp
     public UpperCaseSuggestedAction(ITrackingSpan span)
@@ -260,7 +260,7 @@ Les ampoules sont des icônes dans l’éditeur Visual Studio développent pour 
     }
     ```
 
-6.  Implémentez la <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.GetPreviewAsync%2A> méthode afin qu’elle affiche l’aperçu de l’action.
+6. Implémentez la <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.GetPreviewAsync%2A> méthode afin qu’elle affiche l’aperçu de l’action.
 
     ```csharp
     public Task<object> GetPreviewAsync(CancellationToken cancellationToken)
@@ -272,7 +272,7 @@ Les ampoules sont des icônes dans l’éditeur Visual Studio développent pour 
     }
     ```
 
-7.  Implémentez le <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.GetActionSetsAsync%2A> méthode afin qu’elle retourne un vide <xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet> énumération.
+7. Implémentez le <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction.GetActionSetsAsync%2A> méthode afin qu’elle retourne un vide <xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet> énumération.
 
     ```csharp
     public Task<IEnumerable<SuggestedActionSet>> GetActionSetsAsync(CancellationToken cancellationToken)
@@ -281,7 +281,7 @@ Les ampoules sont des icônes dans l’éditeur Visual Studio développent pour 
     }
     ```
 
-8.  Implémentez les propriétés comme suit.
+8. Implémentez les propriétés comme suit.
 
     ```csharp
     public bool HasActionSets
@@ -348,18 +348,18 @@ Les ampoules sont des icônes dans l’éditeur Visual Studio développent pour 
 ## <a name="build-and-test-the-code"></a>Générer et tester le code
  Pour tester ce code, générez la solution LightBulbTest et exécutez-le dans l’instance expérimentale.
 
-1.  Générez la solution.
+1. Générez la solution.
 
-2.  Lorsque vous exécutez ce projet dans le débogueur, une deuxième instance de Visual Studio est démarrée.
+2. Lorsque vous exécutez ce projet dans le débogueur, une deuxième instance de Visual Studio est démarrée.
 
-3.  Créez un fichier texte et tapez du texte. Vous devez voir une ampoule à gauche du texte.
+3. Créez un fichier texte et tapez du texte. Vous devez voir une ampoule à gauche du texte.
 
      ![tester l’ampoule](../extensibility/media/testlightbulb.png "TestLIghtBulb")
 
-4.  Pointez sur l’ampoule. Vous devez voir une flèche vers le bas.
+4. Pointez sur l’ampoule. Vous devez voir une flèche vers le bas.
 
-5.  Lorsque vous cliquez sur l’ampoule, deux actions suggérées doivent s’afficher, ainsi que la version préliminaire de l’action sélectionnée.
+5. Lorsque vous cliquez sur l’ampoule, deux actions suggérées doivent s’afficher, ainsi que la version préliminaire de l’action sélectionnée.
 
      ![tester l’ampoule, développé](../extensibility/media/testlightbulbexpanded.gif "TestLIghtBulbExpanded")
 
-6.  Si vous cliquez sur la première action, tout le texte du mot actuel doit être converti en majuscules. Si vous cliquez sur la deuxième action, tout le texte doit être converti en minuscules.
+6. Si vous cliquez sur la première action, tout le texte du mot actuel doit être converti en majuscules. Si vous cliquez sur la deuxième action, tout le texte doit être converti en minuscules.

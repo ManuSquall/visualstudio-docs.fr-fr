@@ -1,5 +1,5 @@
 ---
-title: 'Comment : publier une Application WPF avec les Styles visuels activés | Microsoft Docs'
+title: 'Procédure : Publier une Application WPF avec les Styles visuels activés | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 73b22b02-fc75-42aa-82d3-51fdcaf8e5c8
@@ -8,14 +8,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ef6250e9e413d91c218634e90fe67a4f04b83bce
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
-ms.translationtype: MTE95
+ms.openlocfilehash: 4ed9a9a349f2496343a9a9828cd436d8d4015aa9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953915"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038125"
 ---
-# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Guide pratique pour publier une application WPF avec les styles visuels activés
+# <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Procédure : Publier une application WPF avec les styles visuels activés
 
 Styles visuels activer l’apparence des contrôles communs à changer en fonction du thème choisi par l’utilisateur. Par défaut, les styles visuels ne sont pas activés pour les applications Windows Presentation Foundation (WPF), vous devez les activer manuellement. Toutefois, l’activation des styles visuels pour une application WPF, puis publiez la solution provoque une erreur. Cette rubrique décrit comment résoudre cette erreur et le processus de publication d’une application WPF avec les styles visuels sont activés. Pour plus d’informations sur les styles visuels, consultez [vue d’ensemble de styles visuels](/windows/desktop/Controls/visual-styles-overview). Pour plus d’informations sur le message d’erreur, consultez [résoudre les erreurs spécifiques dans les déploiements ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).
 
@@ -31,7 +31,7 @@ Styles visuels activer l’apparence des contrôles communs à changer en foncti
 
   Ensuite, vous pouvez déplacer les fichiers publiés à l’emplacement à partir duquel vous souhaitez que les utilisateurs finaux pour installer l’application.
 
-##  <a name="publish-the-solution-without-visual-styles-enabled"></a>Publiez la solution sans styles visuels activés
+## <a name="publish-the-solution-without-visual-styles-enabled"></a>Publiez la solution sans styles visuels activés
 
 1. Assurez-vous que votre projet n’a pas de styles visuels sont activés. Vérifiez tout d’abord, le fichier manifeste du projet pour le code XML suivant. Ensuite, si le code XML est présent, placez le code XML avec une balise de commentaire.
 
@@ -57,7 +57,7 @@ Styles visuels activer l’apparence des contrôles communs à changer en foncti
 
          Le fichier App.manifest s’ouvre dans le **éditeur de Code**.
 
-    **Pour ouvrir le fichier manifeste dans un C# projet**
+    **Pour ouvrir le fichier manifeste dans un projet c#**
 
     1. Dans la barre de menus, choisissez **projet**, *nom_projet* **propriétés**, où *nom_projet* est le nom de votre projet WPF.
 
@@ -72,7 +72,7 @@ Styles visuels activer l’apparence des contrôles communs à changer en foncti
 
          Ce bouton affiche tous les éléments de projet, y compris ceux qui ont été exclus et ceux qui sont normalement masqués. Le fichier manifest apparaît comme un élément de projet.
 
-2. Générez et publiez votre solution. Pour plus d’informations sur la publication de la solution, consultez [Comment : publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+2. Générez et publiez votre solution. Pour plus d’informations sur la publication de la solution, consultez [Comment : Publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
 ## <a name="create-a-manifest-file"></a>Créez un fichier manifeste
 

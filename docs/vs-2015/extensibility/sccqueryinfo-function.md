@@ -12,12 +12,12 @@ ms.assetid: 3973d336-a9b7-41a2-a4e6-bb8184a96aaf
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 23b0d9d77eae2052f2b9da3c236e231cc17a7e65
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f951e7ef29fbba7225997276b31bd9f32731efc8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948388"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108436"
 ---
 # <a name="sccqueryinfo-function"></a>Fonction SccQueryInfo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,13 +65,13 @@ SCCRTN SccQueryInfo(
   
  Lorsque vous utilisez cette fonction pour extraire des fichiers, notez les points suivants `MSSCCI` exigences d’état :  
   
--   `SCC_STATUS_OUTBYUSER` est définie lorsque l’utilisateur actuel a extrait le fichier.  
+- `SCC_STATUS_OUTBYUSER` est définie lorsque l’utilisateur actuel a extrait le fichier.  
   
--   `SCC_STATUS_CHECKEDOUT` ne peut pas être définie, sauf si `SCC_STATUS_OUTBYUSER` est défini.  
+- `SCC_STATUS_CHECKEDOUT` ne peut pas être définie, sauf si `SCC_STATUS_OUTBYUSER` est défini.  
   
--   `SCC_STATUS_CHECKEDOUT` est définie uniquement lorsque le fichier est extrait dans le répertoire de travail désigné.  
+- `SCC_STATUS_CHECKEDOUT` est définie uniquement lorsque le fichier est extrait dans le répertoire de travail désigné.  
   
--   Si le fichier est extrait par l’utilisateur actuel dans un répertoire autre que le répertoire de travail `SCC_STATUS_OUTBYUSER` est défini mais `SCC_STATUS_CHECKEDOUT` n’est pas.  
+- Si le fichier est extrait par l’utilisateur actuel dans un répertoire autre que le répertoire de travail `SCC_STATUS_OUTBYUSER` est défini mais `SCC_STATUS_CHECKEDOUT` n’est pas.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonctions d’API de plug-in de contrôle de source](../extensibility/source-control-plug-in-api-functions.md)   

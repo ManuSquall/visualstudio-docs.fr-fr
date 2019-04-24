@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: f8fb7c864f484208eaa647131ac7a32c8da665f8
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: d61814c9d47ea5c8b42e8a0b2f72a3797b6ec291
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355485"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897762"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutoriel : Créer une application Node.js et React dans Visual Studio
 
@@ -85,7 +85,7 @@ Commencez par créer un projet d’application web Node.js.
 1. Créer un nouveau projet.
 
     ::: moniker range=">=vs-2019"
-    Tapez **Ctrl+Q** pour ouvrir la zone de recherche, tapez **Node.js**, puis choisissez **Application web Node.js vide** (JavaScript). Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
+    Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **Ctrl+Q** pour ouvrir la zone de recherche, tapez **Node.js**, puis choisissez **Application web Node.js vide** (JavaScript). Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans la boîte de dialogue **Nouveau projet**, développez **JavaScript**, puis choisissez **Node.js**. Dans le volet central, choisissez **Application web Node.js vide**, tapez le nom **NodejsWebAppBlank**, puis choisissez **OK**.
@@ -324,7 +324,12 @@ Chaque fois que vous apportez des changements à *app.tsx*, vous devez réexécu
 
 1. Sélectionnez Chrome comme cible de débogage active.
 
+    ::: moniker range=">=vs-2019"
+    ![Sélectionner Chrome en tant que cible de débogage](../javascript/media/vs-2019/tutorial-nodejs-react-debug-target.png)
+    ::: moniker-end
+    ::: moniker range="vs-2017"
     ![Sélectionner Chrome en tant que cible de débogage](../javascript/media/tutorial-nodejs-react-debug-target.png)
+    ::: moniker-end
 
     Si Chrome est disponible sur votre ordinateur, mais n’apparaît pas dans les options, choisissez **Naviguer avec** dans la liste déroulante des cibles de débogage et sélectionnez Chrome comme cible de navigateur par défaut (choisissez **Définir comme programme par défaut**).
 
@@ -369,6 +374,11 @@ Dans la section précédente, vous avez attaché le débogueur au code Node.js c
     `chrome.exe --remote-debugging-port=9222`
 
     Chrome démarre avec l’activation du débogage.
+
+    ::: moniker range=">=vs-2019"
+    > [!NOTE]
+    > Vous pouvez également définir l’indicateur `--remote-debugging-port` au lancement du navigateur en sélectionnant **Parcourir avec… >** dans la barre d’outils **Déboguer**, puis en choisissant **Ajouter** et en définissant l’indicateur dans le champ **Arguments**. Utilisez un autre nom convivial pour le navigateur, par exemple **Chrome avec débogage**. Pour plus d’informations, voir les [Notes de publication](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview#browser-cli-params-support).
+    ::: moniker-end
 
 3. Passez à Visual Studio et définissez un point d’arrêt dans le code d’*app-bundle.js*, dans la fonction `render()`, comme indiqué dans l’illustration suivante :
 

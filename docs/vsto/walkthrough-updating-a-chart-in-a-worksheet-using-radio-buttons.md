@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 791908c4e5c85a9d1b5210eb950394273bda184c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f07987a0c7debdb44c2da442ce6b598f8a78dea0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602063"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097217"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>Procédure pas à pas : Mise à jour d’un graphique dans une feuille de calcul à l’aide de cases d’option
   Cette procédure pas à pas montre les principes fondamentaux de l’utilisation de cases d’option sur une feuille de calcul Microsoft Office Excel pour donner à l’utilisateur permet de basculer rapidement entre les options. Dans ce cas, les options changent le style d’un graphique.
@@ -30,9 +30,9 @@ ms.locfileid: "56602063"
 
  Cette procédure pas à pas décrit les tâches suivantes :
 
--   Ajout d’un groupe de cases d’option à une feuille de calcul.
+- Ajout d’un groupe de cases d’option à une feuille de calcul.
 
--   Changement de style de graphique quand une option est sélectionnée.
+- Changement de style de graphique quand une option est sélectionnée.
 
 > [!NOTE]
 >  Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
@@ -40,9 +40,9 @@ ms.locfileid: "56602063"
 ## <a name="prerequisites"></a>Prérequis
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] ou [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] ou [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
 ## <a name="add-a-chart-to-a-worksheet"></a>Ajouter un graphique à une feuille de calcul
  Vous pouvez créer un projet de classeur Excel qui personnalise un classeur existant. Dans cette procédure pas à pas, vous ajoutez un graphique à un classeur et ensuite utiliser ce classeur dans une nouvelle solution Excel. La source de données dans cette procédure pas à pas est une feuille de calcul nommée **les données de graphique**.
@@ -68,21 +68,21 @@ ms.locfileid: "56602063"
 
 ### <a name="to-add-a-chart-in-excel"></a>Pour ajouter un graphique dans Excel
 
-1.  Sur le **insérer** sous l’onglet le **graphiques** de groupe, cliquez sur **colonne**, puis cliquez sur **tous les Types de graphiques**.
+1. Sur le **insérer** sous l’onglet le **graphiques** de groupe, cliquez sur **colonne**, puis cliquez sur **tous les Types de graphiques**.
 
-2.  Dans le **insérer un graphique** boîte de dialogue, cliquez sur **OK**.
+2. Dans le **insérer un graphique** boîte de dialogue, cliquez sur **OK**.
 
-3.  Sur le **conception** sous l’onglet le **données** de groupe, cliquez sur **sélectionner les données**.
+3. Sur le **conception** sous l’onglet le **données** de groupe, cliquez sur **sélectionner les données**.
 
-4.  Dans le **sélectionner une Source de données** boîte de dialogue, cliquez dans le **Chartdata plage** zone et désactivez toutes les sélections par défaut.
+4. Dans le **sélectionner une Source de données** boîte de dialogue, cliquez dans le **Chartdata plage** zone et désactivez toutes les sélections par défaut.
 
-5.  Dans le **les données de graphique** feuille, sélectionnez le bloc de cellules contenant les nombres, ce qui inclut A4 dans le coin supérieur gauche pour E8 dans le coin inférieur droit.
+5. Dans le **les données de graphique** feuille, sélectionnez le bloc de cellules contenant les nombres, ce qui inclut A4 dans le coin supérieur gauche pour E8 dans le coin inférieur droit.
 
-6.  Dans le **sélectionner une Source de données** boîte de dialogue, cliquez sur **OK**.
+6. Dans le **sélectionner une Source de données** boîte de dialogue, cliquez sur **OK**.
 
-7.  Repositionnez le graphique afin que l’angle supérieur droit s’aligne avec la cellule **E2**.
+7. Repositionnez le graphique afin que l’angle supérieur droit s’aligne avec la cellule **E2**.
 
-8.  Enregistrez votre fichier sur le lecteur C et nommez-le **ExcelChart.xlsx**.
+8. Enregistrez votre fichier sur le lecteur C et nommez-le **ExcelChart.xlsx**.
 
 9. Quittez Excel.
 
@@ -91,13 +91,13 @@ ms.locfileid: "56602063"
 
 ### <a name="to-create-a-new-project"></a>Pour créer un projet
 
-1.  Créer un projet de classeur Excel portant le nom **mon graphique Excel**. Dans l’Assistant, sélectionnez **copier un document existant**.
+1. Créer un projet de classeur Excel portant le nom **mon graphique Excel**. Dans l’Assistant, sélectionnez **copier un document existant**.
 
      Pour plus d'informations, voir [Procédure : Créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2.  Cliquez sur le **Parcourir** bouton et recherchez le classeur que vous avez créé précédemment dans cette procédure pas à pas.
+2. Cliquez sur le **Parcourir** bouton et recherchez le classeur que vous avez créé précédemment dans cette procédure pas à pas.
 
-3.  Cliquez sur **OK**.
+3. Cliquez sur **OK**.
 
      Visual Studio ouvre le nouveau classeur Excel dans le concepteur et ajoute le **mon graphique Excel** projet **l’Explorateur de solutions**.
 
@@ -106,7 +106,7 @@ ms.locfileid: "56602063"
 
 ### <a name="to-change-the-name-of-the-chart-control"></a>Pour modifier le nom du contrôle Chart
 
-1.  Sélectionnez le <xref:Microsoft.Office.Tools.Excel.Chart> dans le Concepteur de contrôler et de modifier les propriétés suivantes dans le **propriétés** fenêtre.
+1. Sélectionnez le <xref:Microsoft.Office.Tools.Excel.Chart> dans le Concepteur de contrôler et de modifier les propriétés suivantes dans le **propriétés** fenêtre.
 
     |Propriété|Value|
     |--------------|-----------|
@@ -120,11 +120,11 @@ ms.locfileid: "56602063"
 
 ### <a name="to-add-a-user-control"></a>Pour ajouter un contrôle utilisateur
 
-1.  Sélectionnez le **mon graphique Excel** projet **l’Explorateur de solutions**.
+1. Sélectionnez le **mon graphique Excel** projet **l’Explorateur de solutions**.
 
-2.  Dans le menu **Projet** , cliquez sur **Ajouter un nouvel élément**.
+2. Dans le menu **Projet** , cliquez sur **Ajouter un nouvel élément**.
 
-3.  Dans le **ajouter un nouvel élément** boîte de dialogue, cliquez sur **contrôle utilisateur**, nommez le contrôle **ChartOptions** et cliquez sur **ajouter**.
+3. Dans le **ajouter un nouvel élément** boîte de dialogue, cliquez sur **contrôle utilisateur**, nommez le contrôle **ChartOptions** et cliquez sur **ajouter**.
 
 ### <a name="to-add-radio-buttons-to-the-user-control"></a>Pour ajouter des cases d’option au contrôle utilisateur
 
@@ -132,30 +132,24 @@ ms.locfileid: "56602063"
 
 2. À partir de la **contrôles communs** onglet de la **boîte à outils**, faites glisser un **case** contrôler au contrôle utilisateur et modifiez les propriétés suivantes.
 
-
    | Propriété | Value |
    |----------|------------------|
    | **Name** | **columnChart** |
    | **Text** | **Histogramme** |
 
-
 3. Ajoutez un deuxième bouton de case d’option au contrôle utilisateur et modifiez les propriétés suivantes.
-
 
    | Propriété | Value |
    |----------|---------------|
    | **Name** | **barChart** |
    | **Text** | **Graphique à barres** |
 
-
 4. Ajoutez une troisième case vers le contrôle utilisateur et modifiez les propriétés suivantes.
-
 
    | Propriété | Value |
    |----------|----------------|
    | **Name** | **lineChart** |
    | **Text** | **Graphique en courbes** |
-
 
 5. Ajouter un bouton radio quatrième au contrôle utilisateur et modifiez les propriétés suivantes.
 
@@ -171,36 +165,36 @@ ms.locfileid: "56602063"
 
 ### <a name="to-create-an-event-and-property-on-a-user-control"></a>Pour créer un événement et une propriété sur un contrôle utilisateur
 
-1.  Dans **l’Explorateur de solutions**, cliquez sur le contrôle utilisateur, puis cliquez sur **afficher le Code**.
+1. Dans **l’Explorateur de solutions**, cliquez sur le contrôle utilisateur, puis cliquez sur **afficher le Code**.
 
-2.  Ajouter du code pour le `ChartOptions` classe pour créer un `SelectionChanged` événement et le `Selection` propriété.
+2. Ajouter du code pour le `ChartOptions` classe pour créer un `SelectionChanged` événement et le `Selection` propriété.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#13](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#13)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#13](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#13)]
 
 ### <a name="to-handle-the-checkedchanged-event-of-the-radio-buttons"></a>Pour gérer l’événement CheckedChanged des boutons radio
 
-1.  Définissez le type de graphique dans le gestionnaire d’événements `CheckedChanged` de la case d'option `areaBlockChart`, puis déclenchez l'événement.
+1. Définissez le type de graphique dans le gestionnaire d’événements `CheckedChanged` de la case d'option `areaBlockChart`, puis déclenchez l'événement.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#14](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#14)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#14](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#14)]
 
-2.  Définissez le type de graphique dans le gestionnaire d’événements `CheckedChanged` de la case d'option `barChart`.
+2. Définissez le type de graphique dans le gestionnaire d’événements `CheckedChanged` de la case d'option `barChart`.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#15](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#15)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#15](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#15)]
 
-3.  Définissez le type de graphique dans le gestionnaire d’événements `CheckedChanged` de la case d'option `columnChart`.
+3. Définissez le type de graphique dans le gestionnaire d’événements `CheckedChanged` de la case d'option `columnChart`.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#16](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#16)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#16](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#16)]
 
-4.  Définissez le type de graphique dans le gestionnaire d’événements `CheckedChanged` de la case d'option `lineChart`.
+4. Définissez le type de graphique dans le gestionnaire d’événements `CheckedChanged` de la case d'option `lineChart`.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#17](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#17)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#17)]
 
-5.  En C#, vous devez ajouter des gestionnaires d'événements pour les cases d'option. Vous pouvez ajouter du code au constructeur `ChartOptions`, sous l'appel à `InitializeComponent`. Pour plus d’informations sur la création de gestionnaires d’événements, consultez [Comment : Créer des gestionnaires d’événements dans les projets Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
+5. En C#, vous devez ajouter des gestionnaires d'événements pour les cases d'option. Vous pouvez ajouter du code au constructeur `ChartOptions`, sous l'appel à `InitializeComponent`. Pour plus d’informations sur la création de gestionnaires d’événements, consultez [Comment : Créer des gestionnaires d’événements dans les projets Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#18)]
 
@@ -209,29 +203,29 @@ ms.locfileid: "56602063"
 
 ### <a name="to-add-the-user-control-your-worksheet"></a>Pour ajouter le contrôle utilisateur à votre feuille de calcul
 
-1.  Dans le menu **Générer** , cliquez sur **Générer la solution**.
+1. Dans le menu **Générer** , cliquez sur **Générer la solution**.
 
      Le **ChartOptions** contrôle utilisateur est ajouté à la **boîte à outils**.
 
-2.  Dans **l’Explorateur de solutions**, avec le bouton droit **Sheet1.vb** ou **Sheet1.cs**, puis cliquez sur **Concepteur de vues**.
+2. Dans **l’Explorateur de solutions**, avec le bouton droit **Sheet1.vb** ou **Sheet1.cs**, puis cliquez sur **Concepteur de vues**.
 
-3.  Faites glisser le **ChartOptions** contrôle depuis la **boîte à outils** à la feuille de calcul.
+3. Faites glisser le **ChartOptions** contrôle depuis la **boîte à outils** à la feuille de calcul.
 
      Un nouveau contrôle nommé `my_Excel_Chart_ChartOptions1` est ajouté à votre projet.
 
-4.  Modifier le nom du contrôle à **ChartOptions1**.
+4. Modifier le nom du contrôle à **ChartOptions1**.
 
 ## <a name="change-the-chart-type"></a>Modifier le type de graphique
  Pour modifier le type de graphique, créez un gestionnaire d’événements qui définit le style en fonction de l’option sélectionnée dans le contrôle utilisateur.
 
 ### <a name="to-change-the-type-of-chart-that-is-displayed-in-the-worksheet"></a>Pour modifier le type de graphique qui est affiché dans la feuille de calcul
 
-1.  Ajoutez le gestionnaire d'événements suivant à la classe `Sheet1`.
+1. Ajoutez le gestionnaire d'événements suivant à la classe `Sheet1`.
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#19](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#19)]
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#19)]
 
-2.  En c#, vous devez ajouter un gestionnaire d’événements pour le contrôle utilisateur à la <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> événement comme indiqué ci-dessous. Pour plus d’informations sur la création de gestionnaires d’événements, consultez [Comment : Créer des gestionnaires d’événements dans les projets Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
+2. En c#, vous devez ajouter un gestionnaire d’événements pour le contrôle utilisateur à la <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> événement comme indiqué ci-dessous. Pour plus d’informations sur la création de gestionnaires d’événements, consultez [Comment : Créer des gestionnaires d’événements dans les projets Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
      [!code-cs[Trin_VstcoreProgrammingControlsExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#20)]
 
@@ -240,20 +234,20 @@ ms.locfileid: "56602063"
 
 ### <a name="to-test-your-workbook"></a>Pour tester votre classeur
 
-1.  Appuyez sur **F5** pour exécuter votre projet.
+1. Appuyez sur **F5** pour exécuter votre projet.
 
-2.  Sélectionnez plusieurs cases d'option.
+2. Sélectionnez plusieurs cases d'option.
 
-3.  Confirmez que le style de graphique change pour refléter la sélection.
+3. Confirmez que le style de graphique change pour refléter la sélection.
 
 ## <a name="next-steps"></a>Étapes suivantes
  Cette procédure pas à pas montre les principes fondamentaux de l’utilisation de cases d’option et des styles de graphique sur les feuilles de calcul. Voici quelques tâches susceptibles de venir après :
 
--   Déploiement du projet. Pour plus d’informations, consultez [déployer une solution Office](../vsto/deploying-an-office-solution.md).
+- Déploiement du projet. Pour plus d’informations, consultez [déployer une solution Office](../vsto/deploying-an-office-solution.md).
 
--   Utilisation d'un bouton pour renseigner une zone de texte. Pour plus d’informations, consultez [Procédure pas à pas : Afficher du texte dans une zone de texte dans une feuille de calcul à l’aide d’un bouton](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md).
+- Utilisation d'un bouton pour renseigner une zone de texte. Pour plus d’informations, consultez [Procédure pas à pas : Afficher du texte dans une zone de texte dans une feuille de calcul à l’aide d’un bouton](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md).
 
--   Modifier la mise en forme sur une feuille de calcul à l’aide des cases à cocher. Pour plus d’informations, consultez [Procédure pas à pas : Modifier le format de feuille de calcul à l’aide de contrôles CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).
+- Modifier la mise en forme sur une feuille de calcul à l’aide des cases à cocher. Pour plus d’informations, consultez [Procédure pas à pas : Modifier le format de feuille de calcul à l’aide de contrôles CheckBox](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md).
 
 ## <a name="see-also"></a>Voir aussi
 - [Procédures pas à pas utilisant Excel](../vsto/walkthroughs-using-excel.md)

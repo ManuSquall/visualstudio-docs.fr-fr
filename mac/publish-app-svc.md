@@ -1,6 +1,6 @@
 ---
 title: Publier sur Azure App Service
-ms.date: 01/17/2019
+ms.date: 04/02/2019
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, website
@@ -12,12 +12,12 @@ ms.prod: visual-studio-mac
 ms.custom: video
 ms.workload:
 - azure
-ms.openlocfilehash: 8cc0678dbb3e55d80f51e457f141c7f2dc5a12d9
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: d6e4e605a838ef354b8aef7227d2825fef8b7e7f
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844267"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856299"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Publier une application web sur Azure App Service à l’aide de Visual Studio pour Mac
 
@@ -25,9 +25,9 @@ Vous pouvez utiliser l’outil Publier pour publier des applications ASP.NET Cor
 
 ## <a name="prerequisites"></a>Prérequis
 
- - [Visual Studio 2017 pour Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2017) installé et ASP.NET Core activé.
+ - [Visual Studio 2019 pour Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2019) installé et ASP.NET Core activé.
  - Un abonnement Azure. Si vous n’avez pas encore d’abonnement, [inscrivez-vous gratuitement](https://azure.microsoft.com/free/dotnet/) et bénéficiez de 200 $ de crédit pendant 30 jours et de 12 mois de services gratuits.
- - Un projet ASP.NET Core. Si vous n’avez pas encore de projet, vous pouvez en [créer un](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2017).
+ - Un projet ASP.NET Core. Si vous n’avez pas encore de projet, vous pouvez en [créer un](~/create-new-projects.md).
 
 ## <a name="publish-to-azure-app-service"></a>Publier sur Azure App Service
 

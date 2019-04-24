@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0a3619e911ffcf730012ee26d26783b6a7596704
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 04f6c78f3733bbc8aab3aec5811f1eb643ecca4e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951444"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056612"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Procédure : Installer des prérequis avec une application ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,31 +41,31 @@ Tous les [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] applications req
   
 ### <a name="to-specify-prerequisites-to-install-with-a-clickonce-application"></a>Pour spécifier les composants requis à installer avec une application ClickOnce  
   
-1.  Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
+1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
   
-2.  Sélectionnez le **publier** volet.  
+2. Sélectionnez le **publier** volet.  
   
-3.  Cliquez sur le **prérequis** bouton pour ouvrir la **conditions préalables** boîte de dialogue.  
+3. Cliquez sur le **prérequis** bouton pour ouvrir la **conditions préalables** boîte de dialogue.  
   
-4.  Dans la boîte de dialogue **Composants requis** , vérifiez que la case à cocher **Créer un programme d'installation des composants requis** est activée.  
+4. Dans la boîte de dialogue **Composants requis** , vérifiez que la case à cocher **Créer un programme d'installation des composants requis** est activée.  
   
-5.  Dans le **prérequis** liste, vérifiez les composants que vous souhaitez installer, puis cliquez sur **OK**.  
+5. Dans le **prérequis** liste, vérifiez les composants que vous souhaitez installer, puis cliquez sur **OK**.  
   
      Les composants sélectionnés seront empaquetés et publiés en même temps que votre application.  
   
 ### <a name="to-specify-a-different-download-location-for-prerequisites"></a>Pour spécifier un autre emplacement de téléchargement pour les composants requis  
   
-1.  Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
+1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
   
-2.  Sélectionnez le **publier** volet.  
+2. Sélectionnez le **publier** volet.  
   
-3.  Cliquez sur le **prérequis** bouton pour ouvrir la **conditions préalables** boîte de dialogue.  
+3. Cliquez sur le **prérequis** bouton pour ouvrir la **conditions préalables** boîte de dialogue.  
   
-4.  Dans la boîte de dialogue **Composants requis** , vérifiez que la case à cocher **Créer un programme d'installation des composants requis** est activée.  
+4. Dans la boîte de dialogue **Composants requis** , vérifiez que la case à cocher **Créer un programme d'installation des composants requis** est activée.  
   
-5.  Dans le **spécifier l’emplacement d’installation des composants requis** section, sélectionnez **télécharger les composants requis depuis l’emplacement suivant**.  
+5. Dans le **spécifier l’emplacement d’installation des composants requis** section, sélectionnez **télécharger les composants requis depuis l’emplacement suivant**.  
   
-6.  Sélectionnez un emplacement dans la liste déroulante, ou entrez une URL, un chemin d’accès de fichier ou un emplacement FTP, puis cliquez sur **OK.**  
+6. Sélectionnez un emplacement dans la liste déroulante, ou entrez une URL, un chemin d’accès de fichier ou un emplacement FTP, puis cliquez sur **OK.**  
   
     > [!NOTE]
     >  Il se peut que vous devez vous assurer que les programmes d’installation pour les composants spécifiés existent à l’emplacement spécifié.  

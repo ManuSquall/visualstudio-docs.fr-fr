@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cf4a781bee0d0ccb1acd7d9c6b035acac603aea3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 82e82a75ce5ecff8e9b7e6d0b6aaf2e29728fc45
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696699"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049059"
 ---
 # <a name="debug-at-design-time-in-visual-studio-c-c-visual-basic-f"></a>Déboguer au moment du design dans Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -33,7 +33,7 @@ Pour déboguer le code XAML derrière une application à partir du concepteur XA
 
 Vous pouvez utiliser Visual Studio **immédiat** fenêtre pour exécuter une fonction ou une sous-routine sans exécuter votre application. Si la fonction ou une sous-routine contient un point d’arrêt, Visual Studio s’arrête au point d’arrêt. Vous pouvez ensuite utiliser les fenêtres du débogueur pour examiner l’état de votre programme. Cette fonctionnalité est appelée *débogage au moment du design*.
 
-L’exemple suivant est en Visual Basic. Vous pouvez également utiliser le **immédiat** fenêtre au moment du design dans C#, F#et les applications C++.
+L’exemple suivant est en Visual Basic. Vous pouvez également utiliser le **immédiat** fenêtre au moment du design dans C#, F#, et C++ applications.
 
 1. Collez le code suivant dans une application de console Visual Basic vide :
 
@@ -102,6 +102,7 @@ Dans certains scénarios de liaison de données déclarative, il peut vous aider
     ```xaml
     <TextBlock Text="{Binding title, ConverterParameter=lower, Converter={StaticResource StringFormatConverter}, Mode=TwoWay}"  />
     ```
+
    Lorsque la page se charge, le point d’arrêt est atteint.
 
 ## <a name="see-also"></a>Voir aussi

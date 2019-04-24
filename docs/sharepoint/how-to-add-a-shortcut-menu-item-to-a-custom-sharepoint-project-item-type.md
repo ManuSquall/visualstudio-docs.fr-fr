@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e28c5802b866c7fea0b1e079e2d22aecee60e690
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7de1bf04137c0e799e19e658307d630ec3fa6a78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621537"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068741"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type"></a>Procédure : Ajouter un élément de menu contextuel à un type d’élément de projet SharePoint personnalisé
   Lorsque vous définissez un type d’élément de projet SharePoint personnalisé, vous pouvez ajouter un élément de menu contextuel pour l’élément de projet. L’élément de menu s’affiche quand un utilisateur clique sur l’élément de projet dans **l’Explorateur de solutions**.
@@ -28,11 +28,11 @@ ms.locfileid: "56621537"
 
 ### <a name="to-add-a-shortcut-menu-item-to-a-custom-project-item-type"></a>Pour ajouter un élément de menu contextuel à un type d’élément de projet personnalisé
 
-1.  Dans le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> méthode de votre <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> implémentation, gérez le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemMenuItemsRequested> événements de la *projectItemTypeDefinition* paramètre.
+1. Dans le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> méthode de votre <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> implémentation, gérez le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemMenuItemsRequested> événements de la *projectItemTypeDefinition* paramètre.
 
-2.  Dans votre gestionnaire d’événements pour le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemMenuItemsRequested> événement, ajoutez une nouvelle <xref:Microsoft.VisualStudio.SharePoint.IMenuItem> de l’objet à la <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemMenuItemsRequestedEventArgs.ViewMenuItems%2A> ou <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemMenuItemsRequestedEventArgs.AddMenuItems%2A> collection l’arguments du paramètre d’événement.
+2. Dans votre gestionnaire d’événements pour le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemMenuItemsRequested> événement, ajoutez une nouvelle <xref:Microsoft.VisualStudio.SharePoint.IMenuItem> de l’objet à la <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemMenuItemsRequestedEventArgs.ViewMenuItems%2A> ou <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemMenuItemsRequestedEventArgs.AddMenuItems%2A> collection l’arguments du paramètre d’événement.
 
-3.  Dans le <xref:Microsoft.VisualStudio.SharePoint.IMenuItem.Click> Gestionnaire d’événements pour le nouveau <xref:Microsoft.VisualStudio.SharePoint.IMenuItem> de l’objet, effectuez les tâches à exécuter lorsqu’un utilisateur choisit de votre élément de menu contextuel.
+3. Dans le <xref:Microsoft.VisualStudio.SharePoint.IMenuItem.Click> Gestionnaire d’événements pour le nouveau <xref:Microsoft.VisualStudio.SharePoint.IMenuItem> de l’objet, effectuez les tâches à exécuter lorsqu’un utilisateur choisit de votre élément de menu contextuel.
 
 ## <a name="example"></a>Exemple
  L’exemple de code suivant montre comment ajouter un élément de menu contextuel à un type d’élément de projet personnalisé. Lorsque l’utilisateur ouvre le menu contextuel à partir de l’élément de projet dans **l’Explorateur de solutions** et choisit le **écrire le Message dans la fenêtre sortie** élément de menu, Visual Studio affiche un message dans le **sortie**  fenêtre.
@@ -45,9 +45,9 @@ ms.locfileid: "56621537"
 ## <a name="compile-the-code"></a>Compiler le code
  Cet exemple requiert un projet de bibliothèque de classes avec des références aux assemblys suivants :
 
--   Microsoft.VisualStudio.SharePoint
+- Microsoft.VisualStudio.SharePoint
 
--   System.ComponentModel.Composition
+- System.ComponentModel.Composition
 
 ## <a name="deploy-the-project-item"></a>Déployer l’élément de projet
  Pour activer les autres développeurs d’utiliser votre élément de projet, créez un modèle de projet ou un modèle d’élément de projet. Pour plus d’informations, consultez [créer des modèles de projet pour les éléments de projet SharePoint et de modèles d’élément](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).

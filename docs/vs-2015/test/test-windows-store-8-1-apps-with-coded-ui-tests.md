@@ -8,12 +8,12 @@ ms.assetid: c8d9c15e-ce3c-401a-86ec-c5c124a239d8
 caps.latest.revision: 26
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e8d7f1bf475dca7ed0e06e4b3ebb045b0513d5b7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 827f7b136fb5b9c8de96145e1d8edba7b46b3f72
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799295"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114663"
 ---
 # <a name="test-windows-uwp-and-81-store-apps-with-coded-ui-tests"></a>Tester des applications Windows UWP et des applications du Windows Store 8.1 avec des tests codés de l’interface utilisateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ Utilisez cette procédure pas à pas afin de créer des tests de l’interface u
   
 ## <a name="create-a-simple-windows-store-app"></a>Créer une application du Windows Store simple  
   
-1.  Si vous souhaitez exécuter des tests codés de l’interface utilisateur pour vos applications du Windows Store en XAML, vous devez [définir une propriété d’automation unique qui identifie chaque contrôle](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md).  
+1. Si vous souhaitez exécuter des tests codés de l’interface utilisateur pour vos applications du Windows Store en XAML, vous devez [définir une propriété d’automation unique qui identifie chaque contrôle](../test/set-a-unique-automation-property-for-windows-store-controls-for-testing.md).  
   
      Dans le menu **Outils** , pointez sur **Options** , choisissez **Éditeur de texte**, **XAML**, puis **Divers**.  
   
@@ -30,15 +30,15 @@ Utilisez cette procédure pas à pas afin de créer des tests de l’interface u
   
      ![Options XAML diverses](../test/media/cuit-windowsstoreapp-b.png "CUIT_WindowsStoreApp_B")  
   
-2.  Créez un projet pour une application du Windows Store vide en XAML à l’aide d’un modèle Visual C# ou Visual Basic.  
+2. Créez un projet pour une application du Windows Store vide en XAML à l’aide d’un modèle Visual C# ou Visual Basic.  
   
      ![Créer une application du Windows Store vide &#40;XAML&#41;](../test/media/cuit-windowsstoreapp-newproject-blankstoreapp.png "CUIT_WindowsStoreApp_NewProject_BlankStoreApp")  
   
-3.  Dans l’Explorateur de solutions, ouvrez MainPage.xaml. Dans la barre d’outils, faites glisser un contrôle bouton et un contrôle textbox sur l’aire de conception.  
+3. Dans l’Explorateur de solutions, ouvrez MainPage.xaml. Dans la barre d’outils, faites glisser un contrôle bouton et un contrôle textbox sur l’aire de conception.  
   
      ![Concevoir l’application du Windows Store](../test/media/cuit-windowsstoreapp-design.png "CUIT_WindowsStoreApp_Design")  
   
-4.  Double-cliquez sur le contrôle bouton et ajoutez le code suivant :  
+4. Double-cliquez sur le contrôle bouton et ajoutez le code suivant :  
   
     ```csharp  
     private void button_Click_1(object sender, RoutedEventArgs e)  
@@ -58,7 +58,7 @@ Utilisez cette procédure pas à pas afin de créer des tests de l’interface u
     End Class  
     ```  
   
-5.  Appuyez sur F5 pour exécuter votre application du Windows Store.  
+5. Appuyez sur F5 pour exécuter votre application du Windows Store.  
   
 ## <a name="create-and-run-a-coded-ui-test-for-the-windows-store-app"></a>Créer et exécuter un test codé de l’interface utilisateur pour l’application du Windows Store  
 
@@ -294,22 +294,22 @@ Utilisez cette procédure pas à pas afin de créer des tests de l’interface u
   
 ## <a name="q--a"></a>Questions et réponses  
   
--   **Q : pourquoi l’option d’enregistrement de mon test codé de l’interface utilisateur ne figure-t-elle pas dans la boîte de dialogue Générer le code pour le test codé de l’interface utilisateur ?**  
+- **Q : Pourquoi ne pas voir l’option d’enregistrement de mon test codé de l’interface utilisateur de générer le Code pour une boîte de dialogue de Test codé de l’interface utilisateur ?**  
   
-     **R**: l’option d’enregistrement n’est pas prise en charge pour les applications du Windows Store.  
+     **R** : L’option d’enregistrement n’est pas pris en charge pour les applications du Windows Store.  
   
--   **Q : puis-je créer un test codé de l’interface utilisateur pour mes applications du Windows Store basées sur WinJS ?**  
+- **Q : Puis-je créer un test codé de l’interface utilisateur pour mes applications du Windows Store basées sur WinJS ?**  
   
-     **R**: non, seules les applications XAML sont prises en charge.  
+     **R** : Non, seules les applications XAML de base sont pris en charge.  
   
--   **Q : puis-je créer des tests codés de l’interface utilisateur pour mes applications du Windows Store sur un système qui n’exécute pas Windows 8.1 ou Windows 10 ?**  
+- **Q : Puis-je créer des tests codés d’IU pour mes applications du Windows Store sur un système qui n’exécute pas Windows 8.1 ou Windows 10 ?**  
   
-     **R**: non, les modèles Projet de test codé de l’interface utilisateur sont disponibles seulement sur Windows 8.1 et Windows 10. Pour créer l’automation pour les applications de plateforme Windows universelle, vous aurez besoin de Windows 10.  
+     **R** : Non, les modèles de projet de Test codé de l’interface utilisateur ne sont uniquement disponibles sur Windows 8.1 et Windows 10. Pour créer l’automation pour les applications de plateforme Windows universelle, vous aurez besoin de Windows 10.  
 
 <a name="uwpapps"></a>
-- **Q : comment créer des tests codés de l’interface utilisateur pour les applications de plateforme Windows universelle (UWP) ?**  
+- **Q : Comment créer des tests codés d’IU pour les applications de plateforme universelle Windows (UWP) ?**  
   
-   **R**: selon la plateforme où vous testez votre application de plateforme Windows universelle, créez le projet de test codé de l’interface utilisateur de l’une des façons suivantes :  
+   **R** : Selon la plateforme où vous testez votre application UWP, créez le projet de test codé de l’interface utilisateur dans une des manières suivantes :  
   
   - Une application de plateforme Windows universelle s’exécutant sur un ordinateur local s’exécutera comme une application de Store. Pour tester, vous devez utiliser le modèle **Projet de test codé de l’interface utilisateur (Windows)** . Pour trouver ce modèle quand vous créez un projet, accédez au nœud **Windows**, **Universel** . Vous pouvez aussi accéder au nœud **Windows**, **Windows 8**, **Windows** .  
   
@@ -317,9 +317,9 @@ Utilisez cette procédure pas à pas afin de créer des tests de l’interface u
   
     Une fois le projet créé, la création d’un test se fait de la même façon qu’auparavant.  
   
-- **Q : pourquoi ne puis-je pas modifier le code du fichier UIMap.Designer ?**  
+- **Q : Pourquoi ne puis-je pas modifier le code dans le fichier UIMap.Designer ?**  
   
-   **R**: toutes les modifications de code que vous effectuez dans le fichier UIMapDesigner.cs sont remplacées chaque fois que vous générez du code dans UIMap - Générateur de test codé de l’interface utilisateur. Si vous devez modifier une méthode enregistrée, vous devez la copier dans le fichier UIMap.cs et la renommer. Le fichier UIMap.cs peut être utilisé pour remplacer les méthodes et les propriétés dans le fichier UIMapDesigner.cs. Vous devez supprimer la référence à la méthode d’origine dans le fichier Coded UITest.cs et la remplacer par le nom de la méthode renommée.  
+   **R** : Toutes les modifications de code que vous effectuées dans le fichier UIMapDesigner.cs seront remplacées chaque fois que vous générez du code dans UIMap - Générateur de test codé de l'interface utilisateur. Si vous devez modifier une méthode enregistrée, vous devez la copier dans le fichier UIMap.cs et la renommer. Le fichier UIMap.cs peut être utilisé pour remplacer les méthodes et les propriétés dans le fichier UIMapDesigner.cs. Vous devez supprimer la référence à la méthode d’origine dans le fichier Coded UITest.cs et la remplacer par le nom de la méthode renommée.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Utiliser UI Automation pour tester votre code](../test/use-ui-automation-to-test-your-code.md)   

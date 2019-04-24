@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 377660b32f8edbb26e8a062d55ee152132f7f587
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 8ae22475fa488d93ac4660fdc0cf567f50b32029
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707079"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052114"
 ---
 # <a name="walkthrough-implement-code-snippets"></a>Procédure pas à pas : Implémenter des extraits de code
 Vous pouvez créer des extraits de code et incluez-les dans une extension de l’éditeur, afin que les utilisateurs de l’extension de les ajouter à leur propre code.
@@ -109,33 +109,33 @@ Vous pouvez créer des extraits de code et incluez-les dans une extension de l�
 
 ### <a name="to-register-code-snippets-for-a-specific-guid"></a>Pour inscrire des extraits de code pour un GUID spécifique
 
-1.  Ouvrez le **CompletionTest** projet. Pour plus d’informations sur la création de ce projet, consultez [procédure pas à pas : Afficher la saisie semi-automatique des instructions](../extensibility/walkthrough-displaying-statement-completion.md).
+1. Ouvrez le **CompletionTest** projet. Pour plus d’informations sur la création de ce projet, consultez [procédure pas à pas : Afficher la saisie semi-automatique des instructions](../extensibility/walkthrough-displaying-statement-completion.md).
 
-2.  Dans le projet, ajoutez des références aux assemblys suivants :
+2. Dans le projet, ajoutez des références aux assemblys suivants :
 
-    -   Microsoft.VisualStudio.TextManager.Interop
+    - Microsoft.VisualStudio.TextManager.Interop
 
-    -   Microsoft.VisualStudio.TextManager.Interop.8.0
+    - Microsoft.VisualStudio.TextManager.Interop.8.0
 
-    -   microsoft.msxml
+    - microsoft.msxml
 
-3.  Dans le projet, ouvrez le **source.extension.vsixmanifest** fichier.
+3. Dans le projet, ouvrez le **source.extension.vsixmanifest** fichier.
 
-4.  Assurez-vous que le **actifs** onglet contient un **VsPackage** contenu type et qui **projet** est définie sur le nom du projet.
+4. Assurez-vous que le **actifs** onglet contient un **VsPackage** contenu type et qui **projet** est définie sur le nom du projet.
 
-5.  Sélectionnez le projet CompletionTest et dans la fenêtre Propriétés, définissez **générer le fichier Pkgdef** à **true**. Enregistrez le projet.
+5. Sélectionnez le projet CompletionTest et dans la fenêtre Propriétés, définissez **générer le fichier Pkgdef** à **true**. Enregistrez le projet.
 
-6.  Ajouter un mappage statique `SnippetUtilities` classe au projet.
+6. Ajouter un mappage statique `SnippetUtilities` classe au projet.
 
      [!code-csharp[VSSDKCompletionTest#22](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_1.cs)]
      [!code-vb[VSSDKCompletionTest#22](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_1.vb)]
 
-7.  Dans la classe SnippetUtilities, définir un GUID et attribuez-lui la valeur que vous avez utilisé dans le *SnippetsIndex.xml* fichier.
+7. Dans la classe SnippetUtilities, définir un GUID et attribuez-lui la valeur que vous avez utilisé dans le *SnippetsIndex.xml* fichier.
 
      [!code-csharp[VSSDKCompletionTest#23](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_2.cs)]
      [!code-vb[VSSDKCompletionTest#23](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_2.vb)]
 
-8.  Ajouter le <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> à la `TestCompletionHandler` classe. Cet attribut peut être ajouté à n’importe quelle classe (non statique) public ou interne dans le projet. (Vous devrez peut-être ajouter un `using` instruction pour l’espace de noms Microsoft.VisualStudio.Shell.)
+8. Ajouter le <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> à la `TestCompletionHandler` classe. Cet attribut peut être ajouté à n’importe quelle classe (non statique) public ou interne dans le projet. (Vous devrez peut-être ajouter un `using` instruction pour l’espace de noms Microsoft.VisualStudio.Shell.)
 
      [!code-csharp[VSSDKCompletionTest#24](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_3.cs)]
      [!code-vb[VSSDKCompletionTest#24](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_3.vb)]
@@ -147,14 +147,14 @@ Vous pouvez créer des extraits de code et incluez-les dans une extension de l�
 
 #### <a name="to-add-the-insert-snippet-command-to-the-shortcut-menu"></a>Pour ajouter la commande Insérer un extrait au menu contextuel
 
-1.  Ouvrez le `TestCompletionCommandHandler` fichier de classe.
+1. Ouvrez le `TestCompletionCommandHandler` fichier de classe.
 
      Étant donné que cette classe implémente <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>, vous pouvez activer le **insérer un extrait** commande dans le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> (méthode). Avant d’activer la commande, vérifiez que cette méthode n'est pas appelée à l’intérieur d’une fonction d’automatisation, car lorsque la **insérer un extrait** commande est activée, il affiche l’interface utilisateur du sélecteur extrait de code (IU).
 
      [!code-csharp[VSSDKCompletionTest#25](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_4.cs)]
      [!code-vb[VSSDKCompletionTest#25](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_4.vb)]
 
-2.  Générez et exécutez le projet. Dans l’instance expérimentale, ouvrez un fichier qui a le *.zzz* extension de nom de fichier et ensuite avec le bouton droit n’importe où dans celui-ci. Le **insérer un extrait** commande doit apparaître dans le menu contextuel.
+2. Générez et exécutez le projet. Dans l’instance expérimentale, ouvrez un fichier qui a le *.zzz* extension de nom de fichier et ensuite avec le bouton droit n’importe où dans celui-ci. Le **insérer un extrait** commande doit apparaître dans le menu contextuel.
 
 ## <a name="implement-snippet-expansion-in-the-snippet-picker-ui"></a>Implémenter l’expansion d’extrait de code dans l’interface utilisateur de sélecteur d’extrait de code
  Cette section montre comment implémenter l’expansion d’extrait de code afin que le sélecteur d’extraits de l’interface utilisateur est affiché lorsque **insérer un extrait** un clic sur le menu contextuel. Un extrait de code est également développé lorsqu’un utilisateur tape le raccourci d’extrait de code, puis appuie sur **onglet**.
@@ -165,42 +165,42 @@ Vous pouvez créer des extraits de code et incluez-les dans une extension de l�
 
 #### <a name="to-implement-snippet-expansion"></a>Pour implémenter l’expansion d’extrait de code
 
-1.  Dans le fichier qui contient le `TestCompletionCommandHandler` de classe, ajoutez le code suivant `using` instructions.
+1. Dans le fichier qui contient le `TestCompletionCommandHandler` de classe, ajoutez le code suivant `using` instructions.
 
      [!code-csharp[VSSDKCompletionTest#26](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_5.cs)]
      [!code-vb[VSSDKCompletionTest#26](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_5.vb)]
 
-2.  Rendre le `TestCompletionCommandHandler` implémentent la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient> interface.
+2. Rendre le `TestCompletionCommandHandler` implémentent la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionClient> interface.
 
      [!code-csharp[VSSDKCompletionTest#27](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_6.cs)]
      [!code-vb[VSSDKCompletionTest#27](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_6.vb)]
 
-3.  Dans le `TestCompletionCommandHandlerProvider` classe, importez le <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>.
+3. Dans le `TestCompletionCommandHandlerProvider` classe, importez le <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>.
 
      [!code-csharp[VSSDKCompletionTest#28](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_7.cs)]
      [!code-vb[VSSDKCompletionTest#28](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_7.vb)]
 
-4.  Ajouter des champs privés pour les interfaces d’extension de code et le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>.
+4. Ajouter des champs privés pour les interfaces d’extension de code et le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView>.
 
      [!code-csharp[VSSDKCompletionTest#29](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_8.cs)]
      [!code-vb[VSSDKCompletionTest#29](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_8.vb)]
 
-5.  Dans le constructeur de la `TestCompletionCommandHandler` de classe, définissez les champs suivants.
+5. Dans le constructeur de la `TestCompletionCommandHandler` de classe, définissez les champs suivants.
 
      [!code-csharp[VSSDKCompletionTest#30](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_9.cs)]
      [!code-vb[VSSDKCompletionTest#30](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_9.vb)]
 
-6.  Pour afficher le sélecteur d’extrait de code lorsque l’utilisateur clique sur le **insérer un extrait** de commande, ajoutez le code suivant à la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> (méthode). (Pour rendre cette explication plus lisible, le `Exec()`code qui est utilisé pour la saisie semi-automatique des instructions n’est pas affichée ; au lieu de cela, les blocs de code sont ajoutés à la méthode existante.) Ajoutez le bloc de code suivant après le code qui vérifie un caractère.
+6. Pour afficher le sélecteur d’extrait de code lorsque l’utilisateur clique sur le **insérer un extrait** de commande, ajoutez le code suivant à la <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> (méthode). (Pour rendre cette explication plus lisible, le `Exec()`code qui est utilisé pour la saisie semi-automatique des instructions n’est pas affichée ; au lieu de cela, les blocs de code sont ajoutés à la méthode existante.) Ajoutez le bloc de code suivant après le code qui vérifie un caractère.
 
      [!code-csharp[VSSDKCompletionTest#31](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_10.cs)]
      [!code-vb[VSSDKCompletionTest#31](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_10.vb)]
 
-7.  Si un extrait de code comporte des champs qui peuvent être parcourues, la session d’expansion est maintenue ouverte jusqu'à ce que l’expansion est acceptée explicitement ; Si l’extrait de code ne comporte aucun champ, la session est fermée et qu’elle est retournée en tant que `null` par le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.InvokeInsertionUI%2A> (méthode). Dans le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> (méthode), après le sélecteur d’extraits de code d’interface utilisateur que vous avez ajouté à l’étape précédente, ajoutez le code suivant pour gérer la navigation de l’extrait de code (lorsque l’utilisateur appuie sur **onglet** ou **MAJ** + **Onglet** après l’insertion d’extraits).
+7. Si un extrait de code comporte des champs qui peuvent être parcourues, la session d’expansion est maintenue ouverte jusqu'à ce que l’expansion est acceptée explicitement ; Si l’extrait de code ne comporte aucun champ, la session est fermée et qu’elle est retournée en tant que `null` par le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.InvokeInsertionUI%2A> (méthode). Dans le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> (méthode), après le sélecteur d’extraits de code d’interface utilisateur que vous avez ajouté à l’étape précédente, ajoutez le code suivant pour gérer la navigation de l’extrait de code (lorsque l’utilisateur appuie sur **onglet** ou **MAJ** + **Onglet** après l’insertion d’extraits).
 
      [!code-csharp[VSSDKCompletionTest#32](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_11.cs)]
      [!code-vb[VSSDKCompletionTest#32](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_11.vb)]
 
-8.  Pour insérer l’extrait de code lorsque l’utilisateur tape le raccourci correspondant, puis appuie sur **onglet**, ajoutez le code pour le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> (méthode). La méthode privée qui insère l’extrait de code s’affichera dans une étape ultérieure. Ajoutez le code suivant après le code de navigation que vous avez ajouté à l’étape précédente.
+8. Pour insérer l’extrait de code lorsque l’utilisateur tape le raccourci correspondant, puis appuie sur **onglet**, ajoutez le code pour le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> (méthode). La méthode privée qui insère l’extrait de code s’affichera dans une étape ultérieure. Ajoutez le code suivant après le code de navigation que vous avez ajouté à l’étape précédente.
 
      [!code-csharp[VSSDKCompletionTest#33](../extensibility/codesnippet/CSharp/walkthrough-implementing-code-snippets_12.cs)]
      [!code-vb[VSSDKCompletionTest#33](../extensibility/codesnippet/VisualBasic/walkthrough-implementing-code-snippets_12.vb)]
@@ -223,13 +223,13 @@ Vous pouvez créer des extraits de code et incluez-les dans une extension de l�
 ## <a name="build-and-test-code-snippet-expansion"></a>Générer et tester l’expansion d’extrait de code
  Vous pouvez tester si l’expansion d’extrait de code fonctionne dans votre projet.
 
-1.  Générez la solution. Lorsque vous exécutez ce projet dans le débogueur, une deuxième instance de Visual Studio est démarrée.
+1. Générez la solution. Lorsque vous exécutez ce projet dans le débogueur, une deuxième instance de Visual Studio est démarrée.
 
-2.  Ouvrez un fichier texte et tapez du texte.
+2. Ouvrez un fichier texte et tapez du texte.
 
-3.  Avec le bouton droit quelque part dans le texte, puis cliquez sur **insérer un extrait**.
+3. Avec le bouton droit quelque part dans le texte, puis cliquez sur **insérer un extrait**.
 
-4.  Le sélecteur d’extraits de l’interface utilisateur doit apparaître avec une fenêtre contextuelle qui dit **tester des champs de remplacement**. Double-cliquez sur la fenêtre contextuelle.
+4. Le sélecteur d’extraits de l’interface utilisateur doit apparaître avec une fenêtre contextuelle qui dit **tester des champs de remplacement**. Double-cliquez sur la fenêtre contextuelle.
 
      L’extrait de code suivant doit être inséré.
 
@@ -240,10 +240,10 @@ Vous pouvez créer des extraits de code et incluez-les dans une extension de l�
 
      N’appuyez pas sur **entrée** ou **ÉCHAP**.
 
-5.  Appuyez sur **onglet** et **MAJ**+**onglet** pour basculer entre « first » et « seconde ».
+5. Appuyez sur **onglet** et **MAJ**+**onglet** pour basculer entre « first » et « seconde ».
 
-6.  Accepter l’insertion en appuyant sur soit **entrée** ou **ÉCHAP**.
+6. Accepter l’insertion en appuyant sur soit **entrée** ou **ÉCHAP**.
 
-7.  Dans une autre partie du texte, tapez « test » et appuyez sur **onglet**. Étant donné que « test » est le raccourci d’extrait de code, l’extrait de code doit être inséré à nouveau.
+7. Dans une autre partie du texte, tapez « test » et appuyez sur **onglet**. Étant donné que « test » est le raccourci d’extrait de code, l’extrait de code doit être inséré à nouveau.
 
 ## <a name="next-steps"></a>Étapes suivantes

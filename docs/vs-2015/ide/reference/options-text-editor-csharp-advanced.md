@@ -20,17 +20,16 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fc7ad6952b0e09803e96296f2d91f2359d8d8961
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: ed1260d414c21d40bd0dc57f885cf5996594b7d6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54760014"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664545"
 ---
 # <a name="options-text-editor-c-advanced"></a>Options, Éditeur de texte, C#, Avancé
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Utilisez cette boîte de dialogue pour modifier les paramètres de mise en forme de l’éditeur, la refactorisation de code et les commentaires sur la documentation XML pour Visual C#. Pour accéder à cette boîte de dialogue, dans le menu **Outils**, cliquez sur **Options**, développez le dossier **Éditeur de texte**, développez **C#**, puis cliquez sur **Avancé**.  
   
 > [!NOTE]

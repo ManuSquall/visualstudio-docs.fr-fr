@@ -22,16 +22,15 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aeed612c94064eb9a364f9aa1d5fb6332bb0e77d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3546da7508767c6766b2caa0c96e6238f4cc6e90
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948769"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039016"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Lier des contrôles WPF à des données dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Vous pouvez afficher des données pour les utilisateurs de votre application en liant des données à des contrôles [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)]. Pour créer ces contrôles liés aux données, vous pouvez faire glisser des éléments à partir de la **des Sources de données** fenêtre vers le [!INCLUDE[wpfdesigner_current_short](../includes/wpfdesigner-current-short-md.md)] dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Cette rubrique décrit quelques tâches, outils et classes les plus courants que vous pouvez utiliser pour créer des applications [!INCLUDE[TLA#tla_titlewinclient](../includes/tlasharptla-titlewinclient-md.md)] liées aux données.
 
@@ -91,9 +90,9 @@ Vous pouvez afficher des données pour les utilisateurs de votre application en 
 
  Visual Studio génère du code XAML qui effectue les opérations suivantes :
 
--   Ajoute un nouveau <xref:System.Windows.Data.CollectionViewSource> aux ressources du conteneur vers lequel vous avez fait glisser l'élément. Le <xref:System.Windows.Data.CollectionViewSource> est un objet qui peut être utilisé pour naviguer et pour afficher les données dans l'objet retourné par le service.
+- Ajoute un nouveau <xref:System.Windows.Data.CollectionViewSource> aux ressources du conteneur vers lequel vous avez fait glisser l'élément. Le <xref:System.Windows.Data.CollectionViewSource> est un objet qui peut être utilisé pour naviguer et pour afficher les données dans l'objet retourné par le service.
 
--   Crée une liaison de données pour un contrôle. Si vous faites glisser l'élément vers un contrôle existant dans le concepteur, le code [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] lie le contrôle à l'élément. Si vous faites glisser l’élément vers un conteneur, le [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] crée le contrôle qui a été sélectionnée pour l’élément déplacé et lie le contrôle à l’élément. Le contrôle est créé dans une nouvelle <xref:System.Windows.Controls.Grid>.
+- Crée une liaison de données pour un contrôle. Si vous faites glisser l'élément vers un contrôle existant dans le concepteur, le code [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] lie le contrôle à l'élément. Si vous faites glisser l’élément vers un conteneur, le [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] crée le contrôle qui a été sélectionnée pour l’élément déplacé et lie le contrôle à l’élément. Le contrôle est créé dans une nouvelle <xref:System.Windows.Controls.Grid>.
 
 ### <a name="objects"></a>Objets
  Lorsque vous faites glisser un objet ou une propriété à partir de la **des Sources de données** fenêtre vers le concepteur, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] génère [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] qui crée un contrôle lié aux données (ou lie un contrôle existant à l’objet ou la propriété). Toutefois, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ne génère pas de code pour remplir l'objet avec les données. Vous devez écrire ce code vous-même.
@@ -103,9 +102,9 @@ Vous pouvez afficher des données pour les utilisateurs de votre application en 
 
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] génère [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] qui effectue les opérations suivantes :
 
--   Ajoute un nouveau <xref:System.Windows.Data.CollectionViewSource> aux ressources du conteneur vers lequel vous avez fait glisser l'élément. Le <xref:System.Windows.Data.CollectionViewSource> est un objet qui peut être utilisé pour naviguer et pour afficher les données dans l'objet.
+- Ajoute un nouveau <xref:System.Windows.Data.CollectionViewSource> aux ressources du conteneur vers lequel vous avez fait glisser l'élément. Le <xref:System.Windows.Data.CollectionViewSource> est un objet qui peut être utilisé pour naviguer et pour afficher les données dans l'objet.
 
--   Crée une liaison de données pour un contrôle. Si vous faites glisser l'élément vers un contrôle existant dans le concepteur, le code XAML lie le contrôle à l'élément. Si vous faites glisser l’élément vers un conteneur, le XAML crée le contrôle qui a été sélectionné pour l’élément déplacé et lie le contrôle à l’élément. Le contrôle est créé dans une nouvelle <xref:System.Windows.Controls.Grid>.
+- Crée une liaison de données pour un contrôle. Si vous faites glisser l'élément vers un contrôle existant dans le concepteur, le code XAML lie le contrôle à l'élément. Si vous faites glisser l’élément vers un conteneur, le XAML crée le contrôle qui a été sélectionné pour l’élément déplacé et lie le contrôle à l’élément. Le contrôle est créé dans une nouvelle <xref:System.Windows.Controls.Grid>.
 
 ## <a name="see-also"></a>Voir aussi
  [Lier des contrôles à des données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Utilisation de Graphics Diagnostics pour déboguer un nuanceur de calcul | Microsoft Docs'
+title: 'Procédure pas à pas : À l’aide de Graphics Diagnostics pour déboguer un nuanceur de calcul | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 69287456-644b-4aff-bd03-b1bbb2abb82a
@@ -8,23 +8,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 448f9f95da763a17bf7bb54fb222da031403b38a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 2ffdbee23ff363f7c0f1e843c30f09551f38ab3b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713787"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105368"
 ---
-# <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Procédure pas à pas : utilisation de Graphics Diagnostics pour déboguer un Shader de calcul
+# <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Procédure pas à pas : utilisation de Graphics Diagnostics pour déboguer un nuanceur de calcul
 Cette procédure pas à pas montre comment utiliser les outils Visual Studio Graphics Diagnostics pour examiner un nuanceur de calcul qui génère des résultats incorrects.
 
  Cette procédure pas à pas décrit les tâches suivantes :
 
--   Utilisation de la **liste des événements Graphics** pour rechercher les sources potentielles du problème.
+- Utilisation de la **liste des événements Graphics** pour rechercher les sources potentielles du problème.
 
--   Utilisation de la **pile des appels des événements Graphics** pour identifier le nuanceur de calcul exécuté par un événement `Dispatch` DirectCompute.
+- Utilisation de la **pile des appels des événements Graphics** pour identifier le nuanceur de calcul exécuté par un événement `Dispatch` DirectCompute.
 
--   Utilisation de la fenêtre **Étapes de canalisation Graphics** et du débogueur HLSL pour examiner le nuanceur de calcul à l’origine du problème.
+- Utilisation de la fenêtre **Étapes de canalisation Graphics** et du débogueur HLSL pour examiner le nuanceur de calcul à l’origine du problème.
 
 ## <a name="scenario"></a>Scénario
  Dans ce scénario, vous avez écrit une simulation relative à la dynamique des fluides, qui utilise DirectCompute pour effectuer les calculs les plus poussés de la mise à jour de la simulation. Quand l'application est exécutée, le rendu du jeu de données et de l'interface utilisateur semble correct. Toutefois, la simulation ne se comporte pas comme prévu. À l’aide de Graphics Diagnostics, vous pouvez capturer le problème dans un journal de graphisme pour déboguer l’application. Le problème se présente ainsi dans l'application :
@@ -88,7 +88,7 @@ Cette procédure pas à pas montre comment utiliser les outils Visual Studio Gra
 
     ![Débogage du nuanceur programmable IntegrateCS. ](media/gfx_diag_demo_compute_shader_fluid_step_7.png "gfx_diag_demo_compute_shader_fluid_step_7")
 
-4. Pour arrêter le débogage du nuanceur de calcul, dans la barre d’outils **Déboguer**, choisissez **Arrêter le débogage** (clavier : Maj+F5).
+4. Pour arrêter le débogage du nuanceur de calcul, sur le **déboguer** barre d’outils, choisissez **arrêter le débogage** (clavier : MAJ + F5).
 
 5. Sélectionnez ensuite le deuxième événement `Dispatch`, puis démarrez le débogage du nuanceur de calcul comme vous l'avez fait à l'étape précédente.
 

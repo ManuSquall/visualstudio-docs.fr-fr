@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ff4aba08b4eaa1d508c3371a3da80b8cac48534
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bbc09543d0ee0297678d3f205becc55a6b6d7714
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953713"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085922"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Procédure : Utiliser des transactions pour mettre à jour le modèle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,9 +61,9 @@ catch (Exception ex)
 ## <a name="rolling-back-a-transaction"></a>Restauration d'une transaction  
  Pour vous assurer que le Store conserve ou revient à son état avant la transaction, vous pouvez utiliser une de ces tactiques :  
   
-1.  Déclencher une exception qui n’est pas interceptée dans la portée de la transaction.  
+1. Déclencher une exception qui n’est pas interceptée dans la portée de la transaction.  
   
-2.  Restaurer explicitement la transaction :  
+2. Restaurer explicitement la transaction :  
   
     ```  
     this.Store.TransactionManager.CurrentTransaction.Rollback();  

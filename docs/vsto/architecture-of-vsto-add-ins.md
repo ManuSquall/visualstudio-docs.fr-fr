@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 04f4fff68720b456ac8ac2b8e121d9194019060c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 957805caa946dced54d52f1aa6b4a7f96e75b31a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633107"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091074"
 ---
 # <a name="architecture-of-vsto-add-ins"></a>Architecture des compléments VSTO
   Les compléments VSTO créés à l'aide des Outils de développement Office dans Visual Studio ont des fonctionnalités en termes d'architecture qui mettent l'accent sur la stabilité et la sécurité, et qui leur permettent de fonctionner étroitement avec Microsoft Office. Cette rubrique décrit les aspects suivants des compléments VSTO :
@@ -36,7 +36,7 @@ ms.locfileid: "56633107"
 
   Pour obtenir des informations générales sur la création de compléments VSTO, consultez [présentation du développement de solutions Office &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) et [commencer à programmer des Compléments VSTO](../vsto/getting-started-programming-vsto-add-ins.md).
 
-##  <a name="UnderstandingAddIns"></a> Comprendre les Compléments VSTO
+## <a name="UnderstandingAddIns"></a> Comprendre les Compléments VSTO
  Lorsque vous utilisez les outils de développement Office dans Visual Studio pour créer un complément, VSTO, vous créez un assembly de code managé chargé par une application Microsoft Office. Une fois l’assembly chargé, le complément VSTO peut répondre aux événements déclenchés dans l’application (par exemple, quand un utilisateur clique sur un élément de menu). Le complément VSTO peut également exécuter un appel dans le modèle objet pour automatiser et étendre l’application. En outre, il peut utiliser toutes les classes du [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)].
 
  L'assembly communique avec les composants COM de l'application à travers l'assembly PIA (Primary Interop Assembly) de celle-ci. Pour plus d’informations, consultez [assemblys PIA Office](../vsto/office-primary-interop-assemblies.md) et [présentation du développement de solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -46,7 +46,7 @@ ms.locfileid: "56633107"
 > [!NOTE]
 >  Les compléments VSTO que vous créez à l'aide des Outils de développement Office dans Visual Studio sont conçus pour être utilisés seulement quand l'application Microsoft Office hôte est démarrée par un utilisateur final. Si l’application est démarrée par programmation (par exemple, à l’aide d’Automation), le complément VSTO risque de ne pas fonctionner correctement.
 
-##  <a name="AddinComponents"></a> Composants des compléments VSTO
+## <a name="AddinComponents"></a> Composants des compléments VSTO
  Bien que l’assembly du complément VSTO soit le composant principal du complément, il existe plusieurs autres composants qui jouent un rôle important dans la manière dont les applications Microsoft Office découvrent et chargent les compléments VSTO.
 
 ### <a name="registry-entries"></a>Entrées du Registre
@@ -64,7 +64,7 @@ ms.locfileid: "56633107"
 
  Pour plus d’informations, consultez [Visual Studio Tools pour Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
-##  <a name="HowAddinsWork"></a> Fonctionnement des Compléments VSTO avec les applications Microsoft Office
+## <a name="HowAddinsWork"></a> Fonctionnement des Compléments VSTO avec les applications Microsoft Office
  Quand un utilisateur démarre une application Microsoft Office, l’application utilise le manifeste de déploiement et le manifeste de l’application pour trouver et charger la version la plus récente de l’assembly du complément VSTO. L'illustration suivante montre l'architecture de base de ces compléments VSTO.
 
  ![Architecture de complément office 2007](../vsto/media/office07addin.png "architecture de complément Office 2007")
@@ -75,21 +75,21 @@ ms.locfileid: "56633107"
 ### <a name="loading-process"></a>Processus de chargement
  Les étapes suivantes se produisent quand un utilisateur démarre une application :
 
-1.  L'application vérifie dans le Registre les entrées qui identifient des compléments VSTO créés à l'aide des Outils de développement Office dans Visual Studio.
+1. L'application vérifie dans le Registre les entrées qui identifient des compléments VSTO créés à l'aide des Outils de développement Office dans Visual Studio.
 
-2.  Si l'application trouve de telles entrées, elle charge VSTOEE.dll, qui charge à son tour VSTOLoader.dll. Il s'agit de DLL non managées qui sont les composants du chargeur pour Visual Studio 2010 Tools pour Office Runtime. Pour plus d’informations, consultez [Visual Studio Tools pour Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).
+2. Si l'application trouve de telles entrées, elle charge VSTOEE.dll, qui charge à son tour VSTOLoader.dll. Il s'agit de DLL non managées qui sont les composants du chargeur pour Visual Studio 2010 Tools pour Office Runtime. Pour plus d’informations, consultez [Visual Studio Tools pour Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
-3.  *VSTOLoader.dll* charge le [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] et démarre la partie managée de le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
+3. *VSTOLoader.dll* charge le [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] et démarre la partie managée de le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
 
-4.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] recherche des mises à jour de manifeste et télécharge l'application et les manifestes de déploiement les plus récents.
+4. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] recherche des mises à jour de manifeste et télécharge l'application et les manifestes de déploiement les plus récents.
 
-5.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] effectue une série de vérifications de sécurité. Pour plus d’informations, consultez [solutions Office Secure](../vsto/securing-office-solutions.md).
+5. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] effectue une série de vérifications de sécurité. Pour plus d’informations, consultez [solutions Office Secure](../vsto/securing-office-solutions.md).
 
-6.  Si l’exécution du complément VSTO est approuvée, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] utilise le manifeste de déploiement et le manifeste de l’application pour rechercher des mises à jour de l’assembly. Si une nouvelle version de l'assembly est disponible, le runtime la télécharge dans le cache de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] sur l'ordinateur client. Pour plus d’informations, consultez [déployer une solution Office](../vsto/deploying-an-office-solution.md).
+6. Si l’exécution du complément VSTO est approuvée, [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] utilise le manifeste de déploiement et le manifeste de l’application pour rechercher des mises à jour de l’assembly. Si une nouvelle version de l'assembly est disponible, le runtime la télécharge dans le cache de [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] sur l'ordinateur client. Pour plus d’informations, consultez [déployer une solution Office](../vsto/deploying-an-office-solution.md).
 
-7.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] crée un domaine d’application dans lequel charger l’assembly du complément VSTO.
+7. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] crée un domaine d’application dans lequel charger l’assembly du complément VSTO.
 
-8.  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] charge l’assembly du complément VSTO dans le domaine d’application.
+8. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] charge l’assembly du complément VSTO dans le domaine d’application.
 
 9. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] appelle la méthode <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> dans votre complément VSTO, si vous l’avez substituée.
 

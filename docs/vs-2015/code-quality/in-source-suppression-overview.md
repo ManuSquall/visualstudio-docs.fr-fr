@@ -12,19 +12,19 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b7f0b3ef2b680dbe4675ef6e8875ef30a1f210bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 046ae576880c6749c6bb033f66124c0085dfab16
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952758"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057158"
 ---
 # <a name="in-source-suppression-overview"></a>Vue d’ensemble de la suppression à la source
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Suppression à la source est la possibilité de supprimer ou d’ignorer des violations d’analyse du Code dans le code managé en ajoutant la **SuppressMessage** les segments de code qui provoquent les violations de l’attribut. Le **SuppressMessage** attribut est un attribut conditionnel qui est inclus dans les métadonnées de langage intermédiaire de votre assembly de code managé uniquement si le symbole de compilation CODE_ANALYSIS est défini au moment de la compilation.  
   
- En C / c++ / CLI, utilisez les macros CA_SUPPRESS_MESSAGE ou CA_GLOBAL_SUPPRESS_MESSAGE dans le fichier d’en-tête, pour ajouter l’attribut.  
+ Dans C++/CLI, utilisez les macros CA_SUPPRESS_MESSAGE ou CA_GLOBAL_SUPPRESS_MESSAGE dans le fichier d’en-tête, pour ajouter l’attribut.  
   
  Vous ne devez pas utiliser les suppressions dans la source sur les versions release pour empêcher les métadonnées de suppression à la source de livraison par inadvertance. En raison du coût de traitement de la suppression à la source, les performances de votre application peuvent également être réduites en incluant les métadonnées de suppression à la source.  
   
@@ -54,27 +54,27 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
   
  Où :  
   
--   **Catégorie de règle** -catégorie dans laquelle la règle est définie. Pour plus d’informations sur les catégories de règles code analysis, consultez [analyse du Code pour les avertissements de Code géré](../code-quality/code-analysis-for-managed-code-warnings.md).  
+- **Catégorie de règle** -catégorie dans laquelle la règle est définie. Pour plus d’informations sur les catégories de règles code analysis, consultez [analyse du Code pour les avertissements de Code géré](../code-quality/code-analysis-for-managed-code-warnings.md).  
   
--   **Id de règle** -l’identificateur de la règle. Prise en charge inclut à la fois un nom court et long pour l’identificateur de règle. Le nom court est CAXXXX ; le nom long est CAXXXX:FriendlyTypeName.  
+- **Id de règle** -l’identificateur de la règle. Prise en charge inclut à la fois un nom court et long pour l’identificateur de règle. Le nom court est CAXXXX ; le nom long est CAXXXX:FriendlyTypeName.  
   
--   **Justification** -le texte qui est utilisé pour documenter la raison de la suppression du message.  
+- **Justification** -le texte qui est utilisé pour documenter la raison de la suppression du message.  
   
--   **Id de message** -identificateur Unique d’un problème pour chaque message.  
+- **Id de message** -identificateur Unique d’un problème pour chaque message.  
   
--   **Étendue** -la cible sur laquelle l’avertissement est supprimé. Si la cible n’est pas spécifiée, il est défini sur la cible de l’attribut. Étendues prises en charge sont les suivantes :  
+- **Étendue** -la cible sur laquelle l’avertissement est supprimé. Si la cible n’est pas spécifiée, il est défini sur la cible de l’attribut. Étendues prises en charge sont les suivantes :  
   
-    -   Module  
+    - Module  
   
-    -   Espace de noms  
+    - Espace de noms  
   
-    -   Ressource  
+    - Ressource  
   
-    -   Type  
+    - Type  
   
-    -   Membre  
+    - Membre  
   
--   **Cible** : un identificateur qui est utilisé pour spécifier la cible sur laquelle l’avertissement est supprimé. Il doit contenir un nom d’élément qualifié complet.  
+- **Cible** : un identificateur qui est utilisé pour spécifier la cible sur laquelle l’avertissement est supprimé. Il doit contenir un nom d’élément qualifié complet.  
   
 ## <a name="suppressmessage-usage"></a>Utilisation de SuppressMessage  
  Avertissements d’analyse du code sont supprimées au niveau auquel une instance de la **SuppressMessage** attribut est appliqué. Cela vise à coupler étroitement les informations de suppression pour le code où la violation se produit.  

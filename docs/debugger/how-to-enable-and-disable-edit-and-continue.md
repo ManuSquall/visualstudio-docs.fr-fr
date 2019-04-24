@@ -1,5 +1,5 @@
 ---
-title: 'Comment : activer et désactiver Modifier & Continuer | Microsoft Docs'
+title: 'Procédure : Activer et désactiver Modifier & Continuer | Microsoft Docs'
 ms.custom: seodec18
 ms.date: 10/04/2018
 ms.topic: conceptual
@@ -26,14 +26,14 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 49ee21943f63cee3fff35d2bb92817294169c61f
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
-ms.translationtype: MTE95
+ms.openlocfilehash: b0a10d720e911f80aa5ef7b4a42f521bfd9c31bd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223583"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070406"
 ---
-# <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Comment : activer et désactiver Modifier & Continuer (C#, VB, C++)
+# <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Procédure : Activer et désactiver Modifier & Continuer (C#, VB, C++)
 
 Vous pouvez activer ou désactiver **Modifier & Continuer** dans Visual Studio **Options** boîte de dialogue au moment du design. **Modifier et Continuer** ne fonctionne que dans les versions Debug. Pour plus d’informations, consultez [Modifier et Continuer](../debugger/edit-and-continue.md).
 
@@ -41,14 +41,14 @@ Pour C++ natif, **Modifier & Continuer** nécessite que vous utilisiez le `/INCR
 
 **Pour activer ou désactiver Modifier & Continuer :**
 
-1.  Si vous êtes dans une session de débogage, arrêtez le débogage (**déboguer** > **arrêter le débogage** ou **MAJ**+**F5**) .
+1. Si vous êtes dans une session de débogage, arrêtez le débogage (**déboguer** > **arrêter le débogage** ou **MAJ**+**F5**) .
 
-1.  Dans **outils** > **Options** > (ou **déboguer** > **Options**) > **dedébogage**  >  **Général**, sélectionnez **Modifier & Continuer** dans le volet droit.
+1. Dans **outils** > **Options** > (ou **déboguer** > **Options**) > **dedébogage**  >  **Général**, sélectionnez **Modifier & Continuer** dans le volet droit.
 
     > [!NOTE]
     >  Si IntelliTrace est activé et si vous collectez des événements et des informations d’appel IntelliTrace, les fonctions Modifier et Continuer sont désactivées. Pour plus d’informations, consultez [IntelliTrace](../debugger/intellitrace.md).
 
-1.  Pour le code C++, assurez-vous que **activer modifier et continuer natif** est sélectionné et définissez les options supplémentaires :
+1. Pour le code C++, assurez-vous que **activer modifier et continuer natif** est sélectionné et définissez les options supplémentaires :
     - **Appliquer les changements en continuant (natif uniquement)**
 
       Si sélectionné, Visual Studio compile automatiquement et applique les modifications du code lorsque vous continuez le débogage à partir d’un état d’arrêt. Sinon, vous pouvez choisir d’appliquer les modifications à l’aide de **déboguer** > **appliquer les modifications du Code**.
@@ -57,4 +57,4 @@ Pour C++ natif, **Modifier & Continuer** nécessite que vous utilisiez le `/INCR
 
       Si sélectionné, d’avertissements concernant le code périmé.
 
-1.  Cliquez sur **OK**.
+1. Cliquez sur **OK**.

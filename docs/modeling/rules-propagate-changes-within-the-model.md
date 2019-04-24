@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f61c9623cd2006f0df82c93dc420a25f23d3d2a
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: d4b5fd1be29a5c22bcae371faaf7be8c6b70c4e1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416203"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057548"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Propagation de modifications dans le modèle par des règles
 Vous pouvez créer une règle de magasin pour propager une modification d’un élément à un autre dans la visualisation et modélisation de kit de développement logiciel (SDK) VISUALIZATION. En cas de modification à un élément dans le Store, les règles sont planifiées pour être exécutée, généralement lors de la transaction externe est validée. Il existe différents types de règles pour différents types d’événements, comme l’ajout d’un élément ou sa suppression. Vous pouvez attacher des règles à des types d’éléments, des formes ou des diagrammes. Nombreuses fonctionnalités intégrées sont définies par les règles : par exemple, règles garantissent qu’un diagramme est mis à jour quand le modèle change. Vous pouvez personnaliser votre langage spécifique à un domaine en ajoutant vos propres règles.
@@ -82,7 +82,7 @@ namespace ExampleNamespace
 
 ### <a name="to-define-a-rule-on-a-domain-class"></a>Pour définir une règle sur une classe de domaine
 
--   Dans un fichier de code personnalisé, définissez une classe et faites-la précéder le <xref:Microsoft.VisualStudio.Modeling.RuleOnAttribute> attribut :
+- Dans un fichier de code personnalisé, définissez une classe et faites-la précéder le <xref:Microsoft.VisualStudio.Modeling.RuleOnAttribute> attribut :
 
     ```csharp
     [RuleOn(typeof(ExampleElement),
@@ -92,19 +92,19 @@ namespace ExampleNamespace
 
     ```
 
--   Le type d’objet dans le premier paramètre peut être une classe de domaine, la relation de domaine, la forme, la connecteur ou diagramme. En règle générale, vous appliquez des règles aux relations et classes de domaine.
+- Le type d’objet dans le premier paramètre peut être une classe de domaine, la relation de domaine, la forme, la connecteur ou diagramme. En règle générale, vous appliquez des règles aux relations et classes de domaine.
 
      Le `FireTime` est généralement `TopLevelCommit`. Cela garantit que la règle est exécutée uniquement une fois que les principales modifications de la transaction ont été apportées. Les alternatives sont Inline, qui exécute la règle peu après la modification ; et du LocalCommit, qui s’exécute à la règle à la fin de la transaction actuelle (qui ne peut pas être plus à l’extérieur). Vous pouvez également définir la priorité d’une règle à affecter son classement dans la file d’attente, mais il s’agit d’une méthode non fiable d’atteindre le résultat que vous avez besoin.
 
--   Vous pouvez spécifier une classe abstraite comme type d’objet.
+- Vous pouvez spécifier une classe abstraite comme type d’objet.
 
--   La règle s’applique à toutes les instances de la classe d’objet.
+- La règle s’applique à toutes les instances de la classe d’objet.
 
--   La valeur par défaut `FireTime` est TimeToFire.TopLevelCommit. Cela provoque la règle à exécuter lorsque la transaction externe est validée. Une alternative consiste à TimeToFire.Inline. Cela provoque la règle doit être exécuté peu après l’événement de déclenchement.
+- La valeur par défaut `FireTime` est TimeToFire.TopLevelCommit. Cela provoque la règle à exécuter lorsque la transaction externe est validée. Une alternative consiste à TimeToFire.Inline. Cela provoque la règle doit être exécuté peu après l’événement de déclenchement.
 
 ### <a name="to-register-the-rule"></a>Pour enregistrer la règle
 
--   Ajouter votre classe de règle à la liste des types retournés par `GetCustomDomainModelTypes` dans votre modèle de domaine :
+- Ajouter votre classe de règle à la liste des types retournés par `GetCustomDomainModelTypes` dans votre modèle de domaine :
 
     ```csharp
     public partial class ExampleDomainModel
@@ -120,14 +120,13 @@ namespace ExampleNamespace
 
     ```
 
--   Si vous n’êtes pas sûr du nom de votre classe de modèle de domaine, regardez dans le fichier **Dsl\GeneratedCode\DomainModel.cs**
+- Si vous n’êtes pas sûr du nom de votre classe de modèle de domaine, regardez dans le fichier **Dsl\GeneratedCode\DomainModel.cs**
 
--   Écrire ce code dans un fichier de code personnalisé dans votre projet DSL.
+- Écrire ce code dans un fichier de code personnalisé dans votre projet DSL.
 
 ### <a name="to-write-the-code-of-the-rule"></a>Pour écrire le code de la règle
 
 - Dérivez la classe de règle d’une des classes de base suivantes :
-
 
   | Classe de base | Déclencheur |
   |-|-|
@@ -142,24 +141,23 @@ namespace ExampleNamespace
   | <xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule> | Exécutée lorsque la transaction est sur le point d’être validée. |
   | <xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule> | Exécutée lorsque la transaction est sur le point d’être restaurée. |
 
-
 - Chaque classe a une méthode que vous substituez. Type `override` dans votre classe pour la détection. Le paramètre de cette méthode identifie l’élément qui est en cours de modification.
 
   Notez les points suivants concernant les règles :
 
-1.  L’ensemble de modifications dans une transaction peut déclencher plusieurs règles. En règle générale, les règles sont exécutées lorsque la transaction externe est validée. Ils sont exécutés dans un ordre non spécifié.
+1. L’ensemble de modifications dans une transaction peut déclencher plusieurs règles. En règle générale, les règles sont exécutées lorsque la transaction externe est validée. Ils sont exécutés dans un ordre non spécifié.
 
-2.  Une règle est toujours exécutée dans une transaction. Par conséquent, vous n’êtes pas obligé de créer une nouvelle transaction pour apporter des modifications.
+2. Une règle est toujours exécutée dans une transaction. Par conséquent, vous n’êtes pas obligé de créer une nouvelle transaction pour apporter des modifications.
 
-3.  Les règles ne sont pas exécutées lorsqu’une transaction est restaurée, ou lors de l’annulation ou rétablissement des opérations. Ces opérations Réinitialiser tout le contenu du Store à son état précédent. Par conséquent, si votre règle modifie l’état de quoi que ce soit à l’extérieur du Store, il ne peut pas conserver dans synchronism avec le Store contenu. Pour mettre à jour d’état à l’extérieur du Store, il est préférable d’utiliser des événements. Pour plus d’informations, consultez [gestionnaires propager les modifications en dehors le modèle d’événement](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+3. Les règles ne sont pas exécutées lorsqu’une transaction est restaurée, ou lors de l’annulation ou rétablissement des opérations. Ces opérations Réinitialiser tout le contenu du Store à son état précédent. Par conséquent, si votre règle modifie l’état de quoi que ce soit à l’extérieur du Store, il ne peut pas conserver dans synchronism avec le Store contenu. Pour mettre à jour d’état à l’extérieur du Store, il est préférable d’utiliser des événements. Pour plus d’informations, consultez [gestionnaires propager les modifications en dehors le modèle d’événement](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
-4.  Certaines règles sont exécutées lorsqu’un modèle est chargé à partir du fichier. Pour déterminer si le chargement ou l’enregistrement est en cours d’exécution, utilisez `store.TransactionManager.CurrentTransaction.IsSerializing`.
+4. Certaines règles sont exécutées lorsqu’un modèle est chargé à partir du fichier. Pour déterminer si le chargement ou l’enregistrement est en cours d’exécution, utilisez `store.TransactionManager.CurrentTransaction.IsSerializing`.
 
-5.  Si le code de votre règle crée plusieurs déclencheurs de règle, ils seront ajoutés à la fin de la liste de déclenchement et seront exécutées avant la fin de la transaction. DeletedRules sont exécutés après toutes les autres règles. Une règle peut exécutées plusieurs fois dans une transaction, une fois pour chaque modification.
+5. Si le code de votre règle crée plusieurs déclencheurs de règle, ils seront ajoutés à la fin de la liste de déclenchement et seront exécutées avant la fin de la transaction. DeletedRules sont exécutés après toutes les autres règles. Une règle peut exécutées plusieurs fois dans une transaction, une fois pour chaque modification.
 
-6.  Pour passer des informations à destination et à partir de règles, vous pouvez stocker les informations contenues dans le `TransactionContext`. Il s’agit simplement d’un dictionnaire qui est conservé pendant la transaction. Il est supprimé lorsque la transaction se termine. Les arguments d’événement dans chaque règle de fournissent un accès à celui-ci. N’oubliez pas que les règles ne sont pas exécutées dans un ordre prévisible.
+6. Pour passer des informations à destination et à partir de règles, vous pouvez stocker les informations contenues dans le `TransactionContext`. Il s’agit simplement d’un dictionnaire qui est conservé pendant la transaction. Il est supprimé lorsque la transaction se termine. Les arguments d’événement dans chaque règle de fournissent un accès à celui-ci. N’oubliez pas que les règles ne sont pas exécutées dans un ordre prévisible.
 
-7.  Utiliser les règles après avoir étudié les autres alternatives. Par exemple, si vous souhaitez mettre à jour une propriété lorsqu’une valeur change, envisagez d’utiliser une propriété calculée. Si vous souhaitez limiter la taille ou l’emplacement d’une forme, utilisez un `BoundsRule`. Si vous souhaitez répondre à une modification dans une valeur de propriété, ajoutez un `OnValueChanged` gestionnaire à la propriété. Pour plus d’informations, consultez [réponse en cours à et propagation des modifications](../modeling/responding-to-and-propagating-changes.md).
+7. Utiliser les règles après avoir étudié les autres alternatives. Par exemple, si vous souhaitez mettre à jour une propriété lorsqu’une valeur change, envisagez d’utiliser une propriété calculée. Si vous souhaitez limiter la taille ou l’emplacement d’une forme, utilisez un `BoundsRule`. Si vous souhaitez répondre à une modification dans une valeur de propriété, ajoutez un `OnValueChanged` gestionnaire à la propriété. Pour plus d’informations, consultez [réponse en cours à et propagation des modifications](../modeling/responding-to-and-propagating-changes.md).
 
 ## <a name="example"></a>Exemple
  L’exemple suivant met à jour une propriété lorsqu’une relation de domaine est instanciée pour lier deux éléments. La règle est déclenchée non seulement lorsque l’utilisateur crée un lien dans un diagramme, mais également si le code de programme crée un lien.

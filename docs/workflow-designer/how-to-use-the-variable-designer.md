@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2322b787327b4c0abf7c8a1010d52ef49a54f945
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f90cbb58406df2410361bf9409c843b5c35b4331
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944583"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051469"
 ---
 # <a name="how-to-use-the-variable-designer"></a>Procédure : Utiliser le concepteur de variables
 
@@ -25,13 +25,13 @@ Le concepteur de variables permet de créer des variables en vue d’une utilisa
 
 ## <a name="to-create-a-new-variable"></a>Pour créer une variable
 
-1.  Dans Visual Studio, ouvrez une solution de flux de travail ou d’activité.
+1. Dans Visual Studio, ouvrez une solution de flux de travail ou d’activité.
 
-2.  Sur la zone de conception, sélectionnez une activité dans votre workflow.
+2. Sur la zone de conception, sélectionnez une activité dans votre workflow.
 
-3.  Ouvrez le Concepteur de variables en cliquant sur le **Variables** situé dans l’angle inférieur gauche de la zone de conception. Le concepteur de variables s'affiche.
+3. Ouvrez le Concepteur de variables en cliquant sur le **Variables** situé dans l’angle inférieur gauche de la zone de conception. Le concepteur de variables s'affiche.
 
-4.  Cliquez sur la ligne vide libellée **créer une Variable**. Cette opération ajoute une nouvelle ligne avec une nouvelle variable utilisant les valeurs par défaut suivantes : variablex pour le **nom** où x est un entier avec une valeur initiale 1 qui est automatiquement incrémenté pour créer des noms de variable uniques,  **Chaîne** pour le **type de Variable**, et **séquence** pour le **étendue**. Aucune valeur n’est ajoutée pour **par défaut**. Vous pouvez modifier ces valeurs à tout moment pendant le processus de conception du workflow.
+4. Cliquez sur la ligne vide libellée **créer une Variable**. Cette opération ajoute une nouvelle ligne avec une nouvelle variable utilisant les valeurs par défaut suivantes : variablex pour le **nom** où x est un entier avec une valeur initiale 1 qui est automatiquement incrémenté pour créer des noms de variable uniques,  **Chaîne** pour le **type de Variable**, et **séquence** pour le **étendue**. Aucune valeur n’est ajoutée pour **par défaut**. Vous pouvez modifier ces valeurs à tout moment pendant le processus de conception du workflow.
 
     > [!NOTE]
     > Pour supprimer une variable, sélectionnez la variable en cliquant dessus, puis appuyez sur la **supprimer** clé.
@@ -40,4 +40,4 @@ Le concepteur de variables permet de créer des variables en vue d’une utilisa
 
 - [Utilisation du Concepteur de flux de travail](developing-applications-with-the-workflow-designer.md)
 - [Variables et arguments](/dotnet/framework/windows-workflow-foundation/variables-and-arguments)
-- [Guide pratique pour Utiliser le Concepteur d’arguments](../workflow-designer/how-to-use-the-argument-designer.md)
+- [Guide pratique pour utiliser le concepteur d’arguments](../workflow-designer/how-to-use-the-argument-designer.md)

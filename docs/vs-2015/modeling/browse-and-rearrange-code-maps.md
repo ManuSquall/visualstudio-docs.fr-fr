@@ -24,12 +24,12 @@ caps.latest.revision: 91
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a79aeabcbe0a405248d530e56ed5fe9e3f4e9994
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9b9744cf6d3ff8be30d06ffa877f96940fd20a24
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952589"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055247"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>Parcourir et réorganiser des cartes de code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,26 +40,26 @@ Réorganisez les éléments sur les cartes de code pour faciliter leur lecture e
   
  **Spécifications**  
   
--   Pour créer des cartes de code, vous devez disposer de Visual Studio Enterprise.  
+- Pour créer des cartes de code, vous devez disposer de Visual Studio Enterprise.  
   
--   Vous pouvez afficher des cartes de code et apporter des modifications mineures aux cartes de code dans Visual Studio Professional.  
+- Vous pouvez afficher des cartes de code et apporter des modifications mineures aux cartes de code dans Visual Studio Professional.  
   
-##  <a name="ManageLargeGraphs"></a> Commencer à utiliser des cartes de code  
+## <a name="ManageLargeGraphs"></a> Commencer à utiliser des cartes de code  
  Créer une carte de code (consultez [mapper les dépendances dans vos solutions](../modeling/map-dependencies-across-your-solutions.md) pour plus d’informations). Si vous ne souhaitez pas attendre que la carte terminer la génération, cliquez sur le **Annuler** lien à tout moment pour arrêter le processus de génération. Toutefois, dans ce cas vous ne verrez pas les détails de toutes les dépendances et tous les liens.  
   
  Une fois la carte générée, suivez ces conseils pour procéder à l'examen de votre code :  
   
--   Examinez les clusters de dépendances naturelles dans le code. Dans la barre d’outils de la carte, choisissez **disposition**, **Clusters rapides**![bouton Clusters rapides sur la barre d’outils du graphique](../modeling/media/quickclustersicon.gif "QuickClustersIcon"). Consultez [modifier la disposition de la carte](#Selecting).  
+- Examinez les clusters de dépendances naturelles dans le code. Dans la barre d’outils de la carte, choisissez **disposition**, **Clusters rapides**![bouton Clusters rapides sur la barre d’outils du graphique](../modeling/media/quickclustersicon.gif "QuickClustersIcon"). Consultez [modifier la disposition de la carte](#Selecting).  
   
      ![Graphique de dépendance &#45; disposition Clusters rapides](../modeling/media/dependencygraph-quickclusters.png "DependencyGraph_QuickClusters")  
   
--   Organisez la carte en zones plus petites en regroupant les nœuds connexes. Réduisez ces groupes pour afficher uniquement les dépendances intergroupes, qui sont affichées automatiquement. Consultez [regrouper les nœuds](#OrganizeGroups).  
+- Organisez la carte en zones plus petites en regroupant les nœuds connexes. Réduisez ces groupes pour afficher uniquement les dépendances intergroupes, qui sont affichées automatiquement. Consultez [regrouper les nœuds](#OrganizeGroups).  
   
--   Utilisez des filtres pour simplifier la carte et vous concentrer sur les types de nœuds ou de liens qui vous intéressent. Consultez [filtrer les nœuds et liens](#FilterNodes).  
+- Utilisez des filtres pour simplifier la carte et vous concentrer sur les types de nœuds ou de liens qui vous intéressent. Consultez [filtrer les nœuds et liens](#FilterNodes).  
   
--   Optimisez les performances des grandes cartes. Consultez [mapper les dépendances dans vos solutions](../modeling/map-dependencies-across-your-solutions.md) pour plus d’informations. Par exemple, allumez **Skip Build** sur la barre d’outils de mappage afin que Visual Studio ne régénère pas votre solution lorsque vous mettez à jour les éléments sur la carte.  
+- Optimisez les performances des grandes cartes. Consultez [mapper les dépendances dans vos solutions](../modeling/map-dependencies-across-your-solutions.md) pour plus d’informations. Par exemple, allumez **Skip Build** sur la barre d’outils de mappage afin que Visual Studio ne régénère pas votre solution lorsque vous mettez à jour les éléments sur la carte.  
   
-##  <a name="Selecting"></a> Modifier la disposition de la carte  
+## <a name="Selecting"></a> Modifier la disposition de la carte  
   
 |**To**|**Effectuez ces étapes**|  
 |------------|-----------------------------|  
@@ -70,7 +70,7 @@ Réorganisez les éléments sur les cartes de code pour faciliter leur lecture e
 |Modifier la disposition à l'intérieur d'un groupe, indépendamment des autres nœuds et groupes sur la carte.|Sélectionnez un nœud et ouvrez le menu contextuel. Choisissez **disposition** et sélectionnez un style de disposition.<br /><br /> ou<br /><br /> Sélectionnez un nœud et développez-le pour afficher les nœuds enfants. Cliquez sur le titre du nœud pour afficher la barre d’outils contextuelle du groupe, puis ouvrez le **modifier le style de disposition du groupe**![graphique de dépendance &#45; barre d’outils du groupe &#45; disposition](../modeling/media/dependencygraph-grouptoolbar.gif "DependencyGraph_ GroupToolbar") liste. Sélectionnez une des dispositions de l’arborescence, **Clusters rapides**, ou **mode liste** (qui réorganise le contenu du groupe dans une liste).<br /><br /> Consultez [regrouper les nœuds](#OrganizeGroups) pour plus d’informations.|  
 |Annuler une action sur la carte.|Appuyez sur **CTRL** + **Z** ou utilisez Visual Studio **Annuler** commande.|  
   
-##  <a name="Explore"></a> Parcourir la carte  
+## <a name="Explore"></a> Parcourir la carte  
   
 |**To**|**Effectuez ces étapes**|  
 |------------|-----------------------------|  
@@ -82,7 +82,7 @@ Réorganisez les éléments sur les cartes de code pour faciliter leur lecture e
 |Sélectionner tous les nœuds non sélectionnés.|Ouvrez le menu contextuel pour les nœuds sélectionnés. Choisissez **sélectionnez**, **inverser la sélection**.|  
 |Sélectionner des nœuds supplémentaires qui pointent vers ceux sélectionnés.|Ouvrez le menu contextuel pour les nœuds sélectionnés. Choisissez **sélectionnez** et une d’elles :<br /><br /> -Pour sélectionner d’autres nœuds qui pointent directement vers le nœud sélectionné, choisissez **dépendances entrantes**.<br />-Pour sélectionner d’autres nœuds qui sont liées directement à partir du nœud sélectionné, choisissez **dépendances sortantes**.<br />-Pour sélectionner des nœuds supplémentaires qui pointent directement vers et depuis le nœud sélectionné, choisissez **les deux**.<br />-Pour sélectionner tous les nœuds qui établissent des liens vers et depuis le nœud sélectionné, choisissez **sous-graphique connecté**.<br />-Pour sélectionner tous les enfants du nœud sélectionné, choisissez **enfants**.|  
   
-##  <a name="FilterNodes"></a> Filtrer les nœuds et liens  
+## <a name="FilterNodes"></a> Filtrer les nœuds et liens  
   
 |**To**|**Effectuez ces étapes**|  
 |------------|-----------------------------|  
@@ -93,14 +93,14 @@ Réorganisez les éléments sur les cartes de code pour faciliter leur lecture e
   
  Les icônes affichées dans le volet Légende de la carte reflètent les paramètres spécifiés dans la liste. Pour afficher ou masquer le volet de légende, cliquez sur le **légende** bouton sur la barre d’outils de carte de code.  
   
-##  <a name="Inspect"></a> Examiner des nœuds et liens  
+## <a name="Inspect"></a> Examiner des nœuds et liens  
  Les cartes de code affichent les types de liens suivants :  
   
--   Un lien individuel représente une relation unique entre deux nœuds.  
+- Un lien individuel représente une relation unique entre deux nœuds.  
   
--   Un lien entre les groupes représente une relation entre deux nœuds de différents groupes.  
+- Un lien entre les groupes représente une relation entre deux nœuds de différents groupes.  
   
--   Un lien global représente toutes les relations qui pointent dans la même direction entre deux groupes.  
+- Un lien global représente toutes les relations qui pointent dans la même direction entre deux groupes.  
   
 > [!TIP]
 >  Par défaut, la carte affiche les liens entre les groupes uniquement pour les nœuds sélectionnés. Pour modifier ce comportement pour afficher ou masquer les liens globaux entre les groupes, cliquez sur **disposition** sur le code de mapper la barre d’outils et choisissez **avancé**, puis **afficher tous les liens entre les groupes** ou **Masquer tous les liens entre les groupes**. Consultez [masquer ou afficher les nœuds et les liens](#HidingShowing) pour plus d’informations.  
@@ -114,7 +114,7 @@ Réorganisez les éléments sur les cartes de code pour faciliter leur lecture e
 |Examiner les dépendances entre plusieurs nœuds de différents groupes.|Développez les groupes pour afficher tous leurs enfants. Sélectionnez tous les nœuds qui vous intéressent, y compris leurs enfants. La carte affiche les liens entre les groupes entre les nœuds sélectionnés.<br /><br /> Pour sélectionner tous les nœuds dans un groupe, maintenez la touche et **MAJ** et le bouton gauche de la souris pendant que vous dessinez un rectangle autour de ce groupe. Pour sélectionner tous les nœuds sur une carte, appuyez sur **CTRL**+**A**. **Conseil :**  Pour afficher les liens entre les groupes en permanence, choisissez **disposition** sur la barre d’outils de la carte, **avancé**, **afficher tous les liens entre les groupes**.|  
 |Afficher les éléments auxquels un nœud ou un lien fait référence.|Ouvrez le menu contextuel du nœud et choisissez **rechercher toutes les références**. **Remarque :**  Cela s'applique uniquement quand l'attribut `Reference` est défini pour le nœud ou le lien dans le fichier .dgml de la carte. Pour ajouter des références à des éléments à partir de nœuds ou liens, consultez [cartes de code de la personnaliser en modifiant les fichiers DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).|  
   
-##  <a name="HidingShowing"></a> Masquer ou afficher les nœuds et liens  
+## <a name="HidingShowing"></a> Masquer ou afficher les nœuds et liens  
  Masquer des nœuds les empêche de participer aux algorithmes de disposition. Par défaut, les liens entre les groupes sont masqués. Les liens entre les groupes sont des liens individuels qui relient vos nœuds entre différents groupes. Quand les groupes sont réduits, la carte rassemble tous les liens entre les groupes sous forme de liens uniques. Lorsque vous développez un groupe et sélectionnez des nœuds dans le groupe, les liens entre les groupes apparaissent et mettent en exergue les dépendances dans ce groupe.  
   
 > [!CAUTION]
@@ -137,7 +137,7 @@ Réorganisez les éléments sur les cartes de code pour faciliter leur lecture e
 |Afficher uniquement les liens entre les groupes pour les nœuds sélectionnés.|**Afficher les liens entre les groupes sur les nœuds sélectionnés**|  
 |Masquer tous les liens.|**Masquer tous les liens**. Pour réafficher les liens, choisissez l'une des options mentionnées ci-dessus.|  
   
-##  <a name="OrganizeGroups"></a> Nœuds de groupe  
+## <a name="OrganizeGroups"></a> Nœuds de groupe  
   
 |**To**|**Effectuez ces étapes**|  
 |------------|-----------------------------|  
@@ -149,7 +149,7 @@ Réorganisez les éléments sur les cartes de code pour faciliter leur lecture e
 |Supprimer des groupes.|Sélectionnez le groupe ou les groupes que vous souhaitez supprimer. Ouvrez le menu contextuel pour votre sélection et choisissez **groupe**, **supprimer le groupe**.|  
 |Supprimer des nœuds de leur groupe parent.|Sélectionnez les nœuds que vous voulez déplacer. Ouvrez le menu contextuel pour votre sélection et choisissez **groupe**, **supprimer du Parent**. Cette opération supprime les nœuds jusqu'à leur grand-parent ou jusqu'en dehors du groupe s'ils n'ont aucun groupe grand-parent.<br /><br /> ou<br /><br /> Sélectionnez les nœuds et faites-les glisser hors du groupe.|  
   
-##  <a name="AddRemoveNodesLinks"></a> Ajouter, supprimer ou renommer des nœuds, des liens et des commentaires  
+## <a name="AddRemoveNodesLinks"></a> Ajouter, supprimer ou renommer des nœuds, des liens et des commentaires  
  Vous pouvez afficher plus ou moins d'éléments sur une carte pour la détailler ou la simplifier. Vous pouvez aussi renommer des éléments et y ajouter des commentaires.  
   
 > [!CAUTION]
@@ -172,7 +172,7 @@ Réorganisez les éléments sur les cartes de code pour faciliter leur lecture e
 |Éléments de code associés à des éléments de code sur la carte.|Cliquez sur le **afficher les** bouton sur la barre d’outils de carte de code et choisissez le type d’éléments connexes vous intéresse.<br /><br /> ou<br /><br /> Ouvrez le menu contextuel de l'élément de code. Choisissez parmi les **afficher...** éléments du menu en fonction du type de relation qui vous intéresse. Par exemple, vous pouvez afficher les éléments auxquels l'élément actif fait référence, les éléments qui font référence à l'élément actif, les types de base et dérivés pour les classes, les appelants de méthode et les classes, espaces de noms et assemblys conteneurs.<br /><br /> Pour plus d’informations, consultez [cette rubrique](../modeling/map-dependencies-across-your-solutions.md).|  
 |Assemblys compilés .NET (.dll ou .exe) ou binaires.|En dehors de Visual Studio, faites glisser les assemblys ou les binaires vers une carte.<br /><br /> Vous pouvez faire glisser à partir de l'Explorateur Windows ou de l'Explorateur de fichiers uniquement si vous exécutez l'un des deux et Visual Studio avec le même niveau d'autorisations de contrôle d'accès d'utilisateur (UAC). Par exemple, si le contrôle de compte d’utilisateur est activé et que vous exécutez Visual Studio en tant qu’administrateur, l’Explorateur Windows ou l’Explorateur de fichiers bloque l’opération de glissement.|  
   
-###  <a name="AddNodes"></a>   
+### <a name="AddNodes"></a>   
 ##### <a name="add-a-link-between-existing-code-elements"></a>Ajouter un lien entre des éléments de code existants  
   
 1. Sélectionnez l'élément de code source. Une barre d'outils apparaît au-dessus de l'élément de code.  
@@ -195,83 +195,83 @@ Réorganisez les éléments sur les cartes de code pour faciliter leur lecture e
   
 8. Appuyez sur **RETOUR**.  
   
-###  <a name="AddComments"></a>   
+### <a name="AddComments"></a>   
 ##### <a name="add-a-comment-to-an-existing-node-on-the-map"></a>Ajouter un commentaire à un nœud existant sur la carte  
   
-1.  Sélectionnez l'élément de code. Une barre d'outils apparaît au-dessus de lui.  
+1. Sélectionnez l'élément de code. Une barre d'outils apparaît au-dessus de lui.  
   
      ![Barre d’outils du graphique de dépendance](../modeling/media/depedencygraph-toolbar.png "DepedencyGraph_Toolbar")  
   
-2.  Dans la barre d’outils, choisissez la troisième icône **créer un nouveau nœud de commentaire avec un nouveau lien vers le nœud sélectionné**.  
+2. Dans la barre d’outils, choisissez la troisième icône **créer un nouveau nœud de commentaire avec un nouveau lien vers le nœud sélectionné**.  
   
      \- ou -  
   
      Ouvrez le menu contextuel de l’élément de code et choisissez **modifier**, **nouveau commentaire**.  
   
-3.  Tapez vos commentaires. Pour taper sur une nouvelle ligne, appuyez sur **MAJ** + **retourner**.  
+3. Tapez vos commentaires. Pour taper sur une nouvelle ligne, appuyez sur **MAJ** + **retourner**.  
   
 ##### <a name="add-a-comment-to-the-map-itself"></a>Ajouter un commentaire à la carte elle-même  
   
-1.  Ouvrez le menu contextuel de la carte et choisissez **modifier**, **nouveau commentaire**.  
+1. Ouvrez le menu contextuel de la carte et choisissez **modifier**, **nouveau commentaire**.  
   
-2.  Tapez vos commentaires. Pour taper sur une nouvelle ligne, appuyez sur **MAJ** + **retourner**.  
+2. Tapez vos commentaires. Pour taper sur une nouvelle ligne, appuyez sur **MAJ** + **retourner**.  
   
-###  <a name="RenameNodes"></a>   
+### <a name="RenameNodes"></a>   
 ##### <a name="rename-a-code-element-or-link"></a>Renommer un élément de code ou un lien  
   
-1.  Sélectionnez l'élément de code ou le lien que vous souhaitez renommer.  
+1. Sélectionnez l'élément de code ou le lien que vous souhaitez renommer.  
   
-2.  Appuyez sur **F2**, ou ouvrez le menu contextuel et choisissez **modifier**, **renommer**.  
+2. Appuyez sur **F2**, ou ouvrez le menu contextuel et choisissez **modifier**, **renommer**.  
   
-3.  Quand la zone d'édition apparaît sur la carte, renommez l'élément de code ou le lien.  
+3. Quand la zone d'édition apparaît sur la carte, renommez l'élément de code ou le lien.  
   
      \- ou -  
   
-4.  Ouvrez le menu contextuel et choisissez **modifier**, **propriétés**.  
+4. Ouvrez le menu contextuel et choisissez **modifier**, **propriétés**.  
   
-5.  Modifier le **étiquette** propriété dans la fenêtre Propriétés de Visual Studio.  
+5. Modifier le **étiquette** propriété dans la fenêtre Propriétés de Visual Studio.  
   
 ##### <a name="remove-a-code-element-or-link-from-the-map"></a>Supprimer un élément de code ou un lien de la carte  
   
-1.  Sélectionnez l’élément de code ou de lien et d’appuyez sur le **supprimer** clé.  
+1. Sélectionnez l’élément de code ou de lien et d’appuyez sur le **supprimer** clé.  
   
      \- ou -  
   
      Ouvrez le menu contextuel pour l’élément de code ou d’un lien et choisissez **modifier**, **supprimer**.  
   
-2.  Si l’élément ou un lien fait partie d’un groupe, le **récupérer à nouveau les enfants** bouton ![récupérer à nouveau une icône d’enfants](../modeling/media/dependencygraph-deletednodesicon.png "DependencyGraph_DeletedNodesIcon") apparaît à l’intérieur du groupe. Cliquez dessus pour récupérer les liens et éléments manquants.  
+2. Si l’élément ou un lien fait partie d’un groupe, le **récupérer à nouveau les enfants** bouton ![récupérer à nouveau une icône d’enfants](../modeling/media/dependencygraph-deletednodesicon.png "DependencyGraph_DeletedNodesIcon") apparaît à l’intérieur du groupe. Cliquez dessus pour récupérer les liens et éléments manquants.  
   
--   Vous pouvez supprimer des éléments de code et des liens d'une carte sans affecter le code sous-jacent. Quand vous les supprimez, leurs définitions sont supprimées du fichier DGML (.dgml).  
+- Vous pouvez supprimer des éléments de code et des liens d'une carte sans affecter le code sous-jacent. Quand vous les supprimez, leurs définitions sont supprimées du fichier DGML (.dgml).  
   
--   Les cartes créées en modifiant le DGML, en ajoutant des éléments de code non définis ou en utilisant certaines versions antérieures de Visual Studio ne prennent pas en charge cette fonctionnalité.  
+- Les cartes créées en modifiant le DGML, en ajoutant des éléments de code non définis ou en utilisant certaines versions antérieures de Visual Studio ne prennent pas en charge cette fonctionnalité.  
   
 ##### <a name="flag-a-code-element-for-follow-up"></a>Marquer un élément de code pour le suivi  
   
-1.  Sélectionnez l'élément de code ou le lien à marquer pour le suivi.  
+1. Sélectionnez l'élément de code ou le lien à marquer pour le suivi.  
   
-2.  Ouvrez le menu contextuel et choisissez **modifier**, **indicateur de suivi**.  
+2. Ouvrez le menu contextuel et choisissez **modifier**, **indicateur de suivi**.  
   
--   Par défaut, l'élément de code est affecté d'un arrière-plan rouge. Envisagez [, ajoutez un commentaire](#AddComments) à l’aide d’informations de suivi appropriées.  
+- Par défaut, l'élément de code est affecté d'un arrière-plan rouge. Envisagez [, ajoutez un commentaire](#AddComments) à l’aide d’informations de suivi appropriées.  
   
--   Modifier la couleur d’arrière-plan de l’élément ou effacer l’indicateur de suivi en choisissant **modifier**, **autres couleurs d’indicateur**.  
+- Modifier la couleur d’arrière-plan de l’élément ou effacer l’indicateur de suivi en choisissant **modifier**, **autres couleurs d’indicateur**.  
   
-##  <a name="ChangeStyleCodeOrLink"></a> Modifier le style d’un élément de code ou un lien  
+## <a name="ChangeStyleCodeOrLink"></a> Modifier le style d’un élément de code ou un lien  
  Vous pouvez modifier les icônes sur les éléments de code et les couleurs des éléments de code et des liens à l'aide de couleurs et d'icônes prédéfinies. Par exemple, vous pouvez choisir une couleur pour mettre en évidence des éléments de code et des liens ayant une certaine catégorie ou propriété. Vous pouvez ainsi identifier et vous concentrer sur des zones spécifiques de la carte. Vous pouvez spécifier des couleurs et des icônes personnalisées en modifiant le fichier .dgml ; consultez [cartes de code de la personnaliser en modifiant les fichiers DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
 #### <a name="to-apply-a-predefined-color-or-icon-to-code-elements-or-links-with-a-certain-category-or-property"></a>Pour appliquer une icône ou couleur prédéfinie à des éléments de code ou des liens ayant une certaine catégorie ou propriété  
   
-1.  Dans la barre d’outils de la carte, choisissez **légende**.  
+1. Dans la barre d’outils de la carte, choisissez **légende**.  
   
-2.  Dans le **légende** zone, voir si la catégorie d’élément de code ou la propriété figure déjà dans la liste.  
+2. Dans le **légende** zone, voir si la catégorie d’élément de code ou la propriété figure déjà dans la liste.  
   
-3.  Si la liste n’inclut pas la catégorie ou la propriété, choisissez **+** dans le **légende** zone, puis choisissez **propriété de nœud**, **catégorie de nœud** , **Lier la propriété**, ou **lier catégorie**. Choisissez ensuite la propriété ou la catégorie. La catégorie ou la propriété apparaît maintenant dans le **légende** boîte.  
+3. Si la liste n’inclut pas la catégorie ou la propriété, choisissez **+** dans le **légende** zone, puis choisissez **propriété de nœud**, **catégorie de nœud** , **Lier la propriété**, ou **lier catégorie**. Choisissez ensuite la propriété ou la catégorie. La catégorie ou la propriété apparaît maintenant dans le **légende** boîte.  
   
     > [!NOTE]
     >  Pour créer et affecter une catégorie ou une propriété à un élément de code, vous pouvez modifier le fichier .dgml ; consultez [cartes de code de la personnaliser en modifiant les fichiers DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
-4.  Dans le **légende** zone, cliquez sur l’icône en regard de la catégorie ou la propriété que vous avez ajouté, ou vous souhaitez modifier.  
+4. Dans le **légende** zone, cliquez sur l’icône en regard de la catégorie ou la propriété que vous avez ajouté, ou vous souhaitez modifier.  
   
-5.  Utilisez le tableau suivant pour sélectionner le style que vous voulez modifier :  
+5. Utilisez le tableau suivant pour sélectionner le style que vous voulez modifier :  
   
     |**Pour modifier le**|**Choose**|  
     |-----------------------|----------------|  
@@ -282,7 +282,7 @@ Réorganisez les éléments sur les cartes de code pour faciliter leur lecture e
   
      Le **sélecteur de jeu de couleurs** ou **sélecteur de jeu icône** boîte de dialogue apparaît pour vous permettre de sélectionner une couleur ou une icône.  
   
-6.  Dans le **sélecteur de jeu de couleurs** ou **sélecteur de jeu icône** boîte de dialogue, effectuez l’une des opérations suivantes :  
+6. Dans le **sélecteur de jeu de couleurs** ou **sélecteur de jeu icône** boîte de dialogue, effectuez l’une des opérations suivantes :  
   
     |**Pour appliquer un**|**Effectuez ces étapes**|  
     |--------------------|-----------------------------|  
@@ -292,12 +292,12 @@ Réorganisez les éléments sur les cartes de code pour faciliter leur lecture e
     > [!NOTE]
     >  Vous pouvez réorganiser, supprimer ou temporairement désactiver des styles dans le **légende** boîte. Consultez [modifier la zone de légende](#ModifyLegend).  
   
-##  <a name="ModifyLegend"></a> Modifier la zone de légende  
+## <a name="ModifyLegend"></a> Modifier la zone de légende  
  Vous pouvez réorganiser, supprimer ou temporairement désactiver des styles dans le **légende** zone :  
   
-1.  Ouvrez le menu contextuel d’un style dans le **légende** boîte.  
+1. Ouvrez le menu contextuel d’un style dans le **légende** boîte.  
   
-2.  Exécutez l’une des tâches suivantes :  
+2. Exécutez l’une des tâches suivantes :  
   
     |**To**|**Choose**|  
     |------------|----------------|  
@@ -306,15 +306,15 @@ Réorganisez les éléments sur les cartes de code pour faciliter leur lecture e
     |Déplacer le style vers le haut|**Déplacer vers le haut**|  
     |Déplacer l'élément de code vers le bas|**Déplacer vers le bas**|  
   
-##  <a name="CopyLegend"></a> Copier des styles à partir d’un mappage vers un autre  
+## <a name="CopyLegend"></a> Copier des styles à partir d’un mappage vers un autre  
   
-1.  Assurez-vous que le **légende** boîte apparaît sur la carte de code source. S’il n’est pas visible, dans la barre d’outils de mappage, cliquez sur **légende**.  
+1. Assurez-vous que le **légende** boîte apparaît sur la carte de code source. S’il n’est pas visible, dans la barre d’outils de mappage, cliquez sur **légende**.  
   
-2.  Ouvrez le menu contextuel pour le **légende** boîte. Choisissez **copier la légende**.  
+2. Ouvrez le menu contextuel pour le **légende** boîte. Choisissez **copier la légende**.  
   
-3.  Collez la légende sur la carte cible.  
+3. Collez la légende sur la carte cible.  
   
-##  <a name="MergeMaps"></a> Fusionner des cartes de code  
+## <a name="MergeMaps"></a> Fusionner des cartes de code  
  Vous pouvez fusionner des cartes en copiant et en collant des éléments de code entre les cartes. Si les identificateurs d'éléments de code correspondent, le collage d'éléments de code fonctionne comme une opération de fusion. Pour simplifier cette tâche, placez tous les assemblys ou binaires que vous souhaitez visualiser dans le même dossier pour que le chemin d'accès complet de chaque assembly ou binaire soit le même pour chaque carte que vous souhaitez fusionner.  
   
  Vous pouvez également faire glisser ces assemblys ou ces binaires vers la même carte à partir de ce dossier.  

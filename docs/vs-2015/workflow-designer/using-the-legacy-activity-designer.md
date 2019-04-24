@@ -16,12 +16,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e083da3dce7ed6b69309557d9e960a302f5b3d60
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5755c6a3b4ece5b40c7799d83bdf33966d5c2b3e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952315"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070782"
 ---
 # <a name="using-the-legacy-activity-designer"></a>Utilisation du concepteur d'activités hérité
 Cette rubrique décrit comment utiliser le concepteur d'activités dans le [!INCLUDE[wfd1](../includes/wfd1-md.md)] hérité. Utilisez le concepteur hérité lorsque vous ciblez le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -35,9 +35,9 @@ Cette rubrique décrit comment utiliser le concepteur d'activités dans le [!INC
   
 2. Sélectionnez le **activité** ou **activité (avec séparation de code)** modèle.  
   
-   1.  Utilisez le **activité** modèle pour créer une activité avec la définition d’activité et le code utilisateur dans le même fichier de code.  
+   1. Utilisez le **activité** modèle pour créer une activité avec la définition d’activité et le code utilisateur dans le même fichier de code.  
   
-   2.  Utilisez le **activité (avec séparation de code)** modèle pour créer une activité avec la définition d’activité exprimée sous la forme de balisage de flux de travail et le code utilisateur dans un fichier de code séparé.  
+   2. Utilisez le **activité (avec séparation de code)** modèle pour créer une activité avec la définition d’activité exprimée sous la forme de balisage de flux de travail et le code utilisateur dans un fichier de code séparé.  
   
 3. Tapez un nom d’activité ou conservez le nom par défaut, puis cliquez sur **ajouter**.  
   

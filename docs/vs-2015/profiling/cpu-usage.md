@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 46d2005ae22828a01a03141a870acec4e23a785d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a78025bd11e56b001514f580acca18b7d21d5424
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755355"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067051"
 ---
 # <a name="cpu-usage"></a>Utilisation du processeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,19 +27,19 @@ Lorsque vous devez étudier les problèmes de performances de votre application,
   
  Le hub Performances et diagnostics vous offre bien d'autres options pour exécuter et gérer votre session de diagnostic. Par exemple, vous pouvez exécuter l’outil **Utilisation du processeur** sur les ordinateurs locaux ou distants, ou bien dans un simulateur ou un émulateur. Vous pouvez analyser les performances d'un projet ouvert dans Visual Studio, attaché à une application en cours d'exécution, ou démarrer une application installée à partir du Windows Store. Pour plus d’informations, consultez [exécuter les outils de profilage sans débogage](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
   
-##  <a name="BKMK_Collect_CPU_usage_data"></a> Collecter les données d'utilisation de l'UC  
+## <a name="BKMK_Collect_CPU_usage_data"></a> Collecter les données d'utilisation de l'UC  
   
 1. Dans Visual Studio, définissez la configuration de solution sur **Version finale** et choisissez la cible de déploiement.  
   
     ![Sélectionner la version et l’ordinateur local](../profiling/media/cpuuse-selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
   
-   -   L'exécution de l'application en mode **Version finale** vous offre une meilleure vue des performances réelles de votre application.  
+   - L'exécution de l'application en mode **Version finale** vous offre une meilleure vue des performances réelles de votre application.  
   
-   -   L'exécution de l'application sur l'ordinateur local réplique au mieux l'exécution de l'application installée.  
+   - L'exécution de l'application sur l'ordinateur local réplique au mieux l'exécution de l'application installée.  
   
-   -   Si vous collectez les données à partir d'un appareil distant, exécutez l'application directement sur l'appareil et non par une connexion Bureau à distance.  
+   - Si vous collectez les données à partir d'un appareil distant, exécutez l'application directement sur l'appareil et non par une connexion Bureau à distance.  
   
-   -   Pour les applications Windows Phone, la collecte des données directement à partir de l' **Appareil** fournit les données les plus précises.  
+   - Pour les applications Windows Phone, la collecte des données directement à partir de l' **Appareil** fournit les données les plus précises.  
   
 2. Dans le menu **Déboguer** , choisissez **Profileur de performances**.  
   
@@ -59,10 +59,10 @@ Lorsque vous devez étudier les problèmes de performances de votre application,
   
 ## <a name="analyze-the-cpu-usage-report"></a>Analyser le rapport d'utilisation de l'UC  
   
-###  <a name="BKMK_The_CPU_Usage_call_tree"></a> Arborescence des appels d'utilisation du processeur  
+### <a name="BKMK_The_CPU_Usage_call_tree"></a> Arborescence des appels d'utilisation du processeur  
  Pour commencer la présentation des informations sur l'arborescence des appels, sélectionnez de nouveau le segment `GetMaxNumberButton_Click` et consultez les détails d'arborescence des appels.  
   
-####  <a name="BKMK_Call_tree_structure"></a> Structure de l’arborescence des appels  
+#### <a name="BKMK_Call_tree_structure"></a> Structure de l’arborescence des appels  
  ![Arborescence des appels GetMaxNumberButton&#95;Click](../profiling/media/cpu-use-wt-getmaxnumbercalltree-annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
   
 |||  
@@ -72,7 +72,7 @@ Lorsque vous devez étudier les problèmes de performances de votre application,
 |![Étape 3](../profiling/media/procguid-3.png "ProcGuid_3")|Les enfants du nœud de deuxième niveau sont les méthodes en code utilisateur et des routines asynchrones appelées ou créées par le code système et framework de deuxième niveau.|  
 |![Étape 4](../profiling/media/procguid-4.png "ProcGuid_4")|Les nœuds enfants d'une méthode contiennent des données seulement pour les appels de la méthode parente. Lorsque l'option **Afficher le Code externe** est désactivée, les méthodes d'application peuvent également contenir un nœud **[Code externe]** .|  
   
-####  <a name="BKMK_External_Code"></a> Code externe  
+#### <a name="BKMK_External_Code"></a> Code externe  
  Le code externe correspond aux fonctions des composants système et infrastructure exécutés par le code que vous écrivez. Le code externe inclut les fonctions qui démarrent et arrêtent l'application, dessinent l'interface utilisateur, contrôlent les threads et fournissent d'autres services de bas niveau à l'application. Dans la plupart des cas, vous ne serez pas intéressé par le code externe ; par conséquent, l'arborescence des appels de l'utilisation du processeur regroupe les fonctions externes d'une méthode utilisateur en un seul nœud **[Code externe]** .  
   
  Quand vous voulez afficher les chemins d'appel du code externe, choisissez **Afficher le code externe** dans la liste **Filtrer la vue** , puis **Appliquer**.  
@@ -87,7 +87,7 @@ Lorsque vous devez étudier les problèmes de performances de votre application,
   
  ![Rechercher du code externe imbriqué](../profiling/media/cpu-use-wt-showexternalcodetoowide-found.png "CPU_USE_WT_ShowExternalCodeTooWide_Found")  
   
-###  <a name="BKMK_Call_tree_data_columns"></a> Colonnes des données de l’arborescence des appels  
+### <a name="BKMK_Call_tree_data_columns"></a> Colonnes des données de l’arborescence des appels  
   
 |||  
 |-|-|  
@@ -97,7 +97,7 @@ Lorsque vous devez étudier les problèmes de performances de votre application,
 |**Processeur auto (ms)**|Nombre de millisecondes utilisées par les appels à la fonction dans la plage de temps sélectionnée et les fonctions appelées par la fonction.|  
 |**Module**|Nom du module contenant la fonction, ou le nombre de modules contenant les fonctions dans un nœud [Code externe].|  
   
-###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Fonctions asynchrones de l'arborescence des appels de l'utilisation du processeur  
+### <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Fonctions asynchrones de l'arborescence des appels de l'utilisation du processeur  
  Lorsque le compilateur rencontre une méthode asynchrone, il crée une classe masquée pour contrôler l'exécution de la méthode. Conceptuellement, la classe est une machine à états qui inclut la liste des fonctions générées par le compilateur qui appellent les opérations de la méthode d'origine en mode asynchrone, ainsi que les rappels, le planificateur et les itérateurs requis. Quand la méthode d'origine est appelée par une méthode parente, le runtime supprime la méthode du contexte d'exécution du parent et exécute les méthodes de la classe masquée dans le contexte du code système et de l'infrastructure qui contrôle l'exécution de l'application. Les méthodes asynchrones sont souvent, mais pas toujours, exécutées sur un ou plusieurs threads différents. Ce code est affiché dans l'arborescence des appels de l'utilisation du processeur en tant qu'enfants du nœud **[Code externe]** situé immédiatement sous le nœud supérieur de l'arborescence.  
   
  Pour le voir dans notre exemple, resélectionnez le segment `GetMaxNumberAsyncButton_Click` dans la chronologie.  
@@ -108,8 +108,8 @@ Lorsque vous devez étudier les problèmes de performances de votre application,
   
  ![Arborescence des appels GetMaxNumberAsyncButton&#95;Click développée](../profiling/media/cpu-use-wt-getmaxnumberasync-expandedcalltree.png "CPU_USE_WT_GetMaxNumberAsync_ExpandedCallTree")  
   
--   `MainPage::GetMaxNumberAsyncButton_Click` se contente de gérer la liste des valeurs de la tâche, de calculer le nombre maximal de résultats et d'affiche la sortie.  
+- `MainPage::GetMaxNumberAsyncButton_Click` se contente de gérer la liste des valeurs de la tâche, de calculer le nombre maximal de résultats et d'affiche la sortie.  
   
--   `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext` affiche l'activité requise pour planifier et lancer les 48 tâches qui encapsulent l'appel à `GetNumberAsync`.  
+- `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext` affiche l'activité requise pour planifier et lancer les 48 tâches qui encapsulent l'appel à `GetNumberAsync`.  
   
--   `MainPage::<GetNumberAsync>b__b` affiche l'activité des tâches qui appellent `GetNumber`.
+- `MainPage::<GetNumberAsync>b__b` affiche l'activité des tâches qui appellent `GetNumber`.

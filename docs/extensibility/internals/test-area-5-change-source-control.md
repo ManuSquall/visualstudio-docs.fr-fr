@@ -1,5 +1,5 @@
 ---
-title: 'Zone de test 5 : Modifier le contrôle de code Source | Microsoft Docs'
+title: 'Zone de test 5 : Modifier le contrôle de code Source | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab37b3766c61c63ce99c13bb375d1bdd90d237d2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0a9c13a1b1bb9c8240faeaaf8d67b0b8df259227
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599647"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649249"
 ---
-# <a name="test-area-5-change-source-control"></a>Zone de test 5 : Modifier le contrôle de code Source
+# <a name="test-area-5-change-source-control"></a>Zone de test 5 : Changer le contrôle de code source
 Cette zone de test plug-in de contrôle de code source couvre la modification du contrôle de code source via le **modifier le contrôle de Source** commande.
 
  **Modifier le contrôle de code Source** commande fournit quatre fonctions de base pour l’utilisateur :
@@ -45,7 +45,6 @@ Cette zone de test plug-in de contrôle de code source couvre la modification du
 
 ### <a name="case-5a-bind"></a>5 a case : Lier
  Liaison permet à l’utilisateur Ajouter des informations de contrôle de code source pour les projets sélectionnés et les solutions. L’utilisateur est généralement invité à identifier un projet dans le contrôle de code source à laquelle ils doivent être ajoutées. L’utilisateur ne peut pas créer un nouveau projet dans le contrôle de code source dans le cadre de cette opération (contraste avec les ajouter au contrôle de code Source).
-
 
 | Action | Étapes de test | Résultats attendus pour vérifier |
 | - | - | - |

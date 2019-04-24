@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cd81854dfa603063a70b2fe11b06eff341c203f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 09c16e55766c0239346540dfcc74b99b2ed8579b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913052"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103589"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Validation dans un langage spécifique à un domaine
 En tant qu'auteur d'un langage spécifique à un domaine (DSL), vous pouvez définir des contraintes de validation afin de vérifier que le modèle créé par l'utilisateur a un sens. Par exemple, si votre DSL permet aux utilisateurs de tracer l'arbre généalogique d'une famille et de ses ancêtres, vous pouvez écrire une contrainte qui garantit que les enfants ont des dates de naissance postérieures à celles de leurs parents.
@@ -54,13 +54,13 @@ En tant qu'auteur d'un langage spécifique à un domaine (DSL), vous pouvez déf
 
 1. Activez la validation dans le **éditeur\validation** nœud :
 
-   1.  Ouvrez **Dsl\DslDefinition.dsl**.
+   1. Ouvrez **Dsl\DslDefinition.dsl**.
 
-   2.  Dans l’Explorateur DSL, développez le **éditeur** nœud et sélectionnez **Validation**.
+   2. Dans l’Explorateur DSL, développez le **éditeur** nœud et sélectionnez **Validation**.
 
-   3.  Dans la fenêtre Propriétés, définissez la **utilise** propriétés à `true`. Il est plus pratique de définir toutes ces propriétés.
+   3. Dans la fenêtre Propriétés, définissez la **utilise** propriétés à `true`. Il est plus pratique de définir toutes ces propriétés.
 
-   4.  Cliquez sur **transformer tous les modèles** dans le **l’Explorateur de solutions** barre d’outils.
+   4. Cliquez sur **transformer tous les modèles** dans le **l’Explorateur de solutions** barre d’outils.
 
 2. Écrivez les définitions de classe partielle pour une ou plusieurs de vos classes de domaine ou relations de domaine. Écrivez ces définitions dans un fichier de code dans le **Dsl** projet.
 
@@ -70,7 +70,7 @@ En tant qu'auteur d'un langage spécifique à un domaine (DSL), vous pouvez déf
    [ValidationState(ValidationState.Enabled)]
    ```
 
-   -   Par défaut, cet attribut activera aussi la validation pour les classes dérivées. Si vous voulez désactiver la validation pour une classe dérivée spécifique, vous pouvez utiliser `ValidationState.Disabled`.
+   - Par défaut, cet attribut activera aussi la validation pour les classes dérivées. Si vous voulez désactiver la validation pour une classe dérivée spécifique, vous pouvez utiliser `ValidationState.Disabled`.
 
 4. Ajoutez les méthodes de validation aux classes. Chaque méthode de validation peut avoir un nom quelconque, mais un seul paramètre de type <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext>.
 
@@ -82,7 +82,7 @@ En tant qu'auteur d'un langage spécifique à un domaine (DSL), vous pouvez déf
 
     L'attribut ValidationCategories spécifie à quel moment la méthode est exécutée.
 
-   Par exemple :
+   Exemple :
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;
@@ -144,7 +144,7 @@ public partial class ParentsHaveChildren
 ## <a name="validation-categories"></a>Catégories de validation
  Dans l'attribut <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute>, vous spécifiez à quel moment la méthode de validation doit s'exécuter.
 
-|Catégorie|Exécution|
+|Category|Exécution|
 |-|-|
 |<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|Lorsque l'utilisateur appelle la commande de menu Valider.|
 |<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|Lorsque le fichier de modèle est ouvert.|
@@ -177,7 +177,7 @@ public partial class Person
 
  L'inconvénient est que la méthode combinée est moins facile à gérer et que les contraintes doivent toutes avoir les mêmes `ValidationCategories`. Il est donc recommandé que vous conserviez chaque contrainte dans une méthode distincte si possible.
 
- **Transmission de valeurs dans le cache de contexte.** Le paramètre de contexte a un dictionnaire dans lequel vous pouvez placer des valeurs arbitraires. Le dictionnaire demeure pendant la durée de l'exécution de la validation. Une méthode de validation particulière peut, par exemple, conserver le nombre d'erreurs dans le contexte et l'utiliser pour éviter que la fenêtre d'erreurs ne déborde sous les messages répétés. Par exemple :
+ **Transmission de valeurs dans le cache de contexte.** Le paramètre de contexte a un dictionnaire dans lequel vous pouvez placer des valeurs arbitraires. Le dictionnaire demeure pendant la durée de l'exécution de la validation. Une méthode de validation particulière peut, par exemple, conserver le nombre d'erreurs dans le contexte et l'utiliser pour éviter que la fenêtre d'erreurs ne déborde sous les messages répétés. Exemple :
 
 ```csharp
 List<ParentsHaveChildren> erroneousLinks;
@@ -213,7 +213,7 @@ partial class MyLanguageCommandSet
 
  Pour plus d'informations, voir [Procédure : Ajouter une commande au Menu contextuel](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).
 
- Vous pouvez aussi créer un contrôleur de validation distinct et gérer les erreurs vous-même. Par exemple :
+ Vous pouvez aussi créer un contrôleur de validation distinct et gérer les erreurs vous-même. Exemple :
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;

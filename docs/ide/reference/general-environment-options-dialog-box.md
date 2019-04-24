@@ -24,12 +24,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fdbd8c64514854aa77c358145badbf6583996f1
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: a2f860293669ddab035ddd1c53e09dbb9962df01
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647269"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018192"
 ---
 # <a name="options-dialog-box-environment--general"></a>Boîte de dialogue Options : Environnement \> Général
 
@@ -43,23 +43,34 @@ Choisissez **Bleu**, **Clair**, **Foncé** ou **Bleu (contraste supplémentaire)
 
 Vous pouvez installer d’autres thèmes prédéfinis et créer des thèmes personnalisés en téléchargeant et en installant l’**éditeur de thème de couleur de Visual Studio** à partir de [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Une fois cet outil installé, d'autres thèmes de couleurs apparaissent dans la zone de liste **Thème de couleur**.
 
-**Mettre la 1ère lettre des mots en maj. dans la barre de menus**
+**Mettre la première lettre des mots en majuscule dans la barre de menus**
 
 Dans les menus, une majuscule est appliquée à la première lettre des mots par défaut. Décochez cette option pour mettre toutes les lettres des mots en majuscule.
 
 ::: moniker range=">=vs-2019"
 
-**Optimiser le rendu pour les écrans avec des densités en pixels différentes (redémarrage nécessaire)**
+**Optimiser le rendu des écrans présentant des densités de pixels différentes (redémarrage nécessaire)**
 
 Cette option active ou désactive la prise en charge des points par pouce (PPP) par écran (ou *PMA*). Lorsque la PMA est activée, l’interface utilisateur de Visual Studio s’affiche de façon nette dans n’importe quel facteur d’échelle d’affichage d’écran et n’importe quelle configuration PPP, y compris en multiécran. Pour activer la PMA, vous avez besoin de la Mise à jour d’avril 2018 de Windows 10 ou ultérieure et de .NET Framework 4.8 ou ultérieur. (Cette option apparaît grisée si ces deux prérequis ne sont pas remplis.)
 
+> [!TIP]
+> - Windows 10 comporte un paramètre **Laisser Windows essayer de résoudre les problèmes d’applications floues**. S’il est **activé**, il a effet négligeable dès lors que l’option **Optimiser le rendu des écrans présentant des densités de pixels différentes** est cochée.
+> - Windows 10 inclut également une **Résolution des problèmes de compatibilité des programmes**. Nous recommandons de ne pas essayer de résoudre les problèmes d’apparence de Visual Studio avec cet utilitaire.
+
 ::: moniker-end
 
-**Ajuster automatiquement l’expérience visuelle selon les perf. du client**
+**Ajuster automatiquement l’expérience visuelle selon les performances du client**
 
 Spécifie si Visual Studio définit automatiquement le réglage de l'expérience visuelle ou si vous vous en chargez explicitement. Ce réglage peut changer l'affichage des couleurs, depuis des dégradés jusqu'à des couleurs simples, ou limiter l'utilisation des animations dans les menus ou les fenêtres contextuelles.
 
-**Activer l’expérience client améliorée**
+::: moniker range="vs-2017"
+
+> [!TIP]
+> Windows 10 comporte un paramètre **Laisser Windows essayer de résoudre les problèmes d’applications floues**. Il est recommandé **d’activer** ce paramètre si Visual Studio paraît flou sur le moniteur. Envisagez de passer à [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019), qui offre une bien meilleure clarté de l’affichage. En effet, il s’agit d’une application compatible points par pouce par moniteur.
+
+::: moniker-end
+
+**Offrir une expérience client enrichie**
 
 Active l'expérience visuelle complète de Visual Studio, y compris les dégradés et les animations. Désactivez cette option lors de l’utilisation de connexions Bureau à distance ou de cartes graphiques anciennes, car les performances de ces fonctionnalités peuvent se révéler médiocres dans ces cas. Cette option est disponible seulement quand vous désactivez l’option **Ajuster automatiquement l’expérience visuelle selon les perf. du client**.
 
@@ -73,7 +84,7 @@ Utilise l'accélération graphique matérielle si elle est disponible, au lieu d
 
 Personnalise le nombre de fenêtres qui s’affichent dans la liste Fenêtres du menu **Fenêtre**. Entrez un nombre compris entre 1 et 24. La valeur par défaut est 10.
 
-**Éléments affichés dans la liste des fichiers récents**
+**Éléments affichés dans les listes de fichiers récents**
 
 Personnalise le nombre des projets et des fichiers les plus récemment utilisés qui s’affichent dans le menu **Fichier**. Entrez un nombre compris entre 1 et 24. La valeur par défaut est 10. Il s'agit d'un moyen facile de récupérer les projets et les fichiers récemment utilisés.
 

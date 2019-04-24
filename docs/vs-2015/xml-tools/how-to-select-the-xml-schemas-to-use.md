@@ -9,17 +9,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 385eee679c3a65db360d9ec6c0ab7735ff40128a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d694fe9bb614acfd80e5ec1b9f6bed166775c214
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949309"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091473"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Procédure : Sélectionner les schémas XML à utiliser
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 L'Éditeur XML fournit un cache de schéma dans le répertoire %InstallDir%\Xml\Schemas. Le cache de schéma contient des schémas XML connus utilisés pour IntelliSense et la validation de documents XML.  
   
  Le **schémas** propriété de document est utilisée pour sélectionner un ou plusieurs XML schema definition language (XSD) à utiliser. Elle permet de choisir des schémas dans le cache de schéma ou de spécifier un schéma situé ailleurs dans le cache.  
@@ -51,23 +50,23 @@ L'Éditeur XML fournit un cache de schéma dans le répertoire %InstallDir%\Xml\
   
 ### <a name="to-add-an-xml-schema-to-the-schema-cache"></a>Pour ajouter un schéma XML au cache de schéma  
   
-1.  Dans la fenêtre de propriétés de document, cliquez sur le bouton sur le **schémas** champ.  
+1. Dans la fenêtre de propriétés de document, cliquez sur le bouton sur le **schémas** champ.  
   
-2.  Cliquez sur **Ajouter**.  
+2. Cliquez sur **Ajouter**.  
   
      Cette opération ouvre le **ouvrir le schéma XSD** boîte de dialogue.  
   
-3.  Recherchez et sélectionnez le ou les schémas à ajouter au cache de schéma.  
+3. Recherchez et sélectionnez le ou les schémas à ajouter au cache de schéma.  
   
-4.  Cliquez sur **Ouvrir**.  
+4. Cliquez sur **Ouvrir**.  
   
      Les schémas sont ajoutés au schéma de mettre en cache et est le **utilisation** colonne a la valeur **utiliser ce schéma**.  
   
 ### <a name="to-delete-an-xml-schema-from-the-schema-cache"></a>Pour supprimer un schéma XML du cache de schéma  
   
-1.  Dans la fenêtre de propriétés de document, cliquez sur le bouton sur le **schémas** champ.  
+1. Dans la fenêtre de propriétés de document, cliquez sur le bouton sur le **schémas** champ.  
   
-2.  Sélectionnez le schéma à supprimer, puis cliquez sur **supprimer**.  
+2. Sélectionnez le schéma à supprimer, puis cliquez sur **supprimer**.  
   
      Le schéma est supprimé du cache de schéma en mémoire, mais pas du système de fichiers.  
   

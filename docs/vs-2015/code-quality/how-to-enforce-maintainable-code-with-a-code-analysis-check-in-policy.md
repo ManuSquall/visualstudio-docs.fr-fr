@@ -11,12 +11,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 5676bfaabb20ebf6dabea7bae66527d17891b362
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 27593a450f7c2a1b34c1c84bc1d4e7ea5bb5919f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938199"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091874"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>Procédure : Appliquer du code facile à maintenir avec une stratégie d’archivage d’analyse du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,35 +29,35 @@ Les développeurs peuvent utiliser l’outil de métrique du Code pour mesurer l
   
 ### <a name="to-open-the-code-analysis-policy-editor"></a>Pour ouvrir l’éditeur de stratégie de Code Analysis  
   
-1.  Dans **Team Explorer**, cliquez sur le projet d’équipe, cliquez sur **paramètres du projet d’équipe**, puis cliquez sur **contrôle de code Source**.  
+1. Dans **Team Explorer**, cliquez sur le projet d’équipe, cliquez sur **paramètres du projet d’équipe**, puis cliquez sur **contrôle de code Source**.  
   
      Le **contrôle de code Source** boîte de dialogue s’affiche.  
   
-2.  Sur le **stratégie d’archivage** onglet, puis cliquez sur **ajouter**.  
+2. Sur le **stratégie d’archivage** onglet, puis cliquez sur **ajouter**.  
   
      Le **ajouter la stratégie d’archivage** boîte de dialogue s’affiche.  
   
-3.  Dans le **stratégie d’archivage** liste, sélectionnez le **analyse du Code** case à cocher, puis cliquez sur **OK**.  
+3. Dans le **stratégie d’archivage** liste, sélectionnez le **analyse du Code** case à cocher, puis cliquez sur **OK**.  
   
      Le **éditeur de stratégie de Code Analysis** boîte de dialogue s’affiche.  
   
 ### <a name="to-enable-code-analysis-maintainability-rules"></a>Pour activer les règles d’analyse du Code la facilité de maintenance  
   
-1.  Dans le **éditeur de stratégie de Code Analysis** boîte de dialogue **les paramètres de règle**, développez le **règles de maintenabilité** nœud.  
+1. Dans le **éditeur de stratégie de Code Analysis** boîte de dialogue **les paramètres de règle**, développez le **règles de maintenabilité** nœud.  
   
-2.  Sélectionnez les cases à cocher pour les règles suivantes :  
+2. Sélectionnez les cases à cocher pour les règles suivantes :  
   
-    -   Profondeur d’héritage : **CA1501 AvoidExcessiveInheritance** -seuil : Avertissement à plus de 5 niveaux de profondeur  
+    - Profondeur d’héritage : **CA1501 AvoidExcessiveInheritance** -seuil : Avertissement à plus de 5 niveaux de profondeur  
   
-    -   Complexité : **CA1502 AvoidExcessiveComplexity** -seuil : Avertissement à plus de 25  
+    - Complexité : **CA1502 AvoidExcessiveComplexity** -seuil : Avertissement à plus de 25  
   
-    -   Indice de maintenabilité : **CA1505 AvoidUnmaintainableCode** -seuil : Avertissement à moins de 20  
+    - Indice de maintenabilité : **CA1505 AvoidUnmaintainableCode** -seuil : Avertissement à moins de 20  
   
-    -   COUPLAGE de classe : **CA1506 AvoidExcessiveClassCoupling** -seuil : Avertissement à plus de 80 pour une classe et plus de 30 pour une méthode  
+    - COUPLAGE de classe : **CA1506 AvoidExcessiveClassCoupling** -seuil : Avertissement à plus de 80 pour une classe et plus de 30 pour une méthode  
   
-    -   En outre, si vous souhaitez une violation de règle empêche une génération, sélectionnez le **traiter un avertissement comme une erreur** case à cocher en regard de la description de la règle.  
+    - En outre, si vous souhaitez une violation de règle empêche une génération, sélectionnez le **traiter un avertissement comme une erreur** case à cocher en regard de la description de la règle.  
   
-3.  Cliquez sur **OK**. La nouvelle stratégie de vérification s’applique désormais aux archivages ultérieurs.  
+3. Cliquez sur **OK**. La nouvelle stratégie de vérification s’applique désormais aux archivages ultérieurs.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Valeurs de métriques de code](../code-quality/code-metrics-values.md)   

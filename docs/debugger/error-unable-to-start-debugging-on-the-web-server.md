@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 908500a333303857ac88d27c76b285464913ff1c
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: 53ffc893b63447ab75a439ea1e093ddaf4b75645
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526293"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067129"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>Erreur : impossible de démarrer le débogage sur le serveur web
 
@@ -51,7 +51,7 @@ Le `Unable to start debugging on the Web server` message est générique. En rè
 - [Le serveur distant a retourné une erreur](#server_error)
 - [Impossible de démarrer le débogage ASP.NET](#aspnet)
 - [Le débogueur ne peut pas se connecter à l’ordinateur distant](#cannot_connect)
-- [ Consultez l’aide pour plus d’informations sur les erreurs de configuration courantes. Exécution de la page Web en dehors du débogueur peut fournir davantage d’informations.](#see_help)
+- [Consultez l’aide pour les erreurs de configuration courantes. Exécution de la page Web en dehors du débogueur peut fournir davantage d’informations.](#see_help)
 
 ## <a name="IISlist"></a> IIS ne répertorie pas un site Web qui correspond au lancement de l’url
 
@@ -61,7 +61,7 @@ Le `Unable to start debugging on the Web server` message est générique. En rè
 
 ## <a name="web_server_config"></a> Le serveur web n’est pas configuré correctement
 
-- Consultez [erreur : le serveur web n’est pas configuré correctement](../debugger/error-the-web-server-is-not-configured-correctly.md).
+- Consultez [erreur : Le serveur web n’est pas configuré correctement](../debugger/error-the-web-server-is-not-configured-correctly.md).
 
 ## <a name="unabletoconnect"></a> Impossible de se connecter sur le serveur Web
 
@@ -104,7 +104,7 @@ En outre, si vous utilisez un fichier HOSTS, assurez-vous qu’il est configuré
 
 - Si cela ne fonctionne pas ou si vous effectuez un débogage à distance, suivez les étapes de [Vérifiez votre Configuration IIS](#vxtbshttpservererrorsthingstocheck).
 
-##  <a name="vxtbshttpservererrorsthingstocheck"></a> Vérifiez votre configuration d’IIS
+## <a name="vxtbshttpservererrorsthingstocheck"></a> Vérifiez votre configuration d’IIS
 
 Après avoir pris les mesures décrites ici pour résoudre le problème et avant d’essayer à nouveau de déboguer, vous devrez peut-être également réinitialiser IIS. Vous pouvez le faire en ouvrant une invite de commandes avec élévation de privilèges et en tapant `iisreset`.
 

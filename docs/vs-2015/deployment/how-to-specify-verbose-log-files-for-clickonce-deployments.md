@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0efd71b38d3fcd8ae8241e31e721bd48e857d3bd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e200d0918e3d346f71da6ec2184e07e7d8433174
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938422"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069768"
 ---
 # <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Procédure : Spécifier des fichiers journaux détaillés pour les déploiements ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ ms.locfileid: "58938422"
   
 ### <a name="to-specify-verbose-log-files"></a>Pour spécifier les fichiers journaux détaillés  
   
-1.  Ouvrez **Regedit.exe**.  
+1. Ouvrez **Regedit.exe**.  
   
-2.  Accédez au nœud `HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment`.  
+2. Accédez au nœud `HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment`.  
   
-3.  Si nécessaire, créez une nouvelle valeur de chaîne nommée `LogVerbosityLevel`.  
+3. Si nécessaire, créez une nouvelle valeur de chaîne nommée `LogVerbosityLevel`.  
   
-4.  Définissez la valeur de `LogVerbosityLevel` sur `1`.  
+4. Définissez la valeur de `LogVerbosityLevel` sur `1`.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Dépannage des déploiements ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)

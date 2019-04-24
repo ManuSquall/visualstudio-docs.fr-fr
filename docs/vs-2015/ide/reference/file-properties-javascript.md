@@ -26,17 +26,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e2586de5731aee916dfc877013269f8d08eb756d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: fc7c3202b26e94736f59561c6c13f8350102d7b6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780367"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656480"
 ---
 # <a name="file-properties-javascript"></a>Propriétés des fichiers, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Vous pouvez utiliser les propriétés de fichier pour indiquer les actions que le système de projet doit effectuer sur les fichiers. Par exemple, vous pouvez définir des propriétés de fichier pour indiquer si un fichier doit être ajouté au package en tant que fichier de ressources.  
   
  Vous pouvez sélectionner n’importe quel fichier dans l’Explorateur de solutions, puis examiner ses propriétés dans la fenêtre Propriétés. Les fichiers JavaScript ont quatre propriétés : **Copier dans le répertoire de sortie**, **Action de package**, **Nom de fichier** et **Chemin d’accès au fichier**.  

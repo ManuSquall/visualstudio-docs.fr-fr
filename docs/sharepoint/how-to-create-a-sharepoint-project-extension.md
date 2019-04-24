@@ -14,31 +14,31 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c42fc5ec197447a8def80d3aab7bb74def2db5e3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 37f22e085334bf6a18ef1b5482b6b6c206690148
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619379"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073200"
 ---
 # <a name="how-to-create-a-sharepoint-project-extension"></a>Procédure : Créer une extension de projet SharePoint
   Créer une extension de projet lorsque vous souhaitez ajouter des fonctionnalités à un projet SharePoint qui est ouvert dans Visual Studio. Pour plus d’informations, consultez [étendre le système de projet SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).
 
 ### <a name="to-create-a-project-extension"></a>Pour créer une extension de projet
 
-1.  Créez un projet de bibliothèque de classes.
+1. Créez un projet de bibliothèque de classes.
 
-2.  Ajoutez des références aux assemblys suivants :
+2. Ajoutez des références aux assemblys suivants :
 
-    -   Microsoft.VisualStudio.SharePoint
+    - Microsoft.VisualStudio.SharePoint
 
-    -   System.ComponentModel.Composition
+    - System.ComponentModel.Composition
 
-3.  Définissez une classe qui implémente l'interface <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>.
+3. Définissez une classe qui implémente l'interface <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension>.
 
-4.  Ajouter le <xref:System.ComponentModel.Composition.ExportAttribute> à la classe. Cet attribut permet à Visual Studio détecter et charger votre <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> implémentation. Passer le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> type au constructeur d’attribut.
+4. Ajouter le <xref:System.ComponentModel.Composition.ExportAttribute> à la classe. Cet attribut permet à Visual Studio détecter et charger votre <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> implémentation. Passer le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> type au constructeur d’attribut.
 
-5.  Dans votre implémentation de la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> (méthode), utilisez les membres de la *projectService* paramètre pour définir le comportement de votre extension. Ce paramètre est un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> objet qui fournit l’accès aux événements définis dans le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> interface.
+5. Dans votre implémentation de la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> (méthode), utilisez les membres de la *projectService* paramètre pour définir le comportement de votre extension. Ce paramètre est un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> objet qui fournit l’accès aux événements définis dans le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> interface.
 
 ## <a name="example"></a>Exemple
  L’exemple de code suivant montre comment créer une extension de projet simple qui gère la plupart des événements de projet SharePoint qui sont définies par le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents> interface. Pour tester le code, créez un projet SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] puis ajouter plusieurs projets à la solution, modifiez les valeurs de propriété de projet, ou supprimer ou exclure un projet. L’extension vous informe des événements en écrivant des messages à la **sortie** fenêtre et **liste d’erreurs** fenêtre.
@@ -192,9 +192,9 @@ Cet exemple utilise le service de projet SharePoint pour écrire le message à l
 ## <a name="compile-the-code"></a>Compiler le code
  Cet exemple nécessite des références aux assemblys suivants :
 
--   Microsoft.VisualStudio.SharePoint
+- Microsoft.VisualStudio.SharePoint
 
--   System.ComponentModel.Composition
+- System.ComponentModel.Composition
 
 ## <a name="deploy-the-extension"></a>Déployer l’extension
  Pour déployer l’extension, créez un [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] package d’extension (VSIX) pour l’assembly et tous les autres fichiers que vous souhaitez distribuer avec l’extension. Pour plus d’informations, consultez [des outils de déploiement des Extensions pour SharePoint dans Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).

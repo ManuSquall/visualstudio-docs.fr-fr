@@ -22,12 +22,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 821396989a2de9444fdbf3499709588d00e66b45
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 8315a797aec5fcedbf33df6ca96f41879b57d971
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59000364"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054298"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Déboguer les applications multithread dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,8 +77,9 @@ Visite guidée des fonctionnalités de débogage de threads, qui insiste sur les
  [Guide pratique pour Utilisez la fenêtre Threads GPU](../debugger/how-to-use-the-gpu-threads-window.md) à examiner et manipuler des threads qui s’exécutent sur le GPU pendant le débogage.
 
 ## <a name="related-sections"></a>Rubriques connexes
- [Utilisation des points d’arrêt](../debugger/using-breakpoints.md)
- -   Utilisez des filtres de point d'arrêt pour placer un point d'arrêt sur un thread.
+
+[Utilisation des points d’arrêt](../debugger/using-breakpoints.md)
+- Utilisez des filtres de point d'arrêt pour placer un point d'arrêt sur un thread.
 
 - Grâce aux points de trace, vous pouvez tracer l'exécution de votre programme sans interruption. Cette fonction peut être utile pour étudier des problèmes tels que les interblocages.
 

@@ -10,12 +10,12 @@ ms.assetid: 1942245d-7a1d-4a11-b5e7-a3fe29f11c0b
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 267cd5d5487bfb5f861143e3767c066330bff81e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0cd5c72f8f423ec8ace409cafa82a1e42c6eaf90
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950242"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112609"
 ---
 # <a name="how-to-implement-undo-management"></a>Procédure : Gestion d’annulation implémenter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ L’interface principale utilisée pour la gestion de l’annulation est <xref:M
   
 #### <a name="to-support-undo-management-for-a-single-view-editor"></a>Pour prendre en charge la gestion d’annulation pour un éditeur avec affichage unique  
   
-1.  Appelez `QueryInterface` sur le `IServiceProvider` interface sur le frame de fenêtre pour `IOleUndoManager`, à partir de l’objet de vue de document pour accéder au gestionnaire d’annulation (`IID_IOLEUndoManager`).  
+1. Appelez `QueryInterface` sur le `IServiceProvider` interface sur le frame de fenêtre pour `IOleUndoManager`, à partir de l’objet de vue de document pour accéder au gestionnaire d’annulation (`IID_IOLEUndoManager`).  
   
-2.  Lorsqu’une vue est placée dans un frame de fenêtre, elle obtient un pointeur de site, qu’elle peut utiliser pour appeler `QueryInterface` pour `IServiceProvider`.  
+2. Lorsqu’une vue est placée dans un frame de fenêtre, elle obtient un pointeur de site, qu’elle peut utiliser pour appeler `QueryInterface` pour `IServiceProvider`.  
   
 ## <a name="cases-where-an-editor-supports-multiple-views"></a>Cas où un éditeur prend en charge plusieurs vues  
  Si vous avez la séparation de document et la vue, il est normalement un gestionnaire d’annulation associé au document lui-même. Toutes les unités d’annulation sont placées sur un gestionnaire d’annulation associé à l’objet de données de document.  
@@ -48,17 +48,17 @@ L’interface principale utilisée pour la gestion de l’annulation est <xref:M
   
 3. Relais votre <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> et <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> appelle stocké `IOleCommandTarget` interface pour les commandes StandardCommandSet97 suivantes :  
   
-   -   cmdidUndo  
+   - cmdidUndo  
   
-   -   cmdidMultiLevelUndo  
+   - cmdidMultiLevelUndo  
   
-   -   cmdidRedo  
+   - cmdidRedo  
   
-   -   cmdidMultiLevelRedo  
+   - cmdidMultiLevelRedo  
   
-   -   cmdidMultiLevelUndoList  
+   - cmdidMultiLevelUndoList  
   
-   -   cmdidMultiLevelRedoList  
+   - cmdidMultiLevelRedoList  
   
 4. Appelez `QueryInterface` sur `IOleUndoManager` pour `IID_IVsChangeTrackingUndoManager`. Store le pointeur vers <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>.  
   

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03e7cb1a462c79f498687296afd8c64accfc1458
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 86498adc4d8bce2a7d428b2951764e5d4b8a96a9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706208"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041078"
 ---
 # <a name="extend-the-output-window"></a>Étendre la fenêtre Sortie
 Le **sortie** fenêtre est un ensemble de volets de texte en lecture/écriture. Visual Studio propose ces volets intégrés : **Build**, dans les projets qui communiquent sur les builds, les messages et **général**, dans lequel [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] communique les messages sur l’IDE. Projets obtenir une référence à la **générer** automatiquement par le biais du volet le <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> méthodes d’interface et Visual Studio offre un accès direct à la **général** volet via le <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> service. Outre les volets intégrés, vous pouvez créer et gérer vos propres volets personnalisés.
@@ -25,22 +25,22 @@ Le **sortie** fenêtre est un ensemble de volets de texte en lecture/écriture. 
 ## <a name="create-an-extension-that-uses-the-output-pane"></a>Créer une extension qui utilise le volet de sortie
  Vous pouvez créer une extension qui exécute les différents aspects du volet sortie.
 
-1.  Créez un projet VSIX nommé `TestOutput` avec une commande de menu nommée **Testouput**. Pour plus d’informations, consultez [créer une extension avec une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Créez un projet VSIX nommé `TestOutput` avec une commande de menu nommée **Testouput**. Pour plus d’informations, consultez [créer une extension avec une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2.  Ajoutez les références suivantes :
+2. Ajoutez les références suivantes :
 
-    1.  EnvDTE
+    1. EnvDTE
 
-    2.  EnvDTE80
+    2. EnvDTE80
 
-3.  Dans *TestOutput.cs*, ajoutez le code suivant à l’aide d’instruction :
+3. Dans *TestOutput.cs*, ajoutez le code suivant à l’aide d’instruction :
 
     ```f#
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4.  Dans *TestOutput.cs*, supprimez le `ShowMessageBox` (méthode). Ajoutez le stub de méthode suivant :
+4. Dans *TestOutput.cs*, supprimez le `ShowMessageBox` (méthode). Ajoutez le stub de méthode suivant :
 
     ```csharp
     private void OutputCommandHandler(object sender, EventArgs e)
@@ -48,7 +48,7 @@ Le **sortie** fenêtre est un ensemble de volets de texte en lecture/écriture. 
     }
     ```
 
-5.  Dans le constructeur Testouput, modifiez le Gestionnaire de commandes à OutputCommandHandler. Voici la partie qui ajoute les commandes :
+5. Dans le constructeur Testouput, modifiez le Gestionnaire de commandes à OutputCommandHandler. Voici la partie qui ajoute les commandes :
 
     ```csharp
     OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;
@@ -61,7 +61,7 @@ Le **sortie** fenêtre est un ensemble de volets de texte en lecture/écriture. 
     }
     ```
 
-6.  Les sections ci-dessous proposent des méthodes qui montrent différentes manières de traiter avec le volet de sortie. Vous pouvez appeler ces méthodes au corps de la `OutputCommandHandler()` (méthode). Par exemple, le code suivant ajoute le `CreatePane()` méthode donnée en fonction de la section suivante.
+6. Les sections ci-dessous proposent des méthodes qui montrent différentes manières de traiter avec le volet de sortie. Vous pouvez appeler ces méthodes au corps de la `OutputCommandHandler()` (méthode). Par exemple, le code suivant ajoute le `CreatePane()` méthode donnée en fonction de la section suivante.
 
     ```csharp
     private void OutputCommandHandler(object sender, EventArgs e)

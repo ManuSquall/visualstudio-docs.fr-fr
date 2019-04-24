@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 437f5aecb2fe8f7bb953c9efb6eb33ccb945c9f0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dd6514ec43cd3180d808c20d5589bf18e3a9b58b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721790"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048203"
 ---
 # <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>Procédure pas à pas : Créer un éditeur de base et l’inscription d’un type de fichier d’éditeur
 Cette procédure pas à pas montre comment créer un VSPackage qui démarre le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] éditeur principal lorsqu’un fichier avec le *.myext* extension de nom de fichier est chargée.
@@ -26,11 +26,11 @@ Cette procédure pas à pas montre comment créer un VSPackage qui démarre le [
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Emplacements pour le modèle de projet de Package Visual Studio
  Le modèle de projet de package Visual Studio se trouve à trois emplacements différents dans la boîte de dialogue **Nouveau projet** :
 
-1.  Sous **Extensibilité Visual Basic**. Le langage par défaut du projet est Visual Basic.
+1. Sous **Extensibilité Visual Basic**. Le langage par défaut du projet est Visual Basic.
 
-2.  Sous **Extensibilité C#**. Le langage par défaut du projet est C#.
+2. Sous **Extensibilité C#**. Le langage par défaut du projet est C#.
 
-3.  Sous **Extensibilité d’autres types de projets**. Le langage par défaut du projet est C++.
+3. Sous **Extensibilité d’autres types de projets**. Le langage par défaut du projet est C++.
 
 ### <a name="to-create-the-vspackage"></a>Pour créer le VSPackage
 

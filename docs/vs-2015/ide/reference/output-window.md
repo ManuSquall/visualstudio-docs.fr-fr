@@ -17,17 +17,16 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 26b826b19a14731ba4fbbb11eccee5fc4337c4ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9b373551444087ad8ff3789d927267a30efd5e4d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784817"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668910"
 ---
 # <a name="output-window"></a>Fenêtre Sortie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 La fenêtre **Sortie** peut afficher des messages d’état pour diverses fonctionnalités dans l’environnement de développement intégré (IDE). Pour ouvrir la fenêtre **Sortie**, dans la barre de menus, choisissez **Affichage/Sortie** (ou cliquez sur Ctrl+Alt+O).  
   
 > [!WARNING]
@@ -69,7 +68,7 @@ La fenêtre **Sortie** peut afficher des messages d’état pour diverses foncti
   
 ## <a name="see-also"></a>Voir aussi  
  [Messages de diagnostic dans la fenêtre Sortie](../../debugger/diagnostic-messages-in-the-output-window.md)   
- [Comment : contrôler la fenêtre Sortie](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
+ [Guide pratique pour Contrôler la fenêtre Sortie](http://msdn.microsoft.com/library/91aebd15-8854-4a7a-9f7d-57376fb4e858)   
  [Compilation et génération](../../ide/compiling-and-building-in-visual-studio.md)   
  [Présentation des configurations de build](../../ide/understanding-build-configurations.md)   
  [Présentation des bibliothèques de classes .NET](http://msdn.microsoft.com/library/7e4c5921-955d-4b06-8709-101873acf157)

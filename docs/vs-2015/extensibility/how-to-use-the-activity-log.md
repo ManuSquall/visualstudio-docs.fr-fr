@@ -11,12 +11,12 @@ ms.assetid: bb3d3322-0e5e-4dd5-b93a-24d5fbcd2ffd
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 50ef738826a9eb85a081a7063c1ca55280bed3a8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 812862c3eaf99b7459bb422e174f8fe155ea384a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951730"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042585"
 ---
 # <a name="how-to-use-the-activity-log"></a>Procédure : Utiliser le journal des activités
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Les VSPackages peuvent écrire des messages dans le journal d’activité. Cette
   
 ### <a name="to-write-an-entry-to-the-activity-log"></a>Pour écrire une entrée dans le journal d’activité  
   
-1.  Insérez ce code dans le <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> méthode ou dans toute autre méthode sauf dans le constructeur de VSPackage :  
+1. Insérez ce code dans le <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> méthode ou dans toute autre méthode sauf dans le constructeur de VSPackage :  
   
     ```csharp  
     IVsActivityLog log = GetService(typeof(SVsActivityLog)) as IVsActivityLog;  
@@ -42,13 +42,13 @@ Les VSPackages peuvent écrire des messages dans le journal d’activité. Cette
   
      Ce code obtient le <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> de service et le caste vers une <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interface. <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A> écrit une entrée d’information dans le journal d’activité en utilisant le contexte de la culture actuels.  
   
-2.  Lorsque le VSPackage est chargé (généralement quand une commande est appelée ou une fenêtre est ouverte), le texte est écrit dans le journal d’activité.  
+2. Lorsque le VSPackage est chargé (généralement quand une commande est appelée ou une fenêtre est ouverte), le texte est écrit dans le journal d’activité.  
   
 ### <a name="to-examine-the-activity-log"></a>Pour examiner le journal d’activité  
   
-1.  Rechercher le journal d’activité dans le sous-dossier pour les données de Visual Studio : *%AppData%* \Microsoft\VisualStudio\14.0\ActivityLog.XML...  
+1. Rechercher le journal d’activité dans le sous-dossier pour les données de Visual Studio : *%AppData%* \Microsoft\VisualStudio\14.0\ActivityLog.XML...  
   
-2.  Ouvrez le journal d’activité avec n’importe quel éditeur de texte. Voici une entrée de type :  
+2. Ouvrez le journal d’activité avec n’importe quel éditeur de texte. Voici une entrée de type :  
   
     ```  
     Called for: Company.MyApp.MyAppPackage ...  

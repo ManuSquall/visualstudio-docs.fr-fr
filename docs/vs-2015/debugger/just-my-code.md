@@ -14,19 +14,19 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 84f0b3b10ba64a820b1088c381787dd1f7c71b8e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e105ef33202781dcf3a2f82706827156e76548eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950560"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084334"
 ---
 # <a name="just-my-code"></a>Uniquement mon code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Les développeurs qui utilisent des langages du .NET Framework sont familiarisés avec la fonctionnalité du débogueur Uniquement mon code, qui avance pas à pas dans les appels du système, les appels de l'infrastructure et les appels non-utilisateurs, et réduit les appels dans les fenêtres Pile des appels. Uniquement mon code a été étendu aux langages C++ et JavaScript. Cette rubrique décrit les caractéristiques d'utilisation d'Uniquement mon code dans les projets .NET Framework, C++ natifs et JavaScript.  
   
-##  <a name="BKMK_Enable_or_disable_Just_My_Code"></a> Activer ou désactiver Uniquement mon code  
+## <a name="BKMK_Enable_or_disable_Just_My_Code"></a> Activer ou désactiver Uniquement mon code  
  Pour activer ou désactiver uniquement mon Code, choisissez **Options et paramètres** sur le **déboguer** menu. Dans le **débogage** / **général** nœud, activez ou désactivez **activer uniquement mon Code**.  
   
  ![Activer uniquement mon Code dans la boîte de dialogue Options](../debugger/media/dbg-justmycode-options.png "DBG_JustMyCode_Options")  
@@ -34,15 +34,15 @@ Les développeurs qui utilisent des langages du .NET Framework sont familiarisé
 > [!NOTE]
 >  Le **activer uniquement mon Code** paramètre est un paramètre global qui est appliqué à tous les projets Visual Studio dans toutes les langues.  
   
-###  <a name="BKMK_Override_call_stack_filtering"></a> Remplacer l’appel de filtrage de la pile  
+### <a name="BKMK_Override_call_stack_filtering"></a> Remplacer l’appel de filtrage de la pile  
  Dans les affichages de la pile des appels, comme les fenêtres Pile des appels et Tâches, Uniquement mon code réduit le code non-utilisateur en un cadre annoté intitulé `[External Code]`. Pour afficher les cadres réduits, choisissez **afficher le Code externe** dans le menu contextuel de la pile des appels affiche.  
   
 > [!NOTE]
 >  Le **afficher le Code externe** paramètre est enregistré dans le Générateur de profils de l’utilisateur actuel. Il est appliqué à tous les projets dans tous les langages qui sont ouverts par l'utilisateur.  
   
-##  <a name="BKMK__NET_Framework_Just_My_Code"></a> Uniquement mon Code .NET framework  
+## <a name="BKMK__NET_Framework_Just_My_Code"></a> Uniquement mon Code .NET framework  
   
-###  <a name="BKMK_NET_User_and_non_user_code"></a> Code utilisateur et non-utilisateur  
+### <a name="BKMK_NET_User_and_non_user_code"></a> Code utilisateur et non-utilisateur  
  Pour distinguer le code utilisateur du code non-utilisateur, uniquement mon Code examine les fichiers de symboles (.pdb) et les optimisations de programme. Le débogueur considère le code comme du code non-utilisateur quand le fichier binaire est optimisé ou quand le fichier .pdb n'est pas disponible.  
   
  Trois attributs affectent également ce que le débogueur considère comme étant du code MyCode :  
@@ -55,20 +55,20 @@ Les développeurs qui utilisent des langages du .NET Framework sont familiarisé
   
   Tout le reste du code est considéré comme du code utilisateur.  
   
-###  <a name="BKMK_NET_Stepping_behavior"></a> Comportement d’exécution pas à pas  
+### <a name="BKMK_NET_Stepping_behavior"></a> Comportement d’exécution pas à pas  
  Lorsque vous **pas à pas détaillé** (raccourci clavier : Code de non-utilisateur F11), le débogueur exécute le code à l’instruction utilisateur suivante. Lorsque vous **pas à pas sortant** (clavier : MAJ + F11), le débogueur s’exécute à la ligne suivante du code utilisateur. Si aucun code utilisateur n'est rencontré, l'exécution se poursuit jusqu'à ce que l'application se termine, jusqu'à ce qu'un point d'arrêt soit atteint ou jusqu'à ce qu'une exception se produise.  
   
-###  <a name="BKMK_NET_Breakpoint_behavior"></a> Comportement de point d’arrêt  
+### <a name="BKMK_NET_Breakpoint_behavior"></a> Comportement de point d’arrêt  
  Lorsque uniquement mon Code est activé, vous pouvez choisir **interrompre tout** (clavier : Ctrl + Alt + Pause) et d’arrêter l’exécution à un emplacement où il n’existe aucun code utilisateur à afficher. Dans ce cas, la fenêtre Pas de code source s'affiche. Si vous choisissez ensuite une commande d'étape, le débogueur vous amène à la ligne de code utilisateur suivante.  
   
-###  <a name="BKMK_NET_Exception_behavior"></a> Comportement d’exception  
+### <a name="BKMK_NET_Exception_behavior"></a> Comportement d’exception  
  Si une exception non gérée se produit dans du code non-utilisateur, le débogueur s'arrête à la ligne de code utilisateur où lequel l'exception a été générée.  
   
  Si les exceptions de première chance sont activées pour l'exception, la ligne de code utilisateur est mise en surbrillance en vert. La pile des appels affiche un cadre annoté intitulé **[Code externe]**.  
   
-##  <a name="BKMK_C___Just_My_Code"></a> Uniquement mon code C++  
+## <a name="BKMK_C___Just_My_Code"></a> Uniquement mon code C++  
   
-###  <a name="BKMK_CPP_User_and_non_user_code"></a> Code utilisateur et non-utilisateur  
+### <a name="BKMK_CPP_User_and_non_user_code"></a> Code utilisateur et non-utilisateur  
  Uniquement mon Code C++ est différent d'Uniquement mon code .NET Framework et JavaScript, car le comportement d'exécution pas à pas est indépendant du comportement de la pile des appels.  
   
  **Les piles d’appels**  
@@ -87,15 +87,15 @@ Les développeurs qui utilisent des langages du .NET Framework sont familiarisé
   
   Vous pouvez créer vos propres fichiers `.natstepfilter` et `.natjmc` pour personnaliser le comportement de l'exécution pas à pas et de la fenêtre de pile des appels, et les placer dans le dossier `%USERPROFILE%\My Documents\Visual Studio 2015\Visualizers`.  
   
-###  <a name="BKMK_CPP_Stepping_behavior"></a> Comportement d’exécution pas à pas  
+### <a name="BKMK_CPP_Stepping_behavior"></a> Comportement d’exécution pas à pas  
  Lorsque vous **pas à pas détaillé** (raccourci clavier : Code de non-utilisateur F11) à partir du code utilisateur, le débogueur exécute le code à la ligne suivante de code utilisateur. Lorsque vous **pas à pas sortant** (clavier : MAJ + F11), le débogueur s’exécute à la ligne suivante du code utilisateur. Si aucun code utilisateur n'est rencontré, l'exécution se poursuit jusqu'à ce que l'application se termine, jusqu'à ce qu'un point d'arrêt soit atteint ou jusqu'à ce qu'une exception se produise.  
   
  Si le débogueur s'arrête dans du code non-utilisateur (par exemple si une commande Interrompre tout s'arrête dans du code non-utilisateur), l'exécution pas à pas continue dans le code non-utilisateur.  
   
-###  <a name="BKMK_CPP_Exception_behavior"></a> Comportement d’exception  
+### <a name="BKMK_CPP_Exception_behavior"></a> Comportement d’exception  
  Quand le débogueur rencontre une exception, il s'arrête sur l'exception, qu'il s'agisse de code utilisateur ou de code non-utilisateur. Le **User-unhandled** options dans le **Exceptions** boîte de dialogue sont ignorés.  
   
-###  <a name="BKMK_CPP_Customize_stepping_behavior"></a> Personnaliser le comportement de l’exécution pas à pas  
+### <a name="BKMK_CPP_Customize_stepping_behavior"></a> Personnaliser le comportement de l’exécution pas à pas  
  Vous pouvez spécifier des fonctions que l'exécution pas à pas doit ignorer en les répertoriant comme étant du code non-utilisateur dans des fichiers `*.natstepfilter`.  
   
 - Pour spécifier le code non-utilisateur pour tous les utilisateurs de l’ordinateur Visual Studio, ajoutez le fichier .natstepfilter à la `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` dossier.  
@@ -127,7 +127,7 @@ Les développeurs qui utilisent des langages du .NET Framework sont familiarisé
 |`Module`|Facultatif. Une expression régulière mise en forme selon ECMA-262 spécifiant le chemin d'accès complet au module contenant la fonction. La recherche de correspondance ne respecte pas la casse.|  
 |`Action`|Obligatoire. Une des valeurs suivantes (respectant la casse) :<br /><br /> -   `NoStepInto`  : indique au débogueur d’ignorer la fonction concernée.<br />-   `StepInto`  : indique au débogueur d’ignorer les fonctions concernées, substitution de n’importe quel autre `NoStepInto` pour les fonctions de mise en correspondance.|  
   
-###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Personnaliser le comportement de pile d’appel  
+### <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Personnaliser le comportement de pile d’appel  
  Vous pouvez spécifier des modules, des fichiers sources et des fonctions à traiter comme du code non-utilisateur dans les piles des appels en les spécifiant dans des fichiers `*.natjmc`.  
   
 - Pour spécifier le code non-utilisateur pour tous les utilisateurs de l’ordinateur Visual Studio, ajoutez le fichier .natjmc à la `%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers` dossier.  
@@ -177,9 +177,9 @@ Les développeurs qui utilisent des langages du .NET Framework sont familiarisé
 |`Module`|Optionnel. Le nom ou le chemin d'accès complet au module qui contient la fonction. Vous pouvez utiliser cet attribut pour lever l'ambiguïté entre des fonctions du même nom.|  
 |`ExceptionImplementation`|Quand la valeur est définie sur `true`, la pile des appels affiche la fonction qui a levé l'exception, au lieu de cette fonction.|  
   
-##  <a name="BKMK_JavaScript_Just_My_Code"></a> Uniquement mon code JavaScript  
+## <a name="BKMK_JavaScript_Just_My_Code"></a> Uniquement mon code JavaScript  
   
-###  <a name="BKMK_JS_User_and_non_user_code"></a> Code utilisateur et non-utilisateur  
+### <a name="BKMK_JS_User_and_non_user_code"></a> Code utilisateur et non-utilisateur  
  **Classification du code**  
   
  Uniquement mon Code JavaScript contrôle l'exécution pas à pas et l'affichage de la pile des appels en catégorisant le code selon la classification suivante :  
@@ -206,27 +206,27 @@ Les développeurs qui utilisent des langages du .NET Framework sont familiarisé
   
   Le reste du code est classé comme **MyCode**.  
   
-###  <a name="BKMK_JS_Stepping_behavior"></a> Comportement d’exécution pas à pas  
+### <a name="BKMK_JS_Stepping_behavior"></a> Comportement d’exécution pas à pas  
   
--   Si une fonction n’est pas un utilisateur (**MyCode**) code, **pas à pas détaillé** (raccourci clavier : La touche F11) se comporte comme **pas à pas principal** (clavier : F10).  
+- Si une fonction n’est pas un utilisateur (**MyCode**) code, **pas à pas détaillé** (raccourci clavier : La touche F11) se comporte comme **pas à pas principal** (clavier : F10).  
   
--   Si une étape commence dans non-utilisateur (**LibraryCode** ou **UnrelatedCode**) de code, pas à pas détaillé temporairement se comporte comme si uniquement mon Code n’est pas activé. Dès que vous exécutez pas à pas à nouveau dans du code utilisateur, Uniquement mon Code est réactivé.  
+- Si une étape commence dans non-utilisateur (**LibraryCode** ou **UnrelatedCode**) de code, pas à pas détaillé temporairement se comporte comme si uniquement mon Code n’est pas activé. Dès que vous exécutez pas à pas à nouveau dans du code utilisateur, Uniquement mon Code est réactivé.  
   
--   Quand une étape dans du code utilisateur aboutit à quitter le contexte d'exécution actuel (par exemple effectuer une étape dans la dernière ligne d'un gestionnaire d'événements), le débogueur s'arrête à la ligne de code utilisateur exécutée qui suit. Par exemple, si un rappel s’exécute dans **LibraryCode** code le débogueur continue jusqu'à ce que la ligne suivante du code utilisateur s’exécute.  
+- Quand une étape dans du code utilisateur aboutit à quitter le contexte d'exécution actuel (par exemple effectuer une étape dans la dernière ligne d'un gestionnaire d'événements), le débogueur s'arrête à la ligne de code utilisateur exécutée qui suit. Par exemple, si un rappel s’exécute dans **LibraryCode** code le débogueur continue jusqu'à ce que la ligne suivante du code utilisateur s’exécute.  
   
--   **Pas à pas sortant** (clavier : MAJ + F11) s’arrête sur la ligne suivante du code utilisateur. Si aucun code utilisateur n'est rencontré, l'exécution se poursuit jusqu'à ce que l'application se termine, jusqu'à ce qu'un point d'arrêt soit atteint ou jusqu'à ce qu'une exception se produise.  
+- **Pas à pas sortant** (clavier : MAJ + F11) s’arrête sur la ligne suivante du code utilisateur. Si aucun code utilisateur n'est rencontré, l'exécution se poursuit jusqu'à ce que l'application se termine, jusqu'à ce qu'un point d'arrêt soit atteint ou jusqu'à ce qu'une exception se produise.  
   
-###  <a name="BKMK_JS_Breakpoint_behavior"></a> Comportement de point d’arrêt  
+### <a name="BKMK_JS_Breakpoint_behavior"></a> Comportement de point d’arrêt  
   
--   Les points d'arrêt qui ont été définis dans du code seront toujours atteints, quelle que soit la classification de ce code.  
+- Les points d'arrêt qui ont été définis dans du code seront toujours atteints, quelle que soit la classification de ce code.  
   
--   Si le mot clé `debugger` est rencontré dans :  
+- Si le mot clé `debugger` est rencontré dans :  
   
-    -   **LibraryCode** code, le débogueur s’arrête toujours.  
+    - **LibraryCode** code, le débogueur s’arrête toujours.  
   
-    -   **UnrelatedCode** code, le débogueur ne s’arrête.  
+    - **UnrelatedCode** code, le débogueur ne s’arrête.  
   
-###  <a name="BKMK_JS_Exception_behavior"></a> Comportement d’exception  
+### <a name="BKMK_JS_Exception_behavior"></a> Comportement d’exception  
  Si une exception non gérée se produit dans :  
   
 - **MyCode** ou **LibraryCode** code, le débogueur s’arrête toujours.  
@@ -239,7 +239,7 @@ Les développeurs qui utilisent des langages du .NET Framework sont familiarisé
   
 - Si l'exception n'est pas gérée, le débogueur s'arrête.  
   
-###  <a name="BKMK_JS_Customize_Just_My_Code"></a> Personnaliser uniquement mon Code  
+### <a name="BKMK_JS_Customize_Just_My_Code"></a> Personnaliser uniquement mon Code  
  Pour classer par catégorie du code utilisateur et non-utilisateur pour un seul projet Visual Studio, ajoutez un fichier .json nommé `mycode.json` dans le dossier racine du projet.  
   
  Les classifications sont effectuées dans cet ordre :  

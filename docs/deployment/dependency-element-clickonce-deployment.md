@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de4fc349a25719a0494b095e5a37c218b87cb0f8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 84e26a2d7dae70e0029817d4e6bb6e70dd53bce4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600718"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648232"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;dépendance&gt; , élément (déploiement ClickOnce)
 Identifie la version de l’application à installer et l’emplacement du manifeste d’application.
@@ -78,13 +78,12 @@ Identifie la version de l’application à installer et l’emplacement du manif
 ## <a name="dependentassembly"></a>dependentAssembly
  Obligatoire. Cet élément contient le `assemblyIdentity` élément. Le tableau suivant présente les attributs du `dependentAssembly` prend en charge.
 
-
 | Attribut | Description |
 |------------------| - |
-| `preRequisite` | Optionnel. Spécifie que cet assembly doit déjà exister dans le GAC. Les valeurs valides sont `true` et `false`. Si `true`et l’assembly spécifié n’existe pas dans le GAC, l’application ne parvient pas à exécuter. |
-| `visible` | Optionnel. Identifie l’identité de l’application de niveau supérieur, y compris ses dépendances. Utilisé en interne par [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pour gérer le stockage des applications et l’activation. |
+| `preRequisite` | Facultatif. Spécifie que cet assembly doit déjà exister dans le GAC. Les valeurs valides sont `true` et `false`. Si `true`et l’assembly spécifié n’existe pas dans le GAC, l’application ne parvient pas à exécuter. |
+| `visible` | Facultatif. Identifie l’identité de l’application de niveau supérieur, y compris ses dépendances. Utilisé en interne par [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pour gérer le stockage des applications et l’activation. |
 | `dependencyType` | Obligatoire. La relation entre cette dépendance et l’application. Les valeurs valides sont les suivantes :<br /><br /> -   `install`. Composant représente une installation distincte de l’application actuelle.<br />-   `preRequisite`. Composant est requis par l’application actuelle. |
-| `codebase` | Optionnel. Le chemin d’accès complet au manifeste d’application. |
+| `codebase` | Facultatif. Le chemin d’accès complet au manifeste d’application. |
 | `size` | Optionnel. La taille du manifeste d’application, en octets. |
 
 ## <a name="assemblyidentity"></a>assemblyIdentity
@@ -110,14 +109,12 @@ Identifie la version de l’application à installer et l’emplacement du manif
 ## <a name="dsigtransform"></a>dsig:Transform
  Le `dsig:Transform` élément est un enfant requis de le `dsig:Transforms` élément. Le tableau suivant présente les attributs de la `dsig:Transform` élément.
 
-
 | Attribut | Description |
 |-------------| - |
 | `Algorithm` | L’algorithme utilisé pour calculer le condensat pour ce fichier. La seule valeur utilisée par [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] est `urn:schemas-microsoft-com:HashTransforms.Identity`. |
 
 ## <a name="dsigdigestmethod"></a>dsig:DigestMethod
  Le `dsig:DigestMethod` élément est un enfant requis de le `hash` élément. Le tableau suivant présente les attributs de la `dsig:DigestMethod` élément.
-
 
 | Attribut | Description |
 |-------------| - |
@@ -126,7 +123,7 @@ Identifie la version de l’application à installer et l’emplacement du manif
 ## <a name="dsigdigestvalue"></a>dsig:DigestValue
  Le `dsig:DigestValue` élément est un enfant requis de le `hash` élément. L’élément `dsig:DigestValue` ne comporte pas d’attributs. Sa valeur de texte est le hachage calculé pour le fichier spécifié.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Manifestes de déploiement possèdent généralement un seul `assemblyIdentity` élément qui identifie le nom et la version du manifeste d’application.
 
 ## <a name="example"></a>Exemple

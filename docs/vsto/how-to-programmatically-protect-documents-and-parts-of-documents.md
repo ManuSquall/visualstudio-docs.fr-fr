@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2c7d284e116f72b5f1c19017cf234ea42832c202
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ac93b71d67bc842b2498fbd4d017b17d9ddcf00c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613412"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062602"
 ---
 # <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>Procédure : Protéger des documents et des parties de documents par programmation
   Vous pouvez ajouter une protection aux documents Microsoft Office Word pour empêcher les utilisateurs d’y apporter des modifications.
@@ -37,19 +37,19 @@ ms.locfileid: "56613412"
 
 ### <a name="to-protect-a-document-that-is-part-of-a-document-level-customization"></a>Pour protéger un document qui fait partie d’une personnalisation au niveau du document
 
-1.  Appelez la méthode <xref:Microsoft.Office.Tools.Word.Document.Protect%2A> de la classe `ThisDocument` dans votre projet.
+1. Appelez la méthode <xref:Microsoft.Office.Tools.Word.Document.Protect%2A> de la classe `ThisDocument` dans votre projet.
 
      [!code-vb[Trin_VstcoreWordAutomation#111](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#111)]
      [!code-csharp[Trin_VstcoreWordAutomation#111](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#111)]
 
 ### <a name="to-exclude-a-bookmark-control-from-document-protection"></a>Pour exclure un contrôle Bookmark de la protection de document
 
-1.  Protégez le document entier à l’aide de la méthode <xref:Microsoft.Office.Tools.Word.Document.Protect%2A> .
+1. Protégez le document entier à l’aide de la méthode <xref:Microsoft.Office.Tools.Word.Document.Protect%2A> .
 
      [!code-vb[Trin_VstcoreWordAutomation#111](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#111)]
      [!code-csharp[Trin_VstcoreWordAutomation#111](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#111)]
 
-2.  Excluez `Bookmark1` de la protection de document.
+2. Excluez `Bookmark1` de la protection de document.
 
      [!code-vb[Trin_VstcoreWordAutomation#112](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#112)]
      [!code-csharp[Trin_VstcoreWordAutomation#112](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#112)]
@@ -61,7 +61,7 @@ ms.locfileid: "56613412"
 
 ### <a name="to-protect-a-document-by-using-an-application-level-vsto-add-in"></a>Pour protéger un document à l’aide d’un complément VSTO de niveau application
 
-1.  Appelez la méthode <xref:Microsoft.Office.Interop.Word._Document.Protect%2A> du <xref:Microsoft.Office.Interop.Word.Document> que vous souhaitez protéger.
+1. Appelez la méthode <xref:Microsoft.Office.Interop.Word._Document.Protect%2A> du <xref:Microsoft.Office.Interop.Word.Document> que vous souhaitez protéger.
 
      L’exemple de code suivant protège le document actif. Pour utiliser cet exemple de code, exécutez-le à partir de la classe `ThisAddIn` de votre projet.
 

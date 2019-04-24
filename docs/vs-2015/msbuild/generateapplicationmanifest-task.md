@@ -20,17 +20,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 570f4d7ec459a961f2608557ce692029128ce4b6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: cf3c68d7f70822bbe7b085b92e64bda0b9437dfc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756582"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660981"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest, tâche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Génère un manifeste d’application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] ou un manifeste natif. Un manifeste natif décrit un composant en lui définissant une identité unique et en identifiant tous les assemblys et fichiers qui le composent. Un manifeste d’application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] étend un manifeste natif en indiquant le point d’entrée de l’application et en spécifiant le niveau de sécurité des applications.  
   
 ## <a name="parameters"></a>Paramètres  
@@ -45,10 +44,10 @@ Génère un manifeste d’application [!INCLUDE[ndptecclick](../includes/ndptecc
 |`Dependencies`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Spécifie une liste d’éléments qui définit l’ensemble d’assemblys dépendants du manifeste généré. Chaque élément peut être décrit plus en détail par les métadonnées d’élément pour indiquer l’état de déploiement supplémentaire et le type de dépendance. Pour plus d’informations, consultez la section « Métadonnées d’élément » ci-dessous.|  
 |`Description`|Paramètre `String` facultatif.<br /><br /> Spécifie la description de l’application ou du composant.|  
 |`EntryPoint`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Spécifie un seul élément qui indique le point d’entrée de l’assembly de manifeste généré.<br /><br /> Pour un manifeste d’application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], ce paramètre spécifie l’assembly qui démarre quand l’application est exécutée.|  
-|`ErrorReportUrl`|Paramètre [Chaîne](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) facultatif.<br /><br /> Spécifie l’URL de la page web affichée dans les boîtes de dialogue pendant les rapports d’erreurs lors des installations ClickOnce.|  
+|`ErrorReportUrl`|[Chaîne] facultative)<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) paramètre.<br /><br /> Spécifie l’URL de la page web affichée dans les boîtes de dialogue pendant les rapports d’erreurs lors des installations ClickOnce.|  
 |`FileAssociations`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Spécifie une liste d’un ou de plusieurs types de fichier associés au manifeste de déploiement ClickOnce.<br /><br /> Les associations de fichiers ne sont valides que si .NET Framework 3.5 ou version ultérieure est ciblé.|  
 |`Files`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Fichiers à inclure dans le manifeste. Spécifiez le chemin complet pour chaque fichier.|  
-|`HostInBrowser`|Paramètre [booléen](<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) facultatif.<br /><br /> Si la valeur est `true`, l’application est hébergée dans un navigateur (comme le sont les applications de navigateur web WPF).|  
+|`HostInBrowser`|(Facultatif) [booléenne]<!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  -->) paramètre.<br /><br /> Si la valeur est `true`, l’application est hébergée dans un navigateur (comme le sont les applications de navigateur web WPF).|  
 |`IconFile`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Indique le fichier icône de l’application. L’icône de l’application est exprimée dans le manifeste d’application généré et utilisée pour le menu Démarrer et la boîte de dialogue Ajouter ou supprimer des programmes. Si cette entrée n’est pas spécifiée, une icône par défaut est utilisée. Si la tâche génère un manifeste natif, ce paramètre est ignoré.|  
 |`InputManifest`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> facultatif.<br /><br /> Indique un document XML d’entrée à utiliser comme base pour le générateur de manifeste. Des données structurées telles que des définitions de manifeste personnalisées ou de sécurité d’application peuvent ainsi être reflétées dans le manifeste de sortie. L’élément racine dans le document XML doit être un nœud d’assembly dans l’espace de noms asmv1.|  
 |`IsolatedComReferences`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem>`[]` facultatif.<br /><br /> Spécifie des composants COM à isoler dans le manifeste généré. Ce paramètre prend en charge l’isolation des composants COM pour le déploiement « COM sans inscription ». Cela consiste à générer automatiquement un manifeste avec des définitions d’inscription COM standard. Toutefois, les composants COM doivent être enregistrés sur l’ordinateur de génération pour que cela fonctionne correctement.|  
@@ -61,14 +60,14 @@ Génère un manifeste d’application [!INCLUDE[ndptecclick](../includes/ndptecc
 |`Publisher`|Paramètre `String` facultatif.<br /><br /> Spécifie l’éditeur de l’application. Si vous ne spécifiez pas ce paramètre, le nom est déduit de l’utilisateur enregistré ou de l’identité du manifeste généré. Ce nom est utilisé comme nom du dossier dans le menu Démarrer. Il fait partie du nom qui apparaît dans la boîte de dialogue Ajout/Suppression de programmes.|  
 |`RequiresMinimumFramework35SP1`|Paramètre `Boolean` facultatif.<br /><br /> Si la valeur est true, l’application requiert .NET Framework 3.5 SP1 ou une version plus récente.|  
 |`TargetCulture`|Paramètre `String` facultatif.<br /><br /> Identifie la culture de l’application et spécifie le champ `Language` de l’identité d’assembly pour le manifeste généré. Si ce paramètre n’est pas spécifié, il est supposé que l’application est indifférente quant à la culture.|  
-|`TargetFrameworkMoniker`|Paramètre <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> facultatif.<br /><br /> Spécifie le moniker de la version cible de .NET Framework.|  
-|`TargetFrameworkProfile`|Paramètre <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> facultatif.<br /><br /> Spécifie le profil de la version cible de .NET Framework.|  
-|`TargetFrameworkSubset`|Paramètre <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> facultatif.<br /><br /> Spécifie le nom du sous-ensemble du .NET Framework à cibler.|  
-|`TargetFrameworkVersion`|Paramètre <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> facultatif.<br /><br /> Spécifie la version cible de .NET Framework du projet.|  
+|`TargetFrameworkMoniker`|Facultatif <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Spécifie le moniker de la version cible de .NET Framework.|  
+|`TargetFrameworkProfile`|Facultatif <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Spécifie le profil de la version cible de .NET Framework.|  
+|`TargetFrameworkSubset`|Facultatif <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Spécifie le nom du sous-ensemble du .NET Framework à cibler.|  
+|`TargetFrameworkVersion`|Facultatif <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Spécifie la version cible de .NET Framework du projet.|  
 |`TrustInfoFile`|Paramètre <xref:Microsoft.Build.Framework.ITaskItem> facultatif.<br /><br /> Indique un document XML qui définit la sécurité de l’application. L’élément racine dans le document XML doit être un nœud trustInfo dans l’espace de noms asmv2. Si la tâche génère un manifeste natif, ce paramètre est ignoré.|  
-|`UseApplicationTrust`|Paramètre <!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  --> facultatif.<br /><br /> Si la valeur est true, les propriétés `Product`, `Publisher` et `SupportUrl` sont écrites dans le manifeste de l’application.|  
+|`UseApplicationTrust`|Facultatif <!-- TODO: review code entity reference <xref:assetId:///Boolean?qualifyHint=False&amp;autoUpgrade=True>  --> .<br /><br /> Si la valeur est true, les propriétés `Product`, `Publisher` et `SupportUrl` sont écrites dans le manifeste de l’application.|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Tasks.GenerateManifestBase>, qui elle-même hérite de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste des paramètres de la classe Task, consultez [Task, classe de base](../msbuild/task-base-class.md).  
   
  Pour plus d’informations sur l’utilisation de la tâche `GenerateDeploymentManifest`, consultez [Tâche GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md).  

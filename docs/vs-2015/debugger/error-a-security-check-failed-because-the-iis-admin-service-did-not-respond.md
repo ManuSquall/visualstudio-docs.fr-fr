@@ -18,12 +18,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9434ad3d67b8cf724323bdb9614d3bfdbd569882
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 65eb724d14123292a0694623bf46859f8a3966f9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947879"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084477"
 ---
 # <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>Erreur : Une vérification de la sécurité a échoué, car le service de l’administration IIS n’a pas répondu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ Cette erreur se produit lorsque le service IIS Admin ne répond pas. Il s'agit g
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
--   Réinstallez IIS, à l’aide de l’application **Ajout/Suppression de programmes** du Panneau de configuration.  
+- Réinstallez IIS, à l’aide de l’application **Ajout/Suppression de programmes** du Panneau de configuration.  
   
--   - ou -  
+- - ou -  
   
--   Supprimez IIS de votre ordinateur, à l’aide de l’application Ajout/Suppression de programmes du Panneau de configuration. Si vous avez supprimé IIS et que les problèmes persistent, examinez le Registre et assurez-vous que cette clé n'existe plus :  
+- Supprimez IIS de votre ordinateur, à l’aide de l’application Ajout/Suppression de programmes du Panneau de configuration. Si vous avez supprimé IIS et que les problèmes persistent, examinez le Registre et assurez-vous que cette clé n'existe plus :  
   
     ```  
     HKEY_CLASSES_ROOT\CLSID\{A9E69610-B80D-11D0-B9B9-00A0C922E750}  
@@ -44,7 +44,7 @@ Cette erreur se produit lorsque le service IIS Admin ne répond pas. Il s'agit g
   
      - ou -  
   
--   Désactivez le service de l'administration IIS, à l'aide du panneau de configuration Outils d'administration. Cela permet de désactiver IIS sur votre ordinateur.  
+- Désactivez le service de l'administration IIS, à l'aide du panneau de configuration Outils d'administration. Cela permet de désactiver IIS sur votre ordinateur.  
   
      Après avoir exécuté l'une de ces trois opérations, redémarrez votre ordinateur.  
   

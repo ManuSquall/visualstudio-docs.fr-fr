@@ -9,18 +9,17 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8fb6cecf9c1e8798e5f545f5ad0155a4960f75aa
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: fbc8239fc3472d5dd5e8a24ca2b0c125d57cca21
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001597"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653071"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>Ensemble de règles des règles minimales mixtes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Les règles minimales mixtes de Microsoft vous concentrer sur les problèmes les plus critiques présents dans vos projets C++ qui prennent en charge le Common Language Runtime, y compris les failles de sécurité potentielles et les blocages d’application. Vous devez inclure cet ensemble de règles dans tout ensemble de règles personnalisé que vous créez pour vos projets C++ qui prennent en charge le Common Language Runtime.  
-
 
 |                                            Règle                                             |                                                  Description                                                  |
 |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6a23cca7e0ae333b50c06e5e4b40e0a51d626f9b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c693b85eb7441749300181da8108dae353e91ad1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635707"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089367"
 ---
 # <a name="upgrade-and-migrate-office-solutions"></a>Mettre à niveau et migrer des solutions Office
   Si vous disposez d'un projet Microsoft Office créé dans une version antérieure de Visual Studio, vous devez effectuer une mise à niveau du projet afin de l'utiliser dans la version actuelle de Visual Studio. Pour mettre à niveau un projet Microsoft Office, ouvrez-le dans une version de Visual Studio qui inclut les outils de développement Microsoft Office. Pour plus d’informations sur les versions de Visual Studio qui incluent les outils de développement Microsoft Office, consultez [configurer un ordinateur pour développer des solutions Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
@@ -35,22 +35,22 @@ ms.locfileid: "56635707"
 ## <a name="changes-to-upgraded-projects"></a>Modifications apportées aux projets mis à niveau
  Quand vous mettez à niveau un projet Microsoft Office, Visual Studio modifie le projet pour cibler les éléments suivants :
 
--   Visual Studio 2010 Tools pour Office runtime. Pour plus d’informations, consultez [Visual Studio Tools pour Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).
+- Visual Studio 2010 Tools pour Office runtime. Pour plus d’informations, consultez [Visual Studio Tools pour Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
--   Références de l'assembly actuel.
+- Références de l'assembly actuel.
 
--   Version du .NET Framework prise en charge par le type de projet (quand vous effectuez une mise à niveau vers Visual Studio 2013 uniquement).
+- Version du .NET Framework prise en charge par le type de projet (quand vous effectuez une mise à niveau vers Visual Studio 2013 uniquement).
 
--   Version de Microsoft Office prise en charge par le type de projet (quand vous effectuez une mise à niveau vers Visual Studio 2013 uniquement).
+- Version de Microsoft Office prise en charge par le type de projet (quand vous effectuez une mise à niveau vers Visual Studio 2013 uniquement).
 
 ## <a name="assembly-references"></a>Références d’assembly
  Visual Studio met à niveau les références d'assembly suivantes dans le projet :
 
--   Assemblys PIA (Primary Interop Assembly) de Microsoft Office.
+- Assemblys PIA (Primary Interop Assembly) de Microsoft Office.
 
--   Assemblys dans [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Pour plus d’informations sur ces assemblys, consultez [Visual Studio Tools pour Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).
+- Assemblys dans [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Pour plus d’informations sur ces assemblys, consultez [Visual Studio Tools pour Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
--   Nouvelles versions ou versions mises à jour d'assemblys dépendants.
+- Nouvelles versions ou versions mises à jour d'assemblys dépendants.
 
 ## <a name="targeted-net-framework"></a>.NET Framework ciblé
  Quand vous mettez à niveau un projet vers Visual Studio 2013, Visual Studio modifie le projet pour cibler [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] ou [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. La version du .NET Framework ciblée par le projet dépend de la version d'Office installée sur votre ordinateur. Si [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] est installé, Visual Studio modifie le projet pour cibler [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Dans le cas contraire, Visual Studio modifie le projet pour cibler [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)].

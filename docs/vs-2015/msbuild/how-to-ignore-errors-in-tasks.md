@@ -12,17 +12,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4bac63523829c47b17821ff5905687bd76bbc57e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 5025cc3e9dc0e13c3ae4658d129f5d0ac94f6fd6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54777029"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062137"
 ---
 # <a name="how-to-ignore-errors-in-tasks"></a>Comment : ignorer des erreurs dans des tâches
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Vous souhaiterez parfois qu’une génération soit à tolérance de panne dans certaines tâches. En cas d’échec de ces tâches non critiques, vous souhaiterez continuer la génération, car elle peut toujours produire la sortie requise. Par exemple, si un projet utilise une tâche `SendMail` pour envoyer un message électronique après la génération de chaque composant, vous pouvez juger acceptable de poursuivre la génération jusqu’à son achèvement, même si les serveurs de messagerie ne sont pas disponibles et que les messages d’état ne peuvent pas être envoyés. Si des fichiers intermédiaires sont habituellement supprimés pendant la génération, vous pouvez également estimer que la génération peut se poursuivre jusqu’à son achèvement, même si ces fichiers ne peuvent pas être supprimés.  
   
 ## <a name="using-the-continueonerror-attribute"></a>Utilisation de l’attribut ContinueOnError  
@@ -42,7 +41,7 @@ Vous souhaiterez parfois qu’une génération soit à tolérance de panne dans 
   
 #### <a name="to-ignore-an-error-in-a-task"></a>Pour ignorer une erreur dans une tâche  
   
--   Utilisez l’attribut `ContinueOnError` de la tâche. Par exemple :  
+- Utilisez l’attribut `ContinueOnError` de la tâche. Par exemple :  
   
      `<Delete Files="@(Files)" ContinueOnError="WarnAndContinue"/>`  
   

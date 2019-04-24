@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a6754c8264b68d8884f5e8ebaea763e004c71596
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 191635364c445bc3959ee2f5f63c7c72c71f171d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913913"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093122"
 ---
 # <a name="type-collection-editor-dialog-box"></a>Boîte de dialogue Éditeur de collections de types
 
@@ -29,18 +29,18 @@ Le tableau suivant décrit les éléments d’interface utilisateur utilisateur 
 |-|-----------------|
 |**Liste de types**|Liste des types qui ont été ajoutés ou supprimés.|
 
-## <a name="to-bring-up-the-type-collection-editor-for-the-send-and-receive-activities"></a>Pour afficher l’Éditeur de collections de types pour les activités Send et Receive
+## <a name="to-bring-up-the-type-collection-editor-for-the-send-and-receive-activities"></a>Pour afficher l'Éditeur de collections de types pour les activités Send et Receive
 
-1.  Sélectionnez le **envoyer** ou **réception** activité en mode design.
+1. Sélectionnez le **envoyer** ou **réception** activité en mode design.
 
-2.  Appuyez sur **F4** pour faire apparaître le **propriétés** fenêtre.
+2. Appuyez sur **F4** pour faire apparaître le **propriétés** fenêtre.
 
-3.  Dans le **propriétés** , cliquez sur le bouton de sélection en regard du **KnownTypes** propriété.
+3. Dans le **propriétés** , cliquez sur le bouton de sélection en regard du **KnownTypes** propriété.
 
-## <a name="to-bring-up-the-type-collection-editor-for-the-invokemethod-activity"></a>Pour afficher l’Éditeur de collections de types pour l’activité InvokeMethod
+## <a name="to-bring-up-the-type-collection-editor-for-the-invokemethod-activity"></a>Pour afficher l'Éditeur de collections de types pour l'activité InvokeMethod
 
-1.  Sélectionnez le **InvokeMethod** activité en mode design.
+1. Sélectionnez le **InvokeMethod** activité en mode design.
 
-2.  Appuyez sur **F4** pour faire apparaître le **propriétés** fenêtre.
+2. Appuyez sur **F4** pour faire apparaître le **propriétés** fenêtre.
 
-3.  Dans le **propriétés** , cliquez sur le bouton de sélection en regard du **GenericTypeArguments** propriété.
+3. Dans le **propriétés** , cliquez sur le bouton de sélection en regard du **GenericTypeArguments** propriété.

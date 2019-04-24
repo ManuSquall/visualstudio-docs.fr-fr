@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 13df8f9a4a360c48d25d46ba3cddb1b42d5150a5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 3428a5aeca92d8c56634b3221bd35a0e8d0bb926
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632353"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069118"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>Déployer des composants COM avec ClickOnce
 Déploiement de composants COM hérités a toujours été une tâche difficile. Composants doivent être inscrits dans le monde entier et peuvent donc entraîner des effets secondaires indésirables entre les applications qui se chevauche. Cette situation n’est généralement pas un problème dans les applications .NET Framework, car les composants sont complètement isolés dans une application ou offrent une compatibilité côte à côte. Visual Studio vous permet de déployer des composants COM isolés sur le Windows XP ou un système d’exploitation ultérieur.
@@ -46,9 +46,9 @@ Déploiement de composants COM hérités a toujours été une tâche difficile. 
 
  Il existe deux façons qui [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploie les composants COM :
 
--   Utilisez le programme d’amorçage pour déployer vos composants COM ; Cela fonctionne sur toutes les plateformes prises en charge.
+- Utilisez le programme d’amorçage pour déployer vos composants COM ; Cela fonctionne sur toutes les plateformes prises en charge.
 
--   Utilisez le composant natif d’isolement (également appelé COM sans inscription) déploiement. Toutefois, cela ne fonctionne que sur un Windows XP ou un système d’exploitation ultérieur.
+- Utilisez le composant natif d’isolement (également appelé COM sans inscription) déploiement. Toutefois, cela ne fonctionne que sur un Windows XP ou un système d’exploitation ultérieur.
 
 ### <a name="example-of-isolating-and-deploying-a-simple-com-component"></a>Exemple d’isolation et de déploiement d’un composant COM simple
  Afin d’illustrer le déploiement du composant COM sans inscription, cet exemple montre comment créer une application basée sur Windows en Visual Basic qui fait référence à un composant COM natif isolé créé à l’aide de Visual Basic 6.0 et le déployer en utilisant [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)].
@@ -57,16 +57,16 @@ Déploiement de composants COM hérités a toujours été une tâche difficile. 
 
 ##### <a name="to-create-a-native-com-component"></a>Pour créer un composant COM natif
 
-1.  À l’aide de Visual Basic 6.0, à partir de la **fichier** menu, cliquez sur **New**, puis **projet**.
+1. À l’aide de Visual Basic 6.0, à partir de la **fichier** menu, cliquez sur **New**, puis **projet**.
 
-2.  Dans le **nouveau projet** boîte de dialogue, sélectionnez le **Visual Basic** nœud et sélectionnez un **DLL ActiveX** projet. Dans la zone **Nom** , tapez `VB6Hello`.
+2. Dans le **nouveau projet** boîte de dialogue, sélectionnez le **Visual Basic** nœud et sélectionnez un **DLL ActiveX** projet. Dans la zone **Nom** , tapez `VB6Hello`.
 
     > [!NOTE]
     >  Types de projets DLL ActiveX et le contrôle ActiveX sont pris en charge avec COM sans inscription ; Types de projets EXE ActiveX et ActiveX Document ne sont pas pris en charge.
 
-3.  Dans **l’Explorateur de solutions**, double-cliquez sur **Class1.vb** pour ouvrir l’éditeur de texte.
+3. Dans **l’Explorateur de solutions**, double-cliquez sur **Class1.vb** pour ouvrir l’éditeur de texte.
 
-4.  Dans Class1.vb, ajoutez le code suivant après le code généré pour le `New` méthode :
+4. Dans Class1.vb, ajoutez le code suivant après le code généré pour le `New` méthode :
 
     ```vb
     Public Sub SayHello()
@@ -74,7 +74,7 @@ Déploiement de composants COM hérités a toujours été une tâche difficile. 
     End Sub
     ```
 
-5.  Générez le composant. À partir de la **Build** menu, cliquez sur **générer la Solution**.
+5. Générez le composant. À partir de la **Build** menu, cliquez sur **générer la Solution**.
 
 > [!NOTE]
 >  COM sans inscription prend en charge uniquement les DLL et COM contrôle les types de projets. Vous ne pouvez pas utiliser les fichiers exe avec COM sans inscription.
@@ -163,7 +163,7 @@ Déploiement de composants COM hérités a toujours été une tâche difficile. 
 
 - Le composant gère un appareil physique ou virtuel pour le système, par exemple, un pilote de périphérique pour un spouleur d’impression.
 
-- Le composant est un redistribuable Data Access. Les applications de données requièrent généralement un redistribuable Data Access distinct doit être installé avant de pouvoir exécuter. Vous ne devez pas essayer d’isoler des composants tels que le contrôle de données Microsoft ADO, OLE DB de Microsoft ou Microsoft Data Access Components (MDAC). Au lieu de cela, si votre application utilise MDAC ou SQL Server Express, vous devez les définir comme composants requis ; consultez [Comment : installer les composants requis avec une Application ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).
+- Le composant est un redistribuable Data Access. Les applications de données requièrent généralement un redistribuable Data Access distinct doit être installé avant de pouvoir exécuter. Vous ne devez pas essayer d’isoler des composants tels que le contrôle de données Microsoft ADO, OLE DB de Microsoft ou Microsoft Data Access Components (MDAC). Au lieu de cela, si votre application utilise MDAC ou SQL Server Express, vous devez les définir comme composants requis ; consultez [Comment : Installer les composants requis avec une Application ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).
 
   Dans certains cas, il peut être possible pour le développeur du composant à reconcevoir pour COM sans inscription. Si ce n’est pas possible, vous pouvez toujours générer et publier des applications qui en dépendent, via le modèle d’inscription standard à l’aide du programme d’amorçage. Pour plus d’informations, consultez [création de Packages de programme d’amorçage](../deployment/creating-bootstrapper-packages.md).
 

@@ -21,17 +21,16 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ec53e42a5e49d48e76c6c00e2ffbd5a8a3daafa0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 56b01eb64d38563178d6af947174d0c4d2720bea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951565"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113813"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>Mettre à jour les données à l’aide d’un TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Une fois que les données dans votre jeu de données a été modifiées et validées, vous pouvez envoyer les données mises à jour à un appel databaseby le `Update` méthode d’un TableAdapter. Le `Update` méthode met à jour une table de données unique et exécute la commande correcte (INSERT, UPDATE ou DELETE), selon le <xref:System.Data.DataRow.RowState%2A> de chaque ligne de données dans la table. Lorsque les tables sont liées à un jeu de données, Visual Studio génère une classe TableAdapterManager qui vous permet d’effectuer les mises à jour. La classe TableAdapterManager garantit que les mises à jour sont effectuées dans l’ordre approprié selon les contraintes de clé étrangère sont définies dans la base de données. Lorsque vous utilisez des contrôles liés aux données, l’architecture de liaison de données crée une variable de membre de la classe de TableAdapterManager appelée tableAdapterManager. Pour plus d’informations, consultez [vue d’ensemble de mise à jour hiérarchique](http://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6).  
   
 > [!NOTE]
@@ -39,18 +38,18 @@ Une fois que les données dans votre jeu de données a été modifiées et valid
   
  La procédure exacte de mise à jour d’une source de données peut varier en fonction des besoins de l’entreprise, mais il comprend les étapes suivantes :  
   
-1.  Appeler l’adaptateur `Update` méthode dans un `try` / `catch` bloc.  
+1. Appeler l’adaptateur `Update` méthode dans un `try` / `catch` bloc.  
   
-2.  Si une exception est interceptée, recherchez la ligne de données qui a provoqué l’erreur. Pour plus d'informations, voir [Procédure : Recherchez les lignes qui contiennent des erreurs](http://msdn.microsoft.com/library/1fa907c5-fe66-4f29-a253-2b97b900050c).  
+2. Si une exception est interceptée, recherchez la ligne de données qui a provoqué l’erreur. Pour plus d'informations, voir [Procédure : Recherchez les lignes qui contiennent des erreurs](http://msdn.microsoft.com/library/1fa907c5-fe66-4f29-a253-2b97b900050c).  
   
-3.  Résolvez le problème dans les données de ligne (par programmation si possible, ou à l’aide de la ligne non valide pour que l’utilisateur), puis réessayez la mise à jour (<xref:System.Data.DataRow.HasErrors%2A>, <xref:System.Data.DataTable.GetErrors%2A>).  
+3. Résolvez le problème dans les données de ligne (par programmation si possible, ou à l’aide de la ligne non valide pour que l’utilisateur), puis réessayez la mise à jour (<xref:System.Data.DataRow.HasErrors%2A>, <xref:System.Data.DataTable.GetErrors%2A>).  
   
 ## <a name="savedata-to-a-database"></a>SaveData à une base de données  
  Appelez le `Update` méthode d’un TableAdapter. Passez le nom de la table de données qui contient les valeurs à écrire dans la base de données.  
   
 #### <a name="to-update-a-database-by-using-a-tableadapter"></a>Pour mettre à jour une base de données à l’aide d’un TableAdapter  
   
--   Placez le TableAdapter`Update` méthode dans un `try` / `catch` bloc. L’exemple suivant montre comment mettre à jour le contenu de la `Customers` table `NorthwindDataSet` depuis un `try` / `catch` bloc.  
+- Placez le TableAdapter`Update` méthode dans un `try` / `catch` bloc. L’exemple suivant montre comment mettre à jour le contenu de la `Customers` table `NorthwindDataSet` depuis un `try` / `catch` bloc.  
   
      [!code-csharp[VbRaddataSaving#9](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form3.cs#9)]
      [!code-vb[VbRaddataSaving#9](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form3.vb#9)]  

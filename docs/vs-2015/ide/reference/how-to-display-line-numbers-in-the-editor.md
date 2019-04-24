@@ -14,17 +14,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f4b38f39fbb7b1f72622be58ee049554cb04f02f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 7873d54ecdf3ce96ab64d94e9b1864c7ef2904b0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54800741"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088260"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>Guide pratique pour afficher les numéros de ligne dans l’Éditeur
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Vous pouvez afficher ou masquer la numérotation des lignes dans votre code.  
   
 > [!NOTE]
@@ -35,9 +34,9 @@ Vous pouvez afficher ou masquer la numérotation des lignes dans votre code.
   
 #### <a name="to-display-line-numbers-in-code"></a>Pour afficher les numéros de ligne dans le code  
   
-1.  Dans la barre de menus, sélectionnez **Outils**, **Options**. Développez le nœud **Éditeur de texte**, puis sélectionnez le nœud du langage que vous utilisez ou **Tous les langages** pour activer les numéros de ligne dans tous les langages. Vous pouvez également taper le **numéro de ligne** dans la zone **Lancement rapide**.  
+1. Dans la barre de menus, sélectionnez **Outils**, **Options**. Développez le nœud **Éditeur de texte**, puis sélectionnez le nœud du langage que vous utilisez ou **Tous les langages** pour activer les numéros de ligne dans tous les langages. Vous pouvez également taper le **numéro de ligne** dans la zone **Lancement rapide**.  
   
-2.  ![Options d’affichage des numéros de ligne dans l’éditeur](../../ide/reference/media/vs-displaylinenumbers.png "VS_DisplayLineNumbers")  
+2. ![Options d’affichage des numéros de ligne dans l’éditeur](../../ide/reference/media/vs-displaylinenumbers.png "VS_DisplayLineNumbers")  
   
 > [!NOTE]
 >  Selon votre langage ou vos paramètres, vous devez peut-être cocher la case **Afficher tous les paramètres** dans la boîte de dialogue **Options** pour afficher le sous-nœud **Tous les langages**.  

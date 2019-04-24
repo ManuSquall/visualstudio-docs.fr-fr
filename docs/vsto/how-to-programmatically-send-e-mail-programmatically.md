@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 280b4f526bad3e0ba646058b3e2410a98ca910fe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4def747f4077d7b847e7e87082dc4b0b96cf04c9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646003"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110789"
 ---
 # <a name="how-to-programmatically-send-email"></a>Procédure : Envoyer par programmation un e-mail
   Cet exemple envoie un message électronique à des contacts dont le nom de domaine **example.com** dans leurs adresses de messagerie.
@@ -33,7 +33,7 @@ ms.locfileid: "56646003"
 ## <a name="compile-the-code"></a>Compiler le code
  Cet exemple nécessite :
 
--   Contacts dont le nom de domaine **example.com** dans leurs adresses de messagerie.
+- Contacts dont le nom de domaine **example.com** dans leurs adresses de messagerie.
 
 ## <a name="robust-programming"></a>Programmation fiable
  Ne supprimez pas le code de filtre qui recherche le nom de domaine **example.com**. Votre solution enverra des messages électroniques à l’ensemble de vos contacts si vous supprimez le filtre.

@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 678c09cca8f7b90c9be6dc2b7101ca04d9f94812
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b61492d992d37d7377e73185202bfbdd97063195
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949965"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116665"
 ---
 # <a name="navigate-the-uml-model"></a>Naviguer dans le modèle UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +30,9 @@ Cette rubrique présente les principaux types du modèle UML.
   
  Tous les types sauf IElement héritent des propriétés d'un ou plusieurs supertypes.  
   
--   Pour obtenir un résumé des types de modèle, consultez [types d’éléments UML modèle](../modeling/uml-model-element-types.md).  
+- Pour obtenir un résumé des types de modèle, consultez [types d’éléments UML modèle](../modeling/uml-model-element-types.md).  
   
--   Pour obtenir des informations complètes sur l’API, consultez [référence des API pour l’extensibilité de la modélisation UML](../modeling/api-reference-for-uml-modeling-extensibility.md).  
+- Pour obtenir des informations complètes sur l’API, consultez [référence des API pour l’extensibilité de la modélisation UML](../modeling/api-reference-for-uml-modeling-extensibility.md).  
   
 ### <a name="relationships"></a>Relations  
  Les propriétés et relations définies dans la spécification UML sont implémentées en tant que propriétés .NET.  
@@ -122,11 +122,11 @@ foreach (IShape<IInterface> in
 ## <a name="accessing-another-model-or-diagrams"></a>Accès à un autre modèle ou à d'autres diagrammes  
  Vous pouvez :  
   
--   utiliser [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Model Bus pour créer des liens entre des éléments dans différents modèles. Pour plus d’informations, consultez [intégrer des modèles UML avec d’autres modèles et outils](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
+- utiliser [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Model Bus pour créer des liens entre des éléments dans différents modèles. Pour plus d’informations, consultez [intégrer des modèles UML avec d’autres modèles et outils](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
   
--   charger un projet de modélisation et des diagrammes en mode lecture seule sans les rendre visibles dans l'interface utilisateur de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Pour plus d’informations, consultez [lire un modèle UML dans le code de programme](../modeling/read-a-uml-model-in-program-code.md).  
+- charger un projet de modélisation et des diagrammes en mode lecture seule sans les rendre visibles dans l'interface utilisateur de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Pour plus d’informations, consultez [lire un modèle UML dans le code de programme](../modeling/read-a-uml-model-in-program-code.md).  
   
--   ouvrir un projet de modélisation et ses diagrammes dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], puis accéder au contenu. Pour plus d’informations, consultez [ouvrir un modèle UML à l’aide de l’API Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md).  
+- ouvrir un projet de modélisation et ses diagrammes dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], puis accéder au contenu. Pour plus d’informations, consultez [ouvrir un modèle UML à l’aide de l’API Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Étendre des diagrammes et des modèles UML](../modeling/extend-uml-models-and-diagrams.md)   

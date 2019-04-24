@@ -23,12 +23,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 829ccc02f9532e62bfb62ec21c8188f313c98e59
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ca7e19925288b1509fec08235f546b84b4afffef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949202"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039127"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; , élément (Application ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,28 +81,28 @@ Décrit les autorisations de sécurité minimales dont doit disposer l’applica
 ## <a name="permissionset"></a>PermissionSet  
  Obligatoire. Cet élément est un enfant de l’élément `applicationRequestMinimum` et contient l’élément `IPermission` . Cet élément comprend les attributs suivants.  
   
--   `ID`  
+- `ID`  
   
      Obligatoire. Identifie le jeu d’autorisations. Cet attribut peut avoir n’importe quelle valeur. L’ID est référencé dans les attributs `defaultAssemblyRequest` et `assemblyRequest` .  
   
--   `version`  
+- `version`  
   
      Obligatoire. Identifie la version de l’autorisation. En général, cette valeur est égale à `1`.  
   
 ## <a name="ipermission"></a>IPermission  
- Facultatif. Cet élément est un enfant de l’élément `PermissionSet` . L’élément `IPermission` identifie entièrement une classe d’autorisation dans le [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. L’élément `IPermission` comprend les attributs suivants, mais il peut en avoir d’autres qui correspondent aux propriétés de la classe d’autorisation. Pour trouver la syntaxe d’une autorisation spécifique, consultez les exemples figurant dans le fichier Security.config.  
+ Optionnel. Cet élément est un enfant de l’élément `PermissionSet` . L’élément `IPermission` identifie entièrement une classe d’autorisation dans le [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. L’élément `IPermission` comprend les attributs suivants, mais il peut en avoir d’autres qui correspondent aux propriétés de la classe d’autorisation. Pour trouver la syntaxe d’une autorisation spécifique, consultez les exemples figurant dans le fichier Security.config.  
   
--   `class`  
+- `class`  
   
      Obligatoire. Identifie la classe d’autorisation par son nom fort. Par exemple, le code suivant identifie le type `FileDialogPermission` .  
   
      `System.Security.Permissions.FileDialogPermission, mscorlib, Version=1.2.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`  
   
--   `version`  
+- `version`  
   
      Obligatoire. Identifie la version de l’autorisation. En général, cette valeur est égale à `1`.  
   
--   `Unrestricted`  
+- `Unrestricted`  
   
      Obligatoire. Indique si l’application doit se voir accorder cette autorisation sans aucune limite. Si cet attribut a la valeur `true`, l’autorisation est accordée à l’application de manière inconditionnelle. Si cet attribut a la valeur `false`, ou s’il n’est pas défini, des restrictions sont imposées à l’application en fonction d’attributs spécifiques à l’autorisation définis dans la balise `IPermission` . Prenez les autorisations suivantes :  
   
@@ -122,18 +122,18 @@ Décrit les autorisations de sécurité minimales dont doit disposer l’applica
 ## <a name="defaultassemblyrequest"></a>defaultAssemblyRequest  
  Optionnel. Identifie le jeu d’autorisations accordé à tous les assemblys. Cet élément est un enfant de l’élément `applicationRequestMinimum` et contient l’attribut suivant.  
   
--   `permissionSetReference`  
+- `permissionSetReference`  
   
      Obligatoire. Identifie l’ID du jeu d’autorisations qui est l’autorisation par défaut. Le jeu d’autorisations est déclaré dans l’élément `PermissionSet` .  
   
 ## <a name="assemblyrequest"></a>assemblyRequest  
  Optionnel. Identifie les autorisations d’un assembly spécifique. Cet élément est un enfant de l’élément `applicationRequestMinimum` et comprend les attributs suivants.  
   
--   `Name`  
+- `Name`  
   
      Obligatoire. Identifie le nom de l’assembly.  
   
--   `permissionSetReference`  
+- `permissionSetReference`  
   
      Obligatoire. Identifie l’ID du jeu d’autorisations dont a besoin cet assembly. Le jeu d’autorisations est déclaré dans l’élément `PermissionSet` .  
   
@@ -143,7 +143,7 @@ Décrit les autorisations de sécurité minimales dont doit disposer l’applica
 ## <a name="requestedexecutionlevel"></a>requestedExecutionLevel  
  Optionnel. Identifie le niveau de sécurité auquel les demandes d’application doivent être exécutées. Cet élément n’a pas d’enfants et comprend les attributs suivants.  
   
--   `Level`  
+- `Level`  
   
      Obligatoire. Indique le niveau de sécurité demandé par l’application. Les valeurs possibles sont :  
   
@@ -155,9 +155,9 @@ Décrit les autorisations de sécurité minimales dont doit disposer l’applica
   
      Les applications[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] sont uniquement installées avec la valeur `asInvoker`. Toute installation effectuée avec une autre valeur se soldera par un échec.  
   
--   `uiAccess`  
+- `uiAccess`  
   
-     Facultatif. Indique si l’application nécessite l’accès aux éléments protégés de l’interface utilisateur. La valeur peut être `true` ou `false`(false étant la valeur par défaut). Seules les applications signées doivent avoir la valeur true.  
+     Optionnel. Indique si l’application nécessite l’accès aux éléments protégés de l’interface utilisateur. La valeur peut être `true` ou `false`(false étant la valeur par défaut). Seules les applications signées doivent avoir la valeur true.  
   
 ## <a name="remarks"></a>Notes  
  Si une application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] demande davantage d’autorisations que celles accordées par défaut par l’ordinateur client, le Gestionnaire de confiance du common language runtime demande à l’utilisateur s’il souhaite accorder à l’application ce niveau de privilège élevé. S’il refuse, l’application ne fonctionne pas ; s’il accepte, elle s’exécute avec les autorisations demandées.  

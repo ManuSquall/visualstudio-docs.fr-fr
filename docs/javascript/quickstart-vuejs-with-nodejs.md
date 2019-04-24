@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: cbf0c97371270ef6c9443c7abd755bf956a465f0
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: d28126c84312c13b04de6739340d2cfb6337a066
+ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355258"
+ms.lasthandoff: 04/03/2019
+ms.locfileid: "58897593"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>Démarrage rapide : Utiliser Visual Studio pour créer une première application Vue.js
 
@@ -59,14 +59,16 @@ Vous allez d’abord créer un projet d’application web Vue.js.
 1. Créer un nouveau projet.
 
     ::: moniker range=">=vs-2019"
-    Tapez **Ctrl+Q** pour ouvrir la zone de recherche, tapez **Vue.js**, puis choisissez **Application web Vue.js de base** (JavaScript ou TypeScript). Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
+    Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **Ctrl+Q** pour ouvrir la zone de recherche, tapez **Basic Vue.js**, puis choisissez **Application web Vue.js de base** (JavaScript ou TypeScript). Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
+
+    ![Modèle Vue.js](../javascript/media/vs-2019/vuejs-template.png)
     ::: moniker-end
     ::: moniker range="vs-2017"
     Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, développez **JavaScript** ou **TypeScript**, puis choisissez **Node.js**. Dans le volet central, choisissez **Application web Vue.js de base**, puis **OK**.
-    ::: moniker-end
-    Si vous ne voyez pas le modèle de projet **Application web Vue.js de base**, vous devez ajouter la charge de travail **Développement Node.js**. Pour obtenir des instructions détaillées, consultez les [Prérequis](#prerequisites).
 
     ![Modèle Vue.js](../javascript/media/vuejs-template.png)
+    ::: moniker-end
+    Si vous ne voyez pas le modèle de projet **Application web Vue.js de base**, vous devez ajouter la charge de travail **Développement Node.js**. Pour obtenir des instructions détaillées, consultez les [Prérequis](#prerequisites).
 
     Visual Studio crée le nouveau projet. Le nouveau projet s’ouvre dans l’Explorateur de solutions (volet droit).
 

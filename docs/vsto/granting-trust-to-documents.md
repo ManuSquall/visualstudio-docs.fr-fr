@@ -15,15 +15,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 52ff98f15afb95bda4d69770b84764db21171425
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: be8a17496788b0f4fe8abc9859b46cbfa11a6ed7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599660"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053011"
 ---
 # <a name="grant-trust-to-documents"></a>Accorder votre confiance à des documents
-  Un projet au niveau du document présente les mêmes exigences de sécurité que les projets au niveau de l’application : il convient de signer les manifestes à l’aide d’un certificat ou de cliquer sur l’invite d’approbation. En outre, le document ou le classeur doit se trouver dans un répertoire désigné comme emplacement approuvé.
+  Un projet au niveau du document présente les mêmes exigences de sécurité que les projets au niveau de l'application : il convient de signer les manifestes à l'aide d'un certificat ou de cliquer sur l'invite d'approbation. En outre, le document ou le classeur doit se trouver dans un répertoire désigné comme emplacement approuvé.
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
@@ -35,13 +35,13 @@ ms.locfileid: "56599660"
 ## <a name="security-considerations-for-office-solutions"></a>Considérations sur la sécurité pour les solutions Office
  Plusieurs problèmes de sécurité se posent quand vous déterminez les dossiers à ajouter aux emplacements approuvés :
 
--   Les dossiers locaux sont considérés plus sécurisés et ils sont approuvés de manière implicite. Les emplacements distants tels que les partages de fichiers doivent être désignés comme emplacements approuvés.
+- Les dossiers locaux sont considérés plus sécurisés et ils sont approuvés de manière implicite. Les emplacements distants tels que les partages de fichiers doivent être désignés comme emplacements approuvés.
 
--   Quand vous ajoutez un répertoire aux emplacements approuvés, vous accordez une confiance totale aux solutions Office, mais également au code VBA et ActiveX. Pour cette raison, le répertoire racine et le *Mes Documents* dossiers ne doivent pas être désignés comme étant fiables.
+- Quand vous ajoutez un répertoire aux emplacements approuvés, vous accordez une confiance totale aux solutions Office, mais également au code VBA et ActiveX. Pour cette raison, le répertoire racine et le *Mes Documents* dossiers ne doivent pas être désignés comme étant fiables.
 
--   Le document lui-même est approuvé en utilisant les emplacements approuvés. Toutefois, des autorisations supplémentaires sont requises pour approuver la personnalisation. Vous pouvez accorder une confiance totale à la personnalisation à l’aide de la signature des manifestes avec un certificat, en cliquant sur l’invite d’approbation ou l’installation de la solution Office à le *Program Files* directory.
+- Le document lui-même est approuvé en utilisant les emplacements approuvés. Toutefois, des autorisations supplémentaires sont requises pour approuver la personnalisation. Vous pouvez accorder une confiance totale à la personnalisation à l’aide de la signature des manifestes avec un certificat, en cliquant sur l’invite d’approbation ou l’installation de la solution Office à le *Program Files* directory.
 
--   Vous pouvez stocker le document ou le classeur d'une solution au niveau du document dans le même répertoire que l'assembly ou dans un répertoire différent. Par exemple, le document peut être situé sur un serveur SharePoint et l'assembly dans un partage de fichiers réseau. Pour plus d'informations, voir [Procédure : Publier une solution de Office au niveau du document sur un serveur SharePoint à l’aide de ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).
+- Vous pouvez stocker le document ou le classeur d'une solution au niveau du document dans le même répertoire que l'assembly ou dans un répertoire différent. Par exemple, le document peut être situé sur un serveur SharePoint et l'assembly dans un partage de fichiers réseau. Pour plus d'informations, voir [Procédure : Publier une solution de Office au niveau du document sur un serveur SharePoint à l’aide de ClickOnce](https://msdn.microsoft.com/2408e809-fb78-42a1-9152-00afa1522e58).
 
 ## <a name="see-also"></a>Voir aussi
 - [Accorder votre confiance à des solutions Office](../vsto/granting-trust-to-office-solutions.md)

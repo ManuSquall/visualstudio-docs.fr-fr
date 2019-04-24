@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2dda4193a0ea30ac08f8a63a39ce00fb634832d7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f62181909afef7f404270a085f9bbb1a5341c115
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596423"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104458"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Procédure : Ajouter et supprimer des fonctionnalités et des éléments dans un Package à l’aide de l’Explorateur de package
   Pour configurer un package pour déployer des fonctionnalités et des éléments de SharePoint, vous pouvez utiliser l’Explorateur de package. Vous pouvez ajuster les éléments de projet SharePoint et les fonctionnalités à l’intérieur de votre fichier .wsp.
@@ -31,7 +31,7 @@ ms.locfileid: "56596423"
 
 #### <a name="to-open-the-packaging-explorer"></a>Pour ouvrir l’Explorateur de package
 
-1.  Dans la barre de menus, choisissez **vue** > **Windows autres** > **Explorateur de package**.
+1. Dans la barre de menus, choisissez **vue** > **Windows autres** > **Explorateur de package**.
 
      Le **Explorateur de package** s’affiche dans le **boîte à outils**.
 
@@ -40,15 +40,15 @@ ms.locfileid: "56596423"
 
 #### <a name="to-add-a-sharepoint-feature"></a>Pour ajouter une fonctionnalité SharePoint
 
-1.  Ouvrez le **Explorateur de package**, ouvrez le menu contextuel du projet, puis choisissez **ajouter une fonctionnalité**.
+1. Ouvrez le **Explorateur de package**, ouvrez le menu contextuel du projet, puis choisissez **ajouter une fonctionnalité**.
 
 #### <a name="to-move-an-existing-sharepoint-feature"></a>Pour déplacer une fonctionnalité SharePoint existante
 
-1.  Ouvrez le **Explorateur de package**, puis effectuez l’une des étapes suivantes :
+1. Ouvrez le **Explorateur de package**, puis effectuez l’une des étapes suivantes :
 
-    -   Faites glisser un **fonctionnalité** d’un projet vers un autre projet.
+    - Faites glisser un **fonctionnalité** d’un projet vers un autre projet.
 
-    -   Ouvrez le menu contextuel pour une fonctionnalité, choisissez **couper**, ouvrez le menu contextuel du projet auquel vous souhaitez déplacer le composant, puis choisissez **coller**.
+    - Ouvrez le menu contextuel pour une fonctionnalité, choisissez **couper**, ouvrez le menu contextuel du projet auquel vous souhaitez déplacer le composant, puis choisissez **coller**.
 
     > [!NOTE]
     >  Utilisez cette procédure si vous avez plusieurs projets SharePoint dans votre solution.
@@ -58,9 +58,9 @@ ms.locfileid: "56596423"
 
 #### <a name="to-validate-a-sharepoint-feature-or-package"></a>Pour valider une fonctionnalité SharePoint ou un package
 
-1.  Ouvrez le **Explorateur de package**.
+1. Ouvrez le **Explorateur de package**.
 
-2.  Ouvrez un menu contextuel pour une fonctionnalité ou un package, puis choisissez **Validate**.
+2. Ouvrez un menu contextuel pour une fonctionnalité ou un package, puis choisissez **Validate**.
 
 ## <a name="see-also"></a>Voir aussi
 - [Empaqueter et déployer des solutions SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

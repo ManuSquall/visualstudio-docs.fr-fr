@@ -11,14 +11,14 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eb2c708bfb6bfafe90b548ad2826e0cf11882a3b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e7daee59d754b8b09ed8684ff16a6bae81fa3bf8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793204"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079770"
 ---
-# <a name="how-to-troubleshoot-templates"></a>Comment : dépanner des modèles
+# <a name="how-to-troubleshoot-templates"></a>Procédure : Dépanner des modèles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Si le chargement d’un modèle dans l’environnement de développement échoue, il existe plusieurs façons de procéder pour localiser le problème.  
@@ -28,24 +28,24 @@ Si le chargement d’un modèle dans l’environnement de développement échoue
   
 #### <a name="to-validate-the-vstemplate-file"></a>Pour valider le fichier .vstemplate  
   
-1.  Localisez le fichier .zip qui contient le modèle.  
+1. Localisez le fichier .zip qui contient le modèle.  
   
-2.  Extrayez le fichier zip.  
+2. Extrayez le fichier zip.  
   
-3.  Dans le menu **Fichier**, de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], cliquez sur **Ouvrir**, puis sur **Fichier**.  
+3. Dans le menu **Fichier**, de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], cliquez sur **Ouvrir**, puis sur **Fichier**.  
   
-4.  Sélectionnez le fichier .vstemplate du modèle, puis cliquez sur **Ouvrir**.  
+4. Sélectionnez le fichier .vstemplate du modèle, puis cliquez sur **Ouvrir**.  
   
-5.  Vérifiez que le code XML du fichier .vstemplate adhère au schéma de modèle [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Pour plus d’informations sur le schéma .vstemplate, consultez [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md).  
+5. Vérifiez que le code XML du fichier .vstemplate adhère au schéma de modèle [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Pour plus d’informations sur le schéma .vstemplate, consultez [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md).  
   
     > [!NOTE]
     >  Pour obtenir une prise en charge d’IntelliSense quand vous créez le fichier .vstemplate, ajoutez un attribut `xmlns` à l’élément `VSTemplate`, puis affectez-lui la valeur http://schemas.microsoft.com/developer/vstemplate/2005.  
   
-6.  Enregistrez et fermez le fichier .vstemplate.   
+6. Enregistrez et fermez le fichier .vstemplate.   
   
-7.  Sélectionnez les fichiers inclus dans votre modèle, cliquez avec le bouton droit, sélectionnez **Envoyer vers**, puis cliquez sur **Dossier compressé**. Les fichiers que vous avez sélectionnés sont compressés dans un fichier .zip.  
+7. Sélectionnez les fichiers inclus dans votre modèle, cliquez avec le bouton droit, sélectionnez **Envoyer vers**, puis cliquez sur **Dossier compressé**. Les fichiers que vous avez sélectionnés sont compressés dans un fichier .zip.  
   
-8.  Placez le nouveau fichier .zip dans le même répertoire que l’ancien fichier .zip.  
+8. Placez le nouveau fichier .zip dans le même répertoire que l’ancien fichier .zip.  
   
 9. Supprimez les fichiers de modèles extraits et l'ancien fichier .zip du modèle.  
   
@@ -54,13 +54,13 @@ Si le chargement d’un modèle dans l’environnement de développement échoue
   
 #### <a name="to-locate-template-errors-in-event-viewer"></a>Pour localiser des erreurs de modèle dans l’observateur d’événements  
   
-1.  Dans Windows, cliquez sur **Démarrer**, sur **Panneau de configuration**, et double-cliquez sur **Outils d’administration**, puis sur **Observateur d’événements**.  
+1. Dans Windows, cliquez sur **Démarrer**, sur **Panneau de configuration**, et double-cliquez sur **Outils d’administration**, puis sur **Observateur d’événements**.  
   
-2.  Dans le volet gauche, cliquez sur **Application**.  
+2. Dans le volet gauche, cliquez sur **Application**.  
   
-3.  Recherchez les événements dont la **Source** a la valeur `Visual Studio - VsTemplate`.  
+3. Recherchez les événements dont la **Source** a la valeur `Visual Studio - VsTemplate`.  
   
-4.  Double-cliquez sur un événement de modèle pour afficher l’erreur.  
+4. Double-cliquez sur un événement de modèle pour afficher l’erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Personnalisation des modèles](../ide/customizing-project-and-item-templates.md)   

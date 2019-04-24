@@ -17,17 +17,16 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ec92f94522c7f2683538ed92b231bfc524632191
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 6ba088b91496c633afe34c20e40c12ded7d2279b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54796955"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651199"
 ---
 # <a name="resolvemanifestfiles-task"></a>ResolveManifestFiles, tâche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Résout les éléments suivants dans le processus de génération en fichiers pour la génération de manifeste : éléments générés, dépendances, satellites, contenu, symboles de débogage et documentation.  
   
 ## <a name="parameters"></a>Paramètres  

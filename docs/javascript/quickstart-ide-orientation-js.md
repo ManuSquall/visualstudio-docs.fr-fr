@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6d67dd56ad26d3dff3912ae5bdca979c2eaf9d9
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 94fff3c08d9bf6be7467e98a08d107b65928bd60
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325290"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790665"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Premier aperçu de l’IDE Visual Studio
 
@@ -112,13 +112,13 @@ Générons le projet pour afficher une sortie de génération. Dans le menu **G�
 
 ![Fenêtre Sortie dans Visual Studio](media/build-output-minimal.png)
 
-## <a name="quick-launch"></a>Lancement rapide
+## <a name="search-box"></a>Zone de recherche
 
-La zone **Lancement rapide** permet d’effectuer rapidement et facilement presque n’importe quelle opération dans Visual Studio. Vous pouvez saisir du texte concernant ce que vous voulez faire et une liste d’options pertinente s’affiche. Imaginez par exemple que vous souhaitez augmenter les commentaires de la sortie de la génération pour afficher des détails supplémentaires sur ce que fait la génération. Voici comment procéder :
+La zone de recherche permet d’effectuer rapidement et facilement presque n’importe quelle opération dans Visual Studio. Vous pouvez saisir du texte concernant ce que vous voulez faire et une liste d’options pertinente s’affiche. Imaginez par exemple que vous souhaitez augmenter les commentaires de la sortie de la génération pour afficher des détails supplémentaires sur ce que fait la génération. Voici comment procéder :
 
-1. Tapez **commentaires** dans la zone **Lancement rapide**. Parmi les résultats affichés, choisissez **Projets et solutions --> Générer et exécuter** sous la catégorie **Options**.
+1. Tapez **commentaires** dans la zone de recherche. Parmi les résultats affichés, choisissez **Projets et solutions --> Générer et exécuter** sous la catégorie **Options**.
 
-   ![Zone de lancement rapide dans Visual Studio](media/quickstart-IDE-quick-launch.png)
+   ![Zone de recherche dans Visual Studio](media/quickstart-IDE-quick-launch.png)
 
    La boîte de dialogue **Options** s’affiche sur la page des options **Générer et exécuter**.
 
@@ -132,7 +132,7 @@ La zone **Lancement rapide** permet d’effectuer rapidement et facilement presq
 
 ## <a name="send-feedback-menu"></a>Menu Envoyer des commentaires
 
-Si vous rencontrez des problèmes pendant l’utilisation de Visual Studio, ou si vous avez des suggestions d’amélioration du produit, vous pouvez utiliser le menu **Envoyer des commentaires** en haut de la fenêtre de Visual Studio, à côté de la zone **Lancement rapide**.
+Si vous rencontrez des problèmes pendant l’utilisation de Visual Studio, ou si vous avez des suggestions d’amélioration du produit, vous pouvez utiliser le menu **Envoyer des commentaires** en haut de la fenêtre Visual Studio.
 
 ![Menu Envoyer des commentaires dans Visual Studio](../ide/media/quickstart-ide-send-feedback.png)
 

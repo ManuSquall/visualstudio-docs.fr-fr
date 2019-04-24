@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a015aeff983979bbb8f6ddedc245c74d3fb5f77b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 686bf7962e164e718f007a44c83febfc8f49418d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791706"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108371"
 ---
 # <a name="full-text-search-tips"></a>Conseils de recherche en texte intégral
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ L’une des approches les plus utiles pour trouver des informations dans l’Aid
   
 > [!IMPORTANT]
 > 1. Les recherches d’expressions ne sont pas prises en charge. Si vous spécifiez plusieurs mots dans une chaîne de recherche, les rubriques retournées contiennent tous les mots que vous avez spécifiés, mais pas nécessairement l’expression exacte que vous avez spécifiée.  
->    2.  Utilisez des opérateurs logiques pour spécifier la relation entre les mots dans votre expression de recherche. Vous pouvez inclure des opérateurs logiques, tels que AND, OR, NOT et NEAR, pour affiner votre recherche. Par exemple, si vous recherchez « déclarer NEAR union », les résultats de recherche incluent les rubriques dans lesquelles les mots « déclarer » et « union » ne sont séparés que de quelques mots. Pour plus d’informations, consultez [Opérateurs logiques dans les expressions de recherche](../ide/logical-operators-in-search-expressions.md).  
+>    2. Utilisez des opérateurs logiques pour spécifier la relation entre les mots dans votre expression de recherche. Vous pouvez inclure des opérateurs logiques, tels que AND, OR, NOT et NEAR, pour affiner votre recherche. Par exemple, si vous recherchez « déclarer NEAR union », les résultats de recherche incluent les rubriques dans lesquelles les mots « déclarer » et « union » ne sont séparés que de quelques mots. Pour plus d’informations, consultez [Opérateurs logiques dans les expressions de recherche](../ide/logical-operators-in-search-expressions.md).  
   
 ### <a name="filters"></a>Filtres  
  Vous pouvez restreindre davantage les résultats de la recherche en utilisant des opérateurs de recherche avancée. L’Aide inclut trois catégories que vous pouvez utiliser pour filtrer les résultats d’une recherche en texte intégral : titre, code et mot clé. Pour plus d’informations, consultez [Opérateurs de recherche avancée dans les expressions de recherche](../ide/advanced-search-operators-in-search-expressions.md).  
@@ -51,11 +51,11 @@ L’une des approches les plus utiles pour trouver des informations dans l’Aid
 ### <a name="ranking-of-search-results"></a>Classement des résultats de recherche  
  L’algorithme de recherche applique certains critères pour aider à classer les résultats de la recherche dans la liste des résultats. En général :  
   
-1.  Le contenu qui comprend les mots à rechercher dans le titre a un classement plus élevé.  
+1. Le contenu qui comprend les mots à rechercher dans le titre a un classement plus élevé.  
   
-2.  Le contenu dans lequel les mots à rechercher sont situés à proximité les uns des autres a un classement plus élevé.  
+2. Le contenu dans lequel les mots à rechercher sont situés à proximité les uns des autres a un classement plus élevé.  
   
-3.  Le contenu où la densité de mots à rechercher est supérieure a un classement plus élevé.  
+3. Le contenu où la densité de mots à rechercher est supérieure a un classement plus élevé.  
   
 ### <a name="words-ignored-in-searches-stop-words"></a>Mots ignorés dans les recherches (mots vides)  
  Les mots ou les nombres courants, parfois appelés mots vides, sont automatiquement ignorés lors d’une recherche en texte intégral. Par exemple, si vous recherchez l’expression « pass through », les résultats de la recherche affichent les rubriques qui contiennent le mot « pass », mais pas « through ».  

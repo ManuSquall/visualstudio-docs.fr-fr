@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f18c88e72a40d3070d9a366e0c6c4e0f3888565
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4bb98e2b1c83ff06570a77dc84ce6a7bf690f81d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628388"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096996"
 ---
 # <a name="extend-sharepoint-packaging-and-deployment"></a>Étendre le déploiement et empaquetage de SharePoint
   Vous pouvez étendre le processus d'empaquetage et de déploiement pour les projets SharePoint.
@@ -35,12 +35,12 @@ ms.locfileid: "56628388"
 ## <a name="run-code-when-a-sharepoint-solution-is-deployed-or-retracted"></a>Exécuter du code quand une solution SharePoint est déployée ou retirée
  Vous pouvez gérer des événements pour exécuter des tâches supplémentaires quand une solution SharePoint est déployée ou retirée. Visual Studio déclenche des événements que vous pouvez gérer dans les scénarios suivants :
 
--   Avant et après l'exécution de chaque étape de déploiement pour un élément de projet SharePoint. Pour plus d'informations, voir [Procédure : Exécuter du code quand l’exécution des étapes de déploiement](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md).
+- Avant et après l'exécution de chaque étape de déploiement pour un élément de projet SharePoint. Pour plus d'informations, voir [Procédure : Exécuter du code quand l’exécution des étapes de déploiement](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md).
 
--   Avant et après le déploiement ou le retrait d'un projet SharePoint. Pour plus d'informations, voir [Procédure : Exécuter du code quand un projet SharePoint est déployé ou retiré](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md).
+- Avant et après le déploiement ou le retrait d'un projet SharePoint. Pour plus d'informations, voir [Procédure : Exécuter du code quand un projet SharePoint est déployé ou retiré](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md).
 
 ## <a name="handle-deployment-conflicts"></a>Gérer les conflits de déploiement
- Certains types d’éléments de projet SharePoint, notamment les modules, les composants WebPart, les instances de listes et les types de contenu, fournissent une résolution intégrée des conflits de déploiement. Quand vous déployez une solution qui contient un de ces éléments de projet, Visual Studio vérifie d'abord si un fichier existe déjà sur le site SharePoint avec le même nom, URL ou ID qu'un fichier dans l'élément que vous déployez. Si un conflit est identifié, Visual Studio peut le résoudre automatiquement, ou il peut vous laisser décider si vous souhaitez une prise en charge de la résolution du conflit par Visual Studio ou l'annulation du déploiement. Pour plus d'informations, consultez [Troubleshooting SharePoint Packaging and Deployment](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).
+ Certains types d'éléments de projet SharePoint, notamment les modules, les composants WebPart, les instances de listes et les types de contenu, fournissent une résolution intégrée des conflits de déploiement. Quand vous déployez une solution qui contient un de ces éléments de projet, Visual Studio vérifie d'abord si un fichier existe déjà sur le site SharePoint avec le même nom, URL ou ID qu'un fichier dans l'élément que vous déployez. Si un conflit est identifié, Visual Studio peut le résoudre automatiquement, ou il peut vous laisser décider si vous souhaitez une prise en charge de la résolution du conflit par Visual Studio ou l'annulation du déploiement. Pour plus d'informations, consultez [Troubleshooting SharePoint Packaging and Deployment](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).
 
  Vous pouvez étendre cette fonctionnalité en fournissant votre propre code qui vérifie et résout les conflits de déploiement. Pour plus d'informations, voir [Procédure : Gérer les conflits de déploiement](../sharepoint/how-to-handle-deployment-conflicts.md).
 

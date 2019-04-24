@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: aa8b91ccdf4aaa5b46f167673007723938fc62ef
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
-ms.translationtype: MTE95
+ms.openlocfilehash: ecbdd8b9f1fb1696986672bb621567944910660f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268780"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041677"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Créer un Windows Form pour rechercher des données
 
@@ -69,25 +69,25 @@ Créer un nouveau **Windows Forms application** projet pour soit C# ou Visual Ba
 
 Cette étape crée une source de données à partir d’une base de données à l’aide de l’**Assistant Configuration de source de données** :
 
-1.  Pour ouvrir le **des Sources de données** fenêtre, dans le **données** menu, cliquez sur **afficher les Sources de données**.
+1. Pour ouvrir le **des Sources de données** fenêtre, dans le **données** menu, cliquez sur **afficher les Sources de données**.
 
-2.  Dans la fenêtre **Sources de données**, sélectionnez **Ajouter une nouvelle source de données** pour démarrer l’Assistant **Configuration de source de données**.
+2. Dans la fenêtre **Sources de données**, sélectionnez **Ajouter une nouvelle source de données** pour démarrer l’Assistant **Configuration de source de données**.
 
-3.  Sélectionnez **Base de données** dans la page **Choisir un type de source de données** , puis cliquez sur **Suivant**.
+3. Sélectionnez **Base de données** dans la page **Choisir un type de source de données** , puis cliquez sur **Suivant**.
 
-4.  Dans la page **Choisir votre connexion de données**, effectuez l’une des opérations suivantes :
+4. Dans la page **Choisir votre connexion de données**, effectuez l’une des opérations suivantes :
 
     - Si une connexion de données à l’exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.
 
     - Sélectionnez **Nouvelle connexion** pour afficher la boîte de dialogue **Ajouter/Modifier la connexion**.
 
-5.  Si votre base de données nécessite un mot de passe, sélectionnez l’option pour inclure les données sensibles, puis cliquez sur **Suivant**.
+5. Si votre base de données nécessite un mot de passe, sélectionnez l’option pour inclure les données sensibles, puis cliquez sur **Suivant**.
 
-6.  Sur le **enregistrer la chaîne de connexion dans le fichier de Configuration de l’Application** , cliquez sur **suivant**.
+6. Sur le **enregistrer la chaîne de connexion dans le fichier de Configuration de l’Application** , cliquez sur **suivant**.
 
-7.  Dans la page **Choisir vos objets de base de données**, développez le nœud **Tables**.
+7. Dans la page **Choisir vos objets de base de données**, développez le nœud **Tables**.
 
-8.  Sélectionnez la table **Customers**, puis cliquez sur **Terminer**.
+8. Sélectionnez la table **Customers**, puis cliquez sur **Terminer**.
 
      **NorthwindDataSet** est ajouté à votre projet et la table **Customers** apparaît dans la fenêtre **Sources de données**.
 
@@ -95,9 +95,9 @@ Cette étape crée une source de données à partir d’une base de données à 
 
 Pour créer des contrôles liés aux données, vous pouvez faire glisser des éléments depuis la fenêtre **Sources de données** vers votre formulaire :
 
-1.  Développez le nœud **Customers** dans la fenêtre **Sources de données**.
+1. Développez le nœud **Customers** dans la fenêtre **Sources de données**.
 
-2.  Faites glisser le nœud **Customers** depuis la fenêtre **Sources de données** vers votre formulaire.
+2. Faites glisser le nœud **Customers** depuis la fenêtre **Sources de données** vers votre formulaire.
 
      Un <xref:System.Windows.Forms.DataGridView> et une barre d'outils (<xref:System.Windows.Forms.BindingNavigator>) pour parcourir les enregistrements apparaissent sur le formulaire. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> et <xref:System.Windows.Forms.BindingNavigator> s’affichent dans la barre d’état des composants.
 
@@ -105,11 +105,11 @@ Pour créer des contrôles liés aux données, vous pouvez faire glisser des él
 
 Vous pouvez ajouter une clause WHERE à la requête d’origine en utilisant le **Générateur de critères de recherche** boîte de dialogue :
 
-1.  Sélectionnez le contrôle <xref:System.Windows.Forms.DataGridView>, puis choisissez **Ajouter une requête** dans le menu **Données**.
+1. Sélectionnez le contrôle <xref:System.Windows.Forms.DataGridView>, puis choisissez **Ajouter une requête** dans le menu **Données**.
 
-2.  Type **FillByCity** dans le **nouveau nom de requête** zone sur le **Générateur de critères de recherche** boîte de dialogue.
+2. Type **FillByCity** dans le **nouveau nom de requête** zone sur le **Générateur de critères de recherche** boîte de dialogue.
 
-3.  Ajoutez `WHERE City = @City` à la requête dans la zone **Texte de la requête**.
+3. Ajoutez `WHERE City = @City` à la requête dans la zone **Texte de la requête**.
 
      La requête doit ressembler à la suivante :
 
@@ -123,7 +123,7 @@ Vous pouvez ajouter une clause WHERE à la requête d’origine en utilisant le 
     > [!NOTE]
     > Les sources de données Access et OleDb utilisent le point d’interrogation (« ? ») pour indiquer les paramètres, par conséquent, la clause WHERE ressemblerait à ceci : `WHERE City = ?`.
 
-4.  Cliquez sur **OK** pour fermer la boîte de dialogue **Générateur de critères de recherche**.
+4. Cliquez sur **OK** pour fermer la boîte de dialogue **Générateur de critères de recherche**.
 
      Un **FillByCityToolStrip** est ajouté au formulaire.
 
@@ -131,9 +131,9 @@ Vous pouvez ajouter une clause WHERE à la requête d’origine en utilisant le 
 
 Exécution de l’application ouvre votre formulaire et le rend prêt à utiliser le paramètre en tant qu’entrée :
 
-1.  Appuyez sur **F5** pour exécuter l’application.
+1. Appuyez sur **F5** pour exécuter l’application.
 
-2.  Tapez **London** dans la zone de texte **City**, puis cliquez sur **FillByCity**.
+2. Tapez **London** dans la zone de texte **City**, puis cliquez sur **FillByCity**.
 
      La grille de données est remplie avec les clients qui répondent aux critères. Dans cet exemple, la grille de données n’affiche que les clients possédant une valeur **London** dans leur colonne **City**.
 

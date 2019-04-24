@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e0290fa7c83b36c19663aef85c0179fb9458ddcf
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 88644f3bf768f1b3467467a31edbd83e8e5f151c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001765"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039875"
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>Procédure : Déboguer avec une Source Code Center Premium
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -78,21 +78,21 @@ Avec le débogueur [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], v
   
 ### <a name="to-debug-your-source-code-using-attach-to-process"></a>Pour déboguer votre code source en utilisant l'option Attacher au processus  
   
-1.  Connectez votre lecteur de carte à puce et insérez la carte que vous avez obtenue via le programme « Shared Source Initiative ».  
+1. Connectez votre lecteur de carte à puce et insérez la carte que vous avez obtenue via le programme « Shared Source Initiative ».  
   
-2.  Lancez Visual Studio.  
+2. Lancez Visual Studio.  
   
-3.  Ouvrez votre projet Visual Studio.  
+3. Ouvrez votre projet Visual Studio.  
   
-4.  Sur le **outils** menu, cliquez sur **attacher au processus**.  
+4. Sur le **outils** menu, cliquez sur **attacher au processus**.  
   
-5.  Dans le **attacher au processus** boîte de dialogue, cliquez sur **sélectionnez**.  
+5. Dans le **attacher au processus** boîte de dialogue, cliquez sur **sélectionnez**.  
   
-6.  Dans le **sélectionner le Type de Code** boîte de dialogue **détecter ces types de codes**, sélectionnez **natif**, **managé**, et **gérés () v4.0)**.  
+6. Dans le **sélectionner le Type de Code** boîte de dialogue **détecter ces types de codes**, sélectionnez **natif**, **managé**, et **gérés () v4.0)**.  
   
-7.  Cliquez sur **OK** pour faire disparaître le **sélectionner le Type de Code** boîte de dialogue.  
+7. Cliquez sur **OK** pour faire disparaître le **sélectionner le Type de Code** boîte de dialogue.  
   
-8.  Dans le **processus disponibles** , sélectionnez le processus que vous souhaitez déboguer.  
+8. Dans le **processus disponibles** , sélectionnez le processus que vous souhaitez déboguer.  
   
 9. Cliquez sur **Attacher**.  
   
@@ -117,27 +117,27 @@ Avec le débogueur [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], v
   
 4. Pour chaque projet managé dans votre solution, procédez comme suit :  
   
-   1.  Dans l’Explorateur de solutions, ouvrez le menu contextuel du projet, puis choisissez **propriétés**.  
+   1. Dans l’Explorateur de solutions, ouvrez le menu contextuel du projet, puis choisissez **propriétés**.  
   
-   2.  Sélectionnez **déboguer** , puis **activer le débogage de code non managé**.  
+   2. Sélectionnez **déboguer** , puis **activer le débogage de code non managé**.  
   
 ### <a name="to-debug-your-solution-with-code-center-premium-source"></a>Pour déboguer votre solution avec une source Code Center Premium  
   
-1.  Dans votre classe `Package`, définissez un point d'arrêt dans le constructeur du package.  
+1. Dans votre classe `Package`, définissez un point d'arrêt dans le constructeur du package.  
   
-2.  Dans le `Debug` menu, cliquez sur **démarrer le débogage**.  
+2. Dans le `Debug` menu, cliquez sur **démarrer le débogage**.  
   
-3.  Lorsque vous atteignez le point d’arrêt dans le constructeur du package, accédez à la **pile des appels** fenêtre et avec le bouton droit du frame de pile de l’assembly à charger les symboles à partir, puis cliquez sur **charger les symboles**.  
+3. Lorsque vous atteignez le point d’arrêt dans le constructeur du package, accédez à la **pile des appels** fenêtre et avec le bouton droit du frame de pile de l’assembly à charger les symboles à partir, puis cliquez sur **charger les symboles**.  
   
      Double-cliquez sur le frame d'appel pour charger la source.  
   
 ### <a name="to-browse-source-code-on-code-center-premium"></a>Pour parcourir le code source sur Code Center Premium  
   
-1.  Connectez votre lecteur de carte à puce et insérez la carte que vous avez obtenue via le programme « Shared Source Initiative ».  
+1. Connectez votre lecteur de carte à puce et insérez la carte que vous avez obtenue via le programme « Shared Source Initiative ».  
   
-2.  Lancez Internet Explorer et entrez l'URL suivante : `https://codepremium.msdn.microsoft.com`  
+2. Lancez Internet Explorer et entrez l'URL suivante : `https://codepremium.msdn.microsoft.com`  
   
-3.  Recherchez la source souhaitée.  
+3. Recherchez la source souhaitée.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md)   

@@ -9,19 +9,19 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d4a93dfca4681f93d0d2a5c45b189fd34c8dccca
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 676ea11188b7b55f3e929280d2b1c67166e37fdc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782247"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067246"
 ---
-# <a name="step-3-set-your-form-properties"></a>Étape 3 : définir les propriétés de votre formulaire
+# <a name="step-3-set-your-form-properties"></a>Étape 3 : Définir les propriétés de votre formulaire
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ensuite, vous utilisez la fenêtre **Propriétés** pour changer l’apparence de votre formulaire.  
   
- ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo")pour obtenir une version vidéo de cette rubrique, consultez [didacticiel 1 : créer une visionneuse d’images en Visual Basic – vidéo 1](http://go.microsoft.com/fwlink/?LinkId=205209) ou [didacticiel 1 : créer une visionneuse d’images dans C# -Vidéo 1](http://go.microsoft.com/fwlink/?LinkId=205199). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.  
+ ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo")pour obtenir une version vidéo de cette rubrique, consultez [didacticiel 1 : Créer une visionneuse d’images en Visual Basic – vidéo 1](http://go.microsoft.com/fwlink/?LinkId=205209) ou [didacticiel 1 : Créer une visionneuse d’images dans C# -vidéo 1](http://go.microsoft.com/fwlink/?LinkId=205199). Ces vidéos utilisent une version antérieure de Visual Studio et présentent donc de légères différences quant à certaines commandes de menu et autres éléments d’interface utilisateur. Toutefois, les concepts et les procédures fonctionnent de façon similaire dans la version actuelle de Visual Studio.  
   
 ### <a name="to-set-your-form-properties"></a>Pour définir les propriétés de votre formulaire  
   
@@ -64,14 +64,14 @@ Ensuite, vous utilisez la fenêtre **Propriétés** pour changer l’apparence d
   
 7. Avant de passer à l'étape suivante, arrêtez votre programme, car l'IDE ne vous autorisera pas à le modifier tant qu'il est en cours d'exécution. Gardez à l'esprit que vous pouvez utiliser n'importe laquelle des méthodes suivantes pour arrêter votre programme.  
   
-   -   Dans la barre d’outils, choisissez le bouton **Arrêter le débogage**.  
+   - Dans la barre d’outils, choisissez le bouton **Arrêter le débogage**.  
   
-   -   Dans la barre de menus, choisissez **Débogage**, **Arrêter le débogage**.  
+   - Dans la barre de menus, choisissez **Débogage**, **Arrêter le débogage**.  
   
-   -   Dans l’angle supérieur de la fenêtre **Form1**, choisissez le bouton X.  
+   - Dans l’angle supérieur de la fenêtre **Form1**, choisissez le bouton X.  
   
 ### <a name="to-continue-or-review"></a>Pour continuer ou examiner  
   
--   Pour accéder à l’étape suivante du didacticiel, consultez [Étape 4 : Composer votre formulaire avec un contrôle TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).  
+- Pour passer à l’étape suivante du tutoriel, consultez [Étape 4 : Composer votre formulaire avec un contrôle TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).  
   
--   Pour revenir à l’étape précédente du didacticiel, consultez [Étape 2 : Exécuter votre programme](../ide/step-2-run-your-program.md).
+- Pour revenir à l’étape précédente du tutoriel, consultez [Étape 2 : Exécutez votre programme](../ide/step-2-run-your-program.md).

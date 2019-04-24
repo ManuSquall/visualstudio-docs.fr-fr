@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 12d85a05e8210e292369f4c3a97fbb85dc48d821
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f272f1b7a8fc970ab616ba1c02e815cbb6ecb568
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949648"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059134"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>Procédure : Spécifiez une URL de prise en charge pour chaque composant requis dans un déploiement ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ Un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] déploiement peut test
   
 ### <a name="specifying-a-support-url-for-an-individual-prerequisite"></a>Spécification d’une URL de prise en charge pour un composant requis  
   
-1.  Ouvrez le manifeste d’application (le fichier .manifest) pour votre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application dans un éditeur de texte.  
+1. Ouvrez le manifeste d’application (le fichier .manifest) pour votre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application dans un éditeur de texte.  
   
-2.  Pour un composant requis du système d’exploitation, ajoutez le `supportUrl` attribut le `dependentOS` élément :  
+2. Pour un composant requis du système d’exploitation, ajoutez le `supportUrl` attribut le `dependentOS` élément :  
   
     ```  
      <dependency>  
@@ -48,7 +48,7 @@ Un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] déploiement peut test
       </dependency>  
     ```  
   
-3.  Pour une condition préalable pour une version spécifique du common language runtime, ajoutez le `supportUrl` attribut le `dependentAssembly` entrée qui spécifie la dépendance du common language runtime :  
+3. Pour une condition préalable pour une version spécifique du common language runtime, ajoutez le `supportUrl` attribut le `dependentAssembly` entrée qui spécifie la dépendance du common language runtime :  
   
     ```  
       <dependency>  
@@ -58,7 +58,7 @@ Un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] déploiement peut test
       </dependency>  
     ```  
   
-4.  Pour un composant requis pour un assembly qui doit être préinstallé dans le global assembly cache, définissez le `supportUrl` pour le `dependentAssembly` élément qui spécifie l’assembly requis :  
+4. Pour un composant requis pour un assembly qui doit être préinstallé dans le global assembly cache, définissez le `supportUrl` pour le `dependentAssembly` élément qui spécifie l’assembly requis :  
   
     ```  
       <dependency>  
@@ -68,9 +68,9 @@ Un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] déploiement peut test
       </dependency>  
     ```  
   
-5.  Facultatif. Pour les applications qui ciblent le .NET Framework 4, ouvrez le manifeste de déploiement (le fichier .application) pour votre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application dans un éditeur de texte.  
+5. Optionnel. Pour les applications qui ciblent le .NET Framework 4, ouvrez le manifeste de déploiement (le fichier .application) pour votre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application dans un éditeur de texte.  
   
-6.  Pour une condition préalable de .NET Framework 4, ajoutez le `supportUrl` attribut le `compatibleFrameworks` élément :  
+6. Pour une condition préalable de .NET Framework 4, ajoutez le `supportUrl` attribut le `compatibleFrameworks` élément :  
   
     ```  
     <compatibleFrameworks  xmlns="urn:schemas-microsoft-com:clickonce.v2" supportUrl="http://adatum.com/MyApplication/CompatibleFrameworks.htm">  
@@ -79,7 +79,7 @@ Un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] déploiement peut test
     </compatibleFrameworks>  
     ```  
   
-7.  Une fois que vous avez modifié manuellement le manifeste d’application, vous devez signer à nouveau le manifeste d’application à l’aide de votre certificat numérique, puis mettre à jour et signer à nouveau le manifeste de déploiement. Vous devez utiliser Mage.exe ou MageUI.exe SDK pour accomplir cette tâche, comme la régénération de ces fichiers à l’aide des outils [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] efface vos modifications manuelles. Pour plus d’informations sur l’utilisation de Mage.exe pour resigner des manifestes, consultez [Comment : Signer à nouveau les manifestes de déploiement et d’Application](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+7. Une fois que vous avez modifié manuellement le manifeste d’application, vous devez signer à nouveau le manifeste d’application à l’aide de votre certificat numérique, puis mettre à jour et signer à nouveau le manifeste de déploiement. Vous devez utiliser Mage.exe ou MageUI.exe SDK pour accomplir cette tâche, comme la régénération de ces fichiers à l’aide des outils [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] efface vos modifications manuelles. Pour plus d’informations sur l’utilisation de Mage.exe pour resigner des manifestes, consultez [Comment : Signer à nouveau les manifestes de déploiement et d’Application](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## <a name="net-framework-security"></a>Sécurité .NET Framework  
  L’URL du support technique ne figure pas dans la boîte de dialogue si l’application est marquée pour s’exécuter en mode de confiance partielle.  

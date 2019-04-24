@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e6fa51b39cf6b4cf7917d560469eac06d43fee2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9bdc3dd946f6ab19f916f4ac536ba05a45fe9226
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637774"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114975"
 ---
 # <a name="selection-context-objects"></a>Objets de contexte de sélection
 Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE) utilise un objet de contexte de sélection globale pour déterminer ce qui doit être affiché dans l’IDE. Chaque fenêtre dans l’IDE peut avoir son propre objet de contexte de sélection vers le contexte de la sélection globale. L’IDE met à jour le contexte de sélection global avec des valeurs à partir d’une fenêtre lorsque cette fenêtre a le focus. Pour plus d’informations, consultez [vos commentaires à l’utilisateur](../../extensibility/internals/feedback-to-the-user.md).
@@ -33,11 +33,11 @@ Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l’environnemen
 
   La séquence suivante montre le cours typique de suivi de sélection.
 
-1.  L’IDE récupère le contexte de sélection à partir de la fenêtre qui vient d’être ouverte et le place dans le contexte de la sélection globale. Si le contexte de sélection utilise HIERARCHY_DONTPROPAGATE ou SELCONTAINER_DONTPROPAGATE, ces informations ne sont pas propagées vers le contexte global. Pour plus d’informations, consultez [vos commentaires à l’utilisateur](../../extensibility/internals/feedback-to-the-user.md).
+1. L’IDE récupère le contexte de sélection à partir de la fenêtre qui vient d’être ouverte et le place dans le contexte de la sélection globale. Si le contexte de sélection utilise HIERARCHY_DONTPROPAGATE ou SELCONTAINER_DONTPROPAGATE, ces informations ne sont pas propagées vers le contexte global. Pour plus d’informations, consultez [vos commentaires à l’utilisateur](../../extensibility/internals/feedback-to-the-user.md).
 
-2.  Événements de notification sont diffusés à n’importe quel package Visual Studio qui les demande.
+2. Événements de notification sont diffusés à n’importe quel package Visual Studio qui les demande.
 
-3.  Le VSPackage agit sur les événements qu’il reçoit en effectuant des activités telles que la mise à jour d’une hiérarchie, la réactivation d’un outil ou autres tâches similaires.
+3. Le VSPackage agit sur les événements qu’il reçoit en effectuant des activités telles que la mise à jour d’une hiérarchie, la réactivation d’un outil ou autres tâches similaires.
 
 ## <a name="see-also"></a>Voir aussi
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>

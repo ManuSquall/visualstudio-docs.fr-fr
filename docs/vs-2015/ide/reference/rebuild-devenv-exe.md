@@ -15,17 +15,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 027612d7ce4ee2ec933897b05f33f03e8a6df992
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 72818a3bdb4f983326c95b10cfe4e6af4445cc2f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54788812"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037944"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Nettoie, puis génère la configuration de solution spécifiée.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -49,11 +48,11 @@ devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig 
   
 ## <a name="remarks"></a>Remarques  
   
--   Ce commutateur exécute la même fonction que la commande de menu **Regénérer la solution** dans l’environnement de développement intégré (IDE).  
+- Ce commutateur exécute la même fonction que la commande de menu **Regénérer la solution** dans l’environnement de développement intégré (IDE).  
   
--   Placez entre guillemets doubles les chaînes contenant des espaces.  
+- Placez entre guillemets doubles les chaînes contenant des espaces.  
   
--   Les informations résumées pour les nettoyages et les builds, notamment les erreurs, peuvent être affichées dans la fenêtre **Commande**, ou dans tout fichier journal spécifié avec le commutateur `/out`.  
+- Les informations résumées pour les nettoyages et les builds, notamment les erreurs, peuvent être affichées dans la fenêtre **Commande**, ou dans tout fichier journal spécifié avec le commutateur `/out`.  
   
 ## <a name="example"></a>Exemple  
  Cet exemple nettoie et regénère le projet `CSharpWinApp` en utilisant la configuration de build de projet `Debug` présente dans la configuration de solution `Debug` de `MySolution`.  

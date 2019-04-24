@@ -8,12 +8,12 @@ ms.assetid: d1ac9188-d79f-407e-9f3a-80dbefa66317
 caps.latest.revision: 10
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4315e4008c3a4f14e8d9124da5d7ff83c8275a65
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 02b33bfbb0e7de3007de9e36691fa1524f69b21b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796926"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117796"
 ---
 # <a name="using-microsoftvisualstudiotesttoolscppunittestframework"></a>Utilisation de Microsoft.VisualStudio.TestTools.CppUnitTestFramework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,18 +24,18 @@ Cette rubrique liste les membres publics de l’espace de noms `Microsoft::Visua
   
  Les fichiers lib se trouvent dans le dossier _VisualStudio2012[x86]InstallFolder_**\VC\UnitTest\lib**.  
   
-##  <a name="BKMK_In_this_topic"></a> Dans cette rubrique  
+## <a name="BKMK_In_this_topic"></a> Dans cette rubrique  
  [CppUnitTest.h](#BKMK_CppUnitTest_h)  
   
 - [Créer des classes et des méthodes de test](#BKMK_Create_test_classes_and_methods)  
   
 - [Initialiser et nettoyer](#BKMK_Initialize_and_cleanup)  
   
-  -   [Méthodes de test](#BKMK_Test_methods)  
+  - [Méthodes de test](#BKMK_Test_methods)  
   
-  -   [Classes de test](#BKMK_Test_classes)  
+  - [Classes de test](#BKMK_Test_classes)  
   
-  -   [Modules de test](#BKMK_Test_modules)  
+  - [Modules de test](#BKMK_Test_modules)  
   
 - [Créer des attributs de test](#BKMK_Create_test_attributes)  
   
@@ -51,37 +51,37 @@ Cette rubrique liste les membres publics de l’espace de noms `Microsoft::Visua
   
   - [Assertions générales](#BKMK_General_Asserts)  
   
-    -   [Sont égaux](#BKMK_General_Are_Equal)  
+    - [Sont égaux](#BKMK_General_Are_Equal)  
   
-    -   [Ne sont pas égaux](#BKMK_General_Are_Not_Equal)  
+    - [Ne sont pas égaux](#BKMK_General_Are_Not_Equal)  
   
-    -   [Sont identiques](#BKMK_General_Are_Same)  
+    - [Sont identiques](#BKMK_General_Are_Same)  
   
-    -   [Ne sont pas identiques](#BKMK_General_Are_Not_Same)  
+    - [Ne sont pas identiques](#BKMK_General_Are_Not_Same)  
   
-    -   [A une valeur Null](#BKMK_General_Is_Null)  
+    - [A une valeur Null](#BKMK_General_Is_Null)  
   
-    -   [N’a pas une valeur Null](#BKMK_General_Is_Not_Null)  
+    - [N’a pas une valeur Null](#BKMK_General_Is_Not_Null)  
   
-    -   [Est vrai](#BKMK_General_Is_True)  
+    - [Est vrai](#BKMK_General_Is_True)  
   
-    -   [Est faux](#BKMK_General_Is_False)  
+    - [Est faux](#BKMK_General_Is_False)  
   
-    -   [Échec](#BKMK_General_Fail)  
+    - [Échec](#BKMK_General_Fail)  
   
   - [Assertions Windows Runtime](#BKMK_WinRT_Asserts)  
   
-    -   [Sont égaux](#BKMK_WinRT_Are_Equal)  
+    - [Sont égaux](#BKMK_WinRT_Are_Equal)  
   
-    -   [Sont identiques](#BKMK_WinRT_Are_Same)  
+    - [Sont identiques](#BKMK_WinRT_Are_Same)  
   
-    -   [Ne sont pas égaux](#BKMK_WinRT_Are_Not_Equal)  
+    - [Ne sont pas égaux](#BKMK_WinRT_Are_Not_Equal)  
   
-    -   [Ne sont pas identiques](#BKMK_WinRT_Are_Not_Same)  
+    - [Ne sont pas identiques](#BKMK_WinRT_Are_Not_Same)  
   
-    -   [A une valeur Null](#BKMK_WinRT_Is_Null)  
+    - [A une valeur Null](#BKMK_WinRT_Is_Null)  
   
-    -   [N’a pas une valeur Null](#BKMK_WinRT_Is_Not_Null)  
+    - [N’a pas une valeur Null](#BKMK_WinRT_Is_Not_Null)  
   
   - [Assertions d’exception](#BKMK_Exception_Asserts)  
   
@@ -93,9 +93,9 @@ Cette rubrique liste les membres publics de l’espace de noms `Microsoft::Visua
   
     - [Écrire un message](#BKMK_Write_Message)  
   
-##  <a name="BKMK_CppUnitTest_h"></a> CppUnitTest.h  
+## <a name="BKMK_CppUnitTest_h"></a> CppUnitTest.h  
   
-###  <a name="BKMK_Create_test_classes_and_methods"></a> Créer des classes et des méthodes de test  
+### <a name="BKMK_Create_test_classes_and_methods"></a> Créer des classes et des méthodes de test  
   
 ```cpp  
 TEST_CLASS(className)  
@@ -113,9 +113,9 @@ TEST_METHOD(methodName)
   
  Définit *methodName* en tant que méthode de test. `TEST_METHOD` doit être déclaré dans la portée de la classe de la méthode.  
   
-###  <a name="BKMK_Initialize_and_cleanup"></a> Initialiser et nettoyer  
+### <a name="BKMK_Initialize_and_cleanup"></a> Initialiser et nettoyer  
   
-####  <a name="BKMK_Test_methods"></a> Méthodes de test  
+#### <a name="BKMK_Test_methods"></a> Méthodes de test  
   
 ```cpp  
 TEST_METHOD_INITIALIZE(methodName)   
@@ -137,7 +137,7 @@ TEST_METHOD_CLEANUP(methodName)
   
  Définit *methodName* en tant que méthode qui s’exécute après l’exécution de chaque méthode de test. `TEST_METHOD_CLEANUP` ne peut être défini qu’une seule fois dans une classe de test et doit être défini dans la portée de la classe de test.  
   
-####  <a name="BKMK_Test_classes"></a> Classes de test  
+#### <a name="BKMK_Test_classes"></a> Classes de test  
   
 ```cpp  
 TEST_CLASS_INITIALIZE(methodName)   
@@ -159,7 +159,7 @@ TEST_CLASS_CLEANUP(methodName)
   
  Définit *methodName* en tant que méthode qui s’exécute après la création de chaque classe de test. `TEST_CLASS_CLEANUP` ne peut être défini qu’une seule fois dans une classe de test et doit être défini dans la portée de la classe de test.  
   
-####  <a name="BKMK_Test_modules"></a> Modules de test  
+#### <a name="BKMK_Test_modules"></a> Modules de test  
   
 ```cpp  
 TEST_MODULE_INITIALIZE(methodName)  
@@ -176,9 +176,9 @@ TEST_MODULE_CLEANUP(methodName)
   
  Définit la méthode *methodName* qui s’exécute au moment du déchargement d’un module. `TEST_MODULE_CLEANUP` ne peut être défini qu’une seule fois dans un module de test et doit être déclaré dans la portée de l’espace de noms.  
   
-###  <a name="BKMK_Create_test_attributes"></a> Créer des attributs de test  
+### <a name="BKMK_Create_test_attributes"></a> Créer des attributs de test  
   
-####  <a name="BKMK_Test_method_attributes"></a> Attributs de méthode de test  
+#### <a name="BKMK_Test_method_attributes"></a> Attributs de méthode de test  
   
 ```cpp  
 BEGIN_TEST_METHOD_ATTRIBUTE(testMethodName)   
@@ -191,7 +191,7 @@ END_TEST_METHOD_ATTRIBUTE()
   
  Une macro `TEST_METHOD_ATTRIBUTE` définit un attribut avec le nom *attributeName* et la valeur *attributeValue*.  
   
-####  <a name="BKMK_Test_class_attributes"></a> Attributs de classe de test  
+#### <a name="BKMK_Test_class_attributes"></a> Attributs de classe de test  
   
 ```cpp  
 BEGIN_TEST_CLASS_ATTRIBUTE(testClassName)   
@@ -204,7 +204,7 @@ END_TEST_CLASS_ATTRIBUTE()
   
  Une macro `TEST_CLASS_ATTRIBUTE` définit un attribut avec le nom *attributeName* et la valeur *attributeValue*.  
   
-####  <a name="BKMK_Test_module_attributes"></a> Attributs de module de test  
+#### <a name="BKMK_Test_module_attributes"></a> Attributs de module de test  
   
 ```cpp  
 BEGIN_TEST_MODULE_ATTRIBUTE(testModuleName)   
@@ -217,7 +217,7 @@ END_TEST_MODULE_ATTRIBUTE()
   
  Une macro `TEST_MODULE_ATTRIBUTE` définit un attribut avec le nom *attributeName* et la valeur *attributeValue*.  
   
-####  <a name="BKMK_Pre_defined_attributes"></a> Attributs prédéfinis  
+#### <a name="BKMK_Pre_defined_attributes"></a> Attributs prédéfinis  
  Ces macros d’attributs prédéfinis peuvent être remplacées par les macros `TEST_METHOD_ATTRIBUTE`, `TEST_CLASS_ATTRIBUTE` ou `TEST_MODULE_ATTRIBUTE` décrites ci-dessus.  
   
 ```cpp  
@@ -250,11 +250,11 @@ TEST_IGNORE()
   
  Définit un attribut avec le nom `Ignore` et la valeur d’attribut `true`.  
   
-##  <a name="BKMK_CppUnitTestAssert_h"></a> CppUnitTestAssert.h  
+## <a name="BKMK_CppUnitTestAssert_h"></a> CppUnitTestAssert.h  
   
-###  <a name="BKMK_General_Asserts"></a> Assertions générales  
+### <a name="BKMK_General_Asserts"></a> Assertions générales  
   
-####  <a name="BKMK_General_Are_Equal"></a> Sont égaux  
+#### <a name="BKMK_General_Are_Equal"></a> Sont égaux  
  Vérifie que deux objets sont égaux  
   
 ```cpp  
@@ -310,7 +310,7 @@ static void AreEqual(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Are_Not_Equal"></a> Ne sont pas égaux  
+#### <a name="BKMK_General_Are_Not_Equal"></a> Ne sont pas égaux  
  Vérifie que deux valeurs double ne sont pas égales  
   
 ```cpp  
@@ -366,7 +366,7 @@ static void AreNotEqual(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Are_Same"></a> Sont identiques  
+#### <a name="BKMK_General_Are_Same"></a> Sont identiques  
  Vérifie que deux références référencent la même instance d’objet (identité).  
   
 ```cpp  
@@ -378,7 +378,7 @@ static void AreSame(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Are_Not_Same"></a> Ne sont pas identiques  
+#### <a name="BKMK_General_Are_Not_Same"></a> Ne sont pas identiques  
  Vérifie que deux références ne référencent pas la même instance d’objet (identité).  
   
 ```cpp  
@@ -390,7 +390,7 @@ static void AreNotSame (
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Is_Null"></a> A une valeur Null  
+#### <a name="BKMK_General_Is_Null"></a> A une valeur Null  
  Vérifie qu’un pointeur a une valeur NULL.  
   
 ```cpp  
@@ -401,7 +401,7 @@ static void IsNull(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Is_Not_Null"></a> N’a pas une valeur Null  
+#### <a name="BKMK_General_Is_Not_Null"></a> N’a pas une valeur Null  
  Vérifie qu’un pointeur n’a pas une valeur NULL  
   
 ```cpp  
@@ -412,7 +412,7 @@ static void IsNotNull(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Is_True"></a> Est vrai  
+#### <a name="BKMK_General_Is_True"></a> Est vrai  
  Vérifie qu’une condition est vraie  
   
 ```cpp  
@@ -422,7 +422,7 @@ static void IsTrue(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Is_False"></a> Est faux  
+#### <a name="BKMK_General_Is_False"></a> Est faux  
  Vérifie qu’une condition est fausse  
   
 ```cpp  
@@ -432,7 +432,7 @@ static void IsFalse(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-####  <a name="BKMK_General_Fail"></a> Échec  
+#### <a name="BKMK_General_Fail"></a> Échec  
  Force l’échec du résultat du cas de test  
   
 ```cpp  
@@ -441,9 +441,9 @@ static void Fail(
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-###  <a name="BKMK_WinRT_Asserts"></a> Assertions Windows Runtime  
+### <a name="BKMK_WinRT_Asserts"></a> Assertions Windows Runtime  
   
-####  <a name="BKMK_WinRT_Are_Equal"></a> Sont égaux  
+#### <a name="BKMK_WinRT_Are_Equal"></a> Sont égaux  
  Vérifie que deux pointeurs Windows Runtime sont égaux.  
   
 ```  
@@ -466,7 +466,7 @@ static void AreEqual(
     const __LineInfo* pLineInfo= nullptr)  
 ```  
   
-####  <a name="BKMK_WinRT_Are_Same"></a> Sont identiques  
+#### <a name="BKMK_WinRT_Are_Same"></a> Sont identiques  
  Vérifie que deux références Windows Runtime référencent le même objet.  
   
 ```  
@@ -478,7 +478,7 @@ static void AreSame(
     const __LineInfo* pLineInfo= nullptr)  
 ```  
   
-####  <a name="BKMK_WinRT_Are_Not_Equal"></a> Ne sont pas égaux  
+#### <a name="BKMK_WinRT_Are_Not_Equal"></a> Ne sont pas égaux  
  Vérifie que deux pointeurs Windows Runtime ne sont pas égaux.  
   
 ```  
@@ -501,7 +501,7 @@ static void AreNotEqual(
     const __LineInfo* pLineInfo= nullptr)  
 ```  
   
-####  <a name="BKMK_WinRT_Are_Not_Same"></a> Ne sont pas identiques  
+#### <a name="BKMK_WinRT_Are_Not_Same"></a> Ne sont pas identiques  
  Vérifie que deux références Windows Runtime ne référencent pas le même objet.  
   
 ```  
@@ -513,7 +513,7 @@ static void AreNotSame(
     const __LineInfo* pLineInfo= nullptr)  
 ```  
   
-####  <a name="BKMK_WinRT_Is_Null"></a> A une valeur Null  
+#### <a name="BKMK_WinRT_Is_Null"></a> A une valeur Null  
  Vérifie qu’un pointeur Windows Runtime est nullptr.  
   
 ```  
@@ -524,7 +524,7 @@ static void IsNull(
     const __LineInfo* pLineInfo= nullptr)  
 ```  
   
-####  <a name="BKMK_WinRT_Is_Not_Null"></a> N’a pas une valeur Null  
+#### <a name="BKMK_WinRT_Is_Not_Null"></a> N’a pas une valeur Null  
  Vérifie qu’un pointeur Windows Runtime n’est pas nullptr.  
   
 ```  
@@ -535,9 +535,9 @@ static void IsNotNull(
     const __LineInfo* pLineInfo= nullptr)  
 ```  
   
-###  <a name="BKMK_Exception_Asserts"></a> Assertions d’exception  
+### <a name="BKMK_Exception_Asserts"></a> Assertions d’exception  
   
-####  <a name="BKMK_Expect_Exception"></a> S’attendre à une exception  
+#### <a name="BKMK_Expect_Exception"></a> S’attendre à une exception  
  Vérifie qu’une fonction lève une exception :  
   
 ```  
@@ -558,16 +558,16 @@ template<typename _EXPECTEDEXCEPTION, typename _RETURNTYPE>
     const __LineInfo* pLineInfo = NULL)  
 ```  
   
-##  <a name="BKMK_CppUnitTestLogger_h"></a> CppUnitTestLogger.h  
+## <a name="BKMK_CppUnitTestLogger_h"></a> CppUnitTestLogger.h  
   
-###  <a name="BKMK_Logger"></a> Enregistreur d’événements  
+### <a name="BKMK_Logger"></a> Enregistreur d’événements  
  La classe de journalisation contient des méthodes statiques où écrire  
   
 ```  
 class Logger  
 ```  
   
-###  <a name="BKMK_Write_Message"></a> Écrire un message  
+### <a name="BKMK_Write_Message"></a> Écrire un message  
   
 ```  
 static void   

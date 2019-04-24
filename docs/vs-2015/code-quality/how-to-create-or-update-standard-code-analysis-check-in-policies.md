@@ -13,12 +13,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: caaf9026d949b2e1327e7d88507f27392bf07283
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 766ecde2da88c2a666470c790f6399cce198b2a7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58949621"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053154"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Procédure : Créer ou mettre à jour des stratégies d’archivage d’analyse du code standard
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,19 +38,19 @@ Vous pouvez exiger que l’analyse de code est exécutée sur tous les projets d
   
 ### <a name="to-open-the-check-in-policy-editor"></a>Pour ouvrir l’éditeur de stratégie d’archivage  
   
-1.  Dans Team Explorer, le nom de projet d’équipe avec le bouton droit, pointez sur **paramètres du projet d’équipe**, puis cliquez sur **contrôle de code Source**.  
+1. Dans Team Explorer, le nom de projet d’équipe avec le bouton droit, pointez sur **paramètres du projet d’équipe**, puis cliquez sur **contrôle de code Source**.  
   
-2.  Dans le **contrôle de code Source** boîte de dialogue, sélectionnez le **stratégie d’archivage** onglet.  
+2. Dans le **contrôle de code Source** boîte de dialogue, sélectionnez le **stratégie d’archivage** onglet.  
   
-3.  Effectuez l’une des opérations suivantes :  
+3. Effectuez l’une des opérations suivantes :  
   
-    -   Cliquez sur **ajouter** pour créer une nouvelle stratégie d’archivage.  
+    - Cliquez sur **ajouter** pour créer une nouvelle stratégie d’archivage.  
   
-    -   Double-cliquez sur existant **analyse du Code** d’élément dans le **Type de stratégie** liste pour modifier la stratégie.  
+    - Double-cliquez sur existant **analyse du Code** d’élément dans le **Type de stratégie** liste pour modifier la stratégie.  
   
 ### <a name="to-set-policy-options"></a>Pour définir les options de stratégie  
   
--   Activez ou désactivez les options suivantes :  
+- Activez ou désactivez les options suivantes :  
   
     |Option|Description|  
     |------------|-----------------|  
@@ -58,19 +58,19 @@ Vous pouvez exiger que l’analyse de code est exécutée sur tous les projets d
     |**Appliquer l’analyse du Code C/C++ (/analyze)**|Requiert que tous les projets C ou C++ générés avec le / analyze exécuter l’analyse du code avant de pouvoir être archivées l’option du compilateur.|  
     |**Appliquer l’analyse du Code pour le Code managé**|Requiert que tous les projets managés exécuter l’analyse du code et générer avant de pouvoir être archivées.|  
   
--  
+- 
   
 ### <a name="to-specify-a-managed-rule-set"></a>Pour spécifier un ensemble de règles managé  
   
--   À partir de la **exécuter cet ensemble de règles** liste, utilisez une des méthodes suivantes :  
+- À partir de la **exécuter cet ensemble de règles** liste, utilisez une des méthodes suivantes :  
   
-    -   Sélectionnez un ensemble de règles standard de Microsoft.  
+    - Sélectionnez un ensemble de règles standard de Microsoft.  
   
-    -   Pour sélectionner un ensemble de règles personnalisé, cliquez sur  **\<sélectionner l’ensemble de règle de contrôle de code Source... >**, puis tapez le chemin d’accès du contrôle de version de l’ensemble de règles dans l’Explorateur de contrôle source. La syntaxe d’un chemin d’accès du contrôle de version est :  
+    - Pour sélectionner un ensemble de règles personnalisé, cliquez sur  **\<sélectionner l’ensemble de règle de contrôle de code Source... >**, puis tapez le chemin d’accès du contrôle de version de l’ensemble de règles dans l’Explorateur de contrôle source. La syntaxe d’un chemin d’accès du contrôle de version est :  
   
-    -   **$/** `TeamProjectName` **/** `VersionControlPath`  
+    - **$/** `TeamProjectName` **/** `VersionControlPath`  
   
-    -   Pour plus d’informations sur la façon de créer et implémenter une règle de stratégie d’archivage personnalisées, consultez [implémentation de vérification des stratégies personnalisées pour le Code managé](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).  
+    - Pour plus d’informations sur la façon de créer et implémenter une règle de stratégie d’archivage personnalisées, consultez [implémentation de vérification des stratégies personnalisées pour le Code managé](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Création et utilisation de stratégies d’archivage de l’analyse du code](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

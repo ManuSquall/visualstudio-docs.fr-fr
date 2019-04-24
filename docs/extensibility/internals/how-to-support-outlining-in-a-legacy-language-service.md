@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe56b66574c535f51504e54b57db7d1659c4b1dc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 85aea5bfa6ccdf5f3753a1397729671249961152
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597307"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060590"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Procédure : Prend en charge le mode plan dans un service de langage hérité
 Le mode plan est utilisé pour développer ou réduire des différentes régions du texte. Le moyen le mode plan est utilisé peut être défini différemment par différents langages. Pour plus d’informations, voir [Mode Plan](../../ide/outlining.md).
@@ -31,9 +31,9 @@ Le mode plan est utilisé pour développer ou réduire des différentes régions
 
 ## <a name="to-support-outlining"></a>Pour prendre en charge le mode plan
 
-1.  Implémentez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage> sur votre objet de service de langage.
+1. Implémentez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage> sur votre objet de service de langage.
 
-2.  Appeler <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> sur l’objet de session en mode plan actuel pour ajouter de nouvelles régions en mode plan.
+2. Appeler <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> sur l’objet de session en mode plan actuel pour ajouter de nouvelles régions en mode plan.
 
 ## <a name="robust-programming"></a>Programmation fiable
  Lorsqu’un utilisateur sélectionne **réduire aux définitions** sur le **mode plan** menu, les appels IDE <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage.CollapseToDefinitions%2A> sur votre service de langage.

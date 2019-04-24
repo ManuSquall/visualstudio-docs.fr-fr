@@ -16,17 +16,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 767bb04bcfe14c8cafbe69e5cb19ecbd8082ee40
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 612b6cf34b345381c211f40cd66f7c69dda9dafa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54770637"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084945"
 ---
 # <a name="options-text-editor-cc-formatting"></a>Options, Éditeur de texte, C/C++, Mise en forme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Vous permet de modifier le comportement par défaut de l'Éditeur de code lorsque vous programmez en C ou C++.  
   
  Pour accéder à cette page, dans la boîte de dialogue **Options**, dans le volet gauche, développez **Éditeur de texte**, développez **C/C++**, puis cliquez sur **Mise en forme**.  
@@ -72,11 +71,11 @@ Vous permet de modifier le comportement par défaut de l'Éditeur de code lorsqu
  **Mode Plan automatique des blocs d’instruction**  
  Lorsque cette option est sélectionnée, le mode Plan automatique est activé pour les constructions d'instruction suivantes :  
   
--   [if-else](http://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2)  
+- [if-else](http://msdn.microsoft.com/library/d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2)  
   
--   [switch, instruction (C++)](http://msdn.microsoft.com/library/6c3f3ed3-5593-463c-8f4b-b33742b455c6)  
+- [switch, instruction (C++)](http://msdn.microsoft.com/library/6c3f3ed3-5593-463c-8f4b-b33742b455c6)  
   
--   [while, instruction (C++)](http://msdn.microsoft.com/library/358dbe76-5e5e-4af5-b575-c2293c636899)  
+- [while, instruction (C++)](http://msdn.microsoft.com/library/358dbe76-5e5e-4af5-b575-c2293c636899)  
   
 ## <a name="see-also"></a>Voir aussi  
  [Général, Environnement, boîte de dialogue Options](../../ide/reference/general-environment-options-dialog-box.md)   

@@ -13,17 +13,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a8d91975fb56a8fd731a5998137a739ee364edf1
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0206f01df517c2dbd0c1c4052201dc8ded1bcbf9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54793147"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115677"
 ---
 # <a name="runexit-devenvexe"></a>/Runexit (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Compile et exécute la solution ou le projet spécifié, puis ferme l’environnement de développement intégré (IDE).  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -42,9 +41,9 @@ devenv /runexit {SolutionName|ProjectName}
 ## <a name="remarks"></a>Remarques  
  Compile et exécute la solution ou le projet spécifié en fonction des paramètres spécifiés pour la configuration de la solution active. Ce commutateur réduit la fenêtre de l’IDE pendant l’exécution de la solution ou du projet et ferme cette fenêtre à la fin de leur exécution.  
   
--   Placez entre guillemets doubles les chaînes contenant des espaces.  
+- Placez entre guillemets doubles les chaînes contenant des espaces.  
   
--   Les informations résumées, notamment les erreurs, peuvent être affichées dans la fenêtre **Commande**, ou dans tout fichier journal spécifié avec le commutateur `/out`.  
+- Les informations résumées, notamment les erreurs, peuvent être affichées dans la fenêtre **Commande**, ou dans tout fichier journal spécifié avec le commutateur `/out`.  
   
 ## <a name="example"></a>Exemple  
  Cet exemple exécute la solution `MySolution` dans une fenêtre réduite de l’IDE en utilisant la configuration de déploiement active, puis ferme l’IDE.  

@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a47f29f2731756d4607ff611a450c4f988e4413e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9e67b6e999078523c11ba2b59175743e4a8f3d33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949047"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044233"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Procédure : Intercepter un événement de clic sur une forme ou un décorateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,11 +47,11 @@ public partial class MyShape // change
   
 #### <a name="to-intercept-a-click-on-an-icon-decorator"></a>Pour intercepter un événement click sur un élément décoratif d’icône  
   
-1.  Ouvrez ou créez une solution DSL.  
+1. Ouvrez ou créez une solution DSL.  
   
-2.  Choisir ou créer une forme qui a un élément décoratif d’icône et le mapper à une classe de domaine.  
+2. Choisir ou créer une forme qui a un élément décoratif d’icône et le mapper à une classe de domaine.  
   
-3.  Dans un fichier de code distinct à partir des fichiers dans le `GeneratedCode` dossier, créer la sous-classe de ImageField :  
+3. Dans un fichier de code distinct à partir des fichiers dans le `GeneratedCode` dossier, créer la sous-classe de ImageField :  
   
     ```  
     using Microsoft.VisualStudio.Modeling;  
@@ -89,7 +89,7 @@ public partial class MyShape // change
   
      Vous devez définir Handled sur true si vous ne souhaitez pas que l’événement à passer à cette forme.  
   
-4.  Substituez la méthode de InitializeShapeFields dans votre classs forme en ajoutant la définition de classe partielle suivante.  
+4. Substituez la méthode de InitializeShapeFields dans votre classs forme en ajoutant la définition de classe partielle suivante.  
   
     ```  
     public partial class MyShape // change  
@@ -116,9 +116,9 @@ public partial class MyShape // change
     }  
     ```  
   
-1.  Générez et exécutez la solution.  
+1. Générez et exécutez la solution.  
   
-2.  Double-cliquez sur l’icône sur une instance de la forme. Votre message de test doit apparaître.  
+2. Double-cliquez sur l’icône sur une instance de la forme. Votre message de test doit apparaître.  
   
 ## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>Interception clique et fait glisser sur les listes de CompartmentShape  
  L’exemple suivant permet aux utilisateurs de réordonner des éléments dans une forme de compartiment en les faisant glisser. Pour exécuter ce code :  
@@ -135,19 +135,19 @@ public partial class MyShape // change
   
    En résumé, le code fonctionne comme suit. Dans cet exemple, `ClassShape` est le nom de la forme de compartiment.  
   
--   Un ensemble de gestionnaires d’événements de la souris est associé à chaque instance de compartment lors de sa création.  
+- Un ensemble de gestionnaires d’événements de la souris est associé à chaque instance de compartment lors de sa création.  
   
--   Le `ClassShape.MouseDown` événement stocke l’élément actuel.  
+- Le `ClassShape.MouseDown` événement stocke l’élément actuel.  
   
--   Lorsque la souris se déplace hors de l’élément actuel, une instance de MouseAction est créée, qui définit le curseur et capture la souris jusqu'à ce qu’il est libéré.  
+- Lorsque la souris se déplace hors de l’élément actuel, une instance de MouseAction est créée, qui définit le curseur et capture la souris jusqu'à ce qu’il est libéré.  
   
      Pour éviter toute interférence avec d’autres actions de la souris, telles que la sélection du texte d’un élément, MouseAction n’est pas créé tant que la souris a quitté l’élément d’origine.  
   
      Une alternative à la création d’une MouseAction serait simplement pour écouter les MouseUp. Toutefois, cela fonctionnerait pas correctement si l’utilisateur relâche la souris après avoir fait glisser en dehors du compartiment. MouseAction est en mesure d’effectuer l’action appropriée, quel que soit l’où la souris est relâchée.  
   
--   Lorsque la souris est relâchée, MouseAction.MouseUp permet de réorganiser l’ordre des liens entre les éléments de modèle.  
+- Lorsque la souris est relâchée, MouseAction.MouseUp permet de réorganiser l’ordre des liens entre les éléments de modèle.  
   
--   La modification de l’ordre de rôle déclenche une règle qui met à jour l’affichage. Ce comportement est déjà défini, et aucun code supplémentaire est nécessaire.  
+- La modification de l’ordre de rôle déclenche une règle qui met à jour l’affichage. Ce comportement est déjà défini, et aucun code supplémentaire est nécessaire.  
   
 ```csharp  
 using Microsoft.VisualStudio.Modeling;  

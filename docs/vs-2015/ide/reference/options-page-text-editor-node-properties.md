@@ -12,17 +12,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e117eac0a0a5211dcc97ddf14bf6727f62260ff8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: fa63e84cd7655ebf8a48ff47a8d844a471c193cd
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54767990"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651615"
 ---
 # <a name="options-page-text-editor-node-properties"></a>Page Options, Éditeur de texte, propriétés de nœud
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Ce document décrit certaines pages (ou collections de propriétés) associées à la catégorie **Éditeur de texte**, `DTE.Properties("TextEditor", <Property Page>)`, de la boîte de dialogue **Options**. Le titre de chaque sous-section correspond à l'appel utilisé pour accéder à la collection `Properties`, et le tableau figurant dans chaque sous-section répertorie les propriétés présentes dans la collection.  
   
  Les macros Visual Basic dans [Contrôle des paramètres de la boîte de dialogue Options](http://msdn.microsoft.com/library/a09ed242-7494-4cde-bbd1-7a8ec617965d) montrent comment afficher des options actuelles et leurs valeurs pour chaque page de la boîte de dialogue **Options**.  

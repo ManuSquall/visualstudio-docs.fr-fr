@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 949014204f67f16e22d25cd604585a229c8967e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f3454ca7c01b44dcae60156e93bffde351209cc5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619223"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099375"
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Procédure : Ajouter et supprimer des éléments dans des fonctionnalités SharePoint
   Lorsque vous créez une solution SharePoint, Visual Studio ajoute les éléments de projet SharePoint par défaut à votre fonction. Avant le déploiement, vous pouvez ajouter et supprimer des éléments de projet SharePoint pour modifier la fonctionnalité SharePoint.
@@ -46,9 +46,9 @@ ms.locfileid: "56619223"
 
 #### <a name="to-remove-sharepoint-items-with-the-feature-designer"></a>Pour supprimer des éléments SharePoint avec le Concepteur de fonctionnalités
 
-1.  Choisissez un ou plusieurs éléments dans le **éléments dans la fonctionnalité** liste.
+1. Choisissez un ou plusieurs éléments dans le **éléments dans la fonctionnalité** liste.
 
-2.  Choisissez le **supprimer** bouton (<) pour supprimer un élément à la fois, ou choisissez le **supprimer tout** bouton (<<) pour supprimer tous les éléments.
+2. Choisissez le **supprimer** bouton (<) pour supprimer un élément à la fois, ou choisissez le **supprimer tout** bouton (<<) pour supprimer tous les éléments.
 
      Les éléments de projet SharePoint s’affichent dans le **éléments dans la Solution** liste.
 

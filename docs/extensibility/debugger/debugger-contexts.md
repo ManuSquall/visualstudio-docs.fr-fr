@@ -10,21 +10,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4d1dd6d8f4d64400b4b2358dd47971f3111dcf1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 3fc77e24a1a9ca72d6f689247f0de6a9e0bf26cc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700690"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098933"
 ---
 # <a name="debugger-contexts"></a>Contextes du débogueur
 Dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] débogage, le moteur de débogage (dé) opère simultanément dans plusieurs contextes distinctes, comme suit :
 
--   Le contexte de code, qui décrit l’emplacement actuel dans le flux de l’exécution d’un programme.
+- Le contexte de code, qui décrit l’emplacement actuel dans le flux de l’exécution d’un programme.
 
--   Le contexte de la documentation ou de la position, qui décrit la position actuelle dans un document source.
+- Le contexte de la documentation ou de la position, qui décrit la position actuelle dans un document source.
 
--   Le contexte d’évaluation expression, qui décrit le contexte dans les expressions évaluation aura lieu.
+- Le contexte d’évaluation expression, qui décrit le contexte dans les expressions évaluation aura lieu.
 
 ## <a name="in-this-section"></a>Dans cette section
  [Contexte de code](../../extensibility/debugger/code-context.md) contexte de code présente en tant qu’adresse dans le flux d’instructions d’un programme dans les architectures d’exécution d’aujourd'hui par rapport aux langages non traditionnel, où code ne peut pas être représenté par des instructions, mais d’autres moyens.

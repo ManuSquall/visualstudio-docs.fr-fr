@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da625db79e8738bad2a5e73ceee5d8b0adb6603d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 3f3a1ee08fec613522be5247842e10ced1c032e7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605144"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651836"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;Tâches PackageFiles&gt; élément (programme d’amorçage)
 Le `PackageFiles` élément contient `PackageFile` éléments qui définissent les packages d’installation exécutées en raison de la `Command` élément.
@@ -53,14 +53,13 @@ Le `PackageFiles` élément contient `PackageFile` éléments qui définissent l
 
  `PackageFile` a les attributs suivants.
 
-
 | Attribut | Description |
 |---------------| - |
 | `Name` | Obligatoire. Le nom du fichier du package. Il s’agit du nom qui le `Command` élément référence lorsqu’il définit les conditions d’installation d’un package. Cette valeur est également utilisée comme clé dans le `Strings` table pour récupérer le nom localisé des outils tels que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour décrire le package. |
 | `HomeSite` | Optionnel. L’emplacement du package sur le serveur distant, si elle n’est pas inclus dans le programme d’installation. |
 | `CopyOnBuild` | Optionnel. Spécifie si le programme d’amorçage doit copier le fichier de package sur le disque au moment de la génération. La valeur par défaut est true. |
 | `PublicKey` | La clé publique chiffrée du signataire de certificat du package. Obligatoire si `HomeSite` est utilisée ; sinon, facultatif. |
-| `Hash` | Optionnel. Un hachage SHA1 du fichier du package. Cela est utilisé pour vérifier l’intégrité du fichier au moment de l’installation. Si le hachage identique ne peut pas être calculé à partir du fichier de package, le package ne sera pas installé. |
+| `Hash` | Facultatif. Un hachage SHA1 du fichier du package. Cela est utilisé pour vérifier l’intégrité du fichier au moment de l’installation. Si le hachage identique ne peut pas être calculé à partir du fichier de package, le package ne sera pas installé. |
 
 ## <a name="example"></a>Exemple
  L’exemple de code suivant définit des packages pour le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] redistributable package et ses dépendances, telles que le programme d’installation de Windows.

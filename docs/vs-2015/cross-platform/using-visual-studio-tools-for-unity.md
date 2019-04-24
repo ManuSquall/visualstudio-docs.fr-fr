@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 90926994f6cf67e36260dc85e29accaa88e519ca
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: eed341b5ae43f52e7df35d820012e760166e096f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777379"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073425"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Utilisation de Visual Studio Tools pour Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Dans cette section, vous allez apprendre à utiliser les fonctionnalités d’intégration et de productivité de Visual Studio Tools pour Unity, ainsi qu’à utiliser le débogueur Visual Studio pour le développement Unity.  
   
 ## <a name="unity-integration-and-productivity"></a>Intégration et productivité d'Unity  
@@ -30,7 +29,7 @@ Dans cette section, vous allez apprendre à utiliser les fonctionnalités d’in
   
 ##### <a name="to-access-unity-documentation"></a>Pour accéder à la documentation Unity  
   
--   Dans Visual Studio, placez le curseur sur l’API Unity pour laquelle vous souhaitez obtenir des informations ou sélectionnez-la, puis appuyez sur **Ctrl+Alt+M, Ctrl+H**.  
+- Dans Visual Studio, placez le curseur sur l’API Unity pour laquelle vous souhaitez obtenir des informations ou sélectionnez-la, puis appuyez sur **Ctrl+Alt+M, Ctrl+H**.  
   
 ### <a name="unity-monobehavior-scripting-wizard"></a>Assistant de script MonoBehavior d'Unity  
  Dans Unity, la plupart des scripts sont implémentés en dérivant de la classe MonoBehavior et par substitution de certaines de ses méthodes. Vous pouvez utiliser l'Assistant MonoBehavior pour créer rapidement des définitions vides des méthodes MonoBehavior que vous souhaitez surcharger. À l'aide de cet Assistant, vous pouvez spécifier une ou plusieurs méthodes que vous voulez surcharger à partir de la liste des méthodes disponibles, choisir où elles vont être insérées dans le code et décider s'il faut inclure des commentaires sur leur utilisation.  
@@ -60,13 +59,13 @@ Dans cette section, vous allez apprendre à utiliser les fonctionnalités d’in
   
 ###### <a name="to-create-an-empty-monobehavior-method-definition-by-using-the-quick-monobehavior-wizard"></a>Pour créer une définition de méthode MonoBehavior vide à l'aide de l'Assistant MonoBehavior rapide  
   
-1.  Dans Visual Studio, placez le curseur à l’endroit où vous voulez insérer les méthodes, puis appuyez sur **Ctrl+Maj+M** pour lancer l’Assistant MonoBehavior rapide. Contrairement à l'autre Assistant MonoBehavior, vous devez positionner le curseur à l'endroit de votre choix lorsque vous utilisez cet Assistant, car c'est toujours là que la nouvelle méthode est insérée.  
+1. Dans Visual Studio, placez le curseur à l’endroit où vous voulez insérer les méthodes, puis appuyez sur **Ctrl+Maj+M** pour lancer l’Assistant MonoBehavior rapide. Contrairement à l'autre Assistant MonoBehavior, vous devez positionner le curseur à l'endroit de votre choix lorsque vous utilisez cet Assistant, car c'est toujours là que la nouvelle méthode est insérée.  
   
-2.  Vérifiez que la version du Framework affichée dans le coin supérieur droit de la fenêtre **Créer une méthode de script** correspond à la version que vous utilisez. Dans le cas contraire, remplacez la valeur de la liste déroulante par la version que vous souhaitez utiliser.  
+2. Vérifiez que la version du Framework affichée dans le coin supérieur droit de la fenêtre **Créer une méthode de script** correspond à la version que vous utilisez. Dans le cas contraire, remplacez la valeur de la liste déroulante par la version que vous souhaitez utiliser.  
   
-3.  Recherchez la méthode que vous souhaitez surcharger. Dans la fenêtre Créer une méthode de script, commencez par taper le nom de la méthode dans la zone de texte. La liste des méthodes dont les noms correspondent à ceux que vous avez entrés s'affiche.  
+3. Recherchez la méthode que vous souhaitez surcharger. Dans la fenêtre Créer une méthode de script, commencez par taper le nom de la méthode dans la zone de texte. La liste des méthodes dont les noms correspondent à ceux que vous avez entrés s'affiche.  
   
-4.  Sélectionnez la méthode que vous souhaitez surcharger. Quand la méthode voulue apparaît dans la liste, sélectionnez-la avec la souris ou les touches fléchées, puis appuyez sur **Entrée**. Si c’est la seule méthode de la liste, appuyez simplement sur **Entrée**. La méthode vient s'insérer dans votre code.  
+4. Sélectionnez la méthode que vous souhaitez surcharger. Quand la méthode voulue apparaît dans la liste, sélectionnez-la avec la souris ou les touches fléchées, puis appuyez sur **Entrée**. Si c’est la seule méthode de la liste, appuyez simplement sur **Entrée**. La méthode vient s'insérer dans votre code.  
   
 ### <a name="unity-project-explorer"></a>Explorateur de projets de Unity  
  Vous pouvez utiliser l'Explorateur de projets Unity pour parcourir votre projet Unity à l'intérieur de Visual Studio.  
@@ -104,16 +103,16 @@ Dans cette section, vous allez apprendre à utiliser les fonctionnalités d’in
 ## <a name="unity-debugging"></a>Débogage Unity  
  Visual Studio Tools pour Unity vous permet de déboguer les scripts de l'éditeur et de jeu de votre projet Unity à l'aide du puissant débogueur de Visual Studio.  
   
-###  <a name="connecting-visual-studio-to-unity"></a> Connexion de Visual Studio à Unity  
+### <a name="connecting-visual-studio-to-unity"></a> Connexion de Visual Studio à Unity  
  Visual Studio Tools pour Unity communique avec Unity via une connexion UDP. Cela signifie que vous pouvez vous connecter à une instance Unity s'exécutant localement ou sur votre réseau de la même façon. Vous pouvez vous connecter aux instances Unity visibles sur votre réseau à l’aide de la boîte de dialogue **Sélectionner l’instance Unity**.  
   
 ##### <a name="to-open-the-select-unity-instance-dialog"></a>Pour ouvrir la boîte de dialogue Sélectionner l'instance Unity  
   
--   Dans Visual Studio, dans le menu principal, choisissez **Déboguer**, **Attacher le débogueur Unity**.  
+- Dans Visual Studio, dans le menu principal, choisissez **Déboguer**, **Attacher le débogueur Unity**.  
   
      ![Attacher le débogueur Unity.](../cross-platform/media/vstu-debugging-attach-unity-debugger.png "vstu_debugging_attach_unity_debugger")  
   
--   *Autre possibilité :* dans Visual Studio, dans la barre d’état, cliquez sur l’icône de connexion dans le coin inférieur droit de Visual Studio.  
+- *Autre possibilité :* dans Visual Studio, dans la barre d’état, cliquez sur l’icône de connexion dans le coin inférieur droit de Visual Studio.  
   
      ![Cette icône indique que VSTU est connecté à Unity.](../cross-platform/media/vstu-connection-connected.png "vstu_connection_connected")  
   
@@ -139,7 +138,7 @@ Dans cette section, vous allez apprendre à utiliser les fonctionnalités d’in
 > [!IMPORTANT]
 >  Étant donné que Visual Studio Tools pour Unity et l'instance Unity communiquent via un socket réseau UDP, votre pare-feu peut l'interroger. Dans ce cas, vous devez autoriser la connexion de telle sorte que VSTU et Unity puissent communiquer.  
   
-###  <a name="debugging-your-project-in-a-unity-player"></a> Débogage de votre projet dans un lecteur Unity  
+### <a name="debugging-your-project-in-a-unity-player"></a> Débogage de votre projet dans un lecteur Unity  
  Vous pouvez connecter directement Visual Studio Tools pour Unity  à votre application Unity s'exécutant dans un lecteur autonome lorsque vous n'exécutez pas l'éditeur Unity ou pour déboguer des problèmes spécifiques à la plateforme.  
   
 ##### <a name="to-enable-script-debugging-in-a-unity-player"></a>Pour activer le débogage de script dans un lecteur Unity  

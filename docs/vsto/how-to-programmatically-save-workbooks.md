@@ -14,15 +14,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 349fbd0358481e6cd809efe4f4d210ec94ef50a6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0ac57569802bbab5317f59e5311e4871a6e74ba1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614712"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093057"
 ---
 # <a name="how-to-programmatically-save-workbooks"></a>Procédure : Enregistrer des classeurs par programmation
-  Il existe plusieurs façons d'enregistrer un classeur. Vous pouvez le faire sans modifier le chemin d'accès. Si le classeur n'a pas été enregistré auparavant, vous devez l'enregistrer en spécifiant un chemin d'accès. Sans chemin d'accès explicite, Microsoft Office Excel enregistre le fichier dans le dossier actif avec le nom qui lui a été attribué lors de sa création. Vous pouvez également enregistrer une copie du classeur sans modifier le classeur ouvert en mémoire.
+  Il existe plusieurs façons d'enregistrer un classeur. Vous pouvez le faire sans modifier le chemin d’accès. Si le classeur n'a pas été enregistré auparavant, vous devez l'enregistrer en spécifiant un chemin d'accès. Sans chemin d’accès explicite, Microsoft Office Excel enregistre le fichier dans le dossier actif avec le nom qui lui a été attribué lors de sa création. Vous pouvez également enregistrer une copie du classeur sans modifier le classeur ouvert en mémoire.
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
@@ -30,14 +30,14 @@ ms.locfileid: "56614712"
 
 ### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>Pour enregistrer un classeur associé à une personnalisation au niveau du document
 
-1.  Appelez la méthode <xref:Microsoft.Office.Tools.Excel.Workbook.Save%2A> de la classe `ThisWorkbook` .
+1. Appelez la méthode <xref:Microsoft.Office.Tools.Excel.Workbook.Save%2A> de la classe `ThisWorkbook` .
 
      [!code-csharp[Trin_VstcoreExcelAutomation#4](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#4)]
      [!code-vb[Trin_VstcoreExcelAutomation#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#4)]
 
 ### <a name="to-save-the-active-workbook-in-a-vsto-add-in"></a>Pour enregistrer le classeur actif dans un complément VSTO
 
-1.  Appelez la méthode <xref:Microsoft.Office.Interop.Excel._Workbook.Save%2A> pour enregistrer le classeur actif. Pour utiliser l’exemple de code suivant, exécutez-le dans la classe `ThisAddIn` dans un projet de complément VSTO pour Excel.
+1. Appelez la méthode <xref:Microsoft.Office.Interop.Excel._Workbook.Save%2A> pour enregistrer le classeur actif. Pour utiliser l’exemple de code suivant, exécutez-le dans la classe `ThisAddIn` dans un projet de complément VSTO pour Excel.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#3](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#3)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#3](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#3)]
@@ -50,14 +50,14 @@ ms.locfileid: "56614712"
 
 ### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>Pour enregistrer un classeur associé à une personnalisation au niveau du document
 
-1.  Appelez la méthode <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A> de la classe `ThisWorkbook` . Pour utiliser l'exemple de code suivant, exécutez-le dans la classe `ThisWorkbook`.
+1. Appelez la méthode <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A> de la classe `ThisWorkbook` . Pour utiliser l'exemple de code suivant, exécutez-le dans la classe `ThisWorkbook`.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#5](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#5)]
      [!code-vb[Trin_VstcoreExcelAutomation#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#5)]
 
 ### <a name="to-save-the-active-workbook-in-a-vsto-add-in"></a>Pour enregistrer le classeur actif dans un complément VSTO
 
-1.  Appelez la méthode <xref:Microsoft.Office.Interop.Excel._Workbook.SaveAs%2A> pour enregistrer le classeur actif avec un nouveau chemin d'accès. Pour utiliser l’exemple de code suivant, exécutez-le dans la classe `ThisAddIn` dans un projet de complément VSTO pour Excel.
+1. Appelez la méthode <xref:Microsoft.Office.Interop.Excel._Workbook.SaveAs%2A> pour enregistrer le classeur actif avec un nouveau chemin d’accès. Pour utiliser l’exemple de code suivant, exécutez-le dans la classe `ThisAddIn` dans un projet de complément VSTO pour Excel.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#4](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#4)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#4](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#4)]
@@ -67,14 +67,14 @@ ms.locfileid: "56614712"
 
 ### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>Pour enregistrer un classeur associé à une personnalisation au niveau du document
 
-1.  Appelez la méthode <xref:Microsoft.Office.Tools.Excel.Workbook.SaveCopyAs%2A> de la classe `ThisWorkbook` . Pour utiliser l'exemple de code suivant, exécutez-le dans la classe `ThisWorkbook`.
+1. Appelez la méthode <xref:Microsoft.Office.Tools.Excel.Workbook.SaveCopyAs%2A> de la classe `ThisWorkbook` . Pour utiliser l'exemple de code suivant, exécutez-le dans la classe `ThisWorkbook`.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#6](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#6)]
      [!code-vb[Trin_VstcoreExcelAutomation#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#6)]
 
 ### <a name="to-save-the-active-workbook-in-a-vsto-add-in"></a>Pour enregistrer le classeur actif dans un complément VSTO
 
-1.  Appelez la méthode <xref:Microsoft.Office.Interop.Excel._Workbook.SaveCopyAs%2A> pour enregistrer une copie du classeur actif. Pour utiliser l’exemple de code suivant, exécutez-le dans la classe `ThisAddIn` dans un projet de complément VSTO pour Excel.
+1. Appelez la méthode <xref:Microsoft.Office.Interop.Excel._Workbook.SaveCopyAs%2A> pour enregistrer une copie du classeur actif. Pour utiliser l’exemple de code suivant, exécutez-le dans la classe `ThisAddIn` dans un projet de complément VSTO pour Excel.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#5](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#5)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#5](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#5)]

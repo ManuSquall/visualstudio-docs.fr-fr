@@ -1,5 +1,5 @@
 ---
-title: 'Zone de test 4 : Archiver | Microsoft Docs'
+title: 'Zone de test 4 : Archiver | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2529b22d7039101f83952b3390221af5b78922b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 34d988f88787efc2f40b663ef2f22e6273055533
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605105"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038710"
 ---
-# <a name="test-area-4-check-in"></a>Zone de test 4 : Archiver
+# <a name="test-area-4-check-in"></a>Zone de test 4 : Archiver
 Cette zone de test plug-in de contrôle de code source couvre l’envoi des éléments mis à jour à la banque des versions via le **archiver** commande.
 
 ## <a name="command-menu-access"></a>Accès au Menu de commande
@@ -33,11 +33,11 @@ Cette zone de test plug-in de contrôle de code source couvre l’envoi des él�
 
 ## <a name="common-expected-behavior"></a>Comportement attendu commun
 
--   Projets et fichiers ajoutés à une solution ou un projet sous contrôle de code source apparaissent dans le **archiver** boîte de dialogue et le **archivages en attente** fenêtre.
+- Projets et fichiers ajoutés à une solution ou un projet sous contrôle de code source apparaissent dans le **archiver** boîte de dialogue et le **archivages en attente** fenêtre.
 
--   Après l’archivage, les éléments ajoutés apparaissent dans le contrôle de code source.
+- Après l’archivage, les éléments ajoutés apparaissent dans le contrôle de code source.
 
--   Après l’archivage, les éléments mis à jour sont correctement gérées dans le magasin.
+- Après l’archivage, les éléments mis à jour sont correctement gérées dans le magasin.
 
 ## <a name="test-cases"></a>Cas de test
  Cas de test spécifiques pour la zone de test d’archivage sont les suivantes :

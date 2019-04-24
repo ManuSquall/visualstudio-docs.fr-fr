@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2a7553bb07e90e690d6409a2ad22636ddc8b627c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 186ca5857d949c7a7a8c90e3e5ec8770705e19cc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949308"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104094"
 ---
 # <a name="how-to-start-debugging-xslt"></a>Procédure : démarrage du débogage XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,15 +26,15 @@ Le débogueur XSLT permet de déboguer une feuille de style XSLT ou une applicat
   
 #### <a name="to-start-debugging-from-a-style-sheet"></a>Pour commencer le débogage à partir d'une feuille de style  
   
-1.  Ouvrez la feuille de style dans l'éditeur XML.  
+1. Ouvrez la feuille de style dans l'éditeur XML.  
   
-2.  Sélectionnez **débogage XSLT** à partir de la **XML** menu.  
+2. Sélectionnez **débogage XSLT** à partir de la **XML** menu.  
   
 #### <a name="to-start-debugging-from-an-xml-input-document"></a>Pour commencer le débogage à partir d'un document d'entrée XML  
   
-1.  Ouvrez le document XML dans l'éditeur XML.  
+1. Ouvrez le document XML dans l'éditeur XML.  
   
-2.  Sélectionnez **débogage XSLT** à partir de la **XML** menu.  
+2. Sélectionnez **débogage XSLT** à partir de la **XML** menu.  
   
 ## <a name="xslt-from-other-languages"></a>XSLT à partir d'autres langages  
  Vous pouvez également exécuter un pas à pas détaillé de XSLT pendant le débogage d'une application. Si vous appuyez sur F11 lors d'un appel à la méthode <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=fullName>, le débogueur peut exécuter un pas à pas détaillé du code XSLT.  
@@ -44,11 +44,11 @@ Le débogueur XSLT permet de déboguer une feuille de style XSLT ou une applicat
   
 #### <a name="to-start-debugging-an-xslt-application"></a>Pour commencer le débogage d'une application XSLT  
   
-1.  Lors de l'instanciation de l'objet <xref:System.Xml.Xsl.XslCompiledTransform>, définissez le paramètre `enableDebug` sur `true` dans votre code.  
+1. Lors de l'instanciation de l'objet <xref:System.Xml.Xsl.XslCompiledTransform>, définissez le paramètre `enableDebug` sur `true` dans votre code.  
   
      Le processeur XSLT crée alors des informations de débogage lors de la compilation du code.  
   
-2.  Appuyez sur F11 pour exécuter un pas à pas détaillé du code XSLT.  
+2. Appuyez sur F11 pour exécuter un pas à pas détaillé du code XSLT.  
   
      La feuille de style XSLT est chargée dans une nouvelle fenêtre de document et le débogueur XSLT démarre.  
   

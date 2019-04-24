@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 49eed907e38c79a98e5604a96380efa5d7281c1d
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: fe8a05e193ffe621d28147389752ab56031cf499
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415666"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080174"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>Procédure : Ajouter un gestionnaire de glisser-déplacer
 
@@ -34,7 +34,7 @@ using System.Linq;
 
 Dans le nouveau fichier, définissez une classe partielle pour la forme ou la classe de diagramme qui doit répondre à l'opération de déplacement. Remplacez les méthodes suivantes :
 
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragOver%2A>- Cette méthode est appelée lorsque le pointeur de la souris entre dans la forme pendant une opération de déplacement. Votre méthode doit examiner l'élément que l'utilisateur déplace et définir la propriété Effect pour indiquer si l'utilisateur peut déposer l'élément sur cette forme. La propriété Effect détermine l'aspect du curseur pendant qu'il est sur la forme, ainsi que le fait de savoir si `OnDragDrop()` est appelé quand l'utilisateur relâche le bouton de la souris.
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragOver%2A>- Cette méthode est appelée lorsque le pointeur de la souris entre dans la forme pendant une opération de déplacement. Votre méthode doit examiner l'élément que l'utilisateur déplace et définir la propriété Effect pour indiquer si l'utilisateur peut déposer l'élément sur cette forme. La propriété Effect détermine l'aspect du curseur pendant qu'il est sur la forme, ainsi que le fait de savoir si `OnDragDrop()` est appelé quand l'utilisateur relâche le bouton de la souris.
 
     ```csharp
     partial class MyShape // MyShape generated from DSL Definition.
@@ -50,7 +50,7 @@ Dans le nouveau fichier, définissez une classe partielle pour la forme ou la cl
         }
     ```
 
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> : Cette méthode est appelée si l’utilisateur relâche le bouton de la souris alors que le pointeur de la souris se trouve sur la forme ou diagramme, si `OnDragOver(DiagramDragEventArgs e)` précédemment défini `e.Effect` à une valeur autre que `None`.
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDragDrop%2A> : Cette méthode est appelée si l’utilisateur relâche le bouton de la souris alors que le pointeur de la souris se trouve sur la forme ou diagramme, si `OnDragOver(DiagramDragEventArgs e)` précédemment défini `e.Effect` à une valeur autre que `None`.
 
     ```csharp
     public override void OnDragDrop(DiagramDragEventArgs e)
@@ -66,7 +66,7 @@ Dans le nouveau fichier, définissez une classe partielle pour la forme ou la cl
     }
     ```
 
--   <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> : Cette méthode est appelée lorsque l’utilisateur double-clique sur la forme ou le schéma.
+- <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.OnDoubleClick%2A> : Cette méthode est appelée lorsque l’utilisateur double-clique sur la forme ou le schéma.
 
      Pour plus d'informations, voir [Procédure : Intercepter un événement Click sur une forme ou un décorateur](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md).
 
@@ -80,9 +80,9 @@ MEF (Managed Extensibility Framework) vous permet de définir des composants qui
 
 ### <a name="to-define-a-mef-gesture-handler"></a>Pour définir un gestionnaire d'événements MEF
 
-1.  Ajouter à votre **Dsl** et **DslPackage** projets le **MefExtension** les fichiers qui sont décrites dans [étendre votre DSL à l’aide de MEF](../modeling/extend-your-dsl-by-using-mef.md).
+1. Ajouter à votre **Dsl** et **DslPackage** projets le **MefExtension** les fichiers qui sont décrites dans [étendre votre DSL à l’aide de MEF](../modeling/extend-your-dsl-by-using-mef.md).
 
-2.  Vous pouvez désormais définir un gestionnaire d'événements comme composant MEF :
+2. Vous pouvez désormais définir un gestionnaire d'événements comme composant MEF :
 
     ```csharp
     // This attribute is defined in the generated file
@@ -114,7 +114,7 @@ MEF (Managed Extensibility Framework) vous permet de définir des composants qui
 
      Vous pouvez créer plusieurs composants de gestionnaire de mouvements, comme lorsque vous avez différents types d'objets déplacés.
 
-3.  Ajoutez les définitions de classe partielle pour la forme cible, les classes de connecteurs ou de diagrammes, et définissez les méthodes `IsAcceptableDropItem()` et `ProcessDragDropItem()`. Ces méthodes doivent commencer par extraire l'élément déplacé des arguments de l'événement. Pour plus d’informations, consultez [comment obtenir une référence à l’élément déplacé](#to-send-an-object-from-a-source-dsl).
+3. Ajoutez les définitions de classe partielle pour la forme cible, les classes de connecteurs ou de diagrammes, et définissez les méthodes `IsAcceptableDropItem()` et `ProcessDragDropItem()`. Ces méthodes doivent commencer par extraire l'élément déplacé des arguments de l'événement. Pour plus d’informations, consultez [comment obtenir une référence à l’élément déplacé](#to-send-an-object-from-a-source-dsl).
 
 ## <a name="how-to-decode-the-dragged-item"></a>Comment décoder l'élément déplacé
 
@@ -124,17 +124,17 @@ Lorsque l'utilisateur déplace un élément sur votre diagramme, ou d'une partie
 
 Pour connaître les formats dans lesquels vos informations sur la source du déplacement sont disponibles, exécutez votre code en mode débogage, en définissant un point d'arrêt à l'entrée de `OnDragOver()` ou `CanDragDrop()`. Examinez les valeurs du paramètre `DiagramDragEventArgs`. Les informations sont fournies sous deux formes :
 
--   <xref:System.Windows.Forms.IDataObject>  `Data` -Cette propriété porte les versions sérialisées des objets source, généralement dans plusieurs formats. Ses fonctions les plus utiles sont les suivantes :
+- <xref:System.Windows.Forms.IDataObject>  `Data` -Cette propriété porte les versions sérialisées des objets source, généralement dans plusieurs formats. Ses fonctions les plus utiles sont les suivantes :
 
-    -   diagrameventargs.Data.getdataformats () - répertorie les formats dans lesquels vous pouvez décoder l’objet glissé. Par exemple, si l'utilisateur déplace un fichier à partir du Bureau, les formats disponibles incluent le nom de fichier (« `FileNameW` »).
+    - diagrameventargs.Data.getdataformats () - répertorie les formats dans lesquels vous pouvez décoder l’objet glissé. Par exemple, si l'utilisateur déplace un fichier à partir du Bureau, les formats disponibles incluent le nom de fichier (« `FileNameW` »).
 
-    -   `diagramEventArgs.Data.GetData(format)` -Décode l’objet glissé dans le format spécifié. Effectuez une conversion de type de l'objet dans le type approprié. Exemple :
+    - `diagramEventArgs.Data.GetData(format)` -Décode l’objet glissé dans le format spécifié. Effectuez une conversion de type de l'objet dans le type approprié. Exemple :
 
          `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
          Vous pouvez aussi transmettre des objets tels que les références de bus de modèles à partir de la source et dans votre propre format personnalisé. Pour plus d’informations, consultez [comment envoyer des références de Bus de modèle dans un glisser -déplacer](#to-send-an-object-from-a-source-dsl).
 
--   <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` -Utilisez cette propriété si vous souhaitez que les utilisateurs à faire glisser des éléments à partir d’un DSL ou d’un modèle UML. Un prototype de groupe d'éléments contient un ou plusieurs objets, les liens et les valeurs de leurs propriétés. Il est également utilisé dans les opérations de collage et lorsque vous ajoutez un élément à partir de la boîte à outils. Dans un prototype, les objets et leurs types sont identifiés par un GUID. Par exemple, ce code permet à l'utilisateur de déplacer les éléments de classe à partir d'un diagramme UML ou de l'Explorateur de modèles UML :
+- <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype> `Prototype` -Utilisez cette propriété si vous souhaitez que les utilisateurs à faire glisser des éléments à partir d’un DSL ou d’un modèle UML. Un prototype de groupe d'éléments contient un ou plusieurs objets, les liens et les valeurs de leurs propriétés. Il est également utilisé dans les opérations de collage et lorsque vous ajoutez un élément à partir de la boîte à outils. Dans un prototype, les objets et leurs types sont identifiés par un GUID. Par exemple, ce code permet à l'utilisateur de déplacer les éléments de classe à partir d'un diagramme UML ou de l'Explorateur de modèles UML :
 
     ```csharp
     private bool IsAcceptableDropItem(DiagramDragEventArgs e)
@@ -168,7 +168,7 @@ Rendez le DSL source accessible par Visual Studio Model Bus :
 
 ### <a name="to-send-an-object-from-a-source-dsl"></a>Pour envoyer un objet à partir d'un DSL source
 
-1.  Dans votre sous-classe ElementOperations, remplacez `Copy()` de telle sorte qu'elle encode une MBR (Model Bus Reference) en IDataObject. Cette méthode est appelée quand l'utilisateur commence à exécuter un déplacement depuis le diagramme source. La MBR encodée est alors disponible dans l'IDataObject quand l'utilisateur dépose l'élément dans le diagramme cible.
+1. Dans votre sous-classe ElementOperations, remplacez `Copy()` de telle sorte qu'elle encode une MBR (Model Bus Reference) en IDataObject. Cette méthode est appelée quand l'utilisateur commence à exécuter un déplacement depuis le diagramme source. La MBR encodée est alors disponible dans l'IDataObject quand l'utilisateur dépose l'élément dans le diagramme cible.
 
     ```csharp
     using Microsoft.VisualStudio.Modeling;
@@ -208,13 +208,13 @@ Rendez le DSL source accessible par Visual Studio Model Bus :
 
 ### <a name="to-receive-a-model-bus-reference-from-a-dsl-in-a-target-dsl-or-uml-project"></a>Pour recevoir une MBR à partir d'un DSL dans un projet DSL ou UML cible
 
-1.  Dans le projet DSL cible, ajoutez les références de projet aux projets suivants :
+1. Dans le projet DSL cible, ajoutez les références de projet aux projets suivants :
 
-    -   Le projet DSL source.
+    - Le projet DSL source.
 
-    -   Le projet ModelBus source.
+    - Le projet ModelBus source.
 
-2.  Dans le fichier de code du gestionnaire de mouvements, ajoutez les références d'espaces de noms suivantes :
+2. Dans le fichier de code du gestionnaire de mouvements, ajoutez les références d'espaces de noms suivantes :
 
     ```csharp
     using Microsoft.VisualStudio.Modeling;
@@ -226,7 +226,7 @@ Rendez le DSL source accessible par Visual Studio Model Bus :
     using SourceDslNamespace.ModelBusAdapters;
     ```
 
-3.  L'exemple suivant illustre comment accéder à l'élément de modèle source :
+3. L'exemple suivant illustre comment accéder à l'élément de modèle source :
 
     ```csharp
     partial class MyTargetShape // or diagram or connector
@@ -273,7 +273,7 @@ Rendez le DSL source accessible par Visual Studio Model Bus :
 
 ### <a name="to-accept-an-element-sourced-from-a-uml-model"></a>Pour accepter un élément dont la source est un modèle UML
 
--   L'exemple de code suivant accepte un objet déposé à partir d'un diagramme UML.
+- L'exemple de code suivant accepte un objet déposé à partir d'un diagramme UML.
 
     ```csharp
     using Microsoft.VisualStudio.ArchitectureTools.Extensibility;

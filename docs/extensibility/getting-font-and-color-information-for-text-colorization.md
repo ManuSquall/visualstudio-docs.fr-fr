@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f5d66a2baada5841dc6a0edefb6fa759168bcb5
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 1f6e55c99d874bd18f0045746bbab4ac96370bc5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54924082"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042405"
 ---
 # <a name="get-font-and-color-information-for-text-colorization"></a>Obtenir des informations de police et de couleur pour la colorisation de texte
 Le processus qui effectue le rendu ou affiche le texte en couleurs se dans les éléments d’interface (UI) utilisateur varie selon le type de préférences de projet, sa technologie et les développeurs. Le **polices et couleurs** page de propriétés stocke les paramètres.
@@ -31,11 +31,11 @@ Le processus qui effectue le rendu ou affiche le texte en couleurs se dans les �
 
 Pour mettre en couleur, un VSPackage doit obtenir actuel **polices et couleurs** paramètres. Un VSPackage peut obtenir les paramètres actuels de plusieurs manières, selon ses besoins :
 
--   Utiliser le mécanisme de persistance de police et de couleur pour récupérer l’état stockée ou en cours. Pour plus d’informations, consultez [accès stockés des paramètres de police et couleur](../extensibility/accessing-stored-font-and-color-settings.md).
+- Utiliser le mécanisme de persistance de police et de couleur pour récupérer l’état stockée ou en cours. Pour plus d’informations, consultez [accès stockés des paramètres de police et couleur](../extensibility/accessing-stored-font-and-color-settings.md).
 
--   Utilisez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> interface d’un service qui fournit des données de police et de couleur pour obtenir une instance de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>, si le VSPackage n’est pas également le fournisseur de police et de couleur.
+- Utilisez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaultsProvider> interface d’un service qui fournit des données de police et de couleur pour obtenir une instance de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults>, si le VSPackage n’est pas également le fournisseur de police et de couleur.
 
--   Implémentez l'interface <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>.
+- Implémentez l'interface <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents>.
 
 Pour garantir que les résultats obtenus par l’interrogation sont à jour, il peut être utile d’utiliser le <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> interface pour déterminer si une mise à jour est nécessaire avant d’appeler les méthodes de récupération de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface.
 

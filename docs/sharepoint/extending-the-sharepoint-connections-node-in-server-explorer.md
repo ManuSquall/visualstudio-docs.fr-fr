@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e8b63b5a14319a86dc561a0c6068286cdc70a472
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6b1d461419497a0a45f50f12589cf3ac978a7666
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56595122"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092638"
 ---
 # <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Étendre le nœud Connexions SharePoint dans l’Explorateur de serveurs
   Dans Visual Studio, vous pouvez vous connecter aux sites SharePoint locaux sur l’ordinateur de développement à l’aide de la **connexions SharePoint** nœud dans le **Explorateur de serveurs** fenêtre. Ce nœud affiche de nombreux composants de sites SharePoint locaux dans une arborescence hiérarchique. Par exemple, vous pouvez afficher les listes, les bibliothèques de documents et les types de contenu sur les sites locaux. Pour plus d’informations sur l’utilisation de **Explorateur de serveurs** pour vous connecter aux sites SharePoint locaux, consultez [SharePoint parcourir les connexions à l’aide de l’Explorateur de serveurs](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).
@@ -36,9 +36,9 @@ ms.locfileid: "56595122"
 
  Il existe deux types de propriétés personnalisées, que vous pouvez ajouter à un nœud :
 
--   Propriétés qui affichent un jeu de données en lecture seule à partir du site SharePoint. Les données décrivent le composant SharePoint que le nœud représente. Pour une procédure pas à pas qui montre comment effectuer cette opération, consultez [procédure pas à pas : Étendre l’Explorateur de serveurs pour afficher des WebParts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).
+- Propriétés qui affichent un jeu de données en lecture seule à partir du site SharePoint. Les données décrivent le composant SharePoint que le nœud représente. Pour une procédure pas à pas qui montre comment effectuer cette opération, consultez [procédure pas à pas : Étendre l’Explorateur de serveurs pour afficher des WebParts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).
 
--   Propriétés qui affichent les données en lecture/écriture personnalisé. Pour obtenir un exemple de code qui montre comment effectuer cette opération, consultez [Comment : Étendre un nœud SharePoint dans l’Explorateur de serveurs](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).
+- Propriétés qui affichent les données en lecture/écriture personnalisé. Pour obtenir un exemple de code qui montre comment effectuer cette opération, consultez [Comment : Étendre un nœud SharePoint dans l’Explorateur de serveurs](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).
 
 ## <a name="get-data-for-built-in-nodes"></a>Obtenir des données pour les nœuds intégrés
  Tous les nœuds intégrés fournis par Visual Studio incluent des données relatives au composant SharePoint qu’ils représentent. Par exemple, un nœud qui représente une liste sur le site SharePoint fournit des données sur la liste, comme le titre et l’URL de la vue par défaut pour la liste.

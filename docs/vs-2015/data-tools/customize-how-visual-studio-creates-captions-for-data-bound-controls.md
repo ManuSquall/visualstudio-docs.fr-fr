@@ -20,16 +20,15 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 379911793f85cedcee708716782e6ef38203867b
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 1b3bba0d47e77b9e712a375627e2e4aebc6702b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58953363"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079478"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personnaliser la façon dont Visual Studio crée des légendes pour les contrôles liés aux données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Lorsque vous faites glisser des éléments à partir de la [fenêtre Sources de données](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) sur le Concepteur de formulaires Windows, une attention particulière entre en jeu : les noms de colonnes dans les légendes sont reformatés dans une chaîne plus lisible lorsque deux ou plusieurs mots sont trouvé concaténés. Vous pouvez personnaliser la façon dans lequel ces étiquettes sont créés en définissant le **SmartCaptionExpression**, **SmartCaptionReplacement**, et **SmartCaptionSuffix** des valeurs dans le **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Data concepteurs** clé de Registre.
 
@@ -61,21 +60,21 @@ Lorsque vous faites glisser des éléments à partir de la [fenêtre Sources de 
 
 ### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Pour modifier le comportement de sous-titrage intelligent de la fenêtre Sources de données
 
-1.  Ouvrez une fenêtre de commande en cliquant sur **Démarrer** , puis **exécuter**.
+1. Ouvrez une fenêtre de commande en cliquant sur **Démarrer** , puis **exécuter**.
 
-2.  Type `regedit` dans le **exécuter** boîte de dialogue, puis cliquez sur **OK**.
+2. Type `regedit` dans le **exécuter** boîte de dialogue, puis cliquez sur **OK**.
 
-3.  Développez le **HKEY_CURRENT_USER** nœud.
+3. Développez le **HKEY_CURRENT_USER** nœud.
 
-4.  Développez le **logiciel** nœud.
+4. Développez le **logiciel** nœud.
 
-5.  Développez le **Microsoft** nœud.
+5. Développez le **Microsoft** nœud.
 
-6.  Développez le **VisualStudio** nœud.
+6. Développez le **VisualStudio** nœud.
 
-7.  Avec le bouton droit le **10.0** nœud, puis créez un **clé** nommé `Data Designers`.
+7. Avec le bouton droit le **10.0** nœud, puis créez un **clé** nommé `Data Designers`.
 
-8.  Avec le bouton droit le **concepteurs de données** nœud, puis créez un **valeur de chaîne** nommé `SmartCaptionExpression`.
+8. Avec le bouton droit le **concepteurs de données** nœud, puis créez un **valeur de chaîne** nommé `SmartCaptionExpression`.
 
 9. Avec le bouton droit le **concepteurs de données** nœud, puis créez un **valeur de chaîne** nommé `SmartCaptionReplacement`.
 
@@ -97,21 +96,21 @@ Lorsque vous faites glisser des éléments à partir de la [fenêtre Sources de 
 
 ### <a name="to-turn-off-the-smart-captioning-feature"></a>Pour désactiver la fonctionnalité de sous-titrage intelligente
 
-1.  Ouvrez une fenêtre de commande en cliquant sur **Démarrer** , puis **exécuter**.
+1. Ouvrez une fenêtre de commande en cliquant sur **Démarrer** , puis **exécuter**.
 
-2.  Type `regedit` dans le **exécuter** boîte de dialogue, puis cliquez sur **OK**.
+2. Type `regedit` dans le **exécuter** boîte de dialogue, puis cliquez sur **OK**.
 
-3.  Développez le **HKEY_CURRENT_USER** nœud.
+3. Développez le **HKEY_CURRENT_USER** nœud.
 
-4.  Développez le **logiciel** nœud.
+4. Développez le **logiciel** nœud.
 
-5.  Développez le **Microsoft** nœud.
+5. Développez le **Microsoft** nœud.
 
-6.  Développez le **VisualStudio** nœud.
+6. Développez le **VisualStudio** nœud.
 
-7.  Avec le bouton droit le **10.0** nœud, puis créez un **clé** nommé `Data Designers`.
+7. Avec le bouton droit le **10.0** nœud, puis créez un **clé** nommé `Data Designers`.
 
-8.  Avec le bouton droit le **concepteurs de données** nœud, puis créez un **valeur de chaîne** nommé `SmartCaptionExpression`.
+8. Avec le bouton droit le **concepteurs de données** nœud, puis créez un **valeur de chaîne** nommé `SmartCaptionExpression`.
 
 9. Avec le bouton droit le **concepteurs de données** nœud, puis créez un **valeur de chaîne** nommé `SmartCaptionReplacement`.
 

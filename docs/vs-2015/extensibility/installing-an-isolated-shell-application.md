@@ -11,12 +11,12 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c288da9345435969f7843f753625ce5471bb1878
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 55c4ebc96d93d9b068c29d24727d40975518b1ef
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950250"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062826"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Installation d’une Application de Shell isolé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,13 +45,13 @@ Pour installer une application de Shell, vous devez effectuer les étapes suivan
   
 #### <a name="to-prepare-a-shell-application-for-msi-deployment"></a>Pour préparer une application de Shell pour déploiement MSI  
   
-1.  Modifier chaque fichier .vsixmanifest dans votre solution.  
+1. Modifier chaque fichier .vsixmanifest dans votre solution.  
   
      Dans le `Identifier` élément, ajoutez un `InstalledByMSI` élément et un `SystemComponent` élément, puis définissez leurs valeurs `true`.  
   
      Ces éléments éviter le programme d’installation VSIX tente d’installer vos composants et l’utilisateur à partir de leur désinstallation à l’aide de la **Extensions et mises à jour** boîte de dialogue.  
   
-2.  Pour chaque projet qui contient un manifeste VSIX, modifier les tâches de génération pour générer le contenu à l’emplacement à partir de laquelle l’installation de votre identité MSI. Inclure le manifeste VSIX dans la sortie de génération, mais ne créez pas un fichier .vsix.  
+2. Pour chaque projet qui contient un manifeste VSIX, modifier les tâches de génération pour générer le contenu à l’emplacement à partir de laquelle l’installation de votre identité MSI. Inclure le manifeste VSIX dans la sortie de génération, mais ne créez pas un fichier .vsix.  
   
 ## <a name="creating-an-msi-for-your-shell"></a>Création d’un fichier MSI pour votre interpréteur de commandes  
  Pour générer votre package MSI, nous vous recommandons d’utiliser le [Windows Installer XML Toolset](http://go.microsoft.com/fwlink/?LinkId=82720) , car il offre davantage de flexibilité à un projet d’installation standard.  
@@ -85,7 +85,7 @@ Pour installer une application de Shell, vous devez effectuer les étapes suivan
   
 ##### <a name="to-set-the-layout-of-shell-components"></a>Pour définir la disposition des composants de l’interpréteur de commandes  
   
-1.  Créer une hiérarchie de `Directory` éléments pour représenter tous les répertoires à créer sur le système de fichiers sur l’ordinateur cible, comme le montre l’exemple suivant.  
+1. Créer une hiérarchie de `Directory` éléments pour représenter tous les répertoires à créer sur le système de fichiers sur l’ordinateur cible, comme le montre l’exemple suivant.  
   
     ```xml  
     <Directory Id="TARGETDIR" Name="SourceDir">  
@@ -105,7 +105,7 @@ Pour installer une application de Shell, vous devez effectuer les étapes suivan
   
      Ces répertoires sont désignés par `Id` lorsque les fichiers qui doivent être installées sont spécifiés.  
   
-2.  Identifier les composants qui nécessitent l’interpréteur de commandes et de votre application de Shell, comme le montre l’exemple suivant.  
+2. Identifier les composants qui nécessitent l’interpréteur de commandes et de votre application de Shell, comme le montre l’exemple suivant.  
   
     > [!NOTE]
     >  Certains éléments peuvent faire référence aux définitions dans d’autres fichiers .wxs.  
@@ -123,7 +123,7 @@ Pour installer une application de Shell, vous devez effectuer les étapes suivan
     </Feature>  
     ```  
   
-    1.  Le `ComponentRef` élément fait référence à un autre fichier .wxs qui identifie les fichiers requis par le composant actuel. Par exemple, GeneralProfile a la définition suivante dans HelpAbout.wxs.  
+    1. Le `ComponentRef` élément fait référence à un autre fichier .wxs qui identifie les fichiers requis par le composant actuel. Par exemple, GeneralProfile a la définition suivante dans HelpAbout.wxs.  
   
         ```xml  
         <Fragment Id="FragmentProfiles">  
@@ -139,7 +139,7 @@ Pour installer une application de Shell, vous devez effectuer les étapes suivan
   
          Le `DirectoryRef` élément spécifie où ces fichiers sont placés sur l’ordinateur de l’utilisateur. Le `Directory` élément spécifie qu’il sera installé dans un sous-répertoire et chaque `File` élément représente un fichier qui est généré ou qui existe dans le cadre de la solution et identifie où ce fichier est accessible lorsque le fichier MSI est créé.  
   
-    2.  Le `ComponentGroupRef` élément fait référence à un groupe d’autres composants (ou composants et groupes de composants). Par exemple, `ComponentGroupRef` sous ApplicationGroup est défini comme suit dans Application.wxs.  
+    2. Le `ComponentGroupRef` élément fait référence à un groupe d’autres composants (ou composants et groupes de composants). Par exemple, `ComponentGroupRef` sous ApplicationGroup est défini comme suit dans Application.wxs.  
   
         ```xml  
         <ComponentGroup Id="ApplicationGroup">  
@@ -166,15 +166,15 @@ Pour installer une application de Shell, vous devez effectuer les étapes suivan
   
 ##### <a name="to-integrate-registry-entries-into-the-msi"></a>Pour intégrer les entrées de Registre dans le fichier MSI  
   
-1.  Dans le **personnalisation du Shell** dossier, ouvrez *nom_projet*. reg.  
+1. Dans le **personnalisation du Shell** dossier, ouvrez *nom_projet*. reg.  
   
-2.  Remplacez toutes les instances du jeton $ $RootFolder par le chemin d’accès du répertoire d’installation cible.  
+2. Remplacez toutes les instances du jeton $ $RootFolder par le chemin d’accès du répertoire d’installation cible.  
   
-3.  Ajoutez toutes les entrées de Registre nécessaires à votre application.  
+3. Ajoutez toutes les entrées de Registre nécessaires à votre application.  
   
-4.  Ouvrez ApplicationRegistry.wxs.  
+4. Ouvrez ApplicationRegistry.wxs.  
   
-5.  Pour chaque entrée de Registre dans *nom_projet*.reg, ajoutez un bloc de Registre correspondante, comme le montrent les exemples suivants.  
+5. Pour chaque entrée de Registre dans *nom_projet*.reg, ajoutez un bloc de Registre correspondante, comme le montrent les exemples suivants.  
   
     |*ProjectName*.reg|ApplicationRegisty.wxs|  
     |-----------------------|----------------------------|  
@@ -186,24 +186,24 @@ Pour installer une application de Shell, vous devez effectuer les étapes suivan
 ## <a name="creating-a-setup-bootstrapper"></a>Création d’un programme d’amorçage du programme d’installation  
  Votre identité MSI terminée est installé uniquement si toutes les conditions préalables sont d’abord installés. Pour faciliter l’expérience utilisateur, créez un programme d’installation qui rassemble et installe toutes les conditions préalables avant d’installer votre application. Pour garantir une installation réussie, effectuez ces actions :  
   
--   Appliquer l’installation par l’administrateur.  
+- Appliquer l’installation par l’administrateur.  
   
--   Détecter si Visual Studio Shell (isolé) est installé.  
+- Détecter si Visual Studio Shell (isolé) est installé.  
   
--   Exécutez une ou les deux programmes d’installation d’interpréteur de commandes dans l’ordre.  
+- Exécutez une ou les deux programmes d’installation d’interpréteur de commandes dans l’ordre.  
   
--   Gérer les demandes de redémarrage.  
+- Gérer les demandes de redémarrage.  
   
--   Exécutez votre identité MSI.  
+- Exécutez votre identité MSI.  
   
 ### <a name="enforcing-installation-by-administrator"></a>Application de l’Installation par l’administrateur  
  Cette procédure est nécessaire pour activer le programme d’installation accéder aux répertoires requis, tels que les fichiers de \Program\\.  
   
 ##### <a name="to-enforce-installation-by-administrator"></a>Pour appliquer l’installation par l’administrateur  
   
-1.  Ouvrez le menu contextuel du projet d’installation, puis choisissez **propriétés**.  
+1. Ouvrez le menu contextuel du projet d’installation, puis choisissez **propriétés**.  
   
-2.  Sous **fichier de Configuration de l’éditeur de liens/propriétés/manifeste**, affectez la valeur **niveau d’exécution UAC** à **requireAdministrator**.  
+2. Sous **fichier de Configuration de l’éditeur de liens/propriétés/manifeste**, affectez la valeur **niveau d’exécution UAC** à **requireAdministrator**.  
   
      Cette propriété place l’attribut qui nécessite le programme à exécuter en tant qu’administrateur dans le fichier de manifeste incorporé.  
   
@@ -252,15 +252,15 @@ dwResult = ExecCmd("Vs_IsoShellLP.exe /norestart /q", TRUE);
   
  Pour gérer les redémarrages, effectuez ces actions :  
   
--   Configurer le Registre afin de reprendre l’installation lorsque Windows démarre.  
+- Configurer le Registre afin de reprendre l’installation lorsque Windows démarre.  
   
--   Effectuer un redémarrage double du programme d’amorçage.  
+- Effectuer un redémarrage double du programme d’amorçage.  
   
--   Supprimer la clé de ResumeData de Shell programme d’installation.  
+- Supprimer la clé de ResumeData de Shell programme d’installation.  
   
--   Redémarrez Windows.  
+- Redémarrez Windows.  
   
--   Réinitialiser le chemin d’accès de démarrage de service administré.  
+- Réinitialiser le chemin d’accès de démarrage de service administré.  
   
 ### <a name="setting-the-registry-to-resume-setup-when-windows-starts"></a>Le Registre pour reprendre le programme d’installation au démarrage de Windows  
  La clé de Registre HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce\ exécute au démarrage du système avec des autorisations administratives et puis est effacée. HKEY_CURRENT_USER contient une clé similaire, mais il s’exécute en mode utilisateur normal et n’est pas approprié pour les installations. Vous pouvez reprendre l’installation en plaçant une valeur de chaîne dans la clé RunOnce qui appelle votre programme d’installation. Toutefois, nous vous recommandons d’appeler le programme d’installation à l’aide un **/redémarrer** ou un paramètre similaire pour avertir l’application de reprise d’activité au lieu de démarrer. Vous pouvez également inclure des paramètres pour indiquer où vous êtes dans le processus d’installation, qui est particulièrement utile dans les installations qui peuvent nécessiter plusieurs redémarrages.  

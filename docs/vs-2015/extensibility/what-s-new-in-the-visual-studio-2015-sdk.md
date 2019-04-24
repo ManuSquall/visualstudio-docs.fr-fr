@@ -8,12 +8,12 @@ ms.assetid: c64aac80-a411-463f-b7bd-8b7607a52ece
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c419800a92f25ce4531c351d4131acf119633ccb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 506e39537614b50b72a515d882e5592c316cce26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949228"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080876"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Ce que&#39;s dans le Kit de développement logiciel Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ Le SDK Visual Studio a les fonctionnalités nouvelles et mises à jour suivantes
 
  Ces rubriques sont sous la [utilitaires VSSDK](../extensibility/internals/vssdk-utilities.md) section :
 
--   Le [outils de thèmes de couleur](../extensibility/internals/color-theming-tools.md) vous aider à créer et modifier des couleurs personnalisées pour Visual Studio.
+- Le [outils de thèmes de couleur](../extensibility/internals/color-theming-tools.md) vous aider à créer et modifier des couleurs personnalisées pour Visual Studio.
 
--   Le [Image Service outils](../extensibility/internals/image-service-tools.md) vous permettent d’utiliser avec des fichiers manifeste image de Visual Studio.
+- Le [Image Service outils](../extensibility/internals/image-service-tools.md) vous permettent d’utiliser avec des fichiers manifeste image de Visual Studio.
 
 ## <a name="new-way-to-add-the-visual-studio-sdk-to-visual-studio"></a>Nouvelle façon d’ajouter le SDK Visual Studio dans Visual Studio
  À partir de Visual Studio 2015, vous n’avez pas besoin de télécharger le SDK Visual Studio séparément. Au lieu de cela, vous pouvez l’installer dans le cadre du processus d’installation normale, ou vous pouvez choisir de l’installer ultérieurement sur. Lorsque vous ouvrez ou créez une solution VSIX, Visual Studio vous demandera d’installer les outils d’extensibilité de Visual Studio. Pour plus d’informations, consultez [l’installation de Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
@@ -40,17 +40,17 @@ Le SDK Visual Studio a les fonctionnalités nouvelles et mises à jour suivantes
  À partir du Kit de développement logiciel Visual Studio 2015, vous disposez des options différentes pour créer des extensions, en fonction de langage de programmation que vous utilisez.
 
 ### <a name="visual-c-and-visual-basic"></a>Visual C# et Visual Basic
- Pour C# et Visual Basic, il existe une gamme complète de modèles d’élément de projet qui vous permettent de créer des VSPackages, commandes de menu, fenêtres Outil, éditeur classifieurs, ornements d’éditeur et extensions marge de l’éditeur. Vous pouvez ajouter tout ou partie de ces options pour le projet VSIX standard. Pour plus d'informations, voir :
+ Pour c# et Visual Basic, il existe une gamme complète de modèles d’élément de projet qui vous permettent de créer des VSPackages, commandes de menu, fenêtres Outil, éditeur classifieurs, ornements d’éditeur et extensions marge de l’éditeur. Vous pouvez ajouter tout ou partie de ces options pour le projet VSIX standard. Pour plus d'informations, voir :
 
--   [Création d’une extension avec une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md)
+- [Création d’une extension avec une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 
--   [Création d’une extension avec une fenêtre d’outil](../extensibility/creating-an-extension-with-a-tool-window.md)
+- [Création d’une extension avec une fenêtre d’outil](../extensibility/creating-an-extension-with-a-tool-window.md)
 
--   [Création d’une extension avec un modèle d’élément d’éditeur](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+- [Création d’une extension avec un modèle d’élément d’éditeur](../extensibility/creating-an-extension-with-an-editor-item-template.md)
 
--   [Création d’une extension avec un package VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
+- [Création d’une extension avec un package VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
 
-     L’Assistant package Visual Studio ne crée plus extensions en C# ou Visual Basic.
+     L’Assistant package Visual Studio ne crée plus extensions en c# ou Visual Basic.
 
 ### <a name="c"></a>C++
  Pour C++, l’Assistant package Visual Studio prend en charge les commandes de menu, les fenêtres Outil et les éditeurs personnalisés. Recherchez dans le **nouveau projet** boîte de dialogue de **Visual C++ / extensibilité**.

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aa12fdc3eea5c353071fb4a80e2c99f2f9e060c2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9d831cb629665e641394d011bd11eb74481c4f94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629948"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087181"
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Procédure : Ajouter un lanceur de boîte de dialogue à un groupe de ruban
   Vous pouvez ajouter un lanceur de boîte de dialogue à n’importe quel groupe sur un ruban. Un lanceur de boîte de dialogue est une petite icône qui apparaît dans un groupe. Les utilisateurs cliquent sur cette icône pour ouvrir les boîtes de dialogue connexes ou des volets de tâches qui fournissent des options plus qui se rapportent au groupe.
@@ -27,11 +27,11 @@ ms.locfileid: "56629948"
 
 ### <a name="to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Pour ajouter un lanceur de boîte de dialogue à un groupe de ruban
 
-1.  Sélectionnez le fichier de code de ruban (*.vb* ou *.cs* fichier) dans **l’Explorateur de solutions**.
+1. Sélectionnez le fichier de code de ruban (*.vb* ou *.cs* fichier) dans **l’Explorateur de solutions**.
 
-2.  Sur le **vue** menu, cliquez sur **concepteur**.
+2. Sur le **vue** menu, cliquez sur **concepteur**.
 
-3.  Dans le Concepteur de ruban, cliquez sur n’importe quel groupe, puis cliquez sur **Ajouter DialogBoxLauncher**.
+3. Dans le Concepteur de ruban, cliquez sur n’importe quel groupe, puis cliquez sur **Ajouter DialogBoxLauncher**.
 
      Ajoutez le code pour le <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick> événement du groupe pour ouvrir une boîte de dialogue personnalisée ou intégrée.
 

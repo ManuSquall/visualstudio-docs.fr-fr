@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd16fa286c4e6343e69644caa60525a988e180e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a92554843c1bdde48123515cb2548b2c513ef756
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631677"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092303"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Scanneur et analyseur du service de langage hérité
 L’analyseur est le cœur du service de langage. Les classes de langage de Managed Package Framework (MPF) nécessitent un analyseur de langage pour sélectionner des informations sur le code affiché. Un analyseur sépare le texte en jetons lexicaux et identifie ces jetons par type et de fonctionnalités.
@@ -80,29 +80,29 @@ namespace MyNamespace
 
  Partons du principe que le service de langage prend en charge les accolades correspondantes.
 
-1.  L’utilisateur tape une accolade fermante (}).
+1. L’utilisateur tape une accolade fermante (}).
 
-2.  L’accolade est insérée au niveau du curseur dans le fichier source et le curseur est avancé d’une unité.
+2. L’accolade est insérée au niveau du curseur dans le fichier source et le curseur est avancé d’une unité.
 
-3.  Le <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> méthode dans la <xref:Microsoft.VisualStudio.Package.Source> classe est appelée avec l’accolade fermante typé.
+3. Le <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> méthode dans la <xref:Microsoft.VisualStudio.Package.Source> classe est appelée avec l’accolade fermante typé.
 
-4.  Le <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> les appels de méthode le <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> méthode dans la <xref:Microsoft.VisualStudio.Package.Source> classe pour obtenir le jeton à la position juste avant la position actuelle du curseur. Ce jeton correspond à l’accolade fermante typé).
+4. Le <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> les appels de méthode le <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> méthode dans la <xref:Microsoft.VisualStudio.Package.Source> classe pour obtenir le jeton à la position juste avant la position actuelle du curseur. Ce jeton correspond à l’accolade fermante typé).
 
-    1.  Le <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> les appels de méthode le <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> méthode sur le <xref:Microsoft.VisualStudio.Package.Colorizer> objet pour obtenir tous les jetons de la ligne actuelle.
+    1. Le <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> les appels de méthode le <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> méthode sur le <xref:Microsoft.VisualStudio.Package.Colorizer> objet pour obtenir tous les jetons de la ligne actuelle.
 
-    2.  Le <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> les appels de méthode le <xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A> méthode sur le <xref:Microsoft.VisualStudio.Package.IScanner> objet avec le texte de la ligne active.
+    2. Le <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> les appels de méthode le <xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A> méthode sur le <xref:Microsoft.VisualStudio.Package.IScanner> objet avec le texte de la ligne active.
 
-    3.  Le <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> méthode appelle à plusieurs reprises la <xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A> méthode sur le <xref:Microsoft.VisualStudio.Package.IScanner> objet à rassembler tous les jetons à partir de la ligne actuelle.
+    3. Le <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> méthode appelle à plusieurs reprises la <xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A> méthode sur le <xref:Microsoft.VisualStudio.Package.IScanner> objet à rassembler tous les jetons à partir de la ligne actuelle.
 
-    4.  Le <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> méthode appelle une méthode privée le <xref:Microsoft.VisualStudio.Package.Source> classe pour obtenir le jeton qui contient la position voulue et passe dans la liste des jetons obtenus à partir de la <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> (méthode).
+    4. Le <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> méthode appelle une méthode privée le <xref:Microsoft.VisualStudio.Package.Source> classe pour obtenir le jeton qui contient la position voulue et passe dans la liste des jetons obtenus à partir de la <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> (méthode).
 
-5.  Le <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> méthode recherche un indicateur de jetons de déclencheur de <xref:Microsoft.VisualStudio.Package.TokenTriggers> sur le jeton qui est retourné à partir de la <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> méthode ; autrement dit, le jeton qui représente l’accolade fermante).
+5. Le <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> méthode recherche un indicateur de jetons de déclencheur de <xref:Microsoft.VisualStudio.Package.TokenTriggers> sur le jeton qui est retourné à partir de la <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> méthode ; autrement dit, le jeton qui représente l’accolade fermante).
 
-6.  Si le déclencheur indicateur de <xref:Microsoft.VisualStudio.Package.TokenTriggers> est trouvée, le <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> méthode dans la <xref:Microsoft.VisualStudio.Package.Source> classe est appelée.
+6. Si le déclencheur indicateur de <xref:Microsoft.VisualStudio.Package.TokenTriggers> est trouvée, le <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> méthode dans la <xref:Microsoft.VisualStudio.Package.Source> classe est appelée.
 
-7.  Le <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> méthode démarre une opération d’analyse avec la valeur de motif de l’analyse de <xref:Microsoft.VisualStudio.Package.ParseReason>. Cette opération appelle finalement la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> méthode sur le <xref:Microsoft.VisualStudio.Package.LanguageService> classe. Si l’analyse asynchrone est activé, cet appel à la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> méthode se produit sur un thread d’arrière-plan.
+7. Le <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> méthode démarre une opération d’analyse avec la valeur de motif de l’analyse de <xref:Microsoft.VisualStudio.Package.ParseReason>. Cette opération appelle finalement la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> méthode sur le <xref:Microsoft.VisualStudio.Package.LanguageService> classe. Si l’analyse asynchrone est activé, cet appel à la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> méthode se produit sur un thread d’arrière-plan.
 
-8.  Lorsque l’opération d’analyse est terminée, un gestionnaire d’achèvement interne (également appelé une méthode de rappel) nommé `HandleMatchBracesResponse` est appelée le <xref:Microsoft.VisualStudio.Package.Source> classe. Cet appel est effectué automatiquement par le <xref:Microsoft.VisualStudio.Package.LanguageService> classe de base, pas par l’analyseur.
+8. Lorsque l’opération d’analyse est terminée, un gestionnaire d’achèvement interne (également appelé une méthode de rappel) nommé `HandleMatchBracesResponse` est appelée le <xref:Microsoft.VisualStudio.Package.Source> classe. Cet appel est effectué automatiquement par le <xref:Microsoft.VisualStudio.Package.LanguageService> classe de base, pas par l’analyseur.
 
 9. Le `HandleMatchBracesResponse` méthode obtient une liste d’étendues à partir de la <xref:Microsoft.VisualStudio.Package.AuthoringSink> objet qui est stocké dans le <xref:Microsoft.VisualStudio.Package.ParseRequest> objet. (Une étendue est un <xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan> structure qui spécifie une plage de lignes et de caractères dans le fichier source.) Cette liste d’étendues contient généralement deux étendues, une pour les accolades ouvrantes et fermantes.
 

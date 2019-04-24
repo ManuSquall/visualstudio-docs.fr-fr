@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5dfc0bccd0b5b8ae55f5e4df6aec1a85254e2220
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 12a46c424e8b2c44e0622edf4b4a615273580814
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600486"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657590"
 ---
 # <a name="application-deployment-prerequisites"></a>Prérequis pour le déploiement d’applications
 
@@ -45,10 +45,10 @@ Pour que votre application pour installer et exécuter avec succès, d’abord i
 
 - La version minimale de tous les assemblys qui doivent être préinstallés dans le global assembly cache (GAC), tel que spécifié par les déclarations de dépendance d’assembly dans le manifeste d’assembly.
 
-  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] peut détecter les composants requis manquants, et vous pouvez installer les conditions préalables à l’aide d’un programme d’amorçage. Pour plus d’informations, consultez [Comment : installer les composants requis avec une application ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).
+  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] peut détecter les composants requis manquants, et vous pouvez installer les conditions préalables à l’aide d’un programme d’amorçage. Pour plus d'informations, voir [Procédure : Installer des prérequis avec une application ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).
 
 > [!NOTE]
->  Pour changer les valeurs dans les manifestes générés par des outils comme [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] et *MageUI.exe*, vous devez changer le manifeste de l’application dans un éditeur de texte, puis signer à nouveau les manifestes de l’application et de déploiement. Pour plus d’informations, consultez [Guide pratique pour resigner des manifestes de déploiement et d’application](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
+>  Pour changer les valeurs dans les manifestes générés par des outils comme [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] et *MageUI.exe*, vous devez changer le manifeste de l’application dans un éditeur de texte, puis signer à nouveau les manifestes de l’application et de déploiement. Pour plus d'informations, voir [Procédure : Resigner des manifestes d’application et de déploiement](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
 
  Si vous utilisez Visual Studio et ClickOnce pour déployer votre application, les packages de programme d'amorçage sélectionnés par défaut dépendent de la version du .NET Framework de la solution. Cependant, si vous changez la version du .NET Framework cible, vous devez mettre à jour manuellement les options de la boîte de dialogue **Composants requis**.
 
@@ -70,7 +70,6 @@ Pour que votre application pour installer et exécuter avec succès, d’abord i
  Le *Setup.exe* généré par [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] et les tâches MSBuild prend en charge l’ensemble suivant d’arguments de ligne de commande. Tous les autres arguments sont transmis au programme d’installation de l’application.
 
  Si vous modifiez les options du programme d’amorçage, vous devez modifier le programme d’amorçage non signé et puis reconnectez-vous ultérieurement le fichier de programme d’amorçage.
-
 
 | Argument de ligne de commande | Description |
 | - | - |

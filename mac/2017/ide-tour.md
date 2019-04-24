@@ -6,17 +6,17 @@ ms.author: crdun
 ms.date: 02/07/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
-ms.openlocfilehash: 238370c5f8de5efdb37a29fea9d3e91763a0aa18
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 0ab7293a7b7d956778d1dbab568d609e6bf3d644
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58070033"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857255"
 ---
 # <a name="visual-studio-2017-for-mac-tour"></a>Visite guidée de Visual Studio 2017 pour Mac
 
 > [!NOTE]
-> Visual Studio 2019 pour Mac est [maintenant disponible](installation.md?view=vsmac-2019) en préversion à des fins de test.
+> Visual Studio 2019 pour Mac est [désormais disponible](installation.md).
 
 Visual Studio pour Mac est un _environnement de développement intégré_ .NET sur Mac qui permet de modifier, déboguer et générer du code, puis de publier une application. En plus des fonctionnalités attendues, comme l’éditeur et le débogueur standard, Visual Studio pour Mac comporte des compilateurs, des outils de complétion de code, des concepteurs graphiques et le contrôle de code source pour faciliter le développement de logiciels.
 

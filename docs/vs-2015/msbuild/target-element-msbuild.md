@@ -19,17 +19,16 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6e763c0a39e3785e91733105f8fc18eae324e958
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f14815502a33fb7d49a10c2724c57a4a0d86e9f7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758288"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651446"
 ---
 # <a name="target-element-msbuild"></a>Target, élément (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Contient un ensemble de tâches que [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] doit exécuter séquentiellement.  
   
  \<Project>  
@@ -64,8 +63,8 @@ Contient un ensemble de tâches que [!INCLUDE[vstecmsbuild](../includes/vstecmsb
 |---------------|-----------------|  
 |`Name`|Attribut requis.<br /><br /> Nom de la cible.|  
 |`Condition`|Attribut facultatif.<br /><br /> Condition à évaluer. Si la condition a la valeur `false`, la cible n’exécute pas le corps de la cible ni les cibles définies dans l’attribut `DependsOnTargets`. Pour plus d’informations sur les conditions, consultez l’article [Conditions (Conditions MSBuild)](../msbuild/msbuild-conditions.md).|  
-|`Inputs`|Attribut facultatif.<br /><br /> Fichiers qui constituent les entrées dans cette cible. Plusieurs fichiers sont séparés par des points-virgules. Les horodateurs des fichiers doivent être comparés à ceux des fichiers dans `Outputs` pour déterminer si la `Target` est à jour. Pour plus d’informations, consultez les articles [Incremental Builds (Générations incrémentielles)](../msbuild/incremental-builds.md), [How to: Build Incrementally (Comment : effectuer des générations incrémentielles)](../msbuild/how-to-build-incrementally.md) et [Transforms (Transformations MSBuild)](../msbuild/msbuild-transforms.md).|  
-|`Outputs`|Attribut facultatif.<br /><br /> Fichiers qui constituent les sorties dans cette cible. Plusieurs fichiers sont séparés par des points-virgules. Les horodateurs des fichiers doivent être comparés à ceux des fichiers dans `Inputs` pour déterminer si la `Target` est à jour. Pour plus d’informations, consultez les articles [Incremental Builds (Générations incrémentielles)](../msbuild/incremental-builds.md), [How to: Build Incrementally (Comment : effectuer des générations incrémentielles)](../msbuild/how-to-build-incrementally.md) et [Transforms (Transformations MSBuild)](../msbuild/msbuild-transforms.md).|  
+|`Inputs`|Attribut facultatif.<br /><br /> Fichiers qui constituent les entrées dans cette cible. Plusieurs fichiers sont séparés par des points-virgules. Les horodateurs des fichiers doivent être comparés à ceux des fichiers dans `Outputs` pour déterminer si la `Target` est à jour. Pour plus d’informations, consultez [Builds incrémentielles](../msbuild/incremental-builds.md), [Comment : Générer de façon incrémentielle](../msbuild/how-to-build-incrementally.md), et [transforme](../msbuild/msbuild-transforms.md).|  
+|`Outputs`|Attribut facultatif.<br /><br /> Fichiers qui constituent les sorties dans cette cible. Plusieurs fichiers sont séparés par des points-virgules. Les horodateurs des fichiers doivent être comparés à ceux des fichiers dans `Inputs` pour déterminer si la `Target` est à jour. Pour plus d’informations, consultez [Builds incrémentielles](../msbuild/incremental-builds.md), [Comment : Générer de façon incrémentielle](../msbuild/how-to-build-incrementally.md), et [transforme](../msbuild/msbuild-transforms.md).|  
 |`Returns`|Attribut facultatif.<br /><br /> Ensemble des éléments qui seront disponibles pour les tâches qui appellent cette cible, par exemple, les tâches MSBuild. Plusieurs cibles sont séparées par des points-virgules. Si les cibles du fichier sont dépourvues d’attributs `Returns`, les attributs Output sont utilisés à la place à cet effet.|  
 |`KeepDuplicateOutputs`|Attribut booléen facultatif.<br /><br /> Si `true`, plusieurs références au même élément dans l’attribut Returns de la cible sont enregistrées.  Par défaut, cet attribut est défini sur `false`.|  
 |`BeforeTargets`|Attribut facultatif.<br /><br /> Liste de noms de cibles séparés par des points-virgules.  Si spécifié, indique que cette cible doit être exécutée avant la ou les cibles spécifiées. L’auteur du projet peut alors étendre un ensemble existant de cibles sans les modifier directement. Pour plus d’informations, consultez l’article [Ordre de génération des cibles](../msbuild/target-build-order.md).|  
@@ -88,7 +87,7 @@ Contient un ensemble de tâches que [!INCLUDE[vstecmsbuild](../includes/vstecmsb
 |-------------|-----------------|  
 |[Projet](../msbuild/project-element-msbuild.md)|Élément racine requis d'un fichier projet [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] .|  
   
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
  La première cible à exécuter est spécifiée au moment de l’exécution. Les cibles peuvent avoir des relations de dépendance avec d’autres cibles. Par exemple, une cible de déploiement dépend d’une cible de compilation. Le moteur [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] exécute des dépendances dans l’ordre dans lequel elles apparaissent dans l’attribut `DependsOnTargets`, de gauche à droite. Pour plus d’informations, consultez l’article [Targets (Cibles MSBuild)](../msbuild/msbuild-targets.md).  
   
  Une cible est exécutée une seule fois pendant une génération, même si plusieurs cibles possèdent une relation de dépendance avec elle.  

@@ -12,12 +12,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0be2860408634d78b8d25403de99e7fcb410422c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 449e273659df1e3b6846ff8e7e3d8d6943ba69f4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953203"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079822"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>Ajouter des commandes et des mouvements aux diagrammes de couche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,30 +62,30 @@ Vous pouvez définir des commandes de menu contextuel et des gestionnaires de mo
   
 #### <a name="to-add-layer-extensions-to-a-separate-vsix"></a>Pour ajouter des extensions de couche à une extension VSIX distincte  
   
-1.  Créez un projet de bibliothèque de classes dans une solution Visual Studio nouvelle ou existante. Dans la boîte de dialogue **Nouveau projet** , cliquez sur **Visual C#** , puis sur **Bibliothèque de classes**. Ce projet contiendra les classes des commandes ou des gestionnaires de mouvements.  
+1. Créez un projet de bibliothèque de classes dans une solution Visual Studio nouvelle ou existante. Dans la boîte de dialogue **Nouveau projet** , cliquez sur **Visual C#** , puis sur **Bibliothèque de classes**. Ce projet contiendra les classes des commandes ou des gestionnaires de mouvements.  
   
     > [!NOTE]
     >  Vous pouvez définir plusieurs classes de gestionnaires de mouvements ou de commandes dans une bibliothèque de classes, mais vous devez définir les classes de validation de couche dans une bibliothèque de classes distincte.  
   
-2.  Identifiez ou créez un projet VSIX dans votre solution. Un projet VSIX contient un fichier nommé **source.extension.vsixmanifest**. Pour ajouter un projet VSIX :  
+2. Identifiez ou créez un projet VSIX dans votre solution. Un projet VSIX contient un fichier nommé **source.extension.vsixmanifest**. Pour ajouter un projet VSIX :  
   
-    1.  Dans la boîte de dialogue **Nouveau projet** , développez **Visual C#**, cliquez sur **Extensibilité**, puis sur **Projet VSIX**.  
+    1. Dans la boîte de dialogue **Nouveau projet** , développez **Visual C#**, cliquez sur **Extensibilité**, puis sur **Projet VSIX**.  
   
-    2.  Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet VSIX, puis cliquez sur **Définir comme projet de démarrage**.  
+    2. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur le projet VSIX, puis cliquez sur **Définir comme projet de démarrage**.  
   
-    3.  Cliquez sur **Sélectionner des éditions** et assurez-vous que **Visual Studio** est sélectionné.  
+    3. Cliquez sur **Sélectionner des éditions** et assurez-vous que **Visual Studio** est sélectionné.  
   
-3.  Dans **source.extension.vsixmanifest**, sous **Composants**, ajoutez le projet de commande ou de gestionnaire de mouvements en tant que composant MEF.  
+3. Dans **source.extension.vsixmanifest**, sous **Composants**, ajoutez le projet de commande ou de gestionnaire de mouvements en tant que composant MEF.  
   
-    1.  Sous l’onglet **Composants**, choisissez **Nouveau**.  
+    1. Sous l’onglet **Composants**, choisissez **Nouveau**.  
   
-    2.  Pour **Type**, sélectionnez **Microsoft.VisualStudio.MefComponent**.  
+    2. Pour **Type**, sélectionnez **Microsoft.VisualStudio.MefComponent**.  
   
-    3.  Pour **Source**, sélectionnez **Projet dans la solution actuelle** et sélectionnez le nom de votre projet de gestionnaire de mouvements ou de commande.  
+    3. Pour **Source**, sélectionnez **Projet dans la solution actuelle** et sélectionnez le nom de votre projet de gestionnaire de mouvements ou de commande.  
   
-    4.  Enregistrez le fichier.  
+    4. Enregistrez le fichier.  
   
-4.  Revenez au projet de gestionnaire de mouvements ou de commande et ajoutez les références de projet suivantes.  
+4. Revenez au projet de gestionnaire de mouvements ou de commande et ajoutez les références de projet suivantes.  
   
 |**Référence**|**Ce que cela vous permet de faire**|  
 |-------------------|------------------------------------|  
@@ -96,7 +96,7 @@ Vous pouvez définir des commandes de menu contextuel et des gestionnaires de mo
 |Microsoft.VisualStudio.Modeling.Sdk.[version]|Définir des extensions de modélisation|  
 |Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]|Mettre à jour des formes et des diagrammes|  
   
-1.  Modifiez le fichier de classe dans le projet de bibliothèque de classes C# pour contenir le code de votre extension. Pour plus d’informations, consultez l’une des sections suivantes :  
+1. Modifiez le fichier de classe dans le projet de bibliothèque de classes C# pour contenir le code de votre extension. Pour plus d’informations, consultez l’une des sections suivantes :  
   
      [Définition d’une commande de menu](#command)  
   
@@ -104,13 +104,13 @@ Vous pouvez définir des commandes de menu contextuel et des gestionnaires de mo
   
      Voir aussi [Parcourir et mise à jour des modèles dans le code de programme de couche](../modeling/navigate-and-update-layer-models-in-program-code.md).  
   
-2.  Pour tester la fonctionnalité, appuyez sur Ctrl+F5 ou F5. Une instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] s’ouvre. Dans cette instance, créez ou ouvrez un diagramme de couche.  
+2. Pour tester la fonctionnalité, appuyez sur Ctrl+F5 ou F5. Une instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] s’ouvre. Dans cette instance, créez ou ouvrez un diagramme de couche.  
   
-3.  Pour installer l’extension VSIX dans l’instance principale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ou sur un autre ordinateur, recherchez le fichier **.vsix** dans le répertoire **bin** du projet VSIX. Copiez-le sur l’ordinateur sur lequel vous souhaitez installer l’extension VSIX. Double-cliquez sur le fichier VSIX dans l’Explorateur Windows (l’Explorateur de fichiers dans Windows 8).  
+3. Pour installer l’extension VSIX dans l’instance principale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ou sur un autre ordinateur, recherchez le fichier **.vsix** dans le répertoire **bin** du projet VSIX. Copiez-le sur l’ordinateur sur lequel vous souhaitez installer l’extension VSIX. Double-cliquez sur le fichier VSIX dans l’Explorateur Windows (l’Explorateur de fichiers dans Windows 8).  
   
      Pour le désinstaller, utilisez **Extensions et mises à jour** dans le menu **Outils** .  
   
-##  <a name="command"></a> Définition d’une commande de menu  
+## <a name="command"></a> Définition d’une commande de menu  
  Vous pouvez ajouter plusieurs définitions de commandes de menu à un projet de commande ou de mouvement existant. Chaque commande est définie par une classe dont les caractéristiques sont les suivantes :  
   
 - La classe est déclarée comme suit :  
@@ -125,11 +125,11 @@ Vous pouvez définir des commandes de menu contextuel et des gestionnaires de mo
   
 - Les méthodes qui implémentent `ICommandExtension` sont les suivantes :  
   
-  -   `string Text {get;}` : l’étiquette qui apparaît dans le menu.  
+  - `string Text {get;}` : l’étiquette qui apparaît dans le menu.  
   
-  -   `void QueryStatus(IMenuCommand command)` : appelée quand l’utilisateur clique avec le bouton droit sur le diagramme et détermine si la commande doit être visible et activée pour la sélection actuelle de l’utilisateur.  
+  - `void QueryStatus(IMenuCommand command)` : appelée quand l’utilisateur clique avec le bouton droit sur le diagramme et détermine si la commande doit être visible et activée pour la sélection actuelle de l’utilisateur.  
   
-  -   `void Execute(IMenuCommand command)` : appelée quand l’utilisateur sélectionne la commande.  
+  - `void Execute(IMenuCommand command)` : appelée quand l’utilisateur sélectionne la commande.  
   
 - Pour déterminer la sélection actuelle, vous pouvez importer `IDiagramContext`:  
   
@@ -215,7 +215,7 @@ namespace MyLayerExtension // Change to your preference.
 }  
 ```  
   
-##  <a name="gesture"></a> Définition d’un gestionnaire de mouvements  
+## <a name="gesture"></a> Définition d’un gestionnaire de mouvements  
  Un gestionnaire de mouvements réagit quand l’utilisateur fait glisser des éléments sur le diagramme de couche et quand il double-clique n’importe où dans le diagramme.  
   
  Vous pouvez ajouter un fichier de code qui définit un gestionnaire de mouvements à votre projet VSIX de commande ou de gestionnaire de mouvements existant :  

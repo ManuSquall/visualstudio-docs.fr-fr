@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f7aade658b3fbc70c244e99a6537746bdd4f3c88
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b8c2bc30814af9cdc6181d08b313df20146f855e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951704"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080947"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Procédure : Ajouter un éditeur approuvé à un ordinateur Client pour les Applications ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,21 +39,21 @@ Avec le déploiement d’applications approuvées, vous pouvez configurer les or
   
 ### <a name="to-add-a-certificate-to-the-trusted-publishers-store-under-the-trusted-root"></a>Pour ajouter un certificat au magasin d’éditeurs approuvés sous la racine de confiance  
   
-1.  Obtenez un certificat numérique à partir d’une autorité de certification.  
+1. Obtenez un certificat numérique à partir d’une autorité de certification.  
   
-2.  Exportez le certificat au format Base64 X.509 (.cer). Pour plus d’informations sur les formats de certificats, consultez [Exporter un certificat](http://go.microsoft.com/fwlink/?LinkId=164793).  
+2. Exportez le certificat au format Base64 X.509 (.cer). Pour plus d’informations sur les formats de certificats, consultez [Exporter un certificat](http://go.microsoft.com/fwlink/?LinkId=164793).  
   
-3.  À partir de l’invite de commandes sur les ordinateurs clients, exécutez la commande suivante :  
+3. À partir de l’invite de commandes sur les ordinateurs clients, exécutez la commande suivante :  
   
      **certmgr.exe -add certificate.cer -c -s -r localMachine TrustedPublisher**  
   
 ### <a name="to-add-a-certificate-to-the-trusted-publishers-store-under-a-different-root"></a>Pour ajouter un certificat au magasin d’éditeurs approuvés sous une autre racine  
   
-1.  Obtenez un certificat numérique à partir d’une autorité de certification.  
+1. Obtenez un certificat numérique à partir d’une autorité de certification.  
   
-2.  Exportez le certificat au format Base64 X.509 (.cer). Pour plus d’informations sur les formats de certificats, consultez [Exporter un certificat](http://go.microsoft.com/fwlink/?LinkId=164793).  
+2. Exportez le certificat au format Base64 X.509 (.cer). Pour plus d’informations sur les formats de certificats, consultez [Exporter un certificat](http://go.microsoft.com/fwlink/?LinkId=164793).  
   
-3.  À partir de l’invite de commandes sur les ordinateurs clients, exécutez la commande suivante :  
+3. À partir de l’invite de commandes sur les ordinateurs clients, exécutez la commande suivante :  
   
      **certmgr.exe -add good.cer -c -s -r localMachine Root**  
   

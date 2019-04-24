@@ -26,22 +26,20 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f542c50f062da66d707e92409f3856304578e676
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 338b5a93ebedca14c6ceb531354cd1852fbaae6e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763391"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665426"
 ---
 # <a name="lib-task"></a>Tâche LIB
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Encapsule l'outil Gestionnaire de bibliothèques 32 bits de Microsoft, lib.exe. Le gestionnaire de bibliothèques crée et gère une bibliothèque de fichiers objets COFF (Common Object File Format). Il peut également créer des fichiers d'exportation et des bibliothèques d'importation pour référencer des définitions exportées. Pour plus d’informations, consultez [Référence LIB](http://msdn.microsoft.com/library/ecc7f643-bbd4-47a3-8dc6-b360f880db91) et [Exécution de LIB](http://msdn.microsoft.com/library/d54f5c81-7147-4b2c-a8db-68ce6eb1eabd).  
 
 ## <a name="parameters"></a>Paramètres  
  Le tableau ci-dessous décrit les paramètres de la tâche **LIB**. La plupart des paramètres de tâche correspondent à une option de ligne de commande.  
-
 
 |             Paramètre              |                                                                                                                                                                                                                                                                                                                                                                                                                                                                  Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -70,7 +68,7 @@ Encapsule l'outil Gestionnaire de bibliothèques 32 bits de Microsoft, lib.exe.
 |    **UseUnicodeResponseFiles**     |                                                                                                                                                                                                                                                                                                                                                               Paramètre **Boolean** facultatif.<br /><br /> Si la valeur est `true`, indique au système de projet de générer des fichiers réponse UNICODE quand le générateur de bibliothèques est créé dynamiquement. Spécifiez `true` quand les fichiers du projet ont des chemins d'accès UNICODE.                                                                                                                                                                                                                                                                                                                                                               |
 |            **Verbose**             |                                                                                                                                                                                                                                                                       Paramètre **Boolean** facultatif.<br /><br /> Si la valeur est `true`, affiche des détails sur la progression de la session ; ceux-ci incluent les noms des fichiers .obj en cours d'ajout. Les informations sont envoyées vers la sortie standard et peuvent être redirigées vers un fichier.<br /><br /> Pour plus d’informations, consultez l’option **/VERBOSE** dans [Exécution de LIB](http://msdn.microsoft.com/library/d54f5c81-7147-4b2c-a8db-68ce6eb1eabd).                                                                                                                                                                                                                                                                        |
 
-## <a name="remarks"></a>Remarques  
+## <a name="remarks"></a>Notes  
 
 ## <a name="see-also"></a>Voir aussi  
  [Task Reference (Informations de référence sur les tâches MSBuild)](../msbuild/msbuild-task-reference.md)

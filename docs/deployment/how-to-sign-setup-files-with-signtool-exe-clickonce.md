@@ -1,5 +1,5 @@
 ---
-title: 'Comment : signer des fichiers avec SignTool.exe (ClickOnce) d’installation | Microsoft Docs'
+title: 'Procédure : Connexion fichiers d’installation avec SignTool.exe (ClickOnce) | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edc6630bfe8dd5ee1fc48fe0d5abe189a63ab330
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 2f31ebeb18790ddf76c42585868aea8a04547bfb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619964"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041065"
 ---
-# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Guide pratique pour signer des fichiers avec SignTool.exe (ClickOnce)
+# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Procédure : Signer des fichiers d’installation avec SignTool.exe (ClickOnce)
 Vous pouvez utiliser *SignTool.exe* pour signer un programme d’installation (*setup.exe*). Ce processus aide à garantir que les fichiers falsifiés ne sont pas installés sur les ordinateurs des utilisateurs finaux.
 
  Par défaut, ClickOnce dispose de manifestes signés, ainsi que d'un programme d'installation signé. Toutefois, si vous souhaitez modifier ultérieurement les paramètres du programme d'installation, vous devrez également signer le programme d'installation. Si vous modifiez les paramètres après avoir signé le programme d'installation, la signature sera endommagée.
@@ -34,23 +34,23 @@ Vous pouvez utiliser *SignTool.exe* pour signer un programme d’installation (*
 
 ### <a name="to-generate-an-unsigned-setup-program-and-sign-later"></a>Pour générer un programme d'installation non signé et le signer ultérieurement
 
-1.  Sur l'ordinateur de développement, installez le certificat avec lequel vous souhaitez signer les manifestes.
+1. Sur l'ordinateur de développement, installez le certificat avec lequel vous souhaitez signer les manifestes.
 
-2.  Sélectionnez le projet dans **l’Explorateur de solutions**.
+2. Sélectionnez le projet dans **l’Explorateur de solutions**.
 
-3.  Dans le menu **Projet**, cliquez sur **Propriétés** de *NomProjet*.
+3. Dans le menu **Projet**, cliquez sur **Propriétés** de *NomProjet*.
 
-4.  Dans la page **Connexion**, décochez **Signer les manifestes ClickOnce**.
+4. Dans la page **Connexion**, décochez **Signer les manifestes ClickOnce**.
 
-5.  Dans la page **Publier**, cliquez sur **Composants requis**.
+5. Dans la page **Publier**, cliquez sur **Composants requis**.
 
-6.  Vérifiez que tous les composants requis sont sélectionnés, puis cliquez sur **OK**.
+6. Vérifiez que tous les composants requis sont sélectionnés, puis cliquez sur **OK**.
 
-7.  Dans la page **Publier**, vérifiez les paramètres de publication, puis cliquez sur **Publier maintenant**.
+7. Dans la page **Publier**, vérifiez les paramètres de publication, puis cliquez sur **Publier maintenant**.
 
      La solution publie le manifeste d'application non signé, le manifeste de déploiement non signé, les fichiers spécifiques à la version et le programme d'installation non signé à l'emplacement du dossier de publication.
 
-8.  Dans la page **Publier**, cliquez sur **Composants requis**.
+8. Dans la page **Publier**, cliquez sur **Composants requis**.
 
 9. Dans la boîte de dialogue **Composants requis**, vérifiez que la case **Créer un programme d’installation des composants requis** est cochée.
 

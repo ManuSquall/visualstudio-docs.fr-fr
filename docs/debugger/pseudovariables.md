@@ -18,10 +18,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: dbfd275625e949e87e2b4109e1d56eaeaf9d7e3c
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59366846"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudo-variables dans le débogueur Visual Studio
@@ -36,7 +36,7 @@ Les pseudo-variables sont des termes utilisés pour afficher certaines informati
 
 |Pseudo-variable|Fonction|
 |--------------------|--------------|
-|`$err`|Affiche la dernière valeur d'erreur définie avec la fonction SetLastError. La valeur affichée représente la valeur retournée par la fonction GetLastError.<br /><br /> Utilisez `$err,hr` pour afficher cette valeur sous une forme décodée. Par exemple, si la dernière erreur est 3, le `$err,hr` afficherait `ERROR_PATH_NOT_FOUND : The system cannot find the path specified.`|
+|`$err`|Affiche la dernière valeur d'erreur définie avec la fonction SetLastError. La valeur affichée représente la valeur retournée par la fonction GetLastError.<br /><br /> Utilisez `$err,hr` pour afficher cette valeur sous une forme décodée. Par exemple, si la dernière erreur est 3, `$err,hr` affiche `ERROR_PATH_NOT_FOUND : The system cannot find the path specified.`|
 |`$handles`|Affiche le nombre de handles alloués à votre application.|
 |`$vframe`|Affiche l'adresse du frame de pile actuel.|
 |`$tid`|Affiche l'ID du thread actuel.|

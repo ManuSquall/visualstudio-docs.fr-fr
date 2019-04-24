@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: be5140fda673b85991d2a9247cff5bd53329944d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 04af0f7a24cc4fc50cb65ac75f085ebf3385eeca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702458"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042117"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Procédure : Mise à jour une extension Visual Studio
 Vous pouvez mettre à jour une extension Visual Studio sur votre système à l’aide de **Extensions et mises à jour** pour installer la version mise à jour. Si vous créez une version mise à jour d’une extension, vous pouvez indiquer qu’elle a mis à jour en incrémentant le numéro de version dans le manifeste VSIX.
@@ -28,30 +28,30 @@ Vous pouvez mettre à jour une extension Visual Studio sur votre système à l�
 
 ## <a name="to-update-an-extension-on-your-system"></a>Pour mettre à jour une extension sur votre système
 
-1.  Dans le menu **Outils** , choisissez **Extensions et mises à jour**.
+1. Dans le menu **Outils** , choisissez **Extensions et mises à jour**.
 
-2.  Dans le volet gauche, cliquez sur **mises à jour**.
+2. Dans le volet gauche, cliquez sur **mises à jour**.
 
-3.  Dans le volet central, cliquez sur la mise à jour que vous souhaitez installer.
+3. Dans le volet central, cliquez sur la mise à jour que vous souhaitez installer.
 
      Le numéro de version de l’extension de mise à jour s’affiche dans le volet droit, ainsi que d’autres informations.
 
-4.  En bas du volet droit, cliquez sur **mise à jour**.
+4. En bas du volet droit, cliquez sur **mise à jour**.
 
 ## <a name="to-publish-an-update-of-an-extension"></a>Pour publier une mise à jour d’une extension
 
-1.  Dans Visual Studio, ouvrez la solution pour l’extension que vous souhaitez mettre à jour. Apportez les modifications.
+1. Dans Visual Studio, ouvrez la solution pour l’extension que vous souhaitez mettre à jour. Apportez les modifications.
 
     > [!IMPORTANT]
     >  Non signé que toutes les extensions utilisateur ne pas mis à jour automatiquement. Vous devez toujours signer vos extensions.
 
-2.  Dans **l’Explorateur de solutions**, ouvrez *source.extension.manifest*.
+2. Dans **l’Explorateur de solutions**, ouvrez *source.extension.manifest*.
 
-3.  Dans le Concepteur de manifestes, augmentez la valeur du nombre figurant dans le **Version** champ.
+3. Dans le Concepteur de manifestes, augmentez la valeur du nombre figurant dans le **Version** champ.
 
-4.  Enregistrez la solution et générez-le.
+4. Enregistrez la solution et générez-le.
 
-5.  Charger le nouveau *.vsix* fichier (dans le * \bin\Debug\* dossier du projet) pour le [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) site Web.
+5. Charger le nouveau *.vsix* fichier (dans le * \bin\Debug\* dossier du projet) pour le [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs) site Web.
 
      Lorsqu’un utilisateur disposant d’une version antérieure de l’extension ouvre **Extensions et mises à jour**, la nouvelle version s’affiche dans le **mises à jour** répertorier, à condition que l’outil est activée pour rechercher automatiquement des mises à jour.
 

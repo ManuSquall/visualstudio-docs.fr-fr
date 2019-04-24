@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c39ee1113d04cdd3212deccee626a96dd1e3dae7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 038ea6d6daec4c387d3344809d62bbbd67a12eee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947416"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057579"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Procédure : Supprimer les avertissements d’analyse de code pour le code généré
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,8 +30,8 @@ Les compilateurs de code managé génèrent souvent un code qui est ajouté à u
   
 ### <a name="to-suppress-warnings-for-generated-code-in-a-project"></a>Pour supprimer des avertissements pour du code généré dans un projet  
   
-1.  Cliquez sur le projet dans l’Explorateur de solutions, puis cliquez sur **propriétés**.  
+1. Cliquez sur le projet dans l’Explorateur de solutions, puis cliquez sur **propriétés**.  
   
-2.  Cliquez sur **analyse du Code**.  
+2. Cliquez sur **analyse du Code**.  
   
-3.  Sélectionnez le **supprimer les résultats du code généré** case à cocher.
+3. Sélectionnez le **supprimer les résultats du code généré** case à cocher.

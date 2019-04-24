@@ -2,7 +2,7 @@
 title: Supprimer Visual Studio
 titleSuffix: ''
 description: Découvrez comment supprimer complètement Visual Studio de votre ordinateur, étape par étape.
-ms.date: 09/12/2017
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -22,18 +22,18 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c115b345dbc1ddd3b13b2e0e7a9363229d971ea2
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 779771c51299239814f7ddd6a9cdbfbed017ac72
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58322715"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790119"
 ---
 # <a name="remove-visual-studio"></a>Supprimer Visual Studio
 
-Si vous rencontrez une erreur grave et que vous ne pouvez pas réparer ou désinstaller Visual Studio, vous pouvez exécuter l’outil `InstallCleanup.exe` pour supprimer les fichiers d’installation et les informations produit de toutes les instances installées de Visual Studio 2017 et ultérieur. Cet outil ne doit être exécuté qu’en dernier recours, lorsque la réparation ou la désinstallation échouent. En effet, l’outil peut désinstaller des fonctionnalités d’autres installations de Visual Studio ou d’autres produits qui doivent être réparés.
+Si vous rencontrez une erreur grave et ne parvenez pas à réparer ou à désinstaller Visual Studio, vous pouvez exécuter l’outil `InstallCleanup.exe` pour supprimer les fichiers d’installation et les informations produit de toutes les instances installées de Visual Studio 2017 ou 2019. Cet outil ne doit être exécuté qu’en dernier recours, lorsque la réparation ou la désinstallation échouent. En effet, l’outil peut désinstaller des fonctionnalités d’autres installations de Visual Studio ou d’autres produits qui doivent alors aussi être réparés.
 
-Dans les instructions ci-dessous, vous pouvez exécuter l’outil avec différents commutateurs de ligne de commande au comportement suivant :
+Dans les instructions suivantes, vous pouvez exécuter l’outil avec différents commutateurs de ligne de commande au comportement suivant :
 
 | Basculer | Comportement |
 | ------ | -------- |
@@ -42,8 +42,7 @@ Dans les instructions ci-dessous, vous pouvez exécuter l’outil avec différen
 
 1. Fermez le programme d’installation de Visual Studio.
 2. Ouvrez une invite de commandes administrateur. Pour ouvrir une invite de commandes administrateur, suivez les étapes ci-dessous :
-   * Cliquez sur le menu **Démarrer**
-   * Tapez **cmd**.
+   * Tapez **cmd** dans la zone « Tapez ici pour effectuer une recherche ».
    * Cliquez avec le bouton droit de la souris sur **Invite de commande**, puis cliquez sur **Exécuter en tant qu'administrateur**.
 3. Tapez le chemin complet de l’utilitaire `InstallCleanup.exe` et passez le commutateur de ligne de commande de votre choix. Par défaut, le chemin de l’utilitaire est le suivant :
    ```

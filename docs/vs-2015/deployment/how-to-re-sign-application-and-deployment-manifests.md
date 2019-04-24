@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4c1942e39895439eb040109a34353d6c361e95c5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: adc2347e6928a841a0a2c24d1d786be8edcbc4ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951443"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045777"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Procédure : Re-signer des manifestes d’application et de déploiement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ Une fois que vous apportez des modifications aux propriétés de déploiement da
   
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Pour signer à nouveau l’application et déploiement manifestes avec Mage.exe  
   
-1.  Ouvrir un **invite de commandes Visual Studio** fenêtre.  
+1. Ouvrir un **invite de commandes Visual Studio** fenêtre.  
   
-2.  Accédez au dossier qui contient les fichiers manifeste que vous souhaitez vous connecter.  
+2. Accédez au dossier qui contient les fichiers manifeste que vous souhaitez vous connecter.  
   
-3.  Tapez la commande suivante pour signer le fichier manifeste d’application. Remplacez ManifestFileName par le nom de votre fichier manifeste ainsi que l’extension. Remplacez le certificat avec le chemin d’accès qualifié complet ou relatif du fichier de certificat et remplacez le mot de passe avec le mot de passe pour le certificat.  
+3. Tapez la commande suivante pour signer le fichier manifeste d’application. Remplacez ManifestFileName par le nom de votre fichier manifeste ainsi que l’extension. Remplacez le certificat avec le chemin d’accès qualifié complet ou relatif du fichier de certificat et remplacez le mot de passe avec le mot de passe pour le certificat.  
   
     ```  
     mage -sign ManifestFileName.manifest -CertFile Certificate -Password Password  
@@ -56,7 +56,7 @@ Une fois que vous apportez des modifications aux propriétés de déploiement da
     mage -sign WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-4.  Tapez la commande suivante pour mettre à jour et signer le fichier manifeste de déploiement, en remplaçant les noms d’espace réservé, comme dans l’étape précédente.  
+4. Tapez la commande suivante pour mettre à jour et signer le fichier manifeste de déploiement, en remplaçant les noms d’espace réservé, comme dans l’étape précédente.  
   
     ```  
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password  
@@ -70,20 +70,20 @@ Une fois que vous apportez des modifications aux propriétés de déploiement da
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-5.  Si vous le souhaitez, copiez le manifeste de déploiement principal (publier\\*appname*.application) dans le répertoire de déploiement de votre version (publish\Application Files\\*appname*_ *version*).  
+5. Si vous le souhaitez, copiez le manifeste de déploiement principal (publier\\*appname*.application) dans le répertoire de déploiement de votre version (publish\Application Files\\*appname*_ *version*).  
   
 ## <a name="updating-and-re-signing-the-application-and-deployment-manifests"></a>La mise à jour et signer à nouveau les manifestes d’Application et déploiement  
  Cette procédure suppose que vous avez déjà apporté des modifications à votre application (.manifest) de fichier manifeste, mais qu’il existe d’autres fichiers qui ont été mis à jour. Lorsque les fichiers sont mis à jour, le hachage qui représente le fichier doit également être mis à jour.  
   
 #### <a name="to-update-and-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Pour mettre à jour et signer à nouveau l’application et déploiement manifestes avec Mage.exe  
   
-1.  Ouvrir un **invite de commandes Visual Studio** fenêtre.  
+1. Ouvrir un **invite de commandes Visual Studio** fenêtre.  
   
-2.  Accédez au dossier qui contient les fichiers manifeste que vous souhaitez vous connecter.  
+2. Accédez au dossier qui contient les fichiers manifeste que vous souhaitez vous connecter.  
   
-3.  Supprimer l’extension de fichier .deploy à partir des fichiers dans le dossier de sortie de publication.  
+3. Supprimer l’extension de fichier .deploy à partir des fichiers dans le dossier de sortie de publication.  
   
-4.  Tapez la commande suivante pour mettre à jour le manifeste d’application avec les nouveaux hachages pour les fichiers mis à jour et signer le fichier manifeste d’application. Remplacez ManifestFileName par le nom de votre fichier manifeste ainsi que l’extension. Remplacez le certificat avec le chemin d’accès qualifié complet ou relatif du fichier de certificat et remplacez le mot de passe avec le mot de passe pour le certificat.  
+4. Tapez la commande suivante pour mettre à jour le manifeste d’application avec les nouveaux hachages pour les fichiers mis à jour et signer le fichier manifeste d’application. Remplacez ManifestFileName par le nom de votre fichier manifeste ainsi que l’extension. Remplacez le certificat avec le chemin d’accès qualifié complet ou relatif du fichier de certificat et remplacez le mot de passe avec le mot de passe pour le certificat.  
   
     ```  
     mage -update ManifestFileName.manifest -CertFile Certificate -Password Password  
@@ -97,7 +97,7 @@ Une fois que vous apportez des modifications aux propriétés de déploiement da
     mage -update WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-5.  Tapez la commande suivante pour mettre à jour et signer le fichier manifeste de déploiement, en remplaçant les noms d’espace réservé, comme dans l’étape précédente.  
+5. Tapez la commande suivante pour mettre à jour et signer le fichier manifeste de déploiement, en remplaçant les noms d’espace réservé, comme dans l’étape précédente.  
   
     ```  
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password  
@@ -111,9 +111,9 @@ Une fois que vous apportez des modifications aux propriétés de déploiement da
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-6.  Ajouter l’extension de fichier .deploy vers les fichiers, sauf les fichiers de manifeste de l’application et déploiement.  
+6. Ajouter l’extension de fichier .deploy vers les fichiers, sauf les fichiers de manifeste de l’application et déploiement.  
   
-7.  Si vous le souhaitez, copiez le manifeste de déploiement principal (publier\\*appname*.application) dans le répertoire de déploiement de votre version (publish\Application Files\\*appname*_ *version*).  
+7. Si vous le souhaitez, copiez le manifeste de déploiement principal (publier\\*appname*.application) dans le répertoire de déploiement de votre version (publish\Application Files\\*appname*_ *version*).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Sécurisation des applications ClickOnce](../deployment/securing-clickonce-applications.md)   

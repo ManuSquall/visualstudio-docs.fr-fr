@@ -13,12 +13,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 29b6500ab138883c8cbf71eda5a0afad1329494e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6d721ebc5849fc459d24173ad0500b4b1c12260f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938619"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092238"
 ---
 # <a name="namesearchoptions"></a>NameSearchOptions
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -67,11 +67,11 @@ enum NameSearchOptions { 
 ## <a name="remarks"></a>Notes  
  Les valeurs de cette énumération sont passées aux méthodes suivantes :  
   
--   [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  
+- [IDiaSession::findChildren](../../debugger/debug-interface-access/idiasession-findchildren.md)  
   
--   [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)  
+- [IDiaSession::findFile](../../debugger/debug-interface-access/idiasession-findfile.md)  
   
--   [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)  
+- [IDiaSymbol::findChildren](../../debugger/debug-interface-access/idiasymbol-findchildren.md)  
   
 ## <a name="requirements"></a>Configuration requise  
  En-tête : dia2.h  

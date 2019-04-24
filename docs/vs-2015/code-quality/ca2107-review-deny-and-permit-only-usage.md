@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 425a7363e03dcc8a967853bbe574f29678df11a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7de14898c5fb2bb6f8e95a2af5fd6b39a54cdb1d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949622"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082150"
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107 : Passez en revue l'utilisation des méthodes Deny et PermitOnly
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "58949622"
 
  Code qui s’appuie sur ces actions doit être évaluation minutieuse des vulnérabilités de sécurité en raison de leur utilité limitée et leur comportement subtile. Considérez ce qui suit :
 
--   [Demandes de liaison](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) ne sont pas affectés par Deny ou PermitOnly.
+- [Demandes de liaison](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) ne sont pas affectés par Deny ou PermitOnly.
 
--   Si Deny ou PermitOnly se produit dans le même frame de pile en tant que la demande qui déclenche le parcours de pile, les actions de sécurité n’ont aucun effet.
+- Si Deny ou PermitOnly se produit dans le même frame de pile en tant que la demande qui déclenche le parcours de pile, les actions de sécurité n’ont aucun effet.
 
--   Les valeurs qui sont utilisés pour construire des autorisations basées sur le chemin d’accès peuvent généralement être spécifiés de plusieurs façons. Refuser l’accès à une forme de chemin d’accès ne pas refuse l’accès à toutes les formes. Par exemple, si un partage de fichiers \\\Server\Share est mappé à un lecteur réseau x, pour refuser l’accès à un fichier sur le partage, vous devez refuser \\\Server\Share\File, X:\File et chaque autre chemin d’accès qui accède au fichier.
+- Les valeurs qui sont utilisés pour construire des autorisations basées sur le chemin d’accès peuvent généralement être spécifiés de plusieurs façons. Refuser l’accès à une forme de chemin d’accès ne pas refuse l’accès à toutes les formes. Par exemple, si un partage de fichiers \\\Server\Share est mappé à un lecteur réseau x, pour refuser l’accès à un fichier sur le partage, vous devez refuser \\\Server\Share\File, X:\File et chaque autre chemin d’accès qui accède au fichier.
 
--   Un <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> peut mettre fin à un parcours de pile avant que Deny ou PermitOnly soit atteinte.
+- Un <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> peut mettre fin à un parcours de pile avant que Deny ou PermitOnly soit atteinte.
 
--   Si une instruction Deny a un effet, à savoir, quand un appelant dispose d’une autorisation qui est bloquée par le refus, l’appelant peut accéder directement, la ressource protégée en contournant la refuser. De même, si l’appelant n’a pas l’autorisation refusée, le parcours de pile échoue sans la refuser.
+- Si une instruction Deny a un effet, à savoir, quand un appelant dispose d’une autorisation qui est bloquée par le refus, l’appelant peut accéder directement, la ressource protégée en contournant la refuser. De même, si l’appelant n’a pas l’autorisation refusée, le parcours de pile échoue sans la refuser.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Toute utilisation de ces actions de sécurité entraîne une violation. Pour corriger une violation, n’utilisez pas ces actions de sécurité.

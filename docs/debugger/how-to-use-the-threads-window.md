@@ -18,13 +18,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e3a87fd0480727a524b36ab209f5126b0f996c30
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58790795"
 ---
-# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>Procédure pas à pas : Débogage d’une application multithread à l’aide de la fenêtre Threads (C#, Visual Basic, C++)
+# <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>Procédure pas à pas : Déboguer une application multithread à l’aide de la fenêtre Threads (C#, Visual Basic, C++)
 
 Plusieurs éléments d’interface utilisateur Visual Studio vous aider à déboguer des applications multithreads. Cet article présente les fonctionnalités de débogage multithreads dans la fenêtre d’éditeur de code, **emplacement de débogage** barre d’outils, et **Threads** fenêtre. Pour plus d’informations sur les autres outils pour déboguer les applications multithreads, consultez [commencer le débogage d’applications multithreads](../debugger/get-started-debugging-multithreaded-apps.md).
 
@@ -37,7 +37,7 @@ Créer le projet d’application multithread suivant à utiliser dans ce didacti
 1. Ouvrez Visual Studio et créez un projet.
 
     ::: moniker range=">=vs-2019"
-    Appuyez sur **ÉCHAP** pour fermer la fenêtre de démarrage. Type **Ctrl + Q** pour ouvrir la zone de recherche, tapez **console** (ou **c ++**), choisissez **modèles**, puis :
+    Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Type **Ctrl + Q** pour ouvrir la zone de recherche, tapez **console** (ou **c ++**), choisissez **modèles**, puis :
 
     - Pour C#, choisissez **créer un nouveau projet application Console (.NET Framework)** pour C#. Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
     - Pour C++, choisissez **créer un nouveau projet application Console**. Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
@@ -47,7 +47,7 @@ Créer le projet d’application multithread suivant à utiliser dans ce didacti
     ::: moniker range="vs-2017"
     Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans le volet gauche de la **nouveau projet** boîte de dialogue, sélectionnez les éléments suivants :
     - Pour un C# application, sous **Visual C#** , choisissez **Windows Desktop**, puis, dans le volet central, choisissez **application Console (.NET Framework)**.
-    - Pour une application C++, sous **Visual C++**, choisissez **Windows Desktop**,, puis **Application de Console Windows**.
+    - Pour un C++ application, sous **Visual C++** , choisissez **Windows Desktop**,, puis **Application de Console Windows**.
 
     Ensuite, tapez un nom tel que **MyThreadWalkthroughApp** et cliquez sur **OK**.
     ::: moniker-end
@@ -56,7 +56,7 @@ Créer le projet d’application multithread suivant à utiliser dans ce didacti
 
     Le nouveau projet s’affiche dans **l’Explorateur de solutions**, et un fichier source appelé *Program.cs* ou *MyThreadWalkthroughApp.cpp* s’ouvre dans la fenêtre de code source.
 
-1. Remplacez le code dans le fichier source avec le C# ou exemple de code C++ à partir de [commencer le débogage d’applications multithreads](../debugger/get-started-debugging-multithreaded-apps.md).
+1. Remplacez le code dans le fichier source avec le C# ou C++ exemple de code à partir de [commencer le débogage d’applications multithreads](../debugger/get-started-debugging-multithreaded-apps.md).
 
 1. Sélectionnez **fichier** > **Enregistrer tout**.
 
@@ -109,7 +109,7 @@ Indicateur et supprimer des threads à partir de l’éditeur de code source ou 
 
 1. Ouvrez le **emplacement de débogage** la barre d’outils en sélectionnant **vue** > **barres d’outils** > **emplacement de débogage**. Vous pouvez également avec le bouton droit dans la zone de barre d’outils et sélectionnez **emplacement de débogage**.
 
-1. Le **emplacement de débogage** barre d’outils a trois champs : **processus**, **Thread**, et **Frame de pile**. Liste déroulante la **Thread** liste, puis notez le nombre de threads. Dans le **Thread** liste, le thread en cours d’exécution est marqué par un **>** symbole.
+1. Le **emplacement de débogage** barre d’outils a trois champs : **Processus**, **Thread**, et **Frame de pile**. Liste déroulante la **Thread** liste, puis notez le nombre de threads. Dans le **Thread** liste, le thread en cours d’exécution est marqué par un **>** symbole.
 
 1. Dans la fenêtre de code source, placez le curseur sur une icône de marqueur de thread dans la marge et sélectionnez l’icône d’indicateur (ou une des icônes d’indicateur vide) dans le DataTip. L’icône d’indicateur devient rouge.
 

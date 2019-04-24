@@ -10,21 +10,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f025ca2d73e98f8191969510f866cb7eb1d0eea
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fc9d1e793405b2eb83fe4f72980a71e44d1acbd1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695951"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051789"
 ---
 # <a name="document-position"></a>Position du document
 Dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] débogage, un *document position*:
 
--   Fournit une abstraction d’une position dans un fichier source connues de l’IDE. Pour la plupart des langages aujourd'hui, une position de document peut être considérée comme une position dans un fichier source.
+- Fournit une abstraction d’une position dans un fichier source connues de l’IDE. Pour la plupart des langages aujourd'hui, une position de document peut être considérée comme une position dans un fichier source.
 
--   Décrit une position dans un document source pour un moteur de débogage.
+- Décrit une position dans un document source pour un moteur de débogage.
 
--   Est implémentée par un [IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md) interface.
+- Est implémentée par un [IDebugDocumentPosition2](../../extensibility/debugger/reference/idebugdocumentposition2.md) interface.
 
 ## <a name="see-also"></a>Voir aussi
 - [Contexte de code](../../extensibility/debugger/code-context.md)

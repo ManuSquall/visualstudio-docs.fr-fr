@@ -9,19 +9,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9906f3b8af624e1761b73c3338bad98b263aa9e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 66159516c6b1360203130dedb56c0e6c192a118a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957180"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050009"
 ---
 # <a name="security-of-text-templates"></a>Sécurité des modèles de texte
 Modèles de texte ont des problèmes de sécurité suivants :
 
--   Modèles de texte sont vulnérables aux insertions de code arbitraire.
+- Modèles de texte sont vulnérables aux insertions de code arbitraire.
 
--   Si le mécanisme que l’hôte utilise pour rechercher un processeur de directive n’est pas sécurisé, un processeur de directive malveillant peut être exécuté.
+- Si le mécanisme que l’hôte utilise pour rechercher un processeur de directive n’est pas sécurisé, un processeur de directive malveillant peut être exécuté.
 
 ## <a name="arbitrary-code"></a>Code arbitraire
  Lorsque vous écrivez un modèle, vous pouvez placer n’importe quel code dans le \<## > balises. Cela permet à du code arbitraire à être exécutée à partir d’un modèle de texte.

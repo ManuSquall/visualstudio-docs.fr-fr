@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour enregistrer des données avec une transaction
+title: 'Procédure : Enregistrer des données à l’aide d’une transaction'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8d5d47cfc21b0aebef884fade422600be2beeb58
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: bf5864d25e78b6050da5c13097503b2998dda44a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924368"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080993"
 ---
-# <a name="how-to-save-data-by-using-a-transaction"></a>Guide pratique pour enregistrer des données avec une transaction
+# <a name="how-to-save-data-by-using-a-transaction"></a>Procédure : Enregistrer des données à l’aide d’une transaction
 
 Vous enregistrez des données dans une transaction en utilisant le <xref:System.Transactions> espace de noms. Utilisez le <xref:System.Transactions.TransactionScope> objet de participer à une transaction qui est gérée automatiquement pour vous.
 
@@ -37,15 +37,15 @@ Pour restaurer la transaction, lève une exception avant d’appeler le <xref:Sy
 
 ## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>Pour ajouter une référence à la System.Transactions.dll.
 
-1.  Sur le **projet** menu, sélectionnez **ajouter une référence**.
+1. Sur le **projet** menu, sélectionnez **ajouter une référence**.
 
-2.  Sur le **.NET** onglet (**SQL Server** onglet pour les projets SQL Server), sélectionnez **System.Transactions**, puis sélectionnez **OK**.
+2. Sur le **.NET** onglet (**SQL Server** onglet pour les projets SQL Server), sélectionnez **System.Transactions**, puis sélectionnez **OK**.
 
      Une référence à *System.Transactions.dll* est ajouté au projet.
 
 ## <a name="to-save-data-in-a-transaction"></a>Pour enregistrer les données dans une transaction
 
--   Ajoutez du code pour enregistrer des données dans à l’aide de l’instruction qui contient la transaction. Le code suivant montre comment créer et instancier un <xref:System.Transactions.TransactionScope> objet dans un à l’aide de déclaration :
+- Ajoutez du code pour enregistrer des données dans à l’aide de l’instruction qui contient la transaction. Le code suivant montre comment créer et instancier un <xref:System.Transactions.TransactionScope> objet dans un à l’aide de déclaration :
 
      [!code-vb[VbRaddataSaving#11](../data-tools/codesnippet/VisualBasic/save-data-by-using-a-transaction_1.vb)]
      [!code-csharp[VbRaddataSaving#11](../data-tools/codesnippet/CSharp/save-data-by-using-a-transaction_1.cs)]

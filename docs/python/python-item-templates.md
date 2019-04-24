@@ -3,19 +3,19 @@ title: Modèles d’éléments pour les projets Python
 description: Une liste de référence des modèles d’éléments pour les projets Python qui sont disponibles via la fonction Ajouter > Nouvel élément de boîte de dialogue dans Visual Studio.
 ms.date: 12/06/2018
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 119ce4b4221995bdbe3225c895defd5d471377d9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c093dad1364fd5209f51c8e87e3fb99b3c1d3c4a
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924693"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366456"
 ---
 # <a name="python-item-templates"></a>Modèles d’éléments Python
 
@@ -39,7 +39,7 @@ Le tableau suivant décrit brièvement l’effet de chaque modèle d’élément
 | **Fichier texte** | Un fichier *.txt* vide. |
 | **Application Django 1.9**<br/>**Application Django 1.4** | Un dossier portant le nom de l’application, qui contient les principaux fichiers d’une application Django, comme indiqué dans [Découvrir Django dans Visual Studio, étape 2-2](learn-django-in-visual-studio-step-02-create-an-app.md#step-2-1-create-an-app-with-a-default-structure) pour Django 1.9. Pour Django 1.4, le dossier *migrations*, le fichier *admin.py* et le fichier *apps.py* ne sont pas inclus. |
 | **Fenêtre IronPython WPF** | Une fenêtre WPF composée de deux fichiers côte à côte : un fichier *.xaml* qui définit `<Window>` avec un élément `<Grid>` vide, et un fichier *.py* associé qui charge le fichier XAML à l’aide de la bibliothèque `wpf`. Généralement utilisé dans un projet créé avec un des modèles de projet IronPython. Consultez [Gérer les projets Python - Modèles de projet](managing-python-projects-in-visual-studio.md#project-templates). |
-| **Fichiers de prise en charge des rôles web** | Un dossier *bin* à la racine du projet (quel que soit le dossier sélectionné dans le projet). Le dossier contient un script de déploiement par défaut et un fichier *web.config* pour les rôles web Azure Cloud Services. Le modèle comprend également un fichier *readme.html* qui explique tous les détails. |
+| **Fichiers de prise en charge des rôles Web** | Un dossier *bin* à la racine du projet (quel que soit le dossier sélectionné dans le projet). Le dossier contient un script de déploiement par défaut et un fichier *web.config* pour les rôles web Azure Cloud Services. Le modèle comprend également un fichier *readme.html* qui explique tous les détails. |
 | **Fichiers de prise en charge des rôles de travail** | Un dossier *bin* à la racine du projet (quel que soit le dossier sélectionné dans le projet). Le dossier contient un script de déploiement et de lancement par défaut, ainsi qu’un fichier *web.config*, pour les rôles de travail Azure Cloud Services. Le modèle comprend également un fichier *readme.html* qui explique tous les détails. |
 | **Fichier web.config Azure (FastCGI)** | Un fichier *web.config* qui contient des entrées pour les applications utilisant un objet [WSGI](https://wsgi.readthedocs.io/en/latest/) afin de prendre en charge les connexions entrantes. Ce fichier est généralement déployé à la racine d’un serveur web sous IIS. Pour plus d’informations, voir [Configurer une application pour IIS](configure-web-apps-for-iis-windows.md). |
 | **Fichier web.config Azure (HttpPlatformHandler)** | Un fichier *web.config* qui contient des entrées pour les applications qui sont à l’écoute des connexions entrantes sur un socket. Ce fichier est généralement déployé à la racine d’un serveur web exécutant IIS, tel qu’Azure App Service. Pour plus d’informations, voir [Configurer une application pour IIS](configure-web-apps-for-iis-windows.md). |
@@ -48,6 +48,6 @@ Le tableau suivant décrit brièvement l’effet de chaque modèle d’élément
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Gérer les projets Python - Modèles de projet](managing-python-projects-in-visual-studio.md#project-templates)
+- [Gérer les projets Python – Modèles de projet](managing-python-projects-in-visual-studio.md#project-templates)
 - [Modèles de projet web Python](python-web-application-project-templates.md)
 - [Publier sur Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)

@@ -1,5 +1,5 @@
 ---
-title: Extraire la méthode (refactorisation C#) | Microsoft Docs
+title: Extraire la méthode (refactorisation c#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -16,12 +16,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b2d38c46d630f7deccaec8c093c2c4e75456eec0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5a889250e641e004bdb0d89f6965c43c3d6b8e2a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938525"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041396"
 ---
 # <a name="extract-method-refactoring-c"></a>Extraire la méthode (Refactorisation C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,19 +32,19 @@ ms.locfileid: "58938525"
   
  **Extraire la méthode** présente les avantages suivants :  
   
--   Encourage les meilleures pratiques de codage en mettant l’accent sur les méthodes discrètes et réutilisables.  
+- Encourage les meilleures pratiques de codage en mettant l’accent sur les méthodes discrètes et réutilisables.  
   
--   Encourage le code auto-documenté via une bonne organisation.  
+- Encourage le code auto-documenté via une bonne organisation.  
   
      Lorsque des noms descriptifs sont des méthodes utilisées, de haut niveau peuvent se lire comme une série de commentaires.  
   
--   Encourage la création de méthodes à granularité fine pour simplifier la substitution.  
+- Encourage la création de méthodes à granularité fine pour simplifier la substitution.  
   
--   Réduit la duplication de code.  
+- Réduit la duplication de code.  
   
 ### <a name="to-use-extract-method"></a>Pour utiliser extraire la méthode  
   
-1.  Créez une application console nommée `ExtractMethod`, puis remplacez `Program` par l'exemple de code suivant.  
+1. Créez une application console nommée `ExtractMethod`, puis remplacez `Program` par l'exemple de code suivant.  
   
     ```csharp  
     class A  
@@ -68,13 +68,13 @@ ms.locfileid: "58938525"
     }  
     ```  
   
-2.  Sélectionnez le fragment de code que vous souhaitez extraire :  
+2. Sélectionnez le fragment de code que vous souhaitez extraire :  
   
     ```csharp  
     double area = PI * radius * radius;  
     ```  
   
-3.  Sur le **refactoriser** menu, cliquez sur **extraire la méthode**.  
+3. Sur le **refactoriser** menu, cliquez sur **extraire la méthode**.  
   
      Le **extraire la méthode** boîte de dialogue s’affiche.  
   
@@ -82,11 +82,11 @@ ms.locfileid: "58938525"
   
      Vous pouvez également cliquer sur le texte sélectionné de code, pointez sur **refactoriser**, puis cliquez sur **extraire la méthode** pour afficher le **extraire la méthode** boîte de dialogue.  
   
-4.  Spécifiez un nom pour la nouvelle méthode, tel que `CircleArea`, dans le **nouveau nom de la méthode** boîte.  
+4. Spécifiez un nom pour la nouvelle méthode, tel que `CircleArea`, dans le **nouveau nom de la méthode** boîte.  
   
      Un aperçu de la nouvelle signature de méthode s’affiche sous **Signature de méthode Preview**.  
   
-5.  Cliquez sur **OK**.  
+5. Cliquez sur **OK**.  
   
 ## <a name="remarks"></a>Notes  
  Lorsque vous utilisez le **extraire la méthode** commande, la nouvelle méthode est insérée à la suite du membre source dans la même classe.  

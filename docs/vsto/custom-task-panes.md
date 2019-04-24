@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f034797a773602f714ce69193ce6987ba9560bf5
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 9e6ebd09188e737e75c9e5f66ed95411e1a9453d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526701"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106200"
 ---
 # <a name="custom-task-panes"></a>Volets de tâches personnalisés
   Les volets de tâches sont des panneaux d'interface utilisateur généralement ancrés à l'un des côtés d'une fenêtre dans une application Microsoft Office. Les volets de tâches personnalisés vous permettent de créer votre propre volet de tâches et de fournir aux utilisateurs une interface familière pour accéder aux fonctionnalités de votre solution. Par exemple, l'interface peut comporter des contrôles exécutant du code pour modifier des documents ou afficher des données à partir d'une source de données.
@@ -126,7 +126,7 @@ ms.locfileid: "57526701"
 
  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] nettoie automatiquement les ressources utilisées par le volet de tâches personnalisé quand le complément VSTO est déchargé. N’appelez pas la <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> ou <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> méthodes dans le `ThisAddIn_Shutdown` Gestionnaire d’événements dans votre projet. Ces méthodes lèvent une exception <xref:System.ObjectDisposedException> car [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] nettoie les ressources utilisées par l'objet <xref:Microsoft.Office.Tools.CustomTaskPane> avant l'appel de `ThisAddIn_Shutdown`. Pour plus d’informations sur `ThisAddIn_Shutdown`, consultez [événements dans les projets Office](../vsto/events-in-office-projects.md)
 
-##  <a name="Managing"></a> Gérer les volets de tâches personnalisés dans plusieurs fenêtres d’application
+## <a name="Managing"></a> Gérer les volets de tâches personnalisés dans plusieurs fenêtres d’application
  Quand vous créez un volet de tâches personnalisé dans une application qui utilise plusieurs fenêtres pour afficher des documents et d'autres éléments, vous devez prendre des mesures supplémentaires pour garantir l'affichage du volet de tâches quand l'utilisateur s'attend à le voir.
 
  Dans toutes les applications, les volets de tâches personnalisés sont associés à une fenêtre frame de document, qui présente une vue d’un document ou d’un élément à l’utilisateur. Le volet de tâches est visible uniquement quand la fenêtre associée est visible. Toutefois, toutes les applications n'utilisent pas les fenêtres frame de document de la même façon.
@@ -137,7 +137,7 @@ ms.locfileid: "57526701"
 
 - [Word, InfoPath et PowerPoint](#WordAndInfoPath)
 
-##  <a name="Outlook"></a> Outlook
+## <a name="Outlook"></a> Outlook
  Quand vous créez un volet de tâches personnalisé pour Outlook, le volet est associé à une fenêtre d’explorateur ou d’inspecteur spécifique. Explorateurs sont des fenêtres qui affichent le contenu d’un dossier, et les inspecteurs sont des fenêtres qui affichent un élément tel qu’un message électronique ou une tâche.
 
  Pour afficher un volet de tâches personnalisé avec plusieurs fenêtres d’explorateur ou d’inspecteur, vous devez créer une nouvelle instance du volet de tâches personnalisé quand une fenêtre d’explorateur ou d’inspecteur s’ouvre. Pour cela, gérez un événement qui se déclenche quand une fenêtre d'explorateur ou d'inspecteur est créée, puis créez le volet de tâches dans le gestionnaire d'événements. Vous pouvez également gérer les événements d’explorateur et d’inspecteur pour masquer ou afficher les volets de tâches en fonction de la fenêtre visible.
@@ -167,7 +167,7 @@ ms.locfileid: "57526701"
 
  Si vous ne supprimez pas explicitement le volet de tâches personnalisé, les fenêtres Outlook peuvent afficher plusieurs instances du volet de tâches personnalisé. Outlook recycle parfois des fenêtres. Ces fenêtres recyclées conservent les références aux éventuels volets de tâches personnalisés qui leur ont été attachés.
 
-##  <a name="WordAndInfoPath"></a> Word, InfoPath et PowerPoint
+## <a name="WordAndInfoPath"></a> Word, InfoPath et PowerPoint
  Word, InfoPath et PowerPoint affichent chaque document dans une fenêtre frame de document différente. Quand vous créez un volet de tâches personnalisé pour ces applications, le volet est associé uniquement à un document spécifique. Si l’utilisateur ouvre un autre document, le volet de tâches personnalisé est masqué jusqu’à ce que le document précédent soit de nouveau visible.
 
  Pour afficher un volet de tâches personnalisé avec plusieurs documents, créez une nouvelle instance du volet de tâches personnalisé quand l’utilisateur crée un nouveau document ou ouvre un document existant. Pour cela, gérez les événements qui se déclenchent quand un document est créé ou ouvert, puis créez le volet de tâches dans les gestionnaires d’événements. Vous pouvez également gérer les événements de document pour masquer ou afficher les volets de tâches en fonction du document visible.
@@ -177,43 +177,43 @@ ms.locfileid: "57526701"
 ### <a name="word-events"></a>Événements Word
  Pour surveiller l'état des fenêtres de document dans Word, vous pouvez gérer les événements suivants :
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeClose>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeClose>
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen>
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.NewDocument>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.NewDocument>
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.WindowActivate>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.WindowActivate>
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.WindowDeactivate>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.WindowDeactivate>
 
 ### <a name="infopath-events"></a>Événements InfoPath
  Pour surveiller l'état des fenêtres de document dans InfoPath, vous pouvez gérer les événements suivants :
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.NewXDocument>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.NewXDocument>
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowActivate>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowActivate>
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowDeactivate>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowDeactivate>
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentBeforeClose>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentBeforeClose>
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentOpen>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentOpen>
 
 ### <a name="powerpoint-events"></a>Événements PowerPoint
  Pour surveiller l'état des fenêtres de document dans PowerPoint, vous pouvez gérer les événements suivants :
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterNewPresentation](/previous-versions/office/developer/office-2010/ff761105(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterNewPresentation](/previous-versions/office/developer/office-2010/ff761105(v%3doffice.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v%3doffice.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.NewPresentation](/previous-versions/office/developer/office-2010/ff761498(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.NewPresentation](/previous-versions/office/developer/office-2010/ff761498(v%3doffice.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationOpen](/previous-versions/office/developer/office-2010/ff760423(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationOpen](/previous-versions/office/developer/office-2010/ff760423(v=office.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowActivate](/previous-versions/office/developer/office-2010/ff761153(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowActivate](/previous-versions/office/developer/office-2010/ff761153(v=office.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
 
 ## <a name="see-also"></a>Voir aussi
 - [Guide pratique pour Ajouter un volet Office personnalisé à une application](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)

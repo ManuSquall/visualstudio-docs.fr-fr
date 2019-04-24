@@ -11,19 +11,19 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 40c9c3d2da03b70b75f5c2edd8c256e1e35ea0b4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 4fb6543f5e741010ae19e706ee4a87352d678390
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769318"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063788"
 ---
 # <a name="concurrency-visualizer-sdk"></a>Kit SDK du visualiseur concurrentiel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez instrumenter votre code source à l’aide du kit SDK du visualiseur concurrentiel pour afficher des informations supplémentaires dans le visualiseur concurrentiel. Vous pouvez associer les données supplémentaires à des phases et à des événements de votre code. Ces visualisations supplémentaires sont appelées *marqueurs*.  Pour obtenir une introduction pas à pas, consultez [Introducing the Concurrency Visualizer SDK](http://go.microsoft.com/fwlink/?LinkId=235405).  
   
-## <a name="properties"></a>Propriétés  
+## <a name="properties"></a>Properties  
  Les indicateurs, les intervalles et les messages ont deux propriétés : la catégorie et l’importance. Dans la boîte de dialogue [Paramètres avancés](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md), vous pouvez utiliser ces propriétés pour filtrer l’affichage des marqueurs. Ces propriétés ont également un impact sur la représentation visuelle des marqueurs. Par exemple, la taille des indicateurs est utilisée pour représenter l’importance. La couleur, quant à elle, est utilisée pour indiquer la catégorie.  
   
 ## <a name="basic-usage"></a>Utilisation de base  
@@ -34,11 +34,11 @@ Vous pouvez instrumenter votre code source à l’aide du kit SDK du visualiseur
   
 ##### <a name="to-add-sdk-support-to-a-c-or-visual-basic-project"></a>Pour ajouter la prise en charge du kit SDK à un projet C# ou Visual Basic  
   
-1.  Dans la barre de menus, choisissez **Analyser**, **Visualiseur concurrentiel**, **Ajouter le SDK au projet**.  
+1. Dans la barre de menus, choisissez **Analyser**, **Visualiseur concurrentiel**, **Ajouter le SDK au projet**.  
   
-2.  Sélectionnez le projet dans lequel vous souhaitez accéder au kit SDK, puis cliquez sur le bouton **Ajouter le SDK au projet sélectionné**.  
+2. Sélectionnez le projet dans lequel vous souhaitez accéder au kit SDK, puis cliquez sur le bouton **Ajouter le SDK au projet sélectionné**.  
   
-3.  Ajoutez une instruction imports ou using à votre code.  
+3. Ajoutez une instruction imports ou using à votre code.  
   
     ```csharp  
     using Microsoft.ConcurrencyVisualizer.Instrumentation;  
@@ -53,19 +53,19 @@ Vous pouvez instrumenter votre code source à l’aide du kit SDK du visualiseur
   
 ##### <a name="to-add-sdk-support-to-a-c-or-c-project"></a>Pour ajouter la prise en charge du kit SDK à un projet C++ ou C  
   
-1.  Dans la barre de menus, choisissez **Analyser**, **Visualiseur concurrentiel**, **Ajouter le SDK au projet**.  
+1. Dans la barre de menus, choisissez **Analyser**, **Visualiseur concurrentiel**, **Ajouter le SDK au projet**.  
   
-2.  Sélectionnez le projet dans lequel vous souhaitez accéder au kit SDK, puis cliquez sur le bouton **Ajouter le SDK au projet sélectionné**.  
+2. Sélectionnez le projet dans lequel vous souhaitez accéder au kit SDK, puis cliquez sur le bouton **Ajouter le SDK au projet sélectionné**.  
   
-3.  En C++, ajoutez `cvmarkersobj.h`. En C, ajoutez `cvmarkers.h`.  
+3. En C++, ajoutez `cvmarkersobj.h`. En C, ajoutez `cvmarkers.h`.  
   
-4.  Ajoutez une instruction using à votre code.  
+4. Ajoutez une instruction using à votre code.  
   
     ```  
     using namespace Concurrency::diagnostic;  
     ```  
   
-5.  Créez un objet `marker_series` et passez-le au constructeur `span`.  
+5. Créez un objet `marker_series` et passez-le au constructeur `span`.  
   
     ```cpp  
   
@@ -79,19 +79,19 @@ Vous pouvez instrumenter votre code source à l’aide du kit SDK du visualiseur
   
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-visual-basic-project"></a>Pour utiliser un nouveau fournisseur de marqueurs dans un projet C# ou Visual Basic  
   
-1.  Créez un objet <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter>.  Le constructeur accepte un GUID.  
+1. Créez un objet <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter>.  Le constructeur accepte un GUID.  
   
-2.  Pour inscrire le fournisseur, ouvrez la boîte de dialogue [Paramètres avancés](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) du visualiseur concurrentiel.  Sélectionnez l’onglet **Marqueurs**, puis cliquez sur le bouton **Ajouter un nouveau fournisseur**. Dans la boîte de dialogue [Paramètres avancés](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md), entrez le GUID qui a été utilisé pour créer le fournisseur, ainsi que la description du fournisseur.  
+2. Pour inscrire le fournisseur, ouvrez la boîte de dialogue [Paramètres avancés](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) du visualiseur concurrentiel.  Sélectionnez l’onglet **Marqueurs**, puis cliquez sur le bouton **Ajouter un nouveau fournisseur**. Dans la boîte de dialogue [Paramètres avancés](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md), entrez le GUID qui a été utilisé pour créer le fournisseur, ainsi que la description du fournisseur.  
   
 #### <a name="to-use-a-new-marker-provider-in-a-c-or-c-project"></a>Pour utiliser un nouveau fournisseur de marqueurs dans un projet C++ ou C  
   
-1.  Utilisez la fonction `CvInitProvider` pour initialiser un PCV_PROVIDER.  Le constructeur accepte un GUID* et un PCV_PROVIDER\*.  
+1. Utilisez la fonction `CvInitProvider` pour initialiser un PCV_PROVIDER.  Le constructeur accepte un GUID* et un PCV_PROVIDER\*.  
   
-2.  Pour inscrire le fournisseur, ouvrez la boîte de dialogue [Paramètres avancés](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md).  Sélectionnez l’onglet **Marqueurs**, puis cliquez sur le bouton **Ajouter un nouveau fournisseur**. Dans la boîte de dialogue, entrez le GUID qui a été utilisé pour créer le fournisseur, ainsi que la description du fournisseur.  
+2. Pour inscrire le fournisseur, ouvrez la boîte de dialogue [Paramètres avancés](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md).  Sélectionnez l’onglet **Marqueurs**, puis cliquez sur le bouton **Ajouter un nouveau fournisseur**. Dans la boîte de dialogue, entrez le GUID qui a été utilisé pour créer le fournisseur, ainsi que la description du fournisseur.  
   
 #### <a name="to-use-a-marker-series-in-a-c-or-visual-basic-project"></a>Pour utiliser une série de marqueurs dans un projet C# ou Visual Basic  
   
-1.  Pour utiliser un nouveau <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries>, commencez par en créer un à l’aide d’un objet <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter>, puis générez les événements de marqueur directement à partir de la nouvelle série.  
+1. Pour utiliser un nouveau <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries>, commencez par en créer un à l’aide d’un objet <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerWriter>, puis générez les événements de marqueur directement à partir de la nouvelle série.  
   
     ```csharp  
     MarkerSeries series1 = myMarkerWriter.CreateMarkerSeries(″Series 1″);  
@@ -105,7 +105,7 @@ Vous pouvez instrumenter votre code source à l’aide du kit SDK du visualiseur
   
 #### <a name="to-use-a-marker-series-in-a-c-project"></a>Pour utiliser une série de marqueurs dans un projet en C++  
   
-1.  Créez un objet `marker_series`.  Vous pouvez générer des événements à partir de cette nouvelle série.  
+1. Créez un objet `marker_series`.  Vous pouvez générer des événements à partir de cette nouvelle série.  
   
     ```scr  
     marker_series series;  
@@ -114,7 +114,7 @@ Vous pouvez instrumenter votre code source à l’aide du kit SDK du visualiseur
   
 #### <a name="to-use-a-marker-series-in-a-c-project"></a>Pour utiliser une série de marqueurs dans un projet en C  
   
-1.  Utilisez la fonction `CvCreateMarkerSeries` pour créer une série PCV_MARKERSERIES.  
+1. Utilisez la fonction `CvCreateMarkerSeries` pour créer une série PCV_MARKERSERIES.  
   
     ```cpp  
     PCV_MARKERSERIES series;  

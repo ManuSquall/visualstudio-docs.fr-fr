@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 151b62062c6846902643deef2c6cc93c315d4f4a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9d053bcd5e8b1824334f9953ac14881fdc0315be
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942594"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083334"
 ---
 # <a name="customizing-the-properties-window"></a>Personnalisation de la fenêtre Propriétés
 Vous pouvez personnaliser l’apparence et le comportement de la fenêtre Propriétés dans votre langage spécifique à un domaine (DSL) dans Visual Studio. Dans votre définition DSL, vous définissez les propriétés de domaine sur chaque classe de domaine. Par défaut, lorsque vous sélectionnez une instance de la classe, sur un diagramme ou dans l’Explorateur de modèles, chaque propriété de domaine est répertoriée dans la fenêtre Propriétés. Vous pouvez ainsi afficher et modifier les valeurs des propriétés de domaine, même si vous n’avez pas mappé les aux champs de forme sur le diagramme.
@@ -47,13 +47,13 @@ Vous pouvez personnaliser l’apparence et le comportement de la fenêtre Propri
 ### <a name="default-property-forwarding-cases"></a>Cas de transfert de propriété par défaut
  Lorsque l’utilisateur sélectionne une forme ou connecteur ou un élément dans l’Explorateur, les propriétés suivantes sont affichent dans la fenêtre Propriétés :
 
--   Les propriétés de domaine qui sont définies sur la classe de domaine de l’élément de modèle, y compris ceux qui sont définis dans les classes de base. Une exception est les propriétés du domaine pour lequel vous avez défini **Is Browsable** à `False`.
+- Les propriétés de domaine qui sont définies sur la classe de domaine de l’élément de modèle, y compris ceux qui sont définis dans les classes de base. Une exception est les propriétés du domaine pour lequel vous avez défini **Is Browsable** à `False`.
 
--   Les noms des éléments qui sont liées via des relations qui ont une multiplicité de 0.. 1. Cela fournit une méthode pratique d’afficher éventuellement lié éléments, même si vous n’avez pas défini un mappage de connecteur pour la relation.
+- Les noms des éléments qui sont liées via des relations qui ont une multiplicité de 0.. 1. Cela fournit une méthode pratique d’afficher éventuellement lié éléments, même si vous n’avez pas défini un mappage de connecteur pour la relation.
 
--   Propriétés du domaine de la relation d’incorporation qui cible l’élément. Étant donné que les relations d’incorporation ne sont généralement pas affichées explicitement, cela permet à l’utilisateur afficher leurs propriétés.
+- Propriétés du domaine de la relation d’incorporation qui cible l’élément. Étant donné que les relations d’incorporation ne sont généralement pas affichées explicitement, cela permet à l’utilisateur afficher leurs propriétés.
 
--   Propriétés de domaine qui sont définies sur la forme sélectionnée ou le connecteur.
+- Propriétés de domaine qui sont définies sur la forme sélectionnée ou le connecteur.
 
 ### <a name="adding-property-forwarding"></a>Ajout de transfert de propriété
  Pour transférer une propriété, vous définissez un descripteur de type de domaine. Si vous avez une relation de domaine entre deux classes de domaine, vous pouvez utiliser un descripteur de type de domaine pour définir une propriété de domaine dans la première classe à la valeur d’une propriété de domaine dans la deuxième classe de domaine. Par exemple, si vous disposez d’une relation entre un **livre** de classe de domaine et un **auteur** de classe de domaine, vous pouvez utiliser un descripteur de type de domaine pour rendre le **nom** propriété d’un Du livre **auteur** s’affichent dans la fenêtre Propriétés lorsque l’utilisateur sélectionne le livre.
@@ -112,14 +112,14 @@ Vous pouvez personnaliser l’apparence et le comportement de la fenêtre Propri
 
 2. Ajoutez le type à la **des Types de domaine** répertorier, sauf si vous avez déjà fait.
 
-   1.  Ouvrez DslDefinition.dsl, puis, dans **Explorateur DSL**, cliquez sur le nœud racine, puis cliquez sur **ajouter un nouveau Type externe**.
+   1. Ouvrez DslDefinition.dsl, puis, dans **Explorateur DSL**, cliquez sur le nœud racine, puis cliquez sur **ajouter un nouveau Type externe**.
 
         Une nouvelle entrée apparaît sous le **des Types de domaine** nœud.
 
        > [!WARNING]
        >  L’élément de menu n’est pas sur le nœud racine DSL, le **des Types de domaine** nœud.
 
-   2.  Dans la fenêtre Propriétés, définissez le nom et l’espace de noms du nouveau type.
+   2. Dans la fenêtre Propriétés, définissez le nom et l’espace de noms du nouveau type.
 
 3. Ajouter une propriété de domaine à une classe de domaine de la manière habituelle.
 
@@ -144,9 +144,9 @@ Vous pouvez personnaliser l’apparence et le comportement de la fenêtre Propri
 
 ##### <a name="to-define-a-file-name-domain-property"></a>Pour définir une propriété de domaine de nom de fichier
 
-1.  Ajouter une propriété de domaine à une classe de domaine dans votre définition DSL.
+1. Ajouter une propriété de domaine à une classe de domaine dans votre définition DSL.
 
-2.  Sélectionnez la nouvelle propriété. Dans le **attribut personnalisé** dans la fenêtre Propriétés, entrez l’attribut suivant. Pour cet attribut, cliquez sur le bouton de sélection **[...]**  , puis entrez le nom d’attribut et les paramètres séparément :
+2. Sélectionnez la nouvelle propriété. Dans le **attribut personnalisé** dans la fenêtre Propriétés, entrez l’attribut suivant. Pour cet attribut, cliquez sur le bouton de sélection **[...]**  , puis entrez le nom d’attribut et les paramètres séparément :
 
     ```csharp
     [System.ComponentModel.Editor (
@@ -155,15 +155,15 @@ Vous pouvez personnaliser l’apparence et le comportement de la fenêtre Propri
 
     ```
 
-3.  Conservez le Type de la propriété de domaine à sa valeur par défaut **chaîne**.
+3. Conservez le Type de la propriété de domaine à sa valeur par défaut **chaîne**.
 
-4.  Pour tester l’éditeur, vérifiez que les utilisateurs peuvent ouvrir l’éditeur de nom de fichier pour modifier votre propriété de domaine.
+4. Pour tester l’éditeur, vérifiez que les utilisateurs peuvent ouvrir l’éditeur de nom de fichier pour modifier votre propriété de domaine.
 
-    1.  Appuyez sur CTRL + F5 ou F5. Dans la solution de débogage, ouvrez un fichier de test. Créer un élément de la classe de domaine et sélectionnez-le.
+    1. Appuyez sur CTRL + F5 ou F5. Dans la solution de débogage, ouvrez un fichier de test. Créer un élément de la classe de domaine et sélectionnez-le.
 
-    2.  Dans la fenêtre Propriétés, sélectionnez la propriété de domaine. Le champ de valeur montre les points de suspension **[...]** .
+    2. Dans la fenêtre Propriétés, sélectionnez la propriété de domaine. Le champ de valeur montre les points de suspension **[...]** .
 
-    3.  Cliquez sur le bouton de sélection. Une boîte de dialogue s’affiche. Sélectionnez un fichier et fermer la boîte de dialogue. Le chemin d’accès de fichier est désormais la valeur de la propriété de domaine.
+    3. Cliquez sur le bouton de sélection. Une boîte de dialogue s’affiche. Sélectionnez un fichier et fermer la boîte de dialogue. Le chemin d’accès de fichier est désormais la valeur de la propriété de domaine.
 
 ### <a name="defining-your-own-property-editor"></a>Définir votre propre éditeur de propriété
  Vous pouvez définir votre propre éditeur. Vous faites cela pour autoriser l’utilisateur à modifier un type que vous avez définies, ou pour modifier un type standard d’une façon particulière. Par exemple, vous pouvez autoriser l’utilisateur à entrer une chaîne qui représente une formule.

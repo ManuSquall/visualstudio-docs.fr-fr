@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 34c7ac8e496fedbff836eb118f60157c5f637117
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ac0d81c9e42a5c3aa22a09d59f346e6127b1284f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628869"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115768"
 ---
 # <a name="how-to-read-from-and-write-to-document-properties"></a>Procédure : Lire et écrire dans les propriétés de document
   Vous pouvez stocker des propriétés de document avec un document. Les applications Office fournissent plusieurs propriétés intégrées, telles que l'auteur, le titre et l'objet. Cette rubrique indique comment définir des propriétés de document dans Microsoft Office Excel et Microsoft Office Word.
@@ -42,12 +42,12 @@ ms.locfileid: "56628869"
 
 ### <a name="to-change-the-revision-number-property-in-excel"></a>Pour modifier la propriété Revision Number dans Excel
 
-1.  Assignez les propriétés de document intégrées à une variable.
+1. Assignez les propriétés de document intégrées à une variable.
 
      [!code-vb[Trin_VstcoreProgramming#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#7)]
      [!code-csharp[Trin_VstcoreProgramming#7](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs#7)]
 
-2.  Incrémentez la propriété `Revision Number` de un.
+2. Incrémentez la propriété `Revision Number` de un.
 
      [!code-vb[Trin_VstcoreProgramming#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#8)]
      [!code-csharp[Trin_VstcoreProgramming#8](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs#8)]
@@ -65,12 +65,12 @@ ms.locfileid: "56628869"
 
 ### <a name="to-change-the-subject-property"></a>Pour modifier la propriété Subject
 
-1.  Assignez les propriétés de document intégrées à une variable.
+1. Assignez les propriétés de document intégrées à une variable.
 
      [!code-csharp[Trin_VstcoreProgrammingWord#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingWordCS/ThisDocument.cs#1)]
      [!code-vb[Trin_VstcoreProgrammingWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingWordVB/ThisDocument.vb#1)]
 
-2.  Remplacez la valeur de la propriété `Subject` par « Whitepaper ».
+2. Remplacez la valeur de la propriété `Subject` par « Whitepaper ».
 
      [!code-csharp[Trin_VstcoreProgrammingWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingWordCS/ThisDocument.cs#2)]
      [!code-vb[Trin_VstcoreProgrammingWord#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingWordVB/ThisDocument.vb#2)]

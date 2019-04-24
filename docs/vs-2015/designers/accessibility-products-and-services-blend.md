@@ -9,25 +9,25 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eca75f325557ee118cf4ab54287978dc63420ff7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 202ff45d5b69f91d9f0081c8253c11962009abaa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793479"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068949"
 ---
 # <a name="accessibility-products-and-services-blend"></a>Services et produits d’accessibilité (Blend)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Microsoft s’engage à faciliter l’utilisation de ses produits et services. Les sections suivantes fournissent des informations sur les fonctionnalités, produits et services qui améliorent l’accessibilité des personnes handicapées à Microsoft Windows :  
   
--   « Fonctionnalités d’accessibilité de Windows »  
+- « Fonctionnalités d’accessibilité de Windows »  
   
--   « Documentation dans d’autres formats »  
+- « Documentation dans d’autres formats »  
   
--   « Service clientèle pour les personnes atteintes de troubles de l’audition »  
+- « Service clientèle pour les personnes atteintes de troubles de l’audition »  
   
--   « Pour plus d’informations »  
+- « Pour plus d’informations »  
   
 > [!NOTE]
 >  Les informations contenues dans cette section peuvent s’appliquer uniquement aux utilisateurs qui ont acheté leurs produits Microsoft aux États-Unis. Si vous avez obtenu ce produit en dehors des États-Unis, vous pouvez utiliser la carte d’informations accompagnant votre package logiciel ou visitez le [site Microsoft consacré à l’accessibilité](http://go.microsoft.com/fwlink/?LinkID=75069) pour obtenir la liste des numéros de téléphone et des adresses des service de support Microsoft. Vous pouvez contacter votre filiale pour savoir si les types de produits et services décrits dans cette section sont disponibles dans votre région. Les informations sur l'accessibilité sont disponibles dans d'autres langues, y compris le japonais et le français.  

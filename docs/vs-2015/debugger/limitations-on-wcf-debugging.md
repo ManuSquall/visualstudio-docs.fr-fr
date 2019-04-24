@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b42eecb5c620e911e448728678781ee32ccb5ca0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3faa57a0a2ca413898364c2d4ad1891df85f1ce8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950549"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095098"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Limitations du débogage WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ Il existe trois façons de commencer à déboguer un service WCF :
 ## <a name="limitations-on-stepping-into-a-service"></a>Limitations relatives au pas à pas détaillé dans un service  
  Pour effectuer un pas à pas détaillé dans un service à partir d'une application cliente que vous déboguez, les conditions suivantes doivent être satisfaites :  
   
--   Le client doit appeler le service à l'aide d'un objet client synchrone.  
+- Le client doit appeler le service à l'aide d'un objet client synchrone.  
   
--   L'opération de contrat ne peut pas être unidirectionnelle.  
+- L'opération de contrat ne peut pas être unidirectionnelle.  
   
--   Si le serveur est asynchrone, vous ne pouvez pas afficher la pile des appels complète pendant que vous exécutez le code à l'intérieur du service.  
+- Si le serveur est asynchrone, vous ne pouvez pas afficher la pile des appels complète pendant que vous exécutez le code à l'intérieur du service.  
   
--   Le débogage doit être activé avec le code suivant dans le fichier app.config ou Web.config :  
+- Le débogage doit être activé avec le code suivant dans le fichier app.config ou Web.config :  
   
     ```  
     <system.web>  
@@ -62,13 +62,13 @@ Il existe trois façons de commencer à déboguer un service WCF :
 ## <a name="limitations-on-automatic-attach-to-a-service"></a>Limitations relatives à l'attachement automatique à un service  
  L'attachement automatique à un service a les limitations suivantes :  
   
--   Le service doit faire partie de la solution [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que vous déboguez.  
+- Le service doit faire partie de la solution [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que vous déboguez.  
   
--   Le service doit être hébergé. Il peut faire partie d’un projet de site web (système de fichiers et HTTP), d’un projet d’application Web (système de fichiers et HTTP) ou d’un projet Bibliothèque du service WCF. Les projets Bibliothèque du service WCF peuvent être des bibliothèques du service ou des bibliothèques du service de workflow.  
+- Le service doit être hébergé. Il peut faire partie d’un projet de site web (système de fichiers et HTTP), d’un projet d’application Web (système de fichiers et HTTP) ou d’un projet Bibliothèque du service WCF. Les projets Bibliothèque du service WCF peuvent être des bibliothèques du service ou des bibliothèques du service de workflow.  
   
--   Le service doit être appelé à partir d'un client WCF.  
+- Le service doit être appelé à partir d'un client WCF.  
   
--   Le débogage doit être activé avec le code suivant dans le fichier app.config ou Web.config :  
+- Le débogage doit être activé avec le code suivant dans le fichier app.config ou Web.config :  
   
     ```  
     <system.web>  

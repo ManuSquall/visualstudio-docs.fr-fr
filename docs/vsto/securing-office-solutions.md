@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8e2f164135ab6b7f187b2b5967eca4faf747f37e
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 31a17fdf51e838405c93efca79d7994cd40ece5c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54871180"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107617"
 ---
 # <a name="secure-office-solutions"></a>Sécurisez les solutions Office
   Le modèle de sécurité pour les solutions Office implique plusieurs technologies : le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)], le centre de confidentialité de Microsoft Office et la zone de sites sensibles d’Internet Explorer. Les sections suivantes décrivent le fonctionnement de ces différentes fonctionnalités de sécurité :
@@ -38,7 +38,7 @@ ms.locfileid: "54871180"
 
   [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
-##  <a name="GrantingTrustToSolutions"></a> Accorder votre confiance à des solutions Office
+## <a name="GrantingTrustToSolutions"></a> Accorder votre confiance à des solutions Office
  L'octroi de niveaux de confiance à des solutions Office implique de modifier la stratégie de sécurité de chaque utilisateur final pour approuver la solution Office sur la base des éléments suivants :
 
 - le certificat utilisé pour signer le manifeste de déploiement,
@@ -47,16 +47,16 @@ ms.locfileid: "54871180"
 
   Pour plus d’informations, consultez [accorder une confiance à des solutions Office](../vsto/granting-trust-to-office-solutions.md).
 
-##  <a name="GrantingTrustToDocuments"></a> Accorder votre confiance à des documents
+## <a name="GrantingTrustToDocuments"></a> Accorder votre confiance à des documents
  Pour une personnalisation au niveau du document, le document doit se trouver dans un répertoire désigné comme un emplacement approuvé. Pour plus d’informations, consultez [accorder une confiance aux documents](../vsto/granting-trust-to-documents.md).
 
-##  <a name="GrantingTrustWindowsInstaller"></a> Accorder une confiance lorsque vous utilisez le programme d’installation de Windows
+## <a name="GrantingTrustWindowsInstaller"></a> Accorder une confiance lorsque vous utilisez le programme d’installation de Windows
  Vous pouvez utiliser Windows Installer pour créer un fichier MSI afin d'installer des solutions Office dans le répertoire Program Files, ce qui requiert des droits d'administrateur. Pour les solutions Office dans le répertoire Program Files, Visual Studio 2010 Tools pour Office runtime considère ces solutions Office d’être approuvés et n’affiche pas l’invite d’approbation ClickOnce.
 
-##  <a name="Security"></a> Considérations de sécurité spécifiques pour les solutions Office
+## <a name="Security"></a> Considérations de sécurité spécifiques pour les solutions Office
  Les fonctionnalités de sécurité fournies par [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] et Microsoft Office peuvent aider à protéger contre diverses menaces possibles pour la sécurité dans les solutions Office. Pour plus d’informations, consultez [considérations de sécurité spécifiques pour les solutions Office](../vsto/specific-security-considerations-for-office-solutions.md).
 
-##  <a name="SecurityDuringDeployment"></a> Sécurité pendant le développement
+## <a name="SecurityDuringDeployment"></a> Sécurité pendant le développement
  Pour faciliter votre processus de développement, Visual Studio définit la stratégie de sécurité requise pour exécuter et déboguer votre solution sur votre ordinateur chaque fois que vous générez un projet. Dans certains scénarios, le développement du projet pourra nécessiter des étapes de sécurité supplémentaires.
 
 ### <a name="document-level-solutions"></a>Solutions au niveau du document
@@ -66,7 +66,7 @@ ms.locfileid: "54871180"
 
 - Au niveau du document solutions pour Word qui utilisent *.doc* ou *.docm* fichiers.
 
-  Incluez les sous-répertoires quand vous ajoutez l’emplacement du document à la liste des emplacements approuvés, ou incluez spécifiquement les dossiers de débogage et de génération. Pour plus d’informations, consultez l’article d’aide en ligne de Microsoft Office [créer, supprimer ou modifier un emplacement approuvé pour vos fichiers](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).
+  Incluez les sous-répertoires quand vous ajoutez l'emplacement du document à la liste des emplacements approuvés, ou incluez spécifiquement les dossiers de débogage et de génération. Pour plus d’informations, consultez l’article d’aide en ligne de Microsoft Office [créer, supprimer ou modifier un emplacement approuvé pour vos fichiers](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62).
 
 ### <a name="temporary-certificates"></a>Certificats temporaires
  Visual Studio crée un certificat temporaire si un certificat de signature n'existe pas encore. Vous devez utiliser ce certificat temporaire uniquement pendant le développement et acheter un certificat officiel pour le déploiement.
@@ -75,7 +75,7 @@ ms.locfileid: "54871180"
 
  Il est conseillé de supprimer les certificats temporaires de temps à autre car leur nombre peut augmenter fortement.
 
-##  <a name="VisualStudioToolsForOfficeRuntime"></a> Visual Studio Tools pour Office runtime
+## <a name="VisualStudioToolsForOfficeRuntime"></a> Visual Studio Tools pour Office runtime
  Le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] a des fonctionnalités permettant de vérifier l’identité de l’éditeur et les autorisations qui sont accordées à une personnalisation. Il vérifie ces autorisations via une série de vérifications de sécurité.
 
 ### <a name="security-during-customization-loading"></a>Sécurité pendant le chargement de personnalisation

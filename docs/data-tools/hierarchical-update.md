@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: aaaa9b5f30844e9d23b35ec9304a70edcd2b6139
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 303c19e8cb02b7c9db78d922f0591cb7ab5f3ed3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933248"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089313"
 ---
 # <a name="hierarchical-update"></a>Mise à jour hiérarchique
 
@@ -80,32 +80,32 @@ Enregistrez les modifications des tables de données associées du dataset dans 
 
 Une fois que vous avez déposé des éléments provenant de la fenêtre **Sources de données**, du code est ajouté automatiquement à l’événement `Form_Load` pour remplir chaque table (les méthodes `TableAdapter.Fill`). Du code est également ajouté à l’événement Click du bouton **Enregistrer** du <xref:System.Windows.Forms.BindingNavigator> pour enregistrer les données du dataset dans la base de données (la méthode `TableAdapterManager.UpdateAll`).
 
-Le code d'enregistrement généré contient également une ligne de code qui appelle la méthode `CustomersBindingSource.EndEdit`. Plus spécifiquement, il appelle le <xref:System.Windows.Forms.BindingSource.EndEdit%2A> méthode du premier <xref:System.Windows.Forms.BindingSource>qui est ajouté au formulaire. En d’autres termes, ce code est généré uniquement pour la première table qui est déplacée de la **des Sources de données** fenêtre vers le formulaire. L’appel de <xref:System.Windows.Forms.BindingSource.EndEdit%2A> valide toutes les modifications en cours de tous les contrôles liés aux données modifiés. Par conséquent, si un contrôle lié aux données a encore le focus et que vous cliquez sur le bouton **Enregistrer**, toutes les modifications en attente dans ce contrôle sont validées avant l’enregistrement réel (la méthode `TableAdapterManager.UpdateAll`).
+Le code d'enregistrement généré contient également une ligne de code qui appelle la méthode `CustomersBindingSource.EndEdit`. Plus spécifiquement, il appelle le <xref:System.Windows.Forms.BindingSource.EndEdit%2A> méthode du premier <xref:System.Windows.Forms.BindingSource>qui est ajouté au formulaire. En d’autres termes, ce code est généré uniquement pour la première table qui est déplacée de la **des Sources de données** fenêtre vers le formulaire. L'appel de <xref:System.Windows.Forms.BindingSource.EndEdit%2A> valide toutes les modifications en cours de tous les contrôles liés aux données modifiés. Par conséquent, si un contrôle lié aux données a encore le focus et que vous cliquez sur le bouton **Enregistrer**, toutes les modifications en attente dans ce contrôle sont validées avant l’enregistrement réel (la méthode `TableAdapterManager.UpdateAll`).
 
 > [!NOTE]
 > Le **Concepteur de Dataset** ajoute uniquement les `BindingSource.EndEdit` code pour la première table qui est déplacée vers le formulaire. Par conséquent, vous devez ajouter une ligne de code pour appeler la méthode `BindingSource.EndEdit` pour chaque table associée dans le formulaire. Dans cette procédure pas à pas, cela signifie que vous devez ajouter un appel à la méthode `OrdersBindingSource.EndEdit`.
 
-### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>Pour mettre à jour le code afin de valider les modifications des tables associées avant l’enregistrement
+### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>Pour mettre à jour le code afin de valider les modifications des tables associées avant l'enregistrement
 
-1.  Double-cliquez sur le bouton **Enregistrer** du <xref:System.Windows.Forms.BindingNavigator> pour ouvrir **Form1** dans l’éditeur de code.
+1. Double-cliquez sur le bouton **Enregistrer** du <xref:System.Windows.Forms.BindingNavigator> pour ouvrir **Form1** dans l’éditeur de code.
 
-2.  Ajoutez une ligne de code pour appeler la méthode `OrdersBindingSource.EndEdit` après la ligne appelant la méthode `CustomersBindingSource.EndEdit`. Le code de l’événement Click du bouton **Enregistrer** doit ressembler à ce qui suit :
+2. Ajoutez une ligne de code pour appeler la méthode `OrdersBindingSource.EndEdit` après la ligne appelant la méthode `CustomersBindingSource.EndEdit`. Le code de l’événement Click du bouton **Enregistrer** doit ressembler à ce qui suit :
 
      [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/VisualBasic/hierarchical-update_1.vb)]
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/CSharp/hierarchical-update_1.cs)]
 
-Outre la validation des modifications d’une table enfant associée avant l’enregistrement des données dans une base de données, vous devez aussi peut-être valider les enregistrements parents récemment créés avant d’ajouter de nouveaux enregistrement enfants à un dataset. En d’autres termes, vous devrez peut-être ajouter le nouvel enregistrement parent (`Customer`) au jeu de données avant de contraintes de clé étrangère activer de nouveaux enregistrements enfants (`Orders`) à ajouter au jeu de données. Pour ce faire, vous pouvez utiliser l'événement `BindingSource.AddingNew` enfant.
+Outre la validation des modifications d'une table enfant associée avant l'enregistrement des données dans une base de données, vous devez aussi peut-être valider les enregistrements parents récemment créés avant d'ajouter de nouveaux enregistrement enfants à un dataset. En d’autres termes, vous devrez peut-être ajouter le nouvel enregistrement parent (`Customer`) au jeu de données avant de contraintes de clé étrangère activer de nouveaux enregistrements enfants (`Orders`) à ajouter au jeu de données. Pour ce faire, vous pouvez utiliser l'événement `BindingSource.AddingNew` enfant.
 
 > [!NOTE]
 > Si vous devez valider les nouveaux enregistrements parents varie selon le type de contrôle qui est utilisé pour lier à votre source de données. Dans cette procédure pas à pas, vous utilisez des contrôles individuels à lier à la table parente. Cela nécessite du code supplémentaire pour valider le nouvel enregistrement parent. Si les enregistrements parents ont été affichés à la place dans un contrôle de liaison complexe tel que le <xref:System.Windows.Forms.DataGridView>ce supplémentaires <xref:System.Windows.Forms.BindingSource.EndEdit%2A> appeler pour l’enregistrement parent ne serait pas nécessaire. En effet, la fonctionnalité sous-jacente de liaison aux données du contrôle gère la validation des nouveaux enregistrements.
 
-### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>Pour ajouter du code afin de valider les enregistrements parents dans le dataset avant d'ajouter de nouveaux enregistrements enfants
+### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>Pour ajouter du code afin de valider les enregistrements parents dans le dataset avant d’ajouter de nouveaux enregistrements enfants
 
-1.  Créez un gestionnaire d'événements pour l'événement `OrdersBindingSource.AddingNew`.
+1. Créez un gestionnaire d'événements pour l'événement `OrdersBindingSource.AddingNew`.
 
-    -   Ouvrez **Form1** en mode conception, sélectionnez **OrdersBindingSource** dans la barre des composants, sélectionnez **événements** dans le **propriétés** fenêtre, et puis double-cliquez sur le **AddingNew** événement.
+    - Ouvrez **Form1** en mode conception, sélectionnez **OrdersBindingSource** dans la barre des composants, sélectionnez **événements** dans le **propriétés** fenêtre, et puis double-cliquez sur le **AddingNew** événement.
 
-2.  Ajouter une ligne de code au gestionnaire d’événements qui appelle la `CustomersBindingSource.EndEdit` (méthode). Le code du gestionnaire d'événements `OrdersBindingSource_AddingNew` doit ressembler à ce qui suit :
+2. Ajouter une ligne de code au gestionnaire d’événements qui appelle la `CustomersBindingSource.EndEdit` (méthode). Le code du gestionnaire d'événements `OrdersBindingSource_AddingNew` doit ressembler à ce qui suit :
 
      [!code-vb[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/VisualBasic/hierarchical-update_2.vb)]
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/CSharp/hierarchical-update_2.cs)]
@@ -121,9 +121,9 @@ Les éléments suivants sont les méthodes fréquemment utilisées et les propri
 |Membre|Description|
 |------------|-----------------|
 |Méthode `UpdateAll`|Enregistre toutes les données de toutes les tables de données.|
-|Propriété`BackUpDataSetBeforeUpdate` |Détermine s’il faut créer une copie de sauvegarde du jeu de données avant d’exécuter le `TableAdapterManager.UpdateAll` (méthode). Valeur booléenne.|
+|Propriété `BackUpDataSetBeforeUpdate`|Détermine s’il faut créer une copie de sauvegarde du jeu de données avant d’exécuter le `TableAdapterManager.UpdateAll` (méthode). Valeur booléenne.|
 |*tableName* `TableAdapter` propriété|Représente un `TableAdapter`. Le texte généré `TableAdapterManager` contient une propriété pour chaque `TableAdapter` qu’il gère. Par exemple, un jeu de données avec une table Customers et Orders est généré avec un `TableAdapterManager` contenant `CustomersTableAdapter` et `OrdersTableAdapter` propriétés.|
-|Propriété`UpdateOrder` |Contrôler l’ordre de l’individuel insert, update et les commandes delete. Définissez ce paramètre à une des valeurs dans le `TableAdapterManager.UpdateOrderOption` énumération.<br /><br /> Par défaut, le `UpdateOrder` a la valeur **InsertUpdateDelete**. Cela signifie que les insertions, puis met à jour et supprime ensuite sont effectuées pour toutes les tables dans le jeu de données.|
+|Propriété `UpdateOrder`|Contrôler l’ordre de l’individuel insert, update et les commandes delete. Définissez ce paramètre à une des valeurs dans le `TableAdapterManager.UpdateOrderOption` énumération.<br /><br /> Par défaut, le `UpdateOrder` a la valeur **InsertUpdateDelete**. Cela signifie que les insertions, puis met à jour et supprime ensuite sont effectuées pour toutes les tables dans le jeu de données.|
 
 ## <a name="see-also"></a>Voir aussi
 

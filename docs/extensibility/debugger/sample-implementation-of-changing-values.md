@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f90ae35a002517c34af39cb53deec05a458f716
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e229bd791118b23e0b8c04a8a5384a4bbc3342c0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680527"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085531"
 ---
 # <a name="sample-implementation-of-changing-values"></a>Exemple d’implémentation de la modification des valeurs
 > [!IMPORTANT]
@@ -29,13 +29,13 @@ ms.locfileid: "56680527"
 
  L’implémentation de `IDebugProperty2::SetValueAsString` effectue les tâches suivantes :
 
-1.  Évalue l’expression pour produire une valeur.
+1. Évalue l’expression pour produire une valeur.
 
-2.  Lie associé [IDebugField](../../extensibility/debugger/reference/idebugfield.md) objet à son emplacement de mémoire et les génère une [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) objet.
+2. Lie associé [IDebugField](../../extensibility/debugger/reference/idebugfield.md) objet à son emplacement de mémoire et les génère une [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) objet.
 
-3.  Convertit la valeur à une série d’octets.
+3. Convertit la valeur à une série d’octets.
 
-4.  Appels [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) pour stocker les octets en mémoire.
+4. Appels [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) pour stocker les octets en mémoire.
 
 ## <a name="managed-code"></a>Code managé
  Le code suivant est une implémentation de `IDebugProperty2::SetValueAsString` dans du code managé.

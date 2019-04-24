@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f65760d8203ad01e9bab7987435691a8d5acf4b2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ab88824055b890fcc65424d692dd12500d021712
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953238"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056480"
 ---
 # <a name="error-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-conflict-with-dependency-39file39"></a>Erreur : la dépendance &#39;fichier&#39; dans le projet &#39;projet&#39; ne peut pas être copié dans le répertoire d’exécution, car elle serait en conflit avec une dépendance &#39;fichier&#39;
 Il existe un conflit entre des références, car plusieurs dépendances distinctes qui portent le même nom de fichier sont copiées dans le répertoire bin pour permettre à l’application de s’exécuter. Le répertoire d’exécution ne peut pas résoudre le conflit dans la mesure où aucune des dépendances n’est une référence principale.  
@@ -27,11 +27,11 @@ Il existe un conflit entre des références, car plusieurs dépendances distinct
   
  **Pour corriger cette erreur**  
   
--   Configurez l’un des assemblys en référence directe de votre projet. Cette approche présente toutefois un inconvénient potentiel, puisqu’il n’est pas garanti que l’assembly que vous choisissez fonctionne avec les assemblys qui nécessitent une autre version de l’assembly référencé.  
+- Configurez l’un des assemblys en référence directe de votre projet. Cette approche présente toutefois un inconvénient potentiel, puisqu’il n’est pas garanti que l’assembly que vous choisissez fonctionne avec les assemblys qui nécessitent une autre version de l’assembly référencé.  
   
      \- ou -  
   
--   Vérifiez que les deux copies de l’assembly portent un nom fort et se trouvent dans le Global Assembly Cache. Ceci élimine le besoin de copier les assemblys dans le répertoire bin.  
+- Vérifiez que les deux copies de l’assembly portent un nom fort et se trouvent dans le Global Assembly Cache. Ceci élimine le besoin de copier les assemblys dans le répertoire bin.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Gestion des références dans un projet](../ide/managing-references-in-a-project.md)   

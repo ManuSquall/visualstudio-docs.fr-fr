@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 615b9bc4974a0483dec5e9c39727ebae50039a1f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: deba5e493f58a99e672e362977406670e1eee0e1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596527"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094344"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Procédure : Créer un récepteur d’événements pour une instance de liste spécifique
   Un récepteur d’événements liste instance répond aux événements qui se produisent dans n’importe quelle instance d’une définition de liste. Bien que le modèle de récepteur d’événements n’active pas le ciblage d’une instance de liste spécifique, vous pouvez modifier un récepteur d’événements dont l’étendue correspond à une définition de liste pour répondre aux événements dans une instance de liste spécifique.
@@ -30,24 +30,24 @@ ms.locfileid: "56596527"
 
 #### <a name="to-modify-an-event-receiver-to-respond-to-a-specific-list-instance"></a>Pour modifier un récepteur d’événements pour répondre à une instance de liste spécifique
 
-1.  Dans un navigateur, ouvrez le site SharePoint.
+1. Dans un navigateur, ouvrez le site SharePoint.
 
-2.  Dans le volet de navigation, **répertorie** lien.
+2. Dans le volet de navigation, **répertorie** lien.
 
-3.  Dans le **tout le contenu du Site** page, choisissez le **créer** lien.
+3. Dans le **tout le contenu du Site** page, choisissez le **créer** lien.
 
-4.  Dans le **créer** boîte de dialogue, sélectionnez le **annonces** type, nom de l’annonce **TestAnnouncements**, puis choisissez le **créer**bouton.
+4. Dans le **créer** boîte de dialogue, sélectionnez le **annonces** type, nom de l’annonce **TestAnnouncements**, puis choisissez le **créer**bouton.
 
-5.  Dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], créez un projet de récepteur d’événements.
+5. Dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], créez un projet de récepteur d’événements.
 
-6.  Dans le **quel type de récepteur d’événements voulez-vous ?** , choisissez **événements d’élément de liste**.
+6. Dans le **quel type de récepteur d’événements voulez-vous ?** , choisissez **événements d’élément de liste**.
 
     > [!NOTE]
     >  Vous pouvez également sélectionner n’importe quel autre type de récepteur d’événements qui définit une portée à une définition de liste, par exemple, **liste des événements de messagerie** ou **liste des événements de flux de travail**.
 
-7.  Dans le **quel élément doit être la source d’événements ?** , choisissez **annonces**.
+7. Dans le **quel élément doit être la source d’événements ?** , choisissez **annonces**.
 
-8.  Dans le **gérer les événements suivants** liste, sélectionnez le **Ajout d’un élément** case à cocher, puis choisissez le **Terminer** bouton.
+8. Dans le **gérer les événements suivants** liste, sélectionnez le **Ajout d’un élément** case à cocher, puis choisissez le **Terminer** bouton.
 
 9. Dans **l’Explorateur de solutions**, sous EventReceiver1, ouvrez *Elements.xml*.
 

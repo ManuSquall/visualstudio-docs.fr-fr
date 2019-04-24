@@ -16,12 +16,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2ef9eaa8e0921d8ff463478a42eca688d4b952b7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 85aadaca762983b193e42ec2469f88a429a4e532
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951591"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111738"
 ---
 # <a name="ca1303-do-not-pass-literals-as-localized-parameters"></a>CA1303 : Ne pas passer de littéraux en paramètres localisés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ ms.locfileid: "58951591"
 
  Cet avertissement est déclenché lorsqu’une chaîne littérale est passée en tant que valeur à un paramètre ou une propriété et un ou plusieurs des cas suivants sont vrai :
 
--   Le <xref:System.ComponentModel.LocalizableAttribute> attribut du paramètre ou de propriété est définie sur true.
+- Le <xref:System.ComponentModel.LocalizableAttribute> attribut du paramètre ou de propriété est définie sur true.
 
--   Le nom de paramètre ou une propriété contient « Text », « Message » ou « Caption ».
+- Le nom de paramètre ou une propriété contient « Text », « Message » ou « Caption ».
 
--   Le nom du paramètre de chaîne qui est passé à une méthode Console.Write ou Console.WriteLine est « value » ou « format ».
+- Le nom du paramètre de chaîne qui est passé à une méthode Console.Write ou Console.WriteLine est « value » ou « format ».
 
 ## <a name="rule-description"></a>Description de la règle
  Les littéraux de chaîne incorporés dans le code source sont difficiles à localiser.

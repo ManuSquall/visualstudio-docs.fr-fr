@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2f879f8367ad1b992300c9e5b1c8a2887e89205b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 318744ec1a1a9214ce0385fc56fb1c0cf340339b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608007"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068494"
 ---
 # <a name="how-to-define-a-method-instance"></a>Procédure : Définir une instance de méthode
   Vous devez définir au moins une instance de méthode pour chaque méthode dans votre modèle.
@@ -29,15 +29,15 @@ ms.locfileid: "56608007"
 
 ### <a name="to-define-a-method-instance"></a>Pour définir une instance de méthode
 
-1.  Dans le **détails de méthode BDC** fenêtre, développez le nœud d’une méthode, puis développez le **Instances** nœud.
+1. Dans le **détails de méthode BDC** fenêtre, développez le nœud d’une méthode, puis développez le **Instances** nœud.
 
-2.  Dans le **ajouter une Instance de méthode** , choisissez **créer une Instance de recherche**.
+2. Dans le **ajouter une Instance de méthode** , choisissez **créer une Instance de recherche**.
 
      Une nouvelle instance de méthode apparaît sous le **Instances** nœud.
 
-3.  Dans la barre de menus, choisissez **vue** > **fenêtre Propriétés**.
+3. Dans la barre de menus, choisissez **vue** > **fenêtre Propriétés**.
 
-4.  Dans le **propriétés** fenêtre, définissez les propriétés de l’instance de méthode. Pour plus d’informations sur chaque propriété, consultez [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282).
+4. Dans le **propriétés** fenêtre, définissez les propriétés de l’instance de méthode. Pour plus d’informations sur chaque propriété, consultez [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282).
 
 ## <a name="see-also"></a>Voir aussi
 - [Vue d’ensemble des outils de conception de modèle BDC](../sharepoint/bdc-model-design-tools-overview.md)

@@ -8,17 +8,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c77b95b05409adf7c5e4c9a81136ca9143cec03
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: f7d74b90fc0bcbe67b13cffadb2793bc15213b9f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688054"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094136"
 ---
 # <a name="getting-started-with-visual-studio-graphics-diagnostics"></a>Prise en main de Visual Studio Graphics Diagnostics
 Dans cette section, vous allez vous préparer à utiliser Graphics Diagnostics pour la première fois, puis vous allez capturer des frames à partir d’une application Direct3D et les examiner dans Graphics Analyzer.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  Pour utiliser Graphics Diagnostics dans Visual Studio, vous devez utiliser Visual Studio Enterprise, Visual Studio Professional ou Visual Studio Community.  Autres éditions, y compris Visual Studio Code, ne contiennent pas cette fonctionnalité.
 
  [!INCLUDE[downloadvs](../includes/downloadvs_md.md)]
@@ -28,7 +28,7 @@ Dans cette section, vous allez vous préparer à utiliser Graphics Diagnostics p
 
  Pour plus d’informations sur l’installation de la fonctionnalité Outils Graphics, consultez [Installer Outils Graphics pour Windows 10](#InstallGraphicsTools).
 
-##  <a name="InstallGraphicsTools"></a> Installer Outils Graphics pour Windows 10
+## <a name="InstallGraphicsTools"></a> Installer Outils Graphics pour Windows 10
  Dans Windows 10, l’infrastructure Graphics Diagnostics est fournie par une fonctionnalité facultative de Windows appelée *Outils Graphics*. Cette fonctionnalité est nécessaire pour capturer et lire les informations graphiques sur Windows 10, indépendamment du fait que l'application capturée cible ou non une version antérieure de Windows, ou indépendamment de la version de Direct3D utilisée. Vous pouvez choisir d'installer la fonctionnalité Outils Graphics à l'avance. Sinon, elle est installée à la demande la première fois que vous démarrez une session Graphics Diagnostics à partir de Visual Studio.
 
 #### <a name="to-install-graphics-tools-for-windows-10"></a>Pour installer Outils Graphics pour Windows 10
@@ -70,7 +70,7 @@ Dans cette section, vous allez vous préparer à utiliser Graphics Diagnostics p
 
 #### <a name="to-capture-single-frames"></a>Pour capturer des frames uniques
 
--   Dans Visual Studio, choisissez le bouton **Capturer le frame** à partir de la barre d’outils Graphics ou de la fenêtre de session de diagnostic. Ou, si votre application a le focus, appuyez simplement sur le **Impr. écran** clé de votre clavier.
+- Dans Visual Studio, choisissez le bouton **Capturer le frame** à partir de la barre d’outils Graphics ou de la fenêtre de session de diagnostic. Ou, si votre application a le focus, appuyez simplement sur le **Impr. écran** clé de votre clavier.
 
 #### <a name="to-capture-a-sequence-of-frames"></a>Pour capturer une séquence de frames
 

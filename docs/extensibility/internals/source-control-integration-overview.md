@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a5df1eebed8e59c994af88a0e3b21e02009c3f1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c4bd2a688e2a10bf0b931851b0d4366684820bf1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614881"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049917"
 ---
 # <a name="source-control-integration-overview"></a>Présentation de l’intégration du contrôle de code source
 Cette section compare les deux façons d’intégrer le contrôle de code source Visual Studio ; un contrôle de source de plug-in et un VSPackage qui fournit une solution de contrôle source et met en évidence les nouvelles fonctionnalités de contrôle de code source. Visual Studio permet un basculement manuel entre le contrôle de code source VSPackages et les plug-ins de contrôle de code source, ainsi que pour le basculement automatique basé sur la solution.
@@ -40,19 +40,19 @@ Cette section compare les deux façons d’intégrer le contrôle de code source
 
 ### <a name="drawbacks-to-implementing-a-source-control-plug-in"></a>Inconvénients à l’implémentation d’un plug-in de contrôle de code Source
 
--   Pour des fonctionnalités avancées, l’utilisateur peut voir deux styles différents des interfaces, ce qui conduit à un risque de confusion.
+- Pour des fonctionnalités avancées, l’utilisateur peut voir deux styles différents des interfaces, ce qui conduit à un risque de confusion.
 
--   Le plug-in de contrôle de code source est limité dans le modèle de contrôle de source impliqué par l’API de plug-in de contrôle de Source.
+- Le plug-in de contrôle de code source est limité dans le modèle de contrôle de source impliqué par l’API de plug-in de contrôle de Source.
 
--   L’API de plug-in de contrôle de Source peuvent être trop restrictive pour certains scénarios de contrôle de code source.
+- L’API de plug-in de contrôle de Source peuvent être trop restrictive pour certains scénarios de contrôle de code source.
 
 ### <a name="advantages-to-implementing-a-source-control-plug-in"></a>Avantages à implémenter un plug-in de contrôle de code Source
 
--   Visual Studio fournit l’interface utilisateur pour toutes les opérations de contrôle de source de base afin que le plug-in de contrôle de code source n’a pas d’implémenter une interface utilisateur potentiellement complexe.
+- Visual Studio fournit l’interface utilisateur pour toutes les opérations de contrôle de source de base afin que le plug-in de contrôle de code source n’a pas d’implémenter une interface utilisateur potentiellement complexe.
 
--   En raison de l’API strict, le plug-in de contrôle de code source peut facilement interagir avec les programmes de contrôle de source externe pour fournir des fonctionnalités plus complètes ; Visual Studio ne soucie pas trop bien comment la fonctionnalité de contrôle de code source est accomplie, uniquement qu’elle s’effectue en fonction de l’API de plug-in de contrôle de Source.
+- En raison de l’API strict, le plug-in de contrôle de code source peut facilement interagir avec les programmes de contrôle de source externe pour fournir des fonctionnalités plus complètes ; Visual Studio ne soucie pas trop bien comment la fonctionnalité de contrôle de code source est accomplie, uniquement qu’elle s’effectue en fonction de l’API de plug-in de contrôle de Source.
 
--   Il est plus facile à implémenter un plug-in à un VSPackage de contrôle de source de contrôle de code source.
+- Il est plus facile à implémenter un plug-in à un VSPackage de contrôle de source de contrôle de code source.
 
 ## <a name="source-control-vspackage"></a>VSPackage de contrôle de code source
  [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] permet une intégration approfondie dans Visual Studio avec le contrôle total sur les fonctionnalités de contrôle de code source et un remplacement complet de l’interface utilisateur du contrôle source fourni par Visual Studio. Un contrôle de code source VSPackage est inscrit avec Visual Studio et fournit des fonctionnalités de contrôle de code source. Bien que le contrôle de code source plusieurs VSPackages peut être enregistré avec Visual Studio, un seul d'entre eux peut être actif à tout moment. Un VSPackage de contrôle de code source a un contrôle total sur la fonctionnalité de contrôle de code source et l’apparence dans Visual Studio lorsqu’elle est active. Tous les autres contrôle de code source VSPackages qui peuvent être enregistrés dans le système sont inactifs et n’affichera pas d’interface utilisateur du tout.
@@ -61,17 +61,17 @@ Cette section compare les deux façons d’intégrer le contrôle de code source
 
 ### <a name="drawbacks-to-implementing-a-source-control-vspackage"></a>Inconvénients à l’implémentation d’un VSPackage de contrôle de code Source
 
--   Le VSPackage doit implémenter les interfaces complexes pour intégrer correctement à Visual Studio.
+- Le VSPackage doit implémenter les interfaces complexes pour intégrer correctement à Visual Studio.
 
--   Le VSPackage doit fournir l’interface utilisateur requis pour le contrôle de code source ; Visual Studio ne fournissent aucune aide dans cette zone.
+- Le VSPackage doit fournir l’interface utilisateur requis pour le contrôle de code source ; Visual Studio ne fournissent aucune aide dans cette zone.
 
--   Un contrôle de code source VSPackage est étroitement lié à Visual Studio et ne peut pas fonctionner avec des programmes indépendants, afin de la fonctionnalité ne peut pas être aussi facilement partagée avec une version du programme de contrôle de source externe.
+- Un contrôle de code source VSPackage est étroitement lié à Visual Studio et ne peut pas fonctionner avec des programmes indépendants, afin de la fonctionnalité ne peut pas être aussi facilement partagée avec une version du programme de contrôle de source externe.
 
 ### <a name="advantages-to-implementing-a-source-control-vspackage"></a>Avantages à l’implémentation d’un VSPackage de contrôle de code Source
 
--   Étant donné que le VSPackage a des fonctionnalités et un contrôle total sur l’interface utilisateur du contrôle de code source, l’utilisateur est présenté avec une interface transparente pour le contrôle de code source.
+- Étant donné que le VSPackage a des fonctionnalités et un contrôle total sur l’interface utilisateur du contrôle de code source, l’utilisateur est présenté avec une interface transparente pour le contrôle de code source.
 
--   Le VSPackage n’est pas limité à un modèle de contrôle de code source particulier.
+- Le VSPackage n’est pas limité à un modèle de contrôle de code source particulier.
 
 ## <a name="see-also"></a>Voir aussi
 - [Contrôle de code source](../../extensibility/internals/source-control.md)

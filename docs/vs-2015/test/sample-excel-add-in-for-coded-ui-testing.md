@@ -10,12 +10,12 @@ ms.assetid: 2cd52d1a-4c35-43ca-8a84-9c79dabd907f
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ded54760efe611b337c736e0474042b70ff8bf2e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 30ba0d48676438f19581e93a3af3c900569f5d5d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791946"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112224"
 ---
 # <a name="sample-excel-add-in-for-coded-ui-testing"></a>Exemple de complément Excel pour le test codé de l'interface utilisateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,11 +28,11 @@ Cet exemple de complément pour [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md
   
  Parties importantes de ce complément :  
   
--   Classe `ThisAddIn` : gère le canal .NET Remoting entre le `ExcelUICommunicator` et l’[exemple d’extension du test codé de l’interface utilisateur pour Excel](../test/sample-coded-ui-test-extension-for-excel.md).  
+- Classe `ThisAddIn` : gère le canal .NET Remoting entre le `ExcelUICommunicator` et l’[exemple d’extension du test codé de l’interface utilisateur pour Excel](../test/sample-coded-ui-test-extension-for-excel.md).  
   
--   `ExcelCodedUIAddinHelper_TemporaryKey.pfx` : certificat de sécurité pour tester le complément.  
+- `ExcelCodedUIAddinHelper_TemporaryKey.pfx` : certificat de sécurité pour tester le complément.  
   
--   Classe `ExcelUICommunicator` : cette classe implémente l’interface `IExcelUICommunication`.  
+- Classe `ExcelUICommunicator` : cette classe implémente l’interface `IExcelUICommunication`.  
   
 ## <a name="thisaddin-class"></a>Classe ThisAddIn  
  La plupart de cette classe est en fait généré par Visual Studio Tools pour Office dans le fichier `ThisAddIn.Designer.cs` quand vous créez votre projet de complément Excel.  
@@ -47,5 +47,5 @@ Cet exemple de complément pour [!INCLUDE[ofprexcel](../includes/ofprexcel-md.md
   
 ## <a name="see-also"></a>Voir aussi  
  [Extension des tests codés de l’interface utilisateur et des enregistrements des actions pour prendre en charge Microsoft Excel](../test/extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel.md)   
- [Procédure pas à pas : création de votre premier complément VSTO pour Excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)   
+ [Procédure pas à pas : Création de votre complément VSTO pour Excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f)   
  [Développement Office et SharePoint](http://msdn.microsoft.com/library/2ddec047-263a-4901-a54c-a15fc8472329)

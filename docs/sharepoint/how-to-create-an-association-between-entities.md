@@ -21,12 +21,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5d8558745de7539350bde4f00673c99d23cd1def
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ce6d0bad9da4f11b5fae1daf93657c6908cf5e95
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645119"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092563"
 ---
 # <a name="how-to-create-an-association-between-entities"></a>Procédure : Créer une association entre entités
   Vous pouvez définir des relations entre des entités dans votre modèle de connectivité de données métiers (BDC) en créant des associations. Visual Studio génère des méthodes qui fournissent des consommateurs du modèle des informations sur chaque association. Ces méthodes peuvent être consommées par les composants WebPart SharePoint, des listes ou des applications personnalisées pour afficher les relations entre les données dans une interface utilisateur (IU).
@@ -35,29 +35,29 @@ ms.locfileid: "56645119"
 
 ### <a name="to-create-an-association-between-entities"></a>Pour créer une association entre entités
 
-1.  Sur le **BusinessDataConnectivity** onglet de la **boîte à outils**, choisissez le **Association** élément.
+1. Sur le **BusinessDataConnectivity** onglet de la **boîte à outils**, choisissez le **Association** élément.
 
-2.  Dans le concepteur BDC, choisissez l’entité source, puis l’entité de destination.
+2. Dans le concepteur BDC, choisissez l’entité source, puis l’entité de destination.
 
      Le **Éditeur d’associations** s’affiche.
 
-3.  Si vous souhaitez créer une association de clé étrangère, sélectionnez le **est une Association de clé étrangère** case à cocher.
+3. Si vous souhaitez créer une association de clé étrangère, sélectionnez le **est une Association de clé étrangère** case à cocher.
 
-    1.  Dans le **ID Source** colonne de la **mappage des identificateurs** , choisissez l’identificateur en regard de chaque descripteur de type correspondant qui s’affiche dans le **champ** colonne.
+    1. Dans le **ID Source** colonne de la **mappage des identificateurs** , choisissez l’identificateur en regard de chaque descripteur de type correspondant qui s’affiche dans le **champ** colonne.
 
          Par exemple, dans le **ID Source** colonne, sélectionnez `ContactID` regard le `ReadList.salesOrderList.SalesOrderList.SalesOrder.ContactID` descripteur de type et le `ReadItem.salesOrder.SalesOrder.ContactID` descripteur de type.
 
-4.  Si vous souhaitez créer une association sans clé étrangère, désactivez le **est une Association de clé étrangère** case à cocher.
+4. Si vous souhaitez créer une association sans clé étrangère, désactivez le **est une Association de clé étrangère** case à cocher.
 
-5.  Sélectionnez le bouton **OK** .
+5. Sélectionnez le bouton **OK** .
 
-6.  Dans le concepteur BDC, une ligne qui représente l’association s’affiche entre l’entité source et l’entité de destination.
+6. Dans le concepteur BDC, une ligne qui représente l’association s’affiche entre l’entité source et l’entité de destination.
 
      Visual Studio ajoute une méthode de navigateur d’associations à la classe de service de l’entité de destination et de la classe de service de l’entité source. Pour plus d’informations sur les méthodes de Navigation de l’Association, consultez [pris en charge les opérations](http://go.microsoft.com/fwlink/?LinkId=169286).
 
-7.  Dans la méthode du navigateur de l’Association de l’entité source, ajoutez le code qui retourne une collection d’entités de destination.
+7. Dans la méthode du navigateur de l’Association de l’entité source, ajoutez le code qui retourne une collection d’entités de destination.
 
-8.  Dans la méthode du navigateur de l’Association de l’entité de destination, ajoutez le code qui retourne l’entité source associée.
+8. Dans la méthode du navigateur de l’Association de l’entité de destination, ajoutez le code qui retourne l’entité source associée.
 
      Pour obtenir des exemples de méthodes du navigateur d’Association, consultez [créer une association entre entités](../sharepoint/creating-an-association-between-entities.md).
 

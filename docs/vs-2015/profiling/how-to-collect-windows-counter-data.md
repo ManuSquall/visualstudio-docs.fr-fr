@@ -16,12 +16,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2c3e4a9cffd81561af39cef5eb88f4a7745b2dad
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 4fb88d4db82bde5f93d33716b65e2e8a4b48305a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54753414"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115664"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>Guide pratique pour collecter les données des compteurs Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,28 +30,28 @@ Les compteurs Windows sont des compteurs de performances système dont les donn�
   
  **Spécifications**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
 >  Les fonctionnalités de sécurité renforcée de Windows 8 et Windows Server 2012 ont imposé des changements importants dans la façon dont le profileur Visual Studio collecte les données sur ces plateformes. Les applications Windows Store demandent aussi de nouvelles techniques de collecte. Consultez [Outils d’analyse des performances sur les applications Windows 8 et Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
 ### <a name="to-collect-windows-counter-data"></a>Pour collecter les données des compteurs Windows  
   
-1.  Dans l’Explorateur de performances, cliquez avec le bouton droit sur la session pour laquelle vous voulez configurer des compteurs Windows, puis sélectionnez **Propriétés**.  
+1. Dans l’Explorateur de performances, cliquez avec le bouton droit sur la session pour laquelle vous voulez configurer des compteurs Windows, puis sélectionnez **Propriétés**.  
   
-2.  Dans les **Pages de propriétés**, cliquez sur **Compteurs Windows**.  
+2. Dans les **Pages de propriétés**, cliquez sur **Compteurs Windows**.  
   
-3.  Cochez la case **Collecter les compteurs Windows**.  
+3. Cochez la case **Collecter les compteurs Windows**.  
   
-4.  Dans la zone de texte **Intervalle de collecte (ms)**, tapez un intervalle.  
+4. Dans la zone de texte **Intervalle de collecte (ms)**, tapez un intervalle.  
   
-5.  Sélectionnez une catégorie dans la liste déroulante **Catégorie de compteurs**.  
+5. Sélectionnez une catégorie dans la liste déroulante **Catégorie de compteurs**.  
   
-6.  Sélectionnez une instance dans la liste déroulante **Instance**.  
+6. Sélectionnez une instance dans la liste déroulante **Instance**.  
   
-7.  Sélectionnez les compteurs que vous voulez utiliser pour profiler votre application.  
+7. Sélectionnez les compteurs que vous voulez utiliser pour profiler votre application.  
   
-8.  Cliquez sur **Appliquer**.  
+8. Cliquez sur **Appliquer**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Configuration de sessions de performance](../profiling/configuring-performance-sessions.md)   

@@ -12,21 +12,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ce7b6705fcbafaf713faed6f937fcfa29bd013d6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 75caa29d90b41dc696ce586d50928b2adb0875f9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597373"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067519"
 ---
 # <a name="how-to-retrieve-the-sharepoint-project-service"></a>Procédure : Récupérer le service de projet SharePoint
   Le service de projet SharePoint dans les types suivants de solutions est accessible :
 
--   Une extension du système de projet SharePoint, comme une extension de projet, une extension d’élément de projet ou une définition de type élément de projet. Pour plus d’informations sur ces types d’extensions, consultez [étendre le système de projet SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).
+- Une extension du système de projet SharePoint, comme une extension de projet, une extension d’élément de projet ou une définition de type élément de projet. Pour plus d’informations sur ces types d’extensions, consultez [étendre le système de projet SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).
 
--   Une extension de la **connexions SharePoint** nœud **Explorateur de serveurs**. Pour plus d’informations sur ces types d’extensions, consultez [étendre le nœud Connexions SharePoint dans l’Explorateur de serveurs](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
+- Une extension de la **connexions SharePoint** nœud **Explorateur de serveurs**. Pour plus d’informations sur ces types d’extensions, consultez [étendre le nœud Connexions SharePoint dans l’Explorateur de serveurs](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
 
--   Un autre type d’extension de Visual Studio, par exemple un VSPackage.
+- Un autre type d’extension de Visual Studio, par exemple un VSPackage.
 
 ## <a name="retrieve-the-service-in-project-system-extensions"></a>Récupérer le service dans les extensions de système de projet
  Dans toute extension du système de projet SharePoint, vous pouvez accéder au service de projet à l’aide de la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectService%2A> propriété d’un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> objet.
@@ -35,9 +35,9 @@ ms.locfileid: "56597373"
 
 #### <a name="to-retrieve-the-service-in-a-project-extension"></a>Pour récupérer le service dans une extension de projet
 
-1.  Dans votre implémentation de la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> interface, recherchez le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> (méthode).
+1. Dans votre implémentation de la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> interface, recherchez le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> (méthode).
 
-2.  Utilisez le *projectService* paramètre pour accéder au service.
+2. Utilisez le *projectService* paramètre pour accéder au service.
 
      L’exemple de code suivant montre comment utiliser le service de projet pour écrire un message à la **sortie** fenêtre et **liste d’erreurs** fenêtre dans une extension de projet simple.
 
@@ -48,9 +48,9 @@ ms.locfileid: "56597373"
 
 #### <a name="to-retrieve-the-service-in-a-project-item-extension"></a>Pour récupérer le service dans une extension d’élément de projet
 
-1.  Dans votre implémentation de la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> interface, recherchez le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> (méthode).
+1. Dans votre implémentation de la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> interface, recherchez le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension.Initialize%2A> (méthode).
 
-2.  Utilisez le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType.ProjectService%2A> propriété de la *projectItemType* paramètre à récupérer le service.
+2. Utilisez le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType.ProjectService%2A> propriété de la *projectItemType* paramètre à récupérer le service.
 
      L’exemple de code suivant montre comment utiliser le service de projet pour écrire un message à la **sortie** fenêtre et **liste d’erreurs** fenêtre dans une extension simple du **définition de liste** élément de projet.
 
@@ -61,9 +61,9 @@ ms.locfileid: "56597373"
 
 #### <a name="to-retrieve-the-service-in-a-project-item-type-definition"></a>Pour récupérer le service dans la définition de type d’un élément de projet
 
-1.  Dans votre implémentation de la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> interface, recherchez le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> (méthode).
+1. Dans votre implémentation de la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> interface, recherchez le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> (méthode).
 
-2.  Utilisez le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.ProjectService%2A> propriété de la *typeDefinition* paramètre à récupérer le service.
+2. Utilisez le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition.ProjectService%2A> propriété de la *typeDefinition* paramètre à récupérer le service.
 
      L’exemple de code suivant montre comment utiliser le service de projet pour écrire un message à la **sortie** fenêtre et **liste d’erreurs** fenêtre dans une définition de type de projet simple élément.
 
@@ -77,9 +77,9 @@ ms.locfileid: "56597373"
 
 #### <a name="to-retrieve-the-service-in-a-server-explorer-extension"></a>Pour récupérer le service dans une extension de l’Explorateur de serveurs
 
-1.  Obtenir un <xref:System.IServiceProvider> à partir de l’objet le <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.ServiceProvider%2A> propriété d’un <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode> objet dans votre extension.
+1. Obtenir un <xref:System.IServiceProvider> à partir de l’objet le <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode.ServiceProvider%2A> propriété d’un <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNode> objet dans votre extension.
 
-2.  Utilisez le <xref:System.IServiceProvider.GetService%2A> méthode pour demander un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> objet.
+2. Utilisez le <xref:System.IServiceProvider.GetService%2A> méthode pour demander un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> objet.
 
      L’exemple de code suivant montre comment utiliser le service de projet pour écrire un message à la **sortie** fenêtre et **liste d’erreurs** fenêtre à partir d’un menu contextuel que l’extension ajoute aux nœuds de liste dans **Explorateur de serveurs**.
 

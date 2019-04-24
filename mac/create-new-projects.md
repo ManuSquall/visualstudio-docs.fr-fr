@@ -3,20 +3,20 @@ title: Création de projets et de solutions
 description: Cet article décrit comment créer des projets et des solutions dans Visual Studio pour Mac
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 04/02/2019
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
-ms.openlocfilehash: b6f355dbe10cf250ec397cb817643984b438a92e
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: ae69c71b3b70e950bc0b58b1c34335f3a52529df
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294264"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856471"
 ---
 # <a name="creating-new-projects-and-solutions"></a>Création de projets et de solutions
 
 ## <a name="creating-new-projects-and-solutions-from-a-template"></a>Création de projets et de solutions à partir d’un modèle
 
-Vous pouvez créer des solutions à tout moment à l’aide d’un modèle prédéterminé. Pour créer une solution de cette façon, accédez à  **Fichier > Nouvelle Solution**, sélectionnez la ou les plateformes nécessaires, puis le modèle à utiliser :
+Vous pouvez créer des solutions à tout moment à l’aide d’un modèle prédéterminé. À compter de Visual Studio 2019 pour Mac, choisissez **Nouveau** dans la fenêtre de démarrage. Sinon, vous pouvez accéder à  **Fichier > Nouvelle solution**. Sélectionnez la ou les plateformes nécessaires, puis le modèle à utiliser :
 
 ![Créer des solutions](media/projects-and-solutions-image0.png)
 
@@ -32,7 +32,7 @@ Cette méthode d’ajout de nouveaux projets peut être utilisée pour tirer par
 
 ## <a name="opening-recent-solutions"></a>Ouverture de solutions récentes.
 
-La page d’accueil de Visual Studio affiche la liste des projets récents sur lesquels vous avez travaillé :
+La fenêtre de démarrage de Visual Studio affiche la liste des projets récents sur lesquels vous travaillez :
 
 ![Section Solutions récentes dans la page d’accueil](media/create-new-projects-recent.png)
 

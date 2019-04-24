@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5da71825596117bed4f5cd9042255a8fa83a0c64
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: f20e706dcc94e823446ea0e185881f034fcd7dd8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631859"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654579"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;Package&gt; élément (programme d’amorçage)
 Le `Package` élément est l’élément XML de niveau supérieur à l’intérieur d’un fichier de package.
@@ -142,7 +142,6 @@ Le `Package` élément est l’élément XML de niveau supérieur à l’intéri
 
 ## <a name="elements-and-attributes"></a>Éléments et attributs
  Le `Package` élément est requis. Il a les attributs suivants.
-
 
 | Attribut | Description |
 |--------------------| - |
