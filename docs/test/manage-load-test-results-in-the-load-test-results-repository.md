@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: f9623022d5e0132c8b099757a5af85a3ddd62ed1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934768"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788866"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>Gérer des résultats de tests de charge dans le référentiel des résultats des tests de charge
 
@@ -26,7 +26,7 @@ Quand vous exécutez vos tests de charge, toutes les informations collectées pe
 
 Si vous modifiez la chaîne de connexion du référentiel des résultats du contrôleur de façon à utiliser un autre serveur, le nouveau serveur doit exécuter le script *loadtestresultsrepository.sql* pour créer le schéma.
 
-Visual Studio Enterprise fournit des ensembles de compteurs nommés qui recueillent des compteurs de performance courants en fonction d’une technologie. Ces ensembles sont utiles lorsque vous analysez un serveur IIS, un serveur ASP.NET ou un serveur SQL. Toutes les données recueillies avec les ensembles de compteurs sont stockées dans le référentiel des résultats des tests de charge.
+Visual Studio Enterprise fournit des ensembles de compteurs nommés qui recueillent des compteurs de performance courants en fonction d'une technologie. Ces ensembles sont utiles lorsque vous analysez un serveur IIS, un serveur ASP.NET ou un serveur SQL. Toutes les données recueillies avec les ensembles de compteurs sont stockées dans le référentiel des résultats des tests de charge.
 
 > [!IMPORTANT]
 > Il existe une différence entre un ensemble de compteurs et les données de compteurs de performance. Un ensemble de compteurs est composé de métadonnées. Il définit un groupe de compteurs de performance qui doivent être recueillis à partir d'un ordinateur qui exécute un rôle particulier, tel qu'un serveur IIS ou SQL Server. L'ensemble de compteurs fait partie de la définition de test de charge. Les données de compteurs de performance sont recueillies en fonction des ensembles de compteurs, du mappage de l'ensemble de compteurs à un ordinateur spécifique et du taux d'échantillonnage.
@@ -39,7 +39,7 @@ Visual Studio Enterprise fournit des ensembles de compteurs nommés qui recueill
 
 ## <a name="load-test-results-store-considerations"></a>Considérations relatives au magasin des résultats des tests de charge
 
- Quand Visual Studio Enterprise est installé, le magasin des résultats de test de charge est configuré pour utiliser une instance de SQL Express installée sur l'ordinateur. SQL Express est limité à l'utilisation d'une capacité d'espace disque maximum de 4 Go. Si vous exécutez de nombreux tests de charge sur une longue période, vous devez envisager de configurer le magasin des résultats de test de charge pour utiliser une instance du produit SQL Server complet si disponible.
+ Quand Visual Studio Enterprise est installé, le magasin des résultats de test de charge est configuré pour utiliser une instance de SQL Express installée sur l’ordinateur. SQL Express est limité à l'utilisation d'une capacité d'espace disque maximum de 4 Go. Si vous exécutez de nombreux tests de charge sur une longue période, vous devez envisager de configurer le magasin des résultats de test de charge pour utiliser une instance du produit SQL Server complet si disponible.
 
 ## <a name="load-test-analyzer-tasks"></a>Tâches de l’Analyseur de test de charge
 

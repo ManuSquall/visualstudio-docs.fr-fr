@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fd3eaf1df585ac9c95355c0677934bee1ba3c09a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639945"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830822"
 ---
 # <a name="measure-mode-onoff"></a>Mode Mesure activé/désactivé
 Avec cet outil, vous pouvez mesurer précisément une durée dans la chronologie. Pour activer le mode Mesure, cliquez sur le bouton Mesure (qui a une icône de règle), puis faites-le glisser dans la chronologie. Notez que, pendant cette opération, la zone en dessous du pointeur est mise en surbrillance en jaune et que la durée mesurée apparaît dans la barre d’outils à droite du bouton. Cette valeur est calculée dynamiquement au fil du glissement, ce qui vous permet de voir immédiatement la durée d’un événement particulier. Quand vous relâchez le bouton de la souris, la valeur de la durée reste visible.

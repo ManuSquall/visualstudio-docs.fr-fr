@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 988bc52cbf163c4b7e0f4c8d821a769f21df0413
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e4675977872057010e4279f88739981505bf73e9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938200"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946868"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>Procédure : Définir plusieurs projets de démarrage
 
@@ -23,13 +23,13 @@ Visual Studio vous permet de spécifier la façon dont plusieurs projets sont ex
 
 ## <a name="to-set-multiple-startup-projects"></a>Pour définir plusieurs projets de démarrage
 
-1.  Dans **l’Explorateur de solutions**, sélectionnez la solution (nœud supérieur).
+1. Dans **l’Explorateur de solutions**, sélectionnez la solution (nœud supérieur).
 
-2.  Choisissez le menu de contexte (clic droit) du nœud de la solution, puis choisissez **Propriétés**. La boîte de dialogue **Pages de propriétés de Solution** s’affiche.
+2. Choisissez le menu de contexte (clic droit) du nœud de la solution, puis choisissez **Propriétés**. La boîte de dialogue **Pages de propriétés de Solution** s’affiche.
 
-3.  Développez le nœud **Propriétés communes** et choisissez **Projet de démarrage**.
+3. Développez le nœud **Propriétés communes** et choisissez **Projet de démarrage**.
 
-4.  Choisissez l’option **Plusieurs projets de démarrage** et définissez les actions appropriées.
+4. Choisissez l’option **Plusieurs projets de démarrage** et définissez les actions appropriées.
 
 ## <a name="see-also"></a>Voir aussi
 
