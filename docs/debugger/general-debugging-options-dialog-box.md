@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 29b730bacd589e7b42b9f87086eda91d9e199622
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
-ms.translationtype: MT
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59504417"
 ---
 # <a name="general-debugging-options"></a>Options de débogage générales
@@ -48,7 +48,7 @@ Vous pouvez définir les éléments suivants **général** options :
 
 Dans les conditions 2 et 3, l’exception est quelquefois interceptée par le code managé dans `mscorlib` plutôt que par le common language runtime. Cette option n'a aucune incidence sur l'arrêt sur les exceptions interceptées par `mscorlib`.
 
-**Activer le débogage au niveau de l'adresse** : active les fonctionnalités avancées pour le débogage au niveau de l’adresse (la fenêtre Code machine, la fenêtre **Registres** et les points d’arrêt sur adresse mémoire).
+**Activer le débogage au niveau de l'adresse** : active les fonctionnalités avancées pour le débogage au niveau de l’adresse (la fenêtre **Code machine**, la fenêtre **Registres** et les points d’arrêt sur adresse mémoire).
 
 - **Afficher le code machine si la source n'est pas disponible** :   Affiche automatiquement la **désassemblage** fenêtre lorsque vous déboguez du code pour lequel la source n’est pas disponible.
 
@@ -93,7 +93,7 @@ Dans les conditions 2 et 3, l’exception est quelquefois interceptée par le co
 
 **Les fichiers sources doivent correspondre exactement à la version d'origine** : Indique au débogueur de vérifier qu'un fichier source correspond à la version du code source utilisée pour générer le fichier exécutable que vous déboguez. Lorsque la version ne correspond pas, vous êtes invité à rechercher une source correspondante. Si aucune source correspondante n'est trouvée, le code source n'est pas affiché pendant le débogage.
 
-**Rediriger tout le texte de la fenêtre Sortie vers la fenêtre Exécution** : Envoie tous les messages du débogueur qui s'affichent normalement dans la fenêtre Sortie vers la fenêtre **Exécution**.
+**Rediriger tout le texte de la fenêtre Sortie vers la fenêtre Exécution** : Envoie tous les messages du débogueur qui s'affichent normalement dans la fenêtre **Sortie** vers la fenêtre **Exécution**.
 
 **Afficher la structure brute des objets dans des fenêtres de variables** : Désactive toutes les personnalisations d'affichage de la structure des objets. Pour plus d’informations sur les personnalisations d’affichage, consultez [créer des vues personnalisées des objets de .managed](../debugger/create-custom-views-of-dot-managed-objects.md).
 

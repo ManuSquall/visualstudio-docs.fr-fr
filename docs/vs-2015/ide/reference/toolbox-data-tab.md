@@ -13,21 +13,20 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 760caa1fc87b0978571a8a53a44c5cb60616b615
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c681a67b48baf89e1e601943c6cafd25e91ff332
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54768956"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663912"
 ---
 # <a name="toolbox-data-tab"></a>Boîte à outils, onglet Données
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Affiche des objets de données que vous pouvez ajouter à un formulaire et à des composants. L’onglet **Données** de la **boîte à outils** apparaît quand vous créez un projet associé à un concepteur. La **boîte à outils** apparaît par défaut dans l’environnement de développement intégré Visual Studio ; si vous devez afficher la **boîte à outils**, sélectionnez **Boîte à outils** dans le menu **Affichage**.  
   
 > [!TIP]
->  L’exécution de l’Assistant Configuration de source de données crée et configure automatiquement la plupart des éléments de données. Pour plus d’informations, consultez [création des Applications de données avec Visual Studio](http://msdn.microsoft.com/28edce21-220a-484c-b461-a75b0232d293).  
+>  L’exécution de l’Assistant Configuration de source de données crée et configure automatiquement la plupart des éléments de données. Pour plus d’informations, voir [Créer des applications de données avec Visual Studio](http://msdn.microsoft.com/28edce21-220a-484c-b461-a75b0232d293).  
   
 ## <a name="ui-element-list"></a>Liste des éléments de l'interface utilisateur  
  Pour accéder directement à la page de référence .NET Framework d’un composant, appuyez sur **F1** avec le pointeur placé sur l’élément dans la **boîte à outils** ou sur le composant dans la barre d’état du concepteur.  
