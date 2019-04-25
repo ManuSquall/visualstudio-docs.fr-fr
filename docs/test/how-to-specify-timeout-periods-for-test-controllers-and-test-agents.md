@@ -11,12 +11,12 @@ ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b0e71e499eb1920dd59ee47533855cf9f86cbbd0
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 5e703ca3e1770d92a2dc01402acaaba0b4988e92
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970630"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Procédure : spécifier les délais d’expiration des contrôleurs de test et des agents de test
 
@@ -26,7 +26,7 @@ Le contrôleur de test et l'agent de test comportent plusieurs paramètres de d�
 
 Pour modifier les divers paramètres de délai d'attente d'un contrôleur de test ou d'un agent de test, modifiez les fichiers de configuration suivants à l'aide des noms de clé et des valeurs des tables :
 
--   Contrôleur de test : *QTController.exe.config*
+- Contrôleur de test : *QTController.exe.config*
 
     |Nom de la clé|Description|Value|
     |-|-----------------|-|
@@ -35,7 +35,7 @@ Pour modifier les divers paramètres de délai d'attente d'un contrôleur de tes
     |AgentInitializeTimeout|Nombre de secondes d'attente de l'initialisation de tous les agents et de leurs collecteurs de données initialise au début de l'exécution d'un test, avant d'abandonner la série de tests. Cette valeur doit être raisonnablement élevée si vous utilisez des collecteurs de données.|"n" secondes. Par défaut : « 120 » (deux minutes).|
     |AgentCleanupTimeout|Nombre de secondes d'attente du nettoyage de tous les agents et de leurs collecteurs de données, avant de compléter la série de tests. Cette valeur doit être raisonnablement élevée si vous utilisez des collecteurs de données.|"n" secondes. Par défaut : « 120 » (deux minutes).|
 
--   Agent de test : *QTAgentService.exe.config*
+- Agent de test : *QTAgentService.exe.config*
 
     |Nom de la clé|Description|Value|
     |-|-----------------|-|

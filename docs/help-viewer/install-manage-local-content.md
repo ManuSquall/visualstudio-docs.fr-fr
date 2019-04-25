@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3c5a07a38982175466982b34ab0e4ddedcf31be
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5576d1a7f66e11056240702f81e2f55edf65f5a0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938899"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824297"
 ---
 # <a name="install-and-manage-local-content"></a>Installer et gérer du contenu local
 
@@ -42,18 +42,18 @@ Par défaut, Help Viewer installe le contenu à partir d’un service en ligne M
 
 ### <a name="to-change-the-content-installation-source"></a>Pour modifier la source d'installation du contenu
 
-1.  Sous l’onglet **Gérer le contenu**, sélectionnez la case d’option **Disque**.
+1. Sous l’onglet **Gérer le contenu**, sélectionnez la case d’option **Disque**.
 
     > [!NOTE]
     > L’option **Disque** n’est pas disponible si votre administrateur ne vous a pas autorisé à modifier la source d’installation du contenu. Pour plus d’informations, consultez le [Guide de l’administrateur de la visionneuse d’aide](../help-viewer/administrator-guide.md).
 
-2.  Effectuez l’une des opérations suivantes :
+2. Effectuez l’une des opérations suivantes :
 
-    -   Entrez le chemin d’un fichier *.msha* ou l’URL d’un point de terminaison de service.
+    - Entrez le chemin d’un fichier *.msha* ou l’URL d’un point de terminaison de service.
 
-    -   Choisissez le bouton de navigation (**...**) pour accéder à un fichier *.msha*.
+    - Choisissez le bouton de navigation (**...**) pour accéder à un fichier *.msha*.
 
-    -   Dans la liste, choisissez la dernière entrée utilisée.
+    - Dans la liste, choisissez la dernière entrée utilisée.
 
 ## <a name="download-and-install-content-locally"></a>Télécharger et installer le contenu localement
 
@@ -67,13 +67,13 @@ Si vous téléchargez et installez le contenu sur votre ordinateur local, vous p
 
 ### <a name="to-download-and-install-content"></a>Pour télécharger et installer du contenu
 
-1.  Choisissez l’onglet **Gérer le contenu**.
+1. Choisissez l’onglet **Gérer le contenu**.
 
-2.  Dans la liste de contenu, choisissez le lien **Ajouter** à côté du ou des livres que vous voulez télécharger et installer.
+2. Dans la liste de contenu, choisissez le lien **Ajouter** à côté du ou des livres que vous voulez télécharger et installer.
 
      Le livre est ajouté à la liste **Modifications en attente** et la taille estimée du ou des livres spécifiés apparaît sous cette liste. Certains livres partagent des rubriques, la taille totale du téléchargement de plusieurs livres peut être inférieure à la somme de la taille de chaque livre spécifié.
 
-3.  Choisissez le bouton **Mettre à jour**.
+3. Choisissez le bouton **Mettre à jour**.
 
      Le ou les livres que vous avez spécifiés sont installés avec les éventuelles mises à jour des livres dont vous disposez déjà sur votre ordinateur. La durée d'installation varie, mais vous pouvez observer la progression dans la barre d'état.
 
@@ -89,13 +89,13 @@ Vous pouvez économiser de l'espace disque en supprimant le contenu indésirable
 
 ### <a name="to-remove-content"></a>Pour supprimer du contenu
 
-1.  Choisissez l’onglet **Gérer le contenu**.
+1. Choisissez l’onglet **Gérer le contenu**.
 
-2.  Dans la liste de contenu, choisissez le lien **Supprimer** à côté du ou des livres que vous voulez supprimer.
+2. Dans la liste de contenu, choisissez le lien **Supprimer** à côté du ou des livres que vous voulez supprimer.
 
      Le livre est ajouté à la liste **Modifications en attente**.
 
-3.  Choisissez le bouton **Mettre à jour**.
+3. Choisissez le bouton **Mettre à jour**.
 
      Le ou les livres spécifiés sont supprimés de votre ordinateur.
 
@@ -121,13 +121,13 @@ Vous pouvez économiser de l'espace disque en déplaçant le contenu installé s
 
 ### <a name="to-move-local-content"></a>Pour déplacer du contenu local
 
-1.  Sous l’onglet **Gérer le contenu**, choisissez le bouton **Déplacer** sous **Chemin d’accès au stockage local**.
+1. Sous l’onglet **Gérer le contenu**, choisissez le bouton **Déplacer** sous **Chemin d’accès au stockage local**.
 
      La boîte de dialogue **Déplacer le contenu** s’ouvre.
 
-2.  Dans la zone de texte **Vers**, entrez un autre emplacement pour le contenu, puis choisissez le bouton **OK**.
+2. Dans la zone de texte **Vers**, entrez un autre emplacement pour le contenu, puis choisissez le bouton **OK**.
 
-3.  Choisissez le bouton **Fermer** une fois que le contenu a été déplacé.
+3. Choisissez le bouton **Fermer** une fois que le contenu a été déplacé.
 
 ## <a name="see-also"></a>Voir aussi
 

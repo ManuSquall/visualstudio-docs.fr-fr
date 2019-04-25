@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: 990f14d76eabbf1b7ef252234a8625c66ffcdcba
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: 1bc67385a69f7f96288074afd4c7e5f9cefe8805
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62818490"
 ---
 # <a name="install-and-configure-tools-to-build-using-ios"></a>Installer et configurer des outils de génération en utilisant iOS
 
@@ -66,13 +66,13 @@ Pour installer et utiliser l’agent distant en vue de développer du code pour 
 
    `sudo npm install -g npm@latest`
 
-##  <a name="Install"></a> Installer l’agent distant pour iOS
+## <a name="Install"></a> Installer l’agent distant pour iOS
 
 Quand vous installez Visual C++ pour le développement mobile multiplateforme, Visual Studio peut communiquer avec [vcremote](https://go.microsoft.com/fwlink/p/?LinkId=534988). Cet agent distant s’exécutant sur votre Mac permet de transférer des fichiers, de générer et exécuter votre application iOS et d’envoyer des commandes de débogage.
 
 Avant d’installer l’agent distant, assurez-vous que vous disposez bien des [Composants requis](#prerequisites) et que vous avez installé [Visual C++ pour le développement mobile multiplateforme](../cross-platform/install-visual-cpp-for-cross-platform-mobile-development.md#install-the-tools).
 
-###  <a name="DownloadInstall"></a> Pour télécharger et installer l’agent distant
+### <a name="DownloadInstall"></a> Pour télécharger et installer l’agent distant
 
 - Dans l’application Terminal de votre Mac, entrez :
 
@@ -87,11 +87,11 @@ Avant d’installer l’agent distant, assurez-vous que vous disposez bien des [
 
 Si vous avez mis à jour Visual Studio vers une nouvelle version, vous devez aussi mettre à jour l’agent distant vers la version actuelle. Pour mettre à jour l’agent distant, répétez la procédure de téléchargement et d’installation de l’agent à distance.
 
-##  <a name="Start"></a> Démarrer l’agent distant
+## <a name="Start"></a> Démarrer l’agent distant
 
 L’agent distant doit s’exécuter pour permettre à Visual Studio de générer et exécuter votre code iOS. Pour pouvoir communiquer, Visual Studio doit être couplé à l’agent distant. Par défaut, l’agent distant s’exécute en mode de connexion sécurisée, ce qui nécessite qu’un code confidentiel soit couplé à Visual Studio.
 
-###  <a name="RemoteAgentStartServer"></a> Pour démarrer l’agent distant
+### <a name="RemoteAgentStartServer"></a> Pour démarrer l’agent distant
 
 - Dans l’application Terminal de votre Mac, entrez :
 
@@ -127,7 +127,7 @@ Une fois l’agent distant démarré, vous pouvez l’utiliser dans Visual Studi
 
 - Dans la fenêtre Terminal où s’exécute vcremote, entrez **Control**+**C**.
 
-##  <a name="ConfigureVS"></a> Configurer l’agent distant dans Visual Studio
+## <a name="ConfigureVS"></a> Configurer l’agent distant dans Visual Studio
 
 Pour vous connecter à l’agent distant dans Visual Studio, vous devez spécifier la configuration à distance dans les options Visual Studio.
 
@@ -164,7 +164,7 @@ Pour vous connecter à l’agent distant dans Visual Studio, vous devez spécifi
 
 Visual Studio utilise les mêmes informations pour se connecter à l’agent distant sur votre Mac chaque fois que vous l’utilisez. Vous n’avez pas besoin de coupler à nouveau Visual Studio à l’agent distant, sauf si vous générez un nouveau certificat de sécurité sur votre Mac ou que son nom d’hôte ou son adresse IP est modifié.
 
-##  <a name="GeneratePIN"></a> Generate a new security PIN
+## <a name="GeneratePIN"></a> Generate a new security PIN
 
 Quand vous démarrez l’agent distant pour la première fois, le code confidentiel généré est valide pendant une période limitée (par défaut, 10 minutes). Si vous ne couplez pas Visual Studio à l’agent distant avant l’expiration de ce délai, vous devez générer un nouveau code confidentiel.
 
@@ -178,7 +178,7 @@ Quand vous démarrez l’agent distant pour la première fois, le code confident
 
    L’agent distant génère un nouveau code confidentiel temporaire. Pour coupler Visual Studio à l’aide du nouveau code confidentiel, répétez les étapes décrites dans [Configurer l’agent distant dans Visual Studio](#ConfigureVS).
 
-##  <a name="GenerateCert"></a> Générer un nouveau certificat de serveur
+## <a name="GenerateCert"></a> Générer un nouveau certificat de serveur
 
 Pour des raisons de sécurité, les certificats de serveur qui couplent Visual Studio à l’agent distant sont liés à l’adresse IP ou au nom d’hôte de votre Mac. Si ces valeurs changent, vous devez générer un nouveau certificat de serveur et reconfigurer Visual Studio avec les nouvelles valeurs.
 
@@ -200,7 +200,7 @@ Pour des raisons de sécurité, les certificats de serveur qui couplent Visual S
 
 1. Pour coupler Visual Studio à l’aide du nouveau code confidentiel, répétez les étapes décrites dans [Configurer l’agent distant dans Visual Studio](#ConfigureVS).
 
-##  <a name="ConfigureMac"></a> Configure the remote agent on the Mac
+## <a name="ConfigureMac"></a> Configure the remote agent on the Mac
 
 Vous pouvez configurer l’agent distant en utilisant diverses options de ligne de commande. Par exemple, vous pouvez spécifier le port à écouter pour les demandes de génération et spécifier le nombre maximal de builds à conserver sur le système de fichiers. Par défaut, cette limite est de 10 builds. Au moment de l’arrêt, l’agent supprime les builds qui dépassent ce nombre maximal.
 

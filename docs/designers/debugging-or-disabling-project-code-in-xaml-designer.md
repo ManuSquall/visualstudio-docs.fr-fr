@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 50ebaad52473eaccb39d8253e9af5fbb9f4a3cbf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bc22f9dcbe348f46ae624e5c06706d328633e784
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596736"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846032"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>Déboguer ou désactiver le code de projet dans le Concepteur XAML
 
@@ -21,13 +21,13 @@ Dans bien des cas, les exceptions non gérées dans le concepteur **XAML** peuve
 
 Le code de projet est constitué des éléments suivants :
 
--   contrôles personnalisés et contrôles utilisateur ;
+- contrôles personnalisés et contrôles utilisateur ;
 
--   bibliothèques de classes ;
+- bibliothèques de classes ;
 
--   convertisseurs de valeurs ;
+- convertisseurs de valeurs ;
 
--   liaisons avec des données au moment de la conception générées à partir du code de projet.
+- liaisons avec des données au moment de la conception générées à partir du code de projet.
 
 Quand le code de projet est désactivé, Visual Studio affiche des espaces réservés. Pour une liaison, il peut s’agir du nom de la propriété dans le cas où les données ne sont plus disponibles ou bien un espace réservé pour un contrôle qui n’est plus en cours d’exécution.
 
@@ -35,43 +35,43 @@ Quand le code de projet est désactivé, Visual Studio affiche des espaces rése
 
 ## <a name="to-determine-if-project-code-is-causing-an-exception"></a>Pour déterminer si le code de projet est à l’origine d’une exception
 
-1.  Dans la boîte de dialogue de l’exception non gérée, choisissez le lien **Cliquez ici pour recharger le concepteur** .
+1. Dans la boîte de dialogue de l’exception non gérée, choisissez le lien **Cliquez ici pour recharger le concepteur** .
 
-2.  Dans la barre de menus, choisissez **Déboguer** > **Démarrer le débogage** pour générer et exécuter l’application.
+2. Dans la barre de menus, choisissez **Déboguer** > **Démarrer le débogage** pour générer et exécuter l’application.
 
      Si l’application se génère et s’exécute correctement, l’exception au moment de la conception est peut-être due à votre code de projet s’exécutant dans le concepteur.
 
 ## <a name="to-debug-project-code-running-in-the-designer"></a>Pour déboguer le code de projet s’exécutant dans le concepteur
 
-1.  Dans la boîte de dialogue de l’exception non gérée, choisissez le lien **Cliquez ici pour désactiver l’exécution du code de projet et recharger le concepteur** .
+1. Dans la boîte de dialogue de l’exception non gérée, choisissez le lien **Cliquez ici pour désactiver l’exécution du code de projet et recharger le concepteur** .
 
-2.  Dans le Gestionnaire des tâches Windows, cliquez sur le bouton **Fin de tâche** pour fermer toutes les instances du concepteur XAML Visual Studio en cours d’exécution.
+2. Dans le Gestionnaire des tâches Windows, cliquez sur le bouton **Fin de tâche** pour fermer toutes les instances du concepteur XAML Visual Studio en cours d’exécution.
 
      ![Instances du concepteur XAML dans TaskManager](../designers/media/xaml_taskmanager.png)
 
-3.  Dans Visual Studio, ouvrez la page XAML qui contient le code ou le contrôle à déboguer.
+3. Dans Visual Studio, ouvrez la page XAML qui contient le code ou le contrôle à déboguer.
 
-4.  Ouvrez une nouvelle instance de Visual Studio, puis ouvrez une deuxième instance de votre projet.
+4. Ouvrez une nouvelle instance de Visual Studio, puis ouvrez une deuxième instance de votre projet.
 
-5.  Définissez un point d’arrêt dans votre code de projet.
+5. Définissez un point d’arrêt dans votre code de projet.
 
-6.  Dans la nouvelle instance de Visual Studio, dans la barre de menus, choisissez **Déboguer** > **Attacher au processus**.
+6. Dans la nouvelle instance de Visual Studio, dans la barre de menus, choisissez **Déboguer** > **Attacher au processus**.
 
-7.  Dans la boîte de dialogue **Attacher au processus** , dans la liste **Processus disponibles** , choisissez **XDesProc.exe**, puis cliquez sur le bouton **Attacher** .
+7. Dans la boîte de dialogue **Attacher au processus** , dans la liste **Processus disponibles** , choisissez **XDesProc.exe**, puis cliquez sur le bouton **Attacher** .
 
      ![Processus du concepteur XAML](../designers/media/xaml_attach.png)
 
      Il s’agit ici du processus destiné au concepteur XAML de la première instance de Visual Studio.
 
-8.  Dans la première instance de Visual Studio, dans la barre de menus, choisissez **Déboguer** > **Démarrer le débogage**.
+8. Dans la première instance de Visual Studio, dans la barre de menus, choisissez **Déboguer** > **Démarrer le débogage**.
 
      Vous pouvez maintenant parcourir pas à pas votre code qui s’exécute dans le concepteur.
 
 ## <a name="to-disable-project-code-in-the-designer"></a>Pour désactiver le code de projet dans le concepteur
 
--   Dans la boîte de dialogue de l’exception non gérée, choisissez le lien **Cliquez ici pour désactiver l’exécution du code de projet et recharger le concepteur** .
+- Dans la boîte de dialogue de l’exception non gérée, choisissez le lien **Cliquez ici pour désactiver l’exécution du code de projet et recharger le concepteur** .
 
--   Sinon, dans la barre d’outils du **Concepteur XAML**, cliquez sur le bouton **Désactiver le code de projet**.
+- Sinon, dans la barre d’outils du **Concepteur XAML**, cliquez sur le bouton **Désactiver le code de projet**.
 
      ![Le bouton Désactiver le code de projet](../designers/media/xaml_disablecode.png)
 
@@ -80,7 +80,7 @@ Quand le code de projet est désactivé, Visual Studio affiche des espaces rése
     > [!NOTE]
     > Pour les projets qui ciblent des processeurs ARM ou X64, Visual Studio ne peut pas exécuter le code de projet dans le concepteur. De ce fait, le bouton **Désactiver le code de projet** est désactivé dans le concepteur.
 
--   Les deux options ont pour effet de recharger le concepteur et de désactiver l’ensemble du code du projet associé.
+- Les deux options ont pour effet de recharger le concepteur et de désactiver l’ensemble du code du projet associé.
 
     > [!NOTE]
     > La désactivation du code de projet peut entraîner une perte de données au moment du design. Une autre solution consiste à déboguer le code s’exécutant dans le concepteur.
