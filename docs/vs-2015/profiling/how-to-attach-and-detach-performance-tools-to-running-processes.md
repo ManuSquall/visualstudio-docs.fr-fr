@@ -17,14 +17,14 @@ caps.latest.revision: 35
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2357993f6f0d814bc2383564cafe16bb2e21225a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 873f4735cd1be2525b8b009dc94787b4eed394ad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762433"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095737"
 ---
-# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Guide pratique pour attacher les outils d’analyse des performances à des processus en cours d’exécution ou les en détacher
+# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Procédure : Attacher et détacher des outils de performances à l’exécution de processus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le profileur peut être utilisé pour attacher ou détacher des outils du processus en cours afin de faciliter l’échantillonnage et la collecte des données de performances. Vous pouvez utiliser cette méthode pour profiler un processus lorsque vous voulez éviter de collecter des données sur le temps de chargement de l’application ou pour surveiller les performances d’un processus après qu’il a atteint un certain état.  
@@ -44,7 +44,7 @@ Le profileur peut être utilisé pour attacher ou détacher des outils du proces
   
 ### <a name="to-attach-to-a-running-process"></a>Pour établir un attachement à un processus en cours d'exécution  
   
-1.  Dans le menu **Analyser**, pointez sur **Profileur**, puis cliquez sur **Attacher/Détacher**.  
+1. Dans le menu **Analyser**, pointez sur **Profileur**, puis cliquez sur **Attacher/Détacher**.  
   
      \- ou -  
   
@@ -52,13 +52,13 @@ Le profileur peut être utilisé pour attacher ou détacher des outils du proces
   
      La boîte de dialogue **Attacher le profileur au processus** s’affiche.  
   
-2.  Cliquez sur le nom du processus que vous voulez attacher.  
+2. Cliquez sur le nom du processus que vous voulez attacher.  
   
-3.  Cliquez sur **Attacher**.  
+3. Cliquez sur **Attacher**.  
   
 ### <a name="to-detach-from-a-running-process"></a>Pour détacher d’un processus en cours d’exécution  
   
-1.  Dans le menu **Analyser**, pointez sur **Profileur**, puis cliquez sur **Attacher/Détacher**.  
+1. Dans le menu **Analyser**, pointez sur **Profileur**, puis cliquez sur **Attacher/Détacher**.  
   
      \- ou -  
   
@@ -66,13 +66,13 @@ Le profileur peut être utilisé pour attacher ou détacher des outils du proces
   
      La boîte de dialogue **Attacher le profileur au processus** s’affiche.  
   
-2.  Cliquez sur le nom de l’image de laquelle se détacher.  
+2. Cliquez sur le nom de l’image de laquelle se détacher.  
   
-3.  Cliquez sur **Détacher**.  
+3. Cliquez sur **Détacher**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Contrôle de la collecte de données](../profiling/controlling-data-collection.md)   
  [Vue d’ensemble des sessions de performance](../profiling/performance-session-overview.md)   
- [Guide pratique pour démarrer et terminer la collecte des données de performances](../profiling/how-to-start-and-end-performance-data-collection.md)   
+ [Guide pratique pour Démarrer et terminer la collecte de données de performances](../profiling/how-to-start-and-end-performance-data-collection.md)   
  [Profilage et sécurité Windows Vista](../profiling/profiling-and-windows-vista-security.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)

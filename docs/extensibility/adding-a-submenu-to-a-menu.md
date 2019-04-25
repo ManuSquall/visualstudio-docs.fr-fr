@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a356f6a26cfbaad9d81f8a0cb37164660e39f0a8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 7ae0fa20b110f67ac23b7b6013444021dffc468c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55004459"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047006"
 ---
 # <a name="add-a-submenu-to-a-menu"></a>Ajouter un sous-menu à un Menu
 Cette procédure pas à pas s’appuie sur la démonstration dans [ajouter un Menu dans la barre de menus de Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) en montrant comment ajouter un sous-menu à la **TestMenu** menu.
@@ -32,9 +32,9 @@ Cette procédure pas à pas s’appuie sur la démonstration dans [ajouter un Me
 
 ## <a name="add-a-submenu-to-a-menu"></a>Ajouter un sous-menu à un Menu
 
-1.  Suivez les étapes de [ajouter un Menu dans la barre de menus de Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) pour créer l’élément de menu et de projet. Cette procédure pas à pas suppose que le nom du projet VSIX est `TopLevelMenu`.
+1. Suivez les étapes de [ajouter un Menu dans la barre de menus de Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) pour créer l’élément de menu et de projet. Cette procédure pas à pas suppose que le nom du projet VSIX est `TopLevelMenu`.
 
-2.  Ouvrez *TestCommandPackage.vsct*. Dans le `<Symbols>` , ajoutez un `<IDSymbol>` élément pour le sous-menu, un pour le groupe de sous-menu et un pour la commande, tout en la `<GuidSymbol>` nœud nommé « guidTopLevelMenuCmdSet ». Il s’agit du même nœud qui contient le `<IDSymbol>` élément de menu de niveau supérieur.
+2. Ouvrez *TestCommandPackage.vsct*. Dans le `<Symbols>` , ajoutez un `<IDSymbol>` élément pour le sous-menu, un pour le groupe de sous-menu et un pour la commande, tout en la `<GuidSymbol>` nœud nommé « guidTopLevelMenuCmdSet ». Il s’agit du même nœud qui contient le `<IDSymbol>` élément de menu de niveau supérieur.
 
     ```xml
     <IDSymbol name="SubMenu" value="0x1100"/>
@@ -42,7 +42,7 @@ Cette procédure pas à pas s’appuie sur la démonstration dans [ajouter un Me
     <IDSymbol name="cmdidTestSubCommand" value="0x0105"/>
     ```
 
-3.  Ajouter le sous-menu nouvellement créé à le `<Menus>` section.
+3. Ajouter le sous-menu nouvellement créé à le `<Menus>` section.
 
     ```xml
     <Menu guid="guidTestCommandPackageCmdSet" id="SubMenu" priority="0x0100" type="Menu">
@@ -56,7 +56,7 @@ Cette procédure pas à pas s’appuie sur la démonstration dans [ajouter un Me
 
      La paire GUID/ID du parent Spécifie le groupe de menus a été généré dans [ajouter un Menu dans la barre de menus de Visual Studio](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md), et est un enfant du menu de niveau supérieur.
 
-4.  Ajouter le groupe de menus défini à l’étape 2 pour le `<Groups>` section et définissez-la comme un enfant du sous-menu.
+4. Ajouter le groupe de menus défini à l’étape 2 pour le `<Groups>` section et définissez-la comme un enfant du sous-menu.
 
     ```xml
     <Group guid="guidTestCommandPackageCmdSet" id="SubMenuGroup" priority="0x0000">
@@ -64,7 +64,7 @@ Cette procédure pas à pas s’appuie sur la démonstration dans [ajouter un Me
     </Group>
     ```
 
-5.  Ajouter un nouveau `<Button>` élément à la `<Buttons>` section pour définir la commande créée à l’étape 2 en tant qu’élément dans le sous-menu.
+5. Ajouter un nouveau `<Button>` élément à la `<Buttons>` section pour définir la commande créée à l’étape 2 en tant qu’élément dans le sous-menu.
 
     ```xml
     <Button guid="guidTestCommandPackageCmdSet" id="cmdidTestSubCommand" priority="0x0000" type="Button">
@@ -77,19 +77,19 @@ Cette procédure pas à pas s’appuie sur la démonstration dans [ajouter un Me
     </Button>
     ```
 
-6.  Générez la solution et commencez le débogage. Vous devez voir l’instance expérimentale.
+6. Générez la solution et commencez le débogage. Vous devez voir l’instance expérimentale.
 
-7.  Cliquez sur **TestMenu** pour afficher un sous-menu nommé **sous-menu**. Cliquez sur **sous-menu** et une commande, ouvrez le sous-menu **Test sous-commande**. Notez qu’un clic sur **Test sous-commande** ne fait rien.
+7. Cliquez sur **TestMenu** pour afficher un sous-menu nommé **sous-menu**. Cliquez sur **sous-menu** et une commande, ouvrez le sous-menu **Test sous-commande**. Notez qu’un clic sur **Test sous-commande** ne fait rien.
 
 ## <a name="add-a-command"></a>Ajouter une commande
 
-1.  Ouvrez *TestCommand.cs* et ajoutez l’ID de commande suivant après l’ID de commande existant.
+1. Ouvrez *TestCommand.cs* et ajoutez l’ID de commande suivant après l’ID de commande existant.
 
     ```csharp
     public const int cmdidTestSubCmd = 0x0105;
     ```
 
-2.  Ajoutez la sous-commande. Recherchez le constructeur de la commande. Ajoutez les lignes suivantes juste après l’appel à la `AddCommand` (méthode).
+2. Ajoutez la sous-commande. Recherchez le constructeur de la commande. Ajoutez les lignes suivantes juste après l’appel à la `AddCommand` (méthode).
 
     ```csharp
     CommandID subCommandID = new CommandID(CommandSet, cmdidTestSubCmd);
@@ -123,7 +123,7 @@ Cette procédure pas à pas s’appuie sur la démonstration dans [ajouter un Me
     }
     ```
 
-3.  Ajouter `SubItemCallback()`. Il s’agit de la méthode est appelée lorsque l’utilisateur clique sur la nouvelle commande dans le sous-menu.
+3. Ajouter `SubItemCallback()`. Il s’agit de la méthode est appelée lorsque l’utilisateur clique sur la nouvelle commande dans le sous-menu.
 
     ```csharp
     private void SubItemCallback(object sender, EventArgs e)
@@ -148,9 +148,9 @@ Cette procédure pas à pas s’appuie sur la démonstration dans [ajouter un Me
     }
     ```
 
-4.  Générez le projet et commencez le débogage. L’instance expérimentale doit apparaître.
+4. Générez le projet et commencez le débogage. L’instance expérimentale doit apparaître.
 
-5.  Sur le **TestMenu** menu, cliquez sur **sous-menu** puis cliquez sur **Test sous-commande**. Une boîte de message doit apparaître et afficher le texte, « Commande de Test à l’intérieur de TestCommand.SubItemCallback() ».
+5. Sur le **TestMenu** menu, cliquez sur **sous-menu** puis cliquez sur **Test sous-commande**. Une boîte de message doit apparaître et afficher le texte, « Commande de Test à l’intérieur de TestCommand.SubItemCallback() ».
 
 ## <a name="see-also"></a>Voir aussi
 

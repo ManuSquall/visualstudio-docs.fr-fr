@@ -26,7 +26,7 @@ Dans le processus, vous allez apprendre comment :
 * **[Modifier le code source](#modify-the-source-code)**
 * **[Exécutez-le](#run-it)**
 
-Pour cet exemple, vous utiliserez Visual c# pour ajouter qu'un bouton de menu personnalisé nommé « Dire Hello World ! » qui ressemble à ceci :
+Pour cet exemple, vous utiliserez Visual C# pour ajouter qu'un bouton de menu personnalisé nommé « Dire Hello World ! » qui ressemble à ceci :
 
 ![Commande de Hello World](media/hello-world-say-hello-world.png)
 

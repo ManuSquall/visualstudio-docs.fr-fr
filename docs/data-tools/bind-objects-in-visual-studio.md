@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f35aaf5b36da2bf40420bd4461f7d2fa880575e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 4fb5a8c7a54871c7d948a458768c5551dbb5d550
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937498"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091757"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>Lier des objets en tant que sources de données dans Visual Studio
 
@@ -40,25 +40,25 @@ En règle générale, les objets personnalisés ne nécessitent pas tout des int
 
 Bien qu’il existe des innombrables façons d’implémenter votre logique d’application lorsque vous travaillez avec des objets comme source de données, il les bases de données sont quelques opérations standards qui peuvent être simplifiées en utilisant les objets TableAdapter générés par Visual Studio pour SQL. Cette page explique comment implémenter ces processus standards à l’aide de TableAdapters. Il n’est pas destiné comme guide pour la création de vos objets personnalisés. Par exemple, vous allez généralement effectuer les opérations standards suivantes indépendamment de l’implémentation spécifique de vos objets, ou la logique de l’application :
 
--   Chargement des données dans des objets (généralement à partir d’une base de données).
+- Chargement des données dans des objets (généralement à partir d’une base de données).
 
--   Création d’une collection typée d’objets.
+- Création d’une collection typée d’objets.
 
--   Ajout et suppression d’objets dans une collection.
+- Ajout et suppression d’objets dans une collection.
 
--   Afficher les données d’objet aux utilisateurs sur un formulaire.
+- Afficher les données d’objet aux utilisateurs sur un formulaire.
 
--   Modification des données dans un objet.
+- Modification des données dans un objet.
 
--   Enregistrer les données à partir d’objets dans la base de données.
+- Enregistrer les données à partir d’objets dans la base de données.
 
 ### <a name="load-data-into-objects"></a>Charger des données dans des objets
 
 Pour cet exemple, vous chargez des données dans vos objets à l’aide de TableAdapters. Par défaut, les TableAdapters sont créés avec deux types de méthodes qui extraire des données à partir d’une base de données et remplissent les tables de données.
 
--   Le `TableAdapter.Fill` méthode remplit une table de données existante avec les données retournées.
+- Le `TableAdapter.Fill` méthode remplit une table de données existante avec les données retournées.
 
--   Le `TableAdapter.GetData` méthode retourne une nouvelle table de données remplie avec des données.
+- Le `TableAdapter.GetData` méthode retourne une nouvelle table de données remplie avec des données.
 
 Le moyen le plus simple pour charger vos objets personnalisés avec des données consiste à appeler le `TableAdapter.GetData` (méthode), boucler dans la collection de lignes dans la table de données retournée et remplir chaque objet avec les valeurs dans chaque ligne. Vous pouvez créer un `GetData` méthode qui retourne une table de données remplie pour toute requête ajoutée à un TableAdapter.
 

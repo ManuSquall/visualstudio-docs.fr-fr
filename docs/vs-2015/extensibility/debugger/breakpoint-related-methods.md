@@ -11,23 +11,23 @@ ms.assetid: a6f77bf0-bf81-443f-8683-5f12075bbe10
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 06f7904a1ae38ce9a2c8103208490bc67e8dc7b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 47ba1529521fdce042512a38d32ad2ca2eb3cb82
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953553"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085557"
 ---
 # <a name="breakpoint-related-methods"></a>Méthodes liées au point d’arrêt
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Un moteur de débogage (dé) doit prendre en charge le paramètre de points d’arrêt. Débogage de Visual Studio prend en charge les types de points d’arrêt suivants :  
   
--   lié  
+- lié  
   
      Demandés via l’interface utilisateur et correctement lié à un emplacement de code spécifié  
   
--   En attente  
+- En attente  
   
      Demandé par l’interface utilisateur, mais pas encore lié aux véritables instructions  
   

@@ -1,26 +1,21 @@
 ---
 title: À l’aide de marqueurs de texte avec l’API héritée | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], legacy - text markers
 ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 600e9635fb0ee5ea78226277860ac41e183f47b5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: af08f5c2b487505b1c0800db852760c2f139dae0
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51745906"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58947867"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>À l’aide de marqueurs de texte avec l’API héritée
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,12 +31,12 @@ Un marqueur de texte est une plage flottante de texte dans une mémoire tampon q
   
 |Titre|Description|  
 |-----------|-----------------|  
-|[Guide pratique pour ajouter des marqueurs de texte standard](../extensibility/how-to-add-standard-text-markers.md)|Décrit comment ajouter un type de marqueur de texte standard fourni par le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] éditeur principal pour un affichage de texte.|  
-|[Guide pratique pour implémenter des marqueurs d’erreur](../extensibility/how-to-implement-error-markers.md)|Décrit comment implémenter une instance de la [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] marqueur qui sert à indiquer les erreurs à l’aide des soulignements ondulés rouges.|  
-|[Guide pratique pour créer des marqueurs de texte personnalisés](../extensibility/how-to-create-custom-text-markers.md)|Décrit comment créer et ajouter un type de marqueur de texte personnalisé à une vue de texte.|  
-|[Guide pratique pour utiliser des marqueurs de texte](../extensibility/how-to-use-text-markers.md)|Explique comment ajouter des marqueurs de texte.|  
+|[Guide pratique pour Ajouter des marqueurs de texte Standard](../extensibility/how-to-add-standard-text-markers.md)|Décrit comment ajouter un type de marqueur de texte standard fourni par le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] éditeur principal pour un affichage de texte.|  
+|[Guide pratique pour Implémenter des marqueurs d’erreur](../extensibility/how-to-implement-error-markers.md)|Décrit comment implémenter une instance de la [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] marqueur qui sert à indiquer les erreurs à l’aide des soulignements ondulés rouges.|  
+|[Guide pratique pour Créer des marqueurs de texte personnalisé](../extensibility/how-to-create-custom-text-markers.md)|Décrit comment créer et ajouter un type de marqueur de texte personnalisé à une vue de texte.|  
+|[Guide pratique pour Utiliser des marqueurs de texte](../extensibility/how-to-use-text-markers.md)|Explique comment ajouter des marqueurs de texte.|  
 |[Dans l’éditeur de base](../extensibility/inside-the-core-editor.md)|Décrit les fonctionnalités de l’éditeur principal et fournit des détails sur la personnalisation de l’éditeur principal.|  
-|[Fonctionnalités de l’éditeur](http://msdn.microsoft.com/en-us/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Décrit les fonctionnalités disponibles dans le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] éditeur principal.|  
+|[Fonctionnalités de l’éditeur](http://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Décrit les fonctionnalités disponibles dans le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] éditeur principal.|  
   
 ## <a name="reference"></a>Référence  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsPackageDefinedTextMarkerType>  
@@ -76,4 +71,3 @@ Un marqueur de texte est une plage flottante de texte dans une mémoire tampon q
   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStreamMarker>  
  Permet d’accéder à et ajuste la position d’un marqueur de texte dans une mémoire tampon de texte à l’aide des coordonnées unidimensionnelles. S’il est possible, n’utilisez pas cette interface.
-

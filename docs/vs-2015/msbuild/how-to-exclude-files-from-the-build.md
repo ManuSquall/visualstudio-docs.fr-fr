@@ -1,5 +1,5 @@
 ---
-title: 'Comment : exclure des fichiers de la génération | Microsoft Docs'
+title: 'Procédure : Exclure des fichiers de la build | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -13,21 +13,20 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eb390e98b8650764dfc9f4237f150a5b903f1618
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: bd1535841a01b6e188383d74ed3b6124b4a325f6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796722"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052557"
 ---
-# <a name="how-to-exclude-files-from-the-build"></a>Comment : exclure des fichiers de la build
+# <a name="how-to-exclude-files-from-the-build"></a>Procédure : Exclure des fichiers de la build
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Dans un fichier projet, vous pouvez utiliser des caractères génériques pour inclure tous les fichiers d’un répertoire ou un ensemble imbriqué de répertoires comme des entrées d’une génération. Toutefois, il se peut que vous ne souhaitiez pas inclure un fichier du répertoire ou un répertoire d’un ensemble imbriqué de répertoires comme entrée d’une génération. Vous pouvez explicitement exclure ce fichier ou ce répertoire de la liste d’entrées. Il peut également s’agir d’un fichier d’un projet que vous ne souhaitez inclure que dans certaines conditions. Vous pouvez déclarer explicitement les conditions dans lesquelles un fichier est inclus dans une génération.  
   
 ## <a name="excluding-a-file-or-directory-from-the-inputs-for-a-build"></a>Exclusion d’un fichier ou d’un répertoire des entrées d’une génération  
- Les listes d’éléments constituent les fichiers d’entrée d’une génération. Les éléments que vous souhaitez inclure sont déclarés séparément ou en tant que groupe à l’aide de l’attribut `Include`. Par exemple :  
+ Les listes d’éléments constituent les fichiers d’entrée d’une génération. Les éléments que vous souhaitez inclure sont déclarés séparément ou en tant que groupe à l’aide de l’attribut `Include`. Exemple :  
   
 ```  
 <CSFile Include="Form1.cs"/>  
@@ -40,7 +39,7 @@ Dans un fichier projet, vous pouvez utiliser des caractères génériques pour i
   
 #### <a name="to-include-all-cs-or-vb-files-except-form2"></a>Pour inclure tous les fichiers .cs ou .vb à l’exception de Form2  
   
--   Utilisez l’un des attributs `Include` et `Exclude` suivants :  
+- Utilisez l’un des attributs `Include` et `Exclude` suivants :  
   
     ```  
     <CSFile Include="*.cs" Exclude="Form2.cs"/>  
@@ -54,7 +53,7 @@ Dans un fichier projet, vous pouvez utiliser des caractères génériques pour i
   
 #### <a name="to-include-all-cs-or-vb-files-except-form2-and-form3"></a>Pour inclure tous les fichiers .cs ou .vb à l’exception de Form2 et de Form3  
   
--   Utilisez l’un des attributs `Include` et `Exclude` suivants :  
+- Utilisez l’un des attributs `Include` et `Exclude` suivants :  
   
     ```  
     <CSFile Include="*.cs" Exclude="Form2.cs;Form3.cs"/>  
@@ -68,7 +67,7 @@ Dans un fichier projet, vous pouvez utiliser des caractères génériques pour i
   
 #### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>Pour inclure tous les fichiers .jpg des sous-répertoires du répertoire Images, à l’exception de ceux du répertoire Version2  
   
--   Utilisez les attributs `Include` et `Exclude` suivants :  
+- Utilisez les attributs `Include` et `Exclude` suivants :  
   
     ```  
     <JPGFile  
@@ -84,7 +83,7 @@ Dans un fichier projet, vous pouvez utiliser des caractères génériques pour i
   
 #### <a name="to-include-the-file-formulavb-only-in-release-builds"></a>Pour inclure le fichier Formula.vb uniquement dans les versions Release  
   
--   Utilisez un attribut `Condition` semblable à ce qui suit :  
+- Utilisez un attribut `Condition` semblable à ce qui suit :  
   
     ```  
     <Compile  
@@ -128,4 +127,4 @@ Dans un fichier projet, vous pouvez utiliser des caractères génériques pour i
   
 ## <a name="see-also"></a>Voir aussi  
  [Éléments](../msbuild/msbuild-items.md)   
- [MSBuild](msbuild.md) [Guide pratique pour sélectionner des fichiers dans une build](../msbuild/how-to-select-the-files-to-build.md)
+ [MSBuild](msbuild.md) [Comment : Sélectionnez les fichiers dans une Build](../msbuild/how-to-select-the-files-to-build.md)

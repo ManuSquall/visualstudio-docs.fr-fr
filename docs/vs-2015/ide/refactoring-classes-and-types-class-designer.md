@@ -20,12 +20,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e6a150d32fa4eb5bc162f9ce8522ddfed634253b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 1fae6a503323d42d4f759a30b4db790a88079815
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782124"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048396"
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>Refactorisation des classes et des types (Concepteur de classes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,52 +39,52 @@ Quand vous refactorisez du code, vous le rendez plus facile à comprendre et à 
   
 |Tâche|Contenu de support|  
 |----------|------------------------|  
-|**Refactorisation des classes** : vous pouvez utiliser les opérations de refactorisation pour fractionner une classe en classes partielles ou pour implémenter une classe de base abstraite.|-   [Guide pratique pour fractionner une classe en classes partielles (Concepteur de classes)](../ide/how-to-split-a-class-into-partial-classes-class-designer.md)|  
-|**Utilisation des interfaces** : dans le Concepteur de classes, vous pouvez implémenter une interface pour le diagramme de classes en la connectant à une classe qui fournit du code pour les méthodes d’interface.|-   [Guide pratique pour implémenter une interface (Concepteur de classes)](../ide/how-to-implement-an-interface-class-designer.md)|  
-|**Refactorisation des types, des membres de type et des paramètres** : à l’aide du Concepteur de classes, vous pouvez renommer des types, substituer des membres de type ou les déplacer d’un type à un autre. Vous pouvez également créer des types Nullable.|-   [Attribution d'un nouveau nom aux types et membres de type](../ide/refactoring-classes-and-types-class-designer.md#RenamingTypesAndMembers)<br />-   [Déplacement des membres de type d’un type à un autre](../ide/refactoring-classes-and-types-class-designer.md#MovingTypeMembers)<br />-   [Guide pratique pour créer un type Nullable (Concepteur de classes)](../ide/how-to-create-a-nullable-type-class-designer.md)|  
+|**Refactoriser des classes :** vous pouvez utiliser les opérations de refactorisation pour fractionner une classe en classes partielles ou pour implémenter une classe de base abstraite.|-   [Guide pratique pour fractionner une classe en classes partielles (Concepteur de classes)](../ide/how-to-split-a-class-into-partial-classes-class-designer.md)|  
+|**Utiliser des interfaces :** Dans le Concepteur de classes, vous pouvez implémenter une interface pour le diagramme de classes en la connectant à une classe qui fournit du code pour les méthodes d’interface.|-   [Guide pratique pour implémenter une interface (Concepteur de classes)](../ide/how-to-implement-an-interface-class-designer.md)|  
+|**Refactoriser des types, des membres de type et des paramètres :** avec le Concepteur de classes, vous pouvez renommer des types, substituer des membres de type ou les déplacer d’un type à un autre. Vous pouvez également créer des types Nullable.|-   [Attribution d'un nouveau nom aux types et membres de type](../ide/refactoring-classes-and-types-class-designer.md#RenamingTypesAndMembers)<br />-   [Déplacement des membres de type d’un type à un autre](../ide/refactoring-classes-and-types-class-designer.md#MovingTypeMembers)<br />-   [Guide pratique pour créer un type Nullable (Concepteur de classes)](../ide/how-to-create-a-nullable-type-class-designer.md)|  
   
-###  <a name="RenamingTypesAndMembers"></a> Attribution d’un nouveau nom aux types et membres de type  
+### <a name="RenamingTypesAndMembers"></a> Attribution d’un nouveau nom aux types et membres de type  
  Au sein du Concepteur de classes, vous pouvez renommer un type ou un membre de type dans le diagramme de classes ou dans la fenêtre Propriétés. Dans la fenêtre Détails de classe, vous pouvez changer le nom d'un membre mais pas d'un type. Le changement de nom d'un type ou d'un membre de type se propage à toutes les fenêtres et tous les emplacements de code où apparaissait l'ancien nom.  
   
 ##### <a name="to-rename-a-name-in-the-class-designer"></a>Pour attribuer un nouveau nom dans le Concepteur de classes  
   
-1.  Dans le diagramme de classes, sélectionnez le type ou le membre, puis cliquez sur le nom.  
+1. Dans le diagramme de classes, sélectionnez le type ou le membre, puis cliquez sur le nom.  
   
      Le nom du membre devient modifiable.  
   
-2.  Tapez le nouveau nom du membre de type ou du type  
+2. Tapez le nouveau nom du membre de type ou du type  
   
 ##### <a name="to-rename-a-name-in-the-class-details-window"></a>Pour attribuer un nouveau nom dans la fenêtre Détails de classe  
   
-1.  Pour afficher la fenêtre Détails de classe, cliquez avec le bouton droit sur le type ou le membre de type, puis cliquez sur **Détails de classe**.  
+1. Pour afficher la fenêtre Détails de classe, cliquez avec le bouton droit sur le type ou le membre de type, puis cliquez sur **Détails de classe**.  
   
      La fenêtre Détails de classe s'affiche.  
   
-2.  Dans la colonne **Nom** , changez le nom du membre de type.  
+2. Dans la colonne **Nom** , changez le nom du membre de type.  
   
-3.  Pour déplacer le focus hors de la cellule, appuyez sur la touche **Entrée** ou cliquez en dehors de la cellule.  
+3. Pour déplacer le focus hors de la cellule, appuyez sur la touche **Entrée** ou cliquez en dehors de la cellule.  
   
     > [!NOTE]
     >  Dans la fenêtre Détails de classe, vous pouvez changer le nom d'un membre mais pas d'un type.  
   
 ##### <a name="to-rename-a-name-in-the-properties-window"></a>Pour attribuer un nouveau nom dans la fenêtre Propriétés  
   
-1.  Dans le diagramme de classes ou la fenêtre Détails de classe, cliquez avec le bouton droit sur le type ou le membre, puis cliquez sur **Propriétés**.  
+1. Dans le diagramme de classes ou la fenêtre Détails de classe, cliquez avec le bouton droit sur le type ou le membre, puis cliquez sur **Propriétés**.  
   
      La fenêtre Propriétés apparaît et affiche les propriétés du type ou du membre de type.  
   
-2.  Dans la propriété **Nom** , changez le nom du type ou du membre de type.  
+2. Dans la propriété **Nom** , changez le nom du type ou du membre de type.  
   
      Le nouveau nom se propage à l'ensemble des fenêtres et des emplacements de code du projet actif, où apparaissait l'ancien nom.  
   
-###  <a name="MovingTypeMembers"></a> Déplacement des membres de type d'un type à un autre  
+### <a name="MovingTypeMembers"></a> Déplacement des membres de type d'un type à un autre  
  À l'aide du **Concepteur de classes**, vous pouvez déplacer un membre de type d'un type à un autre, si les deux types sont visibles dans le diagramme de classes actif.  
   
 ##### <a name="to-move-a-type-member-from-one-type-to-another"></a>Pour déplacer un membre de type d'un type à un autre  
   
-1.  Dans un type visible sur l'aire de conception, cliquez avec le bouton droit sur le membre à déplacer vers un autre type, puis cliquez sur **Couper**.  
+1. Dans un type visible sur l'aire de conception, cliquez avec le bouton droit sur le membre à déplacer vers un autre type, puis cliquez sur **Couper**.  
   
-2.  Cliquez avec le bouton droit sur le type de destination, puis cliquez sur **Coller**.  
+2. Cliquez avec le bouton droit sur le type de destination, puis cliquez sur **Coller**.  
   
      La propriété est supprimée du type source et apparaît dans le type de destination.  
   

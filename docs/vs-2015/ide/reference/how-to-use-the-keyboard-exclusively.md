@@ -16,17 +16,16 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3a7658f2c06a0a2b252d88041dc9255663851e2c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b109be00f7b165a131244ed1ddb886739bcdce55
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782619"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051581"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Guide pratique pour utiliser uniquement le clavier
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fournit de nombreuses combinaisons de touches de raccourci par défaut pour simplifier la navigation et l’écriture du code dans l’environnement de développement intégré (IDE). Pour obtenir la liste complète des touches de raccourci utilisées dans Visual Studio, consultez [Raccourcis clavier par défaut](../../ide/default-keyboard-shortcuts-in-visual-studio.md). Pour plus d’informations sur les raccourcis clavier disponibles pour d’autres produits Microsoft, consultez [http://www.microsoft.com/enable/products/keyboard.aspx](http://go.microsoft.com/fwlink/?LinkID=40400).  
   
 > [!NOTE]
@@ -52,48 +51,48 @@ ms.locfileid: "54782619"
   
 #### <a name="to-set-dialog-box-options-from-the-keyboard"></a>Pour définir des options de boîte de dialogue à l’aide du clavier  
   
-1.  Utilisez les touches **Tab** ou **Maj+Tab** pour monter ou descendre dans les contrôles de la boîte de dialogue.  
+1. Utilisez les touches **Tab** ou **Maj+Tab** pour monter ou descendre dans les contrôles de la boîte de dialogue.  
   
-2.  Pour modifier les paramètres des options :  
+2. Pour modifier les paramètres des options :  
   
-    -   Pour les cases d’option, utilisez les touches **Haut** et **Bas** pour changer la sélection.  
+    - Pour les cases d’option, utilisez les touches **Haut** et **Bas** pour changer la sélection.  
   
-    -   Pour les cases à cocher, utilisez la touche **Espace** pour sélectionner ou désélectionner.  
+    - Pour les cases à cocher, utilisez la touche **Espace** pour sélectionner ou désélectionner.  
   
-    -   Pour les listes déroulantes, utilisez **Alt** + **Bas** pour afficher les éléments, puis utilisez **Haut** et **Bas** pour changer l’élément sélectionné.  
+    - Pour les listes déroulantes, utilisez **Alt** + **Bas** pour afficher les éléments, puis utilisez **Haut** et **Bas** pour changer l’élément sélectionné.  
   
-    -   Pour les boutons, appuyez sur **Entrée** pour les appeler.  
+    - Pour les boutons, appuyez sur **Entrée** pour les appeler.  
   
-    -   Pour les grilles, utilisez les touches de direction pour naviguer. Pour les listes déroulantes, utilisez **Maj** + **Alt** + **Bas** pour afficher les éléments, puis utilisez **Haut** et **Bas** pour changer l’élément sélectionné.  
+    - Pour les grilles, utilisez les touches de direction pour naviguer. Pour les listes déroulantes, utilisez **Maj** + **Alt** + **Bas** pour afficher les éléments, puis utilisez **Haut** et **Bas** pour changer l’élément sélectionné.  
   
 ## <a name="window-and-file-navigation"></a>Navigation dans les fenêtres et les fichiers  
  L’IDE vous fournit plusieurs méthodes pour vous déplacer entre les fenêtres ouvertes des outils et des documents à l’aide du clavier. Vous pouvez également déplacer et ancrer les fenêtres Outil dans différents emplacements à l’aide du clavier.  
   
 #### <a name="to-navigate-among-windows-and-files-in-the-ide-from-the-keyboard"></a>Pour naviguer entre les fenêtres et les fichiers dans l’IDE à l’aide du clavier  
   
--   Pour vous déplacer entre les fichiers dans un éditeur ou un concepteur, choisissez les touches Ctrl+Tab pour afficher le navigateur IDE avec l’option **Fichiers actifs** sélectionnée. Choisissez la touche Entrée pour accéder au fichier mis en surbrillance.  
+- Pour vous déplacer entre les fichiers dans un éditeur ou un concepteur, choisissez les touches Ctrl+Tab pour afficher le navigateur IDE avec l’option **Fichiers actifs** sélectionnée. Choisissez la touche Entrée pour accéder au fichier mis en surbrillance.  
   
--   Pour vous déplacer entre les fenêtres Outil ancrées, choisissez Alt+F7 pour afficher le navigateur IDE avec l’option **Fenêtres Outil actives** sélectionnée. Choisissez la touche Entrée pour accéder à la fenêtre mise en surbrillance.  
+- Pour vous déplacer entre les fenêtres Outil ancrées, choisissez Alt+F7 pour afficher le navigateur IDE avec l’option **Fenêtres Outil actives** sélectionnée. Choisissez la touche Entrée pour accéder à la fenêtre mise en surbrillance.  
   
 #### <a name="to-move-and-dock-tool-windows-from-the-keyboard"></a>Pour déplacer et ancrer les fenêtres Outil à l’aide du clavier  
   
-1.  Accédez à la fenêtre Outil que vous voulez déplacer et appliquez-lui le focus.  
+1. Accédez à la fenêtre Outil que vous voulez déplacer et appliquez-lui le focus.  
   
-2.  Dans le menu **Fenêtre**, cliquez sur **Ancrable**.  
+2. Dans le menu **Fenêtre**, cliquez sur **Ancrable**.  
   
-3.  Appuyez sur **Alt** + **Espace**, puis choisissez **Déplacer**.  
+3. Appuyez sur **Alt** + **Espace**, puis choisissez **Déplacer**.  
   
      Le losange d’ancrage s’affiche.  
   
-4.  Utilisez les touches de **direction** pour déplacer la fenêtre vers un nouvel emplacement.  
+4. Utilisez les touches de **direction** pour déplacer la fenêtre vers un nouvel emplacement.  
   
      Le pointeur de la souris se déplace avec la fenêtre lorsque vous utilisez les touches de **direction**.  
   
-5.  Lorsque vous avez atteint le nouvel emplacement, utilisez les touches de **direction** pour placer le pointeur de la souris sur la partie appropriée du losange.  
+5. Lorsque vous avez atteint le nouvel emplacement, utilisez les touches de **direction** pour placer le pointeur de la souris sur la partie appropriée du losange.  
   
      Le contour de la fenêtre Outil apparaît au nouvel emplacement d’ancrage.  
   
-6.  Appuyez sur **Entrée**.  
+6. Appuyez sur **Entrée**.  
   
      La fenêtre Outil s’aligne sur le nouvel emplacement d’ancrage.  
   

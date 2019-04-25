@@ -7,16 +7,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb32a3b71a6868e763b9ad77c49f5cb06a4039fc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9279257f238adf92ad560d2f2e1aa7f769905305
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928034"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537396"
 ---
 # <a name="manage-project-and-solution-properties"></a>Gérer les propriétés des projets et des solutions
 
-Les projets ont des propriétés qui régissent de nombreux aspects de la compilation, du débogage, du test et du déploiement. Certaines propriétés sont communes à tous les types de projets, et certaines sont particulières à des langages ou des plateformes spécifiques. Pour accéder aux propriétés d’un projet, cliquez avec le bouton droit sur le nœud du projet dans **l’Explorateur de solutions** et choisissez **Propriétés** ou tapez « propriétés » dans la zone de recherche **Lancement rapide** de la barre de menus.
+Les projets ont des propriétés qui régissent de nombreux aspects de la compilation, du débogage, du test et du déploiement. Certaines propriétés sont communes à tous les types de projets, et certaines sont particulières à des langages ou des plateformes spécifiques. Pour accéder aux propriétés d’un projet, cliquez avec le bouton droit sur le nœud du projet dans l’**Explorateur de solutions** et choisissez **Propriétés**, ou tapez **propriétés** dans la zone de recherche de la barre de menus et choisissez **Fenêtre de propriétés** dans les résultats.
 
 ![Menu contextuel du projet](../ide/media/vs2015_proj_prop_menu.gif)
 

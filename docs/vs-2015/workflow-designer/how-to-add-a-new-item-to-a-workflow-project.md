@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0cc194adc37c8f9f0309780a4c8ef6f9a780223b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ecc310896f7b938025d42e06ac5ef0ec8bac3d35
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950202"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063623"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Procédure : Ajouter un nouvel élément à un projet de workflow
 Après avoir créé un projet de workflow, vous pouvez ajouter à votre projet des activités de workflow, des concepteurs et d'autres éléments [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que vous utilisez habituellement.  
@@ -30,17 +30,17 @@ Après avoir créé un projet de workflow, vous pouvez ajouter à votre projet d
   
 ### <a name="to-add-a-new-item-to-a-workflow-project"></a>Pour ajouter un nouvel élément à un projet de workflow  
   
-1.  Sur le **projet** menu, cliquez sur **ajouter un nouvel élément...** .  
+1. Sur le **projet** menu, cliquez sur **ajouter un nouvel élément...** .  
   
      Le **ajouter un nouvel élément** boîte de dialogue s’ouvre.  
   
-2.  Dans le **modèles installés** volet, sélectionnez **Workflow** groupe.  
+2. Dans le **modèles installés** volet, sélectionnez **Workflow** groupe.  
   
-3.  Sélectionnez l'un des quatre éléments. Le tableau précédent répertorie les sélections disponibles.  
+3. Sélectionnez l'un des quatre éléments. Le tableau précédent répertorie les sélections disponibles.  
   
-4.  Tapez un nom approprié pour l’élément dans le **nom** zone située au bas de la boîte de dialogue.  
+4. Tapez un nom approprié pour l’élément dans le **nom** zone située au bas de la boîte de dialogue.  
   
-5.  Cliquez sur **ajouter** pour ajouter l’élément au projet de flux de travail en cours.  
+5. Cliquez sur **ajouter** pour ajouter l’élément au projet de flux de travail en cours.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Création d’un projet de flux de travail](../workflow-designer/creating-a-workflow-project.md)

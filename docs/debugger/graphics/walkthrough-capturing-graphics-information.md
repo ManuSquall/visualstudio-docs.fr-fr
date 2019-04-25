@@ -8,21 +8,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24ddbcef7c4ebfaa61dfd225c2d1fa13a23b3344
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: fd7136367bfb883cfc5d962a1373fec738413fc6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711772"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092251"
 ---
-# <a name="walkthrough-capturing-graphics-information"></a>Procédure pas à pas : capture d'informations Graphics
+# <a name="walkthrough-capturing-graphics-information"></a>Procédure pas à pas : Capture d'informations graphiques
 Cette procédure pas à pas montre comment utiliser Graphics Diagnostics dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour capturer manuellement les informations graphiques d’une application Direct3D.
 
  Cette procédure pas à pas décrit les tâches suivantes :
 
--   Raccordement de Graphics Diagnostics à votre application
+- Raccordement de Graphics Diagnostics à votre application
 
--   Capture d'informations graphiques
+- Capture d'informations graphiques
 
 ## <a name="capturing-graphics-information"></a>Capture d'informations graphiques
  Pour utiliser les outils Graphics Diagnostics, vous devez d'abord capturer les informations graphiques dont ils ont besoin. Pour activer la capture, utilisez la commande **Démarrer les diagnostics** pour raccorder Graphics Diagnostics à votre application lors de son démarrage.
@@ -56,7 +56,7 @@ Cette procédure pas à pas montre comment utiliser Graphics Diagnostics dans [!
 ## <a name="next-steps"></a>Étapes suivantes
  Cette procédure pas à pas vous a montré comment capturer manuellement des informations graphiques. Pour franchir une étape supplémentaire, envisagez cette possibilité :
 
--   Découvrez comment analyser les informations graphiques capturées à l’aide des outils Graphics Diagnostics. Consultez [vue d’ensemble](overview-of-visual-studio-graphics-diagnostics.md).
+- Découvrez comment analyser les informations graphiques capturées à l’aide des outils Graphics Diagnostics. Consultez [vue d’ensemble](overview-of-visual-studio-graphics-diagnostics.md).
 
 ## <a name="see-also"></a>Voir aussi
 - [Capturing Graphics Information](capturing-graphics-information.md)

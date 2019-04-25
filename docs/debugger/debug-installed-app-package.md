@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 10e10b512dc8deb63db7ade2075347d9e6405b6b
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.openlocfilehash: 4bf9306ea1604d032ce9f4436759b11c4d17c343
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428711"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59504339"
 ---
 # <a name="debug-an-installed-uwp-app-package-in-visual-studio"></a>Déboguer un package d’application UWP installé dans Visual Studio
 
@@ -97,7 +97,7 @@ Pour plus d’informations sur le déploiement distant des applications UWP, con
 ## <a name="see-also"></a>Voir aussi
 
 - [Débogage dans Visual Studio](../debugger/index.md)
-- [Visite guidée des fonctionnalités du débogueur](../debugger/debugger-feature-tour.md)
+- [Présentation du débogueur](../debugger/debugger-feature-tour.md)
 - [Débogage distant](../debugger/remote-debugging.md)
 - [Configurer le pare-feu Windows pour le débogage distant](../debugger/configure-the-windows-firewall-for-remote-debugging.md)
 - [Attributions de ports au débogueur distant](../debugger/remote-debugger-port-assignments.md)

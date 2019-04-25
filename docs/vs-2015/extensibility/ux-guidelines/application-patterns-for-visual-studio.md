@@ -8,17 +8,17 @@ ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4f71a2f7b316c8257c5741e903bd54cb0288fdcb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cc14aadfafb16fcae571ab66e5811ea465cb55a9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953369"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040993"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Modèles d’application pour Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-##  <a name="BKMK_WindowInteractions"></a> Interactions de la fenêtre
+## <a name="BKMK_WindowInteractions"></a> Interactions de la fenêtre
 
 ### <a name="overview"></a>Vue d'ensemble
  Les deux types de fenêtre principale utilisées dans Visual Studio sont des éditeurs de document et des fenêtres Outil. Rare mais possible, est grandes boîtes de dialogue non modales. Bien qu’il s’agit tout non modales dans l’interpréteur de commandes, leurs modèles sont fondamentalement différentes. Cette rubrique couvre la différence entre les fenêtres de document, les fenêtres Outil et les boîtes de dialogue non modales. Modèles de boîte de dialogue modale couvertes dans [boîtes de dialogue](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs).
@@ -40,24 +40,24 @@ ms.locfileid: "58953369"
 |**Instances**|*Instances multiples*<br /><br /> Plusieurs éditeurs peuvent être ouverts en même temps et de la modification des fichiers différents, tandis que certains éditeurs autorisent également le même fichier ouvert dans plusieurs éditeurs (à l’aide de la **fenêtre > nouvelle fenêtre** commande).<br /><br /> Un éditeur unique peut modifier un ou plusieurs fichiers en même temps (Concepteur de projet).|*Unique - une ou plusieurs instances*<br /><br /> Contenu change pour refléter le contexte (comme dans l’Explorateur de propriétés) ou focus/contexte vers d’autres fenêtres (liste des tâches, l’Explorateur de solutions).<br /><br /> Les fenêtres Outil à instance unique et multi-instance doivent être associés à la fenêtre de document actif sauf s’il existe une bonne raison de pas à.|*Instance unique*|
 |**Exemples**|**Éditeurs de texte**, tels que l’éditeur de code<br /><br /> **Les aires de conception**, telle qu’un concepteur de formulaires ou une surface de modélisation<br /><br /> **Contrôler des dispositions similaires pour les boîtes de dialogue**, tels que le Concepteur de manifeste|Le **l’Explorateur de solutions** fournit une solution et projets contenus dans la solution<br /><br /> Le **Explorateur de serveurs** fournit une vue hiérarchique des serveurs et connexions de données que l’utilisateur choisit d’ouvrir dans la fenêtre. Ouverture d’un objet à partir de la hiérarchie de la base de données, telles qu’une requête, ouvre une fenêtre de document et permet à l’utilisateur modifier la requête.<br /><br /> Le **Explorateur de propriétés** affiche les propriétés de l’objet sélectionné dans une fenêtre de document ou une autre fenêtre outil. Les propriétés sont présentées dans une vue hiérarchique de grille ou dans les contrôles de boîtes de dialogue complexes et autoriser l’utilisateur à définir les valeurs de ces propriétés.||
 
-##  <a name="BKMK_ToolWindows"></a> Fenêtres Outil
+## <a name="BKMK_ToolWindows"></a> Fenêtres Outil
 
 ### <a name="overview"></a>Vue d'ensemble
  Fenêtres Outil prennent en charge de travail de l’utilisateur qui se produit dans les fenêtres de document. Elles peuvent servir pour afficher une hiérarchie qui représente un objet racine fondamental que Visual Studio fournit et peuvent manipuler.
 
  Lorsque vous envisagez une nouvelle fenêtre outil dans l’IDE, les auteurs doivent :
 
--   Utilisez approprié à la tâche des fenêtres Outil existantes et pas créer d’autres ayant des fonctionnalités similaires. Nouvelles fenêtres Outil doivent être créés uniquement s’ils offrent une très différent « tool » ou une fonctionnalité qui ne peut pas être intégrée dans une fenêtre similaire, ou en activant une fenêtre existante à un concentrateur de croisement dynamique.
+- Utilisez approprié à la tâche des fenêtres Outil existantes et pas créer d’autres ayant des fonctionnalités similaires. Nouvelles fenêtres Outil doivent être créés uniquement s’ils offrent une très différent « tool » ou une fonctionnalité qui ne peut pas être intégrée dans une fenêtre similaire, ou en activant une fenêtre existante à un concentrateur de croisement dynamique.
 
--   Utilisez une barre de commandes standard, si nécessaire, en haut de la fenêtre outil.
+- Utilisez une barre de commandes standard, si nécessaire, en haut de la fenêtre outil.
 
--   Être cohérente avec les modèles déjà présentes dans les autres fenêtres Outil pour la navigation de clavier et de présentation du contrôle.
+- Être cohérente avec les modèles déjà présentes dans les autres fenêtres Outil pour la navigation de clavier et de présentation du contrôle.
 
--   Être cohérente avec la présentation du contrôle dans les autres fenêtres Outil.
+- Être cohérente avec la présentation du contrôle dans les autres fenêtres Outil.
 
--   Fenêtres de document spécifique doivent être visible d’automatique lorsque cela est possible afin qu’ils apparaissent uniquement lorsque le document parent est activé.
+- Fenêtres de document spécifique doivent être visible d’automatique lorsque cela est possible afin qu’ils apparaissent uniquement lorsque le document parent est activé.
 
--   Vérifiez que leur contenu de la fenêtre est navigable par le clavier (prise en charge des touches de direction).
+- Vérifiez que leur contenu de la fenêtre est navigable par le clavier (prise en charge des touches de direction).
 
 #### <a name="tool-window-states"></a>États de la fenêtre outil
  Fenêtres Outil Visual Studio ont des états différents, certains d'entre eux sont activés par utilisateur (par exemple, la fonctionnalité de masquage automatique). Autres États, visibles automatiquement, autoriser les fenêtres Outil apparaisse dans le contexte approprié et masquer lorsque ne pas nécessaires. Il existe cinq États de la fenêtre outil au total.
@@ -131,7 +131,7 @@ ms.locfileid: "58953369"
 |**Débogueur :** un groupe de fenêtres spécifiques aux tâches de débogage et de surveillance des activités|Registres||
 |**Débogueur :** un groupe de fenêtres spécifiques aux tâches de débogage et de surveillance des activités|Threads||
 
-##  <a name="BKMK_DocumentEditorConventions"></a> Conventions de l’éditeur de document
+## <a name="BKMK_DocumentEditorConventions"></a> Conventions de l’éditeur de document
 
 ### <a name="document-interactions"></a>Interactions de document
  « Bien document » est le plus grand espace au sein de l’IDE et où l’utilisateur générale s’est concentré leur attention afin de terminer leurs tâches, assistés par des fenêtres d’outils supplémentaires. Les éditeurs de document représentent les unités de base de travail que l’utilisateur s’ouvre et enregistre au sein de Visual Studio. Elles conservent une forte de sélection liée à l’Explorateur de solutions ou d’autres fenêtres de la hiérarchie active. L’utilisateur doit être en mesure de pointer vers un de ces fenêtres de hiérarchie et de savoir où se trouve le document et sa relation à la solution, le projet ou un autre objet racine fourni par un package Visual Studio.
@@ -140,21 +140,21 @@ ms.locfileid: "58953369"
 
 #### <a name="common-interactions-for-the-document-well"></a>Interactions communes pour le document bien
 
--   Mettre à jour un modèle d’interaction cohérente en le commun **nouveau fichier** et **ouvrir un fichier** expériences.
+- Mettre à jour un modèle d’interaction cohérente en le commun **nouveau fichier** et **ouvrir un fichier** expériences.
 
--   Mettre à jour des fonctionnalités connexes dans les menus et fenêtres associées lors de la fenêtre de document s’ouvre.
+- Mettre à jour des fonctionnalités connexes dans les menus et fenêtres associées lors de la fenêtre de document s’ouvre.
 
--   Commandes de menu sont correctement intégrés à menus courants tels que **modifier**, **Format**, et **vue** menus. Si une quantité substantielle de commandes spécialisées est disponible, un nouveau menu peut être créé qui est visible uniquement lorsque le document a le focus.
+- Commandes de menu sont correctement intégrés à menus courants tels que **modifier**, **Format**, et **vue** menus. Si une quantité substantielle de commandes spécialisées est disponible, un nouveau menu peut être créé qui est visible uniquement lorsque le document a le focus.
 
--   Une barre d’outils incorporée peut être placé en haut de l’éditeur. Cela est préférable d’avoir une barre d’outils distinct qui s’affiche en dehors de l’éditeur.
+- Une barre d’outils incorporée peut être placé en haut de l’éditeur. Cela est préférable d’avoir une barre d’outils distinct qui s’affiche en dehors de l’éditeur.
 
--   Toujours conserver une sélection dans l’Explorateur de solutions ou d’un actif similaire fenêtre hiérarchie.
+- Toujours conserver une sélection dans l’Explorateur de solutions ou d’un actif similaire fenêtre hiérarchie.
 
--   Double-cliquez sur un document dans l’Explorateur de solutions doit effectuer la même action que **Open**.
+- Double-cliquez sur un document dans l’Explorateur de solutions doit effectuer la même action que **Open**.
 
--   Si plus d’un éditeur peut être utilisé sur un type de document, l’utilisateur doit être en mesure de remplacer ou de réinitialiser l’action par défaut sur un type de document donné à l’aide de la **ouvrir avec** boîte de dialogue en cliquant sur le fichier et en sélectionnant **ouvert Avec** dans le menu contextuel.
+- Si plus d’un éditeur peut être utilisé sur un type de document, l’utilisateur doit être en mesure de remplacer ou de réinitialiser l’action par défaut sur un type de document donné à l’aide de la **ouvrir avec** boîte de dialogue en cliquant sur le fichier et en sélectionnant **ouvert Avec** dans le menu contextuel.
 
--   Ne créez pas également un Assistant dans un document.
+- Ne créez pas également un Assistant dans un document.
 
 ### <a name="user-expectations-for-specific-document-types"></a>Attentes de l’utilisateur pour les types de document spécifique
  Il existe plusieurs types de base différents éditeurs de document et chacun possède un ensemble d’interactions sont cohérents avec d’autres utilisateurs du même type.
@@ -175,71 +175,71 @@ ms.locfileid: "58953369"
 
 #### <a name="text-based-editors"></a>Éditeurs de texte
 
--   Le document participe au modèle onglet Aperçu pour afficher un aperçu du document sans l’ouvrir.
+- Le document participe au modèle onglet Aperçu pour afficher un aperçu du document sans l’ouvrir.
 
--   La structure du document peut être représentée dans une fenêtre d’outil d’accompagnement, comme une structure du document.
+- La structure du document peut être représentée dans une fenêtre d’outil d’accompagnement, comme une structure du document.
 
--   IntelliSense (le cas échéant) se comporte de manière cohérente avec les autres éditeurs de code.
+- IntelliSense (le cas échéant) se comporte de manière cohérente avec les autres éditeurs de code.
 
--   Les fenêtres contextuelles ou l’interface utilisateur d’assistance suivre les styles et modèles similaires pour l’interface utilisateur similaire existante, telles que CodeLens.
+- Les fenêtres contextuelles ou l’interface utilisateur d’assistance suivre les styles et modèles similaires pour l’interface utilisateur similaire existante, telles que CodeLens.
 
--   Messages concernant l’état du document seront affiche dans un contrôle de barre d’informations en haut du document ou dans la barre d’état.
+- Messages concernant l’état du document seront affiche dans un contrôle de barre d’informations en haut du document ou dans la barre d’état.
 
--   L’utilisateur doit être en mesure de personnaliser l’apparence des polices et couleurs à l’aide un **Outils > Options** page, la page polices et couleurs partagée ou spécifiques à un à l’éditeur.
+- L’utilisateur doit être en mesure de personnaliser l’apparence des polices et couleurs à l’aide un **Outils > Options** page, la page polices et couleurs partagée ou spécifiques à un à l’éditeur.
 
 #### <a name="design-surfaces"></a>Surfaces de dessin
 
--   Un concepteur vide doit avoir un filigrane sur l’aire d’indiquant comment commencer.
+- Un concepteur vide doit avoir un filigrane sur l’aire d’indiquant comment commencer.
 
--   Mécanismes de basculement entre les vues suit les modèles existants comme double-clic pour ouvrir un éditeur de code ou des onglets dans la fenêtre de document permettant l’interaction avec les deux volets.
+- Mécanismes de basculement entre les vues suit les modèles existants comme double-clic pour ouvrir un éditeur de code ou des onglets dans la fenêtre de document permettant l’interaction avec les deux volets.
 
--   Ajout d’éléments à l’aire de conception doit être effectuée par le biais de la boîte à outils, sauf si une fenêtre outil très spécifique est requise.
+- Ajout d’éléments à l’aire de conception doit être effectuée par le biais de la boîte à outils, sauf si une fenêtre outil très spécifique est requise.
 
--   Éléments sur l’aire suivent un modèle de sélection cohérente.
+- Éléments sur l’aire suivent un modèle de sélection cohérente.
 
--   Barres d’outils incorporées contiennent des commandes d’uniquement, pas courants des commandes spécifiques au document comme **enregistrer**.
+- Barres d’outils incorporées contiennent des commandes d’uniquement, pas courants des commandes spécifiques au document comme **enregistrer**.
 
 #### <a name="dialog-style-editors"></a>Éditeurs de style de la boîte de dialogue
 
--   Disposition des contrôles doit suivre les conventions de mise en page des boîtes de dialogue.
+- Disposition des contrôles doit suivre les conventions de mise en page des boîtes de dialogue.
 
--   Onglets de l’éditeur ne doivent pas correspondre à l’apparence des onglets de document, elles doivent correspondre à un des deux styles onglet intérieurs autorisées.
+- Onglets de l’éditeur ne doivent pas correspondre à l’apparence des onglets de document, elles doivent correspondre à un des deux styles onglet intérieurs autorisées.
 
--   Les utilisateurs doivent être en mesure d’interagir avec les contrôles à l’aide du clavier uniquement ; soit par activation de l’éditeur et la tabulation via des contrôles ou à l’aide de mnémoniques standards.
+- Les utilisateurs doivent être en mesure d’interagir avec les contrôles à l’aide du clavier uniquement ; soit par activation de l’éditeur et la tabulation via des contrôles ou à l’aide de mnémoniques standards.
 
--   Le concepteur doit utiliser courantes enregistrer le modèle. Aucun enregistrement global ou un bouton de validation ne doit être placé sur la surface, bien que les autres boutons peuvent être appropriées.
+- Le concepteur doit utiliser courantes enregistrer le modèle. Aucun enregistrement global ou un bouton de validation ne doit être placé sur la surface, bien que les autres boutons peuvent être appropriées.
 
 #### <a name="model-designers"></a>Concepteurs de modèles
 
--   Un concepteur vide doit avoir un filigrane sur l’aire d’indiquant comment commencer.
+- Un concepteur vide doit avoir un filigrane sur l’aire d’indiquant comment commencer.
 
--   Ajout d’éléments à l’aire de conception doit être effectuée par le biais de la boîte à outils.
+- Ajout d’éléments à l’aire de conception doit être effectuée par le biais de la boîte à outils.
 
--   Éléments sur l’aire suivent un modèle de sélection cohérente.
+- Éléments sur l’aire suivent un modèle de sélection cohérente.
 
--   Barres d’outils incorporées contiennent des commandes d’uniquement, pas courants des commandes spécifiques au document comme **enregistrer**.
+- Barres d’outils incorporées contiennent des commandes d’uniquement, pas courants des commandes spécifiques au document comme **enregistrer**.
 
--   Une légende peut apparaître sur la surface, indicative ou filigrane.
+- Une légende peut apparaître sur la surface, indicative ou filigrane.
 
--   L’utilisateur doit être en mesure de personnaliser l’apparence des polices/couleurs à l’aide un **Outils > Options** page, la page polices et couleurs partagée ou spécifiques à un à l’éditeur.
+- L’utilisateur doit être en mesure de personnaliser l’apparence des polices/couleurs à l’aide un **Outils > Options** page, la page polices et couleurs partagée ou spécifiques à un à l’éditeur.
 
 #### <a name="reports"></a>Rapports
 
--   Les rapports sont généralement uniquement des informations et ne font pas partie du modèle d’enregistrement. Toutefois, elles peuvent inclure des interactions telles que des liens vers d’autres informations pertinentes ou les sections qui développés ou réduits.
+- Les rapports sont généralement uniquement des informations et ne font pas partie du modèle d’enregistrement. Toutefois, elles peuvent inclure des interactions telles que des liens vers d’autres informations pertinentes ou les sections qui développés ou réduits.
 
--   La plupart des commandes sur la surface doivent être des liens hypertexte, pas de boutons.
+- La plupart des commandes sur la surface doivent être des liens hypertexte, pas de boutons.
 
--   Mise en page doit inclure un en-tête et suivez les instructions de mise en page de rapport standard.
+- Mise en page doit inclure un en-tête et suivez les instructions de mise en page de rapport standard.
 
 #### <a name="dashboards"></a>Tableaux de bord
 
--   Tableaux de bord n’ont un modèle d’interaction eux-mêmes, mais comme un moyen d’offrent un large éventail d’autres outils.
+- Tableaux de bord n’ont un modèle d’interaction eux-mêmes, mais comme un moyen d’offrent un large éventail d’autres outils.
 
--   Elles n’interviennent pas dans le modèle de sauvegarde.
+- Elles n’interviennent pas dans le modèle de sauvegarde.
 
--   Les utilisateurs doivent pouvoir interagir avec les contrôles à l’aide du clavier uniquement, en activant l’éditeur et de tabulation via des contrôles ou à l’aide de mnémoniques standards.
+- Les utilisateurs doivent pouvoir interagir avec les contrôles à l’aide du clavier uniquement, en activant l’éditeur et de tabulation via des contrôles ou à l’aide de mnémoniques standards.
 
-##  <a name="BKMK_Dialogs"></a> Boîtes de dialogue
+## <a name="BKMK_Dialogs"></a> Boîtes de dialogue
 
 ### <a name="introduction"></a>Introduction
  Boîtes de dialogue dans Visual Studio doivent généralement prendre en charge d’une unité discrète de travail de l’utilisateur et ensuite être fermées.
@@ -276,33 +276,33 @@ ms.locfileid: "58953369"
 ### <a name="dialog-design"></a>Conception de la boîte de dialogue
  Boîtes de dialogue bien conçues tenir compte les éléments suivants :
 
--   La tâche de l’utilisateur qui est pris en charge
+- La tâche de l’utilisateur qui est pris en charge
 
--   La boîte de dialogue style de texte, la langue et la terminologie
+- La boîte de dialogue style de texte, la langue et la terminologie
 
--   Choix de contrôle et les conventions de l’interface utilisateur
+- Choix de contrôle et les conventions de l’interface utilisateur
 
--   Alignement de spécification et le contrôle de disposition visuelle
+- Alignement de spécification et le contrôle de disposition visuelle
 
--   Accès par le clavier
+- Accès par le clavier
 
 #### <a name="content-organization"></a>Organisation du contenu
  Prenez en compte les différences entre ces types de base de boîtes de dialogue :
 
--   [Boîtes de dialogue simples](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_SimpleDialogs) présenter des contrôles dans une seule fenêtre modale. La présentation peut inclure des variantes de modèles de contrôle complexe, y compris un sélecteur de champ ou une barre d’icônes.
+- [Boîtes de dialogue simples](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_SimpleDialogs) présenter des contrôles dans une seule fenêtre modale. La présentation peut inclure des variantes de modèles de contrôle complexe, y compris un sélecteur de champ ou une barre d’icônes.
 
--   [Couches de boîtes de dialogue](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_LayeredDialogs) sont utilisés pour faire le meilleur parti de l’écran lorsqu’un seul élément de l’interface utilisateur comporte plusieurs groupes de contrôles. Les regroupements de la boîte de dialogue sont « superposées » via les contrôles d’onglet, les contrôles de liste de navigation ou des boutons afin que l’utilisateur peut choisir lequel le regroupement pour voir à un moment donné.
+- [Couches de boîtes de dialogue](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_LayeredDialogs) sont utilisés pour faire le meilleur parti de l’écran lorsqu’un seul élément de l’interface utilisateur comporte plusieurs groupes de contrôles. Les regroupements de la boîte de dialogue sont « superposées » via les contrôles d’onglet, les contrôles de liste de navigation ou des boutons afin que l’utilisateur peut choisir lequel le regroupement pour voir à un moment donné.
 
--   [Assistants](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Wizards) sont utiles pour la redirection de l’utilisateur via une séquence d’étapes vers la fin d’une tâche logique. Une série de choix sont proposés dans les panneaux séquentiel, parfois présentation différents flux de travail (« branches ») dépend d’un choix dans le panneau précédent.
+- [Assistants](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Wizards) sont utiles pour la redirection de l’utilisateur via une séquence d’étapes vers la fin d’une tâche logique. Une série de choix sont proposés dans les panneaux séquentiel, parfois présentation différents flux de travail (« branches ») dépend d’un choix dans le panneau précédent.
 
-####  <a name="BKMK_SimpleDialogs"></a> Boîtes de dialogue simples
+#### <a name="BKMK_SimpleDialogs"></a> Boîtes de dialogue simples
  Une boîte de dialogue simple est une présentation des contrôles dans une seule fenêtre modale. Cette présentation peut inclure des variantes de modèles de contrôle complexe, tel qu’un sélecteur de champ. Pour les boîtes de dialogue simples, suivez la disposition générale standard, ainsi que toute disposition spécifique requise pour les regroupements de contrôle complexe.
 
  ![Boîte de dialogue simple dans Visual Studio](../../extensibility/ux-guidelines/media/0704-01-createstrongnamekey.png "0704-01_CreateStrongNameKey")
 
  **Créer une clé de nom fort est un exemple d’une boîte de dialogue simple dans Visual Studio.**
 
-####  <a name="BKMK_LayeredDialogs"></a> Boîtes de dialogue en couches
+#### <a name="BKMK_LayeredDialogs"></a> Boîtes de dialogue en couches
  Boîtes de dialogue en couche incluent les onglets, les tableaux de bord et les arbres incorporés. Ils sont utilisés pour optimiser l’immobilier lorsqu’il y a plusieurs groupes de contrôles proposés dans un seul élément de l’interface utilisateur. Les regroupements sont superposées afin que l’utilisateur peut choisir lequel le regroupement pour afficher à tout moment.
 
  Dans le cas le plus simple, le mécanisme de commutation entre les regroupements est un contrôle onglet. Il existe plusieurs alternatives disponibles. Consultez la définition de la priorité et superposition pour savoir comment choisir le style plus approprié.
@@ -313,18 +313,18 @@ ms.locfileid: "58953369"
 
  **Outils > Options est un exemple d’une boîte de dialogue superposée dans Visual Studio.**
 
-####  <a name="BKMK_Wizards"></a> Assistants
+#### <a name="BKMK_Wizards"></a> Assistants
  Assistants sont utiles pour la redirection de l’utilisateur via une séquence logique d’étapes dans la réalisation d’une tâche. Une série de choix sont proposés dans les panneaux séquentiel, et l’utilisateur doit continuer à chaque étape avant de passer à la suivante. Une fois que les valeurs par défaut suffisantes sont disponibles, le **Terminer** bouton est activé.
 
  Assistants modales utilisées pour les tâches qui :
 
--   Contient la création de branches, où les différents chemins d’accès sont proposées en fonction des choix de l’utilisateur
+- Contient la création de branches, où les différents chemins d’accès sont proposées en fonction des choix de l’utilisateur
 
--   Contient des dépendances entre les étapes, où les étapes suivantes dépendent des entrées utilisateur à partir de l’ou les étapes précédente
+- Contient des dépendances entre les étapes, où les étapes suivantes dépendent des entrées utilisateur à partir de l’ou les étapes précédente
 
--   Sont suffisamment complexe pour que l’interface utilisateur doit être utilisé pour expliquer les choix proposés et les résultats possibles dans chaque étape
+- Sont suffisamment complexe pour que l’interface utilisateur doit être utilisé pour expliquer les choix proposés et les résultats possibles dans chaque étape
 
--   Sont transactionnelles, nécessitant un ensemble d’étapes à effectuer dans son intégralité avant que toutes les modifications soient validées
+- Sont transactionnelles, nécessitant un ensemble d’étapes à effectuer dans son intégralité avant que toutes les modifications soient validées
 
 ### <a name="common-conventions"></a>Conventions communes
  Pour obtenir la conception optimale et des fonctionnalités avec vos boîtes de dialogue, suivez ces conventions sur la taille de la boîte de dialogue, position, normes, configuration de contrôle et l’alignement, l’interface utilisateur texte, barres de titre, les boutons de contrôle et clés d’accès.
@@ -336,9 +336,9 @@ ms.locfileid: "58953369"
 
  Il existe deux recommandations pour les boîtes de dialogue redimensionnables :
 
-1.  Qu’une taille minimale est définie pour la boîte de dialogue qui vous permettra d’optimiser pour le contrôle définir sans découpage et ajuster pour répondre à la croissance de localisation raisonnable.
+1. Qu’une taille minimale est définie pour la boîte de dialogue qui vous permettra d’optimiser pour le contrôle définir sans découpage et ajuster pour répondre à la croissance de localisation raisonnable.
 
-2.  Que la taille de la mise à l’échelle utilisateur persiste à partir d’une session à l’autre. Par exemple, si l’utilisateur redimensionne une boîte de dialogue à 150 %, un lancement suivant de la boîte de dialogue affichera à 150 %.
+2. Que la taille de la mise à l’échelle utilisateur persiste à partir d’une session à l’autre. Par exemple, si l’utilisateur redimensionne une boîte de dialogue à 150 %, un lancement suivant de la boîte de dialogue affichera à 150 %.
 
 #### <a name="position"></a>Position
  Boîtes de dialogue doivent apparaître centrés dans l’IDE lors du premier lancement. Pour les boîtes de dialogue non redimensionnable, il n’est pas nécessaire que la dernière position de la boîte de dialogue rendues persistantes, donc il semblera centré sur les lancements suivants. Pour les boîtes de dialogue redimensionnables, la taille doit être persistante sur les lancements suivants. Pour les boîtes de dialogue redimensionnables qui sont modales, la position n’a pas besoin être rendue persistante. Leur affichage centré dans l’IDE empêche la possibilité de la boîte de dialogue apparaissant dans une position imprévisible ou inutilisable lors de la configuration de l’affichage de l’utilisateur a changé. Pour les boîtes de dialogue non modales qui peuvent être repositionnés, position de l’utilisateur doit être conservée sur les lancements suivants, que la boîte de dialogue peut-être être utilisée fréquemment en tant que partie intégrante d’un flux de travail plus volumineux.
@@ -394,7 +394,7 @@ ms.locfileid: "58953369"
 #### <a name="imagery"></a>Imagery
  Utilisez des images avec parcimonie dans les boîtes de dialogue. N’utilisez pas de grandes icônes dans les boîtes de dialogue simplement pour utiliser l’espace. Utiliser des images uniquement si elles sont une partie importante de transmettre le message à l’utilisateur, telles que des icônes d’avertissement ou des animations d’état.
 
-###  <a name="BKMK_PrioritizingAndLayering"></a> Définition des priorités et superposition
+### <a name="BKMK_PrioritizingAndLayering"></a> Définition des priorités et superposition
 
 #### <a name="prioritizing-your-ui"></a>Priorités de votre interface utilisateur
  Il peut être nécessaire de mettre certains éléments d’interface utilisateur au premier plan et placer le comportement plus avancée et les options (y compris les commandes obscurs) dans les boîtes de dialogue. Mettez les fonctionnalités couramment utilisées au premier plan en place pour celui-ci et en le rendant visible par défaut dans l’interface utilisateur avec une étiquette de texte lorsque la boîte de dialogue s’affiche.
@@ -425,7 +425,7 @@ ms.locfileid: "58953369"
 ##### <a name="adaptive-ui"></a>Interface utilisateur adaptative
  Affichage ou masquage de l’interface utilisateur basée sur l’utilisation ou expérience automatique signalés d’un utilisateur est une autre façon de présenter l’interface utilisateur nécessaire tout en masquant les autres parties. Cela n’est pas recommandé dans Visual Studio comme les algorithmes pour déterminer à quel moment afficher ou masquer l’interface utilisateur peuvent être difficile, et les règles ne sera toujours incorrect pour un jeu de cas.
 
-##  <a name="BKMK_Projects"></a> Projets
+## <a name="BKMK_Projects"></a> Projets
 
 ### <a name="projects-in-the-solution-explorer"></a>Projets dans l’Explorateur de solutions
  La plupart des projets sont classés en fonction de référence, basée sur le répertoire ou mixte. Les trois types de projets sont prises en charge simultanément dans l’Explorateur de solutions. La racine de l’expérience utilisateur dans l’utilisation de projets s’effectue à l’intérieur de cette fenêtre. Bien que les nœuds de projet différents sont référence, répertoire ou projets en mode mixte, il est un modèle d’interaction commun qui doit être appliqué comme point de départ avant divergence des modèles spécifiques au projet utilisateur.

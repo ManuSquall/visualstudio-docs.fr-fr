@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ecb4d69db653c24ff13c0c95059d431424e4fe9
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 35d2343343bf554df7592c8616e7697d88665baf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/26/2019
-ms.locfileid: "55069119"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077886"
 ---
 # <a name="how-to-debug-injected-code"></a>Procédure : Déboguer du code injecté
 
@@ -46,25 +46,25 @@ La fenêtre **Code Machine** affiche les instructions en langage assembleur qui 
 
 ## <a name="to-turn-on-source-annotation"></a>Pour activer l'annotation de la source
 
--   Cliquez avec le bouton droit sur la fenêtre **Code Machine** puis, dans le menu contextuel, cliquez sur **Afficher le code source**.
+- Cliquez avec le bouton droit sur la fenêtre **Code Machine** puis, dans le menu contextuel, cliquez sur **Afficher le code source**.
 
      Si vous connaissez l’emplacement d’un attribut dans une fenêtre source, vous pouvez utiliser le menu contextuel pour rechercher le code injecté dans la fenêtre **Code Machine**.
 
 ## <a name="to-view-injected-code"></a>Pour afficher le code injecté
 
-1.  Assurez-vous que le débogueur est en mode arrêt.
+1. Assurez-vous que le débogueur est en mode arrêt.
 
-2.  Dans une fenêtre de code source, placez le curseur devant l'attribut dont vous voulez afficher le code injecté.
+2. Dans une fenêtre de code source, placez le curseur devant l'attribut dont vous voulez afficher le code injecté.
 
-3.  Cliquez avec le bouton droit puis, dans le menu contextuel, cliquez sur **Atteindre le code Machine**.
+3. Cliquez avec le bouton droit puis, dans le menu contextuel, cliquez sur **Atteindre le code Machine**.
 
      Si l’emplacement de l’attribut est situé à proximité du point d’exécution en cours, vous pouvez sélectionner la fenêtre **Code Machine** dans le menu **Déboguer**.
 
 ## <a name="to-view-the-disassembly-code-at-the-current-execution-point"></a>Pour afficher le code machine au point d'exécution en cours
 
-1.  Assurez-vous que le débogueur est en mode arrêt.
+1. Assurez-vous que le débogueur est en mode arrêt.
 
-2.  Dans le menu **Déboguer**, choisissez **Fenêtres**, puis cliquez sur **Code Machine**.
+2. Dans le menu **Déboguer**, choisissez **Fenêtres**, puis cliquez sur **Code Machine**.
 
 ## <a name="see-also"></a>Voir aussi
 

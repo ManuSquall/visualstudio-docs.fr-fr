@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 37cdbc07f5defe0c6f8d5613795d2a9c6142521f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 44be83e21a5e3cd94a1db2b7edce3e8484353f88
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644703"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082878"
 ---
 # <a name="how-to-map-schemas-to-word-documents-inside-visual-studio"></a>Procédure : Mapper des schémas à des documents Word dans Visual Studio
   **Important** les informations mentionnées dans cette rubrique concernant Microsoft Word sont présentée exclusivement pour le bénéfice et l’utilisation des individus et les organisations qui se trouvent en dehors des États-Unis et ses territoires ou qui utilisent ou développement les programmes qui s’exécutent sur des produits de Microsoft Word qui ont été concédés sous licence par Microsoft avant janvier 2010, lorsque Microsoft supprimé une implémentation de fonctionnalités spécifiques liés à XML personnalisé à partir de Microsoft Word. Ces informations concernant Microsoft Word ne peuvent pas être lues ou utilisées par les individus ou organisations dans les États-Unis ou dans ses territoires qui sont à l’aide d’ou de développer des programmes qui s’exécutent sur des produits de Microsoft Word qui ont été concédés sous licence par Microsoft après le 10 janvier 2010 ; ces produits ne comportent pas le même que les produits sous licence avant cette date ou acheté et concédés sous licence pour une utilisation en dehors des États-Unis.
@@ -32,30 +32,30 @@ ms.locfileid: "56644703"
 
 ## <a name="to-map-an-xml-schema-to-a-word-document-in-visual-studio"></a>Pour mapper un schéma XML à un document Word dans Visual Studio
 
-1.  Ouvrez le projet de document ou modèle Word dans Visual Studio.
+1. Ouvrez le projet de document ou modèle Word dans Visual Studio.
 
-2.  Cliquez dans le document pour déplacer le focus vers le concepteur.
+2. Cliquez dans le document pour déplacer le focus vers le concepteur.
 
-3.  Dans le ruban, cliquez sur le **développeur** onglet.
+3. Dans le ruban, cliquez sur le **développeur** onglet.
 
     > [!NOTE]
     >  Si l'onglet **Développeur** n'est pas visible, vous devez tout d'abord l'afficher. Pour plus d'informations, voir [Procédure : Afficher l’onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
-4.  Dans le **XML** de groupe, cliquez sur **schéma**.
+4. Dans le **XML** de groupe, cliquez sur **schéma**.
 
      Le **modèles et compléments** boîte de dialogue s’ouvre.
 
-5.  Cliquez sur le **schéma XML** onglet.
+5. Cliquez sur le **schéma XML** onglet.
 
-6.  Cliquez sur **Ajouter schéma**.
+6. Cliquez sur **Ajouter schéma**.
 
      Le **ajouter un schéma** boîte de dialogue s’ouvre.
 
-7.  Accédez à votre fichier de schéma, sélectionnez-le, puis cliquez sur **Open**.
+7. Accédez à votre fichier de schéma, sélectionnez-le, puis cliquez sur **Open**.
 
      Le **les paramètres de schéma** boîte de dialogue s’ouvre.
 
-8.  Affecter un alias ou cliquez sur **OK** pour ajouter le schéma sans alias.
+8. Affecter un alias ou cliquez sur **OK** pour ajouter le schéma sans alias.
 
 9. Cliquez sur **OK**.
 

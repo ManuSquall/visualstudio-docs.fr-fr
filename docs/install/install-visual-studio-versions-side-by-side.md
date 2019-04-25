@@ -11,12 +11,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 1f2969fe93ab2623b1f8406f6eaa0ce35c454202
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 123f01b2e4545545a380f5a37adcdaf883bc9e91
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160535"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856928"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>Installer des versions de Visual Studio côte à côte
 
@@ -38,7 +38,7 @@ Avant d’installer plusieurs versions sur la même machine, vérifiez que les c
 
 * Si vous utilisez Visual Studio 2019 pour ouvrir une solution créée dans Visual Studio 2017, vous pouvez par la suite ouvrir et modifier à nouveau la solution dans la version antérieure à condition de ne pas avoir implémenté de fonctionnalités spécifiques à Visual Studio 2019.
 
-* Si vous essayez d’utiliser Visual Studio 2019 pour ouvrir une solution créée dans Visual Studio 2017 ou une version antérieure, vous devrez peut-être modifier vos projets et fichiers pour qu’ils soient compatibles avec Visual Studio 2019. Pour plus d’informations, consultez la page [Porter, migrer et mettre à niveau des projets Visual Studio](../porting/port-migrate-upgrade-visual-studio-projects-2019.md).
+* Si vous essayez d’utiliser Visual Studio 2019 pour ouvrir une solution créée dans Visual Studio 2017 ou une version antérieure, vous devrez peut-être modifier vos projets et fichiers pour qu’ils soient compatibles avec Visual Studio 2019. Pour plus d’informations, consultez la page [Porter, migrer et mettre à niveau des projets Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md).
 
 ::: moniker-end
 
@@ -58,10 +58,10 @@ Pour des informations spécifiques au langage, consultez la rubrique appropriée
 
 | Langue | Rubrique |
 |--------------|-----------|
-| Visual Basic | [Page Application, Concepteur de projets (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017) |
-| Visual C# | [Page Application, Concepteur de projets (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2017) |
-| Visual F# | [Développer avec Visual F# dans Visual Studio](../ide/fsharp-visual-studio.md?view=vs-2017) |
-|C++ | [Guide pratique pour modifier le framework cible et l’ensemble d’outils de plateforme](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
+| Visual Basic | [Page Application, Concepteur de projet (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2017) |
+| Visual C# | [Page Application, Concepteur de projet (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2017) |
+| Visual F# | [Développer avec Visual F# dans Visual Studio](../ide/fsharp-visual-studio.md?view=vs-2017) |
+|C++ | [Procédure : modifier le framework cible et l’ensemble d’outils de plateforme](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
@@ -77,17 +77,17 @@ Pour des informations spécifiques au langage, consultez la rubrique appropriée
 
 | Langue | Rubrique |
 |--------------|-----------|
-| Visual Basic | [Page Application, Concepteur de projets (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md?view=vs-2019) |
-| Visual C# | [Page Application, Concepteur de projets (C#)](../ide/reference/application-page-project-designer-csharp.md?view=vs-2019) |
-| Visual F# | [Développer avec Visual F# dans Visual Studio](../ide/fsharp-visual-studio.md?view=vs-2019) |
-| C++ | [Guide pratique pour modifier le framework cible et l’ensemble d’outils de plateforme](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
+| Visual Basic | [Page Application, Concepteur de projet (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md) |
+| Visual C# | [Page Application, Concepteur de projet (C#)](../ide/reference/application-page-project-designer-csharp.md) |
+| Visual F# | [Développer avec Visual F# dans Visual Studio](../ide/fsharp-visual-studio.md) |
+| C++ | [Procédure : modifier le framework cible et l’ensemble d’outils de plateforme](/cpp/build/how-to-modify-the-target-framework-and-platform-toolset/) |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Installer Visual Studio](install-visual-studio.md?view=vs-2019)
-* [Porter, migrer et mettre à niveau des projets Visual Studio](../porting/port-migrate-upgrade-visual-studio-projects-2019.md)
+* [Installer Visual Studio](install-visual-studio.md)
+* [Porter, migrer et mettre à niveau des projets Visual Studio](../porting/port-migrate-and-upgrade-visual-studio-projects.md)
 * [Génération d’applications isolées et d’assemblys côte à côte C/C++](/cpp/build/building-c-cpp-isolated-applications-and-side-by-side-assemblies/)
 
 ::: moniker-end

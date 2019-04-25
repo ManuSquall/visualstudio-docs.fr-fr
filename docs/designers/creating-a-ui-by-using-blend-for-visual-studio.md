@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7886981dd3bc2ed93e987256a906f021e6ea5f2a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a27799eb9c22ec633d5c8d8604fe58d6924cd623
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941078"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847323"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Vue d’ensemble de Blend for Visual Studio
 
@@ -30,11 +30,18 @@ Si vous débutez avec Blend pour Visual Studio, prenez un moment pour vous famil
 > [!NOTE]
 > Pour parcourir les fonctionnalités de conception partagées telles que la planche graphique, la fenêtre **Structure du document** et la fenêtre **Périphérique**, consultez [Création d’une interface utilisateur à l’aide du concepteur XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
-## <a name="tour-of-the-tools-panel"></a>Présentation du panneau Outils
+## <a name="tools-panel"></a>Panneau Outils
 
-Vous pouvez utiliser le panneau **Outils** dans Blend pour Visual Studio pour créer et modifier les objets de votre application. Vous créez les objets en sélectionnant un outil, puis en dessinant sur la planche graphique à l'aide de la souris.
+Vous pouvez utiliser le panneau **Outils** dans Blend pour Visual Studio pour créer et modifier les objets de votre application. Le panneau **Outils** s’affiche sur le côté gauche du concepteur XAML quand un fichier *.xaml* est ouvert.
 
-![Volet Outils](../designers/media/blend5toolspanel.png)
+Vous créez les objets en sélectionnant un outil, puis en dessinant sur la planche graphique à l'aide de la souris.
+
+![Panneau Outils dans Blend pour Visual Studio](../designers/media/blend5toolspanel.png)
+
+> [!TIP]
+> Certains des outils situés dans le panneau **Outils** ont des variantes (représentées de A à F dans l’illustration). Pour accéder à ces variantes, cliquez avec le bouton droit sur l’outil ou cliquez dessus en maintenant le bouton de la souris enfoncé.
+>
+> ![Variantes de l’outil Forme dans Blend pour Visual Studio](media/rectangle-shape-tool-blend.png)
 
 |||||
 |-|-|-|-|
@@ -45,13 +52,11 @@ Vous pouvez utiliser le panneau **Outils** dans Blend pour Visual Studio pour c
 |![Outils de composant](../designers/media/b1_5.png)|**Outils de composant** Donne accès au panneau **Composants** et affiche le dernier composant utilisé de la bibliothèque.|![Légende E](../designers/media/b5_label_e.png)|**Contrôles de texte**|
 |||![Légende F](../designers/media/b5_label_f.png)|**Contrôles courants**|
 
-**Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.png) [La barre d’outils](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
+## <a name="assets-window"></a>Fenêtre Composants
 
-## <a name="tour-of-the-assets-panel"></a>Présentation du panneau Composants
+La fenêtre **Composants** contient tous les contrôles disponibles. Elle est similaire à la **boîte à outils** dans Visual Studio. En plus des contrôles, vous trouverez tout ce que vous pouvez ajouter à la planche graphique dans la fenêtre **Composants**, notamment des styles, des médias, des comportements et des effets. Pour ouvrir la fenêtre **Composants**, choisissez **Affichage** > **Fenêtre Composants** ou appuyez sur **Ctrl**+**Alt**+**X**.
 
-Tous les contrôles se trouvent dans le panneau **Composants**, à l’image de la **boîte à outils** de Visual Studio. Outre les contrôles, vous y trouverez tout ce que vous pouvez ajouter à la planche graphique dans le panneau **Composants**, notamment des styles, des médias, des comportements et des effets.
-
-![Volet Composants](../designers/media/blend5_assets_panel.png)
+![Fenêtre Composants dans Blend pour Visual Studio](../designers/media/blend5_assets_panel.png)
 
 |||
 |-|-|
@@ -61,11 +66,11 @@ Tous les contrôles se trouvent dans le panneau **Composants**, à l’image de 
 |![Styles](../designers/media/b1_4.png)|**Styles** Affiche tous les styles contenus dans le dictionnaire de ressources.|
 |![Description](../designers/media/b1_5.png)|**Description** Affiche une description de la catégorie ou sous-catégorie de composants sélectionnée.|
 
-## <a name="tour-of-the-objects-and-timeline-panel"></a>Présentation du panneau Objets et chronologie
+## <a name="objects-and-timeline-window"></a>Fenêtre Objets et chronologie
 
-Ce panneau permet de disposer les objets sur la planche graphique et éventuellement de les animer.
+Utilisez cette fenêtre pour organiser les objets sur la planche graphique et éventuellement les animer. Pour ouvrir la fenêtre **Objets et chronologie**, choisissez **Affichage** > **Objets et chronologie** ou appuyez sur **Ctrl**+**W**, **U**.
 
-![Volet Objets et chronologie en mode animation](../designers/media/b5_object_timeline_animation.png)
+![Fenêtre Objets et chronologie en mode animation](../designers/media/b5_object_timeline_animation.png)
 
 |||
 |-|-|
@@ -86,11 +91,11 @@ Ce panneau permet de disposer les objets sur la planche graphique et éventuelle
 |![Zoom de la chronologie](../designers/media/b1_15.png)|**Zoom de la chronologie** Permet de définir la résolution du zoom de la chronologie. Un zoom avant permet de modifier une animation avec plus de détails, alors qu'un zoom arrière donne un plus large aperçu de ce qu'il se passe sur une période plus longue. Si vous faites un zoom avant, mais que vous ne pouvez pas définir d’image clé à un moment précis dans le temps, vérifiez que la résolution d’alignement définie est suffisamment élevée.|
 |![Légende 16](../designers/media/b5_label_16.png)|**Zone de composition de la chronologie** Permet d’afficher la chronologie et de déplacer des images clés en les faisant glisser ou via leurs menus contextuels.|
 
-## <a name="tour-of-the-properties-panel"></a>Présentation du panneau Propriétés
+## <a name="properties-window"></a>Fenêtre Propriétés
 
-Cet panneau permet d'afficher et de modifier les propriétés d'un objet. Vous pouvez aussi les définir directement sur la planche graphique. Dans ce cas, les modifications apportées aux propriétés sont répercutées dans le panneau **Propriétés**.
+Utilisez cette fenêtre pour voir et modifier les propriétés d’un objet. Vous pouvez aussi les définir directement sur la planche graphique. Dans ce cas, les changements apportés aux propriétés sont répercutés dans la fenêtre **Propriétés**. Pour ouvrir la fenêtre **Propriétés**, choisissez **Affichage** > **Fenêtre Propriétés** ou appuyez sur **Ctrl**+**W**, **P**.
 
-![Panneau Propriétés](../designers/media/blend5_properties_panel.png)
+![Fenêtre Propriétés dans Blend pour Visual Studio](../designers/media/blend5_properties_panel.png)
 
 **Catégories** Permet de développer et de réduire les catégories de propriétés. Cliquez sur **Développer** ![Développer](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png) et **Réduire** ![Réduire](../designers/media/b5_collapse_button.png) pour afficher ou masquer les détails de catégorie.
 
@@ -113,8 +118,6 @@ Cet panneau permet d'afficher et de modifier les propriétés d'un objet. Vous p
 |![](../designers/media/b1_15.png)|**Valeur hexadécimale** Affiche la valeur hexadécimale de la couleur affichée.|
 |![Légende 16](../designers/media/b5_label_16.png)|**Curseur de dégradé** S’affiche uniquement si un pinceau de dégradé est sélectionné.|
 |![Afficher les propriétés avancées](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png)|**Afficher les propriétés avancées** Affiche les catégories de propriétés moins fréquemment utilisées.|
-
-**Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.png) [La barre d’outils](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7).
 
 ## <a name="see-also"></a>Voir aussi
 

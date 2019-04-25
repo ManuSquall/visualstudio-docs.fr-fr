@@ -1,25 +1,20 @@
 ---
 title: Débogage distant ASP.NET sur un ordinateur distant IIS 7.5 ordinateur | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 71d249571830ac608bef12c4a47d0243de1859a5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 5873033e160a8354db70565606dcb399da13e073
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764068"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109521"
 ---
 # <a name="remote-debugging-aspnet-on-a-remote-iis-computer"></a>Débogage distant ASP.NET sur un ordinateur distant IIS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +59,7 @@ Une fois qu’il est installé, assurez-vous que le débogueur distant est en co
 
     ![RemoteDBG_IIS_AspNet_45](../debugger/media/remotedbg-iis-aspnet-45.png "RemoteDBG_IIS_AspNet_45")
 
-    Sur Windows Server 2008 R2, installez ASP.NET 4 au lieu d’utiliser cette commande : **\v4.0.30319\aspnet_regiis.exe C:\Windows\Microsoft.NET\Framework (64) - ir**
+    Sur Windows Server 2008 R2, installez ASP.NET 4 au lieu d’utiliser cette commande :   **C:\Windows\Microsoft.NET\Framework(64)\v4.0.30319\aspnet_regiis.exe -ir**
 1. Copiez le répertoire de projet ASP.NET de l’ordinateur Visual Studio dans un répertoire local (que nous appelons **C:\Publish**) sur l’ordinateur Windows Server. Vous pouvez copier le projet manuellement, utilisez Xcopy, Web Deploy, Robocopy, Powershell ou autres options.
 
     > [!CAUTION]
@@ -79,6 +74,7 @@ Une fois qu’il est installé, assurez-vous que le débogueur distant est en co
       </system.web>
   
     ```
+
 1. Ouvrez le **Gestionnaire des services Internet (IIS)** .et accédez à **Sites**.
 1. Cliquez avec le bouton droit sur le nœud **Site web par défaut** et sélectionnez **Ajouter une application**.
 1. Définir le **Alias** champ **MyMVC** et le champ pool d’applications à **ASP.NET v4.0** (ASP.NET 4.5 n’est pas une option pour le pool d’applications). Définissez le **Chemin d’accès physique** sur **C:\Publish** (où vous avez copié le répertoire de projet ASP.NET).
@@ -107,12 +103,9 @@ Une fois qu’il est installé, assurez-vous que le débogueur distant est en co
 
     ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess.png "RemoteDBG_AttachToProcess")
 
-1. Ouvrez le site web de l’ordinateur distant. Dans un navigateur, accédez à **http://\<nom_ordinateur_distant >**.
+1. Ouvrez le site web de l’ordinateur distant. Dans un navigateur, accédez à **http://\<nom_ordinateur_distant>**.
     
     La page web ASP.NET doit s’afficher.
 1. Dans la page web ASP.NET, cliquez sur le lien vers le **sur** page.
 
     Le point d’arrêt doit être atteint dans Visual Studio.
-
-
-

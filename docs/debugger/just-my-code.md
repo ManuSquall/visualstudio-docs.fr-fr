@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69ebbf2401432b9afec5a66fb6a7322e3e2df035
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: MTE95
+ms.openlocfilehash: edb78ed49add85b35f3fb89b4ba424d44f52bf8b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325329"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081864"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>Déboguer uniquement le code utilisateur avec uniquement mon Code
 
@@ -81,23 +81,23 @@ Si les exceptions de première chance sont activées pour l’exception, la lign
 
 ## <a name="BKMK_C___Just_My_Code"></a> Uniquement mon code C++
 
-À compter de Visual Studio 2017 version 15.8, uniquement mon Code pour le code pas à pas détaillé est également pris en charge. Cette fonctionnalité exige également l’utilisation de la [/JMC (débogage uniquement mon code)](/cpp/build/reference/jmc) commutateur de compilateur. Le commutateur est activé par défaut dans les projets C++. Pour **pile des appels** fenêtre et appel de prise en charge de la pile dans uniquement mon Code, le commutateur /JMC n’est pas nécessaire.
+À compter de Visual Studio 2017 version 15.8, uniquement mon Code pour le code pas à pas détaillé est également pris en charge. Cette fonctionnalité exige également l’utilisation de la [/JMC (débogage uniquement mon code)](/cpp/build/reference/jmc) commutateur de compilateur. Le commutateur est activé par défaut dans C++ projets. Pour **pile des appels** fenêtre et appel de prise en charge de la pile dans uniquement mon Code, le commutateur /JMC n’est pas nécessaire.
 
 <a name="BKMK_CPP_User_and_non_user_code"></a> Pour être classés comme du code utilisateur, le fichier PDB pour le fichier binaire qui contient le code utilisateur doit être chargé par le débogueur (utiliser le **Modules** fenêtre pour vérifier cela).
 
-Pour appeler un comportement pile, comme dans le **pile des appels** fenêtre, uniquement mon Code en C++ considère uniquement ces fonctions *code non-utilisateur*:
+Pour appeler un comportement pile, comme dans le **pile des appels** fenêtre, uniquement mon Code dans C++ considère uniquement ces fonctions *code non-utilisateur*:
 
 - Fonctions avec des informations sources supprimées dans leur fichier de symboles.
 - Fonctions où les fichiers de symboles indiquent qu'il n'existe pas de fichier source correspondant au frame de pile.
 - Fonctions spécifiées dans  *\*.natjmc* des fichiers dans le *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* dossier.
 
-Dans le comportement de code pas à pas, uniquement mon Code en C++ considère uniquement ces fonctions *code non-utilisateur*:
+Pour le comportement de pas à pas de code, uniquement mon Code dans C++ considère uniquement ces fonctions *code non-utilisateur*:
 
 - Fonctions pour laquelle le fichier PDB correspondant n’a pas été chargé dans le débogueur.
 - Fonctions spécifiées dans  *\*.natjmc* des fichiers dans le *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* dossier.
 
 > [!NOTE]
-> Pour le code pas à pas prend en charge uniquement mon Code, code C++ doit être compilé à l’aide de compilateurs MSVC dans Visual Studio 15.8 Preview 3 ou version ultérieure, et le commutateur de compilateur /JMC doit être activé (elle est activée par défaut). Pour plus d’informations, consultez [C++ personnaliser la pile des appels et le comportement du pas à pas de code](#BKMK_CPP_Customize_call_stack_behavior)) et cela [billet de blog](https://devblogs.microsoft.com/cppblog/announcing-jmc-stepping-in-visual-studio/). Pour le code compilé à l’aide d’un compilateur antérieur, *.natstepfilter* fichiers sont la seule façon de personnaliser le code pas à pas détaillé, qui est indépendante d’uniquement mon Code. Consultez [comportement pas à pas de personnaliser le C++](#BKMK_CPP_Customize_stepping_behavior).
+> Pour la prise en charge pas à pas de code dans uniquement mon Code, C++ code doit être compilé à l’aide des compilateurs MSVC dans Visual Studio 15.8 Preview 3 ou version ultérieure, et le commutateur de compilateur /JMC doit être activé (elle est activée par défaut). Pour plus d’informations, consultez [personnaliser C++ pile des appels et le comportement du pas à pas de code](#BKMK_CPP_Customize_call_stack_behavior)) et cela [billet de blog](https://devblogs.microsoft.com/cppblog/announcing-jmc-stepping-in-visual-studio/). Pour le code compilé à l’aide d’un compilateur antérieur, *.natstepfilter* fichiers sont la seule façon de personnaliser le code pas à pas détaillé, qui est indépendante d’uniquement mon Code. Consultez [personnaliser C++ pas à pas de comportement](#BKMK_CPP_Customize_stepping_behavior).
 
 <a name="BKMK_CPP_Stepping_behavior"></a> Pendant le débogage de C++ :
 
@@ -110,9 +110,9 @@ Si le débogueur s’arrête dans le code non-utilisateur (par exemple, vous uti
 
 Si le débogueur rencontre une exception, il s’arrête sur l’exception, s’il s’agit dans le code utilisateur ou non à l’utilisateur. **Non gérées par l’utilisateur** options dans le **paramètres d’Exception** boîte de dialogue sont ignorés.
 
-###  <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Personnaliser la pile des appels de C++ et le code pas à pas de comportement
+### <a name="BKMK_CPP_Customize_call_stack_behavior"></a> Personnaliser C++ pile des appels et le comportement du pas à pas de code
 
-Pour les projets C++, vous pouvez spécifier les modules, les fichiers sources et les fonctions le **pile des appels** fenêtre traite en tant que code non-utilisateur en les spécifiant dans  *\*.natjmc* fichiers. Cette personnalisation s’applique également au code pas à pas détaillé si vous utilisez la dernière version du compilateur (consultez [C++ uniquement mon Code](#BKMK_CPP_User_and_non_user_code)).
+Pour les projets C++, vous pouvez spécifier les modules, les fichiers sources et les fonctions le **pile des appels** fenêtre traite en tant que code non-utilisateur en les spécifiant dans  *\*.natjmc* fichiers. Cette personnalisation s’applique également au code pas à pas détaillé si vous utilisez la dernière version du compilateur (consultez [ C++ uniquement mon Code](#BKMK_CPP_User_and_non_user_code)).
 
 - Pour spécifier le code non-utilisateur pour tous les utilisateurs de l’ordinateur Visual Studio, ajoutez le *.natjmc* de fichiers à la *%VsInstallDirectory%\Common7\Packages\Debugger\Visualizers* dossier.
 - Pour spécifier le code non-utilisateur pour un utilisateur individuel, ajoutez le *.natjmc* de fichiers à la *%USERPROFILE%\My Documents\\< version de Visual Studio\>\Visualizers* dossier.
@@ -160,7 +160,7 @@ Un *.natjmc* fichier est un fichier XML avec la syntaxe suivante :
 |`Module`|Optionnel. Le nom ou le chemin d'accès complet au module qui contient la fonction. Vous pouvez utiliser cet attribut pour lever l'ambiguïté entre des fonctions du même nom.|
 |`ExceptionImplementation`|Quand la valeur est définie sur `true`, la pile des appels affiche la fonction qui a levé l'exception, au lieu de cette fonction.|
 
-###  <a name="BKMK_CPP_Customize_stepping_behavior"></a> Personnaliser le comportement de débogage C++ indépendant des paramètres d’uniquement mon Code
+### <a name="BKMK_CPP_Customize_stepping_behavior"></a> Personnaliser C++ pas à pas de comportement indépendant des paramètres d’uniquement mon Code
 
 Dans les projets C++, vous pouvez spécifier des fonctions pour l’étape en les répertoriant comme étant du code non-utilisateur dans  *\*.natstepfilter* fichiers. Les fonctions répertoriées dans  *\*.natstepfilter* fichiers ne sont pas dépendants des paramètres d’uniquement mon Code.
 
@@ -188,11 +188,11 @@ Un *.natstepfilter* fichier est un fichier XML avec la syntaxe suivante :
 |Élément|Description|
 |-------------|-----------------|
 |`Function`|Obligatoire. Spécifie une ou plusieurs fonctions comme fonctions non-utilisateur.|
-|`Name`|Obligatoire. Une expression régulière mise en forme selon ECMA-262 spécifiant le nom complet de la fonction concernée. Par exemple :<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> indique au débogueur que toutes les méthodes de `MyNS::MyClass` doivent être considérées comme du code non-utilisateur. La recherche de correspondance respecte la casse.|
+|`Name`|Obligatoire. Une expression régulière mise en forme selon ECMA-262 spécifiant le nom complet de la fonction concernée. Exemple :<br /><br /> `<Name>MyNS::MyClass.*</Name>`<br /><br /> indique au débogueur que toutes les méthodes de `MyNS::MyClass` doivent être considérées comme du code non-utilisateur. La recherche de correspondance respecte la casse.|
 |`Module`|Optionnel. Une expression régulière mise en forme selon ECMA-262 spécifiant le chemin d'accès complet au module contenant la fonction. La recherche de correspondance ne respecte pas la casse.|
 |`Action`|Obligatoire. Une des valeurs suivantes (respectant la casse) :<br /><br /> `NoStepInto`  -Indique au débogueur de survol de la fonction.<br /> `StepInto`  -Indique au débogueur de pas à pas détaillé de la fonction de la substitution de n’importe quel autre `NoStepInto` pour la fonction de mise en correspondance.|
 
-##  <a name="BKMK_JavaScript_Just_My_Code"></a> Uniquement mon code JavaScript
+## <a name="BKMK_JavaScript_Just_My_Code"></a> Uniquement mon code JavaScript
 
 <a name="BKMK_JS_User_and_non_user_code"></a> Uniquement mon code JavaScript contrôle l’exécution pas à pas et l’affichage de la pile des appels en catégorisant le code selon la classification suivante :
 
@@ -205,10 +205,10 @@ Un *.natstepfilter* fichier est un fichier XML avec la syntaxe suivante :
 Le débogueur JavaScript classifie un code en tant qu’utilisateur ou non-utilisateur dans cet ordre :
 
 1. Les classifications par défaut.
-   -   Script exécuté en passant une chaîne pour le fourni par l’hôte `eval` fonction est **MyCode**.
-   -   Script exécuté en passant une chaîne pour le `Function` constructeur est **LibraryCode**.
-   -   Script dans une référence de framework, comme WinJS ou le Kit de développement, est **LibraryCode**.
-   -   Script exécuté en passant une chaîne pour le `setTimeout`, `setImmediate`, ou `setInterval` functions est **UnrelatedCode**.
+   - Script exécuté en passant une chaîne pour le fourni par l’hôte `eval` fonction est **MyCode**.
+   - Script exécuté en passant une chaîne pour le `Function` constructeur est **LibraryCode**.
+   - Script dans une référence de framework, comme WinJS ou le Kit de développement, est **LibraryCode**.
+   - Script exécuté en passant une chaîne pour le `setTimeout`, `setImmediate`, ou `setInterval` functions est **UnrelatedCode**.
 
 2. Les classifications spécifiées pour tous les projets JavaScript Visual Studio dans le *%VSInstallDirectory%\JavaScript\JustMyCode\mycode.default.wwa.json* fichier.
 

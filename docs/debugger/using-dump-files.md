@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b392cf5eddaab877af56ee952074cff646e10a59
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 8ff4cc9501552b0a482e93aa1917a175680d6d78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693449"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099988"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Fichiers de vidage dans le débogueur Visual Studio
 
@@ -39,27 +39,27 @@ Dumps sont principalement utilisées pour déboguer les problèmes à partir d�
 
 Le débogueur Visual Studio peut enregistrer des fichiers dump pour le code managé ou natif. Il puisse déboguer des fichiers dump créés par Visual Studio ou par d’autres applications qui enregistrent les fichiers dans le *minidump* format.
 
-##  <a name="BKMK_Requirements_and_limitations"></a> Configuration requise et limitations
+## <a name="BKMK_Requirements_and_limitations"></a> Configuration requise et limitations
 
--   Pour déboguer les fichiers de vidage à partir des ordinateurs 64 bits, Visual Studio doit s’exécuter sur un ordinateur 64 bits.
+- Pour déboguer les fichiers de vidage à partir des ordinateurs 64 bits, Visual Studio doit s’exécuter sur un ordinateur 64 bits.
 
--   Visual Studio peut déboguer les fichiers dump des applications natives à partir des périphériques ARM. Il peut également déboguer des fichiers dump des applications gérées à partir d’appareils ARM, mais uniquement dans le débogueur natif.
+- Visual Studio peut déboguer les fichiers dump des applications natives à partir des périphériques ARM. Il peut également déboguer des fichiers dump des applications gérées à partir d’appareils ARM, mais uniquement dans le débogueur natif.
 
--   Pour déboguer [en mode noyau](/windows-hardware/drivers/debugger/kernel-mode-dump-files) fichiers dump ou utiliser le [SOS.dll](/dotnet/framework/tools/sos-dll-sos-debugging-extension) débogage extension dans Visual Studio, téléchargez les outils de débogage pour Windows dans le [Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk).
+- Pour déboguer [en mode noyau](/windows-hardware/drivers/debugger/kernel-mode-dump-files) fichiers dump ou utiliser le [SOS.dll](/dotnet/framework/tools/sos-dll-sos-debugging-extension) débogage extension dans Visual Studio, téléchargez les outils de débogage pour Windows dans le [Windows Driver Kit (WDK)](/windows-hardware/drivers/download-the-wdk).
 
--   Visual Studio ne peut pas déboguer des fichiers dump enregistrés dans l’ancien [dump complet en mode utilisateur](/windows/desktop/wer/collecting-user-mode-dumps) format. Un vidage complet en mode utilisateur n’est pas un dump avec tas.
+- Visual Studio ne peut pas déboguer des fichiers dump enregistrés dans l’ancien [dump complet en mode utilisateur](/windows/desktop/wer/collecting-user-mode-dumps) format. Un vidage complet en mode utilisateur n’est pas un dump avec tas.
 
--   Le débogage des fichiers dump de code optimisé peut faire l'objet de confusion. Par exemple, l’incorporation du compilateur des fonctions peut entraîner des piles d’appels inattendues et d’autres optimisations peuvent modifier la durée de vie des variables.
+- Le débogage des fichiers dump de code optimisé peut faire l'objet de confusion. Par exemple, l’incorporation du compilateur des fonctions peut entraîner des piles d’appels inattendues et d’autres optimisations peuvent modifier la durée de vie des variables.
 
-##  <a name="BKMK_Dump_files__with_or_without_heaps"></a> Fichiers dump, avec ou sans tas
+## <a name="BKMK_Dump_files__with_or_without_heaps"></a> Fichiers dump, avec ou sans tas
 
 Fichiers de vidage peuvent ou peut-être pas les informations de segment de mémoire.
 
--   **Fichiers dump avec tas** contiennent un instantané de la mémoire de l’application, y compris les valeurs des variables, au moment de l’image mémoire. Visual Studio enregistre également les fichiers binaires des modules natifs chargés dans un fichier dump avec un segment de mémoire, ce qui peut faciliter le débogage. Visual Studio peut charger les symboles à partir d’un fichier dump avec un segment de mémoire, même si elle ne peut pas trouver une application binaire.
+- **Fichiers dump avec tas** contiennent un instantané de la mémoire de l’application, y compris les valeurs des variables, au moment de l’image mémoire. Visual Studio enregistre également les fichiers binaires des modules natifs chargés dans un fichier dump avec un segment de mémoire, ce qui peut faciliter le débogage. Visual Studio peut charger les symboles à partir d’un fichier dump avec un segment de mémoire, même si elle ne peut pas trouver une application binaire.
 
--   **Fichiers dump sans tas** sont beaucoup plus petits que les dumps avec tas, mais le débogueur doit charger les binaires d’application pour rechercher des informations de symboles. Les fichiers binaires chargés doivent correspondre exactement à ceux en cours d’exécution lors de la création du dump. Fichiers dump sans tas enregistrez les valeurs des variables de pile uniquement.
+- **Fichiers dump sans tas** sont beaucoup plus petits que les dumps avec tas, mais le débogueur doit charger les binaires d’application pour rechercher des informations de symboles. Les fichiers binaires chargés doivent correspondre exactement à ceux en cours d’exécution lors de la création du dump. Fichiers dump sans tas enregistrez les valeurs des variables de pile uniquement.
 
-##  <a name="BKMK_Create_a_dump_file"></a> Créer un fichier dump
+## <a name="BKMK_Create_a_dump_file"></a> Créer un fichier dump
 
 Lorsque vous déboguez un processus dans Visual Studio, vous pouvez enregistrer un fichier de vidage lorsque le débogueur s’est arrêté sur une exception ou un point d’arrêt.
 
@@ -76,7 +76,7 @@ Avec [débogage juste à temps](../debugger/just-in-time-debugging-in-visual-stu
 >[!NOTE]
 >Vous pouvez créer des fichiers dump avec n’importe quel programme prenant en charge le format minidump Windows. Par exemple, l’utilitaire en ligne de commande **Procdump** de [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) peut créer des fichiers de processus de vidage sur incident sur des déclencheurs ou à la demande. Consultez [spécifications et limitations](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) pour plus d’informations sur l’utilisation d’autres outils pour créer des fichiers de vidage.
 
-##  <a name="BKMK_Open_a_dump_file"></a> Ouvrir un fichier dump
+## <a name="BKMK_Open_a_dump_file"></a> Ouvrir un fichier dump
 
 1. Dans Visual Studio, sélectionnez **fichier** > **Open** > **fichier**.
 
@@ -90,7 +90,7 @@ Avec [débogage juste à temps](../debugger/just-in-time-debugging-in-visual-stu
    - Pour définir le symbole du chargement des emplacements, sélectionnez **définir les chemins de symboles**.
    - Pour démarrer le débogage, sélectionnez **déboguer avec managé uniquement**, **déboguer avec natif uniquement**, **déboguer avec mixte**, ou **déboguer avec la mémoire managée**.
 
-##  <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> Rechercher des fichiers .exe, .pdb et source
+## <a name="BKMK_Find_binaries__symbol___pdb__files__and_source_files"></a> Rechercher des fichiers .exe, .pdb et source
 
 Pour utiliser complet de fonctionnalités sur un fichier de vidage de débogage Visual Studio a besoin :
 

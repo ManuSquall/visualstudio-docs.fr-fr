@@ -9,27 +9,27 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 11df0e3ca4e8b9c814bf91735d48bb091c711068
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: da6745b3980b6ef5b0200c91d4abf245daadfa71
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788204"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113814"
 ---
-# <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Comment : suivre votre code en personnalisant la barre de défilement
+# <a name="how-to-track-your-code-by-customizing-the-scrollbar"></a>Procédure : Suivre votre Code en personnalisant la barre de défilement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Quand vous travaillez sur de longs fichiers de code, il peut être difficile de tout garder en tête. Vous pouvez personnaliser la barre de défilement de la fenêtre de code pour avoir une vue générale de ce qui se produit dans votre code.  
   
 ### <a name="to-show-annotations-on-the-scroll-bar"></a>Pour afficher les annotations dans la barre de défilement  
   
-1.  Vous pouvez configurer la barre de défilement pour y afficher les modifications du code, les points d'arrêt, les erreurs et les signets.  
+1. Vous pouvez configurer la barre de défilement pour y afficher les modifications du code, les points d'arrêt, les erreurs et les signets.  
   
      Ouvrez la page d’options **Barre de défilement** (**Outils, Options, Éditeur de texte, Tous les langages** ou un langage spécifique, ou tapez **barre de défilement** dans la fenêtre Lancement rapide).  
   
-2.  Sélectionnez **Afficher les annotations au-dessus de la barre de défilement verticale**, puis sélectionnez les annotations à afficher. (L’option **Marques** inclut les points d’arrêt et les signets.)  
+2. Sélectionnez **Afficher les annotations au-dessus de la barre de défilement verticale**, puis sélectionnez les annotations à afficher. (L’option **Marques** inclut les points d’arrêt et les signets.)  
   
-3.  Essayez maintenant. Ouvrez un long fichier de code et remplacez un élément qui se répète à différents endroits dans le fichier. La barre de défilement affiche l'effet de ces remplacements. Vous pouvez ainsi annuler des modifications si vous avez remplacé un élément par erreur.  
+3. Essayez maintenant. Ouvrez un long fichier de code et remplacez un élément qui se répète à différents endroits dans le fichier. La barre de défilement affiche l'effet de ces remplacements. Vous pouvez ainsi annuler des modifications si vous avez remplacé un élément par erreur.  
   
      Voici à quoi ressemble la barre de défilement après la recherche d'une chaîne. Notez que toutes les instances de la chaîne sont affichées.  
   
@@ -41,7 +41,7 @@ Quand vous travaillez sur de longs fichiers de code, il peut être difficile de 
   
 ### <a name="to-set-the-display-mode-for-the-scroll-bar"></a>Pour définir le mode d'affichage de la barre de défilement  
   
-1.  La barre de défilement offre deux modes d'affichage : le mode barre (par défaut) et le mode mappage. Le mode barre affiche uniquement les indicateurs d'annotation dans la barre de défilement. En mode mappage, les lignes de code sont représentées dans la barre de défilement. Vous pouvez choisir la largeur des lignes et spécifier si les lignes affichent le code sous-jacent quand vous placez le pointeur dessus. Quand vous cliquez quelque part dans la barre de défilement, le curseur se déplace vers l'emplacement correspondant dans le code. Les zones réduites sont grisées différemment et se développent quand vous double-cliquez dessus.  
+1. La barre de défilement offre deux modes d'affichage : le mode barre (par défaut) et le mode mappage. Le mode barre affiche uniquement les indicateurs d'annotation dans la barre de défilement. En mode mappage, les lignes de code sont représentées dans la barre de défilement. Vous pouvez choisir la largeur des lignes et spécifier si les lignes affichent le code sous-jacent quand vous placez le pointeur dessus. Quand vous cliquez quelque part dans la barre de défilement, le curseur se déplace vers l'emplacement correspondant dans le code. Les zones réduites sont grisées différemment et se développent quand vous double-cliquez dessus.  
   
      Dans la page d’options **Barre de défilement**, sélectionnez **Utiliser le mode barre pour la barre de défilement verticale** ou **Utiliser le mode mappage pour la barre de défilement verticale**. Vous pouvez choisir la largeur de l’affichage dans la liste déroulante **Vue d’ensemble du code source**.  
   
@@ -49,7 +49,7 @@ Quand vous travaillez sur de longs fichiers de code, il peut être difficile de 
   
      ![Barre de défilement en mode mappage](../ide/media/enhancedscrollbar.png "EnhancedScrollbar")  
   
-2.  En mode mappage, pour activer les aperçus du code quand vous déplacez le curseur vers le haut et le bas dans la barre de défilement, sélectionnez l’option **Afficher l’info-bulle d’aperçu**. Voici le résultat :  
+2. En mode mappage, pour activer les aperçus du code quand vous déplacez le curseur vers le haut et le bas dans la barre de défilement, sélectionnez l’option **Afficher l’info-bulle d’aperçu**. Voici le résultat :  
   
      ![Barre de défilement avec une info-bulle](../ide/media/enhancedscrollbarsearchtooltip.png "EnhancedScrollbarSearchTooltip")  
   

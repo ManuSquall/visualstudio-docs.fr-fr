@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c52540c8e639adcd8ceec6b4da79fb87cff18386
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3095bccd25548e55f750ee11f26d20fdc9fe603d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949999"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042777"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>Procédure : Utiliser Modifier & Continuer (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,19 +35,19 @@ Avec Modifier &amp; Continuer pour C#, vous pouvez modifier votre code en mode a
   
 ### <a name="to-invoke-edit-and-continue-automatically"></a>Pour appeler modifier et continuer automatiquement  
   
-1.  En mode arrêt, apportez une modification à votre code source.  
+1. En mode arrêt, apportez une modification à votre code source.  
   
-2.  À partir de la **déboguer** menu, cliquez sur **continuer**, **étape**, ou **définir l’instruction suivante** ou évaluez une fonction dans une fenêtre du débogueur.  
+2. À partir de la **déboguer** menu, cliquez sur **continuer**, **étape**, ou **définir l’instruction suivante** ou évaluez une fonction dans une fenêtre du débogueur.  
   
      Le nouveau code est compilé et le débogage se poursuit avec le nouveau code. Certaines modifications ne sont pas pris en charge par Modifier & Continuer. Pour plus d’informations, consultez [les modifications de Code prises en charge (c#)](../debugger/supported-code-changes-csharp.md).  
   
 ### <a name="to-enabledisable-edit-and-continue"></a>Pour activer ou désactiver Modifier &amp; Continuer  
   
-1.  Dans le menu **Outils**, cliquez sur **Options**.  
+1. Dans le menu **Outils**, cliquez sur **Options**.  
   
-2.  Dans le **Options** boîte de dialogue, développez le **débogage** nœud, puis sélectionnez **Modifier & Continuer**.  
+2. Dans le **Options** boîte de dialogue, développez le **débogage** nœud, puis sélectionnez **Modifier & Continuer**.  
   
-3.  Dans le **Options** boîte de dialogue **Modifier & Continuer** page, activez ou désactivez le **Activer Modifier & Continuer** case à cocher.  
+3. Dans le **Options** boîte de dialogue **Modifier & Continuer** page, activez ou désactivez le **Activer Modifier & Continuer** case à cocher.  
   
      Le paramètre prend effet lorsque vous redémarrez la session de débogage.  
   

@@ -1,14 +1,9 @@
 ---
 title: Utilisation d’Annotations SAL pour réduire les défauts du Code C / C++ | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: conceptual
 helpviewer_keywords:
 - annotations
 - SAL annotations
@@ -17,13 +12,13 @@ ms.assetid: a16e47d0-6f3e-4ed6-8883-459b2874e9a4
 caps.latest.revision: 29
 author: mikeblome
 ms.author: mblome
-manager: ghogen
-ms.openlocfilehash: 3d59bc320ed95515adbf1bde929e634116946fb5
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cb1d5b7f7368b0168a0de6a540a4f025f3179f24
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51803225"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046264"
 ---
 # <a name="using-sal-annotations-to-reduce-cc-code-defects"></a>Utilisation d’annotations SAL pour réduire les défauts du code C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,35 +27,35 @@ SAL est le langage d’annotation Microsoft source code. À l’aide des annotat
   
  Les articles de cette section de la documentation décrivent les aspects de SAL fournissent de référence pour la syntaxe SAL et donnent des exemples de son utilisation.  
   
--   [Présentation de SAL](../code-quality/understanding-sal.md)  
+- [Présentation de SAL](../code-quality/understanding-sal.md)  
   
      Fournit des informations et des exemples qui illustrent le cœur d’annotations SAL.  
   
--   [Annotation des paramètres de fonction et des valeurs de retour](../code-quality/annotating-function-parameters-and-return-values.md)  
+- [Annotation des paramètres de fonction et des valeurs de retour](../code-quality/annotating-function-parameters-and-return-values.md)  
   
      Répertorie les annotations SAL pour les fonctions et les paramètres de fonction.  
   
--   [Annotation du comportement d’une fonction](../code-quality/annotating-function-behavior.md)  
+- [Annotation du comportement d’une fonction](../code-quality/annotating-function-behavior.md)  
   
      Répertorie les annotations SAL pour les fonctions et le comportement de la fonction.  
   
--   [Annotations des structs et des classes](../code-quality/annotating-structs-and-classes.md)  
+- [Annotations des structs et des classes](../code-quality/annotating-structs-and-classes.md)  
   
      Répertorie les annotations SAL pour les structures et classes.  
   
--   [Annotation du comportement de verrouillage](../code-quality/annotating-locking-behavior.md)  
+- [Annotation du comportement de verrouillage](../code-quality/annotating-locking-behavior.md)  
   
      Explique comment utiliser des annotations SAL avec les mécanismes de verrouillage.  
   
--   [Spécification du moment et de l’endroit où une annotation s’applique](../code-quality/specifying-when-and-where-an-annotation-applies.md)  
+- [Spécification du moment et de l’endroit où une annotation s’applique](../code-quality/specifying-when-and-where-an-annotation-applies.md)  
   
      Répertorie les annotations SAL qui spécifient la condition ou l’étendue (sélection élective), d’autres annotations SAL.  
   
--   [Fonctions intrinsèques](../code-quality/intrinsic-functions.md)  
+- [Fonctions intrinsèques](../code-quality/intrinsic-functions.md)  
   
      Répertorie les annotations SAL intrinsèques.  
   
--   [Bonnes pratiques et exemples](../code-quality/best-practices-and-examples-sal.md)  
+- [Bonnes pratiques et exemples](../code-quality/best-practices-and-examples-sal.md)  
   
      Fournit des exemples qui montrent comment utiliser des annotations SAL. Explique également les pièges les plus courants.  
   
@@ -69,6 +64,3 @@ SAL est le langage d’annotation Microsoft source code. À l’aide des annotat
   
 ## <a name="see-also"></a>Voir aussi  
  [SAL 2.0 Annotations pour les pilotes Windows](http://go.microsoft.com/fwlink/?LinkId=250979)
-
-
-

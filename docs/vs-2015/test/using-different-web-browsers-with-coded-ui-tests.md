@@ -8,12 +8,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7245af090cfdaa8e4282677c8b5a052d63b63e2
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.openlocfilehash: 5289804eb85b9af4fff090f98cc97f8d2c9ec676
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54805532"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100402"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Utilisation de différents navigateurs Web avec des tests codés de l'interface utilisateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,19 +26,19 @@ Les tests codés de l'interface utilisateur peuvent automatiser le test des appl
   
 - Systèmes d'exploitation :  
   
-  -   Microsoft Windows 7  
+  - Microsoft Windows 7  
   
-  -   Microsoft Windows 8  
+  - Microsoft Windows 8  
   
-  -   Microsoft Windows Server 2008 R2 SP1  
+  - Microsoft Windows Server 2008 R2 SP1  
   
 - Versions de navigateur web :  
   
-  -   Windows Internet Explorer 9  
+  - Windows Internet Explorer 9  
   
-  -   Windows Internet Explorer 10  
+  - Windows Internet Explorer 10  
   
-  -   Pour connaître les versions prises en charge de Mozilla Firefox et de Google Chrome, cliquez [ici](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
+  - Pour connaître les versions prises en charge de Mozilla Firefox et de Google Chrome, cliquez [ici](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
   
 - Installez les [composants Selenium pour les tests codés de l’interface utilisateur sur plusieurs navigateurs](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
   
@@ -83,19 +83,19 @@ Les tests codés de l'interface utilisateur peuvent automatiser le test des appl
 ### <a name="enable-debugging"></a>Activer le débogage  
  Pour activer le débogage de votre application web, vous devez utiliser les options de configuration suivantes :  
   
-1.  Activer Uniquement mon code :  
+1. Activer Uniquement mon code :  
   
-    1.  Dans le menu **Outils**, choisissez **Options**, puis **Débogage**.  
+    1. Dans le menu **Outils**, choisissez **Options**, puis **Débogage**.  
   
-    2.  Sélectionnez **Activer Uniquement mon code**.  
+    2. Sélectionnez **Activer Uniquement mon code**.  
   
-2.  Désactiver les exceptions CLR :  
+2. Désactiver les exceptions CLR :  
   
-    1.  Dans le menu **Déboguer**, choisissez **Exceptions**.  
+    1. Dans le menu **Déboguer**, choisissez **Exceptions**.  
   
-    2.  Pour **Exceptions CLR**, désactivez **Non géré par l’utilisateur**.  
+    2. Pour **Exceptions CLR**, désactivez **Non géré par l’utilisateur**.  
   
-##  <a name="generate"></a> *Je ne vois pas l’option permettant de modifier BrowserWindow.CurrentBrowser dans le test codé de l’interface utilisateur.*  
+## <a name="generate"></a> *Je ne vois pas l’option permettant de modifier BrowserWindow.CurrentBrowser dans le test codé de l’interface utilisateur.*  
  Vous utilisez peut-être une version de [!INCLUDE[vs2011_first](../includes/vs2011-first-md.md)] qui ne prend pas en charge les tests codés de l'interface utilisateur à l'aide de différents navigateurs web. Pour utiliser de tels tests codés de l’interface utilisateur, vous devez utiliser Visual Studio Enterprise.  
   
  *Que dois-je savoir de plus ?*  
@@ -139,11 +139,11 @@ Les tests codés de l'interface utilisateur peuvent automatiser le test des appl
  [Résoudre les problèmes des tests multi-navigateurs](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)  
   
 ### <a name="guidance"></a>Conseils  
- [Test de livraison continue avec Visual Studio 2012 – chapitre 2 : Test unitaire Tester l’intérieur](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Test de livraison continue avec Visual Studio 2012 – chapitre 2 : Tests unitaires : Tester l’intérieur](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
  [Test de livraison continue avec Visual Studio 2012 – chapitre 5 : Automatisation des Tests système](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
-### <a name="faq"></a>FAQ  
+### <a name="faq"></a>Questions fréquentes (FAQ)  
  [FAQ concernant les tests codés de l’interface utilisateur - 1](http://go.microsoft.com/fwlink/?LinkID=230576)  
   
  [FAQ concernant les tests codés de l’interface utilisateur - 2](http://go.microsoft.com/fwlink/?LinkID=230578)  

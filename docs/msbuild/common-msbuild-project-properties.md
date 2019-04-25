@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 103503b5f35d335867b4f5a9b0b76d7c3e6ed20e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a0ecdd051ecc44cb3205ca8793653bf31a63abd2
+ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610604"
+ms.lasthandoff: 04/15/2019
+ms.locfileid: "59584556"
 ---
 # <a name="common-msbuild-project-properties"></a>Propriétés communes des projets MSBuild
 Le tableau ci-dessous répertorie les propriétés fréquemment utilisées qui sont définies dans les fichiers projet Visual Studio ou incluses dans les fichiers *.targets* fournis par MSBuild.
@@ -54,7 +54,7 @@ Le tableau ci-dessous répertorie les propriétés fréquemment utilisées qui s
 | CscToolPath | Chemin de *csc.exe*, le compilateur [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]. |
 | CustomBeforeMicrosoftCommonTargets | Nom d'un fichier projet ou fichier de cibles qui doit être importé automatiquement avant l'importation des cibles communes. |
 | DebugSymbols | Valeur booléenne qui indique si les symboles sont générés par la procédure.<br /><br /> En spécifiant **/p:DebugSymbols=false** en ligne de commande, vous désactivez la génération de fichiers de symboles de la base de données du programme (*.pdb*). |
-| DebugType | Définit le niveau d'informations de débogage que vous souhaitez générer. Les valeurs valides sont "full", "pdbonly" et "none". |
+| DebugType | Définit le niveau d'informations de débogage que vous souhaitez générer. Les valeurs valides sont « full », « pdbonly », « portable », « embedded » et « none ». |
 | DefineConstants | Définit des constantes conditionnelles du compilateur. Les paires symbole/valeur sont séparées par des points-virgules et spécifiées avec la syntaxe suivante :<br /><br /> *symbole1 = valeur1 ; symbole2 = valeur2*<br /><br /> Cette propriété est équivalente au commutateur `/define` du compilateur. |
 | DefineDebug | Valeur booléenne qui indique si vous souhaitez que la constante DEBUG soit définie. |
 | DefineTrace | Valeur booléenne qui indique si vous souhaitez que la constante TRACE soit définie. |

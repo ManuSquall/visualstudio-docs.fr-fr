@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0bf16f79401f4b8df3bafff0f92963510110dff1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 40de16290e52755ab92d09edf0c90c045ad4dc86
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622759"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061032"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Guide de test pour les plug-ins de contrôle de code source
 Cette section fournit des conseils pour tester votre contrôle de source de plug-in avec [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Une vue d’ensemble complète des zones de tests les plus courantes, ainsi que certains domaines plus complexes qui peuvent s’avérer problématiques est fourni. Cette vue d’ensemble n’est pas censée être une liste exhaustive des cas de test.
@@ -51,55 +51,55 @@ Cette section fournit des conseils pour tester votre contrôle de source de plug
 
 ## <a name="test-areas-covered-in-this-section"></a>Cette Section traités des zones de test
 
--   [Zone de test 1 : Ajouter / Ouvrir à partir du contrôle de code Source](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
+- [Zone de test 1 : Ajouter / Ouvrir à partir du contrôle de code Source](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
 
-    -   Cas 1 : Ajoutez la Solution au contrôle de code Source
+    - Cas 1 : Ajoutez la Solution au contrôle de code Source
 
-    -   1 b cas : Ouvrir une Solution à partir du contrôle de code Source
+    - 1 b cas : Ouvrir une Solution à partir du contrôle de code Source
 
-    -   Cas 1c : Ajouter la Solution à partir du contrôle de code Source
+    - Cas 1c : Ajouter la Solution à partir du contrôle de code Source
 
--   [Zone de test 2 : Obtenir à partir du contrôle de code Source](../../extensibility/internals/test-area-2-get-from-source-control.md)
+- [Zone de test 2 : Obtenir à partir du contrôle de code Source](../../extensibility/internals/test-area-2-get-from-source-control.md)
 
--   [Zone de test 3 : Découvrez / annuler l’extraction](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
+- [Zone de test 3 : Découvrez / annuler l’extraction](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
 
-    -   Cas 3 : Découvrez / annuler l’extraction
+    - Cas 3 : Découvrez / annuler l’extraction
 
-    -   Cas 3 : Extraire
+    - Cas 3 : Extraire
 
-    -   3 b de cas : Extraction déconnectée
+    - 3 b de cas : Extraction déconnectée
 
-    -   Cas 3c : Modifier/la requête d’enregistrement (QEQS)
+    - Cas 3c : Modifier/la requête d’enregistrement (QEQS)
 
-    -   Cas 3d : Extraction en mode silencieux
+    - Cas 3d : Extraction en mode silencieux
 
-    -   3e cas : Annuler l’extraction
+    - 3e cas : Annuler l’extraction
 
--   [Zone de test 4 : Date d'arrivée](../../extensibility/internals/test-area-4-check-in.md)
+- [Zone de test 4 : Date d'arrivée](../../extensibility/internals/test-area-4-check-in.md)
 
-    -   4 a case : Éléments modifiés
+    - 4 a case : Éléments modifiés
 
-    -   4 b de cas : Ajout de fichiers
+    - 4 b de cas : Ajout de fichiers
 
-    -   Cas 4c : Ajout de projets
+    - Cas 4c : Ajout de projets
 
--   [Zone de test 5 : Modifier le contrôle de code Source](../../extensibility/internals/test-area-5-change-source-control.md)
+- [Zone de test 5 : Modifier le contrôle de code Source](../../extensibility/internals/test-area-5-change-source-control.md)
 
-    -   5 a case : Lier
+    - 5 a case : Lier
 
-    -   5 b de cas : Annuler la liaison
+    - 5 b de cas : Annuler la liaison
 
-    -   Cas 5c : reliaison
+    - Cas 5c : reliaison
 
--   [Zone de test 6 : Delete](../../extensibility/internals/test-area-6-delete.md)
+- [Zone de test 6 : Delete](../../extensibility/internals/test-area-6-delete.md)
 
--   [Zone de test 7 : Partager](../../extensibility/internals/test-area-7-share.md)
+- [Zone de test 7 : Partager](../../extensibility/internals/test-area-7-share.md)
 
--   [Zone de test 8 : Commutation de plug-in](../../extensibility/internals/test-area-8-plug-in-switching.md)
+- [Zone de test 8 : Commutation de plug-in](../../extensibility/internals/test-area-8-plug-in-switching.md)
 
-    -   8 a case : Modification automatique
+    - 8 a case : Modification automatique
 
-    -   8 b de cas : Modification sur les solutions
+    - 8 b de cas : Modification sur les solutions
 
 ## <a name="see-also"></a>Voir aussi
 - [Plug-ins de contrôle de code source](../../extensibility/source-control-plug-ins.md)

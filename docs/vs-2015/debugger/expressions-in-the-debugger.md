@@ -1,13 +1,8 @@
 ---
 title: Expressions dans le débogueur | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.expressions
@@ -31,13 +26,13 @@ ms.assetid: 70f9b531-44c7-4d77-980d-5eddbf2bff41
 caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cf75965a9be7c8e2a9a09cc43fa6eec632d6bf90
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3999737a2fad04c9b513722ae11608574a72c410
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51722224"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080735"
 ---
 # <a name="expressions-in-the-debugger"></a>Expressions dans le débogueur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,7 +94,7 @@ int main()
   
 ```  
   
-###  <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> Utilisation de fonctions intrinsèques du débogueur pour maintenir l’état  
+### <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> Utilisation de fonctions intrinsèques du débogueur pour maintenir l’état  
  Les fonctions intrinsèques du débogueur vous permettent d’appeler certaines fonctions C/C++ dans les expressions sans modifier l’état de l’application.  
   
  Fonctions intrinsèques du débogueur :  
@@ -123,15 +118,15 @@ int main()
   
 ## <a name="ccli---unsupported-expressions"></a>Expressions non prises en charge en C++/CLI  
   
--   Les casts qui utilisent des pointeurs, ou casts définis par l’utilisateur, ne sont pas pris en charge.  
+- Les casts qui utilisent des pointeurs, ou casts définis par l’utilisateur, ne sont pas pris en charge.  
   
--   La comparaison et l’assignation d’objet ne sont pas prises en charge.  
+- La comparaison et l’assignation d’objet ne sont pas prises en charge.  
   
--   Les opérateurs surchargés et les fonctions surchargées ne sont pas pris en charge.  
+- Les opérateurs surchargés et les fonctions surchargées ne sont pas pris en charge.  
   
--   La conversion boxing et unboxing n’est pas prise en charge.  
+- La conversion boxing et unboxing n’est pas prise en charge.  
   
--   L’opérateur`Sizeof` n’est pas pris en charge.  
+- L’opérateur`Sizeof` n’est pas pris en charge.  
   
 ## <a name="c---unsupported-expressions"></a>Expressions non prises en charge en C#  
   
@@ -140,19 +135,19 @@ int main()
   
  Les fonctionnalités suivantes des objets dynamiques ne sont pas prises en charge :  
   
--   Opérateurs composés `+=`, `-=`, `%=`, `/=`et `*=`  
+- Opérateurs composés `+=`, `-=`, `%=`, `/=`et `*=`  
   
--   De nombreux casts, notamment les casts numériques et casts d’argument de type  
+- De nombreux casts, notamment les casts numériques et casts d’argument de type  
   
--   Appels de méthode avec plus de deux arguments  
+- Appels de méthode avec plus de deux arguments  
   
--   Accesseurs Get de propriété comportant plus de deux arguments  
+- Accesseurs Get de propriété comportant plus de deux arguments  
   
--   Accesseurs Set de propriété comportant des arguments  
+- Accesseurs Set de propriété comportant des arguments  
   
--   Assignation à un indexeur  
+- Assignation à un indexeur  
   
--   Opérateurs booléens `&&` et `||`  
+- Opérateurs booléens `&&` et `||`  
   
 ### <a name="anonymous-methods"></a>Méthodes anonymes  
  La création de méthodes anonymes n’est pas prise en charge.  
@@ -164,19 +159,19 @@ int main()
   
  Les fonctionnalités suivantes des objets dynamiques ne sont pas prises en charge :  
   
--   Opérateurs composés `+=`, `-=`, `%=`, `/=`et `*=`  
+- Opérateurs composés `+=`, `-=`, `%=`, `/=`et `*=`  
   
--   De nombreux casts, notamment les casts numériques et casts d’argument de type  
+- De nombreux casts, notamment les casts numériques et casts d’argument de type  
   
--   Appels de méthode avec plus de deux arguments  
+- Appels de méthode avec plus de deux arguments  
   
--   Accesseurs Get de propriété comportant plus de deux arguments  
+- Accesseurs Get de propriété comportant plus de deux arguments  
   
--   Accesseurs Set de propriété comportant des arguments  
+- Accesseurs Set de propriété comportant des arguments  
   
--   Assignation à un indexeur  
+- Assignation à un indexeur  
   
--   Opérateurs booléens `&&` et `||`  
+- Opérateurs booléens `&&` et `||`  
   
 ### <a name="local-constants"></a>Constantes locales  
  Les constantes locales ne sont pas prises en charge.  
@@ -189,43 +184,38 @@ int main()
   
 ### <a name="unsupported-keywords"></a>Mots clés non pris en charge  
   
--   `AddressOf`  
+- `AddressOf`  
   
--   `End`  
+- `End`  
   
--   `Error`  
+- `Error`  
   
--   `Exit`  
+- `Exit`  
   
--   `Goto`  
+- `Goto`  
   
--   `On Error`  
+- `On Error`  
   
--   `Resume`  
+- `Resume`  
   
--   `Return`  
+- `Return`  
   
--   `Select/Case`  
+- `Select/Case`  
   
--   `Stop`  
+- `Stop`  
   
--   `SyncLock`  
+- `SyncLock`  
   
--   `Throw`  
+- `Throw`  
   
--   `Try/Catch/Finally`  
+- `Try/Catch/Finally`  
   
--   `With`  
+- `With`  
   
--   Mots clés de niveau espace de noms ou module, comme `End Sub` ou `Module`.  
+- Mots clés de niveau espace de noms ou module, comme `End Sub` ou `Module`.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Spécificateurs de format en C++](../debugger/format-specifiers-in-cpp.md)   
  [Context Operator (C++)](../debugger/context-operator-cpp.md)   
- [Spécificateurs de format en c#](../debugger/format-specifiers-in-csharp.md)   
+ [Spécificateurs de format en C#](../debugger/format-specifiers-in-csharp.md)   
  [Pseudo-variables](../debugger/pseudovariables.md)
-
-
-
-
-

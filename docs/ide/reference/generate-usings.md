@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: afd4b758332d9357dc20dd84e726d72da4d2db74
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 0ce1b620a6d8aba7e4aea767745891dff6d9f869
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355183"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790046"
 ---
 # <a name="generate-usings-in-visual-studio"></a>Générer des instructions using dans Visual Studio
 
@@ -22,20 +22,20 @@ Cette génération de code s’applique à :
 
 - C#
 
-**Quoi :** Permet d’ajouter immédiatement les importations ou [instructions using](/dotnet/csharp/language-reference/keywords/using-statement) nécessaires du code copié-collé.
+**Quoi :** Permet d’ajouter immédiatement les importations ou [instructions using](/dotnet/csharp/language-reference/keywords/using-statement) nécessaires au code copié-collé.
 
-**Quand :** Il est pratique courante de copier-coller du code à partir de différents endroits d’un projet ou d’autres sources de code. Cette action rapide analyse les importations manquantes dans le code copié-collé et vous invite à les ajouter.
+**Quand :** Il est pratique courante de copier du code à partir de différents endroits d’un projet ou d’autres sources, puis de le coller dans le nouveau code. Cette action rapide recherche les instructions d’importation manquantes dans le code copié-collé et vous invite à les ajouter.
 
-**Pourquoi :** Les importations nécessaires étant ajoutées automatiquement, l’utilisateur n’a pas besoin de copier manuellement les instructions `using` requises.
+**Pourquoi :** Comme l’action rapide ajoute automatiquement les importations nécessaires, vous n’avez pas besoin de copier manuellement les instructions `using` nécessaires à votre code.
 
 ## <a name="generate-usings-refactoring"></a>Générer des instructions using (refactorisation)
 
-1. Copiez le code d’un autre fichier et collez-le sans inclure les instructions `using` nécessaires. L’erreur est désormais accompagnée d’un correctif de code qui ajoute les instructions `using` manquantes.
+1. Copiez le code d’un autre fichier et collez-le dans un nouveau fichier sans inclure les instructions `using` nécessaires. L’erreur qui s’affiche est accompagnée d’un correctif de code qui ajoute les instructions `using` manquantes.
 
     > [!NOTE] 
-    > Cette suggestion doit être activée dans **Outils > Options > Éditeur de texte > C# > Avancé > Directives Using**.
+    > Vous devez activer cette suggestion dans **Outils > Options > Éditeur de texte > C# > Avancé > Directives Using**.
 
-2. Appuyez sur **Ctrl**+**.** pour ouvrir le menu **Actions rapides et refactorisations**. 
+2. Sélectionnez Ctrl+. pour ouvrir le menu **Actions rapides et refactorisations**.
 
     ![Générer des instructions using](media/generate-using-codefix.png)
 

@@ -9,17 +9,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f9d3533f2eb6cfb5bc2e3a68370f48daa4acfc1e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 50e91c47ef848eda51fe71c9dce09cd1ea4893a8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938062"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106452"
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted"></a>La propriété &lt;nom de la propriété&gt; ne peut pas être supprimé.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 La propriété \<nom de propriété > ne peut pas être supprimé parce qu’elle est définie en tant que propriété de discriminateur pour l’héritage entre \<nom de la classe > et \<nom de la classe >  
   
  La propriété sélectionnée est définie comme **Propriété de discriminateur** pour l’héritage entre les classes indiquées dans le message d’erreur. Les propriétés ne peuvent pas être supprimées si elles participent à la configuration d'héritage entre des classes de données.  
@@ -28,11 +27,11 @@ La propriété \<nom de propriété > ne peut pas être supprimé parce qu’ell
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
-1.  Dans le Concepteur O/R, sélectionnez la ligne d'héritage qui connecte les classes de données indiquées dans le message d'erreur.  
+1. Dans le Concepteur O/R, sélectionnez la ligne d'héritage qui connecte les classes de données indiquées dans le message d'erreur.  
   
-2.  Affectez à **Propriété de discriminateur** une propriété différente.  
+2. Affectez à **Propriété de discriminateur** une propriété différente.  
   
-3.  Essayez une nouvelle fois de supprimer la propriété.  
+3. Essayez une nouvelle fois de supprimer la propriété.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Guide pratique pour Configurer l’héritage à l’aide du Concepteur O/R](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)   

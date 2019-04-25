@@ -60,12 +60,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 62efe11b7c640e228a3b4120259facec3b6f9d4a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a949f920fe956d1b0b3e7e9522d1b82e26a60168
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54794239"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077821"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Écriture de code dans l'éditeur de code et de texte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -122,17 +122,17 @@ L’éditeur Visual Studio fournit de nombreuses fonctionnalités facilitant l�
 
  ![Boutons de navigation Suivant et Précédent](../ide/media/vs2015-nav-buttons.png "VS2015_Nav_buttons")  
 
- Vous pouvez également utiliser la barre de défilement améliorée dans une fenêtre de code pour bénéficier d’une vue panoramique de votre code. En mode plan, vous pouvez afficher des aperçus du code lorsque vous déplacez le curseur de haut et vers le bas de la barre de défilement, pour plus d’informations, consultez [Comment : Suivre votre code en personnalisant la barre de défilement](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
+ Vous pouvez également utiliser la barre de défilement améliorée dans une fenêtre de code pour bénéficier d’une vue panoramique de votre code. En mode plan, vous pouvez afficher des aperçus du code lorsque vous déplacez le curseur de haut et vers le bas de la barre de défilement, pour plus d’informations, consultez [Comment : Suivre votre Code en personnalisant la barre de défilement](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md).  
 
  Les commandes suivantes sont des méthodes de navigation spécifiques au code :  
 
 |||  
 |-|-|  
 |Atteindre \<numéro de ligne>|(**Edition/Atteindre à** ou CTRL + G) : Déplacer vers un numéro de ligne spécifique dans le document actif.|  
-|Naviguer vers|(**Edition/Atteindre** ou CTRL +,) : Recherche un symbole ou un fichier dans la solution active. Cette commande vous aide à recueillir un ensemble approprié de correspondances à partir d’une requête. Vous pouvez rechercher des mots clés contenus dans un symbole en utilisant la casse mixte et des traits de soulignement pour diviser le symbole en mots clés.|  
-|Rechercher toutes les références|(menu contextuel) : recherche toutes les références à l’élément sélectionné dans la solution.|  
+|Boîte de dialogue Naviguer vers|(**Edition/Atteindre** ou CTRL +,) : Recherche un symbole ou un fichier dans la solution active. Cette commande vous aide à recueillir un ensemble approprié de correspondances à partir d’une requête. Vous pouvez rechercher des mots clés contenus dans un symbole en utilisant la casse mixte et des traits de soulignement pour diviser le symbole en mots clés.|  
+|Rechercher toutes les références|(menu contextuel) : Cette option permet de rechercher toutes les références à l’élément sélectionné dans la solution.|  
 |Atteindre la définition|(menu contextuel ou F12) : Recherche la définition de l’élément sélectionné.|  
-|Aperçu de la définition|(menu contextuel ou Alt + F12) : Recherche la définition de l’élément sélectionné et l’affiche dans une fenêtre contextuelle. Pour plus d’informations, consultez [Guide pratique pour afficher et modifier le code avec l’Aperçu de définition (Alt + F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).|  
+|Aperçu de définition|(menu contextuel ou Alt + F12) : Recherche la définition de l’élément sélectionné et l’affiche dans une fenêtre contextuelle. Pour plus d'informations, voir [Procédure : Afficher et modifier le Code à l’aide d’aperçu de définition (Alt + F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md).|  
 |Méthode suivante, Méthode précédente|(**Edition/Méthode suivante, Méthode précédente**) Dans des fichiers de code Visual Basic, utilisez ces commandes pour déplacer le point d’insertion entre les différentes méthodes.|  
 |Mise en surbrillance des références|Quand vous cliquez sur un symbole dans le code source, toutes les instances de ce symbole sont mises en surbrillance dans le document. Les symboles en surbrillance peuvent inclure des déclarations et des références, ainsi que de nombreux autres symboles pouvant être retournés par la fonctionnalité **Rechercher toutes les références** . Ceux-ci incluent les noms de classes, d’objets, de variables, de méthodes et de propriétés. Dans le code Visual Basic, les mots clés de nombreuses structures de contrôle sont également mis en surbrillance. Pour passer au symbole en surbrillance suivant ou précédent, appuyez sur Ctrl+Maj+Bas ou sur Ctrl+Maj+Haut. Vous pouvez modifier la couleur de mise en surbrillance dans **Outils/Options/Environnement/Polices et couleurs/Référence en surbrillance**.|  
 |Rechercher des informations relatives au code|Vous pouvez rechercher des informations sur un code spécifique, telles que les modifications et les auteurs de ces modifications, les références, les bogues, les éléments de travail, les révisions du code et l’état de test unitaire quand vous utilisez CodeLens dans l’éditeur de code. CodeLens fonctionne comme un afficheur d’alertes quand vous utilisez Visual Studio Enterprise avec Team Foundation Server. Consultez [Rechercher les modifications de code et d’autres historiques](../ide/find-code-changes-and-other-history-with-codelens.md).|  
@@ -171,10 +171,9 @@ La commande « Naviguer vers » de Visual Studio effectue une recherche de vot
     À mesure que vous tapez, les résultats s’affichent dans une liste déroulante sous la zone de texte.
 1. Pour accéder à un élément, sélectionnez-le dans la liste.
 
-
 ### <a name="filter-your-search"></a>Filtrer votre recherche
 
-Pour limiter votre recherche aux symboles de code, faites précéder la requête Naviguer vers d’un caractère "@". Par exemple, si vous recherchez `@application`, Naviguer vers affiche uniquement les classes qui contiennent le mot « application ».
+Pour limiter votre recherche aux symboles de code, faites précéder la requête naviguer vers avec un «\@» caractères. Par exemple, si vous recherchez `@application`, Naviguer vers affiche uniquement les classes qui contiennent le mot « application ».
 
 Si vous utilisez la casse mixte dans votre code, vous trouverez les éléments de code plus rapidement en entrant uniquement les majuscules du nom d’élément de code. Par exemple, si votre code a un composant nommé `ViewSwitcher`, vous pouvez le trouver en entrant simplement les majuscules du nom (`"VS"`) dans la fenêtre Naviguer vers.
 
@@ -183,51 +182,51 @@ Si vous utilisez la casse mixte dans votre code, vous trouverez les éléments d
 Cette fonctionnalité est particulièrement utile si votre code contient des noms longs.
 
 ## <a name="customize-the-editor"></a>Personnaliser l’éditeur  
- **Importation et exportation de paramètres**: vous pouvez partager des paramètres avec un autre développeur, rendre vos paramètres conformes à une norme ou rétablir les paramètres par défaut de Visual Studio à l’aide de la **Assistant Importation et exportation paramètres** sur le **Outils** menu. Vous pouvez modifier des paramètres généraux ou des paramètres spécifiques à un langage ou à un projet.  
+ **Importer et exporter les paramètres**: Vous pouvez partager des paramètres avec un autre développeur, rendre vos paramètres conformes à une norme ou rétablir les paramètres par défaut de Visual Studio à l’aide de la **Assistant Importation et exportation paramètres** sur le **outils** menu. Vous pouvez modifier des paramètres généraux ou des paramètres spécifiques à un langage ou à un projet.  
 
  **Configuration du clavier**: Vous pouvez définir de nouvelles touches d’accès rapide ou redéfinir les touches existantes dans les paramètres Outils/Options/environnement/clavier. Pour plus d’informations sur les touches d’accès rapide, consultez [Raccourcis clavier par défaut](../ide/default-keyboard-shortcuts-in-visual-studio.md).  
 
  Pour plus d’informations sur les options d’éditeur spécifiques au langage, consultez les rubriques suivantes :  
 
--   [Paramètres de Visual Basic](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
+- [Paramètres de Visual Basic](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
 
--   [Utilisation de l’environnement de développement Visual Studio pour C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
+- [Utilisation de l’environnement de développement Visual Studio pour C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
 
--   [Options, Éditeur de texte, JavaScript, Mise en forme](../ide/reference/options-text-editor-javascript-formatting.md)  
+- [Options, Éditeur de texte, JavaScript, Mise en forme](../ide/reference/options-text-editor-javascript-formatting.md)  
 
 ## <a name="in-this-section"></a>Dans cette section  
 
--   [Recherche et remplacement de texte](../ide/finding-and-replacing-text.md)  
+- [Recherche et remplacement de texte](../ide/finding-and-replacing-text.md)  
 
--   [Encodages et sauts de ligne](../ide/encodings-and-line-breaks.md)  
+- [Encodages et sauts de ligne](../ide/encodings-and-line-breaks.md)  
 
--   [Mode Plan](../ide/outlining.md)  
+- [Mode Plan](../ide/outlining.md)  
 
--   [Refactorisation](../ide/refactoring-in-visual-studio.md)  
+- [Refactorisation](../ide/refactoring-in-visual-studio.md)  
 
--   [Conseils de productivité](../ide/productivity-tips-for-visual-studio.md)  
+- [Conseils de productivité](../ide/productivity-tips-for-visual-studio.md)  
 
--   [Utilisation de la fonctionnalité IntelliSense](../ide/using-intellisense.md)  
+- [Utilisation de la fonctionnalité IntelliSense](../ide/using-intellisense.md)  
 
--   [Personnalisation de l’éditeur](../ide/customizing-the-editor.md)  
+- [Personnalisation de l’éditeur](../ide/customizing-the-editor.md)  
 
--   [Guide pratique pour suivre votre code en personnalisant la barre de défilement](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
+- [Guide pratique pour suivre votre code en personnalisant la barre de défilement](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
 
--   [Guide pratique pour afficher et modifier le code avec l’Aperçu de définition (Alt + F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
+- [Guide pratique pour afficher et modifier le code avec l’Aperçu de définition (Alt + F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
 
--   [Effectuer des actions rapides avec des ampoules](../ide/perform-quick-actions-with-light-bulbs.md)  
+- [Effectuer des actions rapides avec des ampoules](../ide/perform-quick-actions-with-light-bulbs.md)  
 
--   [Extraits de code](../ide/code-snippets.md)  
+- [Extraits de code](../ide/code-snippets.md)  
 
--   [Utilisation de la boîte à outils](../ide/using-the-toolbox.md)  
+- [Utilisation de la boîte à outils](../ide/using-the-toolbox.md)  
 
--   [Affichage de la structure du code](../ide/viewing-the-structure-of-code.md)  
+- [Affichage de la structure du code](../ide/viewing-the-structure-of-code.md)  
 
--   [Définition de signets dans le code](../ide/setting-bookmarks-in-code.md)  
+- [Définition de signets dans le code](../ide/setting-bookmarks-in-code.md)  
 
--   [Utilisation de la liste des tâches](../ide/using-the-task-list.md)  
+- [Utilisation de la liste des tâches](../ide/using-the-task-list.md)  
 
--   [Rechercher les modifications de code et d’autres historiques](../ide/find-code-changes-and-other-history-with-codelens.md)  
+- [Rechercher les modifications de code et d’autres historiques](../ide/find-code-changes-and-other-history-with-codelens.md)  
 
 ## <a name="see-also"></a>Voir aussi  
  [IDE Visual Studio](../ide/visual-studio-ide.md)

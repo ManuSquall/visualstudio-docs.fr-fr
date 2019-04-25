@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fe676731170b0e643e00b1ab5e10aa768f256434
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: 8b4c763ff31c6c62a177c77f8886f1de305a5170
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526358"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097321"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Découvrez des conseils de productivité et des astuces pour le débogueur dans Visual Studio
 
@@ -31,7 +31,7 @@ Si vous survolez fréquemment des bulles d’informations pendant le débogage, 
 
 ![L’épinglage d’une bulle](../debugger/media/dbg-tips-data-tips-pinned.png "PinningDataTip")
 
-## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>Modifiez votre code et continuer le débogage (C#, VB, C++)
+## <a name="edit-your-code-and-continue-debugging-c-vb-c"></a>Modifiez votre code et continuer le débogage (c#, VB, C++)
 
 Dans la plupart des langages pris en charge par Visual Studio, vous pouvez modifier votre code au milieu d’une session de débogage et continuer le débogage. Pour utiliser cette fonctionnalité, cliquez sur dans votre code avec votre curseur pendant la suspension dans le débogueur, vérifiez les modifications, puis appuyez sur **F5**, **F10**, ou **F11** pour continuer le débogage.
 
@@ -53,6 +53,10 @@ S’il est difficile ou du temps recréer un état particulier dans votre applic
 
 3. Si vous êtes intéressé par un autre type de condition, sélectionnez **filtre** au lieu de **expression conditionnelle** dans le **les paramètres de point d’arrêt** boîte de dialogue, puis suivez les conseils de filtre.
 
+## <a name="configure-the-data-to-show-in-the-debugger"></a>Configurer les données à afficher dans le débogueur
+
+Pour C#, Visual Basic, et C++ (C++code /CLI uniquement), vous pouvez demander au débogueur que les informations à afficher à l’aide de la [DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md) attribut. Pour C++ code, vous pouvez effectuer la même utilisation [visualisations Natvis](create-custom-views-of-native-objects.md).
+
 ## <a name="change-the-execution-flow"></a>Changer le flux d’exécution
 
 Avec le débogueur en pause sur une ligne de code, utilisez la souris pour obtenir le pointeur de la flèche jaune à gauche. Déplacez le pointeur de la flèche jaune vers un autre point dans le chemin d’accès de l’exécution de code. Puis vous utilisez F5 ou une commande d’étape pour poursuivre l’exécution de l’application.
@@ -64,23 +68,23 @@ En changeant le flux d’exécution, vous pouvez effectuer des opérations comme
 > [!WARNING]
 > Vous devez rester prudent avec cette fonctionnalité, vous pouvez voir un avertissement dans l’info-bulle. Vous pouvez aussi en voir d’autres. Déplacer le pointeur ne peut pas rétablir votre application à un état antérieur de l’application.
 
-## <a name="track-an-out-of-scope-object-c-visual-basic"></a>Suivre un objet hors de portée (C#, Visual Basic)
+## <a name="track-an-out-of-scope-object-c-visual-basic"></a>Suivre un objet hors de portée (c#, Visual Basic)
 
 Il est facile d’afficher des variables à l’aide des fenêtres du débogueur, comme le **espion** fenêtre. Toutefois, quand une variable est hors de portée dans le **espion** fenêtre, vous pouvez remarquer qu’il est grisé. Dans certains scénarios d’application, la valeur d’une variable peut changer même lorsque la variable est hors de portée, et vous pouvez souhaiter surveiller de près (par exemple, une variable peut obtenir la garbage collection). Vous pouvez suivre la variable en créant un ID d’objet pour celui-ci dans le **espion** fenêtre.
 
 #### <a name="to-create-an-object-id"></a>Pour créer un ID d’objet
 
-1.  Définissez un point d’arrêt quasi une variable que vous souhaitez suivre.
+1. Définissez un point d’arrêt quasi une variable que vous souhaitez suivre.
 
-2.  Démarrez le débogueur (**F5**) et arrêtez sur le point d’arrêt.
+2. Démarrez le débogueur (**F5**) et arrêtez sur le point d’arrêt.
 
 3. Recherchez la variable dans le **variables locales** fenêtre (**Déboguer > Windows > variables locales**), avec le bouton droit de la variable, puis sélectionnez **Make Object ID**.
 
     ![Créer un ID d’objet](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
 
-4.  Le symbole **$** et un nombre s’affichent alors dans la fenêtre **Variables locales** . Cette variable est l’ID d’objet.
+4. Le symbole **$** et un nombre s’affichent alors dans la fenêtre **Variables locales** . Cette variable est l’ID d’objet.
 
-5.  Avec le bouton droit de la variable d’ID objet et choisissez **ajouter un espion**.
+5. Avec le bouton droit de la variable d’ID objet et choisissez **ajouter un espion**.
 
 Pour plus d’informations, consultez [créer un ID d’objet](../debugger/watch-and-quickwatch-windows.md#bkmk_objectIds).
 
@@ -106,7 +110,7 @@ Un visualiseur de chaîne peut-être vous aider à déterminer si une chaîne es
 
 ![Visualiseur de chaîne JSON](../debugger/media/dbg-tips-string-visualizer-json.png "JSONStringVisualizer")
 
-Pour d’autres types tels que les objets WPF qui s’affichent dans les fenêtres du débogueur, vous pouvez également ouvrir des visualiseurs.
+Pour d’autres types tels que les objets DataSet et DataTable qui s’affichent dans les fenêtres du débogueur, vous pouvez également ouvrir un visualiseur intégré.
 
 ## <a name="break-into-code-on-handled-exceptions"></a>Diviser en code géré d’exceptions
 
@@ -122,13 +126,13 @@ Si vous avez besoin de déboguer les types de problèmes qui sont communes aux a
 
 #### <a name="to-show-threads-in-your-source-code"></a>Pour afficher les threads dans votre code source
 
-1.  Pendant le débogage, cliquez sur le **afficher les Threads dans la Source** bouton ![afficher les Threads dans la Source](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") dans le **déboguer** barre d’outils.
+1. Pendant le débogage, cliquez sur le **afficher les Threads dans la Source** bouton ![afficher les Threads dans la Source](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") dans le **déboguer** barre d’outils.
 
-2.  Examinez la reliure située sur le côté gauche de la fenêtre. Sur cette ligne, vous voyez un *marqueur de thread* icône ![marqueur de Thread](../debugger/media/dbg-thread-marker.png "ThreadMarker") qui ressemble à deux threads de maillage. Le marqueur de thread indique qu'un thread est interrompu à cet emplacement.
+2. Examinez la reliure située sur le côté gauche de la fenêtre. Sur cette ligne, vous voyez un *marqueur de thread* icône ![marqueur de Thread](../debugger/media/dbg-thread-marker.png "ThreadMarker") qui ressemble à deux threads de maillage. Le marqueur de thread indique qu'un thread est interrompu à cet emplacement.
 
     Notez qu’un marqueur de thread peut être partiellement masqué par un point d’arrêt.
 
-3.  Placez le pointeur sur le marqueur de thread. Un DataTip apparaît. Le DataTip vous indique le nom et le numéro d'ID de thread de chaque thread interrompu.
+3. Placez le pointeur sur le marqueur de thread. Un DataTip apparaît. Le DataTip vous indique le nom et le numéro d'ID de thread de chaque thread interrompu.
 
     Vous pouvez également afficher l’emplacement de threads dans le [fenêtre Piles parallèles](../debugger/get-started-debugging-multithreaded-apps.md).
 

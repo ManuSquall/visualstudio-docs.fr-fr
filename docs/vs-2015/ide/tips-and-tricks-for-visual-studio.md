@@ -1,5 +1,5 @@
 ---
-title: Trucs et astuces | Microsoft Docs
+title: Conseils et astuces │ Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,36 +9,36 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6eb3e77c8d84f7603828c39b637bb49a8310a269
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 24c876edafaee848a050099fdb031f4637436f22
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54771177"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096567"
 ---
 # <a name="tips-and-tricks-for-visual-studio"></a>Conseils et astuces pour Visual Studio
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez naviguer dans Visual Studio plus facilement en utilisant les raccourcis indiqués dans cette rubrique. Pour plus d’informations générales, consultez [raccourcis clavier dans Visual Studio](default-keyboard-shortcuts-in-visual-studio.md). Pour plus d’informations sur l’optimisation de Visual Studio pour l’accessibilité, consultez [Conseils et astuces d’accessibilité](../ide/reference/accessibility-tips-and-tricks.md).
+Vous pouvez naviguer dans Visual Studio plus facilement en utilisant les raccourcis indiqués dans cette rubrique. Pour des informations plus générales, consultez [Raccourcis clavier dans Visual Studio](default-keyboard-shortcuts-in-visual-studio.md). Pour plus d’informations sur l’optimisation de Visual Studio pour l’accessibilité, consultez [Conseils et astuces d’accessibilité](../ide/reference/accessibility-tips-and-tricks.md).
 
--   [Gestion des fenêtres](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowMgmt)
+- [Gestion des fenêtres](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowMgmt)
 
--   [Raccourcis de fenêtre](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowShortcuts)
+- [Raccourcis de fenêtre](../ide/tips-and-tricks-for-visual-studio.md#BKMK_WindowShortcuts)
 
--   [Recherche Visual Studio](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Search)
+- [Recherche Visual Studio](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Search)
 
--   [Éditeur de recherche](../ide/tips-and-tricks-for-visual-studio.md#BKMK_EditorFind)
+- [Éditeur de recherche](../ide/tips-and-tricks-for-visual-studio.md#BKMK_EditorFind)
 
--   [Éditeur de code](../ide/tips-and-tricks-for-visual-studio.md#BKMK_CodeEditor)
+- [Éditeur de code](../ide/tips-and-tricks-for-visual-studio.md#BKMK_CodeEditor)
 
--   [Barres d’outils](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Toolbars)
+- [Barres d’outils](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Toolbars)
 
--   [Débogage](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Debugging)
+- [Débogage](../ide/tips-and-tricks-for-visual-studio.md#BKMK_Debugging)
 
--   [Gestion du cycle de vie des applications](../ide/tips-and-tricks-for-visual-studio.md#BKMK_ALM)
+- [Gestion du cycle de vie des applications](../ide/tips-and-tricks-for-visual-studio.md#BKMK_ALM)
 
-##  <a name="BKMK_WindowMgmt"></a> Gestion des fenêtres
+## <a name="BKMK_WindowMgmt"></a> Gestion des fenêtres
 
 |||
 |-|-|
@@ -49,7 +49,7 @@ Vous pouvez naviguer dans Visual Studio plus facilement en utilisant les raccour
 |Afficher la liste des fichiers ouverts|Ctrl+Alt+Bas|
 |Afficher toutes les fenêtres flottantes|Ctrl+Maj+M|
 
-##  <a name="BKMK_WindowShortcuts"></a> Raccourcis de fenêtre
+## <a name="BKMK_WindowShortcuts"></a> Raccourcis de fenêtre
 
 |||
 |-|-|
@@ -59,7 +59,7 @@ Vous pouvez naviguer dans Visual Studio plus facilement en utilisant les raccour
 |Démarrer une nouvelle instance|Win+Maj+n|
 |Basculer entre les fenêtres|Win+n|
 
-##  <a name="BKMK_Search"></a> Recherche Visual Studio
+## <a name="BKMK_Search"></a> Recherche Visual Studio
 
 |||
 |-|-|
@@ -69,7 +69,7 @@ Vous pouvez naviguer dans Visual Studio plus facilement en utilisant les raccour
 |Résultats de la portée de lancement rapide|-   @opt Options<br />-   @cmd Commandes<br />-   @mru Utilisé récemment<br />-   @doc Ouvrir les documents|
 |Rechercher dans les options d'outils|Ctrl+E|
 
-##  <a name="BKMK_EditorFind"></a> Éditeur de recherche
+## <a name="BKMK_EditorFind"></a> Éditeur de recherche
 
 |||
 |-|-|
@@ -84,7 +84,7 @@ Vous pouvez naviguer dans Visual Studio plus facilement en utilisant les raccour
 |Rechercher dans les fichiers|Ctrl+Maj+F|
 |Remplacer dans les fichiers|Ctrl+Maj+H|
 
-##  <a name="BKMK_CodeEditor"></a> Éditeur de code
+## <a name="BKMK_CodeEditor"></a> Éditeur de code
 
 |||
 |-|-|
@@ -109,7 +109,7 @@ Vous pouvez naviguer dans Visual Studio plus facilement en utilisant les raccour
 |Naviguer entre plusieurs résultats d'aperçu de définition|F8 et Maj+F8|
 |Permuter entre la fenêtre de l'éditeur de code et la fenêtre Aperçu de définition|Maj+Échap|
 
-##  <a name="BKMK_Toolbars"></a> Barres d’outils
+## <a name="BKMK_Toolbars"></a> Barres d’outils
 
 |||
 |-|-|
@@ -118,7 +118,7 @@ Vous pouvez naviguer dans Visual Studio plus facilement en utilisant les raccour
 |Mode commande de zone de texte de recherche|Tapez « > »|
 |Créer un alias|>alias de commande NewAlias|
 
-##  <a name="BKMK_Debugging"></a> Débogage
+## <a name="BKMK_Debugging"></a> Débogage
 
 |||
 |-|-|
@@ -137,7 +137,7 @@ Vous pouvez naviguer dans Visual Studio plus facilement en utilisant les raccour
 |Fenêtre Exécution - Vider la mémoire tampon|>cls|
 |Fenêtre Exécution - Valeur d'impression|?varname|
 
-##  <a name="BKMK_ALM"></a> Gestion du cycle de vie des applications
+## <a name="BKMK_ALM"></a> Gestion du cycle de vie des applications
 
 Consultez [Raccourcis clavier : Visual Studio Online, portail web TFS et Team Explorer](/azure/devops/project/navigation/keyboard-shortcuts?view=vsts).
 

@@ -10,12 +10,12 @@ ms.assetid: 2d259f60-2cd7-460e-b02d-24a8fb202850
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9988e28482f1ed1174658cc9e016fa0eb2f153b6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bbd7eaa37ba54757b4073f164b47e46a7d665267
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947804"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074399"
 ---
 # <a name="expression-evaluation-interfaces"></a>Interfaces d’évaluation des expressions
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ ms.locfileid: "58947804"
   
  Chaque interface dans le tableau affiche le composant que vous pouvez l’implémenter dans la liste suivante :  
   
--   Déboguer le moteur (DE)  
+- Déboguer le moteur (DE)  
   
--   Évaluateur d’expression (EE)  
+- Évaluateur d’expression (EE)  
   
--   Visual Studio (VS)  
+- Visual Studio (VS)  
   
 |Interface|Implémenté par|Description|  
 |---------------|--------------------|-----------------|  

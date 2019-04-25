@@ -8,20 +8,20 @@ ms.assetid: de10dabb-02ed-403b-9e6f-0b735524988c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 555b3714dffa69e79d0c0e57effaa3e294905709
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 094402a8d3951b329385a27d6524452570183244
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932575"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785895"
 ---
 # <a name="load-test-run-settings-properties"></a>Propriétés des paramètres d’exécution des tests de charge
 
-Les paramètres d’exécution d’un test de charge déterminent divers autres paramètres, y compris la durée du test, le niveau de détail de collection des résultats et les ensembles de compteurs collectés lors de l’exécution du test. Vous pouvez créer et stocker plusieurs paramètres d'exécution pour chaque test de charge, puis sélectionner un paramètre particulier à utiliser lors de l'exécution du test. Un paramètre d'exécution initial est ajouté à votre test de charge lorsque vous créez ce dernier à l'aide de l'**Assistant Nouveau test de charge**.
+Les paramètres d'exécution d'un test de charge déterminent divers autres paramètres, y compris la durée du test, le niveau de détail de collecte des résultats et les ensembles de compteurs collectés lors de l'exécution du test. Vous pouvez créer et stocker plusieurs paramètres d'exécution pour chaque test de charge, puis sélectionner un paramètre particulier à utiliser lors de l'exécution du test. Un paramètre d'exécution initial est ajouté à votre test de charge lorsque vous créez ce dernier à l'aide de l'**Assistant Nouveau test de charge**.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-Les tableaux suivants décrivent les différentes propriétés des paramètres d'exécution du test de charge. Vous pouvez modifier ces propriétés pour répondre aux exigences des test de charge spécifiques.
+Les tableaux suivants décrivent les différentes propriétés des paramètres d'exécution du test de charge. Vous pouvez modifier ces propriétés pour répondre aux besoins des test de charge spécifiques.
 
 Pour plus d’informations, consultez [Configurer les paramètres d’exécution des tests de charge](../test/configure-load-test-run-settings.md).
 
@@ -35,7 +35,7 @@ Pour plus d’informations, consultez [Configurer les paramètres d’exécution
 |**Nombre maximal de violations de seuils**|Le nombre maximum de violations de seuil à enregistrer pour ce test de charge.<br /><br /> Vous pouvez augmenter ce nombre si nécessaire, mais cela augmentera également la taille et le temps de traitement du résultat de test de charge.|
 |**Exécuter des tests unitaires dans le domaine d’application**|Valeur booléenne déterminant si chaque assembly de test unitaire s'exécute dans un domaine d'application séparé lorsque le test de charge contient des tests unitaires. Le paramètre par défaut est True.<br /><br /> Si vos tests unitaires ne requièrent pas un fichier app.config ou un domaine d'application distinct pour fonctionner correctement, vos tests unitaires peuvent s'exécuter plus vite si cette propriété a la valeur `False`.|
 |**Name**|Nom du paramètre d’exécution tel qu’il apparaît dans le nœud **Paramètres d’exécution** de **l’éditeur de test de charge**.|
-|**Niveau de validation**|Définit le niveau le plus élevé de règle de validation qui s’exécutera dans un test de charge. Les règles de validation sont associées aux requêtes de tests de performances web. Chaque règle de validation a un niveau de validation associé : **Haut**, **Moyen** ou **Bas**. Ce paramètre de série de tests de charge spécifie les règles de validation qui s’exécuteront pendant que le test de performances web est exécuté dans le test de charge. Par exemple, si ce paramètre d’exécution a la valeur **Moyen**, toutes les règles de validation marquées avec la valeur **Moyen** ou **Bas** sont exécutées.|
+|**Niveau de validation**|Définit le niveau le plus élevé de règle de validation qui s'exécutera dans un test de charge. Les règles de validation sont associées aux requêtes de tests de performances web. Chaque règle de validation a un niveau de validation associé : **Haut**, **Moyen** ou **Bas**. Ce paramètre de série de tests de charge spécifie les règles de validation qui s’exécuteront pendant que le test de performances web est exécuté dans le test de charge. Par exemple, si ce paramètre d’exécution a la valeur **Moyen**, toutes les règles de validation marquées avec la valeur **Moyen** ou **Bas** sont exécutées.|
 
 ## <a name="logging-properties"></a>Propriétés de journalisation
 
@@ -52,7 +52,7 @@ Pour plus d’informations, consultez [Configurer les paramètres d’exécution
 |Property|Définition|
 |-|----------------|
 |**Type de stockage**|Mode de stockage des compteurs de performance obtenus dans un test de charge. Les options sont les suivantes :<br /><br /> -   **Base de données** : nécessite une base de données SQL avec un **magasin des résultats des tests de charge**.<br />-   **Aucune**.|
-|**Stockage des détails de minuterie**|Utilisé pour déterminer les détails qui seront stockés dans le **magasin des résultats des tests de charge**. Trois valeurs sont disponibles :<br /><br /> -   **AllIndividualDetails** : Collecter et stocker des valeurs de minuterie pour chaque test, transaction et page exécutée (ou publiée) durant le test de charge dans le **magasin des résultats des tests de charge**. C'est obligatoire si vous prévoyez d'utiliser le **graphique d'activités des utilisateurs virtuels** dans l'**analyseur de test de charge**.<br />     Pour plus d’informations, voir [Analyser l’activité des utilisateurs virtuels dans la vue Détails](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).<br />-   **Aucune** : Ne collecter aucune valeur de minuterie. Il s’agit de la valeur par défaut pour Visual Studio 2013 Update 4 et ses mises en production ultérieures.<br />-   **StatisticsOnly** : Collecter et stocker uniquement les statistiques au lieu de stocker les valeurs de minuterie pour chaque test, transaction et page exécutée (ou publiée) durant le test de charge dans le **magasin des résultats des tests de charge**.<br /><br /> Pour plus d'informations, voir [Procédure : spécifier la propriété de stockage des détails de minuterie](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).|
+|**Stockage des détails de minuterie**|Utilisé pour déterminer les détails qui seront stockés dans le **magasin des résultats des tests de charge**. Trois valeurs sont disponibles :<br /><br /> -   **AllIndividualDetails** : Collecter et stocker des valeurs de minuterie pour chaque test, transaction et page exécutée (ou publiée) durant le test de charge dans le **magasin des résultats des tests de charge**. C'est obligatoire si vous prévoyez d'utiliser le **graphique d'activités des utilisateurs virtuels** dans l'**analyseur de test de charge**.<br />     Pour plus d’informations, voir [Analyser l’activité des utilisateurs virtuels dans la vue Détails](../test/analyze-load-test-virtual-user-activity-in-the-details-view.md).<br />-   **Aucune** : Ne collecter aucune valeur de minuterie. Il s'agit de la valeur par défaut pour Visual Studio 2013 Update 4 et ses éditions ultérieures.<br />-   **StatisticsOnly** : Collecter et stocker uniquement les statistiques au lieu de stocker les valeurs de minuterie pour chaque test, transaction et page exécutée (ou publiée) durant le test de charge dans le **magasin des résultats des tests de charge**.<br /><br /> Pour plus d'informations, voir [Procédure : spécifier la propriété de stockage des détails de minuterie](../test/how-to-specify-the-timing-details-storage-property-for-a-load-test.md).|
 
 ## <a name="sql-tracing-properties"></a>Propriétés de traçage SQL
 
@@ -85,30 +85,30 @@ Pour plus d’informations, consultez [Configurer les paramètres d’exécution
 
 |Property|Définition|
 |-|----------------|
-|**Modèle de connexion WebTest**|Contrôle l’utilisation des connexions de l’agent de test de charge vers le serveur web pour les tests de performances web exécutés dans un test de charge. Trois options de modèle de connexion de test de performances web sont disponibles :<br /><br /> - Le modèle **Connexion par utilisateur** simule le comportement d’un utilisateur qui utilise un vrai navigateur. Lorsque le navigateur Internet Explorer 6 ou Internet Explorer 7 est simulé, chaque utilisateur virtuel qui exécute un test de performances web utilise une ou deux connexions dédiées au serveur web. La première connexion est établie lorsque la première requête du test de performances web est émise. Une deuxième connexion peut être utilisée lorsqu'une page contient plusieurs demandes dépendantes. Ces requêtes sont émises en parallèle à l'aide des deux connexions. Ces connexions sont réutilisées pour les requêtes suivantes dans le test de performances web. Les connexions sont fermées lorsque le test de performances web se termine. Un inconvénient de ce modèle est que le nombre de connexions qui est maintenu ouvert sur l'ordinateur agent peut être supérieur (jusqu'à deux fois la charge utilisateur). Par conséquent, les ressources requises pour prendre en charge ce nombre élevé de connexions peuvent limiter la charge utilisateur qui peut être pilotée à partir d'un agent de test de charge unique. Lorsque le navigateur Internet Explorer 8 est simulé, six connexions simultanées sont prises en charge.<br />- Le modèle **Pool de connexions** conserve les ressources sur l’agent de test de charge en répartissant les connexions au serveur web parmi plusieurs utilisateurs de test de performances web virtuels. Si la charge d'utilisateur est plus grande que la taille du pool de connexions, les tests de performances web exécutés par différents utilisateurs virtuels partagent une connexion. Cela signifie qu'un test de performances de site web peut devoir attendre avant d'émettre une requête lorsqu'un autre test de performances web utilise la connexion. La durée moyenne pendant laquelle un test de performances web attend avant d'envoyer une requête est suivie par le compteur de performance de test de charge "Durée d'attente moyenne d'une connexion". Ce nombre doit être inférieur au temps de réponse moyen d'une page. Si ce n'est pas le cas, la taille du pool de connexions est sans doute trop petite.<br />- Le modèle **Connexion par itération de test** spécifie l’utilisation de connexions dédiées pour chaque itération de test.|
-|**Taille du pool de connexions WebTest**|Spécifie le nombre maximal de connexions à établir entre l’agent de test de charge et le serveur web. Cela s’applique uniquement au modèle **Pool de connexions**.|
+|**Modèle de connexion WebTest**|Contrôle l’utilisation des connexions de l’agent de test de charge vers le serveur web pour les tests de performances web exécutés dans un test de charge. Trois options de modèle de connexion de test de performances web sont disponibles :<br /><br /> - Le modèle **Connexion par utilisateur** simule le comportement d’un utilisateur qui utilise un vrai navigateur. Lorsque le navigateur Internet Explorer 6 ou Internet Explorer 7 est simulé, chaque utilisateur virtuel qui exécute un test de performances web utilise une ou deux connexions dédiées au serveur web. La première connexion est établie lorsque la première requête du test de performances web est émise. Une deuxième connexion peut être utilisée lorsqu'une page contient plusieurs demandes dépendantes. Ces requêtes sont émises en parallèle à l'aide des deux connexions. Ces connexions sont réutilisées pour les requêtes suivantes dans le test de performances web. Les connexions sont fermées lorsque le test de performances web se termine. Un inconvénient de ce modèle est que le nombre de connexions qui est maintenu ouvert sur l'ordinateur agent peut être supérieur (jusqu'à deux fois la charge utilisateur). Par conséquent, les ressources requises pour prendre en charge ce nombre élevé de connexions peuvent limiter la charge utilisateur qui peut être pilotée à partir d’un agent de test de charge unique. Lorsque le navigateur Internet Explorer 8 est simulé, six connexions simultanées sont prises en charge.<br />- Le modèle **Pool de connexions** conserve les ressources sur l’agent de test de charge en répartissant les connexions au serveur web parmi plusieurs utilisateurs de test de performances web virtuels. Si la charge d'utilisateur est plus grande que la taille du pool de connexions, les tests de performances web exécutés par différents utilisateurs virtuels partagent une connexion. Cela signifie qu'un test de performances de site web peut devoir attendre avant d'émettre une requête lorsqu'un autre test de performances web utilise la connexion. La durée moyenne pendant laquelle un test de performances web attend avant d'envoyer une requête est suivie par le compteur de performance de test de charge "Durée d'attente moyenne d'une connexion". Ce nombre doit être inférieur au temps de réponse moyen d'une page. Si ce n'est pas le cas, la taille du pool de connexions est sans doute trop petite.<br />- Le modèle **Connexion par itération de test** spécifie l’utilisation de connexions dédiées pour chaque itération de test.|
+|**Taille du pool de connexions WebTest**|Spécifie le nombre maximal de connexions à établir entre l'agent de test de charge et le serveur web. Cela s’applique uniquement au modèle **Pool de connexions**.|
 
-##  <a name="change-run-setting-properties"></a>Changer les propriétés des paramètres d’exécution
+## <a name="change-run-setting-properties"></a>Changer les propriétés des paramètres d’exécution
  Vous pouvez ajouter davantage de paramètres d'exécution à votre test de charge avec divers paramètres de propriété afin de pouvoir exécuter le test de charge dans différentes conditions, par exemple, vous pouvez ajouter un nouveau paramètre de test et utiliser un taux d'échantillonnage distinct, ou vous pouvez spécifier une plus longue durée d'exécution. Vous ne pouvez utiliser qu'un seul paramètre d'exécution à la fois et vous devez spécifier le paramètre d'exécution à utiliser en le marquant comme actif. Pour voir un exemple, consultez [Comment : sélectionner le paramètre d’exécution active d’un test de charge](../test/how-to-select-the-active-run-setting-for-a-load-test.md).
 
 ### <a name="to-change-run-settings"></a>Pour modifier les paramètres d'exécution
 
-1.  Ouvrez un test de charge.
+1. Ouvrez un test de charge.
 
-2.  Développez le dossier **Paramètres d’exécution**.
+2. Développez le dossier **Paramètres d’exécution**.
 
-3.  Choisissez un nœud **Paramètres d’exécution**.
+3. Choisissez un nœud **Paramètres d’exécution**.
 
-4.  Dans le menu **Affichage**, choisissez **Fenêtre Propriétés**.
+4. Dans le menu **Affichage**, choisissez **Fenêtre Propriétés**.
 
      La **Fenêtre Propriétés** s’affiche ainsi que les propriétés du paramètre d’exécution sélectionné.
 
-5.  Utilisez la **Fenêtre Propriétés** pour changer les paramètres d’exécution. Par exemple, remplacez la durée d’exécution par **00:05:00** pour exécuter votre test pendant cinq minutes.
+5. Utilisez la **Fenêtre Propriétés** pour changer les paramètres d’exécution. Par exemple, remplacez la durée d’exécution par **00:05:00** pour exécuter votre test pendant cinq minutes.
 
     > [!NOTE]
     > Pour obtenir une liste complète des propriétés de paramètres d’exécution et leurs descriptions, consultez [Propriétés des paramètres d’exécution pour le test de charge](../test/load-test-run-settings-properties.md).
 
-6.  Lorsque vous terminez les modifications des propriétés, enregistrez votre test de charge. Dans le menu **Fichier**, choisissez **Enregistrer**.
+6. Lorsque vous terminez les modifications des propriétés, enregistrez votre test de charge. Dans le menu **Fichier**, choisissez **Enregistrer**.
 
 > [!NOTE]
 > Les mappages des ensembles de compteurs font également partie des paramètres d'exécution. Pour plus d’informations, consultez [Spécifier les ensembles de compteurs et des règles de seuil pour les ordinateurs dans un test de charge](../test/specify-counter-sets-and-threshold-rules-for-load-testing.md).

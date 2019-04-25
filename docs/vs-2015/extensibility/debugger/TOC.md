@@ -128,4 +128,3 @@
 ### [Champ m_objectIdForDebugger](asyncvoidmethodbuilder-m-objectidfordebugger-field.md)
 # [Référence](reference/reference-visual-studio-debugging-apis.md)
 # [Exemples](visual-studio-debugging-samples.md)
-

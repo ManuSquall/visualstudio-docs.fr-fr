@@ -14,12 +14,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c40db5b1639112bb95c0859da63705afcd9a3411
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f85f810d5ef6a97af4df6a03a0972a87ca60a49d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58148865"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065231"
 ---
 # <a name="debug-property-interfaces"></a>Débogage, interfaces de propriété
 Le fichier d’en-tête DbgProp.h fournit les interfaces répertoriées dans cette section.  
@@ -27,24 +27,24 @@ Le fichier d’en-tête DbgProp.h fournit les interfaces répertoriées dans cet
 ## <a name="in-this-section"></a>Dans cette section  
  Les interfaces, structures et énumérations suivantes décrivent les propriétés hiérarchiques de l’application en cours de débogage :  
   
--   [Interface IDebugProperty](../../winscript/reference/idebugproperty-interface.md)  
+- [Interface IDebugProperty](../../winscript/reference/idebugproperty-interface.md)  
   
--   [Interface IDebugExtendedProperty](../../winscript/reference/idebugextendedproperty-interface.md)  
+- [Interface IDebugExtendedProperty](../../winscript/reference/idebugextendedproperty-interface.md)  
   
--   [Interface IEnumDebugPropertyInfo](../../winscript/reference/ienumdebugpropertyinfo-interface.md)  
+- [Interface IEnumDebugPropertyInfo](../../winscript/reference/ienumdebugpropertyinfo-interface.md)  
   
--   [Interface IEnumDebugExtendedPropertyInfo](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)  
+- [Interface IEnumDebugExtendedPropertyInfo](../../winscript/reference/ienumdebugextendedpropertyinfo-interface.md)  
   
--   [Interface 1 IPerPropertyBrowsing2](../../winscript/reference/iperpropertybrowsing2-interface-1.md)  
+- [Interface 1 IPerPropertyBrowsing2](../../winscript/reference/iperpropertybrowsing2-interface-1.md)  
   
--   [Interface IDebugPropertyEnumType_All](../../winscript/reference/idebugpropertyenumtype-all-interface.md)  
+- [Interface IDebugPropertyEnumType_All](../../winscript/reference/idebugpropertyenumtype-all-interface.md)  
   
--   [Structure DebugPropertyInfo](../../winscript/reference/debugpropertyinfo-structure.md)  
+- [Structure DebugPropertyInfo](../../winscript/reference/debugpropertyinfo-structure.md)  
   
--   [Structure ExtendedDebugPropertyInfo](../../winscript/reference/extendeddebugpropertyinfo-structure.md)  
+- [Structure ExtendedDebugPropertyInfo](../../winscript/reference/extendeddebugpropertyinfo-structure.md)  
   
--   [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)  
+- [DBGPROP_ATTRIB_FLAGS](../../winscript/reference/dbgprop-attrib-flags.md)  
   
--   [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)  
+- [DBGPROP_INFO_FLAGS](../../winscript/reference/dbgprop-info-flags.md)  
   
--   [EX_DBGPROP_INFO_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)
+- [EX_DBGPROP_INFO_FLAGS](../../winscript/reference/ex-dbgprop-info-flags.md)

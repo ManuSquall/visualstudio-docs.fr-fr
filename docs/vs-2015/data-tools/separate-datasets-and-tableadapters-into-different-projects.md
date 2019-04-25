@@ -17,17 +17,16 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2f4b470bab1bc3a017edeb1c686a53baf2293495
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9228eaec55dc936d44eeccd55e6a05559aea27e4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938575"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647460"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Séparer les datasets et les TableAdapters en différents projets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Datasets typés ont été améliorées afin que le [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) et classes de jeu de données peuvent être générées dans des projets séparés. Cela vous permet de rapidement séparer les couches application et générer des applications de données multicouches.  
   
  La procédure suivante décrit le processus d’utilisation du Concepteur de Dataset pour générer le code de jeu de données dans un projet qui est séparé du projet qui contient le texte généré `TableAdapter` code.  

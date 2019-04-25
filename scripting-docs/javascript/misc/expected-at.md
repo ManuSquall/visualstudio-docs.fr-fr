@@ -14,19 +14,19 @@ ms.assetid: 82ff8b74-1710-4358-9a26-dc92ab29c53b
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: da8eb2f21cbe7ef611aaba863e853a2fe7a71753
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: aa2728306d9e650bf7f8b446b6af5a409a39d0e0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018309"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101559"
 ---
 # <a name="expected-"></a>Attendu '\@'
 Vous avez tenté de créer une variable qui doit être utilisé avec les instructions de compilation conditionnelle à l’aide de la `@set` instruction, mais ne pas placer une arobase «**@**» avant le nom de variable.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
--   Ajouter un signe «**@**« juste avant le nom de variable. Exemple :  
+- Ajouter un signe «**@**« juste avant le nom de variable. Exemple :  
   
     ```JavaScript  
     @set @myvar = 1  

@@ -1,14 +1,9 @@
 ---
 title: Fonction SccGet | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccGet
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 78c766e52278c8bae29e57cad6f1c0255de4ea43
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 3f8317405c52850eceb816b958718835c029c6c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761713"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068299"
 ---
 # <a name="sccget-function"></a>Fonction SccGet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +50,7 @@ SCCRTN SccGet(
  lpFileNames  
  [in] Tableau des noms qualifiés complets de fichiers à récupérer.  
   
- Options  
+ fOptions  
  [in] Indicateurs de commande (`SCC_GET_ALL`, `SCC_GET_RECURSIVE`).  
   
  pvOptions  
@@ -91,23 +86,22 @@ SCCRTN SccGet(
   
  Il existe deux manières de résoudre cette situation où le cache local des versions de contrôle de code source est désynchronisé avec la base de données de contrôle de code source :  
   
-1.  N’autorisez pas la modification du nom d’un fichier dans la base de données de contrôle de code source qui est actuellement extrait.  
+1. N’autorisez pas la modification du nom d’un fichier dans la base de données de contrôle de code source qui est actuellement extrait.  
   
-2.  Effectuer l’équivalent de « suppression ancien » suivie de « Ajouter ». L’algorithme suivant est une façon d’y parvenir.  
+2. Effectuer l’équivalent de « suppression ancien » suivie de « Ajouter ». L’algorithme suivant est une façon d’y parvenir.  
   
-    1.  Appelez le [SccQueryChanges](../extensibility/sccquerychanges-function.md) (fonction) pour en savoir plus sur le changement de nom d’un fichier a.txt en b.txt dans la base de données de contrôle de code source.  
+    1. Appelez le [SccQueryChanges](../extensibility/sccquerychanges-function.md) (fonction) pour en savoir plus sur le changement de nom d’un fichier a.txt en b.txt dans la base de données de contrôle de code source.  
   
-    2.  Renommez le fichier a.txt local en b.txt.  
+    2. Renommez le fichier a.txt local en b.txt.  
   
-    3.  Appelez le `SccGet` (fonction) pour le fichier a.txt et b.txt.  
+    3. Appelez le `SccGet` (fonction) pour le fichier a.txt et b.txt.  
   
-    4.  Étant donné que le fichier a.txt n’existe pas dans la base de données de contrôle de code source, le cache de la version locale est purgé des informations de version a.txt manquantes.  
+    4. Étant donné que le fichier a.txt n’existe pas dans la base de données de contrôle de code source, le cache de la version locale est purgé des informations de version a.txt manquantes.  
   
-    5.  Le fichier b.txt en cours d’extraction est fusionné avec le contenu du fichier b.txt local.  
+    5. Le fichier b.txt en cours d’extraction est fusionné avec le contenu du fichier b.txt local.  
   
-    6.  Le fichier b.txt mis à jour peut désormais être archivé.  
+    6. Le fichier b.txt mis à jour peut désormais être archivé.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonctions d’API de plug-in de contrôle de source](../extensibility/source-control-plug-in-api-functions.md)   
  [Indicateurs de bits utilisés par des commandes spécifiques](../extensibility/bitflags-used-by-specific-commands.md)
-

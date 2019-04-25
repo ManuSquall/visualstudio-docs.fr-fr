@@ -40,7 +40,7 @@ ms.locfileid: "55908528"
  Les variables locales inutilisées et les assignations inutiles augmentent la taille d'un assembly et font baisser les performances.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Pour corriger une violation de cette règle, supprimez ou utilisez la variable locale. Notez que le compilateur c# qui est inclus avec [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] supprime les variables locales inutilisées lorsque le `optimize` est activée.
+ Pour corriger une violation de cette règle, supprimez ou utilisez la variable locale. Notez que le compilateur C# qui est inclus avec [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] supprime les variables locales inutilisées lorsque le `optimize` est activée.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Supprimez un avertissement de cette règle si la variable a été émise par un compilateur. Il est également recommandé de supprimer un avertissement de cette règle, ou pour désactiver la règle, si les performances et maintenance du code ne sont pas des préoccupations.

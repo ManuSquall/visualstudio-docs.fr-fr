@@ -14,12 +14,12 @@ ms.assetid: f367295e-45b6-45d2-9ec8-77481743beef
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8250709a6bc9477bb0fc154b8652e2b3e17aef01
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b02db44cef8734f70f81847b224bc007fe1b4500
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948565"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114000"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Informations sur les paramètres dans un Service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,31 +45,31 @@ L’info-bulle d’informations sur les paramètres IntelliSense fournit aux uti
   
  Lorsque votre <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData> de classe est appelée, ses méthodes sont appelées dans l’ordre suivant :  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetContextStream%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetContextStream%2A>  
   
      Retourne la position et la longueur des données pertinentes dans le tampon de texte actuel. Cela indique à l’IDE pour ne masquent pas les données à l’aide de la fenêtre d’info-bulle.  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetCurMethod%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetCurMethod%2A>  
   
      Retourne le numéro de méthode (index de base zéro) que vous souhaitez afficher initialement. Par exemple, si vous retournez zéro, la première méthode surchargée est affichée initialement.  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetOverloadCount%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetOverloadCount%2A>  
   
      Retourne le nombre de méthodes surchargées qui sont applicables dans le contexte actuel. Si vous retournez une valeur supérieure à 1 pour cette méthode, puis l’affichage de texte affiche des flèches haut et bas pour vous. Si vous cliquez sur la flèche vers le bas, l’IDE appelle le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.NextMethod%2A> (méthode). Si vous cliquez sur la flèche vers le haut, l’IDE appelle le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.PrevMethod%2A> (méthode).  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A>  
   
      Le texte de l’info-bulle d’informations sur les paramètres a été construit pendant plusieurs appels à la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetMethodText%2A> et <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A> méthodes.  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterCount%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterCount%2A>  
   
      Retourne le nombre de paramètres à afficher dans la méthode.  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.GetParameterText%2A>  
   
      Si vous retournez un numéro de la méthode correspondant à la surcharge que vous souhaitez afficher, cette méthode est appelée, suivie d’un appel à la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A> (méthode).  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A>  
   
      Indique à votre service de langage pour mettre à jour de l’éditeur quand une info-bulle de méthode s’affiche. Dans le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.UpdateView%2A> (méthode), exécutez la commande suivante :  
   
@@ -77,6 +77,6 @@ L’info-bulle d’informations sur les paramètres IntelliSense fournit aux uti
     <pTxWin> ->UpdateTipWindow(<pTip>, UTW_CONTENTCHANGED | UTW_CONTEXTCHANGED).  
     ```  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A>  
   
      Vous recevez un appel à la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsMethodData.OnDismiss%2A> méthode lorsque vous fermez la fenêtre d’info-bulle de méthode.

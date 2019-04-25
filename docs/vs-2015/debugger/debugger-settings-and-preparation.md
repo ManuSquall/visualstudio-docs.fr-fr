@@ -1,14 +1,9 @@
 ---
 title: Paramètres et préparation du débogueur | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug
 dev_langs:
@@ -23,20 +18,20 @@ ms.assetid: f15a1400-b204-418d-8878-ab7755470fd7
 caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 0d670470158c86fa62c860571779ec701f65a11f
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 1199a28d83dc519b40466cda37ed966cc7ee51e4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51766276"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948676"
 ---
 # <a name="debugger-settings-and-preparation"></a>Paramètres et préparation du débogueur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette section décrit les paramètres de propriété du débogueur et la préparation nécessaire pour déboguer votre programme à l’aide du débogueur [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Si vous créez un programme dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] à l’aide des modèles de projet, ces paramètres sont définis correctement sans votre intervention dans la configuration Debug.  
   
- Pour plus d’informations, consultez [Guide pratique pour définir des configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md).  
+ Pour plus d'informations, voir [Procédure : Définir des configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md).  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Paramètres du projet de débogueur](../debugger/debugger-project-settings.md)  
@@ -51,7 +46,7 @@ Cette section décrit les paramètres de propriété du débogueur et la prépar
  [Applications web ASP.NET](../debugger/debugging-preparation-aspnet-web-applications.md)  
  Fournit des instructions sur la manière de configurer les applications web ASP.NET.  
   
- [Guide pratique pour déboguer un fichier exécutable ne faisant pas partie d’une solution Visual Studio](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
+ [Guide pratique pour déboguer un exécutable ne faisant pas partie d’une solution Visual Studio](../debugger/how-to-debug-an-executable-not-part-of-a-visual-studio-solution.md)  
  Explique comment déboguer un exécutable qui n’a pas été créé dans le cadre d’un projet Visual Studio.  
   
  [Guide pratique pour déboguer avec une source Code Center Premium](../debugger/how-to-debug-with-code-center-premium-source.md)  
@@ -63,12 +58,9 @@ Cette section décrit les paramètres de propriété du débogueur et la prépar
  [Débogage et processus d’hébergement](../debugger/debugging-and-the-hosting-process.md)  
  Décrit les différents aspects du processus d’hébergement.  
   
- [Guide pratique pour spécifier une version du .NET Framework pour le débogage](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
+ [Guide pratique pour indiquer une version du .NET Framework pour le débogage](../debugger/how-to-specify-a-dotnet-framework-version-for-debugging.md)  
  Explique comment définir une clé de Registre pour indiquer au débogueur la version à utiliser.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité du débogueur](../debugger/debugger-security.md)   
  [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md)
-
-
-

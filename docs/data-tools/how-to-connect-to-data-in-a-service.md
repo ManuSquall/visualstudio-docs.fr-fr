@@ -1,5 +1,5 @@
 ---
-title: 'Comment : se connecter à des données dans un service'
+title: 'Procédure : se connecter à des données dans un service'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,14 +16,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f3fd643ca29c5f5e4df20f244bc06b6bca04b9bd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 7633d60ed672b64137b68bd9e6c3b860224753e5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930738"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085959"
 ---
-# <a name="how-to-connect-to-data-in-a-service"></a>Guide pratique pour se connecter à des données dans un service
+# <a name="how-to-connect-to-data-in-a-service"></a>Procédure : Se connecter à des données dans un service
 
 Vous connectez votre application aux données retournées à partir d’un service en exécutant la [Assistant de Configuration de Source de données](../data-tools/media/data-source-configuration-wizard.png) et en sélectionnant **Service** sur la **choisir un Type de Source de données**page.
 
@@ -36,20 +36,20 @@ Vous connectez votre application aux données retournées à partir d’un servi
 
 ## <a name="to-connect-your-application-to-a-service"></a>Pour connecter votre application à un service
 
-1.  Dans le menu **Données** , cliquez sur **Ajouter une nouvelle source de données**.
+1. Dans le menu **Données** , cliquez sur **Ajouter une nouvelle source de données**.
 
-2.  Sélectionnez **Service** sur le **choisir un Type de Source de données** page, puis cliquez sur **suivant**.
+2. Sélectionnez **Service** sur le **choisir un Type de Source de données** page, puis cliquez sur **suivant**.
 
-3.  Entrez l’adresse du service que vous souhaitez utiliser, ou cliquez sur **Discover** à localiser les services dans la solution actuelle, puis cliquez sur **accédez**.
+3. Entrez l’adresse du service que vous souhaitez utiliser, ou cliquez sur **Discover** à localiser les services dans la solution actuelle, puis cliquez sur **accédez**.
 
-4.  Si vous le souhaitez, vous pouvez taper un nouveau **Namespace** à la place de la valeur par défaut.
+4. Si vous le souhaitez, vous pouvez taper un nouveau **Namespace** à la place de la valeur par défaut.
 
     > [!NOTE]
     > Cliquez sur **avancé** pour ouvrir le [boîte de dialogue Configurer la référence de Service](../data-tools/configure-service-reference-dialog-box.md).
 
-5.  Cliquez sur **OK** pour ajouter une référence de service à votre projet.
+5. Cliquez sur **OK** pour ajouter une référence de service à votre projet.
 
-6.  Cliquez sur **Terminer**.
+6. Cliquez sur **Terminer**.
 
      La source de données est ajoutée à la fenêtre **Sources de données**.
 

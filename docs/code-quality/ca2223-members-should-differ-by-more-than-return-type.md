@@ -43,7 +43,7 @@ ms.locfileid: "55915873"
  Ne supprimez aucun avertissement de cette règle.
 
 ## <a name="example"></a>Exemple
- L’exemple suivant, en langage intermédiaire Microsoft (MSIL), illustre un type qui enfreint cette règle. Notez que cette règle ne peut pas être enfreinte en utilisant c# ou Visual Basic.
+ L’exemple suivant, en langage intermédiaire Microsoft (MSIL), illustre un type qui enfreint cette règle. Notez que cette règle ne peut pas être enfreinte en utilisant C# ou Visual Basic.
 
 ```
 .namespace UsageLibrary

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d6b203fcfbe5de92787ae5d2dcaba1b7d9b9454e
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: bab7f45824def7a4b5a385381a4789b7adc276d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54870621"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048617"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>Résoudre les problèmes des solutions SharePoint
   Les alertes ou les problèmes suivants peuvent se produire lorsque vous déboguez des solutions SharePoint à l’aide de la [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] débogueur. Pour plus d’informations, consultez [débogage de Solutions de flux de travail 2007 SharePoint](https://msdn.microsoft.com/3a5392f3-66f3-48be-956e-02de23fa6247).
@@ -42,7 +42,7 @@ ms.locfileid: "54870621"
 ```
 
 ## <a name="character-restrictions-in-names-of-projects-and-project-items"></a>Restrictions de caractères dans les noms de projets et éléments de projet
- Les noms de projets et d’éléments de projet peuvent contenir uniquement des caractères qui sont valides dans un chemin de déploiement dans SharePoint 2010. Aucun autre caractère n’est pas autorisés.
+ Les noms de projets et d'éléments de projet peuvent contenir uniquement des caractères qui sont valides dans un chemin de déploiement dans SharePoint 2010. Aucun autre caractère n’est pas autorisés.
 
 ### <a name="error-message"></a>Message d'erreur
  Message d’erreur « Caractères non valides ».
@@ -64,7 +64,7 @@ ms.locfileid: "54870621"
 
 - Barre oblique inverse (\\)
 
-  Lorsqu’un projet est empaqueté, une règle de validation vérifie que la propriété du chemin d’accès de déploiement de chaque fichier déployé contient uniquement ces caractères valides.
+  Lorsqu'un projet est empaqueté, une règle de validation vérifie que la propriété du chemin d'accès de déploiement de chaque fichier déployé contient uniquement ces caractères valides.
 
 ## <a name="errors-when-creating-custom-fields"></a>Erreurs lors de la création de champs personnalisés
  Dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], les champs personnalisés sont définis dans XML. Des erreurs peuvent survenir si un champ n'est pas défini, ni référencé à l'aide d'un format spécifique.
@@ -115,9 +115,9 @@ ms.locfileid: "54870621"
 
 ##### <a name="to-reenter-the-workflow-wizard"></a>Pour entrer de nouveau l’Assistant flux de travail
 
-1.  Dans **l’Explorateur de solutions**, choisissez le nœud de flux de travail.
+1. Dans **l’Explorateur de solutions**, choisissez le nœud de flux de travail.
 
-2.  Dans le **propriétés** fenêtre, cliquez sur le bouton points de suspension (...) sur n’importe quelle propriété qui a un bouton de sélection.
+2. Dans le **propriétés** fenêtre, cliquez sur le bouton points de suspension (...) sur n’importe quelle propriété qui a un bouton de sélection.
 
 ## <a name="user-must-refresh-application-page-in-browser-while-debugging-to-view-updated-image"></a>Utilisateur doit actualiser la page d’application dans un navigateur pendant le débogage pour afficher l’image mise à jour
  Si vous déboguez une solution SharePoint qui contient une page d’application avec un contrôle qui affiche une image, tel qu’un [!INCLUDE[TLA2#tla_html](../sharepoint/includes/tla2sharptla-html-md.md)] contrôle d’Image, vous devez actualiser la page dans le navigateur pour afficher toutes les modifications qui ont été apportées à l’image.
@@ -127,13 +127,13 @@ ms.locfileid: "54870621"
 
 ### <a name="error-message"></a>Message d'erreur
 
--   Emplacement du site SharePoint n’est pas valide.
+- Emplacement du site SharePoint n’est pas valide.
 
 ### <a name="resolution"></a>Résolution
 
--   Installez [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].
+- Installez [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].
 
--   Assurez-vous d’avoir un accès administrateur au site Web de SharePoint. Pour plus d’informations, consultez le [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] article en ligne [affecter ou supprimer des administrateurs d’applications de service dans SharePoint Server](https://docs.microsoft.com/sharepoint/administration/assign-or-remove-administrators-of-service-applications).
+- Assurez-vous d’avoir un accès administrateur au site Web de SharePoint. Pour plus d’informations, consultez le [!INCLUDE[TLA2#tla_office](../sharepoint/includes/tla2sharptla-office-md.md)] article en ligne [affecter ou supprimer des administrateurs d’applications de service dans SharePoint Server](https://docs.microsoft.com/sharepoint/administration/assign-or-remove-administrators-of-service-applications).
 
 ## <a name="site-deletion-web-event-does-not-occur-in-event-receiver-project"></a>Événement de web site suppression ne se produit pas dans le projet de récepteur d’événements
  Lorsque vous créez un projet de récepteur d’événements et vous sélectionnez certains événements Web tels que « un site est en cours de suppression », l’événement se produit jamais.
@@ -156,46 +156,46 @@ ms.locfileid: "54870621"
 
 ##### <a name="to-change-the-feature-scope-of-the-event-receiver"></a>Pour modifier l’étendue de fonctionnalité du récepteur d’événements
 
-1.  Dans **l’Explorateur de solutions**, ouvrez le récepteur d’événements *.feature* de fichiers dans le **Concepteur de fonctionnalités** en double-cliquant sur le fichier ou en ouvrant le menu contextuel, puis en choisissant **Open**.
+1. Dans **l’Explorateur de solutions**, ouvrez le récepteur d’événements *.feature* de fichiers dans le **Concepteur de fonctionnalités** en double-cliquant sur le fichier ou en ouvrant le menu contextuel, puis en choisissant **Open**.
 
-2.  Cliquez sur la flèche à côté **étendue**, puis choisissez **Site** dans la liste qui s’affiche.
+2. Cliquez sur la flèche à côté **étendue**, puis choisissez **Site** dans la liste qui s’affiche.
 
 ## <a name="deployment-error-appears-after-the-name-of-an-identifier-in-a-business-data-connectivity-model-project-is-changed"></a>Erreur de déploiement apparaît une fois que le nom d’un identificateur dans un projet de modèle de connectivité de données métier est modifié
  Ce problème se produit si vous modifiez le nom d’identificateur d’une entité dans un modèle de connectivité de données métiers (BDC) et que vous essayez ensuite de déployer la solution.
 
 ### <a name="error-messages"></a>Messages d’erreur
 
--   \<*nom du modèle*> comporte les erreurs d’activation de Type de contenu externe suivantes...
+- \<*nom du modèle*> comporte les erreurs d’activation de Type de contenu externe suivantes...
 
--   L’objet IMetadataObject portant le nom '\<*nom_modèle*>' a une valeur dans le champ 'name' est dupliquée...
+- L’objet IMetadataObject portant le nom '\<*nom_modèle*>' a une valeur dans le champ 'name' est dupliquée...
 
 ### <a name="resolution"></a>Résolution
  Pour résoudre ce problème, supprimez le modèle manuellement, puis redéployez la solution.  Vous pouvez supprimer le modèle à l’aide des outils suivants :
 
--   Administration centrale de SharePoint 2010. Pour plus d’informations, consultez [gestion des modèles BDC](http://go.microsoft.com/fwlink/?LinkID=181472) sur le site Web Microsoft TechNet.
+- Administration centrale de SharePoint 2010. Pour plus d’informations, consultez [gestion des modèles BDC](http://go.microsoft.com/fwlink/?LinkID=181472) sur le site Web Microsoft TechNet.
 
--   Windows PowerShell. Vous pouvez supprimer le modèle en tapant cette commande à l’invite de commandes : **Remove-SPBusinessDataCatalogModel**. Pour plus d’informations, consultez [applets de commande générales (SharePoint Server 2010)](http://go.microsoft.com/fwlink/?LinkID=182375) sur le site Web Microsoft TechNet.
+- Windows PowerShell. Vous pouvez supprimer le modèle en tapant cette commande à l’invite de commandes : **Remove-SPBusinessDataCatalogModel**. Pour plus d’informations, consultez [applets de commande générales (SharePoint Server 2010)](http://go.microsoft.com/fwlink/?LinkID=182375) sur le site Web Microsoft TechNet.
 
 ## <a name="an-error-appears-when-you-try-to-view-a-visual-web-part-in-sharepoint"></a>Une erreur s’affiche lorsque vous essayez d’afficher un composant visual WebPart dans SharePoint
  Ce problème se produit lorsque le **chemin d’accès** propriété du contrôle utilisateur ne commence pas par la chaîne « CONTROLTEMPLATES\\».
 
 ### <a name="error-messages"></a>Messages d’erreur
 
--   Le fichier ' /_CONTROLTEMPLATES/*\<nom_projet >*/*\<nom du composant WebPart >*/*\<contrôle utilisateur nom >*.ascx' n’existe pas.
+- Le fichier ' /_CONTROLTEMPLATES/*\<nom_projet >*/*\<nom du composant WebPart >*/*\<contrôle utilisateur nom >*.ascx' n’existe pas.
 
--   Erreur de serveur dans l’Application '/'.
+- Erreur de serveur dans l’Application '/'.
 
 ### <a name="resolution"></a>Résolution
 
 ##### <a name="to-resolve-this-issue"></a>Pour résoudre ce problème
 
-1.  Dans **l’Explorateur de solutions**, choisissez le fichier de contrôle utilisateur, dont l’extension est *.ascx*.
+1. Dans **l’Explorateur de solutions**, choisissez le fichier de contrôle utilisateur, dont l’extension est *.ascx*.
 
-2.  Dans la barre de menus, choisissez **vue** > **fenêtre Propriétés**.
+2. Dans la barre de menus, choisissez **vue** > **fenêtre Propriétés**.
 
-3.  Dans le **propriétés** fenêtre, développez le **emplacement de déploiement** nœud.
+3. Dans le **propriétés** fenêtre, développez le **emplacement de déploiement** nœud.
 
-4.  Vérifiez que la valeur de la **chemin d’accès** propriété commence par la chaîne « CONTROLTEMPLATES\\».
+4. Vérifiez que la valeur de la **chemin d’accès** propriété commence par la chaîne « CONTROLTEMPLATES\\».
 
 ## <a name="error-appears-when-an-imported-reusable-workflow-that-contains-a-task-form-field-is-run"></a>Erreur apparaît quand un flux de travail réutilisable importé qui contient un champ de formulaire de tâche est exécutée.
  Ce problème se produit si vous importez un flux de travail qui contient un formulaire de tâche qui a un champ, puis exécutez le nouveau flux de travail sur le même système à partir duquel vous l’avez importée.
@@ -230,26 +230,26 @@ ms.locfileid: "54870621"
 
 ##### <a name="to-access-the-iis-app-pool-settings"></a>Accéder aux paramètres de pool d’application IIS
 
-1.  Ouvrez le gestionnaire des services Internet (IIS).
+1. Ouvrez le gestionnaire des services Internet (IIS).
 
-2.  Dans le **connexions** volet, développez le nœud du serveur SharePoint, puis choisissez le **Pools d’applications** nœud.
+2. Dans le **connexions** volet, développez le nœud du serveur SharePoint, puis choisissez le **Pools d’applications** nœud.
 
-3.  Sur le **Pools d’applications** page, choisissez le pool d’applications SharePoint (généralement « SharePoint - 80 »), puis, dans le **Actions** volet, choisissez le **paramètres avancés** lien.
+3. Sur le **Pools d’applications** page, choisissez le pool d’applications SharePoint (généralement « SharePoint - 80 »), puis, dans le **Actions** volet, choisissez le **paramètres avancés** lien.
 
-4.  Pour augmenter le temps d’attente avant le délai d’attente IIS, modifiez la valeur de **le temps de réponse Maximum Ping (secondes)** à une valeur qui est supérieure à 90 secondes.
+4. Pour augmenter le temps d’attente avant le délai d’attente IIS, modifiez la valeur de **le temps de réponse Maximum Ping (secondes)** à une valeur qui est supérieure à 90 secondes.
 
-5.  Pour désactiver IIS exécutant la commande ping, définissez **Ping activé** à **False**.
+5. Pour désactiver IIS exécutant la commande ping, définissez **Ping activé** à **False**.
 
 ## <a name="auto-retract-leaves-orphaned-list-instance-in-sharepoint"></a>Retrait automatique laisse instance de liste orpheline dans SharePoint
  Ce problème se produit si vous effectuez les étapes suivantes.
 
-1.  Créer une définition de liste qui a une instance de liste dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Créer une définition de liste qui a une instance de liste dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2.  Choisissez le **F5** clé pour exécuter la solution.
+2. Choisissez le **F5** clé pour exécuter la solution.
 
-3.  Arrêter le débogage, ou fermez le site SharePoint.
+3. Arrêter le débogage, ou fermez le site SharePoint.
 
-4.  Rouvrez le site SharePoint et ouvrez l’instance de liste.
+4. Rouvrez le site SharePoint et ouvrez l’instance de liste.
 
 ### <a name="error-message"></a>Message d'erreur
  Erreur de serveur dans l’Application '/'.

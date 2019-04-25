@@ -1,5 +1,5 @@
 ---
-title: Forum aux questions sur le débogage d’instantané | Microsoft Docs
+title: Questions fréquentes (FAQ) sur le débogage d’instantané | Microsoft Docs
 ms.date: 11/07/2017
 ms.topic: reference
 helpviewer_keywords:
@@ -10,48 +10,52 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5b6315ba3cc99b60c97e70621f42cf13f6397c9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 7ea593ad5f88ba29f6b1c0d7c64a129b8f71c7f5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630715"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "58857072"
 ---
-# <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Forum aux Questions sur le débogage d’instantané dans Visual Studio
+# <a name="frequently-asked-questions-for-snapshot-debugging-in-visual-studio"></a>Questions fréquentes sur le débogage d’instantané dans Visual Studio
 
-Voici une liste de questions qui s’affiche lors du débogage d’applications Azure en production à l’aide du débogueur de capture instantanée.
+Voici une liste de questions qui peuvent survenir lors du débogage d’applications Azure en production à l’aide du Débogueur de capture instantanée.
 
-#### <a name="what-is-the-performance-cost-of-taking-a-snapshot"></a>Qu’est le coût de performances d’un instantané ?
+#### <a name="what-is-the-performance-cost-of-taking-a-snapshot"></a>Quel est le coût en matière de performances de la prise d’un instantané ?
 
-Lorsque le débogueur d’instantané capture un instantané de votre application, il est bifurcation du processus de l’application et la suspension de la copie dupliquée. Lorsque vous déboguez un instantané, vous déboguez contre la copie dupliquée du processus. Ce processus prend uniquement 10-20 millisecondes, mais ne copie pas le tas complet de l’application. Au lieu de cela, il copie uniquement la table des pages et définit les pages à copier lors de l’écriture. Si certains des objets de votre application sur la modification du segment de mémoire, les pages correspondantes sont ensuite copiés. Par conséquent, chaque capture instantanée a un moindre coût en mémoire (selon l’ordre des centaines de kilo-octets pour la plupart des applications).
+Lorsque le Débogueur de capture instantanée capture un instantané de votre application, il duplique (fork) le processu de l’application et interrompt la copie dupliquée. Lorsque vous déboguez un instantané, vous déboguez sur la copie dupliquée du processus. Ce processus ne prend que 10 à 20 millisecondes, mais ne copie pas le tas complet de l’application. À la place, il copie uniquement la table des pages et définit les pages sur « copie pour écriture ». Si certains des objets de votre application sur la pile changent, leurs pages correspondantes sont alors copiées. C’est pourquoi chaque capture instantanée a un petit coût en mémoire (de l’ordre de centaines de kilo-octets pour la plupart des applications).
 
-#### <a name="what-happens-if-i-have-a-scaled-out-azure-app-service-multiple-instances-of-my-app"></a>Que se passe-t-il si j’ai un Service d’applications Azure à grande échelle (plusieurs instances de mon application) ?
+#### <a name="what-happens-if-i-have-a-scaled-out-azure-app-service-multiple-instances-of-my-app"></a>Que se passe-t-il si j’ai un Azure App Service scaled-out (plusieurs instances de mon application) ?
 
-Lorsque vous avez plusieurs instances de votre application, les points d’ancrage sont appliquées à chaque instance unique. Uniquement le premier point d’ancrage à atteindre les conditions spécifiées crée un instantané. Si vous avez plusieurs points d’ancrage, les instantanés suivants proviennent de l’instance qui a créé le premier instantané. Points de journalisation envoyé à la fenêtre Sortie affiche uniquement les messages d’une instance, tandis que les points envoyées dans les journaux d’application de journalisation envoyer des messages à partir de chaque instance de.
+Lorsque vous avez plusieurs instances de votre application, les snappoints sont appliqués à chaque instance unique. Seul le premier snappoint à atteindre les conditions spécifiées crée un instantané. Si vous avez plusieurs snappoints, les instantanés ultérieurs proviennent de l’instance qui a créé le premier instantané. Les logpoints envoyés à la fenêtre de sortie affichent uniquement les messages d’une instance, tandis que les logpoints envoyés aux journaux d’application envoient des messages à partir de chaque instance.
 
-#### <a name="how-does-the-snapshot-debugger-load-symbols"></a>Comment le débogueur de capture instantanée charger des symboles ?
+#### <a name="how-does-the-snapshot-debugger-load-symbols"></a>Comment le Débogueur de capture instantanée charge-t-il des symboles ?
 
-Le débogueur de capture instantanée nécessite d’avoir les symboles correspondants pour votre application en locale ou déployée sur votre Azure App Service. (Fichiers PDB incorporés sont actuellement pas pris en charge.) Le débogueur de capture instantanée télécharge automatiquement les symboles à partir de votre Azure App Service. À compter de Visual Studio 2017 version 15.2, déployez également Azure App Service déploie les symboles de votre application.
+Le Débogueur de capture instantanée nécessite que vous ayez les symboles correspondants pour votre application de manière locale ou déployée sur votre Azure App Service. (Les PDB incorporés ne sont actuellement pas pris en charge.) Le Débogueur de capture instantanée télécharge automatiquement les symboles à partir de votre Azure App Service. À partir de Visual Studio 2017 version 15.2, le déploiement sur Azure App Service déploie également les symboles de votre application.
 
-#### <a name="does-the-snapshot-debugger-work-against-release-builds-of-my-application"></a>Le débogueur de capture instantanée fonctionne avec les versions release de mon application ?
+#### <a name="does-the-snapshot-debugger-work-against-release-builds-of-my-application"></a>Le Débogueur de capture instantanée fonctionne-t-il avec les builds de publication de mon application ?
 
-Oui - le débogueur de capture instantanée est prévu pour fonctionner sur les versions release. Lorsqu’un point d’ancrage est placé dans une fonction, la fonction est recompilée à une version debug, rendre débogable. Lorsque vous arrêtez le débogueur de capture instantanée, les fonctions sont retournées à leur version Release.
+Oui. Le Débogueur de capture instantanée est prévu pour fonctionner sur les builds de publication. Lorsqu’un snappoint est placé dans une fonction, la fonction est recompilée dans une version de débogage, pour la rendre compatible avec le débogage. L’arrêt du Débogueur de capture instantanée restaure les fonctions sur la build de publication.
 
-#### <a name="can-logpoints-cause-side-effects-in-my-production-application"></a>Points de journalisation peuvent provoquer des effets secondaires dans mon application de production ?
+#### <a name="can-logpoints-cause-side-effects-in-my-production-application"></a>Les logpoints peuvent-ils provoquer des effets secondaires dans mon application de production ?
 
-Les messages de journal que vous ajoutez à votre application sont non - évaluées pratiquement. Ils ne peut avoir des effets secondaires dans votre application. Toutefois, certaines propriétés natives peut-être pas accessibles avec les points de journalisation.
+Non. Les messages de journal que vous ajoutez à votre application sont évalués de manière virtuelle. Ils ne peuvent pas causer d’effets secondaires dans votre application. Toutefois, certaines propriétés natives peuvent ne pas être accessibles avec les logpoints.
 
-#### <a name="does-the-snapshot-debugger-work-if-my-server-is-under-load"></a>Le débogueur de capture instantanée fonctionne si mon serveur est sous charge ?
+#### <a name="does-the-snapshot-debugger-work-if-my-server-is-under-load"></a>Le Débogueur de capture instantanée fonctionne-t-il si mon serveur est en charge ?
 
-Oui, le débogage d’instantané peut fonctionner pour les serveurs sous charge. Le débogueur d’instantané limite et ne capture pas de captures instantanées dans les situations où il existe une faible quantité de mémoire disponible sur votre serveur.
+Oui, le débogage d’instantané peut fonctionner pour les serveurs en charge. Le Débogueur de capture instantanée limite et ne capture pas les instantanés en cas de faible quantité de mémoire disponible sur votre serveur.
 
-#### <a name="how-do-i-uninstall-the-snapshot-debugger"></a>Comment désinstaller le débogueur de capture instantanée ?
+#### <a name="how-do-i-uninstall-the-snapshot-debugger"></a>Comment désinstaller le Débogueur de capture instantanée ?
 
-Vous pouvez désinstaller l’extension de site du débogueur de capture instantanée sur votre Service d’application en procédant comme suit :
+Vous pouvez désinstaller l’extension de site du Débogueur de capture instantanée sur votre App Service en procédant comme suit :
 
-1. Désactivez l’option de votre application de Service via Cloud Explorer dans Visual Studio ou le portail Azure.
-1. Accédez au site de Kudu du Service de votre application (autrement dit, yourappservice. **SCM**. azurewebsites.net) et accédez à **extensions de Site**.
-1. Cliquez sur le X sur l’extension de site du débogueur de capture instantanée pour le supprimer.
+1. Désactivez votre App Service via Cloud Explorer dans Visual Studio ou le portail Azure.
+1. Accédez au site Kudu de votre App Service (autrement dit, yourappservice.**scm**.azurewebsites.net) et accédez à **Extensions de site**.
+1. Cliquez sur le X de l’extension de site du Débogueur de capture instantanée pour le supprimer.
+
+#### <a name="why-are-ports-opened-during-a-snapshot-debugger-session"></a>Pourquoi les ports sont-ils ouverts pendant une session du Débogueur de capture instantanée ?
+
+Le Débogueur de capture instantanée doit ouvrir un ensemble de ports pour déboguer les instantanés pris dans Azure, ce sont les mêmes ports requis pour le débogage distant. [Vous trouverez la liste des ports ici](../debugger/remote-debugger-port-assignments.md).
 
 ## <a name="see-also"></a>Voir aussi
 

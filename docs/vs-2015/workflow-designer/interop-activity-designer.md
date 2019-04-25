@@ -1,11 +1,8 @@
 ---
 title: Concepteur d’activités Interop | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: .net-framework-4.6
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
+ms.prod: visual-studio-dev14
+ms.technology: vs-workflow-designer
 ms.topic: reference
 f1_keywords:
 - System.Activities.Statements.Interop.UI
@@ -13,13 +10,13 @@ ms.assetid: 800a3403-ba86-41c4-8de1-c4fee9703eb1
 caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
-manager: erikre
-ms.openlocfilehash: 587f9017e7f2c76018fbb5eb98645f5e4c19216c
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 55829e85b17bcdc70e419a8496d4756d0acb4a56
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49283025"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948847"
 ---
 # <a name="interop-activity-designer"></a>Concepteur d'activités Interop
 Le **Interop** ActivityDesigner est utilisé pour créer et configurer un <xref:System.Activities.Statements.Interop> activité.  
@@ -32,7 +29,7 @@ Le **Interop** ActivityDesigner est utilisé pour créer et configurer un <xref:
   
  Le [Migration](../workflow-designer/migration-activity-designers.md) catégorie qui contient le <xref:System.Activities.Statements.Interop> activité ne s’affiche dans le **boîte à outils** si votre projet cible la version complète [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)].  
   
- Pour les projets c#, vous pouvez recibler le projet pour utiliser la version complète [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] en double-cliquant sur le projet dans le **l’Explorateur de solutions** et en sélectionnant **propriétés**. Sur le **Application** onglet, sélectionnez le **NET Framework 4** option dans le **framework cible**. Sélectionnez le **Oui** situé dans le **modification du Framework cible** dialogue qui s’affiche vous invitant à confirmer cette modification.  
+ Pour les projets C#, vous pouvez recibler le projet pour utiliser la version complète [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] en double-cliquant sur le projet dans le **l’Explorateur de solutions** et en sélectionnant **propriétés**. Sur le **Application** onglet, sélectionnez le **NET Framework 4** option dans le **framework cible**. Sélectionnez le **Oui** situé dans le **modification du Framework cible** dialogue qui s’affiche vous invitant à confirmer cette modification.  
   
  Pour les projets VB, vous pouvez recibler le projet pour utiliser la version complète [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] en cliquant sur le projet dans le **l’Explorateur de solutions** et en sélectionnant **propriétés**. Sur le **compiler** , cliquez sur le **Options avancées de compilation** bouton. Sélectionnez **.Net Framework 4** à partir de la **liste de framework cible** puis cliquez sur **OK**. Cliquez sur le **Oui** situé dans le **modification du Framework cible** dialogue qui s’affiche vous invitant à confirmer cette modification.  
   

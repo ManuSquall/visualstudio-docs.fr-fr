@@ -49,7 +49,7 @@ ms.locfileid: "58950732"
 
 - op_GreaterThan
 
-  En c#, les jetons qui sont utilisés pour représenter ces opérateurs sont les suivantes : ==, ! =, \<, et >.
+  En C#, les jetons qui sont utilisés pour représenter ces opérateurs sont les suivantes : ==, ! =, \<, et >.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Il est possible de supprimer un avertissement de cette règle lorsque la violation est provoquée par des opérateurs manquants et votre langage de programmation ne prend pas en charge la surcharge d’opérateur, comme c’est le cas avec Visual Basic .NET. Il est également possible de supprimer un avertissement de cette règle quand elle se déclenche sur les opérateurs d’égalité autres qu’op_Equality si vous déterminez que l’implémentation des opérateurs n’est pas pertinent dans votre contexte de l’application sans. Toutefois, vous ne devriez toujours op_Equality et l’opérateur == si vous se substitue à Object.Equals.

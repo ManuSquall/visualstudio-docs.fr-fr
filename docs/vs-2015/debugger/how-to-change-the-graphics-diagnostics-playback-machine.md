@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1f5f25bf9b0dc03afc7cb2ba334d85bd697b7dc5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c8c846c6f17c1fde0ef57855f4a557625fba80ad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949186"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045151"
 ---
 # <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>Procédure : modifier l’ordinateur de lecture Graphics Diagnostics
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,27 +26,27 @@ Vous pouvez lire les informations graphiques à l’aide de votre ordinateur loc
   
 #### <a name="to-use-the-local-machine-to-play-back-graphics-information"></a>Pour utiliser l’ordinateur local pour lire les informations graphiques  
   
-1.  Dans la fenêtre de document journal de graphisme, choisissez le **ordinateur de lecture** lien. Le **connexions au débogueur distant** boîte de dialogue s’affiche.  
+1. Dans la fenêtre de document journal de graphisme, choisissez le **ordinateur de lecture** lien. Le **connexions au débogueur distant** boîte de dialogue s’affiche.  
   
-2.  Sous **Configuration manuelle**, dans le **adresse** propriété, entrez `localhost`.  
+2. Sous **Configuration manuelle**, dans le **adresse** propriété, entrez `localhost`.  
   
-3.  Définir le **Mode d’authentification** propriété **aucun**.  
+3. Définir le **Mode d’authentification** propriété **aucun**.  
   
-4.  Choisissez le bouton **Sélectionner**.  
+4. Choisissez le bouton **Sélectionner**.  
   
 #### <a name="to-use-a-remote-machine-to-play-back-graphics-information"></a>Pour utiliser un ordinateur distant pour lire les informations graphiques  
   
-1.  Dans la fenêtre de document journal de graphisme, choisissez le **ordinateur de lecture** lien. Le **connexions au débogueur distant** boîte de dialogue s’affiche.  
+1. Dans la fenêtre de document journal de graphisme, choisissez le **ordinateur de lecture** lien. Le **connexions au débogueur distant** boîte de dialogue s’affiche.  
   
-2.  Sous **Configuration manuelle**, dans le **adresse** propriété, entrez le nom de domaine Windows ou l’adresse IP de l’ordinateur ou l’appareil que vous souhaitez utiliser pour lire les informations graphiques.  
+2. Sous **Configuration manuelle**, dans le **adresse** propriété, entrez le nom de domaine Windows ou l’adresse IP de l’ordinateur ou l’appareil que vous souhaitez utiliser pour lire les informations graphiques.  
   
-3.  Spécifiez le type d’autorisation que vous souhaitez utiliser pour sécuriser la connexion à l’ordinateur de lecture.  
+3. Spécifiez le type d’autorisation que vous souhaitez utiliser pour sécuriser la connexion à l’ordinateur de lecture.  
   
-    -   Pour l’authentification Windows, définissez la **Mode d’authentification** propriété **Windows**.  
+    - Pour l’authentification Windows, définissez la **Mode d’authentification** propriété **Windows**.  
   
-    -   Pour aucune authentification, définissez le **Mode d’authentification** propriété **aucun**.  
+    - Pour aucune authentification, définissez le **Mode d’authentification** propriété **aucun**.  
   
-4.  Choisissez le bouton **Sélectionner**.  
+4. Choisissez le bouton **Sélectionner**.  
   
 > [!NOTE]
 >  Le **connexions au débogueur distant** boîte de dialogue peut également s’afficher les cibles de débogage à distance qui sont directement connectés à votre ordinateur de développement ou qui sont sur le même sous-réseau. Vous pouvez utiliser une de ces cibles de débogage à distance en tant que l’ordinateur de lecture Graphics Diagnostics sans la configurer manuellement. Dans le **connexions au débogueur distant** boîte de dialogue, sélectionnez la cible que vous souhaitez, puis choisissez le **sélectionnez** bouton.  

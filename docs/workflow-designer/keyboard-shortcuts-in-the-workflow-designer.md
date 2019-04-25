@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c8d86c206eca3ecb1e1fc43e9540485cd83f93a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 95e42442e8dce5db1ef6b670043bf1f26e554773
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918427"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094662"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Raccourcis clavier dans Workflow Designer
 
@@ -31,9 +31,9 @@ Le tableau suivant récapitule les raccourcis clavier par défaut affectés aux 
 
 |Raccourci|Objectif|
 |-|-------------|
-|CTRL+E, A|Affiche ou masque le concepteur d'arguments.|
+|CTRL+E, A|Affiche ou masque le concepteur d’arguments.|
 |CTRL+E, C|Réduit l'activité sélectionnée sur place.|
-|CTRL+E, E|Développe l'activité sélectionnée sur place.|
+|CTRL+E, E|Développe l’activité sélectionnée sur place.|
 |CTRL+E, F|Connecte les activités sélectionnées dans un organigramme.|
 |CTRL+E, I|Affiche ou masque le concepteur d'importations.|
 |CTRL+E, M|Déplace le focus clavier vers l'élément suivant dans l'ordre de tabulation.|
@@ -57,13 +57,13 @@ La liste suivante affiche les mouvements utilisés pour construire un organigram
 
 - Pour connecter des activités :
 
-    1.  Sélectionnez l'activité source en y accédant par tabulation.
+    1. Sélectionnez l'activité source en y accédant par tabulation.
 
-    2.  Appuyez sur CTRL+E, M autant de fois que nécessaire pour déplacer le focus clavier sur l'activité de destination.
+    2. Appuyez sur CTRL+E, M autant de fois que nécessaire pour déplacer le focus clavier sur l'activité de destination.
 
-    3.  Appuyez sur CTRL+E, S pour ajouter l'activité de destination à la sélection.
+    3. Appuyez sur CTRL+E, S pour ajouter l'activité de destination à la sélection.
 
-    4.  Appuyez sur CTRL+E, F pour ajouter le connecteur de la source à la destination.
+    4. Appuyez sur CTRL+E, F pour ajouter le connecteur de la source à la destination.
 
 Remarques à propos de la connexion des activités à l'aide du clavier :
 
@@ -82,7 +82,7 @@ Par défaut, les raccourcis clavier par défaut pour la modification de texte Vi
    - Couper
    - Copier
    - Coller
-   - Sélectionner tout
+   - Tout Sélectionner
    - Annuler
    - Rétablir
 

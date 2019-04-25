@@ -10,12 +10,12 @@ ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
 caps.latest.revision: 37
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 06377a3bc8bd192a7c3f66d359350148fe912239
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: db4e63beb1e3d4ff53e547492ae9eae7ee8001e8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949976"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045016"
 ---
 # <a name="walkthrough-displaying-statement-completion"></a>Procédure pas à pas : Affichage de la saisie semi-automatique des instructions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ Vous pouvez implémenter la saisie semi-automatique des instructions en langage 
   
 #### <a name="to-create-a-mef-project"></a>Pour créer un projet MEF  
   
-1.  Créez un projet c# VSIX. (Dans le **nouveau projet** boîte de dialogue, sélectionnez **Visual c# / extensibilité**, puis **projet VSIX**.) Nommez la solution `CompletionTest`.  
+1. Créez un projet c# VSIX. (Dans le **nouveau projet** boîte de dialogue, sélectionnez **Visual c# / extensibilité**, puis **projet VSIX**.) Nommez la solution `CompletionTest`.  
   
-2.  Ajouter un modèle d’élément de classifieur d’éditeur au projet. Pour plus d’informations, consultez [création d’une Extension avec un éditeur de modèle d’élément](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2. Ajouter un modèle d’élément de classifieur d’éditeur au projet. Pour plus d’informations, consultez [création d’une Extension avec un éditeur de modèle d’élément](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-3.  Supprimez les fichiers de classe existants.  
+3. Supprimez les fichiers de classe existants.  
   
-4.  Ajoutez les références suivantes au projet et assurez-vous que l’option **CopyLocal** est défini sur `false`:  
+4. Ajoutez les références suivantes au projet et assurez-vous que l’option **CopyLocal** est défini sur `false`:  
   
      Microsoft.VisualStudio.Editor  
   
@@ -58,39 +58,39 @@ Vous pouvez implémenter la saisie semi-automatique des instructions en langage 
   
 #### <a name="to-implement-the-completion-source"></a>Pour implémenter la source d’achèvement  
   
-1.  Ajoutez un fichier de classe et nommez-le `TestCompletionSource`.  
+1. Ajoutez un fichier de classe et nommez-le `TestCompletionSource`.  
   
-2.  Ajoutez ces importations :  
+2. Ajoutez ces importations :  
   
      [!code-csharp[VSSDKCompletionTest#1](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#1)]
      [!code-vb[VSSDKCompletionTest#1](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#1)]  
   
-3.  Modifiez la déclaration de classe pour `TestCompletionSource` afin qu’elle implémente <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>:  
+3. Modifiez la déclaration de classe pour `TestCompletionSource` afin qu’elle implémente <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>:  
   
      [!code-csharp[VSSDKCompletionTest#2](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#2)]
      [!code-vb[VSSDKCompletionTest#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#2)]  
   
-4.  Ajouter des champs privés pour le fournisseur de code source, la mémoire tampon de texte et une liste de <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> objets (qui correspondent aux identificateurs qui participeront à la session de saisie semi-automatique) :  
+4. Ajouter des champs privés pour le fournisseur de code source, la mémoire tampon de texte et une liste de <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> objets (qui correspondent aux identificateurs qui participeront à la session de saisie semi-automatique) :  
   
      [!code-csharp[VSSDKCompletionTest#3](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#3)]
      [!code-vb[VSSDKCompletionTest#3](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#3)]  
   
-5.  Ajoutez un constructeur qui définit le fournisseur de code source et de la mémoire tampon. Le `TestCompletionSourceProvider` classe est définie dans les étapes ultérieures :  
+5. Ajoutez un constructeur qui définit le fournisseur de code source et de la mémoire tampon. Le `TestCompletionSourceProvider` classe est définie dans les étapes ultérieures :  
   
      [!code-csharp[VSSDKCompletionTest#4](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#4)]
      [!code-vb[VSSDKCompletionTest#4](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#4)]  
   
-6.  Implémentez la <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource.AugmentCompletionSession%2A> méthode en ajoutant un jeu de saisies semi-automatiques qui contient les saisies semi-automatiques que vous souhaitez fournir dans le contexte. Chaque jeu de saisies semi-automatiques contient un ensemble de <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> saisies semi-automatiques et correspond à un onglet de la fenêtre de saisie semi-automatique. (Dans les projets Visual Basic, les onglets de fenêtre de saisie semi-automatique sont nommés **commune** et **tous les**.) La méthode FindTokenSpanAtPosition est définie à l’étape suivante.  
+6. Implémentez la <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource.AugmentCompletionSession%2A> méthode en ajoutant un jeu de saisies semi-automatiques qui contient les saisies semi-automatiques que vous souhaitez fournir dans le contexte. Chaque jeu de saisies semi-automatiques contient un ensemble de <xref:Microsoft.VisualStudio.Language.Intellisense.Completion> saisies semi-automatiques et correspond à un onglet de la fenêtre de saisie semi-automatique. (Dans les projets Visual Basic, les onglets de fenêtre de saisie semi-automatique sont nommés **commune** et **tous les**.) La méthode FindTokenSpanAtPosition est définie à l’étape suivante.  
   
      [!code-csharp[VSSDKCompletionTest#5](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#5)]
      [!code-vb[VSSDKCompletionTest#5](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#5)]  
   
-7.  La méthode suivante est utilisée pour rechercher le mot actuel à partir de la position du curseur :  
+7. La méthode suivante est utilisée pour rechercher le mot actuel à partir de la position du curseur :  
   
      [!code-csharp[VSSDKCompletionTest#6](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#6)]
      [!code-vb[VSSDKCompletionTest#6](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#6)]  
   
-8.  Implémentez la `Dispose()` méthode :  
+8. Implémentez la `Dispose()` méthode :  
   
      [!code-csharp[VSSDKCompletionTest#7](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#7)]
      [!code-vb[VSSDKCompletionTest#7](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#7)]  
@@ -100,17 +100,17 @@ Vous pouvez implémenter la saisie semi-automatique des instructions en langage 
   
 #### <a name="to-implement-the-completion-source-provider"></a>Pour implémenter le fournisseur de source de saisie semi-automatique  
   
-1.  Ajoutez une classe nommée `TestCompletionSourceProvider` qui implémente <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>. Exporter cette classe avec un <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de « texte en clair » et un <xref:Microsoft.VisualStudio.Utilities.NameAttribute> de « exécution de test ».  
+1. Ajoutez une classe nommée `TestCompletionSourceProvider` qui implémente <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>. Exporter cette classe avec un <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de « texte en clair » et un <xref:Microsoft.VisualStudio.Utilities.NameAttribute> de « exécution de test ».  
   
      [!code-csharp[VSSDKCompletionTest#8](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#8)]
      [!code-vb[VSSDKCompletionTest#8](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#8)]  
   
-2.  Importer un <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, qui est utilisé pour rechercher le mot actuel dans la source d’achèvement.  
+2. Importer un <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService>, qui est utilisé pour rechercher le mot actuel dans la source d’achèvement.  
   
      [!code-csharp[VSSDKCompletionTest#9](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#9)]
      [!code-vb[VSSDKCompletionTest#9](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#9)]  
   
-3.  Implémentez la <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider.TryCreateCompletionSource%2A> méthode pour instancier la source d’achèvement.  
+3. Implémentez la <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider.TryCreateCompletionSource%2A> méthode pour instancier la source d’achèvement.  
   
      [!code-csharp[VSSDKCompletionTest#10](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletionsource.cs#10)]
      [!code-vb[VSSDKCompletionTest#10](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletionsource.vb#10)]  
@@ -120,24 +120,24 @@ Vous pouvez implémenter la saisie semi-automatique des instructions en langage 
   
 #### <a name="to-implement-the-completion-command-handler-provider"></a>Pour implémenter le fournisseur de gestionnaire de commandes de saisie semi-automatique  
   
-1.  Ajoutez un fichier nommé `TestCompletionCommandHandler`.  
+1. Ajoutez un fichier nommé `TestCompletionCommandHandler`.  
   
-2.  Ajoutez les instructions using :  
+2. Ajoutez les instructions using :  
   
      [!code-csharp[VSSDKCompletionTest#11](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#11)]
      [!code-vb[VSSDKCompletionTest#11](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#11)]  
   
-3.  Ajoutez une classe nommée `TestCompletionHandlerProvider` qui implémente <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>. Exporter cette classe avec un <xref:Microsoft.VisualStudio.Utilities.NameAttribute> du « Gestionnaire d’achèvement jeton », un <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de « texte en clair » et un <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> de <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Editable>.  
+3. Ajoutez une classe nommée `TestCompletionHandlerProvider` qui implémente <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener>. Exporter cette classe avec un <xref:Microsoft.VisualStudio.Utilities.NameAttribute> du « Gestionnaire d’achèvement jeton », un <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de « texte en clair » et un <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> de <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Editable>.  
   
      [!code-csharp[VSSDKCompletionTest#12](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#12)]
      [!code-vb[VSSDKCompletionTest#12](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#12)]  
   
-4.  Importer le <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>, qui permet la conversion d’un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> à un <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, un <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>et un <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> qui permet d’accéder aux services Visual Studio standard.  
+4. Importer le <xref:Microsoft.VisualStudio.Editor.IVsEditorAdaptersFactoryService>, qui permet la conversion d’un <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> à un <xref:Microsoft.VisualStudio.Text.Editor.ITextView>, un <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>et un <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> qui permet d’accéder aux services Visual Studio standard.  
   
      [!code-csharp[VSSDKCompletionTest#13](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#13)]
      [!code-vb[VSSDKCompletionTest#13](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#13)]  
   
-5.  Implémentez la <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener.VsTextViewCreated%2A> méthode pour instancier le Gestionnaire de commandes.  
+5. Implémentez la <xref:Microsoft.VisualStudio.Editor.IVsTextViewCreationListener.VsTextViewCreated%2A> méthode pour instancier le Gestionnaire de commandes.  
   
      [!code-csharp[VSSDKCompletionTest#14](../snippets/csharp/VS_Snippets_VSSDK/vssdkcompletiontest/cs/testcompletioncommandhandler.cs#14)]
      [!code-vb[VSSDKCompletionTest#14](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkcompletiontest/vb/testcompletioncommandhandler.vb#14)]  
@@ -195,13 +195,13 @@ Vous pouvez implémenter la saisie semi-automatique des instructions en langage 
   
 #### <a name="to-build-and-test-the-completiontest-solution"></a>Pour générer et tester la solution CompletionTest  
   
-1.  Générez la solution.  
+1. Générez la solution.  
   
-2.  Lorsque vous exécutez ce projet dans le débogueur, une deuxième instance de Visual Studio est instanciée.  
+2. Lorsque vous exécutez ce projet dans le débogueur, une deuxième instance de Visual Studio est instanciée.  
   
-3.  Créez un fichier texte et tapez du texte qui inclut le mot « ajouter ».  
+3. Créez un fichier texte et tapez du texte qui inclut le mot « ajouter ».  
   
-4.  Lorsque vous tapez tout d’abord « a » et ensuite « d », une liste qui contient « addition » et « adaptation » doit être affichée. Notez que l’addition est sélectionnée. Lorsque vous tapez un autre « d », la liste doit contenir « addition, uniquement » qui est maintenant sélectionnée. Vous pouvez valider « addition » en appuyant sur la touche espace, tabulation ou entrée, ou faire disparaître la liste en tapant ÉCHAP ou une autre clé.  
+4. Lorsque vous tapez tout d’abord « a » et ensuite « d », une liste qui contient « addition » et « adaptation » doit être affichée. Notez que l’addition est sélectionnée. Lorsque vous tapez un autre « d », la liste doit contenir « addition, uniquement » qui est maintenant sélectionnée. Vous pouvez valider « addition » en appuyant sur la touche espace, tabulation ou entrée, ou faire disparaître la liste en tapant ÉCHAP ou une autre clé.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Procédure pas à pas : Liaison d’un Type de contenu à une Extension de nom de fichier](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 36e5e8f59474a9a2fcbfef7a1c6b3d75febe3086
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 62f2d98777f1fe87b67bdb28e6302f29f752f27f
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708769"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790236"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>Personnaliser l’IDE Visual Studio
 
@@ -31,20 +31,20 @@ Beaucoup d’options de personnalisation sont également exposées dans la boît
 
 - Dans la barre de menus, choisissez **Outils** > **Options** et, si ce n’est pas déjà fait, développez le nœud **Environnement**.
 
-- Tapez `environment` dans la zone **Lancement rapide** et sélectionnez **Environnement --> Général** dans la liste des résultats.
+- Appuyez sur **Ctrl**+**Q**, tapez **environnement** dans la zone de recherche, puis choisissez **Environnement--> Général** dans les résultats.
 
-   > [!TIP]
-   > Quand la boîte de dialogue s’affiche, appuyez sur **F1** pour obtenir de l’aide sur les paramètres de cette page.
+> [!TIP]
+> Quand la boîte de dialogue Options s’affiche, appuyez sur **F1** pour obtenir de l’aide sur les paramètres de cette page.
 
 ## <a name="environment-color-themes"></a>Thèmes de couleurs de l’environnement
 
-Pour changer le thème de couleur de l’environnement (clair, sombre ou bleu), tapez `environment` dans la zone **Lancement rapide**, puis choisissez **Environnement --> Général**. Dans la boîte de dialogue **Options**, changez l’option **Thème de couleur**.
+Pour changer le thème de couleur de l’environnement (clair, foncé ou bleu), tapez **environnement** dans la zone de recherche, puis choisissez **Environnement --> Général**. Dans la boîte de dialogue **Options**, changez l’option **Thème de couleur**.
 
-Pour changer les options de colorisation dans l’éditeur, tapez `environment` dans la zone **Lancement rapide**, puis choisissez **Environnement --> Polices et couleurs**. Consultez [Guide pratique pour changer les polices et les couleurs](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
+Pour changer les options de colorisation dans l’éditeur, tapez **environnement** dans la zone de recherche, puis choisissez **Environnement --> Polices et couleurs**. Voir [Guide pratique pour changer les polices et les couleurs](../ide/how-to-change-fonts-and-colors-in-visual-studio.md).
 
 ### <a name="main-menu-casing"></a>Casse du menu principal
 
-Vous pouvez changer la casse du menu principal à l’aide des options **1re lettre des mots en majuscule** (« Fichier ») et **Tout en majuscules** (« FICHIER »). Tapez `environment` dans la zone **Lancement rapide**, sélectionnez **Environnement --> Général**, puis changez l’option **Mettre la 1ère lettre des mots en maj. dans la barre de menus**.
+Vous pouvez changer la casse du menu principal à l’aide des options **1re lettre des mots en majuscule** (« Fichier ») et **Tout en majuscules** (« FICHIER »). Tapez **environnement** dans la zone de recherche, sélectionnez **Environnement --> Général**, puis changez l’option **Appliquer le style 1re lettre des mots en majuscule à la barre de menus**.
 
 ### <a name="customize-menus-and-toolbars"></a>Personnaliser des menus et des barres d’outils
 

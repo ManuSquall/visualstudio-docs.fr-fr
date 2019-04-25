@@ -11,14 +11,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c29b5c5e80f8a0381a2c42704d14a8ea9fc3cae5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a806e434bebb5a561534fb8aec19d16dc9e28ffd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721067"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057431"
 ---
 # <a name="create-custom-editors-and-designers"></a>Créer des concepteurs et éditeurs personnalisés
+
 L’environnement de développement intégré (IDE) Visual Studio peut héberger différents types de l’éditeur :
 
 - L’éditeur principal de Visual Studio
@@ -29,10 +30,11 @@ L’environnement de développement intégré (IDE) Visual Studio peut héberger
 
 - Concepteurs
 
-  Les informations suivantes vous permettent de choisir le type d’éditeur que vous avez besoin.
+Les informations suivantes vous permettent de choisir le type d’éditeur que vous avez besoin.
 
 ## <a name="types-of-editor"></a>Types de l’éditeur
- Pour plus d’informations sur l’éditeur principal de Visual Studio, consultez [étendre les services de l’éditeur et la langue](../extensibility/extending-the-editor-and-language-services.md).
+
+Pour plus d’informations sur l’éditeur principal de Visual Studio, consultez [étendre les services de l’éditeur et la langue](../extensibility/extending-the-editor-and-language-services.md).
 
 ### <a name="custom-editors"></a>Éditeurs personnalisés
  Un éditeur personnalisé est celle qui est conçu pour fonctionner dans des circonstances particulières. Par exemple, vous pouvez créer un éditeur dont la fonction consiste à lire et écrire des données dans un référentiel spécifique, tel qu’un serveur Microsoft Exchange. Choisissez un éditeur personnalisé si vous souhaitez un éditeur qui fonctionne avec votre type de projet uniquement ou si vous souhaitez un éditeur qui a uniquement quelques commandes spécifiques. Notez, cependant, que les utilisateurs ne seront pas en mesure d’utiliser un éditeur personnalisé pour modifier standard [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] projets.
@@ -70,24 +72,36 @@ L’environnement de développement intégré (IDE) Visual Studio peut héberger
    Si elle peut être incorporée, vous devez créer une fenêtre hôte pour l’éditeur externe et appelez ensuite la <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> (méthode) et définissez le <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> valeur d’énumération à `DP_External`. Si l’éditeur ne peut pas être incorporé, l’IDE crée automatiquement une fenêtre distincte pour celui-ci.
 
 ## <a name="in-this-section"></a>Dans cette section
-- [Procédure pas à pas : Créer un éditeur personnalisé](../extensibility/walkthrough-creating-a-custom-editor.md) explique comment créer un éditeur personnalisé.
 
-- [Procédure pas à pas : Ajouter des fonctionnalités à un éditeur personnalisé](../extensibility/walkthrough-adding-features-to-a-custom-editor.md) explique comment ajouter des fonctionnalités à un éditeur personnalisé.
+[Procédure pas à pas : Créer un éditeur personnalisé](../extensibility/walkthrough-creating-a-custom-editor.md)\
+Explique comment créer un éditeur personnalisé.
 
-- [Configuration de l’initialisation et de métadonnées de concepteur](../extensibility/designer-initialization-and-metadata-configuration.md) explique comment initialiser un concepteur.
+[Procédure pas à pas : Ajouter des fonctionnalités à un éditeur personnalisé](../extensibility/walkthrough-adding-features-to-a-custom-editor.md)\
+Explique comment ajouter des fonctionnalités à un éditeur personnalisé.
 
-- [Fournir la prise en charge de l’annulation aux concepteurs](../extensibility/supplying-undo-support-to-designers.md) explique comment fournir la prise en charge de l’annulation pour les concepteurs.
+[Configuration de l’initialisation et de métadonnées de concepteur](../extensibility/designer-initialization-and-metadata-configuration.md)\
+Explique comment initialiser un concepteur.
 
-- [Couleurs de syntaxe dans les éditeurs personnalisés](../extensibility/syntax-coloring-in-custom-editors.md) explique la différence entre les couleurs dans l’éditeur principal et dans les éditeurs personnalisés de syntaxe.
+[Annulation prise en charge pour les concepteurs](../extensibility/supplying-undo-support-to-designers.md)\
+Explique comment fournir la prise en charge de l’annulation pour les concepteurs.
 
-- [Vue de données et de documents dans les éditeurs personnalisés du document](../extensibility/document-data-and-document-view-in-custom-editors.md) explique comment implémenter des données de documents et vues de document dans les éditeurs personnalisés.
+[Couleurs de syntaxe dans les éditeurs personnalisés](../extensibility/syntax-coloring-in-custom-editors.md)\
+Explique la différence entre les couleurs dans l’éditeur principal et dans les éditeurs personnalisés de syntaxe.
+
+[Données de document et les vues de document dans les éditeurs personnalisés](../extensibility/document-data-and-document-view-in-custom-editors.md)\
+Explique comment implémenter des données de documents et vues de document dans les éditeurs personnalisés.
 
 ## <a name="related-sections"></a>Rubriques connexes
-- [Les interfaces héritées dans l’éditeur](../extensibility/legacy-interfaces-in-the-editor.md) explique comment accéder à l’éditeur principal au moyen de l’API héritée.
 
-- [Développer un service de langage hérité](../extensibility/internals/developing-a-legacy-language-service.md) explique comment implémenter un service de langage.
+[Interfaces héritées dans l’éditeur](../extensibility/legacy-interfaces-in-the-editor.md)\
+Explique comment accéder à l’éditeur principal au moyen de l’API héritée.
 
-- [Étendre d’autres parties de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md) explique comment créer des éléments d’interface utilisateur qui correspondent au reste de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
+[Développer un service de langage hérité](../extensibility/internals/developing-a-legacy-language-service.md)\
+Explique comment implémenter un service de langage.
+
+[Étendre d’autres parties de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)\
+Explique comment créer des éléments d’interface utilisateur qui correspondent au reste de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="see-also"></a>Voir aussi
+
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory>

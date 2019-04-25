@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2b30a3b1ee02a6ac64c66aa7d80a35dc45a683a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dd3d58b61683c2b25da3e988d307effc28d61dc9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715308"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073364"
 ---
 # <a name="register-an-expression-evaluator"></a>Inscrire un évaluateur d’expression
 > [!IMPORTANT]
@@ -106,9 +106,9 @@ namespace EEMC
 ### <a name="dll-server-process"></a>Processus de serveur DLL
  Lorsque vous inscrivez le EE, le serveur de la DLL :
 
-1.  Inscrit la fabrique de classe `CLSID` conformément aux conventions de COM normales.
+1. Inscrit la fabrique de classe `CLSID` conformément aux conventions de COM normales.
 
-2.  Appelle la fonction d’assistance `SetEEMetric` à inscrire avec Visual Studio, les mesures EE indiqués dans le tableau suivant. La fonction `SetEEMetric` et les mesures spécifiées comme suit font partie de la *dbgmetric.lib* bibliothèque. Consultez [aides SDK pour le débogage](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) pour plus d’informations.
+2. Appelle la fonction d’assistance `SetEEMetric` à inscrire avec Visual Studio, les mesures EE indiqués dans le tableau suivant. La fonction `SetEEMetric` et les mesures spécifiées comme suit font partie de la *dbgmetric.lib* bibliothèque. Consultez [aides SDK pour le débogage](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) pour plus d’informations.
 
     |Métrique|Description|
     |------------|-----------------|
@@ -120,7 +120,7 @@ namespace EEMC
     > [!NOTE]
     >  Le `metricLanguage``GUID` identifie la langue par nom, mais il est le `guidLang` argument `SetEEMetric` qui sélectionne la langue. Lorsque le compilateur génère le fichier d’informations de débogage, il doit écrire approprié `guidLang` afin que l’Allemagne sache quel EE à utiliser. Le DE demande généralement le fournisseur de symboles pour ce langage `GUID`, qui est stocké dans le fichier d’informations de débogage.
 
-3.  Inscrit avec Visual Studio en créant des clés sous HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*X.Y*, où *X.Y* est la version de Visual Studio pour inscrire auprès de.
+3. Inscrit avec Visual Studio en créant des clés sous HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*X.Y*, où *X.Y* est la version de Visual Studio pour inscrire auprès de.
 
 ### <a name="example"></a>Exemple
  La fonction suivante montre comment un code non managé (C++) EE inscrit et annule l’inscription d’elle-même avec Visual Studio.

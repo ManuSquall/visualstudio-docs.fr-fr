@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f7999e65a36968872816abfa8246c0e42ce699d3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 385871a47b2a4d73a1f7afacf9d39a02d7c782ca
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627361"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232643"
 ---
 # <a name="obtain-build-logs-with-msbuild"></a>Obtenir des journaux de génération avec MSBuild
 
@@ -91,7 +91,7 @@ Vous pouvez enregistrer le journal dans un format binaire compressé à l’aide
 Dans l’exemple suivant, un fichier journal binaire est créé avec le nom *binarylogfilename*.
 
 ```cmd
-/bl:binarylogfilename.binlog
+-bl:binarylogfilename.binlog
 ```
 
 Pour plus d’informations, consultez [Référence de ligne de commande](../msbuild/msbuild-command-line-reference.md).
@@ -107,5 +107,5 @@ Pour plus d’informations, consultez [Référence de ligne de commande](../msbu
 - <xref:Microsoft.Build.Framework.LoggerVerbosity>
 - [Enregistreurs d’événements de génération](../msbuild/build-loggers.md)
 - [Journalisation dans un environnement multiprocesseur](../msbuild/logging-in-a-multi-processor-environment.md)
-- [Création de journaux de transfert](../msbuild/creating-forwarding-loggers.md)
+- [Créer des enregistreurs d’événements de transfert](../msbuild/creating-forwarding-loggers.md)
 - [Concepts MSBuild](../msbuild/msbuild-concepts.md)

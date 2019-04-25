@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4b31faa7c71a0f4072d922528a1abc4d040e7dae
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: ce1f236347ad811f1c5d115f30907b7e3356e3af
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59000409"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099271"
 ---
 # <a name="create-elements-and-relationships-in-uml-models"></a>Créer des éléments et des relations dans des modèles UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,11 +87,11 @@ using Microsoft.VisualStudio.Uml.Extensions;
   
 #### <a name="to-create-an-association"></a>Pour créer une association  
   
-1.  Obtenez le propriétaire de l'association, lequel correspond généralement au package ou modèle contenant l'extrémité source de la relation.  
+1. Obtenez le propriétaire de l'association, lequel correspond généralement au package ou modèle contenant l'extrémité source de la relation.  
   
-2.  Appelez la méthode de création requise sur le propriétaire.  
+2. Appelez la méthode de création requise sur le propriétaire.  
   
-3.  Définissez les propriétés de la relation, notamment son nom.  
+3. Définissez les propriétés de la relation, notamment son nom.  
   
      Exemple :  
   
@@ -100,7 +100,7 @@ using Microsoft.VisualStudio.Uml.Extensions;
     association .Name = "Observes";  
     ```  
   
-4.  Définissez les propriétés de chaque extrémité de la relation. Il existe toujours deux `MemberEnds`. Exemple :  
+4. Définissez les propriétés de chaque extrémité de la relation. Il existe toujours deux `MemberEnds`. Exemple :  
   
     ```  
     association .MemberEnds[0].Name = "subject";   // role name  
@@ -125,9 +125,9 @@ anElement.Delete();
   
  Quand vous supprimez un élément d'un modèle :  
   
--   Chaque relation qui établit un lien vers lui est également supprimée.  
+- Chaque relation qui établit un lien vers lui est également supprimée.  
   
--   Chaque forme qui le représentait dans un diagramme est également supprimée.  
+- Chaque forme qui le représentait dans un diagramme est également supprimée.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Étendre des diagrammes et des modèles UML](../modeling/extend-uml-models-and-diagrams.md)   

@@ -12,23 +12,23 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 490a28e4f3fcd0b2bc2657a83a706090eafb16a8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b4c02c7dbce09383b5fc3cb1fd7f5eec6e9116b1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953204"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079835"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Rechercher et sélectionner un type .NET, boîte de dialogue
 Dans le **propriétés** fenêtre, les boîtes de dialogue ou les concepteurs, tels que le Concepteur de variables, lorsque vous sélectionnez **rechercher des Types...** à partir d’une liste des types de données, est la **rechercher et sélectionner un Type .NET** boîte de dialogue (appelée dans la forme abrégée « Explorateur de types »). Cette boîte de dialogue vous permet de choisir un type dans une arborescence d'assemblys et de projets.  
   
  Elle est employée dans plusieurs scénarios utilisateur, notamment les suivants :  
   
--   lors de la définition du type d'une variable ou d'argument ;  
+- lors de la définition du type d'une variable ou d'argument ;  
   
--   lors de la sélection d'un type pour une activité générique ;  
+- lors de la sélection d'un type pour une activité générique ;  
   
--   lors de l'ajout d'un catch sur l'activité <xref:System.Activities.Statements.TryCatch>.  
+- lors de l'ajout d'un catch sur l'activité <xref:System.Activities.Statements.TryCatch>.  
   
 > [!NOTE]
 >  L'explorateur de types peut afficher des types de tableau en escalier Visual Basic, mais pas des types de tableau multidimensionnel. Consultez [tableaux en escalier](http://go.microsoft.com/fwlink/?LinkId=195226) et [tableaux multidimensionnels](http://go.microsoft.com/fwlink/?LinkId=195227) pour plus d’informations.  
@@ -37,19 +37,19 @@ Dans le **propriétés** fenêtre, les boîtes de dialogue ou les concepteurs, t
   
 #### <a name="to-select-a-value-or-reference-type-from-the-type-browser"></a>Pour sélectionner un type valeur ou référence dans l'Explorateur de types  
   
-1.  Dans le **nom de Type** , entrez le nom du type que vous souhaitez utiliser.  
+1. Dans le **nom de Type** , entrez le nom du type que vous souhaitez utiliser.  
   
-2.  Effectuez l’une des opérations suivantes :  
+2. Effectuez l’une des opérations suivantes :  
   
-    -   Une fois que le nom du type que vous souhaitez utiliser s’affiche dans l’arborescence de la **nom de Type** , double-cliquez sur le type pour le sélectionner.  
+    - Une fois que le nom du type que vous souhaitez utiliser s’affiche dans l’arborescence de la **nom de Type** , double-cliquez sur le type pour le sélectionner.  
   
-    -   Tapez suffisamment de caractères dans le **nom de Type** boîte pour identifier de façon unique le type que vous souhaitez utiliser et appuyez sur ENTRÉE pour sélectionner le type  
+    - Tapez suffisamment de caractères dans le **nom de Type** boîte pour identifier de façon unique le type que vous souhaitez utiliser et appuyez sur ENTRÉE pour sélectionner le type  
   
 #### <a name="to-select-a-generic-type-from-the-type-browser"></a>Pour sélectionner un type générique dans l'Explorateur de types  
   
-1.  Dans le **nom de Type** zone, tapez le nom du type que vous souhaitez utiliser.  
+1. Dans le **nom de Type** zone, tapez le nom du type que vous souhaitez utiliser.  
   
-2.  Une fois que le nom du type que vous souhaitez utiliser s’affiche dans l’arborescence de la **nom de Type** boîte, cliquez sur le type à sélectionner et faire des listes déroulantes s’affichent.  
+2. Une fois que le nom du type que vous souhaitez utiliser s’affiche dans l’arborescence de la **nom de Type** boîte, cliquez sur le type à sélectionner et faire des listes déroulantes s’affichent.  
   
      Sélectionnez le type que vous souhaitez utiliser pour fermer le type générique dans les zones de liste déroulante, puis cliquez sur **OK**.  
   
@@ -63,9 +63,9 @@ Dans le **propriétés** fenêtre, les boîtes de dialogue ou les concepteurs, t
   
  Exemple :  
   
-1.  Tapant **opération** correspond à <xref:System.OperationCanceledException> mais pas <xref:System.InvalidOperationException>. Pour trouver <xref:System.InvalidOperationException>, commencez par taper System.I ou Invalid.  
+1. Tapant **opération** correspond à <xref:System.OperationCanceledException> mais pas <xref:System.InvalidOperationException>. Pour trouver <xref:System.InvalidOperationException>, commencez par taper System.I ou Invalid.  
   
-2.  Tapant **générique** correspond à <xref:System.GenericUriParser> mais pas les types dans le <xref:System.Collections.Generic> espace de noms. Pour rechercher les types dans l'espace de noms <xref:System.Collections.Generic>, tapez le nom complet de l'espace de noms.  
+2. Tapant **générique** correspond à <xref:System.GenericUriParser> mais pas les types dans le <xref:System.Collections.Generic> espace de noms. Pour rechercher les types dans l'espace de noms <xref:System.Collections.Generic>, tapez le nom complet de l'espace de noms.  
   
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>Sélectionner un contrat de service à l'aide de la boîte de dialogue de l'Explorateur de types  
  Lorsque vous sélectionnez un type de contrat de service, l'Explorateur de types affiche uniquement les types possédant l'attribut <xref:System.ServiceModel.ServiceContractAttribute>.  

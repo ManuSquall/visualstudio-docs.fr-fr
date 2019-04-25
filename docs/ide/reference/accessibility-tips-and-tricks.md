@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67166318335495f0f8454e1c987fdbfb14c0cac0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e86791e77d5c8f6eb1e6b88ac663e1f11cc53e1e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793310"
 ---
 # <a name="accessibility-tips-and-tricks-for-visual-studio"></a>Conseils et astuces d’accessibilité pour Visual Studio
 
@@ -63,11 +63,11 @@ Parmi d’autres combinaisons de touches de raccourci utiles figurent les suivan
 |IDE|Activer et désactiver le contraste élevé. <br> <br> **REMARQUE :** Raccourci Windows standard|**Alt gauche + Maj gauche + Impr. écran**|
 |Boîte de dialogue|Cocher ou décocher une case dans une boîte de dialogue. <br> <br> **REMARQUE :** Raccourci Windows standard|**Barre d’espace**|
 |Menus contextuels|Ouvrir un menu contextuel (clic droit). <br> <br> **REMARQUE :** Raccourci Windows standard|**Maj** + **F10**|
-|Menus|Accéder rapidement à un élément de menu à l’aide de ses touches accélérateur. Choisissez la touche **Alt** suivie par les lettres soulignées dans un menu pour activer la commande. Par exemple, pour afficher la boîte de dialogue Ouvrir un projet dans Visual Studio, choisissez **Alt** + **F** + **O** + **P**.  <br><br> **REMARQUE :** Raccourci Windows standard|**Alt** + **[lettre]**|
-|Zone de recherche de lancement rapide| Utiliser la fonctionnalité de recherche dans Visual Studio|**Ctrl** + **Q**|
+|Menus|Accéder rapidement à un élément de menu à l’aide de ses touches accélérateur. Choisissez la touche **Alt** suivie des lettres soulignées dans un menu pour activer la commande. Par exemple, pour afficher la boîte de dialogue Ouvrir un projet dans Visual Studio, choisissez **Alt** + **F** + **O** + **P**.  <br><br> **REMARQUE :** Raccourci Windows standard|**Alt** + **[lettre]**|
+|Zone de recherche|Utiliser la fonctionnalité de recherche dans Visual Studio.|**Ctrl** + **Q**|
 |Fenêtre Boîte à outils|Se déplacer entre les onglets de la boîte à outils.|**Ctrl** + **Flèche haut**<br /><br /> et<br /><br /> **Ctrl** + **Flèche bas**|
 |Fenêtre Boîte à outils|Ajouter un contrôle à partir de la boîte à outils à un formulaire ou un concepteur.|**Entrée**|
-|Clavier, Environnement, boîte de dialogue Options|Supprimer une combinaison de touches entrée dans l’option **Appuyer sur les touches de raccourci**.|**Retour arrière**|
+|Boîte de dialogue Options : Environnement > Clavier|Supprimer une combinaison de touches entrée dans l’option **Appuyer sur les touches de raccourci**.|**Retour arrière**|
 
 > [!NOTE]
 > Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée.
@@ -76,12 +76,12 @@ Parmi d’autres combinaisons de touches de raccourci utiles figurent les suivan
 
 Vous pouvez utiliser l’applet Sound (Son) dans Windows pour affecter un son aux événements de programme Visual Studio. Plus précisément, vous pouvez affecter des sons aux événements de programme suivants :
 
- * Accès à un point d’arrêt
- * Build annulée
- * Échec de la build
- * Build réussie
+* Accès à un point d’arrêt
+* Build annulée
+* Échec de la build
+* Build réussie
 
-Voici comment procéder.
+Voici comment :
 
 1. Dans la zone de **recherche** sur un ordinateur exécutant Windows 10, tapez **Modifier les sons système**.
 

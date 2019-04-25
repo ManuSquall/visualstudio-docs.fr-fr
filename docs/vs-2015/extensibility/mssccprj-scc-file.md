@@ -11,12 +11,12 @@ ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8bff060ed373c4158afe8848ac248e8d28da38b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 705e0fa821000716dc9cd729901fbb7db5fd759c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950772"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117718"
 ---
 # <a name="mssccprjscc-file"></a>Fichier MSSCCPRJ.SCC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,19 +27,19 @@ Lorsqu’une solution Visual Studio ou un projet est placé sous contrôle de co
   
  Plug-in de contrôle source qui prend en charge la MSSCCPRJ. Fichier de contrôle de code source doit respecter les consignes suivantes :  
   
--   Il ne peut exister qu’un seul MSSCCPRJ. Fichier de contrôle de code source par répertoire.  
+- Il ne peut exister qu’un seul MSSCCPRJ. Fichier de contrôle de code source par répertoire.  
   
--   Un MSSCCPRJ. Fichier de contrôle de code source peut contenir le « AuxPath » et « ProjName » pour plusieurs fichiers qui sont sous contrôle de code source dans un répertoire donné.  
+- Un MSSCCPRJ. Fichier de contrôle de code source peut contenir le « AuxPath » et « ProjName » pour plusieurs fichiers qui sont sous contrôle de code source dans un répertoire donné.  
   
--   La chaîne « AuxPath » ne doit pas contenir de guillemets qu’il contient. Il est autorisé à placer entre guillemets comme délimiteurs (par exemple, une paire de guillemets doubles permettre servir à indiquer une chaîne vide). L’IDE supprimera tous les devis à partir de la chaîne « AuxPath » lorsqu’il est lu à partir de la MSSCCPRJ. Fichier de contrôle de code source.  
+- La chaîne « AuxPath » ne doit pas contenir de guillemets qu’il contient. Il est autorisé à placer entre guillemets comme délimiteurs (par exemple, une paire de guillemets doubles permettre servir à indiquer une chaîne vide). L’IDE supprimera tous les devis à partir de la chaîne « AuxPath » lorsqu’il est lu à partir de la MSSCCPRJ. Fichier de contrôle de code source.  
   
--   La chaîne « ProjName » dans le MSSCCPRJ. Fichier de contrôle de code source doit correspondre exactement à la chaîne retournée par la `SccGetProjPath` (fonction). Si la chaîne retournée par la fonction a entre guillemets, la chaîne dans le MSSCCPRJ. Fichier de contrôle de code source doit avoir des guillemets autour d’elle et vice versa.  
+- La chaîne « ProjName » dans le MSSCCPRJ. Fichier de contrôle de code source doit correspondre exactement à la chaîne retournée par la `SccGetProjPath` (fonction). Si la chaîne retournée par la fonction a entre guillemets, la chaîne dans le MSSCCPRJ. Fichier de contrôle de code source doit avoir des guillemets autour d’elle et vice versa.  
   
--   Un MSSCCPRJ. Fichier de contrôle de code source est créé ou mis à jour chaque fois qu’un fichier est placé sous contrôle de code source.  
+- Un MSSCCPRJ. Fichier de contrôle de code source est créé ou mis à jour chaque fois qu’un fichier est placé sous contrôle de code source.  
   
--   If un MSSCCPRJ. Fichier de contrôle de code source est supprimé, un fournisseur doit régénérer la prochaine fois qu’il effectue une opération de contrôle de code source concernant ce répertoire.  
+- If un MSSCCPRJ. Fichier de contrôle de code source est supprimé, un fournisseur doit régénérer la prochaine fois qu’il effectue une opération de contrôle de code source concernant ce répertoire.  
   
--   Un MSSCCPRJ. Fichier de contrôle de code source doive suivre strictement le format défini.  
+- Un MSSCCPRJ. Fichier de contrôle de code source doive suivre strictement le format défini.  
   
 ## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>Obtenir une Illustration de la MSSCCPRJ. Format de fichier de contrôle de code source  
  Voici un exemple de la MSSCCPRJ. Format de fichier de contrôle de code source (les numéros de ligne sont fournies uniquement comme guide et ne doivent pas être inclus dans le corps du fichier) :  

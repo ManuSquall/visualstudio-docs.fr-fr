@@ -26,12 +26,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d1235abfc6e8a2c384b02fd1d48a859063c058d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2b40e7814fb809298c71d0078e644c12bd5a9a9e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948683"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064958"
 ---
 # <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Procédure : Déboguer des clients et des serveurs COM à l’aide du débogage RPC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ Vous pouvez utiliser le débogage RPC pour déboguer des applications client/ser
   
 ### <a name="to-enable-rpc-debugging"></a>Pour activer le débogage RPC  
   
-1.  Dans le menu **Outils**, cliquez sur **Options**.  
+1. Dans le menu **Outils**, cliquez sur **Options**.  
   
-2.  Dans la boîte de dialogue **Options**, cliquez sur le dossier **Débogage**.  
+2. Dans la boîte de dialogue **Options**, cliquez sur le dossier **Débogage**.  
   
-3.  Cliquez sur la page **Natif**.  
+3. Cliquez sur la page **Natif**.  
   
-4.  Cochez la case **Débogage RPC**.  
+4. Cochez la case **Débogage RPC**.  
   
     > [!NOTE]
     >  Pour déboguer des appels RPC, vous devez posséder les privilèges Administrateur ou Utilisateur avec pouvoirs.  

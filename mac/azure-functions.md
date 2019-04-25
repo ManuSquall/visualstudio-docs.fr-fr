@@ -3,24 +3,24 @@ title: Introduction à Azure Functions
 description: Utilisation des fonctions Azure dans Visual Studio pour Mac.
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 04/02/2019
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: eaf6f82cdc40b174dcd1ca8deb12c412fe675d70
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: ac0786e9b52a149fe8067c41aaabe61ad9fd5c87
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295941"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857241"
 ---
 # <a name="introduction-to-azure-functions"></a>Introduction à Azure Functions
 
 Azure Functions permet de créer et d’exécuter dans le cloud des fonctions, à savoir des extraits de code basés sur des événements, sans devoir provisionner ni gérer explicitement l’infrastructure. Pour plus d’informations, consultez la [documentation sur Azure Functions](/azure/azure-functions/).
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
 
-Les outils Azure Functions sont inclus dans **Visual Studio pour Mac 7.5**.
+Les outils Azure Functions sont inclus dans **Visual Studio pour Mac 7.5** et ultérieur.
 
 Pour créer et déployer des fonctions, vous devez également disposer d’un abonnement Azure (disponible gratuitement sur le site [https://azure.com/free](https://azure.com/free)).
 
@@ -34,6 +34,10 @@ Pour créer et déployer des fonctions, vous devez également disposer d’un ab
 3. Sélectionnez le modèle Azure Functions initial à utiliser, entrez le nom de la fonction, puis cliquez sur **Suivant**.
 
     ![Boîte de dialogue Nouveau projet montrant les modèles de fonctions Azure Functions](media/azure-functions-image2.png)
+
+    > [!TIP]
+    > Même si le runtime et les modèles (CLI) d’Azure Functions en bundle sont conservés autant que possible à jour, ils deviennent inévitablement obsolètes. Quand vous créez un projet Functions, Visual Studio pour Mac recherche des mises à jour de l’interface CLI et vous avise, comme indiqué dans l’image ci-dessous. Cliquez simplement sur le bouton pour télécharger les modèles mis à jour.
+    > ![Boîte de dialogue Nouveau projet montrant que des mises à jour Azure Functions sont disponibles](media/azure-functions-update.png)
 
     Selon le type de fonction que vous sélectionnez, la page suivante vous invite à saisir des informations, par exemple les droits d’accès, comme illustré dans l’image qui suit :
 
@@ -91,20 +95,17 @@ Vous pouvez utiliser la procédure ci-dessus pour ajouter davantage de fonctions
 
 ## <a name="publish-to-azure"></a>Publier sur Azure
 
-1. Cliquez avec le bouton droit sur le nom du projet, puis sélectionnez **Publier > Publier sur Azure** : ![Option de menu Publier sur Azure](media/azure-functions-image5.png)
+1. Cliquez avec le bouton droit sur le nom du projet, puis sélectionnez **Publier > Publier sur Azure** :  ![Option de menu Publier sur Azure](media/azure-functions-image5.png)
 2. Si vous avez déjà connecté votre compte Azure à Visual Studio pour Mac, une liste des services d’application disponibles s’affiche. Si vous ne vous êtes pas connecté, vous êtes invité à le faire.
 3. Dans la boîte de dialogue **Publier sur Azure App Service**, sélectionnez un service d’application existant, ou créez un service en cliquant sur **Nouveau**.
-4. Dans la boîte de dialogue **Créer un App Service**, entrez vos paramètres : ![Option de menu Publier sur Azure](media/azure-functions-image7.png)
+4. Dans la boîte de dialogue **Créer un App Service**, entrez vos paramètres :  ![Option de menu Publier sur Azure](media/azure-functions-image7.png)
 
     |Paramètre  |Description  |
     |---------|---------|
     |**Nom de l’App Service**|Nom global unique qui identifie votre nouvelle application de fonction.|
-    |**Abonnement**|Abonnement Azure à utiliser.|
+    |**Abonnement**|Sélectionnez l’abonnement Azure à utiliser.|
     |**[Groupe de ressources](/azure/azure-resource-manager/resource-group-overview)**|Nom du groupe de ressources dans lequel créer votre application de fonction. Choisissez **+** pour créer un groupe de ressources.|
     |**[Plan de service](/azure/azure-functions/functions-scale)**|Choisissez un plan existant, ou créez un plan personnalisé. Choisissez un emplacement dans une région proche de chez vous, ou proche d’autres services auxquels vos fonctions ont accès.|
-
-    > [!CAUTION]
-    > Il existe un bogue dans la version 7.6 de Visual Studio pour Mac, qui entraîne l’échec de la publication avec une erreur de provisionnement, si vous essayez de créer un plan de service personnalisé où **Tarification** a la valeur **Consommation**. Ce problème sera corrigé dans le prochain Service Release.
 
 5. Cliquez sur **Suivant** pour créer un compte de stockage. Un compte de stockage Azure est nécessaire au runtime Azure Functions. Cliquez sur **Personnalisé** pour créer un compte de stockage à usage général, ou utilisez un compte existant :
 
@@ -116,14 +117,11 @@ Vous pouvez utiliser la procédure ci-dessus pour ajouter davantage de fonctions
 
     ![Option de menu Publier sur Azure](media/azure-functions-image12.png)
 
-> [!CAUTION]
-> Il existe un bogue dans la version 7.6 de Visual Studio pour Mac, où `FUNCTIONS_EXTENSION_VERSION` n’est pas correctement défini à « beta », ce qui signifie que votre fonction risque de ne pas s’exécuter. Pour résoudre ce problème, accédez à [Paramètres d’application de fonction](#function-app-settings), puis définissez `FUNCTIONS_EXTENSION_VERSION` en remplaçant « -1 » par « beta ».
-
 ## <a name="function-app-settings"></a>Paramètres d’application de fonction
 
 Les paramètres que vous avez ajoutés au fichier local.settings.json doivent également être ajoutés à l’application de fonction dans Azure. Ces paramètres ne sont pas chargés automatiquement quand vous publiez le projet.
 
-Pour accéder à vos paramètres d’application, accédez au Portail Azure à l’adresse [https://ms.portal.azure.com/](https://ms.portal.azure.com/). Sous **Function Apps**, sélectionnez **Function Apps**, puis sélectionnez le nom de votre fonction :
+Pour accéder à vos paramètres d’application, accédez au portail Azure sur [https://ms.portal.azure.com/](https://ms.portal.azure.com/). Sous **Function Apps**, sélectionnez **Function Apps**, puis sélectionnez le nom de votre fonction :
 
 ![menu Azure Functions](media/azure-functions-image9.png)
 
@@ -133,7 +131,7 @@ Sous l’onglet **Vue d’ensemble**, sélectionnez **Paramètres de l’applica
 
 À partir de cet emplacement, vous pouvez définir les paramètres d’application de l’application de fonction. Vous pouvez ensuite ajouter de nouveaux paramètres d’application ou modifier ceux qui existent déjà :
 
-![zone des paramètres d’application du Portail Azure](media/azure-functions-image11.png)
+![zone des paramètres d’application du portail Azure](media/azure-functions-image11.png)
 
 Vous pouvez être amené à définir un paramètre important : `FUNCTIONS_EXTENSION_VERSION`. Quand vous publiez à partir de Visual Studio pour Mac, cette valeur doit correspondre à **beta**.
 

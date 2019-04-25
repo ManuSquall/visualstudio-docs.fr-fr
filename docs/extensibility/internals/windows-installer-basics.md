@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2712c8d52ffd569f7d422708de612ac322045f8
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: bf47b5c6aa84cb5d5cc961e34161435dc27dd517
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872951"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066258"
 ---
 # <a name="windows-installer-basics"></a>Éléments de base de Windows Installer
 Le programme d’installation de Windows installe et désinstalle des applications ou des produits logiciels sur l’ordinateur d’un utilisateur, effectuer ces tâches dans des unités appelées des composants du programme d’installation de Windows (parfois appelés WICs ou composants uniquement). Un GUID identifie chaque WIC, qui est l’unité de base de l’installation et le décompte de références pour les installations à l’aide du programme d’installation de Windows.
@@ -57,15 +57,15 @@ Le programme d’installation de Windows installe et désinstalle des applicatio
 
 #### <a name="installer-enforced-rules"></a>Règles appliquée par le programme d’installation
 
--   Tous les fichiers dans un composant donné doivent être installés dans le même répertoire. À l’inverse, les fichiers installés pour séparer les dossiers doivent appartenir pour séparer les composants.
+- Tous les fichiers dans un composant donné doivent être installés dans le même répertoire. À l’inverse, les fichiers installés pour séparer les dossiers doivent appartenir pour séparer les composants.
 
--   Il peut y avoir qu’un seul chemin de clé par composant. Le chemin de clé est simplement une fichier ou clé de Registre qui représente le composant dans son intégralité.
+- Il peut y avoir qu’un seul chemin de clé par composant. Le chemin de clé est simplement une fichier ou clé de Registre qui représente le composant dans son intégralité.
 
 #### <a name="component-provider-responsibilities"></a>Responsabilités du fournisseur de composants
 
--   Toutes les deux ressources qui peut être fourni séparément dans les versions ultérieures doivent exister dans des composants distincts. Ressources doivent être regroupés dans le même composant uniquement lorsque vous êtes certain que ces ressources ne seront jamais disponible séparément. En fait, il est recommandé que toutes les principales ressources (DLL, par exemple) existent toujours dans WICs distincts. Pour plus d’informations, consultez [définissant les composants de programme d’installation](/windows/desktop/Msi/defining-installer-components).
+- Toutes les deux ressources qui peut être fourni séparément dans les versions ultérieures doivent exister dans des composants distincts. Ressources doivent être regroupés dans le même composant uniquement lorsque vous êtes certain que ces ressources ne seront jamais disponible séparément. En fait, il est recommandé que toutes les principales ressources (DLL, par exemple) existent toujours dans WICs distincts. Pour plus d’informations, consultez [définissant les composants de programme d’installation](/windows/desktop/Msi/defining-installer-components).
 
--   Aucune ressource de version ne doit expédier jamais dans plusieurs WIC.
+- Aucune ressource de version ne doit expédier jamais dans plusieurs WIC.
 
 ## <a name="see-also"></a>Voir aussi
 - [Que se passe-t-il si les règles de composant sont interrompues ?](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken)

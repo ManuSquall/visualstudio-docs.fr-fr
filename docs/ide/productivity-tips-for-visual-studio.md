@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02c1629b11e33de0ce8a24ffc7f5b939a7841705
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: afe225d111f3e011b5f852b283c9a7ea161ba07a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355761"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813904"
 ---
 # <a name="productivity-tips-for-visual-studio"></a>Conseils de productivité pour Visual Studio
 
@@ -66,7 +66,7 @@ Vous pouvez rechercher des commandes, des fichiers et des options dans l’IDE e
 
 - **Afficher uniquement les erreurs que vous souhaitez traiter**. Si vous sélectionnez le bouton **Filtre** dans la barre d’outils **Liste d’erreurs**, vous pouvez réduire le nombre d’erreurs qui s’affichent dans la fenêtre **Liste d’erreurs**. Vous pouvez afficher uniquement les erreurs des fichiers ouverts dans l'éditeur, uniquement les erreurs du fichier actif ou uniquement les erreurs du projet actif. Vous pouvez également rechercher des erreurs spécifiques dans la fenêtre **Liste d’erreurs**.
 
-- **Recherchez des boîtes de dialogue, des commandes de menu, des options, etc.** Dans la zone de recherche [Lancement rapide](../ide/reference/quick-launch-environment-options-dialog-box.md), entrez les mots clés ou expressions correspondant aux éléments recherchés. Par exemple, les options suivantes apparaissent si vous entrez **nouveau projet** :
+- **Recherchez des boîtes de dialogue, des commandes de menu, des options, etc.** Dans la zone de recherche, entrez les mots clés ou expressions pour les éléments recherchés. Par exemple, les options suivantes apparaissent si vous entrez **nouveau projet** :
 
    ::: moniker range="vs-2017"
 
@@ -78,11 +78,11 @@ Vous pouvez rechercher des commandes, des fichiers et des options dans l’IDE e
 
    ::: moniker range=">=vs-2019"
 
-   ![Résultats de la recherche du lancement rapide pour « nouveau projet »](../ide/media/vs-2019/productivity-quick-launch-new-project.png)
+   ![Résultats de la recherche pour « nouveau projet »](../ide/media/vs-2019/productivity-quick-launch-new-project.png)
 
    ::: moniker-end
 
-   Appuyez sur **Ctrl**+**Q** pour accéder directement à la zone de recherche **Lancement rapide**.
+   Appuyez sur **Ctrl**+**Q** pour accéder directement à la zone de recherche.
 
 ## <a name="debug-code"></a>Déboguer du code
 

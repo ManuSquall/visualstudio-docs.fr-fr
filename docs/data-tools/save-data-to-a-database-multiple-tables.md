@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b5f2296e7dbd6c40327ed516f4da2bf51b8dd4cd
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
-ms.translationtype: MTE95
+ms.openlocfilehash: 9e4a30c3aa85969a4cbf712f2f4018c24169ff6d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268562"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051412"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Enregistrer des données dans une base de données (plusieurs tables)
 
@@ -31,15 +31,15 @@ Vous pouvez enregistrer des données de votre application dans la base de donné
 
 Cette procédure pas à pas décrit notamment les tâches suivantes :
 
--  Création et configuration d’une source de données dans votre application avec le [Assistant de Configuration de Source de données](../data-tools/media/data-source-configuration-wizard.png).
+- Création et configuration d’une source de données dans votre application avec le [Assistant de Configuration de Source de données](../data-tools/media/data-source-configuration-wizard.png).
 
--  Définition des contrôles des éléments dans le [fenêtre Sources de données](add-new-data-sources.md#data-sources-window). Pour plus d’informations, consultez [définir le contrôle à créer lors du déplacement de la fenêtre Sources de données](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+- Définition des contrôles des éléments dans le [fenêtre Sources de données](add-new-data-sources.md#data-sources-window). Pour plus d’informations, consultez [définir le contrôle à créer lors du déplacement de la fenêtre Sources de données](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
--  Création de contrôles liés aux données en faisant glisser des éléments depuis la fenêtre **Sources de données** vers votre formulaire.
+- Création de contrôles liés aux données en faisant glisser des éléments depuis la fenêtre **Sources de données** vers votre formulaire.
 
--  Modification des enregistrements dans chaque table dans le jeu de données.
+- Modification des enregistrements dans chaque table dans le jeu de données.
 
--  Modification du code pour renvoyer les données mises à jour dans le dataset à la base de données.
+- Modification du code pour renvoyer les données mises à jour dans le dataset à la base de données.
 
 ## <a name="prerequisites"></a>Prérequis
 
@@ -65,7 +65,7 @@ Créer un nouveau **Windows Forms application** projet pour soit C# ou Visual Ba
 
 ## <a name="create-the-data-source"></a>Créer la source de données
 
-Cette étape crée une source de données à partir de la base de données Northwind à l’aide de l’**Assistant Configuration de source de données**. Vous devez avoir accès à l'exemple de base de données Northwind pour créer la connexion. Pour plus d’informations sur la configuration de la base de données Northwind, consultez [Comment : installer les bases de données exemple](../data-tools/installing-database-systems-tools-and-samples.md).
+Cette étape crée une source de données à partir de la base de données Northwind à l’aide de l’**Assistant Configuration de source de données**. Vous devez avoir accès à l'exemple de base de données Northwind pour créer la connexion. Pour plus d’informations sur la configuration de la base de données Northwind, consultez [Comment : Installer les bases de données exemple](../data-tools/installing-database-systems-tools-and-samples.md).
 
 1. Sur le **données** menu, sélectionnez **afficher les Sources de données**.
 

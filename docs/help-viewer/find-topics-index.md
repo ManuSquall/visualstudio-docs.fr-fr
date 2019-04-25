@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 74ccafda4600e08436e88bc66f8fd9177cc73401
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d66162b740aa9c6fbd284f44d5f93c88ebe8974d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915703"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557448"
 ---
 # <a name="find-topics-by-using-the-help-viewer-index"></a>Rechercher des rubriques à l’aide de l’index de l’application Help Viewer
 
@@ -30,14 +30,14 @@ L’index contient une liste de mots clés qui sont associés à des rubriques d
 
 Sous l’onglet **Index**, effectuez l’une des tâches suivantes :
 
--   Spécifiez le mot clé à rechercher dans la zone de texte. Par exemple, spécifiez « update » pour rechercher des rubriques avec des mots clés tels que « update », « updated » et « updating ».
+- Spécifiez le mot clé à rechercher dans la zone de texte. Par exemple, spécifiez « update » pour rechercher des rubriques avec des mots clés tels que « update », « updated » et « updating ».
 
     En choisissant le bouton de filtre en haut de l’onglet, vous pouvez afficher toutes les entrées qui contiennent le texte que vous spécifiez ou uniquement celles qui commencent par le texte que vous spécifiez.
 
     > [!NOTE]
     > Quand le bouton de filtre apparaît sur un arrière-plan plus sombre avec une bordure, les entrées doivent _contenir_ le texte que vous spécifiez. Si l’arrière-plan et la bordure n’apparaissent pas, les entrées doivent _commencer_ par le texte que vous spécifiez.
 
--   Faites défiler l’index et choisissez un mot clé.
+- Faites défiler l’index et choisissez un mot clé.
 
     Si le mot clé que vous spécifiez est associé à une seul rubrique, il s’affiche. Sinon, une liste de toutes les rubriques qui sont associés à ce mot clé s’affiche.
 
@@ -47,33 +47,33 @@ L’utilisation de l’index est un processus simple ; toutefois, comprendre co
 
 ### <a name="general-guidelines"></a>Indications générales
 
--   Faites défiler les entrées d’index. Toutes les rubriques ne sont pas indexées de la même façon, et celle qui peut vous aider peut être plus haut ou plus bas que prévu dans la liste.
+- Faites défiler les entrées d’index. Toutes les rubriques ne sont pas indexées de la même façon, et celle qui peut vous aider peut être plus haut ou plus bas que prévu dans la liste.
 
--   Omettez les articles tels que « un » ou « le », car l’index les ignore.
+- Omettez les articles tels que « un » ou « le », car l’index les ignore.
 
--   Inversez les mots entrés si vous ne trouvez pas les entrées souhaitées.
+- Inversez les mots entrés si vous ne trouvez pas les entrées souhaitées.
 
     Par exemple, si « débogage de code assembleur inline » n’affiche aucune entrée correspondante, essayez de taper « code assembleur, débogage inline ».
 
--   Utilisez des filtres avec l’onglet **Index** pour réduire le nombre de résultats.
+- Utilisez des filtres avec l’onglet **Index** pour réduire le nombre de résultats.
 
 ### <a name="syntax-tips"></a>Conseils de syntaxe
 
 Si vous ne trouvez pas d’entrée pour le mot ou l’expression que vous avez entré, essayez ce qui suit :
 
--   Tapez les premières lettres ou la racine du mot. En entrant une chaîne partielle, vous pouvez accéder aux rubriques qui ont été indexées avec des mots clés au singulier ou au pluriel.
+- Tapez les premières lettres ou la racine du mot. En entrant une chaîne partielle, vous pouvez accéder aux rubriques qui ont été indexées avec des mots clés au singulier ou au pluriel.
 
     Par exemple, entrez « propriét » pour commencer votre recherche au-dessus de « propriété » et de « propriétés ».
 
--   Entrez le substantif correspondant au verbe pour la tâche que vous souhaitez effectuer. Pour rechercher des entrées d’index plus spécifiques, ajoutez un mot qui décrit exactement ce que vous voulez.
+- Entrez le substantif correspondant au verbe pour la tâche que vous souhaitez effectuer. Pour rechercher des entrées d’index plus spécifiques, ajoutez un mot qui décrit exactement ce que vous voulez.
 
     Par exemple, tapez « exécution » pour obtenir plus d’entrées et « exécution de programmes » pour en obtenir moins.
 
--   Entrez des adjectifs autonomes. Pour affiner les résultats, ajoutez un mot qui décrit exactement ce que vous voulez.
+- Entrez des adjectifs autonomes. Pour affiner les résultats, ajoutez un mot qui décrit exactement ce que vous voulez.
 
     Par exemple, entrez "COM+" pour obtenir un grand nombre d’entrées ou "composants COM+" pour en obtenir moins.
 
--   Entrez un synonyme du mot ou du verbe que vous recherchez.
+- Entrez un synonyme du mot ou du verbe que vous recherchez.
 
     Par exemple, si vous avez entré le terme « génération », essayez « création » à la place.
 

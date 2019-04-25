@@ -33,12 +33,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: da57824eb467bf1691175a80d74cc61b8f181617
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2a8bc2e1f4c78e32db6fa5e09ec50bdd182f4fa6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952424"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040962"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Gestion des exceptions avec le débogueur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,11 +47,11 @@ Une exception est une indication d'un état d'erreur qui se produit pendant qu'u
   
  Lorsqu'une exception est levée, le débogueur écrit un message d'exception dans la fenêtre Sortie. Cette action peut interrompre l'exécution dans les cas suivants :  
   
--   lorsqu'une exception est levée et n'est pas gérée ;  
+- lorsqu'une exception est levée et n'est pas gérée ;  
   
--   quand le débogueur est configuré pour arrêter immédiatement l’exécution d’une exception qui est levée, avant même l’appel d’un gestionnaire ;  
+- quand le débogueur est configuré pour arrêter immédiatement l’exécution d’une exception qui est levée, avant même l’appel d’un gestionnaire ;  
   
--   si vous avez défini [Just My Code](../debugger/just-my-code.md)et que le débogueur est configuré pour arrêter l’exécution de toute exception non gérée dans le code utilisateur.  
+- si vous avez défini [Just My Code](../debugger/just-my-code.md)et que le débogueur est configuré pour arrêter l’exécution de toute exception non gérée dans le code utilisateur.  
   
 > [!NOTE]
 >  ASP.NET a un gestionnaire d'exceptions de niveau supérieur qui affiche les pages d'erreur dans un navigateur. Il n'interrompt pas l'exécution, à moins que l'option **Uniquement mon code** soit activée. Pour obtenir un exemple, consultez [Setting the debugger to continue on user-unhandled exceptions](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) , ci-dessous.  
@@ -141,7 +141,7 @@ Une exception est une indication d'un état d'erreur qui se produit pendant qu'u
   
    ![Restaurer les valeurs par défaut dans les paramètres d’Exception](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-###  <a name="BKMK_UserUnhandled"></a> Configuration du débogueur pour continuer en cas d’exceptions non gérées par l’utilisateur  
+### <a name="BKMK_UserUnhandled"></a> Configuration du débogueur pour continuer en cas d’exceptions non gérées par l’utilisateur  
  Si vous déboguez du code .NET ou JavaScript avec [Just My Code](../debugger/just-my-code.md), vous pouvez demander au débogueur de ne pas s’arrêter sur les exceptions qui ne sont pas gérées dans le code utilisateur, mais qui sont gérées ailleurs.  
   
 1. Dans la fenêtre **Paramètres d'exception** , ouvrez le menu contextuel en cliquant avec le bouton droit dans la fenêtre, puis en sélectionnant **Afficher les colonnes**. (Si vous avez désactivé **Uniquement mon code**, cette commande n'est pas visible.)  

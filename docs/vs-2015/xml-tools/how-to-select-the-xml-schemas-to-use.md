@@ -1,30 +1,24 @@
 ---
-title: 'Comment : sélectionner les schémas XML à utiliser | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Sélectionnez les schémas XML à utiliser | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: d6fda3ef-d465-4788-8514-2f2d528d658c
 caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 93f573412524619292b1966e87abeda11cc0813a
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: d694fe9bb614acfd80e5ec1b9f6bed166775c214
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49863722"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091473"
 ---
-# <a name="how-to-select-the-xml-schemas-to-use"></a>Procédure : sélectionner les schémas XML à utiliser
+# <a name="how-to-select-the-xml-schemas-to-use"></a>Procédure : Sélectionner les schémas XML à utiliser
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 L'Éditeur XML fournit un cache de schéma dans le répertoire %InstallDir%\Xml\Schemas. Le cache de schéma contient des schémas XML connus utilisés pour IntelliSense et la validation de documents XML.  
   
  Le **schémas** propriété de document est utilisée pour sélectionner un ou plusieurs XML schema definition language (XSD) à utiliser. Elle permet de choisir des schémas dans le cache de schéma ou de spécifier un schéma situé ailleurs dans le cache.  
@@ -42,7 +36,7 @@ L'Éditeur XML fournit un cache de schéma dans le répertoire %InstallDir%\Xml\
   
     Le **schémas XML** boîte de dialogue s’affiche. La boîte de dialogue répertorie tous les schémas portant une extension .xsd dans le cache de schéma (y compris les schémas référencés dans le fichier catalog.xml), et également n’importe quel schéma qui se trouve dans la solution actuelle, ouvrir dans Visual Studio, référencée dans un `xsd:schemaLocation` d’attribut ou référencés dans le **schémas** propriété.  
   
-3. Sélectionnez les schémas à utiliser pour la validation en effectuant l’une des opérations suivantes :  
+3. Sélectionnez les schémas à utiliser pour la validation en effectuant l'une des opérations suivantes :  
   
    - Sélectionnez un schéma dans le **schémas XML** boîte de dialogue, cliquez sur le **utilisation** colonne, puis sélectionnez **utiliser ce schéma**.  
   
@@ -56,23 +50,23 @@ L'Éditeur XML fournit un cache de schéma dans le répertoire %InstallDir%\Xml\
   
 ### <a name="to-add-an-xml-schema-to-the-schema-cache"></a>Pour ajouter un schéma XML au cache de schéma  
   
-1.  Dans la fenêtre de propriétés de document, cliquez sur le bouton sur le **schémas** champ.  
+1. Dans la fenêtre de propriétés de document, cliquez sur le bouton sur le **schémas** champ.  
   
-2.  Cliquez sur **Ajouter**.  
+2. Cliquez sur **Ajouter**.  
   
      Cette opération ouvre le **ouvrir le schéma XSD** boîte de dialogue.  
   
-3.  Recherchez et sélectionnez le ou les schémas à ajouter au cache de schéma.  
+3. Recherchez et sélectionnez le ou les schémas à ajouter au cache de schéma.  
   
-4.  Cliquez sur **Open**.  
+4. Cliquez sur **Ouvrir**.  
   
      Les schémas sont ajoutés au schéma de mettre en cache et est le **utilisation** colonne a la valeur **utiliser ce schéma**.  
   
 ### <a name="to-delete-an-xml-schema-from-the-schema-cache"></a>Pour supprimer un schéma XML du cache de schéma  
   
-1.  Dans la fenêtre de propriétés de document, cliquez sur le bouton sur le **schémas** champ.  
+1. Dans la fenêtre de propriétés de document, cliquez sur le bouton sur le **schémas** champ.  
   
-2.  Sélectionnez le schéma à supprimer, puis cliquez sur **supprimer**.  
+2. Sélectionnez le schéma à supprimer, puis cliquez sur **supprimer**.  
   
      Le schéma est supprimé du cache de schéma en mémoire, mais pas du système de fichiers.  
   
@@ -83,6 +77,3 @@ L'Éditeur XML fournit un cache de schéma dans le répertoire %InstallDir%\Xml\
  [Cache de schéma](../xml-tools/schema-cache.md)   
  [Boîte de dialogue schémas XML](../xml-tools/xml-schemas-dialog-box.md)   
  [Éditeur XML](../xml-tools/xml-editor.md)
-
-
-

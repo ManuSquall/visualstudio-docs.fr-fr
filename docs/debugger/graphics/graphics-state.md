@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d451f7e59774dae37d781f60812003f16120b98a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: f7f4dbeb378f0ac921f42f2ad71d3b5cae8d10ca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692981"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088377"
 ---
 # <a name="graphics-state"></a>État graphique
 La fenêtre État dans Visual Studio Graphics Diagnostics vous permet de comprendre l'état graphique actif au moment de l'événement, par exemple un appel de dessin.
@@ -34,13 +34,13 @@ La fenêtre État dans Visual Studio Graphics Diagnostics vous permet de compren
 
 ##### <a name="to-change-the-state-view"></a>Pour modifier l'affichage des états
 
--   Dans la fenêtre État, dans le coin supérieur gauche juste en dessous de la barre de titre, choisissez le bouton qui correspond au style d'affichage d'état à utiliser.
+- Dans la fenêtre État, dans le coin supérieur gauche juste en dessous de la barre de titre, choisissez le bouton qui correspond au style d'affichage d'état à utiliser.
 
-    -   **Afficher la vue des états de l’entrée API**
+    - **Afficher la vue des états de l’entrée API**
 
-    -   **Afficher la vue des états logiques**
+    - **Afficher la vue des états logiques**
 
-    -   **Afficher la vue des états épinglés**
+    - **Afficher la vue des états épinglés**
 
 > [!IMPORTANT]
 >  Vous devez épingler l’état dans **Afficher la vue des états de l’entrée API** ou dans **Afficher la vue des états logiques** pour qu’il s’affiche dans **Afficher la vue des états épinglés**.
@@ -50,7 +50,7 @@ La fenêtre État dans Visual Studio Graphics Diagnostics vous permet de compren
 
 |Colonne|Description|
 |------------|-----------------|
-|Name|Nom de l'élément d'état. Si cet élément représente un ensemble d'états, vous pouvez développer l'élément pour l'afficher.<br /><br /> Dans la **vue des états de l’entrée API** et dans la **vue des états logiques**, les noms sont mis en retrait pour montrer la relation hiérarchique qui existe entre les états.<br /><br /> Dans l’état **Afficher la vue des états épinglés**, les noms complets sont affichés dans une liste plate.|
+|Nom|Nom de l'élément d'état. Si cet élément représente un ensemble d'états, vous pouvez développer l'élément pour l'afficher.<br /><br /> Dans la **vue des états de l’entrée API** et dans la **vue des états logiques**, les noms sont mis en retrait pour montrer la relation hiérarchique qui existe entre les états.<br /><br /> Dans l’état **Afficher la vue des états épinglés**, les noms complets sont affichés dans une liste plate.|
 |Value|Valeur de l'élément d'état.|
 |Type|Type de l'élément d'état.|
 
@@ -64,8 +64,8 @@ La fenêtre État dans Visual Studio Graphics Diagnostics vous permet de compren
 
 ##### <a name="to-pin-state-in-place"></a>Pour épingler l'état sur place
 
-1.  Dans la fenêtre État, recherchez l'état qui vous intéresse. Vous devrez peut-être développer l'état de niveau supérieur pour trouver les détails qui vous intéressent.
+1. Dans la fenêtre État, recherchez l'état qui vous intéresse. Vous devrez peut-être développer l'état de niveau supérieur pour trouver les détails qui vous intéressent.
 
-2.  Placez le curseur sur l'état qui vous intéresse. Une icône d'épingle s'affiche à gauche de l'élément d'état.
+2. Placez le curseur sur l'état qui vous intéresse. Une icône d'épingle s'affiche à gauche de l'élément d'état.
 
-3.  Choisissez l'icône d'épingle pour épingler l'élément d'état sur place.
+3. Choisissez l'icône d'épingle pour épingler l'élément d'état sur place.

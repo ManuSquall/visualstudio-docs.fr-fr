@@ -1,5 +1,5 @@
 ---
-title: 'CA3010 : Passez en revue de code pour les vulnérabilités d’injection de code XAML'
+title: 'CA3010 : Passez en revue le code pour détecter les vulnérabilités de l’injection XAML'
 ms.date: 04/03/2019
 ms.topic: reference
 author: dotpaul
@@ -10,14 +10,14 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c6d8a94dbda7cbf61ac918025aee176cb95781b2
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: ea53f5e0cddf1dc6c6caf4c7fcfb79af52ce354e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018567"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103691"
 ---
-# <a name="ca3010-review-code-for-xaml-injection-vulnerabilities"></a>CA3010 : Passez en revue de code pour les vulnérabilités d’injection de code XAML
+# <a name="ca3010-review-code-for-xaml-injection-vulnerabilities"></a>CA3010 : Passez en revue le code pour détecter les vulnérabilités de l’injection XAML
 
 |||
 |-|-|
@@ -28,7 +28,7 @@ ms.locfileid: "59018567"
 
 ## <a name="cause"></a>Cause
 
-Potentiellement non fiable demande HTTP d’entrée atteint un <xref:System.Windows.Markup.XamlReader?displayProperty=fullName> méthode de charge.
+Potentiellement non fiable demande HTTP d’entrée atteint un <xref:System.Windows.Markup.XamlReader?displayProperty=nameWithType> méthode de charge.
 
 ## <a name="rule-description"></a>Description de la règle
 

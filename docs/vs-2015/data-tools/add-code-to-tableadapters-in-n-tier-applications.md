@@ -17,17 +17,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 423975825e74b7dab29f19697e1e17fb00430f9c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c3ddcb99163fe3548f020094647566c1779f5d9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948504"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115365"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Ajouter du code aux TableAdapters dans des applications multiniveaux
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Vous pouvez étendre les fonctionnalités d’un `TableAdapter` en créant un fichier de classe partielle pour le `TableAdapter` et ajoutant du code (au lieu d’ajouter du code pour le *DatasetName*. Fichier DataSet.Designer). Classes partielles permettent au code pour une classe spécifique être réparti entre plusieurs fichiers physiques. Pour plus d’informations, consultez [partielle](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448) ou [partial (Type)](http://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334).  
   
  Le code qui définit un `TableAdapter` est généré chaque fois les modifications sont apportées à la `TableAdapter`. Ce code est également généré lorsque des modifications sont apportées pendant l’exécution d’un Assistant qui modifie la configuration de la `TableAdapter`. Pour empêcher votre code d’être supprimé pendant la régénération d’un `TableAdapter`, ajoutez le code au fichier de classe partielle de la `TableAdapter`.  
@@ -44,17 +43,17 @@ Vous pouvez étendre les fonctionnalités d’un `TableAdapter` en créant un fi
   
 ### <a name="to-add-user-code-to-a-tableadapter-in-an-n-tier-application"></a>Pour ajouter du code de l’utilisateur à un TableAdapter dans une architecture multiniveau  
   
-1.  Recherchez le projet qui contient le fichier .xsd (le jeu de données).  
+1. Recherchez le projet qui contient le fichier .xsd (le jeu de données).  
   
-2.  Double-cliquez sur le **.xsd** fichier à ouvrir le jeu de données.  
+2. Double-cliquez sur le **.xsd** fichier à ouvrir le jeu de données.  
   
-3.  Cliquez sur le `TableAdapter` que vous souhaitez ajouter le code et sélectionnez**afficher le Code**.  
+3. Cliquez sur le `TableAdapter` que vous souhaitez ajouter le code et sélectionnez**afficher le Code**.  
   
      Une classe partielle est créée et s’ouvre dans l’éditeur de Code.  
   
-4.  Ajoutez le code à l’intérieur de la déclaration de classe partielle.  
+4. Ajoutez le code à l’intérieur de la déclaration de classe partielle.  
   
-5.  L’exemple suivant montre où ajouter le code pour le `CustomersTableAdapter` dans le `NorthwindDataSet`:  
+5. L’exemple suivant montre où ajouter le code pour le `CustomersTableAdapter` dans le `NorthwindDataSet`:  
   
     ```vb  
     Partial Public Class CustomersTableAdapter  

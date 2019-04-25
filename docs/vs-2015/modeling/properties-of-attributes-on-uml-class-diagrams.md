@@ -1,12 +1,9 @@
 ---
 title: Propriétés d’attributs sur UML des diagrammes de classes | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: reference
 f1_keywords:
 - vs.teamarch.logicalclassdiagram.attribute.properties
 helpviewer_keywords:
@@ -15,13 +12,13 @@ ms.assetid: ba01e064-7424-4e72-98fa-42fa1c30e153
 caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 0129242593596ea7e3875db2a748045c50863c4c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 24575f125c07a016bef4742e010cbdd51f6c75e9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51817358"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647931"
 ---
 # <a name="properties-of-attributes-on-uml-class-diagrams"></a>Propriétés d’attributs dans des diagrammes de classes UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,19 +38,18 @@ Dans un diagramme de classes UML, vous pouvez ajouter des *attributs* aux classe
 
  \+ Indique une visibilité publique. Les autres valeurs autorisées sont - (privé), # (protégé), ~ (package).  
 
- `AttributeName` est souligné si l'attribut est statique.  
+ `AttributeName` est souligné si l’attribut est statique.  
 
- `: TypeName` est omis si l'attribut n'a aucun type.  
+ `: TypeName` est omis si l’attribut n’a aucun type.  
 
- `[*]` indique la multiplicité. Il est omis si la multiplicité est de 1.  
+ `[*]` indique la multiplicité. Il est omis si la multiplicité est de 1.  
 
-## <a name="properties"></a>Propriétés  
+## <a name="properties"></a>Properties  
  Le tableau suivant décrit les propriétés d’un attribut dans une classe ou une interface dans un diagramme de classes UML.  
 
  Pour afficher les propriétés d’un attribut, cliquez avec le bouton droit sur l’attribut dans la classe ou l’interface sur le diagramme, puis cliquez sur **Propriétés**. Les propriétés s’affichent dans la fenêtre Propriétés.  
 
  Pour afficher les propriétés d’un attribut, cliquez avec le bouton droit dessus, puis cliquez sur **Propriétés**.  
-
 
 |   **Property**    | **Default**  |                                                                                                                                                                                                         Description                                                                                                                                                                                                          |
 |-------------------|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -61,7 +57,7 @@ Dans un diagramme de classes UML, vous pouvez ajouter des *attributs* aux classe
 | **Est en lecture seule**  |    False     |                                                                                                                                                                                    Si la valeur est true, la valeur de l’attribut ne peut pas être modifiée.                                                                                                                                                                                    |
 |   **Est statique**   |    False     |                                                                                                                    Si la valeur est true, une valeur unique pour cet attribut est partagée entre toutes les instances de ce type.<br /><br /> Si la valeur est true, le nom de l’attribut est souligné là où il apparaît sur le diagramme.                                                                                                                    |
 |     **Name**      | (un nouveau nom) |                                                                                                                                                                                        Doit être unique dans le classifieur propriétaire.                                                                                                                                                                                        |
-|     **Type**      |    (aucune)    |                                                Type primitif, comme **Entier**, ou type défini dans le modèle. Vous ne pouvez pas utiliser des types non primitifs comme **Décimal** , car la valeur doit être encodée dans les métadonnées. Si vous entrez un nom pour un nouveau type dans cette propriété, un type est ajouté à la section **Types non spécifiés** de l’Explorateur de modèles UML.                                                 |
+|     **Type**      |    (aucun)    |                                                Type primitif, comme **Entier**, ou type défini dans le modèle. Vous ne pouvez pas utiliser des types non primitifs comme **Décimal** , car la valeur doit être encodée dans les métadonnées. Si vous entrez un nom pour un nouveau type dans cette propriété, un type est ajouté à la section **Types non spécifiés** de l’Explorateur de modèles UML.                                                 |
 |  **Visibilité**   |    Public    |                                     Les valeurs autorisées et les caractères qui apparaissent dans la signature sont les suivants :<br /><br /> **+ Public** - visible globalement<br /><br /> **- Privé** : non visible en dehors du type propriétaire<br /><br /> **# Protégé** : visible pour les types dérivés du propriétaire<br /><br /> **~ Package** : visible pour d’autres types au sein du même package                                      |
 |  **Éléments de travail**   | {0} associé |                                                                                                                          Nombre d’éléments de travail associés. Lecture seule.<br /><br /> Pour plus d’informations, consultez [lier des éléments de modèle et des éléments de travail](../modeling/link-model-elements-and-work-items.md).                                                                                                                           |
 |    **Est une feuille**    |    False     |                                                                                                                                                                    Si la valeur est true, l’autorisation de la redéfinition de cet attribut dans les types dérivés n’est pas prévue.                                                                                                                                                                     |
@@ -69,14 +65,11 @@ Dans un diagramme de classes UML, vous pouvez ajouter des *attributs* aux classe
 |  **Description**  |   (vide)    |                                                                                                                                                                        Pour des remarques générales ou pour définir des contraintes sur les valeurs dans l’attribut.                                                                                                                                                                        |
 | **Multiplicité**  |      1       | **1** - cet attribut a une valeur unique du type spécifié.<br /><br /> **0..1** - cet attribut peut avoir la valeur `null`.<br /><br /> **\\**\* -valeur de cet attribut est une collection de valeurs.<br /><br /> **1..\\**  \* -valeur de cet attribut est une collection qui contient au moins une valeur.<br /><br /> *n* **..** *m* - la valeur de cet attribut est une collection qui contient entre *n* et *m* valeurs. |
 |  **Est ordonné**   |    False     |                                                                                                                                                                    Si la valeur est true, la collection forme une liste séquentielle. Pour une valeur **Multiplicité** supérieure à 1.                                                                                                                                                                     |
-|   **Est Unique**   |    False     |                                                                                                                                                                Si la valeur est true, la collection ne contient pas de valeur en double. Pour une valeur **Multiplicité** supérieure à 1.                                                                                                                                                                |
+|   **Est unique**   |    False     |                                                                                                                                                                Si la valeur est true, la collection ne contient pas de valeur en double. Pour une valeur **Multiplicité** supérieure à 1.                                                                                                                                                                |
 
 ## <a name="see-also"></a>Voir aussi  
- [Diagrammes de classes UML : référence](../modeling/uml-class-diagrams-reference.md)   
+ [Diagrammes de classes UML : Référence](../modeling/uml-class-diagrams-reference.md)   
  [Propriétés de types de diagrammes de classes UML](../modeling/properties-of-types-on-uml-class-diagrams.md)   
  [Propriétés d’opérations sur les diagrammes de classes UML](../modeling/properties-of-operations-on-uml-class-diagrams.md)   
- [Diagrammes de classes UML : indications](../modeling/uml-class-diagrams-guidelines.md)   
- [Diagrammes de classes UML : recommandations](../modeling/uml-class-diagrams-guidelines.md)
-
-
-
+ [Diagrammes de classes UML : Instructions](../modeling/uml-class-diagrams-guidelines.md)   
+ [Diagrammes de classes UML : Recommandations](../modeling/uml-class-diagrams-guidelines.md)

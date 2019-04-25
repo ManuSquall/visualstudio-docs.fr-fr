@@ -12,12 +12,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: f6f9f2ad3d9eb1e9aca68250c2d9e0702027f687
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 2ee368224eb4991a2f1f167d565bd2b07f85d4c6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867324"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072174"
 ---
 # <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>Procédure pas à pas : Ajoutez le XAML personnalisé à la page de démarrage
 
@@ -25,11 +25,11 @@ Cette procédure pas à pas montre comment créer une page de démarrage personn
 
 ## <a name="add-custom-xaml"></a>Ajoutez le XAML personnalisé
 
-1.  Créer une page de démarrage en suivant les instructions dans [créer une page de démarrage personnalisée](../extensibility/creating-a-custom-start-page.md).
+1. Créer une page de démarrage en suivant les instructions dans [créer une page de démarrage personnalisée](../extensibility/creating-a-custom-start-page.md).
 
-2.  Dans le *MainWindow.xaml* de fichiers, recherchez le \<grille > section.
+2. Dans le *MainWindow.xaml* de fichiers, recherchez le \<grille > section.
 
-3.  Ajouter un \<TabControl > élément et un \<TabItem > à l’intérieur de la \< grille > élément, comme indiqué dans l’exemple suivant.
+3. Ajouter un \<TabControl > élément et un \<TabItem > à l’intérieur de la \< grille > élément, comme indiqué dans l’exemple suivant.
 
     ```xml
     <Grid>
@@ -41,7 +41,7 @@ Cette procédure pas à pas montre comment créer une page de démarrage personn
     </Grid>
     ```
 
-4.  Ajoutez une deuxième \<TabItem >, avec un \<bouton > élément qui ouvre un nouveau projet :
+4. Ajoutez une deuxième \<TabItem >, avec un \<bouton > élément qui ouvre un nouveau projet :
 
     ```xml
     <Grid>
@@ -61,25 +61,25 @@ Cette procédure pas à pas montre comment créer une page de démarrage personn
 
 ## <a name="test-the-custom-start-page"></a>Tester la page de démarrage personnalisée
 
-1.  Appuyez sur **F5**.
+1. Appuyez sur **F5**.
 
      L’instance expérimentale de Visual Studio s’ouvre, avec la page de démarrage personnalisée installée mais ne pas sélectionnée.
 
-2.  Dans l’instance expérimentale de Visual Studio, ouvrez le **Outils /Options / environnement** page.
+2. Dans l’instance expérimentale de Visual Studio, ouvrez le **Outils /Options / environnement** page.
 
-3.  Sélectionnez **démarrage**. Sur le **personnaliser la Page de démarrage** liste, sélectionnez votre *.xaml* de fichiers, puis cliquez sur **OK**.
+3. Sélectionnez **démarrage**. Sur le **personnaliser la Page de démarrage** liste, sélectionnez votre *.xaml* de fichiers, puis cliquez sur **OK**.
 
-4.  Dans le menu **Affichage** , cliquez sur **Page de démarrage**.
+4. Dans le menu **Affichage** , cliquez sur **Page de démarrage**.
 
-5.  Cliquez sur le **Bing** onglet.
+5. Cliquez sur le **Bing** onglet.
 
      Vous devez voir une page web de Bing.
 
-6.  Cliquez sur le **MyButton** onglet.
+6. Cliquez sur le **MyButton** onglet.
 
      Vous devez voir un **MonProjet** bouton, ce qui ouvre le **nouveau projet** boîte de dialogue.
 
-7.  Fermez l’instance expérimentale.
+7. Fermez l’instance expérimentale.
 
 Pour appliquer la page de démarrage personnalisée dans **outils** > **Options** > **environnement**, sélectionnez **démarrage**. Sur le **personnaliser la Page de démarrage** liste, sélectionnez votre *.xaml* de fichiers, puis cliquez sur **OK**.
 

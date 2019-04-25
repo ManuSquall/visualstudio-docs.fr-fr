@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d03ef199e0c1c4ea3684287e1621e6d9b5fc52f8
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: a770cf1ded0ef85e92f192398b03aa2015502fdf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315532"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789655"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Procédure : Utiliser uniquement le clavier
 
@@ -55,19 +55,19 @@ Vous pouvez ajouter un contrôle sur la boîte à outils dans un formulaire ou u
 
 ### <a name="to-set-dialog-box-options-from-the-keyboard"></a>Pour définir des options de boîte de dialogue à l’aide du clavier
 
-1.  Utilisez les touches **Tab** ou **Maj** + **Tab** pour monter ou descendre dans les contrôles de la boîte de dialogue.
+1. Utilisez les touches **Tab** ou **Maj** + **Tab** pour monter ou descendre dans les contrôles de la boîte de dialogue.
 
-2.  Pour modifier les paramètres des options :
+2. Pour modifier les paramètres des options :
 
-    -   Pour les cases d’option, utilisez les touches **Haut** et **Bas** pour changer la sélection.
+    - Pour les cases d’option, utilisez les touches **Haut** et **Bas** pour changer la sélection.
 
-    -   Pour les cases à cocher, utilisez la touche **Espace** pour sélectionner ou désélectionner.
+    - Pour les cases à cocher, utilisez la touche **Espace** pour sélectionner ou désélectionner.
 
-    -   Pour les listes déroulantes, utilisez **Alt** + **Bas** pour afficher les éléments, puis utilisez **Haut** et **Bas** pour changer l’élément sélectionné.
+    - Pour les listes déroulantes, utilisez **Alt** + **Bas** pour afficher les éléments, puis utilisez **Haut** et **Bas** pour changer l’élément sélectionné.
 
-    -   Pour les boutons, appuyez sur **Entrée** pour les appeler.
+    - Pour les boutons, appuyez sur **Entrée** pour les appeler.
 
-    -   Pour les grilles, utilisez les touches de direction pour naviguer. Pour les listes déroulantes, utilisez **Maj** + **Alt** + **Bas** pour afficher les éléments, puis utilisez **Haut** et **Bas** pour changer l’élément sélectionné.
+    - Pour les grilles, utilisez les touches de direction pour naviguer. Pour les listes déroulantes, utilisez **Maj** + **Alt** + **Bas** pour afficher les éléments, puis utilisez **Haut** et **Bas** pour changer l’élément sélectionné.
 
 ## <a name="window-and-file-navigation"></a>Navigation dans les fenêtres et les fichiers
 
@@ -75,29 +75,29 @@ Vous pouvez ajouter un contrôle sur la boîte à outils dans un formulaire ou u
 
 ### <a name="to-navigate-among-windows-and-files-in-the-ide-from-the-keyboard"></a>Pour naviguer entre les fenêtres et les fichiers dans l’IDE à l’aide du clavier
 
--   Pour vous déplacer entre les fichiers dans un éditeur ou un concepteur, choisissez les touches Ctrl+Tab pour afficher le navigateur IDE avec l’option **Fichiers actifs** sélectionnée. Choisissez la touche Entrée pour accéder au fichier mis en surbrillance.
+- Pour vous déplacer entre les fichiers dans un éditeur ou un concepteur, choisissez les touches Ctrl+Tab pour afficher le navigateur IDE avec l’option **Fichiers actifs** sélectionnée. Choisissez la touche Entrée pour accéder au fichier mis en surbrillance.
 
--   Pour vous déplacer entre les fenêtres Outil ancrées, choisissez Alt+F7 pour afficher le navigateur IDE avec l’option **Fenêtres Outil actives** sélectionnée. Choisissez la touche Entrée pour accéder à la fenêtre mise en surbrillance.
+- Pour vous déplacer entre les fenêtres Outil ancrées, choisissez Alt+F7 pour afficher le navigateur IDE avec l’option **Fenêtres Outil actives** sélectionnée. Choisissez la touche Entrée pour accéder à la fenêtre mise en surbrillance.
 
 ### <a name="to-move-and-dock-tool-windows-from-the-keyboard"></a>Pour déplacer et ancrer les fenêtres Outil à l’aide du clavier
 
-1.  Accédez à la fenêtre Outil que vous voulez déplacer et appliquez-lui le focus.
+1. Accédez à la fenêtre Outil que vous voulez déplacer et appliquez-lui le focus.
 
-2.  Dans le menu **Fenêtre**, cliquez sur **Ancrable**.
+2. Dans le menu **Fenêtre**, cliquez sur **Ancrable**.
 
-3.  Appuyez sur **Alt** + **Espace**, puis choisissez **Déplacer**.
+3. Appuyez sur **Alt** + **Espace**, puis choisissez **Déplacer**.
 
      Le losange d’ancrage s’affiche.
 
-4.  Utilisez les touches de **direction** pour déplacer la fenêtre vers un nouvel emplacement.
+4. Utilisez les touches de **direction** pour déplacer la fenêtre vers un nouvel emplacement.
 
      Le pointeur de la souris se déplace avec la fenêtre lorsque vous utilisez les touches de **direction**.
 
-5.  Lorsque vous avez atteint le nouvel emplacement, utilisez les touches de **direction** pour placer le pointeur de la souris sur la partie appropriée du losange.
+5. Lorsque vous avez atteint le nouvel emplacement, utilisez les touches de **direction** pour placer le pointeur de la souris sur la partie appropriée du losange.
 
      Le contour de la fenêtre Outil apparaît au nouvel emplacement d’ancrage.
 
-6.  Appuyez sur **Entrée**.
+6. Appuyez sur **Entrée**.
 
      La fenêtre Outil s’aligne sur le nouvel emplacement d’ancrage.
 

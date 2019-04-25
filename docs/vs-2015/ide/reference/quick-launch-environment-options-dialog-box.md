@@ -15,17 +15,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2fba7e236dee275048d27c8377c819873f2fbad0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 91b62fa8384bd2e0e9e90e9c9057a89e61869a2a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782279"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658615"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Lancement rapide, Environnement, boîte de dialogue Options
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Vous pouvez utiliser **Lancement rapide** pour rechercher et exécuter rapidement des actions pour les ressources de l’IDE, comme les options, les modèles ou les menus. Vous ne pouvez pas utiliser **Lancement rapide** pour rechercher du code et des symboles. La zone de recherche **Lancement rapide** se trouve dans le coin supérieur droit de la barre de menus et est accessible via Ctrl+Q. Entrez simplement votre chaîne de recherche dans la zone. Pour rechercher des chaînes qui contiennent des @, utilisez @@.  
   
  L’option **Lancement rapide** est activée par défaut quand vous installez Visual Studio. Dans la barre de menus, vous pouvez afficher ou masquer **Lancement rapide** en choisissant **Outils**, **Options**. Développez le nœud **Environnements**, puis choisissez **Lancement rapide**. Cochez ou décochez la case **Activer le menu de lancement rapide**. Vous pouvez également activer ou désactiver des catégories de recherche sur cette page.  
@@ -40,7 +39,7 @@ Vous pouvez utiliser **Lancement rapide** pour rechercher et exécuter rapidemen
 |Les dernières utilisées|@mru<br /><br /> Par exemple, `@mru font`.|Affiche jusqu’à cinq des éléments que vous avez **utilisés le plus récemment**.|  
 |Menus|@menu<br /><br /> Par exemple, `@menu font`.|Limite la recherche aux éléments de menu.|  
 |Options|@opt<br /><br /> Par exemple, `@opt font`.|Limite la recherche aux paramètres de la boîte de dialogue **Options**.|  
-|Documents|@doc<br /><br /> Par exemple, `@doc font`.|Limite la recherche aux noms et aux chemins d’accès de fichiers des documents ouverts pour les critères de recherche, mais ne recherche pas le texte dans les fichiers eux-mêmes.|  
+|Documents|@doc<br /><br /> Par exemple, `@doc font`.|Limite la recherche aux noms et aux chemins d'accès de fichiers des documents ouverts pour les critères de recherche, mais ne recherche pas le texte dans les fichiers eux-mêmes.|  
   
 > [!NOTE]
 >  Vous pouvez changer les touches de raccourci dans la page **Général**, **Clavier** de la boîte de dialogue **Options**.  

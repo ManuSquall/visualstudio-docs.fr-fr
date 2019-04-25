@@ -1,6 +1,6 @@
 ---
-title: Création d'une interface utilisateur à l'aide du concepteur XAML
-ms.date: 11/05/2018
+title: Création d’une interface utilisateur à l’aide du concepteur XAML
+ms.date: 03/28/2019
 ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 6c84017ac7cbeb33e4ce63297ade66d54dfa152b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3cd26f35111fc2e79290b30e7ae488b268e558d0
+ms.sourcegitcommit: f17e3afa5c324595afccf15a8a69df8c33b873d5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955191"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58658864"
 ---
 # <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>Créer une interface utilisateur avec le concepteur XAML dans Visual Studio
 
@@ -104,56 +104,9 @@ La barre Mode fractionné apparaît en haut du mode XAML quand l'éditeur XAML s
 
 Le zoom de balisage permet de dimensionner l’affichage **XAML**. Vous pouvez effectuer un zoom de 20 % à 400 %.
 
-## <a name="device-window"></a>Fenêtre Périphérique
-
-> [!NOTE]
-> Si la version de la plateforme cible (`TargetPlatformVersion`) d’une application UWP est 10.0.16299.0 ou ultérieure, la fenêtre **Appareil** n’est pas disponible.
-
-La fenêtre **Appareil** du concepteur XAML vous permet de faire des simulations à l’aide de plusieurs vues, écrans et options d’affichage pour votre projet au moment du design. La fenêtre **Appareil** est disponible dans le menu **Design** quand vous travaillez dans le concepteur XAML. Voici à quoi elle ressemble :
-
-![Fenêtre Périphérique](../designers/media/xaml_editor_device_panel.png)
-
-Les options disponibles dans la fenêtre Périphérique sont les suivantes :
-
-**Afficher**
-
-Spécifie différentes tailles et résolutions d'affichage pour votre application.
-
-**Orientation**
-
-Spécifie différentes orientations de l’application : **Paysage** ou **Portrait**.
-
-**Bord**
-
-Spécifie différents alignements de bord de votre application : **Les deux**, **Gauche**, **Droit**ou **Aucun**.
-
-**Contraste élevé**
-
-Affiche un aperçu de l'application en fonction du paramètre de contraste sélectionné Ce paramètre, quand il est défini sur une valeur différente de **Par défaut**, remplace la propriété `RequestedTheme` définie dans *App.xaml*.
-
-**Substituer la mise à l'échelle**
-
-Active ou désactive l'émulation de la mise à l'échelle de document dans l'aire de conception. Cela vous permet d'augmenter le pourcentage de mise à l'échelle d'un facteur. Cochez la case pour activer l'émulation. Par exemple, si votre pourcentage de mise à l'échelle est de 100 %, le document dans l'aire de conception bénéficiera d'une mise à l'échelle pouvant atteindre 140 %. Cette option est désactivée si le pourcentage de mise à l'échelle actuel est 180.
-
-**Largeur minimale**
-
-Spécifie le paramètre de largeur minimale. La largeur minimale peut être changée dans *App.xaml*.
-
-**Thème**
-
-Spécifie le thème d'application. Par exemple, vous pouvez basculer entre un thème **Sombre** et un thème **Clair**.
-
-**Afficher le chrome**
-
-Active et désactive le frame de tablette simulée autour de votre application en mode Création. Cochez la case pour afficher le frame.
-
-**Détourer pour afficher**
-
-Spécifie le mode d'affichage. Cochez la case pour détourer la taille du document selon la taille d'affichage.
-
 ## <a name="document-outline-window"></a>Fenêtre Structure du document
 
-La fenêtre Structure du document dans le concepteur XAML vous permet d'effectuer les tâches suivantes :
+La fenêtre Structure du document dans le concepteur XAML est similaire à la fenêtre **Objets et chronologie** dans Blend pour Visual Studio. La **structure du document** vous permet d’effectuer ces tâches :
 
 - Afficher la structure hiérarchique de tous les éléments de la planche graphique.
 
@@ -165,7 +118,7 @@ La fenêtre Structure du document dans le concepteur XAML vous permet d'effectue
 
 Pour afficher la fenêtre **Structure du document**, dans la barre de menus, choisissez **Affichage** > **Autres fenêtres** > **Structure du document**.
 
-![Fenêtre Structure du document](../designers/media/xaml_editor_doc_outline.png)
+![Fenêtre Structure du document dans Visual Studio](../designers/media/document-outline-window.png)
 
 Les options disponibles dans la fenêtre **Structure du document** sont les suivantes :
 
@@ -189,9 +142,13 @@ L’option en haut de la fenêtre **Structure du document**, qui présente un sy
 
 La fenêtre **Propriétés** vous permet de définir des valeurs de propriété sur les contrôles. Voici à quoi elle ressemble :
 
-![Fenêtre Propriétés](../designers/media/xaml_editor_prop_window.png)
+![Fenêtre Propriétés](../designers/media/xaml-designer-properties-window.png)
 
-Plusieurs options apparaissent en haut de la fenêtre **Propriétés**. Vous pouvez modifier le nom de l'élément actuellement sélectionné à l'aide de la zone **Nom** . Dans le coin supérieur gauche, il existe une icône qui représente l'élément actuellement sélectionné. Pour réorganiser les propriétés par catégorie ou par ordre alphabétique, cliquez sur **Catégorie**, **Nom**ou **Source** dans la liste **Réorganiser par** . Pour afficher la liste des événements pour un contrôle, cliquez sur le bouton **Événements** , symbolisé par un éclair. Pour rechercher une propriété, commencez à taper son nom dans la zone **Propriétés de recherche** . La fenêtre **Propriétés** affiche les propriétés correspondant aux termes de recherche en cours de frappe. Certaines propriétés vous permettent de définir des propriétés avancées en sélectionnant un bouton de flèche vers le bas. Pour plus d’informations sur l’utilisation des propriétés et la gestion des événements, consultez [Présentation des contrôles et des modèles](/windows/uwp/design/controls-and-patterns/controls-and-events-intro)
+Plusieurs options apparaissent en haut de la fenêtre **Propriétés**. Vous pouvez modifier le nom de l'élément actuellement sélectionné à l'aide de la zone **Nom** . Dans le coin supérieur gauche, il existe une icône qui représente l'élément actuellement sélectionné. Pour réorganiser les propriétés par catégorie ou par ordre alphabétique, cliquez sur **Catégorie**, **Nom**ou **Source** dans la liste **Réorganiser par** . Pour afficher la liste des événements pour un contrôle, cliquez sur le bouton **Événements** , symbolisé par un éclair.
+
+Pour rechercher une propriété, commencez à taper son nom dans la zone de recherche. La fenêtre **Propriétés** affiche les propriétés correspondant aux termes de recherche en cours de frappe. Certaines propriétés vous permettent de définir des propriétés avancées en sélectionnant un bouton de flèche vers le bas.
+
+Pour plus d’informations sur l’utilisation des propriétés et la gestion des événements, consultez [Présentation des contrôles et des modèles](/windows/uwp/design/controls-and-patterns/controls-and-events-intro)
 
 À droite de chaque valeur de propriété figure un *marqueur de propriété* qui apparaît comme un symbole de zone. L'apparence du marqueur de propriété indique s'il y a une liaison de données ou une ressource appliquée à la propriété. Par exemple, un symbole de zone vide indique une valeur par défaut, un symbole de zone noire indique généralement qu'une ressource locale a été appliquée, et enfin une zone orange indique généralement qu'une liaison de données a été appliquée. Quand vous cliquez sur le marqueur de propriété, vous pouvez accéder à la définition d'un style, ouvrir le générateur de liaisons de données ou ouvrir le sélecteur de ressources.
 

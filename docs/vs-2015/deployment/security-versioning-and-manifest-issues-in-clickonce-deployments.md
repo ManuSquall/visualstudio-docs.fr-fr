@@ -24,12 +24,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1227dea199ebff465fc2dde3ec30568bb50e9ec6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e971271d17c88780ec543ffc12ed4c6ebcc48f23
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951651"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043678"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Problèmes liés à la sécurité, au contrôle de version et aux manifestes dans les déploiements ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,11 +67,11 @@ Il existe une variété de problèmes avec [!INCLUDE[ndptecclick](../includes/nd
   
  Si vous avez modifié manuellement vos manifestes de déploiement ou d’application, vous avez endommagés volontairement leur. Un manifeste endommagé empêche une correct [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] installation. Vous pouvez déboguer ces erreurs en cours d’exécution en cliquant sur **détails** sur le **erreur ClickOnce** boîte de dialogue et en lisant le message d’erreur dans le journal. Le journal répertorie l’un des messages suivants :  
   
--   Une description de l’erreur de syntaxe et le numéro de ligne et position où l’erreur s’est produite.  
+- Une description de l’erreur de syntaxe et le numéro de ligne et position où l’erreur s’est produite.  
   
--   Le nom d’un élément ou un attribut utilisé en violation de schéma du manifeste. Si vous avez ajouté manuellement XML à vos manifestes, vous devrez comparer vos ajouts aux schémas de manifeste. Pour plus d’informations, consultez [du manifeste de déploiement ClickOnce](../deployment/clickonce-deployment-manifest.md) et [manifeste d’Application ClickOnce](../deployment/clickonce-application-manifest.md).  
+- Le nom d’un élément ou un attribut utilisé en violation de schéma du manifeste. Si vous avez ajouté manuellement XML à vos manifestes, vous devrez comparer vos ajouts aux schémas de manifeste. Pour plus d’informations, consultez [du manifeste de déploiement ClickOnce](../deployment/clickonce-deployment-manifest.md) et [manifeste d’Application ClickOnce](../deployment/clickonce-application-manifest.md).  
   
--   Un conflit d’ID. Références de dépendance dans les manifestes d’application et de déploiement doivent être uniques à la fois dans leur `name` et `publicKeyToken` attributs. Si les deux attributs correspondent entre deux éléments d’un manifeste, l’analyse du manifeste ne réussira pas.  
+- Un conflit d’ID. Références de dépendance dans les manifestes d’application et de déploiement doivent être uniques à la fois dans leur `name` et `publicKeyToken` attributs. Si les deux attributs correspondent entre deux éléments d’un manifeste, l’analyse du manifeste ne réussira pas.  
   
 ## <a name="precautions-when-manually-changing-manifests-or-applications"></a>Précautions lorsque vous modifiez manuellement les manifestes ou des Applications  
  Lorsque vous mettez à jour un manifeste d’application, vous devez resigner le manifeste d’application et le manifeste de déploiement. Le manifeste de déploiement contient une référence au manifeste d’application qui inclut le hachage de ce fichier et sa signature numérique.  

@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour instrumenter un composant autonome natif et collecter les données chronologiques avec le profileur à partir de la ligne de commande | Microsoft Docs
+title: 'Procédure : Instrumenter un composant autonome natif et collecter des données chronologiques avec le profileur en ligne de commande | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,14 +9,14 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 13245f28ac758685c95acdc11bbe92489724f5e4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d98481630ee3f02a96ec0670404c3f9d77e5d5d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54757106"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048825"
 ---
-# <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Comment : instrumenter un composant autonome natif et collecter des données de temporisation avec le profileur à partir de la ligne de commande
+# <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>Procédure : Instrumenter un composant autonome natif et collecter des données de temporisation avec le Profiler à partir de la ligne de commande
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette rubrique explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour instrumenter un composant natif comme un fichier .exe ou .dll C++, et pour collecter des données chronologiques détaillées.  
@@ -56,7 +56,6 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                À utiliser avec **/wincounter** uniquement. Spécifie le nombre de millisecondes écoulées entre les événements de collecte du compteur de performances Windows. La valeur par défaut est de 500 ms.                                                                                |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                  Spécifie l’événement du Suivi d’événements pour Windows (ETW) qui doit être collecté au cours du profilage. Les événements ETW sont collectés dans un fichier séparé (.etl).                                                                                   |
 
-
 4. Démarrez l’application cible de manière habituelle.  
 
 ## <a name="controlling-data-collection"></a>Contrôle de la collection de données  
@@ -64,7 +63,7 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
 
 #### <a name="to-start-and-stop-data-collection"></a>Pour démarrer et arrêter la collecte de données  
 
--   Les paires d’options suivantes permettent de démarrer et d’arrêter la collecte des données. Spécifiez chaque option sur une ligne de commande distincte. Vous pouvez activer et désactiver la collecte de données à plusieurs reprises.  
+- Les paires d’options suivantes permettent de démarrer et d’arrêter la collecte des données. Spécifiez chaque option sur une ligne de commande distincte. Vous pouvez activer et désactiver la collecte de données à plusieurs reprises.  
 
     |Option|Description|  
     |------------|-----------------|  
@@ -77,9 +76,9 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
 
 #### <a name="to-end-a-profiling-session"></a>Pour terminer une session de profilage  
 
-1.  Fermez l’application cible.  
+1. Fermez l’application cible.  
 
-2.  Fermez le profileur. Type :  
+2. Fermez le profileur. Type :  
 
      **VSPerfCmd /shutdown**  
 

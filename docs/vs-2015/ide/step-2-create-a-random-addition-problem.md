@@ -9,30 +9,30 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 403dda0aa915e2a969b5bc9eef2be82ba58b2e33
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 318caec1f96bc0b69a6fe9540231608a8636e107
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804654"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099494"
 ---
-# <a name="step-2-create-a-random-addition-problem"></a>Étape 2 : créer un problème d'addition aléatoire
+# <a name="step-2-create-a-random-addition-problem"></a>Étape 2 : Créer un problème d’addition aléatoire
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Dans la deuxième partie de ce didacticiel, vous rendez le questionnaire plus difficile en ajoutant des problèmes mathématiques basés sur des nombres aléatoires. Vous créez également une méthode qui s'appelle `StartTheQuiz()` et qui renseigne les problèmes et démarre le temporisateur. Plus tard dans ce didacticiel, vous ajouterez des problèmes de soustraction, de multiplication et de division.  
   
 > [!NOTE]
->  Cette rubrique fait partie d'une série de didacticiels sur les concepts de codage de base. Pour obtenir une vue d’ensemble du didacticiel, consultez [Didacticiel 2 : créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md).  
+>  Cette rubrique fait partie d'une série de didacticiels sur les concepts de codage de base. Pour obtenir une vue d’ensemble du tutoriel, consultez [Tutoriel 2 : Créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
 ### <a name="to-create-a-random-addition-problem"></a>Pour créer un problème d'addition aléatoire  
   
-1.  Dans le concepteur de formulaires, choisissez le formulaire (Form1).  
+1. Dans le concepteur de formulaires, choisissez le formulaire (Form1).  
   
-2.  Dans la barre de menus, sélectionnez **Afficher**, **Code**.  
+2. Dans la barre de menus, sélectionnez **Afficher**, **Code**.  
   
      Form1.cs ou Form1.vb apparaît, en fonction du langage de programmation que vous utilisez, pour que vous puissiez afficher le code utilisé pour le formulaire.  
   
-3.  Créez un objet `Random` en ajoutant une instruction `new` dans la partie supérieure du code, comme suit :  
+3. Créez un objet `Random` en ajoutant une instruction `new` dans la partie supérieure du code, comme suit :  
   
      [!code-csharp[VbExpressTutorial3Step2#1](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step2/cs/form1.cs#1)]
      [!code-vb[VbExpressTutorial3Step2#1](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step2/vb/form1.vb#1)]  
@@ -43,7 +43,7 @@ Dans la deuxième partie de ce didacticiel, vous rendez le questionnaire plus di
   
      Bientôt, vous générerez une méthode pour vérifier les réponses. Votre questionnaire doit donc utiliser des variables pour stocker les nombres aléatoires qu'il génère pour chaque problème. Consultez [Variables](http://msdn.microsoft.com/library/4cfaa06d-4ae3-4307-897b-cf599dc24caa) ou [Types](http://msdn.microsoft.com/library/f782d7cc-035e-4500-b1b1-36a9881130ad). Pour utiliser correctement les variables, vous devez les déclarer, ce qui signifie que vous devez répertorier leurs noms et types de données.  
   
-4.  Ajoutez deux variables de type entier au formulaire et nommez-les **addend1** et **addend2**.  
+4. Ajoutez deux variables de type entier au formulaire et nommez-les **addend1** et **addend2**.  
   
     > [!NOTE]
     >  Une variable de type entier est dénommée int en C# ou Integer en Visual Basic. Ce type de variable stocke un nombre positif ou négatif compris entre -2 147 483 648 et 2 147 483 647, et ne peut stocker que des nombres entiers, pas de décimales.  
@@ -53,7 +53,7 @@ Dans la deuxième partie de ce didacticiel, vous rendez le questionnaire plus di
      [!code-csharp[VbExpressTutorial3Step2#2](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step2/cs/form1.cs#2)]
      [!code-vb[VbExpressTutorial3Step2#2](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step2/vb/form1.vb#2)]  
   
-5.  Ajoutez une méthode nommée `StartTheQuiz()` et qui utilise la méthode `Random` de l'objet `Next()` pour afficher les nombres aléatoires dans les étiquettes. Ajoutez un commentaire pour indiquer que par la suite, `StartTheQuiz()` renseignera tous les problèmes, puis démarrera la minuterie. La fonction doit se présenter comme suit.  
+5. Ajoutez une méthode nommée `StartTheQuiz()` et qui utilise la méthode `Random` de l'objet `Next()` pour afficher les nombres aléatoires dans les étiquettes. Ajoutez un commentaire pour indiquer que par la suite, `StartTheQuiz()` renseignera tous les problèmes, puis démarrera la minuterie. La fonction doit se présenter comme suit.  
   
      [!code-csharp[VbExpressTutorial3Step2#3](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step2/cs/form1.cs#3)]
      [!code-vb[VbExpressTutorial3Step2#3](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step2/vb/form1.vb#3)]  
@@ -75,18 +75,18 @@ Next, méthode
   
      Les instructions ont défini les propriétés **Text** de **plusLeftLabel** et **plusRightLabel** pour qu’elles affichent les deux nombres aléatoires. Vous devez utiliser la méthode `ToString()` de l'entier pour convertir les nombres en texte. (En programmation, chaîne signifie texte. Les contrôles Label n'affichent que le texte, pas les nombres.  
   
-6.  Dans la fenêtre de conception, double-cliquez sur le bouton **Démarrer** ou sélectionnez-le, puis appuyez sur la touche Entrée.  
+6. Dans la fenêtre de conception, double-cliquez sur le bouton **Démarrer** ou sélectionnez-le, puis appuyez sur la touche Entrée.  
   
      Lorsqu'une personne interrogée choisit ce bouton, le questionnaire doit démarrer et vous venez d'ajouter un gestionnaire d'événements Clic pour implémenter ce comportement.  
   
-7.  Ajoutez les deux instructions suivantes.  
+7. Ajoutez les deux instructions suivantes.  
   
      [!code-csharp[VbExpressTutorial3Step2#4](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial3step2/cs/form1.cs#4)]
      [!code-vb[VbExpressTutorial3Step2#4](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial3step2/vb/form1.vb#4)]  
   
      La première instruction appelle la nouvelle méthode `StartTheQuiz()`. La deuxième instruction affecte à la propriété **Enabled** du contrôle **startButton** la valeur **False** pour que la personne interrogée ne puisse pas choisir le bouton durant le questionnaire.  
   
-8.  Enregistrez votre code, exécutez-le, puis sélectionnez le bouton **Démarrer**.  
+8. Enregistrez votre code, exécutez-le, puis sélectionnez le bouton **Démarrer**.  
   
      Un problème d'addition aléatoire apparaît, comme le montre l'illustration suivante.  
   
@@ -97,6 +97,6 @@ Problème d'addition aléatoire
   
 ### <a name="to-continue-or-review"></a>Pour continuer ou examiner  
   
--   Pour passer à l’étape suivante du didacticiel, consultez [Étape 3 : ajouter un temporisateur](../ide/step-3-add-a-countdown-timer.md).  
+- Pour passer à l’étape suivante du didacticiel, consultez [Étape 3 : Ajouter un temporisateur](../ide/step-3-add-a-countdown-timer.md).  
   
--   Pour revenir à l’étape précédente du didacticiel, consultez [Étape 1 : créer un projet et ajouter des étiquettes à votre formulaire](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).
+- Pour revenir à l’étape précédente du didacticiel, consultez [Étape 1 : Créez un projet et ajouter des étiquettes à votre formulaire](../ide/step-1-create-a-project-and-add-labels-to-your-form.md).

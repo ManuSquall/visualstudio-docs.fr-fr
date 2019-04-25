@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6826a2f2618ee77944102245781a8df3b2a4596b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 496fcdf28f8ce9b0809988949d435c064734b508
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54760055"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053560"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Comment : afficher, enregistrer et configurer des fichiers journaux de génération
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,23 +25,23 @@ Après avoir généré un projet dans l’IDE de Visual Studio, vous pouvez cons
   
 ### <a name="to-view-the-build-log-file-for-a-c-project"></a>Pour afficher le fichier journal de génération d’un projet C++  
   
-1.  Dans **l’Explorateur Windows** ou **l’Explorateur de fichiers**, ouvrez le fichier suivant : \\...\Visual Studio *Version*\Projects\\*nom_projet*\\*nom_projet*\Debug\\*nom_projet*.txt  
+1. Dans **l’Explorateur Windows** ou **l’Explorateur de fichiers**, ouvrez le fichier suivant : \\...\Visual Studio *Version*\Projects\\*nom_projet*\\*nom_projet*\Debug\\*nom_projet*.txt  
   
 ### <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>Pour créer un fichier journal de génération d’un projet de code managé  
   
-1.  Dans la barre de menus, choisissez **Générer**, puis **Générer la solution**.  
+1. Dans la barre de menus, choisissez **Générer**, puis **Générer la solution**.  
   
-2.  Dans la fenêtre **Sortie**, mettez en surbrillance les informations de la génération, puis copiez-les dans le Presse-papiers.  
+2. Dans la fenêtre **Sortie**, mettez en surbrillance les informations de la génération, puis copiez-les dans le Presse-papiers.  
   
-3.  Ouvrez un éditeur de texte, tel que le bloc-notes, collez les informations dans le fichier, puis enregistrez le fichier.  
+3. Ouvrez un éditeur de texte, tel que le bloc-notes, collez les informations dans le fichier, puis enregistrez le fichier.  
   
 ### <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>Pour modifier la quantité d’informations contenues dans le journal de génération  
   
-1.  Dans la barre de menus, sélectionnez **Outils**, **Options**.  
+1. Dans la barre de menus, sélectionnez **Outils**, **Options**.  
   
-2.  Dans la page **Projets et solutions**, choisissez la page **Générer et exécuter**.  
+2. Dans la page **Projets et solutions**, choisissez la page **Générer et exécuter**.  
   
-3.  Dans la liste **Commentaires relatifs à la sortie de génération du projet MSBuild**, choisissez l’une des valeurs suivantes, puis choisissez le bouton **OK**.  
+3. Dans la liste **Commentaires relatifs à la sortie de génération du projet MSBuild**, choisissez l’une des valeurs suivantes, puis choisissez le bouton **OK**.  
   
     |Niveau de détail|Description|  
     |---------------------|-----------------|  

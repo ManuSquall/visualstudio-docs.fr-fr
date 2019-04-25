@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 803fd69df06ae820e39d7edcfa54e56e59717a1c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 3979138944671ff2809f4f73beb0a28b222ec5ff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54963110"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053193"
 ---
 # <a name="inside-the-editor"></a>À l’intérieur de l’éditeur
 
@@ -202,19 +202,19 @@ Un des formats de l’affichage de texte <xref:Microsoft.VisualStudio.Text.IText
 
 Les fonctionnalités de l’éditeur sont conçues pour que la définition de la fonctionnalité est distincte de son implémentation. L’éditeur inclut ces fonctionnalités :
 
--   Balises et les classifieurs
+- Balises et les classifieurs
 
--   Ornements
+- Ornements
 
--   Projection
+- Projection
 
--   mode Plan
+- mode Plan
 
--   Liaisons de souris et la clé
+- Liaisons de souris et la clé
 
--   Opérations et primitives
+- Opérations et primitives
 
--   IntelliSense
+- IntelliSense
 
 ### <a name="tags-and-classifiers"></a>Balises et les classifieurs
 
@@ -262,7 +262,7 @@ Ornements incorporées sont des graphiques qui font partie de la vue de texte mi
 
 Ornements contextuelles sont des graphiques qui s’affichent dans une petite fenêtre au-dessus de la vue de texte, par exemple, les info-bulles.
 
-###  <a name="projection"></a> Projection
+### <a name="projection"></a> Projection
 
 Projection est une technique pour la construction d’un autre type de mémoire tampon de texte qui ne stocke pas réellement de texte, mais combine à la place du texte à partir d’autres mémoires tampons de texte. Par exemple, une mémoire tampon de projection peut être utilisé pour concaténer le texte à partir de deux autres mémoires tampons et présente le résultat comme s’il se trouve dans la mémoire tampon qu’une seule, ou pour masquer des parties du texte dans une mémoire tampon. Une mémoire tampon de projection peut agir comme une mémoire tampon source à une autre mémoire tampon de projection. Un jeu de mémoires tampons qui sont liés par projection peut être construit pour réorganiser le texte de différentes manières. (Un ensemble de ce type est également appelé un *graphique de mémoire tampon*.) La fonctionnalité mode plan de texte Visual Studio est implémentée à l’aide d’une mémoire tampon de projection pour masquer le texte réduit, et l’éditeur Visual Studio pour les pages ASP.NET utilise projection pour prendre en charge des langues embedded tels que Visual Basic et c#.
 

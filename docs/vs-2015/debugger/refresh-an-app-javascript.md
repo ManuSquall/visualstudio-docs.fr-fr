@@ -19,12 +19,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5d85db8ff2b9b93d99ad44377a1935552c951e32
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e55e108901d9be62531e459f2b7805f86cfe6a08
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949759"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040639"
 ---
 # <a name="refresh-an-app-javascript"></a>Actualiser une application (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,38 +35,38 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
  L'actualisation ne conserve pas l'état de votre application, ni ne reflète les modifications suivantes dans votre application :  
   
--   modifications du fichier manifeste du package, y compris les modifications des images spécifiées dans le manifeste du package ;  
+- modifications du fichier manifeste du package, y compris les modifications des images spécifiées dans le manifeste du package ;  
   
--   modifications des références, telles que l'ajout ou la suppression d'une référence SDK, ou modifications des composants Windows Runtime (fichiers .winmd) ;  
+- modifications des références, telles que l'ajout ou la suppression d'une référence SDK, ou modifications des composants Windows Runtime (fichiers .winmd) ;  
   
--   modifications des ressources, telles que les modifications des chaînes dans les fichiers .resjson ;  
+- modifications des ressources, telles que les modifications des chaînes dans les fichiers .resjson ;  
   
--   modifications des fichiers projet qui entraînent des changements de noms de chemin d’accès, de nouveaux fichiers projet ou des fichiers supprimés ;  
+- modifications des fichiers projet qui entraînent des changements de noms de chemin d’accès, de nouveaux fichiers projet ou des fichiers supprimés ;  
   
--   modifications des propriétés de projet et d'élément, telles que les modifications du périphérique de débogage sélectionné, ou les modifications de l'action du package pour un fichier (dans la fenêtre Propriétés).  
+- modifications des propriétés de projet et d'élément, telles que les modifications du périphérique de débogage sélectionné, ou les modifications de l'action du package pour un fichier (dans la fenêtre Propriétés).  
   
 > [!IMPORTANT]
 >  Lorsque vous modifiez des références ou le manifeste du package, ou que vous apportez d'autres modifications spécifiées dans la liste précédente, vous devez arrêter et redémarrer le débogueur pour mettre à jour les fichiers sources HTML, CSS et JavaScript.  
   
 ### <a name="to-refresh-an-app"></a>Pour actualiser une application  
   
-1.  Dans Visual Studio, créez un projet à l'aide du modèle de projet Application de navigation.  
+1. Dans Visual Studio, créez un projet à l'aide du modèle de projet Application de navigation.  
   
      Il peut s'agir d'une application du Windows Store, d'une application du Windows Phone Store ou d'une application universelle.  
   
-2.  Avec le modèle ouvert dans Visual Studio, sélectionnez une cible de débogage.  
+2. Avec le modèle ouvert dans Visual Studio, sélectionnez une cible de débogage.  
   
      Si un projet Windows Phone est votre projet de démarrage actuel, sélectionnez un émulateur Windows Phone pour la cible de débogage. Sinon, sélectionnez **simulateur** ou **ordinateur Local**.  
   
      ![Liste cible de débogage sélectionnez](../debugger/media/js-select-target.png "JS_Select_Target")  
   
-3.  Appuyez sur F5 pour exécuter l'application en mode débogage.  
+3. Appuyez sur F5 pour exécuter l'application en mode débogage.  
   
-4.  Passez dans Visual Studio. (Appuyez sur F12).  
+4. Passez dans Visual Studio. (Appuyez sur F12).  
   
-5.  Dans **l’Explorateur de solutions**, dans le **pages** > **domestique** dossier, ouvrez home.html.  
+5. Dans **l’Explorateur de solutions**, dans le **pages** > **domestique** dossier, ouvrez home.html.  
   
-6.  Remplacez le texte du titre de la page  
+6. Remplacez le texte du titre de la page  
   
     ```html  
     Welcome to yourAppName!  
@@ -78,9 +78,9 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
     Hello!  
     ```  
   
-7.  Cliquez sur le **Windows actualiser application** bouton, qui ressemble à ceci : ![Windows application bouton Actualiser](../debugger/media/js-refresh.png "JS_Refresh"). (Ou appuyez sur F4.)  
+7. Cliquez sur le **Windows actualiser application** bouton, qui ressemble à ceci : ![Windows application bouton Actualiser](../debugger/media/js-refresh.png "JS_Refresh"). (Ou appuyez sur F4.)  
   
-8.  Basculez vers l'application. L'application est rechargée sans que le débogueur redémarre, et le nouveau titre de la page apparaît.  
+8. Basculez vers l'application. L'application est rechargée sans que le débogueur redémarre, et le nouveau titre de la page apparaît.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)

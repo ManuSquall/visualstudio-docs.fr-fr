@@ -1,14 +1,9 @@
 ---
 title: Sélection et la devise dans l’IDE | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - currency, Visual Studio IDE
 - IDE, selection
@@ -17,22 +12,22 @@ helpviewer_keywords:
 ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 45fc57bf2d5763527f9f8c2c6d8d22ca1d6369f8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d0a0b999a1a6e6ed2364060031f68378e7222ec0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51786741"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112479"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>Sélection et devise dans l’IDE
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] tient à jour l’environnement de développement intégré (IDE) plus d’informations sur les utilisateurs les objets actuellement sélectionnés à l’aide de sélection *contexte*. Avec le contexte de sélection, les VSPackages peuvent prendre part à monétaire suivi de deux manières :  
   
--   En propageant les informations de devise sur les VSPackages à l’IDE.  
+- En propageant les informations de devise sur les VSPackages à l’IDE.  
   
--   En surveillant les sélections des utilisateurs actuellement actifs dans l’IDE.  
+- En surveillant les sélections des utilisateurs actuellement actifs dans l’IDE.  
   
 ## <a name="selection-context"></a>Contexte de sélection  
  Le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE globalement effectue le suivi de devise IDE dans son propre objet de contexte de sélection globale. Le tableau suivant présente les éléments qui composent le contexte de sélection.  
@@ -45,9 +40,9 @@ Le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] tient à jour l’environneme
   
  En outre, l’environnement gère deux listes globales :  
   
--   Une liste d’identificateurs de commande actives l’interface utilisateur  
+- Une liste d’identificateurs de commande actives l’interface utilisateur  
   
--   Liste des types d’éléments actuellement active.  
+- Liste des types d’éléments actuellement active.  
   
 ### <a name="window-types-and-selection"></a>Sélection et les Types de fenêtres  
  Le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] IDE organise windows en deux types généraux :  
@@ -65,11 +60,10 @@ Le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] tient à jour l’environneme
 ### <a name="events-and-currency"></a>Événements et devise  
  Deux types d’événements peuvent se produire et affectent la notion de l’environnement de devise :  
   
--   Événements qui sont propagées jusqu’au niveau global et de modifier le contexte de sélection de fenêtre frame. Exemples de ce type d’événement incluent une fenêtre enfant MDI en cours d’ouverture d’une fenêtre outil global en cours d’ouverture ou une fenêtre d’outil de type de projet en cours d’ouverture.  
+- Événements qui sont propagées jusqu’au niveau global et de modifier le contexte de sélection de fenêtre frame. Exemples de ce type d’événement incluent une fenêtre enfant MDI en cours d’ouverture d’une fenêtre outil global en cours d’ouverture ou une fenêtre d’outil de type de projet en cours d’ouverture.  
   
--   Événements qui modifient les éléments suivis dans le contexte de sélection de fenêtre frame. Exemples incluent la modification de sélection au sein d’un DocObject ou la modification de sélection dans une fenêtre de type de projet.  
+- Événements qui modifient les éléments suivis dans le contexte de sélection de fenêtre frame. Exemples incluent la modification de sélection au sein d’un DocObject ou la modification de sélection dans une fenêtre de type de projet.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Objets de contexte de sélection](../../extensibility/internals/selection-context-objects.md)   
  [Commentaires à l’utilisateur](../../extensibility/internals/feedback-to-the-user.md)
-

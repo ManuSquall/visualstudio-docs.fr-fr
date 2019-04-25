@@ -17,14 +17,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b674239d4d3b800680479830fbb16392e0cdeaf4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: d2ce13fc55c94514bb9da24e43a5c54671becde5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713553"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080655"
 ---
-# <a name="how-to-specify-a-net-framework-version-for-debugging-c-visual-basic-f"></a>Comment : spécifier une Version du .NET Framework pour le débogage (C#, Visual Basic, F#)
+# <a name="how-to-specify-a-net-framework-version-for-debugging-c-visual-basic-f"></a>Procédure : Spécifier une Version du .NET Framework pour le débogage (C#, Visual Basic, F#)
 
 Le débogueur Visual Studio prend en charge le débogage des versions antérieures de Microsoft [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] , ainsi que la version actuelle. Si vous démarrez une application à partir de Visual Studio, le débogueur identifie toujours la version correcte du [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] pour l’application que vous déboguez. Toutefois, si l’application est déjà en cours d’exécution et que vous démarrez le débogage à l’aide de **attacher à**, le débogueur pas peut toujours être en mesure d’identifier une version antérieure de le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. Si cela se produit, un message d'erreur s'affiche qui indique,
 
@@ -46,17 +46,17 @@ Dans de rares cas où cette erreur apparaît, vous pouvez définir une clé de R
 
 3. Dans l’**Éditeur du Registre**, ouvrez le dossier HKEY_LOCAL_MACHINE.
 
-4. Accédez à : HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}
+4. Accédez à : HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine\\{449EC4CC-30D2-4032-9256-EE18EB41B62B}
 
     Si la clé n’existe pas, cliquez avec le bouton droit sur HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\10.0\AD7Metrics\Engine, puis cliquez sur **Nouvelle clé**. Nommez la nouvelle clé `{449EC4CC-30D2-4032-9256-EE18EB41B62B}`.
 
 5. Après avoir accédé à {449EC4CC-30D2-4032-9256-EE18EB41B62B}, recherchez la clé CLRVersionForDebugging dans la colonne **Nom**.
 
-   1.  Si la clé n’existe pas, cliquez avec le bouton droit sur {449EC4CC-30D2-4032-9256-EE18EB41B62B}, puis cliquez sur **Nouvelle valeur de chaîne**. Puis cliquez sur la nouvelle valeur de chaîne, cliquez sur **renommer**et le type `CLRVersionForDebugging`.
+   1. Si la clé n’existe pas, cliquez avec le bouton droit sur {449EC4CC-30D2-4032-9256-EE18EB41B62B}, puis cliquez sur **Nouvelle valeur de chaîne**. Puis cliquez sur la nouvelle valeur de chaîne, cliquez sur **renommer**et le type `CLRVersionForDebugging`.
 
 6. Double-cliquez sur **CLRVersionForDebugging**.
 
-7. Dans la zone **Modification de la chaîne**, tapez le numéro de version du .NET Framework dans la zone **Valeur**. Par exemple : V1.1.4322
+7. Dans la zone **Modification de la chaîne**, tapez le numéro de version du .NET Framework dans la zone **Valeur**. Exemple : V1.1.4322
 
 8. Cliquez sur **OK**.
 

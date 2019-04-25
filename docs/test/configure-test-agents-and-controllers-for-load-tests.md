@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 16686d3900b3db2656492f5049590eeff47eb93a
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: fca2436b99f97e18801f8adffdc27fd348fc8123
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796347"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783943"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Configurer les agents de test et les contrôleurs de test pour l’exécution de tests de charge
 
@@ -27,11 +27,11 @@ Visual Studio peut utiliser des ordinateurs physiques ou des machines virtuelles
 
 L'architecture de la simulation de charge se compose d'un client Visual Studio, d'un contrôleur de test et d'agents de test.
 
--   Le client est utilisé pour développer les tests, exécuter les tests et en afficher les résultats.
+- Le client est utilisé pour développer les tests, exécuter les tests et en afficher les résultats.
 
--   Le contrôleur de test est utilisé pour administrer les agents de test et pour collecter les résultats des tests.
+- Le contrôleur de test est utilisé pour administrer les agents de test et pour collecter les résultats des tests.
 
--   Les agents de test sont utilisés pour exécuter les tests et pour collecter des données, y compris les informations système et les données de profilage ASP.NET définies dans les paramètres de test.
+- Les agents de test sont utilisés pour exécuter les tests et pour collecter des données, y compris les informations système et les données de profilage ASP.NET définies dans les paramètres de test.
 
 Cette architecture offre les avantages suivants :
 

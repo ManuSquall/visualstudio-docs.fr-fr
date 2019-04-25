@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85a0cb811ecb21cf0dd607bd046011bb7018f3cd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: dc0dc26a01cdddb4b26dfa65acab2c497618a76e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697596"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106486"
 ---
 # <a name="change-view-settings-by-using-the-legacy-api"></a>Modifier les paramètres de vue à l’aide de l’API héritée
 Paramètres pour les principales fonctionnalités de l’éditeur, telles que le retour automatique à la marge de sélection et l’espace virtuel, peuvent être modifiés par l’utilisateur par le biais de la **Options** boîte de dialogue. Toutefois, il est également possible de modifier ces paramètres par programmation.
@@ -25,13 +25,13 @@ Paramètres pour les principales fonctionnalités de l’éditeur, telles que le
 
  Voici le processus classique permettant de modifier les paramètres de vue pour une instance de l’éditeur principal.
 
-1.  Appelez `QueryInterface` sur le (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>) pour le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interface.
+1. Appelez `QueryInterface` sur le (<xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>) pour le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interface.
 
-2.  Appelez le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> méthode, en spécifiant une valeur de GUID_EditPropCategory_View_MasterSettings pour la `rguidCategory` paramètre.
+2. Appelez le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer.GetPropertyCategory%2A> méthode, en spécifiant une valeur de GUID_EditPropCategory_View_MasterSettings pour la `rguidCategory` paramètre.
 
      Cette opération retourne un pointeur vers le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyCategoryContainer> interface, qui contient l’ensemble de propriétés forcées pour la vue. Tous les paramètres de ce groupe sont contraints de façon permanente. Si un paramètre n’est pas dans ce groupe, puis il suit les options spécifiées dans le **Options** boîte de dialogue ou les commandes de l’utilisateur.
 
-3.  Appelez le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> méthode, en spécifiant la valeur de paramètres appropriés dans le `idprop` paramètre.
+3. Appelez le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> méthode, en spécifiant la valeur de paramètres appropriés dans le `idprop` paramètre.
 
      Par exemple, pour forcer le retour automatique à, appelez <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextEditorPropertyContainer.SetProperty%2A> et spécifiez la valeur VSEDITPROPID_ViewLangOpt_WordWrap, `vt` pour le `idprop` paramètre. Dans cet appel, `vt` est une variante de type VT_BOOL et `vt.boolVal` a la valeur VARIANT_TRUE.
 

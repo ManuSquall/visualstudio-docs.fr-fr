@@ -8,12 +8,12 @@ ms.assetid: a03c2e83-a41f-4854-bcf2-fcaa277a819d
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1fe4adb6e70027cae239cf9fafe605aa03431ff3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 97f238b51e3f4ad3bbb32bdbdc134089c0cb7e99
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766623"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099102"
 ---
 # <a name="isolating-code-under-test-with-microsoft-fakes"></a>Isolation du code sous test avec Microsoft Fakes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,10 +51,10 @@ Microsoft Fakes vous aide à isoler le code que vous testez en remplaçant d’a
   
  En général, nous vous conseillons d'utiliser des types stub pour isoler des dépendances dans votre base de code. Pour cela, masquez les composants derrière les interfaces. Les types shim peuvent être utilisés pour isoler des composants tiers qui ne fournissent pas d'API pouvant être testée.  
   
-##  <a name="stubs"></a> Démarrage avec les stubs  
+## <a name="stubs"></a> Démarrage avec les stubs  
  Pour obtenir une description détaillée, consultez [Utilisation de stubs pour isoler des parties de votre application les unes des autres pour des tests unitaires](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).  
   
-1.  **Injecter des interfaces**  
+1. **Injecter des interfaces**  
   
      Pour utiliser les stubs, vous devez écrire le code que vous souhaitez tester de telle sorte qu'il ne mentionne pas explicitement les classes d'un autre composant de votre application. Par « composant » nous entendons une ou plusieurs classes développées et mises à jour ensemble et généralement contenues dans un projet Visual Studio. Les variables et les paramètres doivent être déclarés à l'aide d'interfaces et les instances des autres composants doivent être passées ou créées à l'aide d'une fabrique. Par exemple, si StockFeed est une classe dans un autre composant de l'application, le résultat est incorrect :  
   
@@ -75,15 +75,15 @@ Microsoft Fakes vous aide à isoler le code que vous testez en remplaçant d’a
   
     ```  
   
-2.  **Ajouter un assembly Fakes**  
+2. **Ajouter un assembly Fakes**  
   
-    1.  Dans l’Explorateur de solutions, développez la liste de références du projet de test. Si vous utilisez Visual Basic, vous devez choisir **Afficher tous les fichiers** pour afficher la liste des références.  
+    1. Dans l’Explorateur de solutions, développez la liste de références du projet de test. Si vous utilisez Visual Basic, vous devez choisir **Afficher tous les fichiers** pour afficher la liste des références.  
   
-    2.  Sélectionnez la référence à l'assembly dans lequel l'interface (par exemple IStockFeed) est définie. Dans le menu contextuel de cette référence, choisissez **Ajouter un assembly Fakes**.  
+    2. Sélectionnez la référence à l'assembly dans lequel l'interface (par exemple IStockFeed) est définie. Dans le menu contextuel de cette référence, choisissez **Ajouter un assembly Fakes**.  
   
-    3.  Régénérez la solution.  
+    3. Régénérez la solution.  
   
-3.  Dans vos tests, construisez les instances du stub et fournissez le code pour ses méthodes :  
+3. Dans vos tests, construisez les instances du stub et fournissez le code pour ses méthodes :  
   
     ```csharp  
     [TestClass]  
@@ -145,7 +145,7 @@ Microsoft Fakes vous aide à isoler le code que vous testez en remplaçant d’a
   
      Les stubs sont également générés pour les accesseurs Get et les méthodes setter de propriétés, les événements et les méthodes génériques. Pour plus d’informations, consultez [Utilisation de stubs pour isoler des parties de votre application les unes des autres pour des tests unitaires](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).  
   
-##  <a name="shims"></a> Démarrage avec les shims  
+## <a name="shims"></a> Démarrage avec les shims  
  (Pour obtenir une description détaillée, consultez [Utilisation de shims pour isoler votre application des autres assemblys pour des tests unitaires](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).)  
   
  Supposons que votre composant contienne des appels à `DateTime.Now` :  

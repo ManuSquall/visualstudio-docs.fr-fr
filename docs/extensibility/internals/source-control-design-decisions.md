@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8378bf0a95ca9a844de4985f7403f04978607dcd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3e17e5a88b958c1361e7f8b3db70d7599f44f766
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615271"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066193"
 ---
 # <a name="source-control-design-decisions"></a>Décisions de conception du contrôle de code source
 Les décisions de conception suivantes doivent être considérées pour les projets lors de la mise en œuvre du contrôle de code source.
@@ -28,11 +28,11 @@ Les décisions de conception suivantes doivent être considérées pour les proj
 ## <a name="will-the-project-include-special-files"></a>Le projet inclut les fichiers spéciaux ?
  Une autre décision de conception importante est que la structure de votre projet utilise des fichiers spéciaux. Fichiers spéciaux sont des fichiers cachés qui sous-tendent les fichiers qui sont des boîtes de dialogue visible dans l’Explorateur de solutions et dans l’archivage et d’extraction. Si vous utilisez des fichiers spéciaux, suivez ces instructions :
 
-1.  N’associez pas des fichiers spéciaux avec le nœud racine du projet, autrement dit, avec le projet de fichiers lui-même. Votre fichier projet doit être un seul fichier.
+1. N’associez pas des fichiers spéciaux avec le nœud racine du projet, autrement dit, avec le projet de fichiers lui-même. Votre fichier projet doit être un seul fichier.
 
-2.  Lorsque des fichiers spéciaux sont ajoutés, supprimés ou renommés dans un projet, approprié <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> événements doivent être déclenchés avec l’indicateur qui indique les fichiers sont des fichiers spéciaux. Ces événements sont appelés par l’environnement en réponse au projet appelant approprié <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> méthodes.
+2. Lorsque des fichiers spéciaux sont ajoutés, supprimés ou renommés dans un projet, approprié <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> événements doivent être déclenchés avec l’indicateur qui indique les fichiers sont des fichiers spéciaux. Ces événements sont appelés par l’environnement en réponse au projet appelant approprié <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> méthodes.
 
-3.  Lorsque votre projet ou votre éditeur appelle <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> pour un fichier, les fichiers spéciaux associés à ce fichier ne sont pas automatiquement extraits. Transmettre des fichiers spéciaux dans ainsi que le fichier parent. L’environnement détecte la relation entre tous les fichiers qui sont passés et masquer correctement les fichiers spéciaux dans l’interface utilisateur d’extraction.
+3. Lorsque votre projet ou votre éditeur appelle <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> pour un fichier, les fichiers spéciaux associés à ce fichier ne sont pas automatiquement extraits. Transmettre des fichiers spéciaux dans ainsi que le fichier parent. L’environnement détecte la relation entre tous les fichiers qui sont passés et masquer correctement les fichiers spéciaux dans l’interface utilisateur d’extraction.
 
 ## <a name="see-also"></a>Voir aussi
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>

@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e6a6d31d15f7f7ed533d73683a3c12d152bd7046
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62552900"
 ---
 # <a name="create-profiler-reports-from-the-command-line"></a>Créer des rapports de profileur à partir de la ligne de commande
 L’outil en ligne de commande **VSPerfReport** vous permet de créer des rapports .*xml* ou .*csv* (valeurs séparées par des virgules) à partir de fichiers de données de profilage (.*vsp*). Les types de rapport de VSPerfReport correspondent étroitement aux vues de type tableau de l’interface de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Vous pouvez filtrer le rapport pour voir seulement votre code et un segment du fichier de données de profilage. Pour plus d’informations, consultez [VSPerfReport](../profiling/vsperfreport.md).

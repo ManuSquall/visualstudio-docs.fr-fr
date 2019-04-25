@@ -1,43 +1,38 @@
 ---
 title: Contrôle du programme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Debugging SDK], control of execution
 ms.assetid: 6be80904-e66c-4cae-8891-1113b799fb01
 caps.latest.revision: 10
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 9a833c8ba19ef71d7bf09e304b49853dd0b90274
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 5c9ea20e42ada09bd9ff2a5ab5fdb6222839380c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51759239"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108046"
 ---
 # <a name="program-control"></a>Contrôle du programme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Dans Visual Studio, le débogage, tous l’exécution pas à pas suivantes et en continuant de routines de se produisent au niveau du programme :  
   
--   Définition de l’instruction suivante, autrement dit, définition de votre ordinateur à la prochaine instruction à exécuter dans un environnement de frame particulier  
+- Définition de l’instruction suivante, autrement dit, définition de votre ordinateur à la prochaine instruction à exécuter dans un environnement de frame particulier  
   
--   L’exécution, autrement dit, continuer quitter le mode pas à pas  
+- L’exécution, autrement dit, continuer quitter le mode pas à pas  
   
--   Pas à pas à l’instruction suivante  
+- Pas à pas à l’instruction suivante  
   
--   Continuer avec le mode actuel de l’exécution pas à pas  
+- Continuer avec le mode actuel de l’exécution pas à pas  
   
--   Suspendre les threads contenues par le programme  
+- Suspendre les threads contenues par le programme  
   
--   La reprise des threads contenues par le programme  
+- La reprise des threads contenues par le programme  
   
 > [!NOTE]
 >  Affichage de la pile des appels est implémenté au niveau du thread. Pour énumérer les informations de frame lors de l’affichage de la pile des appels pour un thread, vous devez implémenter toutes les méthodes de la [IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interface.  
@@ -55,4 +50,3 @@ Dans Visual Studio, le débogage, tous l’exécution pas à pas suivantes et en
   
 ## <a name="see-also"></a>Voir aussi  
  [Contrôle de l’exécution et évaluation de l’état](../../extensibility/debugger/execution-control-and-state-evaluation.md)
-

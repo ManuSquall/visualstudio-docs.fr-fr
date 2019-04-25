@@ -8,12 +8,12 @@ ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 14438e23e73e6c69ecfe94ee7ada379b0d2fad15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5d48535bf8e2eb0c5204be0b06701b54cc6e365b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951214"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058172"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Écriture dans la banque de paramètres utilisateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,30 +22,30 @@ Paramètres de l’utilisateur sont des paramètres accessible en écriture tell
   
 ### <a name="backing-up-your-user-settings"></a>Sauvegarde de vos paramètres utilisateur  
   
-1.  Vous devez être en mesure de réinitialiser les paramètres des outils externes afin que vous puissiez déboguer et répétez la procédure. Pour ce faire, vous devez enregistrer les paramètres d’origine afin que vous pouvez les restaurer en fonction des besoins.  
+1. Vous devez être en mesure de réinitialiser les paramètres des outils externes afin que vous puissiez déboguer et répétez la procédure. Pour ce faire, vous devez enregistrer les paramètres d’origine afin que vous pouvez les restaurer en fonction des besoins.  
   
-2.  Ouvrez Regedit.exe.  
+2. Ouvrez Regedit.exe.  
   
-3.  Accédez aux outils de HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External\\.  
+3. Accédez aux outils de HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External\\.  
   
     > [!NOTE]
     >  Assurez-vous que vous examinez la clé qui contient \14.0Exp\ et pas \14.0\\. Lorsque vous exécutez l’instance expérimentale de Visual Studio, vos paramètres utilisateur sont dans la ruche de Registre « 14.0Exp ».  
   
-4.  Avec le bouton droit de la sous-clé \External Tools\, puis cliquez sur **exporter**. Assurez-vous que l’option **branche sélectionnée** est sélectionné.  
+4. Avec le bouton droit de la sous-clé \External Tools\, puis cliquez sur **exporter**. Assurez-vous que l’option **branche sélectionnée** est sélectionné.  
   
-5.  Enregistrez le fichier Tools.reg externe qui en résulte.  
+5. Enregistrez le fichier Tools.reg externe qui en résulte.  
   
-6.  Plus tard, lorsque vous souhaitez réinitialiser les paramètres des outils externes, sélectionnez la clé de Registre HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External Tools\ et cliquez sur **supprimer** dans le menu contextuel.  
+6. Plus tard, lorsque vous souhaitez réinitialiser les paramètres des outils externes, sélectionnez la clé de Registre HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External Tools\ et cliquez sur **supprimer** dans le menu contextuel.  
   
-7.  Lorsque le **confirmer la suppression de clé** boîte de dialogue s’affiche, cliquez sur **Oui**.  
+7. Lorsque le **confirmer la suppression de clé** boîte de dialogue s’affiche, cliquez sur **Oui**.  
   
-8.  Cliquez sur le fichier Tools.reg externe que vous avez enregistré précédemment, cliquez sur **ouvrir avec**, puis cliquez sur **Éditeur du Registre**.  
+8. Cliquez sur le fichier Tools.reg externe que vous avez enregistré précédemment, cliquez sur **ouvrir avec**, puis cliquez sur **Éditeur du Registre**.  
   
 ## <a name="writing-to-the-user-settings-store"></a>Écriture dans la banque de paramètres utilisateur  
   
-1.  Créez un projet VSIX nommé UserSettingsStoreExtension, puis ajoutez une commande personnalisée nommée UserSettingsStoreCommand. Pour plus d’informations sur la création d’une commande personnalisée, consultez [création d’une Extension avec une commande de Menu](../extensibility/creating-an-extension-with-a-menu-command.md)  
+1. Créez un projet VSIX nommé UserSettingsStoreExtension, puis ajoutez une commande personnalisée nommée UserSettingsStoreCommand. Pour plus d’informations sur la création d’une commande personnalisée, consultez [création d’une Extension avec une commande de Menu](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
-2.  Dans UserSettingsStoreCommand.cs, ajoutez le code suivant à l’aide d’instructions :  
+2. Dans UserSettingsStoreCommand.cs, ajoutez le code suivant à l’aide d’instructions :  
   
     ```csharp  
     using System.Collections.Generic;  
@@ -53,7 +53,7 @@ Paramètres de l’utilisateur sont des paramètres accessible en écriture tell
     using Microsoft.VisualStudio.Shell.Settings;  
     ```  
   
-3.  Dans MenuItemCallback, supprimez le corps de la méthode et obtenir de l’utilisateur de stocker des paramètres, comme suit :  
+3. Dans MenuItemCallback, supprimez le corps de la méthode et obtenir de l’utilisateur de stocker des paramètres, comme suit :  
   
     ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -63,7 +63,7 @@ Paramètres de l’utilisateur sont des paramètres accessible en écriture tell
     }  
     ```  
   
-4.  Découvrez maintenant si le bloc-notes est déjà défini comme un outil externe. Vous devez effectuer une itération dans tous les outils externes pour déterminer si le paramètre ToolCmd est « Notepad », comme suit :  
+4. Découvrez maintenant si le bloc-notes est déjà défini comme un outil externe. Vous devez effectuer une itération dans tous les outils externes pour déterminer si le paramètre ToolCmd est « Notepad », comme suit :  
   
     ```csharp  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -87,7 +87,7 @@ Paramètres de l’utilisateur sont des paramètres accessible en écriture tell
   
     ```  
   
-5.  Si le bloc-notes n’a pas été défini comme un outil externe, définie comme suit :  
+5. Si le bloc-notes n’a pas été défini comme un outil externe, définie comme suit :  
   
     ```vb  
     private void MenuItemCallback(object sender, EventArgs e)  
@@ -123,10 +123,10 @@ Paramètres de l’utilisateur sont des paramètres accessible en écriture tell
     }  
     ```  
   
-6.  Tester le code. N’oubliez pas qu’il ajoute le bloc-notes en tant qu’un outil externe, donc vous devez restaurer le Registre avant de l’exécuter une deuxième fois.  
+6. Tester le code. N’oubliez pas qu’il ajoute le bloc-notes en tant qu’un outil externe, donc vous devez restaurer le Registre avant de l’exécuter une deuxième fois.  
   
-7.  Générer le code et démarrer le débogage.  
+7. Générer le code et démarrer le débogage.  
   
-8.  Sur le **outils** menu, cliquez sur **UserSettingsStoreCommand appeler**. Cela ajoutera le bloc-notes pour le **outils** menu.  
+8. Sur le **outils** menu, cliquez sur **UserSettingsStoreCommand appeler**. Cela ajoutera le bloc-notes pour le **outils** menu.  
   
 9. Doit maintenant apparaître le bloc-notes dans le menu Outils / Options de menu, puis en cliquant sur **le bloc-notes** doit afficher une instance de bloc-notes.

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd4a839c1d93d89cf6d0502e234f7cb1401a6809
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: d297c1ef7079a894a53a77694d213f8b0f5cb257
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684414"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055403"
 ---
 # <a name="overview-of-visual-studio-graphics-diagnostics"></a>Vue d'ensemble de Visual Studio Graphics Diagnostics
 Visual Studio *Graphics Diagnostics* est un ensemble d’outils pour l’enregistrement, puis l’analyse des problèmes de rendu et de performances des applications Direct3D. Graphics Diagnostics peut être utilisé sur les applications qui sont exécutent localement sur votre PC Windows ou sur un PC ou un périphérique distant.
@@ -59,7 +59,7 @@ Visual Studio *Graphics Diagnostics* est un ensemble d’outils pour l’enregis
 
 #### <a name="to-open-the-directx-control-panel"></a>Pour ouvrir le panneau de configuration DirectX
 
--   Dans la barre de menus, choisissez **Déboguer**, **Graphiques**, **Panneau de configuration DirectX**.
+- Dans la barre de menus, choisissez **Déboguer**, **Graphiques**, **Panneau de configuration DirectX**.
 
 ## <a name="graphics-analyzer"></a>Graphics Analyzer
  Visual Studio Graphics Analyzer est une interface dédiée pour l'examen des problèmes de rendu et de performances dans les frames que vous avez capturés. Dans Graphics Analyzer, vous trouverez plusieurs outils qui vous aideront à explorer et comprendre le comportement de rendu de votre application. Chaque outil expose des informations d'un genre distinct concernant le frame inspecté. Par ailleurs, les outils sont conçus pour être utilisés conjointement afin d'identifier intuitivement la source d'un problème de rendu, à partir du moment où il est apparu dans le tampon de trame.

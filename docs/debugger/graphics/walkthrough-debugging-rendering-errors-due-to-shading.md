@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Débogage d’erreurs dues à la trame de rendu | Microsoft Docs'
+title: 'Procédure pas à pas : Débogage des erreurs dues à la trame de rendus | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 01875b05-cc7b-4add-afba-f2b776f86974
@@ -8,23 +8,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2e70fb88a9dd3c51a5e280e1e778bd18220985f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 44e542bcbb801ee4035ba501b50bad81b53e8bdf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688366"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091328"
 ---
-# <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Procédure pas à pas : débogage des erreurs de rendus dues à la trame
+# <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Procédure pas à pas : débogage des erreurs de rendu dues à l’ombrage
 Cette procédure pas à pas montre comment utiliser [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Graphics Diagnostics pour examiner un objet qui est de couleur incorrecte en raison d’un bogue de nuanceur.
 
  Cette procédure pas à pas montre comment effectuer les opérations suivantes :
 
--   Examiner le document du journal de graphiques pour identifier les pixels qui indiquent le problème.
+- Examiner le document du journal de graphiques pour identifier les pixels qui indiquent le problème.
 
--   Utiliser la fenêtre **Historique des pixels Graphics** pour examiner l’état des pixels plus en détail.
+- Utiliser la fenêtre **Historique des pixels Graphics** pour examiner l’état des pixels plus en détail.
 
--   Utiliser le **débogueur HLSL** pour examiner les nuanceurs de sommets et de pixels.
+- Utiliser le **débogueur HLSL** pour examiner les nuanceurs de sommets et de pixels.
 
 ## <a name="scenario"></a>Scénario
  La coloration incorrecte des objets se produit le plus souvent quand un nuanceur de sommets passe des informations incorrectes ou incomplètes à un nuanceur de pixels.

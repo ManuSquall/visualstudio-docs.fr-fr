@@ -1,27 +1,22 @@
 ---
-title: 'Comment : démarrer le débogage XSLT | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Démarrer le débogage XSLT | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-xml-tools
+ms.topic: conceptual
 ms.assetid: 8358335a-fcb0-45e0-a37e-45b43e49ec0a
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 22a2ad1a37b67b2ac2120bfef9975e2a780d737f
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 186ca5857d949c7a7a8c90e3e5ec8770705e19cc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49246621"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104094"
 ---
-# <a name="how-to-start-debugging-xslt"></a>Procédure : démarrer le débogage XSLT
+# <a name="how-to-start-debugging-xslt"></a>Procédure : démarrage du débogage XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le débogueur XSLT permet de déboguer une feuille de style XSLT ou une application XSLT. Lors du débogage, vous pouvez exécuter le code ligne par ligne (pas à pas détaillé, pas à pas principal ou pas à pas sortant). Les commandes permettant d'utiliser la fonctionnalité d'exécution du code pas à pas dans le débogueur XSLT sont identiques à celles des autres débogueurs Visual Studio. Une fois le débogage lancé, le débogueur XSLT ouvre des fenêtres pour afficher le document d'entrée et la sortie XSLT.  
@@ -31,15 +26,15 @@ Le débogueur XSLT permet de déboguer une feuille de style XSLT ou une applicat
   
 #### <a name="to-start-debugging-from-a-style-sheet"></a>Pour commencer le débogage à partir d'une feuille de style  
   
-1.  Ouvrez la feuille de style dans l'éditeur XML.  
+1. Ouvrez la feuille de style dans l'éditeur XML.  
   
-2.  Sélectionnez **débogage XSLT** à partir de la **XML** menu.  
+2. Sélectionnez **débogage XSLT** à partir de la **XML** menu.  
   
 #### <a name="to-start-debugging-from-an-xml-input-document"></a>Pour commencer le débogage à partir d'un document d'entrée XML  
   
-1.  Ouvrez le document XML dans l'éditeur XML.  
+1. Ouvrez le document XML dans l'éditeur XML.  
   
-2.  Sélectionnez **débogage XSLT** à partir de la **XML** menu.  
+2. Sélectionnez **débogage XSLT** à partir de la **XML** menu.  
   
 ## <a name="xslt-from-other-languages"></a>XSLT à partir d'autres langages  
  Vous pouvez également exécuter un pas à pas détaillé de XSLT pendant le débogage d'une application. Si vous appuyez sur F11 lors d'un appel à la méthode <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=fullName>, le débogueur peut exécuter un pas à pas détaillé du code XSLT.  
@@ -49,11 +44,11 @@ Le débogueur XSLT permet de déboguer une feuille de style XSLT ou une applicat
   
 #### <a name="to-start-debugging-an-xslt-application"></a>Pour commencer le débogage d'une application XSLT  
   
-1.  Lors de l'instanciation de l'objet <xref:System.Xml.Xsl.XslCompiledTransform>, définissez le paramètre `enableDebug` sur `true` dans votre code.  
+1. Lors de l'instanciation de l'objet <xref:System.Xml.Xsl.XslCompiledTransform>, définissez le paramètre `enableDebug` sur `true` dans votre code.  
   
      Le processeur XSLT crée alors des informations de débogage lors de la compilation du code.  
   
-2.  Appuyez sur F11 pour exécuter un pas à pas détaillé du code XSLT.  
+2. Appuyez sur F11 pour exécuter un pas à pas détaillé du code XSLT.  
   
      La feuille de style XSLT est chargée dans une nouvelle fenêtre de document et le débogueur XSLT démarre.  
   
@@ -94,5 +89,4 @@ namespace ConsoleApplication
   
 ## <a name="see-also"></a>Voir aussi  
  [Procédure pas à pas : Déboguer une feuille de Style XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)   
- [Vue d’ensemble du débogage de code](http://msdn.microsoft.com/en-us/8791dac9-64d1-4bb9-b59e-8d59af1833f9)
-
+ [Vue d’ensemble du débogage de code](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9)

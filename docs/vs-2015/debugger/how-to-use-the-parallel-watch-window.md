@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: baa5381013e955dcf4b8e301bba52a28e39bfc18
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 66e9e5a3f0a46f54346c71d85bad03846c12f937
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950751"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050308"
 ---
 # <a name="how-to-use-the-parallel-watch-window"></a>Procédure : Utiliser la fenêtre Espion parallèle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,47 +45,47 @@ Dans la fenêtre Espion parallèle, vous pouvez simultanément afficher les vale
   
 ### <a name="to-display-the-parallel-watch-window"></a>Pour afficher la fenêtre Espion parallèle  
   
-1.  Définissez un point d'arrêt dans le code.  
+1. Définissez un point d'arrêt dans le code.  
   
-2.  Dans la barre de menus, choisissez **Débogage**, puis **Démarrer le débogage**. Attendez que l'application atteigne le point d'arrêt.  
+2. Dans la barre de menus, choisissez **Débogage**, puis **Démarrer le débogage**. Attendez que l'application atteigne le point d'arrêt.  
   
-3.  Dans la barre de menus, sélectionnez **Déboguer**, **Fenêtres**, **Espion parallèle**, puis sélectionnez une fenêtre Espion. Vous pouvez ouvrir quatre fenêtres maximum.  
+3. Dans la barre de menus, sélectionnez **Déboguer**, **Fenêtres**, **Espion parallèle**, puis sélectionnez une fenêtre Espion. Vous pouvez ouvrir quatre fenêtres maximum.  
   
 ### <a name="to-add-a-watch-expression"></a>Pour ajouter une expression espionne  
   
--   Sélectionnez  **\<ajouter un espion >** , puis spécifiez une expression espionne.  
+- Sélectionnez  **\<ajouter un espion >** , puis spécifiez une expression espionne.  
   
 ### <a name="to-flag-or-unflag-a-thread"></a>Pour marquer ou supprimer l'indicateur d'un thread  
   
--   Sélectionnez la colonne d’indicateur pour la ligne, ou ouvrez le menu contextuel pour le thread et choisissez **indicateur** ou **supprimer l’indicateur**.  
+- Sélectionnez la colonne d’indicateur pour la ligne, ou ouvrez le menu contextuel pour le thread et choisissez **indicateur** ou **supprimer l’indicateur**.  
   
 ### <a name="to-display-only-flagged-threads"></a>Pour afficher seulement les threads avec indicateur  
   
--   Cliquez sur le bouton Afficher uniquement éléments avec indicateur dans le coin supérieur gauche de la **espion parallèle** fenêtre.  
+- Cliquez sur le bouton Afficher uniquement éléments avec indicateur dans le coin supérieur gauche de la **espion parallèle** fenêtre.  
   
 ### <a name="to-switch-frames"></a>Pour basculer vers les frames  
   
--   Double-cliquez sur la colonne de frame. (Clavier : Sélectionnez la ligne et appuyez sur ENTRÉE.)  
+- Double-cliquez sur la colonne de frame. (Clavier : Sélectionnez la ligne et appuyez sur ENTRÉE.)  
   
 ### <a name="to-sort-a-column"></a>Pour trier une colonne  
   
--   Sélectionnez le titre de la colonne.  
+- Sélectionnez le titre de la colonne.  
   
 ### <a name="to-group-threads"></a>Pour regrouper des threads  
   
--   Ouvrez le menu contextuel de la fenêtre Espion parallèle, choisissez **Grouper par**, puis l’élément de sous-menu approprié.  
+- Ouvrez le menu contextuel de la fenêtre Espion parallèle, choisissez **Grouper par**, puis l’élément de sous-menu approprié.  
   
 ### <a name="to-freeze-or-thaw-threads"></a>Pour figer ou libérer les threads  
   
--   Ouvrez le menu contextuel de la ligne par défaut et choisissez **Figer** ou **Libérer**.  
+- Ouvrez le menu contextuel de la ligne par défaut et choisissez **Figer** ou **Libérer**.  
   
 ### <a name="to-export-the-data-in-the-parallel-watch-window"></a>Pour exporter les données dans la fenêtre Espion parallèle  
   
--   Cliquez sur le bouton **Ouvrir dans Excel**, puis sélectionnez **Ouvrir dans Excel** ou **Exporter au format CSV**.  
+- Cliquez sur le bouton **Ouvrir dans Excel**, puis sélectionnez **Ouvrir dans Excel** ou **Exporter au format CSV**.  
   
 ### <a name="to-filter-by-a-boolean-expression"></a>Pour filtrer en fonction d'une expression booléenne  
   
--   Entrez une expression booléenne dans la zone **Filtrer par expression booléenne**. Le débogueur évalue l'expression de chaque contexte de thread. Seules les lignes avec la valeur `true` sont affichées.  
+- Entrez une expression booléenne dans la zone **Filtrer par expression booléenne**. Le débogueur évalue l'expression de chaque contexte de thread. Seules les lignes avec la valeur `true` sont affichées.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Déboguer les applications multithread](../debugger/debug-multithreaded-applications-in-visual-studio.md)   

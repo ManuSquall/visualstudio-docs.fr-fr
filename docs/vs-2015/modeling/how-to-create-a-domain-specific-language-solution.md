@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f675b40f250505e654b287fcaa86e70aca4cdd0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 57c843b7c556ac409a63d5e6c01e2699da59958b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953180"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099570"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Procédure : Créer une solution de langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,9 +67,9 @@ Un langage spécifique à un domaine (DSL) est créé à l’aide de spécialis�
   
 3. Entrez une extension de nom de fichier le **Extension de fichier** page. Il doit être unique dans votre ordinateur, et dans tous les ordinateurs sur lesquels vous souhaitez installer la solution DSL. Vous devez voir le message **aucune application ou les éditeurs de Visual Studio n’utilisent cette extension**.  
   
-   -   Si vous avez utilisé l’extension de nom de fichier dans la précédente DSL expérimentale qui n’ont pas été entièrement installé, vous pouvez les désactiver arrière à l’aide de la **réinitialiser l’Instance expérimentale** outil, qui se trouve dans le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] menu du Kit de développement logiciel.  
+   - Si vous avez utilisé l’extension de nom de fichier dans la précédente DSL expérimentale qui n’ont pas été entièrement installé, vous pouvez les désactiver arrière à l’aide de la **réinitialiser l’Instance expérimentale** outil, qui se trouve dans le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] menu du Kit de développement logiciel.  
   
-   -   Si un autre [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension qui utilise cette extension de fichier a été entièrement installée sur votre ordinateur, envisagez de le désinstaller. Sur le **outils** menu, cliquez sur **Gestionnaire d’extensions**.  
+   - Si un autre [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension qui utilise cette extension de fichier a été entièrement installée sur votre ordinateur, envisagez de le désinstaller. Sur le **outils** menu, cliquez sur **Gestionnaire d’extensions**.  
   
 4. Examiner et ajuster si nécessaire, les champs dans les pages restantes de l’Assistant. Lorsque vous êtes satisfait des paramètres, cliquez sur **Terminer**. Pour plus d’informations sur les paramètres, consultez [Pages de l’Assistant concepteur DSL](#settings).  
   
@@ -78,7 +78,7 @@ Un langage spécifique à un domaine (DSL) est créé à l’aide de spécialis�
    > [!NOTE]
    >  Si vous voyez un message qui vous n'avertit pas pour exécuter des modèles de texte à partir de sources non fiables, cliquez sur **OK**. Vous pouvez définir ce message ne pas s’affiche à nouveau.  
   
-##  <a name="settings"></a> Les Pages d’Assistant concepteur DSL  
+## <a name="settings"></a> Les Pages d’Assistant concepteur DSL  
  Vous pouvez laisser certains des champs inchangés à partir de leurs valeurs par défaut. Toutefois, assurez-vous que vous définissez le champ d’Extension de fichier.  
   
 ### <a name="solution-settings-page"></a>Page Paramètres de la solution  
@@ -98,15 +98,15 @@ Un langage spécifique à un domaine (DSL) est créé à l’aide de spécialis�
   
  Si vous voyez une liste d’outils ou des packages, vous devez effectuer une des opérations suivantes :  
   
--   Tapez une extension de fichier différent.  
+- Tapez une extension de fichier différent.  
   
      \- ou -  
   
--   Réinitialiser le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Instance expérimentale. Annule toutes des DSL que vous avez créées précédemment. Sur le **Démarrer** menu, cliquez sur **tous les programmes**, **Microsoft Visual Studio 2010 SDK**, **outils**, puis **réinitialiser le Instance de Microsoft Visual Studio 2010 expérimentale**. Vous pouvez reconstruire les autres DSL que vous souhaitez utiliser à nouveau.  
+- Réinitialiser le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Instance expérimentale. Annule toutes des DSL que vous avez créées précédemment. Sur le **Démarrer** menu, cliquez sur **tous les programmes**, **Microsoft Visual Studio 2010 SDK**, **outils**, puis **réinitialiser le Instance de Microsoft Visual Studio 2010 expérimentale**. Vous pouvez reconstruire les autres DSL que vous souhaitez utiliser à nouveau.  
   
      \- ou -  
   
--   Si un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension qui utilise cette extension de fichier a été entièrement installée sur votre ordinateur, désinstallez-le. Sur le **outils** menu, cliquez sur **Gestionnaire d’extensions**.  
+- Si un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Extension qui utilise cette extension de fichier a été entièrement installée sur votre ordinateur, désinstallez-le. Sur le **outils** menu, cliquez sur **Gestionnaire d’extensions**.  
   
 ### <a name="product-settings-page"></a>Page des paramètres de produit  
  **Quel est le nom du produit auquel appartient le nouveau langage spécifique à un domaine ?**  

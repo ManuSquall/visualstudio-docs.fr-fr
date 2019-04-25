@@ -7,14 +7,12 @@
 ## [Mettre à jour](/visualstudio/mac/update)
 ## [Désinstaller](/visualstudio/mac/uninstall)
 
-
 # [Comptes d’utilisateur](/visualstudio/mac/user-accounts)
 ## [Connexion](/visualstudio/mac/signing-in)
 ## [Activer un abonnement](/visualstudio/mac/enable-subscription)
 
 # [Personnalisation de l’IDE](/visualstudio/mac/customizing-the-ide)
 ## [Extension de Visual Studio pour Mac](/visualstudio/mac/extending-visual-studio-mac)
-
 
 # [Projets et solutions](/visualstudio/mac/projects-and-solutions)
 ## [Création de nouveaux projets](/visualstudio/mac/create-new-projects)
@@ -77,3 +75,4 @@
 # [Résolution des problèmes](/visualstudio/mac/troubleshooting)
 ## [Programme d’amélioration de l’expérience utilisateur Visual Studio](/visualstudio/mac/visual-studio-experience-improvement-program)
 ## [Signaler un problème](/visualstudio/mac/report-a-problem)
+## [Résolution des problèmes : le programme de mise à jour présente des erreurs lors de la récupération des informations](updater-troubleshooting.md)

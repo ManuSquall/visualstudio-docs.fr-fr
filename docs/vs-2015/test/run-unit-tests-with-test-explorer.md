@@ -10,19 +10,19 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8c8894239e1e1dd3979b9bb7c61e5aa1f294fe2b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: bfadcb962e63a38f4f8190c2dd9c02f4e2ac4643
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805106"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107994"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Exécuter des tests unitaires avec l'Explorateur de tests
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Utilisez l'Explorateur de tests pour exécuter des tests unitaires à partir de Visual Studio ou de projets de tests unitaires tiers, regrouper des tests en catégories, filtrer la liste de tests et créer, enregistrer et exécuter des sélections de tests. Vous pouvez également déboguer des tests et analyser les performances des tests et la couverture du code.  
   
-##  <a name="BKMK_Contents"></a> Sommaire  
+## <a name="BKMK_Contents"></a> Sommaire  
  [Infrastructures de tests unitaires et projets de test](#BKMK_Unit_test_frameworks_and_test_projects)  
   
  [Exécuter des tests dans l’explorateur de tests](#BKMK_Run_tests_in_Test_Explorer)  
@@ -37,14 +37,14 @@ Utilisez l'Explorateur de tests pour exécuter des tests unitaires à partir de 
   
  [Ressources externes](#BKMK_External_resources)  
   
-##  <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> Infrastructures de tests unitaires et projets de test  
+## <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> Infrastructures de tests unitaires et projets de test  
  Visual Studio inclut les infrastructures de tests unitaires Microsoft pour le code managé comme pour le code natif. Toutefois, l'Explorateur de tests peut également exécuter tout framework de tests unitaires qui a implémenté un adaptateur pour l'Explorateur de tests. Pour plus d’informations sur l’installation des frameworks de tests unitaires tiers, consultez [Installer des frameworks de tests unitaires tiers](../test/install-third-party-unit-test-frameworks.md).  
   
  L'Explorateur de tests peut exécuter des tests à partir de plusieurs projets de test dans une solution et à partir de classes de test qui font partie des projets de code de production. Les projets de test peuvent utiliser différentes infrastructures de tests unitaires. Quand le code testé est écrit pour le .NET Framework, le projet de test peut être écrit dans n'importe quel langage qui cible également le .NET Framework, quel que soit le langage du code cible. Les projets de code C/C++ natifs doivent être testés à l'aide d'une infrastructure de tests unitaires C++.  
   
  ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
-##  <a name="BKMK_Run_tests_in_Test_Explorer"></a> Exécuter des tests dans l’Explorateur de tests  
+## <a name="BKMK_Run_tests_in_Test_Explorer"></a> Exécuter des tests dans l’Explorateur de tests  
  [Exécuter des tests](#BKMK_Run_tests) **&#124;** [Exécuter des tests après chaque génération](#BKMK_Run_tests_after_every_build)  
   
  Quand vous générez le projet de test, les tests s’affichent dans l’explorateur de tests. Si l’explorateur de tests n’est pas visible, sélectionnez **Test** dans le menu Visual Studio et choisissez **Fenêtres**, puis **Explorateur de tests**.  
@@ -59,7 +59,7 @@ Utilisez l'Explorateur de tests pour exécuter des tests unitaires à partir de 
   
  ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
-###  <a name="BKMK_Run_tests"></a> Exécuter les tests  
+### <a name="BKMK_Run_tests"></a> Exécuter les tests  
  Vous pouvez exécuter tous les tests dans la solution, tous les tests dans un groupe, ou un ensemble de tests que vous sélectionnez. Effectuez l’une des opérations suivantes :  
   
 - Pour exécuter tous les tests dans une solution, choisissez **Exécuter tout**.  
@@ -74,7 +74,7 @@ Utilisez l'Explorateur de tests pour exécuter des tests unitaires à partir de 
   
   ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
-###  <a name="BKMK_Run_tests_after_every_build"></a> Exécuter des tests après chaque génération  
+### <a name="BKMK_Run_tests_after_every_build"></a> Exécuter des tests après chaque génération  
   
 > [!WARNING]
 >  L'exécution de tests unitaires après chaque génération est prise en charge dans Visual Studio Enterprise.  
@@ -85,12 +85,12 @@ Utilisez l'Explorateur de tests pour exécuter des tests unitaires à partir de 
   
  ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
-##  <a name="BKMK_View_test_results"></a> Afficher les résultats des tests  
+## <a name="BKMK_View_test_results"></a> Afficher les résultats des tests  
  [Afficher les détails du test](#BKMK_View_test_details) **&#124;** [Afficher le code source d’une méthode de test](#BKMK_View_the_source_code_of_a_test_method)  
   
  Tandis que vous exécutez, écrivez et réexécutez vos tests, l'Explorateur de tests affiche les résultats dans les groupes **Échecs de tests**, **Tests réussis**, **Tests ignorés** et **Tests non exécutés**. Le volet d'informations en bas de l'Explorateur de tests affiche un résumé de la série de tests.  
   
-###  <a name="BKMK_View_test_details"></a> Afficher les détails du test  
+### <a name="BKMK_View_test_details"></a> Afficher les détails du test  
  Pour afficher les détails d'un test individuel, sélectionnez le test.  
   
  ![Détails de l’exécution de tests](../test/media/ute-testdetails.png "UTE_TestDetails")  
@@ -111,17 +111,17 @@ Utilisez l'Explorateur de tests pour exécuter des tests unitaires à partir de 
   
   ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
-###  <a name="BKMK_View_the_source_code_of_a_test_method"></a> Afficher le code source d'une méthode de test  
+### <a name="BKMK_View_the_source_code_of_a_test_method"></a> Afficher le code source d'une méthode de test  
  Pour afficher le code source d’une méthode de test dans l’éditeur Visual Studio, sélectionnez le test, puis choisissez **Ouvrir le test** dans le menu contextuel (clavier : F12).  
   
  ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
-##  <a name="BKMK_Group_and_filter_the_test_list"></a> Regrouper et filtrer la liste de tests  
+## <a name="BKMK_Group_and_filter_the_test_list"></a> Regrouper et filtrer la liste de tests  
  [Regroupement de la liste de tests](#BKMK_Grouping_the_test_list) **&#124;** [Regrouper par caractéristiques](#BKMK_Group_by_traits) **&#124;** [Rechercher et filtrer la liste de tests](#BKMK_Search_and_filter_the_test_list)  
   
  L'Explorateur de tests vous permet de regrouper vos tests en catégories prédéfinies. La plupart des infrastructures de tests unitaires qui s'exécutent dans l'Explorateur de tests vous permettent de définir vos propres catégories et paires catégorie/valeur pour regrouper vos tests. Vous pouvez également filtrer la liste de tests en mettant en correspondance les chaînes avec les propriétés de test.  
   
-###  <a name="BKMK_Grouping_the_test_list"></a> Regroupement de la liste de tests  
+### <a name="BKMK_Grouping_the_test_list"></a> Regroupement de la liste de tests  
  Pour modifier le mode d’organisation des tests, cliquez sur la flèche vers le bas à côté du bouton **Grouper par** ![Bouton Grouper de l’Explorateur de tests](../test/media/ute-groupby-btn.png "UTE_GroupBy_btn") et sélectionnez un nouveau critère de regroupement.  
   
  ![Grouper les tests par catégorie dans l’Explorateur de tests](../test/media/ute-groupbycategory.png "UTE_GroupByCategory")  
@@ -137,7 +137,7 @@ Utilisez l'Explorateur de tests pour exécuter des tests unitaires à partir de 
   
  ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
-###  <a name="BKMK_Group_by_traits"></a> Regrouper par caractéristiques  
+### <a name="BKMK_Group_by_traits"></a> Regrouper par caractéristiques  
  Une caractéristique est habituellement une paire nom/valeur de catégorie, mais elle peut également être une catégorie unique. Des caractéristiques peuvent être assignées aux méthodes identifiées comme une méthode de test par l'infrastructure de tests unitaires. Une infrastructure de tests unitaires peut définir des catégories de caractéristiques. Vous pouvez ajouter des valeurs aux catégories de caractéristiques pour définir vos propres paires nom/valeur de catégorie. La syntaxe permettant de spécifier les catégories et les valeurs des caractéristiques est définie par l'infrastructure de tests unitaires.  
   
  **Caractéristiques dans le framework de tests unitaires Microsoft pour le code managé**  
@@ -185,7 +185,7 @@ TEST_METHOD(Method1)
   
  ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
-###  <a name="BKMK_Search_and_filter_the_test_list"></a> Rechercher et filtrer la liste de tests  
+### <a name="BKMK_Search_and_filter_the_test_list"></a> Rechercher et filtrer la liste de tests  
  Vous pouvez utiliser des filtres de l'Explorateur de tests pour limiter les méthodes de test dans les projets que vous affichez et exécutez.  
   
  Quand vous tapez une chaîne dans la zone de recherche de l’Explorateur de tests et appuyez sur Entrée, la liste de tests est filtrée pour afficher uniquement les tests dont les noms qualifiés complets contiennent la chaîne.  
@@ -229,7 +229,7 @@ FullName:"MyClass" - FullName:"PerfTest"
   
  ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
-##  <a name="BKMK_Create_custom_playlists"></a> Créer des sélections personnalisées  
+## <a name="BKMK_Create_custom_playlists"></a> Créer des sélections personnalisées  
  Vous pouvez créer et enregistrer une liste de tests que vous souhaitez exécuter ou visualiser en tant que groupe. Quand vous sélectionnez une sélection, les tests de la liste sont affichés dans l'Explorateur de tests. Vous pouvez ajouter un test à plusieurs sélections, et tous les tests de votre projet sont disponibles quand vous choisissez la sélection par défaut **Tous les tests** .  
   
  ![Choisissez une sélection](../test/media/ute-playlist.png "UTE_Playlist")  
@@ -244,10 +244,10 @@ FullName:"MyClass" - FullName:"PerfTest"
   
  ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
-##  <a name="BKMK_Debug_and_analyze_unit_tests"></a> Déboguer et analyser des tests unitaires  
+## <a name="BKMK_Debug_and_analyze_unit_tests"></a> Déboguer et analyser des tests unitaires  
  [Déboguer les tests unitaires](#BKMK_Debug_unit_tests) **&#124;** [Diagnostiquer les problèmes de performances de méthode de test](#BKMK_Diagnose_test_method_performance_issues) **&#124;** [Analyser la couverture de code de test unitaire](#BKMK_Analyzeunit_test_code_coverage)  
   
-###  <a name="BKMK_Debug_unit_tests"></a> Déboguer les tests unitaires  
+### <a name="BKMK_Debug_unit_tests"></a> Déboguer les tests unitaires  
  Vous pouvez utiliser l'Explorateur de tests pour démarrer une session de débogage de vos tests. L'exécution pas à pas de votre code avec le débogueur Visual Studio vous conduit de manière transparente à des allers et retours entre les tests unitaires et le projet testé. Pour démarrer le débogage :  
   
 1. Dans l’éditeur Visual Studio, définissez un point d’arrêt dans une ou plusieurs méthodes de test que vous souhaitez déboguer.  
@@ -261,10 +261,10 @@ FullName:"MyClass" - FullName:"PerfTest"
   
    ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
-###  <a name="BKMK_Diagnose_test_method_performance_issues"></a> Diagnostiquer les problèmes de performances de méthode de test  
+### <a name="BKMK_Diagnose_test_method_performance_issues"></a> Diagnostiquer les problèmes de performances de méthode de test  
  Pour diagnostiquer la raison pour laquelle une méthode de test est beaucoup trop longue, sélectionnez la méthode dans l'Explorateur de tests, puis choisissez Profil dans le menu contextuel. Consultez [Explorateur de performances](../profiling/performance-explorer.md).  
   
-###  <a name="BKMK_Analyzeunit_test_code_coverage"></a> Analyser la couverture du code de test unitaire  
+### <a name="BKMK_Analyzeunit_test_code_coverage"></a> Analyser la couverture du code de test unitaire  
   
 > [!NOTE]
 >  La couverture du code de test unitaire est uniquement disponible dans Visual Studio Enterprise.  
@@ -277,9 +277,9 @@ FullName:"MyClass" - FullName:"PerfTest"
   
 2. Sélectionnez l'une des commandes suivantes dans le sous-menu :  
   
-   -   **Tests sélectionnés** exécute les méthodes de test que vous avez sélectionnées dans l'Explorateur de tests.  
+   - **Tests sélectionnés** exécute les méthodes de test que vous avez sélectionnées dans l'Explorateur de tests.  
   
-   -   **Tous les tests** exécute toutes les méthodes de test de la solution.  
+   - **Tous les tests** exécute toutes les méthodes de test de la solution.  
   
    La fenêtre Résultats de la couverture du code affiche le pourcentage des blocs du code du produit qui ont été testés par ligne, fonction, classe, espace de noms et module.  
   
@@ -287,10 +287,10 @@ FullName:"MyClass" - FullName:"PerfTest"
   
    ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
-##  <a name="BKMK_External_resources"></a> Ressources externes  
+## <a name="BKMK_External_resources"></a> Ressources externes  
   
-###  <a name="BKMK_Guidance"></a> Conseils  
- [Test de livraison continue avec Visual Studio 2012 – chapitre 2 : Test unitaire Tester l’intérieur](http://go.microsoft.com/fwlink/?LinkID=255188)  
+### <a name="BKMK_Guidance"></a> Conseils  
+ [Test de livraison continue avec Visual Studio 2012 – chapitre 2 : Tests unitaires : Tester l’intérieur](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
 ## <a name="see-also"></a>Voir aussi  
  [Tests unitaires sur votre code](../test/unit-test-your-code.md)   

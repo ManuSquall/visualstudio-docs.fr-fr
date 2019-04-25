@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 67aba8d93514618fc09abe933cfd28023136a4d6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790913"
 ---
 # <a name="build-devenvexe"></a>/Build (devenv.exe)
 
@@ -53,7 +53,7 @@ devenv SolutionName /Build [SolnConfigName [/Project ProjName [/ProjectConfig Pr
 
   Optionnel. Nom du fichier auquel vous souhaitez envoyer la sortie de l’outil. Si le fichier existe déjà, l’outil ajoute la sortie à la fin du fichier.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 - Le commutateur `/Build` a la même fonction que la commande de menu **Générer la solution** dans l’environnement de développement intégré (IDE).
 

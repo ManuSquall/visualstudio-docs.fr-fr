@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ec1b206bffa5ea49a17bd76487cdc398395c1f48
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4a6c48d878f2bacd8317878366980ecc317f7adb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953457"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055260"
 ---
 # <a name="how-to-use-xml-snippets"></a>Procédure : utilisation d'extraits XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Vous pouvez invoquer des extraits XML en utilisant les deux commandes suivantes du menu contextuel de l'éditeur XML. Le **insérer un extrait** commande insère l’extrait de code XML à la position du curseur. Le **entourer** commande encapsule l’extrait XML autour du texte sélectionné. Chaque extrait XML possède des types d'extrait désignés. Le type d’extrait détermine si l’extrait de code est disponible avec le **insérer un extrait** commande, le **entourer** commande, ou les deux.  
   
  Une fois l'extrait XML ajouté à l'éditeur, tous ses champs modifiables sont surlignés en jaune et le curseur est placé dans le premier d'entre eux.  
@@ -32,46 +31,46 @@ Vous pouvez invoquer des extraits XML en utilisant les deux commandes suivantes 
   
 #### <a name="to-insert-snippets-from-the-shortcut-menu"></a>Pour insérer des extraits à partir du menu contextuel  
   
-1.  Placez le curseur à l'endroit où vous souhaitez insérer l'extrait XML.  
+1. Placez le curseur à l'endroit où vous souhaitez insérer l'extrait XML.  
   
-2.  Avec le bouton droit et sélectionnez **insérer un extrait**.  
+2. Avec le bouton droit et sélectionnez **insérer un extrait**.  
   
      Une liste des extraits XML disponibles s'affiche.  
   
-3.  Sélectionnez un extrait dans la liste à l'aide de la souris ou en entrant son nom et en appuyant sur TAB ou ENTRÉE.  
+3. Sélectionnez un extrait dans la liste à l'aide de la souris ou en entrant son nom et en appuyant sur TAB ou ENTRÉE.  
   
 #### <a name="to-insert-snippets-using-the-intellisense-menu"></a>Pour insérer des extraits à l'aide du menu IntelliSense  
   
-1.  Placez le curseur à l'endroit où vous souhaitez insérer l'extrait XML.  
+1. Placez le curseur à l'endroit où vous souhaitez insérer l'extrait XML.  
   
-2.  À partir de la **modifier** menu, pointez sur **IntelliSense**, puis sélectionnez **insérer un extrait**.  
+2. À partir de la **modifier** menu, pointez sur **IntelliSense**, puis sélectionnez **insérer un extrait**.  
   
      Une liste des extraits XML disponibles s'affiche.  
   
-3.  Sélectionnez un extrait dans la liste à l'aide de la souris ou en entrant son nom et en appuyant sur TAB ou ENTRÉE.  
+3. Sélectionnez un extrait dans la liste à l'aide de la souris ou en entrant son nom et en appuyant sur TAB ou ENTRÉE.  
   
 #### <a name="to-insert-snippets-through-the-intellisense-complete-word-list"></a>Pour insérer des extraits via la liste de remplissage IntelliSense  
   
-1.  Placez le curseur à l'endroit où vous souhaitez insérer l'extrait XML.  
+1. Placez le curseur à l'endroit où vous souhaitez insérer l'extrait XML.  
   
-2.  Commencez à entrer l'extrait XML à ajouter à votre fichier. Si le remplissage automatique est activé, la liste de remplissage IntelliSense s'affiche. Dans le cas contraire, appuyez sur CTRL+ESPACE pour l'activer.  
+2. Commencez à entrer l'extrait XML à ajouter à votre fichier. Si le remplissage automatique est activé, la liste de remplissage IntelliSense s'affiche. Dans le cas contraire, appuyez sur CTRL+ESPACE pour l'activer.  
   
-3.  Sélectionnez l'extrait XML dans la liste de remplissage.  
+3. Sélectionnez l'extrait XML dans la liste de remplissage.  
   
-4.  Appuyez sur TAB à deux reprises pour invoquer l'extrait XML.  
+4. Appuyez sur TAB à deux reprises pour invoquer l'extrait XML.  
   
 > [!NOTE]
 >  Parfois, l'extrait XML n'est pas invoqué. Par exemple, si vous tentez d'insérer un élément `xs:complexType` dans un nœud `xs:element`, l'éditeur ne génère aucun extrait XML. En effet, lorsqu'un élément `xs:complexType` est utilisé à l'intérieur d'un nœud `xs:element`, aucun attribut ni sous-élément n'est requis, de sorte que l'éditeur n'a aucune donnée à insérer.  
   
 #### <a name="to-insert-snippets-using-the-shortcut-name"></a>Pour insérer des extraits à l'aide du nom raccourci  
   
-1.  Placez le curseur à l'endroit où vous souhaitez insérer l'extrait XML.  
+1. Placez le curseur à l'endroit où vous souhaitez insérer l'extrait XML.  
   
-2.  Entrez `<` dans le volet de l'éditeur.  
+2. Entrez `<` dans le volet de l'éditeur.  
   
-3.  Appuyez sur ÉCHAP pour fermer la liste de remplissage IntelliSense.  
+3. Appuyez sur ÉCHAP pour fermer la liste de remplissage IntelliSense.  
   
-4.  Entrez le nom raccourci de l'extrait XML, puis appuyez sur TAB pour l'invoquer.  
+4. Entrez le nom raccourci de l'extrait XML, puis appuyez sur TAB pour l'invoquer.  
   
 ## <a name="surround-with"></a>Entourer de  
  Les procédures suivantes expliquent comment accéder à la **entourer** commande.  
@@ -81,23 +80,23 @@ Vous pouvez invoquer des extraits XML en utilisant les deux commandes suivantes 
   
 #### <a name="to-use-surround-with-from-the-context-menu"></a>Pour utiliser la commande Entourer de du menu contextuel  
   
-1.  Sélectionnez le texte à entourer dans l'éditeur XML.  
+1. Sélectionnez le texte à entourer dans l'éditeur XML.  
   
-2.  Avec le bouton droit et sélectionnez **entourer**.  
+2. Avec le bouton droit et sélectionnez **entourer**.  
   
      Une liste des encadrements d'extraits XML disponibles s'affiche.  
   
-3.  Sélectionnez un extrait dans la liste à l'aide de la souris ou en entrant son nom et en appuyant sur TAB ou ENTRÉE.  
+3. Sélectionnez un extrait dans la liste à l'aide de la souris ou en entrant son nom et en appuyant sur TAB ou ENTRÉE.  
   
 #### <a name="to-use-surround-with-from-the-intellisense-menu"></a>Pour utiliser un encadrement à partir du menu Intellisense  
   
-1.  Sélectionnez le texte à entourer dans l'éditeur XML.  
+1. Sélectionnez le texte à entourer dans l'éditeur XML.  
   
-2.  À partir de la **modifier** menu, pointez sur **IntelliSense**, puis sélectionnez **entourer**.  
+2. À partir de la **modifier** menu, pointez sur **IntelliSense**, puis sélectionnez **entourer**.  
   
      Une liste des encadrements d'extraits XML disponibles s'affiche.  
   
-3.  Sélectionnez un extrait dans la liste à l'aide de la souris ou en entrant son nom et en appuyant sur TAB ou ENTRÉE.  
+3. Sélectionnez un extrait dans la liste à l'aide de la souris ou en entrant son nom et en appuyant sur TAB ou ENTRÉE.  
   
 ## <a name="using-xml-snippets"></a>Utilisation d'extraits XML  
  Une fois que vous avez choisi un extrait XML, le texte de cet extrait de code est automatiquement inséré à l'emplacement du curseur. Tous les champs modifiables contenus dans l'extrait sont surlignés et le premier de ces champs est automatiquement sélectionné. Le champ actuellement sélectionné est encadré.  

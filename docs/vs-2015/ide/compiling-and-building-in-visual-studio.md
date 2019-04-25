@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 04d67f90006d4e11b2cbe16f6dacd3ba02cde7a6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7694f0f725af8a20ff3a5a01753b0669c0fd5d9f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779447"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067350"
 ---
 # <a name="compiling-and-building-in-visual-studio"></a>Compilation et génération dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ Vous pouvez utiliser Visual Studio pour générer des applications et créer des
 
  Dans l’IDE, vous pouvez effectuer les tâches additionnelles suivantes :
 
--   [Modifier le répertoire de sortie de génération](../ide/how-to-change-the-build-output-directory.md).
+- [Modifier le répertoire de sortie de génération](../ide/how-to-change-the-build-output-directory.md).
 
--   [Identifier les projets qui dépendent de la sortie d’un autre projet pour effectuer une génération correcte](../ide/how-to-create-and-remove-project-dependencies.md).
+- [Identifier les projets qui dépendent de la sortie d’un autre projet pour effectuer une génération correcte](../ide/how-to-create-and-remove-project-dependencies.md).
 
--   [Modifier la quantité d’informations contenues dans le journal de génération ou la fenêtre Sortie des builds](../ide/how-to-view-save-and-configure-build-log-files.md).
+- [Modifier la quantité d’informations contenues dans le journal de génération ou la fenêtre Sortie des builds](../ide/how-to-view-save-and-configure-build-log-files.md).
 
--   [Masquer les avertissements spécifiques du compilateur pour Visual C#, Visual C++ ou Visual Basic](../ide/how-to-suppress-compiler-warnings.md).
+- [Masquer les avertissements spécifiques du compilateur pour Visual C#, Visual C++ ou Visual Basic](../ide/how-to-suppress-compiler-warnings.md).
 
--   [Spécifier des actions de précompilation et de post-compilation personnalisées pour une build](../ide/specifying-custom-build-events-in-visual-studio.md).
+- [Spécifier des actions de précompilation et de post-compilation personnalisées pour une build](../ide/specifying-custom-build-events-in-visual-studio.md).
 
--   Améliorer les performances de génération en utilisant des builds parallèles. Pour plus d’informations, consultez [Génération parallèle de plusieurs projets](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) ou le billet de blog [Réglage du parallélisme de génération C++](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx).
+- Améliorer les performances de génération en utilisant des builds parallèles. Pour plus d’informations, consultez [Génération parallèle de plusieurs projets](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md) ou le billet de blog [Réglage du parallélisme de génération C++](http://blogs.msdn.com/b/msbuild/archive/2010/03/08/tuning-c-build-parallelism-in-vs2010.aspx).
 
 ## <a name="see-also"></a>Voir aussi
- [Procédure pas à pas : Création d’une Application](../ide/walkthrough-building-an-application.md) [présentation des Configurations de Build](../ide/understanding-build-configurations.md) [présentation des plateformes de générations](../ide/understanding-build-platforms.md) [génération (compilation) de projets de Site Web](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Comment : Créer et supprimer les dépendances d’un projet](../ide/how-to-create-and-remove-project-dependencies.md)
+ [Procédure pas à pas : Création d’une Application](../ide/walkthrough-building-an-application.md) [présentation des Configurations de Build](../ide/understanding-build-configurations.md) [présentation des plateformes de générations](../ide/understanding-build-platforms.md) [génération (compilation) de projets de Site Web](http://msdn.microsoft.com/library/a9cbb88c-8fff-4c67-848b-98fbfd823193) [ Comment : créer et supprimer les dépendances d’un projet](../ide/how-to-create-and-remove-project-dependencies.md)

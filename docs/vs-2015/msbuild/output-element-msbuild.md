@@ -19,17 +19,16 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 327f65ef6639f444326d59d6db990e9c732a760f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 52b8ef11e295d60e71a59820a48bca5e477c639d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54790281"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648806"
 ---
 # <a name="output-element-msbuild"></a>Output, élément (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Stocke les valeurs de sortie d’une tâche dans les éléments et les propriétés.  
   
  \<Project>  

@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c836b9b8b33ce39b4e5de72d8f62659c6f607074
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dca65a4ec1fecd885c97ce80d9827fe78c5ce9b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950690"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110503"
 ---
 # <a name="how-to-edit-xml-files"></a>Procédure : modification de fichiers XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 L'éditeur XML est le nouvel éditeur pour les fichiers XML. Il peut être utilisé avec un fichier XML autonome ou un fichier associé à un projet Visual Studio. L'Éditeur XML est associé aux extensions de fichier suivantes : .config, .dtd, .xml, .xsd, .xdr, .xsl, .xslt et .vssettings. L'éditeur XML est également associé à tout autre type de fichier qui n'a pas d'éditeur spécifique défini et dont le contenu est du XML ou une DTD.  
   
 > [!NOTE]
@@ -27,45 +26,45 @@ L'éditeur XML est le nouvel éditeur pour les fichiers XML. Il peut être utili
   
 ### <a name="to-edit-an-xml-file"></a>Pour modifier un fichier XML  
   
-1.  Double-cliquez sur le fichier à modifier.  
+1. Double-cliquez sur le fichier à modifier.  
   
 ### <a name="to-add-a-new-xml-file-to-a-project"></a>Pour ajouter un nouveau fichier XML à un projet  
   
-1.  À partir de la **projet** menu, sélectionnez **ajouter un nouvel élément**.  
+1. À partir de la **projet** menu, sélectionnez **ajouter un nouvel élément**.  
   
-2.  Sélectionnez **fichier XML** à partir de la **modèles** volet.  
+2. Sélectionnez **fichier XML** à partir de la **modèles** volet.  
   
-3.  Entrez le nom de fichier dans le **nom** champ et appuyez sur **ajouter**.  
+3. Entrez le nom de fichier dans le **nom** champ et appuyez sur **ajouter**.  
   
      Le fichier XML est ajouté au projet et ouvert dans l'éditeur XML. Il contient la déclaration XML par défaut, `<?xml version="1.0" encoding="utf-8" ?>`.  
   
 ### <a name="to-add-an-existing-xml-file-to-a-project"></a>Pour ajouter un fichier XML existant à un projet  
   
-1.  À partir de la **projet** menu, sélectionnez **ajouter un élément existant**.  
+1. À partir de la **projet** menu, sélectionnez **ajouter un élément existant**.  
   
      Le **ajouter un élément existant** boîte de dialogue s’affiche.  
   
-2.  Sélectionnez un fichier XML et la presse **ajouter**.  
+2. Sélectionnez un fichier XML et la presse **ajouter**.  
   
 ### <a name="to-create-a-new-xml-or-xslt-file"></a>Pour créer un nouveau fichier XML ou XSLT  
   
-1.  À partir de la **fichier** menu, sélectionnez **New**.  
+1. À partir de la **fichier** menu, sélectionnez **New**.  
   
      Le **nouveau fichier** boîte de dialogue s’affiche.  
   
-2.  Sélectionnez **fichier XML** pour créer un nouveau fichier XML ; ou, sélectionnez **fichier XSLT** pour créer une nouvelle feuille de style XSLT.  
+2. Sélectionnez **fichier XML** pour créer un nouveau fichier XML ; ou, sélectionnez **fichier XSLT** pour créer une nouvelle feuille de style XSLT.  
   
-3.  Cliquez sur **Ouvrir**.  
+3. Cliquez sur **Ouvrir**.  
   
 ### <a name="to-create-a-project-for-xml-files"></a>Pour créer un projet pour des fichiers XML  
   
-1.  À partir de la **fichier** menu, sélectionnez **New**, puis sélectionnez **projet**.  
+1. À partir de la **fichier** menu, sélectionnez **New**, puis sélectionnez **projet**.  
   
      La boîte de dialogue **Nouveau projet** s’affiche.  
   
-2.  Sélectionnez le langage de code de votre choix, sélectionnez **projet vide**, puis cliquez sur **OK**.  
+2. Sélectionnez le langage de code de votre choix, sélectionnez **projet vide**, puis cliquez sur **OK**.  
   
-3.  Ajoutez des fichiers XML au projet.  
+3. Ajoutez des fichiers XML au projet.  
   
      L'éditeur XML recherche les schémas ajoutés à ce projet et les utilise pour la validation et les fonctions IntelliSense dans tout fichier XML, de schéma ou XSLT que vous éditez alors que ce projet est ouvert.  
   

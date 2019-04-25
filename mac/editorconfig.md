@@ -7,18 +7,18 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 26A0DE31-2FBF-4E1B-99FB-083111AA1680
-ms.openlocfilehash: d42103d17b64ee9b3fb2a0660017824490655808
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: 3775e3fc4f391ea075a939a877fdab23f1eec1d2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51294017"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62983461"
 ---
 # <a name="creating-and-editing-a-custom-editorconfig-file"></a>Création et modification d’un fichier EditorConfig personnalisé
 
 Dans Visual Studio pour Mac, vous pouvez ajouter un fichier [EditorConfig](http://editorconfig.org/) à votre projet ou votre solution pour permettre à tous ceux qui travaillent dans le code base d’utiliser des styles de codage cohérents. Les paramètres déclarés dans le fichier EditorConfig sont prioritaires sur les paramètres globaux de l’éditeur de texte de Visual Studio pour Mac. L’utilisation d’un fichier EditorConfig dans votre projet ou code base vous permet de définir le style de codage, les préférences et les avertissements relatifs à votre projet. Dans la mesure où le fichier fait partie de votre code base, il est plus facile pour l’ensemble des utilisateurs d’adhérer aux pratiques de codage d’un projet, quel que soit l’IDE ou l’éditeur de code utilisé.
 
-Les fichiers [EditorConfig](http://editorconfig.org/) sont pris en charge sur de nombreux IDE et éditeurs de code, notamment Visual Studio 2017.
+Les fichiers [EditorConfig](http://editorconfig.org/) sont pris en charge sur de nombreux IDE et éditeurs de code, notamment Visual Studio.
 
 ## <a name="supported-settings"></a>Paramètres pris en charge
 
@@ -53,7 +53,7 @@ EditorConfig prend également en charge les [conventions de codage](/visualstudi
 
     ![Élément de solution affiché dans le panneau Solutions](media/editorconfig-image1a.png)
 
-4. Modifiez le fichier. Exemple :
+4. Modifiez le fichier. Par exemple :
 
     ```EditorConfig
     # This file is the top-most EditorConfig file

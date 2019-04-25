@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 8cbf01d79011f2917236f3577cf25986e4bc5b76
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: c14de7498cf893169295c08947d6687a2121bd6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "59001276"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059442"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Configurer des rôles de service cloud Azure avec Visual Studio
 Un service cloud Azure peut avoir un ou plusieurs rôles de travail ou rôles web. Pour chaque rôle, vous devez définir le mode de configuration de ce rôle et configurer son mode d’exécution. Pour en savoir plus sur les rôles dans les services cloud, regardez la vidéo [Introduction aux services cloud Azure](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
@@ -259,7 +259,7 @@ Le code suivant présente un exemple d’écriture de fichier texte dans le stoc
 
 Pour afficher le fichier créé par le code dans la section précédente, procédez comme suit :
 
-1.  Dans la zone de notification Windows, cliquez avec le bouton droit sur l’icône Azure, puis, dans le menu contextuel, sélectionnez **Afficher l’interface utilisateur de l’émulateur de calcul**.
+1. Dans la zone de notification Windows, cliquez avec le bouton droit sur l’icône Azure, puis, dans le menu contextuel, sélectionnez **Afficher l’interface utilisateur de l’émulateur de calcul**.
 
     ![Afficher l’émulateur de calcul Azure](./media/vs-azure-tools-configure-roles-for-cloud-service/show-compute-emulator.png)
 

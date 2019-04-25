@@ -19,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 751deec205eabb8bc6e4a492c7242095b2d67475
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
-ms.translationtype: MTE95
+ms.openlocfilehash: 1a0b90e5d863d41c46057e38c5f87bdad2481581
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790288"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088026"
 ---
 # <a name="refresh-a-uwp-app-in-visual-studio"></a>Actualiser une application UWP dans Visual Studio
 
@@ -32,34 +32,34 @@ ms.locfileid: "58790288"
 
  L'actualisation ne conserve pas l'état de votre application, ni ne reflète les modifications suivantes dans votre application :
 
--   modifications du fichier manifeste du package, y compris les modifications des images spécifiées dans le manifeste du package ;
+- modifications du fichier manifeste du package, y compris les modifications des images spécifiées dans le manifeste du package ;
 
--   modifications des références, telles que l'ajout ou la suppression d'une référence SDK, ou modifications des composants Windows Runtime (fichiers .winmd) ;
+- modifications des références, telles que l'ajout ou la suppression d'une référence SDK, ou modifications des composants Windows Runtime (fichiers .winmd) ;
 
--   modifications des ressources, telles que les modifications des chaînes dans les fichiers .resjson ;
+- modifications des ressources, telles que les modifications des chaînes dans les fichiers .resjson ;
 
--   modifications des fichiers projet qui entraînent des changements de noms de chemin d’accès, de nouveaux fichiers projet ou des fichiers supprimés ;
+- modifications des fichiers projet qui entraînent des changements de noms de chemin d’accès, de nouveaux fichiers projet ou des fichiers supprimés ;
 
--   modifications des propriétés de projet et d'élément, telles que les modifications du périphérique de débogage sélectionné, ou les modifications de l'action du package pour un fichier (dans la fenêtre Propriétés).
+- modifications des propriétés de projet et d'élément, telles que les modifications du périphérique de débogage sélectionné, ou les modifications de l'action du package pour un fichier (dans la fenêtre Propriétés).
 
 > [!IMPORTANT]
 >  Lorsque vous modifiez des références ou le manifeste du package, ou que vous apportez d'autres modifications spécifiées dans la liste précédente, vous devez arrêter et redémarrer le débogueur pour mettre à jour les fichiers sources HTML, CSS et JavaScript.
 
 ### <a name="to-refresh-an-app"></a>Pour actualiser une application
 
-1.  Votre projet UWP ouverte dans Visual Studio, sélectionnez **ordinateur Local** en tant que la cible de débogage.
+1. Votre projet UWP ouverte dans Visual Studio, sélectionnez **ordinateur Local** en tant que la cible de débogage.
 
      ![Liste cible de débogage sélectionnez](../debugger/media/js_select_target.png "JS_Select_Target")
 
-3.  Appuyez sur F5 pour exécuter l'application en mode débogage.
+3. Appuyez sur F5 pour exécuter l'application en mode débogage.
 
-4.  Passez dans Visual Studio.
+4. Passez dans Visual Studio.
 
-5.  Dans la page d’accueil de votre application UWP, vous pouvez modifier certains du code HTML.
+5. Dans la page d’accueil de votre application UWP, vous pouvez modifier certains du code HTML.
 
-7.  Cliquez sur le **Windows actualiser application** bouton, qui ressemble à ceci : ![bouton d’application Windows Actualiser](../debugger/media/js_refresh.png "JS_Refresh"). (Ou appuyez sur F4.)
+7. Cliquez sur le **Windows actualiser application** bouton, qui ressemble à ceci : ![Windows application bouton Actualiser](../debugger/media/js_refresh.png "JS_Refresh"). (Ou appuyez sur F4.)
 
-8.  Basculez vers l'application. L’application est rechargée et le code HTML mis à jour est utilisé pour restituer l’application.
+8. Basculez vers l'application. L’application est rechargée et le code HTML mis à jour est utilisé pour restituer l’application.
 
 ## <a name="see-also"></a>Voir aussi
 - [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b984a404ed8a33f2b4f78bca8e5a85f4d11bd91
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8d27bd9be1b769215dd77d1e906a5698e17bd18b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908515"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659937"
 ---
 # <a name="send-activity-designer"></a>Concepteur d'activités Send
 
@@ -36,7 +36,6 @@ Vous pouvez également le **SendAndReceiveReply** Concepteur de modèles dans le
 ### <a name="the-send-activity-properties"></a>Propriétés de l'activité Send
 
 Le tableau suivant présente les propriétés de <xref:System.ServiceModel.Activities.Send> et décrit comment elles sont utilisées dans le concepteur. Ces propriétés peuvent être modifiées dans la grille de propriétés ou sur l’aire du Concepteur de flux de travail.
-
 
 | Nom de la propriété | Obligatoire | Utilisation |
 |-|----------|-|

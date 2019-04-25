@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 831123caead6593fdbb548fd6e69a63646790d8a
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 58d5fd0bfe1c8d5f5896d365a7b0ecfdb8da25b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54969088"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068221"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Procédure : Les polices intégrées d’accès et des couleurs ccheme
 L’environnement de développement intégré (IDE) Visual Studio a un jeu de polices et couleurs qui est associé à la fenêtre d’éditeur. Vous pouvez accéder à ce schéma via les <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interface.
@@ -34,28 +34,28 @@ L’environnement de développement intégré (IDE) Visual Studio a un jeu de po
 
 ## <a name="to-define-a-category-using-built-in-fonts-and-colors"></a>Pour définir une catégorie à l’aide de couleurs et polices intégrées
 
-1.  Créer un GUID arbitraire.
+1. Créer un GUID arbitraire.
 
      Ce GUID est utilisé pour identifier une catégorie. Cette catégorie réutilise la spécification de couleurs et de polices par défaut de l’IDE.
 
     > [!NOTE]
     >  Lors de la récupération des données de police et de couleur avec la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> ou autres interfaces, les VSPackages utiliser ce GUID pour référencer les informations intégrées.
 
-2.  Nom de la catégorie doit être ajouté à une table de chaînes à l’intérieur les ressources du package Visual Studio (*.rc*) de fichiers, afin qu’elle peut être localisée en fonction des besoins lorsque affichés dans l’IDE.
+2. Nom de la catégorie doit être ajouté à une table de chaînes à l’intérieur les ressources du package Visual Studio (*.rc*) de fichiers, afin qu’elle peut être localisée en fonction des besoins lorsque affichés dans l’IDE.
 
      Pour plus d’informations, consultez [ajouter ou supprimer une chaîne](/cpp/windows/adding-or-deleting-a-string).
 
 ### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>Pour inscrire une catégorie à l’aide de couleurs et polices intégrées
 
-1.  Construire un type spécial d’entrée de Registre de catégorie dans l’emplacement suivant :
+1. Construire un type spécial d’entrée de Registre de catégorie dans l’emplacement suivant :
 
      *[HKLM\SOFTWARE\Microsoft \Visual Studio\\\<Visual Studio version>\FontAndColors\\\<Category>*]
 
      *\<Catégorie >* est le nom non localisé de la catégorie.
 
-2.  Remplir le Registre afin d’utiliser le jeu de couleurs et polices du stock avec quatre valeurs :
+2. Remplir le Registre afin d’utiliser le jeu de couleurs et polices du stock avec quatre valeurs :
 
-    |Name|Type|Données|Description|
+    |Nom|Type|Données|Description|
     |----------|----------|----------|-----------------|
     |Category|REG_SZ|GUID|Un GUID arbitraire qui identifie une catégorie qui contient le schéma de police et couleur stock.|
     |Package|REG_SZ|GUID|{F5E7E71D-1401-11D1-883B-0000F87579D2}<br /><br /> Ce GUID est utilisé par tous les packages qui utilisent les configurations de couleur et de police par défaut.|

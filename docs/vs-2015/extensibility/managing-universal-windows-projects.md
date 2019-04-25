@@ -8,12 +8,12 @@ ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e905ca4a34399c1ec590d5ff16441bd5afe9ce23
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8de4960548b363c99b9625553c47b2cbad2df2de
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949327"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063684"
 ---
 # <a name="managing-universal-windows-projects"></a>Gestion de projets Windows universels
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,11 +25,11 @@ Les applications Windows universelles sont des applications qui ciblent Windows 
   
 ### <a name="navigate-the-shared-project"></a>Parcourir le projet partagé  
   
-1.  Créez un projet VSIX c# nommé **TestUniversalProject**. (**Fichier, nouveau, projet** , puis **Package Visual Studio c#, extensibilité,**). Ajouter un **commande personnalisée** modèle d’élément de projet (dans l’Explorateur de solutions, cliquez sur le nœud de projet et sélectionnez **Ajouter / nouvel élément**, puis accédez à **extensibilité**). Nommez le fichier **TestUniversalProject**.  
+1. Créez un projet VSIX c# nommé **TestUniversalProject**. (**Fichier, nouveau, projet** , puis **Package Visual Studio c#, extensibilité,**). Ajouter un **commande personnalisée** modèle d’élément de projet (dans l’Explorateur de solutions, cliquez sur le nœud de projet et sélectionnez **Ajouter / nouvel élément**, puis accédez à **extensibilité**). Nommez le fichier **TestUniversalProject**.  
   
-2.  Ajoutez une référence à Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll et Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll (dans le **Extensions** section).  
+2. Ajoutez une référence à Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll et Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll (dans le **Extensions** section).  
   
-3.  Ouvrez TestUniversalProject.cs et ajoutez le code suivant `using` instructions :  
+3. Ouvrez TestUniversalProject.cs et ajoutez le code suivant `using` instructions :  
   
     ```csharp  
     using EnvDTE;  
@@ -42,7 +42,7 @@ Les applications Windows universelles sont des applications qui ciblent Windows 
     using System.Windows.Forms;  
     ```  
   
-4.  Dans la classe TestUniversalProject, ajoutez un champ privé qui pointe vers le **sortie** fenêtre.  
+4. Dans la classe TestUniversalProject, ajoutez un champ privé qui pointe vers le **sortie** fenêtre.  
   
     ```csharp  
     public sealed class TestUniversalProject   
@@ -52,7 +52,7 @@ Les applications Windows universelles sont des applications qui ciblent Windows 
     }  
     ```  
   
-5.  Définissez la référence dans le volet de sortie à l’intérieur du constructeur de TestUniversalProject :  
+5. Définissez la référence dans le volet de sortie à l’intérieur du constructeur de TestUniversalProject :  
   
     ```csharp  
     private TestUniversalProject(Package package)  
@@ -77,7 +77,7 @@ Les applications Windows universelles sont des applications qui ciblent Windows 
     }  
     ```  
   
-6.  Supprimez le code existant à partir de la `ShowMessageBox` méthode :  
+6. Supprimez le code existant à partir de la `ShowMessageBox` méthode :  
   
     ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)   
@@ -85,7 +85,7 @@ Les applications Windows universelles sont des applications qui ciblent Windows 
     }  
     ```  
   
-7.  Obtenez l’objet DTE, que nous utiliserons pour plusieurs objectifs différents dans cette procédure pas à pas. En outre, assurez-vous qu’une solution est chargée de la suite d’un clic sur le bouton de menu.  
+7. Obtenez l’objet DTE, que nous utiliserons pour plusieurs objectifs différents dans cette procédure pas à pas. En outre, assurez-vous qu’une solution est chargée de la suite d’un clic sur le bouton de menu.  
   
     ```csharp  
     private void ShowMessageBox(object sender, EventArgs e)  
@@ -103,7 +103,7 @@ Les applications Windows universelles sont des applications qui ciblent Windows 
     }  
     ```  
   
-8.  Recherchez le projet partagé. Le projet partagé est un conteneur pur ; Il ne pas créer ou produire des sorties. La méthode suivante recherche le premier projet partagé dans la solution en recherchant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> objet qui a la possibilité de projet partagé.  
+8. Recherchez le projet partagé. Le projet partagé est un conteneur pur ; Il ne pas créer ou produire des sorties. La méthode suivante recherche le premier projet partagé dans la solution en recherchant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> objet qui a la possibilité de projet partagé.  
   
     ```csharp  
     private IVsHierarchy FindSharedProject()  
@@ -306,7 +306,7 @@ Les applications Windows universelles sont des applications qui ciblent Windows 
   
 ### <a name="manage-the-shared-items-in-the-platform-project"></a>Gérer les éléments partagés dans le projet de plateforme  
   
-1.  Rechercher les éléments partagés dans le projet de plateforme. Les éléments dans le projet partagé s’affichent dans le projet de plateforme en tant qu’éléments partagés. Vous ne pouvez pas afficher ces journaux dans le **l’Explorateur de solutions**, mais vous pouvez parcourir la hiérarchie de projet pour les trouver. La méthode suivante parcourt la hiérarchie et collecte tous les éléments partagés. Si vous le souhaitez la légende de chaque élément, la sortie. Les éléments partagés sont identifiés par la nouvelle propriété <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7>.  
+1. Rechercher les éléments partagés dans le projet de plateforme. Les éléments dans le projet partagé s’affichent dans le projet de plateforme en tant qu’éléments partagés. Vous ne pouvez pas afficher ces journaux dans le **l’Explorateur de solutions**, mais vous pouvez parcourir la hiérarchie de projet pour les trouver. La méthode suivante parcourt la hiérarchie et collecte tous les éléments partagés. Si vous le souhaitez la légende de chaque élément, la sortie. Les éléments partagés sont identifiés par la nouvelle propriété <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID7>.  
   
     ```csharp  
     private void InspectHierarchyItems(IVsHierarchy hier, uint itemid, int level, List<uint> itemIds, bool getSharedItems, bool printItems)  
@@ -338,7 +338,7 @@ Les applications Windows universelles sont des applications qui ciblent Windows 
     }  
     ```  
   
-2.  Dans le `ShowMessageBox` (méthode), ajoutez le code suivant pour guider les éléments de hiérarchie de projet de plateforme. Insérez-le dans le `foreach` bloc.  
+2. Dans le `ShowMessageBox` (méthode), ajoutez le code suivant pour guider les éléments de hiérarchie de projet de plateforme. Insérez-le dans le `foreach` bloc.  
   
     ```csharp  
     output.OutputStringThreadSafe("Walk the active platform project:\n");  
@@ -346,7 +346,7 @@ Les applications Windows universelles sont des applications qui ciblent Windows 
     this.InspectHierarchyItems(activePlatformHier, (uint)VSConstants.VSITEMID.Root, 1, sharedItemIds, true, true);  
     ```  
   
-3.  Lire les éléments partagés. Les éléments partagés s’affichent dans le projet de plateforme en tant que fichiers liés masquées, et vous pouvez lire toutes les propriétés en tant que fichiers liés ordinaires. Le code suivant lit le chemin d’accès complet du premier élément partagé.  
+3. Lire les éléments partagés. Les éléments partagés s’affichent dans le projet de plateforme en tant que fichiers liés masquées, et vous pouvez lire toutes les propriétés en tant que fichiers liés ordinaires. Le code suivant lit le chemin d’accès complet du premier élément partagé.  
   
     ```csharp  
     var sharedItemId = sharedItemIds[0];  
@@ -355,7 +355,7 @@ Les applications Windows universelles sont des applications qui ciblent Windows 
     output.OutputStringThreadSafe(string.Format("Shared item full path: {0}\n", fullPath));  
     ```  
   
-4.  Essayez maintenant. Appuyez sur F5 pour lancer l’instance expérimentale. Créer un projet d’application universelle hub c# dans l’instance expérimentale (dans le **nouveau projet** boîte de dialogue, **Visual C# / Windows / Windows 8 / universelle / application Hub**) accédez à la **outils** menu et cliquez sur **TestUniversalProject appeler**, puis vérifiez le texte le **sortie** volet. Vous devriez voir quelque chose qui ressemble à ce qui suit :  
+4. Essayez maintenant. Appuyez sur F5 pour lancer l’instance expérimentale. Créer un projet d’application universelle hub c# dans l’instance expérimentale (dans le **nouveau projet** boîte de dialogue, **Visual C# / Windows / Windows 8 / universelle / application Hub**) accédez à la **outils** menu et cliquez sur **TestUniversalProject appeler**, puis vérifiez le texte le **sortie** volet. Vous devriez voir quelque chose qui ressemble à ce qui suit :  
   
     ```  
     Found shared project: HubApp.Shared  

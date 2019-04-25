@@ -14,21 +14,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dc250666c5f60064016b90121f7238f9e6e19ae
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 1112ec72e8aca764f749a6d8f1925302f569b17e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682717"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044782"
 ---
-# <a name="error-unable-to-initiate-dcom-communication"></a>Erreur : Impossible d'initier les communications DCOM
+# <a name="error-unable-to-initiate-dcom-communication"></a>Erreur : Impossible de lancer les communications DCOM
 Une erreur DCOM s'est produite lorsque l'ordinateur local a tenté de communiquer avec l'ordinateur distant. Cette erreur est provoquée par un pare-feu sur le serveur distant ou une authentification Windows interrompue sur l'ordinateur distant.
 
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur
 
--   Si l’ordinateur distant a de pare-feu Windows est activé, consultez [le débogage à distance](../debugger/remote-debugging.md) pour obtenir des instructions sur la façon de configurer le pare-feu pour le débogage local.
+- Si l’ordinateur distant a de pare-feu Windows est activé, consultez [le débogage à distance](../debugger/remote-debugging.md) pour obtenir des instructions sur la façon de configurer le pare-feu pour le débogage local.
 
--   Pour restaurer l'authentification Windows, tentez de redémarrer les deux ordinateurs. Vérifiez si les journaux des événements de l'ordinateur local ou distant contiennent des erreurs Kerberos et contactez les administrateurs de domaines pour les problèmes connus.
+- Pour restaurer l'authentification Windows, tentez de redémarrer les deux ordinateurs. Vérifiez si les journaux des événements de l'ordinateur local ou distant contiennent des erreurs Kerberos et contactez les administrateurs de domaines pour les problèmes connus.
 
 ## <a name="see-also"></a>Voir aussi
 - [Remote Debugging](../debugger/remote-debugging.md)

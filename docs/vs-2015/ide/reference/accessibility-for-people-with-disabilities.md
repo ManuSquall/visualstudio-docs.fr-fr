@@ -13,19 +13,18 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fd113acc6c79a6e8307969cbb3ed71705b739a19
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 38a4ea987a1b7514d19433f3da75e269fcaf50ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762229"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093759"
 ---
 # <a name="accessibility-for-people-with-disabilities"></a>Accessibilité pour les personnes handicapées
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Microsoft s’engage à faciliter l’utilisation de ses produits et services. Les rubriques suivantes fournissent des informations sur les fonctionnalités, produits et services visant à rendre Microsoft [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] plus accessible aux personnes handicapées.  
   
--   [Fonctionnalités d’accessibilité de Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)  
+- [Fonctionnalités d’accessibilité de Visual Studio](../../ide/reference/accessibility-features-of-visual-studio.md)  
   
--   [Fonctionnalités d’accessibilité de la Visionneuse d’aide](../../ide/accessibility-features-of-the-help-viewer.md)
+- [Fonctionnalités d’accessibilité de la Visionneuse d’aide](../../ide/accessibility-features-of-the-help-viewer.md)

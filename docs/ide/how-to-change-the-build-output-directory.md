@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f254c29f2951484869b814f13d1a346080fab07
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6ea7cae6dd709e407a5c1a9832092586d217689b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911531"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824228"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Procédure : Changer le répertoire de sortie de build
 
@@ -27,11 +27,11 @@ Vous pouvez spécifier l’emplacement de sortie en fonction de la configuration
 
 ## <a name="change-the-build-output-directory"></a>Changer le répertoire de sortie de build
 
-1.  Dans la barre de menus, choisissez **Projet** > **\<Nom_application> Propriétés**. Vous pouvez également cliquer avec le bouton droit sur le nœud du projet dans **Explorateur de solutions**, puis sélectionner **Propriétés**.
+1. Dans la barre de menus, choisissez **Projet** > **\<Nom_application> Propriétés**. Vous pouvez également cliquer avec le bouton droit sur le nœud du projet dans **Explorateur de solutions**, puis sélectionner **Propriétés**.
 
-2.  Si vous avez un projet Visual Basic, sélectionnez l'onglet **Compiler** . Si vous avez un projet C#, sélectionnez l'onglet **Générer**. Si vous avez un projet C++ ou un projet JavaScript, sélectionnez l'onglet **Général** .
+2. Si vous avez un projet Visual Basic, sélectionnez l'onglet **Compiler** . Si vous avez un projet C#, sélectionnez l'onglet **Générer**. Si vous avez un projet C++ ou un projet JavaScript, sélectionnez l'onglet **Général** .
 
-3.  Dans la liste déroulante de configuration située dans la partie supérieure, choisissez la configuration pour laquelle vous voulez modifier l’emplacement du fichier de sortie (débogage, version ou tout).
+3. Dans la liste déroulante de configuration située dans la partie supérieure, choisissez la configuration pour laquelle vous voulez modifier l’emplacement du fichier de sortie (débogage, version ou tout).
 
      Recherchez l’entrée relative au chemin de sortie (**Chemin de sortie de la génération** en Visual Basic, **Répertoire de sortie** en Visual C++, **Chemin de sortie** en JavaScript et C#). Spécifiez un nouveau répertoire de sortie de génération relatif au répertoire du projet.
 

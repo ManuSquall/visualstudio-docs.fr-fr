@@ -1,25 +1,22 @@
 ---
 title: Le processus de Transformation de modèle de texte | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, transformation process
 ms.assetid: 80b3f0e0-49e7-4865-a1ac-dba068abe96b
 caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 146d391cc843291b79dc34af29851cfed4c80a46
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 0f92b4053006aa5da3c28d9330b372466f84d0fd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49203773"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113987"
 ---
 # <a name="the-text-template-transformation-process"></a>Processus de transformation du modèle de texte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,19 +41,19 @@ Le processus de transformation de modèle de texte prend un fichier de modèle d
 ## <a name="the-host"></a>L’hôte  
  L’hôte est responsable de tout ce qui est lié à l’environnement en dehors du processus de transformation, y compris les éléments suivants :  
   
--   Localisation des fichiers texte et binaires demandés par le moteur ou un processeur de directive. L’hôte peut rechercher des répertoires et le global assembly cache pour localiser les assemblys. Il peut rechercher du code de processeur de directive personnalisé pour le moteur. L’hôte peut également rechercher et lire des fichiers texte et retourner leur contenu sous forme de chaînes.  
+- Localisation des fichiers texte et binaires demandés par le moteur ou un processeur de directive. L’hôte peut rechercher des répertoires et le global assembly cache pour localiser les assemblys. Il peut rechercher du code de processeur de directive personnalisé pour le moteur. L’hôte peut également rechercher et lire des fichiers texte et retourner leur contenu sous forme de chaînes.  
   
--   Fournissant des listes d’assemblys standards et d’espaces de noms utilisés par le moteur pour créer la classe de transformation générée.  
+- Fournissant des listes d’assemblys standards et d’espaces de noms utilisés par le moteur pour créer la classe de transformation générée.  
   
--   En fournissant le domaine d’application qui est utilisé lorsque le moteur compile et exécute la classe de transformation générée. Un domaine d’application distinct est utilisé afin de protéger l’application hôte des erreurs contenues dans le code du modèle.  
+- En fournissant le domaine d’application qui est utilisé lorsque le moteur compile et exécute la classe de transformation générée. Un domaine d’application distinct est utilisé afin de protéger l’application hôte des erreurs contenues dans le code du modèle.  
   
--   Écriture du fichier de sortie générée.  
+- Écriture du fichier de sortie générée.  
   
--   Définition de l’extension par défaut pour le fichier de sortie généré.  
+- Définition de l’extension par défaut pour le fichier de sortie généré.  
   
--   Gestion des erreurs de transformation de modèle de texte. Par exemple, l’hôte peut afficher les erreurs dans l’interface utilisateur ou les écrire dans un fichier. (Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], erreurs sont affichées dans la fenêtre de Message d’erreur.)  
+- Gestion des erreurs de transformation de modèle de texte. Par exemple, l’hôte peut afficher les erreurs dans l’interface utilisateur ou les écrire dans un fichier. (Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], erreurs sont affichées dans la fenêtre de Message d’erreur.)  
   
--   Si un utilisateur a appelé une directive sans fournir une valeur, en fournissant une valeur de paramètre obligatoire. Le processeur de directive peut spécifier le nom de la directive et le paramètre et demander à l’hôte pour fournir une valeur par défaut, le cas échéant.  
+- Si un utilisateur a appelé une directive sans fournir une valeur, en fournissant une valeur de paramètre obligatoire. Le processeur de directive peut spécifier le nom de la directive et le paramètre et demander à l’hôte pour fournir une valeur par défaut, le cas échéant.  
   
 ## <a name="directives-and-directive-processors"></a>Directives et des processeurs de Directive  
  Une directive est une commande dans votre modèle de texte. Il fournit des paramètres pour le processus de génération. Directives définissent généralement la source et le type du modèle ou d’autres entrées et l’extension de nom de fichier du fichier de sortie.  
@@ -68,6 +65,3 @@ Le processus de transformation de modèle de texte prend un fichier de modèle d
  `<#@ import namespace="System.Text" #>`  
   
  Le processeur de directive standard la convertit en un `using` instruction dans la classe de transformation générée. Vous pouvez ensuite utiliser le `StringBuilder` classe dans le reste de votre code de modèle sans fournir son nom qualifié en tant que `System.Text.StringBuilder`.
-
-
-

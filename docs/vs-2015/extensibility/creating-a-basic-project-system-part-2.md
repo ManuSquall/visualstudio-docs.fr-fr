@@ -12,12 +12,12 @@ ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f1d02b8701f5740de8a747406fc18da3e9f8e6cc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6004e7346ab4bb4bb8d95c04fbbbdd86e1527001
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938587"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079602"
 ---
 # <a name="creating-a-basic-project-system-part-2"></a>Création d’un système de projet de base, partie 2
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,15 +28,15 @@ La première procédure pas à pas dans cette série, [création d’un système
   
  Cette procédure pas à pas explique comment accomplir ces tâches :  
   
--   Créer un modèle de Visual Studio.  
+- Créer un modèle de Visual Studio.  
   
--   Déployer un modèle de Visual Studio.  
+- Déployer un modèle de Visual Studio.  
   
--   Créer un nœud enfant du type projet dans le **nouveau projet** boîte de dialogue.  
+- Créer un nœud enfant du type projet dans le **nouveau projet** boîte de dialogue.  
   
--   Activer la substitution de paramètre dans le modèle Visual Studio.  
+- Activer la substitution de paramètre dans le modèle Visual Studio.  
   
--   Créer une page de propriétés de projet.  
+- Créer une page de propriétés de projet.  
   
 > [!NOTE]
 >  Les étapes décrites dans cette procédure pas à pas sont basées sur un projet c#. Toutefois, à l’exception des caractéristiques telles que les extensions de nom de fichier et le code, vous pouvez utiliser les mêmes étapes pour un projet Visual Basic.  
@@ -120,9 +120,9 @@ La première procédure pas à pas dans cette série, [création d’un système
 ## <a name="adding-a-minimal-vsct-file"></a>Ajout d’un fichier .vsct minimale  
  Visual Studio doit être exécuté en mode d’installation pour reconnaître un modèle Visual Studio nouvel ou modifié. Le mode d’installation nécessite un fichier .vsct à être présent. Par conséquent, vous devez ajouter un fichier .vsct minimal au projet.  
   
-1.  Ajouter un fichier XML nommé SimpleProject.vsct au projet SimpleProject.  
+1. Ajouter un fichier XML nommé SimpleProject.vsct au projet SimpleProject.  
   
-2.  Remplacez le contenu du fichier SimpleProject.vsct par le code suivant.  
+2. Remplacez le contenu du fichier SimpleProject.vsct par le code suivant.  
   
     ```  
     <?xml version="1.0" encoding="utf-8" ?>  
@@ -131,25 +131,25 @@ La première procédure pas à pas dans cette série, [création d’un système
     </CommandTable>  
     ```  
   
-3.  Définir le **Action de génération** de ce fichier à **VSCTCompile**. Vous pouvez faire cela uniquement dans le fichier .csproj, pas dans le **propriétés** fenêtre. Assurez-vous que le **Action de génération** de ce fichier est défini sur **aucun** à ce stade.  
+3. Définir le **Action de génération** de ce fichier à **VSCTCompile**. Vous pouvez faire cela uniquement dans le fichier .csproj, pas dans le **propriétés** fenêtre. Assurez-vous que le **Action de génération** de ce fichier est défini sur **aucun** à ce stade.  
   
-    1.  Cliquez sur le nœud SimpleProject et puis cliquez sur **SimpleProject.csproj modifier**.  
+    1. Cliquez sur le nœud SimpleProject et puis cliquez sur **SimpleProject.csproj modifier**.  
   
-    2.  Dans le fichier .csproj, recherchez l’élément SimpleProject.vsct.  
+    2. Dans le fichier .csproj, recherchez l’élément SimpleProject.vsct.  
   
         ```  
         <None Include="SimpleProject.vsct" />  
         ```  
   
-    3.  Modifier l’action de génération pour **VSCTCompile**.  
+    3. Modifier l’action de génération pour **VSCTCompile**.  
   
         ```  
         <VSCTCompile Include="SimpleProject.vsct" />  
         ```  
   
-    4.  le fichier projet et le fermer l’éditeur.  
+    4. le fichier projet et le fermer l’éditeur.  
   
-    5.  Enregistrer le nœud SimpleProject, puis, dans le **l’Explorateur de solutions** cliquez sur **recharger le projet**.  
+    5. Enregistrer le nœud SimpleProject, puis, dans le **l’Explorateur de solutions** cliquez sur **recharger le projet**.  
   
 ## <a name="examining-the-visual-studio-template-build-steps"></a>Examen des étapes de génération de modèle Visual Studio  
  Le système de génération de projet VSPackage s’exécute généralement Visual Studio en mode d’installation lorsque le fichier .vstemplate est modifié ou le projet qui contient le fichier .vstemplate est régénéré. Vous pouvez suivre la procédure en définissant le niveau de détail de MSBuild à la normale ou une version ultérieure.  
@@ -209,11 +209,11 @@ ZipProjects:
   
  Cette section montre comment créer un nœud enfant de Console pour le type de projet SimpleProject.  
   
-1.  Renommez le dossier \Templates\Projects\SimpleProject\ \Templates\Projects\ConsoleApp\\.  
+1. Renommez le dossier \Templates\Projects\SimpleProject\ \Templates\Projects\ConsoleApp\\.  
   
-2.  Dans le **propriétés** fenêtre, sélectionnez toutes les cinq fichiers dans le dossier \Templates\Projects\ConsoleApp\ et assurez-vous que le **Action de génération** a la valeur **ZipProject**.  
+2. Dans le **propriétés** fenêtre, sélectionnez toutes les cinq fichiers dans le dossier \Templates\Projects\ConsoleApp\ et assurez-vous que le **Action de génération** a la valeur **ZipProject**.  
   
-3.  Dans le fichier SimpleProject.vstemplate, ajoutez la ligne suivante à la fin de la \<TemplateData > section, juste avant la balise de fermeture.  
+3. Dans le fichier SimpleProject.vstemplate, ajoutez la ligne suivante à la fin de la \<TemplateData > section, juste avant la balise de fermeture.  
   
     ```  
     <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>  
@@ -221,11 +221,11 @@ ZipProjects:
   
      Cela entraîne le modèle d’Application de Console apparaissent dans le nœud enfant de la Console et dans le nœud parent SimpleProject, ce qui se trouve un niveau au-dessus du nœud enfant.  
   
-4.  Enregistrez le fichier SimpleProject.vstemplate.  
+4. Enregistrez le fichier SimpleProject.vstemplate.  
   
-5.  Dans le fichier .csproj, ajoutez \<OutputSubPath > à chacun des éléments ZipProject. Décharger le projet, comme auparavant et modifiez le fichier projet.  
+5. Dans le fichier .csproj, ajoutez \<OutputSubPath > à chacun des éléments ZipProject. Décharger le projet, comme auparavant et modifiez le fichier projet.  
   
-6.  Recherchez le \<ZipProject > éléments. À chaque \<ZipProject > élément, ajoutez un \<OutputSubPath > élément et lui donner la valeur de Console. Le ZipProject  
+6. Recherchez le \<ZipProject > éléments. À chaque \<ZipProject > élément, ajoutez un \<OutputSubPath > élément et lui donner la valeur de Console. Le ZipProject  
   
     ```  
     <ZipProject Include="Templates\Projects\ConsoleApp\AssemblyInfo.cs">  
@@ -245,7 +245,7 @@ ZipProjects:
         </ZipProject>  
     ```  
   
-7.  Ajoutez ce \<PropertyGroup > dans le fichier de projet :  
+7. Ajoutez ce \<PropertyGroup > dans le fichier de projet :  
   
     ```  
     <PropertyGroup>  
@@ -253,7 +253,7 @@ ZipProjects:
     </PropertyGroup>  
     ```  
   
-8.  Enregistrez le fichier projet et recharger le projet.  
+8. Enregistrez le fichier projet et recharger le projet.  
   
 ## <a name="testing-the-project-type-child-node"></a>Le nœud enfant de Type projet de test  
  Tester le fichier de projet modifié pour voir si le **Console** nœud enfant s’affiche dans le **nouveau projet** boîte de dialogue.  
@@ -285,15 +285,15 @@ ZipProjects:
   
 #### <a name="to-substitute-project-template-parameters"></a>Pour substituer des paramètres de modèle de projet  
   
-1.  Dans le fichier SimpleProjectNode.cs, supprimez le `AddFileFromTemplate` (méthode).  
+1. Dans le fichier SimpleProjectNode.cs, supprimez le `AddFileFromTemplate` (méthode).  
   
-2.  Dans le fichier \Templates\Projects\ConsoleApp\SimpleProject.myproj, recherchez le \<RootNamespace > propriété et remplacez sa valeur $safeprojectname$.  
+2. Dans le fichier \Templates\Projects\ConsoleApp\SimpleProject.myproj, recherchez le \<RootNamespace > propriété et remplacez sa valeur $safeprojectname$.  
   
     ```  
     <RootNamespace>$safeprojectname$</RootNamespace>  
     ```  
   
-3.  Dans le fichier \Templates\Projects\SimpleProject\Program.cs, remplacez le contenu du fichier par le code suivant :  
+3. Dans le fichier \Templates\Projects\SimpleProject\Program.cs, remplacez le contenu du fichier par le code suivant :  
   
     ```  
     using System;  
@@ -315,11 +315,11 @@ ZipProjects:
     }  
     ```  
   
-4.  Régénérez le projet SimpleProject et démarrer le débogage. L’instance expérimentale doit apparaître.  
+4. Régénérez le projet SimpleProject et démarrer le débogage. L’instance expérimentale doit apparaître.  
   
-5.  Créer une nouvelle application de Console de SimpleProject. (Dans le **types de projets** volet, sélectionnez **SimpleProject**. Sous **modèles Visual Studio installés**, sélectionnez **Application Console**.)  
+5. Créer une nouvelle application de Console de SimpleProject. (Dans le **types de projets** volet, sélectionnez **SimpleProject**. Sous **modèles Visual Studio installés**, sélectionnez **Application Console**.)  
   
-6.  Dans le projet nouvellement créé, ouvrez le fichier Program.cs. Il doit se présenter comme suit (les valeurs GUID dans votre fichier diffèrent.) :  
+6. Dans le projet nouvellement créé, ouvrez le fichier Program.cs. Il doit se présenter comme suit (les valeurs GUID dans votre fichier diffèrent.) :  
   
     ```  
     using System;  
@@ -348,11 +348,11 @@ ZipProjects:
   
  La page de propriétés que vous créez dans cette section vous permet de modifier et enregistrer ces propriétés de projet :  
   
--   AssemblyName  
+- AssemblyName  
   
--   OutputType  
+- OutputType  
   
--   RootNamespace.  
+- RootNamespace.  
   
 1. Dans le fichier SimpleProjectPackage.cs, ajoutez ce `ProvideObject` attribut le `SimpleProjectPackage` classe :  
   

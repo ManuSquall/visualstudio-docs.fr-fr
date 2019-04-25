@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour suspendre et reprendre la collecte de données de performances | Microsoft Docs
+title: 'Procédure : Suspendre et reprendre la collecte de données de performances | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -11,14 +11,14 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c9916a46089e1d3381f1bc1f41dd5b7c0178c964
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 1edfb882838907503a0df106da2181c283f29d9a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790881"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053999"
 ---
-# <a name="how-to-pause-and-resume-performance-data-collection"></a>Guide pratique pour suspendre et reprendre la collecte de données de performances
+# <a name="how-to-pause-and-resume-performance-data-collection"></a>Procédure : Suspendre et reprendre la collecte de données Performance
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 À partir de la fenêtre de la page de session de profilage, vous pouvez contrôler de manière interactive la collecte des données de profilage.  
@@ -32,14 +32,14 @@ ms.locfileid: "54790881"
   
 ### <a name="to-pause--resume-or-stop-profiling"></a>Pour suspendre, reprendre ou arrêter le profilage  
   
--   Dans la page de session de profilage :  
+- Dans la page de session de profilage :  
   
-    -   Choisissez **Suspendre la collecte** pour suspendre la collecte de données.  
+    - Choisissez **Suspendre la collecte** pour suspendre la collecte de données.  
   
-    -   Choisissez **Reprendre la collecte** pour redémarrer la collecte de données après qu’elle a été suspendue.  
+    - Choisissez **Reprendre la collecte** pour redémarrer la collecte de données après qu’elle a été suspendue.  
   
-    -   Choisissez **Arrêter le profilage** pour terminer la session de profilage et générer des rapports.  
+    - Choisissez **Arrêter le profilage** pour terminer la session de profilage et générer des rapports.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Contrôle de la collecte de données](../profiling/controlling-data-collection.md)   
- [Guide pratique pour Démarrer et terminer la collecte des données de performances](../profiling/how-to-start-and-end-performance-data-collection.md)
+ [Guide pratique pour démarrer et terminer la collecte des données de performances](../profiling/how-to-start-and-end-performance-data-collection.md)

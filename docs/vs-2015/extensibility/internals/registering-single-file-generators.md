@@ -1,27 +1,22 @@
 ---
 title: L’inscription de générateurs de fichier unique | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - registration, custom tools
 - custom tools, defining registry settings
 ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8e601b3fcf8bd702c1bc6cde427766d0f107e6bd
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: bf0d5e29138f27956dff52571296395507d44976
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51780982"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055416"
 ---
 # <a name="registering-single-file-generators"></a>Inscription de générateurs de fichier unique
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +25,7 @@ Pour mettre à disposition dans un outil personnalisé [!INCLUDE[vsprvs](../../i
   
 ### <a name="to-register-a-custom-tool"></a>Pour inscrire un outil personnalisé  
   
-1.  Inscrire l’outil personnalisé DLL soit dans le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Registre local ou dans le Registre système, sous HKEY_CLASSES_ROOT.  
+1. Inscrire l’outil personnalisé DLL soit dans le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] Registre local ou dans le Registre système, sous HKEY_CLASSES_ROOT.  
   
      Par exemple, voici les informations d’inscription pour l’outil personnalisé MSDataSetGenerator géré, est fourni avec [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]:  
   
@@ -43,17 +38,17 @@ Pour mettre à disposition dans un outil personnalisé [!INCLUDE[vsprvs](../../i
     "Assembly"="Microsoft.VSDesigner, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a"  
     ```  
   
-2.  Créer une clé de Registre dans le texte souhaité [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] hive sous générateurs\\*GUID* où *GUID* est le GUID défini par le système de projet ou le service de langage spécifique. Le nom de la clé devient le nom de programmation de votre outil personnalisé. La clé de l’outil personnalisé a les valeurs suivantes :  
+2. Créer une clé de Registre dans le texte souhaité [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] hive sous générateurs\\*GUID* où *GUID* est le GUID défini par le système de projet ou le service de langage spécifique. Le nom de la clé devient le nom de programmation de votre outil personnalisé. La clé de l’outil personnalisé a les valeurs suivantes :  
   
-    -   (Default)  
+    - (Default)  
   
-         Facultatif. Fournit une description conviviale de l’outil personnalisé. Ce paramètre est facultatif mais recommandé.  
+         Optionnel. Fournit une description conviviale de l’outil personnalisé. Ce paramètre est facultatif mais recommandé.  
   
-    -   CLSID  
+    - CLSID  
   
          Obligatoire. Spécifie l’identificateur de la bibliothèque de classes du composant COM qui implémente <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.  
   
-    -   GeneratesDesignTimeSource  
+    - GeneratesDesignTimeSource  
   
          Obligatoire. Indique si les types des fichiers générés par cet outil personnalisé sont rendus disponibles aux concepteurs visuels. La valeur de ce paramètre doit être (zéro) 0 pour les types non disponibles aux concepteurs visuels ou 1 (un) pour les types disponibles aux concepteurs visuels.  
   
@@ -84,5 +79,4 @@ Pour mettre à disposition dans un outil personnalisé [!INCLUDE[vsprvs](../../i
  [Implémentation de générateurs de fichier unique](../../extensibility/internals/implementing-single-file-generators.md)   
  [Déterminer le Namespace par défaut d’un projet](../../misc/determining-the-default-namespace-of-a-project.md)   
  [Exposition des Types aux concepteurs visuels](../../extensibility/internals/exposing-types-to-visual-designers.md)   
- [Introduction à l’objet BuildManager](http://msdn.microsoft.com/en-us/50080ec2-c1c9-412c-98ef-18d7f895e7fa)
-
+ [Introduction à l’objet BuildManager](http://msdn.microsoft.com/50080ec2-c1c9-412c-98ef-18d7f895e7fa)

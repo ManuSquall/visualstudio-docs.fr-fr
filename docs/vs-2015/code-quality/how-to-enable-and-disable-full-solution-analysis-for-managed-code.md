@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6b9efdb5ea3e7ccbee9aefb724e847db6a37c2a0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fddc41d264f30f6de5a2f69b098865cf3d997147
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938659"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044822"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Procédure : Activer et désactiver l’analyse de la Solution complète pour le Code managé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ REMARQUE]
   
 #### <a name="to-toggle-full-solution-analysis"></a>Pour activer/désactiver l’analyse complète de la solution  
   
-1.  Dans le menu principal dans Visual Studio, choisissez **outils** &#124; **Options** pour afficher le **Options** boîte de dialogue.  
+1. Dans le menu principal dans Visual Studio, choisissez **outils** &#124; **Options** pour afficher le **Options** boîte de dialogue.  
   
-2.  Dans le **Options** boîte de dialogue, sélectionnez **éditeur de texte** &#124; **c#** ou **base** &#124; **avancé**.  
+2. Dans le **Options** boîte de dialogue, sélectionnez **éditeur de texte** &#124; **c#** ou **base** &#124; **avancé**.  
   
-3.  Sélectionnez le **activer l’analyse complète de la solution** case à cocher pour activer l’analyse complète de la solution, ou désactivez la case pour le désactiver. Choisissez le **OK** bouton lorsque vous avez terminé.  
+3. Sélectionnez le **activer l’analyse complète de la solution** case à cocher pour activer l’analyse complète de la solution, ou désactivez la case pour le désactiver. Choisissez le **OK** bouton lorsque vous avez terminé.  
   
      ![Activez la case à cocher analyse complète de la solution. ](../code-quality/media/fsa-toolsoptions.png "FSA_ToolsOptions")  
   
@@ -53,6 +53,6 @@ REMARQUE]
  ![Texte de l’alerte la suspension de l’analyse complète de la solution](../code-quality/media/fsa-alert.png "FSA_Alert")  
   
 ## <a name="additional-details"></a>Détails supplémentaires  
- Par défaut, l’analyse complète de la solution est activée pour Visual Basic et désactivée pour Visual c#.  
+ Par défaut, l’analyse complète de la solution est activée pour Visual Basic et désactivée pour Visual C#.  
   
  Visual Studio Update 3 RC inclut un moteur de diagnostic v2 analyseur code améliorée qui réduit l’utilisation de la mémoire de manière significative et diminue les temps de processeur à inactif, même si l’analyse complète de la solution est activée.

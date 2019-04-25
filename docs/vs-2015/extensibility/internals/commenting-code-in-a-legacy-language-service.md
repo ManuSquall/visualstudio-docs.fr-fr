@@ -1,27 +1,22 @@
 ---
 title: Commentaire du Code dans un Service de langage hérité | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - comments, supporting in language services [managed package framework]
 - language services [managed package framework], commenting code
 ms.assetid: 9600d6f0-e2b6-4fe0-b935-fb32affb97a4
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d6577a10446ce1db36746959f6d456a56e4667bb
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cd1405456ca9a6ba00926c82bcc7959ea36d26c2
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51761063"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948427"
 ---
 # <a name="commenting-code-in-a-legacy-language-service"></a>Commentaire du code dans un service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +32,7 @@ En général, les langages de programmation fournissent un moyen d’annoter ou 
   
 2. Commentaires de bloc, où le commentaire peut inclure plusieurs lignes.  
   
-   Commentaires sur une ligne ont généralement un caractère de début (ou caractères) lors de commentaires de bloc de caractères de début et de fin. Par exemple, en c#, un commentaire sur une ligne commence par / /, et un commentaire de bloc commence par / * et se termine par \*/.  
+   Commentaires sur une ligne ont généralement un caractère de début (ou caractères) lors de commentaires de bloc de caractères de début et de fin. Par exemple, en C#, un commentaire sur une ligne commence par / /, et un commentaire de bloc commence par / * et se termine par \*/.  
   
    Lorsque l’utilisateur sélectionne la commande **commenter la sélection** à partir de la **modifier** -> **avancé** menu, la commande est acheminée vers le <xref:Microsoft.VisualStudio.Package.Source.CommentSpan%2A> méthode sur le <xref:Microsoft.VisualStudio.Package.Source> classe. Lorsque l’utilisateur sélectionne la commande **Décommenter la sélection**, la commande est acheminée vers le <xref:Microsoft.VisualStudio.Package.Source.UncommentSpan%2A> (méthode).  
   
@@ -71,4 +66,3 @@ namespace MyLanguagePackage
 ## <a name="see-also"></a>Voir aussi  
  [Fonctionnalités de Service de langage hérité](../../extensibility/internals/legacy-language-service-features1.md)   
  [Inscription d’un service de langage hérité](../../extensibility/internals/registering-a-legacy-language-service1.md)
-

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10cd8b5e302809147f8f6e48210ca513534ce37e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: f9fecd6960b07edb84e946899024ffbbe71bf39c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695165"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094968"
 ---
 # <a name="evaluate-a-watch-window-expression"></a>Évaluer une expression de la fenêtre Espion
 > [!IMPORTANT]
@@ -27,19 +27,19 @@ ms.locfileid: "56695165"
 
  Voici une vue d’ensemble de la façon dont une expression de liste de suivi est évaluée :
 
-1.  Visual Studio appelle l’Allemagne [GetExpressionContext](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) pour obtenir le contexte d’une expression qui peut être utilisé pour évaluer des expressions.
+1. Visual Studio appelle l’Allemagne [GetExpressionContext](../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md) pour obtenir le contexte d’une expression qui peut être utilisé pour évaluer des expressions.
 
-2.  Pour chaque expression dans la liste de suivi, Visual Studio appelle [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) pour convertir le texte de l’expression en une expression analysée.
+2. Pour chaque expression dans la liste de suivi, Visual Studio appelle [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) pour convertir le texte de l’expression en une expression analysée.
 
-3.  `IDebugExpressionContext2::ParseText` appels [analyser](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) pour effectuer le travail réel de l’analyse de texte et produire un [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) objet.
+3. `IDebugExpressionContext2::ParseText` appels [analyser](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) pour effectuer le travail réel de l’analyse de texte et produire un [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) objet.
 
-4.  `IDebugExpressionContext2::ParseText` Crée un [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) objet et y place le `IDebugParsedExpression` objet dedans. Ce que je`DebugExpression2` objet est ensuite renvoyé à Visual Studio.
+4. `IDebugExpressionContext2::ParseText` Crée un [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) objet et y place le `IDebugParsedExpression` objet dedans. Ce que je`DebugExpression2` objet est ensuite renvoyé à Visual Studio.
 
-5.  Les appels de Visual Studio [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) pour évaluer l’expression analysée.
+5. Les appels de Visual Studio [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) pour évaluer l’expression analysée.
 
-6.  `IDebugExpression2::EvaluateSync` passe l’appel à [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) pour effectuer l’évaluation et de produire un [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) objet qui est retourné à Visual Studio.
+6. `IDebugExpression2::EvaluateSync` passe l’appel à [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) pour effectuer l’évaluation et de produire un [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) objet qui est retourné à Visual Studio.
 
-7.  Les appels de Visual Studio [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) pour obtenir la valeur de l’expression est alors affichée dans la liste de suivi.
+7. Les appels de Visual Studio [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) pour obtenir la valeur de l’expression est alors affichée dans la liste de suivi.
 
 ## <a name="parse-then-evaluate"></a>Analyser, puis évaluer
  Étant donné que l’analyse d’une expression complexe peut prendre beaucoup plus longue que l’évaluer, le processus d’évaluation d’une expression est divisé en deux étapes : (1) analyse l’expression et 2) évaluer l’expression analysée. De cette façon, l’évaluation peut se produire plusieurs fois, mais l’expression doit être analysé qu’une seule fois. L’expression analysée intermédiaire est retournée à partir de la EE dans un [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) objet encapsulé à son tour et retournée à partir de l’Allemagne comme un [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) objet. Le `IDebugExpression` objet diffère de l’évaluation toutes les le `IDebugParsedExpression` objet.

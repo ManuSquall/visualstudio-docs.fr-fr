@@ -2,18 +2,20 @@
 title: 'Étape 1 : Créer un projet et ajouter une table à votre formulaire'
 ms.date: 11/04/2016
 ms.topic: conceptual
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 08c5178323c2ee5e92164ca1fd71c5fe88d51d6f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0f1c651c27fac6036aa2abcbd3e86b5f46cc9f02
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940657"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647490"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Étape 1 : Créer un projet et ajouter une table à votre formulaire
 
@@ -21,7 +23,23 @@ La première étape pour créer un jeu de combinaisons consiste à créer le pro
 
 ## <a name="to-create-a-project-and-add-a-table-to-your-form"></a>Pour créer un projet et ajouter une table à votre formulaire
 
+::: moniker range="vs-2017"
+
 1. Dans la barre de menus, choisissez **Fichier** > **Nouveau** > **Projet**.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Dans la fenêtre de démarrage, choisissez **Créer un projet**.
+
+1. Dans la zone de recherche, tapez « WPF », choisissez **Application WPF (.NET Framework)**, puis **Suivant**.
+
+   (Si vous ne voyez pas le modèle **Application WPF (.NET Framework)**, utilisez Visual Studio Installer pour installer la charge de travail **Développement .NET Desktop**.)
+
+1. Nommez le projet **MatchingGame** et choisissez **Créer**.
+
+::: moniker-end
 
 2. Si vous n’utilisez pas Visual Studio Express, vous devez d’abord sélectionner un langage de programmation. Dans la liste **Modèles installés**, choisissez **Visual C#** ou **Visual Basic**.
 

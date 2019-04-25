@@ -20,12 +20,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c71a23fc79b0d80c55418a9c7d78a48ebc76000e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 153773d27d4f27a6987f7984955dde26b187b65e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950874"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116511"
 ---
 # <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Procédure pas à pas : Création d’un programme d’amorçage personnalisé pour afficher une invite de confidentialité
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Vous pouvez configurer des applications ClickOnce à mettre à jour automatiquem
 ## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :  
   
--   Visual Studio 2010.  
+- Visual Studio 2010.  
   
 ## <a name="creating-an-update-consent-dialog-box"></a>Création d’une boîte de dialogue de consentement de mise à jour  
  Pour afficher une invite de confidentialité, créez une application qui demande le lecteur à donner son consentement pour les mises à jour automatiques pour l’application.  
@@ -143,29 +143,29 @@ Vous pouvez configurer des applications ClickOnce à mettre à jour automatiquem
   
  Cette procédure montre comment créer un package de programme d’amorçage personnalisé en créant les documents suivants :  
   
--   Un fichier manifeste product.xml pour décrire le contenu du programme d’amorçage.  
+- Un fichier manifeste product.xml pour décrire le contenu du programme d’amorçage.  
   
--   Un fichier manifeste package.xml pour répertorier les aspects spécifiques à la localisation de votre package, telles que des chaînes et les termes du contrat de licence de logiciel.  
+- Un fichier manifeste package.xml pour répertorier les aspects spécifiques à la localisation de votre package, telles que des chaînes et les termes du contrat de licence de logiciel.  
   
--   Un document pour les termes du contrat de licence de logiciel.  
+- Un document pour les termes du contrat de licence de logiciel.  
   
 #### <a name="step-1-to-create-the-bootstrapper-directory"></a>Étape 1 : Pour créer le répertoire du programme d’amorçage  
   
-1.  Créez un répertoire nommé **UpdateConsentDialog** dans %PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages.  
+1. Créez un répertoire nommé **UpdateConsentDialog** dans %PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages.  
   
     > [!NOTE]
     >  Vous devrez peut-être pas des privilèges d’administrateur pour créer ce dossier.  
   
-2.  Dans le répertoire UpdateConsentDialog, créez un sous-répertoire nommé fr.  
+2. Dans le répertoire UpdateConsentDialog, créez un sous-répertoire nommé fr.  
   
     > [!NOTE]
     >  Créez un nouveau répertoire pour chacun des paramètres régionaux. Par exemple, vous pouvez ajouter des sous-répertoires pour les paramètres régionaux fr et de. Ces répertoires contient les chaînes Français et allemand et les modules linguistiques, si nécessaire.  
   
 #### <a name="step-2-to-create-the-productxml-manifest-file"></a>Étape 2 : Pour créer le fichier manifeste product.xml  
   
-1.  Créez un fichier texte appelé `product.xml`.  
+1. Créez un fichier texte appelé `product.xml`.  
   
-2.  Dans le fichier product.xml, ajoutez le code XML suivant. Veillez à ne pas remplacer le code XML existant.  
+2. Dans le fichier product.xml, ajoutez le code XML suivant. Veillez à ne pas remplacer le code XML existant.  
   
     ```  
     <Product  
@@ -191,13 +191,13 @@ Vous pouvez configurer des applications ClickOnce à mettre à jour automatiquem
     </Product>  
     ```  
   
-3.  Enregistrez le fichier dans le répertoire du programme d’amorçage UpdateConsentDialog.  
+3. Enregistrez le fichier dans le répertoire du programme d’amorçage UpdateConsentDialog.  
   
 #### <a name="step-3-to-create-the-packagexml-manifest-file-and-the-software-license-terms"></a>Étape 3 : Pour créer le fichier manifeste package.xml et les termes du contrat de licence de logiciel  
   
-1.  Créez un fichier texte appelé `package.xml`.  
+1. Créez un fichier texte appelé `package.xml`.  
   
-2.  Dans le fichier package.xml, ajoutez le code XML suivant pour définir les paramètres régionaux et inclure les termes du contrat de licence de logiciel. Veillez à ne pas remplacer le code XML existant.  
+2. Dans le fichier package.xml, ajoutez le code XML suivant pour définir les paramètres régionaux et inclure les termes du contrat de licence de logiciel. Veillez à ne pas remplacer le code XML existant.  
   
     ```  
     <Package   
@@ -219,87 +219,87 @@ Vous pouvez configurer des applications ClickOnce à mettre à jour automatiquem
     </Package>  
     ```  
   
-3.  Enregistrez le fichier dans le sous-répertoire en dans le répertoire du programme d’amorçage UpdateConsentDialog.  
+3. Enregistrez le fichier dans le sous-répertoire en dans le répertoire du programme d’amorçage UpdateConsentDialog.  
   
-4.  Créer un document appelé eula.rtf pour les termes du contrat de licence de logiciel.  
+4. Créer un document appelé eula.rtf pour les termes du contrat de licence de logiciel.  
   
     > [!NOTE]
     >  Les termes du contrat de licence de logiciel doit inclure des informations sur les licences, garanties, passifs et lois locales. Ces fichiers doivent être spécifiques, assurez-vous que le fichier est enregistré dans un format qui prend en charge les caractères MBCS ou UNICODE. Consultez votre service juridique sur le contenu des termes du contrat de licence logiciel.  
   
-5.  Enregistrez le document dans le sous-répertoire en dans le répertoire du programme d’amorçage UpdateConsentDialog.  
+5. Enregistrez le document dans le sous-répertoire en dans le répertoire du programme d’amorçage UpdateConsentDialog.  
   
-6.  Si nécessaire, créez un nouveau fichier manifeste package.xml et un nouveau document eula.rtf pour les termes du contrat de licence logiciel pour chacun des paramètres régionaux. Par exemple, si vous avez créé les sous-répertoires pour les paramètres régionaux fr et de, créer des fichiers manifeste package.xml distincts et les termes du contrat de licence de logiciel et les enregistrer dans les sous-répertoires fr et de.  
+6. Si nécessaire, créez un nouveau fichier manifeste package.xml et un nouveau document eula.rtf pour les termes du contrat de licence logiciel pour chacun des paramètres régionaux. Par exemple, si vous avez créé les sous-répertoires pour les paramètres régionaux fr et de, créer des fichiers manifeste package.xml distincts et les termes du contrat de licence de logiciel et les enregistrer dans les sous-répertoires fr et de.  
   
 ## <a name="setting-the-update-consent-application-as-a-prerequisite"></a>Définition de l’Application de consentement de mise à jour comme condition préalable  
  Dans Visual Studio, vous pouvez définir l’application de consentement de mise à jour comme condition préalable.  
   
 #### <a name="to-set-the-update-consent-application-as-a-prerequisite"></a>Pour définir l’Application de consentement de mise à jour comme condition préalable  
   
-1.  Dans **l’Explorateur de solutions**, cliquez sur le nom de votre application que vous souhaitez déployer.  
+1. Dans **l’Explorateur de solutions**, cliquez sur le nom de votre application que vous souhaitez déployer.  
   
-2.  Dans le menu **Projet**, cliquez sur **Propriétés** de *NomProjet*.  
+2. Dans le menu **Projet**, cliquez sur **Propriétés** de *NomProjet*.  
   
-3.  Cliquez sur le **publier** page, puis cliquez sur **conditions préalables**.  
+3. Cliquez sur le **publier** page, puis cliquez sur **conditions préalables**.  
   
-4.  Sélectionnez **mettre à jour de la boîte de dialogue consentement**.  
+4. Sélectionnez **mettre à jour de la boîte de dialogue consentement**.  
   
     > [!NOTE]
     >  Vous devrez peut-être fermer et rouvrir Visual Studio pour afficher la boîte de dialogue de consentement mise à jour dans la boîte de dialogue composants requis.  
   
-5.  Cliquez sur **OK**.  
+5. Cliquez sur **OK**.  
   
 ## <a name="creating-and-testing-the-setup-program"></a>Créer et tester le programme d’installation  
  Après avoir défini l’application de consentement de mise à jour comme condition préalable, vous pouvez générer le programme d’installation et le programme d’amorçage pour votre application.  
   
 #### <a name="to-create-and-test-the-setup-program-by-not-clicking-i-agree"></a>Pour créer et tester le programme d’installation par ne pas en cliquant sur J’accepte  
   
-1.  Dans **l’Explorateur de solutions**, cliquez sur le nom de votre application que vous souhaitez déployer.  
+1. Dans **l’Explorateur de solutions**, cliquez sur le nom de votre application que vous souhaitez déployer.  
   
-2.  Dans le menu **Projet**, cliquez sur **Propriétés** de *NomProjet*.  
+2. Dans le menu **Projet**, cliquez sur **Propriétés** de *NomProjet*.  
   
-3.  Cliquez sur le **publier** page, puis cliquez sur **publier maintenant**.  
+3. Cliquez sur le **publier** page, puis cliquez sur **publier maintenant**.  
   
-4.  Si la sortie de publication ne s’ouvre pas automatiquement, accédez à la sortie de publication.  
+4. Si la sortie de publication ne s’ouvre pas automatiquement, accédez à la sortie de publication.  
   
-5.  Exécutez le programme Setup.exe.  
+5. Exécutez le programme Setup.exe.  
   
      Le programme d’installation affiche le contrat de licence de boîte de dialogue de consentement de mise à jour logicielle.  
   
-6.  Lisez le contrat de licence logiciel, puis cliquez sur **Accept**.  
+6. Lisez le contrat de licence logiciel, puis cliquez sur **Accept**.  
   
      L’application de la boîte de dialogue de consentement de mise à jour apparaît et affiche le texte suivant : L’application que vous êtes sur le point d’installation vérifie les dernières mises à jour sur le Web. En cliquant sur J’accepte, vous autorisez l’application pour rechercher les mises à jour automatiquement sur Internet.  
   
-7.  Fermez l’application, ou cliquez sur Annuler.  
+7. Fermez l’application, ou cliquez sur Annuler.  
   
      L’application affiche une erreur : Une erreur s’est produite lors de l’installation des composants système pour *ApplicationName*. Le programme d’installation ne peut pas continuer jusqu'à ce que tous les composants système ont été correctement installés.  
   
-8.  Cliquez sur Détails pour afficher le message d’erreur suivant : Dialogue de consentement de mise à jour de composant n’a pas pu installer avec le message d’erreur suivant : « L’accord de mise à jour automatique n’est pas accepté. » Impossible d’installer les composants suivants :-boîte de dialogue de consentement de mise à jour  
+8. Cliquez sur Détails pour afficher le message d’erreur suivant : Dialogue de consentement de mise à jour de composant n’a pas pu installer avec le message d’erreur suivant : « L’accord de mise à jour automatique n’est pas accepté. » Impossible d’installer les composants suivants :-boîte de dialogue de consentement de mise à jour  
   
 9. Cliquez sur **Fermer**.  
   
 #### <a name="to-create-and-test-the-setup-program-by-clicking-i-agree"></a>Pour créer et tester le programme d’installation en cliquant sur J’accepte  
   
-1.  Dans **l’Explorateur de solutions**, cliquez sur le nom de votre application que vous souhaitez déployer.  
+1. Dans **l’Explorateur de solutions**, cliquez sur le nom de votre application que vous souhaitez déployer.  
   
-2.  Dans le menu **Projet**, cliquez sur **Propriétés** de *NomProjet*.  
+2. Dans le menu **Projet**, cliquez sur **Propriétés** de *NomProjet*.  
   
-3.  Cliquez sur le **publier** page, puis cliquez sur **publier maintenant**.  
+3. Cliquez sur le **publier** page, puis cliquez sur **publier maintenant**.  
   
-4.  Si la sortie de publication ne s’ouvre pas automatiquement, accédez à la sortie de publication.  
+4. Si la sortie de publication ne s’ouvre pas automatiquement, accédez à la sortie de publication.  
   
-5.  Exécutez le programme Setup.exe.  
+5. Exécutez le programme Setup.exe.  
   
      Le programme d’installation affiche le contrat de licence de boîte de dialogue de consentement de mise à jour logicielle.  
   
-6.  Lisez le contrat de licence logiciel, puis cliquez sur **Accept**.  
+6. Lisez le contrat de licence logiciel, puis cliquez sur **Accept**.  
   
      L’application de la boîte de dialogue de consentement de mise à jour apparaît et affiche le texte suivant : L’application que vous êtes sur le point d’installation vérifie les dernières mises à jour sur le Web. En cliquant sur J’accepte, vous autorisez l’application pour rechercher les mises à jour automatiquement sur Internet.  
   
-7.  Cliquez sur **J’accepte**, puis cliquez sur **continuer**.  
+7. Cliquez sur **J’accepte**, puis cliquez sur **continuer**.  
   
      Démarrage de l’application à installer.  
   
-8.  Si la boîte de dialogue installation de l’Application s’affiche, cliquez sur **installer**.  
+8. Si la boîte de dialogue installation de l’Application s’affiche, cliquez sur **installer**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Prérequis pour le déploiement d’applications](../deployment/application-deployment-prerequisites.md)   

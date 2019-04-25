@@ -1,25 +1,22 @@
 ---
 title: Définir une commande de menu sur un diagramme de modélisation | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending, menu commands
 ms.assetid: 79c277de-5871-4fc7-9701-55eec5c3cd46
 caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: c211c37817ba996105d7496dc49e91db9fa9298e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: MT
+manager: jillfra
+ms.openlocfilehash: ef029cc6e931509997ad6f094adedc7d96e4bcd3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51809101"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670317"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Définir une commande de menu sur un diagramme de modélisation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +65,6 @@ Dans Visual Studio, vous pouvez définir des éléments de menu supplémentaires
 
 2. Ajoutez les références suivantes à votre projet.  
 
-
    |                                                                                                    Référence                                                                                                    |                                                                                                  Ce que cela vous permet de faire                                                                                                  |
    |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |                                                                                        System.ComponentModel.Composition                                                                                        |                                         Définir des composants à l’aide de [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).                                          |
@@ -77,7 +73,6 @@ Dans Visual Studio, vous pouvez définir des éléments de menu supplémentaires
    |                                                                                  Microsoft.VisualStudio.Modeling.Sdk.[version]                                                                                  | Définir des gestionnaires d’événements de modèle.<br /><br /> Encapsuler des séries de modifications apportées à votre modèle. Pour plus d’informations, consultez [mises à jour du modèle UML de lien à l’aide de transactions](../modeling/link-uml-model-updates-by-using-transactions.md). |
    |                                                            Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]<br /><br /> (n’est pas toujours obligatoire)                                                             |                                                                                   Accéder à des éléments de diagramme supplémentaires pour les gestionnaires de mouvements.                                                                                   |
    | Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer<br /><br /> Obligatoire uniquement pour les commandes sur des diagrammes de couche. Pour plus d’informations, consultez [étendre des diagrammes de couche](../modeling/extend-layer-diagrams.md). |                                                                                             Définir des commandes sur un diagramme de couche.                                                                                              |
-
 
 3. Ajouter un fichier de classe au projet et affecter le code suivant comme contenu.  
 
@@ -189,7 +184,7 @@ Dans Visual Studio, vous pouvez définir des éléments de menu supplémentaires
 
  ...  
 
- La déclaration de `IDiagramContext` vous permet d'écrire du code dans vos méthodes qui accède au diagramme, à la sélection actuelle et au modèle :  
+ La déclaration de `IDiagramContext` vous permet d’écrire du code dans vos méthodes qui accède au diagramme, à la sélection actuelle et au modèle :  
 
 ```  
 IDiagram diagram = this.DiagramContext.CurrentDiagram;  
@@ -223,7 +218,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
      Une instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] démarre.  
 
-     **Dépannage**: si une nouvelle instance de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ne démarre pas :  
+     **Résolution des problèmes**: Si un nouveau [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ne démarre pas :  
 
     -   Si vous avez plusieurs projets, vérifiez que le projet VSIX est défini comme projet de démarrage de la solution.  
 
@@ -235,7 +230,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
 3.  Ouvrez le menu contextuel n’importe où sur le diagramme. Votre commande doit apparaître dans le menu.  
 
-     **Dépannage**: si la commande n’apparaît pas dans le menu, vérifiez que :  
+     **Résolution des problèmes**: Si la commande n’apparaît pas dans le menu, assurez-vous que :  
 
     -   le projet de commande de menu est répertorié en tant que composant MEF sous l’onglet **Composants** de **source.extensions.manifest** dans le projet VSIX ;  
 
@@ -276,7 +271,7 @@ foreach (IElement element in modelStore.AllInstances<IUseCase>()) {...}
 
    Exceptionnellement, une extension défaillante ne parvient pas à se charger et crée un rapport dans la fenêtre d’erreur, mais ne s’affiche pas dans le Gestionnaire d’extensions. Dans ce cas, vous pouvez supprimer l’extension en supprimant le fichier de l’emplacement suivant :  
 
-   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version] \Extensions**  
+   *%LocalAppData%* **\Local\Microsoft\VisualStudio\\[version]\Extensions**  
 
 ##  <a name="MenuExample"></a> Exemple  
  L’exemple suivant montre le code pour une commande de menu qui échange les noms de deux éléments sur un diagramme de classes. Ce code doit être intégré à un projet d’Extension [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et installé comme décrit dans les sections précédentes.  
@@ -375,7 +370,4 @@ namespace SwapClassNames
  [Définir des contraintes de validation pour les modèles UML](../modeling/define-validation-constraints-for-uml-models.md)   
  [Modifier des diagrammes de séquence UML à l’aide de l’API UML](../modeling/edit-uml-sequence-diagrams-by-using-the-uml-api.md)   
  [Programmation avec l’API UML](../modeling/programming-with-the-uml-api.md)   
- [Exemple : Commande pour aligner des formes sur un diagramme UML](http://go.microsoft.com/fwlink/?LinkID=213809)
-
-
-
+ [Exemple : Commande pour aligner des formes sur un diagramme UML](http://go.microsoft.com/fwlink/?LinkID=213809)

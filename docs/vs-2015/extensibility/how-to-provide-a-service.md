@@ -1,28 +1,23 @@
 ---
-title: 'Comment : fournir un Service | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Fournir un Service | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - services, providing
 ms.assetid: 12bc1f12-47b1-44f6-b8db-862aa88d50d1
 caps.latest.revision: 23
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 3e0d0425e0e931d28157439d3d8a4174f1d4961a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ba007a8084355445f0404a9b0f7a2c1cee7b2005
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51785909"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108181"
 ---
-# <a name="how-to-provide-a-service"></a>Comment : fournir un Service
+# <a name="how-to-provide-a-service"></a>Procédure : Fournir un service
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Un VSPackage peut fournir des services qui les VSPackages autres peuvent utiliser. Pour fournir un service, un VSPackage doit inscrire le service avec Visual Studio et ajoutez le service.  
@@ -83,7 +78,7 @@ Un VSPackage peut fournir des services qui les VSPackages autres peuvent utilise
   
 ### <a name="registering-a-service"></a>L’inscription d’un service  
   
-1.  Pour inscrire un service, ajoutez le <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> au VSPackage qui fournit le service. Voici un exemple :  
+1. Pour inscrire un service, ajoutez le <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> au VSPackage qui fournit le service. Voici un exemple :  
   
     ```csharp  
     [ProvideService(typeof(SMyService))]  
@@ -100,7 +95,7 @@ Un VSPackage peut fournir des services qui les VSPackages autres peuvent utilise
   
 ### <a name="adding-a-service"></a>Ajout d’un Service  
   
-1.  1.  Dans l’initialiseur de VSPackage, ajoutez le service et une méthode de rappel pour créer les services. Voici la modification à apporter au <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> méthode :  
+1. 1.  Dans l’initialiseur de VSPackage, ajoutez le service et une méthode de rappel pour créer les services. Voici la modification à apporter au <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> méthode :  
   
     ```csharp  
     protected override void Initialize()  
@@ -112,7 +107,7 @@ Un VSPackage peut fournir des services qui les VSPackages autres peuvent utilise
     }  
     ```  
   
-2.  Implémentez la méthode de rappel qui doit créer et retourner le service ou null s’il ne peut pas être créé.  
+2. Implémentez la méthode de rappel qui doit créer et retourner le service ou null s’il ne peut pas être créé.  
   
     ```  
     private object CreateService(IServiceContainer container, Type serviceType)  
@@ -126,7 +121,7 @@ Un VSPackage peut fournir des services qui les VSPackages autres peuvent utilise
     > [!NOTE]
     >  Visual Studio peut rejeter une demande de fournir un service. Il le fait si un autre package Visual Studio fournit déjà le service.  
   
-3.  Vous pouvez maintenant obtenir le service et utiliser ses méthodes. Nous allons le montrer dans l’initialiseur, mais vous pouvez obtenir le service n’importe où que vous souhaitez utiliser le service.  
+3. Vous pouvez maintenant obtenir le service et utiliser ses méthodes. Nous allons le montrer dans l’initialiseur, mais vous pouvez obtenir le service n’importe où que vous souhaitez utiliser le service.  
   
     ```csharp  
     protected override void Initialize()  
@@ -146,7 +141,6 @@ Un VSPackage peut fournir des services qui les VSPackages autres peuvent utilise
      La valeur de `helloString` doit être « Hello ».  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : obtenir un Service](../extensibility/how-to-get-a-service.md)   
+ [Guide pratique pour Bénéficiez d’un Service](../extensibility/how-to-get-a-service.md)   
  [À l’aide et fourniture de Services](../extensibility/using-and-providing-services.md)   
  [Éléments fondamentaux du service](../extensibility/internals/service-essentials.md)
-

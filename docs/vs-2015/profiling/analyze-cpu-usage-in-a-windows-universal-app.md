@@ -15,12 +15,12 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: d6728ce1f83c53a406512c75d89368dbcdd87c3e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: fcc31e2f7fb06f58f07b0af58a1375466b16cc23
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777431"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053050"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>Analyser l’utilisation du processeur dans une application universelle Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,27 +34,27 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
  Cette procédure pas à pas vous guide tout au long de la collecte et de l’analyse des données liées à l’utilisation du processeur pour une application XAML universelle Windows simple.  
   
-##  <a name="BKMK_Create_the_CpuUseDemo_project"></a> Créer le projet CpuUseDemo  
+## <a name="BKMK_Create_the_CpuUseDemo_project"></a> Créer le projet CpuUseDemo  
  L’application **CpuUseDemo** a été créée pour expliquer comment collecter et analyser les données d’utilisation de l’UC. Les boutons génèrent un nombre en appelant une méthode qui sélectionne la valeur maximale de plusieurs appels à une fonction. La fonction appelée crée un très grand nombre de valeurs aléatoires, puis retourne la dernière. Les données sont affichées dans une zone de texte.  
   
-1.  Créez un projet d’application universelle Windows en C# nommé **CpuUseDemo**, à l’aide du modèle **BlankApp**.  
+1. Créez un projet d’application universelle Windows en C# nommé **CpuUseDemo**, à l’aide du modèle **BlankApp**.  
   
      ![Créer le projet CpuUseDemo](../profiling/media/cpu-use-newproject.png "CPU_USE_NewProject")  
   
-2.  Remplacez MainPage.xaml par [ce code](#BKMK_MainPage_xaml).  
+2. Remplacez MainPage.xaml par [ce code](#BKMK_MainPage_xaml).  
   
-3.  Remplacez MainPage.xaml.cs par [ce code](#BKMK_MainPage_xaml_cs).  
+3. Remplacez MainPage.xaml.cs par [ce code](#BKMK_MainPage_xaml_cs).  
   
-4.  Générez l'application et essayez-la. L’application est simple et vous montre certains cas courants d’analyse des données liées à l’utilisation du processeur.  
+4. Générez l'application et essayez-la. L’application est simple et vous montre certains cas courants d’analyse des données liées à l’utilisation du processeur.  
   
-##  <a name="BKMK_Collect_CPU_usage_data"></a> Collecter les données d'utilisation de l'UC  
+## <a name="BKMK_Collect_CPU_usage_data"></a> Collecter les données d'utilisation de l'UC  
  ![Exécuter une version Release de l’application dans le simulateur](../profiling/media/cpu-use-wt-setsimulatorandretail.png "CPU_USE_WT_SetSimulatorAndRetail")  
   
 1. Dans Visual Studio, définissez la cible de déploiement sur **Simulateur**, et la configuration de la solution sur **Mise en production**.  
   
-   -   L’exécution de l’application dans le simulateur vous permet de passer facilement de l’application à l’interface IDE de Visual Studio.  
+   - L’exécution de l’application dans le simulateur vous permet de passer facilement de l’application à l’interface IDE de Visual Studio.  
   
-   -   L’exécution de cette application en mode **Mise en production** vous donne un meilleur aperçu des performances réelles de votre application.  
+   - L’exécution de cette application en mode **Mise en production** vous donne un meilleur aperçu des performances réelles de votre application.  
   
 2. Dans le menu **Déboguer** , choisissez **Profileur de performances**.  
   
@@ -72,14 +72,14 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
    ![Rapport CpuUsage](../profiling/media/cpu-use-wt-report.png "CPU_USE_WT_Report")  
   
-##  <a name="BKMK_Analyze_the_CPU_Usage_report"></a> Analyser le rapport d’utilisation de l’UC  
+## <a name="BKMK_Analyze_the_CPU_Usage_report"></a> Analyser le rapport d’utilisation de l’UC  
   
-###  <a name="BKMK_CPU_utilization_timeline_graph"></a> Graphique chronologique d’utilisation de l’UC  
+### <a name="BKMK_CPU_utilization_timeline_graph"></a> Graphique chronologique d’utilisation de l’UC  
  ![Graphique chronologique CpuUtilization &#40;%&#41;](../profiling/media/cpu-use-wt-timelinegraph.png "CPU_USE_WT_TimelineGraph")  
   
  Le graphique d'utilisation de l'UC indique l'activité processeur de l'application sous forme de pourcentage du temps processeur total de tous les processeurs de l'appareil. Les données de ce rapport ont été collectées sur une machine double cœur. Les deux grandes pointes représentent l'activité processeur de deux clics de bouton. `GetMaxNumberButton_Click` s'effectue de manière synchrone sur un seul cœur, il est donc normal que la hauteur du graphique de la méthode ne dépasse jamais 50 %. `GetMaxNumberAsycButton_Click` s'exécute de manière asynchrone sur les deux cœurs, il est donc également normal que sa pointe soit presqu'aussi élevée qu'en cas d'utilisation de toutes les ressources processeur sur les deux cœurs.  
   
-####  <a name="BKMK_Select_timeline_segments_to_view_details"></a> Sélectionner des segments chronologiques pour afficher les détails  
+#### <a name="BKMK_Select_timeline_segments_to_view_details"></a> Sélectionner des segments chronologiques pour afficher les détails  
  Utilisez les barres de sélection de la chronologie de la **Session de diagnostic** pour vous concentrer sur les données de GetMaxNumberButton_Click :  
   
  ![GetMaxNumberButton&#95;Click sélectionné](../profiling/media/cpu-use-wt-getmaxnumberreport.png "CPU_USE_WT_GetMaxNumberReport")  
@@ -92,10 +92,10 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
  Cette méthode se termine environ une seconde plus rapidement que `GetMaxNumberButton_Click`, mais la signification des entrées de l'arborescence des appels est moins évidente.  
   
-###  <a name="BKMK_The_CPU_Usage_call_tree"></a> Arborescence des appels - Utilisation du processeur  
+### <a name="BKMK_The_CPU_Usage_call_tree"></a> Arborescence des appels - Utilisation du processeur  
  Pour commencer la présentation des informations sur l'arborescence des appels, sélectionnez de nouveau le segment `GetMaxNumberButton_Click` et consultez les détails d'arborescence des appels.  
   
-####  <a name="BKMK_Call_tree_structure"></a> Structure de l’arborescence des appels  
+#### <a name="BKMK_Call_tree_structure"></a> Structure de l’arborescence des appels  
  ![Arborescence des appels GetMaxNumberButton&#95;Click](../profiling/media/cpu-use-wt-getmaxnumbercalltree-annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
   
 |||  
@@ -105,7 +105,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 |![Étape 3](../profiling/media/procguid-3.png "ProcGuid_3")|Les enfants du nœud de deuxième niveau sont les méthodes en code utilisateur et des routines asynchrones appelées ou créées par le code système et framework de deuxième niveau.|  
 |![Étape 4](../profiling/media/procguid-4.png "ProcGuid_4")|Les nœuds enfants d'une méthode contiennent des données seulement pour les appels de la méthode parente. Lorsque l'option **Afficher le Code externe** est désactivée, les méthodes d'application peuvent également contenir un nœud **[Code externe]** .|  
   
-####  <a name="BKMK_External_Code"></a> Code externe  
+#### <a name="BKMK_External_Code"></a> Code externe  
  Le code externe est constitué des fonctions des composants système et framework exécutés par le code que vous écrivez. Le code externe comprend des fonctions qui démarrent et arrêtent l’application, dessinent l’interface utilisateur, contrôlent les threads et fournissent d’autres services de bas niveau à l’application. Dans la plupart des cas, vous ne serez pas intéressé par le code externe ; par conséquent, l'arborescence des appels de l'utilisation du processeur regroupe les fonctions externes d'une méthode utilisateur en un seul nœud **[Code externe]** .  
   
  Quand vous voulez afficher les chemins d'appel du code externe, choisissez **Afficher le code externe** dans la liste **Filtrer la vue** , puis **Appliquer**.  
@@ -120,7 +120,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
  ![Rechercher du code externe imbriqué](../profiling/media/cpu-use-wt-showexternalcodetoowide-found.png "CPU_USE_WT_ShowExternalCodeTooWide_Found")  
   
-###  <a name="BKMK_Call_tree_data_columns"></a> Colonnes des données de l’arborescence des appels  
+### <a name="BKMK_Call_tree_data_columns"></a> Colonnes des données de l’arborescence des appels  
   
 |||  
 |-|-|  
@@ -130,7 +130,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 |**Processeur auto (ms)**|Nombre de millisecondes utilisées par les appels à la fonction dans la plage de temps sélectionnée et les fonctions appelées par la fonction.|  
 |**Module**|Nom du module contenant la fonction, ou le nombre de modules contenant les fonctions dans un nœud [Code externe].|  
   
-###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Fonctions asynchrones de l'arborescence des appels de l'utilisation du processeur  
+### <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Fonctions asynchrones de l'arborescence des appels de l'utilisation du processeur  
  Lorsque le compilateur rencontre une méthode asynchrone, il crée une classe masquée pour contrôler l'exécution de la méthode. Conceptuellement, la classe est une machine à états qui inclut la liste des fonctions générées par le compilateur qui appellent les opérations de la méthode d'origine en mode asynchrone, ainsi que les rappels, le planificateur et les itérateurs requis. Quand la méthode d'origine est appelée par une méthode parente, le runtime supprime la méthode du contexte d'exécution du parent et exécute les méthodes de la classe masquée dans le contexte du code système et de l'infrastructure qui contrôle l'exécution de l'application. Les méthodes asynchrones sont souvent, mais pas toujours, exécutées sur un ou plusieurs threads différents. Ce code est affiché dans l'arborescence des appels de l'utilisation du processeur en tant qu'enfants du nœud **[Code externe]** situé immédiatement sous le nœud supérieur de l'arborescence.  
   
  Pour le voir dans notre exemple, resélectionnez le segment `GetMaxNumberAsyncButton_Click` dans la chronologie.  
@@ -141,22 +141,22 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
  ![Arborescence des appels GetMaxNumberAsyncButton&#95;Click développée](../profiling/media/cpu-use-wt-getmaxnumberasync-expandedcalltree.png "CPU_USE_WT_GetMaxNumberAsync_ExpandedCallTree")  
   
--   `MainPage::GetMaxNumberAsyncButton_Click` se contente de gérer la liste des valeurs de la tâche, de calculer le nombre maximal de résultats et d'affiche la sortie.  
+- `MainPage::GetMaxNumberAsyncButton_Click` se contente de gérer la liste des valeurs de la tâche, de calculer le nombre maximal de résultats et d'affiche la sortie.  
   
--   `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext` affiche l'activité requise pour planifier et lancer les 48 tâches qui encapsulent l'appel à `GetNumberAsync`.  
+- `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext` affiche l'activité requise pour planifier et lancer les 48 tâches qui encapsulent l'appel à `GetNumberAsync`.  
   
--   `MainPage::<GetNumberAsync>b__b` affiche l'activité des tâches qui appellent `GetNumber`.  
+- `MainPage::<GetNumberAsync>b__b` affiche l'activité des tâches qui appellent `GetNumber`.  
   
-##  <a name="BKMK_Next_steps"></a> Étapes suivantes  
+## <a name="BKMK_Next_steps"></a> Étapes suivantes  
  L'application CpuUseDemo n'est pas la plus sensationnelle des applications, mais vous pouvez étendre son utilité en l'utilisant pour la tester avec le fonctionnement asynchrone et d'autres outils du hub Performances et diagnostics.  
   
--   Notez que `MainPage::<GetNumberAsync>b__b` consacre plus de temps au [Code externe] qu'à l'exécution de la méthode GetNumber. Une grande partie de ce temps est consacré au traitement des opérations asynchrones. Essayez d'augmenter le nombre de tâches (défini dans la constante `NUM_TASKS` de MainPage.xaml.cs) et de réduire le nombre d'itérations dans `GetNumber` (modifiez la valeur `MIN_ITERATIONS`). Exécutez le scénario de collecte et comparez l'activité processeur de `MainPage::<GetNumberAsync>b__b` à celle de la session de diagnostic d'Utilisation de l'UC d'origine. Essayez de réduire les tâches et d'augmenter les itérations.  
+- Notez que `MainPage::<GetNumberAsync>b__b` consacre plus de temps au [Code externe] qu'à l'exécution de la méthode GetNumber. Une grande partie de ce temps est consacré au traitement des opérations asynchrones. Essayez d'augmenter le nombre de tâches (défini dans la constante `NUM_TASKS` de MainPage.xaml.cs) et de réduire le nombre d'itérations dans `GetNumber` (modifiez la valeur `MIN_ITERATIONS`). Exécutez le scénario de collecte et comparez l'activité processeur de `MainPage::<GetNumberAsync>b__b` à celle de la session de diagnostic d'Utilisation de l'UC d'origine. Essayez de réduire les tâches et d'augmenter les itérations.  
   
--   Souvent, les utilisateurs ne s'intéressent pas aux performances réelles de votre application, mais aux performances perçues et à la réactivité de l'application. L'outil Réactivité de l'interface utilisateur XAML vous montre les détails de l'activité sur le thread d'interface utilisateur qui affecte la perception de la réactivité.  
+- Souvent, les utilisateurs ne s'intéressent pas aux performances réelles de votre application, mais aux performances perçues et à la réactivité de l'application. L'outil Réactivité de l'interface utilisateur XAML vous montre les détails de l'activité sur le thread d'interface utilisateur qui affecte la perception de la réactivité.  
   
      Créez une session dans le hub Performances et diagnostics et ajoutez les outils Réactivité de l'interface utilisateur XAML et Utilisation de l'UC. Exécutez le scénario de collection. À ce stade, le rapport ne vous dit probablement rien que vous ne sachiez déjà, mais les différences entre les graphiques chronologiques **Utilisation du thread d’interface utilisateur** des deux méthodes sont frappantes. Dans les applications complexes du monde réel, la combinaison des outils peut être très utile.  
   
-##  <a name="BKMK_MainPage_xaml"></a> MainPage.xaml  
+## <a name="BKMK_MainPage_xaml"></a> MainPage.xaml  
   
 ```csharp  
 <Page  
@@ -191,7 +191,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 ```  
   
-##  <a name="BKMK_MainPage_xaml_cs"></a> MainPage.xaml.cs  
+## <a name="BKMK_MainPage_xaml_cs"></a> MainPage.xaml.cs  
   
 ```csharp  
 using System;  

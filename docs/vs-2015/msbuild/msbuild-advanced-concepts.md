@@ -11,24 +11,23 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eff3d6234d4d7b9ae34824d4fec5b8ae0816a20c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e7aade87e0e1f6fe6a07269a585b35f52d4a9e5d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54796596"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663925"
 ---
 # <a name="msbuild-advanced-concepts"></a>Concepts avancés de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Les documents dans cette section décrivent comment utiliser des techniques avancées pour améliorer les builds que vous exécutez à l'aide de MSBuild.  
   
 ## <a name="related-topics"></a>Rubriques connexes  
   
 |Titre|Description|  
 |-----------|-----------------|  
-|[Traitement par lots](../msbuild/msbuild-batching.md)|Décrit comment générer en tâche de fond des cibles et des tâches basées sur des métadonnées d’élément.|  
+|[Traitement par lots](../msbuild/msbuild-batching.md)|Décrit comment générer en tâche de fond des cibles et des tâches basées sur des métadonnées d'élément.|  
 |[Transformations](../msbuild/msbuild-transforms.md)|Explique comment utiliser des transformations pour activer l'analyse de dépendance.|  
 |[Intégration de Visual Studio (MSBuild)](../msbuild/visual-studio-integration-msbuild.md)|Explique comment utiliser des fichiers projet MSBuild quand vous compilez le code à partir de l'IDE Visual Studio.|  
 |[Génération parallèle de plusieurs projets](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md)|Décrit comment générer plusieurs projets plus rapidement sur les ordinateurs dotés de plusieurs processeurs ou de processeurs multicœurs.|  

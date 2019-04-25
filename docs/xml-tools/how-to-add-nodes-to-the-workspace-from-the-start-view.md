@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bcdae3da81fe028fb3ec1c9bd6ba79f348961f3
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: ad76a2606d5e6fedec162cea4a89505efbb8b39f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526397"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111660"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>Procédure : Ajouter des nœuds à l’espace de travail à partir de la vue de départ
 
@@ -21,14 +21,14 @@ Cette rubrique décrit comment ajouter des nœuds globaux à le [espace de trava
 
 ## <a name="to-add-nodes-to-the-workspace-from-the-start-view"></a>Pour ajouter des nœuds à l'espace de travail à partir de la vue de départ
 
-1.  Suivez les étapes de [Comment : Créer et modifier un fichier de schéma XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
+1. Suivez les étapes de [Comment : Créer et modifier un fichier de schéma XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).
 
-2.  Avec le bouton droit dans l’éditeur XML et sélectionnez **Concepteur de vues**.
+2. Avec le bouton droit dans l’éditeur XML et sélectionnez **Concepteur de vues**.
 
      La vue de départ apparaît.
 
      Dans le **détails du jeu de schéma** section, vous remarquerez qu’il existe deux (**2**) **Types complexes globaux**.
 
-3.  Cliquez sur le **ajouter** lien à droite de la **Types complexes globaux** titre.
+3. Cliquez sur le **ajouter** lien à droite de la **Types complexes globaux** titre.
 
      Les nœuds de type complexe `USAddress` et `PurchaseOrderType` apparaissent sur l'aire de conception de la vue du graphique.

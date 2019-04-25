@@ -16,33 +16,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f6dc7a9b5e066304e27e784312707400d9571a60
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: b8eebd082df031161604bd04afe61d1aca652f6a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686572"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043282"
 ---
 # <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>Erreur : Impossible de se connecter à la machine &lt;nom&gt;. L’ordinateur est introuvable sur le réseau.
 Ce problème se produit si l'une des conditions suivantes est remplie :
 
--   Votre connexion à l'ordinateur distant a été interrompue.
+- Votre connexion à l'ordinateur distant a été interrompue.
 
--   Votre compte d'utilisateur sur l'ordinateur distant est désactivé.
+- Votre compte d'utilisateur sur l'ordinateur distant est désactivé.
 
--   Votre mot de passe sur l'ordinateur distant a expiré.
+- Votre mot de passe sur l'ordinateur distant a expiré.
 
 ### <a name="to-resolve-this-behavior"></a>Pour résoudre ce problème
 
--   Assurez-vous que l'ordinateur local et l'ordinateur distant se trouvent dans le même réseau. Pour cela, à l'aide de l'Explorateur Microsoft Windows (ou de l'Explorateur de fichiers), tentez d'accéder à l'ordinateur distant.
+- Assurez-vous que l'ordinateur local et l'ordinateur distant se trouvent dans le même réseau. Pour cela, à l'aide de l'Explorateur Microsoft Windows (ou de l'Explorateur de fichiers), tentez d'accéder à l'ordinateur distant.
 
      — et —
 
--   Assurez-vous que le compte d'utilisateur que vous utilisez pour vous connecter à l'ordinateur distant est activé.
+- Assurez-vous que le compte d'utilisateur que vous utilisez pour vous connecter à l'ordinateur distant est activé.
 
      — et —
 
--   Assurez-vous que le mot de passe que vous utilisez pour vous connecter à l'ordinateur distant est valide et n'a pas expiré.
+- Assurez-vous que le mot de passe que vous utilisez pour vous connecter à l'ordinateur distant est valide et n'a pas expiré.
 
 ## <a name="see-also"></a>Voir aussi
 - [Remote Debugging](../debugger/remote-debugging.md)

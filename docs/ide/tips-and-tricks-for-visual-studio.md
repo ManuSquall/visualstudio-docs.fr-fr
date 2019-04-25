@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cff50cf9b9f95b9ed7af48d20c0510cfad7fda79
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: c96842dde4219bcdab3d7ccfd1616f8b44e733bf
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223362"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790366"
 ---
 # <a name="keyboard-shortcuts-for-visual-studio"></a>Raccourcis clavier pour Visual Studio
 
@@ -50,9 +50,9 @@ Vous pouvez naviguer dans Visual Studio plus facilement en utilisant les raccour
 |||
 |-|-|
 |Recherche Explorateur de solutions|**Ctrl**+**;**|
-|Placer le focus dans la zone de recherche d'une fenêtre outil|**Alt**+**`** lorsque la fenêtre Outil a le focus|
-|Lancement rapide|**Ctrl**+**Q**|
-|Résultats de la portée de lancement rapide|-   @opt Options<br />-   @cmd Commandes<br />-   @mru Utilisé récemment<br />-   @doc Ouvrir les documents|
+|Placer le focus dans la zone de recherche d’une fenêtre outil|**Alt**+**`** lorsque la fenêtre Outil a le focus|
+|Zone de recherche|**Ctrl**+**Q**|
+|Résultats de la zone de recherche|-   @opt Options<br />-   @cmd Commandes<br />-   @mru Utilisé récemment<br />-   @doc Ouvrir les documents|
 |Rechercher dans les options d'outils|**Ctrl**+**E**|
 
 ## <a name="editor-find"></a>Éditeur de recherche

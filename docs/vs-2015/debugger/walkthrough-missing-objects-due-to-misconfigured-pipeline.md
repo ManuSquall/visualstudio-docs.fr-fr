@@ -1,40 +1,35 @@
 ---
-title: 'Procédure pas à pas : Objets manquants en raison Pipeline mal configuré | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure pas à pas : Objets manquants en raison de Pipeline mal configuré | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 ms.assetid: ed8ac02d-b38f-4055-82fb-67757c2ccbb9
 caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: cd28886695e3234240de5675e5e2b19972b105fa
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 01366bfd0f32f9cbf731613339f2c592873e2623
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782010"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114104"
 ---
-# <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Procédure pas à pas : objets manquants en raison d'un pipeline mal configuré
+# <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Procédure pas à pas : objets manquants en raison d’un pipeline mal configuré
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette procédure pas à pas montre comment utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour examiner un objet qui est manquant, car un nuanceur de pixels n’a pas été défini.  
   
  Cette procédure pas à pas décrit les tâches suivantes :  
   
--   Utilisation de la **liste des événements Graphics** pour rechercher les sources potentielles du problème.  
+- Utilisation de la **liste des événements Graphics** pour rechercher les sources potentielles du problème.  
   
--   Utilisation de la fenêtre **Étapes de canalisation Graphics** pour examiner l’effet de l’appel de l’API Direct3D `DrawIndexed` .  
+- Utilisation de la fenêtre **Étapes de canalisation Graphics** pour examiner l’effet de l’appel de l’API Direct3D `DrawIndexed` .  
   
--   Inspection du contexte de périphérique pour confirmer qu’aucune étape de nuanceur n’a été définie.  
+- Inspection du contexte de périphérique pour confirmer qu’aucune étape de nuanceur n’a été définie.  
   
--   Utilisation de la fenêtre **Étapes de canalisation Graphics** avec la **Pile des appels des événements Graphics** pour aider à trouver la source du nuanceur de pixels non défini.  
+- Utilisation de la fenêtre **Étapes de canalisation Graphics** avec la **Pile des appels des événements Graphics** pour aider à trouver la source du nuanceur de pixels non défini.  
   
 ## <a name="scenario"></a>Scénario  
  Quand un objet est manquant dans une application 3D, c’est parfois dû au fait que l’une des étapes du nuanceur n’est pas définie avant le rendu de l’objet. Dans les applications qui ont des besoins de rendu simples, la source de cette erreur se situe généralement quelque part dans la pile des appels de dessin de l’objet. Toutefois, en guise d’optimisation, certaines applications rassemblent des objets qui ont des programmes nuanceurs, des textures ou d’autres données en commun pour minimiser la surcharge liée au changement d’état. Dans ces applications, la source de l’erreur peut être dissimulée au fond du système de traitement par lot, plutôt que située dans la pile des appels de l’appel de dessin. Comme le scénario de cette procédure pas à pas illustre une application ayant des besoins de rendu simples, la source de l’erreur se trouve dans la pile des appels.  
@@ -110,6 +105,3 @@ Cette procédure pas à pas montre comment utiliser les outils Graphics Diagnost
    Après avoir corrigé le code, vous pouvez le régénérer et réexécuter l’application pour vérifier que le problème d’affichage est résolu :  
   
    ![L’objet est maintenant affiché](../debugger/media/gfx-diag-demo-misconfigured-pipeline-resolution.jpg "gfx_diag_demo_misconfigured_pipeline_resolution")
-
-
-

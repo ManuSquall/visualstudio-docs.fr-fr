@@ -52,7 +52,7 @@ NoRemove Projects
  La valeur SortPriority spécifie un ordre de priorité.  
   
 ## <a name="adding-items-to-an-existing-project"></a>Ajout d’éléments à un projet existant  
- Vous pouvez également ajouter des éléments à un projet existant. Par exemple, pour un [!INCLUDE[csprcs](../../includes/csprcs-md.md)] projet, vous pouvez ajouter des éléments à la \<racine > \VC#\CSharpProjectItems\LocalProjectItems dossier \Program Files\Microsoft Visual Studio. Dans ce cas le `%GUID_Project%` est le GUID pour un projet c# ({FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}).  
+ Vous pouvez également ajouter des éléments à un projet existant. Par exemple, pour un [!INCLUDE[csprcs](../../includes/csprcs-md.md)] projet, vous pouvez ajouter des éléments à la \<racine > \VC#\CSharpProjectItems\LocalProjectItems dossier \Program Files\Microsoft Visual Studio. Dans ce cas le `%GUID_Project%` est le GUID pour un projet C# ({FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}).  
   
  Vous pouvez également étendre un projet existant par un sous-type de projet de programmation. Avec un sous-type de projet, vous pouvez étendre un projet sans avoir à écrire un nouveau type de projet. Pour plus d’informations sur les sous-types de projet, consultez [sous-types de projet](../../extensibility/internals/project-subtypes.md).  
   

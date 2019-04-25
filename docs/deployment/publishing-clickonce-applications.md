@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ed00a776671bcaa48ddf5fe7e15510df18971dfa
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: b46b1b5fa7952fbd1a14dc9eca7f67c493ea2807
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636136"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59504356"
 ---
 # <a name="publish-clickonce-applications"></a>Publier des applications ClickOnce
 Lorsque vous publiez une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pour la première fois, les propriétés de publication peuvent être définies à l'aide de l'Assistant Publication. Seules quelques-unes des propriétés sont disponibles dans l'Assistant ; toutes les autres sont définies à leurs valeurs par défaut.
@@ -43,7 +43,7 @@ Lorsque vous publiez une application [!INCLUDE[ndptecclick](../deployment/includ
 
 - Fréquence des mises à jour : fréquence à laquelle l'application vérifie la présence de nouvelles mises à jour.
 
-  Pour plus d’informations, consultez [Comment : publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+  Pour plus d'informations, voir [Procédure : Publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
 ## <a name="publish-page"></a>Page Publier
  La page **Publier** du **Concepteur de projets** permet de configurer les propriétés du déploiement ClickOnce. Le tableau suivant liste les rubriques.
@@ -51,8 +51,8 @@ Lorsque vous publiez une application [!INCLUDE[ndptecclick](../deployment/includ
 |Titre|Description|
 |-----------|-----------------|
 |[Guide pratique pour spécifier l’endroit où Visual Studio copie les fichiers](../deployment/how-to-specify-where-visual-studio-copies-the-files.md)|Décrit comment définir l'emplacement où Visual Studio place les fichiers d'application et les manifestes.|
-|[Guide pratique pour spécifier l’emplacement à partir duquel les utilisateurs finaux effectueront l’installation](../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)|Décrit comment définir l'emplacement à partir duquel les utilisateurs téléchargent et installent l'application.|
-|[Guide pratique pour spécifier le mode d’installation en ligne et hors connexion de ClickOnce](../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)|Décrit comment définir si l'application est disponible hors connexion ou en ligne.|
+|[Guide pratique pour spécifier l’emplacement à partir duquel les utilisateurs finaux effectuent l’installation](../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)|Décrit comment définir l'emplacement à partir duquel les utilisateurs téléchargent et installent l'application.|
+|[Guide pratique pour spécifier le mode d’installation en ligne ou hors connexion de ClickOnce](../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)|Décrit comment définir si l'application est disponible hors connexion ou en ligne.|
 |[Guide pratique pour définir la version de publication ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md)|Décrit comment définir la propriété **Version de publication** de ClickOnce, qui indique si l’application que vous publiez est traitée comme une mise à jour.|
 |[Guide pratique pour incrémenter automatiquement la version de publication ClickOnce](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)|Décrit comment incrémenter automatiquement le numéro de révision de la **Version de publication** chaque fois que vous publiez l’application.|
 
@@ -61,28 +61,28 @@ Lorsque vous publiez une application [!INCLUDE[ndptecclick](../deployment/includ
 ### <a name="application-files-dialog-box"></a>Boîte de dialogue Fichiers d’application
  Cette boîte de dialogue vous permet de spécifier comment les fichiers de votre projet sont classés pour la publication, le téléchargement dynamique et la mise à jour. Elle contient une grille qui répertorie les fichiers projet qui ne sont pas exclus par défaut ou qui ont un groupe de téléchargement.
 
- Pour exclure des fichiers, marquer des fichiers comme fichiers de données ou les composants requis et créer des groupes de fichiers pour une installation conditionnelle dans l’interface utilisateur de Visual Studio, consultez [Comment : spécifier les fichiers publiés par ClickOnce](../deployment/how-to-specify-which-files-are-published-by-clickonce.md). Vous pouvez également marquer des fichiers de données à l'aide de Mage.exe. Pour plus d'informations, consultez [Guide pratique pour inclure un fichier de données dans une application ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).
+ Pour exclure des fichiers, marquer des fichiers comme fichiers de données ou composants requis, et créer des groupes de fichiers pour une installation conditionnelle dans l’interface utilisateur de Visual Studio, consultez [Guide pratique pour spécifier les fichiers publiés par ClickOnce](../deployment/how-to-specify-which-files-are-published-by-clickonce.md). Vous pouvez également marquer des fichiers de données à l'aide de Mage.exe. Pour plus d'informations, voir [Procédure : Inclure un fichier de données dans une application ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).
 
 ### <a name="prerequisites-dialog-box"></a>Composants requis, boîte de dialogue
- Cette boîte de dialogue spécifie quels composants requis sont installés, ainsi que la manière dont ils sont installés. Pour plus d’informations, consultez [Comment : installer les composants requis avec une application ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md) et [boîte de dialogue composants requis](../ide/reference/prerequisites-dialog-box.md).
+ Cette boîte de dialogue spécifie quels composants requis sont installés, ainsi que la manière dont ils sont installés. Pour plus d'informations, voir [Procédure : Installer les composants requis avec une application ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md) et [boîte de dialogue composants requis](../ide/reference/prerequisites-dialog-box.md).
 
 ### <a name="application-updates-dialog-box"></a>Boîte de dialogue Mises à jour des applications
- Cette boîte de dialogue spécifie comment l'installation de l'application doit vérifier les mises à jour. Pour plus d’informations, consultez [Comment : gérer les mises à jour pour une application ClickOnce](../deployment/how-to-manage-updates-for-a-clickonce-application.md).
+ Cette boîte de dialogue spécifie comment l'installation de l'application doit vérifier les mises à jour. Pour plus d'informations, voir [Procédure : Gérer les mises à jour d’une application ClickOnce](../deployment/how-to-manage-updates-for-a-clickonce-application.md).
 
 ### <a name="publish-options-dialog-box"></a>Boîte de dialogue Options de publication
  La boîte de dialogue Options de publication spécifie les options de déploiement d'une application.
 
 |||
 |-|-|
-|[Guide pratique pour changer la langue de publication pour une application ClickOnce](../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)|Explique comment spécifier une langue et une culture correspondant à la version localisée.|
+|[Guide pratique pour changer la langue de publication d’une application ClickOnce](../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)|Explique comment spécifier une langue et une culture correspondant à la version localisée.|
 |[Guide pratique pour spécifier un nom de menu Démarrer pour une application ClickOnce](../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)|Décrit comment modifier le nom complet d'une application ClickOnce.|
 |[Guide pratique pour spécifier un lien pour le support technique](../deployment/how-to-specify-a-link-for-technical-support.md)|Décrit comment définir la propriété **URL du support technique**, qui identifie une page web ou un partage de fichiers où les utilisateurs peuvent accéder pour obtenir des informations sur l’application.|
-|[Guide pratique pour spécifier une URL de support technique pour chaque composant requis lors d’un déploiement ClickOnce](../deployment/how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment.md)|A montré comment modifier manuellement un manifeste d'application pour inclure les URL de support technique de chaque composant requis.|
+|[Guide pratique pour spécifier une URL du support technique pour chaque prérequis dans un déploiement ClickOnce](../deployment/how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment.md)|A montré comment modifier manuellement un manifeste d'application pour inclure les URL de support technique de chaque composant requis.|
 |[Guide pratique pour spécifier une page de publication pour une application ClickOnce](../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)|Décrit comment générer et publier une page web par défaut (publish.htm) en même temps que l’application|
 |[Guide pratique pour personnaliser la page web par défaut de ClickOnce](../deployment/how-to-customize-the-default-web-page-for-a-clickonce-application.md)|Décrit comment personnaliser la page web qui est automatiquement générée et publiée avec l’application.|
-|[Guide pratique pour activer le démarrage automatique pour les installations de CD](../deployment/how-to-enable-autostart-for-cd-installations.md)|Décrit comment activer le démarrage automatique afin que l'application ClickOnce soit lancée automatiquement lorsque le média est inséré.|
+|[Guide pratique pour activer le démarrage automatique pour les installations depuis un CD-ROM](../deployment/how-to-enable-autostart-for-cd-installations.md)|Décrit comment activer le démarrage automatique afin que l'application ClickOnce soit lancée automatiquement lorsque le média est inséré.|
 
-## <a name="related-tpics"></a>Tpics connexes
+## <a name="related-topics"></a>Rubriques connexes
 
 |Titre|Description|
 |-----------|-----------------|
@@ -90,12 +90,12 @@ Lorsque vous publiez une application [!INCLUDE[ndptecclick](../deployment/includ
 |[Guide pratique pour récupérer les informations de chaîne de requête dans une application ClickOnce en ligne](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)|Montre comment récupérer des paramètres passés dans l'URL utilisée pour exécuter une application ClickOnce.|
 |[Guide pratique pour suspendre l’activation des URL des applications ClickOnce à l’aide du concepteur](../deployment/how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer.md)|Décrit comment forcer les utilisateurs à démarrer l’application à partir du menu **Démarrer** à l’aide du concepteur.|
 |[Guide pratique pour suspendre l’activation des URL des applications ClickOnce](../deployment/how-to-disable-url-activation-of-clickonce-applications.md)|Décrit comment forcer les utilisateurs à démarrer l’application à partir du menu **Démarrer**.|
-|[Procédure pas à pas : téléchargement d’assemblys à la demande avec l’API du déploiement ClickOnce à l’aide du concepteur](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|Explique comment télécharger les assemblys d'application uniquement lors de leur première utilisation par l'application à l'aide du concepteur.|
-|[Procédure pas à pas : Téléchargement d’assemblys à la demande avec l’API du déploiement ClickOnce](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Explique comment télécharger les assemblys d'application uniquement lors de leur première utilisation par l'application.|
-|[Procédure pas à pas : Téléchargement d’assemblys satellites à la demande avec l’API du déploiement ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Décrit comment marquer vos assemblys satellites comme facultatifs et télécharger uniquement l'assembly nécessaire à un ordinateur client pour ses paramètres de culture actuels.|
-|[Procédure pas à pas : déployer manuellement une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|Explique comment utiliser les outils du .NET Framework pour déployer votre application ClickOnce.|
+|[Procédure pas à pas : Téléchargement d’assemblys à la demande avec l’API du déploiement ClickOnce à l’aide du concepteur](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer.md)|Explique comment télécharger les assemblys d'application uniquement lors de leur première utilisation par l'application à l'aide du concepteur.|
+|[Procédure pas à pas : Télécharger des assemblys à la demande avec l’API du déploiement ClickOnce](../deployment/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Explique comment télécharger les assemblys d'application uniquement lors de leur première utilisation par l'application.|
+|[Procédure pas à pas : Télécharger des assemblys satellites à la demande avec l’API du déploiement ClickOnce](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)|Décrit comment marquer vos assemblys satellites comme facultatifs et télécharger uniquement l'assembly nécessaire à un ordinateur client pour ses paramètres de culture actuels.|
+|[Procédure pas à pas : Déployer manuellement une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)|Explique comment utiliser les outils du .NET Framework pour déployer votre application ClickOnce.|
 |[Procédure pas à pas : Déployer manuellement une application ClickOnce qui ne nécessite pas de nouvelle signature et qui conserve les informations de personnalisation](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)|Explique comment utiliser les outils du .NET Framework pour déployer votre application ClickOnce sans signer à nouveau les manifestes.|
-|[Guide pratique pour configurer des projets et cibler des plateformes](../ide/how-to-configure-projects-to-target-platforms.md)|Explique comment publier pour un processeur 64 bits en modifiant la propriété **UC cible** ou **Plateforme cible** de votre projet.|
+|[Guide pratique pour configurer des projets pour des plateformes cibles](../ide/how-to-configure-projects-to-target-platforms.md)|Explique comment publier pour un processeur 64 bits en modifiant la propriété **UC cible** ou **Plateforme cible** de votre projet.|
 |[Procédure pas à pas : Activer une application ClickOnce s’exécuter sur plusieurs versions du .NET Framework](https://msdn.microsoft.com/library/7f4383af-ed87-4853-b4d4-02a3967a5fd9)|Explique comment permettre à une application ClickOnce de s'installer et de s'exécuter sur plusieurs versions du .NET Framework.|
 |[Procédure pas à pas : Créer un programme d’installation personnalisé pour une application ClickOnce](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)|Explique comment créer un programme d'installation personnalisé pour installer une application ClickOnce.|
 |[Guide pratique pour publier une application WPF avec les styles visuels activés](../deployment/how-to-publish-a-wpf-application-with-visual-styles-enabled.md)|Fournit les instructions pas à pas pour résoudre une erreur qui s'affiche lorsque vous essayez de publier une application WPF pour laquelle les styles visuels sont activés.|

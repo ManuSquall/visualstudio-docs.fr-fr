@@ -12,12 +12,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2c13d30b1657917d55e5d3218c70aa8f2a69ec67
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 917c88056709cfbeb89ce3f19d9c8da9866feb4e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "59001231"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054610"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Étendre des diagrammes et des modèles UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ Cette rubrique résume les différentes manière d’étendre les outils de mod�
   
  Pour plus d’informations, consultez cette vidéo : ![lien vers la vidéo](../data-tools/media/playvideo.gif "PlayVideo")[série MSDN Comment faire : Outils UML et extensibilité](http://go.microsoft.com/fwlink/?LinkId=214467).  
   
-##  <a name="Requirements"></a> Spécifications  
+## <a name="Requirements"></a> Spécifications  
   
--   [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
+- [Visual Studio SDK](../extensibility/visual-studio-sdk.md).  
   
--   [Kit de développement logiciel (SDK) de modélisation pour Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148).  
+- [Kit de développement logiciel (SDK) de modélisation pour Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148).  
   
 ## <a name="profiles"></a>Profils  
  Les profils permettent de définir des stéréotypes et des propriétés supplémentaires sur des éléments UML.  

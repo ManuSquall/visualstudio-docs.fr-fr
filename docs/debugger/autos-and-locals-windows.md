@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 16139daaadfa687abf296505d94f350600fbfa9f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 60bb98644c1905b030176b28b97575b379bed38d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636903"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103093"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Inspecter des variables dans les fenêtres automatique et variables locales
 
@@ -56,9 +56,22 @@ Dans le code C++ natif, vous devrez peut-être qualifier le contexte d’un nom 
 >[!CAUTION]
 >Assurez-vous que vous comprenez les conséquences avant de modifier des valeurs et les expressions. Certains problèmes possibles sont :
 >
->-   Évaluer certaines expressions peut modifier la valeur d’une variable ou affecter d’une manière ou d’une autre l’état de votre programme. Par exemple, l’évaluation `var1 = ++var2` modifie la valeur des deux `var1` et `var2`. Ces expressions sont réputées pour avoir [effets](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Effets secondaires peuvent provoquer des résultats inattendus si vous n’êtes pas informé.
+>- Évaluer certaines expressions peut modifier la valeur d’une variable ou affecter d’une manière ou d’une autre l’état de votre programme. Par exemple, l’évaluation `var1 = ++var2` modifie la valeur des deux `var1` et `var2`. Ces expressions sont réputées pour avoir [effets](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)). Effets secondaires peuvent provoquer des résultats inattendus si vous n’êtes pas informé.
 >
->-   Modifier des valeurs à virgule flottante risque d’entraîner quelques légères imprécisions, dues à la conversion en binaire de la partie décimale des composants fractionnaires. Même une modification apparemment anodine peut entraîner des modifications à certaines des bits dans la variable à virgule flottante.
+>- Modifier des valeurs à virgule flottante risque d’entraîner quelques légères imprécisions, dues à la conversion en binaire de la partie décimale des composants fractionnaires. Même une modification apparemment anodine peut entraîner des modifications à certaines des bits dans la variable à virgule flottante.
+
+::: moniker range=">= vs-2019" 
+## <a name="search-in-the-autos-or-locals-window"></a>Rechercher dans la fenêtre automatique ou variables locales
+
+Vous pouvez rechercher des mots clés dans les colonnes Nom, valeur et Type de la **automatique** ou **variables locales** fenêtre à l’aide de la barre de recherche au-dessus de chaque fenêtre. Appuyez sur entrée ou sélectionnez une des flèches pour exécuter une recherche. Pour annuler une recherche en cours, sélectionnez l’icône « x » dans la barre de recherche.
+
+Utilisez les flèches gauche et droite (MAJ + F3 et F3, respectivement) pour naviguer entre trouvé des correspondances.
+
+![Recherche dans la fenêtre variables locales](../debugger/media/ee-search-locals.png "recherche dans la fenêtre variables locales")
+
+Pour rendre votre recherche plus ou moins complète, utilisez la **recherche approfondie** liste déroulante en haut de la **automatique** ou **variables locales** fenêtre pour sélectionner le nombre de niveaux que vous souhaitez rechercher dans objets imbriqués. 
+
+::: moniker-end
 
 ## <a name="change-the-context-for-the-autos-or-locals-window"></a>Modifier le contexte pour la fenêtre automatique ou variables locales
 
@@ -72,9 +85,9 @@ Définissez un point d’arrêt et démarrez le débogage. Lorsque le point d’
 
 ## <a name="bkmk_whatvariables"></a> Variables dans la fenêtre automatique (C#, C++, Visual Basic, Python)
 
- Affichent les variables différentes dans différents langages le **automatique** fenêtre.
+Affichent les variables différentes dans différents langages le **automatique** fenêtre.
 
- - En C# et en Visual Basic, la fenêtre **Automatique** affiche les variables utilisées sur la ligne actuelle ou précédente. Par exemple, dans C# ou Visual Basic du code, déclarez les variables de quatre suivantes :
+- En C# et en Visual Basic, la fenêtre **Automatique** affiche les variables utilisées sur la ligne actuelle ou précédente. Par exemple, dans C# ou Visual Basic du code, déclarez les variables de quatre suivantes :
 
    ```csharp
        public static void Main()
@@ -93,7 +106,7 @@ Définissez un point d’arrêt et démarrez le débogage. Lorsque le point d’
 
    La valeur de `c` est 0, car la ligne `c = 3` n’a pas encore été exécutée.
 
- - En C++, le **automatique** fenêtre affiche les variables utilisées dans au moins trois lignes avant la ligne actuelle où l’exécution est suspendue. Par exemple, dans le code C++, déclarez six variables :
+- En C++, le **automatique** fenêtre affiche les variables utilisées dans au moins trois lignes avant la ligne actuelle où l’exécution est suspendue. Par exemple, dans le code C++, déclarez six variables :
 
    ```C++
        void main() {
@@ -113,7 +126,7 @@ Définissez un point d’arrêt et démarrez le débogage. Lorsque le point d’
 
     La variable `e` n’est pas initialisée, car la ligne `e = 5` n’a pas encore été exécutée.
 
-##  <a name="bkmk_returnValue"></a> View return values of method calls
+## <a name="bkmk_returnValue"></a> View return values of method calls
  Dans le code .NET et C++, vous pouvez examiner les valeurs de retour dans le **automatique** fenêtre lorsque vous arrivez sur ou hors d’un appel de méthode. Appel de méthode d’affichage valeurs de retour peuvent être utiles lorsqu’elles ne sont pas stockées dans des variables locales. Une méthode peut être utilisée en tant que paramètre, ou en tant que la valeur de retour d’une autre méthode.
 
  Par exemple, ce qui suit C# code ajoute les valeurs de retour de deux fonctions :

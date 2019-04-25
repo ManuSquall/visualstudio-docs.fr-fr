@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 188ad2ca0ff0b84d94c58cb42076c6b0782742a1
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 375f6996c91c294dd3b630c9ab987ff4b2d6cbdb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416030"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078640"
 ---
 # <a name="responding-to-and-propagating-changes"></a>Propagation et réponse aux modifications en attente
 Lorsqu’un élément est créé, supprimé ou mis à jour, vous pouvez écrire du code qui propage la modification aux autres parties du modèle, ou à des ressources externes telles que des fichiers, de bases de données ou d’autres composants.
@@ -41,13 +41,13 @@ Lorsqu’un élément est créé, supprimé ou mis à jour, vous pouvez écrire 
 
  Événements de stockage permet de synchroniser le modèle avec des objets en dehors de Store, les règles de maintenir la cohérence dans le Store.
 
--   **Création de règles personnalisées** vous créez une règle personnalisée comme une classe dérivée à partir d’une règle abstraite. Vous devez également informer l’infrastructure sur la règle personnalisée. Pour plus d’informations, consultez [propager les modifications dans le modèle de règles](../modeling/rules-propagate-changes-within-the-model.md).
+- **Création de règles personnalisées** vous créez une règle personnalisée comme une classe dérivée à partir d’une règle abstraite. Vous devez également informer l’infrastructure sur la règle personnalisée. Pour plus d’informations, consultez [propager les modifications dans le modèle de règles](../modeling/rules-propagate-changes-within-the-model.md).
 
--   **S’abonner aux événements** avant de vous abonner à un événement, créez un gestionnaire d’événements et le délégué. Utilisez ensuite le <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>propriété pour vous abonner à l’événement. Pour plus d’informations, consultez [gestionnaires propager les modifications en dehors le modèle d’événement](../modeling/event-handlers-propagate-changes-outside-the-model.md).
+- **S’abonner aux événements** avant de vous abonner à un événement, créez un gestionnaire d’événements et le délégué. Utilisez ensuite le <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>propriété pour vous abonner à l’événement. Pour plus d’informations, consultez [gestionnaires propager les modifications en dehors le modèle d’événement](../modeling/event-handlers-propagate-changes-outside-the-model.md).
 
--   **Annulation des modifications** lorsque vous annulez une transaction, les événements sont déclenchés, mais les règles ne sont pas appliquées. Si une règle modifie une valeur, vous annulez la modification, la valeur est réinitialisée à la valeur d’origine pendant l’opération d’annulation. Lorsqu’un événement est déclenché, vous devez modifier manuellement la valeur à sa valeur d’origine. Pour en savoir plus sur les transactions et l’annulation, consultez [Comment : Utiliser des Transactions pour mettre à jour le modèle](../modeling/how-to-use-transactions-to-update-the-model.md).
+- **Annulation des modifications** lorsque vous annulez une transaction, les événements sont déclenchés, mais les règles ne sont pas appliquées. Si une règle modifie une valeur, vous annulez la modification, la valeur est réinitialisée à la valeur d’origine pendant l’opération d’annulation. Lorsqu’un événement est déclenché, vous devez modifier manuellement la valeur à sa valeur d’origine. Pour en savoir plus sur les transactions et l’annulation, consultez [Comment : Utiliser des Transactions pour mettre à jour le modèle](../modeling/how-to-use-transactions-to-update-the-model.md).
 
--   **Passage des Arguments d’événement à des règles et des événements** les deux événements et règles sont transmis un `EventArgs` paramètre qui contient des informations sur la façon le modèle modifié.
+- **Passage des Arguments d’événement à des règles et des événements** les deux événements et règles sont transmis un `EventArgs` paramètre qui contient des informations sur la façon le modèle modifié.
 
 ## <a name="see-also"></a>Voir aussi
 

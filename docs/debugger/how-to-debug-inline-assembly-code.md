@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e5e7eb7dcfe8103370e30b0be18a0fdcda298d7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 87e76b2668d8777c46404f0b304eeb56d1821bb8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018668"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094896"
 ---
 # <a name="how-to-debug-inline-assembly-code"></a>Procédure : déboguer du code assembleur inline
 
@@ -35,9 +35,9 @@ Le débogueur offre deux fenêtres pour le débogage du code assembleur inline, 
 
 ## <a name="debug-inline-assembly-code"></a>Déboguer du code assembleur inline
 
-1.  Utilisez la fenêtre **Code Machine** pour afficher les instructions assembleur.
+1. Utilisez la fenêtre **Code Machine** pour afficher les instructions assembleur.
 
-2.  Utilisez la fenêtre **Registres** pour afficher le contenu du registre.
+2. Utilisez la fenêtre **Registres** pour afficher le contenu du registre.
 
 ## <a name="see-also"></a>Voir aussi
 

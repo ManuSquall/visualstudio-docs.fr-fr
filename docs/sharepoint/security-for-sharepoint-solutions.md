@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 982a2387ae0e21304fb9726fabdf05554c982fd5
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 31bcd41dc1a6fd7f314c7d701f52c3728dd2ee8c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54862940"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040452"
 ---
 # <a name="security-for-sharepoint-solutions"></a>Sécurité pour les solutions SharePoint
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] intègre les fonctionnalités suivantes pour vous aider à améliorer la sécurité des applications SharePoint.
@@ -46,42 +46,42 @@ ms.locfileid: "54862940"
 ## <a name="sharepoint-permissions-considerations"></a>Considérations relatives à des autorisations SharePoint
  Pour développer des solutions SharePoint, vous devez disposer des autorisations suffisantes pour exécuter et déboguer des solutions SharePoint. Avant de pouvoir tester une solution SharePoint, procédez comme suit pour vous assurer que vous disposez des autorisations nécessaires :
 
-1.  Ajoutez votre compte d’utilisateur en tant qu’administrateur sur le système.
+1. Ajoutez votre compte d’utilisateur en tant qu’administrateur sur le système.
 
-2.  Ajoutez votre compte d’utilisateur en tant qu’un administrateur de batterie de serveurs pour le serveur SharePoint.
+2. Ajoutez votre compte d’utilisateur en tant qu’un administrateur de batterie de serveurs pour le serveur SharePoint.
 
-    1.  Dans Administration centrale de SharePoint 2010, choisissez le **gérer le groupe d’administrateurs de batterie de serveurs** lien.
+    1. Dans Administration centrale de SharePoint 2010, choisissez le **gérer le groupe d’administrateurs de batterie de serveurs** lien.
 
-    2.  Sur le **administrateurs de batterie** page, choisissez le **New** option de menu
+    2. Sur le **administrateurs de batterie** page, choisissez le **New** option de menu
 
-3.  Ajoutez votre compte d’utilisateur pour au groupe WSS_ADMIN_WPG.
+3. Ajoutez votre compte d’utilisateur pour au groupe WSS_ADMIN_WPG.
 
 ## <a name="additional-security-resources"></a>Autres ressources de sécurité
  Pour plus d’informations sur les problèmes de sécurité, consultez les rubriques suivantes.
 
 ### <a name="visual-studio-security"></a>sécurité (Visual Studio)
 
--   [Sécurité et autorisations utilisateur](http://go.microsoft.com/fwlink/?LinkId=177503)
+- [Sécurité et autorisations utilisateur](http://go.microsoft.com/fwlink/?LinkId=177503)
 
--   [Sécurité dans le Code natif et .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177504)
+- [Sécurité dans le Code natif et .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177504)
 
--   [Sécurité dans le .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177502)
+- [Sécurité dans le .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177502)
 
 ### <a name="sharepoint-security"></a>Sécurité SharePoint
 
--   [Sécurité et Administration de SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177501)
+- [Sécurité et Administration de SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177501)
 
--   [Centre de ressources de sécurité SharePoint](http://go.microsoft.com/fwlink/?LinkId=177498)
+- [Centre de ressources de sécurité SharePoint](http://go.microsoft.com/fwlink/?LinkId=177498)
 
--   [Sécurisation des composants WebPart dans SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177511)
+- [Sécurisation des composants WebPart dans SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177511)
 
--   [Amélioration de la sécurité des applications Web : Menaces et contre-mesures](http://go.microsoft.com/fwlink/?LinkID=140080)
+- [Amélioration de la sécurité des applications Web : Menaces et contre-mesures](http://go.microsoft.com/fwlink/?LinkID=140080)
 
 ### <a name="general-security"></a>Sécurité générale
 
--   [MSDN Security Development Lifecycle](http://go.microsoft.com/fwlink/?LinkID=147149)
+- [MSDN Security Development Lifecycle](http://go.microsoft.com/fwlink/?LinkID=147149)
 
--   [Création d’Applications ASP.NET sécurisées : L’authentification, autorisation et Communication sécurisée](http://go.microsoft.com/fwlink/?LinkId=177494)
+- [Création d’Applications ASP.NET sécurisées : L’authentification, autorisation et Communication sécurisée](http://go.microsoft.com/fwlink/?LinkId=177494)
 
 ## <a name="see-also"></a>Voir aussi
 

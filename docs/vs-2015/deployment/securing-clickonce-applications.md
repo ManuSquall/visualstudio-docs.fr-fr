@@ -1,5 +1,5 @@
 ---
-title: Sécurisation des Applications ClickOnce | Microsoft Docs
+title: Sécurisation des applications ClickOnce | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,12 +17,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2266cae99336b1ab56131feee9aa96852746b73b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c2d8ecd09487248b4c4be05b354133c710febf30
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953824"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076196"
 ---
 # <a name="securing-clickonce-applications"></a>Sécurisation des applications ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Les applications[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] sont soum
  Les autorisations par défaut prennent comme base l'emplacement à partir duquel la version originale de l'application a été déployée ; les mises à jour de l'application hériteront de ces autorisations. Si l'application est configurée pour vérifier les mises à jour à partir d'un emplacement Web ou réseau et qu'une version plus récente est disponible, l'installation d'origine peut recevoir des autorisations pour la zone Internet ou Intranet plutôt que des autorisations de confiance totale. Pour empêcher des utilisateurs d'être invités, un administrateur système peut spécifier une stratégie de déploiement ClickOnce qui définit un éditeur de l'application spécifique comme une source fiable. Pour les ordinateurs sur lesquels cette stratégie est déployée, les autorisations seront automatiquement accordées et l'invite ne sera pas présentée à l'utilisateur. Pour plus d'informations, consultez [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md). Pour configurer le déploiement d'applications approuvées, le certificat peut être installé au niveau de l'ordinateur ou au niveau de l'entreprise. Pour plus d'informations, voir [Procédure : Ajouter un éditeur approuvé à un ordinateur client pour les applications ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md).  
   
 ## <a name="code-access-security-policies"></a>Stratégies de sécurité d'accès du code  
- Autorisations d’une application sont déterminées par les paramètres dans le [ \<trustInfo > élément](../deployment/trustinfo-element-clickonce-application.md) élément du manifeste d’application. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] génère automatiquement ces informations selon les paramètres figurant sur la page de propriété **Sécurité** du projet. Seules les autorisations spécifiques demandées par une application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] lui sont accordées. Par exemple, à l'emplacement où l'accès au fichier requiert des autorisations de type Confiance totale, si l'application demande l'autorisation d'accès de fichier, seule l'autorisation d'accès de fichier, non les autorisations de type Confiance totale, lui sera accordée. Lors du développement de votre application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , assurez-vous de ne demander que les autorisations spécifiques dont l'application a besoin. Dans la plupart des cas, vous pouvez utiliser les zones Internet ou intranet local pour limiter votre application à une confiance partielle. Pour plus d'informations, voir [Procédure : Définir une Zone de sécurité pour une Application ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md). Si votre application requiert des autorisations personnalisées, vous pouvez créer une zone personnalisée. Pour plus d'informations, voir [Procédure : Définir des autorisations personnalisées pour une Application ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
+ Les autorisations d’une application sont déterminées par les paramètres figurant dans l’élément [\<trustInfo> Élément](../deployment/trustinfo-element-clickonce-application.md) du manifeste de l’application. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] génère automatiquement ces informations selon les paramètres figurant sur la page de propriété **Sécurité** du projet. Seules les autorisations spécifiques demandées par une application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] lui sont accordées. Par exemple, à l'emplacement où l'accès au fichier requiert des autorisations de type Confiance totale, si l'application demande l'autorisation d'accès de fichier, seule l'autorisation d'accès de fichier, non les autorisations de type Confiance totale, lui sera accordée. Lors du développement de votre application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , assurez-vous de ne demander que les autorisations spécifiques dont l'application a besoin. Dans la plupart des cas, vous pouvez utiliser les zones Internet ou intranet local pour limiter votre application à une confiance partielle. Pour plus d'informations, voir [Procédure : Définir une Zone de sécurité pour une Application ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md). Si votre application requiert des autorisations personnalisées, vous pouvez créer une zone personnalisée. Pour plus d'informations, voir [Procédure : Définir des autorisations personnalisées pour une Application ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
   
  L'inclusion d'une autorisation qui ne fait pas partie du jeu d'autorisations par défaut de la zone à partir de laquelle l'application est déployée amènerait l'utilisateur final à être invité à accorder l'autorisation au moment de l'installation ou de la mise à jour. Pour empêcher des utilisateurs d'être invités, un administrateur système peut spécifier une stratégie de déploiement ClickOnce qui définit un éditeur de l'application spécifique comme une source fiable. Sur les ordinateurs sur lesquels cette stratégie est déployée, les autorisations seront automatiquement accordées et l'invite ne sera pas présentée à l'utilisateur.  
   
@@ -79,11 +79,11 @@ Les applications[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] sont soum
 ## <a name="deploying-obfuscated-assemblies"></a>Déploiement d'assemblys obscurcis  
  Vous pouvez être amené à obscurcir votre application à l'aide de Dotfuscator pour empêcher d'autres utilisateurs d'effectuer une ingénierie à rebours du code. Toutefois, l'obscurcissement d'assembly n'est pas intégré dans l'IDE de Visual Studio ou le processus de déploiement ClickOnce. Par conséquent, vous devrez exécuter l'obscurcissement en dehors du processus de déploiement, éventuellement à l'aide d'une étape post-build. Après avoir généré le projet, vous pourrez exécuter manuellement les étapes suivantes, en dehors de Visual Studio :  
   
-1.  Exécutez l'obscurcissement à l'aide de Dotfuscator.  
+1. Exécutez l'obscurcissement à l'aide de Dotfuscator.  
   
-2.  Utilisez Mage.exe ou MageUI.exe pour générer et signer les manifestes ClickOnce. Pour plus d’informations, consultez [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) et [MageUI.exe (outil Manifest Generation and Editing, client graphique)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
+2. Utilisez Mage.exe ou MageUI.exe pour générer et signer les manifestes ClickOnce. Pour plus d’informations, consultez [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) et [MageUI.exe (outil Manifest Generation and Editing, client graphique)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
   
-3.  Publiez (copiez) manuellement les fichiers sur votre emplacement source de déploiement (serveur Web, partage UNC ou CD-ROM).  
+3. Publiez (copiez) manuellement les fichiers sur votre emplacement source de déploiement (serveur Web, partage UNC ou CD-ROM).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md)   

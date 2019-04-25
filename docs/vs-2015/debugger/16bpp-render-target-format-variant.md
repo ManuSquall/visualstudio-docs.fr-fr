@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ee5112f27498bfa14d742469478cc4961f3cc7b0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7b315c7ab9bb10d039e81ba26b1beb9c4447a205
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950743"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112375"
 ---
 # <a name="16bpp-render-target-format-variant"></a>Variante de format cible de rendu 16 bpp
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,11 +37,11 @@ Affecte aux pixels le format DXGI_FORMAT_B5G6R5_UNORM pour toutes les cibles de 
 ## <a name="remarks"></a>Notes  
  Le format cible de rendu est réinitialisé en DXGI_FORMAT_B5G6R5_UNORM à chaque appel à `ID3D11Device::CreateTexture2D`, qui est chargé de créer une cible de rendu. Plus précisément, le format est substitué quand l'objet D3D11_TEXTURE2D_DESC passé dans pDesc décrit une cible de rendu ; à savoir :  
   
--   L'indicateur D3D11_BIND_REDNER_TARGET est défini pour le membre BindFlags.  
+- L'indicateur D3D11_BIND_REDNER_TARGET est défini pour le membre BindFlags.  
   
--   L'indicateur D3D11_BIND_DEPTH_STENCIL est effacé pour le membre BindFlags.  
+- L'indicateur D3D11_BIND_DEPTH_STENCIL est effacé pour le membre BindFlags.  
   
--   Le membre Usage a la valeur D3D11_USAGE_DEFAULT.  
+- Le membre Usage a la valeur D3D11_USAGE_DEFAULT.  
   
 ## <a name="restrictions-and-limitations"></a>Restrictions et limitations  
  Sachant que le format B5G6R5 n'a pas de canal alpha, le contenu alpha n'est pas conservé par cette variante. Si le rendu de votre application nécessite la présence d'un canal alpha dans votre cible de rendu, il vous suffit de passer au format B5G6R5.  

@@ -13,12 +13,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ff52925dea61916b9fa27af8cfacc044588cdb75
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 81bb2392a4ea6d9860cdcf2beeadcfe4e6ec7940
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54785620"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091607"
 ---
 # <a name="performance-report-overview"></a>Vue d’ensemble du rapport Performances
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,19 +82,19 @@ Vous pouvez afficher les données de profilage d’une session de performance da
 ## <a name="customizable-filter-control"></a>Contrôle de filtre personnalisable  
  Le contrôle de filtre personnalisable comporte les options suivantes :  
   
--   **Importer le filtre** : récupère une requête personnalisée précédemment enregistrée.  
+- **Importer le filtre** : récupère une requête personnalisée précédemment enregistrée.  
   
--   **Exporter le filtre** : enregistre la requête personnalisée dans l’emplacement spécifié.  
+- **Exporter le filtre** : enregistre la requête personnalisée dans l’emplacement spécifié.  
   
--   **Exécuter la requête** : exécute la requête comme affiché dans le contrôle de requête personnalisée.  
+- **Exécuter la requête** : exécute la requête comme affiché dans le contrôle de requête personnalisée.  
   
--   **Arrêter la requête** : interrompt l’exécution d’une requête. Ce bouton n’est pas disponible si aucune requête n’est en cours d’exécution.  
+- **Arrêter la requête** : interrompt l’exécution d’une requête. Ce bouton n’est pas disponible si aucune requête n’est en cours d’exécution.  
   
--   **Afficher la requête** : affiche/masque le contrôle de requête personnalisée.  
+- **Afficher la requête** : affiche/masque le contrôle de requête personnalisée.  
   
--   **Enregistrer l’analyse** : enregistre le rapport avec son analyse actuelle dans un fichier .vsps.  
+- **Enregistrer l’analyse** : enregistre le rapport avec son analyse actuelle dans un fichier .vsps.  
   
--   **Exporter** : enregistre le rapport actuel dans un fichier au format .CVS ou .XML, avec des options pour enregistrer les différentes vues.  
+- **Exporter** : enregistre le rapport actuel dans un fichier au format .CVS ou .XML, avec des options pour enregistrer les différentes vues.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Analyse des données des outils d’analyse des performances](../profiling/analyzing-performance-tools-data.md)   

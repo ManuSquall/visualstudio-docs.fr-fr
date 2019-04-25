@@ -21,4 +21,4 @@ ms.lasthandoff: 01/23/2019
 ms.locfileid: "58947870"
 ---
 # <a name="intellisense-for-most-recently-used-members"></a>IntelliSense et les membres les plus récemment utilisés
-Ce contenu a été déplacé vers [Visual c# IntelliSense](../ide/visual-csharp-intellisense.md).
+Ce contenu a été déplacé vers [Visual C# IntelliSense](../ide/visual-csharp-intellisense.md).

@@ -8,12 +8,12 @@ ms.assetid: 3a01d333-6e31-423f-ae06-5091a4fcb7a9
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7cbb66d47eb261c0b25f382370bb6590af351edd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e23e242060eea31ae79fd8a3998fb4ee5d734647
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953119"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048673"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>FAQ : Conversion des compléments en extensions VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,22 +39,22 @@ Les compléments sont désormais déconseillés. Pour effectuer une nouvelle ext
 ## <a name="can-i-convert-my-add-in-project-to-a-vsix-project"></a>Puis-je convertir mon projet de complément à un projet VSIX ?  
  Impossible de convertir un projet de complément directement à un projet VSIX, car les mécanismes utilisés dans des projets VSIX ne sont pas les mêmes que celles dans les projets de complément. Le modèle de projet VSIX, ainsi que les modèles d’élément de projet approprié ont beaucoup de code qui rend relativement simple être opérationnel et en cours d’exécution comme extension VSIX.  
   
-##  <a name="BKMK_StartDeveloping"></a> Comment commencer à développer des extensions VSIX ?  
+## <a name="BKMK_StartDeveloping"></a> Comment commencer à développer des extensions VSIX ?  
  Voici comment procéder à une extension VSIX qui comporte une commande de menu :  
   
 #### <a name="to-make-a-vsix-extension-that-has-a-menu-command"></a>Pour créer une extension VSIX qui dispose d’une commande de menu  
   
-1.  Créez un projet VSIX. (**Fichier**, **New**, **projet**, ou type **projet** dans le **lancement rapide** fenêtre). Dans le **nouveau projet** boîte de dialogue, développez **Visual c# / extensibilité** ou **Visual Basic / extensibilité** et sélectionnez **projet VSIX**.) Nommez le projet **TestExtension** et spécifiez un emplacement pour celui-ci.  
+1. Créez un projet VSIX. (**Fichier**, **New**, **projet**, ou type **projet** dans le **lancement rapide** fenêtre). Dans le **nouveau projet** boîte de dialogue, développez **Visual c# / extensibilité** ou **Visual Basic / extensibilité** et sélectionnez **projet VSIX**.) Nommez le projet **TestExtension** et spécifiez un emplacement pour celui-ci.  
   
-2.  Ajouter un **commande personnalisée** modèle d’élément de projet. (Cliquez sur le nœud de projet dans le **l’Explorateur de solutions** et sélectionnez **Ajouter / nouvel élément**. Dans le **nouveau projet** boîte de dialogue pour Visual c# ou Visual Basic, sélectionnez le **extensibilité** nœud et sélectionnez **commande personnalisée**.)  
+2. Ajouter un **commande personnalisée** modèle d’élément de projet. (Cliquez sur le nœud de projet dans le **l’Explorateur de solutions** et sélectionnez **Ajouter / nouvel élément**. Dans le **nouveau projet** boîte de dialogue pour Visual c# ou Visual Basic, sélectionnez le **extensibilité** nœud et sélectionnez **commande personnalisée**.)  
   
-3.  Appuyez sur la touche F5 pour exécuter le projet en mode débogage.  
+3. Appuyez sur la touche F5 pour exécuter le projet en mode débogage.  
   
      Une seconde instance de Visual Studio apparaît. Celle-ci est appelée instance expérimentale. Ses paramètres peuvent différer de ceux de l'instance de Visual Studio qui vous sert à écrire du code. À la première exécution de l'instance expérimentale, vous êtes invité à vous connecter à VS en ligne et à spécifier vos thème et profil.  
   
      Sur le **outils** menu (dans l’instance expérimentale), vous devez voir un bouton nommé **mon nom de commande**. Lorsque vous choisissez ce bouton, un message doit apparaître : **Inside TestVSPackagePackage.MenuItemCallback()**.  
   
-##  <a name="BKMK_RunAddin"></a> Comment puis-je exécuter mon code de complément dans un VSPackage ?  
+## <a name="BKMK_RunAddin"></a> Comment puis-je exécuter mon code de complément dans un VSPackage ?  
  Un code de complément s'exécute généralement de l'une des deux façons suivantes :  
   
 - déclenché par une commande de menu (le code se trouve dans la méthode `IDTCommandTarget.Exec`) ;  

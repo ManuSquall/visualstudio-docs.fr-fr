@@ -1,6 +1,7 @@
 ---
 title: 'Procédure : Déverrouiller Visual Studio'
-ms.date: 07/20/2017
+titleSuffix: ''
+ms.date: 03/30/2019
 ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
 author: TerryGLee
@@ -8,12 +9,14 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f40ee1e5eb2fe40261c15b17ce12b7471a2c0c11
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.prod: visual-studio-windows
+ms.technology: vs-ide-general
+ms.openlocfilehash: 2bb6de32188abb11e0286c200383bdb1e8fb12f7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62549197"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Procédure : Déverrouiller Visual Studio
 
@@ -27,7 +30,7 @@ Vous pouvez évaluer Visual Studio gratuitement pendant 30 jours. La connexion �
 
 Pour déverrouiller Visual Studio avec un abonnement Visual Studio ou une organisation Azure DevOps associé à un compte Microsoft ou à un compte professionnel ou scolaire :
 
-1. Cliquez sur le bouton **Connexion** en haut à droite de l’IDE (ou accédez à **Fichier** > **Paramètres du compte** pour ouvrir la boîte de dialogue **Paramètres du compte**, puis cliquez sur le bouton **Connexion**).
+1. Choisissez le bouton **Connexion** en haut à droite de l’IDE (ou accédez à **Fichier** > **Paramètres du compte** pour ouvrir la boîte de dialogue **Paramètres du compte**, puis choisissez le bouton **Connexion**).
 
 1. Entrez les informations d'identification d'un compte Microsoft ou d'un compte professionnel ou scolaire. Visual Studio recherche un abonnement Visual Studio ou une organisation Azure DevOps associé à votre compte.
 
@@ -36,9 +39,9 @@ Pour déverrouiller Visual Studio avec un abonnement Visual Studio ou une organi
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>Pour déverrouiller Visual Studio avec une clé de produit
 
-1. Sélectionnez **Fichier** > **Paramètres du compte** pour ouvrir la boîte de dialogue **Paramètres du compte**, puis cliquez sur le lien **Licence avec une clé de produit**.
+1. Sélectionnez **Fichier** > **Paramètres du compte** pour ouvrir la boîte de dialogue **Paramètres du compte**, puis choisissez le lien **Licence avec une clé de produit**.
 
-Entrez la clé de produit dans la zone fournie.
+1. Entrez la clé de produit dans la zone fournie.
 
 > [!TIP]
 > Les préversions de Visual Studio n’ont pas de clés de produit. Vous devez vous connecter à l’IDE pour utiliser les préversions.
@@ -47,7 +50,7 @@ Entrez la clé de produit dans la zone fournie.
 
 ### <a name="update-stale-licenses"></a>Mettre à jour des licences obsolètes
 
- Vous avez peut-être vu le message suivant indiquant que votre licence est sur le point d’expirer dans Visual Studio « Votre licence est sur le point d'expirer et doit être mise à jour. »
+ Vous avez peut-être vu le message ci-après qui indique que votre licence est périmée dans Visual Studio. Il dit « Votre licence est périmée et doit être mise à jour ».
 
  ![Message d’expiration de licence Visual Studio](../ide/media/vs2017_stale-license.png)
 
@@ -56,12 +59,12 @@ Entrez la clé de produit dans la zone fournie.
 - Vous n’avez pas utilisé Visual Studio ou n’avez établi aucune connexion Internet pendant une longue période.
 - Vous vous êtes déconnecté de Visual Studio.
 
-Avant que le jeton de licence ne soit périmé, Visual Studio affiche un message d’avertissement vous invitant à entrer à nouveau vos informations d’identification.
+Avant que le jeton de licence ne soit périmé, Visual Studio affiche un message d’avertissement qui vous demande d’entrer une nouvelle fois vos informations d’identification.
 
-Si vous n’entrez pas à nouveau vos informations d’identification, l’expiration du jeton commence. De plus, la boîte de dialogue **Paramètres du compte** indique le nombre de jours restants avant l’expiration complète de votre jeton. Une fois votre jeton arrivé à expiration, vous devez entrer à nouveau les informations d'identification de ce compte ou obtenir une licence avec une autre méthode mentionnée ci-dessus pour pouvoir continuer à utiliser Visual Studio.
+Si vous n’entrez pas à nouveau vos informations d’identification, l’expiration du jeton commence. De plus, la boîte de dialogue **Paramètres du compte** indique le nombre de jours restants avant l’expiration complète de votre jeton. Une fois votre jeton expiré, vous devez réentrer les informations d’identification de votre compte avant de pouvoir continuer à utiliser Visual Studio.
 
 > [!Important]
-> Si vous utilisez Visual Studio pendant de longues périodes dans des environnements ayant un accès limité ou nul à Internet, vous devez utiliser une clé de produit pour déverrouiller Visual Studio afin d'éviter toute interruption.
+> Si vous utilisez Visual Studio pendant de longues périodes dans des environnements ayant un accès limité ou nul à Internet, vous devez utiliser une clé de produit pour déverrouiller Visual Studio afin d’éviter toute interruption.
 
 ### <a name="update-expired-licenses"></a>Mettre à jour des licences ayant expiré
 

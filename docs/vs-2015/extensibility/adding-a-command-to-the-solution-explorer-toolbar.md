@@ -12,12 +12,12 @@ ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f0a9faa2d9dd09156c2e1a37e776381270f480af
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 234f8ffbb3fdde48ca844386d5e5a716f74e8969
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948225"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054728"
 ---
 # <a name="adding-a-command-to-the-solution-explorer-toolbar"></a>Ajout d’une commande à la barre d’outils de l’Explorateur de solutions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ Cette procédure pas à pas montre comment ajouter un bouton à la **l’Explora
 ## <a name="adding-a-button-to-the-solution-explorer-toolbar"></a>Ajout d’un bouton à la barre d’outils de l’Explorateur de solutions  
  Cette section de la procédure pas à pas montre comment ajouter un bouton à la **l’Explorateur de solutions** barre d’outils. Lorsque le bouton est activé, le code dans la méthode de rappel est exécuté.  
   
-1.  Dans le fichier ToolbarButtonPackage.vsct, accédez à la `<Symbols>` section. Le `<GuidSymbol>` nœud contient le groupe de menus et la commande qui a été généré par le modèle de package. Ajouter un `<IDSymbol>` élément à ce nœud pour déclarer le groupe qui contiendra votre commande.  
+1. Dans le fichier ToolbarButtonPackage.vsct, accédez à la `<Symbols>` section. Le `<GuidSymbol>` nœud contient le groupe de menus et la commande qui a été généré par le modèle de package. Ajouter un `<IDSymbol>` élément à ce nœud pour déclarer le groupe qui contiendra votre commande.  
   
     ```xml  
     <IDSymbol name="SolutionToolbarGroup" value="0x0190"/>  
     ```  
   
-2.  Dans la `<Groups>` section, après l’entrée de groupe existant, définir le nouveau groupe que vous avez déclaré à l’étape précédente.  
+2. Dans la `<Groups>` section, après l’entrée de groupe existant, définir le nouveau groupe que vous avez déclaré à l’étape précédente.  
   
     ```xml  
     <Group guid="guidToolbarButtonPackageCmdSet"  
@@ -57,7 +57,7 @@ Cette procédure pas à pas montre comment ajouter un bouton à la **l’Explora
   
      Définissant le parent paire GUID : ID `guidSHLMainMenu` et `IDM_VS_TOOL_PROJWIN` place ce groupe sur le **l’Explorateur de solutions** barre d’outils et la définition d’une valeur de priorité élevée place après les autres groupes de commandes.  
   
-3.  Dans le `<Buttons>` section, modifier l’ID parent généré `<Button>` entrée afin de refléter le groupe que vous avez définie à l’étape précédente. Modifié `<Button>` élément doit ressembler à ceci :  
+3. Dans le `<Buttons>` section, modifier l’ID parent généré `<Button>` entrée afin de refléter le groupe que vous avez définie à l’étape précédente. Modifié `<Button>` élément doit ressembler à ceci :  
   
     ```xml  
     <Button guid="guidToolbarButtonPackageCmdSet" id="ToolbarButtonId" priority="0x0100" type="Button">  
@@ -69,11 +69,11 @@ Cette procédure pas à pas montre comment ajouter un bouton à la **l’Explora
     </Button>  
     ```  
   
-4.  Générez le projet et commencez le débogage. L’instance expérimentale s’affiche.  
+4. Générez le projet et commencez le débogage. L’instance expérimentale s’affiche.  
   
      Le **l’Explorateur de solutions** barre d’outils doit afficher le nouveau bouton de commande à droite des boutons existants. L’icône du bouton est barré.  
   
-5.  Cliquez sur le bouton Nouveau.  
+5. Cliquez sur le bouton Nouveau.  
   
      Une boîte de dialogue qui contient le message **ToolbarButtonPackage à l’intérieur de SolutionToolbar.ToolbarButton.MenuItemCallback()** doit être affiché.  
   

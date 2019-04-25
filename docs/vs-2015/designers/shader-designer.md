@@ -12,12 +12,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d39f9da4d421591f6a45b4e3dcdccf73d3e1798c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 67429131e87aa414957bf01847e03af44468d0ab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805459"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116811"
 ---
 # <a name="shader-designer"></a>Concepteur Shader
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,13 +41,13 @@ Ce document décrit l’utilisation du concepteur de nuanceur [!INCLUDE[vsprvs](
   
 #### <a name="to-add-a-dgsl-shader-to-your-project"></a>Pour ajouter un nuanceur DGSL à votre projet  
   
-1.  Dans l’**Explorateur de solutions**, ouvrez le menu contextuel du projet auquel vous souhaitez ajouter le nuanceur, puis choisissez **Ajouter**, **Nouvel élément**.  
+1. Dans l’**Explorateur de solutions**, ouvrez le menu contextuel du projet auquel vous souhaitez ajouter le nuanceur, puis choisissez **Ajouter**, **Nouvel élément**.  
   
-2.  Dans la boîte de dialogue **Ajouter un nouvel élément**, sous **Installé**, sélectionnez **Graphiques**, puis **Graphe de nuanceur visuel (.dgsl)**.  
+2. Dans la boîte de dialogue **Ajouter un nouvel élément**, sous **Installé**, sélectionnez **Graphiques**, puis **Graphe de nuanceur visuel (.dgsl)**.  
   
-3.  Spécifiez le **Nom** du fichier du nuanceur, ainsi que l’**Emplacement** où vous souhaitez le créer.  
+3. Spécifiez le **Nom** du fichier du nuanceur, ainsi que l’**Emplacement** où vous souhaitez le créer.  
   
-4.  Choisissez le bouton **Ajouter** .  
+4. Choisissez le bouton **Ajouter** .  
   
 ### <a name="the-default-shader"></a>Nuanceur par défaut  
  Chaque fois que vous créez un nuanceur DGSL, il s’agit au début d’un nuanceur minimal qui dispose simplement d’un nœud **Couleur du point**, qui est connecté au nœud **Couleur finale**. Même si ce nuanceur est complet et fonctionnel, il ne fait pas grand-chose. Par conséquent, la première étape de la création d’un nuanceur de travail consiste souvent à supprimer le nœud **Couleur du point** ou à le déconnecter du nœud **Couleur finale** pour faire de la place pour d’autres nœuds.  
@@ -81,7 +81,7 @@ Ce document décrit l’utilisation du concepteur de nuanceur [!INCLUDE[vsprvs](
 |**Aperçu avec le plan**|Si cette option est activée, un modèle de plan est utilisé pour afficher un aperçu du nuanceur. Une seule forme d’aperçu peut être activée à la fois.|  
 |**Boîte à outils**|Affiche ou masque la **Boîte à outils**.|  
 |**Propriétés**|Affiche ou masque la fenêtre **Propriétés**.|  
-|**Avancé**|Contient des commandes et des options avancées.<br /><br /> **Exporter** : permet l’exportation d’un nuanceur dans plusieurs formats.<br /><br /> **Exporter en tant que** : exporte le nuanceur soit en tant que code source HLSL ou en tant que bytecode de nuanceur compilé. Pour plus d’informations sur l’exportation des nuanceurs, consultez l’article [Comment : exporter un nuanceur](../designers/how-to-export-a-shader.md).<br /><br /> **Moteurs Graphics** : permet de sélectionner le renderer utilisé pour afficher l’aire de conception.<br /><br /> **Render with D3D11 (Afficher avec D3D11)**  : utilise Direct3D 11 pour afficher l’aire de conception du concepteur de nuanceur.<br /><br /> **Render with D3D11WARP (Afficher avec D3D11WARP)**  : utilise la plateforme WARP (Windows Advanced Rasterization Platform) D3D11 WARP pour afficher l’aire de conception du concepteur de nuanceur.<br /><br /> **Vue** : permet de sélectionner des informations supplémentaires sur le concepteur de nuanceur.<br /><br /> **Fréquence d’images** : si cette option est activée, affiche la fréquence d’images actuelle dans l’angle supérieur droit de l’aire de conception. La fréquence d'images est le nombre d'images dessinées par seconde.  Cette option est utile lorsque vous activez l’option **Mode de rendu en temps réel**.|  
+|**Avancé**|Contient des commandes et des options avancées.<br /><br /> **Exporter** : permet l’exportation d’un nuanceur dans plusieurs formats.<br /><br /> **Exporter en tant que** : exporte le nuanceur en tant que code source HLSL ou en tant que bytecode de nuanceur compilé. Pour plus d’informations sur la façon d’exporter des nuanceurs, consultez [Guide pratique pour Exporter un nuanceur](../designers/how-to-export-a-shader.md).<br /><br /> **Moteurs Graphics** : permet de sélectionner le renderer utilisé pour afficher l’aire de conception.<br /><br /> **Afficher avec D3D11** : utilise Direct3D 11 pour afficher l’aire de conception du concepteur de nuanceur.<br /><br /> **Afficher avec D3D11WARP** : utilise la plateforme WARP (Windows Advanced Rasterization Platform) D3D11 WARP pour afficher l’aire de conception du concepteur de nuanceur.<br /><br /> **Vue** : permet de sélectionner des informations supplémentaires sur le concepteur de nuanceur.<br /><br /> **Fréquence d’images** : si cette option est activée, affiche la fréquence d’images actuelle dans l’angle supérieur droit de l’aire de conception. La fréquence d'images est le nombre d'images dessinées par seconde.  Cette option est utile lorsque vous activez l’option **Mode de rendu en temps réel**.|  
   
 > [!TIP]
 >  Vous pouvez choisir le bouton **Avancé** pour réexécuter la dernière commande.  
@@ -91,19 +91,19 @@ Ce document décrit l’utilisation du concepteur de nuanceur [!INCLUDE[vsprvs](
   
 ##### <a name="to-perform-basic-operations-in-select-mode"></a>Pour effectuer des opérations de base en mode Sélection  
   
--   Voici comment :  
+- Voici comment :  
   
-    -   Pour ajouter un nœud au graphique, sélectionnez-le dans la **boîte à outils**, puis déplacez-le vers l’aire de conception.  
+    - Pour ajouter un nœud au graphique, sélectionnez-le dans la **boîte à outils**, puis déplacez-le vers l’aire de conception.  
   
-    -   Pour supprimer un nœud du graphique, sélectionnez-le, puis appuyez sur Suppr.  
+    - Pour supprimer un nœud du graphique, sélectionnez-le, puis appuyez sur Suppr.  
   
-    -   Pour repositionner un nœud, sélectionnez-le, puis déplacez-le vers un nouvel emplacement.  
+    - Pour repositionner un nœud, sélectionnez-le, puis déplacez-le vers un nouvel emplacement.  
   
-    -   Pour connecter deux nœuds, déplacez un terminal de sortie d’un nœud vers un terminal d’entrée de l’autre nœud. Seuls les terminaux de type compatible peuvent être connectés. Une ligne entre les terminaux indique la connexion.  
+    - Pour connecter deux nœuds, déplacez un terminal de sortie d’un nœud vers un terminal d’entrée de l’autre nœud. Seuls les terminaux de type compatible peuvent être connectés. Une ligne entre les terminaux indique la connexion.  
   
-    -   Pour supprimer une connexion, dans le menu contextuel de l’un des terminaux connectés, choisissez **Rompre les liaisons**.  
+    - Pour supprimer une connexion, dans le menu contextuel de l’un des terminaux connectés, choisissez **Rompre les liaisons**.  
   
-    -   Pour configurer les propriétés d’un nœud, sélectionnez le nœud, puis, dans la fenêtre **Propriétés**, spécifiez de nouvelles valeurs pour les propriétés.  
+    - Pour configurer les propriétés d’un nœud, sélectionnez le nœud, puis, dans la fenêtre **Propriétés**, spécifiez de nouvelles valeurs pour les propriétés.  
   
 ### <a name="previewing-shaders"></a>Aperçu des nuanceurs  
  Pour vous aider à comprendre comment un nuanceur apparaîtra dans votre application, vous pouvez configurer le mode de visualisation de l’effet. Pour estimer votre application, vous pouvez choisir l’une des formes à afficher, configurer des textures et d’autres paramètres de matériau, activer l’animation des effets à durée définie et examiner l’aperçu sous différents angles.  
@@ -113,9 +113,9 @@ Ce document décrit l’utilisation du concepteur de nuanceur [!INCLUDE[vsprvs](
   
 ###### <a name="to-choose-a-preview-shape"></a>Pour choisir une forme d’aperçu  
   
--   Dans la barre d’outils **Mode du concepteur de nuanceur**, choisissez la forme souhaitée.  
+- Dans la barre d’outils **Mode du concepteur de nuanceur**, choisissez la forme souhaitée.  
   
-####  <a name="WWS_MaterialParameters"></a> Textures et paramètres de matériau  
+#### <a name="WWS_MaterialParameters"></a> Textures et paramètres de matériau  
  De nombreux nuanceurs utilisent des textures et des propriétés de matériau pour produire une apparence unique pour chaque type d’objet de votre application. Pour voir à quoi votre nuanceur ressemblera dans votre application, vous pouvez définir les textures et les propriétés de matériau qui sont utilisées pour afficher l’aperçu pour qu’elles correspondent aux textures et aux paramètres que vous pouvez utiliser dans votre application.  
   
 ###### <a name="to-bind-a-different-texture-to-a-texture-register-or-to-modify-other-material-parameters"></a>Pour lier une autre texture à un registre de texture ou pour modifier d’autres paramètres de matériau  
@@ -126,35 +126,35 @@ Ce document décrit l’utilisation du concepteur de nuanceur [!INCLUDE[vsprvs](
   
    Voici les paramètres de nuanceur que vous pouvez modifier :  
   
-|Paramètre|Propriétés|  
+|Paramètre|Properties|  
 |---------------|----------------|  
-|**Texture 1** – **Texture 8**|**Accès** :                             **Public** pour que la propriété puisse être définie dans l’éditeur de modèle. **Privé** dans le cas contraire.<br /><br /> **Nom de fichier** : chemin d’accès complet au fichier de texture associé à ce registre de texture.|  
-|**Matériau ambiant**|**Accès** :                             **Public** pour que la propriété puisse être définie dans l’éditeur de modèle. **Privé** dans le cas contraire.<br /><br /> **Valeur** : couleur diffuse du pixel actuel qui est due à l’éclairage indirect, ou ambiant.|  
-|**Matériau diffus**|**Accès** : **Public** pour que la propriété puisse être définie dans l’éditeur de modèle. **Privé** dans le cas contraire.<br /><br /> **Valeur** : couleur qui décrit la manière dont le pixel actuel diffuse la lumière directe.|  
+|**Texture 1** – **Texture 8**|**Accès** :                             **Public** pour que la propriété puisse être définie dans l’éditeur de modèle. **Privé** dans le cas contraire.<br /><br /> **Nom de fichier** : chemin complet du fichier de texture associé à ce registre de textures.|  
+|**Matériau ambiant**|**Accès** :                             **Public** pour que la propriété puisse être définie dans l’éditeur de modèle. **Privé** dans le cas contraire.<br /><br /> **Valeur** : Couleur diffuse du pixel actuel en raison de l’éclairage indirect ou ambiant.|  
+|**Matériau diffus**|**Accès** : **Public** pour que la propriété puisse être définie dans l’éditeur de modèle. **Privé** dans le cas contraire.<br /><br /> **Valeur** :  Couleur qui décrit la manière dont le pixel actuel diffuse la lumière directe.|  
 |**Matériau émissif**|**Accès** :                              **Public** pour que la propriété puisse être définie dans l’éditeur de modèle. **Privé** dans le cas contraire.<br /><br /> **Valeur** : contribution de couleur du pixel actuel, basée sur l’auto-éclairage.|  
-|**Matériau spéculaire**|**Accès** :                              **Public** pour que la propriété puisse être définie dans l’éditeur de modèle. **Privé** dans le cas contraire.<br /><br /> **Valeur** : couleur qui décrit la manière dont le pixel actuel reflète la lumière directe.|  
-|**Puissance spéculaire du matériau**|**Accès** :                             **Public** pour que la propriété puisse être définie dans l’éditeur de modèle. **Privé** dans le cas contraire.<br /><br /> **Valeur** : exposant qui définit l’intensité des surbrillances spéculaires sur le pixel actuel.|  
+|**Matériau spéculaire**|**Accès** :                              **Public** pour que la propriété puisse être définie dans l’éditeur de modèle. **Privé** dans le cas contraire.<br /><br /> **Valeur** : Couleur qui décrit la manière dont le pixel actuel reflète la lumière directe.|  
+|**Puissance spéculaire du matériau**|**Accès** :                             **Public** pour que la propriété puisse être définie dans l’éditeur de modèle. **Privé** dans le cas contraire.<br /><br /> **Valeur** : Exposant qui définit l’intensité des surbrillances spéculaires sur le pixel actuel.|  
   
 #### <a name="time-based-effects"></a>Effets à durée définie  
  Certains nuanceurs sont pourvus d’un composant à durée définie qui anime l’effet. Pour afficher l’effet en action, l’aperçu doit être mis à jour plusieurs fois par seconde. Par défaut, l’aperçu est mis à jour uniquement lorsque le nuanceur est modifié. Pour changer ce comportement afin de pouvoir afficher les effets à durée définie, vous devez activer le rendu en temps réel.  
   
 ###### <a name="to-enable-real-time-rendering"></a>Pour activer le rendu en temps réel  
   
--   Dans la barre d’outils du concepteur de nuanceur, choisissez **Rendu en temps réel**.  
+- Dans la barre d’outils du concepteur de nuanceur, choisissez **Rendu en temps réel**.  
   
 #### <a name="examining-the-effect"></a>Examen de l’effet  
  De nombreux nuanceurs sont affectés par des variables telles que l’angle de visualisation ou la lumière directionnelle. Pour examiner la réaction de l’effet lorsque ces variables sont modifiées, vous pouvez faire pivoter la forme d’aperçu librement et observer le comportement du nuanceur.  
   
 ###### <a name="to-rotate-the-shape"></a>Pour faire pivoter la forme  
   
--   Appuyez de façon prolongée sur Alt, puis sélectionnez un point quelconque dans l’aire de conception et déplacez-le.  
+- Appuyez de façon prolongée sur Alt, puis sélectionnez un point quelconque dans l’aire de conception et déplacez-le.  
   
 ### <a name="exporting-shaders"></a>Exportation des nuanceurs  
  Avant de pouvoir utiliser un nuanceur dans votre application, vous devez l’exporter dans un format pris en charge par DirectX.  
   
  Vous pouvez exporter des nuanceurs en tant que code source HLSL ou bytecode de nuanceur compilé. Le code source HLSL est exporté dans un fichier texte pourvu de l’extension de nom de fichier .hlsl. Le bytecode de nuanceur peut être exporté dans un fichier binaire brut pourvu de l’extension de nom de fichier .cso ou dans un fichier d’en-tête (.h) en C++, qui encode le bytecode de nuanceur dans un tableau.  
   
- Pour plus d’informations sur l’exportation des nuanceurs, consultez l’article [Comment : exporter un nuanceur](../designers/how-to-export-a-shader.md).  
+ Pour plus d’informations sur la façon d’exporter des nuanceurs, consultez [Guide pratique pour Exporter un nuanceur](../designers/how-to-export-a-shader.md).  
   
 ## <a name="keyboard-shortcuts"></a>Raccourcis clavier  
   

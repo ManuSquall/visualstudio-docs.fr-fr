@@ -1,26 +1,21 @@
 ---
 title: Conception de Table de commande XML (. Fichiers VSCT) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, designing
 ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6c7a4e07c45c5d651af057e1eb33c23d37601cb3
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: 987536af051de4a66b3eccadb105fd98455ddf06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51762805"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085901"
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>Conception de Table de commande XML (. Fichiers VSCT)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,7 +27,7 @@ Un fichier de table (.vsct) de commande XML décrit la disposition et l’appare
   
  Lorsque vous créez un nouveau VSPackage s’affiche en exécutant la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] modèle de Package, le modèle génère un fichier .vsct avec les éléments nécessaires pour une commande de menu, une fenêtre outil ou un éditeur personnalisé, en fonction de vos sélections. Ce fichier .vsct peut ensuite être modifié pour répondre aux exigences d’un VSPackage spécifique. Pour obtenir des exemples montrant comment modifier un fichier .vsct, consultez les exemples de [extension des Menus et commandes](../../extensibility/extending-menus-and-commands.md).  
   
- Pour créer un fichier .vsct vierge, consultez [Comment : créer un. Fichier VSCT](../../extensibility/internals/how-to-create-a-dot-vsct-file.md). Une fois créé, ajoutez les éléments XML, les attributs et les valeurs dans le fichier pour décrire la disposition d’élément de commande. Pour un schéma XML détaillé, consultez le [VSCT XML Schema Reference](../../extensibility/vsct-xml-schema-reference.md).  
+ Pour créer un fichier .vsct vierge, consultez [Comment : Créer un. Fichier VSCT](../../extensibility/internals/how-to-create-a-dot-vsct-file.md). Une fois créé, ajoutez les éléments XML, les attributs et les valeurs dans le fichier pour décrire la disposition d’élément de commande. Pour un schéma XML détaillé, consultez le [VSCT XML Schema Reference](../../extensibility/vsct-xml-schema-reference.md).  
   
 ## <a name="differences-between-ctc-and-vsct-files"></a>Différences entre les fichiers .ctc et .vsct  
  La signification derrière les balises XML dans un fichier .vsct est les mêmes que celles figurant dans le présent déconseillée le format de fichier .ctc, leur implémentation est un peu différente.  
@@ -71,7 +66,7 @@ Un fichier de table (.vsct) de commande XML décrit la disposition et l’appare
   
   Le nouveau compilateur, vsct.exe, compile les fichiers .ctc et .vsct. L’ancien compilateur ctc.exe, toutefois, sera reconnaître ni compiler des fichiers .vsct.  
   
-  Vous pouvez utiliser le compilateur vsct.exe pour convertir un fichier .cto existant dans un fichier .vsct. Pour plus d’informations, consultez [Comment : créer un. Fichier VSCT d’un existant. Fichier de directeur technique](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
+  Vous pouvez utiliser le compilateur vsct.exe pour convertir un fichier .cto existant dans un fichier .vsct. Pour plus d’informations, consultez [Comment : Créer un. Fichier VSCT d’un existant. Fichier de directeur technique](../../misc/how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file.md).  
   
 ## <a name="the-vsct-file-elements"></a>Les éléments du fichier .vsct  
  La table de commande présente la hiérarchie et les éléments suivants :  
@@ -105,19 +100,19 @@ Un fichier de table (.vsct) de commande XML décrit la disposition et l’appare
 ## <a name="vsct-file-design-guidelines"></a>. Instructions de conception de fichier VSCT  
  Pour concevoir un fichier .vsct, suivez ces instructions.  
   
--   Commandes peuvent être placés uniquement dans les groupes, groupes peuvent être placés uniquement dans les menus et menus peuvent être placés uniquement dans les groupes. Uniquement les menus sont réellement affichées dans l’IDE, les groupes et les commandes ne sont pas.  
+- Commandes peuvent être placés uniquement dans les groupes, groupes peuvent être placés uniquement dans les menus et menus peuvent être placés uniquement dans les groupes. Uniquement les menus sont réellement affichées dans l’IDE, les groupes et les commandes ne sont pas.  
   
--   Sous-menus ne peut pas être directement attribués à un menu, mais doivent être attribués à un groupe, qui est assigné à son tour à un menu.  
+- Sous-menus ne peut pas être directement attribués à un menu, mais doivent être attribués à un groupe, qui est assigné à son tour à un menu.  
   
--   Commandes, sous-menus et groupes peuvent être affectés à un groupe de parentage ou menu à l’aide du champ parent de leur définition directive.  
+- Commandes, sous-menus et groupes peuvent être affectés à un groupe de parentage ou menu à l’aide du champ parent de leur définition directive.  
   
--   Organisation d’une table de commande uniquement via les champs dans les directives parent a une limitation importante. Les directives qui définissent des objets peuvent prendre l’argument qu’un seul parent.  
+- Organisation d’une table de commande uniquement via les champs dans les directives parent a une limitation importante. Les directives qui définissent des objets peuvent prendre l’argument qu’un seul parent.  
   
--   Réutilisation des commandes, des groupes ou des sous-menus requiert l’utilisation d’une directive de nouveau pour créer une nouvelle instance de l’objet avec son propre `GUID:ID` paire.  
+- Réutilisation des commandes, des groupes ou des sous-menus requiert l’utilisation d’une directive de nouveau pour créer une nouvelle instance de l’objet avec son propre `GUID:ID` paire.  
   
--   Chaque `GUID:ID` paire doit être unique. Réutilisation d’une commande, par exemple, placée dans un menu, une barre d’outils, ou dans un menu contextuel, est gérée par le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface.  
+- Chaque `GUID:ID` paire doit être unique. Réutilisation d’une commande, par exemple, placée dans un menu, une barre d’outils, ou dans un menu contextuel, est gérée par le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface.  
   
--   Commandes et sous-menus peuvent également être affectés à plusieurs groupes et les groupes peuvent être affectés à plusieurs menus en utilisant la [élément Commands](../../extensibility/commands-element.md).  
+- Commandes et sous-menus peuvent également être affectés à plusieurs groupes et les groupes peuvent être affectés à plusieurs menus en utilisant la [élément Commands](../../extensibility/commands-element.md).  
   
 ## <a name="vsct-file-notes"></a>. Notes du fichier VSCT  
  Si vous apportez des modifications à un fichier .vsct après avoir compilez-le et placez-le dans une DLL satellite native, vous devez exécuter **devenv.exe /setup /nosetupvstemplates**. Cette opération force les ressources de VSPackage spécifiées dans le Registre expérimental d’être relus et de la base de données interne qui décrit [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] à reconstruire.  
@@ -130,4 +125,3 @@ Un fichier de table (.vsct) de commande XML décrit la disposition et l’appare
   
 ## <a name="see-also"></a>Voir aussi  
  [Extension des menus et des commandes](../../extensibility/extending-menus-and-commands.md)
-

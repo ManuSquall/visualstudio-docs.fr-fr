@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4221489318e4cdd4268d5c5d00cbaa079838dcba
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6c159cd6fbd4f2fbfff414688e2ec865bcc8ddb4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940891"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109255"
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>Création de processeurs de directives de modèles de texte T4 personnalisés
 
@@ -40,9 +40,9 @@ Différents modèles de texte peuvent partager les fonctionnalités fournies par
 
 Quelques exemples de processeurs de directive personnalisés peut être :
 
--   Un processeur de directive pour retourner des données à partir d’une base de données qui accepte un nom d’utilisateur et le mot de passe en tant que paramètres.
+- Un processeur de directive pour retourner des données à partir d’une base de données qui accepte un nom d’utilisateur et le mot de passe en tant que paramètres.
 
--   Un processeur de directive pour ouvrir et lire un fichier qui accepte le nom du fichier en tant que paramètre.
+- Un processeur de directive pour ouvrir et lire un fichier qui accepte le nom du fichier en tant que paramètre.
 
 ### <a name="principal-parts-of-a-custom-directive-processor"></a>Parties principales d’un processeur de directive personnalisé
 
@@ -50,19 +50,19 @@ Pour développer un processeur de directive, vous devez créer une classe qui h�
 
 Le plus important `DirectiveProcessor` méthodes que vous devez implémenter sont les suivantes.
 
--   `bool IsDirectiveSupported(string directiveName)` -Retour `true` si votre processeur de directive peut traiter la directive nommée.
+- `bool IsDirectiveSupported(string directiveName)` -Retour `true` si votre processeur de directive peut traiter la directive nommée.
 
--   `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` -Le moteur de modèle appelle cette méthode pour chaque occurrence d’une directive dans le modèle. Votre processeur doit enregistrer les résultats.
+- `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` -Le moteur de modèle appelle cette méthode pour chaque occurrence d’une directive dans le modèle. Votre processeur doit enregistrer les résultats.
 
 Une fois tous les appels à ProcessDirective() le moteur de création de modèles appelle ces méthodes :
 
--   `string[] GetReferencesForProcessingRun()` : Retourne les noms des assemblys requis par le code de modèle.
+- `string[] GetReferencesForProcessingRun()` : Retourne les noms des assemblys requis par le code de modèle.
 
--   `string[] GetImportsForProcessingRun()` : Retourne les espaces de noms peut être utilisé dans le code du modèle.
+- `string[] GetImportsForProcessingRun()` : Retourne les espaces de noms peut être utilisé dans le code du modèle.
 
--   `string GetClassCodeForProcessingRun()` -Retourne le code des méthodes, propriétés et d’autres déclarations que le code du modèle peut utiliser. Pour ce faire, le plus simple consiste à générer une chaîne contenant le code c# ou Visual Basic. Pour rendre votre processeur de directive puisse être appelé à partir d’un modèle qui utilise n’importe quel langage CLR, vous pouvez construire les instructions sous forme d’arborescence CodeDom et puis retourner le résultat de la sérialisation de l’arborescence dans la langue utilisée par le modèle.
+- `string GetClassCodeForProcessingRun()` -Retourne le code des méthodes, propriétés et d’autres déclarations que le code du modèle peut utiliser. Pour ce faire, le plus simple consiste à générer une chaîne contenant le code c# ou Visual Basic. Pour rendre votre processeur de directive puisse être appelé à partir d’un modèle qui utilise n’importe quel langage CLR, vous pouvez construire les instructions sous forme d’arborescence CodeDom et puis retourner le résultat de la sérialisation de l’arborescence dans la langue utilisée par le modèle.
 
--   Pour plus d’informations, consultez [Procédure pas à pas : Création d’un processeur de Directive personnalisé](../modeling/walkthrough-creating-a-custom-directive-processor.md).
+- Pour plus d’informations, consultez [Procédure pas à pas : Création d’un processeur de Directive personnalisé](../modeling/walkthrough-creating-a-custom-directive-processor.md).
 
 ## <a name="see-also"></a>Voir aussi
 

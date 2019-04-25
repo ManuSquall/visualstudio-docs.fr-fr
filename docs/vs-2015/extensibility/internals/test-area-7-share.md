@@ -1,29 +1,24 @@
 ---
-title: 'Zone de test 7 : Partager | Microsoft Docs'
-ms.custom: ''
+title: 'Zone de test 7 : Share | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], sharing items
 - source control plug-ins, sharing items
 ms.assetid: 6ec4780a-bda4-4327-bb3e-c6c9e7eabf35
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: e9389d03da7c4e4b763e979a721a22639ecb9fbe
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: a788eb73c65a84731dd5505af54f4dd78439d456
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51796920"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111634"
 ---
-# <a name="test-area-7-share"></a>Zone de test 7 : Partager
+# <a name="test-area-7-share"></a>Zone de test 7 : Partager
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Cette zone de test couvre le partage des objets entre des emplacements via la **partage** commande.  
@@ -32,26 +27,26 @@ Cette zone de test couvre le partage des objets entre des emplacements via la **
   
  Dans des dossiers de partage fonctionne si vous sélectionnez un dossier au moins un fichier sous contrôle de code source qu’il contient. La commande de partage est désactivée dans les conditions suivantes :  
   
--   Si le dossier sélectionné est un dossier vide.  
+- Si le dossier sélectionné est un dossier vide.  
   
--   S’il existe un dossier réel, mais il ne contient aucun fichier de contrôle de source.  
+- S’il existe un dossier réel, mais il ne contient aucun fichier de contrôle de source.  
   
--   S’il existe un dossier virtuel, que les fichiers sous contrôle de code source sont qu’il contient ou non.  
+- S’il existe un dossier virtuel, que les fichiers sous contrôle de code source sont qu’il contient ou non.  
   
--   En l’absence d’un projet Web de Site distant.  
+- En l’absence d’un projet Web de Site distant.  
   
 ## <a name="command-menu-access"></a>Accès au Menu de commande  
  Ce qui suit [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] menu chemins d’environnement de développement intégré sont utilisés dans les cas de test.  
   
- Partage : **fichier**->**contrôle de code Source**->**partage**.  
+ Partager : **Fichier**->**contrôle de code Source**->**partage**.  
   
 ## <a name="expected-behavior"></a>Comportement attendu  
   
--   Fichier partagé s’affiche dans un emplacement partagé.  
+- Fichier partagé s’affiche dans un emplacement partagé.  
   
--   Affichage de la source contrôle version store historique affiche que les fichiers sont partagés.  
+- Affichage de la source contrôle version store historique affiche que les fichiers sont partagés.  
   
--   Modification d’un fichier partagé modifie les emplacements du fichier.  
+- Modification d’un fichier partagé modifie les emplacements du fichier.  
   
 ## <a name="test-cases"></a>Cas de test  
  Voici les cas de test spécifiques pour la zone de test de partage.  
@@ -67,4 +62,3 @@ Cette zone de test couvre le partage des objets entre des emplacements via la **
   
 ## <a name="see-also"></a>Voir aussi  
  [Guide de test pour les plug-ins de contrôle de code source](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-

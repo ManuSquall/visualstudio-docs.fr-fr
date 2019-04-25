@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3b6a23609f096f28d63afc952c069ef6e280f132
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f3b573842aee5f00f161213cf3e01dfcc4c8ba93
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640264"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066647"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Procédure pas à pas : Liaison de données simple dans un projet au niveau du document
   Cette procédure pas à pas illustre les principes fondamentaux de la liaison de données dans un projet au niveau du document. Un seul champ de données dans une base de données SQL Server est lié à une plage nommée dans Microsoft Office Excel. La procédure pas à pas montre également comment ajouter des contrôles qui vous permettent de faire défiler tous les enregistrements dans la table.
@@ -41,13 +41,13 @@ ms.locfileid: "56640264"
 ## <a name="prerequisites"></a>Prérequis
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] ou [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] ou [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
--   Accès à un serveur avec la base de données Northwind SQL Server.
+- Accès à un serveur avec la base de données Northwind SQL Server.
 
--   Autorisations pour lire et écrire dans la base de données SQL Server.
+- Autorisations pour lire et écrire dans la base de données SQL Server.
 
 ## <a name="create-a-new-project"></a>Créer un nouveau projet
  Dans cette étape, vous allez créer un projet de classeur Excel.
@@ -88,21 +88,21 @@ ms.locfileid: "56640264"
 
 ### <a name="to-add-two-named-ranges"></a>Pour ajouter deux plages nommées
 
-1.  Vérifiez que le *Binding.xlsx de données Simple Mes* classeur est ouvert dans le concepteur Visual Studio, avec **Sheet1** affiché.
+1. Vérifiez que le *Binding.xlsx de données Simple Mes* classeur est ouvert dans le concepteur Visual Studio, avec **Sheet1** affiché.
 
-2.  Ouvrez le **des Sources de données** fenêtre et développez le **clients** nœud.
+2. Ouvrez le **des Sources de données** fenêtre et développez le **clients** nœud.
 
-3.  Sélectionnez le **CompanyName** colonne, puis cliquez sur la flèche déroulante qui s’affiche.
+3. Sélectionnez le **CompanyName** colonne, puis cliquez sur la flèche déroulante qui s’affiche.
 
-4.  Sélectionnez **NamedRange** dans la liste déroulante, puis faites glisser le **CompanyName** colonne à la cellule **A1**.
+4. Sélectionnez **NamedRange** dans la liste déroulante, puis faites glisser le **CompanyName** colonne à la cellule **A1**.
 
      Un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle nommé `companyNameNamedRange` est créé dans la cellule **A1**. En même temps, un <xref:System.Windows.Forms.BindingSource> nommé `customersBindingSource`, un adaptateur de table et un <xref:System.Data.DataSet> instance sont ajoutés au projet. Le contrôle est lié à la <xref:System.Windows.Forms.BindingSource>, qui est à son tour lié à la <xref:System.Data.DataSet> instance.
 
-5.  Sélectionnez le **CustomerID** colonne dans le **des Sources de données** fenêtre, puis cliquez sur la flèche déroulante qui s’affiche.
+5. Sélectionnez le **CustomerID** colonne dans le **des Sources de données** fenêtre, puis cliquez sur la flèche déroulante qui s’affiche.
 
-6.  Cliquez sur **NamedRange** dans la liste déroulante, puis faites glisser le **CustomerID** colonne à la cellule **B1**.
+6. Cliquez sur **NamedRange** dans la liste déroulante, puis faites glisser le **CustomerID** colonne à la cellule **B1**.
 
-7.  Un autre <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle nommé `customerIDNamedRange` est créé dans la cellule **B1**et liée à la <xref:System.Windows.Forms.BindingSource>.
+7. Un autre <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle nommé `customerIDNamedRange` est créé dans la cellule **B1**et liée à la <xref:System.Windows.Forms.BindingSource>.
 
 ### <a name="to-add-four-buttons"></a>Pour ajouter quatre boutons
 
@@ -143,28 +143,28 @@ ms.locfileid: "56640264"
 
 ### <a name="to-move-to-the-first-record"></a>Pour déplacer vers le premier enregistrement
 
-1.  Ajouter un gestionnaire d’événements pour le <xref:System.Windows.Forms.Control.Click> événements de la `Button1` bouton et ajoutez le code suivant pour déplacer vers le premier enregistrement :
+1. Ajouter un gestionnaire d’événements pour le <xref:System.Windows.Forms.Control.Click> événements de la `Button1` bouton et ajoutez le code suivant pour déplacer vers le premier enregistrement :
 
      [!code-csharp[Trin_VstcoreDataExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#4)]
      [!code-vb[Trin_VstcoreDataExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#4)]
 
 ### <a name="to-move-to-the-previous-record"></a>Pour déplacer vers l’enregistrement précédent
 
-1.  Ajouter un gestionnaire d’événements pour le <xref:System.Windows.Forms.Control.Click> événements de la `Button2` bouton et ajoutez le code suivant afin de revenir à la position précédente :
+1. Ajouter un gestionnaire d’événements pour le <xref:System.Windows.Forms.Control.Click> événements de la `Button2` bouton et ajoutez le code suivant afin de revenir à la position précédente :
 
      [!code-csharp[Trin_VstcoreDataExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#5)]
      [!code-vb[Trin_VstcoreDataExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#5)]
 
 ### <a name="to-move-to-the-next-record"></a>Pour déplacer vers l’enregistrement suivant
 
-1.  Ajouter un gestionnaire d’événements pour le <xref:System.Windows.Forms.Control.Click> événements de la `Button3` bouton et ajoutez le code suivant pour passer à la position :
+1. Ajouter un gestionnaire d’événements pour le <xref:System.Windows.Forms.Control.Click> événements de la `Button3` bouton et ajoutez le code suivant pour passer à la position :
 
      [!code-csharp[Trin_VstcoreDataExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#6)]
      [!code-vb[Trin_VstcoreDataExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#6)]
 
 ### <a name="to-move-to-the-last-record"></a>Pour accéder au dernier enregistrement
 
-1.  Ajouter un gestionnaire d’événements pour le <xref:System.Windows.Forms.Control.Click> événements de la `Button4` bouton et ajoutez le code suivant pour accéder au dernier enregistrement :
+1. Ajouter un gestionnaire d’événements pour le <xref:System.Windows.Forms.Control.Click> événements de la `Button4` bouton et ajoutez le code suivant pour accéder au dernier enregistrement :
 
      [!code-csharp[Trin_VstcoreDataExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#7)]
      [!code-vb[Trin_VstcoreDataExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#7)]
@@ -174,22 +174,22 @@ ms.locfileid: "56640264"
 
 ### <a name="to-test-your-workbook"></a>Pour tester votre classeur
 
-1.  Appuyez sur **F5** pour exécuter votre projet.
+1. Appuyez sur **F5** pour exécuter votre projet.
 
-2.  Vérifiez que le premier enregistrement apparaît dans les cellules **A1** et **B1**.
+2. Vérifiez que le premier enregistrement apparaît dans les cellules **A1** et **B1**.
 
-3.  Cliquez sur le **>** (`Button3`) bouton et vérifiez que l’enregistrement suivant apparaît dans la cellule **A1** et **B1**.
+3. Cliquez sur le **>** (`Button3`) bouton et vérifiez que l’enregistrement suivant apparaît dans la cellule **A1** et **B1**.
 
-4.  Cliquez sur les autres boutons de défilement pour confirmer que l’enregistrement est modifié comme prévu.
+4. Cliquez sur les autres boutons de défilement pour confirmer que l’enregistrement est modifié comme prévu.
 
 ## <a name="next-steps"></a>Étapes suivantes
  Cette procédure pas à pas montre les principes fondamentaux de la liaison d’une plage nommée à un champ dans une base de données. Voici quelques tâches susceptibles de venir après :
 
--   Mettre en cache les données afin qu’il peut être utilisé en mode hors connexion. Pour plus d'informations, voir [Procédure : Mettre en cache les données pour une utilisation hors connexion ou sur un serveur](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).
+- Mettre en cache les données afin qu’il peut être utilisé en mode hors connexion. Pour plus d'informations, voir [Procédure : Mettre en cache les données pour une utilisation hors connexion ou sur un serveur](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).
 
--   Lier des cellules à plusieurs colonnes dans une table, au lieu d’à un seul champ. Pour plus d’informations, consultez [Procédure pas à pas : Liaison de données complexe dans un projet au niveau du document](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md).
+- Lier des cellules à plusieurs colonnes dans une table, au lieu d’à un seul champ. Pour plus d’informations, consultez [Procédure pas à pas : Liaison de données complexe dans un projet au niveau du document](../vsto/walkthrough-complex-data-binding-in-a-document-level-project.md).
 
--   Utilisez un <xref:System.Windows.Forms.BindingNavigator> contrôle pour faire défiler les enregistrements. Pour plus d'informations, voir [Procédure : Naviguer parmi les données avec le contrôle Windows Forms BindingNavigator](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).
+- Utilisez un <xref:System.Windows.Forms.BindingNavigator> contrôle pour faire défiler les enregistrements. Pour plus d'informations, voir [Procédure : Naviguer parmi les données avec le contrôle Windows Forms BindingNavigator](/dotnet/framework/winforms/controls/bindingnavigator-control-overview-windows-forms).
 
 ## <a name="see-also"></a>Voir aussi
 - [Lier des données aux contrôles dans les solutions Office](../vsto/binding-data-to-controls-in-office-solutions.md)

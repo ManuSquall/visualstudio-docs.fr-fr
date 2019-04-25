@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29495fb297670b6b297e17d40bfb2bcdc0025862
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 271d9625ba5c41599af6c92504b3f17a166a2ee7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929321"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061774"
 ---
 # <a name="the-text-template-transformation-process"></a>Processus de transformation du modèle de texte
 Le processus de transformation de modèle de texte prend un fichier de modèle de texte comme entrée et génère un nouveau fichier texte comme sortie. Par exemple, vous pouvez utiliser des modèles de texte pour générer du code Visual Basic ou c#, ou vous pouvez générer un rapport HTML.
@@ -37,19 +37,19 @@ Le processus de transformation de modèle de texte prend un fichier de modèle d
 ## <a name="the-host"></a>L’hôte
  L’hôte est responsable de tout ce qui est lié à l’environnement en dehors du processus de transformation, y compris les éléments suivants :
 
--   Localisation des fichiers texte et binaires demandés par le moteur ou un processeur de directive. L’hôte peut rechercher des répertoires et le global assembly cache pour localiser les assemblys. Il peut rechercher du code de processeur de directive personnalisé pour le moteur. L’hôte peut également rechercher et lire des fichiers texte et retourner leur contenu sous forme de chaînes.
+- Localisation des fichiers texte et binaires demandés par le moteur ou un processeur de directive. L’hôte peut rechercher des répertoires et le global assembly cache pour localiser les assemblys. Il peut rechercher du code de processeur de directive personnalisé pour le moteur. L’hôte peut également rechercher et lire des fichiers texte et retourner leur contenu sous forme de chaînes.
 
--   Fournissant des listes d’assemblys standards et d’espaces de noms utilisés par le moteur pour créer la classe de transformation générée.
+- Fournissant des listes d’assemblys standards et d’espaces de noms utilisés par le moteur pour créer la classe de transformation générée.
 
--   En fournissant le domaine d’application qui est utilisé lorsque le moteur compile et exécute la classe de transformation générée. Un domaine d’application distinct est utilisé afin de protéger l’application hôte des erreurs contenues dans le code du modèle.
+- En fournissant le domaine d’application qui est utilisé lorsque le moteur compile et exécute la classe de transformation générée. Un domaine d’application distinct est utilisé afin de protéger l’application hôte des erreurs contenues dans le code du modèle.
 
--   Écriture du fichier de sortie générée.
+- Écriture du fichier de sortie générée.
 
--   Définition de l’extension par défaut pour le fichier de sortie généré.
+- Définition de l’extension par défaut pour le fichier de sortie généré.
 
--   Gestion des erreurs de transformation de modèle de texte. Par exemple, l’hôte peut afficher les erreurs dans l’interface utilisateur ou les écrire dans un fichier. (Dans Visual Studio, les erreurs sont affichées dans la fenêtre de Message d’erreur).
+- Gestion des erreurs de transformation de modèle de texte. Par exemple, l’hôte peut afficher les erreurs dans l’interface utilisateur ou les écrire dans un fichier. (Dans Visual Studio, les erreurs sont affichées dans la fenêtre de Message d’erreur).
 
--   Si un utilisateur a appelé une directive sans fournir une valeur, en fournissant une valeur de paramètre obligatoire. Le processeur de directive peut spécifier le nom de la directive et le paramètre et demander à l’hôte pour fournir une valeur par défaut, le cas échéant.
+- Si un utilisateur a appelé une directive sans fournir une valeur, en fournissant une valeur de paramètre obligatoire. Le processeur de directive peut spécifier le nom de la directive et le paramètre et demander à l’hôte pour fournir une valeur par défaut, le cas échéant.
 
 ## <a name="directives-and-directive-processors"></a>Directives et des processeurs de Directive
  Une directive est une commande dans votre modèle de texte. Il fournit des paramètres pour le processus de génération. Directives définissent généralement la source et le type du modèle ou d’autres entrées et l’extension de nom de fichier du fichier de sortie.

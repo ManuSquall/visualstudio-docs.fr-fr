@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9abd8a08fc8e9dfbf23ad96e1087d4a8d5105ce9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cf90a2c03112cb2d3a935a9721f455ec976803c7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702692"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041741"
 ---
 # <a name="change-the-value-of-a-local"></a>Modifiez la valeur d’une variable locale
 > [!IMPORTANT]
@@ -30,13 +30,13 @@ ms.locfileid: "56702692"
 
 2. `IDebugProperty2::SetValueAsString` effectue les tâches suivantes :
 
-   1.  Évalue la chaîne pour produire une valeur.
+   1. Évalue la chaîne pour produire une valeur.
 
-   2.  Lie associé [IDebugField](../../extensibility/debugger/reference/idebugfield.md) objet pour obtenir un [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) objet.
+   2. Lie associé [IDebugField](../../extensibility/debugger/reference/idebugfield.md) objet pour obtenir un [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) objet.
 
-   3.  Convertit la valeur à une série d’octets.
+   3. Convertit la valeur à une série d’octets.
 
-   4.  Appels [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) à placer les octets de la valeur dans la mémoire pour le programme en cours de débogage pour y accéder.
+   4. Appels [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) à placer les octets de la valeur dans la mémoire pour le programme en cours de débogage pour y accéder.
 
 3. Visual Studio actualise le **variables locales** afficher (consultez [variables locales affichage](../../extensibility/debugger/displaying-locals.md) pour plus d’informations).
 

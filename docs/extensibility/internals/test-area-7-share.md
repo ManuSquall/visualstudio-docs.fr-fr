@@ -1,5 +1,5 @@
 ---
-title: 'Zone de test 7 : Share | Microsoft Docs'
+title: 'Zone de test 7 : Share | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,27 +11,27 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ca75f06a72cf3da9dcbbd97ad6559772928152d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4c0792871835d8adea52c1e4adfdfd2c38f7d617
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596852"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107786"
 ---
-# <a name="test-area-7-share"></a>Zone de test 7 : Partager
+# <a name="test-area-7-share"></a>Zone de test 7 : Partager
 Cette zone de test couvre le partage des objets entre des emplacements via la **partage** commande.
 
  Une opération de hhare est la duplication apparente des fichiers et des éléments de dossier entre deux ou plusieurs emplacements au sein d’une hiérarchie de fichiers de contrôle de code source. Duplication ne survient pas réellement sur le serveur, mais l’utilisateur ne voit pas le même fichier dans deux ou plusieurs emplacements spécifiés. Chaque fois que les modifications sont apportées à l’un des éléments partagés, ces modifications apparaissent dans tous les autres emplacements partagés.
 
  Dans des dossiers de partage fonctionne si vous sélectionnez un dossier au moins un fichier sous contrôle de code source qu’il contient. La commande de partage est désactivée dans les conditions suivantes :
 
--   Si le dossier sélectionné est un dossier vide.
+- Si le dossier sélectionné est un dossier vide.
 
--   S’il existe un dossier réel, mais il ne contient aucun fichier de contrôle de source.
+- S’il existe un dossier réel, mais il ne contient aucun fichier de contrôle de source.
 
--   S’il existe un dossier virtuel, que les fichiers sous contrôle de code source sont qu’il contient ou non.
+- S’il existe un dossier virtuel, que les fichiers sous contrôle de code source sont qu’il contient ou non.
 
--   En l’absence d’un projet Web de Site distant.
+- En l’absence d’un projet Web de Site distant.
 
 ## <a name="command-menu-access"></a>Accès au Menu de commande
  Ce qui suit [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] menu chemins d’environnement de développement intégré sont utilisés dans les cas de test.
@@ -40,11 +40,11 @@ Cette zone de test couvre le partage des objets entre des emplacements via la **
 
 ## <a name="expected-behavior"></a>Comportement attendu
 
--   Fichier partagé s’affiche dans un emplacement partagé.
+- Fichier partagé s’affiche dans un emplacement partagé.
 
--   Affichage de la source contrôle version store historique affiche que les fichiers sont partagés.
+- Affichage de la source contrôle version store historique affiche que les fichiers sont partagés.
 
--   Modification d’un fichier partagé modifie les emplacements du fichier.
+- Modification d’un fichier partagé modifie les emplacements du fichier.
 
 ## <a name="test-cases"></a>Cas de test
  Voici les cas de test spécifiques pour la zone de test de partage.

@@ -49,7 +49,7 @@ Pour corriger une violation de cette règle, substituez <xref:System.Object.Equa
 - op_LessThan
 - op_GreaterThan
 
-En c#, les jetons qui sont utilisés pour représenter ces opérateurs sont les suivantes :
+En C#, les jetons qui sont utilisés pour représenter ces opérateurs sont les suivantes :
 
 ```csharp
 ==

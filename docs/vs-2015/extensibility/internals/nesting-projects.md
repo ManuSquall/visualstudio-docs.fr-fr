@@ -29,7 +29,7 @@ Les développeurs d’applications entreprise qui utilisent votre Package VS peu
   
  Imbrication de projet n’est pas partie intégrante du [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Vous devez écrire le code pour activer l’imbrication et un sous-projet imbrication dans des projets enfants. Le projet parent est un VSPackage spéciale, ou un type de projet, créé et inscrit avec son propre GUID qui inclut le code qui est requis pour implémenter l’imbrication de projet.  
   
- Vous trouverez un exemple de projets imbriqués dans l’exemple de projet Example.Nested c#.  
+ Vous trouverez un exemple de projets imbriqués dans l’exemple de projet Example.Nested C#.  
   
 ## <a name="nested-projects-example"></a>Exemple de projets imbriqués  
  ![Imbriqué des projets Solution](../../extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects")  

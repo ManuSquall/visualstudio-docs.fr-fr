@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9997601d906ac3be7c3eaf789a0d31e19dae613
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: c5d7d5fa0a53ead2f49f89df37943d734a1b73fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681710"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045340"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Spécifier les symboles (.pdb) et les fichiers sources dans le débogueur Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -76,11 +76,11 @@ Le débogueur recherche également les fichiers de symboles dans les emplacement
 
      Vous pouvez utiliser des serveurs de symboles sont les suivantes :
 
-     **Serveurs de symboles publics Microsoft**: pour déboguer un incident qui se produit lors d’un appel à une DLL système ou à une bibliothèque tierce, vous devez souvent système *.pdb* fichiers. Système *.pdb* fichiers contiennent les symboles pour les DLL de Windows, *.exe* fichiers et pilotes de périphérique. Vous pouvez obtenir les symboles pour les systèmes d’exploitation Windows, MDAC, IIS, ISA et le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] à partir de serveurs de symboles publics de Microsoft.
+     **Serveurs de symboles publics de Microsoft**: Pour déboguer un incident qui se produit lors d’un appel à une DLL système ou à une bibliothèque tierce, vous devez souvent système *.pdb* fichiers. Système *.pdb* fichiers contiennent les symboles pour les DLL de Windows, *.exe* fichiers et pilotes de périphérique. Vous pouvez obtenir les symboles pour les systèmes d’exploitation Windows, MDAC, IIS, ISA et le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] à partir de serveurs de symboles publics de Microsoft.
 
-     **Sur un réseau interne ou sur votre ordinateur local de serveurs de symboles**: votre équipe ou votre entreprise peut créer des serveurs de symboles de vos propres produits et en tant que cache de symboles provenant de sources externes. Vous pouvez avoir un serveur de symboles sur votre propre ordinateur.
+     **Serveurs de symboles sur un réseau interne ou sur votre ordinateur local** : Votre équipe ou société peut créer les serveurs de symboles de vos propres produits et comme cache des symboles à partir des sources externes. Vous pouvez avoir un serveur de symboles sur votre propre ordinateur.
 
-     **Serveurs de symboles tiers**: les fournisseurs tiers de bibliothèques et des applications de Windows permettent d’accéder au serveur de symboles sur internet.
+     **Serveurs de symboles tiers** : Les fournisseurs tiers des applications et des bibliothèques Windows peuvent donner accès au serveur de symboles sur Internet.
 
      > [!WARNING]
      > Si vous utilisez un serveur de symboles autres que les serveurs de symboles publics Microsoft, assurez-vous que le serveur de symboles et son chemin d’accès sont dignes de confiance. Étant donné que les fichiers de symboles peuvent contenir du code exécutable arbitraire, vous pouvez être exposées aux menaces de sécurité.
@@ -128,9 +128,9 @@ Sur le **outils** > **Options** > **débogage** > **symboles** page, vous pouvez
 
 4. Spécifiez les modules que vous souhaitez que le débogueur à charger à partir de la **emplacements du fichier (.pdb) de symboles** lorsqu’il démarre.
 
-   -  Sélectionnez **charger tous les modules, sauf exclus** (la valeur par défaut) pour charger tous les symboles pour tous les modules dans l’emplacement du fichier de symboles, à l’exception des modules que vous excluez spécifiquement. Pour exclure certains modules, sélectionnez **spécifier les modules exclus**, sélectionnez le **+** icône, tapez les noms des modules à exclure, puis sélectionnez **OK**.
+   - Sélectionnez **charger tous les modules, sauf exclus** (la valeur par défaut) pour charger tous les symboles pour tous les modules dans l’emplacement du fichier de symboles, à l’exception des modules que vous excluez spécifiquement. Pour exclure certains modules, sélectionnez **spécifier les modules exclus**, sélectionnez le **+** icône, tapez les noms des modules à exclure, puis sélectionnez **OK**.
 
-   -  Pour charger uniquement les modules que vous spécifiez à partir des emplacements de fichier de symboles, sélectionnez **charge les modules spécifiés uniquement**. Sélectionnez **spécifier les modules inclus**, sélectionnez le **+** icône, tapez les noms des modules à inclure, puis sélectionnez **OK**. Les fichiers de symboles pour les autres modules ne sont pas chargés.
+   - Pour charger uniquement les modules que vous spécifiez à partir des emplacements de fichier de symboles, sélectionnez **charge les modules spécifiés uniquement**. Sélectionnez **spécifier les modules inclus**, sélectionnez le **+** icône, tapez les noms des modules à inclure, puis sélectionnez **OK**. Les fichiers de symboles pour les autres modules ne sont pas chargés.
 
 5. Sélectionnez **OK**.
 
@@ -155,7 +155,7 @@ Vous pouvez sélectionner les options de symbole supplémentaires dans **outils*
   Vous pouvez limiter les commandes qui *srcsrv.dll* peuvent exécuter à partir de l’application *.pdb* fichier en répertoriant les commandes autorisées dans un fichier nommé *srcsrv.ini*. Place le *srcsrv.ini* fichier dans le même dossier que *srcsrv.dll* et *devenv.exe*.
 
   >[!IMPORTANT]
-  >Des commandes arbitraires peuvent être incorporées dans une application *.pdb* de fichiers, veillez à placer uniquement les commandes que vous souhaitez exécuter dans un *srcsrv.ini* fichier. Toute tentative d’exécution d’une commande ne se trouvant pas dans le fichier *srcsvr.ini* provoque l’apparition d’une boîte de dialogue de confirmation. Pour plus d'informations, consultez [Security Warning: Debugger Must Execute Untrusted Command](../debugger/security-warning-debugger-must-execute-untrusted-command.md).
+  >Des commandes arbitraires peuvent être incorporées dans une application *.pdb* de fichiers, veillez à placer uniquement les commandes que vous souhaitez exécuter dans un *srcsrv.ini* fichier. Toute tentative d’exécution d’une commande ne se trouvant pas dans le fichier *srcsvr.ini* provoque l’apparition d’une boîte de dialogue de confirmation. Pour plus d’informations, consultez [avertissement de sécurité : le débogueur doit exécuter une commande non approuvée](../debugger/security-warning-debugger-must-execute-untrusted-command.md).
   >
   >Aucune validation n’est effectuée sur les paramètres de commande, soyez donc prudent avec les commandes de confiance. Par exemple, si vous avez mis *cmd.exe* dans votre *srcsrv.ini*, un utilisateur malveillant peut spécifier des paramètres sur *cmd.exe* qui rendrait dangereux.
 
@@ -199,7 +199,7 @@ Générer avec **/debug** pour créer un *.pdb* fichier. Vous pouvez générer d
 
 Définir le *web.config* fichier de votre application ASP.NET en mode débogage. En mode débogage, ASP.NET génère des symboles pour les fichiers générés dynamiquement et le débogueur peut être attaché à l'application ASP.NET. Visual Studio définit cela automatiquement lorsque vous commencez le débogage, si vous avez créé votre projet à partir du modèle de projets web.
 
-##  <a name="manage-symbols-while-debugging"></a>Gérer les symboles lors du débogage
+## <a name="manage-symbols-while-debugging"></a>Gérer les symboles lors du débogage
 
 Vous pouvez utiliser la **Modules**, **pile des appels**, **variables locales**, **automatique**, ou n’importe quel **espion** fenêtre à charger symboles ou modifier les options de symbole lors du débogage. Pour plus d’informations, consultez [vous familiariser avec la façon dont le débogueur s’attache à votre application](../debugger/debugger-tips-and-tricks.md#modules_window).
 
@@ -224,10 +224,10 @@ Pendant le débogage, le **Modules** fenêtre affiche les modules de code que le
 
 Il existe plusieurs façons pour le débogueur s’arrête dans du code qui n’a pas de fichiers sources ou de symboles disponibles :
 
--  Pas à pas détaillé de code.
--  Arrêter dans le code à partir d’un point d’arrêt ou une exception.
--  Basculer vers un autre thread.
--  Modifier le frame de pile en double-cliquant sur un frame dans la **pile des appels** fenêtre.
+- Pas à pas détaillé de code.
+- Arrêter dans le code à partir d’un point d’arrêt ou une exception.
+- Basculer vers un autre thread.
+- Modifier le frame de pile en double-cliquant sur un frame dans la **pile des appels** fenêtre.
 
 Dans ce cas, le débogueur affiche le **chargé des symboles non** ou **aucune Source a été chargée** pages pour vous aider à trouver et charger les symboles nécessaires ou la source.
 
@@ -235,11 +235,11 @@ Dans ce cas, le débogueur affiche le **chargé des symboles non** ou **aucune S
 
 **Pour utiliser la page de document aucun symbole chargé pour aider à trouver et charger des symboles manquants :**
 
--   Pour modifier le chemin de recherche, sélectionnez un chemin d’accès non sélectionné, ou **nouveau chemin d’accès** ou **nouveau chemin VSTS** et entrez ou sélectionnez un nouveau chemin d’accès. Sélectionnez **charger** pour effectuer une nouvelle recherche les chemins d’accès et de charger le fichier de symboles s’il est trouvé.
--   Pour remplacer les options de symbole et réessayer les chemins de recherche, sélectionnez **Parcourir et rechercher \<exécutable-name >**. Le fichier de symboles est chargé s’il est trouvé, ou **Explorateur de fichiers** s’ouvre pour vous pouvez de sélectionner manuellement le fichier de symboles.
--   Pour ouvrir le **Options** > **débogage** > **symboles** page, sélectionnez **modifier les paramètres de symbole**.
--   Pour afficher le code machine dans une nouvelle fenêtre une fois, sélectionnez **afficher le code machine**, ou sélectionnez **boîte de dialogue Options** pour définir l’option pour toujours afficher le code machine lorsque les fichiers sources ou de symboles sont introuvables.
--   Pour afficher les emplacements de recherche et le résultat, développez **les informations de chargement de symboles**.
+- Pour modifier le chemin de recherche, sélectionnez un chemin d’accès non sélectionné, ou **nouveau chemin d’accès** ou **nouveau chemin VSTS** et entrez ou sélectionnez un nouveau chemin d’accès. Sélectionnez **charger** pour effectuer une nouvelle recherche les chemins d’accès et de charger le fichier de symboles s’il est trouvé.
+- Pour remplacer les options de symbole et réessayer les chemins de recherche, sélectionnez **Parcourir et rechercher \<exécutable-name >**. Le fichier de symboles est chargé s’il est trouvé, ou **Explorateur de fichiers** s’ouvre pour vous pouvez de sélectionner manuellement le fichier de symboles.
+- Pour ouvrir le **Options** > **débogage** > **symboles** page, sélectionnez **modifier les paramètres de symbole**.
+- Pour afficher le code machine dans une nouvelle fenêtre une fois, sélectionnez **afficher le code machine**, ou sélectionnez **boîte de dialogue Options** pour définir l’option pour toujours afficher le code machine lorsque les fichiers sources ou de symboles sont introuvables.
+- Pour afficher les emplacements de recherche et le résultat, développez **les informations de chargement de symboles**.
 
 Si le débogueur recherche le *.pdb* fichier une fois que vous exécutez une des options et pouvez extraire le fichier source en utilisant les informations dans le *.pdb* fichier, il affiche la source. Sinon, elle affiche un **aucune Source a été chargée** page qui décrit le problème, avec des liens vers les actions susceptibles de résoudre le problème.
 
@@ -259,7 +259,6 @@ Vous pouvez spécifier les emplacements que le débogueur recherche les fichiers
 1. Sous **ne pas rechercher ces fichiers sources**, tapez les noms des fichiers sources à exclure de la recherche.
 
 1. Sélectionnez **OK** ou **appliquer**.
-
 
 ## <a name="see-also"></a>Voir aussi
 - [Comprendre les fichiers de symboles et les paramètres des symboles de Visual Studio](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/)

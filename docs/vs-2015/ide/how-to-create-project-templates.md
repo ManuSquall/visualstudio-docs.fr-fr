@@ -17,38 +17,38 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9a7a48039699c5bb35e07a21e5c5c3be8ae8585f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 918462bff3c2ac8dc57cb9c2c55a7d901707683c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785911"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051542"
 ---
-# <a name="how-to-create-project-templates"></a>Guide pratique pour créer des modèles de projet
+# <a name="how-to-create-project-templates"></a>Procédure : Créer des modèles de projet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette procédure vous permet de créer un modèle à l’aide de l’Assistant **Exportation de modèle**, qui met en package votre modèle dans un fichier .zip. Vous pouvez également créer des modèles au format de fichier VSIX pour améliorer le déploiement en utilisant l’extension de l’Assistant Exportation de modèle, ou avec les modèles inclus dans le [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)], ou vous pouvez créer manuellement des modèles.  
   
 ### <a name="to-create-a-custom-project-template-with-the-standard-export-template-wizard"></a>Pour créer un modèle de projet personnalisé avec l’Assistant Exportation de modèle standard  
   
-1.  Créez un projet.  
+1. Créez un projet.  
   
     > [!NOTE]
     >  Utilisez uniquement des caractères d’identificateur valides lorsque vous nommez un projet qui sera la source d’un modèle. Un modèle exporté à partir d’un projet nommé avec des caractères non valides peut provoquer des erreurs de compilation dans les futurs projets basés sur le modèle. Pour plus d’informations sur les caractères d’identificateur valides, consultez [Noms d’éléments déclarés](http://msdn.microsoft.com/library/09d8843b-c0dc-4afe-9dab-87c439a69e66).  
   
-2.  Modifiez le projet jusqu’à ce qu’il soit prêt à être exporté en tant que modèle.  
+2. Modifiez le projet jusqu’à ce qu’il soit prêt à être exporté en tant que modèle.  
   
-3.  Selon les besoins, modifiez les fichiers de code pour indiquer où le remplacement des paramètres doit avoir lieu. Pour plus d’informations sur le remplacement de paramètres, consultez [Comment : substituer des paramètres dans un modèle](../ide/how-to-substitute-parameters-in-a-template.md)  
+3. Selon les besoins, modifiez les fichiers de code pour indiquer où le remplacement des paramètres doit avoir lieu. Pour plus d’informations sur le remplacement de paramètres, consultez [Comment : Substituer des paramètres dans un modèle](../ide/how-to-substitute-parameters-in-a-template.md).  
   
-4.  Dans le menu **Fichier**, cliquez sur **Exporter le modèle**. L’Assistant **Exportation de modèle** s’ouvre.  
+4. Dans le menu **Fichier**, cliquez sur **Exporter le modèle**. L’Assistant **Exportation de modèle** s’ouvre.  
   
-5.  Cliquez sur **Modèle de projet**.  
+5. Cliquez sur **Modèle de projet**.  
   
-6.  Si vous avez plusieurs projets dans votre solution actuelle, sélectionnez les projets que vous souhaitez exporter vers un modèle.  
+6. Si vous avez plusieurs projets dans votre solution actuelle, sélectionnez les projets que vous souhaitez exporter vers un modèle.  
   
-7.  Cliquez sur **Suivant**.  
+7. Cliquez sur **Suivant**.  
   
-8.  Sélectionnez une icône et une image d’aperçu pour votre modèle. Ces éléments apparaissent dans la boîte de dialogue **Nouveau projet**.  
+8. Sélectionnez une icône et une image d’aperçu pour votre modèle. Ces éléments apparaissent dans la boîte de dialogue **Nouveau projet**.  
   
 9. Entrez le nom et la description du modèle.  
   

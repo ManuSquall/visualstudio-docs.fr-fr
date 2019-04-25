@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 90c762e07ac57da0b9abf41c8eb99cdcdbb57922
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: be0c11509dc72baf8ab34cf2ef850fec352a9877
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429000"
 ---
 # <a name="how-to-manage-editor-windows"></a>Procédure : Gérer les fenêtres de l’éditeur
 
@@ -33,9 +33,9 @@ Une instance d’une fenêtre de l’éditeur peut être fractionnée en deux a
 
 ### <a name="to-split-a-pane"></a>Pour fractionner un volet
 
-1.  Cliquez dans la fenêtre de l’éditeur pour la rendre active.
+1. Cliquez dans la fenêtre de l’éditeur pour la rendre active.
 
-2.  Dans le menu **Fenêtre**, sélectionnez **Fractionner**.
+2. Dans le menu **Fenêtre**, sélectionnez **Fractionner**.
 
      La zone d’édition se divise en deux volets séparés par une barre de fractionnement. Vous pouvez faire défiler le contenu de ces volets indépendamment pour afficher et modifier les différentes parties du document actif en même temps. Toutes les modifications effectuées dans un volet sont répercutées dans l’autre volet.
 
@@ -44,7 +44,7 @@ Une instance d’une fenêtre de l’éditeur peut être fractionnée en deux a
 
 ### <a name="to-return-to-single-pane-view"></a>Pour revenir à l’affichage simple
 
--   Dans le menu **Fenêtre**, sélectionnez **Supprimer le fractionnement**.
+- Dans le menu **Fenêtre**, sélectionnez **Supprimer le fractionnement**.
 
 ## <a name="create-new-windows"></a>Créer des fenêtres
 

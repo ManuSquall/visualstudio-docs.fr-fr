@@ -12,12 +12,12 @@ ms.assetid: 0047aa90-1ed4-40d3-8772-622b2719a4b1
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1a4ad8b128ea614ba60a19c3526d20af80aab937
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 377a7eceff134211371c17ac14903cba0fb8daa6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951609"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042138"
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>Prise en charge de plusieurs versions de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,15 +26,15 @@ Le terme *côte à côte* signifie que vous pouvez installer et gérer plusieurs
 
  Avant d’apporter votre VSPackage en mesure d’être chargés dans les versions côte à côte de Visual Studio, procédez comme suit :
 
--   Vous devez déterminer quelle stratégie de mise en œuvre côte à côte vous souhaitez suivre.
+- Vous devez déterminer quelle stratégie de mise en œuvre côte à côte vous souhaitez suivre.
 
      Pour plus d’informations, consultez [en choisissant entre partagées et des VSPackages avec version](../extensibility/choosing-between-shared-and-versioned-vspackages.md).
 
--   Vos formats de fichier solution et projet doivent tenir votre stratégie d’implémentation.
+- Vos formats de fichier solution et projet doivent tenir votre stratégie d’implémentation.
 
      Pour plus d’informations, consultez [la mise à niveau des projets personnalisés](../misc/upgrading-custom-projects.md) et [l’inscription des Extensions de nom de fichier pour les déploiements côte à côte](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md).
 
--   Votre programme d’installation doit gérer votre stratégie d’implémentation afin que les composants versionnés, ainsi que les composants partagés par toutes les versions, sont correctement installés et inscrits.
+- Votre programme d’installation doit gérer votre stratégie d’implémentation afin que les composants versionnés, ainsi que les composants partagés par toutes les versions, sont correctement installés et inscrits.
 
      Pour plus d’informations, consultez [installation les VSPackages avec Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md) et également [gestion des composants](../extensibility/internals/component-management.md).
 

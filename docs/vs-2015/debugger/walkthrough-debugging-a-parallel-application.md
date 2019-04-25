@@ -22,12 +22,12 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d499cbf20fe60540329b51fb5b0f8565022b199b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3e2140f15000b3ba270605af29ee36665c0137ee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949344"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092973"
 ---
 # <a name="walkthrough-debugging-a-parallel-application"></a>Procédure pas à pas : Débogage d’une Application parallèle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,15 +36,15 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
   
  Cette procédure pas à pas aborde les tâches suivantes :  
   
--   Comment afficher les piles d'appels de tous les threads dans une vue.  
+- Comment afficher les piles d'appels de tous les threads dans une vue.  
   
--   Comment afficher la liste des instances `System.Threading.Tasks.Task` créées dans votre application.  
+- Comment afficher la liste des instances `System.Threading.Tasks.Task` créées dans votre application.  
   
--   Comment afficher les véritables piles d’appels des tâches au lieu des threads.  
+- Comment afficher les véritables piles d’appels des tâches au lieu des threads.  
   
--   Comment accéder au code à partir des fenêtres **Tâches parallèles** et **Piles parallèles**.  
+- Comment accéder au code à partir des fenêtres **Tâches parallèles** et **Piles parallèles**.  
   
--   Comment les fenêtres gèrent l'échelle avec les fonctionnalités de regroupement, de zoom et autres.  
+- Comment les fenêtres gèrent l'échelle avec les fonctionnalités de regroupement, de zoom et autres.  
   
 ## <a name="prerequisites"></a>Prérequis  
  Cette procédure pas à pas suppose que **uniquement mon Code** est activé. Dans le menu **Outils**, cliquez sur **Options**, développez le nœud **Débogage**, sélectionnez **Général**, puis **Activer Uniquement mon code (Managé uniquement)**. Si vous ne définissez pas cette fonctionnalité, vous pouvez quand même effectuer cette procédure pas à pas, mais vos résultats peuvent différer de ceux des illustrations.  
@@ -88,15 +88,15 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
   
 #### <a name="to-view-the-call-stack-of-a-single-thread"></a>Pour afficher la pile des appels d'un thread unique  
   
-1.  Dans le menu **Déboguer**, pointez sur **Fenêtres**, puis cliquez sur **Threads**. Ancrez la fenêtre **Threads** en bas de Visual Studio.  
+1. Dans le menu **Déboguer**, pointez sur **Fenêtres**, puis cliquez sur **Threads**. Ancrez la fenêtre **Threads** en bas de Visual Studio.  
   
-2.  Dans le menu **Déboguer**, pointez sur **Fenêtres**, puis cliquez sur **Pile des appels**. Ancrez la fenêtre **Pile des appels** en bas de Visual Studio.  
+2. Dans le menu **Déboguer**, pointez sur **Fenêtres**, puis cliquez sur **Pile des appels**. Ancrez la fenêtre **Pile des appels** en bas de Visual Studio.  
   
-3.  Double-cliquez sur un thread dans la fenêtre **Threads** pour le rendre actuel. Les threads actuels comportent une flèche jaune. Quand vous modifiez le thread actuel, sa pile des appels est affichée dans la fenêtre **Pile des appels**.  
+3. Double-cliquez sur un thread dans la fenêtre **Threads** pour le rendre actuel. Les threads actuels comportent une flèche jaune. Quand vous modifiez le thread actuel, sa pile des appels est affichée dans la fenêtre **Pile des appels**.  
   
 #### <a name="to-examine-the-parallel-stacks-window"></a>Pour examiner la fenêtre Piles parallèles  
   
-1.  Dans le menu **Déboguer**, pointez sur **Fenêtres**, puis cliquez sur **Piles parallèles**. Assurez-vous que l’option **Threads** est sélectionnée dans la zone située dans l’angle supérieur gauche.  
+1. Dans le menu **Déboguer**, pointez sur **Fenêtres**, puis cliquez sur **Piles parallèles**. Assurez-vous que l’option **Threads** est sélectionnée dans la zone située dans l’angle supérieur gauche.  
   
      À l’aide de la **piles parallèles** , vous pouvez afficher plusieurs piles d’appels en même temps dans une vue. L’illustration suivante montre le **piles parallèles** fenêtre ci-dessus le **pile des appels** fenêtre.  
   
@@ -118,7 +118,7 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
   
 #### <a name="to-resume-execution-until-the-second-breakpoint"></a>Pour continuer l'exécution jusqu'au deuxième point d'arrêt  
   
-1.  Pour reprendre l’exécution jusqu’au deuxième point d’arrêt, dans le menu **Déboguer**, cliquez sur **Continuer**. L'illustration suivante présente l'arborescence des threads au deuxième point d'arrêt.  
+1. Pour reprendre l’exécution jusqu’au deuxième point d’arrêt, dans le menu **Déboguer**, cliquez sur **Continuer**. L'illustration suivante présente l'arborescence des threads au deuxième point d'arrêt.  
   
      ![Fenêtre Piles parallèles présentant de nombreuses branches](../debugger/media/pdb-walkthrough-2.png "PDB_Walkthrough_2")  
   
@@ -178,7 +178,7 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
   
 #### <a name="to-resume-execution-until-the-fourth-breakpoint"></a>Pour continuer l'exécution jusqu'au quatrième point d'arrêt  
   
-1.  Pour reprendre l’exécution jusqu’au quatrième point d’arrêt, dans le menu **Déboguer**, cliquez sur **Continuer**.  
+1. Pour reprendre l’exécution jusqu’au quatrième point d’arrêt, dans le menu **Déboguer**, cliquez sur **Continuer**.  
   
      Remarquez comment la vue défile automatiquement. Basculez des threads dans la fenêtre **Threads** ou basculez des frames de pile dans la fenêtre **Pile des appels**. Notez comment la vue défile toujours automatiquement vers le frame approprié. Désactivez l’option **Défilement automatique vers le frame de pile actif** et notez la différence.  
   
@@ -196,22 +196,22 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
   
      Vous pouvez également afficher les piles dans le sens haut/bas, plutôt que bas/haut. Pour cela, dans le menu **Outils**, cliquez sur **Options**, puis activez ou désactivez l’option sous le nœud **Débogage**.  
   
-2.  Avant de continuer, dans le menu **Déboguer**, cliquez sur **Arrêter le débogage** pour arrêter l’exécution.  
+2. Avant de continuer, dans le menu **Déboguer**, cliquez sur **Arrêter le débogage** pour arrêter l’exécution.  
   
 ## <a name="using-the-parallel-tasks-window-and-the-tasks-view-of-the-parallel-stacks-window"></a>Utilisation de la fenêtre Tâches parallèles et de la vue Tâches de la fenêtre Piles parallèles  
  Nous vous recommandons d'effectuer les procédures précédentes avant de continuer.  
   
 #### <a name="to-restart-the-application-until-the-first-breakpoint-is-hit"></a>Pour redémarrer l'application jusqu'à ce que le premier point d'arrêt soit atteint  
   
-1.  Dans le menu **Déboguer**, cliquez sur **Démarrer le débogage** et attendez que le premier point d’arrêt soit atteint.  
+1. Dans le menu **Déboguer**, cliquez sur **Démarrer le débogage** et attendez que le premier point d’arrêt soit atteint.  
   
-2.  Dans le menu **Déboguer**, pointez sur **Fenêtres**, puis cliquez sur **Threads**. Ancrez la fenêtre **Threads** en bas de Visual Studio.  
+2. Dans le menu **Déboguer**, pointez sur **Fenêtres**, puis cliquez sur **Threads**. Ancrez la fenêtre **Threads** en bas de Visual Studio.  
   
-3.  Dans le menu **Déboguer**, pointez sur **Fenêtres** et cliquez sur **Pile des appels**. Ancrez la fenêtre **Pile des appels** en bas de Visual Studio.  
+3. Dans le menu **Déboguer**, pointez sur **Fenêtres** et cliquez sur **Pile des appels**. Ancrez la fenêtre **Pile des appels** en bas de Visual Studio.  
   
-4.  Double-cliquez sur un thread dans la fenêtre **Threads** pour le rendre actuel. Les threads actuels comportent une flèche jaune. Lorsque vous modifiez le thread actuel, les autres fenêtres sont mises à jour. Nous allons maintenant examiner les tâches.  
+4. Double-cliquez sur un thread dans la fenêtre **Threads** pour le rendre actuel. Les threads actuels comportent une flèche jaune. Lorsque vous modifiez le thread actuel, les autres fenêtres sont mises à jour. Nous allons maintenant examiner les tâches.  
   
-5.  Sur le **déboguer** menu, pointez sur **Windows** puis cliquez sur **tâches parallèles**. L’illustration suivante montre le **tâches parallèles** fenêtre.  
+5. Sur le **déboguer** menu, pointez sur **Windows** puis cliquez sur **tâches parallèles**. L’illustration suivante montre le **tâches parallèles** fenêtre.  
   
      ![Quatre en cours d’exécution des tâches dans la fenêtre Tâches parallèles](../debugger/media/pdw-walkthrough-6.png "PDW_Walkthrough_6")  
   
@@ -225,7 +225,7 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
   
 #### <a name="to-resume-execution-until-the-second-breakpoint"></a>Pour continuer l'exécution jusqu'au deuxième point d'arrêt  
   
-1.  Pour reprendre l’exécution jusqu’au deuxième point d’arrêt, dans le menu **Déboguer**, cliquez sur **Continuer**.  
+1. Pour reprendre l’exécution jusqu’au deuxième point d’arrêt, dans le menu **Déboguer**, cliquez sur **Continuer**.  
   
      Auparavant, le **état** colonne indiquait toutes les tâches en cours d’exécution, mais maintenant deux tâches sont en attente. Les tâches peuvent être bloquées pour de nombreuses raisons. Dans la colonne **État**, pointez sur une tâche en attente pour savoir pourquoi elle est bloquée. Par exemple, dans l'illustration suivante, la tâche 3 attend la tâche 4.  
   
@@ -253,7 +253,7 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
   
 #### <a name="to-resume-execution-until-the-third-breakpoint"></a>Pour continuer l'exécution jusqu'au troisième point d'arrêt  
   
-1.  Pour reprendre l’exécution jusqu’au troisième point d’arrêt, dans le menu **Déboguer**, cliquez sur **Continuer**.  
+1. Pour reprendre l’exécution jusqu’au troisième point d’arrêt, dans le menu **Déboguer**, cliquez sur **Continuer**.  
   
      Une nouvelle tâche, la tâche 5, est en cours d’exécution et la tâche 4 est maintenant en attente. Vous pouvez voir pourquoi en pointant sur la tâche en attente dans la fenêtre **État**. Dans le **Parent** colonne, notez que la tâche 4 est le parent de la tâche 5.  
   
@@ -273,7 +273,7 @@ Cette procédure pas à pas indique comment utiliser les fenêtres **Tâches par
   
 #### <a name="to-resume-execution-until-the-fourth-breakpoint"></a>Pour continuer l'exécution jusqu'au quatrième point d'arrêt  
   
-1.  Pour reprendre l’exécution jusqu’au troisième point d’arrêt, dans le menu **Déboguer**, cliquez sur **Continuer**. Cliquez sur l’en-tête de colonne **ID** pour trier par ID. L'illustration suivante doit apparaître.  
+1. Pour reprendre l’exécution jusqu’au troisième point d’arrêt, dans le menu **Déboguer**, cliquez sur **Continuer**. Cliquez sur l’en-tête de colonne **ID** pour trier par ID. L'illustration suivante doit apparaître.  
   
      ![Dans la fenêtre Piles parallèles, les États de quatre tâches](../debugger/media/pdb-walkthrough-10.png "PDB_Walkthrough_10")  
   

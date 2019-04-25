@@ -1,7 +1,7 @@
 ---
 title: Écrire un visualiseur en Visual Basic | Microsoft Docs
 ms.custom: seodec18
-ms.date: 11/04/2016
+ms.date: 04/12/2019
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 24138337ab5adbbcabb9b0ab03cc411392565622
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: be3fb721fd058f127b4d361c769d4cdfdc1e4b92
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54988361"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050887"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Procédure pas à pas : Écriture d’un visualiseur en Visual Basic
 Cette procédure pas à pas explique comment écrire un visualiseur simple à l'aide de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Le visualiseur que permet de créer cette procédure pas à pas affiche le contenu d'une chaîne à l'aide d'un message Windows Forms. Ce visualiseur de chaîne simple est un exemple de base qui vous montre comment vous pouvez créer des visualiseurs pour d'autres types de données plus applicables à vos projets.
@@ -36,15 +36,16 @@ Le code du visualiseur doit être placé dans une DLL qui sera lue par le débog
 
 ### <a name="to-create-a-class-library-project"></a>Pour créer un projet Bibliothèque de classes
 
-1. Dans le menu **Fichier**, cliquez sur **Nouveau**, puis sur **Nouveau projet**.
+1. Créez un projet de bibliothèque de classes.
 
-2. Dans le **nouveau projet** boîte de dialogue, sélectionnez **Visual Basic**.
+    ::: moniker range=">=vs-2019"
+    Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Type **Ctrl + Q** pour ouvrir la zone de recherche, tapez **visual basic**, choisissez **modèles**, puis choisissez **créer une nouvelle bibliothèque de classes (.NET Standard)**. Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans le volet gauche de la **nouveau projet** boîte de dialogue **Visual Basic**, choisissez **.NET Standard**, puis, dans le volet central, choisissez **bibliothèque de classes (.NET Standard)**.
+    ::: moniker-end
 
-3. Sous **.NET Standard**, cliquez sur **bibliothèque de classes**.
-
-4. Dans la zone **Nom**, tapez un nom approprié pour la bibliothèque de classes, par exemple **MyFirstVisualizer**.
-
-5. Cliquez sur **OK**.
+2. Tapez un nom approprié pour la bibliothèque de classes, telles que `MyFirstVisualizer`, puis cliquez sur **créer** ou **OK**.
 
    Une fois que vous avez créé la bibliothèque de classes, vous devez ajouter une référence à Microsoft.VisualStudio.DebuggerVisualizers.DLL afin de pouvoir utiliser les classes qui y sont définies. Pourtant, en premier lieu, donnez un nom significatif à votre projet.
 
@@ -59,7 +60,9 @@ Le code du visualiseur doit être placé dans une DLL qui sera lue par le débog
 
 3. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur **My First Visualizer**, puis cliquez dans le menu contextuel sur **Ajouter une référence**.
 
-4. Dans la boîte de dialogue **Ajouter une référence**, sous l’onglet **.NET**, cliquez sur Microsoft.VisualStudio.DebuggerVisualizers.DLL.
+4. Dans le **ajouter une référence** boîte de dialogue le **Parcourir** onglet, sélectionnez **Parcourir** et recherchez le Microsoft.VisualStudio.DebuggerVisualizers.DLL.
+
+    Vous pouvez trouver la DLL dans  *\<répertoire d’installation Visual Studio > \Common7\IDE\PublicAssemblies* sous-répertoire du répertoire d’installation de Visual Studio.
 
 5. Cliquez sur **OK**.
 
@@ -103,13 +106,15 @@ Le code du visualiseur doit être placé dans une DLL qui sera lue par le débog
 
 ### <a name="to-add-systemwindowsforms"></a>Pour ajouter System.Windows.Forms
 
-1.  Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur **Références**, puis cliquez dans le menu contextuel sur **Ajouter une référence**.
+1. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur **Références**, puis cliquez dans le menu contextuel sur **Ajouter une référence**.
 
-2.  Dans la boîte de dialogue **Ajouter une référence**, sous l’onglet **.NET**, cliquez sur **System.Windows.Forms**.
+2. Dans le **ajouter une référence** boîte de dialogue le **Parcourir** onglet, sélectionnez **Parcourir**et recherchez le System.Windows.Forms.DLL.
 
-3.  Cliquez sur **OK**.
+    Vous pouvez trouver la DLL dans *C:\Windows\Microsoft.NET\Framework\v4.0.30319*.
 
-4.  Dans DebuggerSide.cs, ajoutez l'instruction suivante aux instructions `Imports` :
+3. Cliquez sur **OK**.
+
+4. Dans DebuggerSide.cs, ajoutez l'instruction suivante aux instructions `Imports` :
 
     ```vb
     Imports System.Windows.Forms
@@ -120,7 +125,7 @@ Le code du visualiseur doit être placé dans une DLL qui sera lue par le débog
 
 ### <a name="to-show-the-visualizer-output-in-a-dialog-box"></a>Pour afficher la sortie du visualiseur dans une boîte de dialogue
 
-1.  Dans la méthode `Show`, ajoutez la ligne de code suivante :
+1. Dans la méthode `Show`, ajoutez la ligne de code suivante :
 
     ```vb
     MessageBox.Show(objectProvider.GetObject().ToString())
@@ -128,20 +133,20 @@ Le code du visualiseur doit être placé dans une DLL qui sera lue par le débog
 
      Cet exemple de code n'inclut pas la gestion des erreurs. Vous devez inclure la gestion des erreurs dans un véritable visualiseur ou tout autre type d'application.
 
-2.  Dans le menu **Générer**, cliquez sur **Build MyFirstVisualizer**. Le projet doit se générer avec succès. Corrigez toutes les erreurs de build avant de continuer.
+2. Dans le menu **Générer**, cliquez sur **Build MyFirstVisualizer**. Le projet doit se générer avec succès. Corrigez toutes les erreurs de build avant de continuer.
 
 ## <a name="add-the-necessary-attribute"></a>Ajouter l'attribut nécessaire
  C'est la fin du code côté débogueur. Il existe toutefois une étape supplémentaire : ajouter l'attribut qui indique côté programme débogué la collection de classes qui compose le visualiseur.
 
 ### <a name="to-add-the-debugee-side-code"></a>Pour ajouter le code côté débogué
 
-1.  Ajoutez le code d'attribut suivant à DebuggerSide.vb, après les instructions `Imports`, mais avant `namespace MyFirstVisualizer` :
+1. Ajoutez le code d'attribut suivant à DebuggerSide.vb, après les instructions `Imports`, mais avant `namespace MyFirstVisualizer` :
 
     ```vb
     <Assembly: System.Diagnostics.DebuggerVisualizer(GetType(MyFirstVisualizer.DebuggerSide), GetType(VisualizerObjectSource), Target:=GetType(System.String), Description:="My First Visualizer")>
     ```
 
-2.  Dans le menu **Générer**, cliquez sur **Build MyFirstVisualizer**. Le projet doit se générer avec succès. Corrigez toutes les erreurs de build avant de continuer.
+2. Dans le menu **Générer**, cliquez sur **Build MyFirstVisualizer**. Le projet doit se générer avec succès. Corrigez toutes les erreurs de build avant de continuer.
 
 ## <a name="create-a-test-harness"></a>Créer un atelier de test
  À ce stade, votre premier visualiseur est terminé. Si vous avez suivi les étapes correctement, vous devez être en mesure de générer le visualiseur et de l'installer dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Toutefois, avant d'installer un visualiseur dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], vous devez le tester pour vous assurer qu'il s'exécute correctement. À présent, vous devez créer un atelier de test pour exécuter le visualiseur sans l'installer dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
@@ -163,29 +168,32 @@ Le code du visualiseur doit être placé dans une DLL qui sera lue par le débog
 
 ### <a name="to-add-a-console-application-project-to-the-solution"></a>Pour ajouter un projet d'application console à la solution
 
-1. Dans le menu **Fichier**, cliquez sur **Ajouter**, puis sur **Nouveau projet**.
+1. Dans l’Explorateur de solutions, cliquez sur la solution, choisissez **ajouter**, puis cliquez sur **nouveau projet**.
 
-2. Dans le **ajouter un nouveau projet** boîte de dialogue, sélectionnez **Visual Basic**, puis cliquez sur **Application Console**.
+    ::: moniker range=">=vs-2019"
+    Dans la zone de recherche, tapez **visual basic**, choisissez **modèles**, puis choisissez **créer une application Console (.NET Framework)**. Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, sous **Visual Basic**, choisissez **Windows Desktop** puis, dans le volet central, choisissez **Application console (.NET Framework)**.
+    ::: moniker-end
 
-3. Dans la zone **Nom**, tapez un nom significatif pour l’application console, par exemple **MyTestConsole**.
-
-4. Cliquez sur **OK**.
+2. Tapez un nom approprié pour la bibliothèque de classes, telles que `MyTestConsole`, puis cliquez sur **créer** ou **OK**.
 
    Puis, vous devez ajouter les références nécessaires afin que MyTestConsole puisse appeler MyFirstVisualizer.
 
 ### <a name="to-add-necessary-references-to-mytestconsole"></a>Pour ajouter les références nécessaires à MyTestConsole
 
-1.  Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur **MyTestConsole**, puis cliquez dans le menu contextuel sur **Ajouter une référence**.
+1. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur **MyTestConsole**, puis cliquez dans le menu contextuel sur **Ajouter une référence**.
 
-2.  Dans la boîte de dialogue **Ajouter une référence**, sous l’onglet **.NET**, cliquez sur Microsoft.VisualStudio.DebuggerVisualizers.
+2. Dans le **ajouter une référence** boîte de dialogue le **Parcourir** , cliquez sur Microsoft.VisualStudio.DebuggerVisualizers.
 
-3.  Cliquez sur **OK**.
+3. Cliquez sur **OK**.
 
-4.  Cliquez avec le bouton droit sur **MyTestConsole**, puis cliquez sur **Ajouter une référence**.
+4. Cliquez avec le bouton droit sur **MyTestConsole**, puis cliquez sur **Ajouter une référence**.
 
-5.  Dans la boîte de dialogue **Ajouter une référence**, cliquez sur l’onglet **Projets**, puis sélectionnez MyFirstVisualizer.
+5. Dans la boîte de dialogue **Ajouter une référence**, cliquez sur l’onglet **Projets**, puis sélectionnez MyFirstVisualizer.
 
-6.  Cliquez sur **OK**.
+6. Cliquez sur **OK**.
 
 ## <a name="finish-your-test-harness-and-test-your-visualizer"></a>Terminer votre atelier de test et tester votre visualiseur
  Puis, vous ajoutez le code pour terminer l'atelier de test.

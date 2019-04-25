@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 10b0f05e758f71830d5377c738ff9dee683022b8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3dcbfbe7b6e6ac5bacb9e8e36e43d780d3051903
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641622"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108969"
 ---
 # <a name="how-to-programmatically-move-items-in-outlook"></a>Procédure : Déplacer des éléments dans Outlook par programmation
   Cet exemple déplace les messages électroniques non lus à partir de la **boîte de réception** dans un dossier nommé **Test**. L’exemple déplace uniquement les messages qui contiennent le mot **Test** dans le `Subject` champ.
@@ -30,9 +30,9 @@ ms.locfileid: "56641622"
 ## <a name="compile-the-code"></a>Compiler le code
  Cet exemple nécessite :
 
--   Un dossier de courrier Outlook nommé **Test**.
+- Un dossier de courrier Outlook nommé **Test**.
 
--   Un message électronique entrant avec le mot **Test** dans le `Subject` champ.
+- Un message électronique entrant avec le mot **Test** dans le `Subject` champ.
 
 ## <a name="see-also"></a>Voir aussi
 - [Travailler avec des dossiers](../vsto/working-with-folders.md)

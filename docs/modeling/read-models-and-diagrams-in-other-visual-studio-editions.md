@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5363a4d2f07b22aa0a256ff40f039792a3d2a6c2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7d8366c0f87830a77f550dabbce2e8f875171418
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932194"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087376"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Lire des modèles et des diagrammes dans d'autres éditions de Visual Studio
 
@@ -34,16 +34,16 @@ Pour cette raison, si vous souhaitez lire un diagramme de dépendances, vous dev
 
 Pour lire un diagramme de dépendances, l’ensemble minimal de fichiers dont vous avez besoin est la suivante :
 
--   Les deux fichiers de diagrammes pour le diagramme que vous souhaitez lire, par exemple, **MyDiagram.classdiagram and MyDiagram.classdiagram.layout**.
+- Les deux fichiers de diagrammes pour le diagramme que vous souhaitez lire, par exemple, **MyDiagram.classdiagram and MyDiagram.classdiagram.layout**.
 
     > [!NOTE]
     > Pour les diagrammes de dépendance, vous devez également avoir le fichier nommé _Mondiagramme_**. layerdiagram.suppressions**.
 
--   Fichier de projet de modélisation (**MyModel.modelproj**)
+- Fichier de projet de modélisation (**MyModel.modelproj**)
 
--   Le fichier de modèle racine (**ModelDefinition\MyModel.uml**)
+- Le fichier de modèle racine (**ModelDefinition\MyModel.uml**)
 
--   Les fichiers de package pour tout package référencé dans le diagramme (**ModelDefinition\MyPackage.UML**)
+- Les fichiers de package pour tout package référencé dans le diagramme (**ModelDefinition\MyPackage.UML**)
 
 ## <a name="changes-that-you-can-make-in-read-only-mode"></a>Modifications que vous pouvez apporter en mode lecture seule
 
@@ -57,5 +57,5 @@ Vous pouvez enregistrer ces modifications. Si vous souhaitez rendre visibles à 
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Diagrammes de dépendance : Référence](../modeling/layer-diagrams-reference.md)
+- [Diagrammes de dépendance : Informations de référence](../modeling/layer-diagrams-reference.md)
 - [Créer des modèles pour votre application](../modeling/create-models-for-your-app.md)

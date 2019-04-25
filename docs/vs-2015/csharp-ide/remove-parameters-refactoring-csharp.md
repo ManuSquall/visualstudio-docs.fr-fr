@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8962dd95aa46ae75a2d214738e7713ae9da42534
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a28076b8c394818c248a5a18c7bc91d484f2c28a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950049"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045796"
 ---
 # <a name="remove-parameters-refactoring-c"></a>Supprimer les paramètres (Refactorisation C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58950049"
   
 ### <a name="to-remove-parameters"></a>Pour supprimer des paramètres  
   
-1.  Créez une application console nommée `RemoveParameters`, puis remplacez `Program` par le code suivant.  
+1. Créez une application console nommée `RemoveParameters`, puis remplacez `Program` par le code suivant.  
   
     ```csharp  
     class A  
@@ -55,19 +55,19 @@ ms.locfileid: "58950049"
     }  
     ```  
   
-2.  Placez le curseur sur la méthode `A`, soit dans la déclaration de méthode ou de l’appel de méthode.  
+2. Placez le curseur sur la méthode `A`, soit dans la déclaration de méthode ou de l’appel de méthode.  
   
-3.  À partir de la **refactoriser** menu, sélectionnez **supprimer les paramètres** pour afficher le **supprimer les paramètres** boîte de dialogue.  
+3. À partir de la **refactoriser** menu, sélectionnez **supprimer les paramètres** pour afficher le **supprimer les paramètres** boîte de dialogue.  
   
      Vous pouvez également taper le raccourci clavier CTRL + R, V pour afficher le **supprimer les paramètres** boîte de dialogue.  
   
      Vous pouvez également cliquer sur le curseur, pointer vers **refactoriser**, puis cliquez sur **supprimer les paramètres** pour afficher le **supprimer les paramètres** boîte de dialogue.  
   
-4.  À l’aide de la **paramètres** champ, positionnez le curseur sur `int i`, puis cliquez sur **supprimer**.  
+4. À l’aide de la **paramètres** champ, positionnez le curseur sur `int i`, puis cliquez sur **supprimer**.  
   
-5.  Cliquez sur **OK**.  
+5. Cliquez sur **OK**.  
   
-6.  Dans le **aperçu des modifications, supprimer les paramètres** boîte de dialogue, cliquez sur **appliquer**.  
+6. Dans le **aperçu des modifications, supprimer les paramètres** boîte de dialogue, cliquez sur **appliquer**.  
   
 ## <a name="remarks"></a>Notes  
  Vous pouvez supprimer les paramètres à partir d’une déclaration de méthode ou un appel de méthode. Positionnez le curseur dans le nom de déclaration ou de délégué de méthode et supprimer des paramètres d’appel.  

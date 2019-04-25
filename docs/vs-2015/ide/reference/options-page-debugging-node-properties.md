@@ -9,17 +9,16 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 31eff8876dd6ae1a83f74d419853846bf461e275
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a9ebedd1a764098d8e4a4866a9645d10aa999062
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782195"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670184"
 ---
 # <a name="options-page-debugging-node-properties"></a>Page Options, Débogage, propriétés de nœud
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Les tableaux suivants décrivent les pages (ou collections de propriétés) associées à la catégorie **Débogage**, `DTE.Properties("Debugging", <Property Page>)`, de la boîte de dialogue **Options**.  
   
 ## <a name="general"></a>Général  

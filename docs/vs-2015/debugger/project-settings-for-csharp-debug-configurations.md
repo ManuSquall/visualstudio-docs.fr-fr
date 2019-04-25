@@ -23,12 +23,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dd897e0d340bed3c82ab47a9e315915456d10480
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6fd484422cdae8cfc04cab169feefdd452f178a5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939052"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056677"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Paramètres de projet pour des configurations Debug C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Vous pouvez modifier les paramètres du projet pour une configuration debug c# d
 > [!WARNING]
 >  Cette rubrique ne s'applique pas aux applications Windows Store. Consultez [démarrer une session de débogage (VB, c#, C++ et XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
   
-##  <a name="BKMK_Debug_tab"></a> Onglet déboguer  
+## <a name="BKMK_Debug_tab"></a> Onglet déboguer  
   
 |**Paramètre**|**Description**|  
 |-----------------|---------------------|  
@@ -50,7 +50,7 @@ Vous pouvez modifier les paramètres du projet pour une configuration debug c# d
 |**Activer le débogage de code non managé**|Vous permet de déboguer les appels au code Win32 natif (non managé) à partir de votre application managée.|  
 |**Activer le débogage SQL Server**|Autorise le débogage d'objets de base de données SQL Server.|  
   
-##  <a name="BKMK_Build_tab"></a> Onglet Générer  
+## <a name="BKMK_Build_tab"></a> Onglet Générer  
   
 |Paramètre|Description|  
 |-------------|-----------------|  

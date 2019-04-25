@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bcaa3688486831f83712dc0cf0ee3e4a17c4a22
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bbe2c216a9293ddc8c5c1212957c2987924d14e1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918375"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089287"
 ---
 # <a name="use-the-code-metrics-results-window"></a>Utiliser la fenêtre Résultats des métriques de Code
 
@@ -48,15 +48,15 @@ Le **filtre** zone de liste déroulante contient les noms des colonnes de résul
 
 ### <a name="to-filter-the-code-metrics-results"></a>Pour filtrer les résultats de la métrique du code
 
-1.  À partir de la **filtre** , sélectionnez le nom de colonne.
+1. À partir de la **filtre** , sélectionnez le nom de colonne.
 
-2.  Dans **Min**, tapez la valeur minimale à afficher.
+2. Dans **Min**, tapez la valeur minimale à afficher.
 
-3.  Dans **Max**, tapez la valeur maximale à afficher.
+3. Dans **Max**, tapez la valeur maximale à afficher.
 
-4.  Cliquez sur le **appliquer un filtre** bouton.
+4. Cliquez sur le **appliquer un filtre** bouton.
 
-5.  Pour afficher les détails des résultats, développez l’arborescence hiérarchique.
+5. Pour afficher les détails des résultats, développez l’arborescence hiérarchique.
 
 ## <a name="add-remove-and-rearrange-data-columns"></a>Ajouter, supprimer et réorganiser des colonnes de données
 
@@ -88,23 +88,23 @@ Pour plus d’informations sur les forums Azure des éléments de travail, consu
 
 ### <a name="to-create-a-work-item-based-on-a-result"></a>Pour créer un élément de travail basé sur un résultat
 
-1.  Cliquez sur le résultat.
+1. Cliquez sur le résultat.
 
-2.  Pointez sur **créer un élément de travail**, puis cliquez sur le type d’élément de travail à créer (**bogue**, **tâche**, et ainsi de suite).
+2. Pointez sur **créer un élément de travail**, puis cliquez sur le type d’élément de travail à créer (**bogue**, **tâche**, et ainsi de suite).
 
-3.  Compléter le formulaire d’élément de travail en remplissant dans tous les champs obligatoires.
+3. Compléter le formulaire d’élément de travail en remplissant dans tous les champs obligatoires.
 
-4.  Sur le **fichier** menu, cliquez sur **Enregistrer tout** pour enregistrer l’élément de travail.
+4. Sur le **fichier** menu, cliquez sur **Enregistrer tout** pour enregistrer l’élément de travail.
 
 ### <a name="to-create-a-bug-based-on-a-result"></a>Pour créer un bogue basé sur un résultat
 
-1.  Cliquez sur le résultat pour le sélectionner.
+1. Cliquez sur le résultat pour le sélectionner.
 
-2.  Cliquez sur le **créer un élément de travail** bouton.
+2. Cliquez sur le **créer un élément de travail** bouton.
 
-3.  Compléter le formulaire d’élément de travail en remplissant dans tous les champs obligatoires.
+3. Compléter le formulaire d’élément de travail en remplissant dans tous les champs obligatoires.
 
-4.  Sur le **fichier** menu, cliquez sur **Enregistrer tout** pour enregistrer l’élément de travail.
+4. Sur le **fichier** menu, cliquez sur **Enregistrer tout** pour enregistrer l’élément de travail.
 
 ## <a name="see-also"></a>Voir aussi
 

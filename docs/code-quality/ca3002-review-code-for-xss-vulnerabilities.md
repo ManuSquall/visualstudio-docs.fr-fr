@@ -1,5 +1,5 @@
 ---
-title: 'CA3002 : Passez en revue de code pour les vulnérabilités XSS'
+title: 'CA3002 : Passez en revue le code pour détecter les vulnérabilités des scripts XSS'
 ms.date: 04/03/2019
 ms.topic: reference
 author: dotpaul
@@ -11,13 +11,13 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: a10f72297746a1e7bda3c69f8f7daf0efacd20bc
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018562"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115612"
 ---
-# <a name="ca3002-review-code-for-xss-vulnerabilities"></a>CA3002 : Passez en revue de code pour les vulnérabilités XSS
+# <a name="ca3002-review-code-for-xss-vulnerabilities"></a>CA3002 : Passez en revue le code pour détecter les vulnérabilités des scripts XSS
 
 |||
 |-|-|

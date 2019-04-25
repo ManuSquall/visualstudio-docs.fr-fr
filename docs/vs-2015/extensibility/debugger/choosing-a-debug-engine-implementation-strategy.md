@@ -10,12 +10,12 @@ ms.assetid: 90458fdd-2d34-4f10-82dc-6d8f31b66d8b
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 80e9e34547580560e79d408935fd10f17b577037
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6b03e69892da217d84d56b39b7df61784907d2b0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949469"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117692"
 ---
 # <a name="choosing-a-debug-engine-implementation-strategy"></a>Choix d’une stratégie de mise en œuvre du moteur de débogage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ Utilisez l’architecture de l’exécution afin de déterminer votre stratégie
   
  Sinon, vous pouvez choisir entre la création de l’Allemagne dans le processus sur le SDM ou processus pour le programme à déboguer. Il est important de savoir si l’évaluateur d’expression de l’Allemagne doit accéder fréquemment le magasin de symboles de programme, et indique si le magasin de symboles peut être chargé en mémoire pour un accès rapide. Considérez également les points suivants :  
   
--   S’il n’existe pas de nombre d’appels entre l’évaluateur d’expression et le magasin de symboles, ou si le magasin de symboles peut être lues dans l’espace de mémoire SDM, créez le DE in-process pour le SDM. Vous devez renvoyer le CLSID du moteur de débogage pour le SDM quand elle joint à votre programme. Le SDM utilise ce CLSID pour créer une instance in-process de l’Allemagne.  
+- S’il n’existe pas de nombre d’appels entre l’évaluateur d’expression et le magasin de symboles, ou si le magasin de symboles peut être lues dans l’espace de mémoire SDM, créez le DE in-process pour le SDM. Vous devez renvoyer le CLSID du moteur de débogage pour le SDM quand elle joint à votre programme. Le SDM utilise ce CLSID pour créer une instance in-process de l’Allemagne.  
   
--   Si le dé doit appeler le programme pour accéder au magasin de symboles, créez le DE in-process avec le programme. Dans ce cas, le programme crée l’instance de l’Allemagne.  
+- Si le dé doit appeler le programme pour accéder au magasin de symboles, créez le DE in-process avec le programme. Dans ce cas, le programme crée l’instance de l’Allemagne.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Extensibilité du débogueur de Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

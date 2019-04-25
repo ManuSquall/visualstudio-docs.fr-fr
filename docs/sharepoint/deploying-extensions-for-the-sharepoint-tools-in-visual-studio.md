@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2dd787168d906ce90a50562e5147b45308c54ff5
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 53e36d993e72da759c87e7d2d2f908818b3d9024
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868057"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068546"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Déployer des extensions pour les outils SharePoint dans Visual Studio
 
@@ -33,9 +33,9 @@ Pour plus d’informations sur la création de packages VSIX et de les déployer
 
 Vous pouvez utiliser la **projet VSIX** modèle fourni par le SDK de Visual Studio pour créer des packages VSIX pour les extensions d’outils SharePoint. À l’aide d’un projet VSIX offre plusieurs avantages sur la création manuelle d’un package VSIX :
 
--   Visual Studio génère automatiquement le package VSIX lorsque vous générez le projet. Tâches telles que l’ajout des fichiers de déploiement pour le package et en créant le fichier [Content_Types] .xml pour le package sont effectuées automatiquement.
+- Visual Studio génère automatiquement le package VSIX lorsque vous générez le projet. Tâches telles que l’ajout des fichiers de déploiement pour le package et en créant le fichier [Content_Types] .xml pour le package sont effectuées automatiquement.
 
--   Vous pouvez configurer le projet VSIX pour inclure la sortie de génération de votre projet d’extension et d’autres fichiers, tels que les modèles de projet et modèles d’élément, dans le package VSIX.
+- Vous pouvez configurer le projet VSIX pour inclure la sortie de génération de votre projet d’extension et d’autres fichiers, tels que les modèles de projet et modèles d’élément, dans le package VSIX.
 
 Pour plus d’informations sur l’utilisation d’un projet VSIX, consultez [modèle de projet VSIX](../extensibility/vsix-project-template.md).
 
@@ -43,17 +43,17 @@ Pour plus d’informations sur l’utilisation d’un projet VSIX, consultez [mo
 
 Par défaut, les projets VSIX génèrent uniquement des packages VSIX, pas d’assemblys. Par conséquent, vous en général, n’implémentez pas une extension des outils SharePoint dans un projet VSIX. En règle générale, vous travaillez avec au moins deux projets :
 
--   Un projet VSIX.
+- Un projet VSIX.
 
--   Un projet de bibliothèque de classes qui implémente votre extension.
+- Un projet de bibliothèque de classes qui implémente votre extension.
 
 Vous pouvez également travailler avec des projets supplémentaires pour certains types d’extensions :
 
--   Un projet de bibliothèque de classes qui implémente des commandes SharePoint qui sont utilisés par votre extension. Pour une procédure pas à pas qui illustre ce scénario, consultez [procédure pas à pas : Étendre l’Explorateur de serveurs pour afficher des WebParts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).
+- Un projet de bibliothèque de classes qui implémente des commandes SharePoint qui sont utilisés par votre extension. Pour une procédure pas à pas qui illustre ce scénario, consultez [procédure pas à pas : Étendre l’Explorateur de serveurs pour afficher des WebParts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).
 
--   Un projet de modèle d’élément ou un modèle de projet qui crée un modèle d’élément ou d’un modèle de projet, si votre extension définit un nouveau type d’élément de projet SharePoint. Pour une procédure pas à pas qui illustre ce scénario, consultez [procédure pas à pas : Créer un élément de projet d’action personnalisé avec un modèle d’élément, partie 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).
+- Un projet de modèle d’élément ou un modèle de projet qui crée un modèle d’élément ou d’un modèle de projet, si votre extension définit un nouveau type d’élément de projet SharePoint. Pour une procédure pas à pas qui illustre ce scénario, consultez [procédure pas à pas : Créer un élément de projet d’action personnalisé avec un modèle d’élément, partie 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).
 
--   Un projet de bibliothèque de classes qui implémente un Assistant personnalisé pour un modèle d’élément ou d’un modèle de projet, si votre extension inclut un modèle. Pour une procédure pas à pas qui illustre ce scénario, consultez [procédure pas à pas : Créer un élément de projet d’action personnalisé avec un modèle d’élément, partie 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).
+- Un projet de bibliothèque de classes qui implémente un Assistant personnalisé pour un modèle d’élément ou d’un modèle de projet, si votre extension inclut un modèle. Pour une procédure pas à pas qui illustre ce scénario, consultez [procédure pas à pas : Créer un élément de projet d’action personnalisé avec un modèle d’élément, partie 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).
 
 Si vous incluez tous les projets dans la même solution Visual Studio, vous pouvez modifier le fichier source.extension.vsixmanifest dans le projet VSIX pour inclure la sortie de génération de projets de bibliothèque de classes.
 
@@ -63,77 +63,77 @@ Vous devez modifier le fichier source.extension.vsixmanifest dans le projet VSIX
 
 Vous devez ajouter des entrées dans le fichier source.extension.vsixmanifest pour les éléments suivants :
 
--   L’assembly d’extension.
+- L’assembly d’extension.
 
--   L’assembly qui implémente des commandes SharePoint qui sont utilisés par votre extension.
+- L’assembly qui implémente des commandes SharePoint qui sont utilisés par votre extension.
 
--   Modèles de projet ni les modèles d’élément qui sont associés à votre extension.
+- Modèles de projet ni les modèles d’élément qui sont associés à votre extension.
 
--   Un Assistant personnalisé pour un modèle qui est associé à votre extension.
+- Un Assistant personnalisé pour un modèle qui est associé à votre extension.
 
 Les procédures suivantes décrivent comment ajouter des entrées dans le fichier .vsixmanifest pour chacun de ces éléments.
 
 #### <a name="to-include-the-extension-assembly"></a>Pour inclure l’assembly d’extension
 
-1.  Dans le projet VSIX, ouvrez le menu contextuel pour le fichier source.extension.vsixmanifest, puis choisissez **ouvrir**.
+1. Dans le projet VSIX, ouvrez le menu contextuel pour le fichier source.extension.vsixmanifest, puis choisissez **ouvrir**.
 
      Le fichier s’ouvre dans le Concepteur
 
-2.  Sur le **actifs** onglet de l’éditeur, choisissez le **New** bouton.
+2. Sur le **actifs** onglet de l’éditeur, choisissez le **New** bouton.
 
      Le **ajouter un nouveau composant** boîte de dialogue s’ouvre.
 
-3.  Dans le **Type** , choisissez **Microsoft.VisualStudio.MefComponent**.
+3. Dans le **Type** , choisissez **Microsoft.VisualStudio.MefComponent**.
 
-4.  Dans le **Source** liste, effectuez l’une des étapes suivantes :
+4. Dans le **Source** liste, effectuez l’une des étapes suivantes :
 
-    -   Si l’assembly d’extension est créée à partir d’un projet qui se trouve dans la même solution que le projet VSIX, choisissez **un projet dans la solution actuelle**. Dans le **projet** , sélectionnez le nom du projet.
+    - Si l’assembly d’extension est créée à partir d’un projet qui se trouve dans la même solution que le projet VSIX, choisissez **un projet dans la solution actuelle**. Dans le **projet** , sélectionnez le nom du projet.
 
-    -   Si l’assembly d’extension est inclus en tant que fichier dans votre projet, choisissez **fichier sur le système de fichiers**. Dans le **chemin d’accès** liste, entrez le chemin d’accès complet au fichier d’assembly extension ou utilisez le **Parcourir** bouton pour rechercher et choisir le fichier d’assembly.
+    - Si l’assembly d’extension est inclus en tant que fichier dans votre projet, choisissez **fichier sur le système de fichiers**. Dans le **chemin d’accès** liste, entrez le chemin d’accès complet au fichier d’assembly extension ou utilisez le **Parcourir** bouton pour rechercher et choisir le fichier d’assembly.
 
-5.  Sélectionnez le bouton **OK** .
+5. Sélectionnez le bouton **OK** .
 
 #### <a name="to-include-a-sharepoint-command-assembly"></a>Pour inclure un assembly de commande SharePoint
 
-1.  Dans le projet VSIX, ouvrez le menu contextuel pour le fichier source.extension.vsixmanifest, puis choisissez le **ouvrir** bouton.
+1. Dans le projet VSIX, ouvrez le menu contextuel pour le fichier source.extension.vsixmanifest, puis choisissez le **ouvrir** bouton.
 
      Le fichier s’ouvre dans le concepteur.
 
-2.  Dans le **actifs** section de l’éditeur, choisissez le **New** bouton.
+2. Dans le **actifs** section de l’éditeur, choisissez le **New** bouton.
 
      Le **ajouter un nouveau composant** boîte de dialogue s’ouvre.
 
-3.  Dans le **Type** , entrez **SharePoint.Commands.v4**.
+3. Dans le **Type** , entrez **SharePoint.Commands.v4**.
 
-4.  Dans le **Source** liste, effectuez l’une des étapes suivantes :
+4. Dans le **Source** liste, effectuez l’une des étapes suivantes :
 
-    -   Si l’assembly de commande est créée à partir d’un projet qui se trouve dans la même solution que le projet VSIX, choisissez **un projet dans la solution actuelle**. Dans le **projet** , sélectionnez le nom du projet.
+    - Si l’assembly de commande est créée à partir d’un projet qui se trouve dans la même solution que le projet VSIX, choisissez **un projet dans la solution actuelle**. Dans le **projet** , sélectionnez le nom du projet.
 
-    -   Si l’assembly de commande est inclus en tant que fichier dans votre projet, choisissez **fichier sur le système de fichiers**. Dans le **chemin d’accès** liste, entrez le chemin d’accès complet au fichier d’assembly extension ou utilisez le **Parcourir** bouton pour rechercher et choisir le fichier d’assembly.
+    - Si l’assembly de commande est inclus en tant que fichier dans votre projet, choisissez **fichier sur le système de fichiers**. Dans le **chemin d’accès** liste, entrez le chemin d’accès complet au fichier d’assembly extension ou utilisez le **Parcourir** bouton pour rechercher et choisir le fichier d’assembly.
 
-5.  Sélectionnez le bouton **OK** .
+5. Sélectionnez le bouton **OK** .
 
 #### <a name="to-include-a-template-that-you-create"></a>Pour inclure un modèle que vous créez
 
-1.  Dans le projet VSIX, ouvrez le menu contextuel pour le fichier source.extension.vsixmanifest, puis choisissez le **ouvrir** bouton.
+1. Dans le projet VSIX, ouvrez le menu contextuel pour le fichier source.extension.vsixmanifest, puis choisissez le **ouvrir** bouton.
 
      Le fichier s’ouvre dans le concepteur.
 
-2.  Dans le **actifs** section de l’éditeur, choisissez le **New** bouton.
+2. Dans le **actifs** section de l’éditeur, choisissez le **New** bouton.
 
      Le **ajouter un nouveau composant** boîte de dialogue s’ouvre.
 
-3.  Dans le **Type** , choisissez **Microsoft.VisualStudio.ProjectTemplate** ou **Microsoft.VisualStudio.ItemTemplate**.
+3. Dans le **Type** , choisissez **Microsoft.VisualStudio.ProjectTemplate** ou **Microsoft.VisualStudio.ItemTemplate**.
 
-4.  Dans le **Source** , choisissez **un projet dans la solution actuelle**.
+4. Dans le **Source** , choisissez **un projet dans la solution actuelle**.
 
-5.  Dans le **projet** liste, choisissez le nom du projet, puis le **OK** bouton.
+5. Dans le **projet** liste, choisissez le nom du projet, puis le **OK** bouton.
 
-6.  Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour votre projet de modèle de projet ou modèle d’élément, puis choisissez **décharger le projet**.
+6. Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour votre projet de modèle de projet ou modèle d’élément, puis choisissez **décharger le projet**.
 
-7.  Rouvrez le menu contextuel du nœud de projet, puis choisissez **modifier**_VotreNomProjetModèle_**.csproj** ou **modifier**  _VotreNomProjetModèle_**.vbproj**.
+7. Rouvrez le menu contextuel du nœud de projet, puis choisissez **modifier**_VotreNomProjetModèle_**.csproj** ou **modifier**  _VotreNomProjetModèle_**.vbproj**.
 
-8.  Recherchez les éléments suivants `VSTemplate` élément dans le fichier projet.
+8. Recherchez les éléments suivants `VSTemplate` élément dans le fichier projet.
 
     ```xml
     <VSTemplate Include="YourTemplateName.vstemplate">
@@ -155,9 +155,9 @@ Les procédures suivantes décrivent comment ajouter des entrées dans le fichie
 
 #### <a name="to-include-a-template-that-you-create-manually"></a>Pour inclure un modèle que vous créez manuellement
 
-1.  Dans le projet VSIX, ajoutez un nouveau dossier au projet pour contenir le modèle.
+1. Dans le projet VSIX, ajoutez un nouveau dossier au projet pour contenir le modèle.
 
-2.  Sous ce nouveau dossier, créez les sous-dossiers suivants, puis ajoutez le fichier modèle (.zip) à la *ID de paramètres régionaux* dossier.
+2. Sous ce nouveau dossier, créez les sous-dossiers suivants, puis ajoutez le fichier modèle (.zip) à la *ID de paramètres régionaux* dossier.
 
      *YourTemplateFolder*
 
@@ -171,43 +171,43 @@ Les procédures suivantes décrivent comment ajouter des entrées dans le fichie
 
      Par exemple, si vous avez un modèle d’élément nommé ContosoCustomAction.zip qui prend en charge les paramètres régionaux anglais (États-Unis), le chemin d’accès complet peut être *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip*.
 
-3.  Dans **l’Explorateur de solutions**, choisissez le fichier de modèle (*YourTemplateName*.zip).
+3. Dans **l’Explorateur de solutions**, choisissez le fichier de modèle (*YourTemplateName*.zip).
 
-4.  Dans le **propriétés** fenêtre, définissez la **Action de génération** propriété **contenu**.
+4. Dans le **propriétés** fenêtre, définissez la **Action de génération** propriété **contenu**.
 
-5.  Ouvrez le menu contextuel pour le fichier source.extension.vsixmanifest, puis choisissez **Open**.
+5. Ouvrez le menu contextuel pour le fichier source.extension.vsixmanifest, puis choisissez **Open**.
 
      Le fichier s’ouvre dans le concepteur.
 
-6.  Dans le **actifs** section de l’éditeur, choisissez le **New** bouton.
+6. Dans le **actifs** section de l’éditeur, choisissez le **New** bouton.
 
      Le **ajouter un nouveau composant** boîte de dialogue s’ouvre.
 
-7.  Dans le **Type** , choisissez **Microsoft.VisualStudio.ItemTemplate** ou **Microsoft.VisualStudio.ProjectTemplate**.
+7. Dans le **Type** , choisissez **Microsoft.VisualStudio.ItemTemplate** ou **Microsoft.VisualStudio.ProjectTemplate**.
 
-8.  Dans le **Source** , choisissez **fichier sur le système de fichiers**.
+8. Dans le **Source** , choisissez **fichier sur le système de fichiers**.
 
 9. Dans le **chemin d’accès** , entrez le chemin d’accès complet à l’assembly (par exemple, *ItemTemplates\SharePoint\SharePoint14\1033\ContosoCustomAction.zip*, ou utiliser le **Parcourir**bouton pour rechercher et sélectionner l’assembly, puis choisissez le **OK** bouton.
 
 #### <a name="to-include-a-wizard-for-a-project-template-or-item-template"></a>Pour inclure un Assistant pour un modèle de projet ou un modèle d’élément
 
-1.  Dans le projet VSIX, ouvrez le menu contextuel pour le fichier source.extension.vsixmanifest, puis choisissez **ouvrir**.
+1. Dans le projet VSIX, ouvrez le menu contextuel pour le fichier source.extension.vsixmanifest, puis choisissez **ouvrir**.
 
      Le fichier s’ouvre dans le concepteur.
 
-2.  Dans le **actifs** section de l’éditeur, choisissez le **New** bouton.
+2. Dans le **actifs** section de l’éditeur, choisissez le **New** bouton.
 
      Le **ajouter un nouveau composant** boîte de dialogue s’ouvre.
 
-3.  Dans le **Type** , choisissez **Microsoft.VisualStudio.Assembly**.
+3. Dans le **Type** , choisissez **Microsoft.VisualStudio.Assembly**.
 
-4.  Dans le **Source** liste, effectuez l’une des étapes suivantes :
+4. Dans le **Source** liste, effectuez l’une des étapes suivantes :
 
-    -   Si l’assembly de l’Assistant est créée à partir d’un projet qui se trouve dans la même solution que le projet VSIX, choisissez **un projet dans la solution actuelle**. Dans le **projet** , sélectionnez le nom du projet.
+    - Si l’assembly de l’Assistant est créée à partir d’un projet qui se trouve dans la même solution que le projet VSIX, choisissez **un projet dans la solution actuelle**. Dans le **projet** , sélectionnez le nom du projet.
 
-    -   Si l’assembly de l’Assistant est inclus en tant que fichier dans votre projet, choisissez **fichier sur le système de fichiers**. Dans le **chemin d’accès** champ, entrez le chemin d’accès complet au fichier d’assembly ou utilisez le **Parcourir** bouton pour rechercher et sélectionner l’assembly.
+    - Si l’assembly de l’Assistant est inclus en tant que fichier dans votre projet, choisissez **fichier sur le système de fichiers**. Dans le **chemin d’accès** champ, entrez le chemin d’accès complet au fichier d’assembly ou utilisez le **Parcourir** bouton pour rechercher et sélectionner l’assembly.
 
-5.  Sélectionnez le bouton **OK** .
+5. Sélectionnez le bouton **OK** .
 
 ### <a name="related-walkthroughs"></a>Procédures pas à pas connexes
 
@@ -224,21 +224,21 @@ Le tableau suivant répertorie les procédures pas à pas qui montrent comment u
 
 Si vous souhaitez créer manuellement le package VSIX pour votre extension d’outils SharePoint, procédez comme suit :
 
-1.  Créer le fichier extension.vsixmanifest et le fichier [Content_Types] .xml dans un nouveau dossier. Pour plus d’informations, consultez [Anatomie d’un Package VSIX](../extensibility/anatomy-of-a-vsix-package.md).
+1. Créer le fichier extension.vsixmanifest et le fichier [Content_Types] .xml dans un nouveau dossier. Pour plus d’informations, consultez [Anatomie d’un Package VSIX](../extensibility/anatomy-of-a-vsix-package.md).
 
-2.  Dans l’Explorateur Windows, cliquez sur le dossier qui contient les deux fichiers XML, cliquez sur Envoyer vers, puis cliquez sur dossier compressé (zippé). Renommez le fichier .zip à Filename.vsix, où nom_fichier représente le nom du fichier redistribuable qui installe votre package.
+2. Dans l’Explorateur Windows, cliquez sur le dossier qui contient les deux fichiers XML, cliquez sur Envoyer vers, puis cliquez sur dossier compressé (zippé). Renommez le fichier .zip à Filename.vsix, où nom_fichier représente le nom du fichier redistribuable qui installe votre package.
 
-3.  Ajoutez votre assembly d’extension au package VSIX. Si votre extension inclut une commande SharePoint, également ajouter l’assembly qui implémente la commande SharePoint pour le package VSIX.
+3. Ajoutez votre assembly d’extension au package VSIX. Si votre extension inclut une commande SharePoint, également ajouter l’assembly qui implémente la commande SharePoint pour le package VSIX.
 
-4.  Modifiez le fichier extension.vsixmanifest :
+4. Modifiez le fichier extension.vsixmanifest :
 
-    -   Ajouter un `Microsoft.VisualStudio.MefComponent` élément sous le `Assets` élément et définissez la valeur du nouvel élément pour le chemin d’accès relatif de l’assembly qui implémente votre extension dans le package VSIX. Pour plus d’informations, consultez [MEFComponent, élément (schéma VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    - Ajouter un `Microsoft.VisualStudio.MefComponent` élément sous le `Assets` élément et définissez la valeur du nouvel élément pour le chemin d’accès relatif de l’assembly qui implémente votre extension dans le package VSIX. Pour plus d’informations, consultez [MEFComponent, élément (schéma VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
-    -   Si votre extension inclut une commande SharePoint qui appelle le modèle d’objet serveur pour SharePoint, ajoutez un `Microsoft.VisualStudio.Assembly` élément sous le `Assets` élément. Définissez la valeur du nouvel élément sur le chemin d’accès relatif de l’assembly qui implémente la commande SharePoint dans le package VSIX. Pour plus d’informations, consultez [Asset, élément (schéma VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    - Si votre extension inclut une commande SharePoint qui appelle le modèle d’objet serveur pour SharePoint, ajoutez un `Microsoft.VisualStudio.Assembly` élément sous le `Assets` élément. Définissez la valeur du nouvel élément sur le chemin d’accès relatif de l’assembly qui implémente la commande SharePoint dans le package VSIX. Pour plus d’informations, consultez [Asset, élément (schéma VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
 
-    -   Si votre extension inclut un modèle de projet ou un modèle d’élément, ajoutez un `ProjectTemplate` ou `ItemTemplate` élément sous le `Assets` élément. Définissez la valeur du nouvel élément sur le chemin d’accès relatif du dossier qui contient le modèle dans le package VSIX. Pour plus d’informations, consultez [ProjectTemplate, élément (schéma VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\)) et [ItemTemplate, élément (schéma VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\)).
+    - Si votre extension inclut un modèle de projet ou un modèle d’élément, ajoutez un `ProjectTemplate` ou `ItemTemplate` élément sous le `Assets` élément. Définissez la valeur du nouvel élément sur le chemin d’accès relatif du dossier qui contient le modèle dans le package VSIX. Pour plus d’informations, consultez [ProjectTemplate, élément (schéma VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\)) et [ItemTemplate, élément (schéma VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\)).
 
-    -   Si votre extension inclut un Assistant personnalisé pour un modèle de projet ou un modèle d’élément, ajoutez un `Assembly` élément sous le `Assets` élément. Définissez la valeur du nouvel élément sur le chemin d’accès relatif de l’assembly dans le package VSIX et définissez le `AssemblyName` attribut nom d’assembly complet (y compris la version, culture et jeton de clé publique). Pour plus d’informations, consultez [dépendance, élément (schéma VSX)](https://msdn.microsoft.com/1f63f60a-98ad-48ec-8e44-4eba383d3e37).
+    - Si votre extension inclut un Assistant personnalisé pour un modèle de projet ou un modèle d’élément, ajoutez un `Assembly` élément sous le `Assets` élément. Définissez la valeur du nouvel élément sur le chemin d’accès relatif de l’assembly dans le package VSIX et définissez le `AssemblyName` attribut nom d’assembly complet (y compris la version, culture et jeton de clé publique). Pour plus d’informations, consultez [dépendance, élément (schéma VSX)](https://msdn.microsoft.com/1f63f60a-98ad-48ec-8e44-4eba383d3e37).
 
 ### <a name="example"></a>Exemple
 

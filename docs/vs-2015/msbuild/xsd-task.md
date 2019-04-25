@@ -21,29 +21,28 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2c8e38959e9835ee26f283c59128749239178307
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 44f25085edcc8b492946d54c7853f8ec32deb0c2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54778722"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114962"
 ---
 # <a name="xsd-task"></a>Tâche XSD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Encapsule l’outil Définition du schéma XML (xsd.exe), qui génère des fichiers de schéma ou de classe à partir d’une source.  
   
 ## <a name="parameters"></a>Paramètres  
  Le tableau ci-dessous décrit les paramètres de la tâche **XSD**.  
   
--   **AdditionalOptions**  
+- **AdditionalOptions**  
   
      Paramètre **String** facultatif.  
   
      Liste des options comme indiqué sur la ligne de commande. Par exemple, «  */option1 /option2 /option#*  ». Utilisez ce paramètre pour spécifier des options qui ne sont pas représentées par un autre paramètre de tâche **XSD**.  
   
--   **GenerateFromSchema**  
+- **GenerateFromSchema**  
   
      Paramètre **String** facultatif.  
   
@@ -51,11 +50,11 @@ Encapsule l’outil Définition du schéma XML (xsd.exe), qui génère des fichi
   
      Spécifiez l’une des valeurs suivantes, chacune d’elles correspondant à une option XSD.  
   
-    -   **classes** - **/classes**  
+    - **classes** - **/classes**  
   
-    -   **dataset** - **/dataset**  
+    - **dataset** - **/dataset**  
   
--   **Language**  
+- **Language**  
   
      Paramètre **String** facultatif.  
   
@@ -63,25 +62,25 @@ Encapsule l’outil Définition du schéma XML (xsd.exe), qui génère des fichi
   
      Vous avez le choix entre **CS** (C#, qui est la valeur par défaut), **VB** (Visual Basic) ou **JS** (JScript). Vous pouvez également spécifier un nom qualifié complet pour une classe qui implémente `System.CodeDom.Compiler.CodeDomProvider Class`.  
   
--   **Namespace**  
+- **Namespace**  
   
      Paramètre **String** facultatif.  
   
      Spécifie l'espace de noms du runtime pour les types générés.  
   
--   **Sources**  
+- **Sources**  
   
      Paramètre `ITaskItem[]` requis.  
   
      Définit un tableau d’éléments de fichier source MSBuild pouvant être consommés et émis par des tâches.  
   
--   **SuppressStartupBanner**  
+- **SuppressStartupBanner**  
   
      Paramètre **Boolean** facultatif.  
   
      Si la valeur est `true`, empêche l'affichage du message de copyright et de numéro de version quand la tâche démarre.  
   
--   **TrackerLogDirectory**  
+- **TrackerLogDirectory**  
   
      Paramètre **String** facultatif.  
   

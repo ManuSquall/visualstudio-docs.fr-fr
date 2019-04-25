@@ -15,17 +15,16 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e856a4fcdc2fbe9174c91910f6676be9e03fafb0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7a39b6f84185c78ccea11e09e628050a6bf4f601
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802672"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053395"
 ---
 # <a name="immediate-window"></a>Exécution (fenêtre)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 La fenêtre **Exécution** est utilisée pour déboguer et évaluer des expressions, exécuter des instructions, imprimer les valeurs des variables, etc. Elle vous permet d’entrer des expressions qui doivent être évaluées ou exécutées par le langage de développement lors du processus de débogage. Pour afficher la fenêtre **Exécution**, ouvrez un projet à modifier, puis choisissez **Fenêtres** dans le menu **Déboguer** et sélectionnez **Exécution**, ou appuyez sur Ctrl+Alt+I.  
   
  Vous pouvez utiliser cette fenêtre pour émettre des commandes [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] individuelles. Parmi les commandes disponibles, `EvaluateStatement` peut être utilisée pour assigner des valeurs aux variables. La fenêtre **Exécution** prend également en charge IntelliSense.  
@@ -75,7 +74,7 @@ La fenêtre **Exécution** est utilisée pour déboguer et évaluer des expressi
   
     La fenêtre **Exécution** exécute `MyFunction` et affiche `4`.  
   
-   Si la fonction ou la sous-routine contient un point d’arrêt, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] arrête l’exécution à ce point. Vous pouvez ensuite utiliser les fenêtres du débogueur pour examiner l’état de votre programme. Pour plus d’informations, consultez [Procédure pas à pas : débogage au moment du design](../../debugger/walkthrough-debugging-at-design-time.md).  
+   Si la fonction ou la sous-routine contient un point d’arrêt, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] arrête l’exécution à ce point. Vous pouvez ensuite utiliser les fenêtres du débogueur pour examiner l’état de votre programme. Pour plus d’informations, voir [Procédure pas à pas : Déboguer au moment du design](../../debugger/walkthrough-debugging-at-design-time.md).  
   
    Vous ne pouvez pas utiliser l’évaluation des expressions au moment du design dans les types de projet qui requièrent le démarrage d’un environnement d’exécution, notamment les projets [!INCLUDE[trprVSTOshort](../../includes/trprvstoshort-md.md)], projets web, projets Smart Device et projets SQL.  
   
@@ -119,15 +118,15 @@ La fenêtre **Exécution** est utilisée pour déboguer et évaluer des expressi
   
 #### <a name="to-toggle-first-chance-exception-notifications-in-the-immediate-window"></a>Pour activer/désactiver les notifications d’exceptions de première chance dans la fenêtre Exécution  
   
-1.  Dans le menu **Affichage**, cliquez sur **Autres fenêtres**, puis sur **Sortie**.  
+1. Dans le menu **Affichage**, cliquez sur **Autres fenêtres**, puis sur **Sortie**.  
   
-2.  Cliquez avec le bouton droit sur la zone de texte de la fenêtre **Sortie** et sélectionnez ou désélectionnez **Messages d’exception**.  
+2. Cliquez avec le bouton droit sur la zone de texte de la fenêtre **Sortie** et sélectionnez ou désélectionnez **Messages d’exception**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Naviguer dans le code avec le débogueur](../../debugger/navigating-through-code-with-the-debugger.md)   
  [Fenêtre Commande](../../ide/reference/command-window.md)   
  [Débogage dans Visual Studio](../../debugger/debugging-in-visual-studio.md)   
  [Principes de base du débogueur](../../debugger/debugger-basics.md)   
- [Procédure pas à pas : débogage au moment du design](../../debugger/walkthrough-debugging-at-design-time.md)   
+ [Procédure pas à pas : Débogage au moment du Design](../../debugger/walkthrough-debugging-at-design-time.md)   
  [Alias de commandes Visual Studio](../../ide/reference/visual-studio-command-aliases.md)   
  [Utilisation d’expressions régulières dans Visual Studio](../../ide/using-regular-expressions-in-visual-studio.md)

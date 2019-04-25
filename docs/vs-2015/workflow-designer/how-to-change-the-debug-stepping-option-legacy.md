@@ -15,12 +15,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5380c73b8286d492cb29f60acce3294aaac25d1f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 505f876b9c7943c8b039b74459552b77ce539477
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952528"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101117"
 ---
 # <a name="how-to-change-the-debug-stepping-option-legacy"></a>Procédure : Modifier l’option de débogage pas à pas (héritée)
 Cette rubrique décrit comment modifier l'option de débogage pas à pas pour les applications [!INCLUDE[wf](../includes/wf-md.md)] dans le [!INCLUDE[wfd1](../includes/wfd1-md.md)] hérité qui comportent des actions simultanées. Utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -33,13 +33,13 @@ Cette rubrique décrit comment modifier l'option de débogage pas à pas pour le
   
 #### <a name="to-change-the-debug-stepping-option"></a>Pour modifier l'option de débogage pas à pas  
   
-1.  Démarrez Visual Studio.  
+1. Démarrez Visual Studio.  
   
-2.  Ouvrez un projet de workflow hérité existant ou créez un nouveau projet qui fait appel à des activités simultanées et qui cible le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
+2. Ouvrez un projet de workflow hérité existant ou créez un nouveau projet qui fait appel à des activités simultanées et qui cible le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
   
-3.  Sur le **Workflow** menu dans les anciennes [!INCLUDE[wfd2](../includes/wfd2-md.md)], pointez sur **déboguer**, puis pointez sur **Options pas à pas**.  
+3. Sur le **Workflow** menu dans les anciennes [!INCLUDE[wfd2](../includes/wfd2-md.md)], pointez sur **déboguer**, puis pointez sur **Options pas à pas**.  
   
-4.  Sélectionnez **Instance** ou **branche**.  
+4. Sélectionnez **Instance** ou **branche**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage de Workflows hérités](../workflow-designer/debugging-legacy-workflows.md)   

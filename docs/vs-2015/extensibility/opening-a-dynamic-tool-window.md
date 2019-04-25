@@ -10,12 +10,12 @@ ms.assetid: 21547ba7-6e81-44df-9277-265bf34f877a
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 80d2666fc40fa561a0e2993ca50edd0dcf72dbc4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4302e7eabb8e731a4332116956614643a4b95ef2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953666"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076784"
 ---
 # <a name="opening-a-dynamic-tool-window"></a>Ouverture d’une fenêtre d’outil dynamique
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ Fenêtres Outil sont généralement ouverts à partir d’une commande dans un m
   
 ### <a name="to-open-a-dynamic-tool-window"></a>Pour ouvrir une fenêtre d’outil dynamique  
   
-1.  Créez un projet VSIX nommé **DynamicToolWindow** et ajouter un modèle d’élément de fenêtre outil nommé **DynamicWindowPane.cs**. Pour plus d’informations, consultez [création d’une Extension avec une fenêtre outil](../extensibility/creating-an-extension-with-a-tool-window.md).  
+1. Créez un projet VSIX nommé **DynamicToolWindow** et ajouter un modèle d’élément de fenêtre outil nommé **DynamicWindowPane.cs**. Pour plus d’informations, consultez [création d’une Extension avec une fenêtre outil](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
-2.  Dans le fichier de DynamicWindowPanePackage.cs, recherchez la déclaration de DynamicWindowPanePackage. Ajouter le <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> et les attributs T:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute pour inscrire la fenêtre outil.  
+2. Dans le fichier de DynamicWindowPanePackage.cs, recherchez la déclaration de DynamicWindowPanePackage. Ajouter le <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> et les attributs T:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute pour inscrire la fenêtre outil.  
   
     ```vb  
     [[ProvideToolWindow(typeof(DynamicWindowPane)]  
@@ -52,6 +52,6 @@ Fenêtres Outil sont généralement ouverts à partir d’une commande dans un m
   
      Cela inscrit la fenêtre Outil nommée DynamicWindowPane sous forme de fenêtre temporaire qui n’est pas conservée lorsque Visual Studio est fermé et rouvert. DynamicWindowPane est ouvert chaque fois que <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_string> s’applique et fermés dans le cas contraire.  
   
-3.  Générez le projet et commencez le débogage. L’instance expérimentale doit apparaître. Vous ne verrez pas la fenêtre outil.  
+3. Générez le projet et commencez le débogage. L’instance expérimentale doit apparaître. Vous ne verrez pas la fenêtre outil.  
   
-4.  Ouvrez un projet dans l’instance expérimentale. La fenêtre outil doit apparaître.
+4. Ouvrez un projet dans l’instance expérimentale. La fenêtre outil doit apparaître.

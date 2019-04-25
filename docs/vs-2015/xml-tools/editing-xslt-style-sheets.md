@@ -9,17 +9,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a442612d3eb4845def1a82712ac01c6b90d4047c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2279a193b173924b45f42172281e106370131023
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954119"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648172"
 ---
 # <a name="editing-xslt-style-sheets"></a>Modification de feuilles de style XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 L'Éditeur XML permet également de modifier des feuilles de style XSLT. Vous pouvez ainsi tirer profit des fonctionnalités par défaut de l’éditeur telles qu’IntelliSense, mode plan, extraits XML, etc. Des nouvelles fonctionnalités facilitent en outre le développement en XSLT.  
   
 ## <a name="xslt-features"></a>Fonctionnalités XSLT  

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 881cf54df018a383d081112f44f98fd8f5d71efa
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 2e99e07f2f39ef4e01a2b79e5a391c32f6510e3a
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983272"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232591"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Conventions de nommage .NET pour EditorConfig
 
@@ -76,8 +76,21 @@ La liste suivante répertorie les valeurs autorisées, et vous pouvez spécifier
 - private\_protected
 - locaux
 
-> [!NOTE]
-> Ne spécifiez aucun niveau d’accessibilité dans le cadre de votre convention d’affectation de noms si l’accessibilité ne s’applique pas au type de symbole que vous ciblez. Par exemple, les paramètres n’ont pas de niveaux d’accessibilité. Si vous spécifiez un niveau d’accessibilité pour une convention d’affectation de noms de paramètre, votre règle d’affectation de noms ne fonctionnera pas correctement.
+   Le niveau d’accessibilité `local` s’applique aux symboles définis dans une méthode. Il est utile pour définir des conventions d’affectation de noms pour les symboles dont l’accessibilité ne peut être spécifiée dans le code. Par exemple, si vous indiquez `applicable_accessibilities = local` sur une convention d’affectation de noms pour les constantes (`required_modifiers = const`), la règle s’applique uniquement aux constantes définies au sein d’une méthode, et non dans un type.
+
+   ```csharp
+   class TypeName
+   {
+     // Constant defined in a type.
+     const int X = 3;
+
+     void Method()
+     {
+       // Constant defined in a method with "local" accessibility.
+       const int Y = 4;
+     }
+   }
+   ```
 
 ### <a name="symbol-modifiers-optional"></a>Modificateurs de symboles (facultatif)
 
@@ -156,8 +169,8 @@ Gravité | Effet
 ------------ | -------------
 none ou silent | Quand ce style n’est pas suivi, ne rien afficher à l’utilisateur ; toutefois, le code généré automatiquement suit ce style.
 suggestion | Quand ce style n’est pas suivi, l’afficher à l’utilisateur comme suggestion, sous la forme de points de soulignement sur les deux premiers caractères. Il n’a aucun effet au moment de la compilation.
-avertissement | Quand ce style n’est pas suivi, afficher un avertissement du compilateur dans la **Liste d’erreurs**.
-erreur | Quand ce style n’est pas suivi, afficher une erreur du compilateur dans la **Liste d’erreurs**.
+warning | Quand ce style n’est pas suivi, afficher un avertissement du compilateur dans la **Liste d’erreurs**.
+error | Quand ce style n’est pas suivi, afficher une erreur du compilateur dans la **Liste d’erreurs**.
 
 > [!NOTE]
 > Vous n’avez pas à générer votre projet pour afficher les violations de règle de nommage. Elles apparaissent au fur et à mesure que le code est modifié, dans la **Liste d’erreurs** ou comme suggestion.
@@ -197,5 +210,5 @@ Si vous fermez et que vous rouvrez votre fichier de code, au lieu de voir la sug
 ## <a name="see-also"></a>Voir aussi
 
 - [Langage .NET et conventions de mise en forme](../ide/editorconfig-code-style-settings-reference.md)
-- [Créer des options d’éditeur personnalisées et portables](../ide/create-portable-custom-editor-options.md)
+- [Créer des options d’éditeur personnalisé portables](../ide/create-portable-custom-editor-options.md)
 - [Fichier .editorconfig de .NET Compiler Platform](https://github.com/dotnet/roslyn/blob/master/.editorconfig)

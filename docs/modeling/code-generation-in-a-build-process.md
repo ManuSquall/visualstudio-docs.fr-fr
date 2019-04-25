@@ -13,22 +13,22 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 02608d5bc1b2c03560b5d954084d84059c34224a
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 07f7c91c74961fa846abb70637f358de59d0eb94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324323"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117094"
 ---
 # <a name="code-generation-in-a-build-process"></a>Génération de code dans un processus de génération
 
-[Transformation de texte](../modeling/code-generation-and-t4-text-templates.md) peut être appelée dans le cadre de la [du processus de génération](/azure/devops/pipelines/index) d’une solution Visual Studio. Il existe des tâches de génération qui sont spécialisées pour la transformation de texte. Les tâches de génération T4 exécutent les modèles de texte au moment du design. En outre, elles compilent les modèles de texte (prétraités) au moment de l'exécution.
+[Transformation de texte](../modeling/code-generation-and-t4-text-templates.md) peut être appelée dans le cadre de la [du processus de génération](/azure/devops/pipelines/index) d’une solution Visual Studio. Il existe des tâches de génération qui sont spécialisées pour la transformation de texte. Les tâches de génération T4 exécutent les modèles de texte au moment du design. En outre, elles compilent les modèles de texte (prétraités) au moment de l’exécution.
 
 Il existe quelques différences en matière de possibilités offertes par les tâches de génération, selon le moteur de génération que vous utilisez. Lorsque vous générez la solution dans Visual Studio, un modèle de texte peut accéder à l’API Visual Studio (EnvDTE) si le [hostspecific = « true »](../modeling/t4-template-directive.md) attribut est défini. Mais qui n’est pas vrai lorsque vous générez la solution à partir de la ligne de commande ou lorsque vous lancez une génération serveur via Visual Studio. Dans ces situations, la génération est exécutée par MSBuild et un autre hôte T4 est utilisé.
 
 Cela signifie que vous ne peut pas accéder aux éléments tels que les noms de fichiers de projet de la même façon lorsque vous générez un modèle de texte dans MSBuild. Toutefois, vous pouvez [passer des informations sur l’environnement dans les modèles de texte et les processeurs de directive à l’aide des paramètres de build](#parameters).
 
-##  <a name="buildserver"></a> Configurer vos ordinateurs
+## <a name="buildserver"></a> Configurer vos ordinateurs
 
 Pour activer les tâches de génération sur votre ordinateur de développement, installez Modeling SDK pour Visual Studio.
 
@@ -133,7 +133,7 @@ Vous pouvez utiliser des caractères génériques dans TransformFile :
 
 ## <a name="source-control"></a>Contrôle de code source
 
-Il n'existe aucune intégration prédéfinie spécifique avec un système de contrôle de code source. Toutefois, vous pouvez ajouter vos propres extensions, par exemple pour extraire et archiver un fichier généré. Par défaut, la tâche de transformation de texte évite de remplacer un fichier en lecture seule. Lorsqu'un tel fichier est trouvé, une erreur est journalisée dans la liste d'erreurs de Visual Studio, et la tâche échoue.
+Il n'existe aucune intégration prédéfinie spécifique avec un système de contrôle de code source. Toutefois, vous pouvez ajouter vos propres extensions, par exemple pour extraire et archiver un fichier généré. Par défaut, la tâche de transformation de texte évite de remplacer un fichier en lecture seule. Lorsqu’un tel fichier est trouvé, une erreur est journalisée dans la liste d’erreurs de Visual Studio, et la tâche échoue.
 
 Pour spécifier que les fichiers en lecture seule doivent être remplacés, insérez la propriété suivante :
 
@@ -216,7 +216,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-##  <a name="parameters"></a> Passer des données de contexte de build dans les modèles
+## <a name="parameters"></a> Passer des données de contexte de build dans les modèles
 
 Vous pouvez définir des valeurs de paramètre dans le fichier projet. Par exemple, vous pouvez passer [build](../msbuild/msbuild-properties.md) propriétés et [variables d’environnement](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
@@ -250,7 +250,7 @@ Dim value = Host.ResolveParameterValue("-", "-", "parameterName")
 > [!NOTE]
 > `ResolveParameterValue` obtient des données uniquement à partir de `T4ParameterValues` lorsque vous utilisez MSBuild. Lorsque vous transformez le modèle à l'aide de Visual Studio, les paramètres ont des valeurs par défaut.
 
-##  <a name="msbuild"></a> Utilisez les propriétés du projet dans l’assembly et directives #include
+## <a name="msbuild"></a> Utilisez les propriétés du projet dans l’assembly et directives #include
 
 Visual Studio macros comme **$ (SolutionDir)** ne fonctionnent pas dans MSBuild. Vous pouvez utiliser des propriétés de projet à la place.
 

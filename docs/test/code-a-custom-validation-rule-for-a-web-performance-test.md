@@ -1,5 +1,5 @@
 ---
-title: Codage d’une règle de validation personnalisée pour un test de performances de site Web
+title: Codage d'une règle de validation personnalisée pour un test de performances de site Web
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,16 +15,16 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f26dc7fd69c5190f5ba56985ef2509ddbf87866
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c39518c03d1a599dbe9eecac3d609343b7394313
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919909"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822599"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>Coder une règle de validation personnalisée pour un test de performances web
 
-Vous pouvez créer vos propres règles de validation. Pour cela, vous dérivez votre propre classe de règles à partir d’une classe de règles de validation. Les règles de validation dérivent de la classe de base <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule>.
+Vous pouvez créer vos propres règles de validation. Pour cela, vous dérivez votre propre classe de règles à partir d'une classe de règles de validation. Les règles de validation dérivent de la classe de base <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule>.
 
 > [!NOTE]
 > Il est également possible de créer vos propres règles d'extraction personnalisées. Pour plus d’informations, consultez [Créer du code et des plug-ins personnalisés pour les tests de charge](../test/create-custom-code-and-plug-ins-for-load-tests.md).
@@ -33,24 +33,24 @@ Vous pouvez créer vos propres règles de validation. Pour cela, vous dérivez v
 
 ## <a name="to-create-custom-validation-rules"></a>Pour créer des règles de validation personnalisées
 
-1.  Ouvrez un projet de test qui contient un test de performances de site web.
+1. Ouvrez un projet de test qui contient un test de performances de site web.
 
-2.  (Facultatif) Créez un projet de bibliothèque de classes distinct dans lequel stocker votre règle de validation.
+2. (Facultatif) Créez un projet de bibliothèque de classes distinct dans lequel stocker votre règle de validation.
 
     > [!IMPORTANT]
     > Vous pouvez créer la classe dans le projet qui contient vos tests. Toutefois, si vous souhaitez réutiliser la règle, il est préférable de créer un projet de bibliothèque de classes distinct pour la stocker. Si vous créez un projet séparé, vous devez compléter les étapes facultatives dans cette procédure.
 
-3.  (Facultatif) Dans le projet de bibliothèque de classes, ajoutez une référence à la DLL Microsoft.VisualStudio.QualityTools.WebTestFramework.
+3. (Facultatif) Dans le projet de bibliothèque de classes, ajoutez une référence à la DLL Microsoft.VisualStudio.QualityTools.WebTestFramework.
 
-4.  Créez une classe qui dérive de la classe <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule>. Implémentez les membres <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.Validate*> et <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.RuleName*>.
+4. Créez une classe qui dérive de la classe <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule>. Implémentez les membres <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.Validate*> et <xref:Microsoft.VisualStudio.TestTools.WebTesting.ValidationRule.RuleName*>.
 
-5.  (Facultatif) Générez le nouveau projet de bibliothèque de classes.
+5. (Facultatif) Générez le nouveau projet de bibliothèque de classes.
 
-6.  (Facultatif) Dans le projet de test, ajoutez une référence au projet de bibliothèque de classes qui contient la règle de validation personnalisée.
+6. (Facultatif) Dans le projet de test, ajoutez une référence au projet de bibliothèque de classes qui contient la règle de validation personnalisée.
 
-7.  Dans le projet de test, ouvrez un test de performances web dans l’**éditeur de test de performances web**.
+7. Dans le projet de test, ouvrez un test de performances web dans l’**éditeur de test de performances web**.
 
-8.  Pour ajouter la règle de validation personnalisée à une requête de test de performances web, cliquez avec le bouton droit sur une requête, puis sélectionnez **Ajouter une règle de validation**.
+8. Pour ajouter la règle de validation personnalisée à une requête de test de performances web, cliquez avec le bouton droit sur une requête, puis sélectionnez **Ajouter une règle de validation**.
 
      La boîte de dialogue **Ajouter une règle de validation** s’affiche. Votre règle de validation personnalisée apparaît dans la liste **Sélectionner une règle** avec les règles de validation prédéfinies. Sélectionnez votre règle de validation personnalisée, puis choisissez **OK**.
 
@@ -58,7 +58,7 @@ Vous pouvez créer vos propres règles de validation. Pour cela, vous dérivez v
 
 ## <a name="example"></a>Exemple
 
-Le code suivant illustre une implémentation d’une règle de validation personnalisée. Cette règle de validation reproduit le comportement de la règle de validation prédéfinie Balise obligatoire. Utilisez cet exemple comme point de départ pour la définition de vos propres règles de validation personnalisées.
+Le code suivant illustre une implémentation d'une règle de validation personnalisée. Cette règle de validation reproduit le comportement de la règle de validation prédéfinie Étiquette obligatoire. Utilisez cet exemple comme point de départ pour la définition de vos propres règles de validation personnalisées.
 
 > [!WARNING]
 > Les propriétés publiques du code d'un validateur personnalisé ne peuvent pas avoir de valeurs Null.

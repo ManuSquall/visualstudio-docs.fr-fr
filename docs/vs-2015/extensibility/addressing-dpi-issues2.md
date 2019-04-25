@@ -6,12 +6,12 @@ ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a5c5ae2abeea1e1e6b5a2fe360ff8515e5096341
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 43f13ebc6a3f7a430b3608eba37284a85c3c5eab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947415"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049540"
 ---
 # <a name="addressing-dpi-issues"></a>Résolution des problèmes DPI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,15 +120,15 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
   
  Pour accéder aux fonctions d’assistance de PPP à partir de code managé qui s’exécute à l’intérieur de l’environnement Visual Studio :  
   
--   Le projet de consommation doit faire référence à la dernière version de l’interpréteur de commandes MPF. Exemple :  
+- Le projet de consommation doit faire référence à la dernière version de l’interpréteur de commandes MPF. Exemple :  
   
     ```csharp  
     <Reference Include="Microsoft.VisualStudio.Shell.14.0.dll" />  
     ```  
   
--   Vérifiez que le projet dispose des références à **System.Windows.Forms**, **PresentationCore**, et **PresentationUI**.  
+- Vérifiez que le projet dispose des références à **System.Windows.Forms**, **PresentationCore**, et **PresentationUI**.  
   
--   Dans le code, utilisez le **Microsoft.VisualStudio.PlatformUI** espace de noms et l’appel de fonctions statiques de classe de DpiHelper. Pour les types pris en charge (points, tailles, rectangles et ainsi de suite), sont fournies à l’échelle de fonctions d’extension qui retournent de nouveaux objets. Exemple :  
+- Dans le code, utilisez le **Microsoft.VisualStudio.PlatformUI** espace de noms et l’appel de fonctions statiques de classe de DpiHelper. Pour les types pris en charge (points, tailles, rectangles et ainsi de suite), sont fournies à l’échelle de fonctions d’extension qui retournent de nouveaux objets. Exemple :  
   
     ```csharp  
     using Microsoft.VisualStudio.PlatformUI;  
@@ -207,13 +207,13 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
   
  Étant donné que WPF étendra l’interface utilisateur pour la résolution actuelle à l’aide de la propriété BitmapScalingMode sur UIElement, un contrôle d’Image à l’aide d’une image prescaled comme sa source ressemblera à deux ou trois fois plus volumineux qu’il ne devrait. Voici plusieurs façons de compteur cet effet :  
   
--   Si vous connaissez la dimension de l’image d’origine à 100 %, vous pouvez spécifier la taille exacte du contrôle Image. Ces tailles reflètent que la taille de l’interface utilisateur avant la mise à l’échelle est appliquée.  
+- Si vous connaissez la dimension de l’image d’origine à 100 %, vous pouvez spécifier la taille exacte du contrôle Image. Ces tailles reflètent que la taille de l’interface utilisateur avant la mise à l’échelle est appliquée.  
   
     ```xaml  
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" Width="16" Height="16" />  
     ```  
   
--   Si la taille de l’image d’origine n’est pas connue, une propriété LayoutTransform peut servir à l’échelle vers le bas de l’objet Image finale. Exemple :  
+- Si la taille de l’image d’origine n’est pas connue, une propriété LayoutTransform peut servir à l’échelle vers le bas de l’objet Image finale. Exemple :  
   
     ```xaml  
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" >  
@@ -344,9 +344,9 @@ public int GetHostInfo(DOCHOSTUIINFO info)
   
 ## <a name="tips"></a>Conseils  
   
-1.  Si la propriété de document sur le contrôle WebOC change, vous devrez peut-être réassocier le document à la classe IDocHostUIHandler.  
+1. Si la propriété de document sur le contrôle WebOC change, vous devrez peut-être réassocier le document à la classe IDocHostUIHandler.  
   
-2.  Si la méthode ci-dessus ne fonctionne pas, il est un problème connu avec le WebOC ne collecte ne pas les modifications à l’indicateur de PPP. Le moyen le plus fiable de corriger cela consiste à activer/désactiver le zoom optique WebOC, deux appels de sens avec deux valeurs différentes pour le pourcentage de zoom. En outre, si cette solution de contournement est nécessaire, il peut être nécessaire effectuer cette opération sur chaque appel navigate.  
+2. Si la méthode ci-dessus ne fonctionne pas, il est un problème connu avec le WebOC ne collecte ne pas les modifications à l’indicateur de PPP. Le moyen le plus fiable de corriger cela consiste à activer/désactiver le zoom optique WebOC, deux appels de sens avec deux valeurs différentes pour le pourcentage de zoom. En outre, si cette solution de contournement est nécessaire, il peut être nécessaire effectuer cette opération sur chaque appel navigate.  
   
     ```csharp  
     // browser2 is a SHDocVw.IWebBrowser2 in this case  

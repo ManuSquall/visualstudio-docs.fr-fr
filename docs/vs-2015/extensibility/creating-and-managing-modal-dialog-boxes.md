@@ -10,12 +10,12 @@ ms.assetid: 491bc0de-7dba-478c-a76b-923440e090f3
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 20710f60a06c02391d467981b01627085c04a336
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 29b0066f201fbb791d471d5cfb433d9a335aa775
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950014"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069092"
 ---
 # <a name="creating-and-managing-modal-dialog-boxes"></a>Création et gestion de boîtes de dialogue modales
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,32 +28,32 @@ Lorsque vous créez une boîte de dialogue modale dans Visual Studio, vous devez
   
 ## <a name="creating-a-dialog-box-derived-from-dialogwindow"></a>Création d’une boîte de dialogue dérivée de DialogWindow  
   
-1.  Créez un projet VSIX nommé **OpenDialogTest** et ajoutez une commande de menu nommée **OpenDialog**. Pour plus d’informations sur la procédure à suivre, consultez [création d’une Extension avec une commande de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1. Créez un projet VSIX nommé **OpenDialogTest** et ajoutez une commande de menu nommée **OpenDialog**. Pour plus d’informations sur la procédure à suivre, consultez [création d’une Extension avec une commande de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  Pour utiliser le <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> (classe), vous devez ajouter des références aux assemblys suivants (dans l’onglet Framework de la **ajouter une référence** boîte de dialogue) :  
+2. Pour utiliser le <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> (classe), vous devez ajouter des références aux assemblys suivants (dans l’onglet Framework de la **ajouter une référence** boîte de dialogue) :  
   
-    -   PresentationCore  
+    - PresentationCore  
   
-    -   PresentationFramework  
+    - PresentationFramework  
   
-    -   WindowsBase  
+    - WindowsBase  
   
-    -   System.Xaml  
+    - System.Xaml  
   
-3.  Dans OpenDialog.cs, ajoutez le code suivant `using` instruction :  
+3. Dans OpenDialog.cs, ajoutez le code suivant `using` instruction :  
   
     ```csharp  
     using Microsoft.VisualStudio.PlatformUI;  
     ```  
   
-4.  Déclarez une classe nommée **TestDialogWindow** qui dérive de <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>:  
+4. Déclarez une classe nommée **TestDialogWindow** qui dérive de <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow>:  
   
     ```csharp  
     class TestDialogWindow : DialogWindow  
     {. . .}  
     ```  
   
-5.  Pour être en mesure de réduire ou agrandir la boîte de dialogue, définissez <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMaximizeButton%2A> et <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMinimizeButton%2A> sur true :  
+5. Pour être en mesure de réduire ou agrandir la boîte de dialogue, définissez <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMaximizeButton%2A> et <xref:Microsoft.VisualStudio.PlatformUI.DialogWindowBase.HasMinimizeButton%2A> sur true :  
   
     ```csharp  
     internal TestDialogWindow()  
@@ -63,40 +63,40 @@ Lorsque vous créez une boîte de dialogue modale dans Visual Studio, vous devez
     }  
     ```  
   
-6.  Dans le **OpenDialog.ShowMessageBox** (méthode), remplacez le code existant par le code suivant :  
+6. Dans le **OpenDialog.ShowMessageBox** (méthode), remplacez le code existant par le code suivant :  
   
     ```csharp  
     TestDialogWindow testDialog = new TestDialogWindow();  
     testDialog.ShowModal();  
     ```  
   
-7.  Générez et exécutez l’application. L’instance expérimentale de Visual Studio doit apparaître. Sur le **outils** menu de l’instance expérimentale, vous devez voir une commande nommée **OpenDialog appeler**. Lorsque vous cliquez sur cette commande, vous devez voir la boîte de dialogue. Vous pourrez réduire et agrandir la fenêtre.  
+7. Générez et exécutez l’application. L’instance expérimentale de Visual Studio doit apparaître. Sur le **outils** menu de l’instance expérimentale, vous devez voir une commande nommée **OpenDialog appeler**. Lorsque vous cliquez sur cette commande, vous devez voir la boîte de dialogue. Vous pourrez réduire et agrandir la fenêtre.  
   
 ## <a name="creating-and-managing-a-dialog-box-not-derived-from-dialogwindow"></a>Création et gestion d’une boîte de dialogue non dérivée de DialogWindow  
   
-1.  Pour cette procédure, vous pouvez utiliser la **OpenDialogTest** solution que vous avez créé dans la procédure précédente, avec les mêmes références d’assembly.  
+1. Pour cette procédure, vous pouvez utiliser la **OpenDialogTest** solution que vous avez créé dans la procédure précédente, avec les mêmes références d’assembly.  
   
-2.  Ajoutez le code suivant `using` déclarations :  
+2. Ajoutez le code suivant `using` déclarations :  
   
     ```csharp  
     using System.Windows;  
     using Microsoft.Internal.VisualStudio.PlatformUI;  
     ```  
   
-3.  Créez une classe nommée **TestDialogWindow2** qui dérive de <xref:System.Windows.Window>:  
+3. Créez une classe nommée **TestDialogWindow2** qui dérive de <xref:System.Windows.Window>:  
   
     ```csharp  
     class TestDialogWindow2 : Window  
     {. . .}  
     ```  
   
-4.  Ajouter une référence privée à <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>:  
+4. Ajouter une référence privée à <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>:  
   
     ```  
     private IVsUIShell shell;  
     ```  
   
-5.  Ajoutez un constructeur qui définit la référence à <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>:  
+5. Ajoutez un constructeur qui définit la référence à <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>:  
   
     ```csharp  
     public TestDialogWindow2(IVsUIShell uiShell)  
@@ -105,7 +105,7 @@ Lorsque vous créez une boîte de dialogue modale dans Visual Studio, vous devez
     }  
     ```  
   
-6.  Dans le **OpenDialog.ShowMessageBox** (méthode), remplacez le code existant par le code suivant :  
+6. Dans le **OpenDialog.ShowMessageBox** (méthode), remplacez le code existant par le code suivant :  
   
     ```csharp  
     IVsUIShell uiShell = (IVsUIShell)ServiceProvider.GetService(typeof(SVsUIShell));  
@@ -127,4 +127,4 @@ Lorsque vous créez une boîte de dialogue modale dans Visual Studio, vous devez
     }  
     ```  
   
-7.  Générez et exécutez l’application. Sur le **outils** menu, vous devez voir une commande nommée **OpenDialog appeler**. Lorsque vous cliquez sur cette commande, vous devez voir la boîte de dialogue.
+7. Générez et exécutez l’application. Sur le **outils** menu, vous devez voir une commande nommée **OpenDialog appeler**. Lorsque vous cliquez sur cette commande, vous devez voir la boîte de dialogue.

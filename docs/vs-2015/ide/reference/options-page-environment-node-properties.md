@@ -12,17 +12,16 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae1dc5c7eb8b1f10771afacfe1398e17b2bf8ed8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a5c6a2314fe1673efba27d829c1141dcfd5be1cc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54753514"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666817"
 ---
 # <a name="options-page-environment-node-properties"></a>Page Options, Environnement, propriétés de nœud
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Ce document décrit les pages (ou collections de propriétés) associées à la catégorie **Environnement**, `DTE.Properties("Environment", <Property Page>)`, de la boîte de dialogue **Options**. Le titre de chaque sous-section correspond à l’appel utilisé pour accéder à la collection de propriétés, tandis que le tableau dans chaque sous-section répertorie les propriétés de la collection.  
   
 ## <a name="general"></a>Général  

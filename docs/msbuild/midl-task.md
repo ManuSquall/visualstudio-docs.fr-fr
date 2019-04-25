@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cb6698ac7652eab416523418458fa0c8b820097
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 301ca4ee88368b9134bbbcd2dc41435590becaed
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817569"
 ---
 # <a name="midl-task"></a>MIDL (tâche)
 Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language), *midl.exe*. Pour plus d’informations, consultez [Informations de référence sur la ligne de commande MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
@@ -39,7 +39,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 ## <a name="parameters"></a>Paramètres
  Le tableau ci-après décrit les paramètres de la tâche **MIDL**. La plupart des paramètres de tâche, et quelques ensembles de paramètres, correspondent à une option de ligne de commande.
 
--   **AdditionalIncludeDirectories**
+- **AdditionalIncludeDirectories**
 
      Paramètre **String[]** facultatif.
 
@@ -47,7 +47,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Pour plus d’informations, consultez l’option **/I** dans la page [Informations de référence sur la ligne de commande MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **AdditionalOptions**
+- **AdditionalOptions**
 
      Paramètre **String** facultatif.
 
@@ -55,7 +55,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Pour plus d’informations, consultez [Informations de référence sur la ligne de commande MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **ApplicationConfigurationMode**
+- **ApplicationConfigurationMode**
 
      Paramètre **Boolean** facultatif.
 
@@ -63,7 +63,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Pour plus d’informations, consultez l’option **/app_config** dans la page [Informations de référence sur la ligne de commande MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **ClientStubFile**
+- **ClientStubFile**
 
      Paramètre **String** facultatif.
 
@@ -71,7 +71,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Pour plus d’informations, consultez l’option **/cstub** dans la page [Informations de référence sur la ligne de commande MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Reportez-vous également au paramètre **ServerStubFile** de ce tableau.
 
--   **CPreprocessOptions**
+- **CPreprocessOptions**
 
      Paramètre **String** facultatif.
 
@@ -79,7 +79,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Pour plus d’informations, consultez l’option **/cpp_opt** dans la page [Informations de référence sur la ligne de commande MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **DefaultCharType**
+- **DefaultCharType**
 
      Paramètre **String** facultatif.
 
@@ -95,7 +95,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Pour plus d’informations, consultez l’option **/char** dans la page [Informations de référence sur la ligne de commande MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **DllDataFileName**
+- **DllDataFileName**
 
      Paramètre **String** facultatif.
 
@@ -103,7 +103,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Pour plus d’informations, consultez l’option **/dlldata** dans la page [Informations de référence sur la ligne de commande MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **EnableErrorChecks**
+- **EnableErrorChecks**
 
      Paramètre **String** facultatif.
 
@@ -119,7 +119,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Pour plus d’informations, consultez l’option **/error** dans la page [Informations de référence sur la ligne de commande MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **ErrorCheckAllocations**
+- **ErrorCheckAllocations**
 
      Paramètre **Boolean** facultatif.
 
@@ -127,7 +127,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Pour plus d’informations, consultez l’option **/error allocation** dans la page [Informations de référence sur la ligne de commande MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **ErrorCheckBounds**
+- **ErrorCheckBounds**
 
      Paramètre **Boolean** facultatif.
 
@@ -135,7 +135,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Pour plus d’informations, consultez l’option **/error bounds_check** dans la page [Informations de référence sur la ligne de commande MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **ErrorCheckEnumRange**
+- **ErrorCheckEnumRange**
 
      Paramètre **Boolean** facultatif.
 
@@ -143,7 +143,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Pour plus d’informations, consultez l’option **/error enum** dans l’aide relative à la ligne de commande (**/?**) de *midl.exe*.
 
--   **ErrorCheckRefPointers**
+- **ErrorCheckRefPointers**
 
      Paramètre **Boolean** facultatif.
 
@@ -151,7 +151,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Pour plus d’informations, consultez l’option **/error ref** dans la page [Informations de référence sur la ligne de commande MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **ErrorCheckStubData**
+- **ErrorCheckStubData**
 
      Paramètre **Boolean** facultatif.
 
@@ -159,7 +159,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Pour plus d’informations, consultez l’option **/error stub_data** dans la page [Informations de référence sur la ligne de commande MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **GenerateClientFiles**
+- **GenerateClientFiles**
 
      Paramètre **String** facultatif.
 
@@ -174,7 +174,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Pour plus d’informations, consultez l’option **/client** dans la page [Informations de référence sur la ligne de commande MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **GenerateServerFiles**
+- **GenerateServerFiles**
 
      Paramètre **String** facultatif.
 
@@ -189,7 +189,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Pour plus d’informations, consultez l’option **/server** dans la page [Informations de référence sur la ligne de commande MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **GenerateStublessProxies**
+- **GenerateStublessProxies**
 
      Paramètre **Boolean** facultatif.
 
@@ -197,7 +197,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Pour plus d’informations, consultez l’option **/Oicf** dans la page [Informations de référence sur la ligne de commande MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **GenerateTypeLibrary**
+- **GenerateTypeLibrary**
 
      Paramètre **Boolean** facultatif.
 
@@ -205,7 +205,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Pour plus d’informations, consultez l’option **/notlb** dans la page [Informations de référence sur la ligne de commande MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **HeaderFileName**
+- **HeaderFileName**
 
      Paramètre **String** facultatif.
 
@@ -213,7 +213,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Pour plus d’informations, consultez l’option **/h** ou **/header** dans la page [Informations de référence sur la ligne de commande MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **IgnoreStandardIncludePath**
+- **IgnoreStandardIncludePath**
 
      Paramètre **Boolean** facultatif.
 
@@ -221,7 +221,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Pour plus d’informations, consultez l’option **/no_def_idir** dans la page [Informations de référence sur la ligne de commande MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **InterfaceIdentifierFileName**
+- **InterfaceIdentifierFileName**
 
      Paramètre **String** facultatif.
 
@@ -229,7 +229,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Pour plus d’informations, consultez l’option **/iid** dans la page [Informations de référence sur la ligne de commande MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **LocaleID**
+- **LocaleID**
 
      Paramètre **Entier** facultatif.
 
@@ -237,7 +237,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Pour plus d’informations, consultez l’option **/lcid** dans la page [Informations de référence sur la ligne de commande MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Consultez également [Identificateurs de paramètres régionaux](https://docs.microsoft.com/windows/desktop/intl/locale-identifiers).
 
--   **MkTypLibCompatible**
+- **MkTypLibCompatible**
 
      Paramètre **Boolean** facultatif.
 
@@ -245,7 +245,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Pour plus d’informations, consultez l’option **/mktyplib203** dans la page [Informations de référence sur la ligne de commande MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Consultez également [Syntaxe du fichier ODL](/previous-versions/windows/desktop/automat/odl-file-syntax) sur le site web MSDN.
 
--   **OutputDirectory**
+- **OutputDirectory**
 
      Paramètre **String** facultatif.
 
@@ -253,7 +253,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Pour plus d’informations, consultez l’option **/out** dans la page [Informations de référence sur la ligne de commande MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **PreprocessorDefinitions**
+- **PreprocessorDefinitions**
 
      Paramètre **String[]** facultatif.
 
@@ -261,7 +261,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Pour plus d’informations, consultez l’option **/D** dans la page [Informations de référence sur la ligne de commande MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Reportez-vous également au paramètre **UndefinePreprocessorDefinitions** de ce tableau.
 
--   **ProxyFileName**
+- **ProxyFileName**
 
      Paramètre **String** facultatif.
 
@@ -269,7 +269,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Pour plus d’informations, consultez l’option **/proxy** dans la page [Informations de référence sur la ligne de commande MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **RedirectOutputAndErrors**
+- **RedirectOutputAndErrors**
 
      Paramètre **String** facultatif.
 
@@ -277,7 +277,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Pour plus d’informations, consultez l’option **/o** dans la page [Informations de référence sur la ligne de commande MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **ServerStubFile**
+- **ServerStubFile**
 
      Paramètre **String** facultatif.
 
@@ -285,13 +285,13 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Pour plus d’informations, consultez l’option **/sstub** dans la page [Informations de référence sur la ligne de commande MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Reportez-vous également au paramètre **ClientStubFile** de ce tableau.
 
--   **Source**
+- **Source**
 
      Paramètre `ITaskItem[]` requis.
 
      Spécifie la liste des fichiers sources séparés par des espaces.
 
--   **StructMemberAlignment**
+- **StructMemberAlignment**
 
      Paramètre **String** facultatif.
 
@@ -309,7 +309,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Pour plus d’informations, consultez l’option **/Zp** dans la page [Informations de référence sur la ligne de commande MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). L’option **/Zp** est équivalente à l’option **/pack** et à l’ancienne option **/align**.
 
--   **SuppressCompilerWarnings**
+- **SuppressCompilerWarnings**
 
      Paramètre **Boolean** facultatif.
 
@@ -317,7 +317,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Pour plus d’informations, consultez l’option **/no_warn** dans la page [Informations de référence sur la ligne de commande MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **SuppressStartupBanner**
+- **SuppressStartupBanner**
 
      Paramètre `Boolean` facultatif.
 
@@ -325,7 +325,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Pour plus d’informations, consultez l’option **/nologo** dans la page [Informations de référence sur la ligne de commande MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **TargetEnvironment**
+- **TargetEnvironment**
 
      Paramètre **String** facultatif.
 
@@ -342,13 +342,13 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Pour plus d’informations, consultez l’option **/env** dans la page [Informations de référence sur la ligne de commande MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **TrackerLogDirectory**
+- **TrackerLogDirectory**
 
      Paramètre `String` facultatif.
 
      Spécifie le répertoire intermédiaire dans lequel sont stockés les fichiers journaux de suivi de cette tâche.
 
--   **TypeLibFormat**
+- **TypeLibFormat**
 
      Paramètre **String** facultatif.
 
@@ -363,7 +363,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Pour plus d’informations, consultez les options **/newtlb** et **/oldtlb** dans la page [Informations de référence sur la ligne de commande MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **TypeLibraryName**
+- **TypeLibraryName**
 
      Paramètre **String** facultatif.
 
@@ -371,7 +371,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Pour plus d’informations, consultez l’option **/tlb** dans la page [Informations de référence sur la ligne de commande MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **UndefinePreprocessorDefinitions**
+- **UndefinePreprocessorDefinitions**
 
      Paramètre **String[]** facultatif.
 
@@ -379,7 +379,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Pour plus d’informations, consultez l’option **/U** dans la page [Informations de référence sur la ligne de commande MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Reportez-vous également au paramètre **PreprocessorDefinitions** de ce tableau.
 
--   **ValidateAllParameters**
+- **ValidateAllParameters**
 
      Paramètre `Boolean` facultatif.
 
@@ -387,7 +387,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Pour plus d’informations, consultez les options **/robust** et **/no_robust** dans la page [Informations de référence sur la ligne de commande MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **WarnAsError**
+- **WarnAsError**
 
      Paramètre `Boolean` facultatif.
 
@@ -397,7 +397,7 @@ Encapsule l’outil du compilateur MIDL (Microsoft Interface Definition Language
 
      Pour plus d’informations, consultez l’option **/WX** dans la page [Informations de référence sur la ligne de commande MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Reportez-vous également au paramètre **WarningLevel** de ce tableau.
 
--   **WarningLevel**
+- **WarningLevel**
 
      Paramètre **String** facultatif.
 

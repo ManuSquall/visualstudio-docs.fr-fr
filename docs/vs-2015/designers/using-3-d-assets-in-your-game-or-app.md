@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0ca0150b44bbed9f411af25c5ce3805e553e8272
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c475366c190e5ac008394f8642f64da022532a0a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775109"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064737"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Utilisation de ressources 3D dans vos jeux et applications
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ Cet article explique comment vous pouvez utiliser [!INCLUDE[vsprvs](../includes/
   
 #### <a name="to-add-the-build-customizations-to-your-project"></a>Pour ajouter les personnalisations de la build à votre projet  
   
-1.  Dans **l’Explorateur de solutions**, ouvrez le menu contextuel du projet et choisissez **Dépendances de build**, **Personnalisations de la build**. La boîte de dialogue **Fichiers de personnalisation de la build Visual C++** s’affiche.  
+1. Dans **l’Explorateur de solutions**, ouvrez le menu contextuel du projet et choisissez **Dépendances de build**, **Personnalisations de la build**. La boîte de dialogue **Fichiers de personnalisation de la build Visual C++** s’affiche.  
   
-2.  Sous **Fichiers de personnalisation de la build disponibles**, cochez les cases qui correspondent aux types de ressources que vous voulez utiliser dans votre projet, comme décrit dans ce tableau :  
+2. Sous **Fichiers de personnalisation de la build disponibles**, cochez les cases qui correspondent aux types de ressources que vous voulez utiliser dans votre projet, comme décrit dans ce tableau :  
   
     |Type de ressource|Nom de personnalisation de la build|  
     |----------------|------------------------------|  
@@ -45,7 +45,7 @@ Cet article explique comment vous pouvez utiliser [!INCLUDE[vsprvs](../includes/
     |Modèles 3D|**MeshContentTask(.targets, .props)**|  
     |Nuanceurs|**ShaderGraphContentTask(.targets, .props)**|  
   
-3.  Sélectionnez le bouton **OK** .  
+3. Sélectionnez le bouton **OK** .  
   
 ## <a name="including-assets-in-your-build"></a>Inclusion de ressources dans votre build  
  Maintenant que votre projet sait quels types de ressources 3D vous voulez utiliser, l'étape suivante consiste à lui indiquer les fichiers qui sont des ressources 3D et les types de ressources auxquels elles correspondent.  
@@ -76,42 +76,42 @@ Cet article explique comment vous pouvez utiliser [!INCLUDE[vsprvs](../includes/
   
 #### <a name="to-configure-content-pipeline-properties"></a>Pour configurer les propriétés du pipeline de contenu  
   
-1.  Dans **l’Explorateur de solutions**, dans votre projet, ouvrez le menu contextuel du fichier de ressources, puis choisissez **Propriétés**. La boîte de dialogue **Page de propriétés** de la ressource s’affiche.  
+1. Dans **l’Explorateur de solutions**, dans votre projet, ouvrez le menu contextuel du fichier de ressources, puis choisissez **Propriétés**. La boîte de dialogue **Page de propriétés** de la ressource s’affiche.  
   
-2.  Vérifiez que les valeurs définies des propriétés **Configuration** et **Plateforme** sont celles auxquelles vous voulez que vos modifications s’appliquent.  
+2. Vérifiez que les valeurs définies des propriétés **Configuration** et **Plateforme** sont celles auxquelles vous voulez que vos modifications s’appliquent.  
   
-3.  Sous **Propriétés de configuration**, choisissez le nœud de pipeline de contenu (par exemple, **Pipeline de contenu d’image** pour les ressources de texture et d’image) puis, dans la grille des propriétés, affectez aux propriétés les valeurs appropriées. Par exemple, pour générer des mipmaps pour une ressource de texture au moment de la génération, affectez à la propriété **Générer des mips** la valeur **Oui**.  
+3. Sous **Propriétés de configuration**, choisissez le nœud de pipeline de contenu (par exemple, **Pipeline de contenu d’image** pour les ressources de texture et d’image) puis, dans la grille des propriétés, affectez aux propriétés les valeurs appropriées. Par exemple, pour générer des mipmaps pour une ressource de texture au moment de la génération, affectez à la propriété **Générer des mips** la valeur **Oui**.  
   
-4.  Sélectionnez le bouton **OK** .  
+4. Sélectionnez le bouton **OK** .  
   
 ### <a name="image-content-pipeline-configuration"></a>Configuration du pipeline de contenu d'image  
  Quand vous utilisez l'outil de pipeline de contenu d'image pour générer une ressource de texture, vous pouvez compresser la texture de différentes manières, indiquer si les niveaux MIP doivent être générés au moment de la génération, puis modifier le nom du fichier de sortie.  
   
-|Property|Description|  
+|Propriété|Description|  
 |--------------|-----------------|  
 |**Compresser**|Spécifie le type de compression utilisé pour le fichier de sortie.<br /><br /> Les options disponibles sont les suivantes :<br /><br /> -   **Aucune compression**<br />-   **Compression BC1_UNORM**<br />-   **Compression BC1_UNORM_SRGB**<br />-   **Compression BC2_UNORM**<br />-   **Compression BC2_UNORM_SRGB**<br />-   **Compression BC3_UNORM**<br />-   **Compression BC3_UNORM_SRGB**<br />-   **Compression BC4_UNORM**<br />-   **Compression BC4_SNORM**<br />-   **Compression BC5_UNORM**<br />-   **Compression BC5_SNORM**<br />-   **Compression BC6H_UF16**<br />-   **Compression BC6H_SF16**<br />-   **Compression BC7_UNORM**<br />-   **Compression BC7_UNORM_SRGB**<br /><br /> Pour plus d’informations sur les formats de compression pris en charge dans les différentes versions de DirectX, consultez [Guide de programmation pour DXGI](http://go.microsoft.com/fwlink/p/?LinkId=246265).|  
 |Convertir dans un format alpha prémultiplié|**Oui** pour convertir l’image dans un format alpha prémultiplié dans le fichier de sortie ; sinon, **Non**. Seul le fichier de sortie est modifié ; l'image source est inchangée.|  
 |**Générer des mips**|**Oui** pour générer une chaîne MIP complète au moment de la génération et l’inclure dans le fichier de sortie ; sinon, **Non**. Si la valeur **Non** est sélectionnée et que le fichier source contient déjà une chaîne mipmap, le fichier de sortie a une chaîne MIP ; sinon, le fichier de sortie n’a pas de chaîne MIP.|  
-|**Sortie de contenu**|Spécifie le nom du fichier de sortie. **Important :** La modification de l’extension du nom de fichier de sortie n’a aucun effet sur son format.|  
+|**Sortie de contenu**|Spécifie le nom du fichier de sortie. **Important :**  La modification de l'extension de nom de fichier du fichier de sortie n'a aucun effet sur son format.|  
   
 ### <a name="mesh-content-pipeline-configuration"></a>Configuration du pipeline de contenu de maillage  
  Quand vous utilisez l'outil de pipeline de contenu de maillage pour générer une ressource de maillage, vous pouvez modifier le nom du fichier de sortie.  
   
-|Property|Description|  
+|Propriété|Description|  
 |--------------|-----------------|  
-|**Sortie de contenu**|Spécifie le nom du fichier de sortie. **Important :** La modification de l’extension du nom de fichier de sortie n’a aucun effet sur son format.|  
+|**Sortie de contenu**|Spécifie le nom du fichier de sortie. **Important :**  La modification de l'extension de nom de fichier du fichier de sortie n'a aucun effet sur son format.|  
   
 ### <a name="shader-content-pipeline-configuration"></a>Configuration du pipeline de contenu de nuanceur  
  Quand vous utilisez l'outil de pipeline de contenu de nuanceur pour générer une ressource de nuanceur, vous pouvez modifier le nom du fichier de sortie.  
   
-|Property|Description|  
+|Propriété|Description|  
 |--------------|-----------------|  
-|**Sortie de contenu**|Spécifie le nom du fichier de sortie. **Important :** La modification de l’extension du nom de fichier de sortie n’a aucun effet sur son format.|  
+|**Sortie de contenu**|Spécifie le nom du fichier de sortie. **Important :**  La modification de l'extension de nom de fichier du fichier de sortie n'a aucun effet sur son format.|  
   
 ## <a name="loading-and-using-3-d-assets-at-run-time"></a>Chargement et utilisation de ressources 3D au moment de l'exécution  
   
 ### <a name="using-textures-and-images"></a>Utilisation de textures et d'images  
- Direct3D propose des fonctions de création de ressources de texture. Dans Direct3D 11, la bibliothèque d'utilitaires D3DX11 fournit des fonctions supplémentaires pour créer des ressources de texture et des affichages de ressources directement à partir de fichiers image. Pour plus d’informations sur la création d’une ressource de texture dans Direct3D 11, consultez [Textures](http://go.microsoft.com/fwlink/p/?LinkID=246267). Pour plus d’informations sur l’utilisation de la bibliothèque D3DX11 pour créer une ressource de texture ou un affichage des ressources à partir d’un fichier image, consultez [Guide pratique pour initialiser une texture à partir d’un fichier](http://go.microsoft.com/fwlink/p/?LinkId=246268).  
+ Direct3D propose des fonctions de création de ressources de texture. Dans Direct3D 11, la bibliothèque d'utilitaires D3DX11 fournit des fonctions supplémentaires pour créer des ressources de texture et des affichages de ressources directement à partir de fichiers image. Pour plus d’informations sur la création d’une ressource de texture dans Direct3D 11, consultez [Textures](http://go.microsoft.com/fwlink/p/?LinkID=246267). Pour plus d’informations sur la façon d’utiliser la bibliothèque D3DX11 pour créer une ressource de texture ou un affichage des ressources à partir d’un fichier image, consultez [Guide pratique pour Initialiser une Texture à partir d’un fichier](http://go.microsoft.com/fwlink/p/?LinkId=246268).  
   
 ### <a name="using-3-d-models"></a>Utilisation de modèles 3D  
  Direct3D 11 ne propose pas de fonctions permettant de créer des ressources à partir de modèles 3D. À la place, vous devez écrire du code qui lise le fichier de modèle 3D et crée des mémoires tampons de vertex et d'index qui représentent le modèle 3D et toutes les ressources nécessaires au modèle (par exemple, des textures ou des nuanceurs).  
@@ -202,8 +202,8 @@ cbuffer MiscVars : register(b3)
   
 |Titre|Description|  
 |-----------|-----------------|  
-|[Comment : exporter une texture qui contient des mipmaps](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Explique comment utiliser le pipeline de contenu d'image pour exporter une texture qui contient des mipmaps précalculés.|  
-|[Comment : exporter une texture qui possède des valeurs alpha prémultipliées](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Explique comment utiliser le pipeline de contenu d'image pour exporter une texture qui contient des valeurs alpha prémultipliées.|  
-|[Comment : exporter une texture pour l’utiliser avec des applications JavaScript ou Direct2D](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Explique comment utiliser le pipeline de contenu d'image pour exporter une texture utilisable dans une application Direct2D ou Javascript.|  
+|[Guide pratique pour Exporter une Texture qui contient des Mipmaps](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Explique comment utiliser le pipeline de contenu d'image pour exporter une texture qui contient des mipmaps précalculés.|  
+|[Guide pratique pour Exporter une Texture qui a des valeurs Alpha prémultipliées](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Explique comment utiliser le pipeline de contenu d'image pour exporter une texture qui contient des valeurs alpha prémultipliées.|  
+|[Guide pratique pour Exporter une Texture à utiliser avec Direct2D applications JavaScript ou Direct2d](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Explique comment utiliser le pipeline de contenu d'image pour exporter une texture utilisable dans une application Direct2D ou Javascript.|  
 |[Utilisation de ressources 3D pour les jeux et les applications](../designers/working-with-3-d-assets-for-games-and-apps.md)|Décrit les outils d'édition fournis par Visual Studio en vue de créer et manipuler des ressources 3D, à savoir, textures, images, modèles 3D et nuanceurs.|  
-|[Comment : exporter un nuanceur](../designers/how-to-export-a-shader.md)|Explique comment exporter un nuanceur à partir du concepteur Shader.|
+|[Guide pratique pour exporter un nuanceur](../designers/how-to-export-a-shader.md)|Explique comment exporter un nuanceur à partir du concepteur Shader.|

@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Objets manquants en raison état de l’appareil | Microsoft Docs'
+title: 'Procédure pas à pas : Objets manquants en raison de l’état de l’appareil | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 1b0d2bbd-0729-4aa5-8308-70c5bf1468c5
@@ -8,25 +8,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e42e1ce4cc1ccc0a01905046b33e4587964f8ce
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 0e85aa8fc5af3f32f117b112e8624962a49d90c6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712071"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047450"
 ---
-# <a name="walkthrough-missing-objects-due-to-device-state"></a>Procédure pas à pas : objets manquants en raison de l'état du périphérique
+# <a name="walkthrough-missing-objects-due-to-device-state"></a>Procédure pas à pas : objets manquants en raison de l’état de l’appareil
 Cette procédure pas à pas montre comment utiliser Graphics Diagnostics dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour examiner un objet qui est manquant à cause de la configuration incorrecte de l’état de l’appareil.
 
  Cette procédure pas à pas montre comment effectuer les opérations suivantes :
 
--   Utiliser la fenêtre **Liste des événements Graphics** pour rechercher les sources potentielles du problème.
+- Utiliser la fenêtre **Liste des événements Graphics** pour rechercher les sources potentielles du problème.
 
--   Utiliser la fenêtre **Étapes de canalisation Graphics** pour vérifier l’effet des appels de l’API Direct3D `DrawIndexed` .
+- Utiliser la fenêtre **Étapes de canalisation Graphics** pour vérifier l’effet des appels de l’API Direct3D `DrawIndexed` .
 
--   Utiliser la fenêtre **Historique des pixels Graphics** pour identifier le problème de façon plus précise.
+- Utiliser la fenêtre **Historique des pixels Graphics** pour identifier le problème de façon plus précise.
 
--   Examiner l’état de l’appareil pour déceler les problèmes potentiels ou les configurations incorrectes.
+- Examiner l’état de l’appareil pour déceler les problèmes potentiels ou les configurations incorrectes.
 
 ## <a name="scenario"></a>Scénario
  L’une des raisons pour lesquelles les objets ne s’affichent parfois pas à l’endroit prévu dans une application 3D est une configuration incorrecte de l’appareil graphique qui entraîne l’exclusion des objets du rendu. Cela se produit, par exemple, quand l’ordre d’enroulement provoque à tort la suppression des triangles ou quand la fonction de test Depth Test donne lieu au rejet de tous les pixels de l’objet.

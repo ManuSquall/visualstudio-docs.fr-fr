@@ -1,12 +1,9 @@
 ---
 title: Définir et installer une extension de modélisation | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML - extending
 - UML model, extending
@@ -14,13 +11,13 @@ ms.assetid: 82a58dc5-c7cf-4521-a6da-7ff09cd0de9d
 caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6f7895916cc4ee877c53b056f703d8e46b64b409
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: cf370b4ca0e0a4d14c482c6ece46b79d2d224d34
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51805565"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049735"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Définir et installer une extension de modélisation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +32,7 @@ Dans Visual Studio, vous pouvez définir des extensions de diagrammes de modéli
 ## <a name="creating-a-modeling-extension-solution"></a>Création d’une solution d’extension de modélisation  
  Pour définir une extension de modélisation, vous devez créer une solution contenant ces projets :  
   
-- Un projet d'Extension d'intégration [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (VSIX). Cela génère un fichier qui agit comme un programme d’installation pour les composants de votre extension.  
+- Un projet d’Extension d’intégration [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (VSIX). Cela génère un fichier qui agit comme un programme d’installation pour les composants de votre extension.  
   
 - Un projet de bibliothèque de classes, nécessaire pour les composants qui incluent du code de programme.  
   
@@ -45,35 +42,35 @@ Dans Visual Studio, vous pouvez définir des extensions de diagrammes de modéli
   
 #### <a name="to-create-a-class-library-project-for-menu-commands-gesture-handlers-or-validation"></a>Pour créer un projet de bibliothèque de classes pour des commandes de menu, des gestionnaires de mouvements ou la validation  
   
-1.  Dans le menu **Fichier** , choisissez **Nouveau**, **Projet**.  
+1. Dans le menu **Fichier** , choisissez **Nouveau**, **Projet**.  
   
-2.  Sous **Modèles installés**, sélectionnez **Visual C#** ou **Visual Basic**, puis choisissez **Bibliothèque de classes**.  
+2. Sous **Modèles installés**, sélectionnez **Visual C#** ou **Visual Basic**, puis choisissez **Bibliothèque de classes**.  
   
 #### <a name="to-create-a-vsix-project"></a>Pour créer un projet VSIX  
   
-1.  Si vous créez un composant avec du code, il est plus facile de commencer par créer le projet de bibliothèque de classes. Vous ajouterez votre code à ce projet.  
+1. Si vous créez un composant avec du code, il est plus facile de commencer par créer le projet de bibliothèque de classes. Vous ajouterez votre code à ce projet.  
   
-2.  Créez un projet VSIX.  
+2. Créez un projet VSIX.  
   
-    1.  Dans l’ **Explorateur de solutions**, dans le menu contextuel de la solution, choisissez **Ajouter**, puis **Nouveau projet**.  
+    1. Dans l’ **Explorateur de solutions**, dans le menu contextuel de la solution, choisissez **Ajouter**, puis **Nouveau projet**.  
   
-    2.  Sous **Modèles installés**, développez **Visual C#** ou **Visual Basic**, puis sélectionnez **Extensibilité**. Dans la colonne du milieu, choisissez **Projet VSIX**.  
+    2. Sous **Modèles installés**, développez **Visual C#** ou **Visual Basic**, puis sélectionnez **Extensibilité**. Dans la colonne du milieu, choisissez **Projet VSIX**.  
   
-3.  Définissez le projet VSIX comme projet de démarrage de la solution.  
+3. Définissez le projet VSIX comme projet de démarrage de la solution.  
   
-    -   Dans l’Explorateur de solutions, dans le menu contextuel du projet VSIX, choisissez **Définir comme projet de démarrage**.  
+    - Dans l’Explorateur de solutions, dans le menu contextuel du projet VSIX, choisissez **Définir comme projet de démarrage**.  
   
-4.  Ouvrez **source.extension.vsixmanifest**. Le fichier s’ouvre dans l’éditeur de manifeste.  
+4. Ouvrez **source.extension.vsixmanifest**. Le fichier s’ouvre dans l’éditeur de manifeste.  
   
-5.  Sous l’onglet **Métadonnées** , définissez les champs de nom et de description de l’extension VSIX.  
+5. Sous l’onglet **Métadonnées** , définissez les champs de nom et de description de l’extension VSIX.  
   
-6.  Sous l’onglet **Cibles d’installation** , choisissez **Nom** et définissez les versions de Visual Studio comme cibles.  
+6. Sous l’onglet **Cibles d’installation** , choisissez **Nom** et définissez les versions de Visual Studio comme cibles.  
   
-7.  Sous l’onglet **Composants** , ajoutez vos composants à l’extension Visual Studio.  
+7. Sous l’onglet **Composants** , ajoutez vos composants à l’extension Visual Studio.  
   
-    1.  Choisissez **Nouveau**.  
+    1. Choisissez **Nouveau**.  
   
-    2.  Pour un composant avec du code, définissez les champs suivants dans la boîte de dialogue **Ajouter un nouveau composant** :  
+    2. Pour un composant avec du code, définissez les champs suivants dans la boîte de dialogue **Ajouter un nouveau composant** :  
   
         |||  
         |-|-|  
@@ -100,36 +97,36 @@ Dans Visual Studio, vous pouvez définir des extensions de diagrammes de modéli
   
 #### <a name="to-run-an-extension-during-its-development"></a>Pour exécuter une extension durant son développement  
   
-1.  Dans le menu [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **de** , choisissez **Start deging**.  
+1. Dans le menu [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **de** , choisissez **Start deging**.  
   
      Le projet est généré et une nouvelle instance de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] démarre en mode expérimental.  
   
-    -   Vous pouvez également choisir **Exécuter sans débogage**. Cela réduit le temps nécessaire au démarrage du programme.  
+    - Vous pouvez également choisir **Exécuter sans débogage**. Cela réduit le temps nécessaire au démarrage du programme.  
   
-2.  Créez ou ouvrez un projet de modélisation dans l’instance expérimentale de Visual Studio et créez ou ouvrez un diagramme.  
+2. Créez ou ouvrez un projet de modélisation dans l’instance expérimentale de Visual Studio et créez ou ouvrez un diagramme.  
   
      Votre extension se charge et s’exécute.  
   
-3.  Si vous avez utilisé l’option **Exécuter sans débogage** mais que vous souhaitez utiliser le débogueur, revenez à l’instance principale de Visual Studio. Dans le menu **Déboguer** , cliquez sur **Attacher au processus**. Dans la boîte de dialogue, sélectionnez l’instance expérimentale de Visual Studio, dont le nom de programme est **devenv**.  
+3. Si vous avez utilisé l’option **Exécuter sans débogage** mais que vous souhaitez utiliser le débogueur, revenez à l’instance principale de Visual Studio. Dans le menu **Déboguer** , cliquez sur **Attacher au processus**. Dans la boîte de dialogue, sélectionnez l’instance expérimentale de Visual Studio, dont le nom de programme est **devenv**.  
   
-##  <a name="Installing"></a> Installation et désinstallation d’une extension  
+## <a name="Installing"></a> Installation et désinstallation d’une extension  
  Procédez comme suit pour exécuter votre extension dans l’instance principale de Visual Studio sur votre ordinateur ou sur d’autres ordinateurs.  
   
-1.  Sur votre ordinateur, recherchez le fichier **.vsix** généré par votre projet d’extension.  
+1. Sur votre ordinateur, recherchez le fichier **.vsix** généré par votre projet d’extension.  
   
-    1.  Dans l’ **Explorateur de solutions**, dans le menu contextuel de votre projet, choisissez **Ouvrir le dossier dans l’Explorateur Windows**.  
+    1. Dans l’ **Explorateur de solutions**, dans le menu contextuel de votre projet, choisissez **Ouvrir le dossier dans l’Explorateur Windows**.  
   
-    2.  Recherchez le fichier **bin\\\*\\**_VotreProjet_**.vsix**  
+    2. Recherchez le fichier **bin\\\*\\**_VotreProjet_**.vsix**  
   
-2.  Copiez le fichier **.vsix** sur l’ordinateur cible sur lequel vous souhaitez installer l’extension. Il peut s’agir de votre propre ordinateur ou d’un autre ordinateur.  
+2. Copiez le fichier **.vsix** sur l’ordinateur cible sur lequel vous souhaitez installer l’extension. Il peut s’agir de votre propre ordinateur ou d’un autre ordinateur.  
   
-    -   L’ordinateur cible doit avoir l’une des éditions de Visual Studio que vous avez spécifiées sous l’onglet **Cibles d’installation** de **source.extension.vsixmanifest**.  
+    - L’ordinateur cible doit avoir l’une des éditions de Visual Studio que vous avez spécifiées sous l’onglet **Cibles d’installation** de **source.extension.vsixmanifest**.  
   
-3.  Sur l’ordinateur cible, ouvrez le fichier **.vsix** , par exemple en double-cliquant dessus.  
+3. Sur l’ordinateur cible, ouvrez le fichier **.vsix** , par exemple en double-cliquant dessus.  
   
      Le**Programme d’installation des extensions Visual Studio** s’ouvre et installe l’extension.  
   
-4.  Démarrez ou redémarrez Visual Studio.  
+4. Démarrez ou redémarrez Visual Studio.  
   
 #### <a name="to-uninstall-an-extension"></a>Pour désinstaller une extension  
   
@@ -141,13 +138,10 @@ Dans Visual Studio, vous pouvez définir des extensions de diagrammes de modéli
   
    Exceptionnellement, une extension défaillante ne parvient pas à se charger et crée un rapport dans la fenêtre d’erreur, mais ne s’affiche pas dans le Gestionnaire d’extensions. Dans ce cas, vous pouvez supprimer l’extension en supprimant le fichier à partir de l’emplacement suivant où *% LocalAppData%* est généralement *nom_lecteur*: \Users\\*nom d’utilisateur*\AppData\Local :  
   
-   *%LocalAppData%* **\Microsoft\VisualStudio\\[version] \Extensions**  
+   *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**  
   
 ## <a name="see-also"></a>Voir aussi  
  [Définir un profil pour étendre UML](../modeling/define-a-profile-to-extend-uml.md)   
  [Définir un personnalisé élément de boîte à outils de modélisation](../modeling/define-a-custom-modeling-toolbox-item.md)   
  [Définir des contraintes de validation pour les modèles UML](../modeling/define-validation-constraints-for-uml-models.md)   
  [Définir une commande de menu sur un diagramme de modélisation](../modeling/define-a-menu-command-on-a-modeling-diagram.md)
-
-
-

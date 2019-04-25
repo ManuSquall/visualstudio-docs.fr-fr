@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e7d64cc1ae937ee7e68d04c95b56cc02c7612d8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 32b3fddd13bd16ac2c846f02f54596ec846374b9
+ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710485"
+ms.lasthandoff: 04/12/2019
+ms.locfileid: "59537489"
 ---
 # <a name="create-custom-views-of-data-in-the-visual-studio-debugger-c-visual-basic-c"></a>Créer des vues personnalisées des données dans le débogueur Visual Studio (C#, Visual Basic, C++)
 
@@ -32,7 +32,7 @@ Le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] débogueur fournit 
 
 ## <a name="create-custom-views-of-data-in-variable-windows-and-datatips"></a>Créer des vues personnalisées des données dans les fenêtres de variables et les DataTips
 
- Un grand nombre de la [fenêtres du débogueur](../debugger/debugger-windows.md), telles que la **automatique** et **espion** windows, permettent d’inspecter des variables. Vous pouvez personnaliser les types de mode natifs, des objets gérés, et vos propres types sont affichés dans les fenêtres de variables du débogueur et dans [DataTips](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). Pour plus d’informations, consultez [créer des vues personnalisées d’objets natifs](../debugger/create-custom-views-of-native-objects.md) et [créer des vues personnalisées d’objets](../debugger/create-custom-views-of-dot-managed-objects.md).
+ Un grand nombre de la [fenêtres du débogueur](../debugger/debugger-windows.md), telles que la **automatique** et **espion** windows, permettent d’inspecter des variables. Vous pouvez personnaliser comment C++ types, des objets gérés et vos propres types sont affichés dans les fenêtres de variables du débogueur et dans [DataTips](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). Pour plus d’informations, consultez [créer des vues personnalisées de C++ objets](../debugger/create-custom-views-of-native-objects.md) et [créer des vues personnalisées d’objets](../debugger/create-custom-views-of-dot-managed-objects.md).
 
 ## <a name="create-custom-visualizers"></a>Créer des visualiseurs personnalisés
 

@@ -21,14 +21,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9166cc6ae8695cc4e00688e4add998d61b394701
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c40f2ba0f9d8c5f629f37a9e40a94d38273edfd9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700002"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788952"
 ---
-# <a name="web-browser-environment-options-dialog-box"></a>Navigateur web, Environnement, boîte de dialogue Options
+# <a name="options-dialog-box-environment--web-browser"></a>Boîte de dialogue Options : Environnement \> Navigateur web
 
 Définit les options à la fois pour le navigateur web interne et pour Internet Explorer. Pour accéder à cette boîte de dialogue, cliquez sur **Options** dans le menu **Outils**, développez le dossier **Environnement**, puis sélectionnez **Navigateur web**.
 
@@ -50,11 +50,11 @@ Vous permet de désigner une page de recherche pour le navigateur web interne. C
 
 Définit l’éditeur utilisé pour ouvrir une page web quand vous choisissez **Afficher la source** dans la page à partir du navigateur web interne.
 
--   **Éditeur de code source** Sélectionnez cette option pour afficher le code source dans [l’éditeur](../../ide/writing-code-in-the-code-and-text-editor.md).
+- **Éditeur de code source** Sélectionnez cette option pour afficher le code source dans [l’éditeur](../../ide/writing-code-in-the-code-and-text-editor.md).
 
--   **Éditeur HTML** Sélectionnez cette option pour afficher le code source dans le [concepteur HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Utilisez cette sélection pour modifier la page web dans l’une des deux vues : en mode Création ou dans la vue Source standard basée sur du texte.
+- **Éditeur HTML** Sélectionnez cette option pour afficher le code source dans le [concepteur HTML](https://msdn.microsoft.com/Library/640043cc-3657-4677-a091-bc315e636477). Utilisez cette sélection pour modifier la page web dans l’une des deux vues : en mode Création ou dans la vue Source standard basée sur du texte.
 
--   **Éditeur externe** Sélectionnez cette option pour afficher le code source dans un autre éditeur. Spécifiez le chemin de l’éditeur de votre choix, par exemple Notepad.exe.
+- **Éditeur externe** Sélectionnez cette option pour afficher le code source dans un autre éditeur. Spécifiez le chemin de l’éditeur de votre choix, par exemple Notepad.exe.
 
 ## <a name="internet-explorer-options"></a>Options Internet Explorer
 

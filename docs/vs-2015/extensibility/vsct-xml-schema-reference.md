@@ -1,27 +1,22 @@
 ---
 title: Référence du schéma XML VSCT | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 helpviewer_keywords:
 - Visual Studio command table configuration files (VSCT), XML schema
 - VSCT XML schema elements
 ms.assetid: 49e7efae-e713-4762-a824-96fdaf92cdc9
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bff3fb766c11987b84ba88b5c86ab3c8d24dbc94
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 9d95275f5b4ffd91f993fc3e5a650d3d160fa2a4
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51755864"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953235"
 ---
 # <a name="vsct-xml-schema-reference"></a>Informations de référence sur le schéma XML VSCT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +37,7 @@ Fournit un tableau d’éléments de schéma du compilateur de Table de commande
   
 - {6D484634-E53D-4a2c-ADCB-55145C9362C8}  
   
-- {0x6d484634, 0xe53d, 0x4a2c, {0xad, 0xcb, 0x55, 0 x 14, 0x5c, 0 x 93, 0 x 62, 0xc8}}  
+- { 0x6d484634, 0xe53d, 0x4a2c, { 0xad, 0xcb, 0x55, 0x14, 0x5c, 0x93, 0x62, 0xc8 } }  
   
   Commentaires XML peuvent être utilisés, mais les outils d’interface (GUI) utilisateur graphique aller-retour peuvent les ignorer. Le contenu de \<Annotation > éléments sont garanties pour être conservée, quel que soit le format.  
   
@@ -82,4 +77,3 @@ Fournit un tableau d’éléments de schéma du compilateur de Table de commande
 ## <a name="see-also"></a>Voir aussi  
  [Comment VSPackages ajoute des éléments d’Interface utilisateur](../extensibility/internals/how-vspackages-add-user-interface-elements.md)   
  [Routage des commandes dans VSPackages](../extensibility/internals/command-routing-in-vspackages.md)
-

@@ -17,7 +17,7 @@ ms.locfileid: "55908437"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>Procédure : Définir des points d’arrêt dans les workflows
 
-Lorsque vous utilisez le Concepteur de flux de travail, vous pouvez définir des points d’arrêt sur vos workflows graphiques comme vous le feriez dans le code Visual Basic ou c#. Comme prévu, l'exécution de workflow s'arrête à chaque point d'arrêt que vous définissez.
+Lorsque vous utilisez le Concepteur de flux de travail, vous pouvez définir des points d’arrêt sur vos workflows graphiques comme vous le feriez dans le code Visual Basic ou C#. Comme prévu, l'exécution de workflow s'arrête à chaque point d'arrêt que vous définissez.
 
 Un point d’arrêt a trois états : *En attente*, *lié*, et *erreur*. Lorsque vous définissez un point d'arrêt, il a l'état En attente et est représenté par une icône rouge unie. Lorsque l'exécution a chargé le type de workflow, il adopte l'état Lié. Si vous spécifiez un format incorrect pour le point d'arrêt, par exemple en indiquant un nom d'activité non valide, un message d'erreur s'affiche. Le point d'arrêt est ajouté à la fenêtre de points d'arrêt, mais il est marqué d'un petit « x ».
 

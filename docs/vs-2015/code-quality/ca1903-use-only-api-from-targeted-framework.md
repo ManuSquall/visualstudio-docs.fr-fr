@@ -15,24 +15,24 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e0382ab59745fccde53d09f88222b64d36a9bd6d
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 146563dfa358367e7c22f8ad37564b85d64eaf1d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "59001822"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647153"
 ---
 # <a name="ca1903-use-only-api-from-targeted-framework"></a>CA1903 : Utiliser uniquement l'API à partir du Framework cible
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Pour obtenir la dernière documentation sur Visual Studio, consultez [CA1903 : Utiliser uniquement l’API du framework cible](https://docs.microsoft.com/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework) sur docs.microsoft.com.  
+Pour obtenir la dernière documentation sur Visual Studio, consultez [CA1903 : Utiliser uniquement l’API du framework cible](https://docs.microsoft.com/visualstudio/code-quality/ca1903-use-only-api-from-targeted-framework).  
   
 |||  
 |-|-|  
 |TypeName|UseOnlyApiFromTargetedFramework|  
 |CheckId|CA1903|  
 |Category|Microsoft.Portability|  
-|Modification avec rupture|Avec rupture - lorsque déclenchée par rapport à la signature d’un type ou un membre extérieurement visible.<br /><br /> Sans rupture - lorsque déclenchée dans le corps d’une méthode.|  
+|Modification avec rupture|Avec rupture - lorsque déclenchée par rapport à la signature d’un type ou un membre extérieurement visible.<br /><br /> Sans rupture - lorsqu’il est déclenché dans le corps d’une méthode.|  
   
 ## <a name="cause"></a>Cause  
  Un membre ou un type utilise un membre ou un type qui a été introduit dans un service pack qui n’était pas inclus dans le framework ciblé du projet.  
@@ -53,7 +53,7 @@ Pour obtenir la dernière documentation sur Visual Studio, consultez [CA1903 : 
  Pour modifier le framework cible d’un projet, consultez [ciblant une Version spécifique du .NET Framework](../ide/targeting-a-specific-dotnet-framework-version.md).  
   
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations  
- Pour supprimer la dépendance sur le service pack, supprimez toutes les utilisations du nouveau membre ou type. S’il s’agit d’une dépendance délibérée, supprimez l’avertissement ou désactivez cette règle.  
+ Pour supprimer la dépendance sur le service pack, supprimez toutes les utilisations du nouveau membre ou type. S’il s’agit d’une dépendance délibérée, supprimez l’avertissement ou désactiver cette règle.  
   
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements  
  Ne supprimez pas un avertissement de cette règle si ce n’est pas une dépendance délibérée sur le service pack spécifié. Dans ce cas, votre application peut échouer à s’exécuter sur les systèmes sans ce service pack installé. Supprimer l’avertissement ou de désactiver cette règle s’il s’agissait d’une dépendance délibérée.  

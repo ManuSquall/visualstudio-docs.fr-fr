@@ -15,14 +15,14 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c24f9cec4a599a8131ad41cdadb6d00946921922
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 311fdca1d56133d85e7b6daa36fe8e4d3a50d5ad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798957"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065413"
 ---
-# <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Guide pratique pour ajouter ou supprimer des espaces de noms importés (Visual Basic)
+# <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Procédure : Ajouter ou supprimer des espaces de noms importés (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L’importation d’un espace de noms vous permet d’utiliser des éléments issus de cet espace de noms dans votre code sans avoir à qualifier complètement l’élément. Par exemple, pour accéder à la méthode `Create` dans la classe `System.Messaging.MessageQueue`, vous pouvez importer l’espace de noms `System.Messaging` et simplement référencer l’élément dont vous avez besoin dans le code sous la forme `MessageQueue.Create`.  
@@ -31,22 +31,22 @@ L’importation d’un espace de noms vous permet d’utiliser des éléments is
   
 ### <a name="to-add-an-imported-namespace"></a>Pour ajouter un espace de noms importé  
   
-1.  Dans l’**Explorateur de solutions**, double-cliquez sur le nœud **Mon projet** du projet.  
+1. Dans l’**Explorateur de solutions**, double-cliquez sur le nœud **Mon projet** du projet.  
   
-2.  Dans le **Concepteur de projet**, cliquez sur l’onglet **Références**.  
+2. Dans le **Concepteur de projet**, cliquez sur l’onglet **Références**.  
   
-3.  Dans la liste **Espaces de noms importés**, cochez la case de l’espace de noms que vous souhaitez ajouter.  
+3. Dans la liste **Espaces de noms importés**, cochez la case de l’espace de noms que vous souhaitez ajouter.  
   
     > [!NOTE]
     >  Pour pouvoir être importé, l’espace de noms doit être dans un composant référencé. Si l’espace de noms n’apparaît pas dans la liste, vous devrez ajouter une référence au composant qui le contient. Pour plus d’informations, consultez [NIB Comment : Ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter référence](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 ### <a name="to-remove-an-imported-namespace"></a>Pour supprimer un espace de noms importé  
   
-1.  Dans l’**Explorateur de solutions**, double-cliquez sur le nœud **Mon projet** du projet.  
+1. Dans l’**Explorateur de solutions**, double-cliquez sur le nœud **Mon projet** du projet.  
   
-2.  Dans le **Concepteur de projet**, cliquez sur l’onglet **Références**.  
+2. Dans le **Concepteur de projet**, cliquez sur l’onglet **Références**.  
   
-3.  Dans la liste **Espaces de noms importés**, décochez la case de l’espace de noms que vous souhaitez supprimer.  
+3. Dans la liste **Espaces de noms importés**, décochez la case de l’espace de noms que vous souhaitez supprimer.  
   
 ## <a name="user-imports"></a>Importations utilisateur  
  Les importations utilisateur vous permettent d’importer une classe spécifique d’un espace de noms plutôt que l’espace de noms complet. Par exemple, votre application peut avoir une importation pour l’espace de noms `Systems.Diagnostics`, mais la seule classe de cet espace de noms qui vous intéresse est la classe `Debug`. Vous pouvez définir `System.Diagnostics.Debug` en tant qu’importation utilisateur, puis supprimer l’importation de `System.Diagnostics`.  
@@ -55,28 +55,28 @@ L’importation d’un espace de noms vous permet d’utiliser des éléments is
   
 #### <a name="to-add-a-user-import"></a>Pour ajouter une importation utilisateur  
   
-1.  Dans l’**Explorateur de solutions**, double-cliquez sur le nœud **Mon projet** du projet.  
+1. Dans l’**Explorateur de solutions**, double-cliquez sur le nœud **Mon projet** du projet.  
   
-2.  Dans le **Concepteur de projet**, cliquez sur l’onglet **Références**.  
+2. Dans le **Concepteur de projet**, cliquez sur l’onglet **Références**.  
   
-3.  Dans la zone de texte située sous la liste **Espaces de noms importés**, entrez le nom complet de l’espace de noms que vous souhaitez importer, notamment l’espace de noms racine.  
+3. Dans la zone de texte située sous la liste **Espaces de noms importés**, entrez le nom complet de l’espace de noms que vous souhaitez importer, notamment l’espace de noms racine.  
   
-4.  Cliquez sur le bouton **Ajouter une importation utilisateur** pour ajouter l’espace de noms à la liste **Espaces de noms importés**.  
+4. Cliquez sur le bouton **Ajouter une importation utilisateur** pour ajouter l’espace de noms à la liste **Espaces de noms importés**.  
   
     > [!NOTE]
     >  Le bouton **Ajouter une importation utilisateur** est désactivé si l’espace de noms figure déjà dans la liste. Vous ne pouvez pas ajouter deux fois une même importation.  
   
 #### <a name="to-update-a-user-import"></a>Pour mettre à jour une importation utilisateur  
   
-1.  Dans l’**Explorateur de solutions**, double-cliquez sur le nœud **Mon projet** du projet.  
+1. Dans l’**Explorateur de solutions**, double-cliquez sur le nœud **Mon projet** du projet.  
   
-2.  Dans le **Concepteur de projet**, cliquez sur l’onglet **Références**.  
+2. Dans le **Concepteur de projet**, cliquez sur l’onglet **Références**.  
   
-3.  Dans la liste **Espaces de noms importés**, sélectionnez l’espace de noms que vous souhaitez changer.  
+3. Dans la liste **Espaces de noms importés**, sélectionnez l’espace de noms que vous souhaitez changer.  
   
-4.  Dans la zone de texte située sous la liste **Espaces de noms importés**, entrez le nom du nouvel espace de noms.  
+4. Dans la zone de texte située sous la liste **Espaces de noms importés**, entrez le nom du nouvel espace de noms.  
   
-5.  Cliquez sur le bouton **Mettre à jour l’importation utilisateur** pour mettre à jour l’espace de noms dans la liste **Espaces de noms importés**.  
+5. Cliquez sur le bouton **Mettre à jour l’importation utilisateur** pour mettre à jour l’espace de noms dans la liste **Espaces de noms importés**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Gestion des références dans un projet](../ide/managing-references-in-a-project.md)

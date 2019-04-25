@@ -8,39 +8,39 @@ ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 83ac80504314244f30bae50f219be125109a389c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bdaaacd84cdc23b56fd76d7f4e66184868ad533c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947668"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075816"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Polices et mise en forme pour Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-##  <a name="BKMK_TheEnvironmentFont"></a> La police d’environnement
+## <a name="BKMK_TheEnvironmentFont"></a> La police d’environnement
  Toutes les polices dans Visual Studio doivent être exposés à l’utilisateur pour la personnalisation. Cela s’effectue principalement via le **polices et couleurs** page dans le **Outils > Options** boîte de dialogue. Les trois principales catégories de paramètres de police sont :
 
--   **Police d’environnement** — la police principale pour l’IDE (environnement de développement intégré), utilisée pour tous les éléments d’interface, y compris les boîtes de dialogue, les menus, les fenêtres Outil et les fenêtres de document. Par défaut, la police d’environnement est liée à une police système qui s’affiche en tant que 9 pt Segoe UI dans les versions actuelles de Windows. À l’aide d’une police pour tous les éléments d’interface permet de garantir une apparence de la police cohérente tout au long de l’IDE.
+- **Police d’environnement** — la police principale pour l’IDE (environnement de développement intégré), utilisée pour tous les éléments d’interface, y compris les boîtes de dialogue, les menus, les fenêtres Outil et les fenêtres de document. Par défaut, la police d’environnement est liée à une police système qui s’affiche en tant que 9 pt Segoe UI dans les versions actuelles de Windows. À l’aide d’une police pour tous les éléments d’interface permet de garantir une apparence de la police cohérente tout au long de l’IDE.
 
--   **Éditeur de texte** — que surface dans le code et d’autres éditeurs de texte peuvent être personnalisés dans l’éditeur de texte des éléments de page dans **Outils > Options**.
+- **Éditeur de texte** — que surface dans le code et d’autres éditeurs de texte peuvent être personnalisés dans l’éditeur de texte des éléments de page dans **Outils > Options**.
 
--   **Des regroupements spécifiques** , surface de fenêtres du concepteur qui offrent la personnalisation de l’utilisateur de leurs éléments d’interface peut exposer des polices spécifiques à leur conception dans leur propre page Paramètres **Outils > Options**.
+- **Des regroupements spécifiques** , surface de fenêtres du concepteur qui offrent la personnalisation de l’utilisateur de leurs éléments d’interface peut exposer des polices spécifiques à leur conception dans leur propre page Paramètres **Outils > Options**.
 
 ### <a name="editor-font-customization-and-resizing"></a>Personnalisation de police de l’éditeur et le redimensionnement
  Les utilisateurs souvent agrandir ou effectuer un zoom de la taille et/ou la couleur du texte dans l’éditeur en fonction de leurs préférences, indépendant de l’interface utilisateur général. Étant donné que la police d’environnement est utilisée sur les éléments qui peuvent apparaître au sein ou en tant que partie d’un éditeur/concepteur, il est important de noter le comportement attendu lorsqu’un de ces classifications de police est modifié.
 
  Lors de la création des éléments d’interface utilisateur qui s’affichent dans l’éditeur, mais sont ne fait pas partie de la *contenu*, il est important d’utiliser la police d’environnement et pas la police du texte afin que redimensionnent des éléments de manière prévisible.
 
-1.  Texte du code dans l’éditeur, redimensionnez avec le paramètre de police de texte de code et répondre au niveau de zoom du texte de l’éditeur.
+1. Texte du code dans l’éditeur, redimensionnez avec le paramètre de police de texte de code et répondre au niveau de zoom du texte de l’éditeur.
 
-2.  Tous les autres éléments de l’interface doivent être liées pour le paramètre de police d’environnement et répondent à toutes les modifications dans l’environnement globales. Cela inclut (mais n’est pas limité à) :
+2. Tous les autres éléments de l’interface doivent être liées pour le paramètre de police d’environnement et répondent à toutes les modifications dans l’environnement globales. Cela inclut (mais n’est pas limité à) :
 
-    -   Texte dans les menus contextuels
+    - Texte dans les menus contextuels
 
-    -   Trouver le volet Éditeur de texte dans un ornement de l’éditeur, telles que du texte de menu ampoule, rapide et accédez au volet
+    - Trouver le volet Éditeur de texte dans un ornement de l’éditeur, telles que du texte de menu ampoule, rapide et accédez au volet
 
-    -   Texte d’étiquette dans les boîtes de dialogue, telles que rechercher dans les fichiers ou refactorisez
+    - Texte d’étiquette dans les boîtes de dialogue, telles que rechercher dans les fichiers ou refactorisez
 
 ### <a name="accessing-the-environment-font"></a>L’accès à la police d’environnement
  Dans le code natif ou WinForms, la police d’environnement sont accessibles en appelant la méthode **IUIHostLocale::GetDialogFont** après l’analyse de l’interface à partir du service SID_SUIHostLocale.
@@ -90,7 +90,7 @@ window.ShowModal()
 
 ```
 
-###  <a name="BKMK_Formatting"></a> Mise en forme (mise à l’échelle/mise en gras) référence
+### <a name="BKMK_Formatting"></a> Mise en forme (mise à l’échelle/mise en gras) référence
  Certaines boîtes de dialogue requièrent un texte spécifique pour être en gras ou une taille différente de la police d’environnement. Auparavant, les polices supérieure à la police d’environnement étaient similaires ou codé en tant que « police d’environnement + 2 ». À l’aide d’extraits de code fourni pour prendre en charge des moniteurs haute résolution et vérifiez que texte d’affichage apparaît toujours à la taille et le poids (par exemple, la lumière ou Semilight).
 
 > **Remarque : Avant d’appliquer la mise en forme, assurez-vous que vous suivez les instructions figurant dans [style de texte](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).**
@@ -323,7 +323,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
  Pour réinitialiser la police, cliquez sur « Par défaut » sous **Outils > Options > environnement > polices et couleurs**.
 
-##  <a name="BKMK_TextStyle"></a> Style de texte
+## <a name="BKMK_TextStyle"></a> Style de texte
  Style de texte fait référence à la casse, le poids et la taille de police. Pour obtenir des conseils d’implémentation, consultez [la police d’environnement](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
 
 ### <a name="text-casing"></a>Casse du texte
@@ -382,9 +382,9 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ##### <a name="sentence-case"></a>Début de phrase
  Casse de la phrase est la méthode de mise en majuscules standard pour l’écriture dans lequel seul le premier mot de la phrase est en majuscules, ainsi que les noms propres et du pronom « I ». En règle générale, la casse de la phrase est plus facile pour une audience internationale pour la lecture, en particulier lorsque le contenu sera traduit par un ordinateur. Utilisez la casse de la phrase pour :
 
-1.  **Messages de barre d’état.** Ceux-ci sont simples, bref et fournissent uniquement les informations d’état. Exemple : « Chargement du fichier de projet »
+1. **Messages de barre d’état.** Ceux-ci sont simples, bref et fournissent uniquement les informations d’état. Exemple : « Chargement du fichier de projet »
 
-2.  **Tous les autres éléments d’interface utilisateur**, y compris les étiquettes, les cases à cocher, cases d’option et les éléments de zone de liste. Exemple : « Sélectionner tous les éléments dans la liste »
+2. **Tous les autres éléments d’interface utilisateur**, y compris les étiquettes, les cases à cocher, cases d’option et les éléments de zone de liste. Exemple : « Sélectionner tous les éléments dans la liste »
 
 ### <a name="text-formatting"></a>Mise en forme de texte
  Texte par défaut de mise en forme dans Visual Studio 2013 est contrôlé par un [la police d’environnement](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont). Ce service permet de s’assurer une apparence de la police cohérente tout au long de l’IDE (environnement de développement intégré), et vous devez l’utiliser pour garantir une expérience cohérente pour vos utilisateurs.
@@ -396,36 +396,36 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 #### <a name="bold-text"></a>Texte en gras
  Texte en gras est utilisé avec parcimonie dans Visual Studio et doit être réservé pour :
 
--   étiquettes de question dans les Assistants
+- étiquettes de question dans les Assistants
 
--   désignant le projet actif dans l’Explorateur de solutions
+- désignant le projet actif dans l’Explorateur de solutions
 
--   substitution des valeurs dans la fenêtre d’outil Propriétés
+- substitution des valeurs dans la fenêtre d’outil Propriétés
 
--   certains événements dans les listes déroulantes de l’éditeur Visual Basic
+- certains événements dans les listes déroulantes de l’éditeur Visual Basic
 
--   contenu généré par le serveur dans la structure du document pour les pages web
+- contenu généré par le serveur dans la structure du document pour les pages web
 
--   en-têtes de section dans la boîte de dialogue complexe ou d’interface utilisateur du Concepteur
+- en-têtes de section dans la boîte de dialogue complexe ou d’interface utilisateur du Concepteur
 
 #### <a name="italics"></a>Italique
  Visual Studio n’utilise pas de texte en italique Italique ou en gras.
 
 #### <a name="color"></a>Color
 
--   Bleu est réservé pour les liens hypertexte (navigation et exécution des commandes) et ne doit jamais être utilisée pour l’orientation.
+- Bleu est réservé pour les liens hypertexte (navigation et exécution des commandes) et ne doit jamais être utilisée pour l’orientation.
 
--   En-têtes supérieure (police d’environnement x 155 % ou version supérieure) peuvent être en couleur à ces fins :
+- En-têtes supérieure (police d’environnement x 155 % ou version supérieure) peuvent être en couleur à ces fins :
 
-    -   Pour fournir l’aspect visuel de la signature de l’interface utilisateur de Visual Studio
+    - Pour fournir l’aspect visuel de la signature de l’interface utilisateur de Visual Studio
 
-    -   Pour attirer l’attention sur une zone spécifique
+    - Pour attirer l’attention sur une zone spécifique
 
-    -   Pour offrir de relief à partir de la couleur du texte standard environnement/noir gris foncé
+    - Pour offrir de relief à partir de la couleur du texte standard environnement/noir gris foncé
 
--   Couleur dans les en-têtes doit tirer parti de Visual Studio marque couleurs existantes, principalement le principal violet, #FF68217A.
+- Couleur dans les en-têtes doit tirer parti de Visual Studio marque couleurs existantes, principalement le principal violet, #FF68217A.
 
--   Lorsque vous utilisez des couleurs dans les en-têtes, vous devez respecter les [les instructions de couleurs Windows](https://msdn.microsoft.com/library/dn742482.aspx), y compris le niveau de contraste et autres considérations d’accessibilité.
+- Lorsque vous utilisez des couleurs dans les en-têtes, vous devez respecter les [les instructions de couleurs Windows](https://msdn.microsoft.com/library/dn742482.aspx), y compris le niveau de contraste et autres considérations d’accessibilité.
 
 ### <a name="font-size"></a>Taille de police
  Conception visuelle de l’interface utilisateur Studio propose une apparence plus claire avec davantage d’espace blanc. Si possible, les barres de titre et de chrome ont été réduites ou supprimés. Bien que la densité des informations est une exigence dans Visual Studio, typographie continue d’être important, en mettant l’accent sur Interligne plus ouvert et une variante de tailles de police et les poids.
@@ -485,11 +485,11 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 ### <a name="padding-and-spacing"></a>Marge intérieure et l’espacement
  En-têtes nécessitent d’espace autour d’elles afin de leur donner l’importance approprié. Cet espace varie en fonction de la taille en points et les autres sont proche de l’en-tête, par exemple une barre horizontale ou une ligne de texte dans la police d’environnement.
 
--   La marge intérieure idéale pour un en-tête par lui-même doit être 90 % de l’espace de hauteur des caractères majuscules. Par exemple, un titre de Segoe UI Light pt 28 a une hauteur de la limite de 26 pt, et la marge intérieure doit être environ 23 pt, ou environ 31 pixels.
+- La marge intérieure idéale pour un en-tête par lui-même doit être 90 % de l’espace de hauteur des caractères majuscules. Par exemple, un titre de Segoe UI Light pt 28 a une hauteur de la limite de 26 pt, et la marge intérieure doit être environ 23 pt, ou environ 31 pixels.
 
--   L’espace minimal autour d’un en-tête doit être 50 % de la hauteur des caractères majuscules. Moins d’espace peut servir quand un en-tête est accompagné d’une règle ou un autre élément étroite ajustement.
+- L’espace minimal autour d’un en-tête doit être 50 % de la hauteur des caractères majuscules. Moins d’espace peut servir quand un en-tête est accompagné d’une règle ou un autre élément étroite ajustement.
 
--   Texte de police d’environnement en gras doit suivre la marge intérieure et l’espacement de hauteur de ligne par défaut.
+- Texte de police d’environnement en gras doit suivre la marge intérieure et l’espacement de hauteur de ligne par défaut.
 
 ## <a name="see-also"></a>Voir aussi
  [MSDN : Polices (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742483\(v=vs.85\).aspx) [MSDN : Texte de l’Interface utilisateur (Windows)](https://msdn.microsoft.com/library/windows/desktop/dn742478\(v=vs.85\).aspx)

@@ -56,7 +56,7 @@ Même si le comportement par défaut du membre surchargé est adapté à vos bes
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Pour corriger une violation de cette règle, utilisez la surcharge qui accepte un <xref:System.IFormatProvider> argument. Ou utilisez un [c# chaîne interpolée](/dotnet/csharp/tutorials/string-interpolation) et transmettez-le à la <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType> (méthode).
+Pour corriger une violation de cette règle, utilisez la surcharge qui accepte un <xref:System.IFormatProvider> argument. Ou utilisez un [C# chaîne interpolée](/dotnet/csharp/tutorials/string-interpolation) et transmettez-le à la <xref:System.FormattableString.Invariant%2A?displayProperty=nameWithType> (méthode).
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 

@@ -3,19 +3,19 @@ title: Définir des commandes de menu personnalisées pour les projets Python
 description: En modifiant les fichiers projet et les fichiers de cibles, vous pouvez ajouter des commandes personnalisées au menu contextuel de projet Python dans Visual Studio pour appeler des programmes exécutables, des scripts, des modules, des extraits de code inline et pip.
 ms.date: 11/12/2018
 ms.topic: conceptual
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3d183041732b5170da4a7e8832346a93dec32451
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ec53a67980866ed6422fae5764bbf6a9313ef91e
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943088"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366716"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>Définir des commandes personnalisées pour les projets Python
 
@@ -379,7 +379,7 @@ Indique que le contenu de l’élément `<Target>` ou `<CreatePythonCommandItem>
 - L’attribut `Target` exigé est vide.
 - L’attribut `TargetType` exigé est vide ou contient une valeur non reconnue.
 - L’attribut `ExecuteIn` exigé est vide ou contient une valeur non reconnue.
-- `ErrorRegex` ou `WarningRegex` est spécifié sans paramètre `ExecuteIn="output"`.
+- `ErrorRegex` ou `WarningRegex` est spécifié sans définir `ExecuteIn="output"`.
 - Des attributs non reconnus existent dans l’élément. Par exemple, vous avez peut-être utilisé `Argumnets` (mal orthographié) au lieu de `Arguments`.
 
 Les valeurs d’attribut peuvent être vides si vous faites référence à une propriété qui n’est pas définie. Par exemple, si vous utilisez le jeton `$(StartupFile)` mais qu’aucun fichier de démarrage n’a été défini dans le projet, le jeton est résolu en chaîne vide. Dans ce cas, vous souhaiterez sans doute définir la valeur par défaut. Par exemple, les commandes **Exécuter le serveur** et **Exécuter le serveur de débogage** définies dans les modèles de projet Bottle, Flask et Django ont par défaut la valeur *manage.py* si aucun fichier de démarrage de serveur n’a été spécifié dans les propriétés du projet.

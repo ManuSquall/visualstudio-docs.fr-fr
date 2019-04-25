@@ -18,17 +18,16 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 32b907680155c9631ca5336c2228dd5b8ecce8d9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 15fd3f1b93378adba0579b6de50d0e779a09ac5a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778602"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658212"
 ---
 # <a name="publish-page-project-designer"></a>Page Publier, Concepteur de projets
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 La page **Publier** du **Concepteur de projets** permet de configurer les propriétés du déploiement ClickOnce.  
   
  Pour accéder à la boîte de dialogue **Publier** , sélectionnez un nœud de projet dans l’ **Explorateur de solutions**, puis cliquez sur **Propriétés** dans le menu **Projet**. Lorsque le **Concepteur de projets** apparaît, cliquez sur l'onglet **Publier** .  
@@ -43,7 +42,7 @@ La page **Publier** du **Concepteur de projets** permet de configurer les propri
  Par défaut, l’emplacement de publication est `http://localhost/<projectname>/` si vous avez installé IIS, ou le répertoire `publish\` si vous n’avez pas installé IIS. Si votre ordinateur exécute Windows Vista, la valeur par défaut est toujours le répertoire `publish\` , qu’IIS soit installé ou non.  
   
  **URL du dossier d’installation**  
- Optionnel. Spécifie un site web auquel les utilisateurs accèdent pour installer l’application. Cette URL est nécessaire uniquement si elle diffère de l’ **Emplacement de publication**, par exemple quand l’application est publiée sur un serveur intermédiaire.  
+ Facultatif. Spécifie un site web auquel les utilisateurs accèdent pour installer l’application. Cette URL est nécessaire uniquement si elle diffère de l’ **Emplacement de publication**, par exemple quand l’application est publiée sur un serveur intermédiaire.  
   
  **Mode et paramètres d'installation**  
  Détermine si l’application est exécutée directement à partir de l’ **Emplacement de publication** (quand l’option **L’application est disponible en ligne uniquement** est sélectionnée) ou si elle est installée et ajoutée au menu **Démarrer** et à l’élément **Ajouter ou supprimer des programmes** du **Panneau de configuration** (quand l’option **L’application est également disponible hors connexion** est sélectionnée).  
@@ -78,18 +77,18 @@ La page **Publier** du **Concepteur de projets** permet de configurer les propri
   
 ## <a name="see-also"></a>Voir aussi  
  [Publication d’applications ClickOnce](../../deployment/publishing-clickonce-applications.md)   
- [Guide pratique pour publier une application ClickOnce à l’aide de l’Assistant Publication](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
- [Guide pratique pour spécifier l’endroit où Visual Studio copie les fichiers](../../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   
- [Guide pratique pour spécifier l’emplacement à partir duquel les utilisateurs finaux effectueront l’installation](../../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)   
- [Guide pratique pour spécifier un lien pour le support technique](../../deployment/how-to-specify-a-link-for-technical-support.md)   
- [Guide pratique pour spécifier le mode d’installation en ligne ou hors connexion de ClickOnce](../../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)   
- [Guide pratique pour activer le démarrage automatique pour les installations depuis un CD-ROM](../../deployment/how-to-enable-autostart-for-cd-installations.md)   
- [Guide pratique pour définir la version de publication ClickOnce](../../deployment/how-to-set-the-clickonce-publish-version.md)   
- [Guide pratique pour incrémenter automatiquement la version de publication ClickOnce](../../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)   
- [Guide pratique pour spécifier les fichiers publiés par ClickOnce](../../deployment/how-to-specify-which-files-are-published-by-clickonce.md)   
- [Guide pratique pour installer des composants requis avec une application ClickOnce](../../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
- [Guide pratique pour gérer les mises à jour pour une application ClickOnce](../../deployment/how-to-manage-updates-for-a-clickonce-application.md)   
- [Guide pratique pour changer la langue de publication pour une application ClickOnce](../../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)   
- [Guide pratique pour spécifier un nom de menu Démarrer pour une application ClickOnce](../../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)   
- [Guide pratique pour spécifier une page de publication pour une application ClickOnce](../../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)   
+ [Guide pratique pour Publier une Application ClickOnce à l’aide de l’Assistant Publication](../../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)   
+ [Guide pratique pour Spécifier où Visual Studio copie les fichiers](../../deployment/how-to-specify-where-visual-studio-copies-the-files.md)   
+ [Guide pratique pour Spécifiez l’emplacement où les utilisateurs finaux installent à partir](../../deployment/how-to-specify-the-location-where-end-users-will-install-from.md)   
+ [Guide pratique pour Spécifier un lien pour le Support technique](../../deployment/how-to-specify-a-link-for-technical-support.md)   
+ [Guide pratique pour Spécifier le ClickOnce en mode hors connexion ou en Mode d’installation en ligne](../../deployment/how-to-specify-the-clickonce-offline-or-online-install-mode.md)   
+ [Guide pratique pour Activer le démarrage automatique pour les Installations de CD](../../deployment/how-to-enable-autostart-for-cd-installations.md)   
+ [Guide pratique pour Définir la publication ClickOnce Version](../../deployment/how-to-set-the-clickonce-publish-version.md)   
+ [Guide pratique pour Incrémenter automatiquement la publication ClickOnce Version](../../deployment/how-to-automatically-increment-the-clickonce-publish-version.md)   
+ [Guide pratique pour Spécifier les fichiers publiés par ClickOnce](../../deployment/how-to-specify-which-files-are-published-by-clickonce.md)   
+ [Guide pratique pour Installer les composants requis avec une Application ClickOnce](../../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)   
+ [Guide pratique pour Gérer les mises à jour pour une Application ClickOnce](../../deployment/how-to-manage-updates-for-a-clickonce-application.md)   
+ [Guide pratique pour Modifier la langue de publication pour une Application ClickOnce](../../deployment/how-to-change-the-publish-language-for-a-clickonce-application.md)   
+ [Guide pratique pour Spécifier un nom de Menu Démarrer pour une Application ClickOnce](../../deployment/how-to-specify-a-start-menu-name-for-a-clickonce-application.md)   
+ [Guide pratique pour Spécifier une Page de publication pour une Application ClickOnce](../../deployment/how-to-specify-a-publish-page-for-a-clickonce-application.md)   
  [Sécurité et déploiement ClickOnce](../../deployment/clickonce-security-and-deployment.md)

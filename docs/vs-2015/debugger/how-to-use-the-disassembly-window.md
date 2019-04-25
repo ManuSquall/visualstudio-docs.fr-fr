@@ -25,12 +25,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2bd0fe7ca8b2a1f21ebcb6c3434348df9d2e66e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 42d7c9798527498f2803d814515faefd62c3ace9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953942"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077496"
 ---
 # <a name="how-to-use-the-disassembly-window"></a>Procédure : La fenêtre code machine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,13 +64,13 @@ Cette fonctionnalité est disponible uniquement si le débogage au niveau des ad
   
 ### <a name="to-display-the-disassembly-window"></a>Pour afficher la fenêtre Code Machine  
   
--   Sur le **déboguer** menu, choisissez **Windows**, puis cliquez sur **désassemblage**.  
+- Sur le **déboguer** menu, choisissez **Windows**, puis cliquez sur **désassemblage**.  
   
      Le débogueur doit être en cours d'exécution ou en mode arrêt.  
   
 ### <a name="to-turn-optional-information-on-or-off"></a>Pour activer ou désactiver les informations facultatives  
   
--   Cliquez sur le **désassemblage** fenêtre, puis activez ou désactivez les options souhaitées dans le menu contextuel.  
+- Cliquez sur le **désassemblage** fenêtre, puis activez ou désactivez les options souhaitées dans le menu contextuel.  
   
      Dans la marge de gauche, une flèche jaune marque l'emplacement du point d'exécution en cours. Pour le code natif, il correspond au compteur programme de la CPU. Cet emplacement montre l'instruction suivante qui sera exécutée dans votre programme.  
   

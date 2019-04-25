@@ -8,26 +8,26 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 799f5bfaad3433bebeca54367c91fefc34e05a21
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 151b9be68b82f2b9fdcb20cd105890914333a2b6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928489"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821522"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Tutoriel 3 : Créer un jeu de combinaisons
 
 Dans ce didacticiel, vous générez un jeu de combinaisons dans lequel le joueur doit associer des paires d'icônes masquées. Vous apprenez à :
 
--   stocker des objets, tels que des icônes, dans un objet <xref:System.Collections.Generic.List%601> ;
+- stocker des objets, tels que des icônes, dans un objet <xref:System.Collections.Generic.List%601> ;
 
--   utiliser une boucle `foreach` en Visual C# ou une boucle `For Each` en Visual Basic pour effectuer des itérations sur les éléments d'une liste ;
+- utiliser une boucle `foreach` en Visual C# ou une boucle `For Each` en Visual Basic pour effectuer des itérations sur les éléments d'une liste ;
 
--   effectuer le suivi de l'état d'un formulaire à l'aide de variables de référence ;
+- effectuer le suivi de l'état d'un formulaire à l'aide de variables de référence ;
 
--   générer un gestionnaire d'événements pour réagir aux événements, que vous pouvez utiliser avec plusieurs objets ;
+- générer un gestionnaire d'événements pour réagir aux événements, que vous pouvez utiliser avec plusieurs objets ;
 
--   créer un minuteur qui effectue un calcul à rebours, puis déclenche un événement une seule fois après avoir été démarré.
+- créer un minuteur qui effectue un calcul à rebours, puis déclenche un événement une seule fois après avoir été démarré.
 
 Une fois ce tutoriel terminé, votre programme se présente comme dans l’image suivante :
 
@@ -54,4 +54,4 @@ Si vous êtes bloqué ou avez des questions liées à la programmation, essayez 
 |[Étape 6 : Ajouter une minuterie](../ide/step-6-add-a-timer.md)|Ajoutez une horloge au formulaire pour assurer le suivi du temps écoulé dans le jeu.|
 |[Étape 7 : Garder les paires visibles](../ide/step-7-keep-pairs-visible.md)|Laissez des paires d'icônes visibles, si une paire identique est sélectionnée.|
 |[Étape 8 : Ajouter une méthode pour vérifier si le joueur a gagné](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md)|Ajoutez une méthode `CheckForWinner()` pour vérifier si le joueur a gagné.|
-|[Étape 9 : Tester d’autres fonctionnalités](../ide/step-9-try-other-features.md)|Essayez d’autres fonctionnalités (par exemple, la modification des icônes et des couleurs, l’ajout d’une grille et l’ajout de sons). Essayez d'agrandir le plateau et d'ajuster la minuterie.|
+|[Étape 9 : Tester d’autres fonctionnalités](../ide/step-9-try-other-features.md)|Essayez d'autres fonctionnalités (par exemple, la modification des icônes et des couleurs, l'ajout d'une grille et l'ajout de sons). Essayez d'agrandir le plateau et d'ajuster la minuterie.|

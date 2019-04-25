@@ -1,7 +1,7 @@
 ---
 title: Résoudre les erreurs réseau ou de proxy
 description: Trouvez des solutions aux erreurs réseau ou aux erreurs de proxy que vous pouvez rencontrer quand vous installez ou utilisez Visual Studio derrière un pare-feu ou un serveur proxy.
-ms.date: 02/23/2018
+ms.date: 03/30/2019
 ms.topic: troubleshooting
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 4cd62e73d3a10eded5d74eaffc5486e237ca02ca
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: e98f06a2dabd6627fbc70b1d072d0e34924c6691
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324959"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790496"
 ---
 # <a name="troubleshooting-network-related-errors-when-you-install-or-use-visual-studio"></a>Résolution des erreurs liées au réseau lorsque vous installez ou utilisez Visual Studio
 
@@ -54,6 +54,8 @@ Cette erreur se produit généralement quand les utilisateurs sont connectés à
 
 - Si vous voulez utiliser vos informations d'identification par défaut avec votre proxy, vous pouvez procéder comme suit :
 
+::: moniker range="vs-2017"
+
   1. Recherchez **devenv.exe.config** (le fichier de configuration de devenv.exe) dans **%ProgramFiles%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE** ou **%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE**.
 
   2. Dans le fichier de configuration, recherchez le bloc `<system.net>`, puis ajoutez le code suivant :
@@ -67,11 +69,28 @@ Cette erreur se produit généralement quand les utilisateurs sont connectés à
       Vous devez insérer l'adresse proxy correcte de votre réseau dans `proxyaddress="<http://<yourproxy:port#>`.
 
      > [!NOTE]
-     > Pour plus d’informations, consultez les pages [&lt;defaultProxy&gt;, élément (paramètres réseau)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings) et [&lt;proxy&gt;, élément (paramètres réseau)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings).
+     > Pour plus d’informations, consultez les pages [&lt;defaultProxy&gt;, élément (paramètres réseau)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) et [&lt;proxy&gt;, élément (paramètres réseau)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings).
 
-  - OU -
+::: moniker-end
 
-- Vous pouvez également suivre les instructions fournies dans le billet de blog [Comment se connecter via un proxy Web authentifié](https://blogs.msdn.microsoft.com/rido/2010/05/06/how-to-connect-to-tfs-through-authenticated-web-proxy/), qui vous expliquent comment ajouter du code pour utiliser le proxy.
+::: moniker range="vs-2019"
+
+  1. Recherchez **devenv.exe.config** (le fichier de configuration de devenv.exe) dans **%ProgramFiles%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE** ou **%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Enterprise\Common7\IDE**.
+
+  2. Dans le fichier de configuration, recherchez le bloc `<system.net>`, puis ajoutez le code suivant :
+
+      ```xml
+      <defaultProxy enabled="true" useDefaultCredentials="true">
+          <proxy bypassonlocal="True" proxyaddress="http://<yourproxy:port#>"/>
+      </defaultProxy>
+      ```
+
+      Vous devez insérer l'adresse proxy correcte de votre réseau dans `proxyaddress="<http://<yourproxy:port#>`.
+
+     > [!NOTE]
+     > Pour plus d’informations, consultez les pages [&lt;defaultProxy&gt;, élément (paramètres réseau)](/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings/) et [&lt;proxy&gt;, élément (paramètres réseau)](/dotnet/framework/configure-apps/file-schema/network/proxy-element-network-settings).
+
+::: moniker-end
 
 ## <a name="error-the-underlying-connection-was-closed"></a>Erreur : « La connexion sous-jacente a été fermée »
 

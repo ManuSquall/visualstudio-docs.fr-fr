@@ -6,12 +6,12 @@ ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1eca19210be8001c56d14213d5efcde358f58b50
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5dd39ecfb25b4b21f7a9064da7621bcc77aab791
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951972"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076704"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ Le manifeste de l’outil du Code est une application console qui prend un fichi
   
  **Exemples**  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp  
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:C++ /namespace : mon :: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend  
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:C++ /namespace : mon :: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds  
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds  
   
 ## <a name="notes"></a>Notes  
   
--   Nous vous recommandons d’utiliser cet outil avec des manifestes d’images qui ont été générées par le manifeste à partir de l’outil de ressources.  
+- Nous vous recommandons d’utiliser cet outil avec des manifestes d’images qui ont été générées par le manifeste à partir de l’outil de ressources.  
   
--   L’outil examine uniquement les entrées de symbole pour générer les wrappers de code. Si un manifeste de l’image ne contient aucun symbole, les wrappers de code généré sera vides. S’il existe une image ou un ensemble d’images dans le manifeste de l’image qui n’utilisent pas de symboles, elles sont exclues à partir du wrapper de code.  
+- L’outil examine uniquement les entrées de symbole pour générer les wrappers de code. Si un manifeste de l’image ne contient aucun symbole, les wrappers de code généré sera vides. S’il existe une image ou un ensemble d’images dans le manifeste de l’image qui n’utilisent pas de symboles, elles sont exclues à partir du wrapper de code.  
   
 ## <a name="sample-output"></a>Résultat de l'exemple  
  **Wrappers c#**  

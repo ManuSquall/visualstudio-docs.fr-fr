@@ -9,17 +9,16 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 957c1fe49d222a691160eadc4b2cf08f8a20a65a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 84aa3400eb6b64e8904d95e0fce7b43ae9351ad8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951020"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060863"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Procédure : affecter des procédures stockées pour effectuer des mises à jour, des insertions et des suppressions (Concepteur O/R)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Les procédures stockées peuvent être ajoutées au Concepteur O/R et être exécutées comme méthodes <xref:System.Data.Linq.DataContext> typiques. Ils peuvent également être utilisés pour remplacer la valeur par défaut [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] comportement d’exécution qui effectue des insertions, mises à jour et des suppressions lorsque les modifications sont enregistrées à partir des classes d’entité dans une base de données (par exemple, lorsque vous appelez le <xref:System.Data.Linq.DataContext.SubmitChanges%2A> méthode).  
   
 > [!NOTE]
@@ -35,23 +34,23 @@ Les procédures stockées peuvent être ajoutées au Concepteur O/R et être ex�
   
 #### <a name="to-assign-stored-procedures-to-override-the-default-behavior-of-an-entity-class"></a>Pour assigner des procédures stockées afin de substituer le comportement par défaut d'une classe d'entité  
   
-1.  Ouvrez le fichier **LINQ to SQL** dans le concepteur. (Double-cliquez sur le fichier .dbml dans **l’Explorateur de solutions**.)  
+1. Ouvrez le fichier **LINQ to SQL** dans le concepteur. (Double-cliquez sur le fichier .dbml dans **l’Explorateur de solutions**.)  
   
-2.  Dans **Explorateur de serveurs**/**Database Explorer**, développez **Stored Procedures** et localisez les procédures stockées que vous souhaitez utiliser pour l’insertion, mise à jour, et/ou la suppression de la classe d’entité.  
+2. Dans **Explorateur de serveurs**/**Database Explorer**, développez **Stored Procedures** et localisez les procédures stockées que vous souhaitez utiliser pour l’insertion, mise à jour, et/ou la suppression de la classe d’entité.  
   
-3.  Faites glisser la procédure stockée vers le Concepteur O/R.  
+3. Faites glisser la procédure stockée vers le Concepteur O/R.  
   
      La procédure stockée est ajoutée au volet de méthodes comme méthode <xref:System.Data.Linq.DataContext>. Pour plus d’informations, consultez [DataContext, méthodes (Concepteur O/R)](../data-tools/datacontext-methods-o-r-designer.md).  
   
-4.  Sélectionnez la classe d'entité pour laquelle vous souhaitez utiliser la procédure stockée afin d'effectuer des mises à jour.  
+4. Sélectionnez la classe d'entité pour laquelle vous souhaitez utiliser la procédure stockée afin d'effectuer des mises à jour.  
   
-5.  Dans la fenêtre **Propriétés**, sélectionnez la commande à substituer (**Insert**, **Update** ou **Delete**).  
+5. Dans la fenêtre **Propriétés**, sélectionnez la commande à substituer (**Insert**, **Update** ou **Delete**).  
   
-6.  Cliquez sur les points de suspension (...) en regard des mots **Utiliser le runtime** pour ouvrir la boîte de dialogue **Configurer le comportement**.  
+6. Cliquez sur les points de suspension (...) en regard des mots **Utiliser le runtime** pour ouvrir la boîte de dialogue **Configurer le comportement**.  
   
-7.  Sélectionnez **Personnaliser**.  
+7. Sélectionnez **Personnaliser**.  
   
-8.  Sélectionnez la procédure stockée voulue dans la liste **Personnaliser**.  
+8. Sélectionnez la procédure stockée voulue dans la liste **Personnaliser**.  
   
 9. Inspectez la liste des **Arguments de méthode** et des **Propriétés de classe** pour vérifier que les **Arguments de méthode** mappent aux **Propriétés de classe** appropriées. Mappez les arguments de méthode d’origine (Original_*Nom_argument*) aux propriétés d’origine (*PropertyName* (Original)) pour les commandes Update et Delete.  
   

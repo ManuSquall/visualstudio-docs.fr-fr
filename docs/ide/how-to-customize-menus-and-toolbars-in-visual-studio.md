@@ -27,12 +27,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84c4b2e5aa532becc1bf9bc50a3c7bcdbd2b8d4e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4986faba52606937993af17824789ced2d600ad5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955633"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429285"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Procédure : Personnaliser des menus et des barres d’outils dans Visual Studio
 
@@ -43,38 +43,38 @@ Vous pouvez personnaliser Visual Studio non seulement en ajoutant et en supprima
 
 ## <a name="add-remove-or-move-a-menu-on-the-menu-bar"></a>Ajouter, supprimer ou déplacer un menu dans la barre de menus
 
-1.  Dans la barre de menus, choisissez **Outils** > **Personnaliser**.
+1. Dans la barre de menus, choisissez **Outils** > **Personnaliser**.
 
      La boîte de dialogue **Personnaliser** s’affiche.
 
-2.  Sous l’onglet **Commandes**, laissez la case d’option **Barre de menus** sélectionnée, laissez l’option **Barre de menus** sélectionnée dans la liste située en regard de cette case d’option, puis exécutez l’une des procédures suivantes :
+2. Sous l’onglet **Commandes**, laissez la case d’option **Barre de menus** sélectionnée, laissez l’option **Barre de menus** sélectionnée dans la liste située en regard de cette case d’option, puis exécutez l’une des procédures suivantes :
 
-    -   Pour ajouter un menu, choisissez le bouton **Ajouter un nouveau menu**, choisissez le bouton **Modifier la sélection**, puis nommez le menu à ajouter.
+    - Pour ajouter un menu, choisissez le bouton **Ajouter un nouveau menu**, choisissez le bouton **Modifier la sélection**, puis nommez le menu à ajouter.
 
         ![Boîte de dialogue Personnaliser montrant comment ajouter un menu](../ide/media/addmenu.png)
 
-    -   Pour supprimer un menu, choisissez-le dans la liste **Contrôles**, puis choisissez le bouton **Supprimer**.
+    - Pour supprimer un menu, choisissez-le dans la liste **Contrôles**, puis choisissez le bouton **Supprimer**.
 
-    -   Pour déplacer un menu dans la barre de menus, choisissez le menu dans la liste **Contrôles**, puis choisissez le bouton **Monter** ou **Descendre**.
+    - Pour déplacer un menu dans la barre de menus, choisissez le menu dans la liste **Contrôles**, puis choisissez le bouton **Monter** ou **Descendre**.
 
 ## <a name="add-remove-or-move-a-toolbar"></a>Ajouter, supprimer ou déplacer une barre d’outils
 
-1.  Dans la barre de menus, choisissez **Outils** > **Personnaliser**.
+1. Dans la barre de menus, choisissez **Outils** > **Personnaliser**.
 
      La boîte de dialogue **Personnaliser** s’affiche.
 
-2.  Sous l’onglet **Barre d’outils**, exécutez l’une des procédures suivantes :
+2. Sous l’onglet **Barre d’outils**, exécutez l’une des procédures suivantes :
 
-    -   Pour ajouter une barre d’outils, choisissez le bouton **Nouveau**, spécifiez le nom de la barre d’outils à ajouter, puis choisissez le bouton **OK**.
+    - Pour ajouter une barre d’outils, choisissez le bouton **Nouveau**, spécifiez le nom de la barre d’outils à ajouter, puis choisissez le bouton **OK**.
 
         ![Boîte de dialogue Personnaliser montrant comment ajouter une barre d'outils](../ide/media/addtoolbar.png)
 
-    -   Pour supprimer une barre d’outils personnalisée, choisissez-la dans la liste **Barres d’outils**, puis choisissez le bouton **Supprimer**.
+    - Pour supprimer une barre d’outils personnalisée, choisissez-la dans la liste **Barres d’outils**, puis choisissez le bouton **Supprimer**.
 
         > [!IMPORTANT]
         > Vous pouvez supprimer les barres d'outils que vous créez mais pas les barres d'outils par défaut.
 
-    -   Pour déplacer une barre d’outils vers un autre emplacement d’ancrage, choisissez-la dans la liste **Barres d’outils**, choisissez le bouton **Modifier la sélection**, puis choisissez un emplacement dans la liste qui s’affiche.
+    - Pour déplacer une barre d’outils vers un autre emplacement d’ancrage, choisissez-la dans la liste **Barres d’outils**, choisissez le bouton **Modifier la sélection**, puis choisissez un emplacement dans la liste qui s’affiche.
 
         Vous pouvez également faire glisser le bord gauche d'une barre d'outils pour placer cette dernière n'importe où dans la zone d'ancrage principale.
 
@@ -83,37 +83,37 @@ Vous pouvez personnaliser Visual Studio non seulement en ajoutant et en supprima
 
 ## <a name="customizing_menu">Personnaliser un menu ou une barre d’outils</a>
 
-1.  Dans la barre de menus, choisissez **Outils** > **Personnaliser**.
+1. Dans la barre de menus, choisissez **Outils** > **Personnaliser**.
 
     La boîte de dialogue **Personnaliser** s’affiche.
 
-2.  Sous l’onglet **Commandes**, choisissez la case d’option correspondant au type d’élément que vous souhaitez personnaliser.
+2. Sous l’onglet **Commandes**, choisissez la case d’option correspondant au type d’élément que vous souhaitez personnaliser.
 
-3.  Dans la liste correspondant à ce type d'élément, choisissez le menu ou la barre d'outils que vous souhaitez personnaliser, puis exécutez l'une des procédures suivantes :
+3. Dans la liste correspondant à ce type d'élément, choisissez le menu ou la barre d'outils que vous souhaitez personnaliser, puis exécutez l'une des procédures suivantes :
 
-    -   Pour ajouter une commande, choisissez le bouton **Ajouter une commande**.
+    - Pour ajouter une commande, choisissez le bouton **Ajouter une commande**.
 
         Dans la boîte de dialogue **Ajouter une commande**, choisissez un élément dans la liste **Catégories**, choisissez un élément dans la liste **Commandes**, puis choisissez le bouton **OK**.
 
         ![Boîte de dialogue Ajouter une commande de Visual Studio](../ide/media/addcommand.png)
 
-    -   Pour supprimer une commande, choisissez-la dans la liste **Contrôles**, puis choisissez le bouton **Supprimer**.
+    - Pour supprimer une commande, choisissez-la dans la liste **Contrôles**, puis choisissez le bouton **Supprimer**.
 
-    -   Pour réorganiser des commandes, choisissez une commande dans la liste **Contrôles**, puis choisissez le bouton **Monter** ou **Descendre**.
+    - Pour réorganiser des commandes, choisissez une commande dans la liste **Contrôles**, puis choisissez le bouton **Monter** ou **Descendre**.
 
-    -   Pour regrouper des commandes en dessous d’une ligne horizontale, choisissez la première commande dans la liste **Contrôles**, choisissez le bouton **Modifier la sélection**, puis choisissez **Nouveau groupe** dans le menu qui s’affiche.
+    - Pour regrouper des commandes en dessous d’une ligne horizontale, choisissez la première commande dans la liste **Contrôles**, choisissez le bouton **Modifier la sélection**, puis choisissez **Nouveau groupe** dans le menu qui s’affiche.
 
 ## <a name="reset-a-menu-or-a-toolbar"></a>Réinitialiser un menu ou une barre d’outils
 
-1.  Dans la barre de menus, choisissez **Outils** > **Personnaliser**.
+1. Dans la barre de menus, choisissez **Outils** > **Personnaliser**.
 
     La boîte de dialogue **Personnaliser** s’affiche.
 
-2.  Sous l’onglet **Commandes**, choisissez la case d’option correspondant au type d’élément que vous souhaitez réinitialiser.
+2. Sous l’onglet **Commandes**, choisissez la case d’option correspondant au type d’élément que vous souhaitez réinitialiser.
 
-3.  Dans la liste correspondant à ce type d'élément, choisissez le menu ou la barre d'outils à réinitialiser.
+3. Dans la liste correspondant à ce type d'élément, choisissez le menu ou la barre d'outils à réinitialiser.
 
-4.  Choisissez le bouton **Modifier la sélection**, puis choisissez **Réinitialiser** dans le menu qui s’affiche.
+4. Choisissez le bouton **Modifier la sélection**, puis choisissez **Réinitialiser** dans le menu qui s’affiche.
 
     Vous pouvez également réinitialiser l’ensemble des menus et des barres d’outils en choisissant le bouton **Réinitialiser tout**.
 

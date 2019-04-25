@@ -1,23 +1,20 @@
 ---
 title: Contrôle de la visibilité d’une icône ou d’élément décoratif | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: 2697fd5d-b936-4b6b-b87b-be64825dc7a4
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 4befc49fab1d1b53d70f1b79ee1a2bbe96be11f1
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 8d4dc21c2c6329730d678fa574f11d86bed8cdc4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49913408"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107175"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>Contrôle de la visibilité d'une icône ou d'un élément décoratif
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +28,11 @@ Un *decorator* est une icône ou une ligne de texte qui apparaît sur la forme d
   
 1. Dans le diagramme de définition DSL, vous devez ajouter à la classe shape les icônes ou les éléments décoratifs de texte que vous souhaitez voir apparaître.  
   
-   1.  Avec le bouton droit de la classe de forme, pointez sur **ajouter**, puis cliquez sur le type d’élément décoratif nécessaire.  
+   1. Avec le bouton droit de la classe de forme, pointez sur **ajouter**, puis cliquez sur le type d’élément décoratif nécessaire.  
   
-   2.  Valeur de l’élément décoratif **Position** propriété. Plusieurs éléments décoratifs peut avoir la même position. Par exemple, vous pourriez avoir des icônes pour homme et Femme partage la même position.  
+   2. Valeur de l’élément décoratif **Position** propriété. Plusieurs éléments décoratifs peut avoir la même position. Par exemple, vous pourriez avoir des icônes pour homme et Femme partage la même position.  
   
-   3.  Définir le **icône par défaut** propriété d’un élément décoratif d’icône.  
+   3. Définir le **icône par défaut** propriété d’un élément décoratif d’icône.  
   
 2. Sélectionnez le mappage d’élément de diagramme, qui est la ligne grise entre la classe de forme et de la classe de domaine sur le diagramme de définition DSL.  
   
@@ -47,7 +44,7 @@ Un *decorator* est une icône ou une ligne de texte qui apparaît sur la forme d
   
     Sinon, cliquez sur le menu déroulant et accédez à la classe où se trouve la propriété ou de relation.  
   
-   -   Pour éviter un rapport d’erreurs, vous ne devez pas naviguer via une relation marquée avec « * » dans l’outil de navigation.  
+   - Pour éviter un rapport d’erreurs, vous ne devez pas naviguer via une relation marquée avec « * » dans l’outil de navigation.  
   
 6. Définir le **propriété Filter** à une propriété de domaine. Par exemple, le sexe.  
   
@@ -63,7 +60,7 @@ Un *decorator* est une icône ou une ligne de texte qui apparaît sur la forme d
   
 #### <a name="to-control-the-visibility-of-a-decorator-based-on-a-formula"></a>Pour contrôler la visibilité d’un décorateur selon une formule  
   
-1.  Ajouter une propriété de domaine calculée à la classe de domaine. Dans le **propriétés** fenêtre, définissez les valeurs suivantes :  
+1. Ajouter une propriété de domaine calculée à la classe de domaine. Dans le **propriétés** fenêtre, définissez les valeurs suivantes :  
   
      **IsBrowsable =**`False`**-cela masque la propriété à partir de l’utilisateur**  
   
@@ -75,27 +72,27 @@ Un *decorator* est une icône ou une ligne de texte qui apparaît sur la forme d
   
      Pour plus d’informations, consultez [calculées et les propriétés de stockage personnalisé](../modeling/calculated-and-custom-storage-properties.md).  
   
-2.  Vérifiez la nouvelle propriété de contrôler la visibilité de décorateur.  
+2. Vérifiez la nouvelle propriété de contrôler la visibilité de décorateur.  
   
-    1.  Sélectionnez le mappage d’élément de diagramme, qui est la ligne grise à partir de la classe de domaine à la forme. Dans le **détails DSL** fenêtre, ouvrez le **DecoratorMap** onglet.  
+    1. Sélectionnez le mappage d’élément de diagramme, qui est la ligne grise à partir de la classe de domaine à la forme. Dans le **détails DSL** fenêtre, ouvrez le **DecoratorMap** onglet.  
   
-    2.  Vérifier le **filtre de visibilité** boîte.  
+    2. Vérifier le **filtre de visibilité** boîte.  
   
-    3.  Dans **propriété Filter**, sélectionnez la propriété du contrôle **DecoratorControl**.  
+    3. Dans **propriété Filter**, sélectionnez la propriété du contrôle **DecoratorControl**.  
   
-    4.  Sous **entrées de visibilité**, entrez `True`.  
+    4. Sous **entrées de visibilité**, entrez `True`.  
   
-3.  Cliquez sur **transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions.  
+3. Cliquez sur **transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions.  
   
-4.  Cliquez sur **générer la Solution** sur le **Build** menu.  
+4. Cliquez sur **générer la Solution** sur le **Build** menu.  
   
-5.  Double-cliquez sur le rapport d’erreurs qui s’affiche : «*Votre_classe* ne contient pas de définition pour GetDecoratorControlValue... ».  
+5. Double-cliquez sur le rapport d’erreurs qui s’est affiché : «*Votre_classe* ne contient pas de définition pour GetDecoratorControlValue... ».  
   
      L’éditeur de texte s’ouvre sur Dsl\GeneratedCode\DomainClasses.cs. Au-dessus de l’erreur en surbrillance est un commentaire que vous êtes invité à ajouter une méthode.  
   
-6.  Notez l’espace de noms, classe et méthode qui sont manquants.  Par exemple, Company.FamilyTree.Person.GetDecoratorControlValue().  
+6. Notez l’espace de noms, classe et méthode qui sont manquants.  Par exemple, Company.FamilyTree.Person.GetDecoratorControlValue().  
   
-7.  Dans un fichier de code séparé, écrivez une définition de classe partielle qui contient la méthode manquante. Exemple :  
+7. Dans un fichier de code séparé, écrivez une définition de classe partielle qui contient la méthode manquante. Exemple :  
   
     ```  
     namespace Company.FamilyTree  
@@ -108,13 +105,10 @@ Un *decorator* est une icône ou une ligne de texte qui apparaît sur la forme d
   
      Pour plus d’informations sur la personnalisation du modèle avec le code de programme, consultez [navigation et la mise à jour un modèle dans le Code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
-8.  Régénérez et exécutez la solution.  
+8. Régénérez et exécutez la solution.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Définition de formes et connecteurs](../modeling/defining-shapes-and-connectors.md)   
  [Définition d’une Image d’arrière-plan sur un diagramme](../modeling/setting-a-background-image-on-a-diagram.md)   
  [Navigation et mise à jour d’un modèle dans le Code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Écriture de code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-
-
-

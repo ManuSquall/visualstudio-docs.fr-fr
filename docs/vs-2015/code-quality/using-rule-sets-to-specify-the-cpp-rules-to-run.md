@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 55ce3ac93f280d5b5cd29fdc533035dc32cbaa8c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e8361ec9f93ff150d3fd29bce315f635bd00048b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949861"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068637"
 ---
 # <a name="using-rule-sets-to-specify-the-c-rules-to-run"></a>Utilisation des ensembles de règles pour spécifier les règles C++ à exécuter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,13 +43,13 @@ Dans [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] et [!INCLUDE[vsUltShor
   
 #### <a name="to-modify-a-rule-set-in-the-rule-set-editor"></a>Pour modifier une règle définie dans l’éditeur d’ensemble de règles  
   
--   Pour modifier le nom complet de l’ensemble de règles, dans le **vue** menu, choisissez **fenêtre Propriétés**. Entrez le nom d’affichage dans le **nom** boîte. Notez que le nom de l’affichage peut différer du nom du fichier.  
+- Pour modifier le nom complet de l’ensemble de règles, dans le **vue** menu, choisissez **fenêtre Propriétés**. Entrez le nom d’affichage dans le **nom** boîte. Notez que le nom de l’affichage peut différer du nom du fichier.  
   
--   Pour ajouter toutes les règles du groupe à un ensemble de règles personnalisé, sélectionnez la case à cocher du groupe. Pour supprimer toutes les règles du groupe, désactivez la case à cocher.  
+- Pour ajouter toutes les règles du groupe à un ensemble de règles personnalisé, sélectionnez la case à cocher du groupe. Pour supprimer toutes les règles du groupe, désactivez la case à cocher.  
   
--   Pour ajouter une règle spécifique à l’ensemble de règles personnalisé, sélectionnez la case à cocher de la règle. Pour supprimer la règle à partir de l’ensemble de règles, désactivez la case à cocher.  
+- Pour ajouter une règle spécifique à l’ensemble de règles personnalisé, sélectionnez la case à cocher de la règle. Pour supprimer la règle à partir de l’ensemble de règles, désactivez la case à cocher.  
   
--   Pour modifier l’action effectuée lorsqu’une règle est violée dans une analyse du code, choisissez la **Action** champ pour la règle et choisissez l’une des valeurs suivantes :  
+- Pour modifier l’action effectuée lorsqu’une règle est violée dans une analyse du code, choisissez la **Action** champ pour la règle et choisissez l’une des valeurs suivantes :  
   
      **Avertir** -génère un avertissement.  
   
@@ -59,20 +59,20 @@ Dans [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] et [!INCLUDE[vsUltShor
   
 #### <a name="to-group-filter-or-change-the-fields-in-the-rule-set-editor-by-using-the-rule-set-editor-toolbar"></a>Pour regrouper, filtrer ou modifier les champs dans l’éditeur d’ensemble de règles à l’aide de la barre d’outils Éditeur de règle ensemble  
   
--   Pour développer les règles dans tous les groupes, choisissez **développer tout**.  
+- Pour développer les règles dans tous les groupes, choisissez **développer tout**.  
   
--   Pour réduire les règles dans tous les groupes, choisissez **réduire tout**.  
+- Pour réduire les règles dans tous les groupes, choisissez **réduire tout**.  
   
--   Pour modifier le champ dont les règles sont regroupés, choisissez le champ à partir de la **Group By** liste. Pour afficher les règles non groupées, choisissez  **\<None >**.  
+- Pour modifier le champ dont les règles sont regroupés, choisissez le champ à partir de la **Group By** liste. Pour afficher les règles non groupées, choisissez  **\<None >**.  
   
--   Pour ajouter ou supprimer des champs dans les colonnes de la règle, choisissez **Options de colonne**.  
+- Pour ajouter ou supprimer des champs dans les colonnes de la règle, choisissez **Options de colonne**.  
   
--   Pour masquer les règles qui ne s’appliquent pas à la solution actuelle, choisissez **masquer des règles qui ne s’appliquent pas à la solution actuelle**.  
+- Pour masquer les règles qui ne s’appliquent pas à la solution actuelle, choisissez **masquer des règles qui ne s’appliquent pas à la solution actuelle**.  
   
--   Pour basculer entre l’affichage et masquage des règles qui sont affectés à l’action d’erreur, choisissez **afficher les règles qui peuvent générer des erreurs d’analyse du Code**.  
+- Pour basculer entre l’affichage et masquage des règles qui sont affectés à l’action d’erreur, choisissez **afficher les règles qui peuvent générer des erreurs d’analyse du Code**.  
   
--   Pour basculer entre l’affichage et masquage des règles qui sont affectés à l’action de l’avertissement, choisissez **afficher les règles qui peuvent générer des avertissements d’analyse du Code**.  
+- Pour basculer entre l’affichage et masquage des règles qui sont affectés à l’action de l’avertissement, choisissez **afficher les règles qui peuvent générer des avertissements d’analyse du Code**.  
   
--   Pour basculer entre l’affichage et masquage des règles qui sont affectées la **aucun** action, choisissez **afficher les règles qui ne sont pas activés**.  
+- Pour basculer entre l’affichage et masquage des règles qui sont affectées la **aucun** action, choisissez **afficher les règles qui ne sont pas activés**.  
   
--   Pour ajouter ou supprimer des ensembles de règles de valeur par défaut à l’ensemble de règles actuel de Microsoft, choisissez **ajouter ou supprimer des ensembles de règles enfants**.
+- Pour ajouter ou supprimer des ensembles de règles de valeur par défaut à l’ensemble de règles actuel de Microsoft, choisissez **ajouter ou supprimer des ensembles de règles enfants**.

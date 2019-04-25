@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 6768bb0100b3bb0052898efc6a57017fca3702b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2a120bb5eaab49e2652715c2583f898949b506a3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938507"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061500"
 ---
 # <a name="ca2119-seal-methods-that-satisfy-private-interfaces"></a>CA2119 : Scellez les méthodes qui satisfont les interfaces privées
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,15 +41,15 @@ ms.locfileid: "58938507"
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, empêchez la méthode d’être substituée en dehors de l’assembly en utilisant l’une des opérations suivantes :
 
--   Créez le type déclarant `sealed` (`NotInheritable` en Visual Basic).
+- Créez le type déclarant `sealed` (`NotInheritable` en Visual Basic).
 
--   Modifiez l’accessibilité du type déclarant à `internal` (`Friend` en Visual Basic).
+- Modifiez l’accessibilité du type déclarant à `internal` (`Friend` en Visual Basic).
 
--   Supprimez tous les constructeurs publics du type déclarant.
+- Supprimez tous les constructeurs publics du type déclarant.
 
--   Implémentez la méthode sans utiliser le `virtual` modificateur.
+- Implémentez la méthode sans utiliser le `virtual` modificateur.
 
--   Implémentez explicitement la méthode.
+- Implémentez explicitement la méthode.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Il est possible de supprimer un avertissement de cette règle si, après un examen minutieux, aucun problème de sécurité qui peut être exploitable que si la méthode est substituée en dehors de l’assembly.

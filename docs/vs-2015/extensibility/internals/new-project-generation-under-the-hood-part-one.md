@@ -11,12 +11,12 @@ ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e4d28305f8ccd1a6b212b520a7501164be2cc0ee
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6f26c093f09cd5b7b99f00ee69a81be99c769e2e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950450"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054236"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Nouvelle génération de projet : Rouages du système, première partie
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,15 +25,15 @@ Jamais pensé que sur la façon de créer votre propre type de projet ? Vous vo
   
  Il existe plusieurs tâches qui coordonne les Visual Studio pour vous :  
   
--   Il affiche une arborescence de tous les types de projet disponibles.  
+- Il affiche une arborescence de tous les types de projet disponibles.  
   
--   Il affiche la liste des modèles d’application pour chaque type de projet et vous permet de choisir un.  
+- Il affiche la liste des modèles d’application pour chaque type de projet et vous permet de choisir un.  
   
--   Il collecte des informations de projet pour l’application, telles que le nom du projet et le chemin d’accès.  
+- Il collecte des informations de projet pour l’application, telles que le nom du projet et le chemin d’accès.  
   
--   Il transmet ces informations à la fabrique de projets.  
+- Il transmet ces informations à la fabrique de projets.  
   
--   Il génère des éléments de projet et des dossiers dans la solution actuelle.  
+- Il génère des éléments de projet et des dossiers dans la solution actuelle.  
   
 ## <a name="the-new-project-dialog-box"></a>La boîte de dialogue Nouveau projet  
  Tout commence lorsque vous sélectionnez un type de projet pour un nouveau projet. Nous allons commencer en cliquant sur **nouveau projet** sur le **fichier** menu. Le **nouveau projet** boîte de dialogue s’affiche, qui recherchent quelque chose comme suit :  
@@ -116,11 +116,11 @@ devenv /installvstemplates
   
  Lorsque le **nouveau projet** boîte de dialogue s’ouvre, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] traverse le dossier ProjectTemplates et recrée sa structure dans le **types de projets** arborescence avec des modifications :  
   
--   Le nœud racine dans le **types de projets** arborescence est déterminée par le modèle d’application.  
+- Le nœud racine dans le **types de projets** arborescence est déterminée par le modèle d’application.  
   
--   Le nom du nœud peut être localisé et peut contenir des caractères spéciaux.  
+- Le nom du nœud peut être localisé et peut contenir des caractères spéciaux.  
   
--   L’ordre de tri peut être modifié.  
+- L’ordre de tri peut être modifié.  
   
 ##### <a name="finding-the-root-node-for-a-project-type"></a>Recherche le nœud racine pour un Type de projet  
  Lorsque Visual Studio parcourt les dossiers ProjectTemplates, il ouvre tous les fichiers .zip et extrait tous les fichiers .vstemplate. Un fichier .vstemplate utilise XML pour décrire un modèle d’application. Pour plus d’informations, consultez [nouvelle génération de projet : Sous le capot, deuxième partie](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md).  

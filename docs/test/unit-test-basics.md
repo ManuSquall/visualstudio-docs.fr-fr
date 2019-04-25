@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 080674094ede1a1d0f38327fc47e238d5f958362
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: df0d6c25bad57550fcfc9ce475dcc9da488f195f
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416368"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647412"
 ---
 # <a name="unit-test-basics"></a>Concepts de base des tests unitaires
 
@@ -78,7 +78,7 @@ Maintenant que nous avons le code, il est temps de le tester.
 
 ## <a name="create-unit-test-projects-and-test-methods"></a>Créer des projets de test unitaire et des méthodes de test
 
-Il est souvent plus rapide de générer le projet de test unitaire et les stubs de test unitaire à partir de votre code. Vous pouvez également choisir de créer le projet de test unitaire et les tests manuellement selon vos besoins.
+Il est souvent plus rapide de générer le projet de test unitaire et les stubs de test unitaire à partir de votre code. Vous pouvez également choisir de créer le projet de test unitaire et les tests manuellement selon vos besoins. Si vous voulez créer des tests unitaires avec un framework tiers, l’une de ces extensions doit être installée : [NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) ou [xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator).
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>Créer un projet de test unitaire et des stubs de test unitaire
 
@@ -88,7 +88,7 @@ Il est souvent plus rapide de générer le projet de test unitaire et les stubs 
 
 2. Cliquez sur **OK** pour accepter les valeurs par défaut pour créer vos tests unitaires, ou changez les valeurs utilisées pour créer et nommer le projet de test unitaire et les tests unitaires. Vous pouvez sélectionner le code qui est ajouté par défaut aux méthodes de test unitaire.
 
-    ![Cliquez avec le bouton droit dans l'éditeur et choisissez Créer des tests unitaires](../test/media/createunittestsdialog.png)
+    ![Boîte de dialogue Créer des tests unitaires dans Visual Studio](../test/media/create-unit-tests.png)
 
 3. Les stubs de test unitaire sont créés dans un nouveau projet de test unitaire pour toutes les méthodes dans la classe.
 

@@ -1,25 +1,22 @@
 ---
 title: Définir des contraintes de validation pour les modèles UML | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - UML model, validation constraints
 ms.assetid: 87b3b0da-122d-4121-9318-200c38ff49d0
 caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6647d37636ed0e79d817113e388ae5df23a88a29
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f7144f435c61bcf6cab03b55482962e55b02407e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51782412"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58950841"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Définir des contraintes de validation pour les modèles UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +44,7 @@ Vous pouvez définir des contraintes de validation qui vérifient si le modèle 
   
 -   **Créer une extension de validation dans son propre VSIX à l’aide d’un modèle de projet.** . Il s’agit de la méthode la plus rapide. Adoptez-la si vous ne souhaitez pas combiner vos contraintes de validation avec d’autres types d’extensions, telles que les commandes de menu, les éléments de boîte à outils personnalisés ou les gestionnaires de mouvements. Vous pouvez définir plusieurs contraintes dans une classe.  
   
--   **Créer des projets VSIX et classe de validation distincte.** . Choisissez cette méthode si vous souhaitez combiner plusieurs types d’extensions au sein d’un même VSIX. Par exemple, si votre commande de menu prévoit que le modèle observe des contraintes spécifiques, vous pouvez l'incorporer à la même extension VSIX en tant que méthode de validation.  
+-   **Créer des projets VSIX et classe de validation distincte.** . Choisissez cette méthode si vous souhaitez combiner plusieurs types d’extensions au sein d’un même VSIX. Par exemple, si votre commande de menu prévoit que le modèle observe des contraintes spécifiques, vous pouvez l’incorporer à la même extension VSIX en tant que méthode de validation.  
   
 #### <a name="to-create-a-validation-extension-in-its-own-vsix"></a>Pour créer une extension de validation dans sa propre extension VSIX  
   
@@ -190,7 +187,7 @@ using Microsoft.VisualStudio.Uml.Classes;
   
      Une instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] démarre.  
   
-     **Dépannage**: si une nouvelle instance de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ne démarre pas :  
+     **Résolution des problèmes**: Si un nouveau [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ne démarre pas :  
   
     -   Si vous avez plusieurs projets, vérifiez que le projet VSIX est défini comme projet de démarrage de la solution.  
   
@@ -212,7 +209,7 @@ using Microsoft.VisualStudio.Uml.Classes;
   
 6.  Double-cliquez sur le rapport d’erreurs. Si les éléments mentionnés dans le rapport sont visibles à l’écran, ils sont mis en surbrillance.  
   
-     **Dépannage**: si la commande **Valider** n’apparaît pas dans le menu, vérifiez que :  
+     **Résolution des problèmes**: Si le **Validate** commande n’apparaît pas dans le menu, vérifiez que :  
   
     -   le projet de validation est répertorié en tant que composant MEF sous l’onglet **Composants** de **source.extensions.manifest** dans le projet VSIX ;  
   
@@ -262,23 +259,23 @@ public void ValidateSomething
 |||  
 |-|-|  
 |`[Export(typeof(System.Action <ValidationContext, object>))]`|Définit la méthode comme contrainte de validation à l’aide de l’infrastructure MEF (Managed Extensibility Framework).|  
-|`[ValidationMethod (ValidationCategories.Menu)]`|Spécifie quand la validation est effectuée. Utilisez une opération de bits OR (&#124;) si vous souhaitez combiner plusieurs options.<br /><br /> `Menu` = appelé par le menu Valider.<br /><br /> `Save` = appelé lors de l'enregistrement du modèle.<br /><br /> `Open` = appelé lors de l'ouverture du modèle. `Load` = appelé lors de l'enregistrement du modèle, mais en cas d'infraction prévient l'utilisateur qu'il sera peut-être impossible de rouvrir le modèle. Également appelé lors du chargement, avant l’analyse du modèle.|  
+|`[ValidationMethod (ValidationCategories.Menu)]`|Spécifie quand la validation est effectuée. Utilisez une opération de bits OR (&#124;) si vous souhaitez combiner plusieurs options.<br /><br /> `Menu` = appelé par le menu Valider.<br /><br /> `Save` = appelé lors de l’enregistrement du modèle.<br /><br /> `Open` = appelé lors de l’ouverture du modèle. `Load` = appelé lors de l’enregistrement du modèle, mais en cas d’infraction prévient l’utilisateur qu’il sera peut-être impossible de rouvrir le modèle. Également appelé lors du chargement, avant l’analyse du modèle.|  
 |`public void ValidateSomething`<br /><br /> `(ValidationContext context,`<br /><br /> `IElement element)`|Remplacez le deuxième paramètre `IElement` par le type d’élément auquel vous souhaitez que la contrainte s’applique. La méthode de contrainte est appelée sur tous les éléments dans le type spécifié.<br /><br /> Le nom de la méthode est sans importance.|  
   
  Vous pouvez définir autant de méthodes de validation que vous le souhaitez, avec des types différents dans le deuxième paramètre. Quand la validation est appelée, chaque méthode de validation est appelée sur chaque élément de modèle conforme au type de paramètre.  
   
 ### <a name="reporting-validation-errors"></a>Signalement des erreurs de validation  
- Pour créer un rapport d’erreurs, utilisez les méthodes fournies par `ValidationContext` :  
+ Pour créer un rapport d’erreurs, utilisez les méthodes fournies par `ValidationContext`:  
   
  `context.LogError("error string", errorCode, elementsWithError);`  
   
 - `"error string"` apparaît dans la liste d’erreurs de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]  
   
-- `errorCode` est une chaîne qui doit être un identificateur unique de l'erreur  
+- `errorCode` est une chaîne qui doit être un identificateur unique de l’erreur  
   
-- `elementsWithError` identifie les éléments dans le modèle. Quand l'utilisateur double-clique sur le rapport d'erreurs, la forme représentant cet élément est sélectionnée.  
+- `elementsWithError` identifie les éléments dans le modèle. Quand l’utilisateur double-clique sur le rapport d’erreurs, la forme représentant cet élément est sélectionnée.  
   
-  `LogError(),` `LogWarning()` et `LogMessage()` placent les messages dans différentes sections de la liste d'erreurs.  
+  `LogError(),` `LogWarning()` et `LogMessage()` placent les messages dans différentes sections de la liste d’erreurs.  
   
 ## <a name="how-validation-methods-are-applied"></a>Application des méthodes de validation  
  La validation est appliquée à chaque élément du modèle, y compris aux relations et aux différentes parties des plus grands éléments, tels que les attributs d’une classe et les paramètres d’une opération.  
@@ -397,7 +394,7 @@ context.LogError(... , usecase);
   
    Exceptionnellement, une extension défaillante ne parvient pas à se charger et crée un rapport dans la fenêtre d’erreur, mais ne s’affiche pas dans le Gestionnaire d’extensions. Dans ce cas, vous pouvez supprimer l’extension en supprimant le fichier à partir de l’emplacement suivant où *% LocalAppData%* est généralement *nom_lecteur*: \Users\\*nom d’utilisateur*\AppData\Local :  
   
-   *%LocalAppData%* **\Microsoft\VisualStudio\\[version] \Extensions**  
+   *%LocalAppData%* **\Microsoft\VisualStudio\\[version]\Extensions**  
   
 ##  <a name="Example"></a> Exemple  
  Cet exemple recherche des boucles dans la relation Dependency entre les éléments.  
@@ -479,6 +476,3 @@ private bool NoDependencyLoops(ValidationContext context,
 ## <a name="see-also"></a>Voir aussi  
  [Définir et installer une extension de modélisation](../modeling/define-and-install-a-modeling-extension.md)   
  [Programmation avec l’API UML](../modeling/programming-with-the-uml-api.md)
-
-
-

@@ -23,12 +23,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: f120f29494b8c519253c98f889496189e7e2594f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 26bcab8d589c1fedcbbc4eb1f8b06bb1c04cac53
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931622"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113298"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>Accéder directement à la base de données avec un TableAdapter
 
@@ -42,7 +42,7 @@ Appelez le TableAdapter `DbDirect` méthode qui effectue la tâche que vous essa
 
 ### <a name="to-insert-new-records-directly-into-a-database"></a>Pour insérer de nouveaux enregistrements directement dans une base de données
 
--   Appelez le TableAdapter `Insert` méthode, en passant les valeurs pour chaque colonne en tant que paramètres. La procédure suivante utilise le `Region` table dans la base de données Northwind comme exemple.
+- Appelez le TableAdapter `Insert` méthode, en passant les valeurs pour chaque colonne en tant que paramètres. La procédure suivante utilise le `Region` table dans la base de données Northwind comme exemple.
 
     > [!NOTE]
     > Si vous n’avez pas d’instance disponible, instanciez le TableAdapter que vous souhaitez utiliser.
@@ -52,7 +52,7 @@ Appelez le TableAdapter `DbDirect` méthode qui effectue la tâche que vous essa
 
 ### <a name="to-update-records-directly-in-a-database"></a>Pour mettre à jour des enregistrements directement dans une base de données
 
--   Appelez le TableAdapter `Update` méthode, en passant les valeurs nouvelles et originale pour chaque colonne en tant que paramètres.
+- Appelez le TableAdapter `Update` méthode, en passant les valeurs nouvelles et originale pour chaque colonne en tant que paramètres.
 
     > [!NOTE]
     > Si vous n’avez pas d’instance disponible, instanciez le TableAdapter que vous souhaitez utiliser.
@@ -62,7 +62,7 @@ Appelez le TableAdapter `DbDirect` méthode qui effectue la tâche que vous essa
 
 ### <a name="to-delete-records-directly-from-a-database"></a>Pour supprimer des enregistrements directement à partir d’une base de données
 
--   Appelez le TableAdapter `Delete` méthode, en passant les valeurs pour chaque colonne en tant que paramètres de la `Delete` (méthode). La procédure suivante utilise le `Region` table dans la base de données Northwind comme exemple.
+- Appelez le TableAdapter `Delete` méthode, en passant les valeurs pour chaque colonne en tant que paramètres de la `Delete` (méthode). La procédure suivante utilise le `Region` table dans la base de données Northwind comme exemple.
 
     > [!NOTE]
     > Si vous n’avez pas d’instance disponible, instanciez le TableAdapter que vous souhaitez utiliser.

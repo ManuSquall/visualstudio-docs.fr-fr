@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eed10c7535a08a299f43138774935f4c65eafffa
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9a7514e3ff0c876a669f514a7e17bb02b73c19c2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924394"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075023"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>Procédure : Utiliser des transactions pour mettre à jour le modèle
 Transactions Assurez-vous que les modifications qui ont été apportées dans le magasin sont traitées en tant que groupe. Les modifications qui sont regroupées peuvent être validées ou restaurées en tant qu’unité unique.
@@ -57,9 +57,9 @@ catch (Exception ex)
 ## <a name="rolling-back-a-transaction"></a>Restauration d'une transaction
  Pour vous assurer que le Store conserve ou revient à son état avant la transaction, vous pouvez utiliser une de ces tactiques :
 
-1.  Déclencher une exception qui n’est pas interceptée dans la portée de la transaction.
+1. Déclencher une exception qui n’est pas interceptée dans la portée de la transaction.
 
-2.  Restaurer explicitement la transaction :
+2. Restaurer explicitement la transaction :
 
     ```csharp
     this.Store.TransactionManager.CurrentTransaction.Rollback();

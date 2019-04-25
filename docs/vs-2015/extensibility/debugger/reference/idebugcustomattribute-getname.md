@@ -46,7 +46,7 @@ int GetName(
  En cas de réussite, retourne S_OK ; Sinon, retourne un code d’erreur.  
   
 ## <a name="remarks"></a>Notes  
- Nommé retourné par cette méthode correspond au nom de la classe utilisée pour déclarer l’attribut. Pas exactement cela peut correspondre au nom de la classe d’attributs personnalisés lui-même, car c# permet le suffixe « Attribute » à supprimer à partir d’un nom d’attribut personnalisé lorsqu’elle est utilisée dans une déclaration.  
+ Nommé retourné par cette méthode correspond au nom de la classe utilisée pour déclarer l’attribut. Pas exactement cela peut correspondre au nom de la classe d’attributs personnalisés lui-même, car C# permet le suffixe « Attribute » à supprimer à partir d’un nom d’attribut personnalisé lorsqu’elle est utilisée dans une déclaration.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

@@ -13,12 +13,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 357623a6c93cf2ec87cc9d4b53f76cec535fd6c1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7432009cb64081fc235ec48a3de5400311260f3f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54805306"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079056"
 ---
 # <a name="understanding-performance-collection-methods"></a>Présentation des méthodes de collecte des performances
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Les outils de profilage Visual Studio fournissent cinq méthodes que vous pouvez
   
  À l’aide de certaines méthodes de profilage, vous pouvez également collecter des données supplémentaires, comme les compteurs de performances matérielles et logicielles. Pour plus d’informations, consultez [Collecte de données de performances supplémentaires](../profiling/collecting-additional-performance-data.md).  
   
-##  <a name="sampling"></a> Échantillonnage  
+## <a name="sampling"></a> Échantillonnage  
  La méthode de profilage par échantillonnage collecte des données statistiques sur le travail effectué par une application pendant l’exécution d’un profilage. La méthode d’échantillonnage est légère et a peu d’effet sur l’exécution des méthodes de l’application.  
   
  L’échantillonnage est la méthode par défaut pour les outils de profilage de Visual Studio. Il est utile dans les cas suivants :  
@@ -57,7 +57,7 @@ Les outils de profilage Visual Studio fournissent cinq méthodes que vous pouvez
   
   [Vues de données de la méthode d’échantillonnage](../profiling/profiler-sampling-method-data-views.md)  
   
-##  <a name="instrumentation"></a> Instrumentation  
+## <a name="instrumentation"></a> Instrumentation  
  La méthode de profilage par instrumentation collecte le minutage détaillé pour les appels de fonctions dans une application profilée. Le profilage par instrumentation est utile pour les cas suivants :  
   
 - Examen des goulots d’étranglement d’entrée/sortie, comme les E/S de disque.  
@@ -82,7 +82,7 @@ Les outils de profilage Visual Studio fournissent cinq méthodes que vous pouvez
   
   [Vues de données de la méthode d’instrumentation](../profiling/instrumentation-method-data-views.md)  
   
-##  <a name="concurrency"></a> Accès concurrentiel  
+## <a name="concurrency"></a> Accès concurrentiel  
  Le profilage d’accès concurrentiel collecte des informations sur les applications multithreads. Le profilage de conflit de ressources collecte les informations détaillées de la pile des appels chaque fois que des threads en concurrence sont forcés d’attendre pour accéder à une ressource partagée. La visualisation concurrentielle collecte également des informations plus générales sur la façon dont votre application multithread interagit avec elle-même, avec le matériel, avec le système d’exploitation et avec d’autres processus sur l’ordinateur hôte :  
   
 - Les rapports de conflit de ressources affichent le nombre total de conflits et le temps total passé en attente d’une ressource pour les modules, les fonctions, les lignes de code source et les instructions où l’attente s’est produite. Les graphiques chronologiques affichent également les conflits au fil de leur survenance.  
@@ -97,7 +97,7 @@ Les outils de profilage Visual Studio fournissent cinq méthodes que vous pouvez
   
   [Visualiseur concurrentiel](../profiling/concurrency-visualizer.md)  
   
-##  <a name="net_memory"></a> Mémoire .NET  
+## <a name="net_memory"></a> Mémoire .NET  
  La méthode de profilage d’allocation de la mémoire .NET interrompt le processeur de l’ordinateur à chaque allocation d’un objet du .NET Framework dans une application profilée. Quand les données de durée de vie des objets sont également collectées, le profileur interrompt le processeur après chaque garbage collection du .NET Framework.  
   
  Le profileur collecte des informations sur le type, la taille et le nombre d’objets qui ont été créés dans une allocation ou détruits dans une garbage collection.  
@@ -118,7 +118,7 @@ Les outils de profilage Visual Studio fournissent cinq méthodes que vous pouvez
   
   [Vues de données de mémoire .NET](../profiling/dotnet-memory-data-views.md)  
   
-##  <a name="tier_interaction"></a> Interaction de couche  
+## <a name="tier_interaction"></a> Interaction de couche  
  Le profilage d’interaction de couche ajoute des informations à un fichier de données de profilage sur les appels [!INCLUDE[vstecado](../includes/vstecado-md.md)] synchrones entre une page [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] ou une autre application et une base de données [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]. Les données incluent le nombre et la durée des appels, ainsi que la durée maximale et minimale. Les données d’interaction de couche peuvent être ajoutées aux données de profilage collectées avec les méthodes d’échantillonnage, d’instrumentation, de mémoire .NET ou d’accès concurrentiel.  
   
  ![Données de profilage d’interaction de couche](../profiling/media/tierinteraction-profilingtools.png "TierInteraction_ProfilingTools")  
@@ -129,5 +129,5 @@ Données d’interaction de couche collectées par les outils de profilage
  [Vues Interactions de couche](../profiling/tier-interaction-views.md)  
   
 ## <a name="see-also"></a>Voir aussi  
- [Guide pratique pour collecter des données de performances pour un site web](../profiling/how-to-collect-performance-data-for-a-web-site.md)   
+ [Guide pratique pour Collecter des données de performances pour un Site Web](../profiling/how-to-collect-performance-data-for-a-web-site.md)   
  [Guide du débutant en profilage des performances](../profiling/beginners-guide-to-performance-profiling.md)

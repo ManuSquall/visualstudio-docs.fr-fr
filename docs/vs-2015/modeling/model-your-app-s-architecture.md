@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 043d6e743df1069e268e63e8ef8acb52555ce659
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0a6e551dd2f045684168947d2c5a4e63089928c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953723"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098439"
 ---
 # <a name="model-your-app39s-architecture"></a>Modéliser votre application&#39;architecture s
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,28 +32,28 @@ Pour vous assurer que votre application ou votre système logiciel répond à vo
   
  L'architecture d'un système peut être divisée en deux parties :  
   
--   [Conception de haut niveau](#Structure). Cette section décrit les principaux composants et comment ils interagissent pour répondre à chaque spécification. Si le système est grand, chaque composant peut avoir sa propre conception de haut niveau qui montre comment il est constitué de composants plus petits.  
+- [Conception de haut niveau](#Structure). Cette section décrit les principaux composants et comment ils interagissent pour répondre à chaque spécification. Si le système est grand, chaque composant peut avoir sa propre conception de haut niveau qui montre comment il est constitué de composants plus petits.  
   
--   [Modèles de conception](#Patterns) et les conventions utilisées dans les conceptions des composants. Un modèle décrit une approche particulière visant à atteindre un objectif de programmation. En utilisant les mêmes modèles lors de toutes les phases de conception, votre équipe peut réduire le coût des modifications et du développement de nouveaux logiciels.  
+- [Modèles de conception](#Patterns) et les conventions utilisées dans les conceptions des composants. Un modèle décrit une approche particulière visant à atteindre un objectif de programmation. En utilisant les mêmes modèles lors de toutes les phases de conception, votre équipe peut réduire le coût des modifications et du développement de nouveaux logiciels.  
   
-##  <a name="Structure"></a> Conception de haut niveau  
+## <a name="Structure"></a> Conception de haut niveau  
  Une conception de haut niveau décrit les principaux composants de votre système et la façon dont ils interagissent pour atteindre les objectifs de la conception. Le développement de la conception de haut niveau implique d'effectuer les activités dans la liste ci-dessous, mais pas nécessairement dans un ordre particulier.  
   
  Si vous mettez à jour du code existant, vous pouvez commencer par décrire les principaux composants. Assurez-vous de bien comprendre les modifications apportées aux besoins des utilisateurs, puis ajoutez ou modifiez les interactions entre les composants. Si vous développez un nouveau système, commencez par comprendre les caractéristiques principales des besoins des utilisateurs. Vous pouvez ensuite explorer des séquences d'interactions pour les cas d'usage principaux, puis consolider les séquences dans une conception de composant.  
   
  Dans tous les cas, il est utile de développer les différentes activités en parallèle et de développer le code et les tests à un stade précoce. N'essayez pas de terminer l'un de ces aspects avant d'en commencer un autre. En règle générale, les impératifs et votre compréhension de la meilleure façon de concevoir le système évolueront pendant l'écriture et les tests du code. Vous devez donc commencer par comprendre et coder les caractéristiques principales des impératifs et de votre conception. Remplissez les détails dans les itérations ultérieures du projet.  
   
--   [Comprendre les impératifs](#Requirements). Le point de départ de toute conception est une vision claire des besoins des utilisateurs.  
+- [Comprendre les impératifs](#Requirements). Le point de départ de toute conception est une vision claire des besoins des utilisateurs.  
   
--   [Modèles architecturaux](#BigDecisions). Choix que vous avez effectués concernant les principales technologies et éléments de l'architecture du système.  
+- [Modèles architecturaux](#BigDecisions). Choix que vous avez effectués concernant les principales technologies et éléments de l'architecture du système.  
   
--   [Composants et leurs Interfaces](#Components). Vous pouvez dessiner des diagrammes de composants pour illustrer les principales parties du système et montrer les interfaces via lesquelles elles interagissent. Les interfaces de chaque composant incluent tous les messages que vous avez identifiés dans les diagrammes de séquence.  
+- [Composants et leurs Interfaces](#Components). Vous pouvez dessiner des diagrammes de composants pour illustrer les principales parties du système et montrer les interfaces via lesquelles elles interagissent. Les interfaces de chaque composant incluent tous les messages que vous avez identifiés dans les diagrammes de séquence.  
   
--   [Interactions entre les composants](#Interactions). Pour chaque cas d'usage, événement ou message entrant, vous pouvez dessiner un diagramme de séquence qui montre comment les principaux composants du système interagissent pour obtenir le résultat demandé.  
+- [Interactions entre les composants](#Interactions). Pour chaque cas d'usage, événement ou message entrant, vous pouvez dessiner un diagramme de séquence qui montre comment les principaux composants du système interagissent pour obtenir le résultat demandé.  
   
--   [Modèle de données des composants et des Interfaces](#Data). Vous pouvez dessiner des diagrammes de classes pour décrire les informations passées entre les composants et stockées dans les composants.  
+- [Modèle de données des composants et des Interfaces](#Data). Vous pouvez dessiner des diagrammes de classes pour décrire les informations passées entre les composants et stockées dans les composants.  
   
-##  <a name="Requirements"></a> Comprendre les impératifs  
+## <a name="Requirements"></a> Comprendre les impératifs  
  Pour développer efficacement la conception de haut niveau d'une application complète, il est préférable de l'associer à un modèle d'impératifs ou autre description des besoins des utilisateurs. Pour plus d’informations sur les modèles d’impératifs, consultez [modéliser les besoins des utilisateurs](../modeling/model-user-requirements.md).  
   
  Si le système que vous développez est un composant d'un système plus grand, tout ou partie de vos impératifs peuvent être exprimés dans des interfaces de programmation.  
@@ -78,7 +78,7 @@ Pour vous assurer que votre application ou votre système logiciel répond à vo
   
   La quantité de détails que vous devez mettre dans un modèle d'impératifs ou d'architecture dépend de l'échelle du projet et de la taille et de la distribution de l'équipe. Pour une petite équipe sur un projet de courte durée, le dessin d'un diagramme de classes des concepts métier et de quelques modèles de conception peut suffire. Pour un grand projet distribué sur plusieurs régions, beaucoup plus de détails seront nécessaires.  
   
-##  <a name="BigDecisions"></a> Modèles architecturaux  
+## <a name="BigDecisions"></a> Modèles architecturaux  
  Lors de la phase initiale de développement, vous devez choisir les principaux éléments et technologies dont dépend la conception. Ces choix porteront sur les aspects suivants :  
   
 - Choix technologiques, tels que le choix entre une base de données et un système de fichiers, le choix entre une application en réseau et un client web, et ainsi de suite.  
@@ -91,7 +91,7 @@ Pour vous assurer que votre application ou votre système logiciel répond à vo
   
   Vos sélections affectent votre mode d'utilisation et votre interprétation du modèle architectural. Par exemple, dans un système qui utilise une base de données, les associations dans un diagramme de classes peuvent représenter des relations ou des clés étrangères dans la base de données, tandis que dans un système basé sur des fichiers XML, les associations peuvent indiquer des références croisées qui utilisent XPath. Dans un système distribué, les messages figurant dans un diagramme de séquence peuvent représenter des messages sur le câble. Dans une application autonome, ils peuvent représenter des appels de fonction.  
   
-##  <a name="Components"></a> Composants et leurs Interfaces  
+## <a name="Components"></a> Composants et leurs Interfaces  
  Les principales recommandations de cette section sont les suivantes :  
   
 - Créez des diagrammes de composants pour illustrer les principales parties de votre système.  
@@ -111,17 +111,17 @@ Pour vous assurer que votre application ou votre système logiciel répond à vo
   
  Un diagramme de composant par défaut pour un grand système peut inclure les composants suivants :  
   
--   Présentation. Composant qui fournit l'accès à l'utilisateur, généralement exécuté dans un navigateur web.  
+- Présentation. Composant qui fournit l'accès à l'utilisateur, généralement exécuté dans un navigateur web.  
   
--   Composants de service web. Fournit la connexion entre les clients et les serveurs.  
+- Composants de service web. Fournit la connexion entre les clients et les serveurs.  
   
--   Contrôleurs de cas d'usage. Guide l'utilisateur lors des étapes de chaque scénario.  
+- Contrôleurs de cas d'usage. Guide l'utilisateur lors des étapes de chaque scénario.  
   
--   Cœur de métier. Contient des classes basées sur des classes dans le modèle d'impératifs, implémente les opérations majeures et impose des contraintes d'entreprise.  
+- Cœur de métier. Contient des classes basées sur des classes dans le modèle d'impératifs, implémente les opérations majeures et impose des contraintes d'entreprise.  
   
--   Base de données. Stocke les objets métier.  
+- Base de données. Stocke les objets métier.  
   
--   Composants de journalisation et de gestion des erreurs.  
+- Composants de journalisation et de gestion des erreurs.  
   
 ### <a name="dependencies-between-components"></a>Dépendances entre composants  
  Outre les composants proprement dits, vous pouvez montrer leurs interdépendances. Une flèche de dépendance entre deux composants indique que changer la conception de l'un pourrait affecter la conception de l'autre. Cela se produit généralement quand un composant utilise les services ou les fonctions fournis par l'autre composant, directement ou indirectement.  
@@ -178,7 +178,7 @@ Pour vous assurer que votre application ou votre système logiciel répond à vo
   
   Il est généralement préférable d'utiliser des interfaces requises plutôt que des parties. Bien que la conception puisse être plus longue, le système qui en résulte est plus flexible. Il est également plus facile de tester les composants séparément. Cela permet d'avoir moins de couplage dans les plans de développement.  
   
-##  <a name="Interactions"></a> Interactions entre les composants  
+## <a name="Interactions"></a> Interactions entre les composants  
  Les principales recommandations de cette section sont les suivantes :  
   
 - Identifiez les cas d'usage de votre système.  
@@ -196,11 +196,11 @@ Pour vous assurer que votre application ou votre système logiciel répond à vo
 ### <a name="identifying-the-initiating-events"></a>Identification des événements de lancement  
  Le travail effectué par la plupart des systèmes logiciels peut facilement être divisé en fonction des réponses fournies selon différentes entrées ou événements. L'événement de lancement peut être l'un des événements suivants :  
   
--   La première action dans un cas d'usage. Elle peut apparaître dans le modèle d'impératifs en tant qu'étape dans un cas d'usage ou action dans un diagramme d'activités. Pour plus d’informations, [diagrammes de cas d’usage UML : Les instructions](../modeling/uml-use-case-diagrams-guidelines.md) et [diagrammes d’activités UML : Les instructions](../modeling/uml-activity-diagrams-guidelines.md).  
+- La première action dans un cas d'usage. Elle peut apparaître dans le modèle d'impératifs en tant qu'étape dans un cas d'usage ou action dans un diagramme d'activités. Pour plus d’informations, [diagrammes de cas d’usage UML : Les instructions](../modeling/uml-use-case-diagrams-guidelines.md) et [diagrammes d’activités UML : Les instructions](../modeling/uml-activity-diagrams-guidelines.md).  
   
--   Un message au niveau d'une interface de programmation. Si le système que vous développez un composant d'un système plus grand, vous devez le décrire en tant qu'opération dans l'une des interfaces du composant. Consultez [composants et leurs Interfaces](#Components).  
+- Un message au niveau d'une interface de programmation. Si le système que vous développez un composant d'un système plus grand, vous devez le décrire en tant qu'opération dans l'une des interfaces du composant. Consultez [composants et leurs Interfaces](#Components).  
   
--   Une condition particulière contrôlée par votre système ou un événement normal tel qu'une heure de la journée.  
+- Une condition particulière contrôlée par votre système ou un événement normal tel qu'une heure de la journée.  
   
 ### <a name="describe-the-computations"></a>Décrire les calculs  
  Dessinez des diagrammes de séquence pour montrer comment les composants répondent à l'événement initial.  
@@ -218,14 +218,14 @@ Pour vous assurer que votre application ou votre système logiciel répond à vo
   
  Il est utile d'ajouter des commentaires aux diagrammes d'activités ou de séquence, pour noter ce qui a été accompli après chaque opération. Vous pouvez également écrire l’effet de chaque opération dans son **post-conditions locales** propriété.  
   
-###  <a name="Data"></a> Modèle de données des composants et des Interfaces  
+### <a name="Data"></a> Modèle de données des composants et des Interfaces  
  Définissez les paramètres et les valeurs de retour de chaque opération dans les interfaces de composant. Là où les opérations représentent des appels tels que des demandes de service web, les paramètres sont les renseignements envoyés dans le cadre de la demande. Si plusieurs valeurs sont retournées à partir d’une opération, vous pouvez utiliser des paramètres avec le **Direction** propriété définie sur **Out**.  
   
  Chaque paramètre et valeur de retour a un type. Vous pouvez définir ces types à l'aide de diagrammes de classes UML. Vous n'êtes pas obligé de représenter le détail de l'implémentation dans ces diagrammes. Par exemple, si vous décrivez des données transmises au format XML, vous pouvez utiliser une association pour représenter tout type de référence croisée entre les nœuds du document XML et utiliser des classes pour représenter les nœuds.  
   
  Utilisez des commentaires pour décrire les contraintes métier sur les associations et les attributs. Par exemple, si tous les articles sur la commande d'un client doivent provenir du même fournisseur, vous pouvez décrire ceci par référence aux associations entre les articles de la commande et les articles du catalogue de produits, et entre l'article du catalogue et son fournisseur.  
   
-##  <a name="Patterns"></a> Modèles de conception  
+## <a name="Patterns"></a> Modèles de conception  
  Un modèle de conception est un plan qui décrit comment concevoir un aspect particulier du logiciel, en particulier un aspect qui se reproduit dans différentes parties du système. En adoptant une approche uniforme dans tout le projet, vous pouvez réduire le coût de conception, garantir la cohérence dans l'interface utilisateur et réduire le coût de gestion et de modification du code.  
   
  Certains modèles de conception généraux tels qu'Observer sont bien connus et largement applicables. En outre, il existe des modèles qui sont applicables uniquement à votre projet. Par exemple, dans un système de ventes sur le web, il y aura plusieurs opérations dans le code où des modifications seront apportées à une commande de client. Pour vous assurer que l'état de la commande est affiché correctement à chaque étape, toutes ces opérations doivent suivre un protocole particulier pour mettre à jour la base de données.  
@@ -236,25 +236,25 @@ Pour vous assurer que votre application ou votre système logiciel répond à vo
   
  Un modèle de conception est décrit dans un document et comprend généralement les parties suivantes :  
   
--   Nom.  
+- Nom.  
   
--   Description du contexte dans lequel il est applicable. Quels critères doivent inciter un développeur à envisager l'application de ce modèle ?  
+- Description du contexte dans lequel il est applicable. Quels critères doivent inciter un développeur à envisager l'application de ce modèle ?  
   
--   Brève explication du problème qu'il résout.  
+- Brève explication du problème qu'il résout.  
   
--   Modèle des principales parties et de leurs relations. Il peut s'agir de classes ou de composants et d'interfaces, avec des associations et des dépendances entre eux. Les éléments appartiennent généralement à deux catégories :  
+- Modèle des principales parties et de leurs relations. Il peut s'agir de classes ou de composants et d'interfaces, avec des associations et des dépendances entre eux. Les éléments appartiennent généralement à deux catégories :  
   
-    -   Éléments que le développeur doit dupliquer dans chaque partie du code où le modèle est utilisé. Vous pouvez utiliser des types de modèles pour les décrire. Pour plus d’informations, consultez [diagrammes de cas d’usage UML : Référence](../modeling/uml-use-case-diagrams-reference.md).  
+    - Éléments que le développeur doit dupliquer dans chaque partie du code où le modèle est utilisé. Vous pouvez utiliser des types de modèles pour les décrire. Pour plus d’informations, consultez [diagrammes de cas d’usage UML : Référence](../modeling/uml-use-case-diagrams-reference.md).  
   
-    -   Éléments décrivant les classes d'infrastructure que le développeur doit utiliser.  
+    - Éléments décrivant les classes d'infrastructure que le développeur doit utiliser.  
   
--   Modèle des interactions entre les parties, à l'aide de diagrammes de séquence ou d'activités.  
+- Modèle des interactions entre les parties, à l'aide de diagrammes de séquence ou d'activités.  
   
--   Conventions d'attribution de noms.  
+- Conventions d'attribution de noms.  
   
--   Description de la façon dont le modèle résout le problème.  
+- Description de la façon dont le modèle résout le problème.  
   
--   Description des variations que les développeurs peuvent être en mesure d'adopter.  
+- Description des variations que les développeurs peuvent être en mesure d'adopter.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Modifier des modèles UML et des diagrammes](../modeling/edit-uml-models-and-diagrams.md)   

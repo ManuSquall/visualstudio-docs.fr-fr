@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5373e292192294b5dd27eff87c9f9f2b2f97820a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7a129e0a66399da1efe9bff4d7aef1a94602fa79
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602791"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664464"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>Inscription des gestionnaires de commandes d’assemblys d’interopérabilité
 Un VSPackage doit inscrire avec [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] afin que l’environnement de développement intégré (IDE) achemine ses commandes correctement.
@@ -49,7 +49,6 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
  \<*Chemin d’accès à la DLL de ressource*>, \< *ID de ressource de Menu*>, \< *Menu Version*>
 
  Le tableau suivant décrit les champs de \< *informations sur les ressources*>.
-
 
 | Élément | Description |
 |---------------------------| - |

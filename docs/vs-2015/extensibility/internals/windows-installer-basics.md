@@ -11,12 +11,12 @@ ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e0d80320b47f0d5968b4aa0e795743e394db2c19
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 2566c97a4dc025e27aecf64a7a8950a578882348
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001477"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054378"
 ---
 # <a name="windows-installer-basics"></a>Éléments de base de Windows Installer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -63,15 +63,15 @@ Le programme d’installation de Windows installe et désinstalle des applicatio
   
 #### <a name="installer-enforced-rules"></a>Règles appliquée par le programme d’installation  
   
--   Tous les fichiers dans un composant donné doivent être installés dans le même répertoire. À l’inverse, les fichiers installés pour séparer les dossiers doivent appartenir pour séparer les composants.  
+- Tous les fichiers dans un composant donné doivent être installés dans le même répertoire. À l’inverse, les fichiers installés pour séparer les dossiers doivent appartenir pour séparer les composants.  
   
--   Il peut y avoir qu’un seul chemin de clé par composant. Le chemin de clé est simplement une fichier ou clé de Registre qui représente le composant dans son intégralité.  
+- Il peut y avoir qu’un seul chemin de clé par composant. Le chemin de clé est simplement une fichier ou clé de Registre qui représente le composant dans son intégralité.  
   
 #### <a name="component-provider-responsibilities"></a>Responsabilités du fournisseur de composants  
   
--   Toutes les deux ressources qui peut être fourni séparément dans les versions ultérieures doivent exister dans des composants distincts. Ressources doivent être regroupés dans le même composant uniquement lorsque vous êtes certain que ces ressources ne seront jamais disponible séparément. En fait, il est recommandé que toutes les principales ressources (DLL, par exemple) existent toujours dans WICs distincts. Pour plus d’informations, consultez [définissant les composants de programme d’installation](http://msdn.microsoft.com/library/aa368269\(VS.85\).aspx).  
+- Toutes les deux ressources qui peut être fourni séparément dans les versions ultérieures doivent exister dans des composants distincts. Ressources doivent être regroupés dans le même composant uniquement lorsque vous êtes certain que ces ressources ne seront jamais disponible séparément. En fait, il est recommandé que toutes les principales ressources (DLL, par exemple) existent toujours dans WICs distincts. Pour plus d’informations, consultez [définissant les composants de programme d’installation](http://msdn.microsoft.com/library/aa368269\(VS.85\).aspx).  
   
--   Aucune ressource de version ne doit expédier jamais dans plusieurs WIC.  
+- Aucune ressource de version ne doit expédier jamais dans plusieurs WIC.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Que se passe-t-il si les règles de composant sont interrompues ?](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)

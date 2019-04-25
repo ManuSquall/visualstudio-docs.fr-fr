@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 013571a948c6c3fdca5da3c5c9278ca21e1f3698
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 7c07dde4c3b992db30c9fc72a0dfa01f0f13b31e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869107"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045535"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233 : Les opérations ne doivent pas déborder
 
@@ -102,11 +102,11 @@ Si vous activez checked arithmétiques dépassement de capacité positifs et né
 
 Pour activer checked arithmétiques dépassement de capacité positifs et négatifs en c# :
 
-1.  Dans **l’Explorateur de solutions**, cliquez sur votre projet et choisissez **propriétés**.
+1. Dans **l’Explorateur de solutions**, cliquez sur votre projet et choisissez **propriétés**.
 
-2.  Sélectionnez l’onglet **Build**, puis cliquez sur **Avancé**.
+2. Sélectionnez l’onglet **Build**, puis cliquez sur **Avancé**.
 
-3.  Sélectionnez **vérifier les dépassements arithmétiques** et cliquez sur **OK**.
+3. Sélectionnez **vérifier les dépassements arithmétiques** et cliquez sur **OK**.
 
 ## <a name="see-also"></a>Voir aussi
 

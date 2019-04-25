@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d97150a03e0862085f1eed512c538d4c86a6a59
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 794b9605664315e47e7ae2a778c76652c420a7f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702679"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066388"
 ---
 # <a name="hlsl-shader-debugger"></a>Débogueur du nuanceur HLSL
 Le débogueur HLSL de Visual Studio Graphics Analyzer vous aide à comprendre comment votre code de nuanceur HLSL s'exécute dans les conditions réelles de fonctionnement de votre application.
@@ -50,9 +50,9 @@ Le débogueur HLSL de Visual Studio Graphics Analyzer vous aide à comprendre co
 
 #### <a name="to-start-the-hlsl-debugger-from-the-graphics-pipeline-stages-window"></a>Pour démarrer le débogueur HLSL à partir de la fenêtre Étapes de canalisation Graphics
 
-1.  Dans la fenêtre **Étapes de canalisation Graphics**, recherchez l’étape de pipeline associée au nuanceur que vous souhaitez déboguer.
+1. Dans la fenêtre **Étapes de canalisation Graphics**, recherchez l’étape de pipeline associée au nuanceur que vous souhaitez déboguer.
 
-2.  Sous le titre de l’étape de pipeline, choisissez **Démarrer le débogage**, qui apparaît sous la forme d’une petite flèche verte.
+2. Sous le titre de l’étape de pipeline, choisissez **Démarrer le débogage**, qui apparaît sous la forme d’une petite flèche verte.
 
     > [!NOTE]
     >  Ce point d'entrée dans le débogueur HLSL débogue uniquement le premier thread nuanceur pour l'étape correspondante, c'est-à-dire le premier vertex ou le premier pixel qui est traité. Vous pouvez utiliser la fonctionnalité Historique des pixels pour accéder à d'autres threads de ces étapes du nuanceur.
@@ -73,6 +73,6 @@ Le débogueur HLSL de Visual Studio Graphics Analyzer vous aide à comprendre co
    Pour obtenir des exemples sur la façon d’utiliser le débogueur HLSL pour déboguer les erreurs de nuanceur, consultez [exemples](graphics-diagnostics-examples.md) ou les procédures pas à pas liées dans la section Voir aussi.
 
 ## <a name="see-also"></a>Voir aussi
-- [Procédure pas à pas : objets manquants en raison de l’ombrage de vertex](walkthrough-missing-objects-due-to-vertex-shading.md)
+- [Procédure pas à pas : objets manquants en raison de Vertex Shader](walkthrough-missing-objects-due-to-vertex-shading.md)
 - [Procédure pas à pas : débogage des erreurs de rendu dues à l’ombrage](walkthrough-debugging-rendering-errors-due-to-shading.md)
 - [Procédure pas à pas : utilisation de Graphics Diagnostics pour déboguer un nuanceur de calcul](walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader.md)

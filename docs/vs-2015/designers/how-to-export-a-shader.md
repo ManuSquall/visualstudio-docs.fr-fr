@@ -9,34 +9,34 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3858d10d685e104617a6de7b5c11c87cfee1872d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 74b3fa73c3a67c721b9311a964e26fa9ab48c16e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802791"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098961"
 ---
-# <a name="how-to-export-a-shader"></a>Procédure : exporter un nuanceur
+# <a name="how-to-export-a-shader"></a>Procédure : Exporter un nuanceur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ce document indique comment utiliser le concepteur de nuanceur pour exporter un nuanceur DGSL (Directed Graph Shader Language) afin de pouvoir l’utiliser dans votre application.  
   
  Ce document illustre cette activité :  
   
--   Exportation d’un nuanceur  
+- Exportation d’un nuanceur  
   
 ## <a name="exporting-a-shader"></a>Exportation d’un nuanceur  
  Après avoir créé un nuanceur à l’aide du concepteur de nuanceur et pour pouvoir l’utiliser dans votre application, vous devez l’exporter dans un format pris en charge par votre API de graphismes. Vous pouvez exporter un nuanceur de différentes façons en fonction de vos besoins.  
   
 #### <a name="to-export-a-shader"></a>Pour exporter un nuanceur  
   
-1.  Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ouvrez un fichier **Graphe de nuanceur visuel (.dgsl)**.  
+1. Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ouvrez un fichier **Graphe de nuanceur visuel (.dgsl)**.  
   
-     Si vous ne disposez pas d’un fichier **Graphe de nuanceur visuel (.dgsl)**, créez-en un en suivant la description de l’article [Comment : créer un nuanceur de couleur de base](../designers/how-to-create-a-basic-color-shader.md).  
+     Si vous ne disposez pas d’un fichier **Graphe de nuanceur visuel (.dgsl)**, créez-en un en suivant la description de l’article [Guide pratique pour Créer un nuanceur de couleur de base](../designers/how-to-create-a-basic-color-shader.md).  
   
-2.  Dans la barre d’outils **Concepteur de nuanceur**, choisissez **Avancé**, **Exporter**, **Exporter en tant que**. La boîte de dialogue **Exporter le nuanceur** s’affiche.  
+2. Dans la barre d’outils **Concepteur de nuanceur**, choisissez **Avancé**, **Exporter**, **Exporter en tant que**. La boîte de dialogue **Exporter le nuanceur** s’affiche.  
   
-3.  Dans la liste déroulante **Type de fichier**, choisissez le format d’exportation souhaité.  
+3. Dans la liste déroulante **Type de fichier**, choisissez le format d’exportation souhaité.  
   
      Voici les formats que vous pouvez choisir :  
   
@@ -49,8 +49,8 @@ Ce document indique comment utiliser le concepteur de nuanceur pour exporter un 
      **En-tête C++ (\*.h)**  
      Exporte le nuanceur en tant qu’en-tête de style C qui définit un tableau d’octets contenant le bytecode HLSL. Cette option peut allonger la durée du débogage et de la mise à jour corrective du code basé sur les problèmes des utilisateurs finaux, car l’application doit être recompilée pour tester le correctif. Toutefois, comme cette option rend difficile, mais pas impossible, la modification du nuanceur après son déploiement dans une application, elle est celle qui présente le niveau de difficulté le plus élevé pour un utilisateur souhaitant modifier le nuanceur de manière indésirable.  
   
-4.  Dans la zone de liste modifiable **Nom de fichier**, spécifiez un nom pour le nuanceur exporté, puis choisissez le bouton **Enregistrer**.  
+4. Dans la zone de liste modifiable **Nom de fichier**, spécifiez un nom pour le nuanceur exporté, puis choisissez le bouton **Enregistrer**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Comment : créer un nuanceur de couleur de base](../designers/how-to-create-a-basic-color-shader.md)   
+ [Guide pratique pour Créer un nuanceur de couleur de base](../designers/how-to-create-a-basic-color-shader.md)   
  [Concepteur Shader](../designers/shader-designer.md)

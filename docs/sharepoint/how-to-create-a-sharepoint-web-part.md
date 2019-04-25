@@ -13,37 +13,37 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3328c8900a202dd28eb2cab7c9651de8f45aa35e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 304e9f29d317a5258467e4ff45248d0dd2066d4f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636916"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041119"
 ---
 # <a name="how-to-create-a-sharepoint-web-part"></a>Procédure : Créer un composant WebPart SharePoint
   Vous pouvez créer et personnaliser un composant WebPart en ajoutant un **WebPart** d’élément à un projet SharePoint, puis en modifiant le fichier de code pour le composant WebPart ou à l’aide d’un concepteur. Pour plus d'informations, voir [Procédure : Créer un composant WebPart SharePoint à l’aide d’un concepteur](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md).
 
 ### <a name="to-create-a-sharepoint-web-part"></a>Pour créer un composant WebPart SharePoint
 
-1.  Créez ou ouvrez un projet SharePoint.
+1. Créez ou ouvrez un projet SharePoint.
 
      Pour plus d’informations, consultez [SharePoint modèles d’élément de projet et le projet](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
-2.  Choisissez le nœud de projet SharePoint dans **l’Explorateur de solutions** , puis **projet** > **ajouter un nouvel élément**.
+2. Choisissez le nœud de projet SharePoint dans **l’Explorateur de solutions** , puis **projet** > **ajouter un nouvel élément**.
 
-3.  Dans le **ajouter un nouvel élément** boîte de dialogue, développez le **SharePoint** nœud, puis choisissez le **2010** nœud.
+3. Dans le **ajouter un nouvel élément** boîte de dialogue, développez le **SharePoint** nœud, puis choisissez le **2010** nœud.
 
-4.  Dans la liste de modèles SharePoint, choisissez **WebPart**.
+4. Dans la liste de modèles SharePoint, choisissez **WebPart**.
 
-5.  Dans le **nom** zone, spécifiez un nom pour le composant WebPart, puis choisissez le **ajouter** bouton.
+5. Dans le **nom** zone, spécifiez un nom pour le composant WebPart, puis choisissez le **ajouter** bouton.
 
      Le composant WebPart s’affiche dans **l’Explorateur de solutions**. Pour plus d’informations sur les fichiers qui inclut un composant WebPart, consultez [créer des composants WebPart pour SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md).
 
-6.  Dans **l’Explorateur de solutions**, ouvrez le fichier de code pour le composant WebPart que vous venez de créer.
+6. Dans **l’Explorateur de solutions**, ouvrez le fichier de code pour le composant WebPart que vous venez de créer.
 
      Par exemple, si le nom de votre composant WebPart est *WebPart1*, ouvrez *WebPart1.vb* (en Visual Basic) ou *WebPart1.cs* (en c#).
 
-7.  Dans le fichier de code, ajouter des contrôles à la <xref:System.Web.UI.Control.CreateChildControls%2A> (méthode).
+7. Dans le fichier de code, ajouter des contrôles à la <xref:System.Web.UI.Control.CreateChildControls%2A> (méthode).
 
      Pour obtenir un exemple, consultez [Procédure pas à pas : Créer un composant WebPart pour SharePoint](../sharepoint/walkthrough-creating-a-web-part-for-sharepoint.md).
 

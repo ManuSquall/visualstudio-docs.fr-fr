@@ -15,17 +15,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8bc4ebbb8ae22604d7ec803fd4234839a17694de
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7e7f70808ff91ec32ef52deedc05724f9bac3f7d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950183"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079138"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Procédure : ajouter, mettre à jour ou supprimer une référence de service de données WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Un *référence de service* permet à un projet à l’accès à un ou plusieurs [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]. Utilisez le **ajouter une référence de Service** boîte de dialogue pour rechercher des [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] dans la solution actuelle, localement, sur un réseau local ou sur Internet.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
@@ -34,11 +33,11 @@ Un *référence de service* permet à un projet à l’accès à un ou plusieurs
   
 #### <a name="to-add-a-reference-to-an-external-service"></a>Pour ajouter une référence à un service externe  
   
-1.  Dans **l’Explorateur de solutions**, cliquez sur le nom du projet que vous souhaitez ajouter le service, puis cliquez sur **ajouter une référence de Service**.  
+1. Dans **l’Explorateur de solutions**, cliquez sur le nom du projet que vous souhaitez ajouter le service, puis cliquez sur **ajouter une référence de Service**.  
   
      Le **ajouter une référence de Service** boîte de dialogue s’affiche.  
   
-2.  Dans le **adresse** zone, entrez l’URL du service, puis cliquez sur **accédez** pour rechercher le service. Si le service implémente la sécurité de nom et mot de passe utilisateur, vous devrez peut-être utiliser un nom d’utilisateur et mot de passe.  
+2. Dans le **adresse** zone, entrez l’URL du service, puis cliquez sur **accédez** pour rechercher le service. Si le service implémente la sécurité de nom et mot de passe utilisateur, vous devrez peut-être utiliser un nom d’utilisateur et mot de passe.  
   
     > [!NOTE]
     >  Vous devez référencer des services uniquement à partir d’une source approuvée. L’ajout de références à partir d’une source non fiable peut compromettre la sécurité.  
@@ -47,29 +46,29 @@ Un *référence de service* permet à un projet à l’accès à un ou plusieurs
   
      Une barre de progression s’affiche lors de la recherche est en cours d’exécution. Vous pouvez arrêter la recherche à tout moment en cliquant sur **arrêter**.  
   
-3.  Dans le **Services** liste, développez le nœud pour le service que vous souhaitez utiliser, puis sélectionnez un jeu d’entités.  
+3. Dans le **Services** liste, développez le nœud pour le service que vous souhaitez utiliser, puis sélectionnez un jeu d’entités.  
   
-4.  Dans le **Namespace** , entrez l’espace de noms que vous souhaitez utiliser pour la référence.  
+4. Dans le **Namespace** , entrez l’espace de noms que vous souhaitez utiliser pour la référence.  
   
-5.  Cliquez sur **OK** pour ajouter la référence au projet.  
+5. Cliquez sur **OK** pour ajouter la référence au projet.  
   
      Un client de service (proxy) est généré et les métadonnées qui décrivent le service sont ajoutée au fichier app.config.  
   
 #### <a name="to-add-a-reference-to-a-service-in-the-current-solution"></a>Pour ajouter une référence à un service dans la solution actuelle  
   
-1.  Dans **l’Explorateur de solutions**, cliquez sur le nom du projet que vous souhaitez ajouter le service, puis cliquez sur **ajouter une référence de Service**.  
+1. Dans **l’Explorateur de solutions**, cliquez sur le nom du projet que vous souhaitez ajouter le service, puis cliquez sur **ajouter une référence de Service**.  
   
      Le **ajouter une référence de Service** boîte de dialogue s’affiche.  
   
-2.  Cliquez sur **découvrir**.  
+2. Cliquez sur **découvrir**.  
   
      Tous les services (les deux [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] et les services WCF) dans la solution actuelle sont ajoutés à la **Services** liste.  
   
-3.  Dans le **Services** liste, développez le nœud pour le service que vous souhaitez utiliser, puis sélectionnez un jeu d’entités.  
+3. Dans le **Services** liste, développez le nœud pour le service que vous souhaitez utiliser, puis sélectionnez un jeu d’entités.  
   
-4.  Dans le **Namespace** , entrez l’espace de noms que vous souhaitez utiliser pour la référence.  
+4. Dans le **Namespace** , entrez l’espace de noms que vous souhaitez utiliser pour la référence.  
   
-5.  Cliquez sur **OK** pour ajouter la référence au projet.  
+5. Cliquez sur **OK** pour ajouter la référence au projet.  
   
      Un client de service (proxy) est généré et les métadonnées qui décrivent le service sont ajoutée au fichier app.config.  
   
@@ -78,7 +77,7 @@ Un *référence de service* permet à un projet à l’accès à un ou plusieurs
   
 #### <a name="to-update-a-service-reference"></a>Pour mettre à jour une référence de service  
   
--   Dans **l’Explorateur de solutions**, avec le bouton droit de la référence de service, puis cliquez sur **référence de Service de mise à jour**.  
+- Dans **l’Explorateur de solutions**, avec le bouton droit de la référence de service, puis cliquez sur **référence de Service de mise à jour**.  
   
      Une boîte de dialogue de progression s’affiche pendant la référence est mis à jour à partir de son emplacement d’origine et le client du service est régénéré pour refléter ces modifications dans les métadonnées.  
   
@@ -87,7 +86,7 @@ Un *référence de service* permet à un projet à l’accès à un ou plusieurs
   
 #### <a name="to-remove-a-service-reference"></a>Pour supprimer une référence de service  
   
--   Dans **l’Explorateur de solutions**, avec le bouton droit de la référence de service, puis cliquez sur **supprimer**.  
+- Dans **l’Explorateur de solutions**, avec le bouton droit de la référence de service, puis cliquez sur **supprimer**.  
   
      Le client du service sera retiré de la solution et les métadonnées qui décrivent le service seront retirée le fichier app.config.  
   

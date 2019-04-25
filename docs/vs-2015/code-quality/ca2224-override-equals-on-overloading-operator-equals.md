@@ -1,14 +1,9 @@
 ---
-title: 'CA2224 : Remplacez equals lors de la surcharge l’opérateur égal | Microsoft Docs'
-ms.custom: ''
+title: 'CA2224 : Remplacez equals lors de la surcharge l’opérateur égal | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-devops-test
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-code-analysis
+ms.topic: reference
 f1_keywords:
 - CA2224
 - OverrideEqualsOnOverloadingOperatorEquals
@@ -21,14 +16,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 66f4b4bcc7c2c1d359f5d8fa91227fb51a27adc4
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+ms.openlocfilehash: b4c16ed5858f18456af59c4cc26f2e0d56e6006a
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49815232"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58947810"
 ---
-# <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224 : Remplacez Equals au moment de surcharger l'opérateur égal
+# <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224 : Remplacez Equals au moment de surcharger l'opérateur égal
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 |||
@@ -44,7 +39,7 @@ ms.locfileid: "49815232"
 ## <a name="rule-description"></a>Description de la règle
  L’opérateur d’égalité est destinée à être un point de vue syntaxique pour accéder facilement les fonctionnalités de la <xref:System.Object.Equals%2A> (méthode). Si vous implémentez l’opérateur d’égalité, sa logique doit être identique à celle de <xref:System.Object.Equals%2A>.
 
- Le compilateur c# émet un avertissement si votre code ne respecte pas cette règle.
+ Le compilateur C# émet un avertissement si votre code ne respecte pas cette règle.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, vous devez supprimer l’implémentation de l’opérateur d’égalité ou substituer <xref:System.Object.Equals%2A> et avoir les deux méthodes retournent les mêmes valeurs. Si l’opérateur d’égalité n’introduit pas de comportement incohérent, vous pouvez corriger la violation en fournissant une implémentation de <xref:System.Object.Equals%2A> qui appelle le <xref:System.Object.Equals%2A> méthode dans la classe de base.
@@ -67,12 +62,12 @@ ms.locfileid: "49815232"
 
  Cet exemple produit la sortie suivante.
 
- **a = ([0] 1,1) et b = ([1] 2,2) sont égaux ? Ne**
-**un == b ? Ne**
+ **a = ([0] 1,1) et b = ([1] 2,2) sont égaux ? No**
+**a == b ? Ne**
 **a1 et a sont égaux ? Oui**
 **a1 == un ? Oui**
-**b et b copie sont égales ? Ne**
-**b == bcopy ? Oui**
+**b et b copie sont égales ? No**
+**b == bcopy ? Oui**
 ## <a name="example"></a>Exemple
  L’exemple suivant illustre un type qui techniquement enfreint cette règle, mais ne se comporte pas de façon incohérente.
 
@@ -85,8 +80,8 @@ ms.locfileid: "49815232"
 
  Cet exemple produit la sortie suivante.
 
- **a = (1,1) et b = (2,2) sont égaux ? Ne**
-**un == b ? Ne**
+ **a = (1,1) et b = (2,2) sont égaux ? No**
+**a == b ? Ne**
 **a1 et a sont égaux ? Oui**
 **a1 == un ? Oui**
 **b et b copie sont égales ? Oui**
@@ -118,15 +113,12 @@ ms.locfileid: "49815232"
  [!code-csharp[FxCop.Usage.OverrideEqualsStructFixed#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OverrideEqualsStructFixed/cs/FxCop.Usage.OverrideEqualsStructFixed.cs#1)]
 
 ## <a name="related-rules"></a>Règles associées
- [CA1046 : Ne pas surcharger l’opérateur égal sur les types de référence](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
+ [CA1046 : Ne pas surcharger l’opérateur égal sur les types référence](../code-quality/ca1046-do-not-overload-operator-equals-on-reference-types.md)
 
- [CA2225 : Les surcharges d’opérateur ont d’autres méthodes nommées](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
+ [CA2225 : Surcharges d’opérateur ont d’autres méthodes nommées](../code-quality/ca2225-operator-overloads-have-named-alternates.md)
 
- [CA2226 : Les opérateurs doivent avoir des surcharges symétriques](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
+ [CA2226 : Les opérateurs doivent contenir des surcharges symétriques](../code-quality/ca2226-operators-should-have-symmetrical-overloads.md)
 
- [CA2218 : Remplacez GetHashCode lors du remplacement de Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
+ [CA2218 : Remplacez GetHashCode au moment de remplacer Equals](../code-quality/ca2218-override-gethashcode-on-overriding-equals.md)
 
  [CA2231 : Surchargez l’opérateur égal (equals) en remplaçant ValueType.Equals](../code-quality/ca2231-overload-operator-equals-on-overriding-valuetype-equals.md)
-
-
-

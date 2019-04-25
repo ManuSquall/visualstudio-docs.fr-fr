@@ -11,12 +11,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 41774d09b72430aafc50794cd3d356baa4b565ab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b1a03463d292fa1d4d980c62daa74b291d6a8cb1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953973"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117302"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Raccourcis clavier dans Workflow Designer
 Les fonctionnalités de base de [!INCLUDE[wfd1](../includes/wfd1-md.md)] sont accessibles à partir du clavier.  
@@ -54,13 +54,13 @@ Les fonctionnalités de base de [!INCLUDE[wfd1](../includes/wfd1-md.md)] sont ac
   
 - Pour connecter des activités :  
   
-  1.  Sélectionnez l'activité source en y accédant par tabulation.  
+  1. Sélectionnez l'activité source en y accédant par tabulation.  
   
-  2.  Appuyez sur CTRL+E, M autant de fois que nécessaire pour déplacer le focus clavier sur l'activité de destination.  
+  2. Appuyez sur CTRL+E, M autant de fois que nécessaire pour déplacer le focus clavier sur l'activité de destination.  
   
-  3.  Appuyez sur CTRL+E, S pour ajouter l'activité de destination à la sélection.  
+  3. Appuyez sur CTRL+E, S pour ajouter l'activité de destination à la sélection.  
   
-  4.  Appuyez sur CTRL+E, F pour ajouter le connecteur de la source à la destination.  
+  4. Appuyez sur CTRL+E, F pour ajouter le connecteur de la source à la destination.  
   
   Remarques à propos de la connexion des activités à l'aide du clavier :  
   
@@ -73,18 +73,18 @@ Les fonctionnalités de base de [!INCLUDE[wfd1](../includes/wfd1-md.md)] sont ac
 ### <a name="expression-editing"></a>Édition d'expressions  
  Par défaut, les raccourcis clavier par défaut pour l'édition de texte [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] s'appliquent dans l'éditeur d'expressions dans [!INCLUDE[wfd2](../includes/wfd2-md.md)], avec les limitations suivantes :  
   
--   Le remappage des raccourcis clavier correspondant aux commandes suivantes n'a aucun effet. Vous pouvez utiliser uniquement les raccourcis clavier par défaut pour accéder aux commandes suivantes lors de la modification d'une expression.  
+- Le remappage des raccourcis clavier correspondant aux commandes suivantes n'a aucun effet. Vous pouvez utiliser uniquement les raccourcis clavier par défaut pour accéder aux commandes suivantes lors de la modification d'une expression.  
   
-    1.  Couper  
+    1. Couper  
   
-    2.  Copier  
+    2. Copier  
   
-    3.  Coller  
+    3. Coller  
   
-    4.  Tout Sélectionner  
+    4. Tout Sélectionner  
   
-    5.  Annuler  
+    5. Annuler  
   
-    6.  Rétablir  
+    6. Rétablir  
   
--   Pour remapper les raccourcis clavier des commandes d'édition d'expressions de [!INCLUDE[wfd2](../includes/wfd2-md.md)] dans [!INCLUDE[vs2010](../includes/vs2010-md.md)], modifiez les raccourcis au niveau de l'interface de [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Les modifications effectuées au niveau de l'interface de l'éditeur de texte ne s'appliquent pas automatiquement à [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Si vous souhaitez remapper des raccourcis dans ces deux éléments, vous devez appliquer les modifications deux fois (une fois pour chaque interface).
+- Pour remapper les raccourcis clavier des commandes d'édition d'expressions de [!INCLUDE[wfd2](../includes/wfd2-md.md)] dans [!INCLUDE[vs2010](../includes/vs2010-md.md)], modifiez les raccourcis au niveau de l'interface de [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Les modifications effectuées au niveau de l'interface de l'éditeur de texte ne s'appliquent pas automatiquement à [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Si vous souhaitez remapper des raccourcis dans ces deux éléments, vous devez appliquer les modifications deux fois (une fois pour chaque interface).

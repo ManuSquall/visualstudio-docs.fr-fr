@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff36bf74249ec5266218060eedb879e4d796625c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 04ef05c5823c6a07fb6f93d82ddae55830e0e3ac
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938694"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778569"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Options, Éditeur de texte, JavaScript, IntelliSense
 Utilisez la page **IntelliSense** de la boîte de dialogue **Options** pour modifier les paramètres qui affectent le comportement d'IntelliSense pour JavaScript. Vous pouvez accéder à la page **IntelliSense** en choisissant **Outils** > **Options** dans la barre de menus, puis en développant **Éditeur de texte** > **JavaScript** > **IntelliSense**.
@@ -59,7 +59,6 @@ Cette option spécifie l'ordre dans lequel les fichiers sont chargés dans le co
 > [!CAUTION]
 > Si un objet est défini de manière inconditionnelle dans deux références implicites ou plus, la dernière référence de cette liste sera utilisée pour définir l'objet.
 
-
 **Ajouter une référence au groupe**
 
 Cette option permet d'ajouter des fichiers IntelliSense .js supplémentaires en parcourant les fichiers appropriés.
@@ -70,8 +69,6 @@ Quand cette case est cochée, et si vous avez un fichier JavaScript ouvert en de
 
 > [!NOTE]
 > Dans le cas des projets web, les fichiers distants auxquels ils font référence sont téléchargés par défaut.
-
-
 
 ## <a name="see-also"></a>Voir aussi
 

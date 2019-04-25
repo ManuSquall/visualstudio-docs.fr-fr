@@ -21,12 +21,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bb42950acf958dbb71877671da57f5ea6fcd6898
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c6c6407c038c7d6847db073c1f00c103d9483e78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938337"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039113"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>Afficher les valeurs des données dans les conseils de données de l'éditeur de code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,34 +52,34 @@ Les DataTips sont un moyen pratique de visualiser des informations sur les varia
   
 ### <a name="to-unpin-a-datatip-and-make-it-float"></a>Pour détacher un DataTip et le rendre flottant  
   
--   Dans un DataTip épinglé, cliquez sur le **détacher de la source** icône.  
+- Dans un DataTip épinglé, cliquez sur le **détacher de la source** icône.  
   
      L'icône d'épingle reprend sa position détachée. Le DataTip flotte à présent au-dessus de toutes les fenêtres actives. Le DataTip flottant se ferme à la fin de la session de débogage.  
   
 ### <a name="to-repin-a-floating-datatip"></a>Pour réépingler un DataTip flottant  
   
--   Dans un DataTip, cliquez sur l'icône d'épingle.  
+- Dans un DataTip, cliquez sur l'icône d'épingle.  
   
      L'icône d'épingle reprend sa position épinglée. Si le DataTip se trouve à l'extérieur d'une fenêtre source, l'icône d'épingle est désactivée et le DataTip ne peut pas être épinglé.  
   
 ### <a name="to-close-a-datatip"></a>Pour fermer un DataTip  
   
--   Placez le pointeur de la souris sur un DataTip, puis cliquez sur le **fermer** icône.  
+- Placez le pointeur de la souris sur un DataTip, puis cliquez sur le **fermer** icône.  
   
 ### <a name="to-close-all-datatips"></a>Pour fermer tous les DataTips  
   
--   Sur le **déboguer** menu, cliquez sur **effacer tous les DataTips**.  
+- Sur le **déboguer** menu, cliquez sur **effacer tous les DataTips**.  
   
 ### <a name="to-close-all-datatips-for-a-specific-file"></a>Pour fermer tous les DataTips d'un fichier spécifique  
   
--   Sur le **déboguer** menu, cliquez sur **effacer tous les DataTips épinglés à** *fichier*.  
+- Sur le **déboguer** menu, cliquez sur **effacer tous les DataTips épinglés à** *fichier*.  
   
 ## <a name="expanding-and-editing-information"></a>Développement et modification d’informations  
  Vous pouvez utiliser les DataTips pour développer un tableau, une structure ou un objet afin d’en afficher les membres. Vous pouvez également modifier la valeur d'une variable depuis un DataTip.  
   
 #### <a name="to-expand-a-variable-to-see-its-elements"></a>Développer une variable pour voir ses éléments  
   
--   Dans un DataTip, placez le pointeur de la souris sur le **+** connexion qui précède le nom de variable.  
+- Dans un DataTip, placez le pointeur de la souris sur le **+** connexion qui précède le nom de variable.  
   
      La variable se développe et affiche ses éléments sous forme d'arborescence.  
   
@@ -87,16 +87,16 @@ Les DataTips sont un moyen pratique de visualiser des informations sur les varia
   
 #### <a name="to-edit-the-value-of-a-variable-using-a-datatip"></a>Pour modifier la valeur d'une variable à l'aide d'un DataTip  
   
-1.  Dans un DataTip, cliquez sur la valeur. Cette possibilité est désactivée pour les valeurs en lecture seule.  
+1. Dans un DataTip, cliquez sur la valeur. Cette possibilité est désactivée pour les valeurs en lecture seule.  
   
-2.  Tapez une nouvelle valeur et appuyez sur ENTRÉE.  
+2. Tapez une nouvelle valeur et appuyez sur ENTRÉE.  
   
 ## <a name="making-a-datatip-transparent"></a>Rendre un DataTip transparent  
  Si vous souhaitez visualiser le code masqué par un DataTip, vous pouvez rendre celui-ci temporairement transparent. Cela ne s'applique pas aux DataTips épinglés ou flottants.  
   
 #### <a name="to-make-a-datatip-transparent"></a>Pour rendre un DataTip transparent  
   
--   Dans un DataTip, appuyez sur CTRL.  
+- Dans un DataTip, appuyez sur CTRL.  
   
      Le DataTip reste transparent tant que vous maintenez la touche CTRL enfoncée.  
   
@@ -105,7 +105,7 @@ Les DataTips sont un moyen pratique de visualiser des informations sur les varia
   
 #### <a name="to-view-the-contents-of-a-variable-using-a-visualizer"></a>Voir le contenu d'une variable à l'aide d'un visualiseur  
   
--   Cliquez sur l'icône en forme de loupe pour sélectionner le visualiseur par défaut du type de données.  
+- Cliquez sur l'icône en forme de loupe pour sélectionner le visualiseur par défaut du type de données.  
   
      - ou -  
   
@@ -118,7 +118,7 @@ Les DataTips sont un moyen pratique de visualiser des informations sur les varia
   
 #### <a name="to-add-a-variable-to-the-watch-window"></a>Ajouter une variable à la fenêtre Espion  
   
--   Cliquez sur un DataTip, puis cliquez sur **ajouter un espion**.  
+- Cliquez sur un DataTip, puis cliquez sur **ajouter un espion**.  
   
      La variable est ajoutée à la **espion** fenêtre. Si vous utilisez une édition qui prend en charge plusieurs **espion** windows, la variable est ajoutée à **Espion 1.**  
   
@@ -127,19 +127,19 @@ Les DataTips sont un moyen pratique de visualiser des informations sur les varia
   
 #### <a name="to-export-datatips"></a>Pour exporter des DataTips  
   
-1.  Dans le menu Déboguer, cliquez sur **exporter les DataTips**.  
+1. Dans le menu Déboguer, cliquez sur **exporter les DataTips**.  
   
      Le **exporter les DataTips** boîte de dialogue s’affiche.  
   
-2.  Utilisez les techniques standard pour accéder à l’emplacement où vous souhaitez enregistrer le fichier XML, tapez un nom pour le fichier dans le **nom de fichier** , puis cliquez sur **OK**.  
+2. Utilisez les techniques standard pour accéder à l’emplacement où vous souhaitez enregistrer le fichier XML, tapez un nom pour le fichier dans le **nom de fichier** , puis cliquez sur **OK**.  
   
 #### <a name="to-import-datatips"></a>Pour importer des DataTips  
   
-1.  Dans le menu Déboguer, cliquez sur **importer les DataTips**.  
+1. Dans le menu Déboguer, cliquez sur **importer les DataTips**.  
   
      Le **importer les DataTips** boîte de dialogue s’affiche.  
   
-2.  Utilisez la boîte de dialogue pour rechercher le fichier XML que vous souhaitez ouvrir et cliquez sur **OK**.  
+2. Utilisez la boîte de dialogue pour rechercher le fichier XML que vous souhaitez ouvrir et cliquez sur **OK**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Affichage des données dans le débogueur](../debugger/viewing-data-in-the-debugger.md)   

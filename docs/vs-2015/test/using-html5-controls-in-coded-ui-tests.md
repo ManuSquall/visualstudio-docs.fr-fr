@@ -8,12 +8,12 @@ ms.assetid: 2000b214-ae92-4334-b549-aa0eb4f45fe1
 caps.latest.revision: 19
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b13b8af221e317461f68a793e9b84420cd5dab48
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 26cd34583f28c19770675b185f986149b23fdf6d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867898"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100436"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Utilisation de contrôles HTML5 dans des tests codés de l'interface utilisateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ Les tests codés de l'interface utilisateur incluent la prise en charge d'une pa
   
  **Spécifications**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 > [!WARNING]
 >  Dans les versions antérieures à Internet Explorer 10, il était possible d'exécuter des tests codés de l'interface utilisateur à un niveau de privilège plus élevé que celui du processus Internet Explorer. Quand vous exécutez des tests codés de l'interface utilisateur dans Internet Explorer 10, le test codé de l'interface utilisateur et le processus Internet Explorer doivent être au même niveau de privilège. Cette obligation est due aux fonctionnalités AppContainer plus sécurisées dans Internet Explorer 10.  
@@ -33,13 +33,13 @@ Les tests codés de l'interface utilisateur incluent la prise en charge d'une pa
 ## <a name="supported-html5-controls"></a>Contrôles HTML5 pris en charge  
  Les tests codés de l’interface utilisateur prennent en charge l’enregistrement, la lecture et la validation des contrôles HTML5 suivants :  
   
--   [Contrôle Audio](#audio-control)  
+- [Contrôle Audio](#audio-control)  
   
--   [Contrôle Video](#video-control)  
+- [Contrôle Video](#video-control)  
   
--   [Slider](#slider)  
+- [Slider](#slider)  
   
--   [ProgressBar](#progressbar)  
+- [ProgressBar](#progressbar)  
   
 ### <a name="audio-control"></a>Contrôle Audio  
  **Contrôle Audio :** les actions sur le contrôle Audio HTML5 sont correctement enregistrées et lues.  
@@ -76,7 +76,7 @@ string Src
 string Volume  
 ```  
   
- **Propriétés de recherche :** les propriétés de recherche pour `HtmlAudio` sont `Id`, `Name` et `Title`.  
+ **Propriétés de recherche** : les propriétés de recherche pour `HtmlAudio` sont `Id`, `Name` et `Title`.  
   
  **Propriétés de filtre :** les propriétés de filtre pour `HtmlAudio` sont `Src`, `Class`, `ControlDefinition` et `TagInstance`.  
   
@@ -114,7 +114,7 @@ string VideoWidth
 >  Si vous rembobinez ou avancez rapidement la vidéo à l'aide d'étiquettes-30s ou +30s, celle-ci est agrégée pour rechercher le moment précis.  
   
 ### <a name="slider"></a>Curseur  
- **Contrôle Slider :** les actions sur le contrôle Slider HTML5 sont correctement enregistrées et lues.  
+ **Contrôle Slider :** Actions sur le contrôle Slider HTML5 sont correctement enregistrées et lus.  
   
  ![Contrôle du curseur HTML5](../test/media/codedui-html5-slider.png)  
   
@@ -134,7 +134,7 @@ string ValueAsNumber
 ```  
   
 ### <a name="progressbar"></a>Barre de progression  
- **Contrôle ProgressBar :** ProgressBar est un contrôle sur lequel il n’est pas possible d’interagir. Vous pouvez ajouter des assertions sur les propriétés `Value` et `Max` de ce contrôle.  
+ **Contrôle ProgressBar :** ProgressBar est un contrôle sur lequel il n’est pas possible d’interagir. Vous pouvez ajouter des assertions sur les propriétés `Value` et `Max` de ce contrôle.  
   
  ![Contrôle de barre de progression HTML5](../test/media/codedui-html5-progressbar.png)  
   

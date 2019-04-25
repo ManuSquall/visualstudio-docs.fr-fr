@@ -15,17 +15,17 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bae12b01a8fc1c879526bbf5df568c9ec40041c9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 2070c9c68719e51357f3cd5fed4bee3cfbc35fcf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867759"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051906"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Recherche et utilisation des extensions Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Les extensions Visual Studio sont des packages de code qui s’exécutent à l’intérieur de Visual Studio et fournissent des fonctionnalités de Visual Studio nouvelles ou améliorées. Vous trouverez plus d’informations sur les extensions Visual Studio ici : [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
+Les extensions Visual Studio sont des packages de code qui s’exécutent à l’intérieur de Visual Studio et fournissent des fonctionnalités de Visual Studio nouvelles ou améliorées. Vous trouverez plus d’informations sur les extensions Visual Studio ici : [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
  Vous pouvez utiliser la boîte de dialogue **Extensions et mises à jour** pour installer des extensions et des exemples Visual Studio à partir de sites Web ou d'autres emplacements, puis les activer, les désactiver, les mettre à jour ou les désinstaller. (**Outils / Extensions et mises à jour**, ou tapez **Extensions** dans la fenêtre de **lancement rapide** ). La boîte de dialogue affiche également les mises à jour des exemples et extensions installés. Vous pouvez également télécharger des extensions à partir de sites web ou les obtenir auprès d'autres développeurs.
 
@@ -54,9 +54,9 @@ Les extensions Visual Studio sont des packages de code qui s’exécutent à l�
 
  Si vous voulez désactiver les mises à jour automatiques, vous pouvez désactiver cette fonctionnalité pour toutes les extensions ou uniquement pour des extensions spécifiques.
 
--   Pour désactiver les mises à jour automatiques pour toutes les extensions, cliquez sur le lien **Modifier vos paramètres Extensions et mises à jour** dans la boîte de dialogue **Extensions et mises à jour** , puis décochez **Mettre automatiquement à jour les extensions**.
+- Pour désactiver les mises à jour automatiques pour toutes les extensions, cliquez sur le lien **Modifier vos paramètres Extensions et mises à jour** dans la boîte de dialogue **Extensions et mises à jour** , puis décochez **Mettre automatiquement à jour les extensions**.
 
--   Pour désactiver les mises à jour automatiques pour une extension spécifique, décochez l'option **Mettre automatiquement à jour cette extension** dans le volet d'informations de l'extension sur le côté droit de la boîte de dialogue **Extensions et mises à jour** .
+- Pour désactiver les mises à jour automatiques pour une extension spécifique, décochez l'option **Mettre automatiquement à jour cette extension** dans le volet d'informations de l'extension sur le côté droit de la boîte de dialogue **Extensions et mises à jour** .
 
 > [!NOTE]
 >  À partir de Visual Studio 2015 Update 2, vous pouvez spécifier (dans **Outils / Options / Environnement / Extensions et mises à jour**) si vous souhaitez des mises à jour automatiques pour les extensions par utilisateur, pour toutes les extensions utilisateur ou pour les deux (le paramètre par défaut).

@@ -16,12 +16,12 @@ caps.latest.revision: 51
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ca4c3e5016377758e8910c15bf992e629778c0e9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 1f2d3f0bd70a4c7be82b991eb5397065fe3d4ee7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001441"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116165"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Débogage just-in-time dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Les actions que vous devez prendre lorsque vous voyez le Visual Studio juste-à-
 
 - Vous devez avoir [Visual Studio installé](https://visualstudio.microsoft.com/vs/older-downloads/) pour afficher les informations détaillées sur l’erreur et essayez de déboguer. Consultez [JIT à l’aide de](#BKMK_Using_JIT) pour obtenir des instructions détaillées. Si vous ne pouvez pas résoudre l’erreur et corriger l’application, contactez le propriétaire de l’application pour résoudre l’erreur.
 
-##  <a name="BKMK_Enabling"></a> Activer ou désactiver juste-à-temps le débogage
+## <a name="BKMK_Enabling"></a> Activer ou désactiver juste-à-temps le débogage
  Vous pouvez activer ou désactiver le débogage à partir de Visual Studio juste-à-temps **Outils / Options** boîte de dialogue.
 
 #### <a name="to-enable-or-disable-just-in-time-debugging"></a>Pour activer ou désactiver le débogage juste-à-temps
@@ -73,36 +73,36 @@ Les actions que vous devez prendre lorsque vous voyez le Visual Studio juste-à-
 
 #### <a name="to-disable-just-in-time-debugging-by-editing-the-registry"></a>Pour désactiver le débogage juste-à-temps en modifiant le Registre
 
-1.  Sur le **Démarrer** menu, recherchez et exécutez `regedit.exe`
+1. Sur le **Démarrer** menu, recherchez et exécutez `regedit.exe`
 
-2.  Dans le **Éditeur du Registre** fenêtre, recherchez, puis supprimez les entrées de Registre suivante :
+2. Dans le **Éditeur du Registre** fenêtre, recherchez, puis supprimez les entrées de Registre suivante :
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\DbgManagedDebugger
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\DbgManagedDebugger
 
-3.  Si votre ordinateur exécute un système d’exploitation de 64 bits, supprimez également les entrées de Registre suivantes :
+3. Si votre ordinateur exécute un système d’exploitation de 64 bits, supprimez également les entrées de Registre suivantes :
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger
 
-4.  Veillez à ne pas supprimer ou modifier par inadvertance d'autres clés de Registre.
+4. Veillez à ne pas supprimer ou modifier par inadvertance d'autres clés de Registre.
 
-5.  Fermer le **Éditeur du Registre** fenêtre.
+5. Fermer le **Éditeur du Registre** fenêtre.
 
 > [!NOTE]
 >  Si vous essayez de désactiver le débogage d’une application côté serveur juste-à-temps et que ces étapes ne résolvent pas le problème, désactivez le débogage côté serveur dans les paramètres d’application IIS et recommencez.
 
 #### <a name="to-enable-just-in-time-debugging-of-a-windows-form"></a>Pour activer le débogage juste-à-temps d'un Windows Forms
 
-1.  Par défaut, les applications Windows Forms ont un gestionnaire d’exceptions de haut niveau qui permet au programme de continuer à s’exécuter s’il peut être récupéré. Par exemple, si votre application Windows Forms lève une exception non gérée, vous verrez une boîte de dialogue comme suit :
+1. Par défaut, les applications Windows Forms ont un gestionnaire d’exceptions de haut niveau qui permet au programme de continuer à s’exécuter s’il peut être récupéré. Par exemple, si votre application Windows Forms lève une exception non gérée, vous verrez une boîte de dialogue comme suit :
 
      ![WindowsFormsUnhandledException](../debugger/media/windowsformsunhandledexception.png "WindowsFormsUnhandledException")
 
      Pour activer juste-à-temps le débogage d’une application Windows Forms, vous devez effectuer les étapes supplémentaires suivantes :
 
-2.  Définir le `jitDebugging` valeur `true` dans le `system.windows.form` section du fichier machine.config ou  *\<nom_application >*. fichier exe.config :
+2. Définir le `jitDebugging` valeur `true` dans le `system.windows.form` section du fichier machine.config ou  *\<nom_application >*. fichier exe.config :
 
     ```
     <configuration>
@@ -110,7 +110,7 @@ Les actions que vous devez prendre lorsque vous voyez le Visual Studio juste-à-
     </configuration>
     ```
 
-3.  Dans une application Windows Forms C++, vous devez également définir `DebuggableAttribute` dans un fichier .config ou dans votre code. Si vous effectuez la compilation avec [/Zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) et sans [/Og](http://msdn.microsoft.com/library/d10630cc-b9cf-4e97-bde3-8d7ee79e9435), le compilateur définit cet attribut pour vous. Toutefois, si vous souhaitez déboguer une version Release non optimisée, vous devez le définir vous-même. Pour ce faire, ajoutez la ligne suivante au fichier AssemblyInfo.cpp de votre application :
+3. Dans une application Windows Forms C++, vous devez également définir `DebuggableAttribute` dans un fichier .config ou dans votre code. Si vous effectuez la compilation avec [/Zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) et sans [/Og](http://msdn.microsoft.com/library/d10630cc-b9cf-4e97-bde3-8d7ee79e9435), le compilateur définit cet attribut pour vous. Toutefois, si vous souhaitez déboguer une version Release non optimisée, vous devez le définir vous-même. Pour ce faire, ajoutez la ligne suivante au fichier AssemblyInfo.cpp de votre application :
 
     ```
     [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
@@ -178,19 +178,19 @@ static void Main(string[] args)
 
  Vous pouvez voir s'afficher les messages d'erreur suivants associés au débogage juste-à-temps.
 
--   **Impossible de s'attacher au processus bloqué. Le programme spécifié n'est pas un programme Windows ou MS-DOS.**
+- **Impossible de s'attacher au processus bloqué. Le programme spécifié n'est pas un programme Windows ou MS-DOS.**
 
      Cette erreur se produit lorsque vous essayez d’attacher à un processus en cours d’exécution en tant qu’un autre utilisateur.
 
      Pour contourner ce problème, démarrez Visual Studio, ouvrez le **attacher au processus** boîte de dialogue à partir de la **déboguer** menu, puis recherchez le processus à déboguer dans la **processus disponibles**liste. Si vous ne connaissez pas le nom du processus, examinez le **débogueur de Visual Studio juste à temps** boîte de dialogue et notez l’ID de processus. Sélectionnez le processus dans le **processus disponibles** liste et cliquez sur **attacher**. Dans le **débogueur de Visual Studio juste à temps** boîte de dialogue, cliquez sur **non** pour faire disparaître la boîte de dialogue.
 
--   **Impossible de démarrer le débogueur, car aucun utilisateur n'est connecté.**
+- **Impossible de démarrer le débogueur, car aucun utilisateur n'est connecté.**
 
      Cette erreur se produit lorsque le débogage juste-à-temps tente de démarrer Visual Studio sur un ordinateur où aucun utilisateur n'a ouvert de session sur la console. Dans la mesure où aucun utilisateur n'a ouvert de session, il n'y a aucune session utilisateur pour afficher la boîte de dialogue Débogage juste-à-temps.
 
      Pour résoudre ce problème, ouvrez une session sur l'ordinateur.
 
--   **Classe non inscrite.**
+- **Classe non inscrite.**
 
      Cette erreur indique que le débogueur a essayé de créer une classe COM qui n'est pas inscrite, probablement en raison d'un problème d'installation.
 

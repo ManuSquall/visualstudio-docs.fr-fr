@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: aa10945e87022546240d05304f59478b33bb5596
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e968cef6491e1c24d98e5f64248b5104db8c5b65
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916763"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59232314"
 ---
 # <a name="ca1502-avoid-excessive-complexity"></a>CA1502 : Éviter l'excès de complexité
 
@@ -44,11 +44,11 @@ Une méthode a une complexité cyclomatique excessive.
 
 complexité cyclomatique = nombre de bords - le nombre de nœuds + 1
 
-où un nœud représente un point de branchement logique et un bord représente une ligne entre les nœuds.
+Un *nœud* représente un point de branchement logique et un *edge* représente une ligne entre les nœuds.
 
 La règle signale une violation lorsque la complexité cyclomatique est supérieure à 25.
 
-Plus d’informations sur la métrique du code à [mesure la complexité et la facilité de maintenance du Code managé](../code-quality/code-metrics-values.md),
+Plus d’informations sur la métrique du code à [mesurer la complexité du code managé](../code-quality/code-metrics-values.md).
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 

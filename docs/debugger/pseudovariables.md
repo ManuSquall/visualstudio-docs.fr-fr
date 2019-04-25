@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 336d177ec939ca0f7dfdc32535e2d2e92b0f04d2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: dbfd275625e949e87e2b4109e1d56eaeaf9d7e3c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686507"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59366846"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Pseudo-variables dans le débogueur Visual Studio
 Les pseudo-variables sont des termes utilisés pour afficher certaines informations dans une fenêtre de variable ou dans la boîte de dialogue **Espion express**. Vous pouvez entrer une pseudo-variable de la même façon qu'une variable normale. Toutefois, les pseudo-variables ne sont pas des variables et ne correspondent pas à des noms de variable de votre programme.
@@ -47,19 +47,21 @@ Les pseudo-variables sont des termes utilisés pour afficher certaines informati
 |`$clk`|Affiche le temps en cycles d'horloge.|
 |`$user`|Affiche une structure avec les informations du compte qui exécute l'application. Pour des raisons de sécurité, les informations de mot de passe ne sont pas affichées.|
 |`$exceptionstack`|Affiche l'arborescence des appels de procédure de l'exception Windows Runtime actuelle. `$ exceptionstack` fonctionne uniquement dans les applications UWP. `$ exceptionstack` n’est pas pris en charge pour les exceptions C++ et SEH|
-|`$ReturnValue`|Affiche la valeur de retour d'une méthode .NET Framework.|
+|`$returnvalue`|Affiche la valeur de retour d'une méthode .NET Framework.|
 
- En C# et Visual Basic, vous pouvez utiliser les pseudo-variables indiquées dans le tableau suivant :
+ Dans C# vous pouvez utiliser les pseudo-variables indiquées dans le tableau suivant :
 
 |Pseudo-variable|Fonction|
 |--------------------|--------------|
-|`$exception`|Affiche des informations sur la dernière exception. Si aucune exception ne s'est produite, l'évaluation de `$exception` affiche un message d'erreur.<br /><br /> En Visual C# uniquement, quand l’Assistant Exception est désactivé, `$exception` est automatiquement ajouté à la fenêtre **Variables locales** quand une exception se produit.|
+|`$exception`|Affiche des informations sur la dernière exception. Si aucune exception ne s'est produite, l'évaluation de `$exception` affiche un message d'erreur.<br /><br /> Lorsque l’Assistant Exception est désactivé, `$exception` est automatiquement ajouté à la **variables locales** fenêtre lorsqu’une exception se produit.|
 |`$user`|Affiche une structure avec les informations du compte qui exécute l'application. Pour des raisons de sécurité, les informations de mot de passe ne sont pas affichées.|
+|`$returnvalue`|Affiche la valeur de retour d'une méthode .NET Framework.|
 
  En Visual Basic, vous pouvez utiliser les pseudo-variables indiquées dans le tableau suivant :
 
 |Pseudo-variable|Fonction|
 |--------------------|--------------|
+|`$exception`|Affiche des informations sur la dernière exception. Si aucune exception ne s'est produite, l'évaluation de `$exception` affiche un message d'erreur.|
 |`$delete` ou `$$delete`|Supprime une variable implicite créée dans la fenêtre **Exécution**. La syntaxe est `$delete,` *variable* ou`$delete,` *variable*`.`|
 |`$objectids` ou `$listobjectids`|Affiche tous les ID d'objet actifs en tant qu'enfants de l'expression spécifiée. La syntaxe est `$objectid,` *expression* ou`$listobjectids,` *expression*`.`|
 |`$` *N* `#`|Affiche l’objet dont l’ID d’objet est égal à *N*.|

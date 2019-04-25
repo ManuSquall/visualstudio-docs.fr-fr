@@ -18,12 +18,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ee35a42ea28295869fe05bf6cd1d2c49f12cc39b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 660f1fd1d67490bde327533f9d030c7deba9f819
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791408"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084919"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>Guide pratique pour configurer des projets afin de cibler des plateformes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,16 +39,16 @@ ms.locfileid: "54791408"
   
 2. Dans la liste **Plateforme de la solution active**, choisissez une plateforme 64 bits pour la solution à cibler, puis choisissez le bouton **Fermer**.  
   
-   1.  Si la plateforme voulue ne s’affiche pas dans la liste **Plateforme de la solution active**, choisissez **Nouveau**.  
+   1. Si la plateforme voulue ne s’affiche pas dans la liste **Plateforme de la solution active**, choisissez **Nouveau**.  
   
         La boîte de dialogue **Nouvelle plateforme de solution** s’affiche.  
   
-   2.  Dans la liste **Tapez ou sélectionnez la nouvelle plateforme**, choisissez **x64**.  
+   2. Dans la liste **Tapez ou sélectionnez la nouvelle plateforme**, choisissez **x64**.  
   
        > [!NOTE]
        >  Si vous affectez un nouveau nom à votre configuration, vous devrez peut-être modifier les paramètres dans le **Concepteur de projet** pour cibler la plateforme correcte.  
   
-   3.  Si vous souhaitez copier les paramètres d’une configuration de plateforme actuelle, choisissez-la, puis choisissez le bouton **OK**.  
+   3. Si vous souhaitez copier les paramètres d’une configuration de plateforme actuelle, choisissez-la, puis choisissez le bouton **OK**.  
   
    Les propriétés de tous les projets qui ciblent la plateforme 64 bits sont mises à jour et la prochaine génération du projet est optimisée pour les plateformes 64 bits.  
   
@@ -57,11 +57,11 @@ ms.locfileid: "54791408"
   
  L’exécution de cette tâche varie suivant le langage de programmation que vous utilisez. Pour plus d'informations, consultez les liens suivants :   
   
--   Pour les projets [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], consultez [/platform (Visual Basic)](http://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1).  
+- Pour les projets [!INCLUDE[vbprvb](../includes/vbprvb-md.md)], consultez [/platform (Visual Basic)](http://msdn.microsoft.com/library/f9bc61e6-e854-4ae1-87b9-d6244de23fd1).  
   
--   Pour les projets [!INCLUDE[csprcs](../includes/csprcs-md.md)], consultez [Générer, page du Concepteur de projet (C#)](../ide/reference/build-page-project-designer-csharp.md).  
+- Pour les projets [!INCLUDE[csprcs](../includes/csprcs-md.md)], consultez [Générer, page du Concepteur de projet (C#)](../ide/reference/build-page-project-designer-csharp.md).  
   
--   Pour les projets [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], consultez [/clr (Compilation pour le Common Language Runtime)](http://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).  
+- Pour les projets [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], consultez [/clr (Compilation pour le Common Language Runtime)](http://msdn.microsoft.com/library/fec5a8c0-40ec-484c-a213-8dec918c1d6c).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Présentation des plateformes de générations](../ide/understanding-build-platforms.md)   

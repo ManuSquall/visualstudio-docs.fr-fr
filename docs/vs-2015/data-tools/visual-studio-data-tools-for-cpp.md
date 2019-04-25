@@ -10,17 +10,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 0fba11063e7be570dc8ad2ce9a1b07b3ea88ffa2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 85978a79fc1e0110e5b13d6dc0e3198d20ac674a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953873"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653058"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Outils de données Visual Studio pour C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 C++ natif peuvent souvent offrir les meilleures performances lorsque vous accédez à des sources de données. Toutefois, les données des outils pour les applications C++ dans Visual Studio ne sont pas aussi riches car il s’agit pour les applications .NET. Par exemple, les fenêtres de sources de données ne peut pas être utilisés pour glisser- déposer des sources de données sur une aire de conception de C++. Si vous avez besoin d’une couche objet-relationnel, vous devrez écrire votre propre, ou utiliser un produit tiers.  Vaut pour les fonctionnalités de liaison de données, bien que les applications qui utilisent la bibliothèque Microsoft Foundation Class peuvent utiliser des classes de base de données, ainsi que des documents et vues, pour stocker les données en mémoire et les afficher à l’utilisateur. Pour plus d’informations, consultez [accès aux données dans Visual C++](https://msdn.microsoft.com/library/7wtdsdkh.aspx) .  
   
  Pour vous connecter aux bases de données SQL, les applications C++ natives peuvent utiliser les pilotes ODBC et OLE DB et le fournisseur ADO qui sont inclus avec Windows.     Ceux-ci peuvent se connecter aux bases de données qui prend en charge ces interfaces. Le pilote ODBC est la norme. OLE DB est fourni pour la compatibilité descendante. Pour plus d’informations sur ces technologies de données, consultez [Windows Data Access Components](https://msdn.microsoft.com/library/windows/desktop/aa968814\(v=vs.85\).aspx)  

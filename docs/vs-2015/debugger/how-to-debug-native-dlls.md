@@ -1,14 +1,9 @@
 ---
-title: 'Comment : déboguer des DLL natives | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Déboguer des DLL natives | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.dll
 dev_langs:
@@ -27,19 +22,19 @@ ms.assetid: 76b34d15-a66d-4963-842e-c8b955c81696
 caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 6577395d33d9004d8f17d91f273e3a53e7a3897d
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ffc4f0b58bacdc71439a89dce711575a103c71cf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51757475"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948174"
 ---
-# <a name="how-to-debug-native-dlls"></a>Comment : déboguer des DLL natives
+# <a name="how-to-debug-native-dlls"></a>Procédure : Déboguer des DLL natives
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 > [!NOTE]
->  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Lorsque vous déboguez une DLL, vous pouvez commencer le débogage à partir :  
   
@@ -49,7 +44,7 @@ ms.locfileid: "51757475"
   
 - du projet utilisé pour créer la DLL.  
   
-  Si vous disposez du projet utilisé pour créer l'exécutable, démarrez le débogage à partir de ce projet. Vous pouvez ensuite ouvrir un fichier source pour la DLL et définir les points d'arrêt dans ce fichier, même s'il ne fait pas partie du projet utilisé pour créer l'exécutable. Pour plus d’informations, consultez [des points d’arrêt](http://msdn.microsoft.com/en-us/fe4eedc1-71aa-4928-962f-0912c334d583).  
+  Si vous disposez du projet utilisé pour créer l'exécutable, démarrez le débogage à partir de ce projet. Vous pouvez ensuite ouvrir un fichier source pour la DLL et définir les points d'arrêt dans ce fichier, même s'il ne fait pas partie du projet utilisé pour créer l'exécutable. Pour plus d’informations, consultez [Points d’arrêt](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583).  
   
   Si vous démarrez le débogage à partir du projet qui crée la DLL, vous devez spécifier l'exécutable que vous voulez utiliser dans le débogage de la DLL.  
   
@@ -70,6 +65,3 @@ ms.locfileid: "51757475"
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité du débogueur](../debugger/debugger-security.md)   
  [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md)
-
-
-

@@ -1,12 +1,9 @@
 ---
 title: Traitement des modèles de texte à l’aide d’un hôte personnalisé | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - text templates, in application or VS extension
 - text templates, custom directive hosts
@@ -14,18 +11,18 @@ ms.assetid: affa3296-854d-47d6-9685-285f6d9ba5dc
 caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 5fa54f6b7ea57b6374e8fef291c64f0e5369ffea
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: f2f10b239b4307b94c1f3b62b8e0a29767b22aaf
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49303457"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58953191"
 ---
 # <a name="processing-text-templates-by-using-a-custom-host"></a>Traitement des modèles de texte à l'aide d'un hôte personnalisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le *transformation du modèle de texte* traiter prend un *modèle de texte* fichier comme entrée et produit un fichier texte comme sortie. Vous pouvez appeler le moteur de transformation de texte à partir d’une extension [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou d’une application autonome s’exécutant sur un ordinateur où [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] est installé. Toutefois, vous devez fournir un *hôte de modèles de texte*. Cette classe connecte le modèle à l'environnement, recherchant des ressources telles que les assemblys et les fichiers Include, et traitant les messages d'erreur et de sortie.  
+Le *transformation du modèle de texte* traiter prend un *modèle de texte* fichier comme entrée et produit un fichier texte comme sortie. Vous pouvez appeler le moteur de transformation de texte à partir d'une extension [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou d'une application autonome s'exécutant sur un ordinateur où [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] est installé. Toutefois, vous devez fournir un *hôte de modèles de texte*. Cette classe connecte le modèle à l'environnement, recherchant des ressources telles que les assemblys et les fichiers Include, et traitant les messages d'erreur et de sortie.  
   
 > [!TIP]
 >  Si vous écrivez un package ou une extension qui s’exécutera dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], envisagez d’utiliser le service de création de modèles de texte, plutôt que d’écrire dans votre propre hôte. Pour plus d’informations, consultez [appel d’une Transformation de texte dans une Extension VS](../modeling/invoking-text-transformation-in-a-vs-extension.md).  
@@ -56,7 +53,7 @@ string output = engine.ProcessTemplate(templateString, host);
  <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> est défini dans **Microsoft.VisualStudio.TextTemplating.\*. 0.log dll de**, et <xref:Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost> est défini dans **Microsoft.VisualStudio.TextTemplating.Interfaces.\*. 0.log dll de**.  
   
 ## <a name="in-this-section"></a>Dans cette section  
- [Procédure pas à pas : création d’un hôte de modèle de texte personnalisé](../modeling/walkthrough-creating-a-custom-text-template-host.md)  
+ [Procédure pas à pas : Créer un hôte de modèle de texte personnalisé](../modeling/walkthrough-creating-a-custom-text-template-host.md)  
  Indique comment créer un hôte de modèle de texte personnalisé qui rend la fonctionnalité de modèle de texte disponible en dehors de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="reference"></a>Référence  
@@ -68,6 +65,3 @@ string output = engine.ProcessTemplate(templateString, host);
   
  [Création de processeurs de directives de modèles de texte T4 personnalisés](../modeling/creating-custom-t4-text-template-directive-processors.md)  
  Fournit une vue d'ensemble des processeurs de directive de modèle de texte.
-
-
-

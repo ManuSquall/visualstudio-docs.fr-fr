@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f27e388c0b7670e8af7d6a97954485ef90d01f9e
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 55a27a8d0c5c119870e92bfbf7cff4b85f90cf99
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54869669"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103517"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Page Publier, Concepteur de projets (développement Office dans Visual Studio)
   La page **Publier** du **Concepteur de projets** permet de configurer les propriétés du déploiement.
@@ -84,9 +84,9 @@ ms.locfileid: "54869669"
 
 - Comportement de chargement du complément VSTO.
 
-  -   Charger au démarrage : indique que le complément VSTO est chargé au démarrage de l’application Office.
+  - Charger au démarrage : indique que le complément VSTO est chargé au démarrage de l’application Office.
 
-  -   Charger à la demande : le complément VSTO est chargé uniquement quand l’application le nécessite, par exemple quand un utilisateur clique sur un élément d’interface utilisateur qui utilise une fonctionnalité du complément VSTO.
+  - Charger à la demande : le complément VSTO est chargé uniquement quand l’application le nécessite, par exemple quand un utilisateur clique sur un élément d’interface utilisateur qui utilise une fonctionnalité du complément VSTO.
 
   **Langue de publication** cette option définit la langue des termes du contrat de licence logiciel Microsoft et inclut les modules linguistiques dans la liste des conditions préalables. Elle n’affecte pas la langue de la personnalisation. La langue du programme d’installation est déterminée par les langues installées de Visual Studio.
 

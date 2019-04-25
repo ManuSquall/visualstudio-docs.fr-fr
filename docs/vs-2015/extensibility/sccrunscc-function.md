@@ -1,14 +1,9 @@
 ---
 title: Fonction SccRunScc | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccRunScc
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: bbe7c931-b17a-4779-9cf6-59e5f9f0c172
 caps.latest.revision: 15
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 67d2ad2ee783d23e3bd8c960ad5a94eac3fbd908
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: d2b36bd226d4eb19a694347edcba51812ee6f771
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51733689"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949069"
 ---
 # <a name="sccrunscc-function"></a>Fonction SccRunScc
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -71,11 +66,10 @@ SCCRTN SccRunScc(
   
  Cette fonction est appelée avec un nombre et un tableau de noms de fichiers pour les fichiers actuellement sélectionnés. Si l’outil d’administration prend en charge, la liste des fichiers peut servir à présélectionner des fichiers dans l’interface d’administration ; Sinon, la liste peut être ignorée.  
   
- Cette fonction est généralement appelée lorsque l’utilisateur sélectionne le **lancer \<Source Control Server >** à partir de la **fichier** -> **contrôle de code Source** menu. Cela **lancer** option de menu peut être toujours désactivée ou masquée en définissant une entrée de Registre. Consultez [Comment : installer un plug-in de contrôle de Source](../extensibility/internals/how-to-install-a-source-control-plug-in.md) pour plus d’informations. Cette fonction est appelée uniquement si [SccInitialize](../extensibility/sccinitialize-function.md) retourne le `SCC_CAP_RUNSCC` bit de fonctionnalité (voir [indicateurs de capacité](../extensibility/capability-flags.md) pour plus d’informations sur cette offre et autres bits de capacité).  
+ Cette fonction est généralement appelée lorsque l’utilisateur sélectionne le **lancer \<Source Control Server >** à partir de la **fichier** -> **contrôle de code Source** menu. Cela **lancer** option de menu peut être toujours désactivée ou masquée en définissant une entrée de Registre. Voir [Guide pratique pour Installer un plug-in de contrôle de Source](../extensibility/internals/how-to-install-a-source-control-plug-in.md) pour plus d’informations. Cette fonction est appelée uniquement si [SccInitialize](../extensibility/sccinitialize-function.md) retourne le `SCC_CAP_RUNSCC` bit de fonctionnalité (voir [indicateurs de capacité](../extensibility/capability-flags.md) pour plus d’informations sur cette offre et autres bits de capacité).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonctions d’API de plug-in de contrôle de source](../extensibility/source-control-plug-in-api-functions.md)   
- [Comment : installer un plug-in de contrôle de code Source](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
+ [Guide pratique pour Installer un plug-in de contrôle de code Source](../extensibility/internals/how-to-install-a-source-control-plug-in.md)   
  [Indicateurs de capacité](../extensibility/capability-flags.md)   
  [SccInitialize](../extensibility/sccinitialize-function.md)
-

@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14b9b3e338989a7ac4291bdf524b7ea872618d8f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cc1f87ac6ce94a1ef474388f75b33aa963b19f8d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953003"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046378"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Procédure pas à pas : objets manquants en raison de Vertex Shader
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ Cette procédure pas à pas montre comment utiliser les outils Graphics Diagnost
   
  Cette procédure pas à pas décrit les tâches suivantes :  
   
--   Utilisation de la **liste des événements Graphics** pour rechercher les sources potentielles du problème.  
+- Utilisation de la **liste des événements Graphics** pour rechercher les sources potentielles du problème.  
   
--   Utilisation de la fenêtre **Étapes de canalisation Graphics** pour vérifier l’effet des appels de l’API Direct3D `DrawIndexed` .  
+- Utilisation de la fenêtre **Étapes de canalisation Graphics** pour vérifier l’effet des appels de l’API Direct3D `DrawIndexed` .  
   
--   Utilisation du **débogueur HLSL** pour examiner le nuanceur de sommets.  
+- Utilisation du **débogueur HLSL** pour examiner le nuanceur de sommets.  
   
--   Utilisation de la **pile des appels des événements Graphics** pour trouver plus facilement la source d’une constante HLSL incorrecte.  
+- Utilisation de la **pile des appels des événements Graphics** pour trouver plus facilement la source d’une constante HLSL incorrecte.  
   
 ## <a name="scenario"></a>Scénario  
  Une des causes courantes observées quand un objet est manquant dans une application 3D est le nuanceur de sommets qui transforme les sommets de l’objet de manière incorrecte ou inattendue. C’est le cas, par exemple, si l’objet est réduit à une très petite échelle ou s’il est transformé pour s’afficher derrière la caméra, au lieu de devant.  

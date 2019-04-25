@@ -1,29 +1,24 @@
 ---
-title: 'Zone de test 4 : Archiver | Microsoft Docs'
-ms.custom: ''
+title: 'Zone de test 4 : Archiver | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], checking items in
 - source control plug-ins, checking items in
 ms.assetid: d0329fa8-7a8d-4d30-b67b-6f2a97b75a30
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 97a610325a5165a1de2cc50fede5bbabf182ef5e
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 738b2608d5afa188cad38d92ed613307d2919ca0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51783302"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068728"
 ---
-# <a name="test-area-4-check-in"></a>Zone de test 4 : Archiver
+# <a name="test-area-4-check-in"></a>Zone de test 4 : Archiver
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Cette zone de test plug-in de contrôle de code source couvre l’envoi des éléments mis à jour à la banque des versions via le **archiver** commande.  
@@ -40,16 +35,16 @@ Cette zone de test plug-in de contrôle de code source couvre l’envoi des él�
   
 ## <a name="common-expected-behavior"></a>Comportement attendu commun  
   
--   Projets et fichiers ajoutés à une solution ou un projet sous contrôle de code source apparaissent dans le **archiver** boîte de dialogue et le **archivages en attente** fenêtre.  
+- Projets et fichiers ajoutés à une solution ou un projet sous contrôle de code source apparaissent dans le **archiver** boîte de dialogue et le **archivages en attente** fenêtre.  
   
--   Après l’archivage, les éléments ajoutés apparaissent dans le contrôle de code source.  
+- Après l’archivage, les éléments ajoutés apparaissent dans le contrôle de code source.  
   
--   Après l’archivage, les éléments mis à jour sont correctement gérées dans le magasin.  
+- Après l’archivage, les éléments mis à jour sont correctement gérées dans le magasin.  
   
 ## <a name="test-cases"></a>Cas de test  
  Cas de test spécifiques pour la zone de test d’archivage sont les suivantes :  
   
-### <a name="case-4a-modified-items"></a>Cas 4 a : modification des éléments  
+### <a name="case-4a-modified-items"></a>4 a case : Éléments modifiés  
  Décrit l’utilisation de la vérification en action pour mettre à jour un fichier sous contrôle de code source qui a été modifié.  
   
 |Action|Étapes de test|Résultats attendus pour vérifier|  
@@ -57,7 +52,7 @@ Cette zone de test plug-in de contrôle de code source couvre l’envoi des él�
 |Modifier un fichier texte qui a été extrait, archivez le fichier uniquement (**archiver** boîte de dialogue)|1.  Créer un nouveau projet avec un fichier texte.<br />2.  Ajouter la solution au contrôle de code source.<br />3.  Extraire et modifier le fichier texte.<br />4.  Archiver via la boîte de dialogue Archiver (**fichier**, **contrôle de code Source**, **archiver**).|Comportement attendu commun.|  
 |Modifier un fichier texte qui a été extrait, archivez le fichier uniquement (**archivages en attente** fenêtre)|1.  Créer un nouveau projet avec un fichier texte.<br />2.  Ajouter la solution au contrôle de code source.<br />3.  Extraire et modifier le fichier texte.<br />4.  Archiver le **archivages en attente** fenêtre.|Comportement attendu commun.|  
   
-### <a name="case-4b-adding-files"></a>Cas 4 b : ajout de fichiers  
+### <a name="case-4b-adding-files"></a>4 b de cas : Ajout de fichiers  
  Lorsque vous ajoutez un fichier à un projet ou un élément à une solution, le projet ou la solution doit également changer. Par conséquent, le fichier parent est également extrait et doit être archivé pour terminer l’ajout.  
   
 |Action|Étapes de test|Résultats attendus pour vérifier|  
@@ -65,7 +60,7 @@ Cette zone de test plug-in de contrôle de code source couvre l’envoi des él�
 |Ajoutez un fichier texte et tout archiver (**archiver** boîte de dialogue)|1.  Créer un nouveau projet.<br />2.  Ajouter la solution au contrôle de code source.<br />3.  Ajoutez un fichier texte au projet.<br />4.  Accepter l’extraction du projet si vous y êtes invité.<br />5.  Sélectionnez la solution dans **l’Explorateur de solutions**.<br />6.  Archiver depuis le **archiver** boîte de dialogue.|Comportement attendu commun.|  
 |Ajoutez un fichier texte et tout archiver (**archivages en attente** fenêtre)|1.  Créer un nouveau projet.<br />2.  Ajouter la solution au contrôle de code source.<br />3.  Ajoutez un fichier texte au projet.<br />4.  Accepter l’extraction du projet si vous y êtes invité.<br />5.  Archiver la solution à partir de **archivages en attente** fenêtre.|Comportement attendu commun|  
   
-### <a name="case-4c-adding-projects"></a>Cas c 4 : ajout de projets  
+### <a name="case-4c-adding-projects"></a>Cas 4c : Ajout de projets  
  Lorsque vous ajoutez un projet à une solution, la solution doit également changer. Par conséquent, le fichier solution est également extrait et doit être archivé pour terminer l’ajout.  
   
 |Action|Étapes de test|Résultats attendus pour vérifier|  
@@ -75,4 +70,3 @@ Cette zone de test plug-in de contrôle de code source couvre l’envoi des él�
   
 ## <a name="see-also"></a>Voir aussi  
  [Guide de test pour les plug-ins de contrôle de code source](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)
-

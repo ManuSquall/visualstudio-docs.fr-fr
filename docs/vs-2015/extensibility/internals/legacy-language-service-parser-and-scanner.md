@@ -11,12 +11,12 @@ ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4d5110c0289a630640fdb2c2383234173d931c72
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f1db922974c587cdeadc131d17c44cbab4b49af0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950254"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048539"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Scanneur et analyseur du service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,13 +44,13 @@ namespace MyNamespace
 |Nom du jeton|Type de jeton|  
 |----------------|----------------|  
 |namespace, class, public, void, int|keyword|  
-|=|operator|  
+|=|opérateur|  
 |{ } ( ) ;|délimiteur|  
 |MyNamespace, MyClass, MyFunction, arg1, var1|'identificateur'|  
 |MyNamespace|namespace|  
 |MyClass|class|  
 |MyFunction|méthode|  
-|arg1|paramètre|  
+|arg1|parameter|  
 |var1|variable locale|  
   
  Le rôle de l’analyseur consiste à identifier les jetons. Bien que certains jetons peuvent avoir plusieurs types. Une fois que l’analyseur a identifié les jetons, le service de langage peut utiliser les informations pour fournir des fonctionnalités utiles, telles que la coloration syntaxique, correspondance des accolades et les opérations IntelliSense.  
@@ -82,29 +82,29 @@ namespace MyNamespace
   
  Partons du principe que le service de langage prend en charge les accolades correspondantes.  
   
-1.  L’utilisateur tape une accolade fermante (}).  
+1. L’utilisateur tape une accolade fermante (}).  
   
-2.  L’accolade est insérée au niveau du curseur dans le fichier source et le curseur est avancé d’une unité.  
+2. L’accolade est insérée au niveau du curseur dans le fichier source et le curseur est avancé d’une unité.  
   
-3.  Le <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> méthode dans la <xref:Microsoft.VisualStudio.Package.Source> classe est appelée avec l’accolade fermante typé.  
+3. Le <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> méthode dans la <xref:Microsoft.VisualStudio.Package.Source> classe est appelée avec l’accolade fermante typé.  
   
-4.  Le <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> les appels de méthode le <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> méthode dans la <xref:Microsoft.VisualStudio.Package.Source> classe pour obtenir le jeton à la position juste avant la position actuelle du curseur. Ce jeton correspond à l’accolade fermante typé).  
+4. Le <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> les appels de méthode le <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> méthode dans la <xref:Microsoft.VisualStudio.Package.Source> classe pour obtenir le jeton à la position juste avant la position actuelle du curseur. Ce jeton correspond à l’accolade fermante typé).  
   
-    1.  Le <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> les appels de méthode le <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> méthode sur le <xref:Microsoft.VisualStudio.Package.Colorizer> objet pour obtenir tous les jetons de la ligne actuelle.  
+    1. Le <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> les appels de méthode le <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> méthode sur le <xref:Microsoft.VisualStudio.Package.Colorizer> objet pour obtenir tous les jetons de la ligne actuelle.  
   
-    2.  Le <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> les appels de méthode le <xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A> méthode sur le <xref:Microsoft.VisualStudio.Package.IScanner> objet avec le texte de la ligne active.  
+    2. Le <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> les appels de méthode le <xref:Microsoft.VisualStudio.Package.IScanner.SetSource%2A> méthode sur le <xref:Microsoft.VisualStudio.Package.IScanner> objet avec le texte de la ligne active.  
   
-    3.  Le <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> méthode appelle à plusieurs reprises la <xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A> méthode sur le <xref:Microsoft.VisualStudio.Package.IScanner> objet à rassembler tous les jetons à partir de la ligne actuelle.  
+    3. Le <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> méthode appelle à plusieurs reprises la <xref:Microsoft.VisualStudio.Package.IScanner.ScanTokenAndProvideInfoAboutIt%2A> méthode sur le <xref:Microsoft.VisualStudio.Package.IScanner> objet à rassembler tous les jetons à partir de la ligne actuelle.  
   
-    4.  Le <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> méthode appelle une méthode privée le <xref:Microsoft.VisualStudio.Package.Source> classe pour obtenir le jeton qui contient la position voulue et passe dans la liste des jetons obtenus à partir de la <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> (méthode).  
+    4. Le <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> méthode appelle une méthode privée le <xref:Microsoft.VisualStudio.Package.Source> classe pour obtenir le jeton qui contient la position voulue et passe dans la liste des jetons obtenus à partir de la <xref:Microsoft.VisualStudio.Package.Colorizer.GetLineInfo%2A> (méthode).  
   
-5.  Le <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> méthode recherche un indicateur de jetons de déclencheur de <xref:Microsoft.VisualStudio.Package.TokenTriggers> sur le jeton qui est retourné à partir de la <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> méthode ; autrement dit, le jeton qui représente l’accolade fermante).  
+5. Le <xref:Microsoft.VisualStudio.Package.Source.OnCommand%2A> méthode recherche un indicateur de jetons de déclencheur de <xref:Microsoft.VisualStudio.Package.TokenTriggers> sur le jeton qui est retourné à partir de la <xref:Microsoft.VisualStudio.Package.Source.GetTokenInfo%2A> méthode ; autrement dit, le jeton qui représente l’accolade fermante).  
   
-6.  Si le déclencheur indicateur de <xref:Microsoft.VisualStudio.Package.TokenTriggers> est trouvée, le <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> méthode dans la <xref:Microsoft.VisualStudio.Package.Source> classe est appelée.  
+6. Si le déclencheur indicateur de <xref:Microsoft.VisualStudio.Package.TokenTriggers> est trouvée, le <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> méthode dans la <xref:Microsoft.VisualStudio.Package.Source> classe est appelée.  
   
-7.  Le <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> méthode démarre une opération d’analyse avec la valeur de motif de l’analyse de <xref:Microsoft.VisualStudio.Package.ParseReason>. Cette opération appelle finalement la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> méthode sur le <xref:Microsoft.VisualStudio.Package.LanguageService> classe. Si l’analyse asynchrone est activé, cet appel à la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> méthode se produit sur un thread d’arrière-plan.  
+7. Le <xref:Microsoft.VisualStudio.Package.Source.MatchBraces%2A> méthode démarre une opération d’analyse avec la valeur de motif de l’analyse de <xref:Microsoft.VisualStudio.Package.ParseReason>. Cette opération appelle finalement la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> méthode sur le <xref:Microsoft.VisualStudio.Package.LanguageService> classe. Si l’analyse asynchrone est activé, cet appel à la <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> méthode se produit sur un thread d’arrière-plan.  
   
-8.  Lorsque l’opération d’analyse est terminée, un gestionnaire d’achèvement interne (également appelé une méthode de rappel) nommé `HandleMatchBracesResponse` est appelée le <xref:Microsoft.VisualStudio.Package.Source> classe. Cet appel est effectué automatiquement par le <xref:Microsoft.VisualStudio.Package.LanguageService> classe de base, pas par l’analyseur.  
+8. Lorsque l’opération d’analyse est terminée, un gestionnaire d’achèvement interne (également appelé une méthode de rappel) nommé `HandleMatchBracesResponse` est appelée le <xref:Microsoft.VisualStudio.Package.Source> classe. Cet appel est effectué automatiquement par le <xref:Microsoft.VisualStudio.Package.LanguageService> classe de base, pas par l’analyseur.  
   
 9. Le `HandleMatchBracesResponse` méthode obtient une liste d’étendues à partir de la <xref:Microsoft.VisualStudio.Package.AuthoringSink> objet qui est stocké dans le <xref:Microsoft.VisualStudio.Package.ParseRequest> objet. (Une étendue est un <xref:Microsoft.VisualStudio.TextManager.Interop.TextSpan> structure qui spécifie une plage de lignes et de caractères dans le fichier source.) Cette liste d’étendues contient généralement deux étendues, une pour les accolades ouvrantes et fermantes.  
   

@@ -4,19 +4,19 @@ titleSuffix: ''
 description: Une procédure pas à pas des notions fondamentales de Django dans le cadre de projets Visual Studio, qui montre la prise en charge du développement de Django par Visual Studio.
 ms.date: 11/19/2018
 ms.topic: tutorial
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5a15b845db2733b208a765caf1a1307abeb19a49
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: b41ed3901cd4ad18a1b52ddbdc7ee6fd82cb5380
+ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355735"
+ms.lasthandoff: 04/09/2019
+ms.locfileid: "59366417"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Tutoriel : Bien démarrer avec le framework web Django dans Visual Studio
 
@@ -205,7 +205,7 @@ Réponse : En plus des commandes du menu **Déboguer** et des boutons de barre 
 À ce stade, le projet de base Django ne contient pas d’applications. Vous créerez une application à l’étape suivante. Étant donné que vous travaillez généralement plutôt avec des applications Django qu’avec le projet Django, vous n’avez pas besoin d’en savoir plus sur les fichiers réutilisables pour le moment.
 
 > [!div class="nextstepaction"]
-> [Créer une application Django avec des affichages et des modèles de pages ](learn-django-in-visual-studio-step-02-create-an-app.md)
+> [Créer une application Django avec des vues et des modèles de pages](learn-django-in-visual-studio-step-02-create-an-app.md)
 
 ## <a name="go-deeper"></a>Approfondir la question
 

@@ -1,38 +1,33 @@
 ---
 title: Extensibilité du débogueur Visual Studio | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - debugging [Visual Studio], Debugging SDK
 - Debugging SDK
 ms.assetid: c088b6a2-c3ad-446b-830d-9c6f41b2934b
 caps.latest.revision: 33
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 8b5e9e7a3db38b5138f6392ff89f3a3bb4a13303
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 528716c4ea354ab63dc7fcab2b3f90fe2860b655
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743494"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949500"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Extensibilité du débogueur de Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Visual Studio inclut un débogueur de code source totalement interactives, en fournissant un outil puissant et facile à utiliser pour le suivi des bogues dans votre programme. Le débogueur a prise en charge complète Visual Basic, c#, C/C++ et JavaScript. Toutefois, avec la [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], qui est disponible à partir de la [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=214453),, autres langages de programmation peuvent être pris en charge dans le débogueur avec les mêmes fonctionnalités riches.  
+Visual Studio inclut un débogueur de code source totalement interactives, en fournissant un outil puissant et facile à utiliser pour le suivi des bogues dans votre programme. Le débogueur a prise en charge complète Visual Basic, C#, C/C++ et JavaScript. Toutefois, avec la [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], qui est disponible à partir de la [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=214453),, autres langages de programmation peuvent être pris en charge dans le débogueur avec les mêmes fonctionnalités riches.  
   
  Le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] débogueur est le serveur frontal courantes (autrement dit, l’interface utilisateur) pour les composants de débogage qui sont, quant à lui, spécifiques au langage en cours de débogage. De nouveaux langages, tout ce qui est nécessaire pour prendre en charge par le [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] débogueur consiste à créer les composants principaux nécessaires, comme un moteur de débogage (dé). C’est là le [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] arrive.  
   
  Le [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] inclut une référence complète à tous les [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] éléments requis pour créer un nouveau DE. En outre, il existe des exemples et didacticiels qui vous aideront à vous aider à démarrer.  
   
- Pour obtenir un exemple de bout en bout d’un système de projet de langage avec prise en charge le débogage, consultez le [exemple IronPython](http://msdn.microsoft.com/en-us/4c41695c-12c1-4670-b43b-d8d84c9e4089).  
+ Pour obtenir un exemple de bout en bout d’un système de projet de langage avec prise en charge le débogage, consultez le [exemple IronPython](http://msdn.microsoft.com/4c41695c-12c1-4670-b43b-d8d84c9e4089).  
   
  Les sections suivantes décrivent comment étendre le débogueur à l’aide de la [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)].  
   
@@ -54,4 +49,3 @@ Visual Studio inclut un débogueur de code source totalement interactives, en fo
   
  [Exemples](../../extensibility/debugger/visual-studio-debugging-samples.md)  
  Contient des liens vers un exemple évaluateur expression de common language runtime et un exemple de moteur de débogage.
-

@@ -1,14 +1,9 @@
 ---
 title: L’inscription des modèles de projet et élément | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], adding items
 - registry, Add New Item dialog box
@@ -18,13 +13,13 @@ helpviewer_keywords:
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
 caps.latest.revision: 28
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 06a9840680c76103373cde00ac37310bb6138095
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
-ms.translationtype: HT
+manager: jillfra
+ms.openlocfilehash: a06e7a292d960e675ad4b0de97499557542fef1c
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764298"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58949381"
 ---
 # <a name="registering-project-and-item-templates"></a>Inscription de modèles de projet et d’élément
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -44,7 +39,7 @@ Types de projets doivent inscrire les répertoires où se trouvent leurs modèle
 "ProjectTemplatesDir"="C:\\MyProduct\\MyProjectTemplates"  
 ```  
   
-|Name|Type|Description|  
+|Nom|Type|Description|  
 |----------|----------|-----------------|  
 |@|REG_SZ|Nom par défaut des projets de ce type.|  
 |DisplayName|REG_SZ|ID de ressource du nom doivent être extraites de la DLL satellite inscrit sous Packages.|  
@@ -62,7 +57,7 @@ Types de projets doivent inscrire les répertoires où se trouvent leurs modèle
 "SortPriority"=dword:00000064  
 ```  
   
-|Name|Type|Description|  
+|Nom|Type|Description|  
 |----------|----------|-----------------|  
 |@|REG_SZ|ID de ressource pour les modèles d’ajouter un élément.|  
 |TemplatesDir|REG_SZ|Chemin d’accès des éléments de projet affiché dans la boîte de dialogue pour le **ajouter un nouvel élément** Assistant.|  
@@ -72,7 +67,7 @@ Types de projets doivent inscrire les répertoires où se trouvent leurs modèle
 ### <a name="registering-file-filters"></a>L’inscription des filtres de fichiers  
  Si vous le souhaitez, vous pouvez inscrire des filtres qui [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] utilise lorsqu’il vous invite à entrer des noms de fichier. Par exemple, le [!INCLUDE[csprcs](../../includes/csprcs-md.md)] filtrer pour le **ouvrir un fichier** boîte de dialogue est :  
   
- **Fichiers Visual c# (\*.cs,\*.resx,\*.settings,\*.xsd,\*.wsdl) ;\*. cs,\*.resx,\*.settings,\*.xsd,\*.wsdl)**  
+ **Fichiers Visual C# (\*.cs,\*.resx,\*.settings,\*.xsd,\*.wsdl) ;\*. cs,\*.resx,\*.settings,\*.xsd,\*.wsdl)**  
   
  Pour prendre en charge l’inscription de plusieurs filtres, chaque filtre est inscrit dans sa propre sous-clé sous HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\<*Version*> \Projects\\{} \< *ProjectGUID*>} \Filters\\<*sous-clé*>. Le nom de la sous-clé est arbitraire ; [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ignore les nom de la sous-clé et utilise simplement ses valeurs.  
   
@@ -89,7 +84,7 @@ Types de projets doivent inscrire les répertoires où se trouvent leurs modèle
 "SortPriority"=dword:00000064  
 ```  
   
-|Name|Type|Description|  
+|Nom|Type|Description|  
 |----------|----------|-----------------|  
 |CommonFindFilesFilter|REG_DWORD|Rend le filtre de l’un des filtres courants dans le **rechercher dans les fichiers** boîte de dialogue. Filtres communs sont répertoriés dans la liste des filtres avant les filtres ne pas marqué comme commun.|  
 |CommonOpenFilesFilter|REG_DWORD|Rend le filtre de l’un des filtres courants dans le **ouvrir un fichier** boîte de dialogue. Filtres communs sont répertoriés dans la liste des filtres avant les filtres ne pas marqué comme commun.|  
@@ -113,7 +108,7 @@ Types de projets doivent inscrire les répertoires où se trouvent leurs modèle
   
  \ProjectItems (contient les éléments de projet)  
   
- \CLASSE  
+ \Class  
   
  \Form  
   
@@ -128,4 +123,3 @@ Types de projets doivent inscrire les répertoires où se trouvent leurs modèle
  [Assistants](../../extensibility/internals/wizards.md)   
  [Localisation d’applications](../../ide/localizing-applications.md)   
  [CATID des objets qui sont généralement utilisés pour étendre des projets](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)
-

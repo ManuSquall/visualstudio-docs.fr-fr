@@ -1,12 +1,9 @@
 ---
 title: Enregistrer les données à partir d’un objet dans une base de données | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,19 +17,18 @@ ms.assetid: efd6135a-40cf-4b0d-8f8b-41a5aaea7057
 caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: acbbf9f309573f110da3b7dd0a53ede36150a319
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 6980ecc7676afd978f8dfd243ef8f383413ad83d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49207452"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074881"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Enregistrer les données d’un objet dans une base de données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
-Vous pouvez enregistrer des données dans des objets à une base de données en passant les valeurs à partir de votre objet à une des méthodes DBDirect du TableAdapter (par exemple, `TableAdapter.Insert`). Pour plus d'informations, consultez [TableAdapter Overview](../data-tools/tableadapter-overview.md).  
+Vous pouvez enregistrer des données dans des objets à une base de données en passant les valeurs à partir de votre objet à une des méthodes DBDirect du TableAdapter (par exemple, `TableAdapter.Insert`).
   
  Pour enregistrer des données à partir d’une collection d’objets, parcourez la collection d’objets (par exemple, une boucle for-next) et envoyez les valeurs pour chaque objet à la base de données à l’aide d’une des méthodes DBDirect du TableAdapter.  
   
@@ -49,7 +45,7 @@ Vous pouvez enregistrer des données dans des objets à une base de données en 
   
 ### <a name="to-save-new-records-from-an-object-to-a-database"></a>Pour enregistrer les nouveaux enregistrements à partir d’un objet dans une base de données  
   
--   Créer les enregistrements en passant les valeurs pour le `TableAdapter.Insert` (méthode).  
+- Créer les enregistrements en passant les valeurs pour le `TableAdapter.Insert` (méthode).  
   
      L’exemple suivant crée un nouvel enregistrement de client dans le `Customers` table en passant les valeurs dans le `currentCustomer` de l’objet à le `TableAdapter.Insert` (méthode).  
   
@@ -58,7 +54,7 @@ Vous pouvez enregistrer des données dans des objets à une base de données en 
   
 ### <a name="to-update-existing-records-from-an-object-to-a-database"></a>Pour mettre à jour les enregistrements existants à partir d’un objet à une base de données  
   
--   Modifier les enregistrements en appelant le `TableAdapter.Update` (méthode), en passant les nouvelles valeurs à mettre à jour l’enregistrement et en passant les valeurs d’origine pour rechercher l’enregistrement.  
+- Modifier les enregistrements en appelant le `TableAdapter.Update` (méthode), en passant les nouvelles valeurs à mettre à jour l’enregistrement et en passant les valeurs d’origine pour rechercher l’enregistrement.  
   
     > [!NOTE]
     >  Votre objet doit conserver les valeurs d’origine afin de les passer à la `Update` (méthode). Cet exemple utilise des propriétés avec un `orig` préfixe pour stocker les valeurs d’origine.  
@@ -70,7 +66,7 @@ Vous pouvez enregistrer des données dans des objets à une base de données en 
   
 ### <a name="to-delete-existing-records-from-a-database"></a>Pour supprimer des enregistrements existants à partir d’une base de données  
   
--   Supprimer les enregistrements en appelant le `TableAdapter.Delete` (méthode) et en passant les valeurs d’origine pour rechercher l’enregistrement.  
+- Supprimer les enregistrements en appelant le `TableAdapter.Delete` (méthode) et en passant les valeurs d’origine pour rechercher l’enregistrement.  
   
     > [!NOTE]
     >  Votre objet doit conserver les valeurs d’origine afin de les passer à la `Delete` (méthode). Cet exemple utilise des propriétés avec un `orig` préfixe pour stocker les valeurs d’origine.  
@@ -85,4 +81,3 @@ Vous pouvez enregistrer des données dans des objets à une base de données en 
   
 ## <a name="see-also"></a>Voir aussi  
  [Enregistrer les données dans la base de données](../data-tools/save-data-back-to-the-database.md)
-

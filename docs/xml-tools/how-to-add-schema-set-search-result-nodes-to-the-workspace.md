@@ -8,20 +8,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cb8e66292a1cdb393401d180bd8b9f8691dc8f0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 406eb2872a2be7127aaf2d37ee654cfe2f58ac3c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913926"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654488"
 ---
-# <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>Procédure : Ajouter des nœuds de résultat de recherche de jeu de schémas à l’espace de travail
+# <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>Procédure : Ajouter des nœuds de résultat d’une recherche dans un jeu de schémas à l’espace de travail
 
 Cette rubrique explique comment ajouter des nœuds qui sont mises en surbrillance dans le **Explorateur de schémas XML** comme résultat d’une recherche par mot clé dans l’espace de travail.
 
 > [!NOTE]
 > Seuls des nœuds globaux peuvent être ajoutés à la [espace de travail](../xml-tools/xml-schema-designer-workspace.md).
-
 
  Cet exemple utilise l’exemple [schéma d’ordre d’achat](../xml-tools/sample-xsd-file-purchase-order-schema.md).
 

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 62e8a2c44fd25119493a52d8276af0b0886cf2d0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 94e3ccc30507ccd7995c4d4fad548fe5ff425365
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636253"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094607"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>Procédure : Gérer la disposition des contrôles dans les volets actions
   Un volet actions est ancré à droite d’un document ou une feuille de calcul par défaut ; Toutefois, il peut être ancré à gauche, haut ou bas. Si vous utilisez plusieurs contrôles utilisateur, vous pouvez écrire du code pour empiler correctement les contrôles utilisateur dans le volet actions. Pour plus d’informations, consultez [vue d’ensemble du volet Actions](../vsto/actions-pane-overview.md).
@@ -36,25 +36,25 @@ ms.locfileid: "56636253"
 
 ## <a name="to-set-the-stack-order-of-the-actions-pane-controls"></a>Pour définir l’ordre de la pile des contrôles de volet actions
 
-1.  Ouvrez un projet au niveau du document pour Microsoft Office Word qui inclut un volet actions avec plusieurs contrôles utilisateur ou contrôles de volet actions imbriqués. Pour plus d'informations, voir [Procédure : Ajouter un volet actions à des documents Word ou de classeurs Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
+1. Ouvrez un projet au niveau du document pour Microsoft Office Word qui inclut un volet actions avec plusieurs contrôles utilisateur ou contrôles de volet actions imbriqués. Pour plus d'informations, voir [Procédure : Ajouter un volet actions à des documents Word ou de classeurs Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
 
-2.  Avec le bouton droit **ThisDocument.cs** ou **ThisDocument.vb** dans **l’Explorateur de solutions** puis cliquez sur **afficher le Code**.
+2. Avec le bouton droit **ThisDocument.cs** ou **ThisDocument.vb** dans **l’Explorateur de solutions** puis cliquez sur **afficher le Code**.
 
-3.  Dans le <xref:Microsoft.Office.Tools.ActionsPane.OrientationChanged> Gestionnaire d’événements du volet actions, vérifiez si l’orientation du volet actions est horizontale.
+3. Dans le <xref:Microsoft.Office.Tools.ActionsPane.OrientationChanged> Gestionnaire d’événements du volet actions, vérifiez si l’orientation du volet actions est horizontale.
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#30](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#30)]
      [!code-vb[Trin_VstcoreActionsPaneWord#30](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#30)]
 
-4.  Si l’orientation est horizontale, empiler les contrôles de volet Actions à partir de la gauche ; Sinon, les empiler à partir du haut.
+4. Si l’orientation est horizontale, empiler les contrôles de volet Actions à partir de la gauche ; Sinon, les empiler à partir du haut.
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#31](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#31)]
      [!code-vb[Trin_VstcoreActionsPaneWord#31](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#31)]
 
-5.  En c#, vous devez ajouter un gestionnaire d’événements pour le `ActionsPane` à la <xref:Microsoft.Office.Tools.Word.Document.Startup> Gestionnaire d’événements. Pour plus d’informations sur la création de gestionnaires d’événements, consultez [Comment : Créer des gestionnaires d’événements dans les projets Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
+5. En c#, vous devez ajouter un gestionnaire d’événements pour le `ActionsPane` à la <xref:Microsoft.Office.Tools.Word.Document.Startup> Gestionnaire d’événements. Pour plus d’informations sur la création de gestionnaires d’événements, consultez [Comment : Créer des gestionnaires d’événements dans les projets Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
      [!code-csharp[Trin_VstcoreActionsPaneWord#32](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#32)]
 
-6.  Exécutez le projet et vérifiez que les contrôles de volet actions sont empilés de gauche à droite lorsque le volet actions est ancré en haut du document, et les contrôles sont empilés de haut en bas lorsque le volet actions est ancré à droite du document.
+6. Exécutez le projet et vérifiez que les contrôles de volet actions sont empilés de gauche à droite lorsque le volet actions est ancré en haut du document, et les contrôles sont empilés de haut en bas lorsque le volet actions est ancré à droite du document.
 
 ## <a name="example"></a>Exemple
  [!code-csharp[Trin_VstcoreActionsPaneWord#29](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#29)]
@@ -63,7 +63,7 @@ ms.locfileid: "56636253"
 ## <a name="compile-the-code"></a>Compiler le code
  Cet exemple nécessite :
 
--   Contrôle d’un projet au niveau du document de Word avec un volet actions qui contient plusieurs contrôles utilisateur ou le volet actions imbriqués.
+- Contrôle d’un projet au niveau du document de Word avec un volet actions qui contient plusieurs contrôles utilisateur ou le volet actions imbriqués.
 
 ## <a name="see-also"></a>Voir aussi
 - [Vue d’ensemble du volet Actions](../vsto/actions-pane-overview.md)

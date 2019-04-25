@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0a57a77e401564b3bd32897a9b32d9773d959a17
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: db33a55c5ced7c1bbbf4b238185beac43ac290f8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "59001123"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080344"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Procédure pas à pas : utilisation de Graphics Diagnostics pour déboguer un nuanceur de calcul
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ Cette procédure pas à pas montre comment utiliser les outils Visual Studio Gra
   
  Cette procédure pas à pas décrit les tâches suivantes :  
   
--   Utilisation de la **liste des événements Graphics** pour rechercher les sources potentielles du problème.  
+- Utilisation de la **liste des événements Graphics** pour rechercher les sources potentielles du problème.  
   
--   Utilisation de la **pile des appels des événements Graphics** pour identifier le nuanceur de calcul exécuté par un événement `Dispatch` DirectCompute.  
+- Utilisation de la **pile des appels des événements Graphics** pour identifier le nuanceur de calcul exécuté par un événement `Dispatch` DirectCompute.  
   
--   Utilisation de la fenêtre **Étapes de canalisation Graphics** et du débogueur HLSL pour examiner le nuanceur de calcul à l’origine du problème.  
+- Utilisation de la fenêtre **Étapes de canalisation Graphics** et du débogueur HLSL pour examiner le nuanceur de calcul à l’origine du problème.  
   
 ## <a name="scenario"></a>Scénario  
  Dans ce scénario, vous avez écrit une simulation relative à la dynamique des fluides, qui utilise DirectCompute pour effectuer les calculs les plus poussés de la mise à jour de la simulation. Quand l'application est exécutée, le rendu du jeu de données et de l'interface utilisateur semble correct. Toutefois, la simulation ne se comporte pas comme prévu. À l’aide de Graphics Diagnostics, vous pouvez capturer le problème dans un journal de graphisme pour déboguer l’application. Le problème se présente ainsi dans l'application :  

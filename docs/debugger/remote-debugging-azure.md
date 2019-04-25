@@ -11,12 +11,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 694a9f7ba6bd5870a54b6b10e028c463d47ababf
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
-ms.translationtype: MTE95
+ms.openlocfilehash: afed42cbdb03ba0fb47880ed0126bad9858f83fa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355800"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040701"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>Débogage distant ASP.NET Core sur IIS dans Azure dans Visual Studio
 
@@ -211,16 +211,19 @@ Téléchargez la version des outils à distance qui correspond à votre version 
 2. Dans Visual Studio, cliquez sur **Déboguer > Attacher au processus** (Ctrl + Alt + P).
 
     > [!TIP]
-    > Dans Visual Studio 2017 et versions ultérieures, vous pouvez attacher nouveau vers le même processus que vous avez précédemment attaché à l’aide de **Déboguer > Attacher au processus...** Maj+Alt+P
+    > Dans Visual Studio 2017 et versions ultérieures, vous pouvez attacher nouveau vers le même processus que vous avez précédemment attaché à l’aide de **Déboguer > Attacher au processus...** (Maj + Alt + P).
 
-3. Définissez le champ qualificateur sur  **\<nom_ordinateur_distant > : port**.
+3. Définissez le champ qualificateur sur  **\<nom_ordinateur_distant >** et appuyez sur **entrée**.
+
+    Vérifiez que Visual Studio ajoute le port requis pour le nom d’ordinateur, qui apparaît dans le format :  **\<nom_ordinateur_distant > : port**
 
     ::: moniker range=">=vs-2019"
-    **\<nom de l’ordinateur distant > : 4024** sur Visual Studio 2019
+    Dans Visual Studio 2019, vous devez voir  **\<nom_ordinateur_distant > : 4024**
     ::: moniker-end
     ::: moniker range="vs-2017"
-    **\<nom de l’ordinateur distant > : 4022** sur Visual Studio 2017
+    Dans Visual Studio 2017, vous devez voir  **\<nom_ordinateur_distant > : 4022**
     ::: moniker-end
+    Le port est requis. Si vous ne voyez pas le numéro de port, vous pouvez l’ajouter manuellement.
 
 4. Cliquez sur **Actualiser**.
     Des processus doivent s’afficher dans la fenêtre **Processus disponibles** .
@@ -231,11 +234,20 @@ Téléchargez la version des outils à distance qui correspond à votre version 
 
 5. Cochez  **Afficher les processus de tous les utilisateurs**.
 
-6. Tapez la première lettre d’un nom de processus pour trouver rapidement *dotnet.exe* (pour ASP.NET Core).
+6. Tapez la première lettre du nom de votre processus pour trouver rapidement votre application.
 
-   Pour une application ASP.NET Core, le nom du processus précédent était *dnx.exe*.
+    * Sélectionnez **dotnet.exe** (pour .NET Core)
 
-    ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg_attachtoprocess_aspnetcore.png "RemoteDBG_AttachToProcess")
+      Si vous avez plusieurs processus montrant **dotnet.exe**, vérifiez le **nom d’utilisateur** colonne. Dans certains scénarios, le **nom d’utilisateur** colonne indique le nom de pool de votre application, tel que **IIS APPPOOL\DefaultAppPool**. Si vous voyez le Pool d’applications, un moyen facile d’identifier le processus correct consiste à créer un nouveau nommé Pool d’applications pour l’instance d’application que vous souhaitez déboguer, et ensuite vous pouvez les retrouver aisément dans le **nom d’utilisateur** colonne.
+
+    * Dans certains scénarios IIS, vous pouvez trouver votre nom de l’application dans la liste des processus, tel que **MyASPApp.exe**. Vous pouvez attacher à ce processus à la place.
+
+    ::: moniker range=">=vs-2019"
+    ![RemoteDBG_AttachToProcess](../debugger/media/vs-2019/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    ![RemoteDBG_AttachToProcess](../debugger/media/remotedbg-attachtoprocess-aspnetcore.png "RemoteDBG_AttachToProcess")
+    ::: moniker-end
 
 7. Cliquez sur **Attacher**.
 
@@ -246,7 +258,7 @@ Téléchargez la version des outils à distance qui correspond à votre version 
 
     Le point d’arrêt doit être atteint dans Visual Studio.
 
-### <a name="bkmk_openports"></a> Résolution des problèmes Ouvrez les ports requis sur Windows Server
+### <a name="bkmk_openports"></a> Résolution des problèmes : Ouvrez les ports requis sur Windows Server
 
 Dans la plupart des configurations, les ports requis sont ouverts par l’installation d’ASP.NET et le débogueur distant. Toutefois, si vous dépannez les problèmes de déploiement et l’application est hébergée derrière un pare-feu, vous devez vérifier que les ports appropriés sont ouverts.
 

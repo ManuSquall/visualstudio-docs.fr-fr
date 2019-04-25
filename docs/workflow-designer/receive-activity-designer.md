@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1ba2a53b6e658d14d05db04b8b82e9da9bcc3564
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: bcab59a631b1dbf9c85c7bff2454a42e97accff8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948249"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649213"
 ---
 # <a name="receive-activity-designer"></a>Concepteur d'activités Receive
 
@@ -23,7 +23,7 @@ Le **réception** ActivityDesigner est utilisé pour créer et configurer un <xr
 
 ## <a name="the-receive-activity"></a>Activité Receive
 
-L'activité <xref:System.ServiceModel.Activities.Receive> peut recevoir un élément unique ou plusieurs éléments selon le type de contenu de réception utilisé. Une activité <xref:System.ServiceModel.Activities.SendReply> peut être liée à une activité <xref:System.ServiceModel.Activities.Receive> qui reçoit un message dans le cadre d'un modèle d'échange de messages de demande/réponse sur le service.
+L'activité <xref:System.ServiceModel.Activities.Receive> peut recevoir un élément unique ou plusieurs éléments selon le type de contenu de réception utilisé. Une activité <xref:System.ServiceModel.Activities.SendReply> peut être liée à une activité <xref:System.ServiceModel.Activities.Receive> qui reçoit un message dans le cadre d’un modèle d’échange de messages de demande/réponse sur le service.
 
 ### <a name="using-the-receive-activity-designer"></a>Utilisation du concepteur d'activités Receive
 
@@ -36,7 +36,6 @@ Vous pouvez également le **ReceiveAndSendReply** Concepteur de modèles dans le
 ### <a name="the-receive-activity-properties"></a>Propriétés de l'activité Receive
 
 Le tableau suivant présente les propriétés de <xref:System.ServiceModel.Activities.Receive> et décrit comment elles sont utilisées dans le concepteur. Ces propriétés peuvent être modifiées dans la grille de propriétés ou sur l’aire du Concepteur de flux de travail. Seule la propriété <xref:System.ServiceModel.Activities.Receive.OperationName%2A> est obligatoire.
-
 
 | Nom de la propriété | Obligatoire | Utilisation |
 |-|----------|-|

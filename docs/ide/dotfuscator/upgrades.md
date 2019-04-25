@@ -1,13 +1,14 @@
 ---
-title: Mettre à niveau Dotfuscator Community Edition (CE)
-ms.date: 02/08/2017
+title: Mettre à niveau Dotfuscator Community
+ms.date: 03/28/2019
 ms.devlang: dotnet
 ms.topic: conceptual
-keywords: Dotfuscator, Dotfuscator CE, PreEmptive, PreEmptive Solutions, PreEmptive Protection, protection, Community Edition, obfuscation, .NET, gratuit, Visual Studio 2017, mettre à niveau, ligne de commande
+keywords: Dotfuscator, Dotfuscator Community, Dotfuscator CE, PreEmptive, PreEmptive Solutions, PreEmptive Protection, protection, community edition, obfuscation, .NET, gratuit, Visual Studio 2019, Visual Studio 2017, Visual Studio, mise à niveau, ligne de commande
 helpviewer_keywords:
 - PreEmptive Protection Dotfuscator
 - Dotfuscator Community Edition
 - Dotfuscator CE
+- Dotfuscator Community
 - Dotfuscator
 - obfuscation
 - protection
@@ -18,37 +19,36 @@ helpviewer_keywords:
 - registering Dotfuscator
 - Dotfuscator command line
 - Dotfuscator Professional
-description: Découvrez comment mettre à jour la version gratuite de Dotfuscator Community Edition incluse dans Visual Studio 2017.
+description: Découvrez comment mettre à jour la copie gratuite de Dotfuscator Community fournie avec Visual Studio.
 ms.assetid: c7c60904-27f9-4f1f-b79b-ddf65041b810
 author: Joe-Sewell-PreEmptive
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8665fdb1cc527c85e3071f9f19362caf4e5bc544
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cee876a3904d5c47b43b58793087c901e8444dd3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937319"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557240"
 ---
-# <a name="upgrade-dotfuscator-community-edition-ce"></a>Mettre à niveau Dotfuscator Community Edition (CE)
+# <a name="upgrade-dotfuscator-community"></a>Mettre à niveau Dotfuscator Community
 
-Dotfuscator Community Edition (Dotfuscator CE) offre immédiatement de nombreuses fonctionnalités de renforcement et de protection des applications à tous les développeurs utilisant Microsoft Visual Studio.
+Dotfuscator Community offre instantanément de nombreuses fonctionnalités de durcissement et de protection des applications à tous les développeurs utilisant Microsoft Visual Studio.
 Toutefois, les utilisateurs qui mettent à niveau leur version de Dotfuscator peuvent disposer de fonctionnalités supplémentaires.
 
-## <a name="registering-dotfuscator-ce"></a>Inscription de Dotfuscator CE
+## <a name="registering-dotfuscator-community"></a>Inscription de Dotfuscator Community
 
-Les utilisateurs de Dotfuscator inscrits peuvent accéder à des fonctionnalités supplémentaires, telles que la [prise en charge des lignes de commande][cli], ce qui permet d’intégrer facilement Dotfuscator CE au processus de génération automatisé. L’inscription accorde également l’accès à Lucidator, un outil intégré employé pour le [décodage des traces de pile obfusquées][decode-obfuscated].
+Les utilisateurs de Dotfuscator Community inscrits peuvent accéder à des fonctionnalités supplémentaires, telles que la [prise en charge des lignes de commande][cli], ce qui permet d’intégrer facilement Dotfuscator Community au processus de génération automatisé. L’inscription donne également accès à un outil intégré employé pour le [décodage des traces de pile obfusquées][decode-obfuscated].
 
 L’inscription est rapide, simple et gratuite.
-Pour inscrire Dotfuscator CE, consultez [la section relative à l’inscription de Dotfuscator CE dans la page de prise en main du guide d’utilisation complet de Dotfuscator CE][register-ce].
+Pour inscrire Dotfuscator Community, consultez [les instructions du Guide complet de l’utilisateur de Dotfuscator Community][register-ce].
 
 ## <a name="dotfuscator-professional"></a>Dotfuscator Professional
 
-Alors que Dotfuscator Community Edition fournit un niveau de protection de base, **_PreEmptive Protection - Dotfuscator_, Professional Edition** inclut des transformations d’obfuscation et des fonctionnalités de protection améliorées. Parmi les transformations et fonctionnalités améliorées, citons les suivantes :
+Alors que Dotfuscator Community fournit un niveau de protection de base, ***PreEmptive Protection - Dotfuscator, Professional*** inclut des transformations d’obfuscation et des fonctionnalités de protection avancées, comme :
 
 * *Protection de la propriété intellectuelle*
   * Options de renommage supplémentaires, notamment la méthode Overload Induction™ améliorée et la sélection d’identificateur aléatoire.
-  * Outils de décodage des traces de pile obfusquées.
   * Accès aux transformations d’obfuscation de niveau entreprise, notamment les [transformations visant à mettre en échec la décompilation de code automatisée][control-flow].
   * La possibilité de [masquer des chaînes sensibles][string-encryption], ce qui rend impossible une recherche simple du code décompilé.
   * La possibilité [d’incorporer discrètement des chaînes de propriété et la distribution dans vos assemblys][watermarking], ce qui vous permet de déterminer la source des fuites logicielles non autorisées.
@@ -62,14 +62,14 @@ Alors que Dotfuscator Community Edition fournit un niveau de protection de base,
 Dotfuscator Professional est l’[obfuscateur .NET][net-obfuscator] standard. Il est approprié pour les développeurs d’entreprise nécessitant un support technique, une maintenance et des mises à jour de produits continus.
 De plus, Dotfuscator Professional offre une intégration à Visual Studio plus étroite et est concédé sous licence pour une utilisation commerciale.
 
-Pour plus d’informations sur les fonctionnalités de protection des applications avancées de Dotfuscator Professional, visitez la [page de vue d’ensemble de Dotfuscator][product-about] de PreEmptive Solutions et [comparez-le à Community Edition][product-compare].
+Pour plus d’informations sur les fonctionnalités de protection des applications avancées de Dotfuscator Professional, visitez la [page de présentation de Dotfuscator][product-about] de PreEmptive Solutions et [comparez-le à Dotfuscator Community][product-compare].
 [Des essais entièrement pris en charge sont disponibles sur le site preemptive.com][eval].
 
 ## <a name="see-also"></a>Voir aussi
 
-[Cet article dans le guide d’utilisation complet de Dotfuscator CE][full]
+[Cet article dans le guide complet de l’utilisateur de Dotfuscator Community][full]
 
-<!-- Copyright © 2017 PreEmptive Solutions, LLC -->
+<!-- Copyright © 2019 PreEmptive Solutions, LLC -->
 
 [control-flow]:  https://www.preemptive.com/products/dotfuscator/features#controlflow
 [string-encryption]:  https://www.preemptive.com/products/dotfuscator/features#string

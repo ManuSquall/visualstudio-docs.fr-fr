@@ -27,12 +27,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0815ccf781782a0d638fcf941a6e48edcf8ccd1f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 53003e2a88faf2ef29d3a1eb3df1da081f20ce57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624683"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077756"
 ---
 # <a name="program-document-level-customizations"></a>Programmer des personnalisations au niveau du document
   Quand vous étendez Microsoft Office Word ou Microsoft Office Excel à l’aide d’une personnalisation au niveau du document, vous pouvez effectuer les tâches suivantes :
@@ -62,13 +62,13 @@ ms.locfileid: "56624683"
 
 - Les projets au niveau du document pour Excel comportent plusieurs classes générées : une pour le classeur lui-même et une pour chaque feuille de calcul. Par défaut, ces classes portent les noms suivants :
 
-  -   `ThisWorkbook`
+  - `ThisWorkbook`
 
-  -   `Sheet1`
+  - `Sheet1`
 
-  -   `Sheet2`
+  - `Sheet2`
 
-  -   `Sheet3`
+  - `Sheet3`
 
   La classe générée inclut des gestionnaires d’événements appelés quand le document est ouvert ou fermé. Pour exécuter du code à l’ouverture du document, ajoutez-le au gestionnaire d’événements `Startup` . Pour exécuter du code avant la fermeture du document, ajoutez-le au gestionnaire d’événements `Shutdown` . Pour plus d’informations, consultez [événements dans les projets Office](../vsto/events-in-office-projects.md).
 

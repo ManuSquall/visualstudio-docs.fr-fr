@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: ee6866e2f40f70e2f804dc9b61b0db21c213232f
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: f394ea2775eede3424e4d6995a8e2065c5d986ef
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416161"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857591"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Tutoriel : Bien démarrer avec Visual Basic dans Visual Studio
 
@@ -33,7 +33,7 @@ Si vous n’avez pas encore installé Visual Studio, accédez à la page [Télé
 
 ::: moniker range="vs-2019"
 
-Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) pour l’installer gratuitement.
+Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) pour l’installer gratuitement.
 
 ::: moniker-end
 
@@ -103,7 +103,7 @@ Si vous ne voyez pas le modèle de projet **Application console (.NET Core)**, v
 
 1. Dans la fenêtre **Configurer votre nouveau projet**, tapez ou entrez *WhatIsYourName* dans la zone **Nom du projet**. Choisissez ensuite **Créer**.
 
-   ![Dans la fenêtre « Configurer votre nouveau projet », nommez votre projet « WhatIsYourName »](./media/vs-2019/vb-name-your-project.-whatname.png)
+   ![Dans la fenêtre « Configurer votre nouveau projet », nommez votre projet « WhatIsYourName »](./media/vs-2019/vb-name-your-project-whatname.png)
 
    Visual Studio ouvre votre nouveau projet.
 
@@ -267,5 +267,5 @@ Félicitations ! Vous avez terminé ce didacticiel. Pour en apprendre davantage,
 ## <a name="see-also"></a>Voir aussi
 
 * [Procédures pas à pas relatives au langage Visual Basic](/dotnet/visual-basic/walkthroughs)
-* [Références du langage Visual Basic](/dotnet/visual-basic/language-reference/index)
+* [Informations de référence sur le langage Visual Basic](/dotnet/visual-basic/language-reference/index)
 * [IntelliSense pour les fichiers de code Visual Basic](../../ide/visual-basic-specific-intellisense.md)

@@ -20,12 +20,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4a9a3e7cd63e5a485063789d9f9eeaf1227d1b5d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 360384118f5c2d02801b63b8836800eca5e26d78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951154"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102248"
 ---
 # <a name="how-to-debug-from-a-dll-project"></a>Procédure : Déboguer à partir d’un projet de DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,35 +39,35 @@ Pour démarrer le débogage d'un projet de DLL, vous devez spécifier l'applicat
   
 ### <a name="to-specify-the-calling-application-in-a-c-project"></a>Pour spécifier l'application appelante dans un projet C++  
   
-1.  Cliquez sur le nœud de projet dans le **l’Explorateur de solutions** et sélectionnez **propriétés**. Accédez à la **déboguer** onglet.  
+1. Cliquez sur le nœud de projet dans le **l’Explorateur de solutions** et sélectionnez **propriétés**. Accédez à la **déboguer** onglet.  
   
-2.  Vérifiez que le champ **Configuration** en haut de la fenêtre est défini sur **Débogage**.  
+2. Vérifiez que le champ **Configuration** en haut de la fenêtre est défini sur **Débogage**.  
   
-3.  Accédez à **propriétés de Configuration / débogage**.  
+3. Accédez à **propriétés de Configuration / débogage**.  
   
-4.  Dans le **débogueur à lancer** , choisissez **débogueur Windows Local** ou **débogueur Windows distant**.  
+4. Dans le **débogueur à lancer** , choisissez **débogueur Windows Local** ou **débogueur Windows distant**.  
   
-5.  Dans le **commande** ou **commande à distance** zone, ajoutez le nom de chemin complet de l’application.  
+5. Dans le **commande** ou **commande à distance** zone, ajoutez le nom de chemin complet de l’application.  
   
-6.  Ajoutez les arguments nécessaires du programme à la zone **Arguments de la commande**.  
+6. Ajoutez les arguments nécessaires du programme à la zone **Arguments de la commande**.  
   
-### <a name="to-specify-the-calling-application-in-a-c-or-visual-basic-project"></a>Pour spécifier l'application appelante dans un projet C# ou Visual basic  
+### <a name="to-specify-the-calling-application-in-a-c-or-visual-basic-project"></a>Pour spécifier l'application appelante dans un projet C# ou Visual Basic  
   
-1.  Cliquez sur le nœud de projet dans le **l’Explorateur de solutions** et sélectionnez **propriétés**. Accédez à la **déboguer** onglet.  
+1. Cliquez sur le nœud de projet dans le **l’Explorateur de solutions** et sélectionnez **propriétés**. Accédez à la **déboguer** onglet.  
   
      Sélectionnez **démarrer le programme externe**et ajoutez le nom de chemin complet du programme à exécuter.  
   
      Si vous avez besoin ajouter des arguments de ligne de commande du programme externe, ajoutez-les dans le **arguments de ligne de commande** champ.  
   
-2.  Vous pouvez également appeler une application via une URL. (Vous pouvez procéder ainsi si vous déboguez une DLL managée utilisée par une application ASP.NET locale.)  
+2. Vous pouvez également appeler une application via une URL. (Vous pouvez procéder ainsi si vous déboguez une DLL managée utilisée par une application ASP.NET locale.)  
   
      Sous **Action de démarrage**, sélectionnez le **démarrer le navigateur dans l’URL :** case d’option et entrez l’URL.  
   
 ### <a name="to-start-debugging-from-the-dll-project"></a>Pour démarrer le débogage à partir du projet de DLL  
   
-1.  Définissez des points d'arrêt selon vos besoins.  
+1. Définissez des points d'arrêt selon vos besoins.  
   
-2.  Démarrer le débogage (appuyez sur F5, cliquez sur la flèche verte ou cliquez sur **déboguer / démarrer le débogage**).  
+2. Démarrer le débogage (appuyez sur F5, cliquez sur la flèche verte ou cliquez sur **déboguer / démarrer le débogage**).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage de projets DLL](../debugger/debugging-dll-projects.md)   

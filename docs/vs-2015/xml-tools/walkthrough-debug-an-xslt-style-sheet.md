@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1f211e2f13f710b66e33691dbc318349eddf15ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5e685e77dafe00b8cadd9b273ccc61c8e5d9e1e4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938267"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085101"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>Procédure pas à pas : débogage d'une feuille de style XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,9 +23,9 @@ Les étapes de cette procédure pas à pas montrent comment utiliser le débogue
   
 ### <a name="to-prepare-for-this-walkthrough"></a>Pour vous préparer à cette procédure  
   
-1.  Fermez les solutions ouvertes.  
+1. Fermez les solutions ouvertes.  
   
-2.  Copiez les deux fichiers exemples vers votre ordinateur local.  
+2. Copiez les deux fichiers exemples vers votre ordinateur local.  
   
 ## <a name="start-debugging"></a>Démarrer le débogage  
   
@@ -59,19 +59,19 @@ Les étapes de cette procédure pas à pas montrent comment utiliser le débogue
   
 #### <a name="to-use-the-watch-window"></a>Pour utiliser la fenêtre Espion  
   
-1.  À partir de la **déboguer** menu, pointez sur **Windows**, pointez sur **espion**, puis cliquez sur **Espion 1**.  
+1. À partir de la **déboguer** menu, pointez sur **Windows**, pointez sur **espion**, puis cliquez sur **Espion 1**.  
   
      La fenêtre Espion 1 s'affiche.  
   
-2.  Type `$bookAverage` dans le **nom** champ et appuyez sur ENTRÉE.  
+2. Type `$bookAverage` dans le **nom** champ et appuyez sur ENTRÉE.  
   
      La valeur de la variable `$bookAverage` s'affiche dans la fenêtre.  
   
-3.  Type `self::node()` dans le **nom** champ et appuyez sur ENTRÉE.  
+3. Type `self::node()` dans le **nom** champ et appuyez sur ENTRÉE.  
   
      `self::node()` est une expression XPath qui évalue le nœud de contexte actuel. La valeur de l'expression XPath `self::node()` est le premier nœud book. Cette valeur change à mesure que la transformation progresse.  
   
-4.  Développez le nœud `self::node()`, puis le nœud `price`.  
+4. Développez le nœud `self::node()`, puis le nœud `price`.  
   
      La valeur du prix du livre s'affiche et vous pouvez la comparer facilement à celle de `$bookAverage`. Puisque le prix du livre est inférieur à la moyenne, la condition `xsl:if` doit se vérifier.  
   
@@ -80,19 +80,19 @@ Les étapes de cette procédure pas à pas montrent comment utiliser le débogue
   
 #### <a name="to-step-through-the-code"></a>Pour parcourir le code pas à pas  
   
-1.  Appuyez sur **F5** pour continuer.  
+1. Appuyez sur **F5** pour continuer.  
   
      Puisque le premier nœud book répond à la condition `xsl:if`, il est ajouté à la fenêtre de sortie XSL. Le débogueur continue l'exécution jusqu'à ce qu'il se repositionne sur l'élément `xsl:if` de la feuille de style. Le débogueur est maintenant placé sur le deuxième nœud book dans le fichier books.xml.  
   
      Dans la fenêtre Espion1, la valeur `self::node()` devient le second nœud book. En examinant la valeur de l'élément price, vous pouvez constater que le prix est supérieur à la moyenne, donc la condition `xsl:if` ne doit pas se vérifier.  
   
-2.  Appuyez sur **F5** pour continuer.  
+2. Appuyez sur **F5** pour continuer.  
   
      Puisque le second nœud book ne répond pas à la condition `xsl:if`, il n'est pas ajouté à la fenêtre de sortie XSL. Le débogueur continue l'exécution jusqu'à ce qu'il se repositionne sur l'élément `xsl:if` de la feuille de style. Le débogueur est maintenant placé sur le troisième nœud `book` dans le fichier books.xml.  
   
      Dans la fenêtre Espion1, la valeur `self::node()` devient le troisième nœud book. En examinant la valeur de l'élément `price`, vous pouvez constater que le prix est inférieur à la moyenne, donc la condition `xsl:if` doit se vérifier.  
   
-3.  Appuyez sur **F5** pour continuer.  
+3. Appuyez sur **F5** pour continuer.  
   
      Puisque la condition `xsl:if` s'est vérifiée, le troisième livre est ajouté à la fenêtre de sortie XSL. Tous les livres du document XML ont été traités et le débogueur s'arrête.  
   

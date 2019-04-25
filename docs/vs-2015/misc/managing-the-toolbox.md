@@ -1,40 +1,35 @@
 ---
 title: La gestion de la boîte à outils | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- devlang-csharp
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: devlang-csharp
+ms.topic: conceptual
 helpviewer_keywords:
 - Toolbox [Visual Studio SDK], automatic tab selection
 - Toolbox [Visual Studio SDK], managing
 ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
-manager: douge
-ms.openlocfilehash: 227001e827057ffab4c851a985f7e36afaf0f351
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: ba4b166cc409dd2c50c258a9b82ee34c22e9b084
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49873420"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054766"
 ---
 # <a name="managing-the-toolbox"></a>Managing the Toolbox
 Le [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] permet à un VSPackage, tel qu’un éditeur ou un concepteur, de gérer l’appartenance et l’apparence de la **boîte à outils**.  
   
- De plus, la **boîte à outils** peut être gérée de manière automatisée. Pour plus d’informations sur la gestion d’une boîte à outils grâce à l’automatisation, consultez [How to: Control the Toolbox](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
+ De plus, la **boîte à outils** peut être gérée de manière automatisée. Pour plus d’informations sur la gestion d’une boîte à outils grâce à l’automatisation, consultez [Comment : Contrôler la boîte à outils](http://msdn.microsoft.com/library/c9d8a18a-d2bc-43d4-a803-601bfc6a6599).  
   
 ## <a name="automatic-toolbox-tab-selection"></a>Sélection automatique d’onglets dans la boîte à outils  
  Vous pouvez activer automatiquement un onglet ou une catégorie de la **boîte à outils** en fonction de l’éditeur ou du concepteur actuellement actif. Par exemple, si un concepteur de formulaires est activé, vous pouvez souhaiter sélectionner l’onglet **Tous les Windows Forms** .  
   
  Cette prise en charge est limitée aux éditeurs et concepteurs nécessitant ce qui suit :  
   
-1.  L’implémentation d’un objet usine pour fournir des instances de l’éditeur ou du concepteur. Pour plus d’informations sur l’implémentation d’un objet usine pour un concepteur ou un éditeur, consultez [Editor Factories](../extensibility/editor-factories.md).  
+1. L’implémentation d’un objet usine pour fournir des instances de l’éditeur ou du concepteur. Pour plus d’informations sur l’implémentation d’un objet usine pour un concepteur ou un éditeur, consultez [Editor Factories](../extensibility/editor-factories.md).  
   
-2.  Inscription de l’onglet de boîte à outils qui est activé automatiquement si l’éditeur ou le concepteur est ouvert.  
+2. Inscription de l’onglet de boîte à outils qui est activé automatiquement si l’éditeur ou le concepteur est ouvert.  
   
 ## <a name="controlling-the-toolbox"></a>Contrôle de la boîte à outils  
  En complément de la prise en charge de l’automatisation, le [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] fournit les interfaces suivantes qui permettent aux VSPackages un plus grand contrôle sur la gestion de la **boîte à outils** .  
@@ -48,7 +43,7 @@ Le [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] permet à un VSPackage, tel qu
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox5>||  
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox6>||  
   
- Plusieurs points importants sont à prendre en compte quand vous utilisez ces interfaces :  
+ Plusieurs points importants sont à prendre en compte quand vous utilisez ces interfaces :  
   
 - <xref:System.Drawing.Design.IToolboxService> est disponible uniquement pour les VSPackages MPF (Managed Package Framework).  
   

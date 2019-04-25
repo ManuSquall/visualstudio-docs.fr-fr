@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour instrumenter un service .NET et collecter des données chronologiques détaillées en utilisant la ligne de commande du profileur | Microsoft Docs
+title: 'Procédure : instrumenter un service .NET et collecter des données chronologiques détaillées en utilisant la ligne de commande du profileur | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,14 +9,14 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7931341080fbb2d2a98b695e5a864365c7bf6784
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 36d9f2abceb7daf0d9e4be72958b2bbc1fe86204
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766430"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080538"
 ---
-# <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Comment : instrumenter un service .NET et collecter des données de temporisation détaillées en utilisant la ligne de commande du profileur
+# <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Procédure : Instrumenter un Service .NET et les données de temporisation détaillées collecter à l’aide de la ligne de commande de Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette rubrique explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] pour instrumenter un service [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] et pour collecter des données chronologiques détaillées.  
@@ -76,7 +76,6 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                           À utiliser avec **/wincounter** uniquement. Spécifie le nombre de millisecondes écoulées entre les événements de collecte du compteur de performances Windows. La valeur par défaut est de 500 ms.                                                                            |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                              Spécifie l’événement du Suivi d’événements pour Windows (ETW) qui doit être collecté au cours du profilage. Les événements ETW sont collectés dans un fichier séparé (.etl).                                                                              |
 
-
 8. Démarrez le service à partir du Gestionnaire de contrôle des services Windows.  
 
 ## <a name="controlling-data-collection"></a>Contrôle de la collection de données  
@@ -84,7 +83,7 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
 
 #### <a name="to-start-and-stop-data-collection"></a>Pour démarrer et arrêter la collecte de données  
 
--   Les paires d’options **VSPerfCmd** suivantes permettent de démarrer et d’arrêter la collecte des données. Spécifiez chaque option sur une ligne de commande distincte. Vous pouvez activer et désactiver la collecte de données à plusieurs reprises.  
+- Les paires d’options **VSPerfCmd** suivantes permettent de démarrer et d’arrêter la collecte des données. Spécifiez chaque option sur une ligne de commande distincte. Vous pouvez activer et désactiver la collecte de données à plusieurs reprises.  
 
     |Option|Description|  
     |------------|-----------------|  
@@ -99,19 +98,19 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
 
 #### <a name="to-end-a-profiling-session"></a>Pour terminer une session de profilage  
 
-1.  Arrêtez le service à partir du Gestionnaire de contrôle des services.  
+1. Arrêtez le service à partir du Gestionnaire de contrôle des services.  
 
-2.  Fermez le profileur. Type :  
+2. Fermez le profileur. Type :  
 
      **VSPerfCmd /shutdown**  
 
-3.  Quand vous avez terminé le profilage, effacez les variables d’environnement de profilage. Type :  
+3. Quand vous avez terminé le profilage, effacez les variables d’environnement de profilage. Type :  
 
      **VSPerfClrEnv /globaloff**  
 
-4.  Remplacez le module instrumenté par l’original. Si nécessaire, reconfigurez le type de démarrage du service.  
+4. Remplacez le module instrumenté par l’original. Si nécessaire, reconfigurez le type de démarrage du service.  
 
-5.  Redémarrez l'ordinateur.  
+5. Redémarrez l'ordinateur.  
 
 ## <a name="see-also"></a>Voir aussi  
  [Profilage de services](../profiling/command-line-profiling-of-services.md)   

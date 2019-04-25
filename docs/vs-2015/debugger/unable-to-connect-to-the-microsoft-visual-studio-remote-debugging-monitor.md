@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e5e011ccd047551e7ea6cf1426b4118c3ad879f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f03936b9404339e3ad46e30ef92286da360323bb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950292"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085764"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Impossible de se connecter à l'ordinateur Microsoft Visual Studio Remote Debugging Monitor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ Ce message d’erreur apparaît lorsque vous entrez un nom non valide pour Visua
   
 ## <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
--   Assurez-vous que Visual Studio Remote Debugging Monitor est installé et exécuté sur l’ordinateur distant. Pour plus d’informations sur le débogueur distant et comment l’installer, consultez [le débogage à distance](../debugger/remote-debugging.md).  
+- Assurez-vous que Visual Studio Remote Debugging Monitor est installé et exécuté sur l’ordinateur distant. Pour plus d’informations sur le débogueur distant et comment l’installer, consultez [le débogage à distance](../debugger/remote-debugging.md).  
   
--   Dans Visual Studio, examinez les propriétés du projet (**Projet/Propriétés/Débogage**). Assurez-vous que le **nom du serveur distant** est correct.  
+- Dans Visual Studio, examinez les propriétés du projet (**Projet/Propriétés/Débogage**). Assurez-vous que le **nom du serveur distant** est correct.  
   
--   Vérifiez que l’ordinateur distant est accessible sur le réseau.  
+- Vérifiez que l’ordinateur distant est accessible sur le réseau.  
   
 ## <a name="the-remote-machine-is-not-reachable"></a>L’ordinateur distant n’est pas accessible  
  Essayez d’exécuter une commande [ping](https://technet.microsoft.com/library/ee624059\(v=ws.10\).aspx) sur l’ordinateur distant. S’il ne répond pas à la commande ping, les outils à distance ne pourront pas non plus se connecter. Essayez de redémarrer l’ordinateur distant et vérifiez qu’il est correctement configuré sur le réseau.  
@@ -58,13 +58,13 @@ Ce message d’erreur apparaît lorsque vous entrez un nom non valide pour Visua
 ## <a name="the-remote-debugger-is-running-under-a-different-user-account"></a>Le débogueur distant s’exécute sous un compte d’utilisateur différent  
  Pour résoudre ce problème, vous pouvez procéder de différentes façons :  
   
--   Vous pouvez arrêter le débogueur distant et le redémarrer avec le compte que vous utilisez sur l’ordinateur local.  
+- Vous pouvez arrêter le débogueur distant et le redémarrer avec le compte que vous utilisez sur l’ordinateur local.  
   
--   Vous pouvez démarrer le débogueur distant à partir de la ligne de commande à l’aide du paramètre **/allow \<nom_utilisateur>**  : `msvsmon /allow <username@computer>`  
+- Vous pouvez démarrer le débogueur distant à partir de la ligne de commande à l’aide du paramètre **/allow \<nom_utilisateur>**  : `msvsmon /allow <username@computer>`  
   
--   Vous pouvez ajouter l’utilisateur aux autorisations du débogueur distant (dans la fenêtre du débogueur distant, **Outils / Autorisations**).  
+- Vous pouvez ajouter l’utilisateur aux autorisations du débogueur distant (dans la fenêtre du débogueur distant, **Outils / Autorisations**).  
   
--   Si vous ne pouvez pas utiliser les méthodes dans les étapes précédentes, vous pouvez autoriser tous les utilisateurs à effectuer un débogage distant. Dans la fenêtre du débogueur distant, accédez à la boîte de dialogue **Outils /Options** . Quand vous sélectionnez   **Aucune authentification**, vous pouvez ensuite cocher **Permettre à tous les utilisateurs de déboguer**. Toutefois, utilisez uniquement cette option si vous n’avez pas d’autre choix ou que vous êtes sur un réseau privé.  
+- Si vous ne pouvez pas utiliser les méthodes dans les étapes précédentes, vous pouvez autoriser tous les utilisateurs à effectuer un débogage distant. Dans la fenêtre du débogueur distant, accédez à la boîte de dialogue **Outils /Options** . Quand vous sélectionnez   **Aucune authentification**, vous pouvez ensuite cocher **Permettre à tous les utilisateurs de déboguer**. Toutefois, utilisez uniquement cette option si vous n’avez pas d’autre choix ou que vous êtes sur un réseau privé.  
   
 ## <a name="the-firewall-on-the-remote-machine-doesnt-allow-incoming-connections-to-the-remote-debugger"></a>Le pare-feu sur l’ordinateur distant n’autorise pas les connexions entrantes au débogueur distant  
  Le pare-feu sur l’ordinateur Visual Studio et celui sur l’ordinateur distant doivent être configurés pour autoriser la communication entre Visual Studio et le débogueur distant. Pour plus d’informations sur les ports utilisés par le débogueur distant, consultez [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md). Pour plus d’informations sur la configuration du Pare-feu Windows, consultez [Configure the Windows Firewall for Remote Debugging](../debugger/configure-the-windows-firewall-for-remote-debugging.md).  

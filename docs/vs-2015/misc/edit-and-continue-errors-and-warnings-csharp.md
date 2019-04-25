@@ -61,12 +61,12 @@ ms.assetid: c0e12b0a-8009-4a4a-979f-c804a91a5d9b
 caps.latest.revision: 11
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 36d2665eef36e0e233cf02d241f550f3e701800f
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: f83f421203b25edbbccf767c0661ece709dd63c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58949557"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085084"
 ---
 # <a name="edit-and-continue-errors-and-warnings-c"></a>Erreurs et avertissements de Modifier &amp; Continuer (C#)
 Vous avez modifié une section de code qui n'est pas autorisée en Visual C# dans Modifier & Continuer.  
@@ -79,11 +79,11 @@ Vous avez modifié une section de code qui n'est pas autorisée en Visual C# dan
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
-1.  Dans le menu **Déboguer** , choisissez **Annuler** pour annuler la modification.  
+1. Dans le menu **Déboguer** , choisissez **Annuler** pour annuler la modification.  
   
      - ou -  
   
-2.  Arrêtez la session de débogage, procédez à vos modifications et démarrez une nouvelle session de débogage.  
+2. Arrêtez la session de débogage, procédez à vos modifications et démarrez une nouvelle session de débogage.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Modifier & Continuer (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)

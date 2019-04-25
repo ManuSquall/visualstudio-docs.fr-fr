@@ -19,12 +19,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fbbc745ae2d0a20ab14b3960e34182d7f4ed1865
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 67dc8e858a8ee87ee9e1fef9d99bf24ea4994960
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949637"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053206"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Procédure : Signer des fichiers d’installation avec SignTool.exe (ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,23 +37,23 @@ Vous pouvez utiliser SignTool.exe pour signer un programme d'installation (setup
   
 ### <a name="to-generate-an-unsigned-setup-program-and-sign-later"></a>Pour générer un programme d'installation non signé et le signer ultérieurement  
   
-1.  Sur l'ordinateur de développement, installez le certificat avec lequel vous souhaitez signer les manifestes.  
+1. Sur l'ordinateur de développement, installez le certificat avec lequel vous souhaitez signer les manifestes.  
   
-2.  Sélectionnez le projet dans **l’Explorateur de solutions**.  
+2. Sélectionnez le projet dans **l’Explorateur de solutions**.  
   
-3.  Dans le menu **Projet**, cliquez sur **Propriétés** de *NomProjet*.  
+3. Dans le menu **Projet**, cliquez sur **Propriétés** de *NomProjet*.  
   
-4.  Dans la page **Connexion**, décochez **Signer les manifestes ClickOnce**.  
+4. Dans la page **Connexion**, décochez **Signer les manifestes ClickOnce**.  
   
-5.  Dans la page **Publier**, cliquez sur **Composants requis**.  
+5. Dans la page **Publier**, cliquez sur **Composants requis**.  
   
-6.  Vérifiez que tous les composants requis sont sélectionnés, puis cliquez sur **OK**.  
+6. Vérifiez que tous les composants requis sont sélectionnés, puis cliquez sur **OK**.  
   
-7.  Dans la page **Publier**, vérifiez les paramètres de publication, puis cliquez sur **Publier maintenant**.  
+7. Dans la page **Publier**, vérifiez les paramètres de publication, puis cliquez sur **Publier maintenant**.  
   
      La solution publie le manifeste d'application non signé, le manifeste de déploiement non signé, les fichiers spécifiques à la version et le programme d'installation non signé à l'emplacement du dossier de publication.  
   
-8.  Dans la page **Publier**, cliquez sur **Composants requis**.  
+8. Dans la page **Publier**, cliquez sur **Composants requis**.  
   
 9. Dans la boîte de dialogue **Composants requis**, vérifiez que la case **Créer un programme d’installation des composants requis** est cochée.  
   

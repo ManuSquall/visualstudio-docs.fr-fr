@@ -10,12 +10,12 @@ ms.assetid: 54846779-8290-48de-90ab-81011559d9a5
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 697565600ef37024abde3acd8f2092c690f31e32
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8d22e61d88b5f6e3959a369f6957efbc824384b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953833"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042039"
 ---
 # <a name="how-to-register-editor-file-types"></a>Procédure : Inscrire des Types de fichiers de l’éditeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Le moyen le plus simple pour inscrire les types de fichiers de l’éditeur est 
   
 #### <a name="to-register-editor-file-types-using-mpf-classes"></a>Pour inscrire des types de fichiers de l’éditeur à l’aide des classes MPF  
   
-1.  Fournir la <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> classe avec les paramètres appropriés pour votre éditeur dans la classe de votre VSPackage.  
+1. Fournir la <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> classe avec les paramètres appropriés pour votre éditeur dans la classe de votre VSPackage.  
   
     ```  
     [Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute(typeof(EditorFactory), ".Sample", 32,   
@@ -43,7 +43,7 @@ Le moyen le plus simple pour inscrire les types de fichiers de l’éditeur est 
   
      `NameResourceID` est défini dans le fichier Resources.h du projet BasicEditorUI et identifie l’éditeur en tant que « Mes éditeur ».  
   
-2.  Remplacez la méthode <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> .  
+2. Remplacez la méthode <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> .  
   
      Dans votre implémentation de la <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> méthode, appelez le <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> méthode et passe l’instance de votre fabrique d’éditeur comme illustré ci-dessous.  
   
@@ -61,7 +61,7 @@ Le moyen le plus simple pour inscrire les types de fichiers de l’éditeur est 
   
      Cette étape inscrit la fabrique d’éditeur et les extensions de fichier de l’éditeur.  
   
-3.  Annuler l’inscription de fabriques d’éditeur.  
+3. Annuler l’inscription de fabriques d’éditeur.  
   
      Fabriques d’éditeur sont automatiquement annulées lorsque le VSPackage est supprimé. Si l’objet de fabrique d’éditeur implémente le <xref:System.IDisposable> interface, son `Dispose` méthode est appelée une fois la fabrique a été annulée avec [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
@@ -70,7 +70,7 @@ Le moyen le plus simple pour inscrire les types de fichiers de l’éditeur est 
   
 #### <a name="to-register-editor-file-types-using-a-registry-script"></a>Pour inscrire des types de fichiers de l’éditeur à l’aide d’un script de Registre  
   
-1.  Dans votre script de Registre, définissez la fabrique d’éditeur et de la fabrique d’éditeur chaîne GUID comme indiqué dans la `GUID_BscEditorFactory` section du script de Registre suivant. En outre, définissez l’extension et la priorité de l’extension de l’éditeur :  
+1. Dans votre script de Registre, définissez la fabrique d’éditeur et de la fabrique d’éditeur chaîne GUID comme indiqué dans la `GUID_BscEditorFactory` section du script de Registre suivant. En outre, définissez l’extension et la priorité de l’extension de l’éditeur :  
   
     ```  
   
@@ -92,9 +92,9 @@ Le moyen le plus simple pour inscrire les types de fichiers de l’éditeur est 
   
      L’extension de fichier de l’éditeur dans cet exemple est identifiée comme « .rtf » et sa priorité est « 50 ». Les chaînes GUID sont définies dans le fichier Resource.h de l’exemple de projet BscEdit.  
   
-2.  Inscrivez le VSPackage.  
+2. Inscrivez le VSPackage.  
   
-3.  Inscrire la fabrique d’éditeur.  
+3. Inscrire la fabrique d’éditeur.  
   
      La fabrique d’éditeur est inscrit dans le <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A> implémentation.  
   

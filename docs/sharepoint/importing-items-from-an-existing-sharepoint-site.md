@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4a3fa4013a5fa9b3fb6ec17ee07277f5e4b7d996
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 206cd77ae3c648add62b17c86a4966e6174c345c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645145"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082579"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Importer des éléments à partir d’un site SharePoint existant
   Le modèle de projet Importer le package de solution SharePoint vous permet de réutiliser des éléments tels que des types de contenu et des champs à partir de sites SharePoint existants dans une nouvelle solution SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Vous pouvez exécuter la plupart des solutions importées sans aucune modification, mais il existe certaines restrictions et complications à prendre en compte, en particulier si vous modifiez des éléments après les avoir importés.
@@ -119,9 +119,9 @@ ms.locfileid: "56645145"
 
  Quand cette erreur se produit, l’élément n’est pas créé. Ce problème se produit le plus souvent avec les modules importés. Pour l’éviter, procédez comme suit :
 
--   Utilisez des noms courts pour vos projets quand vous les entrez dans la boîte de dialogue **Ajouter un nouveau projet** .
+- Utilisez des noms courts pour vos projets quand vous les entrez dans la boîte de dialogue **Ajouter un nouveau projet** .
 
--   Créez le projet dans un emplacement le plus près possible du dossier racine, afin de raccourcir le chemin d’accès.
+- Créez le projet dans un emplacement le plus près possible du dossier racine, afin de raccourcir le chemin d’accès.
 
 ## <a name="the-sharepointproductversion-attribute"></a>L’attribut SharePointProductVersion
  Si vous importez une solution créée dans une version antérieure de SharePoint telle que [!INCLUDE[winshare3](../sharepoint/includes/winshare3-md.md)] ou [!INCLUDE[offshare7](../sharepoint/includes/offshare7-md.md)], vous devez soit remplacer la valeur de l’attribut SharePointProductVersion dans le manifeste du package par 12.0, soit insérer un contrôle de gestionnaire de scripts dans toutes les pages web importées et conserver la valeur 14.0 pour l’attribut SharePointProductVersion. Autrement, les formulaires web importés ne s’afficheront pas dans SharePoint.

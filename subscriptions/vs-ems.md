@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Découvrez l’avantage Enterprise Mobility + Security inclus dans votre abonnement Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: b1d3aa39f4d3f53d10bcc692da96bfe6c50b981d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 917f4e6c2b80c2cb0b154d58effd8016f54740c3
+ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841193"
+ms.lasthandoff: 04/08/2019
+ms.locfileid: "59232656"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Avantage EMS (Enterprise Mobility + Security) dans les abonnements Visual Studio
 
@@ -37,7 +37,7 @@ Pour utiliser EMS, vous devez créer un compte ou vous connecter à l’aide d�
 
 4. Créez votre identifiant utilisateur et votre mot de passe.  Cliquez sur **Créer mon compte** pour continuer.
    > [!div class="mx-imgBorder"]
-   > ![Avantage EMS, Créer un UserID](_img/vs-ems/vs-ems-userID-cropped.png)
+   > ![Avantage EMS, Créer un identifiant utilisateur](_img/vs-ems/vs-ems-userID-cropped.png)
 
 5. Ensuite, entrez un numéro de téléphone pour recevoir un code de vérification par téléphone ou SMS.  Entrez le code, puis cliquez sur **Suivant**.
    > [!div class="mx-imgBorder"]
@@ -73,6 +73,6 @@ Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à
 
 ## <a name="support-resources"></a>Ressources de support
 -  Besoin d'aide avec EMS ?  Consultez la [documentation en ligne sur EMS](/enterprise-mobility-security/).
--  Pour obtenir un support technique avec n’importe quel composant d’EMS, accédez au [FAQ du support EMS](https://docs.microsoft.com/en-us/enterprise-mobility-security/solutions/ems-support-faq) pour trouver la réponse à votre question.
+-  Pour obtenir un support technique avec n’importe quel composant d’EMS, accédez au [FAQ du support EMS](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-support-faq) pour trouver la réponse à votre question.
 -  Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
 -  Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).

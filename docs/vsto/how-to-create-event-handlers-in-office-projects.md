@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4bdc9b065f3defaf66564d0731408551ded540de
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 577b12be220e2a695609db6c508d7aaf69c79f92
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598115"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054519"
 ---
 # <a name="how-to-create-event-handlers-in-office-projects"></a>Procédure : Créer des gestionnaires d’événements dans les projets Office
   Il existe plusieurs façons de créer des gestionnaires d’événements en Visual Basic et c#. En mode conception, vous pouvez créer des gestionnaires d’événements pour les contrôles de la valeur par défaut en double-cliquant sur le contrôle, ou utiliser le volet événements de la **propriétés** fenêtre pour créer des gestionnaires pour tout événement sur le contrôle. Toutefois, si vous êtes en mode Code, vous ne souhaitez ne peut-être pas basculer en mode Design pour créer un gestionnaire d’événements.
@@ -31,22 +31,22 @@ ms.locfileid: "56598115"
 
 ### <a name="to-create-an-event-handler-in-visual-basic"></a>Pour créer un gestionnaire d’événements en Visual Basic
 
-1.  À partir de la **nom de la classe** liste déroulante en haut de l’éditeur de Code, sélectionnez l’objet que vous souhaitez créer un gestionnaire d’événements.
+1. À partir de la **nom de la classe** liste déroulante en haut de l’éditeur de Code, sélectionnez l’objet que vous souhaitez créer un gestionnaire d’événements.
 
     > [!NOTE]
     >  Si vous souhaitez créer des gestionnaires d’événements pour `ThisDocument` ou `ThisWorkbook`, vous devez sélectionner **(événements ThisDocument)** ou **(événements ThisWorkbook)** dans le **nom de la classe**liste déroulante
 
-2.  À partir de la **nom de la méthode** liste déroulante en haut de l’éditeur de Code, sélectionnez l’événement.
+2. À partir de la **nom de la méthode** liste déroulante en haut de l’éditeur de Code, sélectionnez l’événement.
 
      Visual Studio crée le Gestionnaire d’événements et déplace le point d’insertion vers le Gestionnaire d’événements nouvellement créé. Si le Gestionnaire d’événements existe déjà, le point d’insertion se déplace vers le Gestionnaire d’événements existant.
 
-### <a name="to-create-an-event-handler-in-c"></a>Pour créer un gestionnaire d’événements en c#
+### <a name="to-create-an-event-handler-in-c"></a>Pour créer un gestionnaire d’événements en C\#
 
-1.  Créer le délégué d’événement dans le **démarrage** événement de la classe en tapant le nom d’événement qualifié suivi d’un espace, puis en tapant **+=** par la suite sans espace. Exemple :
+1. Créer le délégué d’événement dans le **démarrage** événement de la classe en tapant le nom d’événement qualifié suivi d’un espace, puis en tapant **+=** par la suite sans espace. Exemple :
 
      `this.<object name>.<event name> +=`
 
-2.  À la fin de la ligne de code, appuyez deux fois sur la touche TAB.
+2. À la fin de la ligne de code, appuyez deux fois sur la touche TAB.
 
      Visual Studio automatiquement termine à la ligne de code crée le Gestionnaire d’événements et déplace le point d’insertion vers le Gestionnaire d’événements nouvellement créé.
 

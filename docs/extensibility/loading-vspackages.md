@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9878fea72c83cd6a466f2743f44d3eddca0bdba7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: ce0f09c1749621838729e1e4f64feb3ca8b07628
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702055"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117562"
 ---
 # <a name="load-vspackages"></a>Charger des VSPackages
 Les VSPackages sont chargés dans Visual Studio uniquement lorsque leur fonctionnalité est requise. Par exemple, un VSPackage est chargé lorsque Visual Studio utilise une fabrique de projet ou un service qui implémente le VSPackage. Cette fonctionnalité est appelée chargement différé, ce qui est utilisé chaque fois que possible améliorer les performances.
@@ -28,7 +28,7 @@ Les VSPackages sont chargés dans Visual Studio uniquement lorsque leur fonction
 
 ### <a name="autoload-a-vspackage-in-a-specific-context"></a>Charger automatiquement un VSPackage dans un contexte spécifique
 
--   Ajouter le `ProvideAutoLoad` d’attribut pour les attributs de package Visual Studio :
+- Ajouter le `ProvideAutoLoad` d’attribut pour les attributs de package Visual Studio :
 
     ```csharp
     [DefaultRegistryRoot(@"Software\Microsoft\VisualStudio\14.0")]
@@ -41,11 +41,11 @@ Les VSPackages sont chargés dans Visual Studio uniquement lorsque leur fonction
 
      Afficher les champs énumérées de <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> pour obtenir la liste des contextes d’interface utilisateur et leurs valeurs GUID.
 
--   Définir un point d’arrêt dans le <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> (méthode).
+- Définir un point d’arrêt dans le <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> (méthode).
 
--   Générer le VSPackage et démarrer le débogage.
+- Générer le VSPackage et démarrer le débogage.
 
--   Chargez une solution, ou créez-en un.
+- Chargez une solution, ou créez-en un.
 
      Le package Visual Studio charge et s’arrête au point d’arrêt.
 
@@ -54,7 +54,7 @@ Les VSPackages sont chargés dans Visual Studio uniquement lorsque leur fonction
 
  Vous pouvez utiliser la <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackage%2A> méthode pour forcer un VSPackage à charger.
 
--   Insérez ce code dans le <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> méthode du VSPackage qui force une autre VSPackage à charger :
+- Insérez ce code dans le <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> méthode du VSPackage qui force une autre VSPackage à charger :
 
     ```csharp
     IVsShell shell = GetService(typeof(SVsShell)) as IVsShell;

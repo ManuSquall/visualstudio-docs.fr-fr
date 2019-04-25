@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1ca823598f490703cc1b370d1dccfe806594a630
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 309dbfcac8e5c4c38e65f8901c699dc2fa51c7a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54771161"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104174"
 ---
 # <a name="run-unit-tests-for-store-apps-in-visual-studio"></a>Exécuter des tests unitaires pour les applications du Windows Store dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,11 +25,11 @@ Cette rubrique décrit comment exécuter des tests unitaires à l'aide de l'Expl
 >  Les rubriques de cette section décrivent les fonctionnalités de Visual Studio Express pour Windows 8. Visual Studio Community, Enterprise et Professional fournissent des fonctionnalités supplémentaires pour les tests unitaires.
 >
 > - Utilisez n'importe quelle infrastructure de tests unitaires tierce ou open source qui a créé un adaptateur complémentaire pour l'Explorateur de tests Microsoft. Vous pouvez également analyser et afficher les informations de couverture du code pour vos tests.
->   -   Exécutez vos tests après chaque build. Vous pouvez également utiliser Microsoft Fakes, une infrastructure d'isolement pour le code managé, pour concentrer vos tests sur votre propre code en remplaçant le code de test pour les fonctionnalités du système et les fonctionnalités tierces.
+>   - Exécutez vos tests après chaque build. Vous pouvez également utiliser Microsoft Fakes, une infrastructure d'isolement pour le code managé, pour concentrer vos tests sur votre propre code en remplaçant le code de test pour les fonctionnalités du système et les fonctionnalités tierces.
 >
 >   Pour plus d’informations, consultez [Tests unitaires sur votre code](../test/unit-test-your-code.md) dans MSDN Library.
 
-##  <a name="BKMK_In_this_topic"></a> Dans cette rubrique
+## <a name="BKMK_In_this_topic"></a> Dans cette rubrique
  [Infrastructures de tests unitaires et projets de test](#BKMK_Unit_test_frameworks_and_test_projects)
 
  [Exécution des tests dans l’Explorateur de tests](#BKMK_Running_tests_in_Test_Explorer)
@@ -50,10 +50,10 @@ Cette rubrique décrit comment exécuter des tests unitaires à l'aide de l'Expl
 
   [Débogage de tests unitaires](#BKMK_Debugging_unit_tests)
 
-##  <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> Frameworks de tests unitaires et projets de test
+## <a name="BKMK_Unit_test_frameworks_and_test_projects"></a> Frameworks de tests unitaires et projets de test
  Visual Studio Express pour les applications du Windows Store comprend les frameworks de tests unitaires Microsoft pour le code C++ natif et managé. L'Explorateur de tests peut exécuter des tests à partir de plusieurs projets de test dans une solution et à partir de classes de test qui font partie des projets de code de production. Les projets de test peuvent être n'importe quelle combinaison des frameworks de tests unitaires Visual C++ ou Visual C# et Visual Basic. Quand le code testé est écrit pour le .NET Framework, le projet de test peut être écrit dans n'importe quel langage du .NET Framework, quel que soit le langage du code cible. Les projets de code C/C++ natifs doivent être testés à l'aide d'un framework de tests unitaires C++.
 
-##  <a name="BKMK_Running_tests_in_Test_Explorer"></a> Exécution des tests dans l’Explorateur de tests
+## <a name="BKMK_Running_tests_in_Test_Explorer"></a> Exécution des tests dans l’Explorateur de tests
  Quand vous générez le projet de test, les tests s’affichent dans l’explorateur de tests. Si l’explorateur de tests n’est pas visible, sélectionnez **Test** dans le menu Visual Studio et choisissez **Fenêtres**, puis **Explorateur de tests**.
 
  ![Explorateur de tests unitaires](../ide/media/ute-failedpassednotrunsummary.png "UTE_FailedPassedNotRunSummary")
@@ -64,7 +64,7 @@ Cette rubrique décrit comment exécuter des tests unitaires à l'aide de l'Expl
 
  ![Exécuter des tests à partir de la barre d’outils de l’explorateur de tests](../test/media/ute-toolbar.png "UTE_ToolBar")
 
-###  <a name="BKMK_Running_tests"></a> Exécution de tests
+### <a name="BKMK_Running_tests"></a> Exécution de tests
  Vous pouvez exécuter tous les tests dans la solution, tous les tests dans un groupe, ou un ensemble de tests que vous sélectionnez. Effectuez l’une des opérations suivantes :
 
 - Pour exécuter tous les tests dans une solution, choisissez **Exécuter tout**.
@@ -75,10 +75,10 @@ Cette rubrique décrit comment exécuter des tests unitaires à l'aide de l'Expl
 
   La barre Réussite/Échec en haut de la fenêtre Explorateur de tests est animée pendant l'exécution des tests. À la fin de la série de tests, la barre Réussite/Échec devient verte si tous les tests ont réussi ou rouge si un test a échoué.
 
-##  <a name="BKMK_Viewing_test_results"></a> Affichage des résultats de tests
+## <a name="BKMK_Viewing_test_results"></a> Affichage des résultats de tests
  Tandis que vous exécutez, écrivez et réexécutez vos tests, l'Explorateur de tests affiche les résultats dans les groupes **Échecs de tests**, **Tests réussis**, **Tests ignorés** et **Tests non exécutés**. Le volet d'informations en bas de l'Explorateur de tests affiche un résumé de la série de tests.
 
-###  <a name="BKMK_Viewing_test_details"></a> Affichage des détails de tests
+### <a name="BKMK_Viewing_test_details"></a> Affichage des détails de tests
  Pour afficher les détails d'un test individuel, sélectionnez le test.
 
  Le volet d'informations de test affiche les informations suivantes :
@@ -95,24 +95,24 @@ Cette rubrique décrit comment exécuter des tests unitaires à l'aide de l'Expl
 
 - La trace de la pile au moment de l'échec du test.
 
-###  <a name="BKMK_Viewing_the_source_code_of_a_test_method"></a> Affichage du code source d’une méthode de test
+### <a name="BKMK_Viewing_the_source_code_of_a_test_method"></a> Affichage du code source d’une méthode de test
  Pour afficher le code source pour une méthode de test dans l’éditeur Visual Studio, sélectionnez le test, puis choisissez **Ouvrir un test** dans le menu contextuel (clavier : F12).
 
-##  <a name="BKMK_Organizing_the_test_list"></a> Organisation de la liste de tests
+## <a name="BKMK_Organizing_the_test_list"></a> Organisation de la liste de tests
 
-###  <a name="BKMK_Grouping_tests"></a> Regroupement de tests
+### <a name="BKMK_Grouping_tests"></a> Regroupement de tests
  Par défaut, l’Explorateur de tests affiche vos tests en tant que nœuds enfants de **Tests ayant échoué**, **Tests réussis**, **Tests ignorés** et **Tests non exécutés**.
 
 |||
 |-|-|
 |![Bouton du groupe d’explorateur de tests](../test/media/ute-groupby-btn.png "UTE_GroupBy_btn")|Pour regrouper vos tests d’après la durée nécessaire à leur exécution, ouvrez la liste **Grouper par** et choisissez **Durée**. Choisissez **Résultat du test** pour basculer vers le regroupement d’origine.|
 
-###  <a name="BKMK_Searching_and_filtering_the_test_list"></a> Recherche et filtrage de la liste de tests
+### <a name="BKMK_Searching_and_filtering_the_test_list"></a> Recherche et filtrage de la liste de tests
  Quand vous avez un grand nombre de tests, vous pouvez taper du texte dans la zone de recherche de l'Explorateur de tests pour filtrer la liste selon la chaîne spécifiée. Vous pouvez limiter votre filtre à certains types de chaînes en choisissant dans la liste des filtres avant d'entrer la chaîne de recherche.
 
  ![Rechercher des catégories de filtre](../test/media/ute-searchfilter.png "UTE_SearchFilter")
 
-##  <a name="BKMK_Debugging_unit_tests"></a> Débogage de tests unitaires
+## <a name="BKMK_Debugging_unit_tests"></a> Débogage de tests unitaires
  Vous pouvez utiliser l'Explorateur de tests pour démarrer une session de débogage de vos tests. L'exécution pas à pas de votre code avec le débogueur Visual Studio vous conduit de manière transparente à des allers et retours entre les tests unitaires et le projet testé. Pour démarrer le débogage :
 
 1. Dans l’éditeur Visual Studio, définissez un point d’arrêt dans une ou plusieurs méthodes de test que vous souhaitez déboguer.

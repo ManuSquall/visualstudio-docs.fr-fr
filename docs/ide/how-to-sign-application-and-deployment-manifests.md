@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 33afb83fdf680ef2eb1dd51e7b0e4dca8b77c3cb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 00534f5ff415ba836d8c2d581e599669941fda6f
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916881"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790847"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Procédure : Signer des manifestes d’application et de déploiement
 
@@ -35,11 +35,11 @@ Si vous souhaitez publier une application à l’aide du déploiement ClickOnce,
  Pour plus d’informations sur la création des fichiers de clés, consultez [Guide pratique pour créer une paire de clés publique/privée](/dotnet/framework/app-domains/how-to-create-a-public-private-key-pair).
 
 > [!NOTE]
-> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] prend uniquement en charge les fichiers de clés PFX (Personal Information Exchange) ayant l’extension *.pfx*. Toutefois, vous pouvez sélectionner d’autres types de certificats à partir du magasin de certificats Windows de l’utilisateur actuel en cliquant sur **Sélectionner dans Store** dans la page **Signature** des propriétés du projet.
+> Visual Studio prend uniquement en charge les fichiers de clés PFX (Personal Information Exchange) ayant l’extension *.pfx*. Toutefois, vous pouvez sélectionner d’autres types de certificats à partir du magasin de certificats Windows de l’utilisateur actuel en cliquant sur **Sélectionner dans Store** dans la page **Signature** des propriétés du projet.
 
-## <a name="to-sign-application-and-deployment-manifests-using-a-certificate"></a>Pour signer des manifestes d’application et de déploiement à l’aide d’un certificat
+## <a name="sign-using-a-certificate"></a>Signer en utilisant un certificat
 
-1.  Accédez à la fenêtre Propriétés du projet (cliquez avec le bouton droit sur le nœud de projet dans **Explorateur de solutions**, sélectionnez **Propriétés** ou tapez **propriétés de projet** dans la fenêtre **Lancement rapide**, ou appuyez sur **Alt**+**Entrée** dans **Explorateur de solutions**). Sous l’onglet **Signature**, cochez la case **Signer les manifestes ClickOnce**.
+1.  Accédez à la fenêtre des propriétés du projet (cliquez avec le bouton droit sur le nœud de projet dans l’**Explorateur de solutions** et sélectionnez **Propriétés**). Sous l’onglet **Signature**, cochez la case **Signer les manifestes ClickOnce**.
 
 2.  Cliquez sur le bouton **Sélectionner dans Store**.
 
@@ -52,7 +52,7 @@ Si vous souhaitez publier une application à l’aide du déploiement ClickOnce,
 
 4.  Vous pouvez aussi spécifier l’adresse d’un serveur d’horodatage dans la zone de texte **URL du serveur d’horodatage**. Ce serveur fournit un horodatage spécifiant quand le manifeste a été signé.
 
-## <a name="to-sign-application-and-deployment-manifests-using-an-existing-key-file"></a>Pour signer des manifestes d’application et de déploiement à l’aide d’un fichier de clé existant
+## <a name="sign-using-an-existing-key-file"></a>Signer en utilisant un fichier de clé existant
 
 1.  Dans la page **Signature**, cochez la case **Signer les manifestes ClickOnce**.
 
@@ -69,7 +69,7 @@ Si vous souhaitez publier une application à l’aide du déploiement ClickOnce,
 
 4.  Entrez le mot de passe pour accéder au fichier de clé, puis appuyez sur **Entrée**.
 
-## <a name="to-sign-application-and-deployment-manifests-using-a-test-certificate"></a>Pour signer des manifestes d’application et de déploiement à l’aide d’un certificat de test
+## <a name="sign-using-a-test-certificate"></a>Signer en utilisant un certificat de test
 
 1.  Dans la page **Signature**, cochez la case **Signer les manifestes ClickOnce**.
 

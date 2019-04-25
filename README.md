@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 09d58e682424e09f0e8d5c37c1c6e0b8839495d4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62422083"
+---
 # <a name="visual-studio-documentation"></a>Documentation de Visual Studio
 
 Bienvenue ! Ce dépôt contient des fichiers sources pour la documentation technique de Visual Studio. Les rubriques sont publiées sur [docs.microsoft.com](https://docs.microsoft.com/visualstudio).

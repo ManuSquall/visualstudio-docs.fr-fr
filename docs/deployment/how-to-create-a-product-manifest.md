@@ -1,5 +1,5 @@
 ---
-title: 'Comment : créer un manifeste de produit | Microsoft Docs'
+title: 'Procédure : Créer un manifeste de produit | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,27 +18,27 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48bed4a357809a672b1fc80063ca6743670cbb42
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
-ms.translationtype: MTE95
+ms.openlocfilehash: 68f3006104b50876f6d2716ff4eb1efe0a705284
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568099"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057405"
 ---
-# <a name="how-to-create-a-product-manifest"></a>Guide pratique pour créer un manifeste de produit
+# <a name="how-to-create-a-product-manifest"></a>Procédure : Créer un manifeste de produit
 Pour déployer les composants requis pour votre application, vous pouvez créer un package de programme d’amorçage. Un package de programme d’amorçage contient un fichier de manifeste de produit unique, mais un manifeste de package pour chacun des paramètres régionaux. Le manifeste du package contient des aspects spécifiques à la localisation de votre package. Cela inclut des chaînes, des contrats de licence utilisateur final et les modules linguistiques.
 
- Pour plus d’informations sur les manifestes de package, consultez [Comment : créer un manifeste de package](../deployment/how-to-create-a-package-manifest.md).
+ Pour plus d’informations sur les manifestes de package, consultez [Comment : Créer un manifeste de package](../deployment/how-to-create-a-package-manifest.md).
 
 ## <a name="create-the-product-manifest"></a>Créer le manifeste de produit
 
 #### <a name="to-create-the-product-manifest"></a>Pour créer le manifeste de produit
 
-1.  Créez un répertoire pour le package de programme d’amorçage. Cet exemple utilise C:\package.
+1. Créez un répertoire pour le package de programme d’amorçage. Cet exemple utilise C:\package.
 
-2.  Dans Visual Studio, créez un nouveau fichier XML appelé *product.xml*et enregistrez-le dans le *C:\package* dossier.
+2. Dans Visual Studio, créez un nouveau fichier XML appelé *product.xml*et enregistrez-le dans le *C:\package* dossier.
 
-3.  Ajoutez le code XML suivant pour décrire le code XML de l’espace de noms et de produit pour le package. Remplacez le code de produit par un identificateur unique pour le package.
+3. Ajoutez le code XML suivant pour décrire le code XML de l’espace de noms et de produit pour le package. Remplacez le code de produit par un identificateur unique pour le package.
 
     ```xml
     <Product
@@ -46,7 +46,7 @@ Pour déployer les composants requis pour votre application, vous pouvez créer 
     ProductCode="Custom.Bootstrapper.Package">
     ```
 
-4.  Ajoutez du code XML pour spécifier que le package a une dépendance. Cet exemple utilise une dépendance sur Microsoft Windows Installer 3.1.
+4. Ajoutez du code XML pour spécifier que le package a une dépendance. Cet exemple utilise une dépendance sur Microsoft Windows Installer 3.1.
 
     ```xml
     <RelatedProducts>
@@ -54,7 +54,7 @@ Pour déployer les composants requis pour votre application, vous pouvez créer 
       </RelatedProducts>
     ```
 
-5.  Ajoutez le code XML pour répertorier tous les fichiers qui se trouvent dans le package de programme d’amorçage. Cet exemple utilise le nom de fichier de package *CorePackage.msi*.
+5. Ajoutez le code XML pour répertorier tous les fichiers qui se trouvent dans le package de programme d’amorçage. Cet exemple utilise le nom de fichier de package *CorePackage.msi*.
 
     ```xml
     <PackageFiles>
@@ -62,16 +62,16 @@ Pour déployer les composants requis pour votre application, vous pouvez créer 
     </PackageFiles>
     ```
 
-6.  Copier ou déplacer le *CorePackage.msi* de fichiers à la *C:\package* dossier.
+6. Copier ou déplacer le *CorePackage.msi* de fichiers à la *C:\package* dossier.
 
-7.  Ajoutez du code XML pour installer le package à l’aide des commandes de programme d’amorçage. Le programme d’amorçage ajoute automatiquement le **/qn** indicateur pour le *.msi* fichier, ce qui va installer en mode silencieux. Si le fichier est un *.exe*, le programme d’amorçage exécute la *.exe* fichier à l’aide de l’interpréteur de commandes. Le code XML suivant ne montre aucun argument de *CorePackage.msi*, mais vous pouvez placer l’argument de ligne de commande dans le `Arguments` attribut.
+7. Ajoutez du code XML pour installer le package à l’aide des commandes de programme d’amorçage. Le programme d’amorçage ajoute automatiquement le **/qn** indicateur pour le *.msi* fichier, ce qui va installer en mode silencieux. Si le fichier est un *.exe*, le programme d’amorçage exécute la *.exe* fichier à l’aide de l’interpréteur de commandes. Le code XML suivant ne montre aucun argument de *CorePackage.msi*, mais vous pouvez placer l’argument de ligne de commande dans le `Arguments` attribut.
 
     ```xml
     <Commands>
         <Command PackageFile="CorePackage.msi" Arguments="">
     ```
 
-8.  Ajoutez le code XML suivant pour vérifier si ce package du programme d’amorçage est installé. Remplacez le code de produit par le GUID pour le composant redistribuable.
+8. Ajoutez le code XML suivant pour vérifier si ce package du programme d’amorçage est installé. Remplacez le code de produit par le GUID pour le composant redistribuable.
 
     ```xml
     <InstallChecks>

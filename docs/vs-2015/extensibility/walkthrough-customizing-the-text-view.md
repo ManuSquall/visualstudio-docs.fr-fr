@@ -10,40 +10,40 @@ ms.assetid: 32d32ac8-22ff-4de7-af69-bd46ec4ad9bf
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f141fb6a29a012dbd185c258610c3e4b1d362629
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e96bb177d3cfa90b2c80304eabfd93d1bea76d5b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952741"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117315"
 ---
 # <a name="walkthrough-customizing-the-text-view"></a>Procédure pas à pas : Personnalisation de l’affichage du texte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez personnaliser un affichage de texte en modifiant les propriétés suivantes dans sa table de format de l’éditeur :  
   
--   Marge des indicateurs  
+- Marge des indicateurs  
   
--   Signe d’insertion  
+- Signe d’insertion  
   
--   Remplacer le signe insertion  
+- Remplacer le signe insertion  
   
--   Texte sélectionné  
+- Texte sélectionné  
   
--   Texte sélectionné inactif (autrement dit, les texte sélectionné qui a perdu le focus)  
+- Texte sélectionné inactif (autrement dit, les texte sélectionné qui a perdu le focus)  
   
--   Espace blanc visible  
+- Espace blanc visible  
   
 ## <a name="prerequisites"></a>Prérequis  
  À partir de Visual Studio 2015, vous n’installez pas le Kit de développement logiciel Visual Studio à partir du centre de téléchargement. Il est inclus comme fonctionnalité facultative dans le programme d’installation de Visual Studio. Vous pouvez également installer le kit SDK VS par la suite. Pour plus d’informations, consultez [l’installation de Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ## <a name="creating-a-mef-project"></a>Création d’un projet MEF  
   
-1.  Créez un projet c# VSIX. (Dans le **nouveau projet** boîte de dialogue, sélectionnez **Visual c# / extensibilité**, puis **projet VSIX**.) Nommez la solution `ViewPropertyTest`.  
+1. Créez un projet c# VSIX. (Dans le **nouveau projet** boîte de dialogue, sélectionnez **Visual c# / extensibilité**, puis **projet VSIX**.) Nommez la solution `ViewPropertyTest`.  
   
-2.  Ajouter un modèle d’élément de classifieur d’éditeur au projet. Pour plus d’informations, consultez [création d’une Extension avec un éditeur de modèle d’élément](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
+2. Ajouter un modèle d’élément de classifieur d’éditeur au projet. Pour plus d’informations, consultez [création d’une Extension avec un éditeur de modèle d’élément](../extensibility/creating-an-extension-with-an-editor-item-template.md).  
   
-3.  Supprimez les fichiers de classe existants.  
+3. Supprimez les fichiers de classe existants.  
   
 ## <a name="defining-the-content-type"></a>La définition du Type de contenu  
   
@@ -70,28 +70,28 @@ Vous pouvez personnaliser un affichage de texte en modifiant les propriétés su
   
 ## <a name="changing-the-view-properties"></a>Modification des propriétés d’affichage  
   
-1.  Implémentez la <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> méthode afin que les propriétés d’affichage sont modifiées lorsque la vue est ouvert. Pour apporter la modification, commencez par rechercher le <xref:System.Windows.ResourceDictionary> qui correspond à l’aspect de la vue que vous souhaitez rechercher. Changez la propriété appropriée dans le dictionnaire de ressources, puis définissez les propriétés. Par lot les appels à la <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.SetProperties%2A> méthode en appelant le <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.BeginBatchUpdate%2A> méthode avant de définir les propriétés, puis le <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.EndBatchUpdate%2A> après avoir défini les propriétés.  
+1. Implémentez la <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> méthode afin que les propriétés d’affichage sont modifiées lorsque la vue est ouvert. Pour apporter la modification, commencez par rechercher le <xref:System.Windows.ResourceDictionary> qui correspond à l’aspect de la vue que vous souhaitez rechercher. Changez la propriété appropriée dans le dictionnaire de ressources, puis définissez les propriétés. Par lot les appels à la <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.SetProperties%2A> méthode en appelant le <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.BeginBatchUpdate%2A> méthode avant de définir les propriétés, puis le <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.EndBatchUpdate%2A> après avoir défini les propriétés.  
   
      [!code-csharp[VSSDKViewPropertyTest#4](../snippets/csharp/VS_Snippets_VSSDK/vssdkviewpropertytest/cs/viewpropertymodifier.cs#4)]
      [!code-vb[VSSDKViewPropertyTest#4](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkviewpropertytest/vb/viewpropertymodifier.vb#4)]  
   
 ## <a name="building-and-testing-the-code"></a>Création et test du code  
   
-1.  Générez la solution.  
+1. Générez la solution.  
   
      Lorsque vous exécutez ce projet dans le débogueur, une deuxième instance de Visual Studio est instanciée.  
   
-2.  Créez un fichier texte et tapez du texte.  
+2. Créez un fichier texte et tapez du texte.  
   
-    -   Le signe d’insertion doit être magenta et le signe insertion de remplacement doit être turquoise.  
+    - Le signe d’insertion doit être magenta et le signe insertion de remplacement doit être turquoise.  
   
-    -   La marge des indicateurs (à gauche de l’affichage de texte) doit être le voyant vert.  
+    - La marge des indicateurs (à gauche de l’affichage de texte) doit être le voyant vert.  
   
-3.  Sélectionnez le texte que vous venez de saisir. La couleur du texte sélectionné doit être clair rose.  
+3. Sélectionnez le texte que vous venez de saisir. La couleur du texte sélectionné doit être clair rose.  
   
-4.  Le texte est sélectionné, cliquez n’importe où en dehors de la fenêtre texte. La couleur du texte sélectionné doit être rose sombre.  
+4. Le texte est sélectionné, cliquez n’importe où en dehors de la fenêtre texte. La couleur du texte sélectionné doit être rose sombre.  
   
-5.  Allumez l’espace blanc visible. (Sur le **modifier** menu, pointez sur **avancé** puis cliquez sur **afficher les espaces**). Tapez le texte des onglets. Les flèches rouges qui représentent les onglets doivent être affichés.  
+5. Allumez l’espace blanc visible. (Sur le **modifier** menu, pointez sur **avancé** puis cliquez sur **afficher les espaces**). Tapez le texte des onglets. Les flèches rouges qui représentent les onglets doivent être affichés.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Points d’extension du service de langage et de l’éditeur](../extensibility/language-service-and-editor-extension-points.md)

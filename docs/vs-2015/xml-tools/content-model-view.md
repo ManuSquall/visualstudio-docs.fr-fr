@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c0a25766327f2e074c4b7f8adf1ccde5a46895d9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f85169ebb6460ac42031aec7c75ff2e29154a9ed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952320"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109120"
 ---
 # <a name="content-model-view"></a>Vue de modèle de contenu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 La vue de modèle de contenu fournit une représentation graphique des nœuds de schéma locaux et globaux et de leurs composants, notamment les types simples et complexes, les éléments, les groupes de modèles, les attributs et les groupes d'attributs. Il est impossible d'afficher les commentaires et les instructions de traitement XML dans la vue de modèle de contenu. La vue de modèle de contenu contient deux panneaux : un **espace de travail** panneau qui contient une liste des nœuds dans le [espace de travail Concepteur de schémas XML](../xml-tools/xml-schema-designer-workspace.md)et l’aire de conception dans laquelle vous pouvez voir le modèle de contenu de schéma les nœuds sont sélectionnés dans le **espace de travail** Panneau de configuration. La vue de modèle de contenu comprend également la barre d'outils Concepteur de schémas XML et la barre de fil d'Ariane (breadcrumb).  
   
  Dans l'image suivante, le panneau Espace de travail contient six nœuds de schéma. Le nœud `purchaseOrder` est sélectionné dans le panneau Espace de travail et est affiché dans l'aire de conception.  
@@ -92,13 +91,13 @@ La vue de modèle de contenu fournit une représentation graphique des nœuds de
 ## <a name="undoredo"></a>Annuler/Rétablir  
  La fonction d'annulation/de rétablissement est activée dans la vue de modèle de contenu pour les actions suivantes :  
   
--   Ajout d'un nœud unique par glisser-déplacer.  
+- Ajout d'un nœud unique par glisser-déplacer.  
   
--   Ajout de plusieurs nœuds de la fenêtre des résultats de recherche dans l'Explorateur de schémas.  
+- Ajout de plusieurs nœuds de la fenêtre des résultats de recherche dans l'Explorateur de schémas.  
   
--   Ajout de nœuds à partir de la vue de départ.  
+- Ajout de nœuds à partir de la vue de départ.  
   
--   Suppression d'un ou plusieurs nœuds.  
+- Suppression d'un ou plusieurs nœuds.  
   
 ## <a name="zoom"></a>Zoom  
  Le zoom est disponible dans le coin inférieur droit de la vue de modèle de contenu.  

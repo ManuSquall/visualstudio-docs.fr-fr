@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : utilisation des API du profileur | Microsoft Docs'
+title: 'Procédure pas à pas : Utiliser les API du profileur | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,14 +12,14 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 82d6c16c75cb2605bcdb8382d461d3557846fcc2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7cb8d054a2e26caddb2ccc9f37d20bb973b1833f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769633"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090801"
 ---
-# <a name="walkthrough-using-profiler-apis"></a>Procédure pas à pas : utilisation des API du profileur
+# <a name="walkthrough-using-profiler-apis"></a>Procédure pas à pas : À l’aide des API de Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La procédure pas à pas utilise une application C# pour montrer comment utiliser les API des outils de profilage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Vous utilisez les API du profileur pour limiter la quantité de données collectées pendant le profilage par instrumentation.  
@@ -57,12 +57,12 @@ DataCollection.CurrentId);
   
 #### <a name="to-create-the-code-to-profile"></a>Pour créer le code à profiler  
   
-1.  Créez un projet C# dans Visual Studio ou utilisez une génération en ligne de commande, selon ce que vous préférez.  
+1. Créez un projet C# dans Visual Studio ou utilisez une génération en ligne de commande, selon ce que vous préférez.  
   
     > [!NOTE]
     >  Votre build doit référencer la bibliothèque Microsoft.VisualStudio.Profiler.dll, qui se trouve dans le répertoire Microsoft Visual Studio 9\Team Tools\Performance Tools.  
   
-2.  Copiez et collez le code suivant dans votre projet :  
+2. Copiez et collez le code suivant dans votre projet :  
   
     ```  
     using System;  
@@ -141,23 +141,23 @@ DataCollection.CurrentId);
   
 #### <a name="to-collect-and-view-data-at-the-command-line"></a>Pour collecter et visualiser des données sur la ligne de commande  
   
-1.  Compilez une version debug de l’exemple de code que vous avez créé dans la procédure « Création de code à profiler », plus haut dans cette procédure pas à pas.  
+1. Compilez une version debug de l’exemple de code que vous avez créé dans la procédure « Création de code à profiler », plus haut dans cette procédure pas à pas.  
   
-2.  Pour profiler une application managée, tapez la commande suivante pour définir les variables d’environnement appropriées :  
+2. Pour profiler une application managée, tapez la commande suivante pour définir les variables d’environnement appropriées :  
   
      **VsPefCLREnv /traceon**  
   
-3.  Tapez la commande suivante : **VSInstr \<nom_fichier>.exe**  
+3. Tapez la commande suivante : **VSInstr \<nom_fichier>.exe**  
   
-4.  Tapez la commande suivante : **VSPerfCmd /start:trace /output:\<nom_fichier>.vsp**  
+4. Tapez la commande suivante : **VSPerfCmd /start:trace /output:\<nom_fichier>.vsp**  
   
-5.  Tapez la commande suivante : **VSPerfCmd /globaloff**  
+5. Tapez la commande suivante : **VSPerfCmd /globaloff**  
   
-6.  Exécutez votre programme.  
+6. Exécutez votre programme.  
   
-7.  Tapez la commande suivante : **VSPerfCmd /shutdown**  
+7. Tapez la commande suivante : **VSPerfCmd /shutdown**  
   
-8.  Tapez la commande suivante : **VSPerfReport /calltrace:\<nom_fichier>.vsp**  
+8. Tapez la commande suivante : **VSPerfReport /calltrace:\<nom_fichier>.vsp**  
   
      Un fichier .csv est créé dans le répertoire actif avec les données de performances résultantes.  
   

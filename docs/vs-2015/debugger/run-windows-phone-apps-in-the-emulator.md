@@ -1,14 +1,9 @@
 ---
 title: Exécuter des applications de Windows Phone dans l’émulateur | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 dev_langs:
 - FSharp
 - VB
@@ -18,24 +13,24 @@ ms.assetid: c7590788-beb3-403c-a7dd-18472a9e585e
 caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: e7035e4a77b67fb5207f878c8e0650236afda7c6
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 7d9b30dd50838eced1299e4aaae6999c8fb9f0e5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51739987"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052209"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>Exécuter des applications Windows Phone dans l'émulateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L'émulateur Windows Phone fournit un environnement virtualisé dans lequel vous pouvez déboguer et tester des applications Windows Phone sur votre ordinateur, sans appareil physique. Vous pouvez simuler des événements tactiles et de rotation courants, et choisir la taille et la résolution de l'écran physique que vous voulez émuler. Vous pouvez également tester plusieurs fonctionnalités couramment utilisées, comme la géolocalisation, la mise en réseau, les notifications, les capteurs, l’accéléromètre et la carte SD en option.  
   
- Pour plus d’informations sur les fonctionnalités que vous pouvez tester dans l’émulateur, consultez [tester les fonctionnalités de l’application dans l’émulateur de Windows Phone](http://msdn.microsoft.com/en-us/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1).  
+ Pour plus d’informations sur les fonctionnalités que vous pouvez tester dans l’émulateur, consultez [tester les fonctionnalités de l’application dans l’émulateur de Windows Phone](http://msdn.microsoft.com/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1).  
   
  Avec Visual Studio, l'émulateur fournit un environnement complet dans lequel vous pouvez concevoir, développer, déboguer et tester des applications Windows Phone.  
   
-##  <a name="BKMK_run"></a> Exécuter une application Windows Phone dans l’émulateur  
+## <a name="BKMK_run"></a> Exécuter une application Windows Phone dans l’émulateur  
  Quand vous développez une application Windows Phone, vous pouvez utiliser l'émulateur Windows Phone pour déployer et tester rapidement votre application. Nous vous conseillons toutefois de tester votre application sur un appareil Windows Phone réel avant de publier votre application dans le Windows Phone Store. Vous pouvez ainsi parcourir votre application tel que le feront les utilisateurs.  
   
  Quand vous exécutez une application Windows Phone pour la première fois dans l'émulateur Windows Phone, les événements suivants se produisent :  
@@ -55,17 +50,17 @@ L'émulateur Windows Phone fournit un environnement virtualisé dans lequel vous
 > [!TIP]
 >  Quand vous testez votre application dans l'émulateur, laissez l'émulateur ouvert entre les sessions de débogage pour pouvoir réexécuter votre application rapidement.  
   
-###  <a name="BKMK_vs"></a> Exécuter une application à partir de Visual Studio  
+### <a name="BKMK_vs"></a> Exécuter une application à partir de Visual Studio  
   
 ##### <a name="to-deploy-and-run-an-app-from-visual-studio"></a>Pour déployer et exécuter une application à partir de Visual Studio  
   
-1.  Dans Visual Studio, ouvrez un projet Windows Phone.  
+1. Dans Visual Studio, ouvrez un projet Windows Phone.  
   
-2.  Sur le **Standard** barre d’outils, sélectionnez une des options d’émulateur.  
+2. Sur le **Standard** barre d’outils, sélectionnez une des options d’émulateur.  
   
      ![Liste d’images d’émulateur de Windows Phone](../debugger/media/wp-emulator-list.png "WP_Emulator_list")  
   
-3.  Pour déployer et exécuter votre application avec débogage, dans le **déboguer** menu, cliquez sur **démarrer le débogage**, ou appuyez sur F5.  
+3. Pour déployer et exécuter votre application avec débogage, dans le **déboguer** menu, cliquez sur **démarrer le débogage**, ou appuyez sur F5.  
   
      Pour déployer et exécuter votre application sans débogage, dans le **déboguer** menu, cliquez sur **démarrer sans débogage**, ou appuyez sur Ctrl + F5.  
   
@@ -85,32 +80,32 @@ L'émulateur Windows Phone fournit un environnement virtualisé dans lequel vous
   
 ##### <a name="to-restart-an-app-without-debugging"></a>Pour redémarrer une application sans débogage  
   
-1.  Dans l'émulateur, dans l'écran de démarrage, balayez vers la gauche pour afficher la liste d'applications.  
+1. Dans l'émulateur, dans l'écran de démarrage, balayez vers la gauche pour afficher la liste d'applications.  
   
-2.  Dans la liste d'applications, appuyez sur l'icône de l'application. L'application redémarre sans débogage.  
+2. Dans la liste d'applications, appuyez sur l'icône de l'application. L'application redémarre sans débogage.  
   
 ##### <a name="to-deactivate-a-running-app"></a>Pour désactiver une application en cours d'exécution  
   
-1.  Avant d’exécuter votre application, dans Visual Studio, cliquez sur le projet dans l’Explorateur de solutions, puis sélectionnez **propriétés** pour ouvrir **Concepteur de projet**.  
+1. Avant d’exécuter votre application, dans Visual Studio, cliquez sur le projet dans l’Explorateur de solutions, puis sélectionnez **propriétés** pour ouvrir **Concepteur de projet**.  
   
-2.  Dans **Concepteur de projets**, dans le **déboguer** page, laissez le **Tombstone sur désactivation lors du débogage** case décochée si vous voulez que l’application dans un état dormant état lorsque désactivé. Cochez la case si vous voulez que l'application soit complètement désactivée.  
+2. Dans **Concepteur de projets**, dans le **déboguer** page, laissez le **Tombstone sur désactivation lors du débogage** case décochée si vous voulez que l’application dans un état dormant état lorsque désactivé. Cochez la case si vous voulez que l'application soit complètement désactivée.  
   
-3.  Sur le **déboguer** menu, cliquez sur **démarrer le débogage**, ou appuyez sur F5 pour exécuter l’application.  
+3. Sur le **déboguer** menu, cliquez sur **démarrer le débogage**, ou appuyez sur F5 pour exécuter l’application.  
   
-4.  Dans l’émulateur, appuyez sur la **Démarrer** bouton. L'écran de démarrage apparaît et l'application est désactivée. L’application passe à l’état dormant ou est désactivée, selon le paramètre de la **Tombstone sur désactivation lors du débogage** case à cocher.  
+4. Dans l’émulateur, appuyez sur la **Démarrer** bouton. L'écran de démarrage apparaît et l'application est désactivée. L’application passe à l’état dormant ou est désactivée, selon le paramètre de la **Tombstone sur désactivation lors du débogage** case à cocher.  
   
 ##### <a name="to-reactivate-a-dormant-or-tombstoned-app"></a>Pour réactiver une application dormante ou désactivée  
   
--   Dans l’émulateur, appuyez sur la **retour** bouton pour revenir à l’application. Si vous navigué vers d’autres pages ou ouvert une autre application, vous devrez peut-être appuyer sur le **retour** bouton plusieurs fois pour réactiver l’application.  
+- Dans l’émulateur, appuyez sur la **retour** bouton pour revenir à l’application. Si vous navigué vers d’autres pages ou ouvert une autre application, vous devrez peut-être appuyer sur le **retour** bouton plusieurs fois pour réactiver l’application.  
   
      La session de débogage reprend. Si le débogueur a été détaché de l'application, vous devrez peut-être appuyer sur F5 pour reprendre la session de débogage.  
   
-###  <a name="BKMK_depltool"></a> Exécuter une application avec l’outil de déploiement d’Application  
+### <a name="BKMK_depltool"></a> Exécuter une application avec l’outil de déploiement d’Application  
  Vous pouvez également utiliser l’outil de déploiement d’applications Windows Phone (**AppDeploy.exe**) pour exécuter votre application dans l’émulateur. Cet outil est une application autonome installée avec les outils de développement Windows Phone.  
   
  Pour plus d’informations, consultez [des applications de déployer Windows Phone 8.1 avec l’outil de déploiement d’applications](http://msdn.microsoft.com/library/23700f82-1399-44d9-bc0c-714be4a48ee6).  
   
-##  <a name="BKMK_toolbar"></a> Configurer l’émulateur Windows Phone avec la barre d’outils de l’émulateur  
+## <a name="BKMK_toolbar"></a> Configurer l’émulateur Windows Phone avec la barre d’outils de l’émulateur  
  Ce tableau montre les boutons de configuration disponibles dans la barre d'outils de l'émulateur.  
   
 |Boutons de la barre d'outils|Options de configuration|  
@@ -119,7 +114,7 @@ L'émulateur Windows Phone fournit un environnement virtualisé dans lequel vous
 |![Orientation dans la barre d’outils de l’émulateur de Windows Phone](../debugger/media/wp-emulator-rotation.png "WP_Emulator_rotation")|**Configurer l’orientation de l’émulateur**<br /><br /> Vous pouvez choisir parmi trois orientations possibles pour l'émulateur Windows Phone : portrait, paysage gauche ou paysage droite. La taille de l'émulateur n'est pas modifiée quand vous changez l'orientation.<br /><br /> Pour modifier l’orientation, cliquez sur le **faire pivoter à gauche** bouton ou le **faire pivoter à droite** bouton.|  
 |![Taille des options de barre d’outils de l’émulateur de Windows Phone](../debugger/media/wp-emulator-size.png "WP_Emulator_size")|**Configurer la taille de l’émulateur**<br /><br /> Vous pouvez modifier la taille de l'émulateur sur l'écran de l'ordinateur hôte. La taille en points par pouce (PPP) de l'émulateur est basée sur celle du moniteur hôte, indépendamment de la valeur du zoom.<br /><br /> -Pour adapter l’émulateur taille à l’écran, cliquez sur le **ajuster à l’écran** bouton.<br />-Pour modifier le paramètre du zoom, cliquez sur le **Zoom** bouton. Le **Zoom** boîte de dialogue s’ouvre. Dans le **Zoom** boîte de dialogue, entrez une valeur de zoom entre 33 et 100.|  
   
-##  <a name="BKMK_buttons"></a> Utiliser les boutons physiques simulés dans l’émulateur  
+## <a name="BKMK_buttons"></a> Utiliser les boutons physiques simulés dans l’émulateur  
  Simulez l'utilisation des boutons physiques d'un téléphone à l'aide des boutons physiques simulés situés à droite de l'écran de l'émulateur.  
   
 - Cliquez sur le **Power** bouton pour simuler la désactivant et l’affichage. Cliquez et maintenez le bouton enfoncé pour simuler la désactivation du téléphone.  
@@ -138,7 +133,7 @@ L'émulateur Windows Phone fournit un environnement virtualisé dans lequel vous
   
    ![Boutons sur l’émulateur Windows Phone](../debugger/media/wp-emulator-buttons.png "WP_Emulator_buttons")  
   
-##  <a name="BKMK_tasks_kbd"></a> Utiliser le clavier de l’ordinateur avec l’émulateur  
+## <a name="BKMK_tasks_kbd"></a> Utiliser le clavier de l’ordinateur avec l’émulateur  
  L'émulateur prend en charge le mappage du clavier physique de votre ordinateur de développement au clavier d'un Windows Phone. Le comportement des touches est le même que sur un appareil Windows Phone.  
   
  Par défaut, le clavier physique n'est pas activé. Cette implémentation équivaut à un clavier coulissant devant être déployé avant de pouvoir être utilisé. Avant l'activation du clavier physique, l'émulateur accepte la saisie au clavier des touches de contrôle.  
@@ -165,15 +160,15 @@ L'émulateur Windows Phone fournit un environnement virtualisé dans lequel vous
 |F10|BAISSER LE VOLUME||  
 |F11|Non applicable.||  
 |F12|MARCHE/ARRÊT|Appuyez sur la touche F12 deux fois pour activer l'écran de verrouillage.<br /><br /> Les appuis longs fonctionnent comme il se doit.|  
-|ÉCHAP|Retour|Les appuis longs fonctionnent comme il se doit.|  
+|Échap|Retour|Les appuis longs fonctionnent comme il se doit.|  
 |Pause/Attn|Activer/désactiver le clavier (émulateur Windows 8/8.1 uniquement).|Non applicable dans l'émulateur Windows 10.|  
-|Page précédente|Active le clavier matériel (émulateur Windows 8/8.1 uniquement).|Non applicable dans l'émulateur Windows 10.|  
-|Page suivante|Désactive le clavier matériel (émulateur Windows 8/8.1 uniquement).|Non applicable dans l'émulateur Windows 10.|  
+|PG.PRÉC|Active le clavier matériel (émulateur Windows 8/8.1 uniquement).|Non applicable dans l'émulateur Windows 10.|  
+|PG.SUIV|Désactive le clavier matériel (émulateur Windows 8/8.1 uniquement).|Non applicable dans l'émulateur Windows 10.|  
   
-##  <a name="BKMK_checkpoints"></a> Enregistrer et charger des points de contrôle personnalisés  
+## <a name="BKMK_checkpoints"></a> Enregistrer et charger des points de contrôle personnalisés  
  Enregistrer un instantané de l’état de l’émulateur à l’aide de la **points de contrôle** onglet de l’émulateur **des outils supplémentaires**. Cette fonctionnalité est utile si vous testez fréquemment votre application avec les mêmes données et paramètres.  
   
- Par exemple, si votre application requiert plusieurs contacts, vous pouvez créer les enregistrements de contact une fois et enregistrer un instantané de l'émulateur. Sinon, vous devez recréez les enregistrements de contact chaque fois que vous démarrez l'émulateur.  
+ Par exemple, si votre application requiert plusieurs contacts, vous pouvez créer les enregistrements de contact une fois et enregistrer un instantané de l'émulateur. Sinon, vous devez recréer les enregistrements de contact chaque fois que vous démarrez l'émulateur.  
   
 - Cliquez sur **nouveau point de contrôle** pour capturer un nouvel instantané de l’état de l’émulateur avec les données et les paramètres requis pour tester votre application plus tard. Le nouveau point de contrôle est ajouté à la **points de contrôle** liste.  
   
@@ -191,7 +186,7 @@ L'émulateur Windows Phone fournit un environnement virtualisé dans lequel vous
   
   ![Onglet points de contrôle de l’émulateur Windows Phone](../debugger/media/wp-emulator-checkpoints.png "WP_Emulator_checkpoints")  
   
-##  <a name="BKMK_tasks_shot"></a> Captures d’écran dans l’émulateur  
+## <a name="BKMK_tasks_shot"></a> Captures d’écran dans l’émulateur  
  Vous pouvez créer des captures d'écran de vos applications Windows Phone à l'aide de l'outil de capture d'écran de la fenêtre Outils supplémentaires. L’outil crée des fichiers PNG dans la même résolution que celle de l’émulateur en cours d’exécution.  
   
  ![Captures d’écran à partir du Windows Phone Emulator](../debugger/media/wp-emulator-screenshots.png "WP_Emulator_screenshots")  
@@ -222,9 +217,6 @@ L'émulateur Windows Phone fournit un environnement virtualisé dans lequel vous
   
 #### <a name="to-disable-frame-rate-counters-in-the-emulator-before-capturing-screenshots"></a>Pour désactiver les compteurs de fréquence des trames dans l'émulateur avant de créer des captures d'écran  
   
--   Spécifiez une version Release dans Visual Studio. Après avoir spécifié une version Release, lancez votre application en sélectionnant le **déployer _[nom_application]_**  lien sur le **Build** menu.  
+- Spécifiez une version Release dans Visual Studio. Après avoir spécifié une version Release, lancez votre application en sélectionnant le **déployer _[nom_application]_**  lien sur le **Build** menu.  
   
--   Vous pouvez aussi insérer un commentaire sur la ligne de code dans le fichier app.xaml.cs ou app.xaml.vb qui définit la valeur de `EnableFrameRateCounter` sur `true`.
-
-
-
+- Vous pouvez aussi insérer un commentaire sur la ligne de code dans le fichier app.xaml.cs ou app.xaml.vb qui définit la valeur de `EnableFrameRateCounter` sur `true`.

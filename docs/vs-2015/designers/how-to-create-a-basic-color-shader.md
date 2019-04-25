@@ -9,27 +9,27 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b1e202f84fb3b4e0e865e2cebb96b6728289ff6b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: d6c3410468a53b978165dfcae228b71985fcbe51
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774112"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117757"
 ---
-# <a name="how-to-create-a-basic-color-shader"></a>Comment : créer un nuanceur de couleur de base
+# <a name="how-to-create-a-basic-color-shader"></a>Procédure : Créer un nuanceur de couleur de base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ce document indique comment utiliser le concepteur de nuanceur et DGSL (Directed Graph Shader Language) pour créer un nuanceur de couleur plat. Ce nuanceur définit la couleur finale sur une valeur de couleur RVB de constante.  
   
  Ce document illustre ces activités :  
   
--   Suppression de nœuds d’un graphique  
+- Suppression de nœuds d’un graphique  
   
--   Ajout de nœuds à un graphique  
+- Ajout de nœuds à un graphique  
   
--   Définition de propriétés de nœud  
+- Définition de propriétés de nœud  
   
--   Connexion de nœuds  
+- Connexion de nœuds  
   
 ## <a name="creating-a-flat-color-shader"></a>Création d’un nuanceur de couleur plat  
  Vous pouvez implémenter un nuanceur de couleur plat en écrivant la valeur de couleur d’une constante de couleur RVB sur la couleur de sortie finale.  
@@ -59,6 +59,6 @@ Ce document indique comment utiliser le concepteur de nuanceur et DGSL (Directed
   
 ## <a name="see-also"></a>Voir aussi  
  [Guide pratique pour Appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
- [Comment : exporter un nuanceur](../designers/how-to-export-a-shader.md)   
+ [Guide pratique pour Exporter un nuanceur](../designers/how-to-export-a-shader.md)   
  [Concepteur de nuanceur](../designers/shader-designer.md)   
  [Nœuds du concepteur Shader](../designers/shader-designer-nodes.md)

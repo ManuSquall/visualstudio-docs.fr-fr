@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0f1f55f0e0ae9882154ed62ccbf323441070472
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: a43be698fd908737c96f9de3cf346b48e84f27fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223609"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62798712"
 ---
 # <a name="make-code-work-in-visual-studio"></a>Faire fonctionner le code dans Visual Studio
 
@@ -44,7 +44,7 @@ Quand la build réussit, des résultats similaires à ceux-ci apparaissent dans 
 
 ![Sortie et liste d’erreurs de Visual Studio](../ide/media/vs_ide_gs_debug_bad_build_error_list.png)
 
-Cliquez sur la ligne de l’erreur dans la fenêtre **Liste d’erreurs** pour accéder directement à la ligne où l’erreur s’est produite. (Vous pouvez aussi activer les numéros de ligne en cliquant dans la barre **Lancement rapide** située dans le coin supérieur droit, en y tapant « numéros de ligne », puis en appuyant sur **Entrée**. C’est le moyen le plus rapide d’obtenir la boîte de dialogue **Options** qui vous permet d’activer les numéros de ligne. En vous familiarisant avec la barre **Lancement rapide**, vous économiserez un grand nombre de clics dans l’interface utilisateur !)
+Cliquez sur la ligne de l’erreur dans la fenêtre **Liste d’erreurs** pour accéder directement à la ligne où l’erreur s’est produite. (Ou activez les numéros de ligne en appuyant sur **Ctrl**+**Q**, en tapant **numéros de ligne**, puis en choisissant **Activer ou désactiver les numéros de ligne**dans les résultats. C’est le moyen le plus rapide d’obtenir la boîte de dialogue **Options** qui vous permet d’activer les numéros de ligne.)
 
 ![Éditeur Visual Studio avec des numéros de ligne](../ide/media/vs_ide_gs_debug_line_numbers.png)
 
@@ -156,6 +156,6 @@ Pour plus d’informations sur les tests unitaires dans Visual Studio et comment
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Visite guidée des fonctionnalités du débogueur](../debugger/debugger-feature-tour.md)
-- [En savoir plus sur l’utilisation du débogueur](../debugger/debugger-feature-tour.md)
+- [Présentation du débogueur](../debugger/debugger-feature-tour.md)
+- [En savoir plus sur l’utilisation du débogueur](../debugger/index.md)
 - [Générer et corriger du code](../ide/code-generation-in-visual-studio.md)

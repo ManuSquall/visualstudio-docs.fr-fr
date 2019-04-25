@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0dd83a2b2d613d6d9ef73097bca4d2f9f1c6cd39
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 57d3c21371cc824573e29657d0b41253e556f4c3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938665"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072251"
 ---
 # <a name="working-in-the-code-analysis-rule-set-editor"></a>Utilisation de l'Éditeur d'ensembles de règles d'analyse du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ L’éditeur d’ensembles de règles analyse du Code vous permet de spécifier 
   
  L’éditeur affiche les règles dans une structure arborescente qui groupe les règles par une règle de définie le champ que vous spécifiez. Pour ajouter ou supprimer des règles à partir d’un ensemble de règles, effectuer une ou plusieurs des étapes suivantes :  
   
--   Activez ou désactivez la case à cocher du nœud de groupe pour ajouter ou supprimer toutes les règles dans le groupe. Lorsque vous sélectionnez un groupe, toutes les règles sont définies le **avertissement** action.  
+- Activez ou désactivez la case à cocher du nœud de groupe pour ajouter ou supprimer toutes les règles dans le groupe. Lorsque vous sélectionnez un groupe, toutes les règles sont définies le **avertissement** action.  
   
--   Cliquez sur le **Action** champ d’un groupe, puis spécifiez l’action à appliquer à toutes les règles dans le groupe.  
+- Cliquez sur le **Action** champ d’un groupe, puis spécifiez l’action à appliquer à toutes les règles dans le groupe.  
   
--   Activez ou désactivez la case à cocher pour une règle individuelle. Lorsque vous sélectionnez la case à cocher pour une règle, la règle est définie à l’action de l’avertissement.  
+- Activez ou désactivez la case à cocher pour une règle individuelle. Lorsque vous sélectionnez la case à cocher pour une règle, la règle est définie à l’action de l’avertissement.  
   
 ## <a name="rule-set-editor-toolbar"></a>Barre d’outils Éditeur d’ensemble de règles  
  Vous pouvez utiliser la barre d’outils de l’éditeur d’ensemble de règles pour regrouper, filtrer et rechercher les données qui s’affiche dans la grille de jeu de règles.  
@@ -73,6 +73,6 @@ L’éditeur d’ensembles de règles analyse du Code vous permet de spécifier 
 ## <a name="sorting-and-filtering-rule-sets"></a>Tri et filtrage des ensembles de règles  
  À partir des en-têtes de colonnes de la grille de jeu de règles, vous pouvez trier et filtrer les règles par les valeurs du champ.  
   
--   Pour trier les listes de jeu de règle, cliquez sur l’en-tête de colonne du champ en fonction duquel vous voulez trier. Si les ensembles de règles sont regroupées, chaque groupe est trié individuellement.  
+- Pour trier les listes de jeu de règle, cliquez sur l’en-tête de colonne du champ en fonction duquel vous voulez trier. Si les ensembles de règles sont regroupées, chaque groupe est trié individuellement.  
   
--   Pour filtrer les ensembles de règles par la valeur d’un champ, cliquez sur le bouton de filtre sur l’en-tête de colonne du champ par lequel vous souhaitez filtrer. Sélectionnez les cases à cocher des valeurs que vous souhaitez afficher et désactivez les cases à cocher des valeurs que vous souhaitez masquer.
+- Pour filtrer les ensembles de règles par la valeur d’un champ, cliquez sur le bouton de filtre sur l’en-tête de colonne du champ par lequel vous souhaitez filtrer. Sélectionnez les cases à cocher des valeurs que vous souhaitez afficher et désactivez les cases à cocher des valeurs que vous souhaitez masquer.

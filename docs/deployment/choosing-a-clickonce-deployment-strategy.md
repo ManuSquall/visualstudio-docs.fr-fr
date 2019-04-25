@@ -15,21 +15,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0198c9e9e6238547bb8a9ea1a49c9f8a2a611cbc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 52e0dc775e5e9413fb251261a319e529f36393eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603974"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102183"
 ---
 # <a name="choose-a-clickonce-deployment-strategy"></a>Choisir une stratégie de déploiement ClickOnce
 Pour déployer une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], trois stratégies sont possibles. Celle que vous choisissez dépend principalement du type d'application que vous déployez. Les trois stratégies de déploiement sont les suivantes :
 
--   Installation à partir du Web ou d'un partage réseau
+- Installation à partir du Web ou d'un partage réseau
 
--   Installation à partir d'un CD-ROM
+- Installation à partir d'un CD-ROM
 
--   Démarrage de l'application à partir du Web ou d'un partage réseau
+- Démarrage de l'application à partir du Web ou d'un partage réseau
 
     > [!NOTE]
     >  En plus de choisir une stratégie de déploiement, vous devez également choisir une stratégie de mise à jour de l'application. Pour plus d’informations, consultez [choisir une stratégie de mise à jour ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
@@ -39,7 +39,7 @@ Pour déployer une application [!INCLUDE[ndptecclick](../deployment/includes/ndp
 
  Étant donné que cette stratégie dépend de la connexion réseau, elle fonctionne de manière optimale pour les applications qui seront déployées pour les utilisateurs qui ont accès à un réseau local ou une connexion Internet rapide.
 
- Si vous déployez l’application à partir du Web, vous pouvez passer des arguments dans l’application lorsqu’elle est activée à l’aide d’une URL. Pour plus d’informations, consultez [Comment : récupérer les informations de chaîne de requête dans une application ClickOnce en ligne](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md). Vous ne pouvez pas passer d'arguments dans une application activée à l'aide de l'une des autres méthodes décrites dans ce document.
+ Si vous déployez l’application à partir du Web, vous pouvez passer des arguments dans l’application lorsqu’elle est activée à l’aide d’une URL. Pour plus d'informations, voir [Procédure : Récupérer les informations de chaîne de requête dans une application ClickOnce en ligne](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md). Vous ne pouvez pas passer d'arguments dans une application activée à l'aide de l'une des autres méthodes décrites dans ce document.
 
  Pour activer cette stratégie de déploiement dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], cliquez sur **À partir d’un site Web** ou **À partir d’un chemin UNC ou d’un partage de fichiers** dans la page **Comment les utilisateurs installeront-ils l’application ?** de l’Assistant Publication.
 
@@ -74,5 +74,5 @@ Pour déployer une application [!INCLUDE[ndptecclick](../deployment/includes/ndp
 ## <a name="see-also"></a>Voir aussi
 - [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md)
 - [Choisir une stratégie de mise à jour ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)
-- [Comment : publier une application ClickOnce avec l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
+- [Guide pratique pour Publier une application ClickOnce avec l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
 - [Sécurisation des applications ClickOnce](../deployment/securing-clickonce-applications.md)

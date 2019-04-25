@@ -1,14 +1,9 @@
 ---
 title: Erreurs de débogage et de boîtes de dialogue d’avertissement | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-debug
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-debug
+ms.topic: conceptual
 f1_keywords:
 - VS.WebClient.AccessRequiredDialog
 dev_langs:
@@ -26,13 +21,13 @@ ms.assetid: 73baaf39-3026-48c9-be48-8b9ba0063cde
 caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
-manager: ghogen
-ms.openlocfilehash: 094d7fa8e47cb718ee63ec5abb075db20ec1b66c
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 2d5fbd50ec56173d0871aa1096825eabf87cf42e
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51743285"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948675"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Erreur et avertissement, boîtes de dialogue pour le débogage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,13 +43,13 @@ Vous trouverez ci-après la liste des boîtes de dialogue d'erreur et d'avertiss
   
  [Exécutable pour la session de débogage, boîte de dialogue](../debugger/executable-for-debugging-session-dialog-box.md)  
   
- [Impossible d’appliquer les modifications de Code, boîte de dialogue](../debugger/edit-and-continue-dialog-box-cpp.md)  
+ [Échec de l’application des modifications du code, boîte de dialogue](../debugger/edit-and-continue-dialog-box-cpp.md)  
   
  [Débogueur Microsoft Visual Studio (Exception levée), boîte de dialogue](../debugger/microsoft-visual-studio-debugger-exception-thrown-dialog-box.md)  
   
- [Aucun Code Source disponible pour la boîte de dialogue emplacement actuel](../debugger/no-source-available.md)  
+ [Il n’y a pas de code source disponible pour l’emplacement en cours (boîte de dialogue)](../debugger/no-source-available.md)  
   
- [Aucune boîte de dialogue informations symboliques](http://msdn.microsoft.com/en-us/18de4888-9cca-4059-a165-48b135fee4c9)  
+ [Aucune information symbolique, boîte de dialogue](http://msdn.microsoft.com/18de4888-9cca-4059-a165-48b135fee4c9)  
   
  [Résoudre une ambiguïté, boîte de dialogue](../debugger/resolve-ambiguity-dialog-box.md)  
   
@@ -67,15 +62,12 @@ Vous trouverez ci-après la liste des boîtes de dialogue d'erreur et d'avertiss
 ## <a name="related-sections"></a>Rubriques connexes  
  [Débogage de scripts et Web : erreurs et dépannage](../debugger/debugging-web-applications-errors-and-troubleshooting.md)  
   
- [Erreurs de débogage distant](../debugger/remote-debugging-errors-and-troubleshooting.md)  
+ [Débogage distant, erreurs](../debugger/remote-debugging-errors-and-troubleshooting.md)  
   
- [Erreurs d’attachement](http://msdn.microsoft.com/en-us/2820d904-a068-4fcb-bbfb-bbbe5195d6ae)  
+ [Erreurs d’attachement](http://msdn.microsoft.com/2820d904-a068-4fcb-bbfb-bbbe5195d6ae)  
   
- [Résolution des problèmes de configuration du débogage SQL](http://msdn.microsoft.com/en-us/b3ec8303-4c0d-449c-8d19-4932c1d820a7)  
+ [Dépannage de la configuration du débogage SQL](http://msdn.microsoft.com/b3ec8303-4c0d-449c-8d19-4932c1d820a7)  
   
- [Forum aux questions de débogage Visual C++](../debugger/debugging-native-code-faqs.md)  
+ [Forum aux questions sur le débogage Visual C++](../debugger/debugging-native-code-faqs.md)  
   
  [Sécurité du débogueur](../debugger/debugger-security.md)
-
-
-

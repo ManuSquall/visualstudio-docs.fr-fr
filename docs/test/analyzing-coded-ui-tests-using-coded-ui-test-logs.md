@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 85be4e713a4cf2581200da7589a1001e6510459d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a5ce4f298039d6d86f8c4855d1f139b6be1d1175
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948548"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822722"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analyse des tests codés de l’interface utilisateur à l’aide des journaux de test codé de l’interface utilisateur
 
@@ -60,18 +60,18 @@ Selon votre scénario, appliquez l’une des méthodes suivantes pour activer le
 
 Quand vous exécutez un test codé de l’interface utilisateur avec les modifications du fichier *QTAgent32.exe.config* en place, vous constatez qu’un lien de sortie figure dans les résultats de l’**Explorateur de tests**. Des fichiers journaux sont générés non seulement quand votre test échoue, mais aussi quand les tests réussissent si le niveau de trace a la valeur « Commentaires ».
 
-1.  Dans le menu **Test**, choisissez **Fenêtres**, puis **Explorateur de tests**.
+1. Dans le menu **Test**, choisissez **Fenêtres**, puis **Explorateur de tests**.
 
-2.  Dans le menu **Générer** , choisissez **Générer la solution**.
+2. Dans le menu **Générer** , choisissez **Générer la solution**.
 
-3.  Dans l’**Explorateur de tests**, sélectionnez le test codé de l’interface utilisateur à exécuter, ouvrez son menu contextuel, puis choisissez **Exécuter les tests sélectionnés**.
+3. Dans l’**Explorateur de tests**, sélectionnez le test codé de l’interface utilisateur à exécuter, ouvrez son menu contextuel, puis choisissez **Exécuter les tests sélectionnés**.
 
      Les tests automatisés s’exécutent, puis un message indique s’ils sont une réussite ou un échec.
 
     > [!TIP]
     > Pour afficher l’**Explorateur de tests**, choisissez **Test** > **Fenêtres**, puis choisissez **Explorateur de tests**.
 
-4.  Choisissez le lien **Sortie** dans les résultats de l’**Explorateur de tests**.
+4. Choisissez le lien **Sortie** dans les résultats de l’**Explorateur de tests**.
 
      ![Lien de sortie dans l'explorateur de tests](../test/media/cuit_htmlactionlog1.png)
 
@@ -79,11 +79,11 @@ Quand vous exécutez un test codé de l’interface utilisateur avec les modific
 
      ![Résultats et liens de sortie à partir de test codé de l'interface utilisateur](../test/media/cuit_htmlactionlog2.png)
 
-5.  Choisissez le lien *UITestActionLog.html*.
+5. Choisissez le lien *UITestActionLog.html*.
 
      Le journal s'affiche dans votre navigateur web.
 
-     ![Fichier journal du test codé de l’interface utilisateur](../test/media/cuit_htmlactionlog3.png)
+     ![Fichier journal du test codé de l'IU](../test/media/cuit_htmlactionlog3.png)
 
 ## <a name="see-also"></a>Voir aussi
 

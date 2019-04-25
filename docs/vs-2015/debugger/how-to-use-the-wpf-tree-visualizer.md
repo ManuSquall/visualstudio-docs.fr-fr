@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6d2fc99235c9001cd465236c82588e33a842c168
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 02f7c89db63fbd2276dd6e59a619a62e4b485870
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952900"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108180"
 ---
 # <a name="how-to-use-the-wpf-tree-visualizer"></a>Procédure : Utiliser le visualiseur de l’arborescence WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,35 +33,35 @@ Vous pouvez utiliser le visualiseur de l'arborescence WPF pour explorer l'arbor
   
 ### <a name="to-open-the-wpf-tree-visualizer"></a>Pour ouvrir le visualiseur de l’arborescence WPF  
   
-1.  Dans la fenêtre **Espion**, **Automatique** ou **Variables locales** d’un DataTip, cliquez sur la flèche à côté de l’icône de loupe située en regard d’un nom d’objet WPF.  
+1. Dans la fenêtre **Espion**, **Automatique** ou **Variables locales** d’un DataTip, cliquez sur la flèche à côté de l’icône de loupe située en regard d’un nom d’objet WPF.  
   
      Une liste de visualiseurs s'affiche.  
   
-2.  Cliquez sur **Visualiseur de l’arborescence WPF**.  
+2. Cliquez sur **Visualiseur de l’arborescence WPF**.  
   
 ### <a name="to-search-the-visual-tree"></a>Pour effectuer une recherche sur l'arborescence d'éléments visuels  
   
--   Dans le volet **Arborescence d’éléments visuels**, tapez la chaîne que vous souhaitez rechercher dans la zone **Recherche**.  
+- Dans le volet **Arborescence d’éléments visuels**, tapez la chaîne que vous souhaitez rechercher dans la zone **Recherche**.  
   
      Le visualiseur de l’arborescence WPF recherche immédiatement le premier objet de l’arborescence d’éléments visuels qui correspond à la chaîne que vous avez tapée. Tapez plus de caractères pour rechercher une correspondance plus pertinente.  
   
-    -   Cliquez sur **Suivant** pour accéder à la correspondance suivante de l’arborescence d’éléments visuels.  
+    - Cliquez sur **Suivant** pour accéder à la correspondance suivante de l’arborescence d’éléments visuels.  
   
-    -   Cliquez sur **Préc.** pour revenir à la correspondance précédente.  
+    - Cliquez sur **Préc.** pour revenir à la correspondance précédente.  
   
-    -   Cliquez sur **Effacer** pour effacer les critères de recherche.  
+    - Cliquez sur **Effacer** pour effacer les critères de recherche.  
   
 ### <a name="to-search-the-properties-list"></a>Pour effectuer une recherche sur la liste des propriétés  
   
--   Dans le **propriétés de** _nom_**:**_Type_ volet, tapez la chaîne à rechercher dans le **filtrer**boîte.  
+- Dans le **propriétés de** _nom_**:**_Type_ volet, tapez la chaîne à rechercher dans le **filtrer**boîte.  
   
      Le visualiseur de l'arborescence WPF recherche immédiatement les propriétés qui correspondent à la chaîne que vous avez tapée. À présent, la liste n'affiche que les propriétés correspondant à la chaîne que vous avez tapée. Tapez plus de caractères pour rechercher une correspondance plus pertinente.  
   
-    -   Cliquez sur **Effacer** pour effacer les critères de recherche.  
+    - Cliquez sur **Effacer** pour effacer les critères de recherche.  
   
 ### <a name="to-close-the-visualizer"></a>Pour fermer le visualiseur  
   
--   Cliquez sur l’icône **Fermer** située dans le coin supérieur droit de la boîte de dialogue.  
+- Cliquez sur l’icône **Fermer** située dans le coin supérieur droit de la boîte de dialogue.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Guide pratique pour Utiliser un visualiseur](../misc/how-to-use-a-visualizer.md)   

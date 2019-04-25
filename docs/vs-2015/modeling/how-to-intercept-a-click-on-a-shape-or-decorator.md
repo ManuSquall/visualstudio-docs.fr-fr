@@ -1,27 +1,24 @@
 ---
-title: 'Comment : intercepter un événement Click sur une forme ou un décorateur | Microsoft Docs'
-ms.custom: ''
+title: 'Procédure : Intercepter un événement Click sur une forme ou un décorateur | Microsoft Docs'
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 ms.assetid: e2bc3124-c0c0-4104-9779-a5bf565d7f51
 caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: 6a3e0d12aa7d5537b9dd11f1b7d4c3daedc68a84
-ms.sourcegitcommit: 240c8b34e80952d00e90c52dcb1a077b9aff47f6
+manager: jillfra
+ms.openlocfilehash: 9e67b6e999078523c11ba2b59175743e4a8f3d33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49926746"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044233"
 ---
-# <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Comment : intercepter un événement Click sur une forme ou un décorateur
+# <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Procédure : Intercepter un événement de clic sur une forme ou un décorateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Les procédures suivantes montrent comment intercepter un événement click sur une forme ou un décorateur d’icône. Vous pouvez intercepter les clics, double-clique sur, fait glisser, et d’autres gestes et faire en sorte que l’élément répondre.  
@@ -50,11 +47,11 @@ public partial class MyShape // change
   
 #### <a name="to-intercept-a-click-on-an-icon-decorator"></a>Pour intercepter un événement click sur un élément décoratif d’icône  
   
-1.  Ouvrez ou créez une solution DSL.  
+1. Ouvrez ou créez une solution DSL.  
   
-2.  Choisir ou créer une forme qui a un élément décoratif d’icône et le mapper à une classe de domaine.  
+2. Choisir ou créer une forme qui a un élément décoratif d’icône et le mapper à une classe de domaine.  
   
-3.  Dans un fichier de code distinct à partir des fichiers dans le `GeneratedCode` dossier, créer la sous-classe de ImageField :  
+3. Dans un fichier de code distinct à partir des fichiers dans le `GeneratedCode` dossier, créer la sous-classe de ImageField :  
   
     ```  
     using Microsoft.VisualStudio.Modeling;  
@@ -92,7 +89,7 @@ public partial class MyShape // change
   
      Vous devez définir Handled sur true si vous ne souhaitez pas que l’événement à passer à cette forme.  
   
-4.  Substituez la méthode de InitializeShapeFields dans votre classs forme en ajoutant la définition de classe partielle suivante.  
+4. Substituez la méthode de InitializeShapeFields dans votre classs forme en ajoutant la définition de classe partielle suivante.  
   
     ```  
     public partial class MyShape // change  
@@ -119,9 +116,9 @@ public partial class MyShape // change
     }  
     ```  
   
-1.  Générez et exécutez la solution.  
+1. Générez et exécutez la solution.  
   
-2.  Double-cliquez sur l’icône sur une instance de la forme. Votre message de test doit apparaître.  
+2. Double-cliquez sur l’icône sur une instance de la forme. Votre message de test doit apparaître.  
   
 ## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>Interception clique et fait glisser sur les listes de CompartmentShape  
  L’exemple suivant permet aux utilisateurs de réordonner des éléments dans une forme de compartiment en les faisant glisser. Pour exécuter ce code :  
@@ -138,19 +135,19 @@ public partial class MyShape // change
   
    En résumé, le code fonctionne comme suit. Dans cet exemple, `ClassShape` est le nom de la forme de compartiment.  
   
--   Un ensemble de gestionnaires d’événements de la souris est associé à chaque instance de compartment lors de sa création.  
+- Un ensemble de gestionnaires d’événements de la souris est associé à chaque instance de compartment lors de sa création.  
   
--   Le `ClassShape.MouseDown` événement stocke l’élément actuel.  
+- Le `ClassShape.MouseDown` événement stocke l’élément actuel.  
   
--   Lorsque la souris se déplace hors de l’élément actuel, une instance de MouseAction est créée, qui définit le curseur et capture la souris jusqu'à ce qu’il est libéré.  
+- Lorsque la souris se déplace hors de l’élément actuel, une instance de MouseAction est créée, qui définit le curseur et capture la souris jusqu'à ce qu’il est libéré.  
   
      Pour éviter toute interférence avec d’autres actions de la souris, telles que la sélection du texte d’un élément, MouseAction n’est pas créé tant que la souris a quitté l’élément d’origine.  
   
      Une alternative à la création d’une MouseAction serait simplement pour écouter les MouseUp. Toutefois, cela fonctionnerait pas correctement si l’utilisateur relâche la souris après avoir fait glisser en dehors du compartiment. MouseAction est en mesure d’effectuer l’action appropriée, quel que soit l’où la souris est relâchée.  
   
--   Lorsque la souris est relâchée, MouseAction.MouseUp permet de réorganiser l’ordre des liens entre les éléments de modèle.  
+- Lorsque la souris est relâchée, MouseAction.MouseUp permet de réorganiser l’ordre des liens entre les éléments de modèle.  
   
--   La modification de l’ordre de rôle déclenche une règle qui met à jour l’affichage. Ce comportement est déjà défini, et aucun code supplémentaire est nécessaire.  
+- La modification de l’ordre de rôle déclenche une règle qui met à jour l’affichage. Ce comportement est déjà défini, et aucun code supplémentaire est nécessaire.  
   
 ```csharp  
 using Microsoft.VisualStudio.Modeling;  
@@ -404,6 +401,3 @@ namespace Company.CompartmentDrag
 ## <a name="see-also"></a>Voir aussi  
  [Propagation des modifications et réponse aux](../modeling/responding-to-and-propagating-changes.md)   
  [Propriétés des décorateurs](../modeling/properties-of-decorators.md)
-
-
-

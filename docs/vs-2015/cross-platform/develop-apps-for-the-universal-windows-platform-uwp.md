@@ -9,17 +9,16 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 949cbbc7146fc744f549201a98f61d82a80185e8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8a273e3422c1ab96a0c5fdba8330b218b4b7640f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787016"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666765"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Développer des applications pour la plateforme Windows universelle (UWP)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Avec la plateforme Windows universelle et notre noyau Windows, vous pouvez exécuter la même application sur n’importe quel appareil Windows 10, des téléphones jusqu’aux ordinateurs de bureau. Créez ces applications Windows universelles avec Visual Studio 2015 et les outils de développement d’applications Windows universelles.  
   
  ![Plateforme Windows universelle](../cross-platform/media/uwp-coreextensions.png "UWP_CoreExtensions")  
@@ -34,7 +33,7 @@ Avec la plateforme Windows universelle et notre noyau Windows, vous pouvez exéc
   
  C’est tout simplement un ensemble de contrats et de versions, qui vous permettent de choisir les cibles d’exécution de votre application. Vous ne ciblez plus un système d’exploitation. À présent, vous ciblez votre application sur une ou plusieurs familles d’appareils. En savoir plus grâce à ce [guide de plateforme](http://msdn.microsoft.com/library/windows/apps/dn894631.aspx).  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  Les outils de développement d’applications Windows universelles sont fournis avec des émulateurs qui vous permettent de vérifier l’apparence de votre application sur différents appareils. Si vous souhaitez utiliser ces émulateurs, vous devez installer ce logiciel sur un ordinateur physique. L’ordinateur physique doit exécuter Windows 8.1 (x64) Professionnel ou une version ultérieure, et être équipé d’un processeur qui prend en charge Hyper-V Client et la conversion SLAT (Second Level Address Translation). Vous ne pouvez pas utiliser les émulateurs quand Visual Studio est installé sur un ordinateur virtuel.  
   
  Voici la liste des logiciels dont vous avez besoin :  
@@ -49,7 +48,7 @@ Avec la plateforme Windows universelle et notre noyau Windows, vous pouvez exéc
   
   Si vous choisissez de développer des applications Windows universelles avec Visual Studio 2015 sur une plateforme autre que Windows 10, voici les restrictions :  
   
-- Windows 8.1 Vous ne pouvez pas exécuter l’application localement (uniquement sur un appareil Windows 10 distant). Vous pouvez utiliser les émulateurs dans Visual Studio, mais pas le simulateur.  
+- Windows 8.1 : Vous ne pouvez pas exécuter l’application localement (uniquement sur un appareil Windows 10 distant). Vous pouvez utiliser les émulateurs dans Visual Studio, mais pas le simulateur.  
   
 - Windows 7 : Vous ne pouvez pas exécuter l’application localement (uniquement sur un appareil Windows 10 distant). Vous ne pouvez pas non plus utiliser les émulateurs ou le simulateur dans Visual Studio.  
   

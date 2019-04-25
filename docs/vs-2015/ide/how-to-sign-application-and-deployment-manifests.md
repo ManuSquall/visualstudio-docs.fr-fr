@@ -18,14 +18,14 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0ccd3d6b6f9c1d995a0aebb4bc1e3007e025ca5e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ef782929b24d6f5e06c8e64aec53763481c503eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784182"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051699"
 ---
-# <a name="how-to-sign-application-and-deployment-manifests"></a>Guide pratique pour signer des manifestes d’application et de déploiement
+# <a name="how-to-sign-application-and-deployment-manifests"></a>Procédure : Application de connexion et les manifestes de déploiement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Si vous souhaitez publier une application à l’aide du déploiement ClickOnce, vous devez signer les manifestes d’application et de déploiement avec une paire de clés publique/privée et à l’aide de la technologie Authenticode. Vous pouvez signer les manifestes à l’aide d’un certificat à partir du magasin de certificats Windows ou d’un fichier de clé.  
@@ -34,50 +34,50 @@ Si vous souhaitez publier une application à l’aide du déploiement ClickOnce,
   
  La signature des manifestes ClickOnce est facultative pour les applications .exe. Pour plus d’informations, consultez la section « Génération de manifestes non signés » de ce document.  
   
- Pour plus d’informations sur la création de fichiers de clés, consultez [Comment : créer une paire de clés publique/privée](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
+ Pour plus d’informations sur la création des fichiers de clés, consultez [Guide pratique pour créer une paire de clés publique/privée](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
   
 > [!NOTE]
 >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prend uniquement en charge les fichiers de clés PFX (Personal Information Exchange) portant l’extension .pfx. Toutefois, vous pouvez sélectionner d’autres types de certificats à partir du magasin de certificats Windows de l’utilisateur actuel en cliquant sur **Sélectionner dans Store** dans la page **Signature** des propriétés du projet.  
   
 ### <a name="to-sign-application-and-deployment-manifests-using-a-certificate"></a>Pour signer des manifestes d’application et de déploiement à l’aide d’un certificat  
   
-1.  Accédez à la fenêtre des propriétés du projet (cliquez avec le bouton droit sur le nœud de projet dans l’**Explorateur de solutions** et sélectionnez **Propriétés** ou tapez **propriétés de projet** dans la fenêtre **Lancement rapide**, ou appuyez sur Alt+Entrée dans la fenêtre de l’**Explorateur de solutions**). Sous l’onglet **Signature**, cochez la case **Signer les manifestes ClickOnce**.  
+1. Accédez à la fenêtre des propriétés du projet (cliquez avec le bouton droit sur le nœud de projet dans l’**Explorateur de solutions** et sélectionnez **Propriétés** ou tapez **propriétés de projet** dans la fenêtre **Lancement rapide**, ou appuyez sur Alt+Entrée dans la fenêtre de l’**Explorateur de solutions**). Sous l’onglet **Signature**, cochez la case **Signer les manifestes ClickOnce**.  
   
-2.  Cliquez sur le bouton **Sélectionner dans Store**.  
+2. Cliquez sur le bouton **Sélectionner dans Store**.  
   
      La boîte de dialogue **Sélectionner un certificat** apparaît et affiche le contenu du magasin de certificats Windows.  
   
     > [!TIP]
     >  Si vous cliquez sur **Cliquez ici pour afficher les propriétés du certificat**, la boîte de dialogue **Détails du certificat** s’affiche. Cette boîte de dialogue inclut des informations détaillées sur le certificat et des options supplémentaires. Vous pouvez cliquer sur **Certificats** pour afficher des informations d’aide supplémentaires.  
   
-3.  Sélectionnez le certificat que vous souhaitez utiliser pour signer les manifestes.  
+3. Sélectionnez le certificat que vous souhaitez utiliser pour signer les manifestes.  
   
-4.  Vous pouvez aussi spécifier l’adresse d’un serveur d’horodatage dans la zone de texte **URL du serveur d’horodatage**. Ce serveur fournit un horodatage spécifiant quand le manifeste a été signé.  
+4. Vous pouvez aussi spécifier l’adresse d’un serveur d’horodatage dans la zone de texte **URL du serveur d’horodatage**. Ce serveur fournit un horodatage spécifiant quand le manifeste a été signé.  
   
 ### <a name="to-sign-application-and-deployment-manifests-using-an-existing-key-file"></a>Pour signer des manifestes d’application et de déploiement à l’aide d’un fichier de clé existant  
   
-1.  Dans la page **Signature**, cochez la case **Signer les manifestes ClickOnce**.  
+1. Dans la page **Signature**, cochez la case **Signer les manifestes ClickOnce**.  
   
-2.  Cliquez sur le bouton **À partir d’un fichier**.  
+2. Cliquez sur le bouton **À partir d’un fichier**.  
   
      La boîte de dialogue **Sélectionner le fichier** s’affiche.  
   
-3.  Dans la boîte de dialogue **Sélectionner le fichier**, recherchez l’emplacement du fichier de clé (.pfx) que vous souhaitez utiliser, puis cliquez sur **Ouvrir**.  
+3. Dans la boîte de dialogue **Sélectionner le fichier**, recherchez l’emplacement du fichier de clé (.pfx) que vous souhaitez utiliser, puis cliquez sur **Ouvrir**.  
   
     > [!NOTE]
     >  Cette option prend uniquement en charge les fichiers ayant l’extension .pfx. Si vous avez un fichier de clé ou un certificat dans un autre format, stockez-le dans le magasin de certificats Windows et sélectionnez le certificat, comme indiqué dans la procédure précédente. L’objet du certificat sélectionné doit inclure la signature de code.  
   
      La boîte de dialogue **Entrez le mot de passe pour ouvrir le fichier** s’affiche. (Si le fichier .pfx est déjà stocké dans votre magasin de certificats Windows ou qu’il n’est pas protégé par un mot de passe, vous n’êtes pas invité à entrer un mot de passe.)  
   
-4.  Entrez le mot de passe pour accéder au fichier de clé et appuyez sur Entrée.  
+4. Entrez le mot de passe pour accéder au fichier de clé et appuyez sur Entrée.  
   
 ### <a name="to-sign-application-and-deployment-manifests-using-a-test-certificate"></a>Pour signer des manifestes d’application et de déploiement à l’aide d’un certificat de test  
   
-1.  Dans la page **Signature**, cochez la case **Signer les manifestes ClickOnce**.  
+1. Dans la page **Signature**, cochez la case **Signer les manifestes ClickOnce**.  
   
-2.  Pour créer un certificat de test, cliquez sur le bouton **Créer un certificat de test**.  
+2. Pour créer un certificat de test, cliquez sur le bouton **Créer un certificat de test**.  
   
-3.  Dans la boîte de dialogue **Créer un certificat de test**, entrez un mot de passe pour sécuriser votre certificat de test.  
+3. Dans la boîte de dialogue **Créer un certificat de test**, entrez un mot de passe pour sécuriser votre certificat de test.  
   
 ## <a name="generating-unsigned-manifests"></a>Génération de manifestes non signés  
  La signature des manifestes ClickOnce est facultative pour les applications .exe. Les procédures suivantes montrent comment générer des manifestes ClickOnce non signés.  
@@ -89,27 +89,27 @@ Si vous souhaitez publier une application à l’aide du déploiement ClickOnce,
   
 #### <a name="to-generate-unsigned-manifests-and-include-all-files-in-the-generated-hash"></a>Pour générer des manifestes non signés et inclure tous les fichiers dans le hachage généré  
   
-1.  Pour générer des manifestes non signés qui incluent tous les fichiers dans le hachage, vous devez d’abord publier l’application avec des manifestes signés. Vous devez donc signer les manifestes ClickOnce en effectuant l’une des procédures précédentes, puis publier l’application.  
+1. Pour générer des manifestes non signés qui incluent tous les fichiers dans le hachage, vous devez d’abord publier l’application avec des manifestes signés. Vous devez donc signer les manifestes ClickOnce en effectuant l’une des procédures précédentes, puis publier l’application.  
   
-2.  Dans la page **Signature**, décochez la case **Signer les manifestes ClickOnce**.  
+2. Dans la page **Signature**, décochez la case **Signer les manifestes ClickOnce**.  
   
-3.  Redéfinissez la version de publication afin qu’une seule version de votre application soit disponible. Par défaut, Visual Studio incrémente automatiquement le numéro de révision de la version de publication chaque fois que vous publiez une application. Pour plus d’informations, consultez [Guide pratique pour définir la version de publication ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md).  
+3. Redéfinissez la version de publication afin qu’une seule version de votre application soit disponible. Par défaut, Visual Studio incrémente automatiquement le numéro de révision de la version de publication chaque fois que vous publiez une application. Pour plus d'informations, voir [Procédure : Définir la publication ClickOnce Version](../deployment/how-to-set-the-clickonce-publish-version.md).  
   
-4.  Publiez l'application.  
+4. Publiez l'application.  
   
 #### <a name="to-generate-unsigned-manifests-and-exclude-one-or-more-files-from-the-generated-hash"></a>Pour générer des manifestes non signés et exclure un ou plusieurs fichiers du hachage généré  
   
-1.  Dans la page **Signature**, décochez la case **Signer les manifestes ClickOnce**.  
+1. Dans la page **Signature**, décochez la case **Signer les manifestes ClickOnce**.  
   
-2.  Ouvrez la boîte de dialogue **Fichiers d’application** et définissez le **Hachage** sur **Exclure** pour les fichiers que vous souhaitez exclure du hachage généré.  
+2. Ouvrez la boîte de dialogue **Fichiers d’application** et définissez le **Hachage** sur **Exclure** pour les fichiers que vous souhaitez exclure du hachage généré.  
   
     > [!NOTE]
     >  Quand un fichier est exclu du hachage, ClickOnce est configuré pour désactiver la signature automatique des manifestes ; vous n’avez donc pas besoin de procéder à une publication préalable avec des manifestes signés comme indiqué dans la procédure précédente.  
   
-3.  Publiez l'application.  
+3. Publiez l'application.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Assemblys avec nom fort](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
- [Comment : créer une paire de clés publique/privée](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)   
+ [Guide pratique pour Créer une paire de clés publique / privée](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)   
  [Page Signature, Concepteur de projet](../ide/reference/signing-page-project-designer.md)   
  [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md)

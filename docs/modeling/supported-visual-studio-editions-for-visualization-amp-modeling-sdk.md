@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f73ebb646c152509be9a7fbdd3287f2673ddadb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1e5898a95f10875f0880e4b4799f17b78aa8e79b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907514"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073330"
 ---
 # <a name="supported-visual-studio-editions-for-visualization--modeling-sdk"></a>Éditions de Visual Studio prises en charge pour la visualisation et la modélisation du Kit de développement logiciel (SDK)
 
@@ -37,13 +37,13 @@ Pour définir un DSL, vous devez avoir installé les composants suivants :
 
 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] prend en charge les configurations suivantes pour déployer les langages spécifiques à un domaine que vous créez :
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
--   Visual Studio Professional
+- Visual Studio Professional
 
--   Package redistribuable Visual Studio Shell (mode intégré) redistributable package
+- Package redistribuable Visual Studio Shell (mode intégré) redistributable package
 
--   Package redistribuable Visual Studio Shell (mode isolé) package redistribuable
+- Package redistribuable Visual Studio Shell (mode isolé) package redistribuable
 
 > [!NOTE]
 > Pour rendre un DSL puisse s’exécuter sur un produit Shell, vous devez définir le **pris en charge les éditions de Visual Studio** champ dans le manifeste d’Extension. Pour plus d’informations, consultez [déploiement de Solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).

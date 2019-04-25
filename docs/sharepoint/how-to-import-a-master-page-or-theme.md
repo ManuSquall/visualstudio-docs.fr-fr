@@ -13,39 +13,39 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a415a1021514a4d8b962e4a65a22b691edc66d9d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1be553955abdc42c2a9b4d09ff857e9236b1a002
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635148"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081904"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Procédure : Importer une page maître ou un thème
   Vous pouvez attribuer aux pages sur votre site SharePoint une apparence cohérente en créant et en utilisant des thèmes et des pages maîtres. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ne fournit pas les modèles pour ces éléments, mais vous pouvez les créer dans SharePoint Designer et importez-les dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Pour plus d’informations, consultez [bloc de construction : Pages et l’Interface utilisateur](http://go.microsoft.com/fwlink/?LinkID=182095) sur le site Web Microsoft.
 
 ### <a name="to-import-a-master-page-or-theme"></a>Pour importer une page maître ou un thème
 
-1.  Dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], créez ou ouvrez un projet SharePoint.
+1. Dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], créez ou ouvrez un projet SharePoint.
 
      Pour plus d’informations sur la création d’un projet SharePoint, consultez [SharePoint modèles d’élément de projet et le projet](../sharepoint/sharepoint-project-and-project-item-templates.md).
 
-2.  Dans la barre de menus, choisissez **Projet** > **Ajouter un nouvel élément**.
+2. Dans la barre de menus, choisissez **Projet** > **Ajouter un nouvel élément**.
 
-3.  Dans le **ajouter un nouvel élément** boîte de dialogue, développez le **SharePoint** nœud, puis choisissez le **2010** nœud.
+3. Dans le **ajouter un nouvel élément** boîte de dialogue, développez le **SharePoint** nœud, puis choisissez le **2010** nœud.
 
-4.  Dans la liste de modèles SharePoint, choisissez le **Module** modèle, puis spécifiez un nom pour le module.
+4. Dans la liste de modèles SharePoint, choisissez le **Module** modèle, puis spécifiez un nom pour le module.
 
      Un module contient des fichiers (par exemple, page maître ou des fichiers de thème) pour le déploiement vers un emplacement que vous spécifiez dans SharePoint.
 
-5.  Dans le module, supprimez le fichier par défaut, qui est nommé *Sample.txt*.
+5. Dans le module, supprimez le fichier par défaut, qui est nommé *Sample.txt*.
 
-6.  Choisissez le nœud du module.
+6. Choisissez le nœud du module.
 
-7.  Dans la barre de menus, choisissez **projet** > **ajouter un élément existant**, puis choisissez le fichier de page ou un thème principal.
+7. Dans la barre de menus, choisissez **projet** > **ajouter un élément existant**, puis choisissez le fichier de page ou un thème principal.
 
      Les fichiers de page maître portent l’extension .master et fichiers de thème portent l’extension .thmx.
 
-8.  Si vous avez ajouté une page maître, modifiez son **Deployment Conflict Resolution** à **automatique** dans les propriétés du module.
+8. Si vous avez ajouté une page maître, modifiez son **Deployment Conflict Resolution** à **automatique** dans les propriétés du module.
 
     > [!NOTE]
     >  Erreurs peuvent se produire si le nom de la page maître est le même que le nom d’une page maître existante qui est marquée comme Page maître par défaut ou Page maître personnalisée. Pour plus d’informations sur la façon de résoudre ce problème, consultez [procédure pas à pas : Importer une page maître personnalisée et la page de site avec une image](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md).

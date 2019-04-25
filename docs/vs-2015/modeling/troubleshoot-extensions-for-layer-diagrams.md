@@ -12,12 +12,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3087353b4d8875d1933c285343c3f1460c0e276
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba45ba733f5447523b6793d4f5e2946c3507c82e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948844"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098687"
 ---
 # <a name="troubleshoot-extensions-for-layer-diagrams"></a>Dépanner les extensions des diagrammes de couche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,13 +45,13 @@ Cette rubrique aborde certains problèmes que vous pouvez rencontrer quand vous 
   
 #### <a name="an-old-version-of-my-validation-results-appears-or-my-validation-method-is-not-called"></a>Une ancienne version de mes résultats de validation s'affiche ou ma méthode de validation n'est pas appelée.  
   
-1.  Dans l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], dans le **Build** menu, cliquez sur **nettoyer la Solution**. Cette opération efface les résultats mis en cache de l'analyse de validation précédente.  
+1. Dans l’instance expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], dans le **Build** menu, cliquez sur **nettoyer la Solution**. Cette opération efface les résultats mis en cache de l'analyse de validation précédente.  
   
-2.  Assurez-vous que les couches dans votre modèle sont associées à des éléments de code et qu'il existe au moins un lien de dépendance dans le modèle. La validation n'est pas appelée s'il n'y a rien à valider.  
+2. Assurez-vous que les couches dans votre modèle sont associées à des éléments de code et qu'il existe au moins un lien de dépendance dans le modèle. La validation n'est pas appelée s'il n'y a rien à valider.  
   
-3.  Les points d'arrêt ordinaires peuvent ne pas fonctionner dans une méthode de validation, car elle s'exécute dans un processus séparé. Vous devez insérer un appel à `System.Diagnostics.Debugger.Launch()` si vous souhaitez parcourir votre méthode pas à pas.  
+3. Les points d'arrêt ordinaires peuvent ne pas fonctionner dans une méthode de validation, car elle s'exécute dans un processus séparé. Vous devez insérer un appel à `System.Diagnostics.Debugger.Launch()` si vous souhaitez parcourir votre méthode pas à pas.  
   
-4.  Dans **source.extension.vsixmanifest** dans votre projet de validation de couche, assurez-vous que vous avez ajouté à la fois un **composant MEF** élément et un **Type d’Extension personnalisée** sous **Contenu**.  
+4. Dans **source.extension.vsixmanifest** dans votre projet de validation de couche, assurez-vous que vous avez ajouté à la fois un **composant MEF** élément et un **Type d’Extension personnalisée** sous **Contenu**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Étendre des diagrammes de couche](../modeling/extend-layer-diagrams.md)

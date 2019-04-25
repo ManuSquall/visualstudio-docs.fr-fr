@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour spécifier des commandes de pré-instrumentation et de post-instrumentation | Microsoft Docs
+title: 'Procédure : spécifier des commandes de pré-instrumentation et de post-instrumentation | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,14 +15,14 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b548265959ed2be10feb1096d7dc92d95a6cfed0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 1485ee6f0737363bc6ab9105b70c93acef866c82
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792830"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038341"
 ---
-# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Guide pratique pour spécifier des commandes de pré-instrumentation et de post-instrumentation
+# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Procédure : Spécifier des commandes de prétraitement et de post-instrumentation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez spécifier des commandes qui s’exécutent avant ou après l’instrumentation des fichiers binaires d’une session de performance. Vous pouvez spécifier toute commande pouvant être émise à partir de la ligne de commande comme événement de pré-instrumentation ou de post-instrumentation. Par exemple, vous pouvez spécifier des commandes qui automatisent la nouvelle signature d’un assembly avec une clé de nom fort dans un fichier de commandes exécuté une fois les fichiers binaires instrumentés.  
@@ -53,39 +53,39 @@ Vous pouvez spécifier des commandes qui s’exécutent avant ou après l’inst
   
 ### <a name="to-specify-pre-instrument-commands"></a>Pour spécifier des commandes de pré-instrumentation  
   
-1.  Effectuez l’une des opérations suivantes :  
+1. Effectuez l’une des opérations suivantes :  
   
-    -   Pour spécifier des commandes de pré-instrumentation pour l’ensemble des fichiers binaires dans une session de performance, sélectionnez le nœud de la session de performance dans l’**Explorateur de performances**, puis cliquez avec le bouton droit et sélectionnez **Propriétés**.  
+    - Pour spécifier des commandes de pré-instrumentation pour l’ensemble des fichiers binaires dans une session de performance, sélectionnez le nœud de la session de performance dans l’**Explorateur de performances**, puis cliquez avec le bouton droit et sélectionnez **Propriétés**.  
   
-    -   Pour spécifier des commandes de pré-instrumentation pour un fichier binaire spécifique, cliquez avec le bouton droit sur le nom du fichier binaire dans la liste **Cibles** de la session de performance, puis sélectionnez **Propriétés**.  
+    - Pour spécifier des commandes de pré-instrumentation pour un fichier binaire spécifique, cliquez avec le bouton droit sur le nom du fichier binaire dans la liste **Cibles** de la session de performance, puis sélectionnez **Propriétés**.  
   
-2.  Dans la boîte de dialogue **Pages de propriétés**, cliquez sur **Instrumentation**.  
+2. Dans la boîte de dialogue **Pages de propriétés**, cliquez sur **Instrumentation**.  
   
-3.  Tapez la commande dans la zone de texte **Ligne de commande** sous **Événements de pré-instrumentation**.  
+3. Tapez la commande dans la zone de texte **Ligne de commande** sous **Événements de pré-instrumentation**.  
   
     > [!NOTE]
     >  Vous pouvez cliquer sur le bouton de sélection  **(...)**  en regard de la zone **Ligne de commande** pour rechercher et sélectionner le fichier .exe, .cmd ou .bat approprié.  
   
-4.  Cliquez sur **OK**.  
+4. Cliquez sur **OK**.  
   
      Pour empêcher la commande de s’exécuter sans la supprimer, cochez la case **Exclure de l’instrumentation**. Pour modifier les paramètres du compilateur ou de l’éditeur de liens, utilisez les pages de propriétés du projet.  
   
 ### <a name="to-specify-post-instrument-commands"></a>Pour spécifier des commandes de post-instrumentation  
   
-1.  Effectuez l’une des opérations suivantes :  
+1. Effectuez l’une des opérations suivantes :  
   
-    -   Pour spécifier des commandes de post-instrumentation pour l’ensemble des fichiers binaires dans une session de performance, sélectionnez le nœud de la session de performance dans l’**Explorateur de performances**, puis cliquez avec le bouton droit et sélectionnez **Propriétés**.  
+    - Pour spécifier des commandes de post-instrumentation pour l’ensemble des fichiers binaires dans une session de performance, sélectionnez le nœud de la session de performance dans l’**Explorateur de performances**, puis cliquez avec le bouton droit et sélectionnez **Propriétés**.  
   
-    -   Pour spécifier des commandes de post-instrumentation pour un fichier binaire spécifique, cliquez avec le bouton droit sur le nom du fichier binaire dans la liste **Cibles** de la session de performance, puis sélectionnez **Propriétés**.  
+    - Pour spécifier des commandes de post-instrumentation pour un fichier binaire spécifique, cliquez avec le bouton droit sur le nom du fichier binaire dans la liste **Cibles** de la session de performance, puis sélectionnez **Propriétés**.  
   
-2.  Dans la boîte de dialogue **Pages de propriétés**, cliquez sur **Instrumentation**.  
+2. Dans la boîte de dialogue **Pages de propriétés**, cliquez sur **Instrumentation**.  
   
-3.  Tapez la commande dans la zone de texte **Ligne de commande** sous **Événements de post-instrumentation**.  
+3. Tapez la commande dans la zone de texte **Ligne de commande** sous **Événements de post-instrumentation**.  
   
     > [!NOTE]
     >  Vous pouvez cliquer sur le bouton de sélection  **(...)**  en regard de la zone **Ligne de commande** pour rechercher et sélectionner le fichier .exe, .cmd ou .bat approprié.  
   
-4.  Cliquez sur **OK**.  
+4. Cliquez sur **OK**.  
   
      Pour empêcher la commande de s’exécuter sans la supprimer, cochez la case **Exclure de l’instrumentation**. Pour modifier les paramètres du compilateur ou de l’éditeur de liens, utilisez les pages de propriétés du projet.  
   

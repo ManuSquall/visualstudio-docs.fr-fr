@@ -1,14 +1,9 @@
 ---
 title: Prise en charge des extraits de Code dans un Service de langage hérité | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - snippets, supporting in language services
 - code snippets, supporting in language services [managed package framework]
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 caps.latest.revision: 29
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: bf26d48c541806a1dd65a0ffb4a8e3e974b11db4
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 8a96e6b10b68fc3b3275fbadb07de310c224da8c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51795763"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104903"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Prise en charge des extraits de code dans un service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +26,7 @@ Un extrait de code est un morceau de code est inséré dans le fichier source. L
   
  L’extrait de code est inséré dans un mode d’édition spéciale qui permet les champs de l’extrait de code pour permettre une navigation à l’aide de la touche TAB. Les champs peuvent prendre en charge les menus déroulants de type IntelliSense. L’utilisateur valide l’extrait de code dans le fichier source en tapant l’entrée ou la touche ÉCHAP. Pour en savoir plus sur les extraits de code, consultez [extraits de Code](../../ide/code-snippets.md).  
   
- Services de langage hérité sont implémentés en tant que partie d’un VSPackage, mais la plus récente pour implémenter des fonctionnalités de service de langage consiste à utiliser des extensions MEF. Pour plus d’informations, consultez [procédure pas à pas : implémentation des extraits de Code](../../extensibility/walkthrough-implementing-code-snippets.md).  
+ Services de langage hérité sont implémentés en tant que partie d’un VSPackage, mais la plus récente pour implémenter des fonctionnalités de service de langage consiste à utiliser des extensions MEF. Pour plus d’informations, consultez [procédure pas à pas : Implémentation d’extraits de Code](../../extensibility/walkthrough-implementing-code-snippets.md).  
   
 > [!NOTE]
 >  Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorer les performances de votre service de langage et vous permettent de tirer parti des nouvelles fonctionnalités de l’éditeur.  
@@ -46,16 +41,16 @@ Un extrait de code est un morceau de code est inséré dans le fichier source. L
 ## <a name="providing-support-for-code-snippets"></a>Prise en charge pour les extraits de Code  
  Pour activer la prise en charge des extraits de code, vous devez fournir ou installer les extraits de code et vous devez fournir les moyens pour l’utilisateur d’insérer ces extraits de code. Il existe trois étapes de permettre la prise en charge des extraits de code :  
   
-1.  Installation des fichiers d’extrait de code.  
+1. Installation des fichiers d’extrait de code.  
   
-2.  L’activation des extraits de code pour votre service de langage.  
+2. L’activation des extraits de code pour votre service de langage.  
   
-3.  Appeler le <xref:Microsoft.VisualStudio.Package.ExpansionProvider> objet.  
+3. Appeler le <xref:Microsoft.VisualStudio.Package.ExpansionProvider> objet.  
   
 ### <a name="installing-the-snippet-files"></a>Installation des fichiers d’extrait de code  
  Tous les extraits de code pour une langue sont stockés en tant que modèles dans des fichiers XML, généralement un modèle d’extrait par fichier. Pour plus d’informations sur le schéma XML utilisé pour les modèles d’extrait de code, consultez [référence de schéma des extraits de Code](../../ide/code-snippets-schema-reference.md). Chaque modèle d’extrait de code est identifié avec un ID de langue. Ce langage ID est spécifié dans le Registre et qu’il est placé dans le `Language` attribut de la \<Code > balise dans le modèle.  
   
- Il existe généralement deux emplacements où sont stockés les fichiers de modèle d’extrait de code : 1) où votre langue a été installée et (2) dans le dossier de l’utilisateur. Ces emplacements sont ajoutés au Registre ainsi que Visual Studio **Gestionnaire des extraits de Code** peut rechercher les extraits de code. Dossier de l’utilisateur est où les extraits de code créés par l’utilisateur sont stockés.  
+ Il existe généralement deux emplacements où sont stockés les fichiers de modèle d’extrait de code : (1) où votre langage a été installé et 2) dans le dossier de l’utilisateur. Ces emplacements sont ajoutés au Registre ainsi que Visual Studio **Gestionnaire des extraits de Code** peut rechercher les extraits de code. Dossier de l’utilisateur est où les extraits de code créés par l’utilisateur sont stockés.  
   
  La mise en page de dossier par défaut pour les fichiers de modèle d’extrait de code installé ressemble à ceci : *[InstallRoot]*\\ *[TestLanguage]* \Snippets\\ *[LCID]* \Snippets.  
   
@@ -92,11 +87,11 @@ Un extrait de code est un morceau de code est inséré dans le fichier source. L
   
 |Élément|Description|  
 |-------------|-----------------|  
-|LCID %|ID de paramètres régionaux.|  
+|%LCID%|ID de paramètres régionaux.|  
 |%InstallRoot%|Dossier d’installation racine pour Visual Studio, par exemple, C:\Program Files\Microsoft Visual Studio 8.|  
-|% ProjDir %|Dossier contenant le projet actuel.|  
-|% ProjItem %|Dossier contenant l’élément de projet actuel.|  
-|% TestDocs %|Dossier dans le dossier paramètres de l’utilisateur, par exemple, C:\Documents and Settings\\ *[username]* documents\Visual Studio\8.|  
+|%ProjDir%|Dossier contenant le projet actuel.|  
+|%ProjItem%|Dossier contenant l’élément de projet actuel.|  
+|%TestDocs%|Dossier dans le dossier paramètres de l’utilisateur, par exemple, C:\Documents and Settings\\ *[username]* documents\Visual Studio\8.|  
   
 ### <a name="enabling-code-snippets-for-your-language-service"></a>L’activation des extraits de Code pour votre Service de langage  
  Vous pouvez activer des extraits de code pour votre service de langage en ajoutant le <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> attribut votre VSPackage (consultez [l’inscription d’un Service de langage hérité](../../extensibility/internals/registering-a-legacy-language-service1.md) pour plus d’informations). Le <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A> et <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> paramètres sont facultatifs, mais vous devez inclure le `SearchPaths` paramètre nommé afin d’informer le **Gestionnaire des extraits de Code** de l’emplacement de vos extraits.  
@@ -122,9 +117,9 @@ Un extrait de code est un morceau de code est inséré dans le fichier source. L
 ### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>Insérer un extrait de Code à l’aide d’une commande de Menu  
  Pour utiliser une commande de menu pour afficher le navigateur de l’extrait de code, vous ajoutez une commande de menu et appelez ensuite la <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> méthode dans le <xref:Microsoft.VisualStudio.Package.ExpansionProvider> interface en réponse à cette commande de menu.  
   
-1.  Ajouter une commande et un bouton à votre fichier .vsct. Vous trouverez des instructions permettant d’effectuer dans [procédure pas à pas : création un Menu commande à l’aide du modèle de Package Visual Studio](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
+1. Ajouter une commande et un bouton à votre fichier .vsct. Vous trouverez des instructions permettant d’effectuer dans [procédure pas à pas : Création d’une commande de Menu à l’aide du modèle de Package Visual Studio](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
   
-2.  Dérivez une classe de la <xref:Microsoft.VisualStudio.Package.ViewFilter> classe et substituer la <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> méthode pour indiquer la prise en charge de la nouvelle commande de menu. Cet exemple permet toujours de la commande de menu.  
+2. Dérivez une classe de la <xref:Microsoft.VisualStudio.Package.ViewFilter> classe et substituer la <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> méthode pour indiquer la prise en charge de la nouvelle commande de menu. Cet exemple permet toujours de la commande de menu.  
   
     ```csharp  
     using Microsoft.VisualStudio.Package;  
@@ -160,7 +155,7 @@ Un extrait de code est un morceau de code est inséré dans le fichier source. L
     }  
     ```  
   
-3.  Remplacer le <xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A> méthode dans le <xref:Microsoft.VisualStudio.Package.ViewFilter> classe pour obtenir le <xref:Microsoft.VisualStudio.Package.ExpansionProvider> objet et appelez le <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> méthode sur cet objet.  
+3. Remplacer le <xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A> méthode dans le <xref:Microsoft.VisualStudio.Package.ViewFilter> classe pour obtenir le <xref:Microsoft.VisualStudio.Package.ExpansionProvider> objet et appelez le <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> méthode sur cet objet.  
   
     ```csharp  
     using Microsoft.VisualStudio.Package;  
@@ -212,22 +207,22 @@ Un extrait de code est un morceau de code est inséré dans le fichier source. L
   
      Les méthodes suivantes dans le <xref:Microsoft.VisualStudio.Package.ExpansionProvider> classe sont appelées par Visual Studio dans l’ordre indiqué au cours du processus de l’insertion de l’extrait de code :  
   
-4.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>  
+4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>  
   
-5.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>  
+5. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>  
   
-6.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>  
+6. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>  
   
-7.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>  
+7. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>  
   
-8.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
+8. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
   
      Après le <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A> est appelée, l’extrait de code a été inséré et le <xref:Microsoft.VisualStudio.Package.ExpansionProvider> objet est en mode édition spéciale utilisé pour la modification d’un extrait de code qui vient d’être inséré.  
   
 ### <a name="inserting-a-code-snippet-by-using-a-shortcut"></a>Insérer un extrait de code à l’aide d’un raccourci  
  Implémentation d’un raccourci à partir d’une liste de saisie semi-automatique est beaucoup plus complexe que l’implémentation d’une commande de menu. Vous devez tout d’abord ajouter des raccourcis de l’extrait de code à la liste de saisie semi-automatique IntelliSense. Puis vous devez détecter quand un nom de raccourci d’extrait de code a été inséré à la suite de saisie semi-automatique. Enfin, vous devez obtenir le titre de l’extrait de code et le chemin d’accès en utilisant le nom de raccourci et transmettre ces informations pour le <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> méthode sur le <xref:Microsoft.VisualStudio.Package.ExpansionProvider> (méthode).  
   
- Pour ajouter des raccourcis de l’extrait de code à la liste de saisie semi-automatique, ajoutez-les à la <xref:Microsoft.VisualStudio.Package.Declarations> de l’objet dans votre <xref:Microsoft.VisualStudio.Package.AuthoringScope> classe. Il se peut que vous devez vous assurer que vous pouvez identifier le raccourci comme un nom de l’extrait de code. Pour obtenir un exemple, consultez [procédure pas à pas : obtention d’une liste d’installé des extraits de Code (implémentation héritée)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
+ Pour ajouter des raccourcis de l’extrait de code à la liste de saisie semi-automatique, ajoutez-les à la <xref:Microsoft.VisualStudio.Package.Declarations> de l’objet dans votre <xref:Microsoft.VisualStudio.Package.AuthoringScope> classe. Il se peut que vous devez vous assurer que vous pouvez identifier le raccourci comme un nom de l’extrait de code. Pour obtenir un exemple, consultez [Procédure pas à pas : Obtention d’une liste d’installé des extraits de Code (implémentation héritée)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
   
  Vous pouvez détecter l’insertion du raccourci d’extrait de code dans le <xref:Microsoft.VisualStudio.Package.Declarations.OnAutoComplete%2A> méthode de la <xref:Microsoft.VisualStudio.Package.Declarations> classe. Étant donné que le nom de l’extrait de code a déjà été inséré dans le fichier source, il doit être supprimé lors de l’expansion est insérée. Le <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> méthode prend une étendue qui décrit le point d’insertion pour l’extrait de code ; si l’étendue inclut le nom de l’extrait de code entier dans le fichier source, ce nom est remplacé par l’extrait de code.  
   
@@ -343,7 +338,7 @@ namespace TestLanguagePackage
   
 4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>  
   
-   Pour plus d’informations sur l’obtention d’une liste d’extraits de code installé pour votre service de langage, consultez [procédure pas à pas : obtention d’une liste d’installé des extraits de Code (implémentation héritée)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
+   Pour plus d’informations sur l’obtention d’une liste d’extraits de code installé pour votre service de langage, consultez [procédure pas à pas : Obtention d’une liste d’installé des extraits de Code (implémentation héritée)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md).  
   
 ## <a name="implementing-the-expansionfunction-class"></a>Implémentation de la classe ExpansionFunction  
  Une fonction d’expansion est une fonction nommée qui est incorporée dans un modèle d’extrait de code et retourne une ou plusieurs valeurs à placer dans un champ. Pour prendre en charge les fonctions d’extension dans votre service de langage, vous devez dériver une classe à partir de la <xref:Microsoft.VisualStudio.Package.ExpansionFunction> classe et implémenter la <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetCurrentValue%2A> (méthode). Vous devez remplacer le <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A> méthode dans le <xref:Microsoft.VisualStudio.Package.LanguageService> classe pour retourner une nouvelle instanciation de votre version de la <xref:Microsoft.VisualStudio.Package.ExpansionFunction> classe pour chaque fonction d’extension que vous prenez en charge. Si vous prenez en charge une liste de valeurs possibles à partir d’une fonction d’expansion, vous devez également substituer la <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetIntellisenseList%2A> méthode dans la <xref:Microsoft.VisualStudio.Package.ExpansionFunction> classe pour retourner une liste de ces valeurs.  
@@ -400,5 +395,4 @@ namespace TestLanguagePackage
  [Fonctionnalités de Service de langage hérité](../../extensibility/internals/legacy-language-service-features1.md)   
  [L’inscription d’un Service de langage hérité](../../extensibility/internals/registering-a-legacy-language-service1.md)   
  [Extraits de code](../../ide/code-snippets.md)   
- [Procédure pas à pas : Obtention d’une liste d’extraits de code installés (implémentation héritée)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
-
+ [Procédure pas à pas : Obtention d’une liste d’extraits de Code installés (implémentation héritée)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)

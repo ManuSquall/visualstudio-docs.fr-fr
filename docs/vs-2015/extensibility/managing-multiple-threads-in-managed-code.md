@@ -8,12 +8,12 @@ ms.assetid: 59730063-cc29-4dae-baff-2234ad8d0c8f
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7178b2d901d22956c93145c5e780144b894970de
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e1cde9cf66979815a804868f481910a2d0a21efa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938875"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111049"
 ---
 # <a name="managing-multiple-threads-in-managed-code"></a>Gérer plusieurs threads dans le code managé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Si vous avez une extension VSPackage managée qui appelle des méthodes asynchro
   
 ## <a name="switching-from-the-ui-thread-to-a-background-thread"></a>Basculement à partir du Thread d’interface utilisateur à un Thread d’arrière-plan  
   
-1.  Si vous êtes sur le thread d’interface utilisateur et que vous voulez faire le travail asynchrone sur un thread d’arrière-plan, utilisez Task.Run() :  
+1. Si vous êtes sur le thread d’interface utilisateur et que vous voulez faire le travail asynchrone sur un thread d’arrière-plan, utilisez Task.Run() :  
   
     ```csharp  
     await Task.Run(async delegate{  
@@ -37,7 +37,7 @@ Si vous avez une extension VSPackage managée qui appelle des méthodes asynchro
   
     ```  
   
-2.  Si vous êtes sur le thread d’interface utilisateur et que vous souhaitez bloquer de façon synchrone lorsque vous effectuez le travail sur un thread d’arrière-plan, utilisez la <xref:System.Threading.Tasks.TaskScheduler> propriété `TaskScheduler.Default` à l’intérieur de <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>:  
+2. Si vous êtes sur le thread d’interface utilisateur et que vous souhaitez bloquer de façon synchrone lorsque vous effectuez le travail sur un thread d’arrière-plan, utilisez la <xref:System.Threading.Tasks.TaskScheduler> propriété `TaskScheduler.Default` à l’intérieur de <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.Run%2A>:  
   
     ```csharp  
     // using Microsoft.VisualStudio.Threading;  
@@ -51,7 +51,7 @@ Si vous avez une extension VSPackage managée qui appelle des méthodes asynchro
   
 ## <a name="switching-from-a-background-thread-to-the-ui-thread"></a>Basculement à partir d’un Thread d’arrière-plan vers le Thread d’interface utilisateur  
   
-1.  Si vous êtes sur un thread d’arrière-plan et que vous voulez faire quelque chose sur le thread d’interface utilisateur, utilisez <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>:  
+1. Si vous êtes sur un thread d’arrière-plan et que vous voulez faire quelque chose sur le thread d’interface utilisateur, utilisez <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A>:  
   
     ```csharp  
     // Switch to main thread  

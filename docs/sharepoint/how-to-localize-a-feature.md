@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0d811b27f810ac9becf23513a25937e1a265d305
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f6e796cc00478ee823c345fd02738f8677c36373
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639087"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074635"
 ---
 # <a name="how-to-localize-a-feature"></a>Procédure : Localiser une fonctionnalité
   Par défaut, les descriptions et les titres des fonctionnalités utilisent des valeurs de chaîne codées en dur. Pour localiser le titre de la fonctionnalité et la description, remplacez les chaînes avec des expressions qui référencent des ressources localisées.
@@ -27,21 +27,21 @@ ms.locfileid: "56639087"
 
 #### <a name="to-localize-a-feature"></a>Pour localiser une fonctionnalité
 
-1.  Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le **Feature1** nœud, puis choisissez **ajouter une ressource de fonctionnalité**.
+1. Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le **Feature1** nœud, puis choisissez **ajouter une ressource de fonctionnalité**.
 
-2.  Dans le **ajouter une ressource** boîte de dialogue, sélectionnez **langue indifférente** dans la liste selon la culture pour le fichier de ressources de fonctionnalité de langage par défaut.
+2. Dans le **ajouter une ressource** boîte de dialogue, sélectionnez **langue indifférente** dans la liste selon la culture pour le fichier de ressources de fonctionnalité de langage par défaut.
 
-3.  Répétez l’étape précédente pour chaque langue localisée, en choisissant les langues de votre choix pour la fonctionnalité localisée des fichiers de ressources.
+3. Répétez l’étape précédente pour chaque langue localisée, en choisissant les langues de votre choix pour la fonctionnalité localisée des fichiers de ressources.
 
      Fichiers de ressources de fonctionnalité distincts sont créés : un pour la langue par défaut et un pour chaque langue localisée que vous souhaitez prendre en charge.
 
-4.  Ouvrez chaque fichier de ressources dans l’éditeur de ressources et entrez tous les ID de chaîne et leurs valeurs.
+4. Ouvrez chaque fichier de ressources dans l’éditeur de ressources et entrez tous les ID de chaîne et leurs valeurs.
 
      Par exemple, dans le fichier de ressources de fonctionnalité par défaut, entrez un ID de chaîne de **titre** avec la valeur **mon titre de fonctionnalité**, et un deuxième ID de chaîne de **Description** avec la valeur **Ma Description de la fonctionnalité**. Pour chaque fichier de ressources localisé, utilisez la même chaîne ID utilisés dans la ressource de fonctionnalité par défaut, mais entrez des chaînes localisées pour les valeurs.
 
-5.  Après avoir entré toutes les valeurs de ressource, ouvrez le menu contextuel de la fonctionnalité (par exemple, *Feature1.feature*), puis choisissez **Concepteur de vue** pour ouvrir la fonctionnalité dans le Concepteur de fonctionnalités.
+5. Après avoir entré toutes les valeurs de ressource, ouvrez le menu contextuel de la fonctionnalité (par exemple, *Feature1.feature*), puis choisissez **Concepteur de vue** pour ouvrir la fonctionnalité dans le Concepteur de fonctionnalités.
 
-6.  Pour localiser le **titre** et **Description** champs dans la fonctionnalité, utilisez le format suivant pour entrer des valeurs dans leurs zones :
+6. Pour localiser le **titre** et **Description** champs dans la fonctionnalité, utilisez le format suivant pour entrer des valeurs dans leurs zones :
 
      `$Resources:` *ID de chaîne*
 
@@ -49,9 +49,9 @@ ms.locfileid: "56639087"
 
      Les ID de chaîne doivent correspondre à celles qui sont utilisées dans les fichiers de ressources.
 
-7.  Choisissez le **F5** clé pour générer et exécuter l’application.
+7. Choisissez le **F5** clé pour générer et exécuter l’application.
 
-8.  Dans SharePoint, ouvrez le **Actions du Site** menu, choisissez **paramètres du Site**, puis, dans le **Actions du Site** section choisir le **gérer les fonctionnalités du Site** lien.
+8. Dans SharePoint, ouvrez le **Actions du Site** menu, choisissez **paramètres du Site**, puis, dans le **Actions du Site** section choisir le **gérer les fonctionnalités du Site** lien.
 
 9. Dans SharePoint, modifiez la langue d’affichage à partir de la valeur par défaut.
 

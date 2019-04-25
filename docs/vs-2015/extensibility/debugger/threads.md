@@ -11,23 +11,23 @@ ms.assetid: 2243d24a-c3d2-41d1-abbb-6db21a2db9ee
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c59ef3bdbbd96db82c8e865379907d95227628ab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 028ad25495ba01d9763c8bec3bbb9c4480d72ff8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952449"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054584"
 ---
 # <a name="threads"></a>Threads
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 En termes d’architecture du débogueur, une **thread**:  
   
--   Est l’unité fondamentale de calcul. Un thread exécute séquentiellement ses instructions dans le contexte d’une seule pile d’appels, déplacement à partir du contexte d’un code à l’autre.  
+- Est l’unité fondamentale de calcul. Un thread exécute séquentiellement ses instructions dans le contexte d’une seule pile d’appels, déplacement à partir du contexte d’un code à l’autre.  
   
--   Peut identifier lui-même et le programme est en cours d’exécution et peut être nommé, suspendu et repris. Un thread peut également énumérer ses frames de pile associée et, sous certaines conditions, peut être déplacé vers un autre frame de pile. Étant donné le contexte d’un frame de pile, un thread peut retourner son thread logique associé, le cas échéant. Un thread a des propriétés, telles que d’un compteur de suspension, ce qui peut être affiché dans la fenêtre Threads de l’IDE.  
+- Peut identifier lui-même et le programme est en cours d’exécution et peut être nommé, suspendu et repris. Un thread peut également énumérer ses frames de pile associée et, sous certaines conditions, peut être déplacé vers un autre frame de pile. Étant donné le contexte d’un frame de pile, un thread peut retourner son thread logique associé, le cas échéant. Un thread a des propriétés, telles que d’un compteur de suspension, ce qui peut être affiché dans la fenêtre Threads de l’IDE.  
   
--   Est représenté par un [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) interface, généralement créé par un moteur de débogage (dé) ou d’une machine virtuelle en raison de l’exécution d’un programme.  
+- Est représenté par un [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) interface, généralement créé par un moteur de débogage (dé) ou d’une machine virtuelle en raison de l’exécution d’un programme.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Programmes](../../extensibility/debugger/programs.md)   

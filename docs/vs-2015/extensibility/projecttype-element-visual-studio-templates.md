@@ -1,14 +1,9 @@
 ---
 title: ProjectType, élément (modèles Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-general
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-general
+ms.topic: reference
 f1_keywords:
 - http://schemas.microsoft.com/developer/vstemplate/2005#ProjectType
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: ccf9d83f-c7f3-49c7-a31f-e1f22bec004c
 caps.latest.revision: 20
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: d76962d5a8b90b5cc947721608aa1758193fe6c7
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: f1cd8e7e85b9753c3742044ae2a557cdf4637214
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51721730"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084880"
 ---
 # <a name="projecttype-element-visual-studio-templates"></a>ProjectType, élément (modèles Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +27,9 @@ Catégorie du modèle de projet pour qu’il apparaisse sous le groupe spécifi�
 > [!WARNING]
 >  Modèles de projet sont pris en charge pour C++ à partir de Visual Studio 2012. Ils ne sont pas pris en charge pour C++ dans Visual Studio 2010 et versions antérieures.  
   
- \<VSTemplate >  
- \<TemplateData >  
- \<ProjectType >  
+ \<VSTemplate>  
+ \<TemplateData>  
+ \<ProjectType>  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -62,11 +57,11 @@ Catégorie du modèle de projet pour qu’il apparaisse sous le groupe spécifi�
   
  Cette valeur spécifie le type de projet, le modèle créera et doit contenir l’une des valeurs suivantes :  
   
--   `CSharp`: Spécifie que le modèle crée un [!INCLUDE[csprcs](../includes/csprcs-md.md)] projet ou un élément.  
+- `CSharp`: Spécifie que le modèle crée un [!INCLUDE[csprcs](../includes/csprcs-md.md)] projet ou un élément.  
   
--   `VisualBasic`: Spécifie que le modèle crée un [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projet ou un élément.  
+- `VisualBasic`: Spécifie que le modèle crée un [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projet ou un élément.  
   
--   `Web`: Spécifie que le modèle crée un projet Web ou un élément. Si le `ProjectType` élément contient cette valeur, le langage du projet ou de l’élément est défini dans le [ProjectSubType, élément (modèles Visual Studio)](../extensibility/projectsubtype-element-visual-studio-templates.md).  
+- `Web`: Spécifie que le modèle crée un projet Web ou un élément. Si le `ProjectType` élément contient cette valeur, le langage du projet ou de l’élément est défini dans le [ProjectSubType, élément (modèles Visual Studio)](../extensibility/projectsubtype-element-visual-studio-templates.md).  
   
 ## <a name="remarks"></a>Notes  
  `ProjectType` est un élément enfant obligatoire de `TemplateData`.  
@@ -106,4 +101,3 @@ Catégorie du modèle de projet pour qu’il apparaisse sous le groupe spécifi�
  [Référence du schéma de modèle Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Création de modèles de projet et d’élément](../ide/creating-project-and-item-templates.md)   
  [Élément ProjectSubType (modèles Visual Studio)](../extensibility/projectsubtype-element-visual-studio-templates.md)
-

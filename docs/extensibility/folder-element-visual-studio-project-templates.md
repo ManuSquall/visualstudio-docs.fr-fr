@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6aa788fafd7b07f1224bb4abf6bfe527109b3bc6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a6ad2051212a943cea805579f0f1ab083af60602
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692650"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057249"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Folder, élément (modèles de projet Visual Studio)
 Spécifie un dossier qui sera ajouté au projet.
@@ -62,7 +62,7 @@ Spécifie un dossier qui sera ajouté au projet.
 
  Vous pouvez utiliser une des méthodes suivantes pour organiser les éléments de projet dans des dossiers dans un modèle :
 
--   Inclure les dossiers dans le modèle *.zip* de fichiers et les ajouter au projet dans le *.vstemplate* fichier en spécifiant le chemin d’accès au fichier dans le `ProjectItem` éléments, sans aucune `Folder` éléments. Il s’agit de la méthode recommandée. Exemple :
+- Inclure les dossiers dans le modèle *.zip* de fichiers et les ajouter au projet dans le *.vstemplate* fichier en spécifiant le chemin d’accès au fichier dans le `ProjectItem` éléments, sans aucune `Folder` éléments. Il s’agit de la méthode recommandée. Exemple :
 
      `...`
 
@@ -72,7 +72,7 @@ Spécifie un dossier qui sera ajouté au projet.
 
      `...`
 
--   Inclure les dossiers dans le modèle *.zip* de fichiers et les ajouter au projet dans le *.vstemplate* de fichiers avec `Folder` éléments. Exemple :
+- Inclure les dossiers dans le modèle *.zip* de fichiers et les ajouter au projet dans le *.vstemplate* de fichiers avec `Folder` éléments. Exemple :
 
      `...`
 
@@ -86,7 +86,7 @@ Spécifie un dossier qui sera ajouté au projet.
 
      `...`
 
--   N’incluez pas de dossiers dans le modèle *.zip* de fichier, mais ajouter des dossiers à l’aide de la `TargetFileName` attribut de la `ProjectItem` élément. Exemple :
+- N’incluez pas de dossiers dans le modèle *.zip* de fichier, mais ajouter des dossiers à l’aide de la `TargetFileName` attribut de la `ProjectItem` élément. Exemple :
 
      `...`
 

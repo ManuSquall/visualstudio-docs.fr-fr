@@ -14,7 +14,6 @@
 # [Personnalisation de l’IDE](customizing-the-ide.md)
 ## [Extension de Visual Studio pour Mac](extending-visual-studio-mac.md)
 
-
 # [Projets et solutions](projects-and-solutions.md)
 ## [Création de nouveaux projets](create-new-projects.md)
 ## [Ajout et suppression d’éléments de projet](add-and-remove-project-items.md)
@@ -77,3 +76,5 @@
 # [Résolution des problèmes](troubleshooting.md)
 ## [Programme d’amélioration de l’expérience utilisateur Visual Studio](visual-studio-experience-improvement-program.md)
 ## [Signaler un problème](report-a-problem.md)
+## [Résolution des problèmes : Pourquoi je ne vois pas tous les modèles ?](troubleshooting-no-templates.md)
+## [Résolution des problèmes : le programme de mise à jour présente des erreurs lors de la récupération des informations](updater-troubleshooting.md)

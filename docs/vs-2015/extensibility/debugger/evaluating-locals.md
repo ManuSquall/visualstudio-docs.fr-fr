@@ -11,12 +11,12 @@ ms.assetid: 7d1ed528-4e7a-4d8f-87b4-162440644a75
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fcbf6c3908460ce9d0f34b31c9a815c652de8031
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba059cc1c5546bc437c7ea83a08aa8dca0a56f98
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953302"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117679"
 ---
 # <a name="evaluating-locals"></a>Évaluation des variables locales
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,13 +28,13 @@ ms.locfileid: "58953302"
   
  Cette fonctionnalité de récupération de la valeur d’une variable locale est encapsulée dans une fonction d’assistance qui effectue les tâches suivantes :  
   
-1.  Lie le `IDebugField` objet vers la mémoire pour obtenir un `IDebugObject` objet.  
+1. Lie le `IDebugField` objet vers la mémoire pour obtenir un `IDebugObject` objet.  
   
-2.  Obtient la valeur de la mémoire. Cette valeur est représentée comme une série d’octets.  
+2. Obtient la valeur de la mémoire. Cette valeur est représentée comme une série d’octets.  
   
-3.  Met en forme la valeur basée sur type de l’ordinateur local.  
+3. Met en forme la valeur basée sur type de l’ordinateur local.  
   
-4.  Retourne un objet générique qui contient la valeur de la locale. En c#, il s’agit d’un `object`, et en C++, il s’agit d’un `VARIANT`.  
+4. Retourne un objet générique qui contient la valeur de la locale. En c#, il s’agit d’un `object`, et en C++, il s’agit d’un `VARIANT`.  
   
 ## <a name="managed-code"></a>Code managé  
  Il s’agit d’une implémentation d’une fonction qui Récupère la valeur d’une variable locale dans le code managé.  

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 67e98f7d9f8e1e8914508d8a2e3c63c5dc55b8a5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4d1e7bfd074b0ed7f6f1bcef99acf28f478a9c51
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637592"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097490"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Procédure : Mettre à jour une source de données avec des données à partir d’un contrôle hôte
   Vous pouvez lier un contrôle hôte à une source de données et mettre à jour la source de données avec les modifications apportées aux données dans le contrôle. Deux étapes principales constituent ce processus :
@@ -42,7 +42,7 @@ ms.locfileid: "56637592"
 
 ### <a name="to-update-the-in-memory-data-source-at-runtime"></a>Pour mettre à jour la source de données en mémoire lors de l’exécution
 
--   Appelez la méthode <xref:System.Windows.Forms.Binding.WriteValue%2A> de l’objet <xref:System.Windows.Forms.Binding> qui lie le contrôle à la source de données.
+- Appelez la méthode <xref:System.Windows.Forms.Binding.WriteValue%2A> de l’objet <xref:System.Windows.Forms.Binding> qui lie le contrôle à la source de données.
 
      L’exemple suivant enregistre dans la source de données les modifications apportées à un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> dans une feuille de calcul Excel. Cet exemple part du principe que vous avez un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> nommé `namedRange1` , dont la propriété <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> est liée à un champ dans une source de données.
 
@@ -70,31 +70,31 @@ ms.locfileid: "56637592"
 
 #### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-the-designer"></a>Pour configurer un contrôle pour qu’il mette automatiquement à jour la source de données en mémoire à l’aide du concepteur
 
-1.  Dans Visual Studio, ouvrez le document Word ou le classeur Excel dans le concepteur.
+1. Dans Visual Studio, ouvrez le document Word ou le classeur Excel dans le concepteur.
 
-2.  Cliquez sur le contrôle qui doit mettre à jour la source de données automatiquement.
+2. Cliquez sur le contrôle qui doit mettre à jour la source de données automatiquement.
 
-3.  Dans la fenêtre **Propriétés** , développez la propriété **(DataBindings)** .
+3. Dans la fenêtre **Propriétés** , développez la propriété **(DataBindings)** .
 
-4.  À côté du **(Avancé)** propriété, cliquez sur le bouton de sélection (![d’écran de VisualStudioEllipsesButton](../vsto/media/vbellipsesbutton.png "d’écran de VisualStudioEllipsesButton")).
+4. À côté du **(Avancé)** propriété, cliquez sur le bouton de sélection (![d’écran de VisualStudioEllipsesButton](../vsto/media/vbellipsesbutton.png "d’écran de VisualStudioEllipsesButton")).
 
-5.  Dans la boîte de dialogue **Mise en forme et liaison avancée** , cliquez sur la liste déroulante **Mode de mise à jour de la source de données** et sélectionnez l’une des valeurs suivantes :
+5. Dans la boîte de dialogue **Mise en forme et liaison avancée** , cliquez sur la liste déroulante **Mode de mise à jour de la source de données** et sélectionnez l’une des valeurs suivantes :
 
-    -   Pour mettre à jour la source de données quand le contrôle est validé, sélectionnez **OnValidation**.
+    - Pour mettre à jour la source de données quand le contrôle est validé, sélectionnez **OnValidation**.
 
-    -   Pour mettre à jour la source de données quand la valeur de la propriété liée aux données du contrôle change, sélectionnez **OnPropertyChanged**.
+    - Pour mettre à jour la source de données quand la valeur de la propriété liée aux données du contrôle change, sélectionnez **OnPropertyChanged**.
 
         > [!NOTE]
         >  L’option **OnPropertyChanged** ne s’applique pas aux contrôles hôtes Word, car Word n’offre pas de notifications de modification du document ou du contrôle. Toutefois, vous pouvez utiliser cette option pour les contrôles Windows Forms sur les documents Word.
 
-6.  Fermez la boîte de dialogue **Mise en forme et liaison avancée** .
+6. Fermez la boîte de dialogue **Mise en forme et liaison avancée** .
 
 ## <a name="update-the-database"></a>Mettre à jour la base de données
  Si la source de données en mémoire est associée à une base de données, vous devez mettre celle-ci à jour avec les modifications apportées à la source de données. Pour plus d’informations sur la mise à jour une base de données, consultez [enregistrer les données dans la base de données](../data-tools/save-data-back-to-the-database.md) et [mettre à jour des données à l’aide d’un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md) .
 
 ### <a name="to-update-the-database"></a>Pour mettre à jour la base de données
 
-1.  Appelez la méthode <xref:System.Windows.Forms.BindingSource.EndEdit%2A> du <xref:System.Windows.Forms.BindingSource> pour le contrôle.
+1. Appelez la méthode <xref:System.Windows.Forms.BindingSource.EndEdit%2A> du <xref:System.Windows.Forms.BindingSource> pour le contrôle.
 
      Le <xref:System.Windows.Forms.BindingSource> est généré automatiquement quand vous ajoutez un contrôle lié aux données à un document ou à un classeur au moment du design. Le <xref:System.Windows.Forms.BindingSource> connecte le contrôle au dataset typé dans votre projet. Pour plus d’informations, consultez [vue d’ensemble du composant BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview).
 
@@ -103,7 +103,7 @@ ms.locfileid: "56637592"
      [!code-csharp[Trin_VstcoreDataExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#20)]
      [!code-vb[Trin_VstcoreDataExcel#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#20)]
 
-2.  Appelez le `Update` méthode du TableAdapter généré dans votre projet.
+2. Appelez le `Update` méthode du TableAdapter généré dans votre projet.
 
      Le TableAdapter est généré automatiquement lorsque vous ajoutez un contrôle lié aux données à un document ou classeur au moment du design. Le TableAdapter connecte le dataset typé dans votre projet à la base de données. Pour plus d’informations, consultez [vue d’ensemble de TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
 

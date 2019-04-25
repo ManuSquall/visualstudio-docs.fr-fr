@@ -1,5 +1,5 @@
 ---
-title: Spécifications du contrôleur de test et de l’agent de test pour le test de charge
+title: Spécifications du contrôleur de test et de l'agent de test pour le test de charge
 ms.date: 10/19/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 56004b22c77fe1388a666e175171579e60ffb3ad
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431444"
 ---
 # <a name="test-controller-and-test-agent-requirements-for-load-testing"></a>Configuration requise du contrôleur de test et de l’agent de test pour le test de charge
 
@@ -24,11 +24,11 @@ Visual Studio intègre plusieurs types de tests, notamment les tests de performa
 
 ## <a name="hardware-and-software-requirements"></a>Configurations matérielle et logicielle requises
 
-À la fois les ordinateurs du contrôleur de test et de l’agent de test ont des configurations matérielle et logicielle requises spécifiques. De plus, pour déployer les ordinateurs des agents de test et du contrôleur de test en plusieurs langues, vous devez planifier la prise en charge de ces langues.
+À la fois les ordinateurs du contrôleur de test et de l'agent de test ont des configurations matérielle et logicielle requises spécifiques. De plus, pour déployer les ordinateurs des agents de test et du contrôleur de test en plusieurs langues, vous devez planifier la prise en charge de ces langues.
 
 ### <a name="hardware-requirements"></a>Configuration matérielle requise
 
-Le tableau suivant affiche la configuration matérielle requise recommandée pour le déploiement d’un contrôleur de test et d’agents de test.
+Le tableau suivant affiche la configuration matérielle requise recommandée pour le déploiement d'un contrôleur de test et d'agents de test.
 
 |**Configuration**|**Composant**|**Processeur**|**Disque dur**|**Mémoire**|
 |-|-------------------|-|------------|-|
@@ -41,7 +41,7 @@ Le tableau suivant affiche la configuration matérielle requise recommandée pou
 > [!NOTE]
 > Le nombre d'utilisateurs virtuels varie considérablement d'un test à l'autre. Cette variation est due en grande partie au *temps de réflexion* ou délai d’utilisateur. Pour plus d’informations, consultez [Modifier les temps de réflexion pour simuler les délais d’interaction humaine avec un site web](../test/edit-think-times-in-load-test-scenarios.md). Dans un test de charge, les tests web sont généralement plus efficaces et génèrent une plus grande charge que les tests unitaires. Les chiffres du tableau précédent s'appliquent aux tests web avec un temps de réflexion de 3 à 5 secondes dans une applications web typique.
 
-Les indications présentées ici fournissent une aide générale en matière de planification matérielle. Les performances des tests seront très différentes selon la quantité de données des tests et le nombre d’agents de test. Pour les agents de test, la vitesse du processeur et la mémoire disponible limiteront la charge du test. Les contrôleurs de test ont besoin de ressources plus nombreuses en fonction du nombre d’agents de test et du volume de données impliqués dans les tests.
+Les indications présentées ici fournissent une aide générale en matière de planification matérielle. Les performances des tests seront très différentes selon la quantité de données des tests et le nombre d'agents de test. Pour les agents de test, la vitesse du processeur et la mémoire disponible limiteront la charge du test. Les contrôleurs de test ont besoin de ressources plus nombreuses en fonction du nombre d'agents de test et du volume de données impliqués dans les tests.
 
 Le serveur qui exécute Visual Studio doit disposer d’une connexion réseau fiable avec une bande passante d’au moins 1 Mbit/s et une latence maximale de 350 ms. Il ne doit y avoir aucun pare-feu entre les agents de test et le contrôleur de test. Si vos performances de tests ne répondent pas à vos attentes, songez à mettre votre configuration matérielle à niveau.
 
@@ -53,7 +53,7 @@ Outre le matériel recommandé ici, vous devez envisager d'acquérir du matérie
 
 ### <a name="language-requirements"></a>Exigences relatives à la langue
 
-Pour éviter toute confusion et simplifier l’opération, un contrôleur de test et des agents de test doivent être configurés pour utiliser la même langue que le système d’exploitation de l’ordinateur et que celle de Team Foundation Server. Si l’agent de test et le contrôleur de test sont installés sur des ordinateurs différents, ils doivent être configurés afin d’utiliser la même langue. Toutefois, vous pouvez installer une autre version linguistique de Visual Studio sous un système d’exploitation en langue anglaise, si tant est que cette langue correspond à celle du déploiement de Team Foundation Server.
+Pour éviter toute confusion et simplifier l’opération, un contrôleur de test et des agents de test doivent être configurés pour utiliser la même langue que le système d’exploitation de l’ordinateur et que celle de Team Foundation Server. Si l'agent de test et le contrôleur de test sont installés sur des ordinateurs différents, ils doivent être configurés afin d'utiliser la même langue. Toutefois, vous pouvez installer une autre version linguistique de Visual Studio sous un système d’exploitation en langue anglaise, si tant est que cette langue correspond à celle du déploiement de Team Foundation Server.
 
 ## <a name="monitor-agent-resources"></a>Surveiller les ressources des agents
 

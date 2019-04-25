@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4417761767f9796da54ea4d742646efe6eea3ac0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1578db2775a076258023b05ec9d3f010ba6222a4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598308"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074750"
 ---
 # <a name="vsix-color-editor"></a>Éditeur de couleur VSIX
 L’outil Éditeur de couleur Visual Studio Extension peut créer et modifier des couleurs personnalisées pour Visual Studio. L’outil peut également générer des clés de ressources de thème afin que les couleurs peuvent être utilisées dans le code. Cet outil est utile pour effectuer des couleurs pour une extension Visual Studio qui prend en charge des thèmes. Cet outil peut ouvrir les fichiers .pkgdef et .xml. Les thèmes Visual Studio (fichiers .vstheme) peuvent être utilisés avec l’éditeur de couleurs Visual Studio Extension en remplaçant l’extension de fichier .xml. En outre, les fichiers de .vstheme peuvent être importés dans un fichier .xml en cours.
@@ -28,13 +28,13 @@ L’outil Éditeur de couleur Visual Studio Extension peut créer et modifier de
 
  Un jeton de couleur se compose de quatre éléments :
 
--   **Nom de catégorie :** Un regroupement logique pour un jeu de couleurs. Utiliser un nom de catégorie existant s’il existe déjà des couleurs qui sont spécifiques à l’élément souhaité de l’interface utilisateur ou du groupe d’éléments d’interface utilisateur.
+- **Nom de catégorie :** Un regroupement logique pour un jeu de couleurs. Utiliser un nom de catégorie existant s’il existe déjà des couleurs qui sont spécifiques à l’élément souhaité de l’interface utilisateur ou du groupe d’éléments d’interface utilisateur.
 
--   **Nom du jeton :** Un nom descriptif pour le jeton de couleur et les jeux de jeton. Jeux incluent en arrière-plan et les noms de jeton de premier plan (texte), ainsi que tous leurs États, et ceux-ci doivent être nommés afin qu’il soit facile d’identifier les paires et les États qui ils s’appliquent à.
+- **Nom du jeton :** Un nom descriptif pour le jeton de couleur et les jeux de jeton. Jeux incluent en arrière-plan et les noms de jeton de premier plan (texte), ainsi que tous leurs États, et ceux-ci doivent être nommés afin qu’il soit facile d’identifier les paires et les États qui ils s’appliquent à.
 
--   **Valeurs de couleur (ou teintes) :** Nécessaire pour chaque thème de couleur. Toujours créer en arrière-plan et le texte des valeurs de couleur par paires. Couleurs sont associées pour l’arrière-plan/premier plan afin que la couleur du texte (premier plan) soit toujours accessible en lecture par rapport à la couleur d’arrière-plan sur lequel elle est dessinée. Ces couleurs sont liés et seront utilisés ensemble dans l’interface utilisateur. Si l’arrière-plan n’est pas destinée à être utilisée avec le texte, ne définissez pas une couleur de premier plan.
+- **Valeurs de couleur (ou teintes) :** Nécessaire pour chaque thème de couleur. Toujours créer en arrière-plan et le texte des valeurs de couleur par paires. Couleurs sont associées pour l’arrière-plan/premier plan afin que la couleur du texte (premier plan) soit toujours accessible en lecture par rapport à la couleur d’arrière-plan sur lequel elle est dessinée. Ces couleurs sont liés et seront utilisés ensemble dans l’interface utilisateur. Si l’arrière-plan n’est pas destinée à être utilisée avec le texte, ne définissez pas une couleur de premier plan.
 
--   **Nom de couleur système :** Pour une utilisation dans les affichages de contraste élevé.
+- **Nom de couleur système :** Pour une utilisation dans les affichages de contraste élevé.
 
 ## <a name="how-to-use-the-tool"></a>Comment utiliser l’outil
  Autant que possible, et le cas échéant, les couleurs de Visual Studio existantes doivent être réutilisés au lieu de faire de nouveaux. Toutefois, pour les cas où aucun couleurs appropriées ne sont définies, les couleurs personnalisées doivent être créées pour conserver un thème de l’extension compatible.
@@ -67,7 +67,7 @@ L’outil Éditeur de couleur Visual Studio Extension peut créer et modifier de
 
 - Actif
 
-- inactif
+- Inactif
 
 - MouseOver
 

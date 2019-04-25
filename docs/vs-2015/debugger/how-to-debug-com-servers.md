@@ -23,12 +23,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a7548b100e5bbcccd75a3cd5e7d94d6e7f72ed48
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3552ff1ffb5d6b3e3789aebd3a8903bf82a66b16
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951646"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088312"
 ---
 # <a name="how-to-debug-com-servers"></a>Procédure : Déboguer des serveurs COM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,11 +39,11 @@ Le débogage d'applications serveur COM pose un ensemble de problèmes qui ne so
   
 ### <a name="to-debug-a-server-application-without-container-information"></a>Pour déboguer une application serveur sans informations sur les conteneurs  
   
-1.  Commencez le débogage du serveur comme pour une application normale.  
+1. Commencez le débogage du serveur comme pour une application normale.  
   
-2.  Définissez les points d'arrêt voulus.  
+2. Définissez les points d'arrêt voulus.  
   
-3.  Démarrez l'application conteneur.  
+3. Démarrez l'application conteneur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage COM et ActiveX](../debugger/com-and-activex-debugging.md)   

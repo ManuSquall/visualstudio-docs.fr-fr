@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ada8a5b08d1a5ca7caed142c1bba9de103a3f954
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a5e5d1fec376a1f35a8b2214a7bde4834cc6bd9d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951512"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101793"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Création d'un langage spécifique à un domaine basé sur Windows Forms
 Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de langage spécifique à un domaine (DSL), au lieu d’utiliser un diagramme DSL. Cette rubrique vous guide tout au long de la liaison d’un formulaire Windows à un DSL à l’aide de la Visual Studio Visualization and Modeling SDK.
@@ -28,20 +28,18 @@ Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de lan
 
     Dans cette procédure pas à pas, les noms suivants sont supposées :
 
-
    | | |
    |-|-|
    | Nom de solution et DSL | FarmApp |
    | Espace de noms | Company.FarmApp |
 
-
 2. Faire des essais avec l’exemple initial qui fournit le modèle :
 
-   1.  Transformer tous les modèles.
+   1. Transformer tous les modèles.
 
-   2.  Générer et exécuter l’exemple (**CTRL + F5**).
+   2. Générer et exécuter l’exemple (**CTRL + F5**).
 
-   3.  Dans l’instance expérimentale de Visual Studio, ouvrez le `Sample` fichier dans le projet de débogage.
+   3. Dans l’instance expérimentale de Visual Studio, ouvrez le `Sample` fichier dans le projet de débogage.
 
         Notez qu’il est affiché dans un contrôle Windows Forms.
 
@@ -51,17 +49,17 @@ Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de lan
 
    Dans l’instance principale de Visual Studio, notez les points suivants concernant la solution DSL :
 
--   `DslDefinition.dsl` ne contient aucun élément de diagramme. Il s’agit, car vous n’utiliserez pas les diagrammes DSL pour afficher les modèles d’instance de cette solution DSL. Au lieu de cela, vous allez lier un formulaire Windows pour le modèle et les éléments sur le formulaire affiche le modèle.
+- `DslDefinition.dsl` ne contient aucun élément de diagramme. Il s’agit, car vous n’utiliserez pas les diagrammes DSL pour afficher les modèles d’instance de cette solution DSL. Au lieu de cela, vous allez lier un formulaire Windows pour le modèle et les éléments sur le formulaire affiche le modèle.
 
--   Outre le `Dsl` et `DslPackage` projets, la solution contient un troisième projet nommé `UI.` **l’interface utilisateur** projet contient la définition d’un contrôle Windows Forms. `DslPackage` dépend de `UI`, et `UI` dépend `Dsl`.
+- Outre le `Dsl` et `DslPackage` projets, la solution contient un troisième projet nommé `UI.` **l’interface utilisateur** projet contient la définition d’un contrôle Windows Forms. `DslPackage` dépend de `UI`, et `UI` dépend `Dsl`.
 
--   Dans le `DslPackage` projet, `UI\DocView.cs` contient le code qui affiche le contrôle Windows Forms qui est défini dans le `UI` projet.
+- Dans le `DslPackage` projet, `UI\DocView.cs` contient le code qui affiche le contrôle Windows Forms qui est défini dans le `UI` projet.
 
--   Le `UI` projet contient un exemple fonctionnel d’un contrôle de formulaire lié à la solution DSL. Toutefois, il ne fonctionne pas lorsque vous avez modifié la définition DSL. Le `UI` projet contient :
+- Le `UI` projet contient un exemple fonctionnel d’un contrôle de formulaire lié à la solution DSL. Toutefois, il ne fonctionne pas lorsque vous avez modifié la définition DSL. Le `UI` projet contient :
 
-    -   Une classe Windows Forms nommée `ModelViewControl`.
+    - Une classe Windows Forms nommée `ModelViewControl`.
 
-    -   Un fichier nommé `DataBinding.cs` qui contient une définition partielle supplémentaire de `ModelViewControl`. Pour afficher son contenu, dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le fichier et choisissez **afficher le Code**.
+    - Un fichier nommé `DataBinding.cs` qui contient une définition partielle supplémentaire de `ModelViewControl`. Pour afficher son contenu, dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le fichier et choisissez **afficher le Code**.
 
 ### <a name="about-the-ui-project"></a>Sur le projet d’interface utilisateur
  Lorsque vous mettez à jour le fichier de définition DSL pour définir votre propre DSL, vous devrez mettre à jour le contrôle dans le `UI` projet pour afficher votre DSL. Contrairement à la `Dsl` et `DslPackage` projets, l’exemple `UI` projet n’est pas généré à partir de `DslDefinitionl.dsl`. Vous pouvez ajouter des fichiers .tt pour générer le code si vous le souhaitez, bien que cela n’est pas traité dans cette procédure pas à pas.
@@ -73,34 +71,34 @@ Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de lan
 
 #### <a name="to-update-the-dsl-definition"></a>Pour mettre à jour la définition DSL
 
-1.  Ouvrez DslDefinition.dsl dans le concepteur DSL.
+1. Ouvrez DslDefinition.dsl dans le concepteur DSL.
 
-2.  Supprimer **ExampleElement**
+2. Supprimer **ExampleElement**
 
-3.  Renommer le **ExampleModel** classe de domaine `Farm`.
+3. Renommer le **ExampleModel** classe de domaine `Farm`.
 
      Attribuez-lui des propriétés de domaine supplémentaire nommées `Size` de type **Int32**, et `IsOrganic` de type **booléenne**.
 
     > [!NOTE]
     >  Si vous supprimez la classe de domaine racine et ensuite créez une nouvelle racine, vous devrez réinitialiser la propriété de la classe racine d’éditeur. Dans **Explorateur DSL**, sélectionnez **éditeur**. Puis, dans la fenêtre Propriétés, définissez **classe racine** à `Farm`.
 
-4.  Utilisez le **nommé la classe de domaine** outil pour créer les classes de domaine suivantes :
+4. Utilisez le **nommé la classe de domaine** outil pour créer les classes de domaine suivantes :
 
-    -   `Field` -Lui donner une propriété de domaine supplémentaire nommée `Size`.
+    - `Field` -Lui donner une propriété de domaine supplémentaire nommée `Size`.
 
-    -   `Animal` -Dans la fenêtre Propriétés, définissez **modificateur d’héritage** à **abstraite**.
+    - `Animal` -Dans la fenêtre Propriétés, définissez **modificateur d’héritage** à **abstraite**.
 
-5.  Utilisez le **de classe de domaine** outil pour créer les classes suivantes :
+5. Utilisez le **de classe de domaine** outil pour créer les classes suivantes :
 
-    -   `Sheep`
+    - `Sheep`
 
-    -   `Goat`
+    - `Goat`
 
-6.  Utilisez le **héritage** outil permettant d’effectuer `Goat` et `Sheep` héritent `Animal`.
+6. Utilisez le **héritage** outil permettant d’effectuer `Goat` et `Sheep` héritent `Animal`.
 
-7.  Utilisez le **Embedding** outil pour incorporer `Field` et `Animal` sous `Farm`.
+7. Utilisez le **Embedding** outil pour incorporer `Field` et `Animal` sous `Farm`.
 
-8.  Vous souhaiterez peut-être optimiser la présentation du diagramme. Pour réduire le nombre d’éléments en double, utilisez le **mettre la sous-arborescence ici** commande dans le menu contextuel d’éléments de la feuille.
+8. Vous souhaiterez peut-être optimiser la présentation du diagramme. Pour réduire le nombre d’éléments en double, utilisez le **mettre la sous-arborescence ici** commande dans le menu contextuel d’éléments de la feuille.
 
 9. **Transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions.
 
@@ -114,13 +112,13 @@ Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de lan
 
 #### <a name="to-define-your-dsl-model-as-a-data-source"></a>Pour définir votre modèle DSL comme source de données
 
-1.  Sur le **données** menu, choisissez **afficher les Sources de données**.
+1. Sur le **données** menu, choisissez **afficher les Sources de données**.
 
      La fenêtre **Sources de données** s’ouvre.
 
      Choisissez **ajouter une nouvelle Source de données**. L’Assistant **Configuration de source de données** s’ouvre.
 
-2.  Choisissez **objet**, **suivant**.
+2. Choisissez **objet**, **suivant**.
 
      Développez **Dsl**, **Company.FarmApp**, puis sélectionnez **batterie**, qui est la classe racine de votre modèle. Choisissez **Terminer**.
 
@@ -177,7 +175,7 @@ Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de lan
 
 #### <a name="to-complete-the-bindings-to-the-dsl"></a>Pour terminer les liaisons à la solution DSL
 
-1.  Ajoutez le code suivant dans un fichier de code séparé dans le **l’interface utilisateur** projet :
+1. Ajoutez le code suivant dans un fichier de code séparé dans le **l’interface utilisateur** projet :
 
     ```csharp
     using System.ComponentModel;
@@ -203,7 +201,7 @@ Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de lan
     }
     ```
 
-2.  Dans le **DslPackage** projet, modifier **DslPackage\DocView.tt** pour mettre à jour la définition de variable suivante :
+2. Dans le **DslPackage** projet, modifier **DslPackage\DocView.tt** pour mettre à jour la définition de variable suivante :
 
     ```csharp
     string viewControlTypeName = "FarmControl";
@@ -214,18 +212,18 @@ Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de lan
 
 #### <a name="to-test-the-dsl"></a>Pour tester la solution DSL
 
-1.  Générez et exécutez la solution.
+1. Générez et exécutez la solution.
 
-2.  Dans l’instance expérimentale de Visual Studio, ouvrez le **exemple** fichier.
+2. Dans l’instance expérimentale de Visual Studio, ouvrez le **exemple** fichier.
 
-3.  Dans le **FarmApp Explorer**, ouvrez le menu contextuel sur le **batterie** nœud racine, puis choisissez **ajouter un nouveau éleveur**.
+3. Dans le **FarmApp Explorer**, ouvrez le menu contextuel sur le **batterie** nœud racine, puis choisissez **ajouter un nouveau éleveur**.
 
      `Goat1` s’affiche dans le **animaux** vue.
 
     > [!WARNING]
     >  Vous devez utiliser le menu contextuel sur le **batterie** nœud, pas le **animaux** nœud.
 
-4.  Sélectionnez le **batterie** nœud racine et affichez ses propriétés.
+4. Sélectionnez le **batterie** nœud racine et affichez ses propriétés.
 
      Dans la vue de formulaire, modifiez le **nom** ou **taille** de la batterie de serveurs.
 
@@ -235,13 +233,13 @@ Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de lan
 
 #### <a name="to-make-the-properties-update-immediately"></a>Pour rendre les propriétés à mettre à jour immédiatement
 
-1.  Dans la vue Conception de FarmControl.cs, sélectionnez un champ simple comme nom, une taille ou IsOrganic.
+1. Dans la vue Conception de FarmControl.cs, sélectionnez un champ simple comme nom, une taille ou IsOrganic.
 
-2.  Dans la fenêtre Propriétés, développez **DataBindings** et ouvrez **(Avancé)**.
+2. Dans la fenêtre Propriétés, développez **DataBindings** et ouvrez **(Avancé)**.
 
      Dans le **mise en forme et liaison avancée** boîte de dialogue, sous **Mode de mise à jour de Source de données**, choisissez **OnPropertyChanged**.
 
-3.  Générez et exécutez la solution.
+3. Générez et exécutez la solution.
 
      Vérifiez que lorsque vous modifiez le contenu du champ, la propriété correspondante du immédiatement les modifications du modèle de batterie de serveurs.
 

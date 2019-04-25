@@ -1,27 +1,22 @@
 ---
 title: Configuration pour la génération de projet | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - projects [Visual Studio SDK], configuration for building
 - project configurations, building
 ms.assetid: 2c83615d-fa4d-4b9f-b315-7a69b3000da0
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: ef43fe505e859cb32f7c0fbe407bcc73c4f4e0e8
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 99d9e20799f3747def12be6a40ae3b1f8269e666
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51725519"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58947738"
 ---
 # <a name="project-configuration-for-building"></a>Configuration de projet pour la création
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -68,4 +63,3 @@ Dépendances du projet
  [Gestion des Options de Configuration](../../extensibility/internals/managing-configuration-options.md)   
  [Configuration de projet pour la gestion du déploiement](../../extensibility/internals/project-configuration-for-managing-deployment.md)   
  [Configuration de projet pour la sortie](../../extensibility/internals/project-configuration-for-output.md)
-

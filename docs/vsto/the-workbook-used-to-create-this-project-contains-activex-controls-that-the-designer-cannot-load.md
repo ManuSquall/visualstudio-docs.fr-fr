@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8c6c51e464a3c4c49d4c70e4012df47906244804
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0087841e7f37d49da40817e1487b8529af1f87df
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638190"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089352"
 ---
 # <a name="the-workbook-used-to-create-this-project-contains-activex-controls-that-the-designer-cannot-load"></a>Le classeur utilisé pour créer ce projet contient des contrôles ActiveX que le concepteur ne peut pas charger
   Cette erreur apparaît quand vous ajoutez par programmation un contrôle à un document Word ou une feuille de calcul Excel, enregistrez le document ou le classeur, puis créez une solution au niveau du document basée sur le document ou le classeur.
@@ -26,11 +26,11 @@ ms.locfileid: "56638190"
 
 ## <a name="to-correct-this-error"></a>Pour corriger cette erreur
 
-1.  Ouvrez le document ou le classeur.
+1. Ouvrez le document ou le classeur.
 
-2.  Supprimez les contrôles qui ont été ajoutés lors de l’exécution. Vous pouvez faire en les sélectionnant dans un document ou classeur et en appuyant sur la **supprimer** clé.
+2. Supprimez les contrôles qui ont été ajoutés lors de l’exécution. Vous pouvez faire en les sélectionnant dans un document ou classeur et en appuyant sur la **supprimer** clé.
 
-3.  Créez une solution au niveau du document basée sur le document ou le classeur.
+3. Créez une solution au niveau du document basée sur le document ou le classeur.
 
 ## <a name="see-also"></a>Voir aussi
 - [Guide pratique pour Créer des projets Office dans Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)

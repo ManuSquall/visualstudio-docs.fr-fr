@@ -8,26 +8,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 45944afe3c5ebd1baa307f6063b021c09fd6bfa6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1be8af11dd9b03b8c63d34b60e6af3c3c8147b48
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970268"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62894183"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>Procédure : Créer un modèle 3D de base
 
 Cet article montre comment utiliser l’éditeur de modèle pour créer un modèle 3D de base. Les activités suivantes sont décrites :
 
--   Ajout d’objets à une scène
+- Ajout d’objets à une scène
 
--   Sélection des faces et des arêtes
+- Sélection des faces et des arêtes
 
--   Translation des sélections
+- Translation des sélections
 
--   Utilisation des outils **Subdiviser la face** et **Extruder la face**
+- Utilisation des outils **Subdiviser la face** et **Extruder la face**
 
--   Utilisation de la commande **Effectuer une triangulation**
+- Utilisation de la commande **Effectuer une triangulation**
 
 ## <a name="create-a-basic-3d-model"></a>Créer un modèle 3D de base
  Vous pouvez utiliser l’éditeur de modèle pour créer et modifier des modèles et des scènes 3D pour votre jeu ou votre application. Les étapes suivantes indiquent comment utiliser l’éditeur de modèle pour créer un modèle 3D simplifié d’une maison. Un modèle simplifié peut être utilisé comme un substitut pour des ressources artistiques finales qui ne sont pas encore créées, comme un maillage pour la détection de collision ou comme un modèle de bas niveau de détail à utiliser lorsque l'objet qu'il représente est trop loin pour bénéficier d'un rendu plus détaillé.

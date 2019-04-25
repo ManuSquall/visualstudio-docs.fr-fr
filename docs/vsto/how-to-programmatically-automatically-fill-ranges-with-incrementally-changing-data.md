@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 36a91875d2964bf952f039a699da6ed165afa090
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e4caede15b17478bb9649f09d9341931511b655f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638528"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117887"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>Procédure : Remplir par programmation automatiquement des plages avec des données soumises à modification incrémentielle
   Le <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> méthode de la <xref:Microsoft.Office.Interop.Excel.Range> objet vous permet de remplir une plage dans une feuille de calcul avec des valeurs automatiquement. En règle générale, le <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> méthode est utilisée pour stocker de façon incrémentielle valeurs croissantes ou décroissantes dans une plage. Vous pouvez spécifier le comportement en fournissant une constante facultative à partir de la <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> énumération.
@@ -29,9 +29,9 @@ ms.locfileid: "56638528"
 
  Vous devez spécifier deux plages lors de l’utilisation <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>:
 
--   La plage qui appelle le <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> (méthode), qui spécifie le point de départ du remplissage et contient une valeur initiale.
+- La plage qui appelle le <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> (méthode), qui spécifie le point de départ du remplissage et contient une valeur initiale.
 
--   La plage que vous souhaitez remplir, passée en tant que paramètre à la <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> (méthode). Cette plage de destination doit inclure la plage qui contient la valeur initiale.
+- La plage que vous souhaitez remplir, passée en tant que paramètre à la <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> (méthode). Cette plage de destination doit inclure la plage qui contient la valeur initiale.
 
     > [!NOTE]
     >  Vous ne pouvez pas passer un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôler à la place de la <xref:Microsoft.Office.Interop.Excel.Range>. Pour plus d’informations, consultez [limitations de programmation des éléments hôtes et contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
@@ -45,11 +45,11 @@ ms.locfileid: "56638528"
 
  L’exemple nécessite que vous remplissez les trois régions :
 
--   La colonne B consiste à inclure les cinq jours de la semaine. Pour la valeur initiale, tapez **lundi** dans la cellule B1.
+- La colonne B consiste à inclure les cinq jours de la semaine. Pour la valeur initiale, tapez **lundi** dans la cellule B1.
 
--   La colonne C consiste à inclure les cinq mois. Pour la valeur initiale, tapez **janvier** dans la cellule C1.
+- La colonne C consiste à inclure les cinq mois. Pour la valeur initiale, tapez **janvier** dans la cellule C1.
 
--   La colonne D consiste à inclure une série de nombres, incrémentation par deux pour chaque ligne. Pour les valeurs initiales, tapez **4** dans la cellule D1 et **6** dans la cellule D2.
+- La colonne D consiste à inclure une série de nombres, incrémentation par deux pour chaque ligne. Pour les valeurs initiales, tapez **4** dans la cellule D1 et **6** dans la cellule D2.
 
 ## <a name="see-also"></a>Voir aussi
 - [Travailler avec des plages](../vsto/working-with-ranges.md)

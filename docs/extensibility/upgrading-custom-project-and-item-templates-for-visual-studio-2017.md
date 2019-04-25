@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: efad4455ab5d3cb0daa16482e303cc82296cc2e4
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 7c50bb7bf6c61a8061b3817c53027a3dd6e5b29f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323985"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102625"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Mise à niveau de projet personnalisés et les modèles d’élément pour Visual Studio 2017
 
@@ -32,36 +32,36 @@ Pour d’autres emplacements (non utilisateur), vous devez inclure un fichier ma
 
 ## <a name="how-to-update-a-vsix-extension-with-project-or-item-templates"></a>Comment mettre à jour une Extension VSIX avec un projet ou des modèles d’élément
 
-1.  Ouvrez la solution dans Visual Studio 2017. Vous devrez mettre à niveau le code. Cliquez sur **OK**.
+1. Ouvrez la solution dans Visual Studio 2017. Vous devrez mettre à niveau le code. Cliquez sur **OK**.
 
-2.  Une fois la mise à niveau terminée, vous devrez peut-être modifier la version de la cible d’installation. Dans le projet VSIX, ouvrez le fichier source.extension.vsixmanifest, puis sélectionnez le **cibles d’installation** onglet. Si le **plage de versions** champ est **[14.0]**, cliquez sur **modifier** et modifiez-le pour inclure Visual Studio 2017. Par exemple, vous pouvez la définir **[14.0,15.0]** pour installer l’extension pour Visual Studio 2015 ou Visual Studio 2017, ou pour **[15.0]** pour l’installer dans Visual Studio 2017 uniquement.
+2. Une fois la mise à niveau terminée, vous devrez peut-être modifier la version de la cible d’installation. Dans le projet VSIX, ouvrez le fichier source.extension.vsixmanifest, puis sélectionnez le **cibles d’installation** onglet. Si le **plage de versions** champ est **[14.0]**, cliquez sur **modifier** et modifiez-le pour inclure Visual Studio 2017. Par exemple, vous pouvez la définir **[14.0,15.0]** pour installer l’extension pour Visual Studio 2015 ou Visual Studio 2017, ou pour **[15.0]** pour l’installer dans Visual Studio 2017 uniquement.
 
-3.  Recompilez le code.
+3. Recompilez le code.
 
-4.  Fermez Visual Studio.
+4. Fermez Visual Studio.
 
-5.  Installer l’extension VSIX.
+5. Installer l’extension VSIX.
 
-6.  Vous pouvez tester la mise à jour en procédant comme suit :
+6. Vous pouvez tester la mise à jour en procédant comme suit :
 
-    1.  L’analyse de modification des fichiers sont activé par la clé de Registre suivante :
+    1. L’analyse de modification des fichiers sont activé par la clé de Registre suivante :
 
          **reg add hklm\software\microsoft\visualstudio\15.0\VSTemplate /v DisableTemplateScanning /t REG_DWORD /d 1 /reg:32**
 
-    2.  Après avoir ajouté la clé, exécutez **devenv /installvstemplates**.
+    2. Après avoir ajouté la clé, exécutez **devenv /installvstemplates**.
 
-    3.  Rouvrez Visual Studio. Vous devez rechercher votre modèle à l’emplacement prévu.
+    3. Rouvrez Visual Studio. Vous devez rechercher votre modèle à l’emplacement prévu.
 
     > [!NOTE]
     >  Les modèles de projet d’extensibilité de Visual Studio ne sont pas disponibles lors de la clé de Registre est présente. Vous devez supprimer la clé de Registre (et réexécutez **devenv /installvstemplates**) pour les utiliser.
 
 ## <a name="other-recommendations-for-deploying-project-and-item-templates"></a>Autres recommandations pour le déploiement de Project and Item Templates
 
--   Évitez d’utiliser des fichiers de modèle zippé. Compresser les fichiers doivent être décompressés afin de récupérer les ressources et le contenu de modèle, par conséquent, ils seront sont coûteuses à utiliser. Au lieu de cela, vous devez déployer des modèles de projet et d’élément en tant que fichiers individuels sous leur propre répertoire pour accélérer l’initialisation du modèle. Pour les extensions VSIX, les tâches de génération SDK décompresse automatiquement n’importe quel modèle zippé lors de la création du fichier VSIX.
+- Évitez d’utiliser des fichiers de modèle zippé. Compresser les fichiers doivent être décompressés afin de récupérer les ressources et le contenu de modèle, par conséquent, ils seront sont coûteuses à utiliser. Au lieu de cela, vous devez déployer des modèles de projet et d’élément en tant que fichiers individuels sous leur propre répertoire pour accélérer l’initialisation du modèle. Pour les extensions VSIX, les tâches de génération SDK décompresse automatiquement n’importe quel modèle zippé lors de la création du fichier VSIX.
 
--   Évitez d’utiliser des entrées d’ID de package/de ressources pour le nom du modèle, la description, l’icône ou afficher un aperçu afin d’éviter les chargements d’assemblys de ressources inutiles lors de la découverte du modèle. Au lieu de cela, vous pouvez utiliser des manifestes localisées pour créer une entrée de modèle pour chacun des paramètres régionaux, qui utilise des propriétés ou des noms localisés.
+- Évitez d’utiliser des entrées d’ID de package/de ressources pour le nom du modèle, la description, l’icône ou afficher un aperçu afin d’éviter les chargements d’assemblys de ressources inutiles lors de la découverte du modèle. Au lieu de cela, vous pouvez utiliser des manifestes localisées pour créer une entrée de modèle pour chacun des paramètres régionaux, qui utilise des propriétés ou des noms localisés.
 
--   Si vous incluez des modèles en tant qu’éléments de fichier, génération de manifeste ne peut pas vous donner les résultats attendus. Dans ce cas, vous devrez ajouter un manifeste généré manuellement au projet VSIX.
+- Si vous incluez des modèles en tant qu’éléments de fichier, génération de manifeste ne peut pas vous donner les résultats attendus. Dans ce cas, vous devrez ajouter un manifeste généré manuellement au projet VSIX.
 
 ## <a name="file-changes-in-project-and-item-templates"></a>Modification des fichiers projet et des modèles d’élément
 Nous montrons les points de différence entre le Visual Studio 2015 et Visual Studio 2017 versions des fichiers de modèle, afin que vous puissiez créer correctement les nouveaux fichiers.

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a9af26cae55a9a13f7aaaeb2297b19c81105f438
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c495f8a83b58c53404056befd2227b295c3324d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635681"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063983"
 ---
 # <a name="how-to-target-the-office-multilingual-user-interface"></a>Procédure : Cible de l’interface utilisateur multilingue d’Office
   L’Interface MUI (Multilingual User Interface) est une fonctionnalité de Microsoft Office qui permet à l’utilisateur final de changer la langue de l’interface utilisateur (IU). Par exemple, un utilisateur final qui travaille avec une interface utilisateur anglais peut modifier la langue de l’interface utilisateur vers l’espagnol.
@@ -33,7 +33,7 @@ ms.locfileid: "56635681"
 
 ## <a name="to-check-the-current-office-ui-setting"></a>Pour vérifier le paramètre actuel de l’interface utilisateur Office
 
-1.  Utilisez le <xref:System.Threading.Thread.CurrentUICulture%2A> propriété du thread actuel. Définir la langue de vos chaînes d’interface utilisateur pour correspondre à la langue utilisée par la version d’Office qui s’exécute actuellement sur l’ordinateur de l’utilisateur.
+1. Utilisez le <xref:System.Threading.Thread.CurrentUICulture%2A> propriété du thread actuel. Définir la langue de vos chaînes d’interface utilisateur pour correspondre à la langue utilisée par la version d’Office qui s’exécute actuellement sur l’ordinateur de l’utilisateur.
 
      [!code-vb[Trin_VstcoreCreatingExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#10)]
      [!code-csharp[Trin_VstcoreCreatingExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#10)]

@@ -17,12 +17,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a0652f8dbb1acfec111dcc587f3ce4ba2496eb4c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9af4507d7ccd604f82aae675bf87d36c0b039b26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949882"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110464"
 ---
 # <a name="how-to-set-a-security-zone-for-a-clickonce-application"></a>Procédure : Définir une zone de sécurité pour une application ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Quand vous définissez des autorisations de sécurité d’accès du code pour u
   
 ### <a name="to-set-a-security-zone"></a>Pour définir une zone de sécurité  
   
-1.  Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
+1. Après avoir sélectionné un projet dans l’ **Explorateur de solutions**, dans le menu **Projet** , cliquez sur **Propriétés**.  
   
-2.  Cliquez sur l'onglet **Sécurité** .  
+2. Cliquez sur l'onglet **Sécurité** .  
   
-3.  Cochez la case **Activer les paramètres de sécurité ClickOnce** .  
+3. Cochez la case **Activer les paramètres de sécurité ClickOnce** .  
   
-4.  Sélectionnez la case d’option **Il s’agit d’une application de confiance partielle** .  
+4. Sélectionnez la case d’option **Il s’agit d’une application de confiance partielle** .  
   
      Les contrôles de la section **Autorisations de sécurité ClickOnce** sont activés.  
   
-5.  Dans la liste déroulante **Zone à partir de laquelle votre application sera installée** , sélectionnez une zone de sécurité.  
+5. Dans la liste déroulante **Zone à partir de laquelle votre application sera installée** , sélectionnez une zone de sécurité.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Guide pratique pour Définir des autorisations personnalisées pour une Application ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)   

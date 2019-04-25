@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 511f19e48f91c6719c8b0021ff7eae4071ce89b6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7349bc8c76b749c4306f7483e807507b99a11cff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950652"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075205"
 ---
 # <a name="add-custom-properties-to-layer-diagrams"></a>Ajouter des propriétés personnalisées à des diagrammes de couche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,20 +32,23 @@ Quand vous écrivez du code d'extension pour des diagrammes de couche, vous pouv
 > [!IMPORTANT]
 >  Pour faire apparaître les propriétés, vous devez apporter la modification suivante sur chaque ordinateur où vous souhaitez que les propriétés de couche soient visibles.  
 > 
-> 1. Exécutez le bloc-notes à l’aide de **exécuter en tant qu’administrateur**. Ouvrez `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`.  
->    2.  Dans l'élément `Content`, ajoutez :  
+>  1. Exécutez le bloc-notes à l’aide de **exécuter en tant qu’administrateur**. Ouvrez `%ProgramFiles%\Microsoft Visual Studio [version]\Common7\IDE\Extensions\Microsoft\Architecture Tools\ExtensibilityRuntime\extension.vsixmanifest`.  
+>  
+>  2. Dans l'élément `Content`, ajoutez :  
 > 
->    ```xml  
->    <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>  
->    ```  
->    3.  Sous le **Visual Studio Tools** section du Visual Studio application menu Démarrer, ouvrez **invite de commandes développeur**.  
+>     ```xml  
+>     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>  
+>     ```  
+>
+>  3. Sous le **Visual Studio Tools** section du Visual Studio application menu Démarrer, ouvrez **invite de commandes développeur**.  
 > 
->    Entrez :  
+>     Entrez :  
 > 
->    `devenv /rootSuffix /updateConfiguration`  
+>     `devenv /rootSuffix /updateConfiguration`  
 > 
->    `devenv /rootSuffix Exp /updateConfiguration`  
->    4.  Redémarrez Visual Studio.  
+>     `devenv /rootSuffix Exp /updateConfiguration`  
+>    
+>  4. Redémarrez Visual Studio.  
   
  **Assurez-vous que votre code se trouve dans un projet VSIX**  
   
@@ -66,15 +69,15 @@ public class MyProperty
   
  Vous pouvez définir des propriétés sur <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> ou l'une de ses classes dérivées, notamment :  
   
--   `ILayerModel` : le modèle  
+- `ILayerModel` : le modèle  
   
--   `ILayer` : chaque couche  
+- `ILayer` : chaque couche  
   
--   `ILayerDependencyLink` : les liens entre les couches  
+- `ILayerDependencyLink` : les liens entre les couches  
   
--   `ILayerComment`  
+- `ILayerComment`  
   
--   `ILayerCommentLink`  
+- `ILayerCommentLink`  
   
 ## <a name="example"></a>Exemple  
  Le code suivant est un descripteur de propriété personnalisé classique. Il définit une propriété booléenne sur le modèle de couche (`ILayerModel`) qui permet à l'utilisateur de fournir des valeurs pour une méthode de validation personnalisée.  

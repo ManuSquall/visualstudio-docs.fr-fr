@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 394a986963ad1d1690535aecbb3355bdbe382516
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 54288f345276a019bf8fd6987a9e138c53c8a9e2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62569870"
 ---
 # <a name="common-msbuild-project-items"></a>Éléments communs des projets MSBuild
 Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], un élément est une référence nommée à un ou plusieurs fichiers. Les éléments contiennent des métadonnées, comme des noms de fichiers, des chemins et des numéros de version. Dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], tous les types de projets ont plusieurs éléments en commun. Ces éléments sont définis dans le fichier *Microsoft.Build.CommonTypes.xsd*.
@@ -46,9 +46,9 @@ Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md
 |Nom des métadonnées de l’élément|Description|
 |---------------|-----------------|
 |Name|Chaîne facultative. Nom complet du composant.|
-|GUID|Chaîne facultative. GUID du composant sous la forme {12345678-1234-1234-1234-1234567891234}.|
-|VersionMajor|Chaîne facultative. Partie principale du numéro de version du composant. Par exemple, « 5 » si le numéro de version complet est « 5.46 ».|
-|VersionMinor|Chaîne facultative. Partie secondaire du numéro de version du composant. Par exemple, « 46 » si le numéro de version complet est « 5.46 ».|
+|GUID|Chaîne requise. GUID du composant sous la forme {12345678-1234-1234-1234-1234567891234}.|
+|VersionMajor|Chaîne requise. Partie principale du numéro de version du composant. Par exemple, « 5 » si le numéro de version complet est « 5.46 ».|
+|VersionMinor|Chaîne requise. Partie secondaire du numéro de version du composant. Par exemple, « 46 » si le numéro de version complet est « 5.46 ».|
 |dans le dossier HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full\|Chaîne facultative. LocaleID du composant.|
 |WrapperTool|Chaîne facultative. Nom de l'outil wrapper utilisé sur le composant, par exemple, « tlbimp ».|
 |Isolated|Valeur booléenne facultative. Indique si le composant est un composant sans inscription.|
@@ -76,11 +76,10 @@ Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md
 |Name|Chaîne facultative. Nom complet de la référence.|
 |Projet|Chaîne facultative. GUID de la référence sous la forme {12345678-1234-1234-1234-1234567891234}.|
 |Package|Chaîne facultative. Chemin d'accès du fichier projet référencé.|
-|ReferenceOutputAssembly|Valeur booléenne facultative. Si sa valeur est `false`, n’inclut pas la sortie du projet référencé comme [Référence](#Reference) de ce projet, mais fait quand même en sorte que l’autre projet se génère avant celui-ci. La valeur par défaut est `true`.|
+|ReferenceOutputAssembly|Valeur booléenne facultative. Si sa valeur est `false`, n’inclut pas la sortie du projet référencé comme [Référence](#reference) de ce projet, mais fait quand même en sorte que l’autre projet se génère avant celui-ci. La valeur par défaut est `true`.|
 
 ### <a name="compile"></a>Compile
  Représente les fichiers sources du compilateur.
-
 
 | Nom des métadonnées de l’élément | Description |
 |-----------------------| - |
@@ -92,7 +91,6 @@ Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md
 
 ### <a name="embeddedresource"></a>EmbeddedResource
  Représente les ressources à incorporer dans l'assembly généré.
-
 
 | Nom des métadonnées de l’élément | Description |
 |-----------------------| - |
@@ -108,7 +106,6 @@ Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md
 ### <a name="content"></a>Contenu
  Représente les fichiers qui ne sont pas compilés dans le projet, mais qui peuvent être incorporés ou publiés en même temps.
 
-
 | Nom des métadonnées de l’élément | Description |
 |-----------------------| - |
 | DependentUpon | Chaîne facultative. Spécifie le fichier dont dépend ce fichier pour une compilation correcte. |
@@ -123,7 +120,6 @@ Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md
 
 ### <a name="none"></a>Aucun.
  Représente les fichiers qui ne doivent avoir aucun rôle dans le processus de génération.
-
 
 | Nom des métadonnées de l’élément | Description |
 |-----------------------| - |

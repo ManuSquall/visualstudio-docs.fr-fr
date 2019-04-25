@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5590d9f33d2c34b7d3d86aaf00307419685ca8da
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 76729bd44d196028fd88bd13718a34518b1fbde4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949721"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052322"
 ---
 # <a name="how-to-use-breakpoints-with-xslt"></a>Procédure : utilisation de points d'arrêt avec XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,34 +28,34 @@ Vous pouvez définir des points d'arrêt dans une feuille de style XSLT ou dans 
   
 #### <a name="to-set-a-breakpoint-in-a-style-sheet"></a>Pour définir un point d'arrêt dans une feuille de style  
   
-1.  Ouvrez une feuille de style dans l'éditeur XML.  
+1. Ouvrez une feuille de style dans l'éditeur XML.  
   
-2.  Placez le curseur à l’emplacement du point d’arrêt, avec le bouton droit, pointez sur **point d’arrêt**, puis cliquez sur **insérer un point d’arrêt**.  
+2. Placez le curseur à l’emplacement du point d’arrêt, avec le bouton droit, pointez sur **point d’arrêt**, puis cliquez sur **insérer un point d’arrêt**.  
   
-3.  Cliquez sur le bouton Parcourir (**...** ) sur le **entrée** champ de la fenêtre de propriétés de document.  
+3. Cliquez sur le bouton Parcourir (**...** ) sur le **entrée** champ de la fenêtre de propriétés de document.  
   
-4.  Recherchez le document source XML et cliquez sur **Open**.  
+4. Recherchez le document source XML et cliquez sur **Open**.  
   
      Vous définissez ainsi le document source à utiliser pour la transformation XSLT.  
   
-5.  Cliquez sur le **débogage XSLT** dans la barre d’outils de l’éditeur XML.  
+5. Cliquez sur le **débogage XSLT** dans la barre d’outils de l’éditeur XML.  
   
 ## <a name="set-a-breakpoint-in-an-xml-source-document"></a>Définir un point d'arrêt dans un document source XML  
  Les points d'arrêt peuvent être définis sur des éléments, des attributs, un nœud d'espace de noms, des commentaires, une instruction de traitement et des nœuds de texte d'un document source XML. Il est impossible de définir un point d'arrêt sur le nœud de document ou sur un nœud d'espace de noms hérité de l'élément parent.  
   
 #### <a name="to-set-a-breakpoint-in-an-xml-source-document"></a>Pour définir un point d'arrêt dans un document source XML  
   
-1.  Ouvrez le document XML dans l'éditeur XML.  
+1. Ouvrez le document XML dans l'éditeur XML.  
   
-2.  Placez le curseur à l’emplacement du point d’arrêt, avec le bouton droit, pointez sur **point d’arrêt**, puis cliquez sur **insérer un point d’arrêt**.  
+2. Placez le curseur à l’emplacement du point d’arrêt, avec le bouton droit, pointez sur **point d’arrêt**, puis cliquez sur **insérer un point d’arrêt**.  
   
-3.  Cliquez sur le bouton Parcourir (**...** ) sur le **feuille de style** champ de la fenêtre de propriétés de document.  
+3. Cliquez sur le bouton Parcourir (**...** ) sur le **feuille de style** champ de la fenêtre de propriétés de document.  
   
-4.  Recherchez le document source XML et cliquez sur **Open**.  
+4. Recherchez le document source XML et cliquez sur **Open**.  
   
      Vous définissez ainsi le document source à utiliser pour la transformation XSLT.  
   
-5.  Cliquez sur le **débogage XSLT** dans la barre d’outils de l’éditeur XML.  
+5. Cliquez sur le **débogage XSLT** dans la barre d’outils de l’éditeur XML.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Procédure pas à pas : Déboguer une feuille de style XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md)

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 869075875f5de56cc7454c58f7dbb5dfda7a9f76
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: dbd65c5247a82f2a58a57e50402ecde5d330cc9b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928775"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111686"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Ajouter du code à des datasets dans des applications multiniveaux
 Vous pouvez étendre les fonctionnalités d’un jeu de données en créant un fichier de classe partielle pour le jeu de données et en ajoutant du code (au lieu d’ajouter du code pour le *DatasetName*. Fichier Dataset.Designer). Classes partielles permettent au code pour une classe spécifique être réparti entre plusieurs fichiers physiques. Pour plus d’informations, consultez [partielle](/dotnet/visual-basic/language-reference/modifiers/partial) ou [classes et méthodes partielles](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
@@ -35,15 +35,15 @@ Par défaut, une fois que vous séparez le jeu de données et le code du TableAd
 
 ## <a name="to-add-code-to-datasets-in-n-tier-applications"></a>Pour ajouter du code pour les jeux de données dans les applications multicouches
 
-1.  Recherchez le projet qui contient le *.xsd* fichier.
+1. Recherchez le projet qui contient le *.xsd* fichier.
 
-2.  Sélectionnez le **.xsd** fichier à ouvrir le jeu de données.
+2. Sélectionnez le **.xsd** fichier à ouvrir le jeu de données.
 
-3.  Avec le bouton droit de la table de données à laquelle vous souhaitez ajouter du code (le nom de table dans la barre de titre), puis sélectionnez **afficher le Code**.
+3. Avec le bouton droit de la table de données à laquelle vous souhaitez ajouter du code (le nom de table dans la barre de titre), puis sélectionnez **afficher le Code**.
 
      Une classe partielle est créée et s’ouvre dans l’éditeur de Code.
 
-4.  Ajoutez le code à l’intérieur de la déclaration de classe partielle.
+4. Ajoutez le code à l’intérieur de la déclaration de classe partielle.
 
      L’exemple suivant indique où ajouter le code au CustomersDataTable dans NorthwindDataSet :
 
@@ -53,6 +53,7 @@ Par défaut, une fois que vous séparez le jeu de données et le code du TableAd
         ' to the CustomersDataTable.
     End Class
     ```
+
     ```csharp
     partial class CustomersDataTable
     {

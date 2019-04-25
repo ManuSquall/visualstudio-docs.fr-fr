@@ -10,12 +10,12 @@ ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 78b768ae63fcf03912d4f81820e80706f8a46a98
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0e7cd96324e5a2bbd6c9b0acf4125bc0450cfd06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950269"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085777"
 ---
 # <a name="project-subtypes-design"></a>Conception de sous-types de projets
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,11 +24,11 @@ Sous-types de projet permettent aux VSPackages d’étendre les projets basés s
   
  Les rubriques suivantes décrivent en détail la conception de base et l’implémentation de sous-types de projet :  
   
--   Conception du sous-type de projet.  
+- Conception du sous-type de projet.  
   
--   Agrégation de plusieurs niveaux.  
+- Agrégation de plusieurs niveaux.  
   
--   Prise en charge des Interfaces.  
+- Prise en charge des Interfaces.  
   
 ## <a name="project-subtype-design"></a>Conception de sous-type de projet  
  L’initialisation d’un sous-type de projet est obtenue en agrégeant les principaux <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> objets. Cette agrégation permet un sous-type de projet substituer ou améliorer la plupart des fonctionnalités du projet de base. Les sous-types de projet obtenir la première occasion pour gérer à l’aide des propriétés <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>, à l’aide des commandes <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> et <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>et la gestion de l’élément projet à l’aide <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>. Les sous-types de projet peuvent également étendre :  
@@ -71,11 +71,11 @@ Extendeur de Automation de sous-type de projet.
 ## <a name="multi-level-aggregation"></a>Agrégation de plusieurs niveaux  
  Une implémentation de sous-type de projet qui encapsule un sous-type de projet de niveau inférieur doit être programmées de manière coopérative pour autoriser le sous-type de projet interne fonctionner correctement. Une liste des responsabilités de programmation comprend :  
   
--   Le <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> implémentation du sous-type de projet qui encapsule le sous-type interne doit déléguer à la <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> implémentation de sous-type de projet interne pour les deux <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> et <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> méthodes.  
+- Le <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> implémentation du sous-type de projet qui encapsule le sous-type interne doit déléguer à la <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> implémentation de sous-type de projet interne pour les deux <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> et <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> méthodes.  
   
--   Le <xref:EnvDTE80.IInternalExtenderProvider> implémentation du sous-type de projet de wrapper doit déléguer à celle de son sous-type de projet interne. En particulier, l’implémentation de <xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A> doit obtenir la chaîne des noms de sous-type de projet interne et puis concaténer les chaînes qu’il veut ajouter en tant que les extendeurs.  
+- Le <xref:EnvDTE80.IInternalExtenderProvider> implémentation du sous-type de projet de wrapper doit déléguer à celle de son sous-type de projet interne. En particulier, l’implémentation de <xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A> doit obtenir la chaîne des noms de sous-type de projet interne et puis concaténer les chaînes qu’il veut ajouter en tant que les extendeurs.  
   
--   Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> implémentation d’un sous-type de projet de wrapper doit instancier la <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg> objet de son interne sous-type de projet et maintenez-le enfoncé comme un délégué privé, étant donné que seulement de l’objet de configuration de projet du projet de base sait directement que le wrapper objet de configuration de sous-type de projet existe. Le sous-type de projet externe peut initialement choisissez qu’elle souhaite gérer directement des interfaces de configuration, puis de déléguer le reste à l’implémentation du sous-type de projet interne de <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>.  
+- Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> implémentation d’un sous-type de projet de wrapper doit instancier la <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg> objet de son interne sous-type de projet et maintenez-le enfoncé comme un délégué privé, étant donné que seulement de l’objet de configuration de projet du projet de base sait directement que le wrapper objet de configuration de sous-type de projet existe. Le sous-type de projet externe peut initialement choisissez qu’elle souhaite gérer directement des interfaces de configuration, puis de déléguer le reste à l’implémentation du sous-type de projet interne de <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>.  
   
 ## <a name="supporting-interfaces"></a>Prise en charge des Interfaces  
  Le projet de base délègue les appels à la prise en charge des interfaces ajoutées par un sous-type de projet, pour étendre les divers aspects de son implémentation. Cela inclut l’extension des objets de configuration de projet et des différents objets de navigateur de propriété. Ces interfaces sont récupérées en appelant `QueryInterface` sur `punkOuter` (un pointeur vers le `IUnknown`) de l’agrégateur de sous-type de projet extérieur.  

@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d3630dd316ec137b63ec11fc8a87634d0f24bf7
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: 9ac716c3268709cdf168a379b2df6cd40b727f51
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268612"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793801"
 ---
 # <a name="features-of-visual-studio"></a>Fonctionnalités de Visual Studio
 
@@ -24,7 +24,7 @@ Le programme d’installation modulaire de Visual Studio vous permet de choisir 
 
 ::: moniker range="vs-2017"
 
-Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) pour l’installer gratuitement.
+Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) pour l’installer gratuitement.
 
 ::: moniker-end
 
@@ -100,7 +100,7 @@ L’**Explorateur d’objets SQL Server** de Visual Studio offre une vue des obj
 
 ## <a name="debug-test-and-improve-your-code"></a>Déboguer, tester et améliorer votre code
 
-Lorsque vous écrivez du code, vous devez l’exécuter, tester ses performances et rechercher les bogues. Le système de débogage de pointe de Visual Studio vous permet de déboguer du code en cours d’exécution dans votre projet local, sur un appareil distant ou sur un [émulateur d’appareil](../cross-platform/visual-studio-emulator-for-android.md). Vous pouvez parcourir le code instruction par instruction et en examiner les variables. Vous pouvez définir des points d’arrêt qui sont atteints seulement quand une condition spécifiée a la valeur true. Vous pouvez gérer les options de débogage dans l’éditeur de code lui-même, pour ne pas avoir à quitter votre code. Pour en savoir plus sur le processus de débogage de Visual Studio, consultez [Visite guidée des fonctionnalités de débogage](../debugger/debugger-feature-tour.md).
+Lorsque vous écrivez du code, vous devez l’exécuter, tester ses performances et rechercher les bogues. Le système de débogage de pointe de Visual Studio vous permet de déboguer du code en cours d’exécution dans votre projet local, sur un appareil distant ou sur un [émulateur d’appareil](../cross-platform/visual-studio-emulator-for-android.md). Vous pouvez parcourir le code instruction par instruction et en examiner les variables. Vous pouvez définir des points d’arrêt qui sont atteints seulement quand une condition spécifiée a la valeur true. Vous pouvez gérer les options de débogage dans l’éditeur de code lui-même, pour ne pas avoir à quitter votre code. Pour en savoir plus sur le processus de débogage de Visual Studio, consultez [Visite guidée du débogueur](../debugger/debugger-feature-tour.md).
 
 Pour en savoir plus sur l’amélioration des performances de vos applications, consultez les fonctionnalités de [profilage](../profiling/profiling-feature-tour.md) de Visual Studio.
 
@@ -118,7 +118,7 @@ Azure DevOps Services est un ensemble de services cloud qui permettent la planif
 
 Team Foundation Server (TFS) est le hub de gestion du cycle de vie des applications pour Visual Studio. Il permet à toutes personnes impliquées dans le processus de développement de participer à une même solution. TFS est également utile pour la gestion des équipes et des projets hétérogènes.
 
-Si vous avez une organisation Azure DevOps ou Team Foundation Server sur votre réseau, utilisez la fenêtre **Team Explorer** dans Visual Studio pour vous y connecter. Depuis cette fenêtre, vous pouvez vérifier le code dans ou en dehors du contrôle de code source, gérer des éléments de travail, démarrer des builds et accéder aux salles d'équipe et aux espaces de travail. Vous pouvez ouvrir **Team Explorer** à partir de la zone **Lancement rapide** ou, dans le menu principal, à partir de **Affichage** > **Team Explorer** ou de **Équipe** > **Gérer les connexions**.
+Si vous avez une organisation Azure DevOps ou Team Foundation Server sur votre réseau, utilisez la fenêtre **Team Explorer** dans Visual Studio pour vous y connecter. Depuis cette fenêtre, vous pouvez vérifier le code dans ou en dehors du contrôle de code source, gérer des éléments de travail, démarrer des builds et accéder aux salles d'équipe et aux espaces de travail. Vous pouvez ouvrir **Team Explorer** à partir de la zone de recherche, ou dans le menu principal depuis **Affichage** > **Team Explorer** ou depuis **Équipe** > **Gérer les connexions**.
 
 L’illustration suivante montre la fenêtre **Team Explorer** pour une solution qui est hébergée dans Azure DevOps Services.
 

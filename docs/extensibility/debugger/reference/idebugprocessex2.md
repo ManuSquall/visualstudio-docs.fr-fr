@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef8fd848ed1a8298cc4ea8a5ce9d2c0463a2b779
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e0b29d88387ccb2ed711f1a000bf7bb00a34dd01
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693599"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084256"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
 Cette interface permet à la session de débogage manager (SDM) notifier un processus qu’il est d’attachement à ou de détachement d’un processus.
@@ -39,7 +39,7 @@ IDebugProcessEx2 : IUnknown
 
 ## <a name="notes-for-callers"></a>Notes de publication pour les appelants
 
--   Les appels SDM [QueryInterface](/cpp/atl/queryinterface) sur un `IDebugProcess2` interface pour obtenir cette interface.
+- Les appels SDM [QueryInterface](/cpp/atl/queryinterface) sur un `IDebugProcess2` interface pour obtenir cette interface.
 
 ## <a name="methods-in-vtable-order"></a>Méthodes dans l'ordre Vtable
  Le tableau suivant présente les méthodes de `IDebugProcessEx2`.
@@ -53,7 +53,7 @@ IDebugProcessEx2 : IUnknown
 ## <a name="remarks"></a>Notes
  Cette interface est privée entre le SDM et le processus.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : Portpriv.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 385f5c9e03aaeb84cf33c6d76a499b0d1e35d5c3
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 3c76167468d9eb6fbe93c3bef0c4ae8c15634fc5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54931984"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091603"
 ---
 # <a name="how-to-debug-an-activex-control"></a>Procédure : déboguer un contrôle ActiveX
 
@@ -40,19 +40,19 @@ Pour déboguer votre contrôle ActiveX, vous devez spécifier un conteneur (exé
 
 ## <a name="to-specify-a-container-for-the-debug-session"></a>Pour spécifier un conteneur pour une session de débogage
 
-1.  Dans l'Explorateur de solutions, sélectionnez le projet.
+1. Dans l'Explorateur de solutions, sélectionnez le projet.
 
-2.  À partir de la **vue** menu, choisissez **Pages de propriétés**.
+2. À partir de la **vue** menu, choisissez **Pages de propriétés**.
 
-3.  Dans la boîte de dialogue **Pages de propriété de projet**, ouvrez le dossier **Propriétés de configuration** et sélectionnez **Débogage**.
+3. Dans la boîte de dialogue **Pages de propriété de projet**, ouvrez le dossier **Propriétés de configuration** et sélectionnez **Débogage**.
 
-4.  Dans la catégorie **Débogage**, recherchez la propriété **Commande**.
+4. Dans la catégorie **Débogage**, recherchez la propriété **Commande**.
 
-5.  Spécifiez le nom de chemin pour le conteneur. Par exemple, C:\Program Files\Internet Explorer\IEXPLORE.EXE.
+5. Spécifiez le nom de chemin pour le conteneur. Par exemple, C:\Program Files\Internet Explorer\IEXPLORE.EXE.
 
-6.  Si vous spécifiez Internet Explorer comme conteneur et que vous utilisez Active Desktop, tapez `/new` dans la zone **Arguments de la commande**.
+6. Si vous spécifiez Internet Explorer comme conteneur et que vous utilisez Active Desktop, tapez `/new` dans la zone **Arguments de la commande**.
 
-7.  Cliquez sur **OK**.
+7. Cliquez sur **OK**.
 
      Si vous ne spécifiez pas un conteneur dans la boîte de dialogue **Pages de propriétés de projet**, vous pouvez spécifier le conteneur quand vous commencez à déboguer. Quand vous sélectionnez une commande d’exécution pour commencer le débogage, la [boîte de dialogue Exécutable pour la session de débogage](../debugger/executable-for-debugging-session-dialog-box.md) s’affiche. Spécifiez le nom de chemin du conteneur dans la boîte de dialogue.
 

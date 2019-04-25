@@ -83,5 +83,5 @@ L’exemple suivant montre des verrous d’objets qui enfreignent la règle.
 
 - <xref:System.Threading.Monitor>
 - <xref:System.AppDomain>
-- [Lock, instruction (c#)](/dotnet/csharp/language-reference/keywords/lock-statement)
+- [Lock, instruction (C#)](/dotnet/csharp/language-reference/keywords/lock-statement)
 - [SyncLock, instruction (Visual Basic)](/dotnet/visual-basic/language-reference/statements/synclock-statement)

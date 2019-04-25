@@ -12,12 +12,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 219f850ed73104357766ffc4333da55647fb9d40
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: af191c929b88f1bda76896061359b7315517beb5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "59001222"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066076"
 ---
 # <a name="extend-layer-diagrams"></a>Extend layer diagrams
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,15 +26,15 @@ Vous pouvez écrire du code pour créer et mettre à jour des diagrammes de couc
   
  Pour plus d’informations sur les diagrammes de couche, consultez :  
   
--   [Diagrammes de couche : Informations de référence](../modeling/layer-diagrams-reference.md)  
+- [Diagrammes de couche : Informations de référence](../modeling/layer-diagrams-reference.md)  
   
--   [Diagrammes de couche : Recommandations](../modeling/layer-diagrams-guidelines.md)  
+- [Diagrammes de couche : Recommandations](../modeling/layer-diagrams-guidelines.md)  
   
--   [Créer des diagrammes de couche à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)  
+- [Créer des diagrammes de couche à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)  
   
--   [Valider du code avec des diagrammes de couche](../modeling/validate-code-with-layer-diagrams.md)  
+- [Valider du code avec des diagrammes de couche](../modeling/validate-code-with-layer-diagrams.md)  
   
-##  <a name="prereqs"></a> Spécifications  
+## <a name="prereqs"></a> Spécifications  
  Vous devez avoir installé les éléments suivants sur l’ordinateur où vous voulez développer vos extensions de couche :  
   
 - Visual Studio  

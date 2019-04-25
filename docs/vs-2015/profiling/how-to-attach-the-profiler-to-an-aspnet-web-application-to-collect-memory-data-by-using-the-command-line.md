@@ -9,14 +9,14 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1d824a567f5819125837dde401107a050561d08a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 863e60592fe82c468f48912c4e36182b1bb1a36b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783470"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104146"
 ---
-# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Comment : attacher le profileur à une application Web ASP.NET pour collecter des données de mémoire en utilisant la ligne de commande
+# <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Procédure : Attacher le Profiler à une Application Web ASP.NET pour collecter des données de mémoire à l’aide de la ligne de commande
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette rubrique explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour attacher le profileur à une application web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], puis pour collecter des données sur le nombre et la taille des allocations de mémoire du .NET Framework. Vous pouvez également collecter des données sur la durée de vie des objets en mémoire du .NET Framework.  
@@ -40,7 +40,7 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
 
     **VSPerfClrEnv** {**/globalsamplegc** &#124; **/globalsamplegclife**} [**/samplelineoff**]  
 
-   -   Les options **/globalsamplegc** et **/globalsamplegclife** spécifient le type de données de mémoire à collecter.  
+   - Les options **/globalsamplegc** et **/globalsamplegclife** spécifient le type de données de mémoire à collecter.  
 
         Spécifiez seulement une des options suivantes.  
 
@@ -49,7 +49,7 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
        |**/globalsamplegc**|Active la collecte des données d’allocation de mémoire.|  
        |**/globalsamplegclife**|Active à la fois la collecte des données d’allocation de mémoire et celle des données de durée de vie des objets.|  
 
-   -   L’option **/samplelineoff** désactive l’affectation des données collectées à des lignes de code source spécifiques. Quand cette option est spécifiée, les données sont affectées seulement au niveau des fonctions.  
+   - L’option **/samplelineoff** désactive l’affectation des données collectées à des lignes de code source spécifiques. Quand cette option est spécifiée, les données sont affectées seulement au niveau des fonctions.  
 
 3. Redémarrez l’ordinateur pour définir la nouvelle configuration de l’environnement.  
 
@@ -77,23 +77,22 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                                       À utiliser avec **/wincounter** uniquement. Spécifie le nombre de millisecondes écoulées entre les événements de collecte du compteur de performances Windows. La valeur par défaut est de 500 ms.                                                                                       |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                                         Spécifie l’événement du Suivi d’événements pour Windows (ETW) qui doit être collecté au cours du profilage. Les événements ETW sont collectés dans un fichier séparé (.etl).                                                                                          |
 
-
 6. Démarrez l’application web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] de manière habituelle.  
 
 7. Attachez le profileur au processus de travail [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Type :  
 
     **VSPerfCmd**  [/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
 
-   -   L’ID de processus `(PID)` Spécifie l’ID de processus ou le nom du processus de travail [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Vous pouvez afficher les ID de processus de tous les processus en cours d’exécution dans le gestionnaire des tâches de Windows.  
+   - L’ID de processus `(PID)` Spécifie l’ID de processus ou le nom du processus de travail [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Vous pouvez afficher les ID de processus de tous les processus en cours d’exécution dans le gestionnaire des tâches de Windows.  
 
-   -   **/targetclr:** `Version` spécifie la version du common language runtime (CLR) à profiler quand plusieurs versions du runtime sont chargées dans une application.  
+   - **/targetclr:** `Version` spécifie la version du common language runtime (CLR) à profiler quand plusieurs versions du runtime sont chargées dans une application.  
 
 ## <a name="controlling-data-collection"></a>Contrôle de la collection de données  
  Pendant l’exécution de l’application, vous pouvez contrôler la collecte des données en démarrant et en arrêtant l’écriture des données dans le fichier de données du profileur avec les options de **VSPerfCmd.exe**. Le fait de pouvoir contrôler la collecte vous permet de collecter des données pour une phase spécifique de l’exécution du programme, telle que le démarrage ou l’arrêt de l’application.  
 
 #### <a name="to-start-and-stop-data-collection"></a>Pour démarrer et arrêter la collecte de données  
 
--   Les paires d’options **VSPerfCmd** suivantes permettent de démarrer et d’arrêter la collecte des données. Spécifiez chaque option sur une ligne de commande distincte. Vous pouvez activer et désactiver la collecte de données à plusieurs reprises.  
+- Les paires d’options **VSPerfCmd** suivantes permettent de démarrer et d’arrêter la collecte des données. Spécifiez chaque option sur une ligne de commande distincte. Vous pouvez activer et désactiver la collecte de données à plusieurs reprises.  
 
     |Option|Description|  
     |------------|-----------------|  

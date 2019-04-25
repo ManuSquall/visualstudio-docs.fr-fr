@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 93a9377579e9b299fd2a3b0a34e8e90a1f7f2bb6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: feb284657932a0c20cd785b14db5e2b3de9366f1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633263"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090834"
 ---
 # <a name="how-to-programmatically-check-spelling-in-worksheets"></a>Procédure : Vérifier l’orthographe dans les feuilles de calcul par programmation
   Vous pouvez vérifier par programmation l’orthographe des mots contenus dans une feuille de calcul. La boîte de dialogue **Orthographe** s’affiche automatiquement si des mots mal orthographiés figurent dans la feuille de calcul.
@@ -29,14 +29,14 @@ ms.locfileid: "56633263"
 
 ## <a name="to-check-spelling-in-a-worksheet-in-a-document-level-customization"></a>Pour vérifier l’orthographe d’une feuille de calcul dans une personnalisation au niveau du document
 
-1.  Appelez la méthode <xref:Microsoft.Office.Tools.Excel.Worksheet.CheckSpelling%2A> de la feuille de calcul.
+1. Appelez la méthode <xref:Microsoft.Office.Tools.Excel.Worksheet.CheckSpelling%2A> de la feuille de calcul.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#45](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#45)]
      [!code-vb[Trin_VstcoreExcelAutomation#45](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#45)]
 
 ## <a name="to-check-spelling-in-a-worksheet-in-a-vsto-add-in"></a>Pour vérifier l’orthographe dans une feuille de calcul dans un composant logiciel complément VSTO
 
-1.  Appelez la méthode <xref:Microsoft.Office.Interop.Excel._Worksheet.CheckSpelling%2A> de la feuille de calcul active.
+1. Appelez la méthode <xref:Microsoft.Office.Interop.Excel._Worksheet.CheckSpelling%2A> de la feuille de calcul active.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#22](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#22)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#22](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#22)]

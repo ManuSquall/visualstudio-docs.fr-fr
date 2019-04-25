@@ -24,12 +24,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c02bd6bfdbb11a42688bb434cecfd5748e072d96
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 337c57c79e55c5113bb4411a091d2c29a954c342
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802027"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098582"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Personnalisation des dispositions de fenêtres dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,11 +120,11 @@ Dans Visual Studio, vous pouvez personnaliser la position, la taille et le compo
 ### <a name="reset-name-and-switch-between-window-layouts"></a>Rétablir les dispositions de fenêtres, changement de nom et basculement
  Vous pouvez faire revenir l'IDE à la disposition d'origine des fenêtres pour votre collection de paramètres à l'aide de la commande **Rétablir la disposition de fenêtre** . Quand vous exécutez cette commande, les actions suivantes se produisent :
 
--   Toutes les fenêtres sont déplacées vers leurs positions par défaut.
+- Toutes les fenêtres sont déplacées vers leurs positions par défaut.
 
--   Les fenêtres qui sont fermées dans la disposition de fenêtre par défaut sont fermées.
+- Les fenêtres qui sont fermées dans la disposition de fenêtre par défaut sont fermées.
 
--   Les fenêtres qui sont ouvertes dans la disposition de fenêtre par défaut sont ouvertes.
+- Les fenêtres qui sont ouvertes dans la disposition de fenêtre par défaut sont ouvertes.
 
 ### <a name="create-and-save-custom-layouts"></a>Créer et enregistrer des dispositions personnalisées
  Avec Visual Studio 2015, vous pouvez enregistrer jusqu'à 10 dispositions de fenêtres personnalisées et passer rapidement de l'une à l'autre. Les étapes suivantes montrent comment créer, enregistrer, appeler et gérer des dispositions personnalisées qui tirent parti de plusieurs écrans avec des fenêtres d’outils ancrées et flottantes.
@@ -133,29 +133,29 @@ Dans Visual Studio, vous pouvez personnaliser la position, la taille et le compo
 
 ##### <a name="create-a-ui-project-and-customize-the-layout"></a>Créer un projet d'interface utilisateur et personnaliser la disposition
 
-1.  Dans la boîte de dialogue **Nouveau projet** , créez une application de bureau WPF Visual C# et donnez-lui un nom quelconque. Supposons que vous deviez travailler sur l'interface utilisateur de ce projet. Vous voulez donc maximiser l'espace de la fenêtre du concepteur et pousser les autres fenêtres d'outils à l'écart.
+1. Dans la boîte de dialogue **Nouveau projet** , créez une application de bureau WPF Visual C# et donnez-lui un nom quelconque. Supposons que vous deviez travailler sur l'interface utilisateur de ce projet. Vous voulez donc maximiser l'espace de la fenêtre du concepteur et pousser les autres fenêtres d'outils à l'écart.
 
-2.  Si vous avez plusieurs écrans, déplacez les fenêtres **Explorateur de solutions** et **Propriétés** sur votre deuxième écran. Dans un système à un seul écran, essayez de fermer toutes les fenêtres à l'exception de celle du concepteur.
+2. Si vous avez plusieurs écrans, déplacez les fenêtres **Explorateur de solutions** et **Propriétés** sur votre deuxième écran. Dans un système à un seul écran, essayez de fermer toutes les fenêtres à l'exception de celle du concepteur.
 
-3.  Appuyez sur **Ctrl + Alt + X** pour afficher la boîte à outils. Si la fenêtre est ancrée, faites-la glisser pour la faire flotter où vous le souhaitez sur l'un des deux écrans.
+3. Appuyez sur **Ctrl + Alt + X** pour afficher la boîte à outils. Si la fenêtre est ancrée, faites-la glisser pour la faire flotter où vous le souhaitez sur l'un des deux écrans.
 
-4.  Appuyez sur F5 pour configurer Visual Studio en mode débogage. Ajustez librement la position des fenêtres de débogage Auto, Pile des appels et Sortie. La disposition que vous allez créer s'applique à la fois au mode d'édition et au mode débogage.
+4. Appuyez sur F5 pour configurer Visual Studio en mode débogage. Ajustez librement la position des fenêtres de débogage Auto, Pile des appels et Sortie. La disposition que vous allez créer s'applique à la fois au mode d'édition et au mode débogage.
 
-5.  Quand vous êtes satisfait de vos dispositions dans les modes d’édition et débogage, accédez au menu principal et choisissez **Fenêtre > Enregistrer la disposition de fenêtre**. Appelez cette disposition « Concepteur ».
+5. Quand vous êtes satisfait de vos dispositions dans les modes d’édition et débogage, accédez au menu principal et choisissez **Fenêtre > Enregistrer la disposition de fenêtre**. Appelez cette disposition « Concepteur ».
 
      Notez que le prochain raccourci clavier disponible dans la liste réservée (Ctrl + Alt + 1...0) est attribué à votre nouvelle disposition.
 
 ##### <a name="create-a-database-project-and-layout"></a>Créer un projet de base de données et une disposition
 
-1.  Ajoutez un nouveau projet **Base de données SQL Server** à la solution.
+1. Ajoutez un nouveau projet **Base de données SQL Server** à la solution.
 
-2.  Cliquez avec le bouton droit sur le nouveau projet dans l'Explorateur de solutions et choisissez **Afficher dans l'Explorateur d'objets**. Dans la fenêtre **Explorateur d'objets SQL Server** qui s'affiche, vous pouvez accéder aux tables, vues et autres objets dans votre base de données. Vous pouvez soit faire flotter cette fenêtre ou la laisser ancrée. Ajustez librement les autres fenêtres d'outils. Pour plus de réalisme, vous pouvez ajouter une vraie base de données, mais cette étape n'est pas obligatoire dans cette procédure pas à pas.
+2. Cliquez avec le bouton droit sur le nouveau projet dans l'Explorateur de solutions et choisissez **Afficher dans l'Explorateur d'objets**. Dans la fenêtre **Explorateur d'objets SQL Server** qui s'affiche, vous pouvez accéder aux tables, vues et autres objets dans votre base de données. Vous pouvez soit faire flotter cette fenêtre ou la laisser ancrée. Ajustez librement les autres fenêtres d'outils. Pour plus de réalisme, vous pouvez ajouter une vraie base de données, mais cette étape n'est pas obligatoire dans cette procédure pas à pas.
 
-3.  Quand vous êtes satisfait de votre disposition, accédez au menu principal et choisissez **Fenêtre > Enregistrer la disposition de fenêtre**. Nommez cette disposition « Projet BD ». (Nous n’allons pas nous ennuyer à créer une disposition pour le mode débogage dans ce projet.)
+3. Quand vous êtes satisfait de votre disposition, accédez au menu principal et choisissez **Fenêtre > Enregistrer la disposition de fenêtre**. Nommez cette disposition « Projet BD ». (Nous n’allons pas nous ennuyer à créer une disposition pour le mode débogage dans ce projet.)
 
 ##### <a name="switch-between-the-layouts"></a>Basculer entre les dispositions
 
-1.  Pour basculer entre les dispositions, utilisez les raccourcis clavier ou, dans le menu principal, choisissez **Fenêtre > Appliquer la disposition de fenêtre**.
+1. Pour basculer entre les dispositions, utilisez les raccourcis clavier ou, dans le menu principal, choisissez **Fenêtre > Appliquer la disposition de fenêtre**.
 
      ![Menu appliquer la fenêtre disposition](../ide/media/vs2015-applywindowlayout.png "VS2015_ApplyWindowLayout")
 
@@ -167,7 +167,7 @@ Dans Visual Studio, vous pouvez personnaliser la position, la taille et le compo
 
 ##### <a name="manage-and-roam-your-layouts"></a>Gérer vos dispositions et les rendre itinérantes
 
-1.  Vous pouvez supprimer, renommer ou réorganiser votre disposition personnalisée en choisissant **Fenêtre > Gérer les dispositions de fenêtres**. Si vous déplacez une disposition, la combinaison de touches est automatiquement ajustée afin de refléter la nouvelle position dans la liste. Les combinaisons ne pouvant pas être modifiées autrement, vous ne pouvez stocker que 10 dispositions à la fois.
+1. Vous pouvez supprimer, renommer ou réorganiser votre disposition personnalisée en choisissant **Fenêtre > Gérer les dispositions de fenêtres**. Si vous déplacez une disposition, la combinaison de touches est automatiquement ajustée afin de refléter la nouvelle position dans la liste. Les combinaisons ne pouvant pas être modifiées autrement, vous ne pouvez stocker que 10 dispositions à la fois.
 
      ![Gérer les dispositions de fenêtres](../ide/media/managewindowlayouts.png "ManageWindowLayouts")
 

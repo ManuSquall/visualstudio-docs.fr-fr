@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f1e3c479e7e5ae706121e0513d825d57d1cb540c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d1a1e161c0559013571a2ceaa775cfe428c1345c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939630"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060421"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Propriétés de stockage calculées et personnalisées
 Toutes les propriétés de domaine dans un langage spécifique à un domaine (DSL) peuvent être affichées à l’utilisateur sur le diagramme et dans votre Explorateur de langage et sont accessibles par le code de programme. Toutefois, les propriétés diffèrent dans la manière dont leurs valeurs sont stockées.
@@ -33,30 +33,30 @@ Toutes les propriétés de domaine dans un langage spécifique à un domaine (DS
 
 #### <a name="to-define-a-calculated-or-custom-storage-property"></a>Pour définir une Calculated ou la propriété de stockage personnalisé
 
-1.  Dans DslDefinition.dsl, sélectionnez la propriété de domaine dans le diagramme ou dans **Explorateur DSL**.
+1. Dans DslDefinition.dsl, sélectionnez la propriété de domaine dans le diagramme ou dans **Explorateur DSL**.
 
-2.  Dans le **propriétés** fenêtre, définissez la **type** champ **Calculated** ou **personnalisé stockage**.
+2. Dans le **propriétés** fenêtre, définissez la **type** champ **Calculated** ou **personnalisé stockage**.
 
      Assurez-vous que vous avez également défini son **Type** ce que vous souhaitez.
 
-3.  Cliquez sur **transformer tous les modèles** dans la barre d’outils de **l’Explorateur de solutions**.
+3. Cliquez sur **transformer tous les modèles** dans la barre d’outils de **l’Explorateur de solutions**.
 
-4.  Dans le menu **Générer** , cliquez sur **Générer la solution**.
+4. Dans le menu **Générer** , cliquez sur **Générer la solution**.
 
      Le message d’erreur suivant s’affiche : «*Votre_classe* ne contient pas de définition pour Get*YourProperty*. »
 
-5.  Double-cliquez sur le message d’erreur.
+5. Double-cliquez sur le message d’erreur.
 
      Dsl\GeneratedCode\DomainClasses.cs ou DomainRelationships.cs s’ouvre. Au-dessus de l’appel de méthode en surbrillance, un commentaire vous invite à fournir une implémentation pour Get*YourProperty*().
 
     > [!NOTE]
     >  Ce fichier est généré à partir de DslDefinition.dsl. Si vous modifiez ce fichier, vos modifications seront perdues la prochaine fois que vous cliquez sur **transformer tous les modèles**. Au lieu de cela, ajoutez la méthode nécessaire dans un fichier distinct.
 
-6.  Créez ou ouvrez un fichier de classe dans un dossier distinct, par exemple CustomCode\\*YourDomainClass*. cs.
+6. Créez ou ouvrez un fichier de classe dans un dossier distinct, par exemple CustomCode\\*YourDomainClass*. cs.
 
      Assurez-vous que l’espace de noms est le même que dans le code généré.
 
-7.  Dans le fichier de classe, écrivez une implémentation partielle de la classe de domaine. Dans la classe, écrire une définition de champ manquant `Get` méthode qui ressemble à l’exemple suivant :
+7. Dans le fichier de classe, écrivez une implémentation partielle de la classe de domaine. Dans la classe, écrire une définition de champ manquant `Get` méthode qui ressemble à l’exemple suivant :
 
     ```
     namespace Company.FamilyTree
@@ -66,7 +66,7 @@ Toutes les propriétés de domaine dans un langage spécifique à un domaine (DS
     }  }
     ```
 
-8.  Si vous définissez **type** à **personnalisé stockage**, vous devrez également fournir un `Set` (méthode). Exemple :
+8. Si vous définissez **type** à **personnalisé stockage**, vous devrez également fournir un `Set` (méthode). Exemple :
 
     ```
     void SetAgeValue(int value)
@@ -81,7 +81,7 @@ Toutes les propriétés de domaine dans un langage spécifique à un domaine (DS
 
 10. Tester la propriété. Assurez-vous que vous essayez de **Annuler** et **de restauration par progression**.
 
-##  <a name="setters"></a> Transactions et des méthodes setter personnalisée
+## <a name="setters"></a> Transactions et des méthodes setter personnalisée
  Dans la méthode Set de propriété de stockage de personnalisé, il est inutile d’ouvrir une transaction, car la méthode est généralement appelée dans une transaction active.
 
  Cependant, la méthode Set peut également être appelée si l’utilisateur appelle l’annulation ou rétablissement, ou si une transaction est en cours de restauration. Lorsque <xref:Microsoft.VisualStudio.Modeling.Store.InUndoRedoOrRollback%2A> a la valeur true, votre méthode Set doit se comporter comme suit :

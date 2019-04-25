@@ -14,37 +14,37 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 589e6f5fd102cdd2a69bc63bf623142c14337678
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0e0483f535dfd7a483d2b83728f78fa9c7167bcb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639230"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061435"
 ---
 # <a name="how-to-define-a-sharepoint-project-item-type"></a>Procédure : Définir un type d’élément de projet SharePoint
   Définir un type d’élément de projet lorsque vous souhaitez créer un élément de projet SharePoint personnalisé. Pour plus d’informations, consultez [définition des types d’éléments de projet SharePoint personnalisés](../sharepoint/defining-custom-sharepoint-project-item-types.md).
 
 ### <a name="to-define-a-project-item-type"></a>Pour définir un type d’élément de projet
 
-1.  Créez un projet de bibliothèque de classes.
+1. Créez un projet de bibliothèque de classes.
 
-2.  Ajoutez des références aux assemblys suivants :
+2. Ajoutez des références aux assemblys suivants :
 
-    -   Microsoft.VisualStudio.SharePoint
+    - Microsoft.VisualStudio.SharePoint
 
-    -   System.ComponentModel.Composition
+    - System.ComponentModel.Composition
 
-3.  Définissez une classe qui implémente l'interface <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>.
+3. Définissez une classe qui implémente l'interface <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>.
 
-4.  Ajoutez les attributs suivants à la classe :
+4. Ajoutez les attributs suivants à la classe :
 
-    -   <xref:System.ComponentModel.Composition.ExportAttribute>. Cet attribut permet à Visual Studio détecter et charger votre <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> implémentation. Passer le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> type au constructeur d’attribut.
+    - <xref:System.ComponentModel.Composition.ExportAttribute>. Cet attribut permet à Visual Studio détecter et charger votre <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> implémentation. Passer le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider> type au constructeur d’attribut.
 
-    -   <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Dans une définition de type élément de projet, cet attribut spécifie l’identificateur de chaîne pour le nouvel élément de projet. Nous vous recommandons d’utiliser le format *nom de la société*. *nom de la fonctionnalité* pour s’assurer que tous les éléments de projet ont un nom unique.
+    - <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute>. Dans une définition de type élément de projet, cet attribut spécifie l’identificateur de chaîne pour le nouvel élément de projet. Nous vous recommandons d’utiliser le format *nom de la société*. *nom de la fonctionnalité* pour s’assurer que tous les éléments de projet ont un nom unique.
 
-    -   <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemIconAttribute>. Cet attribut spécifie l’icône à afficher pour cet élément de projet dans **l’Explorateur de solutions**. Cet attribut est facultatif ; Si vous n’appliquez pas à votre classe, Visual Studio affiche une icône par défaut pour votre élément de projet. Si vous définissez cet attribut, passez le nom qualifié complet d’une icône ou une bitmap qui est incorporée dans votre assembly.
+    - <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemIconAttribute>. Cet attribut spécifie l’icône à afficher pour cet élément de projet dans **l’Explorateur de solutions**. Cet attribut est facultatif ; Si vous n’appliquez pas à votre classe, Visual Studio affiche une icône par défaut pour votre élément de projet. Si vous définissez cet attribut, passez le nom qualifié complet d’une icône ou une bitmap qui est incorporée dans votre assembly.
 
-5.  Dans votre implémentation de la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> (méthode), utilisez les membres de la *projectItemTypeDefinition* paramètre pour définir le comportement du type d’élément de projet. Ce paramètre est un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition> objet qui fournit l’accès aux événements définis dans le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> et <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFileEvents> interfaces. Pour accéder à une instance spécifique de votre type d’élément de projet, gérez <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> événements tels que <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> et <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemInitialized>.
+5. Dans votre implémentation de la <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider.InitializeType%2A> (méthode), utilisez les membres de la *projectItemTypeDefinition* paramètre pour définir le comportement du type d’élément de projet. Ce paramètre est un <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeDefinition> objet qui fournit l’accès aux événements définis dans le <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> et <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemFileEvents> interfaces. Pour accéder à une instance spécifique de votre type d’élément de projet, gérez <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents> événements tels que <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemAdded> et <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemInitialized>.
 
 ## <a name="example"></a>Exemple
  L’exemple de code suivant montre comment définir un type d’élément de projet simple. Ce type d’élément de projet écrit un message dans le **sortie** fenêtre et **liste d’erreurs** fenêtre lorsqu’un utilisateur ajoute un élément de projet de ce type à un projet.
@@ -57,9 +57,9 @@ ms.locfileid: "56639230"
 ## <a name="compile-the-code"></a>Compiler le code
  Cet exemple nécessite des références aux assemblys suivants :
 
--   Microsoft.VisualStudio.SharePoint
+- Microsoft.VisualStudio.SharePoint
 
--   System.ComponentModel.Composition
+- System.ComponentModel.Composition
 
 ## <a name="deploy-the-project-item"></a>Déployer l’élément de projet
  Pour activer les autres développeurs d’utiliser votre élément de projet, créez un modèle de projet ou un modèle d’élément de projet. Pour plus d’informations, consultez [créer des modèles de projet pour les éléments de projet SharePoint et de modèles d’élément](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md).

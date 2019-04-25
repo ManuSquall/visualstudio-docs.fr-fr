@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 78342ce6-36c8-485b-a5f6-760e7a420a26
 caps.latest.revision: 8
 manager: jillfra
-ms.openlocfilehash: 4e17ed6ac15dbaee08c596b67a70b53f440a1e1e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 457b3baf2b291a0ef96bd8bbd748261348a2108d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001348"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045458"
 ---
 # <a name="how-to-upgrade-a-visual-studio-custom-start-page"></a>Procédure : Mise à niveau une Page de démarrage personnalisée Visual Studio
 Vous pouvez mettre à niveau une page de démarrage personnalisée Visual Studio 2010 ou Visual Studio 2012 vers Visual Studio 2015 en procédant comme suit.
@@ -22,19 +22,19 @@ Vous pouvez mettre à niveau une page de démarrage personnalisée Visual Studio
 
 ### <a name="to-upgrade-a-custom-start-page-to-visual-studio-2015"></a>Pour mettre à niveau une page de démarrage personnalisée vers Visual Studio 2015
 
-1.  Vérifiez que Visual Studio 2015 et le Kit de développement logiciel (SDK) Visual Studio 2015 sont installés. Vous pouvez télécharger le Kit VSSDK à partir de la page [Microsoft Visual Studio 2013 SDK](https://my.visualstudio.com/Downloads?pid=1436).
+1. Vérifiez que Visual Studio 2015 et le Kit de développement logiciel (SDK) Visual Studio 2015 sont installés. Vous pouvez télécharger le Kit VSSDK à partir de la page [Microsoft Visual Studio 2013 SDK](https://my.visualstudio.com/Downloads?pid=1436).
 
-2.  Ouvrez votre projet de modèle personnalisé. Vous verrez un message vous informant que le projet doit être mis à niveau. Cliquez sur **OK** et attendez que la mise à niveau se termine.
+2. Ouvrez votre projet de modèle personnalisé. Vous verrez un message vous informant que le projet doit être mis à niveau. Cliquez sur **OK** et attendez que la mise à niveau se termine.
 
-3.  Dans les propriétés du projet de page de démarrage et du projet de contrôle, vérifiez que l’infrastructure cible est au moins .NET Framework 4.5.
+3. Dans les propriétés du projet de page de démarrage et du projet de contrôle, vérifiez que l’infrastructure cible est au moins .NET Framework 4.5.
 
-4.  Dans la catégorie Debug des propriétés du projet de page de démarrage, définissez le chemin de la version Visual Studio 2015 de devenv.exe.
+4. Dans la catégorie Debug des propriétés du projet de page de démarrage, définissez le chemin de la version Visual Studio 2015 de devenv.exe.
 
-5.  Dans les références de projet pour les deux projets, supprimez les références à Microsoft.VisualStudio.Shell.11.0 et ajoutez des références à Microsoft.VisualStudio.Shell.14.0.
+5. Dans les références de projet pour les deux projets, supprimez les références à Microsoft.VisualStudio.Shell.11.0 et ajoutez des références à Microsoft.VisualStudio.Shell.14.0.
 
-6.  Ouvrez StartPage.xaml avec l’éditeur XML et apportez les modifications suivantes :
+6. Ouvrez StartPage.xaml avec l’éditeur XML et apportez les modifications suivantes :
 
-    1.  Mettez à jour les espaces de noms. Remplacez les lignes suivantes :
+    1. Mettez à jour les espaces de noms. Remplacez les lignes suivantes :
 
         ```
 
@@ -52,4 +52,4 @@ Vous pouvez mettre à niveau une page de démarrage personnalisée Visual Studio
         xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"
         ```
 
-7.  Ouvrez MyControl.xaml, puis remplacez la référence d’espace de noms `xmlns:vs="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.11.0"` par `xmlns:vs="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"` .
+7. Ouvrez MyControl.xaml, puis remplacez la référence d’espace de noms `xmlns:vs="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.11.0"` par `xmlns:vs="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"` .

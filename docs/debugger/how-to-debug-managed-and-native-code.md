@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 9079479ee66b741780eab4907325b1c43a3b5ee4
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: d1fefda9d8d639bf8d360bbd6b869b75b7dae903
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476005"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847919"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Tutoriel : Déboguer du code C# et C++ dans la même session de débogage
 
@@ -44,7 +44,7 @@ Vous devez disposer de Visual Studio avec les charges de travail suivantes :
 - **Développement Desktop avec C++**
 - **Développement .NET Desktop** ou **Développement multiplateforme .NET Core**, selon le type d’application que vous voulez créer.
 
-Si vous n’avez pas Visual Studio, accédez à la page  [Téléchargements de Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017)  pour l’installer gratuitement.
+Si vous n’avez pas Visual Studio, accédez à la page  [Téléchargements de Visual Studio](https://visualstudio.microsoft.com/downloads/)  pour l’installer gratuitement.
 
 Si vous disposez d’une version installée de Visual Studio, mais que vous n’avez pas les charges de travail nécessaires, sélectionnez **Ouvrir Visual Studio Installer** dans le volet gauche de la boîte de dialogue **Nouveau projet**. Dans Visual Studio Installer, sélectionnez les charges de travail nécessaires, puis sélectionnez **Modifier**.
 
@@ -55,7 +55,7 @@ Si vous disposez d’une version installée de Visual Studio, mais que vous n’
 1. Ouvrez Visual Studio et créez un projet.
 
     ::: moniker range=">=vs-2019"
-    Tapez **Ctrl+Q** pour ouvrir la zone de recherche, tapez **Projet vide**, choisissez **Modèles**, puis choisissez **Créer un projet vide** pour C++. Dans la boîte de dialogue qui apparaît, choisissez **Créer**. Ensuite, tapez un nom comme **Mixed_Mode_Debugging**, puis cliquez sur **Créer**.
+    Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **Ctrl+Q** pour ouvrir la zone de recherche, tapez **Projet vide**, choisissez **Modèles**, puis choisissez **Créer un projet vide** pour C++. Dans la boîte de dialogue qui apparaît, choisissez **Créer**. Ensuite, tapez un nom comme **Mixed_Mode_Debugging**, puis cliquez sur **Créer**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Dans la barre de menus supérieure, choisissez **Fichier** > **Nouveau** > **Projet**. Dans le volet gauche de la boîte de dialogue **Nouveau projet**, sous **Visual C++**, choisissez **Autre** puis, dans le volet central, choisissez **Projet vide**. Ensuite, tapez un nom comme **Mixed_Mode_Debugging**, puis cliquez sur **OK**.
@@ -132,7 +132,7 @@ Si vous disposez d’une version installée de Visual Studio, mais que vous n’
 1. Ouvrez Visual Studio et créez un projet.
 
     ::: moniker range=">=vs-2019"
-    Tapez **Ctrl+Q** pour ouvrir la zone de recherche, tapez **console**, choisissez **Modèles**, puis choisissez **Créer un projet d’application console (.NET Framework)** pour C#. Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
+    Appuyez sur **Échap** pour fermer la fenêtre de démarrage. Tapez **Ctrl+Q** pour ouvrir la zone de recherche, tapez **console**, choisissez **Modèles**, puis choisissez **Créer un projet d’application console (.NET Framework)** pour C#. Dans la boîte de dialogue qui apparaît, choisissez **Créer**.
 
     Ensuite, tapez un nom comme **Mixed_Mode_Calling_App**, puis cliquez sur **Créer**.
     ::: moniker-end
@@ -193,7 +193,7 @@ Si vous disposez d’une version installée de Visual Studio, mais que vous n’
 
 ### <a name="to-configure-mixed-mode-debugging-for-a-net-core-app"></a>Pour configurer le débogage en mode mixte pour une application .NET Core
 
-Dans la plupart des versions de Visual Studio 2017, vous devez utiliser le fichier *launchSettings.json* au lieu des propriétés du projet pour activer le débogage en mode mixte pour le code natif dans une application .NET Core. Pour effectuer le suivi des mises à jour de l’interface utilisateur pour cette fonctionnalité, consultez ce [problème GitHub](https://github.com/dotnet/project-system/issues/1125).
+Dans la plupart des versions de Visual Studio à compter de Visual Studio 2017, vous devez utiliser le fichier *launchSettings.json* au lieu des propriétés du projet pour activer le débogage en mode mixte pour le code natif dans une application .NET Core. Pour effectuer le suivi des mises à jour de l’interface utilisateur pour cette fonctionnalité, consultez ce [problème GitHub](https://github.com/dotnet/project-system/issues/1125).
 
 1. Dans **l’Explorateur de solutions**, développez **Propriétés**, puis ouvrez le fichier *launchSettings.json*.
 
@@ -221,7 +221,7 @@ Dans la plupart des versions de Visual Studio 2017, vous devez utiliser le fichi
 
 ## <a name="set-a-breakpoint-and-start-debugging"></a>Définir un point d’arrêt et démarrer le débogage
 
-1. Dans le projet C#, ouvrez *Program.cs*. Définissez un point d’arrêt sur la ligne de code suivante en cliquant dans la marge de gauche, en sélectionnant la ligne et en appuyant sur **F9**, ou en cliquant avec le bouton droit sur la ligne et en sélectionnant **Point d’arrêt**  > **Insérer un point d’arrêt**.
+1. Dans le projet C#, ouvrez *Program.cs*. Définissez un point d’arrêt sur la ligne de code suivante en cliquant dans la marge de gauche, en sélectionnant la ligne et en appuyant sur **F9**, ou en cliquant avec le bouton droit sur la ligne et en sélectionnant **Point d’arrêt** > **Insérer un point d’arrêt**.
 
     ```csharp
     int result = Multiply(7, 7);

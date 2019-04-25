@@ -6,12 +6,12 @@ ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 95d3de67dce269696bdd3fbea7ec562511bd0347
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: bbeef5aba667f26c1297dfe02556ee192dd53a4b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "59001240"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072159"
 ---
 # <a name="image-service-and-catalog"></a>Catalogue et service d’images
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -161,7 +161,6 @@ Ce livre de recettes contient des conseils et meilleures pratiques pour arrêter
  </Source>  
 ```  
 
-
 |               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Attribut** |                                                                                                                                                                                                                                                                                                                                                                                                                                                                            **Définition**                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -216,78 +215,78 @@ Ce livre de recettes contient des conseils et meilleures pratiques pour arrêter
 ### <a name="first-steps-managed"></a>Premières étapes (gérés)  
  Pour utiliser le service d’images, vous devez ajouter des références à certains ou tous les assemblys suivants à votre projet :  
 
--   **Microsoft.VisualStudio.ImageCatalog.dll**  
+- **Microsoft.VisualStudio.ImageCatalog.dll**  
 
-    -   Requis si vous utilisez le catalogue de l’image intégrée KnownMonikers  
+    - Requis si vous utilisez le catalogue de l’image intégrée KnownMonikers  
 
--   **Microsoft.VisualStudio.Imaging.dll**  
+- **Microsoft.VisualStudio.Imaging.dll**  
 
-    -   Requis si vous utilisez **CrispImage** et **ImageThemingUtilities** dans votre UI WPF  
+    - Requis si vous utilisez **CrispImage** et **ImageThemingUtilities** dans votre UI WPF  
 
--   **Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll**  
+- **Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll**  
 
-    -   Requis si vous utilisez le **ImageMoniker** et **ImageAttributes** types  
+    - Requis si vous utilisez le **ImageMoniker** et **ImageAttributes** types  
 
-    -   **EmbedInteropTypes** doit être définie sur true  
+    - **EmbedInteropTypes** doit être définie sur true  
 
--   **Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime**  
+- **Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime**  
 
-    -   Requis si vous utilisez le **IVsImageService2** type  
+    - Requis si vous utilisez le **IVsImageService2** type  
 
-    -   **EmbedInteropTypes** doit être définie sur true  
+    - **EmbedInteropTypes** doit être définie sur true  
 
--   **Microsoft.VisualStudio.Utilities.dll**  
+- **Microsoft.VisualStudio.Utilities.dll**  
 
-    -   Requis si vous utilisez le **BrushToColorConverter** pour le ImageThemingUtilities. **ImageBackgroundColor** dans votre interface utilisateur WPF  
+    - Requis si vous utilisez le **BrushToColorConverter** pour le ImageThemingUtilities. **ImageBackgroundColor** dans votre interface utilisateur WPF  
 
--   **Microsoft.VisualStudio.Shell.\<VSVersion>.0**  
+- **Microsoft.VisualStudio.Shell.\<VSVersion>.0**  
 
-    -   Requis si vous utilisez le **IVsUIObject** type  
+    - Requis si vous utilisez le **IVsUIObject** type  
 
--   **Microsoft.VisualStudio.Shell.Interop.10.0.dll**  
+- **Microsoft.VisualStudio.Shell.Interop.10.0.dll**  
 
-    -   Requis si vous utilisez les programmes d’assistance de l’interface utilisateur associée WinForms  
+    - Requis si vous utilisez les programmes d’assistance de l’interface utilisateur associée WinForms  
 
-    -   **EmbedInteropTypes** doit être définie sur true  
+    - **EmbedInteropTypes** doit être définie sur true  
 
 ### <a name="first-steps-native"></a>Premières étapes (natif)  
  Pour utiliser le service d’images, vous devez inclure tout ou partie des en-têtes suivants à votre projet :  
 
--   **KnownImageIds.h**  
+- **KnownImageIds.h**  
 
-    -   Requis si vous utilisez le catalogue de l’image intégrée **KnownMonikers**, mais vous ne pouvez pas utiliser le **ImageMoniker** type, par exemple lorsque des valeurs de retour à partir de **IVsHierarchy GetGuidProperty**ou **GetProperty** appels.  
+    - Requis si vous utilisez le catalogue de l’image intégrée **KnownMonikers**, mais vous ne pouvez pas utiliser le **ImageMoniker** type, par exemple lorsque des valeurs de retour à partir de **IVsHierarchy GetGuidProperty**ou **GetProperty** appels.  
 
--   **KnownMonikers.h**  
+- **KnownMonikers.h**  
 
-    -   Requis si vous utilisez le catalogue de l’image intégrée **KnownMonikers**.  
+    - Requis si vous utilisez le catalogue de l’image intégrée **KnownMonikers**.  
 
--   **ImageParameters140.h**  
+- **ImageParameters140.h**  
 
-    -   Requis si vous utilisez le **ImageMoniker** et **ImageAttributes** types.  
+    - Requis si vous utilisez le **ImageMoniker** et **ImageAttributes** types.  
 
--   **VSShell140.h**  
+- **VSShell140.h**  
 
-    -   Requis si vous utilisez le **IVsImageService2** type.  
+    - Requis si vous utilisez le **IVsImageService2** type.  
 
--   **ImageThemingUtilities.h**  
+- **ImageThemingUtilities.h**  
 
-    -   Requis si vous ne pouvez pas le service d’images permettent de gérer des thèmes pour vous.  
+    - Requis si vous ne pouvez pas le service d’images permettent de gérer des thèmes pour vous.  
 
-    -   Si le service d’images peut gérer les thèmes de votre image, n’utilisez pas cet en-tête.  
+    - Si le service d’images peut gérer les thèmes de votre image, n’utilisez pas cet en-tête.  
 
--   **VSUIDPIHelper.h**  
+- **VSUIDPIHelper.h**  
 
-    -   Requis si vous utilisez les programmes d’assistance PPP pour obtenir la résolution actuelle.  
+    - Requis si vous utilisez les programmes d’assistance PPP pour obtenir la résolution actuelle.  
 
 ## <a name="how-do-i-write-new-wpf-ui"></a>Comment écrire les nouvelles UI WPF ?  
 
-1.  Commencez par ajouter les références d’assembly requises dans l’exemple ci-dessus tout d’abord les étapes section à votre projet. Vous n’avez pas besoin de tous les ajouter, ajoutez simplement les références que vous avez besoin. (Remarque : Si vous utilisez ou que vous avez accès à **couleurs** au lieu de **pinceaux**, vous pouvez ignorer la référence à **utilitaires**, étant donné que vous n’aurez pas le convertisseur.)  
+1. Commencez par ajouter les références d’assembly requises dans l’exemple ci-dessus tout d’abord les étapes section à votre projet. Vous n’avez pas besoin de tous les ajouter, ajoutez simplement les références que vous avez besoin. (Remarque : Si vous utilisez ou que vous avez accès à **couleurs** au lieu de **pinceaux**, vous pouvez ignorer la référence à **utilitaires**, étant donné que vous n’aurez pas le convertisseur.)  
 
-2.  Sélectionnez l’image souhaitée et obtenir son moniker. Utiliser un **KnownMoniker**, ou utiliser votre propre si vous avez vos propres images personnalisées et des monikers.  
+2. Sélectionnez l’image souhaitée et obtenir son moniker. Utiliser un **KnownMoniker**, ou utiliser votre propre si vous avez vos propres images personnalisées et des monikers.  
 
-3.  Ajouter **CrispImages** à votre XAML. (Voir exemple ci-dessous).  
+3. Ajouter **CrispImages** à votre XAML. (Voir exemple ci-dessous).  
 
-4.  Définir le **ImageThemingUtilities.ImageBackgroundColor** propriété dans votre hiérarchie de l’interface utilisateur. (Elle doit être définie à l’emplacement où la couleur d’arrière-plan est connue, non pas nécessairement sur le **CrispImage**.) (Voir exemple ci-dessous).  
+4. Définir le **ImageThemingUtilities.ImageBackgroundColor** propriété dans votre hiérarchie de l’interface utilisateur. (Elle doit être définie à l’emplacement où la couleur d’arrière-plan est connue, non pas nécessairement sur le **CrispImage**.) (Voir exemple ci-dessous).  
 
 ```xaml  
 <Window  
@@ -313,19 +312,19 @@ Ce livre de recettes contient des conseils et meilleures pratiques pour arrêter
 
  La mise à jour existant UI WPF est un processus relativement simple qui se compose de trois étapes de base :  
 
-1.  Remplacer tout \<Image > éléments dans votre interface utilisateur avec \<CrispImage > éléments  
+1. Remplacer tout \<Image > éléments dans votre interface utilisateur avec \<CrispImage > éléments  
 
-2.  Modifier tous les attributs de Source aux attributs du Moniker  
+2. Modifier tous les attributs de Source aux attributs du Moniker  
 
-    -   Si l’image ne change jamais, et que vous utilisez **KnownMonikers**, puis lier statiquement cette propriété pour le **KnownMoniker**. (Voir l’exemple ci-dessus.)  
+    - Si l’image ne change jamais, et que vous utilisez **KnownMonikers**, puis lier statiquement cette propriété pour le **KnownMoniker**. (Voir l’exemple ci-dessus.)  
 
-    -   Si l’image ne change jamais, et que vous utilisez votre propre image personnalisée, puis lier statiquement à votre propre moniker.  
+    - Si l’image ne change jamais, et que vous utilisez votre propre image personnalisée, puis lier statiquement à votre propre moniker.  
 
-    -   Si l’image peut changer, lier l’attribut de Moniker à une propriété de code qui envoie une notification à des modifications de propriété.  
+    - Si l’image peut changer, lier l’attribut de Moniker à une propriété de code qui envoie une notification à des modifications de propriété.  
 
-3.  Quelque part dans la hiérarchie de l’interface utilisateur, définissez **ImageThemingUtilities.ImageBackgroundColor** pour rendre l’inversion des couleurs que fonctionne correctement.  
+3. Quelque part dans la hiérarchie de l’interface utilisateur, définissez **ImageThemingUtilities.ImageBackgroundColor** pour rendre l’inversion des couleurs que fonctionne correctement.  
 
-    -   Cela peut nécessiter l’utilisation de la **BrushToColorConverter** classe. (Voir l’exemple ci-dessus.)  
+    - Cela peut nécessiter l’utilisation de la **BrushToColorConverter** classe. (Voir l’exemple ci-dessus.)  
 
 ## <a name="how-do-i-update-win32-ui"></a>Comment mettre à jour l’interface utilisateur Win32 ?  
  Ajoutez le code suivant à votre code dans la mesure appropriée pour remplacer le chargement brutes des images. Passer des valeurs de retour HBITMAP par rapport aux éléments HICON et HIMAGELIST en fonction des besoins.  
@@ -438,18 +437,18 @@ Bitmap bitmap = (Bitmap)GelUtilities.GetObjectData(uiObj); // Use this if you ne
 
 3. L’onglet de fenêtre outil lorsque les onglets obtenir petits suffisamment (également utilisé dans le sélecteur de fenêtre Ctrl + Tab).  
 
-   1.  Supprimer ces lignes (s’ils existent) dans le constructeur de la classe qui dérive de la **ToolWindowPane** type :  
+   1. Supprimer ces lignes (s’ils existent) dans le constructeur de la classe qui dérive de la **ToolWindowPane** type :  
 
        ```csharp  
        this.BitmapResourceID = <Value>;  
        this.BitmapIndex = <Value>;  
        ```  
 
-   2.  Consultez l’étape #1 le « Comment utiliser les Monikers d’Image dans une nouvelle fenêtre outil ? » section ci-dessus.  
+   2. Consultez l’étape #1 le « Comment utiliser les Monikers d’Image dans une nouvelle fenêtre outil ? » section ci-dessus.  
 
 4. La commande pour ouvrir la fenêtre outil.  
 
-   -   Consultez l’étape #2 de la « Comment utiliser les Monikers d’Image dans une nouvelle fenêtre outil ? » section ci-dessus.  
+   - Consultez l’étape #2 de la « Comment utiliser les Monikers d’Image dans une nouvelle fenêtre outil ? » section ci-dessus.  
 
 ## <a name="how-do-i-use-image-monikers-in-a-vsct-file"></a>Comment utiliser des monikers d’image dans un fichier .vsct ?  
  Mettez à jour votre fichier .vsct comme indiqué par les lignes commentées ci-dessous :  
@@ -567,27 +566,27 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
 1. Exécutez le **ManifestFromResources** outil, en lui passant la bande d’image. Cette opération génère un manifeste pour la bande.  
 
-   -   Recommandé : fournir un nom non par défaut pour le manifeste en fonction de son utilisation.  
+   - Recommandé : fournir un nom non par défaut pour le manifeste en fonction de son utilisation.  
 
 2. Si vous utilisez uniquement **KnownMonikers**, puis procédez comme suit :  
 
-   -   Remplacez le \<Images > section du manifeste avec \<Images / >.  
+   - Remplacez le \<Images > section du manifeste avec \<Images / >.  
 
-   -   Supprimer tous les ID de sous-image (quoi que ce soit avec \<imagestrip nom > _ ##).  
+   - Supprimer tous les ID de sous-image (quoi que ce soit avec \<imagestrip nom > _ ##).  
 
-   -   Recommandé : renommer le symbole de AssetsGuid et le symbole de bande d’image en fonction de son utilisation.  
+   - Recommandé : renommer le symbole de AssetsGuid et le symbole de bande d’image en fonction de son utilisation.  
 
-   -   Remplacez chaque **ContainedImage**du GUID avec $(ImageCatalogGuid), remplacez chaque **ContainedImage**d’ID avec $(\<moniker >) et ajoutez l’attribut « true » = externe à chaque **ContainedImage**  
+   - Remplacez chaque **ContainedImage**du GUID avec $(ImageCatalogGuid), remplacez chaque **ContainedImage**d’ID avec $(\<moniker >) et ajoutez l’attribut « true » = externe à chaque **ContainedImage**  
 
-       -   \<moniker > doit être remplacé par le **KnownMoniker** qui correspond à l’image, mais avec le « KnownMonikers ». supprimé à partir du nom.  
+       - \<moniker > doit être remplacé par le **KnownMoniker** qui correspond à l’image, mais avec le « KnownMonikers ». supprimé à partir du nom.  
 
-   -   Ajouter < Import Manifest="$(ManifestFolder)\\< relatif installer le chemin d’accès du répertoire à\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest » /\> vers le haut de la \<symboles > section.  
+   - Ajouter < Import Manifest="$(ManifestFolder)\\< relatif installer le chemin d’accès du répertoire à\>\Microsoft.VisualStudio.ImageCatalog.imagemanifest » /\> vers le haut de la \<symboles > section.  
 
-       -   Le chemin d’accès relatif est déterminé par l’emplacement de déploiement définie dans la configuration de création pour le manifeste.  
+       - Le chemin d’accès relatif est déterminé par l’emplacement de déploiement définie dans la configuration de création pour le manifeste.  
 
 3. Exécutez le **ManifestToCode** outil pour générer des wrappers pour que le code existant a un moniker, il peut utiliser pour interroger le service d’images pour la bande d’image.  
 
-   -   Recommandé : fournir des noms non défini par défaut pour les wrappers et les espaces de noms en fonction de leur utilisation.  
+   - Recommandé : fournir des noms non défini par défaut pour les wrappers et les espaces de noms en fonction de leur utilisation.  
 
 4. Effectuez toutes les ajoute, le programme d’installation de création/de déploiement et d’autres modifications de code pour travailler avec le service d’images et les nouveaux fichiers.  
 
@@ -644,11 +643,11 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
  **Je n’ai besoin pour prendre en charge HIMAGELISTs**  
 
-1.  Déterminer l’ensemble des **KnownMonikers** qui correspondent à des images dans votre bande d’image, ou créer vos propres monikers pour les images dans votre bande d’image.  
+1. Déterminer l’ensemble des **KnownMonikers** qui correspondent à des images dans votre bande d’image, ou créer vos propres monikers pour les images dans votre bande d’image.  
 
-2.  Mettre à jour le mappage vous permettant d’obtenir de l’image à l’index requis dans la bande d’image à utiliser les monikers à la place.  
+2. Mettre à jour le mappage vous permettant d’obtenir de l’image à l’index requis dans la bande d’image à utiliser les monikers à la place.  
 
-3.  Mettre à jour votre code pour utiliser le service d’images pour demander des monikers via le mappage mis à jour. (Cela peut signifier la mise à jour vers **CrispImages** pour code managé, ou demandant HBITMAP ou éléments HICON le service de l’image et en les passant autour du code natif.)  
+3. Mettre à jour votre code pour utiliser le service d’images pour demander des monikers via le mappage mis à jour. (Cela peut signifier la mise à jour vers **CrispImages** pour code managé, ou demandant HBITMAP ou éléments HICON le service de l’image et en les passant autour du code natif.)  
 
 ## <a name="testing-your-images"></a>Test de vos images  
  Vous pouvez utiliser l’outil Visionneuse de bibliothèque d’images pour tester vos manifestes de l’image pour vous assurer que tout est correctement créé. Vous pouvez trouver l’outil dans le [SDK Visual Studio 2015](http://msdn.microsoft.com/library/bb166441.aspx). Vous pouvez trouver la documentation de cet outil et d’autres [ici](https://aka.ms/VSImageThemeTools).  
@@ -677,19 +676,19 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
 ## <a name="faq"></a>Questions fréquentes (FAQ)  
 
--   Y a-t-il des dépendances que vous devez inclure lors du chargement \<Include="Microsoft.VisualStudio.* de référence. Interop.14.0.designTime » / > ?  
+- Y a-t-il des dépendances que vous devez inclure lors du chargement \<Include="Microsoft.VisualStudio.* de référence. Interop.14.0.designTime » / > ?  
 
-    -   Définir EmbedInteropTypes = « true » sur toutes les DLL d’interopérabilité.  
+    - Définir EmbedInteropTypes = « true » sur toutes les DLL d’interopérabilité.  
 
--   Comment déployer un manifeste d’image avec mon extension ?  
+- Comment déployer un manifeste d’image avec mon extension ?  
 
-    -   Ajoutez le fichier .imagemanifest à votre projet.  
+    - Ajoutez le fichier .imagemanifest à votre projet.  
 
-    -   Définissez l’option « Inclure dans VSIX » sur True.  
+    - Définissez l’option « Inclure dans VSIX » sur True.  
 
--   Je mets à jour mon système de projet CPS. Qu’est-il arrivé à **ImageName** et **StockIconService**?  
+- Je mets à jour mon système de projet CPS. Qu’est-il arrivé à **ImageName** et **StockIconService**?  
 
-    -   o que celles-ci ont été supprimées lors de la mise à jour CPS à utiliser des monikers. Vous n’avez plus besoin d’appeler le **StockIconService**, transmettez simplement le texte souhaité **KnownMoniker** à la méthode ou propriété à l’aide du **ToProjectSystemType()** méthode d’extension dans les utilitaires CPS. Vous pouvez trouver un mappage à partir de **ImageName** à **KnownMonikers** ci-dessous :  
+    - o que celles-ci ont été supprimées lors de la mise à jour CPS à utiliser des monikers. Vous n’avez plus besoin d’appeler le **StockIconService**, transmettez simplement le texte souhaité **KnownMoniker** à la méthode ou propriété à l’aide du **ToProjectSystemType()** méthode d’extension dans les utilitaires CPS. Vous pouvez trouver un mappage à partir de **ImageName** à **KnownMonikers** ci-dessous :  
 
         |||  
         |-|-|  
@@ -757,7 +756,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
         |ImageName.CSharpCodeFile|KnownImageIds.CSFileNode|  
         |ImageName.VisualBasicCodeFile|KnownImageIds.VBFileNode|  
 
-    -   Je mets à jour mon fournisseur de liste de saisie semi-automatique. Ce que **KnownMonikers** correspond à l’ancien **StandardGlyphGroup** et **StandardGlyph** valeurs ?  
+    - Je mets à jour mon fournisseur de liste de saisie semi-automatique. Ce que **KnownMonikers** correspond à l’ancien **StandardGlyphGroup** et **StandardGlyph** valeurs ?  
 
         ||||  
         |-|-|-|  

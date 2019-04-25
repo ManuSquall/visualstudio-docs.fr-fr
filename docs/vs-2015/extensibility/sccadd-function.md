@@ -1,14 +1,9 @@
 ---
 title: Fonction SccAdd | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: reference
 f1_keywords:
 - SccAdd
 helpviewer_keywords:
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 545268f3-8e83-446a-a398-1a9db9e866e8
 caps.latest.revision: 18
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 29703be15369649df2208c1521a6636e5ccbefb9
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 6bcf8979f0240f60de1a6af9d7f6f4163ecf0af9
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51765842"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58948651"
 ---
 # <a name="sccadd-function"></a>Fonction SccAdd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,15 +86,14 @@ SCCRTN SccAdd(
   
 |Option|Value|Signification|  
 |------------|-----------|-------------|  
-|SCC_FILETYPE_AUTO|0 x 00|Le plug-in de contrôle de code source doit détecter le type de fichier.|  
-|SCC_FILETYPE_TEXT|0 x 01|Indique un fichier texte ASCII.|  
-|SCC_FILETYPE_BINARY|0 x 02|Indique un type de fichier autre que texte ASCII.|  
-|SCC_ADD_STORELATEST|0 x 04|Stocke uniquement la dernière copie du fichier, aucun deltas.|  
-|SCC_FILETYPE_TEXT_ANSI|0 x 08|Traite le fichier comme texte ANSI.|  
+|SCC_FILETYPE_AUTO|0x00|Le plug-in de contrôle de code source doit détecter le type de fichier.|  
+|SCC_FILETYPE_TEXT|0x01|Indique un fichier texte ASCII.|  
+|SCC_FILETYPE_BINARY|0x02|Indique un type de fichier autre que texte ASCII.|  
+|SCC_ADD_STORELATEST|0x04|Stocke uniquement la dernière copie du fichier, aucun deltas.|  
+|SCC_FILETYPE_TEXT_ANSI|0x08|Traite le fichier comme texte ANSI.|  
 |SCC_FILETYPE_UTF8|0x10|Traite le fichier en tant que texte Unicode au format UTF8.|  
-|SCC_FILETYPE_UTF16LE|0 x 20|Traite le fichier en tant que texte Unicode dans UTF16 format Little Endian.|  
-|SCC_FILETYPE_UTF16BE|0 x 40|Mettre en forme traite le fichier en tant que texte Unicode Big Endian UTF16.|  
+|SCC_FILETYPE_UTF16LE|0x20|Traite le fichier en tant que texte Unicode dans UTF16 format Little Endian.|  
+|SCC_FILETYPE_UTF16BE|0x40|Mettre en forme traite le fichier en tant que texte Unicode Big Endian UTF16.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonctions d’API du plug-in de contrôle de code source](../extensibility/source-control-plug-in-api-functions.md)
-

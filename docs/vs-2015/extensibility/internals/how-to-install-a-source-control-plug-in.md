@@ -11,23 +11,23 @@ ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c9c93c83a6385ad45b3f402867b7f7e734447f98
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fe03499200d3528a1aed286550191fd9dfcc1451
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950413"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039840"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Procédure : Installer un plug-in de contrôle de code source
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Création d’un contrôle de source de plug-in implique trois étapes :  
   
-1.  Créer une DLL avec les fonctions définies dans la section de référence d’API de plug-in de contrôle de Source de cette documentation.  
+1. Créer une DLL avec les fonctions définies dans la section de référence d’API de plug-in de contrôle de Source de cette documentation.  
   
-2.  Implémentez les fonctions définies par l’API de plug-in de contrôle de Source. Lorsque [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] appels, proposer les interfaces et les boîtes de dialogue du plug-in.  
+2. Implémentez les fonctions définies par l’API de plug-in de contrôle de Source. Lorsque [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] appels, proposer les interfaces et les boîtes de dialogue du plug-in.  
   
-3.  Inscrivez la DLL en créant des entrées de Registre appropriées.  
+3. Inscrivez la DLL en créant des entrées de Registre appropriées.  
   
 ## <a name="integration-with-visual-studio"></a>Intégration à Visual Studio  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] prend en charge de la charge des plug-ins de contrôle de source qui sont conformes à l’API de plug-in de contrôle de Source.  
@@ -37,7 +37,7 @@ Création d’un contrôle de source de plug-in implique trois étapes :
   
 ##### <a name="to-register-the-source-control-plug-in-dll"></a>Pour inscrire la source de contrôler les DLL de plug-in  
   
-1.  Ajout de deux entrées sous la clé HKEY_LOCAL_MACHINE dans la sous-clé de logiciel qui spécifie votre sous-clé de nom de société suivie de votre sous-clé de nom de produit. Le modèle est HKEY_LOCAL_MACHINE\SOFTWARE\\ *[nom de la société]*\\ *[nom du produit]*\\ *[Entrée]* = value. Les deux entrées sont toujours appelées SCCServerName et SCCServerPath. Chacun est une chaîne normale.  
+1. Ajout de deux entrées sous la clé HKEY_LOCAL_MACHINE dans la sous-clé de logiciel qui spécifie votre sous-clé de nom de société suivie de votre sous-clé de nom de produit. Le modèle est HKEY_LOCAL_MACHINE\SOFTWARE\\ *[nom de la société]*\\ *[nom du produit]*\\ *[Entrée]* = value. Les deux entrées sont toujours appelées SCCServerName et SCCServerPath. Chacun est une chaîne normale.  
   
      Par exemple, si le nom de votre société est Microsoft et votre produit de contrôle de code source nommé SourceSafe, ce chemin d’accès de Registre serait HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe. Dans cette sous-clé, la première entrée, SCCServerName, est une chaîne lisible par l’utilisateur d’affectation de noms votre produit. La deuxième entrée, SCCServerPath, est le chemin d’accès complet à la source de contrôler les DLL de plug-in qui l’IDE doit se connecter. Vous trouverez ci-dessous des exemples d’entrées du Registre :  
   
@@ -49,13 +49,13 @@ Création d’un contrôle de source de plug-in implique trois étapes :
     > [!NOTE]
     >  Le SCCServerPath est le chemin d’accès complet pour le plug-in SourceSafe. Votre plug-in de contrôle de code source utilise des noms de société et le produit différents mais les mêmes chemins d’entrée de Registre.  
   
-2.  Les entrées de Registre facultative suivante peuvent être utilisées pour modifier le comportement de votre plug-in de contrôle de code source. Ces entrées accédez dans la même sous-clé comme SccServerName et SccServerPath.  
+2. Les entrées de Registre facultative suivante peuvent être utilisées pour modifier le comportement de votre plug-in de contrôle de code source. Ces entrées accédez dans la même sous-clé comme SccServerName et SccServerPath.  
   
-    -   L’entrée HideInVisualStudioregistry peut être utilisée si vous ne souhaitez pas votre source de contrôle-plug-in à afficher dans la liste de sélection du plug-in de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Cette entrée affecte également le basculement automatique pour le plug-in de contrôle de code source. Une utilisation possible de cette entrée est si vous fournissez un package de contrôle de code source qui remplace votre plug-in de contrôle de code source, mais que vous souhaitez faciliter l’utilisateur à migrer à partir de l’utilisation du contrôle de source plug-in pour le package de contrôle de code source. Lorsque le package de contrôle de code source est installé, il définit cette entrée de Registre, qui masque le plug-in.  
+    - L’entrée HideInVisualStudioregistry peut être utilisée si vous ne souhaitez pas votre source de contrôle-plug-in à afficher dans la liste de sélection du plug-in de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Cette entrée affecte également le basculement automatique pour le plug-in de contrôle de code source. Une utilisation possible de cette entrée est si vous fournissez un package de contrôle de code source qui remplace votre plug-in de contrôle de code source, mais que vous souhaitez faciliter l’utilisateur à migrer à partir de l’utilisation du contrôle de source plug-in pour le package de contrôle de code source. Lorsque le package de contrôle de code source est installé, il définit cette entrée de Registre, qui masque le plug-in.  
   
          HideInVisualStudio est une valeur DWORD et est définie sur 1 pour masquer le plug-in ou 0 pour afficher le plug-in. Si l’entrée de Registre n’apparaît pas, le comportement par défaut consiste à afficher le plug-in.  
   
-    -   L’entrée de Registre DisableSccManager peut être utilisée pour désactiver ou masquer la **lancer \<Source Control Server >** option de menu qui s’affiche normalement sous le **fichier**  ->   **Contrôle de code source** sous-menu. En sélectionnant ce menu option appelle le [SccRunScc](../../extensibility/sccrunscc-function.md) (fonction). Votre plug-in de contrôle de code source, n’acceptent pas un programme externe et pourrez donc que vous souhaitez désactiver ou masquer même le **lancer** option de menu.  
+    - L’entrée de Registre DisableSccManager peut être utilisée pour désactiver ou masquer la **lancer \<Source Control Server >** option de menu qui s’affiche normalement sous le **fichier**  ->   **Contrôle de code source** sous-menu. En sélectionnant ce menu option appelle le [SccRunScc](../../extensibility/sccrunscc-function.md) (fonction). Votre plug-in de contrôle de code source, n’acceptent pas un programme externe et pourrez donc que vous souhaitez désactiver ou masquer même le **lancer** option de menu.  
   
          DisableSccManager est une valeur DWORD est définie sur 0 pour activer la **lancer \<Source Control Server >** option de menu, la valeur 1 pour désactiver l’option de menu et la valeur 2 pour masquer l’option de menu. Si cette entrée de Registre n’apparaît pas, le comportement par défaut consiste à afficher l’option de menu.  
   
@@ -64,7 +64,7 @@ Création d’un contrôle de source de plug-in implique trois étapes :
     |HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\HideInVisualStudio|1|  
     |HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\DisableSccManager|1|  
   
-3.  Ajoutez la sous-clé SourceCodeControlProvider, sous la clé HKEY_LOCAL_MACHINE dans la sous-clé de logiciels.  
+3. Ajoutez la sous-clé SourceCodeControlProvider, sous la clé HKEY_LOCAL_MACHINE dans la sous-clé de logiciels.  
   
      Sous cette sous-clé, l’entrée de Registre ProviderRegKey est définie à une chaîne qui représente la sous-clé que vous avez placées dans le Registre à l’étape 1. Le modèle est HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey = logiciel\\ *[nom de la société]*\\ *[nom du produit]*.  
   
@@ -77,7 +77,7 @@ Création d’un contrôle de source de plug-in implique trois étapes :
     > [!NOTE]
     >  Votre plug-in de contrôle de code source utilise la même sous-clé et les noms d’entrée, mais la valeur sera différente.  
   
-4.  Créez une sous-clé nommée InstalledSCCProviders sous la sous-clé SourceCodeControlProvider et placez une entrée sous cette sous-clé.  
+4. Créez une sous-clé nommée InstalledSCCProviders sous la sous-clé SourceCodeControlProvider et placez une entrée sous cette sous-clé.  
   
      Le nom de cette entrée est le nom lisible par l’utilisateur du fournisseur (le même que la valeur spécifiée pour l’entrée SCCServerName), et la valeur est, une fois encore, la sous-clé créée à l’étape 1. Le modèle est HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\ *[nom d’affichage]* = logiciel\\ *[nom de la société]* \\ *[nom du produit]*.  
   

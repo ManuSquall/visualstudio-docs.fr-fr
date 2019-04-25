@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e6ea971705b164a27fc7f65c3ac2d681b1569177
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 416baf8988f8d17a336f9fbef1eb0f9d9a72046b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758797"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109001"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Paramètres synchronisés dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,27 +26,27 @@ Lorsque vous utilisez le même compte de personnalisation pour vous connecter à
 ## <a name="synchronized-settings"></a>Paramètres synchronisés
  Par défaut, les paramètres suivants sont synchronisés.
 
--   Paramètres de développement (vous devez sélectionner un ensemble de paramètres la première fois que vous exécutez Visual Studio, mais vous pouvez modifier la sélection à tout moment. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).)
+- Paramètres de développement (vous devez sélectionner un ensemble de paramètres la première fois que vous exécutez Visual Studio, mais vous pouvez modifier la sélection à tout moment. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).)
 
--   Les options suivantes des pages **Outils &#124; Options** :
+- Les options suivantes des pages **Outils &#124; Options** :
 
-    -   Paramètres **Thème** et paramètres de mise en majuscules de la barre de menus, dans la page d’options **Environnement**, **Général**
+    - Paramètres **Thème** et paramètres de mise en majuscules de la barre de menus, dans la page d’options **Environnement**, **Général**
 
-    -   Tous les paramètres de la page d’options **Environnement**, **Polices et couleurs**
+    - Tous les paramètres de la page d’options **Environnement**, **Polices et couleurs**
 
-    -   Tous les raccourcis clavier de la page d’options **Environnement**, **Clavier**
+    - Tous les raccourcis clavier de la page d’options **Environnement**, **Clavier**
 
-    -   Tous les paramètres de la page d’options **Environnement, onglets et fenêtres**
+    - Tous les paramètres de la page d’options **Environnement, onglets et fenêtres**
 
-    -   Tous les paramètres de la page d’options **Environnement**, **Démarrage**
+    - Tous les paramètres de la page d’options **Environnement**, **Démarrage**
 
-    -   Tous les paramètres des pages d’options de l’**éditeur de texte**
+    - Tous les paramètres des pages d’options de l’**éditeur de texte**
 
--   Tous les paramètres sur les pages d'options du concepteur XAML
+- Tous les paramètres sur les pages d'options du concepteur XAML
 
--   Alias de commande définis par l'utilisateur. Pour plus d’informations sur la façon de définir des alias de commande, consultez [Alias de commandes Visual Studio](../ide/reference/visual-studio-command-aliases.md).
+- Alias de commande définis par l'utilisateur. Pour plus d’informations sur la façon de définir des alias de commande, consultez [Alias de commandes Visual Studio](../ide/reference/visual-studio-command-aliases.md).
 
--   Dispositions des fenêtres définies par l’utilisateur dans la page **Fenêtre &#124; Gérer les dispositions de fenêtres**
+- Dispositions des fenêtres définies par l’utilisateur dans la page **Fenêtre &#124; Gérer les dispositions de fenêtres**
 
 ## <a name="turning-synchronized-settings-off-for-a-particular-computer"></a>Désactivation des paramètres synchronisés pour un ordinateur particulier
  Les paramètres synchronisés pour Visual Studio sont activés par défaut. Vous pouvez désactiver les paramètres synchronisés sur un ordinateur en accédant à la page **Outils &#124; Options &#124; Environnement &#124; Paramètres synchronisés**, puis en décochant la case correspondante.  Par exemple, si vous décidez de ne pas synchroniser les paramètres de Visual Studio sur l’ordinateur A, toutes les modifications de paramètres effectuées sur l’ordinateur A n’apparaissent pas sur l’ordinateur B ou sur l’ordinateur C. Les ordinateurs B et C continuent à se synchroniser entre eux, mais pas avec l’ordinateur A.

@@ -1,12 +1,9 @@
 ---
 title: Étendre les fonctionnalités d’un TableAdapter | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-data-tools
+ms.topic: conceptual
 dev_langs:
 - VB
 - CSharp
@@ -20,18 +17,17 @@ ms.assetid: 418249c8-c7f3-47ef-a94c-744cb6fe6aaf
 caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
-manager: ghogen
-ms.openlocfilehash: 58f92f082ec4e7934e8eb7597832a6a58d23a1ca
-ms.sourcegitcommit: d462dd10746624ad139f1db04edd501e7737d51e
+manager: jillfra
+ms.openlocfilehash: db6ea3e2b19b655c3a1ec8dedf60409b8706f3cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/29/2018
-ms.locfileid: "50219742"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059030"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>Étendre les fonctionnalités d’un TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Vous pouvez étendre les fonctionnalités d’un TableAdapter en ajoutant du code au fichier de classe partielle du TableAdapter.  
   
  Le code qui définit un TableAdapter est régénéré lorsque des modifications sont apportées au TableAdapter dans le **Concepteur de Dataset**, ou quand un Assistant modifie la configuration d’un TableAdapter. Pour empêcher que votre code en cours de suppression pendant la régénération d’un TableAdapter, ajoutez le code au fichier de classe partielle du TableAdapter.  
@@ -45,17 +41,16 @@ Vous pouvez étendre les fonctionnalités d’un TableAdapter en ajoutant du cod
   
 #### <a name="to-create-a-partial-class-for-a-tableadapter"></a>Pour créer une classe partielle pour un TableAdapter  
   
-1.  Ajouter une nouvelle classe à votre projet en accédant à la **projet** menu et en sélectionnant**ajouter une classe**.  
+1. Ajouter une nouvelle classe à votre projet en accédant à la **projet** menu et en sélectionnant**ajouter une classe**.  
   
-2.  Nommez la classe `CustomersTableAdapterExtended`.  
+2. Nommez la classe `CustomersTableAdapterExtended`.  
   
-3.  Sélectionnez **Ajouter**.  
+3. Sélectionnez **Ajouter**.  
   
-4.  Remplacez le code avec le nom de classe partielle pour votre projet et un espace de noms approprié comme suit :  
+4. Remplacez le code avec le nom de classe partielle pour votre projet et un espace de noms approprié comme suit :  
   
      [!code-csharp[VbRaddataTableAdapters#2](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/CustomersTableAdapterExtended.cs#2)]
      [!code-vb[VbRaddataTableAdapters#2](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/CustomersTableAdapterExtended.vb#2)]  
   
 ## <a name="see-also"></a>Voir aussi  
  [Remplir des datasets à l’aide de TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)
-

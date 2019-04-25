@@ -10,12 +10,12 @@ ms.assetid: fa1ce513-eb7d-42bc-b6e8-cb2433d051d5
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 260f82822c575ba2476541c889608e9cdcba8ed0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 73c6151b5c02cb81a10c2725091c16457db70e33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950720"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056820"
 ---
 # <a name="document-lock-holder-management"></a>Gestion du détenteur de verrouillage du document
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +30,9 @@ La Table de Document en cours d’exécution (RDT) gère un nombre de documents 
 ### <a name="file-b-is-opened-by-a-different-editor"></a>Le fichier « b » est ouvert par un autre éditeur  
  Dans le cas où le fichier « b » est déjà ouverte par éditeur « B » lors de l’éditeur « A » tente d’ouvrir, il existe deux scénarios distincts pour gérer :  
   
--   Si le fichier « b » est ouvert dans un éditeur compatible, vous devez disposer l’éditeur « A » inscrire un verrou de modification de document sur le fichier « b » à l’aide du <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.RegisterDocumentLockHolder%2A> (méthode). Une fois que votre éditeur de « A » est terminé fichier modification « b », désinscrire le document modifier le verrou à l’aide du <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.UnregisterDocumentLockHolder%2A> (méthode).  
+- Si le fichier « b » est ouvert dans un éditeur compatible, vous devez disposer l’éditeur « A » inscrire un verrou de modification de document sur le fichier « b » à l’aide du <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.RegisterDocumentLockHolder%2A> (méthode). Une fois que votre éditeur de « A » est terminé fichier modification « b », désinscrire le document modifier le verrou à l’aide du <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.UnregisterDocumentLockHolder%2A> (méthode).  
   
--   Si le fichier « b » est ouvert de manière incompatible, vous pouvez laisser l’ouverture de tentative de fichier « b » par « A » échouent, ou vous pouvez laisser la vue associée à l’éditeur « A » est partiellement ouvre et affiche un message d’erreur de l’éditeur. Le message d’erreur doit indiquer à l’utilisateur de fermer le fichier « b » dans l’éditeur incompatible et puis rouvrez le fichier « a » à l’aide de l’éditeur « A ». Vous pouvez également implémenter le [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] méthode <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable2.QueryCloseRunningDocument%2A> pour inviter l’utilisateur pour fermer le fichier « b » est ouvert dans l’éditeur incompatible. Si l’utilisateur ferme le fichier « b », l’ouverture du fichier « a » dans « A » l’éditeur se poursuit normalement.  
+- Si le fichier « b » est ouvert de manière incompatible, vous pouvez laisser l’ouverture de tentative de fichier « b » par « A » échouent, ou vous pouvez laisser la vue associée à l’éditeur « A » est partiellement ouvre et affiche un message d’erreur de l’éditeur. Le message d’erreur doit indiquer à l’utilisateur de fermer le fichier « b » dans l’éditeur incompatible et puis rouvrez le fichier « a » à l’aide de l’éditeur « A ». Vous pouvez également implémenter le [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] méthode <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable2.QueryCloseRunningDocument%2A> pour inviter l’utilisateur pour fermer le fichier « b » est ouvert dans l’éditeur incompatible. Si l’utilisateur ferme le fichier « b », l’ouverture du fichier « a » dans « A » l’éditeur se poursuit normalement.  
   
 ## <a name="additional-document-edit-lock-considerations"></a>Considérations de verrou modifier Document supplémentaires  
  Vous obtenez un comportement différent si l’éditeur « A » est le seul éditeur qui a un document à modifier le verrou sur le fichier « b » que vous le feriez si l’éditeur « B » conserve également un document modifier un verrou sur le fichier « b ». Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], **Concepteur de classes** est un exemple d’un concepteur visuel qui ne contient pas d’un verrou de modification sur le fichier de code associé. Autrement dit, si l’utilisateur a un diagramme de classes ouvert en mode design et ouvrir le fichier de code associé en même temps, et si l’utilisateur modifie le fichier de code, mais ne pas enregistre les modifications, les modifications sont également perdues dans le fichier de diagramme (.cd) de classe. Si le **Concepteur de classes** a le document uniquement modifier un verrou sur le fichier de code, l’utilisateur n’est pas invité à enregistrer les modifications lors de la fermeture du fichier de code. L’IDE invite l’utilisateur à enregistrer les modifications uniquement une fois que l’utilisateur ferme le **Concepteur de classes**. Les modifications enregistrées sont répercutées dans les deux fichiers. Si les deux le **Concepteur de classes** et l’éditeur de fichier de code maintenu verrous de modification de document sur le fichier de code, puis l’utilisateur est invité à enregistrer lors de la fermeture de l’écran ou le fichier de code. À ce stade, les modifications enregistrées sont répercutées dans le formulaire et le fichier de code. Pour plus d’informations sur les diagrammes de classes, consultez [diagrammes de classes (Concepteur de classes)](../ide/working-with-class-diagrams-class-designer.md).  

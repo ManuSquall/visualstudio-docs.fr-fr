@@ -18,17 +18,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 58d81e5553fe4fd4f08bb30f5108e411b2d71c7d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: b16933580037a8d4d331a1fd2b523b85b746dbdb
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54803814"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668156"
 ---
 # <a name="fileclassifier-task"></a>FileClassifier, tâche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 La tâche <xref:Microsoft.Build.Tasks.Windows.FileClassifier> classifie un ensemble de ressources sources comme devant être incorporées dans un assembly. Si une ressource n’est pas localisable, elle est incorporée dans l’assembly principal de l’application ; autrement, elle est incorporée dans un assembly satellite.  
   
 ## <a name="task-parameters"></a>Paramètres de tâche  

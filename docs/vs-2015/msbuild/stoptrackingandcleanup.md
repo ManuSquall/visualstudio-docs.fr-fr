@@ -17,17 +17,16 @@ caps.latest.revision: 7
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4cb07a98728612ae5c0930b23e4f76a5672284aa
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.openlocfilehash: 7b4a6cca4010284c9a75767710710d28c093c271
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54835106"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659954"
 ---
 # <a name="stoptrackingandcleanup"></a>StopTrackingAndCleanup
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Arrête tout le suivi et libère la mémoire utilisée par la session de suivi.  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -37,9 +36,9 @@ HRESULT WINAPI StopTrackingAndCleanup(void);
 ```  
   
 ## <a name="return-value"></a>Valeur de retour  
- Retourne un [HRESULT](<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) avec le bit [SUCCEEDED](<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) défini si le suivi a été arrêté.  
+ Retourne une ([HRESULT]<!-- TODO: review code entity reference <xref:assetId:///HRESULT?qualifyHint=False&amp;autoUpgrade=True>  -->) avec le ([réussite]<!-- TODO: review code entity reference <xref:assetId:///SUCCEEDED?qualifyHint=False&amp;autoUpgrade=True>  -->) bit défini si le suivi a été arrêté.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  **En-tête :** FileTracker.h  
   
 ## <a name="see-also"></a>Voir aussi  

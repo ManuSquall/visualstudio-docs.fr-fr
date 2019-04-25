@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bde65506a9005459f1102cd6181e0fa346ec26a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6ec5b5210c37e6beaa71cecb6894ec5b72d96060
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912701"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62540901"
 ---
 # <a name="miscellaneous-files"></a>Fichiers divers
 Vous pouvez utiliser les éditeurs [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour utiliser indépendamment les fichiers d’un projet ou d’une solution. Dans une solution ouverte, vous pouvez ouvrir et modifier des fichiers sans les ajouter à une solution ou un projet. Les fichiers que vous voulez utiliser indépendamment des conteneurs sont appelés fichiers divers. Les fichiers divers sont externes aux solutions et projets, et ne sont pas inclus dans les générations. Ils ne peuvent pas être inclus dans une solution sous contrôle de code source.
@@ -40,7 +40,6 @@ Vous pouvez utiliser les éditeurs [!INCLUDE[vsprvs](../../code-quality/includes
 
 > [!NOTE]
 > Certains fichiers qui n’apparaissent pas dans le dossier Fichiers divers sont ceux que vous ne pouvez pas modifier dans l’IDE, comme les fichiers .zip et les fichiers .doc. L’IDE n’effectue pas le suivi des fichiers qui ne peuvent être modifiés par un éditeur externe.
-
 
 ## <a name="commands-available-in-the-ide"></a>Commandes disponibles dans l’IDE
  Les menus, les barres d’outils et les commandes qu’ils contiennent changent selon le format du fichier que vous ouvrez. Quand vous ouvrez un fichier texte, par exemple, la barre d’outils Éditeur de texte apparaît et ses commandes sont disponibles. Si vous ouvrez un fichier de schéma XML, la barre d’outils du schéma XML s’affiche. Quand vous modifiez votre schéma XML, les commandes de la barre d’outils Éditeur de texte (ou la barre d’outils elle-même) ne sont pas disponibles. Le schéma XML est la fenêtre active. De ce fait, il hérite du contexte de sélection actuel. Quand vous passez d’un fichier projet à un fichier divers, toutes les commandes associées au projet disparaissent et seules celles directement associées au fichier divers s’affichent.

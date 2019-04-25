@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b858d0b5fb8aab1dabb90ae47d234869412adf2e
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: b5f275683309d630f147940e97f924496af79179
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525789"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074816"
 ---
 # <a name="content-model-view"></a>Vue de modèle de contenu
 
@@ -33,7 +33,7 @@ Pour plus d’informations sur l’ajout de nœuds, consultez la section « Ajo
 
 Lorsqu’un nœud est sélectionné dans le **espace de travail** Panneau de configuration, il est ajouté à l’aire de conception vue de modèle de contenu où vous pouvez afficher les détails du nœud.
 
-Le modèle de contenu d'un nœud est représenté par une arborescence graphique développable avec des éléments et des attributs qui apparaissent sous forme de nœuds d'arbre. Un seul niveau est développé par défaut. D'autres informations, telles que les compositeurs, les noms de type, les groupes et d'autres conteneurs sont placés dans une barre verticale (lorsque ces informations sont développées) le long des éléments et des attributs qu'ils encadrent. Lorsque vous double-cliquez sur une barre verticale, elle devient horizontale et l'arborescence est réduite. Lorsque vous double-cliquez sur une barre horizontale, elle devient verticale et l’arborescence est développée. En sélectionnant la barre verticale sélectionne tous les nœuds dans le conteneur. Développeurs apparaissent à droite d’un nœud si un élément peut être développé ou réduit.
+Le modèle de contenu d'un nœud est représenté par une arborescence graphique développable avec des éléments et des attributs qui apparaissent sous forme de nœuds d'arbre. Un seul niveau est développé par défaut. D’autres informations, telles que les compositeurs, les noms de type, les groupes et d’autres conteneurs sont placés dans une barre verticale (lorsque ces informations sont développées) le long des éléments et des attributs qu’ils encadrent. Lorsque vous double-cliquez sur une barre verticale, elle devient horizontale et l’arborescence est réduite. Lorsque vous double-cliquez sur une barre horizontale, elle devient verticale et l’arborescence est développée. En sélectionnant la barre verticale sélectionne tous les nœuds dans le conteneur. Développeurs apparaissent à droite d’un nœud si un élément peut être développé ou réduit.
 
 Si l’aire de conception est vide, l’éditeur XML, le **Explorateur de schémas XML**, et le filigrane sont affichés. Le *filigrane* est une liste de liens vers toutes les vues du concepteur XSD. Si le jeu de schémas comporte des erreurs, le texte suivant s’affiche à la fin de la liste : « Utiliser la liste d’erreurs pour afficher et corriger les erreurs dans le jeu. »
 
@@ -97,13 +97,13 @@ Vous pouvez effectuer un panoramique l’aire de conception en utilisant les bar
 
 La fonction d'annulation/de rétablissement est activée dans la vue de modèle de contenu pour les actions suivantes :
 
--   Ajout d'un nœud unique par glisser-déplacer.
+- Ajout d'un nœud unique par glisser-déplacer.
 
--   Ajout de plusieurs nœuds de la fenêtre des résultats de recherche dans l'Explorateur de schémas.
+- Ajout de plusieurs nœuds de la fenêtre des résultats de recherche dans l'Explorateur de schémas.
 
--   Ajout de nœuds à partir de la vue de départ.
+- Ajout de nœuds à partir de la vue de départ.
 
--   Suppression d'un ou plusieurs nœuds.
+- Suppression d'un ou plusieurs nœuds.
 
 ## <a name="zoom"></a>Zoom
 
@@ -111,9 +111,9 @@ Le zoom est disponible dans le coin inférieur droit de la vue de modèle de con
 
 Le zoom peut être contrôlé des façons suivantes :
 
--   En maintenant la **Ctrl** wheel de clé et la rotation de la souris lorsque la souris passe sur la surface de la vue de modèle de contenu.
+- En maintenant la **Ctrl** wheel de clé et la rotation de la souris lorsque la souris passe sur la surface de la vue de modèle de contenu.
 
--   En utilisant le contrôle Slider. Le curseur affiche le niveau de zoom actuel.
+- En utilisant le contrôle Slider. Le curseur affiche le niveau de zoom actuel.
 
 Le curseur de Zoom est opaque lorsque vous sélectionnez il, pointez dessus ou utilisez **Ctrl** avec la roulette de la souris pour effectuer un zoom ; toutes les autres fois, il est transparent.
 

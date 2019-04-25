@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 33b36c648a0ab1c7df9d4f358d729e7f6b96212f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597476"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777995"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Paramètres avancés, boîte de dialogue (visualiseur concurrentiel)
 La boîte de dialogue **Paramètres avancés** du visualiseur concurrentiel vous permet de contrôler la façon dont les traces sont collectées.  La boîte de dialogue comprend des onglets pour les symboles, « Uniquement mon code », la mise en mémoire tampon, le filtrage, les événements du CLR, les marqueurs, les fournisseurs et les fichiers.

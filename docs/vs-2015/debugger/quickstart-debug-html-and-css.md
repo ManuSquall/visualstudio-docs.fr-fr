@@ -21,12 +21,12 @@ caps.latest.revision: 104
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3518f691109348cfbb75404e94dde66dccd04efc
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 7dd7afa571b83cb5d1b12018da2f1e812a3a5fbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001534"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068156"
 ---
 # <a name="quickstart-debug-html-and-css"></a>Démarrage rapide : déboguer du code HTML et CSS ;
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
   Pour plus d’informations sur les fonctionnalités, telles que l’utilisation de la fenêtre de JavaScript Console et en définissant des points d’arrêt, le débogage de JavaScript, consultez [Guide de démarrage rapide : Déboguer du code JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) et [déboguer des applications dans Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
-##  <a name="InspectingDOM"></a> Examen du modèle DOM en direct  
+## <a name="InspectingDOM"></a> Examen du modèle DOM en direct  
  L’explorateur DOM affiche une vue de la page rendue ; utilisez l’explorateur DOM pour modifier des valeurs et afficher immédiatement les résultats. Cela vous permet de tester les modifications sans arrêter et redémarrer le débogueur. Le code source de votre projet ne change pas quand vous interagissez avec la page à l’aide de cette méthode. Ainsi, quand vous trouvez les corrections de code souhaitées, vous modifiez votre code source.  
   
 > [!TIP]
@@ -249,17 +249,17 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
 #### <a name="to-refresh-your-app-while-debugging"></a>Pour actualiser votre application pendant le débogage  
   
-1.  Quand l’application est en cours d’exécution, passez dans Visual Studio.  
+1. Quand l’application est en cours d’exécution, passez dans Visual Studio.  
   
-2.  Ouvrez le fichier default.html et modifiez votre code source en définissant la hauteur et la largeur de l’élément DIV `"fView"` sur la valeur 100 %.  
+2. Ouvrez le fichier default.html et modifiez votre code source en définissant la hauteur et la largeur de l’élément DIV `"fView"` sur la valeur 100 %.  
   
-3.  Sélectionnez le bouton **Actualiser l’application Windows** dans la barre d’outils Déboguer (ou appuyez sur F4). Le bouton se présente comme suit : ![Windows application bouton Actualiser](../debugger/media/js-refresh.png "JS_Refresh").  
+3. Sélectionnez le bouton **Actualiser l’application Windows** dans la barre d’outils Déboguer (ou appuyez sur F4). Le bouton se présente comme suit : ![Windows application bouton Actualiser](../debugger/media/js-refresh.png "JS_Refresh").  
   
      Les pages d’application sont rechargées et le simulateur ou l’émulateur Windows Phone s’affiche au premier plan.  
   
      Pour plus d’informations sur la fonctionnalité d’actualisation, consultez [actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md).  
   
-##  <a name="SelectingElements"></a> Selecting elements  
+## <a name="SelectingElements"></a> Selecting elements  
  Il existe trois façons de sélectionner des éléments DOM lors du débogage d’une application :  
   
 - Cliquez sur les éléments directement dans la fenêtre de l’explorateur DOM (ou utilisez les touches de direction).  
@@ -285,7 +285,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
   
  Pour obtenir un exemple qui montre comment sélectionner des éléments à l’aide de la **sélectionner un élément** bouton, consultez [styles CSS déboguer à l’aide de l’Explorateur DOM](../debugger/debug-css-styles-using-dom-explorer.md).  
   
-##  <a name="BrowserSupport"></a> Navigateurs et plateformes pris en charge  
+## <a name="BrowserSupport"></a> Navigateurs et plateformes pris en charge  
  Les outils Visual Studio pour JavaScript, l’explorateur DOM et la fenêtre de la console JavaScript sont pris en charge sur les plateformes suivantes :  
   
 - Applications[!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] et Windows Phone Store en JavaScript et HTML  

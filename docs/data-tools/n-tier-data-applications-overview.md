@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 00bd9dff41e6c57fc6969f4198f96d0e209e2a77
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 35b882914deacafae46f2470c49efe1d6ace00f6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943686"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109931"
 ---
 # <a name="n-tier-data-applications-overview"></a>Vue d’ensemble des applications de données multiniveaux
 *Applications multicouches* des applications de données sont des applications de données qui sont séparées en plusieurs *niveaux*. Également appelées « applications distribuées » et « applications à plusieurs niveaux », avec applications multicouches séparent le traitement en couches discrètes qui sont distribuées entre le client et le serveur. Lorsque vous développez des applications qui accèdent aux données, vous devez avoir une séparation claire entre les différentes couches qui composent l’application.
@@ -27,33 +27,33 @@ Une application multiniveaux classique inclut une couche Présentation, une couc
 
 Visual Studio contient plusieurs fonctionnalités pour aider les développeurs à créer des applications à plusieurs niveaux :
 
--   Le jeu de données fournit un **DataSet Project** propriété qui vous permet de séparer le jeu de données (couche d’entité de données) et les TableAdapters (couche d’accès aux données) dans des projets distincts.
+- Le jeu de données fournit un **DataSet Project** propriété qui vous permet de séparer le jeu de données (couche d’entité de données) et les TableAdapters (couche d’accès aux données) dans des projets distincts.
 
--   Le [des outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fournit des paramètres pour générer les classes DataContext et les données dans les espaces de noms distincts. Cela permet une séparation logique de l’accès aux données et couches d’entité de données.
+- Le [des outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fournit des paramètres pour générer les classes DataContext et les données dans les espaces de noms distincts. Cela permet une séparation logique de l’accès aux données et couches d’entité de données.
 
--   [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) fournit le <xref:System.Data.Linq.Table%601.Attach%2A> méthode qui vous permet de rassembler le DataContext de différentes couches dans une application. Pour plus d’informations, consultez [multicouches et des applications distantes avec LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql).
+- [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) fournit le <xref:System.Data.Linq.Table%601.Attach%2A> méthode qui vous permet de rassembler le DataContext de différentes couches dans une application. Pour plus d’informations, consultez [multicouches et des applications distantes avec LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql).
 
 ## <a name="presentation-tier"></a>Couche présentation
 Le *couche présentation* est le niveau dans lequel les utilisateurs interagissent avec une application. Il contient souvent une logique d’application supplémentaires également. Composants de la couche présentation standard sont les suivantes :
 
--   Données de liaison des composants, tels que le <xref:System.Windows.Forms.BindingSource> et <xref:System.Windows.Forms.BindingNavigator>.
+- Données de liaison des composants, tels que le <xref:System.Windows.Forms.BindingSource> et <xref:System.Windows.Forms.BindingNavigator>.
 
--   Objet de représentations de données, tel que [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) des classes d’entité pour une utilisation dans la couche de présentation.
+- Objet de représentations de données, tel que [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) des classes d’entité pour une utilisation dans la couche de présentation.
 
 La couche de présentation accède généralement à la couche intermédiaire à l’aide d’une référence de service (par exemple, un [Services Windows Communication Foundation et WCF Data Services dans Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) application). La couche de présentation n’accède pas directement à la couche données. La couche de présentation communique avec la couche de données par le biais du composant d’accès aux données dans la couche intermédiaire.
 
 ## <a name="middle-tier"></a>Couche intermédiaire
 Le *intermédiaire* est la couche de la couche de présentation et de données utilisent pour communiquer avec eux. Composants de niveau intermédiaire standard sont les suivants :
 
--   Logique métier, telles que la validation de données et des règles métier.
+- Logique métier, telles que la validation de données et des règles métier.
 
--   Composants d’accès aux données et logique, telle que la suivante :
+- Composants d’accès aux données et logique, telle que la suivante :
 
-    -   [Les TableAdapters](create-and-configure-tableadapters.md) et [DataAdapters et DataReaders](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
+    - [Les TableAdapters](create-and-configure-tableadapters.md) et [DataAdapters et DataReaders](/dotnet/framework/data/adonet/dataadapters-and-datareaders).
 
-    -   Objet de représentations de données, tel que [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) classes d’entité.
+    - Objet de représentations de données, tel que [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index) classes d’entité.
 
-    -   Services d’application courantes, telles que l’authentification, autorisation et la personnalisation.
+    - Services d’application courantes, telles que l’authentification, autorisation et la personnalisation.
 
 L’illustration suivante montre les fonctionnalités et technologies qui sont disponibles dans Visual Studio et où ils peuvent être intégrées dans la couche intermédiaire d’une application multiniveau.
 
@@ -75,13 +75,13 @@ Les rubriques suivantes fournissent des informations sur l’utilisation des app
 
 [Guide pratique pour séparer les datasets et les TableAdapters en différents projets](../data-tools/separate-datasets-and-tableadapters-into-different-projects.md)
 
-[Procédure pas à pas : Création d’une application de données multiniveau](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+[Procédure pas à pas : Création d’une application de données multiniveaux](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 
 [Applications multicouches et distantes avec LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/n-tier-and-remote-applications-with-linq-to-sql)
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Procédure pas à pas : Création d’une application de données multiniveau](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [Procédure pas à pas : Création d’une application de données multiniveaux](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [Mise à jour hiérarchique](../data-tools/hierarchical-update.md)
 - [Outils de dataset dans Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)
 - [Accès aux données dans Visual Studio](../data-tools/accessing-data-in-visual-studio.md)

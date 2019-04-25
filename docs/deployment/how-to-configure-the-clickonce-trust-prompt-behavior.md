@@ -1,5 +1,5 @@
 ---
-title: 'Comment : configurer le comportement d’invite d’approbation ClickOnce | Microsoft Docs'
+title: 'Procédure : Configurer le comportement d’invite d’approbation ClickOnce | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2869e76b0b5fd70515701352d257530480f0920
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 9ec30f3200b5a1df587713a2ee2394f52e3fb333
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618131"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093213"
 ---
-# <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Guide pratique pour configurer le comportement de l’invite d’approbation ClickOnce
+# <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Procédure : Configurer le comportement de l’invite d’approbation ClickOnce
 Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si les utilisateurs finaux reçoivent l’option d’installation d’applications ClickOnce, telles que les applications Windows Forms, les applications Windows Presentation Foundation, les applications console, de navigateur WPF les applications et les solutions Office. Vous configurez l’invite d’approbation en définissant des clés de Registre sur l’ordinateur de chaque utilisateur final.
 
  Le tableau suivant montre les options de configuration qui peuvent être appliquées à chacune des cinq zones (Internet, UntrustedSites, MyComputer, LocalIntranet et TrustedSites).
@@ -53,19 +53,19 @@ Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si l
 
 #### <a name="to-enable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Pour activer l’invite d’approbation ClickOnce à l’aide de l’Éditeur du Registre
 
-1.  Ouvrez l’Éditeur du Registre :
+1. Ouvrez l’Éditeur du Registre :
 
-    1.  Cliquez sur **Démarrer** puis sur **Exécuter**.
+    1. Cliquez sur **Démarrer** puis sur **Exécuter**.
 
-    2.  Dans le **Open** , tapez `regedit`, puis cliquez sur **OK**.
+    2. Dans le **Open** , tapez `regedit`, puis cliquez sur **OK**.
 
-2.  Recherchez la clé de Registre suivante :
+2. Recherchez la clé de Registre suivante :
 
      **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**
 
      Si la clé n’existe pas, créez-le.
 
-3.  Ajoutez les sous-clés suivantes en tant que **valeur de chaîne**, si elles n’existent pas déjà, avec les valeurs associées présentées dans le tableau suivant.
+3. Ajoutez les sous-clés suivantes en tant que **valeur de chaîne**, si elles n’existent pas déjà, avec les valeurs associées présentées dans le tableau suivant.
 
     |Sous-clé de valeur de chaîne|Value|
     |-------------------------|-----------|
@@ -79,9 +79,9 @@ Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si l
 
 #### <a name="to-enable-the-clickonce-trust-prompt-programmatically"></a>Pour activer l’invite d’approbation ClickOnce par programmation
 
-1.  Créer un Visual Basic ou le visuel C# console application dans Visual Studio.
+1. Créer une application console Visual Basic ou Visual c# dans Visual Studio.
 
-2.  Ouvrez le *Program.vb* ou *Program.cs* fichier pour le modifier, puis ajoutez le code suivant.
+2. Ouvrez le *Program.vb* ou *Program.cs* fichier pour le modifier, puis ajoutez le code suivant.
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -105,26 +105,26 @@ Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si l
     key.Close();
     ```
 
-3.  Générez et exécutez l’application.
+3. Générez et exécutez l’application.
 
 ## <a name="restrict-the-clickonce-trust-prompt"></a>Restreindre l’invite d’approbation ClickOnce
  Restreindre l’invite d’approbation afin que les solutions doivent être signées avec des certificats Authenticode dont l’identité est connue avant que les utilisateurs soient invités à une décision d’approbation.
 
 #### <a name="to-restrict-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Pour restreindre l’invite d’approbation ClickOnce à l’aide de l’Éditeur du Registre
 
-1.  Ouvrez l’Éditeur du Registre :
+1. Ouvrez l’Éditeur du Registre :
 
-    1.  Cliquez sur **Démarrer** puis sur **Exécuter**.
+    1. Cliquez sur **Démarrer** puis sur **Exécuter**.
 
-    2.  Dans le **Open** , tapez `regedit`, puis cliquez sur **OK**.
+    2. Dans le **Open** , tapez `regedit`, puis cliquez sur **OK**.
 
-2.  Recherchez la clé de Registre suivante :
+2. Recherchez la clé de Registre suivante :
 
      **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**
 
      Si la clé n’existe pas, créez-le.
 
-3.  Ajoutez les sous-clés suivantes en tant que **valeur de chaîne**, si elles n’existent pas déjà, avec les valeurs associées présentées dans le tableau suivant.
+3. Ajoutez les sous-clés suivantes en tant que **valeur de chaîne**, si elles n’existent pas déjà, avec les valeurs associées présentées dans le tableau suivant.
 
     |Sous-clé de valeur de chaîne|Value|
     |-------------------------|-----------|
@@ -136,9 +136,9 @@ Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si l
 
 #### <a name="to-restrict-the-clickonce-trust-prompt-programmatically"></a>Pour restreindre l’invite d’approbation ClickOnce par programmation
 
-1.  Créer un Visual Basic ou le visuel C# console application dans Visual Studio.
+1. Créer une application console Visual Basic ou Visual c# dans Visual Studio.
 
-2.  Ouvrez le *Program.vb* ou *Program.cs* fichier pour le modifier, puis ajoutez le code suivant.
+2. Ouvrez le *Program.vb* ou *Program.cs* fichier pour le modifier, puis ajoutez le code suivant.
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -162,26 +162,26 @@ Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si l
     key.Close();
     ```
 
-3.  Générez et exécutez l’application.
+3. Générez et exécutez l’application.
 
 ## <a name="disable-the-clickonce-trust-prompt"></a>Désactiver l’invite d’approbation ClickOnce
  Vous pouvez désactiver l’invite d’approbation afin que les utilisateurs finaux reçoivent pas l’option d’installation des solutions qui ne sont pas déjà approuvées dans leur stratégie de sécurité.
 
 #### <a name="to-disable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Pour désactiver l’invite d’approbation ClickOnce à l’aide de l’Éditeur du Registre
 
-1.  Ouvrez l’Éditeur du Registre :
+1. Ouvrez l’Éditeur du Registre :
 
-    1.  Cliquez sur **Démarrer** puis sur **Exécuter**.
+    1. Cliquez sur **Démarrer** puis sur **Exécuter**.
 
-    2.  Dans le **Open** , tapez `regedit`, puis cliquez sur **OK**.
+    2. Dans le **Open** , tapez `regedit`, puis cliquez sur **OK**.
 
-2.  Recherchez la clé de Registre suivante :
+2. Recherchez la clé de Registre suivante :
 
      **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\. NETFramework\Security\TrustManager\PromptingLevel**
 
      Si la clé n’existe pas, créez-le.
 
-3.  Ajoutez les sous-clés suivantes en tant que **valeur de chaîne**, si elles n’existent pas déjà, avec les valeurs associées présentées dans le tableau suivant.
+3. Ajoutez les sous-clés suivantes en tant que **valeur de chaîne**, si elles n’existent pas déjà, avec les valeurs associées présentées dans le tableau suivant.
 
     |Sous-clé de valeur de chaîne|Value|
     |-------------------------|-----------|
@@ -193,9 +193,9 @@ Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si l
 
 #### <a name="to-disable-the-clickonce-trust-prompt-programmatically"></a>Pour désactiver l’invite d’approbation ClickOnce par programmation
 
-1.  Créer un Visual Basic ou le visuel C# console application dans Visual Studio.
+1. Créer une application console Visual Basic ou Visual c# dans Visual Studio.
 
-2.  Ouvrez le *Program.vb* ou *Program.cs* fichier pour le modifier, puis ajoutez le code suivant.
+2. Ouvrez le *Program.vb* ou *Program.cs* fichier pour le modifier, puis ajoutez le code suivant.
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -220,16 +220,16 @@ Vous pouvez configurer l’invite d’approbation ClickOnce pour contrôler si l
 
     ```
 
-3.  Générez et exécutez l’application.
+3. Générez et exécutez l’application.
 
 ## <a name="see-also"></a>Voir aussi
 - [Sécuriser des applications ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Sécurité d’accès du code pour les applications ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce et Authenticode](../deployment/clickonce-and-authenticode.md)
 - [Vue d’ensemble du déploiement d’applications approuvées](../deployment/trusted-application-deployment-overview.md)
-- [Guide pratique pour activer les paramètres de sécurité ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)
-- [Guide pratique pour définir une zone de sécurité pour une application ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
-- [Guide pratique pour définir des autorisations personnalisées pour une application ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
-- [Guide pratique pour déboguer une application ClickOnce avec des autorisations restreintes](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
-- [Guide pratique pour ajouter un éditeur approuvé à un ordinateur client pour les applications ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)
+- [Guide pratique pour Activer les paramètres de sécurité ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)
+- [Guide pratique pour Définir une zone de sécurité pour une application ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
+- [Guide pratique pour Définir des autorisations personnalisées pour une application ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
+- [Guide pratique pour Déboguer une application ClickOnce avec des autorisations restreintes](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [Guide pratique pour Ajouter un éditeur approuvé à un ordinateur client pour les applications ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)
 - [Guide pratique pour resigner des manifestes d’application et de déploiement](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

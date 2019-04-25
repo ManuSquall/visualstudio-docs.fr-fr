@@ -12,50 +12,50 @@ ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6adfc19d16e13449dd673ca7722781f16b4b6cb
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.openlocfilehash: 600cae730cacad4f54433b8179b97eb131a64fab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54835119"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076105"
 ---
-# <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Procédure pas à pas : utilisation d'un fichier de configuration pour définir une source de données
+# <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Procédure pas à pas : utilisation d’un fichier config pour définir une source de données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette procédure pas à pas illustre comment utiliser une source de données définie dans un fichier app.config pour des tests unitaires. Vous apprendrez à créer un fichier app.config qui définit une source de données pouvant être utilisée par la classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>. Cette procédure pas à pas illustre les tâches suivantes :  
   
--   Création d'un fichier app.config  
+- Création d'un fichier app.config  
   
--   Définition d'une section de configuration personnalisée  
+- Définition d'une section de configuration personnalisée  
   
--   Définition de chaînes de connexion  
+- Définition de chaînes de connexion  
   
--   Définition des sources de données  
+- Définition des sources de données  
   
--   accès aux sources de données à l'aide de la classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>.  
+- accès aux sources de données à l'aide de la classe <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>.  
   
 ## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous avez besoin des éléments suivants :  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
--   Microsoft Access ou Microsoft Excel afin de fournir des données pour au moins l'une des méthodes de test.  
+- Microsoft Access ou Microsoft Excel afin de fournir des données pour au moins l'une des méthodes de test.  
   
--   Une solution Visual Studio qui contient un projet de test.  
+- Une solution Visual Studio qui contient un projet de test.  
   
 ## <a name="create-the-appconfig-file"></a>Créer le fichier app.config  
   
 #### <a name="to-add-an-appconfig-file-to-the-project"></a>Pour ajouter un fichier app.config au projet  
   
-1.  Si votre projet de test contient déjà un fichier app.config, accédez à [Définir une section de configuration personnalisée](#DefineCustomConfigurationSection).  
+1. Si votre projet de test contient déjà un fichier app.config, accédez à [Définir une section de configuration personnalisée](#DefineCustomConfigurationSection).  
   
-2.  Cliquez avec le bouton droit sur votre projet de test dans l’**Explorateur de solutions**, pointez sur **Ajouter**, puis cliquez sur **Nouvel élément**.  
+2. Cliquez avec le bouton droit sur votre projet de test dans l’**Explorateur de solutions**, pointez sur **Ajouter**, puis cliquez sur **Nouvel élément**.  
   
      La fenêtre **Ajouter un nouvel élément** s’ouvre.  
   
-3.  Sélectionnez le modèle **Fichier de configuration de l’application**, puis cliquez sur **Ajouter**.  
+3. Sélectionnez le modèle **Fichier de configuration de l’application**, puis cliquez sur **Ajouter**.  
   
-##  <a name="DefineCustomConfigurationSection"></a> Définir une section de configuration personnalisée  
+## <a name="DefineCustomConfigurationSection"></a> Définir une section de configuration personnalisée  
  Examinez le fichier app.config. Il contient au moins la déclaration XML et un élément racine.  
   
 #### <a name="to-add-the-custom-configuration-section-to-the-appconfig-file"></a>Pour ajouter la section de configuration personnalisée au fichier app.config  
@@ -80,11 +80,11 @@ Cette procédure pas à pas illustre comment utiliser une source de données dé
   
 #### <a name="to-define-connection-strings"></a>Pour définir des chaînes de connexion  
   
-1.  Après l'élément `configSections`, créez un élément `connectionStrings`.  
+1. Après l'élément `configSections`, créez un élément `connectionStrings`.  
   
-2.  Dans l'élément `connectionStrings`, créez deux éléments `add`.  
+2. Dans l'élément `connectionStrings`, créez deux éléments `add`.  
   
-3.  Dans le premier élément `add`, créez les attributs et valeurs suivants pour une connexion à une base de données Microsoft Access :   
+3. Dans le premier élément `add`, créez les attributs et valeurs suivants pour une connexion à une base de données Microsoft Access :   
   
 |Attribut|Valeurs|  
 |---------------|------------|  
@@ -124,13 +124,13 @@ Cette procédure pas à pas illustre comment utiliser une source de données dé
   
 #### <a name="to-define-data-sources"></a>Pour définir des sources de données  
   
-1.  Après l'élément `connectionStrings`, créez un élément `microsoft.visualstudio.testtools`. Cette section a été créée dans Définir une section de configuration personnalisée.  
+1. Après l'élément `connectionStrings`, créez un élément `microsoft.visualstudio.testtools`. Cette section a été créée dans Définir une section de configuration personnalisée.  
   
-2.  Dans l'élément `microsoft.visualstudio.testtools`, créez un élément `dataSources`.  
+2. Dans l'élément `microsoft.visualstudio.testtools`, créez un élément `dataSources`.  
   
-3.  Dans l'élément `dataSources`, créez deux éléments `add`.  
+3. Dans l'élément `dataSources`, créez deux éléments `add`.  
   
-4.  Dans le premier élément `add`, créez les attributs et valeurs suivants pour une source de données Microsoft Access :   
+4. Dans le premier élément `add`, créez les attributs et valeurs suivants pour une source de données Microsoft Access :   
   
 |Attribut|Valeurs|  
 |---------------|------------|  
@@ -183,45 +183,45 @@ Cette procédure pas à pas illustre comment utiliser une source de données dé
 ## <a name="create-a-unit-test-using-data-sources-defined-in-appconfig"></a>Créer un test unitaire à l'aide de sources de données définies dans app.config  
  Maintenant qu'un fichier app.config a été défini, vous allez créer un test unitaire qui utilise des données situées dans les sources de données définies dans le fichier app.config. Dans cette section, nous allons :  
   
--   créer les sources de données du fichier app.config ;  
+- créer les sources de données du fichier app.config ;  
   
--   utiliser les sources de données dans deux méthodes de test qui comparent les valeurs dans chaque source de données.  
+- utiliser les sources de données dans deux méthodes de test qui comparent les valeurs dans chaque source de données.  
   
 #### <a name="to-create-a-microsoft-access-data-source"></a>Pour créer une source de données Microsoft Access  
   
-1.  Créez une base de données Microsoft Access nommée `testdatasource.accdb`.  
+1. Créez une base de données Microsoft Access nommée `testdatasource.accdb`.  
   
-2.  Créez une table et nommez-la `MyDataTable` dans `testdatasource.accdb`.  
+2. Créez une table et nommez-la `MyDataTable` dans `testdatasource.accdb`.  
   
-3.  Créez deux champs dans `MyDataTable` nommés `Arg1` et `Arg2` à l'aide du type de données `Number`.  
+3. Créez deux champs dans `MyDataTable` nommés `Arg1` et `Arg2` à l'aide du type de données `Number`.  
   
-4.  Ajoutez cinq entités à `MyDataTable` avec les valeurs suivantes pour `Arg1` et `Arg2`, respectivement : (10,50), (3,2), (6,0), (0,8) et (12312,1000).  
+4. Ajoutez cinq entités à `MyDataTable` avec les valeurs suivantes pour `Arg1` et `Arg2`, respectivement : (10,50), (3,2), (6,0), (0,8) et (12312,1000).  
   
-5.  Enregistrez et fermez la base de données.  
+5. Enregistrez et fermez la base de données.  
   
-6.  Modifiez la chaîne de connexion de sorte qu'elle pointe vers l'emplacement de la base de données. Modifiez la valeur de `Data Source` pour refléter l'emplacement de la base de données.  
+6. Modifiez la chaîne de connexion de sorte qu'elle pointe vers l'emplacement de la base de données. Modifiez la valeur de `Data Source` pour refléter l'emplacement de la base de données.  
   
 #### <a name="to-create-a-microsoft-excel-data-source"></a>Pour créer une source de données Microsoft Excel  
   
-1.  Créez une feuille de calcul Microsoft Excel nommée `data.xlsx`.  
+1. Créez une feuille de calcul Microsoft Excel nommée `data.xlsx`.  
   
-2.  Créez une feuille nommée `Sheet1` si elle n'existe pas déjà dans `data.xlsx`.  
+2. Créez une feuille nommée `Sheet1` si elle n'existe pas déjà dans `data.xlsx`.  
   
-3.  Créez deux en-têtes de colonnes et nommez-les `Val1` et `Val2` dans `Sheet1`.  
+3. Créez deux en-têtes de colonnes et nommez-les `Val1` et `Val2` dans `Sheet1`.  
   
-4.  Ajoutez cinq entités à `Sheet1` avec les valeurs suivantes pour `Val1` et `Val2`, respectivement : (1,1), (2,2), (3,3), (4,4) et (5,0).  
+4. Ajoutez cinq entités à `Sheet1` avec les valeurs suivantes pour `Val1` et `Val2`, respectivement : (1,1), (2,2), (3,3), (4,4) et (5,0).  
   
-5.  Enregistrez et fermez la feuille de calcul.  
+5. Enregistrez et fermez la feuille de calcul.  
   
-6.  Modifiez la chaîne de connexion de sorte qu'elle pointe vers l'emplacement de la feuille de calcul. Modifiez la valeur de `dbq` pour refléter l'emplacement de la feuille de calcul.  
+6. Modifiez la chaîne de connexion de sorte qu'elle pointe vers l'emplacement de la feuille de calcul. Modifiez la valeur de `dbq` pour refléter l'emplacement de la feuille de calcul.  
   
 #### <a name="to-create-a-unit-test-using-the-appconfig-data-sources"></a>Pour créer un test unitaire à l'aide des sources de données app.config  
   
-1.  Ajoutez un test unitaire au projet de test.  
+1. Ajoutez un test unitaire au projet de test.  
   
      Pour plus d’informations, consultez [Création et exécution de tests unitaires pour le code existant](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173).  
   
-2.  Remplacez le contenu généré automatiquement du test unitaire par le code suivant :  
+2. Remplacez le contenu généré automatiquement du test unitaire par le code suivant :  
   
     ```  
     using System;  
@@ -261,9 +261,9 @@ Cette procédure pas à pas illustre comment utiliser une source de données dé
     }  
     ```  
   
-3.  Examinez les attributs DataSource. Notez les noms des paramètres à partir du fichier app.config.  
+3. Examinez les attributs DataSource. Notez les noms des paramètres à partir du fichier app.config.  
   
-4.  Générez votre solution et exécutez les tests MyTestMethod et MyTestMethod2.  
+4. Générez votre solution et exécutez les tests MyTestMethod et MyTestMethod2.  
   
 > [!IMPORTANT]
 >  Déployez des éléments tels que des sources de données de sorte qu'ils soient accessibles au test dans le répertoire de déploiement.  
@@ -271,5 +271,5 @@ Cette procédure pas à pas illustre comment utiliser une source de données dé
 ## <a name="see-also"></a>Voir aussi  
  [Tests unitaires sur votre code](../test/unit-test-your-code.md)   
  [Création et exécution de tests unitaires pour le code existant](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
- [Test de l’application](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
- [Guide pratique pour créer un test unitaire piloté par les données](../test/how-to-create-a-data-driven-unit-test.md)
+ [Test de l'application](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
+ [Guide pratique pour Créer un Test unitaire piloté par les données](../test/how-to-create-a-data-driven-unit-test.md)

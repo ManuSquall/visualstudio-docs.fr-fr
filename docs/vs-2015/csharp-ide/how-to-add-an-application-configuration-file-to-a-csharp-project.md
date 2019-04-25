@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 481c1a66f3e025d3a29b2d5a1e39cd29bbb22490
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0c85690b34f0db705fe2a17e2f98d5b4f11433b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950059"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044974"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Procédure : Ajoutez un fichier de Configuration d’Application à un C# projet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ En ajoutant un fichier de configuration d’application (fichier app.config) à 
   
 ### <a name="to-add-an-application-configuration-file-to-your-c-project"></a>Pour ajouter un fichier de configuration d’application à votre projet c#  
   
-1.  Dans la barre de menus, choisissez **projet**, **ajouter un nouvel élément**.  
+1. Dans la barre de menus, choisissez **projet**, **ajouter un nouvel élément**.  
   
      La boîte de dialogue **Ajouter un nouvel élément** s’affiche.  
   
-2.  Développez **installé**, développez **éléments Visual c#**, puis choisissez le **fichier de Configuration d’Application** modèle.  
+2. Développez **installé**, développez **éléments Visual c#**, puis choisissez le **fichier de Configuration d’Application** modèle.  
   
-3.  Dans la zone de texte **Nom**, entrez un nom, puis choisissez le bouton **Ajouter**.  
+3. Dans la zone de texte **Nom**, entrez un nom, puis choisissez le bouton **Ajouter**.  
   
      Un fichier nommé app.config est ajouté à votre projet.  
   

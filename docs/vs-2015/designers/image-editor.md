@@ -12,12 +12,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0bda440c463082d62568bcdfd0525eebe2a17c61
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 08fd0d6e33de0c032ab63f013fca7ee3174b260e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768301"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077379"
 ---
 # <a name="image-editor"></a>Éditeur d’images
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,13 +44,13 @@ Ce document décrit comment utiliser l’éditeur d’images de [!INCLUDE[vsprvs
   
 #### <a name="to-add-an-image-to-your-project"></a>Pour ajouter une image à votre projet  
   
-1.  Dans l’**Explorateur de solutions**, ouvrez le menu contextuel du projet auquel vous souhaitez ajouter l’image puis choisissez **Ajouter**, **Nouvel élément**.  
+1. Dans l’**Explorateur de solutions**, ouvrez le menu contextuel du projet auquel vous souhaitez ajouter l’image puis choisissez **Ajouter**, **Nouvel élément**.  
   
-2.  Dans la boîte de dialogue **Ajouter un nouvel élément**, sous **Installé**, sélectionnez **Graphiques**, puis sélectionnez un format de fichier approprié pour l’image. Pour plus d’informations sur la façon de choisir un format de fichier en fonction de vos besoins, consultez la section suivante.  
+2. Dans la boîte de dialogue **Ajouter un nouvel élément**, sous **Installé**, sélectionnez **Graphiques**, puis sélectionnez un format de fichier approprié pour l’image. Pour plus d’informations sur la façon de choisir un format de fichier en fonction de vos besoins, consultez la section suivante.  
   
-3.  Spécifiez le **Nom** du fichier image, ainsi que l’**Emplacement** où vous voulez le créer.  
+3. Spécifiez le **Nom** du fichier image, ainsi que l’**Emplacement** où vous voulez le créer.  
   
-4.  Choisissez le bouton **Ajouter** .  
+4. Choisissez le bouton **Ajouter** .  
   
 ### <a name="choosing-the-image-format"></a>Choix du format d’image  
  Selon la façon dont vous prévoyez d’utiliser l’image, certains formats de fichiers peuvent être plus appropriés que d’autres. Par exemple, certains formats ne prennent pas en charge une fonctionnalité dont vous avez besoin, comme la transparence ou un format de couleur spécifique, ou ils peuvent ne pas fournir une compression appropriée pour le type de contenu de l’image que vous avez prévu.  
@@ -111,10 +111,10 @@ Ce document décrit comment utiliser l’éditeur d’images de [!INCLUDE[vsprvs
 |**Grid**|Active ou désactive la grille qui montre les limites des pixels. Il peut être nécessaire de faire un zoom avant pour faire apparaître la grille.|  
 |**Afficher le niveau MIP suivant**|Active le niveau MIP supérieur suivant dans une chaîne de mappage MIP. Le niveau MIP actif est affiché dans l’aire de conception. Cet élément est disponible seulement pour les textures qui ont des niveaux MIP.|  
 |**Afficher le niveau MIP précédent**|Active le niveau MIP inférieur dans une chaîne de mappage MIP. Le niveau MIP actif est affiché dans l’aire de conception. Cet élément est disponible seulement pour les textures qui ont des niveaux MIP.|  
-|**Canal rouge**<br /><br /> **Canal vert**<br /><br /> **Canal bleu**<br /><br /> **Canal alpha**|Active ou désactive le canal de couleur spécifique. **Remarque :** En activant ou en désactivant de façon systématique des canaux de couleur, vous pouvez isoler les problèmes liés à une ou plusieurs de ces couleurs. Par exemple, vous pourrez identifier une transparence alpha incorrecte.|  
+|**Canal rouge**<br /><br /> **Canal vert**<br /><br /> **Canal bleu**<br /><br /> **Canal alpha**|Active ou désactive le canal de couleur spécifique. **Remarque :**  En activant ou en désactivant de façon systématique des canaux de couleur, vous pouvez isoler les problèmes liés à une ou plusieurs de ces couleurs. Par exemple, vous pourrez identifier une transparence alpha incorrecte.|  
 |**Arrière-plan**|Active ou désactive l’affichage de l’arrière-plan à travers les parties transparentes de l’image. Vous pouvez configurer la façon dont l’arrière-plan s’affiche en choisissant parmi les options suivantes :<br /><br /> **Damier**<br /> Utilise une couleur verte avec la couleur d’arrière-plan spécifiée pour afficher l’arrière-plan sous la forme d’un modèle de damier. Vous pouvez utiliser cette option pour rendre les parties transparentes de l’image plus apparentes.<br /><br /> Arrière-plan blanc<br /> Utilise la couleur blanc pour afficher l’arrière-plan.<br /><br /> Arrière-plan noir<br /> Utilise la couleur noir pour afficher l’arrière-plan.<br /><br /> Animer l’arrière-plan<br /> Permet de déplacer le modèle de damier lentement selon un mouvement panoramique. Vous pouvez utiliser cette option pour rendre les parties transparentes de l’image plus apparentes.|  
 |**Propriétés**|Affiche ou masque alternativement la fenêtre **Propriétés**.|  
-|**Avancé**|Contient des commandes et des options supplémentaires.<br /><br /> **Filtres**<br /><br /> Fournit plusieurs filtres d’image courants : **Noir et blanc**, **Flou**, **Éclaircir**, **Obscurcir**, **Détection des bords**, **Relief**, **Inverser les couleurs**, **Ripple**, **Ton sépia** et **Accentuer**.<br /><br /> **Moteurs graphiques**<br /><br /> **Afficher avec D3D11**<br /> Utilise Direct3D 11 pour afficher l’aire de conception de l’éditeur d’images.<br /><br /> **Afficher avec D3D11WARP**<br /> Utilise la plateforme WARP (Windows Advanced Rasterization Platform) Direct3D 11 pour afficher l’aire de conception de l’éditeur d’images.<br /><br /> **Outils**<br /><br /> **Symétrie horizontale**<br /> Transpose l’image autour de son axe horizontal (l’axe X).<br /><br /> **Symétrie verticale**<br /> Transpose l’image autour de son axe vertical (l’axe Y).<br /><br /> **Générer des mips**<br /> Génère des niveaux MIP pour une image. Si des niveaux MIP existent déjà, ils sont recréés à partir du niveau MIP le plus grand. Toutes les modifications qui ont été apportées à des niveaux MIP plus petits sont perdues. Pour enregistrer les niveaux MIP que vous avez générés, vous devez utiliser le format .dds pour enregistrer l’image.<br /><br /> **Affichage**<br /><br /> **Fréquence d’images**<br /> Quand cette option est activée, elle affiche la fréquence d’images dans le coin supérieur droit de l’aire de conception. La fréquence d'images est le nombre d'images dessinées par seconde. **Conseil :** Vous pouvez choisir le bouton **Avancé** pour réexécuter la dernière commande.|  
+|**Avancé**|Contient des commandes et des options supplémentaires.<br /><br /> **Les filtres**<br /><br /> Fournit plusieurs filtres d’image courants : **Noir et blanc**, **Flou**, **Éclaircir**, **Obscurcir**, **Détection des bords**, **Relief**, **Inverser les couleurs**, **Ripple**, **Ton sépia** et **Accentuer**.<br /><br /> **Moteurs graphiques**<br /><br /> **Afficher avec D3D11**<br /> Utilise Direct3D 11 pour afficher l’aire de conception de l’éditeur d’images.<br /><br /> **Afficher avec D3D11WARP**<br /> Utilise la plateforme WARP (Windows Advanced Rasterization Platform) Direct3D 11 pour afficher l’aire de conception de l’éditeur d’images.<br /><br /> **Outils**<br /><br /> **Symétrie horizontale**<br /> Transpose l’image autour de son axe horizontal (l’axe X).<br /><br /> **Symétrie verticale**<br /> Transpose l’image autour de son axe vertical (l’axe Y).<br /><br /> **Générer des mips**<br /> Génère des niveaux MIP pour une image. Si des niveaux MIP existent déjà, ils sont recréés à partir du niveau MIP le plus grand. Toutes les modifications qui ont été apportées à des niveaux MIP plus petits sont perdues. Pour enregistrer les niveaux MIP que vous avez générés, vous devez utiliser le format .dds pour enregistrer l’image.<br /><br /> **Affichage**<br /><br /> **Fréquence d’images**<br /> Quand cette option est activée, elle affiche la fréquence d’images dans le coin supérieur droit de l’aire de conception. La fréquence d'images est le nombre d'images dessinées par seconde. **Conseil :**  Vous pouvez choisir le bouton **Avancé** pour réexécuter la dernière commande.|  
   
  Voici la barre d’outils **Éditeur d’images**.  
   
@@ -136,22 +136,22 @@ Ce document décrit comment utiliser l’éditeur d’images de [!INCLUDE[vsprvs
 |**Découper**|Découpe l’image au format de la sélection active.|  
   
 ### <a name="working-with-mip-levels"></a>Utilisation des niveaux MIP  
- Certains formats d’image, par exemple, DirectDraw Surface (.dds), prennent en charge les niveaux MIP pour le niveau de détail de l’espace de texture. Pour plus d’informations sur la façon de générer et d’utiliser les niveaux MIP, consultez [Guide pratique pour créer et modifier les niveaux MIP](../designers/how-to-create-and-modify-mip-levels.md)  
+ Certains formats d’image, par exemple, DirectDraw Surface (.dds), prennent en charge les niveaux MIP pour le niveau de détail de l’espace de texture. Pour plus d’informations sur la façon de générer et d’utiliser les niveaux MIP, consultez [Guide pratique pour Créer et modifier les niveaux MIP](../designers/how-to-create-and-modify-mip-levels.md)  
   
 ### <a name="working-with-transparency"></a>Utilisation de la transparence  
  Certains formats d’image, par exemple, DirectDraw Surface (.dds), prennent en charge la transparence. Vous pouvez utiliser la transparence de plusieurs façons, selon l’outil que vous utilisez. Pour spécifier le niveau de transparence pour une sélection de couleur, dans la fenêtre **Propriétés**, configurez le composant **A** (alpha) de la sélection de couleur. Voici comment les différents types d’outils contrôlent comment la transparence est appliquée :  
   
-|Outil|Description|  
+|Tool|Description|  
 |----------|-----------------|  
 |**Crayon**, **Pinceau**, **Aérographe**, **Ligne**, **Rectangle**, **Rectangle à coins arrondis**, **Ellipse**, **Texte**|Pour fusionner la sélection de couleur active avec l’image, dans la fenêtre **Propriétés**, développez le groupe de propriétés **Canaux**, cochez la case **Dessiner** sur le canal **Alpha** puis dessinez normalement.<br /><br /> Pour dessiner en utilisant la sélection de couleur active et laisser telle quelle la valeur alpha de l’image, décochez la case **Dessiner** du canal **Alpha** puis dessinez normalement.|  
 |**Remplissage**|Pour fusionner la sélection de couleur active avec l’image, choisissez simplement la zone à remplir.<br /><br /> Pour utiliser la sélection de couleur active, y compris la valeur du canal alpha, pour remplacer l’image, maintenez la touche Maj enfoncée puis choisissez la zone à remplir.|  
   
-###  <a name="ImageProperties"></a> Propriétés de l’image  
+### <a name="ImageProperties"></a> Propriétés de l’image  
  Vous pouvez utiliser la fenêtre **Propriétés** pour spécifier différentes propriétés de l’image. Par exemple, vous pouvez définir les propriétés Largeur et Hauteur pour redimensionner l’image.  
   
  Le tableau suivant décrit les propriétés d’une image.  
   
-|Property|Description|  
+|Propriété|Description|  
 |--------------|-----------------|  
 |Largeur|Largeur de l’image.|  
 |Hauteur |Hauteur de l’image.|  
@@ -171,9 +171,9 @@ Ce document décrit comment utiliser l’éditeur d’images de [!INCLUDE[vsprvs
 #### <a name="resizing-images"></a>Redimensionnement des images  
  Voici deux façons de redimensionner une image. Dans les deux cas, l’éditeur d’images utilise une interpolation bilinéaire pour rééchantillonner l’image.  
   
--   Dans la fenêtre **Propriétés**, spécifiez de nouvelles valeurs pour les propriétés **Largeur** et **Hauteur**.  
+- Dans la fenêtre **Propriétés**, spécifiez de nouvelles valeurs pour les propriétés **Largeur** et **Hauteur**.  
   
--   Sélectionnez l’image entière et utilisez les marqueurs de bordure pour redimensionner l’image.  
+- Sélectionnez l’image entière et utilisez les marqueurs de bordure pour redimensionner l’image.  
   
 ### <a name="working-with-tools"></a>Utilisation des outils  
   
@@ -207,14 +207,14 @@ Ce document décrit comment utiliser l’éditeur d’images de [!INCLUDE[vsprvs
 |Ctrl|||Copie et redimensionne le contenu de la zone sélectionnée.|  
 |Ctrl|Shift||Copie puis redimensionne proportionnellement le contenu de la zone sélectionnée.|  
   
-####  <a name="ToolProperties"></a> Propriétés des outils  
+#### <a name="ToolProperties"></a> Propriétés des outils  
  Quand un outil est sélectionné, vous pouvez utiliser la fenêtre **Propriétés** pour spécifier des détails sur la façon dont il affecte l’image. Par exemple, vous pouvez définir l’épaisseur de l’outil **Crayon** ou la couleur de l’outil **Pinceau**.  
   
  Vous pouvez définir une couleur de premier plan et une couleur d’arrière-plan. Les deux prennent en charge un canal alpha pour fournir une opacité définie par l’utilisateur. Les paramètres s’appliquent à tous les outils. Si vous utilisez une souris, le bouton gauche de la souris correspond à la couleur de premier plan, et le bouton droit de la souris correspond à la couleur d’arrière-plan.  
   
  Le tableau suivant décrit les propriétés des outils.  
   
-|Outil|Propriétés|  
+|Outil|Properties|  
 |----------|----------------|  
 |Tous les outils et toutes les sélections|**Faire pivoter de**<br /> Définit la quantité de la rotation, en degrés, pour la sélection ou l’effet de l’outil dans le sens des aiguilles d’une montre.|  
 |**Crayon**, **Pinceau**, **Aérographe**, **Gomme**|**Épaisseur**<br /> Définit la taille de la zone affectée par l’outil.|  

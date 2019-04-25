@@ -1,14 +1,9 @@
 ---
 title: Commutateurs de ligne de commande (Kit de développement logiciel Visual Studio) | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - VSPackages, command-line switches
 - command-line switches
@@ -16,13 +11,13 @@ helpviewer_keywords:
 ms.assetid: 0a22516f-f60e-4476-ac5b-f41e5ffaaf8b
 caps.latest.revision: 17
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 1cfe08769f6b7734ba6fdd87cd010726cbcc3d9a
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: ea37c105114e915e812a470474ccd8f52609056f
+ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51764731"
+ms.lasthandoff: 01/23/2019
+ms.locfileid: "58947140"
 ---
 # <a name="command-line-switches-visual-studio-sdk"></a>Commutateurs de ligne de commande (SDK Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,4 +34,3 @@ Devenv.exe, le fichier exécutable qui démarre le [!INCLUDE[vsprvs](../includes
 ## <a name="related-sections"></a>Rubriques connexes  
  [Commutateurs de la ligne de commande Devenv](../ide/reference/devenv-command-line-switches.md)  
  Explique comment Devenv vous permet de que définir diverses options de l’IDE, et comment vous pouvez compiler, générer et déboguer des projets à partir de la ligne de commande. En outre, il existe plus d’informations sur la syntaxe des commutateurs Devenv et une table de commutateurs.
-

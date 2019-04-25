@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ec2d14a03649b63a068d2e0a95877ccd03ddf97a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6a6c94382bd797b4c24057f623b334b2f2cd2983
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938328"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115573"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Procédure : génération d'un extrait XML à partir d'un schéma XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 L'éditeur XML permet de générer des extraits XML à partir d'un schéma de langage XSD (XML Schema definition). Par exemple, lorsque vous créez un fichier XML alors que le curseur est placé à côté du nom d'un élément, vous pouvez appuyer sur TAB pour remplir l'élément avec des données XML générées à partir des informations de schéma de cet élément.  
   
  Cette fonction n'est disponible que pour les éléments. Les règles suivantes s'appliquent également :  
@@ -28,11 +27,11 @@ L'éditeur XML permet de générer des extraits XML à partir d'un schéma de la
   
 - L'élément actuel dans l'éditeur doit être vide et dépourvu d'attributs. Par exemple, toutes les écritures suivantes sont valides.  
   
-  -   `<Account`  
+  - `<Account`  
   
-  -   `<Account>`  
+  - `<Account>`  
   
-  -   `<Account></Account>`  
+  - `<Account></Account>`  
   
 - Le curseur doit être placé immédiatement à droite du nom de l'élément.  
   
@@ -52,31 +51,31 @@ L'éditeur XML permet de générer des extraits XML à partir d'un schéma de la
   
 #### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Pour créer un nouveau fichier XML et l'associer à un schéma XML  
   
-1.  Sur le **fichier** menu, pointez sur **New**, puis cliquez sur **fichier**.  
+1. Sur le **fichier** menu, pointez sur **New**, puis cliquez sur **fichier**.  
   
-2.  Sélectionnez **fichier XML** dans le **modèles** volet et cliquez sur **Open**.  
+2. Sélectionnez **fichier XML** dans le **modèles** volet et cliquez sur **Open**.  
   
      Un nouveau fichier s'ouvre dans l'éditeur. Il contient une déclaration XML par défaut, `<?xml version="1.0" encoding="utf-8">`.  
   
-3.  Dans la fenêtre de propriétés de document, cliquez sur le bouton Parcourir (**...** ) sur le **schémas** champ.  
+3. Dans la fenêtre de propriétés de document, cliquez sur le bouton Parcourir (**...** ) sur le **schémas** champ.  
   
      Le **schémas XSD** boîte de dialogue s’affiche.  
   
-4.  Cliquez sur **Ajouter**.  
+4. Cliquez sur **Ajouter**.  
   
      Le **ouvrir le schéma XSD** boîte de dialogue s’affiche.  
   
-5.  Sélectionnez le fichier de schéma et cliquez sur **Open**.  
+5. Sélectionnez le fichier de schéma et cliquez sur **Open**.  
   
-6.  Cliquez sur **OK**.  
+6. Cliquez sur **OK**.  
   
      Le schéma XML est à présent associé au document XML.  
   
 #### <a name="to-generate-an-xml-snippet"></a>Pour générer un extrait XML  
   
-1.  Entrez `<` dans le volet de l'éditeur.  
+1. Entrez `<` dans le volet de l'éditeur.  
   
-2.  La liste des membres affiche les éléments possibles :  
+2. La liste des membres affiche les éléments possibles :  
   
      **!--** pour ajouter un commentaire.  
   
@@ -86,11 +85,11 @@ L'éditeur XML permet de générer des extraits XML à partir d'un schéma de la
   
      **Contact** pour ajouter l’élément racine.  
   
-3.  Sélectionnez **Contact** à partir de la liste des membres et appuyez sur ENTRÉE.  
+3. Sélectionnez **Contact** à partir de la liste des membres et appuyez sur ENTRÉE.  
   
      L’éditeur ajoute l’étiquette de début `<Contact` et place le curseur après le nom de l’élément.  
   
-4.  Appuyez sur TAB pour générer des données XML pour l'élément `Contact` d'après ses informations de schéma.  
+4. Appuyez sur TAB pour générer des données XML pour l'élément `Contact` d'après ses informations de schéma.  
   
 ### <a name="input"></a>Entrée  
  La procédure pas à pas utilise le fichier de schéma suivant.  

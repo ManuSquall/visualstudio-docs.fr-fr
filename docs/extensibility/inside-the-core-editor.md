@@ -10,29 +10,29 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81d91603d6c365946b1064cac3a7f1ca3c1e6ba8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a188116b09b846e81023c239d64d6386c7f2c6ae
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713293"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086518"
 ---
 # <a name="inside-the-core-editor"></a>À l’intérieur de l’éditeur principal
 Le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] éditeur principal est un ensemble de plusieurs composants qui vous permettent de modifier et interroger des informations textuelles. Si vous avez personnalisé l’éditeur principal à l’aide de l’API héritée, vous pouvez continuer à utiliser ces personnalisations, qui seront acheminées via les adaptateurs d’éditeur. Il est recommandé, cependant, que vous deviez adapter vos personnalisations vers le nouvel éditeur API.
 
  Les domaines suivants sont des aspects importants de l’éditeur principal :
 
--   Mémoire tampon de texte
+- Mémoire tampon de texte
 
--   Affichage de texte
+- Affichage de texte
 
--   Fenêtre Code
+- Fenêtre Code
 
--   Marqueurs de texte
+- Marqueurs de texte
 
--   Gestionnaire de texte
+- Gestionnaire de texte
 
--   Intégration avec les services de langage
+- Intégration avec les services de langage
 
 ## <a name="in-this-section"></a>Dans cette section
 - [Instancier l’éditeur principal à l’aide de l’API héritée](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md) fournit des instructions détaillées sur l’utilisation <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> pour créer une instance de la base éditeur.

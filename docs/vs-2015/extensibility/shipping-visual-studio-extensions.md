@@ -12,18 +12,17 @@ ms.assetid: 13cd263d-25f7-488e-9c1a-cff908caedb6
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 619cbaeee977f3ff850edf9d58d0790d5219dc36
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: c7154395be43f6a0b07e9f2557d94fa594ef5ba4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001678"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647199"
 ---
 # <a name="shipping-visual-studio-extensions"></a>Publication d’extensions Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 **Remarque** : La galerie Visual Studio est remplacée par la place de marché Visual Studio. Consultez la dernière version de cette rubrique pour plus d’informations.
-
 
 Une fois que vous avez terminé de développer votre extension, vous pouvez l’installer sur d’autres ordinateurs, partager avec vos amis et collègues ou publiez-la sur la galerie Visual Studio. Dans cette section, nous vous expliquons tout ce que vous devez effectuer pour publier et mettre à jour votre extension : utilisation des fichiers .vsix, publication, la localisation et la mise à jour.
 

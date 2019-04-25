@@ -17,25 +17,25 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a6f50584c5e01b97eb00a0e7f62998670d033553
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 523764ae5cd787fd4b52650e894eb086ae4adb0c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947212"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097126"
 ---
 # <a name="aspnet-debugging-system-requirements"></a>Débogage ASP.NET : Configuration système requise
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Cette rubrique décrit les conditions de sécurité et les logiciels requis pour les scénarios de débogage de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] :  
   
--   Débogage local, dans lequel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et l'application Web s'exécutent sur le même ordinateur. Il y a deux versions de ce scénario :  
+- Débogage local, dans lequel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et l'application Web s'exécutent sur le même ordinateur. Il y a deux versions de ce scénario :  
   
-    -   Le code [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] réside sur le système de fichiers.  
+    - Le code [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] réside sur le système de fichiers.  
   
-    -   Le code de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] réside sur un site Web IIS.  
+    - Le code de [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] réside sur un site Web IIS.  
   
--   Débogage distant, dans lequel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] s'exécute sur un ordinateur client et débogue une application Web qui s'exécute sur un ordinateur de serveur distant.  
+- Débogage distant, dans lequel [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] s'exécute sur un ordinateur client et débogue une application Web qui s'exécute sur un ordinateur de serveur distant.  
   
 ## <a name="security-requirements"></a>Conditions de sécurité  
  Pour le débogage distant, les ordinateurs locaux et distants doivent être sur une installation de domaine ou une installation de groupe de travail.  

@@ -13,12 +13,12 @@ ms.assetid: ce00c5a5-d472-4f45-8776-d77a1fbe9d37
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4f0fa6e59b8baa32fefffea7aa4810d688340467
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ab4389c936b71ba8ccbb21b22d0a5e533282026d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953190"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067441"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Zone de test 3 : Découvrez / annuler l’extraction
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,21 +34,21 @@ Cette zone de test plug-in de contrôle de code source comporte articles de modi
   
 ##### <a name="check-out"></a>Vérifier :  
   
--   **Fichier**, **contrôle de code Source**, **extraire**.  
+- **Fichier**, **contrôle de code Source**, **extraire**.  
   
--   **Fichier**, **extraire**.  
+- **Fichier**, **extraire**.  
   
--   Menu contextuel, **extraire**.  
+- Menu contextuel, **extraire**.  
   
--   Annuler l’extraction : **Fichier**, **contrôle de code Source**, **annuler l’extraction**.  
+- Annuler l’extraction : **Fichier**, **contrôle de code Source**, **annuler l’extraction**.  
   
 ## <a name="common-expected-behavior"></a>Comportement attendu commun  
   
--   Après l’opération d’extraction, l’ou les fichiers cibles et/ou les dossiers sont marqués comme extrait dans la banque des versions.  
+- Après l’opération d’extraction, l’ou les fichiers cibles et/ou les dossiers sont marqués comme extrait dans la banque des versions.  
   
--   La banque des versions attributs de l’extraction à l’utilisateur approprié.  
+- La banque des versions attributs de l’extraction à l’utilisateur approprié.  
   
--   La date et heure de l’extraction sont corrects (par les paramètres de l’utilisateur).  
+- La date et heure de l’extraction sont corrects (par les paramètres de l’utilisateur).  
   
 ## <a name="test-cases"></a>Cas de test  
  Voici les cas de test spécifiques pour la zone de test de validation/annulation de l’extraction.  
@@ -72,11 +72,11 @@ Cette zone de test plug-in de contrôle de code source comporte articles de modi
   
 #### <a name="expected-behavior"></a>Comportement attendu  
   
--   Impossible d’utiliser **Out exclusivement** commande tout en étant déconnecté à partir de la banque des versions.  
+- Impossible d’utiliser **Out exclusivement** commande tout en étant déconnecté à partir de la banque des versions.  
   
--   Impossible d’utiliser **annuler l’extraction** commande tout en étant déconnecté à partir de la banque des versions.  
+- Impossible d’utiliser **annuler l’extraction** commande tout en étant déconnecté à partir de la banque des versions.  
   
--   **Partagé Check Out** commande fonctionne.  
+- **Partagé Check Out** commande fonctionne.  
   
 |Action|Étapes de test|Résultats attendus pour vérifier|  
 |------------|----------------|--------------------------------|  
@@ -87,13 +87,13 @@ Cette zone de test plug-in de contrôle de code source comporte articles de modi
   
 #### <a name="expected-behavior"></a>Comportement attendu  
   
--   Après l’opération d’extraction, l’ou les fichiers cibles et/ou les dossiers sont marqués comme extrait dans la banque des versions.  
+- Après l’opération d’extraction, l’ou les fichiers cibles et/ou les dossiers sont marqués comme extrait dans la banque des versions.  
   
--   La banque des versions attributs de l’extraction à l’utilisateur approprié.  
+- La banque des versions attributs de l’extraction à l’utilisateur approprié.  
   
--   La date et heure de l’extraction sont corrects (par les paramètres de l’utilisateur).  
+- La date et heure de l’extraction sont corrects (par les paramètres de l’utilisateur).  
   
--   La copie locale du fichier cible ou du dossier est accessible en écriture.  
+- La copie locale du fichier cible ou du dossier est accessible en écriture.  
   
 |Action|Étapes de test|Résultats attendus pour vérifier|  
 |------------|----------------|--------------------------------|  
@@ -106,13 +106,13 @@ Cette zone de test plug-in de contrôle de code source comporte articles de modi
   
 #### <a name="expected-behavior"></a>Comportement attendu  
   
--   Après l’opération d’extraction, l’ou les fichiers cibles et/ou les dossiers sont marqués comme extrait dans la banque des versions.  
+- Après l’opération d’extraction, l’ou les fichiers cibles et/ou les dossiers sont marqués comme extrait dans la banque des versions.  
   
--   La banque des versions attributs de l’extraction à l’utilisateur approprié.  
+- La banque des versions attributs de l’extraction à l’utilisateur approprié.  
   
--   La date et heure de l’extraction est correct (selon les paramètres de l’utilisateur).  
+- La date et heure de l’extraction est correct (selon les paramètres de l’utilisateur).  
   
--   La copie locale du fichier cible ou du dossier est accessible en écriture.  
+- La copie locale du fichier cible ou du dossier est accessible en écriture.  
   
 |Action|Étapes de test|Résultats attendus pour vérifier|  
 |------------|----------------|--------------------------------|  
@@ -124,9 +124,9 @@ Cette zone de test plug-in de contrôle de code source comporte articles de modi
   
 #### <a name="expected-behavior"></a>Comportement attendu  
   
--   La valeur par défaut est basé sur l’utilisateur **extraire la Version locale** paramètre. Si l’utilisateur a choisi d’extraire la version locale, la valeur par défaut pour l’annulation de l’extraction est toujours revenir à la version extraite.  
+- La valeur par défaut est basé sur l’utilisateur **extraire la Version locale** paramètre. Si l’utilisateur a choisi d’extraire la version locale, la valeur par défaut pour l’annulation de l’extraction est toujours revenir à la version extraite.  
   
--   Après l’acceptation de la restauration, les icônes dans **l’Explorateur de solutions** sont mises à jour d’affectée fichiers et l’élément est supprimé de la **archivages en attente** fenêtre.  
+- Après l’acceptation de la restauration, les icônes dans **l’Explorateur de solutions** sont mises à jour d’affectée fichiers et l’élément est supprimé de la **archivages en attente** fenêtre.  
   
 |Action|Étapes de test|Résultats attendus pour vérifier|  
 |------------|----------------|--------------------------------|  

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 241416a8c874a131b4c766bc0a707019d9ea12f1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9f5788b2c6b2dab4b6f0f7a6c520aa1f2ab5f9ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946155"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844613"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Procédure pas à pas : Créer une boule de billard 3D réaliste
 
@@ -23,11 +23,11 @@ Cette procédure pas à pas montre comment créer une boule de billard 3D réali
 
 Pour exécuter cette procédure pas à pas, vous aurez besoin des composants et compétences suivants :
 
--   Un outil d’assemblage de textures dans un mappage de cube, tel que l’outil de texture DirectX fourni avec le SDK DirectX de juin 2010.
+- Un outil d’assemblage de textures dans un mappage de cube, tel que l’outil de texture DirectX fourni avec le SDK DirectX de juin 2010.
 
--   Une bonne connaissance de l’Éditeur d’images dans Visual Studio
+- Une bonne connaissance de l’Éditeur d’images dans Visual Studio
 
--   Une bonne connaissance du concepteur Shader dans Visual Studio
+- Une bonne connaissance du concepteur Shader dans Visual Studio
 
 ## <a name="create-the-basic-appearance-with-shape-and-texture"></a>Créer l’apparence de base avec une forme et une texture
 

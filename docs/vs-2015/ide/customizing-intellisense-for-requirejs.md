@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5bcf5f27653782d0280082713306e142702559c8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ce0aadf455e95895309bbae4f23eb84c75935428
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770315"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049865"
 ---
 # <a name="customizing-intellisense-for-requirejs"></a>Personnalisation d'IntelliSense pour RequireJS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ Grâce à Visual Studio 2013 Update 4, le fichier RequireJS JavaScript et le c
   
  Cette rubrique explique comment :  
   
--   Personnaliser RequireJS dans les projets ASP.NET  
+- Personnaliser RequireJS dans les projets ASP.NET  
   
--   Personnaliser RequireJS dans les projets JSProj, qui sont utilisés pour créer des applications Apache Cordova, des applications du Windows Store et des applications HTML LightSwitch.  
+- Personnaliser RequireJS dans les projets JSProj, qui sont utilisés pour créer des applications Apache Cordova, des applications du Windows Store et des applications HTML LightSwitch.  
   
 ## <a name="customize-requirejs-in-aspnet-projects"></a>Personnaliser RequireJS dans les projets ASP.NET  
  La prise en charge de RequireJS est automatiquement activée quand un fichier nommé require.js est référencé par le fichier JavaScript actif (pour plus d'informations, voir la section « Détermination du contexte IntelliSense » dans [JavaScript IntelliSense](../ide/javascript-intellisense.md)). Dans les projets ASP.NET, le référencement de require.js est généralement effectué à l'aide d'une directive /// \<reference/> dans un fichier _references.js.  
@@ -46,7 +46,7 @@ Grâce à Visual Studio 2013 Update 4, le fichier RequireJS JavaScript et le c
 ```  
   
 ### <a name="configure-the-application-start-page-in-an-aspnet-project"></a>Configurer la page de démarrage d'une application dans un projet ASP.NET  
- Lorsque l’application s’exécute, RequireJS suppose que relatif chemins d’accès aux fichiers (par exemple, «.. \\«) sont relatifs au fichier HTML qui a chargé la bibliothèque require.js. Lorsque vous écrivez du code dans l’éditeur Visual Studio pour un projet ASP.NET, cette page de démarrage est inconnue. Vous devrez donc indiquer à l’éditeur quelle page de démarrage utiliser lors de l’utilisation de chemins d’accès relatifs. Pour ce faire, ajoutez un attribut `start-page` à votre directive /// \<reference/>.  
+ Lorsque l’application s’exécute, RequireJS suppose que relatif chemins d’accès aux fichiers (par exemple, «.. \\«) sont relatifs au fichier HTML qui a chargé la bibliothèque require.js. Lorsque vous écrivez du code dans l'éditeur Visual Studio pour un projet ASP.NET, cette page de démarrage est inconnue. Vous devrez donc indiquer à l'éditeur quelle page de démarrage utiliser lors de l'utilisation de chemins d'accès relatifs. Pour ce faire, ajoutez un attribut `start-page` à votre directive /// \<reference/>.  
   
 ```javascript  
 /// <reference path="js/require.js" data-main="js/app.js" start-page="/app/index.html" />  
@@ -57,7 +57,7 @@ Grâce à Visual Studio 2013 Update 4, le fichier RequireJS JavaScript et le c
 ## <a name="customize-requirejs-in-jsproj-projects"></a>Personnaliser RequireJS dans les projets JSProj  
  Les projets JSProj (les fichiers de projet se terminant par une extension .jsproj) sont utilisés lors de la création d'applications Apache Cordova, d'applications HTML du Windows Store ou d'applications HTML LightSwitch. Contrairement aux projets ASP.NET, ces projets lisent les références aux fichiers .js à partir des fichiers HTML présents dans le projet. Par conséquent, quand vous modifierez du code JavaScript dans un projet JSProj, vous verrez que la prise en charge de RequireJS est activée si le fichier JavaScript en cours de modification est référencé dans un autre fichier HTML qui référence également require.js.  
   
- Les étapes de personnalisation requises pour les projets ASP.NET ne sont pas nécessaires dans un fichier de projet JSProj. C'est-à-dire que les fichiers de script utilisés par l'attribut `data-main` dans la balise de script qui fait référence à require.js sont chargés automatiquement pour configurer require.js. Le fichier HTML qui référence require.js est également utilisé comme page de démarrage de l'application.  
+ Les étapes de personnalisation requises pour les projets ASP.NET ne sont pas nécessaires dans un fichier de projet JSProj. C’est-à-dire que les fichiers de script utilisés par l’attribut `data-main` dans l’étiquette de script qui fait référence à require.js sont chargés automatiquement pour configurer require.js. Le fichier HTML qui référence require.js est également utilisé comme page de démarrage de l'application.  
   
 ## <a name="see-also"></a>Voir aussi  
  [JavaScript IntelliSense](../ide/javascript-intellisense.md)

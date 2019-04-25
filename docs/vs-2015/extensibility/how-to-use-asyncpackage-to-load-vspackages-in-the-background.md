@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
 caps.latest.revision: 9
 ms.author: gregvanl
-ms.openlocfilehash: 7de79fbbd5221a75bec1e168c22e687ddc9c7ffa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f59838913ed3f9bc6679336393f6db9181291e3d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949511"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091666"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Procédure : Utiliser AsyncPackage pour charger des VSPackages en arrière-plan
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,11 +75,11 @@ public sealed class TestPackage : AsyncPackage
 ## <a name="convert-an-existing-vspackage-to-asyncpackage"></a>Convertir un VSPackage existant AsyncPackage  
  La majorité du travail est identique à la création d’un nouveau **AsyncPackage**. Vous devez suivre les étapes 1 à 5 ci-dessus. Vous devez également prendre une attention supplémentaire sur les éléments suivants :  
   
-1.  N’oubliez pas de supprimer le **initialiser** remplacement que vous aviez dans votre package.  
+1. N’oubliez pas de supprimer le **initialiser** remplacement que vous aviez dans votre package.  
   
-2.  Éviter les blocages : Il peut être masqué RPC dans votre code qui se produisent maintenant sur un thread d’arrière-plan. Vous devez vous assurer que si vous effectuez un appel RPC (par exemple, **GetService**), vous devez soit (1) Basculer vers le thread principal ou (2) utilisez la version asynchrone de l’API s’il existe (par exemple, **GetServiceAsync**).  
+2. Éviter les blocages : Il peut être masqué RPC dans votre code qui se produisent maintenant sur un thread d’arrière-plan. Vous devez vous assurer que si vous effectuez un appel RPC (par exemple, **GetService**), vous devez soit (1) Basculer vers le thread principal ou (2) utilisez la version asynchrone de l’API s’il existe (par exemple, **GetServiceAsync**).  
   
-3.  Ne basculez pas entre les threads trop fréquemment. Essayez de localiser le travail qui peut se produire dans un thread d’arrière-plan. Cela réduit le temps de chargement.  
+3. Ne basculez pas entre les threads trop fréquemment. Essayez de localiser le travail qui peut se produire dans un thread d’arrière-plan. Cela réduit le temps de chargement.  
   
 ## <a name="querying-services-from-asyncpackage"></a>Interrogation des Services à partir de AsyncPackage  
  Un **AsyncPackage** peut ou ne peut pas charger de façon asynchrone en fonction de l’appelant. Par exemple,  

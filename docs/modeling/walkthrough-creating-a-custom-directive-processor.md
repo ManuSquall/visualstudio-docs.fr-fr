@@ -13,12 +13,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: e5745f917749e29855dd244646ba13a2bbc26942
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 661d8670f857240fdd4ed7714ca389c851d83601
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195123"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649106"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>Procédure pas à pas : Créer un processeur de directive personnalisé
 
@@ -654,7 +654,6 @@ Dans cette section, vous ajoutez au Registre une clé pour votre processeur de d
 
      Votre clé de Registre doit avoir les valeurs suivantes :
 
-
    | Name | Type | Données |
    |-|-|-|
    | (Default) | REG_SZ | (valeur non définie) |
@@ -663,13 +662,11 @@ Dans cette section, vous ajoutez au Registre une clé pour votre processeur de d
 
      Si vous avez placé l'assembly dans le GAC, les valeurs doivent se présenter comme suit :
 
-
    | Name | Type | Données |
    |-|-|-|
    | (Default) | REG_SZ | (valeur non définie) |
    | Classe | REG_SZ | CustomDP.CustomDirectiveProcessor |
    | Assembly | REG_SZ | CustomDP.dll |
-
 
 6. Redémarrez Visual Studio.
 

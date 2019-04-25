@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 141bf63a3cf64cfb1e3576f76512351b496a2778
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8572deb32ea5fab2ce8ad831deeaba783496cbc5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755036"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104328"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ Vous pouvez installer et afficher le contenu de divers produits et technologies 
   
  Vous pouvez effectuer les opérations suivantes :  
   
--   Rechercher et télécharger des ensembles de contenu, aussi appelés livres.  
+- Rechercher et télécharger des ensembles de contenu, aussi appelés livres.  
   
--   Parcourir la table des matières pour rechercher des rubriques par titre.  
+- Parcourir la table des matières pour rechercher des rubriques par titre.  
   
--   Rechercher des sujets dans l'index.  
+- Rechercher des sujets dans l'index.  
   
--   Trouver des informations à l'aide de la recherche en texte intégral.  
+- Trouver des informations à l'aide de la recherche en texte intégral.  
   
--   Afficher, imprimer des rubriques et leur ajouter des signets.  
+- Afficher, imprimer des rubriques et leur ajouter des signets.  
   
 ## <a name="navigating-the-help-viewer"></a>Navigation dans la visionneuse d'aide  
  Vous pouvez rechercher des informations dans le contenu installé à l’aide des onglets de navigation, afficher le contenu installé sous le ou les onglets de la rubrique et gérer le contenu avec l’onglet **Gérer le contenu**. Vous pouvez également effectuer d’autres tâches en utilisant les boutons de la barre d’outils et rechercher des informations supplémentaires en bas à droite de la fenêtre.  
@@ -54,7 +54,7 @@ Vous pouvez installer et afficher le contenu de divers produits et technologies 
 |-|-|  
 |Navigation|Sous l’onglet **Contenu**, vous pouvez afficher le contenu installé sous forme de hiérarchie et spécifier des critères pour filtrer les titres qui apparaissent.<br /><br /> Sous l’onglet **Recherche**, vous pouvez rechercher des termes n’importe où dans le contenu, y compris dans les titres de rubrique et le code.<br /><br /> Sous l’onglet **Index**, vous pouvez rechercher dans l’index, spécifier des critères pour filtrer les entrées et rechercher les entrées d’index contenant ou commençant par du texte que vous spécifiez.<br /><br /> Sous l’onglet **Favoris**, vous pouvez enregistrer des liens vers des rubriques que vous utilisez fréquemment, et vous pouvez afficher une liste de rubriques que vous avez récemment consultées.|  
 |Affichage des rubriques|Chaque rubrique apparaît dans un onglet, et vous pouvez ouvrir plusieurs rubriques en même temps.|  
-|Gestion du contenu|Vous pouvez installer, mettre à jour, déplacer et supprimer du contenu sous l’onglet **Gérer le contenu**. En haut de l’onglet, le contrôle **Source d’installation** vous permet de spécifier si vous voulez installer les livres à partir d’un emplacement réseau ou d’un disque ou un URI. La zone **Chemin d’accès au stockage local** indique l’emplacement où sont installés les livres sur l’ordinateur local. Vous pouvez les déplacer vers un autre emplacement à l’aide du bouton **Déplacer**.<br /><br /> La liste de contenu indique quels sont les livres que vous pouvez installer ou avez déjà installés, si une mise à jour est disponible et quelle est la taille de chaque livre. Vous pouvez installer ou supprimer un ou plusieurs livres en choisissant les liens **Ajouter** ou **Supprimer**, puis le bouton **Mettre à jour** du volet **Modifications en attente**. Si des mises à jour sont disponibles pour un livre que vous avez déjà installé, vous pouvez actualiser ce contenu en choisissant le lien **Cliquez ici pour télécharger** en bas de la fenêtre. Par ailleurs, tous les livres installés sont actualisés si des mises à jour sont disponibles au moment où vous installez des livres supplémentaires. **Remarque :** Les fonctionnalités de l’onglet **Gérer le contenu** peuvent varier si l’administrateur de la visionneuse d’aide désactive ces fonctionnalités, ou si aucun accès Internet n’est disponible.|  
+|Gestion du contenu|Vous pouvez installer, mettre à jour, déplacer et supprimer du contenu sous l’onglet **Gérer le contenu**. En haut de l’onglet, le contrôle **Source d’installation** vous permet de spécifier si vous voulez installer les livres à partir d’un emplacement réseau ou d’un disque ou un URI. La zone **Chemin d’accès au stockage local** indique l’emplacement où sont installés les livres sur l’ordinateur local. Vous pouvez les déplacer vers un autre emplacement à l’aide du bouton **Déplacer**.<br /><br /> La liste de contenu indique quels sont les livres que vous pouvez installer ou avez déjà installés, si une mise à jour est disponible et quelle est la taille de chaque livre. Vous pouvez installer ou supprimer un ou plusieurs livres en choisissant les liens **Ajouter** ou **Supprimer**, puis le bouton **Mettre à jour** du volet **Modifications en attente**. Si des mises à jour sont disponibles pour un livre que vous avez déjà installé, vous pouvez actualiser ce contenu en choisissant le lien **Cliquez ici pour télécharger** en bas de la fenêtre. Par ailleurs, tous les livres installés sont actualisés si des mises à jour sont disponibles au moment où vous installez des livres supplémentaires. **Remarque :**  Les fonctionnalités de l’onglet **Gérer le contenu** peuvent varier si l’administrateur Help Viewer désactive ces fonctionnalités, ou si aucun accès Internet n’est disponible.|  
   
  La barre d'outils de la fenêtre de la visionneuse d'aide contient les boutons suivants :  
   

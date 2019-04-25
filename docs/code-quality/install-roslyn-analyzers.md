@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2b1859d422b0f3a76947a64e754521efcda46e65
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.openlocfilehash: 1afeb6f75648ce2ab1687fa9262ab28b658b0d70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57982933"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077808"
 ---
 # <a name="install-net-compiler-platform-analyzers"></a>Installer les analyseurs .NET Compiler Platform
 
@@ -24,14 +24,14 @@ Visual Studio inclut un ensemble principal de .NET Compiler Platform (*Roslyn*) 
 
 ## <a name="to-install-nuget-analyzer-packages"></a>Pour installer les packages NuGet analyzer
 
-1. Recherchez le package à installer sur www.nuget.org de l’analyseur. Par exemple, vous souhaiterez [installer les analyseurs Microsoft FxCop](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package) pour vérifier votre code pour les problèmes de sécurité et de performances, entre autres.
+1. Recherchez le package à installer sur www.nuget.org de l’analyseur.
+
+   Par exemple, vous souhaiterez [installer les analyseurs Microsoft FxCop](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package) pour vérifier votre code pour les problèmes de sécurité et de performances, entre autres. Ou bien, installez [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/) pour rechercher des problèmes de style dans votre code base.
 
 2. Installez le package dans Visual Studio, à l’aide la [Console du Gestionnaire de Package](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) ou [Package Manager UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console).
 
    > [!NOTE]
    > La page www.nuget.org pour chaque package de l’analyseur vous montre la commande Coller dans le **Console du Gestionnaire de Package**. Il existe même un bouton pratique pour copier le texte dans le Presse-papiers.
-   >
-   > ![Page NuGet.org affichant la commande de Console du Gestionnaire de Package](media/nuget-install-command.png)
 
    Les assemblys de l’analyseur sont installés et s’affichent dans **l’Explorateur de solutions** sous **références** > **analyseurs**.
 

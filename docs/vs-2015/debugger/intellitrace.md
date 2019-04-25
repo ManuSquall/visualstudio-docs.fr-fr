@@ -22,12 +22,12 @@ caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 28e1a926800bcd4c63bdc83336fbba41c38579eb
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: c9097a8c067ce4e04dd54f879a6c1388f854d7ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001519"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079303"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Vous pouvez consacrer moins de temps au débogage de votre application quand vou
 |**Collecter des données IntelliTrace à partir d'applications déployées**|-   [Utilisation du collecteur autonome IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)|  
 |**Démarrer le débogage à partir d'un fichier journal IntelliTrace (fichier .iTrace).**|-   [Utilisation des données IntelliTrace enregistrées](../debugger/using-saved-intellitrace-data.md)|  
   
-##  <a name="IntelliTraceSupport"></a>Quelles applications peuvent être déboguées à l'aide d'IntelliTrace ?  
+## <a name="IntelliTraceSupport"></a>Quelles applications peuvent être déboguées à l'aide d'IntelliTrace ?  
   
 |||  
 |-|-|  
@@ -64,7 +64,7 @@ Vous pouvez consacrer moins de temps au débogage de votre application quand vou
 > [!NOTE]
 >  Si vous souhaitez déboguer un processus qui est déjà en cours d'exécution, vous ne pouvez pas utiliser IntelliTrace. Vous devez démarrer IntelliTrace lorsque le processus commence.  
   
-##  <a name="IntelliTraceVSTraditional"></a> Pourquoi déboguer à l'aide d'IntelliTrace ?  
+## <a name="IntelliTraceVSTraditional"></a> Pourquoi déboguer à l'aide d'IntelliTrace ?  
  Qu'il soit traditionnel ou *en direct*, le débogage affiche uniquement l'état actuel de votre application avec des données limitées sur les événements passés. Vous devez déduire ces événements en fonction de l'état actuel de l'application ou recréer ces événements en réexécutant votre application.  
   
  IntelliTrace développe cette expérience de débogage traditionnel en enregistrant les événements et les données spécifiques à ces instants donnés dans le temps. Cela vous permet de voir ce qui s'est produit dans votre application sans la redémarrer, surtout si vous avez dépassé l'emplacement où se trouve le bogue. IntelliTrace est activé par défaut pendant un débogage traditionnel et collecte les données automatiquement et de façon invisible. Cela vous permet de basculer facilement entre le débogage traditionnel et le débogage IntelliTrace pour consulter les informations enregistrées. Voir [les fonctionnalités IntelliTrace](../debugger/intellitrace-features.md) et [les données IntelliTrace collecte ?](#WhatData)  
@@ -101,7 +101,7 @@ Vous pouvez consacrer moins de temps au débogage de votre application quand vou
   
    Cela est utile lorsque vous souhaitez diagnostiquer les problèmes liés aux applications du déploiement. Consultez [à l’aide du collecteur autonome IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).  
   
-##  <a name="WhatData"></a> Quelles sont les données collectées par IntelliTrace ?  
+## <a name="WhatData"></a> Quelles sont les données collectées par IntelliTrace ?  
  **Collecte des informations sur les événements**  
   
  Par défaut, IntelliTrace enregistre uniquement les événements IntelliTrace : événements de débogueur, exceptions, événements .NET Framework et autres événements système qui peuvent vous aider lors d'un débogage. Déterminez le type d'événements qu'IntelliTrace doit collecter, à l'exception des événements et des exceptions du débogueur, qui sont collectés systématiquement. Consultez [configurer IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
@@ -112,27 +112,27 @@ Vous pouvez consacrer moins de temps au débogage de votre application quand vou
   
    Pour améliorer les performances, IntelliTrace n'enregistre pas toutes les valeurs possibles pour un événement du débogueur. En revanche, il enregistre les valeurs suivantes :  
   
-  -   Valeurs de la fenêtre **Variables locales**. Gardez la fenêtre **Variables locales** ouverte pour afficher ces valeurs.  
+  - Valeurs de la fenêtre **Variables locales**. Gardez la fenêtre **Variables locales** ouverte pour afficher ces valeurs.  
   
-  -   Valeurs dans la fenêtre **Automatique** uniquement si **elle** est ouverte  
+  - Valeurs dans la fenêtre **Automatique** uniquement si **elle** est ouverte  
   
-  -   Valeurs situées dans DataTips qui apparaissent lorsque vous déplacez le pointeur de la souris au-dessus d'une variable dans la fenêtre source pour afficher sa valeur. IntelliTrace ne collecte pas de valeurs dans les DataTips épinglés.  
+  - Valeurs situées dans DataTips qui apparaissent lorsque vous déplacez le pointeur de la souris au-dessus d'une variable dans la fenêtre source pour afficher sa valeur. IntelliTrace ne collecte pas de valeurs dans les DataTips épinglés.  
   
 - **Exceptions**  
   
    IntelliTrace enregistre le type et le message d'exception pour ces types d'exceptions :  
   
-  -   Exceptions traitées où l'exception est levée et interceptée  
+  - Exceptions traitées où l'exception est levée et interceptée  
   
-  -   Exceptions non traitées  
+  - Exceptions non traitées  
   
 - **Événements .NET Framework**  
   
    Par défaut, IntelliTrace enregistre les événements .NET Framework les plus courants. Exemple :  
   
-  -   Pour un événement d'accès au fichier, IntelliTrace collecte le nom de fichier.  
+  - Pour un événement d'accès au fichier, IntelliTrace collecte le nom de fichier.  
   
-  -   Pour un événement de case à cocher, IntelliTrace collecte l'état et le texte de la case à cocher.  
+  - Pour un événement de case à cocher, IntelliTrace collecte l'état et le texte de la case à cocher.  
   
 - **Événements d'application SharePoint 2010 et SharePoint 2013**  
   
@@ -142,11 +142,11 @@ Vous pouvez consacrer moins de temps au débogage de votre application quand vou
   
    Consultez :  
   
-  -   [Utilisation du collecteur autonome IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)  
+  - [Utilisation du collecteur autonome IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md)  
   
-  -   [Utilisation des données IntelliTrace enregistrées](../debugger/using-saved-intellitrace-data.md)  
+  - [Utilisation des données IntelliTrace enregistrées](../debugger/using-saved-intellitrace-data.md)  
   
-  -   [Procédure pas à pas : Débogage d’une Application SharePoint à l’aide d’IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
+  - [Procédure pas à pas : Débogage d’une Application SharePoint à l’aide d’IntelliTrace](http://msdn.microsoft.com/library/4bd80d2f-f680-4bf4-81c3-f14e8185f6a4)  
   
   **Collecte des informations sur les appels de fonction**  
   
@@ -169,7 +169,7 @@ Vous pouvez consacrer moins de temps au débogage de votre application quand vou
   
  Pour contrôler la quantité d'informations sur les appels qu'IntelliTrace collecte, spécifiez uniquement les modules qui vous intéressent. Cela peut améliorer les performances de votre application pendant la collecte. Consultez [configurer IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   
-##  <a name="AffectPerformance"></a> Mon application peut-elle être ralentie par IntelliTrace ?  
+## <a name="AffectPerformance"></a> Mon application peut-elle être ralentie par IntelliTrace ?  
  Par défaut, IntelliTrace collecte uniquement les données des événements IntelliTrace sélectionnés. Votre application peut être ralentie ou non, en fonction de la structure et de l'organisation de votre code. Par exemple, si IntelliTrace enregistre souvent un événement, cela peut ralentir votre application. Cela peut aussi vous inciter à refactoriser votre application.  
   
  La collecte d'informations sur les appels peut ralentir votre application de manière significative. Cela peut également augmenter la taille des fichiers journaux IntelliTrace (.iTrace) que vous enregistrez sur le disque. Pour minimiser ces effets, collectez des informations sur les appels uniquement pour les modules qui vous intéressent.  Pour modifier la taille maximale de vos fichiers .iTrace, accédez à **Outils**, **Options**, **IntelliTrace**, **Avancé**. Consultez [configurer IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  

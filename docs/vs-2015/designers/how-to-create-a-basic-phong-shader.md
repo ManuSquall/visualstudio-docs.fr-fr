@@ -9,36 +9,36 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d5e4f1916fb7bfc0672efeddaac5e632692f92f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 78ff2ecf77d3d8943601b8bd0779fa37811ec2d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787328"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113753"
 ---
-# <a name="how-to-create-a-basic-phong-shader"></a>Comment : créer un nuanceur Phong de base
+# <a name="how-to-create-a-basic-phong-shader"></a>Procédure : Créer un nuanceur Phong de base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ce document indique comment utiliser le concepteur de nuanceur et DGSL (Directed Graph Shader Language) pour créer un nuanceur d’éclairage implémentant le modèle d’éclairage Phong classique.  
   
  Ce document illustre ces activités :  
   
--   Ajout de nœuds à un graphique de nuanceur  
+- Ajout de nœuds à un graphique de nuanceur  
   
--   Déconnexion de nœuds  
+- Déconnexion de nœuds  
   
--   Connexion de nœuds  
+- Connexion de nœuds  
   
 ## <a name="the-phong-lighting-model"></a>Modèle d’éclairage Phong  
  Le modèle d’éclairage Phong étend le modèle d’éclairage Lambert pour inclure une mise en surbrillance spéculaire, ce qui simule les propriétés de reflet d’une surface. Le composant spéculaire fournit un éclairage supplémentaire provenant des mêmes sources de lumière directionnelle que celles qui sont utilisées dans le modèle d’éclairage Lambert, mais sa contribution à la couleur finale est traitée différemment. L’éclairage spéculaire affecte différemment chaque surface de la scène, en fonction de la relation entre la direction de l’affichage, la direction des sources de lumière et l’orientation de la surface. Il s’agit d’un produit de la couleur spéculaire, de la puissance spéculaire, de l’orientation de la surface, et de la couleur, de l’intensité et de la direction des sources de lumière. Les surfaces qui reflètent directement la source de lumière à la visionneuse reçoivent la contribution spéculaire maximale, tandis que celles qui reflètent la source de lumière distante de la visionneuse ne reçoivent aucune contribution. Dans le modèle d’éclairage Phong, un ou plusieurs composants spéculaires sont combinés pour déterminer la couleur et l’intensité de la mise en surbrillance spéculaire de chaque point de l’objet. Ils sont ensuite ajoutés au résultat du modèle d’éclairage Lambert pour produire la couleur finale du pixel.  
   
- Pour plus d’informations sur le modèle d’éclairage Lambert, consultez l’article [Comment : créer un nuanceur Lambert de base](../designers/how-to-create-a-basic-lambert-shader.md).  
+ Pour plus d’informations sur le modèle d’éclairage Lambert, consultez [Guide pratique pour Créer un nuanceur Lambert de base](../designers/how-to-create-a-basic-lambert-shader.md).  
   
  Avant de commencer, assurez-vous que la fenêtre **Propriétés** et la **Boîte à outils** sont affichées.  
   
 #### <a name="to-create-a-phong-shader"></a>Pour créer un nuanceur Phong  
   
-1. Créez un nuanceur Lambert, en suivant la description de l’article [Comment : créer un nuanceur Lambert de base](../designers/how-to-create-a-basic-lambert-shader.md).  
+1. Créez un nuanceur Lambert en suivant les étapes décrites dans [Guide pratique pour Créer un nuanceur Lambert de base](../designers/how-to-create-a-basic-lambert-shader.md).  
   
 2. Déconnectez le nœud **Lambert** du nœud **Couleur finale**. Choisissez le terminal **RVB** du nœud **Lambert**, puis choisissez **Rompre les liaisons**. Le nœud ajouté à l'étape suivante bénéficie ainsi d'un espace supplémentaire.  
   
@@ -72,7 +72,7 @@ Ce document indique comment utiliser le concepteur de nuanceur et DGSL (Directed
   
 ## <a name="see-also"></a>Voir aussi  
  [Guide pratique pour Appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
- [Comment : exporter un nuanceur](../designers/how-to-export-a-shader.md)   
- [Comment : créer un nuanceur Lambert de base](../designers/how-to-create-a-basic-lambert-shader.md)   
+ [Guide pratique pour Exporter un nuanceur](../designers/how-to-export-a-shader.md)   
+ [Guide pratique pour Créer un nuanceur Lambert de base](../designers/how-to-create-a-basic-lambert-shader.md)   
  [Concepteur de nuanceur](../designers/shader-designer.md)   
  [Nœuds du concepteur Shader](../designers/shader-designer-nodes.md)

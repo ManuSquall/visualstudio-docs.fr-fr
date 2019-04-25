@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 384b5dca1da11a430036cce2536e6859f3e98f94
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: a5cf348b06bca6127690c7b5a7301881bdf75078
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868089"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59504144"
 ---
 # <a name="debugging-managed-code"></a>Débogage du code managé
 
@@ -38,7 +38,7 @@ Décrit des assertions en code managé, qui testent les conditions que vous spé
 [Instructions Stop en Visual Basic](../debugger/stop-statements-in-visual-basic.md)\
 Décrit l'instruction `Stop`, qui propose une alternative à la définition d'un point d'arrêt. Un exemple de code, ainsi que les comparaisons entre les instructions `Stop` et `End` et les instructions `Stop` et `Assert` sont également fournis.
 
-[Procédure pas à pas : débogage d’un Windows Form](../debugger/walkthrough-debugging-a-windows-form.md)\
+[Procédure pas à pas : Débogage d’un formulaire Windows](../debugger/walkthrough-debugging-a-windows-form.md)\
 Fournit des instructions étape par étape pour créer un Windows Form et le déboguer. Un Windows Form, composant standard d'une application Windows managée, est l'une des applications managées les plus courantes. Cette procédure pas à pas utilise Visual C# et Visual Basic, mais les techniques de création d'un formulaire Windows avec C++ sont généralement similaires.
 
 [Débogage de la méthode OnStart](../debugger/how-to-debug-the-onstart-method.md)\
@@ -47,7 +47,7 @@ Fournit des exemples de code pour vous permettre de déboguer la méthode `OnSta
 [Débogage en mode mixte](../debugger/debugging-mixed-mode-applications.md)\
 Présente les applications de débogage en mode mixte. Désigne toutes les applications qui combinent du code natif avec du code managé.
 
-[Erreur : le débogage est impossible, car un débogueur du noyau est activé sur le système](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
+[Erreur : Le débogage n’est pas possible, car un débogueur du noyau est activé sur le système](../debugger/error-debugging-isn-t-possible-because-a-kernel-debugger-is-enabled-on-the-system.md)\
 Décrit le message d'erreur qui s'affiche si vous tentez de déboguer du code managé sur un système [!INCLUDE[win7](../debugger/includes/win7_md.md)], [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)], [!INCLUDE[winxp](../code-quality/includes/winxp_md.md)], [!INCLUDE[Win2kFamily](../code-quality/includes/win2kfamily_md.md)] ou Windows NT qui a été démarré en mode débogage.
 
 [Optimisation JIT et débogage](../debugger/jit-optimization-and-debugging.md)\
@@ -56,7 +56,7 @@ Décrit les effets de l'optimisation JIT sur le débogage.
 [Débogage LINQ et DLINQ](../debugger/debugging-linq.md)\
 Décrit les techniques de débogage des requêtes LINQ.
 
-[Procédure pas à pas : Déboguer une application parallèle](../debugger/walkthrough-debugging-a-parallel-application.md)\
+[Procédure pas à pas : Débogage d’une Application parallèle](../debugger/walkthrough-debugging-a-parallel-application.md)\
 Explique comment utiliser les fenêtres **Tâches parallèles** et **Piles parallèles** pour déboguer une application parallèle.
 
 ## <a name="related-sections"></a>Rubriques connexes
@@ -79,12 +79,9 @@ Décrit le débogage des applications .NET Framework et les exigences de config
 [Débogage de scripts et d'applications web](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications)\
 Décrit les problèmes et techniques de débogage courants relatifs au débogage de scripts et d'applications Web.
 
-[Débogage de la page d'accueil](../debugger/debugger-feature-tour.md)\
-Fournit des liens vers des sections plus vastes de la documentation relative au débogage. Les informations présentées sont les suivantes : nouveautés du débogueur, paramètres et préparation, points d'arrêt, gestion des exceptions, fonctionnalité Modifier &amp; Continuer, débogage de code managé, débogage de projets Visual C++, débogage COM et ActiveX, débogage de DLL, débogage SQL et les références relatives à l'interface utilisateur.
-
 ## <a name="see-also"></a>Voir aussi
 
-- [Procédure pas à pas : Débogage des contrôles personnalisés Windows Forms au moment du Design](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
+- [Procédure pas à pas : Déboguer des contrôles personnalisés Windows Forms au moment du Design](/dotnet/framework/winforms/controls/walkthrough-debugging-custom-windows-forms-controls-at-design-time)
 - [Sécurité du débogueur](../debugger/debugger-security.md)
 - [Débogage dans Visual Studio](../debugger/index.md)
 - [Présentation du débogueur](../debugger/debugger-feature-tour.md)

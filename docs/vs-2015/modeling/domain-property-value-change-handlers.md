@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ad8cc11947bdaa99fa7d3ee1d48576896859e598
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 500364d42c3c47b471102deee8f95193648183b8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59001036"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095631"
 ---
 # <a name="domain-property-value-change-handlers"></a>Gestionnaire de modification de la valeur de propriété du domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,15 +55,15 @@ public partial class Comment
   
  Notez les points suivants concernant les gestionnaires de propriétés :  
   
--   Les méthodes de gestionnaires de propriétés sont appelées à la fois quand l'utilisateur modifie une propriété de domaine et quand du code de programme assigne une valeur différente à la propriété.  
+- Les méthodes de gestionnaires de propriétés sont appelées à la fois quand l'utilisateur modifie une propriété de domaine et quand du code de programme assigne une valeur différente à la propriété.  
   
--   Les méthodes sont appelées uniquement quand la valeur change. Le gestionnaire n'est pas appelé si du code de programme assigne une valeur qui est égale à la valeur actuelle.  
+- Les méthodes sont appelées uniquement quand la valeur change. Le gestionnaire n'est pas appelé si du code de programme assigne une valeur qui est égale à la valeur actuelle.  
   
--   Les propriétés de domaine de stockage personnalisées et calculées n'ont pas de méthodes OnValueChanged et OnValueChanging.  
+- Les propriétés de domaine de stockage personnalisées et calculées n'ont pas de méthodes OnValueChanged et OnValueChanging.  
   
--   Vous ne pouvez pas utiliser un gestionnaire de modification pour modifier la nouvelle valeur. Pour cela, par exemple si vous souhaitez restreindre la valeur à une plage spécifique, définissez une `ChangeRule`.  
+- Vous ne pouvez pas utiliser un gestionnaire de modification pour modifier la nouvelle valeur. Pour cela, par exemple si vous souhaitez restreindre la valeur à une plage spécifique, définissez une `ChangeRule`.  
   
--   Vous ne pouvez pas ajouter un gestionnaire de modification à une propriété qui représente un rôle d'une relation. Au lieu de cela, définissez une `AddRule` et une `DeleteRule` sur la classe de relation. Ces règles sont déclenchées quand les liens sont créés ou modifiés. Pour plus d’informations, consultez [propager les modifications dans le modèle de règles](../modeling/rules-propagate-changes-within-the-model.md).  
+- Vous ne pouvez pas ajouter un gestionnaire de modification à une propriété qui représente un rôle d'une relation. Au lieu de cela, définissez une `AddRule` et une `DeleteRule` sur la classe de relation. Ces règles sont déclenchées quand les liens sont créés ou modifiés. Pour plus d’informations, consultez [propager les modifications dans le modèle de règles](../modeling/rules-propagate-changes-within-the-model.md).  
   
 ### <a name="changes-in-and-out-of-the-store"></a>Modifications dans le magasin  
  Les méthodes de gestionnaires de propriétés sont appelées dans la transaction ayant initié la modification. Ainsi, vous pouvez apporter d'autres modifications dans le magasin sans ouvrir de nouvelle transaction. Vos modifications peuvent avoir comme conséquence des appels de gestionnaires supplémentaires.  

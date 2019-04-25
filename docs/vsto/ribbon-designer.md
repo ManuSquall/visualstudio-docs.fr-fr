@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f923c4762a78f43d2d9b1ba3df990c148a074e68
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 8cc47445f9d2024f5d8a83c8f376bc0299b8ea4e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867258"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103639"
 ---
 # <a name="ribbon-designer"></a>Concepteur de ruban
   Le Concepteur de ruban est une zone de conception visuelle. Utilisez le Concepteur de ruban pour ajouter des onglets, groupes et contrôles personnalisés au ruban d’une application Microsoft Office.
@@ -40,11 +40,11 @@ ms.locfileid: "54867258"
 
  Pour ouvrir le Concepteur de ruban, ajoutez un **ruban (Concepteur visuel)** élément à votre projet. Vous pouvez ensuite utiliser les outils de conception pour les tâches suivantes :
 
--   [Concevoir la disposition du ruban](#DesigningRibbonLayout)
+- [Concevoir la disposition du ruban](#DesigningRibbonLayout)
 
--   [Gérer les événements et définir les propriétés de contrôle](#HandleEventsSetProperties)
+- [Gérer les événements et définir les propriétés de contrôle](#HandleEventsSetProperties)
 
--   [Ajouter des contrôles au mode Backstage](#CustomizingMicrosoftOfficeButton)
+- [Ajouter des contrôles au mode Backstage](#CustomizingMicrosoftOfficeButton)
 
 > [!NOTE]
 >  Il existe certaines tâches que vous ne pouvez pas accomplir à l’aide du Concepteur de ruban. Pour plus d’informations sur ces tâches et comment vous pouvez les réaliser, consultez [vue d’ensemble du ruban](../vsto/ribbon-overview.md).
@@ -64,7 +64,7 @@ ms.locfileid: "54867258"
 
   Si vous avez déjà un **ruban (Concepteur visuel)** élément à partir d’un autre projet, vous pouvez le réutiliser dans votre projet actuel à l’aide de la **ajouter un élément existant** boîte de dialogue.
 
-##  <a name="DesigningRibbonLayout"></a> Concevoir un ruban
+## <a name="DesigningRibbonLayout"></a> Concevoir un ruban
  Il existe trois façons d’ouvrir le Concepteur de ruban :
 
 - Dans **l’Explorateur de solutions**, double-cliquez sur le fichier de code du ruban.
@@ -98,7 +98,7 @@ ms.locfileid: "54867258"
 
    Vous ne pouvez pas faire glisser des contrôles d’un onglet à un autre sur le ruban. Si vous souhaitez déplacer un contrôle vers un autre onglet, vous devez utiliser le **couper** commande pour supprimer le contrôle d’un onglet, puis collez le contrôle sur un autre onglet. Si vous coupez le contrôle et le coller, le Gestionnaire d’événements cesse de fonctionner. Vous pouvez vous reconnecter le Gestionnaire d’événements dans le **propriétés** fenêtre. Pour plus d’informations, consultez [fenêtre Propriétés](../ide/reference/properties-window.md).
 
-###  <a name="AddTabToRibbon"></a> Ajouter des onglets personnalisés au ruban
+### <a name="AddTabToRibbon"></a> Ajouter des onglets personnalisés au ruban
  Il existe trois façons d’ajouter un onglet personnalisé au ruban :
 
 - Ajouter un onglet à partir de la **boîte à outils**.
@@ -114,11 +114,11 @@ ms.locfileid: "54867258"
 #### <a name="remove-custom-tabs-from-the-ribbon"></a>Supprimer des onglets personnalisés du ruban
  Il existe trois façons de supprimer un onglet personnalisé du ruban :
 
--   Cliquez sur le concepteur, puis cliquez sur **onglet supprimer un ruban**.
+- Cliquez sur le concepteur, puis cliquez sur **onglet supprimer un ruban**.
 
--   Dans le **commandes** volet de la **propriétés** fenêtre, cliquez sur **onglet supprimer un ruban**.
+- Dans le **commandes** volet de la **propriétés** fenêtre, cliquez sur **onglet supprimer un ruban**.
 
--   Ouvrez le **éditeur de collections Tab**, sélectionnez l’onglet, puis cliquez sur **supprimer**.
+- Ouvrez le **éditeur de collections Tab**, sélectionnez l’onglet, puis cliquez sur **supprimer**.
 
 #### <a name="change-the-position-of-a-tab-on-the-ribbon"></a>Modifier la position d’un onglet dans le ruban
  Vous pouvez modifier l’ordre des onglets personnalisés sur un ruban. Vous pouvez également positionner les onglets personnalisés avant ou après un onglet prédéfini du ruban. Pour plus d'informations, voir [Procédure : Modifier la position d’un onglet dans le ruban](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md).
@@ -132,10 +132,10 @@ ms.locfileid: "54867258"
 
  Pour plus d’informations sur la façon de personnaliser un onglet intégré, consultez [Comment : Personnaliser un onglet intégré](../vsto/how-to-customize-a-built-in-tab.md).
 
-###  <a name="AddGroupsToTab"></a> Ajouter des groupes à un onglet
+### <a name="AddGroupsToTab"></a> Ajouter des groupes à un onglet
  Groupes d’organiser logiquement les contrôles sur le ruban. Ajouter des groupes à onglets. Ajouter tous les autres contrôles au groupe.
 
-###  <a name="AddControlsToGroups"></a> Ajouter des contrôles aux groupes
+### <a name="AddControlsToGroups"></a> Ajouter des contrôles aux groupes
  Ajouter un ou plusieurs contrôles à un groupe. Le tableau suivant décrit chaque contrôle.
 
 |Contrôle|Description|
@@ -154,7 +154,7 @@ ms.locfileid: "54867258"
 |**SplitButton**|Un bouton avec un menu joint. Un bouton partagé peut contenir les contrôles suivants :<br /><br /> -   Button<br />-Case à cocher<br />-Galerie<br />-   Menu<br />-Bouton partagé<br />-Bouton bascule<br />-Séparateur<br /><br /> Comme le menu, le bouton partagé a sa propre aire de conception. Toutefois, contrairement à un menu, vous pouvez uniquement mettre à jour les éléments dans un bouton partagé avant que le ruban soit chargé dans l’application Office. Pour plus d’informations sur comment mettre à jour les éléments dans un bouton partagé, consultez [présentation du modèle objet de ruban](../vsto/ribbon-object-model-overview.md).|
 |**ToggleButton**|Un bouton apparaît enfoncé ou non activé.|
 
-##  <a name="HandleEventsSetProperties"></a> Gérer les événements et les propriétés du paramètre
+## <a name="HandleEventsSetProperties"></a> Gérer les événements et les propriétés du paramètre
  Le Concepteur de ruban vous permet de définir les propriétés de contrôle au moment du design à l’aide de la **propriétés** fenêtre. En outre, le ruban expose un modèle objet fortement typé que vous pouvez utiliser pour obtenir et définir les propriétés des contrôles de ruban lors de l’exécution.
 
  Vous pouvez double-cliquer sur n’importe quel contrôle dans le concepteur pour ouvrir le Gestionnaire d’événements pour l’événement du contrôle par défaut. Vous pouvez créer des gestionnaires d’événements pour tous les autres événements de contrôle à l’aide de la **propriétés** fenêtre.
@@ -163,7 +163,7 @@ ms.locfileid: "54867258"
 
  Pour plus d’informations sur la gestion des événements de ruban et la définition des propriétés de contrôles de ruban lors de l’exécution, consultez [présentation du modèle objet de ruban](../vsto/ribbon-object-model-overview.md).
 
-##  <a name="CustomizingMicrosoftOfficeButton"></a> Personnaliser le mode Backstage
+## <a name="CustomizingMicrosoftOfficeButton"></a> Personnaliser le mode Backstage
  Vous pouvez utiliser le Concepteur de ruban pour ajouter des contrôles au menu qui s’ouvre lorsque vous cliquez sur le **fichier** onglet. Ce menu est appelé mode Backstage.
 
  Vous ne pouvez pas placer des contrôles avant ou après les contrôles prédéfinis à l’aide du Concepteur de ruban. Un contrôle intégré est un contrôle qui figure déjà dans le mode Backstage. Si vous souhaitez positionner des contrôles avant ou après les contrôles prédéfinis, vous devez utiliser ruban XML. Pour plus d’informations sur **ruban (XML)**, consultez [ruban XML](../vsto/ribbon-xml.md). Pour plus d’informations sur la personnalisation du mode Backstage, consultez [Introduction à la Backstage Office 2010 pour les développeurs](http://go.microsoft.com/fwlink/?LinkId=182189) et [personnaliser la Backstage Office 2010 pour les développeurs](http://go.microsoft.com/fwlink/?LinkId=182188).
@@ -172,7 +172,7 @@ ms.locfileid: "54867258"
 
  Pour plus d’informations sur l’ajout de contrôles au mode Backstage, consultez [Comment : Ajouter des contrôles au mode Backstage](../vsto/how-to-add-controls-to-the-backstage-view.md).
 
-##  <a name="Accessibility"></a> Accessibilité dans le Concepteur de ruban
+## <a name="Accessibility"></a> Accessibilité dans le Concepteur de ruban
  Vous pouvez utiliser des raccourcis clavier pour déplacer des contrôles dans le Concepteur de ruban. Certains raccourcis clavier s’appliquent à tous les contrôles, d’autres s’appliquent uniquement aux contrôles qui ont des menus.
 
  Les raccourcis clavier qui s’appliquent à tous les contrôles sont affichés dans le tableau suivant.

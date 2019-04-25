@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bebc8581ead00eeb6b28c2c45f4dcfe991a9e1a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3dfaa1fb344f11817cc67a074580c726f3d23036
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918150"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429177"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>Tester une application volumineuse avec plusieurs mappages d’interface utilisateur
 
@@ -42,9 +42,9 @@ L'utilisation de plusieurs fichiers de mappages d'IU peut offrir les avantages s
 ## <a name="do-you-need-multiple-ui-maps"></a>Avez-vous besoin de plusieurs mappages d'IU ?
  Créez plusieurs mappages d'IU dans chacun des types de situations suivants :
 
--   Plusieurs jeux complexes de contrôles d'IU composites qui, ensemble, effectuent une opération logique, par exemple une page d'inscription dans un site web ou la page d'achat d'un panier.
+- Plusieurs jeux complexes de contrôles d'IU composites qui, ensemble, effectuent une opération logique, par exemple une page d'inscription dans un site web ou la page d'achat d'un panier.
 
--   Un jeu indépendant de contrôles accessible à partir de différents points de l'application, par exemple un Assistant avec plusieurs pages d'opérations. Si chaque page de l'Assistant est particulièrement complexe, vous pourriez créer des mappages d'IU distincts pour chaque page.
+- Un jeu indépendant de contrôles accessible à partir de différents points de l'application, par exemple un Assistant avec plusieurs pages d'opérations. Si chaque page de l'Assistant est particulièrement complexe, vous pourriez créer des mappages d'IU distincts pour chaque page.
 
 ## <a name="add-multiple-ui-maps"></a>Ajouter des mappages d'IU multiples
 

@@ -15,12 +15,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e7447e45108d8755195ad3c7484d55415c520846
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4ec8c14da5c691f6f9740c6df86cb38aeb9fac5e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938523"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057639"
 ---
 # <a name="ca2236-call-base-class-methods-on-iserializable-types"></a>CA2236 : Appelez les méthodes de la classe de base sur les types ISerializable
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ ms.locfileid: "58938523"
 ## <a name="cause"></a>Cause
  Un type dérive d’un type qui implémente le <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> interface et une des conditions suivantes est vraie :
 
--   Le type implémente le constructeur de sérialisation, autrement dit, un constructeur avec le <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>, <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> signature de paramètre, mais n’appelle ne pas le constructeur de sérialisation du type de base.
+- Le type implémente le constructeur de sérialisation, autrement dit, un constructeur avec le <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName>, <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> signature de paramètre, mais n’appelle ne pas le constructeur de sérialisation du type de base.
 
--   Le type implémente le <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> méthode mais n’appelle pas la <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> méthode du type de base.
+- Le type implémente le <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> méthode mais n’appelle pas la <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> méthode du type de base.
 
 ## <a name="rule-description"></a>Description de la règle
  Dans un processus de sérialisation personnalisé, un type implémente le <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> méthode pour sérialiser ses champs et le constructeur de sérialisation pour désérialiser les champs. Si le type dérive d’un type qui implémente le <xref:System.Runtime.Serialization.ISerializable> interface, le type de base <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> constructeur de sérialisation et de la méthode doit être appelé pour sérialiser/désérialiser les champs du type de base. Sinon, le type ne sera pas sérialisé et désérialisé correctement. Notez que si le type dérivé n’ajoute pas tous les nouveaux champs, le type n’a pas besoin d’implémenter le <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A> méthode, ni le constructeur de sérialisation ou d’appeler les équivalents de type de base.

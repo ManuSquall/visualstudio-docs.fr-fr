@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 659ac2dadd5500ef3cd4a4a3e7c3b36b91e9cc49
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: cde6b6a44649f3a9e100a0ff10e3dda21f2d6f3c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793262"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096281"
 ---
 # <a name="shader-designer-nodes"></a>Nœuds du concepteur Shader
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,15 +30,15 @@ Les articles de cette section de la documentation contiennent des informations s
 ### <a name="promotion-of-inputs"></a>Promotion des entrées  
  Comme le concepteur Shader doit finalement générer le code source HLSL afin que l’effet puisse être utilisé dans un jeu ou une application, les nœuds du concepteur Shader sont soumis aux règles de la promotion de type utilisées par HLSL. Comme le matériel graphique s’exécute principalement sur des valeurs à virgule flottante, une promotion de type entre différents types, par exemple entre `int` et `float` ou entre `float` et `double`, est rare. Au lieu de cela, étant donné que le matériel graphique utilise la même opération simultanée sur plusieurs informations, un type différent de promotion peut se produire dans lequel le nombre le plus court d’entrées est rallongé pour le faire correspondre à la taille de l’entrée la plus longue. La façon dont il est rallongé dépend du type de l’entrée et également de l’opération proprement dite :  
   
--   **Si le plus petit type est une valeur scalaire, alors :**  
+- **Si le plus petit type est une valeur scalaire, alors :**  
   
      La valeur scalaire est répliquée dans un vecteur dont la taille est égale à l’entrée la plus grande. Par exemple, l’entrée scalaire 5.0 devient le vecteur (5.0, 5.0, 5.0) quand la plus grande entrée de l’opération est un vecteur à trois éléments, indépendamment des caractéristiques de l’opération.  
   
--   **Si le plus petit type est un vecteur et que l’opération relève d’une multiplication (\*, /, %, etc.), alors :**  
+- **Si le plus petit type est un vecteur et que l’opération relève d’une multiplication (\*, /, %, etc.), alors :**  
   
      La valeur du vecteur est copiée dans les éléments de début d’un vecteur dont la taille est égale à l’entrée la plus grande, et les éléments de fin sont définis sur 1.0. Par exemple, l’entrée vectorielle (5.0, 5.0) devient le vecteur (5.0, 5.0, 1.0, 1.0) lors d’une multiplication par un vecteur à quatre éléments. Cela permet de conserver le troisième et le quatrième éléments de la sortie à l’aide de l’identité de multiplication, 1.0.  
   
--   **Si le plus petit type est un vecteur et que l’opération relève d’une addition (+, -, etc.), alors :**  
+- **Si le plus petit type est un vecteur et que l’opération relève d’une addition (+, -, etc.), alors :**  
   
      La valeur du vecteur est copiée dans les éléments de début d’un vecteur dont la taille est égale à l’entrée la plus grande, et les éléments de fin sont définis sur 0.0. Par exemple, l’entrée vectorielle (5.0, 5.0) devient le vecteur (5.0, 5.0, 0.0, 0.0) lors d’un ajout à un vecteur à quatre éléments. Cela permet de conserver le troisième et le quatrième éléments de la sortie à l’aide de l’identité d’addition, 0.0.  
   

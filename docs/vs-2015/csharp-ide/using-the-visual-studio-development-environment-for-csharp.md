@@ -17,14 +17,15 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bffc4c5740ad006ca851f56cd2db8fcfdfc21294
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 485f4810f748af707cebba5c50c34144f78371ed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938192"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102945"
 ---
-# <a name="using-the-visual-studio-development-environment-for-c"></a>À l’aide de l’environnement de développement Visual Studio pour c# #
+# <a name="using-the-visual-studio-development-environment-for-c"></a>À l’aide de l’environnement de développement Visual Studio pour C\#
+
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L’environnement de développement intégré (IDE) Visual Studio est une collection d’outils de développement exposée via une interface utilisateur commune. Certains outils sont partagés avec d'autres langages [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tandis que d'autres, tels que le compilateur C#, sont propres à Visual C#. Cette rubrique fournit des liens vers les outils Visual C# les plus importants.
@@ -49,4 +50,7 @@ L’environnement de développement intégré (IDE) Visual Studio est une collec
 |[Gestion des ressources d’une application (.NET)](../ide/managing-application-resources-dotnet.md)|Montre comment ajouter ou modifier des ressources de votre projet, telles que des chaînes, des images, des icônes, des données audio et des fichiers.|
 
 ## <a name="see-also"></a>Voir aussi
- [C#](http://msdn.microsoft.com/library/7f4f8103-7068-4f1d-92c7-3c4519b6edbc)[Prise en main C# ](http://msdn.microsoft.com/library/d6ec050f-3956-4737-8030-a4fa3521d29f) [ C# référence](http://msdn.microsoft.com/library/06de3167-c16c-4e1a-b3c5-c27841d4569a)
+
+- [C#](http://msdn.microsoft.com/library/7f4f8103-7068-4f1d-92c7-3c4519b6edbc)
+- [Bien démarrer avec C#](http://msdn.microsoft.com/library/d6ec050f-3956-4737-8030-a4fa3521d29f)
+- [Référence C#](http://msdn.microsoft.com/library/06de3167-c16c-4e1a-b3c5-c27841d4569a)

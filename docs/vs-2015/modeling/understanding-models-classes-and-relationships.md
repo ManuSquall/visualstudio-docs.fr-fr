@@ -11,12 +11,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 678e7a9c32f8c69e9f0bac5ebc3a077e7e625771
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f8de4432f1d0b4ab4bf24159744d20708d732fbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954136"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108701"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Présentation des modèles, des classes et des relations
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,13 +65,13 @@ Un langage spécifique à un domaine (DSL) est défini par son fichier de défin
   
  Pour réorganiser le diagramme de définition DSL, vous pouvez :  
   
--   Échange principal et référencer des vues à l’aide de la **déplacer l’arborescence ici** et **fractionner l’arborescence** commandes. Cliquez sur une classe de domaine unique pour afficher ces commandes.  
+- Échange principal et référencer des vues à l’aide de la **déplacer l’arborescence ici** et **fractionner l’arborescence** commandes. Cliquez sur une classe de domaine unique pour afficher ces commandes.  
   
--   Réorganiser les classes de domaine et les classes de formes en appuyant sur Ctrl + haut et Ctrl + bas.  
+- Réorganiser les classes de domaine et les classes de formes en appuyant sur Ctrl + haut et Ctrl + bas.  
   
--   Réduire ou développer des classes à l’aide de l’icône en haut à droite de chaque forme.  
+- Réduire ou développer des classes à l’aide de l’icône en haut à droite de chaque forme.  
   
--   Réduire les parties de l’arborescence en cliquant sur le signe moins (-) en bas d’une classe de domaine.  
+- Réduire les parties de l’arborescence en cliquant sur le signe moins (-) en bas d’une classe de domaine.  
   
 ## <a name="inheritance"></a>Héritage  
  Classes de domaine peuvent être définies à l’aide de l’héritage. Pour créer une dérivation de l’héritage, cliquez sur l’outil de l’héritage, cliquez sur la classe dérivée, puis cliquez sur la classe de base. Un élément de modèle possède toutes les propriétés qui sont définies sur sa propre classe de domaine, ainsi que toutes les propriétés héritées de la classe de base. Il hérite également ses rôles dans les relations.  

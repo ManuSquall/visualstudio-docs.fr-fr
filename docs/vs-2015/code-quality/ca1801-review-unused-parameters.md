@@ -16,39 +16,39 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d1a3b0c7672af9cf10804c84db5103a93ff3ad80
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 0efbec121e08d026145d8762b574847fbd4a2b88
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "59001837"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045640"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801 : Passez en revue les paramètres inutilisés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Pour obtenir la dernière documentation sur Visual Studio, consultez [CA1801 : Passez en revue les paramètres inutilisés](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters) sur docs.microsoft.com.  
+Pour obtenir la dernière documentation sur Visual Studio, consultez [CA1801 : Passez en revue les paramètres inutilisés](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters).  
   
 |||  
 |-|-|  
 |TypeName|ReviewUnusedParameters|  
 |CheckId|CA1801|  
 |Category|Microsoft.Usage|  
-|Modification avec rupture|Sans rupture - Si le membre n’est pas visible en dehors de l’assembly, quelle que soit la modification que vous apportez.<br /><br /> Sans rupture - Si vous modifiez le membre pour utiliser le paramètre dans son corps.<br /><br /> Avec rupture - Si vous supprimez le paramètre et il est visible en dehors de l’assembly.|  
+|Modification avec rupture|Sans rupture - Si le membre n’est pas visible en dehors de l’assembly, quelle que soit la modification vous apporter.<br /><br /> Sans rupture - Si vous modifiez le membre pour utiliser le paramètre dans son corps.<br /><br /> Avec rupture - Si vous supprimez le paramètre et il est visible en dehors de l’assembly.|  
   
 ## <a name="cause"></a>Cause  
  Une signature de méthode inclut un paramètre qui n'est pas utilisé dans le corps de la méthode. Cette règle n’examine pas les méthodes suivantes :  
   
--   Méthodes référencées par un délégué.  
+- Méthodes référencées par un délégué.  
   
--   Méthodes utilisées en tant que gestionnaires d’événements.  
+- Méthodes utilisées en tant que gestionnaires d’événements.  
   
--   Les méthodes déclarées avec le `abstract` (`MustOverride` en Visual Basic) modificateur.  
+- Les méthodes déclarées avec le `abstract` (`MustOverride` en Visual Basic) modificateur.  
   
--   Les méthodes déclarées avec le `virtual` (`Overridable` en Visual Basic) modificateur.  
+- Les méthodes déclarées avec le `virtual` (`Overridable` en Visual Basic) modificateur.  
   
--   Les méthodes déclarées avec le `override` (`Overrides` en Visual Basic) modificateur.  
+- Les méthodes déclarées avec le `override` (`Overrides` en Visual Basic) modificateur.  
   
--   Les méthodes déclarées avec le `extern` (`Declare` instruction en Visual Basic) modificateur.  
+- Les méthodes déclarées avec le `extern` (`Declare` instruction en Visual Basic) modificateur.  
   
 ## <a name="rule-description"></a>Description de la règle  
  Passez en revue les paramètres dans les méthodes non virtuelles qui ne sont pas utilisés dans le corps de méthode pour vous assurer n’empêche existe autour d’y accéder. Les paramètres inutilisés impliquent des coûts de maintenance et de performances.  

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 994135458fb7bc76ef2ab7f4a76ac184e1b6426e
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: fc97aad2d3a056a61ae925816ac6d2457918db65
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54945981"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100779"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>Procédure : Générer des informations de Registre pour un programme d’installation
 
@@ -28,7 +28,7 @@ Le *RegPkg.exe* utilitaire peut être utilisé pour générer un manifeste de l�
 
 ## <a name="to-create-a-registration-manifest"></a>Pour créer un manifeste de l’inscription
 
--   Exécutez RegPkg avec la **/regfile** basculer. Fournir d’autres commutateurs, le nom du fichier de sortie et le chemin d’accès du VSPackage.
+- Exécutez RegPkg avec la **/regfile** basculer. Fournir d’autres commutateurs, le nom du fichier de sortie et le chemin d’accès du VSPackage.
 
      Par exemple, à l’invite de commandes, vous tapez ce qui suit :
 
@@ -38,7 +38,7 @@ Le *RegPkg.exe* utilitaire peut être utilisé pour générer un manifeste de l�
 
 ## <a name="to-view-a-registration-manifest"></a>Pour afficher un manifeste de l’inscription
 
--   Ouvrez le manifeste de l’inscription dans n’importe quel éditeur de texte.
+- Ouvrez le manifeste de l’inscription dans n’importe quel éditeur de texte.
 
      L’exemple suivant est le manifeste de l’inscription RegPkg crée pour le service de langage IronPython :
 
@@ -99,7 +99,7 @@ Le *RegPkg.exe* utilitaire peut être utilisé pour générer un manifeste de l�
 
 ## <a name="to-create-a-windows-installer-xml-toolset-include-file"></a>Pour créer un fichier Windows Installer XML toolset inclure le fichier
 
--   Exécutez RegPkg avec la **/wixfile** basculer. Fournir d’autres commutateurs, le nom du fichier de sortie et le chemin d’accès du VSPackage.
+- Exécutez RegPkg avec la **/wixfile** basculer. Fournir d’autres commutateurs, le nom du fichier de sortie et le chemin d’accès du VSPackage.
 
      Par exemple, à l’invite de commandes, vous tapez ce qui suit :
 
@@ -109,7 +109,7 @@ Le *RegPkg.exe* utilitaire peut être utilisé pour générer un manifeste de l�
 
 ## <a name="to-view-a-windows-installer-xml-toolset-include-file"></a>Pour afficher un fichier Windows Installer XML toolset inclure le fichier
 
--   Ouvrez le composant Windows Installer XML Toolset fichier include dans n’importe quel éditeur de texte.
+- Ouvrez le composant Windows Installer XML Toolset fichier include dans n’importe quel éditeur de texte.
 
      L’exemple suivant est le fichier include RegPkg crée pour le service de langage IronPython :
 

@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 83fd93d2e1e2e5d99f7ea8eca9f5de4ce1b4c7f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a8fbc314580b106f5e1e8dae5a0a78d043d3940b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947263"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080902"
 ---
 # <a name="how-to-suppress-warnings-by-using-the-menu-item"></a>Procédure : Supprimer des avertissements à l’aide de l’élément de menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,11 +33,11 @@ REMARQUE]
   
 ### <a name="to-suppress-a-warning-by-using-menu-item"></a>Pour supprimer un avertissement à l’aide d’élément de menu  
   
-1.  Sur le **analyser** menu, choisissez **Windows** , puis **analyse du Code**.  
+1. Sur le **analyser** menu, choisissez **Windows** , puis **analyse du Code**.  
   
-2.  Dans le **analyse du Code** fenêtre, sélectionnez le supprimer de l’avertissement.  
+2. Dans le **analyse du Code** fenêtre, sélectionnez le supprimer de l’avertissement.  
   
-3.  Choisissez les Actions, puis choisissez **supprimer les messages**, puis choisissez **dans la Source** ou **dans le fichier de Suppression de projet**.  
+3. Choisissez les Actions, puis choisissez **supprimer les messages**, puis choisissez **dans la Source** ou **dans le fichier de Suppression de projet**.  
   
      L’avertissement spécifique est supprimé, et l’avertissement s’affiche dans la fenêtre analyse du Code avec un barré.  
   

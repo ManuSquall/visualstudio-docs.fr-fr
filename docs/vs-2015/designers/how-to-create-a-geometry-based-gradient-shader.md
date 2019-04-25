@@ -9,27 +9,27 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 555fe986267ce8cd88a5beea6f57cef2ba810156
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8735931e761f7d511615b5be7e93e0198a6b1a45
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797535"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071718"
 ---
-# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Comment : créer un nuanceur de géométrie dégradé
+# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Procédure : Créer un nuanceur de dégradés basé sur la géométrie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Ce document indique comment utiliser le concepteur de nuanceur et DGSL (Directed Graph Shader Language) pour créer un nuanceur de géométrie dégradé. Ce nuanceur met à l’échelle une valeur de couleur RVB de constante en fonction de la hauteur de chaque point d’un objet dans l’espace universel.  
   
  Ce document illustre ces activités :  
   
--   Ajout de nœuds à un graphique de nuanceur  
+- Ajout de nœuds à un graphique de nuanceur  
   
--   Définition de propriétés de nœud  
+- Définition de propriétés de nœud  
   
--   Déconnexion de nœuds  
+- Déconnexion de nœuds  
   
--   Connexion de nœuds  
+- Connexion de nœuds  
   
 ## <a name="creating-a-geometry-based-gradient-shader"></a>Création d’un nuanceur de géométrie dégradé  
  Vous pouvez implémenter un nuanceur de géométrie en incorporant la position du pixel dans votre nuanceur. Dans les langages d’ombrage, un pixel contient plus d’informations que ses seuls couleur et emplacement dans un écran 2D. Un pixel, appelé *fragment* dans certains systèmes, est une collection de valeurs qui décrivent la surface correspondant à un pixel. Le nuanceur décrit dans ce document utilise la hauteur de chaque pixel d’un objet 3D dans l’espace universel pour affecter la couleur de sortie finale du fragment.  
@@ -73,8 +73,8 @@ Ce document indique comment utiliser le concepteur de nuanceur et DGSL (Directed
   
 ## <a name="see-also"></a>Voir aussi  
  [Guide pratique pour Appliquer un nuanceur à un modèle 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
- [Comment : exporter un nuanceur](../designers/how-to-export-a-shader.md)   
+ [Guide pratique pour Exporter un nuanceur](../designers/how-to-export-a-shader.md)   
  [Guide pratique pour Terrain 3D de modèle](../designers/how-to-model-3-d-terrain.md)   
- [Comment : créer un nuanceur de texture avec nuances de gris](../designers/how-to-create-a-grayscale-texture-shader.md)   
+ [Guide pratique pour Créer un nuanceur de Texture de nuances de gris](../designers/how-to-create-a-grayscale-texture-shader.md)   
  [Concepteur de nuanceur](../designers/shader-designer.md)   
  [Nœuds du concepteur Shader](../designers/shader-designer-nodes.md)

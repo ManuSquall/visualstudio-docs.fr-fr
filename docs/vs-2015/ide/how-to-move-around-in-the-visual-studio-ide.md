@@ -1,5 +1,5 @@
 ---
-title: 'Comment : déplacer dans l’IDE | Microsoft Docs'
+title: 'Comment : se déplacer dans l’IDE | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -18,12 +18,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 94629a2e64d154313711b3e8968b28959d3341e8
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 269b6bba8c832d240813641317b8f0aa61fa0f34
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805417"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069509"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Comment : se déplacer dans l'IDE de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,20 +63,20 @@ L’environnement de développement intégré (IDE) a été conçu pour vous per
 
 #### <a name="to-switch-to-specific-files-in-the-editor"></a>Pour basculer vers des fichiers spécifiques dans l'éditeur
 
--   Appuyez sur Ctrl + Tab pour afficher le **Navigateur IDE**. Maintenez la touche Ctrl enfoncée et appuyez sur Tab à plusieurs reprises jusqu'à ce que vous sélectionniez le fichier vers lequel vous souhaitez basculer.
+- Appuyez sur Ctrl + Tab pour afficher le **Navigateur IDE**. Maintenez la touche Ctrl enfoncée et appuyez sur Tab à plusieurs reprises jusqu'à ce que vous sélectionniez le fichier vers lequel vous souhaitez basculer.
 
     > [!TIP]
     >  Pour inverser l’ordre dans lequel vous parcourez la liste **Fichiers actifs**, maintenez les touches Ctrl + Maj enfoncées et appuyez sur Tab.
 
      \- ou -
 
--   Dans le coin supérieur droit de l’éditeur, choisissez le bouton **Fichiers actifs**, puis sélectionnez dans la liste un fichier vers lequel vous souhaitez basculer.
+- Dans le coin supérieur droit de l’éditeur, choisissez le bouton **Fichiers actifs**, puis sélectionnez dans la liste un fichier vers lequel vous souhaitez basculer.
 
      \- ou -
 
--   Dans la barre de menus, sélectionnez **Fenêtre**, **Fenêtres**.
+- Dans la barre de menus, sélectionnez **Fenêtre**, **Fenêtres**.
 
--   Dans la liste, sélectionnez le fichier à afficher, puis choisissez **Activer**.
+- Dans la liste, sélectionnez le fichier à afficher, puis choisissez **Activer**.
 
 ## <a name="navigating-among-tool-windows-in-the-ide"></a>Navigation entre les fenêtres Outil dans l'IDE
  Le **Navigateur IDE** vous permet également de parcourir les fenêtres Outil que vous avez ouvertes dans l’IDE. Vous pouvez utiliser l’une des deux commandes disponibles pour accéder au **Navigateur IDE** afin de parcourir des fenêtres Outil, selon l’ordre de défilement de votre choix. `Window.PreviousToolWindowNav` vous permet de passer au fichier ayant le plus récemment fait l'objet d'un accès, tandis que `Window.NextToolWindowNav` vous permet de vous déplacer dans le sens contraire. Les paramètres de développement généraux assignent Maj + Alt + F7 à `Window.PreviousDocumentWindowNav` et Alt + F7 à `Window.NextDocumentWindowNav`.
@@ -86,10 +86,10 @@ L’environnement de développement intégré (IDE) a été conçu pour vous per
 
 #### <a name="to-switch-to-a-specific-tool-window-in-the-ide"></a>Pour basculer vers une fenêtre Outil spécifique dans l'IDE
 
--   Appuyez sur Alt + F7 pour afficher le **Navigateur IDE**. Maintenez la touche Alt enfoncée et appuyez sur F7 à plusieurs reprises jusqu'à ce que vous sélectionniez la fenêtre vers laquelle vous souhaitez basculer.
+- Appuyez sur Alt + F7 pour afficher le **Navigateur IDE**. Maintenez la touche Alt enfoncée et appuyez sur F7 à plusieurs reprises jusqu'à ce que vous sélectionniez la fenêtre vers laquelle vous souhaitez basculer.
 
     > [!TIP]
     >  Pour inverser l’ordre dans lequel vous parcourez la liste **Fenêtres Outil actives**, maintenez les touches Maj + Alt enfoncées et appuyez sur F7.
 
 ## <a name="see-also"></a>Voir aussi
- [Personnalisation des dispositions de fenêtre](../ide/customizing-window-layouts-in-visual-studio.md) [raccourcis clavier par défaut](../ide/default-keyboard-shortcuts-in-visual-studio.md)
+ [Personnalisation des dispositions de fenêtres](../ide/customizing-window-layouts-in-visual-studio.md) [Raccourcis clavier par défaut](../ide/default-keyboard-shortcuts-in-visual-studio.md)

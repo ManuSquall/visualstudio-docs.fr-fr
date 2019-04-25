@@ -10,21 +10,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c01c71673640814006fe6771aa841852c247fd54
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: db9a8abb2b1013a7d11a4013d602e33592beff70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965313"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070093"
 ---
 # <a name="source-control-configuration-details"></a>Détails de configuration du contrôle de code source
 Pour implémenter le contrôle de code source, vous devez configurer correctement votre système de projet ou d’un éditeur pour effectuer les opérations suivantes :
 
--   Demander l’autorisation à passer à l’état modifié
+- Demander l’autorisation à passer à l’état modifié
 
--   Demander l’autorisation d’enregistrer un fichier
+- Demander l’autorisation d’enregistrer un fichier
 
--   Demander l’autorisation d’ajouter, supprimer ou renommer des fichiers dans le projet
+- Demander l’autorisation d’ajouter, supprimer ou renommer des fichiers dans le projet
 
 ## <a name="request-permission-to-transition-to-changed-state"></a>Demander l’autorisation à passer à l’état modifié
  Un projet ou un éditeur doit demander une autorisation pour la transition vers l’état modifié (« Dirty ») en appelant <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>. Chaque éditeur implémente <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A> doit appeler <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> et recevoir une approbation pour modifier le document à partir de l’environnement avant de retourner `True` pour <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A>. Un projet est essentiellement un éditeur pour un fichier de projet et par conséquent, a la responsabilité de même pour l’implémentation de suivi de l’état modifié pour le fichier projet comme un éditeur de texte pour ses fichiers. L’environnement gère l’état modifié de la solution, mais vous devez gérer l’état modifié de n’importe quel objet fait référence à la solution mais ne stocke pas, comme un fichier de projet ou de ses éléments. En règle générale, si votre éditeur ou un projet est chargé de gérer la persistance pour un élément, il est chargé d’implémenter le suivi de l’état modifié.

@@ -19,17 +19,16 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8122988e5db3ca69c4b845c54ff4de2223c4556d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 2741dc6e3e08f8c7f7ee2e28bcf2d8df1613f10e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54767465"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59647237"
 ---
 # <a name="sgen-task"></a>SGen, tâche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Crée un assembly de sérialisation XML pour les types dans l’assembly spécifié. Cette tâche encapsule l’outil XML Serializer Generator (Sgen.exe). Pour plus d’informations, consultez [Outil XML Serializer Generator (Sgen.exe)](http://msdn.microsoft.com/library/cc1d1f1c-fb26-4be9-885a-3fe84c81cec6).  
   
 ## <a name="parameters"></a>Paramètres  

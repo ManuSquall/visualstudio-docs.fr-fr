@@ -19,17 +19,16 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 93fd259e00d7a8f849b97cb97c3f950cd95f57ed
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e23b89ab9aa48a87505eb9b53a8646da06df4931
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54761540"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59649307"
 ---
 # <a name="when-element-msbuild"></a>When, élément (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Spécifie un bloc de code que l’élément `Choose` peut sélectionner.  
   
  \<Project>  

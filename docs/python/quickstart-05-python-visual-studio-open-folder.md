@@ -3,20 +3,20 @@ title: Démarrage rapide - Ouvrir un dossier de code Python
 description: Dans ce démarrage rapide, vous ouvrez et exécutez du code Python à partir d’un dossier sans utiliser de projet Visual Studio (Visual Studio 2019 uniquement).
 ms.date: 03/12/2019
 ms.topic: quickstart
-author: kraigb
-ms.author: kraigb
+author: JoshuaPartlow
+ms.author: joshuapa
 manager: jillfra
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 07865a05b9aa8788b27fe1ddc067b0bb858bb9d3
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: ab234d9482cf9cbab49c15167ea45aff9ac2c7e6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431097"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>Démarrage rapide : Ouvrez et exécutez du code Python dans un dossier
 

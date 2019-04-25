@@ -6,20 +6,20 @@ ms.assetid: 79C0F1A3-0C13-4E55-A820-1138A4082B77
 author: asb3993
 ms.author: amburns
 ms.date: 10/23/2018
-ms.openlocfilehash: 70ac8defdcea9cccd8a3b3f9be71d38fb78c9c50
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: bf12f8803fbdbbf1de31899501c31545a09d6b09
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295189"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856539"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Installer et utiliser Visual Studio pour Mac derrière un pare-feu ou un serveur proxy
 
 Si vous ou votre organisation utilisez des mesures de sécurité comme un pare-feu ou un serveur proxy, vous aurez des URL de domaine à mettre sur « liste verte » et des ports et protocoles à ouvrir pour profiter d’une expérience optimale d’installation et d’utilisation de Visual Studio pour Mac et des services Azure.
 
-- [**Installer Visual Studio pour Mac**](#install-visual-studio-for-mac) : ces tableaux comportent les URL à mettre sur liste verte pour avoir accès à toutes les fonctionnalités et charges de travail de Visual Studio pour Mac.
+- [**Installer Visual Studio pour Mac**](#install-visual-studio-for-mac) : Ces tableaux comportent les URL à mettre sur liste verte afin que vous ayez accès à toutes les fonctionnalités et charges de travail de Visual Studio pour Mac.
 
-- [**Utiliser Visual Studio pour Mac**](#use-visual-studio-for-mac) : ces tableaux comportent les URL à mettre sur liste verte pour avoir accès à tous les services et fonctionnalités que vous souhaitez.
+- [**Utiliser Visual Studio pour Mac**](#use-visual-studio-for-mac) : Ces tableaux comportent les URL à mettre sur liste verte afin que vous ayez accès à l’ensemble des services et fonctionnalités que vous souhaitez.
 
 ## <a name="install-visual-studio-for-mac"></a>Installer Visual Studio pour Mac
 
@@ -89,5 +89,5 @@ Nous vous recommandons, pour avoir accès à toutes les fonctionnalités dont vo
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Installer et utiliser Visual Studio 2017 et les services Azure derrière un pare-feu ou un serveur proxy](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server)
+- [Installer et utiliser Visual Studio et les services Azure derrière un pare-feu ou un serveur proxy](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server)
 - [Résoudre des problèmes similaires sur Windows](/visualstudio/install/troubleshooting-network-related-errors-in-visual-studio)

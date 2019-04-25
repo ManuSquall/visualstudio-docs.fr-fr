@@ -11,12 +11,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c75b2aa7d4796a97370f414f0b7286c271b4c977
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: d9b93f8cb6422a3c9e2cf589924c2028db3dd6c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "59001204"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038406"
 ---
 # <a name="use-models-in-your-development-process"></a>Utiliser des modèles dans votre processus de développement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,25 +52,25 @@ Dans Visual Studio, vous pouvez utiliser un modèle pour vous aider à comprendr
   
  Voici d'autres aspects de spécification qui sont couramment utilisés avec les modèles. Selon l'échelle et le style de votre projet, vous pourriez utiliser plusieurs de ces aspects ou aucun d'entre eux :  
   
--   Récits utilisateur. Un récit utilisateur est une courte description, discutée avec les utilisateurs et les autres parties prenantes, d'un aspect du comportement du système qui sera livré lors de l'une des itérations du projet. Un récit utilisateur typique commence par « Le client sera en mesure de... ». Un récit utilisateur peut présenter un groupe de cas d'usage ou définir des extensions de cas d'usage qui ont été développées précédemment. La définition ou l'extension des cas d'usage aide à clarifier le récit utilisateur.  
+- Récits utilisateur. Un récit utilisateur est une courte description, discutée avec les utilisateurs et les autres parties prenantes, d'un aspect du comportement du système qui sera livré lors de l'une des itérations du projet. Un récit utilisateur typique commence par « Le client sera en mesure de... ». Un récit utilisateur peut présenter un groupe de cas d'usage ou définir des extensions de cas d'usage qui ont été développées précédemment. La définition ou l'extension des cas d'usage aide à clarifier le récit utilisateur.  
   
--   Demandes de modification. Une demande de modification dans un projet plus formel est très similaire à un récit utilisateur dans un projet agile. L'approche agile traite toutes les spécifications comme des modifications de ce qui a été développé lors des itérations précédentes.  
+- Demandes de modification. Une demande de modification dans un projet plus formel est très similaire à un récit utilisateur dans un projet agile. L'approche agile traite toutes les spécifications comme des modifications de ce qui a été développé lors des itérations précédentes.  
   
--   Description de cas d'usage. Un cas d'usage représente une façon par laquelle un utilisateur interagit avec le système pour atteindre un objectif particulier. Une description complète comprend l'objectif, les séquences d'événements principales et alternatives, ainsi que les résultats exceptionnels. Un diagramme de cas d'usage aide à résumer et à fournir une vue d'ensemble des cas d'usage.  
+- Description de cas d'usage. Un cas d'usage représente une façon par laquelle un utilisateur interagit avec le système pour atteindre un objectif particulier. Une description complète comprend l'objectif, les séquences d'événements principales et alternatives, ainsi que les résultats exceptionnels. Un diagramme de cas d'usage aide à résumer et à fournir une vue d'ensemble des cas d'usage.  
   
--   Scénarios. Un scénario est une description assez détaillée d'une séquence d'événements indiquant comment le système, les utilisateurs et les autres systèmes coopèrent pour fournir une valeur aux parties prenantes. Il peut prendre la forme d'un diaporama de l'interface utilisateur ou d'un prototype de l'interface utilisateur. Il peut décrire un cas d'usage ou d'une séquence de cas d'usage.  
+- Scénarios. Un scénario est une description assez détaillée d'une séquence d'événements indiquant comment le système, les utilisateurs et les autres systèmes coopèrent pour fournir une valeur aux parties prenantes. Il peut prendre la forme d'un diaporama de l'interface utilisateur ou d'un prototype de l'interface utilisateur. Il peut décrire un cas d'usage ou d'une séquence de cas d'usage.  
   
--   Glossaire. Le glossaire de spécifications du projet décrit les mots avec lesquels les clients discutent de leur environnement. Les modèles d'impératifs et d'interface utilisateur doivent également utiliser ces termes. Un diagramme de classes peut aider à clarifier les relations entre la plupart de ces termes. La création des diagrammes et du glossaire réduit non seulement les malentendus entre les utilisateurs et les développeurs, mais expose également presque toujours les malentendus entre les différentes parties prenantes.  
+- Glossaire. Le glossaire de spécifications du projet décrit les mots avec lesquels les clients discutent de leur environnement. Les modèles d'impératifs et d'interface utilisateur doivent également utiliser ces termes. Un diagramme de classes peut aider à clarifier les relations entre la plupart de ces termes. La création des diagrammes et du glossaire réduit non seulement les malentendus entre les utilisateurs et les développeurs, mais expose également presque toujours les malentendus entre les différentes parties prenantes.  
   
--   Règles métier. Vous pouvez exprimer de nombreuses règles métier en tant que contraintes invariantes sur les associations et les attributs dans le modèle de classes de spécifications et en tant que contraintes sur les diagrammes de séquence.  
+- Règles métier. Vous pouvez exprimer de nombreuses règles métier en tant que contraintes invariantes sur les associations et les attributs dans le modèle de classes de spécifications et en tant que contraintes sur les diagrammes de séquence.  
   
--   Conception de haut niveau. Décrit les principales parties et comment elles s'emboîtent les unes aux autres. Les diagrammes de composant, de séquence et d'interface constituent une partie importante d'une conception de haut niveau.  
+- Conception de haut niveau. Décrit les principales parties et comment elles s'emboîtent les unes aux autres. Les diagrammes de composant, de séquence et d'interface constituent une partie importante d'une conception de haut niveau.  
   
--   Modèles de conception. Décrivent les règles de conception qui sont partagées entre les différentes parties du système.  
+- Modèles de conception. Décrivent les règles de conception qui sont partagées entre les différentes parties du système.  
   
--   Spécifications de tests. Les scripts de tests et les conceptions du code de test peuvent faire bon usage des diagrammes d'activités et de séquence pour décrire des séquences d'étapes de tests. Les tests système doivent être exprimés selon les termes du modèle d'impératifs, pour que vous puissiez facilement les modifier en cas de modification des impératifs.  
+- Spécifications de tests. Les scripts de tests et les conceptions du code de test peuvent faire bon usage des diagrammes d'activités et de séquence pour décrire des séquences d'étapes de tests. Les tests système doivent être exprimés selon les termes du modèle d'impératifs, pour que vous puissiez facilement les modifier en cas de modification des impératifs.  
   
--   Plan de projet. Le plan de projet ou backlog définit quand chaque fonctionnalité sera délivrée. Vous pouvez définir chaque fonctionnalité en déclarant quels cas d'usage et règles métier elle implémente ou étend. Vous pouvez soit faire référence aux cas d'usage et aux règles métier directement dans le plan, soit définir un ensemble de fonctionnalités dans un document séparé et utiliser les titres des fonctionnalités dans le plan.  
+- Plan de projet. Le plan de projet ou backlog définit quand chaque fonctionnalité sera délivrée. Vous pouvez définir chaque fonctionnalité en déclarant quels cas d'usage et règles métier elle implémente ou étend. Vous pouvez soit faire référence aux cas d'usage et aux règles métier directement dans le plan, soit définir un ensemble de fonctionnalités dans un document séparé et utiliser les titres des fonctionnalités dans le plan.  
   
 ### <a name="use-models-in-iteration-planning"></a>Utiliser des modèles dans la planification des itérations.  
  Bien que tous les projets soient différents en termes d'échelle et d'organisation, un projet typique est planifié comme une série d'itérations qui dure entre deux et six semaines. Il est important de planifier suffisamment d'itérations pour que les commentaires issus des premières itérations puissent être utilisés pour ajuster l'étendue et les plans des itérations ultérieures.  
@@ -80,28 +80,28 @@ Dans Visual Studio, vous pouvez utiliser un modèle pour vous aider à comprendr
 #### <a name="sharpen-focus-as-each-iteration-approaches"></a>Affiner le focus à mesure que chaque itération approche  
  À l'approche de chaque itération, utilisez des modèles pour vous aider à définir ce qui doit être livré à la fin de l'itération.  
   
--   Ne modélisez pas tout en détail lors des premières itérations. Lors de la première itération, créez un diagramme de classes pour les principaux éléments du glossaire utilisateur, dessinez un diagramme des principaux cas d'usage et dessinez un diagramme des principaux composants. Ne décrivez pas ces éléments de manière très détaillée, car les détails changeront lors des phases ultérieures du projet. Utilisez les termes définis dans ce modèle pour créer une liste de fonctionnalités ou de récits utilisateur importants. Assignez les fonctionnalités aux itérations pour équilibrer approximativement la charge de travail estimée tout au long du projet. Ces assignations changeront durant les phases ultérieures du projet.  
+- Ne modélisez pas tout en détail lors des premières itérations. Lors de la première itération, créez un diagramme de classes pour les principaux éléments du glossaire utilisateur, dessinez un diagramme des principaux cas d'usage et dessinez un diagramme des principaux composants. Ne décrivez pas ces éléments de manière très détaillée, car les détails changeront lors des phases ultérieures du projet. Utilisez les termes définis dans ce modèle pour créer une liste de fonctionnalités ou de récits utilisateur importants. Assignez les fonctionnalités aux itérations pour équilibrer approximativement la charge de travail estimée tout au long du projet. Ces assignations changeront durant les phases ultérieures du projet.  
   
--   Essayez d'implémenter des versions simplifiées de tous les scénarios d'usage les plus importants lors de l'une des premières itérations. Étendez ces cas d'usage lors des itérations ultérieures. Cette approche permet de réduire le risque de découverte d'un défaut dans les spécifications ou l'architecture trop tard dans le projet.  
+- Essayez d'implémenter des versions simplifiées de tous les scénarios d'usage les plus importants lors de l'une des premières itérations. Étendez ces cas d'usage lors des itérations ultérieures. Cette approche permet de réduire le risque de découverte d'un défaut dans les spécifications ou l'architecture trop tard dans le projet.  
   
--   À l'approche de la fin de chaque itération, organisez un atelier de spécifications pour définir en détail les spécifications ou les récits utilisateur qui seront développés dans l'itération suivante. Invitez les utilisateurs et les parties prenantes qui peuvent décider des priorités, ainsi que les développeurs et les testeurs système. Trois heures seront généralement nécessaires pour définir les spécifications pour une itération de deux semaines.  
+- À l'approche de la fin de chaque itération, organisez un atelier de spécifications pour définir en détail les spécifications ou les récits utilisateur qui seront développés dans l'itération suivante. Invitez les utilisateurs et les parties prenantes qui peuvent décider des priorités, ainsi que les développeurs et les testeurs système. Trois heures seront généralement nécessaires pour définir les spécifications pour une itération de deux semaines.  
   
--   L'objectif de cet atelier est que tout le monde s'entende sur ce qui doit être accompli à la fin de l'itération suivante. Utilisez des modèles comme outil pour aider à clarifier les spécifications. La conséquence de l'atelier est la création d'un backlog d'itération, c'est-à-dire une liste de tâches de développement dans [!INCLUDE[esprfound](../includes/esprfound-md.md)] et des suites de tests dans [!INCLUDE[TCMext](../includes/tcmext-md.md)].  
+- L'objectif de cet atelier est que tout le monde s'entende sur ce qui doit être accompli à la fin de l'itération suivante. Utilisez des modèles comme outil pour aider à clarifier les spécifications. La conséquence de l'atelier est la création d'un backlog d'itération, c'est-à-dire une liste de tâches de développement dans [!INCLUDE[esprfound](../includes/esprfound-md.md)] et des suites de tests dans [!INCLUDE[TCMext](../includes/tcmext-md.md)].  
   
--   Lors de l'atelier de spécifications, discutez de la conception  uniquement dans le cadre de la détermination des estimations pour les tâches de développement. Autrement, ne discutez que du comportement du système avec lequel les utilisateurs auront une interaction directe. Séparez le modèle d'impératifs du modèle d'architecture.  
+- Lors de l'atelier de spécifications, discutez de la conception  uniquement dans le cadre de la détermination des estimations pour les tâches de développement. Autrement, ne discutez que du comportement du système avec lequel les utilisateurs auront une interaction directe. Séparez le modèle d'impératifs du modèle d'architecture.  
   
--   Les parties prenantes non-techniques n'auront généralement aucun problème pour comprendre les diagrammes UML, avec quelques conseils de votre part.  
+- Les parties prenantes non-techniques n'auront généralement aucun problème pour comprendre les diagrammes UML, avec quelques conseils de votre part.  
   
 #### <a name="link-model-to-work-items"></a>Lier le modèle à des éléments de travail  
  Après l'atelier de spécifications, élaborez les détails du modèle d'impératifs et liez le modèle à des tâches de développement. Vous pouvez pour cela lier des éléments de travail dans [!INCLUDE[esprfound](../includes/esprfound-md.md)] à des éléments du modèle. Pour savoir comment procéder, consultez [lier des éléments de modèle et des éléments de travail](../modeling/link-model-elements-and-work-items.md).  
   
  Vous pouvez lier n'importe quel élément à des éléments de travail, mais les éléments les plus utiles sont les suivants :  
   
--   Cas d'usage. Vous pouvez lier un cas d'usage aux tâches de développement qui l'implémenteront.  
+- Cas d'usage. Vous pouvez lier un cas d'usage aux tâches de développement qui l'implémenteront.  
   
--   Extensions de cas d'usage. Si seul l'un des aspects d'un cas d'usage sera implémenté dans une itération, vous pouvez le séparer dans un cas d'usage de base avec une ou plusieurs extensions. Les extensions sont des cas d'usage liés au cas de base avec la relation « étendre ». Pour plus d’informations sur l’extension du cas d’utilisation, consultez [UML utiliser des diagrammes de cas : Référence](../modeling/uml-use-case-diagrams-reference.md).  
+- Extensions de cas d'usage. Si seul l'un des aspects d'un cas d'usage sera implémenté dans une itération, vous pouvez le séparer dans un cas d'usage de base avec une ou plusieurs extensions. Les extensions sont des cas d'usage liés au cas de base avec la relation « étendre ». Pour plus d’informations sur l’extension du cas d’utilisation, consultez [UML utiliser des diagrammes de cas : Référence](../modeling/uml-use-case-diagrams-reference.md).  
   
--   Commentaires décrivant les règles métier ou les impératifs de qualité de service. Pour plus d’informations, consultez [modéliser les besoins de l’utilisateur](../modeling/model-user-requirements.md).  
+- Commentaires décrivant les règles métier ou les impératifs de qualité de service. Pour plus d’informations, consultez [modéliser les besoins de l’utilisateur](../modeling/model-user-requirements.md).  
   
 #### <a name="link-model-to-tests"></a>Lier le modèle à des tests  
  Utilisez le modèle d'impératifs pour guider la conception des tests d'acceptation. Créez ces tests en même temps que le travail de développement.  

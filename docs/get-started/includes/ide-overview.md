@@ -6,12 +6,12 @@ ms.author: gewarren
 author: gewarren
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 63e39c3879d51a34bc61f703eaae1e75dc2fd742
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: cd4fefc8a3f63cf3c4bf4c2ca61a09ce9e40170a
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58342492"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58807575"
 ---
 *L’environnement de développement intégré* de Visual Studio est une plateforme de lancement créative avec laquelle vous pouvez modifier, déboguer et générer du code, puis publier une application. Un environnement de développement intégré (IDE) est un programme riche en fonctionnalités qui peut être utilisé pour de nombreux aspects du développement de logiciels. Au-delà de l’éditeur et du débogueur standard fournis par la plupart des IDE, Visual Studio inclut des compilateurs, des outils de complétion de code, des concepteurs graphiques et de nombreuses autres fonctionnalités afin de faciliter le processus de développement logiciel.
 
@@ -91,22 +91,24 @@ Voici quelques-unes des fonctionnalités populaires de Visual Studio qui vous ai
 
    ![Liste des membres Visual Studio](../media/intellisense-list-members.png)
 
-- [Lancement rapide](../../ide/reference/quick-launch-environment-options-dialog-box.md)
+- Zone de recherche
 
-   La maîtrise de Visual Studio peut sembler insurmontable parfois, avec autant de menus, d’options et de propriétés. La zone de recherche **Lancement rapide** est un excellent moyen de trouver rapidement ce dont vous avez besoin dans Visual Studio. Quand vous commencez à taper le nom d’un élément que vous recherchez, Visual Studio affiche des résultats qui vous mènent exactement où vous devez accéder. Si vous avez besoin ajouter des fonctionnalités à Visual Studio, par exemple pour ajouter la prise en charge d’un langage de programmation supplémentaire, **Lancement rapide** fournit des résultats qui ouvrent Visual Studio Installer pour installer une charge de travail ou un composant spécifique.
+   La maîtrise de Visual Studio peut sembler insurmontable parfois, avec autant de menus, d’options et de propriétés. La zone de recherche est un excellent moyen de trouver rapidement ce dont vous avez besoin dans Visual Studio. Quand vous commencez à taper le nom d’un élément que vous recherchez, Visual Studio affiche des résultats qui vous mènent exactement où vous devez accéder. Pour ajouter des fonctionnalités à Visual Studio, par exemple la prise en charge d’un langage de programmation supplémentaire, la zone de recherche fournit des résultats qui ouvrent Visual Studio Installer afin d’installer une charge de travail ou un composant spécifique.
 
    > [!TIP]
-   > Appuyez sur **Ctrl**+**Q** comme raccourci vers la zone de recherche **Lancement rapide**.
+   > Appuyez sur **Ctrl**+**Q** comme raccourci vers la zone de recherche.
 
    ::: moniker range="vs-2017"
 
    ![Zone de recherche Lancement rapide dans Visual Studio 2017](../media/quick-launch-nuget.png)
 
+   Pour plus d’informations, consultez [Lancement rapide](../../ide/reference/quick-launch-environment-options-dialog-box.md).
+
    ::: moniker-end
 
    ::: moniker range="vs-2019"
 
-   ![Zone de recherche Lancement rapide dans Visual Studio 2019](../media/vs-2019/quick-launch-nuget.png)
+   ![Zone de recherche dans Visual Studio 2019](../media/vs-2019/quick-launch-nuget.png)
 
    ::: moniker-end
 

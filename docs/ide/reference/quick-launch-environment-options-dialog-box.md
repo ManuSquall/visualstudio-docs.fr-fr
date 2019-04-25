@@ -14,22 +14,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8f8bc5a19e3cb91634b5a61e0b3e917fb0a3f9a
-ms.sourcegitcommit: 2dc924c96a6d48803c8eedc3d6781202629b41fa
+monikerRange: vs-2017
+ms.openlocfilehash: a67e909dc43f17e12dd63b7a8a3b2e8a4afacc5e
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/11/2019
-ms.locfileid: "57736994"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789872"
 ---
 # <a name="quick-launch-environment-options-dialog-box"></a>Lancement rapide, Environnement, boîte de dialogue Options
 
-Vous pouvez utiliser **Lancement rapide** pour rechercher et exécuter rapidement des actions pour les ressources de l’IDE, comme les options, les modèles ou les menus. Vous ne pouvez pas utiliser **Lancement rapide** pour rechercher du code et des symboles. La zone de recherche **Lancement rapide** se trouve dans le coin supérieur droit de la barre de menus et est accessible via Ctrl+Q. Entrez simplement votre chaîne de recherche dans la zone. Pour rechercher des chaînes qui contiennent des @, utilisez @@.
+Vous pouvez utiliser **Lancement rapide** pour rechercher et exécuter rapidement des actions pour les ressources de l’IDE, comme les options, les modèles ou les menus. Vous ne pouvez pas utiliser **Lancement rapide** pour rechercher du code et des symboles. La zone de recherche **Lancement rapide** se trouve en haut à droite de la barre de menus et est accessible en appuyant sur **Ctrl**+**Q**. Tapez votre chaîne de recherche dans la zone. Pour rechercher des chaînes qui contiennent des @, utilisez @@.
 
-L’option **Lancement rapide** est activée par défaut quand vous installez Visual Studio. Dans la barre de menus, vous pouvez afficher ou masquer **Lancement rapide** en choisissant **Outils**, **Options**. Développez le nœud **Environnements**, puis choisissez **Lancement rapide**. Cochez ou décochez la case **Activer le menu de lancement rapide**. Vous pouvez également activer ou désactiver des catégories de recherche sur cette page.
+L’option **Lancement rapide** est activée par défaut quand vous installez Visual Studio. Dans la barre de menus, vous pouvez afficher ou masquer **Lancement rapide** en choisissant **Outils** > **Options**. Développez le nœud **Environnements**, puis choisissez **Lancement rapide**. Cochez ou décochez la case **Activer le menu de lancement rapide**. Vous pouvez également activer ou désactiver des catégories de recherche sur cette page.
 
 ## <a name="category-list"></a>Liste des catégories
 
-Les résultats de recherche de Lancement rapide apparaissent dans quatre catégories : **Utilisés le plus récemment**, **Menus**, **Options** et **Documents ouverts**, avec le nombre d’éléments de la catégorie. Pour parcourir les résultats de la recherche par catégorie, choisissez Ctrl+Q pour afficher tous les résultats de la catégorie suivante. Une fois la dernière catégorie affichée, Ctrl+Q vous montre quelques résultats de chaque catégorie. Vous pouvez utiliser Ctrl+Maj+Q pour naviguer dans les catégories dans l'ordre inverse. Pour afficher tous les résultats de recherche d'une catégorie, choisissez le nom de la catégorie.
+Les résultats de recherche de Lancement rapide apparaissent dans quatre catégories : **Utilisés le plus récemment**, **Menus**, **Options** et **Documents ouverts**, avec le nombre d’éléments de la catégorie. Pour parcourir les résultats de la recherche par catégorie, choisissez les touches **Ctrl**+**Q** pour afficher tous les résultats de la catégorie suivante. Une fois la dernière catégorie affichée, **Ctrl**+**Q** vous montre quelques résultats de chaque catégorie. Appuyez sur **Ctrl**+**Maj**+**Q** pour naviguer dans les catégories dans l’ordre inverse. Pour afficher tous les résultats de recherche d'une catégorie, choisissez le nom de la catégorie.
 
 Vous pouvez utiliser les raccourcis suivants pour limiter votre recherche à des catégories spécifiques.
 
@@ -41,13 +42,11 @@ Vous pouvez utiliser les raccourcis suivants pour limiter votre recherche à des
 |Documents|@doc<br /><br /> Par exemple, `@doc program.cs`.|Limite la recherche aux noms et aux chemins d'accès de fichiers des documents ouverts pour les critères de recherche, mais ne recherche pas le texte dans les fichiers eux-mêmes.|
 
 > [!NOTE]
-> Vous pouvez changer les touches de raccourci dans la page **Général**, **Clavier** de la boîte de dialogue **Options**.
+> Vous pouvez changer les touches de raccourci dans la page **Général** > **Clavier** de la boîte de dialogue **Options**.
 
 ## <a name="show-previous-results"></a>Afficher les résultats précédents
 
 Par défaut, le terme de recherche que vous entrez n'est pas conservé entre les sessions de recherche. La chaîne de recherche est effacée si vous recherchez un terme, que vous déplacez le curseur en dehors de la zone **Lancement rapide**, puis que vous y revenez. Pour conserver les résultats de recherche, accédez à la boîte de dialogue **Options**, choisissez **Lancement rapide**, puis cochez la case **Afficher les résultats de la dernière recherche si le menu de lancement rapide est activé** . La prochaine fois que vous effectuez une recherche, quittez la zone Lancement rapide et revenez-y : la zone Lancement rapide conserve alors le dernier terme de recherche utilisé et vous montre également les résultats de recherche.
-
-Pour obtenir les conseils et astuces les plus récents liés à l’utilisation de **Lancement rapide**, consultez [The Visual Studio Blog](http://go.microsoft.com/fwlink/?LinkId=236054).
 
 ## <a name="see-also"></a>Voir aussi
 

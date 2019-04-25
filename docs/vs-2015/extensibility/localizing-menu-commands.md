@@ -1,14 +1,9 @@
 ---
 title: Localisation des commandes de Menu | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.technology:
-- vs-ide-sdk
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.technology: vs-ide-sdk
+ms.topic: conceptual
 helpviewer_keywords:
 - localize
 - localization
@@ -19,13 +14,13 @@ helpviewer_keywords:
 ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
 caps.latest.revision: 12
 ms.author: gregvanl
-manager: ghogen
-ms.openlocfilehash: 6b16771e4d47416f09774ce2f4765de9d6023e94
-ms.sourcegitcommit: af428c7ccd007e668ec0dd8697c88fc5d8bca1e2
+manager: jillfra
+ms.openlocfilehash: 681a529b33fc2342168ba1fbe1df57746dc8bd7d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/16/2018
-ms.locfileid: "51753896"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101702"
 ---
 # <a name="localizing-menu-commands"></a>Localisation des commandes de menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +61,7 @@ Vous pouvez fournir un texte localisé pour le menu et barre d’outils, command
    </Button>  
    ```  
   
-    [FamilyTree.es ES.vsct]  
+    [FamilyTree.es-ES.vsct]  
   
    ```xml  
    <Button guid="guidLocalizedPackageCmdSet" id="cmdidFamilyTree" priority="0x0100" type="Button">  
@@ -83,19 +78,19 @@ Vous pouvez fournir un texte localisé pour le menu et barre d’outils, command
 ## <a name="localizing-other-text-resources"></a>Localisation d’autres ressources de texte  
  Ressources de texte autres que des noms de commande sont définies dans les fichiers de ressources (.resx).  
   
-1.  Renommez VSPackage.resx VSPackage.en-us.resx.  
+1. Renommez VSPackage.resx VSPackage.en-us.resx.  
   
-2.  Effectuez une copie du fichier VSPackage.en-us.resx pour chaque langue localisée.  
+2. Effectuez une copie du fichier VSPackage.en-us.resx pour chaque langue localisée.  
   
      Nom de chaque copie VSPackage. *Paramètres régionaux*.resx, où *paramètres régionaux* est un nom de culture particulière.  
   
-3.  Renommez le fichier Resources.en-us.resx Resources.resx.  
+3. Renommez le fichier Resources.en-us.resx Resources.resx.  
   
-4.  Effectuez une copie du fichier Resources.en-us.resx pour chaque langue localisée.  
+4. Effectuez une copie du fichier Resources.en-us.resx pour chaque langue localisée.  
   
      Nom de chaque copie de ressources. *Paramètres régionaux*.resx, où *paramètres régionaux* est un nom de culture particulière.  
   
-5.  Ouvrez chaque fichier .resx pour modifier les valeurs de chaîne en fonction de la langue et la culture. L’exemple suivant montre la définition de ressource localisée pour la barre de titre d’une fenêtre outil.  
+5. Ouvrez chaque fichier .resx pour modifier les valeurs de chaîne en fonction de la langue et la culture. L’exemple suivant montre la définition de ressource localisée pour la barre de titre d’une fenêtre outil.  
   
      [Resources.en-us.resx]  
   
@@ -117,9 +112,9 @@ Vous pouvez fournir un texte localisé pour le menu et barre d’outils, command
 ## <a name="incorporating-localized-resources-into-the-project"></a>Incorporer des ressources localisées dans le projet  
  Vous devez modifier le fichier assemblyinfo.cs et le fichier projet pour incorporer les ressources localisées.  
   
-1.  À partir de la **propriétés** nœud **l’Explorateur de solutions**, ouvrez assemblyinfo.cs ou assemblyinfo.vb dans l’éditeur.  
+1. À partir de la **propriétés** nœud **l’Explorateur de solutions**, ouvrez assemblyinfo.cs ou assemblyinfo.vb dans l’éditeur.  
   
-2.  Ajoutez l’entrée suivante.  
+2. Ajoutez l’entrée suivante.  
   
     ```csharp  
     [assembly: NeutralResourcesLanguage("en-US", UltimateResourceFallbackLocation.Satellite)]  
@@ -127,13 +122,13 @@ Vous pouvez fournir un texte localisé pour le menu et barre d’outils, command
   
      Cela définit anglais (États-Unis) comme langue par défaut.  
   
-3.  Décharger le projet.  
+3. Décharger le projet.  
   
-4.  Ouvrez le fichier projet dans l’éditeur.  
+4. Ouvrez le fichier projet dans l’éditeur.  
   
-5.  Recherchez le `ItemGroup` élément contenant `EmbeddedResource` éléments.  
+5. Recherchez le `ItemGroup` élément contenant `EmbeddedResource` éléments.  
   
-6.  Dans le `EmbeddedResource` élément qui appelle VSPackage.en-us.resx, remplacez le `ManifestResourceName` élément avec un `LogicalName` élément, la valeur `VSPackage.en-US.Resources`, comme suit.  
+6. Dans le `EmbeddedResource` élément qui appelle VSPackage.en-us.resx, remplacez le `ManifestResourceName` élément avec un `LogicalName` élément, la valeur `VSPackage.en-US.Resources`, comme suit.  
   
     ```xml  
     <EmbeddedResource Include="VSPackage.en-US.resx">  
@@ -142,9 +137,9 @@ Vous pouvez fournir un texte localisé pour le menu et barre d’outils, command
     </EmbeddedResource>  
     ```  
   
-7.  Pour chaque langue localisée, copiez la `EmbeddedResource` élément pour VsPackage.en-US et définissez le **Include** attribut et **LogicalName** élément de la copie pour les paramètres régionaux cibles, comme indiqué dans le code suivant exemple.  
+7. Pour chaque langue localisée, copiez la `EmbeddedResource` élément pour VsPackage.en-US et définissez le **Include** attribut et **LogicalName** élément de la copie pour les paramètres régionaux cibles, comme indiqué dans le code suivant exemple.  
   
-8.  À chaque localisé `VSCTCompile` élément, ajoutez un `ResourceName` élément sur lequel pointe `Menus.ctmenu`, comme illustré dans l’exemple suivant.  
+8. À chaque localisé `VSCTCompile` élément, ajoutez un `ResourceName` élément sur lequel pointe `Menus.ctmenu`, comme illustré dans l’exemple suivant.  
   
     ```xml  
     <ItemGroup>  
@@ -164,4 +159,3 @@ Vous pouvez fournir un texte localisé pour le menu et barre d’outils, command
  [Extension des Menus et commandes](../extensibility/extending-menus-and-commands.md)   
  [MenuCommands et OleMenuCommands](../misc/menucommands-vs-olemenucommands.md)   
  [Globalisation et localisation](http://msdn.microsoft.com/library/9a59696b-d89b-45bd-946d-c75da4732d02)
-

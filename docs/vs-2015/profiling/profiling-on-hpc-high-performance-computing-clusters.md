@@ -21,17 +21,17 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8390fcfd5dd89607422b7614d064ec736f98f61b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: e14ce5ac1e0596947e69d20e14a3dc1e7ff4f1e5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867917"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038949"
 ---
 # <a name="profiling-on-hpc-high-performance-computing-clusters"></a>Profilage sur des clusters HPC (High Performance Computing)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez profiler sur des nœuds de calcul de clusters Microsoft Windows HPC à l’aide de la méthode d’échantillonnage des outils de profilage [!INCLUDE[vsPreExt](../includes/vspreext-md.md)] ou [!INCLUDE[vsUltExt](../includes/vsultext-md.md)]. Pour plus d’informations sur HPC, consultez [Big Compute : HPC & Batch](https://azure.microsoft.com/solutions/big-compute/) sur le site Web de Microsoft.  
+Vous pouvez profiler sur des nœuds de calcul de clusters Microsoft Windows HPC à l’aide de la méthode d’échantillonnage des outils de profilage [!INCLUDE[vsPreExt](../includes/vspreext-md.md)] ou [!INCLUDE[vsUltExt](../includes/vsultext-md.md)]. Pour plus d’informations sur HPC consultez [Big Compute : HPC & Batch](https://azure.microsoft.com/solutions/big-compute/) sur le site Web de Microsoft.  
   
 ## <a name="prerequisites"></a>Prérequis  
  Pour effectuer un profilage sur un nœud de calcul HPC, vous devez effectuer les opérations suivantes :  
@@ -42,68 +42,68 @@ Vous pouvez profiler sur des nœuds de calcul de clusters Microsoft Windows HPC 
   
   Pour installer [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)] et les outils de profilage autonomes sur un calcul nœud HPC actif et activer le profilage sur l’ordinateur en cluster, effectuez les étapes suivantes :  
   
-1.  Ouvrez la fenêtre d’invite de commandes installée avec HPC Pack.  
+1. Ouvrez la fenêtre d’invite de commandes installée avec HPC Pack.  
   
-2.  Dans des invites de commandes distinctes, tapez les commandes suivantes :  
+2. Dans des invites de commandes distinctes, tapez les commandes suivantes :  
   
-    1.  `clusrun /all /scheduler:` *%HeadNode% %FxPath%* `/q /norestart`  
+    1. `clusrun /all /scheduler:` *%HeadNode% %FxPath%* `/q /norestart`  
   
-    2.  `clusrun /all /scheduler:` *%HeadNode%* `shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`  
+    2. `clusrun /all /scheduler:` *%HeadNode%* `shutdown /r /t 0 /d u:4:2 /c "Microsoft .NET Framework install required restart"`  
   
-    3.  `clusrun /all /scheduler:` *%HeadNode% %ProfilerPath%* `/q /norestart`  
+    3. `clusrun /all /scheduler:` *%HeadNode% %ProfilerPath%* `/q /norestart`  
   
 |||  
 |-|-|  
 |*%HeadNode%*|Nom du nœud principal du cluster.|  
-|*%FxPath%*|Chemin du programme d’installation de [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]. Sur le support d’installation de [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)], le chemin est le suivant : WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
-|*%ProfilerPath%*|Chemin de la version autonome du programme d’installation des outils de profilage. Sur le média d’installation de [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)], le chemin est le suivant : Standalone Profiler\x64\vs_profiler.exe|  
+|*%FxPath%*|Chemin du programme d’installation de [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)]. Sur le [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] support d’installation est le chemin d’accès : WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe|  
+|*%ProfilerPath%*|Chemin de la version autonome du programme d’installation des outils de profilage. Sur le [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] support d’installation est le chemin d’accès : Standalone Profiler\x64\vs_profiler.exe|  
   
 ## <a name="profiling-on-an-hpc-compute-node"></a>Profilage sur un nœud de calcul HPC  
  Pour configurer une session de profilage, spécifiez le cluster HPC et les informations cibles à l’aide de l’Assistant Performance HPC. Vous pouvez définir des options supplémentaires dans les pages de propriétés de session de performance. Les outils de profilage déploient automatiquement les fichiers binaires cibles nécessaires. Ils démarrent également le profileur et l’application HPC.  
   
 #### <a name="to-profile-on-an-hpc-compute-node"></a>Pour effectuer un profilage sur un nœud de calcul HPC  
   
-1.  Dans le menu **Analyser**, cliquez sur **Démarrer l’Assistant Performance HPC**. Si la commande n’est pas disponible, vérifiez que vous disposez des prérequis répertoriés ci-dessus.  
+1. Dans le menu **Analyser**, cliquez sur **Démarrer l’Assistant Performance HPC**. Si la commande n’est pas disponible, vérifiez que vous disposez des prérequis répertoriés ci-dessus.  
   
-2.  Cliquez sur **Suivant** dans la première page de l’Assistant.  
+2. Cliquez sur **Suivant** dans la première page de l’Assistant.  
   
-3.  Dans la deuxième page de l’Assistant, sélectionnez l’application que vous voulez profiler.  
+3. Dans la deuxième page de l’Assistant, sélectionnez l’application que vous voulez profiler.  
   
-    -   Pour profiler un projet actuellement ouvert dans [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], sélectionnez l’option **Un ou plusieurs projets disponibles**, puis sélectionnez le nom du projet dans la liste.  
+    - Pour profiler un projet actuellement ouvert dans [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)], sélectionnez l’option **Un ou plusieurs projets disponibles**, puis sélectionnez le nom du projet dans la liste.  
   
-    -   Pour profiler un fichier binaire qui ne se trouve pas dans un projet ouvert, sélectionnez l’option **Exécutable (fichier .EXE)**.  
+    - Pour profiler un fichier binaire qui ne se trouve pas dans un projet ouvert, sélectionnez l’option **Exécutable (fichier .EXE)**.  
   
-4.  Cliquez sur **Suivant**.  
+4. Cliquez sur **Suivant**.  
   
-5.  Dans la troisième page de l’Assistant :  
+5. Dans la troisième page de l’Assistant :  
   
-    -   Si vous profilez un exécutable qui ne se trouve pas dans un projet ouvert, spécifiez le chemin du fichier binaire dans **Quel est le chemin d’accès complet à l’exécutable**.  
+    - Si vous profilez un exécutable qui ne se trouve pas dans un projet ouvert, spécifiez le chemin du fichier binaire dans **Quel est le chemin d’accès complet à l’exécutable**.  
   
-    -   Si vous profilez un exécutable qui ne se trouve pas dans un projet ouvert, vous pouvez spécifier tout argument de ligne de commande à passer au processus dans **Arguments de ligne de commande**.  
+    - Si vous profilez un exécutable qui ne se trouve pas dans un projet ouvert, vous pouvez spécifier tout argument de ligne de commande à passer au processus dans **Arguments de ligne de commande**.  
   
-    -   Dans **Répertoire de travail distant**, spécifiez le chemin du dossier utilisé par les instances de processus sur chacun des nœuds de calcul.  
+    - Dans **Répertoire de travail distant**, spécifiez le chemin du dossier utilisé par les instances de processus sur chacun des nœuds de calcul.  
   
-    -   Dans **Emplacement de déploiement**, spécifiez le chemin du répertoire utilisé par le serveur HPC pour organiser des images pour le déploiement.  
+    - Dans **Emplacement de déploiement**, spécifiez le chemin du répertoire utilisé par le serveur HPC pour organiser des images pour le déploiement.  
   
-6.  Cliquez sur **Suivant**.  
+6. Cliquez sur **Suivant**.  
   
-7.  Dans la quatrième page de l’Assistant :  
+7. Dans la quatrième page de l’Assistant :  
   
-    -   Dans la liste **Nœud principal**, cliquez sur l’ordinateur qui joue le rôle du nœud principal HPC dans l’exécution du profilage. Le nœud principal peut être « localhost », ce qui vous permet d’effectuer le profilage sur l’ordinateur local sans avoir besoin d’un cluster.  
+    - Dans la liste **Nœud principal**, cliquez sur l’ordinateur qui joue le rôle du nœud principal HPC dans l’exécution du profilage. Le nœud principal peut être « localhost », ce qui vous permet d’effectuer le profilage sur l’ordinateur local sans avoir besoin d’un cluster.  
   
-    -   Dans la liste **Nombre de processus**, cliquez sur le nombre d’instances de l’application à exécuter.  
+    - Dans la liste **Nombre de processus**, cliquez sur le nombre d’instances de l’application à exécuter.  
   
-    -   Dans la liste **Options de profilage**, sélectionnez la cible de profilage.  
+    - Dans la liste **Options de profilage**, sélectionnez la cible de profilage.  
   
          Pour profiler un processus spécifique dans le cluster, sélectionnez l’option **Profil sur le rang**, puis sélectionnez le rang du processus dans la liste déroulante.  
   
          Pour profiler le ou les processus exécutés sur un nœud spécifique du cluster HPC, sélectionnez l’option **Profil sur le nœud**, puis sélectionnez le nœud dans la liste déroulante.  
   
-8.  Cliquez sur **Next**.  
+8. Cliquez sur **Next**.  
   
 9. Dans la cinquième page de l’Assistant, vous pouvez choisir de démarrer immédiatement le profileur et le processus de profilage, ou de démarrer le profilage ultérieurement à l’aide de l’Explorateur de performances.  
   
-    -   Cochez la case **Lancer le profilage une fois l’Assistant terminé** pour démarrer immédiatement le profilage, ou décochez-la pour démarrer le profilage manuellement.  
+    - Cochez la case **Lancer le profilage une fois l’Assistant terminé** pour démarrer immédiatement le profilage, ou décochez-la pour démarrer le profilage manuellement.  
   
 10. Cliquez sur **Terminer**.  
   
@@ -112,21 +112,21 @@ Vous pouvez profiler sur des nœuds de calcul de clusters Microsoft Windows HPC 
   
 #### <a name="to-open-the-performance-session-property-pages"></a>Pour ouvrir les pages de propriétés de session de performance  
   
-1.  Si nécessaire, ouvrez le fichier de session de performance (.psess) dans l’Explorateur de performances. Dans le menu **Fichier**, cliquez sur **Ouvrir**, puis recherchez le fichier.  
+1. Si nécessaire, ouvrez le fichier de session de performance (.psess) dans l’Explorateur de performances. Dans le menu **Fichier**, cliquez sur **Ouvrir**, puis recherchez le fichier.  
   
-2.  Dans l’Explorateur de performances, cliquez avec le bouton droit sur le nom de la session de performance, puis cliquez sur **Propriétés**.  
+2. Dans l’Explorateur de performances, cliquez avec le bouton droit sur le nom de la session de performance, puis cliquez sur **Propriétés**.  
   
-3.  Dans la boîte de dialogue Pages de propriétés, utilisez l’une des méthodes suivantes :  
+3. Dans la boîte de dialogue Pages de propriétés, utilisez l’une des méthodes suivantes :  
   
-    -   Cliquez sur **Général**, puis cochez la case à cocher **Collecter sur le cluster HPC** pour activer le profilage HPC ou décochez-la pour désactiver le profilage HPC.  
+    - Cliquez sur **Général**, puis cochez la case à cocher **Collecter sur le cluster HPC** pour activer le profilage HPC ou décochez-la pour désactiver le profilage HPC.  
   
-    -   Cliquez sur **Propriétés de lancement HPC** pour modifier les propriétés qui démarrent l’application HPC.  
+    - Cliquez sur **Propriétés de lancement HPC** pour modifier les propriétés qui démarrent l’application HPC.  
   
-    -   Cliquez sur **Propriétés avancées HPC** pour définir des options supplémentaires.  
+    - Cliquez sur **Propriétés avancées HPC** pour définir des options supplémentaires.  
   
 ### <a name="hpc-launch-properties"></a>Propriétés de lancement HPC  
   
-|Property|Description|  
+|Propriété|Description|  
 |--------------|-----------------|  
 |**Nœud principal**|Spécifie l’ordinateur qui joue le rôle du nœud principal HPC dans l’exécution du profilage.|  
 |**Nombre de processus**|Spécifie le nombre d’instances de l’application à exécuter dans l’application profilée.|  
@@ -137,7 +137,7 @@ Vous pouvez profiler sur des nœuds de calcul de clusters Microsoft Windows HPC 
   
 ### <a name="advanced-properties"></a>Propriétés avancées  
   
-|Property|Description|  
+|Propriété|Description|  
 |--------------|-----------------|  
 |**Nom du projet**|Nom du projet ou de la solution [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] actuels.|  
 |**Nettoyer après l’arrêt du profileur**|Quand la valeur est true, supprime les fichiers binaires déployés dans le répertoire d’exécution. Les fichiers et répertoires créés par le programme utilisateur ne sont pas supprimés au cours de cette étape. Si le répertoire d’exécution et le répertoire de déploiement ont été créés par l’IDE, ce dernier tente de les supprimer. Cependant, il n’effectue aucune suppression si ces répertoires contiennent des fichiers qu’il n’a pas déployés.|  

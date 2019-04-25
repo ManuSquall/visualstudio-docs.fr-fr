@@ -11,12 +11,12 @@ ms.assetid: ba318e12-921b-4b7a-a8c2-12c712be1dbf
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9efe961774ef1939cfc95c2efe9146a59e46bc17
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a4397b2710a7de4addd97bfcbdb4f8e80e2b9c70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951280"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060577"
 ---
 # <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>Procédure : Désactiver les avertissements de compatibilité pour les plug-ins de contrôle de code source
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Un utilisateur peut voir plusieurs avertissements de compatibilité lors de l’
   
 ### <a name="to-disable-the-warning-to-ensure-optimal-source-control-integration-with-visual-studio"></a>Pour désactiver l’avertissement : « S’assurer optimal intégration du contrôle source avec Visual Studio... »  
   
--   Définissez l’entrée de Registre suivante (en ajoutant la valeur si nécessaire) :  
+- Définissez l’entrée de Registre suivante (en ajoutant la valeur si nécessaire) :  
   
      HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\DontDisplayCheckDotNETCompatible = dword:00000001  
   
@@ -33,7 +33,7 @@ Un utilisateur peut voir plusieurs avertissements de compatibilité lors de l’
   
 ### <a name="to-disable-the-warning-the-installed-source-control-provider-does-not-support-all-the-capabilities"></a>Pour désactiver l’avertissement : « Le fournisseur de contrôle de code source installé ne prend pas en charge toutes les fonctionnalités »  
   
--   Définir les deux valeurs suivantes (en ajoutant les valeurs si nécessaire) :  
+- Définir les deux valeurs suivantes (en ajoutant les valeurs si nécessaire) :  
   
      HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl\WarnedOldMSSCCIProvider = dword:00000000  
   

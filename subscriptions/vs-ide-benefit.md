@@ -1,20 +1,20 @@
 ---
 title: Avantage IDE Visual Studio dans les abonnements Visual Studio | Microsoft Docs
 author: evanwindom
-ms.author: jaunger
-manager: evelynp
-ms.date: 12/19/2018
+ms.author: lank
+manager: lank
+ms.date: 04/03/2019
 ms.topic: conceptual
 description: Découvrez comment télécharger et installer l’IDE de Visual Studio inclus dans votre abonnement Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: f94927b3a9841987bf09dec853306064783727a5
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: e2ac206e85d43cff897ff97b42b4b8fccaeec906
+ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789885"
+ms.lasthandoff: 04/04/2019
+ms.locfileid: "59018140"
 ---
-# <a name="using-the-visual-studio-2017-benefit"></a>Utilisation de l’avantage Visual Studio 2017
+# <a name="using-the-visual-studio-2019-benefit"></a>Utiliser l’avantage Visual Studio 2019
 
 En tant qu’abonné Visual Studio, vous avez accès à l’IDE de Visual Studio.  La version spécifique disponible dépend du niveau de votre abonnement.  L’avantage s’affiche sous forme de vignette dans la catégorie Outils de la page [Avantages](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) du portail Abonné.
 
@@ -27,9 +27,9 @@ Pour télécharger l’IDE :
 1. Connectez-vous à [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
 2. Recherchez la vignette IDE Visual Studio dans la section Outils et cliquez sur le lien **Télécharger** en bas de la vignette de l’avantage.  Vous pouvez également télécharger l’avantage à partir de la page [Téléchargements](https://my.visualstudio.com/downloads?wt.mc_id=o~msft~docs).
    > [!div class="mx-imgBorder"]
-   > ![Vignette de Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-tile.png)
+   > ![Vignette Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-tile.png)
 
-3. Vous êtes ensuite redirigé vers la page Télécharger les résultats pour Visual Studio Enterprise, où vous pouvez télécharger l’IDE et obtenir une clé de produit pour l’activer. Vous pouvez également demander une clé de produit en cliquant sur le lien bleu **Obtenir une clé** ou en demander une ultérieurement à partir de la page [Clés de produit](https://my.visualstudio.com/productkeys).
+3. Vous accédez automatiquement à la page Télécharger les résultats pour Visual Studio, qui permet de télécharger l’environnement IDE et d’obtenir une clé de produit pour l’activer. Vous pouvez également demander une clé de produit en cliquant sur le lien bleu **Obtenir une clé** ou en demander une ultérieurement à partir de la page [Clés de produit](https://my.visualstudio.com/productkeys).
 4. Sous l’onglet Détails de la page Télécharger les résultats :
    - Sélectionnez votre architecture (x86, x64).
    - Sélectionnez la langue souhaitée.
@@ -47,7 +47,7 @@ Pour télécharger l’IDE :
 
 11. À la fin de l’installation, vous avez le choix de modifier l’installation ou de lancer Visual Studio.  Cliquez sur **Lancer** pour démarrer.
     > [!div class="mx-imgBorder"]
-    > ![Lancer Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-launch-cropped.png)
+    > ![Lancement de Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-launch-cropped.png)
 
 12. Connectez-vous avec le compte associé à votre abonnement Visual Studio.
 

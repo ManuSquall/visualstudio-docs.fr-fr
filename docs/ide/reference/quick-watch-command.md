@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5e45a6c63cb1f886c1440b93d58f944458f61290
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55969865"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62811698"
 ---
 # <a name="quick-watch-command"></a>Espion express, commande
 Affiche le texte sélectionné ou spécifié dans le champ Expression de la fenêtre [Espion express](../../debugger/watch-and-quickwatch-windows.md). Vous pouvez utiliser cette boîte de dialogue pour calculer la valeur actuelle d’une variable ou d’une expression reconnue par le débogueur, ou le contenu d’un Registre. Vous pouvez aussi modifier la valeur de toute variable non constante ou le contenu de tout Registre.
@@ -34,7 +34,7 @@ Debug.QuickWatchq [text]
 
  Optionnel. Texte à ajouter à la boîte de dialogue **Espion express**.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Si l’argument `text` est omis, le texte ou mot sélectionné au niveau du curseur est ajouté dans la fenêtre Espion.
 
 ## <a name="example"></a>Exemple

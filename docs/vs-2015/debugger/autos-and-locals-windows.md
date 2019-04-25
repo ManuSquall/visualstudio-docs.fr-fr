@@ -21,12 +21,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 612ed741e373b27c3564c185cc3e9bacffcb7739
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 261c0c0bd8b48634c8d24d56ee4df7ea3bbcf135
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950152"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072849"
 ---
 # <a name="autos-and-locals-windows"></a>Fenêtres Variables locales et Automatique
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +84,7 @@ void main() {
   
  Vous pouvez également voir les valeurs de retour des fonctions et des méthodes dans certaines circonstances. Consultez [View return values of method calls](#bkmk_returnValue) ci-dessous.  
   
-##  <a name="bkmk_returnValue"></a> View return values of method calls  
+## <a name="bkmk_returnValue"></a> View return values of method calls  
  Dans le code .NET et C++, vous pouvez examiner les valeurs de retour quand vous effectuez un pas à pas principal ou sortant dans un appel de méthode. Cette fonctionnalité est utile quand le résultat d’un appel de méthode n’est pas stocké dans une variable locale, par exemple quand une méthode est utilisée comme paramètre ou valeur de retour d’une autre méthode.  
   
  Le code C# suivant ajoute les valeurs de retour de deux fonctions :  
@@ -133,11 +133,11 @@ private static int subtractVars(int i, int j)
   
  Toutefois, soyez vigilant lorsque vous modifiez des valeurs. Voici quelques problèmes possibles :  
   
--   Évaluer certaines expressions peut modifier la valeur d’une variable ou affecter d’une manière ou d’une autre l’état de votre programme. Par exemple, l’évaluation de `var1 = ++var2` modifie la valeur de `var1` et `var2`.  
+- Évaluer certaines expressions peut modifier la valeur d’une variable ou affecter d’une manière ou d’une autre l’état de votre programme. Par exemple, l’évaluation de `var1 = ++var2` modifie la valeur de `var1` et `var2`.  
   
      Les expressions qui modifient les données sont réputées pour avoir des [effets secondaires](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\))qui peuvent produire des résultats inattendus si vous n’êtes pas informé. Assurez-vous que vous comprenez les conséquences d’une telle modification avant de l’effectuer.  
   
--   Modifier des valeurs à virgule flottante risque d’entraîner quelques légères imprécisions, dues à la conversion en binaire de la partie décimale des composants fractionnaires. Dans la variable à virgule flottante, même une modification apparemment anodine risque d’entraîner des changements de certains bits de poids faible.  
+- Modifier des valeurs à virgule flottante risque d’entraîner quelques légères imprécisions, dues à la conversion en binaire de la partie décimale des composants fractionnaires. Dans la variable à virgule flottante, même une modification apparemment anodine risque d’entraîner des changements de certains bits de poids faible.  
   
 ## <a name="debug-location-toolbar"></a>Barre d’outils Emplacement de débogage  
  Vous pouvez utiliser la barre d’outils **Emplacement de débogage** pour sélectionner la fonction, le thread ou le processus souhaité. Définissez un point d’arrêt et démarrez le débogage. (Si vous ne voyez pas cette barre d’outils, vous pouvez l’activer en cliquant dans une partie vide de la zone de la barre d’outils. Vous devez voir une liste de barres d’outils ; sélectionnez **Emplacement de débogage**). Lorsque le point d’arrêt est atteint, l’exécution s’arrête et vous pouvez voir la barre d’outils Emplacement de débogage, qui est la ligne inférieure de l’image suivante :  

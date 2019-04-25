@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c64fac3e69a1b7678b9583f8529dd7b94201932e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 49cb0af47f34abbda5bd212d8ce535e98c44d6b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614686"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054571"
 ---
 # <a name="office-project-templates-overview"></a>Vue d’ensemble des modèles de projet Office
   Les Outils de développement Microsoft Office dans Visual Studio incluent des modèles de projet pour la création des types suivants de solutions Office :
@@ -53,7 +53,7 @@ ms.locfileid: "56614686"
 > [!NOTE]
 > Les Outils de développement Office sont inclus avec certaines éditions de Visual Studio. Pour plus d’informations, consultez [configurer un ordinateur pour développer des solutions Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
 
-##  <a name="DocLevel"></a> Personnalisations au niveau du document
+## <a name="DocLevel"></a> Personnalisations au niveau du document
  Le nœud **Office** dans la boîte de dialogue **Nouveau projet** fournit les modèles de projet suivants pour vous aider à créer des personnalisations au niveau du document pour Word et Excel :
 
 - **Document VSTO pour Word 2013 et 2016**
@@ -81,17 +81,17 @@ ms.locfileid: "56614686"
 
  Pour plus d'informations sur la mise en route avec ces types de projet, consultez les rubriques suivantes :
 
--   [Programmer des personnalisations au niveau du document](../vsto/programming-document-level-customizations.md)
+- [Programmer des personnalisations au niveau du document](../vsto/programming-document-level-customizations.md)
 
--   [Solutions Word](../vsto/word-solutions.md)
+- [Solutions Word](../vsto/word-solutions.md)
 
--   [Solutions Excel](../vsto/excel-solutions.md)
+- [Solutions Excel](../vsto/excel-solutions.md)
 
--   [Procédure pas à pas : Créer votre première personnalisation au niveau du document pour Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)
+- [Procédure pas à pas : Créer votre première personnalisation au niveau du document pour Word](../vsto/walkthrough-creating-your-first-document-level-customization-for-word.md)
 
--   [Procédure pas à pas : Créer votre première personnalisation au niveau du document pour Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)
+- [Procédure pas à pas : Créer votre première personnalisation au niveau du document pour Excel](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)
 
-##  <a name="AppLevel"></a> Compléments VSTO
+## <a name="AppLevel"></a> Compléments VSTO
  Le nœud **Office/SharePoint** dans la boîte de dialogue **Nouveau projet** fournit les modèles de projets suivants pour vous aider à créer des compléments VSTO.
 
 - **Complément VSTO pour Excel 2013 et 2016**
@@ -157,7 +157,7 @@ ms.locfileid: "56614686"
 |Les utilisateurs peuvent ouvrir et modifier un document, sauf s'il est en lecture seule. Les modifications enregistrées sont conservées dans l'original.|Les utilisateurs peuvent ouvrir un modèle pour créer une copie locale sous forme de nouveau document. Ils ne peuvent pas modifier l'original à moins qu'ils ne disposent d'autorisations particulières.|
 |Une fois le document ouvert, il déclenche l'événement <xref:Microsoft.Office.Tools.Word.Document.Open> .|Une fois le modèle ouvert, il déclenche l'événement <xref:Microsoft.Office.Tools.Word.Document.New> .|
 
-##  <a name="Limitations"></a> Limitations des modèles globaux et compléments Excel (fichiers .xla)
+## <a name="Limitations"></a> Limitations des modèles globaux et compléments Excel (fichiers .xla)
  Les documents, classeurs et modèles peuvent ne pas fonctionner correctement en tant que modèles globaux ou compléments VSTO Excel (fichiers .xla).
 
 ## <a name="word-templates"></a>Modèles Word

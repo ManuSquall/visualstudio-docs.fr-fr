@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 1c69c78e9a081680c6ee5279ddce1816bf500672
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: 57249507373199d217079a9b18c483fee9a51098
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815584"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>Problèmes connus et dépannage (Outils Visual Studio pour Unity)
 
@@ -62,7 +62,7 @@ Tout d’abord, vérifiez que Visual Studio est configuré comme éditeur de scr
 
 ## <a name="extra-reloads-or-visual-studio-losing-all-open-windows"></a>Rechargements supplémentaires ou perte de toutes les fenêtres de Visual Studio
 
-Veillez à ne jamais toucher aux fichiers projet directement à partir d’un processeur de composants ou de tout autre outil. Si vous devez vraiment manipuler le fichier projet, utilisez pour cela l’API que nous exposons. Consultez la [section des problèmes de références d’assembly](#Assembly-reference-issues).
+Veillez à ne jamais toucher aux fichiers projet directement à partir d’un processeur de composants ou de tout autre outil. Si vous devez vraiment manipuler le fichier projet, utilisez pour cela l’API que nous exposons. Consultez la [section des problèmes de références d’assembly](#assembly-reference-issues).
 
 Si vous constatez des rechargements supplémentaires ou si Visual Studio perd toutes les fenêtres ouvertes lors du rechargement, vérifiez que les packs de ciblage .NET installés sont les bons. Pour plus d’informations, voir la section suivante sur les frameworks.
 

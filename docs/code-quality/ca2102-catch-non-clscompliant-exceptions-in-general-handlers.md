@@ -35,7 +35,7 @@ Un membre dans un assembly qui n’est pas marqué avec le <xref:System.Runtime.
 
 ## <a name="rule-description"></a>Description de la règle
 
-Un bloc catch qui gère <xref:System.Exception> intercepte toutes les exceptions conformes Common Language Specification (CLS). Toutefois, il n’intercepte pas les exceptions non conformes CLS. Non-CLS conformes exceptions peuvent être levées à partir du code natif ou du code managé qui a été généré par le Microsoft intermediate language (MSIL) assembleur. Notez que c# et [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] compilateurs n’autorisent pas non-CLS levée d’exceptions et [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] n’intercepte pas les exceptions non conformes CLS. Si l’intention du bloc catch doit gérer toutes les exceptions, utilisez la syntaxe de bloc catch général suivante.
+Un bloc catch qui gère <xref:System.Exception> intercepte toutes les exceptions conformes Common Language Specification (CLS). Toutefois, il n’intercepte pas les exceptions non conformes CLS. Non-CLS conformes exceptions peuvent être levées à partir du code natif ou du code managé qui a été généré par le Microsoft intermediate language (MSIL) assembleur. Notez que C# et [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] compilateurs n’autorisent pas non-CLS levée d’exceptions et [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] n’intercepte pas les exceptions non conformes CLS. Si l’intention du bloc catch doit gérer toutes les exceptions, utilisez la syntaxe de bloc catch général suivante.
 
 - C#: `catch {}`
 

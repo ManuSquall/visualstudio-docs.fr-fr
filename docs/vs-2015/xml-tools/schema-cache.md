@@ -9,23 +9,21 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5827debb4f79ef34bbdd059c6beb0003988a721c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8667c55eed6de6b2b3c76af2ef45a5357a254516
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953032"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115989"
 ---
 # <a name="schema-cache"></a>Cache de schéma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 L'éditeur XML fournit un cache de schéma dans le répertoire %InstallRoot%\Xml\Schemas. Le cache de schéma est global pour tous les utilisateurs employant votre ordinateur et comprend des schémas XML standard utilisés pour IntelliSense et la validation de documents XML.  
 
  L’éditeur XML peut également rechercher des schémas situés dans la solution, des schémas spécifiés dans le **schémas** champ du document **propriétés** fenêtre et des schémas identifiés par le `xsi:schemaLocation` et `xsi:noNamespaceSchemaLocation`attributs.  
 
  Le tableau suivant décrit les schémas installés avec l'éditeur XML.  
-
 
 |     Nom de fichier      |                                                      Description                                                      |
 |-------------------|-----------------------------------------------------------------------------------------------------------------------|
@@ -111,21 +109,21 @@ L'éditeur XML fournit un cache de schéma dans le répertoire %InstallRoot%\Xml
 
 #### <a name="to-change-the-schema-cache-location"></a>Pour modifier l'emplacement du cache de schéma  
 
-1.  À partir de la **outils** menu, sélectionnez **Options**.  
+1. À partir de la **outils** menu, sélectionnez **Options**.  
 
-2.  Développez **éditeur de texte**, développez **XML**, puis cliquez sur **divers**.  
+2. Développez **éditeur de texte**, développez **XML**, puis cliquez sur **divers**.  
 
-3.  Cliquez sur le **Parcourir** bouton sur le **schémas** champ.  
+3. Cliquez sur le **Parcourir** bouton sur le **schémas** champ.  
 
-4.  Sélectionnez le dossier du cache de schéma et cliquez sur **OK**.  
+4. Sélectionnez le dossier du cache de schéma et cliquez sur **OK**.  
 
 #### <a name="to-add-another-directory-of-common-schemas"></a>Pour ajouter un autre répertoire de schémas courants  
 
-1.  Modifiez le fichier catalog.xml qui se trouve dans le répertoire de cache de schéma de l'éditeur XML.  
+1. Modifiez le fichier catalog.xml qui se trouve dans le répertoire de cache de schéma de l'éditeur XML.  
 
-2.  Ajoutez-y un nouvel élément `<Catalog href="…"/>` pointant vers le répertoire contenant les schémas supplémentaires.  
+2. Ajoutez-y un nouvel élément `<Catalog href="…"/>` pointant vers le répertoire contenant les schémas supplémentaires.  
 
-3.  Enregistrez les modifications apportées.  
+3. Enregistrez les modifications apportées.  
 
      Le catalogue est automatiquement rechargé.  
 

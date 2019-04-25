@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fdfb43a00515dff57dd59943043ee0a42dc270f
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.openlocfilehash: ff64735e1711a18bd7c55c6e052fa8579bd12e16
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428724"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100356"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>Configurer le pare-feu de Windows pour le débogage distant
 
@@ -102,13 +102,13 @@ Sur un ordinateur distant, les outils de débogage distants sont dans :
 
 1. Sélectionnez **permettre à une application via le pare-feu de Windows**.
 
-1.  Si **débogueur distant** ou **débogueur distant Visual Studio** n’apparaît pas sous **applications et fonctionnalités autorisées**, sélectionnez **modifier les paramètres**, puis sélectionnez **autoriser une autre application**.
+1. Si **débogueur distant** ou **débogueur distant Visual Studio** n’apparaît pas sous **applications et fonctionnalités autorisées**, sélectionnez **modifier les paramètres**, puis sélectionnez **autoriser une autre application**.
 
-1.  Si l’application débogueur distant n’est pas toujours répertoriée dans le **ajouter une application** boîte de dialogue, sélectionnez **Parcourir**et accédez à  *\<répertoire d’installation de Visual Studio\> \\Common7\\IDE\\débogueur distant\\\<x86*, *x64*, ou *Appx* \> , en fonction de l’architecture appropriée pour votre application. Sélectionnez *msvsmon.exe*, puis sélectionnez **ajouter**.
+1. Si l’application débogueur distant n’est pas toujours répertoriée dans le **ajouter une application** boîte de dialogue, sélectionnez **Parcourir**et accédez à  *\<répertoire d’installation de Visual Studio\> \\Common7\\IDE\\débogueur distant\\\<x86*, *x64*, ou *Appx* \> , en fonction de l’architecture appropriée pour votre application. Sélectionnez *msvsmon.exe*, puis sélectionnez **ajouter**.
 
-1.  Dans le **applications** liste, sélectionnez le **débogueur distant** que vous venez d’ajouter. Sélectionnez **types de réseau**, puis sélectionnez un ou plusieurs types de réseau, y compris le type de réseau pour la connexion à distance.
+1. Dans le **applications** liste, sélectionnez le **débogueur distant** que vous venez d’ajouter. Sélectionnez **types de réseau**, puis sélectionnez un ou plusieurs types de réseau, y compris le type de réseau pour la connexion à distance.
 
-1.  Sélectionnez **ajouter**, puis sélectionnez **OK**.
+1. Sélectionnez **ajouter**, puis sélectionnez **OK**.
 
 ## <a name="troubleshooting"></a>Résoudre les problèmes de la connexion de débogage à distance
 

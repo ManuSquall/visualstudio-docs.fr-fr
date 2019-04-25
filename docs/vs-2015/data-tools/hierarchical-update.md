@@ -24,17 +24,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 55452897212c0ce28ec44aa107de44b29ed9f80b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 17eb5c1ca2ad35b7a510c5a70d3ad5c5f741c69d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950638"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063398"
 ---
 # <a name="hierarchical-update"></a>Mise à jour hiérarchique
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Mise à jour hiérarchique * désigne le processus d’enregistrement des données mises à jour (à partir d’un jeu de données avec deux ou plusieurs tables liées) à une base de données tout en conservant les règles d’intégrité référentielle. *L’intégrité référentielle* fait référence aux règles de cohérence fournies par les contraintes dans une base de données qui contrôlent le comportement de l’insertion, la mise à jour et suppression des enregistrements associés. Par exemple, il est l’intégrité référentielle impose la création d’un enregistrement de client avant d’autoriser des commandes doit être créé pour ce client.  Pour plus d’informations sur les relations dans les jeux de données, consultez [relations dans les jeux de données](../data-tools/relationships-in-datasets.md)  
   
  La fonctionnalité de mise à jour hiérarchique utilise un `TableAdapterManager` pour gérer le `TableAdapter`s dans un dataset typé. Le `TableAdapterManager` composant est un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-généré (classe), il est donc pas partie de la [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Lorsque vous faites glisser une table à partir de la fenêtre sources de données à un formulaire de Windows ou d’une page WPF, Visual Studio ajoute une variable de type TableAdapterManager à la page ou le formulaire, et il apparaît dans le concepteur dans la barre d’état du composant. Pour plus d’informations sur la `TableAdapterManager` de classe, consultez la section de référence de TableAdapterManager de [vue d’ensemble de TableAdapterManager](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).  
@@ -100,11 +99,11 @@ Mise à jour hiérarchique * désigne le processus d’enregistrement des donné
   
 #### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>Pour ajouter du code afin de valider les enregistrements parents dans le dataset avant d’ajouter de nouveaux enregistrements enfants  
   
-1.  Créez un gestionnaire d'événements pour l'événement `OrdersBindingSource.AddingNew`.  
+1. Créez un gestionnaire d'événements pour l'événement `OrdersBindingSource.AddingNew`.  
   
-    -   Ouvrez **Form1** en mode conception, sélectionnez **OrdersBindingSource** dans la barre des composants, sélectionnez **événements** dans le **propriétés** fenêtre, et puis double-cliquez sur le **AddingNew** événement.  
+    - Ouvrez **Form1** en mode conception, sélectionnez **OrdersBindingSource** dans la barre des composants, sélectionnez **événements** dans le **propriétés** fenêtre, et puis double-cliquez sur le **AddingNew** événement.  
   
-2.  Ajouter une ligne de code au gestionnaire d’événements qui appelle la `CustomersBindingSource.EndEdit` (méthode). Le code du gestionnaire d'événements `OrdersBindingSource_AddingNew` doit ressembler à ce qui suit :  
+2. Ajouter une ligne de code au gestionnaire d’événements qui appelle la `CustomersBindingSource.EndEdit` (méthode). Le code du gestionnaire d'événements `OrdersBindingSource_AddingNew` doit ressembler à ce qui suit :  
   
      [!code-csharp[VSProDataOrcasHierarchicalUpdate#2](../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs#2)]
      [!code-vb[VSProDataOrcasHierarchicalUpdate#2](../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb#2)]  

@@ -17,17 +17,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 41467515e172b34fe96200020189a02a6a4fc8a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b1549cf23f87a56f724a0b5e56b7b59f4fa88ac2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952663"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105004"
 ---
 # <a name="edit-data-in-datasets"></a>Modifier des données dans des datasets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Pour modifier les données dans les tables de données de la même manière que vous modifiez les données dans une table dans une base de données. Le processus peut inclure insertion, la mise à jour et suppression d’enregistrements dans la table. Dans un formulaire lié aux données, vous pouvez spécifier quels champs sont modifiables par l’utilisateur. Dans ce cas, l’infrastructure de liaison de données gère tout le suivi des modifications afin que les modifications puissent être envoyées à la base de données plus tard. Si vous apportez des modifications par programme aux données, et que vous avez l’intention de renvoyer ces modifications à la base de données, vous devez utiliser les objets et les méthodes qui effectuent le suivi des modifications pour vous.  
   
  Outre la modification des données réelles, vous pouvez également interroger un <xref:System.Data.DataTable> pour retourner les lignes de données spécifiques. Par exemple, vous est possible d’interroger pour des lignes individuelles, des versions spécifiques de lignes (d’origine et proposés), les lignes qui ont été modifiés ou les lignes qui contiennent des erreurs.  
@@ -59,7 +58,7 @@ Pour modifier les données dans les tables de données de la même manière que 
   
 #### <a name="to-delete-records-from-a-data-table"></a>Pour supprimer des enregistrements à partir d’une table de données  
   
--   Appelez le <xref:System.Data.DataRow.Delete%2A> méthode d’un <xref:System.Data.DataRow>.  
+- Appelez le <xref:System.Data.DataRow.Delete%2A> méthode d’un <xref:System.Data.DataRow>.  
   
      Cette méthode ne supprime pas physiquement l’enregistrement. Au lieu de cela, il les marque pour suppression.  
   
@@ -84,7 +83,7 @@ Pour modifier les données dans les tables de données de la même manière que 
   
 #### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>Pour déterminer si des modifications ont été apportées aux lignes  
   
--   Appelez le <xref:System.Data.DataSet.HasChanges%2A> méthode d’un dataset pour vérifier les lignes modifiées.  
+- Appelez le <xref:System.Data.DataSet.HasChanges%2A> méthode d’un dataset pour vérifier les lignes modifiées.  
   
      L’exemple suivant montre comment vérifier la valeur de retour à partir de la <xref:System.Data.DataSet.HasChanges%2A> méthode pour détecter s’il existe des lignes modifiées dans un dataset nommé `NorthwindDataset1`:  
   
@@ -96,7 +95,7 @@ Pour modifier les données dans les tables de données de la même manière que 
   
 #### <a name="to-determine-what-type-of-changes-have-been-made-to-a-row"></a>Pour déterminer le type de modifications ont été apportées à une ligne  
   
--   Passer un <xref:System.Data.DataRowState> valeur pour le <xref:System.Data.DataSet.HasChanges%2A> (méthode).  
+- Passer un <xref:System.Data.DataRowState> valeur pour le <xref:System.Data.DataSet.HasChanges%2A> (méthode).  
   
      L’exemple suivant montre comment vérifier un dataset nommé `NorthwindDataset1` pour déterminer si toutes les nouvelles lignes ont été ajoutés à celui-ci :  
   
@@ -106,9 +105,9 @@ Pour modifier les données dans les tables de données de la même manière que 
 ## <a name="to-locate-rows-that-have-errors"></a>Pour rechercher des lignes qui contiennent des erreurs  
  Lorsque vous travaillez avec des colonnes et des lignes de données, vous pouvez rencontrer des erreurs. Vous pouvez vérifier le `HasErrors` propriété afin de déterminer si des erreurs existent dans un <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, ou <xref:System.Data.DataRow>.  
   
-1.  Vérifier le `HasErrors` propriété pour voir s’il existe des erreurs dans le jeu de données.  
+1. Vérifier le `HasErrors` propriété pour voir s’il existe des erreurs dans le jeu de données.  
   
-2.  Si le `HasErrors` propriété est `true`, effectuer une itération dans les collections de tables, puis le via les lignes, pour rechercher la ligne avec l’erreur.  
+2. Si le `HasErrors` propriété est `true`, effectuer une itération dans les collections de tables, puis le via les lignes, pour rechercher la ligne avec l’erreur.  
   
      [!code-csharp[VbRaddataEditing#23](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs#23)]
      [!code-vb[VbRaddataEditing#23](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb#23)]

@@ -1,5 +1,5 @@
 ---
-title: Guide pratique pour créer un rapport Suivi d’événements pour Windows (ETW) des outils de profilage | Microsoft Docs
+title: 'Procédure : Créer un rapport Suivi d’événements pour Windows (ETW) des outils de profilage | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,14 +9,14 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e8ad32f3231915c86f9578563ec4c0684435a3ee
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 0de5d5560c2e840fd2df7fdc5811c5eea0747da8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797335"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106499"
 ---
-# <a name="how-to-create-a-profiling-tools-etw-report"></a>Guide pratique pour créer un rapport Suivi d’événements pour Windows (ETW) des outils de profilage
+# <a name="how-to-create-a-profiling-tools-etw-report"></a>Procédure : Créer un rapport ETW outils de profilage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le rapport Suivi d’événements pour Windows (ETW) répertorie les événements de suivi d’événements pour Windows enregistrés dans une session de performances des outils de profilage de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Les données de suivi d’événements pour Windows sont collectées dans un fichier binaire (.etl). Pour plus d’informations sur ce rapport, consultez [Rapport Suivi d’événements pour Windows](../profiling/event-tracing-for-windows-etw-report.md).  
@@ -24,7 +24,7 @@ Le rapport Suivi d’événements pour Windows (ETW) répertorie les événement
 > [!NOTE]
 >  Vous ne pouvez pas afficher les rapports de suivi d’événements pour Windows dans l’interface pour [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-- Pour plus d’informations sur la collecte des données de suivi d’événements pour Windows à l’aide de l’interface pour [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], consultez [Guide pratique pour collecter les données de suivi d’événements pour Windows (ETW)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md).  
+- Pour plus d’informations sur la collecte des données de suivi d’événements pour Windows à l’aide de l’interface pour [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], consultez [Guide pratique pour Collecter le suivi d’événements pour Windows (ETW) données](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md).  
   
 - Pour plus d’informations sur la collecte des données de suivi d’événements pour Windows à partir d’une invite de commandes, consultez [VSPerfCmd](../profiling/vsperfcmd.md) et [Événements](../profiling/events-vsperfcmd.md).  
   
@@ -32,7 +32,7 @@ Le rapport Suivi d’événements pour Windows (ETW) répertorie les événement
   
 ### <a name="to-generate-an-etw-report"></a>Pour générer un rapport Suivi d’événements pour Windows  
   
--   Dans une fenêtre **Invite de commandes**, exécutez la commande suivante :  
+- Dans une fenêtre **Invite de commandes**, exécutez la commande suivante :  
   
      *chemin_outils* **VSPerfReport** *fichier_VSP*  **/Summary:ETW [/Xml]**  
   

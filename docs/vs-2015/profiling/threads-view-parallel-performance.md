@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 34fe3cecc07d567c362e0dbdde3eb271c80dd61c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e2fd0e329e6cf3434348fba1d3282921ee8c1f57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54756802"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114793"
 ---
 # <a name="threads-view-parallel-performance"></a>Vue Threads (Performances parallèles)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,19 +42,19 @@ La vue threads est la vue la plus détaillée et la plus riche en fonctionnalit�
 ## <a name="usage"></a>Utilisation  
  Voici quelques façons d’utiliser la vue Threads :  
   
--   Identifier les raisons pour lesquelles l’interface utilisateur d’une application ne répond pas pendant certaines phases de l’exécution.  
+- Identifier les raisons pour lesquelles l’interface utilisateur d’une application ne répond pas pendant certaines phases de l’exécution.  
   
--   Déterminer la quantité de temps passée dans des blocages liés à la synchronisation, à des E/S, à des défauts de page et à d’autres événements.  
+- Déterminer la quantité de temps passée dans des blocages liés à la synchronisation, à des E/S, à des défauts de page et à d’autres événements.  
   
--   Identifier le niveau d’interférence provenant d’autres processus qui s’exécutent sur le système.  
+- Identifier le niveau d’interférence provenant d’autres processus qui s’exécutent sur le système.  
   
--   Identifier les problèmes d’équilibrage de charge pour l’exécution parallèle.  
+- Identifier les problèmes d’équilibrage de charge pour l’exécution parallèle.  
   
--   Identifier les raisons pour lesquelles la scalabilité est sous-optimisée ou inexistante (par exemple pourquoi les performances d’une application parallèle ne s’améliorent pas quand plus de cœurs logiques sont disponibles).  
+- Identifier les raisons pour lesquelles la scalabilité est sous-optimisée ou inexistante (par exemple pourquoi les performances d’une application parallèle ne s’améliorent pas quand plus de cœurs logiques sont disponibles).  
   
--   Comprendre le degré de concurrence dans l’application, pour optimiser la parallélisation.  
+- Comprendre le degré de concurrence dans l’application, pour optimiser la parallélisation.  
   
--   Comprendre les dépendances entre les threads Worker et les chemins critiques de l’exécution.  
+- Comprendre les dépendances entre les threads Worker et les chemins critiques de l’exécution.  
   
 ## <a name="examining-specific-time-intervals-and-threads"></a>Examen d’intervalles de temps et de threads spécifiques  
  La vue Threads montre une chronologie. Vous pouvez effectuer un zoom et un panoramique dans la chronologie pour examiner des intervalles spécifiques et des threads de votre application. Le temps figure sur l’axe des X et plusieurs canaux sont présents sur l’axe Y :  

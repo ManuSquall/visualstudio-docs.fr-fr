@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbb3d6dd6e83d245afc8d2367e120db245d8285f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 829e219056b7c0a74226dd933ab38b8559ebd6b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951046"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107084"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Décrire le flux de contrôle à l'aide de fragments dans les diagrammes de séquence UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,16 +38,16 @@ Dans un diagramme de séquence UML, les *fragments combinés* vous permettent d�
   
  Les éléments présentés dans l’illustration sont les suivants :  
   
-1.  Fragment combiné. Il existe plusieurs genres de fragments combinés. Cet exemple est un fragment combiné Alt que vous pouvez utiliser pour montrer que d’autres séquences de messages peuvent se produire.  
+1. Fragment combiné. Il existe plusieurs genres de fragments combinés. Cet exemple est un fragment combiné Alt que vous pouvez utiliser pour montrer que d’autres séquences de messages peuvent se produire.  
   
-2.  Opérandes d’interaction. Chaque fragment combiné contient au moins un opérande d’interaction qui peut contenir des messages, des utilisations d’interaction et de plus petits fragments combinés. Dans cet exemple, le fragment combiné Alt comprend deux opérations d’interaction, affichant deux autres séquences de messages.  
+2. Opérandes d’interaction. Chaque fragment combiné contient au moins un opérande d’interaction qui peut contenir des messages, des utilisations d’interaction et de plus petits fragments combinés. Dans cet exemple, le fragment combiné Alt comprend deux opérations d’interaction, affichant deux autres séquences de messages.  
   
-3.  Vous pouvez sélectionner chaque opérande d’interaction individuellement en cliquant dessus. Dans cet exemple, l’opérande d’interaction supérieur est sélectionné afin que sa limite puisse être affichée. En règle générale, seule la ligne de séparation entre les opérandes d’interaction est visible.  
+3. Vous pouvez sélectionner chaque opérande d’interaction individuellement en cliquant dessus. Dans cet exemple, l’opérande d’interaction supérieur est sélectionné afin que sa limite puisse être affichée. En règle générale, seule la ligne de séparation entre les opérandes d’interaction est visible.  
   
     > [!NOTE]
     >  Pour sélectionner l’opérande d’interaction supérieur, vous ne devez pas cliquer trop près de la partie supérieure du fragment combiné.  
   
-4.  Gardes. Vous pouvez attribuer un garde à chaque opérande d’interaction. Celui-ci décrit la condition sous laquelle les messages contenus dans l’opérande d’interaction sont exécutés.  
+4. Gardes. Vous pouvez attribuer un garde à chaque opérande d’interaction. Celui-ci décrit la condition sous laquelle les messages contenus dans l’opérande d’interaction sont exécutés.  
   
 ## <a name="creating-combined-fragments"></a>Création de fragments combinés  
  Pour obtenir la liste des genres de fragments que vous pouvez créer, consultez [Genres de fragments combinés](#KindsOfFragment).  
@@ -97,12 +97,12 @@ Dans un diagramme de séquence UML, les *fragments combinés* vous permettent d�
   
 #### <a name="to-set-or-view-the-properties-of-a-combined-fragment"></a>Pour définir ou afficher les propriétés d’un fragment combiné  
   
--   Cliquez avec le bouton droit sur le titre du fragment combiné, puis cliquez sur **Propriétés**.  
+- Cliquez avec le bouton droit sur le titre du fragment combiné, puis cliquez sur **Propriétés**.  
   
     > [!NOTE]
     >  Les différents genres de fragments combinés possèdent des propriétés différentes.  
   
-##  <a name="KindsOfFragment"></a> Genres de fragments combinés  
+## <a name="KindsOfFragment"></a> Genres de fragments combinés  
   
 ### <a name="fragments-describing-control-flow"></a>Fragments décrivant le flux de contrôle  
  Un diagramme de séquence simple affiche une seule séquence type. Vous pouvez utiliser les types suivants de fragments combinés pour décrire des variations qui peuvent se produire en différentes occasions.  

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff3fc897c0b413d6882584671f9cebe1ef73d316
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 6e867c9e83bf353e57d75ee611fe1074efcc9cfe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335309"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070379"
 ---
 # <a name="service-essentials"></a>Éléments fondamentaux du service
 Un service est un contrat entre deux VSPackages. Un VSPackage fournit un ensemble spécifique d’interfaces pour un autre package Visual Studio consommer. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] est lui-même une collection de VSPackages qui fournit des services aux autres VSPackages.
@@ -68,15 +68,15 @@ Vous pouvez obtenir la plupart des services de Visual Studio en appelant la mét
 
 Heureusement, <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> fonctionne correctement la plupart du temps.
 
--   Si un VSPackage fournit un service connu uniquement à un autre package Visual Studio, le VSPackage demandant le service est placé avant le VSPackage pour fournir que le service est chargé.
+- Si un VSPackage fournit un service connu uniquement à un autre package Visual Studio, le VSPackage demandant le service est placé avant le VSPackage pour fournir que le service est chargé.
 
--   Si une fenêtre outil est créée par un VSPackage, le VSPackage est placé avant la création de la fenêtre outil.
+- Si une fenêtre outil est créée par un VSPackage, le VSPackage est placé avant la création de la fenêtre outil.
 
--   Si un conteneur de contrôle est hébergé par une fenêtre outil créée par un VSPackage, le VSPackage est placé avant le conteneur de contrôle est créé.
+- Si un conteneur de contrôle est hébergé par une fenêtre outil créée par un VSPackage, le VSPackage est placé avant le conteneur de contrôle est créé.
 
 ### <a name="to-get-a-service-from-within-a-tool-window-or-control-container"></a>Pour obtenir un service à partir d’un conteneur de contrôle ou de la fenêtre outil
 
--   Insérez ce code dans le constructeur, une fenêtre outil ou un conteneur de contrôle :
+- Insérez ce code dans le constructeur, une fenêtre outil ou un conteneur de contrôle :
 
     ```csharp
     IVsActivityLog log = Package.GetGlobalService(typeof(SVsActivityLog)) as IVsActivityLog;

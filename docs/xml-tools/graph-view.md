@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5424e813c5f1e3908c02dbc63798f5891edb8131
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 3beeb41d89f96cea8ab0f7f97bada815101f7e2f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526644"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079706"
 ---
 # <a name="graph-view"></a>Vue du graphique
 
@@ -120,11 +120,11 @@ La vue du graphique fournit une représentation graphique des nœuds de schéma 
 
  La fonction d'annulation/de rétablissement est activée dans la vue du graphique pour les actions suivantes :
 
--   Ajout d'un nœud unique par glisser-déplacer.
+- Ajout d'un nœud unique par glisser-déplacer.
 
--   Ajout de plusieurs nœuds de la fenêtre des résultats de la recherche dans des requêtes de l'Explorateur de schémas ou de la vue de départ.
+- Ajout de plusieurs nœuds de la fenêtre des résultats de la recherche dans des requêtes de l'Explorateur de schémas ou de la vue de départ.
 
--   Suppression d'un ou plusieurs nœuds.
+- Suppression d'un ou plusieurs nœuds.
 
 ## <a name="zoom"></a>Zoom
 
@@ -132,9 +132,9 @@ La vue du graphique fournit une représentation graphique des nœuds de schéma 
 
  Le zoom peut être contrôlé des façons suivantes :
 
--   En maintenant la **Ctrl** wheel de clé et la rotation de la souris lorsque la souris passe sur la surface de la vue du graphique.
+- En maintenant la **Ctrl** wheel de clé et la rotation de la souris lorsque la souris passe sur la surface de la vue du graphique.
 
--   En utilisant le contrôle Slider. Le curseur affiche le niveau de zoom actuel.
+- En utilisant le contrôle Slider. Le curseur affiche le niveau de zoom actuel.
 
 Le curseur de Zoom est opaque lorsque vous sélectionnez il, pointez dessus ou utilisez **Ctrl** avec la roulette de la souris pour effectuer un zoom ; toutes les autres fois, il est transparent.
 

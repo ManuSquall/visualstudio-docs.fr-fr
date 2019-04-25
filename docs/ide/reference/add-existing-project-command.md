@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d0946efb15758c76c078ff234717af6fd1fac15c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951629"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62792570"
 ---
 # <a name="add-existing-project-command"></a>Ajouter un projet existant, commande
 Ajoute un projet existant à la solution actuelle.
@@ -36,7 +36,7 @@ File.AddExistingProject filename
 
  Si aucun nom de fichier n’est spécifié, la commande ouvre la boîte de dialogue Fichier pour que l’utilisateur puisse sélectionner un projet.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  La saisie semi-automatique tente de deviner le chemin et le nom de fichier à mesure que vous tapez.
 
 ## <a name="example"></a>Exemple

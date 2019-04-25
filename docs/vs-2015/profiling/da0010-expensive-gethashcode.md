@@ -1,5 +1,5 @@
 ---
-title: 'DA0010 : Fonction GetHashCode coûteuse | Microsoft Docs'
+title: 'DA0010 : Fonction GetHashCode coûteuse | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,19 +14,17 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 111e3204224f1124476ab2a324df7be2b6ef2525
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
-ms.translationtype: MTE95
+ms.openlocfilehash: 1055136562d59412a6187524dc6023c55ef2dc3c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354828"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659031"
 ---
-# <a name="da0010-expensive-gethashcode"></a>DA0010 : GetHashCode coûteux
+# <a name="da0010-expensive-gethashcode"></a>DA0010 : Fonction GetHashCode coûteuse
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Pour obtenir la dernière documentation sur Visual Studio, consultez [DA0010 : GetHashCode coûteux](https://docs.microsoft.com/visualstudio/profiling/da0010-expensive-gethashcode) sur docs.microsoft.com.  
-
-  
+Pour obtenir la dernière documentation sur Visual Studio, consultez [DA0010 : GetHashCode coûteux](https://docs.microsoft.com/visualstudio/profiling/da0010-expensive-gethashcode).  
 
 |||  
 |-|-|  
@@ -40,7 +38,7 @@ Pour obtenir la dernière documentation sur Visual Studio, consultez [DA0010 : 
  Les appels à la méthode GetHashCode du type représentent une part importante des données de profilage, ou la méthode alloue de la mémoire.  
   
 ## <a name="rule-description"></a>Description de la règle  
- Le hachage est une technique pour localiser rapidement un élément particulier dans une collection de grande taille. Comme les tables de hachage peuvent être très grandes et avoir à supporter des accès à des débits très élevés, elles doivent être extrêmement efficaces. Une conséquence de cette nécessité est que les méthodes GetHashCode dans le .NET Framework ne doivent pas allouer de mémoire. L’allocation de mémoire augmente la charge sur le récupérateur de mémoire et expose la méthode à des délais potentiels s’il devient nécessaire d’exécuter la garbage collection suite à la demande d’allocation.  
+ Le hachage est une technique pour localiser rapidement un élément particulier dans une collection de grande taille. Étant donné que les tables de hachage peuvent être très volumineuses et devez prendre en charge un taux élevé d’accès, les tables de hachage doivent être extrêmement efficaces. Une conséquence de cette nécessité est que les méthodes GetHashCode dans le .NET Framework ne doivent pas allouer de mémoire. L’allocation de mémoire augmente la charge sur le récupérateur de mémoire et expose la méthode à des délais potentiels s’il devient nécessaire d’exécuter la garbage collection suite à la demande d’allocation.  
   
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations  
  Simplifiez la méthode.

@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bb12e0691d4e867a73b9c8999d0ad57cebd7ec44
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c1a5e5d8d33fed3c4e6348bcf2598f7093de5c98
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950759"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093102"
 ---
 # <a name="walkthrough-capturing-graphics-information-programmatically"></a>Procédure pas à pas : capture d’informations graphiques par programmation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,22 +23,22 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../inc
   
  La capture par programmation est particulièrement utile dans les scénarios suivants :  
   
--   Commencez la capture par programmation quand votre application graphique n'utilise pas de chaîne de permutation, par exemple quand elle restitue une texture.  
+- Commencez la capture par programmation quand votre application graphique n'utilise pas de chaîne de permutation, par exemple quand elle restitue une texture.  
   
--   Commencez la capture par programmation quand votre application n'effectue aucun rendu, par exemple, quand elle utilise DirectCompute pour les calculs.  
+- Commencez la capture par programmation quand votre application n'effectue aucun rendu, par exemple, quand elle utilise DirectCompute pour les calculs.  
   
--   Appelez `CaptureCurrentFrame`quand un problème de rendu est difficile à prévoir et à capturer dans le cadre d'un test manuel, mais qui peut être prédit par programmation à partir d'informations sur l'état de l'application au moment de l'exécution.  
+- Appelez `CaptureCurrentFrame`quand un problème de rendu est difficile à prévoir et à capturer dans le cadre d'un test manuel, mais qui peut être prédit par programmation à partir d'informations sur l'état de l'application au moment de l'exécution.  
   
-##  <a name="CaptureDX11_2"></a> Capture par programmation dans Windows 8.1  
+## <a name="CaptureDX11_2"></a> Capture par programmation dans Windows 8.1  
  Cette partie de la procédure pas à pas illustre la capture par programmation dans des applications qui utilisent l'API DirectX 11.2 dans Windows 8.1, qui elle-même utilise la méthode de capture robuste. Pour plus d’informations sur l’utilisation de la capture par programmation dans les applications Windows 8 qui utilisent des versions antérieures de DirectX, consultez [Programmatic capture in Windows 8.0 and earlier](#CaptureDX11_1) , plus loin dans cette procédure pas à pas.  
   
  Cette section montre comment effectuer ces tâches :  
   
--   Préparation de votre application à l'utilisation de la capture par programmation  
+- Préparation de votre application à l'utilisation de la capture par programmation  
   
--   Obtention de l'interface IDXGraphicsAnalysis  
+- Obtention de l'interface IDXGraphicsAnalysis  
   
--   Capture d'informations graphiques  
+- Capture d'informations graphiques  
   
 > [!NOTE]
 >  Si les implémentations précédentes de la capture par programmation dépendaient des Outils de contrôle à distance de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour fournir la fonctionnalité de capture, Windows 8.1 prend directement en charge la capture via Direct3D 11.2. Ainsi, vous n'avez plus besoin d'installer les Outils de contrôle à distance pour utiliser la capture par programmation dans Windows 8.1.  
@@ -48,7 +48,7 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../inc
   
 ##### <a name="to-include-programmatic-capture-headers"></a>Pour inclure les en-têtes de capture par programmation  
   
--   Incluez les en-têtes suivants dans le fichier source où sera définie l'interface IDXGraphicsAnalysis :  
+- Incluez les en-têtes suivants dans le fichier source où sera définie l'interface IDXGraphicsAnalysis :  
   
     ```  
     #include <DXGItype.h>  
@@ -89,7 +89,7 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../inc
   
 ##### <a name="to-get-the-idxgraphicsanalysis-interface"></a>Pour obtenir l'interface IDXGraphicsAnalysis  
   
--   Utilisez le code suivant pour raccorder l'interface IDXGraphicsAnalysis à l'interface de débogage DXGI.  
+- Utilisez le code suivant pour raccorder l'interface IDXGraphicsAnalysis à l'interface de débogage DXGI.  
   
     ```  
     IDXGraphicsAnalysis* pGraphicsAnalysis;  
@@ -113,7 +113,7 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../inc
   
 ##### <a name="to-capture-graphics-information"></a>Pour capturer des informations graphiques  
   
--   Pour commencer à capturer des informations graphiques, utilisez `BeginCapture`:  
+- Pour commencer à capturer des informations graphiques, utilisez `BeginCapture`:  
   
     ```  
     ...  
@@ -129,18 +129,18 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../inc
     ...  
     ```  
   
-##  <a name="CaptureDX11_1"></a> Programmatic capture in Windows 8.0 and earlier  
+## <a name="CaptureDX11_1"></a> Programmatic capture in Windows 8.0 and earlier  
  Cette partie de la procédure pas à pas illustre la capture par programmation dans des applications pour Windows 8.0 ou version antérieure qui utilisent l'API DirectX 11.1, qui elle-même utilise la méthode de capture héritée. Pour plus d’informations sur l’utilisation de la capture par programmation dans les applications Windows 8.1 qui utilisent DirectX 11.2, consultez [Capture par programmation dans Windows 8.1](#CaptureDX11_2) , plus haut dans cette procédure pas à pas.  
   
  Cette partie présente les tâches suivantes :  
   
--   Préparation de votre ordinateur à l'utilisation de la capture par programmation  
+- Préparation de votre ordinateur à l'utilisation de la capture par programmation  
   
--   Préparation de votre application à l'utilisation de la capture par programmation  
+- Préparation de votre application à l'utilisation de la capture par programmation  
   
--   Configuration du nom et de l'emplacement du fichier journal de graphisme  
+- Configuration du nom et de l'emplacement du fichier journal de graphisme  
   
--   Utilisation de l'API `CaptureCurrentFrame`  
+- Utilisation de l'API `CaptureCurrentFrame`  
   
 ### <a name="preparing-your-computer-to-use-programmatic-capture"></a>Préparation de votre ordinateur à l'utilisation de la capture par programmation  
  L'API de capture par programmation utilise les Outils de contrôle à distance de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour proposer la fonctionnalité de capture. Les Outils de contrôle à distance doivent être installés sur l'ordinateur destiné à exécuter l'application, même quand vous utilisez la capture par programmation sur votre ordinateur local. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] n'a pas besoin de s'exécuter quand vous effectuez une capture par programmation sur un ordinateur local.  
@@ -157,9 +157,9 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../inc
   
 ##### <a name="to-prepare-your-app-to-capture-graphics-information-programmatically"></a>Pour préparer votre application à la capture d'informations graphiques par programmation  
   
-1.  Assurez-vous que l'en-tête `vsgcapture.h` est inclus dans le code source de l'application. Il peut être inclus à un seul emplacement (par exemple, dans le fichier de code source où vous prévoyez d'appeler l'API de capture par programmation) ou dans un fichier d'en-tête précompilé pour appeler l'API à partir de plusieurs fichiers de code source.  
+1. Assurez-vous que l'en-tête `vsgcapture.h` est inclus dans le code source de l'application. Il peut être inclus à un seul emplacement (par exemple, dans le fichier de code source où vous prévoyez d'appeler l'API de capture par programmation) ou dans un fichier d'en-tête précompilé pour appeler l'API à partir de plusieurs fichiers de code source.  
   
-2.  Dans le code source de l'application, chaque fois que vous voulez capturer le reste du frame actif, appelez `g_pVsgDbg->CaptureCurrentFrame()`. Cette méthode ne fait appel à aucun paramètre et ne retourne aucune valeur.  
+2. Dans le code source de l'application, chaque fois que vous voulez capturer le reste du frame actif, appelez `g_pVsgDbg->CaptureCurrentFrame()`. Cette méthode ne fait appel à aucun paramètre et ne retourne aucune valeur.  
   
 ### <a name="configuring-the-name-and-location-of-the-graphics-log-file"></a>Configuration du nom et de l'emplacement du fichier journal de graphisme  
  Le journal de graphisme est créé à l'emplacement défini par les macros `DONT_SAVE_VSGLOG_TO_TEMP` et `VSG_DEFAULT_RUN_FILENAME` .  
@@ -196,7 +196,7 @@ Vous pouvez utiliser les outils Graphics Diagnostics de [!INCLUDE[vsprvs](../inc
 ## <a name="next-steps"></a>Étapes suivantes  
  Cette procédure pas à pas vous a montré comment capturer des informations graphiques par programmation. Pour franchir une étape supplémentaire, envisagez cette possibilité :  
   
--   Découvrez comment analyser les informations graphiques capturées à l'aide des outils Graphics Diagnostics. Consultez [vue d’ensemble](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
+- Découvrez comment analyser les informations graphiques capturées à l'aide des outils Graphics Diagnostics. Consultez [vue d’ensemble](../debugger/overview-of-visual-studio-graphics-diagnostics.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Procédure pas à pas : capture d’informations graphiques](../debugger/walkthrough-capturing-graphics-information.md)   

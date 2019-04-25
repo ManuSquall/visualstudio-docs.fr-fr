@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 48dbd24ba98ad3f1b4f24a68c9775b1022ea08f6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1681484500c382b296a03e78661b808825768a5b
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970307"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58789145"
 ---
 # <a name="manage-application-resources-net"></a>Gérer les ressources d’une application (.NET)
 
@@ -38,7 +38,7 @@ Pour plus d’informations sur les ressources des applications de bureau .NET, c
 Dans un projet de code managé, ouvrez la fenêtre de propriétés du projet. Vous pouvez ouvrir la fenêtre de propriétés en procédant de l’une des façons suivantes :
 
 - En cliquant avec le bouton droit sur le nœud du projet dans l’**Explorateur de solutions**, puis en sélectionnant **Propriétés**
-- En tapant « propriétés de projet » dans la fenêtre **Lancement rapide**
+- En tapant **propriétés de projet** dans la zone de recherche **Ctrl**+**Q**
 - En choisissant **Alt**+**Entrée** dans **Explorateur de solutions**
 
 Sélectionnez l’onglet **Ressources** . Vous pouvez ajouter un fichier *.resx* si votre projet n’en contient pas déjà un, ajouter et supprimer différents types de ressources, et modifier des ressources existantes.

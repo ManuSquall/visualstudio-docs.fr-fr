@@ -66,7 +66,7 @@ items:
     - name: Voir les valeurs des données dans DataTips
       href: view-data-values-in-data-tips-in-the-code-editor.md
     - name: Voir les valeurs de chaîne dans un visualiseur
-      href: string-visualizer-dialog-box.md
+      href: view-strings-visualizer.md
     - name: Voir le code machine
       href: how-to-use-the-disassembly-window.md
       items:
@@ -202,7 +202,7 @@ items:
     - name: Créer des vues personnalisées de données
       href: viewing-data-in-the-debugger.md
       items:
-      - name: Créer des vues personnalisées d'objets natifs
+      - name: Créer des vues personnalisées d’objets C++
         href: create-custom-views-of-native-objects.md
         items:
         - name: Compatibilité des visualiseurs personnalisés Visual C++
@@ -210,10 +210,10 @@ items:
       - name: Créer des vues personnalisées d’objets gérés
         href: create-custom-views-of-dot-managed-objects.md
         items:
-        - name: Utiliser l’attribut DebuggerTypeProxy
-          href: using-debuggertypeproxy-attribute.md
-        - name: Utiliser l’attribut DebuggerDisplay
+        - name: Dire au débogueur quels éléments afficher
           href: using-the-debuggerdisplay-attribute.md
+        - name: Dire au débogueur quel type afficher
+          href: using-debuggertypeproxy-attribute.md
       - name: Créer des visualiseurs de données personnalisés
         href: create-custom-visualizers-of-data.md
         items:
@@ -372,6 +372,8 @@ items:
       href: debug-live-azure-apps-faq.md
     - name: Dépannage du débogage d’instantané
       href: debug-live-azure-apps-troubleshooting.md
+    - name: Enregistrer un débogage par voyage dans le temps d’une application de machine virtuelle Azure
+      href: debug-live-azure-virtual-machines-time-travel-debugging.md
   - name: Déboguer des types d’application spécifiques
     href: debugging-applications.md
     items:
@@ -636,6 +638,8 @@ items:
       href: select-code-type-dialog-box.md
     - name: Arrêt du débogage en cours, boîte de dialogue
       href: stop-debugging-in-progress-dialog-box.md
+    - name: Visualiseur de chaîne, boîte de dialogue
+      href: string-visualizer-dialog-box.md
     - name: Informations sur le chargement de symboles, boîte de dialogue
       href: symbol-load-information-dialog-box.md
     - name: Boîte de dialogue Lorsque le point d'arrêt est atteint
@@ -842,9 +846,9 @@ items:
   items:
   - name: Nouveautés du débogueur dans Visual Studio
     href: what-s-new-for-the-debugger-in-visual-studio.md
-ms.openlocfilehash: 9d5ba973ffafe79b4c9b1f4f23ee08792d24bb7b
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: a6693cbf3b2334e1fd7770a948a156c9e2cd3908
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790743"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59651823"

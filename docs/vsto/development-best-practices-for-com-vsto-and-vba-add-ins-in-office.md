@@ -11,19 +11,19 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b81dec69d27cc32fa5e6848d358049d8b8e2c04e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2fcc2fe575bd6b526f5f66d936625c87e91b0b39
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643572"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111179"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Meilleures pratiques de développement COM, VSTO et VBA des compléments dans Office
   Si vous développez des compléments COM, VSTO ou de VBA pour Office, suivez les meilleures pratiques de développement décrits dans cet article.   Cela permet de s’assurer :
 
--  Compatibilité de vos compléments entre différentes versions et les déploiements de Microsoft Office.
--  Réduction de la complexité de déploiement de compléments pour vos utilisateurs et les administrateurs informatiques.
--  Échecs d’installation ou d’exécution involontaires de votre complément ne se produisent pas.
+- Compatibilité de vos compléments entre différentes versions et les déploiements de Microsoft Office.
+- Réduction de la complexité de déploiement de compléments pour vos utilisateurs et les administrateurs informatiques.
+- Échecs d’installation ou d’exécution involontaires de votre complément ne se produisent pas.
 
 >Remarque : À l’aide de la [pont du bureau](/windows/uwp/porting/desktop-to-uwp-root) pour préparer votre COM, VSTO VBA complément ou pour le Windows Store n’est pas pris en charge. Compléments COM, VSTO et VBA ne peuvent pas être distribués dans le Windows Store ou de l’Office Store.
 

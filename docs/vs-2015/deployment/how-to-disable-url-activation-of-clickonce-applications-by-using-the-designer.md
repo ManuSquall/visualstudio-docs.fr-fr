@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3d797b0881ef06d8934df52473ae8178e520f96f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 27690ab275d0c7ef2a090fa8ef2e42887ae9daeb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938336"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043847"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications-by-using-the-designer"></a>Procédure : Suspendre l’activation des URL des applications ClickOnce à l’aide du concepteur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,17 +37,17 @@ En règle générale, un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 
   
 #### <a name="to-disable-url-activation-for-your-application"></a>Pour désactiver l'activation d'URL pour votre application  
   
-1.  Cliquez sur le nom de votre projet dans **l’Explorateur de solutions**, puis cliquez sur **propriétés**.  
+1. Cliquez sur le nom de votre projet dans **l’Explorateur de solutions**, puis cliquez sur **propriétés**.  
   
-2.  Sur le **propriétés** , cliquez sur le **publier** onglet.  
+2. Sur le **propriétés** , cliquez sur le **publier** onglet.  
   
-3.  Cliquez sur **Options**.  
+3. Cliquez sur **Options**.  
   
-4.  Cliquez sur **manifestes**.  
+4. Cliquez sur **manifestes**.  
   
-5.  Activez la case à cocher intitulée **bloquer l’activation via une URL de l’application**.  
+5. Activez la case à cocher intitulée **bloquer l’activation via une URL de l’application**.  
   
-6.  Déployez votre application.  
+6. Déployez votre application.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Publication d’applications ClickOnce](../deployment/publishing-clickonce-applications.md)

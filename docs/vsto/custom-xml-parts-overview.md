@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eef9744e5d5b66d39eee9e9332f3ed49616c6067
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 517cd2230430bf0758b729f50b1d947685aaf6be
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616220"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052777"
 ---
 # <a name="custom-xml-parts-overview"></a>Vue d’ensemble de parties XML personnalisée
   Vous pouvez incorporer des données XML dans des documents pour certaines applications Microsoft Office. Lorsque vous incorporez des données XML dans un document, elles sont appelées une *partie XML personnalisée*.
@@ -47,13 +47,13 @@ ms.locfileid: "56616220"
 
  Pour plus d'informations sur la structure d'Open XML et des parties XML personnalisées, consultez les articles suivants :
 
--   [Présentation des formats de fichier Open XML Office (2007)](/previous-versions/office/developer/office-2007/aa338205(v=office.12))
+- [Présentation des formats de fichier Open XML Office (2007)](/previous-versions/office/developer/office-2007/aa338205(v=office.12))
 
--   [Guide pratique pour Manipuler des documents aux formats Open XML](/previous-versions/office/developer/office-2007/aa982683(v=office.12))
+- [Guide pratique pour Manipuler des documents aux formats Open XML](/previous-versions/office/developer/office-2007/aa982683(v=office.12))
 
--   [Procédure pas à pas : Format Word 2007 XML](/previous-versions/office/developer/office-2007/bb266220(v=office.12))
+- [Procédure pas à pas : Format Word 2007 XML](/previous-versions/office/developer/office-2007/bb266220(v=office.12))
 
--   [Créer des documents Word 2007 à l’aide des formats Open XML](/previous-versions/office/developer/office-2007/bb264572(v=office.12))
+- [Créer des documents Word 2007 à l’aide des formats Open XML](/previous-versions/office/developer/office-2007/bb264572(v=office.12))
 
 > [!NOTE]
 >  Excel, Word et PowerPoint vous permettent également d'utiliser les parties XML personnalisées dans des documents enregistrés dans les formats de fichier binaires. Toutefois, si un document est enregistré dans un format binaire, vous ne pouvez pas ajouter ni modifier de parties XML personnalisées sans démarrer l'application Microsoft Office.
@@ -66,9 +66,9 @@ ms.locfileid: "56616220"
 
  Pour créer une partie XML personnalisée au moyen de Visual Studio, ajoutez un nouveau <xref:Microsoft.Office.Core.CustomXMLPart> à la collection <xref:Microsoft.Office.Core.CustomXMLParts> dans le document. Pour plus d’informations, consultez les rubriques suivantes :
 
--   [Guide pratique pour Ajouter des parties XML personnalisées aux personnalisations au niveau du document](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)
+- [Guide pratique pour Ajouter des parties XML personnalisées aux personnalisations au niveau du document](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)
 
--   [Guide pratique pour Ajouter des parties XML personnalisées à des documents à l’aide des Compléments VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)
+- [Guide pratique pour Ajouter des parties XML personnalisées à des documents à l’aide des Compléments VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)
 
 ### <a name="modify-xml-parts-without-starting-the-office-application"></a>Modifier des parties XML sans démarrer l’application Office
  Vous pouvez ajouter ou modifier une partie XML personnalisée sans démarrer Excel, PowerPoint ni Word. Cela est utile si vous souhaitez utiliser les données XML d'un document sur un ordinateur qui ne dispose pas des applications Microsoft Office, tel qu'un serveur.

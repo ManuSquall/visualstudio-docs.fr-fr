@@ -1,23 +1,20 @@
 ---
 title: Définition d’une Image d’arrière-plan sur un diagramme | Microsoft Docs
-ms.custom: ''
 ms.date: 11/15/2016
-ms.prod: visual-studio-tfs-dev14
-ms.reviewer: ''
-ms.suite: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-modeling
+ms.topic: conceptual
 ms.assetid: e334a24c-8521-4072-b50f-e59158dde145
 caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
-manager: douge
-ms.openlocfilehash: fd9d5ca21dbe1b0444c650a127fc0184dfb640f1
-ms.sourcegitcommit: 9ceaf69568d61023868ced59108ae4dd46f720ab
+manager: jillfra
+ms.openlocfilehash: 28e2358b92080bd56cfda9d395f87e5c188da221
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2018
-ms.locfileid: "49240550"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062917"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>Définition d'une image d'arrière-plan dans un schéma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,21 +25,21 @@ Dans le Kit de développement logiciel (SDK) de visualisation et de modélisatio
   
 #### <a name="to-set-a-background-image-for-a-generated-designer"></a>Pour définir une image d'arrière-plan pour un concepteur généré  
   
-1.  Copiez le fichier image que vous souhaitez utiliser comme arrière-plan du diagramme dans le répertoire Dsl\Resources du projet actif.  
+1. Copiez le fichier image que vous souhaitez utiliser comme arrière-plan du diagramme dans le répertoire Dsl\Resources du projet actif.  
   
-2.  Dans **l’Explorateur de solutions**, cliquez sur le dossier Dsl\Resources, pointez sur **ajouter**, puis cliquez sur **élément existant**.  
+2. Dans **l’Explorateur de solutions**, cliquez sur le dossier Dsl\Resources, pointez sur **ajouter**, puis cliquez sur **élément existant**.  
   
-3.  Dans le **ajouter un élément existant** boîte de dialogue, accédez au dossier Dsl\Resources.  
+3. Dans le **ajouter un élément existant** boîte de dialogue, accédez au dossier Dsl\Resources.  
   
-4.  Dans le **types de fichiers** , cliquez sur **fichiers Image**.  
+4. Dans le **types de fichiers** , cliquez sur **fichiers Image**.  
   
-5.  Cliquez sur le fichier image que vous avez copiée dans le répertoire, puis cliquez sur **ajouter**.  
+5. Cliquez sur le fichier image que vous avez copiée dans le répertoire, puis cliquez sur **ajouter**.  
   
-6.  Cliquez sur Dsl, puis cliquez sur **propriétés** pour ouvrir les propriétés du projet Dsl.  
+6. Cliquez sur Dsl, puis cliquez sur **propriétés** pour ouvrir les propriétés du projet Dsl.  
   
-7.  Sur le **ressources** sous l’onglet **ce projet ne contient pas un fichier de ressources par défaut. Cliquez ici pour en créer un.**  
+7. Sur le **ressources** sous l’onglet **ce projet ne contient pas un fichier de ressources par défaut. Cliquez ici pour en créer un.**  
   
-8.  Ajoutez le fichier image au fichier de ressources en faisant glisser l’image à partir de **l’Explorateur de solutions** dans la fenêtre de ressources.  
+8. Ajoutez le fichier image au fichier de ressources en faisant glisser l’image à partir de **l’Explorateur de solutions** dans la fenêtre de ressources.  
   
 9. Ouvrez le menu fichier, puis cliquez sur l'option d'enregistrement des propriétés du projet.  
   
@@ -112,6 +109,3 @@ Dans le Kit de développement logiciel (SDK) de visualisation et de modélisatio
  [Personnalisation des champs de texte et Image](../modeling/customizing-text-and-image-fields.md)   
  [Navigation et mise à jour d’un modèle dans le Code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md)   
  [Écriture de code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md)
-
-
-

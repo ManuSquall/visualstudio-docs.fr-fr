@@ -19,17 +19,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b81d3d9f7425874c8a3501d8e1d49eb813b97d9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d2aefe68761d31f87d84c9215a6187c28e7b471b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951219"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668988"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>Lier des contrôles Windows Forms à des données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Vous pouvez lier des sources de données aux contrôles en faisant glisser des objets à partir de la **des Sources de données** fenêtre sur un formulaire Windows ou sur un contrôle existant sur un formulaire. Avant de faire glisser des éléments, vous pouvez définir le type de contrôle que vous souhaitez établir une liaison. Des valeurs différentes s’affichent selon que vous choisissez la table elle-même, ou une colonne individuelle.  Vous pouvez également définir des valeurs personnalisées. Pour une table, « Détails » signifie que chaque colonne est liée à un contrôle séparé.  
   
  ![Lier la source de données à un DataGridView](../data-tools/media/raddata-bind-data-source-to-datagridview.png "raddata source de données liée à un DataGridView")  

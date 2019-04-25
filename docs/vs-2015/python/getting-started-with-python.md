@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 11febf99dc411d50ee94e003515bfa6581591b91
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 9c18ae2731d92e6d128d13e7687bac77ae76dc8a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678863"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59648447"
 ---
 # <a name="getting-started-with-python"></a>Mise en route de Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,8 +39,7 @@ Comme un langage de programmation Python est :
 Pour en savoir plus sur le langage, commencez avec [Python for Beginners](https://www.python.org/about/gettingstarted/) sur python.org.
 
 Pour installer Python lui-même, visitez [ https://www.python.org/download/ ](https://www.python.org/download/).
- 
-  
+
 ## <a name="python-tools-for-visual-studio"></a>Outils Python pour Visual Studio
   
 Python Tools pour Visual Studio, que vous pouvez installer à partir de [visualstudio.com](https://www.visualstudio.com/explore/python-vs), fournissent les fonctionnalités suivantes :  
@@ -63,7 +62,6 @@ Les ressources suivantes vous permettront de démarrer :
 - [Petites vidéos de démarrage et d’exploration](https://www.youtube.com/playlist?list=PLReL099Y5nRdLgGAdrb_YeTdEnd23s6Ff)  
 - Installation et démonstration des fonctionnalités (27 min)])https://www.youtube.com/watch?v=JNNAOypc6Ek)  
 - [Documentation](https://github.com/Microsoft/PTVS/wiki)  
-
 
 Notez que Visual Studio ne pas à l’heure actuelle fournit les moyens de créer un exécutable autonome à l’aide de Python, ce qui signifie essentiellement un programme avec un interpréteur Python incorporé. Toutefois, la communauté Python décrit différents moyens de le faire sur [StackOverflow](http://stackoverflow.com/questions/5458048/how-to-make-a-python-script-standalone-executable-to-run-without-any-dependency). CPython prend également en charge l’incorporation dans une application native, comme décrit dans le billet de blog, [Using CPython’s Embeddable Zip File](https://devblogs.microsoft.com/python/cpython-embeddable-zip-file/) (Utilisation d’un fichier zip incorporable dans CPython).
   
@@ -93,9 +91,9 @@ Nous vous recommandons de vous procurer IPython et les bibliothèques de calcul 
   
 ## <a name="see-also"></a>Voir aussi  
 
-[Bien démarrer avec PTVS : configuration de Visual Studio](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
-[Bien démarrer avec PTVS : commencer à développer (projets)](../python/getting-started-with-ptvs-start-coding-projects.md)
-[Bien démarrer avec PTVS : modification de code](../python/getting-started-with-ptvs-editing-code.md)
-[Bien démarrer avec PTVS : débogage](../python/getting-started-with-ptvs-debugging.md)
-[Bien démarrer avec PTVS : Interactive Python](../python/getting-started-with-ptvs-interactive-python.md)
-[Bien démarrer avec PTVS : création d’un site web dans Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)
+[Bien démarrer avec PTVS : Configuration de Visual Studio](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
+[bien démarrer avec PTVS : Commencez à coder (projets)](../python/getting-started-with-ptvs-start-coding-projects.md)
+[bien démarrer avec PTVS : Modification du Code](../python/getting-started-with-ptvs-editing-code.md)
+[bien démarrer avec PTVS : Débogage](../python/getting-started-with-ptvs-debugging.md)
+[bien démarrer avec PTVS : Python interactive](../python/getting-started-with-ptvs-interactive-python.md)
+[bien démarrer avec PTVS : Création d’un site Web dans Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)

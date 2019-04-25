@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88c2198f0908e0ef8f7918d42f4ba256378e0e60
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c43ed1fa156c77edc89b8d40185cc7436cce5d7a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841842"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079474"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>Le fichier DslDefinition.dsl
 
@@ -34,7 +34,7 @@ Les éléments enfants de le \<Dsl > élément racine sont les suivantes :
 
 Cette section définit chaque classe de domaine qui génère une classe dans le code généré.
 
-### <a name="relationships"></a>Relationships
+### <a name="relationships"></a>Relations
 
 Cette section définit chaque relation dans le modèle. La source et la cible représentent les deux côtés d'une relation.
 
@@ -42,7 +42,7 @@ Cette section définit chaque relation dans le modèle. La source et la cible re
 
 Cette section définit chaque type et son espace de noms. Il existe deux types de propriétés de domaine. Les `DomainEnumerations` sont définies dans le modèle et génèrent des types dans DomainModel.cs. Les `ExternalTypes` font référence à des types qui sont définis ailleurs (par exemple `String` ou `Int32`) et ils ne génèrent rien.
 
-### <a name="shapes"></a>Shapes
+### <a name="shapes"></a>Formes
 
 Cette section définit les formes qui décrivent comment le modèle apparaît dans un concepteur. Ces formes géométriques sont mappées aux classes dans le modèle, dans la section Diagram.
 
@@ -62,7 +62,7 @@ Cette section définit comment la **Explorateur DSL** fenêtre s’affiche lorsq
 
 Cette section définit un générateur de connexion pour chaque outil connecteur (l'outil de création de liens entre deux classes qui peuvent être connectées). Cette section détermine si vous pouvez connecter une classe source et une classe cible.
 
-### <a name="diagram"></a>Diagram
+### <a name="diagram"></a>Diagramme
 
 Cette section définit un diagramme et vous l'utilisez pour spécifier des propriétés telles que la couleur d'arrière-plan et la classe racine. (La classe racine est la classe de domaine qui est représentée par le diagramme dans son ensemble.) La section Diagram contient aussi des éléments ShapeMap et ConnectorMap, qui spécifient la forme ou le connecteur qui représente chaque classe de domaine ou relation.
 
@@ -166,29 +166,29 @@ Chaque classe a un ensemble de propriétés et peut avoir une classe de base. Da
 
 Chaque classe de domaine (y compris les relations, les formes, les connecteurs et les diagrammes) peut avoir les attributs et nœuds enfants suivants :
 
--   **Id.** Cet attribut est un GUID. Si vous ne spécifiez pas de valeur dans le fichier, le concepteur de langage spécifique à un domaine crée une valeur. (Dans les illustrations de ce document, cet attribut est généralement omis pour des raisons d'espace.)
+- **Id.** Cet attribut est un GUID. Si vous ne spécifiez pas de valeur dans le fichier, le concepteur de langage spécifique à un domaine crée une valeur. (Dans les illustrations de ce document, cet attribut est généralement omis pour des raisons d'espace.)
 
--   **Nom et Namespace.** Ces attributs spécifient le nom et l’espace de noms de la classe dans le code généré. Ensemble, ils doivent être uniques dans le langage spécifique à un domaine.
+- **Nom et Namespace.** Ces attributs spécifient le nom et l’espace de noms de la classe dans le code généré. Ensemble, ils doivent être uniques dans le langage spécifique à un domaine.
 
--   **InheritanceModifier.** Cet attribut est « abstract », « sealed » ou aucun.
+- **InheritanceModifier.** Cet attribut est « abstract », « sealed » ou aucun.
 
--   **DisplayName.** Cet attribut est le nom qui apparaît dans le **propriétés** fenêtre. L'attribut DisplayName peut contenir des espaces et autres signes de ponctuation.
+- **DisplayName.** Cet attribut est le nom qui apparaît dans le **propriétés** fenêtre. L'attribut DisplayName peut contenir des espaces et autres signes de ponctuation.
 
--   **GeneratesDoubleDerived.** Si cet attribut est défini true, deux classes sont générées, et une est une sous-classe de l’autre. Toutes les méthodes générées sont dans la base et les constructeurs sont dans la sous-classe. En définissant cet attribut, vous pouvez substituer toute méthode générée dans le code personnalisé.
+- **GeneratesDoubleDerived.** Si cet attribut est défini true, deux classes sont générées, et une est une sous-classe de l’autre. Toutes les méthodes générées sont dans la base et les constructeurs sont dans la sous-classe. En définissant cet attribut, vous pouvez substituer toute méthode générée dans le code personnalisé.
 
--   **HasCustomConstructor**. Si cet attribut à la valeur True, le constructeur est omis du code généré pour que vous puissiez écrire votre propre version.
+- **HasCustomConstructor**. Si cet attribut à la valeur True, le constructeur est omis du code généré pour que vous puissiez écrire votre propre version.
 
--   **Attributs**. Cet attribut contient les attributs CLR de la classe générée.
+- **Attributs**. Cet attribut contient les attributs CLR de la classe générée.
 
--   **BaseClass**. Si vous spécifiez une classe de base, elle doit être du même type. Par exemple, une classe de domaine doit avoir une autre classe de domaine comme base et une forme de compartiment doit avoir une forme de compartiment. Si vous ne spécifiez pas de classe de base, la classe dans le code généré dérive d'une classe d'infrastructure standard. Par exemple, une classe de domaine dérive de `ModelElement`.
+- **BaseClass**. Si vous spécifiez une classe de base, elle doit être du même type. Par exemple, une classe de domaine doit avoir une autre classe de domaine comme base et une forme de compartiment doit avoir une forme de compartiment. Si vous ne spécifiez pas de classe de base, la classe dans le code généré dérive d'une classe d'infrastructure standard. Par exemple, une classe de domaine dérive de `ModelElement`.
 
--   **Propriétés**. Cet attribut contient les propriétés qui sont tenues à jour sous le contrôle de transaction et conservées lors de l'enregistrement du modèle.
+- **Propriétés**. Cet attribut contient les propriétés qui sont tenues à jour sous le contrôle de transaction et conservées lors de l'enregistrement du modèle.
 
--   **ElementMergeDirectives**. Chaque directive de fusion d'élément contrôle comment une instance différente d'une autre classe est ajoutée à une instance de la classe parente. Vous trouverez des détails supplémentaires sur les directives de fusion d'élément plus loin dans cette rubrique.
+- **ElementMergeDirectives**. Chaque directive de fusion d'élément contrôle comment une instance différente d'une autre classe est ajoutée à une instance de la classe parente. Vous trouverez des détails supplémentaires sur les directives de fusion d'élément plus loin dans cette rubrique.
 
--   Une classe C# est générée pour chaque classe de domaine qui est répertoriée dans la section `Classes`. Les classes C# sont générées dans Dsl\GeneratedCode\DomainClasses.cs.
+- Une classe C# est générée pour chaque classe de domaine qui est répertoriée dans la section `Classes`. Les classes C# sont générées dans Dsl\GeneratedCode\DomainClasses.cs.
 
-### <a name="properties"></a>Propriétés
+### <a name="properties"></a>Properties
 
 Chaque propriété de domaine a un nom et un type. Le nom doit être unique dans la classe de domaine et ses bases transitives.
 
@@ -204,17 +204,17 @@ Le type doit faire référence à l'un de ceux répertoriés dans la section `Ty
 
 Chaque propriété de domaine peut aussi avoir les attributs suivants :
 
--   **IsBrowsable**. Cet attribut détermine si la propriété apparaît dans le **propriétés** fenêtre lorsque l’utilisateur clique sur un objet de la classe parente.
+- **IsBrowsable**. Cet attribut détermine si la propriété apparaît dans le **propriétés** fenêtre lorsque l’utilisateur clique sur un objet de la classe parente.
 
--   **IsUIReadOnly**. Cet attribut détermine si l’utilisateur peut modifier la propriété dans le **propriétés** fenêtre ou via un décorateur dans lequel la propriété est présentée.
+- **IsUIReadOnly**. Cet attribut détermine si l’utilisateur peut modifier la propriété dans le **propriétés** fenêtre ou via un décorateur dans lequel la propriété est présentée.
 
--   **Type**. Vous pouvez affecter à cet attribut la valeur Normal, Calculated ou CustomStorage. Si vous lui affectez la valeur Calculated, vous devez fournir du code personnalisé qui détermine la valeur et la propriété sera en lecture seule. Si vous lui affectez la valeur CustomStorage, vous devez fournir du code qui obtient et définit des valeurs.
+- **Type**. Vous pouvez affecter à cet attribut la valeur Normal, Calculated ou CustomStorage. Si vous lui affectez la valeur Calculated, vous devez fournir du code personnalisé qui détermine la valeur et la propriété sera en lecture seule. Si vous lui affectez la valeur CustomStorage, vous devez fournir du code qui obtient et définit des valeurs.
 
--   **IsElementName**. Si cet attribut à la valeur True, sa valeur est définie automatiquement sur une valeur unique quand une instance de la classe parente est créée. Cet attribut peut prendre la valeur True pour une seule propriété dans chaque classe, qui doit être de type String. Dans l'exemple Diagramme de composant, la propriété `Name` dans `NamedElement` a `IsElementName` définie sur True. Chaque fois qu'un utilisateur crée un élément `Component` (qui hérite de `NamedElement`), le nom est initialisé automatiquement avec une valeur telle que « Component6 ».
+- **IsElementName**. Si cet attribut à la valeur True, sa valeur est définie automatiquement sur une valeur unique quand une instance de la classe parente est créée. Cet attribut peut prendre la valeur True pour une seule propriété dans chaque classe, qui doit être de type String. Dans l'exemple Diagramme de composant, la propriété `Name` dans `NamedElement` a `IsElementName` définie sur True. Chaque fois qu'un utilisateur crée un élément `Component` (qui hérite de `NamedElement`), le nom est initialisé automatiquement avec une valeur telle que « Component6 ».
 
--   `DefaultValue`. Si vous avez spécifié cet attribut, la valeur que vous avez spécifiée est assignée à cet attribut pour les nouvelles instances de cette classe. Si `IsElementName` est définie, l'attribut DefaultValue spécifie la partie initiale de la nouvelle chaine.
+- `DefaultValue`. Si vous avez spécifié cet attribut, la valeur que vous avez spécifiée est assignée à cet attribut pour les nouvelles instances de cette classe. Si `IsElementName` est définie, l'attribut DefaultValue spécifie la partie initiale de la nouvelle chaine.
 
--   **Catégorie** est l’en-tête sous lequel la propriété s’affiche dans le **propriétés** fenêtre.
+- **Catégorie** est l’en-tête sous lequel la propriété s’affiche dans le **propriétés** fenêtre.
 
 ## <a name="relationships"></a>Relations
 
@@ -226,11 +226,11 @@ Par exemple, la relation Connection relie les membres de la classe OutPort aux m
 
 Chaque relation contient des rôles sources et cibles ayant les attributs suivants :
 
--   Le `RolePlayer` attribut fait référence à la classe de domaine des instances liées : OutPort pour la source, InPort pour la cible.
+- Le `RolePlayer` attribut fait référence à la classe de domaine des instances liées : OutPort pour la source, InPort pour la cible.
 
--   L'attribut `Multiplicity` a quatre valeurs possibles (ZeroMany, ZeroOne, One et OneMany). Cet attribut fait référence au nombre de liens de cette relation qui peuvent être associés à un auteur de rôle.
+- L'attribut `Multiplicity` a quatre valeurs possibles (ZeroMany, ZeroOne, One et OneMany). Cet attribut fait référence au nombre de liens de cette relation qui peuvent être associés à un auteur de rôle.
 
--   L'attribut `PropertyName` spécifie le nom qui est utilisé dans la classe de rôle actif pour accéder aux objets à l'autre extrémité. Ce nom est utilisé dans le modèle ou le code personnalisé pour traverser la relation. Par exemple, l'attribut `PropertyName` du rôle source prend la valeur `Targets`. Ainsi, le code suivant fonctionne :
+- L'attribut `PropertyName` spécifie le nom qui est utilisé dans la classe de rôle actif pour accéder aux objets à l'autre extrémité. Ce nom est utilisé dans le modèle ou le code personnalisé pour traverser la relation. Par exemple, l'attribut `PropertyName` du rôle source prend la valeur `Targets`. Ainsi, le code suivant fonctionne :
 
     ```
     OutPort op = ...; foreach (InPort ip in op.Targets) ...
@@ -244,13 +244,13 @@ Chaque relation contient des rôles sources et cibles ayant les attributs suivan
     ComponentPort p = ...; Component c = p.Component; if (c != null) ...
     ```
 
--   Le `Name` du rôle est le nom utilisé dans la classe Relationship pour faire référence à cette extrémité d'un lien. Par convention, le nom d'un rôle est toujours au singulier car chaque lien possède une seule instance à chaque extrémité. Le code suivant fonctionne :
+- Le `Name` du rôle est le nom utilisé dans la classe Relationship pour faire référence à cette extrémité d'un lien. Par convention, le nom d'un rôle est toujours au singulier car chaque lien possède une seule instance à chaque extrémité. Le code suivant fonctionne :
 
     ``` 
     Connection connectionLink = ...; OutPort op = connectionLink.Source;
     ```
 
--   Par défaut, l'attribut `IsPropertyGenerator` a la valeur True. S'il a la valeur False, aucune propriété n'est créée sur la classe Acteur de rôle. (Dans ce cas, `op.Targets`, par exemple, ne fonctionnerait pas.) Cependant, il est toujours possible d'utiliser du code personnalisé pour traverser la relation ou obtenir l'accès aux liens proprement dits si le code personnalisé utilise la relation de manière explicite :
+- Par défaut, l'attribut `IsPropertyGenerator` a la valeur True. S'il a la valeur False, aucune propriété n'est créée sur la classe Acteur de rôle. (Dans ce cas, `op.Targets`, par exemple, ne fonctionnerait pas.) Cependant, il est toujours possible d'utiliser du code personnalisé pour traverser la relation ou obtenir l'accès aux liens proprement dits si le code personnalisé utilise la relation de manière explicite :
 
     ``` 
     OutPort op = ...; foreach (InPort ip in Connection.GetTargets(op)) ...
@@ -261,9 +261,9 @@ Chaque relation contient des rôles sources et cibles ayant les attributs suivan
 
 Outre les attributs et les nœuds enfants accessibles à toutes les classes, chaque relation possède les attributs suivants :
 
--   **IsEmbedding**. Cet attribut booléen spécifie si la relation fait partie de l'arborescence d'incorporation. Chaque modèle doit former une arborescence avec ses relations d'incorporation. Chaque classe de domaine doit donc être la cible d'au moins une relation d'incorporation, à moins qu'il s'agisse de la racine d'un modèle.
+- **IsEmbedding**. Cet attribut booléen spécifie si la relation fait partie de l'arborescence d'incorporation. Chaque modèle doit former une arborescence avec ses relations d'incorporation. Chaque classe de domaine doit donc être la cible d'au moins une relation d'incorporation, à moins qu'il s'agisse de la racine d'un modèle.
 
--   **AllowsDuplicates**. Cet attribut booléen, qui a la valeur False par défaut, s'applique uniquement aux relations ayant une multiplicité « many » à la source et à la cible. Il détermine si les utilisateurs du langage peuvent connecter une même paire d'éléments source et cible à l'aide de plusieurs liens de la même relation.
+- **AllowsDuplicates**. Cet attribut booléen, qui a la valeur False par défaut, s'applique uniquement aux relations ayant une multiplicité « many » à la source et à la cible. Il détermine si les utilisateurs du langage peuvent connecter une même paire d'éléments source et cible à l'aide de plusieurs liens de la même relation.
 
 ## <a name="designer-and-toolbox-tabs"></a>Onglets du concepteur et de la boîte à outils
 
@@ -362,23 +362,23 @@ Une grande partie du code généré influencé par `XmlSerializationBehavior` se
 
 Chaque nœud `XmlClassData` comprend les attributs et les nœuds enfants suivants :
 
--   Un nœud de moniker, qui fait référence à la classe à laquelle les données s'appliquent.
+- Un nœud de moniker, qui fait référence à la classe à laquelle les données s'appliquent.
 
--   **XmlPropertyData** pour chaque propriété est définie sur la classe.
+- **XmlPropertyData** pour chaque propriété est définie sur la classe.
 
--   **XmlRelationshipData** pour chaque relation qui provenance de la classe. (Les relations ont également leurs propres nœuds XmlClassData.)
+- **XmlRelationshipData** pour chaque relation qui provenance de la classe. (Les relations ont également leurs propres nœuds XmlClassData.)
 
--   **TypeName** attribut de chaîne, qui détermine le nom de la classe d’assistance de sérialisation dans le code généré.
+- **TypeName** attribut de chaîne, qui détermine le nom de la classe d’assistance de sérialisation dans le code généré.
 
--   **ElementName** chaîne, qui détermine la balise XML des instances sérialisées de cette classe. Par convention, ElementName est généralement identique au nom de la classe, hormis le fait que la première lettre est en minuscule. Par exemple, un exemple de fichier de modèle commence par ce qui suit :
+- **ElementName** chaîne, qui détermine la balise XML des instances sérialisées de cette classe. Par convention, ElementName est généralement identique au nom de la classe, hormis le fait que la première lettre est en minuscule. Par exemple, un exemple de fichier de modèle commence par ce qui suit :
 
     ```xml
     <componentModel ...
     ```
 
--   **MonikerElementName** dans les fichiers de modèle sérialisé de l’utilisateur. Cet attribut introduit un moniker qui fait référence à cette classe.
+- **MonikerElementName** dans les fichiers de modèle sérialisé de l’utilisateur. Cet attribut introduit un moniker qui fait référence à cette classe.
 
--   **MonikerAttributeName**, qui identifie le nom de l’attribut XML dans un moniker. Dans ce fragment de fichier sérialisé d’un utilisateur, l’auteur du langage spécifique à un domaine défini **MonikerElementName** comme « inPortMoniker » et **MonikerAttributeName** comme « path » :
+- **MonikerAttributeName**, qui identifie le nom de l’attribut XML dans un moniker. Dans ce fragment de fichier sérialisé d’un utilisateur, l’auteur du langage spécifique à un domaine défini **MonikerElementName** comme « inPortMoniker » et **MonikerAttributeName** comme « path » :
 
     ```xml
     <inPortMoniker path="//Component2/InPort1" />
@@ -478,9 +478,9 @@ Si le **OmitElement** attribut est défini sur true, la relation nom_rôle est o
 
 Le fichier DslDefinition.dsl est lui-même un fichier sérialisé et il est conforme à une définition de langage spécifique à un domaine. Voici quelques exemples de définition de sérialisation XML :
 
--   **DSL** est le nœud RootClass et la classe du diagramme. DomainClass, DomainRelationship et d'autres éléments sont incorporés sous `Dsl`.
+- **DSL** est le nœud RootClass et la classe du diagramme. DomainClass, DomainRelationship et d'autres éléments sont incorporés sous `Dsl`.
 
--   **Classes** est la **RoleElementName** de la relation entre le langage spécifique à un domaine et DomainClass.
+- **Classes** est la **RoleElementName** de la relation entre le langage spécifique à un domaine et DomainClass.
 
 ```xml
 <Dsl Name="CmptDsl5" ...>
@@ -488,7 +488,7 @@ Le fichier DslDefinition.dsl est lui-même un fichier sérialisé et il est conf
     <DomainClass Name="NamedElement" InheritanceModifier="Abstract" ...
 ```
 
--   Le **XmlSerializationBehavior** attribut est incorporé sous le `Dsl` attribut, mais le **OmitElement** attribut a été défini sur la relation d’incorporation. Ainsi, aucun attribut `RoleElementName` n'intervient. En revanche, un **ClassData** attribut est la `RoleElementName` attribut de la relation d’incorporation entre un **XmlSerializationBehavior** attribut et un **XmlClassData** attribut.
+- Le **XmlSerializationBehavior** attribut est incorporé sous le `Dsl` attribut, mais le **OmitElement** attribut a été défini sur la relation d’incorporation. Ainsi, aucun attribut `RoleElementName` n'intervient. En revanche, un **ClassData** attribut est la `RoleElementName` attribut de la relation d’incorporation entre un **XmlSerializationBehavior** attribut et un **XmlClassData** attribut.
 
 ```xml
 <Dsl Name="CmptDsl5" ...> ...
@@ -498,7 +498,7 @@ Le fichier DslDefinition.dsl est lui-même un fichier sérialisé et il est conf
       <XmlClassData ...>...</XmlClassData>
 ```
 
--   ConnectorHasDecorators est la relation d'incorporation entre `Connector` et `Decorator`. `UseFullForm` a été définie pour que le nom de la relation apparaisse avec sa liste de propriétés pour chaque lien à partir de l'objet Connector. Toutefois, `OmitElement` a également été définie pour qu'aucun `RoleElementName` n'englobe les différents liens incorporés dans `Connector` :
+- ConnectorHasDecorators est la relation d'incorporation entre `Connector` et `Decorator`. `UseFullForm` a été définie pour que le nom de la relation apparaisse avec sa liste de propriétés pour chaque lien à partir de l'objet Connector. Toutefois, `OmitElement` a également été définie pour qu'aucun `RoleElementName` n'englobe les différents liens incorporés dans `Connector` :
 
 ```xml
 <Connector Name="AssociationLink" ...>
@@ -515,11 +515,11 @@ Le fichier DslDefinition.dsl est lui-même un fichier sérialisé et il est conf
 
 Les définitions de formes et de connecteurs héritent des attributs et des nœuds enfants des classes de domaine, en plus des éléments suivants :
 
--   attributs `Color` et `Line``Style` ;
+- attributs `Color` et `Line``Style` ;
 
--   **ExposesFillColorAsProperty** et plusieurs attributs similaires. Ces attributs booléens rendent la propriété correspondante variable par l'utilisateur. En règle générale, quand un utilisateur de langage clique sur une forme sur le diagramme, les propriétés qui apparaissent dans le **propriétés** fenêtre sont celles de l’instance de classe de domaine à laquelle la forme est mappée. Si `ExposesFillColorAsProperty` a la valeur True, une propriété de la forme elle-même apparaît également.
+- **ExposesFillColorAsProperty** et plusieurs attributs similaires. Ces attributs booléens rendent la propriété correspondante variable par l'utilisateur. En règle générale, quand un utilisateur de langage clique sur une forme sur le diagramme, les propriétés qui apparaissent dans le **propriétés** fenêtre sont celles de l’instance de classe de domaine à laquelle la forme est mappée. Si `ExposesFillColorAsProperty` a la valeur True, une propriété de la forme elle-même apparaît également.
 
--   **ShapeHasDecorators**. Une instance de cet attribut se produit chaque décorateur de texte, icône ou développement/réduction. (Dans le fichier DslDefinition.dsl, `ShapeHasDecorators` est une relation avec `UseFullForm` définie sur True.)
+- **ShapeHasDecorators**. Une instance de cet attribut se produit chaque décorateur de texte, icône ou développement/réduction. (Dans le fichier DslDefinition.dsl, `ShapeHasDecorators` est une relation avec `UseFullForm` définie sur True.)
 
 ## <a name="shape-maps"></a>Mappages de formes
 

@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2142b73dc44b16e8e7ac149b7377959ae3c5cfcc
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: 8161623b35dd626e59cdb0ed387ece6a104429a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526436"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047580"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 Vous pouvez déboguer une application Visual Studio qui a été déployée sur un autre ordinateur. Pour ce faire, utilisez le débogueur distant Visual Studio.
@@ -88,21 +88,21 @@ Vous pouvez trouver le débogueur distant (*msvsmon.exe*) sur un ordinateur avec
 ### <a name="configure_msvsmon"></a> Configurer le débogueur distant
 Vous pouvez modifier certains aspects de la configuration du débogueur distant après l’avoir démarré pour la première fois.
 
--   Si vous avez besoin ajouter des autorisations pour d’autres utilisateurs à se connecter au débogueur distant, choisissez **Outils > autorisations**. Vous devez disposer de privilèges d'administrateur pour accorder ou refuser des autorisations.
+- Si vous avez besoin ajouter des autorisations pour d’autres utilisateurs à se connecter au débogueur distant, choisissez **Outils > autorisations**. Vous devez disposer de privilèges d'administrateur pour accorder ou refuser des autorisations.
 
      > [!IMPORTANT]
      > Vous pouvez exécuter le débogueur distant sous un compte d’utilisateur différent à partir du compte d’utilisateur que vous utilisez sur l’ordinateur Visual Studio, mais vous devez ajouter le compte d’utilisateur différent pour les autorisations du débogueur distant.
 
      Vous pouvez également démarrer le débogueur distant à partir de la ligne de commande avec le **/ allow \<nom d’utilisateur >** paramètre : **msvsmon /Allow \< username@computer>**.
 
--   Si vous avez besoin modifier le mode d’authentification ou le numéro de port, ou spécifiez une valeur de délai d’expiration pour les outils à distance : choisissez **Outils > Options**.
+- Si vous avez besoin modifier le mode d’authentification ou le numéro de port, ou spécifiez une valeur de délai d’expiration pour les outils à distance : choisissez **Outils > Options**.
 
      Pour obtenir la liste des numéros de port utilisés par défaut, consultez [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md).
 
      > [!WARNING]
      >  Vous pouvez choisir d'exécuter les outils de contrôle à distance en mode Aucune authentification, mais ce mode est fortement déconseillé. Il n'existe aucune sécurité du réseau lorsque vous lancez l'exécution dans ce mode. Sélectionnez le mode Aucune authentification uniquement si vous êtes sûr que le réseau n’est pas exposé à des failles de sécurité liées à des programmes malveillants ou du trafic dangereux.
 
-##  <a name="bkmk_configureService"></a> (Facultatif) Configurer le débogueur distant en tant que service
+## <a name="bkmk_configureService"></a> (Facultatif) Configurer le débogueur distant en tant que service
 Pour déboguer dans ASP.NET et d’autres environnements de serveur, vous devez exécuter le débogueur distant en tant qu’administrateur ou, si vous souhaitez qu’il est toujours en cours d’exécution, exécutez le débogueur distant en tant que service.
 
  Si vous souhaitez configurer le débogueur distant en tant que service, procédez comme suit.

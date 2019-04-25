@@ -9,12 +9,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: 922e13e77713e7f4ba5bd18af93507855d292537
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 2abfb87ff4a97201246f9a9c284871db5e5f0068
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194691"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857162"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>Gérer les ressources associées à vos comptes Azure dans Visual Studio Cloud Explorer
 
@@ -24,11 +24,11 @@ Tout comme le [Portail Azure](http://go.microsoft.com/fwlink/p/?LinkID=525040), 
 
 ## <a name="prerequisites"></a>Prérequis
 
-* Visual Studio 2017 ou version ultérieure (voir [téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc)) avec la **charge de travail Azure** sélectionnée. Vous pouvez également utiliser une version antérieure de Visual Studio avec le [Kit de développement logiciel (SDK) Microsoft Azure pour .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657).
+* Visual Studio 2017 ou version ultérieure (voir [téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)) avec la **charge de travail Azure** sélectionnée. Vous pouvez également utiliser une version antérieure de Visual Studio avec le [Kit de développement logiciel (SDK) Microsoft Azure pour .NET 2.9](https://www.microsoft.com/download/details.aspx?id=51657).
 * Compte Microsoft Azure : si vous ne possédez pas de compte, vous pouvez [vous inscrire à un essai gratuit](http://go.microsoft.com/fwlink/?LinkId=623901) ou [activer les avantages de votre abonnement Visual Studio](http://go.microsoft.com/fwlink/?LinkId=623901).
 
 > [!NOTE]
-> Pour afficher Cloud Explorer, appuyez sur **Ctrl**+**Q** pour appeler **Lancement rapide**, puis entrez **Cloud Explorer**.
+> Pour afficher Cloud Explorer, appuyez sur **Ctrl**+**Q** pour activer la zone de recherche, puis entrez **Cloud Explorer**.
 
 ## <a name="add-an-azure-account-to-cloud-explorer"></a>Ajouter un compte Azure à Cloud Explorer
 

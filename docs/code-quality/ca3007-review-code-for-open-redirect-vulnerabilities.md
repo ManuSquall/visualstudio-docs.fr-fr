@@ -1,5 +1,5 @@
 ---
-title: 'CA3007 : Passez en revue de code pour les vulnérabilités de redirection ouverte'
+title: 'CA3007 : Passez en revue le code pour détecter les vulnérabilités de la redirection ouverte'
 ms.date: 04/03/2019
 ms.topic: reference
 author: dotpaul
@@ -11,13 +11,13 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: dbafb6c05a3dba72d1614d6a955e20030a50c6ea
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018516"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096710"
 ---
-# <a name="ca3007-review-code-for-open-redirect-vulnerabilities"></a>CA3007 : Passez en revue de code pour les vulnérabilités de redirection ouverte
+# <a name="ca3007-review-code-for-open-redirect-vulnerabilities"></a>CA3007 : Passez en revue le code pour détecter les vulnérabilités de la redirection ouverte
 
 |||
 |-|-|

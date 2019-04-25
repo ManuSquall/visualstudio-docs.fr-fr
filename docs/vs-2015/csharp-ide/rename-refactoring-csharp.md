@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40e13682b6ff22a0052adc7db9f9db9f18d36cc9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 82f3d4a3ae9bc587fef038186afe9faef880571c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951169"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114728"
 ---
 # <a name="rename-refactoring-c"></a>Refactorisation de changement de nom (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "58951169"
   
 #### <a name="to-rename-an-identifier"></a>Pour renommer un identificateur  
   
-1.  Créez une application console nommée `RenameIdentifier`, puis remplacez `Program` par l'exemple de code suivant.  
+1. Créez une application console nommée `RenameIdentifier`, puis remplacez `Program` par l'exemple de code suivant.  
   
     ```csharp  
     class ProtoClassA  
@@ -76,23 +76,23 @@ ms.locfileid: "58951169"
     }  
     ```  
   
-2.  Placez le curseur sur `MethodB`, soit dans la déclaration de méthode ou de l’appel de méthode.  
+2. Placez le curseur sur `MethodB`, soit dans la déclaration de méthode ou de l’appel de méthode.  
   
-3.  À partir de la **refactoriser** menu, sélectionnez **renommer**. Le **renommer** boîte de dialogue s’affiche.  
+3. À partir de la **refactoriser** menu, sélectionnez **renommer**. Le **renommer** boîte de dialogue s’affiche.  
   
      Vous pouvez également cliquer sur le curseur, pointer vers **refactoriser** dans le menu contextuel, puis cliquez sur **renommer** pour afficher le **renommer** boîte de dialogue.  
   
-4.  Dans le **nouveau nom** , tapez `MethodC`.  
+4. Dans le **nouveau nom** , tapez `MethodC`.  
   
-5.  Sélectionnez le **rechercher dans les commentaires** case à cocher.  
+5. Sélectionnez le **rechercher dans les commentaires** case à cocher.  
   
-6.  Cliquez sur **OK**.  
+6. Cliquez sur **OK**.  
   
-7.  Dans le **aperçu des modifications** boîte de dialogue, cliquez sur **appliquer**.  
+7. Dans le **aperçu des modifications** boîte de dialogue, cliquez sur **appliquer**.  
   
 #### <a name="to-rename-an-identifier-using-smart-tags"></a>Pour renommer un identificateur à l’aide de balises actives  
   
-1.  Créez une application console nommée `RenameIdentifier`, puis remplacez `Program` par l'exemple de code suivant.  
+1. Créez une application console nommée `RenameIdentifier`, puis remplacez `Program` par l'exemple de code suivant.  
   
     ```csharp  
     class ProtoClassA  
@@ -113,18 +113,18 @@ ms.locfileid: "58951169"
     }  
     ```  
   
-2.  Dans la déclaration pour `MethodB`, tapez ou revenir en arrière sur l’identificateur de méthode. Une invite de balise active apparaît sous cet identificateur.  
+2. Dans la déclaration pour `MethodB`, tapez ou revenir en arrière sur l’identificateur de méthode. Une invite de balise active apparaît sous cet identificateur.  
   
     > [!NOTE]
     >  Vous pouvez uniquement appeler la refactorisation de changement de nom à l’aide de balises actives à la déclaration d’un identificateur.  
   
-3.  Tapez le raccourci clavier MAJ + ALT + F10, puis appuyez sur la flèche vers le bas pour afficher le menu balise active.  
+3. Tapez le raccourci clavier MAJ + ALT + F10, puis appuyez sur la flèche vers le bas pour afficher le menu balise active.  
   
      - ou -  
   
      Déplacez le pointeur de la souris sur l’invite de balise active pour afficher la balise active. Déplacez le pointeur de la souris sur la balise active, puis cliquez sur la flèche vers le bas pour afficher le menu balise active.  
   
-4.  Sélectionnez le **renommer '\<identifer1 >' à '\<identificateur2 >'** élément de menu pour appeler la refactorisation de changement de nom sans aperçu des modifications à votre code. Toutes les références à  **\<identifer1 >** seront automatiquement mis à jour vers  **\<identificateur2 >**.  
+4. Sélectionnez le **renommer '\<identifer1 >' à '\<identificateur2 >'** élément de menu pour appeler la refactorisation de changement de nom sans aperçu des modifications à votre code. Toutes les références à  **\<identifer1 >** seront automatiquement mis à jour vers  **\<identificateur2 >**.  
   
      - ou -  
   

@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10ceddf29a044ac8538c05cbf7cd300759a76de6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: a67b2e1d9cbbad4a9b3426d264e6fecf8623e5a7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692045"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105084"
 ---
 # <a name="what39s-new-in-the-visual-studio-2015-sdk"></a>Ce que&#39;s nouvelle dans le Kit de développement logiciel Visual Studio 2015
 Le SDK Visual Studio a les fonctionnalités nouvelles et mises à jour suivantes pour Visual Studio 2015, Visual Studio 2015 mise à jour et Visual Studio 2017.
@@ -23,9 +23,9 @@ Le SDK Visual Studio a les fonctionnalités nouvelles et mises à jour suivantes
 
  Ces rubriques sont sous la [utilitaires VSSDK](../extensibility/internals/vssdk-utilities.md) section :
 
--   Le [outils de thèmes de couleurs](../extensibility/internals/color-theming-tools.md) vous aider à créer et modifier des couleurs personnalisées pour Visual Studio.
+- Le [outils de thèmes de couleurs](../extensibility/internals/color-theming-tools.md) vous aider à créer et modifier des couleurs personnalisées pour Visual Studio.
 
--   Le [outils de service de l’Image](../extensibility/internals/image-service-tools.md) vous permettent d’utiliser avec des fichiers manifeste image de Visual Studio.
+- Le [outils de service de l’Image](../extensibility/internals/image-service-tools.md) vous permettent d’utiliser avec des fichiers manifeste image de Visual Studio.
 
 ## <a name="new-way-to-add-the-visual-studio-sdk-to-visual-studio"></a>Nouvelle façon d’ajouter le SDK Visual Studio dans Visual Studio
  À partir de Visual Studio 2015, vous n’avez pas besoin de télécharger le SDK Visual Studio séparément. Au lieu de cela, vous pouvez l’installer dans le cadre du processus d’installation normale, ou vous pouvez choisir de l’installer ultérieurement sur. Lorsque vous ouvrez ou créez une solution VSIX, Visual Studio vous demandera d’installer les outils d’extensibilité de Visual Studio. Pour plus d’informations, consultez [l’installation de Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md).
@@ -36,13 +36,13 @@ Le SDK Visual Studio a les fonctionnalités nouvelles et mises à jour suivantes
 ### <a name="visual-c-and-visual-basic"></a>Visual C# et Visual Basic
  Pour c# et Visual Basic, il existe une gamme complète de modèles d’élément de projet qui vous permettent de créer des VSPackages, commandes de menu, fenêtres Outil, éditeur classifieurs, ornements d’éditeur et extensions marge de l’éditeur. Vous pouvez ajouter tout ou partie de ces modèles pour le projet VSIX standard. Pour plus d'informations, voir :
 
--   [Créer une extension avec une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md)
+- [Créer une extension avec une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md)
 
--   [Créer une extension avec une fenêtre outil](../extensibility/creating-an-extension-with-a-tool-window.md)
+- [Créer une extension avec une fenêtre outil](../extensibility/creating-an-extension-with-a-tool-window.md)
 
--   [Créer une extension avec un éditeur de modèle d’élément](../extensibility/creating-an-extension-with-an-editor-item-template.md)
+- [Créer une extension avec un éditeur de modèle d’élément](../extensibility/creating-an-extension-with-an-editor-item-template.md)
 
--   [Créer une extension avec un VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
+- [Créer une extension avec un VSPackage](../extensibility/creating-an-extension-with-a-vspackage.md)
 
      L’Assistant package Visual Studio ne crée plus extensions en c# ou Visual Basic.
 

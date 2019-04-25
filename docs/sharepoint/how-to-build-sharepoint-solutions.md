@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fe707f1b779978b26a53d11c32e92341e667be04
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 99109376c6c0279bcdd3852bd5bbadd8795c8564
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867124"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067272"
 ---
 # <a name="how-to-build-sharepoint-solutions"></a>Procédure : Créer des solutions SharePoint
 
@@ -27,11 +27,11 @@ Générer votre SharePoint solution n’est pas différente de la création d’
 
 ## <a name="to-build-sharepoint-solutions"></a>Pour créer des solutions SharePoint
 
-1.  Décidez si vous effectuez un débogage ou une version Release. Pour plus d’informations, consultez [les paramètres de projet de débogueur](../debugger/debugger-project-settings.md).
+1. Décidez si vous effectuez un débogage ou une version Release. Pour plus d’informations, consultez [les paramètres de projet de débogueur](../debugger/debugger-project-settings.md).
 
-2.  Choisissez l’option appropriée pour générer ou régénérer votre solution ou projet. Pour plus d’informations, consultez [compilation et génération dans Visual Studio](../ide/compiling-and-building-in-visual-studio.md).
+2. Choisissez l’option appropriée pour générer ou régénérer votre solution ou projet. Pour plus d’informations, consultez [compilation et génération dans Visual Studio](../ide/compiling-and-building-in-visual-studio.md).
 
-3.  Dans la barre de menus, choisissez **Générer**  >  **Générer la solution**.
+3. Dans la barre de menus, choisissez **Générer**  >  **Générer la solution**.
 
 ## <a name="see-also"></a>Voir aussi
 

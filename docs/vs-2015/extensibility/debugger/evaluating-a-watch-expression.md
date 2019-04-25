@@ -11,12 +11,12 @@ ms.assetid: 8317cd52-6fea-4e8f-a739-774dc06bd44b
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c4eb1ee2048a5e5580cbeb8320ba573c85b92183
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: eed1a1b3da59d6d5e76c9157fc0a2cb37420c797
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949203"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104354"
 ---
 # <a name="evaluating-a-watch-expression"></a>Évaluation d’une expression espionne
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,11 +28,11 @@ ms.locfileid: "58949203"
   
  Dans cette implémentation de `IDebugParsedExpression::EvaluateSync`, l’expression est analysée et évaluée en même temps. Cette implémentation effectue les tâches suivantes :  
   
-1.  Analyse et évalue l’expression pour produire un objet générique qui contient la valeur et son type. Dans c#, ceci est représenté comme un `object` tandis que dans C++, ceci est représenté comme un `VARIANT`.  
+1. Analyse et évalue l’expression pour produire un objet générique qui contient la valeur et son type. Dans c#, ceci est représenté comme un `object` tandis que dans C++, ceci est représenté comme un `VARIANT`.  
   
-2.  Instancie une classe (appelée `CValueProperty` dans cet exemple) qui implémente le `IDebugProperty2` de l’interface et la stocke dans la classe de la valeur à retourner.  
+2. Instancie une classe (appelée `CValueProperty` dans cet exemple) qui implémente le `IDebugProperty2` de l’interface et la stocke dans la classe de la valeur à retourner.  
   
-3.  Retourne le `IDebugProperty2` de l’interface à partir de la `CValueProperty` objet.  
+3. Retourne le `IDebugProperty2` de l’interface à partir de la `CValueProperty` objet.  
   
 ## <a name="managed-code"></a>Code managé  
  Il s’agit d’une implémentation de la `IDebugParsedExpression::EvaluateSync` dans du code managé. La méthode d’assistance `Tokenize` analyse l’expression dans une arborescence d’analyse. La fonction d’assistance `EvalToken` convertit le jeton à une valeur. La fonction d’assistance `FindTerm` récursivement parcourt l’arborescence d’analyse, l’appel `EvalToken` pour chaque nœud qui représente une valeur et en appliquant toutes les opérations (addition ou multiplication) dans l’expression.  

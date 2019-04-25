@@ -11,12 +11,12 @@ ms.assetid: 79dcbb9b-c7f8-40fc-8a00-f37fe1934f51
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 98b1f0f97aa33c56df7a512389daf1801157e693
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6e232a6f7fcb8813670ca6d949fdb6b3287bb79c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947889"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061786"
 ---
 # <a name="attaching-and-detaching-to-a-program"></a>Attachement et détachement d’un programme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,11 +33,11 @@ Attacher le débogueur nécessite l’envoi de la séquence des méthodes et des
   
     Si `S_OK` est retourné, l’Allemagne est chargé dans le même processus que le SDM. Le SDM effectue les tâches suivantes :  
   
-   1.  Appels [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) pour obtenir les informations du moteur de l’Allemagne.  
+   1. Appels [GetEngineInfo](../../extensibility/debugger/reference/idebugprogramnode2-getengineinfo.md) pour obtenir les informations du moteur de l’Allemagne.  
   
-   2.  Crée l’Allemagne.  
+   2. Crée l’Allemagne.  
   
-   3.  Appels [attacher](../../extensibility/debugger/reference/idebugengine2-attach.md).  
+   3. Appels [attacher](../../extensibility/debugger/reference/idebugengine2-attach.md).  
   
 2. L’envoie DE un [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) pour le SDM avec un `EVENT_SYNC` attribut.  
   
