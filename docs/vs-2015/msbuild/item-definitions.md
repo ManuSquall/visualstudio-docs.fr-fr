@@ -11,17 +11,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 08d91cbeb4424e2285a49e45d10c5ef2a0484afe
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 83c2de11e31dced3be48e390d8bd5b21d57d2092
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54796671"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668492"
 ---
 # <a name="item-definitions"></a>Définitions d'éléments
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0 permet la déclaration statique d’éléments dans les fichiers projet à l’aide de l’élément [ItemGroup](../msbuild/itemgroup-element-msbuild.md). Les métadonnées ne peuvent cependant être ajoutées qu’au niveau de l’élément, même si elles sont identiques pour tous les éléments. À compter de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5, un élément de projet nommé [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) passe outre cette limitation. *ItemDefinitionGroup* vous permet de définir un ensemble de définitions d’élément, qui ajoutent des valeurs de métadonnées par défaut à tous les éléments dans le type d’élément nommé.  
   
  L’élément *ItemDefinitionGroup* apparaît immédiatement après l’élément [Project](../msbuild/project-element-msbuild.md) du fichier projet. Les définitions d’élément offrent les fonctionnalités suivantes :  
@@ -175,7 +174,7 @@ ms.locfileid: "54796671"
 </ItemDefinitionGroup>  
 ```  
   
- Dans cet exemple, élément « i » fait référence à élément « test » dans la Condition.  
+ Dans cet exemple, l’élément « i » fait référence à l’élément « test » dans la condition.  
   
 ## <a name="overriding-and-deleting-metadata"></a>Remplacement et suppression de métadonnées  
  Vous pouvez remplacer les métadonnées définies dans un élément ItemDefinitionGroup dans un élément ItemDefinitionGroup ultérieur en attribuant une valeur vide aux métadonnées. Vous pouvez aussi supprimer un élément de métadonnées en lui attribuant une valeur vide. Par exemple :  

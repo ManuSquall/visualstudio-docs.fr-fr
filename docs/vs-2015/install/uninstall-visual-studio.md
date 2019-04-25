@@ -15,65 +15,65 @@ caps.latest.revision: 9
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: b84cff997e24882903abae048dbdd5c3c16f7e17
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e00ca9212c03d4123259715da157201c06d90f2b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834827"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667298"
 ---
 # <a name="uninstall-visual-studio"></a>Désinstaller Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Pour la documentation la plus récente pour Visual Studio 2017, consultez [désinstaller Visual Studio 2017](https://docs.microsoft.com/visualstudio/install/uninstall-visual-studio).
+Pour consulter la documentation à jour sur Visual Studio, voir [Désinstaller Visual Studio](/visualstudio/install/uninstall-visual-studio).
 
-Cette page vous guide tout au long de la désinstallation de Visual Studio 2015, une version antérieure de notre suite intégrée d’outils de productivité pour les développeurs.
+Cette page explique comment désinstaller Visual Studio 2015, une ancienne version de notre suite intégrée d’outils de productivité pour les développeurs.
 
-##  <a name="uninstalling"></a>
-#### <a name="to-uninstall-visual-studio-by-using-the-standard-uninstallation-method"></a>Pour désinstaller Visual Studio à l’aide de la méthode de désinstallation « standard »
+## <a name="uninstall-visual-studio-by-using-the-standard-uninstallation-method"></a>Désinstaller Visual Studio suivant la méthode de désinstallation « standard »
 
 1. Dans le **Panneau de configuration**, dans la page **Programmes et fonctionnalités**, sélectionnez l’édition du produit que vous souhaitez désinstaller, puis cliquez sur **Modifier**.
 
 2. Dans l’Assistant Installation, sélectionnez **Désinstaller**, choisissez **Oui**, puis suivez les instructions restantes de l’Assistant.
 
-   Cette méthode standard ou par défaut laisse certains éléments inférieur à celui de votre première installation de Visual Studio installé à l’origine (par exemple, le Microsoft .NET Framework, Microsoft Visual C++ redistribuables, Microsoft SQL Server, etc.).   Nous laissons installés parce que de nombreuses autres applications les utilisent. Toutefois, si vous souhaitez supprimer également, sélectionnez leur entrée dans **programmes et fonctionnalités**, puis supprimez-les individuellement.
+   Cette méthode standard ou par défaut laisse de côté certains éléments de la première installation de Visual Studio (par exemple, Microsoft .NET Framework, Redistributables Microsoft Visual C++, Microsoft SQL Server, etc.).   En effet, de nombreuses applications les utilisent. Si malgré cela vous souhaitez également les supprimer, sélectionnez leur entrée dans **Programmes et fonctionnalités**, puis supprimez-les un par un.
 
-#### <a name="to-uninstall-visual-studio-and-all-other-related-files-that-is-to-uninstall-almost-everything"></a>Pour désinstaller Visual Studio et tous les autres fichiers associés (autrement dit, pour désinstaller presque tout)
+## <a name="uninstall-visual-studio-and-all-other-related-files-that-is-to-uninstall-almost-everything"></a>Désinstaller Visual Studio et tous les fichiers associés (soit presque tout)
 
-1.  Recherchez le fichier .exe de Visual Studio (par exemple, recherchez « vs_enterprise.exe »).
+1.  Recherchez le fichier .exe de Visual Studio (par exemple, « vs_enterprise.exe »).
 
     > [!NOTE]
-    >  Le fichier doit être dans un sous-dossier de « %ProgramData%\Package Cache », par exemple : C:\ProgramData\Package Cache\\{37e19555-e88d-4aed-9d42-82d0784d2b79} \vs_enterprise.exe
+    > Le fichier devrait se trouver dans un sous-dossier de « %ProgramData%\Package Cache », par exemple : C:\ProgramData\Package Cache\\{37e19555-e88d-4aed-9d42-82d0784d2b79}\vs_enterprise.exe.
 
-2.  Exécutez le fichier .exe à l’aide de la désinstaller /force des paramètres de ligne de commande.
+2.  Exécutez le fichier .exe à l’aide des paramètres de ligne de commande /uninstall /force.
 
-     Par exemple, exécutez ```vs_enterprise.exe /uninstall /force```, ce qui supprimera Visual Studio et la plupart des principaux composants qui sont conservés dans une désinstallation par défaut. Toutefois, il ne supprimera pas tout le contenu supplémentaire que les modules complémentaires de Visual Studio et extensions peuvent installer (par exemple, les mises à jour de Visual Studio et les autres composants facultatifs).
+     Par exemple, exécutez ```vs_enterprise.exe /uninstall /force``` pour supprimer Visual Studio et la plupart des principaux composants laissés de côté dans le cadre d’une désinstallation par défaut. Cela ne supprime pas pour autant tout le contenu supplémentaire que les compléments et les extensions Visual Studio sont susceptibles d’installer (par exemple, les mises à jour de Visual Studio et autres composants facultatifs).
 
     > [!TIP]
-    > Vous pouvez également utiliser le «**désinstallation complète**» de l’outil pour supprimer tous les éléments que Visual Studio ou de mises à jour de Visual Studio a installé. Autrement dit, n’importe quelle version de Visual Studio 2013 ou version ultérieure. Pour plus d’informations, consultez le [outil de désinstallation de Visual Studio](https://github.com/Microsoft/VisualStudioUninstaller/releases) sur GitHub.
+    > Vous pouvez également utiliser l’outil « **Désinstallation complète** » pour supprimer tous les éléments potentiellement installés par Visual Studio ou ses mises à jour, autrement dit toutes les versions de Visual Studio jusqu’à Visual Studio 2013. Pour plus d’informations, voir [Outil de désinstallation de Visual Studio](https://github.com/Microsoft/VisualStudioUninstaller/releases) sur GitHub.
 
-#### <a name="to-uninstall-visual-studio-in-silent-or-passive-modes-that-is-to-uninstall-from-source"></a>Pour désinstaller Visual Studio en mode silencieux ou passif (autrement dit, pour désinstaller à partir de la source)
+## <a name="uninstall-visual-studio-in-silent-or-passive-modes-that-is-to-uninstall-from-source"></a>Désinstaller Visual Studio en mode silencieux ou passif (autrement dit, à partir de la source)
 
 1.  Sur l'ordinateur où Visual Studio est installé, ouvrez l'invite de commandes Windows.
 
 2.  Entrez les paramètres suivants :
 
-     *DVDRoot* \\< fichier d’Installation\> \</quiet/&#124;/passive > [/norestart] /Uninstall
+     *DVDRoot* \\<Fichier d’installation\> \</quiet&#124;/passive> [/norestart]/uninstall
 
-#### <a name="to-roll-back-to-a-previous-version-or-release-of--visual-studio"></a>Pour revenir à une version précédente ou la version de Visual Studio
+## <a name="roll-back-to-a-previous-version-or-release-of--visual-studio"></a>Revenir à une version précédente de Visual Studio
 
-1. Désinstaller Visual Studio à l’aide des méthodes répertoriées dans cette rubrique.
+1. Désinstallez Visual Studio en suivant l’une des méthodes de cette rubrique.
 
    > [!WARNING]
-   >  Désinstallation d’une version actuelle de Visual Studio (ou un Visual Studio Update) et puis en installant une version précédente peuvent ne pas fonctionner comme prévu.
+   > Il peut arriver que les résultats obtenus en désinstallant une version actuelle de Visual Studio (ou une mise à jour de Visual Studio) et en installant ensuite une version antérieure ne soient pas optimaux.
    >
-   >  Le résultat dépend de la version ou la version de Visual Studio que vous avez installé, les versions de ses composants sont installées, des produits installés qui pourraient présenter des dépendances soit la version de Visual Studio ou ses composants, et enfin, sur quelle version antérieure de Visual Studio que vous souhaitez installer ou réinstaller.  En raison de toutes ces variables, une désinstallation standard est souvent des composants de laisser derrière qui peut ne pas fonctionnent avec les versions ou des versions antérieures de Visual Studio.
+   > Ils dépendent de la version installée de Visual Studio et de ses composants, des produits installés susceptibles de présenter des dépendances vis-à-vis de la version de Visual Studio ou de ses composants et, enfin, de la version antérieure de Visual Studio installée ou réinstallée.  Du fait de toutes ces variables, une désinstallation standard laisse souvent de côté des composants, qui risquent de ne pas fonctionner avec les versions antérieures de Visual Studio.
    >
-   >  Par conséquent, pour de meilleurs résultats, nous vous recommandons d’utiliser le [outil de désinstallation de Visual Studio](https://github.com/Microsoft/VisualStudioUninstaller/releases).
+   > Pour obtenir de meilleurs résultats, nous vous recommandons donc d’utiliser [l’outil de désinstallation de Visual Studio](https://github.com/Microsoft/VisualStudioUninstaller/releases).
 
-2. Installez ou réinstallez la version antérieure de Visual Studio que vous souhaitez utiliser.
+2. Installez ou réinstallez la version antérieure de Visual Studio de votre choix.
 
-   Même si vous installez une version antérieure de Visual Studio, le programme d’installation peut toujours essayer à utiliser une version plus récente ou release si celle-ci est disponible. Pour plus d’informations, consultez le [Comment : installer une version spécifique de Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md) rubrique.
+   Même si vous installez une version antérieure de Visual Studio, le programme d’installation pourra essayer d’utiliser une version plus récente s’il en existe une. Pour plus d’informations, voir la rubrique [Guide pratique pour installer une version spécifique de Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md).
 
 ## <a name="see-also"></a>Voir aussi
- [Installer Visual Studio](https://msdn.microsoft.com/library/e2h7fzkw.aspx)
+
+- [Installer Visual Studio](https://msdn.microsoft.com/library/e2h7fzkw.aspx)

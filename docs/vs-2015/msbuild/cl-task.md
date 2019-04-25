@@ -22,17 +22,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 136bc554abe6c231dfa80753b19dba89946830c3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e8666f990265a1fcf9947ac5c7c18c7489a6bdb8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54756661"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653591"
 ---
 # <a name="cl-task"></a>CL, tâche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des fichiers exécutables (.exe), des fichiers de bibliothèque de liens dynamiques (.dll) ou des fichiers de module de code (.netmodule). Pour plus d’informations, consultez l’article [Options du compilateur](http://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c).  
   
 ## <a name="parameters"></a>Paramètres  
@@ -54,7 +53,7 @@ Encapsule l’outil Compilateur Visual C++, cl.exe. Le compilateur produit des 
   
    Pour plus d’informations, consultez l’article [Options du compilateur](http://msdn.microsoft.com/library/ed3376c8-bef4-4c9a-80e9-3b5da232644c).  
   
-- **AdditionalUsingDirectories** paramètre facultatif String [].  
+- **AdditionalUsingDirectories** Paramètre String[] facultatif.  
   
    Spécifie un répertoire dans lequel le compilateur doit faire une recherche en vue de résoudre les références de fichiers transmises à la directive **#using**.  
   
