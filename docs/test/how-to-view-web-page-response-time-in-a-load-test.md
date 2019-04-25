@@ -10,12 +10,12 @@ ms.assetid: e61c49f3-3161-45b1-9220-08b5459065a2
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4d835660995e92df1f6aca94ae9b9b3ccebb5d87
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ed1bd922b390d5b6e90c68b08683e1b9bdb46f32
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821246"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Procédure : afficher le temps de réponse d’une page web dans un test de charge à l’aide de l’analyseur de test de charge
 
@@ -25,15 +25,15 @@ Le temps nécessaire pour charger chaque page web est appelé *temps de réponse
 
 Si vous exécutez votre test de performances web sous contrainte dans un test de charge, vous pouvez analyser les informations suivantes pour chaque page :
 
--   Temps de réponse moyen pour la page.
+- Temps de réponse moyen pour la page.
 
--   Pourcentage des itérations de test qui atteignent l'objectif de temps de réponse pour la page.
+- Pourcentage des itérations de test qui atteignent l'objectif de temps de réponse pour la page.
 
--   Vous pouvez analyser des temps de réponse de page web en utilisant la vue Tables ou la vue Graphiques dans **l’Analyseur de test de charge** :
+- Vous pouvez analyser des temps de réponse de page web en utilisant la vue Tables ou la vue Graphiques dans **l’Analyseur de test de charge** :
 
--   Analyse des temps de réponse de la page web dans la vue Tables
+- Analyse des temps de réponse de la page web dans la vue Tables
 
--   Analyse des temps de réponse de la page web dans la vue Graphiques
+- Analyse des temps de réponse de la page web dans la vue Graphiques
 
 ## <a name="view-response-time-data-in-a-table"></a>Afficher les données de temps de réponse dans un tableau
 
@@ -66,7 +66,7 @@ Si vous exécutez votre test de performances web sous contrainte dans un test de
 
 ## <a name="view-response-time-data-in-a-graph"></a>Afficher les données de temps de réponse dans un graphique
 
-Vous pouvez également consulter les données de temps de réponse dans un graphique pour savoir comment elles changent avec le temps pendant votre test de charge. Ces données sont particulièrement utiles si votre modèle de charge augmente pendant l’exécution du test (par exemple, si vous utilisez le modèle de charge par étape). Pour plus d’informations, consultez [Modifier les modèles de charge en modèle d’activités des utilisateurs virtuels](../test/edit-load-patterns-to-model-virtual-user-activities.md).
+Vous pouvez également consulter les données de temps de réponse dans un graphique pour savoir comment elles changent avec le temps pendant votre test de charge. Ces données sont particulièrement utiles si votre modèle de charge augmente pendant l'exécution du test (par exemple, si vous utilisez le modèle de charge par étape). Pour plus d’informations, consultez [Modifier les modèles de charge en modèle d’activités des utilisateurs virtuels](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
 Pour consulter les données de temps de réponse dans un graphe :
 

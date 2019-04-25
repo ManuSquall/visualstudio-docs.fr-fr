@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f90e6c4bb3759adb46bf827580cc94dc4a8ed71f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 69a8d3f1b84bd59cec9e13bf50eb8eaa46795cdf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62779017"
 ---
 # <a name="options-text-editor-html-web-forms-formatting"></a>Options, Éditeur de texte, HTML (Web Forms), Mise en forme
 
@@ -41,7 +41,6 @@ Ces options déterminent la mise en majuscules du balisage des contrôles serveu
 |**Minuscules**|Les noms d’éléments sont remis en forme pour être convertis en minuscules.|
 |**Définition d’assembly**|La casse de l’élément dépend de la manière dont l’élément est défini dans le type de classe correspondant.|
 
-
 **Balise cliente, Attributs clients**
 
 Ces options indiquent si la mise en forme automatique convertit les noms de propriétés et d’attributs HTML en majuscules ou en minuscules, ou si elle les conserve tels qu’ils ont été entrés.
@@ -51,7 +50,6 @@ Ces options indiquent si la mise en forme automatique convertit les noms de prop
 |**Tel qu’entré**|La casse de l’attribut est exactement celle que vous entrez.|
 |**Majuscules**|Les noms d'attributs sont remis en forme pour être convertis en majuscules.|
 |**Minuscules**|Les noms d'attributs sont remis en forme pour être convertis en minuscules.|
-
 
 ## <a name="automatic-formatting-options"></a>Options de mise en forme automatique
 
@@ -65,7 +63,6 @@ Ces options font en sorte que l’éditeur du mode Source ajoute ou supprime des
 - **Insérer des guillemets de valeur d’attribut lors de la saisie**
 
    Quand cette option est sélectionnée, l’éditeur insère automatiquement des guillemets autour des attributs lors de la saisie (par exemple : ID="Select1"). Désactivez cette option si vous préférez insérer manuellement des guillemets dans votre balisage.
-
 
    > [!NOTE]
    > Que cette option soit sélectionnée ou non, tous les guillemets existants dans votre balise sont conservés ; les guillemets ne sont jamais supprimés.

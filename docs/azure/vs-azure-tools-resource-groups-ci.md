@@ -4,16 +4,16 @@ description: Décrit la configuration de l’intégration continue dans Azure De
 author: mlearned
 manager: jillfra
 ms.assetid: b81c172a-be87-4adc-861e-d20b94be9e38
-ms.topic: conceptual
+ms.topic: article
 ms.workload: azure-vs
 ms.date: 08/01/2016
 ms.author: mlearned
-ms.openlocfilehash: c91b52d10e3692be600bdee3a0e2dd60182f0668
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 1d3904c488186dbbde326619420dd55e71c3af04
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841790"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62568814"
 ---
 # <a name="continuous-integration-in-azure-devops-services-using-azure-resource-group-deployment-projects"></a>Intégration continue dans Azure DevOps Services à l’aide de projets de déploiement Groupe de ressources Azure
 
@@ -172,6 +172,7 @@ Les procédures suivantes vous guident lors des étapes nécessaires à la confi
      ```
      -_artifactsLocation $(artifactsLocation) -_artifactsLocationSasToken (ConvertTo-SecureString -String "$(artifactsLocationSasToken)" -AsPlainText -Force)
      ```
+
      ![Configurer une tâche Déploiement de groupes de ressources Azure](media/vs-azure-tools-resource-groups-ci-in-vsts/walkthrough18.png)
 7. Une fois que vous avez ajouté tous les éléments requis, enregistrez le pipeline de build et choisissez **Mettre la nouvelle build en file d’attente** en haut.
 

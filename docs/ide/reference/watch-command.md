@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a6965378151bb44db1024ac4e9a49de618f410dc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916607"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788998"
 ---
 # <a name="watch-command"></a>Espion, commande
 Crée et ouvre une instance spécifiée d’une fenêtre **Espion** . Vous pouvez utiliser une fenêtre **Espion** pour calculer les valeurs des variables, des expressions et des registres, modifier ces valeurs et enregistrer les résultats.
@@ -34,7 +34,7 @@ Debug.Watch[index]
 
  Obligatoire. Numéro d’instance de la fenêtre Espion.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  La valeur d’`index` doit être un entier. Les valeurs valides sont 1, 2, 3 ou 4.
 
 ## <a name="example"></a>Exemple

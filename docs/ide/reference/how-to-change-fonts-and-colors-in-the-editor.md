@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4fba419605dd332346885dbf93460c1a4e53c9d
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: f0ebc1e4707b0240791524cb0b6b4ba75be897cd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223180"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789590"
 ---
 # <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Procédure : Changer les polices et les couleurs de l’éditeur dans Visual Studio
 
@@ -33,20 +33,20 @@ Vous pouvez changer le type de police par défaut, ajuster la taille de police e
 
 ## <a name="change-the-default-font-face-size-and-colors"></a>Changer le type, la taille et les couleurs de police par défaut
 
-1.  Sélectionnez **Options** dans le menu **Outils**, puis, dans le dossier **Environnement**, sélectionnez **Polices et couleurs**.
+1. Sélectionnez **Options** dans le menu **Outils**, puis, dans le dossier **Environnement**, sélectionnez **Polices et couleurs**.
 
      La [boîte de dialogue Polices et couleurs, Environnement, Options](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md) s’ouvre.
 
-2.  Dans **Afficher les paramètres de**, sélectionnez **Éditeur de texte**.
+2. Dans **Afficher les paramètres de**, sélectionnez **Éditeur de texte**.
 
-3.  Modifiez les options **Police** et **Taille** pour changer le type et la taille de la police pour tous les éléments de texte dans tous les éditeurs.
+3. Modifiez les options **Police** et **Taille** pour changer le type et la taille de la police pour tous les éléments de texte dans tous les éditeurs.
 
-4.  Sélectionnez l’élément approprié dans **Éléments affichés**, puis modifiez les options **Premier plan de l’élément** et **Arrière-plan de l’élément**.
+4. Sélectionnez l’élément approprié dans **Éléments affichés**, puis modifiez les options **Premier plan de l’élément** et **Arrière-plan de l’élément**.
 
     > [!TIP]
     > Cliquez sur **Utiliser les valeurs par défaut** pour réinitialiser les paramètres par défaut.
 
-5.  Cliquez sur **OK**.
+5. Cliquez sur **OK**.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f09cca9bd1e3babccb0debc369881a0efa00fa0b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625112"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830809"
 ---
 # <a name="markerserieswriteflag-method"></a>marker_series::write_flag, méthode
 Écrit un indicateur dans le fichier de trace du visualiseur concurrentiel.

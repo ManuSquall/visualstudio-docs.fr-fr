@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2c6e17b0556b324e0dde6fe188b9d21efb542778
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 8bcc0be91892494a81dd42f141da9c77329767cb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366872"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785193"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>Utiliser Python dans Visual Studio sur Windows
 
@@ -54,7 +54,7 @@ Utilisez la commande **Ouvrir une fenêtre interactive** pour exécuter Python e
 Pour plus d'informations :
 
 - [Gérer des environnements Python](managing-python-environments-in-visual-studio.md)
-- [Informations de référence sur les environnements Python](python-environments-window-tab-reference.md)
+- [Référence sur les environnements Python](python-environments-window-tab-reference.md)
 
 ## <a name="rich-editing-intellisense-and-code-comprehension"></a>Large éventail de fonctionnalités de modification, IntelliSense et d’inclusion de code
 
@@ -82,7 +82,7 @@ Visual Studio prend également en charge IPython/Jupyter dans l’environnement 
 
 Pour plus d'informations :
 
-- [Fenêtre Interactive](python-interactive-repl-in-visual-studio.md)
+- [Fenêtre interactive](python-interactive-repl-in-visual-studio.md)
 - [IPython dans Visual Studio](interactive-repl-ipython.md)
 
 ## <a name="project-system-and-project-and-item-templates"></a>Système de projet, et modèles de projet et d’élément
@@ -98,7 +98,7 @@ Visual Studio vous permet de gérer la complexité d’un projet à mesure qu’
 
 Les modèles de projet et d’élément automatisent le processus de configuration des différents types de projets et de fichiers, ce qui vous fait gagner un temps précieux et vous évite d’avoir à gérer des détails complexes et sujets aux erreurs. Visual Studio fournit des modèles pour le web, Azure, la science des données, la console et d’autres types de projets, ainsi que des modèles pour les fichiers comme les classes Python, les tests unitaires, la configuration web Azure, HTML et même les applications Django.
 
-[![PModèles de projet et d’élément Python dans Visual Studio](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
+[![Modèles de projet et d’élément Python dans Visual Studio](media/project-and-item-templates.png)](media/project-and-item-templates.png#lightbox)
 
 Pour plus d'informations :
 
@@ -130,7 +130,7 @@ Pour plus d'informations :
 
 Le profilage collecte les données relatives à l’utilisation de votre application. Visual Studio prend en charge le profilage avec les interpréteurs CPython et offre la possibilité de comparer les performances entre différentes séquences de profilage.
 
-[![VRésultats du profileur Visual Studio pour un projet Python](media/profiling-results.png)](media/profiling-results.png#lightbox)
+[![Résultats du profileur Visual Studio pour un projet Python](media/profiling-results.png)](media/profiling-results.png#lightbox)
 
 Pour plus d'informations :
 
@@ -156,11 +156,11 @@ Pour plus d’informations, consultez [Kit SDK Azure pour Python](/python/azure/
 
 ## <a name="questions-and-answers"></a>Questions et réponses
 
-**Q. Python est-il pris en charge avec Visual Studio pour Mac ?**
+**Q. Est que la prise en charge de Python est disponible avec Visual Studio pour Mac ?**
 
 Un fichier . Pas pour l’instant, mais vous pouvez voter pour la demande sur [Communauté des développeurs](https://developercommunity.visualstudio.com/content/idea/351820/python-tools-for-visual-studio-mac.html). La documentation [Visual Studio pour Mac](/visualstudio/mac/) identifie les types actuels de développement qu’il prend en charge. En attendant, Visual Studio Code sur Windows, Mac et Linux [fonctionne bien avec Python via les extensions disponibles](https://code.visualstudio.com/docs/languages/python).
 
-**Q. Que peut-on utiliser pour créer une interface utilisateur avec Python ?**
+**Q. Que puis-je utiliser pour créer une interface utilisateur avec Python ?**
 
 Un fichier . Dans ce domaine, le principal moyen est d’utiliser [Qt Project](https://www.qt.io/qt-for-application-development/), avec des liaisons pour Python appelées [PySide (la liaison officielle)](https://wiki.qt.io/PySide) (consultez également les [téléchargements PySide](https://download.qt.io/official_releases/pyside/.)) et [PyQt](https://wiki.python.org/moin/PyQt). Pour l’instant, la prise en charge de Python dans Visual Studio n’inclut pas d’outils spécifiques pour le développement d’interface utilisateur.
 
@@ -199,7 +199,6 @@ Visual Studio 2015 et versions antérieures sont disponibles à l’adresse [vis
 
 <br/>
 
-
 |         Système de projet         |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 web | 2013 Pro+ |      2012 Pro+       | 2010 SP1 Pro+ |
 |--------------------------------|----------|----------|-----------|--------------|----------|-----------|----------------------|---------------|
 | Nouveau projet à partir du code existant | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  |       &#10004;       |   &#10004;    |
@@ -208,7 +207,6 @@ Visual Studio 2015 et versions antérieures sont disponibles à l’adresse [vis
 |        Intégration de Git         | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;<sup>1</sup> |   &#10007;    |
 
 <br/>
-
 
 |           Modification            |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
@@ -230,14 +228,12 @@ Visual Studio 2015 et versions antérieures sont disponibles à l’adresse [vis
 
 <br/>
 
-
 |     Fenêtre Interactive     |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |----------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 |     Fenêtre Interactive     | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 | IPython avec graphiques inline | &#10004; | &#10004; | &#10004;  |   &#10004;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 
 <br/>
-
 
 |               Bureau               |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |-------------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
@@ -247,7 +243,6 @@ Visual Studio 2015 et versions antérieures sont disponibles à l’adresse [vis
 
 <br/>
 
-
 |         Web         |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |---------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 | Projet web Django  | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
@@ -256,7 +251,6 @@ Visual Studio 2015 et versions antérieures sont disponibles à l’adresse [vis
 | Projet Web générique | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004; | &#10004;  | &#10004;  |   &#10004;    |
 
 <br/>
-
 
 |         Azure          |   2017+   |   2015   | 2013 Comm | 2013 Desktop |       2013 web       |      2013 Pro+       |      2012 Pro+       |    2010 SP1 Pro+     |
 |------------------------|----------|----------|-----------|--------------|----------------------|----------------------|----------------------|----------------------|
@@ -269,7 +263,6 @@ Visual Studio 2015 et versions antérieures sont disponibles à l’adresse [vis
 
 <br/>
 
-
 |           Modèles Django           |   2017+   |   2015   | 2013 Comm | 2013 Desktop |       2013 web       |      2013 Pro+       | 2012 Pro+ | 2010 SP1 Pro+ |
 |--------------------------------------|----------|----------|-----------|--------------|----------------------|----------------------|-----------|---------------|
 |              Débogage               | &#10004; | &#10004; | &#10004;  |   &#10007;   |       &#10004;       |       &#10004;       | &#10004;  |   &#10004;    |
@@ -277,7 +270,6 @@ Visual Studio 2015 et versions antérieures sont disponibles à l’adresse [vis
 | Saisie semi-automatique pour CSS et JavaScript | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10004;<sup>5</sup> | &#10004;<sup>5</sup> | &#10007;  |   &#10007;    |
 
 <br/>
-
 
 |                  Débogage                  |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |---------------------------------------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
@@ -292,13 +284,11 @@ Visual Studio 2015 et versions antérieures sont disponibles à l’adresse [vis
 
 <a name="matrix-profiling"></a>
 
-
 | Profilage |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |-----------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|
 | Profilage | &#10004; | &#10004; | &#10004;  |   &#10007;   | &#10007; | &#10004;  | &#10004;  |   &#10004;    |
 
 <br/>
-
 
 |     Tester      |   2017+   |   2015   | 2013 Comm | 2013 Desktop | 2013 web | 2013 Pro+ | 2012 Pro+ | 2010 SP1 Pro+ |
 |---------------|----------|----------|-----------|--------------|----------|-----------|-----------|---------------|

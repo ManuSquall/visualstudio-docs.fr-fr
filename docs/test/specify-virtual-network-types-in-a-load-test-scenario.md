@@ -12,12 +12,12 @@ ms.assetid: 3c4f7874-081a-4ec4-9510-4d6d7d863a11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 896a493701f0fff2c5ecf6057831e9092cd28a1d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8444fa5910658ab92643b2110483efc059560674
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990654"
 ---
 # <a name="specify-virtual-network-types-in-a-load-test-scenario"></a>Spécifier des types de réseaux virtuels dans un scénario de test de charge
 
@@ -41,17 +41,17 @@ Pour plus d’informations, consultez [À propos du contrôle de combinaison](..
 
 Visual Studio utilise une émulation de réseau véritable basée sur un logiciel pour tous les types de tests, notamment les tests de charge. L'émulation de réseau véritable simule les conditions d'un réseau par manipulation directe des paquets réseau. L'émulateur de réseau véritable peut émuler le comportement des réseaux avec et sans fil en utilisant un lien physique fiable, par exemple Ethernet. Les attributs de réseau suivants sont incorporés dans une émulation de réseau véritable :
 
--   Délai aller-retour sur le réseau (latence)
+- Délai aller-retour sur le réseau (latence)
 
--   Bande passante disponible
+- Bande passante disponible
 
--   Comportement de mise en file d'attente
+- Comportement de mise en file d'attente
 
--   Perte de paquets
+- Perte de paquets
 
--   Réorganisation des paquets
+- Réorganisation des paquets
 
--   Propagations des erreurs
+- Propagations des erreurs
 
 L'émulation de réseau véritable fournit également la flexibilité nécessaire au filtrage des paquets réseau selon les adresses IP ou en fonction des protocoles tels que TCP, UDP et ICMP.
 
@@ -59,30 +59,30 @@ L'émulation de réseau véritable peut être utilisée par les développeurs et
 
 ## <a name="to-add-new-networks-to-a-scenario"></a>Pour ajouter de nouveaux réseaux à un scénario
 
-1.  Durant le processus de spécification de la combinaison de réseaux pour un scénario, choisissez **Ajouter**.
+1. Durant le processus de spécification de la combinaison de réseaux pour un scénario, choisissez **Ajouter**.
 
      Une nouvelle entrée de réseau est ajoutée à la grille.
 
     > [!NOTE]
     > Pour afficher la boîte de dialogue **Modifier la combinaison de réseaux**, cliquez avec le bouton droit sur un scénario existant, puis choisissez **Modifier la combinaison de réseaux**.
 
-2.  Dans la colonne **Type de réseau**, cliquez sur la flèche correspondant à la nouvelle entrée. Choisissez le type de réseau désiré.
+2. Dans la colonne **Type de réseau**, cliquez sur la flèche correspondant à la nouvelle entrée. Choisissez le type de réseau désiré.
 
-3.  (Facultatif) Ajustez le contrôle de combinaison pour spécifier la distribution de test. Pour plus d’informations, consultez [À propos du contrôle de combinaison](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+3. (Facultatif) Ajustez le contrôle de combinaison pour spécifier la distribution de test. Pour plus d’informations, consultez [À propos du contrôle de combinaison](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
 
-4.  Une fois que vous avez terminé d’ajouter des réseaux, choisissez **OK**.
+4. Une fois que vous avez terminé d’ajouter des réseaux, choisissez **OK**.
 
 ## <a name="to-remove-networks-from-a-scenario"></a>Pour supprimer des réseaux d'un scénario
 
-1.  Ouvrez un test de charge.
+1. Ouvrez un test de charge.
 
-2.  Cliquez avec le bouton droit sur le scénario dont vous souhaitez supprimer un réseau, puis choisissez **Modifier la combinaison de réseaux**. La boîte de dialogue **Modifier la combinaison de réseaux** s’affiche.
+2. Cliquez avec le bouton droit sur le scénario dont vous souhaitez supprimer un réseau, puis choisissez **Modifier la combinaison de réseaux**. La boîte de dialogue **Modifier la combinaison de réseaux** s’affiche.
 
-3.  Sélectionnez le réseau dans la grille, puis choisissez **Supprimer**.
+3. Sélectionnez le réseau dans la grille, puis choisissez **Supprimer**.
 
-4.  (Facultatif) Ajustez le contrôle de combinaison pour spécifier la distribution de test. Pour plus d’informations, consultez [À propos du contrôle de combinaison](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
+4. (Facultatif) Ajustez le contrôle de combinaison pour spécifier la distribution de test. Pour plus d’informations, consultez [À propos du contrôle de combinaison](../test/specify-virtual-network-types-in-a-load-test-scenario.md).
 
-5.  Une fois que vous avez fini de supprimer des réseaux, choisissez **OK**.
+5. Une fois que vous avez fini de supprimer des réseaux, choisissez **OK**.
 
 ## <a name="about-the-mix-control"></a>À propos du contrôle de combinaison
 

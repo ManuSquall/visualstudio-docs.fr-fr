@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc571c40dfcc1074b157b850c8b6f3f5e4649563
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 98163080c44a46330a4ba792f2ddde680c75b074
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924511"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990052"
 ---
 # <a name="shell-command"></a>Shell, commande
 Lance les programmes exécutables à partir de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
@@ -56,14 +56,13 @@ Tools.Shell [/command] [/output] [/dir:folder] path [args]
 
  Optionnel. Spécifie que la sortie pour l’exécutable doit s’afficher dans la fenêtre **Sortie**.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Les commutateurs /dir /o /c doivent être spécifiés immédiatement après `Tools.Shell`. Toute syntaxe spécifiée après le nom de l’exécutable est transmise en tant qu’argument de la ligne de commande.
 
  L’alias prédéfini `Shell` peut être utilisé à la place de `Tools.Shell`.
 
 > [!CAUTION]
 > Si l’argument `path` fournit le chemin du répertoire et le nom du fichier, vous devez placer le nom de chemin tout entier entre guillemets ("""), comme dans l’exemple suivant :
-
 
 ```cmd
 Tools.Shell """C:\Program Files\SomeFile.exe"""
@@ -77,7 +76,6 @@ Tools.Shell """C:\Program Files\SomeFile.exe"""
 
 > [!CAUTION]
 > Si vous ne mettez pas la chaîne de chemin entre guillemets ("""), Windows utilisera uniquement la partie de la chaîne jusqu’au premier espace. Par exemple, si la chaîne de chemin ci-dessus n’a pas été correctement mise entre guillemets, Windows recherche un fichier nommé « Program » situé dans le répertoire racine C:\. Si un fichier exécutable C:\Program.exe est effectivement disponible, même installé de manière illicite, Windows essaie d’exécuter ce programme à la place du programme « C:\Program Files\SomeFile.exe » voulu.
-
 
 ## <a name="example"></a>Exemple
  La commande suivante utilise xcopy.exe pour copier le fichier `MyText.txt` dans le dossier `Text`. La sortie de xcopy.exe s’affiche à la fois dans la fenêtre **Commande** et dans la fenêtre **Sortie**.

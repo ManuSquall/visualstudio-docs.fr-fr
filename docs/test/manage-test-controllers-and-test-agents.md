@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca466163ed7e6bd610b5041d3731bdc2d43c6e16
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b90a80ffb958fb08a39a4f3b7f4350aa80d830d2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788750"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Gérer les contrôleurs de test et les agents de test
 
@@ -28,9 +28,9 @@ Pour permettre la configuration et la surveillance du contrôleur de test et des
 
 Pour les projets de tests de charge, vous pouvez également choisir **Gérer les contrôleurs de test** dans le menu **Test de charge**.
 
-## <a name="add-a-test-agent-to-a-test-controller"></a>Ajout d’un agent de test à un contrôleur de test
+## <a name="add-a-test-agent-to-a-test-controller"></a>Ajout d'un agent de test à un contrôleur de test
 
-Il est possible d’ajouter un agent de test à un contrôleur de test différent et d’ajouter un agent de test à un contrôleur de test que vous venez d’installer.
+Il est possible d'ajouter un agent de test à un contrôleur de test différent et d'ajouter un agent de test à un contrôleur de test que vous venez d'installer.
 
 ### <a name="to-add-a-test-agent-to-a-test-controller"></a>Pour ajouter un agent de test à un contrôleur de test
 
@@ -39,13 +39,13 @@ Il est possible d’ajouter un agent de test à un contrôleur de test différen
      La boîte de dialogue **Configurer l’agent de test** s’affiche.
 
     > [!NOTE]
-    > Un agent de test doit déjà être installé pour pouvoir l’ajouter à un contrôleur de test. Pour plus d’informations sur la façon d’installer un agent de test, consultez [Installer et configurer des agents de test](../test/lab-management/install-configure-test-agents.md).
+    > Un agent de test doit déjà être installé pour pouvoir l'ajouter à un contrôleur de test. Pour plus d’informations sur la façon d’installer un agent de test, consultez [Installer et configurer des agents de test](../test/lab-management/install-configure-test-agents.md).
 
 2. Deux modes d’exécution de l’agent de test sont proposés :
 
-   - **Service** : si vous n’avez pas à exécuter de tests automatisés qui interagissent avec le poste de travail (tests codés de l’interface utilisateur, par exemple) ni à créer un enregistrement vidéo durant l’exécution de votre test, sous **Exécuter l’agent de test en tant que**, sélectionnez **Service**. L’agent de test démarrera en tant que service. Sélectionnez **Suivant**.
+   - **Service** : si vous n’avez pas à exécuter de tests automatisés qui interagissent avec le poste de travail (tests codés de l’interface utilisateur, par exemple) ni à créer un enregistrement vidéo durant l’exécution de votre test, sous **Exécuter l’agent de test en tant que**, sélectionnez **Service**. L'agent de test démarrera en tant que service. Sélectionnez **Suivant**.
 
-      Vous pouvez maintenant entrer les détails relatifs à l’utilisateur lorsque l’agent de test démarre en tant que service.
+      Vous pouvez maintenant entrer les détails relatifs à l'utilisateur lorsque l'agent de test démarre en tant que service.
 
       1. Entrez le nom dans **Nom d’utilisateur**.
 
@@ -58,23 +58,23 @@ Il est possible d’ajouter un agent de test à un contrôleur de test différen
         |- Si le nom d’utilisateur de l’agent n’est pas dans le service d’agent, celui-ci essaiera de l’ajouter, ce qui nécessite des autorisations sur le contrôleur de test.|
         |- L’utilisateur qui essaie d’utiliser le contrôleur de test doit figurer dans le compte Utilisateurs du contrôleur de test ; sinon il ne pourra pas exécuter les tests sur le contrôleur.|
 
-   - **Processus interactif** : si vous souhaitez exécuter des tests automatisés qui doivent interagir avec le poste de travail (tests codés de l’interface utilisateur, par exemple) ou créer un enregistrement vidéo durant l’exécution de votre test, sélectionnez **Processus interactif**. L’agent de test démarrera en tant que processus interactif et non en tant que service.
+   - **Processus interactif** : si vous souhaitez exécuter des tests automatisés qui doivent interagir avec le poste de travail (tests codés de l’interface utilisateur, par exemple) ou créer un enregistrement vidéo durant l’exécution de votre test, sélectionnez **Processus interactif**. L'agent de test démarrera en tant que processus interactif et non en tant que service.
 
-      Sur la page suivante, entrer les détails relatifs à l’utilisateur lorsque l’agent de test démarre en tant que processus, ainsi que d’autres options.
+      Sur la page suivante, entrer les détails relatifs à l'utilisateur lorsque l'agent de test démarre en tant que processus, ainsi que d'autres options.
 
       1. Entrez le nom dans **Nom d’utilisateur**.
 
       2. Entrez le mot de passe dans **Mot de passe**.
 
         > [!NOTE]
-        > Si vous configurez l’agent de test pour qu’il fonctionne en tant que processus interactif avec un autre utilisateur qui n’est pas l’utilisateur actuellement actif, vous devez redémarrer l’ordinateur et ouvrir une session avec cet autre utilisateur pour pouvoir démarrer l’agent. Les mots de passe null ne sont par ailleurs pas pris en charge pour les comptes d'utilisateurs. Si vous souhaitez utiliser le collecteur IntelliTrace ou l'émulation de réseau, le compte d'utilisateur doit être membre du groupe Administrateurs.
+        > Si vous configurez l'agent de test pour qu'il fonctionne en tant que processus interactif avec un autre utilisateur qui n'est pas l'utilisateur actuellement actif, vous devez redémarrer l'ordinateur et ouvrir une session avec cet autre utilisateur pour pouvoir démarrer l'agent. Les mots de passe null ne sont par ailleurs pas pris en charge pour les comptes d'utilisateurs. Si vous souhaitez utiliser le collecteur IntelliTrace ou l'émulation de réseau, le compte d'utilisateur doit être membre du groupe Administrateurs.
 
-      3. Pour vérifier qu’un ordinateur sur lequel est installé un agent de test puisse exécuter des tests après avoir redémarré, vous pouvez configurer l’ordinateur de sorte qu’il ouvre automatiquement une session avec l’utilisateur de l’agent de test. Sélectionnez **Se connecter automatiquement**. Ainsi, le nom d'utilisateur et le mot de passe seront stockés dans un formulaire chiffré dans le Registre.
+      3. Pour vérifier qu'un ordinateur sur lequel est installé un agent de test puisse exécuter des tests après avoir redémarré, vous pouvez configurer l'ordinateur de sorte qu'il ouvre automatiquement une session avec l'utilisateur de l'agent de test. Sélectionnez **Se connecter automatiquement**. Ainsi, le nom d'utilisateur et le mot de passe seront stockés dans un formulaire chiffré dans le Registre.
 
       4. Pour vérifier que l’écran de veille est désactivé étant donné que cela peut interférer avec tout test automatisé qui doit interagir avec le poste de travail, sélectionnez **S’assurer que l’écran de veille est désactivé**.
 
         > [!WARNING]
-        > Se connecter automatiquement ou désactiver l'écran de veille présente des risques. En activant la connexion automatique, vous permettez à d'autres utilisateurs de démarrer cet ordinateur et d'utiliser le compte sur lequel il se connecte automatiquement. Si vous désactivez l'écran de veille, l'ordinateur peut ne pas inviter l'utilisateur à ouvrir une session pour déverrouiller l'ordinateur. Tout personne peut ainsi accéder à l'ordinateur, à partir du moment où celle-ci peut y accéder physiquement. Si vous activez ces fonctionnalités sur un ordinateur, vous devez vous assurer que ces ordinateurs sont physiquement sécurisés. S'ils se trouvent, par exemple, dans un lab physiquement sécurisé. (La désactivation de l’option **S’assurer que l’écran de veille est désactivé** ne permet pas d’activer l’écran de veille.)
+        > Se connecter automatiquement ou désactiver l'écran de veille présente des risques. En activant la connexion automatique, vous permettez à d'autres utilisateurs de démarrer cet ordinateur et d'utiliser le compte sur lequel il se connecte automatiquement. Si vous désactivez l'écran de veille, l'ordinateur peut ne pas inviter l'utilisateur à ouvrir une session pour déverrouiller l'ordinateur. Tout personne peut ainsi accéder à l'ordinateur, à partir du moment où celle-ci peut y accéder physiquement. Si vous activez ces fonctions sur un ordinateur, vous devez vous assurer que ces ordinateurs sont physiquement sécurisés. S'ils se trouvent, par exemple, dans un lab physiquement sécurisé. (La désactivation de l’option **S’assurer que l’écran de veille est désactivé** ne permet pas d’activer l’écran de veille.)
 
 3. Pour inscrire cet agent auprès d’un contrôleur de test différent, sélectionnez **Inscrire auprès du contrôleur de test**. Tapez le nom de votre contrôleur de test suivi de **:** et le numéro de port que vous utilisez dans **Inscrire l’agent de test auprès du contrôleur de test suivant**. Par exemple, tapez **agent1:6901**.
 
@@ -84,16 +84,16 @@ Il est possible d’ajouter un agent de test à un contrôleur de test différen
 4. Pour enregistrer vos changements, choisissez **Appliquer les paramètres**. Fermez la boîte de dialogue **Résumé de la configuration**, puis quittez l’**outil de configuration de Test Agent**.
 
 > [!WARNING]
-> Si l’agent est actuellement configuré pour s’exécuter sur un autre contrôleur de test, vous devez supprimer l’agent de test de ce contrôleur.
+> Si l'agent est actuellement configuré pour s'exécuter sur un autre contrôleur de test, vous devez supprimer l'agent de test de ce contrôleur.
 
-## <a name="remove-a-test-agent-from-a-test-controller"></a>Suppression d’un agent de test d’un contrôleur de test
+## <a name="remove-a-test-agent-from-a-test-controller"></a>Suppression d'un agent de test d'un contrôleur de test
 
 Pour pouvoir être supprimé, un agent de test doit être hors connexion.
 
 > [!NOTE]
 > Vous ne pouvez pas utiliser cette procédure pour supprimer les agents inscrits auprès d'un contrôleur dans le cadre d'un environnement lab. Pour supprimer ces agents d'un contrôleur, vous devez supprimer l'environnement à l'aide de Microsoft Test Manager.
 
-### <a name="to-remove-a-test-agent-from-a-test-controller"></a>Pour supprimer un agent de test d’un contrôleur de test
+### <a name="to-remove-a-test-agent-from-a-test-controller"></a>Pour supprimer un agent de test d'un contrôleur de test
 
 1. Si le contrôleur de test n’est pas inscrit auprès d’un projet, effectuez les étapes suivantes.
 
@@ -106,24 +106,24 @@ Pour pouvoir être supprimé, un agent de test doit être hors connexion.
     3. Dans le volet **Agents**, sélectionnez le nom de l’agent de test. Si l’agent est encore en ligne, choisissez **Hors connexion**. Pour le supprimer, choisissez **Supprimer**.
 
         > [!NOTE]
-        > La suppression d’un agent de test ne fait que le dissocier du contrôleur de test. Pour désinstaller complètement l’agent de test, utilisez **Programmes et fonctionnalités** dans le Panneau de configuration sur l’ordinateur de l’agent de test.
+        > La suppression d'un agent de test ne fait que le dissocier du contrôleur de test. Pour désinstaller complètement l’agent de test, utilisez **Programmes et fonctionnalités** dans le Panneau de configuration sur l’ordinateur de l’agent de test.
 
 2. Si le contrôleur de test est inscrit auprès d’un projet, supprimez l’agent avec Microsoft Test Manager.
 
-## <a name="change-the-settings-for-a-test-agent"></a>Modifications des paramètres d’un agent de test
+## <a name="change-the-settings-for-a-test-agent"></a>Modifications des paramètres d'un agent de test
 
-Les statuts possibles d’un agent de test sont les suivants :
+Les statuts possibles d'un agent de test sont les suivants :
 
 |Status|Description|
 |-|-----------------|
 |Exécution du test en cours|Exécution de tests|
 |Prêt|Disponible pour l'exécution de tests et la collecte de données et de diagnostics|
 |Offline|Non disponible pour l'exécution de tests et la collecte de données et de diagnostics|
-|Déconnecté|L’agent de test n’est pas lancé|
+|Déconnecté|L'agent de test n'est pas lancé|
 
-Vous pouvez modifier l'état et d'autres paramètres pour les agents de test à l'aide des procédures suivantes.
+Vous pouvez modifier l’état et d’autres paramètres pour les agents de test à l’aide des procédures suivantes.
 
-### <a name="to-change-the-settings-of-a-test-agent"></a>Pour modifier les paramètres d’un agent de test
+### <a name="to-change-the-settings-of-a-test-agent"></a>Pour modifier les paramètres d'un agent de test
 
 > [!NOTE]
 > Si l’agent de test est inscrit auprès d’un contrôleur de test inscrit auprès d’un projet, changez les paramètres dans Microsoft Test Manager.
@@ -138,20 +138,20 @@ Vous pouvez modifier l'état et d'autres paramètres pour les agents de test à 
 
 1. Choisissez **Propriétés**.
 
-1. Modifiez les propriétés de l’agent de test suivantes si nécessaire :
+1. Modifiez les propriétés de l'agent de test suivantes si nécessaire :
 
-|Propriété de l’agent de test|Description|
+|Propriété de l'agent de test|Description|
 |-|-----------------|
-|**Poids**|Utilisé pour distribuer la charge lorsque vous utilisez des agents de test avec des niveaux de performance différents. Par exemple, un agent de test avec un poids de 100 reçoit une charge deux fois supérieure à celle d’un agent de test avec un poids de 50.|
-|**Commutation IP**|Utilisé pour configurer la commutation IP. La commutation IP permet à un agent de test d'envoyer des demandes à un serveur à l'aide d'une plage d'adresses IP. Cela simule des appels provenant de différents ordinateurs clients.<br /><br /> La commutation IP est importante si votre test de charge accède à une batterie de serveurs web. La plupart des programmes d’équilibrage de charge établissent l’affinité entre un client et un serveur web particulier en utilisant l’adresse IP du client. Si toutes les demandes semblent provenir d’un seul client, l’équilibrage de charge n’équilibre pas la charge. Pour obtenir le bon équilibre de charge dans la batterie de serveurs web, assurez-vous que les demandes proviennent d’une plage d’adresses IP. **Remarque :**  Vous pouvez spécifier une carte réseau ou utiliser **(Non assigné)** pour sélectionner automatiquement une carte réseau non utilisée. <br /><br /> Pour utiliser la fonctionnalité de commutation IP, le service Visual Studio Test Agent doit s’exécuter en tant qu’utilisateur du groupe Administrateurs de cet ordinateur agent. Cet utilisateur est sélectionné pendant la configuration de l'agent, mais peut être modifié en modifiant les propriétés du service puis en le redémarrant.<br /><br /> Pour vérifier que la commutation IP fonctionne correctement, activez le processus d’enregistrement du journal d’IIS sur le serveur web, puis utilisez les fonctionnalités de ce processus pour vérifier que les requêtes proviennent des adresses IP que vous avez configurées.|
-|**Attributs**|Ensemble de paires nom/valeur qui peuvent être utilisées dans la sélection d’agent de test. Par exemple, un test peut exiger un système d'exploitation particulier. Vous pouvez ajouter des attributs dans l’onglet **Rôles** de votre fichier de paramètres de test et ils peuvent être utilisés pour sélectionner un agent de test qui a des attributs identiques. Si vous voulez exécuter un test sur plusieurs ordinateurs, créez un attribut dans le rôle de paramètres de test qui est configuré pour exécuter vos tests, puis configurez un attribut correspondant sur chaque agent de test que vous utilisez dans ce rôle. **Remarque :**  Ce paramètre est disponible seulement pour les agents de test inscrits auprès d’un contrôleur de test qui n’est pas lui-même inscrit auprès d’un projet, car ces attributs sont utilisés uniquement dans les paramètres de test de Visual Studio.|
+|**Poids**|Utilisé pour distribuer la charge lorsque vous utilisez des agents de test avec des niveaux de performance différents. Par exemple, un agent de test avec un poids de 100 reçoit une charge deux fois supérieure à celle d'un agent de test avec un poids de 50.|
+|**Commutation IP**|Utilisé pour configurer la commutation IP. La commutation IP permet à un agent de test d’envoyer des demandes à un serveur à l’aide d’une plage d’adresses IP. Cela simule des appels provenant de différents ordinateurs clients.<br /><br /> La commutation IP est importante si votre test de charge accède à une batterie de serveurs web. La plupart des programmes d’équilibrage de charge établissent l’affinité entre un client et un serveur web particulier en utilisant l’adresse IP du client. Si toutes les demandes semblent provenir d'un seul client, l'équilibrage de charge n'équilibre pas la charge. Pour obtenir le bon équilibre de charge dans la batterie de serveurs web, assurez-vous que les demandes proviennent d’une plage d’adresses IP. **Remarque :**  Vous pouvez spécifier une carte réseau ou utiliser **(Non assigné)** pour sélectionner automatiquement une carte réseau non utilisée. <br /><br /> Pour utiliser la fonctionnalité de commutation IP, le service Visual Studio Test Agent doit s'exécuter en tant qu'utilisateur du groupe Administrateurs de cet ordinateur agent. Cet utilisateur est sélectionné pendant la configuration de l'agent, mais peut être modifié en modifiant les propriétés du service puis en le redémarrant.<br /><br /> Pour vérifier que la commutation IP fonctionne correctement, activez le processus d’enregistrement du journal d’IIS sur le serveur web, puis utilisez les fonctionnalités de ce processus pour vérifier que les requêtes proviennent des adresses IP que vous avez configurées.|
+|**Attributs**|Ensemble de paires nom/valeur qui peuvent être utilisées dans la sélection d'agent de test. Par exemple, un test peut exiger un système d'exploitation particulier. Vous pouvez ajouter des attributs dans l’onglet **Rôles** de votre fichier de paramètres de test et ils peuvent être utilisés pour sélectionner un agent de test qui a des attributs identiques. Si vous voulez exécuter un test sur plusieurs ordinateurs, créez un attribut dans le rôle de paramètres de test qui est configuré pour exécuter vos tests, puis configurez un attribut correspondant sur chaque agent de test que vous utilisez dans ce rôle. **Remarque :**  Ce paramètre est disponible seulement pour les agents de test inscrits auprès d’un contrôleur de test qui n’est pas lui-même inscrit auprès d’un projet, car ces attributs sont utilisés uniquement dans les paramètres de test de Visual Studio.|
 
-Les modifications du poids et des attributs des agents de test sont appliquées immédiatement, mais n’affectent pas les tests en cours d’exécution. La plage d'adresses IP prend effet après le redémarrage du contrôleur de test.
+Les modifications du poids et des attributs des agents de test sont appliquées immédiatement, mais n'affectent pas les tests en cours d'exécution. La plage d'adresses IP prend effet après le redémarrage du contrôleur de test.
 
-(Facultatif) Pour modifier l'état d'un agent de test, sélectionnez l'agent dans la liste puis sélectionnez une action parmi les choix disponibles, en fonction de l'état actuel de l'agent.
+(Facultatif) Pour modifier l’état d’un agent de test, sélectionnez l’agent dans la liste puis sélectionnez une action parmi les choix disponibles, en fonction de l’état actuel de l’agent.
 
 > [!NOTE]
-> Si votre agent de test s'exécute en tant que processus, il est possible de gérer l'état de l'agent de test à partir de l'icône de zone de notification qui s'exécute sur l'ordinateur sur lequel est installé votre agent de test. Elle indique l'état de l'agent de test. Vous pouvez démarrer, arrêter ou redémarrer l'agent s'il s'exécute en tant que processus à l'aide de cet outil.
+> Si votre agent de test s’exécute en tant que processus, il est possible de gérer l’état de l’agent de test à partir de l’icône de zone de notification qui s’exécute sur l’ordinateur sur lequel est installé votre agent de test. Elle indique l’état de l’agent de test. Vous pouvez démarrer, arrêter ou redémarrer l'agent s'il s'exécute en tant que processus à l'aide de cet outil.
 
 ## <a name="configure-a-test-controller"></a>Configuration d'un contrôleur de test
 
@@ -184,27 +184,27 @@ Si vous voulez inscrire votre contrôleur de test auprès de votre collection de
 
 Quand vous ajoutez des rôles à vos paramètres de test pour Visual Studio, vous pouvez également ajouter des propriétés d'agent pour chacun des rôles. Ceci détermine quels agents de test sont disponibles pour ce rôle. Lorsque vous exécutez vos tests en utilisant ces paramètres de test, le contrôleur de test sélectionné détermine la disponibilité des agents obligatoires. Les scénarios possibles sont alors les suivants :
 
--   Aucun agent n'est disponible pour le rôle qui doit exécuter les tests. Vos tests ne peuvent pas être exécutés. Vous pouvez exécuter l'une des actions suivantes puis exécuter vos tests de nouveau :
+- Aucun agent n'est disponible pour le rôle qui doit exécuter les tests. Vos tests ne peuvent pas être exécutés. Vous pouvez exécuter l'une des actions suivantes puis exécuter vos tests de nouveau :
 
-    -   Vous pouvez attendre qu'un agent devienne disponible pour ce rôle pour exécuter les tests.
+    - Vous pouvez attendre qu'un agent devienne disponible pour ce rôle pour exécuter les tests.
 
-    -   Si certains agents hors connexion peuvent être utilisés pour ce rôle, vous pouvez redémarrer l'agent afin qu'il devienne disponible.
+    - Si certains agents hors connexion peuvent être utilisés pour ce rôle, vous pouvez redémarrer l'agent afin qu'il devienne disponible.
 
-    -   Vous pouvez ajouter un autre agent, avec les propriétés d'agent appropriées pour ce rôle, au contrôleur de test.
+    - Vous pouvez ajouter un autre agent, avec les propriétés d'agent appropriées pour ce rôle, au contrôleur de test.
 
-    -   Vous pouvez modifier les propriétés d'agent pour ce rôle dans les paramètres de test pour activer les autres agents que vous voulez utiliser.
+    - Vous pouvez modifier les propriétés d'agent pour ce rôle dans les paramètres de test pour activer les autres agents que vous voulez utiliser.
 
--   Aucun agent n'est disponible pour un ou plusieurs rôles qui exécutent les adaptateurs de données de diagnostic. Vos tests peuvent être exécutés, mais l'adaptateur de données de diagnostic ne peut pas être exécuté. Vous pouvez exécuter vos tests sans l'adaptateur de données de diagnostic ou vous pouvez exécuter l'une des actions suivantes et exécuter vos tests de nouveau :
+- Aucun agent n'est disponible pour un ou plusieurs rôles qui exécutent les adaptateurs de données de diagnostic. Vos tests peuvent être exécutés, mais l'adaptateur de données de diagnostic ne peut pas être exécuté. Vous pouvez exécuter vos tests sans l'adaptateur de données de diagnostic ou vous pouvez exécuter l'une des actions suivantes et exécuter vos tests de nouveau :
 
-    -   Vous pouvez attendre qu'un agent devienne disponible pour ces rôles.
+    - Vous pouvez attendre qu'un agent devienne disponible pour ces rôles.
 
-    -   Si des agents hors connexion peuvent être utilisés pour ce rôle, vous devez les mettre en ligne à partir de **Administrer le contrôleur de test** dans le menu **Test**. De plus, vous devrez peut-être redémarrer l'agent s'il a été déconnecté du contrôleur.
+    - Si des agents hors connexion peuvent être utilisés pour ce rôle, vous devez les mettre en ligne à partir de **Administrer le contrôleur de test** dans le menu **Test**. De plus, vous devrez peut-être redémarrer l'agent s'il a été déconnecté du contrôleur.
 
-    -   Vérifiez que tous les agents dont vous pouvez avoir besoin pour cette série de tests ne sont pas en cours d'exécution. Vous pouvez vérifier l’état des agents à partir de **Administrer le contrôleur de test** dans le menu **Test**.
+    - Vérifiez que tous les agents dont vous pouvez avoir besoin pour cette série de tests ne sont pas en cours d'exécution. Vous pouvez vérifier l’état des agents à partir de **Administrer le contrôleur de test** dans le menu **Test**.
 
-    -   Vous pouvez ajouter un autre agent, avec les propriétés d'agent appropriées pour ce rôle, au contrôleur de test.
+    - Vous pouvez ajouter un autre agent, avec les propriétés d'agent appropriées pour ce rôle, au contrôleur de test.
 
-    -   Vous pouvez modifier les propriétés d'agent pour ce rôle dans les paramètres de test pour activer les autres agents que vous voulez utiliser.
+    - Vous pouvez modifier les propriétés d'agent pour ce rôle dans les paramètres de test pour activer les autres agents que vous voulez utiliser.
 
 ## <a name="load-tests-from-delay-signed-assemblies"></a>Charger des tests à partir d’assemblys de tests à signature différée
 

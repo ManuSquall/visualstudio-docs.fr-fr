@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: badb2266e47fcbf0bb20c5fd6fd2f7f25a167997
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830913"
 ---
 # <a name="marks-view"></a>Marques, vue
 La vue Marques affiche l’échantillonnage et les événements ETW qui ont été insérés dans l’application.

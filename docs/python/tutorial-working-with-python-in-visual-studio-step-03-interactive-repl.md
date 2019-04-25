@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 14015c01b487bfe7963d36154ff2dc9b599d7c49
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366820"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430851"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Étape 3 : Utiliser la fenêtre REPL interactif
 
@@ -97,5 +97,5 @@ La fenêtre **Interactive** de Visual Studio pour Python offre une expérience u
 
 ## <a name="go-deeper"></a>Approfondir la question
 
-- [Utiliser la fenêtre interactive](python-interactive-repl-in-visual-studio.md)
-- [Utiliser l’environnement REPL IPython](interactive-repl-ipython.md)
+- [Utiliser la fenêtre Interactive](python-interactive-repl-in-visual-studio.md)
+- [Utiliser l’environnement REPL d’IPython](interactive-repl-ipython.md)

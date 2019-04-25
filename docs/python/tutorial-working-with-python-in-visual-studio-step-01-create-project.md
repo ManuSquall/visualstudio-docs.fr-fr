@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: ed4fdbfe7090a66d955461f2c3a394f6fb661c5a
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366287"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430715"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>Tutoriel : Utiliser Python dans Visual Studio
 
@@ -26,9 +26,9 @@ Visual Studio fournit une prise en charge du langage de premier ordre pour Pytho
 
 - [Étape 0 : Installation](tutorial-working-with-python-in-visual-studio-step-00-installation.md)
 - [Étape 1 : Créer un projet Python (cet article)](#step-1-create-a-new-python-project)
-- [Étape 2 : Écrire et exécuter du code pour voir Visual Studio IntelliSense à l’œuvre](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
+- [Étape 2 : Écrire et exécuter du code pour voir à l’œuvre Visual Studio IntelliSense](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
 - [Étape 3 : Créer davantage de code dans la fenêtre REPL interactive](tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md)
-- [Étape 4 : Exécuter le programme obtenu dans le débogueur Visual Studio](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
+- [Étape 4 : Exécuter le programme achevé dans le débogueur Visual Studio](tutorial-working-with-python-in-visual-studio-step-04-debugging.md)
 - [Étape 5 : Installer des packages et gérer des environnements Python](tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md)
 - [Étape 6 : Utiliser Git](tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md)
 

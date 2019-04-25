@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 69b3de3a7f1554bc3ad95874a58b75b809d610a2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597983"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62794660"
 ---
 # <a name="multiple-categories-are-present"></a>Plusieurs catégories sont présentes
 Une section qui contient plusieurs types d’activité sur une période donnée est sélectionnée. Notez que deux couleurs sont affichées, l’une empilée verticalement sur l’autre. Ces couleurs représentent simplement les deux activités les plus fréquentes sur la période donnée. Les fréquences de ces deux activités sont indiquées l’une par rapport à l’autre sous forme de tiers ou de moitiés de la barre verticale. Pour obtenir plus de détails, essayez de faire un zoom avant sur cette section de la vue des threads.

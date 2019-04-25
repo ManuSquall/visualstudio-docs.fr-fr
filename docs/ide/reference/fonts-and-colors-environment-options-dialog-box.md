@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b48c86c74b724dc6df5d5935f1340f6de0fc9185
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: b1576af2511f3bd24c26a64c1667c6b466bedd1e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647464"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790206"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Polices et couleurs, Environnement, boîte de dialogue Options
 
@@ -42,26 +42,26 @@ Les changements relatifs au modèle de couleurs ne sont pas appliqués durant la
 
 Répertorie tous les éléments d'interface utilisateur pour lesquels vous pouvez modifier le jeu de polices et le modèle de couleurs. Après avoir sélectionné un élément dans cette liste, vous pouvez personnaliser les paramètres de couleurs de l’élément en question dans **Éléments affichés**.
 
--   **Éditeur de texte**
+- **Éditeur de texte**
 
      Les changements apportés aux paramètres de style, de taille et d'affichage des couleurs de la police pour l'éditeur de texte affectent l'apparence du texte dans votre éditeur de texte par défaut. Les documents ouverts dans un éditeur de texte en dehors de l'IDE ne sont pas affectés par ces paramètres.
 
--   **Imprimante**
+- **Imprimante**
 
      Les changements apportés aux paramètres de style, de taille et d'affichage des couleurs de la police pour l'imprimante affectent l'apparence du texte dans les documents imprimés.
 
     > [!NOTE]
     > Selon les besoins, vous pouvez sélectionner une autre police par défaut pour l'impression que celle utilisée pour l'affichage dans l'éditeur de texte. Cela peut être utile pour imprimer du code contenant des caractères codés sur un octet et sur deux octets.
 
--   **Compléter automatiquement les instructions**
+- **Compléter automatiquement les instructions**
 
      Change le style de police et la taille du texte affichés par la fonctionnalité de saisie semi-automatique des instructions dans l'éditeur.
 
--   **Info-bulle de l’éditeur**
+- **Info-bulle de l’éditeur**
 
      Change le style de police et la taille du texte des info-bulles affichées dans l'éditeur.
 
--   **Police d’environnement**
+- **Police d’environnement**
 
      Change le style de police et la taille de tous les éléments d’interface utilisateur de l’IDE qui ne disposent pas déjà d’une option distincte dans **Afficher les paramètres de**.
 
@@ -71,7 +71,7 @@ Répertorie tous les éléments d'interface utilisateur pour lesquels vous pouve
 
      ::: moniker-end
 
--   **[Toutes les fenêtres Outil de texte]**
+- **[Toutes les fenêtres Outil de texte]**
 
      Les changements apportés aux paramètres de style, de taille et d'affichage des couleurs de la police pour cet élément affectent l'apparence du texte dans les fenêtres Outil qui ont des volets de sortie dans l'IDE. C'est le cas, par exemple, de la fenêtre Sortie, la fenêtre Commande, la fenêtre Exécution, etc.
 

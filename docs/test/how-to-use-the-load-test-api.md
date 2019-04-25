@@ -10,12 +10,12 @@ ms.assetid: e15567bc-1f21-4feb-b81d-f17ba35cfde5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 73c99d4a7d1ff15b8cbd1cff8a4fd18d8f41bccc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 47707e0430d51a754f7e458ebf68e08124c1e7b5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954840"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821494"
 ---
 # <a name="how-to-use-the-load-test-api"></a>Procédure : utiliser l’API de test de charge
 
@@ -30,27 +30,27 @@ Vous pouvez également créer des plug-ins pour les tests de performances web. P
 
 ## <a name="to-use-the-loadtesting-namespace"></a>Pour utiliser l'espace de noms LoadTesting
 
-1.  Ouvrez un projet de test de performances web et de charge contenant un test de charge.
+1. Ouvrez un projet de test de performances web et de charge contenant un test de charge.
 
-2.  Ajoutez un projet de bibliothèque de classes Visual Basic ou Visual C# à votre solution de test.
+2. Ajoutez un projet de bibliothèque de classes Visual Basic ou Visual C# à votre solution de test.
 
-3.  Ajoutez une référence dans le projet de test de performances web et de charge au projet de bibliothèque de classes.
+3. Ajoutez une référence dans le projet de test de performances web et de charge au projet de bibliothèque de classes.
 
-4.  Ajoutez une référence à la DLL Microsoft.VisualStudio.TestTools.LoadTestFramework dans le projet de bibliothèque de classes.
+4. Ajoutez une référence à la DLL Microsoft.VisualStudio.TestTools.LoadTestFramework dans le projet de bibliothèque de classes.
 
-5.  Dans le fichier de classe situé dans le projet de bibliothèque de classes, ajoutez une instruction `using` pour l'espace de noms <xref:Microsoft.VisualStudio.TestTools.LoadTesting>.
+5. Dans le fichier de classe situé dans le projet de bibliothèque de classes, ajoutez une instruction `using` pour l'espace de noms <xref:Microsoft.VisualStudio.TestTools.LoadTesting>.
 
-6.  Créez une classe publique qui implémente l'interface <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>.
+6. Créez une classe publique qui implémente l'interface <xref:Microsoft.VisualStudio.TestTools.LoadTesting.ILoadTestPlugin>.
 
-7.  Générez le projet.
+7. Générez le projet.
 
-8.  Ajoutez le nouveau plug-in de test de charge à l'aide de l'éditeur de test de charge :
+8. Ajoutez le nouveau plug-in de test de charge à l'aide de l'éditeur de test de charge :
 
-    1.  Cliquez avec le bouton droit sur le nœud racine du test de charge, puis choisissez **Ajouter un plug-in de test de charge**.
+    1. Cliquez avec le bouton droit sur le nœud racine du test de charge, puis choisissez **Ajouter un plug-in de test de charge**.
 
-    2.  La boîte de dialogue **Ajouter un plug-in de test de charge** s’affiche.
+    2. La boîte de dialogue **Ajouter un plug-in de test de charge** s’affiche.
 
-    3.  Dans le volet **Propriétés du plug-in sélectionné**, définissez les valeurs initiales du plug-in à utiliser au moment de l’exécution.
+    3. Dans le volet **Propriétés du plug-in sélectionné**, définissez les valeurs initiales du plug-in à utiliser au moment de l’exécution.
 
         > [!NOTE]
         > Vous pouvez exposer autant de propriétés que vous souhaitez de vos plug-ins. Il suffit de les rendre publics, définissables et d'un type de base, tel qu'un entier, une valeur booléenne ou une chaîne. Vous pourrez modifier ultérieurement les propriétés du plug-in du test de charge dans la fenêtre **Propriétés**.

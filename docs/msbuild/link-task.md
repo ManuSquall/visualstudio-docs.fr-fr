@@ -30,12 +30,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55d84dc8aed00cf037efc8b35efa13fa712092c7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 58691d5c6a7f44361d40a50898395ed1200a06c6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627153"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817634"
 ---
 # <a name="link-task"></a>Lier la tâche
 Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil de l’éditeur de liens lie des bibliothèques et des fichiers objets COFF (Common Object File Format) pour créer un fichier exécutable (*.exe*) ou une bibliothèque de liens dynamiques (DLL). Pour plus d’informations, consultez [Options de l’éditeur de liens](/cpp/build/reference/linker-options).
@@ -43,7 +43,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 ## <a name="parameters"></a>Paramètres
  Le tableau ci-dessous décrit les paramètres de la tâche **Link**. La plupart des paramètres de tâche, et quelques ensembles de paramètres, correspondent à une option de ligne de commande.
 
--   **AdditionalDependencies**
+- **AdditionalDependencies**
 
      Paramètre **String[]** facultatif.
 
@@ -51,7 +51,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [Fichiers d’entrée LINK](/cpp/build/reference/link-input-files).
 
--   **AdditionalLibraryDirectories**
+- **AdditionalLibraryDirectories**
 
      Paramètre **String[]** facultatif.
 
@@ -59,7 +59,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez l’article [/LIBPATH (Autre chemin de bibliothèque)](/cpp/build/reference/libpath-additional-libpath).
 
--   **AdditionalManifestDependencies**
+- **AdditionalManifestDependencies**
 
      Paramètre **String[]** facultatif.
 
@@ -67,7 +67,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/MANIFESTDEPENDENCY (Spécifier les dépendances de manifeste)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies). Consultez également [Fichiers de configuration des serveurs de publication](https://docs.microsoft.com/windows/desktop/SbsCs/publisher-configuration-files).
 
--   **AdditionalOptions**
+- **AdditionalOptions**
 
      Paramètre **String** facultatif.
 
@@ -75,7 +75,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [Options de l’éditeur de liens](/cpp/build/reference/linker-options).
 
--   **AddModuleNamesToAssembly**
+- **AddModuleNamesToAssembly**
 
      Paramètre **String[]** facultatif.
 
@@ -83,7 +83,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/ASSEMBLYMODULE (Ajouter un module MSIL à l’assembly)](/cpp/build/reference/assemblymodule-add-a-msil-module-to-the-assembly).
 
--   **AllowIsolation**
+- **AllowIsolation**
 
      Paramètre **Boolean** facultatif.
 
@@ -91,7 +91,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/ALLOWISOLATION (Recherche de manifeste)](/cpp/build/reference/allowisolation-manifest-lookup).
 
--   **AssemblyDebug**
+- **AssemblyDebug**
 
      Paramètre **Boolean** facultatif.
 
@@ -99,7 +99,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez l’article [/ASSEMBLYDEBUG (Ajouter DebuggableAttribute)](/cpp/build/reference/assemblydebug-add-debuggableattribute).
 
--   **AssemblyLinkResource**
+- **AssemblyLinkResource**
 
      Paramètre **String[]** facultatif.
 
@@ -107,13 +107,13 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/ASSEMBLYLINKRESOURCE (Lien vers une ressource du .NET Framework)](/cpp/build/reference/assemblylinkresource-link-to-dotnet-framework-resource).
 
--   **AttributeFileTracking**
+- **AttributeFileTracking**
 
      Paramètre **booléen** implicite.
 
      Active le suivi plus approfondi des fichiers pour capturer le comportement de liaison incrémentielle. Retourne toujours `true`.
 
--   **BaseAddress**
+- **BaseAddress**
 
      Paramètre **String** facultatif.
 
@@ -121,7 +121,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/BASE (Adresse de base)](/cpp/build/reference/base-base-address).
 
--   **BuildingInIDE**
+- **BuildingInIDE**
 
      Paramètre **Boolean** facultatif.
 
@@ -129,7 +129,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Ce paramètre n’a aucune option équivalente dans l’Éditeur de liens.
 
--   **CLRImageType**
+- **CLRImageType**
 
      Paramètre **String** facultatif.
 
@@ -137,17 +137,17 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Spécifiez l’une des valeurs suivantes, chacune d’elles correspondant à une option de l’Éditeur de liens.
 
-    -   **Default** - *\<aucune>*
+    - **Default** - *\<aucune>*
 
-    -   **ForceIJWImage** - **/CLRIMAGETYPE:IJW**
+    - **ForceIJWImage** - **/CLRIMAGETYPE:IJW**
 
-    -   **ForcePureILImage** - **/CLRIMAGETYPE:PURE**
+    - **ForcePureILImage** - **/CLRIMAGETYPE:PURE**
 
-    -   **ForceSafeILImage** - **/CLRIMAGETYPE:SAFE**
+    - **ForceSafeILImage** - **/CLRIMAGETYPE:SAFE**
 
     Pour plus d’informations, consultez [/CLRIMAGETYPE (Spécifier le type d’une image CLR)](/cpp/build/reference/clrimagetype-specify-type-of-clr-image).
 
--   **CLRSupportLastError**
+- **CLRSupportLastError**
 
      Paramètre **String** facultatif.
 
@@ -155,15 +155,15 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Spécifiez l’une des valeurs suivantes, chacune d’elles correspondant à une option de l’Éditeur de liens.
 
-    -   **Enabled** - **/CLRSupportLastError**
+    - **Enabled** - **/CLRSupportLastError**
 
-    -   **Disabled** - **/CLRSupportLastError:NO**
+    - **Disabled** - **/CLRSupportLastError:NO**
 
-    -   **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**
+    - **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**
 
     Pour plus d’informations, consultez [/CLRSUPPORTLASTERROR (Conserver le dernier code d’erreur pour les appels PInvoke)](/cpp/build/reference/clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls).
 
--   **CLRThreadAttribute**
+- **CLRThreadAttribute**
 
      Paramètre **String** facultatif.
 
@@ -171,15 +171,15 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Spécifiez l’une des valeurs suivantes, chacune d’elles correspondant à une option de l’Éditeur de liens.
 
-    -   **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE:NONE**
+    - **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE:NONE**
 
-    -   **MTAThreadingAttribute** - **/CLRTHREADATTRIBUTE:MTA**
+    - **MTAThreadingAttribute** - **/CLRTHREADATTRIBUTE:MTA**
 
-    -   **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**
+    - **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**
 
     Pour plus d’informations, consultez [/CLRTHREADATTRIBUTE (Définir l’attribut de thread CLR)](/cpp/build/reference/clrthreadattribute-set-clr-thread-attribute).
 
--   **CLRUnmanagedCodeCheck**
+- **CLRUnmanagedCodeCheck**
 
      Paramètre **Boolean** facultatif.
 
@@ -187,7 +187,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
     Pour plus d’informations, consultez [/CLRUNMANAGEDCODECHECK (Ajouter SuppressUnmanagedCodeSecurityAttribute)](/cpp/build/reference/clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute).
 
--   **CreateHotPatchableImage**
+- **CreateHotPatchableImage**
 
      Paramètre **String** facultatif.
 
@@ -195,17 +195,17 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Spécifiez l’une des valeurs suivantes, qui correspond à une option de l’Éditeur de liens.
 
-    -   **Enabled** - **/FUNCTIONPADMIN**
+    - **Enabled** - **/FUNCTIONPADMIN**
 
-    -   **X86Image** - **/FUNCTIONPADMIN:5**
+    - **X86Image** - **/FUNCTIONPADMIN:5**
 
-    -   **X64Image** - **/FUNCTIONPADMIN:6**
+    - **X64Image** - **/FUNCTIONPADMIN:6**
 
-    -   **ItaniumImage** - **/FUNCTIONPADMIN:16**
+    - **ItaniumImage** - **/FUNCTIONPADMIN:16**
 
     Pour plus d’informations, consultez [/FUNCTIONPADMIN (Créer une image corrigeable en mémoire)](/cpp/build/reference/functionpadmin-create-hotpatchable-image).
 
--   **DataExecutionPrevention**
+- **DataExecutionPrevention**
 
      Paramètre **Boolean** facultatif.
 
@@ -213,7 +213,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez l’article [/NXCOMPAT (compatible avec la prévention de l’exécution des données)](/cpp/build/reference/nxcompat-compatible-with-data-execution-prevention).
 
--   **DelayLoadDLLs**
+- **DelayLoadDLLs**
 
      Paramètre **String[]** facultatif.
 
@@ -221,7 +221,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/DELAYLOAD (Différer le chargement de l’importation)](/cpp/build/reference/delayload-delay-load-import).
 
--   **DelaySign**
+- **DelaySign**
 
      Paramètre **Boolean** facultatif.
 
@@ -229,7 +229,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/DELAYSIGN (Signer partiellement un assembly)](/cpp/build/reference/delaysign-partially-sign-an-assembly).
 
--   **Driver**
+- **Driver**
 
      Paramètre **String** facultatif.
 
@@ -237,17 +237,17 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Spécifiez l’une des valeurs suivantes, chacune d’elles correspondant à une option de l’Éditeur de liens.
 
-    -   **NotSet** - *\<aucune>*
+    - **NotSet** - *\<aucune>*
 
-    -   **Driver** - **/Driver**
+    - **Driver** - **/Driver**
 
-    -   **UpOnly** - **/DRIVER:UPONLY**
+    - **UpOnly** - **/DRIVER:UPONLY**
 
-    -   **WDM** - **/DRIVER:WDM**
+    - **WDM** - **/DRIVER:WDM**
 
     Pour plus d’informations, consultez [/DRIVER (Pilote Windows NT en mode noyau)](/cpp/build/reference/driver-windows-nt-kernel-mode-driver).
 
--   **EmbedManagedResourceFile**
+- **EmbedManagedResourceFile**
 
      Paramètre **String[]** facultatif.
 
@@ -255,7 +255,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/ASSEMBLYRESOURCE (Incorporer une ressource managée)](/cpp/build/reference/assemblyresource-embed-a-managed-resource).
 
--   **EnableCOMDATFolding**
+- **EnableCOMDATFolding**
 
      Paramètre **Boolean** facultatif.
 
@@ -263,7 +263,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez l’argument `ICF[= iterations]` de l’article [/OPT (Optimisations)](/cpp/build/reference/opt-optimizations).
 
--   **EnableUAC**
+- **EnableUAC**
 
      Paramètre **Boolean** facultatif.
 
@@ -271,7 +271,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez l’article [/MANIFESTUAC (Incorporer des informations sur le contrôle de compte d’utilisateur dans le manifeste)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).
 
--   **EntryPointSymbol**
+- **EntryPointSymbol**
 
      Paramètre **String** facultatif.
 
@@ -279,7 +279,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/ENTRY (Symbole de point d’entrée)](/cpp/build/reference/entry-entry-point-symbol).
 
--   **FixedBaseAddress**
+- **FixedBaseAddress**
 
      Paramètre **Boolean** facultatif.
 
@@ -287,7 +287,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/BASE (Adresse de base fixe)](/cpp/build/reference/fixed-fixed-base-address).
 
--   **ForceFileOutput**
+- **ForceFileOutput**
 
      Paramètre **String** facultatif.
 
@@ -295,15 +295,15 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.
 
-    -   **Enabled** - **/FORCE**
+    - **Enabled** - **/FORCE**
 
-    -   **MultiplyDefinedSymbolOnly** - **/FORCE:MULTIPLE**
+    - **MultiplyDefinedSymbolOnly** - **/FORCE:MULTIPLE**
 
-    -   **UndefinedSymbolOnly** - **/FORCE:UNRESOLVED**
+    - **UndefinedSymbolOnly** - **/FORCE:UNRESOLVED**
 
     Pour plus d’informations, consultez [/FORCE (Forcer la sortie d’un fichier)](/cpp/build/reference/force-force-file-output).
 
--   **ForceSymbolReferences**
+- **ForceSymbolReferences**
 
      Paramètre **String[]** facultatif.
 
@@ -311,7 +311,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/INCLUDE (Forcer les références des symboles)](/cpp/build/reference/include-force-symbol-references).
 
--   **FunctionOrder**
+- **FunctionOrder**
 
      Paramètre **String** facultatif.
 
@@ -319,7 +319,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/ORDER (Mettre les fonctions dans l’ordre)](/cpp/build/reference/order-put-functions-in-order).
 
--   **GenerateDebugInformation**
+- **GenerateDebugInformation**
 
      Paramètre **Boolean** facultatif.
 
@@ -327,7 +327,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/DEBUG (Générer les informations de débogage)](/cpp/build/reference/debug-generate-debug-info).
 
--   **GenerateManifest**
+- **GenerateManifest**
 
      Paramètre **Boolean** facultatif.
 
@@ -335,7 +335,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/MANIFEST (Créer un manifeste d’assembly côte à côte)](/cpp/build/reference/manifest-create-side-by-side-assembly-manifest).
 
--   **GenerateMapFile**
+- **GenerateMapFile**
 
      Paramètre **Boolean** facultatif.
 
@@ -343,7 +343,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/MAP (Générer le fichier de mappage)](/cpp/build/reference/map-generate-mapfile).
 
--   **HeapCommitSize**
+- **HeapCommitSize**
 
      Paramètre **String** facultatif.
 
@@ -351,7 +351,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez l’argument `commit` dans [/HEAP (Définir la taille des tas)](/cpp/build/reference/heap-set-heap-size). Reportez-vous également au paramètre **HeapReserveSize**.
 
--   **HeapReserveSize**
+- **HeapReserveSize**
 
      Paramètre **String** facultatif.
 
@@ -359,7 +359,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez l’argument `reserve` dans [/HEAP (Définir la taille des tas)](/cpp/build/reference/heap-set-heap-size). Reportez-vous également au paramètre **HeapCommitSize** dans ce tableau.
 
--   **IgnoreAllDefaultLibraries**
+- **IgnoreAllDefaultLibraries**
 
      Paramètre **Boolean** facultatif.
 
@@ -367,7 +367,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/NODEFAULTLIB (Ignorer les bibliothèques)](/cpp/build/reference/nodefaultlib-ignore-libraries).
 
--   **IgnoreEmbeddedIDL**
+- **IgnoreEmbeddedIDL**
 
      Paramètre **Boolean** facultatif.
 
@@ -375,7 +375,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/IGNOREIDL (Ne pas traiter les attributs dans MIDL)](/cpp/build/reference/ignoreidl-don-t-process-attributes-into-midl).
 
--   **IgnoreImportLibrary**
+- **IgnoreImportLibrary**
 
      Paramètre **Boolean** facultatif.
 
@@ -383,7 +383,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Ce paramètre ne correspond pas à une option de l’Éditeur de liens.
 
--   **IgnoreSpecificDefaultLibraries**
+- **IgnoreSpecificDefaultLibraries**
 
      Paramètre **String[]** facultatif.
 
@@ -391,7 +391,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/NODEFAULTLIB (Ignorer les bibliothèques)](/cpp/build/reference/nodefaultlib-ignore-libraries).
 
--   **ImageHasSafeExceptionHandlers**
+- **ImageHasSafeExceptionHandlers**
 
      Paramètre **Boolean** facultatif.
 
@@ -399,13 +399,13 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/SAFESEH (L’image est dotée de gestionnaires d’exceptions sécurisés)](/cpp/build/reference/safeseh-image-has-safe-exception-handlers).
 
--   **ImportLibrary**
+- **ImportLibrary**
 
      Nom de bibliothèque d’importation spécifié par l’utilisateur qui remplace le nom de bibliothèque par défaut.
 
      Pour plus d’informations, consultez [/IMPLIB (Nommer la bibliothèque d’importation)](/cpp/build/reference/implib-name-import-library).
 
--   **KeyContainer**
+- **KeyContainer**
 
      Paramètre **String** facultatif.
 
@@ -413,7 +413,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/KEYCONTAINER (Spécifier un conteneur de clé pour signer un assembly)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly). Reportez-vous également au paramètre **KeyFile** de ce tableau.
 
--   **KeyFile**
+- **KeyFile**
 
      Paramètre **String** facultatif.
 
@@ -421,7 +421,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/KEYFILE (Spécifier une clé ou une paire de clés pour signer un assembly)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly). Reportez-vous également au paramètre **KeyContainer**.
 
--   **LargeAddressAware**
+- **LargeAddressAware**
 
      Paramètre **Boolean** facultatif.
 
@@ -429,7 +429,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/LARGEADDRESSAWARE (Gérer les longues adresses)](/cpp/build/reference/largeaddressaware-handle-large-addresses).
 
--   **LinkDLL**
+- **LinkDLL**
 
      Paramètre **Boolean** facultatif.
 
@@ -437,7 +437,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez l’article [/DLL (Générer une DLL)](/cpp/build/reference/dll-build-a-dll).
 
--   **LinkErrorReporting**
+- **LinkErrorReporting**
 
      Paramètre **String** facultatif.
 
@@ -445,17 +445,17 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.
 
-    -   **NoErrorReport** - **/ERRORREPORT:NONE**
+    - **NoErrorReport** - **/ERRORREPORT:NONE**
 
-    -   **PromptImmediately** - **/ERRORREPORT:PROMPT**
+    - **PromptImmediately** - **/ERRORREPORT:PROMPT**
 
-    -   **QueueForNextLogin** - **/ERRORREPORT:QUEUE**
+    - **QueueForNextLogin** - **/ERRORREPORT:QUEUE**
 
-    -   **SendErrorReport** - **/ERRORREPORT:SEND**
+    - **SendErrorReport** - **/ERRORREPORT:SEND**
 
     Pour plus d’informations, consultez [/ERRORREPORT (Signaler les erreurs internes de l’éditeur de liens)](/cpp/build/reference/errorreport-report-internal-linker-errors).
 
--   **LinkIncremental**
+- **LinkIncremental**
 
      Paramètre **Boolean** facultatif.
 
@@ -463,7 +463,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/INCREMENTAL (Lier par incrément)](/cpp/build/reference/incremental-link-incrementally).
 
--   **LinkLibraryDependencies**
+- **LinkLibraryDependencies**
 
      Paramètre **Boolean** facultatif.
 
@@ -471,7 +471,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Ce paramètre ne correspond pas à une option de l’Éditeur de liens.
 
--   **LinkStatus**
+- **LinkStatus**
 
      Paramètre **Boolean** facultatif.
 
@@ -479,7 +479,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez l’argument `STATUS` dans [/LTCG (Génération de code durant l’édition de liens)](/cpp/build/reference/ltcg-link-time-code-generation).
 
--   **LinkTimeCodeGeneration**
+- **LinkTimeCodeGeneration**
 
      Paramètre **String** facultatif.
 
@@ -487,21 +487,21 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.
 
-    -   **Default** - *\<aucune>*
+    - **Default** - *\<aucune>*
 
-    -   **UseLinkTimeCodeGeneration** - **/LTCG**
+    - **UseLinkTimeCodeGeneration** - **/LTCG**
 
-    -   **PGInstrument** - **/LTCG:PGInstrument**
+    - **PGInstrument** - **/LTCG:PGInstrument**
 
-    -   **PGOptimization** - **/LTCG:PGOptimize**
+    - **PGOptimization** - **/LTCG:PGOptimize**
 
-    -   **PGUpdate**
+    - **PGUpdate**
 
          \- **/LTCG:PGUpdate**
 
     Pour plus d’informations, consultez [/LTCG (Génération de code durant l’édition de liens)](/cpp/build/reference/ltcg-link-time-code-generation).
 
--   **ManifestFile**
+- **ManifestFile**
 
      Paramètre **String** facultatif.
 
@@ -509,7 +509,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/MANIFESTFILE (Nommer le fichier manifeste)](/cpp/build/reference/manifestfile-name-manifest-file).
 
--   **MapExports**
+- **MapExports**
 
      Paramètre **Boolean** facultatif.
 
@@ -517,13 +517,13 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez l’argument `EXPORTS` dans [/MAPINFO (Inclure des informations dans le fichier de mappage)](/cpp/build/reference/mapinfo-include-information-in-mapfile).
 
--   **MapFileName**
+- **MapFileName**
 
      Paramètre **String** facultatif.
 
      Remplace le nom du fichier de mappage par défaut par le nom du fichier spécifié.
 
--   **MergedIDLBaseFileName**
+- **MergedIDLBaseFileName**
 
      Paramètre **String** facultatif.
 
@@ -531,7 +531,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/IDLOUT (Nommer les fichiers de sortie MIDL)](/cpp/build/reference/idlout-name-midl-output-files).
 
--   **MergeSections**
+- **MergeSections**
 
      Paramètre **String** facultatif.
 
@@ -539,7 +539,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/MERGE (Combiner des sections)](/cpp/build/reference/merge-combine-sections).
 
--   **MidlCommandFile**
+- **MidlCommandFile**
 
      Paramètre **String** facultatif.
 
@@ -547,13 +547,13 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/MIDL (Spécifier des options de ligne de commande MIDL)](/cpp/build/reference/midl-specify-midl-command-line-options).
 
--   **MinimumRequiredVersion**
+- **MinimumRequiredVersion**
 
      Paramètre **String** facultatif.
 
      Spécifie la version minimale requise du sous-système. Les arguments sont des nombres décimaux compris entre 0 et 65 535.
 
--   **ModuleDefinitionFile**
+- **ModuleDefinitionFile**
 
      Paramètre **String** facultatif.
 
@@ -561,7 +561,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/DEF (Spécifier le fichier de définition de module)](/cpp/build/reference/def-specify-module-definition-file).
 
--   **MSDOSStubFileName**
+- **MSDOSStubFileName**
 
      Paramètre **String** facultatif.
 
@@ -569,7 +569,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/STUB (Nom du fichier stub MS-DOS)](/cpp/build/reference/stub-ms-dos-stub-file-name).
 
--   **NoEntryPoint**
+- **NoEntryPoint**
 
      Paramètre **Boolean** facultatif.
 
@@ -577,13 +577,13 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/NOENTRY (Aucun point d’entrée)](/cpp/build/reference/noentry-no-entry-point).
 
--   **ObjectFiles**
+- **ObjectFiles**
 
      Paramètre **String[]** implicite.
 
      Spécifie les fichiers objets liés.
 
--   **OptimizeReferences**
+- **OptimizeReferences**
 
      Paramètre **Boolean** facultatif.
 
@@ -591,7 +591,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez l’argument `REF` dans l’article [/OPT (Optimisations)](/cpp/build/reference/opt-optimizations).
 
--   **OutputFile**
+- **OutputFile**
 
      Paramètre **String** facultatif.
 
@@ -599,19 +599,19 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/OUT (Nom du fichier de sortie)](/cpp/build/reference/out-output-file-name).
 
--   **PerUserRedirection**
+- **PerUserRedirection**
 
      Paramètre **Boolean** facultatif.
 
      Si `true` et si l’inscription de la sortie est activée, force les entrées de Registre écrites dans **HKEY_CLASSES_ROOT** à être redirigées vers **HKEY_CURRENT_USER**.
 
--   **PreprocessOutput**
+- **PreprocessOutput**
 
      Paramètre `ITaskItem[]` facultatif.
 
      Définit un tableau d’éléments de sortie de préprocesseur pouvant être consommés et émis par des tâches.
 
--   **PreventDllBinding**
+- **PreventDllBinding**
 
      Paramètre **Boolean** facultatif.
 
@@ -619,7 +619,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/ALLOWBIND (Éviter la liaison DLL)](/cpp/build/reference/allowbind-prevent-dll-binding).
 
--   **Profile**
+- **Profile**
 
      Paramètre **booléen** facultatif.
 
@@ -627,7 +627,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/PROFILE (Profileur des outils d’analyse des performances)](/cpp/build/reference/profile-performance-tools-profiler).
 
--   **ProfileGuidedDatabase**
+- **ProfileGuidedDatabase**
 
      Paramètre **String** facultatif.
 
@@ -635,7 +635,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/PGD (Spécifier la base de données pour les optimisations guidées par profil)](/cpp/build/reference/pgd-specify-database-for-profile-guided-optimizations).
 
--   **ProgramDatabaseFile**
+- **ProgramDatabaseFile**
 
      Paramètre **String** facultatif.
 
@@ -643,7 +643,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/PDB (Utiliser la base de données du programme)](/cpp/build/reference/pdb-use-program-database).
 
--   **RandomizedBaseAddress**
+- **RandomizedBaseAddress**
 
      Paramètre **Boolean** facultatif.
 
@@ -651,13 +651,13 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez l’article [/DYNAMICBASE (Utiliser la randomisation du format d’espace d’adresse)](/cpp/build/reference/dynamicbase-use-address-space-layout-randomization).
 
--   **RegisterOutput**
+- **RegisterOutput**
 
      Paramètre **Boolean** facultatif.
 
      Si `true`, inscrit la sortie principale de cette génération.
 
--   **SectionAlignment**
+- **SectionAlignment**
 
      Paramètre **entier** facultatif.
 
@@ -665,7 +665,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/ALIGN (Alignement des sections)](/cpp/build/reference/align-section-alignment).
 
--   **SetChecksum**
+- **SetChecksum**
 
      Paramètre **Boolean** facultatif.
 
@@ -673,7 +673,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/RELEASE (Définir le total de Checksum)](/cpp/build/reference/release-set-the-checksum).
 
--   **ShowProgress**
+- **ShowProgress**
 
      Paramètre **String** facultatif.
 
@@ -681,29 +681,29 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.
 
-    -   **NotSet** - *\<aucune>*
+    - **NotSet** - *\<aucune>*
 
-    -   **LinkVerbose** - **/VERBOSE**
+    - **LinkVerbose** - **/VERBOSE**
 
-    -   **LinkVerboseLib** - **/VERBOSE:Lib**
+    - **LinkVerboseLib** - **/VERBOSE:Lib**
 
-    -   **LinkVerboseICF** - **/VERBOSE:ICF**
+    - **LinkVerboseICF** - **/VERBOSE:ICF**
 
-    -   **LinkVerboseREF** - **/VERBOSE:REF**
+    - **LinkVerboseREF** - **/VERBOSE:REF**
 
-    -   **LinkVerboseSAFESEH** - **/VERBOSE:SAFESEH**
+    - **LinkVerboseSAFESEH** - **/VERBOSE:SAFESEH**
 
-    -   **LinkVerboseCLR** - **/VERBOSE:CLR**
+    - **LinkVerboseCLR** - **/VERBOSE:CLR**
 
     Pour plus d’informations, consultez [/VERBOSE (Imprimer les messages d’avancement)](/cpp/build/reference/verbose-print-progress-messages).
 
--   **Sources**
+- **Sources**
 
      Paramètre `ITaskItem[]` requis.
 
      Définit un tableau d’éléments de fichier source MSBuild pouvant être consommés et émis par des tâches.
 
--   **SpecifySectionAttributes**
+- **SpecifySectionAttributes**
 
      Paramètre **String** facultatif.
 
@@ -711,7 +711,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/SECTION (Spécifier les attributs de section)](/cpp/build/reference/section-specify-section-attributes).
 
--   **StackCommitSize**
+- **StackCommitSize**
 
      Paramètre **String** facultatif.
 
@@ -719,7 +719,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez l’argument `commit` dans [/STACK (Allocations de la pile)](/cpp/build/reference/stack-stack-allocations).
 
--   **StackReserveSize**
+- **StackReserveSize**
 
      Paramètre **String** facultatif.
 
@@ -727,7 +727,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez l’argument `reserve` dans [/STACK (Allocations de la pile)](/cpp/build/reference/stack-stack-allocations).
 
--   **StripPrivateSymbols**
+- **StripPrivateSymbols**
 
      Paramètre **String** facultatif.
 
@@ -735,7 +735,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/PDBSTRIPPED (Supprimer les symboles privés)](/cpp/build/reference/pdbstripped-strip-private-symbols).
 
--   **SubSystem**
+- **SubSystem**
 
      Paramètre **String** facultatif.
 
@@ -743,29 +743,29 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.
 
-    -   **NotSet** - *\<aucune>*
+    - **NotSet** - *\<aucune>*
 
-    -   **Console** - **/SUBSYSTEM:CONSOLE**
+    - **Console** - **/SUBSYSTEM:CONSOLE**
 
-    -   **Windows** - **/SUBSYSTEM:WINDOWS**
+    - **Windows** - **/SUBSYSTEM:WINDOWS**
 
-    -   **Native** - **/SUBSYSTEM:NATIVE**
+    - **Native** - **/SUBSYSTEM:NATIVE**
 
-    -   **EFI Application** - **/SUBSYSTEM:EFI_APPLICATION**
+    - **EFI Application** - **/SUBSYSTEM:EFI_APPLICATION**
 
-    -   **EFI Boot Service Driver** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**
+    - **EFI Boot Service Driver** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**
 
-    -   **EFI ROM** - **/SUBSYSTEM:EFI_ROM**
+    - **EFI ROM** - **/SUBSYSTEM:EFI_ROM**
 
-    -   **EFI Runtime** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**
+    - **EFI Runtime** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**
 
-    -   **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**
+    - **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**
 
-    -   **POSIX** - **/SUBSYSTEM:POSIX**
+    - **POSIX** - **/SUBSYSTEM:POSIX**
 
     Pour plus d’informations, consultez [/SUBSYSTEM (Spécifier le sous-système)](/cpp/build/reference/subsystem-specify-subsystem).
 
--   **SupportNobindOfDelayLoadedDLL**
+- **SupportNobindOfDelayLoadedDLL**
 
      Paramètre **Boolean** facultatif.
 
@@ -773,7 +773,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez l’argument `NOBIND` dans [/DELAY (Paramètres d’importation à chargement différé)](/cpp/build/reference/delay-delay-load-import-settings).
 
--   **SupportUnloadOfDelayLoadedDLL**
+- **SupportUnloadOfDelayLoadedDLL**
 
      Paramètre **Boolean** facultatif.
 
@@ -781,7 +781,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez l’argument `UNLOAD` dans [/DELAY (Paramètres d’importation à chargement différé)](/cpp/build/reference/delay-delay-load-import-settings).
 
--   **SuppressStartupBanner**
+- **SuppressStartupBanner**
 
      Paramètre **Boolean** facultatif.
 
@@ -789,7 +789,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/NOLOGO (Supprimer la bannière de démarrage) (éditeur de liens)](/cpp/build/reference/nologo-suppress-startup-banner-linker).
 
--   **SwapRunFromCD**
+- **SwapRunFromCD**
 
      Paramètre **Boolean** facultatif.
 
@@ -797,7 +797,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez l’argument `CD` dans [/SWAPRUN (Charger la sortie de l’éditeur de liens dans le fichier d’échange)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). Consultez également le paramètre **SwapRunFromNET**.
 
--   **SwapRunFromNET**
+- **SwapRunFromNET**
 
      Paramètre **Boolean** facultatif.
 
@@ -805,7 +805,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez l’argument `NET` dans [/SWAPRUN (Charger la sortie de l’éditeur de liens dans le fichier d’échange)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). Reportez-vous également au paramètre **SwapRunFromCD** de ce tableau.
 
--   **TargetMachine**
+- **TargetMachine**
 
      Paramètre **String** facultatif.
 
@@ -813,33 +813,33 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.
 
-    -   **NotSet** - *\<aucune>*
+    - **NotSet** - *\<aucune>*
 
-    -   **MachineARM** - **/MACHINE:ARM**
+    - **MachineARM** - **/MACHINE:ARM**
 
-    -   **MachineEBC** - **/MACHINE:EBC**
+    - **MachineEBC** - **/MACHINE:EBC**
 
-    -   **MachineIA64** - **/MACHINE:IA64**
+    - **MachineIA64** - **/MACHINE:IA64**
 
-    -   **MachineMIPS** - **/MACHINE:MIPS**
+    - **MachineMIPS** - **/MACHINE:MIPS**
 
-    -   **MachineMIPS16** - **/MACHINE:MIPS16**
+    - **MachineMIPS16** - **/MACHINE:MIPS16**
 
-    -   **MachineMIPSFPU** - **/MACHINE:MIPSFPU**
+    - **MachineMIPSFPU** - **/MACHINE:MIPSFPU**
 
-    -   **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**
+    - **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**
 
-    -   **MachineSH4** - **/MACHINE:SH4**
+    - **MachineSH4** - **/MACHINE:SH4**
 
-    -   **MachineTHUMB** - **/MACHINE:THUMB**
+    - **MachineTHUMB** - **/MACHINE:THUMB**
 
-    -   **MachineX64** - **/MACHINE:X64**
+    - **MachineX64** - **/MACHINE:X64**
 
-    -   **MachineX86** - **/MACHINE:X86**
+    - **MachineX86** - **/MACHINE:X86**
 
     Pour plus d’informations, consultez [/MACHINE (Spécifier la plateforme cible)](/cpp/build/reference/machine-specify-target-platform).
 
--   **TerminalServerAware**
+- **TerminalServerAware**
 
      Paramètre **Boolean** facultatif.
 
@@ -847,13 +847,13 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/TSAWARE (Créer une application sensible à Terminal Server)](/cpp/build/reference/tsaware-create-terminal-server-aware-application).
 
--   **TrackerLogDirectory**
+- **TrackerLogDirectory**
 
      Paramètre **String** facultatif.
 
      Spécifie le répertoire du journal de Tracker.
 
--   **TreatLinkerWarningAsErrors**
+- **TreatLinkerWarningAsErrors**
 
      Paramètre **Boolean** facultatif.
 
@@ -861,7 +861,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/WX (Traiter les avertissements de l’éditeur de liens comme des erreurs)](/cpp/build/reference/wx-treat-linker-warnings-as-errors).
 
--   **TurnOffAssemblyGeneration**
+- **TurnOffAssemblyGeneration**
 
      Paramètre **Boolean** facultatif.
 
@@ -869,7 +869,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/NOASSEMBLY (Créer un module MSIL)](/cpp/build/reference/noassembly-create-a-msil-module).
 
--   **TypeLibraryFile**
+- **TypeLibraryFile**
 
      Paramètre **String** facultatif.
 
@@ -877,7 +877,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/TLBOUT (Nommer le fichier .tlb)](/cpp/build/reference/tlbout-name-dot-tlb-file).
 
--   **TypeLibraryResourceID**
+- **TypeLibraryResourceID**
 
      Paramètre **entier** facultatif.
 
@@ -885,7 +885,7 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez [/TLBID (Spécifier l’ID de ressource de TypeLib)](/cpp/build/reference/tlbid-specify-resource-id-for-typelib).
 
--   **UACExecutionLevel**
+- **UACExecutionLevel**
 
      Paramètre **String** facultatif.
 
@@ -893,15 +893,15 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Spécifiez l'une des valeurs suivantes, chacune d'elles correspondant à une option de ligne de commande.
 
-    -   **AsInvoker** - `level='asInvoker'`
+    - **AsInvoker** - `level='asInvoker'`
 
-    -   **HighestAvailable** - `level='highestAvailable'`
+    - **HighestAvailable** - `level='highestAvailable'`
 
-    -   **RequireAdministrator** - `level='requireAdministrator'`
+    - **RequireAdministrator** - `level='requireAdministrator'`
 
     Pour plus d’informations, consultez l’argument `level` dans l’article [/MANIFESTUAC (Incorporer des informations sur le contrôle de compte d’utilisateur dans le manifeste)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).
 
--   **UACUIAccess**
+- **UACUIAccess**
 
      Paramètre **Boolean** facultatif.
 
@@ -909,13 +909,13 @@ Encapsule l’outil de l’éditeur de liens Visual C++, *link.exe*. L’outil d
 
      Pour plus d’informations, consultez l’argument `uiAccess` dans l’article [/MANIFESTUAC (Incorporer des informations sur le contrôle de compte d’utilisateur dans le manifeste)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).
 
--   **UseLibraryDependencyInputs**
+- **UseLibraryDependencyInputs**
 
      Paramètre **Boolean** facultatif.
 
      Si `true`, les entrées de l’outil Générateur de bibliothèques sont utilisées à la place du fichier bibliothèque lors de la liaison des sorties de bibliothèque des dépendances du projet.
 
--   **Version**
+- **Version**
 
      Paramètre **String** facultatif.
 

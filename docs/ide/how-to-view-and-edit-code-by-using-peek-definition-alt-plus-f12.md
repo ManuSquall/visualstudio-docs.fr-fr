@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5ce26aeb22ca34a6cb01608e89dba4666e30f846
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537483"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Procédure : afficher et modifier le code avec l’Aperçu de définition (Alt + F12)
 

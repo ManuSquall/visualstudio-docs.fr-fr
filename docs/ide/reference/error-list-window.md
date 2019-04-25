@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe70a8c7daeac86ea3a354f81d8462ca7f4e451
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 603faab80e185e7d22cba1ee544502d790afcdc0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933975"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790861"
 ---
 # <a name="error-list-window"></a>Liste d'erreurs, fenêtre
 
@@ -29,17 +29,17 @@ ms.locfileid: "55933975"
 
 La fenêtre **Liste d’erreurs** vous permet d’effectuer les tâches suivantes :
 
--   afficher les erreurs, avertissements et messages générés pendant l'écriture du code ;
+- afficher les erreurs, avertissements et messages générés pendant l'écriture du code ;
 
--   rechercher les erreurs de syntaxe relevées par IntelliSense ;
+- rechercher les erreurs de syntaxe relevées par IntelliSense ;
 
--   rechercher les erreurs de déploiement, certaines erreurs d'analyse statique et les erreurs détectées lors de l'application de stratégies de modèle d'entreprise ;
+- rechercher les erreurs de déploiement, certaines erreurs d'analyse statique et les erreurs détectées lors de l'application de stratégies de modèle d'entreprise ;
 
--   double-cliquer sur toute entrée de message d'erreur pour ouvrir le fichier où le problème se produit et accéder à l'emplacement de l'erreur ;
+- double-cliquer sur toute entrée de message d'erreur pour ouvrir le fichier où le problème se produit et accéder à l'emplacement de l'erreur ;
 
--   filtrer les entrées qui sont affichées et les colonnes d'information qui apparaissent pour chaque entrée ;
+- filtrer les entrées qui sont affichées et les colonnes d'information qui apparaissent pour chaque entrée ;
 
--   rechercher des termes spécifiques et limiter la recherche au projet ou au document actif.
+- rechercher des termes spécifiques et limiter la recherche au projet ou au document actif.
 
 Pour afficher la **Liste d’erreurs**, choisissez **Affichage** > **Liste d’erreurs**, ou appuyez sur **Ctrl** + **\\** + **E**.
 
@@ -53,14 +53,14 @@ Il existe deux types de filtre dans deux zones de liste déroulante, l’un à d
 
 Vous pouvez restreindre la portée de la recherche pour analyser et agir sur des groupes d'erreurs. Par exemple, vous pouvez vous concentrer sur les erreurs principales qui empêchent la compilation d'un projet. Les options de portée disponibles sont les suivantes :
 
-1.  **Documents ouverts** : afficher les erreurs, les avertissements et les messages relatifs aux documents ouverts.
+1. **Documents ouverts** : afficher les erreurs, les avertissements et les messages relatifs aux documents ouverts.
 
-2.  **Projet actif** : afficher les erreurs, les avertissements et les messages du projet du document actuellement sélectionné dans l’**Éditeur** ou du projet sélectionné dans l’**Explorateur de solutions**.
+2. **Projet actif** : afficher les erreurs, les avertissements et les messages du projet du document actuellement sélectionné dans l’**Éditeur** ou du projet sélectionné dans l’**Explorateur de solutions**.
 
     > [!NOTE]
     > La liste filtrée d’erreurs, d’avertissements et de messages est modifiée si le projet du document actuellement sélectionné est différent du projet sélectionné dans l’**Explorateur de solutions**.
 
-3.  **Document actif** : afficher les erreurs, les avertissements et les messages du document actuellement sélectionné dans l’**Éditeur** ou dans l’**Explorateur de solutions**.
+3. **Document actif** : afficher les erreurs, les avertissements et les messages du document actuellement sélectionné dans l’**Éditeur** ou dans l’**Explorateur de solutions**.
 
 Si un filtre est actuellement appliqué aux résultats de la recherche, le nom du filtre apparaît dans la barre de titre **Liste d’erreurs**. Les boutons **Erreurs**, **Avertissements** et **Messages** affichent alors le nombre d’éléments filtrés affichés, ainsi que le nombre total d’éléments. Par exemple, les boutons indiquent « x erreurs sur y ». Si aucun filtre n’est appliqué, la barre de titre indique uniquement « Liste d’erreurs ».
 

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d915019775b1eeb1a1f091bb389e5d5aa8e21e8c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943569"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778197"
 ---
 # <a name="options-text-editor-u-sql-intellisense"></a>Options, Éditeur de texte, U-SQL, IntelliSense
 

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ae4c5281386cb43d4dddb55db8578aea7515dce1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620900"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793979"
 ---
 # <a name="performance-report-view-filter"></a>Filtre de la vue Rapport de performances
 La fenêtre de **filtre de la vue Rapport du profileur** se trouve en haut de la fenêtre **Rapport de performances**. Si elle n’est pas visible, cliquez sur le bouton **Afficher le filtre**.

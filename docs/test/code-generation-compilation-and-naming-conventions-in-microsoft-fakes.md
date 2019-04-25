@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 5366e33da9af7a845a7f5e5a5e3a901b7d091fa3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9685d1621f0e81adbbb034c250974b7bc9b36993
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947340"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822759"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Génération et compilation de code et conventions de nommage dans Microsoft Fakes
 
@@ -20,8 +20,8 @@ Cet article traite des options et des problèmes dans la génération et la comp
 
 **Spécifications**
 
--   Visual Studio Enterprise
--   Un projet .NET Framework
+- Visual Studio Enterprise
+- Un projet .NET Framework
 
 > [!NOTE]
 > Les projets .NET Standard ne sont pas pris en charge.
@@ -62,23 +62,23 @@ Par exemple, le fichier *.fakes* suivant génère des stubs pour les types sous 
 
 Les chaînes de filtre utilisent une syntaxe simple pour définir comment la correspondance doit être effectuée :
 
--   Les filtres ne sont pas sensibles à la casse par défaut ; les filtres effectuent une correspondance de sous-chaîne :
+- Les filtres ne sont pas sensibles à la casse par défaut ; les filtres effectuent une correspondance de sous-chaîne :
 
      `el` correspond à « hello »
 
--   L’ajout de `!` à la fin du filtre fait qu’il recherche une correspondance rigoureusement sensible à la casse :
+- L’ajout de `!` à la fin du filtre fait qu’il recherche une correspondance rigoureusement sensible à la casse :
 
      `el!` ne correspond pas à « hello »
 
      `hello!` correspond à « hello »
 
--   L’ajout de `*` à la fin du filtre fait qu’il recherche une correspondance avec le préfixe de la chaîne :
+- L’ajout de `*` à la fin du filtre fait qu’il recherche une correspondance avec le préfixe de la chaîne :
 
      `el*` ne correspond pas à « hello »
 
      `he*` correspond à « hello »
 
--   Plusieurs filtres dans une liste délimitée par des points-virgules sont combinés comme une disjonction :
+- Plusieurs filtres dans une liste délimitée par des points-virgules sont combinés comme une disjonction :
 
      `el;wo` correspond à « hello » et « world »
 
@@ -114,9 +114,9 @@ Le générateur de code Fakes génère des types shim et stub pour les types qui
 
  Si l’assembly ayant fait l’objet d’un shim a un nom fort et que vous voulez accéder aux types internes de l’assembly :
 
--   L'assembly de test et l'assembly Fakes doivent porter un nom fort.
+- L'assembly de test et l'assembly Fakes doivent porter un nom fort.
 
--   Ajoutez les clés publiques de l’assembly de test et Fakes aux attributs **InternalsVisibleToAttribute** des assemblys ayant fait l’objet d’un shim. Voici les exemples d’attributs dans le code d’assembly ayant fait l’objet d’un shim quand cet assembly a un nom fort :
+- Ajoutez les clés publiques de l’assembly de test et Fakes aux attributs **InternalsVisibleToAttribute** des assemblys ayant fait l’objet d’un shim. Voici les exemples d’attributs dans le code d’assembly ayant fait l’objet d’un shim quand cet assembly a un nom fort :
 
     ```csharp
     // FileSystem\AssemblyInfo.cs
@@ -161,19 +161,19 @@ La compilation des assemblys Fakes peut augmenter considérablement la durée de
 
 Dans vos projets de test unitaire, ajoutez une référence aux assemblys Fakes compilés qui sont placés sous FakesAssemblies dans le dossier du projet.
 
-1.  Créez une bibliothèque de classes avec la version du runtime .NET. correspondant à vos projets de test. Appelons-la Fakes.Prebuild. Supprimez le fichier *class1.cs* du projet, non nécessaire.
+1. Créez une bibliothèque de classes avec la version du runtime .NET. correspondant à vos projets de test. Appelons-la Fakes.Prebuild. Supprimez le fichier *class1.cs* du projet, non nécessaire.
 
-2.  Ajoutez la référence à tous les assemblys système et tiers pour lesquels vous avez besoin de Fakes.
+2. Ajoutez la référence à tous les assemblys système et tiers pour lesquels vous avez besoin de Fakes.
 
-3.  Ajoutez un fichier *.fakes* pour chacun des assemblys et procédez à la génération.
+3. Ajoutez un fichier *.fakes* pour chacun des assemblys et procédez à la génération.
 
-4.  Depuis votre projet de test
+4. Depuis votre projet de test
 
-    -   Vérifiez que vous avez une référence à la DLL du runtime Fakes :
+    - Vérifiez que vous avez une référence à la DLL du runtime Fakes :
 
          *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\PublicAssemblies\Microsoft.QualityTools.Testing.Fakes.dll*
 
-    -   Pour chaque assembly pour lequel vous avez créé un Fakes, ajoutez une référence au fichier DLL correspondant dans le dossier *Fakes.Prebuild\FakesAssemblies* de votre projet.
+    - Pour chaque assembly pour lequel vous avez créé un Fakes, ajoutez une référence au fichier DLL correspondant dans le dossier *Fakes.Prebuild\FakesAssemblies* de votre projet.
 
 ### <a name="avoid-assembly-name-clashing"></a>Prévention des conflits de noms d’assembly
 
@@ -270,9 +270,9 @@ attribute of the Assembly element in the .fakes:
 
 Les règles suivantes s'appliquent de manière récursive :
 
--   Étant donné que Fakes utilise C# pour générer les assemblys Fakes, tout caractère qui produirait un jeton C# non valide est défini en séquence d'échappement « _ » (trait de soulignement).
+- Étant donné que Fakes utilise C# pour générer les assemblys Fakes, tout caractère qui produirait un jeton C# non valide est défini en séquence d'échappement « _ » (trait de soulignement).
 
--   Si un nom résultant est en conflit avec un membre du type déclarant, un modèle de numérotation est utilisé en ajoutant un compteur à deux chiffres commençant à 01.
+- Si un nom résultant est en conflit avec un membre du type déclarant, un modèle de numérotation est utilisé en ajoutant un compteur à deux chiffres commençant à 01.
 
 ## <a name="see-also"></a>Voir aussi
 

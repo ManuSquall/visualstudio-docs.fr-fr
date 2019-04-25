@@ -12,12 +12,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: cdead60fbde711ac9b219a6bbcb635e329d51a0a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 261ddf457ad117812be9971b630c2fcd3b75b550
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983195"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62791234"
 ---
 # <a name="extract-an-interface-refactoring"></a>Extraire une interface (refactorisation)
 
@@ -58,13 +58,11 @@ Cette refactorisation s’applique à :
 
    ![Extraire l'interface](media/extractinterface-dialog-same-file.png)
 
-
    | Champ | Description |
    | - | - |
    | **Nouveau nom d’interface** | Nom de l'interface à créer. Ce nom a par défaut la valeur I*ClassName*, où *ClassName* correspond au nom de la classe que vous avez sélectionné ci-dessus. |
    | **Nouveau nom de fichier** | Nom du fichier généré qui contiendra l’interface. Comme pour le nom de l’interface, ce nom a par défaut la valeur I*ClassName*, où *ClassName* correspond au nom de la classe que vous avez sélectionné ci-dessus. Vous pouvez également sélectionner l’option **Ajouter au fichier actuel**. |
    | **Sélectionner les membres publics pour former l'interface** | Les éléments à extraire dans l’interface. Vous pouvez sélectionner autant d’éléments que vous le souhaitez. |
-
 
 4. Cliquez sur **OK**.
 
@@ -73,15 +71,13 @@ Cette refactorisation s’applique à :
    - C# :
 
       ![Classe résultante - C#](media/extractinterface-class-cs.png)
-      
-      
+
       ![Interface résultante - C#](media/extractinterface-interface-cs.png)
 
    - Visual Basic :
 
       ![Classe résultante - Visual Basic](media/extractinterface-class-vb.png)
-      
-      
+
       ![Interface résultante - Visual Basic](media/extractinterface-interface-vb.png)
 
 ## <a name="see-also"></a>Voir aussi

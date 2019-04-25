@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eb1e20b019e4d32aff1ed71d3e4483a1bd9bd143
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619782"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62581265"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 L’outil en ligne de commande VSPerfReport permet de créer des rapports à l’aide des fichiers de données des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Le format de rapport par défaut est un fichier .*csv*.

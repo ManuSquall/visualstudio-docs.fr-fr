@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 11605b9477397bb217bc2799feb622cb9d5bce37
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223631"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62569821"
 ---
 # <a name="visual-studio-unrecoverable-process-error"></a>Erreur de processus irrécupérable Visual Studio
 

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ea96fe521afe713b1eafd59390047bfdb427f6fe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622993"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553225"
 ---
 # <a name="copy-selection"></a>Copier la sélection
 Pour copier l’intégralité de la pile des appels à partir de l’onglet Rapport, cliquez sur **Copier**. Vous pouvez ensuite coller la pile des appels dans n’importe quel programme prenant en charge cette action.

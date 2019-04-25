@@ -10,12 +10,12 @@ ms.assetid: 8e03bee5-ab7b-4b40-9497-9dbe91ccb90e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bb5227c4b5f771747a43a7f0f12e0125b125604e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e19e1cb4f9b49c40923d96b177ceb4d6c31b746f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943374"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783321"
 ---
 # <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>Modifier les temps de réflexion pour simuler les délais d’interaction humaine avec un site web dans les scénarios de tests de charge
 
@@ -35,7 +35,7 @@ Les temps de réflexion sont ignorés. Utilisez ce paramètre si vous souhaitez 
 
 **On**
 
-Les temps de réflexion sont utilisés exactement tels qu’ils ont été enregistrés dans le test de performances web. Ils simulent plusieurs utilisateurs qui exécutent des tests de performances web. Un test de charge simulant plusieurs utilisateurs, l’utilisation du même temps de réflexion pourrait créer un modèle de charge d’utilisateurs virtuels synchronisés anormal.
+Les temps de réflexion sont utilisés exactement tels qu’ils ont été enregistrés dans le test de performances web. Ils simulent plusieurs utilisateurs qui exécutent des tests de performances web. Un test de charge simulant plusieurs utilisateurs, l'utilisation du même temps de réflexion pourrait créer un modèle de charge d'utilisateurs virtuels synchronisés anormal.
 
 **Distribution normale**
 
@@ -48,13 +48,13 @@ Les temps de réflexion sont utilisés, mais varient sur une courbe normale. Fou
 
 ### <a name="to-change-a-think-profile-in-a-load-test-scenario"></a>Pour modifier un profil de réflexion dans un scénario de test de charge
 
-1.  Dans le projet de test de performances web et de charge, ouvrez un test de charge.
+1. Dans le projet de test de performances web et de charge, ouvrez un test de charge.
 
-2.  Dans **l’éditeur de test de charge**, choisissez le nœud de scénario où vous souhaitez changer le **Profil de réflexion**. Le **Profil de réflexion** s’affiche dans la fenêtre **Propriétés**. Appuyez sur **F4** pour afficher la fenêtre **Propriétés**.
+2. Dans **l’éditeur de test de charge**, choisissez le nœud de scénario où vous souhaitez changer le **Profil de réflexion**. Le **Profil de réflexion** s’affiche dans la fenêtre **Propriétés**. Appuyez sur **F4** pour afficher la fenêtre **Propriétés**.
 
-3.  Modifiez la propriété **Profil de réflexion** dans la fenêtre **Propriétés**.
+3. Modifiez la propriété **Profil de réflexion** dans la fenêtre **Propriétés**.
 
-4.  Quand vous avez fini de changer les propriétés, choisissez **Enregistrer** dans le menu **Fichier**. Vous pouvez ensuite exécuter votre test de charge avec le nouveau profil de réflexion.
+4. Quand vous avez fini de changer les propriétés, choisissez **Enregistrer** dans le menu **Fichier**. Vous pouvez ensuite exécuter votre test de charge avec le nouveau profil de réflexion.
 
 ## <a name="see-also"></a>Voir aussi
 

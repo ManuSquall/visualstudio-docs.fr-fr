@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 37ce9d7b1853dfecc9e0ec33ca08c3c3fa0571e0
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59365338"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428442"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Comment Visual Studio utilise les chemins de recherche Python
 
@@ -51,4 +51,4 @@ Vous pouvez également ajouter les fichiers ayant une extension *.zip* ou *.egg*
 - [Gérer les environnements Python dans Visual Studio](managing-python-environments-in-visual-studio.md)
 - [Sélectionner un interpréteur pour un projet](selecting-a-python-environment-for-a-project.md)
 - [Utiliser requirements.txt pour les dépendances](managing-required-packages-with-requirements-txt.md)
-- [Informations de référence sur la fenêtre Environnements Python](python-environments-window-tab-reference.md)
+- [Référence sur la fenêtre Environnements Python](python-environments-window-tab-reference.md)

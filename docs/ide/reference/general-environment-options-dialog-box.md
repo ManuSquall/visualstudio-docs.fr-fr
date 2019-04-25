@@ -25,11 +25,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a2f860293669ddab035ddd1c53e09dbb9962df01
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018192"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790133"
 ---
 # <a name="options-dialog-box-environment--general"></a>Boîte de dialogue Options : Environnement \> Général
 
@@ -43,13 +43,13 @@ Choisissez **Bleu**, **Clair**, **Foncé** ou **Bleu (contraste supplémentaire)
 
 Vous pouvez installer d’autres thèmes prédéfinis et créer des thèmes personnalisés en téléchargeant et en installant l’**éditeur de thème de couleur de Visual Studio** à partir de [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor). Une fois cet outil installé, d'autres thèmes de couleurs apparaissent dans la zone de liste **Thème de couleur**.
 
-**Mettre la première lettre des mots en majuscule dans la barre de menus**
+**Mettre la 1ère lettre des mots en maj. dans la barre de menus**
 
 Dans les menus, une majuscule est appliquée à la première lettre des mots par défaut. Décochez cette option pour mettre toutes les lettres des mots en majuscule.
 
 ::: moniker range=">=vs-2019"
 
-**Optimiser le rendu des écrans présentant des densités de pixels différentes (redémarrage nécessaire)**
+**Optimiser le rendu pour les écrans avec des densités en pixels différentes (redémarrage nécessaire)**
 
 Cette option active ou désactive la prise en charge des points par pouce (PPP) par écran (ou *PMA*). Lorsque la PMA est activée, l’interface utilisateur de Visual Studio s’affiche de façon nette dans n’importe quel facteur d’échelle d’affichage d’écran et n’importe quelle configuration PPP, y compris en multiécran. Pour activer la PMA, vous avez besoin de la Mise à jour d’avril 2018 de Windows 10 ou ultérieure et de .NET Framework 4.8 ou ultérieur. (Cette option apparaît grisée si ces deux prérequis ne sont pas remplis.)
 
@@ -59,7 +59,7 @@ Cette option active ou désactive la prise en charge des points par pouce (PPP) 
 
 ::: moniker-end
 
-**Ajuster automatiquement l’expérience visuelle selon les performances du client**
+**Ajuster automatiquement l’expérience visuelle selon les perf. du client**
 
 Spécifie si Visual Studio définit automatiquement le réglage de l'expérience visuelle ou si vous vous en chargez explicitement. Ce réglage peut changer l'affichage des couleurs, depuis des dégradés jusqu'à des couleurs simples, ou limiter l'utilisation des animations dans les menus ou les fenêtres contextuelles.
 
@@ -70,7 +70,7 @@ Spécifie si Visual Studio définit automatiquement le réglage de l'expérience
 
 ::: moniker-end
 
-**Offrir une expérience client enrichie**
+**Activer l’expérience client améliorée**
 
 Active l'expérience visuelle complète de Visual Studio, y compris les dégradés et les animations. Désactivez cette option lors de l’utilisation de connexions Bureau à distance ou de cartes graphiques anciennes, car les performances de ces fonctionnalités peuvent se révéler médiocres dans ces cas. Cette option est disponible seulement quand vous désactivez l’option **Ajuster automatiquement l’expérience visuelle selon les perf. du client**.
 
@@ -84,7 +84,7 @@ Utilise l'accélération graphique matérielle si elle est disponible, au lieu d
 
 Personnalise le nombre de fenêtres qui s’affichent dans la liste Fenêtres du menu **Fenêtre**. Entrez un nombre compris entre 1 et 24. La valeur par défaut est 10.
 
-**Éléments affichés dans les listes de fichiers récents**
+**Éléments affichés dans la liste des fichiers récents**
 
 Personnalise le nombre des projets et des fichiers les plus récemment utilisés qui s’affichent dans le menu **Fichier**. Entrez un nombre compris entre 1 et 24. La valeur par défaut est 10. Il s'agit d'un moyen facile de récupérer les projets et les fichiers récemment utilisés.
 

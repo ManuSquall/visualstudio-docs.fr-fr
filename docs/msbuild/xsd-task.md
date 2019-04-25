@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78fe110ee6abf70d091f9d7c1f67b56608f82c27
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 742b2b1660b5a1776edca0a4b64c56222cd1c163
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57982985"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777637"
 ---
 # <a name="xsd-task"></a>XSD (tâche)
 Inclut dans un wrapper l’outil Définition de schéma XML (*xsd.exe*), qui génère des fichiers de schéma ou de classe à partir d’une source.
@@ -36,13 +36,13 @@ Inclut dans un wrapper l’outil Définition de schéma XML (*xsd.exe*), qui gé
 ## <a name="parameters"></a>Paramètres
  Le tableau ci-dessous décrit les paramètres de la tâche **XSD**.
 
--   **AdditionalOptions**
+- **AdditionalOptions**
 
      Paramètre **String** facultatif.
 
      Liste des options comme indiqué sur la ligne de commande. Par exemple, /\<option1> /\<option2> /\<option#>. Utilisez ce paramètre pour spécifier des options qui ne sont pas représentées par un autre paramètre de tâche **XSD**.
 
--   **GenerateFromSchema**
+- **GenerateFromSchema**
 
      Paramètre **String** facultatif.
 
@@ -50,11 +50,11 @@ Inclut dans un wrapper l’outil Définition de schéma XML (*xsd.exe*), qui gé
 
      Spécifiez l’une des valeurs suivantes, chacune d’elles correspondant à une option XSD.
 
-    -   **classes** - **/classes**
+    - **classes** - **/classes**
 
-    -   **dataset** - **/dataset**
+    - **dataset** - **/dataset**
 
--   **Language**
+- **Language**
 
      Paramètre **String** facultatif.
 
@@ -62,25 +62,25 @@ Inclut dans un wrapper l’outil Définition de schéma XML (*xsd.exe*), qui gé
 
      Vous avez le choix entre **CS** (C#, qui est la valeur par défaut), **VB** (Visual Basic) ou **JS** (JScript). Vous pouvez également spécifier un nom qualifié complet pour une classe qui implémente `System.CodeDom.Compiler.CodeDomProvider Class`.
 
--   **Namespace**
+- **Namespace**
 
      Paramètre **String** facultatif.
 
      Spécifie l'espace de noms du runtime pour les types générés.
 
--   **Sources**
+- **Sources**
 
      Paramètre `ITaskItem[]` requis.
 
      Définit un tableau d’éléments de fichier source MSBuild pouvant être consommés et émis par des tâches.
 
--   **SuppressStartupBanner**
+- **SuppressStartupBanner**
 
      Paramètre **Boolean** facultatif.
 
      Si la valeur est `true`, empêche l'affichage du message de copyright et de numéro de version quand la tâche démarre.
 
--   **TrackerLogDirectory**
+- **TrackerLogDirectory**
 
      Paramètre **String** facultatif.
 

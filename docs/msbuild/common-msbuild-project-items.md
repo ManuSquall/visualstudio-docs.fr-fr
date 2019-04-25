@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43844fc1e8ffed9853f287f82e79d9859b774755
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: 54288f345276a019bf8fd6987a9e138c53c8a9e2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897684"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62569870"
 ---
 # <a name="common-msbuild-project-items"></a>Éléments communs des projets MSBuild
 Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], un élément est une référence nommée à un ou plusieurs fichiers. Les éléments contiennent des métadonnées, comme des noms de fichiers, des chemins et des numéros de version. Dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], tous les types de projets ont plusieurs éléments en commun. Ces éléments sont définis dans le fichier *Microsoft.Build.CommonTypes.xsd*.
@@ -81,7 +81,6 @@ Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md
 ### <a name="compile"></a>Compile
  Représente les fichiers sources du compilateur.
 
-
 | Nom des métadonnées de l’élément | Description |
 |-----------------------| - |
 | DependentUpon | Chaîne facultative. Spécifie le fichier dont dépend ce fichier pour une compilation correcte. |
@@ -92,7 +91,6 @@ Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md
 
 ### <a name="embeddedresource"></a>EmbeddedResource
  Représente les ressources à incorporer dans l'assembly généré.
-
 
 | Nom des métadonnées de l’élément | Description |
 |-----------------------| - |
@@ -108,7 +106,6 @@ Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md
 ### <a name="content"></a>Contenu
  Représente les fichiers qui ne sont pas compilés dans le projet, mais qui peuvent être incorporés ou publiés en même temps.
 
-
 | Nom des métadonnées de l’élément | Description |
 |-----------------------| - |
 | DependentUpon | Chaîne facultative. Spécifie le fichier dont dépend ce fichier pour une compilation correcte. |
@@ -123,7 +120,6 @@ Dans [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md
 
 ### <a name="none"></a>Aucun.
  Représente les fichiers qui ne doivent avoir aucun rôle dans le processus de génération.
-
 
 | Nom des métadonnées de l’élément | Description |
 |-----------------------| - |

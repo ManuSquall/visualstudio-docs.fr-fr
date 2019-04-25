@@ -4,17 +4,19 @@ description: Découvrez comment mettre à niveau un projet Azure dans Visual Stu
 author: ghogen
 manager: jillfra
 assetId: 1d64070a-078d-468a-87f4-e6715de6475f
+ms.prod: visual-studio-dev14
+ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
 ms.openlocfilehash: e007e7a3f3e8ddeb62167a04debfe879dad1778c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62427960"
 ---
 # <a name="how-to-upgrade-projects-to-the-current-version-of-the-azure-tools-for-visual-studio"></a>Mise à niveau des projets vers la version actuelle d’Azure Tools pour Visual Studio
 ## <a name="overview"></a>Vue d'ensemble
@@ -32,13 +34,13 @@ Si un projet est mis à niveau automatiquement ou si vous spécifiez que vous vo
 
 > [!IMPORTANT]
 > Pour les projets en langage F#, vous devrez mettre à jour manuellement les références aux assemblys Azure pour que les versions les plus récentes de ces assemblys soient référencées.
->
->
+> 
+> 
 
 ### <a name="how-to-upgrade-an-azure-project-to-the-current-release"></a>Mise à niveau d’un projet Azure vers la version actuelle
 1. Installez la version actuelle d’Azure Tools dans l’installation de Visual Studio à utiliser pour le projet mis à niveau, puis ouvrez celui-ci. Si le projet a été créé avec Azure Tools version 1.6 (novembre 2011), il sera automatiquement mis à niveau vers la version actuelle. Si le projet a été créé avec la version de novembre 2011 et que celle-ci est toujours installée, le projet s’ouvrira dans cette version.
 2. Dans l’Explorateur de solutions, ouvrez le menu contextuel du nœud du projet, choisissez **Propriétés**, puis choisissez l’onglet **Application** de la boîte de dialogue qui s’affiche.
-
+   
     L’onglet **Application** affiche la version d’Azure Tools qui est associée au projet. Si la version actuelle d’Azure Tools s’affiche, le projet a déjà été mis à niveau. Si vous avez installé une version plus récente que celle indiquée sous l’onglet, le bouton **Mettre à niveau** s’affiche.
 3. Choisissez le bouton **Mettre à niveau** pour mettre à niveau un projet vers la version actuelle d’Azure Tools.
 4. Générez le projet, puis résolvez les erreurs qui résultent des modifications de l’API. Pour plus d’informations sur la modification de votre code pour la nouvelle version, consultez la documentation de l’API concernée.

@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c1a2d2a60b6875cf4257c0b5bfb3e09c27865c17
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6f4ec35c79bd71351d830428cce39b41b7308cf7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783614"
 ---
 # <a name="enable-coded-ui-testing-of-your-controls"></a>Activer les tests codés de l’interface utilisateur de vos contrôles
 
@@ -37,7 +37,7 @@ Le générateur de test codé de l'interface utilisateur capture des information
 
  ![CUIT&#95;Accessible](../test/media/cuit_accessible.png)
 
-1.  Implémentez une classe qui dérive de <xref:System.Windows.Forms.Control.ControlAccessibleObject> et remplacez la propriété <xref:System.Windows.Forms.Control.AccessibilityObject%2A> pour retourner un objet de votre classe.
+1. Implémentez une classe qui dérive de <xref:System.Windows.Forms.Control.ControlAccessibleObject> et remplacez la propriété <xref:System.Windows.Forms.Control.AccessibilityObject%2A> pour retourner un objet de votre classe.
 
     ```csharp
     public partial class ChartControl : UserControl
@@ -62,11 +62,11 @@ Le générateur de test codé de l'interface utilisateur capture des information
     }
     ```
 
-2.  Remplacez les propriétés et méthodes <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> et <xref:System.Windows.Forms.AccessibleObject.GetChildCount%2A> de l’objet accessible.
+2. Remplacez les propriétés et méthodes <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.GetChild%2A> et <xref:System.Windows.Forms.AccessibleObject.GetChildCount%2A> de l’objet accessible.
 
-3.  Implémentez un autre objet d’accessibilité pour le contrôle enfant et remplacez la propriété <xref:System.Windows.Forms.Control.AccessibilityObject%2A> du contrôle enfant pour retourner l’objet d’accessibilité.
+3. Implémentez un autre objet d’accessibilité pour le contrôle enfant et remplacez la propriété <xref:System.Windows.Forms.Control.AccessibilityObject%2A> du contrôle enfant pour retourner l’objet d’accessibilité.
 
-4.  Remplacez les propriétés et méthodes <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>, <xref:System.Windows.Forms.AccessibleObject.Name%2A>, <xref:System.Windows.Forms.AccessibleObject.Parent%2A>, <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.Navigate%2A> et <xref:System.Windows.Forms.AccessibleObject.Select%2A> de l’objet d’accessibilité du contrôle enfant.
+4. Remplacez les propriétés et méthodes <xref:System.Windows.Forms.AccessibleObject.Bounds%2A>, <xref:System.Windows.Forms.AccessibleObject.Name%2A>, <xref:System.Windows.Forms.AccessibleObject.Parent%2A>, <xref:System.Windows.Forms.AccessibleObject.Role%2A>, <xref:System.Windows.Forms.AccessibleObject.State%2A>, <xref:System.Windows.Forms.AccessibleObject.Navigate%2A> et <xref:System.Windows.Forms.AccessibleObject.Select%2A> de l’objet d’accessibilité du contrôle enfant.
 
 > [!NOTE]
 > Cette rubrique commence par l’exemple d’accessibilité de <xref:System.Windows.Forms.AccessibleObject>, puis se base dessus pour les procédures qui suivent. Si vous souhaitez créer une version opérationnelle de l’exemple d’accessibilité, créez une application console et remplacez le code de *Program.cs* par celui de l’exemple. Ajoutez des références à Accessibility, System.Drawing et System.Windows.Forms. Changez la propriété **Incorporer les types d’interopérabilité** d’Accessibility en lui affectant la valeur **False** pour éviter un avertissement de build. Vous pouvez changer le type de sortie du projet et remplacer **Application Console** par **Application Windows** pour éviter l’apparition d’une fenêtre de console quand vous exécutez l’application.
@@ -182,19 +182,19 @@ Votre fournisseur de propriété et votre filtre d’action sont implémentés d
 
 ### <a name="to-debug-your-property-provider-or-action-filter"></a>Pour déboguer votre fournisseur de propriétés ou filtre d'action
 
-1.  Générez la version de débogage de votre package d’extension, puis copiez les fichiers *.dll* et *.pdb* dans *%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
+1. Générez la version de débogage de votre package d’extension, puis copiez les fichiers *.dll* et *.pdb* dans *%ProgramFiles%\Common Files\Microsoft Shared\VSTT\10.0\UITestExtensionPackages*.
 
-2.  Exécutez votre application (pas dans le débogueur).
+2. Exécutez votre application (pas dans le débogueur).
 
-3.  Exécutez le test codé de l'interface utilisateur.
+3. Exécutez le test codé de l'interface utilisateur.
 
      `codedUITestBuilder.exe  /standalone`
 
-4.  Attachez le débogueur au processus codedUITestBuilder.
+4. Attachez le débogueur au processus codedUITestBuilder.
 
-5.  Définissez les points d'arrêt dans votre code.
+5. Définissez les points d'arrêt dans votre code.
 
-6.  Dans le générateur de test codé de l'interface utilisateur, créez des assertions pour tester votre fournisseur de propriétés et enregistrez les actions pour tester vos filtres d'action.
+6. Dans le générateur de test codé de l'interface utilisateur, créez des assertions pour tester votre fournisseur de propriétés et enregistrez les actions pour tester vos filtres d'action.
 
 ## <a name="see-also"></a>Voir aussi
 

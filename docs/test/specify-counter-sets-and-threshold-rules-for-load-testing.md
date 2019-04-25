@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 79140e61844ce450db86ba3bd0b0d6577dec3531
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946507"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431339"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>Spécifier des ensembles de compteurs et des règles de seuil pour les ordinateurs dans un test de charge
 
@@ -42,7 +42,7 @@ Il est important que vous ajoutiez les serveurs sous test à la liste des ordina
 |**Gérer les ensembles de compteurs pour votre test de charge :** Après avoir créé votre test de charge, vous pouvez modifier l’ensemble de compteurs dans l’éditeur de test de charge. La gestion d'ensembles de compteurs implique le choix du jeu d'ordinateurs à partir duquel vous souhaitez collecter des données de performance et l'assignation d'un jeu d'ensembles de compteurs à collecter à partir de chaque ordinateur individuel. Vous gérez vos compteurs dans l'éditeur de test de charge.|-   [Guide pratique pour gérer les ensembles de compteurs](../test/how-to-manage-counter-sets-using-the-load-test-editor.md)|
 |**Ajouter des ensembles de compteurs à votre test de charge :** Quand vous créez un test de charge avec l’**Assistant Nouveau test de charge**, vous ajoutez un ensemble initial de compteurs. Ceux-ci vous offrent un groupe d'ensembles de compteurs prédéfinis pour votre test de charge. Après avoir créé un test de charge, vous pouvez ajouter de nouveaux compteurs aux ensembles de compteurs existants à l'aide de l'éditeur de test de charge.|-   [Guide pratique pour ajouter des compteurs à des ensembles de compteurs](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md)<br />-   [Guide pratique pour ajouter des ensembles de compteurs personnalisés](../test/how-to-add-custom-counter-sets-using-the-load-test-editor.md)|
 |**Spécifier une règle de seuil à l’aide de compteurs pour votre test de charge :** Une règle de seuil est une règle définie sur un compteur de performances individuel pour superviser l’utilisation des ressources système pendant un test de charge. Les définitions d'ensembles de compteurs contiennent des règles de seuil prédéfinies pour de nombreux compteurs de performance clés. Les règles de seuil contenues dans des tests de charge comparent une valeur de compteur de performance à une valeur de constante ou une autre valeur de compteur de performance.|-   [Guide pratique pour ajouter une règle de seuil](../test/how-to-add-a-threshold-rule-using-the-load-test-editor.md)|
-|**Affecter des noms conviviaux aux ordinateurs auxquels les ensembles de compteurs sont mappés :** Vous pouvez ajouter des étiquettes d’ordinateur pour appliquer un nom facilement identifiable à un ordinateur. Les balises s’affichent dans le nœud **Mappages des ensembles de compteurs** de l’arborescence dans l’éditeur de test de charge. Plus important, les balises s’affichent dans les rapports Excel qui permettent aux parties prenantes d’identifier le rôle de l’ordinateur dans le test de charge, par exemple, « ServerWeb1 dans lab2 » ou « SQL Server2 dans le bureau de Phoenix ».<br /><br /> Pour plus d’informations, voir [Créer des rapports sur les résultats des tests de charge à des fins de comparaison ou d’analyse des tendances](../test/compare-load-test-results.md).||
+|**Affecter des noms conviviaux aux ordinateurs auxquels les ensembles de compteurs sont mappés :** Vous pouvez ajouter des étiquettes d’ordinateur pour appliquer un nom facilement identifiable à un ordinateur. Les balises s’affichent dans le nœud **Mappages des ensembles de compteurs** de l’arborescence dans l’éditeur de test de charge. Plus important, les balises s'affichent dans les rapports Excel qui permettent aux parties prenantes d'identifier le rôle de l'ordinateur dans le test de charge, par exemple, « ServerWeb1 dans lab2 » ou « SQL Server2 dans le bureau de Phoenix ».<br /><br /> Pour plus d’informations, voir [Créer des rapports sur les résultats des tests de charge à des fins de comparaison ou d’analyse des tendances](../test/compare-load-test-results.md).||
 
 ## <a name="use-counter-sets"></a>Utiliser des ensembles de compteurs
 

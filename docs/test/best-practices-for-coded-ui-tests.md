@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eed883703b333fc39039e9c063aeabbbc1709810
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6ebd05843e5a80f95a6eb30809440e6e5a188d0e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924485"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822974"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Bonnes pratiques pour les tests codés de l’interface utilisateur
 
@@ -26,29 +26,29 @@ Cette rubrique décrit certaines recommandations pour le développement de tests
 
 Utilisez les instructions suivantes pour créer un test codé de l'interface utilisateur flexible.
 
--   Utilisez le **Générateur de test codé de l’interface utilisateur** dès que possible.
+- Utilisez le **Générateur de test codé de l’interface utilisateur** dès que possible.
 
--   Ne modifiez pas le fichier *UIMap.designer.cs* directement. Si vous modifiez le fichier, les changements apportés à ce dernier vont être remplacés.
+- Ne modifiez pas le fichier *UIMap.designer.cs* directement. Si vous modifiez le fichier, les changements apportés à ce dernier vont être remplacés.
 
--   Créez votre test en tant que séquence de méthodes enregistrées. Pour plus d’informations sur la manière d’enregistrer une méthode, consultez [Création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md).
+- Créez votre test en tant que séquence de méthodes enregistrées. Pour plus d’informations sur la manière d’enregistrer une méthode, consultez [Création de tests codés de l’interface utilisateur](../test/use-ui-automation-to-test-your-code.md).
 
--   Chaque méthode enregistrée doit agir sur une page, un formulaire ou une boîte de dialogue unique. Créez une méthode de test pour chaque nouvelle page, nouveau formulaire ou nouvelles boîte de dialogue.
+- Chaque méthode enregistrée doit agir sur une page, un formulaire ou une boîte de dialogue unique. Créez une méthode de test pour chaque nouvelle page, nouveau formulaire ou nouvelles boîte de dialogue.
 
--   Quand vous créez une méthode, utilisez un nom significatif au lieu du nom par défaut. Un nom significatif permet d'identifier l'objectif de la méthode.
+- Quand vous créez une méthode, utilisez un nom significatif au lieu du nom par défaut. Un nom significatif permet d'identifier l'objectif de la méthode.
 
--   Si possible, limitez chaque méthode enregistrée à moins de 10 actions. Cette approche modulaire facilite le remplacement d'une méthode si l'interface utilisateur change.
+- Si possible, limitez chaque méthode enregistrée à moins de 10 actions. Cette approche modulaire facilite le remplacement d'une méthode si l'interface utilisateur change.
 
--   Créez chaque assertion à l’aide du **Générateur de test codé de l’interface utilisateur**, qui ajoute automatiquement une méthode d’assertion au fichier *UIMap.Designer.cs*.
+- Créez chaque assertion à l’aide du **Générateur de test codé de l’interface utilisateur**, qui ajoute automatiquement une méthode d’assertion au fichier *UIMap.Designer.cs*.
 
--   Si l'interface utilisateur change, réenregistrez les méthodes de test ou les méthodes d'assertion, ou bien réenregistrez les sections affectées d'une méthode de test existante.
+- Si l'interface utilisateur change, réenregistrez les méthodes de test ou les méthodes d'assertion, ou bien réenregistrez les sections affectées d'une méthode de test existante.
 
--   Créez un fichier <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> distinct pour chaque module de votre application testée. Pour plus d’informations, consultez [Test d’une grande application avec plusieurs mappages d’IU](../test/testing-a-large-application-with-multiple-ui-maps.md).
+- Créez un fichier <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> distinct pour chaque module de votre application testée. Pour plus d’informations, consultez [Test d’une grande application avec plusieurs mappages d’IU](../test/testing-a-large-application-with-multiple-ui-maps.md).
 
--   Dans l'application testée, utilisez des noms significatifs quand vous créez les contrôles d'interface utilisateur. L’utilisation de noms significatifs apporte plus de clarté et de simplicité aux noms de contrôles générés automatiquement.
+- Dans l'application testée, utilisez des noms significatifs quand vous créez les contrôles d'interface utilisateur. L’utilisation de noms significatifs apporte plus de clarté et de simplicité aux noms de contrôles générés automatiquement.
 
--   Si vous créez des assertions en codant avec l’API, créez une méthode pour chaque assertion dans le cadre de la classe <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> qui se trouve dans le fichier *UIMap.cs*. Pour exécuter l’assertion, appelez cette méthode à partir de votre méthode de test.
+- Si vous créez des assertions en codant avec l’API, créez une méthode pour chaque assertion dans le cadre de la classe <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap> qui se trouve dans le fichier *UIMap.cs*. Pour exécuter l’assertion, appelez cette méthode à partir de votre méthode de test.
 
--   Si vous codez directement avec l’API, utilisez les propriétés et méthodes dans les classes générées dans le fichier *UIMap.Designer.cs* de votre code autant que possible. Ces classes facilitent votre travail, le rendent plus fiable et vous permettent d'augmenter votre productivité.
+- Si vous codez directement avec l’API, utilisez les propriétés et méthodes dans les classes générées dans le fichier *UIMap.Designer.cs* de votre code autant que possible. Ces classes facilitent votre travail, le rendent plus fiable et vous permettent d'augmenter votre productivité.
 
 Les tests codés de l'interface utilisateur s'adaptent automatiquement à de nombreuses modifications dans l'interface utilisateur. Si, par exemple, un élément d'interface utilisateur a changé de position ou de couleur, la plupart du temps, le test codé de l'interface utilisateur trouve quand même le bon élément.
 
@@ -58,15 +58,15 @@ Durant une série de tests, les contrôles d’IU sont localisés par le framewo
 
 Les interfaces utilisateur changent souvent au cours du développement. Voici quelques façons de réduire l'effet de ces changements :
 
--   Recherchez la méthode enregistrée qui référence ce contrôle, puis utilisez le **Générateur de test codé de l’interface utilisateur** pour réenregistrer les actions de cette méthode. Vous pouvez utiliser le même nom pour la méthode pour écraser les actions existantes.
+- Recherchez la méthode enregistrée qui référence ce contrôle, puis utilisez le **Générateur de test codé de l’interface utilisateur** pour réenregistrer les actions de cette méthode. Vous pouvez utiliser le même nom pour la méthode pour écraser les actions existantes.
 
--   Si un contrôle a une assertion qui n'est plus valide :
+- Si un contrôle a une assertion qui n'est plus valide :
 
-    -   Supprimez la méthode qui contient l'assertion.
+    - Supprimez la méthode qui contient l'assertion.
 
-    -   Supprimez l'appel à cette méthode depuis la méthode de test.
+    - Supprimez l'appel à cette méthode depuis la méthode de test.
 
-    -   Ajouter une nouvelle assertion en faisant glisser le bouton en forme de croix sur le contrôle d'interface utilisateur, ouvrez le mappage d'interface utilisateur, puis ajoutez la nouvelle assertion.
+    - Ajouter une nouvelle assertion en faisant glisser le bouton en forme de croix sur le contrôle d'interface utilisateur, ouvrez le mappage d'interface utilisateur, puis ajoutez la nouvelle assertion.
 
 Pour plus d’informations sur la manière d’enregistrer des tests codés de l’interface utilisateur, consultez [Utiliser l’automatisation de l’interface utilisateur pour tester votre code](../test/use-ui-automation-to-test-your-code.md).
 

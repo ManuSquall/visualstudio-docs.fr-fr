@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 420a65fb8b91495c5fbba228e190b5589019c99f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926773"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62576864"
 ---
 # <a name="toolbox-html-tab"></a>Boîte à outils, onglet HTML
 
@@ -38,7 +38,7 @@ Cet outil est sélectionné par défaut quand un onglet de boîte à outils s’
 
 **Input (Button)**
 
-![Bouton de page web HTML](../../ide/reference/media/vxbutton.gif)
+![Bouton Page web HTML](../../ide/reference/media/vxbutton.gif)
 
 Insère un élément `input` tel que `type="button"`. Pour changer le texte affiché, modifiez la propriété `name`. Par défaut, `id="Button1"` est inséré pour le premier bouton, `id="Button2"` pour le deuxième, etc.
 
@@ -50,7 +50,7 @@ Quand vous faites glisser **Input (Button)** sur la surface en mode Design, une 
 
 **Input (Reset)**
 
-![Capture d’écran HTMLpageResetButton](../../ide/reference/media/vxreset.gif)
+![Capture d'écran HTMLpageResetButton](../../ide/reference/media/vxreset.gif)
 
 Insère un élément `input` tel que `type="reset"`. Pour changer le texte affiché, modifiez la propriété `name`. Par défaut, `id="Reset1"` est inséré pour le premier bouton de réinitialisation, `id="Reset2"` pour le deuxième, etc.
 
@@ -62,7 +62,7 @@ Quand vous faites glisser **Input (Reset)** sur la surface en mode Design, une b
 
 **Input (Submit)**
 
-![Capture d’écran HTMLpageToolbarSubmitButton](../../ide/reference/media/vxsubmit.gif)
+![Capture d'écran HTMLpageToolbarSubmitButton](../../ide/reference/media/vxsubmit.gif)
 
 Insère un élément `input` tel que `type="submit"`. Pour changer le texte affiché, modifiez la propriété `name`. Par défaut, `id="Submit1"` est inséré pour le premier bouton d’envoi, `id="Submit2"` pour le deuxième, etc.
 
@@ -74,7 +74,7 @@ Quand vous faites glisser **Input (Submit)** sur la surface en mode Design, une 
 
 **Input (Text)**
 
-![Capture d’écran HTMLpageToolbarTextField](../../ide/reference/media/vxtextfield.gif)
+![Capture d'écran HTMLpageToolbarTextField](../../ide/reference/media/vxtextfield.gif)
 
 Insère un élément `input` tel que `type="text"` dans votre document. Pour changer le texte affiché par défaut, modifiez l’attribut `value`. Par défaut, `id="Text1"` est inséré pour le premier champ de texte, `id="Text2"` pour le deuxième, etc.
 
@@ -131,7 +131,7 @@ Quand vous faites glisser **Input (Check box)** sur la surface en mode Design, 
 
 **Input (Radio)**
 
-![Capture d’écran VisualStudioHTMLpageRadioButton](../../ide/reference/media/vxradio.gif)
+![Capture d'écran VisualStudioHTMLpageRadioButton](../../ide/reference/media/vxradio.gif)
 
 Insère un élément `input` tel que `type="radio"`. Pour changer le texte affiché, modifiez la propriété `name`. Par défaut, `id="Radio1"` est inséré pour la première case d’option, `id="Radio2"` pour la deuxième, etc.
 
@@ -155,7 +155,7 @@ Quand vous faites glisser **Input (Hidden)** sur la surface en mode Design, une 
 
 **Textarea**
 
-![Zone de texte de barre d’outils de page HTML](../../ide/reference/media/vxtextarea.gif)
+![Zone de texte de barre d'outils de page HTML](../../ide/reference/media/vxtextarea.gif)
 
 Insère un élément `textarea`. Vous pouvez redimensionner la zone de texte ou utiliser les barres de défilement pour afficher le texte qui s’étend au-delà de la zone d’affichage. Pour changer le texte affiché par défaut, modifiez l’attribut `value`. Par défaut, `id="textarea1"` est inséré pour la première zone de texte, `id=" textarea 2"` pour la deuxième, etc.
 
@@ -170,7 +170,7 @@ Quand vous faites glisser **Textarea** sur la surface en mode Design, une balise
 
 **Table**
 
-![Capture d’écran HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif)
+![Capture d'écran HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif)
 
 Insère un élément `table`.
 
@@ -182,7 +182,7 @@ Quand vous faites glisser **Table** sur la surface en mode Design, une balise HT
 
 **Image**
 
-![Élément d’image de page HTML](../../ide/reference/media/vximage.gif)
+![Élément d'image de page HTML](../../ide/reference/media/vximage.gif)
 
 Insère un élément `img`. Modifiez cet élément pour spécifier son texte `src` et `alt`.
 

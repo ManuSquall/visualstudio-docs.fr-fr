@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 130f7296985aa5c5e6115cd3e61b00efd90f25c7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62784039"
 ---
 # <a name="edit-load-tests"></a>Modifier des tests de charge
 
@@ -32,7 +32,7 @@ Les projets de test de performances web et de test de charge sont uniquement dis
 
 ## <a name="edit-load-test-scenario-settings"></a>Modifier les paramètres des scénarios de test de charge
 
-Un scénario est utilisé pour modéliser la manière dont un groupe d’utilisateurs interagit avec une application serveur. Un scénario se compose d’un modèle de charge, d’un modèle de combinaison de tests, d’une combinaison de tests, d’une combinaison de navigateurs et d’une combinaison de réseaux. Un test de charge peut avoir plusieurs scénarios et un scénario peut contenir des tests de performances web et des tests unitaires. En groupant des paramètres semblables, un scénario vous permet de grouper et d'exécuter ensemble des tests de nature semblable.
+Un scénario est utilisé pour modéliser la manière dont un groupe d’utilisateurs interagit avec une application serveur. Un scénario se compose d'un modèle de charge, d'un modèle de combinaison de tests, d'une combinaison de tests, d'une combinaison de navigateurs et d'une combinaison de réseaux. Un test de charge peut avoir plusieurs scénarios et un scénario peut contenir des tests de performances web et des tests unitaires. En groupant des paramètres semblables, un scénario vous permet de grouper et d'exécuter ensemble des tests de nature semblable.
 
 Pour plus d’informations, consultez [Modifier les scénarios de test de charge](../test/edit-load-test-scenarios.md) et [Propriétés des scénarios de test de charge](../test/load-test-scenario-properties.md).
 
