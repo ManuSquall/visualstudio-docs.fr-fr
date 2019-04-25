@@ -9,11 +9,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 08f0bb9fb14c631f3bf1e5545a69663eb060e3e7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821128"
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>Procédure : spécifier le pourcentage d’utilisateurs virtuels qui utilisent les données du cache web
 
@@ -34,7 +34,7 @@ Si vous exécutez un test de charge sur un site web présentant un nombre signif
 
 1. Ouvrez un test de charge.
 
-     L’**éditeur de test de charge** s’affiche. L’arborescence du test de charge s’affiche.
+     L’**éditeur de test de charge** s’affiche. L'arborescence du test de charge s'affiche.
 
 2. Dans le dossier **Scénarios** des arborescences du test de charge, choisissez le nœud de scénario pour lequel vous voulez modifier le pourcentage de nouveaux utilisateurs.
 

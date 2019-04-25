@@ -1,10 +1,4 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: 804260be1adbfa0a7188088543f83eac14a1e0fc
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57872106"
 documentType: LandingData
 title: Documentation sur l’IDE Visual Studio
 metadata:
@@ -19,97 +13,97 @@ metadata:
   ms.author: ghogen
   ms.custom: seodec18
 sections:
-- title: Bien démarrer avec Visual Studio
-  items:
-  - type: paragraph
-    text: Installer et découvrir de l'Environnement de développement intégré (IDE) Visual Studio
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 4
+  - title: Bien démarrer avec Visual Studio
     items:
-    - href: ../install/install-visual-studio.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_setup.svg
-      title: Installer Visual Studio
-    - href: ../get-started/visual-studio-ide.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/logos/logo_visual-studio.svg
-      title: Présentation de l’IDE Visual Studio
-    - href: ../ide/whats-new-visual-studio-2017.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_whats-new.svg
-      title: Nouveautés dans Visual Studio 2017
-    - href: ../ide/whats-new-visual-studio-2019.md
-      html: <p></p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_whats-new.svg
-      title: Nouveautés de Visual Studio 2019
-- title: Didacticiels
-  items:
-  - type: paragraph
-    text: Bien démarrer avec Visual Studio dans le langage de votre choix.
-  - type: list
-    style: icon48
+      - type: paragraph
+        text: Installer et découvrir de l'Environnement de développement intégré (IDE) Visual Studio
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 4
+        items:
+          - href: ../install/install-visual-studio.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_setup.svg'
+            title: Installer Visual Studio
+          - href: ../get-started/visual-studio-ide.md?toc=/visualstudio/csharp/toc.json&bc=/visualstudio/csharp/breadcrumb/toc.json
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/logos/logo_visual-studio.svg'
+            title: Présentation de l’IDE Visual Studio
+          - href: ../ide/whats-new-visual-studio-2017.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_whats-new.svg'
+            title: Nouveautés dans Visual Studio 2017
+          - href: ../ide/whats-new-visual-studio-2019.md
+            html: <p></p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_whats-new.svg'
+            title: "Nouveautés de Visual Studio\_2019"
+  - title: Didacticiels
     items:
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_csharp.svg
-      text: C#
-      href: /visualstudio/get-started/csharp/
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_fsharp.svg
-      text: F#
-      href: /dotnet/fsharp
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_vb.svg
-      text: Visual Basic
-      href: /visualstudio/get-started/visual-basic/
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_cplusplus.svg
-      text: C++
-      href: /cpp/get-started/
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_python.svg
-      text: Python
-      href: /visualstudio/python/
-    - image:
-        src: https://docs.microsoft.com/media/logos/logo_js.svg
-      text: JavaScript
-      href: /visualstudio/javascript/
-- title: Développer des applications
-  items:
-  - type: paragraph
-    text: En savoir plus avec des didacticiels approfondis sur l’utilisation de Visual Studio pour développer et tester des applications
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
+      - type: paragraph
+        text: Bien démarrer avec Visual Studio dans le langage de votre choix.
+      - type: list
+        style: icon48
+        items:
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_csharp.svg'
+            text: 'C#'
+            href: /visualstudio/get-started/csharp/
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_fsharp.svg'
+            text: 'F#'
+            href: /dotnet/fsharp
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_vb.svg'
+            text: Visual Basic
+            href: /visualstudio/get-started/visual-basic/
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_cplusplus.svg'
+            text: C++
+            href: /cpp/get-started/
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_python.svg'
+            text: Python
+            href: /visualstudio/python/
+          - image:
+              src: 'https://docs.microsoft.com/media/logos/logo_js.svg'
+            text: JavaScript
+            href: /visualstudio/javascript/
+  - title: Développer des applications
     items:
-    - href: ../ide/index-writing-code.md
-      html: <p>Tirer le meilleur parti de l’éditeur de code Visual Studio</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_code-edit.svg
-      title: Écriture et modification du code
-    - href: ../ide/compiling-and-building-in-visual-studio.md
-      html: <p>Configurez votre compilateur et créez votre application.</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_build.svg
-      title: Compiler et générer
-    - href: ../debugger/debugger-feature-tour.md
-      html: <p>Exécutez votre application sous le débogueur pour examiner les problèmes.</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_debug.svg
-      title: Débogage
-    - href: ../test/getting-started-with-unit-testing.md
-      html: <p>Utilisez Visual Studio pour gérer des tests unitaires et des tests codés de l’interface utilisateur.</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_test.svg
-      title: Tester
-    - href: ../data-tools/create-a-sql-database-by-using-a-designer.md
-      html: <p>Créer une base de données SQL à l’aide des outils de conception de base de données Visual Studio.</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_generic-database.svg
-      title: Accéder aux données
+      - type: paragraph
+        text: En savoir plus avec des didacticiels approfondis sur l’utilisation de Visual Studio pour développer et tester des applications
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - href: ../ide/index-writing-code.md
+            html: <p>Tirer le meilleur parti de l’éditeur de code Visual Studio</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_code-edit.svg'
+            title: Écriture et modification du code
+          - href: ../ide/compiling-and-building-in-visual-studio.md
+            html: <p>Configurez votre compilateur et créez votre application.</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_build.svg'
+            title: Compiler et générer
+          - href: ../debugger/debugger-feature-tour.md
+            html: <p>Exécutez votre application sous le débogueur pour examiner les problèmes.</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_debug.svg'
+            title: Débogage
+          - href: ../test/getting-started-with-unit-testing.md
+            html: <p>Utilisez Visual Studio pour gérer des tests unitaires et des tests codés de l’interface utilisateur.</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_test.svg'
+            title: Tester
+          - href: ../data-tools/create-a-sql-database-by-using-a-designer.md
+            html: <p>Créer une base de données SQL à l’aide des outils de conception de base de données Visual Studio.</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_generic-database.svg'
+            title: Accéder aux données

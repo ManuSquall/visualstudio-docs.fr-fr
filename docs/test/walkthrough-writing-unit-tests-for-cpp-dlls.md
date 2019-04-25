@@ -7,36 +7,36 @@ manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: 65bbaf015e2d4b0dc8dd66c33656e62c4b9b0102
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 960eb242a8b03b863f1b4e38e0cb8cae53eed469
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915968"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62819705"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>Procédure : Écrire des tests unitaires pour des DLL C++
 
 Cette procédure pas à pas décrit comment développer une DLL C++ native en utilisant la méthodologie des tests en premier. Les étapes de base sont les suivantes :
 
-1.  [Créer un projet de test natif](#create_test_project). Le projet de test se trouve dans la même solution que le projet DLL.
+1. [Créer un projet de test natif](#create_test_project). Le projet de test se trouve dans la même solution que le projet DLL.
 
-2.  [Créer un projet DLL](#create_dll_project). Cette procédure pas à pas crée une DLL, mais la procédure de test d'une DLL existante est similaire.
+2. [Créer un projet DLL](#create_dll_project). Cette procédure pas à pas crée une DLL, mais la procédure de test d'une DLL existante est similaire.
 
-3.  [Rendre les fonctions DLL visibles par les tests](#make_functions_visible).
+3. [Rendre les fonctions DLL visibles par les tests](#make_functions_visible).
 
-4.  [Augmenter itérativement les tests](#iterate). Nous recommandons un cycle « Rouge-Vert-Refactoriser », dans lequel le développement du code est conduit par les tests.
+4. [Augmenter itérativement les tests](#iterate). Nous recommandons un cycle « Rouge-Vert-Refactoriser », dans lequel le développement du code est conduit par les tests.
 
-5.  [Déboguer les tests ayant échoué](#debug). Vous pouvez exécuter les tests en mode débogage.
+5. [Déboguer les tests ayant échoué](#debug). Vous pouvez exécuter les tests en mode débogage.
 
-6.  [Refactoriser tout en maintenant les tests inchangés](#refactor). La refactorisation signifie une amélioration de la structure du code sans modification de son comportement externe. Vous pouvez procéder ainsi pour améliorer les performances, l'extensibilité ou la lisibilité du code. Comme le but n'est pas de changer le comportement, vous ne modifiez pas les tests en même temps que vous effectuez une modification de refactorisation du code. Les tests permettent de vérifier que vous n’introduisez pas de bogues lors de la refactorisation.
+6. [Refactoriser tout en maintenant les tests inchangés](#refactor). La refactorisation signifie une amélioration de la structure du code sans modification de son comportement externe. Vous pouvez procéder ainsi pour améliorer les performances, l'extensibilité ou la lisibilité du code. Comme le but n'est pas de changer le comportement, vous ne modifiez pas les tests en même temps que vous effectuez une modification de refactorisation du code. Les tests permettent de vérifier que vous n’introduisez pas de bogues lors de la refactorisation.
 
-7.  [Vérifier la couverture](using-code-coverage-to-determine-how-much-code-is-being-tested.md). Les tests unitaires sont plus utiles lorsqu'ils impliquent une plus grande partie de votre code. Vous pouvez découvrir quelles parties de votre code ont été utilisées par les tests.
+7. [Vérifier la couverture](using-code-coverage-to-determine-how-much-code-is-being-tested.md). Les tests unitaires sont plus utiles lorsqu'ils impliquent une plus grande partie de votre code. Vous pouvez découvrir quelles parties de votre code ont été utilisées par les tests.
 
-8.  [Isoler les unités des ressources externes](using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md). En règle générale, une DLL dépend des autres composants du système que vous développez, tels que les autres DLL, les bases de données ou les sous-systèmes à distance. Il est utile de tester chaque unité isolément de ses dépendances. Les composants externes peuvent ralentir les tests. Pendant le développement, les autres composants peuvent ne pas être achevés.
+8. [Isoler les unités des ressources externes](using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md). En règle générale, une DLL dépend des autres composants du système que vous développez, tels que les autres DLL, les bases de données ou les sous-systèmes à distance. Il est utile de tester chaque unité isolément de ses dépendances. Les composants externes peuvent ralentir les tests. Pendant le développement, les autres composants peuvent ne pas être achevés.
 
-##  <a name="create_test_project"></a> Créer un projet de test unitaire natif
+## <a name="create_test_project"></a> Créer un projet de test unitaire natif
 
-1.  Dans le menu **Fichier**, choisissez **Nouveau** > **Projet**.
+1. Dans le menu **Fichier**, choisissez **Nouveau** > **Projet**.
 
      Dans la boîte de dialogue, développez **Installé** > **Modèles** > **Visual C++** > **Test**.
 
@@ -46,23 +46,23 @@ Cette procédure pas à pas décrit comment développer une DLL C++ native en ut
 
      ![Création d'un projet de test unitaire C++](../test/media/utecpp01.png)
 
-2.  Dans le nouveau projet, inspectez **unittest1.cpp**
+2. Dans le nouveau projet, inspectez **unittest1.cpp**
 
      ![Projet de test avec TEST&#95;CLASS et TEST&#95;METHOD](../test/media/utecpp2.png)
 
      Notez que :
 
-    -   Chaque test est défini à l'aide de `TEST_METHOD(YourTestName){...}`.
+    - Chaque test est défini à l'aide de `TEST_METHOD(YourTestName){...}`.
 
          Vous n'avez pas à écrire une signature de fonction classique. La signature est créée par la macro TEST_METHOD. La macro génère une fonction d'instance qui retourne void. Elle génère également une fonction statique qui retourne des informations sur la méthode de test. Ces informations permettent à l'Explorateur de tests de trouver la méthode.
 
-    -   Les méthodes de test sont regroupées en classes à l'aide de `TEST_CLASS(YourClassName){...}`.
+    - Les méthodes de test sont regroupées en classes à l'aide de `TEST_CLASS(YourClassName){...}`.
 
          Lorsque les tests sont exécutés, une instance de chaque classe de test est créée. Les méthodes de test sont appelées dans un ordre non défini. Vous pouvez définir des méthodes spéciales qui sont appelées avant et après chaque module, classe ou méthode.
 
-3.  Vérifiez que les tests s'exécutent dans l'Explorateur de tests :
+3. Vérifiez que les tests s'exécutent dans l'Explorateur de tests :
 
-    1.  Insérez le code de test :
+    1. Insérez le code de test :
 
         ```cpp
         TEST_METHOD(TestMethod1)
@@ -73,7 +73,7 @@ Cette procédure pas à pas décrit comment développer une DLL C++ native en ut
 
          Notez que la classe `Assert` fournit plusieurs méthodes statiques que vous pouvez utiliser pour vérifier les résultats dans les méthodes de test.
 
-    2.  Dans le menu **Test**, choisissez **Exécuter** > **Tous les tests**.
+    2. Dans le menu **Test**, choisissez **Exécuter** > **Tous les tests**.
 
          Le test est généré et s'exécute.
 
@@ -83,27 +83,27 @@ Cette procédure pas à pas décrit comment développer une DLL C++ native en ut
 
          ![Explorateur de tests unitaires avec un test réussi](../test/media/utecpp04.png)
 
-##  <a name="create_dll_project"></a> Créer un projet DLL
+## <a name="create_dll_project"></a> Créer un projet DLL
 
-1.  Créez un projet **Visual C++** à l'aide du modèle **Projet Win32** .
+1. Créez un projet **Visual C++** à l'aide du modèle **Projet Win32** .
 
      Dans cette procédure pas à pas, le projet se nomme `RootFinder`.
 
      ![Création d’un projet Win32 C++](../test/media/utecpp05.png)
 
-2.  Sélectionnez **DLL** et **Exporter les symboles** dans l'Assistant Application Win32.
+2. Sélectionnez **DLL** et **Exporter les symboles** dans l'Assistant Application Win32.
 
      L'option **Exporter les symboles** génère une macro pratique qui permet de déclarer les méthodes exportées.
 
      ![Assistant de projet C++ défini pour les symboles DLL et d'exportation](../test/media/utecpp06.png)
 
-3.  Déclarez une fonction exportée dans le fichier *.h* principal :
+3. Déclarez une fonction exportée dans le fichier *.h* principal :
 
      ![Nouveau projet de code de la DLL et fichier .h avec macros API](../test/media/utecpp07.png)
 
      Le déclarateur `__declspec(dllexport)` permet que les membres publics et protégés de la classe soient visibles en dehors de la DLL. Pour plus d'informations, consultez [Utilisation de dllimport et dllexport dans les classes C++](/cpp/cpp/using-dllimport-and-dllexport-in-cpp-classes).
 
-4.  Dans le fichier *.cpp* principal, ajoutez un corps minimal pour la fonction :
+4. Dans le fichier *.cpp* principal, ajoutez un corps minimal pour la fonction :
 
     ```cpp
         // Find the square root of a number.
@@ -113,15 +113,15 @@ Cette procédure pas à pas décrit comment développer une DLL C++ native en ut
         }
     ```
 
-##  <a name="make_functions_visible"></a> Associer le projet de test au projet DLL
+## <a name="make_functions_visible"></a> Associer le projet de test au projet DLL
 
 1. Ajoutez le projet DLL aux références de projet du projet de test :
 
-   1.  Ouvrez les propriétés du projet de test et choisissez **Propriétés communes** > **Framework et références**.
+   1. Ouvrez les propriétés du projet de test et choisissez **Propriétés communes** > **Framework et références**.
 
         ![Propriétés du projet C++ | Framework et références](../test/media/utecpp08.png)
 
-   2.  Choisissez **Ajouter une nouvelle référence**.
+   2. Choisissez **Ajouter une nouvelle référence**.
 
         Dans la boîte de dialogue **Ajouter une référence** , sélectionnez le projet DLL et choisissez **Ajouter**.
 
@@ -163,9 +163,9 @@ Cette procédure pas à pas décrit comment développer une DLL C++ native en ut
 
    Vous avez configuré le test et les projets de code, et vérifié que vous pouviez exécuter des tests exécutant les fonctions du projet de code. Maintenant, vous pouvez commencer à écrire le code et les tests réels.
 
-##  <a name="iterate"></a> Augmenter itérativement les tests et les faire réussir
+## <a name="iterate"></a> Augmenter itérativement les tests et les faire réussir
 
-1.  Ajoutez un nouveau test :
+1. Ajoutez un nouveau test :
 
     ```cpp
     TEST_METHOD(RangeTest)
@@ -184,7 +184,7 @@ Cette procédure pas à pas décrit comment développer une DLL C++ native en ut
     >
     > Lorsque vos utilisateurs modifient leurs spécifications, désactivez les tests qui ne sont plus corrects. Écrivez de nouveaux tests et utilisez-les l'un après l'autre, de la même façon incrémentielle.
 
-2.  Générez la solution, puis choisissez **Exécuter tout** dans **l’Explorateur de tests**.
+2. Générez la solution, puis choisissez **Exécuter tout** dans **l’Explorateur de tests**.
 
      Le nouveau test échoue.
 
@@ -193,7 +193,7 @@ Cette procédure pas à pas décrit comment développer une DLL C++ native en ut
     > [!TIP]
     > Vérifiez que chaque test échoue immédiatement après que vous l'avez écrit. Vous évitez ainsi de commettre l'erreur d'écrire un test qui n'échoue jamais.
 
-3.  Améliorez le code de votre DLL afin que le nouveau test réussisse :
+3. Améliorez le code de votre DLL afin que le nouveau test réussisse :
 
     ```cpp
     #include <math.h>
@@ -212,7 +212,7 @@ Cette procédure pas à pas décrit comment développer une DLL C++ native en ut
     }
     ```
 
-4.  Générez la solution, puis, dans **l’Explorateur de tests**, choisissez **Exécuter tout**.
+4. Générez la solution, puis, dans **l’Explorateur de tests**, choisissez **Exécuter tout**.
 
      Les deux tests réussissent.
 
@@ -221,9 +221,9 @@ Cette procédure pas à pas décrit comment développer une DLL C++ native en ut
     > [!TIP]
     > Développez le code en ajoutant les tests individuellement. Assurez-vous que tous les tests réussissent après chaque itération.
 
-##  <a name="debug"></a> Déboguer un test ayant échoué
+## <a name="debug"></a> Déboguer un test ayant échoué
 
-1.  Ajoutez un autre test :
+1. Ajoutez un autre test :
 
     ```cpp
     #include <stdexcept>
@@ -256,23 +256,23 @@ Cette procédure pas à pas décrit comment développer une DLL C++ native en ut
     }
     ```
 
-2.  Générez la solution et choisissez **Exécuter tout**.
+2. Générez la solution et choisissez **Exécuter tout**.
 
-3.  Ouvrez le test ayant échoué (ou double-cliquez dessus).
+3. Ouvrez le test ayant échoué (ou double-cliquez dessus).
 
      L'échec d'assertion est mis en surbrillance. Le message d’échec est visible dans le volet de détails de **l’Explorateur de tests**.
 
      ![NegativeRangeTests, échec](../test/media/ute_cpp_testexplorer_negativerangetest_fail.png)
 
-4.  Pour voir pourquoi le test échoue, parcourez la fonction :
+4. Pour voir pourquoi le test échoue, parcourez la fonction :
 
-    1.  Définissez un point d'arrêt au début de la fonction SquareRoot.
+    1. Définissez un point d'arrêt au début de la fonction SquareRoot.
 
-    2.  Dans le menu contextuel du test ayant échoué, choisissez **Déboguer les tests sélectionnés**.
+    2. Dans le menu contextuel du test ayant échoué, choisissez **Déboguer les tests sélectionnés**.
 
          Lorsque l'exécution s'arrête au point d'arrêt, parcourez le code.
 
-5.  Insérez le code de la fonction que vous développez :
+5. Insérez le code de la fonction que vous développez :
 
     ```cpp
 
@@ -288,17 +288,16 @@ Cette procédure pas à pas décrit comment développer une DLL C++ native en ut
 
     ```
 
-6.  Toutes les tests réussissent maintenant.
+6. Toutes les tests réussissent maintenant.
 
      ![Tous les tests sont concluants](../test/media/ute_ult_alltestspass.png)
 
 > [!TIP]
 > Si les tests individuels n’ont aucune dépendance qui les empêche d’être exécutés dans n’importe quel ordre, activez l’exécution parallèle des tests avec le bouton bascule ![UTE&#95;parallelicon&#45;small](../test/media/ute_parallelicon-small.png) dans la barre d’outils. Cela peut réduire sensiblement le temps nécessaire pour exécuter tous les tests.
 
+## <a name="refactor"></a> Refactoriser le code sans modifier les tests
 
-##  <a name="refactor"></a> Refactoriser le code sans modifier les tests
-
-1.  Simplifiez le calcul central de la fonction SquareRoot :
+1. Simplifiez le calcul central de la fonction SquareRoot :
 
     ```cpp
     // old code:
@@ -308,7 +307,7 @@ Cette procédure pas à pas décrit comment développer une DLL C++ native en ut
 
     ```
 
-2.  Générez la solution et choisissez **Exécuter tout**, pour vous assurer que vous n'avez pas introduit d'erreur.
+2. Générez la solution et choisissez **Exécuter tout**, pour vous assurer que vous n'avez pas introduit d'erreur.
 
     > [!TIP]
     > Un bon jeu de tests unitaires vous garantit que vous n'avez pas introduit de bogues lors de la modification du code.
@@ -317,11 +316,11 @@ Cette procédure pas à pas décrit comment développer une DLL C++ native en ut
 
 ## <a name="next-steps"></a>Étapes suivantes
 
--   **Isolement.** La plupart des DLL dépendent d'autres sous-systèmes tels que des bases de données et d'autres DLL. Ces autres composants sont souvent développés en parallèle. Pour permettre que le test unitaire soit exécuté pendant que les autres composants ne sont pas encore disponibles, vous devez remplacer
+- **Isolement.** La plupart des DLL dépendent d'autres sous-systèmes tels que des bases de données et d'autres DLL. Ces autres composants sont souvent développés en parallèle. Pour permettre que le test unitaire soit exécuté pendant que les autres composants ne sont pas encore disponibles, vous devez remplacer
 
--   **Tests de vérification de build.** Des tests peuvent être effectués sur le serveur de builds de votre équipe à des intervalles définis. Cela garantit que les bogues ne sont pas introduits lors de l'intégration du travail de plusieurs membres de l'équipe.
+- **Tests de vérification de build.** Des tests peuvent être effectués sur le serveur de builds de votre équipe à des intervalles définis. Cela garantit que les bogues ne sont pas introduits lors de l'intégration du travail de plusieurs membres de l'équipe.
 
--   **Tests d’archivage.** Vous pouvez imposer que certains tests soient effectués avant que chaque membre de l'équipe n'archive le code dans le contrôle de code source. Il s'agit généralement d'un sous-ensemble de l'ensemble complet des tests de vérification de build.
+- **Tests d’archivage.** Vous pouvez imposer que certains tests soient effectués avant que chaque membre de l'équipe n'archive le code dans le contrôle de code source. Il s'agit généralement d'un sous-ensemble de l'ensemble complet des tests de vérification de build.
 
      Vous pouvez également imposer un niveau minimal de couverture du code.
 

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9120b3076dff1620f6ec5b9ff77041126932481a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947209"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557097"
 ---
 # <a name="list-memory-command"></a>Afficher la mémoire, commande
 Affiche le contenu de la plage de mémoire spécifiée.
@@ -53,7 +53,7 @@ Debug.ListMemory [/ANSI|Unicode] [/Count:number] [/Format:formattype]
 
  Optionnel. Spécifie le format d’affichage des nombres : signé, non signé ou hexadécimal.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Au lieu d’écrire une commande **Debug.ListMemory** complète avec tous ses commutateurs, vous pouvez appeler la commande à l’aide d’alias préparamétrés avec certains commutateurs prédéfinis à des valeurs spécifiées. Par exemple, au lieu d’entrer :
 
 ```cmd

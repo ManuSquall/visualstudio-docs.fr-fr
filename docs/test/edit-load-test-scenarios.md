@@ -11,11 +11,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 647548a59c965b6feacb994efa041ecd5b6c6b91
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908802"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786163"
 ---
 # <a name="edit-load-test-scenarios"></a>Modifier les scénarios de test de charge
 
@@ -48,7 +48,7 @@ Un scénario comporte plusieurs autres propriétés que vous pouvez modifier à 
 |Tâches|Rubriques associées|
 |-|-----------------------|
 |**Ajouter des pauses d’interaction humaine artificielle dans votre scénario :** Les temps de réflexion permettent de simuler un comportement humain selon lequel les utilisateurs attendent entre des interactions avec un site web. Ils ont lieu entre les demandes dans un test de performances web et entre les itérations de test dans un scénario de test de charge. L'utilisation de temps de réflexion dans un test de charge peut être utile pour la création de simulations de charge plus précises.|-   [Modifier les temps de réflexion pour simuler les retards d’interaction humaine avec un site web](../test/edit-think-times-in-load-test-scenarios.md)|
-|**Spécifiez le nombre d’utilisateurs virtuels pour votre scénario :** vous pouvez configurer les propriétés du modèle de charge pour spécifier le mode d’ajustement de la charge utilisateur simulée pendant un test de charge. Vous obtenez trois modèles de charge intégrés : constant, dans l’étape et en fonction des objectifs. Vous choisissez le modèle de charge et ajustez les propriétés aux niveaux appropriés à vos objectifs de test de charge.|-   [Modifier des modèles de charge pour modéliser les activités des utilisateurs virtuels](../test/edit-load-patterns-to-model-virtual-user-activities.md)|
+|**Spécifiez le nombre d’utilisateurs virtuels pour votre scénario :** vous pouvez configurer les propriétés du modèle de charge pour spécifier le mode d’ajustement de la charge utilisateur simulée pendant un test de charge. Vous obtenez trois modèles de charge intégrés : constant, dans l'étape et en fonction des objectifs. Vous choisissez le modèle de charge et ajustez les propriétés aux niveaux appropriés à vos objectifs de test de charge.|-   [Modifier des modèles de charge pour modéliser les activités des utilisateurs virtuels](../test/edit-load-patterns-to-model-virtual-user-activities.md)|
 |**Configurer la probabilité qu’un utilisateur virtuel exécute un test dans le scénario :** vous pouvez utiliser le la combinaison de tests, qui spécifie la probabilité qu’un utilisateur virtuel exécute un test donné dans un scénario de test de charge. Cela vous permet de simuler la charge de façon plus réaliste. Au lieu d'avoir un seul flux de travail dans vos applications, vous pouvez en avoir plusieurs, ce qui représente une meilleure approximation de la façon dont les utilisateurs finaux interagissent avec vos applications.|-   [Modifier des modèles de combinaison de tests](../test/edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md)|
 |**Ajouter ou supprimer un test unitaire ou un test de performances web dans un scénario de test de charge :** vous pouvez ajouter ou supprimer un test unitaire ou un test de performances web dans un scénario. Un test de charge contient un ou plusieurs scénarios, chacun contenant un ou plusieurs tests unitaires ou de performances web.|-   [Modifier la combinaison de tests](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md)|
 |**Configurer la combinaison de réseaux souhaitée pour votre scénario :** à l’aide de la combinaison de réseaux, vous pouvez simuler la charge réseau avec davantage de réalisme dans un scénario de test de charge. La charge est générée à l'aide d'une combinaison hétérogène de types de réseaux au lieu d'un seul type de réseau. Vous créez une meilleure approximation de la façon dont les utilisateurs finaux interagissent avec vos applications. Le modèle de combinaison de réseaux doit refléter les objectifs de ce scénario.|-   [Spécifier des types de réseau virtuel](../test/specify-virtual-network-types-in-a-load-test-scenario.md)|

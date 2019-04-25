@@ -8,11 +8,11 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 ms.openlocfilehash: a2970c0086ec18789347eebdea752487be18ce7d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842768"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62548391"
 ---
 # <a name="view-recent-job-performance-and-details"></a>Afficher les détails et les performances des travaux récents
 

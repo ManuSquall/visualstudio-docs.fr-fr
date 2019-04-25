@@ -13,15 +13,15 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: 0c0d13603a2575a826a53bf145fd1f0218571243
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892841"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>Procédure pas à pas : Effectuer une liaison de données dans le concepteur XAML
 
-Dans le concepteur XAML, vous pouvez définir des propriétés de liaison de données à l’aide de la planche graphique et de la fenêtre Propriétés. L'exemple dans cette procédure pas à pas montre comment lier des données à un contrôle. Plus précisément, la procédure pas à pas montre comment créer une classe de panier d’achat simple dotée d’une propriété [DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) nommée `ItemCount`, puis lier la propriété `ItemCount` à la propriété **Text** d’un contrôle [TextBlock](/uwp/api/Windows.UI.Xaml.Controls.TextBlock).
+Dans le concepteur XAML, vous pouvez définir des propriétés de liaison de données à l'aide de la planche graphique et de la fenêtre Propriétés. L'exemple dans cette procédure pas à pas montre comment lier des données à un contrôle. Plus précisément, la procédure pas à pas montre comment créer une classe de panier d’achat simple dotée d’une propriété [DependencyProperty](/uwp/api/Windows.UI.Xaml.DependencyProperty) nommée `ItemCount`, puis lier la propriété `ItemCount` à la propriété **Text** d’un contrôle [TextBlock](/uwp/api/Windows.UI.Xaml.Controls.TextBlock).
 
 ## <a name="to-create-a-class-to-use-as-a-data-source"></a>Pour créer une classe à utiliser comme source de données
 
@@ -31,7 +31,7 @@ Dans le concepteur XAML, vous pouvez définir des propriétés de liaison de don
 
 1. Nommez le projet **BindingTest**, puis choisissez le bouton **OK**.
 
-1. Ouvrez le fichier **MainWindow.xaml.cs** (ou **MainWindow.xaml.vb**) et ajoutez le code suivant. En C#, ajoutez le code dans l'espace de noms `BindingTest` (avant la dernière parenthèse fermante dans le fichier). En Visual Basic, ajoutez simplement la nouvelle classe.
+1. Ouvrez le fichier **MainWindow.xaml.cs** (ou **MainWindow.xaml.vb**) et ajoutez le code suivant. En C#, ajoutez le code dans l'espace de noms `BindingTest` (avant la dernière parenthèse fermante du fichier). En Visual Basic, ajoutez simplement la nouvelle classe.
 
    ```csharp
    public class ShoppingCart : DependencyObject
@@ -85,7 +85,7 @@ Dans le concepteur XAML, vous pouvez définir des propriétés de liaison de don
 
 1. Dans la **boîte à outils**, choisissez un contrôle `TextBlock` pour l’ajouter au formulaire.
 
-1. Une fois le contrôle `TextBlock` sélectionné, dans la fenêtre Propriétés, choisissez le marqueur de propriété à droite de la propriété **Text**, puis **Créer une liaison de données**. (Le marqueur de propriété ressemble à une petite zone.)
+1. Une fois le contrôle `TextBlock` sélectionné, dans la fenêtre Propriétés, choisissez le marqueur de propriété à droite de la propriété **Text**, puis **Créer une liaison de données**. (Le marqueur de propriété se présente comme une petite case.)
 
 1. Dans la boîte de dialogue Créer une liaison de données, dans la zone **Chemin d’accès**, choisissez la propriété **ItemCount : (int32)**, puis le bouton **OK**.
 
@@ -95,7 +95,7 @@ Dans le concepteur XAML, vous pouvez définir des propriétés de liaison de don
 
 1. Appuyez sur **F5** pour exécuter l'application.
 
-     Le contrôle `TextBlock` doit présenter la valeur par défaut 0 sous forme de texte.
+     Le contrôle `TextBlock` doit afficher la valeur par défaut 0 sous forme de texte.
 
 ## <a name="see-also"></a>Voir aussi
 

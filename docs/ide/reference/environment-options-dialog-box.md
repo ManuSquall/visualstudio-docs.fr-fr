@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c5550f844eaecf9cf7c98281421806ce37aad4f2
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790041"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790939"
 ---
 # <a name="options-dialog-box-environment"></a>Boîte de dialogue Options : Environnement
 

@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 684e638d1a2e69d48381964272294999d43c5242
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5c8bb8bc743aea29219edc8db9c0c52bf839954a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790646"
 ---
 # <a name="file-properties-javascript"></a>Propriétés des fichiers, JavaScript
 Vous pouvez utiliser les propriétés de fichier pour indiquer les actions que le système de projet doit effectuer sur les fichiers. Par exemple, vous pouvez définir des propriétés de fichier pour indiquer si un fichier doit être ajouté au package en tant que fichier de ressources.
@@ -46,13 +46,13 @@ Vous pouvez utiliser les propriétés de fichier pour indiquer les actions que l
 ### <a name="package-action"></a>Action de package
  La propriété **Action de package** indique ce que Visual Studio doit faire avec un fichier lors de l’exécution d’une build. **Action de package** peut avoir l’une des valeurs suivantes :
 
--   **Aucun** - Le fichier n’est pas inclus dans le manifeste du package. Exemple : un fichier texte qui contient de la documentation, tel qu’un fichier Lisez-moi.
+- **Aucun** - Le fichier n’est pas inclus dans le manifeste du package. Exemple : un fichier texte qui contient de la documentation, tel qu’un fichier Lisez-moi.
 
--   **Contenu** - Le fichier est inclus dans le manifeste du package. Par exemple, ce paramètre est la valeur par défaut pour un fichier .htm, .js, .css, image, audio ou vidéo.
+- **Contenu** - Le fichier est inclus dans le manifeste du package. Par exemple, ce paramètre est la valeur par défaut pour un fichier .htm, .js, .css, image, audio ou vidéo.
 
--   **Manifeste** - Le fichier n’est pas inclus dans le manifeste du package. Au lieu de cela, le fichier est utilisé pour l’entrée lors de la génération du manifeste du package. Il s’agit de la valeur par défaut pour le fichier package.appxmanifest.
+- **Manifeste** - Le fichier n’est pas inclus dans le manifeste du package. Au lieu de cela, le fichier est utilisé pour l’entrée lors de la génération du manifeste du package. Il s’agit de la valeur par défaut pour le fichier package.appxmanifest.
 
--   **Ressource** - Le fichier n’est pas inclus dans le manifeste du package. Au lieu de cela, le contenu du fichier est indexé dans l’index de ressource de package qui est placé dans le manifeste du package. Il est généralement utilisé pour les fichiers de ressources.
+- **Ressource** - Le fichier n’est pas inclus dans le manifeste du package. Au lieu de cela, le contenu du fichier est indexé dans l’index de ressource de package qui est placé dans le manifeste du package. Il est généralement utilisé pour les fichiers de ressources.
 
 La valeur par défaut d’**Action de package** dépend de l’extension du fichier que vous ajoutez à la solution.
 

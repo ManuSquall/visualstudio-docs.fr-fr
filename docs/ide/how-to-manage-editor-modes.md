@@ -24,12 +24,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b441543079ab3369beddcd95999809e075b3bb2b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 57987b67a2fa081ebaa577f10de478b5fd250aca
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429780"
 ---
 # <a name="how-to-manage-editor-modes"></a>Procédure : Gérer les modes de l’éditeur
 
@@ -42,21 +42,21 @@ Vous pouvez afficher l’éditeur de code Visual Studio dans différents modes d
 
 Vous pouvez choisir de masquer toutes les fenêtres Outil et d’afficher uniquement les fenêtres de document en activant le mode **Plein écran**.
 
--   Appuyez sur **Alt**+**Maj**+**Entrée** pour activer ou désactiver le mode **Plein écran**.
+- Appuyez sur **Alt**+**Maj**+**Entrée** pour activer ou désactiver le mode **Plein écran**.
 
      – ou –
 
--   Exécutez la commande `View.Fullscreen` dans la fenêtre **Commande**.
+- Exécutez la commande `View.Fullscreen` dans la fenêtre **Commande**.
 
 ## <a name="enable-virtual-space-mode"></a>Activer le mode Espace virtuel
 
 En mode **Espace virtuel**, des espaces sont insérés à la fin de chaque ligne de code. Sélectionnez cette option pour placer des commentaires en un point précis, proche de votre code.
 
-1.  Sélectionnez **Options** dans le menu **Outils**.
+1. Sélectionnez **Options** dans le menu **Outils**.
 
-2.  Développez le dossier **Éditeur de texte** et choisissez **Tous les langages** pour définir cette option globalement, ou choisissez un dossier de langage spécifique. Par exemple, pour activer les numéros de ligne uniquement dans Visual Basic, choisissez le nœud **Basic** > **Éditeur de texte**.
+2. Développez le dossier **Éditeur de texte** et choisissez **Tous les langages** pour définir cette option globalement, ou choisissez un dossier de langage spécifique. Par exemple, pour activer les numéros de ligne uniquement dans Visual Basic, choisissez le nœud **Basic** > **Éditeur de texte**.
 
-3.  Sélectionnez les options **Général**, puis, sous **Paramètres**, sélectionnez **Activer l’espace virtuel**.
+3. Sélectionnez les options **Général**, puis, sous **Paramètres**, sélectionnez **Activer l’espace virtuel**.
 
     > [!NOTE]
     > **Espace virtuel** est activé dans le mode **Sélectionner les colonnes**. Lorsque le mode **Espace virtuel** n’est pas activé, le point d’insertion passe de la fin d’une ligne directement au premier caractère de la suivante.

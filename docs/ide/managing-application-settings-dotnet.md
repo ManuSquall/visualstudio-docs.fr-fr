@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91d3004edc39b2fd4f9cc6be72407fd6a46274d1
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: dad84145200b09cfbddab63bd9994096d0ba3e17
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323569"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537316"
 ---
 # <a name="manage-application-settings-net"></a>Gérer les paramètres d’application (.NET)
 
@@ -84,9 +84,9 @@ Si des paramètres de portée utilisateur sont changés au cours de l’exécuti
 
 Nous vous recommandons fortement d’utiliser l’objet `My.Settings` et le fichier *.settings* par défaut pour accéder aux paramètres. En effet, vous pouvez utiliser le **Concepteur de paramètres** pour assigner des propriétés aux paramètres ; en outre, les paramètres utilisateur sont enregistrés automatiquement avant l’arrêt de l’application. Toutefois, votre application Visual Basic peut accéder directement aux paramètres. Dans ce cas, vous devez accéder à la classe `MySettings` et utiliser un fichier *.settings* personnalisé à la racine du projet. Vous devez enregistrer les paramètres utilisateur avant de terminer l’application, comme vous le feriez pour une application C# (voir la section suivante).
 
-<!-- markdownlint-disable MD003 -->
+<!-- markdownlint-disable MD003 MD020 -->
 ## <a name="access-or-change-application-settings-at-run-time-in-c"></a>Accéder aux paramètres d’application, ou les changer, au moment de l’exécution en C#
-<!-- markdownlint-enable MD003 -->
+<!-- markdownlint-enable MD003 MD020 -->
 
 Dans les langages autres que Visual Basic, tels que C#, vous devez accéder directement à la classe `Settings`, comme indiqué dans l’exemple [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] suivant.
 

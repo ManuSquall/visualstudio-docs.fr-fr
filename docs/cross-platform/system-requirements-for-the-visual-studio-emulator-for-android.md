@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c34bd47dc3909fd165db265eb5a5a79920a03f9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 4e5f7f21206953b8d99306a9b1da6935604c88b8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869068"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815466"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Configuration système requise pour l'Émulateur Visual Studio pour Android
 
@@ -26,7 +26,7 @@ Le programme d’installation tente de satisfaire à ces conditions préalables 
 > [!IMPORTANT]
 > Le programme d’installation de l’émulateur vérifie les conditions préalables pour l’exécution de l’émulateur Visual Studio pour Android. Il affiche des avertissements si les composants requis ne sont pas présents, mais il ne les exige pas.
 
-##  <a name="Checklist"></a> Liste de vérification rapide
+## <a name="Checklist"></a> Liste de vérification rapide
 
 Voici une liste de vérification rapide des composants requis pour l’exécution de l’émulateur Visual Studio pour Android. Pour obtenir des informations détaillées, consultez les sections suivantes de cette rubrique.
 
@@ -50,11 +50,11 @@ Configuration requise pour Hyper-V
 
 - Dans le BIOS, les fonctionnalités suivantes doivent être prises en charge :
 
-  -   Assistance matérielle à la virtualisation
+  - Assistance matérielle à la virtualisation
 
-  -   Traduction d’adresse de second niveau (SLAT)
+  - Traduction d’adresse de second niveau (SLAT)
 
-  -   Prévention de l’exécution des données (DEP) matérielle
+  - Prévention de l’exécution des données (DEP) matérielle
 
 - Dans Windows, Hyper-V doit être activé et en cours d’exécution.
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 330c8bb033a167b03f62cf4fda95a58ea08ccd92
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f9aa586f5036c4aa2c321f2dda8333ad4342e165
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922145"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62791667"
 ---
 # <a name="build-page-project-designer-c"></a>Générer, page du Concepteur de projets (C#)
 Utilisez la page **Générer** du **Concepteur de projet** pour spécifier les propriétés de configuration de build du projet. Cette page s’applique uniquement aux projets [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)].
@@ -56,12 +56,11 @@ Si vous exécutez une application comme une application 64 bits, la taille du p
 
 Cette case à cocher est disponible uniquement si toutes les conditions suivantes ont remplies :
 
--   Dans la **page Générer**, la liste **Plateforme cible** a la valeur **Any CPU**.
+- Dans la **page Générer**, la liste **Plateforme cible** a la valeur **Any CPU**.
 
--   Dans la **page Application**, la liste **Type de sortie** spécifie que le projet est une application.
+- Dans la **page Application**, la liste **Type de sortie** spécifie que le projet est une application.
 
--   Dans la **page Application**, la liste **Framework cible** spécifie .NET Framework 4.5.
-
+- Dans la **page Application**, la liste **Framework cible** spécifie .NET Framework 4.5.
 
 **Autoriser le code unsafe** Autorise la compilation du code utilisant le mot clé [unsafe](/dotnet/csharp/language-reference/keywords/unsafe). Pour plus d’informations, consultez [/unsafe (options du compilateur C#)](/dotnet/csharp/language-reference/compiler-options/unsafe-compiler-option).
 

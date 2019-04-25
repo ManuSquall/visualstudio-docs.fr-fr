@@ -11,12 +11,12 @@ ms.assetid: 47f981d9-3038-45cc-a486-82b9daf9a9a1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed7c90e292b2ed77eeae4096e967f10068664659
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4da3fc51593cc877e09ca6f46db70303186b293e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783833"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>Modifier la combinaison de tests pour spécifier les types de navigateurs web dans un scénario de test de charge
 
@@ -34,34 +34,34 @@ Il est possible d’ajouter et de supprimer des types de navigateurs web à une 
 
 ### <a name="to-add-new-browsers-to-a-scenario"></a>Pour ajouter de nouveaux navigateurs à un scénario
 
-1.  Durant le processus de spécification de la combinaison de navigateurs pour un scénario, choisissez **Ajouter**.
+1. Durant le processus de spécification de la combinaison de navigateurs pour un scénario, choisissez **Ajouter**.
 
      Une nouvelle entrée de navigateur est ajoutée à la grille.
 
     > [!NOTE]
     > Pour afficher la boîte de dialogue **Modifier la combinaison de navigateurs**, cliquez avec le bouton droit sur un scénario existant, puis choisissez **Modifier la combinaison de navigateurs**.
 
-2.  Dans la colonne **Type de navigateur**, cliquez sur la flèche correspondant à la nouvelle entrée et choisissez le type de navigateur désiré.
+2. Dans la colonne **Type de navigateur**, cliquez sur la flèche correspondant à la nouvelle entrée et choisissez le type de navigateur désiré.
 
-3.  (Facultatif) Ajustez le contrôle de combinaison pour spécifier la distribution de test.
+3. (Facultatif) Ajustez le contrôle de combinaison pour spécifier la distribution de test.
 
-4.  Quand vous avez terminé d’ajouter des navigateurs, choisissez **OK**.
+4. Quand vous avez terminé d’ajouter des navigateurs, choisissez **OK**.
 
-##  <a name="remove-browsers-from-a-scenario"></a>Supprimer des navigateurs d’un scénario
+## <a name="remove-browsers-from-a-scenario"></a>Supprimer des navigateurs d’un scénario
 
 ### <a name="to-remove-browsers-from-a-scenario"></a>Pour supprimer des navigateurs d'un scénario
 
-1.  Ouvrez un test de charge.
+1. Ouvrez un test de charge.
 
-2.  Cliquez avec le bouton droit sur le scénario à partir duquel vous souhaitez supprimer un navigateur, puis choisissez **Modifier la combinaison de navigateurs**.
+2. Cliquez avec le bouton droit sur le scénario à partir duquel vous souhaitez supprimer un navigateur, puis choisissez **Modifier la combinaison de navigateurs**.
 
      La boîte de dialogue **Modifier la combinaison de navigateurs** s’affiche.
 
-3.  Sélectionnez le navigateur dans la grille, puis choisissez **Supprimer**.
+3. Sélectionnez le navigateur dans la grille, puis choisissez **Supprimer**.
 
-4.  (Facultatif) Ajustez le contrôle de combinaison pour spécifier la distribution de test.
+4. (Facultatif) Ajustez le contrôle de combinaison pour spécifier la distribution de test.
 
-5.  Quand vous avez fini de supprimer des navigateurs, choisissez **OK**.
+5. Quand vous avez fini de supprimer des navigateurs, choisissez **OK**.
 
 ## <a name="about-the-mix-control"></a>À propos du contrôle de combinaison
 

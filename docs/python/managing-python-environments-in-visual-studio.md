@@ -10,11 +10,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 7cdce20fd1640d4bfa43b442b1ed5cad40dc452f
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62536638"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>Comment créer et gérer des environnements Python dans Visual Studio
 
@@ -32,7 +32,7 @@ Dans Visual Studio sur Windows, utilisez la fenêtre **Environnements Python** d
 
 Si vous découvrez Python dans Visual Studio, les articles suivants fournissent également des informations générales :
 
-- [Utiliser Python dans Visual Studio](overview-of-python-tools-for-visual-studio.md)
+- [Utilisation de Python dans Visual Studio](overview-of-python-tools-for-visual-studio.md)
 - [Installer la prise en charge de Python dans Visual Studio](installing-python-support-in-visual-studio.md)
 
 > [!Note]
@@ -270,4 +270,4 @@ Pour corriger un environnement qui n’a pas d’option de réparation, ou pour 
 - [Sélectionner un interpréteur pour un projet](selecting-a-python-environment-for-a-project.md)
 - [Utiliser requirements.txt pour les dépendances](managing-required-packages-with-requirements-txt.md)
 - [Chemins de recherche](search-paths.md)
-- [Informations de référence sur la fenêtre Environnements Python](python-environments-window-tab-reference.md)
+- [Référence sur la fenêtre Environnements Python](python-environments-window-tab-reference.md)

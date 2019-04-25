@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 476e72e50ac796412fbeef1c180a3340764fb121
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 14c31acc336818a8846d2ddf7981f64e045f68e8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907658"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824189"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Procédure : Créer et supprimer les dépendances d’un projet
 
@@ -47,18 +47,18 @@ Quand vous générez une solution qui contient plusieurs projets, vous pouvez ê
 
 ## <a name="to-remove-dependencies-from-projects"></a>Pour supprimer des dépendances de projets
 
-1.  Dans l’**Explorateur de solutions**, sélectionnez un projet.
+1. Dans l’**Explorateur de solutions**, sélectionnez un projet.
 
-2.  Dans le menu **Projet**, choisissez **Dépendances du projet**.
+2. Dans le menu **Projet**, choisissez **Dépendances du projet**.
 
      La boîte de dialogue **Dépendances du projet** s’ouvre.
 
     > [!NOTE]
     > L’option **Dépendances du projet** n’est disponible que dans une solution comportant plusieurs projets.
 
-3.  Sous l’onglet **Dépendances**, sélectionnez un projet à partir du menu déroulant **Projet**.
+3. Sous l’onglet **Dépendances**, sélectionnez un projet à partir du menu déroulant **Projet**.
 
-4.  Dans le champ **Dépend de**, décochez la case en regard de tout autre projet qui n’est plus une dépendance de ce projet.
+4. Dans le champ **Dépend de**, décochez la case en regard de tout autre projet qui n’est plus une dépendance de ce projet.
 
 ## <a name="see-also"></a>Voir aussi
 

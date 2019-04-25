@@ -9,46 +9,46 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e0185e8879718e068cd624559087db9369d7e190
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: e40f414b3b3ea6bc151ef036deb0b5d80464ba46
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58789924"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429143"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Procédure : Afficher, enregistrer et configurer des fichiers journaux de génération
 
 Après avoir généré un projet dans l’IDE de Visual Studio, vous pouvez consulter les informations sur cette génération dans la fenêtre **Sortie**. Grâce à ces informations, vous pouvez déboguer un échec de génération, par exemple. 
 
-  - Pour les projets C++, vous pouvez également afficher les mêmes informations dans un fichier *.txt* créé et enregistré automatiquement. 
+- Pour les projets C++, vous pouvez également afficher les mêmes informations dans un fichier *.txt* créé et enregistré automatiquement. 
 
-  - Pour les projets de code managé, vous pouvez cliquer dans la fenêtre de sortie de build et appuyer sur **Ctrl**+**S**. Visual Studio vous invite à entrer un emplacement pour enregistrer les informations de la fenêtre **Sortie** dans un fichier *.txt*. 
-  
+- Pour les projets de code managé, vous pouvez cliquer dans la fenêtre de sortie de build et appuyer sur **Ctrl**+**S**. Visual Studio vous invite à entrer un emplacement pour enregistrer les informations de la fenêtre **Sortie** dans un fichier *.txt*. 
+
 Vous pouvez également utiliser l’IDE pour spécifier les types d’informations à afficher pour chaque génération.
 
 Si vous générez un projet à l’aide de MSBuild, vous pouvez créer un fichier *.txt* pour y enregistrer les informations de build. Pour plus d’informations, consultez [Obtenir des journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md).
 
 ## <a name="to-view-the-build-log-file-for-a-c-project"></a>Pour afficher le fichier journal de génération d’un projet C++
 
-1.  Dans l’**Explorateur Windows** ou l’**Explorateur de fichiers**, ouvrez le fichier suivant : *\\...\Visual Studio \<Version\>\Projects\\<nom_projet\>\\<nom_projet\>\Debug\\<nom_projet\>.txt*
+1. Dans l’**Explorateur Windows** ou l’**Explorateur de fichiers**, ouvrez le fichier suivant : *\\...\Visual Studio \<Version\>\Projects\\<nom_projet\>\\<nom_projet\>\Debug\\<nom_projet\>.txt*
 
 ## <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>Pour créer un fichier journal de génération d’un projet de code managé
 
-1.  Dans la barre de menus, choisissez **Générer**  >  **Générer la solution**.
+1. Dans la barre de menus, choisissez **Générer**  >  **Générer la solution**.
 
-2.  Dans la fenêtre **Sortie**, cliquez quelque part dans le texte.
+2. Dans la fenêtre **Sortie**, cliquez quelque part dans le texte.
 
-3.  Appuyez sur **Ctrl**+**Tab**.
+3. Appuyez sur **Ctrl**+**Tab**.
 
    Visual Studio vous invite à entrer un emplacement pour enregistrer la sortie de génération.
 
 ## <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>Pour modifier la quantité d’informations contenues dans le journal de génération
 
-1.  Dans la barre de menus, choisissez **Outils** > **Options**.
+1. Dans la barre de menus, choisissez **Outils** > **Options**.
 
-2.  Dans la page **Projets et solutions**, choisissez la page **Générer et exécuter**.
+2. Dans la page **Projets et solutions**, choisissez la page **Générer et exécuter**.
 
-3.  Dans la liste **Commentaires relatifs à la sortie de génération du projet MSBuild**, choisissez l’une des valeurs suivantes, puis choisissez le bouton **OK**.
+3. Dans la liste **Commentaires relatifs à la sortie de génération du projet MSBuild**, choisissez l’une des valeurs suivantes, puis choisissez le bouton **OK**.
 
     |Niveau de détail|Description|
     | - |-----------------|

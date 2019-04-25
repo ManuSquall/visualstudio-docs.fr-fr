@@ -9,12 +9,12 @@ ms.assetid: e3b7d952-9012-400a-8131-3444390a6066
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 411e0a83b180014ffb3a896887c3798d57ffc635
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 51bfc7a9061cbc17d766f1174593907bfbf762ec
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938005"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785839"
 ---
 # <a name="edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test"></a>Modifier les modèles de combinaison de tests pour spécifier la probabilité d’exécution d’un test par un utilisateur virtuel
 
@@ -26,13 +26,13 @@ Le *modèle de combinaison de tests* spécifie la probabilité selon laquelle un
 
 Vous pouvez spécifier l'une des options de modèle de combinaison de tests suivantes pour votre scénario de test de charge :
 
--   **Sur la base du nombre total de tests :** détermine les tests de performances web ou tests unitaires qui sont exécutés quand un utilisateur virtuel démarre une itération de test. À la fin du test de charge, le nombre de fois où un test particulier exécuté correspond à la distribution de test assignée. Utilisez ce modèle de combinaison de tests lorsque vous basez la combinaison de tests sur les pourcentages de transaction dans un journal IIS ou dans les données de production.
+- **Sur la base du nombre total de tests :** détermine les tests de performances web ou tests unitaires qui sont exécutés quand un utilisateur virtuel démarre une itération de test. À la fin du test de charge, le nombre de fois où un test particulier exécuté correspond à la distribution de test assignée. Utilisez ce modèle de combinaison de tests lorsque vous basez la combinaison de tests sur les pourcentages de transaction dans un journal IIS ou dans les données de production.
 
--   **Sur la base du nombre d’utilisateurs virtuels :** détermine le pourcentage des utilisateurs virtuels qui vont exécuter un test de performances web ou un test unitaire particulier. À tout point pendant le test de charge, le nombre d'utilisateurs qui exécutent un test particulier correspond d'aussi près que possible à la distribution assignée de la manière la plus fidèle possible. Utilisez ce modèle de combinaison de tests lorsque vous basez la combinaison de tests sur le pourcentage d'utilisateurs qui exécutent un test particulier.
+- **Sur la base du nombre d’utilisateurs virtuels :** détermine le pourcentage des utilisateurs virtuels qui vont exécuter un test de performances web ou un test unitaire particulier. À tout point pendant le test de charge, le nombre d'utilisateurs qui exécutent un test particulier correspond d'aussi près que possible à la distribution assignée de la manière la plus fidèle possible. Utilisez ce modèle de combinaison de tests lorsque vous basez la combinaison de tests sur le pourcentage d'utilisateurs qui exécutent un test particulier.
 
--   **Sur la base du rythme de l’utilisateur :** au cours du test de charge, chaque test de performances web ou test unitaire est exécuté un nombre spécifique de fois, par utilisateur et par heure. Utilisez ce modèle de combinaison de tests lorsque vous souhaitez que les utilisateurs virtuels exécutent des tests à un certain rythme dans le test de charge.
+- **Sur la base du rythme de l’utilisateur :** au cours du test de charge, chaque test de performances web ou test unitaire est exécuté un nombre spécifique de fois, par utilisateur et par heure. Utilisez ce modèle de combinaison de tests lorsque vous souhaitez que les utilisateurs virtuels exécutent des tests à un certain rythme dans le test de charge.
 
--   **Sur la base de l’ordre de tests séquentiel :** chaque utilisateur virtuel exécute les tests de performances web ou les tests unitaires dans l’ordre dans lequel les tests sont définis dans le scénario. L'utilisateur virtuel continue à parcourir les tests dans cet ordre jusqu'à ce que le test de charge soit terminé.
+- **Sur la base de l’ordre de tests séquentiel :** chaque utilisateur virtuel exécute les tests de performances web ou les tests unitaires dans l’ordre dans lequel les tests sont définis dans le scénario. L'utilisateur virtuel continue à parcourir les tests dans cet ordre jusqu'à ce que le test de charge soit terminé.
 
 ## <a name="tasks"></a>Tâches
 
@@ -53,27 +53,27 @@ Après avoir créé votre test de charge à l’aide de l’**Assistant Nouveau 
 
 ### <a name="to-change-the-test-mix-model"></a>Pour modifier le modèle de combinaison de tests
 
-1.  Ouvrez un test de charge.
+1. Ouvrez un test de charge.
 
-     L’**éditeur de test de charge** s’affiche. L’arborescence du test de charge s’affiche.
+     L’**éditeur de test de charge** s’affiche. L'arborescence du test de charge s'affiche.
 
-2.  Dans le dossier *Scénarios* de l’arborescence du test de charge, choisissez le nœud de scénario pour lequel vous souhaitez spécifier le nombre maximal d’itérations de tests.
+2. Dans le dossier *Scénarios* de l’arborescence du test de charge, choisissez le nœud de scénario pour lequel vous souhaitez spécifier le nombre maximal d’itérations de tests.
 
-3.  Dans le menu **Affichage**, sélectionnez **Fenêtre Propriétés**.
+3. Dans le menu **Affichage**, sélectionnez **Fenêtre Propriétés**.
 
      Les catégories et les propriétés du scénario s'affichent.
 
-4.  Dans la propriété **Type de combinaison de tests**, choisissez le bouton de sélection (**...**).
+4. Dans la propriété **Type de combinaison de tests**, choisissez le bouton de sélection (**...**).
 
      La boîte de dialogue **Modifier la combinaison de tests** s’affiche.
 
-5.  Choisissez la liste déroulante sous **Modèle de combinaison de tests**, puis sélectionnez le modèle de combinaison de tests à utiliser pour le scénario.
+5. Choisissez la liste déroulante sous **Modèle de combinaison de tests**, puis sélectionnez le modèle de combinaison de tests à utiliser pour le scénario.
 
-6.  (Facultatif) Modifiez la combinaison de tests à l’aide des boutons et des curseurs de distribution **Ajouter**, **Supprimer** et **Distribuer**. Pour plus d’informations, consultez [Modifier la combinaison de tests pour spécifier les tests à inclure dans un scénario de test de charge](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
+6. (Facultatif) Modifiez la combinaison de tests à l’aide des boutons et des curseurs de distribution **Ajouter**, **Supprimer** et **Distribuer**. Pour plus d’informations, consultez [Modifier la combinaison de tests pour spécifier les tests à inclure dans un scénario de test de charge](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
-7.  Spécifiez un test de performances web et un test unitaire pour démarrer ou terminer en utilisant les cases à cocher et en sélectionnant les tests souhaités (facultatif). Pour plus d’informations, consultez [Émuler l’utilisation réelle attendue d’une application ou d’un site web](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md).
+7. Spécifiez un test de performances web et un test unitaire pour démarrer ou terminer en utilisant les cases à cocher et en sélectionnant les tests souhaités (facultatif). Pour plus d’informations, consultez [Émuler l’utilisation réelle attendue d’une application ou d’un site web](../test/emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md).
 
-8.  Cliquez sur **OK**.
+8. Cliquez sur **OK**.
 
      La fenêtre **Propriétés** affiche le nouveau modèle de combinaison de tests pour la propriété **Type de combinaison de tests**.
 

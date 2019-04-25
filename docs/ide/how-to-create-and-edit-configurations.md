@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8dffcc3bd007f27ba9912f909990a206ec6458a
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.openlocfilehash: f474adad6d1aaef728c59942fcae17595cd75032
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268644"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824241"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Procédure : Créer et modifier des configurations
 
@@ -54,69 +54,69 @@ Pour plus d’informations sur les paramètres des pages de propriétés, consul
 
 ## <a name="create-a-project-configuration"></a>Créer une configuration de projet
 
-1.  Ouvrez la boîte de dialogue **Gestionnaire de configurations**.
+1. Ouvrez la boîte de dialogue **Gestionnaire de configurations**.
 
-2.  Sélectionnez un projet dans la colonne **Projet**.
+2. Sélectionnez un projet dans la colonne **Projet**.
 
-3.  Dans la liste déroulante **Configuration** de ce projet, choisissez **Nouveau**.
+3. Dans la liste déroulante **Configuration** de ce projet, choisissez **Nouveau**.
 
      La boîte de dialogue **Nouvelle configuration de projet** apparaît.
 
-4.  Dans la zone **Nom**, entrez un nom pour la nouvelle configuration.
+4. Dans la zone **Nom**, entrez un nom pour la nouvelle configuration.
 
-5.  Pour utiliser les paramètres de propriété d’une configuration de projet existante, dans la liste déroulante **Copier les paramètres à partir de**, choisissez une configuration.
+5. Pour utiliser les paramètres de propriété d’une configuration de projet existante, dans la liste déroulante **Copier les paramètres à partir de**, choisissez une configuration.
 
-6.  Pour créer une configuration à l’échelle de la solution au même moment, cochez la case **Créer une nouvelle configuration de solution**.
+6. Pour créer une configuration à l’échelle de la solution au même moment, cochez la case **Créer une nouvelle configuration de solution**.
 
 ## <a name="rename-a-project-configuration"></a>Renommer une configuration de projet
 
-1.  Ouvrez la boîte de dialogue **Gestionnaire de configurations**.
+1. Ouvrez la boîte de dialogue **Gestionnaire de configurations**.
 
-2.  Dans la colonne **Projet**, sélectionnez le projet dont vous souhaitez renommer la configuration de projet.
+2. Dans la colonne **Projet**, sélectionnez le projet dont vous souhaitez renommer la configuration de projet.
 
-3.  Dans la liste déroulante **Configuration** de ce projet, choisissez **Modifier**.
+3. Dans la liste déroulante **Configuration** de ce projet, choisissez **Modifier**.
 
      La boîte de dialogue **Modifier les configurations de projet** apparaît.
 
-4.  Sélectionnez le nom de la configuration de projet à modifier.
+4. Sélectionnez le nom de la configuration de projet à modifier.
 
-5.  Sélectionnez **Renommer**, puis entrez un nouveau nom.
+5. Sélectionnez **Renommer**, puis entrez un nouveau nom.
 
 ## <a name="create-and-modify-solution-wide-build-configurations"></a>Créer et modifier des configurations de build à l’échelle de la solution
 
 ### <a name="to-create-a-solution-wide-build-configuration"></a>Pour créer une configuration de build à l’échelle de la solution
 
-1.  Ouvrez la boîte de dialogue **Gestionnaire de configurations**.
+1. Ouvrez la boîte de dialogue **Gestionnaire de configurations**.
 
-2.  Dans la liste déroulante **Configuration de la solution active**, choisissez **Nouveau**.
+2. Dans la liste déroulante **Configuration de la solution active**, choisissez **Nouveau**.
 
      La boîte de dialogue **Nouvelle configuration de solution** apparaît.
 
-3.  Dans la zone de texte **Nom**, entrez un nom pour la nouvelle configuration.
+3. Dans la zone de texte **Nom**, entrez un nom pour la nouvelle configuration.
 
-4.  Pour utiliser les paramètres d’une configuration de solution existante, dans la liste déroulante **Copier les paramètres à partir de**, choisissez une configuration.
+4. Pour utiliser les paramètres d’une configuration de solution existante, dans la liste déroulante **Copier les paramètres à partir de**, choisissez une configuration.
 
-5.  Si vous souhaitez créer des configurations de projet au même moment, cochez la case **Créer des configurations de projet**.
+5. Si vous souhaitez créer des configurations de projet au même moment, cochez la case **Créer des configurations de projet**.
 
 ### <a name="to-rename-a-solution-wide-build-configuration"></a>Pour renommer une configuration de build à l’échelle de la solution
 
-1.  Ouvrez la boîte de dialogue **Gestionnaire de configurations**.
+1. Ouvrez la boîte de dialogue **Gestionnaire de configurations**.
 
-2.  Dans la liste déroulante **Configuration de la solution active**, choisissez **Modifier**.
+2. Dans la liste déroulante **Configuration de la solution active**, choisissez **Modifier**.
 
      La boîte de dialogue **Modifier les configurations de solutions** apparaît.
 
-3.  Sélectionnez le nom de la configuration de solution à modifier.
+3. Sélectionnez le nom de la configuration de solution à modifier.
 
-4.  Sélectionnez **Renommer**, puis entrez un nouveau nom.
+4. Sélectionnez **Renommer**, puis entrez un nouveau nom.
 
 ### <a name="to-modify-a-solution-wide-build-configuration"></a>Pour modifier une configuration de build à l’échelle de la solution
 
-1.  Ouvrez la boîte de dialogue **Gestionnaire de configurations**.
+1. Ouvrez la boîte de dialogue **Gestionnaire de configurations**.
 
-2.  Dans la liste déroulante **Configuration de la solution active**, sélectionnez la configuration de votre choix.
+2. Dans la liste déroulante **Configuration de la solution active**, sélectionnez la configuration de votre choix.
 
-3.  Dans le volet **Contextes des projets**, pour chaque projet, sélectionnez la **Configuration** et la **Plateforme** de votre choix, puis choisissez entre **Générer** ou **Déployer**.
+3. Dans le volet **Contextes des projets**, pour chaque projet, sélectionnez la **Configuration** et la **Plateforme** de votre choix, puis choisissez entre **Générer** ou **Déployer**.
 
 ## <a name="see-also"></a>Voir aussi
 

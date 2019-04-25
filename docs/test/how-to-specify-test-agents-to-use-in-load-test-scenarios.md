@@ -12,12 +12,12 @@ ms.assetid: e86806dd-5897-4e4c-bfd4-8d687fb72a6e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 03e2e5ce9ee1883f51bea68d5c1ccc2af0c944a7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6045466d93a0017b648ca4327e80c801517c1359
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955542"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786430"
 ---
 # <a name="how-to-specify-test-agents-to-use-in-load-test-scenarios"></a>Procédure : spécifier les agents de test à utiliser dans les scénarios de test de charge
 
@@ -41,28 +41,28 @@ Il existe une autre raison selon laquelle une partie des agents peuvent comporte
 
 Vous pouvez contrôler la sélection des agents pour une série de tests donnée à l'aide de rôles dans les paramètres de test. Pour plus d’informations, consultez [Collecter des informations de diagnostic à l’aide des paramètres de test](../test/collect-diagnostic-information-using-test-settings.md).
 
-Si l’utilisation de l’UC d’un ordinateur agent de test est supérieure à 75 % ou si la mémoire physique disponible de cet ordinateur est inférieure à 10 %, ajoutez des agents à votre test de charge afin de garantir que l’ordinateur agent ne se transforme pas en goulot d’étranglement dans votre test de charge.
+Si l'utilisation de l'UC d'un ordinateur agent de test est supérieure à 75 % ou si la mémoire physique disponible de cet ordinateur est inférieure à 10 %, ajoutez des agents à votre test de charge afin de garantir que l'ordinateur agent ne se transforme pas en goulot d'étranglement dans votre test de charge.
 
 ## <a name="to-specify-the-agents-to-use-for-a-scenario"></a>Pour spécifier les agents à utiliser pour un scénario
 
-1.  Ouvrez un test de charge.
+1. Ouvrez un test de charge.
 
-     L’**éditeur de test de charge** s’affiche. L’arborescence du test de charge s’affiche.
+     L’**éditeur de test de charge** s’affiche. L'arborescence du test de charge s'affiche.
 
-2.  Dans le dossier **Scénarios** des arborescences du test de charge, choisissez le nœud de scénario pour lequel vous souhaitez spécifier les agents à utiliser.
+2. Dans le dossier **Scénarios** des arborescences du test de charge, choisissez le nœud de scénario pour lequel vous souhaitez spécifier les agents à utiliser.
 
-3.  Dans le menu **Affichage**, sélectionnez **Fenêtre Propriétés**.
+3. Dans le menu **Affichage**, sélectionnez **Fenêtre Propriétés**.
 
      Les catégories et les propriétés du scénario s’affichent dans la fenêtre **Propriétés**.
 
-4.  Dans la zone de texte de la propriété **Agents à utiliser**, tapez la liste des agents sur lesquels le scénario peut s’exécuter.
+4. Dans la zone de texte de la propriété **Agents à utiliser**, tapez la liste des agents sur lesquels le scénario peut s’exécuter.
 
      Les agents doivent être séparés par des virgules, par exemple « **Agent1, Agent2, Agent3** ». Si vous laissez la propriété vide, le scénario doit utiliser tous les agents disponibles.
 
     > [!NOTE]
     > La propriété **Agents à utiliser** est ignorée pour les exécutions locales. Pour les exécutions distantes, s’il n’existe aucun agent spécifié dans **Agents à utiliser**, les tests du scénario ne s’exécutent pas.
 
-5.  Après avoir changé la propriété, choisissez **Enregistrer** dans le menu **Fichier**. Vous pouvez exécuter ensuite votre test de charge à l’aide de la nouvelle valeur associée à **Agents à utiliser**.
+5. Après avoir changé la propriété, choisissez **Enregistrer** dans le menu **Fichier**. Vous pouvez exécuter ensuite votre test de charge à l’aide de la nouvelle valeur associée à **Agents à utiliser**.
 
 ## <a name="see-also"></a>Voir aussi
 

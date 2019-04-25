@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fe9127d4a7c691c34f15d399bd32f5e48cc6f0ed
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892818"
 ---
 # <a name="value-xattribute-dynamic-property"></a>Value (propriété dynamique XAttribute)
 
@@ -38,7 +38,7 @@ attrib.Value
 | - |---------------|
 |<xref:System.ArgumentNullException>|Lors de la définition, `value` a la valeur `null`.|
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 Cette propriété est équivalente à la propriété <xref:System.Xml.Linq.XAttribute.Value%2A> de la classe <xref:System.Xml.Linq.XAttribute?displayProperty=fullName>, mais cette propriété dynamique prend également en charge les notifications de changement.
 

@@ -14,12 +14,12 @@ ms.assetid: 326b6c3c-5378-452b-8ca3-ba5a06ab3d41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7cc4cc2af5fb78c181be94863176914c17481e95
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 66789cdf50c06648b2d973d9c62a14c113aeaa0e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928723"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785923"
 ---
 # <a name="load-test-results-summary-overview"></a>Présentation du récapitulatif des résultats des tests de charge
 
@@ -33,7 +33,7 @@ Après avoir exécuté un test de charge, vous pouvez consulter le résumé du t
 
 Le résumé du test de charge est divisé en sections. Les sections initiales apparaissent en haut du résumé et sont toujours visibles. Lorsque vous consultez le résumé du test de charge, les éléments suivants figurent en premier :
 
-- Informations sur les séries de tests
+- Informations relatives à la série de tests
 
 - Résultats globaux
 
@@ -46,7 +46,7 @@ Le résumé du test de charge est divisé en sections. Les sections initiales ap
     > [!NOTE]
     > La section relative aux opérations SQL s'affiche uniquement si le traçage SQL est activé dans le test de charge.
 
-Les sections de fermeture apparaissent à la fin du résumé et peuvent être réduites pour économiser de l‘espace. Les éléments suivants apparaissent à la fin du résumé du test de charge :
+Les sections de fermeture apparaissent à la fin du résumé et peuvent être réduites pour économiser de l'espace. Les éléments suivants apparaissent à la fin du résumé du test de charge :
 
 - Résultats des tests
 
@@ -54,7 +54,7 @@ Les sections de fermeture apparaissent à la fin du résumé et peuvent être r�
 
 - Résultats de la transaction
 
-- Systèmes sous ressources de test
+- Ressources du système sous test
 
 - Ressources du contrôleur et de l'agent
 
@@ -100,16 +100,16 @@ La section relative aux résultats de la page contient la liste de toutes les pa
 
 ## <a name="transaction-results"></a>Résultats de la transaction
 
-La section relative aux résultats de la transaction contient une liste de toutes les transactions du test de charge. Le nom de la transaction, le scénario, le test, le temps de réponse, la durée calendaire et le compte sont affichés. Vous pouvez choisir le nom d’une transaction pour ouvrir la table **Transactions** et obtenir plus de détails sur cette transaction. Pour plus d’informations, consultez [Analyser les résultats et les erreurs des tests de charge dans la vue Tables](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
+La section relative aux résultats de la transaction contient une liste de toutes les transactions du test de charge. Le nom de la transaction, le scénario, le test, le temps de réponse, le temps écoulé et le compte sont affichés. Vous pouvez choisir le nom d’une transaction pour ouvrir la table **Transactions** et obtenir plus de détails sur cette transaction. Pour plus d’informations, consultez [Analyser les résultats et les erreurs des tests de charge dans la vue Tables](../test/analyze-load-test-results-and-errors-in-the-tables-view.md).
 
 > [!NOTE]
 > Vous pouvez réduire et développer cette section en cliquant sur la flèche située à gauche du titre de la section.
 
 Les valeurs de centile signalent les informations de transaction suivantes :
 
--   90 % du total des transactions ont été effectuées dans un délai inférieur à \<durée> secondes.
+- 90 % du total des transactions ont été effectuées dans un délai inférieur à \<durée> secondes.
 
--   95 % du total des transactions ont été effectuées dans un délai inférieur à \<durée> secondes.
+- 95 % du total des transactions ont été effectuées dans un délai inférieur à \<durée> secondes.
 
 ## <a name="system-under-test-resources"></a>Ressources du système sous test
 

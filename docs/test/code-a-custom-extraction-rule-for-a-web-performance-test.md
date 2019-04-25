@@ -13,12 +13,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 14dce2ee3ea073e8ef3db6956af0eb56daa94fe0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1111b659e1c88f219258b73045d0ce0d0f420ae7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923445"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822935"
 ---
 # <a name="code-a-custom-extraction-rule-for-a-web-performance-test"></a>Coder une règle d’extraction personnalisée pour un test de performances web
 
@@ -31,24 +31,24 @@ Vous pouvez créer vos propres règles d'extraction. Pour cela, vous dérivez vo
 
 ## <a name="to-create-a-custom-extraction-rule"></a>Pour créer une règle d'extraction personnalisée
 
-1.  Ouvrez un projet de test qui contient un test de performances web.
+1. Ouvrez un projet de test qui contient un test de performances web.
 
-2.  (Facultatif) Créez un projet Bibliothèque de classes distinct dans lequel stocker votre règle d'extraction.
+2. (Facultatif) Créez un projet Bibliothèque de classes distinct dans lequel stocker votre règle d'extraction.
 
     > [!IMPORTANT]
     > Vous pouvez créer la classe dans le projet qui contient vos tests. Toutefois, si vous souhaitez réutiliser la règle, il est préférable de créer un projet de bibliothèque de classes distinct pour la stocker. Si vous créez un projet séparé, vous devez compléter les étapes facultatives dans cette procédure.
 
-3.  (Facultatif) Dans le projet Bibliothèque de classes, ajoutez une référence à Microsoft.VisualStudio.QualityTools.WebTestFramework dll.
+3. (Facultatif) Dans le projet Bibliothèque de classes, ajoutez une référence à Microsoft.VisualStudio.QualityTools.WebTestFramework dll.
 
-4.  Créez une classe qui dérive de la classe <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule>. Implémentez les membres <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> et <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.RuleName*>.
+4. Créez une classe qui dérive de la classe <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule>. Implémentez les membres <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> et <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.RuleName*>.
 
-5.  (Facultatif) Générez le nouveau projet de bibliothèque de classes.
+5. (Facultatif) Générez le nouveau projet de bibliothèque de classes.
 
-6.  (Facultatif) Dans le projet de test, ajoutez une référence au projet de bibliothèque de classes qui contient la règle d’extraction personnalisée.
+6. (Facultatif) Dans le projet de test, ajoutez une référence au projet de bibliothèque de classes qui contient la règle d’extraction personnalisée.
 
-7.  Dans le projet de test, ouvrez un test de performances web dans **l’éditeur de test de performances web**.
+7. Dans le projet de test, ouvrez un test de performances web dans **l’éditeur de test de performances web**.
 
-8.  Pour ajouter la règle d’extraction personnalisée, cliquez avec le bouton droit sur une requête de test de performances web, puis sélectionnez **Ajouter une règle d’extraction**.
+8. Pour ajouter la règle d’extraction personnalisée, cliquez avec le bouton droit sur une requête de test de performances web, puis sélectionnez **Ajouter une règle d’extraction**.
 
      La boîte de dialogue **Ajouter une règle d’extraction** s’affiche. Votre règle de validation personnalisée apparaît dans la liste **Sélectionner une règle** avec les règles de validation prédéfinies. Sélectionnez votre règle d’extraction personnalisée, puis choisissez **OK**.
 
@@ -204,7 +204,7 @@ Namespace ClassLibrary2
 End Namespace
 ```
 
-La méthode <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> contient la fonctionnalité principale d'une règle d'extraction. La méthode <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> de l'exemple précédent prend un <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionEventArgs> qui fournit la réponse générée par la demande couverte par cette règle d'extraction. La réponse contient un <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument> qui contient toutes les balises dans la réponse. Les étiquettes d’entrées sont éliminées du <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument> par filtrage. Chaque étiquette d’entrée est examinée pour y détecter la présence d’un attribut appelé `name` dont la valeur est égale à la valeur utilisateur de la propriété `Name`. Si une étiquette avec l’attribut correspondant est trouvée, une tentative d’extraction de la valeur contenue dans l’attribut `value` est effectuée (si une valeur d’attribut existe). Si une valeur d’attribut existe, le nom et la valeur de l’étiquette sont extraits et ajoutés au contexte de test de performances de site Web. La règle d'extraction est passée.
+La méthode <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> contient la fonctionnalité principale d'une règle d'extraction. La méthode <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionRule.Extract*> de l'exemple précédent prend un <xref:Microsoft.VisualStudio.TestTools.WebTesting.ExtractionEventArgs> qui fournit la réponse générée par la demande couverte par cette règle d'extraction. La réponse contient un <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument> qui contient toutes les étiquettes dans la réponse. Les balises d'entrées sont éliminées du <xref:Microsoft.VisualStudio.TestTools.WebTesting.HtmlDocument> par filtrage. Chaque étiquette d’entrée est examinée pour y détecter la présence d’un attribut appelé `name` dont la valeur est égale à la valeur utilisateur de la propriété `Name`. Si une étiquette avec l’attribut correspondant est trouvée, une tentative d’extraction de la valeur contenue dans l’attribut `value` est effectuée (si une valeur d’attribut existe). Si une valeur d'attribut existe, le nom et la valeur de la balise sont extraits et ajoutés au contexte de test de performances de site Web. La règle d'extraction est passée.
 
 ## <a name="see-also"></a>Voir aussi
 

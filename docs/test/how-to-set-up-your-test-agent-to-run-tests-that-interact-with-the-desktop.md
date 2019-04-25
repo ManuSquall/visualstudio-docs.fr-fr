@@ -9,15 +9,15 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 04b1a894fbeb20059b79e65327ed8a7d18730e01
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947766"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62785992"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>Procédure : Configurer votre agent de test pour exécuter des tests qui interagissent avec le Bureau
 
-Si vous souhaitez exécuter des tests automatisés qui interagissent avec le bureau, vous devez configurer votre agent pour qu'il s'exécute en tant que processus au lieu de service. Par exemple, si vous voulez exécuter à distance un test codé de l’interface utilisateur à l’aide d’un contrôleur de test et d’un agent de test, ou si vous voulez exécuter un test et capturer un enregistrement vidéo lorsque vous l’exécutez, vous devez configurer votre agent pour qu’il s’exécute en tant que processus. Quand vous attribuez un rôle à des agents dans vos paramètres de test avec Visual Studio ou dans votre environnement avec Microsoft Test Manager, vous devez modifier la configuration de tous les agents affectés à des rôles qui sont amenés à interagir avec le poste de travail.
+Si vous souhaitez exécuter des tests automatisés qui interagissent avec le bureau, vous devez configurer votre agent pour qu'il s'exécute en tant que processus au lieu de service. Par exemple, si vous voulez exécuter à distance un test codé de l'interface utilisateur à l'aide d'un contrôleur de test et d'un agent de test, ou si vous voulez exécuter un test et capturer un enregistrement vidéo lorsque vous l'exécutez, vous devez configurer votre agent pour qu'il s'exécute en tant que processus. Quand vous attribuez un rôle à des agents dans vos paramètres de test avec Visual Studio ou dans votre environnement avec Microsoft Test Manager, vous devez modifier la configuration de tous les agents affectés à des rôles qui sont amenés à interagir avec le poste de travail.
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
@@ -27,7 +27,7 @@ Si vous souhaitez exécuter des tests automatisés qui interagissent avec le bur
 > [!IMPORTANT]
 > L'ordinateur qui exécute un agent sur lequel vous voulez exécuter des tests codés de l'interface utilisateur ne peut pas être verrouillé ou avoir un écran de veille actif.
 
-Si vous exécutez un test codé de l'interface utilisateur qui lance un navigateur, le compte de service de l'agent de test est utilisé pour lancer ce navigateur. Ce compte de service doit être identique au compte d'utilisateur qui est l'utilisateur actif sur cet ordinateur. S'il ne s'agit pas du même compte d'utilisateur, le navigateur ne démarrera pas.
+Si vous exécutez un test codé de l’interface utilisateur qui lance un navigateur, le compte de service de l’agent de test est utilisé pour lancer ce navigateur. Ce compte de service doit être identique au compte d'utilisateur qui est l'utilisateur actif sur cet ordinateur. S'il ne s'agit pas du même compte d'utilisateur, le navigateur ne démarrera pas.
 
 > [!IMPORTANT]
 > Si vous exécutez un test codé de l'interface utilisateur qui lance un navigateur dans le cadre d'une définition de build, le compte de service du service de build est utilisé pour lancer ce navigateur. Ce compte de service doit être identique au compte d'utilisateur qui est l'utilisateur actif sur cet ordinateur. S'il ne s'agit pas du même compte d'utilisateur, le navigateur ne démarrera pas.
@@ -42,12 +42,12 @@ Utilisez la procédure suivante pour configurer les agents assignés à un rôle
 
    ![Configurer Visual Studio Test Agent](media/configure-test-agent.png)
 
-2. Sélectionnez **Processus interactif**. L’agent de test sera lancé en tant que processus et non en tant que service. Sélectionnez **Suivant**.
+2. Sélectionnez **Processus interactif**. L'agent de test sera lancé en tant que processus et non en tant que service. Sélectionnez **Suivant**.
 
 3. Entrez le nom d’utilisateur et le mot de passe de l’utilisateur qui exécutera le processus de l’agent de test.
 
    > [!NOTE]
-   > - L’utilisateur que vous ajoutez pour démarrer le processus doit également être ajouté en tant que membre du groupe TeamTestAgentService sur l’ordinateur du contrôleur de test pour cet agent. Si cet utilisateur est l'utilisateur actuel, vous devez fermer votre session ou redémarrer l'ordinateur lorsque vous l’ajoutez à l'ordinateur de contrôleur de test.
+   > - L'utilisateur que vous ajoutez pour démarrer le processus doit également être ajouté en tant que membre du groupe TeamTestAgentService sur l'ordinateur du contrôleur de test pour cet agent. Si cet utilisateur est l'utilisateur actuel, vous devez fermer votre session ou redémarrer l'ordinateur lorsque vous l’ajoutez à l'ordinateur de contrôleur de test.
    > - Les mots de passe null ne sont pas pris en charge pour les comptes d'utilisateurs.
    > - Si vous souhaitez utiliser IntelliTrace ou les données d'émulation de réseau et l'adaptateur de diagnostic, le compte d'utilisateur doit être membre du groupe Administrateurs. Si l’ordinateur qui exécute l’agent de test utilise un système d’exploitation avec un compte d’utilisateur de moindre privilège, vous devez également l’exécuter en tant qu’administrateur (avec privilège élevé). Si le nom d'utilisateur de l'agent n'est pas dans le service d'agent, celui-ci essaiera de l'ajouter, ce qui nécessite des autorisations sur le contrôleur de test.
    > - L'utilisateur qui tente d'utiliser le contrôleur de test doit figurer dans le compte Utilisateurs du contrôleur de test. Si ce n'est pas le cas, il ne pourra pas exécuter les tests sur le contrôleur.
@@ -60,7 +60,7 @@ Utilisez la procédure suivante pour configurer les agents assignés à un rôle
 5. Pour vérifier que l’écran de veille est désactivé étant donné que cela peut interférer avec tout test automatisé qui doit interagir avec le poste de travail, sélectionnez **S’assurer que l’écran de veille est désactivé**.
 
    > [!WARNING]
-   > Se connecter automatiquement ou désactiver l'écran de veille présente des risques. En activant la connexion automatique, vous permettez à d'autres utilisateurs de démarrer cet ordinateur et d'utiliser le compte sur lequel il se connecte automatiquement. Si vous désactivez l'écran de veille, l'ordinateur peut ne pas inviter l'utilisateur à ouvrir une session pour déverrouiller l'ordinateur. Cela permet à n'importe quelle personne d'accéder à l'ordinateur dès lors qu'elle peut y accéder physiquement. Si vous activez ces fonctionnalités sur un ordinateur, vous devez vous assurer que ces ordinateurs sont physiquement sécurisés. S'ils se trouvent, par exemple, dans un lab physiquement sécurisé. Si vous désactivez **S’assurer que l’écran de veille est désactivé**, ceci n’active pas votre écran de veille.
+   > Se connecter automatiquement ou désactiver l'écran de veille présente des risques. En activant la connexion automatique, vous permettez à d'autres utilisateurs de démarrer cet ordinateur et d'utiliser le compte sur lequel il se connecte automatiquement. Si vous désactivez l'écran de veille, l'ordinateur peut ne pas inviter l'utilisateur à ouvrir une session pour déverrouiller l'ordinateur. Cela permet à n'importe quelle personne d'accéder à l'ordinateur dès lors qu'elle peut y accéder physiquement. Si vous activez ces fonctions sur un ordinateur, vous devez vous assurer que ces ordinateurs sont physiquement sécurisés. S'ils se trouvent, par exemple, dans un lab physiquement sécurisé. Si vous désactivez **S’assurer que l’écran de veille est désactivé**, ceci n’active pas votre écran de veille.
 
    Pour exécuter de nouveau l’agent en tant que service, vous pouvez utiliser cet outil et sélectionner **Service**.
 
@@ -71,7 +71,7 @@ Utilisez la procédure suivante pour configurer les agents assignés à un rôle
 7. Pour fermer la boîte de dialogue **Récapitulatif de la configuration**, choisissez **Fermer**. Ensuite, choisissez à nouveau **Fermer** pour fermer **l’outil de configuration de Test Agent**.
 
    > [!NOTE]
-   > Une icône de zone de notification s’exécute sur l’ordinateur pour un agent de test qui s’exécute en tant que processus. Elle affiche l'état de l'agent de test. Vous pouvez démarrer, arrêter ou redémarrer l'agent s'il s'exécute en tant que processus à l'aide de cet outil. Pour démarrer l’agent de test comme processus s’il n’est pas en cours d’exécution, choisissez **Démarrer** > **Tous les programmes** > **Microsoft Visual Studio Test Agent**.
+   > Une icône de zone de notification s'exécute sur l'ordinateur pour un agent de test qui s'exécute en tant que processus. Elle affiche l’état de l’agent de test. Vous pouvez démarrer, arrêter ou redémarrer l'agent s'il s'exécute en tant que processus à l'aide de cet outil. Pour démarrer l’agent de test comme processus s’il n’est pas en cours d’exécution, choisissez **Démarrer** > **Tous les programmes** > **Microsoft Visual Studio Test Agent**.
 
    Si le contrôleur de test pour cet agent de test est inscrit auprès de Team Foundation Server, l’état d’un agent de test qui s’exécute en tant que processus interactif s’affiche dans la vue **Contrôleurs** dans le **Centre lab** pour Microsoft Test Manager. Il s'affiche précédé d'un astérisque pour indiquer qu'il s'exécute comme un processus interactif. Pour redémarrer cet agent de test, utilisez l’outil qui s’exécute sur l’ordinateur pour l’agent de test, et non la vue **Contrôleurs**.
 

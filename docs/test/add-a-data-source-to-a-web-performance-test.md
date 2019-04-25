@@ -9,12 +9,12 @@ ms.assetid: 2ada376d-f168-455d-9643-6acb535360c1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f56491a8268e939f7bd455c4afef6813116ef9f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c22d9327deb0c04790a3adfc809d9ae5da483916
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834933"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>Ajouter une source de données à un test de performances de site Web
 
@@ -34,7 +34,9 @@ Votre solution doit également inclure un test de performances web qui parcourt 
 
 ## <a name="create-a-sql-database"></a>Créer une base de données SQL
 
-1. Si vous n’avez pas Visual Studio Enterprise, vous pouvez le télécharger à partir de la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017).
+::: moniker range="vs-2017"
+
+1. Si vous n’avez pas Visual Studio Enterprise, vous pouvez le télécharger à partir de la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download).
 
 2. Créez une base de données SQL.
 
@@ -59,6 +61,38 @@ Votre solution doit également inclure un test de performances web qui parcourt 
 7. Ajoutez des données aux champs.
 
      ![Ajouter des données aux champs](../test/media/web_test_databinding_sql_addnewfieldsadddata.png)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Si vous n’avez pas Visual Studio Enterprise, vous pouvez le télécharger à partir de la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019).
+
+2. Créez une base de données SQL.
+
+     ![Ajouter une nouvelle base de données SQL](../test/media/web_test_databinding_sql_addnewdb.png)
+
+3. Créez un projet de base de données.
+
+     ![Créer un projet à partir de la base de données](../test/media/web_test_databinding_sql_addnewdbproject.png)
+
+4. Ajouter une table au projet de base de données.
+
+     ![Ajouter une nouvelle table au projet de base de données](../test/media/web_test_databinding_sql_addnewdbtablename.png)
+
+5. Ajoutez des champs à la table.
+
+     ![Ajouter des champs à la table](../test/media/web_test_databinding_sql_addnewdbaddfields.png)
+
+6. Publiez le projet de base de données.
+
+     ![Publier le projet de base de données depuis l'Explorateur de solutions](../test/media/web_test_databinding_sql_addnewdbpublish.png)
+
+7. Ajoutez des données aux champs.
+
+     ![Ajouter des données aux champs](../test/media/web_test_databinding_sql_addnewfieldsadddata.png)
+
+::: moniker-end
 
 ## <a name="add-the-data-source"></a>Ajouter la source de données
 
@@ -114,11 +148,11 @@ Votre solution doit également inclure un test de performances web qui parcourt 
 
 2. Corrigez l’erreur de validation en supprimant la règle de validation de **l’URL de réponse** et en réexécutant le test.
 
-     ![Supprimer la règle de validation de l’URL de la réponse](../test/media/web_test_databinding_sql_deleteresponseurl.png)
+     ![Supprimer la règle de validation de l'URL de la réponse](../test/media/web_test_databinding_sql_deleteresponseurl.png)
 
      Le test de performances de site Web réussit maintenant avec la liaison de données.
 
-     ![Réussite du test à l’aide de la liaison de données](../test/media/web_test_databinding_sql_deleteresponseurlrunresults.png)
+     ![Réussite du test à l'aide de la liaison de données](../test/media/web_test_databinding_sql_deleteresponseurlrunresults.png)
 
 ## <a name="q--a"></a>Questions et réponses
 
@@ -201,9 +235,9 @@ Votre solution doit également inclure un test de performances web qui parcourt 
 
      ![Appliquer les propriétés avancées](../test/media/web_test_databinding_advancedproperties.png)
 
-9. Tapez le nom du dossier qui contient le fichier de schéma et testez votre connexion.
+9. Tapez le nom du répertoire qui contient le fichier de schéma et testez votre connexion.
 
-     ![Entrer le chemin d’accès au dossier de données](../test/media/web_test_databinding_adddatasourcecolortext5.png)
+     ![Entrer le chemin d'accès au dossier de données](../test/media/web_test_databinding_adddatasourcecolortext5.png)
 
 10. Sélectionnez le fichier CSV que vous voulez utiliser.
 
@@ -249,7 +283,7 @@ Votre solution doit également inclure un test de performances web qui parcourt 
 
 **R :** Oui, vous devez changer le code XML SOAP manuellement.
 
-1. Choisissez la requête de service Web dans l’arborescence des requêtes et dans la fenêtre Propriétés, choisissez le bouton de sélection (...) dans la propriété Corps chaîne.
+1. Choisissez la requête de service Web dans l'arborescence des requêtes et dans la fenêtre Propriétés, choisissez le bouton de sélection (...) dans la propriété Corps chaîne.
 
      ![Modifier le corps chaîne du service web](../test/media/web_test_databinding_webservicerequest.png)
 

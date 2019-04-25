@@ -4,17 +4,19 @@ description: Obtenez une présentation de l’affichage, de la création et de l
 author: ghogen
 manager: jillfra
 assetId: eb3afde6-ba90-4308-9ac1-3cc29da4ede0
+ms.prod: visual-studio-dev14
+ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
 ms.openlocfilehash: e4f8f72dcc19ebe721e79c7b5268fd73d2cc469e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930829"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62427026"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>Accès aux machines virtuelles Azure à partir de l’Explorateur de serveurs
 
@@ -33,7 +35,7 @@ Si vous avez des machines virtuelles hébergées par Azure, vous pouvez y accéd
    | Status |Les valeurs incluent : Démarrage en cours, Démarré, En cours d’arrêt, Arrêté et Extraction de l’état. Si Extraction de l’état s’affiche, l’état actuel est inconnu. Les valeurs de cette propriété ne sont pas les mêmes que celles qui sont utilisées dans le [portail Azure](http://go.microsoft.com/fwlink/p/?LinkID=525040). |
    | SubscriptionID |ID d’abonnement de votre compte Azure. Vous pouvez obtenir cette information sur le [portail Azure](http://go.microsoft.com/fwlink/p/?LinkID=525040) en affichant les propriétés de l’abonnement. |
 2. Sélectionnez un nœud de point de terminaison, puis ouvrez la fenêtre **Propriétés** .
-3. Le tableau suivant décrit les propriétés des points de terminaison disponibles. Toutes ces propriétés sont en lecture seule. Pour ajouter ou modifier les points de terminaison d’une machine virtuelle, utilisez le [portail Azure](http://go.microsoft.com/fwlink/p/?LinkID=525040).
+3. Le tableau suivant décrit les propriétés des points de terminaison disponibles. Toutes ces propriétés sont en lecture seule. Pour ajouter ou modifier les points de terminaison d’une machine virtuelle, utilisez le [portail Azure](http://go.microsoft.com/fwlink/p/?LinkID=525040). 
 
    | Property | Description |
    | --- | --- |

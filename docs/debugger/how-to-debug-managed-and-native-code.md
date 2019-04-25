@@ -16,11 +16,11 @@ ms.workload:
 - dotnet
 - cplusplus
 ms.openlocfilehash: d1fefda9d8d639bf8d360bbd6b869b75b7dae903
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856500"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847919"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Tutoriel : Déboguer du code C# et C++ dans la même session de débogage
 
@@ -106,7 +106,7 @@ Si vous disposez d’une version installée de Visual Studio, mais que vous n’
 
 1. Sélectionnez **Fichier** > **Enregistrer tout** ou appuyez sur **Ctrl**+**Maj**+**S** pour enregistrer les fichiers.
 
-**Pour configurer et générer le projet de DLL :**
+**Pour configurer et générer le projet DLL :**
 
 1. Dans la barre d’outils de Visual Studio, sélectionnez la configuration **Débogage** et la plateforme **x86** ou **x64**. Si votre application appelante est .NET Core, qui s’exécute toujours en mode 64 bits, sélectionnez **x64** comme plateforme.
 

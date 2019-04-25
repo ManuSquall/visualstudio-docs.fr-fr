@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dc65b29bafd67fa8265feb75b533d66504d33c8
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: e166e28af02e3e9497b94cdf75a05bd9bf534629
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222059"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428620"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>Identifier et personnaliser les raccourcis clavier dans Visual Studio
 
@@ -134,7 +134,7 @@ Par défaut, les raccourcis sont stockés dans un fichier du dossier *%USERPROFI
 
 5. Choisissez le bouton **Suivant**.
 
-6.  Sous **Quels paramètres voulez-vous importer ?**, décochez la case **Tous les paramètres**, développez **Options**, puis **Environnement**.
+6. Sous **Quels paramètres voulez-vous importer ?**, décochez la case **Tous les paramètres**, développez **Options**, puis **Environnement**.
 
 7. Cochez la case **Clavier**, puis choisissez le bouton **Terminer**.
 

@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 18239c01707e63acaf7602ec77dad3bc6b42a884
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5933d89e38d040b088879f10911f2f1fff049aab
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908476"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62547677"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Procédure : se déplacer dans l’IDE Visual Studio
 
@@ -43,9 +43,9 @@ Les options Naviguer vers l’arrière et Naviguer vers l’avant permettent de 
 
 ### <a name="to-move-through-open-files-in-order-of-use"></a>Pour parcourir les documents ouverts par ordre d'utilisation
 
--   Pour activer les documents ouverts dans l’ordre dans lequel ils ont le plus récemment fait l’objet d’un accès, appuyez sur **Ctrl**+**-**.
+- Pour activer les documents ouverts dans l’ordre dans lequel ils ont le plus récemment fait l’objet d’un accès, appuyez sur **Ctrl**+**-**.
 
--   Pour activer les documents ouverts dans l’ordre inverse, appuyez sur **Ctrl**+**Maj**+**-**.
+- Pour activer les documents ouverts dans l’ordre inverse, appuyez sur **Ctrl**+**Maj**+**-**.
 
     > [!NOTE]
     > **Naviguer vers l’arrière** et **Naviguer vers l’avant** sont aussi disponibles dans le menu **Affichage**.
@@ -63,20 +63,20 @@ Le **Navigateur IDE** fonctionne de façon très similaire au commutateur d’ap
 
 ### <a name="to-switch-to-specific-files-in-the-editor"></a>Pour basculer vers des fichiers spécifiques dans l'éditeur
 
--   Appuyez sur **Ctrl**+**Tab** pour afficher le **Navigateur IDE**. Maintenez enfoncée la touche **Ctrl**, puis appuyez sur **Tab** à plusieurs reprises jusqu’à ce que vous sélectionniez le fichier auquel vous souhaitez passer.
+- Appuyez sur **Ctrl**+**Tab** pour afficher le **Navigateur IDE**. Maintenez enfoncée la touche **Ctrl**, puis appuyez sur **Tab** à plusieurs reprises jusqu’à ce que vous sélectionniez le fichier auquel vous souhaitez passer.
 
     > [!TIP]
     > Pour inverser l’ordre dans lequel vous parcourez la liste **Fichiers actifs**, maintenez les touches **Ctrl**+**Maj** enfoncées et appuyez sur **Tab**.
 
     \- ou -
 
--   Dans le coin supérieur droit de l’éditeur, choisissez le bouton **Fichiers actifs**, puis sélectionnez dans la liste un fichier vers lequel vous souhaitez basculer.
+- Dans le coin supérieur droit de l’éditeur, choisissez le bouton **Fichiers actifs**, puis sélectionnez dans la liste un fichier vers lequel vous souhaitez basculer.
 
     \- ou -
 
--   Dans la barre de menus, choisissez **Fenêtre** > **Fenêtres**.
+- Dans la barre de menus, choisissez **Fenêtre** > **Fenêtres**.
 
--   Dans la liste, sélectionnez le fichier à afficher, puis choisissez **Activer**.
+- Dans la liste, sélectionnez le fichier à afficher, puis choisissez **Activer**.
 
 ## <a name="navigate-among-tool-windows-in-the-ide"></a>Naviguer parmi les fenêtres Outil dans l’IDE
 
@@ -87,7 +87,7 @@ Le **Navigateur IDE** vous permet également de parcourir les fenêtres Outil qu
 
 ### <a name="to-switch-to-a-specific-tool-window-in-the-ide"></a>Pour basculer vers une fenêtre Outil spécifique dans l'IDE
 
--   Appuyez sur **Alt**+**F7** pour afficher le **navigateur IDE**. Maintenez la touche **Alt** enfoncée et appuyez sur **F7** à plusieurs reprises jusqu’à ce que vous sélectionniez la fenêtre vers laquelle vous souhaitez basculer.
+- Appuyez sur **Alt**+**F7** pour afficher le **navigateur IDE**. Maintenez la touche **Alt** enfoncée et appuyez sur **F7** à plusieurs reprises jusqu’à ce que vous sélectionniez la fenêtre vers laquelle vous souhaitez basculer.
 
     > [!TIP]
     > Pour inverser l’ordre dans lequel vous parcourez la liste **Fenêtres Outil actives**, maintenez enfoncées les touches **Maj**+**Alt**, puis appuyez sur **F7**.

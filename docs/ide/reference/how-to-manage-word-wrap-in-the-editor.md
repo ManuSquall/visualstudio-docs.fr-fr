@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88d5b4729ec24ef9594e3c0528a8d09156f23b1b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b4d2a6195fc2357eecc6f9e011a1a7a4c3fff789
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926267"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789482"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Procédure : Gérer le retour automatique à la ligne dans l’éditeur
 
@@ -28,19 +28,19 @@ Vous pouvez activer et désactiver l’option **Retour automatique à la ligne**
 
 ## <a name="to-set-word-wrap-preferences"></a>Pour définir les préférences de retour automatique à la ligne
 
-1.  Dans le menu **Outils**, sélectionnez **Options**.
+1. Dans le menu **Outils**, sélectionnez **Options**.
 
-2.  Dans le dossier **Éditeur de texte**, choisissez les options **Général** dans le sous-dossier **Tous les langages** pour définir cette option globalement.
+2. Dans le dossier **Éditeur de texte**, choisissez les options **Général** dans le sous-dossier **Tous les langages** pour définir cette option globalement.
 
      — ou —
 
      Choisissez les options **Général** dans le sous-dossier du langage dans lequel vous programmez.
 
-3.  Sous **Paramètres**, activez ou désactivez l’option **Retour automatique à la ligne**.
+3. Sous **Paramètres**, activez ou désactivez l’option **Retour automatique à la ligne**.
 
      Lorsque l’option **Retour automatique à la ligne** est sélectionnée, l’option **Afficher des glyphes visuels pour le retour automatique à la ligne** est activée.
 
-4.  Sélectionnez l’option **Afficher des glyphes visuels pour le retour automatique à la ligne** si vous préférez afficher un indicateur fléché de retour là où une longue ligne est automatiquement renvoyée à une deuxième ligne. Désactivez cette option si vous préférez ne pas afficher d’indicateurs fléchés.
+4. Sélectionnez l’option **Afficher des glyphes visuels pour le retour automatique à la ligne** si vous préférez afficher un indicateur fléché de retour là où une longue ligne est automatiquement renvoyée à une deuxième ligne. Désactivez cette option si vous préférez ne pas afficher d’indicateurs fléchés.
 
     > [!NOTE]
     > Ces flèches de rappel ne sont pas ajoutées à votre code : elles sont utilisées uniquement à des fins d’affichage.

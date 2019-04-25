@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: aa3d347c08ee73054d4b229d7d2598331e44c1d7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: faef5f2420f4abd30ecec9151212b8a731736886
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941372"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62795215"
 ---
 # <a name="generate-a-constructor-in-visual-studio"></a>Générer un constructeur dans Visual Basic
 
@@ -30,11 +30,11 @@ Cette génération de code s’applique à :
 
 **Comment :** il existe plusieurs façons de générer un constructeur :
 
-   - [Générer un constructeur et choisir des membres](#pick)
-   - [Générer un constructeur à partir des champs sélectionnés](#selection)
-   - [Générer un constructeur à partir d’une nouvelle utilisation](#usage)
-   - [Ajouter un paramètre au constructeur existant](#addparameter)
-   - [Créer et initialiser le champ/la propriété à partir d’un paramètre de constructeur](#create)
+- [Générer un constructeur et choisir des membres](#pick)
+- [Générer un constructeur à partir des champs sélectionnés](#selection)
+- [Générer un constructeur à partir d’une nouvelle utilisation](#usage)
+- [Ajouter un paramètre au constructeur existant](#addparameter)
+- [Créer et initialiser le champ/la propriété à partir d’un paramètre de constructeur](#create)
 
 ## <a id = "pick"></a> Générer un constructeur et choisir des membres (C# uniquement)
 

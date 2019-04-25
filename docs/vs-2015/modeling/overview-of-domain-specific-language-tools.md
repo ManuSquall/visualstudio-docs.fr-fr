@@ -11,12 +11,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed5232ed8f0033e5953f14b8e4a9aa08abcb316c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d36b2cb0c4e8e7ddf9016302c9efcfae0710097c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54805647"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62568354"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>Vue d'ensemble des outils de langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,13 +25,13 @@ Les Outils Domain-Specific Language (DSL), qui sont hébergés dans [!INCLUDE[vs
   
  Les outils suivants se trouvent dans les Outils DSL :  
   
--   Un Assistant de projet qui utilise différents modèles de solution pour vous aider à commencer à développer votre langage spécifique à un domaine.  
+- Un Assistant de projet qui utilise différents modèles de solution pour vous aider à commencer à développer votre langage spécifique à un domaine.  
   
--   Un concepteur graphique pour créer et modifier la définition de votre langage spécifique à un domaine.  
+- Un concepteur graphique pour créer et modifier la définition de votre langage spécifique à un domaine.  
   
--   Un moteur de validation qui permet de s’assurer que la définition du langage spécifique à un domaine est correctement formée et qui affiche les erreurs et les avertissements en cas de problèmes.  
+- Un moteur de validation qui permet de s’assurer que la définition du langage spécifique à un domaine est correctement formée et qui affiche les erreurs et les avertissements en cas de problèmes.  
   
--   Un générateur de code qui prend une définition de langage spécifique à un domaine comme entrée et génère le code source comme sortie.  
+- Un générateur de code qui prend une définition de langage spécifique à un domaine comme entrée et génère le code source comme sortie.  
   
 ## <a name="the-dsl-tools-solution"></a>Solution des Outils DSL  
  L’Assistant Concepteur Domain-Specific Language fournit les modèles de solution suivants :  

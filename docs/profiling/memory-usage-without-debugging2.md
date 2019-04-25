@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 915a46a1f201dab55edb0b0b091c003d6b449049
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 1e59e1bd618cfeb28b93d073997ef451357ee8d0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57873452"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830701"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analyser l’utilisation de la mémoire sans débogage
 
@@ -56,13 +56,13 @@ Une application utilise un grand nombre d’objets, et vous souhaiterez peut-êt
 
 Pour recueillir des instantanés, sélectionnez **Prendre un instantané** quand vous souhaitez capturer les données de mémoire.
 
-###  <a name="BKMK_Close_a_monitoring_session"></a> Fermer la session de diagnostic
+### <a name="BKMK_Close_a_monitoring_session"></a> Fermer la session de diagnostic
 
 Pour arrêter une session de surveillance sans créer de rapport, fermez simplement la fenêtre de diagnostic. Pour générer un rapport quand vous avez terminé la collecte ou la prise d’instantanés, sélectionnez **Arrêter la collecte**.
 
 ![Arrêter la collecte](../profiling/media/memuse__stopcollection.png "Arrêter la collecte")
 
-##  <a name="memory-usage-reports"></a>Rapports d’utilisation de la mémoire
+## <a name="memory-usage-reports"></a>Rapports d’utilisation de la mémoire
 
 Une fois que vous avez arrêté la collecte des données, l’outil **Utilisation de la mémoire** arrête l’application et affiche la page de vue d’ensemble d’**Utilisation de la mémoire**.
 
@@ -103,7 +103,7 @@ Dans le rapport d’instantané :
 
 - L’arborescence **Types référencés** ou **Objets référencés** montre les objets référencés par le type ou l’instance sélectionné.
 
-###  <a name="BKMK_Report_tree_filters_"></a> Filtres des arborescences de rapport
+### <a name="BKMK_Report_tree_filters_"></a> Filtres des arborescences de rapport
 
 De nombreux types dans les applications ne sont pas très intéressants pour les développeurs d’applications. Les filtres de rapport d’instantané peuvent masquer la plupart de ces types dans les arborescences **Tas managé** et **Chemins d’accès à la racine**.
 
@@ -123,7 +123,7 @@ De nombreux types dans les applications ne sont pas très intéressants pour les
 
 Les deux liens ouvrent le même rapport. La seule différence concerne l’ordre de tri de départ de l’arborescence **Tas managé**. Le lien de taille trie le rapport en fonction de la colonne **Taille inclusive (octets)**. Le lien d’objets trie le rapport en fonction de la colonne **Nombre**. Vous pouvez changer l’ordre ou la colonne de tri après l’ouverture du rapport.
 
-###  <a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> Arborescence Tas managé (rapports de détails de l’instantané)
+### <a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> Arborescence Tas managé (rapports de détails de l’instantané)
  L’arborescence **Tas managé** répertorie les types d’objets contenus dans la mémoire. Développez le nom d’un type pour afficher les dix instances du type les plus volumineuses, triées par taille. Sélectionnez un type ou une instance pour afficher les arborescences **Chemins d’accès à la racine** et **Objets référencés** pour l’élément sélectionné.
 
  ![Arborescence Tas managé](../profiling/media/memuse__snapshotdetails_managedheaptree.png "Arborescence Tas managé")
@@ -138,14 +138,14 @@ L’arborescence **Tas managé** dans un rapport détaillé d’instantané comp
 |**Taille inclusive (octets)**|Taille des instances du type ou taille d’une seule instance, y compris la taille des objets contenus.|
 |**Module**|Module qui contient l’objet.|
 
-###  <a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> Arborescence Chemins d’accès à la racine (rapports de détails de l’instantané)
+### <a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> Arborescence Chemins d’accès à la racine (rapports de détails de l’instantané)
 L’arborescence **Chemins d’accès à la racine** montre la chaîne d’objets qui référencent un type ou une instance. Le récupérateur de mémoire .NET Framework nettoie la mémoire d’un objet uniquement quand toutes les références à cet objet ont été libérées.
 
 Pour un type dans l’arborescence **Chemins d’accès à la racine**, le nombre d’objets qui comportent des références à ce type est affiché dans la colonne **Nombre de références**.
 
 ![Arborescence Chemins d’accès à la racine pour les types](../profiling/media/memuse_snapshotdetails_type_pathstoroottree.png "Arborescence Chemins d’accès à la racine pour les types")
 
-###  <a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> Arborescence Types référencés ou Objets référencés (rapports détaillés de l’instantané)
+### <a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> Arborescence Types référencés ou Objets référencés (rapports détaillés de l’instantané)
 L’arborescence **Types référencés** ou **Objets référencés** montre les objets référencés par le type ou l’instance sélectionné.
 
 ![Arborescence Objets référencés pour les instances](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "Arborescence Objets référencés pour les instances")
@@ -168,7 +168,7 @@ Les deux liens ouvrent le même rapport. La seule différence concerne l’ordre
 
  ![Liens vers le rapport de différence dans un volet de l’instantané](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "Liens vers le rapport de différence dans un volet de l’instantané")
 
-###  <a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a> Arborescence Tas managé (rapports différentiels d’instantanés)
+### <a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a> Arborescence Tas managé (rapports différentiels d’instantanés)
 
  L’arborescence **Tas managé** répertorie les types d’objets contenus dans la mémoire. Vous pouvez développer le nom d’un type pour afficher les dix instances du type les plus volumineuses, triées par taille. Sélectionnez un type ou une instance pour afficher les arborescences **Chemins d’accès à la racine** et **Objets référencés** pour l’élément sélectionné.
 
@@ -187,7 +187,7 @@ L’arborescence **Tas managé** dans un rapport différentiel d’instantanés 
 |**Diff. de taille inclusive (octets)**|Pour un type, différence de taille de toutes les instances du type entre l’instantané principal et l’instantané précédent, y compris la taille des objets dans les objets. Le champ est vide pour une instance.|
 |**Module**|Module qui contient l’objet.|
 
-###  <a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> Arborescence Chemins d’accès à la racine (rapports différentiels d’instantanés)
+### <a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> Arborescence Chemins d’accès à la racine (rapports différentiels d’instantanés)
 
 L’arborescence **Chemins d’accès à la racine** montre la chaîne d’objets qui référencent un type ou une instance. Le récupérateur de mémoire .NET Framework nettoie la mémoire d’un objet uniquement quand toutes les références à cet objet ont été libérées.
 
@@ -195,7 +195,7 @@ Pour un type dans l’arborescence **Chemins d’accès à la racine**, le nombr
 
  ![Arborescence Chemins d’accès à la racine dans un rapport différentiel](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "Arborescence Chemins d’accès à la racine dans un rapport différentiel")
 
-###  <a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> Arborescence Types référencés ou Objets référencés (rapports différentiels d’instantanés)
+### <a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> Arborescence Types référencés ou Objets référencés (rapports différentiels d’instantanés)
 
 L’arborescence **Types référencés** ou **Objets référencés** montre les objets référencés par le type ou l’instance sélectionné.
 
