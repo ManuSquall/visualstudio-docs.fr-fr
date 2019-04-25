@@ -1,5 +1,5 @@
 ---
-title: Déverrouillage de Visual Studio 2015 | Microsoft Docs »
+title: Déverrouiller Visual Studio 2015 | Microsoft Docs"
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,37 +10,37 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8876cebf5851454aa3140f6a3269fa0d3ecbbc95
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 05153b7829281684ff9f27f2b5ac708903982b57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774541"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072550"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Déverrouillage de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Vous pouvez évaluer Visual Studio gratuitement pendant 30 jours. Quand vous vous connectez à l'IDE, vous pouvez étendre la période d'évaluation de 90 jours. Pour continuer à utiliser Visual Studio, vous pouvez déverrouiller l'IDE en :
 
-1.  utilisant un abonnement en ligne ;
+1. utilisant un abonnement en ligne ;
 
-2.  entrant une clé de produit.
+2. entrant une clé de produit.
 
 ## <a name="to-unlock-visual-studio-using-an-online-subscription"></a>Pour déverrouiller Visual Studio à l'aide d'un abonnement en ligne
  Pour déverrouiller Visual Studio à l'aide d'un abonnement en ligne MSDN ou Visual Studio associé à un compte Microsoft ou à un compte professionnel ou scolaire :
 
-1.  Cliquez sur le bouton « Connexion » en haut à droite de l'IDE (ou sélectionnez Fichier > Paramètres de compte pour ouvrir la boîte de dialogue Paramètres de compte et cliquez sur le bouton « Connexion »).
+1. Cliquez sur le bouton « Connexion » en haut à droite de l'IDE (ou sélectionnez Fichier > Paramètres de compte pour ouvrir la boîte de dialogue Paramètres de compte et cliquez sur le bouton « Connexion »).
 
-2.  Entrez les informations d'identification d'un compte Microsoft ou d'un compte professionnel ou scolaire. Visual Studio recherche un abonnement MSDN ou Visual Studio Team Services associé à votre compte.
+2. Entrez les informations d'identification d'un compte Microsoft ou d'un compte professionnel ou scolaire. Visual Studio recherche un abonnement MSDN ou Visual Studio Team Services associé à votre compte.
 
 > [!IMPORTANT]
 >  Visual Studio recherche automatiquement les abonnements en ligne associés quand vous vous connectez à un compte Visual Studio Team Services à partir de la fenêtre d’outils Team Explorer. Quand vous vous connectez à un compte Visual Studio Team Services, vous pouvez utiliser un compte Microsoft ou un compte professionnel ou scolaire. Si un abonnement en ligne existe pour ce compte d'utilisateur, Visual Studio déverrouille automatiquement l'IDE.
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>Pour déverrouiller Visual Studio avec une clé de produit
 
-1.  Sélectionnez **Fichier > Paramètres de compte** pour ouvrir la boîte de dialogue Paramètres de compte, puis cliquez sur le lien « **Obtenir une licence avec une clé de produit** ».
+1. Sélectionnez **Fichier > Paramètres de compte** pour ouvrir la boîte de dialogue Paramètres de compte, puis cliquez sur le lien « **Obtenir une licence avec une clé de produit** ».
 
-2.  Entrez la clé de produit dans la zone fournie.
+2. Entrez la clé de produit dans la zone fournie.
 
 > [!TIP]
 >  Les versions préliminaires de Visual Studio n'ont pas de clés de produit. Vous devez vous connecter à l'IDE pour utiliser les versions préliminaires.
@@ -68,9 +68,9 @@ Vous pouvez évaluer Visual Studio gratuitement pendant 30 jours. Quand vous vou
 ### <a name="updating-expired-licenses"></a>Mise à jour des licences ayant expiré
  Si votre abonnement a expiré et vous n'avez plus accès à Visual Studio, vous devez :
 
-1.  Renouveler votre abonnement. Pour plus d'informations sur la licence que vous utilisez, accédez à Fichier > boîte de dialogue Paramètres de compte et examinez les informations de licence sur le côté droit de la boîte de dialogue.
+1. Renouveler votre abonnement. Pour plus d'informations sur la licence que vous utilisez, accédez à Fichier > boîte de dialogue Paramètres de compte et examinez les informations de licence sur le côté droit de la boîte de dialogue.
 
-2.  Si un autre abonnement est associé à un compte différent, ajoutez ce compte à la liste Tous les comptes située à gauche de la boîte de dialogue Fichier > Paramètres de compte en cliquant sur le lien Ajouter un compte.
+2. Si un autre abonnement est associé à un compte différent, ajoutez ce compte à la liste Tous les comptes située à gauche de la boîte de dialogue Fichier > Paramètres de compte en cliquant sur le lien Ajouter un compte.
 
 ## <a name="see-also"></a>Voir aussi
  [Connexion à Visual Studio](../ide/signing-in-to-visual-studio.md)

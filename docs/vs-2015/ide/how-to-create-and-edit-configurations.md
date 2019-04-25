@@ -19,12 +19,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e885ffa758f6503c10517c672745a31ef0960fe5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 2c507bb2ea6fa231b2b3f3d92cebb3ca78bb4eb5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54767329"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071198"
 ---
 # <a name="how-to-create-and-edit-configurations"></a>Guide pratique pour créer et modifier des configurations
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,79 +49,79 @@ Vous pouvez créer plusieurs configurations de build pour une solution. Par exem
   
 #### <a name="to-set-properties-based-on-configurations"></a>Pour définir des propriétés sur la base de configurations  
   
--   Dans l’ **Explorateur de solutions**, ouvrez le menu contextuel d’un projet et choisissez **Propriétés**.  
+- Dans l’ **Explorateur de solutions**, ouvrez le menu contextuel d’un projet et choisissez **Propriétés**.  
   
      La fenêtre **Pages de propriétés** apparaît.  
   
-     Vous pouvez définir des propriétés pour vos configurations. Par exemple, pour une configuration Release, vous pouvez spécifier d’optimiser le code lorsque la solution est générée et, pour une configuration Debug, vous pouvez spécifier d’inclure le symbole de compilation conditionnelle `DEBUG`. Pour plus d’informations sur les paramètres de page de propriété, consultez [Introduction au Concepteur de projet](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
+     Vous pouvez définir des propriétés pour vos configurations. Par exemple, pour une configuration Release, vous pouvez spécifier d’optimiser le code lorsque la solution est générée et, pour une configuration Debug, vous pouvez spécifier d’inclure le symbole de compilation conditionnelle `DEBUG`. Pour plus d’informations sur les paramètres des pages de propriétés, consultez [Présentation du Concepteur de projets](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
   
 ## <a name="creating-and-modifying-project-configurations"></a>Création et modification des configurations de projet  
   
 #### <a name="to-create-a-project-configuration"></a>Pour créer une configuration de projet  
   
-1.  Ouvrez la boîte de dialogue **Gestionnaire de configurations**.  
+1. Ouvrez la boîte de dialogue **Gestionnaire de configurations**.  
   
-2.  Sélectionnez un projet dans la colonne **Projet**.  
+2. Sélectionnez un projet dans la colonne **Projet**.  
   
-3.  Dans la liste déroulante **Configuration** de ce projet, choisissez **Nouveau**.  
+3. Dans la liste déroulante **Configuration** de ce projet, choisissez **Nouveau**.  
   
      La boîte de dialogue **Nouvelle configuration de projet** apparaît.  
   
-4.  Dans la zone **Nom**, entrez un nom pour la nouvelle configuration.  
+4. Dans la zone **Nom**, entrez un nom pour la nouvelle configuration.  
   
-5.  Pour utiliser les paramètres de propriété d’une configuration de projet existante, dans la liste déroulante **Copier les paramètres à partir de**, choisissez une configuration.  
+5. Pour utiliser les paramètres de propriété d’une configuration de projet existante, dans la liste déroulante **Copier les paramètres à partir de**, choisissez une configuration.  
   
-6.  Pour créer une configuration à l’échelle de la solution au même moment, cochez la case **Créer une nouvelle configuration de solution**.  
+6. Pour créer une configuration à l’échelle de la solution au même moment, cochez la case **Créer une nouvelle configuration de solution**.  
   
 #### <a name="to-rename-a-project-configuration"></a>Pour renommer une configuration de projet  
   
-1.  Ouvrez la boîte de dialogue **Gestionnaire de configurations**.  
+1. Ouvrez la boîte de dialogue **Gestionnaire de configurations**.  
   
-2.  Dans la colonne **Projet**, sélectionnez le projet dont vous souhaitez renommer la configuration de projet.  
+2. Dans la colonne **Projet**, sélectionnez le projet dont vous souhaitez renommer la configuration de projet.  
   
-3.  Dans la liste déroulante **Configuration** de ce projet, choisissez **Modifier**.  
+3. Dans la liste déroulante **Configuration** de ce projet, choisissez **Modifier**.  
   
      La boîte de dialogue **Modifier les configurations de projet** apparaît.  
   
-4.  Sélectionnez le nom de la configuration de projet à modifier.  
+4. Sélectionnez le nom de la configuration de projet à modifier.  
   
-5.  Sélectionnez **Renommer**, puis entrez un nouveau nom.  
+5. Sélectionnez **Renommer**, puis entrez un nouveau nom.  
   
 ## <a name="creating-and-modifying-solution-wide-build-configurations"></a>Création et modification de configurations de build à l’échelle de la solution  
   
 #### <a name="to-create-a-solution-wide-build-configuration"></a>Pour créer une configuration de build à l’échelle de la solution  
   
-1.  Ouvrez la boîte de dialogue **Gestionnaire de configurations**.  
+1. Ouvrez la boîte de dialogue **Gestionnaire de configurations**.  
   
-2.  Dans la liste déroulante **Configuration de la solution active**, choisissez **Nouveau**.  
+2. Dans la liste déroulante **Configuration de la solution active**, choisissez **Nouveau**.  
   
      La boîte de dialogue **Nouvelle configuration de solution** apparaît.  
   
-3.  Dans la zone de texte **Nom**, entrez un nom pour la nouvelle configuration.  
+3. Dans la zone de texte **Nom**, entrez un nom pour la nouvelle configuration.  
   
-4.  Pour utiliser les paramètres d’une configuration de solution existante, dans la liste déroulante **Copier les paramètres à partir de**, choisissez une configuration.  
+4. Pour utiliser les paramètres d’une configuration de solution existante, dans la liste déroulante **Copier les paramètres à partir de**, choisissez une configuration.  
   
-5.  Si vous souhaitez créer des configurations de projet au même moment, cochez la case **Créer des configurations de projet**.  
+5. Si vous souhaitez créer des configurations de projet au même moment, cochez la case **Créer des configurations de projet**.  
   
 #### <a name="to-rename-a-solution-wide-build-configuration"></a>Pour renommer une configuration de build à l’échelle de la solution  
   
-1.  Ouvrez la boîte de dialogue **Gestionnaire de configurations**.  
+1. Ouvrez la boîte de dialogue **Gestionnaire de configurations**.  
   
-2.  Dans la liste déroulante **Configuration de la solution active**, choisissez **Modifier**.  
+2. Dans la liste déroulante **Configuration de la solution active**, choisissez **Modifier**.  
   
      La boîte de dialogue **Modifier les configurations de solutions** apparaît.  
   
-3.  Sélectionnez le nom de la configuration de solution à modifier.  
+3. Sélectionnez le nom de la configuration de solution à modifier.  
   
-4.  Sélectionnez **Renommer**, puis entrez un nouveau nom.  
+4. Sélectionnez **Renommer**, puis entrez un nouveau nom.  
   
 #### <a name="to-modify-a-solution-wide-build-configuration"></a>Pour modifier une configuration de build à l’échelle de la solution  
   
-1.  Ouvrez la boîte de dialogue **Gestionnaire de configurations**.  
+1. Ouvrez la boîte de dialogue **Gestionnaire de configurations**.  
   
-2.  Dans la liste déroulante **Configuration de la solution active**, sélectionnez la configuration de votre choix.  
+2. Dans la liste déroulante **Configuration de la solution active**, sélectionnez la configuration de votre choix.  
   
-3.  Dans le volet **Contextes des projets**, pour chaque projet, sélectionnez la **configuration** et la **plateforme** de votre choix, puis choisissez de **générer** ou de **déployer**.  
+3. Dans le volet **Contextes des projets**, pour chaque projet, sélectionnez la **configuration** et la **plateforme** de votre choix, puis choisissez de **générer** ou de **déployer**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Présentation des configurations de build](../ide/understanding-build-configurations.md)   
