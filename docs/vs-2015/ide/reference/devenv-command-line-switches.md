@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4eadb8c9553873f43ad9435ad43fae00f57affcb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0cb2d42db65c5eb77aae324d2c10c25010eb8b8f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050703"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444737"
 ---
 # <a name="devenv-command-line-switches"></a>Commutateurs de la ligne de commande de Devenv
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,10 +34,10 @@ ms.locfileid: "60050703"
 Devenv vous permet de définir diverses options pour l’environnement de développement intégré (IDE) et également de créer, déboguer et déployer des projets à partir de la ligne de commande. Utilisez ces commutateurs pour exécuter l’IDE à partir d’un script ou d’un fichier .bat, par exemple, un script de génération nocturne, ou pour lancer l’IDE avec une configuration particulière.  
   
 > [!NOTE]
->  Pour les tâches de génération, nous vous recommandons d’utiliser MSBuild au lieu de devenv. Pour plus d’informations, consultez [Informations de référence sur la ligne de commande](../../msbuild/msbuild-command-line-reference.md).  
+> Pour les tâches de génération, nous vous recommandons d’utiliser MSBuild au lieu de devenv. Pour plus d’informations, consultez [Informations de référence sur la ligne de commande](../../msbuild/msbuild-command-line-reference.md).  
   
 > [!NOTE]
->  Vous devez exécuter devenv en tant qu’administrateur pour pouvoir utiliser les commutateurs [/setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) et [/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md).  
+> Vous devez exécuter devenv en tant qu’administrateur pour pouvoir utiliser les commutateurs [/setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) et [/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md).  
   
 ## <a name="devenv-switch-syntax"></a>Syntaxe des commutateurs devenv  
  Par défaut, les commandes devenv passent des commutateurs à l’utilitaire devenv.com.  
@@ -57,7 +57,7 @@ Devenv vous permet de définir diverses options pour l’environnement de dével
 - Quand vous fournissez un nom de fichier projet au lieu d’un nom de fichier solution, une commande `devenv` recherche le dossier parent du fichier projet pour un fichier solution du même nom. Par exemple, la commande `devenv /build myproject1.vbproj` recherche le dossier parent d’un fichier solution nommé « myproject1.sln ».  
   
     > [!NOTE]
-    >  Un seul fichier solution référençant ce projet doit se trouver dans son dossier parent. Si le dossier parent ne contient aucun fichier solution référençant ce projet, ou si le dossier parent contient au moins deux fichiers solution qui le référencent, un fichier solution temporaire est créé, qui est nommé pour ce projet et y fait référence.  
+    > Un seul fichier solution référençant ce projet doit se trouver dans son dossier parent. Si le dossier parent ne contient aucun fichier solution référençant ce projet, ou si le dossier parent contient au moins deux fichiers solution qui le référencent, un fichier solution temporaire est créé, qui est nommé pour ce projet et y fait référence.  
   
 - Quand les chemins et les noms de fichier comportent des espaces, vous devez les placer entre guillemets doubles (""). Par exemple, "c:\project a\\".  
   
