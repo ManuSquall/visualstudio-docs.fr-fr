@@ -8,12 +8,12 @@ ms.assetid: 51cbe7d6-5dfd-4842-bca3-f7f8a665dc84
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f349308a1f4877a79a933e32269f262e1a58dc40
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c1e94bb6da2786b989208ea1104d509883bc0724
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939448"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970664"
 ---
 # <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>Procédure : spécifier le taux d’échantillonnage d’un paramètre d’exécution de test de charge
 
@@ -36,19 +36,19 @@ Voici quelques instructions sur les taux d'échantillonnage :
 
 ## <a name="to-specify-performance-counter-sampling-rate-in-a-run-setting"></a>Pour spécifier le taux d'échantillonnage du compteur de performance dans un paramètre d'exécution
 
-1.  Ouvrez un test de charge.
+1. Ouvrez un test de charge.
 
-     L’**éditeur de test de charge** s’affiche. L’arborescence du test de charge s’affiche.
+     L’**éditeur de test de charge** s’affiche. L'arborescence du test de charge s'affiche.
 
-2.  Dans le dossier **Paramètres d’exécution** de l’arborescence du test de charge, choisissez le paramètre d’exécution pour lequel vous souhaitez spécifier le taux d’échantillonnage.
+2. Dans le dossier **Paramètres d’exécution** de l’arborescence du test de charge, choisissez le paramètre d’exécution pour lequel vous souhaitez spécifier le taux d’échantillonnage.
 
-3.  Dans le menu **Affichage**, sélectionnez **Fenêtre Propriétés**.
+3. Dans le menu **Affichage**, sélectionnez **Fenêtre Propriétés**.
 
      Les catégories et propriétés des paramètres d’exécution du test de charge sont affichées dans la fenêtre **Propriétés**.
 
-4.  Dans la propriété **Taux d’échantillonnage**, entrez une valeur de temps qui indique la fréquence à laquelle le test de charge doit collecter les données du compteur de performances.
+4. Dans la propriété **Taux d’échantillonnage**, entrez une valeur de temps qui indique la fréquence à laquelle le test de charge doit collecter les données du compteur de performances.
 
-5.  Après avoir changé la propriété, choisissez **Enregistrer** dans le menu **Fichier**. Vous pouvez exécuter ensuite votre test de charge à l’aide de la nouvelle valeur associée à **Taux d’échantillonnage**.
+5. Après avoir changé la propriété, choisissez **Enregistrer** dans le menu **Fichier**. Vous pouvez exécuter ensuite votre test de charge à l’aide de la nouvelle valeur associée à **Taux d’échantillonnage**.
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ac3e966521f77716b999203523e1620fd327b631
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939142"
 ---
 # <a name="task-element-msbuild"></a>Élément Task (MSBuild)
 Crée et exécute une instance d’une tâche [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Le nom de l’élément est déterminé par le nom de la tâche en cours de création.

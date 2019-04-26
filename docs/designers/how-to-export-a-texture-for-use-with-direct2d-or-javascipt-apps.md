@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4aa53efb690faa0d31a35b9b19d0d5ee9781352
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 803129ea758a6648c0caa8303e1d191c0e8a74f5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940003"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844382"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Procédure : Exporter une texture à utiliser avec des applications Direct2D ou JavaScript
 
@@ -21,31 +21,31 @@ Le pipeline de contenus d’image peut générer des textures compatibles avec l
 
 Ce document illustre ces activités :
 
--   Configuration de l’image source à traiter par le pipeline de contenus d’image.
+- Configuration de l’image source à traiter par le pipeline de contenus d’image.
 
--   Configuration du pipeline de contenus d’image pour générer une texture utilisable dans une application Direct2D ou Javascript.
+- Configuration du pipeline de contenus d’image pour générer une texture utilisable dans une application Direct2D ou Javascript.
 
-    -   Générer un fichier *.dds* compressé au niveau des blocs.
+    - Générer un fichier *.dds* compressé au niveau des blocs.
 
-    -   Générer une valeur alpha prémultipliée.
+    - Générer une valeur alpha prémultipliée.
 
-    -   Désactiver la génération de mipmap.
+    - Désactiver la génération de mipmap.
 
 ## <a name="rendering-conventions-in-direct2d"></a>Conventions de rendu dans Direct2D
 
 Les textures qui sont utilisés dans le contexte de Direct2D doivent respecter ces conventions de rendu interne de Direct2D :
 
--   Direct2D implémente la transparence et la translucidité en utilisant une valeur alpha prémultipliée. Les textures utilisées avec Direct2D doivent contenir une valeur alpha prémultipliée, même si la texture n’utilise pas la transparence ou la translucidité. Pour plus d’informations sur les valeurs alpha prémultipliées, consultez [Guide pratique pour exporter une texture qui contient des valeurs alpha prémultipliées](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md).
+- Direct2D implémente la transparence et la translucidité en utilisant une valeur alpha prémultipliée. Les textures utilisées avec Direct2D doivent contenir une valeur alpha prémultipliée, même si la texture n’utilise pas la transparence ou la translucidité. Pour plus d’informations sur les valeurs alpha prémultipliées, consultez [Guide pratique pour exporter une texture qui contient des valeurs alpha prémultipliées](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md).
 
--   La texture doit être fournie au format *.dds*, en utilisant l’un de ces formats de compression de bloc :
+- La texture doit être fournie au format *.dds*, en utilisant l’un de ces formats de compression de bloc :
 
-    -   Compression BC1_UNORM
+    - Compression BC1_UNORM
 
-    -   Compression BC2_UNORM
+    - Compression BC2_UNORM
 
-    -   Compression BC3_UNORM
+    - Compression BC3_UNORM
 
--   Les mipmaps ne sont pas pris en charge.
+- Les mipmaps ne sont pas pris en charge.
 
 ### <a name="to-create-a-texture-thats-compatible-with-direct2d-rendering-conventions"></a>Pour créer une texture compatible avec les conventions de rendu de Direct2D
 

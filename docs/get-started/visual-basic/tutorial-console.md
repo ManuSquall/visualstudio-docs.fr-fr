@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: f394ea2775eede3424e4d6995a8e2065c5d986ef
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 234a2d1070a39c0f9d9dbf5b0ae706b02b660abf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972475"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>Tutoriel : Bien démarrer avec Visual Basic dans Visual Studio
 
@@ -27,7 +27,7 @@ Dans ce tutoriel pour Visual Basic (VB), vous allez utiliser Visual Studio afin 
 
 ::: moniker range="vs-2017"
 
-Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) pour l’installer gratuitement.
+Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) pour l’installer gratuitement.
 
 ::: moniker-end
 
@@ -267,5 +267,5 @@ Félicitations ! Vous avez terminé ce didacticiel. Pour en apprendre davantage,
 ## <a name="see-also"></a>Voir aussi
 
 * [Procédures pas à pas relatives au langage Visual Basic](/dotnet/visual-basic/walkthroughs)
-* [Informations de référence sur le langage Visual Basic](/dotnet/visual-basic/language-reference/index)
+* [Références du langage Visual Basic](/dotnet/visual-basic/language-reference/index)
 * [IntelliSense pour les fichiers de code Visual Basic](../../ide/visual-basic-specific-intellisense.md)

@@ -11,16 +11,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c4794a0dd50423a7a1566b20e86aaa5501c94e5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c02802fa9a32c3ae973108ed2622dc0aa9e0f262
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62960342"
 ---
 # <a name="collect-concurrency-data-for-stand-alone-applications-by-using-the-profiler-command-line"></a>Collecter des données concurrentielles pour les applications autonomes en utilisant la ligne de commande du profileur
 La méthode d’accès concurrentiel des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] permet de collecter des données de conflit de ressources et des données d’activité de thread montrant l’utilisation du processeur, les conflits de threads, la migration des threads, les délais de synchronisation, les zones d’E/S avec chevauchement, et autres événements système.
-
 
 ## <a name="common-tasks"></a>Tâches courantes
 

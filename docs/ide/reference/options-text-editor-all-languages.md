@@ -42,12 +42,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8b1b7c4ea16151c94c825b6e5467e40e3e6099b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2ef04af4fda717d3f2fa6a90ba6b9ffdc681d5a6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929334"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817850"
 ---
 # <a name="options-text-editor-all-languages"></a>Options, Éditeur de texte, Tous les langages
 
@@ -115,9 +115,9 @@ Lorsque cette option est sélectionnée, la **barre de navigation** est affiché
 
 Cette option définit le comportement de l’éditeur lorsque vous placez le point d’insertion sur une ligne vide, ne sélectionnez rien, puis effectuez une action Copier ou Couper.
 
--   Lorsque cette option est sélectionnée, la ligne vide est copiée ou coupée. Si vous effectuez ensuite une action Coller, une nouvelle ligne vide est insérée.
+- Lorsque cette option est sélectionnée, la ligne vide est copiée ou coupée. Si vous effectuez ensuite une action Coller, une nouvelle ligne vide est insérée.
 
--   Lorsque cette option est désactivée, la commande Couper supprime les lignes vides. Toutefois, les données figurant dans le Presse-papiers sont conservées. Par conséquent, si vous utilisez ensuite la commande Coller, le contenu le plus récemment copié dans le Presse-papiers est collé. Si vous n'avez rien copié auparavant, rien n'est collé.
+- Lorsque cette option est désactivée, la commande Couper supprime les lignes vides. Toutefois, les données figurant dans le Presse-papiers sont conservées. Par conséquent, si vous utilisez ensuite la commande Coller, le contenu le plus récemment copié dans le Presse-papiers est collé. Si vous n'avez rien copié auparavant, rien n'est collé.
 
 Ce paramètre n’a aucun effet sur les actions Copier ni Couper lorsqu’une ligne n’est pas vide. Si rien n'est sélectionné, toute la ligne est copiée ou coupée. Si vous effectuez ensuite une action Coller, le texte de la ligne toute entière et son caractère de ligne de fin sont collés.
 

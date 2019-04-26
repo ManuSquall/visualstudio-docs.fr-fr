@@ -7,17 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Découvrez comment activer l’abonnement Virtualize/SOA Test Professional inclus dans votre abonnement Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 89b079f9f797db58eb0afc887a70cdc78c48d886
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c5b17bd0509ebca05f49ec5a411ea632676e6342
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844111"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947274"
 ---
 # <a name="parasoft-virtualizesoatest-professional-desktop-in-visual-studio-subscriptions"></a>Avantages de Parasoft Virtualize/SOAtest Professional Desktop dans les abonnements Visual Studio
 
 Effectuez des tests plus tôt et plus souvent.  Simulez et testez le comportement de systèmes et applications non disponibles en constante évolution.  Votre avantage comprend un abonnement gratuit de six mois.  À la fin de votre abonnement de six mois, vous pourrez bénéficier d’une remise de 25 % sur le prix d’un abonnement annuel.
-
 
 ## <a name="activation-steps"></a>Étapes d’activation
 
@@ -30,7 +29,6 @@ Effectuez des tests plus tôt et plus souvent.  Simulez et testez le comportemen
 3. Vous êtes ensuite redirigé vers le site web Parasoft pour créer un compte.  Entrez simplement vos coordonnées, puis cliquez sur **Envoyer**.
    > [!div class="mx-imgBorder"]
    > ![Avantage Parasoft, Créer un compte](_img/vs-parasoft/vs-parasoft-account-cropped.png)
-
 
 4. Une fois que vous avez créé votre compte, vous voyez s’afficher une notification indiquant qu’un e-mail avec des instructions de téléchargement vous a été envoyé.  (N’oubliez pas de vérifier vos dossiers de courrier indésirable si vous ne trouvez pas cet e-mail dans votre boîte de réception.)
 
@@ -83,14 +81,12 @@ Effectuez des tests plus tôt et plus souvent.  Simulez et testez le comportemen
 
 <sup>1</sup>  *Inclut : Microsoft Partner Network (Enterprise).  Exclut :  NFR (revente interdite), VSIP (Visual Studio Industry Partner), FTE, MCT Software & Services Developer, BizSpark, Imagine, MVP (Most Valuable Professional), RD (Regional Director).  MCT Software & Services.*
 
-
 > [!NOTE]
 > Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à consulter [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
 
-
 ## <a name="support-resources"></a>Ressources de support
--  Besoin d’aide sur les produits Parasoft ?  Consultez les ressources suivantes :
+- Besoin d’aide sur les produits Parasoft ?  Consultez les ressources suivantes :
     - Support technique : https://www.parasoft.com/support/
     - Centre de ressources Parasoft : https://www.parasoft.com/resources/
--  Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
--  Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
+- Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+- Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).

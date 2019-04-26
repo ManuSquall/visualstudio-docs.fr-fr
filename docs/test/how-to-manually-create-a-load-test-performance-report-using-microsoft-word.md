@@ -9,12 +9,12 @@ ms.assetid: 3b864c75-2699-48c1-a2b4-9651f108c267
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dfd565deb8336346e127e084b720f391440dc6e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a82479fabda0cd64e977af01f87492563a02853f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950070"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Procédure : créer manuellement un rapport de performances de test de charge à l’aide de Microsoft Word
 
@@ -30,27 +30,27 @@ Vous pouvez créer manuellement des rapports de test de charge en copiant et en 
 
 ## <a name="copy-summary-view-data"></a>Copier les données du mode Résumé
 
-1.  Dans **Résultats du test de charge**, si le mode Résumé n’est pas affiché, cliquez sur **Résumé** dans la barre d’outils.
+1. Dans **Résultats du test de charge**, si le mode Résumé n’est pas affiché, cliquez sur **Résumé** dans la barre d’outils.
 
-2.  En mode Résumé, cliquez avec le bouton droit et sélectionnez **Sélectionner tout**.
+2. En mode Résumé, cliquez avec le bouton droit et sélectionnez **Sélectionner tout**.
 
-3.  En mode Résumé, cliquez avec le bouton droit et sélectionnez **Copier**. Cela restitue les données du mode Résumé au format HTML dans le Presse-papiers.
+3. En mode Résumé, cliquez avec le bouton droit et sélectionnez **Copier**. Cela restitue les données du mode Résumé au format HTML dans le Presse-papiers.
 
-4.  Dans Microsoft Word, collez les données du mode Résumé à l’emplacement souhaité.
+4. Dans Microsoft Word, collez les données du mode Résumé à l’emplacement souhaité.
 
-5.  Vous pouvez maintenant modifier, mettre en forme et supprimer certains aspects du contenu copié en fonction de vos besoins en matière de création de rapport.
+5. Vous pouvez maintenant modifier, mettre en forme et supprimer certains aspects du contenu copié en fonction de vos besoins en matière de création de rapport.
 
 ## <a name="copy-graph-view-data"></a>Copier les données de la vue Graphiques
 
-1.  Dans **Résultats du test de charge**, si la vue Graphiques n’est pas affichée, choisissez **Graphiques** dans la barre d’outils.
+1. Dans **Résultats du test de charge**, si la vue Graphiques n’est pas affichée, choisissez **Graphiques** dans la barre d’outils.
 
-2.  (Facultatif) Faites un zoom avant sur le graphique spécifique à copier dans votre document Microsoft Word, comme l’indique l’illustration suivante. Pour plus d'informations, voir [Procédure : effectuer un zoom avant sur une région du graphique](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+2. (Facultatif) Faites un zoom avant sur le graphique spécifique à copier dans votre document Microsoft Word, comme l’indique l’illustration suivante. Pour plus d'informations, voir [Procédure : effectuer un zoom avant sur une région du graphique](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
      ![Contrôle de zoom de l'affichage de graphiques](../test/media/ltest_zoomcontrol.png)
 
-3.  Sur le graphique à copier dans votre document Microsoft Word, cliquez avec le bouton droit, puis sélectionnez **Copier**.
+3. Sur le graphique à copier dans votre document Microsoft Word, cliquez avec le bouton droit, puis sélectionnez **Copier**.
 
-4.  Dans Microsoft Word, collez le graphique et les données de table associées à l’emplacement souhaité.
+4. Dans Microsoft Word, collez le graphique et les données de table associées à l’emplacement souhaité.
 
     > [!WARNING]
     > Vous ne pouvez pas copier le graphique d'un bureau à distance et le coller sur un autre ordinateur, parce que seules les informations de table associées au graphique seront copiées et pas l'image du graphique. L'image du graphique est stockée dans le répertoire temporaire de l'ordinateur à partir duquel il a été copié, et le deuxième ordinateur ne peut pas supprimer la référence de ce répertoire.

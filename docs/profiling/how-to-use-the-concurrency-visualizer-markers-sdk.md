@@ -8,21 +8,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2be76e5af3dafd3eebb8649fa82db6a14d46bb0d
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 3db7155a991b1badbdb4ef8dadb8ccfa63817c80
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323534"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62996214"
 ---
 # <a name="how-to-use-the-concurrency-visualizer-markers-sdk"></a>Procédure : Utiliser le SDK des marqueurs du visualiseur concurrentiel
 Cette rubrique montre comment utiliser le kit SDK du visualiseur concurrentiel pour créer des étendues et écrire des indicateurs, des messages et des alertes.
 
 ### <a name="to-use-c"></a>Pour utiliser C++
 
-1.  Ajoutez la prise en charge du kit SDK du visualiseur concurrentiel à votre application. Pour plus d’informations, consultez [Kit SDK du visualiseur concurrentiel](../profiling/concurrency-visualizer-sdk.md).
+1. Ajoutez la prise en charge du kit SDK du visualiseur concurrentiel à votre application. Pour plus d’informations, consultez [Kit SDK du visualiseur concurrentiel](../profiling/concurrency-visualizer-sdk.md).
 
-2.  Ajoutez une instruction `include` et une instruction `using` pour le kit SDK.
+2. Ajoutez une instruction `include` et une instruction `using` pour le kit SDK.
 
     ```C++
 
@@ -31,7 +31,7 @@ Cette rubrique montre comment utiliser le kit SDK du visualiseur concurrentiel p
 
     ```
 
-3.  Ajoutez du code pour créer trois étendues dans la série de marqueurs par défaut et écrire un indicateur, un message et une alerte (un pour chaque étendue). Les méthodes permettant d’écrire des indicateurs, des alertes et des messages sont membres de la classe [marker_series](../profiling/marker-series-class.md). Le constructeur de la classe [span](../profiling/span-class.md) exige un objet `marker_series`, afin que chaque étendue soit associée à une série de marqueurs spécifique. Un `span` se termine quand il est supprimé.
+3. Ajoutez du code pour créer trois étendues dans la série de marqueurs par défaut et écrire un indicateur, un message et une alerte (un pour chaque étendue). Les méthodes permettant d’écrire des indicateurs, des alertes et des messages sont membres de la classe [marker_series](../profiling/marker-series-class.md). Le constructeur de la classe [span](../profiling/span-class.md) exige un objet `marker_series`, afin que chaque étendue soit associée à une série de marqueurs spécifique. Un `span` se termine quand il est supprimé.
 
     ```C++
 
@@ -50,11 +50,11 @@ Cette rubrique montre comment utiliser le kit SDK du visualiseur concurrentiel p
 
     ```
 
-4.  Dans la barre de menus, choisissez **Analyser**, **Visualiseur concurrentiel** et **Commencer par le projet en cours** pour exécuter l’application et afficher le visualiseur concurrentiel. L’illustration suivante montre les trois étendues et trois marqueurs dans le visualiseur concurrentiel.
+4. Dans la barre de menus, choisissez **Analyser**, **Visualiseur concurrentiel** et **Commencer par le projet en cours** pour exécuter l’application et afficher le visualiseur concurrentiel. L’illustration suivante montre les trois étendues et trois marqueurs dans le visualiseur concurrentiel.
 
      ![Visualiseur concurrentiel avec 3 marqueurs et alertes](../profiling/media/cvmarkersnative.png "CvMarkersNative")
 
-5.  Ajoutez du code pour créer des séries de marqueurs supplémentaires et personnalisés en appelant le constructeur de `marker_series` qui accepte un nom de chaîne pour la série de marqueurs.
+5. Ajoutez du code pour créer des séries de marqueurs supplémentaires et personnalisés en appelant le constructeur de `marker_series` qui accepte un nom de chaîne pour la série de marqueurs.
 
     ```C++
 
@@ -74,15 +74,15 @@ Cette rubrique montre comment utiliser le kit SDK du visualiseur concurrentiel p
 
     ```
 
-6.  Démarrez le projet actuel pour afficher le visualiseur concurrentiel. Les deux séries de marqueurs s’affichent dans leurs propres couloirs dans la vue Threads. L’illustration suivante présente les deux nouvelles étendues.
+6. Démarrez le projet actuel pour afficher le visualiseur concurrentiel. Les deux séries de marqueurs s’affichent dans leurs propres couloirs dans la vue Threads. L’illustration suivante présente les deux nouvelles étendues.
 
      ![Visualiseur concurrentiel avec 3 séries de marqueurs personnalisés](../profiling/media/cvmarkerseriesnative.png "CvMarkerSeriesNative")
 
 ### <a name="to-use-visual-basic-or-c"></a>Pour utiliser Visual Basic ou C\#
 
-1.  Ajoutez la prise en charge du kit SDK du visualiseur concurrentiel à votre application. Pour plus d’informations, consultez [Kit SDK du visualiseur concurrentiel](../profiling/concurrency-visualizer-sdk.md).
+1. Ajoutez la prise en charge du kit SDK du visualiseur concurrentiel à votre application. Pour plus d’informations, consultez [Kit SDK du visualiseur concurrentiel](../profiling/concurrency-visualizer-sdk.md).
 
-2.  Ajoutez une instruction `using` ou `Imports` pour le kit SDK.
+2. Ajoutez une instruction `using` ou `Imports` pour le kit SDK.
 
     ```VB
     Imports Microsoft.ConcurrencyVisualizer.Instrumentation
@@ -93,7 +93,7 @@ Cette rubrique montre comment utiliser le kit SDK du visualiseur concurrentiel p
     using Microsoft.ConcurrencyVisualizer.Instrumentation;
     ```
 
-3.  Ajoutez du code pour créer trois étendues dans la série de marqueurs par défaut et écrire un indicateur, un message et une alerte (un pour chaque étendue). Créez un objet <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> en appelant la méthode statique `EnterSpan`. Pour écrire dans la série par défaut, utilisez les méthodes d’écriture statiques de la classe <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>.
+3. Ajoutez du code pour créer trois étendues dans la série de marqueurs par défaut et écrire un indicateur, un message et une alerte (un pour chaque étendue). Créez un objet <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Span> en appelant la méthode statique `EnterSpan`. Pour écrire dans la série par défaut, utilisez les méthodes d’écriture statiques de la classe <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers>.
 
     ```VB
 
@@ -134,11 +134,11 @@ Cette rubrique montre comment utiliser le kit SDK du visualiseur concurrentiel p
     alertSpan.Leave();
     ```
 
-4.  Dans la barre de menus, choisissez **Analyser**, **Visualiseur concurrentiel** et **Commencer par le projet en cours** pour exécuter l’application et afficher le visualiseur concurrentiel. L’illustration suivante montre les trois étendues et les trois marqueurs dans la vue Threads du visualiseur concurrentiel.
+4. Dans la barre de menus, choisissez **Analyser**, **Visualiseur concurrentiel** et **Commencer par le projet en cours** pour exécuter l’application et afficher le visualiseur concurrentiel. L’illustration suivante montre les trois étendues et les trois marqueurs dans la vue Threads du visualiseur concurrentiel.
 
      ![Visualiseur concurrentiel avec des marqueurs et des alertes](../profiling/media/cvmarkersmanaged.png "CvMarkersManaged")
 
-5.  Ajoutez du code pour créer une série de marqueurs de client à l’aide de la méthode statique <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.CreateMarkerSeries%2A>. La classe <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries> contient des méthodes pour créer des étendues et écrire des indicateurs, des messages et des alertes.
+5. Ajoutez du code pour créer une série de marqueurs de client à l’aide de la méthode statique <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.Markers.CreateMarkerSeries%2A>. La classe <xref:Microsoft.ConcurrencyVisualizer.Instrumentation.MarkerSeries> contient des méthodes pour créer des étendues et écrire des indicateurs, des messages et des alertes.
 
     ```VB
 
@@ -172,7 +172,7 @@ Cette rubrique montre comment utiliser le kit SDK du visualiseur concurrentiel p
     messageSeriesSpan.Leave();
     ```
 
-6.  Démarrez le projet actuel pour afficher le visualiseur concurrentiel. Les trois séries de marqueurs s’affichent dans leurs propres couloirs dans la vue Threads. L’illustration suivante présente les trois nouvelles étendues.
+6. Démarrez le projet actuel pour afficher le visualiseur concurrentiel. Les trois séries de marqueurs s’affichent dans leurs propres couloirs dans la vue Threads. L’illustration suivante présente les trois nouvelles étendues.
 
      ![Visualiseur concurrentiel avec 3 séries de marqueurs personnalisés](../profiling/media/cvmarkerseriesmanaged.png "CvMarkerSeriesManaged")
 

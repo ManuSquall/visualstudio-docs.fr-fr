@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 56f4fb82ab0e9792cadbeeea05499744e4c8ce46
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939021"
 ---
 # <a name="stoptrackingandcleanup"></a>StopTrackingAndCleanup
 Arrête tout le suivi et libère la mémoire utilisée par la session de suivi.

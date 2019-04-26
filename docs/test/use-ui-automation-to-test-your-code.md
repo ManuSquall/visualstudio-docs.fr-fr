@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b6798af3630f81aa50eaae05b23b6844dcba1f38
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897723"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973535"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Utiliser l’automatisation de l’interface utilisateur pour tester votre code
 
@@ -289,7 +289,7 @@ Après avoir créé votre test codé de l’interface utilisateur, vous pouvez l
 
 - L’**éditeur de test codé d’IU** vous permet de modifier facilement vos tests codés de l’interface utilisateur. Avec l’**éditeur de test codé d’IU**, vous pouvez rechercher, afficher et modifier vos méthodes de test. Vous pouvez aussi modifier des actions d'interface utilisateur et leurs contrôles associés dans le mappage de contrôle d'interface utilisateur. Pour plus d’informations, consultez [Modifier des tests codés de l’interface utilisateur à l’aide de l’éditeur de test codé de l’interface utilisateur](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).
 
-- **Éditeur de code :**
+- **Éditeur de code :**
 
     - Ajoutez manuellement du code pour les contrôles dans votre test comme décrit dans la section [Actions et propriétés des contrôles codés d’interface utilisateur](#coded-ui-control-actions-and-properties) de cette rubrique.
 
@@ -402,7 +402,7 @@ Pour effectuer des actions sur des contrôles de test de l'interface utilisateur
 
 Pour obtenir et définir des valeurs de propriétés spécifiques à un contrôle d'interface utilisateur, vous pouvez obtenir et définir directement les valeurs des propriétés d'un contrôle ou utiliser les méthodes <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A?displayProperty=fullName> et <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A?displayProperty=fullName> avec le nom de la propriété spécifique que vous souhaitez obtenir ou définir.
 
-<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A> retourne un objet qui peut être converti dans le <xref:System.Type> approprié. <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A> accepte un objet pour la valeur de la propriété.
+<xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.GetProperty%2A> retourne un objet qui peut être converti en <xref:System.Type> approprié. <xref:Microsoft.VisualStudio.TestTools.UITesting.UITestControl.SetProperty%2A> accepte un objet pour la valeur de la propriété.
 
 ### <a name="to-get-or-set-properties-from-ui-test-controls-directly"></a>Pour obtenir ou définir des propriétés directement à partir de contrôles de test d'interface utilisateur
 
@@ -443,11 +443,11 @@ Vous pouvez analyser les tests codés de l'interface utilisateur à l'aide de jo
 
 **Options supplémentaires pour l’exécution des tests codés de l’interface utilisateur :** vous pouvez exécuter des tests codés de l’interface utilisateur directement à partir de Visual Studio, comme décrit plus haut dans cette rubrique. Vous pouvez également exécuter des tests automatisés de l’interface utilisateur dans Microsoft Test Manager ou avec Azure Pipelines. Quand les tests codés de l'interface utilisateur sont automatisés, ils doivent interagir avec le Bureau lorsque vous les exécutez, contrairement aux autres tests automatisés.
 
-- [Exécuter des tests unitaires avec l'Explorateur de tests](../test/run-unit-tests-with-test-explorer.md)
+- [Exécuter des tests unitaires avec l’Explorateur de tests](../test/run-unit-tests-with-test-explorer.md)
 
-- [Exécuter des tests dans le processus de build](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
+- [Exécuter des tests dans votre processus de génération](/azure/devops/pipelines/test/getting-started-with-continuous-testing?view=vsts)
 
-- [Procédure : Configurer votre agent de test pour exécuter des tests qui interagissent avec le Bureau](https://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
+- [Guide pratique pour configurer votre agent de test pour exécuter des tests qui interagissent avec le Bureau](https://msdn.microsoft.com/Library/3a94dd07-6d17-402c-ae8f-7947143755c9)
 
 **Ajout de la prise en charge des contrôles personnalisés :**  le framework des tests codés de l’interface utilisateur ne prend pas en charge chaque IU possible et ne prend pas nécessairement en charge l’IU que vous souhaitez tester. Par exemple, vous ne pouvez pas créer immédiatement de test codé de l'interface utilisateur de l'IU de Microsoft Excel. Toutefois, vous pouvez créer une extension au framework de tests codés de l’interface utilisateur qui prendra en charge un contrôle personnalisé.
 
@@ -462,7 +462,7 @@ Les tests codés de l'interface utilisateur servent souvent à automatiser des t
 - <xref:Microsoft.VisualStudio.TestTools.UITest.Common.UIMap.UIMap>
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert>
 - [Procédure pas à pas : Créer, modifier et gérer un test codé de l’interface utilisateur](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
-- [Créer un test codé de l’interface utilisateur pour tester une application UWP](test-uwp-app-with-coded-ui-test.md)
+- [Créer un test codé d’interface utilisateur pour tester une application UWP](test-uwp-app-with-coded-ui-test.md)
 - [Anatomie d’un test codé de l’interface utilisateur](../test/anatomy-of-a-coded-ui-test.md)
 - [Bonnes pratiques pour les tests codés de l’interface utilisateur](../test/best-practices-for-coded-ui-tests.md)
 - [Tester une application volumineuse avec plusieurs mappages d’interface utilisateur](../test/testing-a-large-application-with-multiple-ui-maps.md)

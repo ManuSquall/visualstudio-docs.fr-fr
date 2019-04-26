@@ -8,19 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b49f87013671d459c0cd5843b9ecb4c4a0b3ae74
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 06fd67a62e37b3e498272fcc629b479b50c42944
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604637"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436760"
 ---
 # <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-memory-data-with-the-profiler-by-using-the-command-line"></a>Procédure : Instrumenter un composant .NET Framework autonome et collecter des données de mémoire avec le profileur en utilisant la ligne de commande
 Cet article explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour instrumenter un composant .NET Framework d’une application autonome, tel qu’un fichier .exe ou .dll, pour collecter des informations relatives à la mémoire à l’aide du profileur.
 
 > [!NOTE]
->  Pour obtenir le chemin d’accès des outils de profilage, voir [Spécifier le chemin d’accès des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.
-
+> Pour obtenir le chemin d’accès des outils de profilage, voir [Spécifier le chemin d’accès des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.
 
  Pour collecter les données de mémoire d’un composant .NET Framework à l’aide de la méthode d’instrumentation, utilisez l’outil [VSInstr.exe](../profiling/vsinstr.md) pour générer une version instrumentée du composant, et l’outil [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) pour initialiser les variables d’environnement de profilage. Ensuite, démarrez le profileur à l’aide de l’outil *VSPerfCmd.exe*.
 
@@ -40,7 +39,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
     **VSPerfClrEnv** {**/tracegc** &#124; **/tracegclife**}
 
-   -   Les options **/tracegc** et **/tracegclife** initialisent les variables d’environnement pour collecter uniquement des données d’allocation de mémoire, ou pour collecter à la fois des données d’allocation de mémoire et des données de durée de vie des objets.
+   - Les options **/tracegc** et **/tracegclife** initialisent les variables d’environnement pour collecter uniquement des données d’allocation de mémoire, ou pour collecter à la fois des données d’allocation de mémoire et des données de durée de vie des objets.
 
        |Option|Description|
        |------------|-----------------|
@@ -67,7 +66,6 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
    | [/counter](../profiling/counter.md) **:** `Config` | Collecte des informations à partir du compteur de performances du processeur spécifié dans la configuration. Les informations du compteur sont ajoutées aux données collectées à chaque événement de profilage. |
    | [events](../profiling/events-vsperfcmd.md) **:** `Config` | Spécifie l’événement du Suivi d’événements pour Windows (ETW) qui doit être collecté au cours du profilage. Les événements ETW sont collectés dans un fichier (.*etl*) distinct. |
 
-
 5. Démarrez l’application cible dans la fenêtre d’invite de commandes.
 
 ## <a name="control-data-collection"></a>Contrôler la collecte des données
@@ -75,7 +73,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
 #### <a name="to-start-and-stop-data-collection"></a>Pour démarrer et arrêter la collecte de données
 
--   Les paires d’options **VSPerfCmd** suivantes permettent de démarrer et d’arrêter la collecte des données. Spécifiez chaque option sur une ligne de commande distincte. Vous pouvez activer et désactiver la collecte de données à plusieurs reprises.
+- Les paires d’options **VSPerfCmd** suivantes permettent de démarrer et d’arrêter la collecte des données. Spécifiez chaque option sur une ligne de commande distincte. Vous pouvez activer et désactiver la collecte de données à plusieurs reprises.
 
     |Option|Description|
     |------------|-----------------|
@@ -88,13 +86,13 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
 #### <a name="to-end-a-profiling-session"></a>Pour terminer une session de profilage
 
-1.  Fermez l’application cible.
+1. Fermez l’application cible.
 
-2.  Fermez le profileur. Type :
+2. Fermez le profileur. Type :
 
      **VSPerfCmd /shutdown**
 
-3.  (Facultatif) Effacez les variables d’environnement de profilage. Type :
+3. (Facultatif) Effacez les variables d’environnement de profilage. Type :
 
      **VSPerfCmd /off**
 

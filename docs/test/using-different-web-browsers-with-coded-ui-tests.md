@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 822ce0a2f0e8632706a4a1551cc53aafb23563ed
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 2e397d587032bb6a8c125d38c10000e6a496c2d2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983028"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973017"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Utiliser différents navigateurs web avec des tests codés de l’interface utilisateur
 
@@ -24,13 +24,13 @@ Installez d’abord les [composants Selenium pour les tests codés de l’interf
 
 ## <a name="whats-supported-across-all-web-browsers"></a>Quelles sont les opérations prises en charge par tous les navigateurs web ?
 
--   [Ajouter du code personnalisé pour contrôler les fonctionnalités](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/) comme les propriétés, la recherche et les objets waiter de lecture.
+- [Ajouter du code personnalisé pour contrôler les fonctionnalités](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/) comme les propriétés, la recherche et les objets waiter de lecture.
 
--   Boîtes de dialogue et menus contextuels
+- Boîtes de dialogue et menus contextuels
 
--   [Exécuter le code JavaScript de base sans type de retour](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
+- [Exécuter le code JavaScript de base sans type de retour](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
 
--   Résilience de recherche (avec concordance active) et [améliorations des performances](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/)
+- Résilience de recherche (avec concordance active) et [améliorations des performances](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/)
 
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>Pourquoi dois-je utiliser les tests codés de l'interface utilisateur sur différents types de navigateur web ?
 
@@ -78,17 +78,17 @@ Pour plus d’informations sur la création et l’utilisation des tests codés 
 
 Pour activer le débogage de votre application web, vous devez utiliser les options de configuration suivantes :
 
-1.  Activer Uniquement mon code :
+1. Activer Uniquement mon code :
 
-    1.  Dans le menu **Outils**, choisissez **Options**, puis **Débogage**.
+    1. Dans le menu **Outils**, choisissez **Options**, puis **Débogage**.
 
-    2.  Sélectionnez **Activer Uniquement mon code**.
+    2. Sélectionnez **Activer Uniquement mon code**.
 
-2.  Désactiver les exceptions CLR :
+2. Désactiver les exceptions CLR :
 
-    1.  Dans le menu **Déboguer**, choisissez **Exceptions**.
+    1. Dans le menu **Déboguer**, choisissez **Exceptions**.
 
-    2.  Pour **Exceptions CLR**, désactivez **Non géré par l’utilisateur**.
+    2. Pour **Exceptions CLR**, désactivez **Non géré par l’utilisateur**.
 
 Si vous ne voyez pas l’option de modification `BrowserWindow.CurrentBrowser` dans le test codé de l’interface utilisateur, vous utilisez peut-être une version de Visual Studio qui ne prend pas en charge les tests codés de l’interface utilisateur avec différents navigateurs web. Pour utiliser ces tests codés de l’interface utilisateur, vous devez utiliser l’édition Visual Studio Enterprise.
 
