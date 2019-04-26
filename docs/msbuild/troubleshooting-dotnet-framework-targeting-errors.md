@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3ebe0d73aa2cd4a030e99d4501c5d3d726888f64
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 041a04827ee904f309b62b8fb875198cc8991b34
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620289"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434156"
 ---
 # <a name="troubleshoot-net-framework-targeting-errors"></a>Résoudre les erreurs de ciblage de .NET Framework
 Cette rubrique décrit les erreurs MSBuild qui peuvent se produire en raison de problèmes de référence et la façon dont vous pouvez résoudre ces erreurs.
@@ -51,7 +51,7 @@ Cette rubrique décrit les erreurs MSBuild qui peuvent se produire en raison de 
 ```
 
 > [!NOTE]
->  Après la fermeture et la ré-ouverture votre projet, vous devez également le régénérer pour vérifier que toutes les références sont correctement résolues.
+> Après la fermeture et la ré-ouverture votre projet, vous devez également le régénérer pour vérifier que toutes les références sont correctement résolues.
 
 ## <a name="see-also"></a>Voir aussi
 - [Guide pratique pour cibler une version du .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md)

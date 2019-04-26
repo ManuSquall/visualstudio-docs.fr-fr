@@ -8,23 +8,23 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9db76f90f50fd2eda6fcb443b2b7ca34a8bbc169
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: aa6d9416a6ce368a666d3f379e86752d82f00a91
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436742"
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>Procédure : Instrumenter un service .NET Framework et collecter des données de mémoire en utilisant la ligne de commande du profileur
 Cet article explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour instrumenter un service [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] et collecter des données d’utilisation de la mémoire. Vous pouvez collecter les données d’allocation de mémoire, ou bien collecter à la fois les données d’allocation de mémoire et les données de durée de vie des objets.
 
 > [!NOTE]
->  Les fonctionnalités de sécurité renforcée de Windows 8 et Windows Server 2012 ont imposé des changements importants dans la façon dont le profileur Visual Studio collecte les données sur ces plateformes. Les applications UWP nécessitent aussi de nouvelles techniques de collecte. Consultez [Outils d’analyse des performances sur les applications Windows 8 et Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+> Les fonctionnalités de sécurité renforcée de Windows 8 et Windows Server 2012 ont imposé des changements importants dans la façon dont le profileur Visual Studio collecte les données sur ces plateformes. Les applications UWP nécessitent aussi de nouvelles techniques de collecte. Consultez [Outils d’analyse des performances sur les applications Windows 8 et Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 >
 > [!NOTE]
->  Vous ne pouvez pas profiler un service avec la méthode d’instrumentation si le service ne peut pas être redémarré après le démarrage de l’ordinateur, comme un service qui démarre au démarrage du système d’exploitation.
+> Vous ne pouvez pas profiler un service avec la méthode d’instrumentation si le service ne peut pas être redémarré après le démarrage de l’ordinateur, comme un service qui démarre au démarrage du système d’exploitation.
 >
->  Pour obtenir le chemin d’accès des outils de profilage, voir [Spécifier le chemin d’accès des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.
+> Pour obtenir le chemin d’accès des outils de profilage, voir [Spécifier le chemin d’accès des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.
 
 ## <a name="start-the-profiling-session"></a>Démarrer la session de profilage
  Pour collecter des données de performances auprès d’un service [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)], vous utilisez l’outil [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) pour initialiser les variables d’environnement appropriées et l’outil [VSInstr.exe](../profiling/vsinstr.md) pour créer une copie instrumentée du fichier binaire du service.
@@ -47,7 +47,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
     **VSPerfClrEnv** {**/globaltracegc** &#124; **/globaltracegclife**}
 
-   -   **/globaltracegc** et **/globaltracegclife** activent la collecte des données d’allocation de mémoire et de durée de vie des objets.
+   - **/globaltracegc** et **/globaltracegclife** activent la collecte des données d’allocation de mémoire et de durée de vie des objets.
 
        |Option|Description|
        |------------|-----------------|
@@ -69,7 +69,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
      Vous pouvez utiliser l’une des options suivantes avec l’option **/start:sample**.
 
    > [!NOTE]
-   >  Les options **/user** et **/crosssession** sont généralement nécessaires pour les services.
+   > Les options **/user** et **/crosssession** sont généralement nécessaires pour les services.
 
    | Option | Description |
    | - | - |
@@ -82,21 +82,20 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
    | [/automark](../profiling/automark.md) **:** `Interval` | À utiliser avec **/wincounter** uniquement. Spécifie le nombre de millisecondes écoulées entre les événements de collecte du compteur de performances Windows. La valeur par défaut est de 500 ms. |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Spécifie l’événement du Suivi d’événements pour Windows (ETW) qui doit être collecté au cours du profilage. Les événements ETW sont collectés dans un fichier (.*etl*) distinct. |
 
-
 8. Si nécessaire, démarrez le service.
 
 9. Attachez le profileur au service. Type :
 
      **VSPerfCmd /attach:** `PID`&#124;`ProcessName`
 
-    -   Spécifiez l’ID ou le nom de processus du service. Vous pouvez afficher les ID et les noms de processus de tous les processus en cours d’exécution dans le Gestionnaire des tâches de Windows.
+    - Spécifiez l’ID ou le nom de processus du service. Vous pouvez afficher les ID et les noms de processus de tous les processus en cours d’exécution dans le Gestionnaire des tâches de Windows.
 
 ## <a name="control-data-collection"></a>Contrôler la collecte des données
  Pendant l’exécution du service, vous pouvez contrôler la collecte des données en démarrant et en arrêtant l’écriture des données dans le fichier avec les options de *VSPerfCmd.exe*. Le fait de pouvoir contrôler la collecte vous permet de collecter des données pour une phase spécifique de l’exécution du programme, telle que le démarrage ou l’arrêt de l’application.
 
 #### <a name="to-start-and-stop-data-collection"></a>Pour démarrer et arrêter la collecte de données
 
--   Les paires d’options **VSPerfCmd** suivantes permettent de démarrer et d’arrêter la collecte des données. Spécifiez chaque option sur une ligne de commande distincte. Vous pouvez activer et désactiver la collecte de données à plusieurs reprises.
+- Les paires d’options **VSPerfCmd** suivantes permettent de démarrer et d’arrêter la collecte des données. Spécifiez chaque option sur une ligne de commande distincte. Vous pouvez activer et désactiver la collecte de données à plusieurs reprises.
 
     |Option|Description|
     |------------|-----------------|
@@ -109,19 +108,19 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
 #### <a name="to-end-a-profiling-session"></a>Pour terminer une session de profilage
 
-1.  Arrêtez le service à partir du Gestionnaire de contrôle des services.
+1. Arrêtez le service à partir du Gestionnaire de contrôle des services.
 
-2.  Fermez le profileur. Type :
+2. Fermez le profileur. Type :
 
      **VSPerfCmd /shutdown**
 
-3.  Quand vous avez terminé le profilage, effacez les variables d’environnement de profilage. Type :
+3. Quand vous avez terminé le profilage, effacez les variables d’environnement de profilage. Type :
 
      **VSPerfClrEnv /globaloff**
 
      Remplacez le module instrumenté par l’original. Si nécessaire, reconfigurez le type de démarrage du service.
 
-4.  Redémarrez l'ordinateur.
+4. Redémarrez l'ordinateur.
 
 ## <a name="see-also"></a>Voir aussi
 - [Profiler des services](../profiling/command-line-profiling-of-services.md)
