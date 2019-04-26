@@ -18,17 +18,17 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 711082c70c6174bdf3363ddb12d233ceb3f78f0d
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018114"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838937"
 ---
 # <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>Tutoriel : Créer une application ASP.NET Core à l’aide d’Entity Framework avec Visual Studio 2019
 
 Ce tutoriel explique comment créer une application web ASP.NET Core qui utilise des données et la déployer sur Azure. Il se compose des étapes suivantes :
 
-- [Étape 1 : Installer Visual Studio 2019](#step-1-install-visual-studio-2019)
+- [Étape 1 : Installer Visual Studio 2019](#step-1-install-visual-studio-2019)
 - [Étape 2 : Créer une application web ASP.NET Core](tutorial-aspnet-core-ef-step-02.md)
 - [Étape 3 : Travailler avec des données à l’aide d’Entity Framework](tutorial-aspnet-core-ef-step-03.md)
 - [Étape 4 : Exposer une API web à partir d’une application ASP.NET Core](tutorial-aspnet-core-ef-step-04.md)

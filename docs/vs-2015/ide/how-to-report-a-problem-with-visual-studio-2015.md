@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 73b06f4235d5770cb6c086d6aed54229e00702de
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d8cedd5ab26539d5ebe32aee8df272691dd0a779
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665140"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083647"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>Guide pratique pour signaler un problème avec Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Cliquez sur l’icône des commentaires utilisateur à côté de **Lancement rap
 
 ## <a name="describe-the-problem"></a>Décrire le problème
 
-###  <a name="describe_the_problem"></a>
+### <a name="describe_the_problem"></a>
 
 1. Donnez un titre descriptif au problème qui nous aidera à l’adresser à l’équipe Visual Studio appropriée.
 
@@ -49,15 +49,15 @@ Choisissez **Inclure une capture d’écran** pour envoyer l’écran actuelleme
 
 ## <a name="provide-a-trace-and-heap-dump-optional"></a>Fournir un fichier dump de tas et de suivi (facultatif)
 
-###  <a name="provide_a_trace_and_heap_dump"></a>
+### <a name="provide_a_trace_and_heap_dump"></a>
 
-1.  Les fichiers dump de tas et de suivi s’avèrent très utiles pour nous aider à diagnostiquer les problèmes.   Nous vous remercions beaucoup d’employer l’outil Signaler un problème pour enregistrer les étapes de reproduction du problème ainsi que d’envoyer les données à Microsoft.
+1. Les fichiers dump de tas et de suivi s’avèrent très utiles pour nous aider à diagnostiquer les problèmes.   Nous vous remercions beaucoup d’employer l’outil Signaler un problème pour enregistrer les étapes de reproduction du problème ainsi que d’envoyer les données à Microsoft.
 
-2.  Cliquez sur le chevron en regard de **Enregistrez vos actions pour reproduire le problème**. Si le problème est tel que Visual Studio se bloque ou tombe en panne, ouvrez une autre instance de Visual Studio et sélectionnez-la dans l’affichage de liste.
+2. Cliquez sur le chevron en regard de **Enregistrez vos actions pour reproduire le problème**. Si le problème est tel que Visual Studio se bloque ou tombe en panne, ouvrez une autre instance de Visual Studio et sélectionnez-la dans l’affichage de liste.
 
-3.  Cliquez sur **Démarrer l’enregistrement** et effectuez les étapes pour reproduire le problème. Quand vous avez terminé, cliquez sur le bouton **Arrêter l’enregistrement** dans la fenêtre flottante.
+3. Cliquez sur **Démarrer l’enregistrement** et effectuez les étapes pour reproduire le problème. Quand vous avez terminé, cliquez sur le bouton **Arrêter l’enregistrement** dans la fenêtre flottante.
 
-4.  Attendez quelques minutes que Visual Studio collecte et compresse les informations qui ont été enregistrées. La boîte de dialogue ressemble à ceci quand le processus de collection est terminé :
+4. Attendez quelques minutes que Visual Studio collecte et compresse les informations qui ont été enregistrées. La boîte de dialogue ressemble à ceci quand le processus de collection est terminé :
 
      ![Enregistrer un fichier de trace](../ide/media/record-a-trace-file.png "Enregistrer un fichier de trace")
 

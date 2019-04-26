@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 04392545b5b5c352a35b9a3d523f0c6ff5d98b01
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c1fb81261f52fa5aaf73c30579332779ae5bfa17
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54787074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443182"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Classes Visual C++ dans le Concepteur de classes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "54787074"
 Le Concepteur de classes prend en charge les classes C++ et visualise les classes C++ natives de la même façon que les formes de classe Visual Basic et Visual C#, excepté que les classes C++ peuvent avoir plusieurs relations d’héritage. Vous pouvez développer la forme de classe pour afficher plus de champs et de méthodes dans la classe, ou la réduire pour économiser l’espace.  
   
 > [!NOTE]
->  Le Concepteur de classes ne prend pas en charge les unions (un type spécial de classe dans laquelle la mémoire allouée est uniquement suffisante pour la plus grande donnée membre de l’union).  
+> Le Concepteur de classes ne prend pas en charge les unions (un type spécial de classe dans laquelle la mémoire allouée est uniquement suffisante pour la plus grande donnée membre de l’union).  
   
 ## <a name="simple-inheritance"></a>Héritage simple  
  Quand vous faites glisser plusieurs classes sur un diagramme de classes et que les classes ont une relation d’héritage de classe, une flèche les connecte. La flèche pointe dans la direction de la classe de base. Par exemple, quand les classes suivantes sont affichées dans un diagramme de classes, une flèche les connecte en pointant de B vers A :  
@@ -52,7 +52,7 @@ class Penguin : public Bird, public Swimmer {};
  Pour afficher les classes de base correspondant à la classe adoptée, cliquez avec le bouton droit sur une forme de classe, puis cliquez sur **Afficher les classes de base**.  
   
 > [!NOTE]
->  La commande **Afficher les classes dérivées** n’est pas prise en charge pour le code C++. Pour afficher des classes dérivées, accédez à l’affichage de classes, développez le nœud de type, développez le sous-dossier **Types dérivés**, puis faites glisser ces types sur le diagramme de classes.  
+> La commande **Afficher les classes dérivées** n’est pas prise en charge pour le code C++. Pour afficher des classes dérivées, accédez à l’affichage de classes, développez le nœud de type, développez le sous-dossier **Types dérivés**, puis faites glisser ces types sur le diagramme de classes.  
   
  Pour plus d’informations sur l’héritage de classes multiples, consultez [(NOTINBUILD) Héritage multiple](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) et [Plusieurs classes de base](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740).  
   
