@@ -11,12 +11,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a9298f57e3b1f4a05effcb82a39e14503c9cbf74
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7097311c3d1aae718096c3bf74ec04c3e5ea8818
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090757"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433585"
 ---
 # <a name="item-definitions"></a>Définitions d'éléments
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "60090757"
  Les métadonnées d’éléments qui sont définies dans un ItemDefinitionGroup sont simplement une déclaration de métadonnées par défaut. Les métadonnées ne s’applique pas sauf si vous définissez un élément qui utilise un ItemGroup pour contenir les valeurs des métadonnées.  
   
 > [!NOTE]
->  Dans la plupart des exemples de cette rubrique, un élément ItemDefinitionGroup est montré mais sa définition ItemGroup correspondante est omise par souci de clarté.  
+> Dans la plupart des exemples de cette rubrique, un élément ItemDefinitionGroup est montré mais sa définition ItemGroup correspondante est omise par souci de clarté.  
   
  Les métadonnées explicitement définies dans un ItemGroup sont prioritaires sur les métadonnées dans ItemDefinitionGroup. Les métadonnées dans ItemDefinitionGroup sont appliquées uniquement pour les métadonnées non définies dans un ItemGroup. Par exemple :  
   
@@ -61,7 +61,7 @@ ms.locfileid: "60090757"
  Dans cet exemple, les métadonnées par défaut « m » sont appliquées à l’élément « i », car les métadonnées « m » ne sont pas explicitement définies par l’élément « i ». Cependant, les métadonnées par défaut « n » ne sont pas appliquées à l’élément « i », car les métadonnées « n » sont déjà définies par l’élément « i ».  
   
 > [!NOTE]
->  Les noms de paramètre et d’élément XML respectent la casse. Les noms des métadonnées d’élément et des éléments\/propriétés ne respectent pas la casse. Par conséquent, les éléments ItemDefinitionGroup ayant des noms qui diffèrent uniquement par la casse doivent être traités comme le même ItemGroup.  
+> Les noms de paramètre et d’élément XML respectent la casse. Les noms des métadonnées d’élément et des éléments\/propriétés ne respectent pas la casse. Par conséquent, les éléments ItemDefinitionGroup ayant des noms qui diffèrent uniquement par la casse doivent être traités comme le même ItemGroup.  
   
 ## <a name="value-sources"></a>Sources des valeurs  
  Les valeurs pour les métadonnées définies dans un ItemDefinitionGroup peuvent provenir de nombreuses sources différentes, comme suit :  
@@ -83,7 +83,7 @@ ms.locfileid: "60090757"
 - Section CDATA \< \! \[CDATA\[rien ici n’est pas analysé\]\]\>  
   
 > [!NOTE]
->  Les métadonnées d’élément d’un ItemGroup ne sont pas utiles dans une déclaration de métadonnées ItemDefinitionGroup, car les éléments ItemDefinitionGroup sont traités avant les éléments ItemGroup.  
+> Les métadonnées d’élément d’un ItemGroup ne sont pas utiles dans une déclaration de métadonnées ItemDefinitionGroup, car les éléments ItemDefinitionGroup sont traités avant les éléments ItemGroup.  
   
 ## <a name="additive-and-multiple-definitions"></a>Définitions additives et multiples  
  Quand vous ajoutez des définitions ou que vous utilisez plusieurs ItemDefinitionGroup, gardez à l’esprit que :  
@@ -128,7 +128,7 @@ ms.locfileid: "60090757"
  Dans cet exemple, la valeur précédemment définie pour les métadonnées « m » \(m1\) est ajoutée à la nouvelle valeur \(m2\), de sorte que la valeur finale est « m1;m2 ».  
   
 > [!NOTE]
->  Ceci peut également se produire dans le même ItemDefinitionGroup.  
+> Ceci peut également se produire dans le même ItemDefinitionGroup.  
   
  Quand vous remplacez les métadonnées définies précédemment, la dernière spécification est prioritaire. Dans l’exemple suivant, la valeur finale des métadonnées « m » passe de « m1 » « m1a ».  
   
@@ -159,7 +159,7 @@ ms.locfileid: "60090757"
  Dans ce cas, les métadonnées par défaut « m1 » sur l’élément « i » sont incluses seulement si la valeur de la propriété « Configuration » est « Debug ».  
   
 > [!NOTE]
->  Seules les références de métadonnées locales sont prises en charge dans les conditions.  
+> Seules les références de métadonnées locales sont prises en charge dans les conditions.  
   
  Les références aux métadonnées définies dans un ItemDefinitionGroup antérieur sont locales à l’élément, et non pas au groupe de définitions. Autrement dit, l’étendue des références sont spécifiques aux éléments. Par exemple :  
   

@@ -24,12 +24,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aba4d37d672d3e544d65f46c6f32062f9b2637eb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: df33215bab20be8744ed2455ef87f1a037871f95
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663977"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419715"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Navigateur web, Environnement, boîte de dialogue Options | Microsoft Docs
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,10 +37,10 @@ ms.locfileid: "59663977"
 Définit les options à la fois pour le navigateur web interne et pour Internet Explorer. Pour accéder à cette boîte de dialogue, cliquez sur **Options** dans le menu **Outils**, développez le dossier **Environnement**, puis sélectionnez **Navigateur web**.  
   
 > [!NOTE]
->  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 > [!IMPORTANT]
->  L’ouverture de certains fichiers ou composants à partir du web peut entraîner l’exécution de code sur votre ordinateur.  
+> L’ouverture de certains fichiers ou composants à partir du web peut entraîner l’exécution de code sur votre ordinateur.  
   
  Page d'accueil  
  Définit la page affichée quand vous ouvrez le navigateur web de l’IDE.  
@@ -61,7 +61,7 @@ Définit les options à la fois pour le navigateur web interne et pour Internet 
   Cliquez sur ce bouton pour modifier les options relatives à Internet Explorer dans la boîte de dialogue **Propriétés Internet**. Les modifications apportées dans cette boîte de dialogue affectent à la fois le navigateur web interne et les instances d’Internet Explorer lancées en dehors de l’IDE de Visual Studio (par exemple, à partir du menu Démarrer).  
   
 > [!NOTE]
->  Pour remplacer le navigateur web interne de Visual Studio, qui est une version d’Internet Explorer, par un autre navigateur web externe, utilisez la boîte de dialogue Naviguer avec.  
+> Pour remplacer le navigateur web interne de Visual Studio, qui est une version d’Internet Explorer, par un autre navigateur web externe, utilisez la boîte de dialogue Naviguer avec.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Environnement, boîte de dialogue Options](../../ide/reference/environment-options-dialog-box.md)   

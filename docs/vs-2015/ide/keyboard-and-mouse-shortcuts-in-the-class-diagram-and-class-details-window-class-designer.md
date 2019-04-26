@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3fc21eb85c46d74fabc777147b14575babd9be8b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 861ce1cf40dd5c56c043399387ef51fa3b4efee2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113012"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412255"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Raccourcis clavier et souris dans le diagramme de classes et dans la fenêtre Détails de classe(Concepteur de classes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +92,7 @@ Vous pouvez utiliser le clavier en plus de la souris pour naviguer dans le Conce
 ## <a name="KeyboardClassDetails"></a> Utilisation du clavier dans la fenêtre Détails de classe  
   
 > [!NOTE]
->  Les combinaisons de touches suivantes ont été choisies pour reproduire spécifiquement l’expérience de saisie du code.  
+> Les combinaisons de touches suivantes ont été choisies pour reproduire spécifiquement l’expérience de saisie du code.  
   
  Utilisez les touches suivantes pour naviguer dans la fenêtre Détails de classe :  
   

@@ -21,12 +21,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: beb0296834986648f47357da50d4022c1f632823
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 582905042938d79a1885279bd19c18f48b49bb84
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658784"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438031"
 ---
 # <a name="properties-window"></a>Propriétés (fenêtre)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,25 +58,25 @@ Utilisez cette fenêtre pour afficher et modifier les événements et propriét�
  Affiche les événements définis pour un objet.  
   
 > [!NOTE]
->  Ce contrôle de barre d’outils de la fenêtre **Propriétés** n’est disponible que quand un Concepteur de formulaires ou de contrôles est actif dans le contexte d’un projet [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. Lors de la modification de fichiers XAML, les événements apparaissent sous un onglet séparé de la fenêtre Propriétés.  
+> Ce contrôle de barre d’outils de la fenêtre **Propriétés** n’est disponible que quand un Concepteur de formulaires ou de contrôles est actif dans le contexte d’un projet [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. Lors de la modification de fichiers XAML, les événements apparaissent sous un onglet séparé de la fenêtre Propriétés.  
   
  Messages  
  Répertorie tous les messages Windows. Vous permet d’ajouter ou de supprimer des fonctions gestionnaires spécifiées pour les messages fournis pour la classe sélectionnée.  
   
 > [!NOTE]
->  Ce contrôle de barre d’outils de la fenêtre **Propriétés** n’est disponible que quand la fenêtre active est **Affichage de classes** dans le contexte d’un projet [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)].  
+> Ce contrôle de barre d’outils de la fenêtre **Propriétés** n’est disponible que quand la fenêtre active est **Affichage de classes** dans le contexte d’un projet [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)].  
   
  Overrides  
  Répertorie toutes les fonctions virtuelles de la classe sélectionnée, et vous permet d’ajouter ou de supprimer des fonctions de substitution.  
   
 > [!NOTE]
->  Ce contrôle de barre d’outils de la fenêtre **Propriétés** n’est disponible que quand la fenêtre active est **Affichage de classes** dans le contexte d’un projet [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)].  
+> Ce contrôle de barre d’outils de la fenêtre **Propriétés** n’est disponible que quand la fenêtre active est **Affichage de classes** dans le contexte d’un projet [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)].  
   
  Volet Description  
  Présente le type de la propriété et la décrit brièvement. Vous pouvez activer et désactiver la description de la propriété à l’aide de la commande Description du menu contextuel.  
   
 > [!NOTE]
->  Ce contrôle de barre d’outils de la fenêtre **Propriétés** n’est pas disponible lors de la modification de fichiers XAML dans le concepteur.  
+> Ce contrôle de barre d’outils de la fenêtre **Propriétés** n’est pas disponible lors de la modification de fichiers XAML dans le concepteur.  
   
  Vue miniatures  
  Affiche une représentation visuelle de l’élément actuellement sélectionné lors de la modification de fichiers XAML dans le concepteur.  

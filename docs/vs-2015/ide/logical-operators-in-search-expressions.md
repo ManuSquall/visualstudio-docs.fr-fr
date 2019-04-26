@@ -12,12 +12,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 66d6aa6a11ef0ce308c5ba2b089aaa8170b6441f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 30a33a434540fded8daab0628d0bd6dd7fb0ff38
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54760068"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412268"
 ---
 # <a name="logical-operators-in-search-expressions"></a>Opérateurs logiques dans les expressions de recherche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54760068"
 À l’aide des opérateurs logiques, vous pouvez affiner votre recherche de contenu en créant des expressions de recherche plus complexes. Comme le montre le tableau suivant, les opérateurs logiques spécifient comment plusieurs termes de recherche doivent être combinés dans une requête de recherche.  
   
 > [!IMPORTANT]
->  Vous devez entrer les opérateurs logiques tout en majuscules pour que le moteur de recherche puisse les reconnaître.  
+> Vous devez entrer les opérateurs logiques tout en majuscules pour que le moteur de recherche puisse les reconnaître.  
   
 |Pour rechercher|Utilisez|Exemple|Résultat|  
 |-------------------|---------|-------------|------------|  

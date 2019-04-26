@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e5771158e23acb399b3446e784e27825bb15d705
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: c8ef52638858160822fcc271a53513b130afc3f4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440053"
 ---
 # <a name="how-to-configure-targets-and-tasks"></a>Guide pratique pour configurer les cibles et les tâches
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,16 +22,16 @@ ms.locfileid: "59658982"
 Des tâches MSBuild sélectionnées peuvent être définies pour s’exécuter dans l’environnement qu’elles ciblent, quel que soit l’environnement de l’ordinateur de développement. Par exemple, quand vous utilisez un ordinateur 64 bits pour générer une application ciblant une architecture 32 bits, les tâches sélectionnées sont exécutées dans un processus 32 bits.  
   
 > [!NOTE]
->  Si une tâche de génération est écrite dans un langage .NET, comme Visual C# ou Visual Basic, et qu’elle n’utilise pas des ressources natives ou des outils natifs, elle est exécutée dans un contexte cible sans adaptation.  
+> Si une tâche de génération est écrite dans un langage .NET, comme Visual C# ou Visual Basic, et qu’elle n’utilise pas des ressources natives ou des outils natifs, elle est exécutée dans un contexte cible sans adaptation.  
   
 ## <a name="usingtask-attributes-and-task-parameters"></a>Attributs UsingTask et paramètres de tâche  
  Les attributs `UsingTask` suivants affectent toutes les opérations d’une tâche dans un processus de génération spécifique :  
   
--   L’attribut `Runtime`, s’il est présent, définit la version du common language runtime (CLR) et peut prendre une des valeurs suivantes : `CLR2`, `CLR4`, `CurrentRuntime` ou `*` (n’importe quel runtime).  
+- L’attribut `Runtime`, s’il est présent, définit la version du common language runtime (CLR) et peut prendre une des valeurs suivantes : `CLR2`, `CLR4`, `CurrentRuntime` ou `*` (n’importe quel runtime).  
   
--   L’attribut `Architecture`, s’il est présent, définit la plateforme et le nombre de bits, et peut prendre une des valeurs suivantes : `x86`, `x64`, `CurrentArchitecture` ou `*` (n’importe quelle architecture).  
+- L’attribut `Architecture`, s’il est présent, définit la plateforme et le nombre de bits, et peut prendre une des valeurs suivantes : `x86`, `x64`, `CurrentArchitecture` ou `*` (n’importe quelle architecture).  
   
--   L’attribut `TaskFactory`, s’il est présent, définit la fabrique de tâches qui crée et exécute l’instance de tâche, et il prend uniquement la valeur `TaskHostFactory`. Pour plus d’informations, consultez la section « Fabriques de tâches » plus loin dans ce document.  
+- L’attribut `TaskFactory`, s’il est présent, définit la fabrique de tâches qui crée et exécute l’instance de tâche, et il prend uniquement la valeur `TaskHostFactory`. Pour plus d’informations, consultez la section « Fabriques de tâches » plus loin dans ce document.  
   
 ```  
 <UsingTask TaskName="SimpleTask"   
@@ -53,7 +53,7 @@ Des tâches MSBuild sélectionnées peuvent être définies pour s’exécuter d
  Avant que MSBuild exécute une tâche, il recherche un attribut `UsingTask` qui a le même contexte cible.  Les paramètres spécifiés dans l’attribut `UsingTask` mais qui ne sont pas dans la tâche correspondante sont considérés comme étant en correspondance.  Les paramètres spécifiés dans la tâche mais qui ne sont pas dans l’attribut `UsingTask` correspondant sont également considérés comme étant en correspondance. Si des valeurs de paramètre ne sont pas spécifiées dans l’attribut `UsingTask` ou dans la tâche, leur valeur par défaut est `*` (n’importe quel paramètre).  
   
 > [!WARNING]
->  S’il existe plusieurs attributs `UsingTask` et que tous ont des attributs `TaskName`, `Runtime` et `Architecture` correspondants, le dernier à être évalué remplace les autres.  
+> S’il existe plusieurs attributs `UsingTask` et que tous ont des attributs `TaskName`, `Runtime` et `Architecture` correspondants, le dernier à être évalué remplace les autres.  
   
  Si des paramètres sont définis sur la tâche, MSBuild tente de trouver un attribut `UsingTask` qui correspond à ces paramètres ou qui au moins n’est pas en conflit avec ceux-ci.  Plusieurs attributs `UsingTask` peuvent spécifier le contexte cible de la même tâche.  Par exemple, une tâche qui a des exécutables différents pour des environnements cibles différents peut se présenter comme ceci :  
   
@@ -103,12 +103,12 @@ Des tâches MSBuild sélectionnées peuvent être définies pour s’exécuter d
  Contrairement à d’autres paramètres de tâche, `MSBuildRuntime` et `MSBuildArchitecture` ne sont pas visibles pour la tâche elle-même.  Pour écrire une tâche qui tient compte du contexte dans lequel elle s’exécute, vous devez tester le contexte en appelant le .NET Framework ou utiliser les propriétés de la build pour passer les informations de contexte avec d’autres paramètres de la tâche.  
   
 > [!NOTE]
->  Les attributs `UsingTask` peuvent être définis à partir des propriétés d’ensemble d’outils et d’environnement.  
+> Les attributs `UsingTask` peuvent être définis à partir des propriétés d’ensemble d’outils et d’environnement.  
   
  Les paramètres `MSBuildRuntime` et `MSBuildArchitecture` représentent le moyen le plus simple de définir le contexte cible, mais également le plus limité en portée.  D’une part, comme ils sont définis sur l’instance de tâche et ne sont pas évalués tant que la tâche n’est pas sur le point d’être exécutée, ils peuvent dériver leur valeur à partir de la portée complète des propriétés disponibles au moment de l’évaluation et au moment de la génération.  D’autre part, ces paramètres s’appliquent uniquement à une instance particulière d’une tâche dans une cible particulière.  
   
 > [!NOTE]
->  Les paramètres de tâche sont évalués dans le contexte du nœud parent et non dans le contexte de l’hôte de tâche. Les variables d’environnement qui dépendent du runtime ou de l’architecture (par exemple, l’emplacement des fichiers programme) correspond à la valeur associée au nœud parent.  Toutefois, si la même variable d’environnement est lue directement par la tâche, elle est correctement évaluée dans le contexte de l’hôte de tâche.  
+> Les paramètres de tâche sont évalués dans le contexte du nœud parent et non dans le contexte de l’hôte de tâche. Les variables d’environnement qui dépendent du runtime ou de l’architecture (par exemple, l’emplacement des fichiers programme) correspond à la valeur associée au nœud parent.  Toutefois, si la même variable d’environnement est lue directement par la tâche, elle est correctement évaluée dans le contexte de l’hôte de tâche.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Configuration des cibles et des tâches](../msbuild/configuring-targets-and-tasks.md)

@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c0603bd820990789af0d9bbca147acd7004e1a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 35c5b1275ced5eb7f2fee85c0592be2b5ed94533
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097529"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419756"
 ---
 # <a name="toolbox-html-tab"></a>Boîte à outils, onglet HTML
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -96,7 +96,7 @@ L’onglet **HTML** de la boîte à outils fournit des composants utiles sur les
  Pour plus d’informations, voir [Contrôles de saisie HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Syntaxe déclarative du contrôle serveur HtmlInputText](http://msdn.microsoft.com/87060d90-a11c-434d-9fc9-b03a8487041e), [Vue d’ensemble du contrôle serveur web TextBox](http://msdn.microsoft.com/library/ab354bc1-f23a-48fc-93d8-d4d7c1b7396f), <xref:System.Web.UI.HtmlControls.HtmlInputText> et <xref:System.Web.UI.WebControls.TextBox>.  
   
 > [!IMPORTANT]
->  Il est recommandé de valider toutes les entrées d’utilisateur. Pour plus d’informations, consultez [Validation des entrées d’utilisateur dans des pages Web ASP.NET](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+> Il est recommandé de valider toutes les entrées d’utilisateur. Pour plus d’informations, consultez [Validation des entrées d’utilisateur dans des pages Web ASP.NET](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
  **Input (File)**  
  ![Champ File de page HTML](../../ide/reference/media/vxfilefield.gif "vxFilefield")  
@@ -112,7 +112,7 @@ L’onglet **HTML** de la boîte à outils fournit des composants utiles sur les
  Pour plus d’informations, voir [Contrôles de saisie HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Syntaxe déclarative du contrôle serveur HtmlInputFile](http://msdn.microsoft.com/a817b4a0-056f-4c17-a696-b9fdcde43db6) et <xref:System.Web.UI.HtmlControls.HtmlInputFile>.  
   
 > [!IMPORTANT]
->  Il est recommandé de valider toutes les entrées d’utilisateur. Pour plus d’informations, consultez [Validation des entrées d’utilisateur dans des pages Web ASP.NET](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+> Il est recommandé de valider toutes les entrées d’utilisateur. Pour plus d’informations, consultez [Validation des entrées d’utilisateur dans des pages Web ASP.NET](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
  **Input (Password)**  
  ![Champ Password de Visual Studio](../../ide/reference/media/vxpassword.gif "vxPassword")  
@@ -128,7 +128,7 @@ L’onglet **HTML** de la boîte à outils fournit des composants utiles sur les
  Pour plus d’informations, consultez [Contrôles Input HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Syntaxe déclarative des contrôles serveur HtmlInputPassword](http://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f), [Comment : définir un contrôle serveur Web TextBox pour l’entrée de mots de passe](http://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310) et [Procédure pas à pas : validation des entrées d’utilisateur dans une page Web Forms](http://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436).  
   
 > [!IMPORTANT]
->  Si votre application transmet des noms d’utilisateurs et des mots de passe, vous devez configurer votre site web afin qu’il utilise SSL (Secure Sockets Layer) pour chiffrer la transmission. Pour plus d’informations, consultez la rubrique relative à la sécurisation des connexions avec SSL dans le [Guide des opérations IIS](http://go.microsoft.com/fwlink/?linkid=47856). Il est, en outre, recommandé de valider toutes les entrées d’utilisateur. Pour plus d’informations, consultez [Validation des entrées d’utilisateur dans des pages Web ASP.NET](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+> Si votre application transmet des noms d’utilisateurs et des mots de passe, vous devez configurer votre site web afin qu’il utilise SSL (Secure Sockets Layer) pour chiffrer la transmission. Pour plus d’informations, consultez la rubrique relative à la sécurisation des connexions avec SSL dans le [Guide des opérations IIS](http://go.microsoft.com/fwlink/?linkid=47856). Il est, en outre, recommandé de valider toutes les entrées d’utilisateur. Pour plus d’informations, consultez [Validation des entrées d’utilisateur dans des pages Web ASP.NET](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
  **Input (Check box)**  
  ![Option Checkbox de boîte à outils de page web HTML](../../ide/reference/media/vxcheckbox.gif "vxCheckbox")  
@@ -183,7 +183,7 @@ L’onglet **HTML** de la boîte à outils fournit des composants utiles sur les
  Pour plus d’informations, voir [Syntaxe déclarative du contrôle serveur HtmlTextArea](http://msdn.microsoft.com/5a103ffa-235b-4452-ba2b-a4fb8ba8cb87), <xref:System.Web.UI.HtmlControls.HtmlTextArea> et <xref:System.Web.UI.WebControls.TextBox>.  
   
 > [!IMPORTANT]
->  Il est recommandé de valider toutes les entrées d’utilisateur. Pour plus d’informations, consultez [Validation des entrées d’utilisateur dans des pages Web ASP.NET](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+> Il est recommandé de valider toutes les entrées d’utilisateur. Pour plus d’informations, consultez [Validation des entrées d’utilisateur dans des pages Web ASP.NET](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
  **Table**  
  ![Capture d’écran de HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif "vxTable")  

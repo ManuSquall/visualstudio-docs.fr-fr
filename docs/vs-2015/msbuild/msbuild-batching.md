@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 823b853363e3044383da4673d7e88a96d9e5ea6a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d96330c01ab340d4db67694f358717a2dae0bce3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664334"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439373"
 ---
 # <a name="msbuild-batching"></a>Traitement par lots de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "59664334"
  Vous spécifiez ce que [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] doit effectuer comme traitement par lots avec une tâche en utilisant la notation %(*ItemMetaDataName*) dans un des attributs de la tâche. L’exemple suivant fractionne la liste d’éléments `Example` en lots en fonction de la valeur des métadonnées de l’élément `Color` et passe séparément chacun des lots à la tâche `MyTask`.  
   
 > [!NOTE]
->  Si vous ne référencez pas la liste d’éléments ailleurs dans les attributs de tâche, ou si le nom des métadonnées peut être ambigu, vous pouvez utiliser la notation %(*ItemCollection.ItemMetaDataName*) pour qualifier complètement la valeur des métadonnées de l’élément à utiliser pour le traitement par lots.  
+> Si vous ne référencez pas la liste d’éléments ailleurs dans les attributs de tâche, ou si le nom des métadonnées peut être ambigu, vous pouvez utiliser la notation %(*ItemCollection.ItemMetaDataName*) pour qualifier complètement la valeur des métadonnées de l’élément à utiliser pour le traitement par lots.  
   
 ```  
 <Project  

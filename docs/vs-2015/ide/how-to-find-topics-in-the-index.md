@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8c2ad1e97302a822bacc2fbbc983002626adb78a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 67eb54d06297458915edfe34718948b085c6e86b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758167"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416834"
 ---
 # <a name="how-to-find-topics-in-the-index"></a>Guide pratique pour rechercher des rubriques dans l’index
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ L’index contient une liste de mots clés qui sont associés à des rubriques d
       En choisissant le bouton de filtre en haut de l’onglet, vous pouvez afficher toutes les entrées qui contiennent le texte que vous spécifiez ou uniquement celles qui commencent par le texte que vous spécifiez.  
   
      > [!NOTE]
-     >  Quand le bouton de filtre s’affiche sur un arrière-plan sombre avec une bordure, les entrées doivent contenir le texte que vous spécifiez. Si l’arrière-plan et la bordure n’apparaissent pas, les entrées doivent commencer par le texte que vous spécifiez.  
+     > Quand le bouton de filtre s’affiche sur un arrière-plan sombre avec une bordure, les entrées doivent contenir le texte que vous spécifiez. Si l’arrière-plan et la bordure n’apparaissent pas, les entrées doivent commencer par le texte que vous spécifiez.  
   
    - Faites défiler l’index et choisissez un mot clé.  
   

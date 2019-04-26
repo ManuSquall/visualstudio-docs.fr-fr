@@ -19,12 +19,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 70bebfab781ceb1d608d13a8afad24ee06cb9c28
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d2349c21d55c20bcb3bcd50ab96f383a9afcc00b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426109"
 ---
 # <a name="msbuild-task"></a>MSBuild, tâche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ Génère des projets [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] à
  [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5 propose néanmoins deux nouveaux éléments de métadonnées réservés, Properties et AdditionalProperties, qui vous permettent de transmettre simplement les propriétés différentes de plusieurs projets générés à l’aide de la [tâche MSBuild](../msbuild/msbuild-task.md).  
   
 > [!NOTE]
->  Ces nouveaux éléments de métadonnées s’appliquent uniquement aux éléments transmis dans l’attribut Projects de la [tâche MSBuild](../msbuild/msbuild-task.md).  
+> Ces nouveaux éléments de métadonnées s’appliquent uniquement aux éléments transmis dans l’attribut Projects de la [tâche MSBuild](../msbuild/msbuild-task.md).  
   
 ## <a name="multi-processor-build-benefits"></a>Avantages de la génération multiprocesseur  
  L’un des principaux avantages liés à l’utilisation de ces nouvelles métadonnées se présente lorsque vous générez vos projets en parallèle sur un système multiprocesseur. Les métadonnées vous permettent de consolider tous les projets dans un seul et même appel de [tâche MSBuild](../msbuild/msbuild-task.md) sans devoir effectuer de traitement par lot ou de tâches [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] conditionnelles. Si vous appelez une seule [tâche MSBuild](../msbuild/msbuild-task.md), tous les projets répertoriés dans l’attribut Projects sont générés en parallèle. (Toutefois cela se produit uniquement si l’attribut `BuildInParallel=true` est présent dans la [tâche MSBuild](../msbuild/msbuild-task.md).) Pour plus d’informations, consultez l’article [Building Multiple Projects in Parallel (Génération de plusieurs projets en parallèle avec MSBuild)](../msbuild/building-multiple-projects-in-parallel-with-msbuild.md).  
@@ -77,7 +77,7 @@ Génère des projets [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] à
  Lorsque vous générez plusieurs fichiers solution à l’aide de la [tâche MSBuild](../msbuild/msbuild-task.md), il est courant d’utiliser uniquement différentes configurations de build. Vous souhaiterez peut-être générer la solution a1 à l’aide de la configuration Debug, et la solution a2 à l’aide de la configuration Release. Dans [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0, ce fichier projet ressemblerait à ce qui suit :  
   
 > [!NOTE]
->  Dans l’exemple suivant, « ... » représente des fichiers solution supplémentaires.  
+> Dans l’exemple suivant, « ... » représente des fichiers solution supplémentaires.  
   
 ### <a name="aproj"></a>a.proj  
   
