@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb1521623880712211ea04e5c572c7cf4bd85133
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627686"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62960158"
 ---
 # <a name="zoom-control-threads-view"></a>Contrôle Zoom (vue Threads)
 Le contrôle de zoom est un curseur qui vous permet d’effectuer un zoom avant et arrière sur la chronologie afin que vous puissiez vous concentrer sur les zones dignes d’intérêt. Étant donné que ce contrôle effectue un zoom avant sur le centre de l’affichage de la chronologie, centrez la zone digne d’intérêt avant d’effectuer un zoom avant.

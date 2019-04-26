@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 007a8b8d94c178b4282999bf7102b645530c6adf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7b1a99f3007a87738f55d0b13fa8943ded925266
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645028"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62960359"
 ---
 # <a name="collect-concurrency-data-for-an-aspnet-web-application-using-the-profiler-command-line"></a>Collecter des données d’accès concurrentiel d’une application web ASP.NET en utilisant la ligne de commande du profileur
 La méthode d’accès concurrentiel des outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] vous permet de collecter des données de conflit de ressources.
@@ -39,7 +39,6 @@ La méthode d’accès concurrentiel des outils de profilage [!INCLUDE[vsprvs](.
 |**Profiler à l’aide de la méthode d’échantillonnage**|-   [Collecter des statistiques d’applications en utilisant l’échantillonnage](../profiling/collecting-application-statistics-for-aspnet-using-the-profiler-sampling-method.md)|
 |**Profiler à l’aide de la méthode d’instrumentation**|-   [Collecter les données temporelles détaillées à l’aide de l’instrumentation](../profiling/collecting-detailed-timing-data-aspnet-profiler-instrumentation-method.md)|
 |**Profiler l’allocation de mémoire et le garbage collection**|-   [Collecter des données de mémoire](../profiling/collecting-memory-data-from-an-aspnet-web-application.md)|
-
 
 ### <a name="profile-concurrency-issues"></a>Profiler des problèmes de concurrence
 

@@ -10,12 +10,12 @@ ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f1172cff8abc53867f4a13cacdf16fe2d1f065e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3fd640a79a81e2306c8abd1c3c5279b1fc8f335f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954970"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950135"
 ---
 # <a name="how-to-create-a-web-service-test"></a>Procédure : Créer un test de service web
 
@@ -31,21 +31,21 @@ Visual Studio Enterprise
 
 ## <a name="to-test-a-web-service"></a>Pour tester un service web
 
-1.  Créez un test de performances web. Dès que le navigateur s’ouvre, choisissez **Arrêter**.
+1. Créez un test de performances web. Dès que le navigateur s’ouvre, choisissez **Arrêter**.
 
-2.  Dans **l’éditeur de test de performances web**, cliquez avec le bouton droit sur le test de performances web et sélectionnez **Ajouter une requête de service web**.
+2. Dans **l’éditeur de test de performances web**, cliquez avec le bouton droit sur le test de performances web et sélectionnez **Ajouter une requête de service web**.
 
-3.  Dans la propriété **Url** de la nouvelle requête, tapez le nom du service web, par exemple **http://localhost/storecsvs/InstantOrder.asmx**.
+3. Dans la propriété **Url** de la nouvelle requête, tapez le nom du service web, par exemple **http://localhost/storecsvs/InstantOrder.asmx**.
 
-4.  Ouvrez une session distincte du navigateur et tapez l’URL de la page *.asmx* dans la barre d’outils **Adresse**. Sélectionnez la méthode à tester et examinez le message SOAP. Il contient un `SOAPAction`.
+4. Ouvrez une session distincte du navigateur et tapez l’URL de la page *.asmx* dans la barre d’outils **Adresse**. Sélectionnez la méthode à tester et examinez le message SOAP. Il contient un `SOAPAction`.
 
-5.  Dans **l’éditeur de test de performances web**, cliquez avec le bouton droit sur la requête et sélectionnez **Ajouter un en-tête** pour ajouter un nouvel en-tête. Dans la propriété **Nom**, tapez `SOAPAction`. Dans la propriété **Valeur**, tapez la valeur qui apparaît dans `SOAPAction` (par exemple, `"http://tempuri.org/CheckStatus"`).
+5. Dans **l’éditeur de test de performances web**, cliquez avec le bouton droit sur la requête et sélectionnez **Ajouter un en-tête** pour ajouter un nouvel en-tête. Dans la propriété **Nom**, tapez `SOAPAction`. Dans la propriété **Valeur**, tapez la valeur qui apparaît dans `SOAPAction` (par exemple, `"http://tempuri.org/CheckStatus"`).
 
-6.  Développez le nœud d’URL dans l’éditeur, puis sélectionnez le nœud **Corps chaîne**. Dans la propriété **Type de contenu**, entrez la valeur `text/xml`.
+6. Développez le nœud d’URL dans l’éditeur, puis sélectionnez le nœud **Corps chaîne**. Dans la propriété **Type de contenu**, entrez la valeur `text/xml`.
 
-7.  Retournez au navigateur à l'étape 4, sélectionnez la partie XML de la requête SOAP à partir de la page de description du service web et copiez-la dans le Presse-papiers.
+7. Retournez au navigateur à l'étape 4, sélectionnez la partie XML de la requête SOAP à partir de la page de description du service web et copiez-la dans le Presse-papiers.
 
-8.  Le contenu XML ressemble à l'exemple suivant :
+8. Le contenu XML ressemble à l'exemple suivant :
 
      ```xml
      <?xml version="1.0" encoding="utf-8"?>
@@ -69,7 +69,7 @@ Visual Studio Enterprise
 12. Assignez un nom et une valeur au paramètre de chaîne de requête. Dans l’exemple précédent, le nom est `op` et la valeur `CheckStatus`. Cela identifie l'opération de service web à exécuter.
 
     > [!NOTE]
-    > Vous pouvez utiliser la liaison de données dans le corps SOAP pour remplacer n’importe quelle valeur d’espace réservé par des valeurs liées aux données à l’aide de la syntaxe `{{DataSourceName.TableName.ColumnName}}`.
+    > Vous pouvez utiliser la liaison de données dans le corps SOAP pour remplacer n'importe quelle valeur d'espace réservé par des valeurs liées aux données à l'aide de la syntaxe `{{DataSourceName.TableName.ColumnName}}`.
 
 13. Exécutez le test. Dans le volet supérieur de l'**Afficheur des résultats des tests de performances web**, sélectionnez la requête de service web. Dans le volet inférieur, sélectionnez l'onglet Navigateur Web. Le XML qui est retourné par le service web et les résultats de toutes les opérations sont affichés.
 

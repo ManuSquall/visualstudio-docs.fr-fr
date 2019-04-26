@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3c87339e26e5b08fbcbdcde94d43c9f0009e1a22
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975658"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Ajouter la prise en charge de l’éditeur Visual Studio pour d’autres langages
 
@@ -78,7 +78,7 @@ Sous ce chemin de base, ajoutez les dossiers suivants s’ils s’appliquent à 
 |-----------------|-----------------|
 |\\*\<nom_langage>*|Dossier du langage. Remplacez *\<nom_langage>* par le nom du langage. Par exemple, *\Matlab*.|
 |*\Syntaxes*|Dossier de la grammaire. Contient les fichiers *.json* de grammaire du langage, tels que *Matlab.json*.|
-|*\Snippets*|Dossier des extraits de code. Contient les extraits de code du langage.|
+|*\Extraits de code*|Dossier des extraits de code. Contient les extraits de code du langage.|
 
 Dans Windows, la résolution de *%userprofile%* donne le chemin suivant : *c:\Users\\\<nom_utilisateur>*. Si le dossier *Extensions* n’existe pas sur votre système, vous devrez le créer. Si le dossier existe déjà, il est masqué.
 
