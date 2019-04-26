@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d36aa18cb4d641f1a5f22618e98615222cb844d6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926071"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844947"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Procédure : Créer une texture de base
 
