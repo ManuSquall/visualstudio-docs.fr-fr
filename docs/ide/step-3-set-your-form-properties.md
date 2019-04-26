@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b8edb5fd4b7df44528461d5078e78fd315c0c40b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 941bf3329b0724e19048afa6c93a9a9c3762d1c6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931453"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430741"
 ---
 # <a name="step-3-set-your-form-properties"></a>Étape 3 : Définir les propriétés de votre formulaire
 Ensuite, vous utilisez la fenêtre **Propriétés** pour changer l’apparence de votre formulaire.
@@ -27,7 +27,7 @@ Ensuite, vous utilisez la fenêtre **Propriétés** pour changer l’apparence d
 2. Choisissez un endroit quelconque dans le formulaire **Form1** pour le sélectionner. La fenêtre **Propriétés** doit maintenant afficher les propriétés du formulaire. Les formulaires ont plusieurs propriétés. Par exemple, vous pouvez définir la couleur du premier plan et de l'arrière-plan, le texte du titre qui est affiché en haut du formulaire, les dimensions du formulaire, ainsi que d'autres propriétés.
 
    > [!NOTE]
-   >  Si la fenêtre **Propriétés** ne s’affiche pas, arrêtez votre programme en choisissant le bouton carré **Arrêter le débogage** dans la barre d’outils, ou fermez simplement la fenêtre. Si le programme est arrêté et que la fenêtre **Propriétés** n’apparaît toujours pas, dans la barre de menus, choisissez **Affichage** > **Fenêtre Propriétés**.
+   > Si la fenêtre **Propriétés** ne s’affiche pas, arrêtez votre programme en choisissant le bouton carré **Arrêter le débogage** dans la barre d’outils, ou fermez simplement la fenêtre. Si le programme est arrêté et que la fenêtre **Propriétés** n’apparaît toujours pas, dans la barre de menus, choisissez **Affichage** > **Fenêtre Propriétés**.
 
 3. Après avoir sélectionné le formulaire, recherchez la propriété **Text** dans la fenêtre **Propriétés**. Suivant la façon dont la liste est triée, vous devrez peut-être la faire défiler. Choisissez **Texte**, tapez **Visionneuse d’images**, puis appuyez sur **Entrée**.  Le texte **Visionneuse d’images** doit maintenant s’afficher dans la barre de titre de votre formulaire, et la fenêtre **Propriétés** doit ressembler à l’image suivante.
 
@@ -35,7 +35,7 @@ Ensuite, vous utilisez la fenêtre **Propriétés** pour changer l’apparence d
    Fenêtre **Propriétés**
 
    > [!NOTE]
-   >  Les propriétés peuvent être classées selon une vue **Par catégorie** ou **Alphabétique**. Vous pouvez passer d’une vue à l’autre à l’aide des boutons de la fenêtre **Propriétés**. Dans ce tutoriel, il est plus facile de rechercher des propriétés via la vue **Alphabétique**.
+   > Les propriétés peuvent être classées selon une vue **Par catégorie** ou **Alphabétique**. Vous pouvez passer d’une vue à l’autre à l’aide des boutons de la fenêtre **Propriétés**. Dans ce tutoriel, il est plus facile de rechercher des propriétés via la vue **Alphabétique**.
 
 4. Revenez au **Concepteur Windows Forms**. Sélectionnez la poignée de déplacement située dans l'angle inférieur droit du formulaire, c'est-à-dire le petit carré blanc présenté ci-dessous.
 
@@ -60,14 +60,14 @@ Ensuite, vous utilisez la fenêtre **Propriétés** pour changer l’apparence d
 
 7. Avant de passer à l'étape suivante, arrêtez votre programme, car l'IDE ne vous autorisera pas à le modifier tant qu'il est en cours d'exécution. Gardez à l'esprit que vous pouvez utiliser n'importe laquelle des méthodes suivantes pour arrêter votre programme.
 
-   -   Dans la barre d’outils, choisissez le bouton **Arrêter le débogage**.
+   - Dans la barre d’outils, choisissez le bouton **Arrêter le débogage**.
 
-   -   Dans la barre de menus, choisissez **Débogage** > **Arrêter le débogage**.
+   - Dans la barre de menus, choisissez **Débogage** > **Arrêter le débogage**.
 
-   -   Choisissez le bouton **X** dans l’angle supérieur de la fenêtre **Form1**.
+   - Choisissez le bouton **X** dans l’angle supérieur de la fenêtre **Form1**.
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
--   Pour passer à l’étape suivante du tutoriel, consultez [Étape 4 : Composer votre formulaire avec un contrôle TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).
+- Pour passer à l’étape suivante du tutoriel, consultez [Étape 4 : Composer votre formulaire avec un contrôle TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).
 
--   Pour revenir à l’étape précédente du tutoriel, consultez [Étape 2 : Exécuter votre programme](../ide/step-2-run-your-program.md).
+- Pour revenir à l’étape précédente du tutoriel, consultez [Étape 2 : Exécuter votre programme](../ide/step-2-run-your-program.md).

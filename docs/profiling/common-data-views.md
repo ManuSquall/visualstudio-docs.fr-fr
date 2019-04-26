@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b71271213e10c460c0b1744ba079ec034aa9d118
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63001042"
 ---
 # <a name="common-data-views"></a>Vues de données communes
 Cette section contient des informations de référence sur les vues et les rapports des fichiers de données du profileur qui sont communs à toutes les méthodes de profilage.

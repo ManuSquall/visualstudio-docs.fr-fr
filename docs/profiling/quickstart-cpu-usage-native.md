@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8245c8a3decdd9e9576d3a24b37df4971dbb9284
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d6b5df5e8b8dba85ae26d0c606f4ed3f0b343d7b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968200"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Démarrage rapide : Analyser les données d’utilisation de l’UC dans Visual Studio (C++)
 
@@ -115,26 +115,26 @@ Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Out
 
 ## <a name="step-1-collect-profiling-data"></a>Étape 1 : Collecter les données de profilage
 
-1.  Tout d’abord, définissez un point d’arrêt dans votre application sur cette ligne de code dans la fonction `main` :
+1. Tout d’abord, définissez un point d’arrêt dans votre application sur cette ligne de code dans la fonction `main` :
 
     `for (int i = 0; i < 10; ++i) {`
 
     Définissez un point d’arrêt en cliquant dans la marge à gauche de la ligne de code.
 
-2.  Ensuite, définissez un deuxième point d’arrêt sur l’accolade fermante à la fin de la fonction `main` :
+2. Ensuite, définissez un deuxième point d’arrêt sur l’accolade fermante à la fin de la fonction `main` :
 
      ![Définir des points d’arrêt pour le profilage](../profiling/media/quickstart-cpu-usage-breakpoints-cplusplus.png "Définir des points d’arrêt pour le profilage")
 
     > [!TIP]
     > En définissant deux points d’arrêt, vous limitez la collecte de données aux sections de code que vous souhaitez analyser.
 
-3.  La fenêtre **Outils de diagnostic** est déjà visible, sauf si vous l’avez désactivée. Pour réafficher la fenêtre, cliquez sur **Déboguer** > **Fenêtres** > **Afficher les outils de diagnostic**.
+3. La fenêtre **Outils de diagnostic** est déjà visible, sauf si vous l’avez désactivée. Pour réafficher la fenêtre, cliquez sur **Déboguer** > **Fenêtres** > **Afficher les outils de diagnostic**.
 
-4.  Cliquez sur **Déboguer** > **Démarrer le débogage** (ou bien sur **Démarrer** dans la barre d’outils, ou sur **F5**).
+4. Cliquez sur **Déboguer** > **Démarrer le débogage** (ou bien sur **Démarrer** dans la barre d’outils, ou sur **F5**).
 
      Quand l’application est chargée, la vue **Résumé** des outils de diagnostics s’affiche.
 
-5.  Pendant que le débogueur est suspendu, activez la collecte des données d’utilisation de l’UC en choisissez **Enregistrer le profil du processeur**, puis ouvrez l’onglet **Utilisation de l’UC**.
+5. Pendant que le débogueur est suspendu, activez la collecte des données d’utilisation de l’UC en choisissez **Enregistrer le profil du processeur**, puis ouvrez l’onglet **Utilisation de l’UC**.
 
      ![Activation du profilage de l’UC dans les outils de diagnostic](../profiling/media/quickstart-cpu-usage-summary.png "Activation du profilage de l’UC dans les outils de diagnostic")
 
@@ -142,7 +142,7 @@ Windows 8 et les versions ultérieures sont nécessaires pour exécuter les Out
 
      Quand vous choisissez **Enregistrer le profil du processeur**, Visual Studio commence l’enregistrement de vos fonctions (notamment leur durée d’exécution) et fournit un graphique chronologique qui vous permet de vous concentrer sur des segments spécifiques de la session d’échantillonnage. Vous pouvez afficher ces données collectées uniquement quand votre application est interrompue à un point d’arrêt.
 
-6.  Appuyez sur F5 pour exécuter l’application jusqu’au deuxième point d’arrêt.
+6. Appuyez sur F5 pour exécuter l’application jusqu’au deuxième point d’arrêt.
 
      Vous disposez maintenant de données de performances pour votre application, et plus spécifiquement pour la région de code qui s’exécute entre les deux points d’arrêt.
 

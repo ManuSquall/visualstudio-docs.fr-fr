@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4c7df0cf9e837e27e8f572bb50d5e3395b3424a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ec4e48bdd1a7f8701f46ed84296f7aad4490d08a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629909"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977401"
 ---
 # <a name="import-element-msbuild"></a>Import, élément (MSBuild)
 Importe le contenu d’un fichier projet dans un autre fichier projet.
@@ -69,7 +69,6 @@ Importe le contenu d’un fichier projet dans un autre fichier projet.
  Si le projet importé n’a pas d’attribut `DefaultTargets` , les projets importés sont inspectés dans l’ordre dans lequel ils sont importés, et la valeur du premier attribut `DefaultTargets` découvert est utilisée. Par exemple, si le ProjetA importe le ProjetB et le ProjetC (dans cet ordre), et que le ProjetB importe le ProjetD, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] recherche d’abord `DefaultTargets` spécifié sur le ProjetA, puis le ProjetB, puis le ProjetD, et enfin le ProjetC.
 
  Le schéma d’un projet importé est identique à celui d’un projet standard. Bien que [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] puisse générer un projet importé, cela est peu probable, car un projet importé ne contient généralement pas d’informations sur les propriétés à définir ou sur l’ordre dans lequel exécuter les cibles. Le projet importé dépend du projet dans lequel il est importé pour fournir ces informations.
-
 
 ## <a name="wildcards"></a>Caractères génériques
  Dans le .NET Framework 4, MSBuild autorise les caractères génériques dans l’attribut de projet. Quand il existe des caractères génériques, toutes les correspondances trouvées sont triées (à des fins de reproductibilité), puis elles sont importées dans cet ordre comme si celui-ci avait été défini explicitement.

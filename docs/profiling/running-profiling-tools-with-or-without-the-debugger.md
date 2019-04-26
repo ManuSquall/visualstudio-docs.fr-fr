@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63215d6350a4922ed416c8c48f006cd23c9e0728
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 273dc6770f2928ed65d6a473b7f1986bc353687e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323722"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62999387"
 ---
 # <a name="run-profiling-tools-with-or-without-the-debugger"></a>Exécuter des outils de profilage avec ou sans le débogueur
 
@@ -33,7 +33,7 @@ Pour vous aider à décider quels outils et résultats utiliser, tenez compte de
 - Le débogueur lui-même affecte les performances quand il effectue des opérations de débogage nécessaires telles que l’interception des exceptions et des événements de chargement de module.
 - Les valeurs de performances des builds Release fournies dans les outils du **Profileur de performances** sont plus précises. Les résultats fournis par les outils intégrés au débogueur sont plus utiles en comparaison avec d’autres mesures liées au débogage.
 
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Collecter les données de profilage pendant le débogage
+## <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Collecter les données de profilage pendant le débogage
 
 Quand vous démarrez le débogage dans Visual Studio en sélectionnant **Déboguer** > **Démarrer le débogage** ou en appuyant sur **F5**, la fenêtre **Outils de diagnostic** s’affiche par défaut. Pour l’ouvrir manuellement, sélectionnez **Déboguer** > **Fenêtres** > **Afficher les Outils de diagnostic**. La fenêtre **Outils de diagnostic** affiche des informations sur l’utilisation du processeur, la mémoire de traitement et les événements.
 

@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: b111d3b0fe2f4af9098186aff3ef661045215473
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366274"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62959138"
 ---
 # <a name="edit-python-code"></a>Modifier le code Python
 
@@ -76,7 +76,7 @@ Taper @ lance un décorateur et affiche les décorateurs potentiels. La plupart 
 
 ### <a name="type-hints"></a>Affinages de type
 
-*Visual Studio 2017 15.7 et versions ultérieures.*
+*Visual Studio 2017 versions 15.7 et ultérieures.*
 
 Les « affinages de type » dans Python 3.5+ ([PEP 484](https://www.python.org/dev/peps/pep-0484/), python.org) font référence à une syntaxe d’annotation pour les fonctions et classes qui indiquent les types des arguments, des valeurs de retour et des attributs de classe. IntelliSense affiche des affinages de type quand vous pointez sur des appels de fonctions, des arguments et des variables dotés de ces annotations.
 

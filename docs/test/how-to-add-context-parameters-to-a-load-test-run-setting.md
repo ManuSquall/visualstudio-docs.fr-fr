@@ -9,12 +9,12 @@ ms.assetid: a8a0b97e-8040-4711-85ab-36548b130ed2
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8b7af7b566e874941e72ae3a905ab2c1b58c89ff
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b979da03c0ea5378684ff12bc86d4fb59eef9180
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907904"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979448"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>Procédure : ajouter des paramètres de contexte à un paramètre d’exécution de test de charge
 
@@ -52,11 +52,11 @@ En outre, en assignant des valeurs différentes à un paramètre de contexte en 
 
 ## <a name="to-add-a-context-parameter-to-a-run-setting"></a>Pour ajouter un paramètre de contexte à un paramètre d'exécution
 
-1.  Ouvrez un test de charge.
+1. Ouvrez un test de charge.
 
-2.  Développez le dossier **Paramètres d’exécution** dans l’arborescence du test de charge de l’éditeur de test de charge.
+2. Développez le dossier **Paramètres d’exécution** dans l’arborescence du test de charge de l’éditeur de test de charge.
 
-3.  Cliquez avec le bouton droit sur le paramètre d’exécution spécifique auquel vous souhaitez ajouter un paramètre de contexte, puis choisissez **Ajouter un paramètre de contexte**.
+3. Cliquez avec le bouton droit sur le paramètre d’exécution spécifique auquel vous souhaitez ajouter un paramètre de contexte, puis choisissez **Ajouter un paramètre de contexte**.
 
      Un nouveau paramètre de contexte est ajouté au dossier **Paramètres de contexte** dans le dossier **Paramètres d’exécution** de l’arborescence du test de charge.
 
@@ -64,11 +64,11 @@ En outre, en assignant des valeurs différentes à un paramètre de contexte en 
 
      Si le paramètre d’exécution contient déjà un dossier **Paramètres de contexte**, vous pouvez cliquer dessus avec le bouton droit, puis choisir **Ajouter un paramètre de contexte**.
 
-4.  Dans la fenêtre **Propriétés**, changez la valeur de **Nom** si nécessaire (par exemple, WebServer1). Dans la fenêtre **Propriétés** toujours, remplacez **Valeur** par le paramètre à utiliser (par exemple, `http://CorporateStagingWebServer`).
+4. Dans la fenêtre **Propriétés**, changez la valeur de **Nom** si nécessaire (par exemple, WebServer1). Dans la fenêtre **Propriétés** toujours, remplacez **Valeur** par le paramètre à utiliser (par exemple, `http://CorporateStagingWebServer`).
 
-5.  (Facultatif) Répétez les étapes 3 à 5 et utilisez une chaîne distincte pour la propriété **Valeur** (par exemple `http://CorporateProductionWebServer`).
+5. (Facultatif) Répétez les étapes 3 à 5 et utilisez une chaîne distincte pour la propriété **Valeur** (par exemple `http://CorporateProductionWebServer`).
 
-6.  Sélectionnez les paramètres d'exécution à activer. Ouvrez le menu contextuel des paramètres d’exécution, puis choisissez **Définir comme actif**.
+6. Sélectionnez les paramètres d'exécution à activer. Ouvrez le menu contextuel des paramètres d’exécution, puis choisissez **Définir comme actif**.
 
 ## <a name="see-also"></a>Voir aussi
 

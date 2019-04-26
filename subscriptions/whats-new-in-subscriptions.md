@@ -8,12 +8,12 @@ ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 81c7c62a85af6950c1c888e9f6673fc0d4429735
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: dc243e057e3e0d4eec6ea314b0e7aa0778d6c0dc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842063"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969389"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Nouveautés des abonnements Visual Studio
 
@@ -34,7 +34,6 @@ Nous avons ajouté pour les administrateurs de cloud de nouvelles fonctionnalit�
 * [**Exporter**](/visualstudio/subscriptions/exporting-subscriptions) : exportez la liste de vos utilisateurs et les détails de leurs affectations. Une liste de ce type peut s’avérer utile pour effectuer le suivi des affectations et des dates d’expiration.
 
    ![Exporter une liste d’abonnés vers Excel à l’aide du bouton Exporter](media/export-subscriber-list-to-csv.png)
-
 
 * [**Modification en bloc**](/visualstudio/subscriptions/edit-license#editing-multiple-subscribers-by-using-bulk-edit) : modifiez les informations d’abonnement de plusieurs abonnés en bloc.
 

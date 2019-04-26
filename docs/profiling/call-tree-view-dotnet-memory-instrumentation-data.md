@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: c7a67d4763337af4b3d75217ce6278951c07bc48
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617169"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950304"
 ---
 # <a name="call-tree-view---net-memory-instrumentation-data"></a>Vue Arborescence des appels - Données d’instrumentation de la mémoire .NET
 La vue Arborescence des appels des données de profilage pour l’allocation de la mémoire .NET qui ont été collectées avec la méthode d’instrumentation montre les chemins d’exécution empruntés par les fonctions dans l’application profilée. La racine de l’arborescence correspond au point d’entrée de l’application ou du composant. Chaque nœud d’une fonction répertorie toutes les fonctions qu’elle a appelées, ainsi que les données concernant la mémoire et la chronologie .NET pour la fonction.

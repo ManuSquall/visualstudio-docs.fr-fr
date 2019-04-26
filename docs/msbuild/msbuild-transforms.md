@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2fe127a98236c321db9d1e7450ab006e09badba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3be16c2ccbd7cfe5d26507037e4238870e59d83b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627257"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414702"
 ---
 # <a name="msbuild-transforms"></a>Transformations MSBuild
 Une transformation est une conversion de type un-à-un d’une liste d’éléments en une autre. En plus de permettre à un projet de convertir des listes d’éléments, une transformation permet à une cible d’identifier un mappage direct entre ses entrées et ses sorties. Cette rubrique explique les transformations et comment [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] les utilise pour générer des projets plus efficacement.
@@ -33,7 +33,7 @@ Dans l’exemple suivant, une liste de fichiers *.resx* est transformée en list
 Par exemple, si les éléments de la liste d’éléments @(RESXFile) sont *Form1.resx*, *Form2.resx* et *Form3.resx*, les sorties de la liste transformée sont *Form1.resources*, *Form2.resources* et *Form3.resources*.
 
 > [!NOTE]
->  Vous pouvez spécifier un séparateur personnalisé pour une liste d’éléments transformée de la même façon que vous spécifiez un séparateur pour une liste d’éléments standard. Par exemple, pour séparer les éléments d’une liste transformée à l’aide de la virgule (,) au lieu du point-virgule (;) par défaut, utilisez le code XML suivant : `@(RESXFile->'Toolset\%(filename)%(extension)', ',')`
+> Vous pouvez spécifier un séparateur personnalisé pour une liste d’éléments transformée de la même façon que vous spécifiez un séparateur pour une liste d’éléments standard. Par exemple, pour séparer les éléments d’une liste transformée à l’aide de la virgule (,) au lieu du point-virgule (;) par défaut, utilisez le code XML suivant : `@(RESXFile->'Toolset\%(filename)%(extension)', ',')`
 
 ## <a name="use-multiple-modifiers"></a>Utiliser plusieurs modificateurs
  Une expression de transformation peut contenir plusieurs modificateurs, qui peuvent être combinés dans n’importe quel ordre et peuvent être répétés. Dans l’exemple suivant, le nom du répertoire qui contient les fichiers change alors que les fichiers conservent le nom et l’extension de nom de fichier d’origine.

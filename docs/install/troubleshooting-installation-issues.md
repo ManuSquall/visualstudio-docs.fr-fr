@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5de7976af32601b6df188162aef0e129789a5147
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 5ea7b0c934dfeeee6825c558868388a65a8bdcd2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857383"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62997449"
 ---
 # <a name="troubleshoot-visual-studio-installation-and-upgrade-issues"></a>Résolution des problèmes d’installation et de mise à niveau de Visual Studio
 
@@ -62,7 +62,7 @@ Le programme d’amorçage du programme d’installation de Visual Studio est un
 
 1. Fermez le programme d’installation de Visual Studio.
 2. Supprimez le répertoire du programme d’installation de Visual Studio. En règle générale, le répertoire est `C:\Program Files (x86)\Microsoft Visual Studio\Installer`.
-3. Exécutez le programme d’amorçage du programme d’installation de Visual Studio. Vous pouvez trouver le programme d’amorçage dans votre dossier Téléchargements sous un nom respectant le modèle `vs_[Visual Studio edition]__*.exe`. Si vous ne trouvez pas cette application, vous pouvez télécharger le programme d’amorçage en accédant à la page des [téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017), puis en cliquant sur le bouton **Téléchargement** correspondant à votre édition de Visual Studio. Exécutez ensuite l’exécutable pour réinitialiser vos métadonnées d’installation.
+3. Exécutez le programme d’amorçage du programme d’installation de Visual Studio. Vous pouvez trouver le programme d’amorçage dans votre dossier Téléchargements sous un nom respectant le modèle `vs_[Visual Studio edition]__*.exe`. Si vous ne trouvez pas cette application, vous pouvez télécharger le programme d’amorçage en accédant à la page des [téléchargements Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download), puis en cliquant sur le bouton **Téléchargement** correspondant à votre édition de Visual Studio. Exécutez ensuite l’exécutable pour réinitialiser vos métadonnées d’installation.
 4. Essayez à nouveau d’installer ou de mettre à jour Visual Studio. Si le programme d’installation échoue à nouveau, passez à l’étape suivante.
 
 ::: moniker-end

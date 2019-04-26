@@ -9,11 +9,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d3ef8ecfefd1d614570b4d73808d3e5736d77230
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979339"
 ---
 # <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>Procédure : Appliquer une distribution au rythme pour un modèle de combinaison de tests dépendant du rythme de l’utilisateur
 
@@ -40,7 +40,7 @@ La valeur de la propriété **Appliquer une distribution au rythme** peut avoir 
 
 1. Ouvrez un test de charge.
 
-   L’**éditeur de test de charge** s’affiche. L’arborescence du test de charge s’affiche.
+   L’**éditeur de test de charge** s’affiche. L'arborescence du test de charge s'affiche.
 
 2. Dans le dossier **Scénarios** de l’arborescence du test de charge, sélectionnez le nœud de scénario auquel vous souhaitez appliquer une distribution au rythme.
 

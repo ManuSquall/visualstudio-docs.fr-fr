@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: MPN donne des détails sur les abonnements proposés, sur les règles qui s’appliquent et sur le nombre d’abonnements.
 searchscope: VS Subscription
-ms.openlocfilehash: b9445b3b990698b273145ab8791e03ee6690570b
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c7e58cd53ccbab31e90f2fc73a07b1011473777e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843158"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945399"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Abonnements Visual Studio offerts aux partenaires du réseau MPN (Microsoft Partner Network)
 Les partenaires qui acquièrent une compétence ou qui achètent l’Action Pack MPN sont éligibles aux abonnements Visual Studio. Ces abonnements sont concédés sous licence par utilisateur et sont valides uniquement quand ils sont attribués à un utilisateur nommé spécifique qui travaille pour la société partenaire.
@@ -43,7 +43,6 @@ Quel que soit le nombre de compétences acquises par un partenaire, le nombre d�
 | Quantité maximale d’avantages pour les partenaires ayant uniquement des compétences Silver                   | Quantité maximale d’avantages pour les partenaires ayant au moins une compétence Gold               |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | 25 abonnements Visual Studio Enterprise par pays ; 75 dans le monde entier          | 50 abonnements Visual Studio Enterprise par pays ; 150 dans le monde entier         |
-
 
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>Abonnements pour les partenaires achetant l’Action Pack
 Les partenaires ayant une compétence ne sont pas éligibles pour l’achat de l’Action Pack. Un partenaire ne peut acheter qu’un seul Action Pack.
