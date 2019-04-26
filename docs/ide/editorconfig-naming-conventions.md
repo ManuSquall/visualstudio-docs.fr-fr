@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e99e07f2f39ef4e01a2b79e5a391c32f6510e3a
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: bb72f491046d16f028561c19995a27a6ab64a830
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557302"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Conventions de nommage .NET pour EditorConfig
 
-Les conventions de nommage concernent le nommage d’éléments de code tels que les classes, les propriétés et les méthodes. Par exemple, vous pouvez spécifier que les membres publics doivent être en majuscules ou que les méthodes asynchrones doivent se terminer par "Async". Vous pouvez appliquer ces règles en les spécifiant dans un [fichier .editorconfig](../ide/create-portable-custom-editor-options.md). Les violations des règles de nommage apparaissent dans la **Liste d’erreurs** ou sous forme de suggestion sous le nom, selon la gravité choisie pour vos règles. Il n’est pas nécessaire de générer le projet pour afficher les violations.
+Les conventions de nommage concernent le nommage d’éléments de code tels que les classes, les propriétés et les méthodes. Par exemple, vous pouvez spécifier que les membres publics doivent être en majuscules ou que les méthodes asynchrones doivent se terminer par « Async ». Vous pouvez appliquer ces règles en les spécifiant dans un [fichier .editorconfig](../ide/create-portable-custom-editor-options.md). Les violations des règles de nommage apparaissent dans la **Liste d’erreurs** ou sous forme de suggestion sous le nom, selon la gravité choisie pour vos règles. Il n’est pas nécessaire de générer le projet pour afficher les violations.
 
-Les conventions de nommage doivent être classées de la plus spécifique à la moins spécifique dans le fichier *.editorconfig*. La première règle applicable rencontrée est la seule règle appliquée.
+Les conventions de nommage doivent être classées de la plus spécifique à la moins spécifique dans le fichier EditorConfig. La première règle applicable rencontrée est la seule règle appliquée. Toutefois, s’il existe plusieurs *propriétés* de règle portant le même nom, la propriété la plus récemment trouvée portant ce nom est prioritaire. Pour plus d’informations, consultez [Priorité et hiérarchie des fichiers](create-portable-custom-editor-options.md#file-hierarchy-and-precedence).
 
 Pour chaque convention de nommage, vous devez spécifier les symboles auxquels elle s’applique, un style de nommage et un niveau de gravité pour l’application de la convention, en utilisant les propriétés décrites ci-dessous. L’ordre des propriétés n’est pas important.
 
@@ -210,5 +210,5 @@ Si vous fermez et que vous rouvrez votre fichier de code, au lieu de voir la sug
 ## <a name="see-also"></a>Voir aussi
 
 - [Langage .NET et conventions de mise en forme](../ide/editorconfig-code-style-settings-reference.md)
-- [Créer des options d’éditeur personnalisé portables](../ide/create-portable-custom-editor-options.md)
+- [Créer des options d’éditeur personnalisées et portables](../ide/create-portable-custom-editor-options.md)
 - [Fichier .editorconfig de .NET Compiler Platform](https://github.com/dotnet/roslyn/blob/master/.editorconfig)
