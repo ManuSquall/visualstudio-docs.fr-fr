@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4916f51c3044bbd0a6cb8f8dd283c741a216c015
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7afdf40c660a7433c51d2fa1130ef5f2cca616bd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654469"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437837"
 ---
 # <a name="mt-task"></a>MT (tâche)
 Inclut l’outil Manifeste de Microsoft (*mt.exe*) dans un wrapper. Pour plus d’informations, voir [mt.exe](https://docs.microsoft.com/windows/desktop/SbsCs/mt-exe).
@@ -38,7 +38,7 @@ Inclut l’outil Manifeste de Microsoft (*mt.exe*) dans un wrapper. Pour plus d�
  Le tableau suivant décrit les paramètres de la tâche **MT**. La plupart des paramètres de tâche, et quelques ensembles de paramètres, correspondent à une option de ligne de commande.
 
 > [!NOTE]
->  La documentation de *mt.exe* utilise un trait d’union (**-**) comme préfixe pour les options de ligne de commande, alors que cette rubrique utilise une barre oblique (**/**). Les deux préfixes sont acceptés.
+> La documentation de *mt.exe* utilise un trait d’union (**-**) comme préfixe pour les options de ligne de commande, alors que cette rubrique utilise une barre oblique (**/**). Les deux préfixes sont acceptés.
 
 |Paramètre|Description|
 |---------------|-----------------|

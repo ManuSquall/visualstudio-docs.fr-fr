@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bc8879dbc515f7f779308db0b745ce5bb5afc50
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4e8cea36eeed3e09f1d88ad08f95f816d5206d65
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607406"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62962039"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Raccourcis clavier par défaut dans Visual Studio
 
@@ -40,22 +40,22 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |[Menus contextuels du débogueur](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)|[Autres menus contextuels](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)|[Menus contextuels Team Foundation](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)|[Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)|
 |[Hub de diagnostic](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)||||
 
-##  <a name="bkmk_global"></a> Global
+## <a name="bkmk_global"></a> Global
 
-###  <a name="bkmk_analyze"></a> Analyser
+### <a name="bkmk_analyze"></a> Analyser
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
 |Analyze.NavigateBackward|**Maj+Alt+3**|
 |Analyze.NavigateForward|**Maj+Alt+4**|
 
-###  <a name="bkmk_architecture"></a> Architecture
+### <a name="bkmk_architecture"></a> Architecture
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
 |Architecture.NewDiagram|**Ctrl+\\, Ctrl+N**|
 
-###  <a name="bkmk_build"></a> Générer
+### <a name="bkmk_build"></a> Générer
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -64,13 +64,13 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |Build.Compile|**Ctrl+F7**|
 |Build.RunCodeAnalysisonSolution|**Alt+F11**|
 
-###  <a name="bkmk_classview"></a> Menus contextuels de l’affichage des classes
+### <a name="bkmk_classview"></a> Menus contextuels de l’affichage des classes
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
 |ClassViewContextMenus.ClassViewMultiselectProjectreferencesItems.Properties|**Alt+Entrée**|
 
-###  <a name="bkmk_debug"></a> Déboguer
+### <a name="bkmk_debug"></a> Déboguer
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -138,7 +138,7 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |Debug.Watch3|**Ctrl+Alt+W, 3**|
 |Debug.Watch4|**Ctrl+Alt+W, 4**|
 
-###  <a name="bkmk_debugger"></a> Menus contextuels du débogueur
+### <a name="bkmk_debugger"></a> Menus contextuels du débogueur
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -146,13 +146,13 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |DebuggerContextMenus.BreakpointsWindow.GoToDisassembly|**Alt+F9, A**|
 |DebuggerContextMenus.BreakpointsWindow.GoToSourceCode|**Alt+F9, S**|
 
-###  <a name="bkmk_diagnostics"></a> Hub de diagnostic
+### <a name="bkmk_diagnostics"></a> Hub de diagnostic
 
 |Commande|Raccourci clavier|
 |-------------| - |
 |DiagnosticsHub.StopCollection|**Ctrl+Alt+F2**|
 
-###  <a name="bkmk_edit"></a> Edition
+### <a name="bkmk_edit"></a> Edition
 
 |Commandes|Raccourcis clavier|
 |--------------|-|
@@ -211,7 +211,7 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |Edit.SurroundWith|**Ctrl+K, Ctrl+S**|
 |Edit.Undo|**Ctrl+Z**<br /><br /> ou<br /><br /> **Alt+Retour arrière**|
 
-###  <a name="bkmk_editorContext"></a> Menus contextuels de l’éditeur
+### <a name="bkmk_editorContext"></a> Menus contextuels de l’éditeur
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -222,7 +222,7 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |EditorContextMenus.CodeWindow.ToggleHeaderCodeFile|**Ctrl+K, Ctrl+O** (lettre « O »)|
 |EditorContextMenus.CodeWindow.ViewCallHierarchy|**Ctrl+K, Ctrl+T**<br /><br /> ou<br /><br /> **Ctrl+K, T**|
 
-###  <a name="bkmk_file"></a> Fichier
+### <a name="bkmk_file"></a> Fichier
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -238,7 +238,7 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |File.SaveSelectedItems|**Ctrl+S**|
 |File.ViewinBrowser|**Ctrl+Maj+W**|
 
-###  <a name="bkmk_help"></a> Aide
+### <a name="bkmk_help"></a> Aide
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -247,19 +247,19 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |Help.ViewHelp|**Ctrl+F1**|
 |Help.WindowHelp|**Maj+F1**|
 
-###  <a name="bkmk_loadtest"></a> Test de charge
+### <a name="bkmk_loadtest"></a> Test de charge
 
 |Commande|Raccourci clavier|
 |-------------| - |
 |LoadTest.JumpToCounterPane|**Ctrl+R, Q**|
 
-###  <a name="bkmk_otherContext"></a> Autres menus contextuels
+### <a name="bkmk_otherContext"></a> Autres menus contextuels
 
 |Commande|Raccourci clavier|
 |-------------| - |
 |OtherContextMenus.MicrosoftDataEntityDesignContext.AddNewDiagram|**Insert**|
 
-###  <a name="bkmk_project"></a> Projet
+### <a name="bkmk_project"></a> Projet
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -271,14 +271,14 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |Project.Publishselectedfiles|**Alt+;**, puis **Alt+P**|
 |Project.Replaceselectedfilesfromserver|**Alt+;**, puis **Alt+R**|
 
-###  <a name="bkmk_projectContext"></a> Menus contextuels Projet et Solution
+### <a name="bkmk_projectContext"></a> Menus contextuels Projet et Solution
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
 |ProjectandSolutionContextMenus.Item.MoveDown|**Alt+Bas**|
 |ProjectandSolutionContextMenus.Item.MoveUp|**Alt+Haut**|
 
-###  <a name="bkmk_refactor"></a> Refactoriser
+### <a name="bkmk_refactor"></a> Refactoriser
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -289,7 +289,7 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |Refactor.Rename|**Ctrl+R, Ctrl+R**|
 |Refactor.ReorderParameters|**Ctrl+R, Ctrl+O** (lettre « O »)|
 
-###  <a name="bkmk_solutionexplorerGLOBAL"></a> Explorateur de solutions
+### <a name="bkmk_solutionexplorerGLOBAL"></a> Explorateur de solutions
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -297,7 +297,7 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |SolutionExplorer.PendingChangesFilter|**Ctrl+[**, **P**<br /><br /> ou<br /><br /> **Ctrl+[**, **Ctrl+P**|
 |SolutionExplorer.SyncWithActiveDocument|**Ctrl+[**, **S**<br /><br /> ou<br /><br /> **Ctrl+[**, **Ctrl+S**|
 
-###  <a name="bkmk_team"></a> Équipe
+### <a name="bkmk_team"></a> Équipe
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -306,7 +306,7 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |Team.Git.GoToGitCommits|**Ctrl+0** (zéro), **Ctrl+O** (lettre « O »)<br /><br /> ou<br /><br /> **Ctrl+0, O**|
 |Team.TeamExplorerSearch|**Ctrl+’**|
 
-###  <a name="bkmk_TFcontext"></a> Menus contextuels Team Foundation
+### <a name="bkmk_TFcontext"></a> Menus contextuels Team Foundation
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -321,14 +321,14 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |TeamFoundationContextMenus.Commands.GoToWebAccess|**Ctrl+0** (zéro), **Ctrl+A**<br /><br /> ou<br /><br /> **Ctrl+0, A**|
 |TeamFoundationContextMenus.Commands.GoToWorkItems|**Ctrl+0** (zéro), **Ctrl+W**<br /><br /> ou<br /><br /> **Ctrl+0, W**|
 
-###  <a name="bkmk_test"></a> Tester
+### <a name="bkmk_test"></a> Tester
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
 |Test.UseCodedUITestBuilder|**Ctrl+\\, Ctrl+C**|
 |Test.UseExistingActionRecording|**Ctrl+\\, Ctrl+A**|
 
-###  <a name="bkmk_testexplorerGLOBAL"></a> Explorateur de tests
+### <a name="bkmk_testexplorerGLOBAL"></a> Explorateur de tests
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -338,7 +338,7 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |TestExplorer.RunAllTests|**Ctrl+R, A**|
 |TestExplorer.RunAllTestsInContext|**Ctrl+R, T**|
 
-###  <a name="bkmk_tools"></a> Outils
+### <a name="bkmk_tools"></a> Outils
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -347,7 +347,7 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |Tools.ForceGC|**Ctrl+Maj+Alt+F12, Ctrl+Maj+Alt+F12**|
 |Tools.GoToCommandLine|**Ctrl+/**|
 
-###  <a name="bkmk_view"></a> Affichage
+### <a name="bkmk_view"></a> Affichage
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -396,7 +396,7 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |View.ZoomIn|**Ctrl+Maj+.**|
 |View.ZoomOut|**Ctrl+Maj+,**|
 
-###  <a name="bkmk_window"></a> Fenêtre
+### <a name="bkmk_window"></a> Fenêtre
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -427,14 +427,14 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |Window.SolutionExplorerSearch|**Ctrl+;**|
 |Window.WindowSearch|**Alt+`**|
 
-###  <a name="bkmk_windowsazure"></a> Azure
+### <a name="bkmk_windowsazure"></a> Azure
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
 |WindowsAzure.RetryMobileServiceScriptOperation|**Ctrl+Num \*, Ctrl+R**|
 |WindowsAzure.ShowMobileServiceScriptErrorDetails|**Ctrl+Num \*, Ctrl+D**|
 
-##  <a name="adonet-entity-data-model-designer"></a>ADO.NET Entity Data Model Designer
+## <a name="adonet-entity-data-model-designer"></a>ADO.NET Entity Data Model Designer
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -449,7 +449,7 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |View.EntityDataModelBrowser|**Ctrl+1**|
 |View.EntityDataModelMappingDetails|**Ctrl+2**|
 
-##  <a name="class-diagram"></a>Diagramme de classes
+## <a name="class-diagram"></a>Diagramme de classes
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -461,7 +461,7 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |Edit.RemovefromDiagram|**Supprimer**|
 |View.ViewCode|**Entrée**|
 
-##  <a name="coded-ui-test-editor"></a>Éditeur de test codé de l'interface utilisateur
+## <a name="coded-ui-test-editor"></a>Éditeur de test codé de l'interface utilisateur
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -472,14 +472,14 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |OtherContextMenus.UITestEditorContextMenu.Movecode|**Ctrl+Alt+C**|
 |OtherContextMenus.UITestEditorContextMenu.Splitintoanewmethod|**Ctrl+Maj+T**|
 
-##  <a name="dataset-editor"></a>Éditeur DataSet
+## <a name="dataset-editor"></a>Éditeur DataSet
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
 |OtherContextMenus.ColumnContext.InsertColumn|**Insert**|
 |OtherContextMenus.DbTableContext.Add.Column|**Ctrl+L**|
 
-##  <a name="difference-viewer"></a>Visionneuse de différences
+## <a name="difference-viewer"></a>Visionneuse de différences
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -495,7 +495,7 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |EditorContextMenus.CodeWindow.AddComment|**Ctrl+Maj+K**|
 |EditorContextMenus.CodeWindow.EditLocalFile|**Ctrl+Maj+P**|
 
-##  <a name="dom-explorer"></a>Explorateur DOM
+## <a name="dom-explorer"></a>Explorateur DOM
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -503,13 +503,13 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |DOMExplorer.SelectElement|**Ctrl+B**|
 |DOMExplorer.ShowLayout|**Ctrl+Maj+I**|
 
-##  <a name="f-interactive"></a>F# interactif
+## <a name="f-interactive"></a>F# interactif
 
 |Commande|Raccourci clavier|
 |-------------| - |
 |OtherContextMenus.FSIConsoleContext.CancelInteractiveEvaluation|**Ctrl+Attn**|
 
-##  <a name="graph-document-editor"></a>Éditeur de document de graphique
+## <a name="graph-document-editor"></a>Éditeur de document de graphique
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -521,7 +521,7 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |ArchitectureContextMenus.DirectedGraphContextMenu.Remove|**Supprimer**|
 |ArchitectureContextMenus.DirectedGraphContextMenu.Rename|**F2**|
 
-##  <a name="graphics-diagnostics"></a>Graphics Diagnostics
+## <a name="graphics-diagnostics"></a>Graphics Diagnostics
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -535,13 +535,13 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |Graphics.ZoomIn|**Maj+Alt+=**|
 |Graphics.ZoomOut|**Maj+Alt+-**|
 
-##  <a name="html-editor"></a>Éditeur HTML
+## <a name="html-editor"></a>Éditeur HTML
 
 |Commande|Raccourci clavier|
 |-------------| - |
 |OtherContextMenus.HTMLContext.GoToController|**Ctrl+M, Ctrl+G**|
 
-##  <a name="html-editor-design-view"></a>Éditeur HTML en mode Design
+## <a name="html-editor-design-view"></a>Éditeur HTML en mode Design
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -564,7 +564,7 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |View.ViewMarkup|**Maj+F7**|
 |Window.PreviousTab|**Ctrl+Pg préc**|
 
-##  <a name="html-editor-source-view"></a>Éditeur HTML en mode Source
+## <a name="html-editor-source-view"></a>Éditeur HTML en mode Source
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -574,13 +574,13 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |View.ViewDesigner|**Maj+F7**|
 |Window.PreviousTab|**Ctrl+Pg préc**|
 
-##  <a name="layer-diagram"></a>Diagramme de couche
+## <a name="layer-diagram"></a>Diagramme de couche
 
 |Commande|Raccourci clavier|
 |-------------| - |
 |Edit.Delete|**Maj+Suppr**|
 
-##  <a name="managed-resources-editor"></a>Éditeur de ressources managées
+## <a name="managed-resources-editor"></a>Éditeur de ressources managées
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -595,7 +595,7 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |Resources.Other|**Ctrl+6**|
 |Resources.Strings|**Ctrl+1**|
 
-##  <a name="merge-editor-window"></a>Fenêtre de l’éditeur de fusion
+## <a name="merge-editor-window"></a>Fenêtre de l’éditeur de fusion
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -603,7 +603,7 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonResultWindow|**Alt+2**|
 |TeamFoundationContextMenus.MergeContextMenu.SetFocusonRightWindow|**Alt+3**|
 
-##  <a name="microsoft-sql-server-data-tools-schema-compare"></a>Microsoft SQL Server Data Tools, Comparaison de schémas
+## <a name="microsoft-sql-server-data-tools-schema-compare"></a>Microsoft SQL Server Data Tools, Comparaison de schémas
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -614,7 +614,7 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |SQL.SSDTSchemaCompareStop|**Alt+Attn**|
 |SQL.SSDTSchemaCompareWriteUpdates|**Maj+Alt+U**|
 
-##  <a name="microsoft-sql-server-data-tools-table-designer"></a>Microsoft SQL Server Data Tools, Concepteur de tables
+## <a name="microsoft-sql-server-data-tools-table-designer"></a>Microsoft SQL Server Data Tools, Concepteur de tables
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -625,7 +625,7 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |SQL.Rename|**F2**<br /><br /> ou<br /><br /> **Ctrl+R, R**<br /><br /> ou<br /><br /> **Ctrl+R, Ctrl+R**|
 |ViewFileInScriptPanel|**Maj+Alt+Pg suiv**|
 
-##  <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Microsoft SQL Server Data Tools, Éditeur T-SQL
+## <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Microsoft SQL Server Data Tools, Éditeur T-SQL
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -646,7 +646,7 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |TSqlEditorCloneQuery|**Ctrl+Alt+N**|
 |TSqlEditorDatabaseCombo|**Maj+Alt+Pg suiv**|
 
-##  <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a>Microsoft SQL Server Data Tools, Éditeur T-SQL PDW
+## <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a>Microsoft SQL Server Data Tools, Éditeur T-SQL PDW
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -661,13 +661,13 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |TSqlEditorCloneQuery|**Ctrl+Alt+N**|
 |TSqlEditorDatabaseCombo|**Maj+Alt+Pg suiv**|
 
-##  <a name="page-inspector"></a>Inspecteur de page
+## <a name="page-inspector"></a>Inspecteur de page
 
 |Commande|Raccourci clavier|
 |-------------| - |
 |PageInspector.Minimize|**F12**|
 
-##  <a name="query-designer"></a>Concepteur de requêtes
+## <a name="query-designer"></a>Concepteur de requêtes
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -680,7 +680,7 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |QueryDesigner.Results|**Ctrl+4**|
 |QueryDesigner.SQL|**Ctrl+3**|
 
-##  <a name="query-results"></a>Résultats des requêtes
+## <a name="query-results"></a>Résultats des requêtes
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -688,7 +688,7 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |SQL.QueryResultsRefresh|**Maj+Alt+R**|
 |SQL.QueryResultsStop|**Alt+Attn**|
 
-##  <a name="report-designer"></a>Concepteur de rapports
+## <a name="report-designer"></a>Concepteur de rapports
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -714,14 +714,14 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |Edit.TabLeft|**Maj+Tab**|
 |View.ReportData|**Ctrl+Alt+D**|
 
-##  <a name="sequence-diagram"></a>Diagramme de séquence
+## <a name="sequence-diagram"></a>Diagramme de séquence
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
 |ArchitectureDesigner.Sequence.NavigateToCode|**F12**|
 |Edit.Delete|**Maj+Suppr**|
 
-##  <a name="settings-designer"></a>Concepteur de paramètres
+## <a name="settings-designer"></a>Concepteur de paramètres
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -730,13 +730,13 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |Edit.SelectionCancel|**Échap**|
 |View.ViewCode|**F7**|
 
-##  <a name="solution-explorer"></a>Explorateur de solutions
+## <a name="solution-explorer"></a>Explorateur de solutions
 
 |Commande|Raccourci clavier|
 |-------------| - |
 |ClassViewContextMenus.ClassViewProject.View.ViewinPageInspector|**Ctrl+K, Ctrl+G**|
 
-##  <a name="team-explorer"></a>Team Explorer
+## <a name="team-explorer"></a>Team Explorer
 
 |Commande|Raccourci clavier|
 |-------------| - |
@@ -761,13 +761,13 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |TeamFoundationContextMenus.MyWorkPageInProgress.TfsContextMyWorkPageNewLinkedWI|**Maj+Alt+L**|
 |View.Refresh|**F5**|
 
-##  <a name="test-explorer"></a>Explorateur de tests
+## <a name="test-explorer"></a>Explorateur de tests
 
 |Commande|Raccourci clavier|
 |-------------| - |
 |TestExplorer.OpenTest|**F12**|
 
-##  <a name="text-editor"></a>Éditeur de texte
+## <a name="text-editor"></a>Éditeur de texte
 
 | Commandes | Raccourcis clavier |
 | - | - |
@@ -884,38 +884,38 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 | TeamFoundationContextMenus.Annotate.TfsAnnotateMoveNextRegion | **Alt+Pg suiv** |
 | TeamFoundationContextMenus.Annotate.TfsAnnotateMovePreviousRegion | **Alt+Pg préc** |
 
-##  <a name="uml-activity-diagram"></a>Diagramme d'activités UML
+## <a name="uml-activity-diagram"></a>Diagramme d'activités UML
 
 |Commande|Raccourci clavier|
 |-------------| - |
 |Edit.Delete|**Maj+Suppr**|
 
-##  <a name="uml-class-diagram"></a>Diagramme de classes UML
+## <a name="uml-class-diagram"></a>Diagramme de classes UML
 
 |Commande|Raccourci clavier|
 |-------------| - |
 |Edit.DeleteFromModel|**Maj+Suppr**|
 
-##  <a name="uml-component-diagram"></a>Diagramme de composant UML
+## <a name="uml-component-diagram"></a>Diagramme de composant UML
 
 |Commande|Raccourci clavier|
 |-------------| - |
 |Edit.DeleteFromModel|**Maj+Suppr**|
 
-##  <a name="uml-use-case-diagram"></a>Diagramme de cas d'usage UML
+## <a name="uml-use-case-diagram"></a>Diagramme de cas d'usage UML
 
 |Commande|Raccourci clavier|
 |-------------| - |
 |Edit.DeleteFromModel|**Maj+Suppr**|
 
-##  <a name="vc-accelerator-editor"></a>Éditeur d'accélérateurs VC
+## <a name="vc-accelerator-editor"></a>Éditeur d'accélérateurs VC
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
 |Edit.NewAccelerator|**Insert**|
 |Edit.NextKeyTyped|**Ctrl+W**|
 
-##  <a name="vc-dialog-editor"></a>Éditeur de boîtes de dialogue VC
+## <a name="vc-dialog-editor"></a>Éditeur de boîtes de dialogue VC
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -949,7 +949,7 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |Format.TestDialog|**Ctrl + T**|
 |Format.ToggleGuides|**Ctrl+G**|
 
-##  <a name="vc-image-editor"></a>Éditeur d'images VC
+## <a name="vc-image-editor"></a>Éditeur d'images VC
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -991,13 +991,13 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |Image.ZoomIn|**Ctrl+Maj+.**<br /><br /> ou<br /><br /> **Ctrl+Haut**|
 |Image.ZoomOut|**Ctrl+Maj+,**<br /><br /> ou<br /><br /> **Ctrl+Bas**|
 
-##  <a name="vc-string-editor"></a>Éditeur de chaînes VC
+## <a name="vc-string-editor"></a>Éditeur de chaînes VC
 
 |Commande|Raccourci clavier|
 |-------------| - |
 |Edit.NewString|**Insert**|
 
-##  <a name="view-designer"></a>Concepteur de vues
+## <a name="view-designer"></a>Concepteur de vues
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -1010,13 +1010,13 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |QueryDesigner.Results|**Ctrl+4**|
 |QueryDesigner.SQL|**Ctrl+3**|
 
-##  <a name="visual-studio"></a>Visual Studio
+## <a name="visual-studio"></a>Visual Studio
 
 |Commande|Raccourci clavier|
 |-------------| - |
 |OtherContextMenus.ORDesignerContext.HideMethodsPane|**Ctrl+1**|
 
-##  <a name="windows-forms-designer"></a>Concepteur Windows Forms
+## <a name="windows-forms-designer"></a>Concepteur Windows Forms
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -1045,7 +1045,7 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |Edit.SizeControlUp|**Ctrl+Maj+Haut**|
 |Edit.TabLeft|**Maj+Tab**|
 
-##  <a name="work-item-editor"></a>Éditeur d'élément de travail
+## <a name="work-item-editor"></a>Éditeur d'élément de travail
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -1053,7 +1053,7 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |Edit.RefreshWorkItem|**F5**|
 |Team.NewLinkedWorkItem|**Maj+Alt+L**|
 
-##  <a name="work-item-query-view"></a>Affichage des requêtes d'élément de travail
+## <a name="work-item-query-view"></a>Affichage des requêtes d'élément de travail
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -1064,7 +1064,7 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |Team.Refresh|**F5**|
 |Window.Toggle|**Maj+Alt+V**|
 
-##  <a name="work-item-results-view"></a>Affichage des résultats des éléments de travail
+## <a name="work-item-results-view"></a>Affichage des résultats des éléments de travail
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -1077,7 +1077,7 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |Team.Refresh|**F5**|
 |Window.Toggle|**Maj+Alt+V**|
 
-##  <a name="workflow-designer"></a>Concepteur de flux de travail
+## <a name="workflow-designer"></a>Concepteur de flux de travail
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -1105,7 +1105,7 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |WorkflowDesigner.ZoomIn|**Ctrl+Num +**|
 |WorkflowDesigner.ZoomOut|**Ctrl+Num -**|
 
-##  <a name="xaml-ui-designer"></a>Concepteur XAML
+## <a name="xaml-ui-designer"></a>Concepteur XAML
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
@@ -1127,14 +1127,14 @@ Les sections du tableau suivant incluent des commandes globales, au sens où vou
 |View.EdgeRightMoveRight|**Ctrl+Maj+Alt+.**|
 |View.ShowPropertyMarkerMenu|**Ctrl+Barre d’espace**|
 
-##  <a name="xml-text-editor"></a>Éditeur XML (Texte)
+## <a name="xml-text-editor"></a>Éditeur XML (Texte)
 
 |Commandes|Raccourcis clavier|
 |--------------| - |
 |XML.StartXSLTDebugging|**Alt+F5**|
 |XML.StartXSLTWithoutDebugging|**Ctrl+Alt+F5**|
 
-##  <a name="xml-schema-designer"></a>Concepteur de schémas XML
+## <a name="xml-schema-designer"></a>Concepteur de schémas XML
 
 |Commandes|Raccourcis clavier|
 |--------------| - |

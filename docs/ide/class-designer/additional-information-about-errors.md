@@ -29,11 +29,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: aadc0cfb66226f463ff8a2049d4dbf81e7bcf62b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975559"
 ---
 # <a name="class-designer-errors"></a>Erreurs du Concepteur de classes
 
@@ -41,7 +41,7 @@ Le **Concepteur de classes** n’effectue pas le suivi de l’emplacement de vos
 
 ## <a name="resources"></a>Ressources
 
-Vous pouvez obtenir de l'aide sur d'autres erreurs et avertissements dans les ressources suivantes :
+Vous pouvez obtenir de l'aide sur d'autres erreurs et avertissements dans les ressources suivantes : 
 
 - [Utiliser le code Visual C++](working-with-visual-cpp-code.md) inclut des informations de dépannage sur l’affichage de C++ dans un diagramme de classes.
 - Le [Forum du Concepteur de classes Visual Studio](http://go.microsoft.com/fwlink/?LinkId=160754) propose un forum de questions relatives au **Concepteur de classes**.

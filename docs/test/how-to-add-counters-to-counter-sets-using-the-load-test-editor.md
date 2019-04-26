@@ -10,12 +10,12 @@ ms.assetid: e17d0e71-f982-4fc1-a2df-a1065d37473d
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 539d56d4adaa0cf831bde96ccd280fd03750b89f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 004eff423874a07e2b49713eaed16eb1bf8be609
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970528"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979447"
 ---
 # <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Procédure : Ajouter des compteurs à des ensembles de compteurs à l’aide de l’Éditeur de test de charge
 
@@ -30,34 +30,34 @@ Vous gérez vos compteurs dans l’**éditeur de test de charge**. Les ensembles
 
 ## <a name="to-add-counters-to-a-counter-set"></a>Pour ajouter des compteurs à un ensemble de compteurs
 
-1.  Ouvrez un test de charge.
+1. Ouvrez un test de charge.
 
-2.  Développez le nœud **Ensembles de compteurs**. Tous les ensembles de compteurs qui ont été ajoutés au test de charge sont visibles.
+2. Développez le nœud **Ensembles de compteurs**. Tous les ensembles de compteurs qui ont été ajoutés au test de charge sont visibles.
 
     > [!NOTE]
     > L’arborescence hiérarchique du test de charge contient également le nœud **Paramètres d’exécution**. Ce nœud contient le nœud **Mappages des ensembles de compteurs**, qui affiche tous les ordinateurs, ainsi que les ensembles de compteurs mappés à ces ordinateurs.
 
-3.  Cliquez avec le bouton droit sur un ensemble de compteurs existant, puis choisissez **Ajouter des compteurs**.
+3. Cliquez avec le bouton droit sur un ensemble de compteurs existant, puis choisissez **Ajouter des compteurs**.
 
      La boîte de dialogue **Sélectionner des compteurs de performance** s’affiche.
 
-4.  Dans la zone de liste déroulante fixe **Ordinateur**, tapez le nom de l’ordinateur à mapper. Vous pouvez également sélectionner l’un des ordinateurs répertoriés dans la liste déroulante.
+4. Dans la zone de liste déroulante fixe **Ordinateur**, tapez le nom de l’ordinateur à mapper. Vous pouvez également sélectionner l'un des ordinateurs répertoriés dans la liste déroulante.
 
     > [!NOTE]
     > Parce que les ensembles de compteurs doivent être mappés à un ordinateur avant que les données de performance soient rassemblées, vous devez spécifier un ordinateur sur lequel rassembler les données de performance.
 
-5.  Sélectionnez une **catégorie de performance** pour filtrer les catégories des compteurs de données de performances. Vous verrez deux colonnes de données à partir desquelles sélectionner des compteurs de performance.
+5. Sélectionnez une **catégorie de performance** pour filtrer les catégories des compteurs de données de performances. Vous verrez deux colonnes de données à partir desquelles sélectionner des compteurs de performance.
 
     > [!NOTE]
     > Certaines catégories nécessitent également la sélection d'une instance. Par exemple, si vous sélectionnez un compteur SQL, vous devez sélectionner une instance SQL parce que plusieurs instances de SQL peuvent être installées sur l'ordinateur cible.
 
-6.  Sélectionnez un compteur et une instance à ajouter à votre ensemble de compteurs personnalisés.
+6. Sélectionnez un compteur et une instance à ajouter à votre ensemble de compteurs personnalisés.
 
      \- ou -
 
      Activez la case d’option **Tous les compteurs** pour sélectionner tous les compteurs disponibles.
 
-7.  Cliquez sur **OK**.
+7. Cliquez sur **OK**.
 
     > [!NOTE]
     > Il est également possible d'ajouter des compteurs à un ensemble de compteurs en cliquant sur un compteur ou une catégorie de compteurs, en cliquant sur Copier, puis en le collant sur un autre nœud d'ensemble de compteurs. Il est possible de supprimer les compteurs supplémentaires copiés, mais inutiles.

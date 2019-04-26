@@ -107,7 +107,7 @@
               href: invokemethod-activity-designer.md
             - name: Concepteur d'activités WriteLine
               href: writeline-activity-designer.md
-        - name: Concepteurs d’activités de transaction
+        - name: Concepteurs d'activités de transaction
           href: transaction-activity-designers.md
           items:
             - name: Concepteur d'activités CancellationScope
@@ -118,9 +118,9 @@
               href: compensate-activity-designer.md
             - name: Concepteur d'activités Confirm
               href: confirm-activity-designer.md
-            - name: Concepteur d’activités TransactionScope
+            - name: Concepteur d'activités TransactionScope
               href: transactionscope-activity-designer.md
-        - name: Concepteurs d’activités de collection
+        - name: Concepteurs d'activités de collection
           href: collection-activity-designers.md
           items:
             - name: Concepteur d’activités AddToCollection<T>

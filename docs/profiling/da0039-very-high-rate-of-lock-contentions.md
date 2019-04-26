@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebc8e008152936da9d1d8fee86e99e54d15ce09c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f441cb5e6f8febf374a9ea024db9bec95960e11b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444864"
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039 : Taux très élevé de conflits de verrou
 
@@ -46,7 +46,7 @@ ms.locfileid: "56639022"
  Cette règle se déclenche lorsque les mesures prises pendant une exécution de profilage indiquent une quantité excessive de conflits de verrou. Les conflits de verrou retardent l’exécution des threads qui attendent le verrou. Vous devez toujours rechercher la cause des conflits de verrou, même lorsque vous exécutez des tests unitaires et des tests de charge sur du matériel bas de gamme et même si le niveau de conflit est peu important.
 
 > [!NOTE]
->  Quand le taux de conflits de verrou signalés dans les données de profilage est significatif mais pas excessif, le message d’information [DA0038 : Taux élevé de conflits de verrou](../profiling/da0038-high-rate-of-lock-contentions.md) est déclenché à la place de ce message d’avertissement.
+> Quand le taux de conflits de verrou signalés dans les données de profilage est significatif mais pas excessif, le message d’information [DA0038 : Taux élevé de conflits de verrou](../profiling/da0038-high-rate-of-lock-contentions.md) est déclenché à la place de ce message d’avertissement.
 
 ## <a name="how-to-investigate-a-warning"></a>Comment rechercher la cause d’un avertissement
  Double-cliquez sur le message pour accéder à la vue [Marques](../profiling/marks-view.md) des données de profilage.  Recherchez la colonne **Verrous et threads CLR .NET\Taux de conflits/s**. Déterminez s’il existe des phases spécifiques de l’exécution du programme durant lesquelles les conflits de verrou sont plus nombreux.

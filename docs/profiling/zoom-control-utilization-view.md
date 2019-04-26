@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7c7f50a3117daeee0ec1727adbcdcc5ca710be36
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62960105"
 ---
 # <a name="zoom-control-utilization-view"></a>Contrôle Zoom (vue Utilisation)
 Le contrôle de zoom vous permet de faire un zoom avant sur le graphique d’utilisation du processeur afin de vous concentrer sur des zones dignes d’intérêt. Ce contrôle effectue un zoom avant sur le centre de la vue. Vous devez donc centrer la zone digne d’intérêt avant d’effectuer un zoom avant.

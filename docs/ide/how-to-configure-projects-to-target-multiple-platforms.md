@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1f302821b219266cf7080437a73cc577ffb0ffa
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5449f0b5cb7d2310f7f71a93236bbe5fd62eacae
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824295"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Procédure : Configurer des projets pour qu’ils ciblent plusieurs plateformes
 
@@ -27,19 +27,19 @@ Visual Studio permet à une solution de cibler en même temps plusieurs architec
 
 La boîte de dialogue **Gestionnaire de configurations** vous permet de créer et de définir des plateformes et des configurations au niveau de la solution et au niveau du projet. Vous pouvez associer chaque combinaison de configurations au niveau de la solution et de cibles à un ensemble unique de propriétés, ce qui vous permet de basculer facilement entre, par exemple, une configuration Release qui cible une plateforme [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)], une configuration Release qui cible une plateforme x86 et une configuration Debug qui cible une plateforme x86.
 
-1.  Dans le menu **Générer**, cliquez sur **Gestionnaire de configuration**.
+1. Dans le menu **Générer**, cliquez sur **Gestionnaire de configuration**.
 
-2.  Dans la **zone Plateforme de la solution active**, sélectionnez la plateforme que votre solution doit cibler, ou sélectionnez **\<Nouveau>** pour créer une nouvelle plateforme. Visual Studio compile votre application de façon à cibler la plateforme qui est définie comme plateforme active dans la boîte de dialogue **Gestionnaire de configurations**.
+2. Dans la **zone Plateforme de la solution active**, sélectionnez la plateforme que votre solution doit cibler, ou sélectionnez **\<Nouveau>** pour créer une nouvelle plateforme. Visual Studio compile votre application de façon à cibler la plateforme qui est définie comme plateforme active dans la boîte de dialogue **Gestionnaire de configurations**.
 
 ## <a name="remove-a-platform"></a>Supprimer une plateforme
 
 Si vous constatez que vous n’avez pas besoin d’une plateforme, vous pouvez la supprimer à l’aide de la boîte de dialogue **Gestionnaire de configurations**. Cela supprime tous les paramètres de solution et de projet que vous avez configurés pour cette combinaison de configuration et de cible.
 
-1.  Dans le menu **Générer**, cliquez sur **Gestionnaire de configuration**.
+1. Dans le menu **Générer**, cliquez sur **Gestionnaire de configuration**.
 
-2.  Dans la **zone Plateforme de la solution active**, sélectionnez **\<Modifier>**. La boîte de dialogue **Modifier les plateformes de solution** s’affiche.
+2. Dans la **zone Plateforme de la solution active**, sélectionnez **\<Modifier>**. La boîte de dialogue **Modifier les plateformes de solution** s’affiche.
 
-3.  Cliquez sur la plateforme à supprimer, puis sur **Supprimer**.
+3. Cliquez sur la plateforme à supprimer, puis sur **Supprimer**.
 
 ## <a name="target-multiple-platforms-with-one-solution"></a>Cibler plusieurs plateformes avec une seule solution
 
@@ -47,11 +47,11 @@ Si vous constatez que vous n’avez pas besoin d’une plateforme, vous pouvez l
 
 ### <a name="to-target-multiple-platforms"></a>Pour cibler plusieurs plateformes
 
-1.  Utilisez le **Gestionnaire de configurations** pour ajouter au moins deux plateformes pour la solution.
+1. Utilisez le **Gestionnaire de configurations** pour ajouter au moins deux plateformes pour la solution.
 
-2.  Sélectionnez la plateforme que vous voulez cibler dans la liste **Plateforme de la solution active**.
+2. Sélectionnez la plateforme que vous voulez cibler dans la liste **Plateforme de la solution active**.
 
-3.  Générez la solution.
+3. Générez la solution.
 
 ### <a name="to-build-multiple-solution-configurations-at-once"></a>Pour générer plusieurs configurations de solution à la fois
 

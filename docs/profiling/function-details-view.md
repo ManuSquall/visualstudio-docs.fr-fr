@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3ebcb58f1bbab478f60f446527dad1611b295996
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603441"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969756"
 ---
 # <a name="function-details-view"></a>Vue Informations relatives à la fonction
 La fenêtre **Vue Informations relatives à la fonction** affiche les informations suivantes :

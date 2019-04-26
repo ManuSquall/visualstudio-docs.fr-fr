@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 05266a6f1b5ee0be22e2edc8df1c03b720844f4f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924121"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968078"
 ---
 # <a name="debugexe-devenvexe"></a>/DebugExe (devenv.exe)
 
@@ -36,7 +36,7 @@ devenv /DebugExe ExecutableFile
 
   Obligatoire. Chemin d’accès et nom d’un fichier `.exe`. Si le fichier `.exe` est introuvable ou n’existe pas, aucun avertissement ni erreur ne s’affiche et Visual Studio démarre normalement.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 Toute chaîne qui suit le paramètre *ExecutableFile* est transmise à ce fichier comme argument.
 

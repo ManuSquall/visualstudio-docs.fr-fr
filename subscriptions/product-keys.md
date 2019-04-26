@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Découvrez comment obtenir et gérer vos clés de produit dans les abonnements Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 9a1163aecab9f9330f1464704d0aa97018e51d6b
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 74d13602dd27669233cd40ebdd2f5e165c09079a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953899"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977716"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Utilisation de clés de produit dans les abonnements Visual Studio
 
@@ -53,7 +53,6 @@ Certaines clés sont fournies automatiquement, comme les clés « statiques »
 
 Différents types de clés sont disponibles en fonction du produit.
 
-
 ### <a name="product-key-types"></a>Types de clés de produit
 
 |    Type de clé           |    Description                                                                                                                                                                                                           |
@@ -74,7 +73,6 @@ Vous pouvez demander une clé à partir de la page Téléchargements du produit,
 
 ### <a name="claiming-product-keys"></a>Demande de clés de produit
 Seuls les abonnés ayant des abonnements actifs peuvent télécharger des produits et demander des clés de produit.  Si vous avez un abonnement actif, vous pouvez exporter vos clés demandées à partir de la page [Clés de produit](https://my.visualstudio.com/productkeys).
-
 
 Pour demander une clé de produit :
 1. Connectez-vous à votre abonnement Visual Studio.  Vous devez être connecté pour pouvoir télécharger des produits ou demander des clés de produit.

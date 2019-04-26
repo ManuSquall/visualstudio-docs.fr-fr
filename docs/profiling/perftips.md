@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b924cb02f46a0857c21903bed9200ed4ef79b6db
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0713ae13038991ec65dcbebe350c9085f7d6a94a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640855"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797938"
 ---
 # <a name="perftips"></a>Conseils sur les performances
 Les *conseils sur les performances* du débogueur et les **outils de diagnostic** intégrés au débogueur de Visual Studio vous aident à surveiller et à analyser les performances de votre application pendant le débogage.
@@ -32,27 +32,27 @@ Les *conseils sur les performances* du débogueur et les **outils de diagnostic*
 
  ![DiagnosticTools&#45;Update1](../profiling/media/diagnostictools-update1.png "DiagnosticTools-Update1")
 
--   La chronologie **Événements d'arrêt** marque les points d'arrêt qui ont été atteints dans la session de débogage. Cliquez sur un événement pour le sélectionner dans la liste des détails **Débogueur** .
+- La chronologie **Événements d'arrêt** marque les points d'arrêt qui ont été atteints dans la session de débogage. Cliquez sur un événement pour le sélectionner dans la liste des détails **Débogueur** .
 
--   Le graphique **Utilisation du processeur** montre les changements dans l'utilisation du processeur pour tous ses cœurs dans la session de débogage.
+- Le graphique **Utilisation du processeur** montre les changements dans l'utilisation du processeur pour tous ses cœurs dans la session de débogage.
 
--   La liste **Événements** du volet des détails **Débogueur** comprend des éléments pour chaque événement d'arrêt.
+- La liste **Événements** du volet des détails **Débogueur** comprend des éléments pour chaque événement d'arrêt.
 
--   La colonne **Durée** d'un événement d'arrêt affiche le temps écoulé entre l'événement et le point d'arrêt précédent.
+- La colonne **Durée** d'un événement d'arrêt affiche le temps écoulé entre l'événement et le point d'arrêt précédent.
 
 ## <a name="turn-perftips-on-or-off"></a>Activer ou désactiver les conseils sur les performances
  Pour activer ou désactiver les conseils sur les performances :
 
-1.  Dans le menu **Déboguer** , choisissez **Options**.
+1. Dans le menu **Déboguer** , choisissez **Options**.
 
-2.  Cochez ou décochez **Afficher les conseils sur les performances pendant le débogage**.
+2. Cochez ou décochez **Afficher les conseils sur les performances pendant le débogage**.
 
 ## <a name="turn-the-diagnostic-tools-window-on-or-off"></a>Activer ou désactiver la fenêtre Outils de diagnostic
  Pour activer ou désactiver la fenêtre Outils de diagnostic :
 
-1.  Dans le menu **Déboguer** , choisissez **Options**.
+1. Dans le menu **Déboguer** , choisissez **Options**.
 
-2.  Cochez ou décochez **Activer les outils de diagnostic pendant le débogage**.
+2. Cochez ou décochez **Activer les outils de diagnostic pendant le débogage**.
 
 ## <a name="see-also"></a>Voir aussi
 - [Profilage dans Visual Studio](../profiling/index.md)

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b778157b8e664280746f4d07423bfd67357a485
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 76adb2a5355800889939afd41075c261270b02aa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968052"
 ---
 # <a name="thread-details-view---contention-data"></a>Informations relatives au thread, vue - Données de conflit
 La vue Détails du Thread présente un graphique chronologique des événements bloquants dans le thread sélectionné d’une exécution du profilage, qui ont été provoqués par des conflits sur les ressources. Un événement de blocage se produit quand le thread est forcé d’interrompre l’exécution, car un autre thread a verrouillé l’accès à une ressource.
@@ -28,19 +28,19 @@ La vue Détails du Thread présente un graphique chronologique des événements 
 
 #### <a name="to-zoom-in-on-a-timeline-segment"></a>Pour faire un zoom sur un segment de la chronologie
 
--   Cliquez et faites glisser le pointeur de la souris pour sélectionner une zone de la chronologie.
+- Cliquez et faites glisser le pointeur de la souris pour sélectionner une zone de la chronologie.
 
      Quand vous relâchez la souris, la vue effectue un zoom avant sur le segment de temps sélectionné. Vous pouvez répéter le processus pour obtenir plus détails. La case de défilement sur la barre de défilement chronologique représente la taille relative de l’intervalle de temps qui est affiché dans la vue.
 
 #### <a name="to-zoom-out-on-a-timeline"></a>Pour appliquer un zoom arrière sur une chronologie
 
--   Cliquez sur **Zoom arrière** pour revenir au niveau de zoom précédent.
+- Cliquez sur **Zoom arrière** pour revenir au niveau de zoom précédent.
 
--   Cliquez sur **Réinitialisation du zoom** pour afficher l’intégralité de la chronologie de la vue.
+- Cliquez sur **Réinitialisation du zoom** pour afficher l’intégralité de la chronologie de la vue.
 
 #### <a name="to-view-the-call-stack-of-an-event"></a>Pour afficher la pile des appels d’un événement
 
--   Dans le graphe de chronologie, cliquez sur la barre verticale qui représente l’événement.
+- Dans le graphe de chronologie, cliquez sur la barre verticale qui représente l’événement.
 
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>Pour afficher ou modifier le code source d’une fonction dans la pile des appels
 
@@ -50,12 +50,12 @@ La vue Détails du Thread présente un graphique chronologique des événements 
 
 #### <a name="to-view-the-contention-events-of-a-resource-in-all-threads-in-the-profiling-run"></a>Pour voir les événements de conflit d’une ressource dans tous les threads de l’exécution du profilage
 
--   Dans le graphe de chronologie, cliquez sur le nom ou l’ID de la ressource.
+- Dans le graphe de chronologie, cliquez sur le nom ou l’ID de la ressource.
 
      La [vue Informations sur les ressources](../profiling/resource-details-view-contention-data.md) apparaît pour la ressource sélectionnée.
 
 #### <a name="to-view-the-thread-contention-data-in-the-processes-window"></a>Pour voir les données de conflit du thread dans la fenêtre Processus
 
--   Dans le graphique chronologique, cliquez sur **Total**.
+- Dans le graphique chronologique, cliquez sur **Total**.
 
      La [vue Processus](../profiling/process-view-contention-data.md) apparaît affiche avec le thread sélectionné.

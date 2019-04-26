@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3e211d4a685abc9c4a4137ade443ea3e5b90acf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 897ff07f78301553812f6855f3aa4bdb556a650e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440194"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
 La fonction `CommentMarkProfile` insère un marqueur numérique et une chaîne de texte dans le fichier .*vsp*. Pour que la marque et le commentaire soient insérés, le profilage du thread qui contient la fonction `CommentMarkProfile` doit être activé.
@@ -57,7 +57,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkProfile(
  Les marques de profil sont globales dans l’étendue. Par exemple, une marque de profil insérée dans un thread peut être utilisée pour marquer le début ou la fin d’un segment de données dans n’importe quel thread du fichier .*vsp*.
 
 > [!IMPORTANT]
->  La méthode CommentMarkProfile peut être utilisé seulement avec l’instrumentation.
+> La méthode CommentMarkProfile peut être utilisé seulement avec l’instrumentation.
 
 ## <a name="net-framework-equivalent"></a>Équivalent .NET Framework
  Microsoft.VisualStudio.Profiler.dll

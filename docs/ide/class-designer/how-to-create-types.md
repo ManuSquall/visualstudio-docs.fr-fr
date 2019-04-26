@@ -17,44 +17,44 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 28d4fbcd5581a2cbc860d90a6ba5557c9156cba7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: abee206f67aa019476fcd5085b4ff872338b4d1f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919637"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975266"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>Procédure : créer des types à l’aide du Concepteur de classes
 
 Pour concevoir de nouveaux types pour les projets C# et Visual Basic, créez-les dans un diagramme de classes. Pour voir les types existants, consultez [Guide pratique pour afficher les types existants](how-to-view-existing-types.md).
 
-##  <a name="CreateType"></a> Créer un nouveau type
+## <a name="CreateType"></a> Créer un nouveau type
 
-1.  Dans la **Boîte à outils**, sous **Concepteur de classes**, faites glisser l’un des éléments ci-dessous dans un diagramme de classes :
+1. Dans la **Boîte à outils**, sous **Concepteur de classes**, faites glisser l’un des éléments ci-dessous dans un diagramme de classes :
 
-    -   **Classe** ou **Classe abstraite**
+    - **Classe** ou **Classe abstraite**
 
-    -   **Enum**
+    - **Enum**
 
-    -   **Interface**
+    - **Interface**
 
-    -   **Structure** (VB) ou **Struct** (C#)
+    - **Structure** (VB) ou **Struct** (C#)
 
-    -   **Delegate**
+    - **Delegate**
 
-    -   **Module** (VB uniquement)
+    - **Module** (VB uniquement)
 
-2.  Nommez le type. Sélectionnez ensuite son niveau d'accès.
+2. Nommez le type. Sélectionnez ensuite son niveau d'accès.
 
-3.  Sélectionnez le fichier dans lequel vous souhaitez ajouter le code initial pour le type :
+3. Sélectionnez le fichier dans lequel vous souhaitez ajouter le code initial pour le type :
 
-    -   Pour créer un fichier et l’ajouter au projet actuel, sélectionnez **Créer un nouveau fichier** et nommez le fichier.
+    - Pour créer un fichier et l’ajouter au projet actuel, sélectionnez **Créer un nouveau fichier** et nommez le fichier.
 
-    -   Pour ajouter du code à un fichier existant, sélectionnez **Ajouter au fichier existant**.
+    - Pour ajouter du code à un fichier existant, sélectionnez **Ajouter au fichier existant**.
 
          Si votre solution possède un projet qui partage du code dans plusieurs applications, vous pouvez ajouter un nouveau type à un diagramme de classes dans le projet d'application, mais uniquement si le fichier de classe correspondant se trouve dans le même projet d'application ou dans le projet partagé.
 
-4.  Ajoutez à présent d'autres éléments pour définir le type :
+4. Ajoutez à présent d'autres éléments pour définir le type :
 
     |||
     |-|-|
@@ -67,7 +67,7 @@ Pour concevoir de nouveaux types pour les projets C# et Visual Basic, créez-les
 
      Consultez [Création de membres](creating-and-configuring-type-members.md#create-members).
 
-##  <a name="CustAttributeType"></a> Appliquer un attribut personnalisé à un type
+## <a name="CustAttributeType"></a> Appliquer un attribut personnalisé à un type
 
 1. Cliquez sur la forme du type sur un diagramme de classes.
 
@@ -77,7 +77,7 @@ Pour concevoir de nouveaux types pour les projets C# et Visual Basic, créez-les
 
    Les attributs personnalisés sont appliqués au type.
 
-##  <a name="CustAttributeMember"></a> Appliquer un attribut personnalisé à un membre de type
+## <a name="CustAttributeMember"></a> Appliquer un attribut personnalisé à un membre de type
 
 1. Cliquez sur le nom du membre dans la forme de son type sur un diagramme de classes ou sur sa ligne dans la fenêtre Détails de classe.
 

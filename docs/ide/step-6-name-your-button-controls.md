@@ -8,18 +8,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e0b1c4b34a9d4195875c1ae1104b1dc88585871b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9dbee780f2153003e870dbe0dbbb15b721a009df
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442017"
 ---
 # <a name="step-6-name-your-button-controls"></a>Étape 6 : Nommer vos contrôles bouton
 Votre formulaire ne contient qu’un seul <xref:System.Windows.Forms.PictureBox>. Lorsque vous l’avez ajouté, l’IDE l’a nommé automatiquement **pictureBox1**. Il n’existe qu’un seul <xref:System.Windows.Forms.CheckBox>, appelé **checkBox1**. Vous écrirez bientôt du code qui fera référence à CheckBox et PictureBox. Étant donné qu’il n’existe qu’un seul de ces deux contrôles, vous comprendrez ce que signifie **pictureBox1** ou **checkBox1** dans votre code.
 
 > [!NOTE]
->  En Visual Basic, le nom des contrôles commence par défaut par une lettre majuscule, autrement dit **PictureBox1**, **CheckBox1**et ainsi de suite.
+> En Visual Basic, le nom des contrôles commence par défaut par une lettre majuscule, autrement dit **PictureBox1**, **CheckBox1**et ainsi de suite.
 
  Il existe quatre boutons dans votre formulaire, et l’IDE les a nommés **button1**, **button2**, **button3**et **button4**. Leurs noms actuels ne vous permettent pas de savoir s’il s’agit du bouton **Fermer** ou du bouton **Afficher une image** . C’est pourquoi il est utile de donner à vos contrôles bouton des noms plus informatifs.
 
@@ -27,22 +27,22 @@ Votre formulaire ne contient qu’un seul <xref:System.Windows.Forms.PictureBox>
 
 ## <a name="to-name-your-button-controls"></a>Pour nommer vos contrôles bouton
 
-1.  Dans le formulaire, choisissez le bouton **Fermer** . (Si tous les boutons sont encore sélectionnés, appuyez sur la touche **Échap** pour annuler la sélection.) Faites défiler jusqu’à la propriété **(Name)** dans la fenêtre **Propriétés**. (La propriété **(Name)** se trouve vers le haut quand les propriétés sont classées par ordre alphabétique.) Renommez-la **closeButton**, comme indiqué sur l’image suivante.
+1. Dans le formulaire, choisissez le bouton **Fermer** . (Si tous les boutons sont encore sélectionnés, appuyez sur la touche **Échap** pour annuler la sélection.) Faites défiler jusqu’à la propriété **(Name)** dans la fenêtre **Propriétés**. (La propriété **(Name)** se trouve vers le haut quand les propriétés sont classées par ordre alphabétique.) Renommez-la **closeButton**, comme indiqué sur l’image suivante.
 
      ![Fenêtre Propriétés avec nom closeButton](../ide/media/express_setnameproperty.png)
 Fenêtre **Propriétés** avec nom **closeButton**
 
     > [!NOTE]
-    >  Si vous essayez de remplacer le nom de votre bouton par **close Button** (autrement dit avec un espace entre les mots close et Button), l’IDE affiche un message d’erreur : « Valeur de propriété non valide ». Les espaces (et quelques autres caractères) ne sont pas autorisés dans les noms de contrôle.
+    > Si vous essayez de remplacer le nom de votre bouton par **close Button** (autrement dit avec un espace entre les mots close et Button), l’IDE affiche un message d’erreur : « Valeur de propriété non valide ». Les espaces (et quelques autres caractères) ne sont pas autorisés dans les noms de contrôle.
 
-2.  Renommez les trois autres boutons en **backgroundButton**, **clearButton**et **showButton**. Vous pouvez vérifier les noms en sélectionnant la liste déroulante du sélecteur de contrôles dans la fenêtre **Propriétés** . Les nouveaux noms de boutons apparaissent.
+2. Renommez les trois autres boutons en **backgroundButton**, **clearButton**et **showButton**. Vous pouvez vérifier les noms en sélectionnant la liste déroulante du sélecteur de contrôles dans la fenêtre **Propriétés** . Les nouveaux noms de boutons apparaissent.
 
-3.  Double-cliquez sur le bouton **Afficher une image** du formulaire. Vous pouvez également sélectionner le bouton **Afficher une image** sur le formulaire, puis appuyer sur la touche **Entrée**. Dans ce cas, l’IDE ouvre un onglet supplémentaire appelé **Form1.cs** (**Form1.vb** si vous utilisez Visual Basic) dans la fenêtre principale. Cet onglet affiche le fichier de code utilisé pour le formulaire, comme illustré dans l’image suivante.
+3. Double-cliquez sur le bouton **Afficher une image** du formulaire. Vous pouvez également sélectionner le bouton **Afficher une image** sur le formulaire, puis appuyer sur la touche **Entrée**. Dans ce cas, l’IDE ouvre un onglet supplémentaire appelé **Form1.cs** (**Form1.vb** si vous utilisez Visual Basic) dans la fenêtre principale. Cet onglet affiche le fichier de code utilisé pour le formulaire, comme illustré dans l’image suivante.
 
      ![Onglet Form1.cs avec code Visual C&#35;](../ide/media/express_showbuttoncode.png)
 Onglet **Form1.cs** avec code Visual C#
 
-4.  Examinez attentivement cette partie du code. (Sélectionnez l’onglet **VB** ci-dessous si vous utilisez Visual Basic pour consulter la version Visual Basic du code.)
+4. Examinez attentivement cette partie du code. (Sélectionnez l’onglet **VB** ci-dessous si vous utilisez Visual Basic pour consulter la version Visual Basic du code.)
 
      [!code-vb[VbExpressTutorial1Step6#1](../ide/codesnippet/VisualBasic/step-6-name-your-button-controls_1.vb)]
      [!code-csharp[VbExpressTutorial1Step6#1](../ide/codesnippet/CSharp/step-6-name-your-button-controls_1.cs)]
@@ -50,14 +50,14 @@ Onglet **Form1.cs** avec code Visual C#
      Vous regardez le code intitulé `showButton_Click()`. L’IDE l’a ajouté au code du formulaire lorsque vous avez ouvert le fichier de code du bouton **showButton** . Au moment de la conception, lorsque vous ouvrez le fichier de code d’un contrôle dans un formulaire, le code est généré pour le contrôle s’il n’existe pas déjà. Ce code (connu sous le nom de *méthode*) s’exécute lorsque vous exécutez votre programme et sélectionnez le contrôle (dans ce cas, le bouton **Afficher une image** ).
 
     > [!NOTE]
-    >  Dans ce tutoriel, tout ce qui se trouve entre les parenthèses `()` a été supprimé pour simplifier le code Visual Basic qui est généré automatiquement. Chaque fois que cette situation se produit, vous pouvez supprimer le même code. Votre programme fonctionnera quand même. Dans les autres didacticiels, le code généré automatiquement est simplifié autant que possible.
+    > Dans ce tutoriel, tout ce qui se trouve entre les parenthèses `()` a été supprimé pour simplifier le code Visual Basic qui est généré automatiquement. Chaque fois que cette situation se produit, vous pouvez supprimer le même code. Votre programme fonctionnera quand même. Dans les autres didacticiels, le code généré automatiquement est simplifié autant que possible.
 
-5.  Sélectionnez à nouveau l’onglet **Concepteur Windows Forms** (**Form1.cs [Design]** en Visual C#, **Form1.vb [Design]** en Visual Basic), puis ouvrez le fichier de code du bouton **Effacer l’image** pour créer une méthode correspondante dans le code du formulaire. Répétez la même opération pour les deux boutons restants. Chaque fois, l’IDE ajoute une nouvelle méthode au fichier de code du formulaire.
+5. Sélectionnez à nouveau l’onglet **Concepteur Windows Forms** (**Form1.cs [Design]** en Visual C#, **Form1.vb [Design]** en Visual Basic), puis ouvrez le fichier de code du bouton **Effacer l’image** pour créer une méthode correspondante dans le code du formulaire. Répétez la même opération pour les deux boutons restants. Chaque fois, l’IDE ajoute une nouvelle méthode au fichier de code du formulaire.
 
-6.  Pour ajouter une méthode, ouvrez le fichier de code du contrôle **CheckBox** dans le **Concepteur Windows Forms** pour que l’IDE ajoute une méthode `checkBox1_CheckedChanged()`. Cette méthode est appelée chaque fois que l’utilisateur active ou désactive la case à cocher.
+6. Pour ajouter une méthode, ouvrez le fichier de code du contrôle **CheckBox** dans le **Concepteur Windows Forms** pour que l’IDE ajoute une méthode `checkBox1_CheckedChanged()`. Cette méthode est appelée chaque fois que l’utilisateur active ou désactive la case à cocher.
 
     > [!NOTE]
-    >  Lorsque vous travaillez sur un programme, vous basculez régulièrement entre l’éditeur de code et le **Concepteur Windows Forms**. L’IDE vous permet de naviguer facilement dans votre projet. Utilisez l’**Explorateur de solutions** pour ouvrir le **Concepteur Windows Forms** en double-cliquant sur *Form1.cs* en Visual C# ou sur *Form1.vb* en Visual Basic, ou encore dans la barre de menus, choisissez **Affichage** > **Concepteur**.
+    > Lorsque vous travaillez sur un programme, vous basculez régulièrement entre l’éditeur de code et le **Concepteur Windows Forms**. L’IDE vous permet de naviguer facilement dans votre projet. Utilisez l’**Explorateur de solutions** pour ouvrir le **Concepteur Windows Forms** en double-cliquant sur *Form1.cs* en Visual C# ou sur *Form1.vb* en Visual Basic, ou encore dans la barre de menus, choisissez **Affichage** > **Concepteur**.
 
      Les éléments suivants montrent le nouveau code qui est affiché dans l’éditeur de code.
 
@@ -74,6 +74,6 @@ Onglet **Form1.cs** avec code Visual C#
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
--   Pour passer à l’étape suivante du tutoriel, consultez [Étape 7 : Ajouter des composants de boîte de dialogue à votre formulaire](../ide/step-7-add-dialog-components-to-your-form.md).
+- Pour passer à l’étape suivante du tutoriel, consultez [Étape 7 : Ajouter des composants de boîte de dialogue à votre formulaire](../ide/step-7-add-dialog-components-to-your-form.md).
 
--   Pour revenir à l’étape précédente du tutoriel, consultez [Étape 5 : Ajouter des contrôles à votre formulaire](../ide/step-5-add-controls-to-your-form.md).
+- Pour revenir à l’étape précédente du tutoriel, consultez [Étape 5 : Ajouter des contrôles à votre formulaire](../ide/step-5-add-controls-to-your-form.md).

@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Découvrez l’avantage Enterprise Mobility + Security inclus dans votre abonnement Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 917f4e6c2b80c2cb0b154d58effd8016f54740c3
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: d670db0d083c4b8f32f970c790859a7c82e5dff1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232656"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948875"
 ---
 # <a name="enterprise-mobility--security-ems-in-visual-studio-subscriptions"></a>Avantage EMS (Enterprise Mobility + Security) dans les abonnements Visual Studio
 
@@ -37,7 +37,7 @@ Pour utiliser EMS, vous devez créer un compte ou vous connecter à l’aide d�
 
 4. Créez votre identifiant utilisateur et votre mot de passe.  Cliquez sur **Créer mon compte** pour continuer.
    > [!div class="mx-imgBorder"]
-   > ![Avantage EMS, Créer un identifiant utilisateur](_img/vs-ems/vs-ems-userID-cropped.png)
+   > ![Avantage EMS, Créer un UserID](_img/vs-ems/vs-ems-userID-cropped.png)
 
 5. Ensuite, entrez un numéro de téléphone pour recevoir un code de vérification par téléphone ou SMS.  Entrez le code, puis cliquez sur **Suivant**.
    > [!div class="mx-imgBorder"]
@@ -64,15 +64,13 @@ Pour utiliser EMS, vous devez créer un compte ou vous connecter à l’aide d�
 
 <sup>2</sup> *Exclut Microsoft Partner Network (Professional)*
 
-
 > [!NOTE]
 > Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
-
 
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
 ## <a name="support-resources"></a>Ressources de support
--  Besoin d'aide avec EMS ?  Consultez la [documentation en ligne sur EMS](/enterprise-mobility-security/).
--  Pour obtenir un support technique avec n’importe quel composant d’EMS, accédez au [FAQ du support EMS](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-support-faq) pour trouver la réponse à votre question.
--  Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
--  Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
+- Besoin d'aide avec EMS ?  Consultez la [documentation en ligne sur EMS](/enterprise-mobility-security/).
+- Pour obtenir un support technique avec n’importe quel composant d’EMS, accédez au [FAQ du support EMS](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-support-faq) pour trouver la réponse à votre question.
+- Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+- Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).

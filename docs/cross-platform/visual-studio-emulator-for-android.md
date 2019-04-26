@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cbf7582c5089d99a71b2354878b03c265755e65
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 3bf5a994d173a11a8515e166c3b0bc3044bdc587
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402893"
 ---
 # <a name="visual-studio-emulator-for-android"></a>Émulateur Visual Studio pour Android
 
@@ -34,7 +34,7 @@ L'Émulateur Visual Studio pour Android est une application de bureau qui émule
 
  Vous pouvez tester votre application sur un profil d'appareil unique pour chacune des plateformes Android, résolutions d'écran et autres propriétés matérielles prises en charge par l'Émulateur Visual Studio pour Android.
 
-##  <a name="Installing"></a> Installation et désinstallation
+## <a name="Installing"></a> Installation et désinstallation
  Installation de
 
  L'Émulateur Visual Studio pour Android fait partie des outils multiplateformes disponibles dans Visual Studio, que vous pouvez installer lors d'une installation personnalisée de Visual Studio. Pour ce faire, sélectionnez Développement multiplateforme pour appareils mobiles, Kits de développement logiciel (SDK) et outils courants, puis Émulateur Microsoft Visual Studio pour Android.
@@ -44,11 +44,11 @@ L'Émulateur Visual Studio pour Android est une application de bureau qui émule
  Vous pouvez désinstaller l'émulateur Visual Studio pour Android dans Ajout/Suppression de programmes, dans le Panneau de configuration.
 
 > [!NOTE]
->  La désinstallation de Visual Studio ne désinstalle pas l'émulateur. Vous devez désinstaller l'émulateur séparément.
+> La désinstallation de Visual Studio ne désinstalle pas l'émulateur. Vous devez désinstaller l'émulateur séparément.
 
  Quand vous désinstallez l'Émulateur Visual Studio pour Android, les cartes Ethernet virtuelles Hyper-V qui ont été créées pour l'émulateur ne sont pas supprimées automatiquement. Vous pouvez supprimer manuellement ces cartes virtuelles (si elles ne sont pas en cours d’utilisation) en ouvrant le Gestionnaire Hyper-V, en sélectionnant l’une des images VHD de l’émulateur, en choisissant l’onglet Réseau et en choisissant **Supprimer** pour chaque commutateur répertorié sous cet onglet.
 
-##  <a name="Requirements"></a> Configuration système requise et compatibilité descendante
+## <a name="Requirements"></a> Configuration système requise et compatibilité descendante
  Pour obtenir des informations importantes sur la configuration matérielle et logicielle requise de l’Émulateur Visual Studio pour Android, consultez la rubrique suivante.
 
 - [Configuration requise pour l’Émulateur Visual Studio pour Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md)
@@ -57,7 +57,7 @@ L'Émulateur Visual Studio pour Android est une application de bureau qui émule
 
   Les nouvelles versions de l'émulateur sont installées sur les anciennes versions (et peuvent, dans certains cas, remplacer les anciennes images et supprimer les paramètres, applications et fichiers installés sur ces images).
 
-##  <a name="Networking"></a> Mise en réseau dans l’Émulateur Visual Studio pour Android
+## <a name="Networking"></a> Mise en réseau dans l’Émulateur Visual Studio pour Android
  La connexion réseau de l'Émulateur Visual Studio pour Android se comporte comme la connexion d'un ordinateur de bureau avec ces caractéristiques :
 
 - L'émulateur apparaît sur le réseau comme une unité distincte avec sa propre adresse IP.
@@ -72,7 +72,7 @@ L'Émulateur Visual Studio pour Android est une application de bureau qui émule
 
   Pour plus d’informations sur la résolution des problèmes de réseau, consultez [Résolution des problèmes liés à l’émulateur Visual Studio pour Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md).
 
-##  <a name="Configuring"></a> Configuration de l’Émulateur Visual Studio pour Android
+## <a name="Configuring"></a> Configuration de l’Émulateur Visual Studio pour Android
  Tester la compatibilité de votre application Android sur toute la gamme de matériel Android peut constituer un vrai défi. Les téléphones et tablettes Android disponibles sur le marché existent en de nombreuses versions, tailles d'écran et configurations matérielles (mémoire RAM, UC, architecture, etc.). L'Émulateur Visual Studio pour Android simplifie cette démarche grâce aux profils d'appareils. Notre ensemble de profils d'appareils inclut le matériel le plus populaire sur le marché, y compris les appareils Samsung, Motorola, Sony, LG et bien plus encore.
 
  Dans Visual Studio 2015, vous pouvez installer, désinstaller et démarrer les profils d'appareils à l'aide du Gestionnaire d'émulateur. Vous pouvez accéder au Gestionnaire d’émulateur en choisissant **Outils**, puis **Émulateur Microsoft Visual Studio pour Android**.
@@ -83,26 +83,26 @@ L'Émulateur Visual Studio pour Android est une application de bureau qui émule
 
  Une fois que vous avez installé l’ensemble de profils que vous souhaitez cibler, vous pouvez démarrer ces nouveaux profils directement à partir du gestionnaire en appuyant sur le bouton vert **Lecture**. Les profils apparaissent également dans le menu déroulant de la cible de débogage dans n’importe quel type de projet mobile multiplateforme Visual Studio.
 
-##  <a name="FeaturesTest"></a> Fonctionnalités que vous pouvez tester dans l’émulateur
+## <a name="FeaturesTest"></a> Fonctionnalités que vous pouvez tester dans l’émulateur
  Pour plus d’informations sur les fonctionnalités que vous pouvez tester dans l’émulateur, consultez ce [billet de blog](https://devblogs.microsoft.com/devops/introducing-visual-studios-emulator-for-android/).
 
-##  <a name="FeaturesNonTest"></a> Fonctionnalités que vous ne pouvez pas tester dans l’émulateur
+## <a name="FeaturesNonTest"></a> Fonctionnalités que vous ne pouvez pas tester dans l’émulateur
  La liste suivante décrit les fonctionnalités de la plateforme Android que vous **ne pouvez pas** tester dans l’émulateur. Vous devez tester ces fonctionnalités sur un appareil physique.
 
--   Boussole
+- Boussole
 
--   Gyroscope
+- Gyroscope
 
--   Contrôleur de vibration
+- Contrôleur de vibration
 
--   Luminosité. La modification du niveau de luminosité de l'émulateur n'affecte pas visuellement la façon dont l'appareil apparaît sur votre écran.
+- Luminosité. La modification du niveau de luminosité de l'émulateur n'affecte pas visuellement la façon dont l'appareil apparaît sur votre écran.
 
-##  <a name="Support"></a> Ressources de support
+## <a name="Support"></a> Ressources de support
  Si votre ordinateur hôte satisfait à la configuration système requise et que vous rencontrez un problème non couvert dans ce guide de dépannage :
 
--   Posez une question sur StackOverflow en utilisant les balises [android-emulator](http://stackoverflow.com/questions/tagged/android-emulator) et visual-studio.
+- Posez une question sur StackOverflow en utilisant les balises [android-emulator](http://stackoverflow.com/questions/tagged/android-emulator) et visual-studio.
 
--   Signalez un problème en utilisant l'outil Envoyer un sourire dans Visual Studio ou dans le gestionnaire de l'émulateur.
+- Signalez un problème en utilisant l'outil Envoyer un sourire dans Visual Studio ou dans le gestionnaire de l'émulateur.
 
 ## <a name="see-also"></a>Voir aussi
  [Configuration requise pour l’Émulateur Visual Studio pour Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) [Résolution des problèmes liés à l’émulateur Visual Studio pour Android](../cross-platform/troubleshooting-the-visual-studio-emulator-for-android.md)

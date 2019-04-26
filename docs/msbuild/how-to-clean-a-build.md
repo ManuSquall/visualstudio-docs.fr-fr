@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2385d359387090d0430fbea182fcef738b454a7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d737ecf51b6726bf46a525104c99f8ac61569964
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603272"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977296"
 ---
 # <a name="how-to-clean-a-build"></a>Procédure : Nettoyer une build
 Quand vous nettoyez une build, tous les fichiers intermédiaires et de sortie sont supprimés ; seuls les fichiers projet et de composants sont conservés. De nouvelles instances des fichiers intermédiaires et de sortie peuvent alors être générées à partir des fichiers projet et de composants. La bibliothèque de tâches courantes qui est fournie avec [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] inclut une tâche [Exec](../msbuild/exec-task.md) que vous pouvez utiliser pour exécuter des commandes système. Pour plus d’informations sur la bibliothèque de tâches, consultez [Informations de référence sur les tâches](../msbuild/msbuild-task-reference.md).
@@ -28,11 +28,11 @@ Quand vous nettoyez une build, tous les fichiers intermédiaires et de sortie so
 
 #### <a name="to-create-a-directory-for-output-items"></a>Pour créer un répertoire pour les éléments de sortie
 
-1.  Utilisez l’élément `Property` pour définir l’emplacement et le nom du répertoire. Par exemple, créez un répertoire nommé *BuiltApp* dans le répertoire qui contient les fichiers projet et les fichiers sources :
+1. Utilisez l’élément `Property` pour définir l’emplacement et le nom du répertoire. Par exemple, créez un répertoire nommé *BuiltApp* dans le répertoire qui contient les fichiers projet et les fichiers sources :
 
      `<builtdir>BuiltApp</builtdir>`
 
-2.  Utilisez la tâche [MakeDir](../msbuild/makedir-task.md) pour créer le répertoire s’il n’existe pas. Par exemple :
+2. Utilisez la tâche [MakeDir](../msbuild/makedir-task.md) pour créer le répertoire s’il n’existe pas. Par exemple :
 
      ```xml
      <MakeDir Directories = "$(builtdir)"
@@ -44,7 +44,7 @@ Quand vous nettoyez une build, tous les fichiers intermédiaires et de sortie so
 
 #### <a name="to-remove-a-directory-and-all-files-contained-in-the-directory"></a>Pour supprimer un répertoire et tous les fichiers contenus dans le répertoire
 
--   Utilisez la tâche `RemoveDir` pour supprimer le répertoire. Par exemple :
+- Utilisez la tâche `RemoveDir` pour supprimer le répertoire. Par exemple :
 
      `<RemoveDir Directories="$(builtdir)" />`
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bfca12367bf675fdadd7bc84bc616e0d5e0b6b7d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 28a533fff657e9e6cf426124bf65068f15190e7a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603425"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62997366"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>Procédure : Spécifier la cible à générer en premier
 Un fichier projet peut contenir un ou plusieurs éléments `Target` qui définissent le mode de génération du projet. Le moteur [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) génère le premier projet trouvé, et toutes les dépendances, à moins que le fichier projet ne contienne un attribut `DefaultTargets`, un attribut `InitialTargets` ou qu’une cible ne soit spécifiée en ligne de commande à l’aide du commutateur **-target**.
@@ -35,7 +35,7 @@ Un fichier projet peut contenir un ou plusieurs éléments `Target` qui définis
 
 #### <a name="to-specify-more-than-one-initial-target"></a>Pour spécifier plusieurs cibles initiales
 
--   Répertoriez les cibles initiales, séparées par des points-virgules, dans l’attribut `InitialTargets` de l’élément `Project`. Par exemple, pour exécuter la cible `Clean`, puis la cible `Compile`, tapez :
+- Répertoriez les cibles initiales, séparées par des points-virgules, dans l’attribut `InitialTargets` de l’élément `Project`. Par exemple, pour exécuter la cible `Clean`, puis la cible `Compile`, tapez :
 
      `<Project InitialTargets="Clean;Compile">`
 
@@ -52,23 +52,22 @@ Un fichier projet peut contenir un ou plusieurs éléments `Target` qui définis
 
 #### <a name="to-specify-more-than-one-default-target"></a>Pour spécifier plusieurs cibles par défaut
 
--   Répertoriez les cibles par défaut, séparées par des points-virgules, dans l’attribut `DefaultTargets` de l’élément `Project`. Par exemple, pour exécuter la cible `Clean`, puis la cible `Compile`, tapez :
+- Répertoriez les cibles par défaut, séparées par des points-virgules, dans l’attribut `DefaultTargets` de l’élément `Project`. Par exemple, pour exécuter la cible `Clean`, puis la cible `Compile`, tapez :
 
      `<Project DefaultTargets="Clean;Compile">`
 
 ## <a name="use-the--target-switch"></a>Utiliser le commutateur -target
  Si aucune cible par défaut n’est définie dans le fichier projet ou que vous ne souhaitez pas utiliser la cible par défaut, vous pouvez utiliser le commutateur de ligne de commande **-target** pour spécifier une autre cible. La ou les cibles spécifiées avec le commutateur **-target** sont exécutées à la place des cibles spécifiées par l’attribut `DefaultTargets`. Les cibles spécifiées dans l’attribut `InitialTargets` sont toujours exécutées en premier.
 
-
 #### <a name="to-use-a-target-other-than-the-default-target-first"></a>Pour utiliser en premier une cible autre que la cible par défaut
 
--   Spécifiez la cible comme première cible à l’aide du commutateur de ligne de commande **-target**. Par exemple :
+- Spécifiez la cible comme première cible à l’aide du commutateur de ligne de commande **-target**. Par exemple :
 
      `msbuild file.proj -target:Clean`
 
 #### <a name="to-use-several-targets-other-than-the-default-targets-first"></a>Pour utiliser en premier plusieurs cibles autres que les cibles par défaut
 
--   Listez les cibles, séparées par des points-virgules ou des virgules, à l’aide du commutateur de ligne de commande **-target**. Par exemple :
+- Listez les cibles, séparées par des points-virgules ou des virgules, à l’aide du commutateur de ligne de commande **-target**. Par exemple :
 
      `msbuild <file name>.proj -t:Clean;Compile`
 

@@ -15,18 +15,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca051f96c386583f0a4a340bf5509ea1bd090ff3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 73e940f6d302d28713c0345f77d6c78c8223e363
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627270"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440283"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>Guide du débutant en échantillonnage de l’UC
 Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les problèmes de performances dans votre application. Cette procédure montre comment utiliser des données **d’échantillonnage**.
 
 > [!NOTE]
->  Nous vous recommandons d’utiliser l’outil [Utilisation de l’UC](../profiling/beginners-guide-to-performance-profiling.md), situé dans la fenêtre Outils de diagnostics, plutôt que l’outil hérité d’échantillonnage de l’UC, sauf si vous avez besoin de fonctionnalités spécifiques comme la prise en charge de l’instrumentation.
+> Nous vous recommandons d’utiliser l’outil [Utilisation de l’UC](../profiling/beginners-guide-to-performance-profiling.md), situé dans la fenêtre Outils de diagnostics, plutôt que l’outil hérité d’échantillonnage de l’UC, sauf si vous avez besoin de fonctionnalités spécifiques comme la prise en charge de l’instrumentation.
 
  **L’échantillonnage** est une méthode de profilage statistique qui vous montre les fonctions permettant d’effectuer la majeure partie du travail en mode utilisateur dans l’application. L'échantillonnage est un bon point de départ pour rechercher des pistes pour accélérer votre application.
 
@@ -35,7 +35,7 @@ Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les 
  Si **l’échantillonnage** ne vous fournit pas les données dont vous avez besoin, les méthodes de collecte d’autres outils de profilage fournissent des types d’informations différents qui peuvent vous être utiles. Pour plus d’informations sur ces autres méthodes, consultez [Guide pratique pour choisir des méthodes de collecte](../profiling/how-to-choose-collection-methods.md).
 
 > [!TIP]
->  Si vous profilez du code qui appelle des fonctions Windows, vous devez vérifier que vous disposez des fichiers .*pdb* les plus récents. Sans ces fichiers, vos vues de rapports répertorient des noms de fonctions Windows cryptés et difficiles à comprendre. Pour savoir comment vérifier que vous disposez des fichiers dont vous avez besoin, consultez [Guide pratique pour référencer les informations de symboles Windows](../profiling/how-to-reference-windows-symbol-information.md).
+> Si vous profilez du code qui appelle des fonctions Windows, vous devez vérifier que vous disposez des fichiers .*pdb* les plus récents. Sans ces fichiers, vos vues de rapports répertorient des noms de fonctions Windows cryptés et difficiles à comprendre. Pour savoir comment vérifier que vous disposez des fichiers dont vous avez besoin, consultez [Guide pratique pour référencer les informations de symboles Windows](../profiling/how-to-reference-windows-symbol-information.md).
 
 ## <a name="create-and-run-a-performance-session"></a>Créer et exécuter une session de performance
  Pour obtenir les données que vous devez analyser, vous devez d'abord créer une session de performance, puis exécuter cette session. **L’Assistant Performance** vous permet de faire les deux.
@@ -44,22 +44,22 @@ Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les 
 
 #### <a name="to-create-and-run-a-performance-session"></a>Pour créer et exécuter une session de performance
 
-1.  Ouvrez la solution dans Visual Studio. Définissez la configuration en Release. (Recherchez la zone **Configurations de solutions** de la barre d’outils, qui a par défaut la valeur **Debug**. Remplacez-la par **Release**.)
+1. Ouvrez la solution dans Visual Studio. Définissez la configuration en Release. (Recherchez la zone **Configurations de solutions** de la barre d’outils, qui a par défaut la valeur **Debug**. Remplacez-la par **Release**.)
 
     > [!IMPORTANT]
-    >  Si vous n'êtes pas administrateur sur l'ordinateur que vous utilisez, vous devez exécuter Visual Studio en tant qu'administrateur lorsque vous utilisez le profileur. Cliquez avec le bouton droit sur l’icône de l’application Visual Studio, puis cliquez sur **Exécuter en tant qu’administrateur**.
+    > Si vous n'êtes pas administrateur sur l'ordinateur que vous utilisez, vous devez exécuter Visual Studio en tant qu'administrateur lorsque vous utilisez le profileur. Cliquez avec le bouton droit sur l’icône de l’application Visual Studio, puis cliquez sur **Exécuter en tant qu’administrateur**.
 
-2.  Dans le menu **Débogage**, sélectionnez **Profileur**, puis **Profileur de performances**.
+2. Dans le menu **Débogage**, sélectionnez **Profileur**, puis **Profileur de performances**.
 
-3.  Cochez l’option **Assistant Performance**, puis cliquez sur **Démarrer**.
+3. Cochez l’option **Assistant Performance**, puis cliquez sur **Démarrer**.
 
-4.  Cochez l’option **Échantillonnage de l’UC (recommandé)**, puis cliquez sur **Terminer**.
+4. Cochez l’option **Échantillonnage de l’UC (recommandé)**, puis cliquez sur **Terminer**.
 
-5.  Votre application démarre et le profileur commence à collecter des données.
+5. Votre application démarre et le profileur commence à collecter des données.
 
-6.  Testez les fonctionnalités qui peuvent contenir des problèmes de performances.
+6. Testez les fonctionnalités qui peuvent contenir des problèmes de performances.
 
-7.  Fermez l'application normalement.
+7. Fermez l'application normalement.
 
      Une fois que vous avez terminé d’exécuter l’application, la vue **Résumé** des données de profilage s’affiche dans la fenêtre principale de Visual Studio et une icône s’affiche pour la nouvelle session dans la fenêtre **Explorateur de performances**.
 
@@ -76,23 +76,23 @@ Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les 
 
 #### <a name="to-analyze-sampling-data"></a>Pour analyser les données d'échantillonnage
 
-1.  Dans la vue **Résumé**, le **chemin réactif** affiche la branche de l’arborescence des appels de votre application avec les échantillons inclusifs les plus élevés. Il s’agit du chemin d’exécution qui était le plus actif au moment de la collecte des données. Les valeurs inclusives élevées peuvent indiquer que l'algorithme qui génère l'arborescence des appels peut être optimisé. Recherchez dans votre code la fonction qui se trouve au niveau le plus profond du chemin. Notez que le chemin d’accès peut également inclure des fonctions système ou des fonctions dans des modules externes.
+1. Dans la vue **Résumé**, le **chemin réactif** affiche la branche de l’arborescence des appels de votre application avec les échantillons inclusifs les plus élevés. Il s’agit du chemin d’exécution qui était le plus actif au moment de la collecte des données. Les valeurs inclusives élevées peuvent indiquer que l'algorithme qui génère l'arborescence des appels peut être optimisé. Recherchez dans votre code la fonction qui se trouve au niveau le plus profond du chemin. Notez que le chemin d’accès peut également inclure des fonctions système ou des fonctions dans des modules externes.
 
      ![Chemin réactif du profileur](../profiling/media/profiler_hotpath.png "Profiler_HotPath")
 
-    1.  Les **échantillons inclusifs** indiquent la quantité de travail effectué par la fonction et toute autre fonction qu’elle a appelée. Les nombres inclusifs élevés pointent vers les fonctions qui sont généralement les plus coûteuses.
+    1. Les **échantillons inclusifs** indiquent la quantité de travail effectué par la fonction et toute autre fonction qu’elle a appelée. Les nombres inclusifs élevés pointent vers les fonctions qui sont généralement les plus coûteuses.
 
-    2.  Les **échantillons exclusifs** indiquent la quantité de travail effectué par le code dans le corps de la fonction, à l’exception du travail effectué par les fonctions qu’elle a appelées. Les nombres exclusifs élevés peuvent indiquer un goulot d'étranglement au niveau des performances dans la fonction elle-même.
+    2. Les **échantillons exclusifs** indiquent la quantité de travail effectué par le code dans le corps de la fonction, à l’exception du travail effectué par les fonctions qu’elle a appelées. Les nombres exclusifs élevés peuvent indiquer un goulot d'étranglement au niveau des performances dans la fonction elle-même.
 
-2.  Cliquez sur le nom de la fonction pour afficher la vue **Informations relatives à la fonction** des données de profilage. La vue **Informations relatives à la fonction** présente une vue graphique des données de profilage pour la fonction sélectionnée, en affichant toutes les fonctions qui ont appelé cette fonction et toutes les fonctions appelées par la fonction sélectionnée.
+2. Cliquez sur le nom de la fonction pour afficher la vue **Informations relatives à la fonction** des données de profilage. La vue **Informations relatives à la fonction** présente une vue graphique des données de profilage pour la fonction sélectionnée, en affichant toutes les fonctions qui ont appelé cette fonction et toutes les fonctions appelées par la fonction sélectionnée.
 
-    -   La taille des blocs des fonctions d'appel et des fonctions appelées représente la fréquence relative à laquelle les fonctions ont appelé ou ont été appelées.
+    - La taille des blocs des fonctions d'appel et des fonctions appelées représente la fréquence relative à laquelle les fonctions ont appelé ou ont été appelées.
 
-    -   Vous pouvez cliquer sur le nom d'une fonction d'appel ou d'une fonction appelée afin de la sélectionner dans la vue Informations relatives à la fonction.
+    - Vous pouvez cliquer sur le nom d'une fonction d'appel ou d'une fonction appelée afin de la sélectionner dans la vue Informations relatives à la fonction.
 
-    -   Le volet inférieur des fenêtres **Informations relatives à la fonction** affiche le code de la fonction. Si vous examinez le code et recherchez une possibilité d’optimiser ses performances, cliquez sur le nom du fichier source pour ouvrir le fichier dans l’éditeur Visual Studio.
+    - Le volet inférieur des fenêtres **Informations relatives à la fonction** affiche le code de la fonction. Si vous examinez le code et recherchez une possibilité d’optimiser ses performances, cliquez sur le nom du fichier source pour ouvrir le fichier dans l’éditeur Visual Studio.
 
-3.  Pour continuer votre analyse, retournez à la vue **Résumé** en sélectionnant **Résumé** dans la liste déroulante **Vue**. Examinez ensuite les fonctions dans **Fonctions faisant le plus de travail individuel**. Cette liste affiche les fonctions avec les échantillons exclusifs les plus élevés. Le code du corps de fonction de ces fonctions a effectué un travail significatif et vous pouvez peut-être l'optimiser. Pour approfondir l’analyse d’une fonction particulière, cliquez sur le nom de la fonction afin de l’afficher dans la vue **Informations relatives à la fonction**.
+3. Pour continuer votre analyse, retournez à la vue **Résumé** en sélectionnant **Résumé** dans la liste déroulante **Vue**. Examinez ensuite les fonctions dans **Fonctions faisant le plus de travail individuel**. Cette liste affiche les fonctions avec les échantillons exclusifs les plus élevés. Le code du corps de fonction de ces fonctions a effectué un travail significatif et vous pouvez peut-être l'optimiser. Pour approfondir l’analyse d’une fonction particulière, cliquez sur le nom de la fonction afin de l’afficher dans la vue **Informations relatives à la fonction**.
 
      ![Liste des fonctions effectuant le plus de travail](../profiling/media/functions_mostwork.png "Functions_MostWork")
 
@@ -102,24 +102,24 @@ Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les 
 
      ![Chronologie de la vue Résumé de performance](../profiling/media/performancesummary.png "PerformanceSummary")
 
-4.  Le profileur utilise également un ensemble de règles pour suggérer des façons d'améliorer l'exécution du profilage et pour identifier les éventuels problèmes de performances. Si un problème est détecté, un avertissement s’affiche dans la fenêtre **Liste d’erreurs**. Pour ouvrir la fenêtre **Liste d’erreurs**, cliquez sur **Liste d’erreurs** dans le menu **Affichage**.
+4. Le profileur utilise également un ensemble de règles pour suggérer des façons d'améliorer l'exécution du profilage et pour identifier les éventuels problèmes de performances. Si un problème est détecté, un avertissement s’affiche dans la fenêtre **Liste d’erreurs**. Pour ouvrir la fenêtre **Liste d’erreurs**, cliquez sur **Liste d’erreurs** dans le menu **Affichage**.
 
-    -   Pour voir quelle fonction a déclenché un avertissement, double-cliquez sur l’avertissement dans la vue **Informations relatives à la fonction**.
+    - Pour voir quelle fonction a déclenché un avertissement, double-cliquez sur l’avertissement dans la vue **Informations relatives à la fonction**.
 
-    -   Pour afficher des informations détaillées sur l’avertissement, cliquez avec le bouton droit sur l’erreur, puis cliquez sur **Afficher l’aide sur l’erreur**.
+    - Pour afficher des informations détaillées sur l’avertissement, cliquez avec le bouton droit sur l’erreur, puis cliquez sur **Afficher l’aide sur l’erreur**.
 
 ## <a name="step-3-revise-code-and-rerun-a-session"></a>Étape 3 : Réviser le code et réexécuter une session
  Après avoir recherché et optimisé une ou plusieurs fonctions, vous pouvez répéter l'exécution du profilage et comparer les données pour afficher les différences de performances de votre application suite aux modifications que vous avez apportées.
 
 #### <a name="to-revise-code-and-rerun-the-profiler"></a>Pour réviser le code et réexécuter le profileur
 
-1.  Modifiez votre code.
+1. Modifiez votre code.
 
-2.  Pour ouvrir **l’Explorateur de performances**, dans le menu **Déboguer**, cliquez sur **Profileur**, sur **Explorateur de performances**, puis sur **Afficher l’Explorateur de performances**.
+2. Pour ouvrir **l’Explorateur de performances**, dans le menu **Déboguer**, cliquez sur **Profileur**, sur **Explorateur de performances**, puis sur **Afficher l’Explorateur de performances**.
 
-3.  Dans **l’Explorateur de performances**, cliquez avec le bouton droit sur la session que vous voulez réexécuter, puis cliquez sur **Démarrer avec le profilage**.
+3. Dans **l’Explorateur de performances**, cliquez avec le bouton droit sur la session que vous voulez réexécuter, puis cliquez sur **Démarrer avec le profilage**.
 
-4.  Une fois que vous avez réexécuté la session, un autre fichier de données est ajouté au dossier *Rapports* de la session dans **l’Explorateur de performances**. Sélectionnez les données de profilage d’origine et les nouvelles données de profilage, cliquez avec le bouton droit sur la sélection, puis cliquez sur **Comparer les rapports de performances**.
+4. Une fois que vous avez réexécuté la session, un autre fichier de données est ajouté au dossier *Rapports* de la session dans **l’Explorateur de performances**. Sélectionnez les données de profilage d’origine et les nouvelles données de profilage, cliquez avec le bouton droit sur la sélection, puis cliquez sur **Comparer les rapports de performances**.
 
      Une nouvelle fenêtre de rapport s'ouvre et affiche les résultats de la comparaison. Pour plus d’informations sur l’utilisation de la vue de comparaison, consultez [Guide pratique pour comparer des fichiers de données de performances](../profiling/how-to-compare-performance-data-files.md).
 

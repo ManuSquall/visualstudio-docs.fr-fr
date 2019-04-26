@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 952c4d9ab82275ff7b1550a3704e89b93c6260a3
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366586"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62954809"
 ---
 # <a name="python-web-application-project-templates"></a>Modèles de projet d’application web Python
 
@@ -98,7 +98,7 @@ Les propriétés des groupes **Run Server Command** (Commande du serveur d’ex�
 - **Environnement** : liste de paires \<NOM>=\<VALEUR> séparées par un saut de ligne spécifiant les variables d’environnement. Ces variables sont définies après toutes les propriétés susceptibles de modifier l’environnement, telles que le numéro de port et les chemins de recherche, et peuvent donc remplacer ces valeurs.
 
 Toute propriété de projet ou variable d’environnement peut être spécifiée avec la syntaxe MSBuild, par exemple : `$(StartupFile) --port $(SERVER_PORT)`.
-`$(StartupFile)` est le chemin d’accès relatif au fichier de démarrage, `{StartupModule}` le nom importable du fichier de démarrage. `$(SERVER_HOST)` et `$(SERVER_PORT)` sont des variables d’environnement normales définies par les propriétés **URL de lancement** et **Numéro de port**, soit automatiquement, soit par la propriété **Environnement**.
+`$(StartupFile)` est le chemin d’accès relatif au fichier de démarrage, et `{StartupModule}` est le nom importable du fichier de démarrage. `$(SERVER_HOST)` et `$(SERVER_PORT)` sont des variables d’environnement normales qui sont définies par les propriétés **URL de lancement** et **Numéro de port**, soit automatiquement, soit par la propriété **Environnement**.
 
 > [!Note]
 > Les valeurs du groupe **Run Server Command** (Commande du serveur d’exécution) sont utilisées avec la commande **Débogage** > **Démarrer le serveur** ou **Ctrl**+**F5** ; les valeurs du groupe **Debug Server Command** (Commande du serveur de débogage) sont utilisées avec la commande **Débogage** > **Start Debug Server** (Démarrer le serveur de débogage) ou **F5**.
@@ -109,11 +109,11 @@ Le modèle de **projet Web Bottle** inclut un code réutilisable qui effectue la
 
 - Groupe **Run Server Command** (Commande du serveur d’exécution) :
   - **Commande** : `bottle` (module)
-  - **Arguments** : `--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **Arguments** : `--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 - Groupe **Debug Server Command** (Commande du serveur de débogage) :
   - **Commande** : `bottle` (module)
-  - **Arguments** `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
+  - **Arguments** : `--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
 L’option `--reload` n’est pas recommandée en cas d’utilisation de Visual Studio pour le débogage.
 
@@ -147,5 +147,5 @@ La commande **Convertir en projet Microsoft Azure Cloud Service** (image ci-dess
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Informations de référence sur les modèles d’élément Python](python-item-templates.md)
+- [Référence de modèles d’élément Pyhton](python-item-templates.md)
 - [Publier sur Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)

@@ -7,22 +7,22 @@ manager: jillfra
 ms.workload:
 - cplusplus
 author: mikeblome
-ms.openlocfilehash: f5ab27f8f10cb7221ce85bd29df13e446253b8a8
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 14f2b1e5267bd5c9ce35375c6cf6438406aa3e80
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324907"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970347"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>Utiliser le framework de tests unitaires Microsoft pour C++ dans Visual Studio
 
 Le framework de tests unitaires Microsoft pour C++ est par défaut dans la charge de travail **Développement Desktop en C++**.
 
-##  <a name="separate_project"></a> Pour écrire des tests unitaires dans un projet distinct
+## <a name="separate_project"></a> Pour écrire des tests unitaires dans un projet distinct
 
 En règle générale, vous exécutez votre code de test dans son propre projet, dans la même solution que le code que vous voulez tester. Pour installer et configurer un nouveau projet de test, consultez [Écriture de tests unitaires pour C/C++](writing-unit-tests-for-c-cpp.md).
 
-##  <a name="same_project"></a> Pour écrire des tests unitaires dans le même projet
+## <a name="same_project"></a> Pour écrire des tests unitaires dans le même projet
 
 Dans certains cas, par exemple lors du test de fonctions non exportées dans une DLL, il peut être nécessaire de créer les tests dans le même projet que le programme que vous testez. Pour écrire des tests unitaires dans le même projet :
 
@@ -32,16 +32,14 @@ Dans certains cas, par exemple lors du test de fonctions non exportées dans une
 
    2. Cliquez sur la flèche vers le bas dans les lignes suivantes et choisissez **\<Modifier>**  :
 
-
       | Répertoire | Property |
       |-| - |
       | **Répertoires Include** | **$(VCInstallDir)UnitTest\include;$(IncludePath)** |
       | **Répertoires de bibliothèques** | **$(VCInstallDir)UnitTest\lib;$(LibraryPath)** |
 
-
 2. Ajoutez un fichier de test unitaire C++ :
 
-   -   Cliquez avec le bouton droit sur le nœud du projet dans **l’Explorateur de solutions**, puis choisissez **Ajouter** > **Nouvel élément** > **Test unitaire C++**.
+   - Cliquez avec le bouton droit sur le nœud du projet dans **l’Explorateur de solutions**, puis choisissez **Ajouter** > **Nouvel élément** > **Test unitaire C++**.
 
 ## <a name="write-the-tests"></a>Écrire les tests
 
