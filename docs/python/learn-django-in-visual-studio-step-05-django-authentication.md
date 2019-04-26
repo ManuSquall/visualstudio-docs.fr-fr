@@ -12,15 +12,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: bdc76b0a7b9d3f74da77b317faf31dae83706f04
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957851"
 ---
 # <a name="step-5-authenticate-users-in-django"></a>Étape 5 : Authentifier les utilisateurs dans Django
 
-**Étape précédente : [Utiliser le modèle de projet Web Django complet](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
+**Étape précédente : [Utiliser le modèle de projet web Django complet](learn-django-in-visual-studio-step-04-full-django-project-template.md)**
 
 Étant donné que l’authentification est un besoin courant pour les applications Web, le modèle « Projet Web de Django » contient un flux de l’authentification de base. (Le modèle « Sondages sur le projet Web Django » discuté à l’étape 6 de ce tutoriel inclut également le même flux.) Quand vous utilisez un des modèles de projet Django, Visual Studio inclut tous les modules nécessaires pour l’authentification dans le script *settings.py* du projet Django.
 
@@ -211,7 +211,7 @@ Réponse : La balise `{% csrf_token %}` inclut la [protection (csrf) contre la 
 ## <a name="next-steps"></a>Étapes suivantes
 
 > [!div class="nextstepaction"]
-> [Utiliser le modèle de projet web Django Sondage](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md)
+> [Utiliser le modèle Sondages du projet Web Django](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md)
 
 ## <a name="go-deeper"></a>Approfondir la question
 

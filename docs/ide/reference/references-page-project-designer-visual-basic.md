@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7c1bcb041101cf90957d02991ab1619d47051b5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 88bd7571179d7841cc239052b7bf9f410761174c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335128"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62956451"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Page Références, Concepteur de projets (Visual Basic)
 
@@ -82,11 +82,11 @@ Cliquez sur ce bouton pour accéder à la boîte de dialogue **Chemins des réf�
 
  Sélectionnez un espace de noms défini par l’utilisateur dans la liste d’espaces de noms, tapez un nouveau nom pour cet espace dans la zone **Espaces de noms importés**, puis cliquez sur ce bouton pour valider le nouvel espace de noms. Le bouton n’est actif que si l’espace de noms sélectionné est l’un de ceux que vous avez ajoutés à la liste à l’aide du bouton **Ajouter une importation utilisateur**. Vous pouvez ajouter :
 
--   Des classes ou des espaces de noms, par exemple <xref:System.Math?displayProperty=fullName>.
+- Des classes ou des espaces de noms, par exemple <xref:System.Math?displayProperty=fullName>.
 
--   Des importations avec alias, par exemple `VB=Microsoft.VisualBasic`.
+- Des importations avec alias, par exemple `VB=Microsoft.VisualBasic`.
 
--   Des espaces de noms XML, par exemple `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.
+- Des espaces de noms XML, par exemple `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.
 
 ## <a name="see-also"></a>Voir aussi
 

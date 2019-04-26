@@ -9,12 +9,12 @@ ms.assetid: d0b5b23c-7e94-4637-be6c-2620a5442d46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6aec2dfe707fb7c7cbae6a3220cedade47e0c0c5
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: fc1d609bab25b6a8e0dd573807aa02fefbe87a71
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950174"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>Procédure : créer un plug-in au niveau de la requête
 
@@ -30,23 +30,23 @@ En outre, vous pouvez utiliser des plug-ins de requête de test de performances 
 
 ## <a name="to-create-a-request-level-plug-in"></a>Pour créer un plug-in de niveau demande
 
-1.  Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur la solution, sélectionnez **Ajouter**, puis choisissez **Nouveau projet**.
+1. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur la solution, sélectionnez **Ajouter**, puis choisissez **Nouveau projet**.
 
 2. Créez un projet de **Bibliothèque de classes**.
 
-3.  Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le dossier **Références** de la nouvelle bibliothèque de classes, puis sélectionnez **Ajouter une référence**.
+3. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le dossier **Références** de la nouvelle bibliothèque de classes, puis sélectionnez **Ajouter une référence**.
 
      La boîte de dialogue **Ajouter une référence** s’affiche.
 
-4.  Choisissez l’onglet **.NET**, faites défiler la liste vers le bas, sélectionnez **Microsoft.VisualStudio.QualityTools.WebTestFramework**, puis cliquez sur **OK**
+4. Choisissez l’onglet **.NET**, faites défiler la liste vers le bas, sélectionnez **Microsoft.VisualStudio.QualityTools.WebTestFramework**, puis cliquez sur **OK**
 
      La référence à **Microsoft.VisualStudio.QualityTools.WebTestFramework** est ajoutée au dossier **Référence** dans **l’Explorateur de solutions**.
 
-5.  Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le nœud supérieur du projet de test de performances web et de charge auquel vous souhaitez ajouter le plug-in du test de requête de test de performances web. Sélectionnez **Ajouter une référence**.
+5. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur le nœud supérieur du projet de test de performances web et de charge auquel vous souhaitez ajouter le plug-in du test de requête de test de performances web. Sélectionnez **Ajouter une référence**.
 
      La boîte de dialogue **Ajouter une référence** s’affiche.
 
-6.  Choisissez l’onglet **Projets**, sélectionnez le **Projet de bibliothèque de classes**, puis choisissez **OK**.
+6. Choisissez l’onglet **Projets**, sélectionnez le **Projet de bibliothèque de classes**, puis choisissez **OK**.
 
 7. Dans **l’éditeur de code**, écrivez le code de votre plug-in. Commencez par créer une classe publique qui dérive de <xref:Microsoft.VisualStudio.TestTools.WebTesting.WebTestRequestPlugin>.
 

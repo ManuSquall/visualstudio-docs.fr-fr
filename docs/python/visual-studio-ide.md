@@ -12,17 +12,17 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: d9c84e72551911135550c43da2b99ecb1357f9b6
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59365728"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957449"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Bienvenue dans l’IDE Visual Studio | Python
 
 *L’environnement de développement intégré* de Visual Studio est une plateforme de lancement créative pour Python (et d’autres langages) qui permet de modifier, déboguer et tester du code, puis de publier une application. Un environnement de développement intégré (IDE) est un programme riche en fonctionnalités qui peut être utilisé pour de nombreux aspects du développement de logiciels. En plus de l’éditeur et du débogueur standard fournis par la plupart des IDE, Visual Studio offre des outils de complétion du code, des environnements REPL interactifs et d’autres fonctionnalités qui facilitent le processus de développement logiciel.
 
-[![VVisual Studio avec un projet Python](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
+[![Visual Studio avec un projet Python](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
 
 Cette image montre Visual Studio avec un projet Python ouvert et plusieurs fenêtres Outil essentielles et souvent utilisées :
 
@@ -62,7 +62,7 @@ Voici quelques-unes des fonctionnalités populaires de Visual Studio qui vous ai
 
    ![Refactorisation dans Visual Studio](media/tour-ide-refactor-extract-method.png)
 
-- [Vérification lint](refactoring-python-code.md)
+- [Linting](refactoring-python-code.md)
 
    Le linting vérifie l’absence d’erreurs et de problèmes courants dans votre code Python, encourageant ainsi de bons modèles de codage Python.
 
@@ -80,7 +80,7 @@ Voici quelques-unes des fonctionnalités populaires de Visual Studio qui vous ai
 
    ![Tildes dans Visual Studio](media/tour-ide-squiggles.png)
 
-- [Atteindre et Aperçu de la définition](../ide/go-to-and-peek-definition.md)
+- [Atteindre la définition et Aperçu de la définition](../ide/go-to-and-peek-definition.md)
 
    La fonctionnalité **Atteindre la définition** vous mène directement à l’emplacement où une fonction ou un type est défini. La commande **Aperçu des définitions** affiche la définition dans une fenêtre sans ouvrir de fichier distinct. La commande **Rechercher toutes les références** représente également un moyen utile de trouver à quel endroit un identificateur donné est défini et utilisé.
 
@@ -106,7 +106,7 @@ Voici quelques-unes des fonctionnalités populaires de Visual Studio qui vous ai
 
     ![Déboguer du code Python dans Visual Studio](media/remote-debugging-breakpoint-hit.png)
 
-- [Interaction avec C++](working-with-c-cpp-python-in-visual-studio.md)
+- [Interagir avec C++](working-with-c-cpp-python-in-visual-studio.md)
 
     De nombreuses bibliothèques créées pour Python sont écrites en C++ pour offrir des performances optimales. Visual Studio propose de riches fonctionnalités pour le développement d’extensions C++, notamment le [débogage en mode mixte](debugging-mixed-mode-c-cpp-python-in-visual-studio.md).
 
@@ -118,7 +118,7 @@ Voici quelques-unes des fonctionnalités populaires de Visual Studio qui vous ai
 
     ![Rapport de performances de profilage](media/profiling-results.png)
 
-- [Test unitaire](unit-testing-python-in-visual-studio.md)
+- [Tests unitaires](unit-testing-python-in-visual-studio.md)
 
     Visual Studio assure une prise en charge intégrée de la découverte, de l’exécution et du débogage de tests unitaires, le tout dans le contexte de l’IDE.
 
@@ -132,13 +132,13 @@ Explorez plus en profondeur Python dans Visual Studio en suivant l’un des guid
 > [Démarrage rapide : Créer une application web avec Flask](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)
 
 > [!div class="nextstepaction"]
-> [Utiliser Python dans Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
+> [Utilisation de Python dans Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 > [!div class="nextstepaction"]
 > [Bien démarrer avec le framework web Django dans Visual Studio](learn-django-in-visual-studio-step-01-project-and-solution.md)
 
 > [!div class="nextstepaction"]
-> [Bien démarrer avec l’infrastructure web Flask dans Visual Studio](learn-flask-visual-studio-step-01-project-solution.md)
+> [Bien démarrer avec le framework web Flask dans Visual Studio](learn-flask-visual-studio-step-01-project-solution.md)
 
 ## <a name="see-also"></a>Voir aussi
 

@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9814b03d0a8cd8733c9fd48b4e49c2cf306a8a44
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931895"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975859"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Icônes Affichage de classes et Explorateur d’objets
 
@@ -37,7 +37,7 @@ L’**affichage de classes** et l’**Explorateur d’objets** affichent des ic�
 |![Symbole d'énumération](../ide/media/vxenum_icon.gif)|Enum|![Icône de constante](../ide/media/vxconstant_icon.gif)|Constante|
 |![Symbole de définition du type](../ide/media/vxtypedef_icon.gif)|TypeDef|![Symbole d'élément d'énumération](../ide/media/vxenumitem_icon.gif)|Élément enum|
 |![Symbole du module Visual Studio](../ide/media/vxmodule_icon.gif)|Module|![Symbole d'élément de carte](../ide/media/vxmapitem_icon.gif)|Élément Map|
-|![Symbole de méthode d’extension](../ide/media/extensionmethod.gif)|Méthode d'extension|![Symbole de déclaration](../ide/media/vxmethod_icon.gif)|Déclaration externe|
+|![Symbole de méthode d'extension](../ide/media/extensionmethod.gif)|Méthode d'extension|![Symbole de déclaration](../ide/media/vxmethod_icon.gif)|Déclaration externe|
 |![Symbole de délégué](../ide/media/vxdelegate_icon.gif)|délégué|![Icône d'erreur pour l'affichage de classes et l'explorateur d'objets](../ide/media/erroricon.gif)|Error|
 |![Symbole d'exception](../ide/media/vxexception_icon.gif)|Exception|![Symbole du modèle](../ide/media/vxtemplate_icon.gif)|Modèle|
 |![Symbole de carte](../ide/media/vxmap_icon.gif)|Carte|![Symbole de point d'exclamation d'erreur](../ide/media/vxerror_icon.gif)|Inconnu|

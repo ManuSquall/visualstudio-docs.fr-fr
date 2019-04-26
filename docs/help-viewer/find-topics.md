@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f68bd5803d418f674007fff34aa0fa016c1804a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4e186bf0aa362f153ad3e6f57c39abc55c558270
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824282"
 ---
 # <a name="how-to-search-for-topics"></a>Procédure : Rechercher des rubriques
 
@@ -23,18 +23,18 @@ Pour ouvrir l’onglet **Rechercher**, choisissez l’onglet **Rechercher** dans
 
 ## <a name="to-perform-a-full-text-search"></a>Pour effectuer une recherche en texte intégral
 
-1.  Dans la zone de recherche, tapez le mot à rechercher.
+1. Dans la zone de recherche, tapez le mot à rechercher.
 
-2.  Dans la requête de recherche, spécifiez les opérateurs logiques ou de recherche avancée à appliquer à la recherche, le cas échéant. Pour effectuer une recherche dans toute l’aide disponible, n’utilisez pas d’opérateurs.
+2. Dans la requête de recherche, spécifiez les opérateurs logiques ou de recherche avancée à appliquer à la recherche, le cas échéant. Pour effectuer une recherche dans toute l’aide disponible, n’utilisez pas d’opérateurs.
 
     > [!NOTE]
     > Dans la boîte de dialogue **Options de la visionneuse**, vous pouvez définir des préférences supplémentaires, par exemple, pour spécifier le nombre maximal de résultats de la recherche à afficher et si le contenu en anglais doit être affiché quand votre langue principale n’est pas l’anglais.
 
-3.  Choisissez la touche **Entrée**.
+3. Choisissez la touche **Entrée**.
 
      Une recherche retourne 200 occurrences au maximum, par défaut, et les affiche dans la zone de résultats de la recherche. Des informations de version supplémentaires pour chaque résultat peuvent s’afficher en fonction du contenu.
 
-4.  Pour afficher une rubrique, choisissez son titre dans la liste des résultats.
+4. Pour afficher une rubrique, choisissez son titre dans la liste des résultats.
 
 ## <a name="full-text-search-tips"></a>Conseils de recherche en texte intégral
 
@@ -66,11 +66,11 @@ Vous pouvez restreindre davantage les résultats de la recherche en utilisant de
 
 L’algorithme de recherche applique certains critères pour aider à classer les résultats de la recherche dans la liste des résultats. En général :
 
-1.  Le contenu qui comprend les mots à rechercher dans le titre a un classement plus élevé.
+1. Le contenu qui comprend les mots à rechercher dans le titre a un classement plus élevé.
 
-2.  Le contenu dans lequel les mots à rechercher sont situés à proximité les uns des autres a un classement plus élevé.
+2. Le contenu dans lequel les mots à rechercher sont situés à proximité les uns des autres a un classement plus élevé.
 
-3.  Le contenu où la densité de mots à rechercher est supérieure a un classement plus élevé.
+3. Le contenu où la densité de mots à rechercher est supérieure a un classement plus élevé.
 
 ### <a name="stopwords">Mots ignorés dans les recherches (mots vides)</a>
 

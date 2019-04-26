@@ -16,19 +16,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e55b27ebc3a0a9690e04e19e53b65a7aa44834de
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0072bbd770a6d4fa675010048f2d067eb0961d62
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919415"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62791842"
 ---
 # <a name="alias-command"></a>Alias, commande
 Crée un alias pour une commande complète, pour une commande complète et des arguments ou pour un autre alias.
 
 > [!TIP]
 > Tapez `>alias` sans aucun argument pour afficher la liste actuelle des alias et leur définition.
-
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -46,7 +45,7 @@ Tools.Alias [/delete] [/reset] [aliasname] [aliasstring]
 
  /reset (facultatif). Rétablit les paramètres d’origine de la liste d’alias prédéfinis. En d’autres termes, ce commutateur restaure tous les alias prédéfinis et supprime tous les alias définis par l’utilisateur.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Dans la mesure où un alias représente des commandes, il doit être placé au début de la ligne de commande.
 
  Lors de l’émission de cette commande, vous devez inclure les commutateurs immédiatement après la commande, et non après les alias, sans quoi le commutateur lui-même sera inclus dans la chaîne de l’alias.

@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b64972f2bf2ef0bb34722f717f7ddf8bf032349d
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: d1fcb7b139e374f49df84fe17b8e12ea6aa6b625
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857398"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965767"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Tutoriel : Créer une application simple avec Visual Basic
 
@@ -27,7 +27,7 @@ Avec ce didacticiel, vous allez vous familiariser avec la plupart des outils, bo
 
 ::: moniker range="vs-2017"
 
-Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) pour l’installer gratuitement.
+Si vous n’avez pas encore installé Visual Studio, accédez à la page [Téléchargements Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) pour l’installer gratuitement.
 
 ::: moniker-end
 
@@ -116,7 +116,7 @@ Nous allons ajouter trois types de contrôles à cette application : un contrôl
 
 ### <a name="add-a-textblock-control"></a>Pour ajouter un contrôle TextBlock
 
-1.  Entrez **Ctrl**+**Q** pour activer la zone de recherche et tapez **Boîte à outils**. Choisissez **Affichage > Boîte à outils** dans la liste des résultats.
+1. Entrez **Ctrl**+**Q** pour activer la zone de recherche et tapez **Boîte à outils**. Choisissez **Affichage > Boîte à outils** dans la liste des résultats.
 
 2. Dans la fenêtre **Boîte à outils**, développez le nœud **Contrôles WPF communs** pour afficher le contrôle TextBlock.
 
@@ -302,5 +302,5 @@ Félicitations ! Vous avez terminé ce didacticiel. Le fichier *.exe* que vous a
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Nouveautés de Visual Studio 2017](../../ide/whats-new-visual-studio.md)
+- [Nouveautés dans Visual Studio 2017](../../ide/whats-new-visual-studio.md)
 - [Conseils de productivité](../../ide/productivity-tips-for-visual-studio.md)

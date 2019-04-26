@@ -13,12 +13,12 @@ ms.assetid: c2afe36b-d061-4f0e-9580-c18569ec08f9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e351ccaa6dddcf4773169a1e0a3f8e074002f2d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f37edcadb1d8800cb784771f9cc4f93d885bea65
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936120"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950005"
 ---
 # <a name="how-to-delete-load-test-results-from-a-repository"></a>Procédure : supprimer des résultats des tests de charge dans un dépôt
 
@@ -30,21 +30,21 @@ Vous pouvez gérer les résultats des tests de charge à partir de l’éditeur 
 
 ## <a name="to-delete-results-from-a-repository"></a>Pour supprimer les résultats à partir d'un référentiel
 
-1.  Depuis un projet de test de performances web et de charge, ouvrez un test de charge.
+1. Depuis un projet de test de performances web et de charge, ouvrez un test de charge.
 
-2.  Dans la barre d’outils incorporée, choisissez **Ouvrir et gérer des résultats**.
+2. Dans la barre d’outils incorporée, choisissez **Ouvrir et gérer des résultats**.
 
      La boîte de dialogue **Ouvrir et gérer des résultats des tests de charge** s’affiche.
 
-3.  Dans **Entrer un nom de contrôleur pour rechercher les résultats des tests de charge**, sélectionnez un contrôleur. Sélectionnez **\<Local - Aucun contrôleur** pour accéder aux résultats stockés localement.
+3. Dans **Entrer un nom de contrôleur pour rechercher les résultats des tests de charge**, sélectionnez un contrôleur. Sélectionnez **\<Local - Aucun contrôleur** pour accéder aux résultats stockés localement.
 
-4.  Dans **Afficher les résultats pour le test de charge suivant**, sélectionnez le test de charge dont vous voulez voir les résultats. Sélectionnez **\<Afficher les résultats de tous les tests** pour voir les résultats de tous les tests.
+4. Dans **Afficher les résultats pour le test de charge suivant**, sélectionnez le test de charge dont vous voulez voir les résultats. Sélectionnez **\<Afficher les résultats de tous les tests** pour voir les résultats de tous les tests.
 
      Si les résultats du test de charge sont disponibles, ils apparaissent dans la liste **Résultats du test de charge**. Les colonnes sont **Heure**, **Durée**, **Utilisateur**, **Résultat**, **Test** et **Description**. **Test** contient le nom du test et **Description** contient la description facultative qui est ajoutée avant l’exécution du test. La colonne **Description** affiche les descriptions courtes qui sont entrées dans les **Commentaires d’analyse** pour ce résultat de test.
 
-5.  Dans la liste **Résultats du test de charge**, choisissez un résultat. Vous pouvez utiliser la touche **Maj**, la touche **Ctrl**, ou les deux à la fois pour sélectionner plusieurs résultats.
+5. Dans la liste **Résultats du test de charge**, choisissez un résultat. Vous pouvez utiliser la touche **Maj**, la touche **Ctrl**, ou les deux à la fois pour sélectionner plusieurs résultats.
 
-6.  Choisissez **Supprimer**.
+6. Choisissez **Supprimer**.
 
      Les résultats sont supprimés du référentiel.
 

@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: a668e64f6b8a10cf22e08575ca9c2df385131666
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d42087b023718cd31528a2e5d60e2a43e34097c4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930457"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62792216"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>Paramètres de génération avancés, boîte de dialogue (C#)
 
@@ -75,7 +75,7 @@ Indique le type d'informations de débogage générées par le compilateur. Pour
 
    Active le débogage du code source lorsque le programme est démarré dans le débogueur, mais affiche uniquement un assembleur quand le programme en cours d’exécution est attaché au débogueur.
 
--  **portable**
+- **portable**
 
    Génère un fichier .PDB, un fichier de symboles portable non spécifique à la plateforme qui fournit d’autres outils, notamment des débogueurs, des informations sur les éléments dans le fichier exécutable principal et la façon dont il a été produit. Pour plus d’informations, consultez [PDB portable](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md).
 

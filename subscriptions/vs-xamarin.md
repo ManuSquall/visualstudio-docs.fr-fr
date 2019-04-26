@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Découvrez l’abonnement Xamarin University Training inclus dans l’abonnement Visual Studio sélectionné.
 searchscope: VS Subscription
-ms.openlocfilehash: 77b8a9c7df84203a9edb4b4dc9604d8894236c2d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: faddafcc9c1bbc77a6d6c91b72bdb2865552583a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842518"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810552"
 ---
 # <a name="xamarin-university-training-benefit-in-visual-studio-subscriptions"></a>Avantage Xamarin University Training dans les abonnements Visual Studio
 
@@ -28,11 +28,10 @@ Pour plus d’informations, voir [FAQ Xamarin University](https://university.xam
 
 Jusqu’au 21 décembre 2018, les abonnés Visual Studio Enterprise bénéficient de six mois d’accès illimité à l’ensemble du catalogue Xamarin University.  Les abonnés à Visual Studio Professional bénéficient de trois mois d’accès.
 
-
 ## <a name="support-resources"></a>Ressources de support
--  Besoin d’aide avec Xamarin University ?  Vous trouverez toute une variété de ressources de support sur [https://university.xamarin.com/support](https://university.xamarin.com/support).
--  Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
--  Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
+- Besoin d’aide avec Xamarin University ?  Vous trouverez toute une variété de ressources de support sur [https://university.xamarin.com/support](https://university.xamarin.com/support).
+- Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+- Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="frequently-asked-questions"></a>FAQ
 ### <a name="q--if-ive-already-activated-my-xamarin-university-benefit-by-december-21-2018-what-happens-after-that-date"></a>Q :  Si j’ai déjà activé mon avantage Xamarin University avant le 21 décembre 2018, que se passe-t-il après cette date ?
