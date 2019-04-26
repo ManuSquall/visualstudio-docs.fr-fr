@@ -26,12 +26,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 407e438193e5ee328a8cbc6743829e40f2c366fa
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 96828d4fe9871e81b05923f2dc1bf9ca7a53faaa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441332"
 ---
 # <a name="options-text-editor-c-formatting"></a>Options, Éditeur de texte, C#, Mise en forme
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ ms.locfileid: "59665660"
 Utilisez la boîte de dialogue de page de propriétés **Mise en forme** pour définir des options de mise en forme du code dans l’éditeur de code. Pour accéder à cette boîte de dialogue, cliquez sur **Options** dans le menu **Outils**, développez **Éditeur de texte**, développez **C#**, puis cliquez sur **Mise en forme**.  
   
 > [!NOTE]
->  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="general-settings"></a>Paramètres généraux  
  Les paramètres généraux affectent la façon dont l’éditeur de code applique les options de mise en forme au code.  

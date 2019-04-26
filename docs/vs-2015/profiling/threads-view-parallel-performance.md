@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e2fd0e329e6cf3434348fba1d3282921ee8c1f57
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0d685dc39f5e07840a5995f7fe67988840c3f50a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114793"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441658"
 ---
 # <a name="threads-view-parallel-performance"></a>Vue Threads (Performances parallèles)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +97,7 @@ La vue threads est la vue la plus détaillée et la plus riche en fonctionnalit�
  Quand vous sélectionnez un point dans un segment d’exécution, le visualiseur concurrentiel recherche ce point dans le temps sur la pile des appels appropriée, puis affiche un signe d’insertion noir au-dessus du point sélectionné dans le segment d’exécution et affiche la pile des appels elle-même sous l’onglet **Pile active**. Vous pouvez sélectionner plusieurs points sur le segment d’exécution.  
   
 > [!NOTE]
->  Le visualiseur concurrentiel n’est parfois pas en mesure de résoudre une sélection sur un segment d’exécution. En général, ceci se produit quand la durée du segment est inférieure à 1 milliseconde.  
+> Le visualiseur concurrentiel n’est parfois pas en mesure de résoudre une sélection sur un segment d’exécution. En général, ceci se produit quand la durée du segment est inférieure à 1 milliseconde.  
   
  Pour obtenir un profil d’exécution pour tous les threads activés (non masqués) dans la période de temps sélectionnée, choisissez le bouton **Exécution** dans la légende active.  
   

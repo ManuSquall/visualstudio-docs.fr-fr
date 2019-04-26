@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 18f03e2bd37d8275685f34a65c9ab96740ed80a3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: dbd746a52084d2a2fc90a0c6890e20687fe7ee26
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051620"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405629"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Guide pratique pour définir les options d'accessibilité IDE
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60051620"
  En outre, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] prend en charge les dispositions de clavier Dvorak, qui rendent plus accessibles les caractères les plus fréquemment tapés. Vous pouvez également personnaliser les touches de raccourci par défaut disponibles dans [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Pour plus d’informations, consultez [Identification et personnalisation des raccourcis clavier](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
   
 > [!NOTE]
->  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="editors-dialogs-and-tool-windows"></a>Éditeurs, boîtes de dialogue et fenêtres d’outils  
  Par défaut, les boîtes de dialogue et les fenêtres d’outils de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] utilisent les mêmes taille de police et couleurs que le système d’exploitation. Les paramètres de couleur pour le cadre de l’IDE, les boîtes de dialogue, les barres d’outils et les fenêtres d’outils sont basés sur un modèle de couleurs : clair ou sombre. Vous pouvez changer le modèle de couleurs actuel dans la [boîte de dialogue Général, Environnement, Options](../../ide/reference/general-environment-options-dialog-box.md).  
@@ -63,7 +63,7 @@ ms.locfileid: "60051620"
 6. Dans **Taille**, sélectionnez une nouvelle taille de police.  
   
     > [!NOTE]
-    >  Pour rétablir la taille du texte pour les éditeurs et les fenêtres Outil de texte, choisissez **Par défaut**.  
+    > Pour rétablir la taille du texte pour les éditeurs et les fenêtres Outil de texte, choisissez **Par défaut**.  
   
 7. Cliquez sur **OK**.  
   
@@ -71,7 +71,7 @@ ms.locfileid: "60051620"
  Vous pouvez également choisir de modifier les couleurs par défaut pour le texte, les indicateurs en marge, l’espace blanc et les éléments de code dans l’éditeur.  
   
 > [!NOTE]
->  Pour utiliser des couleurs à contraste élevé pour toutes les fenêtres d’application dans votre système d’exploitation, appuyez sur <strong>Alt gauche+</strong>**Maj gauche+Impr. écran**. Si [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] est ouvert, fermez et rouvrez [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] pour implémenter complètement les couleurs à contraste élevé.  
+> Pour utiliser des couleurs à contraste élevé pour toutes les fenêtres d’application dans votre système d’exploitation, appuyez sur <strong>Alt gauche+</strong>**Maj gauche+Impr. écran**. Si [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] est ouvert, fermez et rouvrez [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] pour implémenter complètement les couleurs à contraste élevé.  
   
 ##### <a name="to-change-the-color-of-items-in-the-editor"></a>Pour changer la couleur des éléments dans l’éditeur  
   

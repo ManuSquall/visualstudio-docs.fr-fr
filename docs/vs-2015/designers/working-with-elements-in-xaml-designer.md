@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c5a6e0ae31068144cb7de5ff83ac562db8f833d9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1063a94ad2ff08942ec191e9162b4b2d506bb048
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403456"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Working with elements in XAML Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ Vous pouvez ajouter des éléments (contrôles, dispositions et formes) à votre
      Quand vous ouvrez un ornement de marge et que la marge opposée n'est pas définie, celle-ci se voit attribuer une valeur appropriée en fonction de l'emplacement de l'élément dans la planche graphique. Pour les marges opposées, telles que les marges **Gauche** et **Droite**, au moins une propriété est toujours définie.  
   
     > [!IMPORTANT]
-    >  Les éléments placés à l'intérieur de certains conteneurs de disposition (par exemple, un <xref:Windows.UI.Xaml.Controls.Canvas>) n'ont pas d'ornements de marge. Les éléments placés dans un <xref:Windows.UI.Xaml.Controls.StackPanel> ont des ornements de marge pour les marges de gauche et de droite ou les marges supérieure et inférieure, en fonction de l'orientation du `StackPanel`.  
+    > Les éléments placés à l'intérieur de certains conteneurs de disposition (par exemple, un <xref:Windows.UI.Xaml.Controls.Canvas>) n'ont pas d'ornements de marge. Les éléments placés dans un <xref:Windows.UI.Xaml.Controls.StackPanel> ont des ornements de marge pour les marges de gauche et de droite ou les marges supérieure et inférieure, en fonction de l'orientation du `StackPanel`.  
   
 ## <a name="grouping-and-ungrouping-elements"></a>Regroupement et dégroupement d'éléments  
  Le regroupement de plusieurs éléments dans le concepteur XAML crée un conteneur de disposition et place ces éléments dans le conteneur. Le fait de regrouper des éléments dans un conteneur de disposition permet de faciliter la sélection, le déplacement et la transformation du groupe, comme si les éléments de ce groupe ne constituaient qu'un seul élément. Le regroupement est également utile pour l'identification d'éléments liés les uns aux autres d'une certaine façon, tels que les boutons qui composent un élément de navigation. Lorsque vous dissociez des éléments, vous supprimez simplement le conteneur de disposition contenant ceux-ci.  
@@ -106,7 +106,7 @@ Vous pouvez ajouter des éléments (contrôles, dispositions et formes) à votre
 2. Cliquez avec le bouton droit sur les éléments sélectionnés, pointez sur **Grouper**, puis cliquez sur le type de conteneur de disposition dans lequel vous souhaitez que le groupe réside.  
   
     > [!TIP]
-    >  Si vous sélectionnez <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> ou <xref:Windows.UI.Xaml.Controls.ScrollViewer> pour regrouper vos éléments, les éléments sont placés dans un nouveau panneau <xref:Windows.UI.Xaml.Controls.Grid> dans le <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> ou <xref:Windows.UI.Xaml.Controls.ScrollViewer>. Si vous dissociez des éléments dans l'un de ces conteneurs de disposition, seul le panneau <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> ou <xref:Windows.UI.Xaml.Controls.ScrollViewer> est supprimé. Le panneau <xref:Windows.UI.Xaml.Controls.Grid> est conservé. Pour supprimer le panneau `Grid`, redissociez les éléments.  
+    > Si vous sélectionnez <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> ou <xref:Windows.UI.Xaml.Controls.ScrollViewer> pour regrouper vos éléments, les éléments sont placés dans un nouveau panneau <xref:Windows.UI.Xaml.Controls.Grid> dans le <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> ou <xref:Windows.UI.Xaml.Controls.ScrollViewer>. Si vous dissociez des éléments dans l'un de ces conteneurs de disposition, seul le panneau <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> ou <xref:Windows.UI.Xaml.Controls.ScrollViewer> est supprimé. Le panneau <xref:Windows.UI.Xaml.Controls.Grid> est conservé. Pour supprimer le panneau `Grid`, redissociez les éléments.  
   
 #### <a name="to-ungroup-elements-and-delete-the-layout"></a>Pour dissocier des éléments et supprimer la disposition  
   
