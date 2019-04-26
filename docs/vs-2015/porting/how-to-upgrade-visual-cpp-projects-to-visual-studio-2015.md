@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 5b0153560173cf8b10ab5e20ebffd47d40baf735
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 198a848f953881af5a7ac4b042c74b368d202d06
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095741"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425886"
 ---
 # <a name="how-to-upgrade-visual-c-projects-to-visual-studio-2015"></a>Mise à niveau de projets Visual C++ vers Visual Studio 2015
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Lorsque vous ouvrez pour la première fois un projet Visual C++ créé dans une 
     - Vous pouvez mettre à jour le projet en permettant à [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] d’apporter les modifications décrites plus loin dans cette rubrique. Si vous avez plusieurs projets Visual C++ dans votre solution, vous devez tous les mettre à jour.
 
         > [!NOTE]
-        >  Si vous refusez la mise à jour lorsque vous y êtes invité, vous pouvez mettre à jour le projet ultérieurement en ouvrant le menu **Projet** et en choisissant l’option de **mise à jour du projet VC++** . Si la commande ne s’affiche pas, une mise à jour ne sera pas obligatoire.
+        > Si vous refusez la mise à jour lorsque vous y êtes invité, vous pouvez mettre à jour le projet ultérieurement en ouvrant le menu **Projet** et en choisissant l’option de **mise à jour du projet VC++** . Si la commande ne s’affiche pas, une mise à jour ne sera pas obligatoire.
 
 ## <a name="upgrading-a-visual-c-project"></a>Mise à jour d’un projet Visual C++
  Si vous permettez à [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] de mettre automatiquement à jour le projet, ces modifications sont apportées :

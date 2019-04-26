@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 183431a160245fd8fc0ec2193c00c32659230459
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 257d60d87a743d5c5e1099ee443c7bdb38055cca
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856792"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62985621"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Bien démarrer avec ASP.NET Core
 
@@ -31,9 +31,9 @@ La boîte de dialogue Nouveau projet s’affiche et vous permet de sélectionner
 
 Il existe un grand nombre de projets qui vous offrent un modèle prédéfini pour commencer à créer votre application ASP.NET Core. Ces équivalents sont :
 
-- **.NET Core > Vide**
-- **.NET Core > API**
-- **.NET Core > Application web**
+- **.NET Core > Vide**
+- **.NET Core > API**
+- **.NET Core > Application web**
 - **.NET Core > Application web (modèle-vue-contrôleur)**
 
 ![Options des projets ASP.NET](media/asp-net-core-2019-new-asp-core.png)
@@ -63,6 +63,7 @@ Ouvrez et examinez le fichier **Program.cs** de votre projet. Notez que plusieur
                 .UseStartup<Startup>();
     }
 ```
+
 Une application ASP.NET Core crée un serveur web dans sa méthode main en configurant et en lançant un hôte via une instance de [ `WebHostBuilder` ](/aspnet/core/fundamentals/hosting). Ce générateur fournit des méthodes pour permettre la configuration de l’hôte. Dans le modèle d’application, les configurations suivantes sont utilisées :
 
 * `.UseStartup<Startup>()`: Spécifie la classe de démarrage.
@@ -106,8 +107,8 @@ Ouvrez et examinez le fichier **Startup.cs** de votre projet :
 
 Cette classe Startup doit toujours respecter les règles suivantes :
 
- - Elle doit toujours être publique.
- - Elle doit contenir les deux méthodes publiques : `ConfigureServices` et `Configure`
+- Elle doit toujours être publique.
+- Elle doit contenir les deux méthodes publiques `ConfigureServices` et `Configure`.
 
 La méthode `ConfigureServices` définit les services qui seront utilisés par votre application.
 
@@ -220,7 +221,6 @@ Pour ajouter un contrôleur, procédez comme suit :
 9. Essayez d’accéder à `http://localhost:xxxx/HelloWorld/Xamarin?name=Amy` (en remplaçant `xxxx` par le port approprié). Vous devez normalement voir ceci :
 
     ![Exécution de l’application dans le navigateur avec des arguments](media/asp-net-core-image10.png)
-
 
 ## <a name="troubleshooting"></a>Résolution des problèmes
 
