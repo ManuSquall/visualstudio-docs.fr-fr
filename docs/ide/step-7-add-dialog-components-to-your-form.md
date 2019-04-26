@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bab093c450a7913ea0f1d3e94b6d04e287c6c539
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a1b4ef99f6b8e4dbe9d334fea0e8f5c34d5c6ffa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911076"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442064"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Étape 7 : Ajouter des composants de boîte de dialogue à votre formulaire
 Pour permettre à votre programme d’ouvrir les fichiers image et de choisir une couleur d’arrière-plan, vous devez ajouter un composant <xref:System.Windows.Forms.OpenFileDialog> et un composant <xref:System.Windows.Forms.ColorDialog> à votre formulaire.
@@ -24,33 +24,33 @@ Pour permettre à votre programme d’ouvrir les fichiers image et de choisir un
 
 ## <a name="to-add-dialog-components-to-your-form"></a>Pour ajouter des composants de boîte de dialogue à votre formulaire
 
-1.  Choisissez le **Concepteur Windows Forms** (**Form1.cs [Design]** ou **Form1.vb [Design])**, puis ouvrez le groupe **Boîtes de dialogue** dans la **boîte à outils**.
+1. Choisissez le **Concepteur Windows Forms** (**Form1.cs [Design]** ou **Form1.vb [Design])**, puis ouvrez le groupe **Boîtes de dialogue** dans la **boîte à outils**.
 
     > [!NOTE]
-    >  Le groupe **Boîtes de dialogue** dans la **boîte à outils** est doté de composants qui ouvrent de nombreuses boîtes de dialogue utiles. Vous pouvez les utiliser pour ouvrir et enregistrer des fichiers, parcourir des dossiers, ainsi que pour choisir des polices et des couleurs. Dans ce projet, vous utilisez deux composants de boîte de dialogue : OpenFileDialog et ColorDialog.
+    > Le groupe **Boîtes de dialogue** dans la **boîte à outils** est doté de composants qui ouvrent de nombreuses boîtes de dialogue utiles. Vous pouvez les utiliser pour ouvrir et enregistrer des fichiers, parcourir des dossiers, ainsi que pour choisir des polices et des couleurs. Dans ce projet, vous utilisez deux composants de boîte de dialogue : OpenFileDialog et ColorDialog.
 
-2.  Pour ajouter un composant appelé **openFileDialog1** à votre formulaire, double-cliquez sur **OpenFileDialog**. Pour ajouter un composant appelé **colorDialog1** à votre formulaire, double-cliquez sur **ColorDialog** dans la **boîte à outils**. (Vous l'utiliserez dans la prochaine étape de ce didacticiel.) Une zone, contenant une icône pour chacun des deux composants de boîte de dialogue que vous avez ajoutés, doit s'afficher en bas du **Concepteur Windows Forms** (sous le formulaire de la **visionneuse d'images**), comme indiqué dans l'image suivante.
+2. Pour ajouter un composant appelé **openFileDialog1** à votre formulaire, double-cliquez sur **OpenFileDialog**. Pour ajouter un composant appelé **colorDialog1** à votre formulaire, double-cliquez sur **ColorDialog** dans la **boîte à outils**. (Vous l'utiliserez dans la prochaine étape de ce didacticiel.) Une zone, contenant une icône pour chacun des deux composants de boîte de dialogue que vous avez ajoutés, doit s'afficher en bas du **Concepteur Windows Forms** (sous le formulaire de la **visionneuse d'images**), comme indiqué dans l'image suivante.
 
      ![Composants de la boîte de dialogue](../ide/media/express_dialogsadded.png)
 Composants de la **boîte de dialogue**
 
-3.  Choisissez l’icône **openFileDialog1** dans la zone située en bas du **Concepteur Windows Forms**. Définissez deux propriétés :
+3. Choisissez l’icône **openFileDialog1** dans la zone située en bas du **Concepteur Windows Forms**. Définissez deux propriétés :
 
-    -   Définissez la propriété **Filter** à la valeur suivante (vous pouvez copier-coller cette valeur) :
+    - Définissez la propriété **Filter** à la valeur suivante (vous pouvez copier-coller cette valeur) :
 
         ```
         JPEG Files (*.jpg)|*.jpg|PNG Files (*.png)|*.png|BMP Files (*.bmp)|*.bmp|All files (*.*)|*.*
         ```
 
-    -   Affectez à la propriété **Title** la valeur suivante : **Sélectionner un fichier image**
+    - Affectez à la propriété **Title** la valeur suivante : **Sélectionner un fichier image**
 
          Les paramètres de la propriété **Filter** spécifient les types de fichiers à afficher dans la boîte de dialogue **Sélectionner un fichier image**.
 
     > [!NOTE]
-    >  Pour voir un exemple de boîte de dialogue **Ouvrir un fichier** dans une application différente, ouvrez le **Bloc-notes** ou **Paint** et, dans la barre de menus, choisissez **Fichier** >  **Ouvrir**. Notez la liste déroulante **Types de fichiers** qui se trouve en bas. Pour cette configuration, vous venez d’utiliser la propriété **Filter** dans le composant **OpenFileDialog**. Notez également que les propriétés **Title** et **Filter** sont affichées en gras dans la fenêtre **Propriétés**. L'IDE utilise ce style pour vous montrer toutes les propriétés dont les valeurs par défaut ont été modifiées.
+    > Pour voir un exemple de boîte de dialogue **Ouvrir un fichier** dans une application différente, ouvrez le **Bloc-notes** ou **Paint** et, dans la barre de menus, choisissez **Fichier** >  **Ouvrir**. Notez la liste déroulante **Types de fichiers** qui se trouve en bas. Pour cette configuration, vous venez d’utiliser la propriété **Filter** dans le composant **OpenFileDialog**. Notez également que les propriétés **Title** et **Filter** sont affichées en gras dans la fenêtre **Propriétés**. L'IDE utilise ce style pour vous montrer toutes les propriétés dont les valeurs par défaut ont été modifiées.
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
--   Pour passer à l’étape suivante du tutoriel, consultez [Étape 8 : Écrire du code pour le gestionnaire d’événements du bouton Afficher une image](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).
+- Pour passer à l’étape suivante du tutoriel, consultez [Étape 8 : Écrire du code pour le gestionnaire d’événements du bouton Afficher une image](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).
 
--   Pour revenir à l’étape précédente du tutoriel, consultez [Étape 6 : Nommer vos contrôles bouton](../ide/step-6-name-your-button-controls.md).
+- Pour revenir à l’étape précédente du tutoriel, consultez [Étape 6 : Nommer vos contrôles bouton](../ide/step-6-name-your-button-controls.md).

@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ddbf430358dce0ac57dfe5ef36ff8e8861ea0ef8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 101512cb15bca022e5e3b473c84bd433a7269e15
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645301"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973901"
 ---
 # <a name="how-to-compare-performance-data-files"></a>Procédure : Comparer des fichiers de données de performances
 Vous pouvez comparer les résultats de deux fichiers de données du profileur (.*vsp* ou .*vsps*) en créant un rapport ou une vue de comparaison (« Différences »). Le rapport de comparaison montre les différences, les régressions de performances et les améliorations qui se sont produites d’une session de profilage à l’autre.
@@ -31,28 +31,28 @@ Vous pouvez comparer les résultats de deux fichiers de données du profileur (.
 
 ### <a name="to-create-comparison-file-view-for-a-project-in-performance-explorer"></a>Pour créer une vue de comparaison de fichiers pour un projet dans l’Explorateur de performances
 
-1.  Dans **l’Explorateur de performances**, sous **Rapports**, sélectionnez le fichier de rapport .*vsp* ou .*vsps* dont vous voulez utiliser les valeurs comme base de référence pour la comparaison.
+1. Dans **l’Explorateur de performances**, sous **Rapports**, sélectionnez le fichier de rapport .*vsp* ou .*vsps* dont vous voulez utiliser les valeurs comme base de référence pour la comparaison.
 
-2.  Sélectionnez les fichiers de rapport .*vsp* ou .*vsps* à comparer.
+2. Sélectionnez les fichiers de rapport .*vsp* ou .*vsps* à comparer.
 
-3.  Cliquez sur l’un des fichiers sélectionnés, puis cliquez sur **Comparer les rapports**.
+3. Cliquez sur l’un des fichiers sélectionnés, puis cliquez sur **Comparer les rapports**.
 
 ### <a name="to-compare-values"></a>Pour comparer des valeurs
 
-1.  Sélectionnez l’onglet **Rapport de comparaison** dans la vue Rapport.
+1. Sélectionnez l’onglet **Rapport de comparaison** dans la vue Rapport.
 
-2.  Dans la liste déroulante **Table**, sélectionnez les fonctions ou les modules à comparer.
+2. Dans la liste déroulante **Table**, sélectionnez les fonctions ou les modules à comparer.
 
-3.  Dans la liste déroulante **Colonne**, sélectionnez la valeur à comparer.
+3. Dans la liste déroulante **Colonne**, sélectionnez la valeur à comparer.
 
-4.  (facultatif) Tapez une valeur pour **Seuil**.
+4. (facultatif) Tapez une valeur pour **Seuil**.
 
-5.  Cliquez sur **Appliquer**.
+5. Cliquez sur **Appliquer**.
 
 ### <a name="to-compare-report-files"></a>Pour comparer des fichiers de rapport
 
-1.  Dans le menu **Analyser**, sélectionnez **Comparer les rapports de performances**.
+1. Dans le menu **Analyser**, sélectionnez **Comparer les rapports de performances**.
 
-2.  Dans la fenêtre **Sélectionner les fichiers d’analyse à des fins de comparaison**, sélectionnez le fichier d’analyse **Fichier de base** (.*vsp* ou .*vsps*) et le **Fichier de comparaison** (.*vsp* ou .*vsps*).
+2. Dans la fenêtre **Sélectionner les fichiers d’analyse à des fins de comparaison**, sélectionnez le fichier d’analyse **Fichier de base** (.*vsp* ou .*vsps*) et le **Fichier de comparaison** (.*vsp* ou .*vsps*).
 
-3.  Cliquez sur **OK**.
+3. Cliquez sur **OK**.

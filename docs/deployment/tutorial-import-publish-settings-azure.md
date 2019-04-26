@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: febf742ca7a54a14d8de59c251bb8783cf76370a
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 3965fdaa085d609fd87bf070e9a38aa2079cc9b5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58567878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62899178"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>Publier une application sur Azure App Service en important des paramètres de publication dans Visual Studio
 
@@ -100,6 +100,7 @@ Un fichier de paramètres de publication (*\*.publishsettings*) est différent d
       </publishProfile>
     </publishData>
     ```
+
     En règle générale, le fichier *.publishsettings précédent contient deux profils de publication que vous pouvez utiliser dans Visual Studio, un pour déployer à l’aide de Web Deploy et l’autre pour déployer à l’aide de FTP. Le code précédent affiche le profil Web Deploy. Les deux profils sont importés quand vous importez le profil.
 
 ## <a name="import-the-publish-settings-in-visual-studio-and-deploy"></a>Importer les paramètres de publication dans Visual Studio et déployer

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59a637a530bfabe784aae2c1fab622e2c2380667
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e78ce202c04b8b2af60a7b3d09b149c7e02f2e50
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621329"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977362"
 ---
 # <a name="how-to-build-incrementally"></a>Procédure : Générer de façon incrémentielle
 Quand vous générez un projet volumineux, il est important de ne pas regénérer les composants précédemment générés qui sont encore à jour. Si toutes les cibles sont générées à chaque fois, la génération de builds prend beaucoup de temps. Pour activer les builds incrémentielles (builds dans lesquelles seules les cibles obsolètes ou n’ayant pas été déjà générées sont regénérées), [!INCLUDE[vstecmsbuildengine](../msbuild/includes/vstecmsbuildengine_md.md)] ([!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]) peut comparer les horodateurs des fichiers d’entrée avec ceux des fichiers de sortie et déterminer s’il faut ignorer, générer ou regénérer partiellement une cible. Toutefois, il doit exister un mappage un-à-un entre les entrées et les sorties. Vous pouvez utiliser des transformations pour permettre aux cibles d’identifier ce mappage direct. Pour plus d’informations sur les transformations, consultez [Transformations](../msbuild/msbuild-transforms.md).
@@ -61,7 +61,6 @@ L’exemple suivant utilise un projet qui génère des fichiers d’aide pour un
 - `GenerateContentFiles`: convertit des fichiers *.txt* en fichiers *.content*.
 
 - `BuildHelp`: combine des fichiers *.content* et des fichiers de métadonnées XML pour générer le fichier *.help* final.
-
 
 Le projet utilise les transformations pour créer un mappage un-à-un entre les entrées et les sorties de la tâche `GenerateContentFiles`. Pour plus d’informations, consultez l’article [Transforms (Transformations MSBuild)](../msbuild/msbuild-transforms.md). De même, l’élément `Output` est défini de façon à utiliser automatiquement les sorties de la tâche `GenerateContentFiles` comme entrées de la tâche `BuildHelp`.
 

@@ -9,15 +9,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0ec27fe2d7824ca32cbf97dbabac8b7ea6c4aed6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948496"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62926921"
 ---
 # <a name="attribute-xelement-dynamic-property"></a>Attribute (propriété dynamique XElement)
 
-Obtient un indexeur utilisé pour récupérer l’instance d’attribut qui correspond au nom développé spécifié.
+Obtient un indexeur utilisé pour récupérer l'instance d'attribut qui correspond au nom développé spécifié.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -27,9 +27,9 @@ elem.Attribute[{namespaceName}attribName]
 
 ## <a name="property-valuereturn-value"></a>Valeur de propriété/valeur de retour
 
-Indexeur de type `XAttribute Item(String expandedName)`. Cet indexeur prend le nom développé de l’attribut spécifié et retourne l’objet <xref:System.Xml.Linq.XAttribute> correspondant ou `null` s’il n’existe aucun attribut avec le nom spécifié.
+Indexeur de type `XAttribute Item(String expandedName)`. Cet indexeur prend le nom développé de l'attribut spécifié et retourne l'objet <xref:System.Xml.Linq.XAttribute> correspondant ou `null` s'il n'existe aucun attribut avec le nom spécifié.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 Cette propriété est équivalente à la méthode <xref:System.Xml.Linq.XElement.Attribute%2A> de la classe <xref:System.Xml.Linq.XElement?displayProperty=fullName>.
 

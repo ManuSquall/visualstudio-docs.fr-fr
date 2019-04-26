@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 039456c10993199ec2265042aabc0ed5c475ccd9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954736"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969291"
 ---
 # <a name="out-devenvexe"></a>/Out (devenv.exe)
 
@@ -41,7 +41,7 @@ devenv /Out FileName
 
   Obligatoire. Chemin et nom du fichier où est enregistrée la sortie au cours de la génération d’un exécutable.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 Si le nom spécifié ne correspond à aucun fichier existant, le fichier est créé automatiquement. Sinon, les résultats sont ajoutés au contenu existant du fichier.
 

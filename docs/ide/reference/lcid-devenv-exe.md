@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: deb2ce5eba108127dce82bab77fe7ed4fb78fb14
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970125"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 
@@ -41,7 +41,7 @@ devenv {/LCID|/L} LocaleID
 
   Obligatoire. Identificateur de paramètres régionaux (LCID) de la langue spécifiée.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 Charge l’IDE et définit le langage naturel par défaut pour l’environnement. Cette modification est persistante d’une session à l’autre, et l’environnement IDE affiche cette modification dans la zone **Outils** > **Options** > **Environnement** > **Paramètres internationaux** > **Langue**.
 

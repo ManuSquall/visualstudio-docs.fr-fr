@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a228b3f69730eee5fb1672e07a6eea74d18c71e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 64c336db07eab794a6595cb2de9026c1269a33c4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946871"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62893379"
 ---
 # <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Procédure : Exporter une texture qui contient des valeurs alpha prémultipliées
 
@@ -21,20 +21,20 @@ Le pipeline de contenus d’image peut générer des textures alpha prémultipli
 
 Ce document illustre ces activités :
 
--   Configuration de l’image source à traiter par le pipeline de contenus d’image.
+- Configuration de l’image source à traiter par le pipeline de contenus d’image.
 
--   Configuration du pipeline de contenus d’image pour générer des valeurs alpha prémultipliées.
+- Configuration du pipeline de contenus d’image pour générer des valeurs alpha prémultipliées.
 
 ## <a name="premultiplied-alpha"></a>Valeurs alpha prémultipliées
  Les valeurs alpha prémultipliées offrent plusieurs avantages par rapport aux valeurs alpha conventionnelles non prémultipliées, car elles représentent mieux l’interaction réelle de la lumière avec les matériaux physiques en séparant la contribution de couleur du texel (couleur qu’il ajoute à la scène) de sa translucidité (quantité de couleur sous-jacente qu’il laisse passer). L’utilisation de valeurs alpha prémultipliées présente les avantages suivants :
 
--   Le mélange avec des données alpha prémultipliées est une opération associative ; le résultat du mélange de plusieurs textures translucides est identique, indépendamment de l’ordre dans lequel les textures sont mélangées.
+- Le mélange avec des données alpha prémultipliées est une opération associative ; le résultat du mélange de plusieurs textures translucides est identique, indépendamment de l’ordre dans lequel les textures sont mélangées.
 
--   En raison de la nature associative du mélange avec les valeurs alpha prémultipliées, le rendu multipasse des objets translucides est simplifié.
+- En raison de la nature associative du mélange avec les valeurs alpha prémultipliées, le rendu multipasse des objets translucides est simplifié.
 
--   En utilisant des valeurs alpha prémultipliées, vous pouvez réaliser simultanément le mélange additif pur (en définissant la valeur alpha à zéro) et le mélange linéairement interpolé. Par exemple, dans un système de particules, une particule de feu mélangée par ajout peut devenir une particule de fumée translucide mélangée à l’aide de l’interpolation linéaire. Sans valeur alpha prémultipliée, vous devriez dessiner les particules de feu séparément des particules de fumée, et modifier l’état de rendu entre les appels de dessin.
+- En utilisant des valeurs alpha prémultipliées, vous pouvez réaliser simultanément le mélange additif pur (en définissant la valeur alpha à zéro) et le mélange linéairement interpolé. Par exemple, dans un système de particules, une particule de feu mélangée par ajout peut devenir une particule de fumée translucide mélangée à l’aide de l’interpolation linéaire. Sans valeur alpha prémultipliée, vous devriez dessiner les particules de feu séparément des particules de fumée, et modifier l’état de rendu entre les appels de dessin.
 
--   Les textures qui utilisent des valeurs alpha prémultipliées sont mieux compressées que celles qui ne l’utilisent pas, et elles n’exposent pas les bords décolorés ou « l’effet de halo » qui peut se produire quand vous mélangez des textures qui n’utilisent pas de valeurs alpha prémultipliées.
+- Les textures qui utilisent des valeurs alpha prémultipliées sont mieux compressées que celles qui ne l’utilisent pas, et elles n’exposent pas les bords décolorés ou « l’effet de halo » qui peut se produire quand vous mélangez des textures qui n’utilisent pas de valeurs alpha prémultipliées.
 
 #### <a name="to-create-a-texture-that-uses-premultiplied-alpha"></a>Pour créer une texture qui utilise des valeurs alpha prémultipliées
 

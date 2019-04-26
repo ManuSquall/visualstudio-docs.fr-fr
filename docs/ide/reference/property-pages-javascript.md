@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 80f7c2d941852303771df1998a21c076265fdb93
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c1f725c239df2ffc9683676c4c20a86ce12f873e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929490"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969018"
 ---
 # <a name="property-pages-javascript"></a>Pages de propriétés (JavaScript)
 **Pages de propriétés** donne accès aux paramètres du projet. Vous pouvez utiliser les pages qui s’affichent dans les **Pages de propriétés** pour modifier les propriétés d’un projet.
@@ -49,7 +49,6 @@ Les pages et options suivantes s’affichent dans les **Pages de propriétés**.
 > [!NOTE]
 > Certaines options sont disponibles seulement dans les applications UWP.
 
-
  **Chemin de sortie**
 
  Spécifie l'emplacement des fichiers de sortie pour la configuration du projet. Le chemin d'accès est relatif. Si vous entrez un chemin d'accès absolu, le chemin d'accès absolu est enregistré dans le projet. Le chemin d'accès par défaut est bin\Debug.
@@ -66,16 +65,15 @@ Les pages et options suivantes s’affichent dans les **Pages de propriétés**.
 > [!NOTE]
 > Certaines options sont disponibles seulement dans les applications UWP.
 
-
  **Débogueur à lancer**
 
  Spécifie l'hôte par défaut pour le débogueur.
 
--   Sélectionnez **Ordinateur local** pour démarrer l’application sur l’ordinateur hôte Visual Studio. Pour plus d’informations, consultez [Exécution d’applications sur un ordinateur local](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
+- Sélectionnez **Ordinateur local** pour démarrer l’application sur l’ordinateur hôte Visual Studio. Pour plus d’informations, consultez [Exécution d’applications sur un ordinateur local](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
 
--   Sélectionnez **Simulateur** pour démarrer l’application dans le simulateur. Pour plus d’informations, consultez [Exécution d’applications dans le simulateur](../../debugger/run-windows-store-apps-in-the-simulator.md).
+- Sélectionnez **Simulateur** pour démarrer l’application dans le simulateur. Pour plus d’informations, consultez [Exécution d’applications dans le simulateur](../../debugger/run-windows-store-apps-in-the-simulator.md).
 
--   Sélectionnez **Ordinateur distant** pour démarrer l’application sur un ordinateur distant. Pour plus d’informations sur le débogage distant, consultez [Exécution d’applications sur un ordinateur distant](../../debugger/run-windows-store-apps-on-a-remote-machine.md).
+- Sélectionnez **Ordinateur distant** pour démarrer l’application sur un ordinateur distant. Pour plus d’informations sur le débogage distant, consultez [Exécution d’applications sur un ordinateur distant](../../debugger/run-windows-store-apps-on-a-remote-machine.md).
 
 **Lancer l’application**
 

@@ -1,21 +1,21 @@
 ---
-ms.openlocfilehash: 4b5b629ecf67ebd88be2eb1bf9172fec001fb475
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: b8903ecc6f0bdb1ee24f5b8b7b724311c903e4ba
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58051936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62927710"
 ---
 ## <a name="prerequisites"></a>Prérequis
 
 ::: moniker range=">=vs-2019"
 
-* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/) installé avec les charges de travail appropriées pour le langage de votre choix :
+* [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) installé avec les charges de travail appropriées pour le langage de votre choix :
   * ASP.NET : **Développement web et ASP.NET**
   * Node.js : **Développement Node.js**
 ::: moniker-end
 ::: moniker range="vs-2017"
-* [Visual Studio 2017](https://visualstudio.microsoft.com/downloads/) installé avec les charges de travail appropriées pour le langage de votre choix :
+* [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) installé avec les charges de travail appropriées pour le langage de votre choix :
   * ASP.NET : **Développement web et ASP.NET**
   * Node.js : **Développement Node.js**
 ::: moniker-end

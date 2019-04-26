@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbceecbbe03e84e1dac6c851f3bbb692c0e26539
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ee62d8c5b9a657b09feda01d6275a79ee91b487d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934651"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430820"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>Étape 11 : Exécuter votre programme et tester d’autres fonctionnalités
 Votre programme est terminé et prêt à fonctionner. Vous pouvez l'exécuter et définir la couleur d'arrière-plan du contrôle <xref:System.Windows.Forms.PictureBox>. Pour découvrir d'autres fonctionnalités, essayez d'améliorer le programme en modifiant la couleur du formulaire, en personnalisant les boutons et la case à cocher, et en modifiant les propriétés du formulaire.
@@ -24,38 +24,38 @@ Votre programme est terminé et prêt à fonctionner. Vous pouvez l'exécuter et
 
 ## <a name="to-run-your-program-and-set-the-background-color"></a>Pour exécuter votre programme et définir la couleur d'arrière-plan.
 
-1.  Appuyez sur**F5** ou, dans la barre de menus, choisissez **Déboguer** > **Démarrer le débogage**.
+1. Appuyez sur**F5** ou, dans la barre de menus, choisissez **Déboguer** > **Démarrer le débogage**.
 
-2.  Avant d’ouvrir une image, choisissez le bouton **Définir la couleur d’arrière-plan**. La boîte de dialogue **Couleur** s’ouvre.
+2. Avant d’ouvrir une image, choisissez le bouton **Définir la couleur d’arrière-plan**. La boîte de dialogue **Couleur** s’ouvre.
 
      ![Boîte de dialogue Couleur](../ide/media/express_colordialog.png)
 Boîte de dialogue **Couleur**
 
-3.  Choisissez une couleur pour définir la couleur d'arrière-plan du contrôle PictureBox. Examinez attentivement la méthode `backgroundButton_Click()` pour comprendre son fonctionnement.
+3. Choisissez une couleur pour définir la couleur d'arrière-plan du contrôle PictureBox. Examinez attentivement la méthode `backgroundButton_Click()` pour comprendre son fonctionnement.
 
     > [!NOTE]
-    >  Vous pouvez charger une image à partir d’Internet en collant son URL dans la boîte de dialogue **Ouvrir un fichier**. Essayez de trouver une image avec un arrière-plan transparent, pour que votre couleur d'arrière-plan soit visible.
+    > Vous pouvez charger une image à partir d’Internet en collant son URL dans la boîte de dialogue **Ouvrir un fichier**. Essayez de trouver une image avec un arrière-plan transparent, pour que votre couleur d'arrière-plan soit visible.
 
-4.  Choisissez le bouton **Effacer l’image** pour vous assurer qu’elle s’efface. Quittez ensuite le programme en choisissant le bouton **Fermer**.
+4. Choisissez le bouton **Effacer l’image** pour vous assurer qu’elle s’efface. Quittez ensuite le programme en choisissant le bouton **Fermer**.
 
 ## <a name="to-try-other-features"></a>Pour essayer d’autres fonctionnalités
 
--   Modifiez la couleur du formulaire et des boutons à l’aide de la propriété **BackColor**.
+- Modifiez la couleur du formulaire et des boutons à l’aide de la propriété **BackColor**.
 
--   Personnalisez vos boutons et votre case à cocher à l’aide des propriétés **Font** et **ForeColor**.
+- Personnalisez vos boutons et votre case à cocher à l’aide des propriétés **Font** et **ForeColor**.
 
--   Modifiez les propriétés**FormBorderStyle** et **ControlBox** de votre formulaire.
+- Modifiez les propriétés**FormBorderStyle** et **ControlBox** de votre formulaire.
 
--   Utilisez les propriétés **AcceptButton** et **CancelButton** de votre formulaire pour que les boutons soient automatiquement sélectionnés quand l’utilisateur appuie sur la touche **Entrée** ou **Échap**. Paramétrez le programme pour qu’il ouvre la boîte de dialogue **Ouvrir un fichier** quand l’utilisateur appuie sur la touche **Entrée** et pour qu’il ferme la boîte de dialogue quand il appuie sur la touche **Échap**.
+- Utilisez les propriétés **AcceptButton** et **CancelButton** de votre formulaire pour que les boutons soient automatiquement sélectionnés quand l’utilisateur appuie sur la touche **Entrée** ou **Échap**. Paramétrez le programme pour qu’il ouvre la boîte de dialogue **Ouvrir un fichier** quand l’utilisateur appuie sur la touche **Entrée** et pour qu’il ferme la boîte de dialogue quand il appuie sur la touche **Échap**.
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
--   Pour en savoir plus sur la programmation dans Visual Studio, consultez [Concepts de programmation](https://msdn.microsoft.com/Library/65c12cca-af4f-4017-886e-2dbc00a189d6).
+- Pour en savoir plus sur la programmation dans Visual Studio, consultez [Concepts de programmation](https://msdn.microsoft.com/Library/65c12cca-af4f-4017-886e-2dbc00a189d6).
 
--   Pour en savoir plus sur Visual Basic, consultez [Développement d’applications avec Visual Basic](/dotnet/visual-basic/developing-apps/index).
+- Pour en savoir plus sur Visual Basic, consultez [Développement d’applications avec Visual Basic](/dotnet/visual-basic/developing-apps/index).
 
--   Pour en savoir plus sur Visual C#, consultez [Introduction au langage C# et à .NET Framework](/dotnet/csharp/getting-started/introduction-to-the-csharp-language-and-the-net-framework).
+- Pour en savoir plus sur Visual C#, consultez [Introduction au langage C# et à .NET Framework](/dotnet/csharp/getting-started/introduction-to-the-csharp-language-and-the-net-framework).
 
--   Pour passer à l’étape suivante du tutoriel, consultez [Tutoriel 2 : Créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md).
+- Pour passer à l’étape suivante du tutoriel, consultez [Tutoriel 2 : Créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
--   Pour revenir à l’étape précédente du tutoriel, consultez [Étape 10 : Écrire du code pour des boutons supplémentaires et une case à cocher](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
+- Pour revenir à l’étape précédente du tutoriel, consultez [Étape 10 : Écrire du code pour des boutons supplémentaires et une case à cocher](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).

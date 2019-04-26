@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: ac95fc54b410700f3ce28f3ace6192787400d64b
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504209"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62903886"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>Démarrage rapide : Déboguer du code C++ avec le débogueur Visual Studio
 

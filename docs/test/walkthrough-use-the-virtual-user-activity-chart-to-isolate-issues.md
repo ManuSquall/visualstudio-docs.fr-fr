@@ -9,12 +9,12 @@ ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d8971546c0f51dc759731a90569d3f7dc3f0e142
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 5e25e9c5c92d32f2b68d8ce4b967fbf191e78554
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976217"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>Procédure pas à pas : Utilisation du graphique d’activités des utilisateurs virtuels pour isoler les problèmes
 
@@ -26,19 +26,19 @@ Le graphique d'activités des utilisateurs virtuels vous permet de visualiser le
 
 ## <a name="prerequisites"></a>Prérequis
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
--   Exécutez les procédures suivantes :
+- Exécutez les procédures suivantes :
 
-    -   [Enregistrer et exécuter un test de performances web](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests)
+    - [Enregistrer et exécuter un test de performances web](/azure/devops/test/load-test/run-performance-tests-app-before-release#recordtests)
 
-    -   [Créer et exécuter un test de charge](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
+    - [Créer et exécuter un test de charge](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-load-test)
 
 ## <a name="open-the-colorwebapp-solution-created-in-the-previous-walkthroughs"></a>Ouvrir la solution ColorWebApp créée dans les procédures pas à pas précédentes
 
-1.  Ouvrez Visual Studio.
+1. Ouvrez Visual Studio.
 
-2.  Ouvrez la solution **ColorWebApp** qui contient *LoadTest1.loadtest*. Ce test de charge résulte des trois procédures pas à pas répertoriées au début de cette rubrique dans la section des conditions requises.
+2. Ouvrez la solution **ColorWebApp** qui contient *LoadTest1.loadtest*. Ce test de charge résulte des trois procédures pas à pas répertoriées au début de cette rubrique dans la section des conditions requises.
 
      Les étapes restantes de cette procédure pas à pas supposent qu’il existe une applications web nommée ColorWebApp, un test de performances web nommé *ColorWebAppTest.webtest* et un test de charge nommé *LoadTest1.loadtest*.
 
@@ -46,7 +46,7 @@ Le graphique d'activités des utilisateurs virtuels vous permet de visualiser le
 
 Exécutez le test de charge pour collecter les données d'activités des utilisateurs virtuels.
 
--   Dans **l’Éditeur de test de charge**, choisissez le bouton **Exécuter** dans la barre d’outils. L'exécution de LoadTest1 démarre.
+- Dans **l’Éditeur de test de charge**, choisissez le bouton **Exécuter** dans la barre d’outils. L'exécution de LoadTest1 démarre.
 
 ## <a name="isolate-issues-in-the-virtual-user-activity-chart"></a>Isoler les problèmes dans le graphique d’activités des utilisateurs virtuels
 
@@ -54,11 +54,11 @@ Une fois que vous avez exécuté le test de charge et que vous avez collecté le
 
 ### <a name="to-use-the-virtual-user-activity-chart-in-your-load-test-results"></a>Pour utiliser le graphique d'activités des utilisateurs virtuels dans vos résultats de test de charge
 
-1.  À l’issue de l’exécution du test de charge, la page **Résumé** des résultats du test de charge s’affiche dans **l’Analyseur de test de charge**. Choisissez le bouton **Graphiques** dans la barre d’outils.
+1. À l’issue de l’exécution du test de charge, la page **Résumé** des résultats du test de charge s’affiche dans **l’Analyseur de test de charge**. Choisissez le bouton **Graphiques** dans la barre d’outils.
 
      La vue Graphiques s'affiche.
 
-2.  Sur le graphique **Temps de réponse de la page**, cliquez avec le bouton droit sur l’une des icônes de violation de seuil et sélectionnez **Accéder au détail de l’utilisateur**.
+2. Sur le graphique **Temps de réponse de la page**, cliquez avec le bouton droit sur l’une des icônes de violation de seuil et sélectionnez **Accéder au détail de l’utilisateur**.
 
     > [!NOTE]
     > Vous pouvez utiliser le bouton **Détails** dans la barre d’outils de **l’Éditeur de test de charge** pour ouvrir également le graphique d’activités des utilisateurs. Toutefois, si vous utilisez l’option **Accéder au détail de l’utilisateur**, le **Graphique d’activités des utilisateurs virtuels** applique automatiquement un zoom avant sur la partie du test sur laquelle vous avez cliqué avec le bouton droit dans le graphique.
@@ -67,37 +67,37 @@ Une fois que vous avez exécuté le test de charge et que vous avez collecté le
 
      Sur l'axe Y, les tracés horizontaux représentent des utilisateurs virtuels individuels. L'axe X affiche la chronologie de la série de tests de charge.
 
-3.  Dans l’outil **Zoomer sur la période de temps** sous **Graphique d’activités des utilisateurs virtuels**, ajustez les curseurs de droite et de gauche pour les rapprocher de l’icône de violation de seuil. Cela modifie l’échelle de temps dans le **Graphique d’activités des utilisateurs virtuels**.
+3. Dans l’outil **Zoomer sur la période de temps** sous **Graphique d’activités des utilisateurs virtuels**, ajustez les curseurs de droite et de gauche pour les rapprocher de l’icône de violation de seuil. Cela modifie l’échelle de temps dans le **Graphique d’activités des utilisateurs virtuels**.
 
-4.  Dans la zone **Légende du détail**, cochez la case **(Surligner les erreurs)**. Notez que l'utilisateur virtuel à l'origine de la violation de seuil est mis en surbrillance.
+4. Dans la zone **Légende du détail**, cochez la case **(Surligner les erreurs)**. Notez que l'utilisateur virtuel à l'origine de la violation de seuil est mis en surbrillance.
 
-5.  Dans le volet **Résultats du filtre**, décochez les cases **Afficher les résultats réussis** et **Erreur HTTP**, mais laissez la case **Erreur de règle de validation** cochée.
+5. Dans le volet **Résultats du filtre**, décochez les cases **Afficher les résultats réussis** et **Erreur HTTP**, mais laissez la case **Erreur de règle de validation** cochée.
 
      Le **Graphique d’activités des utilisateurs virtuels** affiche uniquement les utilisateurs virtuels qui sont restés plus de 3 secondes dans la page *Red.aspx*, comme spécifié par le seuil de violation configuré dans la procédure pas à pas précédente.
 
-6.  Placez le pointeur de la souris au-dessus de la ligne horizontale qui représente l'utilisateur virtuel avec l'erreur de règle de validation de la violation de seuil.
+6. Placez le pointeur de la souris au-dessus de la ligne horizontale qui représente l'utilisateur virtuel avec l'erreur de règle de validation de la violation de seuil.
 
-7.  Une info-bulle s'affiche avec les informations suivantes :
+7. Une info-bulle s'affiche avec les informations suivantes :
 
-    -   **ID utilisateur**
+    - **ID utilisateur**
 
-    -   **Scénario**
+    - **Scénario**
 
-    -   **Test**
+    - **Test**
 
-    -   **Résultat**
+    - **Résultat**
 
-    -   **Network**
+    - **Network**
 
-    -   **Heure de début**
+    - **Heure de début**
 
-    -   **Durée**
+    - **Durée**
 
-    -   **Agent**
+    - **Agent**
 
-    -   **Journal des tests**
+    - **Journal des tests**
 
-8.  Notez que **Journal des tests** est un lien. Choisissez le lien **Journal des tests**.
+8. Notez que **Journal des tests** est un lien. Choisissez le lien **Journal des tests**.
 
 9. Le test de performances web ColorWebTest associé au journal s’ouvre dans **l’Afficheur des résultats des tests de performances web**. Il permet d'identifier l'endroit où les violations de seuil se sont produites.
 

@@ -9,12 +9,12 @@ ms.assetid: 175d1d58-f09a-4449-b132-a29a394a7c8e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e022eec099682581f244ad426500a512c63035d4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 466ea9a7e0b877af55219be497eefde963e80853
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936159"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949857"
 ---
 # <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>Procédure : sélectionner un paramètre d’exécution de test de charge à utiliser à partir de la ligne de commande
 
@@ -26,11 +26,11 @@ Si votre test de charge contient un seul paramètre d'exécution, c'est toujours
 
 ## <a name="to-change-the-run-setting-from-the-command-line"></a>Pour modifier le paramètre d’exécution depuis la ligne de commande
 
-1.  Si vous souhaitez utiliser des paramètres d’exécution différents à partir de la ligne de commande pour tirer parti de la stratégie de paramètre de contexte, utilisez la commande suivante :
+1. Si vous souhaitez utiliser des paramètres d’exécution différents à partir de la ligne de commande pour tirer parti de la stratégie de paramètre de contexte, utilisez la commande suivante :
 
     `Set Test.UseRunSetting= CorporateStagingWebServer`
 
-2.  Exécutez le test de charge avec mstest :
+2. Exécutez le test de charge avec mstest :
 
     `mstest /testcontainer:loadtest1.loadtest`
 

@@ -14,12 +14,12 @@ ms.assetid: b0a3e694-2894-479b-b270-7e61e9fafacd
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 958322e57340c356e8807deacb81e208441f4b4b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e4b14be6df351a6975fb8a7cf6fa506a5d4f6041
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979430"
 ---
 # <a name="how-to-access-load-test-results-for-analysis"></a>Procédure : accéder aux résultats des tests de charge à des fins d’analyse
 
@@ -31,24 +31,24 @@ Le résultat du test de charge pour le test de charge terminé contient des exem
 
 ## <a name="to-access-a-load-test-result"></a>Pour accéder à un résultat de test de charge
 
-1.  Depuis un projet de test de performances web et de charge, ouvrez un test de charge.
+1. Depuis un projet de test de performances web et de charge, ouvrez un test de charge.
 
-2.  Dans la barre d’outils de l’éditeur de test de charge, choisissez le bouton **Ouvrir et gérer des résultats**.
+2. Dans la barre d’outils de l’éditeur de test de charge, choisissez le bouton **Ouvrir et gérer des résultats**.
 
      La boîte de dialogue **Ouvrir et gérer des résultats** s’affiche.
 
-3.  Dans **Entrer un nom de contrôleur pour rechercher les résultats des tests de charge**, sélectionnez un contrôleur. Sélectionnez **\<local> - Aucun contrôleur** pour accéder aux résultats stockés localement.
+3. Dans **Entrer un nom de contrôleur pour rechercher les résultats des tests de charge**, sélectionnez un contrôleur. Sélectionnez **\<local> - Aucun contrôleur** pour accéder aux résultats stockés localement.
 
-4.  Dans **Afficher les résultats pour le test de charge suivant**, sélectionnez le test de charge dont vous souhaitez consulter les résultats. Sélectionnez **\<Afficher les résultats de tous les tests>** pour consulter les résultats de tous les tests.
+4. Dans **Afficher les résultats pour le test de charge suivant**, sélectionnez le test de charge dont vous souhaitez consulter les résultats. Sélectionnez **\<Afficher les résultats de tous les tests>** pour consulter les résultats de tous les tests.
 
      Si des résultats des tests de charge sont disponibles, ceux-ci apparaissent dans la liste **Résultats du test de charge**. Les colonnes sont **Heure**, **Durée**, **Utilisateur**, **Résultat**, **Test** et **Description**. **Test** contient le nom du test et **Description** contient la description facultative qui est ajoutée avant l’exécution du test.
 
     > [!NOTE]
     > Les résultats apparaissent avec les résultats les plus récents en haut de la liste.
 
-5.  Dans la liste **Résultats du test de charge**, sélectionnez les résultats à analyser, puis choisissez **Ouvrir**.
+5. Dans la liste **Résultats du test de charge**, sélectionnez les résultats à analyser, puis choisissez **Ouvrir**.
 
-6.  **L’Analyseur de test de charge** s’affiche. Le résultat du test de charge sélectionné s'affiche en mode Résumé. Pour plus d’informations, voir [Vue d’ensemble du résumé des résultats des tests de charge](../test/load-test-results-summary-overview.md).
+6. **L’Analyseur de test de charge** s’affiche. Le résultat du test de charge sélectionné s'affiche en mode Résumé. Pour plus d’informations, voir [Vue d’ensemble du résumé des résultats des tests de charge](../test/load-test-results-summary-overview.md).
 
      Vous pouvez gérer d’autres aspects des résultats du test de charge dans la boîte de dialogue **Ouvrir et gérer des résultats**, notamment les importer, les exporter et les supprimer. Pour plus d’informations, voir [Gérer les résultats des tests de charge dans le référentiel des résultats des tests de charge](../test/manage-load-test-results-in-the-load-test-results-repository.md).
 

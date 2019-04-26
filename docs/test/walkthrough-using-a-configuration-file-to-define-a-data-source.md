@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfad5fbf5e6a4105926fe0293093749b4cecaf57
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a64d6e46a674ad068c2a90eaf6b011a038d2e46e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935431"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976205"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Procédure pas à pas : utilisation d’un fichier config pour définir une source de données
 
@@ -52,7 +52,7 @@ Pour exécuter cette procédure pas à pas, vous avez besoin des éléments su
 
 3. Sélectionnez le modèle **Fichier de configuration de l’application**, puis cliquez sur **Ajouter**.
 
-##  <a name="define-a-custom-configuration-section"></a>Définir une section de configuration personnalisée
+## <a name="define-a-custom-configuration-section"></a>Définir une section de configuration personnalisée
 
 Examinez le fichier *app.config*. Il contient au moins la déclaration XML et un élément racine.
 

@@ -7,11 +7,11 @@ description: Apprenez à utiliser Visual Studio pour développer des application
 ms.topic: hub-page
 ms.custom: seodec18
 ms.openlocfilehash: f63b848481a43a9684424b31fe36c3436faff021
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515322"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62944378"
 ---
 <!-- markdownlint-disable MD033 -->
 <div id="main" class="v2">

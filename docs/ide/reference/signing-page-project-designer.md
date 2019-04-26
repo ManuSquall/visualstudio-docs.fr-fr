@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3411d3e9960235f7fbd948e82cf9498377746b7d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 862f2ca7da96e7d084d2af7bfa53a5640bed22d8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950540"
 ---
 # <a name="signing-page-project-designer"></a>Page Signature, Concepteur de projets
 Utilisez la page **Signature** du **Concepteur de projet** pour signer les manifestes d’application et de déploiement, et pour signer l’assembly (signature avec nom fort).
@@ -93,7 +93,6 @@ Utilisez la page **Signature** du **Concepteur de projet** pour signer les manif
 
 > [!NOTE]
 > Lorsque vous signez un assembly, vous pouvez ne pas avoir accès à une clé privée. Par exemple, une entreprise peut avoir une paire de clés protégées auxquelles les développeurs n’ont pas accès tous les jours. La clé publique peut être disponible, mais l’accès à la clé privée est limité à quelques personnes. Dans ce cas, vous pouvez utiliser la *signature différée* ou la *signature partielle* pour fournir la clé publique, en différant l’ajout de la clé privée jusqu’à ce que l’assembly soit remis.
-
 
 ## <a name="see-also"></a>Voir aussi
 

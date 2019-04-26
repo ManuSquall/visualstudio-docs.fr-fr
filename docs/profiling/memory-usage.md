@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcb24742a4387a84bba0b52763cdb559280c24c4
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: 34efc198b1237028c84e86e8cb34db9270b6d646
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232773"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426660"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Mesurer l’utilisation de la mémoire dans Visual Studio
 
@@ -41,48 +41,48 @@ Dans ce didacticiel, vous allez effectuer les actions suivantes :
 
 ## <a name="collect-memory-usage-data"></a>Collecter les données d’utilisation de la mémoire
 
-1.  Ouvrez le projet que vous voulez déboguer dans Visual Studio, puis définissez un point d’arrêt dans votre application à l’endroit où vous voulez commencer à examiner l’utilisation de la mémoire.
+1. Ouvrez le projet que vous voulez déboguer dans Visual Studio, puis définissez un point d’arrêt dans votre application à l’endroit où vous voulez commencer à examiner l’utilisation de la mémoire.
 
     Si vous suspectez un problème de mémoire dans une zone spécifique, définissez le premier point d’arrêt avant que le problème de mémoire se produise.
 
     > [!TIP]
-    >  Comme il peut être difficile de capturer le profil de mémoire d’une opération qui vous intéresse si votre application alloue et libère fréquemment de la mémoire, définissez des points d’arrêt au début et à la fin de l’opération (ou bien exécutez pas à pas l’opération) pour trouver le point exact où la mémoire a été modifiée.
+    > Comme il peut être difficile de capturer le profil de mémoire d’une opération qui vous intéresse si votre application alloue et libère fréquemment de la mémoire, définissez des points d’arrêt au début et à la fin de l’opération (ou bien exécutez pas à pas l’opération) pour trouver le point exact où la mémoire a été modifiée.
 
-2.  Définissez un deuxième point d’arrêt à la fin de la fonction ou de la région de code que vous voulez analyser (ou après qu’un problème mémoire supposé se soit produit).
+2. Définissez un deuxième point d’arrêt à la fin de la fonction ou de la région de code que vous voulez analyser (ou après qu’un problème mémoire supposé se soit produit).
 
-3.  La fenêtre **Outils de diagnostic** apparaît automatiquement, sauf si vous l’avez désactivée. Pour réafficher la fenêtre, cliquez sur **Déboguer** > **Fenêtres** > **Afficher les outils de diagnostic**.
+3. La fenêtre **Outils de diagnostic** apparaît automatiquement, sauf si vous l’avez désactivée. Pour réafficher la fenêtre, cliquez sur **Déboguer** > **Fenêtres** > **Afficher les outils de diagnostic**.
 
-4.  Choisissez **Utilisation de la mémoire** avec **Sélectionner les outils** dans la barre d’outils.
+4. Choisissez **Utilisation de la mémoire** avec **Sélectionner les outils** dans la barre d’outils.
 
      ![Afficher les outils de diagnostics](../profiling/media/diag-tools-select-tool-2.png "DiagToolsSelectTool")
 
-5.  Cliquez sur **Déboguer / Démarrer le débogage** (ou **Démarrer** dans la barre d’outils, ou **F5**).
+5. Cliquez sur **Déboguer / Démarrer le débogage** (ou **Démarrer** dans la barre d’outils, ou **F5**).
 
      Lorsque l’application est chargée, la vue Résumé des outils de diagnostics s’affiche.
 
      ![Onglet Résumé des outils de diagnostics](../profiling/media/diag-tools-summary-tab-2.png "DiagToolsSummaryTab")
 
      > [!NOTE]
-     >  Comme la collecte des données de la mémoire peut affecter les performances du débogage de vos applications natives ou en mode mixte, les instantanés de la mémoire sont désactivés par défaut. Pour activer les instantanés dans des applications natives ou en mode mixte, démarrez une session de débogage (touche de raccourci : **F5**). Quand la fenêtre **Outils de diagnostic** apparaît, choisissez l’onglet **Utilisation de la mémoire**, puis choisissez **Profilage du tas**.
+     > Comme la collecte des données de la mémoire peut affecter les performances du débogage de vos applications natives ou en mode mixte, les instantanés de la mémoire sont désactivés par défaut. Pour activer les instantanés dans des applications natives ou en mode mixte, démarrez une session de débogage (touche de raccourci : **F5**). Quand la fenêtre **Outils de diagnostic** apparaît, choisissez l’onglet **Utilisation de la mémoire**, puis choisissez **Profilage du tas**.
      >
      >  ![Activer les instantanés](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")
      >
      >  Arrêtez (touche de raccourci : **Maj**+**F5**) et redémarrez le débogage.
 
-6.  Pour prendre un instantané au début de votre session de débogage, choisissez **Prendre un instantané** dans la barre d’outils récapitulative **Utilisation de la mémoire**. (Il peut être utile de définir un point d’arrêt ici aussi.)
+6. Pour prendre un instantané au début de votre session de débogage, choisissez **Prendre un instantané** dans la barre d’outils récapitulative **Utilisation de la mémoire**. (Il peut être utile de définir un point d’arrêt ici aussi.)
 
     ![Prendre un instantané](../profiling/media/dbgdiag_mem_mixedtoolbar_takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot")
 
      > [!TIP]
-     >  Pour créer une ligne de base pour les comparaisons de mémoire, envisagez de prendre un instantané au démarrage de votre session de débogage.
+     > Pour créer une ligne de base pour les comparaisons de mémoire, envisagez de prendre un instantané au démarrage de votre session de débogage.
 
-6.  Exécutez le scénario qui doit provoquer le premier point d’arrêt.
+6. Exécutez le scénario qui doit provoquer le premier point d’arrêt.
 
-7.  Quand le débogueur est en pause sur le premier point d’arrêt, choisissez **Prendre un instantané** dans la barre d’outils récapitulative **Utilisation de la mémoire**.
+7. Quand le débogueur est en pause sur le premier point d’arrêt, choisissez **Prendre un instantané** dans la barre d’outils récapitulative **Utilisation de la mémoire**.
 
-8.  Appuyez sur **F5** pour exécuter l’application jusqu’au deuxième point d’arrêt.
+8. Appuyez sur **F5** pour exécuter l’application jusqu’au deuxième point d’arrêt.
 
-9.  Prenez maintenant un autre instantané.
+9. Prenez maintenant un autre instantané.
 
      À ce stade, vous pouvez commencer à analyser les données.
 
@@ -93,9 +93,9 @@ Les lignes du tableau récapitulatif Utilisation de la mémoire listent les inst
 
  Les noms des colonnes varient selon le mode de débogage que vous choisissez dans les propriétés du projet : .NET, natif ou mixte (.NET et natif).
 
--   Les colonnes **Objets (Diff.)** et **Allocations (Diff.)** montrent le nombre d’objets dans la mémoire .NET et dans la mémoire native au moment où l’instantané a été pris.
+- Les colonnes **Objets (Diff.)** et **Allocations (Diff.)** montrent le nombre d’objets dans la mémoire .NET et dans la mémoire native au moment où l’instantané a été pris.
 
--   La colonne **Taille du tas (Diff.)** montre le nombre d’octets dans les tas .NET et natif.
+- La colonne **Taille du tas (Diff.)** montre le nombre d’octets dans les tas .NET et natif.
 
 Quand vous avez pris plusieurs instantanés, les cellules de la table de résumé contiennent la différence de valeur entre l’instantané d’une ligne et l’instantané précédent.
 
@@ -136,13 +136,13 @@ Pour analyser l’utilisation de la mémoire, cliquez sur un des liens qui ouvre
 
  La **vue Types** affiche le nombre et la taille des types dans l’instantané.
 
--   Cliquez sur l’icône des instances (![L’icône d’instance dans la colonne Type d’objet](../profiling/media/dbg_mma_instancesicon.png "DBG_MMA_InstancesIcon")) d’un type sélectionné pour afficher des informations sur les objets du type sélectionné dans l’instantané.
+- Cliquez sur l’icône des instances (![L’icône d’instance dans la colonne Type d’objet](../profiling/media/dbg_mma_instancesicon.png "DBG_MMA_InstancesIcon")) d’un type sélectionné pour afficher des informations sur les objets du type sélectionné dans l’instantané.
 
      La vue **Instances** affiche chaque instance du type sélectionné. La sélection d’une instance affiche la pile des appels qui a entraîné la création de l’instance dans le volet **Pile des appels d’allocation** .
 
      ![Vue Instances](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")
 
--   Choisissez **Affichage des piles** dans la liste **Mode Affichage** pour afficher la pile des allocations pour le type sélectionné.
+- Choisissez **Affichage des piles** dans la liste **Mode Affichage** pour afficher la pile des allocations pour le type sélectionné.
 
      ![Vue Piles](../profiling/media/dbgdiag_mem_native_stacksview.png "DBGDIAG_MEM_Native_StacksView")
 
@@ -162,7 +162,7 @@ Le rapport des modifications ajoute des colonnes (marquées par la mention **(Di
 
 ## <a name="blogs-and-videos"></a>Blogs et vidéos
 
-[Analyser le processeur et la mémoire pendant le débogage](https://devblogs.microsoft.com/visualstudio/analyze-cpu-memory-while-debugging/)
+[Analyser l’UC et la mémoire pendant le débogage](https://devblogs.microsoft.com/visualstudio/analyze-cpu-memory-while-debugging/)
 
 [Blog Visual C++ : Profilage de la mémoire dans Visual C++ 2015](https://devblogs.microsoft.com/cppblog/memory-profiling-in-visual-c-2015/)
 

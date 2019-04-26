@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 82dd3f226931dfeca2fa0dfad38daa24684fb8da
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947426"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789829"
 ---
 # <a name="go-to-command"></a>Atteindre, commande
 Déplace le curseur à la ligne spécifiée.
@@ -34,7 +34,7 @@ Edit.GoTo [linenumber]
 
  Optionnel. Nombre entier représentant le numéro de la ligne à atteindre.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  La numérotation des lignes débute à 1. Si la valeur de `linenumber` est inférieure à 1, la première ligne est affichée. Si la valeur de `linenumber` est supérieure au numéro de la dernière ligne, la dernière ligne est affichée.
 
  Si aucune valeur n’est spécifiée pour `linenumber`, la boîte de dialogue **Atteindre la ligne** s’affiche.

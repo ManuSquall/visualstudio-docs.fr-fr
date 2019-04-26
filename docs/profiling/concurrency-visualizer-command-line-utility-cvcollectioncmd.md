@@ -10,18 +10,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ee63e2fe4409921a36daba5ac85cce417d5564aa
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 09222971ea5150b280014d85f801a82a8eccc5d2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612320"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406144"
 ---
 # <a name="concurrency-visualizer-command-line-utility-cvcollectioncmd"></a>Utilitaire en ligne de commande du visualiseur concurrentiel (CVCollectionCmd)
 Vous pouvez utiliser l’utilitaire en ligne de commande du visualiseur concurrentiel (*CVCollectionCmd.exe*) pour collecter des traces à partir de la ligne de commande et les afficher dans le visualiseur concurrentiel pour Visual Studio. Vous pouvez utiliser ces outils sur des ordinateurs sur lesquels Visual Studio n'est pas installé.
 
 > [!NOTE]
->  À compter de Visual Studio 2013, le Visualiseur concurrentiel est une extension facultative (il était autrefois inclus dans Visual Studio). Vous pouvez télécharger les [Outils de collecte du visualiseur concurrentiel pour Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) à partir du Centre de téléchargement.
+> À compter de Visual Studio 2013, le Visualiseur concurrentiel est une extension facultative (il était autrefois inclus dans Visual Studio). Vous pouvez télécharger les [Outils de collecte du visualiseur concurrentiel pour Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) à partir du Centre de téléchargement.
 
 ## <a name="download-the-concurrency-visualizer-command-line-utility"></a>Télécharger l’utilitaire en ligne de commande du visualiseur concurrentiel
  Pour télécharger et installer l’utilitaire en ligne de commande, accédez aux [outils de collecte du visualiseur concurrentiel pour Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=49103) , puis suivez les instructions. Par défaut, *CVCollectionCmd.exe* est installé dans %ProgramFiles%\Microsoft Concurrency Visualizer Collection Tools\ (%ProgramFiles(x86)%\Microsoft Concurrency Visualizer Collection Tools\ sur les ordinateurs x64).
@@ -54,13 +54,12 @@ Vous pouvez utiliser l’utilitaire en ligne de commande du visualiseur concurre
  Si vous utilisez CVCollectionCmd pour recueillir des traces et que vous voulez personnaliser les paramètres de collecte, utilisez un fichier de configuration pour les spécifier.
 
 > [!NOTE]
->  Quand vous utilisez Visual Studio pour recueillir des traces, ne modifiez pas directement le fichier de configuration.  Au lieu de cela, utilisez la boîte de dialogue [Paramètres avancés](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) pour modifier les paramètres.
+> Quand vous utilisez Visual Studio pour recueillir des traces, ne modifiez pas directement le fichier de configuration.  Au lieu de cela, utilisez la boîte de dialogue [Paramètres avancés](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md) pour modifier les paramètres.
 
  Pour modifier les paramètres de collecte, créez un fichier de configuration sur l’ordinateur où vous exécuterez l’utilitaire CVCollectionCmd. Vous pouvez créer ce fichier de configuration de toutes pièces ou copier celui qui se trouve sur l’ordinateur où Visual Studio est installé et le modifier. Le fichier se nomme *UserConfig.xml* et se trouve dans le dossier *AppData Local*. Quand vous exécutez l’utilitaire, utilisez l’option Config avec la commande Launch, Attach ou Analyze.  Dans le paramètre associé à l’option Config, spécifiez le chemin du fichier de configuration.
 
 ### <a name="configuration-file-tags"></a>Balises du fichier config
  Le fichier de configuration est basé sur la norme XML. Voici les balises et les valeurs valides :
-
 
 | Balise | Description | Valeurs |
 |-------------------------| - | - |

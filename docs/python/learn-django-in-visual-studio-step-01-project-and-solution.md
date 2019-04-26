@@ -12,11 +12,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: b41ed3901cd4ad18a1b52ddbdc7ee6fd82cb5380
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366417"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62962147"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>Tutoriel : Bien démarrer avec le framework web Django dans Visual Studio
 
@@ -205,7 +205,7 @@ Réponse : En plus des commandes du menu **Déboguer** et des boutons de barre 
 À ce stade, le projet de base Django ne contient pas d’applications. Vous créerez une application à l’étape suivante. Étant donné que vous travaillez généralement plutôt avec des applications Django qu’avec le projet Django, vous n’avez pas besoin d’en savoir plus sur les fichiers réutilisables pour le moment.
 
 > [!div class="nextstepaction"]
-> [Créer une application Django avec des vues et des modèles de pages](learn-django-in-visual-studio-step-02-create-an-app.md)
+> [Créer une application Django avec des affichages et des modèles de pages ](learn-django-in-visual-studio-step-02-create-an-app.md)
 
 ## <a name="go-deeper"></a>Approfondir la question
 

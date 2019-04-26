@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2ba4b896a5cea964a4df6392a7c1963f8df00d31
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: cd80739f887a42c62af55bc06cfb65704f4755ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002151"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Démarrage rapide : développement piloté par les tests avec l’Explorateur de tests
 
@@ -57,7 +57,6 @@ L'Explorateur de tests remplace les fenêtres de test unitaire trouvées dans le
 > [!IMPORTANT]
 > Les résultats affichés concernent la série la plus récente. La barre de résultats colorée montre uniquement les résultats des tests qui ont été exécutés. Par exemple, si vous exécutez plusieurs tests et que certains d'entre eux échouent puis que vous n'exécutez que les tests réussis, la barre de résultats affiche tout en vert.
 
-
 > [!NOTE]
 > Si aucun test n'apparaît, vérifiez que vous avez installé un adaptateur pour connecter l'Explorateur de tests à l'infrastructure de test que vous utilisez. Pour plus d’informations, consultez [Installer des frameworks de tests unitaires de tiers](install-third-party-unit-test-frameworks.md).
 
@@ -95,15 +94,15 @@ Cette procédure pas-à-pas montre comment développer une méthode testée en C
 
 4. Générez la méthode à partir du test.
 
-   1.  Placez le curseur sur `Rooter`, puis dans le menu contextuel, choisissez **Générer** > **Nouveau type**.
+   1. Placez le curseur sur `Rooter`, puis dans le menu contextuel, choisissez **Générer** > **Nouveau type**.
 
-   2.  Dans la boîte de dialogue **Générer un nouveau type** , définissez **Projet** sur le projet de bibliothèque de classes. Dans cet exemple, il s’agit de `MyMath`.
+   2. Dans la boîte de dialogue **Générer un nouveau type** , définissez **Projet** sur le projet de bibliothèque de classes. Dans cet exemple, il s’agit de `MyMath`.
 
-   3.  Placez le curseur sur `SquareRoot`, puis dans le menu contextuel, choisissez **Générer** > **Stub de méthode**.
+   3. Placez le curseur sur `SquareRoot`, puis dans le menu contextuel, choisissez **Générer** > **Stub de méthode**.
 
 5. Exécutez le test unitaire.
 
-   1.  Dans le menu **Test**, choisissez **Exécuter les tests unitaires** > **Tous les tests**.
+   1. Dans le menu **Test**, choisissez **Exécuter les tests unitaires** > **Tous les tests**.
 
         La solution se génère et s'exécute.
 
@@ -123,7 +122,7 @@ Cette procédure pas-à-pas montre comment développer une méthode testée en C
 
 #### <a name="after-every-change-make-all-the-tests-pass"></a>Après chaque modification, faites en sorte que tous les tests réussissent
 
-1.  Dans *MyMath\Rooter.cs*, améliorez le code de `SquareRoot` :
+1. Dans *MyMath\Rooter.cs*, améliorez le code de `SquareRoot` :
 
     ```csharp
     public double SquareRoot(double input)
@@ -132,7 +131,7 @@ Cette procédure pas-à-pas montre comment développer une méthode testée en C
      }
     ```
 
-2.  Dans l'Explorateur de tests, choisissez **Exécuter tout**.
+2. Dans l'Explorateur de tests, choisissez **Exécuter tout**.
 
      Le code se génère et le test s'exécute.
 
@@ -142,7 +141,7 @@ Cette procédure pas-à-pas montre comment développer une méthode testée en C
 
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>Ajouter des tests pour étendre la plage d'entrées
 
-1.  Pour renforcer votre confiance dans le fonctionnement de votre code dans tous les cas, ajoutez des tests qui essaient un plus grand nombre de valeurs d'entrée.
+1. Pour renforcer votre confiance dans le fonctionnement de votre code dans tous les cas, ajoutez des tests qui essaient un plus grand nombre de valeurs d'entrée.
 
     > [!TIP]
     > Évitez de modifier les tests existants qui réussissent. Au lieu de cela, ajoutez de nouveaux tests. Modifiez les tests existants uniquement lorsque les besoins des utilisateurs changent. Cette stratégie permet de garantir que vous ne perdez pas de fonctionnalités existantes quand vous travaillez pour étendre le code.
@@ -173,13 +172,13 @@ Cette procédure pas-à-pas montre comment développer une méthode testée en C
     }
     ```
 
-2.  Dans l'Explorateur de tests, choisissez **Exécuter tout**.
+2. Dans l'Explorateur de tests, choisissez **Exécuter tout**.
 
      Le nouveau test échoue bien que le premier test réussisse toujours.
 
      Pour rechercher le point de défaillance, sélectionnez le test qui a échoué, puis dans la partie inférieure de l'Explorateur de tests, sélectionnez l'élément supérieur de la **Trace de la pile**.
 
-3.  Examinez la méthode de test pour voir ce qui peut être erroné. Dans la classe `MyMath.Rooter` , réécrivez le code :
+3. Examinez la méthode de test pour voir ce qui peut être erroné. Dans la classe `MyMath.Rooter` , réécrivez le code :
 
     ```csharp
     public double SquareRoot(double input)
@@ -195,13 +194,13 @@ Cette procédure pas-à-pas montre comment développer une méthode testée en C
     }
     ```
 
-4.  Dans l'Explorateur de tests, choisissez **Exécuter tout**.
+4. Dans l'Explorateur de tests, choisissez **Exécuter tout**.
 
      Les deux tests ont réussi maintenant.
 
 #### <a name="add-tests-for-exceptional-cases"></a>Ajouter des tests pour des cas exceptionnels
 
-1.  Ajouter un test pour les entrées négatives :
+1. Ajouter un test pour les entrées négatives :
 
     ```csharp
     [TestMethod]
@@ -220,15 +219,15 @@ Cette procédure pas-à-pas montre comment développer une méthode testée en C
      }
     ```
 
-2.  Dans l'Explorateur de tests, choisissez **Exécuter tout**.
+2. Dans l'Explorateur de tests, choisissez **Exécuter tout**.
 
      La méthode testée s'exécute en boucle et doit être annulée manuellement.
 
-3.  Sélectionnez **Annuler**.
+3. Sélectionnez **Annuler**.
 
      Le test s'arrête au bout de 10 secondes.
 
-4.  Corrigez le code de la méthode :
+4. Corrigez le code de la méthode :
 
     ```csharp
 
@@ -241,13 +240,13 @@ Cette procédure pas-à-pas montre comment développer une méthode testée en C
     ...
     ```
 
-5.  Dans l'Explorateur de tests, choisissez **Exécuter tout**.
+5. Dans l'Explorateur de tests, choisissez **Exécuter tout**.
 
      Tous les tests réussissent.
 
 #### <a name="refactor-without-changing-tests"></a>Refactoriser sans modifier les tests
 
-1.  Simplifiez le code, mais ne modifiez pas les tests.
+1. Simplifiez le code, mais ne modifiez pas les tests.
 
     > [!TIP]
     > La *refactorisation* est une modification destinée à améliorer les performances du code ou à en simplifier la compréhension. Elle n'est pas destinée à modifier le comportement du code. Les tests ne sont donc pas modifiés.
@@ -276,7 +275,7 @@ Cette procédure pas-à-pas montre comment développer une méthode testée en C
     }
     ```
 
-2.  Choisissez **Exécuter tout**.
+2. Choisissez **Exécuter tout**.
 
      Tous les tests réussissent encore.
 

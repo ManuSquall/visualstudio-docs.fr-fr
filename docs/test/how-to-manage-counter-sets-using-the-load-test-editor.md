@@ -13,12 +13,12 @@ ms.assetid: 64315c2f-a0b2-4378-be16-0774b99beef5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae61b261e9a613a2eee9ca8baca24773253a6df8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4ca910038e35ee65e6d97999f08013f398eaec9e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936029"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950105"
 ---
 # <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Procédure : gérer des ensembles de compteurs à l’aide de l’éditeur de test de charge
 
@@ -35,9 +35,9 @@ La gestion d'ensembles de compteurs implique le choix du jeu d'ordinateurs à pa
 
 ## <a name="to-manage-counter-sets"></a>Pour gérer des ensembles de compteurs
 
-1.  Ouvrez un test de charge.
+1. Ouvrez un test de charge.
 
-2.  Choisissez le bouton **Gérer les ensembles de compteurs**.
+2. Choisissez le bouton **Gérer les ensembles de compteurs**.
 
      – ou –
 
@@ -45,20 +45,20 @@ La gestion d'ensembles de compteurs implique le choix du jeu d'ordinateurs à pa
 
      La boîte de dialogue **Gérer les ensembles de compteurs** s’affiche.
 
-3.  (Facultatif) Dans la zone de liste **Les ordinateurs et les ensembles de compteurs sélectionnés seront ajoutés aux paramètres d’exécution par défaut**, sélectionnez un paramètre d’exécution distinct.
+3. (Facultatif) Dans la zone de liste **Les ordinateurs et les ensembles de compteurs sélectionnés seront ajoutés aux paramètres d’exécution par défaut**, sélectionnez un paramètre d’exécution distinct.
 
     > [!NOTE]
     > Cela ne s'applique que si votre test de charge comporte plusieurs paramètres d'exécution.
 
-4.  (Facultatif) Choisissez **Ajout ordinateur** pour ajouter un nouvel ordinateur à monitorer. Le système vous invite à entrer un nom. Tapez le nom d'un ordinateur et des nœuds s'affichent sous la nouvelle entrée. Par exemple **ASP.NET**, **IIS**, **SQL** et d’autres. Activez les cases à cocher en regard des nœuds que vous souhaitez sélectionner. Les nouveaux compteurs apparaissent dans le volet **Aperçu des sélections**.
+4. (Facultatif) Choisissez **Ajout ordinateur** pour ajouter un nouvel ordinateur à monitorer. Le système vous invite à entrer un nom. Tapez le nom d'un ordinateur et des nœuds s'affichent sous la nouvelle entrée. Par exemple **ASP.NET**, **IIS**, **SQL** et d’autres. Activez les cases à cocher en regard des nœuds que vous souhaitez sélectionner. Les nouveaux compteurs apparaissent dans le volet **Aperçu des sélections**.
 
-5.  (Facultatif) Dans la zone de texte **Étiquettes d’ordinateur**, tapez une étiquette à associer à l’ordinateur. Par exemple, « TestMachine12 dans lab3 ».
+5. (Facultatif) Dans la zone de texte **Étiquettes d’ordinateur**, tapez une étiquette à associer à l’ordinateur. Par exemple, « TestMachine12 dans lab3 ».
 
-     Les étiquettes d’ordinateur permettent d’identifier un ordinateur avec un nom facile à reconnaître.
+     Les balises d'ordinateur permettent d'identifier un ordinateur avec un nom facile à reconnaître.
 
-     Les étiquettes s’affichent dans le nœud **Mappages des ensembles de compteurs** de l’arborescence de l’éditeur de test de charge. Plus important, les étiquettes s’affichent dans les rapports Excel, ce qui permet aux parties prenantes d’identifier le rôle de l’ordinateur dans le test de charge. Par exemple, « Server1 Web dans lab2 » ou « SQL Server2 dans le bureau de Phoenix ». Pour plus d’informations, voir [Créer des rapports sur les résultats des tests de charge à des fins de comparaison ou d’analyse des tendances](../test/compare-load-test-results.md).
+     Les étiquettes s’affichent dans le nœud **Mappages des ensembles de compteurs** de l’arborescence de l’éditeur de test de charge. Plus important, les balises s'affichent dans les rapports Excel, ce qui permet aux parties prenantes d'identifier le rôle de l'ordinateur dans le test de charge. Par exemple, « Server1 Web dans lab2 » ou « SQL Server2 dans le bureau de Phoenix ». Pour plus d’informations, voir [Créer des rapports sur les résultats des tests de charge à des fins de comparaison ou d’analyse des tendances](../test/compare-load-test-results.md).
 
-6.  Cliquez sur **OK**.
+6. Cliquez sur **OK**.
 
 ## <a name="see-also"></a>Voir aussi
 

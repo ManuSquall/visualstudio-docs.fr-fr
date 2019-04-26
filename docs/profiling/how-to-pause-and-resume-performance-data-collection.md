@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68200b9a0631affe96427c2355dd65d20cffc1b9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 77c09817f54310ec27eed8c59b4d91e7d82613eb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626945"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442241"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>Procédure : Suspendre et reprendre la collecte de données de performances
 À partir de la fenêtre de la page de session de profilage, vous pouvez contrôler de manière interactive la collecte des données de profilage.
@@ -25,17 +25,17 @@ ms.locfileid: "56626945"
  ![Page de session de profilage](../profiling/media/prof_profilingsessionpage.png "PROF_ProfilingSessionPage")
 
 > [!NOTE]
->  Vous pouvez également démarrer la session de performance avec le profilage suspendu, puis reprendre le profilage ultérieurement au cours de l’exécution du programme. Pour démarrer la session de performance avec le profilage suspendu, choisissez la commande **Démarrer l’analyse de performances avec le profilage suspendu**  dans le menu **Déboguer**.
+> Vous pouvez également démarrer la session de performance avec le profilage suspendu, puis reprendre le profilage ultérieurement au cours de l’exécution du programme. Pour démarrer la session de performance avec le profilage suspendu, choisissez la commande **Démarrer l’analyse de performances avec le profilage suspendu**  dans le menu **Déboguer**.
 
 ### <a name="to-pause--resume-or-stop-profiling"></a>Pour suspendre, reprendre ou arrêter le profilage
 
--   Dans la page de session de profilage :
+- Dans la page de session de profilage :
 
-    -   Choisissez **Suspendre la collecte** pour suspendre la collecte de données.
+    - Choisissez **Suspendre la collecte** pour suspendre la collecte de données.
 
-    -   Choisissez **Reprendre la collecte** pour redémarrer la collecte de données après qu’elle a été suspendue.
+    - Choisissez **Reprendre la collecte** pour redémarrer la collecte de données après qu’elle a été suspendue.
 
-    -   Choisissez **Arrêter le profilage** pour terminer la session de profilage et générer des rapports.
+    - Choisissez **Arrêter le profilage** pour terminer la session de profilage et générer des rapports.
 
 ## <a name="see-also"></a>Voir aussi
 - [Contrôler la collecte des données](../profiling/controlling-data-collection.md)

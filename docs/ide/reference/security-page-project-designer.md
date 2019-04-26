@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 71411ed03906e13ae666a12a67fbdb499d737b5f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fe78b2473fc58166edb124924673ff0c49ba92a4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936133"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945490"
 ---
 # <a name="security-page-project-designer"></a>Page Sécurité, Concepteur de projets
 
@@ -34,7 +34,6 @@ La page **Sécurité** du **Concepteur de projets** permet de configurer les par
 
 > [!NOTE]
 > Lors de la publication d’une application à l’aide de l’Assistant **Publication**, cette option est automatiquement activée.
-
 
  Quand vous sélectionnez cette option, vous pouvez choisir l’une des deux cases d’option suivantes : **Il s’agit d’une application de confiance totale** ou **Il s’agit d’une application de confiance partielle**.
 

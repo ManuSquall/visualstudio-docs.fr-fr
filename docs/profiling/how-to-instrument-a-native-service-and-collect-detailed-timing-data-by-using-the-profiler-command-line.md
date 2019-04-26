@@ -8,20 +8,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b2be1ac0818f7efd31fb30981e50eff5e42df7af
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5c642c624d0edffc13fa0c3a0a455085291d98e6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634784"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386859"
 ---
 # <a name="how-to-instrument-a-native-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Procédure : Instrumenter un service natif et collecter des données de temporisation détaillées en utilisant la ligne de commande du profileur
 Cet article explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour instrumenter un service natif (C/C++) et collecter des données chronologiques détaillées.
 
 > [!NOTE]
->  Vous ne pouvez pas profiler un service avec la méthode d’instrumentation si le service ne peut pas être redémarré après le démarrage de l’ordinateur, comme un service qui démarre seulement quand le système d’exploitation démarre.
+> Vous ne pouvez pas profiler un service avec la méthode d’instrumentation si le service ne peut pas être redémarré après le démarrage de l’ordinateur, comme un service qui démarre seulement quand le système d’exploitation démarre.
 >
->  Pour obtenir le chemin des outils de profilage, consultez [Spécifier le chemin des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.
+> Pour obtenir le chemin des outils de profilage, consultez [Spécifier le chemin des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.
 
  Pour collecter des données chronologiques détaillées à partir d’un service natif avec la méthode d’instrumentation, vous utilisez l’outil [VSInstr.exe](../profiling/vsinstr.md) pour générer une version instrumentée du composant. Vous remplacez ensuite la version non instrumentée du service par la version instrumentée, en vérifiant que le service est configuré pour démarrer manuellement. Vous démarrez ensuite le profileur.
 
@@ -50,7 +50,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
      Vous pouvez utiliser l’une des options suivantes avec l’option **/start:trace**.
 
    > [!NOTE]
-   >  Les options **/user** et **/crosssession** sont généralement nécessaires pour les applications ASP.NET.
+   > Les options **/user** et **/crosssession** sont généralement nécessaires pour les applications ASP.NET.
 
    | Option | Description |
    | - | - |
@@ -63,7 +63,6 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
    | [/automark](../profiling/automark.md) **:** `Interval` | À utiliser avec **/wincounter** uniquement. Spécifie le nombre de millisecondes écoulées entre les événements de collecte du compteur de performances Windows. La valeur par défaut est de 500 ms. |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Spécifie l’événement du Suivi d’événements pour Windows (ETW) qui doit être collecté au cours du profilage. Les événements ETW sont collectés dans un fichier (.*etl*) distinct. |
 
-
 5. Démarrez le service à partir du Gestionnaire de contrôle des services.
 
 ## <a name="control-data-collection"></a>Contrôler la collecte des données
@@ -71,7 +70,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
 #### <a name="to-start-and-stop-data-collection"></a>Pour démarrer et arrêter la collecte de données
 
--   Les paires d’options **VSPerfCmd** suivantes permettent de démarrer et d’arrêter la collecte des données. Spécifiez chaque option sur une ligne de commande distincte. Vous pouvez activer et désactiver la collecte de données à plusieurs reprises.
+- Les paires d’options **VSPerfCmd** suivantes permettent de démarrer et d’arrêter la collecte des données. Spécifiez chaque option sur une ligne de commande distincte. Vous pouvez activer et désactiver la collecte de données à plusieurs reprises.
 
     |Option|Description|
     |------------|-----------------|
@@ -84,13 +83,13 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
 #### <a name="to-end-a-profiling-session"></a>Pour terminer une session de profilage
 
-1.  Arrêtez le service à partir du Gestionnaire de contrôle des services.
+1. Arrêtez le service à partir du Gestionnaire de contrôle des services.
 
-2.  Fermez le profileur. Type :
+2. Fermez le profileur. Type :
 
      **VSPerfCmd /shutdown**
 
-3.  Remplacez le module instrumenté par l’original. Si nécessaire, reconfigurez le type de démarrage du service.
+3. Remplacez le module instrumenté par l’original. Si nécessaire, reconfigurez le type de démarrage du service.
 
 ## <a name="see-also"></a>Voir aussi
 - [Profiler des services](../profiling/command-line-profiling-of-services.md)

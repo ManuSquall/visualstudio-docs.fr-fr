@@ -11,12 +11,12 @@ ms.assetid: 7eb9290a-f9f6-4e41-9caa-796fcfaf0610
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c72eb3db36310efd69d18078ca43c1907697453b
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: dfcbac0bb9188826804ba13884f0f57962dddeab
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58414968"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979326"
 ---
 # <a name="how-to-bind-a-test-controller-or-test-agent-to-a-network-adapter"></a>Procédure : Lier un contrôleur de test ou un agent de test à une carte réseau
 
@@ -35,19 +35,19 @@ Si un ordinateur, sur lequel le contrôleur de test ou l’agent de test est ins
 
 ### <a name="to-obtain-the-ip-addresses-of-the-network-adapters"></a>Pour obtenir l'adresse IP des cartes réseau
 
-1.  Dans Microsoft Windows, choisissez **Démarrer**, dans la zone **Rechercher**, tapez **cmd**, puis choisissez **Entrée**.
+1. Dans Microsoft Windows, choisissez **Démarrer**, dans la zone **Rechercher**, tapez **cmd**, puis choisissez **Entrée**.
 
-2.  Tapez **ipconfig /all**.
+2. Tapez **ipconfig /all**.
 
      Les adresses IP de vos cartes réseau s'affichent. Enregistrez l'adresse IP de la carte réseau à laquelle vous souhaitez lier votre contrôleur.
 
 ### <a name="to-bind-a-network-adapter-to-a-test-controller"></a>Pour lier une carte réseau à un contrôleur de test
 
-1.  Dans Microsoft Windows, choisissez **Démarrer**, dans la zone **Rechercher**, tapez **services.msc**, puis choisissez **Entrée**.
+1. Dans Microsoft Windows, choisissez **Démarrer**, dans la zone **Rechercher**, tapez **services.msc**, puis choisissez **Entrée**.
 
      La boîte de dialogue **Services** s’affiche.
 
-2.  Dans le volet de résultats, sous la colonne **Nom**, cliquez avec le bouton droit sur le service **Visual Studio Test Controller**, puis choisissez **Arrêter**.
+2. Dans le volet de résultats, sous la colonne **Nom**, cliquez avec le bouton droit sur le service **Visual Studio Test Controller**, puis choisissez **Arrêter**.
 
      - ou -
 
@@ -55,9 +55,9 @@ Si un ordinateur, sur lequel le contrôleur de test ou l’agent de test est ins
 
      `net stop vsttcontroller`
 
-3.  Ouvrez le fichier de configuration XML *QTCcontroller.exe.config* qui se trouve dans *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<édition>\Common7\IDE*.
+3. Ouvrez le fichier de configuration XML *QTCcontroller.exe.config* qui se trouve dans *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<édition>\Common7\IDE*.
 
-4.  recherchez la balise `<appSettings>`.
+4. recherchez la balise `<appSettings>`.
 
     ```xml
     <appSettings>
@@ -71,14 +71,14 @@ Si un ordinateur, sur lequel le contrôleur de test ou l’agent de test est ins
     </appSettings>
     ```
 
-5.  Ajoutez la clé `BindTo` pour spécifier la carte réseau à utiliser dans la section `<appSettings>`.
+5. Ajoutez la clé `BindTo` pour spécifier la carte réseau à utiliser dans la section `<appSettings>`.
 
     ```xml
             <add key="BindTo" value="<YOUR IP ADDRESS>"/>
     </appSettings>
     ```
 
-6.  Démarrez le service du contrôleur de test. Pour cela, exécutez la commande suivante à l'invite de commande :
+6. Démarrez le service du contrôleur de test. Pour cela, exécutez la commande suivante à l'invite de commande :
 
     `net start vsttcontroller`
 
@@ -89,11 +89,11 @@ Si un ordinateur, sur lequel le contrôleur de test ou l’agent de test est ins
 
 ### <a name="to-bind-a-network-interface-card-to-a-test-agent"></a>Pour lier une carte d’interface réseau à un agent de test
 
-1.  Dans Microsoft Windows, choisissez **Démarrer**, dans la zone **Rechercher**, tapez **services.msc**, puis choisissez **Entrée**.
+1. Dans Microsoft Windows, choisissez **Démarrer**, dans la zone **Rechercher**, tapez **services.msc**, puis choisissez **Entrée**.
 
     La boîte de dialogue **Services** s’affiche.
 
-2.  Dans le volet de résultats, sous la colonne **Nom**, cliquez avec le bouton droit sur le service **Visual Studio Test Agent**, puis choisissez **Arrêter**.
+2. Dans le volet de résultats, sous la colonne **Nom**, cliquez avec le bouton droit sur le service **Visual Studio Test Agent**, puis choisissez **Arrêter**.
 
      - ou -
 
@@ -101,9 +101,9 @@ Si un ordinateur, sur lequel le contrôleur de test ou l’agent de test est ins
 
      **net stop vsttagent**
 
-3.  Ouvrez le fichier de configuration XML *QTAgentService.exe.config* qui se trouve dans *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<édition>\Common7\IDE*.
+3. Ouvrez le fichier de configuration XML *QTAgentService.exe.config* qui se trouve dans *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\\\<édition>\Common7\IDE*.
 
-4.  recherchez la balise `<appSettings>`.
+4. recherchez la balise `<appSettings>`.
 
     ```xml
     <appSettings>
@@ -117,14 +117,14 @@ Si un ordinateur, sur lequel le contrôleur de test ou l’agent de test est ins
     </appSettings>  </appSettings>
     ```
 
-5.  Ajoutez la clé `BindTo` pour spécifier la carte réseau à utiliser dans la section `<appSettings>`.
+5. Ajoutez la clé `BindTo` pour spécifier la carte réseau à utiliser dans la section `<appSettings>`.
 
     ```xml
             <add key="BindTo" value="<YOUR IP ADDRESS>"/>
     </appSettings>
     ```
 
-6.  Démarrez le service de l’agent de test. Pour cela, exécutez la commande suivante à l'invite de commande :
+6. Démarrez le service de l’agent de test. Pour cela, exécutez la commande suivante à l'invite de commande :
 
     `net start vsttagent`
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8496e31778765ed92ddca55efbb9e4747c8df81e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e6784ab59580df898e2f5f705984f13a3f94f73a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939155"
 ---
 # <a name="target-build-order"></a>Ordre de génération des cibles
 Les cibles doivent être classées si l’entrée d’une cible dépend de la sortie d’une autre. Vous pouvez utiliser les attributs suivants pour spécifier l’ordre d’exécution des cibles :
@@ -104,21 +104,21 @@ Les cibles doivent être classées si l’entrée d’une cible dépend de la so
 ## <a name="determine-the-target-build-order"></a>Déterminer l’ordre de génération des cibles
  MSBuild détermine l’ordre de génération des cibles comme suit :
 
-1.  Les cibles `InitialTargets` sont exécutées.
+1. Les cibles `InitialTargets` sont exécutées.
 
-2.  Les cibles spécifiées en ligne de commande par le commutateur **-target** sont exécutées. Si vous n’indiquez aucune cible sur la ligne de commande, les cibles `DefaultTargets` sont alors exécutées. En l’absence de ces cibles, la première cible rencontrée est exécutée.
+2. Les cibles spécifiées en ligne de commande par le commutateur **-target** sont exécutées. Si vous n’indiquez aucune cible sur la ligne de commande, les cibles `DefaultTargets` sont alors exécutées. En l’absence de ces cibles, la première cible rencontrée est exécutée.
 
-3.  L’attribut `Condition` de la cible est évalué. Si l’attribut `Condition` est indiqué et défini sur la valeur `false`, la cible n’est pas exécutée et n’a aucun effet sur la génération.
+3. L’attribut `Condition` de la cible est évalué. Si l’attribut `Condition` est indiqué et défini sur la valeur `false`, la cible n’est pas exécutée et n’a aucun effet sur la génération.
 
     Les cibles qui listent la cible conditionnelle dans `BeforeTargets` ou `AfterTargets` s’exécutent toujours dans l’ordre indiqué
 
-4.  Avant qu’une cible soit exécutée ou ignorée, si son attribut `Condition` était absent ou n’a pas été évalué à `false`, ses cibles `DependsOnTargets` sont exécutées.
+4. Avant qu’une cible soit exécutée ou ignorée, si son attribut `Condition` était absent ou n’a pas été évalué à `false`, ses cibles `DependsOnTargets` sont exécutées.
 
-5.  Avant qu’une cible ne soit exécutée ou ignorée, toute cible qui la répertorie dans un attribut `BeforeTargets` est exécutée.
+5. Avant qu’une cible ne soit exécutée ou ignorée, toute cible qui la répertorie dans un attribut `BeforeTargets` est exécutée.
 
-6.  Avant l’exécution d’une cible, ses attributs `Inputs` et `Outputs` sont comparés. Si MSBuild détermine que des fichiers de sortie sont obsolètes en ce qui concerne le ou les fichiers d’entrée correspondants, MSBuild exécute la cible. Sinon, MSBuild ignore la cible.
+6. Avant l’exécution d’une cible, ses attributs `Inputs` et `Outputs` sont comparés. Si MSBuild détermine que des fichiers de sortie sont obsolètes en ce qui concerne le ou les fichiers d’entrée correspondants, MSBuild exécute la cible. Sinon, MSBuild ignore la cible.
 
-7.  Une fois qu’une cible est exécutée ou ignorée, toute cible qui la répertorie dans un attribut `AfterTargets` est exécutée.
+7. Une fois qu’une cible est exécutée ou ignorée, toute cible qui la répertorie dans un attribut `AfterTargets` est exécutée.
 
 ## <a name="see-also"></a>Voir aussi
 - [Cibles](../msbuild/msbuild-targets.md)

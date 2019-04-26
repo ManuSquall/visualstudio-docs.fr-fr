@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be9ca24aa60e03c14bed607196d5d40a3d8f1c58
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bd6339b3f55b4a4c9a1e2c90ff3183a36f16c178
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422096"
 ---
 # <a name="visualize-eventsource-events-as-markers"></a>Visualiser des événements EventSource en tant que marqueurs
 Le visualiseur concurrentiel peut afficher des événements EventSource comme marqueurs, dont vous pouvez contrôler le mode d’affichage. Pour afficher les marqueurs EventSource, inscrivez le GUID du fournisseur ETW à l’aide de la boîte de dialogue [Paramètres avancés](../profiling/advanced-settings-dialog-box-concurrency-visualizer.md). Le visualiseur concurrentiel a des conventions par défaut pour représenter les événements EventSource comme [marqueurs d’indicateurs](../profiling/flag-markers.md), [marqueurs d’intervalles](../profiling/span-markers.md) et [marqueurs de messages](../profiling/message-markers.md). Vous pouvez personnaliser l’affichage des événements EventSource en ajoutant des champs personnalisés aux événements. Pour plus d’informations sur les marqueurs, consultez [Marqueurs du visualiseur concurrentiel](../profiling/concurrency-visualizer-markers.md). Pour plus d’informations sur les événements EventSource, consultez <xref:System.Diagnostics.Tracing>.
@@ -23,11 +23,11 @@ Le visualiseur concurrentiel peut afficher des événements EventSource comme ma
 
 ### <a name="marker-type"></a>Type de marqueur
 
-1.  Les événements ayant l’[Opcode](/windows/desktop/WES/eventmanifestschema-opcodetype-complextype) win:Start ou win:Stop sont traités en tant que début ou fin d’un intervalle, respectivement.  Les intervalles imbriqués ou se chevauchant ne peuvent pas être affichés. Les paires d’événements qui commencent sur un thread et se terminent sur un autre ne peuvent pas être affichées.
+1. Les événements ayant l’[Opcode](/windows/desktop/WES/eventmanifestschema-opcodetype-complextype) win:Start ou win:Stop sont traités en tant que début ou fin d’un intervalle, respectivement.  Les intervalles imbriqués ou se chevauchant ne peuvent pas être affichés. Les paires d’événements qui commencent sur un thread et se terminent sur un autre ne peuvent pas être affichées.
 
-2.  Un événement dont l’Opcode n’est ni win:Start ni win:Stop est traité en tant qu’indicateur de marqueur, sauf si son champ [Level](/windows/desktop/WES/defining-severity-levels) (EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) a pour valeur minimale win:Verbose.
+2. Un événement dont l’Opcode n’est ni win:Start ni win:Stop est traité en tant qu’indicateur de marqueur, sauf si son champ [Level](/windows/desktop/WES/defining-severity-levels) (EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) a pour valeur minimale win:Verbose.
 
-3.  Dans tous les autres cas, l’événement est traité en tant que message.
+3. Dans tous les autres cas, l’événement est traité en tant que message.
 
 ### <a name="importance"></a>Importance
  Le tableau suivant établit une correspondance entre le niveau d’événement et l’importance du marqueur.
@@ -91,7 +91,7 @@ Le visualiseur concurrentiel peut afficher des événements EventSource comme ma
  Utilisez le champ cvSpanId, un entier, pour faire correspondre des paires d’événements. La valeur de chaque paire d’événements de démarrage et d’arrêt qui représentent un intervalle doit être unique. En général, pour du code concurrent, vous devez utiliser des primitives de synchronisation comme <xref:System.Threading.Interlocked.Exchange%2A> pour que la clé (la valeur utilisée pour CvSpanID) soit correcte.
 
 > [!NOTE]
->  L’utilisation de l’ID d’intervalle pour imbriquer des intervalles, permettre à des intervalles de se chevaucher partiellement sur le même thread ou permettre à des intervalles de démarrer sur un thread et de se terminer sur un autre n’est pas prise en charge.
+> L’utilisation de l’ID d’intervalle pour imbriquer des intervalles, permettre à des intervalles de se chevaucher partiellement sur le même thread ou permettre à des intervalles de démarrer sur un thread et de se terminer sur un autre n’est pas prise en charge.
 
 ## <a name="see-also"></a>Voir aussi
 - [Marqueurs du visualiseur concurrentiel](../profiling/concurrency-visualizer-markers.md)

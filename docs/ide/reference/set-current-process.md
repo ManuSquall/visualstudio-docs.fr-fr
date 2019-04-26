@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 24f4c08147f72168f5207418a51d7a9cfa8a2b51
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938434"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62934558"
 ---
 # <a name="set-current-process"></a>Définir le processus actuel
 Définit le processus spécifié comme processus actif dans le débogueur.
@@ -32,7 +32,7 @@ Debug.SetCurrentProcess index
 
  Obligatoire. Index du processus.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
  Pendant le débogage, vous pouvez attacher plusieurs processus à la fois, mais seul l’un d’entre eux est actif dans le débogueur à un moment donné. Vous pouvez utiliser la commande `SetCurrentProcess` pour définir le processus actif.
 
 ## <a name="example"></a>Exemple

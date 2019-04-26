@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff97af6b45242a884d7067f74f486c13356f8d8b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4ecd968c5be30e50550fb29a5c44cb7065630a63
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625398"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442353"
 ---
 # <a name="da0024-excessive-gc-cpu-time"></a>DA0024 : Temps processeur GC excessif
 
@@ -42,7 +42,7 @@ ms.locfileid: "56625398"
  Cette règle se déclenche lorsque le temps consacré au garbage collection est extrêmement important, par rapport au temps total de traitement de l’application.
 
 > [!NOTE]
->  Quand le temps consacré au garbage collection est significatif mais pas excessif par rapport au temps total de traitement de l’application, l’avertissement [DA0023 : Temps CPU GC élevé](../profiling/da0023-high-gc-cpu-time.md) est déclenché à la place de cette règle.
+> Quand le temps consacré au garbage collection est significatif mais pas excessif par rapport au temps total de traitement de l’application, l’avertissement [DA0023 : Temps CPU GC élevé](../profiling/da0023-high-gc-cpu-time.md) est déclenché à la place de cette règle.
 
 ## <a name="how-to-investigate-a-warning"></a>Comment rechercher la cause d’un avertissement
  Double-cliquez sur le message dans la fenêtre Liste d’erreurs pour accéder à la [vue Marques](../profiling/marks-view.md) des données de profilage. Accédez à la colonne **Mémoire CLR .NET\\% temps dans le GC**. Déterminez s’il existe des phases spécifiques de l’exécution du programme durant lesquelles la surcharge du garbage collection de mémoire managée est plus importante. Comparez les valeurs de la colonne % temps dans le GC au taux du garbage collection des colonnes **Nombre de collections de la génération 0**, **Nombre de collections de la génération 1** et **Nombre de collections de la génération 2**.

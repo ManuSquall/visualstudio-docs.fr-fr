@@ -11,12 +11,12 @@ ms.assetid: a955b3d2-c8ad-40dd-8ea3-9f1a271e1eed
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: efbd13bf7ada237dc21bc5b2b6a186b13a52fd06
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 16f6558373c111dbaf933184cf5ae23d00962b7a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932412"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949962"
 ---
 # <a name="how-to-import-load-test-results-into-a-repository"></a>Procédure : importer les résultats d’un test de charge dans un référentiel
 
@@ -28,21 +28,21 @@ Vous pouvez gérer les résultats des tests de charge à partir de l’éditeur 
 
 ## <a name="to-import-results-into-a-repository"></a>Pour importer les résultats dans un référentiel
 
-1.  Depuis un projet de test de performances web et de charge, ouvrez un test de charge.
+1. Depuis un projet de test de performances web et de charge, ouvrez un test de charge.
 
-2.  Dans la barre d’outils incorporée, choisissez **Ouvrir et gérer des résultats**.
+2. Dans la barre d’outils incorporée, choisissez **Ouvrir et gérer des résultats**.
 
      La boîte de dialogue **Ouvrir et gérer des résultats des tests de charge** s’affiche.
 
-3.  Dans **Entrer un nom de contrôleur pour rechercher les résultats des tests de charge**, sélectionnez un contrôleur. Sélectionnez **\<local>** pour accéder aux résultats stockés localement.
+3. Dans **Entrer un nom de contrôleur pour rechercher les résultats des tests de charge**, sélectionnez un contrôleur. Sélectionnez **\<local>** pour accéder aux résultats stockés localement.
 
      Si des résultats des tests de charge sont disponibles, ceux-ci apparaissent dans la liste **Résultats du test de charge**. Les colonnes sont **Heure**, **Durée**, **Utilisateur**, **Résultat**, **Test** et **Description**. **Test** contient le nom du test et **Description** contient la description facultative qui est ajoutée avant l’exécution du test.
 
-4.  Choisissez **Importer**.
+4. Choisissez **Importer**.
 
      La boîte de dialogue **Importer les résultats des tests de charge** s’affiche.
 
-5.  Dans la zone **Nom de fichier**, tapez le nom d’un fichier de résultats des tests archivés, puis choisissez **Ouvrir**.
+5. Dans la zone **Nom de fichier**, tapez le nom d’un fichier de résultats des tests archivés, puis choisissez **Ouvrir**.
 
      \- ou -
 

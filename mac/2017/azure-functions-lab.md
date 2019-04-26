@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: d6a0683405340d479fb3289540ffde2c5e7a4f78
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: f1c619bbddd5116ad2d425909d80e30ca99e06c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62933922"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Tutoriel : Bien démarrer avec Azure Functions
 
@@ -104,6 +104,7 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
     using System.Web;
     using Microsoft.WindowsAzure.Storage.Table;
     ```
+
 1. Supprimez la méthode `Run` existante et ajoutez la méthode ci-dessous à la classe comme fonction Azure :
 
     ```csharp
@@ -119,6 +120,7 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
         return x + y;
     }
     ```
+
 1. Passons en revue la définition de la méthode élément par élément.
 
     La première chose que vous voyez est l’attribut **FunctionName**. Celui-ci marque la méthode comme étant une fonction Azure. L’attribut désigne le nom public de la fonction. Le nom de l’attribut ne doit pas forcément correspondre au nom réel de la méthode.
@@ -180,6 +182,7 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
 
     return x + y;
     ```
+
 1. Exécutez l'application.
 
 1. Revenez à la fenêtre du navigateur et ajoutez la chaîne `/?x=2&y=3` à l’URL. L’URL complète doit maintenant être `http://localhost:7071/api/Add?x=2&y=3`. Accédez à la nouvelle URL.
@@ -188,10 +191,9 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
 
 1. Arrêtez la session de débogage.
 
-
 ## <a name="exercise-4-working-with-functionjson"></a>Exercice 4 : Utilisation de function.json
 
-1.  Dans un exercice précédent, il est mentionné que Visual Studio pour Mac « génère » une fonction de travail pour la fonction Azure définie dans la bibliothèque. Cela vient du fait qu’Azure Functions n’utilise pas réellement les attributs de méthode au moment de l’exécution. Au lieu de cela, il utilise une convention de système de fichiers au moment de la compilation pour configurer où et comment les fonctions Azure sont mises à disposition. Dans le **Panneau Solutions**, cliquez avec le bouton droit sur votre nœud de projet et sélectionnez **Révéler dans le Finder**.
+1. Dans un exercice précédent, il est mentionné que Visual Studio pour Mac « génère » une fonction de travail pour la fonction Azure définie dans la bibliothèque. Cela vient du fait qu’Azure Functions n’utilise pas réellement les attributs de méthode au moment de l’exécution. Au lieu de cela, il utilise une convention de système de fichiers au moment de la compilation pour configurer où et comment les fonctions Azure sont mises à disposition. Dans le **Panneau Solutions**, cliquez avec le bouton droit sur votre nœud de projet et sélectionnez **Révéler dans le Finder**.
 
      ![Option Révéler dans le Finder](media/azure-functions-lab-image23.png)
 
@@ -290,6 +292,7 @@ Dans cet atelier, vous allez apprendre à créer des fonctions Azure à l’aide
         return x + y;
     }
     ```
+
 1. Appuyez sur **F5** pour générer et exécuter le projet.
 
 1. À mesure que la build s’achève et que la plateforme tourne, une deuxième route mappée à la méthode qui vient d’être ajoutée est désormais disponible pour les requêtes :
@@ -316,6 +319,7 @@ Les services que vous générez sont souvent beaucoup plus complexes que ceux qu
         public int Sum { get; set; }
     }
     ```
+
 1. Dans la classe **Add**, ajoutez le code ci-dessous pour introduire une autre fonction. Notez que celle-ci est sans précédent dans la mesure où elle n’implique aucune réponse HTTP. La dernière ligne retourne un nouveau **TableRow** rempli avec des informations de clé qui permettront de le récupérer facilement par la suite (**PartitionKey** et **RowKey**), ses paramètres et la somme. Le code dans la méthode utilise également **TraceWriter** pour savoir plus facilement à quel moment la fonction s’exécute.
 
     ```csharp
@@ -341,6 +345,7 @@ Les services que vous générez sont souvent beaucoup plus complexes que ceux qu
         };
     }
     ```
+
 1. Appuyez sur **F5** pour générer et exécuter le projet.
 
 1. Sous l’onglet du navigateur, accédez à **http://localhost:7071/api/Process/4/6**. Un autre message est placé dans la file d’attente, ce qui doit aboutir à l’ajout d’une nouvelle ligne à la table.
@@ -363,6 +368,7 @@ Les services que vous générez sont souvent beaucoup plus complexes que ceux qu
     [Table("Results", "sums", "{x}_{y}")]
     TableRow tableRow,
     ```
+
 1. Ajoutez le code ci-dessous au début de la méthode. Si **tableRow** n’est pas Null, nous avons déjà les résultats de l’opération faisant l’objet d’une requête et nous pouvons les retourner immédiatement. Sinon, la fonction continue comme avant. Même s’il ne s’agit peut-être pas de la meilleure façon de retourner les données, vous pouvez orchestrer des opérations extrêmement sophistiquées sur plusieurs niveaux scalables avec très peu de code.
 
     ```csharp
@@ -372,6 +378,7 @@ Les services que vous générez sont souvent beaucoup plus complexes que ceux qu
         return null;
     }
     ```
+
 1. Appuyez sur **F5** pour générer et exécuter le projet.
 
 1. Sous l’onglet du navigateur, actualisez l’URL à l’adresse **http://localhost:7071/api/Process/4/6**. Étant donné que la ligne de table pour cet enregistrement existe, elle doit être retournée immédiatement et sans erreur. Comme il n’y a pas de sortie HTTP, vous pouvez voir la sortie dans le Terminal.
@@ -409,4 +416,3 @@ Les services que vous générez sont souvent beaucoup plus complexes que ceux qu
 ## <a name="summary"></a>Récapitulatif
 
 Dans cet atelier, vous avez appris à créer des fonctions Azure à l’aide de Visual Studio pour Mac.
-

@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 07212350ab95c3f9ee3d00fb2ac33768964555e8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8721d85c7fb3aba513a15fe276adbb2b17496351
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55935600"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990501"
 ---
 # <a name="troubleshoot-code-coverage"></a>Résoudre les problèmes liés à la couverture du code
 
@@ -43,9 +43,9 @@ Résolution &mdash; dans l’Explorateur de tests, choisissez **Exécuter tout**
 
 Quand vous modifiez et que vous réexécutez vos tests, le résultat d’une couverture du code antérieure peut être toujours visible, notamment la coloration du code de cette exécution antérieure.
 
-1.  Exécutez Analyser la couverture du code.
+1. Exécutez Analyser la couverture du code.
 
-2.  Vérifiez que vous avez sélectionné le jeu de résultats le plus récent dans la fenêtre **Résultats de la couverture du code**.
+2. Vérifiez que vous avez sélectionné le jeu de résultats le plus récent dans la fenêtre **Résultats de la couverture du code**.
 
 ### <a name="pdb-symbol-files-are-unavailable"></a>Les fichiers .pdb (symbole) ne sont pas disponibles
 
@@ -91,17 +91,17 @@ Explication&mdash; vous pouvez exécuter vos tests unitaires avec un fichier *.r
 
 Résolution &mdash; il existe deux types d’erreurs possibles :
 
--   **Erreur XML**
+- **Erreur XML**
 
      Ouvrez le fichier *.runsettings* dans l’Éditeur XML Visual Studio. Recherchez les indications des erreurs.
 
--   **Erreur d’expressions régulières**
+- **Erreur d’expressions régulières**
 
      Chaque chaîne du fichier est une expression régulière. Vérifiez la présence d’erreurs dans chaque expression régulière. Recherchez en particulier :
 
-    -   Parenthèses non appariées (…) ou parenthèses sans séquence d’échappement \\(...\\). Si vous souhaitez faire correspondre une parenthèse dans la chaîne de recherche, vous devez l'échapper. Par exemple, pour faire correspondre à une fonction, utilisez : `.*MyFunction\(double\)`
+    - Parenthèses non appariées (…) ou parenthèses sans séquence d’échappement \\(...\\). Si vous souhaitez faire correspondre une parenthèse dans la chaîne de recherche, vous devez l'échapper. Par exemple, pour faire correspondre à une fonction, utilisez : `.*MyFunction\(double\)`
 
-    -   Astérisque ou plus au début d'une expression. Pour faire correspondre à n'importe quelle chaîne de caractères, utilisez un point suivi d'un astérisque : `.*`
+    - Astérisque ou plus au début d'une expression. Pour faire correspondre à n'importe quelle chaîne de caractères, utilisez un point suivi d'un astérisque : `.*`
 
 ### <a name="custom-runsettings-file-with-incorrect-exclusions"></a>Fichier .runsettings personnalisé avec des exclusions non valides
 

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9575effa2740620c585e1dddc64bb67a1d919d2f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2689f0d96189b496e147a074a38313c164b453d1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939669"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844491"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Raccourcis clavier et touches de modification dans Blend
 
@@ -37,8 +37,8 @@ Pour plus d’informations sur l’accessibilité et les fonctionnalités, consu
 
 Certains raccourcis clavier ne sont pas associés à des éléments de menu et il est donc impossible d'utiliser l'interface utilisateur [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] pour les découvrir. Les rubriques suivantes répertorient les raccourcis qui modifient le comportement des outils ou qui modifient une action, comme le redimensionnement d'un objet :
 
--   [Touches de modification de la planche graphique](../designers/artboard-modifier-keys-in-blend.md)
+- [Touches de modification de la planche graphique](../designers/artboard-modifier-keys-in-blend.md)
 
--   [Touches de modification de l’outil Plume](../designers/pen-tool-modifier-keys-in-blend.md)
+- [Touches de modification de l’outil Plume](../designers/pen-tool-modifier-keys-in-blend.md)
 
--   [Touches de modification de l’outil Sélection directe](../designers/direct-selection-tool-modifier-keys-in-blend.md)
+- [Touches de modification de l’outil Sélection directe](../designers/direct-selection-tool-modifier-keys-in-blend.md)

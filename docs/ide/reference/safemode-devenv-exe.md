@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 14b2ac3a80a9e17e0c554f56ae8e31ac32450c5e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938681"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945477"
 ---
 # <a name="safemode-devenvexe"></a>/SafeMode (devenv.exe)
 
@@ -29,7 +29,7 @@ Lance Visual Studio en mode sans échec, en chargeant uniquement l’environneme
 devenv /SafeMode
 ```
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 Ce commutateur empêche le chargement de tous les packages VS tiers au démarrage de Visual Studio, garantissant ainsi la stabilité de l’exécution.
 

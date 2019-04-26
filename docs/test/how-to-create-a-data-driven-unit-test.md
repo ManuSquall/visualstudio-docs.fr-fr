@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: dc5c4b68b5713ba8831d840decea7f2ea25704f4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 58b7348a1bd46b426339effbe259e6f5058c769b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931440"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979238"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Procédure : Créer un test unitaire piloté par les données
 
@@ -27,27 +27,27 @@ ms.locfileid: "55931440"
 
 La création d’un test unitaire piloté par les données comprend les étapes suivantes :
 
-1.  Créez une source de données qui contient les valeurs que vous utilisez dans la méthode de test. La source de données peut correspondre à n’importe quel type inscrit sur la machine qui exécute le test.
+1. Créez une source de données qui contient les valeurs que vous utilisez dans la méthode de test. La source de données peut correspondre à n’importe quel type inscrit sur la machine qui exécute le test.
 
-2.  Ajoutez un champ <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> privé et une propriété `TestContext` publique à la classe de test.
+2. Ajoutez un champ <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> privé et une propriété `TestContext` publique à la classe de test.
 
-3.  Créez une méthode de test unitaire et ajoutez un attribut <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>.
+3. Créez une méthode de test unitaire et ajoutez un attribut <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute>.
 
-4.  Utilisez la propriété d’indexeur <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> pour récupérer les valeurs que vous utilisez dans un test.
+4. Utilisez la propriété d’indexeur <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> pour récupérer les valeurs que vous utilisez dans un test.
 
 ## <a name="the-method-under-test"></a>Méthode testée
 
 Par exemple, vous avez :
 
-1.  Une solution appelée `MyBank`, qui accepte et traite les transactions de différents types de compte.
+1. Une solution appelée `MyBank`, qui accepte et traite les transactions de différents types de compte.
 
-2.  Un projet dans `MyBank`, appelé `BankDb`, qui gère les transactions des comptes.
+2. Un projet dans `MyBank`, appelé `BankDb`, qui gère les transactions des comptes.
 
-3.  Une classe appelée `Maths` dans le projet `DbBank`, qui remplit les fonctions mathématiques permettant de vérifier que les transactions sont avantageuses pour la banque.
+3. Une classe appelée `Maths` dans le projet `DbBank`, qui remplit les fonctions mathématiques permettant de vérifier que les transactions sont avantageuses pour la banque.
 
-4.  Un projet de test unitaire appelé `BankDbTests` pour tester le comportement du composant `BankDb`.
+4. Un projet de test unitaire appelé `BankDbTests` pour tester le comportement du composant `BankDb`.
 
-5.  Une classe de test unitaire appelée `MathsTests` pour vérifier le comportement de la classe `Maths`.
+5. Une classe de test unitaire appelée `MathsTests` pour vérifier le comportement de la classe `Maths`.
 
 Nous allons tester une méthode dans `Maths` qui ajoute deux entiers à l’aide d’une boucle :
 

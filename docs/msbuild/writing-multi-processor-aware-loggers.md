@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6322e860cb45cecc3db5d5060e1322c41d57e695
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 24378a9aa5bb78fdc2ae18a2793dafcf87be2605
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634225"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443136"
 ---
 # <a name="write-multi-processor-aware-loggers"></a>Écrire des journaux multiprocesseurs
 La capacité de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] à tirer parti de plusieurs processeurs peut accélérer le temps de génération d’un projet. Toutefois, elle rend plus complexe la journalisation des événements de build. Dans un environnement à un seul processeur, les événements, messages, avertissements et erreurs arrivent au journal (logger) de manière prévisible et séquentielle. Toutefois, dans un environnement multiprocesseur, les événements provenant de différentes sources peuvent arriver en même temps ou dans le désordre. Pour résoudre ce problème, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] fournit un journal multiprocesseur, ainsi qu’un nouveau modèle de journalisation, qui vous permet de créer des « journaux de transfert » personnalisés.
@@ -62,9 +62,9 @@ public interface INodeLogger: ILogger
 
  Il existe deux façons d’utiliser la journalisation distribuée :
 
--   Personnalisez le journal de transfert prédéfini nommé <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger>.
+- Personnalisez le journal de transfert prédéfini nommé <xref:Microsoft.Build.BuildEngine.ConfigurableForwardingLogger>.
 
--   Écrivez votre propre journal de transfert personnalisé.
+- Écrivez votre propre journal de transfert personnalisé.
 
 Vous pouvez modifier ConfigurableForwardingLogger pour l’adapter à vos besoins. Pour ce faire, appelez le journal sur la ligne de commande à l’aide de *MSBuild.exe* et créez une liste des événements de build que le journal doit transférer au nœud central.
 
@@ -78,7 +78,7 @@ msbuild.exe myproj.proj -distributedlogger:XMLCentralLogger,MyLogger,Version=1.0
 ```
 
 > [!NOTE]
->  Un astérisque (*) doit séparer les deux noms de journaux dans le commutateur `-dl`.
+> Un astérisque (*) doit séparer les deux noms de journaux dans le commutateur `-dl`.
 
  L’utilisation de ConfigurableForwardingLogger est similaire à celle des autres journaux (comme décrit dans [Obtention de journaux de génération](../msbuild/obtaining-build-logs-with-msbuild.md)), sauf que vous joignez le journal ConfigurableForwardingLogger au lieu du journal [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] type, et que vous spécifiez, comme paramètres, les événements que ConfigurableForwardingLogger doit passer au nœud central.
 

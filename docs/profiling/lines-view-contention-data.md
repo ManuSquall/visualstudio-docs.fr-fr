@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 572400794af73ed70503ce39327d678c5ffa195a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614062"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000618"
 ---
 # <a name="lines-view---contention-data"></a>Lignes, vue - données de conflit
 La vue Lignes des données de conflit répertorie les données de performance pour les instructions qui étaient en cours d’exécution au moment de la collecte des échantillons dans le cadre de l’exécution du profilage. Dans un fichier source, une instruction peut couvrir plusieurs lignes d'un fichier source, et une ligne unique peut inclure plusieurs instructions.

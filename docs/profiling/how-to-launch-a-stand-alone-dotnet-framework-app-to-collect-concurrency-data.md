@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2f2c146398e6ec3d8fba7f3bf0922c0050eddb4d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 47b004c5f7d127c78e4fd6f7c00b34c502d07f18
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640985"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386728"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Procédure : lancer une application .NET Framework autonome avec le profileur pour collecter des données concurrentielles en utilisant la ligne de commande
 Cette rubrique explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour démarrer une application .NET Framework autonome (cliente) et pour collecter des données de concurrence de processus et de threads
 
 > [!NOTE]
->  Pour obtenir le chemin des outils de profilage, consultez [Spécifier le chemin des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.
+> Pour obtenir le chemin des outils de profilage, consultez [Spécifier le chemin des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.
 
  Lorsque le profileur est attaché à l’application, vous pouvez suspendre et reprendre la collecte de données. Pour terminer une session de profilage, le profileur ne doit plus être attaché à l’application et doit être arrêté explicitement.
 
@@ -36,13 +36,11 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
 
    - L’option [/start](../profiling/start.md) initialise le profileur.
 
-
      | | |
      |-------------------------------------| - |
      | **/start:concurrency** | Active la collecte de données relatives aux conflits de ressources et à l’exécution des threads. |
      | **/start:concurrency,resourceonly** | Active la collecte de données relatives aux conflits de ressources uniquement. |
      | **/start:concurrency,threadonly** | Active la collecte de données relatives à l’exécution des threads uniquement. |
-
 
    - L’option [/output](../profiling/output.md)**:**`OutputFile` est nécessaire avec **/start**. `OutputFile` spécifie le nom et l’emplacement du fichier de données profilage (.vsp).
 
@@ -55,7 +53,6 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Spécifie le compteur de performances Windows dont les données doivent être collectées au cours du profilage. |
    | [/automark](../profiling/automark.md) **:** `Interval` | À utiliser avec **/wincounter** uniquement. Spécifie le nombre de millisecondes écoulées entre les événements de collecte du compteur de performances Windows. La valeur par défaut est de 500 ms. |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Spécifie l’événement du Suivi d’événements pour Windows (ETW) qui doit être collecté au cours du profilage. Les événements ETW sont collectés dans un fichier (.*etl*) distinct. |
-
 
 3. Démarrez l’application cible. Type :
 
@@ -74,7 +71,7 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
 
 #### <a name="to-start-and-stop-data-collection"></a>Pour démarrer et arrêter la collecte de données
 
-1.  Les paires d’options suivantes de *VSPerfCmd.exe* démarrent et arrêtent la collecte de données. Spécifiez chaque option sur une ligne de commande distincte. Vous pouvez activer et désactiver la collecte de données à plusieurs reprises.
+1. Les paires d’options suivantes de *VSPerfCmd.exe* démarrent et arrêtent la collecte de données. Spécifiez chaque option sur une ligne de commande distincte. Vous pouvez activer et désactiver la collecte de données à plusieurs reprises.
 
     |Option|Description|
     |------------|-----------------|
@@ -87,15 +84,15 @@ Cette rubrique explique comment utiliser les outils en ligne de commande des Out
 
 #### <a name="to-end-a-profiling-session"></a>Pour terminer une session de profilage
 
-1.  Effectuez l’une des opérations suivantes pour détacher le profileur de l’application cible.
+1. Effectuez l’une des opérations suivantes pour détacher le profileur de l’application cible.
 
-    -   Fermez l’application cible.
+    - Fermez l’application cible.
 
          - ou -
 
-    -   Tapez **VSPerfCmd /detach**
+    - Tapez **VSPerfCmd /detach**
 
-2.  Fermez le profileur
+2. Fermez le profileur
 
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)
 
