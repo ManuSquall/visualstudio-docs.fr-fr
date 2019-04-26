@@ -16,12 +16,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: e06421955089a378cd20399280d066cc27bfe03f
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: 3cdd9f0b46c578f713b7f2af2940f4d7742df19a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232799"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557214"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Paramètres des conventions de codage .NET pour EditorConfig
 
@@ -45,7 +45,7 @@ Trois catégories de conventions de codage .NET sont prises en charge :
 
    Règles relatives à la disposition et la structure de votre code pour en faciliter la lecture. Par exemple, vous pouvez spécifier des règles régissant les accolades Allman ou l’utilisation préférentielle d’espaces dans les blocs de contrôle.
 
-- [Conventions d'attribution d'un nom](../ide/editorconfig-naming-conventions.md)
+- [Conventions d’attribution d’un nom](../ide/editorconfig-naming-conventions.md)
 
    Règles régissant la façon dont les éléments de code sont nommés. Par exemple, vous pouvez spécifier que les méthodes `async` doivent se terminer par "Async".
 
@@ -70,25 +70,25 @@ Gravité | Effet
 La liste suivante affiche les paramètres de style de code de langage autorisés :
 
 - Paramètres de style de code .NET
-    - [« This. » et « Me. »](#this_and_me)
+    - [Qualificateurs "This." et "Me."](#this_and_me)
         - dotnet\_style\_qualification\_for_field
         - dotnet\_style\_qualification\_for_property
         - dotnet\_style\_qualification\_for_method
         - dotnet\_style\_qualification\_for_event
-    - [Mots clés du langage au lieu du nom des types de framework pour les références de type](#language_keywords)
+    - [Mots clés de langage plutôt que des noms de types d’infrastructure pour les références de type](#language_keywords)
         - dotnet\_style\_predefined\_type\_for\_locals\_parameters_members
         - dotnet\_style\_predefined\_type\_for\_member_access
-    - [Préférences relatives aux modificateurs](#normalize_modifiers)
+    - [Préférences des modificateurs](#normalize_modifiers)
         - dotnet\_style\_require\_accessibility_modifiers
         - csharp\_preferred\_modifier_order
         - visual\_basic\_preferred\_modifier_order
         - dotnet\_style\_readonly\_field
-    - [Préférences relatives aux parenthèses](#parentheses)
+    - [Préférences de parenthèses](#parentheses)
         - dotnet\_style\_parentheses\_in\_arithmetic\_binary\_operators
         - dotnet\_style\_parentheses\_in\_other\_binary\_operators
         - dotnet\_style\_parentheses\_in\_other\_operators
         - dotnet\_style\_parentheses\_in\_relational\_binary\_operators
-    - [Préférences au niveau des expressions](#expression_level)
+    - [Préférences au niveau de l’expression](#expression_level)
         - dotnet\_style\_object_initializer
         - dotnet\_style\_collection_initializer
         - dotnet\_style\_explicit\_tuple_names
@@ -98,7 +98,7 @@ La liste suivante affiche les paramètres de style de code de langage autorisés
         - dotnet\_style\_prefer\_is\_null\_check\_over\_reference\_equality\_method
         - dotnet\_style\_prefer\_conditional\_expression\_over\_assignment
         - dotnet\_style\_prefer\_conditional\_expression\_over\_return
-    - [Préférences de vérification des valeurs « Null »](#null_checking)
+    - [Préférences de vérification de valeur "Null"](#null_checking)
         - dotnet\_style\_coalesce_expression
         - dotnet\_style\_null_propagation
 - Paramètres de style de code C#
@@ -118,14 +118,14 @@ La liste suivante affiche les paramètres de style de code de langage autorisés
         - csharp\_style\_pattern\_matching\_over\_as\_with\_null_check
     - [Déclarations de variables inline](#inlined_variable_declarations)
         - csharp\_style\_inlined\_variable_declaration
-    - [Préférences au niveau des expressions](#expression_level_csharp)
+    - [Préférences au niveau de l’expression](#expression_level_csharp)
         - csharp\_prefer\_simple\_default_expression
         - csharp\_style\_deconstructed\_variable_declaration
         - csharp\_style\_pattern\_local\_over\_anonymous_function
-    - [Préférences de vérification des valeurs « Null »](#null_checking_csharp)
+    - [Préférences de vérification de valeur "Null"](#null_checking_csharp)
         - csharp\_style\_throw_expression
         - csharp\_style\_conditional\_delegate_call
-    - [Préférences relatives aux blocs de code](#code_block)
+    - [Préférences des blocs de code](#code_block)
         - csharp\_prefer_braces
 
 ### <a name="net-code-style-settings"></a>Paramètres de style de code .NET
@@ -329,13 +329,14 @@ Le tableau suivant indique le nom des règles, les ID de règles, les langages d
 
 **dotnet\_style\_require\_accessibility_modifiers**
 
-Cette règle n’accepte pas une valeur **true** ou **false**, elle accepte à la place une valeur du tableau suivant :
+Cette règle accepte une valeur du tableau suivant :
 
 | Value | Description |
 | ----- |:----------- |
 | always | Préférer la déclaration de modificateurs d’accessibilité |
-| for\_non\_interface_members | Préférer la déclaration de modificateurs d’accessibilité, sauf pour des membres d’interface publique. Ceci est identique à **always** et a été ajouté à des fins de vérification future, si C# ajoute des méthodes d’interface par défaut. |
+| for\_non\_interface_members | Préférer la déclaration de modificateurs d’accessibilité, sauf pour des membres d’interface publique. (Ceci est identique à **always** et a été ajouté à des fins de vérification future, si C# ajoute des méthodes d’interface par défaut.) |
 | never | Ne jamais préférer la déclaration de modificateurs d’accessibilité |
+| omit_if_default | Préférer la déclaration de modificateurs d’accessibilité, sauf s’il s’agit du modificateur par défaut |
 
 Exemples de code :
 
@@ -748,8 +749,6 @@ If Object.ReferenceEquals(value, Nothing)
     Return
 End If
 ```
-
-
 
 **dotnet\_style\_prefer\_conditional\_expression\_over_assignment**
 
@@ -1391,7 +1390,7 @@ Vous spécifiez **true** (préférer ce style) ou **false** (ne pas préférer c
 La liste suivante présente les règles de conventions de mise en forme disponibles dans Visual Studio :
 
 - Paramètres de mise en forme .NET
-    - [Organiser les instructions Using](#usings)
+    - [Organiser les instructions using](#usings)
         - dotnet_sort_system_directives_first
         - dotnet_separate_import_directive_groups
 - Paramètres de mise en forme C#
@@ -1403,7 +1402,7 @@ La liste suivante présente les règles de conventions de mise en forme disponib
         - csharp_new_line_before_members_in_object_initializers
         - csharp_new_line_before_members_in_anonymous_types
         - csharp_new_line_between_query_expression_clauses
-    - [Options d’indentation](#indent)
+    - [Options de mise en retrait](#indent)
         - csharp_indent_case_contents
         - csharp_indent_switch_labels
         - csharp_indent_labels
@@ -1419,7 +1418,7 @@ La liste suivante présente les règles de conventions de mise en forme disponib
         - csharp_space_between_method_declaration_empty_parameter_list_parentheses
         - csharp_space_between_method_call_name_and_opening_parenthesis
         - csharp_space_between_method_call_empty_parameter_list_parentheses
-    - [Options d’ajustement](#wrapping)
+    - [Options d’inclusion dans un wrapper](#wrapping)
         - csharp_preserve_single_line_statements
         - csharp_preserve_single_line_blocks
 
@@ -2360,5 +2359,5 @@ visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public
 
 - [Actions rapides](../ide/quick-actions.md)
 - [Conventions de nommage .NET pour EditorConfig](../ide/editorconfig-naming-conventions.md)
-- [Créer des options d’éditeur personnalisé portables](../ide/create-portable-custom-editor-options.md)
+- [Créer des options d’éditeur personnalisées et portables](../ide/create-portable-custom-editor-options.md)
 - [Fichier .editorconfig de .NET Compiler Platform](https://github.com/dotnet/roslyn/blob/master/.editorconfig)

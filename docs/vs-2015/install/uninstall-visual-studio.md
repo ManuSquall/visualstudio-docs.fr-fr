@@ -15,12 +15,12 @@ caps.latest.revision: 9
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: e00ca9212c03d4123259715da157201c06d90f2b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ed9d33501644c6fa7252dffa758f92c0919653b1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546900"
 ---
 # <a name="uninstall-visual-studio"></a>Désinstaller Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,12 +39,12 @@ Cette page explique comment désinstaller Visual Studio 2015, une ancienne versi
 
 ## <a name="uninstall-visual-studio-and-all-other-related-files-that-is-to-uninstall-almost-everything"></a>Désinstaller Visual Studio et tous les fichiers associés (soit presque tout)
 
-1.  Recherchez le fichier .exe de Visual Studio (par exemple, « vs_enterprise.exe »).
+1. Recherchez le fichier .exe de Visual Studio (par exemple, « vs_enterprise.exe »).
 
     > [!NOTE]
     > Le fichier devrait se trouver dans un sous-dossier de « %ProgramData%\Package Cache », par exemple : C:\ProgramData\Package Cache\\{37e19555-e88d-4aed-9d42-82d0784d2b79}\vs_enterprise.exe.
 
-2.  Exécutez le fichier .exe à l’aide des paramètres de ligne de commande /uninstall /force.
+2. Exécutez le fichier .exe à l’aide des paramètres de ligne de commande /uninstall /force.
 
      Par exemple, exécutez ```vs_enterprise.exe /uninstall /force``` pour supprimer Visual Studio et la plupart des principaux composants laissés de côté dans le cadre d’une désinstallation par défaut. Cela ne supprime pas pour autant tout le contenu supplémentaire que les compléments et les extensions Visual Studio sont susceptibles d’installer (par exemple, les mises à jour de Visual Studio et autres composants facultatifs).
 
@@ -53,9 +53,9 @@ Cette page explique comment désinstaller Visual Studio 2015, une ancienne versi
 
 ## <a name="uninstall-visual-studio-in-silent-or-passive-modes-that-is-to-uninstall-from-source"></a>Désinstaller Visual Studio en mode silencieux ou passif (autrement dit, à partir de la source)
 
-1.  Sur l'ordinateur où Visual Studio est installé, ouvrez l'invite de commandes Windows.
+1. Sur l'ordinateur où Visual Studio est installé, ouvrez l'invite de commandes Windows.
 
-2.  Entrez les paramètres suivants :
+2. Entrez les paramètres suivants :
 
      *DVDRoot* \\<Fichier d’installation\> \</quiet&#124;/passive> [/norestart]/uninstall
 

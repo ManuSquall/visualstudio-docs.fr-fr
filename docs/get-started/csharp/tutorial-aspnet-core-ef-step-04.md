@@ -17,11 +17,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 93e3b0af04060c3a3805b29e5d1da71c4f60ec31
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018088"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553886"
 ---
 # <a name="step-4-expose-a-web-api-from-your-aspnet-core-app"></a>Étape 4 : Exposer une API web à partir d’une application ASP.NET Core
 
@@ -231,4 +231,4 @@ Dans la vidéo suivante, vous allez apprendre à déployer votre application sur
 ## <a name="see-also"></a>Voir aussi
 
 - [Bien démarrer avec Swashbuckle et ASP.NET Core](/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-2.2&tabs=visual-studio)
-- [Pages d’aide d’API web ASP.NET Core avec Swagger/OpenAPI](/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-2.2)
+- [Pages d’aide sur l’API web ASP.NET Core avec Swagger/OpenAPI](/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-2.2)
