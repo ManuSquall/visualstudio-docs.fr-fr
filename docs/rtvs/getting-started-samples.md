@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-science
 ms.openlocfilehash: adcc5ce422cdd06e641408b3506fb751a4c730d1
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950466"
 ---
 # <a name="r-tools-for-visual-studio-sample-projects"></a>Exemples de projets Outils R pour Visual Studio
 
@@ -81,7 +81,7 @@ La comparaison suivante montre que MLS et MRO avec MKL offrent des performances 
 
 ![Comparaison entre, d’une part, MLS et MRO avec MKL et, d’autre part, R et MRO sans MKL](media/samples-speed-comparison.png)
 
-Pour obtenir une comparaison technique de R avec MRO et MLS, lisez la [discussion approfondie de Lixun Zhang](http://htmlpreview.github.io/?https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) sur le sujet.
+Pour obtenir une comparaison technique de R avec MRO et MLS, lisez la [discussion approfondie de Lixun Zhang](http://htmlpreview.github.io/? https://github.com/lixzhang/R-MRO-MRS/blob/master/Introduction_to_MRO_and_MRS.html) sur le sujet.
 
 La figure suivante compare ensuite le temps écoulé en secondes utilisé dans la création de modèles de régression logistique pour prévoir les vols en retard de plus de 15 minutes.  Le temps écoulé utilisé dans CRAN R augmente considérablement à la suite d’une augmentation de quelques lignes, tandis que le temps écoulé dans MLS n’est multiplié que par deux environ. Pour plus d’informations sur ce benchmark, visitez l’exemple *Benchmarks/rxGlm_benchmark.R*.
 
