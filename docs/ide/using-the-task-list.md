@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a54b95130479a2f8091c3618ac32e48c261e5e0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9f6ccc0284f89891ff686e456abdcccb1b5296e8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821568"
 ---
 # <a name="use-the-task-list"></a>Utiliser la liste des tâches
 
@@ -83,6 +83,9 @@ Pour créer un jeton personnalisé :
 4. Dans la liste déroulante **Priorité** , choisissez une priorité par défaut pour le nouveau jeton.
 
 5. Sélectionnez **Ajouter**.
+
+> [!TIP]
+> Le bouton **Ajouter** devient disponible dès que vous entrez un nom. Vous devez entrer un nom avant de cliquer sur **Ajouter**.
 
 ### <a name="c-todo-comments"></a>Commentaires TODO C++
 
