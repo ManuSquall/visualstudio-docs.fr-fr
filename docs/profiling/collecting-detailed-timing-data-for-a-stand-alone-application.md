@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8bae9bbdff28312c36af91af57368d6b87028d44
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62581338"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>Collecter des données de temporisation détaillées pour une application autonome en utilisant la ligne de commande du profileur
 Cette section décrit les procédures et les options de collecte des données de performances détaillées d’un composant client (autonome) utilisant la méthode d’instrumentation à partir de la ligne de commande.

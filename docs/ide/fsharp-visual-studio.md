@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: dc3a49c586b7a8f5a67d6c1a3a77d00772698389
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955856"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793409"
 ---
 # <a name="develop-with-visual-f-in-visual-studio"></a>Développer avec Visual F# dans Visual Studio
 
@@ -65,7 +65,7 @@ Le **Concepteur de projet** se compose de plusieurs pages de propriétés de pro
 |Événements de build|[Page Événements de build, Concepteur de projet](reference/build-events-page-project-designer-csharp.md)|Permet de spécifier des commandes à exécuter avant ou après la compilation.|
 |Débogage|[Page Déboguer, Concepteur de projet](reference/debug-page-project-designer.md)|Permet de contrôler comment l’application s’exécute pendant le débogage. Cela comprend les commandes à utiliser et l’identification du répertoire de départ de votre application, ainsi que tout mode de débogage spécial que vous souhaitez activer, tel que le code natif et SQL.|
 |Package (.NET SDK uniquement)|N/A|Permet de définir les métadonnées de package NuGet lors de la publication en tant que package NuGet.|
-|Chemins d’accès des références|[Gérer les références dans un projet](managing-references-in-a-project.md)|Permet de spécifier où rechercher les assemblys dont dépend le code.|
+|Chemins d'accès des références|[Gérer les références dans un projet](managing-references-in-a-project.md)|Permet de spécifier où rechercher les assemblys dont dépend le code.|
 |Ressources (.NET SDK uniquement)|N/A|Permet de générer et de gérer un fichier de ressources par défaut.|
 
 ### <a name="f-specific-settings"></a>Paramètres propres à F#

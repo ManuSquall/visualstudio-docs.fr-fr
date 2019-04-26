@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bed026b76ae99509dd2abb77b11b46c14b1d3aae
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d7f9edfb6b0c10a37aade6a9d37a5689e587890d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928749"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438108"
 ---
 # <a name="command-window"></a>Commande, fenêtre
 La fenêtre **Commande** est utilisée pour exécuter des commandes ou des alias directement dans l’environnement de développement intégré (IDE) [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Vous pouvez exécuter à la fois les commandes de menu et les commandes qui n’apparaissent dans aucun menu. Pour afficher la fenêtre **Commande**, sélectionnez **Autres fenêtres** dans le menu **Affichage** et choisissez **Fenêtre Commande**.
@@ -61,7 +61,6 @@ La fenêtre **Commande** est utilisée pour exécuter des commandes ou des alias
 > [!TIP]
 > Vous pouvez copier une commande antérieure, en partie ou en totalité, vers la ligne d’entrée : à cet effet, faites défiler le contenu de la fenêtre jusqu’à la commande voulue, mettez en surbrillance le texte à copier, puis appuyez sur Entrée.
 
-
 ## <a name="mark-mode"></a>Mode Marque
  Quand vous cliquez sur n’importe quelle ligne précédente dans la fenêtre **Commande**, vous passez automatiquement en mode Marque. Cela vous permet de sélectionner, de modifier et de copier le texte de commandes précédentes comme vous le feriez dans n’importe quel éditeur de texte, et de les coller dans la ligne active.
 
@@ -81,16 +80,16 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 
  Dans cet exemple :
 
--   `Edit.ReplaceInFiles` est la commande
+- `Edit.ReplaceInFiles` est la commande
 
--   `/case` et `/pattern:regex` sont des commutateurs (précédés de la barre oblique [/])
+- `/case` et `/pattern:regex` sont des commutateurs (précédés de la barre oblique [/])
 
--   `regex` est la valeur du commutateur `/pattern` ; le commutateur `/case` n’a pas de valeur
+- `regex` est la valeur du commutateur `/pattern` ; le commutateur `/case` n’a pas de valeur
 
--   `var[1-3]+` et `oldpar` sont des paramètres
+- `var[1-3]+` et `oldpar` sont des paramètres
 
     > [!NOTE]
-    >  Les commandes, paramètres, commutateurs ou valeurs qui comportent des espaces doivent être entourés de guillemets doubles.
+    > Les commandes, paramètres, commutateurs ou valeurs qui comportent des espaces doivent être entourés de guillemets doubles.
 
 Les commutateurs et les paramètres peuvent être placés à n’importe quel endroit de la ligne de commande, à l’exception de la commande [Shell](../../ide/reference/shell-command.md), dont les commutateurs et les paramètres doivent respecter un ordre précis.
 

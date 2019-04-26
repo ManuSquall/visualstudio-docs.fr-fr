@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9167c56d976cd79e2e51cf9914213b766f647416
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62996792"
 ---
 # <a name="item-metadata-in-task-batching"></a>Métadonnées d’élément dans le traitement par lots des tâches
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] a la capacité de diviser les listes d’éléments en différentes catégories, ou lots, en fonction des métadonnées des éléments, et d’exécuter une tâche une fois avec chaque lot. Il peut être difficile de comprendre exactement quels éléments sont passés avec quel lot. Cette rubrique couvre les scénarios courants suivants qui impliquent un traitement par lots.

@@ -13,21 +13,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cc1651ae769a9dbe8ef8fbd9b8a1a50dd83ea0f6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 67cdd6fa3517402dbd9c1e85a84f762f9aa7dd17
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640712"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816881"
 ---
 # <a name="formatversion-task"></a>FormatVersion, tâche
 Ajoute le numéro de révision au numéro de version.
 
--   Cas n°1 : Entrée : Version=\<undefined>;  Revision=\<Peu importe>;   Output: OutputVersion="1.0.0.0"
+- Cas n°1 : Entrée : Version=\<undefined>;  Revision=\<Peu importe>;   Output: OutputVersion="1.0.0.0"
 
--   Cas n°2 : Entrée : Version="1.0.0.*"  Revision="5"  Output: OutputVersion="1.0.0.5"
+- Cas n°2 : Entrée : Version="1.0.0.*"  Revision="5"  Output: OutputVersion="1.0.0.5"
 
--   Cas n°3 : Entrée : Version="1.0.0.0"  Revision=\<Peu importe>;  Output: OutputVersion="1.0.0.0"
+- Cas n°3 : Entrée : Version="1.0.0.0"  Revision=\<Peu importe>;  Output: OutputVersion="1.0.0.0"
 
 ## <a name="parameters"></a>Paramètres
  Le tableau ci-dessous décrit les paramètres de la tâche `FormatVersion` .

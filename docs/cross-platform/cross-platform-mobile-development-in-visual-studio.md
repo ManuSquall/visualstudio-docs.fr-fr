@@ -10,12 +10,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 2144ebd4725532d3dbbf4685f6629cbbbdd7c73e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: fcf28d844124b7a2ae8a0b380739433261c5a3ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069682"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816121"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Développement mobile multiplateforme dans Visual Studio
 
@@ -40,7 +40,7 @@ Avec Visual Studio Tools pour Xamarin, vous pouvez cibler Android, iOS et Window
 |[En savoir plus sur les applications Windows universelles dans Visual Studio](https://visualstudio.microsoft.com/vs/universal-windows-platform/) (VisualStudio.com)|
 |[En savoir plus sur les similitudes entre Swift et C#](https://aka.ms/scposter) (download.microsoft.com)|
 
-###  <a name="AndroidHTML"></a> Cibler Android, iOS et Windows à partir d’une seule base de code
+### <a name="AndroidHTML"></a> Cibler Android, iOS et Windows à partir d’une seule base de code
 
  Vous pouvez générer des applications natives pour Android, iOS et Windows en C# ou F# (Visual Basic n’est pas pris en charge pour le moment).  Pour commencer, installez Visual Studio 2017, puis sélectionnez l’option **Développement mobile en .NET** dans le programme d’installation.
 
@@ -56,7 +56,7 @@ Avec Visual Studio Tools pour Xamarin, vous pouvez cibler Android, iOS et Window
 
  Selon la complexité de la conception de vos applications, vous pouvez envisager de les créer en utilisant les modèles *Xamarin.Forms* du groupe de modèles de projet **Applications mobiles** . Xamarin.Forms est un kit de ressources d’IU qui vous permet de créer une interface utilisateur que vous pouvez partager sur Android et iOS, ainsi que sur Windows Phone.  Quand vous compilez une solution Xamarin.Forms, vous obtenez une application Android, une application iOS et une application Windows. Pour plus d’informations, consultez [En savoir plus sur le développement mobile avec Xamarin](/xamarin/cross-platform/get-started/introduction-to-mobile-development/) et la [documentation Xamarin.Forms](/xamarin/xamarin-forms/).
 
-####  <a name="ShareHTML"></a> Partager du code entre des appareils Android, iOS et Windows
+#### <a name="ShareHTML"></a> Partager du code entre des appareils Android, iOS et Windows
 
  Si vous n’utilisez pas Xamarin.Forms et que vous choisissez de concevoir pour chaque plateforme individuellement, vous pouvez partager la plus grande partie du code autre que celui de l’interface utilisateur entre les projets des différentes plateformes (iOS, Android et Windows). Cela inclut la logique métier, l'intégration du cloud, l'accès aux bases de données ou tout autre code qui cible le .NET Framework. Le seul code que vous ne pouvez pas partager est le code qui cible une plateforme spécifique.
 
@@ -69,7 +69,7 @@ Avec Visual Studio Tools pour Xamarin, vous pouvez cibler Android, iOS et Window
 |[Sharing Code Options](/xamarin/cross-platform/app-fundamentals/code-sharing/) (Xamarin) |
 |[Options de partage du code avec .NET](/dotnet/standard/cross-platform/) |
 
-###  <a name="WindowsHTML"></a> Cibler les appareils Windows 10
+### <a name="WindowsHTML"></a> Cibler les appareils Windows 10
 
  ![Appareils Windows](../cross-platform/media/windowsdevices.png "Appareils Windows")
 
@@ -84,7 +84,7 @@ Avec Visual Studio Tools pour Xamarin, vous pouvez cibler Android, iOS et Window
 |[Développer des applications pour la plateforme Windows universelle (UWP)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md)|
 |[Migrer des applications vers la plateforme Windows universelle (UWP)](https://msdn.microsoft.com/library/mt148501.aspx)|
 
-##  <a name="HTML"></a> Générer une application pour Android, iOS et Windows (HTML/JavaScript)
+## <a name="HTML"></a> Générer une application pour Android, iOS et Windows (HTML/JavaScript)
 
  ![Appareils Windows, iOS et Android](../cross-platform/media/homedevices.png "Appareils Windows, iOS et Android")
 

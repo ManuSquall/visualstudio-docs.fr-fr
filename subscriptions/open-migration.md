@@ -7,12 +7,12 @@ ms.date: 07/02/2018
 ms.topic: conceptual
 description: Découvrez la migration d’Open et d’Open License vers le Portail d’administration des abonnements Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: a2f3ed6db9b8e0ce0dce645bfbbb715b89fe1f04
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 0e3ad14f48aaa461b7c70507cd4501067eacc789
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843193"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821729"
 ---
 # <a name="open-and-open-license-migration-to-the-new-visual-studio-subscriptions-administration-portal"></a>Migration d’Open et d’Open License vers le Portail d’administration des abonnements Visual Studio
 
@@ -38,7 +38,6 @@ Pour gérer les abonnements dans le [Portail d’administration des abonnements 
 
 - Pour que les partenaires puissent gérer les abonnements au nom des clients, ils doivent s’inscrire sur le portail d’administration. Les différents modes d’accès sont listés ci-dessous (similaires au processus ajouter/ouvrir).
 
-
 ## <a name="existing-partners-adding-a-new-license"></a>Partenaires existants ajoutant une nouvelle licence
 
 Ceci s’applique aux partenaires qui ont déjà accès au [Portail d’administration des abonnements Visual Studio](https://manage.visualstudio.com), mais qui ont passé commande pour des programmes Open License avec des abonnements Visual Studio qu’ils vont devoir gérer.
@@ -48,7 +47,6 @@ Ceci s’applique aux partenaires qui ont déjà accès au [Portail d’administ
 - Il sélectionne la liste déroulante des contrats et la fait défiler vers le bas, où se trouve une option **+Nouvelle licence Open**.
 
 - Dans le panneau contextuel, le partenaire entre le numéro d’autorisation, le numéro de licence, ainsi que l’adresse e-mail du client figurant sur le contrat. Il coche la case, puis clique sur **Envoyer**.
-
 
 > [!NOTE]
 > Le client reçoit un e-mail de notification lui indiquant qu’un partenaire a été ajouté au programme Open License. Ils peuvent choisir de supprimer l’accès du partenaire.
@@ -67,7 +65,6 @@ Ceci s’applique aux nouveaux partenaires qui passent de nouvelles commandes Op
 
 - Le partenaire peut alors gérer les abonnements correspondant à ce programme Open License.
 
-
 > [!NOTE]
 > Le client reçoit un e-mail de notification lui indiquant qu’un partenaire a été ajouté au programme Open License. Ils peuvent choisir de supprimer l’accès du partenaire.
 
@@ -80,7 +77,6 @@ Ce scénario s’applique aux nouveaux partenaires qui ont déjà passé de nouv
 - Il reçoit une erreur indiquant qu’il n’est pas un utilisateur reconnu.
 
 - Le partenaire doit sélectionner l’option d’inscription **Partenaires OLP** et entrer le numéro d’autorisation, le numéro de licence, ainsi que l’adresse e-mail du client utilisée dans la commande. Il doit également cocher la case, puis cliquer sur **Envoyer**.
-
 
 > [!NOTE]
 > Le client reçoit un e-mail de notification lui indiquant qu’un partenaire a été ajouté au programme Open License. Ils peuvent choisir de supprimer l’accès du partenaire.

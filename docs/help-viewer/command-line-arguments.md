@@ -8,24 +8,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c79f70129a21ab28c653ecfbef5e00a8050d9b0
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 6a310a1b92d5e4558e097cf82501960bf6a9a535
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323463"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824681"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Arguments de ligne de commande pour Help Content Manager
 
 Vous pouvez spécifier la façon de déployer et de gérer le contenu d’aide locale avec des arguments de ligne de commande pour Help Content Manager (*HlpCtntMgr.exe*). Vous devez exécuter des scripts pour cet outil en ligne de commande avec des autorisations d’administrateur, et vous ne pouvez pas exécuter ces scripts en tant que service. Vous pouvez effectuer les tâches suivantes à l’aide de cet outil :
 
--   Ajouter ou mettre à jour le contenu d’aide locale à partir d’un disque ou du cloud.
+- Ajouter ou mettre à jour le contenu d’aide locale à partir d’un disque ou du cloud.
 
--   Supprimer le contenu d’aide locale.
+- Supprimer le contenu d’aide locale.
 
--   Déplacer le magasin de contenu d’aide locale.
+- Déplacer le magasin de contenu d’aide locale.
 
--   Ajouter, mettre à jour, supprimer ou déplacer le contenu d’aide locale en mode silencieux.
+- Ajouter, mettre à jour, supprimer ou déplacer le contenu d’aide locale en mode silencieux.
 
 Syntaxe :
 

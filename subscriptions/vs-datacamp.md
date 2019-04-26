@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Découvrez l’abonnement DataCamp Training inclus dans certains abonnements Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 0751c29833b9fac85107af9992910f8046487a70
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 5d6f9d2a642a13b350e539383a1abb74835bf9d3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428633"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948072"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Avantage DataCamp Training dans les abonnements Visual Studio
 
@@ -48,7 +48,6 @@ La durée de votre avantage DataCamp dépend du type de votre abonnement Visual 
    > [!div class="mx-imgBorder"]
    > ![DataCamp, Compétences en science des données](_img/vs-datacamp/vs-datacamp-datascience.png)
 
-
 6. Selon le parcours et les options que vous avez sélectionnés, vous voyez une sélection de parcours professionnels.  Cliquez sur le bouton **Enroll** (Inscription) pour le parcours de votre choix.
    > [!div class="mx-imgBorder"]
    > ![DataCamp, Parcours professionnel](_img/vs-datacamp/vs-datacamp-all-tracks.png)
@@ -75,22 +74,17 @@ Vous pouvez arrêter à tout moment et reprendre votre formation à la prochaine
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Non disponible  | N/A |
 | Visual Studio Enterprise, Visual Studio Professional (cloud mensuel) | Azure | Non disponible | N/A |
 
-
-
 <sup>1</sup>  *Inclut :  NFR (revente interdite), FTE, MVP (Most Valuable Professional), RD (Regional Director), MPN (Microsoft Partner Network), VSIP (Visual Studio Industry Partner), Microsoft Certified Trainer, BizSpark, Imagine*
-
 
 > [!NOTE]
 > Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
 
-
 Vous n’êtes pas sûr de l’abonnement que vous utilisez ?  Connectez-vous à [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) pour voir tous les abonnements attribués à votre adresse e-mail. Si vous ne retrouvez pas tous vos abonnements, certains ont peut-être été attribués à une autre adresse e-mail.  Dans ce cas, vous devez vous connecter via l’adresse e-mail correspondante pour afficher ces abonnements.
 
-
 ## <a name="support-resources"></a>Ressources de support
--  Besoin d’aide pour utiliser DataCamp ?  Consultez les ressources suivantes :
+- Besoin d’aide pour utiliser DataCamp ?  Consultez les ressources suivantes :
     - [Communauté DataCamp](https://www.datacamp.com/community/tutorials), avec des forums et des didacticiels.
     - [Centre d’aide DataCamp](https://support.datacamp.com/hc), qui vous permet de rechercher des rubriques d’aide et de consulter les questions des utilisateurs.
     - [Soumettre une demande de support](https://support.datacamp.com/hc/requests/new)
--  Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
--  Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).
+- Pour obtenir de l’aide concernant les ventes, les abonnements, les comptes et la facturation des abonnements Visual Studio, contactez le [support des abonnements](https://visualstudio.microsoft.com/subscriptions/support/) Visual Studio.
+- Vous avez des questions concernant l’IDE Visual Studio, Azure DevOps Services, ou d’autres produits ou services Visual Studio ?  Consultez le [support Visual Studio](https://visualstudio.microsoft.com/support/).

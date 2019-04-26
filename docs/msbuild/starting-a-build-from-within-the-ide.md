@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ae3478aef733d106fa075a51edce4af91b404149
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584335"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939311"
 ---
 # <a name="start-a-build-from-within-the-ide"></a>Démarrer une build à partir de l’environnement IDE
 Les systèmes de projet personnalisés doivent utiliser <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildManagerAccessor> pour démarrer des builds. Cet article explique les raisons de cette exigence et décrit la procédure.

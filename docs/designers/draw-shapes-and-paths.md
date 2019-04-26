@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc629f44ed39fb07459916f07ef430f87b00e14a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2e0efd4b4f9fb301f5bcba4a12857647a8d911f1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62899334"
 ---
 # <a name="draw-shapes-and-paths"></a>Dessiner des formes et des tracés
 
@@ -21,7 +21,7 @@ Dans le concepteur XAML, une *forme* correspond exactement à ce à quoi vous pe
 
 Les formes et les tracés font appel à des graphiques vectoriels pour mieux s’adapter aux affichages à haute résolution. Pour en savoir plus sur les graphiques vectoriels, regardez la vidéo [What are Vector Graphics](https://www.youtube.com/watch?v=MoCSwF0n-io) (Présentation des graphiques vectoriels) ou lisez la définition des [graphiques vectoriels](http://www.webopedia.com/TERM/V/vector_graphics.html).
 
-##  <a name="Shape"></a> Dessiner une forme
+## <a name="Shape"></a> Dessiner une forme
  Vous pouvez trouver des formes dans le panneau **Composants** .
 
  ![Catégorie Formes du volet Composants](../designers/media/b4_shapes_assetspanel.png)
@@ -30,7 +30,7 @@ Les formes et les tracés font appel à des graphiques vectoriels pour mieux s�
 
  ![Handles](../designers/media/84261e83-3091-4490-ab58-4218b188439e.png)
 
-##  <a name="Path"></a> Dessiner un tracé
+## <a name="Path"></a> Dessiner un tracé
  Un tracé est une série de lignes et de courbes reliées. Les tracés permettent de créer des formes intéressantes qui ne sont pas disponibles dans le panneau **Composants** .
 
  Vous pouvez dessiner un tracé à l'aide d'une ligne, d'une plume ou d'un crayon. Ces outils se trouvent dans le panneau **Outils** .
@@ -80,12 +80,12 @@ Les formes et les tracés font appel à des graphiques vectoriels pour mieux s�
 
  Utilisez l’outil **Sélection** ![outil Sélection](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png) pour sélectionner le tracé. Utilisez l’outil **Plume** ![outil Plume](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png) pour cliquer à l’endroit où vous voulez ajouter le point sur le tracé.
 
-##  <a name="Convert"></a> Convertir une forme en tracé
+## <a name="Convert"></a> Convertir une forme en tracé
  Pour modifier une forme à la manière d’un tracé, convertissez la forme en tracé.
 
  **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.png) [Utilisation des tracés : convertir une forme en tracé](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
 
-##  <a name="Combine"></a> Combiner des tracés
+## <a name="Combine"></a> Combiner des tracés
  Vous pouvez combiner des tracés et des formes pour en faire un seul et même tracé.
 
  ![Combiner des tracés](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
@@ -98,7 +98,7 @@ Les formes et les tracés font appel à des graphiques vectoriels pour mieux s�
 
  **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.png) [Utilisation des tracés : combiner des tracés](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
 
-##  <a name="Compound"></a> Créer un tracé composite
+## <a name="Compound"></a> Créer un tracé composite
  Quand vous créez un tracé composite, toutes les parties situées à l'intersection des tracés sont soustraites du résultat, et le tracé obtenu adopte les propriétés visuelles du tracé inférieur.
 
  Vous pouvez à tout moment dissocier un tracé composite après l’avoir créé.
@@ -107,7 +107,7 @@ Les formes et les tracés font appel à des graphiques vectoriels pour mieux s�
 
  **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.png) [Utilisation des tracés : créer un tracé composite](https://www.youtube.com/watch?v=Io5bC0-nH6Q).
 
-##  <a name="Clipping"></a> Créer un tracé de détourage
+## <a name="Clipping"></a> Créer un tracé de détourage
  Un tracé de détourage est un tracé ou une forme qui est appliqué à un autre objet ; les parties de l’objet masqué situées à l’extérieur du tracé de détourage sont masquées.
 
  ![Tracé de détourage](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png)

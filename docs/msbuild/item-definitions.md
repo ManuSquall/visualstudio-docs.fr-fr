@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8673cb816cfd03aa5bb0f2c6ffb7aa5205a8372e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643832"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006776"
 ---
 # <a name="item-definitions"></a>Définitions d’éléments
 [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 2.0 permet la déclaration statique d’éléments dans les fichiers projet à l’aide de l’élément [ItemGroup](../msbuild/itemgroup-element-msbuild.md). Les métadonnées ne peuvent cependant être ajoutées qu’au niveau de l’élément, même si elles sont identiques pour tous les éléments. À compter de [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] 3.5, un élément de projet nommé [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) passe outre cette limitation. *ItemDefinitionGroup* vous permet de définir un ensemble de définitions d’élément, qui ajoutent des valeurs de métadonnées par défaut à tous les éléments dans le type d’élément nommé.

@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7e9249088b188fde1b346772ab1230d33160fe59
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55914735"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62996821"
 ---
 # <a name="open-project-command"></a>Ouvrir un projet, commande
 
@@ -41,7 +41,7 @@ Obligatoire. Chemin complet et nom de fichier de la solution ou du projet à ouv
 > [!NOTE]
 > La syntaxe de l’argument `filename` nécessite que les chemins contenant des espaces utilisent des guillemets.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 La saisie semi-automatique tente de deviner le chemin et le nom de fichier à mesure que vous tapez.
 
