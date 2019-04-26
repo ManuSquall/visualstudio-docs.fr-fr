@@ -12,12 +12,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 77f57eeda2f193170f4cd4f8b09d92989962e7fd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ad081a4d6954d402aa295a94edae3f5bdf50ef4c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445621"
 ---
 # <a name="walkthrough-creating-an-inline-task"></a>Procédure pas à pas : création d’une tâche inline
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -104,7 +104,7 @@ Les tâches MSBuild sont généralement créées en compilant une classe qui imp
     `Hello, world!`  
   
    > [!NOTE]
-   >  Si vous ne voyez pas le message Hello, essayez de réenregistrer le fichier projet puis d’exécuter la tâche Hello.  
+   > Si vous ne voyez pas le message Hello, essayez de réenregistrer le fichier projet puis d’exécuter la tâche Hello.  
   
    En alternant entre l’éditeur de code et la **fenêtre d’invite de commandes**, vous pouvez modifier le fichier projet et voir rapidement les résultats.  
   

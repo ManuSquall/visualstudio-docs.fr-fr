@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 26857824cac478936837a125068bd610dfc4c837
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 539b27c914555dad88442fd4d65e1bf8416dae3c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117627"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422893"
 ---
 # <a name="how-to-create-and-remove-project-dependencies"></a>Comment : créer et supprimer les dépendances d'un projet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Quand vous générez une solution qui contient plusieurs projets, vous pouvez ê
     La boîte de dialogue **Dépendances du projet** s’ouvre.  
   
    > [!NOTE]
-   >  L’option **Dépendances du projet** n’est disponible que dans une solution comportant plusieurs projets.  
+   > L’option **Dépendances du projet** n’est disponible que dans une solution comportant plusieurs projets.  
   
 3. Sous l’onglet **Dépendances**, sélectionnez un projet à partir du menu déroulant **Projet**.  
   
@@ -56,7 +56,7 @@ Quand vous générez une solution qui contient plusieurs projets, vous pouvez ê
      La boîte de dialogue **Dépendances du projet** s’ouvre.  
   
     > [!NOTE]
-    >  L’option **Dépendances du projet** n’est disponible que dans une solution comportant plusieurs projets.  
+    > L’option **Dépendances du projet** n’est disponible que dans une solution comportant plusieurs projets.  
   
 3. Sous l’onglet **Dépendances**, sélectionnez un projet à partir du menu déroulant **Projet**.  
   

@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 63a2e1b98baa61ef0a83c1de65653dd2e57a8b2c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d3f842d45df1525cb3f736019eeec52dd65b67aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54755462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443739"
 ---
 # <a name="managing-assembly-and-manifest-signing"></a>Gestion d'assembly et signature de manifeste
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ La signature avec un nom fort fournit à un composant logiciel une identité glo
  Spécifiez un fichier de clé. Si vous choisissez de créer un fichier de clé, notez que les fichiers de clés sont toujours créés au format .pfx. Vous avez besoin d’un nom et d’un mot de passe pour le nouveau fichier.  
   
 > [!WARNING]
->  Vous devez toujours protéger votre fichier de clé avec un mot de passe pour empêcher son utilisation par un tiers. Vous pouvez également sécuriser vos clés à l’aide des fournisseurs ou des magasins de certificats.  
+> Vous devez toujours protéger votre fichier de clé avec un mot de passe pour empêcher son utilisation par un tiers. Vous pouvez également sécuriser vos clés à l’aide des fournisseurs ou des magasins de certificats.  
   
  Vous pouvez également pointer vers une clé que vous avez déjà créée. Pour plus d’informations sur la création de clés, consultez [Comment : créer une paire de clés publique/privée](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
   
