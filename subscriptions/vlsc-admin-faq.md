@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Questions fréquentes (FAQ) sur la migration de l’administration du Centre de gestion des licences en volume
 searchscope: VS Subscription
 ms.openlocfilehash: 43b5ff7aeddf5ba1d938709e9f395f50395d0f3d
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897658"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62427973"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Migration de l’administration des abonnements Visual Studio
 
@@ -44,7 +44,7 @@ Oui.  Ce processus est constitué de deux phases. Configurer (ou intégrer) votr
 ### <a name="what-is-the-onboarding-process"></a>Qu’est-ce que le processus d’intégration ?
 Un e-mail est envoyé aux contacts principaux et aux contacts pour les notifications, les invitant à effectuer le processus d’intégration.
 Voici des instructions sur le processus.
-1. **Recherche du numéro PCN et connexion :**
+1. **Recherche de votre numéro de client public (PCN) et connexion :**
 
     a. Dans l’e-mail, les contacts principaux et les contacts pour les notifications sont indiqués avec un lien unique et les trois derniers chiffres de leur numéro PCN (Public Customer Number).*
 
@@ -54,7 +54,7 @@ Voici des instructions sur le processus.
 
     d. Ils sont ensuite invités à entrer le numéro PCN.
 
-2. **Configuration des administrateurs :**
+2. **Configurez vos administrateurs :**
 
     Après avoir entré le numéro PCN, ils sont dirigés vers la page où ils peuvent ajouter des super administrateurs et des administrateurs (auparavant appelés gestionnaires d’abonnements). Dans l’idéal, ceci doit être effectué avant la date de la migration de votre organisation, de façon à éviter toute interruption dans la gestion de vos abonnements.
 
@@ -106,8 +106,8 @@ Pour obtenir les informations les plus récentes concernant cette migration, vis
 
 - [Support](https://visualstudio.microsoft.com/subscriptions/support/) pour les abonnements et la gestion Visual Studio
 
-- [Guide pratique pour trouver son numéro PCN](find-pcn.md)
+- [Guide pratique pour trouver mon PCN](find-pcn.md)
 
-- [Guide pratique pour trouver son interlocuteur principal ou son interlocuteur pour les notifications](find-primary-contact.md)
+- [Guide pratique pour trouver votre contact principal ou votre contact pour les notifications](find-primary-contact.md)
 
 - [Vidéo](https://www.youtube.com/watch?v=ZmnywYGSFMg&list=PLReL099Y5nRfDyvvwzNDBaZe7qTxmuM2T&index=1&t=0s) sur l’intégration de votre organisation et la gestion des administrateurs

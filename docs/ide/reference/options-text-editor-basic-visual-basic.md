@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a7ea9c2efd6a204932e24de0ef250ba143b8b34
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: aa331fea595c2143dd3ab47aa562fbd61277f81f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925460"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817786"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Option, Éditeur de texte, Basic (Visual Basic), Avancé
 La page de propriétés **Spécifique à VB**, accessible par le biais du menu **Outils**, dans la boîte de dialogue **Options**, puis dans le dossier **Éditeur de texte** et son dossier **De base**, contient les propriétés suivantes :
@@ -50,7 +50,6 @@ La page de propriétés **Spécifique à VB**, accessible par le biais du menu *
    Quand ces options sont sélectionnées, une [Action rapide](../quick-actions.md) est disponible pour installer un package NuGet et ajouter une directive `using` pour les types non référencés.
 
    ![Action rapide pour installer un package NuGet dans Visual Studio](media/nuget-lightbulb.png)
-
 
 ## <a name="highlighting"></a>Highlighting
 
@@ -82,19 +81,19 @@ Quand cette option est sélectionnée, des lignes verticales alignées avec les 
 
 **Listing en mode Pretty (remise en forme) du code** L’éditeur de texte remet en forme votre code comme il convient. Quand cette option est sélectionnée, l’éditeur de code effectue les opérations suivantes :
 
--   Aligner votre code sur la tabulation correcte
+- Aligner votre code sur la tabulation correcte
 
--   Appliquer la casse correcte aux mots clés, variables et objets
+- Appliquer la casse correcte aux mots clés, variables et objets
 
--   Ajouter un élément `Then` manquant à une instruction `If...Then`
+- Ajouter un élément `Then` manquant à une instruction `If...Then`
 
--   Ajouter des parenthèses aux appels de fonctions
+- Ajouter des parenthèses aux appels de fonctions
 
--   Ajouter les guillemets fermants manquants aux chaînes
+- Ajouter les guillemets fermants manquants aux chaînes
 
--   Remettre en forme la notation exponentielle
+- Remettre en forme la notation exponentielle
 
--   Remettre en forme les dates
+- Remettre en forme les dates
 
 **Insertion automatique des constructions de fin**
 

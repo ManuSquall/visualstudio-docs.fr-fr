@@ -9,12 +9,12 @@ ms.assetid: b87fb196-9973-4512-a924-088788def4ea
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fb820ccc72e0070f947e362def1da137d19d8494
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1c884fd11c4c633164ed3283ca8d2830729e9250
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955594"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950153"
 ---
 # <a name="how-to-create-load-test-performance-reports-using-microsoft-excel"></a>Procédure : créer des rapports de performances de test de charge à l’aide de Microsoft Excel
 
@@ -24,9 +24,9 @@ Vous pouvez créer des rapports de test de charge Microsoft Excel basés sur au 
 
 Deux types de rapports de test de charge sont disponibles :
 
--   **Comparaison de séries** Ce rapport crée un ensemble de rapports qui permettent de comparer les données de deux résultats de test de charge à l’aide de tables et de graphiques à barres.
+- **Comparaison de séries** Ce rapport crée un ensemble de rapports qui permettent de comparer les données de deux résultats de test de charge à l’aide de tables et de graphiques à barres.
 
--   **Tendance** Ce rapport génère une analyse de tendances sur la base d’au moins deux résultats de test de charge. Les résultats sont affichés à l'aide de graphiques en courbes, mais les données sont disponibles dans des tableaux croisés dynamique.
+- **Tendance** Ce rapport génère une analyse de tendances sur la base d’au moins deux résultats de test de charge. Les résultats sont affichés à l'aide de graphiques en courbes, mais les données sont disponibles dans des tableaux croisés dynamique.
 
 > [!TIP]
 > Vous pouvez également créer manuellement des rapports Microsoft Word en copiant et collant des données des vues Résumé, Graphiques et Tables. Consultez [Guide pratique pour créer manuellement un rapport de performances de test de charge à l’aide de Microsoft Word](../test/how-to-manually-create-a-load-test-performance-report-using-microsoft-word.md).
@@ -40,7 +40,7 @@ Le classeur Excel peut être partagé avec les parties prenantes sans que ceux-c
 > [!NOTE]
 > Vous pouvez partager le classeur Excel. Cependant, seuls les utilisateurs ayant installé Visual Studio sur leur ordinateur peuvent modifier les feuilles de calcul. Les autres utilisateurs ne verront pas l’option **Rapport de test de charge** dans le ruban **Office**, mais ils pourront afficher le classeur.
 
-L’illustration suivante est un exemple de rapport qui affiche une corrélation entre une baisse de vitesse de la transaction (Mettre à jour le panier) et la dégénération du compteur (% processeur). Cela indique un problème potentiel dans le code de l'application, au lieu de la base de données ou du réseau, et présente un bon exemple à diagnostiquer à l'aide du profileur ASP.NET.
+L'illustration suivante est un exemple de rapport qui affiche une corrélation entre une baisse de vitesse de la transaction (Mettre à jour le panier) et la dégénération du compteur (% processeur). Cela indique un problème potentiel dans le code de l'application, au lieu de la base de données ou du réseau, et présente un bon exemple à diagnostiquer à l'aide du profileur ASP.NET.
 
 ![Problème potentiel dans le code de l'application](../test/media/lt_excel.png)
 
@@ -58,7 +58,7 @@ Vous pouvez générer des rapports Excel dans **l’Analyseur de test de charge*
    - Une fois un test de charge terminé, dans la page **Résultats du test de charge**, choisissez le bouton **Créer un rapport Excel** dans la barre d’outils.
 
       > [!NOTE]
-      > Si le bouton **Créer un rapport Excel** est désactivé dans la barre d’outils de l’**Afficheur des résultats des tests de performances web**, vous devrez peut-être exécuter Microsoft Excel une première fois pour l’activer. Quand Visual Studio Enterprise est installé, le complément de test de charge de Visual Studio Enterprise est copié vers votre ordinateur pour Microsoft Excel ; toutefois, Microsoft Excel doit être exécuté pour terminer le processus d’installation du complément.
+      > Si le bouton **Créer un rapport Excel** est désactivé dans la barre d’outils de l’**Afficheur des résultats des tests de performances web**, vous devrez peut-être exécuter Microsoft Excel une première fois pour l’activer. Quand Visual Studio Enterprise est installé, le complément de test de charge de Visual Studio Enterprise est copié vers votre ordinateur pour Microsoft Excel ; toutefois, Microsoft Excel doit être exécuté pour terminer le processus d'installation du complément.
 
       Microsoft Excel s’ouvre avec **l’Assistant Générer un rapport de test de charge**.
 
@@ -113,7 +113,7 @@ Vous pouvez générer des rapports Excel dans **l’Analyseur de test de charge*
    - Une fois un test de charge terminé, dans la page **Résultats du test de charge**, choisissez le bouton **Créer un rapport Excel** dans la barre d’outils.
 
       > [!NOTE]
-      > Si le bouton **Créer un rapport Excel** est désactivé dans la barre d’outils de l’**Afficheur des résultats des tests de performances web**, vous devrez peut-être exécuter Microsoft Excel une première fois pour l’activer. Quand Visual Studio Enterprise est installé, le complément de test de charge de Visual Studio Enterprise est copié vers votre ordinateur pour Microsoft Excel ; toutefois, Microsoft Excel doit être exécuté pour terminer le processus d’installation du complément.
+      > Si le bouton **Créer un rapport Excel** est désactivé dans la barre d’outils de l’**Afficheur des résultats des tests de performances web**, vous devrez peut-être exécuter Microsoft Excel une première fois pour l’activer. Quand Visual Studio Enterprise est installé, le complément de test de charge de Visual Studio Enterprise est copié vers votre ordinateur pour Microsoft Excel ; toutefois, Microsoft Excel doit être exécuté pour terminer le processus d'installation du complément.
 
       Microsoft Excel s’ouvre avec **l’Assistant Générer un rapport de test de charge**.
 

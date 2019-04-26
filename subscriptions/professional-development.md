@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Avantages du développement professionnel inclus dans les abonnements Visual Studio
 searchscope: VS Subscription
 ms.openlocfilehash: d63fd098c003f606a1d88aec55157e554620b20b
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018361"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007697"
 ---
 # <a name="professional-development-benefits-available-in-visual-studio-subscriptions"></a>Avantages du développement professionnel disponibles dans les abonnements Visual Studio
 
@@ -25,5 +25,5 @@ Pour plus d’informations sur les avantages spécifiques, consultez ces pages 
 - [DataCamp](vs-datacamp.md)
 - [Opsgility](vs-opsgility.md)
 - [Pluralsight](vs-pluralsight.md)
-- [Magazine MSDN](vs-msdn.md)
+- [MSDN Magazine](vs-msdn.md)
 - [LinkedIn Learning](vs-linkedin-learning.md)

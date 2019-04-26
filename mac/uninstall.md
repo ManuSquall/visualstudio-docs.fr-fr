@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: ef208a9f74c1c8ee1ccb6df2c1e54917cd354be3
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 428c5ceb878d2ec0f4185ad70772672733fda517
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856445"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971441"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Désinstallation de Visual Studio pour Mac
 
@@ -25,7 +25,7 @@ Si Xamarin Studio était installé sur votre machine, vous devez également suiv
 
 Deux scripts permettent de désinstaller Visual Studio pour Mac et tous les composants de votre machine :
 
-- [Script Xamarin et Visual Studio](#visual-studio-for-mac-and-xamarin-script)
+- [Script Visual Studio et Xamarin](#visual-studio-for-mac-and-xamarin-script)
 - [Script .NET Core](#net-core-script)
 
 Les sections suivantes fournissent des informations sur le téléchargement et l’utilisation des scripts.
@@ -36,9 +36,9 @@ Vous pouvez désinstaller Visual Studio et les composants Xamarin en une seule f
 
 Ce script de désinstallation contient la plupart des commandes que vous pouvez trouver dans l’article. Le script omet trois éléments centraux en raison de possibles dépendances externes. Pour éviter cela, accédez à la section correspondante ci-dessous et supprimez-les manuellement :
 
-- **[Désinstallation de Mono](#uninstall-mono-sdk-mdk)**
-- **[Désinstallation d’Android AVD](#uninstall-android-avd)**
-- **[Désinstallation du kit Android SDK et du SDK Java](#uninstall-android-sdk-and-java-sdk)**
+- **[Désinstaller Mono](#uninstall-mono-sdk-mdk)**
+- **[Désinstaller Android AVD](#uninstall-android-avd)**
+- **[Désinstaller Android SDK et Java SDK](#uninstall-android-sdk-and-java-sdk)**
 
 Pour exécuter le script, effectuez les étapes suivantes :
 
@@ -48,12 +48,14 @@ Pour exécuter le script, effectuez les étapes suivantes :
     ```bash
     cd /location/of/file
     ```
+
 3. Rendez le script exécutable et exécutez-le avec **sudo** :
 
     ```bash
     chmod +x ./uninstall-vsmac.sh
     sudo ./uninstall-vsmac.sh
     ```
+
 4. Enfin, supprimez le script de désinstallation.
 
 ### <a name="net-core-script"></a>Script .NET Core
@@ -68,12 +70,14 @@ Pour exécuter le script, effectuez les étapes suivantes :
     ```bash
     cd /location/of/file
     ```
+
 3. Rendez le script exécutable et exécutez-le avec **sudo** :
 
     ```bash
     chmod +x ./dotnet-uninstall-pkgs.sh
     sudo ./dotnet-uninstall-pkgs.sh
     ```
+
 4. Enfin, supprimez le script de désinstallation .NET Core.
 
 ## <a name="uninstall-visual-studio-for-mac"></a>Désinstaller Visual Studio pour Mac
@@ -104,7 +108,6 @@ Si vous souhaitez supprimer également le répertoire suivant, incluant divers f
 ```bash
 rm -rf ~/Library/Developer/Xamarin
 ```
-
 
 ## <a name="uninstall-mono-sdk-mdk"></a>Désinstaller le SDK Mono (MDK)
 
@@ -195,8 +198,8 @@ sudo /Library/Frameworks/Xamarin.Interactive.framework/Versions/Current/uninstal
 
 Pour les versions antérieures, vous devez supprimer manuellement les artefacts suivants :
 
-* Supprimez l’application Workbooks dans `"/Applications/Xamarin Workbooks.app"`
-* Supprimez l’application Inspector dans `"Applications/Xamarin Inspector.app"`
+* Supprimez l’application Workbooks dans`"/Applications/Xamarin Workbooks.app"`
+* Supprimez l’application Inspector dans`"Applications/Xamarin Inspector.app"`
 * Supprimez les compléments : `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Interactive"` et `"~/Library/Application Support/XamarinStudio-6.0/LocalInstall/Addins/Xamarin.Inspector"`
 * Supprimez Inspector et les fichiers de prise en charge ici : `/Library/Frameworks/Xamarin.Interactive.framework` et `/Library/Frameworks/Xamarin.Inspector.framework`
 

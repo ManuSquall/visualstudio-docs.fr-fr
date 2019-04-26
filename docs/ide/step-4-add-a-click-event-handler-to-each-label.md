@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f9159ccec69bd6e8cad0290b092f38434b495fc6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8bdc4c106ff8d6f1740fb53e0e3552f64b069fb5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954569"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949087"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Étape 4 : Ajouter un gestionnaire d’événements Click à chaque étiquette
 
@@ -29,17 +29,17 @@ Le jeu de combinaisons fonctionne comme suit :
 
 ## <a name="to-add-a-click-event-handler-to-each-label"></a>Pour ajouter un gestionnaire d'événements Click à chaque étiquette
 
-1.  Ouvrez le formulaire dans le **Concepteur Windows Forms**. Dans l'**Explorateur de solutions**, choisissez *Form1.cs* ou *Form1.vb*. Dans la barre de menus, choisissez **Affichage** > **Concepteur**.
+1. Ouvrez le formulaire dans le **Concepteur Windows Forms**. Dans l'**Explorateur de solutions**, choisissez *Form1.cs* ou *Form1.vb*. Dans la barre de menus, choisissez **Affichage** > **Concepteur**.
 
-2.  Choisissez le premier contrôle Label pour le sélectionner. Ensuite, maintenez la touche **Ctrl** enfoncée tout en choisissant d'autres étiquettes pour les sélectionner. Assurez-vous que chaque contrôle Label est sélectionné.
+2. Choisissez le premier contrôle Label pour le sélectionner. Ensuite, maintenez la touche **Ctrl** enfoncée tout en choisissant d'autres étiquettes pour les sélectionner. Assurez-vous que chaque contrôle Label est sélectionné.
 
-3.  Choisissez le bouton **Événements** dans la barre d’outils de la fenêtre **Propriétés** pour afficher la page **Événements** dans la fenêtre **Propriétés**. Faites défiler l’écran vers le bas jusqu’à l’événement **Click**, puis entrez **label_Click** dans la zone, comme indiqué à la figure suivante.
+3. Choisissez le bouton **Événements** dans la barre d’outils de la fenêtre **Propriétés** pour afficher la page **Événements** dans la fenêtre **Propriétés**. Faites défiler l’écran vers le bas jusqu’à l’événement **Click**, puis entrez **label_Click** dans la zone, comme indiqué à la figure suivante.
 
      ![Fenêtre Propriétés affichant l'événement Click](../ide/media/express_labelclick.png)
 
-4.  Choisissez la touche **Entrée**. L'IDE ajoute un `Click`gestionnaire d'événements appelé `label_Click()` au code et le raccorde à chacune des étiquettes sur le formulaire.
+4. Choisissez la touche **Entrée**. L'IDE ajoute un `Click`gestionnaire d'événements appelé `label_Click()` au code et le raccorde à chacune des étiquettes sur le formulaire.
 
-5.  Remplissez le reste du code, comme suit :
+5. Remplissez le reste du code, comme suit :
 
      [!code-csharp[VbExpressTutorial4Step2_3_4#4](../ide/codesnippet/CSharp/step-4-add-a-click-event-handler-to-each-label_1.cs)]
      [!code-vb[VbExpressTutorial4Step2_3_4#4](../ide/codesnippet/VisualBasic/step-4-add-a-click-event-handler-to-each-label_1.vb)]
@@ -52,10 +52,10 @@ Le jeu de combinaisons fonctionne comme suit :
 
      Cette méthode vérifie d’abord si un objet `clickedLabel` a été correctement converti (cast) en contrôle d’étiquette. Dans le cas contraire, il a une valeur `null` (C#) ou `Nothing` (Visual Basic), et vous ne voudrez pas exécuter le reste du code dans la méthode. Ensuite, la méthode vérifie la couleur de texte du contrôle Label choisi en utilisant la propriété **ForeColor** de ce dernier. Si la couleur du texte du contrôle Label est noire, cela signifie que l'icône a déjà été choisie et la méthode est terminée. (C’est ce que fait l’instruction `return` : elle indique au programme d’arrêter l’exécution de la méthode.) Dans le cas contraire, l'icône n'a pas été choisie et le programme modifie la couleur du texte du contrôle Label pour la rendre noire.
 
-6.  Dans la barre de menus, choisissez **Fichier** > **Enregistrer tout** pour enregistrer votre progression, puis, dans la barre de menus, choisissez **Déboguer** > **Démarrer le débogage** pour exécuter votre programme. Un formulaire vierge doit s'afficher avec un arrière-plan bleu. Choisissez l'une des cellules du formulaire et l'une des icônes doit apparaître. Continuez à choisir des emplacements différents dans le formulaire. Chaque fois que vous choisissez une icône, elle doit s'afficher.
+6. Dans la barre de menus, choisissez **Fichier** > **Enregistrer tout** pour enregistrer votre progression, puis, dans la barre de menus, choisissez **Déboguer** > **Démarrer le débogage** pour exécuter votre programme. Un formulaire vierge doit s'afficher avec un arrière-plan bleu. Choisissez l'une des cellules du formulaire et l'une des icônes doit apparaître. Continuez à choisir des emplacements différents dans le formulaire. Chaque fois que vous choisissez une icône, elle doit s'afficher.
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
--   Pour passer à l’étape suivante du tutoriel, consultez [Étape 5 : Ajouter des références aux étiquettes](../ide/step-5-add-label-references.md).
+- Pour passer à l’étape suivante du tutoriel, consultez [Étape 5 : Ajouter des références aux étiquettes](../ide/step-5-add-label-references.md).
 
--   Pour revenir à l’étape précédente du tutoriel, consultez [Étape 3 : Affecter une icône aléatoire à chaque étiquette](../ide/step-3-assign-a-random-icon-to-each-label.md).
+- Pour revenir à l’étape précédente du tutoriel, consultez [Étape 3 : Affecter une icône aléatoire à chaque étiquette](../ide/step-3-assign-a-random-icon-to-each-label.md).
