@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 669d239aa7c26a99774ce12cdd3e1b43c5d7ccb7
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.openlocfilehash: 41619e780d02f20fc21bd2b51cc0b0a3eede90fd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58866716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951492"
 ---
 # <a id="top"> </a> Images Visual Studio sur Azure
 
@@ -77,13 +77,13 @@ Si les images n’incluent pas la fonctionnalité de Visual Studio dont vous ave
 
 Azure offre une gamme complète de tailles de machine virtuelle. Étant donné que Visual Studio est une puissante application multithread, il est préférable d’opter pour une taille de machine virtuelle incluant au moins deux processeurs et 7 Go de mémoire. Nous recommandons les tailles de machine virtuelle suivantes pour les images de Visual Studio :
 
-   * Standard_D2_v3
-   * Standard_D2s_v3
-   * Standard_D4_v3
-   * Standard_D4s_v3
-   * Standard_D2_v2
-   * Standard_D2S_v2
-   * Standard_D3_v2
+* Standard_D2_v3
+* Standard_D2s_v3
+* Standard_D4_v3
+* Standard_D4s_v3
+* Standard_D2_v2
+* Standard_D2S_v2
+* Standard_D3_v2
 
 Pour plus d’informations sur les dernières tailles de machine, consultez [Tailles des machines virtuelles Windows dans Azure](/azure/virtual-machines/windows/sizes).
 
@@ -105,7 +105,7 @@ Résumé rapide : Utilisez l’outil de préparation du système (Sysprep) et a
 
 ![Capture d’une image via l’interface utilisateur du portail Azure](media/capture-vm.png)
 
-*(Figure 1) Capture d’une image par le biais de l’interface utilisateur du portail Azure.*
+*(Figure 1) Capture d’une image via l’interface utilisateur du portail Azure.*
 
 Pour plus d’informations, consultez [Créer une image managée d’une machine virtuelle généralisée dans Azure](/azure/virtual-machines/windows/capture-image-resource).
 

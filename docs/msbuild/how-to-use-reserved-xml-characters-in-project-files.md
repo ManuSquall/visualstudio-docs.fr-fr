@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02c5693a2edca0d81e21e73215e00f25aae939eb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c79dfa33af5e0e80db682f272c5673856dbbcd8d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603868"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840380"
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Procédure : Utiliser des caractères XML réservés dans les fichiers projet
 Lorsque vous créez des fichiers projet, vous devrez peut-être utiliser des caractères XML réservés, par exemple, dans les valeurs de propriétés ou dans les valeurs de paramètres de tâche. Toutefois, certains caractères réservés doivent être remplacés par une entité nommée afin que le fichier projet puisse être analysé.
@@ -34,7 +34,7 @@ Lorsque vous créez des fichiers projet, vous devrez peut-être utiliser des car
 
 #### <a name="to-use-double-quotes-in-a-project-file"></a>Pour utiliser des guillemets doubles dans un fichier projet
 
--   Remplacez les guillemets doubles par l’entité nommée correspondante, &amp;quot;. Par exemple, pour placer des guillemets doubles autour de la liste d’éléments `EXEFile`, tapez :
+- Remplacez les guillemets doubles par l’entité nommée correspondante, &amp;quot;. Par exemple, pour placer des guillemets doubles autour de la liste d’éléments `EXEFile`, tapez :
 
     ```xml
     <Message Text="The output file is &quot;@(EXEFile)&quot;."/>

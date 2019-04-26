@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 8e7648496e85b35d4f97fc9c85dc0bce6d17000e
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59365221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957411"
 ---
 # <a name="install-python-interpreters"></a>Installer les interpréteurs Python
 
@@ -66,4 +66,4 @@ Ce processus garantit que les entrées de Registre qui identifient l’emplaceme
 - [Sélectionner un interpréteur pour un projet](selecting-a-python-environment-for-a-project.md)
 - [Utiliser requirements.txt pour les dépendances](managing-required-packages-with-requirements-txt.md)
 - [Chemins de recherche](search-paths.md)
-- [Informations de référence sur la fenêtre Environnements Python](python-environments-window-tab-reference.md)
+- [Référence sur la fenêtre Environnements Python](python-environments-window-tab-reference.md)

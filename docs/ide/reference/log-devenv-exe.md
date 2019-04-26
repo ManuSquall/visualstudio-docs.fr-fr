@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4b2e11cb36176aec94528019cdd19bb5fa86c92b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907215"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946802"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
 
@@ -25,7 +25,7 @@ Enregistre toute l'activité dans le fichier journal de résolution des problèm
 
 **%APPDATA%\\Microsoft\\VisualStudio\\**\<Version\>**\\ActivityLog.xml**.
 
-où \<Version\> est la version de Visual Studio. Toutefois, vous pouvez spécifier un autre chemin d’accès et/ou nom de fichier.
+où \<Version\> est la version de Visual Studio. Toutefois, vous pouvez spécifier un autre chemin d'accès et/ou nom de fichier.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -39,7 +39,7 @@ devenv /Log NameOfLogFile
 
   Obligatoire. Chemin d’accès complet et nom du fichier journal dans lequel sera effectué l’enregistrement.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 Ce commutateur doit apparaître à la fin de la ligne de commande, après tous les autres commutateurs.
 

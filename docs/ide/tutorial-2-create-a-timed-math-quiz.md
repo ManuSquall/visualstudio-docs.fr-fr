@@ -8,24 +8,24 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c93ddfc85e318a2095f757c6131b151a5414c884
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4ececa58d04ea7cfebe6178faae724038e353f06
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956933"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821620"
 ---
 # <a name="tutorial-2-create-a-timed-math-quiz"></a>Tutoriel 2 : Créer un questionnaire mathématique chronométré
 
 Dans ce didacticiel, vous générez un questionnaire dans lequel la personne interrogée doit résoudre quatre problèmes arithmétiques aléatoires dans un délai imparti. Vous apprenez à :
 
--   Générer des nombres aléatoires à l'aide de la classe <xref:System.Random>.
+- Générer des nombres aléatoires à l'aide de la classe <xref:System.Random>.
 
--   Déclencher des événements à une heure spécifique à l’aide d’un contrôle <xref:System.Windows.Forms.Timer>.
+- Déclencher des événements à une heure spécifique à l’aide d’un contrôle <xref:System.Windows.Forms.Timer>.
 
--   Contrôler le flux d'un programme à l'aide d'instructions `if else`.
+- Contrôler le flux d'un programme à l'aide d'instructions `if else`.
 
--   Effectuer des opérations arithmétiques de base dans le code.
+- Effectuer des opérations arithmétiques de base dans le code.
 
 Quand vous avez terminé, votre questionnaire ressemble à l’image suivante, avec des valeurs différentes :
 

@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a49b2c77833538cb983f776a2f54ad332fb87f59
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504404"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968179"
 ---
 # <a name="debug-page-project-designer"></a>Page Déboguer, Concepteur de projets
 
@@ -59,7 +59,7 @@ Choisissez cette option pour spécifier qu’une URL particulière doit être ac
 
 ## <a name="start-options"></a>Options de démarrage
 
-**Arguments de ligne de commande**
+**Arguments de la ligne de commande**
 
 Dans cette zone de texte, entrez les arguments de la ligne de commande à utiliser pour le débogage.
 
@@ -84,7 +84,7 @@ Cochez ou décochez cette case pour activer ou désactiver le débogage des proc
 ## <a name="see-also"></a>Voir aussi
 
 - [Présentation du débogueur](../../debugger/debugger-feature-tour.md)
-- [Paramètres de projet pour des configurations Debug C#](../../debugger/project-settings-for-csharp-debug-configurations.md)
+- [Paramètres de projet pour des configurations de débogage C#](../../debugger/project-settings-for-csharp-debug-configurations.md)
 - [Paramètres de projet pour une configuration Debug Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)
-- [Procédure : Déboguer une application ClickOnce avec des autorisations restreintes](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
-- [Procédure : Créer et modifier des configurations](../../ide/how-to-create-and-edit-configurations.md)
+- [Guide pratique pour déboguer une application ClickOnce avec des autorisations restreintes](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [Guide pratique pour créer et modifier des configurations](../../ide/how-to-create-and-edit-configurations.md)

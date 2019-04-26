@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
-ms.openlocfilehash: 59ee47f8971278e1be9714e8ee4e70911f612d52
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8b67296dc4ad77977ce6ba0399e9d9b4207e2c7f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335088"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62938094"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>Inclure un package NuGet dans votre projet
 
@@ -77,9 +77,9 @@ Cliquez avec le bouton droit sur **Packages** pour accéder au menu contextuel 
 
 ![Menu Packages](media/nuget-walkthrough-PackagesMenu.png)
 
-*   **Ajouter des packages** : ouvre la fenêtre permettant d’ajouter plus de packages au projet.
-*   **Mettre à jour** : recherche les versions les plus récentes des packages sur le serveur source et les télécharge.
-*   **Restaurer** : télécharge les packages manquants (sans mettre à jour les packages existants vers leur version la plus récente).
+* **Ajouter des packages** : ouvre la fenêtre permettant d’ajouter plus de packages au projet.
+* **Mettre à jour** : recherche les versions les plus récentes des packages sur le serveur source et les télécharge.
+* **Restaurer** : télécharge les packages manquants (sans mettre à jour les packages existants vers leur version la plus récente).
 
 Les options Mettre à jour et Restaurer sont également disponibles au niveau de la solution, et elles affectent tous les projets de la solution.
 
@@ -87,9 +87,9 @@ Vous pouvez aussi cliquer avec le bouton droit sur des packages individuels pour
 
 ![Menu Packages](media/nuget-walkthrough-PackageMenu.png)
 
-*   **Numéro de version** : le numéro de version est un élément de menu désactivé. Il est fourni uniquement à titre d’information.
-*   **Mettre à jour** : recherche une version plus récente sur le serveur source et si elle existe, la télécharge.
-*   **Supprimer** : supprime le package de ce projet et supprime les assemblys concernés des références du projet.
+* **Numéro de version** : le numéro de version est un élément de menu désactivé. Il est fourni uniquement à titre d’information.
+* **Mettre à jour** : recherche une version plus récente sur le serveur source et si elle existe, la télécharge.
+* **Supprimer** : supprime le package de ce projet et supprime les assemblys concernés des références du projet.
 
 ## <a name="adding-package-sources"></a>Ajout de sources de packages
 

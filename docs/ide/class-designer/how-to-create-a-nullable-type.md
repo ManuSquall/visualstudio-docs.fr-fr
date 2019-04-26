@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a5c70375e7b7b47b9c345c13b5529ea29e1eed45
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0212f7ef1c5b506ce7a1efbde60e7c46a424bfa3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925513"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975519"
 ---
 # <a name="how-to-create-a-nullable-type-in-class-designer"></a>Procédure : Créer un type Nullable dans le Concepteur de classes
 
@@ -29,9 +29,9 @@ Un *type Nullable* est un type de valeur que vous étendez afin qu’il accepte 
 
 Les types Nullable sont des instances de la structure <xref:System.Nullable%601>. Chaque instance d’un type Nullable a deux propriétés publiques en lecture seule, `HasValue` et `Value` :
 
--   `HasValue` est de type `bool` et indique si la variable contient une valeur définie. `True` signifie que la variable contient une valeur non null. Vous pouvez tester l’existence d’une valeur définie en utilisant une instruction telle que `if (x.HasValue)` ou `if (y != null)`.
+- `HasValue` est de type `bool` et indique si la variable contient une valeur définie. `True` signifie que la variable contient une valeur non null. Vous pouvez tester l’existence d’une valeur définie en utilisant une instruction telle que `if (x.HasValue)` ou `if (y != null)`.
 
--   `Value` est du même type que le type sous-jacent. Si `HasValue` est `True`, `Value` contient une valeur significative. Si `HasValue` est `False`, l’accès à `Value` lève une exception d’opération non valide.
+- `Value` est du même type que le type sous-jacent. Si `HasValue` est `True`, `Value` contient une valeur significative. Si `HasValue` est `False`, l’accès à `Value` lève une exception d’opération non valide.
 
 Par défaut, quand vous déclarez une variable en tant que type Nullable, elle n’a aucune valeur définie (`HasValue` est `False`), autre que la valeur par défaut de son type valeur sous-jacent.
 
@@ -43,26 +43,26 @@ Pour plus d’informations sur les types Nullable dans C#, consultez [Types Null
 
 ## <a name="to-add-a-nullable-type-by-using-the-class-designer"></a>Pour ajouter un type Nullable à l’aide du Concepteur de classes
 
-1.  Dans le diagramme de classes, développez une classe existante ou créez une classe.
+1. Dans le diagramme de classes, développez une classe existante ou créez une classe.
 
-2.  Pour ajouter une classe au projet, dans le menu **Diagramme de classes**, cliquez sur **Ajouter** > **Ajouter une classe**.
+2. Pour ajouter une classe au projet, dans le menu **Diagramme de classes**, cliquez sur **Ajouter** > **Ajouter une classe**.
 
-3.  Pour développer la forme de classe, dans le menu **Diagramme de classes**, cliquez sur **Développer**.
+3. Pour développer la forme de classe, dans le menu **Diagramme de classes**, cliquez sur **Développer**.
 
-4.  Sélectionnez la forme de classe. Dans le menu **Diagramme de classes**, cliquez sur **Ajouter** > **Champ**. Un nouveau champ qui porte le nom par défaut **Champ** apparaît dans la forme de classe, ainsi que dans la fenêtre **Détails de classe**.
+4. Sélectionnez la forme de classe. Dans le menu **Diagramme de classes**, cliquez sur **Ajouter** > **Champ**. Un nouveau champ qui porte le nom par défaut **Champ** apparaît dans la forme de classe, ainsi que dans la fenêtre **Détails de classe**.
 
-5.  Dans la colonne **Nom** de la fenêtre **Détails de classe** (ou dans la classe de forme elle-même), remplacez le nom du nouveau champ par un nom valide et explicite.
+5. Dans la colonne **Nom** de la fenêtre **Détails de classe** (ou dans la classe de forme elle-même), remplacez le nom du nouveau champ par un nom valide et explicite.
 
-6.  Dans la colonne **Type** de la fenêtre **Détails de classe**, déclarez le type comme type Nullable en spécifiant ce qui suit :
+6. Dans la colonne **Type** de la fenêtre **Détails de classe**, déclarez le type comme type Nullable en spécifiant ce qui suit :
 
     - `int?` (Visual C#)
     - `Nullable(Of Integer)` (Visual Basic)
 
 ## <a name="to-add-a-nullable-type-by-using-the-code-editor"></a>Pour ajouter un type Nullable à l’aide de l’éditeur de code
 
-1.  Ajoutez une classe au projet. Sélectionnez le nœud du projet dans l’**Explorateur de solutions**, puis, dans le menu **Projet**, cliquez sur **Ajouter une classe**.
+1. Ajoutez une classe au projet. Sélectionnez le nœud du projet dans l’**Explorateur de solutions**, puis, dans le menu **Projet**, cliquez sur **Ajouter une classe**.
 
-2.  Dans le fichier .cs ou .vb pour la nouvelle classe, ajoutez un ou plusieurs types Nullable dans la nouvelle classe à la déclaration de classe.
+2. Dans le fichier .cs ou .vb pour la nouvelle classe, ajoutez un ou plusieurs types Nullable dans la nouvelle classe à la déclaration de classe.
 
     ```csharp
     // Declare a nullable type in Visual C#:
@@ -79,11 +79,11 @@ Pour plus d’informations sur les types Nullable dans C#, consultez [Types Null
     End Class
     ```
 
-3.  À partir de l’affichage de classes, faites glisser l’icône de la nouvelle classe vers l’aire de conception du Concepteur de classes. Une forme de classe apparaît dans le diagramme de classes.
+3. À partir de l’affichage de classes, faites glisser l’icône de la nouvelle classe vers l’aire de conception du Concepteur de classes. Une forme de classe apparaît dans le diagramme de classes.
 
-4.  Développez les détails de la forme de classe et déplacez le pointeur de la souris sur les membres de classe. L’info-bulle affiche la déclaration de chaque membre.
+4. Développez les détails de la forme de classe et déplacez le pointeur de la souris sur les membres de classe. L’info-bulle affiche la déclaration de chaque membre.
 
-5.  Cliquez avec le bouton droit sur la forme de classe, puis cliquez sur **Détails de classe**. Vous pouvez afficher ou modifier les propriétés du nouveau type dans la fenêtre **Détails de classe**.
+5. Cliquez avec le bouton droit sur la forme de classe, puis cliquez sur **Détails de classe**. Vous pouvez afficher ou modifier les propriétés du nouveau type dans la fenêtre **Détails de classe**.
 
 ## <a name="see-also"></a>Voir aussi
 

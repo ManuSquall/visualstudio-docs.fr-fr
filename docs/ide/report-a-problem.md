@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 23ed63846eb11fd8eba95219aecaae3210e161fd
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56800529"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62980145"
 ---
 # <a name="overview-report-a-problem"></a>Vue d’ensemble : Signaler un problème
 
@@ -104,7 +104,7 @@ L’état **Fermé - Ne sera pas résolu** indique que nous ne suivons pas le pr
 
 - - -
 
-## <a name="faq"></a>FAQ
+## <a name="faq"></a>Questions fréquentes (FAQ)
 
 ### <a name="how-can-i-increase-the-chance-of-my-problem-getting-resolved-quickly"></a>Comment accroître les chances d’une résolution rapide de mon problème ?
 
