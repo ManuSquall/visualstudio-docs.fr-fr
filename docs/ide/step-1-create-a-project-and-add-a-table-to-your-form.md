@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f1c651c27fac6036aa2abcbd3e86b5f46cc9f02
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: 0bac96a61a5c071a01f1584911ba41cd84e87da7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647490"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979552"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Étape 1 : Créer un projet et ajouter une table à votre formulaire
 
@@ -47,9 +47,9 @@ La première étape pour créer un jeu de combinaisons consiste à créer le pro
 
 4. Dans la fenêtre **Propriétés**, définissez les propriétés de formulaire ci-dessous.
 
-   1.  Modifiez la propriété **Text** du formulaire en remplaçant **Form1** par **Matching Game** (Jeu de combinaisons). Ce texte s'affiche en haut de la fenêtre du jeu.
+   1. Modifiez la propriété **Text** du formulaire en remplaçant **Form1** par **Matching Game** (Jeu de combinaisons). Ce texte s'affiche en haut de la fenêtre du jeu.
 
-   2.  Définissez la taille du formulaire en spécifiant une largeur de 550 pixels et une hauteur de 550 pixels. Pour cela, vous pouvez définir la propriété **Size** sur **550, 550** ou faire glisser l’angle du formulaire jusqu’à ce que vous voyiez la taille appropriée dans le coin inférieur droit de l’environnement de développement intégré (IDE).
+   2. Définissez la taille du formulaire en spécifiant une largeur de 550 pixels et une hauteur de 550 pixels. Pour cela, vous pouvez définir la propriété **Size** sur **550, 550** ou faire glisser l’angle du formulaire jusqu’à ce que vous voyiez la taille appropriée dans le coin inférieur droit de l’environnement de développement intégré (IDE).
 
 5. Affichez la boîte à outils en choisissant l’onglet **Boîte à outils** à gauche de l’environnement IDE.
 
@@ -76,19 +76,19 @@ La première étape pour créer un jeu de combinaisons consiste à créer le pro
 
     Lorsque le TableLayoutPanel est sélectionné, ouvrez la boîte à outils et ajoutez un contrôle <xref:System.Windows.Forms.Label> (situé dans la catégorie **Contrôles communs**) dans la cellule supérieure gauche du TableLayoutPanel. Le contrôle d’étiquette doit maintenant être sélectionné dans l'IDE. Définissez les propriétés ci-dessous pour ce contrôle.
 
-   1.  Veillez à ce que la propriété **BackColor** du contrôle Label ait la valeur **CornflowerBlue**.
+   1. Veillez à ce que la propriété **BackColor** du contrôle Label ait la valeur **CornflowerBlue**.
 
-   2.  Affectez à la propriété **AutoSize** la valeur **False**.
+   2. Affectez à la propriété **AutoSize** la valeur **False**.
 
-   3.  Affectez la valeur **Fill** à la propriété **Dock**.
+   3. Affectez la valeur **Fill** à la propriété **Dock**.
 
-   4.  Affectez la valeur **MiddleCenter** à la propriété **TextAlign** en choisissant le bouton de liste déroulante en regard de la propriété, puis le bouton central. Cela garantit l'affichage de l'icône au milieu de la cellule.
+   4. Affectez la valeur **MiddleCenter** à la propriété **TextAlign** en choisissant le bouton de liste déroulante en regard de la propriété, puis le bouton central. Cela garantit l'affichage de l'icône au milieu de la cellule.
 
-   5.  Choisissez la propriété **Font**. Un bouton de sélection (**…**) doit s’afficher.
+   5. Choisissez la propriété **Font**. Un bouton de sélection (**…**) doit s’afficher.
 
-   6.  Choisissez le bouton de sélection, puis affectez la valeur **Webdings** à **Font**, la valeur **Bold** à **Font Style** et la valeur **48** à **Size**.
+   6. Choisissez le bouton de sélection, puis affectez la valeur **Webdings** à **Font**, la valeur **Bold** à **Font Style** et la valeur **48** à **Size**.
 
-   7.  Affectez la lettre **c** à la propriété **Text** du contrôle Label.
+   7. Affectez la lettre **c** à la propriété **Text** du contrôle Label.
 
         La cellule supérieure gauche dans le TableLayoutPanel doit désormais contenir un cadre noir centré sur un arrière-plan bleu.
 
@@ -106,6 +106,6 @@ La première étape pour créer un jeu de combinaisons consiste à créer le pro
 
 ## <a name="to-continue-or-review"></a>Pour continuer ou examiner
 
--   Pour passer à l’étape suivante du tutoriel, consultez [Étape 2 : Ajouter un objet aléatoire et une liste d’icônes](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
+- Pour passer à l’étape suivante du tutoriel, consultez [Étape 2 : Ajouter un objet aléatoire et une liste d’icônes](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).
 
--   Pour revenir à la rubrique de vue d’ensemble, consultez [Tutoriel 3 : Créer un jeu de combinaisons](../ide/tutorial-3-create-a-matching-game.md).
+- Pour revenir à la rubrique de vue d’ensemble, consultez [Tutoriel 3 : Créer un jeu de combinaisons](../ide/tutorial-3-create-a-matching-game.md).

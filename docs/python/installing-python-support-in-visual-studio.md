@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ce4963f753498ff4c43b92b0b59fbfae25a45315
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 53408ba2345c1bb7b3fc3f99939736c7a697d2df
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446635"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Guide pratique pour installer la prise en charge de Python dans Visual Studio sur Windows
 
@@ -53,6 +53,7 @@ Pour tester rapidement la prise en charge de Python après avoir suivi la procé
 
     > [!Note]
     > Les charges de travail Python et Science des données ne sont disponibles qu’avec Visual Studio 2017 version 15.2 et version ultérieure.
+
     ::: moniker-end
 
     ::: moniker range=">=vs-2019"

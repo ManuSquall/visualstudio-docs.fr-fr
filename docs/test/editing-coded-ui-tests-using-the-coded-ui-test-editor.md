@@ -12,11 +12,11 @@ ms.workload:
 - multiple
 author: gewarren
 ms.openlocfilehash: 88002f4187883d55f22ec9f3dc80f3ceb65e7e48
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956322"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62784420"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>Modifier des tests codés de l’interface utilisateur à l’aide de l’éditeur de test codé de l’interface utilisateur
 
@@ -59,7 +59,7 @@ Lorsque vous ouvrez le fichier *UIMap.uitest* affilié à votre test codé de l�
 
 Vous pouvez voir et modifier votre test codé de l'interface utilisateur Visual C# et Visual Basic à l’aide de l’**éditeur de test codé d’IU**.
 
-![Menu contextuel Édition avec le Générateur de test codé de l’interface utilisateur](../test/media/editcodeduitest.png)
+![Menu contextuel Édition avec le Générateur de test codé de l'IU](../test/media/editcodeduitest.png)
 
 Dans l’**Explorateur de solutions**, ouvrez le menu contextuel pour *UIMap.uitest* et choisissez **Ouvrir**. Le test codé de l’interface utilisateur s’affiche dans l’**éditeur de test codé d’IU**. Vous pouvez désormais afficher et modifier les méthodes enregistrées, les actions et les contrôles correspondants dans le test codé de l'interface utilisateur.
 
@@ -70,7 +70,7 @@ Dans l’**Explorateur de solutions**, ouvrez le menu contextuel pour *UIMap.uit
 
 À l'aide de l'éditeur de test codé de l'interface utilisateur, vous pouvez rapidement localiser et afficher toutes les actions d'interface utilisateur dans vos méthodes de test. Quand vous sélectionnez l'action d'interface utilisateur dans l'éditeur, le contrôle correspondant est automatiquement mis en surbrillance. De même, si vous sélectionnez un contrôle, les actions d'interface utilisateur associées sont mises en surbrillance. Quand vous sélectionnez un contrôle ou une action d'interface utilisateur, il est alors facile d'utiliser la fenêtre **Propriétés** pour modifier les propriétés qui lui correspondent.
 
-![Propriétés d’une action d’interface utilisateur](../test/media/codeduiedituiaction.png)
+![Propriétés de l'action d'IU](../test/media/codeduiedituiaction.png)
 
 Pour modifier les propriétés d'une action d'interface utilisateur, dans le volet **Action d'interface utilisateur** , développez la méthode de test qui contient une action d'interface utilisateur dont vous voulez modifier les propriétés, sélectionnez l'action d'interface utilisateur et modifiez les propriétés à l'aide de la fenêtre Propriétés.
 
@@ -94,7 +94,7 @@ Après avoir effectué vos modifications, enregistrez-les dans le fichier *UIMap
 
 - Parfois, il peut être difficile de visualiser l’emplacement des contrôles dans l’interface utilisateur de l’application testée. L'une des fonctionnalités de l'éditeur de test codé de l'interface utilisateur vous permet de sélectionner un contrôle répertorié dans le mappage de contrôle d'interface utilisateur et d'afficher son emplacement dans l'application testée. Pour plus d’informations, consultez [Localiser un contrôle d’IU dans l’application testée](#locate-a-ui-control-in-the-application-under-test) un peu plus loin dans cet article.
 
-- Il peut s’avérer nécessaire de développer le contrôle conteneur qui contient le contrôle à modifier. Pour plus d’informations, consultez [Localiser un contrôle et ses descendants](#locate-a-control-and-its-descendants) un peu plus loin dans cet article.
+- Il peut s'avérer nécessaire de développer le contrôle conteneur qui contient le contrôle à modifier. Pour plus d’informations, consultez [Localiser un contrôle et ses descendants](#locate-a-control-and-its-descendants) un peu plus loin dans cet article.
 
 ## <a name="delete-unwanted-ui-actions"></a>Supprimer les actions d'interface utilisateur inutiles
 
@@ -150,9 +150,9 @@ Pour annuler le déplacement, sélectionnez **Annuler** dans le menu **Edition**
 
 Parfois, il peut être difficile de visualiser l’emplacement des contrôles dans l’interface utilisateur de l’application testée. L'une des fonctionnalités de l'éditeur de test codé de l'interface utilisateur vous permet de sélectionner un contrôle répertorié dans le mappage de contrôle d'interface utilisateur et d'afficher son emplacement dans l'application testée. L'utilisation de la fonctionnalité **Localiser le contrôle IU** dans l'application testée peut également servir à vérifier les modifications de propriété de recherche que vous avez apportées à un contrôle.
 
-![Localiser un contrôle d’interface utilisateur](../test/media/codeduilocatecontrol.png)
+![Trouver un contrôle d'IU](../test/media/codeduilocatecontrol.png)
 
-![Contrôle trouvé dans l’application en cours de test](../test/media/codeduilocatecontrol2.png)
+![Contrôle trouvé dans l'application en cours de test](../test/media/codeduilocatecontrol2.png)
 
 Dans le volet **Mappage de contrôle d'interface utilisateur** , sélectionnez le contrôle à localiser dans l'application associée au test. Ensuite, ouvrez le menu contextuel du contrôle, puis choisissez **Localiser le contrôle IU**. Dans l'application testée, le contrôle est signalé par une bordure bleue.
 

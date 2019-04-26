@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5756047dc88dc01e044787cd5e3a71456e3e85c9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0d7640b4f846dd4fa5a9f8b16ead7019ca3ba821
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625008"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430939"
 ---
 # <a name="markprofile"></a>MarkProfile
 La méthode `MarkProfile` insère une marque de profil dans le fichier .*vsp*. Le profilage pour le thread contenant la fonction `MarkProfile` doit être activé pour la marque à insérer.
@@ -52,7 +52,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
  L’état du profilage du thread qui contient la fonction de profil de marque doit être Activé lors de l’insertion de marques et de commentaires avec la commande Mark ou des fonctions de l’API (CommentMarkAtProfile, CommentMarkProfile ou MarkProfile).
 
 > [!IMPORTANT]
->  La méthode MarkProfile doit être utilisé avec le profilage par instrumentation uniquement.
+> La méthode MarkProfile doit être utilisé avec le profilage par instrumentation uniquement.
 
 ## <a name="net-framework-equivalent"></a>Équivalent .NET Framework
  *Microsoft.VisualStudio.Profiler.dll*

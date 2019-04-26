@@ -9,11 +9,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: e053ee01d60d1ce3dcae10e044bb642e11f90dd7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963791"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>Configurer les retards de début de scénario dans les tests de charge
 
@@ -43,7 +43,7 @@ Vous pouvez spécifier un délai avant le début d’un scénario dans un test d
 
 1. Ouvrez un test de charge.
 
-     L'Éditeur de test de charge s'affiche. L’arborescence du test de charge s’affiche.
+     L'Éditeur de test de charge s'affiche. L'arborescence du test de charge s'affiche.
 
 2. Dans le dossier **Scénarios** des arborescences du test de charge, choisissez le nœud de scénario pour lequel vous souhaitez retarder l’heure de début.
 
@@ -71,7 +71,7 @@ La propriété **Désactiver pendant le préchauffage** est définie dans la fen
 
 1. Ouvrez un test de charge.
 
-     L’**éditeur de test de charge** s’affiche. L’arborescence du test de charge s’affiche.
+     L’**éditeur de test de charge** s’affiche. L'arborescence du test de charge s'affiche.
 
 2. Dans le dossier **Scénarios** des arborescences du test de charge, choisissez le nœud de scénario dont vous souhaitez modifier le comportement de préchauffage.
 

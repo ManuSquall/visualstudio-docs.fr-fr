@@ -1,52 +1,45 @@
-items:
 - name: Visual Studio Tools pour IA
   href: index.yml
   items:
-  - name: Vue d'ensemble
-    items:
-    - name: À propos de Visual Studio Tools pour l’IA
-      href: about-ai-tools.md
-  - name: Installation
-    href: installation.md
-  - name: Démarrages rapides
-    items:
-    - name: TensorFlow + Python
-      href: tensorflow-local.md
-  - name: Didacticiels
-    items:
-    - name: TensorFlow + Machine virtuelle d’apprentissage profond Azure
-      href: tensorflow-vm.md
-  - name: Guides pratiques
-    items:
-    - name: Créer un projet
+    - name: Vue d'ensemble
       items:
-      - name: Créer un projet à partir d’un exemple de galerie
-        href: create-project-gallery.md
-      - name: Créer un projet à partir d’un code existant
-        href: create-project-existing.md
-      - name: Créer un projet à partir d’un modèle
-        href: create-project.md
-      - name: Créer un projet à partir du référentiel GitHub
-        href: create-project-repo.md
-    - name: Entraîner un modèle
-      href: train-model.md
-    - name: Afficher les détails du travail
-      href: job-details.md
-    - name: Surveiller l’utilisation du GPU
-      href: monitor-gpu.md
-    - name: Surveiller TensorBoard
-      href: monitor-tensorboard.md
-    - name: Gérer le stockage
-      href: manage-storage.md
-  - name: Exemples
-    items:
-    - name: GitHub
-      href: https://github.com/Microsoft/samples-for-ai
-    - name: Galerie Machine Learning
-      href: https://gallery.cortanaintelligence.com/projects
-ms.openlocfilehash: 06ed7a4c59a97742f3055d0d5084f28f9022adc9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624384"
+        - name: À propos de Visual Studio Tools pour l’IA
+          href: about-ai-tools.md
+    - name: Installation
+      href: installation.md
+    - name: Démarrages rapides
+      items:
+        - name: TensorFlow + Python
+          href: tensorflow-local.md
+    - name: Didacticiels
+      items:
+        - name: TensorFlow + Machine virtuelle d’apprentissage profond Azure
+          href: tensorflow-vm.md
+    - name: Guides pratiques
+      items:
+        - name: Créer un projet
+          items:
+            - name: Créer un projet à partir d’un exemple de galerie
+              href: create-project-gallery.md
+            - name: Créer un projet à partir d’un code existant
+              href: create-project-existing.md
+            - name: Créer un projet à partir d’un modèle
+              href: create-project.md
+            - name: Créer un projet à partir du référentiel GitHub
+              href: create-project-repo.md
+        - name: Entraîner un modèle
+          href: train-model.md
+        - name: Afficher les détails du travail
+          href: job-details.md
+        - name: Surveiller l’utilisation du GPU
+          href: monitor-gpu.md
+        - name: Surveiller TensorBoard
+          href: monitor-tensorboard.md
+        - name: Gérer le stockage
+          href: manage-storage.md
+    - name: Exemples
+      items:
+        - name: GitHub
+          href: 'https://github.com/Microsoft/samples-for-ai'
+        - name: Galerie Machine Learning
+          href: 'https://gallery.cortanaintelligence.com/projects'

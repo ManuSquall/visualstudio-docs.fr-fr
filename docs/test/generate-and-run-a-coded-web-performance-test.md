@@ -14,12 +14,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f5c1a065d30f3925ba5c567d562d0138de8c5953
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a6f1c524b879d5d5476491a8979d86449f3d43c0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869274"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002548"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Générer et exécuter un test de performances de site Web codé
 
@@ -29,13 +29,13 @@ Les tests de performances web sont enregistrés lors de la navigation au sein de
 
 ## <a name="generate-a-coded-web-performance-test"></a>Générer un test de performances Web codé
 
-1.  Si vous n’avez pas créé un test de performances web, consultez [Enregistrer un test de performances web](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project).
+1. Si vous n’avez pas créé un test de performances web, consultez [Enregistrer un test de performances web](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project).
 
-2.  Générez le test codé.
+2. Générez le test codé.
 
      ![Générer un test de performances Web codé](../test/media/web_test_coded_generate.png)
 
-3.  Nommez le test.
+3. Nommez le test.
 
      ![Entrer un nom pour le test de performances web codé](../test/media/web_test_coded_generate_nametest.png)
 
@@ -47,7 +47,7 @@ Les tests de performances web sont enregistrés lors de la navigation au sein de
 
      Vous pouvez voir dans le code que la méthode GetRequestEnumerator() en C# ou la méthode Run() en Visual Basic contient chaque règle de validation et chaque requête web qui se trouvaient dans le test recodé.
 
-4.  Pour montrer comment ajouter du code simple, faites défiler le code jusqu'à la fin de la méthode et après le code de la dernière requête web, ajoutez le code suivant :
+4. Pour montrer comment ajouter du code simple, faites défiler le code jusqu'à la fin de la méthode et après le code de la dernière requête web, ajoutez le code suivant :
 
     ```c#
     if (DateTime.Today.DayOfWeek == DayOfWeek.Wednesday)
@@ -72,9 +72,9 @@ Les tests de performances web sont enregistrés lors de la navigation au sein de
     End If
     ```
 
-5.  Générez la solution pour vérifier que votre code personnalisé se compile.
+5. Générez la solution pour vérifier que votre code personnalisé se compile.
 
-6.  Exécutez le test.
+6. Exécutez le test.
 
      ![Exécuter le test de performances de site web codé](../test/media/web_test_coded_generate_run.png)
 

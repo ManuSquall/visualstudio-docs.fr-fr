@@ -7,12 +7,12 @@ ms.date: 03/15/2018
 ms.topic: conceptual
 description: Informations destinées aux fournisseurs de solutions cloud concernant l’achat et la gestion d’abonnements cloud Visual Studio pour vos clients.
 searchscope: VS Subscription
-ms.openlocfilehash: 59d61e687c061fffd2cc0a2b537364ca8b966271
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 6f5c760ad67fb92367f971b973f3af0ed6d41785
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978508"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>Acheter et gérer des abonnements cloud Visual Studio pour vos clients
 
@@ -20,10 +20,8 @@ Les partenaires du programme [Fournisseur de solutions Cloud](https://partner.mi
 
 [Comparer les options d’abonnement cloud](https://visualstudio.microsoft.com/vs/pricing)
 
-
 > [!NOTE]
 > Microsoft ne propose plus d’abonnements annuels Visual Studio Professional et Visual Studio Enterprise dans les abonnements cloud. L’expérience des clients n’en sera pas altérée ; il leur sera par ailleurs toujours possible de renouveler, d’augmenter, de diminuer ou d’annuler leur abonnement. Nous encourageons les nouveaux clients à accéder à [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) pour explorer les différentes options d’achat de Visual Studio.
-
 
 ## <a name="prerequisites"></a>Prérequis
 
@@ -84,7 +82,6 @@ Voici comment interpréter les différents éléments de cette feuille de calcul
 |-------------------|------------------------|---------------------------------------|-------------------------------------------------|
 | Visual Studio     | Entreprise             |  Abonnement                         | Abonnement mensuel à Visual Studio Enterprise   |
 | Visual Studio     | Professional           |  Abonnement                         | Abonnement mensuel à Visual Studio Professional |
-
 
 Nous offrons une remise de 5 % sur la sixième unité que vous achetez (pour un client donné) chaque mois pour chaque abonnement Visual Studio. C’est pourquoi il y a deux lignes pour chaque option d’abonnement. Une ligne affiche une « Valeur minimale » de 0, ce que vous devez interpréter comme prix de base pour les unités de 1 à 5. L’autre ligne affiche une « Valeur minimale » de 5. Il s’agit de la remise de 5 % qui s’applique aux unités 6 et plus.
 

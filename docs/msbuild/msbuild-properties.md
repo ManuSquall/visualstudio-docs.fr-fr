@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c194531c5436549efa06ca93e987e55739276926
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.openlocfilehash: e476876234c31009d219af30fbe3c9d1e55f3d96
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515205"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443597"
 ---
 # <a name="msbuild-properties"></a>MSBuild (propriétés)
 Les propriétés sont des paires nom-valeur qui peuvent être utilisées pour configurer des générations. Elles sont utiles pour transmettre des valeurs aux tâches, évaluer des conditions et stocker les valeurs qui seront référencées dans tout le fichier projet.
@@ -54,7 +54,7 @@ Les propriétés sont des paires nom-valeur qui peuvent être utilisées pour co
  Pour obtenir la valeur actuelle des variables d’environnement à partir d’un outil généré, utilisez les [fonctions de propriétés](../msbuild/property-functions.md) System.Environment.GetEnvironmentVariable. La méthode préférée est cependant d’utiliser le paramètre de tâche <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A>. Les propriétés d’environnement définies dans ce tableau de chaînes peuvent être transmises à l’outil généré sans affecter les variables d’environnement système.
 
 > [!TIP]
->  Toutes les variables d’environnement ne sont pas lues pour devenir des propriétés initiales. Une variable d’environnement dont le nom n’est pas un nom de propriété MSBuild valide, par exemple « 386 », est ignoré.
+> Toutes les variables d’environnement ne sont pas lues pour devenir des propriétés initiales. Une variable d’environnement dont le nom n’est pas un nom de propriété MSBuild valide, par exemple « 386 », est ignoré.
 
  Pour plus d'informations, voir [Procédure : Utiliser des variables d’environnement dans une build](../msbuild/how-to-use-environment-variables-in-a-build.md).
 
@@ -108,11 +108,11 @@ msbuild.exe MyProj.proj -p:Configuration=DEBUG
 ## <a name="create-properties-during-execution"></a>Créer des propriétés pendant l’exécution
  Des valeurs sont attribuées aux propriétés situées en dehors des éléments `Target` pendant la phase d’évaluation d’une génération. Pendant la phase d’exécution suivante, des propriétés peuvent être créées ou modifiées en procédant comme suit :
 
--   Une propriété peut être émise par une tâche quelconque. Pour émettre une propriété, l’élément [Task](../msbuild/task-element-msbuild.md) doit posséder un élément [Output](../msbuild/output-element-msbuild.md) enfant pourvu d’un attribut `PropertyName`.
+- Une propriété peut être émise par une tâche quelconque. Pour émettre une propriété, l’élément [Task](../msbuild/task-element-msbuild.md) doit posséder un élément [Output](../msbuild/output-element-msbuild.md) enfant pourvu d’un attribut `PropertyName`.
 
--   Une propriété peut être émise par la tâche [CreateProperty](../msbuild/createproperty-task.md). Cette utilisation est déconseillée.
+- Une propriété peut être émise par la tâche [CreateProperty](../msbuild/createproperty-task.md). Cette utilisation est déconseillée.
 
--   Depuis .NET Framework 3.5, les éléments `Target` peuvent contenir des éléments `PropertyGroup`, qui peuvent comporter des déclarations de propriété.
+- Depuis .NET Framework 3.5, les éléments `Target` peuvent contenir des éléments `PropertyGroup`, qui peuvent comporter des déclarations de propriété.
 
 ## <a name="store-xml-in-properties"></a>Stocker du code XML dans les propriétés
  Les propriétés peuvent contenir un code XML arbitraire, ce qui peut aider à transmettre des valeurs aux tâches ou à afficher les informations de journalisation. L’exemple suivant présente la propriété `ConfigTemplate`, qui est pourvue d’une valeur qui contient le code XML et d’autres références de propriété. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] remplace les références de propriété par leurs valeurs de propriété respectives. Les valeurs de propriété sont attribuées dans l’ordre dans lequel elles apparaissent. Par conséquent, dans cet exemple, les propriétés `$(MySupportedVersion)`, `$(MyRequiredVersion)` et `$(MySafeMode)` doivent déjà avoir été définies.

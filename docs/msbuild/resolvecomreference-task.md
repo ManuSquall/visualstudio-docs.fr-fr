@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86155da1a14516992841aa5e19de2606eb09fbd8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 123aa52b5062d8ac083f054074df2c65ba77f80d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639061"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431300"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference, tâche
 Prend une liste d’un ou plusieurs noms de bibliothèques de types ou de fichiers *.tlb* et résout ces bibliothèques de types aux emplacements sur le disque.
@@ -70,7 +70,7 @@ Prend une liste d’un ou plusieurs noms de bibliothèques de types ou de fichie
 |`WrapperTool`|Métadonnées d’élément facultatives.<br /><br /> Spécifie l’outil wrapper utilisé pour générer le wrapper d’assembly pour cette bibliothèque de types. Si ces métadonnées d’élément ne sont pas spécifiées, la tâche utilise « tlbimp » comme outil wrapper par défaut. Les choix disponibles (leur casse n’est pas prise en compte) sont :<br /><br /> -   `Primary` : utilisez cet outil wrapper quand vous voulez utiliser un assembly PIA (Primary Interop Assembly) déjà généré pour le composant COM. Quand vous utilisez cet outil wrapper, ne spécifiez pas un répertoire de sortie du wrapper, car cela provoquerait l’échec de la tâche.<br />-   `TLBImp` : utilisez cet outil wrapper quand vous voulez générer un assembly d’interopérabilité pour le composant COM.<br />-   `AXImp` : utilisez cet outil wrapper quand vous voulez générer un assembly d’interopérabilité pour un contrôle ActiveX.|
 
 > [!NOTE]
->  Plus vous fournissez d’informations pour identifier de façon univoque une bibliothèque de types, plus grande est la possibilité que la tâche aboutisse au fichier correct sur le disque.
+> Plus vous fournissez d’informations pour identifier de façon univoque une bibliothèque de types, plus grande est la possibilité que la tâche aboutisse au fichier correct sur le disque.
 
 ## <a name="remarks"></a>Remarques
  En plus des paramètres énumérés ci-dessus, cette tâche hérite des paramètres de la classe <xref:Microsoft.Build.Utilities.Task>. Pour obtenir la liste de ces paramètres supplémentaires et leurs descriptions, consultez [Classe de base de tâche](../msbuild/task-base-class.md).

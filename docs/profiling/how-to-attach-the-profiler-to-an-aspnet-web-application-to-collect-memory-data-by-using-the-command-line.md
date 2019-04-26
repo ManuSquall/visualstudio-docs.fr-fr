@@ -9,18 +9,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: e82e17a01e6cbfce82e270e25de16ee788a14878
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b6caca91849727fa21fec0401c776e4c80f9a6b3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614205"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439529"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Procédure : attacher le profileur à une application web ASP.NET pour collecter des données de mémoire en utilisant la ligne de commande
 Cet article explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour attacher le profileur à une application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] et collecter des données sur le nombre et la taille des allocations de mémoire du .NET Framework. Vous pouvez également collecter des données sur la durée de vie des objets en mémoire du .NET Framework.
 
 > [!NOTE]
->  Pour obtenir le chemin des outils de profilage, consultez [Spécifier le chemin des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.
+> Pour obtenir le chemin des outils de profilage, consultez [Spécifier le chemin des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.
 
  Pour collecter des données de performances auprès d’une application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], vous devez utiliser l’outil [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) pour initialiser les variables d’environnement appropriées sur l’ordinateur qui héberge l’application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)]. Vous devez ensuite redémarrer l’ordinateur pour configurer le serveur web pour le profilage.
 
@@ -38,7 +38,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
     **VSPerfClrEnv** {**/globalsamplegc** &#124; **/globalsamplegclife**} [**/samplelineoff**]
 
-   -   Les options **/globalsamplegc** et **/globalsamplegclife** spécifient le type de données de mémoire à collecter.
+   - Les options **/globalsamplegc** et **/globalsamplegclife** spécifient le type de données de mémoire à collecter.
 
         Spécifiez seulement une des options suivantes.
 
@@ -47,7 +47,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
        |**/globalsamplegc**|Active la collecte des données d’allocation de mémoire.|
        |**/globalsamplegclife**|Active à la fois la collecte des données d’allocation de mémoire et celle des données de durée de vie des objets.|
 
-   -   L’option **/samplelineoff** désactive l’affectation des données collectées à des lignes de code source spécifiques. Quand cette option est spécifiée, les données sont affectées seulement au niveau des fonctions.
+   - L’option **/samplelineoff** désactive l’affectation des données collectées à des lignes de code source spécifiques. Quand cette option est spécifiée, les données sont affectées seulement au niveau des fonctions.
 
 3. Redémarrez l’ordinateur pour définir la nouvelle configuration de l’environnement.
 
@@ -64,7 +64,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
      Vous pouvez utiliser l’une des options suivantes avec l’option **/start:sample**.
 
    > [!NOTE]
-   >  Les options **/user** et **/crosssession** sont généralement nécessaires pour les applications ASP.NET.
+   > Les options **/user** et **/crosssession** sont généralement nécessaires pour les applications ASP.NET.
 
    | Option | Description |
    | - | - |
@@ -74,7 +74,6 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Spécifie le compteur de performances Windows dont les données doivent être collectées au cours du profilage. |
    | [/automark](../profiling/automark.md) **:** `Interval` | À utiliser avec **/wincounter** uniquement. Spécifie le nombre de millisecondes écoulées entre les événements de collecte du compteur de performances Windows. La valeur par défaut est de 500 ms. |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Spécifie l’événement du Suivi d’événements pour Windows (ETW) qui doit être collecté au cours du profilage. Les événements ETW sont collectés dans un fichier séparé (.etl). |
-
 
 6. Démarrez l’application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] de manière habituelle.
 
@@ -91,7 +90,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
 #### <a name="to-start-and-stop-data-collection"></a>Pour démarrer et arrêter la collecte de données
 
--   Les paires d’options **VSPerfCmd** suivantes permettent de démarrer et d’arrêter la collecte des données. Spécifiez chaque option sur une ligne de commande distincte. Vous pouvez activer et désactiver la collecte de données à plusieurs reprises.
+- Les paires d’options **VSPerfCmd** suivantes permettent de démarrer et d’arrêter la collecte des données. Spécifiez chaque option sur une ligne de commande distincte. Vous pouvez activer et désactiver la collecte de données à plusieurs reprises.
 
     |Option|Description|
     |------------|-----------------|

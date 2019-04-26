@@ -1,152 +1,145 @@
-items:
 - name: Python dans Visual Studio
   href: index.yml
 - name: Vue d'ensemble
   items:
-  - name: Vue d’ensemble de la prise en charge de Python
-    href: overview-of-python-tools-for-visual-studio.md
-  - name: Présentation de l’IDE Visual Studio
-    href: visual-studio-ide.md
-  - name: Charge de travail Applications de science et analyse des données
-    href: data-science-and-analytical-applications-workload.md
+    - name: Vue d’ensemble de la prise en charge de Python
+      href: overview-of-python-tools-for-visual-studio.md
+    - name: Présentation de l’IDE Visual Studio
+      href: visual-studio-ide.md
+    - name: Charge de travail Applications de science et analyse des données
+      href: data-science-and-analytical-applications-workload.md
 - name: Installation
   href: installing-python-support-in-visual-studio.md
   items:
-  - name: Installer les interpréteurs Python
-    href: installing-python-interpreters.md
+    - name: Installer les interpréteurs Python
+      href: installing-python-interpreters.md
 - name: Démarrages rapides
   items:
-  - name: Créer une application web avec Flask
-    href: ../ide/quickstart-python.md
-    maintainContext: true
-  - name: Créer un projet à partir d’un modèle
-    href: quickstart-02-python-in-visual-studio-project-from-template.md
-  - name: Ouvrez et exécutez du code Python dans un dossier
-    href: quickstart-05-python-visual-studio-open-folder.md
-  - name: Créer un projet à partir d’un code existant
-    href: quickstart-01-python-in-visual-studio-project-from-existing-code.md
-  - name: Créer un projet à partir d’un référentiel
-    href: quickstart-03-python-in-visual-studio-project-from-repository.md
-  - name: Créer un projet à partir d’un modèle Cookiecutter
-    href: quickstart-04-python-in-visual-studio-project-from-cookiecutter.md
+    - name: Créer une application web avec Flask
+      href: ../ide/quickstart-python.md
+      maintainContext: true
+    - name: Créer un projet à partir d’un modèle
+      href: quickstart-02-python-in-visual-studio-project-from-template.md
+    - name: Ouvrez et exécutez du code Python dans un dossier
+      href: quickstart-05-python-visual-studio-open-folder.md
+    - name: Créer un projet à partir d’un code existant
+      href: quickstart-01-python-in-visual-studio-project-from-existing-code.md
+    - name: Créer un projet à partir d’un référentiel
+      href: quickstart-03-python-in-visual-studio-project-from-repository.md
+    - name: Créer un projet à partir d’un modèle Cookiecutter
+      href: quickstart-04-python-in-visual-studio-project-from-cookiecutter.md
 - name: Didacticiels
   items:
-  - name: Python dans Visual Studio
-    items:
-    - name: 0 - Installer la prise en charge de Python
-      href: tutorial-working-with-python-in-visual-studio-step-00-installation.md
-    - name: 1 - Créer un projet Python
-      href: tutorial-working-with-python-in-visual-studio-step-01-create-project.md
-    - name: 2 - Écriture et exécution de code
-      href: tutorial-working-with-python-in-visual-studio-step-02-writing-code.md
-    - name: 3 - Utilisation de la fenêtre REPL interactive
-      href: tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md
-    - name: 4 - Exécution de code dans le débogueur
-      href: tutorial-working-with-python-in-visual-studio-step-04-debugging.md
-    - name: 5 - Installation des packages et gestion des environnements Python
-      href: tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md
-    - name: 6 - Utilisation de Git
-      href: tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md
-  - name: En savoir plus sur Django dans Visual Studio
-    items:
-    - name: 1 - créer un projet et une solution
-      href: learn-django-in-visual-studio-step-01-project-and-solution.md
-    - name: 2 - créer une application Django
-      href: learn-django-in-visual-studio-step-02-create-an-app.md
-    - name: 3 - servir des fichiers statiques et ajouter des pages
-      href: learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md
-    - name: 4 - utiliser le modèle de projet Web Django
-      href: learn-django-in-visual-studio-step-04-full-django-project-template.md
-    - name: 5 - authentifier les utilisateurs
-      href: learn-django-in-visual-studio-step-05-django-authentication.md
-    - name: 6 - utiliser le modèle de projet Web de sondages Django
-      href: learn-django-in-visual-studio-step-06-polls-django-web-project-template.md
-  - name: En savoir plus sur Flask dans Visual Studio
-    items:
-    - name: 1 - créer un projet et une solution
-      href: learn-flask-visual-studio-step-01-project-solution.md
-    - name: 2 - créer une application Flask
-      href: learn-flask-visual-studio-step-02-create-app.md
-    - name: 3 - servir des fichiers statiques et ajouter des pages
-      href: learn-flask-visual-studio-step-03-serve-static-files-add-pages.md
-    - name: 4 - utiliser le modèle de projet web Flask
-      href: learn-flask-visual-studio-step-04-full-flask-project-template.md
-    - name: 5 - utiliser le modèle de projet web Flask de sondage
-      href: learn-flask-visual-studio-step-05-polls-flask-web-project-template.md
+    - name: Python dans Visual Studio
+      items:
+        - name: 0 - Installer la prise en charge de Python
+          href: tutorial-working-with-python-in-visual-studio-step-00-installation.md
+        - name: 1 - Créer un projet Python
+          href: tutorial-working-with-python-in-visual-studio-step-01-create-project.md
+        - name: 2 - Écriture et exécution de code
+          href: tutorial-working-with-python-in-visual-studio-step-02-writing-code.md
+        - name: 3 - Utilisation de la fenêtre REPL interactive
+          href: tutorial-working-with-python-in-visual-studio-step-03-interactive-repl.md
+        - name: 4 - Exécution de code dans le débogueur
+          href: tutorial-working-with-python-in-visual-studio-step-04-debugging.md
+        - name: 5 - Installation des packages et gestion des environnements Python
+          href: tutorial-working-with-python-in-visual-studio-step-05-installing-packages.md
+        - name: 6 - Utilisation de Git
+          href: tutorial-working-with-python-in-visual-studio-step-06-working-with-git.md
+    - name: En savoir plus sur Django dans Visual Studio
+      items:
+        - name: 1 - créer un projet et une solution
+          href: learn-django-in-visual-studio-step-01-project-and-solution.md
+        - name: 2 - créer une application Django
+          href: learn-django-in-visual-studio-step-02-create-an-app.md
+        - name: 3 - servir des fichiers statiques et ajouter des pages
+          href: learn-django-in-visual-studio-step-03-serve-static-files-and-add-pages.md
+        - name: 4 - utiliser le modèle de projet Web Django
+          href: learn-django-in-visual-studio-step-04-full-django-project-template.md
+        - name: 5 - authentifier les utilisateurs
+          href: learn-django-in-visual-studio-step-05-django-authentication.md
+        - name: 6 - utiliser le modèle de projet Web de sondages Django
+          href: learn-django-in-visual-studio-step-06-polls-django-web-project-template.md
+    - name: En savoir plus sur Flask dans Visual Studio
+      items:
+        - name: 1 - créer un projet et une solution
+          href: learn-flask-visual-studio-step-01-project-solution.md
+        - name: 2 - créer une application Flask
+          href: learn-flask-visual-studio-step-02-create-app.md
+        - name: 3 - servir des fichiers statiques et ajouter des pages
+          href: learn-flask-visual-studio-step-03-serve-static-files-add-pages.md
+        - name: 4 - utiliser le modèle de projet web Flask
+          href: learn-flask-visual-studio-step-04-full-flask-project-template.md
+        - name: 5 - utiliser le modèle de projet web Flask de sondage
+          href: learn-flask-visual-studio-step-05-polls-flask-web-project-template.md
 - name: Concepts
   items:
-  - name: Projets Python
-    href: managing-python-projects-in-visual-studio.md
-    items:
-    - name: Modèles de projets web
-      href: python-web-application-project-templates.md
-    - name: Modèle de projet web Django
-      href: python-django-web-application-project-template.md
-    - name: Modèle de service cloud Azure
-      href: python-azure-cloud-service-project-template.md
-  - name: Kit de développement logiciel (SDK) Azure pour Python
-    href: /python/azure/?view=azure-python
+    - name: Projets Python
+      href: managing-python-projects-in-visual-studio.md
+      items:
+        - name: Modèles de projets web
+          href: python-web-application-project-templates.md
+        - name: Modèle de projet web Django
+          href: python-django-web-application-project-template.md
+        - name: Modèle de service cloud Azure
+          href: python-azure-cloud-service-project-template.md
+    - name: Kit de développement logiciel (SDK) Azure pour Python
+      href: /python/azure/?view=azure-python
 - name: Guides pratiques
   items:
-  - name: Gérer des environnements Python
-    href: managing-python-environments-in-visual-studio.md
-    items:
-    - name: Sélectionner un interpréteur pour un projet
-      href: selecting-a-python-environment-for-a-project.md
-    - name: Utilisation de requirements.txt pour les dépendances
-      href: managing-required-packages-with-requirements-txt.md
-    - name: Chemins de recherche
-      href: search-paths.md
-    - name: Référence de la fenêtre Environnements
-      href: python-environments-window-tab-reference.md
-    - name: Configurer des applications web pour IIS
-      href: configure-web-apps-for-iis-windows.md
-  - name: Modifier le code Python
-    href: editing-python-code-in-visual-studio.md
-    items:
-    - name: Code du format
-      href: formatting-python-code.md
-    - name: Refactoriser du code
-      href: refactoring-python-code.md
-    - name: Utiliser PyLint
-      href: linting-python-code.md
-  - name: Définir des commandes de menu personnalisées
-    href: defining-custom-python-project-commands.md
-  - name: Interactive Python (REPL)
-    href: python-interactive-repl-in-visual-studio.md
-    items:
-    - name: Utilisation d’IPython REPL
-      href: interactive-repl-ipython.md
-  - name: Débogage
-    href: debugging-python-in-visual-studio.md
-    items:
-    - name: Débogage du code sur des ordinateurs distants Linux
-      href: debugging-python-code-on-remote-linux-machines.md
-  - name: Publication dans Azure App Service sur Linux
-    href: publishing-python-web-applications-to-azure-from-visual-studio.md
-  - name: Interaction avec C++
-    items:
-    - name: Création d’une extension C++ pour Python
-      href: working-with-c-cpp-python-in-visual-studio.md
-    - name: Débogage en mode mixte Python/C++
-      href: debugging-mixed-mode-c-cpp-python-in-visual-studio.md
-    - name: Symboles de débogage en mode mixte
-      href: debugging-symbols-for-mixed-mode-c-cpp-python.md
-  - name: Profilage
-    href: profiling-python-code-in-visual-studio.md
-  - name: Test unitaire
-    href: unit-testing-python-in-visual-studio.md
-  - name: Utilisation de l’extension Cookiecutter
-    href: using-python-cookiecutter-templates.md
+    - name: Gérer des environnements Python
+      href: managing-python-environments-in-visual-studio.md
+      items:
+        - name: Sélectionner un interpréteur pour un projet
+          href: selecting-a-python-environment-for-a-project.md
+        - name: Utilisation de requirements.txt pour les dépendances
+          href: managing-required-packages-with-requirements-txt.md
+        - name: Chemins de recherche
+          href: search-paths.md
+        - name: Référence de la fenêtre Environnements
+          href: python-environments-window-tab-reference.md
+        - name: Configurer des applications web pour IIS
+          href: configure-web-apps-for-iis-windows.md
+    - name: Modifier le code Python
+      href: editing-python-code-in-visual-studio.md
+      items:
+        - name: Code du format
+          href: formatting-python-code.md
+        - name: Refactoriser du code
+          href: refactoring-python-code.md
+        - name: Utiliser PyLint
+          href: linting-python-code.md
+    - name: Définir des commandes de menu personnalisées
+      href: defining-custom-python-project-commands.md
+    - name: Interactive Python (REPL)
+      href: python-interactive-repl-in-visual-studio.md
+      items:
+        - name: Utilisation d’IPython REPL
+          href: interactive-repl-ipython.md
+    - name: Débogage
+      href: debugging-python-in-visual-studio.md
+      items:
+        - name: Débogage du code sur des ordinateurs distants Linux
+          href: debugging-python-code-on-remote-linux-machines.md
+    - name: Publication dans Azure App Service sur Linux
+      href: publishing-python-web-applications-to-azure-from-visual-studio.md
+    - name: Interaction avec C++
+      items:
+        - name: Création d’une extension C++ pour Python
+          href: working-with-c-cpp-python-in-visual-studio.md
+        - name: Débogage en mode mixte Python/C++
+          href: debugging-mixed-mode-c-cpp-python-in-visual-studio.md
+        - name: Symboles de débogage en mode mixte
+          href: debugging-symbols-for-mixed-mode-c-cpp-python.md
+    - name: Profilage
+      href: profiling-python-code-in-visual-studio.md
+    - name: Test unitaire
+      href: unit-testing-python-in-visual-studio.md
+    - name: Utilisation de l’extension Cookiecutter
+      href: using-python-cookiecutter-templates.md
 - name: Référence
   items:
-  - name: Modèles d'élément
-    href: python-item-templates.md
-  - name: Options
-    href: python-support-options-and-settings-in-visual-studio.md
-ms.openlocfilehash: f9fc649b365f43cf50ec98b5a8059985ddd666a4
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57982855"
+    - name: Modèles d'élément
+      href: python-item-templates.md
+    - name: Options
+      href: python-support-options-and-settings-in-visual-studio.md

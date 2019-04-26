@@ -11,19 +11,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 7d5a8c7fdd6980ccfd04503a82c541794bc8177c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 79e8ad7842070d13941ad921ccb25ba502209eb0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605002"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405955"
 ---
 # <a name="collect-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line"></a>Collecter des données temporelles détaillées d’une application web ASP.NET en utilisant la méthode d’instrumentation du profileur à partir de la ligne de commande
 Cette section décrit les procédures et les options permettant de collecter des données de performances détaillées pour une application web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] à l’aide de l’outil en ligne de commande **VSPerfCmd** et de la méthode d’instrumentation.
 
 > [!NOTE]
->  L’outil **VSPerfCmd** vous permet d’accéder à l’intégralité des fonctionnalités des Outils de profilage, notamment la mise en suspens et la reprise du profilage, ainsi que la collecte de données supplémentaires auprès du processeur et des compteurs de performances Windows. Vous pouvez également utiliser l’outil en ligne de commande **VSPerfASPNETCmd** quand vous n’avez pas besoin de ces fonctionnalités. Par rapport à l’outil en ligne de commande [VSPerfCmd](../profiling/vsperfcmd.md), cet outil ne nécessite pas de définition de variables d’environnement, ni de redémarrage de l’ordinateur. Pour plus d’informations, consultez [Profilage de site web rapide avec VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).
-
+> L’outil **VSPerfCmd** vous permet d’accéder à l’intégralité des fonctionnalités des Outils de profilage, notamment la mise en suspens et la reprise du profilage, ainsi que la collecte de données supplémentaires auprès du processeur et des compteurs de performances Windows. Vous pouvez également utiliser l’outil en ligne de commande **VSPerfASPNETCmd** quand vous n’avez pas besoin de ces fonctionnalités. Par rapport à l’outil en ligne de commande [VSPerfCmd](../profiling/vsperfcmd.md), cet outil ne nécessite pas de définition de variables d’environnement, ni de redémarrage de l’ordinateur. Pour plus d’informations, consultez [Profilage de site web rapide avec VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).
 
 ## <a name="common-tasks"></a>Tâches courantes
 
@@ -32,9 +31,7 @@ Cette section décrit les procédures et les options permettant de collecter des
 |**Profiler des fichiers binaires compilés statiquement**|-   [Guide pratique pour instrumenter une application ASP.NET compilée statiquement et collecter des données de temporisation détaillées](../profiling/how-to-instrument-statically-compiled-aspnet-and-collect-detailed-timing-data.md)|
 |**Profiler des fichiers binaires compilés dynamiquement**|-   [Guide pratique pour instrumenter une application ASP.NET compilée dynamiquement et collecter des données de temporisation détaillées](../profiling/how-to-instrument-a-dynamically-compiled-aspnet-app-and-collect-timing-data.md)|
 
-
 ## <a name="related-tasks"></a>Tâches connexes
-
 
 ### <a name="profile-aspnet-web-applications"></a>Profiler des applications web ASP.NET
 

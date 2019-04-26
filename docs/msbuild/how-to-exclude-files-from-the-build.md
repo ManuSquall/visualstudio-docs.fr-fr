@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2df391440e8fe175b86a37cd02d0aec8fee372e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e16b11d2c54c500bc2b4e7d52e0bc5a46492ab5e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603168"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446558"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>Procédure : Exclure des fichiers de la build
 Dans un fichier projet, vous pouvez utiliser des caractères génériques pour inclure tous les fichiers d’un répertoire ou un ensemble imbriqué de répertoires comme des entrées d’une génération. Toutefois, il se peut que vous ne souhaitiez pas inclure un fichier du répertoire ou un répertoire d’un ensemble imbriqué de répertoires comme entrée d’une génération. Vous pouvez explicitement exclure ce fichier ou ce répertoire de la liste d’entrées. Il peut également s’agir d’un fichier d’un projet que vous ne souhaitez inclure que dans certaines conditions. Vous pouvez déclarer explicitement les conditions dans lesquelles un fichier est inclus dans une génération.
@@ -36,7 +36,7 @@ Dans un fichier projet, vous pouvez utiliser des caractères génériques pour i
 
 #### <a name="to-include-all-cs-or-vb-files-except-form2"></a>Pour inclure tous les fichiers *.cs* ou *.vb* à l’exception de *Form2*
 
--   Utilisez l’un des attributs `Include` et `Exclude` suivants :
+- Utilisez l’un des attributs `Include` et `Exclude` suivants :
 
     ```xml
     <CSFile Include="*.cs" Exclude="Form2.cs"/>
@@ -50,7 +50,7 @@ Dans un fichier projet, vous pouvez utiliser des caractères génériques pour i
 
 #### <a name="to-include-all-cs-or-vb-files-except-form2-and-form3"></a>Pour inclure tous les fichiers *.cs* ou *.vb* à l’exception de *Form2* et *Form3*
 
--   Utilisez l’un des attributs `Include` et `Exclude` suivants :
+- Utilisez l’un des attributs `Include` et `Exclude` suivants :
 
     ```xml
     <CSFile Include="*.cs" Exclude="Form2.cs;Form3.cs"/>
@@ -64,7 +64,7 @@ Dans un fichier projet, vous pouvez utiliser des caractères génériques pour i
 
 #### <a name="to-include-all-jpg-files-in-subdirectories-of-the-images-directory-except-those-in-the-version2-directory"></a>Pour inclure tous les fichiers *.jpg* des sous-répertoires du répertoire *Images*, à l’exception de ceux du répertoire *Version2*
 
--   Utilisez les attributs `Include` et `Exclude` suivants :
+- Utilisez les attributs `Include` et `Exclude` suivants :
 
     ```xml
     <JPGFile
@@ -73,14 +73,14 @@ Dans un fichier projet, vous pouvez utiliser des caractères génériques pour i
     ```
 
     > [!NOTE]
-    >  Vous devez spécifier le chemin d’accès pour les deux attributs. Si vous utilisez un chemin d’accès absolu pour spécifier les emplacements des fichiers dans l’attribut `Include`, vous devez également utiliser un chemin d’accès absolu dans l’attribut `Exclude` ; si vous utilisez un chemin d’accès relatif dans l’attribut `Include`, vous devez également utiliser un chemin d’accès relatif dans l’attribut `Exclude`.
+    > Vous devez spécifier le chemin d’accès pour les deux attributs. Si vous utilisez un chemin d’accès absolu pour spécifier les emplacements des fichiers dans l’attribut `Include`, vous devez également utiliser un chemin d’accès absolu dans l’attribut `Exclude` ; si vous utilisez un chemin d’accès relatif dans l’attribut `Include`, vous devez également utiliser un chemin d’accès relatif dans l’attribut `Exclude`.
 
 ## <a name="use-conditions-to-exclude-a-file-or-directory-from-the-inputs-for-a-build"></a>Utiliser des conditions pour exclure un fichier ou un répertoire des entrées d’une build
  Si vous souhaitez inclure des éléments, par exemple, dans une version Debug, mais pas dans une version Release, vous pouvez utiliser l’attribut `Condition` pour spécifier les conditions dans lesquelles inclure l’élément.
 
 #### <a name="to-include-the-file-formulavb-only-in-release-builds"></a>Pour inclure le fichier *Formula.vb* uniquement dans les versions Release
 
--   Utilisez un attribut `Condition` semblable à ce qui suit :
+- Utilisez un attribut `Condition` semblable à ce qui suit :
 
     ```xml
     <Compile
@@ -100,7 +100,7 @@ Dans un fichier projet, vous pouvez utiliser des caractères génériques pour i
     </PropertyGroup>
 
     <ItemGroup>
-        <CSFile Include="*.cs Exclude="Form2.cs"/>
+        <CSFile Include="*.cs" Exclude="Form2.cs"/>
 
         <Reference Include="System.dll"/>
         <Reference Include="System.Data.dll"/>

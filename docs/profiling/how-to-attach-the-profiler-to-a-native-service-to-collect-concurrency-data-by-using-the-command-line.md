@@ -8,21 +8,21 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f517d4cf412367775f78453a748a76c756feee28
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d6a937f2aad5a9414da92a29def972ea3dd7c8e5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624267"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439567"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-concurrency-data-by-using-the-command-line"></a>Procédure : Attacher le profileur à un service natif pour collecter des données concurrentielles en utilisant la ligne de commande
 Cet article explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour attacher le profileur à un service natif (C/C++) et collecter des données de concurrence sur les processus et les threads à l’aide de la méthode d’échantillonnage.
 
 > [!NOTE]
->  Les fonctionnalités de sécurité renforcée de Windows 8 et Windows Server 2012 ont imposé des changements importants dans la façon dont le profileur Visual Studio collecte les données sur ces plateformes. Les applications UWP nécessitent aussi de nouvelles techniques de collecte. Consultez [Outils d’analyse des performances sur les applications Windows 8 et Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+> Les fonctionnalités de sécurité renforcée de Windows 8 et Windows Server 2012 ont imposé des changements importants dans la façon dont le profileur Visual Studio collecte les données sur ces plateformes. Les applications UWP nécessitent aussi de nouvelles techniques de collecte. Consultez [Outils d’analyse des performances sur les applications Windows 8 et Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
 > [!NOTE]
->  Pour obtenir le chemin d’accès des outils de profilage, voir [Spécifier le chemin d’accès des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.
+> Pour obtenir le chemin d’accès des outils de profilage, voir [Spécifier le chemin d’accès des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.
 
  Lorsque le profileur est attaché au service, vous pouvez suspendre et reprendre la collecte de données. Pour permettre l’arrêt d’une session de profilage, le profileur ne doit plus être attaché au service. Profiler doit être arrêté explicitement.
 
@@ -42,7 +42,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
      Vous pouvez utiliser l’une des options du tableau suivant avec l’option **/start**.
 
    > [!NOTE]
-   >  La plupart des services nécessitent les options **/user** et **/crosssession**.
+   > La plupart des services nécessitent les options **/user** et **/crosssession**.
 
    | Option | Description |
    | - | - |
@@ -51,7 +51,6 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Spécifie le compteur de performances Windows dont les données doivent être collectées au cours du profilage. |
    | [/automark](../profiling/automark.md) **:** `Interval` | À utiliser avec **/wincounter** uniquement. Spécifie le nombre de millisecondes écoulées entre les événements de collecte du compteur de performances Windows. La valeur par défaut est de 500 ms. |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Spécifie l’événement du Suivi d’événements pour Windows (ETW) qui doit être collecté au cours du profilage. Les événements ETW sont collectés dans un fichier séparé (.etl). |
-
 
 3. Attachez le profileur au service en tapant la commande suivante dans la fenêtre d’invite de commandes :
 
@@ -64,7 +63,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
 #### <a name="to-start-and-stop-data-collection"></a>Pour démarrer et arrêter la collecte de données
 
--   Les paires d’options du tableau suivant permettent de démarrer et d’arrêter la collecte des données. Spécifiez chaque option sur une ligne de commande distincte. Vous pouvez activer et désactiver la collecte de données à plusieurs reprises.
+- Les paires d’options du tableau suivant permettent de démarrer et d’arrêter la collecte des données. Spécifiez chaque option sur une ligne de commande distincte. Vous pouvez activer et désactiver la collecte de données à plusieurs reprises.
 
     |Option|Description|
     |------------|-----------------|
@@ -77,10 +76,10 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
 #### <a name="to-end-a-profiling-session"></a>Pour terminer une session de profilage
 
-1.  Détachez le profileur de l’application cible en arrêtant le service ou en tapant la commande suivante dans la fenêtre d’invite de commandes :
+1. Détachez le profileur de l’application cible en arrêtant le service ou en tapant la commande suivante dans la fenêtre d’invite de commandes :
 
      Tapez **VSPerfCmd /detach**
 
-2.  Fermez le profileur en tapant ce qui suit à l’invite de commandes :
+2. Fermez le profileur en tapant ce qui suit à l’invite de commandes :
 
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)

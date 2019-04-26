@@ -10,12 +10,12 @@ ms.assetid: 499aca80-1069-408d-ac68-326da6a50645
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8390808a8174d0abb2dec96beddb473a4fbc0e0b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 40ce0d5d4c1988e40a7b7530b61fcfbaa1f7131d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932701"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950283"
 ---
 # <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>Procédure : ajouter des ensembles de compteurs personnalisés à l’aide de l’éditeur de test de charge
 
@@ -32,16 +32,16 @@ Vous gérez vos compteurs dans l’**éditeur de test de charge**. Les ensembles
 
 ## <a name="to-add-a-custom-counter-set-to-a-load-test"></a>Pour ajouter un ensemble de compteurs personnalisé à un test de charge
 
-1.  Ouvrez un test de charge.
+1. Ouvrez un test de charge.
 
-2.  Développez le nœud **Ensembles de compteurs**. Tous les ensembles de compteurs qui ont été ajoutés au test de charge sont visibles.
+2. Développez le nœud **Ensembles de compteurs**. Tous les ensembles de compteurs qui ont été ajoutés au test de charge sont visibles.
 
-3.  Cliquez avec le bouton droit sur le nœud **Ensembles de compteurs**, puis sélectionnez **Ajouter un ensemble de compteurs personnalisés**.
+3. Cliquez avec le bouton droit sur le nœud **Ensembles de compteurs**, puis sélectionnez **Ajouter un ensemble de compteurs personnalisés**.
 
     > [!NOTE]
     > L’ensemble de compteurs se voit attribuer un nom par défaut, par exemple **Personnalisé1**. Vous pouvez changer le nom dans la fenêtre **Propriétés**. Appuyez sur **F4** pour afficher la fenêtre **Propriétés**.
 
-4.  Pour ajouter des compteurs à votre ensemble de compteurs personnalisés, cliquez avec le bouton droit sur le nouvel ensemble de compteurs, puis choisissez **Ajouter des compteurs**. Pour plus d’informations sur l’ajout de compteurs, consultez [Guide pratique pour ajouter des compteurs à des ensembles de compteurs](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md).
+4. Pour ajouter des compteurs à votre ensemble de compteurs personnalisés, cliquez avec le bouton droit sur le nouvel ensemble de compteurs, puis choisissez **Ajouter des compteurs**. Pour plus d’informations sur l’ajout de compteurs, consultez [Guide pratique pour ajouter des compteurs à des ensembles de compteurs](../test/how-to-add-counters-to-counter-sets-using-the-load-test-editor.md).
 
     > [!NOTE]
     > Il est également possible d'ajouter un ensemble de compteurs personnalisé en cliquant avec le bouton droit sur un ensemble de compteurs existant, en choisissant Copier et en le collant ensuite dans le nœud des ensembles de compteurs. Il est possible de supprimer les compteurs supplémentaires copiés, mais inutiles. Vous pouvez changer le nom du nouvel ensemble de compteurs en utilisant la fenêtre **Propriétés**.

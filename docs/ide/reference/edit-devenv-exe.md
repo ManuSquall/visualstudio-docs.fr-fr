@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 26433d62a68b28450a56eee1282376733acfe55c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838800"
 ---
 # <a name="edit-devenvexe"></a>/Edit (devenv.exe)
 
@@ -39,7 +39,7 @@ devenv /Edit [File1[ FileN]...]
 
   Optionnel. Un ou plusieurs fichiers supplémentaires à ouvrir dans l’instance existante de Visual Studio.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Remarques
 
 Si aucun fichier n’est spécifié, une instance existante de Visual Studio reçoit le focus. S’il n’existe pas non plus d’instances de Visual Studio, l’outil crée une instance avec une disposition de fenêtre simplifiée.
 

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a1f001b73b97723db177706b6625cbfa827bc2a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 88d0eb1e4daa3e68468165589830ecf60a218da5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386804"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>Procédure : Référencer le nom ou l’emplacement du fichier projet
 Vous pouvez utiliser le nom ou l’emplacement du projet dans le fichier projet sans avoir à créer votre propre propriété. [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] fournit des propriétés réservées qui référencent le nom du fichier projet et d’autres propriétés associées au projet. Pour plus d’informations sur les propriétés réservées, consultez [MSBuild, propriétés réservées et connues](../msbuild/msbuild-reserved-and-well-known-properties.md).
@@ -42,7 +42,7 @@ Vous pouvez utiliser le nom ou l’emplacement du projet dans le fichier projet 
   L’un des avantages liés à l’utilisation d’une propriété réservée est que les modifications apportées au nom du fichier projet sont incorporées automatiquement. À la prochaine génération du projet, le fichier de sortie dispose du nouveau nom sans aucune intervention supplémentaire de votre part.
 
 > [!NOTE]
->  Les propriétés réservées ne peuvent pas être redéfinies dans le fichier projet.
+> Les propriétés réservées ne peuvent pas être redéfinies dans le fichier projet.
 
 ## <a name="example"></a>Exemple
  L’exemple de fichier projet suivant référence le nom du projet en tant que propriété réservée pour spécifier le nom de la sortie.

@@ -8,12 +8,12 @@ ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 487af3eb2a2cce1c68a94b996f371ab1c491e4c5
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 517d4e0558aeca1518316520191ae6c662b41a9e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950717"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Procédure : Créer un adaptateur de données de diagnostic
 
@@ -54,19 +54,19 @@ Pour obtenir un exemple complet de projet d’adaptateur de données de diagnost
 
 2. Ajoutez l’assembly **Microsoft.VisualStudio.QualityTools.ExecutionCommon**.
 
-   1.  Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur **Références**, puis sélectionnez la commande **Ajouter une référence**.
+   1. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur **Références**, puis sélectionnez la commande **Ajouter une référence**.
 
-   2.  Choisissez **.NET** et recherchez **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
+   2. Choisissez **.NET** et recherchez **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
 
-   3.  Cliquez sur **OK**.
+   3. Cliquez sur **OK**.
 
 3. Ajoutez l’assembly **Microsoft.VisualStudio.QualityTools.Common**.
 
-   1.  Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur **Références**, puis sélectionnez la commande **Ajouter une référence**.
+   1. Dans **l’Explorateur de solutions**, cliquez avec le bouton droit sur **Références**, puis sélectionnez la commande **Ajouter une référence**.
 
-   2.  Choisissez **/.NET** et recherchez **Microsoft.VisualStudio.QualityTools.Common.dll**.
+   2. Choisissez **/.NET** et recherchez **Microsoft.VisualStudio.QualityTools.Common.dll**.
 
-   3.  Cliquez sur **OK**.
+   3. Cliquez sur **OK**.
 
 4. Ajoutez les instructions `using` suivantes à votre fichier de classe :
 

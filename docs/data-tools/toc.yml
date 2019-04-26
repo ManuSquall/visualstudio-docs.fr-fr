@@ -112,7 +112,7 @@
             - name: Enregistrer des données à l’aide d’une transaction
               href: save-data-by-using-a-transaction.md
               items:
-                - name: "Procédure pas à pas\_: enregistrer des données dans une transaction"
+                - name: "Procédure pas à pas\_: Enregistrer des données dans une transaction"
                   href: save-data-in-a-transaction.md
             - name: Enregistrer des données dans une base de données (plusieurs tables)
               href: save-data-to-a-database-multiple-tables.md
@@ -229,7 +229,7 @@
               href: this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods.md
             - name: Un ou plusieurs éléments sélectionnés contient un type de données non pris en charge par le concepteur
               href: one-or-more-selected-items-contain-a-data-type-that-is-not-supported-by-the-designer.md
-            - name: Impossible d’annuler la modification du type de retour d’une méthode DataContext
+            - name: Impossible d'annuler la modification du type de retour d'une méthode DataContext
               href: changing-the-return-type-of-a-datacontext-method-cannot-be-undone.md
             - name: Le concepteur ne peut pas être modifié lors du débogage
               href: the-designer-cannot-be-modified-while-debugging.md

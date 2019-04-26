@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b8ffac5d508f8b46df827876a4568fbfba5929b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 5ac3b886fec1ab2135dd74b24b7d2fe3284249f8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645899"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386720"
 ---
 # <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>Procédure : Instrumenter une application web ASP.NET compilée statiquement et collecter des données de mémoire en utilisant la ligne de commande du profileur
 Cet article explique comment utiliser les outils en ligne de commande des Outils de profilage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pour instrumenter un composant web ou un site web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] précompilé, et pour collecter des données d’allocation de mémoire .NET, des données de durée de vie des objets et des données chronologiques détaillées.
 
 > [!NOTE]
->  Pour obtenir le chemin des outils de profilage, consultez [Spécifier le chemin des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.
+> Pour obtenir le chemin des outils de profilage, consultez [Spécifier le chemin des outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Les versions 64 bits et 32 bits des outils sont disponibles sur les ordinateurs 64 bits. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes, ou l’ajouter à la commande.
 
  Pour collecter des données d’un composant web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] avec la méthode d’instrumentation, vous utilisez l’outil [VSInstr.exe](../profiling/vsinstr.md) pour générer une version instrumentée du composant. Sur l’ordinateur qui héberge le composant, vous remplacez la version non instrumentée du composant par la version instrumentée. Vous utilisez ensuite l’outil [VSPerfCLREnv.cmd](../profiling/vsperfclrenv.md) pour initialiser les variables d’environnement de profilage globales et redémarrer l’ordinateur hôte. Vous démarrez ensuite le profileur.
 
@@ -43,9 +43,9 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
     **VSPerfClrEnv /globaltracegclife**
 
-   -   **/globaltracegc** collecte les données chronologiques et d’allocation de mémoire .NET.
+   - **/globaltracegc** collecte les données chronologiques et d’allocation de mémoire .NET.
 
-   -   **/globaltracegclife** collecte les données chronologiques, d’allocation de mémoire .NET. et de durée de vie des objets.
+   - **/globaltracegclife** collecte les données chronologiques, d’allocation de mémoire .NET. et de durée de vie des objets.
 
 4. Redémarrez l'ordinateur.
 
@@ -62,7 +62,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
      Vous pouvez utiliser l’une des options suivantes avec l’option **/start:trace**.
 
    > [!NOTE]
-   >  Les options **/user** et **/crosssession** sont généralement nécessaires pour les applications ASP.NET.
+   > Les options **/user** et **/crosssession** sont généralement nécessaires pour les applications ASP.NET.
 
    | Option | Description |
    | - | - |
@@ -73,7 +73,6 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Spécifie l’événement du Suivi d’événements pour Windows (ETW) qui doit être collecté au cours du profilage. Les événements ETW sont collectés dans un fichier séparé (.etl). |
    | [/globaloff](../profiling/globalon-and-globaloff.md) | Pour démarrer le profileur après avoir suspendu la collecte de données, ajoutez l’option **/globaloff** sur la ligne de commande **/start**. Utilisez **/globalon** pour reprendre le profilage. |
 
-
 7. Ouvrez le site web qui contient le composant instrumenté.
 
 ## <a name="control-data-collection"></a>Contrôler la collecte des données
@@ -81,7 +80,7 @@ Cet article explique comment utiliser les outils en ligne de commande des Outils
 
 #### <a name="to-start-and-stop-data-collection"></a>Pour démarrer et arrêter la collecte de données
 
--   Les paires d’options suivantes permettent de démarrer et d’arrêter la collecte des données. Spécifiez chaque option sur une ligne de commande distincte. Vous pouvez activer et désactiver la collecte de données à plusieurs reprises.
+- Les paires d’options suivantes permettent de démarrer et d’arrêter la collecte des données. Spécifiez chaque option sur une ligne de commande distincte. Vous pouvez activer et désactiver la collecte de données à plusieurs reprises.
 
     |Option|Description|
     |------------|-----------------|

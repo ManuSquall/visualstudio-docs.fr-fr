@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0b668f0331345e6a1022ef79105614f4a22e91d9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830076"
 ---
 # <a name="message-markers"></a>Marqueurs de messages
 Un jeton de message représente une sortie de journal. Un message est une chaîne émise par un thread spécifique à un moment donné. Vous pouvez exporter des messages vers un fichier texte en vue de les utiliser avec d’autres outils. Vous pouvez placer le pointeur sur un message dans le visualiseur concurrentiel pour afficher la chaîne du message. Vous pouvez aussi afficher tous les marqueurs de message dans le [rapport Marqueurs](../profiling/markers-report.md).  L’illustration suivante présente un marqueur de message.
