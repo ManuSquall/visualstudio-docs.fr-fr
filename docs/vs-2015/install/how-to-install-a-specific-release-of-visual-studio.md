@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: fdf7417364d834b00369e211f584caa2ab4cbdf5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: dde0cefabf0523484ad76ac56f7f2760de8c7acc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433078"
 ---
 # <a name="how-to-install-a-specific-release-of-visual-studio"></a>Procédure : installation d’une mise en production spécifique de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Nous mettons souvent à jour le programme d’installation de Visual Studio pour
 |Visual Studio Enterprise (version RTM initiale sans mises à jour)|Visual Studio Enterprise RTM (disponible à partir de la [page de téléchargement des abonnements MSDN](https://msdn.microsoft.com/subscriptions/downloads/))|`vs_enterprise.exe /OverrideFeedURI https://download.microsoft.com/download/5/7/B/57BF5016-E4F0-4EB5-BE27-2BFA87E7723F/20150713.1/enu/feed.xml`|Le programme d’installation de Visual Studio utilise le fichier feed.xml qui était disponible lors de la mise en production de RTM|
 
 > [!IMPORTANT]
->  Pour changer la langue de l’installation, remplacez la chaîne « enu » (correspondant à l’anglais) par l’une des valeurs suivantes :
+> Pour changer la langue de l’installation, remplacez la chaîne « enu » (correspondant à l’anglais) par l’une des valeurs suivantes :
 >
 > - chs (chinois simplifié)
 >   - cht (chinois traditionnel)

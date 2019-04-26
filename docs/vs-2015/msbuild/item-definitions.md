@@ -11,12 +11,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 83c2de11e31dced3be48e390d8bd5b21d57d2092
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a9298f57e3b1f4a05effcb82a39e14503c9cbf74
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668492"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090757"
 ---
 # <a name="item-definitions"></a>Définitions d'éléments
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,15 +25,15 @@ ms.locfileid: "59668492"
   
  L’élément *ItemDefinitionGroup* apparaît immédiatement après l’élément [Project](../msbuild/project-element-msbuild.md) du fichier projet. Les définitions d’élément offrent les fonctionnalités suivantes :  
   
--   Vous pouvez définir des métadonnées par défaut globales pour les éléments en dehors d’une cible. Autrement dit, les mêmes métadonnées s’appliquent à tous les éléments du type spécifié.  
+- Vous pouvez définir des métadonnées par défaut globales pour les éléments en dehors d’une cible. Autrement dit, les mêmes métadonnées s’appliquent à tous les éléments du type spécifié.  
   
--   Les types d’éléments peuvent avoir plusieurs définitions. Quand des spécifications de métadonnées supplémentaires sont ajoutées au type, la dernière spécification est prioritaire. \(Les métadonnées suivent le même ordre d’importation que celui des propriétés.\)  
+- Les types d’éléments peuvent avoir plusieurs définitions. Quand des spécifications de métadonnées supplémentaires sont ajoutées au type, la dernière spécification est prioritaire. \(Les métadonnées suivent le même ordre d’importation que celui des propriétés.\)  
   
--   Les métadonnées peuvent être additionnées. Par exemple, les valeurs CDefines sont cumulées conditionnellement, en fonction des propriétés qui sont définies. Par exemple, `MT;STD_CALL;DEBUG;UNICODE`.  
+- Les métadonnées peuvent être additionnées. Par exemple, les valeurs CDefines sont cumulées conditionnellement, en fonction des propriétés qui sont définies. Par exemple, `MT;STD_CALL;DEBUG;UNICODE`.  
   
--   Les métadonnées peuvent être supprimées.  
+- Les métadonnées peuvent être supprimées.  
   
--   Des conditions peuvent être utilisées pour contrôler l’inclusion de métadonnées.  
+- Des conditions peuvent être utilisées pour contrôler l’inclusion de métadonnées.  
   
 ## <a name="item-metadata-default-values"></a>Valeurs par défaut des métadonnées d’éléments  
  Les métadonnées d’éléments qui sont définies dans un ItemDefinitionGroup sont simplement une déclaration de métadonnées par défaut. Les métadonnées ne s’applique pas sauf si vous définissez un élément qui utilise un ItemGroup pour contenir les valeurs des métadonnées.  
@@ -66,21 +66,21 @@ ms.locfileid: "59668492"
 ## <a name="value-sources"></a>Sources des valeurs  
  Les valeurs pour les métadonnées définies dans un ItemDefinitionGroup peuvent provenir de nombreuses sources différentes, comme suit :  
   
--   Propriété PropertyGroup  
+- Propriété PropertyGroup  
   
--   Élément d’un ItemDefinitionGroup  
+- Élément d’un ItemDefinitionGroup  
   
--   Transformation d’élément sur un élément ItemDefinitionGroup  
+- Transformation d’élément sur un élément ItemDefinitionGroup  
   
--   Variable d’environnement  
+- Variable d’environnement  
   
--   Propriété globale \(de la ligne de commande MSBuild.exe\)  
+- Propriété globale \(de la ligne de commande MSBuild.exe\)  
   
--   Propriété réservée  
+- Propriété réservée  
   
--   Métadonnées bien connues sur un élément d’un ItemDefinitionGroup  
+- Métadonnées bien connues sur un élément d’un ItemDefinitionGroup  
   
--   Section CDATA \< \! \[CDATA\[rien ici n’est pas analysé\]\]\>  
+- Section CDATA \< \! \[CDATA\[rien ici n’est pas analysé\]\]\>  
   
 > [!NOTE]
 >  Les métadonnées d’élément d’un ItemGroup ne sont pas utiles dans une déclaration de métadonnées ItemDefinitionGroup, car les éléments ItemDefinitionGroup sont traités avant les éléments ItemGroup.  

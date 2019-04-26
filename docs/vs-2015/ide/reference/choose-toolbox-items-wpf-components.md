@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4cbfaea72633f6f4bbeb7da3bf6e7c02069889f9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0d4ebb383e7dfb18ed4e119e9b34111ac809e2a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647700"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433689"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Choisir des éléments de boîte à outils, Composants WPF
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,12 +29,12 @@ Cet onglet de la boîte de dialogue **Choisir des éléments de boîte à outils
 - Lorsque la case en regard d’un composant est cochée, une icône de ce composant s’affiche dans la **boîte à outils**.  
   
   > [!TIP]
-  >  Pour ajouter une instance d’un contrôle WPF à un document de projet ouvert pour modification, faites glisser son icône de **boîte à outils** vers le mode Création. Le balisage et le code par défaut du composant sont insérés dans votre projet, prêts à être modifiés. Pour plus d’informations, consultez [Comment : gérer la fenêtre Boîte à outils](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) et [Comment : manipuler des onglets de boîte à outils](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
+  > Pour ajouter une instance d’un contrôle WPF à un document de projet ouvert pour modification, faites glisser son icône de **boîte à outils** vers le mode Création. Le balisage et le code par défaut du composant sont insérés dans votre projet, prêts à être modifiés. Pour plus d’informations, consultez [Comment : gérer la fenêtre Boîte à outils](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) et [Comment : manipuler des onglets de boîte à outils](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
   
 - Lorsque la case en regard d’un composant est décochée, l’icône correspondante est retirée de la **boîte à outils**.  
   
   > [!NOTE]
-  >  Les composants .NET Framework installés sur votre ordinateur restent disponibles, même si leurs icônes ne s’affichent pas dans la **boîte à outils**.  
+  > Les composants .NET Framework installés sur votre ordinateur restent disponibles, même si leurs icônes ne s’affichent pas dans la **boîte à outils**.  
   
   Les colonnes de l’onglet **Composants WPF** contient les informations suivantes :  
   

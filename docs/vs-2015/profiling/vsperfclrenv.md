@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7387f2bc55d00695e85df3b023914e8d6fe9696d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: afee2c56a7f29d50f46c7cbb734bc0297223845c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54768083"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446690"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,12 +34,12 @@ VsPerfCLREnv [/option]
  L’option que vous choisissez dépend du type de profilage que vous utilisez : échantillonnage, instrumentation ou global. Vous devez utiliser une option séparée pour inclure les données d’interaction de couche dans les données de profilage. La syntaxe de chaque option est décrite dans les tableaux suivants.  
   
 > [!NOTE]
->  Quand vous avez terminé le profilage, exécutez **VSPerfCLREnv** avec l’option **/off** ou **/globaloff** pour supprimer les variables d’environnement nécessaires au profilage. Pour plus d’informations, consultez « Options VSPerfCLREnv pour supprimer des paramètres d’environnement » ci-après.  
+> Quand vous avez terminé le profilage, exécutez **VSPerfCLREnv** avec l’option **/off** ou **/globaloff** pour supprimer les variables d’environnement nécessaires au profilage. Pour plus d’informations, consultez « Options VSPerfCLREnv pour supprimer des paramètres d’environnement » ci-après.  
   
  **Options VSPerfCLREnv pour inclure les données d’interaction de couche**  
   
 > [!WARNING]
->  Les données de profilage d’interaction de couche peuvent être collectées en utilisant [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] ou [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. Cependant, les données de profilage d’interaction de couche ne peuvent être affichées que dans [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] et [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
+> Les données de profilage d’interaction de couche peuvent être collectées en utilisant [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] ou [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. Cependant, les données de profilage d’interaction de couche ne peuvent être affichées que dans [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] et [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
   
  Le profilage d’interaction de couche fournit des informations supplémentaires sur les requêtes ADO.NET dans des applications multicouches. Les données sont collectées uniquement pour les appels de fonctions synchrones. Vous pouvez ajouter les données d’interaction à toute exécution de profilage à l’aide de n’importe quelle méthode de profilage.  
   

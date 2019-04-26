@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5c2082e4f2c67696f057ea8fc779bfaf391e0af1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a77c390dd0934b0f02320080765765163a8afb93
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445617"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Procédure pas à pas : création d'un fichier projet MSBuild en partant de zéro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -151,11 +151,11 @@ Les langages de programmation qui ciblent .NET Framework utilisent des fichiers 
  Les tâches de la cible Build sont exécutées séquentiellement. Dans ce cas, la tâche du compilateur Visual C# `Csc` est la seule tâche. Elle attend une liste de fichiers source à compiler, qui lui est donnée par la valeur de l'élément `Compile`. L'élément `Compile` ne référence qu'un seul fichier source, Helloworld.cs.  
   
 > [!NOTE]
->  Dans l'élément item, vous pouvez utiliser le caractère générique astérisque (*) pour référencer tous les fichiers ayant l'extension de nom de fichier .cs, comme ceci :  
+> Dans l'élément item, vous pouvez utiliser le caractère générique astérisque (*) pour référencer tous les fichiers ayant l'extension de nom de fichier .cs, comme ceci :  
 >   
->  `<Compile Include="*.cs" />`  
+> `<Compile Include="*.cs" />`  
 >   
->  Nous ne recommandons cependant pas l'utilisation de caractères génériques, car ils rendent le débogage et le ciblage sélectif plus difficiles si des fichiers source sont ajoutés ou supprimés.  
+> Nous ne recommandons cependant pas l'utilisation de caractères génériques, car ils rendent le débogage et le ciblage sélectif plus difficiles si des fichiers source sont ajoutés ou supprimés.  
   
 ## <a name="extending-the-path-to-include-msbuild"></a>Extension de la variable PATH pour inclure MSBuild  
  Avant de pouvoir accéder à MSBuild, vous devez étendre la variable d'environnement PATH pour y inclure le dossier de .NET Framework.  
@@ -182,9 +182,9 @@ Les langages de programmation qui ciblent .NET Framework utilisent des fichiers 
      Le message **Hello, world!** doit s’afficher.  
   
 > [!NOTE]
->  Vous pouvez afficher plus de détails sur la génération en augmentant le niveau de détail. Pour définir le niveau de détail à « détaillé », entrez l’une ou l’autre de ces deux commandes à l’invite de commandes :  
+> Vous pouvez afficher plus de détails sur la génération en augmentant le niveau de détail. Pour définir le niveau de détail à « détaillé », entrez l’une ou l’autre de ces deux commandes à l’invite de commandes :  
 >   
->  **msbuild helloworld.csproj /t:Build /verbosity:detailed**  
+> **msbuild helloworld.csproj /t:Build /verbosity:detailed**  
   
 ## <a name="adding-build-properties"></a>Ajout de propriétés de build  
  Vous pouvez ajouter des propriétés de build au fichier projet pour contrôler davantage la génération. Ajoutez maintenant ces propriétés :  
@@ -243,17 +243,17 @@ Les langages de programmation qui ciblent .NET Framework utilisent des fichiers 
 ```  
   
 > [!NOTE]
->  Nous vous recommandons d’ajouter le délimiteur de chemin (\\) (barre oblique inverse) à la fin du nom du dossier quand vous le spécifiez dans l’élément `OutputPath`, au lieu de l’ajouter dans l’attribut `OutputAssembly` de la tâche `Csc`. Par conséquent,  
+> Nous vous recommandons d’ajouter le délimiteur de chemin (\\) (barre oblique inverse) à la fin du nom du dossier quand vous le spécifiez dans l’élément `OutputPath`, au lieu de l’ajouter dans l’attribut `OutputAssembly` de la tâche `Csc`. Par conséquent,  
 >   
->  `<OutputPath>Bin\</OutputPath>`  
+> `<OutputPath>Bin\</OutputPath>`  
 >   
->  `OutputAssembly=="$(OutputPath)$(AssemblyName).exe" />`  
+> `OutputAssembly=="$(OutputPath)$(AssemblyName).exe" />`  
 >   
->  est mieux que  
+> est mieux que  
 >   
->  `<OutputPath>Bin</OutputPath>`  
+> `<OutputPath>Bin</OutputPath>`  
 >   
->  `OutputAssembly=="$(OutputPath)\$(AssemblyName).exe" />`  
+> `OutputAssembly=="$(OutputPath)\$(AssemblyName).exe" />`  
   
 ## <a name="testing-the-build-properties"></a>Test des propriétés de build  
  Vous pouvez maintenant générer l'application en utilisant le fichier projet où vous avez utilisé des propriétés de build pour spécifier le dossier de sortie et le nom de l'application.  

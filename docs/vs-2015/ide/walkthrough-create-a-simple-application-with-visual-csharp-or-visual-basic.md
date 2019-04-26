@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5286f79f55f2a09122fb551911162bd609ce3bb2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b278e05ec19bc550d8c8c8c1258514cf63cd5f9f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040557"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436824"
 ---
 # <a name="walkthrough-create-a-simple-application-with-visual-c-or-visual-basic"></a>Procédure pas à pas : création d'un composant simple avec Visual C# ou Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ En suivant cette procédure pas-à-pas, vous vous familiariserez avec la plupart
  [Déboguer et tester l'application](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md#BKMK_DebugTest)  
   
 > [!NOTE]
->  Cette procédure pas-à-pas est basée sur Visual Studio Professional, qui offre le modèle d'application WPF sur lequel vous allez vous baser pour générer le projet. Visual Studio Express pour Windows Desktop offre également ce modèle, mais pas Visual Studio Express pour Windows et Visual Studio Express pour le Web. Pour obtenir une présentation de l’utilisation de Visual Studio Express pour Windows, consultez le [Centre de développement des applications du Windows Store](http://msdn.microsoft.com/windows/apps/br229519). Pour obtenir une présentation de l’utilisation de Visual Studio Express pour le web, consultez [Get Started with ASP.NET](http://www.asp.net/get-started)(Prise en main d’ASP.NET). De plus, votre édition de Visual Studio et les paramètres que vous utilisez déterminent les noms et les emplacements des éléments de l'interface utilisateur. Consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Cette procédure pas-à-pas est basée sur Visual Studio Professional, qui offre le modèle d'application WPF sur lequel vous allez vous baser pour générer le projet. Visual Studio Express pour Windows Desktop offre également ce modèle, mais pas Visual Studio Express pour Windows et Visual Studio Express pour le Web. Pour obtenir une présentation de l’utilisation de Visual Studio Express pour Windows, consultez le [Centre de développement des applications du Windows Store](http://msdn.microsoft.com/windows/apps/br229519). Pour obtenir une présentation de l’utilisation de Visual Studio Express pour le web, consultez [Get Started with ASP.NET](http://www.asp.net/get-started)(Prise en main d’ASP.NET). De plus, votre édition de Visual Studio et les paramètres que vous utilisez déterminent les noms et les emplacements des éléments de l'interface utilisateur. Consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="BKMK_ConfigureIDE"></a> Configurer l'IDE  
  Au premier démarrage de Visual Studio, Visual Studio vous invite à vous connecter avec un compte de service Microsoft, [Se connecter à Visual Studio](http://blogs.msdn.com/b/visualstudio/archive/2013/06/28/welcome-sign-in-to-visual-studio.aspx). Vous n'avez pas besoin de vous connecter immédiatement ; vous pouvez le faire ultérieurement.  
@@ -109,7 +109,7 @@ En suivant cette procédure pas-à-pas, vous vous familiariserez avec la plupart
     L'**Explorateur de solutions** indique que le nom du fichier est maintenant Greetings.xaml. Si vous développez le nœud MainWindow.xaml (en plaçant le focus dans le nœud et en appuyant sur la touche flèche droite), vous voyez que le nom de MainWindow.xaml.vb ou MainWindow.xaml.cs est désormais Greetings.xaml.vb ou Greetings.xaml.cs. Ce fichier de code est imbriqué sous le nœud de fichier .xaml pour montrer qu'ils sont étroitement liés entre eux.  
   
    > [!WARNING]
-   >  Cette modification provoque une erreur que vous apprendrez à déboguer et à corriger à une étape ultérieure.  
+   > Cette modification provoque une erreur que vous apprendrez à déboguer et à corriger à une étape ultérieure.  
   
 2. Dans l' **Explorateur de solutions**, ouvrez Greetings.xaml en mode concepteur (en appuyant sur la touche Entrée quand le nœud a le focus) et sélectionnez la barre de titre de la fenêtre à l'aide de la souris.  
   

@@ -17,12 +17,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c83ebc4b2a58976f8848f4576d8b30ad7778db2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 491d6c044b22a89e8ea61a78d5dd70e0a348b893
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650432"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441452"
 ---
 # <a name="command-window"></a>Commande, fenêtre
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ La fenêtre **Commande** est utilisée pour exécuter des commandes ou des alias
 |Faire défiler le contenu de la fenêtre vers le bas.|Contenu de la fenêtre Commande|BAS ou CTRL+BAS|  
   
 > [!TIP]
->  Vous pouvez copier une commande antérieure, en partie ou en totalité, vers la ligne d’entrée : à cet effet, faites défiler le contenu de la fenêtre jusqu’à la commande voulue, mettez en surbrillance le texte à copier, puis appuyez sur Entrée.  
+> Vous pouvez copier une commande antérieure, en partie ou en totalité, vers la ligne d’entrée : à cet effet, faites défiler le contenu de la fenêtre jusqu’à la commande voulue, mettez en surbrillance le texte à copier, puis appuyez sur Entrée.  
   
 ## <a name="mark-mode"></a>Mode Marque  
  Quand vous cliquez sur n’importe quelle ligne précédente dans la fenêtre **Commande**, vous passez automatiquement en mode Marque. Cela vous permet de sélectionner, de modifier et de copier le texte de commandes précédentes comme vous le feriez dans n’importe quel éditeur de texte, et de les coller dans la ligne active.  
@@ -104,7 +104,7 @@ Edit.ReplaceInFiles /case /pattern:regex var[1-3]+ oldpar
 - `var[1-3]+` et `oldpar` sont des paramètres  
   
   > [!NOTE]
-  >  Les commandes, paramètres, commutateurs ou valeurs qui comportent des espaces doivent être entourés de guillemets doubles.  
+  > Les commandes, paramètres, commutateurs ou valeurs qui comportent des espaces doivent être entourés de guillemets doubles.  
   
   Les commutateurs et les paramètres peuvent être placés à n’importe quel endroit de la ligne de commande, à l’exception de la commande [Shell](../../ide/reference/shell-command.md), dont les commutateurs et les paramètres doivent respecter un ordre précis.  
   

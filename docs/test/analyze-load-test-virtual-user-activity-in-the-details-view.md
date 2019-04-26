@@ -11,12 +11,12 @@ ms.assetid: 63f4bd42-3cfb-4eee-af68-e8334976539e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0a0d656aea42fff774e5e9c58068eff7039cfe79
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 54f9c7b982f1774c79d7cd1e7c0affa29dfbb65d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936952"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823416"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Analyse de l’activité des utilisateurs virtuels d’un test de charge dans la vue Détails de l’analyseur de test de charge
 
@@ -45,11 +45,11 @@ La vue **Détails** affiche le **graphique d’activités des utilisateurs virtu
 
  Le panneau Résultats du filtre est visible dans le **graphique d’activités des utilisateurs virtuels**. Le panneau Résultats du filtre peut filtrer en fonction des éléments suivants :
 
--   **Indiquer uniquement les résultats avec journaux** Affiche uniquement les résultats des tests associés à des journaux des tests.
+- **Indiquer uniquement les résultats avec journaux** Affiche uniquement les résultats des tests associés à des journaux des tests.
 
--   **Afficher les résultats réussis** Affiche les résultats réussis.
+- **Afficher les résultats réussis** Affiche les résultats réussis.
 
--   **Afficher les résultats avec des erreurs** Affiche les résultats comportant des erreurs qui peuvent être utiles au débogage.
+- **Afficher les résultats avec des erreurs** Affiche les résultats comportant des erreurs qui peuvent être utiles au débogage.
 
 ## <a name="tasks"></a>Tâches
 

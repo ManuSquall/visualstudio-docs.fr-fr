@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed23ea566bb27eaa8a315473fdf5345764ad5384
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 45a3f55e826133ce0fd55764e216824810ae45c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443270"
 ---
 # <a name="troubleshooting-broken-references"></a>Dépannage de références rompues
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Si votre application tente d’utiliser une référence rompue, une erreur d’e
   Les solutions suivantes permettent de résoudre ces problèmes.  
   
 > [!NOTE]
->  Les fichiers situés dans les assemblys sont référencés à l’aide de chemins absolus dans le fichier projet. Par conséquent, il est possible qu’un assembly référencé dans l’environnement local d’utilisateurs qui travaillent dans un environnement comprenant plusieurs développeurs soit manquant. Pour éviter ces erreurs, il est préférable, dans ce cas, d’ajouter des références entre projets. Pour plus d’informations, consultez [NIB Comment : ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter une référence](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) et [Programmation à l’aide d’assemblys](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6).  
+> Les fichiers situés dans les assemblys sont référencés à l’aide de chemins absolus dans le fichier projet. Par conséquent, il est possible qu’un assembly référencé dans l’environnement local d’utilisateurs qui travaillent dans un environnement comprenant plusieurs développeurs soit manquant. Pour éviter ces erreurs, il est préférable, dans ce cas, d’ajouter des références entre projets. Pour plus d’informations, consultez [NIB Comment : ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter une référence](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9) et [Programmation à l’aide d’assemblys](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6).  
   
 ## <a name="reference-path-is-incorrect"></a>Le chemin de la référence est incorrect  
  Si les projets sont partagés sur différents ordinateurs, certaines références peuvent être introuvables quand un composant se trouve dans un répertoire différent sur chaque ordinateur. Les références sont stockées sous le nom du fichier du composant (par exemple, MyComponent). Lors de l’ajout d’une référence à un projet, l’emplacement de dossier du fichier de composant (par exemple, C:\MyComponents\\) est ajouté à la propriété de projet **ReferencePath**.  
@@ -50,7 +50,7 @@ Si votre application tente d’utiliser une référence rompue, une erreur d’e
  Pour résoudre ce problème, vous pouvez supprimer la référence rompue, puis la remplacer à l’aide de la boîte de dialogue Ajouter une référence. Une autre solution consiste à utiliser l’élément **Chemins d’accès de références** dans les pages de propriétés du projet et à modifier les dossiers de la liste afin qu’ils pointent vers les emplacements corrects. La propriété **Chemin d’accès de référence** est rendue persistante pour chaque utilisateur de chaque ordinateur. Par conséquent, la modification du chemin de votre référence n’affecte pas les autres utilisateurs du projet.  
   
 > [!TIP]
->  Ces problèmes ne se posent pas pour les références entre projets. Par conséquent, utilisez-les plutôt que les références de fichier, si vous le pouvez.  
+> Ces problèmes ne se posent pas pour les références entre projets. Par conséquent, utilisez-les plutôt que les références de fichier, si vous le pouvez.  
   
 #### <a name="to-fix-a-broken-project-reference-by-correcting-the-reference-path"></a>Pour réparer une référence de projet rompue en corrigeant son chemin  
   

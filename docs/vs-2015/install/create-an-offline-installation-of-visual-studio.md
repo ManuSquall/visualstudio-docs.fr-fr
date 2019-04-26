@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 798318f55c6f5db599f39a653a4d9ed5edbed8f6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 197ae2a168f7f14f7d0ea3d9b82b5943c1af82f4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651004"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077938"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>Créer une installation hors connexion de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,33 +30,33 @@ Cette page explique comment installer Visual Studio 2015 sans connexion à Inter
 > [!IMPORTANT]
 > Si votre ordinateur en mode hors connexion fonctionne sur Windows 7 SP1 ou Windows Server 2008 R2, consultez les instructions spéciales dans la section [Résoudre les problèmes des installations hors connexion](#BKMK_tshoot) de cette rubrique.  Suivez-les *avant* d’installer Visual Studio 2015.
 
-##  <a name="BKMK_Offline"></a> Créer une installation hors connexion
+## <a name="BKMK_Offline"></a> Créer une installation hors connexion
 
 #### <a name="to-create-an-offline-installation-layout"></a>Créer une structure d’installation hors connexion
 
-1.  Choisissez l’édition de Visual Studio que vous souhaitez installer sur la page de téléchargement [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20Enterprise%202015).
+1. Choisissez l’édition de Visual Studio que vous souhaitez installer sur la page de téléchargement [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20Enterprise%202015).
 
-2.  Après avoir téléchargé le programme d’installation sur votre système de fichiers, exécutez « \<nom_exécutable> /layout ».
+2. Après avoir téléchargé le programme d’installation sur votre système de fichiers, exécutez « \<nom_exécutable> /layout ».
 
      Par exemple, exécutez : `vs_enterprise.exe /layout D:\VisualStudio2015`
 
      Le commutateur `/layout` permet de télécharger presque tous les packages d’installation, et pas seulement ceux qui s’appliquent à l’ordinateur de téléchargement. Vous obtenez ainsi les fichiers dont vous avez besoin pour exécuter ce programme d’installation n’importe où et pouvez installer des composants qui ne faisaient pas partie de l’installation initiale.
 
-3.  Une fois cette commande exécutée, une boîte de dialogue permet de changer le dossier dans lequel se trouvera la structure de l’installation hors connexion.   Ensuite, cliquez sur le bouton **Télécharger**.
+3. Une fois cette commande exécutée, une boîte de dialogue permet de changer le dossier dans lequel se trouvera la structure de l’installation hors connexion.   Ensuite, cliquez sur le bouton **Télécharger**.
 
      Une fois package téléchargé, un message indique **Installation réussie ! Tous les composants spécifiés sont bien installés**.
 
-4.  Recherchez le dossier que vous avez spécifié tout à l’heure (par exemple, D:\VisualStudio2015). Il contient tout ce dont vous devez copier sur un emplacement partagé ou un support d’installation.
+4. Recherchez le dossier que vous avez spécifié tout à l’heure (par exemple, D:\VisualStudio2015). Il contient tout ce dont vous devez copier sur un emplacement partagé ou un support d’installation.
 
     > [!CAUTION]
     > Actuellement, le kit SDK Android ne prend pas en charge les installations hors connexion. Si vous installez des éléments de l’installation du kit SDK Android sur un ordinateur qui n’est pas connecté à internet, l’installation peut échouer. Pour plus d’informations, voir la section « Résoudre les problèmes des installations hors connexion » de cette rubrique.
 
-5.  Exécutez l’installation à partir de l’emplacement du fichier ou du support d’installation.
+5. Exécutez l’installation à partir de l’emplacement du fichier ou du support d’installation.
 
 ## <a name="updating-an-offline-installation"></a>Mettre à jour une installation hors connexion
  Microsoft a publié plusieurs mises à jour de Visual Studio 2015. Pour mettre à jour une installation de Visual Studio, il suffit de télécharger l’édition souhaitée sur la page de téléchargement [My.VisualStudio.com](https://my.visualstudio.com/downloads?q=visual%20studio%20Enterprise%202015). Ensuite, suivez les étapes décrites dans cette rubrique pour créer une nouvelle structure d’installation hors connexion et l’utiliser pour mettre à jour votre version de Visual Studio 2015.
 
-##  <a name="BKMK_tshoot"></a> Résoudre les problèmes des installations hors connexion
+## <a name="BKMK_tshoot"></a> Résoudre les problèmes des installations hors connexion
  Quand vous effectuez une installation hors connexion à partir de votre cache d’installation hors connexion, des messages d’avertissement peuvent s’afficher pour vous indiquer l’impossibilité d’installer certains composants et packages. Le tableau suivant présente les solutions possibles à ces scénarios.
 
 | Composant ou package | Solution |

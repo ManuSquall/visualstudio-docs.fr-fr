@@ -12,12 +12,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 15dcdbec1407dc646e26f7419e2dd80cec869725
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 1c2134c38a3910a5dd1308990b0788002a7ded2d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54752260"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441902"
 ---
 # <a name="nameprofile"></a>NameProfile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +84,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI NameProfile(
  Si vous spécifiez un processus ou un thread autre que celui qui est actif, vous devez vérifier qu’il est initialisé et que son exécution a démarré avant de le nommer. Sinon, la méthode NameProfile échoue.  
   
 > [!IMPORTANT]
->  Les fonctions d’API CreateProcess() et CreateThread() peuvent retourner avant que le thread ou le processus soit initialisé.  
+> Les fonctions d’API CreateProcess() et CreateThread() peuvent retourner avant que le thread ou le processus soit initialisé.  
   
 ## <a name="net-framework-equivalent"></a>Équivalent .NET Framework  
  Microsoft.VisualStudio.Profiler.dll  

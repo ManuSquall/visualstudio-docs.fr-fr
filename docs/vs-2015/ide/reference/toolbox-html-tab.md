@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d688e737593ab4eaaeddfe0edcae57c99be4f8ad
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6c0603bd820990789af0d9bbca147acd7004e1a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663727"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097529"
 ---
 # <a name="toolbox-html-tab"></a>Boîte à outils, onglet HTML
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,9 +31,9 @@ L’onglet **HTML** de la boîte à outils fournit des composants utiles sur les
   
 ## <a name="tasks"></a>Tâches  
   
--   [Comment : gérer la fenêtre Boîte à outils](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
+- [Comment : gérer la fenêtre Boîte à outils](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2)  
   
--   [Comment : manipuler des onglets de boîte à outils](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)  
+- [Comment : manipuler des onglets de boîte à outils](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db)  
   
 ## <a name="ui-elements"></a>Éléments de l'interface utilisateur  
  Les outils suivants sont disponibles par défaut sous l’onglet HTML.  
