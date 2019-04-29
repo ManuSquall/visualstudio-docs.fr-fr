@@ -46,7 +46,7 @@
       href: workspace-language-services.md
     - name: Générer
       href: workspace-build.md
-- name: Extension des menus et des commandes
+- name: Étendre les menus et les commandes
   href: extending-menus-and-commands.md
   items:
     - name: Création d’une extension avec une commande de menu
@@ -71,7 +71,7 @@
       href: updating-the-user-interface.md
     - name: Localisation des commandes de menu
       href: localizing-menu-commands.md
-- name: Ajout de commandes à des barres d’outils
+- name: Ajouter des commandes à des barres d’outils
   href: adding-commands-to-toolbars.md
   items:
     - name: Ajout d’une barre d’outils
@@ -84,7 +84,7 @@
       href: adding-a-menu-controller-to-a-toolbar.md
     - name: Ajout dynamique d’éléments de menu
       href: dynamically-adding-menu-items.md
-- name: Extension et personnalisation des fenêtres d’outils
+- name: Étendre et personnaliser des fenêtres Outil
   href: extending-and-customizing-tool-windows.md
   items:
     - name: Création d’une extension avec une fenêtre d’outil
@@ -103,9 +103,9 @@
       href: adding-search-to-a-tool-window.md
     - name: Abonnement à un événement
       href: subscribing-to-an-event.md
-    - name: Extension de la fenêtre Sortie
+    - name: Étendre la fenêtre Sortie
       href: extending-the-output-window.md
-    - name: 'Extension des fenêtres Propriétés, Liste des tâches, Sortie et Options'
+    - name: 'Étendre les fenêtres Propriétés, Liste des tâches, Sortie et Options'
       href: extending-the-properties-task-list-output-and-options-windows.md
     - name: Création et gestion de boîtes de dialogue modales
       href: creating-and-managing-modal-dialog-boxes.md
@@ -114,7 +114,7 @@
   items:
     - name: Création d’une extension avec un modèle d’élément d’éditeur
       href: creating-an-extension-with-an-editor-item-template.md
-    - name: Extension de l’éditeur et des services de langage
+    - name: Étendre l’éditeur et les services de langage
       href: extending-the-editor-and-language-services.md
       items:
         - name: Bien démarrer avec les extensions du service de langage et de l’éditeur
@@ -159,7 +159,7 @@
           href: walkthrough-using-a-shortcut-key-with-an-editor-extension.md
         - name: "Procédure pas à pas\_: Accès à l’objet DTE à partir d’une extension de l’éditeur"
           href: walkthrough-accessing-the-dte-object-from-an-editor-extension.md
-    - name: Création d’éditeurs et de concepteurs personnalisés
+    - name: Créer des éditeurs et des concepteurs personnalisés
       href: creating-custom-editors-and-designers.md
       items:
         - name: "Procédure pas à pas\_: Création d’un éditeur personnalisé"
@@ -191,7 +191,9 @@
               href: how-to-open-standard-editors.md
             - name: Ouvrir des éditeurs pour les documents ouverts
               href: how-to-open-editors-for-open-documents.md
-- name: Extension des projets
+        - name: Guide de migration de l’extensibilité du concepteur XAML
+          href: xaml-designer-extensibility-migration.md
+- name: Étendre des projets
   href: extending-projects.md
   items:
     - name: 'Création d’un système de projet de base, partie 1'
@@ -210,14 +212,14 @@
       href: persisting-the-property-of-a-project-item.md
     - name: Gestion de projets Windows universels
       href: managing-universal-windows-projects.md
-- name: Extension des solutions
+- name: Étendre des solutions
   href: extending-solutions.md
   items:
-    - name: Extension du filtre de l’Explorateur de solutions
+    - name: Étendre le filtre de l’Explorateur de solutions
       href: extending-the-solution-explorer-filter.md
     - name: Gestion du chargement de projet dans une solution
       href: managing-project-loading-in-a-solution.md
-- name: Création de modèles de projet et d’élément personnalisés
+- name: Créer des modèles de projet et d’élément personnalisés
   href: creating-custom-project-and-item-templates.md
   items:
     - name: "Mise à niveau de modèles de projet et d’élément personnalisés pour Visual Studio\_2017"
@@ -335,7 +337,7 @@
           href: wizardextension-element-visual-studio-templates.md
     - name: "Informations de référence sur le schéma de manifeste de modèle Visual\_Studio"
       href: visual-studio-template-manifest-schema-reference.md
-- name: Extension des options et des paramètres utilisateur
+- name: Étendre des options et des paramètres utilisateur
   href: extending-user-settings-and-options.md
   items:
     - name: Création d’une page d’options
@@ -348,14 +350,14 @@
       href: getting-service-information-from-the-settings-store.md
     - name: Écriture dans la banque de paramètres utilisateur
       href: writing-to-the-user-settings-store.md
-- name: Extension des propriétés et la fenêtre Propriétés
+- name: Étendre des propriétés et la fenêtre Propriétés
   href: extending-properties-and-the-property-window.md
   items:
     - name: Exposition des propriétés dans la fenêtre Propriétés
       href: exposing-properties-to-the-properties-window.md
     - name: Obtention des propriétés d’un projet
       href: getting-project-properties.md
-- name: Extension d’autres parties de Visual Studio
+- name: Étendre d’autres parties de Visual Studio
   href: extending-other-parts-of-visual-studio.md
   items:
     - name: Création d’une extension avec un package VSPackage
@@ -364,7 +366,7 @@
       href: creating-a-wpf-toolbox-control.md
     - name: Création d’un contrôle de boîte à outils Windows Forms
       href: creating-a-windows-forms-toolbox-control.md
-    - name: Extension de la barre d’état
+    - name: Étendre la barre d’état
       href: extending-the-status-bar.md
     - name: Création d’une page de démarrage personnalisée
       href: creating-a-custom-start-page.md
@@ -425,11 +427,11 @@
       href: ux-guidelines/evaluation-tools-for-visual-studio.md
     - name: Prise en charge de la reconnaissance par moniteur
       href: ux-guidelines/per-monitor-awareness-extenders.md
-- name: Résolution des problèmes DPI
+- name: Résoudre les problèmes DPI
   href: addressing-dpi-issues2.md
 - name: Catalogue et service d’images
   href: image-service-and-catalog.md
-- name: Utilisation et fourniture de services
+- name: Utiliser et fournir des services
   href: using-and-providing-services.md
   items:
     - name: Obtenir un service
@@ -440,7 +442,7 @@
       href: how-to-provide-an-asynchronous-visual-studio-service.md
     - name: Dépanner les services
       href: how-to-troubleshoot-services.md
-- name: Gestion de VSPackages
+- name: Gérer VSPackages
   href: managing-vspackages.md
   items:
     - name: Instance expérimentale
@@ -463,7 +465,7 @@
       href: troubleshooting-vspackages.md
 - name: Interpréteur de commande (intégré ou isolé)
   href: 'https://vspartner.com/pages/vsshells'
-- name: Publication d’extensions Visual Studio
+- name: "Livrer des extensions Visual\_Studio"
   href: shipping-visual-studio-extensions.md
   items:
     - name: Modèle de projet VSIX
@@ -769,7 +771,7 @@
           href: vstextview-object.md
     - name: Glossaire du SDK Visual Studio
       href: visual-studio-sdk-glossary.md
-- name: Création d’un Kit de développement logiciel (SDK)
+- name: Créer un Kit de développement logiciel
   href: creating-a-software-development-kit.md
   items:
     - name: "Procédure pas à pas\_: Création d’un Kit de développement logiciel (SDK) à l’aide de C# ou de Visual Basic"
