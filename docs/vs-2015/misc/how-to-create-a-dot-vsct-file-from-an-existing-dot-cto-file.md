@@ -10,11 +10,11 @@ ms.assetid: 847717c9-477d-4ac9-8b2c-2da878912478
 caps.latest.revision: 11
 manager: jillfra
 ms.openlocfilehash: 83608d768940158dcdab427a557577677e56f7c8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056170"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822436"
 ---
 # <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Procédure : Créer un. Fichier VSCT d’un existant. Fichier de directeur technique
 Vous pouvez créer un fichier .vsct XML à partir d’un fichier .cto binaire existant. Cela vous permet de tirer parti du nouveau format de compilateur de la table de commande. Ce processus fonctionne même si le fichier .cto a été compilé à partir d’un fichier .ctc. Vous pouvez modifier et compiler le fichier .vsct dans un autre fichier .cto.  

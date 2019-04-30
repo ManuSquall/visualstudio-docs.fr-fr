@@ -11,11 +11,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 29b0066f201fbb791d471d5cfb433d9a335aa775
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069092"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62431574"
 ---
 # <a name="creating-and-managing-modal-dialog-boxes"></a>Création et gestion de boîtes de dialogue modales
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

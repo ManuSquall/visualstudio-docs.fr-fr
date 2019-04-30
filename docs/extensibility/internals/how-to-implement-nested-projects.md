@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 96df14cc6e337402761d89d7161094b513473a78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104991"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860761"
 ---
 # <a name="how-to-implement-nested-projects"></a>Procédure : Implémenter des projets imbriqués
 
@@ -88,6 +88,6 @@ Les rubriques suivantes traitent avec plusieurs autres concepts à prendre en co
 
 - [Ajouter des éléments à la boîte de dialogue Ajouter un nouvel élément](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)
 - [Inscrire les modèles de projet et d’élément](../../extensibility/internals/registering-project-and-item-templates.md)
-- [Liste de vérification : Créer des types de projet](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Liste de contrôle : Créer des types de projet](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Paramètres de contexte](../../extensibility/internals/context-parameters.md)
 - [Fichier de l’Assistant (.vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)

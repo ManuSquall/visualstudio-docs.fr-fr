@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8f7afee863d36796bb481f9aca2c24a9ba891ae7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049943"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952723"
 ---
 # <a name="create-sharepoint-solution-packages"></a>Créer des packages de solution SharePoint
   À l’aide du Concepteur de packages, vous pouvez créer et personnaliser des packages de déploiement. Par exemple, vous pouvez ajouter des éléments de projet SharePoint et des fonctionnalités, réinitialiser le serveur IIS, définir des étendues de l’activation de fonctionnalité et identifier les dépendances de fonctionnalité. Le concepteur génère également un manifeste, un fichier XML qui décrit chaque package.
