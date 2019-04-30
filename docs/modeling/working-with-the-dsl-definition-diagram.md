@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3133c3f37a7ce899575e4e6b0798ce8037b33929
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954178"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951240"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Utilisation du schéma de définition DSL
 Le diagramme d’un [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] définition est un outil important pour la définition de la langue spécifique à un domaine. Vous pouvez ajouter des éléments à votre modèle de domaine et définir des relations sur le diagramme ; vous pouvez également modifier la disposition du diagramme pour accroître sa lisibilité.
@@ -64,7 +64,7 @@ Le diagramme d’un [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] définition 
 ### <a name="bring-tree-here"></a>Bring Tree Here (action)
  Vous pouvez consolider le diagramme en double-cliquant sur une classe de domaine d’espace réservé, puis sur **déplacer l’arborescence ici**. La classe de domaine de l'espace réservé devient un élément de définition et affiche les arborescences d'héritage et de relations. Le précédent élément de définition devient un élément d'espace réservé s'il est la cible d'une relation ou l'enfant d'une relation d'héritage ; dans le cas contraire, il disparaît.
 
-### <a name="split-tree"></a>Split Tree
+### <a name="split-tree"></a>Arborescence fractionnée
  Vous pouvez scinder les arborescences d’héritage ou de relations en double-cliquant sur la définition de classe de domaine qui les affiche, puis sur **fractionner l’arborescence**. L'élément de définition devient un élément d'espace réservé et la classe de domaine de la définition, ainsi que ses relations d'héritage et de relation, s'affiche désormais en bas de la partition.
 
 ### <a name="show-as-class"></a>Show As Class

@@ -1,48 +1,49 @@
 ---
 title: IDebugModule3::SetJustMyCodeState | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: reference
 f1_keywords:
 - IDebugModule3::SetJustMyCodeState
 helpviewer_keywords:
 - IDebugModule3::SetJustMyCodeState
 ms.assetid: 68f8166d-ef64-49ae-ad5e-79604f43bbd4
-author: gregvanl
+caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: 5ef9c9b01ab37cce527e55696210438fcaaff9d2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697726"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62872768"
 ---
 # <a name="idebugmodule3setjustmycodestate"></a>IDebugModule3::SetJustMyCodeState
-Marque le module comme étant le code utilisateur ou non.
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>Syntaxe
-
-```cpp
-HRESULT SetJustMyCodeState(
-   BOOL fIsUserCode
-);
-```
-
-```csharp
-int SetJustMyCodeState(
-   int fIsUserCode
-);
-```
-
-#### <a name="parameters"></a>Paramètres
- `fIsUserCode`
-
- [in] Différent de zéro (`TRUE`) si le module doit être considéré comme du code de l’utilisateur, zéro (`FALSE`) s’il ne doit pas.
-
-## <a name="return-value"></a>Valeur de retour
- En cas de réussite, retourne `S_OK`; sinon, retourne le code d’erreur.
-
-## <a name="see-also"></a>Voir aussi
-- [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)
+Marque le module comme étant le code utilisateur ou non.  
+  
+## <a name="syntax"></a>Syntaxe  
+  
+```cpp#  
+HRESULT SetJustMyCodeState(  
+   BOOL fIsUserCode  
+);  
+```  
+  
+```csharp  
+int SetJustMyCodeState(  
+   int fIsUserCode  
+);  
+```  
+  
+#### <a name="parameters"></a>Paramètres  
+ `fIsUserCode`  
+ [in] Différent de zéro (`TRUE`) si le module doit être considéré comme du code de l’utilisateur, zéro (`FALSE`) s’il ne doit pas.  
+  
+## <a name="return-value"></a>Valeur de retour  
+ En cas de réussite, retourne `S_OK`; sinon, retourne le code d’erreur.  
+  
+## <a name="see-also"></a>Voir aussi  
+ [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

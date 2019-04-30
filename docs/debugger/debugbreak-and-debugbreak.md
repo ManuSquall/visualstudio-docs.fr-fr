@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b6c4b9d780caf7589eecdc709cbede577dd7a6fd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686156"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852700"
 ---
 # <a name="debugbreak-and-debugbreak"></a>DebugBreak et __debugbreak
 Vous pouvez appeler la fonction Win32 DebugBreak ou l’objet intrinsèque [__debugbreak](/cpp/intrinsics/debugbreak) à n’importe quel endroit de votre code. `DebugBreak` et `__debugbreak` reviennent à définir un point d'arrêt à cet emplacement.

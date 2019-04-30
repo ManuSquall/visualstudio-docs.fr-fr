@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 3c88b40c0d20d370929bd8c1cd5e8604ea3781e6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108241"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433914"
 ---
 # <a name="expected-"></a>']' attendu
 Vous fait une référence à un élément de tableau, mais n’incluez pas le crochet droit. Toute expression qui fait référence à un élément de tableau doit inclure les crochets ouvrants et fermants.  

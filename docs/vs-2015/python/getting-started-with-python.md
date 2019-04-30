@@ -10,11 +10,11 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 9c18ae2731d92e6d128d13e7687bac77ae76dc8a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648447"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62575648"
 ---
 # <a name="getting-started-with-python"></a>Mise en route de Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,9 +91,9 @@ Nous vous recommandons de vous procurer IPython et les bibliothèques de calcul 
   
 ## <a name="see-also"></a>Voir aussi  
 
-[Bien démarrer avec PTVS : Configuration de Visual Studio](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
+[Bien démarrer avec PTVS : Configuration de Visual Studio](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
 [bien démarrer avec PTVS : Commencez à coder (projets)](../python/getting-started-with-ptvs-start-coding-projects.md)
 [bien démarrer avec PTVS : Modification du Code](../python/getting-started-with-ptvs-editing-code.md)
 [bien démarrer avec PTVS : Débogage](../python/getting-started-with-ptvs-debugging.md)
 [bien démarrer avec PTVS : Python interactive](../python/getting-started-with-ptvs-interactive-python.md)
-[bien démarrer avec PTVS : Création d’un site Web dans Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)
+[bien démarrer avec PTVS : Création d’un site web dans Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)

@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e63a5ab794261a395fb091016f177ffca9d35692
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62964298"
 ---
 # <a name="properties-of-a-dsl-definition"></a>Propriétés d'une définition DSL
 Définissent les propriétés DslDefinition *langage spécifique à un domaine* propriétés telles que la numérotation des versions de la définition. Les propriétés DslDefinition s’affichent dans le **propriétés** fenêtre lorsque vous cliquez sur une zone ouverte du diagramme dans le *Concepteur de langage spécifique à un domaine*.
@@ -28,14 +28,14 @@ Définissent les propriétés DslDefinition *langage spécifique à un domaine* 
 |Modificateur d'accès|Détermine si le modificateur d’accès pour la classe de domaine est public ou interne.|public|
 |Attributs personnalisés|Custom attributs définis pour la classe de domaine.<br /><br /> **Remarque** utilisez le bouton Parcourir pour ajouter un attribut.|\<aucune>|
 |Nom de la société|Le nom du nom de la société actuelle dans le Registre système.|Nom de la société|
-|Name|Le nom de cette classe de domaine.|Nom actuel|
+|Nom|Le nom de cette classe de domaine.|Nom actuel|
 |Espace de noms|L’espace de noms affilié à cette classe de domaine.|Espace de noms actuel|
 |Guid du package|Le guid pour le package Visual Studio généré pour ce DSL.|\<aucune>|
 |Package Namespace|L’espace de noms pour le package Visual Studio généré pour ce DSL.|\<aucune>|
 |Nom du produit|Le nom du produit qui sera inscrit pour le package Visual Studio généré pour ce DSL.|\<aucune>|
 |Notes|Notes associées à cette classe de domaine.|\<aucune>|
 |Description|Description de cette classe de domaine.|\<aucune>|
-|Nom complet|Le nom qui s’affichera dans le concepteur généré pour cette classe de domaine.|\<aucune>|
+|Display Name|Le nom qui s’affichera dans le concepteur généré pour cette classe de domaine.|\<aucune>|
 |Help Keyword|Le mot clé d’aide associé à cette classe de domaine.|\<aucune>|
 |Build|Numéro de build incrémentielle de cette définition de langage spécifique à un domaine.|0|
 |Version majeure|Le numéro de build majeur incrémentielle pour cette définition de langage spécifique à un domaine.|1|

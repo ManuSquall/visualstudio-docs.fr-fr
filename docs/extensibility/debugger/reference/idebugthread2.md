@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9dcb50f732d4c7aae94cf32036cd17340d636dd9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693696"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62868357"
 ---
 # <a name="idebugthread2"></a>IDebugThread2
 Cette interface représente un thread en cours d’exécution dans un programme.
@@ -60,7 +60,7 @@ IDebugThread2 : IUnknown
 
  Lorsqu’un point d’arrêt ou une exception se produit, un événement est envoyé en appelant [événement](../../../extensibility/debugger/reference/idebugeventcallback2-event.md). Un des arguments de cette méthode est un `IDebugThread2` interface qui représente le thread actuel. [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) sert à obtenir le [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) interface pour le frame de pile actuel.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop
