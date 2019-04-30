@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0d2dfe0da64abb9540724c05d13b84715a684af0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 30bb597288c19328bb71ce7b5212200991d7181e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082033"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443071"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Procédure : Marquer des contrôles comme des contrôles sécurisés
   Pour la sécurité, SharePoint fait la distinction entre les contrôles Web qui sont protégés contre l’injection de script et des contrôles Web qui ne sont pas. Protégé par des contrôles, ou *contrôles sécurisés*, sont accessibles aux utilisateurs non approuvés. Vous pouvez marquer des contrôles comme sécurisés dans la propriété entrées de contrôle sécurisé d’un élément de projet SharePoint ou dans le **Concepteur de packages** lorsque vous ajoutez un assembly au package. Pour plus d'informations, consultez
@@ -27,7 +27,7 @@ ms.locfileid: "60082033"
 - [Modification des paramètres du fichier Web.config](http://go.microsoft.com/fwlink/?LinkId=178965) et [l’inscription d’un Assembly de composant WebPart en tant que](http://go.microsoft.com/fwlink/?LinkId=171013).
 
 > [!IMPORTANT]
->  Ces procédures sont à titre d’illustration. Marquer des contrôles sécurisés uniquement si vous êtes certain qu’elles sont sécurisées.
+> Ces procédures sont à titre d’illustration. Marquer des contrôles sécurisés uniquement si vous êtes certain qu’elles sont sécurisées.
 
 ## <a name="marking-safe-controls-in-the-safe-control-entries-property"></a>Marquage des contrôles sécurisés dans la propriété d’entrées de contrôle sécurisé
 
@@ -94,7 +94,7 @@ ms.locfileid: "60082033"
     |Protégé contre les scripts|Laissez le **protégé contre les scripts** case à cocher désactivée.|
 
     > [!NOTE]
-    >  Le **nom de l’Assembly** valeur pour les assemblys ajoutés via la **avancé** onglet de la **Concepteur de packages** ne peut pas un jeton, il doit être un assembly avec nom fort. Pour plus d’informations, consultez [Création et utilisation d’assemblys avec nom fort](http://go.microsoft.com/fwlink/?LinkId=177513).
+    > Le **nom de l’Assembly** valeur pour les assemblys ajoutés via la **avancé** onglet de la **Concepteur de packages** ne peut pas un jeton, il doit être un assembly avec nom fort. Pour plus d’informations, consultez [Création et utilisation d’assemblys avec nom fort](http://go.microsoft.com/fwlink/?LinkId=177513).
 
 13. Choisissez le **onglet** clé à créer une autre entrée de contrôle sécurisé.
 

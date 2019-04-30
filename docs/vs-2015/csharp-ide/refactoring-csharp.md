@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ca7a85bf7ace1f9aeb0e47e031cda5f793df2331
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fa8fbfd8837fb35617b79089fffd11ea3b8d2e93
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444529"
 ---
 # <a name="refactoring-c"></a>Refactorisation (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ La refactorisation consiste à améliorer votre code après que qu’il a été 
  Si le compilateur n’a pas une compréhension complète de votre programme, et il est possible que le moteur de refactorisation ne peut pas mettre à jour la toutes les références appropriées, la boîte de dialogue d’avertissement s’affiche. Cette boîte de dialogue d’avertissement fournit également une opportunité pour vous permettre d’afficher un aperçu de votre code dans le **aperçu des modifications** boîte de dialogue avant de valider les modifications.  
   
 > [!NOTE]
->  Si une méthode contient une erreur de syntaxe (indiquant l’IDE avec une ligne ondulée rouge), puis le moteur de refactorisation ne mettra pas à jour toutes les références à un élément au sein de cette méthode. L’exemple ci-dessous illustre ce comportement.  
+> Si une méthode contient une erreur de syntaxe (indiquant l’IDE avec une ligne ondulée rouge), puis le moteur de refactorisation ne mettra pas à jour toutes les références à un élément au sein de cette méthode. L’exemple ci-dessous illustre ce comportement.  
   
  Par défaut, si vous exécutez une opération de refactorisation sans afficher un aperçu de référence modifie une erreur de compilation est détectée dans votre programme, puis l’environnement de développement affiche cette boîte de dialogue d’avertissement.  
   

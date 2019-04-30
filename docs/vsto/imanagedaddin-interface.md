@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ed55c42211222ca94587b4358bb904f9637cb3f4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 320b20fa40250ca47dd414b362059e152eba2c3b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596319"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420995"
 ---
 # <a name="imanagedaddin-interface"></a>interface IManagedAddin
   Implémentez l’interface IManagedAddin pour créer un composant qui charge gérée des Compléments VSTO. Cette interface a été ajoutée dans la version 2007 de Microsoft Office System.
@@ -43,7 +43,7 @@ interface IManagedAddin : IUnknown
 ## <a name="methods"></a>Méthodes
  Le tableau suivant répertorie les méthodes qui sont définies par l’interface IManagedAddin.
 
-|Name|Description|
+|Nom|Description|
 |----------|-----------------|
 |[IManagedAddin::Load](../vsto/imanagedaddin-load.md)|Appelée quand une application Microsoft Office charge un complément VSTO géré.|
 |[IManagedAddin::Unload](../vsto/imanagedaddin-unload.md)|Appelée juste avant qu’une application Microsoft Office décharge un complément VSTO géré.|
@@ -82,7 +82,7 @@ interface IManagedAddin : IUnknown
  Applications Microsoft Office utilisent ce CLSID pour créer l’objet COM qui implémente IManagedAddin.
 
 > [!CAUTION]
->  Ce CLSID est également utilisé par *VSTOLoader.dll* dans le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Par conséquent, si vous utilisez IManagedAddin pour créer vos propres chargeur de complément VSTO et le composant d’exécution, vous ne pouvez pas déployer votre composant sur des ordinateurs qui exécutent des Compléments VSTO qui s’appuient sur le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
+> Ce CLSID est également utilisé par *VSTOLoader.dll* dans le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Par conséquent, si vous utilisez IManagedAddin pour créer vos propres chargeur de complément VSTO et le composant d’exécution, vous ne pouvez pas déployer votre composant sur des ordinateurs qui exécutent des Compléments VSTO qui s’appuient sur le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
 
 ## <a name="see-also"></a>Voir aussi
 - [Référence des API non managées &#40;développement Office dans Visual Studio&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)

@@ -22,12 +22,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 395e2a6233c1b6187d9089459cb8f267c4c3c904
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d4d2218337153418ef201ee7896eeb095c4778fb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424921"
 ---
 # <a name="upgrade-mdf-files"></a>Mettre à jour des fichiers .mdf
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,10 +47,10 @@ Cette rubrique décrit les options de mise à niveau de votre fichier de base de
   Vous pouvez également être invité à mettre à niveau d’un fichier de base de données qui a été créé via une version antérieure de SQL Server Express ou LocalDB si la version du fichier n’est pas compatible avec l’instance de SQL Server Express ou LocalDB qui est actuellement installée. Pour résoudre ce problème, Visual Studio vous invite à mettre à niveau le fichier.  
   
 > [!IMPORTANT]
->  Nous vous recommandons de sauvegarder le fichier de base de données avant de vous mettre à niveau.  
+> Nous vous recommandons de sauvegarder le fichier de base de données avant de vous mettre à niveau.  
   
 > [!WARNING]
->  Si vous mettez à niveau un fichier .mdf qui a été créé dans la base de données locale 2014 (V12) 32 bits vers LocalDB 2016 (V13), vous ne serez pas en mesure d’ouvrir le fichier à nouveau dans la version 32 bits de LocalDB.  Dans la mise à jour 2, LocalDB V13 est 64 bits uniquement.  
+> Si vous mettez à niveau un fichier .mdf qui a été créé dans la base de données locale 2014 (V12) 32 bits vers LocalDB 2016 (V13), vous ne serez pas en mesure d’ouvrir le fichier à nouveau dans la version 32 bits de LocalDB.  Dans la mise à jour 2, LocalDB V13 est 64 bits uniquement.  
   
  Avant de vous mettre à niveau une base de données, tenez compte des critères suivants :  
   

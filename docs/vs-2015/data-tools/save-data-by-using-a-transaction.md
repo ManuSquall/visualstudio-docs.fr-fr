@@ -19,12 +19,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c133bb3f8ef56378c20b985aa118e48e71109cea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 260396123f806e7c37b91ff4aca643a05853676f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065257"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425084"
 ---
 # <a name="save-data-by-using-a-transaction"></a>Enregistrer des données à l’aide d’une transaction
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Vous enregistrez des données dans une transaction en utilisant le <xref:System.
  Projets ne sont pas créés avec une référence à l’assembly System.Transactions, donc vous devez ajouter manuellement une référence aux projets qui utilisent des transactions.  
   
 > [!NOTE]
->  Le <xref:System.Transactions> espace de noms est prise en charge dans Windows 2000 ou version ultérieure.  
+> Le <xref:System.Transactions> espace de noms est prise en charge dans Windows 2000 ou version ultérieure.  
   
  Le moyen le plus simple d’implémenter une transaction consiste à instancier un <xref:System.Transactions.TransactionScope> de l’objet dans un `using` instruction. (Pour plus d’informations, consultez [Using, instruction](http://msdn.microsoft.com/library/665d1580-dd54-4e96-a9a9-6be2a68948f1), et [à l’aide d’instruction](http://msdn.microsoft.com/library/afc355e6-f0b9-4240-94dd-0d93f17d9fc3).) Le code qui s’exécute dans le `using` instruction participe à la transaction.  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9330a41d0888532640774891386011f6b8dbfc24
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0de96057326a9e4b6a64865ef34972d5542aff30
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442999"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Informations de référence sur le langage DGML (Directed Graph Markup Language)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Le langage DGML (Directed Graph Markup Language) décrit les informations utilis
  Notez que certaines versions de Visual Studio prend en charge uniquement un sous-ensemble de fonctionnalités DGML, consultez [versions prises en charge pour l’architecture et les outils de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!NOTE]
->  Lorsque vous modifiez un fichier .dgml, IntelliSense vous aide à identifier les attributs qui sont disponibles pour chaque élément, ainsi que leurs valeurs. Pour spécifier la couleur dans un attribut, utilisez le nom des couleurs courantes (« Bleu », par exemple) ou des valeurs hexadécimales ARVB (« #ffa0b1c3 », par exemple). Le langage DGML utilise un sous-ensemble réduit de formats de définition de couleur WPF (Windows Presentation Foundation). Pour plus d’informations, consultez [couleurs classe](http://go.microsoft.com/fwlink/?LinkId=182345).  
+> Lorsque vous modifiez un fichier .dgml, IntelliSense vous aide à identifier les attributs qui sont disponibles pour chaque élément, ainsi que leurs valeurs. Pour spécifier la couleur dans un attribut, utilisez le nom des couleurs courantes (« Bleu », par exemple) ou des valeurs hexadécimales ARVB (« #ffa0b1c3 », par exemple). Le langage DGML utilise un sous-ensemble réduit de formats de définition de couleur WPF (Windows Presentation Foundation). Pour plus d’informations, consultez [couleurs classe](http://go.microsoft.com/fwlink/?LinkId=182345).  
   
 ## <a name="DGML"></a> Syntaxe du langage DGML  
  Le tableau suivant décrit les types d'éléments utilisés en langage DGML :  
@@ -70,7 +70,7 @@ Le langage DGML (Directed Graph Markup Language) décrit les informations utilis
    Cet élément facultatif contient une liste d'éléments `<Node/>` qui définissent des nœuds sur la carte. Pour plus d'informations, consultez l'élément `<Node/>`.  
   
   > [!NOTE]
-  >  Quand vous faites référence à un nœud non défini dans un élément `<Link/>`, la carte crée automatiquement un élément `<Node/>`.  
+  > Quand vous faites référence à un nœud non défini dans un élément `<Link/>`, la carte crée automatiquement un élément `<Node/>`.  
   
    Exemple :  
   
@@ -151,7 +151,7 @@ Le langage DGML (Directed Graph Markup Language) décrit les informations utilis
    Cet élément définit un lien unique qui relie un nœud source à un nœud cible. Il figure dans la liste des éléments `<Links></Links>`.  
   
   > [!NOTE]
-  >  Si cet élément fait référence à un nœud non défini, le document de la carte crée automatiquement un nœud qui possède les attributs spécifiés, le cas échéant.  
+  > Si cet élément fait référence à un nœud non défini, le document de la carte crée automatiquement un nœud qui possède les attributs spécifiés, le cas échéant.  
   
    Cet élément doit inclure les attributs suivants :  
   

@@ -12,12 +12,12 @@ ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4c7a4af5928f1d7b803e882c1826e451982389bc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 585402efbda165844f449e2477d5ca69722613a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093928"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446878"
 ---
 # <a name="sccgetprojpath-function"></a>Fonction SccGetProjPath
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,7 +99,7 @@ SCCRTN SccGetProjPath (
  Pour `lpUser`, l’IDE peut transmettre un nom d’utilisateur, ou il peut simplement passer un pointeur vers une chaîne vide. S’il existe un nom d’utilisateur, le plug-in de contrôle de code source doit l’utiliser comme valeur par défaut. Toutefois, si aucun nom n’a été passée ou si la connexion a échoué avec le nom donné, le plug-in doit inviter l’utilisateur pour une connexion et la passe de nouveau le nom `lpUser` lorsqu’elle reçoit une connexion valide. Étant donné que le plug-in peut modifier cette chaîne, l’IDE sera toujours allouer une mémoire tampon de taille (`SCC_USER_LEN`+ 1).  
   
 > [!NOTE]
->  La première action qui effectue l’IDE peut être un appel à la `SccOpenProject` fonction ou le `SccGetProjPath` (fonction). Par conséquent, deux d'entre eux ont un identiques `lpUser` paramètre, ce qui permet le plug-in pour connecter l’utilisateur au moment du contrôle de code source. Même si le retour à partir de la fonction indique un échec, le plug-in doit remplir cette chaîne avec un nom de connexion valide.  
+> La première action qui effectue l’IDE peut être un appel à la `SccOpenProject` fonction ou le `SccGetProjPath` (fonction). Par conséquent, deux d'entre eux ont un identiques `lpUser` paramètre, ce qui permet le plug-in pour connecter l’utilisateur au moment du contrôle de code source. Même si le retour à partir de la fonction indique un échec, le plug-in doit remplir cette chaîne avec un nom de connexion valide.  
   
  `lpLocalPath` est le répertoire où l’utilisateur maintient le projet. Il peut être une chaîne vide. Si aucun répertoire actuellement définies (comme dans le cas d’un utilisateur tente de télécharger un projet à partir du système de contrôle de source) et si `bAllowChangePath` est `TRUE`, le plug-in de contrôle de code source peut inviter l’utilisateur pour l’entrée ou utilisez une autre méthode pour placer ses propriétaire de chaîne dans `lpLocalPath`. Si `bAllowChangePath` est `FALSE`, le plug-in ne devez pas modifier la chaîne, étant donné que l’utilisateur travaille déjà dans le répertoire spécifié.  
   

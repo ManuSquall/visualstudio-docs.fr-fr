@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: eed341b5ae43f52e7df35d820012e760166e096f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cd05f5ebad1a07e818e377b90aeb5e137f296cd9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073425"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443365"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Utilisation de Visual Studio Tools pour Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,7 +117,7 @@ Dans cette section, vous allez apprendre à utiliser les fonctionnalités d’in
      ![Cette icône indique que VSTU est connecté à Unity.](../cross-platform/media/vstu-connection-connected.png "vstu_connection_connected")  
   
 > [!TIP]
->  Si l'icône de connexion contient une coche, vous êtes déjà connecté à une instance Unity.  
+> Si l'icône de connexion contient une coche, vous êtes déjà connecté à une instance Unity.  
   
  La boîte de dialogue **Sélectionner l’instance Unity** affiche des informations sur chaque instance Unity à laquelle vous pouvez vous connecter.  
   
@@ -136,7 +136,7 @@ Dans cette section, vous allez apprendre à utiliser les fonctionnalités d’in
  Numéro de port du socket UDP sur lequel communique sur cette instance Unity.  
   
 > [!IMPORTANT]
->  Étant donné que Visual Studio Tools pour Unity et l'instance Unity communiquent via un socket réseau UDP, votre pare-feu peut l'interroger. Dans ce cas, vous devez autoriser la connexion de telle sorte que VSTU et Unity puissent communiquer.  
+> Étant donné que Visual Studio Tools pour Unity et l'instance Unity communiquent via un socket réseau UDP, votre pare-feu peut l'interroger. Dans ce cas, vous devez autoriser la connexion de telle sorte que VSTU et Unity puissent communiquer.  
   
 ### <a name="debugging-your-project-in-a-unity-player"></a> Débogage de votre projet dans un lecteur Unity  
  Vous pouvez connecter directement Visual Studio Tools pour Unity  à votre application Unity s'exécutant dans un lecteur autonome lorsque vous n'exécutez pas l'éditeur Unity ou pour déboguer des problèmes spécifiques à la plateforme.  
@@ -154,7 +154,7 @@ Dans cette section, vous allez apprendre à utiliser les fonctionnalités d’in
 - Dans le lecteur web Unity, dans le menu contextuel, choisissez **Canal des versions** et vérifiez que l’option **Développement** est activée.  
   
   > [!IMPORTANT]
-  >  Dans Unity 4.2 et ultérieur, l’élément du menu contextuel **Canal des versions** est disponible dans le menu contextuel du lecteur web seulement quand vous appuyez sur la touche **Alt** tandis que le menu contextuel est ouvert. Si le lecteur web s’exécute sur Mac OS X, appuyez à la place sur la touche **Option**.  
+  > Dans Unity 4.2 et ultérieur, l’élément du menu contextuel **Canal des versions** est disponible dans le menu contextuel du lecteur web seulement quand vous appuyez sur la touche **Alt** tandis que le menu contextuel est ouvert. Si le lecteur web s’exécute sur Mac OS X, appuyez à la place sur la touche **Option**.  
   
   Enfin, assurez-vous que vous êtes connecté à l'instance Unity que vous souhaitez déboguer. Pour plus d’informations sur la procédure à suivre, consultez la section [Connexion de Visual Studio à Unity](#connecting-visual-studio-to-unity).  
   
@@ -162,7 +162,7 @@ Dans cette section, vous allez apprendre à utiliser les fonctionnalités d’in
  De nombreux développeurs Unity écrivent des composants de code en tant que DLL externes afin que les fonctionnalités qu'ils développent puissent être facilement partagées avec d'autres projets. Visual Studio Tools pour Unity facilite le débogage du code dans ces DLL, sans heurt avec tout autre code de votre projet Unity.  
   
 > [!NOTE]
->  À ce stade, Visual Studio Tools pour Unity prend uniquement en charge les DLL managées. Il ne gère pas le débogage des DLL de code natif, telles que celles écrites en C++.  
+> À ce stade, Visual Studio Tools pour Unity prend uniquement en charge les DLL managées. Il ne gère pas le débogage des DLL de code natif, telles que celles écrites en C++.  
   
  Notez que le scénario décrit ici suppose que vous disposiez du code source, autrement dit, que vous développiez ou réutilisez votre propre code tiers, ou que vous ayez le code source d'une bibliothèque tierce et que vous prévoyiez de le déployer dans votre projet Unity en tant que DLL. Ce scénario ne décrit pas le débogage d'une DLL pour laquelle vous n'avez pas le code source.  
   

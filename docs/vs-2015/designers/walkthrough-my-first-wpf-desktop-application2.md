@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 74ae6a4510efc63a633e627fdd0b165aa547b2be
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bee99bc546eca3787db1f9cd082359afb6881d10
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041992"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421148"
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Procédure pas à pas : Ma première Application de bureau WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ un name = « introduction » ></a> cette procédure pas à pas fournit une int
      Notez aussi que lorsque vous remplacez la balise `<Window` par `<NavigationWindow`, Intellisense remplace automatiquement la balise de fermeture par `</NavigationWindow>` .  
   
     > [!NOTE]
-    >  Après modification de la balise, il est possible que vous constatiez la présence de plusieurs erreurs dans la fenêtre **Liste d’erreurs** si celle-si est ouverte. Ne vous inquiétez pas, car les modifications que vous allez apporter au cours des étapes suivantes vont les faire disparaître.  
+    > Après modification de la balise, il est possible que vous constatiez la présence de plusieurs erreurs dans la fenêtre **Liste d’erreurs** si celle-si est ouverte. Ne vous inquiétez pas, car les modifications que vous allez apporter au cours des étapes suivantes vont les faire disparaître.  
   
 3. Choisissez les balises `<Grid>` et `</Grid>` et supprimez-les.  
   
@@ -307,14 +307,14 @@ un name = « introduction » ></a> cette procédure pas à pas fournit une int
      ![Image en filigrane pour la procédure pas à pas](../designers/media/wpf-watermark.png "WPF_watermark")  
   
     > [!NOTE]
-    >  Vous pouvez également créer votre propre image et l’enregistrer sous `watermark.png`.  
+    > Vous pouvez également créer votre propre image et l’enregistrer sous `watermark.png`.  
   
 2. Dans l’ **Explorateur de solutions**, ouvrez le menu contextuel du nœud **ExpenseIt** , puis choisissez **Ajouter**, **Élément existant**.  
   
 3. Dans la boîte de dialogue **Ajouter un élément existant** , recherchez l’image **watermark.png** que vous venez d’ajouter, sélectionnez-la, puis choisissez le bouton **Ajouter** .  
   
     > [!NOTE]
-    >  Vous devrez peut-être développer la liste **Types de fichiers** et choisir **Fichiers image**.  
+    > Vous devrez peut-être développer la liste **Types de fichiers** et choisir **Fichiers image**.  
   
 4. Ouvrez le fichier **ExpenseItHome.xaml** et ajoutez le code XAML suivant juste au-dessus de la balise `</Grid>` pour créer une image d’arrière-plan :  
   

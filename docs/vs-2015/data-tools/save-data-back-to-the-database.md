@@ -26,12 +26,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b0489dec1c2d6cb3d7559a2bdd029ccab6c3ce5f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dbbb730af965b414a907bb230a58291ec53084a3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056807"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425345"
 ---
 # <a name="save-data-back-to-the-database"></a>Enregistrer les données dans la base de données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -96,7 +96,7 @@ Processus de mise à jour des deux étapes et le rôle de DataRowVersion dans un
 |Actuelle|Jim Wilson|James C. Wilson|  
   
 > [!CAUTION]
->  Dans le `preserveChanges = true` scénario, si le <xref:System.Data.DataSet.RejectChanges%2A> méthode est appelée sur un enregistrement dans le jeu de données cible, puis il revient aux données d’origine à partir de la *source* jeu de données. Cela signifie que si vous essayez de mettre à jour de la source de données d’origine avec le jeu de données cible, il ne peut pas être en mesure de trouver la ligne d’origine pour mettre à jour. Vous pouvez empêcher une violation d’accès concurrentiel en remplissant un autre jeu de données avec les enregistrements mis à jour à partir de la source de données, puis exécutez une fusion pour éviter une violation d’accès concurrentiel. (Une violation d’accès concurrentiel se produit lorsqu’un autre utilisateur modifie un enregistrement dans la source de données une fois que le jeu de données a été renseigné.)  
+> Dans le `preserveChanges = true` scénario, si le <xref:System.Data.DataSet.RejectChanges%2A> méthode est appelée sur un enregistrement dans le jeu de données cible, puis il revient aux données d’origine à partir de la *source* jeu de données. Cela signifie que si vous essayez de mettre à jour de la source de données d’origine avec le jeu de données cible, il ne peut pas être en mesure de trouver la ligne d’origine pour mettre à jour. Vous pouvez empêcher une violation d’accès concurrentiel en remplissant un autre jeu de données avec les enregistrements mis à jour à partir de la source de données, puis exécutez une fusion pour éviter une violation d’accès concurrentiel. (Une violation d’accès concurrentiel se produit lorsqu’un autre utilisateur modifie un enregistrement dans la source de données une fois que le jeu de données a été renseigné.)  
   
 ## <a name="update-constraints"></a>Mettre à jour des contraintes  
  Pour apporter des modifications à une ligne de données existante, ajouter ou mettre à jour des données dans les colonnes individuelles. Si le jeu de données contient des contraintes (telles que les clés étrangères ou des contraintes non nullable), il est possible que l’enregistrement soit temporairement dans un état d’erreur quand vous mettez à jour. Autrement dit, il peut être dans un état d’erreur après avoir terminé la mise à jour d’une colonne, mais avant de passer à la suivante.  
@@ -110,7 +110,7 @@ Processus de mise à jour des deux étapes et le rôle de DataRowVersion dans un
   Après avoir effectué une mise à jour, vous pouvez réactiver la vérification des contraintes, ce qui active les événements de mise à jour de nouveau et déclenche également les.  
   
 > [!NOTE]
->  Dans Windows Forms, l’architecture de liaison de données qui est intégrée à la grille de données interrompt la contrainte de vérification jusqu'à ce que le focus se déplace en dehors d’une ligne, et il est inutile d’appeler explicitement la <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A>, ou <xref:System.Data.DataRow.CancelEdit%2A> méthodes.  
+> Dans Windows Forms, l’architecture de liaison de données qui est intégrée à la grille de données interrompt la contrainte de vérification jusqu'à ce que le focus se déplace en dehors d’une ligne, et il est inutile d’appeler explicitement la <xref:System.Data.DataRow.BeginEdit%2A>, <xref:System.Data.DataRow.EndEdit%2A>, ou <xref:System.Data.DataRow.CancelEdit%2A> méthodes.  
   
  Les contraintes sont automatiquement désactivées lorsque le <xref:System.Data.DataSet.Merge%2A> méthode est appelée sur un jeu de données. Lorsque la fusion est terminée, s’il existe des contraintes sur le jeu de données qui ne peut pas être activée, un <xref:System.Data.ConstraintException> est levée. Dans ce cas, le <xref:System.Data.DataSet.EnforceConstraints%2A> propriété est définie sur `false,` et toutes les violations de contrainte doivent être résolues avant de réinitialiser le <xref:System.Data.DataSet.EnforceConstraints%2A> propriété `true`.  
   
@@ -182,12 +182,12 @@ Processus de mise à jour des deux étapes et le rôle de DataRowVersion dans un
 - Après avoir chargé le jeu de données. Si vous chargez un jeu de données en appelant d’un TableAdapter `Fill` (méthode), puis l’adaptateur valide automatiquement les modifications pour vous. Toutefois, si vous chargez un jeu de données en y fusionnant un autre jeu de données, vous devez valider les modifications manuellement.  
   
   > [!NOTE]
-  >  Vous pouvez empêcher l’adaptateur de validation des modifications automatiquement lorsque vous appelez le `Fill` méthode en définissant le `AcceptChangesDuringFill` propriété de l’adaptateur à `false`. Si elle est définie sur `false`, puis le <xref:System.Data.DataRow.RowState%2A> de chaque ligne est insérée lors du remplissage est définie sur <xref:System.Data.DataRowState>.  
+  > Vous pouvez empêcher l’adaptateur de validation des modifications automatiquement lorsque vous appelez le `Fill` méthode en définissant le `AcceptChangesDuringFill` propriété de l’adaptateur à `false`. Si elle est définie sur `false`, puis le <xref:System.Data.DataRow.RowState%2A> de chaque ligne est insérée lors du remplissage est définie sur <xref:System.Data.DataRowState>.  
   
 - Une fois que vous envoyez les modifications de jeu de données à un autre processus, comme un service Web XML.  
   
   > [!CAUTION]
-  >  Validation de la modification de cette façon efface toutes les informations modifiées. Ne pas valider les modifications jusqu'à ce qu’après avoir terminent des opérations nécessitant de votre application pour savoir quelles modifications ont été apportées dans le jeu de données.  
+  > Validation de la modification de cette façon efface toutes les informations modifiées. Ne pas valider les modifications jusqu'à ce qu’après avoir terminent des opérations nécessitant de votre application pour savoir quelles modifications ont été apportées dans le jeu de données.  
   
   Cette méthode effectue les opérations suivantes :  
   
@@ -208,7 +208,7 @@ Processus de mise à jour des deux étapes et le rôle de DataRowVersion dans un
 |<xref:System.Data.DataSet.AcceptChanges%2A?displayProperty=fullName>|Les modifications sont validées sur toutes les lignes de toutes les tables du jeu de données.|  
   
 > [!NOTE]
->  Si vous chargez un jeu de données en appelant d’un TableAdapter `Fill` (méthode), vous ne devez accepter explicitement les modifications. Par défaut, le `Fill` les appels de méthode le `AcceptChanges` méthode après son remplissage de la table de données.  
+> Si vous chargez un jeu de données en appelant d’un TableAdapter `Fill` (méthode), vous ne devez accepter explicitement les modifications. Par défaut, le `Fill` les appels de méthode le `AcceptChanges` méthode après son remplissage de la table de données.  
   
  Une méthode associée, `RejectChanges`, annule les modifications en copiant le <xref:System.Data.DataRowVersion> version dans le <xref:System.Data.DataRowVersion> version d’enregistrements. Il définit également la <xref:System.Data.DataRow.RowState%2A> de chaque enregistrement à <xref:System.Data.DataRowState>.  
   
@@ -224,7 +224,7 @@ Processus de mise à jour des deux étapes et le rôle de DataRowVersion dans un
 - Dans les données back-end, en envoyant des données à la source de données, par exemple, la base de données et en l’autorisant à accepter ou refuser les données. Si vous travaillez avec une base de données qui a des fonctionnalités évoluées de validation des données et fournir des informations d’erreur, cela peut être une approche pratique, car vous pouvez valider les données, quel que soit l’emplacement d’origine. Toutefois, cette approche ne peut pas satisfaire les exigences de la validation spécifique à l’application. En outre, la source de données valider des données peut entraîner de nombreux allers-retours vers la source de données, en fonction de la façon dont votre application facilite la résolution des erreurs de validation déclenchés par le serveur principal.  
   
   > [!IMPORTANT]
-  >  Lorsque vous utilisez les commandes de données avec un <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> propriété a la valeur <xref:System.Data.CommandType>, soigneusement vérifier les informations qui sont envoyées à partir d’un client avant de le transmettre à votre base de données. Des utilisateurs malveillants peuvent tenter d’envoyer (injecter) des instructions SQL modifiées ou supplémentaires afin d’accéder à la base de données ou de l’endommager. Avant de transférer l’entrée utilisateur et une base de données, vérifiez toujours que les informations sont valides. Il est recommandé de toujours utiliser des requêtes paramétrables ou les procédures stockées lorsque cela est possible. Pour plus d’informations, consultez [Vue d’ensemble des attaques de script](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  > Lorsque vous utilisez les commandes de données avec un <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> propriété a la valeur <xref:System.Data.CommandType>, soigneusement vérifier les informations qui sont envoyées à partir d’un client avant de le transmettre à votre base de données. Des utilisateurs malveillants peuvent tenter d’envoyer (injecter) des instructions SQL modifiées ou supplémentaires afin d’accéder à la base de données ou de l’endommager. Avant de transférer l’entrée utilisateur et une base de données, vérifiez toujours que les informations sont valides. Il est recommandé de toujours utiliser des requêtes paramétrables ou les procédures stockées lorsque cela est possible. Pour plus d’informations, consultez [Vue d’ensemble des attaques de script](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
   Une fois que les modifications ont été apportées dans un jeu de données, vous pouvez transmettre les modifications apportées à une source de données. En règle générale, ce faire, appelez le `Update` méthode d’un TableAdapter (ou adaptateur de données). La méthode parcourt chaque enregistrement dans une table de données détermine quel type de mise à jour est nécessaire (update, insert ou delete), le cas échéant, puis exécute la commande appropriée.  
   
@@ -256,7 +256,7 @@ Processus de mise à jour des deux étapes et le rôle de DataRowVersion dans un
 - L’instruction SQL transmise inclut la clause SET pour définir les nouvelles valeurs des colonnes modifiées.  
   
     > [!NOTE]
-    >  Si le TableAdapter `UpdateCommand` propriété a été définie sur le nom d’une procédure stockée, l’adaptateur ne construit pas une instruction SQL. Au lieu de cela, elle appelle la procédure stockée avec les paramètres passés dans appropriés.  
+    > Si le TableAdapter `UpdateCommand` propriété a été définie sur le nom d’une procédure stockée, l’adaptateur ne construit pas une instruction SQL. Au lieu de cela, elle appelle la procédure stockée avec les paramètres passés dans appropriés.  
   
 ## <a name="passing-parameters"></a>Passage de paramètres  
  Vous utilisez généralement des paramètres pour passer les valeurs pour les enregistrements qui vont être mis à jour dans la base de données.  Lorsque le TableAdapter `Update` méthode exécute une instruction de mise à jour, il doit remplir les valeurs de paramètre. Ces valeurs sont obtenues à partir de la `Parameters` collection pour la commande de données approprié, dans ce cas, le `UpdateCommand` objet dans le TableAdapter.  
@@ -268,7 +268,7 @@ Processus de mise à jour des deux étapes et le rôle de DataRowVersion dans un
  Dans une instruction de mise à jour, vous devez spécifier les nouvelles valeurs (celles qui sont écrits dans l’enregistrement), ainsi que les anciennes valeurs (de sorte que l’enregistrement peut se trouver dans la base de données). Il existe donc deux paramètres pour chaque valeur : un pour la clause SET et un autre pour la clause WHERE. Les deux paramètres lisent les données à partir de l’enregistrement est mis à jour, mais ils obtiennent des versions différentes de la valeur de colonne en fonction du paramètre [propriété SqlParameter.SourceVersion](https://msdn.microsoft.com/library/system.data.sqlclient.sqlparameter.sourceversion.aspx). Le paramètre pour la clause SET obtient la version actuelle, et le paramètre pour la clause WHERE obtient la version d’origine.  
   
 > [!NOTE]
->  Vous pouvez également définir des valeurs le `Parameters` collection vous-même dans le code que vous le feriez en général dans un gestionnaire d’événements pour l’adaptateur de données <xref:System.Data.DataTable.RowChanging> événement.  
+> Vous pouvez également définir des valeurs le `Parameters` collection vous-même dans le code que vous le feriez en général dans un gestionnaire d’événements pour l’adaptateur de données <xref:System.Data.DataTable.RowChanging> événement.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Mettre à jour des données à l’aide d’un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)   

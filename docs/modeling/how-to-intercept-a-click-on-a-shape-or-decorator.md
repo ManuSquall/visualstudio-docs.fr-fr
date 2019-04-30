@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 531e723bbc7c1b288a73f1ea036cb24efcf8ce4a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2b4677413fd06176136935e583073f611d1a127a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056109"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445177"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Procédure : Intercepter un événement de clic sur une forme ou un décorateur
 Les procédures suivantes montrent comment intercepter un événement click sur une forme ou un décorateur d’icône. Vous pouvez intercepter les clics, double-clique sur, fait glisser, et d’autres gestes et faire en sorte que l’élément répondre.
@@ -34,7 +34,7 @@ public partial class MyShape // change
 ```
 
 > [!NOTE]
->  Définissez `e.Handled` à `true`, sauf si vous souhaitez que l’événement à passer à la forme ou le schéma conteneur.
+> Définissez `e.Handled` à `true`, sauf si vous souhaitez que l’événement à passer à la forme ou le schéma conteneur.
 
 ## <a name="to-intercept-clicks-on-decorators"></a>Pour intercepter les clics sur les éléments décoratifs
  Éléments décoratifs d’image sont effectuées sur une instance de la classe ImageField, qui comporte une méthode OnDoubleClick. Vous pouvez intercepter les clics si vous écrivez une sous-classe ImageField. Les champs sont configurés dans la méthode InitializeShapeFields. Par conséquent, vous devez modifier cette méthode pour instancier votre sous-classe au lieu de l’ImageField régulière. La méthode InitializeShapeFields est dans le code généré de la classe de forme. Vous pouvez remplacer la classe shape si vous définissez son `Generates Double Derived` propriété comme décrit dans la procédure suivante.

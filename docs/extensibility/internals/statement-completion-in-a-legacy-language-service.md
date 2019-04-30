@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a8301bb5daf0334a48078690a15b1f3d2991698
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: dcc86d8c43703b0274c5282c9f4f843f760e697c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428906"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>Saisie semi-automatique des instructions dans un service de langage hérité
 Saisie semi-automatique des instructions sont le processus par lequel le service de langage permet aux utilisateurs de terminer un mot clé du langage ou un élément qu’il démarre en tapant dans l’éditeur principal. Cette rubrique explique le fonctionnement de la saisie semi-automatique des instructions et comment l’implémenter dans votre service de langage.
@@ -24,7 +24,7 @@ Saisie semi-automatique des instructions sont le processus par lequel le service
  Services de langage hérité sont implémentés en tant que partie d’un VSPackage, mais la plus récente pour implémenter des fonctionnalités de service de langage consiste à utiliser des extensions MEF. Pour en savoir plus sur la nouvelle façon d’implémenter la saisie semi-automatique des instructions, consultez [procédure pas à pas : Affichage de saisie semi-automatique des instructions](../../extensibility/walkthrough-displaying-statement-completion.md).
 
 > [!NOTE]
->  Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorer les performances de votre service de langage et vous permettent de tirer parti des nouvelles fonctionnalités de l’éditeur.
+> Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorer les performances de votre service de langage et vous permettent de tirer parti des nouvelles fonctionnalités de l’éditeur.
 
 ## <a name="implementing-statement-completion"></a>Implémentation de saisie semi-automatique des instructions
  Dans l’éditeur principal, la saisie semi-automatique des instructions Active une interface utilisateur spéciale qui interactive vous permet plus facilement et rapidement écrire du code. Saisie semi-automatique des instructions vous aide à en affichant les objets pertinentes ou des classes lorsqu’ils sont nécessaires, ce qui vous évite d’avoir à mémoriser des éléments spécifiques ou avoir à les rechercher dans une rubrique de référence.

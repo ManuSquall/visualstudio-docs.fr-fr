@@ -19,12 +19,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 400e16918f01697eecce2af608ba89e041ca6449
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7cd8a48092c39048d52a7ebe9cd27163ba32110
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424791"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Procédure pas à pas : Affichage de données liées dans une Application WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -167,7 +167,7 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui affi
 1. Dans le **des Sources de données** fenêtre, recherchez le **SalesOrderDetails** nœud qui est un enfant de la **SalesOrderHeaders** nœud.  
   
    > [!NOTE]
-   >  Il existe également un **SalesOrderDetails** nœud qui est un homologue de la **SalesOrderHeaders** nœud. Assurez-vous que vous sélectionnez le nœud enfant de la **SalesOrderHeaders** nœud.  
+   > Il existe également un **SalesOrderDetails** nœud qui est un homologue de la **SalesOrderHeaders** nœud. Assurez-vous que vous sélectionnez le nœud enfant de la **SalesOrderHeaders** nœud.  
   
 2. Développez l’enfant **SalesOrderDetails** nœud.  
   

@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c31fe758d9c1a9a99fb71144f93c7145ea466ad0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3f6345e7627549c672aa28fac8cba5f6d9658a23
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621693"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435447"
 ---
 # <a name="sandboxed-solution-considerations"></a>Considérations relatives à la solution bac à sable
   *Solutions bac à sable* sont une fonctionnalité de Microsoft SharePoint 2010 qui permet aux utilisateurs de collection de sites de télécharger leurs propres solutions de code personnalisé. Une solution bac à sable courante est les utilisateurs de télécharger leurs propres composants WebPart.
@@ -34,7 +34,7 @@ ms.locfileid: "56621693"
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] prend en charge les solutions bac à sable via une propriété de projet booléenne appelées *Solution bac à sable*. Cette propriété peut être définie à tout moment dans le projet, ou il peut être spécifié lorsque vous créez le projet dans le **Assistant Personnalisation de SharePoint**.
 
 > [!NOTE]
->  Modification de la *Solution bac à sable* propriété d’un projet après sa création peut entraîner des erreurs de validation.
+> Modification de la *Solution bac à sable* propriété d’un projet après sa création peut entraîner des erreurs de validation.
 
  La solution est considérée comme une solution de batterie si le *Solution bac à sable* propriété est définie sur **false** ou si vous choisissez la **déployer en tant que solution de batterie** option. Toutefois, la solution est traitée différemment d’une solution de batterie de serveurs si le *Solution bac à sable* propriété est définie sur **true** ou si vous choisissez la **déployer en tant que sandboxed solution** option de l’Assistant.
 
@@ -131,7 +131,7 @@ ms.locfileid: "56621693"
 
 - Fonctionnalités étendues à la batterie de serveurs
 
-- `HideCustomAction` (élément)
+- `HideCustomAction`, élément
 
 - Fonctionnalités de portée d’Application Web
 

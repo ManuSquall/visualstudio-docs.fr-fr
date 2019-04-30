@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 226f2281af2ccdb288ff2c186da280b329a2af1f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e58471c1676ce67e96ef2c325f5ec461f54cfc9c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071874"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441985"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Étape 1 : Créer un projet et ajouter des étiquettes à votre formulaire
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60071874"
 Les premières étapes du développement de ce questionnaire consistent à créer le projet, puis à ajouter des étiquettes, un bouton et d'autres contrôles à un formulaire. Vous devez également définir des propriétés pour chaque contrôle que vous ajoutez. Le projet contiendra le formulaire, les contrôles et, ultérieurement dans le didacticiel, du code. Le bouton démarre le questionnaire, les étiquettes affichent les problèmes à résoudre et les autres contrôles montrent les réponses aux problèmes et le temps restant pour terminer le questionnaire.  
   
 > [!NOTE]
->  Cette rubrique fait partie d'une série de didacticiels sur les concepts de codage de base. Pour obtenir une vue d’ensemble du tutoriel, consultez [Tutoriel 2 : Créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md).  
+> Cette rubrique fait partie d'une série de didacticiels sur les concepts de codage de base. Pour obtenir une vue d’ensemble du tutoriel, consultez [Tutoriel 2 : Créer un questionnaire mathématique chronométré](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
 ### <a name="to-create-a-project-and-set-properties-for-a-form"></a>Pour créer un projet et définir des propriétés pour un formulaire  
   
@@ -145,7 +145,7 @@ Première ligne du questionnaire mathématique
 9. Pour la quatrième ligne, nommez le premier contrôle Label **dividedLeftLabel**, remplacez la valeur de la propriété **Text** du deuxième contrôle Label par **÷** (symbole de division), nommez le troisième contrôle Label **dividedRightLabel** et nommez le contrôle NumericUpDown **quotient**.  
   
     > [!NOTE]
-    >  Vous pouvez copier les signes de multiplication (×) et de division (÷) indiqués dans ce didacticiel pour les coller dans le formulaire.  
+    > Vous pouvez copier les signes de multiplication (×) et de division (÷) indiqués dans ce didacticiel pour les coller dans le formulaire.  
   
 ### <a name="to-add-a-start-button-and-set-the-tab-index-order"></a>Pour ajouter un bouton de démarrage et définir l'ordre des index de tabulation  
   
@@ -162,7 +162,7 @@ Première ligne du questionnaire mathématique
 6. Affectez à la propriété **TabIndex** du contrôle **startButton** la valeur **1**.  
   
     > [!NOTE]
-    >  La propriété **TabIndex** définit l’ordre des contrôles lorsque la personne répondant au questionnaire appuie sur la touche Tab. Pour voir son fonctionnement, ouvrez une boîte de dialogue quelconque (par exemple, dans la barre de menus, choisissez **Fichier**, **Ouvrir**), puis appuyez plusieurs fois sur la touche Tab. Notez que le curseur passe d'un contrôle à l'autre chaque fois que vous appuyez sur la touche Tab. Un programmeur a choisi l'ordre en créant le formulaire.  
+    > La propriété **TabIndex** définit l’ordre des contrôles lorsque la personne répondant au questionnaire appuie sur la touche Tab. Pour voir son fonctionnement, ouvrez une boîte de dialogue quelconque (par exemple, dans la barre de menus, choisissez **Fichier**, **Ouvrir**), puis appuyez plusieurs fois sur la touche Tab. Notez que le curseur passe d'un contrôle à l'autre chaque fois que vous appuyez sur la touche Tab. Un programmeur a choisi l'ordre en créant le formulaire.  
   
 7. Affectez à la propriété **TabIndex** du contrôle NumericUpDown de somme la valeur **2**, à celle du contrôle de différence la valeur **3**, à celle du contrôle de produit la valeur **4** et à celle du contrôle quotient la valeur **5**.  
   

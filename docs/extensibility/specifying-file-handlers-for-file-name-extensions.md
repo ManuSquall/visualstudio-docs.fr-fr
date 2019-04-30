@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: aba754735bb8a002b1876770b47594ccc98e43fb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 7b56df6c315d0612d6139fcda8b94f5d1b33b12a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687534"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434549"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>Spécification des gestionnaires de fichiers pour les extensions de nom de fichier
 Il existe plusieurs façons de déterminer l’application qui gère un fichier qui a une extension de fichier particulier. Les verbes OpenWithList et OpenWithProgids sont deux façons de spécifier des gestionnaires de fichiers sous l’entrée de Registre pour l’extension de fichier.
@@ -34,7 +34,7 @@ HKEY_CLASSES_ROOT\
 ```
 
 > [!NOTE]
->  Les clés spécifiant les applications sont dans la liste sous HKEY_CLASSES_ROOT\Applications.
+> Les clés spécifiant les applications sont dans la liste sous HKEY_CLASSES_ROOT\Applications.
 
  Ajout d’une clé OpenWithList, vous déclarez que votre application prend en charge une extension de fichier même si une autre application prend possession de l’extension. Cela peut être une future version de votre application ou une autre application.
 
@@ -50,7 +50,7 @@ HKEY_CLASSES_ROOT\
  Vous pouvez enregistrer différentes applications qui sont en mesure d’ouvrir une extension de fichier particulière en ajoutant des ProgID avec contrôle de version en tant que valeurs dans le HKEY_CLASSES_ROOT\\*\<extension >* \OpenWithProgids clé. Cette clé de Registre contient une liste de ProgID autre associés à l’extension de fichier. Les applications associées avec les ProgID répertoriées apparaissent dans le **ouvrir avec**_Product Name_ sous-menu. Si la même application est spécifiée à la fois dans le `OpenWithList` et `OpenWithProgids` clés, le système d’exploitation fusionne les doublons.
 
 > [!NOTE]
->  Le `OpenWithProgids` est uniquement prise en charge dans Windows XP. Étant donné que les autres systèmes d’exploitation ignorer cette clé, ne l’utilisez pas en tant que l’enregistrement uniquement pour les gestionnaires de fichiers. Cette clé permet de fournir une meilleure expérience utilisateur dans Windows XP.
+> Le `OpenWithProgids` est uniquement prise en charge dans Windows XP. Étant donné que les autres systèmes d’exploitation ignorer cette clé, ne l’utilisez pas en tant que l’enregistrement uniquement pour les gestionnaires de fichiers. Cette clé permet de fournir une meilleure expérience utilisateur dans Windows XP.
 
  Ajoutez les ProgID souhaitées en tant que valeurs de type REG_NONE. Le code suivant fournit un exemple d’inscription ProgID pour une extension de fichier (. *Ext*).
 
