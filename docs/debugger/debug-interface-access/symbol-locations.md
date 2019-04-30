@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3cc8ed99cad2fb0806c7072b1b2f494aa60e967c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607887"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62854768"
 ---
 # <a name="symbol-locations"></a>Emplacements des symboles
 La plupart des symboles ont un emplacement défini dans le fichier image. Emplacement d’un symbole est spécifié avec une valeur comprise entre le [LocationType, énumération](../../debugger/debug-interface-access/locationtype.md) énumération. Le symbole peut prendre en charge des propriétés supplémentaires en fonction de son emplacement.

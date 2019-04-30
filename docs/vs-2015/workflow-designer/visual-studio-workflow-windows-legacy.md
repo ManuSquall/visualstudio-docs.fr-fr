@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 0036c861638c4a0d5d2b7de4500eb00368efe447
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953777"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62857548"
 ---
 # <a name="visual-studio-workflow-windows-legacy"></a>Visual Studio pour Windows Workflow (hérité)
 Le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité fourni par [!INCLUDE[vs2010](../includes/vs2010-md.md)] peut être utilisé pour cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]. Le concepteur hérité est un concepteur visuel que vous pouvez utiliser pour créer un workflow. Vous pouvez faire glisser des activités à partir de la **boîte à outils** à la conception de surface et les configurer. En tant que fenêtre d'éditeur [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], elle occupe la zone de fenêtre principale utilisée par d'autres fenêtres d'éditeur [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Le nom du workflow est affiché dans la barre de titre de la fenêtre [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  

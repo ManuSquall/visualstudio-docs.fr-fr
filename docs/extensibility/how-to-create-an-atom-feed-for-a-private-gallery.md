@@ -12,14 +12,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 094bff5c761a45e936f14f79587b4846d3838610
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722406"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62862990"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>Procédure : Créer un flux Atom pour une galerie privée
-Vous pouvez créer un flux vers un emplacement intranet qui contient des extensions et ajouter le flux à Atom (RSS) **Extensions et mises à jour** dans une galerie privée. Pour plus d’informations, consultez [galeries privées](../extensibility/private-galleries.md).
+Vous pouvez créer un flux vers un emplacement intranet qui contient des extensions et ajouter le flux à Atom (RSS) **Extensions et mises à jour** dans une galerie privée. Pour plus d’informations, consultez [Galeries privées](../extensibility/private-galleries.md).
 
 ## <a name="create-an-atom-feed"></a>Créer un flux Atom
  Pour créer un flux dans une galerie privée Atom, vous commencez par rassembler vos extensions (*.vsix* fichiers) dans un dossier. Vous pouvez les organiser dans des sous-dossiers si vous le souhaitez. Vous devez également les ressources suivantes :
