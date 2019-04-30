@@ -23,11 +23,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e3dd75e8c88f87991abbdaa74a711b8f3c7324b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62927297"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt;, élément (application ClickOnce)
 Décrit les autorisations de sécurité minimales dont doit disposer l’application pour qu’elle s’exécute sur l’ordinateur client.
@@ -117,7 +117,7 @@ Décrit les autorisations de sécurité minimales dont doit disposer l’applica
      Dans cet exemple, la déclaration d’ <xref:System.Security.Permissions.EnvironmentPermission> indique que l’application peut uniquement lire la variable d’environnement USERNAME, tandis que la déclaration de <xref:System.Security.Permissions.FileDialogPermission> permet à l’application d’utiliser toutes les classes <xref:System.Windows.Forms.FileDialog> sans aucune restriction.
 
 ## <a name="defaultassemblyrequest"></a>defaultAssemblyRequest
- Optionnel. Identifie le jeu d’autorisations accordé à tous les assemblys. Cet élément est un enfant de l’élément `applicationRequestMinimum` et contient l’attribut suivant.
+ Facultatif. Identifie le jeu d’autorisations accordé à tous les assemblys. Cet élément est un enfant de l’élément `applicationRequestMinimum` et contient l’attribut suivant.
 
 - `permissionSetReference`
 
@@ -154,7 +154,7 @@ Décrit les autorisations de sécurité minimales dont doit disposer l’applica
 
 - `uiAccess`
 
-   Optionnel. Indique si l’application nécessite l’accès aux éléments protégés de l’interface utilisateur. La valeur peut être `true` ou `false`(false étant la valeur par défaut). Seules les applications signées doivent avoir la valeur true.
+   Facultatif. Indique si l’application nécessite l’accès aux éléments protégés de l’interface utilisateur. La valeur peut être `true` ou `false`(false étant la valeur par défaut). Seules les applications signées doivent avoir la valeur true.
 
 ## <a name="remarks"></a>Notes
  Si une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] demande davantage d’autorisations que celles accordées par défaut par l’ordinateur client, le Gestionnaire de confiance du common language runtime demande à l’utilisateur s’il souhaite accorder à l’application ce niveau de privilège élevé. S’il refuse, l’application ne fonctionne pas ; s’il accepte, elle s’exécute avec les autorisations demandées.

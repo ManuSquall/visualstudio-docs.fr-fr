@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1ad60503c9f7b15bd4665fb8f9552864debc381d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609577"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909220"
 ---
 # <a name="model-for-source-control-packages"></a>Modèle des packages de contrôle de code source
 Le modèle suivant représente un exemple d’une implémentation de contrôle de code source. Dans le modèle, vous voyez les interfaces que vous devez implémenter et les services de l’environnement que vous devez appeler. Comme tous les services, vous appelez réellement les méthodes d’une interface particulière que vous obtenez par le biais du service. Les noms des classes sont identifiées pour le rendre plus facile de voir comment contrôle de code source est effectué.

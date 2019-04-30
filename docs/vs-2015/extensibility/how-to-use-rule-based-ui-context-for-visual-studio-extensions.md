@@ -6,11 +6,11 @@ ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
 caps.latest.revision: 8
 ms.author: gregvanl
 ms.openlocfilehash: ccdba95816d77e5282e978d508da581d9240ef06
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664312"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62425747"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Procédure : Utiliser le contexte de l’interface utilisateur basé sur une règle pour les extensions Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

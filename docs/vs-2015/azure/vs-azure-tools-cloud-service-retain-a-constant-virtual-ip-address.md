@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: 525b5fe8f2726ab1f7f2ff80abf7bc06937a7a0b
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "59001249"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62964224"
 ---
 # <a name="retain-a-constant-virtual-ip-address-for-an-azure-cloud-service"></a>Conserver une adresse IP virtuelle constante pour un service cloud Azure
 Lors de la mise à jour d’un service cloud hébergé dans Azure, vérifiez que l’adresse IP virtuelle du service n’est pas modifiée. De nombreux services de gestion de domaine utilisent la méthode DNS (Domain Name System), une méthode d’enregistrement pour stocker des noms de domaine et qui fonctionne uniquement si l’adresse IP virtuelle est inchangée. Utilisez l’**Assistant Publication** dans Azure Tools pour garantir que l’adresse IP virtuelle de votre service cloud ne change pas lors de sa mise à jour. Pour plus d’informations sur l’utilisation de la gestion de domaine DNS pour les services cloud, consultez [Configuration d’un nom de domaine personnalisé pour un service cloud Azure](/azure/cloud-services/cloud-services-custom-domain-name-portal).

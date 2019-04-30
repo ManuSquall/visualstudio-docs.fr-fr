@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: eede5f76a9689f79e769d23572a1d92f3ae3a867
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681476"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891902"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>Ajouter un menu contextuel dans une fenêtre outil
 Cette procédure pas à pas place un menu contextuel dans une fenêtre outil. Un menu contextuel est un menu qui s’affiche quand un utilisateur clique sur un bouton, une zone de texte ou un arrière-plan de la fenêtre. Commandes du menu contextuel comportent comme des commandes sur d’autres menus ou les barres d’outils. Pour prendre en charge un menu contextuel, spécifiez-le dans le *.vsct* de fichiers et les afficher en réponse à un clic droit de la souris.

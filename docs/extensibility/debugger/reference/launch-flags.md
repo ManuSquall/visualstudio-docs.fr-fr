@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 302c44b3d4947baa95554966246f15175841257d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62913921"
 ---
 # <a name="launchflags"></a>LAUNCH_FLAGS
 Spécifie les indicateurs de lancement du débogage.
@@ -57,7 +57,7 @@ Ces valeurs sont passées en tant qu’argument à la [LaunchSuspended](../../..
 
 Ces indicateurs peuvent être combinées avec un opérateur de bits `OR`.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : msdbg.h
 
 Espace de noms : Microsoft.VisualStudio.Debugger.Interop

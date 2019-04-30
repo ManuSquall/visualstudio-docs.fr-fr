@@ -25,13 +25,13 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 8e6be79bc38e9283493bf5b7428a21c17cf9d3e0
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57870591"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62896618"
 ---
-# <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Spécificateurs de format pour C++ dans le débogueur Visual Studio
+# <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Pour les spécificateurs de format C++ dans le débogueur Visual Studio
 Vous pouvez modifier le format dans lequel une valeur est affichée dans le **espion**, **automatique**, et **variables locales** windows à l’aide de spécificateurs de format.
 
 Vous pouvez également utiliser des spécificateurs de format dans le **immédiat** fenêtre, le **commande** fenêtre, dans [des points de trace](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)et même les fenêtres sources. Si vous faites une pause d’une expression dans ces fenêtres, le résultat s’affiche dans un [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). L’affichage du DataTip reflète le spécificateur de format.
@@ -62,7 +62,7 @@ Vous pouvez afficher et sélectionner dans la liste des spécificateurs de forma
 ::: moniker-end
 
 ## <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> Spécificateurs de format
-Les tableaux suivants décrivent les spécificateurs de format que vous pouvez utiliser dans Visual Studio. Les spécificateurs en gras sont uniquement compatible avec le nouveau débogueur et ne pas pour le débogage d’interopérabilité avec C++ / c++ / CLI.
+Les tableaux suivants décrivent les spécificateurs de format que vous pouvez utiliser dans Visual Studio. Les spécificateurs en gras sont uniquement compatible avec le nouveau débogueur et ne pas pour le débogage d’interopérabilité avec C++/CLI.
 
 ::: moniker range=">= vs-2019" 
 
@@ -167,7 +167,7 @@ Les spécificateurs en **gras** sont pris en charge uniquement pour le débogage
 |wm|Numéros de messages Windows|0x0010|WM_CLOSE|
 |!|format brut, ignorant les personnalisations de vue de type de données|\<représentation personnalisée>|4|
 
-### <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Spécificateurs pour les emplacements de mémoire de débogage d’interopérabilité avec C++ / de format c++ / CLI
+### <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Pour les emplacements de mémoire de débogage d’interopérabilité avec les spécificateurs de format C++/CLI
 Le tableau suivant décrit les symboles de mise en forme pour les emplacements de mémoire. Vous pouvez utiliser un spécificateur d’emplacement de mémoire avec n’importe quelle valeur ou expression correspondant à un emplacement.
 
 |Symbole|Format|Valeur d’espion d’origine|Valeur affichée|

@@ -24,11 +24,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f884206ecafebbe26bfdadfaa7e95f3dbd0f389f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948724"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901629"
 ---
 # <a name="walkthrough-debugging-a-web-form"></a>Procédure pas à pas : Débogage d’un formulaire web
 Les étapes de cette procédure pas à pas vous expliquent comment déboguer une application Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], également connue sous le nom de Web Form. Elle vous explique également comment démarrer et arrêter l’exécution, définir des points d’arrêt et examiner des variables dans la fenêtre **Espion**.

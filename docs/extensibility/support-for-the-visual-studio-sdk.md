@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 941ba0a890e854f449647977162183cbcac1bab8
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58193894"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62432432"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>Prise en charge du SDK Visual Studio
 Plusieurs options de support sont disponibles pour les clients qui ont des questions sur la façon d’étendre l’environnement de développement intégré (IDE) Visual Studio.

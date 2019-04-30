@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 418a1a22979b701ec1d1d32521f7f89e2c5274eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978326"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Résoudre les problèmes de déploiement de solutions Office
   Cette rubrique contient des informations sur la résolution des problèmes courants que vous pouvez rencontrer lorsque vous déployez des solutions Office.

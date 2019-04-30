@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: fddae48178ec6c56ce647f5c4f3a1bff3d81a980
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58153316"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955192"
 ---
 # <a name="debugstackframedescriptor-structure"></a>Structure DebugStackFrameDescriptor
 Énumère les frames de pile et fusionne les résultats de plusieurs énumérateurs sur le même thread.  

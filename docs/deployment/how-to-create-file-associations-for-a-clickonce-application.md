@@ -1,5 +1,5 @@
 ---
-title: 'Comment : créer des Associations de fichiers pour une Application ClickOnce | Microsoft Docs'
+title: 'Procédure : Créer des Associations de fichiers pour une Application ClickOnce | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,13 +16,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 15d9b81bd342ccd8a5ee3377323e140ab1167c10
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633042"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62899458"
 ---
-# <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Guide pratique pour créer des associations de fichiers pour une application ClickOnce
+# <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Procédure : Créer des associations de fichiers pour une application ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] applications peuvent être associées à une ou plusieurs extensions de nom de fichier afin que l’application démarrera automatiquement quand l’utilisateur ouvre un fichier de ces types. Ajout du support d’extension de nom de fichier à un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application est simple.
 
 ### <a name="to-create-file-associations-for-a-clickonce-application"></a>Pour créer des associations de fichiers pour une application ClickOnce
@@ -41,7 +41,7 @@ ms.locfileid: "56633042"
 
    - `progid`: Chaîne identifiant de manière unique le type de fichier pour le marquer dans le Registre.
 
-   - `defaultIcon`: Une icône à utiliser pour ce type de fichier. L’icône doit être ajoutée comme une ressource de fichier dans le manifeste d’application. Pour plus d'informations, consultez [How to: Include a Data File in a ClickOnce Application](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).
+   - `defaultIcon`: Une icône à utiliser pour ce type de fichier. L’icône doit être ajoutée comme une ressource de fichier dans le manifeste d’application. Pour plus d'informations, voir [Procédure : Inclure un fichier de données dans une application ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).
 
      Pour obtenir un exemple de la `file` et `fileAssociation` éléments, consultez [ \<fileAssociation > élément](../deployment/fileassociation-element-clickonce-application.md).
 

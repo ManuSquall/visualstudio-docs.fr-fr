@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bbcda5eef8ac6ac6aa20c6f487dfc94beb10866c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56714182"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929667"
 ---
 # <a name="troubleshoot-breakpoints-in-the-visual-studio-debugger"></a>Résoudre les problèmes de points d’arrêt dans le débogueur Visual Studio
 
@@ -35,7 +35,7 @@ Accédez à la **Modules** fenêtre (**déboguer** > **Windows** > **Modules**) 
 
 * Si votre module n’est pas chargé, vérifiez la commande suivante pour rechercher la cause :
   * Vérifiez que vous déboguez le processus correct.
-  * Vérifiez que vous déboguez le bon type de code. Vous pouvez trouver le type de code, le débogueur est configuré pour déboguer dans le **processus** fenêtre (**déboguer** > **Windows**  >  **Processus**). Par exemple, si vous essayez de déboguer C# de code, vérifiez que votre débogueur est configuré pour le type de .NET Framework approprié (par exemple, géré (v4\*) et géré (v2\*/v3\*) et géré (CoreCLR)) .
+  * Vérifiez que vous déboguez le bon type de code. Vous pouvez trouver le type de code, le débogueur est configuré pour déboguer dans le **processus** fenêtre (**déboguer** > **Windows**  >  **Processus**). Par exemple, si vous essayez de déboguer du code c#, vérifiez que votre débogueur est configuré pour le type approprié de .NET Framework (par exemple, géré (v4\*) et géré (v2\*/v3\*) et géré (CoreCLR)).
 
 ### <a name="-the-current-source-code-is-different-from-the-version-built-into"></a>"… le code source en cours est différent de la version intégrée... »
 
@@ -53,7 +53,7 @@ Cette section fournit des informations pour résoudre les problèmes lorsque le 
 
 Voici quelques points à vérifier :
 1. Si votre code s’exécute dans plusieurs processus ou de plusieurs ordinateurs, assurez-vous que vous déboguez le processus correct ou l’ordinateur.
-2. Vérifiez que votre code s’exécute. Pour vérifier que votre code s’exécute, ajoutez un appel à `System.Diagnostics.Debugger.Break` (C#/VB) ou `__debugbreak` (C++) à la ligne de code où vous essayez de définir le point d’arrêt et puis régénérez votre projet.
+2. Vérifiez que votre code s’exécute. Pour vérifier que votre code s’exécute, ajoutez un appel à `System.Diagnostics.Debugger.Break` (C# /Visual Basic) ou `__debugbreak` (C++) à la ligne de code où vous essayez de définir le point d’arrêt et puis régénérez votre projet.
 3. Si vous déboguez du code optimisé, assurez-vous que la fonction où votre point d’arrêt est défini n’est pas en cours d’inline dans une autre fonction. Le `Debugger.Break` test décrit dans la vérification précédente peut travailler pour tester également ce problème.
 
 ## <a name="i-deleted-a-breakpoint-but-i-continue-to-hit-it-when-i-start-debugging-again"></a>J’ai supprimé un point d’arrêt, mais je continue de l’atteindre quand je relance le débogage

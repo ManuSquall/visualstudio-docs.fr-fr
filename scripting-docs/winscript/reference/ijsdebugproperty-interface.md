@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: e17bff10e2b876e4db2b9f3b55df29c2e87989ee
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151230"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977788"
 ---
 # <a name="ijsdebugproperty-interface"></a>IJsDebugProperty, interface
 Représente un Explorateur de propriétés.  
@@ -36,7 +36,7 @@ IJsDebugProperty : public IUnknown;
 |[Méthode IJsDebugProperty::GetMembers](../../winscript/reference/ijsdebugproperty-getmembers-method.md)|Obtient les membres de cet objet.|  
 |[Méthode IJsDebugProperty::GetPropertyInfo](../../winscript/reference/ijsdebugproperty-getpropertyinfo-method.md)|Obtient des informations pour cet objet.|  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  **En-tête :** jscript9diag.h  
   
 ## <a name="see-also"></a>Voir aussi  

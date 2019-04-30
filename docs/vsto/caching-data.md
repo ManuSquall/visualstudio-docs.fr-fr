@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c6e0f6d7fcf9920ddb8861712b7c5f8bf04506fc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616766"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939413"
 ---
 # <a name="cache-data"></a>Données du cache
   Vous pouvez mettre en cache les objets de données dans une personnalisation au niveau du document afin que les données sont accessibles en mode hors connexion ou sans ouvrir Microsoft Office Word ou Microsoft Office Excel. Pour mettre en cache un objet, l’objet doit avoir un type de données qui répond à certaines exigences. Nombreux types de données courants dans le .NET Framework répondent à ces exigences, y compris <xref:System.String>, <xref:System.Data.DataSet>, et <xref:System.Data.DataTable>.

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: de25fca07642414ec42f17c2e458b90ce94041cb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62925789"
 ---
 # <a name="evaluate-expressions"></a>Évaluer les expressions
 Les expressions sont créées à partir de chaînes passées à partir du **automatique**, **espion**, **Espion express**, ou **immédiat** windows. Lorsqu’une expression est évaluée, il génère une chaîne imprimable qui contient le nom et le type de variable ou argument et sa valeur. Cette chaîne est affichée dans la fenêtre IDE correspondante.

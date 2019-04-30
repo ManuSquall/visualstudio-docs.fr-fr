@@ -12,11 +12,11 @@ caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f6f71e145282d1d6e340060b9798ca54c9af9f4e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62584835"
 ---
 # <a name="visibilityitem-element"></a>Élément VisibilityItem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Le `VisibilityItem` élément détermine la visibilité statique des commandes e
 |guid|Obligatoire. Le GUID de l’identificateur de commande/ID GUID.|  
 |ID|Obligatoire. L’ID de l’identificateur de commande/ID GUID.|  
 |contexte|Obligatoire. Le contexte de l’interface utilisateur dans lequel la commande est visible.|  
-|Condition|Facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Condition|Optionnel. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Éléments enfants  
  Aucun.  

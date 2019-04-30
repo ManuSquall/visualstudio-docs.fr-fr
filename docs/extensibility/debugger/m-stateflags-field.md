@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8059c3573ef04335386b50d41459b9527d2c3c8d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62925422"
 ---
 # <a name="mstateflags-field"></a>champ m_stateFlags
 Stocke des informations sur l’état actuel de la <xref:System.Threading.Tasks.Task> objet.

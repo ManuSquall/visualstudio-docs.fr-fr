@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: bae4ed0a335a9c12d16cb46208f77c4b66f12547
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050496"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946327"
 ---
 # <a name="exception-thrown-and-not-caught"></a>Exception levée et non interceptée
 Vous inclus un `throw` instruction dans votre code, mais il ne se trouvait pas dans un **essayez** bloc, ou il a été associé ne **catch** bloc intercepter l’erreur. Exceptions sont levées à partir la **essayez** bloquer à l’aide de la **lever** instruction et interceptées en dehors de la **essayez** bloquer avec une **intercepter** instruction.  

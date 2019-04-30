@@ -9,14 +9,14 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: d5b04a64ea75458d23e64e83a405a103ae70a100
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227694"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906047"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Inspecter les propriétés XAML en phase de débogage
-Vous pouvez obtenir une vue en temps réel de votre code XAML en cours d’exécution à l’aide de l’**arborescence d’éléments visuels en direct** et de l’**Explorateur de propriétés en direct**. Ces outils affichent une arborescence des éléments de l’interface utilisateur de votre application XAML en cours d’exécution et montrent les propriétés d’exécution de tout élément d’interface utilisateur que vous sélectionnez.
+Vous pouvez obtenir une vue en temps réel de votre code XAML en cours d’exécution à l’aide de l’**arborescence d’éléments visuels en direct** et de l’**Explorateur de propriétés en direct**. Ces outils affichent une arborescence des éléments de l'interface utilisateur de votre application XAML en cours d'exécution et montrent les propriétés d'exécution de tout élément d'interface utilisateur que vous sélectionnez.
 
 Vous pouvez utiliser ces outils dans les configurations suivantes :
 
@@ -25,7 +25,7 @@ Vous pouvez utiliser ces outils dans les configurations suivantes :
 |Applications Windows Presentation Foundation (4.0 et versions ultérieures).|Windows 7 et versions ultérieures|
 |Applications pour la plateforme Windows universelle|Windows 10 et versions ultérieures, avec le [Windows 10 SDK](https://dev.windows.com/en-us/downloads/windows-10-sdk)|
 
-## <a name="looking-at-elements-in-the-live-visual-tree"></a>Examen des éléments dans l’arborescence d’éléments visuels dynamique
+## <a name="looking-at-elements-in-the-live-visual-tree"></a>Examen des éléments dans l'arborescence d'éléments visuels dynamique
 Commençons par une application WPF très simple qui présente une vue Liste et un bouton. Chaque fois que vous cliquez sur le bouton, un autre élément est ajouté à la liste. Les éléments avec un numéro pair sont en gris, tandis que les éléments avec un numéro impair sont en jaune.
 
 Créez une application WPF C# (Fichier > Nouveau > Projet, puis sélectionnez C# et recherchez Application WPF). Nommez-la **TestXAML**.
@@ -91,7 +91,7 @@ La structure réelle du code XAML inclut de nombreux éléments qui ne vous int�
 
 ![LivePropertyViewer dans DisplayLayout](../debugger/media/livevisualtreelivepropertyviewer-displaylayout.png "LiveVisualTreeLivePropertyViewer-DisplayLayout")
 
-**Aperçu de la sélection**. Vous pouvez activer ce mode en sélectionnant le troisième bouton en partant de la gauche dans la barre d’outils de l’arborescence d’éléments visuels dynamique. Ce mode affiche le code XAML dans lequel l'élément a été déclaré, si vous avez accès au code source de l'application. Sélectionnez **Activer la sélection** et **Aperçu de la sélection**, puis sélectionnez le bouton figurant dans l’application de test. Le fichier MainWindow.xaml s'ouvre dans Visual Studio et le curseur est placé sur la ligne où le bouton est défini.
+**Aperçu de la sélection**. Vous pouvez activer ce mode en sélectionnant le troisième bouton en partant de la gauche dans la barre d'outils de l'arborescence d'éléments visuels dynamique. Ce mode affiche le code XAML dans lequel l'élément a été déclaré, si vous avez accès au code source de l'application. Sélectionnez **Activer la sélection** et **Aperçu de la sélection**, puis sélectionnez le bouton figurant dans l’application de test. Le fichier MainWindow.xaml s'ouvre dans Visual Studio et le curseur est placé sur la ligne où le bouton est défini.
 
 ## <a name="using-xaml-tools-with-running-applications"></a>Utilisation des outils XAML avec les applications en cours d'exécution
 Vous pouvez utiliser ces outils XAML même quand vous ne disposez pas du code source. Quand vous effectuez l’attachement à une application XAML en cours d’exécution, vous pouvez utiliser l’**arborescence d’éléments visuels en direct** également sur les éléments d’interface utilisateur de cette application. En voici un exemple qui utilise la même application de test WPF que précédemment.

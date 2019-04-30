@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: bcb3535a2ace5818664a34a5d7b818d7dfd8b025
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704941"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62877570"
 ---
 # <a name="idebugbinderbind"></a>IDebugBinder::Bind
 Cette méthode obtient le contexte de la mémoire ou d’un objet qui contient la valeur actuelle du symbole.

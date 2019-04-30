@@ -21,11 +21,11 @@ ms.workload:
 - multiple
 monikerRange: vs-2017
 ms.openlocfilehash: 9c6f2eb4be56be8cf5e25c3238a91819df3bc574
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867617"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901380"
 ---
 # <a name="whats-new-for-the-debugger-in-visual-studio-2017"></a>Nouveautés du débogueur dans Visual Studio 2017
 

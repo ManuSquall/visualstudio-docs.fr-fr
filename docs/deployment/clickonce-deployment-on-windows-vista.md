@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4beefddd429384fadda71d9742e8c0fac606c38e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600101"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900500"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Déploiement ClickOnce sur Windows Vista
 
@@ -42,11 +42,11 @@ Visual Studio fournit les options suivantes pour la génération de manifeste :
 
    Cette approche est également appelé *virtualisation*. Utilisez cette option pour la compatibilité avec les applications existantes à partir de versions antérieures de Visual Studio.
 
-  Les nouvelles propriétés sont disponibles sur le **Application** page du Concepteur de projet (pour Visual C# projets uniquement) et dans le format de fichier projet MSBuild.
+  Les nouvelles propriétés sont disponibles sur le **Application** page du Concepteur de projet (pour les projets Visual c# uniquement) et dans le format de fichier projet MSBuild.
 
-  La méthode de configuration de génération de manifeste de contrôle de compte utilisateur dans l’IDE Visual Studio diffère selon le type de projet (Visual C# ou Visual Basic).
+  La méthode de configuration de génération de manifeste de contrôle de compte utilisateur dans l’IDE Visual Studio diffère selon le type de projet (Visual c# ou Visual Basic).
 
-  * Pour plus d’informations sur la configuration Visual C# projets pour la génération de manifeste, consultez [Application Page, Project Designer (C#)](../ide/reference/application-page-project-designer-csharp.md).
+  * Pour plus d’informations sur la configuration des projets Visual c# pour la génération de manifeste, consultez [Page Application, Concepteur de projets (c#)](../ide/reference/application-page-project-designer-csharp.md).
 
   * Pour plus d’informations sur la configuration des projets Visual Basic pour la génération de manifeste, consultez [Page Application, Concepteur de projets (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).
 

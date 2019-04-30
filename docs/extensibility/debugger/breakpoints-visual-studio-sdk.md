@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4c353ca11df1a897ec5dc8acecd822c1c1f44e92
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62890695"
 ---
 # <a name="breakpoints-visual-studio-sdk"></a>Points d’arrêt (SDK Visual Studio)
 Il existe trois types de points d’arrêt : en attente, la limite et d’erreur.

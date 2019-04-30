@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 60bb98644c1905b030176b28b97575b379bed38d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564544"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Inspecter des variables dans les fenêtres automatique et variables locales
 

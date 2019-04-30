@@ -26,11 +26,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 84e26a2d7dae70e0029817d4e6bb6e70dd53bce4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928951"
 ---
 # <a name="ltdependencygt-element-clickonce-deployment"></a>&lt;dépendance&gt; , élément (déploiement ClickOnce)
 Identifie la version de l’application à installer et l’emplacement du manifeste d’application.
@@ -80,10 +80,10 @@ Identifie la version de l’application à installer et l’emplacement du manif
 
 | Attribut | Description |
 |------------------| - |
-| `preRequisite` | Facultatif. Spécifie que cet assembly doit déjà exister dans le GAC. Les valeurs valides sont `true` et `false`. Si `true`et l’assembly spécifié n’existe pas dans le GAC, l’application ne parvient pas à exécuter. |
-| `visible` | Facultatif. Identifie l’identité de l’application de niveau supérieur, y compris ses dépendances. Utilisé en interne par [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pour gérer le stockage des applications et l’activation. |
+| `preRequisite` | Optionnel. Spécifie que cet assembly doit déjà exister dans le GAC. Les valeurs valides sont `true` et `false`. Si `true`et l’assembly spécifié n’existe pas dans le GAC, l’application ne parvient pas à exécuter. |
+| `visible` | Optionnel. Identifie l’identité de l’application de niveau supérieur, y compris ses dépendances. Utilisé en interne par [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pour gérer le stockage des applications et l’activation. |
 | `dependencyType` | Obligatoire. La relation entre cette dépendance et l’application. Les valeurs valides sont les suivantes :<br /><br /> -   `install`. Composant représente une installation distincte de l’application actuelle.<br />-   `preRequisite`. Composant est requis par l’application actuelle. |
-| `codebase` | Facultatif. Le chemin d’accès complet au manifeste d’application. |
+| `codebase` | Optionnel. Le chemin d’accès complet au manifeste d’application. |
 | `size` | Optionnel. La taille du manifeste d’application, en octets. |
 
 ## <a name="assemblyidentity"></a>assemblyIdentity
@@ -95,7 +95,7 @@ Identifie la version de l’application à installer et l’emplacement du manif
 |`Version`|Obligatoire. Spécifie le numéro de version de l’application, dans le format suivant : `major.minor.build.revision`|
 |`publicKeyToken`|Obligatoire. Spécifie une chaîne hexadécimale de 16 caractères qui représente les 8 derniers octets du hachage SHA-1 de la clé publique sous laquelle l’application ou l’assembly est signé. La clé publique utilisée pour se connecter doit être de 2 048 bits ou supérieur.|
 |`processorArchitecture`|Obligatoire. Spécifie le microprocesseur. Les valeurs valides sont `x86` pour 32 bits Windows et `IA64` pour Windows de 64 bits.|
-|`Language`|Optionnel. Identifie les codes de langue de deux parties de l’assembly. Par exemple, EN-US, qui signifie pour l’anglais (US). La valeur par défaut est `neutral`. Cet élément est dans le `asmv2` espace de noms.|
+|`Language`|Facultatif. Identifie les codes de langue de deux parties de l’assembly. Par exemple, EN-US, qui signifie pour l’anglais (US). La valeur par défaut est `neutral`. Cet élément est dans le `asmv2` espace de noms.|
 |`type`|Optionnel. Pour assurer la compatibilité avec Windows côte à côte vers l’arrière, installez technologie. La seule valeur autorisée est `win32`.|
 
 ## <a name="hash"></a>hash

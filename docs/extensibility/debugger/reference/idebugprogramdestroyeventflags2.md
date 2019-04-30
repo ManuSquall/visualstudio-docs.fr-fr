@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: aed4d652a300ac9b18d45456c56a0b9b56285206
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707781"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62917111"
 ---
 # <a name="idebugprogramdestroyeventflags2"></a>IDebugProgramDestroyEventFlags2
 Permet à un moteur de débogage remplacer le comportement par défaut de la [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] l’interface utilisateur lorsque vous arrêtez une session de débogage.
@@ -39,7 +39,7 @@ IDebugProgramDestroyEventFlags2 : IUnknown
 ## <a name="remarks"></a>Notes
  Le comportement par défaut de la [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] l’interface utilisateur consiste à revenir en arrière en mode Création après que tous les programmes ont envoyées à un programme événement de destruction. Cette interface permet à un moteur de débogage modifier ce comportement.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : Msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

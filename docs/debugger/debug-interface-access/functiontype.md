@@ -14,19 +14,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8913d9b26ab79a37e9d6f28a5f3bf1974df15a5f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554454"
 ---
 # <a name="functiontype"></a>FunctionType
 Chaque signature de fonction unique est identifié par un `SymTagFunctionType` symbole. Chaque paramètre est identifié en tant que classe enfant symbole avec un `SymTagFunctionArgType` balise.
 
-## <a name="properties"></a>Propriétés
+## <a name="properties"></a>Properties
  Le tableau suivant montre des propriétés supplémentaires valides pour ce type de symbole.
 
-|Property|Type de données|Description|
+|Propriété|Type de données|Description|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_callingConvention](../../debugger/debug-interface-access/idiasymbol-get-callingconvention.md)|`DWORD`|Une des valeurs de la [CV_call_e (énumération)](../../debugger/debug-interface-access/cv-call-e.md).|
 |[IDiaSymbol::get_classParent](../../debugger/debug-interface-access/idiasymbol-get-classparent.md)|`IDiaSymbol*`|Que cette fonction (ou méthode) est un membre de classe.|

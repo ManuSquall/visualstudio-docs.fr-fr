@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 64df7bd4c0d0dde303cdc15d7111688d14c7dc49
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146979"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935456"
 ---
 # <a name="iactivescriptauthoraddscriptlet"></a>IActiveScriptAuthor::AddScriptlet
 Ajoute un scriptlet de code en tant qu’enfant du niveau racine `IScriptNode` objet. Dans l’hôte, le nom qualifié complet du scriptlet est autorisé à avoir des deux niveaux.  

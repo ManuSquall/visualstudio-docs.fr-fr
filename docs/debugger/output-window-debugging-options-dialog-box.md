@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9224258a2dfd48cc17ed15f9723e455e225af8b2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716257"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62904785"
 ---
 # <a name="output-window-debugging-options-dialog-box"></a>Fenêtre Sortie, Débogage, boîte de dialogue Options
 Vous pouvez spécifier les types d’informations de débogage qui apparaissent dans la fenêtre **Sortie**. Pour afficher ces options, ouvrez le menu **Outils**, cliquez sur **Options**, développez le nœud **Débogage** et cliquez sur **Fenêtre Sortie**.
@@ -31,7 +31,7 @@ Vous pouvez spécifier les types d’informations de débogage qui apparaissent 
 
 **Paramètres de Trace WPF** cette catégorie contient des contrôles qui déterminent le niveau des messages de trace WPF qui apparaissent dans le **sortie** fenêtre. Vous pouvez spécifier si chaque type de message doit apparaître et spécifier un niveau allant de **Critique** à **Tous**.
 
-Pour plus d’informations, consultez [Comment : afficher les informations de Trace WPF](../debugger/how-to-display-wpf-trace-information.md).
+Pour plus d'informations, voir [Procédure : afficher les informations de trace WPF](../debugger/how-to-display-wpf-trace-information.md).
 
 Si vous avez besoin restaurer les paramètres par défaut, vous pouvez effectuer à l’aide de ce **outils** > **importation et exportation de paramètres** > **réinitialiser tous les paramètres**. Si vous souhaitez uniquement un sous-ensemble de paramètres de réinitialisation, enregistrez vos paramètres dans le **Assistant Importation et exportation paramètres** avant d’apporter les modifications que vous souhaitez tester, puis importer vos paramètres enregistrés ultérieurement.
 

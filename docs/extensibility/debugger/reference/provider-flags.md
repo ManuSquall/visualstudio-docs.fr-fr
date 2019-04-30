@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 803d9569c611e3c4cd70f2c82ecd525716d8ddb3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687495"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62913525"
 ---
 # <a name="providerflags"></a>PROVIDER_FLAGS
 Spécifie les propriétés souhaitées doivent être obtenues à partir d’un fournisseur de programme.
@@ -75,7 +75,7 @@ public enum enum_PROVIDER_FLAGS {
 
   Ces valeurs peuvent être combinées avec un opérateur de bits `OR`.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

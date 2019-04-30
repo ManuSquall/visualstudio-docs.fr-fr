@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: cb0df87f4147fab0dbb356b9699393c5a8e81399
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62914886"
 ---
 # <a name="ienumdebugcustomattributes"></a>IEnumDebugCustomAttributes
 Énumère les attributs personnalisés.
@@ -45,7 +45,7 @@ IEnumCustomAttributes : IUnknown
 |[Clone](../../../extensibility/debugger/reference/ienumdebugcustomattributes-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur en cours.|
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugcustomattributes-getcount.md)|Obtient le nombre d’attributs personnalisés dans un énumérateur.|
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : sh.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

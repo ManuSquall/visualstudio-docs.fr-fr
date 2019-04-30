@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: d2ce13fc55c94514bb9da24e43a5c54671becde5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906489"
 ---
 # <a name="how-to-specify-a-net-framework-version-for-debugging-c-visual-basic-f"></a>Procédure : Spécifier une Version du .NET Framework pour le débogage (C#, Visual Basic, F#)
 

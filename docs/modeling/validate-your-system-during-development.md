@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ce0822f5731e7c09a6f6dff9116e70b97a529206
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316754"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62907144"
 ---
 # <a name="validate-your-system-during-development"></a>Validation de votre système pendant le développement
 Visual Studio peut vous aider à garder votre logiciel en cohérence avec les besoins des utilisateurs et avec l’architecture de votre système.

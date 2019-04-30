@@ -12,14 +12,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7810889d4af411477573c71aa694d797a90763f3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62896017"
 ---
 # <a name="graphics-api-and-memory-statistics"></a>API des graphiques et des statistiques de la mémoire
-<!-- VERSIONLESS --> Visual Studio 2017 et supérieur prennent en charge les outils graphiques statistiques d’API et les statistiques de la mémoire.  Ces deux outils vous permettent d’afficher des divers éléments d’informations sur l’utilisation de l’API de Direct3D, ainsi que la consommation de mémoire GPU de diverses ressources.
+<!-- VERSIONLESS -->
+Visual Studio 2017 et supérieur prennent en charge les outils graphiques statistiques d’API et les statistiques de la mémoire.  Ces deux outils vous permettent d’afficher des divers éléments d’informations sur l’utilisation de l’API de Direct3D, ainsi que la consommation de mémoire GPU de diverses ressources.
 
 ## <a name="graphics-api-statistics"></a>Statistiques d’API graphiques
 Les statistiques d’API graphiques dans Visual Studio Graphics Diagnostics vous permet d’afficher tous les appels Direct3D qui ont été apportées et le nombre de chaque appel.  Pour afficher la fenêtre, sélectionnez le **Afficher > statistiques d’API** élément de menu.

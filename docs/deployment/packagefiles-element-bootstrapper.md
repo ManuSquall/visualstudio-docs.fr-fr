@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3f3a1ee08fec613522be5247842e10ced1c032e7
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651836"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898709"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;Tâches PackageFiles&gt; élément (programme d’amorçage)
 Le `PackageFiles` élément contient `PackageFile` éléments qui définissent les packages d’installation exécutées en raison de la `Command` élément.
@@ -59,7 +59,7 @@ Le `PackageFiles` élément contient `PackageFile` éléments qui définissent l
 | `HomeSite` | Optionnel. L’emplacement du package sur le serveur distant, si elle n’est pas inclus dans le programme d’installation. |
 | `CopyOnBuild` | Optionnel. Spécifie si le programme d’amorçage doit copier le fichier de package sur le disque au moment de la génération. La valeur par défaut est true. |
 | `PublicKey` | La clé publique chiffrée du signataire de certificat du package. Obligatoire si `HomeSite` est utilisée ; sinon, facultatif. |
-| `Hash` | Facultatif. Un hachage SHA1 du fichier du package. Cela est utilisé pour vérifier l’intégrité du fichier au moment de l’installation. Si le hachage identique ne peut pas être calculé à partir du fichier de package, le package ne sera pas installé. |
+| `Hash` | Optionnel. Un hachage SHA1 du fichier du package. Cela est utilisé pour vérifier l’intégrité du fichier au moment de l’installation. Si le hachage identique ne peut pas être calculé à partir du fichier de package, le package ne sera pas installé. |
 
 ## <a name="example"></a>Exemple
  L’exemple de code suivant définit des packages pour le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] redistributable package et ses dépendances, telles que le programme d’installation de Windows.
