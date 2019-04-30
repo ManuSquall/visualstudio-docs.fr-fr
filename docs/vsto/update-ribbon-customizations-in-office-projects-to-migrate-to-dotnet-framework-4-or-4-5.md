@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0fae2dc72c44b90068212c09086c63c9e00fd2d0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 63f86011b7794ca0ddd17b890e3374327db3af0c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446931"
 ---
 # <a name="update-ribbon-customizations-in-office-projects-that-you-migrate-to-the-net-framework-4-or-the-net-framework-45"></a>Mettre à jour des personnalisations de ruban dans les projets Office que vous migrez vers le .NET Framework 4 ou .NET Framework 4.5
   Si votre projet contient une personnalisation de ruban qui a été créée à l’aide de la **ruban (Concepteur visuel)** l’élément de projet, vous devez vous les modifications suivantes à votre code de projet si le framework cible est remplacée par la [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou plus tard.
@@ -75,7 +75,7 @@ ms.locfileid: "60096541"
 3. Dans la méthode `InitializeComponent`, modifiez tout code qui construit un contrôle de ruban pour que le code utilise à la place l'une des méthodes d'assistance de l'objet <xref:Microsoft.Office.Tools.Ribbon.RibbonFactory>.
 
     > [!NOTE]
-    >  Dans les projets Visual C#, vous devez développer la zone nommée `Component Designer generated code` pour voir la méthode `InitializeComponent`.
+    > Dans les projets Visual C#, vous devez développer la zone nommée `Component Designer generated code` pour voir la méthode `InitializeComponent`.
 
      Par exemple, supposons que votre fichier contienne la ligne de code suivante qui instancie un <xref:Microsoft.Office.Tools.Ribbon.RibbonButton> nommé `button1` dans un projet qui cible .NET Framework 3.5.
 

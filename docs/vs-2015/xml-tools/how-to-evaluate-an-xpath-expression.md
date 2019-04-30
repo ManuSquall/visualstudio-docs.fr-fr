@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a0c79da47b83f8bf5b44af16ca291e2424011b80
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 03c43d272d3c740c55314db5d1b7b6c225b7e5c8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075608"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421759"
 ---
 # <a name="how-to-evaluate-an-xpath-expression"></a>Procédure : évaluation d'une expression XPath
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Vous pouvez évaluer des expressions XPath avec le **Espion express** boîte de 
 - Les fonctions définies par l'utilisateur ne sont pas prises en charge.  
   
 > [!NOTE]
->  La procédure suivante utilise les fichiers belowAvg.xsl et books.xml de la [procédure pas à pas : Déboguer une feuille de Style XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) rubrique.  
+> La procédure suivante utilise les fichiers belowAvg.xsl et books.xml de la [procédure pas à pas : Déboguer une feuille de Style XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) rubrique.  
   
 ### <a name="to-evaluate-an-xpath-expression"></a>Pour évaluer une expression XPath  
   

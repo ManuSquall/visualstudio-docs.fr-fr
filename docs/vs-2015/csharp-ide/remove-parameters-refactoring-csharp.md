@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a28076b8c394818c248a5a18c7bc91d484f2c28a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 40a884fe2ae6aaf73256d8edbcbd083a193b0342
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045796"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444619"
 ---
 # <a name="remove-parameters-refactoring-c"></a>Supprimer les paramètres (Refactorisation C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60045796"
  Vous effectuez l’opération Supprimer les paramètres en positionnant le curseur sur une méthode, un indexeur ou un délégué d’abord. Lorsque le curseur est en position, pour appeler la supprimer `Parameters` opération, cliquez sur le **refactoriser** menu, appuyez sur le raccourci clavier, ou sélectionnez la commande dans le menu contextuel.  
   
 > [!NOTE]
->  Vous ne pouvez pas supprimer le premier paramètre dans une méthode d’extension.  
+> Vous ne pouvez pas supprimer le premier paramètre dans une méthode d’extension.  
   
 ### <a name="to-remove-parameters"></a>Pour supprimer des paramètres  
   
@@ -73,7 +73,7 @@ ms.locfileid: "60045796"
  Vous pouvez supprimer les paramètres à partir d’une déclaration de méthode ou un appel de méthode. Positionnez le curseur dans le nom de déclaration ou de délégué de méthode et supprimer des paramètres d’appel.  
   
 > [!CAUTION]
->  Supprimez Active des paramètres vous permet de supprimer un paramètre qui est référencé dans le corps du membre, mais il ne supprimez pas les références à ce paramètre dans le corps de méthode. Cela peut introduire des erreurs de build dans votre code. Toutefois, vous pouvez utiliser la **aperçu des modifications** boîte de dialogue pour passer en revue votre code avant d’exécuter l’opération de refactorisation.  
+> Supprimez Active des paramètres vous permet de supprimer un paramètre qui est référencé dans le corps du membre, mais il ne supprimez pas les références à ce paramètre dans le corps de méthode. Cela peut introduire des erreurs de build dans votre code. Toutefois, vous pouvez utiliser la **aperçu des modifications** boîte de dialogue pour passer en revue votre code avant d’exécuter l’opération de refactorisation.  
   
  Si un paramètre en cours de suppression est modifié pendant l’appel à une méthode, la suppression du paramètre supprimera également la modification. Par exemple, si un appel de méthode est modifié à partir de  
   

@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6980ecc7676afd978f8dfd243ef8f383413ad83d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c079d3f85dbab87e30edb059c76202dd727f715c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074881"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425058"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Enregistrer les données d’un objet dans une base de données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Vous pouvez enregistrer des données dans des objets à une base de données en 
  Par défaut, les méthodes DBDirect sont créés sur un TableAdapter qui peut être exécuté directement par rapport à la base de données. Ces méthodes peuvent être appelées directement et ne nécessitent pas <xref:System.Data.DataSet> ou <xref:System.Data.DataTable> pour rapprocher des modifications pour envoyer des mises à jour à une base de données.  
   
 > [!NOTE]
->  Lorsque vous configurez un TableAdapter, la requête principale doit fournir suffisamment d’informations pour les méthodes DBDirect doit être créé. Par exemple, si un TableAdapter est configuré pour interroger des données à partir d’une table qui n’a pas une colonne de clé primaire définie, il ne génère pas de méthodes DBDirect.  
+> Lorsque vous configurez un TableAdapter, la requête principale doit fournir suffisamment d’informations pour les méthodes DBDirect doit être créé. Par exemple, si un TableAdapter est configuré pour interroger des données à partir d’une table qui n’a pas une colonne de clé primaire définie, il ne génère pas de méthodes DBDirect.  
   
 |Méthode DBDirect du TableAdapter|Description|  
 |----------------------------------|-----------------|  
@@ -57,7 +57,7 @@ Vous pouvez enregistrer des données dans des objets à une base de données en 
 - Modifier les enregistrements en appelant le `TableAdapter.Update` (méthode), en passant les nouvelles valeurs à mettre à jour l’enregistrement et en passant les valeurs d’origine pour rechercher l’enregistrement.  
   
     > [!NOTE]
-    >  Votre objet doit conserver les valeurs d’origine afin de les passer à la `Update` (méthode). Cet exemple utilise des propriétés avec un `orig` préfixe pour stocker les valeurs d’origine.  
+    > Votre objet doit conserver les valeurs d’origine afin de les passer à la `Update` (méthode). Cet exemple utilise des propriétés avec un `orig` préfixe pour stocker les valeurs d’origine.  
   
      L’exemple suivant met à jour un enregistrement existant dans le `Customers` table en passant les valeurs nouvelles et originale de la `Customer` de l’objet à le `TableAdapter.Update` (méthode).  
   
@@ -69,7 +69,7 @@ Vous pouvez enregistrer des données dans des objets à une base de données en 
 - Supprimer les enregistrements en appelant le `TableAdapter.Delete` (méthode) et en passant les valeurs d’origine pour rechercher l’enregistrement.  
   
     > [!NOTE]
-    >  Votre objet doit conserver les valeurs d’origine afin de les passer à la `Delete` (méthode). Cet exemple utilise des propriétés avec un `orig` préfixe pour stocker les valeurs d’origine.  
+    > Votre objet doit conserver les valeurs d’origine afin de les passer à la `Delete` (méthode). Cet exemple utilise des propriétés avec un `orig` préfixe pour stocker les valeurs d’origine.  
   
      L’exemple suivant supprime un enregistrement à partir de la `Customers` table en passant les valeurs d’origine dans le `Customer` de l’objet à le `TableAdapter.Delete` (méthode).  
   

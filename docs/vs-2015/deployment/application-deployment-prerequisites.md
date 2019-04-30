@@ -20,12 +20,12 @@ caps.latest.revision: 53
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0c76ed1b24350a10891df69687080988603553fa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4945efddb91142ce04f5b117129428ec4a054fc3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950216"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427259"
 ---
 # <a name="application-deployment-prerequisites"></a>Composants requis pour le déploiement d'applications
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Pour vous assurer que votre application sera installée et exécutée correcteme
   [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] peut détecter les composants requis manquants, et vous pouvez installer les conditions préalables à l’aide d’un programme d’amorçage. Pour plus d'informations, voir [Procédure : Installer les composants requis avec une Application ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
 > [!NOTE]
->  Pour changer les valeurs dans les manifestes générés par des outils tels que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et MageUI.exe, vous devez changer le manifeste de l'application dans un éditeur de texte, puis signer à nouveau les manifestes de l'application et de déploiement. Pour plus d'informations, voir [Procédure : Signer à nouveau les manifestes de déploiement et d’Application](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+> Pour changer les valeurs dans les manifestes générés par des outils tels que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et MageUI.exe, vous devez changer le manifeste de l'application dans un éditeur de texte, puis signer à nouveau les manifestes de l'application et de déploiement. Pour plus d'informations, voir [Procédure : Signer à nouveau les manifestes de déploiement et d’Application](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
  Si vous utilisez Visual Studio et ClickOnce pour déployer votre application, les packages de programme d'amorçage sélectionnés par défaut dépendent de la version du .NET Framework de la solution. Cependant, si vous changez la version du .NET Framework cible, vous devez mettre à jour manuellement les options de la boîte de dialogue **Composants requis**.  
   

@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6fafeeb386e1dd40067620d529cb25023d3f0f29
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9040c55b2298d18d1c87e652f76950f771bd14f5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437656"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Procédure : Spécifier un autre emplacement pour les mises à jour du déploiement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60087936"
 Vous pouvez installer votre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application initialement à partir d’un CD ou un partage de fichiers, mais l’application doit rechercher les mises à jour périodiques sur le Web. Vous pouvez spécifier un autre emplacement pour les mises à jour dans votre manifeste de déploiement afin que votre application peut mettre à jour lui-même à partir du Web après son installation initiale.  
   
 > [!NOTE]
->  Votre application doit être configurée pour installer localement pour utiliser cette fonctionnalité. Pour plus d’informations, consultez [Procédure pas à pas : déploiement manuel d’une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). En outre, si vous installez un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application à partir du réseau, définissez un autre emplacement causes [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] utilise cet emplacement pour l’installation initiale et toutes les mises à jour ultérieures. Si vous installez votre application localement (par exemple, à partir d’un CD), l’installation initiale est effectuée à l’aide du support d’origine, et toutes les mises à jour ultérieures utilisera l’autre emplacement.  
+> Votre application doit être configurée pour installer localement pour utiliser cette fonctionnalité. Pour plus d’informations, consultez [Procédure pas à pas : déploiement manuel d’une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). En outre, si vous installez un [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] application à partir du réseau, définissez un autre emplacement causes [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] utilise cet emplacement pour l’installation initiale et toutes les mises à jour ultérieures. Si vous installez votre application localement (par exemple, à partir d’un CD), l’installation initiale est effectuée à l’aide du support d’origine, et toutes les mises à jour ultérieures utilisera l’autre emplacement.  
   
 ### <a name="specifying-an-alternate-location-for-updates-by-using-mageuiexe-windows-forms-based-utility"></a>Spécification d’un autre emplacement pour les mises à jour à l’aide de MageUI.exe (utilitaire Windows Forms)  
   
@@ -56,7 +56,7 @@ Vous pouvez installer votre [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md
 3. Enregistrez le fichier.  
   
     > [!NOTE]
-    >  Vous devez maintenant resigner le fichier avec Mage.exe. Pour plus d’informations, consultez [Procédure pas à pas : déploiement manuel d’une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+    > Vous devez maintenant resigner le fichier avec Mage.exe. Pour plus d’informations, consultez [Procédure pas à pas : déploiement manuel d’une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 ## <a name="net-framework-security"></a>Sécurité .NET Framework  
  Si vous installez votre application à partir d’un support hors connexion tel qu’un CD, et l’ordinateur est en ligne, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] vérifie d’abord l’URL spécifiée par la `<deploymentProvider>` balise dans le manifeste de déploiement pour déterminer si l’emplacement de mise à jour contient une version plus récente de la application. Le cas échéant, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] installe l’application directement à partir de là, au lieu d’à partir du répertoire d’installation initiale, et le common language runtime (CLR) détermine le niveau de confiance de votre application à l’aide de niveau `<deploymentProvider>`. Si l’ordinateur est hors connexion, ou `<deploymentProvider>` est inaccessible, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] installe à partir du CD et le CLR accorde la confiance que basée sur le point d’installation ; pour une installation CD, cela signifie que votre application reçoit une confiance totale. Toutes les mises à jour ultérieures hériteront de ce niveau de confiance.  

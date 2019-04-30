@@ -14,12 +14,12 @@ caps.latest.revision: 64
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a3ff96a68d66c95d4f1302ba2f419c873e8f077d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8fd8188ef0efbe540e086ca6ce284a49b71444ed
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050210"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433379"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>Créer des diagrammes de couche à partir de votre code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ Pour visualiser l’architecture de haut niveau et logique de votre système log
  Avant de créer un diagramme de couche, vérifiez que votre solution a un projet de modélisation. Consultez [diagrammes et projets de modélisation UML créer](../modeling/create-uml-modeling-projects-and-diagrams.md).  
   
 > [!IMPORTANT]
->  Vous ne pouvez pas ajouter, glisser-déposer ni copier un diagramme de couche existant d'un projet de modélisation à un autre, ou bien vers un autre emplacement de la solution. Cela permet de conserver les références du diagramme d'origine, même si vous modifiez le diagramme. Cela empêche également un mauvais fonctionnement de la validation de couche et pourra provoquer d’autres problèmes, tels que des éléments manquants ou autre erreurs lorsque vous essayez d’ouvrir le diagramme.  
+> Vous ne pouvez pas ajouter, glisser-déposer ni copier un diagramme de couche existant d'un projet de modélisation à un autre, ou bien vers un autre emplacement de la solution. Cela permet de conserver les références du diagramme d'origine, même si vous modifiez le diagramme. Cela empêche également un mauvais fonctionnement de la validation de couche et pourra provoquer d’autres problèmes, tels que des éléments manquants ou autre erreurs lorsque vous essayez d’ouvrir le diagramme.  
 >   
->  Ajoutez au lieu de cela un nouveau diagramme de couche au projet de modélisation. Copiez les éléments depuis le diagramme source vers le nouveau diagramme. Enregistrez le projet de modélisation et le nouveau diagramme de couche.  
+> Ajoutez au lieu de cela un nouveau diagramme de couche au projet de modélisation. Copiez les éléments depuis le diagramme source vers le nouveau diagramme. Enregistrez le projet de modélisation et le nouveau diagramme de couche.  
   
 #### <a name="to-add-a-new-layer-diagram-to-a-modeling-project"></a>Pour ajouter un nouveau diagramme de couche à un projet de modélisation  
   
@@ -53,7 +53,7 @@ Pour visualiser l’architecture de haut niveau et logique de votre système log
      Choisissez **créer un nouveau projet de modélisation** pour ajouter un nouveau projet de modélisation à la solution.  
   
     > [!NOTE]
-    >  Le diagramme de couche doit être présent dans un projet de modélisation. Toutefois, vous pouvez le lier à des éléments situés n'importe où dans la solution.  
+    > Le diagramme de couche doit être présent dans un projet de modélisation. Toutefois, vous pouvez le lier à des éléments situés n'importe où dans la solution.  
   
 5. Veillez à enregistrer à la fois le projet de modélisation et le diagramme de couche.  
   
@@ -106,7 +106,7 @@ Pour visualiser l’architecture de haut niveau et logique de votre système log
  Une dépendance existe chaque fois qu'un artefact associé à une couche comporte une référence à un artefact associé à une autre couche. Par exemple, une classe dans une couche déclare une variable qui a une classe dans une autre couche. Vous pouvez effectuer une ingénierie à rebours des dépendances existantes pour les artefacts liés aux couches sur le diagramme.  
   
 > [!NOTE]
->  Les dépendances ne peuvent pas faire l'objet d'une ingénierie à rebours pour certains genres d'artefacts. Par exemple, aucune dépendance ne fera l'objet d'une ingénierie à rebours depuis ou vers une couche qui est liée à un fichier texte. Pour voir les artefacts ayant des dépendances que vous pouvez procéder à la rétroconception, ouvrez le menu contextuel pour une ou plusieurs couches, puis choisissez **afficher les liens**. Dans **Explorateur de couches**, examinez le **prend en charge la Validation** colonne. Dépendances ne sera pas à rebours pour les artefacts pour lesquels cette colonne affiche **False**.  
+> Les dépendances ne peuvent pas faire l'objet d'une ingénierie à rebours pour certains genres d'artefacts. Par exemple, aucune dépendance ne fera l'objet d'une ingénierie à rebours depuis ou vers une couche qui est liée à un fichier texte. Pour voir les artefacts ayant des dépendances que vous pouvez procéder à la rétroconception, ouvrez le menu contextuel pour une ou plusieurs couches, puis choisissez **afficher les liens**. Dans **Explorateur de couches**, examinez le **prend en charge la Validation** colonne. Dépendances ne sera pas à rebours pour les artefacts pour lesquels cette colonne affiche **False**.  
   
 - Sélectionnez une ou plusieurs couches, ouvrez le menu contextuel pour une couche sélectionnée, puis **générer des dépendances**.  
   

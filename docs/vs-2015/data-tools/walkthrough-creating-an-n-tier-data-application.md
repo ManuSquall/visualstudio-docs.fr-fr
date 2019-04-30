@@ -17,12 +17,12 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b1f585aaa3677955cef61a923061a62dcdc1e62
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b6c4ae0082d76b4eb9e58561daec48d196438bac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110451"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424749"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Procédure pas à pas : Création d’une application de données multiniveaux
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,14 +64,14 @@ N-* de couche données qui sont des applications accèdent aux données et sont 
  La première étape de cette procédure pas à pas consiste à créer une solution et deux projets de bibliothèque de classes. La première bibliothèque de classes contient le dataset (la classe DataSet typée et les DataTables générées qui contiennent les données de l'application). Ce projet est utilisé comme couche d'entité de données de l'application et figure généralement dans la couche intermédiaire. Le Concepteur de Dataset est utilisé pour créer le jeu de données initial et diviser automatiquement le code en deux bibliothèques de classes.  
   
 > [!NOTE]
->  Nommez correctement le projet et la solution avant de cliquer sur **OK**. Il vous sera alors plus facile de terminer cette procédure pas à pas.  
+> Nommez correctement le projet et la solution avant de cliquer sur **OK**. Il vous sera alors plus facile de terminer cette procédure pas à pas.  
   
 #### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>Pour créer la solution multicouche et la bibliothèque de classes DataEntityTier  
   
 1. À partir de la **fichier** menu, créez un nouveau projet.  
   
     > [!NOTE]
-    >  Le **Concepteur de Dataset** est pris en charge dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] et les projets c#. Créez le projet dans l'un de ces langages.  
+    > Le **Concepteur de Dataset** est pris en charge dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] et les projets c#. Créez le projet dans l'un de ces langages.  
   
 2. Dans le **nouveau projet** boîte de dialogue le **types de projets** volet, cliquez sur **Windows**.  
   
@@ -125,7 +125,7 @@ N-* de couche données qui sont des applications accèdent aux données et sont 
 6. Si la base de données requiert un mot de passe, sélectionnez l'option permettant d'inclure les données sensibles, puis cliquez sur **Suivant**.  
   
     > [!NOTE]
-    >  Si vous avez sélectionné un fichier de base de données local (au lieu de vous connecter à SQL Server), il vous sera peut-être demandé si vous souhaitez ajouter le fichier au projet. Cliquez sur **Oui** pour ajouter le fichier de base de données au projet.  
+    > Si vous avez sélectionné un fichier de base de données local (au lieu de vous connecter à SQL Server), il vous sera peut-être demandé si vous souhaitez ajouter le fichier au projet. Cliquez sur **Oui** pour ajouter le fichier de base de données au projet.  
   
 7. Cliquez sur **suivant** sur le **enregistrer la chaîne de connexion au fichier de Configuration de l’Application** page.  
   
@@ -153,7 +153,7 @@ N-* de couche données qui sont des applications accèdent aux données et sont 
    Le dataset et les TableAdapters sont divisés entre les deux projets de bibliothèque de classes. Le projet qui contenait initialement l'intégralité du dataset (DataAccessTier) ne contient désormais que les TableAdapters. Le projet désigné dans la **DataSet Project** propriété (DataEntityTier) contient le dataset typé : NorthwindDataSet.Dataset.Designer.vb (ou NorthwindDataSet.Dataset.Designer.cs).  
   
 > [!NOTE]
->  Quand vous séparez les datasets et les TableAdapters (en définissant la propriété **Projet DataSet**), les classes DataSet partielles existantes dans le projet ne sont pas déplacées automatiquement. Les classes DataSet partielles existantes doivent être manuellement déplacées dans le projet DataSet.  
+> Quand vous séparez les datasets et les TableAdapters (en définissant la propriété **Projet DataSet**), les classes DataSet partielles existantes dans le projet ne sont pas déplacées automatiquement. Les classes DataSet partielles existantes doivent être manuellement déplacées dans le projet DataSet.  
   
 ## <a name="creating-a-new-service-application"></a>Création d'une application de service  
  Cette procédure pas à pas décrivant comment accéder à la couche d'accès aux données à l'aide d'un service WCF, créez une application de service WCF.  
@@ -220,7 +220,7 @@ N-* de couche données qui sont des applications accèdent aux données et sont 
  Maintenant que la couche d'accès aux données contient les méthodes permettant de retourner les données, créez des méthodes dans le service de données pour appeler les méthodes dans la couche d'accès aux données.  
   
 > [!NOTE]
->  Pour les projets C#, vous devez ajouter une référence à l'assembly `System.Data.DataSetExtensions` pour la compilation du code suivant.  
+> Pour les projets C#, vous devez ajouter une référence à l'assembly `System.Data.DataSetExtensions` pour la compilation du code suivant.  
   
 #### <a name="to-create-the-getcustomers-and-getorders-functions-in-the-data-service"></a>Pour créer les fonctions GetCustomers et GetOrders dans le service de données  
   
@@ -322,7 +322,7 @@ N-* de couche données qui sont des applications accèdent aux données et sont 
 3. Sélectionnez **Service1** et cliquez sur **OK**.  
   
     > [!NOTE]
-    >  Si vous disposez de plusieurs services sur l'ordinateur actuel, sélectionnez le service que vous avez créé précédemment dans cette procédure pas à pas (le service contenant les méthodes GetCustomers et GetOrders).  
+    > Si vous disposez de plusieurs services sur l'ordinateur actuel, sélectionnez le service que vous avez créé précédemment dans cette procédure pas à pas (le service contenant les méthodes GetCustomers et GetOrders).  
   
 ## <a name="adding-datagridviews-to-the-form-to-display-the-data-returned-by-the-data-service"></a>Ajout de DataGridViews au formulaire pour afficher les données retournées par le service de données  
  Une fois que vous avez ajouté la référence de service au service de données, la fenêtre **Sources de données** est automatiquement remplie avec les données retournées par le service.  
@@ -361,7 +361,7 @@ N-* de couche données qui sont des applications accèdent aux données et sont 
  Le service retournant des données des tables Customers et Orders, la valeur par défaut de maxReceivedMessageSize n'est pas suffisante pour contenir les données et doit être augmentée. Pour cette procédure pas à pas, vous allez changer la valeur en 6553600. Vous allez modifier la valeur sur le client, ce qui mettra automatiquement à jour la référence de service.  
   
 > [!NOTE]
->  La taille inférieure par défaut est destinée à limiter l'exposition aux attaques par déni de service. Pour plus d'informations, consultez <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.  
+> La taille inférieure par défaut est destinée à limiter l'exposition aux attaques par déni de service. Pour plus d'informations, consultez <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.  
   
 #### <a name="to-increase-the-maxreceivedmessagesize-value"></a>Pour augmenter la valeur de maxReceivedMessageSize  
   

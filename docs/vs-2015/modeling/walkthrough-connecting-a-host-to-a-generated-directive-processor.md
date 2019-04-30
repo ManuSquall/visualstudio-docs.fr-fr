@@ -12,12 +12,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8832f31724d5e688b93dcca76cce8e1a496c9ced
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 40be072c9ebc518068d9f02a28507b011bec125a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083216"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446773"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Procédure pas à pas : Connexion d’un hôte à un processeur de Directive généré
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Vous pouvez écrire votre propre hôte qui traite les modèles de texte. Un hôt
  Dans cette procédure pas à pas, vous développez votre hôte personnalisé afin qu’il prend en charge les modèles de texte qui appellent des processeurs de directive. Lorsque vous définissez un langage spécifique à un domaine, il génère un *processeur de directive* pour le modèle de domaine. Le processeur de directive rend plus facile aux utilisateurs d’écrire des modèles qui accéder au modèle, ce qui réduit la nécessité d’écrire des assembly et importer des directives dans les modèles.  
   
 > [!WARNING]
->  Cette procédure pas à pas s’appuie sur [procédure pas à pas : Création d’un hôte de modèle de texte personnalisé](../modeling/walkthrough-creating-a-custom-text-template-host.md). Effectuez tout d’abord cette procédure pas à pas.  
+> Cette procédure pas à pas s’appuie sur [procédure pas à pas : Création d’un hôte de modèle de texte personnalisé](../modeling/walkthrough-creating-a-custom-text-template-host.md). Effectuez tout d’abord cette procédure pas à pas.  
   
  Cette procédure pas à pas comprend les tâches suivantes :  
   
@@ -68,7 +68,7 @@ Vous pouvez écrire votre propre hôte qui traite les modèles de texte. Un hôt
 2. Dans le menu **Générer** , cliquez sur **Générer la solution**.  
   
    > [!IMPORTANT]
-   >  Cette étape génère le processeur de directive et ajoute la clé pour celui-ci dans le Registre.  
+   > Cette étape génère le processeur de directive et ajoute la clé pour celui-ci dans le Registre.  
   
 3. Dans le menu **Déboguer**, cliquez sur **Démarrer le débogage**.  
   
@@ -120,7 +120,7 @@ Vous pouvez écrire votre propre hôte qui traite les modèles de texte. Un hôt
 5. Recherchez le code de la propriété `StandardAssemblyReferences`et remplacez-le par le code suivant :  
   
     > [!NOTE]
-    >  Dans cette étape, vous ajoutez des références aux assemblys qui sont requis par le processeur de directive généré qui prend en charge votre hôte.  
+    > Dans cette étape, vous ajoutez des références aux assemblys qui sont requis par le processeur de directive généré qui prend en charge votre hôte.  
   
     ```csharp  
     //the host can provide standard assembly references  
@@ -156,7 +156,7 @@ Vous pouvez écrire votre propre hôte qui traite les modèles de texte. Un hôt
 6. Recherchez le code de la fonction `ResolveDirectiveProcessor`et remplacez-le par le code suivant :  
   
     > [!IMPORTANT]
-    >  Ce code contient des références de codées en dur pour le nom du processeur de directive généré auquel vous souhaitez vous connecter. Vous pouvez facilement commettre cela plus générales, auquel cas il vérifie tous les processeurs de directive figurant dans le Registre et tente de trouver une correspondance. Dans ce cas, l’hôte fonctionnerait avec n’importe quel processeur de directive généré.  
+    > Ce code contient des références de codées en dur pour le nom du processeur de directive généré auquel vous souhaitez vous connecter. Vous pouvez facilement commettre cela plus générales, auquel cas il vérifie tous les processeurs de directive figurant dans le Registre et tente de trouver une correspondance. Dans ce cas, l’hôte fonctionnerait avec n’importe quel processeur de directive généré.  
   
     ```csharp  
     //the engine calls this method based on the directives the user has   
@@ -241,7 +241,7 @@ Vous pouvez écrire votre propre hôte qui traite les modèles de texte. Un hôt
 2. Ajoutez le code suivant au fichier texte :  
   
     > [!NOTE]
-    >  Le langage de programmation du modèle de texte n’a pas besoin de correspondre à celui de l’hôte personnalisé.  
+    > Le langage de programmation du modèle de texte n’a pas besoin de correspondre à celui de l’hôte personnalisé.  
   
     ```csharp  
     Text Template Host Test  
@@ -325,7 +325,7 @@ Vous pouvez écrire votre propre hôte qui traite les modèles de texte. Un hôt
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`  
   
     > [!NOTE]
-    >  Au lieu de taper l’adresse, vous pouvez parcourir le fichier CustomHost.exe dans **Windows Explorer**, puis faites glisser le fichier dans la fenêtre d’invite de commandes.  
+    > Au lieu de taper l’adresse, vous pouvez parcourir le fichier CustomHost.exe dans **Windows Explorer**, puis faites glisser le fichier dans la fenêtre d’invite de commandes.  
   
 3. Tapez un espace.  
   
@@ -336,7 +336,7 @@ Vous pouvez écrire votre propre hôte qui traite les modèles de texte. Un hôt
      `<YOUR PATH>TestTemplateWithDP.txt`  
   
     > [!NOTE]
-    >  Au lieu de taper l’adresse, vous pouvez parcourir dans le fichier TestTemplateWithDP.txt dans **Windows Explorer**, puis faites glisser le fichier dans la fenêtre d’invite de commandes.  
+    > Au lieu de taper l’adresse, vous pouvez parcourir dans le fichier TestTemplateWithDP.txt dans **Windows Explorer**, puis faites glisser le fichier dans la fenêtre d’invite de commandes.  
   
      L’application hôte personnalisée s’exécute et démarre le processus de transformation de modèle de texte.  
   

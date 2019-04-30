@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d8f02fbff9ed727359adbc5db1b25ee14dbccb3a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8ac9340ea853a1852d039f05a3ecbb100845ab84
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443542"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>Créer des pages d’application pour SharePoint
   Un *page application* est une page Web ASP.NET qui est conçue pour une utilisation dans un site SharePoint Web. Pages d’application sont un type spécialisé de page ASP.NET. La principale différence entre une page d’application et une page ASP.NET standard est qu’une page d’application contient du contenu est fusionné avec une page maître SharePoint. Une page maître permet aux pages d’application à partager la même apparence et le même comportement que les autres pages sur un site.
@@ -36,7 +36,7 @@ ms.locfileid: "56644443"
  Pages d’application ne peut pas effectuer les opérations suivantes. Toutefois, une page d’application est le meilleur type de page pour créer si vous souhaitez que la page contienne du code personnalisé. Bien que vous pouvez ajouter du code personnalisé à une page de site, le code s’arrête lorsque l’utilisateur personnalise la page à l’aide des outils tels que SharePoint Designer.
 
 > [!NOTE]
->  Visual Studio ne fournit pas les modèles qui vous aident à créer des pages de site pour un site SharePoint. Pour plus d’informations, consultez [les Types de pages SharePoint](http://go.microsoft.com/fwlink/?LinkID=211584).
+> Visual Studio ne fournit pas les modèles qui vous aident à créer des pages de site pour un site SharePoint. Pour plus d’informations, consultez [les Types de pages SharePoint](http://go.microsoft.com/fwlink/?LinkID=211584).
 
 ## <a name="create-an-application-page"></a>Créer une page d’application
  Pour créer une page d’application, ajoutez un **Page Application** élément à un projet SharePoint. Lorsque vous créez une page d’application, Visual Studio ajoute les dossiers suivants à votre projet :
@@ -58,7 +58,7 @@ ms.locfileid: "56644443"
  Concevoir le contenu d’une page d’application à l’aide de la vue de concepteur dans Visual Studio. Ce concepteur s’affiche lorsque vous ouvrez la page d’application dans votre projet (en double-cliquant dessus ou en ouvrant le menu contextuel, puis en choisissant **ouvrir**), puis choisissez le **conception** bouton en bas de l’éditeur.
 
 > [!NOTE]
->  Vous pouvez concevoir la page uniquement dans le **Source** vue du concepteur. Le **conception** vue du concepteur est désactivé pour les pages d’application.
+> Vous pouvez concevoir la page uniquement dans le **Source** vue du concepteur. Le **conception** vue du concepteur est désactivé pour les pages d’application.
 
  Vous pouvez déboguer une page d’application même manière que vous le feriez avec d’autres éléments de projet SharePoint dans Visual Studio. Lorsque vous démarrez le débogueur Visual Studio, Visual Studio ouvre le site SharePoint.
 

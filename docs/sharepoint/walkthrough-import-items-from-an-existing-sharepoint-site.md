@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 89559798e342c8993e523517e5c85fc38e1c0cf8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a2727f0f3a5f2b46c5110a33e63b102f9d26bdaf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110862"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446612"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Procédure pas à pas : Importer des éléments à partir d’un site SharePoint existant
   Cette procédure pas à pas montre comment importer des éléments à partir d’un site SharePoint existant dans un [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projet SharePoint.
@@ -75,7 +75,7 @@ ms.locfileid: "60110862"
  Ensuite, obtenez un fichier de configuration (.wsp) SharePoint qui contient les éléments de SharePoint et les éléments que vous souhaitez importer dans votre [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projet SharePoint. Si vous n’avez pas déjà d’un fichier .wsp, vous devez créer un à partir d’un site SharePoint existant. Pour cet exemple, vous allez exporter le site SharePoint par défaut dans un fichier .wsp.
 
 > [!IMPORTANT]
->  Si vous recevez une erreur d’exécution la procédure suivante, vous devez effectuer la procédure sur un système qui a accès au site SharePoint.
+> Si vous recevez une erreur d’exécution la procédure suivante, vous devez effectuer la procédure sur un système qui a accès au site SharePoint.
 
 ### <a name="to-export-an-existing-sharepoint-site"></a>Pour exporter un site SharePoint existant
 
@@ -117,7 +117,7 @@ ms.locfileid: "60110862"
 6. Dans le **spécifier la nouvelle source de projet** page, accédez à l’emplacement sur le système où vous avez enregistré le *.wsp* fichier précédemment, puis choisissez le **suivant** bouton.
 
    > [!NOTE]
-   >  Si vous choisissez la **Terminer** bouton sur cette page, tous les éléments disponibles dans le *.wsp* fichier sera importé.
+   > Si vous choisissez la **Terminer** bouton sur cette page, tous les éléments disponibles dans le *.wsp* fichier sera importé.
 
 7. Dans le **sélectionner les éléments à importer** boîte, désactivez toutes les cases à cocher dans la liste à l’exception de **colonne Test**, puis choisissez le **Terminer** bouton.
 

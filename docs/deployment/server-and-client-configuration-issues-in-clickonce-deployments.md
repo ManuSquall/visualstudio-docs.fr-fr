@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85c3e70fd1d88bfa82d1aa55fe27505414986415
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 5be4e6546d5900fbd3274ab1eb8d55622fb2c58b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654085"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406783"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problèmes de configuration de serveur et de client dans les déploiements ClickOnce
 Si vous utilisez Internet Information Services (IIS) sur Windows Server, et que votre déploiement contient un type de fichier Windows ne reconnaît pas, tel qu’un fichier Microsoft Word, IIS refusera de transmettre ce fichier, et votre déploiement ne réussira pas.
@@ -57,7 +57,7 @@ Si vous utilisez Internet Information Services (IIS) sur Windows Server, et que 
  Actuellement, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] installations seront lancée seulement si l’URL pour le manifeste de déploiement est ouverte à l’aide d’Internet Explorer. Un déploiement dont l’URL est lancée à partir d’une autre application, comme Microsoft Office Outlook, sera lancé avec succès uniquement si Internet Explorer est défini en tant que le navigateur Web par défaut.
 
 > [!NOTE]
->  Mozilla Firefox est pris en charge si le fournisseur de déploiement n’est pas vide ou l’extension Assistant Microsoft .NET Framework est installée. Cette extension est empaquetée avec .NET Framework 3.5 SP1. Pour la prise en charge de l’application XBAP, le plug-in NPWPF est activé si nécessaire.
+> Mozilla Firefox est pris en charge si le fournisseur de déploiement n’est pas vide ou l’extension Assistant Microsoft .NET Framework est installée. Cette extension est empaquetée avec .NET Framework 3.5 SP1. Pour la prise en charge de l’application XBAP, le plug-in NPWPF est activé si nécessaire.
 
 ## <a name="activate-clickonce-applications-through-browser-scripting"></a>Activer des applications ClickOnce via des scripts de navigateur
  Si vous avez développé une page Web personnalisée qui lance un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application à l’aide d’Active Scripting, vous trouverez peut-être que l’application n’est pas lancée sur certains ordinateurs. Internet Explorer contient un paramètre appelé **demander confirmation pour les téléchargements de fichier**, ce qui affecte ce comportement. Ce paramètre est disponible sur le **sécurité** onglet dans son **Options** menu qui affecte ce comportement. Il est appelé **demander confirmation pour les téléchargements de fichier**, et il est répertorié sous le **télécharge** catégorie. La propriété est définie sur **activer** par défaut pour les pages Web intranet et à **désactiver** par défaut pour les pages Web d’Internet. Lorsque ce paramètre est défini sur **désactiver**, toute tentative d’activer un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application par programmation (par exemple, en assignant son URL à la `document.location` propriété) seront bloqués. Dans ce cas, les utilisateurs peuvent lancer des applications uniquement par le biais d’un téléchargement initiée par l’utilisateur, par exemple, en cliquant sur un lien hypertexte correspondant à l’URL de l’application.
@@ -75,7 +75,7 @@ Si vous utilisez Internet Information Services (IIS) sur Windows Server, et que 
 ```
 
 > [!NOTE]
->  Vous pouvez utiliser l’authentification NTLM (NT stimulation-réponse) si le site demande des informations d’identification autres que vos informations d’identification par défaut, puis, dans la boîte de dialogue de sécurité, vous cliquez sur **OK** lorsque vous y êtes invité si vous souhaitez enregistrer fourni informations d’identification pour les sessions ultérieures. Toutefois, cette solution de contournement ne fonctionne pas pour l’authentification de base.
+> Vous pouvez utiliser l’authentification NTLM (NT stimulation-réponse) si le site demande des informations d’identification autres que vos informations d’identification par défaut, puis, dans la boîte de dialogue de sécurité, vous cliquez sur **OK** lorsque vous y êtes invité si vous souhaitez enregistrer fourni informations d’identification pour les sessions ultérieures. Toutefois, cette solution de contournement ne fonctionne pas pour l’authentification de base.
 
 ## <a name="use-third-party-web-servers"></a>Utilisez des serveurs Web de tiers
  Si vous déployez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application à partir d’un serveur Web autres qu’IIS, vous pouvez rencontrer un problème si le serveur retourne le type de contenu incorrect pour la clé [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] fichiers, tels que le manifeste de déploiement et le manifeste d’application. Pour résoudre ce problème, consultez l’aide de votre serveur Web documentation sur la façon d’ajouter de nouveaux types de contenu sur le serveur et vérifiez que tous les mappages d’extension nom fichier répertorié dans le tableau suivant sont en place.

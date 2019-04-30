@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c1ce45aea2f39751822a3dda6f388bd2d8095775
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 791c50e6839190fa3700c335896f24f0714a64bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605092"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415154"
 ---
 # <a name="configuration-options-overview"></a>Vue d’ensemble des options de configuration
 Dans les projets [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] peut prendre en charge les configurations multiples qui peuvent être générées, débogué, exécution et/ou déployé. Une configuration est un type de build décrit avec un jeu nommé de propriétés, en général, les commutateurs du compilateur et les emplacements de fichiers. Par défaut, les nouvelles solutions contiennent deux configurations, *déboguer* et *version*. Ces configurations peuvent être appliquées à l’aide de leurs paramètres par défaut ou modifiés pour répondre à vos besoins spécifiques de solution ou projet. Certains packages peuvent être générées de deux manières : en tant qu’ActiveX éditeur ou comme un composant sur place. Projets n’avez pas besoin de prendre en charge plusieurs configurations, toutefois. S’il n'existe qu’une seule configuration disponible, cette configuration est mappée dans toutes les configurations de solution.
@@ -36,7 +36,7 @@ Dans les projets [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pe
 |*MyConfig*|N/A|\<Paramètres de MyConfig Win64 >|
 
 > [!NOTE]
->  Vous ne pouvez pas créer un *MyConfig* configuration de solution qui exclut une plateforme de Win32, sauf si le projet que vous ciblez ne prend pas en charge Win32.
+> Vous ne pouvez pas créer un *MyConfig* configuration de solution qui exclut une plateforme de Win32, sauf si le projet que vous ciblez ne prend pas en charge Win32.
 
  Modification de la configuration active pour une solution sélectionne le jeu de configurations de projet qui est créé, l’exécution, de débogage ou déployé dans cette solution. Par exemple, si vous modifiez la configuration de solution active *version* à *déboguer*, tous les projets au sein de cette solution sont automatiquement générés avec la configuration du projet indiquée dans le configuration de solution débogage. Les configurations du projet sont également appelées *déboguer* , sauf si l’utilisateur a apporté des modifications manuelles dans le Gestionnaire de Configuration de l’environnement.
 

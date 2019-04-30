@@ -1,5 +1,5 @@
 ---
-title: Réorganiser les paramètres (refactorisation C#) | Microsoft Docs
+title: Réorganiser les paramètres (refactorisation c#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -16,26 +16,26 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9bec38846f7703ff3958aa1c0fcc9a660a5e080d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: daf77a60256e59cabd176990f3642a2206a7f0d8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951371"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444548"
 ---
 # <a name="reorder-parameters-refactoring-c"></a>Réorganisation de la refactorisation de paramètres (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-`Reorder Parameters` est un Visual C# opération de refactorisation qui offre un moyen facile pour modifier l’ordre des paramètres pour les méthodes, indexeurs et délégués. `Reorder Parameters` Modifie la déclaration, et à tous les emplacements où le membre est appelé, les paramètres sont réorganisés pour refléter le nouvel ordre.  
+`Reorder Parameters` est un Visual c# opération de refactorisation qui offre un moyen facile pour modifier l’ordre des paramètres pour les méthodes, indexeurs et délégués. `Reorder Parameters` Modifie la déclaration, et à tous les emplacements où le membre est appelé, les paramètres sont réorganisés pour refléter le nouvel ordre.  
   
  Pour effectuer le `Reorder Parameters` opération, placez le curseur sur ou en regard d’une méthode, un indexeur ou un délégué. Lorsque le curseur est en position, appelez le `Reorder Parameters` opération en appuyant sur le raccourci clavier, ou en cliquant sur la commande dans le menu contextuel.  
   
 > [!NOTE]
->  Vous ne pouvez pas modifier le premier paramètre dans une méthode d’extension.  
+> Vous ne pouvez pas modifier le premier paramètre dans une méthode d’extension.  
   
 ### <a name="to-reorder-parameters"></a>Pour réorganiser les paramètres  
   
-1.  Créer une bibliothèque de classes nommée `ReorderParameters`, puis remplacez `Class1` avec l’exemple de code suivant.  
+1. Créer une bibliothèque de classes nommée `ReorderParameters`, puis remplacez `Class1` avec l’exemple de code suivant.  
   
     ```csharp  
     class ProtoClassA  
@@ -56,21 +56,21 @@ ms.locfileid: "58951371"
     }  
     ```  
   
-2.  Placez le curseur sur `MethodB`, soit dans la déclaration de méthode ou de l’appel de méthode.  
+2. Placez le curseur sur `MethodB`, soit dans la déclaration de méthode ou de l’appel de méthode.  
   
-3.  Sur le **refactoriser** menu, cliquez sur **réorganiser les paramètres**.  
+3. Sur le **refactoriser** menu, cliquez sur **réorganiser les paramètres**.  
   
      Le **réorganiser les paramètres** boîte de dialogue s’affiche.  
   
-4.  Dans le **réorganiser les paramètres** boîte de dialogue, sélectionnez `int i` dans le **paramètres** liste, puis cliquez sur le bouton bas.  
+4. Dans le **réorganiser les paramètres** boîte de dialogue, sélectionnez `int i` dans le **paramètres** liste, puis cliquez sur le bouton bas.  
   
      Vous pouvez également faire glisser `int i` après `bool b` dans le **paramètres** liste.  
   
-5.  Dans le **réorganiser les paramètres** boîte de dialogue, cliquez sur **OK**.  
+5. Dans le **réorganiser les paramètres** boîte de dialogue, cliquez sur **OK**.  
   
      Si le **aperçu des modifications de référence** option est sélectionnée dans le **réorganiser les paramètres** boîte de dialogue, le **aperçu des modifications - Réorganiser les paramètres** boîte de dialogue s’affiche. Elle fournit un aperçu des modifications dans la liste de paramètres `MethodB` dans la signature et l’appel de méthode.  
   
-    1.  Si le **aperçu des modifications - Réorganiser les paramètres** boîte de dialogue s’affiche, cliquez sur **appliquer**.  
+    1. Si le **aperçu des modifications - Réorganiser les paramètres** boîte de dialogue s’affiche, cliquez sur **appliquer**.  
   
          Dans cet exemple, la déclaration de méthode et tous les l’appel de méthode pour les sites `MethodB` sont mis à jour.  
   

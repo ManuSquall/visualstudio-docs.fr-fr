@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 745fea2ebaba478d9c405ab51db607e5eb025cc7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 65ada4a061fd928a074c9fcdb24fab60a277c457
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058003"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445843"
 ---
 # <a name="customizing-the-model-explorer"></a>Personnalisation de l'Explorateur de modèles
 Vous pouvez modifier l’apparence et le comportement de l’Explorateur pour votre Concepteur de langage spécifique à un domaine comme suit :
@@ -59,7 +59,7 @@ Vous pouvez modifier l’apparence et le comportement de l’Explorateur pour vo
     L’Explorateur doit montrer que trois **acteur** nœuds ayant votre icône.
 
 > [!NOTE]
->  Si vous avez défini une icône de nœud pour tout élément qui s’affiche dans l’Explorateur généré, tous les nœuds de l’Explorateur affiche l’icône. Si aucune icône n’a été défini, les nœuds seront affichent l’icône par défaut.
+> Si vous avez défini une icône de nœud pour tout élément qui s’affiche dans l’Explorateur généré, tous les nœuds de l’Explorateur affiche l’icône. Si aucune icône n’a été défini, les nœuds seront affichent l’icône par défaut.
 
 ## <a name="changing-the-name-displayed-on-an-explorer-node"></a>Modification du nom affiché sur un nœud de l’Explorateur
  Vous pouvez modifier la façon dont les noms d’éléments de modèle sont affichés dans l’Explorateur de. La procédure suivante montre comment afficher le nom de la **tâche** qui est référencé par une **commentaire** dans le nœud de commentaire.

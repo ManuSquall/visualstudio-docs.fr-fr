@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 756b8859c2f13c53eb46a0d9ae9d32836997f70f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 9b498bdb491e3a15dddf005d43435d84b837fcd0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035924"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387746"
 ---
 # <a name="how-to-debug-optimized-code"></a>Procédure : déboguer du code optimisé
 
@@ -52,7 +52,7 @@ ms.locfileid: "55035924"
 
   Les variables globales et statiques s'affichent toujours correctement. C'est également le cas pour les dispositions de structures. Si un pointeur désigne une structure et que la valeur de ce pointeur est correcte, chaque variable membre de la structure affichera la valeur correcte.
 
-  En raison de ces limitations, vous devez effectuer le débogage en utilisant si possible une version non optimisée de votre programme. Par défaut, l'optimisation est désactivée dans la configuration Debug d'un programme Visual C++ et activée dans la configuration Release.
+  En raison de ces limitations, vous devez effectuer le débogage en utilisant si possible une version non optimisée de votre programme. Par défaut, l’optimisation est désactivée dans la configuration Debug d’un programme Visual C++ et activée dans la configuration Release.
 
   Mais un bogue peut apparaître uniquement dans une version optimisée d'un programme. Dans ce cas, vous devez déboguer le code optimisé.
 
@@ -62,7 +62,7 @@ ms.locfileid: "55035924"
 
 2. Sélectionnez le projet dans l’Explorateur de solutions.
 
-3. Dans le menu **Affichage**, cliquez sur **Pages de propriétés**.
+3. Dans le menu **vue**, cliquez sur **Pages de propriétés**.
 
 4. Dans la boîte de dialogue **Pages de propriétés**, vérifiez que `Debug` est sélectionné dans la liste déroulante **Configuration**.
 
@@ -77,7 +77,7 @@ ms.locfileid: "55035924"
 9. Sélectionnez les propriétés de Configuration, C/C++, nœud de ligne de commande de la page de propriétés de projet et ajoutez `(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` à la **des Options supplémentaires** zone de texte.
 
     > [!WARNING]
-    >  `/Zo` nécessite Visual Studio 2013 Update 3 ou une version ultérieure.
+    > `/Zo` nécessite Visual Studio 2013 Update 3 ou une version ultérieure.
     >
     >  Ajouter `/Zo` désactive [Modifier & Continuer](../debugger/edit-and-continue-visual-csharp.md).
 

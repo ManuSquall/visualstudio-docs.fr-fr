@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 536e3a2aa6254004fb34eb243583184e5ab0279e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: aef35ff50080e9b596cc63915da77851b549bc3f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092173"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438860"
 ---
 # <a name="working-with-xml-data"></a>Utilisation de données XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ XML et les technologies y associées jouent un grand rôle dans le traitement de
  Visual Studio permet le débogage de feuilles de style XSLT. Le débogueur permet de définir des points d'arrêt dans une feuille de style XSLT, d'exécuter pas à pas la feuille de style XSLT à partir du code, etc.  
   
 > [!NOTE]
->  Le débogage XSLT est disponible dans les versions Professional Edition et Team Edition.  
+> Le débogage XSLT est disponible dans les versions Professional Edition et Team Edition.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Éditeur XML](../xml-tools/xml-editor.md)  

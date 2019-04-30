@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54b73a7f34c663661ae9cc2e2805e5fb6bd11480
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 83e54cf1b0e6f15b1a6c5dc0af379a8b88bd77f4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696439"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434239"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 Ce rappel est fourni à la [SccPopulateList](../extensibility/sccpopulatelist-function.md) par l’IDE et est utilisé par le plug-in de contrôle de code source pour mettre à jour une liste de fichiers ou répertoires (également fourni pour le `SccPopulateList` (fonction)).
@@ -56,7 +56,7 @@ typedef BOOL (*POPLISTFUNC) (
  Pour chaque fichier que le plug-in de contrôle de code source souhaite ajouter ou supprimer à partir de la liste des fichiers, il appelle cette fonction, en passant le `lpFileName`. Le `fAddRemove` indicateur indique un nouveau fichier à ajouter à la liste ou un ancien fichier à supprimer. Le `nStatus` paramètre donne le statut du fichier. Une fois le plug-in de SCC Ajout et suppression de fichiers, il retourne à partir de la [SccPopulateList](../extensibility/sccpopulatelist-function.md) appeler.
 
 > [!NOTE]
->  Le `SCC_CAP_POPULATELIST` bit de fonctionnalité est requise pour Visual Studio.
+> Le `SCC_CAP_POPULATELIST` bit de fonctionnalité est requise pour Visual Studio.
 
 ## <a name="see-also"></a>Voir aussi
 - [Fonctions de rappel implémentées par l’IDE](../extensibility/callback-functions-implemented-by-the-ide.md)

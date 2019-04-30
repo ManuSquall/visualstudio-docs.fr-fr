@@ -11,12 +11,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b91f89bc6c3db52526c8c5e64549b08310a17313
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 920b15d1cd4f7ed0ec11614a50f5dd32e050995a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432408"
 ---
 # <a name="add-custom-architecture-validation-to-layer-diagrams"></a>Ajouter une validation d'architecture personnalisée aux diagrammes de couche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,12 +26,12 @@ Dans Visual Studio, les utilisateurs peuvent valider le code source dans un proj
  Quand l’utilisateur sélectionne la commande **Valider l’architecture** sur un diagramme de couche, la méthode de validation standard est appelée, suivie de toutes les extensions de validation installées.  
   
 > [!NOTE]
->  La validation dans un diagramme de couche est différente de la validation dans les diagrammes UML. Dans un diagramme de couche, le but principal est de comparer le diagramme au code du programme dans d’autres parties de la solution.  
+> La validation dans un diagramme de couche est différente de la validation dans les diagrammes UML. Dans un diagramme de couche, le but principal est de comparer le diagramme au code du programme dans d’autres parties de la solution.  
   
  Vous pouvez empaqueter votre extension de validation de couche dans une extension d’intégration Visual Studio (VSIX) et la distribuer à d’autres utilisateurs de Visual Studio. Vous pouvez soit placer votre validateur seul dans une extension VSIX, soit le combiner dans la même extension VSIX que d’autres extensions. Vous devez écrire le code du validateur dans son propre projet Visual Studio, et non dans le même projet que d’autres extensions.  
   
 > [!WARNING]
->  Après avoir créé un projet de validation, copiez l’ [exemple de code](#example) à la fin de cette rubrique, puis adaptez-le à vos besoins.  
+> Après avoir créé un projet de validation, copiez l’ [exemple de code](#example) à la fin de cette rubrique, puis adaptez-le à vos besoins.  
   
 ## <a name="requirements"></a>Configuration requise  
  Consultez [Spécifications](../modeling/extend-layer-diagrams.md#prereqs).  
@@ -48,7 +48,7 @@ Dans Visual Studio, les utilisateurs peuvent valider le code source dans un proj
     Le modèle crée un projet qui contient un petit exemple.  
   
    > [!WARNING]
-   >  Makethe modèle fonctionne correctement :  
+   > Makethe modèle fonctionne correctement :  
    > 
    > - Modifiez les appels à `LogValidationError` pour supprimer les arguments facultatifs `errorSourceNodes` et `errorTargetNodes`.  
    >   - Si vous utilisez des propriétés personnalisées, appliquez la mise à jour mentionnée dans [ajouter des propriétés personnalisées aux diagrammes de couche](../modeling/add-custom-properties-to-layer-diagrams.md).  
@@ -58,7 +58,7 @@ Dans Visual Studio, les utilisateurs peuvent valider le code source dans un proj
 4. Pour tester l’extension, consultez [Débogage de la validation de couche](#debugging).  
   
    > [!NOTE]
-   >  Votre méthode est appelée uniquement dans des circonstances spécifiques et les points d’arrêt ne fonctionnent pas automatiquement. Pour plus d’informations, consultez [Débogage de la validation de couche](#debugging).  
+   > Votre méthode est appelée uniquement dans des circonstances spécifiques et les points d’arrêt ne fonctionnent pas automatiquement. Pour plus d’informations, consultez [Débogage de la validation de couche](#debugging).  
   
 5. Pour installer l’extension dans l’instance principale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ou sur un autre ordinateur, recherchez le fichier **.vsix** dans *bin\\*. Copiez-le sur l’ordinateur sur lequel vous souhaitez l’installer, puis double-cliquez dessus. Pour le désinstaller, utilisez **Extensions et mises à jour** dans le menu **Outils** .  
   
@@ -115,7 +115,7 @@ Dans Visual Studio, les utilisateurs peuvent valider le code source dans un proj
 7. Pour tester l’extension, consultez [Débogage de la validation de couche](#debugging).  
   
     > [!NOTE]
-    >  Votre méthode est appelée uniquement dans des circonstances spécifiques et les points d’arrêt ne fonctionnent pas automatiquement. Pour plus d’informations, consultez [Débogage de la validation de couche](#debugging).  
+    > Votre méthode est appelée uniquement dans des circonstances spécifiques et les points d’arrêt ne fonctionnent pas automatiquement. Pour plus d’informations, consultez [Débogage de la validation de couche](#debugging).  
   
 8. Pour installer l’extension VSIX dans l’instance principale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], ou sur un autre ordinateur, recherchez le fichier **.vsix** dans le répertoire **bin** du projet VSIX. Copiez-le sur l’ordinateur sur lequel vous souhaitez installer l’extension VSIX. Double-cliquez sur le fichier VSIX dans l’Explorateur Windows. (Explorateur de fichiers dans Windows 8).  
   
@@ -147,7 +147,7 @@ Dans Visual Studio, les utilisateurs peuvent valider le code source dans un proj
 - Quand vous découvrez une erreur, vous pouvez la signaler à l’aide de `LogValidationError()`.  
   
   > [!WARNING]
-  >  N’utilisez pas les paramètres facultatifs de `LogValidationError`.  
+  > N’utilisez pas les paramètres facultatifs de `LogValidationError`.  
   
   Quand l’utilisateur appelle la commande de menu **Valider l’architecture** , le système runtime de couche analyse les couches et leurs artefacts pour produire un graphique. Le graphique se compose de quatre parties :  
   
@@ -162,7 +162,7 @@ Dans Visual Studio, les utilisateurs peuvent valider le code source dans un proj
   Une fois le graphique construit, la méthode de validation standard est appelée. Quand cette opération est terminée, toutes les méthodes de validation d’extension installées sont appelées dans un ordre non spécifié. Le graphique est passé à chaque méthode `ValidateArchitecture` qui peut analyser le graphique et signaler toutes les erreurs qu’elle rencontre.  
   
 > [!NOTE]
->  Cette opération diffère du processus de validation appliqué aux diagrammes UML et du processus de validation qui peut être utilisé dans des langages spécifiques à un domaine.  
+> Cette opération diffère du processus de validation appliqué aux diagrammes UML et du processus de validation qui peut être utilisé dans des langages spécifiques à un domaine.  
   
  Les méthodes de validation ne doivent pas modifier le modèle de couche ni le code en cours de validation.  
   

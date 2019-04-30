@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c23bbb74a4f166ebe33cc45f40f42f9847316d30
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9238bd4f42291af23a1279c9caa83f1039c8f249
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043295"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437761"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>Contrôler l'exécution d'une application du Windows Store dans une session de débogage Visual Studio pour des applications du Windows Store (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ Ce guide de démarrage rapide montre comment naviguer dans le débogueur Visual 
  **Raccourcis clavier du débogueur.** La navigation dans le débogueur Visual Studio est optimisée pour la souris et le clavier. Plusieurs étapes dans cette rubrique présentent l'accélérateur clavier ou la touche de raccourci dans une note entre parenthèses. Par exemple, (clavier : F5) indique que la touche F5 démarre ou continue l’exécution du débogueur.
 
 > [!NOTE]
->  **Le modèle Module**
+> **Le modèle Module**
 >
->  Les applications du Windows Store utilisent souvent le *modèle Module* de JavaScript pour encapsuler des données et des fonctions dans une page. Le modèle Module utilise une fermeture unique, anonyme et à exécution automatique pour séparer la fonctionnalité de page de l'espace de noms global. Dans cette rubrique, nous appelons cette fonction le *module*.
+> Les applications du Windows Store utilisent souvent le *modèle Module* de JavaScript pour encapsuler des données et des fonctions dans une page. Le modèle Module utilise une fermeture unique, anonyme et à exécution automatique pour séparer la fonctionnalité de page de l'espace de noms global. Dans cette rubrique, nous appelons cette fonction le *module*.
 
 ## <a name="in-this-topic"></a>Dans cette rubrique
  Vous allez apprendre à :

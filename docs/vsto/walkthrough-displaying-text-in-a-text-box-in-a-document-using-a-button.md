@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f6a9b62c62b863448bb1333b162c6706c48cd72b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1b5a4152d655dd36eb258ff6b378bf79f87123a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071757"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443831"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>Procédure pas à pas : Texte affiché dans une zone de texte dans un document à l’aide d’un bouton
   Cette procédure pas à pas montre comment utiliser les boutons et les zones de texte dans une personnalisation au niveau du document pour Microsoft Office Word.
@@ -60,7 +60,7 @@ ms.locfileid: "60071757"
 2. À partir de la **contrôles communs** onglet de la **boîte à outils**, faites glisser un <xref:Microsoft.Office.Tools.Word.Controls.TextBox> contrôle au document.
 
    > [!NOTE]
-   >  Dans Word, les contrôles sont déposés en ligne avec le texte par défaut. Vous pouvez modifier les façon dont les contrôles et objets de forme sont insérés en modifiant la valeur par défaut sur le **modifier** onglet de la **Options** boîte de dialogue dans Word.
+   > Dans Word, les contrôles sont déposés en ligne avec le texte par défaut. Vous pouvez modifier les façon dont les contrôles et objets de forme sont insérés en modifiant la valeur par défaut sur le **modifier** onglet de la **Options** boîte de dialogue dans Word.
 
 3. Dans le menu **Affichage** , cliquez sur **Fenêtre Propriétés**.
 
