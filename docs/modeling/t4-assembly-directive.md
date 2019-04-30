@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6be7cad9034f67a00d8f795a5c4f4f9ad45c1abe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: e5dfb9a6489fed2c21d05799e9196c813a224571
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422957"
 ---
 # <a name="t4-assembly-directive"></a>Directive d'assembly T4
 
@@ -21,7 +21,7 @@ Dans un modèle de texte au moment du design de Visual Studio, le `assembly` dir
  Pour obtenir une vue d’ensemble de l’écriture de modèles de texte, consultez [écriture d’un modèle de texte T4](../modeling/writing-a-t4-text-template.md).
 
 > [!NOTE]
->  Vous n'avez pas besoin de la directive `assembly` dans un modèle de texte au moment de l'exécution (prétraité). Au lieu de cela, ajoutez les assemblys nécessaires à la **références** de votre projet Visual Studio.
+> Vous n'avez pas besoin de la directive `assembly` dans un modèle de texte au moment de l'exécution (prétraité). Au lieu de cela, ajoutez les assemblys nécessaires à la **références** de votre projet Visual Studio.
 
 ## <a name="using-the-assembly-directive"></a>Utilisation de la directive d'assembly
  La syntaxe de la directive est la suivante :
@@ -53,7 +53,7 @@ Dans un modèle de texte au moment du design de Visual Studio, le `assembly` dir
 
 - `WindowsBase.dll`
 
-  Si vous utilisez une directive personnalisée, le processeur de directive peut charger des assemblys supplémentaires. Par exemple, si vous écrivez des modèles pour un langage spécifique à un domaine (DSL), vous n’avez pas besoin d’écrire des directives d’assembly pour les assemblys suivants :
+  Si vous utilisez une directive personnalisée, le processeur de directive peut charger des assemblys supplémentaires. Par exemple, si vous écrivez des modèles pour un langage spécifique au domaine (DSL), vous n'avez pas besoin d'écrire des directives d'assembly pour les assemblys suivants :
 
 - `Microsoft.VisualStudio.Modeling.Sdk.1*.dll`
 
@@ -61,7 +61,7 @@ Dans un modèle de texte au moment du design de Visual Studio, le `assembly` dir
 
 - `Microsoft.VisualStudio.TextTemplating.Modeling.1*.dll`
 
-- Assembly contenant votre DSL.
+- Assembly contenant votre langage spécifique à un domaine.
 
 ## <a name="msbuild"></a> À l’aide des propriétés du projet dans MSBuild et Visual Studio
  Visual Studio macros telles que $ (SolutionDir) ne fonctionnent pas dans MSBuild. Si vous souhaitez transformer les modèles de votre ordinateur de build, vous devez utiliser les propriétés de projet à la place.

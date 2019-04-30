@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aaebcb9bf5edb5fda6938d364b3f96dc8823576f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 3f9a6f7985e3ebb3e77dcc605157f75e00a0842b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653487"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426038"
 ---
 # <a name="msbuild-transforms"></a>Transformations MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Une transformation est une conversion de type un-à-un d’une liste d’éléme
 ```  
   
 > [!NOTE]
->  Vous pouvez spécifier un séparateur personnalisé pour une liste d’éléments transformée de la même façon que vous spécifiez un séparateur pour une liste d’éléments standard. Par exemple, pour séparer une liste d’éléments transformée avec une virgule (,) au lieu du point-virgule (;) par défaut, utilisez le code XML suivant.  
+> Vous pouvez spécifier un séparateur personnalisé pour une liste d’éléments transformée de la même façon que vous spécifiez un séparateur pour une liste d’éléments standard. Par exemple, pour séparer une liste d’éléments transformée avec une virgule (,) au lieu du point-virgule (;) par défaut, utilisez le code XML suivant.  
   
 ```  
 @(RESXFile->'Toolset\%(filename)%(extension)', ',')  
@@ -111,4 +111,4 @@ extension: .xsd
 ## <a name="see-also"></a>Voir aussi  
  [Concepts MSBuild](../msbuild/msbuild-concepts.md)   
  [Référence MSBuild](../msbuild/msbuild-reference.md)   
- [Guide pratique pour Effectuer des générations incrémentielles](../msbuild/how-to-build-incrementally.md)
+ [Guide pratique pour effectuer des builds incrémentielles](../msbuild/how-to-build-incrementally.md)

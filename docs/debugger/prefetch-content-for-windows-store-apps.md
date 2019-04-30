@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 7e59548ac46196f86813aa312e68bbe043edf701
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 03ae7ecaf9998646d1dc13c4a93bbf34b53f5e47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701275"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408598"
 ---
 # <a name="debug-uwp-apps-using-prefetched-content-in-visual-studio"></a>Déboguer des applications UWP à l’aide d’un contenu prérécupéré dans Visual Studio
 
@@ -28,16 +28,16 @@ ms.locfileid: "56701275"
 ## <a name="to-force-preloading-of-contentprefetcher-specified-resources"></a>Pour forcer le préchargement de ressources ContentPrefetcher spécifiées
  Cette procédure suppose que la fonctionnalité ContentPrefetcher est déjà définie et que les URI de contenu à précharger sont spécifiés dans le projet d'application. Pour forcer un préchargement de contenu lorsque les ressources sont nouvelles ou modifiées, vous devez démarrer et arrêter l’application avant de choisir la commande **Déclencher la prérécupération d’application Windows Store**. Exécutez l'application d'abord pour enregistrer les URI. La commande **Déclencher la prérécupération d’application Windows Store** force alors le ContentPrefetcher à télécharger le contenu et à l’ajouter au cache. Vous pouvez supposer que le contenu est préchargé dans les exécutions suivantes de l'application.
 
-1. Démarrez l'application pour enregistrer les URI de contenu prérécupéré dans de l'application. Dans le menu **Déboguer**, choisissez **Démarrer le débogage** (raccourci clavier : F5).
+1. Démarrez l'application pour enregistrer les URI de contenu prérécupéré dans de l'application. Dans le menu **Déboguer**, choisissez **Démarrer le débogage** (Raccourci clavier : F5).
 
-2. Dans le menu **Déboguer**, choisissez **Arrêter le débogage** (raccourci clavier : Maj+F5).
+2. Sur le **déboguer** menu, choisissez **arrêter le débogage** (raccourci clavier : MAJ + F5).
 
 3. Dans le menu **Déboguer**, choisissez **Autres cibles de débogage**, puis choisissez **Déclencher la prérécupération d’application Windows Store**.
 
    Vous pouvez désormais déboguer, tester ou analyser votre application avec des ressources web prérécupérées.
 
 > [!NOTE]
->  Répétez ces étapes chaque fois que vous ajoutez ou modifiez du contenu web spécifié.
+> Répétez ces étapes chaque fois que vous ajoutez ou modifiez du contenu web spécifié.
 
 ## <a name="see-also"></a>Voir aussi
-- [Billet de blog : déclencher la prérécupération pour Windows Store les applications dans Visual Studio 2013 Update 2](https://devblogs.microsoft.com/devops/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2/)
+- [Billet de blog : Déclencher la prérécupération pour les applications du Windows Store dans Visual Studio 2013 Update 2](https://devblogs.microsoft.com/devops/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2/)

@@ -26,12 +26,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: b0a10d720e911f80aa5ef7b4a42f521bfd9c31bd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3bee60a54576ab816c63cf60f2226ebbbaf50c44
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070406"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388482"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Procédure : Activer et désactiver Modifier & Continuer (C#, VB, C++)
 
@@ -46,7 +46,7 @@ Pour C++ natif, **Modifier & Continuer** nécessite que vous utilisiez le `/INCR
 1. Dans **outils** > **Options** > (ou **déboguer** > **Options**) > **dedébogage**  >  **Général**, sélectionnez **Modifier & Continuer** dans le volet droit.
 
     > [!NOTE]
-    >  Si IntelliTrace est activé et si vous collectez des événements et des informations d’appel IntelliTrace, les fonctions Modifier et Continuer sont désactivées. Pour plus d’informations, consultez [IntelliTrace](../debugger/intellitrace.md).
+    > Si IntelliTrace est activé et si vous collectez des événements et des informations d’appel IntelliTrace, les fonctions Modifier et Continuer sont désactivées. Pour plus d’informations, consultez [IntelliTrace](../debugger/intellitrace.md).
 
 1. Pour le code C++, assurez-vous que **activer modifier et continuer natif** est sélectionné et définissez les options supplémentaires :
     - **Appliquer les changements en continuant (natif uniquement)**

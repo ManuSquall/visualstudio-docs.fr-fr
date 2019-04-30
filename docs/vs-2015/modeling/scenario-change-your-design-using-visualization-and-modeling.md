@@ -17,12 +17,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7bca2a98ba4df4294d401e2cd5f5b6e80e5d31c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 914d5806ed0b40a227d61c673e5f463624b0cc11
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099674"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403573"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scénario : Changer votre conception à l’aide des outils de visualisation et de modélisation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,7 +120,7 @@ Assurez-vous que votre système logiciel répond aux besoins des utilisateurs à
 - [Valider du code avec des diagrammes de couche](../modeling/validate-code-with-layer-diagrams.md)  
   
   > [!NOTE]
-  >  Certaines versions de Visual Studio prennent en charge la validation de couche et les versions en lecture seule des cartes de code et des diagrammes UML à des fins de visualisation et de modélisation. Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+  > Certaines versions de Visual Studio prennent en charge la validation de couche et les versions en lecture seule des cartes de code et des diagrammes UML à des fins de visualisation et de modélisation. Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="UnderstandingCommunicating"></a> Présentation et communication des informations sur le système  
  Il n’y a pas d’ordre impératif pour l’utilisation des diagrammes de modélisation Visual Studio. Vous pouvez donc les utiliser comme vous le voulez, en fonction de vos besoins ou de votre approche. En règle générale, les équipes revoient leurs modèles de façon répétée et fréquente au cours d’un projet. Chaque diagramme possède ses propres atouts pour vous aider à comprendre, décrire et communiquer différents aspects du système en cours de développement.  

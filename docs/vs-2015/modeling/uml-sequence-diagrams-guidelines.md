@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6f112224bdb2f94bdb6c4242a5ea0d273db23ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7ebb3108ce7a1ee43d1355494a82cc4aee37dbc7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445661"
 ---
 # <a name="uml-sequence-diagrams-guidelines"></a>Diagrammes de séquence UML : Recommandations
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,7 +83,7 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de séquence* pour illust
  Pour obtenir une liste complète des éléments sur les diagrammes de séquence, consultez [diagrammes de séquence UML : Référence](../modeling/uml-sequence-diagrams-reference.md).  
   
 > [!NOTE]
->  Les étapes détaillées pour savoir comment créer des diagrammes de modélisation sont décrites dans [modèles et diagrammes UML modifier](../modeling/edit-uml-models-and-diagrams.md).  
+> Les étapes détaillées pour savoir comment créer des diagrammes de modélisation sont décrites dans [modèles et diagrammes UML modifier](../modeling/edit-uml-models-and-diagrams.md).  
   
 #### <a name="to-create-a-sequence-diagram"></a>Pour créer un diagramme de séquence  
   
@@ -104,7 +104,7 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de séquence* pour illust
 1. Faites glisser **lignes de vie** (1) à partir de la **boîte à outils** sur le diagramme pour représenter les instances de classes, composants, acteurs ou périphériques.  
   
     > [!NOTE]
-    >  Vous pouvez également créer une ligne de vie en faisant glisser une classe existante, interface, acteur ou un composant à partir de **Explorateur de modèles UML** sur le diagramme. Cette action crée une ligne de vie représentant une instance du type choisi.  
+    > Vous pouvez également créer une ligne de vie en faisant glisser une classe existante, interface, acteur ou un composant à partir de **Explorateur de modèles UML** sur le diagramme. Cette action crée une ligne de vie représentant une instance du type choisi.  
   
 2. Dessinez des messages pour montrer comment les lignes de vie collaborent pour atteindre un objectif spécifique.  
   
@@ -115,7 +115,7 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de séquence* pour illust
 3. Pour afficher un message qui provient d'une source d'événement inconnue (9), ou qui diffuse à des destinataires inconnus (10), dessinez un message asynchrone depuis ou vers un espace vide sur le diagramme. Ces messages sont appelés *messages trouvés* (9) et *avait perdu des messages* (10).  
   
     > [!NOTE]
-    >  Pour déplacer un groupe de lignes de vie ayant perdu ou trouvé des messages, procédez aux étapes suivantes pour sélectionner les lignes de vie avant de les déplacer : Dessinez un rectangle autour de ces lignes de vie ou maintenez la **CTRL** enfoncée pendant que vous cliquez sur chaque ligne de vie. Si vous utilisez **sélectionner tout** ou **CTRL**+**A** pour sélectionner toutes les lignes de vie, puis les déplacer, les attachés à ces lignes de vie des messages trouvés ou perdus ne seront pas déplacés. Si ce scénario se produit, vous pouvez déplacer ces messages séparément.  
+    > Pour déplacer un groupe de lignes de vie ayant perdu ou trouvé des messages, procédez aux étapes suivantes pour sélectionner les lignes de vie avant de les déplacer : Dessinez un rectangle autour de ces lignes de vie ou maintenez la **CTRL** enfoncée pendant que vous cliquez sur chaque ligne de vie. Si vous utilisez **sélectionner tout** ou **CTRL**+**A** pour sélectionner toutes les lignes de vie, puis les déplacer, les attachés à ces lignes de vie des messages trouvés ou perdus ne seront pas déplacés. Si ce scénario se produit, vous pouvez déplacer ces messages séparément.  
   
 4. Dessinez des diagrammes de séquence pour chaque message principal vers le même composant ou système.  
   
@@ -136,7 +136,7 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de séquence* pour illust
      Une copie du message et de tous ses messages auxiliaires est ajoutée à la fin de l'occurrence d'exécution ou à la fin de la ligne de vie.  
   
     > [!NOTE]
-    >  Le message collé apparaît toujours à la fin de l'occurrence d'exécution ou de la ligne de vie. Une fois que vous l'avez collé, vous pouvez le faire glisser jusqu'à une position antérieure.  
+    > Le message collé apparaît toujours à la fin de l'occurrence d'exécution ou de la ligne de vie. Une fois que vous l'avez collé, vous pouvez le faire glisser jusqu'à une position antérieure.  
   
 #### <a name="to-display-and-edit-the-signature-text-for-a-message"></a>Pour afficher et modifier le texte de signature d'un message  
   
@@ -161,7 +161,7 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de séquence* pour illust
 1. Dans **Explorateur de modèles UML**, recherchez l’Interaction qui affiche le diagramme de séquence.  
   
     > [!NOTE]
-    >  L’interaction n’apparaît pas dans **Explorateur de modèles UML** jusqu'à ce que vous ajoutiez la première ligne de vie au diagramme de séquence.  
+    > L’interaction n’apparaît pas dans **Explorateur de modèles UML** jusqu'à ce que vous ajoutiez la première ligne de vie au diagramme de séquence.  
   
 2. Faites glisser l'interaction vers le package.  
   
@@ -193,7 +193,7 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de séquence* pour illust
  À l’aide de **liens de commentaires**, vous pouvez lier un commentaire à des lignes de vie, des exécutions, des utilisations d’interaction et des fragments.  
   
 > [!CAUTION]
->  Quand vous souhaitez attacher un commentaire à un point particulier dans la séquence, liez-le à une occurrence d'exécution, une utilisation d'interaction ou un fragment. Ne le liez pas à une ligne de vie, car dans ce cas il ne reste pas attaché au point correct dans la séquence.  
+> Quand vous souhaitez attacher un commentaire à un point particulier dans la séquence, liez-le à une occurrence d'exécution, une utilisation d'interaction ou un fragment. Ne le liez pas à une ligne de vie, car dans ce cas il ne reste pas attaché au point correct dans la séquence.  
   
  Utilisez un commentaire pour :  
   
@@ -268,7 +268,7 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de séquence* pour illust
  Vous pouvez créer des lignes de vie à partir de classes que vous avez déjà définies, par exemple sur un diagramme de classes.  
   
 > [!NOTE]
->  Assurez-vous qu'il existe déjà un diagramme de séquence avant d'effectuer cette tâche.  
+> Assurez-vous qu'il existe déjà un diagramme de séquence avant d'effectuer cette tâche.  
   
 ##### <a name="to-create-a-lifeline-from-an-existing-type"></a>Pour créer une ligne de vie à partir d'un type existant  
   
@@ -283,7 +283,7 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de séquence* pour illust
      Une nouvelle ligne de vie d'instance nommée apparaît, dont le type est celui que vous avez fait glisser.  
   
   > [!NOTE]
-  >  Vous pouvez répéter cette opération autant de fois que vous le souhaitez. Dans ce cas, vous créerez des lignes de vie avec différents noms d'instances.  
+  > Vous pouvez répéter cette opération autant de fois que vous le souhaitez. Dans ce cas, vous créerez des lignes de vie avec différents noms d'instances.  
   
 ##### <a name="to-change-the-type-of-a-lifeline"></a>Pour modifier le type d'une ligne de vie  
   
@@ -313,7 +313,7 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de séquence* pour illust
          Si votre message comportait des paramètres au format « (paramètre : type) », ils apparaîtront dans la liste des paramètres de la nouvelle opération.  
   
         > [!NOTE]
-        >  Vous devez répéter cette étape si vous ajoutez de nouveaux messages sur le diagramme de séquence.  
+        > Vous devez répéter cette étape si vous ajoutez de nouveaux messages sur le diagramme de séquence.  
   
 3. Pour afficher la nouvelle classe ou interface en détail, vous devez l'ajouter à un diagramme de classes ou de composant.  
   
@@ -366,7 +366,7 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de séquence* pour illust
      Un nouveau diagramme de séquence apparaît dans votre solution. Il contient les lignes de vie que vous avez utilisées pour créer l'utilisation d'interaction.  
   
     > [!NOTE]
-    >  Seules les lignes de vie que vous avez utilisées pour créer l'utilisation d'interaction seront incluses. Le nouveau diagramme n'inclura pas les lignes de vie que vous avez créées après l'utilisation d'interaction, même celle-ci les couvre maintenant.  
+    > Seules les lignes de vie que vous avez utilisées pour créer l'utilisation d'interaction seront incluses. Le nouveau diagramme n'inclura pas les lignes de vie que vous avez créées après l'utilisation d'interaction, même celle-ci les couvre maintenant.  
   
 #### <a name="to-create-a-reusable-sequence-from-existing-messages"></a>Pour créer une séquence réutilisable à partir de messages existants  
   
@@ -407,14 +407,14 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de séquence* pour illust
 3. Pour renommer le groupe, cliquez sur le nom.  
   
     > [!NOTE]
-    >  Le nom du groupe est perdu quand vous développez le groupe.  
+    > Le nom du groupe est perdu quand vous développez le groupe.  
   
 #### <a name="to-expand-a-collapsed-group"></a>Pour développer un groupe réduit  
   
 - Avec le bouton droit de la ligne de vie réduite, puis cliquez sur **Expand**.  
   
     > [!NOTE]
-    >  Le nom du groupe est perdu, ainsi que tous les liens qui vont du groupe à des commentaires ou des éléments de travail.  
+    > Le nom du groupe est perdu, ainsi que tous les liens qui vont du groupe à des commentaires ou des éléments de travail.  
   
 ## <a name="Fragments"></a> Description de Structures de contrôle avec des Fragments  
  Vous pouvez utiliser des fragments combinés (13) pour définir des boucles, des branches et un traitement simultané dans un diagramme de séquence. Vous pouvez également, à la place, utiliser un diagramme d'activités. Le diagramme d'activités n'est pas aussi utile pour l'affichage des messages entre les acteurs, mais dans certains cas il est plus performant pour l'affichage des boucles, des branches et de l'accès concurrentiel.  
@@ -426,7 +426,7 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de séquence* pour illust
 1. Sélectionnez un message ou une séquence de messages commençant tous sur la même ligne de vie ou occurrence d'exécution.  
   
     > [!NOTE]
-    >  Sélectionnez les flèches de messages, et non les occurrences d'exécution vers lesquelles pointent les messages.  
+    > Sélectionnez les flèches de messages, et non les occurrences d'exécution vers lesquelles pointent les messages.  
   
 2. Cliquez sur un des messages, pointez sur **entourer**, puis cliquez sur le type de fragment dont vous avez besoin.  
   

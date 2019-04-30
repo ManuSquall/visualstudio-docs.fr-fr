@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68bb68160b78df4abe1b6874080c9a3ec91a3e31
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2549ad27f0f05d3425dd6625e9d48fdfab4db3a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063424"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386066"
 ---
 # <a name="writing-a-t4-text-template"></a>Écriture d'un modèle de texte T4
 Un modèle de texte contient le texte qui sera généré à partir du modèle. Par exemple, un modèle qui crée une page web contiendra «\<html > … » et tous les autres composants standard d’une page HTML. Inséré dans le modèle sont *blocs de contrôle*, qui sont des fragments de code de programme. Les blocs de contrôle fournissent des valeurs variables et permettent à certaines parties du texte d'être conditionnelles et répétées.
@@ -94,7 +94,7 @@ Hello!
  Vous pouvez insérer un bloc de texte partout où une instruction `Write();` serait autorisée dans le code.
 
 > [!NOTE]
->  Lorsque vous incorporez un bloc de texte au sein d’une instruction composée telle qu’une boucle ou conditionnel, utilisez toujours des accolades {...} pour contenir le bloc de texte.
+> Lorsque vous incorporez un bloc de texte au sein d’une instruction composée telle qu’une boucle ou conditionnel, utilisez toujours des accolades {...} pour contenir le bloc de texte.
 
 ### <a name="expression-control-blocks"></a>Blocs de contrôle d'expression
  Un bloc de contrôle d'expression évalue une expression et la convertit en chaîne. Celle-ci est insérée dans le fichier de sortie.

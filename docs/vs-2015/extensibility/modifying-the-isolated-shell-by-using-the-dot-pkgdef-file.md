@@ -10,12 +10,12 @@ ms.assetid: 69e8f78e-bcf1-46cb-8866-7de37d134997
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6f2ed846e8644f5f6e391d9c850016721186021e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 0f8ac7b6cea0896c597dc46b8b5edd7072069840
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663964"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386031"
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-pkgdef-file"></a>Modification du Shell isolé à l’aide de le. Fichier pkgdef
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "59663964"
 Le fichier .pkgdef prend en charge les paramètres que vous pouvez utiliser pour personnaliser une application de shell isolé. Il spécifie les valeurs qui sont créés lorsqu’une application est installée sur un ordinateur et qui sont référencées par le shell Visual Studio lorsqu’il démarre l’application. Les paramètres sont organisés dans le fichier selon les clés de Registre applicables.  
 
 > [!WARNING]
->  Notez que les fichiers .pkgdef qui ne sont pas déclarés dans le fichier .vsixmanifest du VSPackage ne sont pas analysés au démarrage de Visual Studio.  
+> Notez que les fichiers .pkgdef qui ne sont pas déclarés dans le fichier .vsixmanifest du VSPackage ne sont pas analysés au démarrage de Visual Studio.  
 
  Le fichier .pkgdef contient les sections qui sont chacune étant identifiées par une clé, soit `[$RootKey$]` ou `[$RootKey$\` *sous-clé*`]`, où $RootKey$ est la clé racine pour l’application.  
 
@@ -53,7 +53,7 @@ Le fichier .pkgdef prend en charge les paramètres que vous pouvez utiliser pour
  Les sections suivantes décrivent les valeurs de Registre spécifiques qui affectent le comportement de l’interpréteur de commandes de Visual Studio en mode isolé. Vous pouvez également définir des valeurs de Registre supplémentaires pour l’application dans ce fichier.  
 
 > [!NOTE]
->  Si un paramètre n’est pas fourni dans le fichier .pkgdef, aucune entrée correspondante n’est effectuée dans le Registre.  
+> Si un paramètre n’est pas fourni dans le fichier .pkgdef, aucune entrée correspondante n’est effectuée dans le Registre.  
 
 ## <a name="settings"></a>Paramètres  
  Le tableau suivant décrit les valeurs définies sous [$$RootKey].  

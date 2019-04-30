@@ -14,12 +14,12 @@ ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c799d2733c4deca07cdcbe087b1b694f9d1725e6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: fb85bc64164acc09aef6464b69e72b7c6cf46d77
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952379"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405642"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Liaison de raccourcis clavier à des éléments de menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Pour lier un raccourci clavier à une commande de menu personnalisé, ajoutez si
 4. Essayez différentes combinaisons de touches jusqu'à ce que vous trouvez un qui n’est pas mappé.  
   
    > [!NOTE]
-   >  Raccourcis clavier que vous utilisent ALT peuvent ouvrir un menu et n’exécute pas directement une commande. Par conséquent, le **raccourci actuellement utilisé par** zone peut être vide lorsque vous tapez un raccourci qui inclut ALT. Vous pouvez vérifier que le raccourci ne s’ouvre pas un menu en fermant le **Options** boîte de dialogue et en appuyant sur les clés.  
+   > Raccourcis clavier que vous utilisent ALT peuvent ouvrir un menu et n’exécute pas directement une commande. Par conséquent, le **raccourci actuellement utilisé par** zone peut être vide lorsque vous tapez un raccourci qui inclut ALT. Vous pouvez vérifier que le raccourci ne s’ouvre pas un menu en fermant le **Options** boîte de dialogue et en appuyant sur les clés.  
   
    La procédure suivante suppose que vous disposez d’un VSPackage existant avec une commande de menu. Si vous avez besoin d’aide pour y parvenir, jetez un coup de œil à [création d’une Extension avec une commande de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
@@ -55,7 +55,7 @@ Pour lier un raccourci clavier à une commande de menu personnalisé, ajoutez si
 2. Créer un vide `<KeyBindings>` section après le `<Commands>` si elle n’est pas déjà présent.  
   
    > [!WARNING]
-   >  Pour plus d’informations sur les combinaisons de touches, consultez [Keybinding](../extensibility/keybinding-element.md).  
+   > Pour plus d’informations sur les combinaisons de touches, consultez [Keybinding](../extensibility/keybinding-element.md).  
   
     Dans le `<KeyBindings>` section, créez un `<KeyBinding>` entrée.  
   

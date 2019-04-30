@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d44ae7d3eb4c01434e2a8b6f2cf7c0391c749ad7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 03991f3d5900377ceca5464bf41cfb90fcae650e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440593"
 ---
 # <a name="how-to-set-permissions"></a>Procédure : Définir des autorisations
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Cette rubrique indique comment l’administrateur d’un ordinateur accorde les 
   Les membres du groupe Utilisateurs peuvent exécuter les outils de profilage si un administrateur leur accorde l’accès au pilote logiciel pour les outils de profilage. La dernière procédure, « Pour accorder l’accès au pilote de profilage », explique comment accorder l’accès à ce pilote.  
   
 > [!NOTE]
->  Pour suivre les étapes de ces procédures, vous devez disposer d’autorisations d’administrateur.  
+> Pour suivre les étapes de ces procédures, vous devez disposer d’autorisations d’administrateur.  
   
 ### <a name="to-create-a-user-account-that-has-user-permissions"></a>Pour créer un compte d’utilisateur disposant d’autorisations utilisateurs  
   

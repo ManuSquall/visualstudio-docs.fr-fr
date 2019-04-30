@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f6e55c99d874bd18f0045746bbab4ac96370bc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8f03b23076b1eea203166bb0322f05927480a278
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042405"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417169"
 ---
 # <a name="get-font-and-color-information-for-text-colorization"></a>Obtenir des informations de police et de couleur pour la colorisation de texte
 Le processus qui effectue le rendu ou affiche le texte en couleurs se dans les éléments d’interface (UI) utilisateur varie selon le type de préférences de projet, sa technologie et les développeurs. Le **polices et couleurs** page de propriétés stocke les paramètres.
@@ -24,7 +24,7 @@ Le processus qui effectue le rendu ou affiche le texte en couleurs se dans les �
  La plupart des implémentations qui affichent du texte en couleurs se doivent le <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> et associés des interfaces pour les paramètres d’affichage de présentation, la récupération et le stocker du texte.
 
 > [!NOTE]
->  Lors de la personnalisation de l’éditeur principal (qui prend en charge la **texte EditorCategory**), il est recommandé d’utiliser la technologie de coloration dans le service de langage. Pour plus d’informations, consultez [vue d’ensemble de police et couleur](../extensibility/font-and-color-overview.md).
+> Lors de la personnalisation de l’éditeur principal (qui prend en charge la **texte EditorCategory**), il est recommandé d’utiliser la technologie de coloration dans le service de langage. Pour plus d’informations, consultez [vue d’ensemble de police et couleur](../extensibility/font-and-color-overview.md).
 
 ## <a name="get-default-font-and-color-information"></a>Obtenir des informations de police et la couleur par défaut
  Tous les le **polices et couleurs** paramètres de n’importe quelle fenêtre d’affichage du texte doivent être spécifiés dans le **éléments affichés** d’un **catégorie**. Pour plus d’informations, consultez [polices et couleurs, environnement, boîte de dialogue Options](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).

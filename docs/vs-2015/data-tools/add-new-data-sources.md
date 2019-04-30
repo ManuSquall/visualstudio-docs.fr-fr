@@ -19,12 +19,12 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db550b2a99f12190cac0bde74859191c2943b2d5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 77b962d9ab4594bba5be42100a46e67e1c861384
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102755"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445771"
 ---
 # <a name="add-new-data-sources"></a>Ajouter de nouvelles sources de données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Dans le contexte de .NET data tools dans Visual Studio, le terme *source de donn
 - Une classe ou une collection dans votre solution.  
   
 > [!NOTE]
->  Si vous n’utilisez pas les fonctionnalités de liaison de données, jeux de données, Entity Framework, LINQ to SQL, WCF ou SharePoint, le concept de « data source » ne s’applique pas. Connectez-vous directement à la base de données en utilisant les objets SQLCommand simplement et communiquer directement avec la base de données.  
+> Si vous n’utilisez pas les fonctionnalités de liaison de données, jeux de données, Entity Framework, LINQ to SQL, WCF ou SharePoint, le concept de « data source » ne s’applique pas. Connectez-vous directement à la base de données en utilisant les objets SQLCommand simplement et communiquer directement avec la base de données.  
   
  Vous créez et modifiez des sources de données à l’aide de la **Assistant de Configuration de Source de données** dans une application Windows Forms ou Windows Presentation Foundation. Pour Entity Framework, commencez par créer vos classes d’entité, puis démarrer l’Assistant en sélectionnant **projet** > **ajouter une nouvelle Source de données** (décrite plus en détail plus loin dans cet article).  
   
@@ -84,7 +84,7 @@ Dans le contexte de .NET data tools dans Visual Studio, le terme *source de donn
 - Services Web.  
   
     > [!NOTE]
-    >  Les éléments qui apparaissent dans le **des Sources de données** fenêtre sont dépendants des données retournées par le service. Certains services peuvent ne pas fournir suffisamment d’informations pour que l’**Assistant Configuration de source de données** puisse créer des objets pouvant être liés. Par exemple, si le service retourne un dataset non typé, aucun élément n’apparaîtra dans le **des Sources de données** fenêtre lorsque vous terminez l’Assistant. Il s’agit, car les datasets non typés ne fournissent pas un schéma, et par conséquent, l’Assistant n’a pas suffisamment d’informations pour créer la source de données.  
+    > Les éléments qui apparaissent dans le **des Sources de données** fenêtre sont dépendants des données retournées par le service. Certains services peuvent ne pas fournir suffisamment d’informations pour que l’**Assistant Configuration de source de données** puisse créer des objets pouvant être liés. Par exemple, si le service retourne un dataset non typé, aucun élément n’apparaîtra dans le **des Sources de données** fenêtre lorsque vous terminez l’Assistant. Il s’agit, car les datasets non typés ne fournissent pas un schéma, et par conséquent, l’Assistant n’a pas suffisamment d’informations pour créer la source de données.  
   
 ## <a name="data-source-for-an-object"></a>Source de données pour un objet  
  Vous pouvez créer une source de données à partir de n’importe quel objet qui expose une ou plusieurs propriétés publiques en exécutant la **Assistant de Configuration de Source de données** , puis en sélectionnant le **objet** type de source de données. Toutes les propriétés publiques d’un objet sont affichées dans le **des Sources de données** fenêtre.   Si vous utilisez Entity Framework et que vous avez généré un modèle, il s’agit où vous trouvez les classes d’entité qui seront les sources de données pour votre application.  
@@ -94,10 +94,10 @@ Dans le contexte de .NET data tools dans Visual Studio, le terme *source de donn
  Si vous souhaitez lier à un objet dans un assembly ou un projet qui n’apparaît pas dans l’arborescence, cliquez sur **ajouter une référence** et utiliser le **boîte de dialogue Ajouter une référence** pour ajouter une référence à l’assembly ou le projet. Après avoir ajouté la référence, l’assembly ou le projet est ajouté à l’arborescence.  
   
 > [!NOTE]
->  Vous devrez peut-être générer le projet qui contient vos objets avant les objets s’affichent dans l’arborescence.  
+> Vous devrez peut-être générer le projet qui contient vos objets avant les objets s’affichent dans l’arborescence.  
   
 > [!NOTE]
->  Pour prendre en charge de liaison de données de glisser-déplacer, des objets qui implémentent le <xref:System.ComponentModel.ITypedList> ou <xref:System.ComponentModel.IListSource> interface doit avoir un constructeur par défaut. Sinon, Visual Studio ne peut pas instancier l’objet de source de données, et il affiche une erreur lorsque vous faites glisser l’élément vers l’aire de conception.  
+> Pour prendre en charge de liaison de données de glisser-déplacer, des objets qui implémentent le <xref:System.ComponentModel.ITypedList> ou <xref:System.ComponentModel.IListSource> interface doit avoir un constructeur par défaut. Sinon, Visual Studio ne peut pas instancier l’objet de source de données, et il affiche une erreur lorsque vous faites glisser l’élément vers l’aire de conception.  
   
 ## <a name="data-source-for-a-sharepoint-list"></a>Source de données pour une liste SharePoint  
  Vous pouvez créer une source de données à partir d’une liste SharePoint en exécutant la **Assistant de Configuration de Source de données** et en sélectionnant le **SharePoint** type de source de données. SharePoint expose des données via [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)], de sorte que la création d’une source de données SharePoint est identique à la création d’une source de données à partir d’un service. En sélectionnant le **SharePoint** d’élément dans le **Assistant de Configuration de Source de données** ouvre le **ajouter une référence de Service** boîte de dialogue, où vous vous connectez au service de données SharePoint en pointant sur le serveur SharePoint.  Cela requiert le SDK SharePoint.  

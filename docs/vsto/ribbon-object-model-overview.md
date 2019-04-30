@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5958eb6fb8fd14dd510fa87d900efa76cb6f6a87
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 83f906ad9e5ded349250fe5324076527975c9bf6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446986"
 ---
 # <a name="ribbon-object-model-overview"></a>Présentation du modèle objet de ruban
   Le [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] expose un modèle objet fortement typé que vous pouvez utiliser pour obtenir et définir les propriétés des contrôles de ruban lors de l’exécution. Par exemple, vous pouvez remplir des contrôles de menu, ou afficher et dynamiquement masquer des contrôles en fonction du contexte. Vous pouvez également ajouter des onglets, des groupes et des contrôles à un ruban, mais uniquement avant le chargement du ruban par l’application Office. Pour plus d’informations, consultez [définir des propriétés qui passent en lecture seule](#SettingReadOnlyProperties).
@@ -130,7 +130,7 @@ ms.locfileid: "60040714"
  Le tableau suivant présente les propriétés qui peuvent être définies uniquement avant le chargement du ruban.
 
 > [!NOTE]
->  Vous pouvez définir les propriétés des contrôles dans les menus dynamiques à tout moment. Cette table ne s’applique pas dans ce cas.
+> Vous pouvez définir les propriétés des contrôles dans les menus dynamiques à tout moment. Cette table ne s’applique pas dans ce cas.
 
 |Propriété|Classe de contrôle de ruban|
 |--------------|--------------------------|
@@ -163,7 +163,7 @@ ms.locfileid: "60040714"
  Si vous avez une logique conditionnelle qui définit ces propriétés à une valeur différente lorsque les autres instances du ruban sont créées, ce code n’aura aucun effet.
 
 > [!NOTE]
->  Vérifiez que le **nom** propriété est définie pour chaque contrôle que vous ajoutez à un ruban Outlook. Si vous ajoutez un contrôle à un ruban Outlook lors de l’exécution, vous devez définir cette propriété dans votre code. Si vous ajoutez un contrôle à un ruban Outlook au moment du design, la propriété Name est définie automatiquement.
+> Vérifiez que le **nom** propriété est définie pour chaque contrôle que vous ajoutez à un ruban Outlook. Si vous ajoutez un contrôle à un ruban Outlook lors de l’exécution, vous devez définir cette propriété dans votre code. Si vous ajoutez un contrôle à un ruban Outlook au moment du design, la propriété Name est définie automatiquement.
 
 ## <a name="ribbon-control-events"></a>Événements de contrôle de ruban
  Chaque classe de contrôle contient un ou plusieurs événements. Le tableau suivant décrit ces événements.

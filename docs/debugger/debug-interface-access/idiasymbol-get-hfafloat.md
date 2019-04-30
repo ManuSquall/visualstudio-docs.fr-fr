@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 180c6f2aa987e628773572158a23b9564054305e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: f3305efc101603d66511e1e2c5ef356ead22b59f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611553"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401424"
 ---
 # <a name="idiasymbolgethfafloat"></a>IDiaSymbol::get_hfaFloat
 Récupère un indicateur qui spécifie si un type défini par l’utilisateur (UDT) contient des données de regroupement à virgule flottante homogènes (HFA), de type float.
@@ -39,12 +39,12 @@ HRESULT get_hfaFloat( 
  En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’erreur.
 
 > [!NOTE]
->  La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
+> La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
-## <a name="requirements"></a>Spécifications
- En-tête : Dia2.h
+## <a name="requirements"></a>Configuration requise
+ En-tête : Dia2.h
 
  Bibliothèque : diaguids.lib
 

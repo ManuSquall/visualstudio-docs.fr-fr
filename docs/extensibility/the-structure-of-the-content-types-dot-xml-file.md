@@ -13,18 +13,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b8640636e48e2addedd5a59d30deb060cfdf118
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 49c211faf577df33bc6e7404eaa9631e734c9c36
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721869"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435315"
 ---
 # <a name="the-structure-of-the-contenttypesxml-file"></a>Structure du fichier [Content_types].xml
 Contient des informations sur les types de contenu dans un package VSIX. Visual Studio utilise le fichier [Content_Types] .xml pour installer le package, mais il n’installe pas le fichier lui-même.
 
 > [!NOTE]
->  Bien que cette rubrique s’applique uniquement aux fichiers .xml [Content_Type] qui sont utilisés dans les packages VSIX, le type de fichier [Content_Types] .xml fait partie de la *Open Packaging Conventions (OPC)* standard. Pour plus d’informations, consultez [OPC : Un nouveau Standard d’empaquetage de vos données](http://go.microsoft.com/fwlink/?LinkID=148207) sur le site Web MSDN.
+> Bien que cette rubrique s’applique uniquement aux fichiers .xml [Content_Type] qui sont utilisés dans les packages VSIX, le type de fichier [Content_Types] .xml fait partie de la *Open Packaging Conventions (OPC)* standard. Pour plus d’informations, consultez [OPC : Un nouveau Standard d’empaquetage de vos données](http://go.microsoft.com/fwlink/?LinkID=148207) sur le site Web MSDN.
 
 ## <a name="attributes-and-elements"></a>Attributs et éléments
  Les sections suivantes décrivent l’élément racine et ses attributs et les éléments enfants.

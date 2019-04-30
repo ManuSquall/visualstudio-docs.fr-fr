@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 192fdd737816d2239b15530e2d5c03d73f82e0d5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: bd65f12c065ee1d96934c6790779c8b4ca87b393
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426301"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>Ensemble d'outils MSBuild (ToolsVersion)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +97,7 @@ MSBuild utilise un ensemble d’outils de tâches, de cibles et d’outils pour 
  Comme décrit plus haut dans cette rubrique, MSBuild utilise une clé de Registre pour spécifier le chemin d'accès des outils de base. Si la clé a une sous-clé, MSBuild l'utilise pour spécifier le chemin d'accès d'un sous-ensemble d'outils qui contient des outils supplémentaires. Dans ce cas, l'ensemble d'outils est défini en combinant les définitions des propriétés qui sont définies dans les deux clés.  
   
 > [!NOTE]
->  Si les noms des propriétés de l'ensemble d'outils sont en conflit, la valeur qui est définie pour la sous-clé remplace la valeur définie pour le chemin d'accès de la clé racine.  
+> Si les noms des propriétés de l'ensemble d'outils sont en conflit, la valeur qui est définie pour la sous-clé remplace la valeur définie pour le chemin d'accès de la clé racine.  
   
  Les sous-ensembles d'outils deviennent actifs en présence de la propriété de build `VisualStudioVersion`. Cette propriété peut prendre une de ces valeurs :  
   

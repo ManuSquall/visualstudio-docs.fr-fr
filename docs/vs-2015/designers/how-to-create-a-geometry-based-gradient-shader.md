@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8735931e761f7d511615b5be7e93e0198a6b1a45
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eda8424aeb28231df0ae0355931989bec13a89b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071718"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436173"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Procédure : Créer un nuanceur de dégradés basé sur la géométrie
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Ce document indique comment utiliser le concepteur de nuanceur et DGSL (Directed
    L’illustration suivante présente le graphique du nuanceur terminé ainsi qu’un aperçu du nuanceur appliqué à une sphère.  
   
 > [!NOTE]
->  Dans cette illustration, la couleur orange est spécifiée pour mettre en évidence l’effet du nuanceur, mais comme la forme d’aperçu n’a pas de position dans l’espace universel, le nuanceur ne peut pas être entièrement visualisé dans le concepteur de nuanceur. Le nuanceur doit être visualisé dans une scène réelle pour montrer l’effet réel.  
+> Dans cette illustration, la couleur orange est spécifiée pour mettre en évidence l’effet du nuanceur, mais comme la forme d’aperçu n’a pas de position dans l’espace universel, le nuanceur ne peut pas être entièrement visualisé dans le concepteur de nuanceur. Le nuanceur doit être visualisé dans une scène réelle pour montrer l’effet réel.  
   
  ![Graphique du nuanceur et aperçu de son effet](../designers/media/digit-gradient-effect-graph.png "Digit-Gradient-Effect-Graph")  
   

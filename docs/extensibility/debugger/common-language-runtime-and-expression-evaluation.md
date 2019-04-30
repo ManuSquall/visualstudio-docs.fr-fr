@@ -11,16 +11,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f466473bcc811a688f06e6cf4cdd8b4fc8e80648
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: e6fdbdcdf292d90fc63758c2b7d183225e63a850
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700248"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411319"
 ---
 # <a name="common-language-runtime-and-expression-evaluation"></a>Common language runtime et expression l’évaluation
 > [!IMPORTANT]
->  Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’expression managé](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’expression managé](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
  Compilateurs, tels que Visual Basic et c# (prononcé C-sharp), qui ciblent le Common Language Runtime (CLR), génèrent le langage MSIL (Microsoft Intermediate), qui est ultérieure compilés en code natif. Le CLR fournit un moteur de débogage (dé) pour déboguer le code résultant. Si vous envisagez d’intégrer votre langage de programmation propriétaire dans l’IDE Visual Studio, vous pouvez décider de compiler en langage MSIL et n’aurez donc pas à écrire votre propre DE. Toutefois, vous devrez écrire un évaluateur d’expression (EE) qui est capable de l’évaluation des expressions dans le contexte de votre langage de programmation.
 

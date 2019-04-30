@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b68884d5cf5b6603d3b0ecdb9885e3466859001b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ed5c5e5b03ce7ee0ffbd361b896f288f6b93a806
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079290"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438499"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>Procédure pas à pas : Créer votre premier complément pour Word
   Cette première procédure pas à pas montre comment créer un complément VSTO pour Microsoft Office Word. Les fonctionnalités que vous créez dans ce type de solution sont accessibles à l'application, quels que soient les documents ouverts.
@@ -83,7 +83,7 @@ ms.locfileid: "60079290"
     [!code-csharp[Trin_WordAddInTutorial#1](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#1)]
 
    > [!NOTE]
-   >  Ce code utilise une valeur d’index 1 pour accéder au premier paragraphe de la collection <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A>. Bien que Visual Basic et Visual C# utilisent des tableaux basés sur 0, les limites d'index de tableau inférieures de la plupart des collections du modèle objet Word ont la valeur 1. Pour plus d’informations, consultez [écrire du code dans les solutions Office](../vsto/writing-code-in-office-solutions.md).
+   > Ce code utilise une valeur d’index 1 pour accéder au premier paragraphe de la collection <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A>. Bien que Visual Basic et Visual C# utilisent des tableaux basés sur 0, les limites d'index de tableau inférieures de la plupart des collections du modèle objet Word ont la valeur 1. Pour plus d’informations, consultez [écrire du code dans les solutions Office](../vsto/writing-code-in-office-solutions.md).
 
 2. Si vous utilisez C#, ajoutez le code requis suivant au gestionnaire d'événements `ThisAddIn_Startup` . Ce code permet de connecter le gestionnaire d'événements `Application_DocumentBeforeSave` à l'événement <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> .
 

@@ -20,12 +20,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6080539a3f8b5f93a8d6fcd144dbd26dbd9eeaf
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: f12e8e50b07157f581635fcbd43dbe7863ec40f1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667012"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436937"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Créer un Windows Form pour rechercher des données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,35 +38,35 @@ Un scénario d'application courant consiste à afficher les données sélectionn
   
  Cette procédure pas à pas décrit notamment les tâches suivantes :  
   
--   Création d’un nouveau projet d’Application de Windows Forms.  
+- Création d’un nouveau projet d’Application de Windows Forms.  
   
--   Création et configuration de la source de données dans votre application avec le **Configuration de Source de données** Assistant.  
+- Création et configuration de la source de données dans votre application avec le **Configuration de Source de données** Assistant.  
   
--   Définissant le type de déplacement des éléments dans le **des Sources de données** fenêtre.  
+- Définissant le type de déplacement des éléments dans le **des Sources de données** fenêtre.  
   
--   Création de contrôles affichant les données en faisant glisser des éléments depuis la fenêtre **Sources de données** vers un formulaire.  
+- Création de contrôles affichant les données en faisant glisser des éléments depuis la fenêtre **Sources de données** vers un formulaire.  
   
--   Ajout de contrôles pour afficher les données dans le formulaire.  
+- Ajout de contrôles pour afficher les données dans le formulaire.  
   
--   Fin de la **Générateur de critères de recherche** boîte de dialogue.  
+- Fin de la **Générateur de critères de recherche** boîte de dialogue.  
   
--   Entrée de paramètres dans le formulaire et l’exécution de la requête paramétrable.  
+- Entrée de paramètres dans le formulaire et l’exécution de la requête paramétrable.  
   
 ## <a name="prerequisites"></a>Prérequis  
  Pour exécuter cette procédure pas à pas, vous avez besoin des éléments suivants :  
   
--   avoir accès à l'exemple de base de données Northwind.  
+- avoir accès à l'exemple de base de données Northwind.  
   
 ## <a name="create-the-windows-application"></a>Créer l’Application Windows  
  La première étape consiste à créer un **Windows Application**. Affectation d’un nom au projet est facultative à ce stade, mais vous devez lui donner un nom ici, car vous allez l’enregistrer ultérieurement.  
   
 #### <a name="to-create-the-new-windows-application-project"></a>Pour créer le projet d'application Windows  
   
-1.  À partir de la **fichier** menu, créez un nouveau projet.  
+1. À partir de la **fichier** menu, créez un nouveau projet.  
   
-2.  Attribuez un nom au projet `WindowsSearchForm`.  
+2. Attribuez un nom au projet `WindowsSearchForm`.  
   
-3.  Sélectionnez **Windows Application** et cliquez sur **OK**.  
+3. Sélectionnez **Windows Application** et cliquez sur **OK**.  
   
      Le projet **WindowsSearchForm** est créé et ajouté à l’**Explorateur de solutions**.  
   
@@ -75,25 +75,25 @@ Un scénario d'application courant consiste à afficher les données sélectionn
   
 #### <a name="to-create-the-data-source"></a>Pour créer la source de données  
   
-1.  Dans le menu **Données** , cliquez sur **Afficher les sources de données**.  
+1. Dans le menu **Données** , cliquez sur **Afficher les sources de données**.  
   
-2.  Dans la fenêtre **Sources de données**, sélectionnez **Ajouter une nouvelle source de données** pour démarrer l’Assistant **Configuration de source de données**.  
+2. Dans la fenêtre **Sources de données**, sélectionnez **Ajouter une nouvelle source de données** pour démarrer l’Assistant **Configuration de source de données**.  
   
-3.  Sélectionnez **Base de données** dans la page **Choisir un type de source de données** , puis cliquez sur **Suivant**.  
+3. Sélectionnez **Base de données** dans la page **Choisir un type de source de données** , puis cliquez sur **Suivant**.  
   
-4.  Dans la page **Choisir votre connexion de données**, effectuez l’une des opérations suivantes :  
+4. Dans la page **Choisir votre connexion de données**, effectuez l’une des opérations suivantes :  
   
-    -   Si une connexion de données à l’exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.  
+    - Si une connexion de données à l’exemple de base de données Northwind est disponible dans la liste déroulante, sélectionnez-la.  
   
-    -   Sélectionnez **Nouvelle connexion** pour afficher la boîte de dialogue **Ajouter/Modifier la connexion**.  
+    - Sélectionnez **Nouvelle connexion** pour afficher la boîte de dialogue **Ajouter/Modifier la connexion**.  
   
-5.  Si votre base de données nécessite un mot de passe, sélectionnez l’option pour inclure les données sensibles, puis cliquez sur **Suivant**.  
+5. Si votre base de données nécessite un mot de passe, sélectionnez l’option pour inclure les données sensibles, puis cliquez sur **Suivant**.  
   
-6.  Sur le **enregistrer la chaîne de connexion dans le fichier de Configuration de l’Application** , cliquez sur **suivant**.  
+6. Sur le **enregistrer la chaîne de connexion dans le fichier de Configuration de l’Application** , cliquez sur **suivant**.  
   
-7.  Dans la page **Choisir vos objets de base de données**, développez le nœud **Tables**.  
+7. Dans la page **Choisir vos objets de base de données**, développez le nœud **Tables**.  
   
-8.  Sélectionnez la table **Customers**, puis cliquez sur **Terminer**.  
+8. Sélectionnez la table **Customers**, puis cliquez sur **Terminer**.  
   
      **NorthwindDataSet** est ajouté à votre projet et la table **Customers** apparaît dans la fenêtre **Sources de données**.  
   
@@ -102,9 +102,9 @@ Un scénario d'application courant consiste à afficher les données sélectionn
   
 #### <a name="to-create-data-bound-controls-on-the-form"></a>Pour créer des contrôlés liés aux données dans le formulaire  
   
-1.  Développez le nœud **Customers** dans la fenêtre **Sources de données**.  
+1. Développez le nœud **Customers** dans la fenêtre **Sources de données**.  
   
-2.  Faites glisser le nœud **Customers** depuis la fenêtre **Sources de données** vers votre formulaire.  
+2. Faites glisser le nœud **Customers** depuis la fenêtre **Sources de données** vers votre formulaire.  
   
      Un <xref:System.Windows.Forms.DataGridView> et une barre d'outils (<xref:System.Windows.Forms.BindingNavigator>) pour parcourir les enregistrements apparaissent sur le formulaire. [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> et <xref:System.Windows.Forms.BindingNavigator> s’affichent dans la barre d’état des composants.  
   
@@ -113,11 +113,11 @@ Un scénario d'application courant consiste à afficher les données sélectionn
   
 #### <a name="to-create-a-parameterized-query-and-controls-to-enter-the-parameters"></a>Pour créer une requête paramétrable et des contrôles pour entrer les paramètres  
   
-1.  Sélectionnez le contrôle <xref:System.Windows.Forms.DataGridView>, puis choisissez **Ajouter une requête** dans le menu **Données**.  
+1. Sélectionnez le contrôle <xref:System.Windows.Forms.DataGridView>, puis choisissez **Ajouter une requête** dans le menu **Données**.  
   
-2.  Type `FillByCity` dans le **nouveau nom de requête** zone sur le **Générateur de critères de recherche** boîte de dialogue.  
+2. Type `FillByCity` dans le **nouveau nom de requête** zone sur le **Générateur de critères de recherche** boîte de dialogue.  
   
-3.  Ajoutez `WHERE City = @City` à la requête dans la zone **Texte de la requête**.  
+3. Ajoutez `WHERE City = @City` à la requête dans la zone **Texte de la requête**.  
   
      La requête doit ressembler à la suivante :  
   
@@ -128,9 +128,9 @@ Un scénario d'application courant consiste à afficher les données sélectionn
      `WHERE City = @City`  
   
     > [!NOTE]
-    >  Les sources de données Access et OleDb utilisent le point d’interrogation (« ? ») pour indiquer les paramètres, par conséquent, la clause WHERE ressemblerait à ceci : `WHERE City = ?`.  
+    > Les sources de données Access et OleDb utilisent le point d’interrogation (« ? ») pour indiquer les paramètres, par conséquent, la clause WHERE ressemblerait à ceci : `WHERE City = ?`.  
   
-4.  Cliquez sur **OK** pour fermer la boîte de dialogue **Générateur de critères de recherche**.  
+4. Cliquez sur **OK** pour fermer la boîte de dialogue **Générateur de critères de recherche**.  
   
      Un **FillByCityToolStrip** est ajouté au formulaire.  
   
@@ -139,18 +139,18 @@ Un scénario d'application courant consiste à afficher les données sélectionn
   
 #### <a name="to-test-the-application"></a>Pour tester l'application  
   
-1.  Appuyez sur F5 pour exécuter l'application.  
+1. Appuyez sur F5 pour exécuter l'application.  
   
-2.  Tapez **London** dans la zone de texte **City**, puis cliquez sur **FillByCity**.  
+2. Tapez **London** dans la zone de texte **City**, puis cliquez sur **FillByCity**.  
   
      La grille de données est remplie avec les clients qui répondent aux critères. Dans cet exemple, la grille de données n’affiche que les clients possédant une valeur **London** dans leur colonne **City**.  
   
 ## <a name="next-steps"></a>Étapes suivantes  
  Selon les spécifications de votre application, vous pouvez exécuter différentes étapes après la création d'un formulaire paramétrable. Vous pouvez apporter à cette procédure pas à pas les améliorations suivantes :  
   
--   Ajout de contrôles affichant les données associées.  
+- Ajout de contrôles affichant les données associées.  
   
--   Modification du dataset pour ajouter ou supprimer des objets de base de données. Pour plus d’informations, consultez [Créer et configurer des datasets](../data-tools/create-and-configure-datasets-in-visual-studio.md).  
+- Modification du dataset pour ajouter ou supprimer des objets de base de données. Pour plus d’informations, consultez [Créer et configurer des datasets](../data-tools/create-and-configure-datasets-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Lier des contrôles Windows Forms à des données dans Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

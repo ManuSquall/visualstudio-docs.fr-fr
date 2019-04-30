@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03f3c9ca624f0cccae5f9a21573fdcf01b7e9143
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1bf74bb93901cbd1637efd22690b8b1ba52f6b97
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060226"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425735"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Champs et interfaces de la fenêtre Propriétés
 Le modèle de sélection à déterminer quelles informations sont affichées dans le **propriétés** fenêtre est basée sur la fenêtre qui a le focus dans l’IDE. Chaque fenêtre et chaque objet dans la fenêtre sélectionnée, peuvent avoir son objet de contexte de sélection vers le contexte de la sélection globale. L’environnement des mises à jour le contexte de sélection global avec des valeurs à partir d’un frame de fenêtre lorsque cette fenêtre a le focus. Lorsque le focus est modifié, tout comme le fait le contexte de sélection.
@@ -81,7 +81,7 @@ En bas de la fenêtre **Propriétés** , une zone de description affiche des inf
 1. Ajoutez l’attribut `helpstringdll` à l’instruction library dans la bibliothèque de types (`typelib`).
 
    > [!NOTE]
-   >  Cette étape est facultative si la bibliothèque de types se trouve dans un fichier de bibliothèque d’objets (.olb).
+   > Cette étape est facultative si la bibliothèque de types se trouve dans un fichier de bibliothèque d’objets (.olb).
 
 2. Spécifiez des attributs `helpstringcontext` pour les chaînes. Vous pouvez également spécifier des attributs `helpstring` .
 

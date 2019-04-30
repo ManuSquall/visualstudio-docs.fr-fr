@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29b730bacd589e7b42b9f87086eda91d9e199622
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8579504f549cb078fee178127c7396896fce5313
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59504417"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399377"
 ---
 # <a name="general-debugging-options"></a>Options de débogage générales
 
@@ -85,7 +85,7 @@ Dans les conditions 2 et 3, l’exception est quelquefois interceptée par le co
 **Activer la prise en charge du lien source** : Indique au débogueur de Visual Studio pour télécharger les fichiers source pour *.pdb* fichiers qui contiennent des informations de lien Source. Pour plus d’informations sur le lien Source, consultez la [spécification du lien Source](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/source_link.md).
 
 > [!IMPORTANT]
->  Étant donné que le lien Source sera téléchargé les fichiers à l’aide de http ou https, assurez-vous que vous faites confiance à la *.pdb* fichier.
+> Étant donné que le lien Source sera téléchargé les fichiers à l’aide de http ou https, assurez-vous que vous faites confiance à la *.pdb* fichier.
 
 - **Revenir à l'authentification par Git Credential Manager pour toutes les requêtes de lien source** :   Lors de la prise en charge du lien Source est activée, et une demande de lien de Source de l’authentification échoue, Visual Studio appelle ensuite le Gestionnaire d’informations d’identification Git.
 

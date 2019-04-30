@@ -13,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0051f18c67fffc9801ad326745a0dc9dd63f4391
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: b2cdde46484f95aa57404ebe6b6cb4c86ef458c9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58148852"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440505"
 ---
 # <a name="idebugapplicationthreadevents110-interface"></a>IDebugApplicationThreadEvents110 (interface)
 Ajoute plusieurs événements de thread. Ces événements sont locales uniquement. Autrement dit, vous pouvez vous y abonner uniquement dans le processus en cours de débogage, à l’aide de la [IConnectionPoint](http://go.microsoft.com/fwlink/?LinkId=232738) et désinformation des méthodes sur des objets de thread d’application PDM (objets qui implémentent [IDebugApplicationThread Interface](../../winscript/reference/idebugapplicationthread-interface.md)). Elles se produisent sur le thread de qu'origine.  
   
 > [!IMPORTANT]
->  Elle est implémentée par PDM version v11.0 et supérieures. Trouvée dans activdbg100.h.  
+> Elle est implémentée par PDM version v11.0 et supérieures. Trouvée dans activdbg100.h.  
   
 ## <a name="methods"></a>Méthodes  
  L'interface `IDebugActivationThreadEvents110` expose les méthodes suivantes :  

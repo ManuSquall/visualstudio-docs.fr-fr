@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 92a0b432e75cb8df6318be0961cc587257869b27
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041946"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009354"
 ---
 # <a name="word-object-model-overview"></a>Vue d’ensemble du modèle d’objet Word
   Quand vous développez des solutions Word dans Visual Studio, vous interagissez avec le modèle objet Word. Ce modèle objet se compose de classes et d'interfaces fournies dans l'assembly PIA (Primary Interop Assembly) pour Word et définies dans l'espace de noms <xref:Microsoft.Office.Interop.Word> .

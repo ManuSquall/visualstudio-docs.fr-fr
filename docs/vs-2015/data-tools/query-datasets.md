@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c392323905676706835a94bd86fcd53e3f6b8cc7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 69ca24f45384ef650c4a692a8ec0afc079f19bac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054779"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425374"
 ---
 # <a name="query-datasets"></a>Interroger des datasets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Pour rechercher des enregistrements spécifiques dans un jeu de données, utilis
  Au sein d’un jeu de données, les noms de table et de colonne respectent la casse par défaut, autrement dit, une table dans un dataset nommé « Customers » peut également être appelée « customers ». Cela met en correspondance les conventions d’affectation de noms dans plusieurs bases de données, y compris SQL serveur SQL Server, le comportement par défaut est que les noms des éléments de données ne peut pas être distingués uniquement par la casse.  
   
 > [!NOTE]
->  Contrairement aux jeux de données, les documents XML sont la casse, par conséquent, les noms d’éléments de données définis dans les schémas sont respect de la casse. Par exemple, le protocole de schéma permet au schéma de définir une table appelée « Customers » et une autre table appelée « customers ». Cela peut entraîner des collisions de nom lorsqu’un schéma qui contient les éléments qui diffèrent uniquement par la casse est utilisé pour générer une classe de jeu de données.  
+> Contrairement aux jeux de données, les documents XML sont la casse, par conséquent, les noms d’éléments de données définis dans les schémas sont respect de la casse. Par exemple, le protocole de schéma permet au schéma de définir une table appelée « Customers » et une autre table appelée « customers ». Cela peut entraîner des collisions de nom lorsqu’un schéma qui contient les éléments qui diffèrent uniquement par la casse est utilisé pour générer une classe de jeu de données.  
   
  Respecte la casse, toutefois, peut être un facteur de l’interprétation des données dans le jeu de données. Par exemple, si vous filtrez des données dans une table de dataset, les critères de recherche peuvent retourner des résultats différents selon que la comparaison respecte la casse. Vous pouvez contrôler le respect de la casse de filtrage, la recherche et le tri en définissant le jeu de données <xref:System.Data.DataSet.CaseSensitive%2A> propriété. Toutes les tables dans le jeu de données héritent de la valeur de cette propriété par défaut. (Vous pouvez remplacer cette propriété pour chaque table individuelle en définissant la table <xref:System.Data.DataTable.CaseSensitive%2A> propriété.)  
   

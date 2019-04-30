@@ -8,12 +8,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3664061cf8c1233f3aa25341b5c77c21de51d2c7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 1923b2c41675bfcf20ca1f9c0035dd1e500debe4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951507"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425435"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075 : Traitement DTD non sécurisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ ms.locfileid: "58951507"
 - Vérifiez que la méthode Load() accepte une instance de XmlReader dans tous les cas InnerXml.
 
 > [!NOTE]
->  Cette règle peut signaler des faux positifs sur certaines instances de XmlSecureResolver valides. Nous travaillons sur la résolution de ce problème pour le milieu de l’année 2016.
+> Cette règle peut signaler des faux positifs sur certaines instances de XmlSecureResolver valides. Nous travaillons sur la résolution de ce problème pour le milieu de l’année 2016.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Sauf si vous êtes sûr que l’entrée provient d’une source fiable, ne supprimez aucune règle de cet avertissement.

@@ -7,18 +7,18 @@ ms.topic: conceptual
 ms.assetid: 78342ce6-36c8-485b-a5f6-760e7a420a26
 caps.latest.revision: 8
 manager: jillfra
-ms.openlocfilehash: 457b3baf2b291a0ef96bd8bbd748261348a2108d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: abe1013d37db43114f3970f12b1a0d1f08b07a4e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045458"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446454"
 ---
 # <a name="how-to-upgrade-a-visual-studio-custom-start-page"></a>Procédure : Mise à niveau une Page de démarrage personnalisée Visual Studio
 Vous pouvez mettre à niveau une page de démarrage personnalisée Visual Studio 2010 ou Visual Studio 2012 vers Visual Studio 2015 en procédant comme suit.
 
 > [!WARNING]
->  La page de démarrage personnalisée mise à niveau dans cette procédure est celle créée avec le modèle [Custom Start Page](http://visualstudiogallery.msdn.microsoft.com/f655a5dc-1a2d-4eca-b774-76c352c03b87) disponible dans la galerie Visual Studio. Votre page de démarrage peut avoir d’autres fonctionnalités qui doivent être mises à niveau.
+> La page de démarrage personnalisée mise à niveau dans cette procédure est celle créée avec le modèle [Custom Start Page](http://visualstudiogallery.msdn.microsoft.com/f655a5dc-1a2d-4eca-b774-76c352c03b87) disponible dans la galerie Visual Studio. Votre page de démarrage peut avoir d’autres fonctionnalités qui doivent être mises à niveau.
 
 ### <a name="to-upgrade-a-custom-start-page-to-visual-studio-2015"></a>Pour mettre à niveau une page de démarrage personnalisée vers Visual Studio 2015
 

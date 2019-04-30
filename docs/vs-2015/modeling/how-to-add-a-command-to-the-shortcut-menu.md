@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7692e418c3e01b89a8dcf775350c062600351ac3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5bcb562d89ee68320c48cc778be3294a2af5c719
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093044"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426945"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Procédure : Ajouter une commande au menu contextuel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Vous pouvez ajouter des commandes de menu à votre langage spécifique à un dom
    Pour obtenir des exemples, consultez le [site Web Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=185579).  
   
 > [!NOTE]
->  Vous pouvez aussi modifier le comportement de certaines commandes existantes telles que Couper, Coller, Sélectionner tout et Imprimer en substituant des méthodes dans CommandSet.cs. Pour plus d'informations, voir [Procédure : Modifier une commande de Menu Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
+> Vous pouvez aussi modifier le comportement de certaines commandes existantes telles que Couper, Coller, Sélectionner tout et Imprimer en substituant des méthodes dans CommandSet.cs. Pour plus d'informations, voir [Procédure : Modifier une commande de Menu Standard](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md).  
   
 ## <a name="defining-a-command-using-mef"></a>Définition d'une commande à l'aide de l'infrastructure MEF  
  L'infrastructure MEF (Managed Extension Framework) fournit une alternative pour la définition de commandes de menu dans le menu de diagramme. Son objectif principal est de faire en sorte qu'une solution DSL puisse être étendue par vous-même ou par d'autres parties. Les utilisateurs peuvent choisir d'installer uniquement la solution DSL ou d'installer à la fois la solution DSL et les extensions. Cependant, l'infrastructure MEF réduit également la charge de travail liée à la définition des commandes de menu contextuel, après le travail initial d'activation de l'infrastructure MEF sur la solution DSL.  
@@ -90,7 +90,7 @@ Vous pouvez ajouter des commandes de menu à votre langage spécifique à un dom
     ```  
   
     > [!NOTE]
-    >  Chaque bouton ou groupe est identifié par un GUID et un ID entier. Vous pouvez créer plusieurs groupes et boutons avec le même GUID. Cependant, ils doivent avoir des ID différents. Les noms des GUID et ID sont traduits en GUID réelle et les ID numériques dans le `<Symbols>` nœud.  
+    > Chaque bouton ou groupe est identifié par un GUID et un ID entier. Vous pouvez créer plusieurs groupes et boutons avec le même GUID. Cependant, ils doivent avoir des ID différents. Les noms des GUID et ID sont traduits en GUID réelle et les ID numériques dans le `<Symbols>` nœud.  
   
 3. Ajoutez une contrainte de visibilité pour la commande pour qu'elle soit chargée uniquement dans le contexte de votre langage spécifique à un domaine. Pour plus d’informations, consultez [VisibilityConstraints élément](../extensibility/visibilityconstraints-element.md).  
   
@@ -120,7 +120,7 @@ Vous pouvez ajouter des commandes de menu à votre langage spécifique à un dom
 5. Remplacez `{000...000}` par un GUID qui identifie vos groupes et éléments de menu. Pour obtenir un nouveau GUID, utilisez la **créer un GUID** outil sur le **outils** menu.  
   
     > [!NOTE]
-    >  Si vous ajoutez d'autres groupes ou éléments de menu, vous pouvez utiliser le même GUID. Cependant, vous devez utiliser de nouvelles valeurs pour `IDSymbols`.  
+    > Si vous ajoutez d'autres groupes ou éléments de menu, vous pouvez utiliser le même GUID. Cependant, vous devez utiliser de nouvelles valeurs pour `IDSymbols`.  
   
 6. Dans le code que vous avez copié à partir de cette procédure, remplacez chaque occurrence des chaînes suivantes par vos propres chaînes :  
   
@@ -298,7 +298,7 @@ private const int cmdidMyContextMenuCommand = 1;
  Utilisez la même valeur GUID que vous avez inséré dans **Commands.vsct**.  
   
 > [!NOTE]
->  Si vous modifiez la section Symbols du fichier VSCT, vous devez aussi modifier ces déclarations pour qu'elles correspondent. Vous devez également incrémenter le numéro de version dans Package.tt.  
+> Si vous modifiez la section Symbols du fichier VSCT, vous devez aussi modifier ces déclarations pour qu'elles correspondent. Vous devez également incrémenter le numéro de version dans Package.tt.  
   
  Inscrivez vos commandes de menu dans le cadre de ce jeu de commandes. `GetMenuCommands()` est appelée une fois le diagramme initialisé :  
   

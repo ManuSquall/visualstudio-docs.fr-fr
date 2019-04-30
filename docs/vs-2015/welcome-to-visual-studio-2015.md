@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05fd28e6b47d74c28edc491458b73b487d282a45
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a2418df5a831416d74328e4ca926cdf8c3a721e2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067727"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383426"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Bienvenue dans Visual Studio 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "60067727"
 Bienvenue dans Visual Studio ! Nous vous offrons tout ce dont vous avez besoin pour créer des applications performantes destinées aux appareils ou aux ordinateurs de bureau, sur le web et dans le cloud. Écrivez du code pour iOS, Android et Windows dans un environnement de développement unique. Bénéficiez de la fonctionnalité IntelliSense, d’une navigation de code simplifiée, de builds rapides et d’un développement express. Visual Studio améliore votre productivité et vous facilite la tâche, que vous travailliez seul ou en équipe.
 
 > [!NOTE]
->  Cliquez ici pour accéder aux notes de version de [Visual Studio 2015 Update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).
+> Cliquez ici pour accéder aux notes de version de [Visual Studio 2015 Update 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).
 >
->  Cliquez ici pour accéder aux notes de version de [Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes).
+> Cliquez ici pour accéder aux notes de version de [Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes).
 
  Téléchargez [Visual Studio Community](http://go.microsoft.com/fwlink/?LinkId=517106) gratuitement pour commencer à coder dès à présent. Pour un développement multiplateforme, veillez à installer les packages facultatifs. (Vous pouvez obtenir d’autres fonctionnalités avec [d’autres éditions de Visual Studio](http://www.visualstudio.com/products/compare-visual-studio-products-vs).)
 

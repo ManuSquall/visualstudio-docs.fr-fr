@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85aea5bfa6ccdf5f3753a1397729671249961152
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3181f7ab2e69dd04a21f5f81ca470f849c268e03
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060590"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418384"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>Procédure : Prend en charge le mode plan dans un service de langage hérité
 Le mode plan est utilisé pour développer ou réduire des différentes régions du texte. Le moyen le mode plan est utilisé peut être défini différemment par différents langages. Pour plus d’informations, voir [Mode Plan](../../ide/outlining.md).
@@ -25,7 +25,7 @@ Le mode plan est utilisé pour développer ou réduire des différentes régions
  Services de langage hérité sont implémentés en tant que partie d’un VSPackage, mais la plus récente pour implémenter des fonctionnalités de service de langage consiste à utiliser des extensions MEF. Pour en savoir plus sur la nouvelle façon d’implémenter le mode plan, consultez [procédure pas à pas : Mode Plan](../../extensibility/walkthrough-outlining.md).
 
 > [!NOTE]
->  Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorer les performances de votre service de langage et vous permettent de tirer parti des nouvelles fonctionnalités de l’éditeur.
+> Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorer les performances de votre service de langage et vous permettent de tirer parti des nouvelles fonctionnalités de l’éditeur.
 
  Ce qui suit montre comment prendre en charge de cette commande pour votre service de langage.
 
@@ -43,7 +43,7 @@ Le mode plan est utilisé pour développer ou réduire des différentes régions
  Vous pouvez appeler la <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> méthode pour plusieurs régions en mode plan en spécifiant ces régions dans le `rgOutlnReg` paramètre. Le `rgOutlnReg` paramètre est un <xref:Microsoft.VisualStudio.TextManager.Interop.NewOutlineRegion> structure. Ce processus vous permet de spécifier des caractéristiques différentes de la zone masquée, telles que si une région particulière est développée ou réduite.
 
 > [!NOTE]
->  Soyez prudent sur le masquage des caractères de nouvelle ligne. Texte masqué est souhaitable d’étendre à partir du début de la première ligne au dernier caractère de la dernière ligne dans une section, en laissant le caractère de nouvelle ligne final est visible.
+> Soyez prudent sur le masquage des caractères de nouvelle ligne. Texte masqué est souhaitable d’étendre à partir du début de la première ligne au dernier caractère de la dernière ligne dans une section, en laissant le caractère de nouvelle ligne final est visible.
 
 ## <a name="see-also"></a>Voir aussi
 - [Guide pratique pour Fournir la prise en charge de texte masqué dans un service de langage hérité](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)

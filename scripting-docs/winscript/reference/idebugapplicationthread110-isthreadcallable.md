@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ae10fcf5d4047ec38d36e7c3e6f3ded0f7bba43a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 90f0010a513adef67af1285ac15bc35d4573df57
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440512"
 ---
 # <a name="idebugapplicationthread110isthreadcallable"></a>IDebugApplicationThread110::IsThreadCallable
 Détermine si ce thread est dans un état qui traite les appels effectués à l’aide du thread de PDM mécanismes, tels que SynchronousCallInThread de commutation.  
   
 > [!IMPORTANT]
->  [Interface IDebugApplicationThread110](../../winscript/reference/idebugapplicationthread110-interface.md) est implémentée par PDM version v11.0 et supérieures. Trouvée dans activdbg100.h.  
+> [Interface IDebugApplicationThread110](../../winscript/reference/idebugapplicationthread110-interface.md) est implémentée par PDM version v11.0 et supérieures. Trouvée dans activdbg100.h.  
   
 ## <a name="syntax"></a>Syntaxe  
   

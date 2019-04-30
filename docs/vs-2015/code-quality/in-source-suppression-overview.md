@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 046ae576880c6749c6bb033f66124c0085dfab16
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5bb3632e1ed7bf07e236322700ba8553b53a75cb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057158"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426603"
 ---
 # <a name="in-source-suppression-overview"></a>Vue d’ensemble de la suppression à la source
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Suppression à la source est la possibilité de supprimer ou d’ignorer des vio
  Vous ne devez pas utiliser les suppressions dans la source sur les versions release pour empêcher les métadonnées de suppression à la source de livraison par inadvertance. En raison du coût de traitement de la suppression à la source, les performances de votre application peuvent également être réduites en incluant les métadonnées de suppression à la source.  
   
 > [!NOTE]
->  Il est inutile pour transmettre code ces attributs vous-même. Pour plus d'informations, voir [Procédure : Supprimer les avertissements à l’aide de l’élément de Menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). L’élément de menu n’est pas disponible pour le code C++.  
+> Il est inutile pour transmettre code ces attributs vous-même. Pour plus d'informations, voir [Procédure : Supprimer les avertissements à l’aide de l’élément de Menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). L’élément de menu n’est pas disponible pour le code C++.  
   
 ## <a name="suppressmessage-attribute"></a>Attribut SuppressMessage  
  Lorsque vous cliquez sur un avertissement d’analyse du Code dans le **liste d’erreurs** puis cliquez sur **supprimer les messages**, un **SuppressMessage** attribut est ajouté dans votre code ou à la fichier de suppressions globales du projet.  
@@ -109,7 +109,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
  `[module: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "MyNamespace")]`  
   
 > [!NOTE]
->  Lorsque vous supprimez un avertissement avec la portée espace de noms, il supprime l’avertissement par rapport à l’espace de noms. Il ne supprime pas l’avertissement par rapport aux types dans l’espace de noms.  
+> Lorsque vous supprimez un avertissement avec la portée espace de noms, il supprime l’avertissement par rapport à l’espace de noms. Il ne supprime pas l’avertissement par rapport aux types dans l’espace de noms.  
   
  Toute suppression peut être exprimée en spécifiant une portée explicite. Ces suppressions doivent exister au niveau global. Vous ne pouvez pas spécifier de suppression au niveau membre en décorant un type.  
   
@@ -118,7 +118,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
  `[module: SuppressMessage("Microsoft.Design", "CA1055:AbstractTypesDoNotHavePublicConstructors", Scope="member", Target="Microsoft.Tools.FxCop.Type..ctor()")]`  
   
 > [!NOTE]
->  Cible contient toujours le nom d’élément qualifié complet.  
+> Cible contient toujours le nom d’élément qualifié complet.  
   
 ## <a name="global-suppression-file"></a>Fichier de Suppression globale  
  Le fichier de suppression globale conserve les suppressions qui sont des suppressions au niveau global ou suppressions qui ne spécifient pas une cible. Par exemple, les suppressions de violations de niveau assembly sont stockées dans ce fichier. En outre, certaines suppressions ASP.NET sont stockées dans ce fichier, car les paramètres de niveau de projet ne sont pas disponibles pour le code-behind d’un formulaire. Une suppression globale est créée et ajoutée à votre projet la première fois que vous sélectionnez le **dans le fichier de Suppression de projet** possibilité du **supprimer les messages** commande dans la fenêtre liste d’erreurs. Pour plus d'informations, voir [Procédure : Supprimer les avertissements à l’aide de l’élément de Menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md).  

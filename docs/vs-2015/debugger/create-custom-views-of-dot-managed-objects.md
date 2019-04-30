@@ -24,12 +24,12 @@ caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 714a4307f6885dbfd8c1bed4ccd8f0cccc173c07
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: fbbfbe17fa5dfb9a10f530981643be7a0042d6fc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440448"
 ---
 # <a name="create-custom-views-of-managed-objects"></a>Créer des vues personnalisées d’objets gérés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Vous pouvez personnaliser la façon dont Visual Studio affiche les types de donn
  En code natif, vous pouvez ajouter des expansions de type de données personnalisées au fichier autoexp.dat, situé dans le répertoire Programmes\Microsoft Visual Studio 11.0\Common7\Packages\Debugger. Ce fichier contient des instructions sur la façon d'écrire les règles `autoexp`.  
   
 > [!CAUTION]
->  La structure de ce fichier et la syntaxe des règles autoexp peuvent varier d’une mise en production à l’autre de Visual Studio.  
+> La structure de ce fichier et la syntaxe des règles autoexp peuvent varier d’une mise en production à l’autre de Visual Studio.  
   
  Les vues de type natives peuvent également être personnalisées en écrivant un complément Évaluateur d'expression. Pour plus d’informations, consultez [exemple EEAddIn : Débogage Expression complément Évaluateur](http://msdn.microsoft.com/d4f6b068-c812-45bc-9ec0-7e0363c4bb9e).  
   

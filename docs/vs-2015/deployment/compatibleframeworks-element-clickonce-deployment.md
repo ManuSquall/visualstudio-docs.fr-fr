@@ -15,12 +15,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: af927086261f5472e0a71182b8c03b7d750827ab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: fc6446f30f9429811c5382e0a49eca16b63cd9b5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422966"
 ---
 # <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;compatibleFrameworks&gt; , élément (déploiement ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "58949877"
 Identifie les versions du .NET Framework pour lesquelles cette application peut s'installer et s'exécuter.  
   
 > [!NOTE]
->  [MageUI.exe](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14) ne prend pas en charge la `compatibleFrameworks` élément lors de l’enregistrement d’un manifeste d’application qui a déjà été signé avec un certificat à l’aide [MageUI.exe](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14). À la place, vous devez utiliser [Mage.exe](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1).  
+> [MageUI.exe](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14) ne prend pas en charge la `compatibleFrameworks` élément lors de l’enregistrement d’un manifeste d’application qui a déjà été signé avec un certificat à l’aide [MageUI.exe](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14). À la place, vous devez utiliser [Mage.exe](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -50,7 +50,7 @@ Identifie les versions du .NET Framework pour lesquelles cette application peut 
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|`S` `upportUrl`|Facultatif. Spécifie l’URL où la version de .NET Framework compatible par défaut peut être téléchargée.|  
+|`S` `upportUrl`|Optionnel. Spécifie l’URL où la version de .NET Framework compatible par défaut peut être téléchargée.|  
   
 ## <a name="framework"></a>framework  
  Obligatoire. Le tableau suivant répertorie les attributs qui la `framework` élément prend en charge.  

@@ -12,12 +12,12 @@ ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 496ace3193ec2a78033b2e429f6fa7c6cbf11a07
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4b2ce01cf315404fbd37e1936ac445a37c9a3f72
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430924"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Procédure : Le jeu de couleurs et polices intégrées d’accès
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ L’environnement de développement intégré (IDE) Visual Studio a un jeu de po
     Ce GUID est utilisé pour identifier une catégorie<strong>.</strong> Cette catégorie réutilise la spécification de couleurs et de polices par défaut de l’IDE.  
   
    > [!NOTE]
-   >  Lors de la récupération des données de police et de couleur avec la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> ou autres interfaces, les VSPackages utiliser ce GUID pour référencer les informations intégrées.  
+   > Lors de la récupération des données de police et de couleur avec la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> ou autres interfaces, les VSPackages utiliser ce GUID pour référencer les informations intégrées.  
   
 2. Nom de la catégorie doit être ajouté à une table de chaînes à l’intérieur du fichier de ressources (.rc) du VSPackage, afin qu’elle peut être localisée en fonction des besoins lorsque affichés dans l’IDE.  
   

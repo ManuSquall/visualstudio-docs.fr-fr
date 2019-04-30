@@ -20,12 +20,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 153773d27d4f27a6987f7984955dde26b187b65e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6d93d9f771da9387661603f3eb71301e9d9aead7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116511"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427141"
 ---
 # <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Procédure pas à pas : Création d’un programme d’amorçage personnalisé pour afficher une invite de confidentialité
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -128,7 +128,7 @@ Vous pouvez configurer des applications ClickOnce à mettre à jour automatiquem
     6. Dans le **objet de démarrage** menu déroulant, sélectionnez **Module1**.  
   
        > [!NOTE]
-       >  La désactivation de l’infrastructure d’application désactive les fonctionnalités telles que les styles visuels Windows XP, les événements d’application, l’écran de démarrage, application à instance unique et bien plus encore. Pour plus d’informations, consultez [Page Application, Concepteur de projets (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
+       > La désactivation de l’infrastructure d’application désactive les fonctionnalités telles que les styles visuels Windows XP, les événements d’application, l’écran de démarrage, application à instance unique et bien plus encore. Pour plus d’informations, consultez [Page Application, Concepteur de projets (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
   
        Pour les développeurs Visual c# uniquement :  
   
@@ -154,12 +154,12 @@ Vous pouvez configurer des applications ClickOnce à mettre à jour automatiquem
 1. Créez un répertoire nommé **UpdateConsentDialog** dans %PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages.  
   
     > [!NOTE]
-    >  Vous devrez peut-être pas des privilèges d’administrateur pour créer ce dossier.  
+    > Vous devrez peut-être pas des privilèges d’administrateur pour créer ce dossier.  
   
 2. Dans le répertoire UpdateConsentDialog, créez un sous-répertoire nommé fr.  
   
     > [!NOTE]
-    >  Créez un nouveau répertoire pour chacun des paramètres régionaux. Par exemple, vous pouvez ajouter des sous-répertoires pour les paramètres régionaux fr et de. Ces répertoires contient les chaînes Français et allemand et les modules linguistiques, si nécessaire.  
+    > Créez un nouveau répertoire pour chacun des paramètres régionaux. Par exemple, vous pouvez ajouter des sous-répertoires pour les paramètres régionaux fr et de. Ces répertoires contient les chaînes Français et allemand et les modules linguistiques, si nécessaire.  
   
 #### <a name="step-2-to-create-the-productxml-manifest-file"></a>Étape 2 : Pour créer le fichier manifeste product.xml  
   
@@ -224,7 +224,7 @@ Vous pouvez configurer des applications ClickOnce à mettre à jour automatiquem
 4. Créer un document appelé eula.rtf pour les termes du contrat de licence de logiciel.  
   
     > [!NOTE]
-    >  Les termes du contrat de licence de logiciel doit inclure des informations sur les licences, garanties, passifs et lois locales. Ces fichiers doivent être spécifiques, assurez-vous que le fichier est enregistré dans un format qui prend en charge les caractères MBCS ou UNICODE. Consultez votre service juridique sur le contenu des termes du contrat de licence logiciel.  
+    > Les termes du contrat de licence de logiciel doit inclure des informations sur les licences, garanties, passifs et lois locales. Ces fichiers doivent être spécifiques, assurez-vous que le fichier est enregistré dans un format qui prend en charge les caractères MBCS ou UNICODE. Consultez votre service juridique sur le contenu des termes du contrat de licence logiciel.  
   
 5. Enregistrez le document dans le sous-répertoire en dans le répertoire du programme d’amorçage UpdateConsentDialog.  
   
@@ -244,7 +244,7 @@ Vous pouvez configurer des applications ClickOnce à mettre à jour automatiquem
 4. Sélectionnez **mettre à jour de la boîte de dialogue consentement**.  
   
     > [!NOTE]
-    >  Vous devrez peut-être fermer et rouvrir Visual Studio pour afficher la boîte de dialogue de consentement mise à jour dans la boîte de dialogue composants requis.  
+    > Vous devrez peut-être fermer et rouvrir Visual Studio pour afficher la boîte de dialogue de consentement mise à jour dans la boîte de dialogue composants requis.  
   
 5. Cliquez sur **OK**.  
   

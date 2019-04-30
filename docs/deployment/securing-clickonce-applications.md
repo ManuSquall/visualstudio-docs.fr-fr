@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eab627b09c1544b69a8834711e51a3bbbdd63e5a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 2b23e10dfd00f4e1b9bde8520ef50aa60cd18b35
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58866784"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406751"
 ---
 # <a name="secure-clickonce-applications"></a>Sécuriser des applications ClickOnce
 Les applications[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] sont soumises aux contraintes de sécurité d'accès du code dans .NET Framework afin d'aider à limiter l'accès du code aux opérations et aux ressources protégées. Pour cette raison, il est important de comprendre les implications de la sécurité d'accès du code afin d'écrire vos applications [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] en conséquence. Vos applications peuvent utiliser des zones de confiance totale ou de confiance partielle, telles que les zones intranet et Internet, pour limiter l'accès.
@@ -71,7 +71,7 @@ Les applications[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)
  Vous ne devez jamais passer d'arguments récupérés via une chaîne de requête directement à une base de données ou à la ligne de commande sans les vérifier et vous assurer qu'ils sont sécurisés. Les arguments non sécurisés sont ceux qui incluent des caractères d'échappement de la base de données ou de la ligne de commande pouvant permettre à un utilisateur malveillant de manipuler votre application et de lui faire exécuter des commandes arbitraires.
 
 > [!NOTE]
->  Les arguments de chaîne de requête constituent la seule manière de passer des arguments à une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] lors du lancement. Vous ne pouvez pas passer d'arguments à une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] à partir de la ligne de commande.
+> Les arguments de chaîne de requête constituent la seule manière de passer des arguments à une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] lors du lancement. Vous ne pouvez pas passer d'arguments à une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] à partir de la ligne de commande.
 
 ## <a name="deploying-obfuscated-assemblies"></a>Déploiement d’assemblys obfusqués
  Visual Studio inclut la version gratuite de [PreEmptive Protection - Dotfuscator Community](../ide/dotfuscator/index.md), que vous pouvez utiliser pour protéger vos applications ClickOnce via l’obscurcissement du code et des mesures de protection active.  Pour plus d’informations, consultez [la section ClickOnce du Guide de l’utilisateur de Dotfuscator Community](https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/advanced_clickonce.html).

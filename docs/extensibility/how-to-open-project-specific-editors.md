@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11374ca0a65a5b430b819a9ef1bdf57f7434e923
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8482f2704fe81482d95c2c8e73ae6e8c8ffd272d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053752"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417142"
 ---
 # <a name="how-to-open-project-specific-editors"></a>Procédure : Ouvrez éditeurs spécifiques du projet
 Si un fichier de l’élément en cours d’ouverture par un projet est intrinsèquement lié à l’éditeur pour ce projet particulier, le projet doit ouvrir le fichier à l’aide d’un éditeur spécifique au projet. Le fichier ne peut pas être délégué au mécanisme de l’IDE pour la sélection d’un éditeur. Par exemple, au lieu d’utiliser un éditeur de bitmaps standard, vous pouvez utiliser cette option d’éditeur spécifiques au projet pour spécifier un éditeur de bitmaps spécifique qui reconnaît les informations contenues dans le fichier qui est unique à votre projet.
@@ -29,7 +29,7 @@ Si un fichier de l’élément en cours d’ouverture par un projet est intrins�
 1. Appelez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> (méthode) (`RDT_EditLock`) pour déterminer si le fichier (objet de données de document) est déjà ouvert.
 
     > [!NOTE]
-    >  Pour plus d’informations sur les données de document et les objets de vue de document, consultez [Document de vue de données et de documents dans les éditeurs personnalisés](../extensibility/document-data-and-document-view-in-custom-editors.md).
+    > Pour plus d’informations sur les données de document et les objets de vue de document, consultez [Document de vue de données et de documents dans les éditeurs personnalisés](../extensibility/document-data-and-document-view-in-custom-editors.md).
 
 2. Si le fichier est déjà ouvert, resurface le fichier en appelant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> méthode et en spécifiant une valeur de IDO_ActivateIfOpen pour le `grfIDO` paramètre.
 

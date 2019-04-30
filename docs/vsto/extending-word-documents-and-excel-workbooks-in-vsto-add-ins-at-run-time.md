@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7f7218324e643355e7c6554f3a1cf6c74e8349d5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 11171cf619e77508852178ee442ce6e26f9b573f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049468"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437241"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-runtime"></a>Étendre des documents Word et classeurs Excel dans des Compléments VSTO lors de l’exécution
   Vous pouvez utiliser un complément VSTO pour personnaliser des documents Word et des classeurs Excel comme suit :
@@ -89,7 +89,7 @@ ms.locfileid: "60049468"
  Vous pouvez ajouter des contrôles Windows Forms ou des *contrôles hôtes*. Un contrôle hôte est un contrôle fourni par [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] qui encapsule un contrôle correspondant dans l'assembly PIA Word ou Excel. Un contrôle hôte expose l’ensemble du comportement de l’objet Office natif sous-jacent. Il déclenche des événements et peut être lié aux données en utilisant le modèle de liaison de données Windows Forms. Pour plus d’informations, consultez [éléments hôtes et héberger de vue d’ensemble des contrôles](../vsto/host-items-and-host-controls-overview.md).
 
 > [!NOTE]
->  Vous ne pouvez pas utiliser un complément VSTO pour ajouter un contrôle <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> à une feuille de calcul, ou bien un contrôle <xref:Microsoft.Office.Tools.Word.XMLNode> ou <xref:Microsoft.Office.Tools.Word.XMLNodes> à un document. Ces contrôles ne peuvent pas être ajoutés par programmation. Pour plus d’informations, consultez [limitations de programmation des éléments hôtes et contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
+> Vous ne pouvez pas utiliser un complément VSTO pour ajouter un contrôle <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> à une feuille de calcul, ou bien un contrôle <xref:Microsoft.Office.Tools.Word.XMLNode> ou <xref:Microsoft.Office.Tools.Word.XMLNodes> à un document. Ces contrôles ne peuvent pas être ajoutés par programmation. Pour plus d’informations, consultez [limitations de programmation des éléments hôtes et contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
 
 ### <a name="persist-and-remove-controls"></a>Conserver et supprimer des contrôles
  Lorsque vous ajoutez des contrôles managés à un document ou à une feuille de calcul, les contrôles ne sont pas persistant lorsque le document est enregistré puis fermé. Tous les contrôles hôtes sont supprimés afin que seuls les objets Office natifs sous-jacents soient conservés. Par exemple, un <xref:Microsoft.Office.Tools.Excel.ListObject> devient un <xref:Microsoft.Office.Interop.Excel.ListObject>. Tous les contrôles Windows Forms sont également supprimés, mais leurs wrappers ActiveX sont conservés dans le document. Vous devez inclure du code dans votre complément VSTO pour nettoyer les contrôles ou les recréer à l'ouverture suivante du document. Pour plus d’informations, consultez [conserver des contrôles dynamiques dans les documents Office](../vsto/persisting-dynamic-controls-in-office-documents.md).

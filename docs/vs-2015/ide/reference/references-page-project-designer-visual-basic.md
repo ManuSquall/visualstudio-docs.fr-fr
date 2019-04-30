@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dd579e6bf434903ecc1e2fe60b1e62d54c165034
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a714c3b3b282d37e4f8c9e73a593c9a35298f151
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114364"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443848"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Page Références, Concepteur de projets (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Utilisez la page **Références** du **Concepteur de projet** pour gérer des r�
  Cliquez sur ce bouton pour accéder à la boîte de dialogue **Chemins des références**.  
   
 > [!NOTE]
->  Quand le système de projet trouve une référence d’assembly, le système résout la référence en regardant aux emplacements ci-dessous, dans l’ordre suivant :  
+> Quand le système de projet trouve une référence d’assembly, le système résout la référence en regardant aux emplacements ci-dessous, dans l’ordre suivant :  
 > 
 > 1. Dossier du projet. Les fichiers du dossier du projet s’affichent dans l’**Explorateur de solutions** quand **Afficher tous les fichiers** n’est pas en vigueur.  
 >    2. Dossiers spécifiés dans la boîte de dialogue **Chemins des références**.  

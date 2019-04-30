@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 51dfdc95748690f43809244dc14ae2662d8aec39
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b00f89b60c7e884bfaf71e971722530b44a78b4e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445683"
 ---
 # <a name="help-viewer-administrator-guide"></a>Guide de l'administrateur Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ La visionneuse d’aide vous permet de gérer les installations locales d’aide
 - La source par défaut de l’aide sera toujours en ligne.  
   
   > [!TIP]
-  >  Vous pouvez modifier la source par défaut de l’aide en modifiant la clé de Registre HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp. Pour plus d’informations, consultez [Substitutions dans Help Content Manager](../ide/help-content-manager-overrides.md).  
+  > Vous pouvez modifier la source par défaut de l’aide en modifiant la clé de Registre HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp. Pour plus d’informations, consultez [Substitutions dans Help Content Manager](../ide/help-content-manager-overrides.md).  
   
 - Les clients seront toujours invités à installer le contenu d’aide de base lors du premier démarrage de Visual Studio. Vous pouvez désactiver cette invite en modifiant la clé de Registre HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\14.0\Help\DisableFirstRunHelpSelection.  
   
@@ -78,7 +78,7 @@ La visionneuse d’aide vous permet de gérer les installations locales d’aide
 - Les utilisateurs doivent disposer des droits d’administrateur pour mettre à jour, ajouter ou supprimer le contenu d’aide locale une fois celui-ci installé.  
   
   > [!TIP]
-  >  Si les utilisateurs ne disposent pas des droits d’administrateur, nous vous recommandons de désactiver l’onglet Gérer le contenu de la visionneuse d’aide. Pour plus d’informations, consultez [Substitutions dans Help Content Manager](../ide/help-content-manager-overrides.md).  
+  > Si les utilisateurs ne disposent pas des droits d’administrateur, nous vous recommandons de désactiver l’onglet Gérer le contenu de la visionneuse d’aide. Pour plus d’informations, consultez [Substitutions dans Help Content Manager](../ide/help-content-manager-overrides.md).  
   
   Avertissements :  
   

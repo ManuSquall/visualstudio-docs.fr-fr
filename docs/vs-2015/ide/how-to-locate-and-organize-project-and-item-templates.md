@@ -16,12 +16,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1f4788ab9fa23049ded8107fe1d33a9419b79c00
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4b14a374214a605ec718ad60c6942752f3134edd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091237"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416719"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Procédure : Localiser et organiser les projets et modèles d’élément
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Les fichiers modèles doivent être placés à un emplacement que Visual Studio 
  Les catégories des boîtes de dialogue **Nouveau projet** et **Ajouter un nouvel élément** reflètent les structures de répertoires qui existent pour les modèles installés et personnalisés. Vous pouvez modifier ces structures de répertoires pour organiser vos modèles selon votre propre logique.  
   
 > [!NOTE]
->  Vous ne pouvez pas créer de catégorie au niveau du langage de programmation. Vous ne pouvez créer une catégorie qu'à l'intérieur de chaque langage.  
+> Vous ne pouvez pas créer de catégorie au niveau du langage de programmation. Vous ne pouvez créer une catégorie qu'à l'intérieur de chaque langage.  
   
  Si les répertoires des modèles installés et personnalisés pour un langage particulier n’ont pas la même structure (c’est-à-dire un dossier contient des répertoires qui n’existent pas dans l’autre dossier), le jeu de catégories qui apparaît dans la boîte de dialogue **Nouveau projet** est la fusion de toutes les catégories.  
   

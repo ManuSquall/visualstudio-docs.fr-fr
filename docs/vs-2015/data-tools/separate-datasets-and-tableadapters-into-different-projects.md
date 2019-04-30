@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9228eaec55dc936d44eeccd55e6a05559aea27e4
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: c90943f64166cfd5113032d14c2c66be1db858eb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647460"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425099"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Séparer les datasets et les TableAdapters en différents projets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Datasets typés ont été améliorées afin que le [TableAdapters](http://msdn.m
 1. Ouvrez une solution qui contient un jeu de données (fichier .xsd).  
   
    > [!NOTE]
-   >  Si la solution ne contient pas le projet dans lequel vous souhaitez séparer le code de votre jeu de données, créer le projet, ou ajouter un projet existant à la solution.  
+   > Si la solution ne contient pas le projet dans lequel vous souhaitez séparer le code de votre jeu de données, créer le projet, ou ajouter un projet existant à la solution.  
   
 2. Double-cliquez sur un fichier de dataset typé (fichier .xsd) dans **l’Explorateur de solutions** pour ouvrir le jeu de données dans le **Concepteur de Dataset**.  
   
@@ -54,7 +54,7 @@ Datasets typés ont été améliorées afin que le [TableAdapters](http://msdn.m
     Après avoir sélectionné le projet dans lequel vous souhaitez générer le code de jeu de données, le **fichier DataSet** propriété est remplie avec un nom de fichier par défaut. Vous pouvez modifier ce nom si nécessaire. En outre, si vous souhaitez générer le code de jeu de données dans un répertoire spécifique, vous pouvez définir le **dossier du projet** propriété le nom d’un dossier.  
   
    > [!NOTE]
-   >  Quand vous séparez les datasets et les TableAdapters (en définissant le **DataSet Project** propriété), les classes dataset partielles existantes dans le projet ne sont pas déplacées automatiquement. Classes dataset partielles existantes doivent être déplacés manuellement vers le projet dataset.  
+   > Quand vous séparez les datasets et les TableAdapters (en définissant le **DataSet Project** propriété), les classes dataset partielles existantes dans le projet ne sont pas déplacées automatiquement. Classes dataset partielles existantes doivent être déplacés manuellement vers le projet dataset.  
   
 6. Enregistrer le jeu de données.  
   
@@ -63,7 +63,7 @@ Datasets typés ont été améliorées afin que le [TableAdapters](http://msdn.m
    Par défaut, une fois que vous séparez le dataset et `TableAdapter` code, le résultat est un fichier de classe discret dans chaque projet. Le projet d’origine a un fichier nommé NomGroupeDonnées.Designer.vb (ou NomGroupeDonnées.Designer.cs) qui contient le `TableAdapter` code. Le projet désigné dans la **Dataset Project** propriété dispose d’un fichier nommé NomGroupeDonnées.DataSet.Designer.vb (ou NomGroupeDonnées.DataSet.Designer.cs) qui contient le code de jeu de données.  
   
 > [!NOTE]
->  Pour afficher le fichier de classe générée, sélectionnez le jeu de données ou `TableAdapter` projet. Ensuite, dans **l’Explorateur de solutions**, sélectionnez **afficher tous les fichiers** .  
+> Pour afficher le fichier de classe générée, sélectionnez le jeu de données ou `TableAdapter` projet. Ensuite, dans **l’Explorateur de solutions**, sélectionnez **afficher tous les fichiers** .  
   
 ## <a name="see-also"></a>Voir aussi  
  [Vue d’ensemble des Applications de données multicouches](../data-tools/n-tier-data-applications-overview.md)   

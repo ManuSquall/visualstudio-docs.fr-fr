@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a4cbc68e84c6593ca61be9234fcec3e88f3f333
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 9603c8d7955a34ae42dd7339a708c12441e98634
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631872"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418665"
 ---
 # <a name="develop-a-legacy-language-service"></a>Développer un service de langage hérité
 Cette section fournit des liens vers des rubriques qui vous aident à créer un service de langage hérité.
@@ -29,7 +29,7 @@ Cette section fournit des liens vers des rubriques qui vous aident à créer un 
  Services de langage hérité sont implémentés en tant que partie d’un VSPackage, mais la plus récente pour implémenter des fonctionnalités de service de langage consiste à utiliser des extensions MEF. Pour en savoir plus sur la nouvelle façon d’implémenter un service de langage, consultez [Éditor et tout langage extensions du service](../../extensibility/editor-and-language-service-extensions.md).
 
 > [!NOTE]
->  Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorer les performances de votre service de langage et vous permettent de tirer parti des nouvelles fonctionnalités de l’éditeur.
+> Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorer les performances de votre service de langage et vous permettent de tirer parti des nouvelles fonctionnalités de l’éditeur.
 
 ## <a name="in-this-section"></a>Dans cette section
 - [Modèle d’un service de langage hérité](../../extensibility/internals/model-of-a-legacy-language-service.md)
@@ -52,7 +52,7 @@ Cette section fournit des liens vers des rubriques qui vous aident à créer un 
 
  Décrit comment un service de langage peut fournir des fonctionnalités pour prendre en charge d’un débogueur.
 
-- [Liste de vérification : Créer un service de langage hérité](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)
+- [Liste de contrôle : Créer un service de langage hérité](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)
 
  Fournit des instructions détaillées pour la création et l’intégration d’un service de langage pour l’éditeur principal.
 

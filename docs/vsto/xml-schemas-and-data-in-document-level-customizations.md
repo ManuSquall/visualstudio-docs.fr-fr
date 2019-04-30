@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eb56d2f9b6d2d5c08956d48f4f53a46305d9fd26
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eb8bc9b9d3149112517d893cd3a704826b6d92d1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117927"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421693"
 ---
 # <a name="xml-schemas-and-data-in-document-level-customizations"></a>Schémas XML et des données dans les personnalisations au niveau du document
   **Important** les informations mentionnées dans cette rubrique concernant Microsoft Word sont présentée exclusivement pour le bénéfice et l’utilisation des individus et les organisations qui se trouvent en dehors des États-Unis et ses territoires ou qui utilisent ou développement les programmes qui s’exécutent sur des produits de Microsoft Word qui ont été concédés sous licence par Microsoft avant janvier 2010, lorsque Microsoft supprimé une implémentation de fonctionnalités spécifiques liés à XML personnalisé à partir de Microsoft Word. Ces informations concernant Microsoft Word ne peuvent pas être lues ou utilisées par les individus ou organisations dans les États-Unis ou dans ses territoires qui sont à l’aide d’ou de développer des programmes qui s’exécutent sur des produits de Microsoft Word qui ont été concédés sous licence par Microsoft après le 10 janvier 2010 ; ces produits ne comportent pas le même que les produits sous licence avant cette date ou acheté et concédés sous licence pour une utilisation en dehors des États-Unis.
@@ -33,7 +33,7 @@ ms.locfileid: "60117927"
  Visual Studio expose mappé les éléments de schéma dans les personnalisations au niveau du document sous forme de contrôles dans le modèle de programmation. Pour Excel, Visual Studio ajoute la prise en charge de la liaison des contrôles aux données dans les bases de données, des services Web et des objets. Pour Word et Excel, Visual Studio ajoute la prise en charge des volets actions, qui peut être utilisé avec un document de schéma mappé pour créer une expérience utilisateur améliorée pour vos solutions. Pour plus d’informations, consultez [vue d’ensemble du volet Actions](../vsto/actions-pane-overview.md).
 
 > [!NOTE]
->  Vous ne pouvez pas utiliser les schémas XML en plusieurs parties dans les solutions Excel.
+> Vous ne pouvez pas utiliser les schémas XML en plusieurs parties dans les solutions Excel.
 
 ## <a name="objects-created-when-schemas-are-attached-to-excel-workbooks"></a>Objets créés lorsque les schémas sont joints à des classeurs Excel
  Lorsque vous attachez un schéma à un classeur, Visual Studio crée plusieurs objets automatiquement et les ajoute à votre projet. Ces objets ne doivent pas être supprimés à l’aide des outils de Visual Studio, car ils sont gérés par Excel. Pour les supprimer, supprimez les éléments mappés à partir de la feuille de calcul ou détachez le schéma à l’aide des outils Excel.
@@ -52,13 +52,13 @@ ms.locfileid: "60117927"
 - BindingSource. Lorsque vous créez un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> en mappant un élément de schéma non répétitif à la feuille de calcul, un <xref:System.Windows.Forms.BindingSource> est créé et le <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> contrôle est lié à la <xref:System.Windows.Forms.BindingSource>. Vous devez lier le <xref:System.Windows.Forms.BindingSource> à une instance de la source de données qui correspond au schéma mappé au document, telles qu’une instance de typée <xref:System.Data.DataSet> classe qui a été créé. Créer la liaison en définissant le <xref:System.Windows.Forms.BindingSource.DataSource%2A> et <xref:System.Windows.Forms.BindingSource.DataMember%2A> propriétés, qui sont exposées dans le **propriétés** fenêtre.
 
     > [!NOTE]
-    >  Le <xref:System.Windows.Forms.BindingSource> n’est pas créé pour <xref:Microsoft.Office.Tools.Excel.ListObject> objets. Vous devez lier manuellement les <xref:Microsoft.Office.Tools.Excel.ListObject> à la source de données en définissant le <xref:System.Windows.Forms.BindingSource.DataSource%2A> et <xref:System.Windows.Forms.BindingSource.DataMember%2A> propriétés dans le **propriétés** fenêtre.
+    > Le <xref:System.Windows.Forms.BindingSource> n’est pas créé pour <xref:Microsoft.Office.Tools.Excel.ListObject> objets. Vous devez lier manuellement les <xref:Microsoft.Office.Tools.Excel.ListObject> à la source de données en définissant le <xref:System.Windows.Forms.BindingSource.DataSource%2A> et <xref:System.Windows.Forms.BindingSource.DataMember%2A> propriétés dans le **propriétés** fenêtre.
 
 ### <a name="office-mapped-schemas-and-the-visual-studio-data-sources-window"></a>Schémas mappés Office et la fenêtre Sources de données Visual Studio
  Les deux fonctionnalités de schéma mappé d’Office et Visual Studio **des Sources de données** fenêtre peut vous aider à présenter des données sur une feuille de calcul Excel pour la création de rapports ou la modification. Dans les deux cas vous pouvez faire glisser des éléments de données dans la feuille de calcul Excel. Les deux méthodes créent des contrôles qui sont liés aux données via un <xref:System.Windows.Forms.BindingSource> à une source de données comme un <xref:System.Data.DataSet> ou un service web.
 
 > [!NOTE]
->  Lorsque vous mappez un élément de schéma répétitif à une feuille de calcul, Visual Studio crée un <xref:Microsoft.Office.Tools.Excel.ListObject>. Le <xref:Microsoft.Office.Tools.Excel.ListObject> n’est pas lié automatiquement aux données via le <xref:System.Windows.Forms.BindingSource>. Vous devez lier manuellement les <xref:Microsoft.Office.Tools.Excel.ListObject> à la source de données en définissant le <xref:System.Windows.Forms.BindingSource.DataSource%2A> et <xref:System.Windows.Forms.BindingSource.DataMember%2A> propriétés dans le **propriétés** fenêtre.
+> Lorsque vous mappez un élément de schéma répétitif à une feuille de calcul, Visual Studio crée un <xref:Microsoft.Office.Tools.Excel.ListObject>. Le <xref:Microsoft.Office.Tools.Excel.ListObject> n’est pas lié automatiquement aux données via le <xref:System.Windows.Forms.BindingSource>. Vous devez lier manuellement les <xref:Microsoft.Office.Tools.Excel.ListObject> à la source de données en définissant le <xref:System.Windows.Forms.BindingSource.DataSource%2A> et <xref:System.Windows.Forms.BindingSource.DataMember%2A> propriétés dans le **propriétés** fenêtre.
 
  Le tableau suivant présente certaines des différences entre les deux méthodes.
 

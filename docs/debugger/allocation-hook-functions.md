@@ -22,18 +22,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bd2900544fe2c33cfaaf9d1a0da5d4ff1ac41ab4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 406647ae086285df8dfdfc00daf4b62be66e74a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616790"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402702"
 ---
 # <a name="allocation-hook-functions"></a>Fonctions de raccordement d'allocation
 Une fonction de raccordement d’allocation, installée à l’aide de [_CrtSetAllocHook](/cpp/c-runtime-library/reference/crtsetallochook), est appelée chaque fois la mémoire est allouée, réaffectée ou libérée. Vous pouvez utiliser ce type de raccordement pour de nombreux scénarios différents. Utilisez-le pour tester comment une application gère les situations de mémoire insuffisante, par exemple pour examiner les modèles d’allocation, ou enregistrer des informations d’allocation pour une analyse ultérieure.
 
 > [!NOTE]
->  Tenez compte de la restriction concernant l’utilisation des fonctions de la bibliothèque Runtime C dans une fonction de raccordement d’allocation, décrite dans [Raccordements d’allocation et allocations de la mémoire runtime C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md).
+> Tenez compte de la restriction concernant l’utilisation des fonctions de la bibliothèque Runtime C dans une fonction de raccordement d’allocation, décrite dans [Raccordements d’allocation et allocations de la mémoire runtime C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md).
 
  Une fonction de raccordement d’allocation doit avoir un prototype comme dans l’exemple suivant :
 

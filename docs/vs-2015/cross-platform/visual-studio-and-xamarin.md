@@ -8,12 +8,12 @@ ms.assetid: 1da4064f-af69-472c-8f31-98484be5f790
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: a38e711a8a0244992f9958b4d48920f3437a8329
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 098d94a1aed9020271db5010e278a4aa8fc68330
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666518"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442130"
 ---
 # <a name="visual-studio-and-xamarin"></a>Visual Studio et Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Xamarin est une plateforme de développement d’applications mobiles pour la cr
   Vous pouvez travailler avec toutes les fonctionnalités de Xamarin via [n’importe quelle édition de Visual Studio 2015](https://www.visualstudio.com/vs-2015-product-editions) (Community, Professional et Enterprise). Notez également qu’à partir du 31 mars 2016, Xamarin est inclus dans toutes les éditions de Visual Studio 2015 et ne nécessite plus de licence distincte. Pour Visual Studio 2013, vous pouvez installer Xamarin séparément, comme indiqué dans la rubrique [Configurer et installer](../cross-platform/setup-and-install.md).  
   
 > [!NOTE]
->  Ces instructions décrivent la configuration la plus simple et la plus directe de l’ordinateur pour ceux qui connaissent bien Windows et Visual Studio. Avec cette configuration, toute la pratique du développement est simplifiée, car vous devez seulement interagir avec le Mac pour utiliser le simulateur iOS et l’appareil attaché. En revanche, si vous connaissez mieux l’univers Mac, nous vous recommandons d’exécuter Visual Studio dans Parallels/VMWare ou d’utiliser Xamarin Studio Community. Pour obtenir des instructions, consultez [Configuration, installation et vérifications pour les utilisateurs Mac](../cross-platform/setup-install-and-verifications-for-mac-users.md).  
+> Ces instructions décrivent la configuration la plus simple et la plus directe de l’ordinateur pour ceux qui connaissent bien Windows et Visual Studio. Avec cette configuration, toute la pratique du développement est simplifiée, car vous devez seulement interagir avec le Mac pour utiliser le simulateur iOS et l’appareil attaché. En revanche, si vous connaissez mieux l’univers Mac, nous vous recommandons d’exécuter Visual Studio dans Parallels/VMWare ou d’utiliser Xamarin Studio Community. Pour obtenir des instructions, consultez [Configuration, installation et vérifications pour les utilisateurs Mac](../cross-platform/setup-install-and-verifications-for-mac-users.md).  
   
 > [!NOTE]
->  Si vous recherchez une solution de développement multiplateforme en HTML et CSS, consultez Visual Studio Tools pour Apache Cordova comme indiqué dans [Développement mobile multiplateforme dans Visual Studio](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#HTML).
+> Si vous recherchez une solution de développement multiplateforme en HTML et CSS, consultez Visual Studio Tools pour Apache Cordova comme indiqué dans [Développement mobile multiplateforme dans Visual Studio](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#HTML).

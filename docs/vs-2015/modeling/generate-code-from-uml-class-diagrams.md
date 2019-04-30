@@ -16,12 +16,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 020dd35d225d8629a8061d1a74b234b62960c830
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c95a361f00e9b744aa78f443ad7c173209a5a0bd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442429"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>Générer du code à partir de diagrammes de classes UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -101,7 +101,7 @@ Pour générer le code Visual c# .NET à partir de diagrammes de classes UML dan
 2. Dans le **propriétés** fenêtre, cliquez sur la flèche déroulante dans le **stéréotypes** propriété et sélectionnez la case à cocher pour le stéréotype que vous souhaitez appliquer.  
 
    > [!TIP]
-   >  Si les stéréotypes C# ne s'affichent pas, activez le profil C# pour le modèle ou pour un package qui contient les éléments de modèle auxquels vous vous intéressez. Sélectionnez le package ou la racine du modèle dans **Explorateur de modèles UML**. Ensuite, dans le **propriétés** fenêtre, choisissez **profil**, puis activez le profil c#.  
+   > Si les stéréotypes C# ne s'affichent pas, activez le profil C# pour le modèle ou pour un package qui contient les éléments de modèle auxquels vous vous intéressez. Sélectionnez le package ou la racine du modèle dans **Explorateur de modèles UML**. Ensuite, dans le **propriétés** fenêtre, choisissez **profil**, puis activez le profil c#.  
 
 3. Développez le **stéréotypes** propriété pour afficher les propriétés supplémentaires que vous pouvez définir.  
 
@@ -144,7 +144,7 @@ Pour générer le code Visual c# .NET à partir de diagrammes de classes UML dan
  Plusieurs modèles peuvent être appliqués à un élément de modèle. Vous pouvez générer plusieurs fichiers à partir de chaque élément de modèle.  
 
 > [!NOTE]
->  Les liaisons jointes à la racine du modèle agissent comme des valeurs par défaut pour tous les éléments du modèle. Pour afficher ces liaisons par défaut, ouvrez **Explorateur de modèles UML**. Ouvrez le menu contextuel du projet de modélisation, puis choisissez **configurer la génération de Code**. Vous pouvez également sélectionner la racine du modèle dans l'Explorateur de modèles UML. Dans la fenêtre Propriétés, choisissez **[...]**  dans le **liaisons de modèles de texte** propriété. Les liaisons n’apparaît que si vous avez utilisé le **générer le Code** commande au moins une fois. Les liaisons de modèles ne peuvent pas être jointes à un diagramme.  
+> Les liaisons jointes à la racine du modèle agissent comme des valeurs par défaut pour tous les éléments du modèle. Pour afficher ces liaisons par défaut, ouvrez **Explorateur de modèles UML**. Ouvrez le menu contextuel du projet de modélisation, puis choisissez **configurer la génération de Code**. Vous pouvez également sélectionner la racine du modèle dans l'Explorateur de modèles UML. Dans la fenêtre Propriétés, choisissez **[...]**  dans le **liaisons de modèles de texte** propriété. Les liaisons n’apparaît que si vous avez utilisé le **générer le Code** commande au moins une fois. Les liaisons de modèles ne peuvent pas être jointes à un diagramme.  
 
 #### <a name="to-attach-text-template-bindings-to-a-package-or-other-model-element"></a>Pour joindre des liaisons de modèles de texte à un package ou à un autre élément de modèle  
 

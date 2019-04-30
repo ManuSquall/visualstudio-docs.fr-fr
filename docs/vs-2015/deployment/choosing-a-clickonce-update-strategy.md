@@ -17,12 +17,12 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f0f6d09dbd653dc332fd01414ff1ebb73cd2d014
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 8215b8e0955b79224341d5d43b51a473740f5fe5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953436"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442337"
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>Choix d'une stratégie de mise à jour ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,10 +34,10 @@ ms.locfileid: "58953436"
  De plus, vous pouvez déterminer la fréquence de vérification des mises à jour effectuées par l'application et configurer une mise à jour obligatoire.  
   
 > [!NOTE]
->  Les mises à jour d'application exigent une connexion au réseau. En l'absence d'une connexion réseau, l'application s'exécute sans vérifier les mises à jour, quelle que soit la stratégie de mise à jour choisie.  
+> Les mises à jour d'application exigent une connexion au réseau. En l'absence d'une connexion réseau, l'application s'exécute sans vérifier les mises à jour, quelle que soit la stratégie de mise à jour choisie.  
   
 > [!NOTE]
->  Dans le .NET Framework 2.0 et le .NET Framework 3.0, à chaque fois que votre application vérifie les mises à jour, avant ou après le démarrage, ou à l'aide des API <xref:System.Deployment.Application>, vous devez définir `deploymentProvider` dans le manifeste de déploiement. Dans Visual Studio, l’élément `deploymentProvider` correspond au champ **Emplacement de mise à jour** dans la boîte de dialogue **Mises à jour** de l’onglet **Publier**. Cette règle est assouplie dans .NET Framework 3.5. Pour plus d’informations, consultez [déploiement ClickOnce Applications pour de test et les serveurs de Production sans Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md).  
+> Dans le .NET Framework 2.0 et le .NET Framework 3.0, à chaque fois que votre application vérifie les mises à jour, avant ou après le démarrage, ou à l'aide des API <xref:System.Deployment.Application>, vous devez définir `deploymentProvider` dans le manifeste de déploiement. Dans Visual Studio, l’élément `deploymentProvider` correspond au champ **Emplacement de mise à jour** dans la boîte de dialogue **Mises à jour** de l’onglet **Publier**. Cette règle est assouplie dans .NET Framework 3.5. Pour plus d’informations, consultez [déploiement ClickOnce Applications pour de test et les serveurs de Production sans Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md).  
   
 ## <a name="checking-for-updates-after-application-startup"></a>Vérification des mises à jour après le démarrage de l'application  
  Si vous utilisez cette stratégie, l'application tente de localiser et de lire le fichier manifeste de déploiement en arrière-plan pendant l'exécution de l'application. Si une mise à jour est disponible, lors de la prochaine exécution de l'application, l'utilisateur sera invité à télécharger et à installer la mise à jour.  
@@ -79,7 +79,7 @@ ms.locfileid: "58953436"
  Dans certains cas, vous souhaitez obliger les utilisateurs à exécuter une version mise à jour de votre application. Par exemple, vous pouvez apporter une modification à une ressource externe, telle qu'un service Web, qui empêche le fonctionnement correct de la version antérieure de votre application. Dans ce cas, vous souhaitez marquer votre mise à jour comme étant obligatoire et empêcher les utilisateurs d'exécuter la version antérieure.  
   
 > [!NOTE]
->  Bien qu’il soit possible d’exiger des mises à jour à l’aide des autres stratégies de mise à jour, la vérification **Avant le démarrage de l’application** est la seule façon d’interdire l’exécution d’une version antérieure. Lorsque la mise à jour obligatoire est détectée au démarrage, l'utilisateur doit accepter la mise à jour ou fermer l'application.  
+> Bien qu’il soit possible d’exiger des mises à jour à l’aide des autres stratégies de mise à jour, la vérification **Avant le démarrage de l’application** est la seule façon d’interdire l’exécution d’une version antérieure. Lorsque la mise à jour obligatoire est détectée au démarrage, l'utilisateur doit accepter la mise à jour ou fermer l'application.  
   
  Pour marquer une mise à jour comme étant obligatoire, cliquez sur **Spécifiez la version minimale requise pour cette application** dans la boîte de dialogue **Mises à jour des applications**, puis spécifiez la version de publication (**Majeure**, **Mineure**, **Build**, **Révision**) qui spécifie le numéro de version minimal de l’application qui peut être installée.  
   

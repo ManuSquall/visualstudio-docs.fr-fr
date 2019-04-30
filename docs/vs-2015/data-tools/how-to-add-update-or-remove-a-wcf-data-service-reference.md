@@ -15,12 +15,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7e7f70808ff91ec32ef52deedc05724f9bac3f7d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 970f3828319e2e9c016baa66bb1e5fc2032b81ce
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387038"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Procédure : ajouter, mettre à jour ou supprimer une référence de service de données WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Un *référence de service* permet à un projet à l’accès à un ou plusieurs
 2. Dans le **adresse** zone, entrez l’URL du service, puis cliquez sur **accédez** pour rechercher le service. Si le service implémente la sécurité de nom et mot de passe utilisateur, vous devrez peut-être utiliser un nom d’utilisateur et mot de passe.  
   
     > [!NOTE]
-    >  Vous devez référencer des services uniquement à partir d’une source approuvée. L’ajout de références à partir d’une source non fiable peut compromettre la sécurité.  
+    > Vous devez référencer des services uniquement à partir d’une source approuvée. L’ajout de références à partir d’une source non fiable peut compromettre la sécurité.  
   
      Vous pouvez également sélectionner l’URL à partir de la **adresse** liste, qui stocke les 15 URL précédentes à partir duquel les métadonnées de service valide a été trouvée.  
   
@@ -91,7 +91,7 @@ Un *référence de service* permet à un projet à l’accès à un ou plusieurs
      Le client du service sera retiré de la solution et les métadonnées qui décrivent le service seront retirée le fichier app.config.  
   
     > [!NOTE]
-    >  Tout code qui fait référence à la référence de service doivent être supprimés manuellement.  
+    > Tout code qui fait référence à la référence de service doivent être supprimés manuellement.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Services Windows Communication Foundation et services de données WCF dans Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

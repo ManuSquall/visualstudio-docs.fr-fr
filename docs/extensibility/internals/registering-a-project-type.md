@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2be0a0e62942c369d47947582bf746332e201577
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: fccd422a0f24a65532e648a1254aecedc484903e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425674"
 ---
 # <a name="registering-a-project-type"></a>Inscription d’un type de projet
 Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de Registre qui permettent [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] à reconnaître et à travailler avec votre type de projet. En règle générale, vous créez ces entrées de Registre à l’aide d’un fichier de script (d’inscription.rgs) du Registre.
@@ -25,7 +25,7 @@ Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de
  Dans l’exemple ci-dessous, les instructions à partir du Registre fournissent des chemins d’accès par défaut et les données, le cas échéant, suivie d’une table qui contient des entrées à partir du script de Registre pour chaque instruction. Les tableaux fournissent les entrées du script et des informations supplémentaires sur les instructions.
 
 > [!NOTE]
->  Les informations de Registre suivantes sont destinées à être un exemple du type et à des fins des entrées dans les scripts de Registre que vous l’écrivez pour enregistrer votre type de projet. Vos entrées réelles et leurs utilisations peuvent varier en fonction des besoins spécifiques de votre type de projet. Vous devez passez en revue les exemples disponibles pour en trouver un qui ressemble le type de projet que vous développez et puis passez en revue le script de Registre pour cet exemple.
+> Les informations de Registre suivantes sont destinées à être un exemple du type et à des fins des entrées dans les scripts de Registre que vous l’écrivez pour enregistrer votre type de projet. Vos entrées réelles et leurs utilisations peuvent varier en fonction des besoins spécifiques de votre type de projet. Vous devez passez en revue les exemples disponibles pour en trouver un qui ressemble le type de projet que vous développez et puis passez en revue le script de Registre pour cet exemple.
 
  Les exemples suivants proviennent de HKEY_CLASSES_ROOT.
 
@@ -47,7 +47,7 @@ Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de
    @="devenv.exe \"%1\""
 ```
 
-|Name|Type|Données|Description|
+|Nom|Type|Données|Description|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|`FigPrjFile`|Nom et description des fichiers du type de projet qui ont l’extension .figp.|
 |`Content Type`|REG_SZ|`Text/plain`|Type de contenu pour les fichiers de projet.|
@@ -79,7 +79,7 @@ Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de
    "FigProjectItemsEvents"="Returns the FigProjectItemsEvents Object"
 ```
 
-|Name|Type|Données|Description|
+|Nom|Type|Données|Description|
 |----------|----------|----------|-----------------|
 |`@` (Valeur par défaut)|REG_SZ|`FigPrj Project VSPackage`|Nom localisé de ce inscrit un VSPackage (type de projet).|
 |`InprocServer32`|REG_SZ|`%MODULE%`|Chemin d’accès du type de projet DLL. L’IDE se charge de cette DLL et transmet le CLSID VSPackage à `DllGetClassObject` pour obtenir <xref:Microsoft.VisualStudio.OLE.Interop.IClassFactory> pour construire le <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage> objet.|
@@ -130,7 +130,7 @@ Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de
    "SortPriority"=dword:00000064
 ```
 
-|Name|Type|Données|Description|
+|Nom|Type|Données|Description|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|`FigPrj Project`|Nom par défaut des projets de ce type.|
 |`DisplayName`|REG_SZ|`#%IDS_PROJECT_TYPE%`|ID de ressource du nom doivent être extraites de la DLL satellite inscrit sous Packages.|
@@ -170,7 +170,7 @@ Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de
    "NewProjectDialogOnly"=dword:00000000
 ```
 
-|Name|Type|Données|Description|
+|Nom|Type|Données|Description|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|`#%IDS_NEWPROJ_ TEMPLATES_ENTRY%`|ID de ressource pour les modèles de projet.|
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Par défaut le chemin d’accès pour les projets du type de projet enregistré.|
@@ -191,7 +191,7 @@ Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de
    "SortPriority"=dword:00000064
 ```
 
-|Name|Type|Données|Description|
+|Nom|Type|Données|Description|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|Aucun.|Valeur par défaut qui indique que les entrées suivantes sont pour les entrées de projets fichiers divers.|
 |`@`|REG_SZ|`#%IDS_ADDITEM_TEMPLATES_ENTRY%`|Valeur d’ID de ressource pour les fichiers de modèle d’ajouter de nouveaux éléments.|
@@ -220,7 +220,7 @@ Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de
 
   Le dernier champ identifie le numéro de version pour la ressource CTMENU. Vous pouvez fusionner à nouveau le menu en modifiant le numéro de version.
 
-|Name|Type|Données|Description|
+|Nom|Type|Données|Description|
 |----------|----------|----------|-----------------|
 |%CLSID_Package%|REG_SZ|`,1000,1`|La ressource à récupérer les informations de menu.|
 
@@ -234,7 +234,7 @@ Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de
    "NewProjectDialogOnly"=dword:00000000
 ```
 
-|Name|Type|Données|Description|
+|Nom|Type|Données|Description|
 |----------|----------|----------|-----------------|
 |`@`|REG_SZ|`#%IDS_NEWPROJ_TEMPLATES_ENTRY%`|Valeur d’ID de ressource pour les modèles de projet Figures nouveau projet.|
 |`TemplatesDir`|REG_SZ|`%TEMPLATE_PATH%\FigPrjProjects`|Chemin d’accès de la valeur par défaut du répertoire de nouveaux projets. Éléments dans ce répertoire s’afficheront dans le **Assistant Nouveau projet** boîte de dialogue.|
@@ -249,7 +249,7 @@ Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de
    "UseInterface"=dword:00000001
 ```
 
-|Name|Type|Données|Description|
+|Nom|Type|Données|Description|
 |----------|----------|----------|-----------------|
 |`Package`|REG_SZ|`%CLSID_Package%`|ID de classe du VSPackage inscrit.|
 |`UseInterface`|REG_DWORD|`1`|1 indique que l’interface utilisateur doit être utilisée pour interagir avec ce projet. 0 indique qu’il n’existe aucune interface de l’interface utilisateur.|
@@ -265,6 +265,6 @@ Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de
  Cela signifie que si vous incluez un PROJECT_TYPE = entrée EF dans le fichier .vsz, la recherche d’environnement votre .vsz des fichiers dans le répertoire ProductDir spécifié précédemment.
 
 ## <a name="see-also"></a>Voir aussi
-- [Liste de vérification : Créer de nouveaux Types de projet](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Liste de contrôle : Création de nouveaux types de projets](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Éléments d’un modèle de projet](../../extensibility/internals/elements-of-a-project-model.md)
 - [Création d’instances de projets à l’aide de fabriques de projets](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5cc00d56b0abf02f99c7ab320ab0353d1b4b2317
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604066"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447139"
 ---
 # <a name="office-development-samples"></a>Exemples de développement Office
   Visual Studio inclut des exemples d'applications qui montrent comment utiliser les outils de développement Microsoft Office pour créer des solutions Office. Le code de ces exemples illustre la syntaxe, la structure et les techniques utilisées pour générer les solutions Office.
@@ -37,7 +37,7 @@ ms.locfileid: "56604066"
 |Contrôles de contenu Word|Montre comment lier des contrôles de contenu Word à des champs de base de données.|
 |Lecteur RSS de zones de formulaire Outlook|Montre comment utiliser des zones de formulaire Outlook pour afficher le contenu complet des articles d'un flux RSS.|
 |Contrôles du ruban|Cet exemple montre comment créer un onglet personnalisé à afficher dans le ruban d'une feuille de calcul Excel. Ce ruban personnalisé affiche la plupart des contrôles disponibles dans le groupe Contrôles de ruban Office de la boîte à outils Visual Studio.|
-|Gestionnaire d'interface utilisateur|Montre comment créer une personnalisation du ruban, un volet de tâches personnalisé et une zone de formulaire personnalisée pour Outlook en implémentant des interfaces d'extensibilité dans un complément VSTO. Chaque instance du ruban, du volet de tâches et de la zone de formulaire peut communiquer correctement avec les autres.|
+|Gestionnaire d'interface utilisateur|Montre comment créer une personnalisation du ruban, un volet de tâches personnalisé et une zone de formulaire personnalisée pour Outlook en implémentant des interfaces d’extensibilité dans un complément VSTO. Chaque instance du ruban, du volet de tâches et de la zone de formulaire peut communiquer correctement avec les autres.|
 |Interopérabilité VSTO et VBA|Montre comment appeler une méthode dans une personnalisation au niveau du document pour Excel à partir du code VBA (Visual Basic pour Applications) du classeur.<br /><br /> Cet exemple n'est disponible qu'en ligne.|
 
 ## <a name="see-also"></a>Voir aussi

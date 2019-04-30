@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 70960cc92d60ebbffa34dda75557dfcb9a1a0d67
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ab220b8a21db60918462e4c060ce613171e3faad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092719"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442365"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>Procédure : Ajouter une commande au menu contextuel
 
@@ -118,7 +118,7 @@ Appliquez la méthode décrite dans cette rubrique dans les cas suivants :
 5. Remplacez `{000...000}` par un GUID qui identifie vos groupes et éléments de menu. Pour obtenir un nouveau GUID, utilisez la **créer un GUID** outil sur le **outils** menu.
 
     > [!NOTE]
-    >  Si vous ajoutez d'autres groupes ou éléments de menu, vous pouvez utiliser le même GUID. Cependant, vous devez utiliser de nouvelles valeurs pour `IDSymbols`.
+    > Si vous ajoutez d'autres groupes ou éléments de menu, vous pouvez utiliser le même GUID. Cependant, vous devez utiliser de nouvelles valeurs pour `IDSymbols`.
 
 6. Dans le code que vous avez copié à partir de cette procédure, remplacez chaque occurrence des chaînes suivantes par vos propres chaînes :
 
@@ -296,7 +296,7 @@ private const int cmdidMyContextMenuCommand = 1;
  Utilisez la même valeur GUID que vous avez inséré dans **Commands.vsct**.
 
 > [!NOTE]
->  Si vous modifiez la section Symbols du fichier VSCT, vous devez aussi modifier ces déclarations pour qu'elles correspondent. Vous devez également incrémenter le numéro de version dans Package.tt.
+> Si vous modifiez la section Symbols du fichier VSCT, vous devez aussi modifier ces déclarations pour qu'elles correspondent. Vous devez également incrémenter le numéro de version dans Package.tt.
 
  Inscrivez vos commandes de menu dans le cadre de ce jeu de commandes. `GetMenuCommands()` est appelée une fois le diagramme initialisé :
 

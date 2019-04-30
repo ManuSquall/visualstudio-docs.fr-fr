@@ -22,12 +22,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3546da7508767c6766b2caa0c96e6238f4cc6e90
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 16a3868f564f39d4908adf74a6b1a44ae83ebc9d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039016"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437056"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Lier des contrôles WPF à des données dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,7 +98,7 @@ Vous pouvez afficher des données pour les utilisateurs de votre application en 
  Lorsque vous faites glisser un objet ou une propriété à partir de la **des Sources de données** fenêtre vers le concepteur, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] génère [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] qui crée un contrôle lié aux données (ou lie un contrôle existant à l’objet ou la propriété). Toutefois, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ne génère pas de code pour remplir l'objet avec les données. Vous devez écrire ce code vous-même.
 
 > [!NOTE]
->  Classes personnalisées doivent être publique et, par défaut, un constructeur sans paramètres. Ils ne peut pas être des classes imbriquées qui ont un « point » dans leur syntaxe. Pour plus d’informations, consultez [XAML et Classes personnalisées pour WPF](http://msdn.microsoft.com/library/e7313137-581e-4a64-8453-d44e15a6164a).
+> Classes personnalisées doivent être publique et, par défaut, un constructeur sans paramètres. Ils ne peut pas être des classes imbriquées qui ont un « point » dans leur syntaxe. Pour plus d’informations, consultez [XAML et Classes personnalisées pour WPF](http://msdn.microsoft.com/library/e7313137-581e-4a64-8453-d44e15a6164a).
 
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] génère [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] qui effectue les opérations suivantes :
 

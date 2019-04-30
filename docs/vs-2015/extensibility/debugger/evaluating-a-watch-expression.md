@@ -11,18 +11,18 @@ ms.assetid: 8317cd52-6fea-4e8f-a739-774dc06bd44b
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: eed1a1b3da59d6d5e76c9157fc0a2cb37420c797
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fd33a7c225e0cdc14ac3f1af9f4c78a7c1459615
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104354"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444456"
 ---
 # <a name="evaluating-a-watch-expression"></a>Évaluation d’une expression espionne
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’Expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’Expression gérés](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> Dans Visual Studio 2015, ce moyen d’implémenter des évaluateurs d’expression est déconseillée. Pour plus d’informations sur l’implémentation des évaluateurs d’expression CLR, consultez [évaluateurs d’Expression CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) et [exemple d’évaluateur d’Expression gérés](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Lorsque Visual Studio est prêt à afficher la valeur d’une expression espionne, il appelle [EvaluateSync](../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) qui appelle à son tour [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md). Cela génère une [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) objet qui contient la valeur et le type de l’expression.  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dbfe242434cdc953ec29fdd10a318c435abadc1a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5ce5534f5723a3f0e570779939f207018cac71cd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049827"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438907"
 ---
 # <a name="rapid-web-site-profiling-with-vsperfaspnetcmd"></a>Profilage de site web rapide avec VSPerfASPNETCmd
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,18 +25,18 @@ ms.locfileid: "60049827"
 L’outil en ligne de commande **VSPerfASPNETCmd** vous permet de profiler facilement des applications web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. Par rapport à l’outil en ligne de commande [VSPerfCmd](../profiling/vsperfcmd.md), cet outil comporte moins d’options et ne nécessite ni configuration de variables d’environnement, ni redémarrage de l’ordinateur. L’utilisation de **VSPerfASPNETCmd** est la méthode recommandée pour le profilage avec le profileur autonome. Pour plus d'informations, voir [Procédure : Installer le Profiler autonome](../profiling/how-to-install-the-stand-alone-profiler.md).  
   
 > [!NOTE]
->  Les fonctionnalités de sécurité renforcée de Windows 8 et Windows Server 2012 ont imposé des changements importants dans la façon dont le profileur Visual Studio collecte les données sur ces plateformes. Les applications Windows Store demandent aussi de nouvelles techniques de collecte. Consultez [Outils d’analyse des performances sur les applications Windows 8 et Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+> Les fonctionnalités de sécurité renforcée de Windows 8 et Windows Server 2012 ont imposé des changements importants dans la façon dont le profileur Visual Studio collecte les données sur ces plateformes. Les applications Windows Store demandent aussi de nouvelles techniques de collecte. Consultez [Outils d’analyse des performances sur les applications Windows 8 et Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
  Dans certains scénarios, comme la collecte des données d’accès concurrentiel, ou la suspension et reprise du profilage, **VSPerfCmd** est la méthode de profilage recommandée.  
   
 > [!NOTE]
->  Les outils en ligne de commande des outils de profilage se trouvent dans le sous-répertoire \Team Tools\Performance Tools du répertoire d’installation de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Sur les ordinateurs 64 bits, utilisez l’outil VSPerfASPNETCmd qui se trouve dans le répertoire 32 bits \Team Tools\Performance Tools. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes ou bien l’ajouter à la commande elle-même. Pour plus d’informations, consultez [Spécification du chemin d’accès aux outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
+> Les outils en ligne de commande des outils de profilage se trouvent dans le sous-répertoire \Team Tools\Performance Tools du répertoire d’installation de [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Sur les ordinateurs 64 bits, utilisez l’outil VSPerfASPNETCmd qui se trouve dans le répertoire 32 bits \Team Tools\Performance Tools. Pour utiliser les outils en ligne de commande du profileur, vous devez ajouter le chemin des outils à la variable d’environnement PATH dans la fenêtre d’invite de commandes ou bien l’ajouter à la commande elle-même. Pour plus d’informations, consultez [Spécification du chemin d’accès aux outils en ligne de commande](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).  
   
 ## <a name="profiling-an-aspnet-application"></a>Profilage d’une application ASP.NET  
  Pour profiler une application web [!INCLUDE[vstecasp](../includes/vstecasp-md.md)], tapez une des commandes décrites dans les sections suivantes. Votre site web est démarré et le profileur commence à collecter des données. Utilisez votre application, puis fermez le navigateur. Pour arrêter le profilage, appuyez sur la touche Entrée dans la fenêtre d’invite de commandes.  
   
 > [!NOTE]
->  Par défaut, l’invite de commandes ne réapparaît pas après une commande **vsperfaspnetcmd**. Vous pouvez utiliser l’option **/nowait** pour forcer le retour de l’invite de commandes. Consultez [Utilisation de l’option /NoWait](#UsingNoWait).  
+> Par défaut, l’invite de commandes ne réapparaît pas après une commande **vsperfaspnetcmd**. Vous pouvez utiliser l’option **/nowait** pour forcer le retour de l’invite de commandes. Consultez [Utilisation de l’option /NoWait](#UsingNoWait).  
   
 ## <a name="to-collect-application-statistics-by-using-the-sampling-method"></a>Pour collecter des statistiques d’application à l’aide de la méthode d’échantillonnage  
  L’échantillonnage est la méthode de profilage par défaut de l’outil **VSPerfASPNETCmd** et il n’est pas nécessaire de le spécifier sur la ligne de commande. La ligne de commande suivante collecte les statistiques de l’application web spécifiée :  
@@ -66,9 +66,9 @@ L’outil en ligne de commande **VSPerfASPNETCmd** vous permet de profiler facil
 ## <a name="to-collect-tier-interaction-data"></a>Pour collecter les données d’interaction de couche  
   
 > [!WARNING]
->  Les données de profilage d’interaction de couche peuvent être collectées en utilisant [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] ou [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. Cependant, les données de profilage d’interaction de couche ne peuvent être affichées que dans [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] et [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
+> Les données de profilage d’interaction de couche peuvent être collectées en utilisant [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] ou [!INCLUDE[vs_pro_current_short](../includes/vs-pro-current-short-md.md)]. Cependant, les données de profilage d’interaction de couche ne peuvent être affichées que dans [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)] et [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)].  
 >   
->  Pour collecter des données TIP sur Windows 8 ou Windows Server 2012, vous devez utiliser l’option d’instrumentation (**/trace**).  
+> Pour collecter des données TIP sur Windows 8 ou Windows Server 2012, vous devez utiliser l’option d’instrumentation (**/trace**).  
   
  Pour collecter les données d’interaction de couche avec les données d’échantillonnage :  
   

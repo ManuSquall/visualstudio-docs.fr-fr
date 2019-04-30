@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: be3fb721fd058f127b4d361c769d4cdfdc1e4b92
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 392afc210798611442a12d5f51f150ddc79f85ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050887"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408365"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Procédure pas à pas : Écriture d’un visualiseur en Visual Basic
 Cette procédure pas à pas explique comment écrire un visualiseur simple à l'aide de [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. Le visualiseur que permet de créer cette procédure pas à pas affiche le contenu d'une chaîne à l'aide d'un message Windows Forms. Ce visualiseur de chaîne simple est un exemple de base qui vous montre comment vous pouvez créer des visualiseurs pour d'autres types de données plus applicables à vos projets.
@@ -56,7 +56,7 @@ Le code du visualiseur doit être placé dans une DLL qui sera lue par le débog
 2. Remplacez le nom Class1.vb par un nom explicite, par exemple DebuggerSide.vb.
 
    > [!NOTE]
-   >  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] remplace automatiquement le nom de la déclaration de classe par DebuggerSide.vb correspondant au nouveau nom du fichier.
+   > [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] remplace automatiquement le nom de la déclaration de classe par DebuggerSide.vb correspondant au nouveau nom du fichier.
 
 3. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur **My First Visualizer**, puis cliquez dans le menu contextuel sur **Ajouter une référence**.
 

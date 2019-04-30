@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 279b9cc03b79efe2fbf9daa7457f5dce88e7a432
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 16871ba1115407e2665886d84b72594470f91287
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597866"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420625"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Menus de GUID et ID de Visual Studio
 Cet article énumère les valeurs GUID et l’ID des menus et des groupes dans la barre de menus de Visual Studio. Ces valeurs sont définies dans *.vsct* fichiers qui sont installés dans le cadre du SDK Visual Studio. Pour plus d’informations, consultez [commandes définies par l’IDE, les menus et les groupes](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -178,7 +178,7 @@ Cet article énumère les valeurs GUID et l’ID des menus et des groupes dans l
  La hiérarchie suivante montre les sous-menus qui sont associés les menus dans la barre de menus de Visual Studio. Comme un seul groupe peut avoir un menu en tant que son parent, chaque sous-menu doit descendent d’un groupe dans un menu, au lieu de directement à partir du menu. Pour plus d’informations sur la relation entre les menus, des groupes et des sous-menus, consultez [ajouter un sous-menu à un menu](../../extensibility/adding-a-submenu-to-a-menu.md).
 
 > [!NOTE]
->  Les noms des menus dans la barre de menus de Visual Studio séparément ne figurent pas dans cette hiérarchie, car ils peuvent être déduits à partir de la convention d’affectation de noms pour les groupes dans l’IDE, comme suit : *IDG_VS_\<nom de Menu\>_\<nom du groupe\>*.
+> Les noms des menus dans la barre de menus de Visual Studio séparément ne figurent pas dans cette hiérarchie, car ils peuvent être déduits à partir de la convention d’affectation de noms pour les groupes dans l’IDE, comme suit : *IDG_VS_\<nom de Menu\>_\<nom du groupe\>*.
 
 |Groupe parent|Sous-menu|Groupes enfants|
 |------------------|-------------|------------------|

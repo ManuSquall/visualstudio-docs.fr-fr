@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 179192e5935f3a97f38dc3a1b78dd1bd760c303d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3ecbed7e1f57150e798818c24cb36a1de24e58aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636777"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423824"
 ---
 # <a name="project-configuration-for-building"></a>Configuration de projet pour la création
 La liste des configurations de solution pour une solution donnée est gérée par la boîte de dialogue Configurations de Solution.
@@ -26,7 +26,7 @@ La liste des configurations de solution pour une solution donnée est gérée pa
  Si l’utilisateur crée une nouvelle configuration de solution nommée MyConfig2, Projet1 lie sa configuration de débogage à la configuration de solution par défaut. Project2 lie également sa configuration MyConfig2 à la configuration de solution par défaut.
 
 > [!NOTE]
->  Liaison respecte la casse.
+> Liaison respecte la casse.
 
  Lorsque l’utilisateur sélectionne le **sélection Multiple** élément dans la liste déroulante de configuration, l’environnement affiche une boîte de dialogue qui fournit la liste des configurations disponibles.
 
@@ -43,7 +43,7 @@ La liste des configurations de solution pour une solution donnée est gérée pa
  Dépendances du projet déterminent l’ordre dans lequel les projets sont générés. Utilisez l’onglet de l’ordre de génération sur la boîte de dialogue pour afficher l’ordre exact dans lequel les projets au sein d’une solution de générer et utilisez l’onglet dépendances pour modifier l’ordre de génération.
 
 > [!NOTE]
->  Dans la liste des projets qui ont leurs cases à cocher activées mais grisées ont été ajoutés par l’environnement en raison des dépendances explicites spécifié par le <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> ou <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> interfaces et ne peut pas être modifié. Par exemple, ajoutez une référence de projet à partir d’un [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projet vers un autre projet ajoute automatiquement une dépendance de build qui peut être supprimée seulement en supprimant la référence. Les projets dont les cases à cocher sont claires et apparaissent grisés ne peuvent pas être sélectionnés, car cela créerait une boucle de dépendance (par exemple, Projet1 serait dépend Project2 et Project2 serait dépend Projet1), ce qui serait bloquer la génération.
+> Dans la liste des projets qui ont leurs cases à cocher activées mais grisées ont été ajoutés par l’environnement en raison des dépendances explicites spécifié par le <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> ou <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> interfaces et ne peut pas être modifié. Par exemple, ajoutez une référence de projet à partir d’un [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projet vers un autre projet ajoute automatiquement une dépendance de build qui peut être supprimée seulement en supprimant la référence. Les projets dont les cases à cocher sont claires et apparaissent grisés ne peuvent pas être sélectionnés, car cela créerait une boucle de dépendance (par exemple, Projet1 serait dépend Project2 et Project2 serait dépend Projet1), ce qui serait bloquer la génération.
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] processus de génération incluent la compilation classique et les opérations de liaison qui sont appelées avec une seule commande de Build. Deux autres processus de génération peuvent également être pris en charge : une opération de nettoyage pour supprimer tous les éléments de sortie à une build précédente et une vérification à jour pour déterminer si un élément de sortie dans une configuration a changé.
 

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84e9c6dadd9e553d456bfb46d054a7ae727aa087
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: a738a01df224051e3190d828f852fe1ccfa7e9da
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434736"
 ---
 # <a name="sccadd-function"></a>Fonction SccAdd
 Cette fonction ajoute de nouveaux fichiers au système de contrôle source.
@@ -85,7 +85,7 @@ SCCRTN SccAdd(
  Habituelles `fOptions` sont remplacés ici par un tableau, `pfOptions`, avec une `LONG` option spécification par fichier. Il s’agit, car le type de fichier peut varier d’un fichier.
 
 > [!NOTE]
->  Il n’est pas valide pour spécifier les deux `SCC_FILETYPE_TEXT` et `SCC_FILETYPE_BINARY` options pour le même fichier, mais il est possible de spécifier aucune des deux. Aucun paramètre est équivalent au paramètre `SCC_FILETYPE_AUTO`, auquel cas la source de contrôler les plug-in détecte automatiquement le type de fichier.
+> Il n’est pas valide pour spécifier les deux `SCC_FILETYPE_TEXT` et `SCC_FILETYPE_BINARY` options pour le même fichier, mais il est possible de spécifier aucune des deux. Aucun paramètre est équivalent au paramètre `SCC_FILETYPE_AUTO`, auquel cas la source de contrôler les plug-in détecte automatiquement le type de fichier.
 
  Voici la liste des indicateurs utilisés dans le `pfOptions` tableau :
 

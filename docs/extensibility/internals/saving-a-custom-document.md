@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f32f710b6e9749628716181ecf309f2520be041d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0f02c4a98920fc575b5ab7c557dd469deb76a586
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427468"
 ---
 # <a name="saving-a-custom-document"></a>Enregistrement d’un document personnalisé
 Les handles d’environnement le **enregistrer**, **enregistrer en tant que**, et **Enregistrer tout** commandes. Lorsqu’un utilisateur clique **enregistrer**, **enregistrer en tant que**, **ou enregistrer tout** sur le **fichier** menu ou ferme la solution, ce qui entraîne un Enregistrer tout, ce qui suit le processus se produit.
@@ -39,7 +39,7 @@ Les handles d’environnement le **enregistrer**, **enregistrer en tant que**, e
      Dans le cas d’un éditeur personnalisé, la communication entre l’objet de données et le projet est privée. Par conséquent, les problèmes de persistance spéciaux sont gérées entre ces deux objets.
 
     > [!NOTE]
-    >  Si vous implémentez votre propre persistance, veillez à appeler la <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> méthode pour gagner du temps. Cette méthode vérifie qu’il est sûr enregistrer le fichier (par exemple, le fichier n’est pas en lecture seule).
+    > Si vous implémentez votre propre persistance, veillez à appeler la <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> méthode pour gagner du temps. Cette méthode vérifie qu’il est sûr enregistrer le fichier (par exemple, le fichier n’est pas en lecture seule).
 
 ## <a name="see-also"></a>Voir aussi
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>

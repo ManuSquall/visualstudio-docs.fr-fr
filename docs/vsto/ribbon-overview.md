@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c2d06098d1643f4c9b5e64206cdf94362a2c97b4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8697a49c57840d358eeaa597fe984b6671958b09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446968"
 ---
 # <a name="ribbon-overview"></a>Vue d’ensemble du ruban
   Le ruban est une façon d’organiser les commandes associées afin qu’ils soient plus faciles à trouver. Les commandes apparaissent sous forme de contrôles sur le ruban. Les contrôles sont organisés en *groupes* le long d’une bande horizontale sur le bord supérieur d’une fenêtre d’application. Les groupes connexes sont organisés sur les onglets.
@@ -49,7 +49,7 @@ ms.locfileid: "60040144"
 - Ajouter des groupes personnalisés à un onglet personnalisé ou intégré.
 
   > [!NOTE]
-  >  Un groupe ou onglet intégré est un qui existe déjà sur le ruban d’une application Microsoft Office. Par exemple, le **données** onglet est un onglet intégré dans Excel. Le **connexions** groupe est un groupe prédéfini sur le **données** onglet.
+  > Un groupe ou onglet intégré est un qui existe déjà sur le ruban d’une application Microsoft Office. Par exemple, le **données** onglet est un onglet intégré dans Excel. Le **connexions** groupe est un groupe prédéfini sur le **données** onglet.
 
 - Ajoutez des contrôles personnalisés à un groupe personnalisé.
 
@@ -96,7 +96,7 @@ ms.locfileid: "60040144"
 - Créer des rubans pour Outlook *inspecteurs*. Pour plus d’informations, consultez [personnaliser un ruban pour Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
     > [!NOTE]
-    >  Un inspecteur est une fenêtre qui s'ouvre lorsque les utilisateurs effectuent certaines tâches, telles que la création d'un message électronique.
+    > Un inspecteur est une fenêtre qui s'ouvre lorsque les utilisateurs effectuent certaines tâches, telles que la création d'un message électronique.
 
 - Sélectionnez le ruban à afficher lors de l’exécution.
 
@@ -106,7 +106,7 @@ ms.locfileid: "60040144"
  Pour sélectionner un ruban à afficher lors de l’exécution, substituez le `CreateRibbonExtensibilityObject` méthode dans le `ThisAddin`, `ThisWorkbook`, ou `ThisDocument` classe de votre projet et retournez le ruban que vous souhaitez afficher. L’exemple suivant vérifie la valeur d’un champ nommé `myCondition` et retourne le ruban approprié.
 
 > [!NOTE]
->  La syntaxe utilisée dans cet exemple retourne un ruban qui a été créé à l’aide de la **ruban (Concepteur visuel)** élément. La syntaxe de retour d’un ruban qui est créé en utilisant un **ruban (XML)** élément est légèrement différent. Pour plus d'informations sur le retour d'un élément **Ruban (XML)**, consultez [Ruban XML](../vsto/ribbon-xml.md).
+> La syntaxe utilisée dans cet exemple retourne un ruban qui a été créé à l’aide de la **ruban (Concepteur visuel)** élément. La syntaxe de retour d’un ruban qui est créé en utilisant un **ruban (XML)** élément est légèrement différent. Pour plus d'informations sur le retour d'un élément **Ruban (XML)**, consultez [Ruban XML](../vsto/ribbon-xml.md).
 
  Ajoutez le code suivant :
 

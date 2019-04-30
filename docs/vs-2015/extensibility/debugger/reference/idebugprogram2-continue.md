@@ -12,12 +12,12 @@ ms.assetid: e5a6e02a-d21b-4a03-a034-e8de1f71ce2e
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c8e40b21f84aa5c244b7904331373b3120e0b4df
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f28379d202a59ca2bdf9bfc7eb1185dee343accf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948248"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426297"
 ---
 # <a name="idebugprogram2continue"></a>IDebugProgram2::Continue
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "58948248"
 Continue de s’exécuter ce programme à partir d’un état arrêté. N’importe quel état de l’exécution précédente (par exemple, une étape) est conservé, et le programme commence à s’exécuter à nouveau.  
   
 > [!NOTE]
->  Cette méthode est dépréciée. Utilisez le [continuer](../../../extensibility/debugger/reference/idebugprocess3-continue.md) méthode à la place.  
+> Cette méthode est dépréciée. Utilisez le [continuer](../../../extensibility/debugger/reference/idebugprocess3-continue.md) méthode à la place.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -52,7 +52,7 @@ int Continue( 
  Cette méthode est appelée sur ce programme, quel que soit le nombre de programmes est en cours de débogage, ou le programme qui a généré l’événement de l’arrêt. L’implémentation doit conserver l’état de l’exécution précédente (par exemple, une étape) et poursuivre l’exécution comme s’il n’avait jamais arrêté avant la fin de sa précédente exécution. Autrement dit, si un thread dans ce programme a été effectuant une opération de pas à pas principal, a été arrêté, car un autre programme est arrêté, et ensuite cette méthode a été appelée, le programme doit effectuer l’opération de pas à pas principal d’origine.  
   
 > [!WARNING]
->  Ne pas envoyer un événement d’arrêt ou un événement (synchrone) immédiat [événement](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) lors du traitement de cet appel ; sinon, le débogueur peut se bloquer.  
+> Ne pas envoyer un événement d’arrêt ou un événement (synchrone) immédiat [événement](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) lors du traitement de cet appel ; sinon, le débogueur peut se bloquer.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)   

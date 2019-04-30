@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
 manager: jillfra
-ms.openlocfilehash: 81bf6c5ef975d7ce154c1d8bb987e962dfdf4ec2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0b65fa016d0d2e09a4200004de3f473503604f6e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040739"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442851"
 ---
 # <a name="how-to-manually-package-an-extension-vsix-deployment"></a>Procédure : Manuellement un Package d’Extension (déploiement VSIX)
 Vous pouvez créer un package VSIX pour encapsuler une extension [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour le déploiement. Il existe trois façons de créer un package :  
@@ -29,7 +29,7 @@ Vous pouvez créer un package VSIX pour encapsuler une extension [!INCLUDE[vsprv
  Pour créer manuellement un package d’extension, ajoutez un fichier extension.manifest et un fichier [Content_Types].xml au projet d’extension. Placez-les dans un fichier compressé avec votre sortie de génération, puis renommez le fichier compressé pour que son extension de nom de fichier soit .vsix. Le type de l’extension doit être pris en charge par le [schéma VSIX](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 > [!NOTE]
->  Les noms des fichiers dans les packages VSIX ne doivent pas inclure espaces ni caractères réservés dans les identificateurs URI (Uniform Resource), comme définis sous [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
+> Les noms des fichiers dans les packages VSIX ne doivent pas inclure espaces ni caractères réservés dans les identificateurs URI (Uniform Resource), comme définis sous [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
   
 #### <a name="to-manually-create-a-vsix-package"></a>Pour créer manuellement un package VSIX  
   

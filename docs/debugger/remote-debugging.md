@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8161623b35dd626e59cdb0ed387ece6a104429a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eecde0bc5e488cd91632a45406c621ce45bd4447
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047580"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407756"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 Vous pouvez déboguer une application Visual Studio qui a été déployée sur un autre ordinateur. Pour ce faire, utilisez le débogueur distant Visual Studio.
@@ -100,7 +100,7 @@ Vous pouvez modifier certains aspects de la configuration du débogueur distant 
      Pour obtenir la liste des numéros de port utilisés par défaut, consultez [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md).
 
      > [!WARNING]
-     >  Vous pouvez choisir d'exécuter les outils de contrôle à distance en mode Aucune authentification, mais ce mode est fortement déconseillé. Il n'existe aucune sécurité du réseau lorsque vous lancez l'exécution dans ce mode. Sélectionnez le mode Aucune authentification uniquement si vous êtes sûr que le réseau n’est pas exposé à des failles de sécurité liées à des programmes malveillants ou du trafic dangereux.
+     > Vous pouvez choisir d'exécuter les outils de contrôle à distance en mode Aucune authentification, mais ce mode est fortement déconseillé. Il n'existe aucune sécurité du réseau lorsque vous lancez l'exécution dans ce mode. Sélectionnez le mode Aucune authentification uniquement si vous êtes sûr que le réseau n’est pas exposé à des failles de sécurité liées à des programmes malveillants ou du trafic dangereux.
 
 ## <a name="bkmk_configureService"></a> (Facultatif) Configurer le débogueur distant en tant que service
 Pour déboguer dans ASP.NET et d’autres environnements de serveur, vous devez exécuter le débogueur distant en tant qu’administrateur ou, si vous souhaitez qu’il est toujours en cours d’exécution, exécutez le débogueur distant en tant que service.

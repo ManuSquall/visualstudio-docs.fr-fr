@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 7d316945-06e0-4d8e-ba3a-0ef96fc75399
 caps.latest.revision: 26
 manager: jillfra
-ms.openlocfilehash: 9c673fd7eb2b51e611256efb427baa0174d29462
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 192274d087731f68cb7e01c1da20e80cbfef0360
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948859"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446417"
 ---
 # <a name="in-place-activation"></a>L’Activation sur Place
 Si votre mode Éditeur héberge ActiveX ou d’autres contrôles actifs, vous devez l’implémenter en tant que contrôle ActiveX ou en tant qu’objet de données de document actif à l’aide du modèle d’activation en place.  
@@ -25,7 +25,7 @@ Si votre mode Éditeur héberge ActiveX ou d’autres contrôles actifs, vous de
  Si vous implémentez un contrôle ActiveX, vous pouvez héberger d’autres objets incorporés. Si vous implémentez un objet de données de document, le frame de fenêtre limite votre capacité à utiliser les contrôles ActiveX.  
   
 > [!NOTE]
->  Les interfaces <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument> et <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocumentView> permettent de séparer les données et les vues. Toutefois, Visual Studio ne prend pas en charge cette fonctionnalité, et ces interfaces sont utilisées uniquement pour représenter l’objet d’affichage de document.  
+> Les interfaces <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument> et <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocumentView> permettent de séparer les données et les vues. Toutefois, Visual Studio ne prend pas en charge cette fonctionnalité, et ces interfaces sont utilisées uniquement pour représenter l’objet d’affichage de document.  
   
  Les éditeurs qui utilisent le service <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> peuvent fournir l’intégration des menus, des barres d’outils et des commandes en appelant les méthodes de l’interface <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> implémentée par le service <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> . Les éditeurs peuvent également proposer d’autres fonctionnalités Visual Studio, telles que le suivi de sélection et la gestion des annulations. Pour plus d’informations, consultez [création des éditeurs personnalisés et les concepteurs](../extensibility/creating-custom-editors-and-designers.md).  
   
@@ -36,7 +36,7 @@ Si votre mode Éditeur héberge ActiveX ou d’autres contrôles actifs, vous de
 Éditeur d’activation sur place  
   
 > [!NOTE]
->  Parmi les objets de ce dessin, seul l’objet `CYourEditorFactory` est nécessaire pour créer un éditeur standard. Si vous créez un éditeur personnalisé, vous n’avez pas à implémenter <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> , car votre éditeur possède probablement son propre mécanisme privé de persistance. Pour plus d’informations, consultez [création des éditeurs personnalisés et les concepteurs](../extensibility/creating-custom-editors-and-designers.md).  
+> Parmi les objets de ce dessin, seul l’objet `CYourEditorFactory` est nécessaire pour créer un éditeur standard. Si vous créez un éditeur personnalisé, vous n’avez pas à implémenter <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> , car votre éditeur possède probablement son propre mécanisme privé de persistance. Pour plus d’informations, consultez [création des éditeurs personnalisés et les concepteurs](../extensibility/creating-custom-editors-and-designers.md).  
   
  Toutes les interfaces qui sont implémentées pour créer un éditeur d’activation en place apparaissent dans l’objet `CYourEditorDocument` unique, mais cette configuration ne prend en charge qu’une seule vue pour vos données de document. Pour plus d’informations sur la prise en charge de plusieurs vues pour vos données de document, consultez [Supporting Multiple Document Views](../extensibility/supporting-multiple-document-views.md).  
   

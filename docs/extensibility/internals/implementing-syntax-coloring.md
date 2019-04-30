@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 453952f52561a761ab4cf01825d07aa97595d0c2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 15659cc8061601776e3a3197a49f14e2c824aa7b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080200"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420429"
 ---
 # <a name="implementing-syntax-coloring"></a>Implémentation de la coloration de syntaxe
 Lorsque le service de langage fournit la coloration syntaxique, l’analyseur convertit une ligne de texte dans un tableau d’éléments coloriables et retourne les types de jetons correspondant à ces éléments coloriables. L’analyseur doit retourner des types de jetons qui appartiennent à une liste d’éléments coloriables. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] affiche chaque élément coloriable dans la fenêtre de code selon les attributs assignés par l’objet de Coloriseur pour le type de jeton approprié.
@@ -27,7 +27,7 @@ Lorsque le service de langage fournit la coloration syntaxique, l’analyseur co
  Services de langage hérité sont implémentés en tant que partie d’un VSPackage, mais la plus récente pour implémenter des fonctionnalités de service de langage consiste à utiliser des extensions MEF. Pour en savoir plus sur la nouvelle façon d’implémenter la coloration de syntaxe, consultez [procédure pas à pas : Mise en surbrillance de texte](../../extensibility/walkthrough-highlighting-text.md).
 
 > [!NOTE]
->  Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorer les performances de votre service de langage et vous permettent de tirer parti des nouvelles fonctionnalités de l’éditeur.
+> Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorer les performances de votre service de langage et vous permettent de tirer parti des nouvelles fonctionnalités de l’éditeur.
 
 ## <a name="steps-followed-by-an-editor-to-colorize-text"></a>Étapes suivies par un éditeur à mettre en couleur de texte
 
@@ -63,7 +63,7 @@ Lorsque le service de langage fournit la coloration syntaxique, l’analyseur co
  L’infrastructure de package managé (MPF) fournit toutes les classes qui sont requis pour implémenter un Coloriseur. Votre classe de service de langage doit hériter la <xref:Microsoft.VisualStudio.Package.LanguageService> classe et implémenter les méthodes obligatoires. Vous devez fournir un scanneur et l’analyseur en implémentant la <xref:Microsoft.VisualStudio.Package.IScanner> interface et retourner une instance de cette interface à partir de la <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> (méthode) (une des méthodes qui doivent être implémentées dans le <xref:Microsoft.VisualStudio.Package.LanguageService> classe). Pour plus d’informations, consultez [couleurs de syntaxe dans un Service de langage hérité](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).
 
 ## <a name="see-also"></a>Voir aussi
-- [Guide pratique pour Utiliser des éléments Coloriables intégrés](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
+- [Guide pratique pour utiliser des éléments coloriables intégrés](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
 - [Éléments coloriables personnalisés](../../extensibility/internals/custom-colorable-items.md)
 - [Développement d’un service de langage hérité](../../extensibility/internals/developing-a-legacy-language-service.md)
 - [Couleurs de syntaxe dans un service de langage hérité](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)

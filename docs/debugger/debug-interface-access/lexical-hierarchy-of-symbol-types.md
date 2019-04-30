@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a92f3f8f5174717b3fe3e992706a0f16478f99df
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: f4b2e6fc0b24cc96f617e7b78c6bdcc59ddc5c0d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399391"
 ---
 # <a name="lexical-hierarchy-of-symbol-types"></a>Hiérarchie lexicale des types de symboles
 Le tableau suivant présente les types de symboles dans la hiérarchie lexicale.
@@ -43,7 +43,7 @@ Le tableau suivant présente les types de symboles dans la hiérarchie lexicale.
 |[UsingNameSpace](../../debugger/debug-interface-access/usingnamespace.md)|Spécifie un `namespace`identificateur.|
 
 > [!NOTE]
->  Propriétés des symboles supplémentaires peuvent être disponibles selon le type de symbole. Ces propriétés sont répertoriées dans les rubriques de symbole individuels.
+> Propriétés des symboles supplémentaires peuvent être disponibles selon le type de symbole. Ces propriétés sont répertoriées dans les rubriques de symbole individuels.
 
 ## <a name="see-also"></a>Voir aussi
 - [Hiérarchie de classes des types de symboles](../../debugger/debug-interface-access/class-hierarchy-of-symbol-types.md)

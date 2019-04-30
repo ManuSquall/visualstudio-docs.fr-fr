@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 92950247420f49c4a5295d25aec2c8697efb3534
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7cec06813890523e604234ccefdbcd7d1de31653
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069963"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444187"
 ---
 # <a name="how-to-set-breakpoints-in-workflows-legacy"></a>Procédure : Définir des points d’arrêt dans les workflows (hérités)
 Cette rubrique décrit comment définir des points d'arrêt dans les applications [!INCLUDE[wf](../includes/wf-md.md)] générées à l'aide du [!INCLUDE[wfd1](../includes/wfd1-md.md)] hérité. Utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité lorsque votre application [!INCLUDE[wf2](../includes/wf2-md.md)] doit cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -39,7 +39,7 @@ Cette rubrique décrit comment définir des points d'arrêt dans les application
      Vous pouvez également utiliser cette option pour définir un nouveau point d'arrêt pendant le débogage, lorsque le débogueur s'arrête à un point d'arrêt.  
   
     > [!NOTE]
-    >  La définition des points d'arrêt sur les workflows appelés n'est pas prise en charge.  
+    > La définition des points d'arrêt sur les workflows appelés n'est pas prise en charge.  
   
 ### <a name="to-set-a-breakpoint-using-the-new-breakpoint-option-on-the-debug-menu"></a>Pour définir un point d'arrêt à l'aide de l'option Nouveau point d'arrêt du menu Débogage  
   
@@ -52,7 +52,7 @@ Cette rubrique décrit comment définir des points d'arrêt dans les application
 3. Spécifiez le nom d’une activité dans le **fonction** zone de texte à l’aide de cette syntaxe : `QualifiedActivityId[:[FullClassName][:InstanceId]]`.  
   
     > [!NOTE]
-    >  Si vous le souhaitez, plutôt que le nom de l’activité dans le **fonction** zone de texte, vous pouvez définir un point d’arrêt en spécifiant le chemin d’accès absolu de l’activité de flux de travail. Par exemple, supposons que vous disposez d’une solution de flux de travail nommée **WorkflowConsoleApplication1** et un flux de travail dans la solution nommée **Workflow1** qui utilise une activité nommée **Delay1**. Vous pouvez utiliser le nom de l’activité **Delay1** ou spécifiez le chemin d’accès en tant que **delay1 : workflowconsoleapplication1.Workflow1** ou **delay1 : workflowconsoleapplication1.Workflow1 : {} 6614886A-608E-412B-BF98-99FF1559DDDF}**.  
+    > Si vous le souhaitez, plutôt que le nom de l’activité dans le **fonction** zone de texte, vous pouvez définir un point d’arrêt en spécifiant le chemin d’accès absolu de l’activité de flux de travail. Par exemple, supposons que vous disposez d’une solution de flux de travail nommée **WorkflowConsoleApplication1** et un flux de travail dans la solution nommée **Workflow1** qui utilise une activité nommée **Delay1**. Vous pouvez utiliser le nom de l’activité **Delay1** ou spécifiez le chemin d’accès en tant que **delay1 : workflowconsoleapplication1.Workflow1** ou **delay1 : workflowconsoleapplication1.Workflow1 : {} 6614886A-608E-412B-BF98-99FF1559DDDF}**.  
   
 4. Sélectionnez le **utiliser IntelliSense** case à cocher pour vérifier le nom de fonction.  
   

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e39a742c01b013c43992847010bf5f6cb6ac6009
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e0411d40a4b156e24fcdf4fb3e9de5353787333f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070912"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445556"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>Créer des compléments VSTO pour Office à l'aide de Visual Studio
   Vous pouvez utiliser les outils de développement Microsoft Office dans Visual Studio pour créer des applications .NET Framework qui étendent Office. Ces applications sont également appelées *solutions Office*.
@@ -25,7 +25,7 @@ ms.locfileid: "60070912"
  Les outils de développement Office fournissent des fonctionnalités qui permettent de créer des solutions Office pour répondre à différents besoins professionnels. Ces outils incluent des modèles de projet pour vous aider à créer des solutions Office à l'aide de Visual Basic ou de Visual C#, et des concepteurs visuels qui vous aident à créer des interfaces utilisateur personnalisées pour vos solutions Office.
 
 > [!NOTE]
->  Vous souhaitez développer des solutions qui étendent l’expérience Office sur [plusieurs plateformes](https://dev.office.com/add-in-availability)? Découvrez le nouvel [modèle de compléments Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Compléments Office peu encombrantes par rapport aux compléments VSTO et de solutions, et vous pouvez les créer à l’aide de presque toutes les technologies, telles que HTML5, JavaScript, CSS3 et XML de programmation web.
+> Vous souhaitez développer des solutions qui étendent l’expérience Office sur [plusieurs plateformes](https://dev.office.com/add-in-availability)? Découvrez le nouvel [modèle de compléments Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Compléments Office peu encombrantes par rapport aux compléments VSTO et de solutions, et vous pouvez les créer à l’aide de presque toutes les technologies, telles que HTML5, JavaScript, CSS3 et XML de programmation web.
 
  Pour obtenir les informations les plus récentes sur le développement Office, consultez les centres de développement suivants sur le site MSDN :
 

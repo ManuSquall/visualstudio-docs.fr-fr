@@ -18,12 +18,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 15fd3f1b93378adba0579b6de50d0e779a09ac5a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 7f50c5897f68e43071d4920f85f1a694cacbf655
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658212"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441308"
 ---
 # <a name="publish-page-project-designer"></a>Page Publier, Concepteur de projets
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ La page **Publier** du **Concepteur de projets** permet de configurer les propri
  Pour accéder à la boîte de dialogue **Publier** , sélectionnez un nœud de projet dans l’ **Explorateur de solutions**, puis cliquez sur **Propriétés** dans le menu **Projet**. Lorsque le **Concepteur de projets** apparaît, cliquez sur l'onglet **Publier** .  
   
 > [!NOTE]
->  Certaines des propriétés ClickOnce décrites ici peuvent également être définies dans **l’Assistant Publication**, accessible à partir du menu **Générer** ou en cliquant sur le bouton **Assistant Publication** dans cette page.  
+> Certaines des propriétés ClickOnce décrites ici peuvent également être définies dans **l’Assistant Publication**, accessible à partir du menu **Générer** ou en cliquant sur le bouton **Assistant Publication** dans cette page.  
   
 ## <a name="uielement-list"></a>Liste des éléments d’interface  
  **Emplacement du dossier de publication**  
@@ -42,7 +42,7 @@ La page **Publier** du **Concepteur de projets** permet de configurer les propri
  Par défaut, l’emplacement de publication est `http://localhost/<projectname>/` si vous avez installé IIS, ou le répertoire `publish\` si vous n’avez pas installé IIS. Si votre ordinateur exécute Windows Vista, la valeur par défaut est toujours le répertoire `publish\` , qu’IIS soit installé ou non.  
   
  **URL du dossier d’installation**  
- Facultatif. Spécifie un site web auquel les utilisateurs accèdent pour installer l’application. Cette URL est nécessaire uniquement si elle diffère de l’ **Emplacement de publication**, par exemple quand l’application est publiée sur un serveur intermédiaire.  
+ Optionnel. Spécifie un site web auquel les utilisateurs accèdent pour installer l’application. Cette URL est nécessaire uniquement si elle diffère de l’ **Emplacement de publication**, par exemple quand l’application est publiée sur un serveur intermédiaire.  
   
  **Mode et paramètres d'installation**  
  Détermine si l’application est exécutée directement à partir de l’ **Emplacement de publication** (quand l’option **L’application est disponible en ligne uniquement** est sélectionnée) ou si elle est installée et ajoutée au menu **Démarrer** et à l’élément **Ajouter ou supprimer des programmes** du **Panneau de configuration** (quand l’option **L’application est également disponible hors connexion** est sélectionnée).  

@@ -11,12 +11,12 @@ ms.assetid: d1f985bd-743e-40b7-9458-d9af53647c91
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 96e5bc47a12e838fb11aa82c18981805abc4ae7b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 35372b6d228c8d1c0dbe985379b7753c0f88d311
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952346"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440129"
 ---
 # <a name="getting-font-and-color-information-for-text-colorization"></a>L’obtention de la police et les informations de couleur de colorisation de texte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Le processus qui effectue le rendu ou affiche le texte en couleurs se dans les �
  La plupart des implémentations qui affichent du texte en couleurs se doivent le `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults` et associés des interfaces pour les paramètres d’affichage de présentation, la récupération et le stocker du texte.  
   
 > [!NOTE]
->  Lors de la personnalisation de l’éditeur principal (qui prend en charge la **texte EditorCategory**), il est fortement recommandé d’utiliser la technologie de coloration dans le service de langage. Pour plus d’informations, consultez [vue d’ensemble de la couleur et de police](../extensibility/font-and-color-overview.md).  
+> Lors de la personnalisation de l’éditeur principal (qui prend en charge la **texte EditorCategory**), il est fortement recommandé d’utiliser la technologie de coloration dans le service de langage. Pour plus d’informations, consultez [vue d’ensemble de la couleur et de police](../extensibility/font-and-color-overview.md).  
   
 ## <a name="getting-default-font-and-color-information"></a>Obtention des informations de couleur et de police par défaut  
  Tous les le **polices et couleurs** paramètres de n’importe quelle fenêtre d’affichage du texte doivent être spécifiés dans le **éléments affichés** d’un **catégorie**. Pour plus d’informations, consultez [polices et couleurs, environnement, boîte de dialogue Options](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).  

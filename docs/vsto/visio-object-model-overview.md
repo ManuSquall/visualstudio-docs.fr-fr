@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dbae3a1e003c0d9381b80fc24227e65a18c1c8f1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1ca692e85396b11647c507b18c95ca095b3f8072
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096554"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438757"
 ---
 # <a name="visio-object-model-overview"></a>Présentation du modèle objet de Visio
   Pour développer les solutions Office pour Microsoft Office Visio, vous pouvez interagir avec le modèle objet Visio. Ce modèle objet se compose de classes et d'interfaces qui sont fournies dans l'assembly PIA de Visio et définies dans l'espace de noms `Microsoft.Office.Interop.Visio`.
@@ -67,7 +67,7 @@ ms.locfileid: "60096554"
  Tous les objets et membres mentionnés dans la documentation de référence du modèle objet VBA correspondent aux types et aux membres de l'assembly PIA Visio. Par exemple, le `Document` objet dans la référence du modèle objet VBA correspond au type Microsoft.Office.Interop.Visio.Document dans l’assembly PIA Visio. Même si la documentation de référence du modèle objet VBA fournit des exemples de code pour la plupart des propriétés, méthodes et événements, vous devez traduire le code VBA fourni dans documentation de référence en Visual Basic ou Visual C# pour pouvoir les utiliser dans un projet de complément VSTO Visio créé à l'aide de Visual Studio.
 
 > [!NOTE]
->  À ce stade, il n'existe aucune documentation de référence pour l'assembly PIA Visio.
+> À ce stade, il n'existe aucune documentation de référence pour l'assembly PIA Visio.
 
  Pour plus d’exemples de code associés et des outils supplémentaires pour la création de solutions Visio, consultez [kit de développement logiciel Visio 2010](http://go.microsoft.com/fwlink/?LinkId=196501).
 

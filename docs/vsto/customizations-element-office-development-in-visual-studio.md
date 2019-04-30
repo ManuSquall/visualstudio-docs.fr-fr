@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8600fd67cd28073544824374135c6966e19b63a0
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
-ms.translationtype: MT
+ms.openlocfilehash: 58d88f865e5f220000bf021b548e4b9c4b8745f6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54864239"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445511"
 ---
 # <a name="ltcustomizationsgt-element-office-development-in-visual-studio"></a>&lt;personnalisations&gt; élément (développement Office dans Visual Studio)
   L’élément `customizations` de l’espace de noms `vstov4` contient toutes les informations sur l’installation et le chargement de chaque solution Office.
@@ -72,7 +72,7 @@ ms.locfileid: "54864239"
  L’exemple de code suivant illustre l’élément `customizations` d’une personnalisation au niveau du document.
 
 > [!NOTE]
->  Cet exemple de code fait partie d’un exemple plus complet fourni dans [manifestes d’Application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).
+> Cet exemple de code fait partie d’un exemple plus complet fourni dans [manifestes d’Application pour les solutions Office](../vsto/application-manifests-for-office-solutions.md).
 
 ### <a name="code"></a>Code
 

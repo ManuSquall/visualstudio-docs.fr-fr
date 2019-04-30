@@ -12,12 +12,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b28a0d68c6e480c7b13a6ab3aa95b93838496383
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: dcfc73feb762ecc50412ca2dc67818e2fb60a64d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650029"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441723"
 ---
 # <a name="environment-options-dialog-box"></a>Environnement, boîte de dialogue Options
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "59650029"
 Vous pouvez utiliser les pages du dossier **Environnement** de la boîte de dialogue **Options** pour définir comment certains éléments de l’environnement de développement intégré (IDE) s’affichent et se comportent. Vous pouvez accéder aux pages Environnement en choisissant **Outils** et **Options** dans la barre de menus, puis en sélectionnant **Environnement**.  
   
 > [!NOTE]
->  Les boîtes de dialogue et les commandes de menu qui apparaissent sur votre ordinateur peuvent différer de celles décrites dans l'aide, selon les paramètres actifs et l'édition de Visual Studio utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Les boîtes de dialogue et les commandes de menu qui apparaissent sur votre ordinateur peuvent différer de celles décrites dans l'aide, selon les paramètres actifs et l'édition de Visual Studio utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 |Pour plus d'informations sur|Voir|  
 |----------------------------------|---------|  

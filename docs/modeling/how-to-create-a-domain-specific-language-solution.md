@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b1799ac2e7124f79d10dcc8860a994e2f182ea7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0ac8a47aeca8875dabe3fdf388e9a73d68ec514e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051347"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445206"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Procédure : Créer une solution de langage spécifique à un domaine
 Un langage spécifique à un domaine (DSL) est créé à l’aide d’une solution Visual Studio spécialisée.
@@ -63,7 +63,7 @@ Avant de commencer cette procédure, installez ces composants :
     L’Assistant crée une solution qui comporte deux projets, qui sont nommés **Dsl** et **DslPackage**.
 
    > [!NOTE]
-   >  Si vous voyez un message qui vous n'avertit pas pour exécuter des modèles de texte à partir de sources non fiables, cliquez sur **OK**. Vous pouvez définir ce message ne pas s’affiche à nouveau.
+   > Si vous voyez un message qui vous n'avertit pas pour exécuter des modèles de texte à partir de sources non fiables, cliquez sur **OK**. Vous pouvez définir ce message ne pas s’affiche à nouveau.
 
 ## <a name="settings"></a> Les Pages d’Assistant concepteur DSL
  Vous pouvez laisser certains des champs inchangés à partir de leurs valeurs par défaut. Toutefois, assurez-vous que vous définissez le champ d’Extension de fichier.

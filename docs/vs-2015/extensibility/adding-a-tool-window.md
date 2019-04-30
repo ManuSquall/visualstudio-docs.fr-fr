@@ -11,12 +11,12 @@ ms.assetid: 8e16c381-03c8-404e-92ef-3614cdf3150a
 caps.latest.revision: 53
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cc12854574f21c1d75f57bae592d6a504db9b189
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9099bc79a555f908ddda12dc9da83f015791fd86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087564"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444832"
 ---
 # <a name="adding-a-tool-window"></a>Ajout d’une fenêtre d’outil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer une fenêtre ou
 1. Créez un projet nommé **FirstToolWin** en utilisant le modèle VSIX et ajouter un modèle d’élément de fenêtre outil personnalisé nommé **FirstToolWindow**.  
   
     > [!NOTE]
-    >  Pour plus d’informations sur la création d’une extension avec une fenêtre outil, consultez [création d’une Extension avec une fenêtre outil](../extensibility/creating-an-extension-with-a-tool-window.md).  
+    > Pour plus d’informations sur la création d’une extension avec une fenêtre outil, consultez [création d’une Extension avec une fenêtre outil](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
 ## <a name="add-a-control-to-the-tool-window"></a>Ajouter un contrôle à la fenêtre outil  
   
@@ -264,7 +264,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
      Le premier paramètre nommé est `Style` et sa valeur est `Tabbed`, ce qui signifie que la fenêtre sera un onglet dans une fenêtre existante. La position d’ancrage est spécifiée par le `Window` paramètre, n ce cas, le GUID de la **l’Explorateur de solutions**.  
   
     > [!NOTE]
-    >  Pour plus d’informations sur les types de fenêtres dans l’IDE, consultez <xref:EnvDTE.vsWindowType>.  
+    > Pour plus d’informations sur les types de fenêtres dans l’IDE, consultez <xref:EnvDTE.vsWindowType>.  
   
 ## <a name="testing-the-tool-window"></a>Test de la fenêtre outil  
   

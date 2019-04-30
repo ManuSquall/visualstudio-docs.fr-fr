@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: fbbdba27b5ccc52e64575aad018af4ca20cf2e14
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612723"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008786"
 ---
 # <a name="integrate-business-data-into-sharepoint"></a>Intégrer des données métiers dans SharePoint
   Vous pouvez intégrer des données métiers dans SharePoint. Données d’entreprise peuvent provenir d’applications de serveur principal, tel que [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)], Siebel et SAP, ou un service Web. Les utilisateurs peuvent afficher, ajouter, mettre à jour ou supprimer des données d’entreprise à l’aide des listes externes ou WebPart Business Data dans SharePoint.  Ils peuvent également accéder ces données hors connexion dans une application Microsoft Office telles que Microsoft Outlook. Pour plus d’informations, consultez [où peut vous afficher les données externes](http://go.microsoft.com/fwlink/?LinkId=169295).

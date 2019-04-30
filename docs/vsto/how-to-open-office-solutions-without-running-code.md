@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9b9a88aff9cd587f695ace56c44eaf9c8fcb8875
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 366416e4f18435bd01391657eb2fc4f65f8a4d62
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117198"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441782"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>Procédure : Ouvrir des solutions Office sans exécuter le code
   Une solution Microsoft Office créée avec des extensions de code managé s’exécute même si le paramètre de sécurité dans l’application Office de l’utilisateur final est défini sur élevé. Il s’agit, car la sécurité du code assembly .NET est gérée par Microsoft .NET Framework, et non par Microsoft Office.
@@ -39,7 +39,7 @@ ms.locfileid: "60117198"
 - Ouvrir des documents et classeurs à partir de la **fichier** menu tout en maintenant enfoncée la **MAJ** clé afin d’éviter de Word et Excel de déclencher des événements d’initialisation pendant que le document s’ouvre.
 
     > [!NOTE]
-    >  Si vous ouvrez un document ou classeur à partir de la **mise en route** volet des tâches, enfoncée **MAJ** n’ignore pas le code. En outre, maintenez la touche MAJ n’empêche pas d’événements de se déclencher après que le document est ouvert.
+    > Si vous ouvrez un document ou classeur à partir de la **mise en route** volet des tâches, enfoncée **MAJ** n’ignore pas le code. En outre, maintenez la touche MAJ n’empêche pas d’événements de se déclencher après que le document est ouvert.
 
      Cette méthode est utile si vous souhaitez ouvrir un document pour apporter des modifications sans le code en cours d’exécution et modification d’abord le document.
 

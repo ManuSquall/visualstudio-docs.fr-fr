@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e124bb05fa42be48fc0c9054df9cb056d0680958
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 932ae7279b0bcb216d120f9ef6fb5c019e5094f5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081019"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408620"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>À l’aide des données IntelliTrace enregistrées (C#, Visual Basic, C++)
 
@@ -64,7 +64,7 @@ Accédez aux points spécifiques de l’exécution de votre application lorsque 
     - Sous **Étapes de reproduction**, cliquez sur le lien **IntelliTrace** .
 
 > [!TIP]
->  Si vous avez fermé le fichier IntelliTrace pendant le débogage, vous pouvez le rouvrir facilement. Accédez au menu **Déboguer** , choisissez **IntelliTrace**, **Afficher le résumé du journal**. Vous pouvez également choisir **Afficher le résumé du journal** dans la fenêtre **IntelliTrace** . Cette commande est disponible uniquement lorsque vous procédez à un débogage à l’aide d’IntelliTrace.
+> Si vous avez fermé le fichier IntelliTrace pendant le débogage, vous pouvez le rouvrir facilement. Accédez au menu **Déboguer** , choisissez **IntelliTrace**, **Afficher le résumé du journal**. Vous pouvez également choisir **Afficher le résumé du journal** dans la fenêtre **IntelliTrace** . Cette commande est disponible uniquement lorsque vous procédez à un débogage à l’aide d’IntelliTrace.
 
 ## <a name="Understand"></a> Comprendre le fichier journal IntelliTrace
  Certaines des sections suivantes du fichier .iTrace apparaissent uniquement si vous collectez les données à partir d’une source particulière, par exemple, depuis le Gestionnaire de tests ou les applications SharePoint.

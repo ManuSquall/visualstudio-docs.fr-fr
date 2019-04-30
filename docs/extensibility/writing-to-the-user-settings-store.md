@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ea782140405b55a6c5a90b01fb466586f66cc38
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5741b286af454493f543b2c39c894341c87df1b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054103"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444910"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Écriture dans la banque de paramètres utilisateur
 Paramètres de l’utilisateur sont des paramètres accessible en écriture telles que celles dans les **Outils / Options** boîte de dialogue, fenêtres Propriétés et certaines autres boîtes de dialogue. Extensions Visual Studio peuvent utiliser pour stocker de petites quantités de données. Cette procédure pas à pas montre comment ajouter le bloc-notes à Visual Studio comme un outil externe en lecture et écriture à la banque de paramètres utilisateur.
@@ -27,7 +27,7 @@ Paramètres de l’utilisateur sont des paramètres accessible en écriture tell
 3. Accédez aux outils de HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External\\.
 
     > [!NOTE]
-    >  Assurez-vous que vous examinez la clé qui contient \14.0Exp\ et pas \14.0\\. Lorsque vous exécutez l’instance expérimentale de Visual Studio, vos paramètres utilisateur sont dans la ruche de Registre « 14.0Exp ».
+    > Assurez-vous que vous examinez la clé qui contient \14.0Exp\ et pas \14.0\\. Lorsque vous exécutez l’instance expérimentale de Visual Studio, vos paramètres utilisateur sont dans la ruche de Registre « 14.0Exp ».
 
 4. Avec le bouton droit de la sous-clé \External Tools\, puis cliquez sur **exporter**. Assurez-vous que l’option **branche sélectionnée** est sélectionné.
 

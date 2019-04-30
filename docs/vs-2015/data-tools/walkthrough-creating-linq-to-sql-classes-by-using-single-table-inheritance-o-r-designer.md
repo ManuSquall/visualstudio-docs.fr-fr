@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a7dfd293f5b2219eab6c3a2896c800a1337f2c8c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2dac656f9a765875fc552739b814538582200cc8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111972"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424700"
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Procédure pas à pas : Création des Classes LINQ to SQL à l’aide d’héritage à Table unique (Concepteur O/R)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Le [outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-vi
 1. Dans **Explorateur de serveurs**/**Database Explorer**, avec le bouton droit le **Tables** nœud et cliquez sur **ajouter une nouvelle Table**.  
   
     > [!NOTE]
-    >  Vous pouvez utiliser la base de données Northwind ou toute autre base de données à laquelle vous pouvez ajouter une table.  
+    > Vous pouvez utiliser la base de données Northwind ou toute autre base de données à laquelle vous pouvez ajouter une table.  
   
 2. Dans le Concepteur de tables, ajoutez les colonnes suivantes à la table :  
   
@@ -96,7 +96,7 @@ Le [outils LINQ to SQL dans Visual Studio](../data-tools/linq-to-sql-tools-in-vi
 2. Nommez le projet **InheritanceWalkthrough**.  
   
     > [!NOTE]
-    >  Le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] est pris en charge dans les projets Visual Basic et C#. Créez le projet dans l'un de ces langages.  
+    > Le [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] est pris en charge dans les projets Visual Basic et C#. Créez le projet dans l'un de ces langages.  
   
 3. Cliquez sur le **Windows Forms Application** modèle, puis cliquez sur **OK**. Pour plus d’informations, consultez [les Applications clientes](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   

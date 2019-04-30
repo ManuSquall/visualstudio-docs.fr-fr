@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 47b108cfbef8831f9650c7e1af29d528aa8abaa2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2a91615fc711d98970c1aace57cbef814e6fc2a0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077262"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433209"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>Personnalisation des outils et de la boîte à outils
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Editor
 - Supprimer des onglets et des outils.  
   
 > [!IMPORTANT]
->  Pour ajouter ou coller des éléments dans un Explorateur DSL, cliquez avec le bouton droit sur le grand-parent du nouveau nœud. Par exemple, pour ajouter un outil, cliquez sur l’onglet et non le **outils** nœud. Pour ajouter un onglet, cliquez sur le **éditeur** nœud.  
+> Pour ajouter ou coller des éléments dans un Explorateur DSL, cliquez avec le bouton droit sur le grand-parent du nouveau nœud. Par exemple, pour ajouter un outil, cliquez sur l’onglet et non le **outils** nœud. Pour ajouter un onglet, cliquez sur le **éditeur** nœud.  
   
  Le **icône Boîte à outils** propriété de chaque outil fait référence à un fichier bitmap 16 x 16. Ces fichiers sont généralement conservés dans le **Dsl\Resources** dossier.  
   
@@ -191,7 +191,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   Vous devez écrire un certain code de programme pour procéder à ces personnalisations. Pour savoir quel code vous devez fournir, cochez l'une de ces cases, cliquez sur Transformer tous les modèles, puis générez votre solution. Il en résultera un rapport d'erreurs. Double-cliquez sur le rapport d'erreurs pour afficher un commentaire expliquant quel code vous devez ajouter.  
   
 > [!NOTE]
->  Pour ajouter un code personnalisé, créez une définition de classe partielle dans un fichier de code distinct des fichiers de code des dossiers GeneratedCode. Pour éviter de perdre votre travail, vous ne devez pas modifier les fichiers de code générés. Pour plus d’informations, consultez [substitution et extension des Classes générées](../modeling/overriding-and-extending-the-generated-classes.md).  
+> Pour ajouter un code personnalisé, créez une définition de classe partielle dans un fichier de code distinct des fichiers de code des dossiers GeneratedCode. Pour éviter de perdre votre travail, vous ne devez pas modifier les fichiers de code générés. Pour plus d’informations, consultez [substitution et extension des Classes générées](../modeling/overriding-and-extending-the-generated-classes.md).  
   
 #### <a name="creating-custom-connection-code"></a>Création du code de connexion personnalisé  
  Dans chaque lien se connecter (directive), le **directives de rôle de Source** onglet définit à partir de les types que vous pouvez faire glisser. De même, le **cibler des directives de rôle** onglet définit pour les types que vous pouvez faire glisser. Pour chaque type, vous pouvez préciser s’il faut autoriser la connexion (pour la directive de connexion de ce lien) en définissant le **acceptation personnalisée** indicateur et en fournissant le code supplémentaire.  

@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a4c170b533b1eadb60be2ec1ca5d5fe000c5b4d6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 76a45297062b42b559f07867b20bdadac79cc082
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386842"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Procédure : Afficher et modifier le Code à l’aide d’aperçu de définition (Alt + F12)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Utilisez la commande **Aperçu de définition** pour afficher et modifier du cod
  Vous pouvez utiliser **Aperçu de définition** avec du code C#, Visual Basic et C++. En Visual Basic, l’option **Aperçu de définition** affiche un lien vers l’**Explorateur d’objets** pour les symboles qui ne disposent pas de métadonnées de définition (par exemple, les types .NET Framework intégrés).  
   
 > [!IMPORTANT]
->  Vous ne pouvez pas utiliser cette commande dans une version Express de Visual Studio 2013.  
+> Vous ne pouvez pas utiliser cette commande dans une version Express de Visual Studio 2013.  
   
 ## <a name="working-with-peek-definition"></a>Utilisation de l'option Aperçu de définition  
   
@@ -76,7 +76,7 @@ Utilisez la commande **Aperçu de définition** pour afficher et modifier du cod
     |Permuter entre la fenêtre de l'éditeur de code et la fenêtre de définition|Maj+Échap|  
   
     > [!NOTE]
-    >  Pour modifier le code dans une fenêtre **Aperçu de définition**, vous pouvez utiliser les mêmes raccourcis clavier que vous utilisez ailleurs dans Visual Studio.  
+    > Pour modifier le code dans une fenêtre **Aperçu de définition**, vous pouvez utiliser les mêmes raccourcis clavier que vous utilisez ailleurs dans Visual Studio.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Conseils de productivité](../ide/productivity-tips-for-visual-studio.md)

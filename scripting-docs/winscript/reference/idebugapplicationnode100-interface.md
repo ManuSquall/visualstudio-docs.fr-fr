@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: f380245422047142b3f06757f6c1057302dd5d26
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: d8de6f57cabe808df1506870fe65da31ef74e644
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146043"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436030"
 ---
 # <a name="idebugapplicationnode100-interface"></a>IDebugApplicationNode100 (interface)
 Le `IDebugApplicationNode100` interface étend les fonctionnalités de la [IDebugApplicationNode (Interface)](../../winscript/reference/idebugapplicationnode-interface.md). Vous pouvez obtenir une instance de cette interface en appelant QueryInterface sur une implémentation de [IDebugApplicationNode (Interface)](../../winscript/reference/idebugapplicationnode-interface.md).  
   
 > [!IMPORTANT]
->  Cette interface est implémentée par PDM v10.0 et supérieur. Trouvée dans activdbg100.h.  
+> Cette interface est implémentée par PDM v10.0 et supérieur. Trouvée dans activdbg100.h.  
   
 ## <a name="methods"></a>Méthodes  
  L'interface `IDebugApplicationNode100` expose les méthodes suivantes :  

@@ -21,12 +21,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1b7ef69d2bb7ac9390c82ffb4e17db27a49637aa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1e9fd28a946911a019ee0a1e144e7565bac9e004
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041589"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402721"
 ---
 # <a name="validate-data-in-datasets"></a>Valider les données dans des datasets
 Validation des données est le processus consistant à confirmer que les valeurs entrées dans des objets de données sont conformes aux contraintes de schéma d’un jeu de données. Le processus de validation vérifie également que ces valeurs sont les suivantes les règles qui ont été établies pour votre application. Il est conseillé de valider les données avant d’envoyer des mises à jour la base de données sous-jacente. Cela réduit les erreurs, ainsi que le nombre potentiel d’allers-retours entre une application et la base de données.
@@ -54,7 +54,7 @@ Plusieurs événements sont déclenchés par le <xref:System.Data.DataTable> lor
 Par défaut, chaque modification apportée à une colonne déclenche donc quatre événements. La première est la <xref:System.Data.DataTable.ColumnChanging> et <xref:System.Data.DataTable.ColumnChanged> événements pour la colonne qui est en cours de modification. Viennent ensuite les <xref:System.Data.DataTable.RowChanging> et <xref:System.Data.DataTable.RowChanged> événements. Si plusieurs modifications sont en cours apportées à la ligne, les événements sont déclenchés pour chaque modification.
 
 > [!NOTE]
->  La ligne de données <xref:System.Data.DataRow.BeginEdit%2A> méthode désactive le <xref:System.Data.DataTable.RowChanging> et <xref:System.Data.DataTable.RowChanged> événements après chaque modification de colonne individuelle. Dans ce cas, l’événement n’est pas déclenché jusqu'à ce que le <xref:System.Data.DataRow.EndEdit%2A> méthode a été appelée, lorsque le <xref:System.Data.DataTable.RowChanging> et <xref:System.Data.DataTable.RowChanged> sont déclenchés qu’une seule fois. Pour plus d’informations, consultez [désactiver les contraintes pendant le remplissage d’un jeu de données](../data-tools/turn-off-constraints-while-filling-a-dataset.md).
+> La ligne de données <xref:System.Data.DataRow.BeginEdit%2A> méthode désactive le <xref:System.Data.DataTable.RowChanging> et <xref:System.Data.DataTable.RowChanged> événements après chaque modification de colonne individuelle. Dans ce cas, l’événement n’est pas déclenché jusqu'à ce que le <xref:System.Data.DataRow.EndEdit%2A> méthode a été appelée, lorsque le <xref:System.Data.DataTable.RowChanging> et <xref:System.Data.DataTable.RowChanged> sont déclenchés qu’une seule fois. Pour plus d’informations, consultez [désactiver les contraintes pendant le remplissage d’un jeu de données](../data-tools/turn-off-constraints-while-filling-a-dataset.md).
 
 L’événement que vous choisissez dépend du degré de granularité que vous souhaitez la validation. S’il est important que vous interceptez une erreur immédiatement lors d’une colonne change, validation de la génération à l’aide de la <xref:System.Data.DataTable.ColumnChanging> événement. Sinon, utilisez le <xref:System.Data.DataTable.RowChanging> événement, ce qui peut entraîner l’interception de plusieurs erreurs en même temps. En outre, si vos données sont structurées de sorte que la valeur d’une colonne est validée en fonction du contenu d’une autre colonne, effectuez votre validation pendant la <xref:System.Data.DataTable.RowChanging> événement.
 
@@ -80,7 +80,7 @@ Le <xref:System.Data.DataTable.ColumnChanged>, <xref:System.Data.DataTable.RowCh
 ## <a name="validate-data-during-column-changes"></a>Valider les données lors de la modification de colonne
 
 > [!NOTE]
->  Le **Concepteur de Dataset** crée une classe partielle dans laquelle le contrôle logique peut être ajoutée à un jeu de données. Le jeu de données généré par le concepteur ne supprimer ou modifier le code dans la classe partielle.
+> Le **Concepteur de Dataset** crée une classe partielle dans laquelle le contrôle logique peut être ajoutée à un jeu de données. Le jeu de données généré par le concepteur ne supprimer ou modifier le code dans la classe partielle.
 
 Vous pouvez valider des données lorsque la valeur dans une colonne de données change en réponse à la <xref:System.Data.DataTable.ColumnChanging> événement. Lorsque déclenché, cet événement passe un argument d’événement (<xref:System.Data.DataColumnChangeEventArgs.ProposedValue%2A>) qui contient la valeur proposée pour la colonne actuelle. En fonction du contenu de `e.ProposedValue`, vous pouvez :
 
@@ -102,7 +102,7 @@ Vous pouvez écrire du code pour vérifier que chaque colonne que vous voulez va
 2. Double-cliquez sur la barre de titre de la table que vous souhaitez valider. Cette action crée automatiquement le <xref:System.Data.DataTable.RowChanging> Gestionnaire d’événements de la <xref:System.Data.DataTable> dans le fichier de classe partielle du jeu de données.
 
     > [!TIP]
-    >  Double-cliquez sur à gauche du nom de table pour créer le Gestionnaire d’événements de modification de ligne. Si vous double-cliquez sur le nom de table, vous pouvez le modifier.
+    > Double-cliquez sur à gauche du nom de table pour créer le Gestionnaire d’événements de modification de ligne. Si vous double-cliquez sur le nom de table, vous pouvez le modifier.
 
      [!code-vb[VbRaddataValidating#3](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_1.vb)]
 
@@ -113,7 +113,7 @@ Vous pouvez écrire du code pour vérifier que chaque colonne que vous voulez va
 2. Double-cliquez sur la barre de titre de la table que vous souhaitez valider. Cette action crée un fichier de classe partielle pour le <xref:System.Data.DataTable>.
 
     > [!NOTE]
-    >  Le **Concepteur de Dataset** ne crée pas automatiquement un gestionnaire d’événements pour le <xref:System.Data.DataTable.RowChanging> événement. Vous devez créer une méthode pour gérer la <xref:System.Data.DataTable.RowChanging> événements et exécuter du code pour raccorder l’événement dans la méthode d’initialisation de la table.
+    > Le **Concepteur de Dataset** ne crée pas automatiquement un gestionnaire d’événements pour le <xref:System.Data.DataTable.RowChanging> événement. Vous devez créer une méthode pour gérer la <xref:System.Data.DataTable.RowChanging> événements et exécuter du code pour raccorder l’événement dans la méthode d’initialisation de la table.
 
 3. Copiez le code suivant dans la classe partielle :
 
@@ -141,7 +141,7 @@ Vous pouvez écrire du code pour vérifier que chaque colonne que vous voulez va
 Chaque ligne dans une table de données a un <xref:System.Data.DataRow.RowState%2A> propriété qui effectue le suivi de l’état actuel de cette ligne en utilisant les valeurs dans le <xref:System.Data.DataRowState> énumération. Vous pouvez retourner des lignes modifiées d’une table de données ou le jeu de données en appelant le `GetChanges` méthode d’un <xref:System.Data.DataSet> ou <xref:System.Data.DataTable>. Vous pouvez vérifier qu’il existe des modifications avant d’appeler `GetChanges` en appelant le <xref:System.Data.DataSet.HasChanges%2A> méthode d’un jeu de données.
 
 > [!NOTE]
->  Une fois que vous validez des modifications à une table de données ou le jeu de données (en appelant le <xref:System.Data.DataSet.AcceptChanges%2A> méthode), la `GetChanges` méthode ne retourne aucune donnée. Si votre application doit traiter des lignes modifiées, vous devez traiter les modifications avant d’appeler le `AcceptChanges` (méthode).
+> Une fois que vous validez des modifications à une table de données ou le jeu de données (en appelant le <xref:System.Data.DataSet.AcceptChanges%2A> méthode), la `GetChanges` méthode ne retourne aucune donnée. Si votre application doit traiter des lignes modifiées, vous devez traiter les modifications avant d’appeler le `AcceptChanges` (méthode).
 
 Appel de la <xref:System.Data.DataSet.GetChanges%2A> méthode d’une table de données ou le jeu de données retourne une nouvelle table de données ou le jeu de données qui contient uniquement les enregistrements qui ont été modifiés. Si vous souhaitez obtenir des enregistrements spécifiques, par exemple, uniquement de nouveaux enregistrements ou les enregistrements modifiés — vous pouvez passer une valeur à partir de la <xref:System.Data.DataRowState> énumération en tant que paramètre à la `GetChanges` (méthode).
 
@@ -183,7 +183,7 @@ Utilisez le <xref:System.Data.DataRowVersion> énumération pour accéder aux di
 Lorsque des modifications sont apportées aux lignes de données, le jeu de données conserve les deux d’origine (<xref:System.Data.DataRowVersion.Original>) et les nouveaux (<xref:System.Data.DataRowVersion.Current>) versions de la ligne. Par exemple, avant d’appeler le `AcceptChanges` (méthode), votre application peut accéder à différentes versions d’un enregistrement (tel que défini dans le <xref:System.Data.DataRowVersion> énumération) et traiter les modifications en conséquence.
 
 > [!NOTE]
->  Différentes versions d’une ligne existent uniquement une fois qu’il a été modifié et avant qu’elle le `AcceptChanges` méthode a été appelée. Après le `AcceptChanges` méthode a été appelée, les versions actuelles et d’origine sont identiques.
+> Différentes versions d’une ligne existent uniquement une fois qu’il a été modifié et avant qu’elle le `AcceptChanges` méthode a été appelée. Après le `AcceptChanges` méthode a été appelée, les versions actuelles et d’origine sont identiques.
 
 En passant le <xref:System.Data.DataRowVersion> valeur, ainsi que l’index de colonne (ou le nom de la colonne sous forme de chaîne) retourne la valeur de la version de ligne particulière de cette colonne. La colonne modifiée est identifiée pendant le <xref:System.Data.DataTable.ColumnChanging> et <xref:System.Data.DataTable.ColumnChanged> événements. Il s’agit d’un bon moment pour examiner les différentes versions de ligne à des fins de validation. Toutefois, si vous avez suspendu temporairement les contraintes, ces événements ne sont pas déclenchés, et vous devrez par programmation identifier les colonnes qui ont été modifiés. Ce faire, vous pouvez itérer au sein du <xref:System.Data.DataTable.Columns%2A> collection et en comparant les différentes <xref:System.Data.DataRowVersion> valeurs.
 

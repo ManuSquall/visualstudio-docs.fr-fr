@@ -17,12 +17,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d426c1146ae3862318b265c2e36b334b4761d2d9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6c401a59bb2b635a737788c0a587ef5097cc74c7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768998"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443194"
 ---
 # <a name="viewing-types-and-relationships-class-designer"></a>Affichage des types et relations (Concepteur de classes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "54768998"
 Le Concepteur de classes utilise des diagrammes de classes pour afficher des informations détaillées sur les types, telles que leurs membres constitutifs et les relations qu’ils partagent. La visualisation de ces entités est en fait une vue dynamique du code. Vous pouvez donc modifier les types dans le concepteur, puis visualiser vos modifications dans le code source de l’entité. De même, le diagramme de classes est constamment synchronisé avec les modifications apportées aux entités du code.  
   
 > [!NOTE]
->  Si votre projet contient un diagramme de classes et si votre projet référence un type qui se trouve dans un autre projet, le diagramme de classes n’affiche pas le type référencé tant que vous n’avez pas généré le projet pour ce type. De même, le diagramme n’affiche pas les modifications du code de l’entité externe tant que vous n’avez pas régénéré le projet pour cette entité. Pour plus d’informations sur le type des assemblys référencés et des fichiers en lecture seule, consultez [Affichage d’informations en lecture seule (Concepteur de classes)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).  
+> Si votre projet contient un diagramme de classes et si votre projet référence un type qui se trouve dans un autre projet, le diagramme de classes n’affiche pas le type référencé tant que vous n’avez pas généré le projet pour ce type. De même, le diagramme n’affiche pas les modifications du code de l’entité externe tant que vous n’avez pas régénéré le projet pour cette entité. Pour plus d’informations sur le type des assemblys référencés et des fichiers en lecture seule, consultez [Affichage d’informations en lecture seule (Concepteur de classes)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Guide pratique pour afficher des types existants (Concepteur de classes)](../ide/how-to-view-existing-types-class-designer.md)  

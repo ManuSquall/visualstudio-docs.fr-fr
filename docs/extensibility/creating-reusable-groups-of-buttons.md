@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe0d5c3dd55380587f8f5f1c6477ee8c53bf1156
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 48ab55b58eee8f6444b253c09db1eeedcc8c5692
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411353"
 ---
 # <a name="create-reusable-groups-of-buttons"></a>Créer des groupes de boutons réutilisables
 Un groupe de commandes est une collection de commandes qui apparaissent toujours ensemble dans un menu ou une barre d’outils. N’importe quel groupe de commandes permettre être réutilisé en l’assignant à menus parent différent dans la section CommandPlacements de la *.vsct* fichier.
@@ -81,7 +81,7 @@ Un groupe de commandes est une collection de commandes qui apparaissent toujours
     ```
 
     > [!NOTE]
-    >  La valeur du champ de priorité détermine la position de la commande dans le nouveau groupe de commandes. Priorités définies dans le CommandPlacement élément remplacent celles définies dans la définition d’élément. Les commandes qui ont des valeurs de priorité inférieure s’affichent avant les commandes qui ont des valeurs de priorité plus élevées. Les valeurs de priorité en double sont autorisés, mais la position relative des commandes qui ont la même valeur de priorité ne peut pas être garantie, car l’ordre dans lequel le **devenv /setup** commande crée l’interface finale à partir du Registre ne peut pas être cohérent.
+    > La valeur du champ de priorité détermine la position de la commande dans le nouveau groupe de commandes. Priorités définies dans le CommandPlacement élément remplacent celles définies dans la définition d’élément. Les commandes qui ont des valeurs de priorité inférieure s’affichent avant les commandes qui ont des valeurs de priorité plus élevées. Les valeurs de priorité en double sont autorisés, mais la position relative des commandes qui ont la même valeur de priorité ne peut pas être garantie, car l’ordre dans lequel le **devenv /setup** commande crée l’interface finale à partir du Registre ne peut pas être cohérent.
 
 ## <a name="to-put-a-reusable-group-of-buttons-on-a-menu"></a>Pour placer un groupe réutilisable de boutons sur un menu
 

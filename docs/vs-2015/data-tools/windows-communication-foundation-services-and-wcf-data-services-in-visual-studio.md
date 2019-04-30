@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2d14077ff7547a1b8009ce6621c111174c582a5c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 55ef0a3528afca626c0a1cbf5c10735c9e83fcb4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095033"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443864"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Services Windows Communication Foundation et services de données WCF dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -137,14 +137,14 @@ Visual Studio fournit des outils pour travailler avec Windows Communication Foun
     ```
 
     > [!NOTE]
-    >  Remplacez *ServiceReference* avec l’espace de noms pour la référence de service et remplacez *Service1Client* avec le nom du service.
+    > Remplacez *ServiceReference* avec l’espace de noms pour la référence de service et remplacez *Service1Client* avec le nom du service.
 
 3. Une liste IntelliSense s’affichera avec les surcharges du constructeur. Sélectionnez le `endpointConfigurationName As String` de surcharge.
 
 4. Suivant la surcharge, tapez `=` *ConfigurationName*, où *ConfigurationName* est le nom du point de terminaison que vous souhaitez utiliser.
 
     > [!NOTE]
-    >  Si vous ne connaissez pas les noms des points de terminaison disponibles, vous pouvez les trouver dans le fichier app.config.
+    > Si vous ne connaissez pas les noms des points de terminaison disponibles, vous pouvez les trouver dans le fichier app.config.
 
 #### <a name="to-find-the-available-endpoints-for-a-wcf-service"></a>Pour rechercher les points de terminaison disponibles pour un service WCF
 
@@ -164,7 +164,7 @@ Visual Studio fournit des outils pour travailler avec Windows Communication Foun
  Par défaut, lorsqu’une référence de service est ajoutée à un projet, il est configuré pour appeler des méthodes de manière synchrone. Vous pouvez modifier le comportement pour appeler des méthodes de façon asynchrone en modifiant un paramètre dans le **configurer la référence de Service** boîte de dialogue.
 
 > [!NOTE]
->  Cette option est définie sur une base par service. Si une méthode pour un service est appelée de façon asynchrone, toutes les méthodes doivent être appelées de façon asynchrone.
+> Cette option est définie sur une base par service. Si une méthode pour un service est appelée de façon asynchrone, toutes les méthodes doivent être appelées de façon asynchrone.
 
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 

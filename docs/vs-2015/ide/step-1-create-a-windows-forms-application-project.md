@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1dc742b62fd30c4d5d3e012b2237edcfabd8ed0a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b1e806b5600c0199c1f131ebc3008cc9f8ee1c68
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441992"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>Étape 1 : Créer un projet Application Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Nouveau projet, boîte de dialogue
 4. L'illustration suivante montre ce que vous devez maintenant voir dans l'interface de Visual Studio.  
   
     > [!NOTE]
-    >  Votre disposition de fenêtre peut ne pas se présenter exactement comme dans cette illustration. La disposition exacte de la fenêtre dépend de la version de Visual Studio, du langage de programmation que vous utilisez et d'autres facteurs. Toutefois, vous devez vérifier que les trois fenêtres apparaissent.  
+    > Votre disposition de fenêtre peut ne pas se présenter exactement comme dans cette illustration. La disposition exacte de la fenêtre dépend de la version de Visual Studio, du langage de programmation que vous utilisez et d'autres facteurs. Toutefois, vous devez vérifier que les trois fenêtres apparaissent.  
   
      ![Fenêtre IDE](../ide/media/express-ideoverview-visio.png "Express_IDEOverview_Visio")  
 Fenêtre IDE  
@@ -57,7 +57,7 @@ Fenêtre IDE
     - **Fenêtre Propriétés** Elle vous permet de modifier les propriétés des éléments que vous choisissez dans les autres fenêtres. Par exemple, si vous sélectionnez Form1, vous pouvez modifier son titre en définissant la propriété **Text**, et vous pouvez modifier la couleur d’arrière-plan en définissant la propriété **Backcolor**.  
   
     > [!NOTE]
-    >  La première ligne de l’**Explorateur de solutions** affiche **Solution « PictureViewer » (1 projet)**, ce qui signifie que Visual Studio a créé une solution pour vous. Une solution peut contenir plusieurs projets, mais, pour le moment, vous utiliserez des solutions contenant un seul projet.  
+    > La première ligne de l’**Explorateur de solutions** affiche **Solution « PictureViewer » (1 projet)**, ce qui signifie que Visual Studio a créé une solution pour vous. Une solution peut contenir plusieurs projets, mais, pour le moment, vous utiliserez des solutions contenant un seul projet.  
   
 6. Dans la barre de menus, sélectionnez **Fichier**, **Enregistrer tout**.  
   

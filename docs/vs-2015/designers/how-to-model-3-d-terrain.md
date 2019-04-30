@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c9d088be89e2cf963df65a0163713c297615121
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 90a24ef7b5bff321d460834a8fdde24e3e6cfd75
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097477"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434438"
 ---
 # <a name="how-to-model-3-d-terrain"></a>Procédure : Terrain 3D de modèle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Ce document montre comment utiliser l’éditeur de modèle pour créer un modè
 2. Ajoutez un plan à la scène. Dans la **Boîte à outils**, sous **Formes**, sélectionnez **Plan** et déplacez-le vers l’aire de conception.  
   
    > [!TIP]
-   >  Pour faciliter l’utilisation de l’objet plan, vous pouvez l’encadrer dans l’aire de conception. En mode **Sélection**, sélectionnez l’objet plan, puis dans la barre d’outils de l’éditeur de modèle, choisissez le bouton **Frame Object (Encadrer l’objet)**.  
+   > Pour faciliter l’utilisation de l’objet plan, vous pouvez l’encadrer dans l’aire de conception. En mode **Sélection**, sélectionnez l’objet plan, puis dans la barre d’outils de l’éditeur de modèle, choisissez le bouton **Frame Object (Encadrer l’objet)**.  
   
 3. Passez en mode de sélection de la face. Dans la barre d’outils de l’éditeur de modèle, choisissez **Sélectionner la face**.  
   
@@ -62,7 +62,7 @@ Ce document montre comment utiliser l’éditeur de modèle pour créer un modè
 7. Modifiez un point pour créer une caractéristique de terrain. En mode de sélection du point, sélectionnez l’un des points, puis, dans la barre d’outils de l’éditeur de modèle, choisissez l’outil **Translater**. Une zone représentant le point s’affiche sur l’aire de conception. Utilisez la flèche verte pour déplacer la zone et ainsi modifier la hauteur du point. Répétez cette étape pour différents points afin de créer des caractéristiques intéressantes de terrain.  
   
    > [!TIP]
-   >  Vous pouvez sélectionner plusieurs points à la fois pour les modifier de manière uniforme.  
+   > Vous pouvez sélectionner plusieurs points à la fois pour les modifier de manière uniforme.  
   
    Le modèle de terrain est terminé. Voici à nouveau le modèle final, avec l’ombrage Phong appliqué :  
   

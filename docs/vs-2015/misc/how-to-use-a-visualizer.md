@@ -23,12 +23,12 @@ ms.assetid: d2611385-0134-4387-8c5a-979fe625a462
 caps.latest.revision: 37
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c0344b9961e7ade31864d70c7d7422f328983abd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0f981b76d471658fe82e874901ad784a17841891
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100974"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446433"
 ---
 # <a name="how-to-use-a-visualizer"></a>Procédure : Utiliser un visualiseur
 Vous pouvez utiliser un visualiseur afin d'afficher le contenu d'une variable ou d'un objet de façon explicite pour le type de données. Vous pouvez utiliser des visualiseurs depuis **DataTips**, un **espion** fenêtre, le **automatique** fenêtre, ou le **variables locales** fenêtre.  
@@ -36,7 +36,7 @@ Vous pouvez utiliser un visualiseur afin d'afficher le contenu d'une variable ou
  Les visualiseurs ne sont pas pris en charge sur le Compact Framework.  
   
 > [!NOTE]
->  Dans **Store** applications, seul le texte standard, les visualiseurs HTML, XML et JSON sont pris en charge. Les visualiseurs personnalisés (créés par l'utilisateur) ne sont pas pris en charge.  
+> Dans **Store** applications, seul le texte standard, les visualiseurs HTML, XML et JSON sont pris en charge. Les visualiseurs personnalisés (créés par l'utilisateur) ne sont pas pris en charge.  
   
 ### <a name="to-open-a-visualizer"></a>Pour ouvrir un visualiseur  
   

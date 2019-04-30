@@ -19,12 +19,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ee820bc246e11b722d663ecc6a6037f182bc2c33
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 12cbeca740fd81292109183468a304fc2d3da30c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053115"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439487"
 ---
 # <a name="bind-objects-in-visual-studio"></a>Lier des objets dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60053115"
 Visual Studio fournit des outils de conception pour travailler avec des objets personnalisés comme source de données dans votre application. Lorsque vous souhaitez stocker des données à partir d’une base de données dans un objet que vous lier aux contrôles d’interface utilisateur, l’approche recommandée consiste à utiliser Entity Framework pour générer l’ou les classes. Entité Frameworkautogenerates tous le suivi des modifications code réutilisable, ce qui signifie que les modifications apportées aux objets locaux sont automatiquement rendues persistantes dans la base de données lorsque vous appelez AcceptChanges sur l’objet DbSet.    Pour plus d’informations, consultez [Documentation d’Entity Framework](https://ef.readthedocs.org/en/latest/).
 
 > [!TIP]
->  Les approches de liaison de l’objet dans cet article uniquement convient si votre application est déjà basée sur des jeux de données. Ces approches peuvent également être utilisées si vous êtes déjà familiarisé avec les jeux de données et les données que vous allez traiter sont tabulaire et pas trop complexe ou trop important. Pour obtenir un exemple encore plus simple, impliquant le chargement des données directement dans des objets à l’aide d’un DataReader et de mise à jour manuelle de l’interface utilisateur sans liaison de données, consultez [créer une application de données simple à l’aide d’ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md).
+> Les approches de liaison de l’objet dans cet article uniquement convient si votre application est déjà basée sur des jeux de données. Ces approches peuvent également être utilisées si vous êtes déjà familiarisé avec les jeux de données et les données que vous allez traiter sont tabulaire et pas trop complexe ou trop important. Pour obtenir un exemple encore plus simple, impliquant le chargement des données directement dans des objets à l’aide d’un DataReader et de mise à jour manuelle de l’interface utilisateur sans liaison de données, consultez [créer une application de données simple à l’aide d’ADO.NET](../data-tools/create-a-simple-data-application-by-using-adonet.md).
 
 ## <a name="object-requirements"></a>Exigences de l’objet
  La seule exigence pour les objets personnalisés travailler avec les données des outils de conception dans Visual Studio est que l’objet doit au moins une propriété publique.
@@ -55,7 +55,7 @@ Visual Studio fournit des outils de conception pour travailler avec des objets p
 - Enregistrer les données à partir d’objets dans la base de données.
 
 > [!NOTE]
->  Afin de mieux comprendre et fournir le contexte pour les exemples de cette page, nous vous suggérons d’effectuer ce qui suit : [Procédure pas à pas : Connexion aux données dans des objets (Windows Forms)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05). Cette procédure pas à pas crée les objets présentés ici.
+> Afin de mieux comprendre et fournir le contexte pour les exemples de cette page, nous vous suggérons d’effectuer ce qui suit : [Procédure pas à pas : Connexion aux données dans des objets (Windows Forms)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05). Cette procédure pas à pas crée les objets présentés ici.
 
 ### <a name="loaddata-into-objects"></a>LoadData dans des objets
  Pour cet exemple, vous chargez des données dans vos objets à l’aide de TableAdapters. Par défaut, les TableAdapters sont créés avec deux types de méthodes qui extraire des données à partir d’une base de données et remplissent les tables de données.
@@ -67,7 +67,7 @@ Visual Studio fournit des outils de conception pour travailler avec des objets p
   Le moyen le plus simple pour charger vos objets personnalisés avec des données consiste à appeler le `TableAdapter.GetData` (méthode), boucler dans la collection de lignes dans la table de données retournée et remplir chaque objet avec les valeurs dans chaque ligne. Vous pouvez créer un `GetData` méthode qui retourne une table de données remplie pour toute requête ajoutée à un TableAdapter.
 
 > [!NOTE]
->  Visual Studio nomme les requêtes TableAdapter `Fill` et `GetData` par défaut, mais ces noms peuvent être modifiés à n’importe quel nom de méthode valide.
+> Visual Studio nomme les requêtes TableAdapter `Fill` et `GetData` par défaut, mais ces noms peuvent être modifiés à n’importe quel nom de méthode valide.
 
  L’exemple suivant montre comment parcourir les lignes dans une table de données et remplir un objet avec les données :
 
@@ -82,7 +82,7 @@ Visual Studio fournit des outils de conception pour travailler avec des objets p
  La collection générée automatiquement dans le <xref:System.Windows.Forms.BindingSource> utilise un <xref:System.ComponentModel.BindingList%601> pour sa collection typée. Si votre application ne nécessite pas de fonctionnalités supplémentaires, vous pouvez conserver votre collection dans le <xref:System.Windows.Forms.BindingSource>. Pour plus d’informations, consultez le <xref:System.Windows.Forms.BindingSource.List%2A> propriété de la <xref:System.Windows.Forms.BindingSource> classe.
 
 > [!NOTE]
->  Si votre collection requiert des fonctionnalités non fournies par l’implémentation de base de la <xref:System.ComponentModel.BindingList%601>, vous devez créer une collection personnalisée, vous pouvez ajouter à la classe en fonction des besoins.
+> Si votre collection requiert des fonctionnalités non fournies par l’implémentation de base de la <xref:System.ComponentModel.BindingList%601>, vous devez créer une collection personnalisée, vous pouvez ajouter à la classe en fonction des besoins.
 
  Le code suivant montre comment créer la classe pour une collection fortement typée de `Order` objets :
 
@@ -97,7 +97,7 @@ Visual Studio fournit des outils de conception pour travailler avec des objets p
  Pour obtenir un exemple d’ajout d’objets à une collection personnalisée, consultez le `LoadOrders` méthode dans [procédure pas à pas : Connexion aux données dans des objets (Windows Forms)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05).
 
 > [!NOTE]
->  Le `Add` méthode est fournie automatiquement pour votre collection personnalisée lorsque vous héritez de <xref:System.ComponentModel.BindingList%601>.
+> Le `Add` méthode est fournie automatiquement pour votre collection personnalisée lorsque vous héritez de <xref:System.ComponentModel.BindingList%601>.
 
  Le code suivant montre comment ajouter des objets à la collection typée dans un <xref:System.Windows.Forms.BindingSource>:
 
@@ -107,7 +107,7 @@ Visual Studio fournit des outils de conception pour travailler avec des objets p
  Le code suivant montre comment ajouter des objets à une collection typée qui hérite de <xref:System.ComponentModel.BindingList%601>:
 
 > [!NOTE]
->  Dans cet exemple le `Orders` collection est une propriété de la `Customer` objet.
+> Dans cet exemple le `Orders` collection est une propriété de la `Customer` objet.
 
  [!code-csharp[VbRaddataConnecting#6](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataConnecting/CS/Class1.cs#6)]
  [!code-vb[VbRaddataConnecting#6](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConnecting/VB/Class1.vb#6)]
@@ -116,7 +116,7 @@ Visual Studio fournit des outils de conception pour travailler avec des objets p
  Supprimer des objets d’une collection en appelant le `Remove` ou `RemoveAt` méthode de votre classe de collection personnalisée ou de <xref:System.Windows.Forms.BindingSource>.
 
 > [!NOTE]
->  Le `Remove` et `RemoveAt` méthodes sont fournies automatiquement pour votre collection personnalisée lorsque vous héritez de <xref:System.ComponentModel.BindingList%601>.
+> Le `Remove` et `RemoveAt` méthodes sont fournies automatiquement pour votre collection personnalisée lorsque vous héritez de <xref:System.ComponentModel.BindingList%601>.
 
  Le code suivant montre comment localiser et supprimer des objets de la collection typée dans un <xref:System.Windows.Forms.BindingSource> avec la <xref:System.Windows.Forms.BindingSource.RemoveAt%2A> méthode :
 

@@ -10,12 +10,12 @@ ms.assetid: 544742b5-4ec1-4d51-b941-72b2f6ff17bc
 caps.latest.revision: 108
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3337aed321d642fac5ef065d78cfd8cb1191c3a8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 880f0096f33bf08d3415b79edfb8445143e18587
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109045"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446012"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Plateformes et configurations prises en charge pour les tests codés de l'interface utilisateur et les enregistrements des actions
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "60109045"
 Les plateformes et configurations prises en charge pour les tests codés de l’interface utilisateur pour Visual Studio Enterprise sont indiquées dans le tableau suivant. Ces configurations s’appliquent aussi aux enregistrements d’actions créés à l’aide de [!INCLUDE[MTRlong](../includes/mtrlong-md.md)].  
   
 > [!NOTE]
->  Le processus de test codé de l’interface utilisateur doit avoir les mêmes privilèges que l’application testée.  
+> Le processus de test codé de l’interface utilisateur doit avoir les mêmes privilèges que l’application testée.  
   
  **Spécifications**  
   
@@ -39,7 +39,7 @@ Les plateformes et configurations prises en charge pour les tests codés de l’
 |.NET|.NET 2.0, 3.0, 3.5, 4 et 4.5. **Remarque :** [!INCLUDE[TCMext](../includes/tcmext-md.md)] et Visual Studio nécessitent tous les deux .NET 4 pour fonctionner. Cependant, les applications développées à l’aide des versions .NET répertoriées sont prises en charge.|  
   
 > [!NOTE]
->  La*synchronisation d’interface utilisateur* est une fonctionnalité permettant de vérifier la lecture dans la file d’attente de messages de chaque contrôle. Si un contrôle ne répond pas à l’événement qui lui a été envoyé, l’événement est envoyé une nouvelle fois.  
+> La*synchronisation d’interface utilisateur* est une fonctionnalité permettant de vérifier la lecture dans la file d’attente de messages de chaque contrôle. Si un contrôle ne répond pas à l’événement qui lui a été envoyé, l’événement est envoyé une nouvelle fois.  
   
 ## <a name="platform-support"></a>Prise en charge de plateforme  
   

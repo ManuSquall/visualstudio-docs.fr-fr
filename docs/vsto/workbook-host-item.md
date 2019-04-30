@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b8ffe18ea3407480faa69a6b9b3ba4309b28b279
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e30ab9ce498134426caa35e0c3c9f9652f683535
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625257"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445532"
 ---
 # <a name="workbook-host-item"></a>Élément hôte de classeur
   L’élément hôte <xref:Microsoft.Office.Tools.Excel.Workbook> est un type qui étend le type <xref:Microsoft.Office.Interop.Excel.Workbook> à partir de l’assembly PIA (Primary Interop Assembly) pour Excel. L’élément hôte <xref:Microsoft.Office.Tools.Excel.Workbook> fournit les mêmes propriétés, méthodes et événements qu’un objet <xref:Microsoft.Office.Interop.Excel.Workbook> , mais il offre également d’autres fonctionnalités.
@@ -49,7 +49,7 @@ ms.locfileid: "56625257"
  L’élément hôte <xref:Microsoft.Office.Tools.Excel.Workbook> n’agit pas comme un conteneur pour les contrôles hôtes. Ainsi, vous ne pouvez pas ajouter de contrôles visibles au classeur, mais vous pouvez ajouter des composants, comme <xref:System.Data.DataSet>, pour pouvoir les partager dans toutes les feuilles de calcul. Dans un projet au niveau du document, les composants disponibles pour le classeur se trouvent sous les onglets **Composant** , **Données** et **Tous les Windows Forms** de la **Boîte à outils**.
 
 > [!NOTE]
->  Les outils de développement Office dans Visual Studio ne prennent pas en charge les classeurs partagés.
+> Les outils de développement Office dans Visual Studio ne prennent pas en charge les classeurs partagés.
 
 ## <a name="understand-workbook-host-items-in-vsto-add-in-projects"></a>Comprendre les éléments hôtes de classeur dans les projets de complément VSTO
  Dans les projets de complément VSTO, vous pouvez générer un <xref:Microsoft.Office.Tools.Excel.Workbook> élément hôte lors de l’exécution pour tout classeur ouvert dans Excel. Pour générer un élément hôte <xref:Microsoft.Office.Tools.Excel.Workbook>, utilisez la méthode `GetVstoObject`. Pour plus d’informations, consultez [documents Word d’étendre et classeurs Excel dans des Compléments VSTO lors de l’exécution](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
