@@ -10,12 +10,12 @@ ms.assetid: d2928498-f27c-46b4-a9cd-cba41fd85a10
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c94963b0ebfc6df454870222059a460b2868427d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 58b4350812900bc11e8aaa3222b3b0898db19e13
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953672"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440791"
 ---
 # <a name="vspackage-setup-scenarios"></a>Scénarios d’installation de VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,13 +45,13 @@ Programme d’installation de VSPackage partagé
  Comme indiqué dans l’illustration, les composants partagés sont apportées à la partie de la fonctionnalité Feat_Common, qui est toujours installée. En rendant les fonctionnalités Feat_VS2002 et Feat_VS2003 visible, les utilisateurs peuvent choisir au moment de l’installation dans les versions de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] qu’ils souhaitent le VSPackage à intégrer. Utilisateurs peuvent également utiliser le mode de maintenance de Windows Installer pour ajouter ou supprimer des fonctionnalités, qui dans ce cas d’ajoute ou supprime les informations d’inscription de VSPackage de différentes versions de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
 > [!NOTE]
->  Définition de colonne d’affichage d’une fonctionnalité à 0 le masque. Une valeur de colonne de niveau faible, par exemple, 1, permet de s’assurer qu’il sera toujours installé. Pour plus d’informations, consultez [INSTALLLEVEL propriété](http://msdn.microsoft.com/library/aa369536\(VS.85\).aspx) et [fonctionnalité Table](http://msdn.microsoft.com/library/aa368585.aspx).  
+> Définition de colonne d’affichage d’une fonctionnalité à 0 le masque. Une valeur de colonne de niveau faible, par exemple, 1, permet de s’assurer qu’il sera toujours installé. Pour plus d’informations, consultez [INSTALLLEVEL propriété](http://msdn.microsoft.com/library/aa369536\(VS.85\).aspx) et [fonctionnalité Table](http://msdn.microsoft.com/library/aa368585.aspx).  
   
 ## <a name="scenario-2-shared-vspackage-update"></a>Scénario 2 : Mise à jour de VSPackage partagé  
  Dans ce scénario, une version mise à jour de l’installeur de package Visual Studio dans le scénario 1 est expédiée. Dans la discussion, la mise à jour ajoute la prise en charge de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], mais cela peut également être un simple sécurité correctif ou correctif de bogue service pack. Les règles du programme d’installation Windows pour l’installation des composants les plus récents nécessitent que les composants inchangés déjà sur le système ne sont pas recopiés. Dans ce cas, un système avec la version 1.0 déjà présent remplace le composant mis à jour Comp_MyVSPackage.dll et permettre aux utilisateurs de choisir d’ajouter la nouvelle fonctionnalité Feat_VS2005 avec son composant Comp_VS2005_Reg.  
   
 > [!CAUTION]
->  Chaque fois qu’un VSPackage est partagé entre plusieurs versions de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], il est essentiel que les versions ultérieures du VSPackage assurer la compatibilité descendante avec les versions antérieures de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Où vous ne pouvez pas assurer la compatibilité descendante, vous devez utiliser les VSPackages côte à côte, privées. Pour plus d’informations, consultez [prenant en charge plusieurs Versions de Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md).  
+> Chaque fois qu’un VSPackage est partagé entre plusieurs versions de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], il est essentiel que les versions ultérieures du VSPackage assurer la compatibilité descendante avec les versions antérieures de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Où vous ne pouvez pas assurer la compatibilité descendante, vous devez utiliser les VSPackages côte à côte, privées. Pour plus d’informations, consultez [prenant en charge plusieurs Versions de Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md).  
   
  ![Image de mise à jour de Package VS partagé](../../extensibility/internals/media/vs-sharedpackageupdate.gif "VS_SharedPackageUpdate")  
 Partagé le programme d’installation de mise à jour de package Visual Studio  

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c22ab65ac849fdf8bc004c10b246584f0e511cf8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: d3ea1316efb17bb64472079677c93cfd2b85dcd1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664227"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428925"
 ---
 # <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>Spécification de l’emplacement du fichier VSPackage au shell Visual Studio
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] doit être en mesure de localiser l’assembly DLL à charger le VSPackage. Vous pouvez le localiser de différentes manières, comme décrit dans le tableau suivant.
@@ -29,4 +29,4 @@ ms.locfileid: "59664227"
 | Placer la DLL dans le **PublicAssemblies** directory. | Enfin, l’assembly peut également être placé dans le **PublicAssemblies** sous-répertoire. Assemblys situés dans **PublicAssemblies** sont détectées automatiquement et apparaît également dans le **ajouter des références** boîte de dialogue dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].<br /><br /> Assemblys de VSPackage doivent uniquement être placés dans le **PublicAssemblies** directory s’ils contiennent les composants qui sont destinées à être réutilisé par d’autres développeurs VSPackage gérés. La majorité des assemblys ne répondent pas à ce critère. |
 
 > [!NOTE]
->  Utiliser des assemblys avec nom fort, signés pour tous vos assemblys dépendants. Ces assemblys doivent également être installés dans votre propre répertoire ou le global assembly cache (GAC). Cela protège contre les conflits avec les assemblys qui portent le même nom de fichier de base, appelé liaison de nom de faible.
+> Utiliser des assemblys avec nom fort, signés pour tous vos assemblys dépendants. Ces assemblys doivent également être installés dans votre propre répertoire ou le global assembly cache (GAC). Cela protège contre les conflits avec les assemblys qui portent le même nom de fichier de base, appelé liaison de nom de faible.

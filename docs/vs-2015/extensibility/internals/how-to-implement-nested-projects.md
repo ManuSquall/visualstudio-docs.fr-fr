@@ -11,12 +11,12 @@ ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5100fb42cba7c993861ef5b9fa0682400b0cfa4a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 427ef425c64323246ffe1141d081fd7d921506a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435235"
 ---
 # <a name="how-to-implement-nested-projects"></a>Procédure : Implémenter des projets imbriqués
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Lorsque vous créez un type de projet imbriqué il sont un plusieurs étapes sup
 1. L’environnement de développement intégré (IDE) charge les informations de démarrage et le fichier de projet du projet parent en appelant le <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> interface. Le projet parent est créé et ajouté à la solution.  
   
    > [!NOTE]
-   >  À ce stade, il est trop tôt dans le processus pour le projet parent créer le projet imbriqué, car le projet parent doit être créé avant de pouvoir créer les projets enfants. Après cette séquence, le projet parent peut appliquer les paramètres pour les projets enfants et les projets enfants peuvent acquérir des informations à partir des projets parent si nécessaire. Cette séquence est si elle est nécessaire par les clients tels que le contrôle de code source (SCC) et l’Explorateur de solutions.  
+   > À ce stade, il est trop tôt dans le processus pour le projet parent créer le projet imbriqué, car le projet parent doit être créé avant de pouvoir créer les projets enfants. Après cette séquence, le projet parent peut appliquer les paramètres pour les projets enfants et les projets enfants peuvent acquérir des informations à partir des projets parent si nécessaire. Cette séquence est si elle est nécessaire par les clients tels que le contrôle de code source (SCC) et l’Explorateur de solutions.  
   
     Le projet parent doit attendre le <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> méthode doit être appelée par l’IDE avant de pouvoir créer son imbriqués (enfants) ou les projets.  
   
@@ -57,7 +57,7 @@ Lorsque vous créez un type de projet imbriqué il sont un plusieurs étapes sup
     Si elle n’existe pas déjà, le projet parent crée un GUID pour chaque projet imbriqué en appelant `CoCreateGuid`.  
   
    > [!NOTE]
-   >  `CoCreateGuid` est une API COM appelée quand un GUID doit être créé. Pour plus d’informations, consultez `CoCreateGuid` et les GUID dans MSDN Library.  
+   > `CoCreateGuid` est une API COM appelée quand un GUID doit être créé. Pour plus d’informations, consultez `CoCreateGuid` et les GUID dans MSDN Library.  
   
     Le projet parent stocke ce GUID dans son fichier de projet à récupérer la prochaine fois qu’il est ouvert dans l’IDE. Consultez l’étape 4 pour plus d’informations relatives à l’appel de `AddVirtualProjectEX` pour récupérer le `guidProjectID` pour le projet enfant.  
   
@@ -66,7 +66,7 @@ Lorsque vous créez un type de projet imbriqué il sont un plusieurs étapes sup
      Étant donné que les projets parents et enfants sont instanciés par programmation, vous pouvez définir des propriétés pour les projets imbriqués à ce stade.  
   
     > [!NOTE]
-    >  Non seulement vous recevez les informations de contexte à partir du projet imbriqué, mais vous pouvez également demander si le projet parent a n’importe quel contexte de cet élément en vérifiant <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. De cette façon, vous pouvez ajouter des attributs supplémentaires aide dynamique et options de menu spécifiques à des projets imbriqués individuels.  
+    > Non seulement vous recevez les informations de contexte à partir du projet imbriqué, mais vous pouvez également demander si le projet parent a n’importe quel contexte de cet élément en vérifiant <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. De cette façon, vous pouvez ajouter des attributs supplémentaires aide dynamique et options de menu spécifiques à des projets imbriqués individuels.  
   
 10. La hiérarchie est générée pour l’affichage dans l’Explorateur de solutions avec un appel à la <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A> (méthode).  
   
@@ -91,6 +91,6 @@ Lorsque vous créez un type de projet imbriqué il sont un plusieurs étapes sup
 ## <a name="see-also"></a>Voir aussi  
  [Ajout d’éléments à l’ajouter un nouvel élément boîtes de dialogue](../../extensibility/internals/adding-items-to-the-add-new-item-dialog-boxes.md)   
  [L’inscription de projet et modèles d’élément](../../extensibility/internals/registering-project-and-item-templates.md)   
- [Liste de vérification : Créer de nouveaux Types de projet](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [Liste de contrôle : Créer de nouveaux Types de projet](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Paramètres de contexte](../../extensibility/internals/context-parameters.md)   
  [Fichier Assistant (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)

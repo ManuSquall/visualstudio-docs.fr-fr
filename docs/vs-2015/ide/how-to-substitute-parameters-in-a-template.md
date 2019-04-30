@@ -12,12 +12,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be004820967f85de41b11c38031722b87a5af375
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3c0a710bc3ad504c6654528db33b9a6698f4f7ae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039412"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435159"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>Procédure : Substituer des paramètres dans un modèle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Vous pouvez remplacer les paramètres d'un modèle, tels que les noms de classes
     ```  
   
     > [!NOTE]
-    >  Les paramètres d’un modèle s’écrivent au format $*parameter*$.  
+    > Les paramètres d’un modèle s’écrivent au format $*parameter*$.  
   
 2. Dans le fichier .vstemplate du modèle, localisez l'élément `ProjectItem` qui inclut ce fichier.  
   

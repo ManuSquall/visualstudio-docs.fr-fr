@@ -21,12 +21,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ee82187adac74f90b6f5cb8485c68452d8329b0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 421360421a732935d452053630c17cda319f4b0d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434496"
 ---
 # <a name="handle-a-concurrency-exception"></a>Gérer une exception d’accès concurrentiel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Exceptions d’accès concurrentiel (<xref:System.Data.DBConcurrencyException>) 
 - Accès à la base de données Northwind avec l’autorisation d’effectuer des mises à jour.
   
 > [!NOTE]
->  Les boîtes de dialogue et commandes de menu affichées peuvent différer de celles décrites dans l’aide selon vos paramètres actifs ou de l’édition que vous utilisez. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Les boîtes de dialogue et commandes de menu affichées peuvent différer de celles décrites dans l’aide selon vos paramètres actifs ou de l’édition que vous utilisez. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-new-project"></a>Créer un nouveau projet  
  Pour commencer votre procédure pas à pas en créant une nouvelle application Windows.  
@@ -86,7 +86,7 @@ Exceptions d’accès concurrentiel (<xref:System.Data.DBConcurrencyException>) 
 3. Sélectionnez une connexion à la base de données Northwind dans la liste des connexions disponibles. Si la connexion n’est pas disponible dans la liste des connexions, sélectionnez**nouvelle connexion**  
   
     > [!NOTE]
-    >  Si vous vous connectez à un fichier de base de données locale, sélectionnez **non** lorsque vous le feriez pour vous confirmer ajouter le fichier à votre projet.  
+    > Si vous vous connectez à un fichier de base de données locale, sélectionnez **non** lorsque vous le feriez pour vous confirmer ajouter le fichier à votre projet.  
   
 4. Sur le **enregistrer la chaîne de connexion au fichier de configuration de l’application**s’affiche, sélectionnez **suivant**.  
   
@@ -149,7 +149,7 @@ Exceptions d’accès concurrentiel (<xref:System.Data.DBConcurrencyException>) 
  Dans cette section, vous ajoutez le code qui tente de mettre à jour de la base de données. Vous permet également de gérer les <xref:System.Data.DBConcurrencyException> susceptible d’être levée, ainsi que toute autre exception.  
   
 > [!NOTE]
->  Le `CreateMessage` et `ProcessDialogResults` méthodes seront ajoutés plus loin dans cette procédure pas à pas.  
+> Le `CreateMessage` et `ProcessDialogResults` méthodes seront ajoutés plus loin dans cette procédure pas à pas.  
   
 ##### <a name="to-add-error-handling-for-the-concurrency-error"></a>Pour ajouter la gestion des erreurs pour l’erreur d’accès concurrentiel  
   
@@ -201,7 +201,7 @@ Exceptions d’accès concurrentiel (<xref:System.Data.DBConcurrencyException>) 
 6. Dans le premier enregistrement (`ALFKI`) modifier `ContactName` à `Maria Anders2`.  
   
     > [!NOTE]
-    >  Accédez à une autre ligne pour valider la modification.  
+    > Accédez à une autre ligne pour valider la modification.  
   
 7. Basculez vers le `ConcurrencyWalkthrough`de l’exécution de formulaire.  
   

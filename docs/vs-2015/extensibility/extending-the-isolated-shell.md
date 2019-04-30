@@ -10,12 +10,12 @@ ms.assetid: 9a641d8f-211e-4486-a1b1-4a89fafe7ee8
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 65efd5a864863fb18f26d8fdfc3736423aad7aeb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ea55039de769598b26868727a93cfa11726e4838
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054090"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443920"
 ---
 # <a name="extending-the-isolated-shell"></a>Extension du Shell isolé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "60054090"
 Vous pouvez étendre le shell isolé Visual Studio en ajoutant un VSPackage, une partie du composant Managed Extensibility Framework (MEF) ou un projet VSIX générique à votre application de shell isolé.  
   
 > [!NOTE]
->  Les étapes suivantes présuppose que vous avez créé une application shell isolée de base en utilisant le modèle de projet Visual Studio Shell isolé. Pour plus d’informations sur ce modèle de projet, consultez [procédure pas à pas : Création d’un base d’Application Shell isolée](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+> Les étapes suivantes présuppose que vous avez créé une application shell isolée de base en utilisant le modèle de projet Visual Studio Shell isolé. Pour plus d’informations sur ce modèle de projet, consultez [procédure pas à pas : Création d’un base d’Application Shell isolée](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Emplacements du modèle de projet de package Visual Studio  
  Le modèle de projet de package Visual Studio se trouve à trois emplacements différents dans la boîte de dialogue **Nouveau projet** :  
@@ -121,4 +121,4 @@ Vous pouvez étendre le shell isolé Visual Studio en ajoutant un VSPackage, une
 8. Générez et exécutez la solution.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : Création d’une Application Shell isolée de base](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
+ [Procédure pas à pas : Création d’une application Shell isolée de base](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

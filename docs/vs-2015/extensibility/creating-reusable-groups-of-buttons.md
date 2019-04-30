@@ -12,12 +12,12 @@ ms.assetid: 0c561617-fb86-476d-8bd1-c6e5e7464c65
 caps.latest.revision: 45
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4978a2a8d176ecf3c270bad32a1ae9f82397a642
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6ac1fd0dc242ae8b8979a3f420f5e1c4d837f62b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405716"
 ---
 # <a name="creating-reusable-groups-of-buttons"></a>Création de groupes de boutons réutilisables
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -83,7 +83,7 @@ Un groupe de commandes est une collection de commandes qui apparaissent toujours
     ```  
   
     > [!NOTE]
-    >  La valeur du champ de priorité détermine la position de la commande dans le nouveau groupe de commandes. Priorités définies dans le CommandPlacement élément remplacent celles définies dans la définition d’élément. Les commandes qui ont des valeurs de priorité inférieure s’affichent avant les commandes qui ont des valeurs de priorité plus élevées. Les valeurs de priorité en double sont autorisés, mais la position relative des commandes qui ont la même valeur de priorité ne peut pas être garantie, car l’ordre dans lequel le **devenv /setup** commande crée l’interface finale à partir du Registre ne peut pas être cohérent.  
+    > La valeur du champ de priorité détermine la position de la commande dans le nouveau groupe de commandes. Priorités définies dans le CommandPlacement élément remplacent celles définies dans la définition d’élément. Les commandes qui ont des valeurs de priorité inférieure s’affichent avant les commandes qui ont des valeurs de priorité plus élevées. Les valeurs de priorité en double sont autorisés, mais la position relative des commandes qui ont la même valeur de priorité ne peut pas être garantie, car l’ordre dans lequel le **devenv /setup** commande crée l’interface finale à partir du Registre ne peut pas être cohérent.  
   
 ### <a name="to-put-a-reusable-group-of-buttons-on-a-menu"></a>Pour placer un groupe réutilisable de boutons sur un menu  
   

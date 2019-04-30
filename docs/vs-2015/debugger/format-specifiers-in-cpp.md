@@ -28,12 +28,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ba950d55dcb4a4a0e1a06b40b1ed00ee3f58e54e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9f620cbf5d522b99965268f35c00ff8e874f1542
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116210"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440076"
 ---
 # <a name="format-specifiers-in-c"></a>Spécificateurs de format en C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Vous pouvez modifier le format dans lequel une valeur est affichée dans la fen�
  Vous pouvez également utiliser des spécificateurs de format dans la fenêtre **Exécution** , la fenêtre **Commande** et même les fenêtres sources. Si vous effectuez une suspension sur une expression dans ces fenêtres, le résultat apparaît dans un DataTip. L’affichage du DataTip reflète le spécificateur de format.  
   
 > [!NOTE]
->  Le débogueur natif Visual Studio utilise un nouveau moteur de débogage. Dans le cadre de cette modification, de nouveaux spécificateurs de format ont été ajoutés et d’anciens spécificateurs ont été supprimés. Le débogueur plus ancien est toujours utilisé quand vous effectuez un débogage d’interopérabilité (native et managée à la fois) avec C++/CLI. Les sections suivantes présentent les spécificateurs de format pour chaque moteur de débogage.  
+> Le débogueur natif Visual Studio utilise un nouveau moteur de débogage. Dans le cadre de cette modification, de nouveaux spécificateurs de format ont été ajoutés et d’anciens spécificateurs ont été supprimés. Le débogueur plus ancien est toujours utilisé quand vous effectuez un débogage d’interopérabilité (native et managée à la fois) avec C++/CLI. Les sections suivantes présentent les spécificateurs de format pour chaque moteur de débogage.  
 > 
 > - [Spécificateurs de format](#BKMK_Visual_Studio_2012_format_specifiers) décrit les spécificateurs de format dans le nouveau moteur de débogage.  
 >   - [Spécificateurs de format pour le débogage d’interopérabilité avec C++/CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) décrit les spécificateurs de format dans l’ancien moteur de débogage.  
@@ -92,7 +92,7 @@ int main() {
 |!|format brut, ignorant toutes les personnalisations d’affichage de type de données|\<représentation personnalisée>|4|  
   
 > [!NOTE]
->  Quand le spécificateur de format **hv** est présent, le débogueur tente de déterminer la taille de la mémoire tampon et d’afficher le nombre d’éléments approprié. Comme il n’est pas toujours possible pour le débogueur de rechercher la taille exacte de la mémoire tampon d’un tableau, vous devez utiliser un spécificateur de taille `(pBuffer,[bufferSize])` chaque fois que cela est possible. Le spécificateur de format **hv** est destiné aux scénarios dans lesquels la taille de la mémoire tampon n’est pas immédiatement disponible  
+> Quand le spécificateur de format **hv** est présent, le débogueur tente de déterminer la taille de la mémoire tampon et d’afficher le nombre d’éléments approprié. Comme il n’est pas toujours possible pour le débogueur de rechercher la taille exacte de la mémoire tampon d’un tableau, vous devez utiliser un spécificateur de taille `(pBuffer,[bufferSize])` chaque fois que cela est possible. Le spécificateur de format **hv** est destiné aux scénarios dans lesquels la taille de la mémoire tampon n’est pas immédiatement disponible  
   
 ### <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> Spécificateurs de taille pour les pointeurs en tant que tableaux  
  Si vous avez un pointeur vers un objet que vous souhaitez afficher sous forme de tableau, vous pouvez utiliser un entier ou une expression pour spécifier le nombre d’éléments du tableau :  

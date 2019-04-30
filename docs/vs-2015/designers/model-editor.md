@@ -12,12 +12,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 370f6992fb044f5bd7f3593e63afeab46c82830b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 81f2766e5c382f8beaa4cb20472da6e0e6fc94e2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072290"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432624"
 ---
 # <a name="model-editor"></a>Éditeur de modèle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -157,7 +157,7 @@ Ce document explique comment utiliser l'éditeur de modèle [!INCLUDE[vsprvs](..
 2. Dans la fenêtre **Propriétés**, spécifiez les valeurs des propriétés **Rotation**, **Échelle** et **Translation**.  
   
    > [!IMPORTANT]
-   >  Pour la propriété **Rotation**, spécifiez le degré de rotation autour de chacun des trois axes. Les rotations sont appliquées dans l'ordre. Par conséquent, veillez à planifier une rotation, en considérant d'abord la rotation autour de l'axe X, autour de l'axe Y, puis de l'axe Z.  
+   > Pour la propriété **Rotation**, spécifiez le degré de rotation autour de chacun des trois axes. Les rotations sont appliquées dans l'ordre. Par conséquent, veillez à planifier une rotation, en considérant d'abord la rotation autour de l'axe X, autour de l'axe Y, puis de l'axe Z.  
   
    Les outils de modélisation vous permettent de créer rapidement des transformations, mais avec peu de précision. La définition des propriétés de l'objet vous permet de spécifier des transformations avec précision, mais plus lentement. Nous vous recommandons d'utiliser les outils de modélisation pour vous « rapprocher » des transformations que vous souhaitez effectuer, puis d'affiner le réglage des valeurs des propriétés.  
   

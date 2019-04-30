@@ -12,12 +12,12 @@ ms.assetid: 3cfed312-f532-4bce-84a5-1677c14567d7
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 91c7525c293f4fe60dd446866d6e704c721a0795
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: ac7e825bd33c184d580ada96843366f6d1627f22
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947728"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438966"
 ---
 # <a name="idebugreference2"></a>IDebugReference2
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "58947728"
 Cette interface représente une référence à une propriété de frame de pile ou d’une autre propriété.  
   
 > [!NOTE]
->  `IDebugReference2` est réservé pour une utilisation ultérieure et toutes ses méthodes doivent retourner `E_NOTIMPL`.  
+> `IDebugReference2` est réservé pour une utilisation ultérieure et toutes ses méthodes doivent retourner `E_NOTIMPL`.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -59,7 +59,7 @@ IDebugReference2 : IUnknown
 ## <a name="remarks"></a>Notes  
   
 > [!NOTE]
->  Cette utilisation de « property » ne doit pas être confondue avec cette variable de membre d’une classe, ce qui signifie que même si un `IDebugReference2` peut représenter une telle entité.  
+> Cette utilisation de « property » ne doit pas être confondue avec cette variable de membre d’une classe, ce qui signifie que même si un `IDebugReference2` peut représenter une telle entité.  
   
  [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) représente une propriété, tandis que `IDebugReference2` représente une référence à une propriété, en général, une référence à un objet dans le programme en cours de débogage.  
   

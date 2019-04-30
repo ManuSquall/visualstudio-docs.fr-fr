@@ -22,12 +22,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 003b010ed5b1e3bf442be778b6cbb7d6e35efe1f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c1733d6d4e60aad10896dbd2fcad16406830b83
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111998"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437042"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Lier des contrôles WPF à des données dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ Vous pouvez créer lié aux données [!INCLUDE[TLA#tla_titlewinclient](../includ
      Pour choisir un autre contrôle, cliquez sur la flèche déroulante à côté de l'élément et sélectionnez un contrôle. Pour plus d’informations, consultez [définir le contrôle à créer lors du déplacement de la fenêtre Sources de données](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
     > [!NOTE]
-    >  Si vous ne voulez pas afficher une colonne ou propriété particulière, développez l’élément pour afficher ses enfants. Cliquez sur la flèche déroulante en regard de la colonne ou la propriété que vous ne souhaitez pas afficher, puis cliquez sur **aucun**.
+    > Si vous ne voulez pas afficher une colonne ou propriété particulière, développez l’élément pour afficher ses enfants. Cliquez sur la flèche déroulante en regard de la colonne ou la propriété que vous ne souhaitez pas afficher, puis cliquez sur **aucun**.
 
 3. Faites glisser l'élément vers un conteneur valide du concepteur, comme <xref:System.Windows.Controls.Grid>. Pour plus d’informations sur les conteneurs valides, consultez [WPF de lier des contrôles à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
@@ -96,7 +96,7 @@ Vous pouvez créer lié aux données [!INCLUDE[TLA#tla_titlewinclient](../includ
 2. Cliquez sur la flèche déroulante en regard de l’élément et sélectionnez **détails**.
 
     > [!NOTE]
-    >  Si vous ne voulez pas afficher une colonne ou propriété particulière, développez l’élément pour afficher ses enfants. Cliquez sur la flèche déroulante en regard de la colonne ou la propriété que vous ne souhaitez pas afficher, puis cliquez sur **aucun**.
+    > Si vous ne voulez pas afficher une colonne ou propriété particulière, développez l’élément pour afficher ses enfants. Cliquez sur la flèche déroulante en regard de la colonne ou la propriété que vous ne souhaitez pas afficher, puis cliquez sur **aucun**.
 
 3. Faites glisser l'élément vers un conteneur valide du concepteur, comme <xref:System.Windows.Controls.Grid>. Pour plus d’informations sur les conteneurs valides, consultez [WPF de lier des contrôles à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
@@ -118,7 +118,7 @@ Vous pouvez créer lié aux données [!INCLUDE[TLA#tla_titlewinclient](../includ
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] génère [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] et le code pour lier le contrôle aux données. Pour plus d’informations, consultez [WPF de lier des contrôles à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
     > [!NOTE]
-    >  Si le contrôle est déjà lié aux données, la liaison de données pour le contrôle est redéfinie sur l’élément qui a été le plus récemment déplacé vers le contrôle.
+    > Si le contrôle est déjà lié aux données, la liaison de données pour le contrôle est redéfinie sur l’élément qui a été le plus récemment déplacé vers le contrôle.
 
 ## <a name="see-also"></a>Voir aussi
  [Lier des contrôles WPF à des données dans Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [créer des tables de recherche dans les applications WPF](../data-tools/create-lookup-tables-in-wpf-applications.md) [affichent les données connexes dans des applications WPF](../data-tools/display-related-data-in-wpf-applications.md) [WPF de lier des contrôles à un jeu de données](../data-tools/bind-wpf-controls-to-a-dataset.md) [WPF de lier des contrôles à un service de données WCF](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md) [procédure pas à pas : Affichage de données liées dans une Application WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)

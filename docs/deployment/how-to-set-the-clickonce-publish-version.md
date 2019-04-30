@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc57639c988b33f4d1b5844151e983593bf52ddd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e2bd526203b777bafd77c79a4934d1f3e8754dee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406845"
 ---
 # <a name="how-to-set-the-clickonce-publish-version"></a>Procédure : Définir la version de publication ClickOnce
 Le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `Publish Version` propriété détermine si l’application que vous publiez sera traitée comme une mise à jour. Chaque version de l’heure est incrémentée, l’application sera publiée en tant qu’une mise à jour.
@@ -29,7 +29,7 @@ Le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `Publish Ve
  Le `Publish Version` propriété peut être définie sur le **publier** page de la **Concepteur de projet**.
 
 > [!NOTE]
->  Il existe une option de projet qui incrémente automatiquement le `Publish Version` propriété chaque fois que l’application est publiée ; cette option est activée par défaut. Pour plus d'informations, voir [Procédure : Incrémenter automatiquement la version de publication ClickOnce](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md).
+> Il existe une option de projet qui incrémente automatiquement le `Publish Version` propriété chaque fois que l’application est publiée ; cette option est activée par défaut. Pour plus d'informations, voir [Procédure : Incrémenter automatiquement la version de publication ClickOnce](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md).
 
 ### <a name="to-change-the-publish-version"></a>Pour modifier la version de publication
 
@@ -40,7 +40,7 @@ Le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] `Publish Ve
 3. Dans **Version de publication** champ, incrémentez la **majeure**, **mineure**, **générer**, ou **révision** version nombres.
 
     > [!NOTE]
-    >  Vous ne devez jamais décrémenter un numéro de version ; Cela peut provoquer comportement imprévisible de mise à jour.
+    > Vous ne devez jamais décrémenter un numéro de version ; Cela peut provoquer comportement imprévisible de mise à jour.
 
 ## <a name="see-also"></a>Voir aussi
 - [Choisir une stratégie de mise à jour ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)

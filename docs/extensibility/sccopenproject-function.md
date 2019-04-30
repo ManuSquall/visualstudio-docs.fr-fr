@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52976875be5d3b6544701e1a52e45d436f1cc6c1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 1cc82f81475f742a05abb063bfd3b5a51b7fe2b8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56677225"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434627"
 ---
 # <a name="sccopenproject-function"></a>Fonction SccOpenProject
 Cette fonction ouvre un projet de contrôle de code source existant ou crée un nouveau.
@@ -95,14 +95,14 @@ SCCRTN SccOpenProject (
  L’IDE peut transmettre un nom d’utilisateur (`lpUser`), ou il peut simplement passer un pointeur vers une chaîne vide. S’il existe un nom d’utilisateur, le plug-in de contrôle de code source doit l’utiliser comme valeur par défaut. Toutefois, si aucun nom n’a été passé, ou si la connexion a échoué avec le nom donné, le plug-in doit inviter l’utilisateur pour vous connecter et retourne le nom valid dans `lpUser` lorsqu’elle reçoit une connexion valide`.` , car le plug-in peut changer la chaîne de nom d’utilisateur , l’IDE sera toujours allouer une mémoire tampon de taille (`SCC_USER_LEN`+ 1 ou SCC_USER_SIZE, qui inclut l’espace pour le terminateur null).
 
 > [!NOTE]
->  La première action de l’IDE peut-être être nécessaires pour exécuter peut être un appel à la `SccOpenProject` fonction ou le [SccGetProjPath](../extensibility/sccgetprojpath-function.md). Pour cette raison, les deux d'entre eux ont un identiques `lpUser` paramètre.
+> La première action de l’IDE peut-être être nécessaires pour exécuter peut être un appel à la `SccOpenProject` fonction ou le [SccGetProjPath](../extensibility/sccgetprojpath-function.md). Pour cette raison, les deux d'entre eux ont un identiques `lpUser` paramètre.
 
  `lpAuxProjPath` et`lpProjName` sont lus à partir du fichier solution, ou ils sont retournés à partir d’un appel à la `SccGetProjPath` (fonction). Ces paramètres contiennent les chaînes qui associe les le plug-in de contrôle de code source avec le projet et sont uniquement explicites pour le plug-in. Si aucune de ces chaînes ne sont dans le fichier solution et que l’utilisateur n’a pas été invité à naviguer (qui retourne une chaîne via la `SccGetProjPath` fonction), l’IDE passe des chaînes vides pour les deux `lpAuxProjPath` et `lpProjName`et attend que ces valeurs à mettre à jour par le plug-in lorsqu’elle retourne.
 
  `lpTextOutProc` est un pointeur vers une fonction de rappel fournie par l’IDE pour le plug-in en vue d’afficher la sortie du résultat de contrôle de code source. Cette fonction de rappel est décrite en détail dans [LPTEXTOUTPROC](../extensibility/lptextoutproc.md).
 
 > [!NOTE]
->  Si le plug-in de contrôle de code source envisage tirer parti de cela, il doit avoir le `SCC_CAP_TEXTOUT` indicateur dans le [SccInitialize](../extensibility/sccinitialize-function.md). Si cet indicateur n’a pas été défini, ou si l’IDE ne prend pas en charge cette fonctionnalité, `lpTextOutProc` sera `NULL`.
+> Si le plug-in de contrôle de code source envisage tirer parti de cela, il doit avoir le `SCC_CAP_TEXTOUT` indicateur dans le [SccInitialize](../extensibility/sccinitialize-function.md). Si cet indicateur n’a pas été défini, ou si l’IDE ne prend pas en charge cette fonctionnalité, `lpTextOutProc` sera `NULL`.
 
  Le `dwFlags` paramètre contrôle le résultat dans le cas où le projet en cours d’ouverture n’existe pas actuellement. Il se compose de deux indicateurs de bits, `SCC_OP_CREATEIFNEW` et `SCC_OP_SILENTOPEN`. Si le projet en cours d’ouverture déjà existe, la fonction ouvre le projet et le retourne `SCC_OK`. Si le projet n’existe pas et si le `SCC_OP_CREATEIFNEW` indicateur est activé, le plug-in de contrôle de code source peut créer le projet dans le système de contrôle source, ouvrez-le et retourner `SCC_OK`. Si le projet n’existe pas et si le `SCC_OP_CREATEIFNEW` indicateur est désactivé, le plug-in doit ensuite vérifier le `SCC_OP_SILENTOPEN` indicateur. Si cet indicateur est désactivée, le plug-in peut inviter l’utilisateur pour un nom de projet. Si cet indicateur est activé, le plug-in doit simplement retourner `SCC_E_UNKNOWNPROJECT`.
 
@@ -112,7 +112,7 @@ SCCRTN SccOpenProject (
  Si les jeux plug-in de contrôle de la source de la `SCC_CAP_REENTRANT` de transmission en `SccInitialize`, puis la séquence de session ci-dessus peut être répétée autant de fois en parallèle. Différents `pvContext` structures suivre différentes sessions, dans lequel chaque `pvContext` est associé à un projet ouvert à la fois. Selon le`pvContext` paramètre, le plug-in peut déterminer de quel projet référencé dans n’importe quel appel particulier. Si le bit de la fonction `SCC_CAP_REENTRANT` n’est pas définie, nonreentrant plug-ins de contrôle de code source sont limitées dans leur capacité à travailler avec plusieurs projets.
 
 > [!NOTE]
->  Le `SCC_CAP_REENTRANT` bits a été introduite dans la version 1.1 de l’API de plug-in de contrôle de Source. Il n’est pas définie ou est ignoré dans la version 1.0, et toutes les version 1.0 source plug-ins de contrôle sont supposés pour être nonreentrant.
+> Le `SCC_CAP_REENTRANT` bits a été introduite dans la version 1.1 de l’API de plug-in de contrôle de Source. Il n’est pas définie ou est ignoré dans la version 1.0, et toutes les version 1.0 source plug-ins de contrôle sont supposés pour être nonreentrant.
 
 ## <a name="see-also"></a>Voir aussi
 - [Fonctions d’API du plug-in de contrôle de code source](../extensibility/source-control-plug-in-api-functions.md)

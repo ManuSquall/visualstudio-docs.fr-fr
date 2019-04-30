@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0a6e551dd2f045684168947d2c5a4e63089928c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: be66bf02294c12d39bcfd28793bb036696296476
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098439"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417780"
 ---
 # <a name="model-your-app39s-architecture"></a>Modéliser votre application&#39;architecture s
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Pour vous assurer que votre application ou votre système logiciel répond à vo
  L'objectif d'un modèle est de réduire les ambiguïtés présentes dans les descriptions en langage naturel et de vous aider, vous et vos collègues, à visualiser la conception et à discuter des conceptions alternatives. Un modèle doit être utilisé avec d'autres documents ou discussions. En soi, un modèle ne représente pas une spécification complète de l'architecture.  
   
 > [!NOTE]
->  Dans cette rubrique, le terme « système » signifie le logiciel que vous développez. Il peut s'agir d'une grande collection de nombreux composants matériels et logiciels, d'une application unique ou d'une partie d'une application.  
+> Dans cette rubrique, le terme « système » signifie le logiciel que vous développez. Il peut s'agir d'une grande collection de nombreux composants matériels et logiciels, d'une application unique ou d'une partie d'une application.  
   
  L'architecture d'un système peut être divisée en deux parties :  
   

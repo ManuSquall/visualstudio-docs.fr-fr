@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c2498029b5570a1576f62bcf042a7b87f856f3de
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 269ecdb67fe58a5ad2aff6af63ba6ea45647811a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076652"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412617"
 ---
 # <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>Procédure : Regrouper des lignes dans une feuille de calcul par programmation
   Vous pouvez regrouper un ou plusieurs lignes entières. Pour créer un groupe dans une feuille de calcul, utilisez un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle ou un objet de plage Excel natif.
@@ -43,7 +43,7 @@ ms.locfileid: "60076652"
      [!code-vb[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#32)]
 
     > [!NOTE]
-    >  Pour dissocier des lignes, appelez le <xref:Microsoft.Office.Tools.Excel.NamedRange.Ungroup%2A> (méthode).
+    > Pour dissocier des lignes, appelez le <xref:Microsoft.Office.Tools.Excel.NamedRange.Ungroup%2A> (méthode).
 
 ## <a name="use-native-excel-ranges"></a>Utiliser des plages Excel natifs
  Le code suppose que vous avez trois plages Excel nommés `data2001`, `data2002`, et `dataAll` sur une feuille de calcul.
@@ -56,7 +56,7 @@ ms.locfileid: "60076652"
      [!code-vb[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#33)]
 
     > [!NOTE]
-    >  Pour dissocier des lignes, appelez le <xref:Microsoft.Office.Interop.Excel.Range.Ungroup%2A> (méthode).
+    > Pour dissocier des lignes, appelez le <xref:Microsoft.Office.Interop.Excel.Range.Ungroup%2A> (méthode).
 
 ## <a name="see-also"></a>Voir aussi
 - [Travailler avec des feuilles de calcul](../vsto/working-with-worksheets.md)

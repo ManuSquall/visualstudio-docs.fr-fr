@@ -10,12 +10,12 @@ ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 71b26fc2d26e180af25919dde5d3c4ee1bc1f891
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 693cf6d746f51862415f2f30e46d48a998047f14
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113116"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437436"
 ---
 # <a name="attaching-after-a-launch"></a>Attachement après un lancement
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Une fois un programme a été lancé, la session de débogage est prête à atta
 - S’il est plus logique pour faciliter la communication entre l’Allemagne et le programme, puis l’environnement d’exécution crée l’Allemagne. Cela laisse le SDM dans un espace d’adressage et l’Allemagne, environnement d’exécution et programme ensemble dans un autre. Ceci est typique d’un dé est implémentée avec un interpréteur pour exécuter des langages de script.  
   
     > [!NOTE]
-    >  Comment le D’attache au programme est dépend de l’implémentation. Communication entre l’Allemagne et le programme est également dépend de l’implémentation.  
+    > Comment le D’attache au programme est dépend de l’implémentation. Communication entre l’Allemagne et le programme est également dépend de l’implémentation.  
   
 ## <a name="implementation"></a>Implémentation  
  Par programmation, lorsque le Gestionnaire de session de débogage (SDM) reçoit d’abord le [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) objet qui représente le programme doit être lancé, il appelle le [Attach](../../extensibility/debugger/reference/idebugprogram2-attach.md) méthode, en lui transmettant un [ IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) objet, qui est ultérieur utilisé pour transmettre des événements de débogage vers le SDM. Le `IDebugProgram2::Attach` méthode appelle ensuite la [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) (méthode). Pour plus d’informations sur la façon dont le SDM reçoit le `IDebugProgram2` l’interface, consultez [notification du Port](../../extensibility/debugger/notifying-the-port.md).  

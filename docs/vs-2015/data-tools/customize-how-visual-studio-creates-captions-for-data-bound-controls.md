@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1b3bba0d47e77b9e712a375627e2e4aebc6702b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 960100db5a257ab30431c1edee2bce9ded21d46d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431182"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personnaliser la façon dont Visual Studio crée des légendes pour les contrôles liés aux données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60079478"
 Lorsque vous faites glisser des éléments à partir de la [fenêtre Sources de données](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) sur le Concepteur de formulaires Windows, une attention particulière entre en jeu : les noms de colonnes dans les légendes sont reformatés dans une chaîne plus lisible lorsque deux ou plusieurs mots sont trouvé concaténés. Vous pouvez personnaliser la façon dans lequel ces étiquettes sont créés en définissant le **SmartCaptionExpression**, **SmartCaptionReplacement**, et **SmartCaptionSuffix** des valeurs dans le **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\10.0\Data concepteurs** clé de Registre.
 
 > [!NOTE]
->  Cette clé de Registre n’existe pas jusqu'à ce que vous la créez.
+> Cette clé de Registre n’existe pas jusqu'à ce que vous la créez.
 
  Sous-titrage intelligente est contrôlé par l’expression régulière entrée dans la valeur de la **SmartCaptionExpression** valeur. Ajout de la **concepteurs de données** clé de Registre remplace l’expression régulière par défaut qui contrôle les étiquettes de légende. Pour plus d’informations sur les expressions régulières, consultez [à l’aide d’Expressions régulières dans Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).
 
@@ -54,9 +54,9 @@ Lorsque vous faites glisser des éléments à partir de la [fenêtre Sources de 
 |**SmartCaptionSuffix**|:|Représente un caractère ajouté à la chaîne retournée. Par exemple, si la légende est `Company Name`, rend le suffixe `Company Name:`|
 
 > [!CAUTION]
->  Vous devez être très prudent lorsque vous sert à rien dans l’Éditeur du Registre. Sauvegardez le Registre avant de le modifier. Si vous utilisez l’Éditeur du Registre de manière incorrecte, vous pouvez provoquer de graves problèmes qui peuvent vous obliger à réinstaller votre système d’exploitation. Microsoft ne garantit pas que les problèmes qui vous entraîner à l’aide de l’Éditeur du Registre incorrecte peuvent être résolus. Les opérations exécutées dans l'Éditeur du Registre le sont à vos propres risques.
+> Vous devez être très prudent lorsque vous sert à rien dans l’Éditeur du Registre. Sauvegardez le Registre avant de le modifier. Si vous utilisez l’Éditeur du Registre de manière incorrecte, vous pouvez provoquer de graves problèmes qui peuvent vous obliger à réinstaller votre système d’exploitation. Microsoft ne garantit pas que les problèmes qui vous entraîner à l’aide de l’Éditeur du Registre incorrecte peuvent être résolus. Les opérations exécutées dans l'Éditeur du Registre le sont à vos propres risques.
 >
->  L’article suivant de la base de connaissances contient des instructions pour la sauvegarde, la modification et la restauration du Registre : [Description du Registre Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us ; 256986)
+> L’article suivant de la base de connaissances contient des instructions pour la sauvegarde, la modification et la restauration du Registre : [Description du Registre Microsoft Windows](http://support.microsoft.com/default.aspx?scid=kb;en-us;256986) (http://support.microsoft.com/default.aspx?scid=kb; en-us ; 256986)
 
 ### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Pour modifier le comportement de sous-titrage intelligent de la fenêtre Sources de données
 

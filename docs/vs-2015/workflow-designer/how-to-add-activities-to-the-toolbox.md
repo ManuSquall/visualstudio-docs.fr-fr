@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c5edf728df10d2418c4a3341fd54e4115439cc4a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: af470bbbebbf10fdfcf906c905171e86b0c100ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055169"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433536"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Procédure : Ajouter des activités à la boîte à outils
 Activités peuvent être ajoutées à la **boîte à outils** dans votre solution de plusieurs façons différentes. Vous pouvez les ajouter à partir de votre projet en cours, les référencer à partir d'un autre projet ou les référencer à partir d'un autre assembly.  
@@ -28,13 +28,13 @@ Activités peuvent être ajoutées à la **boîte à outils** dans votre solutio
 3. Générez le projet. Si la build est réussie, une nouvelle catégorie dans le **boîte à outils** nommé «\<*nom_projet*> » avec l’activité personnalisée incluse dans cette catégorie s’affiche.  
   
     > [!NOTE]
-    >  Si la boîte à outils est réinitialisée, des activités personnalisées sont supprimées, même si la solution est générée à nouveau. Pour remplir de nouveau la boîte à outils avec des activités personnalisées, redémarrez [!INCLUDE[vs2010](../includes/vs2010-md.md)] après que la boîte à outils a été réinitialisée.  
+    > Si la boîte à outils est réinitialisée, des activités personnalisées sont supprimées, même si la solution est générée à nouveau. Pour remplir de nouveau la boîte à outils avec des activités personnalisées, redémarrez [!INCLUDE[vs2010](../includes/vs2010-md.md)] après que la boîte à outils a été réinitialisée.  
   
     > [!NOTE]
-    >  La boîte à outils ne peut afficher qu'une activité d'un nom donné. Si deux activités de différents assemblys ont le même nom de classe, une seule s'affiche.  
+    > La boîte à outils ne peut afficher qu'une activité d'un nom donné. Si deux activités de différents assemblys ont le même nom de classe, une seule s'affiche.  
   
     > [!NOTE]
-    >  Le domaine d'application est partagé entre des instances de l'éditeur ; si des variables statiques sont utilisées, elles sont également partagées par les instances de l'éditeur. S'il ne s'agit pas du comportement souhaité, un service doit être utilisé pour assurer le suivi des instances variables. Consultez [en utilisant le contexte d’édition ModelItem](http://msdn.microsoft.com/library/7f9f1ea5-0147-4079-8eca-be94f00d3aa1) pour plus d’informations sur l’utilisation de services dans le concepteur.  
+    > Le domaine d'application est partagé entre des instances de l'éditeur ; si des variables statiques sont utilisées, elles sont également partagées par les instances de l'éditeur. S'il ne s'agit pas du comportement souhaité, un service doit être utilisé pour assurer le suivi des instances variables. Consultez [en utilisant le contexte d’édition ModelItem](http://msdn.microsoft.com/library/7f9f1ea5-0147-4079-8eca-be94f00d3aa1) pour plus d’informations sur l’utilisation de services dans le concepteur.  
   
 ### <a name="to-add-an-activity-from-within-a-different-project"></a>Pour ajouter une activité à partir d'un autre projet  
   

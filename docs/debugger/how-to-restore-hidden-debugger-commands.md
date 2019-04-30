@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f5332b2e3b71df47fe2f39228c47bf4a1ec16de9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7766f83eef6205ce445ed892ffaf5861a0dcabbb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047020"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387534"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>Procédure : Restaurer des commandes de débogueur masquées
 Lorsque vous installez Visual Studio, vous êtes invité à choisir un jeu de paramètres IDE par défaut pour votre langage de programmation principal. Les paramètres IDE par défaut de quelques langages peuvent masquer certaines commandes de débogueur.
@@ -47,7 +47,7 @@ Lorsque vous installez Visual Studio, vous êtes invité à choisir un jeu de pa
 7. Cliquez sur **Fermer** lorsque vous avez terminé d'ajouter des commandes au menu.
 
     > [!WARNING]
-    >  Certains éléments du menu n'apparaissent que lorsque le débogueur se trouve dans un mode spécifique, tel que le mode exécution ou le mode arrêt. Par conséquent, un élément que vous avez ajouté n'est pas forcément immédiatement visible lorsque vous avez terminé ces étapes.
+    > Certains éléments du menu n'apparaissent que lorsque le débogueur se trouve dans un mode spécifique, tel que le mode exécution ou le mode arrêt. Par conséquent, un élément que vous avez ajouté n'est pas forcément immédiatement visible lorsque vous avez terminé ces étapes.
 
 ## <a name="restoring-commands-not-available-from-the-customize-dialog-box"></a>Restauration de commandes non disponibles dans la boîte de dialogue Personnaliser
  Quelques commandes, surtout dans les menus hiérarchiques, ne peuvent pas être restaurées dans la boîte de dialogue **Personnaliser**. Pour les restaurer, vous devez importer une nouvelle collection de paramètres IDE.

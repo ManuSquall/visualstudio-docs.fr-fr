@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26b917b04314c99ba6575842b8e102113b22b469
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8204b13aa0405d01590e4aeb0fe43a92b41c226f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596957"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431257"
 ---
 # <a name="how-to-add-an-updater-method"></a>Procédure : Ajouter une méthode de mise à jour
   Vous pouvez autoriser les utilisateurs à mettre à jour des données métiers dans une liste externe SharePoint en créant un *mise à jour du* (méthode). Pour plus d’informations, consultez [concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -50,7 +50,7 @@ ms.locfileid: "56596957"
      Pour plus d’informations, consultez [concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).
 
    > [!NOTE]
-   >  Si l’identificateur du type d’entité représente un champ dans une table de base de données qui n’est pas automatiquement généré, définissez le **champ de pré-mise** propriété **True**.
+   > Si l’identificateur du type d’entité représente un champ dans une table de base de données qui n’est pas automatiquement généré, définissez le **champ de pré-mise** propriété **True**.
 
 4. Dans **l’Explorateur de solutions**, ouvrez le menu contextuel du service du fichier de code qui a été généré pour l’entité, puis choisissez **afficher le Code**.
 
@@ -59,7 +59,7 @@ ms.locfileid: "56596957"
 5. Ajoutez le code à la méthode de mise à jour pour mettre à jour des données. L’exemple suivant met à jour les informations d’un contact dans la base de données AdventureWorks pour SQL Server.
 
    > [!NOTE]
-   >  Remplacez la valeur de la `ServerName` champ avec le nom de votre serveur.
+   > Remplacez la valeur de la `ServerName` champ avec le nom de votre serveur.
 
     [!code-csharp[SP_BDC#5](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#5)]
     [!code-vb[SP_BDC#5](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#5)]

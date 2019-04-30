@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 33666c0e5d63d8d4d33d544fcfe18d8c185ce843
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a436027fc4194f762fc4b28545fdf5d4bd3b95b6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044350"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444615"
 ---
 # <a name="how-to-create-a-workflow-console-application"></a>Procédure : Créer une application console de workflow
 [!INCLUDE[wf](../includes/wf-md.md)] vous permet de créer des workflows pour l'exécution de processus système ou humains. [!INCLUDE[wfd1](../includes/wfd1-md.md)] fournit l'aire de conception pour la création de ces workflows. Le [!INCLUDE[wfd2](../includes/wfd2-md.md)] peut être utilisé pour créer des workflows depuis [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou il peut être intégré dans d'autres applications pour réhéberger le concepteur.  
@@ -40,7 +40,7 @@ ms.locfileid: "60044350"
 7. Dans le **Solution** , entrez le nom de la nouvelle solution. Cliquez sur **OK** pour créer l’application.  
   
     > [!NOTE]
-    >  Si vous souhaitez ajouter une application de console de workflow à une solution existante, ouvrez cette solution dans [!INCLUDE[vs2010](../includes/vs2010-md.md)], cliquez avec le bouton droit sur la solution dans **l’Explorateur de solutions**, puis sélectionnez **ajouter**, puis  **Nouveau projet...** Pour ouvrir le **nouveau projet** boîte de dialogue. Procédez comme décrit ci-dessus dans cette procédure.  
+    > Si vous souhaitez ajouter une application de console de workflow à une solution existante, ouvrez cette solution dans [!INCLUDE[vs2010](../includes/vs2010-md.md)], cliquez avec le bouton droit sur la solution dans **l’Explorateur de solutions**, puis sélectionnez **ajouter**, puis  **Nouveau projet...** Pour ouvrir le **nouveau projet** boîte de dialogue. Procédez comme décrit ci-dessus dans cette procédure.  
   
 8. Le modèle de projet crée une définition de workflow en XAML et la définition d'application console se trouve dans le code source. [!INCLUDE[wfd2](../includes/wfd2-md.md)] s'ouvre et affiche la zone de dessin du workflow que vous avez créé.  
   

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39360019e798a5f76bfe5344aca6f02abbbfa6a3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 507bce496405f615343a9c109ff71196d814af08
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638606"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438737"
 ---
 # <a name="visual-studio-tools-for-office-runtime-installation-scenarios"></a>Visual Studio Tools pour les scénarios d’installation Office runtime
   Vous pouvez installer Visual Studio 2010 Tools pour Office runtime de trois façons :
@@ -38,20 +38,20 @@ ms.locfileid: "56638606"
 |Scénario d'installation du runtime|Chargeur de solutions Office|Extensions Office pour le .NET Framework 3.5|Extensions Office pour le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]|Extensions Office pour le [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]|
 |-----------------------------------|----------------------------|--------------------------------------------------| - |---------------------------------------------------------------------------|
 |Avec [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] et versions ultérieures|Oui|Oui, si le .NET Framework 3.5 est déjà installé.|Oui|Oui|
-|Avec [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|Oui|Oui, si le .NET Framework 3.5 est déjà installé.|Aucune|Aucune|
-|Avec Office 2010 Service Pack 1 (SP1) ou version ultérieure|Oui|Oui, si le .NET Framework 3.5 est déjà installé.|Oui, si le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] est déjà installé.|Aucune|
+|Avec [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)]|Oui|Oui, si le .NET Framework 3.5 est déjà installé.|Non|Non|
+|Avec Office 2010 Service Pack 1 (SP1) ou version ultérieure|Oui|Oui, si le .NET Framework 3.5 est déjà installé.|Oui, si le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] est déjà installé.|Non|
 |Avec le composant redistribuable du runtime|Oui|Oui, si le .NET Framework 3.5 est déjà installé.|Oui, si le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] est déjà installé.|Oui, si le [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] est déjà installé.|
 
 ### <a name="install-the-runtime-with-visual-studio-or-the-microsoft-office-developer-tools-for-visual-studio"></a>Installer le runtime avec Visual Studio ou les outils de développement Microsoft Office pour Visual Studio
- Quand vous installez les Outils de développement Office dans Visual Studio, les extensions Office pour le [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] et le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] sont systématiquement installés sur l’ordinateur de développement. Les extensions Office pour le .NET Framework 3.5 sont uniquement installées si le .NET Framework 3.5 est déjà installé sur l'ordinateur de développement. Si vous installez le .NET Framework 3.5 après avoir installé [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], le runtime installe automatiquement les extensions Office pour le .NET Framework 3.5 la première fois que vous créez un projet Office ciblant le .NET Framework 3.5.
+ Quand vous installez les Outils de développement Office dans Visual Studio, les extensions Office pour le [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] et le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] sont systématiquement installés sur l'ordinateur de développement. Les extensions Office pour le .NET Framework 3.5 sont uniquement installées si le .NET Framework 3.5 est déjà installé sur l'ordinateur de développement. Si vous installez le .NET Framework 3.5 après avoir installé [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)], le runtime installe automatiquement les extensions Office pour le .NET Framework 3.5 la première fois que vous créez un projet Office ciblant le .NET Framework 3.5.
 
 > [!WARNING]
->  Vous ne pouvez pas créer un projet Office qui cible le .NET Framework 3.5 à l'aide de [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] ou version ultérieure.
+> Vous ne pouvez pas créer un projet Office qui cible le .NET Framework 3.5 à l'aide de [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] ou version ultérieure.
 
  Pour plus d’informations sur l’installation des outils de développement Office, consultez [Comment : Configurer un ordinateur pour développer des solutions Office](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md).
 
 ### <a name="install-the-runtime-with-office"></a>Installer le runtime avec Office
- Quand vous installez Office, les extensions Office pour le .NET Framework 3.5 sont installées si le .NET Framework 3.5 est déjà présent sur l’ordinateur. Si vous installez le .NET Framework 3.5 après Office, le runtime installe automatiquement les extensions Office pour le .NET Framework 3.5 la première fois qu'une application Office tente de charger une solution ciblant le .NET Framework 3.5.
+ Quand vous installez Office, les extensions Office pour le .NET Framework 3.5 sont installées si le .NET Framework 3.5 est déjà présent sur l'ordinateur. Si vous installez le .NET Framework 3.5 après Office, le runtime installe automatiquement les extensions Office pour le .NET Framework 3.5 la première fois qu’une application Office tente de charger une solution ciblant le .NET Framework 3.5.
 
  Les extensions Office pour le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou version ultérieure ne sont pas installées avec Office, même si le [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou version ultérieure est déjà présent quand vous installez Office.
 

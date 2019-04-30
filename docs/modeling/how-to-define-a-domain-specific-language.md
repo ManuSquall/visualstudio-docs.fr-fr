@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 77fb772588b41460ddd68ae0a20b4593d1fda628
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 77c0a76ae326621ed00a523d8cf484b9aecb53c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091029"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445196"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Comment : définir un langage spécifique à un domaine
 Pour définir un langage spécifique à un domaine (DSL), vous créez une solution Visual Studio à partir d’un modèle. Le composant principal de la solution est le diagramme de définition DSL, qui est stocké dans DslDefinition.dsl. La définition DSL définit les classes et les formes de la solution DSL. Après avoir modifié et ajouté à ces éléments, vous pouvez ajouter du code programme pour personnaliser la solution DSL plus en détail.
@@ -106,7 +106,7 @@ Pour créer un nouveau langage spécifique à un domaine, vous créez une nouvel
  Fermez l’instance expérimentale de Visual Studio.
 
 > [!NOTE]
->  Une fois la solution DSL modifiée, vous ne pourrez plus voir les formes dans l'exemple de fichier test. En revanche, vous pourrez créer des éléments.
+> Une fois la solution DSL modifiée, vous ne pourrez plus voir les formes dans l'exemple de fichier test. En revanche, vous pourrez créer des éléments.
 
 ### <a name="modifying-the-template-dsl"></a>Modification du modèle de solution DSL
  Renommez et conservez tout ou une partie des classes de domaine et des classes de forme dans le modèle de définition DSL. Vos nouveaux noms de classes doivent être des noms CLR valides, sans espace ni ponctuation.
@@ -135,7 +135,7 @@ Pour créer un nouveau langage spécifique à un domaine, vous créez une nouvel
   Les sections suivantes expliquent comment construire les types de fonctionnalités DSL les plus utiles. Il existe de nombreux autres modèles avec lesquels vous pouvez construire une solution DSL, mais les modèles suivants sont les plus couramment utilisés.
 
 > [!NOTE]
->  Après avoir ajouté une fonctionnalité, n’oubliez pas de cliquer sur **transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions avant de générer et exécuter votre solution DSL.
+> Après avoir ajouté une fonctionnalité, n’oubliez pas de cliquer sur **transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions avant de générer et exécuter votre solution DSL.
 
  La figure suivante montre la partie classes et relations de la solution DSL qui est utilisée comme exemple dans cette rubrique.
 
@@ -146,7 +146,7 @@ Pour créer un nouveau langage spécifique à un domaine, vous créez une nouvel
  ![Modèle d'instance du DSL généré](../modeling/media/music_instance.png)
 
 > [!NOTE]
->  Le terme « modèle » fait référence à une instance de votre solution DSL créée par les utilisateurs. Elle est généralement affichée sous forme de diagramme. Cette rubrique traite du diagramme de définition DSL et des diagrammes de modèles qui apparaissent lors de l'utilisation de votre solution DSL.
+> Le terme « modèle » fait référence à une instance de votre solution DSL créée par les utilisateurs. Elle est généralement affichée sous forme de diagramme. Cette rubrique traite du diagramme de définition DSL et des diagrammes de modèles qui apparaissent lors de l'utilisation de votre solution DSL.
 
 ## <a name="classes"></a> Définition des Classes de domaine
  Les classes de domaine représentent les concepts de votre solution DSL. Les instances sont *éléments de modèle*. Par exemple dans un **Bibliothèquemusicale** DSL, vous pouvez avoir des Classes de domaine nommé **Album** et **chanson**.
@@ -183,7 +183,7 @@ Pour créer un nouveau langage spécifique à un domaine, vous créez une nouvel
  Pour plus d’informations, consultez [propriétés des relations de domaine](../modeling/properties-of-domain-relationships.md) et [propriétés des rôles de domaine](../modeling/properties-of-domain-roles.md).
 
 > [!NOTE]
->  L'incorporation n'est pas la même chose que l'héritage. Les enfants dans une relation d'incorporation n'héritent pas des fonctionnalités de leurs parents.
+> L'incorporation n'est pas la même chose que l'héritage. Les enfants dans une relation d'incorporation n'héritent pas des fonctionnalités de leurs parents.
 
 ### <a name="add-domain-properties-to-each-domain-class"></a>Ajouter des propriétés de domaine à chaque classe de domaine
  Les propriétés de domaine contiennent des valeurs. Les exemples sont : Nom, titre, Date de Publication.
@@ -294,7 +294,7 @@ Pour créer un nouveau langage spécifique à un domaine, vous créez une nouvel
    2. Cliquez sur le nœud sous **onglets de boîte à outils** qui porte le même nom que votre solution DSL, par exemple Bibliothèquemusicale. Cliquez sur **Ajouter élément outil**.
 
        > [!NOTE]
-       >  Si vous cliquez sur le **outils** nœud, vous ne verrez pas **ajouter un outil d’élément**. Cliquez plutôt sur le nœud juste au-dessus.
+       > Si vous cliquez sur le **outils** nœud, vous ne verrez pas **ajouter un outil d’élément**. Cliquez plutôt sur le nœud juste au-dessus.
 
    3. Dans la fenêtre Propriétés avec le nouvel outil d’élément sélectionné, définissez **classe** à la classe de domaine que vous avez récemment ajouté.
 
@@ -462,7 +462,7 @@ Pour créer un nouveau langage spécifique à un domaine, vous créez une nouvel
          Sous **propriété d’affichage**, sélectionnez la propriété qui doit être affichée dans la liste. Dans l'exemple, il s'agit de Title.
 
 > [!NOTE]
->  En utilisant les champs Chemin d'accès dans les champs Mappage de décorateur et Mappage de compartiment, vous pouvez créer des relations plus complexes entre les classes de domaine et la forme de compartiment.
+> En utilisant les champs Chemin d'accès dans les champs Mappage de décorateur et Mappage de compartiment, vous pouvez créer des relations plus complexes entre les classes de domaine et la forme de compartiment.
 
 #### <a name="to-define-a-tool-for-creating-the-shape"></a>Pour définir un outil pour la création de la forme
 
@@ -473,7 +473,7 @@ Pour créer un nouveau langage spécifique à un domaine, vous créez une nouvel
 3. Cliquez sur le nœud sous **onglets de boîte à outils** qui porte le même nom que votre solution DSL, par exemple Bibliothèquemusicale. Cliquez sur **Ajouter élément outil**.
 
     > [!NOTE]
-    >  Si vous cliquez sur le **outils** nœud, vous ne verrez pas **ajouter un outil d’élément**. Cliquez plutôt sur le nœud juste au-dessus.
+    > Si vous cliquez sur le **outils** nœud, vous ne verrez pas **ajouter un outil d’élément**. Cliquez plutôt sur le nœud juste au-dessus.
 
 4. Dans la fenêtre Propriétés avec le nouvel outil d’élément sélectionné, définissez **classe** à la classe de domaine que vous avez récemment ajouté.
 

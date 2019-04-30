@@ -1,5 +1,5 @@
 ---
-title: Paramètres de projet pour une configuration de débogage C++
+title: Paramètres de projets pour un C++ déboguer config
 ms.custom: seodec18
 ms.date: 11/26/2018
 ms.topic: reference
@@ -112,18 +112,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 99c81952ee150e185f52edc624663c3cca9a9164
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: fb4f60c9e36b7c8c7a918b2298d7522e7c5d3793
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722238"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407887"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Paramètres de projet pour une configuration Debug C++
-Vous pouvez modifier les paramètres du projet pour une configuration debug C ou Visual C++ dans le **Pages de propriétés** boîte de dialogue, comme indiqué dans [Comment : définir des configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md). Les tableaux suivants indiquent où se trouvent les paramètres du débogueur dans la boîte de dialogue **Pages de propriétés**.
+Vous pouvez modifier les paramètres du projet pour une configuration debug C ou Visual C++ dans le **Pages de propriétés** boîte de dialogue, comme indiqué dans [Comment : Définir des configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md). Les tableaux suivants indiquent où se trouvent les paramètres du débogueur dans la boîte de dialogue **Pages de propriétés**.
 
 > [!NOTE]
->  Les paramètres de projet de débogage dans le **propriétés de Configuration/débogage** catégorie sont différentes pour les applications UWP et des composants qui sont écrits en C++. Consultez [démarrer une session de débogage (VB, C#, C++ et XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
+> Les paramètres de projet de débogage dans le **propriétés de Configuration/débogage** catégorie sont différentes pour les applications UWP et des composants qui sont écrits en C++. Consultez [démarrer une session de débogage (VB, c#, C++ et XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
 
  Chaque paramètre de propriété de débogage est automatiquement écrit et enregistré dans le fichier « par utilisateur » (. vcxproj.user) de votre solution lorsque vous enregistrez votre solution.
 
@@ -142,15 +142,15 @@ Vous pouvez modifier les paramètres du projet pour une configuration debug C ou
 | **Nom de serveur distant** (Débogueur Windows distant) | Spécifie le nom d'un ordinateur (autre que le vôtre) sur lequel vous voulez déboguer une application.<br /><br /> La macro de génération RemoteMachine a la valeur de cette propriété ; pour plus d’informations, consultez [Macros pour les propriétés et les commandes de génération](/cpp/ide/common-macros-for-build-commands-and-properties). |
 | **Connexion** (débogueur distant Windows) | Vous permet de commuter entre les types de connexion standard et sans authentification pour le débogage distant. Spécifiez un nom d’ordinateur distant dans la zone **Nom de serveur distant**. Les types de connexions incluent les éléments suivants :<br /><br /> -   **À distance avec authentification Windows**<br />-   **À distance sans authentification**<br /><br /> **Remarque** Le débogage distant sans authentification peut rendre l’ordinateur distant vulnérable face aux atteintes à la sécurité. Le mode Authentification Windows est plus sécurisé.<br /><br /> Pour plus d’informations, consultez [Programme d’installation du débogage distant](../debugger/remote-debugging.md). |
 | **URL HTTP** (débogueur de service web et débogueur de navigateur web) | Spécifie l'URL où le projet que vous déboguez est localisé. |
-| **Type de débogueur** | Spécifie le type de débogueur à utiliser : **Natif uniquement**, **Managé uniquement**, **GPU uniquement**, **Mixte**, **Auto** (par défaut) ou **Script**.<br /><br /> -   Le type **Natif uniquement** est destiné au code C++ non managé.<br />-   Le type **Managé uniquement** est destiné au code s’exécutant sous le Common Language Runtime (code managé).<br />-   Le type **Mixte** appelle les débogueurs aussi bien pour le code managé que le code non managé.<br />-   Le type **Auto** permet de déterminer le type du débogueur en fonction des informations relatives au compilateur et au fichier .EXE.<br />-   **Script** appelle un débogueur pour les scripts.<br />-   **GPU uniquement** est destiné au code C++ AMP qui s’exécute sur un périphérique GPU ou sur le rastériseur de référence DirectX. Consultez [du code GPU débogage](../debugger/debugging-gpu-code.md). |
-| **Environnement** (les débogueur Windows Local et débogueur de Windows à distance) | Spécifie les variables d'environnement du programme que vous déboguez. Utilisez la syntaxe de variable d’environnement standard (par exemple, `PATH="%SystemRoot%\..."`). Ces variables se substituent à l’environnement système ou fusionnent avec lui, selon le paramètre **Fusion de l’environnement**. Lorsque vous cliquez dans la colonne Paramètres, « Modifier... » s’affiche. Sélectionnez ce lien pour modifier les variables d’environnement. |
+| **Type de débogueur** | Spécifie le type de débogueur à utiliser : **Natif uniquement**, **managé uniquement**, **GPU uniquement**, **mixte**, **automatique** (valeur par défaut), ou **Script**.<br /><br /> -   Le type **Natif uniquement** est destiné au code C++ non managé.<br />-   Le type **Managé uniquement** est destiné au code s’exécutant sous le Common Language Runtime (code managé).<br />-   Le type **Mixte** appelle les débogueurs aussi bien pour le code managé que le code non managé.<br />-   Le type **Auto** permet de déterminer le type du débogueur en fonction des informations relatives au compilateur et au fichier .EXE.<br />-   **Script** appelle un débogueur pour les scripts.<br />-   **GPU uniquement** est destiné au code C++ AMP qui s’exécute sur un périphérique GPU ou sur le rastériseur de référence DirectX. Consultez [du code GPU débogage](../debugger/debugging-gpu-code.md). |
+| **Environnement** (les débogueur Windows Local et débogueur de Windows à distance) | Spécifie les variables d'environnement du programme que vous déboguez. Utilisez la syntaxe de variable d’environnement standard (par exemple, `PATH="%SystemRoot%\..."`). Ces variables se substituent à l’environnement système ou fusionnent avec lui, selon le paramètre **Fusion de l’environnement**. Lorsque vous cliquez sur dans la colonne Paramètres, une « modification... » s’affiche. Sélectionnez ce lien pour modifier les variables d’environnement. |
 | **Fusion de l’environnement** (Débogueur Windows local) | Détermine si les variables spécifiées dans la zone **Environnement** doivent fusionner avec l’environnement défini par le système d’exploitation. Le paramètre par défaut est Oui. |
 | **Débogage SQL** (tous sauf le débogueur de cluster MPI) | Active le débogage de procédures SQL à partir de votre application [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Le paramètre par défaut est Non. |
 | **Type d’accélérateur de débogage** (débogage GPU uniquement) | Spécifie le périphérique GPU à utiliser pour le débogage. L'installation des pilotes de périphériques GPU compatibles ajoutera des options supplémentaires. Le paramètre par défaut est **GPU - Émulateur de logiciel**. |
 | **Comportement du point d’arrêt par défaut GPU** (débogage GPU uniquement) | Spécifie si un événement de point d'arrêt doit être déclenché pour chaque thread dans une chaîne SIMD. Le paramètre par défaut consiste à déclencher l'événement de point d'arrêt une seule fois par distorsion. |
 | **Accélérateur par défaut de l’AMP** | Spécifie l'accélérateur AMP par défaut lors du débogage du code GPU. Choisissez **Accélérateur logiciel WARP** pour déterminer si un problème est causé par le matériel ou par un pilote, au lieu de votre code. |
-| **Répertoire de déploiement** (Débogueur Windows distant) | Spécifie le chemin d’accès sur l’ordinateur distant où la sortie de projet sera copiée avant le lancement. Le chemin d’accès peut être un partage réseau sur l’ordinateur distant, ou il peut s’agir d’un chemin d’accès à un dossier sur l’ordinateur distant. Le paramètre par défaut est vide, ce qui signifie que la sortie du projet n'est pas copiée dans un partage réseau. Pour activer le déploiement des fichiers, vous devez cocher la case **Déployer** dans la boîte de dialogue Gestionnaire de configurations. Pour plus d’informations, consultez [Guide pratique pour créer et modifier des configurations](../ide/how-to-create-and-edit-configurations.md). |
-| **Fichiers supplémentaires à déployer** (débogueur distant Windows) | Si la propriété répertoire de déploiement est définie, il s’agit d’une liste délimitée par des points-virgules des fichiers supplémentaires à copier dans le répertoire de déploiement. Le paramètre par défaut est vide, ce qui signifie qu'aucun fichier supplémentaire n'est copié dans le répertoire de déploiement. Pour activer le déploiement des fichiers, vous devez cocher la case **Déployer** dans la boîte de dialogue Gestionnaire de configurations. Pour plus d’informations, consultez [Guide pratique pour créer et modifier des configurations](../ide/how-to-create-and-edit-configurations.md). |
+| **Répertoire de déploiement** (Débogueur Windows distant) | Spécifie le chemin d’accès sur l’ordinateur distant où la sortie de projet sera copiée avant le lancement. Le chemin d’accès peut être un partage réseau sur l’ordinateur distant, ou il peut s’agir d’un chemin d’accès à un dossier sur l’ordinateur distant. Le paramètre par défaut est vide, ce qui signifie que la sortie du projet n'est pas copiée dans un partage réseau. Pour activer le déploiement des fichiers, vous devez cocher la case **Déployer** dans la boîte de dialogue Gestionnaire de configurations. Pour plus d'informations, voir [Procédure : créer et modifier des configurations](../ide/how-to-create-and-edit-configurations.md). |
+| **Fichiers supplémentaires à déployer** (débogueur distant Windows) | Si la propriété répertoire de déploiement est définie, il s’agit d’une liste délimitée par des points-virgules des fichiers supplémentaires à copier dans le répertoire de déploiement. Le paramètre par défaut est vide, ce qui signifie qu'aucun fichier supplémentaire n'est copié dans le répertoire de déploiement. Pour activer le déploiement des fichiers, vous devez cocher la case **Déployer** dans la boîte de dialogue Gestionnaire de configurations. Pour plus d'informations, voir [Procédure : créer et modifier des configurations](../ide/how-to-create-and-edit-configurations.md). |
 | **Déployer les bibliothèques runtime de débogage Visual C++** (Débogueur Windows distant) | Si la propriété du répertoire de déploiement est définie, elle spécifie si les bibliothèques d'exécution du débogage Visual C++ pour la plateforme actuelle doivent être copiées au partage réseau ou non. Le paramètre par défaut est Oui. |
 
 ## <a name="cc-folder-general-category"></a>Dossier C/C++ (catégorie Général)
@@ -188,6 +188,6 @@ Pour déboguer des DLL qui sont externes à votre projet, consultez [projets DLL
 ## <a name="see-also"></a>Voir aussi
 - [Débogage du code natif](../debugger/debugging-native-code.md)
 - [Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md)
-- [Créer et gérer des projets Visual C++](/cpp/ide/creating-and-managing-visual-cpp-projects)
+- [Créer et gérer Visual C++ projets](/cpp/ide/creating-and-managing-visual-cpp-projects)
 - [/ASSEMBLYDEBUG (Ajouter DebuggableAttribute)](/cpp/build/reference/assemblydebug-add-debuggableattribute)
 - [Macros courantes pour les propriétés et les commandes de build](/cpp/ide/common-macros-for-build-commands-and-properties)

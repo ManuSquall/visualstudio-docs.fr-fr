@@ -12,12 +12,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b32966dd8a64c4688878ab2843893a1f2a9a3cff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5923bc99906cf4bcad8ea92ad74a30470fb41a1c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069664"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432733"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>Procédure : Installer le Profiler autonome
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "60069664"
 [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] fournit un profileur autonome basé sur la ligne de commande qui peut être exécuté sans installer l’IDE [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Cette situation se produit quand un environnement de développement n’est pas ou ne peut pas être installé sur un ordinateur. Par exemple, vous ne devez pas installer un environnement de développement sur un serveur web de production.  
   
 > [!NOTE]
->  Quand vous utilisez le profileur autonome pour collecter des données de performances pour un site web ASP.NET, l’outil en ligne de commande [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) est préférable à l’outil [VSPerfCmd](../profiling/vsperfcmd.md).  
+> Quand vous utilisez le profileur autonome pour collecter des données de performances pour un site web ASP.NET, l’outil en ligne de commande [VSPerfASPNetCmd](../profiling/vsperfaspnetcmd.md) est préférable à l’outil [VSPerfCmd](../profiling/vsperfcmd.md).  
   
 ### <a name="to-install-the-stand-alone-profiler"></a>Pour installer le profileur autonome  
   
@@ -34,12 +34,12 @@ ms.locfileid: "60069664"
 2. Ajoutez les chemins pour vsintr.exe et msdis150.dll au chemin du système.  
   
     > [!NOTE]
-    >  Dans l’installation par défaut de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vsinstr.exe et msdis150.dll se trouvent dans \Program Files\Visual Studio 10\Team Tools\Performance Tools.  
+    > Dans l’installation par défaut de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], vsinstr.exe et msdis150.dll se trouvent dans \Program Files\Visual Studio 10\Team Tools\Performance Tools.  
   
 3. À l’invite de commandes, entrez **VSInstr**.  
   
     > [!NOTE]
-    >  Si les informations d’utilisation pour vsinstr.exe s’affichent, c’est que tout est configuré correctement. Si vous voyez une erreur indiquant que vsinstr.exe ou une de ses dépendances est introuvable, vérifiez que vos chemins sont correctement configurés, comme décrit à l’étape 2.  
+    > Si les informations d’utilisation pour vsinstr.exe s’affichent, c’est que tout est configuré correctement. Si vous voyez une erreur indiquant que vsinstr.exe ou une de ses dépendances est introuvable, vérifiez que vos chemins sont correctement configurés, comme décrit à l’étape 2.  
   
 4. Configurez le serveur de symboles en affectant à votre variable **_NT_SYMBOL_PATH** la valeur **symsrv\*symsrv.dll\*c:\localcache\*http://msdl.microsoft.com/download/symbols**  
   
@@ -48,7 +48,7 @@ ms.locfileid: "60069664"
      **start %COMSPEC%**  
   
     > [!NOTE]
-    >  Pour obtenir des instructions détaillées sur la façon de configurer le package du serveur de symboles, consultez [Guide pratique Informations de symboles de référence Windows](../profiling/how-to-reference-windows-symbol-information.md).  
+    > Pour obtenir des instructions détaillées sur la façon de configurer le package du serveur de symboles, consultez [Guide pratique Informations de symboles de référence Windows](../profiling/how-to-reference-windows-symbol-information.md).  
   
 6. Utilisez l’outil [VSPerfReport](../profiling/vsperfreport.md) pour sérialiser vos symboles dans le fichier de profilage de données (.vsp). Utilisez les commutateurs **VSPerfReport /summary:all /packsymbols**. Si aucun symbole n’est inséré dans votre fichier de données, vérifiez que la variable d’environnement _NT_SYMBOL_PATH est définie.  
   

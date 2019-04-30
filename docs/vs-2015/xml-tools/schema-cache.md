@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8667c55eed6de6b2b3c76af2ef45a5357a254516
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0ed32908212f158532e5553752ef5c0b70306fe6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115989"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435340"
 ---
 # <a name="schema-cache"></a>Cache de schéma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ L'éditeur XML fournit un cache de schéma dans le répertoire %InstallRoot%\Xml
  L'éditeur charge le répertoire de cache de schéma lors du chargement du package de l'éditeur XML et contrôle si des modifications ont été apportées pendant l'exécution. Si un schéma a été ajouté, il est automatiquement chargé dans un index en mémoire des schémas connus. Si un schéma a été supprimé, il est automatiquement effacé de l'index en mémoire. Si un schéma a été mise à jour, il invalide automatiquement le cache en mémoire de ce schéma.  
 
 > [!NOTE]
->  Étant donné que le répertoire de cache de schéma est global sur votre ordinateur, n'y ajoutez que des schémas standard et utiles pour tous les projets Visual Studio susceptibles d'être créés sur votre ordinateur.  
+> Étant donné que le répertoire de cache de schéma est global sur votre ordinateur, n'y ajoutez que des schémas standard et utiles pour tous les projets Visual Studio susceptibles d'être créés sur votre ordinateur.  
 
  L'éditeur XML prend également en charge un nombre quelconque de fichiers catalogue de schémas dans le répertoire de cache de schéma. Les catalogues de schémas peuvent pointer vers d'autres emplacements de schémas que l'éditeur doit toujours reconnaître. Le fichier catalog.xsd définit le format du fichier catalogue et est inclus dans le répertoire de cache de schéma. Le fichier catalog.xml est le catalogue par défaut, qui contient des liens vers d'autres schémas du répertoire %InstallDir%. Voici un échantillon du fichier catalog.xml :  
 
@@ -105,7 +105,7 @@ L'éditeur XML fournit un cache de schéma dans le répertoire %InstallRoot%\Xml
  Vous pouvez personnaliser l’emplacement du cache de schéma à l’aide du **divers** page d’options. Si vous avez un répertoire de schémas favoris, l'éditeur peut être configuré pour utiliser ces schémas au lieu de ceux par défaut.  
 
 > [!NOTE]
->  Ce changement n'affecte que l'utilisateur actuel de Visual Studio.  
+> Ce changement n'affecte que l'utilisateur actuel de Visual Studio.  
 
 #### <a name="to-change-the-schema-cache-location"></a>Pour modifier l'emplacement du cache de schéma  
 

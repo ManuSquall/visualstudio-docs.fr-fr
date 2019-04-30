@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2710e529ea558b87527e84865717645116b6b36
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 915a6c6d06380aa67c2c79ce52598668a9b33f18
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069547"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442380"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Bien démarrer avec les langages spécifiques à un domaine
 
@@ -294,7 +294,7 @@ Renommez les classes de domaine existants et les relations. Par exemple, à part
          Définissez son nom, par exemple **Town**.
 
         > [!NOTE]
-        >  Chaque classe de domaine à l’exception de la racine du modèle doit être la cible d’au moins une relation d’incorporation, ou il doit hériter d’une classe qui est la cible d’une imbrication. Pour cette raison, il est souvent pratique de créer une classe de domaine à l’aide de l’outil de relation d’incorporation.
+        > Chaque classe de domaine à l’exception de la racine du modèle doit être la cible d’au moins une relation d’incorporation, ou il doit hériter d’une classe qui est la cible d’une imbrication. Pour cette raison, il est souvent pratique de créer une classe de domaine à l’aide de l’outil de relation d’incorporation.
 
     2. Ajouter une propriété de domaine à la nouvelle classe, par exemple **nom**.
 
@@ -305,7 +305,7 @@ Renommez les classes de domaine existants et les relations. Par exemple, à part
          ![Fragment de définition DSL : racine d'arbre généalogique](../modeling/media/familyt_root.png)
 
         > [!NOTE]
-        >  Référence représentent des références croisées à partir d’une partie de l’arborescence du modèle vers un autre.
+        > Référence représentent des références croisées à partir d’une partie de l’arborescence du modèle vers un autre.
 
 3. Ajoutez une forme pour représenter des villes sur les diagrammes de modèle.
 

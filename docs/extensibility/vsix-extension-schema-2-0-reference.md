@@ -11,18 +11,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a029345afb8b54c85d35e500e4ada48c02c54ff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7cf2840c22bcddb9090cb078be6a8ad53d1ca1aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114520"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411141"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Référence de schéma 2.0 d’extension VSIX
 Un fichier de manifeste de déploiement VSIX décrit le contenu d’un package VSIX. Le format de fichier est régi par un schéma. La version 2.0 de ce schéma prend en charge l’ajout d’attributs et types personnalisés.  Le schéma du manifeste est extensible. Le chargeur de manifeste ignore les éléments et attributs qui ne comprend pas XML.
 
 > [!IMPORTANT]
->  Visual Studio 2015 peut charger des fichiers VSIX dans les formats de Visual Studio 2010, Visual Studio 2012 ou Visual Studio 2013.
+> Visual Studio 2015 peut charger des fichiers VSIX dans les formats de Visual Studio 2010, Visual Studio 2012 ou Visual Studio 2013.
 
 ## <a name="package-manifest-schema"></a>Schéma de manifeste de package
  L’élément racine du fichier XML manifeste est `<PackageManifest>`. Il possède un attribut unique `Version`, qui est la version du format de manifeste. Si des modifications majeures sont apportées au format, le format de version est modifié. Cet article décrit la version de format de manifeste 2.0, qui est spécifiée dans le manifeste en définissant le `Version` avec la valeur de Version = « 2.0 ».

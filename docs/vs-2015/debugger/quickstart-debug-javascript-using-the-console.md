@@ -20,12 +20,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b03f7c69e5eac71f9edc790df31d9704a141e590
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 313c189a05ae2a4e338c6f6bb9d7e9341e34284c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065686"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446119"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Démarrage rapide : Déboguer du code JavaScript à l’aide de la console
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 - [Basculement du contexte d’exécution du script](#Switching)  
   
 > [!TIP]
->  Si la fenêtre de la console JavaScript est fermée, sélectionnez **Déboguer**>**Fenêtres** > **Console JavaScript** pour la rouvrir. La fenêtre s’ouvre uniquement pendant une session de débogage de script.  
+> Si la fenêtre de la console JavaScript est fermée, sélectionnez **Déboguer**>**Fenêtres** > **Console JavaScript** pour la rouvrir. La fenêtre s’ouvre uniquement pendant une session de débogage de script.  
   
  À l’aide de la fenêtre de la console JavaScript, vous pouvez interagir avec votre application sans interrompre et redémarrer le débogueur. Pour plus d’informations, consultez [actualiser une application (JavaScript)](../debugger/refresh-an-app-javascript.md). Pour plus d’informations sur les fonctionnalités, comme à l’aide de l’Explorateur DOM et la définition des points d’arrêt, de débogage de JavaScript, consultez [Guide de démarrage rapide : Déboguer le code HTML et CSS](../debugger/quickstart-debug-html-and-css.md) et [déboguer des applications dans Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
@@ -67,7 +67,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
  La procédure suivante crée une application `FlipView` et montre comment déboguer interactivement une erreur de codage JavaScript.  
   
 > [!CAUTION]
->  L’exemple utilisé ici est une application du Windows Store. Toutefois, les fonctionnalités de la console décrites ici s’appliquent également aux applications créées à l’aide de Visual Studio Tools pour Apache Cordova.  
+> L’exemple utilisé ici est une application du Windows Store. Toutefois, les fonctionnalités de la console décrites ici s’appliquent également aux applications créées à l’aide de Visual Studio Tools pour Apache Cordova.  
   
 #### <a name="to-debug-javascript-code-in-the-flipview-app"></a>Pour déboguer le code JavaScript dans l’application FlipView  
   
@@ -182,7 +182,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
      Copiez et collez ce code dans l’invite d’entrée de la console JavaScript.  
   
     > [!TIP]
-    >  Lorsque vous collez plusieurs lignes de code dans l’invite d’entrée de la console JavaScript, l’invite passe automatiquement en mode multiligne. Appuyez sur Ctrl+Alt+M pour activer ou désactiver le mode multiligne. Pour exécuter un script en mode multiligne, appuyez sur Ctrl+Entrée ou sélectionnez le symbole représentant une flèche dans l’angle inférieur droit de la fenêtre. Pour plus d’informations, consultez [Mode à ligne simple et mode multiligne dans la fenêtre de la console JavaScript](#SinglelineMultilineMode).  
+    > Lorsque vous collez plusieurs lignes de code dans l’invite d’entrée de la console JavaScript, l’invite passe automatiquement en mode multiligne. Appuyez sur Ctrl+Alt+M pour activer ou désactiver le mode multiligne. Pour exécuter un script en mode multiligne, appuyez sur Ctrl+Entrée ou sélectionnez le symbole représentant une flèche dans l’angle inférieur droit de la fenêtre. Pour plus d’informations, consultez [Mode à ligne simple et mode multiligne dans la fenêtre de la console JavaScript](#SinglelineMultilineMode).  
   
 12. Corrigez les appels de fonction `push` dans l’invite en remplaçant `pages.push` par `Data.items.setAt`. Le code corrigé doit se présenter comme suit :  
   
@@ -193,7 +193,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
     ```  
   
     > [!TIP]
-    >  Si vous voulez utiliser l’objet `pages` à la place de `Data.items`, vous devez définir un point d’arrêt dans votre code pour conserver l’objet `pages` dans la portée.  
+    > Si vous voulez utiliser l’objet `pages` à la place de `Data.items`, vous devez définir un point d’arrêt dans votre code pour conserver l’objet `pages` dans la portée.  
   
 13. Pour exécuter le script, sélectionnez la flèche verte.  
   

@@ -10,12 +10,12 @@ ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 75a51cbe851b6566ab210a3c8ae12a9b7c2e0d2b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e78cefa9778e2889130f865e4c61cc8a97014db7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107656"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444658"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>Analyser des problèmes de mémoire liés à .NET Framework
 Vous pouvez identifier les fuites et l'utilisation inefficace de la mémoire dans le code .NET Framework à l'aide de l'analyseur de mémoire managée de Visual Studio. La version minimale de .NET Framework du code cible est .NET Framework 4.5.  
@@ -59,7 +59,7 @@ Vous pouvez identifier les fuites et l'utilisation inefficace de la mémoire dan
  Analyse les informations contenues dans l’outil d’analyse de mémoire *fichiers dump* qui contiennent des informations sur le tas. Vous pouvez créer des fichiers de vidage dans Visual Studio, ou vous pouvez utiliser un outil tel que [ProcDump](http://technet.microsoft.com/sysinternals/dd996900.aspx) de [Windows Sysinternals](http://technet.microsoft.com/sysinternals). Consultez [qu’est un fichier de vidage, et comment en créer une ?](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) sur le blog de l’équipe de débogage Visual Studio.  
   
 > [!NOTE]
->  La plupart des outils peuvent recueillir des informations de dump avec ou sans données de mémoire de tas complètes. L'analyseur de mémoire de Visual Studio nécessite des informations de tas complètes.  
+> La plupart des outils peuvent recueillir des informations de dump avec ou sans données de mémoire de tas complètes. L'analyseur de mémoire de Visual Studio nécessite des informations de tas complètes.  
   
  **Pour recueillir un dump à partir de Visual Studio**  
   

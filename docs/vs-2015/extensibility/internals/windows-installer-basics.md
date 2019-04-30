@@ -11,12 +11,12 @@ ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2566c97a4dc025e27aecf64a7a8950a578882348
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 516deb626bd8c6056612fcc481b9d530da504b9d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054378"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437271"
 ---
 # <a name="windows-installer-basics"></a>Éléments de base de Windows Installer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Le programme d’installation de Windows installe et désinstalle des applicatio
  Deux ensembles de règles déterminent le déploiement des ressources via les composants de votre installation. Un ensemble de règles est géré par le programme d’installation de Windows lui-même, tandis que vous devez appliquer le second ensemble en tant qu’auteur de l’installation.  
   
 > [!NOTE]
->  Mise en œuvre de règles Windows Installer se produit uniquement si vous exécutez une validation de votre fichier .msi. Néanmoins, vous sont veillé à traiter ces règles comme meilleures pratiques. Pour plus d’informations, consultez [validation d’une base de données d’Installation](http://msdn.microsoft.com/library/aa372477\(VS.85\).aspx) et [Validation du Package](http://msdn.microsoft.com/library/aa370569\(VS.85\).aspx).  
+> Mise en œuvre de règles Windows Installer se produit uniquement si vous exécutez une validation de votre fichier .msi. Néanmoins, vous sont veillé à traiter ces règles comme meilleures pratiques. Pour plus d’informations, consultez [validation d’une base de données d’Installation](http://msdn.microsoft.com/library/aa372477\(VS.85\).aspx) et [Validation du Package](http://msdn.microsoft.com/library/aa370569\(VS.85\).aspx).  
   
 #### <a name="installer-enforced-rules"></a>Règles appliquée par le programme d’installation  
   

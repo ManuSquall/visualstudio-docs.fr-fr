@@ -13,12 +13,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d22db963f895c4ca53a44e20bc0babd0dff49853
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fa7db2f55a89bd6c542bff0cf30ee058e339f15c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433286"
 ---
 # <a name="customizing-deletion-behavior"></a>Personnalisation du comportement de la commande de suppression
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ La suppression d'un élément provoque généralement aussi la suppression des �
  Les options dans le fichier de définition DSL vous permettent uniquement de choisir si la suppression se propage à un voisin immédiat. Pour implémenter un modèle plus complexe de propagation de la suppression, vous pouvez écrire du code de programme.  
   
 > [!NOTE]
->  Pour ajouter du code de programme à votre définition DSL, créez un fichier de code séparé dans le **Dsl** de projet et écrivez des définitions partielles pour augmenter les classes dans le dossier Code généré. Pour plus d’informations, consultez [écriture du Code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
+> Pour ajouter du code de programme à votre définition DSL, créez un fichier de code séparé dans le **Dsl** de projet et écrivez des définitions partielles pour augmenter les classes dans le dossier Code généré. Pour plus d’informations, consultez [écriture du Code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
 ## <a name="closure"></a> Définition d’une fermeture de suppression  
  L’opération de suppression utilise la classe _Votre_modèle_**DeleteClosure** pour déterminer les éléments à supprimer, étant donné une sélection initiale. Elle appelle `ShouldVisitRelationship()` et `ShouldVisitRolePlayer()` de manière répétée, en parcourant le graphique des relations. Vous pouvez substituer ces méthodes. Méthode ShouldVisitRolePlayer est fourni avec l’identité d’un lien et l’élément à un des rôles du lien. Elle doit retourner l'une des valeurs suivantes :  
@@ -213,7 +213,7 @@ partial class Artist
      Pour plus d’informations, consultez [gestionnaires propager les modifications en dehors le modèle d’événement](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
   
     > [!WARNING]
-    >  Quand un élément a été supprimé, vous pouvez accéder à ses valeurs de propriété de domaine, mais vous ne pouvez pas naviguer parmi les liens de relations. Toutefois, si vous avez défini un événement deleted sur une relation, vous pouvez aussi accéder aux deux éléments qui étaient ses acteurs de rôle. Par conséquent, si vous souhaitez répondre à la suppression d’un élément de modèle, mais souhaitez accéder à un élément auquel il a été lié, vous pouvez définir un événement de suppression sur la relation au lieu de la classe de domaine de l’élément de modèle.  
+    > Quand un élément a été supprimé, vous pouvez accéder à ses valeurs de propriété de domaine, mais vous ne pouvez pas naviguer parmi les liens de relations. Toutefois, si vous avez défini un événement deleted sur une relation, vous pouvez aussi accéder aux deux éléments qui étaient ses acteurs de rôle. Par conséquent, si vous souhaitez répondre à la suppression d’un élément de modèle, mais souhaitez accéder à un élément auquel il a été lié, vous pouvez définir un événement de suppression sur la relation au lieu de la classe de domaine de l’élément de modèle.  
   
 ### <a name="example-deletion-rules"></a>Exemple de règles de suppression  
   

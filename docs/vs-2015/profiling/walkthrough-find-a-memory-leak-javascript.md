@@ -16,12 +16,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0533ed4a4d1fc45b41f1e324b087cc0e249e1083
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5617dc6cbe4b7ba096afe1f308d06e7f4aaf9c6a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100444"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439659"
 ---
 # <a name="walkthrough-find-a-memory-leak-javascript"></a>Procédure pas à pas : Rechercher une fuite de mémoire (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 2. Dans le volet gauche, sélectionnez **JavaScript** , **Windows**, **Windows 8**, puis **Universel** ou **Applications Windows Phone**.  
   
     > [!IMPORTANT]
-    >  Les résultats d'utilisation de la mémoire présentés dans cette rubrique sont testés par rapport à une application Windows 8.  
+    > Les résultats d'utilisation de la mémoire présentés dans cette rubrique sont testés par rapport à une application Windows 8.  
   
 3. Choisissez le modèle de projet **Application vide** dans le volet du milieu.  
   
@@ -55,7 +55,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
     ```  
   
     > [!IMPORTANT]
-    >  Si vous utilisez un modèle d'application universelle Windows 8.1, vous devez mettre à jour le code HTML et CSS dans les projets .Windows et .WindowsPhone.  
+    > Si vous utilisez un modèle d'application universelle Windows 8.1, vous devez mettre à jour le code HTML et CSS dans les projets .Windows et .WindowsPhone.  
   
 6. Ouvrez default.css et ajoutez le CSS suivant :  
   
@@ -137,7 +137,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 1. Dans la barre d'outils **Déboguer** , dans la liste **Démarrer le débogage** , choisissez la cible de débogage pour le projet mis à jour : l'un des émulateurs Windows Phone ou **Simulateur**.  
   
    > [!TIP]
-   >  Pour une application du Windows Store, vous pouvez également sélectionner **Ordinateur local** ou **Ordinateur distant** dans cette liste. Toutefois, l'avantage d'utiliser l'émulateur ou le simulateur est que vous pouvez le placer en regard de Visual Studio et basculer facilement entre l'application en cours d'exécution et l'analyseur de mémoire JavaScript. Pour plus d’informations, consultez [Exécuter des applications à partir de Visual Studio](../debugger/run-store-apps-from-visual-studio.md) et [Exécuter des applications du Windows Store sur un ordinateur distant](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
+   > Pour une application du Windows Store, vous pouvez également sélectionner **Ordinateur local** ou **Ordinateur distant** dans cette liste. Toutefois, l'avantage d'utiliser l'émulateur ou le simulateur est que vous pouvez le placer en regard de Visual Studio et basculer facilement entre l'application en cours d'exécution et l'analyseur de mémoire JavaScript. Pour plus d’informations, consultez [Exécuter des applications à partir de Visual Studio](../debugger/run-store-apps-from-visual-studio.md) et [Exécuter des applications du Windows Store sur un ordinateur distant](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
 2. Dans le menu **Déboguer** , choisissez **Profileur de performances**.  
   
@@ -152,7 +152,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
     Lorsque vous sélectionnez le bouton, le code de gestion des événements dans default.js fonctionne, une fuite de mémoire se produit. Vous utiliserez cela à des fins de diagnostic.  
   
    > [!TIP]
-   >  Renouveler le scénario à tester pour une fuite de mémoire facilite l'exclusion d'informations sans intérêt, comme les objets ajoutés au tas au cours de l'initialisation de l'application ou lors du chargement d'une page.  
+   > Renouveler le scénario à tester pour une fuite de mémoire facilite l'exclusion d'informations sans intérêt, comme les objets ajoutés au tas au cours de l'initialisation de l'application ou lors du chargement d'une page.  
   
 5. À partir de l'application en cours d'exécution, basculez vers Visual Studio (Alt+Tab).  
   
@@ -171,14 +171,14 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
     ![L’instantané de ligne de base et instantané 2](../profiling/media/js-mem-app-snapshot2.png "JS_Mem_App_Snapshot2")  
   
    > [!NOTE]
-   >  Le Windows Phone Emulator n'affiche pas de capture d'écran de l'application au moment de la prise de l'instantané.  
+   > Le Windows Phone Emulator n'affiche pas de capture d'écran de l'application au moment de la prise de l'instantané.  
   
 9. Basculez vers l'application et choisissez à nouveau le bouton **Fuite de mémoire** .  
   
 10. Basculez vers Visual Studio et choisissez **Prendre un instantané du tas** pour la troisième fois.  
   
     > [!TIP]
-    >  En prenant un troisième instantané dans ce flux de travail, vous pouvez filtrer les modifications entre l'instantané de base et le deuxième instantané qui ne sont pas associées à des fuites de mémoire. Par exemple, certaines modifications peuvent être prévues, par exemple la mise à jour des en-têtes et des pieds de page sur une page, qui génère des modifications de l'utilisation de la mémoire, mais qui n'est peut-être pas liée à des fuites de mémoire.  
+    > En prenant un troisième instantané dans ce flux de travail, vous pouvez filtrer les modifications entre l'instantané de base et le deuxième instantané qui ne sont pas associées à des fuites de mémoire. Par exemple, certaines modifications peuvent être prévues, par exemple la mise à jour des en-têtes et des pieds de page sur une page, qui génère des modifications de l'utilisation de la mémoire, mais qui n'est peut-être pas liée à des fuites de mémoire.  
   
      Cette illustration montre l'instantané n°2 et l'instantané n°3.  
   
@@ -191,7 +191,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
     - La taille du tas (indiqué par la flèche Haut rouge à gauche) a augmenté de plusieurs Ko par rapport à l'instantané n°1.  
   
       > [!IMPORTANT]
-      >  Les valeurs exactes d'utilisation de la mémoire pour la taille du tas dépendent de la cible de débogage.  
+      > Les valeurs exactes d'utilisation de la mémoire pour la taille du tas dépendent de la cible de débogage.  
   
     - Le nombre d'objets sur le tas (indiqué par la flèche Haut rouge à droite) a augmenté par rapport à l'instantané n°1. Un objet a été ajouté (+1) et aucun objet n'a été supprimé (-0).  
   
@@ -222,7 +222,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
       Connaissance de l’application aide à ce stade : En choisissant le **fuite de mémoire** bouton doit supprimer un élément DIV et ajouter un élément, si le code ne semble pas fonctionner correctement (autrement dit, il les fuites de mémoire). La section suivante explique comment résoudre cela.  
   
     > [!TIP]
-    >  Parfois, la recherche d'un objet par rapport à l'objet `Global` peut aider à identifier cet objet. Pour cela, ouvrez le menu contextuel de l'identificateur et choisissez **Afficher en vue racine**.  
+    > Parfois, la recherche d'un objet par rapport à l'objet `Global` peut aider à identifier cet objet. Pour cela, ouvrez le menu contextuel de l'identificateur et choisissez **Afficher en vue racine**.  
   
 ## <a name="FixingMemory"></a> Résolution du problème de mémoire  
   

@@ -30,12 +30,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5cee90bd16f0b7a151ca826517f081a89518ff5b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d443a38750904df26fdfffc65104bcde31c8d6fc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437605"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Création et configuration de membres de type (Concepteur de classes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Vous pouvez ajouter ces membres aux types dans un diagramme de classes et config
 |Module (VB uniquement)|méthode, propriété, champ, événement, constructeur, constante|  
   
 > [!NOTE]
->  Lorsque les accesseurs get et set d’une propriété ne requièrent aucune logique supplémentaire, simplifiez la déclaration de la propriété en utilisant des propriétés implémentées automatiquement (C# uniquement). Pour afficher la signature complète, dans le menu **Diagramme de classes**, choisissez **Modifier le format des membres**, **Afficher la signature complète**. Pour plus d’informations sur les propriétés implémentées automatiquement, consultez [Propriétés implémentées automatiquement](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7).  
+> Lorsque les accesseurs get et set d’une propriété ne requièrent aucune logique supplémentaire, simplifiez la déclaration de la propriété en utilisant des propriétés implémentées automatiquement (C# uniquement). Pour afficher la signature complète, dans le menu **Diagramme de classes**, choisissez **Modifier le format des membres**, **Afficher la signature complète**. Pour plus d’informations sur les propriétés implémentées automatiquement, consultez [Propriétés implémentées automatiquement](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7).  
   
 ## <a name="common-tasks"></a>Tâches courantes  
   
@@ -85,10 +85,10 @@ Vous pouvez ajouter ces membres aux types dans un diagramme de classes et config
 - Fenêtre Détails de classe  
   
 > [!NOTE]
->  Vous pouvez aussi créer des constructeurs et des destructeurs à l'aide des procédures de cette section. N’oubliez pas que les constructeurs et les destructeurs constituent des genres particuliers de méthodes et que, comme tels, ils apparaissent dans le compartiment **Méthodes** des formes du diagramme de classes et dans la section **Méthodes** de la grille de fenêtre Détails de classe.  
+> Vous pouvez aussi créer des constructeurs et des destructeurs à l'aide des procédures de cette section. N’oubliez pas que les constructeurs et les destructeurs constituent des genres particuliers de méthodes et que, comme tels, ils apparaissent dans le compartiment **Méthodes** des formes du diagramme de classes et dans la section **Méthodes** de la grille de fenêtre Détails de classe.  
   
 > [!NOTE]
->  La seule entité que vous pouvez ajouter à un délégué est un paramètre. Notez que la procédure intitulée « Pour créer un membre à l'aide de la barre d'outils de la fenêtre Détails de classe » n'est pas valide pour cette action.  
+> La seule entité que vous pouvez ajouter à un délégué est un paramètre. Notez que la procédure intitulée « Pour créer un membre à l'aide de la barre d'outils de la fenêtre Détails de classe » n'est pas valide pour cette action.  
   
 #### <a name="to-create-a-member-using-class-designer"></a>Pour créer un membre à l'aide du Concepteur de classes  
   
@@ -182,7 +182,7 @@ Vous pouvez ajouter ces membres aux types dans un diagramme de classes et config
 3. Modifiez les valeurs des champs de la grille de la fenêtre Détails de classe. Après chaque modification, appuyez sur ENTRÉE ou éloignez le focus du champ modifié, par exemple en appuyant sur la touche TAB. Les modifications sont immédiatement répercutées dans le code.  
   
     > [!NOTE]
-    >  Si vous souhaitez modifier uniquement le nom d'un membre, vous pouvez le faire à l'aide de la modification sur place.  
+    > Si vous souhaitez modifier uniquement le nom d'un membre, vous pouvez le faire à l'aide de la modification sur place.  
   
 ## <a name="AddMethodParams"></a> Ajout de paramètres aux méthodes  
  Ajoutez des paramètres aux méthodes à l'aide de la fenêtre Détails de classe. Les paramètres peuvent être configurés pour être obligatoires ou optionnels. La valeur de la propriété **Valeur par défaut facultative** d’un paramètre demande au concepteur de générer le code en tant que paramètre optionnel.  
@@ -216,10 +216,10 @@ Vous pouvez ajouter ces membres aux types dans un diagramme de classes et config
   La fenêtre Propriétés affiche les mêmes propriétés de paramètre affichées dans la fenêtre Détails de classe : **Nom**, **Type**, **Modificateur**, **Résumé**, ainsi que la propriété **Valeur par défaut facultative**. La modification d'une propriété dans un emplacement met à jour la valeur de la propriété de manière globale, y compris l'affichage de sa valeur dans l'autre emplacement.  
   
 > [!NOTE]
->  Pour ajouter un paramètre à un délégué, consultez [Création de membres](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).  
+> Pour ajouter un paramètre à un délégué, consultez [Création de membres](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).  
   
 > [!NOTE]
->  Bien qu'un destructeur soit une méthode, il ne peut pas avoir de paramètres.  
+> Bien qu'un destructeur soit une méthode, il ne peut pas avoir de paramètres.  
   
 ### <a name="HowToAddParameterToMethod"></a> Pour ajouter un paramètre à une méthode  
   
@@ -254,7 +254,7 @@ Vous pouvez ajouter ces membres aux types dans un diagramme de classes et config
 4. Dans la fenêtre Propriétés, tapez une valeur pour la propriété **Valeur par défaut facultative**. La définition de la propriété Valeur par défaut facultative d'un paramètre rend ce paramètre optionnel.  
   
     > [!NOTE]
-    >  Les paramètres optionnels doivent être les derniers paramètres dans la liste de paramètres.  
+    > Les paramètres optionnels doivent être les derniers paramètres dans la liste de paramètres.  
   
 ## <a name="ClassDetailsUsageNotes"></a> Notes d’utilisation de la fenêtre Détails de classe  
  Notez les conseils suivants pour utiliser la fenêtre Détails de classe.  

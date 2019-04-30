@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f0c0374f50894cefbb240c6349c9c2450734501d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c87b197219cec112a9235f4af6fb1a51ae793a88
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071848"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441028"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>Procédure : Ouvrir un modèle depuis un fichier dans le code du programme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Vous pouvez ouvrir les modèles DSL dans n’importe quelle application.
 3. Dans la fenêtre de propriétés de projet, sur le **Application** onglet, définissez la **framework cible** champ **.NET Framework 4**.  
   
 > [!NOTE]
->  Vous devrez peut-être effectuer cette opération même si vous avez sélectionné **.NET Framework 4** dans la boîte de dialogue de création de projet. Le framework cible ne doit pas être **.NET Framework 4 Client Profile**.  
+> Vous devrez peut-être effectuer cette opération même si vous avez sélectionné **.NET Framework 4** dans la boîte de dialogue de création de projet. Le framework cible ne doit pas être **.NET Framework 4 Client Profile**.  
   
 ## <a name="references"></a>Références  
  Vous devez ajouter ces références à votre [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projet d’application :  

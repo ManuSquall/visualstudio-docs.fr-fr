@@ -8,12 +8,12 @@ ms.assetid: f3fb5df4-3aae-40e4-9450-bbe15b0c5af5
 caps.latest.revision: 25
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: a1fc24d27d079576128cf437fb1ee05c2fc78404
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 62f40ffaa4df57672238274ca3a459dd3204bce3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417089"
 ---
 # <a name="troubleshooting-the-visual-studio-emulator-for-android"></a>Résolution des problèmes liés à l’émulateur Visual Studio pour Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -21,7 +21,7 @@ ms.locfileid: "60081552"
 Cette rubrique contient des informations pour vous aider à résoudre les problèmes que vous pouvez rencontrer quand vous utilisez l'Émulateur Visual Studio pour Android.
 
 > [!WARNING]
->  Quand l'émulateur est installé, le programme d'installation vérifie la configuration requise pour l'exécution du logiciel. Il affiche des avertissements si les composants requis ne sont pas présents, mais il ne les exige pas pour procéder à l'installation.
+> Quand l'émulateur est installé, le programme d'installation vérifie la configuration requise pour l'exécution du logiciel. Il affiche des avertissements si les composants requis ne sont pas présents, mais il ne les exige pas pour procéder à l'installation.
 
  Cette rubrique contient les sections suivantes.
 
@@ -70,7 +70,7 @@ Cette rubrique contient des informations pour vous aider à résoudre les probl�
  ![Android&#95;Emu&#95;Install&#95;Issue](../cross-platform/media/android-emu-install-issue.png "Android_Emu_Install_Issue")
 
 > [!NOTE]
->  Ce message concerne à la fois l’émulateur Visual Studio pour Android et l’émulateur Windows Phone. Windows 8.1 et Windows 10 prennent en charge l’émulateur.
+> Ce message concerne à la fois l’émulateur Visual Studio pour Android et l’émulateur Windows Phone. Windows 8.1 et Windows 10 prennent en charge l’émulateur.
 
  Si vous voyez ce message, consultez [System Requirements for the Visual Studio Emulator for Android](../cross-platform/system-requirements-for-the-visual-studio-emulator-for-android.md) pour vérifier si vous pouvez exécuter l’émulateur.
 

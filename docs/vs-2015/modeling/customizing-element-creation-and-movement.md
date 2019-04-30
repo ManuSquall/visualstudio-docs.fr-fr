@@ -13,12 +13,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ccf761521d43e3f5ff9d12a4af7fbae4addcddc9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f956f492c3dc690ef2edb67d9a7c75e6c0108820
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433269"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personnalisation de la création et du mouvement des éléments
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,9 +72,9 @@ Vous pouvez autoriser un élément à faire glisser vers un autre, à partir de 
    Par exemple, vous pouvez définir des propriétés dans l’élément fusionné à partir de son nouvel emplacement dans le modèle à l’aide des données.  
   
 > [!NOTE]
->  Si vous écrivez du code de fusion personnalisée, elle affecte uniquement les fusions qui sont effectuées en utilisant cette EMD. S’il existe des autres EMDs qui fusionnent le même type d’objet, ou en l’absence d’autre code personnalisé qui crée ces objets sans utiliser le EMD, puis elles ne seront pas affectées par votre code personnalisé de fusion.  
+> Si vous écrivez du code de fusion personnalisée, elle affecte uniquement les fusions qui sont effectuées en utilisant cette EMD. S’il existe des autres EMDs qui fusionnent le même type d’objet, ou en l’absence d’autre code personnalisé qui crée ces objets sans utiliser le EMD, puis elles ne seront pas affectées par votre code personnalisé de fusion.  
 >   
->  Si vous souhaitez vous assurer qu’un nouvel élément ou une nouvelle relation est toujours traitée par votre code personnalisé, vous pouvez définir un `AddRule` sur la relation d’incorporation et un `DeleteRule` sur la classe de domaine de l’élément. Pour plus d’informations, consultez [propager les modifications dans le modèle de règles](../modeling/rules-propagate-changes-within-the-model.md).  
+> Si vous souhaitez vous assurer qu’un nouvel élément ou une nouvelle relation est toujours traitée par votre code personnalisé, vous pouvez définir un `AddRule` sur la relation d’incorporation et un `DeleteRule` sur la classe de domaine de l’élément. Pour plus d’informations, consultez [propager les modifications dans le modèle de règles](../modeling/rules-propagate-changes-within-the-model.md).  
   
 ## <a name="example-defining-an-emd-without-custom-code"></a>Exemple : Définition d’une directive EMD sans code personnalisé  
  L’exemple suivant permet aux utilisateurs de créer un élément et un connecteur en même temps en faisant glisser à partir de la boîte à outils vers une forme existante. L’exemple ajoute une directive EMD à la définition DSL. Avant cette modification, les utilisateurs peuvent faire glisser outils sur le diagramme, mais pas sur des formes existantes.  

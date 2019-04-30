@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3133ea902717f4fea15cfb66b8d0050f7a538940
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4588a949b4b6439c3f76270b0bcdab9cd52c23d9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431214"
 ---
 # <a name="ca1031-do-not-catch-general-exception-types"></a>CA1031 : Ne pas intercepter des types d'exception générale
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ ms.locfileid: "58950818"
  Ne supprimez aucun avertissement de cette règle. Interception de types d’exception générale peut masquer des problèmes d’exécution à partir de l’utilisateur de la bibliothèque et peut compliquer le débogage.
 
 > [!NOTE]
->  En commençant par le [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)], le common language runtime (CLR) n’envoie plus d’exceptions d’état endommagé qui se produisent dans le système d’exploitation et le code managé, telles que des violations d’accès dans [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)], pour être gérées par le code managé. Si vous voulez compiler une application dans le [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] ou versions ultérieures et maintenir gestion des exceptions d’état endommagé, vous pouvez appliquer le <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> d’attribut à la méthode qui gère l’exception d’état endommagé.
+> En commençant par le [!INCLUDE[net_v40_long](../includes/net-v40-long-md.md)], le common language runtime (CLR) n’envoie plus d’exceptions d’état endommagé qui se produisent dans le système d’exploitation et le code managé, telles que des violations d’accès dans [!INCLUDE[TLA#tla_mswin](../includes/tlasharptla-mswin-md.md)], pour être gérées par le code managé. Si vous voulez compiler une application dans le [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] ou versions ultérieures et maintenir gestion des exceptions d’état endommagé, vous pouvez appliquer le <xref:System.Runtime.ExceptionServices.HandleProcessCorruptedStateExceptionsAttribute> d’attribut à la méthode qui gère l’exception d’état endommagé.
 
 ## <a name="example"></a>Exemple
  L’exemple suivant montre un type qui enfreint cette règle et un type qui implémente correctement le `catch` bloc.

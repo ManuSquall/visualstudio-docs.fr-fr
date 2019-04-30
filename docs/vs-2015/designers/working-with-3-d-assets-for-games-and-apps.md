@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 90bf88beafee6f263695b3614cf6385419b33efe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 020c934d3427dda77c41fb410143972d6f48656b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797593"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438096"
 ---
 # <a name="working-with-3-d-assets-for-games-and-apps"></a>Utilisation de ressources 3D pour les jeux et les applications
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Ce document décrit les outils [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que 
  Vous pouvez utiliser le concepteur Shader [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], qui est un outil de conception Shader graphique, pour créer des effets visuels personnalisés sans connaître la programmation HLSL.  
   
 > [!NOTE]
->  Pour plus d’informations sur la façon de démarrer avec la programmation DirectX, consultez [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Pour plus d’informations sur le débogage d’une application DirectX, consultez [Graphics Diagnostics (débogage DirectX Graphics)](../debugger/visual-studio-graphics-diagnostics.md).  
+> Pour plus d’informations sur la façon de démarrer avec la programmation DirectX, consultez [DirectX](http://go.microsoft.com/fwlink/p/?LinkId=224633). Pour plus d’informations sur le débogage d’une application DirectX, consultez [Graphics Diagnostics (débogage DirectX Graphics)](../debugger/visual-studio-graphics-diagnostics.md).  
   
 ## <a name="directx-version-compatibility"></a>Compatibilité des versions DirectX  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utilise DirectX pour afficher des ressources 2D et 3D. Vous pouvez sélectionner le renderer DirectX 11 ou le renderer logiciel de la plateforme WARP (Windows Advanced Rasterization Platform). Le renderer DirectX 11 fournit un rendu à accélération matérielle, hautes performances sur les GPU DirectX 11 et DirectX 10. Le renderer WARP aide à garantir que vos ressources s’exécutent avec une large gamme d’ordinateurs, dont les ordinateurs qui ne disposent pas de matériel graphique moderne et ceux qui disposent de matériel graphique intégré. Pour plus d’informations sur WARP, consultez [Guide de la plateforme WARP (Windows Advanced Rasterization Platform)](http://go.microsoft.com/fwlink/p/?LinkId=224634).  

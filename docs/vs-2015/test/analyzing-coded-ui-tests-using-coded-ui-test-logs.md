@@ -8,12 +8,12 @@ ms.assetid: 7e795873-1d4b-4a13-a52a-a411d87fb759
 caps.latest.revision: 15
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 18dbd175ddbf01a826d2a24b5d750cb00b64d28b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8010ad1f8bbb1e49afe9e5e527e9639f2fb14601
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098886"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442821"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analyse des tests codés de l'interface utilisateur à l'aide des journaux de test codé de l'interface utilisateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ Les journaux de tests codés de l'interface utilisateur filtrent et enregistrent
      Les tests automatisés s'exécuteront et un message indiquera s'ils ont réussi ou échoué.  
   
     > [!TIP]
-    >  Pour afficher l’Explorateur de tests depuis le menu **Test**, pointez sur **Windows**, puis choisissez **Explorateur de tests**.  
+    > Pour afficher l’Explorateur de tests depuis le menu **Test**, pointez sur **Windows**, puis choisissez **Explorateur de tests**.  
   
 4. Choisissez le lien **Sortie** dans les résultats de l’Explorateur de tests.  
   

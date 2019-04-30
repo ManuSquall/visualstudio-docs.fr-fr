@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 344975f0f28c8fc8ee6f8a213b519f0b17e5880a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3a3396caf4f1ade860f4727095d3305d86e837c3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105342"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434171"
 ---
 # <a name="text-template-control-blocks"></a>Blocs de contrôle des modèles de texte
 Les blocs de contrôle vous permettent d'écrire du code dans votre modèle de texte pour faire varier la sortie. Il existe trois types de blocs de contrôle, distingués par leurs crochets d'ouverture :
@@ -62,11 +62,11 @@ Found another one!
 ```
 
 > [!WARNING]
->  Utilisez toujours {...} pour délimiter les instructions imbriquées qui contiennent du texte brut incorporé. L'exemple suivant peut ne pas fonctionner correctement :
+> Utilisez toujours {...} pour délimiter les instructions imbriquées qui contiennent du texte brut incorporé. L'exemple suivant peut ne pas fonctionner correctement :
 >
->  `<# if (ShouldPrint) #> Some text. -- WRONG`
+> `<# if (ShouldPrint) #> Some text. -- WRONG`
 >
->  À la place, vous devez inclure des {accolades}, comme suit :
+> À la place, vous devez inclure des {accolades}, comme suit :
 
 ```
 
@@ -115,7 +115,7 @@ Some text.
 ```
 
 > [!NOTE]
->  Un bloc de contrôle de fonctionnalité de classe ne doit pas être suivi de blocs de contrôle standard dans le même fichier modèle. Toutefois, cette restriction ne s'applique pas au résultat de l'utilisation de directives `<#@include#>`. Chaque fichier inclus peut avoir des blocs standard suivis de blocs de fonctionnalité de classe.
+> Un bloc de contrôle de fonctionnalité de classe ne doit pas être suivi de blocs de contrôle standard dans le même fichier modèle. Toutefois, cette restriction ne s'applique pas au résultat de l'utilisation de directives `<#@include#>`. Chaque fichier inclus peut avoir des blocs standard suivis de blocs de fonctionnalité de classe.
 
  Vous pouvez créer une fonction qui génère une sortie en incorporant des blocs de texte et d'expression dans un bloc de contrôle de fonctionnalité de classe. Exemple :
 

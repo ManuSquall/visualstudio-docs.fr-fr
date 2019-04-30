@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e9e12894a6c526e70e9d2ea814c2634a271098d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 315a0e2f6c68a98eac8bb2c36d184ef68998e5ae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435135"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Procédure : Spécifier des événements de build (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Vous pouvez utiliser des événements de build en Visual Basic pour exécuter de
  Les événements de build sont spécifiés dans la boîte de dialogue **Événements de build**, disponible à partir de la page **Compiler** du **Concepteur de projets**.  
   
 > [!NOTE]
->  Visual Basic Express ne prend pas en charge l’entrée d’événements de build. Celle-ci n’est prise en charge que dans le produit Visual Studio complet.  
+> Visual Basic Express ne prend pas en charge l’entrée d’événements de build. Celle-ci n’est prise en charge que dans le produit Visual Studio complet.  
   
 ## <a name="how-to-specify-pre-build-and-post-build-events"></a>Comment spécifier des événements pré-build et des événements post-build  
   
@@ -45,10 +45,10 @@ Vous pouvez utiliser des événements de build en Visual Basic pour exécuter de
 4. Entrez les arguments de ligne de commande pour votre action pré-build ou post-build, puis cliquez sur **OK**.  
   
     > [!NOTE]
-    >  Ajoutez une instruction `call` avant toutes les commandes post-build qui exécutent des fichiers .bat. Par exemple, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.  
+    > Ajoutez une instruction `call` avant toutes les commandes post-build qui exécutent des fichiers .bat. Par exemple, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.  
   
     > [!NOTE]
-    >  Si votre événement pré-build ou post-build ne s’exécute pas correctement, vous pouvez terminer la génération en faisant en sorte que l’action d’événement s’achève avec un code autre que zéro (0), qui indique une action réussie.  
+    > Si votre événement pré-build ou post-build ne s’exécute pas correctement, vous pouvez terminer la génération en faisant en sorte que l’action d’événement s’achève avec un code autre que zéro (0), qui indique une action réussie.  
   
 ## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>Exemple : Comment modifier les informations de manifeste à l’aide d’un événement post-Build  
  La procédure suivante montre comment définir la version minimale du système d’exploitation dans le manifeste d’application à l’aide d’une commande .exe appelée à partir d’un événement post-build (fichier .exe.manifest dans le répertoire du projet). La version minimale du système d’exploitation est un nombre en quatre parties, tel que 4.10.0.0. Pour ce faire, la commande modifie la section `<dependentOS>` du manifeste :  

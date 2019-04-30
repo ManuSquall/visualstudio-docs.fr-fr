@@ -15,12 +15,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 626be40ed9889ff7d16c07d511cbd060232412af
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 16bc3bf0f2cb7fa51a42986ee99976410ca7874a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105061"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439735"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>Diagrammes d’activités UML : Recommandations
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ Dans Visual Studio, vous pouvez dessiner un diagramme d'activités pour décrire
      Commencez par placer les activités principales sur le diagramme, connectez-les, puis apportez les dernières finitions telles que les nœuds initiaux et finaux.  
   
     > [!NOTE]
-    >  Vous ne pouvez pas faire glisser d'éléments existants sur le diagramme à partir de l'Explorateur de modèles UML.  
+    > Vous ne pouvez pas faire glisser d'éléments existants sur le diagramme à partir de l'Explorateur de modèles UML.  
   
 2. Pour connecter les éléments, procédez comme suit :  
   
@@ -87,7 +87,7 @@ Dans Visual Studio, vous pouvez dessiner un diagramme d'activités pour décrire
     3. Cliquez sur l'élément cible.  
   
         > [!NOTE]
-        >  Pour utiliser un outil plusieurs fois, double-cliquez sur celui-ci dans la boîte à outils.  
+        > Pour utiliser un outil plusieurs fois, double-cliquez sur celui-ci dans la boîte à outils.  
   
 #### <a name="to-move-an-activity-to-another-package"></a>Pour déplacer une activité vers un autre package  
   
@@ -98,7 +98,7 @@ Dans Visual Studio, vous pouvez dessiner un diagramme d'activités pour décrire
 - Dans **Explorateur de modèles UML**, cliquez sur l’activité et cliquez sur **couper**. Cliquez sur le package, puis cliquez sur **coller**.  
   
     > [!NOTE]
-    >  L'activité apparaît uniquement dans l'Explorateur de modèles UML quand vous ajoutez le premier élément au diagramme.  
+    > L'activité apparaît uniquement dans l'Explorateur de modèles UML quand vous ajoutez le premier élément au diagramme.  
   
 ## <a name="SimpleControlFlow"></a> Description du flux de contrôle  
  Un diagramme d'activités décrit un processus d'entreprise ou un algorithme de logiciel sous la forme d'une série d'actions. Les flèches du connecteur montrent la façon dont le contrôle passe de manière séquentielle d'une action à la suivante. En règle générale, une action peut uniquement démarrer au terme de l'exécution de l'action précédente.  
@@ -112,7 +112,7 @@ Dans Visual Studio, vous pouvez dessiner un diagramme d'activités pour décrire
 - Créer un **Action** (1) pour chaque tâche principale exécutée par un utilisateur, le système ou à la fois en collaboration.  
   
   > [!NOTE]
-  >  Essayez de décrire votre processus ou algorithme avec seulement quelques actions. Vous pouvez utiliser **action appeler un comportement** pour définir chaque action plus en détail dans un diagramme séparé, comme décrit dans [description des sous-activités avec des Actions appeler un comportement](#Subactivities).  
+  > Essayez de décrire votre processus ou algorithme avec seulement quelques actions. Vous pouvez utiliser **action appeler un comportement** pour définir chaque action plus en détail dans un diagramme séparé, comme décrit dans [description des sous-activités avec des Actions appeler un comportement](#Subactivities).  
   
 - Assurez-vous que le titre de chaque action indique clairement ce qu'elle accomplit normalement.  
   
@@ -133,12 +133,12 @@ Dans Visual Studio, vous pouvez dessiner un diagramme d'activités pour décrire
 - Utilisez un **nœud de fusion** (5) pour réunir deux ou plusieurs autres flux possédant des branches à un **nœud de décision**.  
   
     > [!NOTE]
-    >  Vous devez utiliser un **nœud de fusion** pour rassembler les autres flux, au lieu de réunir les flux à une action. Dans l’exemple, il serait correcte pour se connecter à partir du nœud de décision directement dans le **choisir un élément de Menu**. Cela est dû au fait qu'une action ne démarre pas tant que les threads de contrôle ne sont pas arrivés au niveau de tous leurs connecteurs entrants. Par conséquent, vous devez réunir uniquement des flux simultanés au niveau d'une action. Pour plus d’informations, consultez [flux simultanés](#Concurrent).  
+    > Vous devez utiliser un **nœud de fusion** pour rassembler les autres flux, au lieu de réunir les flux à une action. Dans l’exemple, il serait correcte pour se connecter à partir du nœud de décision directement dans le **choisir un élément de Menu**. Cela est dû au fait qu'une action ne démarre pas tant que les threads de contrôle ne sont pas arrivés au niveau de tous leurs connecteurs entrants. Par conséquent, vous devez réunir uniquement des flux simultanés au niveau d'une action. Pour plus d’informations, consultez [flux simultanés](#Concurrent).  
   
 - Utilisez des branches pour décrire des boucles, comme indiqué dans l'exemple.  
   
     > [!NOTE]
-    >  Essayez d'imbriquer les boucles de manière structurée, comme vous le feriez dans le code du programme. Si vous décrivez un processus d'entreprise existant, vous découvrirez peut-être des moyens de l'améliorer.  
+    > Essayez d'imbriquer les boucles de manière structurée, comme vous le feriez dans le code du programme. Si vous décrivez un processus d'entreprise existant, vous découvrirez peut-être des moyens de l'améliorer.  
   
 ### <a name="starting-the-activity"></a>Démarrage de l'activité  
  Vous pouvez indiquer les points d'entrée dans une activité de deux façons :  
@@ -182,7 +182,7 @@ Dans Visual Studio, vous pouvez dessiner un diagramme d'activités pour décrire
 - Utilisez un **broche de sortie** et un **broche d’entrée**. Cette méthode vous permet de décrire séparément les sorties d'une action et les entrées vers une autre. Les broches s'apparentent aux paramètres dans un programme. Les broches représentent des ports par lesquels les objets peuvent entrer dans une action et la quitter.  
   
     > [!NOTE]
-    >  Pour une vue d’ensemble des éléments utilisés dans cette section, consultez la section flux de données de la rubrique [diagrammes d’activités UML : Référence](../modeling/uml-activity-diagrams-reference.md).  
+    > Pour une vue d’ensemble des éléments utilisés dans cette section, consultez la section flux de données de la rubrique [diagrammes d’activités UML : Référence](../modeling/uml-activity-diagrams-reference.md).  
   
 ### <a name="describing-data-flow-with-object-nodes"></a>Description du flux de données à l'aide de nœuds d'objet  
  La plupart des flux de contrôle transportent des données. Par exemple, le flux de sortie de l'action « Le client fournit des détails » transporte une référence à l'adresse d'expédition.  
@@ -198,7 +198,7 @@ Dans Visual Studio, vous pouvez dessiner un diagramme d'activités pour décrire
  Vous pouvez définir le **Type** du nœud d’objet dans la fenêtre Propriétés. Le type peut être un type primitif tel qu'un entier, ou une classe, une interface ou une énumération que vous avez définie dans un diagramme de classes. Par exemple, vous pouvez créer une classe Adresse d'expédition, avec les attributs Adresse postale, Ville, etc. ainsi qu'une association à une autre classe nommée Client. Pour plus d'informations, consultez [Diagrammes de classes UML : Les instructions](../modeling/uml-class-diagrams-guidelines.md).  
   
 > [!NOTE]
->  Si vous tapez le nom d’un type qui n’a pas encore été défini, un élément est ajouté sous **Types non spécifiés** dans l’Explorateur de modèles UML. Si vous définissez par la suite un type de ce nom dans un diagramme de classes, vous devez réinitialiser le type du nœud d'objet pour qu'il fasse référence au nouveau type.  
+> Si vous tapez le nom d’un type qui n’a pas encore été défini, un élément est ajouté sous **Types non spécifiés** dans l’Explorateur de modèles UML. Si vous définissez par la suite un type de ce nom dans un diagramme de classes, vous devez réinitialiser le type du nœud d'objet pour qu'il fasse référence au nouveau type.  
   
 #### <a name="buffering-data-in-object-nodes"></a>Mise en mémoire tampon de données dans des nœuds d'objet  
  Un nœud d'objet peut jouer le rôle d'une mémoire tampon pour plusieurs objets. Dans l'illustration suivante, le flux de contrôle indique que l'utilisateur peut suivre la boucle [sélection supplémentaire] (1) plusieurs fois, tandis que le nœud d'objet Éléments de menu choisis (2) accumule les choix de l'utilisateur. Enfin, quand l'utilisateur a terminé sa sélection, le contrôle passe à l'action Confirmer la commande (3), qui accepte la liste complète de choix de la mémoire tampon Éléments de menu choisis.  
@@ -265,7 +265,7 @@ Dans Visual Studio, vous pouvez dessiner un diagramme d'activités pour décrire
 4. Définir le **comportement** propriété de la **Action appeler un comportement** pour faire référence à un diagramme de comportement appelé.  
   
     > [!NOTE]
-    >  Le diagramme de sous-activité doit contenir des éléments ou le diagramme ne sera pas disponible dans la liste déroulante pour le **comportement** propriété. En outre, l’icône de trident n’apparaît sur votre **Action appeler un comportement** mettre en forme jusqu'à ce que vous définissez son **comportement** propriété.  
+    > Le diagramme de sous-activité doit contenir des éléments ou le diagramme ne sera pas disponible dans la liste déroulante pour le **comportement** propriété. En outre, l’icône de trident n’apparaît sur votre **Action appeler un comportement** mettre en forme jusqu'à ce que vous définissez son **comportement** propriété.  
   
 5. Définir le **Is Synchronous** propriété de l’action pour indiquer si votre activité attend que l’activité appelée se termine.  
   
@@ -279,7 +279,7 @@ Dans Visual Studio, vous pouvez dessiner un diagramme d'activités pour décrire
 - Dans le diagramme de sous-activité, créez un **nœud de paramètre d’activité** (2) pour chaque broche d’entrée et de sortie sur l’action appelante. Donnez à chaque nœud le même nom que sa broche correspondante.  
   
   > [!NOTE]
-  >  Un nœud du paramètre de l'activité ressemble à un nœud d'objet. Pour vérifier le type de nœud que vous recherchez, cliquez sur le nœud, puis cliquez sur **propriétés**. Le type de nœud est affiché dans l'en-tête de la fenêtre Propriétés.  
+  > Un nœud du paramètre de l'activité ressemble à un nœud d'objet. Pour vérifier le type de nœud que vous recherchez, cliquez sur le nœud, puis cliquez sur **propriétés**. Le type de nœud est affiché dans l'en-tête de la fenêtre Propriétés.  
   
 - Dans le diagramme de sous-activités, dessinez des connecteurs qui montrent le flux d'objets vers et depuis chaque nœud du paramètre de l'activité.  
   

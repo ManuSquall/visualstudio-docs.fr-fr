@@ -8,12 +8,12 @@ ms.assetid: f1502b51-d6db-4894-9fbf-4a5723e4bb1a
 caps.latest.revision: 8
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 63e6be6a6b7c3e739ab590dd9f952fbb5988176b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c66d8ba2f630812b08358fa3557035f58266ef00
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788637"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445909"
 ---
 # <a name="upgrade-visual-studio-2010-unit-test-projects"></a>Mettre à niveau des projets de tests unitaires dans Visual Studio 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ ms.locfileid: "54788637"
  [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] introduit plusieurs changements pour les tests unitaires. En raison de ces changements, il est important de comprendre les problèmes de compatibilité entre les versions précédentes de Visual Studio et [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Parmi les changements apportés aux tests unitaires, l’un d’eux est particulièrement important : [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] comprend plusieurs modèles de projets de test, notamment un modèle de projet de test unitaire. De nouveaux tests unitaires ont été ajoutés au nouveau modèle de projet de test unitaire. Les tests unitaires peuvent également être inclus dans un autre nouveau modèle de projet de test appelé modèle de projet de test codé de l’interface utilisateur. Pour plus d’informations sur les nouveaux modèles de projet de test, consultez [Mise à niveau des tests à partir de versions antérieures de Visual Studio](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52). Les nouveaux projets de test unitaires n’incluent plus un fichier de paramètres de test par défaut. Grâce à l’exclusion du fichier de paramètres de test, les performances de vos tests unitaires s’améliorent. Pour des raisons de compatibilité, vous pouvez continuer à utiliser les projets de test existants que vous avez créés à l’aide de Visual Studio 2010. Toutefois, pour des raisons de performances, nous vous recommandons de supprimer le fichier de paramètres de test associé au projet de test, sauf si vous avez spécifiquement besoin du fichier de paramètres de test. Par exemple, vous pouvez choisir de conserver le fichier de paramètres de test si vos tests unitaires s’exécutent dans un environnement distribué, ou si vous devez collecter des données de diagnostic spécifiques. Si vous avez un besoin similaire avec le nouveau modèle de projet de test unitaire ou le modèle de projet de test codé de l’interface utilisateur, vous pouvez également leur ajouter manuellement un fichier de paramètres de test.
 
 > [!NOTE]
->  Les tests unitaires existants de vos projets de test [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 fonctionnent sans montrer de discontinuité entre [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 et [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Aucune modification n’est apportée aux fichiers projet de test quand un projet de test Visual Studio 2010 contenant vos tests unitaires est ouvert dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], ou vice versa.
+> Les tests unitaires existants de vos projets de test [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 fonctionnent sans montrer de discontinuité entre [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] SP1 et [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Aucune modification n’est apportée aux fichiers projet de test quand un projet de test Visual Studio 2010 contenant vos tests unitaires est ouvert dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], ou vice versa.
 
 > [!CAUTION]
->  Visual Studio 2010 ne peut pas ouvrir un projet C++/CLI qui cible l’ensemble d’outils version 11.0, c’est-à-dire un projet créé dans Visual Studio 2012. Cette restriction s’applique à tous les projets C++/CLI, et pas seulement aux projets de test unitaire C++/CLI.
+> Visual Studio 2010 ne peut pas ouvrir un projet C++/CLI qui cible l’ensemble d’outils version 11.0, c’est-à-dire un projet créé dans Visual Studio 2012. Cette restriction s’applique à tous les projets C++/CLI, et pas seulement aux projets de test unitaire C++/CLI.
 
 > [!NOTE]
->  Vous pouvez exécuter les nouveaux tests unitaires via vstest.console.exe à partir de la ligne de commande. Pour plus d’informations sur l’utilisation de vstest.console.exe, consultez [Options de ligne de commande VSTest.Console.exe](http://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11), ou exécutez la commande à l’aide du commutateur d’aide : **vstest.console.exe /?**. Vous pouvez continuer à exécuter vos tests unitaires existants à l’aide de MStest.exe. Pour plus d’informations, consultez [Exécuter des tests automatisés à partir de la ligne de commande à l’aide de MSTest](http://msdn.microsoft.com/library/39b61ad0-0055-44b5-963f-25d8a6b51581) et [Options de ligne de commande MSTest.exe](http://msdn.microsoft.com/library/8813ba7f-e790-4e92-9f91-7080508a1c36).
+> Vous pouvez exécuter les nouveaux tests unitaires via vstest.console.exe à partir de la ligne de commande. Pour plus d’informations sur l’utilisation de vstest.console.exe, consultez [Options de ligne de commande VSTest.Console.exe](http://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11), ou exécutez la commande à l’aide du commutateur d’aide : **vstest.console.exe /?**. Vous pouvez continuer à exécuter vos tests unitaires existants à l’aide de MStest.exe. Pour plus d’informations, consultez [Exécuter des tests automatisés à partir de la ligne de commande à l’aide de MSTest](http://msdn.microsoft.com/library/39b61ad0-0055-44b5-963f-25d8a6b51581) et [Options de ligne de commande MSTest.exe](http://msdn.microsoft.com/library/8813ba7f-e790-4e92-9f91-7080508a1c36).
 
  Le nouvel Explorateur de tests représente un autre changement important. Dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], certaines fenêtres de tests auxquelles vous étiez peut-être habitué depuis la version antérieure de Visual Studio sont maintenant dépréciées, par exemple la fenêtre Affichage des tests. L’Explorateur de tests est conçu pour mieux prendre en charge les développeurs et les équipes qui intègrent des tests unitaires à leurs pratiques de développement de logiciels. Pour plus d’informations, consultez [Exécuter des tests unitaires avec l’Explorateur de tests](../test/run-unit-tests-with-test-explorer.md).
 

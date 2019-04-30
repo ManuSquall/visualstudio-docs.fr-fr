@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8af9386d192c6dd96669dbfada298317cf5fe0e5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 1378cddbc9770af923a98f1b7083a8792874b5b3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646302"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429283"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>Fusion de contenu XML dans les manifestes de fonctionnalités et de packages
   Fonctionnalités et les packages sont définis par [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] fichiers manifeste. Ces manifestes ajoutés au package sont une combinaison de données générées par les concepteurs et personnalisé [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] les utilisateurs entrent dans le modèle de manifeste. Au moment de l’empaquetage, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fusionne personnalisé [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] instructions avec fourni par le concepteur [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] pour former le package [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] fichier manifeste. Les éléments semblables, avec les exceptions notées plus loin dans les Exceptions de fusion, sont fusionnés pour éviter [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] erreurs de validation une fois que vous déployez les fichiers sur SharePoint, et pour rendre le manifeste de fichiers plus petits et plus efficace.
@@ -51,11 +51,11 @@ ms.locfileid: "56646302"
 |ElementFile|Emplacement|
 |ElementManifests/ElementManifest|Emplacement|
 |Properties, propriété|Touche|
-|CustomUpgradeAction|Name|
-|CustomUpgradeActionParameter|Name|
+|CustomUpgradeAction|Nom|
+|CustomUpgradeActionParameter|Nom|
 
 > [!NOTE]
->  Car la seule façon de modifier l’élément CustomUpgradeAction est personnalisé [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] éditeur, l’effet de fusion ne pas est faible.
+> Car la seule façon de modifier l’élément CustomUpgradeAction est personnalisé [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] éditeur, l’effet de fusion ne pas est faible.
 
 ## <a name="package-manifest-elements"></a>Éléments de manifeste de package
  Le tableau suivant est une liste de tous les éléments de manifeste de package qui peuvent être fusionnées et de leur clé unique qui est utilisé pour la correspondance.

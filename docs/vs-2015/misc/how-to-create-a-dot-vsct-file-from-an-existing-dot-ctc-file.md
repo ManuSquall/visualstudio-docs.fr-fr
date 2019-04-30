@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 700e80a4-c1e1-4178-af53-45e86dd2c08b
 caps.latest.revision: 9
 manager: jillfra
-ms.openlocfilehash: 2d5ba5a271cd7132d9750fc0569b801022aeb932
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7b963436e9d968dd5ba3829e97d0fd0c52e49641
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117850"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443009"
 ---
 # <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Procédure : Créer un. Fichier VSCT d’un existant. Fichiers CTC
 Vous pouvez créer un fichier .vsct XML à partir d’un fichier source .ctc de table de commande existant. Ainsi, vous pouvez tirer parti du nouveau format du compilateur (VSTC) de table de commande [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] XML.  
@@ -42,7 +42,7 @@ Vous pouvez créer un fichier .vsct XML à partir d’un fichier source .ctc de 
      Un nouveau fichier source de table de commande XML .vsct est ainsi créé. Vous pouvez compiler le fichier à l’aide de Vsct.exe, le compilateur VSCT, comme vous le feriez pour tout autre fichier .vsct.  
   
     > [!NOTE]
-    >  Vous pouvez améliorer la lisibilité du fichier .vsct en reformatant les commentaires XML.  
+    > Vous pouvez améliorer la lisibilité du fichier .vsct en reformatant les commentaires XML.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Guide pratique pour Créer un. Fichier VSCT](../extensibility/internals/how-to-create-a-dot-vsct-file.md)   

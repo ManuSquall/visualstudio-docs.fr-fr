@@ -6,12 +6,12 @@ ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 43f13ebc6a3f7a430b3608eba37284a85c3c5eab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 70b20a463563c54ce0b8ac81b9acab042b0389eb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049540"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443962"
 ---
 # <a name="addressing-dpi-issues"></a>Résolution des problèmes DPI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,7 +116,7 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
 ```  
   
 > [!NOTE]
->  N’utilisez pas les fonctions d’assistance dans des variables statiques au niveau du module ou de niveau classe. La bibliothèque utilise également des variables statiques pour la synchronisation de thread et que vous pouvez rencontrer des problèmes d’initialisation de la commande. Convertir ces variables statiques aux variables de membre non statiques, soit les encapsuler dans une fonction (afin qu’ils être construites lors du premier accès).  
+> N’utilisez pas les fonctions d’assistance dans des variables statiques au niveau du module ou de niveau classe. La bibliothèque utilise également des variables statiques pour la synchronisation de thread et que vous pouvez rencontrer des problèmes d’initialisation de la commande. Convertir ces variables statiques aux variables de membre non statiques, soit les encapsuler dans une fonction (afin qu’ils être construites lors du premier accès).  
   
  Pour accéder aux fonctions d’assistance de PPP à partir de code managé qui s’exécute à l’intérieur de l’environnement Visual Studio :  
   

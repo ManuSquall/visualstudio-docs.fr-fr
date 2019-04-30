@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8340867406e99fd6c6f84d1dc84d89a395a338fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 61b5a5d04e9c59d9c4034cb97c8ec0fd79264d48
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106863"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437320"
 ---
 # <a name="how-to-debug-a-partial-trust-application"></a>Procédure : Déboguer une Application de confiance partielle
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ S'applique aux applications Windows et console.
  Ultérieurement, vous pourrez revenir en arrière et consulter les autorisations que vous avez ajoutées pendant le débogage. Le fait de devoir ajouter une autorisation lors du débogage indique probablement la nécessité d'ajouter une invite d'autorisation de l'utilisateur à cet endroit du code.  
   
 > [!NOTE]
->  Les visualiseurs de débogueur requièrent des privilèges plus importants que ceux octroyés par une application de confiance partielle. Les visualiseurs ne se chargent pas lorsque vous êtes arrêté dans du code à confiance partielle. Pour déboguer à l'aide d'un visualiseur, vous devez exécuter le code avec la confiance totale.  
+> Les visualiseurs de débogueur requièrent des privilèges plus importants que ceux octroyés par une application de confiance partielle. Les visualiseurs ne se chargent pas lorsque vous êtes arrêté dans du code à confiance partielle. Pour déboguer à l'aide d'un visualiseur, vous devez exécuter le code avec la confiance totale.  
   
 ### <a name="to-choose-a-zone-for-your-partial-trust-application"></a>Pour choisir une zone pour votre application de confiance partielle  
   

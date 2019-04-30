@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db58bb1826aab9a26dcec6a9475c49fc99057891
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: e10279740d590b63bb3781afd3486f7952123664
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661099"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431936"
 ---
 # <a name="entity-data-model-tools-in-visual-studio"></a>Entity Data Model Tools dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Entity Framework est une technologie de mapping objet-relationnel qui permet aux
 - Vous pouvez utiliser la **Assistant modèle de mise à jour** pour mettre à jour votre modèle conceptuel, le modèle de stockage et le mappage lorsque les modifications ont été apportées à la base de données sous-jacente.
 
   > [!NOTE]
-  >  À partir de Visual Studio 2010, [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] outils ne gèrent pas [!INCLUDE[ss2k](../includes/ss2k-md.md)].
+  > À partir de Visual Studio 2010, [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] outils ne gèrent pas [!INCLUDE[ss2k](../includes/ss2k-md.md)].
 
   Les outils génèrent ou modifient un fichier .edmx. Ce fichier contient des informations qui décrivent le modèle conceptuel, le modèle de stockage et les mappages entre eux. Pour plus d’informations, consultez [EDMX](https://msdn.microsoft.com/data/jj650889.aspx).
 

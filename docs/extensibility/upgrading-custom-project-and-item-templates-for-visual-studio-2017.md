@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 7c50bb7bf6c61a8061b3817c53027a3dd6e5b29f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cb4defa206d176e57804e6d2473262568cd5edbf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102625"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434212"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>Mise à niveau de projet personnalisés et les modèles d’élément pour Visual Studio 2017
 
@@ -53,7 +53,7 @@ Pour d’autres emplacements (non utilisateur), vous devez inclure un fichier ma
     3. Rouvrez Visual Studio. Vous devez rechercher votre modèle à l’emplacement prévu.
 
     > [!NOTE]
-    >  Les modèles de projet d’extensibilité de Visual Studio ne sont pas disponibles lors de la clé de Registre est présente. Vous devez supprimer la clé de Registre (et réexécutez **devenv /installvstemplates**) pour les utiliser.
+    > Les modèles de projet d’extensibilité de Visual Studio ne sont pas disponibles lors de la clé de Registre est présente. Vous devez supprimer la clé de Registre (et réexécutez **devenv /installvstemplates**) pour les utiliser.
 
 ## <a name="other-recommendations-for-deploying-project-and-item-templates"></a>Autres recommandations pour le déploiement de Project and Item Templates
 

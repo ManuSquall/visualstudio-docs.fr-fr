@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d4b5fd1be29a5c22bcae371faaf7be8c6b70c4e1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c30289034c50cc6d754f54ccec3fafcd0f964d15
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057548"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437402"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Propagation de modifications dans le modèle par des règles
 Vous pouvez créer une règle de magasin pour propager une modification d’un élément à un autre dans la visualisation et modélisation de kit de développement logiciel (SDK) VISUALIZATION. En cas de modification à un élément dans le Store, les règles sont planifiées pour être exécutée, généralement lors de la transaction externe est validée. Il existe différents types de règles pour différents types d’événements, comme l’ajout d’un élément ou sa suppression. Vous pouvez attacher des règles à des types d’éléments, des formes ou des diagrammes. Nombreuses fonctionnalités intégrées sont définies par les règles : par exemple, règles garantissent qu’un diagramme est mis à jour quand le modèle change. Vous pouvez personnaliser votre langage spécifique à un domaine en ajoutant vos propres règles.
@@ -68,7 +68,7 @@ namespace ExampleNamespace
 ```
 
 > [!NOTE]
->  Le code d’une règle doit modifier l’état uniquement des éléments à l’intérieur du Store ; Autrement dit, la règle doit modifier uniquement les éléments de modèle, les relations, formes, connecteurs, diagrammes ou leurs propriétés. Si vous souhaitez propager les modifications apportées aux ressources en dehors du magasin, définir des événements Store. Pour plus d’informations, consultez [gestionnaires propager les modifications en dehors le modèle d’événement](../modeling/event-handlers-propagate-changes-outside-the-model.md)
+> Le code d’une règle doit modifier l’état uniquement des éléments à l’intérieur du Store ; Autrement dit, la règle doit modifier uniquement les éléments de modèle, les relations, formes, connecteurs, diagrammes ou leurs propriétés. Si vous souhaitez propager les modifications apportées aux ressources en dehors du magasin, définir des événements Store. Pour plus d’informations, consultez [gestionnaires propager les modifications en dehors le modèle d’événement](../modeling/event-handlers-propagate-changes-outside-the-model.md)
 
 ### <a name="to-define-a-rule"></a>Pour définir une règle
 

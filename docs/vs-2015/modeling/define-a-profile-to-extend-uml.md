@@ -16,12 +16,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 59e00fb6b4db879ed70904397ba9a54c8bc25a6f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b256971cd327098e22b243a1c171b0c9e82d32bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433133"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Définir un profil pour étendre UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèl
   Vous pouvez distribuer vos propres profils à votre équipe. Chaque membre de l'équipe peut installer votre profil. Cela leur permet de modifier et de créer des modèles qui utilisent ses stéréotypes.  
   
 > [!NOTE]
->  Si vous appliquez les stéréotypes d'un profil dans un modèle que vous modifiez et que vous partagez ensuite le modèle avec d'autres personnes, elles doivent installer le même profil sur leurs propres ordinateurs. Dans le cas contraire, elles ne pourront pas voir les stéréotypes que vous avez utilisés.  
+> Si vous appliquez les stéréotypes d'un profil dans un modèle que vous modifiez et que vous partagez ensuite le modèle avec d'autres personnes, elles doivent installer le même profil sur leurs propres ordinateurs. Dans le cas contraire, elles ne pourront pas voir les stéréotypes que vous avez utilisés.  
   
  Un profil fait souvent partie d’une plus grande [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] extension. Par exemple, vous pouvez définir une commande qui traduit certaines parties d'un modèle en code. Vous pouvez définir un profil que les utilisateurs doivent appliquer aux packages qu'ils souhaitent traduire. Vous devez dans ce cas distribuer votre nouvelle commande avec le profil dans une extension [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] unique.  
   
@@ -83,7 +83,7 @@ Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèl
 1. Créez un projet d'Extension Visual Studio.  
   
    > [!NOTE]
-   >  Pour appliquer cette procédure, vous devez avoir installé [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].  
+   > Pour appliquer cette procédure, vous devez avoir installé [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].  
   
    1. Dans le menu **Fichier** , pointez sur **Nouveau**, puis cliquez sur **Projet**.  
   
@@ -194,7 +194,7 @@ Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèl
 2. Ajoutez un nouveau répertoire dans le même répertoire que celui où se trouve votre fichier de profil par défaut.  
   
     > [!NOTE]
-    >  Si vous générez l'extension à l'aide d'un projet d'Extension Visual Studio, utilisez l'Explorateur de solutions pour ajouter un nouveau dossier au projet.  
+    > Si vous générez l'extension à l'aide d'un projet d'Extension Visual Studio, utilisez l'Explorateur de solutions pour ajouter un nouveau dossier au projet.  
   
 3. Modifiez le nom du nouveau répertoire avec le code court ISO de la culture localisée, par exemple `bg` pour le bulgare ou `fr` pour le français. Vous devez utiliser un code de culture neutre, en général deux lettres, et non une culture spécifique telle que `fr-CA`. Pour plus d’informations sur les codes de culture, consultez [méthode CultureInfo.GetCultures](http://go.microsoft.com/fwlink/?LinkId=160782), qui fournit une liste complète des codes de culture.  
   
@@ -211,7 +211,7 @@ Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèl
      `de\MyProfile.profile`  
   
     > [!NOTE]
-    >  Vous ne devez pas insérer de référence aux versions localisées des profils dans `extension.vsixmanifest`. Les fichiers de profils copiés doivent avoir le même nom que le profil dans le dossier parent.  
+    > Vous ne devez pas insérer de référence aux versions localisées des profils dans `extension.vsixmanifest`. Les fichiers de profils copiés doivent avoir le même nom que le profil dans le dossier parent.  
   
 5. Modifiez la nouvelle copie du profil, en traduisant dans la langue cible toutes les parties qui seront visibles par l'utilisateur, telles que les attributs `displayName`.  
   
@@ -247,7 +247,7 @@ Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèl
 ```  
   
 > [!NOTE]
->  L'attribut appelé `name` ne doit pas contenir d'espaces ou de signes de ponctuation. L'attribut `displayName`, qui apparaît dans l'interface utilisateur, doit être une chaîne XML valide.  
+> L'attribut appelé `name` ne doit pas contenir d'espaces ou de signes de ponctuation. L'attribut `displayName`, qui apparaît dans l'interface utilisateur, doit être une chaîne XML valide.  
   
  Chaque profil contient trois sections principales. Dans l'ordre inverse, il s'agit des suivantes :  
   
@@ -310,7 +310,7 @@ Vous pouvez définir un *profil UML* pour personnaliser les éléments de modèl
  L'attribut `name` de `metaclassMoniker` est un lien vers un élément dans la section `<metaClasses>`.  
   
 > [!NOTE]
->  Le nom du moniker doit commencer par `/yourProfileName/`, où `yourProfileName` est défini dans l'attribut `name` du profil (« CSharpProfile » dans cet exemple). Le moniker se termine par le nom de l'une des entrées dans la section des métaclasses.  
+> Le nom du moniker doit commencer par `/yourProfileName/`, où `yourProfileName` est défini dans l'attribut `name` du profil (« CSharpProfile » dans cet exemple). Le moniker se termine par le nom de l'une des entrées dans la section des métaclasses.  
   
  Chaque stéréotype peut répertorier zéro, une ou plusieurs propriétés qu'il ajoute à tout élément de modèle auquel il est appliqué. Le `<propertyType>` contient un lien vers un des types qui sont définis dans la `<propertyTypes>` section. Le lien doit être un `<externalTypeMoniker>` pour faire référence à un `<externalType>,` ou un `<enumerationTypeMoniker>` pour faire référence à un `<enumerationType>`. Là encore, le lien commence par le nom de votre profil.  
   

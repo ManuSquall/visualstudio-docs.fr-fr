@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 628620005c43ae465107e43572684cb74c8d1aa9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7c088078ce594ab1333eb4ec2316e120cc153ced
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099739"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440383"
 ---
 # <a name="actions-pane-overview"></a>Vue d’ensemble du volet Actions
   Un volet actions est un personnalisable **Actions de Document** volet des tâches qui est attaché à un document Microsoft Office Word spécifique ou d’un classeur Microsoft Office Excel. Le volet actions est hébergé dans le volet de tâches, ainsi que d’autres volets de tâches intégrées, telles que la **Source XML** volet dans Excel ou le **Styles et mise en forme** volet de tâches dans Word. Vous pouvez utiliser des contrôles Windows Forms ou WPF pour concevoir l'interface utilisateur du volet Actions.
@@ -30,7 +30,7 @@ ms.locfileid: "60099739"
  Vous pouvez créer un volet Actions uniquement dans une personnalisation au niveau du document pour Word ou Excel. Vous ne pouvez pas créer un volet Actions dans un complément VSTO. Pour plus d’informations, consultez [fonctionnalités disponibles par type d’application et de projet Office](../vsto/features-available-by-office-application-and-project-type.md).
 
 > [!NOTE]
->  Le volet Actions diffère des volets de tâches personnalisés. Les volets de tâches personnalisés sont associés à l’application, pas à un document spécifique. Vous pouvez créer des volets de tâches personnalisés dans les compléments VSTO pour certaines applications Microsoft Office. Pour plus d’informations, consultez [volets de tâches personnalisés](../vsto/custom-task-panes.md).
+> Le volet Actions diffère des volets de tâches personnalisés. Les volets de tâches personnalisés sont associés à l’application, pas à un document spécifique. Vous pouvez créer des volets de tâches personnalisés dans les compléments VSTO pour certaines applications Microsoft Office. Pour plus d’informations, consultez [volets de tâches personnalisés](../vsto/custom-task-panes.md).
 
  ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vers la vidéo") pour une démonstration vidéo connexe, consultez [How do I: Utiliser des contrôles WPF à l’intérieur d’un volet actions Excel ? ](http://go.microsoft.com/fwlink/?LinkId=132763).
 
@@ -50,7 +50,7 @@ ms.locfileid: "60099739"
 2. Ajouter des contrôles Windows Forms au <xref:System.Windows.Forms.UserControl> à l'aide du concepteur ou en écrivant du code.
 
    > [!NOTE]
-   >  Vous pouvez aussi ajouter des contrôles WPF au volet Actions en ajoutant un <xref:System.Windows.Controls.UserControl> WPF au <xref:System.Windows.Forms.UserControl> Windows Forms. Pour plus d’informations, consultez [contrôle l’utilisation WPF dans les solutions Office](../vsto/using-wpf-controls-in-office-solutions.md).
+   > Vous pouvez aussi ajouter des contrôles WPF au volet Actions en ajoutant un <xref:System.Windows.Controls.UserControl> WPF au <xref:System.Windows.Forms.UserControl> Windows Forms. Pour plus d’informations, consultez [contrôle l’utilisation WPF dans les solutions Office](../vsto/using-wpf-controls-in-office-solutions.md).
 
 3. Ajouter une instance du contrôle utilisateur personnalisé aux contrôles contenus dans le champ `ActionsPane` de la classe `ThisWorkbook` (pour Excel) ou `ThisDocument` (pour Word) de votre projet.
 
@@ -141,7 +141,7 @@ ms.locfileid: "60099739"
  [!code-vb[Trin_VstcoreActionsPaneWord#100](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#100)]
 
 > [!NOTE]
->  Les utilisateurs finaux peuvent repositionner manuellement le volet de tâches à tout moment. Il n'existe aucun moyen de garantir que le volet des tâches demeure ancré à la position indiquée par programmation. Toutefois, vous pouvez vérifier les modifications de l'orientation et vous assurer que les contrôles du volet Actions sont empilés dans le bon sens. Pour plus d'informations, voir [Procédure : Gérer la disposition des contrôles dans les volets actions](../vsto/how-to-manage-control-layout-on-actions-panes.md).
+> Les utilisateurs finaux peuvent repositionner manuellement le volet de tâches à tout moment. Il n'existe aucun moyen de garantir que le volet des tâches demeure ancré à la position indiquée par programmation. Toutefois, vous pouvez vérifier les modifications de l'orientation et vous assurer que les contrôles du volet Actions sont empilés dans le bon sens. Pour plus d'informations, voir [Procédure : Gérer la disposition des contrôles dans les volets actions](../vsto/how-to-manage-control-layout-on-actions-panes.md).
 
  Définition de la <xref:Microsoft.Office.Tools.ActionsPane.Top%2A> et <xref:Microsoft.Office.Tools.ActionsPane.Left%2A> propriétés de la <xref:Microsoft.Office.Tools.ActionsPane> ne change pas sa position, car le <xref:Microsoft.Office.Tools.ActionsPane> objet est incorporé dans le volet des tâches.
 

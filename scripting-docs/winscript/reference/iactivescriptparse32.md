@@ -11,11 +11,11 @@ caps.latest.revision: 6
 author: mikejo5000
 ms.author: mikejo
 ms.openlocfilehash: 9f44239b4e423588b8455b93b87e4084a9c7d1c4
-ms.sourcegitcommit: 8bf9e51c77a5a602fab9513b9187e59e57dfebad
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2019
-ms.locfileid: "54347643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009315"
 ---
 # <a name="iactivescriptparse32"></a>IActiveScriptParse32
 Si le Script Windows moteur autorise les scriptlets de code de texte brut à ajouter au script ou être évaluées au moment de l’exécution de texte expression, elle implémente le `IActiveScriptParse32` interface. Pour les langages de script interprétés ayant aucun environnement de création indépendant, tels que VBScript, cela fournit un mécanisme alternatif (autre que `IPersist*`) pour obtenir le code de script dans le moteur de script et d’attacher des fragments de script à objet divers événements.  

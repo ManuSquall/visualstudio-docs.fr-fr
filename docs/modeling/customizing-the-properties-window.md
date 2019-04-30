@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d053bcd5e8b1824334f9953ac14881fdc0315be
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 613f8828cf7e966fb66468588c73e1a8b9dbdd3d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083334"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414737"
 ---
 # <a name="customizing-the-properties-window"></a>Personnalisation de la fenêtre Propriétés
 Vous pouvez personnaliser l’apparence et le comportement de la fenêtre Propriétés dans votre langage spécifique à un domaine (DSL) dans Visual Studio. Dans votre définition DSL, vous définissez les propriétés de domaine sur chaque classe de domaine. Par défaut, lorsque vous sélectionnez une instance de la classe, sur un diagramme ou dans l’Explorateur de modèles, chaque propriété de domaine est répertoriée dans la fenêtre Propriétés. Vous pouvez ainsi afficher et modifier les valeurs des propriétés de domaine, même si vous n’avez pas mappé les aux champs de forme sur le diagramme.
@@ -59,7 +59,7 @@ Vous pouvez personnaliser l’apparence et le comportement de la fenêtre Propri
  Pour transférer une propriété, vous définissez un descripteur de type de domaine. Si vous avez une relation de domaine entre deux classes de domaine, vous pouvez utiliser un descripteur de type de domaine pour définir une propriété de domaine dans la première classe à la valeur d’une propriété de domaine dans la deuxième classe de domaine. Par exemple, si vous disposez d’une relation entre un **livre** de classe de domaine et un **auteur** de classe de domaine, vous pouvez utiliser un descripteur de type de domaine pour rendre le **nom** propriété d’un Du livre **auteur** s’affichent dans la fenêtre Propriétés lorsque l’utilisateur sélectionne le livre.
 
 > [!NOTE]
->  Transfert de propriété affecte uniquement la fenêtre Propriétés lorsque l’utilisateur modifie un modèle. Il ne définit pas une propriété de domaine sur la classe réceptrice. Si vous souhaitez accéder à la propriété de domaine transférés dans d’autres parties de la définition DSL ou dans le code de programme, vous devez accéder à l’élément de transfert.
+> Transfert de propriété affecte uniquement la fenêtre Propriétés lorsque l’utilisateur modifie un modèle. Il ne définit pas une propriété de domaine sur la classe réceptrice. Si vous souhaitez accéder à la propriété de domaine transférés dans d’autres parties de la définition DSL ou dans le code de programme, vous devez accéder à l’élément de transfert.
 
  La procédure suivante suppose que vous avez créé une solution DSL. Les quelques premières étapes résument les conditions préalables.
 
@@ -117,7 +117,7 @@ Vous pouvez personnaliser l’apparence et le comportement de la fenêtre Propri
         Une nouvelle entrée apparaît sous le **des Types de domaine** nœud.
 
        > [!WARNING]
-       >  L’élément de menu n’est pas sur le nœud racine DSL, le **des Types de domaine** nœud.
+       > L’élément de menu n’est pas sur le nœud racine DSL, le **des Types de domaine** nœud.
 
    2. Dans la fenêtre Propriétés, définissez le nom et l’espace de noms du nouveau type.
 
@@ -177,7 +177,7 @@ Vous pouvez personnaliser l’apparence et le comportement de la fenêtre Propri
   Vous pouvez également fournir une représentation graphique de la valeur de propriété qui sera affichée dans la grille des propriétés. Pour ce faire, substituez `GetPaintValueSupported`, et `PaintValue`.  Pour plus d'informations, consultez <xref:System.Drawing.Design.UITypeEditor>.
 
 > [!NOTE]
->  Ajoutez le code dans un fichier de code séparé dans le **Dsl** projet.
+> Ajoutez le code dans un fichier de code séparé dans le **Dsl** projet.
 
  Exemple :
 
@@ -207,7 +207,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
  Vous pouvez fournir une liste de valeurs pour un utilisateur peut choisir.
 
 > [!NOTE]
->  Cette technique fournit une liste de valeurs qui peuvent changer pendant l’exécution. Si vous souhaitez fournir une liste qui ne change pas, envisagez plutôt à l’aide d’un type énuméré comme le type de votre propriété de domaine.
+> Cette technique fournit une liste de valeurs qui peuvent changer pendant l’exécution. Si vous souhaitez fournir une liste qui ne change pas, envisagez plutôt à l’aide d’un type énuméré comme le type de votre propriété de domaine.
 
  Pour définir une liste de valeurs standard, vous ajoutez à votre propriété de domaine un attribut CLR qui a la forme suivante :
 

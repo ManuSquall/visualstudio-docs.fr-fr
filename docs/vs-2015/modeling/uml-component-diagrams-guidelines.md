@@ -15,12 +15,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0b4a5e7e626e7cf9510047f0b016ff80ea8203e1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ef8a152293ef5e1cf9137540abb5590eb43c057a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056781"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424451"
 ---
 # <a name="uml-component-diagrams-guidelines"></a>Diagrammes de composants UML : Recommandations
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de composant* pour affich
  Pour plus d’informations sur l’utilisation des diagrammes de composants en cours de conception, consultez [modéliser l’architecture de votre application](../modeling/model-your-app-s-architecture.md).  
   
 > [!NOTE]
->  Les étapes détaillées pour créer un des diagrammes de modélisation sont décrites dans [modèles et diagrammes UML modifier](../modeling/edit-uml-models-and-diagrams.md).  
+> Les étapes détaillées pour créer un des diagrammes de modélisation sont décrites dans [modèles et diagrammes UML modifier](../modeling/edit-uml-models-and-diagrams.md).  
   
 #### <a name="to-create-a-component-diagram"></a>Pour créer un diagramme de composant  
   
@@ -157,7 +157,7 @@ Dans Visual Studio, vous pouvez dessiner un *diagramme de composant* pour affich
          Une interface fournie apparaît alors sur le composant. Une balise d'action apparaît juste à côté.  
   
         > [!NOTE]
-        >  Si vous utilisez **coller** au lieu de **coller la référence**, une nouvelle interface qui porte un nouveau nom sera créée.  
+        > Si vous utilisez **coller** au lieu de **coller la référence**, une nouvelle interface qui porte un nouveau nom sera créée.  
   
     3. Si vous souhaitez créer une interface requise, cliquez sur la balise d’Action, puis **convertir en Interface requise**.  
   

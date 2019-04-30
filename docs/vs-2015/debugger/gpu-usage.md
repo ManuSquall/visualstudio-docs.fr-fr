@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eef55dd0e5af443379b2685ccab9bd2de8074e0d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b7dee579f726a1edfc81e1f3e1ec62bf7d8beba4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066706"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437955"
 ---
 # <a name="gpu-usage"></a>Utilisation du GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Servez-vous de l'outil Utilisation du GPU dans le hub Performances et diagnostic
 - GPU et pilote qui prennent en charge l'instrumentation de minutage nécessaire.  
   
   > [!NOTE]
-  >  Pour plus d’informations sur le matériel et les pilotes pris en charge, consultez [Prise en charge du matériel et des pilotes](#hwsupport) à la fin de ce document.  
+  > Pour plus d’informations sur le matériel et les pilotes pris en charge, consultez [Prise en charge du matériel et des pilotes](#hwsupport) à la fin de ce document.  
   
   Pour plus d’informations sur les conditions requises par l’exécution de Graphics Diagnostics, consultez [Prise en main](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md).  
   
@@ -47,7 +47,7 @@ Servez-vous de l'outil Utilisation du GPU dans le hub Performances et diagnostic
     ![Choisissez les outils de diagnostic que vous souhaitez utiliser.](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
   
    > [!NOTE]
-   >  Tous les outils du hub Performances et diagnostics peuvent être utilisés en même temps.  
+   > Tous les outils du hub Performances et diagnostics peuvent être utilisés en même temps.  
   
 3. Choisissez le bouton **Démarrer** bleu au bas du hub Performances et diagnostics pour exécuter votre application à l’aide des outils que vous avez sélectionnés.  
   
@@ -110,7 +110,7 @@ Servez-vous de l'outil Utilisation du GPU dans le hub Performances et diagnostic
 |**ID de thread**|ID de thread d'où provient l'événement.|  
   
 > [!IMPORTANT]
->  Windows 8.1 est obligatoire pour l'attribution d'événement. En outre, si votre GPU ou pilote ne prend pas en charge les fonctionnalités d'instrumentation nécessaires, tous les événements s'affichent comme étant « non attribués ». Veillez à mettre à jour votre GPU/pilote, puis réessayez si vous rencontrez ce problème. Pour plus d’informations, consultez [Prise en charge du matériel et des pilotes](#hwsupport) ci-dessous.  
+> Windows 8.1 est obligatoire pour l'attribution d'événement. En outre, si votre GPU ou pilote ne prend pas en charge les fonctionnalités d'instrumentation nécessaires, tous les événements s'affichent comme étant « non attribués ». Veillez à mettre à jour votre GPU/pilote, puis réessayez si vous rencontrez ce problème. Pour plus d’informations, consultez [Prise en charge du matériel et des pilotes](#hwsupport) ci-dessous.  
   
 ## <a name="gpu-usage-settings"></a>Paramètres d'utilisation du GPU  
  Vous pouvez configurer l'outil Utilisation du GPU pour reporter la collecte des informations de profilage, au lieu de commencer à collecter les informations dès le démarrage de l'application. Dans la mesure où la taille des informations de profilage peut être significative, cela s'avère utile de savoir que le ralentissement des performances de votre application ne se reproduira pas avant longtemps.  
@@ -126,7 +126,7 @@ Servez-vous de l'outil Utilisation du GPU dans le hub Performances et diagnostic
      ![Configurer le moment du démarrage de la collecte de données d’utilisation du GPU](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
   
 > [!IMPORTANT]
->  Le report du profilage n'est pas pris en charge actuellement pour les applications Direct3D 12.  
+> Le report du profilage n'est pas pris en charge actuellement pour les applications Direct3D 12.  
   
  Quand vous reportez la collection des informations de profilage à l’aide de ce paramètre, un lien supplémentaire devient disponible dans la partie inférieure de la fenêtre de l’outil Utilisation du GPU au moment où vous exécutez votre application dans l’outil Utilisation du GPU. Pour commencer à collecter des informations de profilage, choisissez le lien **Démarrer** dans le message **Commencer à collecter des données détaillées d’utilisation GPU supplémentaires**.  
   

@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: steved0x
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 69e918eae56d35d134b9b7c3093d5f0599a12c5e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 026ee7af3c60b3832449f5f2ed996f00c75a1c87
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435386"
 ---
 # <a name="transition-activity-designer"></a>Concepteur d'activités de transition
 <xref:System.Activities.Statements.Transition> représente la transition entre deux états.  
@@ -40,7 +40,7 @@ ms.locfileid: "58947567"
  Les transitions sont créées en faisant glisser une ligne d’un état à un autre, ou en déposant un état sur les triangles qui s’affichent lorsqu’un état est déplacé sur un autre état. Pour créer une transition en faisant glisser, pointez la souris sur le bord de l'état source, et faites glisser une ligne de l'état source vers l'état de destination. Pour créer une transition par dépôt, faites glisser l’état de destination et pointez sur l’état source, puis déposez-le sur l’un des quatre triangles qui apparaissent autour de l’état source. L’état de destination peut être un nouvel état déplacé de la **boîte à outils**, ou un état existant déplacé à partir du Concepteur de flux de travail.  
   
 > [!NOTE]
->  Un seul état dans une machine à états peut contenir jusqu'à 76 transitions créées à l'aide du concepteur de workflow. Le nombre maximal de transitions d'un état pour les workflows créés en dehors du concepteur est limité uniquement par les ressources système.  
+> Un seul état dans une machine à états peut contenir jusqu'à 76 transitions créées à l'aide du concepteur de workflow. Le nombre maximal de transitions d'un état pour les workflows créés en dehors du concepteur est limité uniquement par les ressources système.  
   
  Les transitions partagées de déclencheur sont le jeu de transitions qui partagent le même événement déclencheur. Un déclencheur partagé permet la progression conditionnelle à un état de destination en fonction de l'évaluation de l'expressions configurée pour plusieurs transitions qui partagent un événement déclencheur commun. Pour ajouter des actions supplémentaires à une transition et créer une transition partagée, cliquez sur le cercle qui indique le début de la transition souhaitée et faites-le glisser vers l'état souhaité. La nouvelle transition partagera le même déclencheur que la transition d'origine, mais elle aura une condition et une action uniques. Transitions partagées peuvent également être créées dans le Concepteur de transition en cliquant sur **ajouter partagé transition de déclencheur** en bas du Concepteur de transition, puis en sélectionnant l’état cible souhaité à partir de la  **Les états disponibles pour vous connecter** liste déroulante.  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c063235d69a59caf2c41c0db0ddc566c97cc95be
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 3ac567677776c225008a581cc4d5de85ec2c882d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58954040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383956"
 ---
 # <a name="mip-map-generation-variant"></a>Variante de génération mipmap
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ d3d_device->CreateTexture2D(&texture_description, initial_data.data(), &texture)
  Rappelez-vous qu'au moment de fournir les données initiales à `CreateTexture2D`, vous devez fournir un objet D3D11_SUBRESOURCE_DATA pour chaque niveau MIP.  
   
 > [!NOTE]
->  Si vous voulez fournir votre propre contenu de niveau MIP au lieu de le générer automatiquement, vous devez créer vos textures à l'aide d'un éditeur d'image qui prend en charge les textures mipmappées, puis charger le fichier et passer les niveaux MIP à `CreateTexture2D`.  
+> Si vous voulez fournir votre propre contenu de niveau MIP au lieu de le générer automatiquement, vous devez créer vos textures à l'aide d'un éditeur d'image qui prend en charge les textures mipmappées, puis charger le fichier et passer les niveaux MIP à `CreateTexture2D`.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Variante de dimensions de la texture moitié/un quart](../debugger/half-quarter-texture-dimensions-variant.md)

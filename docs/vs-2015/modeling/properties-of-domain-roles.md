@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2e9cef8726ad690508948ac0a9878df1bd85c96e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b78c409a761a98439cbbbfdf088e052eca745f32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444467"
 ---
 # <a name="properties-of-domain-roles"></a>Propriétés des rôles de domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Les propriétés dans le tableau suivant sont associées à un rôle de domaine.
 |Nom d’affichage de propriété|Le nom qui s’affiche dans le concepteur généré pour la propriété de rôle généré.|La valeur de la propriété de nom de la propriété corrigée.|  
   
 > [!NOTE]
->  La valeur par défaut d’un nom d’affichage est basée sur la valeur de propriété associée en insérant des espaces avant chaque caractère majuscule, qui est précédé par un caractère minuscule, et qui n’est pas suivi par un autre caractère majuscule.  
+> La valeur par défaut d’un nom d’affichage est basée sur la valeur de propriété associée en insérant des espaces avant chaque caractère majuscule, qui est précédé par un caractère minuscule, et qui n’est pas suivi par un autre caractère majuscule.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Propriétés des relations de domaine](../modeling/properties-of-domain-relationships.md)

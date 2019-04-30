@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d694fe9bb614acfd80e5ec1b9f6bed166775c214
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d897fe074c0215d462ff81ccd33e7d71487b1282
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091473"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433104"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Procédure : Sélectionner les schémas XML à utiliser
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ L'Éditeur XML fournit un cache de schéma dans le répertoire %InstallDir%\Xml\
  Les schémas spécifiés sont enregistrés dans le fichier masqué d'options utilisateur de la solution (.suo), avec toutes les autres propriétés de document XML. Vous ne devez donc pas réentrer ces valeurs la prochaine fois que vous ouvrez la solution.  
   
 > [!NOTE]
->  L'éditeur peut effectuer la validation à l'aide d'un schéma inline ou d'un schéma dont la référence est fournie par l'attribut `xsd:schemaLocation`. Pour plus d’informations, consultez [Validation de documents XML](../xml-tools/xml-document-validation.md).  
+> L'éditeur peut effectuer la validation à l'aide d'un schéma inline ou d'un schéma dont la référence est fournie par l'attribut `xsd:schemaLocation`. Pour plus d’informations, consultez [Validation de documents XML](../xml-tools/xml-document-validation.md).  
   
 ### <a name="to-select-an-xml-schema-from-the-schema-cache"></a>Pour sélectionner un schéma XML dans le cache de schéma  
   
@@ -71,7 +71,7 @@ L'Éditeur XML fournit un cache de schéma dans le répertoire %InstallDir%\Xml\
      Le schéma est supprimé du cache de schéma en mémoire, mais pas du système de fichiers.  
   
     > [!NOTE]
-    >  Si vous avez toujours une référence au schéma via un `schemaLocation` un attribut ou une mise en correspondance `targetNamespace` puis **supprimer** ne fonctionnera pas dans ce cas en raison de l’association automatique. Dans ce cas il est recommandé de marquer le schéma en tant que **n’utilisez pas les schémas sélectionnés** dans le **utiliser** colonne.  
+    > Si vous avez toujours une référence au schéma via un `schemaLocation` un attribut ou une mise en correspondance `targetNamespace` puis **supprimer** ne fonctionnera pas dans ce cas en raison de l’association automatique. Dans ce cas il est recommandé de marquer le schéma en tant que **n’utilisez pas les schémas sélectionnés** dans le **utiliser** colonne.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Cache de schéma](../xml-tools/schema-cache.md)   

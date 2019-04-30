@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 583c15a5b605671e09ac47a42d49b068393ffe2e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8127b35c7b3c861ce0568acc5c0459d6d31eee08
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062553"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440890"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Procédure pas à pas : Afficher les volets de tâches personnalisés avec des messages électroniques dans Outlook
   Cette procédure pas à pas montre comment afficher une instance unique d’un volet de tâches personnalisé avec chaque message électronique créé ou ouvert. Les utilisateurs peuvent afficher ou masquer le volet des tâches personnalisé à l’aide d’un bouton situé sur le ruban de chaque message électronique.
@@ -31,7 +31,7 @@ ms.locfileid: "60062553"
  Pour afficher un volet des tâches personnalisé avec plusieurs fenêtres d’explorateur ou d’inspecteur, vous devez créer une instance du volet des tâches personnalisé pour chaque fenêtre ouverte. Pour plus d’informations sur le comportement des volets de tâches personnalisés dans les fenêtres Outlook, consultez [volets de tâches personnalisés](../vsto/custom-task-panes.md).
 
 > [!NOTE]
->  Cette procédure pas à pas présente le code du complément VSTO en petites sections afin de simplifier la présentation de la logique que suit le code.
+> Cette procédure pas à pas présente le code du complément VSTO en petites sections afin de simplifier la présentation de la logique que suit le code.
 
  Cette procédure pas à pas décrit les tâches suivantes :
 
@@ -48,7 +48,7 @@ ms.locfileid: "60062553"
 - Synchronisation du bouton bascule du ruban avec le volet des tâches personnalisé.
 
 > [!NOTE]
->  Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Prérequis
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :

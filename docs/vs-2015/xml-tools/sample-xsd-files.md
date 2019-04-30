@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4cc746e66bc08d980c11a9e582ccc9db23690d59
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: cc492b17ce4ecf7c4c8bf229a6c43c665dc3c125
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650836"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435349"
 ---
 # <a name="sample-xsd-files"></a>Exemples de fichiers XSD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "59650836"
 Les exemples de fichiers suivants sont utilisés dans la documentation du Concepteur de schémas XSD.  
   
 > [!NOTE]
->  Les noms de sociétés, d'organisations, de produits, de domaines, d'adresses de messagerie, de logos, de personnes, de lieux et d'événements mentionnés dans les exemples sont fictifs. Toute ressemblance avec des noms, des logos, des personnes, des lieux ou des événements réels est purement fortuite et involontaire.  
+> Les noms de sociétés, d'organisations, de produits, de domaines, d'adresses de messagerie, de logos, de personnes, de lieux et d'événements mentionnés dans les exemples sont fictifs. Toute ressemblance avec des noms, des logos, des personnes, des lieux ou des événements réels est purement fortuite et involontaire.  
   
 ## <a name="in-this-section"></a>Dans cette section  
   

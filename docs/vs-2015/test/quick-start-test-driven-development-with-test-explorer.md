@@ -8,12 +8,12 @@ ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f45e9c466bcb99dd0fecb00702441d3d97899a52
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4b3c709c2d7a83e4b144232a491dabf205ea46f7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446196"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Démarrage rapide : Développement piloté par les tests avec l’Explorateur de tests
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,10 +62,10 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
    **Pour déboguer un test :** Ouvrez le menu contextuel d’un ou de plusieurs tests, puis choisissez **Déboguer les tests sélectionnés**.  
   
 > [!IMPORTANT]
->  Les résultats affichés concernent la série la plus récente. La barre de résultats colorée montre uniquement les résultats des tests qui ont été exécutés. Par exemple, si vous exécutez plusieurs tests et que certains d'entre eux échouent puis que vous n'exécutez que les tests réussis, la barre de résultats affiche tout en vert.  
+> Les résultats affichés concernent la série la plus récente. La barre de résultats colorée montre uniquement les résultats des tests qui ont été exécutés. Par exemple, si vous exécutez plusieurs tests et que certains d'entre eux échouent puis que vous n'exécutez que les tests réussis, la barre de résultats affiche tout en vert.  
   
 > [!NOTE]
->  Si aucun test n'apparaît, vérifiez que vous avez installé un adaptateur pour connecter l'Explorateur de tests à l'infrastructure de test que vous utilisez. Pour plus d’informations, consultez [utiliser un autre framework de test](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
+> Si aucun test n'apparaît, vérifiez que vous avez installé un adaptateur pour connecter l'Explorateur de tests à l'infrastructure de test que vous utilisez. Pour plus d’informations, consultez [utiliser un autre framework de test](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
   
 ## <a name="walkthrough"></a> Procédure pas à pas : À l’aide de Tests unitaires pour développer une méthode  
  Cette procédure pas-à-pas montre comment développer une méthode testée en C# à l'aide de l'infrastructure des tests unitaires Microsoft. Vous pouvez facilement l'adapter à d'autres langages et utiliser d'autres infrastructures de tests comme NUnit. Pour plus d’informations, consultez [Usa autre framework de test](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
@@ -152,7 +152,7 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
 1. Pour renforcer votre confiance dans le fonctionnement de votre code dans tous les cas, ajoutez des tests qui essaient un plus grand nombre de valeurs d'entrée.  
   
     > [!TIP]
-    >  Évitez de modifier les tests existants qui réussissent. Au lieu de cela, ajoutez de nouveaux tests. Modifiez les tests existants uniquement lorsque les besoins des utilisateurs changent. Cette stratégie permet de garantir que vous ne perdez pas de fonctionnalités existantes à mesure que vous travaillez pour étendre le code.  
+    > Évitez de modifier les tests existants qui réussissent. Au lieu de cela, ajoutez de nouveaux tests. Modifiez les tests existants uniquement lorsque les besoins des utilisateurs changent. Cette stratégie permet de garantir que vous ne perdez pas de fonctionnalités existantes à mesure que vous travaillez pour étendre le code.  
   
      Dans votre classe de test, ajoutez le test suivant, qui essaie une plage de valeurs d'entrée :  
   
@@ -257,7 +257,7 @@ Nous vous recommandons de créer des tests unitaires pour que votre code continu
 1. Simplifiez le code, mais ne modifiez pas les tests.  
   
     > [!TIP]
-    >  La *refactorisation* est une modification destinée à améliorer les performances du code ou à en simplifier la compréhension. Elle n'est pas destinée à modifier le comportement du code. Les tests ne sont donc pas modifiés.  
+    > La *refactorisation* est une modification destinée à améliorer les performances du code ou à en simplifier la compréhension. Elle n'est pas destinée à modifier le comportement du code. Les tests ne sont donc pas modifiés.  
     >   
     >  Nous vous recommandons de séparer les étapes de refactorisation des étapes qui étendent les fonctionnalités. En ne modifiant pas les tests, vous pouvez être sûr que vous n'avez pas introduit par erreur des bogues lors de la refactorisation.  
   

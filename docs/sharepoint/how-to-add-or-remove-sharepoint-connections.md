@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 70594f8c881289bd394f33353f237bdab71c91f1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3c094ad703727903e7109d6a748b8383e4cad7d6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435483"
 ---
 # <a name="how-to-add-or-remove-sharepoint-connections"></a>Procédure : Ajouter ou supprimer des connexions SharePoint
   Explorateur de serveurs vous permet de parcourir des sites SharePoint, ainsi que des connexions de données. Toutefois, avant de pouvoir parcourir le contenu d’un site SharePoint vous devez l’ajouter à la **connexions SharePoint** nœud.
@@ -41,7 +41,7 @@ ms.locfileid: "60077366"
 3. Choisissez le site, puis, dans la barre de menus, **modifier** > **supprimer**.
 
     > [!NOTE]
-    >  Cette étape ne supprime pas le site sous-jacente ; elle supprime uniquement la connexion à partir de **Explorateur de serveurs**.
+    > Cette étape ne supprime pas le site sous-jacente ; elle supprime uniquement la connexion à partir de **Explorateur de serveurs**.
 
 ## <a name="see-also"></a>Voir aussi
 - [Parcourir les connexions SharePoint à l’aide de l’Explorateur de serveurs](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)

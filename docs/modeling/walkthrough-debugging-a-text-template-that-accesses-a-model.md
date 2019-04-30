@@ -7,18 +7,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b314dc9eedbf99ba130772ac226d45239b4de455
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7e8b1ff717931286c5aa3aaaa69510ce05fb39a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045055"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385976"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Procédure pas à pas : Débogage d’un modèle de texte accédant à un modèle
 Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de langage spécifique à un domaine, vous obtiendrez des erreurs lorsque le moteur transforme le modèle de code source ou lors de la compilation du code généré. La procédure suivante montre quelques opérations que vous pouvez faire pour déboguer un modèle de texte.
 
 > [!NOTE]
->  Pour plus d’informations sur le texte modèles en général, consultez [génération de Code et modèles de texte T4](../modeling/code-generation-and-t4-text-templates.md). Pour plus d’informations sur le débogage des modèles de texte, consultez [procédure pas à pas : Débogage d’un modèle de texte](debugging-a-t4-text-template.md).
+> Pour plus d’informations sur le texte modèles en général, consultez [génération de Code et modèles de texte T4](../modeling/code-generation-and-t4-text-templates.md). Pour plus d’informations sur le débogage des modèles de texte, consultez [procédure pas à pas : Débogage d’un modèle de texte](debugging-a-t4-text-template.md).
 
 ## <a name="creating-a-domain-specific-language-solution"></a>Création d’une Solution de langage spécifique à un domaine
  Dans cette procédure, vous créez une solution de langage spécifique à un domaine qui présente les caractéristiques suivantes :
@@ -54,7 +54,7 @@ Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de lang
 1. Remplacez le code dans DebugTest.tt par le code suivant :
 
     > [!NOTE]
-    >  Le code contient une erreur. Vous risquez d’introduire l’erreur pour la déboguer.
+    > Le code contient une erreur. Vous risquez d’introduire l’erreur pour la déboguer.
 
     ```csharp
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>
@@ -118,7 +118,7 @@ Lorsque vous modifiez ou ajoutez des modèles de texte dans une solution de lang
 1. Remplacez le code dans DebugTest.tt par le code suivant :
 
     > [!NOTE]
-    >  Le code contient une erreur. Vous risquez d’introduire l’erreur pour la déboguer.
+    > Le code contient une erreur. Vous risquez d’introduire l’erreur pour la déboguer.
 
     ```csharp
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>

@@ -8,12 +8,12 @@ ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
 caps.latest.revision: 8
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 37ca201f071d4cd9eda595a6fee6b95a23b4f05e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ef42f7710598906310b77bd834adf04b21d6bfc2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095527"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445854"
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Utilisation des membres Microsoft.VisualStudio.TestTools.UnitTesting dans les tests unitaires
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ Le framework de test unitaire prend en charge le test unitaire dans [!INCLUDE[vs
 > [!NOTE]
 > Les éléments d’attribut, dont les noms finissent par la chaîne Attribute, peuvent être utilisés avec ou sans la chaîne Attribute. Par exemple, les deux exemples de code suivants fonctionnent de manière identique :
 >
->  `[TestClass()]`
+> `[TestClass()]`
 >
->  `[TestClassAttribute()]`
+> `[TestClassAttribute()]`
 
 ### <a name="elements-used-for-data-driven-testing"></a>Éléments utilisés pour les tests pilotés par les données
  Utilisez les éléments suivants pour configurer des tests unitaires pilotés par les données. Pour plus d’informations, consultez [How To : Créer un Test unitaire piloté par les données](../test/how-to-create-a-data-driven-unit-test.md) et [procédure pas à pas : À l’aide d’un fichier de Configuration pour définir une Source de données](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).

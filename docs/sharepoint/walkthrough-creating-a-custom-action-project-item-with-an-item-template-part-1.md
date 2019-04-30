@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7397da630a5fd6f2c649d6f448627d7c77c55128
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9417c2116dde909bda948e7d9140d7f52b090d68
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059121"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430478"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Procédure pas à pas : Créer un élément de projet d’action personnalisé avec un modèle d’élément, partie 1
   Vous pouvez étendre le système de projet SharePoint dans Visual Studio en créant des types d’éléments de votre propre projet. Dans cette procédure pas à pas, vous allez créer un élément de projet qui peut être ajouté à un projet SharePoint pour créer une action personnalisée sur un site SharePoint. L’action personnalisée ajoute un élément de menu pour le **Actions du Site** menu du site SharePoint.
@@ -44,7 +44,7 @@ ms.locfileid: "60059121"
   Il s’agit d’une procédure pas à pas autonome. Après avoir terminé cette procédure pas à pas, vous pouvez améliorer l’élément de projet en ajoutant un Assistant pour le modèle d’élément. Pour plus d’informations, consultez [Procédure pas à pas : Créer un élément de projet d’action personnalisé avec un modèle d’élément, partie 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).
 
 > [!NOTE]
->  Vous pouvez télécharger un exemple de [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) qui montre comment créer des activités personnalisées pour un flux de travail.
+> Vous pouvez télécharger un exemple de [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) qui montre comment créer des activités personnalisées pour un flux de travail.
 
 ## <a name="prerequisites"></a>Prérequis
  Vous avez besoin des composants suivants sur l’ordinateur de développement pour effectuer cette procédure pas à pas :
@@ -81,7 +81,7 @@ ms.locfileid: "60059121"
 4. Dans le **nouveau projet** boîte de dialogue, développez le **Visual C#** ou **Visual Basic** nœuds, puis choisissez le **extensibilité** nœud.
 
     > [!NOTE]
-    >  Le **extensibilité** nœud est disponible uniquement si vous installez le SDK Visual Studio. Pour plus d’informations, consultez la section conditions préalables plus haut dans cette rubrique.
+    > Le **extensibilité** nœud est disponible uniquement si vous installez le SDK Visual Studio. Pour plus d’informations, consultez la section conditions préalables plus haut dans cette rubrique.
 
 5. Choisissez le **projet VSIX** modèle.
 
@@ -164,7 +164,7 @@ ms.locfileid: "60059121"
 2. Dans la liste des éléments de projet, choisissez le **fichier icône** élément.
 
     > [!NOTE]
-    >  Dans les projets Visual Basic, vous devez choisir le **général** nœud pour afficher la **fichier icône** élément.
+    > Dans les projets Visual Basic, vous devez choisir le **général** nœud pour afficher la **fichier icône** élément.
 
 3. Dans le **nom** , entrez **CustomAction_SolutionExplorer.ico**, puis choisissez le **ajouter** bouton.
 
@@ -197,7 +197,7 @@ ms.locfileid: "60059121"
 3. Remplacez le contenu du fichier par le code XML suivant, puis enregistrez et fermez le fichier.
 
     > [!NOTE]
-    >  Le code XML suivant est pour un modèle d’élément Visual c#. Si vous créez un modèle d’élément Visual Basic, remplacez la valeur de la `ProjectType` élément avec `VisualBasic`.
+    > Le code XML suivant est pour un modèle d’élément Visual c#. Si vous créez un modèle d’élément Visual Basic, remplacez la valeur de la `ProjectType` élément avec `VisualBasic`.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -310,7 +310,7 @@ ms.locfileid: "60059121"
 6. Dans le **Type** , choisissez **Microsoft.VisualStudio.ItemTemplate**.
 
     > [!NOTE]
-    >  Cette valeur correspond à la `ItemTemplate` élément dans le fichier extension.vsixmanifest. Cet élément identifie le sous-dossier dans le package VSIX qui contient le modèle d’élément de projet. Pour plus d’informations, consultez [ItemTemplate, élément (schéma VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\)).
+    > Cette valeur correspond à la `ItemTemplate` élément dans le fichier extension.vsixmanifest. Cet élément identifie le sous-dossier dans le package VSIX qui contient le modèle d’élément de projet. Pour plus d’informations, consultez [ItemTemplate, élément (schéma VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\)).
 
 7. Dans le **Source** , choisissez **un projet dans la solution actuelle**.
 
@@ -323,7 +323,7 @@ ms.locfileid: "60059121"
 10. Dans le **Type** , choisissez **Microsoft.VisualStudio.MefComponent**.
 
     > [!NOTE]
-    >  Cette valeur correspond à la `MefComponent` élément dans le fichier extension.vsixmanifest. Cet élément spécifie le nom d’un assembly d’extension dans le package VSIX. Pour plus d’informations, consultez [MEFComponent, élément (schéma VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Cette valeur correspond à la `MefComponent` élément dans le fichier extension.vsixmanifest. Cet élément spécifie le nom d’un assembly d’extension dans le package VSIX. Pour plus d’informations, consultez [MEFComponent, élément (schéma VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 11. Dans le **Source** , choisissez **un projet dans la solution actuelle**.
 
@@ -425,7 +425,7 @@ ms.locfileid: "60059121"
      L’action personnalisée est empaquetée et déployée vers le site SharePoint qui est spécifié dans le **URL du Site** propriété du projet. Le navigateur web s’ouvre à la page par défaut de ce site.
 
     > [!NOTE]
-    >  Si le **le débogage de Script est désactivé** boîte de dialogue s’affiche, choisissez le **Oui** pour continuer à déboguer le projet.
+    > Si le **le débogage de Script est désactivé** boîte de dialogue s’affiche, choisissez le **Oui** pour continuer à déboguer le projet.
 
 4. Sur le **Actions du Site** menu, choisissez **centre de développement SharePoint**, vérifiez que le navigateur ouvre le site Web https://docs.microsoft.com/sharepoint/dev/, puis fermez le navigateur web.
 

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a28c4aef9284148379d65f3f8bef1b035f8580c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 583731e311f6e6257bfb43c9f21ac2db143145eb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709952"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434589"
 ---
 # <a name="sccpopulatelist-function"></a>Fonction SccPopulateList
 Cette fonction met à jour une liste des fichiers pour une commande de contrôle de code source particulier et fournit l’état de contrôle de code source sur tous les fichiers donnés.
@@ -87,7 +87,7 @@ SCCRTN SccPopulateList (
  Le plug-in continue d’appeler le `pfnPopulate` (fonction), qui ajoute et supprime les fichiers, jusqu'à ce qu’il est terminé et le renvoie à partir de la `SccPopulateList` (fonction). L’IDE peut ensuite afficher sa liste. Le `lpStatus` tableau représente tous les fichiers dans la liste d’origine passé par l’IDE. Le plug-in renseigne le statut de tous ces fichiers en outre à rendre l’utilisation de la fonction de rappel.
 
 > [!NOTE]
->  Un plug-in de contrôle de code source a toujours la possibilité pour simplement retourner immédiatement à partir de cette fonction, en laissant la liste car il s’agit. Si un plug-in implémente cette fonction, cela peut indiquer cela en définissant le `SCC_CAP_POPULATELIST` indicateur binaire de fonctionnalité dans le premier appel à la [SccInitialize](../extensibility/sccinitialize-function.md). Par défaut, le plug-in doit toujours supposer que tous les éléments transmis dans sont des fichiers. Toutefois, si l’IDE définit le `SCC_PL_DIR` indicateur dans le `fOptions` tous les éléments en cours de passage de paramètre, sont à prendre en compte les répertoires. Le plug-in doit ajouter tous les fichiers qui appartiennent dans les répertoires. L’IDE ne passe jamais dans un mélange de fichiers et répertoires.
+> Un plug-in de contrôle de code source a toujours la possibilité pour simplement retourner immédiatement à partir de cette fonction, en laissant la liste car il s’agit. Si un plug-in implémente cette fonction, cela peut indiquer cela en définissant le `SCC_CAP_POPULATELIST` indicateur binaire de fonctionnalité dans le premier appel à la [SccInitialize](../extensibility/sccinitialize-function.md). Par défaut, le plug-in doit toujours supposer que tous les éléments transmis dans sont des fichiers. Toutefois, si l’IDE définit le `SCC_PL_DIR` indicateur dans le `fOptions` tous les éléments en cours de passage de paramètre, sont à prendre en compte les répertoires. Le plug-in doit ajouter tous les fichiers qui appartiennent dans les répertoires. L’IDE ne passe jamais dans un mélange de fichiers et répertoires.
 
 ## <a name="see-also"></a>Voir aussi
 - [Fonctions d’API du plug-in de contrôle de code source](../extensibility/source-control-plug-in-api-functions.md)

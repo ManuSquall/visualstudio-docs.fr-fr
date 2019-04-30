@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bec6c539963d54bfa1d866ccc4811425bba9e3a4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 807d2b7de34acda52dd05ff8263ae3303dca61c6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441923"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Étape 1 : Créer un projet et ajouter une table à votre formulaire
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ La première étape pour créer un jeu de combinaisons consiste à créer le pro
    1. Affectez la valeur **CornflowerBlue** à la propriété **BackColor**. Pour ce faire, ouvrez la boîte de dialogue **BackColor** en choisissant la flèche déroulante en regard de la propriété **BackColor** dans la fenêtre **Propriétés**.  Ensuite, choisissez l’onglet **Web** dans la boîte de dialogue **BackColor** pour afficher la liste des couleurs disponibles.  
   
       > [!NOTE]
-      >  Les couleurs ne sont pas dans l'ordre alphabétique et CornflowerBlue se trouve en bas de la liste.  
+      > Les couleurs ne sont pas dans l'ordre alphabétique et CornflowerBlue se trouve en bas de la liste.  
   
    2. Affectez la valeur **Fill** à la propriété **Dock** en choisissant le bouton de liste déroulante en regard de la propriété, puis le grand bouton central. Ceci permet d'étendre la table afin qu'elle couvre le formulaire entier.  
   
@@ -77,12 +77,12 @@ La première étape pour créer un jeu de combinaisons consiste à créer le pro
         La cellule supérieure gauche dans le TableLayoutPanel doit désormais contenir un cadre noir centré sur un arrière-plan bleu.  
   
        > [!NOTE]
-       >  La police Webdings est une police d'icônes fournie avec le système d'exploitation Windows. Dans votre jeu de combinaisons, cette police vous permet d'afficher les icônes que le joueur doit associer par paires. Au lieu de mettre **c** dans la propriété **Text**, essayez d’entrer des lettres différentes pour voir quelles icônes sont affichées. Un point d'exclamation est une araignée, un N majuscule est un œil et une virgule un piment rouge.  
+       > La police Webdings est une police d'icônes fournie avec le système d'exploitation Windows. Dans votre jeu de combinaisons, cette police vous permet d'afficher les icônes que le joueur doit associer par paires. Au lieu de mettre **c** dans la propriété **Text**, essayez d’entrer des lettres différentes pour voir quelles icônes sont affichées. Un point d'exclamation est une araignée, un N majuscule est un œil et une virgule un piment rouge.  
   
 8. Choisissez le contrôle Label et copiez-le dans la cellule suivante du TableLayoutPanel. (Appuyez sur Ctrl+C ou, dans la barre de menus, choisissez **Edition**, **Copier**.) Ensuite, collez-le. (Appuyez sur Ctrl+V ou, dans la barre de menus, choisissez **Edition**, **Coller**.) Une copie du premier contrôle Label apparaît dans la deuxième cellule du TableLayoutPanel. Collez-le à nouveau, et un autre contrôle Label s'affiche dans la troisième cellule. Continuez à coller des contrôles `Label` jusqu’à ce que toutes les cellules soient remplies.  
   
    > [!NOTE]
-   >  Si vous effectuez un trop grand nombre de collages, l'IDE ajoute une nouvelle ligne au TableLayoutPanel pour fournir la place nécessaire à l'ajout de votre nouveau contrôle Label. Vous pouvez l'annuler. Pour supprimer la nouvelle cellule, appuyez sur Ctrl+Z ou, dans la barre de menus, choisissez **Edition**, **Annuler**.  
+   > Si vous effectuez un trop grand nombre de collages, l'IDE ajoute une nouvelle ligne au TableLayoutPanel pour fournir la place nécessaire à l'ajout de votre nouveau contrôle Label. Vous pouvez l'annuler. Pour supprimer la nouvelle cellule, appuyez sur Ctrl+Z ou, dans la barre de menus, choisissez **Edition**, **Annuler**.  
   
     Votre formulaire est maintenant mis en forme. Il doit ressembler à l'image ci-dessous.  
   

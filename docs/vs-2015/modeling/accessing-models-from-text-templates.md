@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1052529bb743091398b55535b231597c6609add9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9aaf89dd472435d5107e1a2b5870d1e6fc2b9631
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110490"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442886"
 ---
 # <a name="accessing-models-from-text-templates"></a>Accès aux modèles depuis des modèles de texte
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60110490"
 À l’aide de modèles de texte, vous pouvez créer des fichiers de rapport, les fichiers de code source et autres fichiers de texte basés sur les modèles de langage spécifique à un domaine. Pour plus d’informations de base sur les modèles de texte, consultez [génération de Code et modèles de texte T4](../modeling/code-generation-and-t4-text-templates.md). Les modèles de texte fonctionnent en mode expérimental lorsque vous déboguez votre DSL et fonctionnent également sur un ordinateur sur lequel vous avez déployé la solution DSL.  
   
 > [!NOTE]
->  Lorsque vous créez une solution DSL, un exemple de modèle de texte  **\*.tt** fichiers sont générés dans le projet de débogage. Lorsque vous modifiez les noms des classes de domaine, ces modèles ne fonctionnera plus. Néanmoins, ils incluent les directives de base dont vous avez besoin et fournissent des exemples que vous pouvez mettre à jour pour correspondre à votre DSL.  
+> Lorsque vous créez une solution DSL, un exemple de modèle de texte  **\*.tt** fichiers sont générés dans le projet de débogage. Lorsque vous modifiez les noms des classes de domaine, ces modèles ne fonctionnera plus. Néanmoins, ils incluent les directives de base dont vous avez besoin et fournissent des exemples que vous pouvez mettre à jour pour correspondre à votre DSL.  
   
  Pour accéder à un modèle à partir d’un modèle de texte :  
   
@@ -103,7 +103,7 @@ Here is a list of elements in the model:
 ## <a name="Multiple"></a> L’accès à plusieurs modèles à partir d’un modèle de texte  
   
 > [!NOTE]
->  Cette méthode vous permet de lire plusieurs modèles dans le même modèle, mais ne prend pas en charge les références ModelBus. Pour lire des modèles qui sont reliées par des références ModelBus, consultez [à l’aide de Visual Studio ModelBus dans un modèle de texte](../modeling/using-visual-studio-modelbus-in-a-text-template.md).  
+> Cette méthode vous permet de lire plusieurs modèles dans le même modèle, mais ne prend pas en charge les références ModelBus. Pour lire des modèles qui sont reliées par des références ModelBus, consultez [à l’aide de Visual Studio ModelBus dans un modèle de texte](../modeling/using-visual-studio-modelbus-in-a-text-template.md).  
   
  Si vous souhaitez accéder à plus d’un modèle à partir du même modèle de texte, vous devez appeler le processeur de directive généré une fois pour chaque modèle. Vous devez spécifier le nom de fichier de chaque modèle dans le `requires` paramètre. Vous devez spécifier les noms que vous souhaitez utiliser pour la classe de domaine racine dans le `provides` paramètre. Vous devez spécifier des valeurs différentes pour le `provides` paramètres dans chacun des appels de directive. Par exemple, supposons que vous disposez de trois fichiers de modèle appelés Library.xyz, School.xyz et Work.xyz. Pour y accéder à partir du même modèle de texte, vous devez écrire trois appels de directive qui ressemblent à celles qui suivent.  
   
@@ -114,7 +114,7 @@ Here is a list of elements in the model:
 ```  
   
 > [!NOTE]
->  Cet exemple de code est d’une langue qui est basée sur le modèle de solution de langage Minimal.  
+> Cet exemple de code est d’une langue qui est basée sur le modèle de solution de langage Minimal.  
   
  Pour accéder aux modèles dans votre modèle de texte, vous pouvez maintenant écrire du code semblable au code dans l’exemple suivant.  
   

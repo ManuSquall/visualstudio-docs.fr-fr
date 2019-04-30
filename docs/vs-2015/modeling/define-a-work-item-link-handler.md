@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 213237037225b18128ab149f384466e5fab0d668
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cd50f4c80e5e67f6fb7582dc2bc22963151b42fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104679"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433112"
 ---
 # <a name="define-a-work-item-link-handler"></a>Définir un gestionnaire de liens d’éléments de travail
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -152,7 +152,7 @@ namespace WorkItems
  À des fins de test, exécutez votre gestionnaire de liens en mode débogage.  
   
 > [!WARNING]
->  Vous devez être connecté à un contrôle de code source (SSC, Source Code Control) TFS pour créer un élément de travail ou un lien vers celui-ci. Si vous essayez d'ouvrir une connexion à un autre contrôle de code source TFS, Visual Studio ferme automatiquement la solution actuelle. Vérifiez que vous êtes connecté au contrôle de code source TFS approprié avant d'essayer de créer un élément de travail ou un lien vers celui-ci. Dans les versions ultérieures de Visual Studio, les commandes de menu ne sont pas disponibles si vous n'êtes pas connecté à un contrôle de code source.  
+> Vous devez être connecté à un contrôle de code source (SSC, Source Code Control) TFS pour créer un élément de travail ou un lien vers celui-ci. Si vous essayez d'ouvrir une connexion à un autre contrôle de code source TFS, Visual Studio ferme automatiquement la solution actuelle. Vérifiez que vous êtes connecté au contrôle de code source TFS approprié avant d'essayer de créer un élément de travail ou un lien vers celui-ci. Dans les versions ultérieures de Visual Studio, les commandes de menu ne sont pas disponibles si vous n'êtes pas connecté à un contrôle de code source.  
   
 #### <a name="to-test-the-link-handler"></a>Pour tester le gestionnaire de liens  
   
@@ -221,7 +221,7 @@ public void OnWorkItemLinked
 ```  
   
 > [!NOTE]
->  Pour que cet exemple fonctionne, vous devez ajouter une référence de projet à `System.Drawing.dll` et importer l'espace de noms `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation`. Toutefois, ces ajouts ne sont pas obligatoires pour d'autres implémentations d'`OnWorkItemLinked`.  
+> Pour que cet exemple fonctionne, vous devez ajouter une référence de projet à `System.Drawing.dll` et importer l'espace de noms `Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation`. Toutefois, ces ajouts ne sont pas obligatoires pour d'autres implémentations d'`OnWorkItemLinked`.  
   
 ### <a name="listening-for-link-removal"></a>Écoute de la suppression de liens  
  `OnWorkItemRemoved` est appelé une fois juste avant la suppression de chaque lien d'élément de travail. Si un élément de modèle est supprimé, tous ses liens sont supprimés.  

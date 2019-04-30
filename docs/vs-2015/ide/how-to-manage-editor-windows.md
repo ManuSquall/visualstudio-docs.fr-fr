@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 107b42500bbe2daed0d03d3e23e4817c9c3b3fc4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 29047f53b08472a0ff65960bfe694789f7f7cbe1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089924"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430510"
 ---
 # <a name="how-to-manage-editor-windows"></a>Procédure : Gérer Windows de l’éditeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60089924"
 Vous avez la possibilité de travailler sur le code à plusieurs emplacements à la fois. Pour cela, vous pouvez fractionner une fenêtre de l’éditeur ou ouvrir plusieurs instances de fenêtres de l’éditeur.  
   
 > [!NOTE]
->  Les fenêtres de l’éditeur ne prennent pas toutes en charge les instances multiples.  
+> Les fenêtres de l’éditeur ne prennent pas toutes en charge les instances multiples.  
   
 ## <a name="splitting-an-editor-window"></a>Fractionnement d’une fenêtre de l’éditeur  
  Une instance d’une fenêtre de l’éditeur peut être fractionnée en deux affichages distincts pour faciliter les modifications.  
@@ -41,7 +41,7 @@ Vous avez la possibilité de travailler sur le code à plusieurs emplacements à
      La zone d’édition se divise en deux volets séparés par une barre de fractionnement. Vous pouvez faire défiler le contenu de ces volets indépendamment pour afficher et modifier les différentes parties du document actif en même temps. Toutes les modifications effectuées dans un volet sont répercutées dans l’autre volet.  
   
     > [!TIP]
-    >  Pour agrandir l’un des volets, faites glisser la barre de fractionnement vers le haut ou vers le bas.  
+    > Pour agrandir l’un des volets, faites glisser la barre de fractionnement vers le haut ou vers le bas.  
   
 #### <a name="to-return-to-single-pane-view"></a>Pour revenir à l’affichage simple  
   

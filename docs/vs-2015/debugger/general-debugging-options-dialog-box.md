@@ -22,12 +22,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7efd2c988791d0de4f414a48e5c47bc70b05b784
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: cf4a3b699d3854ef2a502fb1bf1d7fb2d6204acb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "59000376"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446478"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Général, Débogage, boîte de dialogue Options
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,14 +84,14 @@ Le**Outils / Options / Débogage / général** page vous permet de définir les 
  **Activer l’évaluation de la propriété et d’autres appels de fonction implicite**  
  Active l'évaluation automatique des propriétés et des appels de fonction implicites dans les fenêtres de variables et la boîte de dialogue **QuickWatch**.  
   
- **Appeler la fonction de conversion de chaînes sur des objets dans des fenêtres de variables (C# et JavaScript uniquement)**  
+ **Appeler la fonction de conversion de chaînes sur des objets dans des fenêtres de variables (c# et JavaScript uniquement)**  
  Exécute un appel de conversion de chaînes implicite lors de l'évaluation d'objets dans des fenêtres de variables. Par conséquent, ce résultat est affiché sous forme de chaîne plutôt que sous forme de nom de type. S'applique uniquement lors du débogage en code C#. Ce paramètre peut être substitué par l’attribut DebuggerDisplay (consultez [à l’aide de l’attribut DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)).  
   
  **Activer la prise en charge du serveur source**  
  Indique au débogueur Visual Studio qu'il faut obtenir les fichiers sources à partir des serveurs sources qui implémentent le protocole SrcSrv (`srcsrv.dll`). Team Foundation Server et les outils de débogage pour Windows sont deux serveurs sources qui implémentent le protocole. Pour plus d'informations sur l'installation de SrcSrv, consultez la documentation des outils de débogage pour Windows. En outre, voir [spécifier de symboles (.pdb) et les fichiers Source](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 > [!IMPORTANT]
->  La lecture des fichiers .pdb pouvant exécuter du code arbitraire dans les fichiers, vérifiez que le serveur possède un niveau de confiance suffisant.  
+> La lecture des fichiers .pdb pouvant exécuter du code arbitraire dans les fichiers, vérifiez que le serveur possède un niveau de confiance suffisant.  
   
  **Afficher les messages de diagnostic du serveur source dans la fenêtre Sortie**  
  Lorsque la prise en charge du serveur source est activée, ce paramètre active l'affichage des messages de diagnostic.  
@@ -145,7 +145,7 @@ Le**Outils / Options / Débogage / général** page vous permet de définir les 
   
   Vous devez utiliser cette option quand vous déboguez le code .NET C++, car le nouveau moteur de débogage ne prend pas en charge l’évaluation des expressions .NET C++. Toutefois, l’activation du mode de compatibilité natif désactive de nombreuses fonctionnalités qui dépendent de l’implémentation du débogueur actuel pour fonctionner. Par exemple, le moteur hérité ne dispose pas de nombreux visualiseurs pour les types intégrés tels que `std::string` dans les projets Visual Studio 2015.   Utilisez les projets Visual Studio 2013 pour une expérience de débogage optimale dans ces cas.  
   
-  **Utiliser les évaluateurs d’expression C# et VB hérités**  
+  **Utiliser les évaluateurs d’expression c# et VB hérités**  
   Le débogueur utilisera les évaluateurs d’expression Visual Studio 2013 C#/Visual Basic au lieu des évaluateurs d’expression Roslyn de Visual Studio 2015.  
   
   **Avertir en cas d’utilisation de visualiseurs de débogueur personnalisés avec des processus potentiellement unsafe (managé uniquement)**  

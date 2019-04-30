@@ -13,12 +13,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 766ecde2da88c2a666470c790f6399cce198b2a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9b1ad310385d5c8c8cecaee408d049a172d53e1e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436847"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Procédure : Créer ou mettre à jour des stratégies d’archivage d’analyse du code standard
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60053154"
 Vous pouvez exiger que l’analyse de code est exécutée sur tous les projets de code dans un projet d’équipe à l’aide de la stratégie d’archivage de l’analyse du code. Nécessitant une analyse du code peut améliorer la qualité du code archivé dans la base de code.  
   
 > [!NOTE]
->  Cette fonctionnalité est disponible uniquement si vous utilisez Team Foundation Server.  
+> Cette fonctionnalité est disponible uniquement si vous utilisez Team Foundation Server.  
   
  Stratégies d’archivage de l’analyse du code sont définies dans les paramètres de projet d’équipe et s’appliquent à chaque projet de code dans le projet d’équipe. Exécutions d’analyse du code sont configurées pour les projets de code dans le fichier projet (.xxproj) pour le projet de code. Exécutions d’analyse du code sont effectuées sur l’ordinateur local. Lorsque vous activez une stratégie d’archivage de l’analyse du code, les fichiers dans un projet de code qui doivent être vérifiées doivent être compilés après leur dernière modification et une analyse du code qui contienne, au minimum, les règles dans les paramètres de projet d’équipe doivent être effectuées sur l’ordinateur où le c modifications ont été apportées.  
   

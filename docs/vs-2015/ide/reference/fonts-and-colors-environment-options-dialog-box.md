@@ -27,12 +27,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a1a66ae20065546d5a42b990d0ba0009d0657ed0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 1cd4b57e2dccbb26c3b6ceba1be51fa5022469cb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656022"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437164"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Polices et couleurs, Environnement, boîte de dialogue Options
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "59656022"
 La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet d’établir un jeu de polices et un modèle de couleurs personnalisés pour divers éléments d’interface utilisateur dans l’environnement de développement intégré (IDE). Vous pouvez accéder à cette boîte de dialogue en cliquant sur **Outils / Options**, puis en sélectionnant **Environnement / Polices et couleurs**. Si cette page n’apparaît pas dans la liste, sélectionnez **Afficher tous les paramètres** dans la boîte de dialogue **Options**.  
   
 > [!NOTE]
->  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Les changements relatifs au modèle de couleurs ne sont pas appliqués durant la session où vous les apportez. Vous pouvez évaluer les changements de couleurs en ouvrant une autre instance de Visual Studio, et en reproduisant les conditions dans lesquelles vous souhaitez qu'ils soient appliqués.  
   
@@ -56,7 +56,7 @@ La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet
    Les changements apportés aux paramètres de style, de taille et d'affichage des couleurs de la police pour l'imprimante affectent l'apparence du texte dans les documents imprimés.  
   
   > [!NOTE]
-  >  Selon les besoins, vous pouvez sélectionner une autre police par défaut pour l'impression que celle utilisée pour l'affichage dans l'éditeur de texte. Cela peut être utile pour imprimer du code contenant des caractères codés sur un octet et sur deux octets.  
+  > Selon les besoins, vous pouvez sélectionner une autre police par défaut pour l'impression que celle utilisée pour l'affichage dans l'éditeur de texte. Cela peut être utile pour imprimer du code contenant des caractères codés sur un octet et sur deux octets.  
   
 - **Compléter automatiquement les instructions**  
   
@@ -75,7 +75,7 @@ La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet
    Les changements apportés aux paramètres de style, de taille et d'affichage des couleurs de la police pour cet élément affectent l'apparence du texte dans les fenêtres Outil qui ont des volets de sortie dans l'IDE. C'est le cas, par exemple, de la fenêtre Sortie, la fenêtre Commande, la fenêtre Exécution, etc.  
   
   > [!NOTE]
-  >  Les changements relatifs au texte des éléments de **[Toutes les fenêtres Outil de texte]** ne sont pas appliqués durant la session où vous les apportez. Vous pouvez évaluer ces changements en ouvrant une autre instance de Visual Studio.  
+  > Les changements relatifs au texte des éléments de **[Toutes les fenêtres Outil de texte]** ne sont pas appliqués durant la session où vous les apportez. Vous pouvez évaluer ces changements en ouvrant une autre instance de Visual Studio.  
   
   **Utiliser les valeurs par défaut**  
   Réinitialise les valeurs de couleur et de police de l’élément de liste sélectionné dans **Afficher les paramètres de**. Le bouton **Utiliser** s’affiche quand d’autres modèles d’affichage sont disponibles pour la sélection. Par exemple, vous avez le choix entre deux modèles pour l'imprimante.  
@@ -90,7 +90,7 @@ La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet
   Répertorie les éléments pour lesquels vous pouvez modifier la couleur de premier plan et d'arrière-plan.  
   
 > [!NOTE]
->  **Texte brut** est l’élément d’affichage par défaut. Ainsi, les propriétés assignées à **Texte brut** sont remplacées par les propriétés assignées aux autres éléments d’affichage. Par exemple, si vous assignez la couleur bleue à **Texte brut** et la couleur verte à **Identificateur**, tous les identificateurs s’affichent en vert. Dans cet exemple, les propriétés associées à **Identificateur** remplacent les propriétés associées à **Texte brut**.  
+> **Texte brut** est l’élément d’affichage par défaut. Ainsi, les propriétés assignées à **Texte brut** sont remplacées par les propriétés assignées aux autres éléments d’affichage. Par exemple, si vous assignez la couleur bleue à **Texte brut** et la couleur verte à **Identificateur**, tous les identificateurs s’affichent en vert. Dans cet exemple, les propriétés associées à **Identificateur** remplacent les propriétés associées à **Texte brut**.  
   
  Voici certains éléments d'affichage :  
   
@@ -214,7 +214,7 @@ La page **Polices et couleurs** de la boîte de dialogue **Options** vous permet
  Affiche la boîte de dialogue Couleur pour vous permettre de définir une couleur personnalisée pour l'élément sélectionné dans la liste Éléments affichés.  
   
 > [!NOTE]
->  Votre capacité à définir des couleurs personnalisées peut être limitée par les paramètres de couleur spécifiques à l'affichage de votre ordinateur. Par exemple, si votre ordinateur est configuré pour afficher 256 couleurs, et si vous sélectionnez une couleur personnalisée dans la boîte de dialogue **Couleur**, l’IDE adopte par défaut la **couleur de base** la plus proche et affiche la couleur noire dans la zone d’aperçu **Couleur**.  
+> Votre capacité à définir des couleurs personnalisées peut être limitée par les paramètres de couleur spécifiques à l'affichage de votre ordinateur. Par exemple, si votre ordinateur est configuré pour afficher 256 couleurs, et si vous sélectionnez une couleur personnalisée dans la boîte de dialogue **Couleur**, l’IDE adopte par défaut la **couleur de base** la plus proche et affiche la couleur noire dans la zone d’aperçu **Couleur**.  
   
  **Arrière-plan de l’élément**  
  Fournit une palette de couleurs à partir de laquelle vous pouvez choisir une couleur d’arrière-plan pour l’élément sélectionné dans **Éléments affichés**. Dans la mesure où certains éléments sont liés et doivent conserver un modèle d'affichage cohérent, le changement de la couleur d'arrière-plan du texte modifie également les valeurs par défaut des éléments tels que Erreur du compilateur, Mot clé ou Opérateur.  

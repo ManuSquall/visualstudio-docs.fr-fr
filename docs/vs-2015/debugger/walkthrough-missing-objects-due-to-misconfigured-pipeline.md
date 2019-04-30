@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 01366bfd0f32f9cbf731613339f2c592873e2623
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9d74006051fd39043de75cec81fdad3f1083adef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444280"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Procédure pas à pas : objets manquants en raison d’un pipeline mal configuré
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Cette procédure pas à pas montre comment utiliser les outils Graphics Diagnost
     Dans la fenêtre **Étapes de canalisation Graphics** , l’étape **Assembleur d’entrée** montre la géométrie de l’objet avant sa transformation tandis que l’étape **Nuanceur de sommets** montre le même objet après sa transformation. Dans ce scénario, notez que la fenêtre **Étapes de canalisation Graphics** montre les étapes **Assembleur d’entrée** et  **Nuanceur de sommets** , mais pas l’étape **Nuanceur de pixels** pour l’un des appels de dessin.  
   
    > [!NOTE]
-   >  Si d’autres étapes de canalisation (par exemple Nuanceur de coque, Nuanceur de domaine ou Nuanceur de géométrie) traitent l’objet, elles peuvent être la cause du problème. En règle générale, le problème est lié à la première étape durant laquelle le résultat n’est pas affiché ou est affiché de manière inattendue.  
+   > Si d’autres étapes de canalisation (par exemple Nuanceur de coque, Nuanceur de domaine ou Nuanceur de géométrie) traitent l’objet, elles peuvent être la cause du problème. En règle générale, le problème est lié à la première étape durant laquelle le résultat n’est pas affiché ou est affiché de manière inattendue.  
   
 4. Arrêtez quand vous atteignez l’appel de dessin qui correspond à l’objet manquant. Dans ce scénario, la fenêtre **Étapes de canalisation Graphics** indique que la géométrie a été émise vers le GPU (indiqué par la présence de l’étape **Assembleur d’entrée** ) et transformée (indiqué par l’étape **Nuanceur de sommets** ), mais elle n’apparaît pas dans la cible de rendu, car il ne semble pas y avoir de nuanceur de pixels actif (indiqué par l’absence de l’étape **Nuanceur de pixels** ). Dans ce scénario, vous pouvez même voir la silhouette de l'objet manquant à l’étape **Fusion de sortie** :  
   
@@ -87,7 +87,7 @@ Cette procédure pas à pas montre comment utiliser les outils Graphics Diagnost
 1. Recherchez l’appel `PSSetShader` qui correspond à l’objet manquant. Dans la fenêtre **Liste des événements Graphics** , entrez “Draw;PSSetShader” dans la zone **Rechercher** , en haut à droite de la fenêtre **Liste des événements Graphics** . Cette opération permet de filtrer la liste pour retenir uniquement les événements “PSSetShader” et les événements dont le titre contient “Draw”. Choisissez le premier appel `PSSetShader` qui apparaît avant l’appel de dessin de l’objet manquant.  
   
    > [!NOTE]
-   >  `PSSetShader` n’apparaît pas dans la fenêtre **Liste des événements Graphics** s’il n’a pas été défini durant ce frame. En général, cela se produit uniquement si le nuanceur de pixels est utilisé pour tous les objets, ou si l’appel `PSSetShader` a été ignoré par inadvertance pendant ce frame. Dans les deux cas, nous vous recommandons de rechercher les appels `PSSetShader` dans le code source de l’application et d’appliquer des techniques de débogage classiques pour examiner le comportement de ces appels.  
+   > `PSSetShader` n’apparaît pas dans la fenêtre **Liste des événements Graphics** s’il n’a pas été défini durant ce frame. En général, cela se produit uniquement si le nuanceur de pixels est utilisé pour tous les objets, ou si l’appel `PSSetShader` a été ignoré par inadvertance pendant ce frame. Dans les deux cas, nous vous recommandons de rechercher les appels `PSSetShader` dans le code source de l’application et d’appliquer des techniques de débogage classiques pour examiner le comportement de ces appels.  
   
 2. Ouvrez la fenêtre **Pile des appels des événements Graphics** . Dans la barre d’outils **Graphics Diagnostics** , choisissez **Pile des appels des événements Graphics**.  
   
@@ -96,7 +96,7 @@ Cette procédure pas à pas montre comment utiliser les outils Graphics Diagnost
     ![Le code qui n’initialise pas le nuanceur de pixels](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-5.png "gfx_diag_demo_misconfigured_pipeline_step_5")  
   
    > [!NOTE]
-   >  Si vous ne trouvez pas la source de la valeur null en examinant simplement la pile des appels, nous vous recommandons de définir un point d’arrêt conditionnel sur l’appel `PSSetShader` pour que l’exécution du programme s’arrête quand le nuanceur de pixels prend la valeur null. Ensuite, redémarrez l’application en mode débogage et appliquez des techniques de débogage traditionnelles pour rechercher la source de la valeur null.  
+   > Si vous ne trouvez pas la source de la valeur null en examinant simplement la pile des appels, nous vous recommandons de définir un point d’arrêt conditionnel sur l’appel `PSSetShader` pour que l’exécution du programme s’arrête quand le nuanceur de pixels prend la valeur null. Ensuite, redémarrez l’application en mode débogage et appliquez des techniques de débogage traditionnelles pour rechercher la source de la valeur null.  
   
    Pour résoudre le problème, affectez le nuanceur de pixels approprié à l’aide du premier paramètre de l’appel d’API `ID3D11DeviceContext::PSSetShader` .  
   

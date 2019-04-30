@@ -12,12 +12,12 @@ ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9f56de9b3ce3f1faf5a63fa6b8fd8574a57b82f3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 63e0140b752adda02aba6126580ec08ee1f7536a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949917"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436629"
 ---
 # <a name="registering-a-project-type"></a>Inscription d’un type de projet
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de
  Dans l’exemple ci-dessous, les instructions à partir du Registre fournissent des chemins d’accès par défaut et les données, le cas échéant, suivie d’une table qui contient des entrées à partir du script de Registre pour chaque instruction. Les tableaux fournissent les entrées du script et des informations supplémentaires sur les instructions.  
   
 > [!NOTE]
->  Les informations de Registre suivantes sont destinées à être un exemple du type et à des fins des entrées dans les scripts de Registre que vous l’écrivez pour enregistrer votre type de projet. Vos entrées réelles et leurs utilisations peuvent varier en fonction des besoins spécifiques de votre type de projet. Vous devez passez en revue les exemples disponibles pour en trouver un qui ressemble le type de projet que vous développez et puis passez en revue le script de Registre pour cet exemple.  
+> Les informations de Registre suivantes sont destinées à être un exemple du type et à des fins des entrées dans les scripts de Registre que vous l’écrivez pour enregistrer votre type de projet. Vos entrées réelles et leurs utilisations peuvent varier en fonction des besoins spécifiques de votre type de projet. Vous devez passez en revue les exemples disponibles pour en trouver un qui ressemble le type de projet que vous développez et puis passez en revue le script de Registre pour cet exemple.  
   
  Les exemples suivants proviennent de HKEY_CLASSES_ROOT.  
   
@@ -267,6 +267,6 @@ Lorsque vous créez un nouveau type de projet, vous devez créer les entrées de
  Cela signifie que si vous incluez un PROJECT_TYPE = entrée EF dans le fichier .vsz, la recherche d’environnement votre .vsz des fichiers dans le répertoire ProductDir spécifié précédemment.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Liste de vérification : Créer de nouveaux Types de projet](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [Liste de contrôle : Créer de nouveaux Types de projet](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Éléments d’un modèle de projet](../../extensibility/internals/elements-of-a-project-model.md)   
  [Création d’instances de projets à l’aide de fabriques de projets](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

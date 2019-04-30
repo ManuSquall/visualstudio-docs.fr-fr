@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c9ea40a2af8139895a49c993588555f06bfda7f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 90e259d9d5e71ab5e6837cc4aa9cd22ebf43aaac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090704"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432365"
 ---
 # <a name="how-to-use-the-argument-designer"></a>Procédure : Utiliser le concepteur d’arguments
 Par rapport aux versions précédentes du [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)], le concepteur d'arguments permet aux données de circuler plus facilement à l'intérieur et à l'extérieur d'une activité. Le concepteur est accessible en cliquant sur le **Arguments** situé dans l’angle inférieur gauche de la zone de conception. Le concepteur contient une liste d’arguments qui s’affichent sous forme tabulaire et peuvent être triées en fonction de chacun des en-têtes de colonnes, à l’exception de la **valeur par défaut** colonne. Chaque argument contient une direction Entrée, Sortie, Entrée-Sortie ou Propriété, un type et une valeur d’expression par défaut (le cas échéant). Le nom et la valeur d'expression par défaut sont des champs de texte modifiables ; le type et la direction sont des zones de liste déroulante. [!INCLUDE[crabout](../includes/crabout-md.md)] arguments, consultez [Variables et Arguments](http://msdn.microsoft.com/library/d03dbe34-5b2e-4f21-8b57-693ee49611b8).  
@@ -31,7 +31,7 @@ Par rapport aux versions précédentes du [!INCLUDE[dnprdnshort](../includes/dn
 3. Cliquez sur la ligne vide libellée **créer un Argument**. Cette opération ajoute une nouvelle ligne avec un nouvel argument utilisant les valeurs par défaut suivantes : argumentx pour le **nom** où x est un entier avec une valeur initiale 1 qui est automatiquement incrémenté pour créer des noms d’argument unique, **dans**  pour le **Direction**, et **chaîne** pour le **type d’Argument**. Aucune valeur n’est ajoutée pour **valeur par défaut**. Vous pouvez modifier ces valeurs à tout moment pendant le processus de conception du workflow.  
   
     > [!NOTE]
-    >  Pour supprimer un argument, sélectionnez l’argument en cliquant dessus, puis appuyez sur la **supprimer** clé.  
+    > Pour supprimer un argument, sélectionnez l’argument en cliquant dessus, puis appuyez sur la **supprimer** clé.  
   
 ## <a name="see-also"></a>Voir aussi  
  [L’aide du Concepteur de flux de travail](../workflow-designer/using-the-workflow-designer.md)   

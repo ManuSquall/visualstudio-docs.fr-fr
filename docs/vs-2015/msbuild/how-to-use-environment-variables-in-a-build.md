@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 40b296e33d00e6abf6730c7ec29a1fe9ed8e039b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 72d810f998b111aa2ec08a5874498ed8ee23a3be
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067987"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437888"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>Procédure : Utiliser des variables d’environnement dans une build
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Lorsque vous générez des projets, il est souvent nécessaire de définir des o
  Toutes les variables d’environnement sont disponibles pour le fichier projet [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ([!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]) en tant que propriétés.  
   
 > [!NOTE]
->  Si le fichier projet contient une définition explicite d’une propriété qui porte le même nom qu’une variable d’environnement, la propriété du fichier projet remplace la valeur de la variable d’environnement.  
+> Si le fichier projet contient une définition explicite d’une propriété qui porte le même nom qu’une variable d’environnement, la propriété du fichier projet remplace la valeur de la variable d’environnement.  
   
 #### <a name="to-use-an-environment-variable-in-an-msbuild-project"></a>Pour utiliser une variable d’environnement dans un projet MSBuild  
   
@@ -46,7 +46,7 @@ Lorsque vous générez des projets, il est souvent nécessaire de définir des o
      `<ToolsPath Condition="'$(TOOLSPATH)' == ''">c:\tools</ToolsPath>`  
   
     > [!NOTE]
-    >  Comme les noms de propriété ne respectent pas la casse, `$(ToolsPath)` et `$(TOOLSPATH)` référencent la même variable d’environnement ou propriété.  
+    > Comme les noms de propriété ne respectent pas la casse, `$(ToolsPath)` et `$(TOOLSPATH)` référencent la même variable d’environnement ou propriété.  
   
 ## <a name="example"></a>Exemple  
  Le fichier projet suivant utilise des variables d’environnement pour spécifier l’emplacement des répertoires.  
@@ -71,4 +71,4 @@ Lorsque vous générez des projets, il est souvent nécessaire de définir des o
 
 [Propriétés MSBuild](../msbuild/msbuild-properties1.md)
 
-[Guide pratique pour Générer les mêmes fichiers sources avec des Options différentes](../msbuild/how-to-build-the-same-source-files-with-different-options.md)
+[Guide pratique pour générer les mêmes fichiers sources avec des options différentes](../msbuild/how-to-build-the-same-source-files-with-different-options.md)

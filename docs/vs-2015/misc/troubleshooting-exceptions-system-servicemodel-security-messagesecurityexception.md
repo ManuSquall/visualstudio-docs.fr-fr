@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ce4b5671d0e10d2f524ee96494d37cb68babe72a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6852b12e8a3cbc902770a2825d12697c12fc1760
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058874"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436550"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Dépannage des Exceptions : System.ServiceModel.Security.MessageSecurityException
 Un <xref:System.ServiceModel.Security.MessageSecurityException> exception est levée lorsque [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] détermine qu’un message n’est pas correctement sécurisé ou qu’il a été falsifié. L'erreur se produit le plus fréquemment lorsque les conditions suivantes se vérifient toutes :  
@@ -35,7 +35,7 @@ Un <xref:System.ServiceModel.Security.MessageSecurityException> exception est le
  Si un utilisateur distant est susceptible d'exécuter le site Web à l'aide du serveur de développement [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] et d'utiliser également un service Web ou WCF, vous pouvez créer une liaison de service personnalisée ou désactiver la sécurité NTLM.  
   
 > [!IMPORTANT]
->  Il n'est pas recommandé de désactiver la sécurité NTLM car cela pourrait constituer une menace pour la sécurité.  
+> Il n'est pas recommandé de désactiver la sécurité NTLM car cela pourrait constituer une menace pour la sécurité.  
   
  Si vous créez une liaison de service personnalisée, vous êtes encore protégé par l'authentification NTLM.  
   
@@ -74,7 +74,7 @@ Un <xref:System.ServiceModel.Security.MessageSecurityException> exception est le
    Vous pouvez suivre les étapes ci-dessous pour désactiver la sécurité NTLM lorsque vous utilisez une référence de service WCF.  
   
 > [!IMPORTANT]
->  Il n'est pas recommandé de désactiver la sécurité NTLM car cela pourrait constituer une menace pour la sécurité.  
+> Il n'est pas recommandé de désactiver la sécurité NTLM car cela pourrait constituer une menace pour la sécurité.  
   
 #### <a name="to-turn-off-ntlm-security"></a>Pour désactiver la sécurité NTLM  
   

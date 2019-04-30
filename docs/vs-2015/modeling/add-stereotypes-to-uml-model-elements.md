@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 092c07e9aa5f2999bcf3a28977151878123f6bfc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5bba638a595a01f17e4b7e4f8269a69cb6e466a1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043644"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430486"
 ---
 # <a name="add-stereotypes-to-uml-model-elements"></a>Ajouter des stéréotypes à des éléments de modèle UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,14 +44,14 @@ Vous pouvez ajouter un stéréotype à un élément de modèle UML pour l'annote
 1. Avec le bouton droit de l’élément de modèle ou la relation, sur un diagramme ou dans **Explorateur de modèles UML**, puis cliquez sur **propriétés**.  
   
     > [!NOTE]
-    >  Pour ajouter les mêmes stéréotypes à plusieurs éléments, vous pouvez sélectionner plusieurs éléments, puis cliquer avec le bouton droit sur l'un d'eux.  
+    > Pour ajouter les mêmes stéréotypes à plusieurs éléments, vous pouvez sélectionner plusieurs éléments, puis cliquer avec le bouton droit sur l'un d'eux.  
   
 2. Cliquez sur le **stéréotypes** propriété et sélectionnez les stéréotypes que vous souhaitez appliquer.  
   
      Les stéréotypes sélectionnés sont affichés entre « chevrons » dans l'élément de modèle pour la plupart des types de relations et d'éléments.  
   
     > [!NOTE]
-    >  Si vous ne voyez pas le **stéréotypes** propriété, ou si le stéréotype souhaité n’apparaît pas, vérifiez que l’élément de modèle est à l’intérieur d’un package ou un modèle auquel le profil approprié a été lié.  
+    > Si vous ne voyez pas le **stéréotypes** propriété, ou si le stéréotype souhaité n’apparaît pas, vérifiez que l’élément de modèle est à l’intérieur d’un package ou un modèle auquel le profil approprié a été lié.  
   
 3. Certains stéréotypes vous permettent de définir les valeurs de propriétés supplémentaires pour l'élément de modèle. Pour afficher ces propriétés, développez le **stéréotypes** propriété.  
   

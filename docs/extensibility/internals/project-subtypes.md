@@ -11,18 +11,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 027dc559c33b5b8f10a4555985e8b2a5a5a416c5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 73cf7fe43dcbe15bdeedf6822c9172533e6d420b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423068"
 ---
 # <a name="project-subtypes"></a>Sous-types de projets
 Les sous-types de projet vous permettent de personnaliser ou de spécifier le comportement des systèmes de projet de la version [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Personnalisations incluent l’enregistrement des données supplémentaires dans le fichier projet, en ajoutant ou en filtrant les éléments dans le **ajouter un nouvel élément** boîte de dialogue, contrôler comment les assemblys sont débogués et déployés et en étendant le projet **propriété Pages** boîte de dialogue. Les VSPackages implémenter des sous-types de projet à l’aide d’agrégation COM.
 
 > [!NOTE]
->  Le système de projet Visual C++ ne prend pas en charge les sous-types de projet. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] lui-même utilise des sous-types de projet pour implémenter des projets Smart Device et de SQL Server.
+> Le système de projet Visual C++ ne prend pas en charge les sous-types de projet. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] lui-même utilise des sous-types de projet pour implémenter des projets Smart Device et de SQL Server.
 
 ## <a name="in-this-section"></a>Dans cette section
 - [Conception de sous-types de projets](../../extensibility/internals/project-subtypes-design.md)

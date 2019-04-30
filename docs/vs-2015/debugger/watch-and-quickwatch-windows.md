@@ -24,12 +24,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d1a6167759d35dd67142e1919423df6aa380fe88
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c3f79e492440f98f733488afb241fa6f86e220b9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063528"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444231"
 ---
 # <a name="watch-and-quickwatch-windows"></a>Espion et Espion express, fenêtres
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -162,7 +162,7 @@ var1 = var2
  Vous pouvez parfois être amené à observer le comportement d’un objet spécifique. Par exemple, vous pouvez souhaiter suivre un objet référencé par une variable locale devenue hors de portée. En C# et Visual Basic, vous pouvez créer des ID d’objet pour des instances spécifiques de types de références et les utiliser dans la fenêtre Espion et dans les conditions de point d’arrêt. L’ID d’objet est généré par les services de débogage du Common Language Runtime (CLR) et associé à l’objet.  
   
 > [!NOTE]
->  Les ID d’objet créent des références faibles et n’empêchent pas l’objet de subir une récupération de mémoire. Leur validité ne vaut que pour la session de débogage active.  
+> Les ID d’objet créent des références faibles et n’empêchent pas l’objet de subir une récupération de mémoire. Leur validité ne vaut que pour la session de débogage active.  
   
  Dans le code suivant, une méthode crée une personne ( `Person` ) en utilisant une variable locale, mais vous voulez déterminer le nom de `Person`dans une autre méthode :  
   
@@ -215,7 +215,7 @@ public class Program
 6. Poursuivez le débogage et quand l’exécution s’arrête dans la méthode `DoSomething()` , la fenêtre **Espion** affiche l’objet `Person` .  
   
 > [!NOTE]
->  Si vous voulez afficher les propriétés de l’objet, telles que `Person.Name` dans l’exemple ci-dessus, vous devez avoir activé l’évaluation de propriété.  
+> Si vous voulez afficher les propriétés de l’objet, telles que `Person.Name` dans l’exemple ci-dessus, vous devez avoir activé l’évaluation de propriété.  
   
 ## <a name="using-registers-in-the-watch-window-c-only"></a>Utilisation de registres dans la fenêtre Espion (C++ uniquement)  
  Si vous déboguez du code natif, vous pouvez ajouter des noms de registres, ainsi que les noms de variables à l’aide de  **$ \<inscrire nom >** ou  **@ \<inscrire nom >**.  Pour plus d’informations, consultez [Pseudovariables](../debugger/pseudovariables.md).  

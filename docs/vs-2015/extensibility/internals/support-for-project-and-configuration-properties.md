@@ -11,12 +11,12 @@ ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c4c62bf12505bf04b8a680946ce848ea92709507
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4b01b38510b11f5a9928e865b1511d0ea5639ea8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953044"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408576"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Prise en charge des propriétés de configuration et de projet
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Le **propriétés** fenêtre dans le [!INCLUDE[vsprvs](../../includes/vsprvs-md.
  Il est la responsabilité du projet pour rendre persistantes les propriétés de projet et la configuration du fichier projet.  
   
 > [!NOTE]
->  Un projet peut optimiser la persistance par des valeurs de propriété uniquement persistantes qui diffèrent de leurs valeurs par défaut.  
+> Un projet peut optimiser la persistance par des valeurs de propriété uniquement persistantes qui diffèrent de leurs valeurs par défaut.  
   
 ## <a name="support-for-project-and-configuration-properties"></a>Prise en charge des propriétés de configuration et de projet  
  Le `Microsoft.VisualStudio.Package.SettingsPage` classe implémente des pages de propriétés de projet et de configuration. L’implémentation par défaut de `SettingsPage` propose des propriétés publiques à un utilisateur dans une grille de propriétés génériques. Le `Microsoft.VisualStudio.Package.HierarchyNode.GetPropertyPageGuids` méthode sélectionne des classes dérivées de `SettingsPage` pour les grilles de propriétés de projet. Le `Microsoft.VisualStudio.Package.ProjectNode.GetConfigPropertyPageGuids` méthode sélectionne des classes dérivées de `SettingsPage` pour les grilles de propriétés de configuration. Votre type de projet doit substituer ces méthodes pour sélectionner les pages de propriétés appropriée.  
@@ -65,7 +65,7 @@ Le **propriétés** fenêtre dans le [!INCLUDE[vsprvs](../../includes/vsprvs-md.
 - `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` et `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` conserver les propriétés de configuration.  
   
   > [!NOTE]
-  >  Les implémentations de la `Microsoft.VisualStudio.Package.SettingsPage` et `Microsoft.VisualStudio.Package.ProjectNode` classes utilisent la `Microsoft.Build.BuildEngine` (MSBuild) des méthodes pour obtenir et définir les propriétés de configuration et de projet à partir du fichier projet.  
+  > Les implémentations de la `Microsoft.VisualStudio.Package.SettingsPage` et `Microsoft.VisualStudio.Package.ProjectNode` classes utilisent la `Microsoft.Build.BuildEngine` (MSBuild) des méthodes pour obtenir et définir les propriétés de configuration et de projet à partir du fichier projet.  
   
   La classe que vous dérivez de `SettingsPage` doit implémenter `Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges` et `Microsoft.VisualStudio.Package.SettingsPage.BindProperties` pour conserver les propriétés de configuration du projet ou du fichier projet.  
   
@@ -83,7 +83,7 @@ Le **propriétés** fenêtre dans le [!INCLUDE[vsprvs](../../includes/vsprvs-md.
  Le <xref:System.ComponentModel.CategoryAttribute>, <xref:System.ComponentModel.DisplayNameAttribute>, et <xref:System.ComponentModel.DescriptionAttribute> attributs déterminent la disposition, l’étiquetage et la description des propriétés de projet et de configuration dans une page de propriétés génériques. Ces attributs déterminent la catégorie, le nom complet et description de l’option, respectivement.  
   
 > [!NOTE]
->  Attributs équivalents, SRCategory, LocDisplayName et SRDescription, utilisez les ressources de type chaîne pour la localisation et sont définies dans [MPF pour les projets - Visual Studio 2013](http://mpfproj12.codeplex.com/).  
+> Attributs équivalents, SRCategory, LocDisplayName et SRDescription, utilisez les ressources de type chaîne pour la localisation et sont définies dans [MPF pour les projets - Visual Studio 2013](http://mpfproj12.codeplex.com/).  
   
  Prenons le fragment de code suivant :  
   

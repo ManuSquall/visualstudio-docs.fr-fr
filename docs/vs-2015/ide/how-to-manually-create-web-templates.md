@@ -14,20 +14,20 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4884ef313d969ae59b8aea704490eeb2e4e5a91c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8a505fe3428a8e16c321eee4764f8a62fff65511
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782208"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431096"
 ---
-# <a name="how-to-manually-create-web-templates"></a>Comment : créer manuellement des modèles Web
+# <a name="how-to-manually-create-web-templates"></a>Procédure : Créer manuellement des modèles Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 La création d’un modèle web est différente de la création d’autres types de modèles. Étant donné que les modèles de projet web apparaissent dans la boîte de dialogue **Ajouter un nouveau site web** et que les éléments de projet web sont classés par langage de programmation, le fichier .vstemplate doit spécifier le modèle comme modèle web et identifier le langage de programmation.  
   
 > [!NOTE]
->  Les modèles web doivent contenir un fichier .webproj vide, spécifié avec l’attribut `File` de l’élément `Project`. Bien que les projets web ne nécessitent pas de fichiers projet, ce fichier est indispensable au bon fonctionnement du modèle web.  
+> Les modèles web doivent contenir un fichier .webproj vide, spécifié avec l’attribut `File` de l’élément `Project`. Bien que les projets web ne nécessitent pas de fichiers projet, ce fichier est indispensable au bon fonctionnement du modèle web.  
   
 ### <a name="to-manually-create-a-web-template"></a>Pour créer manuellement un modèle web  
   
@@ -47,7 +47,7 @@ La création d’un modèle web est différente de la création d’autres types
   
    - VisualBasic  
   
-     Par exemple :  
+     Exemple :  
   
    ```  
    <TemplateData>  

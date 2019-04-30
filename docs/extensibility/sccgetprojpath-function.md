@@ -12,21 +12,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d3090048482d698c1678a80f2d3066569dcc243f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: abc7ecf0bb35f61785041d03f871409bbe499854
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721784"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434598"
 ---
 # <a name="sccgetprojpath-function"></a>Fonction SccGetProjPath
 Cette fonction invite l’utilisateur à un chemin d’accès du projet, qui est une chaîne qui est uniquement explicite pour le plug-in de contrôle de code source. Elle est appelée lorsque l’utilisateur est :
 
--   Création d’un projet
+- Création d’un projet
 
--   Ajouter un projet existant au contrôle de version
+- Ajouter un projet existant au contrôle de version
 
--   Une tentative de recherche d’un projet de contrôle de version existant
+- Une tentative de recherche d’un projet de contrôle de version existant
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -78,13 +78,13 @@ SCCRTN SccGetProjPath (
 
 |Entrant|Interprétation|
 |--------------|--------------------|
-|true|L’utilisateur peut créer un nouveau projet.|
-|false|L’utilisateur ne peut pas créer un nouveau projet.|
+|TRUE|L’utilisateur peut créer un nouveau projet.|
+|FALSE|L’utilisateur ne peut pas créer un nouveau projet.|
 
 |Sortant|Interprétation|
 |--------------|--------------------|
-|true|Un nouveau projet a été créé.|
-|false|Un projet existant a été sélectionné.|
+|TRUE|Un nouveau projet a été créé.|
+|FALSE|Un projet existant a été sélectionné.|
 
 ## <a name="return-value"></a>Valeur de retour
  L’implémentation de plug-in de contrôle de source de cette fonction est censée retourner l’une des valeurs suivantes :
@@ -105,7 +105,7 @@ SCCRTN SccGetProjPath (
  Pour `lpUser`, l’IDE peut transmettre un nom d’utilisateur, ou il peut simplement passer un pointeur vers une chaîne vide. S’il existe un nom d’utilisateur, le plug-in de contrôle de code source doit l’utiliser comme valeur par défaut. Toutefois, si aucun nom n’a été passée ou si la connexion a échoué avec le nom donné, le plug-in doit inviter l’utilisateur pour une connexion et la passe de nouveau le nom `lpUser` lorsqu’elle reçoit une connexion valide. Étant donné que le plug-in peut modifier cette chaîne, l’IDE sera toujours allouer une mémoire tampon de taille (`SCC_USER_LEN`+ 1).
 
 > [!NOTE]
->  La première action qui effectue l’IDE peut être un appel à la `SccOpenProject` fonction ou le `SccGetProjPath` (fonction). Par conséquent, deux d'entre eux ont un identiques `lpUser` paramètre, ce qui permet le plug-in pour connecter l’utilisateur au moment du contrôle de code source. Même si le retour à partir de la fonction indique un échec, le plug-in doit remplir cette chaîne avec un nom de connexion valide.
+> La première action qui effectue l’IDE peut être un appel à la `SccOpenProject` fonction ou le `SccGetProjPath` (fonction). Par conséquent, deux d'entre eux ont un identiques `lpUser` paramètre, ce qui permet le plug-in pour connecter l’utilisateur au moment du contrôle de code source. Même si le retour à partir de la fonction indique un échec, le plug-in doit remplir cette chaîne avec un nom de connexion valide.
 
  `lpLocalPath` est le répertoire où l’utilisateur maintient le projet. Il peut être une chaîne vide. Si aucun répertoire actuellement définies (comme dans le cas d’un utilisateur tente de télécharger un projet à partir du système de contrôle de source) et si `bAllowChangePath` est `TRUE`, le plug-in de contrôle de code source peut inviter l’utilisateur pour l’entrée ou utilisez une autre méthode pour placer ses propriétaire de chaîne dans `lpLocalPath`. Si `bAllowChangePath` est `FALSE`, le plug-in ne devez pas modifier la chaîne, étant donné que l’utilisateur travaille déjà dans le répertoire spécifié.
 

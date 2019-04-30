@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: daf68857aca2d94f8a929f8191fb32b8d67cbbb4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: fe73a4d66d57ae362d4b99d10aca9170971f17b9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601634"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429635"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>Indicateurs de la ligne de commande du compilateur VSCT
 Le compilateur de la Table de commande Visual Studio (VSTC) fournit des commutateurs de ligne de commande pour vous assurer de compilation réussie de fichiers .vsct.
@@ -50,7 +50,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 ```
 
 > [!NOTE]
->  Les caractères - (tiret) et / (barre oblique) sont les deux notation acceptées pour ce qui indique les paramètres de ligne de commande.
+> Les caractères - (tiret) et / (barre oblique) sont les deux notation acceptées pour ce qui indique les paramètres de ligne de commande.
 
  Indicateurs acceptables et leur signification sont les suivantes.
 
@@ -59,7 +59,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 |-D|Spécifiez tous les symboles définis supplémentaires.|
 |-I|Indiquer que le supplémentaires incluent des chemins d’accès qui doivent être utilisés lors de la résolution des références de fichier.|
 |-L|Spécifiez le <xref:System.Globalization.CultureInfo> nom de culture, par exemple, « en-US ».|
-|-E|Émettre C# suivie d’objets dans l’espace de noms pour les éléments de la commande, [C&#124;H&#124;N] :*filename*où C = C#, H = en-tête C++, N = espace de noms. L’espace de noms est obligatoire pour c#.|
+|-E|Émettre C# suivie d’objets dans l’espace de noms pour les éléments de la commande, [C&#124;H&#124;N] :*filename*où C = C#, H = C++ en-tête, N = espace de noms. L’espace de noms est obligatoire pour c#.|
 |-v|Sortie détaillée.|
 
  Le commutateur -L indique au compilateur pour sélectionner un groupe de chaînes pour générer le fichier .cto binaire qui correspond à la donnée <xref:System.Globalization.CultureInfo> nom de culture. Le nom de culture spécifié doit correspondre à l’attribut de langue d’un ou plusieurs [élément Strings](../../extensibility/strings-element.md) dans le fichier .vsct. Si un élément de chaînes n’a aucun attribut de langage, il est hérité à partir de la contenant [CommandTable élément](../../extensibility/commandtable-element.md).

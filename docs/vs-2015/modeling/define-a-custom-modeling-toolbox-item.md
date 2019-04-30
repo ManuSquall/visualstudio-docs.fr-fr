@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: becc123cab729aff7d1306bb0ee13aee521444ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fc8bcd7a373ab6ee63e32b5873fd149001137511
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105043"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433188"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Définir un élément de boîte à outils de modélisation personnalisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Pour faciliter la création d'un élément ou d'un groupe d'éléments d'après 
 - une paire de classes liées par une association pour représenter le modèle Observer.  
   
 > [!NOTE]
->  Vous pouvez utiliser cette méthode pour créer des outils d'élément. Autrement dit, vous pouvez créer des outils que vous faites glisser de la boîte à outils vers un diagramme. Vous ne pouvez pas créer d'outils de connecteur.  
+> Vous pouvez utiliser cette méthode pour créer des outils d'élément. Autrement dit, vous pouvez créer des outils que vous faites glisser de la boîte à outils vers un diagramme. Vous ne pouvez pas créer d'outils de connecteur.  
   
 ## <a name="DefineTool"></a> Définition d’un outil de modélisation personnalisé  
   
@@ -136,7 +136,7 @@ Pour faciliter la création d'un élément ou d'un groupe d'éléments d'après 
  Vous pouvez modifier le fichier bitmap dans Visual Studio et affecter la valeur 16 à sa hauteur et sa largeur dans la fenêtre Propriétés.  
   
 > [!NOTE]
->  Si vous commencez à utiliser un fichier .tbxinfo après avoir utilisé des fichiers de diagrammes seuls, vous constaterez peut-être que la boîte à outils contient à la fois les anciennes et les nouvelles versions d'un élément de boîte à outils. Cela peut également se produire si le nom du fichier de diagramme a été tapé incorrectement dans le fichier .tbxinfo. Si cela se produit, dans le menu contextuel de la boîte à outils choisissez **réinitialiser la boîte à outils**. Les éléments de boîte à outils personnalisés disparaîtront. Redémarrez Visual Studio et les éléments personnalisés corrects apparaîtront.  
+> Si vous commencez à utiliser un fichier .tbxinfo après avoir utilisé des fichiers de diagrammes seuls, vous constaterez peut-être que la boîte à outils contient à la fois les anciennes et les nouvelles versions d'un élément de boîte à outils. Cela peut également se produire si le nom du fichier de diagramme a été tapé incorrectement dans le fichier .tbxinfo. Si cela se produit, dans le menu contextuel de la boîte à outils choisissez **réinitialiser la boîte à outils**. Les éléments de boîte à outils personnalisés disparaîtront. Redémarrez Visual Studio et les éléments personnalisés corrects apparaîtront.  
   
 ## <a name="Extension"></a> Comment distribuer des éléments de boîte à outils dans une Extension Visual Studio  
  Vous pouvez distribuer des éléments de boîte à outils à d’autres [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] les utilisateurs en les empaquetant dans une Extension Visual Studio (VSIX). Vous pouvez empaqueter des commandes, des profils et d'autres extensions dans le même fichier VSIX. Pour plus d’informations, consultez [déploiement d’Extensions Visual Studio](http://go.microsoft.com/fwlink/?LinkId=160780).  
@@ -164,7 +164,7 @@ Pour faciliter la création d'un élément ou d'un groupe d'éléments d'après 
     - Dans l’Explorateur de solutions, dans le menu contextuel du projet VSIX, choisissez **ajouter**, **élément existant**. Dans la boîte de dialogue, définissez **objets de Type : Tous les fichiers**. Localiser les fichiers, sélectionnez-les tous, puis choisissez **ajouter**.  
   
         > [!NOTE]
-        >  Dans ce projet, vous ne pouvez pas ouvrir les fichiers de diagrammes dans l'éditeur de modèle.  
+        > Dans ce projet, vous ne pouvez pas ouvrir les fichiers de diagrammes dans l'éditeur de modèle.  
   
 5. Définissez les propriétés suivantes de tous les fichiers que vous venez d'ajouter. Vous pouvez définir leurs propriétés en même temps en les sélectionnant dans l'Explorateur de solutions. Veillez à ne pas modifier les propriétés des autres fichiers dans le projet.  
   
@@ -185,7 +185,7 @@ Pour faciliter la création d'un élément ou d'un groupe d'éléments d'après 
     - Type = `Microsoft.VisualStudio.ArchitectureTools.CustomToolboxItems`  
   
         > [!NOTE]
-        >  Cette option ne figure pas dans la liste déroulante. Vous devez l'entrer à l'aide du clavier.  
+        > Cette option ne figure pas dans la liste déroulante. Vous devez l'entrer à l'aide du clavier.  
   
     - **Source** = **fichier sur le système de fichiers**.  
   

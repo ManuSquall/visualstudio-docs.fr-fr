@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 037d6100c7137784de3896771dd62c766b4505e3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f028370c5790b6e22339f39eacaac5e2b552e213
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948104"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438279"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>Procédure : Développer et réduire des arborescences Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ Vous pouvez développer et réduire les vues de Windows, les processus et les Th
 |**Réduire**|Réduit complètement l’élément actuellement sélectionné.|  
   
 > [!TIP]
->  Si vous développez un processus, vous consultez tous les threads détenus. Si vous développez un thread, vous voyez une liste de toutes les fenêtres qu’il détient.  
+> Si vous développez un processus, vous consultez tous les threads détenus. Si vous développez un thread, vous voyez une liste de toutes les fenêtres qu’il détient.  
   
 ### <a name="to-expand-or-collapse-spy-trees"></a>Pour développer ou réduire des arborescences Spy ++  
   
-1.  Mettez en surbrillance un des éléments dans la vue de Windows, des processus ou Threads.  
+1. Mettez en surbrillance un des éléments dans la vue de Windows, des processus ou Threads.  
   
-2.  À partir de la **arborescence** menu, choisissez une du développer ou réduire des commandes.  
+2. À partir de la **arborescence** menu, choisissez une du développer ou réduire des commandes.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Utilisation de Spy++](../debugger/using-spy-increment.md)   

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67e32d855ec6d0c172542cbdacc235f6b3e1b003
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: bc9981d324fe61cd3afe6cce4bc08d7b9b686c7f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604442"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402622"
 ---
 # <a name="class-hierarchy-of-symbol-types"></a>Hiérarchie de classes des types de symboles
 Le tableau suivant décrit les types de symboles dans la hiérarchie de classes.
@@ -43,7 +43,7 @@ Le tableau suivant décrit les types de symboles dans la hiérarchie de classes.
 |[Dimension](../../debugger/debug-interface-access/dimension.md)|Symbole de dimensions du tableau.|
 
 > [!NOTE]
->  Chaque symbole peut avoir des propriétés qui contiennent des informations sur le symbole, ainsi que des références à d’autres symboles. Ces propriétés sont répertoriées dans les rubriques de symbole individuels.
+> Chaque symbole peut avoir des propriétés qui contiennent des informations sur le symbole, ainsi que des références à d’autres symboles. Ces propriétés sont répertoriées dans les rubriques de symbole individuels.
 
 ## <a name="see-also"></a>Voir aussi
 - [CV_access_e, énumération](../../debugger/debug-interface-access/cv-access-e.md)

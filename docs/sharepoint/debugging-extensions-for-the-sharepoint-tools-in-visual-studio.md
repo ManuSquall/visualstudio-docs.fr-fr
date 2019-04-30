@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3340c55b99f9d2507bb129eff689cc1b510843f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e170a5ed703a9bf5aae2e73126de52ecf88e8084
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094396"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443520"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>Déboguer des extensions pour les outils SharePoint dans Visual Studio
   Vous pouvez déboguer des extensions d’outils SharePoint dans l’instance expérimentale ou l’instance normale de Visual Studio. Si vous avez besoin dépanner le comportement d’une extension, vous pouvez également modifier les valeurs de Registre pour afficher les informations d’erreur supplémentaires et de configurer la façon dont Visual Studio exécute les commandes SharePoint.
@@ -102,7 +102,7 @@ ms.locfileid: "60094396"
 3. Dans le **processus disponibles** , choisissez *vssphost.exe*.
 
     > [!NOTE]
-    >  Si vssphost.exe n’apparaît pas dans la liste, vous devez démarrer le *vssphost4.exe* processus dans l’instance de Visual Studio dans lequel vous exécutez l’extension. En règle générale, cela en effectuant une action qui oblige Visual Studio pour vous connecter au site SharePoint sur l’ordinateur de développement. Par exemple, Visual Studio démarre *vssphost4.exe* lorsque vous développez un nœud de connexion de site (nœud qui affiche une URL de site) sous le **connexions SharePoint** nœud dans le **Explorateur de serveurs**  fenêtre, ou lorsque vous ajoutez certains éléments de projet SharePoint, tels que **liste Instance** ou **récepteur d’événements** éléments, à un projet SharePoint.
+    > Si vssphost.exe n’apparaît pas dans la liste, vous devez démarrer le *vssphost4.exe* processus dans l’instance de Visual Studio dans lequel vous exécutez l’extension. En règle générale, cela en effectuant une action qui oblige Visual Studio pour vous connecter au site SharePoint sur l’ordinateur de développement. Par exemple, Visual Studio démarre *vssphost4.exe* lorsque vous développez un nœud de connexion de site (nœud qui affiche une URL de site) sous le **connexions SharePoint** nœud dans le **Explorateur de serveurs**  fenêtre, ou lorsque vous ajoutez certains éléments de projet SharePoint, tels que **liste Instance** ou **récepteur d’événements** éléments, à un projet SharePoint.
 
 4. Choisissez le **attacher** bouton.
 

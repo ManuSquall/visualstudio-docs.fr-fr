@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 491e16454f52fb621306280351e1288f3de3a5e0
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 4af2d239c26c156fad0be7fb45bc04f601d35c83
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160064"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437273"
 ---
 # <a name="idisperrorgetnext"></a>IDispError::GetNext
 Récupère la prochaine `IDispError` objet.  
@@ -50,7 +50,7 @@ HRESULT GetNext(
  Cette méthode récupère la prochaine `IDispError` objet. Si c’est la dernière `IDispError` de l’objet, cette méthode retourne la valeur NULL.  
   
 > [!NOTE]
->  Cette méthode n’est pas implémentée.  
+> Cette méthode n’est pas implémentée.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IDispError](../../winscript/reference/idisperror-interface.md)

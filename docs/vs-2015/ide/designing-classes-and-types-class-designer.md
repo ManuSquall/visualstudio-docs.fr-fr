@@ -12,12 +12,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 032e5a33c7cf70d48913739459c619b5d0302dea
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ddd4ae3ed3a1a2a239c0efac0f25d04f589f8fa5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795510"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437540"
 ---
 # <a name="designing-classes-and-types-class-designer"></a>Conception des classes et des types (Concepteur de classes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "54795510"
 Le **Concepteur de classes** vous permet vous non seulement d’afficher les classes et les types, mais également de les créer. Les rubriques suivantes expliquent comment effectuer ces opérations.  
   
 > [!NOTE]
->  Quand vous utilisez le Concepteur de classes, vous devez examiner le code qu’il émet avant de l’exécuter afin de vérifier que le code respecte bien votre contexte de sécurité.  
+> Quand vous utilisez le Concepteur de classes, vous devez examiner le code qu’il émet avant de l’exécuter afin de vérifier que le code respecte bien votre contexte de sécurité.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Guide pratique pour créer des types à l’aide du Concepteur de classes](../ide/how-to-create-types-by-using-class-designer.md)  

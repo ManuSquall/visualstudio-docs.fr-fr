@@ -12,12 +12,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 653c2760c369381162f519223b75ce8a7468c507
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4c02e9dc3b1f355cc2c0f580ce88893ce7f34b46
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067012"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433161"
 ---
 # <a name="define-a-gesture-handler-on-a-modeling-diagram"></a>Définir un gestionnaire de mouvements sur un diagramme de modélisation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
 3. Ajouter un fichier de classe au projet et définissez le code suivant comme contenu.  
   
    > [!NOTE]
-   >  Modifiez l’espace de noms et le nom de la classe en fonction de vos besoins.  
+   > Modifiez l’espace de noms et le nom de la classe en fonction de vos besoins.  
   
    ```  
    using System.ComponentModel.Composition;  
@@ -243,7 +243,7 @@ Dans Visual Studio,vous pouvez définir des commandes qui sont exécutées quand
   
    - Si vous avez plusieurs projets, vérifiez que le projet VSIX est défini comme projet de démarrage de la solution.  
   
-   - Dans l’Explorateur de solutions, dans le menu contextuel du projet de démarrage ou unique, choisissez Propriétés. Dans l’éditeur de propriétés du projet, choisissez l’onglet **Déboguer** . Assurez-vous que la chaîne dans le champ Démarrer le programme externe** correspond au nom du chemin complet de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], qui est en général le suivant :  
+   - Dans l’Explorateur de solutions, dans le menu contextuel du projet de démarrage ou unique, choisissez Propriétés. Dans l’éditeur de propriétés du projet, choisissez l’onglet **Déboguer** . Assurez-vous que la chaîne dans le champ **Démarrer le programme externe** correspond au chemin d’accès complet de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], qui est en général le suivant :  
   
         `C:\Program Files\Microsoft Visual Studio [version]\Common7\IDE\devenv.exe`  
   

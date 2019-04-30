@@ -11,12 +11,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d93c18f1b62ef7171fb35af896a8e9adbc461680
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bc11af7d259f252d7659f559be15b85f4af90149
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053531"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437938"
 ---
 # <a name="graphics-frame-analysis"></a>Analyse des frames graphiques
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60053531"
 Utilisez l'analyse des frames graphiques dans Visual Studio Graphics Analyzer pour analyser et optimiser les performances de rendu de votre jeu ou application Direct3D.  
   
 > [!IMPORTANT]
->  Graphics Analyzer prend en charge l'analyse des frames pour les applications qui utilisent Direct3D 11 sur les plateformes appropriées, notamment Windows 10. L'analyse des frames n'est pas prise en charge actuellement pour les applications qui utilisent Direct3D 12.  
+> Graphics Analyzer prend en charge l'analyse des frames pour les applications qui utilisent Direct3D 11 sur les plateformes appropriées, notamment Windows 10. L'analyse des frames n'est pas prise en charge actuellement pour les applications qui utilisent Direct3D 12.  
   
 ## <a name="frame-analysis"></a>Analyse des frames  
  Si l'analyse des frames utilise les mêmes informations que celles capturées dans un fichier journal de graphisme à des fins de diagnostic, elle les utilise en revanche pour résumer les performances de rendu. Les informations de performance ne sont pas enregistrées dans le journal pendant la capture ; elles sont générées ultérieurement pendant l'analyse des frames en chronométrant les événements et en collectant les statiques à mesure que les frames sont lus. Cette approche présente plusieurs avantages par rapport à l'enregistrement des informations de performances pendant la capture :  
@@ -118,7 +118,7 @@ Utilisez l'analyse des frames graphiques dans Visual Studio Graphics Analyzer po
  Les informations de compteur matériel fournissent une vue très détaillée du comportement spécifique de la plateforme matérielle pour chaque appel de dessin, ce qui peut vous aider à identifier très précisément la cause des goulots d'étranglement qui nuisent aux performances.  
   
 > [!NOTE]
->  Les compteurs pris en charge par les plateformes sont variables ; aucune norme n'existe dans ce domaine. Les compteurs et ce qu'ils représentent sont déterminés uniquement par le fabricant de chaque GPU.  
+> Les compteurs pris en charge par les plateformes sont variables ; aucune norme n'existe dans ce domaine. Les compteurs et ce qu'ils représentent sont déterminés uniquement par le fabricant de chaque GPU.  
   
 ### <a name="marker-regions-and-events"></a>Régions de marqueur et événements  
  L'analyse des frames prend en charge les marqueurs d'événements et les groupes d'événements définis par l'utilisateur. Ils sont affichés dans le tableau Résumé et dans les tableaux de détails.  
@@ -145,7 +145,7 @@ Utilisez l'analyse des frames graphiques dans Visual Studio Graphics Analyzer po
  Les horodateurs sont pris en charge sur toutes les plateformes prenant en charge l'analyse des frames. Les requêtes d'occlusion en profondeur (nécessaires au compteur Pixels bloqués) sont prises en charge sur les plateformes qui prennent en charge le niveau de fonctionnalité 9.2 ou supérieur.  
   
 > [!NOTE]
->  Bien que les horodateurs soient pris en charge sur toutes les plateformes qui gèrent l'analyse des frames, la précision et la cohérence des horodateurs varient d'une plateforme à l'autre.  
+> Bien que les horodateurs soient pris en charge sur toutes les plateformes qui gèrent l'analyse des frames, la précision et la cohérence des horodateurs varient d'une plateforme à l'autre.  
   
 ### <a name="gpu-counters"></a>Compteurs GPU  
  La prise en charge des compteurs matériels GPU varie en fonction du matériel.  
@@ -159,7 +159,7 @@ Utilisez l'analyse des frames graphiques dans Visual Studio Graphics Analyzer po
   Aucune autre plateforme prenant en charge l'analyse des frames n'assure de collecte auprès des compteurs matériels GPU.  
   
 > [!NOTE]
->  Dans la mesure où les compteurs matériels GPU sont des ressources matérielles, plusieurs passages peuvent être nécessaires pour collecter l'ensemble des compteurs matériels pour chaque variante de rendu. Ainsi, l'ordre dans lequel les compteurs GPU sont collectés n'est pas spécifié.  
+> Dans la mesure où les compteurs matériels GPU sont des ressources matérielles, plusieurs passages peuvent être nécessaires pour collecter l'ensemble des compteurs matériels pour chaque variante de rendu. Ainsi, l'ordre dans lequel les compteurs GPU sont collectés n'est pas spécifié.  
   
 ### <a name="windows-phone"></a>Windows Phone  
  Les horodateurs, les requêtes d'occlusion et les compteurs matériels GPU sont pris en charge uniquement sur les combinés Windows Phone initialement équipés de Windows Phone 8.1. L'analyse des frames en a besoin pour lire le fichier journal de graphisme. Les combinés Windows Phone qui étaient initialement équipés de Windows Phone 8 ne prennent pas en charge l'analyse des frames, y compris les combinés qui ont été mis à jour vers Windows Phone 8.1.  
@@ -174,13 +174,13 @@ Utilisez l'analyse des frames graphiques dans Visual Studio Graphics Analyzer po
  Dans Graphics Analyzer, quand vous lisez un fichier journal de graphisme qui utilise un niveau de fonctionnalité trop élevé pour l'ordinateur de lecture, il repasse automatiquement à WARP. Dans l'analyse des frames, il ne repasse pas explicitement à WARP et une erreur est générée (si WARP est utile pour examiner la justesse de votre application Direct3D, il ne l'est pas pour examiner ses performances).  
   
 > [!NOTE]
->  Bien qu’il soit important de ne pas perdre de vue les problèmes de niveau de fonctionnalité, vous pouvez capturer et lire les fichiers journaux de graphisme sur des configurations matérielles et des appareils différents. Par exemple, vous pouvez capturer des informations graphiques sur un Windows Phone et les lire sur un ordinateur de bureau, et la réciproque est également prise en charge. Dans les deux cas, le journal de graphisme peut être lu tant que le fichier journal ne contient pas d’API ou n’utilise pas des niveaux de fonctionnalité qui ne sont pas pris en charge sur l’ordinateur de lecture.  
+> Bien qu’il soit important de ne pas perdre de vue les problèmes de niveau de fonctionnalité, vous pouvez capturer et lire les fichiers journaux de graphisme sur des configurations matérielles et des appareils différents. Par exemple, vous pouvez capturer des informations graphiques sur un Windows Phone et les lire sur un ordinateur de bureau, et la réciproque est également prise en charge. Dans les deux cas, le journal de graphisme peut être lu tant que le fichier journal ne contient pas d’API ou n’utilise pas des niveaux de fonctionnalité qui ne sont pas pris en charge sur l’ordinateur de lecture.  
   
 ### <a name="direct3d-10-and-lower"></a>Direct3D version 10 et inférieure  
  L'analyse des frames n'est prise en charge que pour l'API Direct3D 11. Si votre application appelle l'API Direct3D 10, l'analyse des frames ne reconnaîtra ni ne profilera ces appels, même s'ils sont reconnus et utilisés par d'autres outils Graphics Analyzer. Si votre application utilise à la fois les API Direct3D11 et Direct3D 10, seuls les appels Direct3D 11 sont profilés.  
   
 > [!NOTE]
->  Cela vaut uniquement pour les appels d'API Direct3D que vous utilisez, et non aux niveaux de fonctionnalité. Du moment que vous utilisez l'API Direct3D 11, Direct3D 11.1 ou Direct3D 11.2, l'analyse des frames fonctionnera quel que soit le niveau de fonctionnalité utilisé.  
+> Cela vaut uniquement pour les appels d'API Direct3D que vous utilisez, et non aux niveaux de fonctionnalité. Du moment que vous utilisez l'API Direct3D 11, Direct3D 11.1 ou Direct3D 11.2, l'analyse des frames fonctionnera quel que soit le niveau de fonctionnalité utilisé.  
   
 ## <a name="Variants"></a> Variantes  
  Chaque modification apportée par l’analyse des frames au mode d’affichage d’un frame en cours de lecture est appelée *variante*. Les variantes examinées par l'analyse des frames correspondent à des modifications courantes et relativement simples que vous pourriez apporter pour améliorer les performance de rendu ou la qualité visuelle de votre application (par exemple, en réduisant la taille des textures, en utilisant la compression de texture ou en autorisant différents types d'anticrénelage). Les variantes substituent le contexte et les paramètres de rendu habituels de votre application. Voici un résumé :  

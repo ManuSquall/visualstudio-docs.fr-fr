@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8840c570d4de2544a5cdb4831f083e5a3598ca72
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f9a7d4288258ab3e90a7eec6ba3de7ac6892ee93
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113792"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442890"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Utiliser UI Automation pour tester votre code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,7 +98,7 @@ Vous pouvez créer des tests automatisés qui vérifient l’interface utilisate
     **Pour mettre l’enregistrement en pause**, par exemple si vous venez de recevoir du courrier électronique à traiter, choisissez **Pause**.
 
    > [!WARNING]
-   >  Toutes les actions effectuées sur le Bureau sont enregistrées. Mettez l'enregistrement en pause si vous effectuez des actions susceptibles d'inclure des données confidentielles dans l'enregistrement.
+   > Toutes les actions effectuées sur le Bureau sont enregistrées. Mettez l'enregistrement en pause si vous effectuez des actions susceptibles d'inclure des données confidentielles dans l'enregistrement.
 
     **Pour supprimer des actions** enregistrées par erreur, choisissez **Modifier des actions**.
 
@@ -113,7 +113,7 @@ Vous pouvez créer des tests automatisés qui vérifient l’interface utilisate
     ![Élément de ciblage du test codé de l’interface utilisateur](../test/media/codedui-1.png "CodedUI_1")
 
    > [!TIP]
-   >  Alternez entre l'enregistrement des actions et la vérification des valeurs. Générez le code à la fin de chaque séquence d'actions ou de vérifications. Si vous le souhaitez, vous pourrez insérer de nouvelles actions et vérifications ultérieurement.
+   > Alternez entre l'enregistrement des actions et la vérification des valeurs. Générez le code à la fin de chaque séquence d'actions ou de vérifications. Si vous le souhaitez, vous pourrez insérer de nouvelles actions et vérifications ultérieurement.
 
     Pour plus d’informations, consultez [Validation des propriétés des contrôles](#VerifyingCodeUsingCUITGenerateAssertions).
 
@@ -230,7 +230,7 @@ Vous pouvez créer des tests automatisés qui vérifient l’interface utilisate
   Pour utiliser le clavier pour sélectionner un contrôle d'interface utilisateur, placez le pointeur de la souris sur le contrôle. Maintenez enfoncées la touche **Ctrl** et la touche **I** en même temps. Relâchez les touches. Le contrôle est enregistré par le Générateur de test codé de l'interface utilisateur.
 
 > [!WARNING]
->  Si vous utilisez Microsoft Lync, vous devez fermer Lync avant de démarrer le Générateur de test codé de l'interface utilisateur. Microsoft Lync interfère avec le raccourci clavier **Ctrl+I**.
+> Si vous utilisez Microsoft Lync, vous devez fermer Lync avant de démarrer le Générateur de test codé de l'interface utilisateur. Microsoft Lync interfère avec le raccourci clavier **Ctrl+I**.
 
  *Je ne parviens pas à enregistrer un pointage de la souris sur un contrôle. Existe-t-il un moyen de contourner ce problème ?*
  **Enregistrement manuel de pointages de la souris**
@@ -255,7 +255,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
  Si nécessaire, l'affectation du clavier par défaut de Ctrl+Maj+R utilisée pour appliquer les événements de pointage de souris dans vos tests codés de l'interface utilisateur peut être configurée pour utiliser des touches différentes.
 
 > [!WARNING]
->  Vous ne devriez pas avoir à changer les affectations du clavier pour les événements de pointage de souris dans des circonstances normales. Procédez avec caution lors de la modification de l'affectation du clavier. Votre choix est peut-être déjà utilisé ailleurs dans Visual Studio ou dans l'application testée.
+> Vous ne devriez pas avoir à changer les affectations du clavier pour les événements de pointage de souris dans des circonstances normales. Procédez avec caution lors de la modification de l'affectation du clavier. Votre choix est peut-être déjà utilisé ailleurs dans Visual Studio ou dans l'application testée.
 
  Pour changer les affectations du clavier, vous devez modifier le fichier de configuration suivant :
 
@@ -356,7 +356,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   ```
 
   > [!WARNING]
-  >  Vous ne devez pas modifier ce fichier, car il sera regénéré quand vous créerez d'autres tests.
+  > Vous ne devez pas modifier ce fichier, car il sera regénéré quand vous créerez d'autres tests.
 
    Vous pouvez créer des versions adaptées de ces méthodes en les copiant dans UIMap.cs. Vous pouvez par exemple créer une version paramétrée que vous pourriez appeler depuis une méthode de test :
 

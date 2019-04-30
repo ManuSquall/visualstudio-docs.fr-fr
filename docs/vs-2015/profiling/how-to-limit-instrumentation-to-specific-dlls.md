@@ -11,12 +11,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1806e39e70d98ce7f47dda6bbc32a8f261b96acd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5dc2fe8e6f9b0ed1e6970943ab5eedf1b62eb961
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091315"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432677"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Procédure : Instrumentation de limite à des DLL spécifiques
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ La méthode de profilage par instrumentation vous permet de limiter la collecte 
   
     - Dans **Chemin d’accès de l’exécutable**, tapez le chemin et le nom du fichier exécutable (.exe) qui doit exécuter le fichier .dll. Vous pouvez également cliquer sur le bouton de sélection (...) pour rechercher le fichier dans la boîte de dialogue **Exécutable à lancer**.  
   
-    - Optionnel. Dans **Arguments de ligne de commande**, tapez les arguments de ligne de commande que vous voulez passer au fichier exécutable. Si nécessaire, spécifiez le répertoire de travail de l’application dans **Répertoire de travail**.  
+    - Facultatif. Dans **Arguments de ligne de commande**, tapez les arguments de ligne de commande que vous voulez passer au fichier exécutable. Si nécessaire, spécifiez le répertoire de travail de l’application dans **Répertoire de travail**.  
   
     - Cliquez sur **Suivant**.  
   
@@ -65,10 +65,10 @@ La méthode de profilage par instrumentation vous permet de limiter la collecte 
   
 6. Cliquez sur **Terminer** pour quitter l’Assistant et afficher la nouvelle session de performance dans l’**Explorateur de performances**.  
   
-7. Optionnel. Pour ajouter des fichiers .dll, cliquez avec le bouton droit sur **Cibles**, puis sélectionnez **Ajouter un fichier binaire cible**. Sélectionnez les fichiers dans la boîte de dialogue **Ajouter un fichier binaire cible**.  
+7. Facultatif. Pour ajouter des fichiers .dll, cliquez avec le bouton droit sur **Cibles**, puis sélectionnez **Ajouter un fichier binaire cible**. Sélectionnez les fichiers dans la boîte de dialogue **Ajouter un fichier binaire cible**.  
   
     > [!NOTE]
-    >  Ne spécifiez pas le fichier exécutable (.exe) qui exécute les DLL.  
+    > Ne spécifiez pas le fichier exécutable (.exe) qui exécute les DLL.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Contrôle de la collecte de données](../profiling/controlling-data-collection.md)   

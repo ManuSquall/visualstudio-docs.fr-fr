@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d781b2fe3ab597760a397c6ff0ec3c946bbe7653
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083372"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009409"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Procédure pas à pas : Créer un projet de définition de site de base
   Cette procédure pas à pas vous montre comment créer une définition de site de base qui contient un composant visual Web part avec certains contrôles dessus. Par souci de clarté, le composant visual Web part que vous créez a uniquement quelques contrôles. Toutefois, vous pouvez créer des définitions de site SharePoint plus sophistiquées qui incluent des fonctionnalités plus.

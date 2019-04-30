@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf47b5c6aa84cb5d5cc961e34161435dc27dd517
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9978e12d5b4d94a5f860bfdd5d3dc90ae6fef3ad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066258"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431026"
 ---
 # <a name="windows-installer-basics"></a>Éléments de base de Windows Installer
 Le programme d’installation de Windows installe et désinstalle des applications ou des produits logiciels sur l’ordinateur d’un utilisateur, effectuer ces tâches dans des unités appelées des composants du programme d’installation de Windows (parfois appelés WICs ou composants uniquement). Un GUID identifie chaque WIC, qui est l’unité de base de l’installation et le décompte de références pour les installations à l’aide du programme d’installation de Windows.
@@ -53,7 +53,7 @@ Le programme d’installation de Windows installe et désinstalle des applicatio
  Deux ensembles de règles déterminent le déploiement des ressources via les composants de votre installation. Un ensemble de règles est géré par le programme d’installation de Windows lui-même, tandis que vous devez appliquer le second ensemble en tant qu’auteur de l’installation.
 
 > [!NOTE]
->  Mise en œuvre de règles Windows Installer se produit uniquement si vous exécutez une validation de votre fichier .msi. Néanmoins, vous sont veillé à traiter ces règles comme meilleures pratiques. Pour plus d’informations, consultez [validation d’une base de données d’Installation](/windows/desktop/Msi/validating-an-installation-database) et [Validation du Package](/windows/desktop/Msi/package-validation).
+> Mise en œuvre de règles Windows Installer se produit uniquement si vous exécutez une validation de votre fichier .msi. Néanmoins, vous sont veillé à traiter ces règles comme meilleures pratiques. Pour plus d’informations, consultez [validation d’une base de données d’Installation](/windows/desktop/Msi/validating-an-installation-database) et [Validation du Package](/windows/desktop/Msi/package-validation).
 
 #### <a name="installer-enforced-rules"></a>Règles appliquée par le programme d’installation
 

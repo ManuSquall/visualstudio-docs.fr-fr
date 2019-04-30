@@ -12,12 +12,12 @@ ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
 caps.latest.revision: 31
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ded1741c9364ca9fa706441b5cfa313ce6e58569
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 3c6c7bb6d149281048d281cb7af13fe51d75ffd5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001684"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443900"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>Dans le kit SDK Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -98,7 +98,7 @@ Vue généralisée de l’architecture de Visual Studio
  Les modèles contiennent la structure de projet et les fichiers de base qui sont nécessaires pour générer un type particulier d’application, de contrôle, de bibliothèque ou de classe. Lorsque vous souhaitez développer des logiciels qui ressemble à un des modèles, créez un projet qui est basé sur le modèle, puis modifiez les fichiers dans ce projet.  
   
 > [!NOTE]
->  Cette architecture de modèle n’est pas pris en charge pour [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] projets. Pour plus d’informations sur la création [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] modèles de projet, consultez [conception d’un Assistant](http://msdn.microsoft.com/library/a7c0be7e-9297-4fed-83e3-5645c896d56b).  
+> Cette architecture de modèle n’est pas pris en charge pour [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] projets. Pour plus d’informations sur la création [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] modèles de projet, consultez [conception d’un Assistant](http://msdn.microsoft.com/library/a7c0be7e-9297-4fed-83e3-5645c896d56b).  
   
  Pour plus d’informations, consultez [Ajout d’un projet et des modèles d’élément de projet](../../extensibility/internals/adding-project-and-project-item-templates.md).  
   
