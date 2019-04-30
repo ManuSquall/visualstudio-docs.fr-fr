@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ccb14705b4d799e1f7fa6de4728ee8f7fc7b3fb4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706637"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912660"
 ---
 # <a name="define-element"></a>Définir l’élément
 Définit une paire nom / valeur de symbole. Ce symbole peut être évalué par attributs conditionnels. Pour plus d’informations, consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md). Voir aussi le [élément Symbols](../extensibility/symbols-element.md).
@@ -36,7 +36,7 @@ Définit une paire nom / valeur de symbole. Ce symbole peut être évalué par a
 |---------------|-----------------|
 |name|Obligatoire. Le nom du symbole :<br /><br /> name="Mode"|
 |par défaut|Obligatoire. La valeur du symbole :<br /><br /> value="Standard"|
-|Condition|Facultatif. Pour plus d’informations, consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condition|Optionnel. Pour plus d’informations, consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Éléments enfants
  Aucun.

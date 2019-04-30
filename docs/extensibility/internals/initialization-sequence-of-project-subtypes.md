@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a0e42f80485aab478e3739aedb42130699a963ac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072004"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909690"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>Séquence d’initialisation des sous-types de projets
 L’environnement construit un projet en appelant l’implémentation de fabrique de projet de base de <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>. La construction d’un sous-type de projet démarre lorsque l’environnement détermine que la liste GUID de type de projet pour l’extension d’un fichier de projet n’est pas vide. L’extension de fichier de projet et le GUID du projet spécifient si le projet est un [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] ou [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] type de projet. Par exemple, l’extension .vbproj et {F184B08F-C81C-45F6-A57F-5ABD9991F28F} identifier un [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] projet.

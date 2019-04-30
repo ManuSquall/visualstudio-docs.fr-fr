@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a464085eddbea4f5d29c684c0f1dabc6f853b6d1
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58158787"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822224"
 ---
 # <a name="idebugapplicationthread-interface"></a>IDebugApplicationThread, interface
 Permet de moteurs de langage et les hôtes pour assurer la synchronisation de thread et à mettre à jour les informations d’état de débogage de threads spécifiques. Cette interface étend la `IRemoteDebugApplicationThread` interface pour fournir un accès non-remote pour le thread.  

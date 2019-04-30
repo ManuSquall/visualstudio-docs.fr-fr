@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d917a3f33d0c4339420c048fe20184245bb8dac1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684323"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62868407"
 ---
 # <a name="idebugsymbolsearchevent2getsymbolsearchinfo"></a>IDebugSymbolSearchEvent2::GetSymbolSearchInfo
 Appelé par un gestionnaire d’événements pour récupérer les résultats sur un processus de chargement de symboles.
@@ -50,7 +50,7 @@ int GetSymbolSearchInfo(
  [in, out] Retourne une chaîne contenant les messages d’erreur à partir du module. S’il n’existe aucune erreur, cette chaîne contient uniquement le nom du module, mais il n’est jamais vide.
 
 > [!NOTE]
-> (C++) `pbstrDebugMessage` ne peut pas être `NULL` et doit être libérée avec `SysFreeString`.
+> [C++] `pbstrDebugMessage` ne peut pas être `NULL` et doit être libérée avec `SysFreeString`.
 
  `pdwModuleInfoFlags`
 

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1eac2d38e0444cb6ee6624863d1cb3e33bae3314
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678434"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856620"
 ---
 # <a name="keybinding-element"></a>Élément KeyBinding
 L’élément de combinaison de touches Spécifie les raccourcis clavier pour les commandes.
@@ -40,10 +40,10 @@ L’élément de combinaison de touches Spécifie les raccourcis clavier pour le
 |ID|Obligatoire.|
 |éditeur|Obligatoire. Le GUID de l’éditeur indique le contexte d’édition pour laquelle ce raccourci clavier est actif. La valeur d’étendue globale de liaison est « guidVSStd97 ».|
 |key1|Obligatoire. Les valeurs valides incluent peut être tapées tous les caractères alphanumériques et les valeurs hexadécimales à deux chiffres précédés par 0 x et [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
-|mod1|Facultatif. N’importe quelle combinaison de **Ctrl**, **Alt**, et **MAJ** séparés par un espace.|
-|key2|Facultatif. Les valeurs valides incluent peut être tapées tous les caractères alphanumériques et les valeurs hexadécimales à deux chiffres précédés par 0 x et [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
-|mod2|Facultatif. N’importe quelle combinaison de **Ctrl**, **Alt**, et **MAJ** séparés par un espace.|
-|Émulateur|Facultatif.|
+|mod1|Optionnel. N’importe quelle combinaison de **Ctrl**, **Alt**, et **MAJ** séparés par un espace.|
+|key2|Optionnel. Les valeurs valides incluent peut être tapées tous les caractères alphanumériques et les valeurs hexadécimales à deux chiffres précédés par 0 x et [VK_constants](/windows/desktop/inputdev/virtual-key-codes).|
+|mod2|Optionnel. N’importe quelle combinaison de **Ctrl**, **Alt**, et **MAJ** séparés par un espace.|
+|Émulateur|Optionnel.|
 |Condition|Facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Éléments enfants

@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5e7f82f667fffec09894ab65e277cea09d137a9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826707"
 ---
 # <a name="how-to-add-listobject-controls-to-worksheets"></a>Procédure : Ajouter des contrôles ListObject aux feuilles de calcul
   Vous pouvez ajouter <xref:Microsoft.Office.Tools.Excel.ListObject> contrôles à une feuille de calcul Microsoft Office Excel au moment du design et de l’exécution dans les projets au niveau du document.

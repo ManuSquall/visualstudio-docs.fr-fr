@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8e58467d9a1600b96069bcd5dd271980faaf9ee7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938148"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823992"
 ---
 # <a name="properties-of-image-shapes"></a>Propriétés des formes d'image
 
@@ -57,8 +57,8 @@ Formes d’images ont les propriétés qui sont répertoriées dans le tableau s
 |Génère le Double dérivée|Si `True`, une classe de base et une classe partielle (pour prendre en charge la personnalisation via des substitutions) sont générés. Pour plus d’informations, consultez [substitution et extension des Classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|
 |A le constructeur personnalisé|Si `True`, un constructeur personnalisé est fourni dans le code source. Pour plus d’informations, consultez [substitution et extension des Classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|
 |Modificateur d’héritage|Décrit le type d’héritage de la classe de code source qui est générée à partir de la forme d’image (`none`, `abstract` ou `sealed`).|none|
-|Forme d’Image de base|La classe de base de cette forme.|(aucune)|
-|Name|Le nom de cette forme.|Nom actuel|
+|Forme d’Image de base|La classe de base de cette forme.|(aucun)|
+|Nom|Le nom de cette forme.|Nom actuel|
 |Espace de noms|L’espace de noms qui est affilié à cette forme.|Espace de noms actuel|
 |Type de l’info-bulle|L’endroit où l’info-bulle est défini (fixé, variable, ou aucun). Si fixe, puis la valeur de la `Fixed Tooltip Text` propriété est utilisée en tant que l’info-bulle ; si la variable, l’info-bulle est définie dans du code personnalisé.|none|
 |Notes|Remarques informelles associées à cette forme.|\<aucune>|
@@ -66,7 +66,7 @@ Formes d’images ont les propriétés qui sont répertoriées dans le tableau s
 |Largeur initiale|Largeur initiale de cette forme, en pouces.|1,5|
 |Couleur de remplissage exposé en tant que propriété<br /><br /> Mode de remplissage exposé dégradé<br /><br /> Exposé de couleur du contour en tant que propriété<br /><br /> Exposé de Style de tiret de contour en tant que propriété<br /><br /> Épaisseur du contour en tant que propriété d’exposées<br /><br /> Expose la couleur du texte|Si `True`, l’utilisateur peut définir la propriété indiquée d’une forme. Pour définir ceci, avec le bouton droit de la définition de forme, puis cliquez sur **ajouter les objets exposés**.|False|
 |Description|Utilisé pour documenter le concepteur généré.|\<aucune>|
-|Nom complet|Le nom qui s’affichera dans le concepteur généré pour cette forme.|\<aucune>|
+|Display Name|Le nom qui s’affichera dans le concepteur généré pour cette forme.|\<aucune>|
 |Texte d’info-bulle fixe|Le texte qui est utilisé pour une info-bulle fixe.|\<aucune>|
 |Help Keyword|Le mot clé qui est utilisé pour indexer l’aide F1 pour cet élément.|\<aucune>|
 |Image|Le chemin d’accès au fichier image qui est utilisé pour cette forme.|\<aucune>|

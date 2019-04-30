@@ -17,20 +17,20 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: af0d57e39fa8d1312032bacbbd9af95d44449ca1
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525828"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852476"
 ---
 # <a name="debugging-and-the-hosting-process"></a>Débogage et processus d'hébergement
 Le processus d'hébergement Visual Studio améliore la performance de débogueur et active de nouvelles fonctions de débogage, telles que le débogage de confiance partielle et l'évaluation d'une expression au moment du design. Vous pouvez désactiver le processus d’hébergement, le cas échéant. Les sections suivantes décrivent certaines des différences entre le débogage avec et sans le processus d’hébergement.
 
 > [!NOTE]
-> À partir de Visual Studio 2017, l’option au débogage en utilisant le processus d’hébergement n’est plus nécessaire et a été supprimée. Pour plus d’informations, consultez [débogage : Visual Studio 2017 vise à vitesse de votre moins favori travail](https://vslive.com/Blogs/News-and-Tips/2017/02/Debugging-Visual-Studio-2017-aims-to-speed-up-your-least-favorite-job.aspx).
+> À partir de Visual Studio 2017, l’option au débogage en utilisant le processus d’hébergement n’est plus nécessaire et a été supprimée. Pour plus d’informations, consultez [débogage : Visual Studio 2017 a pour but d’accélérer votre travail moins favori](https://vslive.com/Blogs/News-and-Tips/2017/02/Debugging-Visual-Studio-2017-aims-to-speed-up-your-least-favorite-job.aspx).
 
 ## <a name="partial-trust-debugging-and-click-once-security"></a>Débogage de confiance partielle et sécurité ClickOnce
- Le débogage de confiance partielle requiert le processus d'hébergement. Si vous désactivez le processus d’hébergement, le débogage de confiance partielle ne fonctionnera pas, même si la sécurité de confiance partielle est activée dans la page **Sécurité** de **Propriétés du projet**. Pour plus d’informations, consultez [Comment : déboguer une Application de confiance partielle](/visualstudio/debugger/debugger-security).
+ Le débogage de confiance partielle requiert le processus d'hébergement. Si vous désactivez le processus d’hébergement, le débogage de confiance partielle ne fonctionnera pas, même si la sécurité de confiance partielle est activée dans la page **Sécurité** de **Propriétés du projet**. Pour plus d'informations, voir [Procédure : Déboguer une application de confiance partielle](/visualstudio/debugger/debugger-security).
 
 ## <a name="design-time-expression-evaluation"></a>Évaluation de l’expression au moment du design
  L'expression au moment du design utilise toujours le processus d'hébergement. La désactivation du processus d'hébergement dans **Propriétés du projet** désactive l'évaluation d'une expression au moment du design pour les projets Bibliothèque de classes. Pour d'autres types de projet, l'évaluation d'une expression au moment du design n'est pas désactivée. À la place, Visual Studio démarre le fichier exécutable réel et l'utilise pour l'évaluation au moment du design sans le processus d'hébergement. Cette différence peut produire des résultats différents.

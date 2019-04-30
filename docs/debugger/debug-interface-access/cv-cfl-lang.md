@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1f02545f1c19b57e46af302fbc0b2abaa7445612
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646341"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555041"
 ---
 # <a name="cvcfllang"></a>CV_CFL_LANG
 Spécifie le langage de code source de l’application ou d’un module lié.
@@ -81,10 +81,10 @@ Langue de l’Application de CV_CFL_MSIL est un inconnu langage MSIL (Microsoft 
 
 Langue de l’Application de CV_CFL_HLSL est High Level Shader Language.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Les valeurs dans cette énumération sont retournées par un appel à la [IDiaSymbol::get_language](../../debugger/debug-interface-access/idiasymbol-get-language.md) (méthode).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : cvconst.h
 
 ## <a name="see-also"></a>Voir aussi

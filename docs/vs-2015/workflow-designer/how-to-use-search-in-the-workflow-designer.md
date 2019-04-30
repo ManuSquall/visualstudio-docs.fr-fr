@@ -10,11 +10,11 @@ author: steved0x
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 1d62f1936e4cf424bde526301210e61f38e5b767
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62931154"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>Procédure : Utiliser la recherche dans le concepteur de workflow
 Pour faciliter la création de workflows de plus grande taille et plus complexes, Rechercher peut être utilisé dans le concepteur de workflow pour rechercher des éléments par mot clé. Notez que le concepteur ne prend pas en charge l'activité Replace. La recherche va trouver les éléments suivants dans le concepteur :  

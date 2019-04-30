@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: c6da3f51a249aaf52cf3f20b90f3add6ceeb7aa1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564754"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Utilisation de datasets dans des applications multiniveaux
 
@@ -42,7 +42,7 @@ Prise en charge des applications multicouches dans les datasets typés permet le
 ## <a name="see-also"></a>Voir aussi
 
 - [Vue d’ensemble des applications de données multiniveaux](../data-tools/n-tier-data-applications-overview.md)
-- [Procédure pas à pas : Création d’une application de données multiniveau](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [Procédure pas à pas : Création d’une application de données multiniveaux](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [Guide pratique pour ajouter du code aux TableAdapters dans des applications multiniveaux](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
 - [Guide pratique pour ajouter du code à des datasets dans des applications multiniveaux](../data-tools/add-code-to-datasets-in-n-tier-applications.md)
 - [Guide pratique pour ajouter la validation à un dataset multiniveau](../data-tools/add-validation-to-an-n-tier-dataset.md)

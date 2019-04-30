@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6c9bf9dd71007e3a33a217a7ec30b357cd211b00
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909345"
 ---
 # <a name="project-configuration-for-managing-deployment"></a>Configuration de projet pour la gestion du déploiement
 Déploiement consiste à déplacer physiquement les éléments de sortie à partir d’un processus de génération à l’emplacement attendu pour l’installation et de débogage. Par exemple, une application Web peut être créée sur un ordinateur local et puis placée sur le serveur.

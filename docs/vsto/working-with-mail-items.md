@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1a0e5007163d10aee15e39759448928e44ae5a68
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629207"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815431"
 ---
 # <a name="work-with-mail-items"></a>Travailler avec des éléments de messagerie
   Le <xref:Microsoft.Office.Interop.Outlook.MailItem> classe contient les méthodes et les propriétés utilisées pour effectuer des tâches avec des messages électroniques.

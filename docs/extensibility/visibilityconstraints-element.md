@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b5dfbeb3c45e05c93554aae9b17a42c265408bc3
-ms.sourcegitcommit: f17e3afa5c324595afccf15a8a69df8c33b873d5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58658877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839034"
 ---
 # <a name="visibilityconstraints-element"></a>Élément VisibilityConstraints
 L’élément VisibilityConstraints détermine la visibilité statique de groupes de commandes et des barres d’outils. La visibilité est tout d’abord contrôlée par le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE) sans charger le VSPackage.
@@ -39,7 +39,7 @@ L’élément VisibilityConstraints détermine la visibilité statique de groupe
 
 |Attribut|Description|
 |---------------|-----------------|
-|Condition|Facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condition|Optionnel. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Éléments enfants
 

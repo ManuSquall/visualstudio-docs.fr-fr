@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3adf4a26563560803f820d70ef6c6d5171e791d5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703212"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891685"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>Indicateurs de bits utilisés par des commandes spécifiques
 Le comportement d’un nombre de fonctions dans l’API de plug-in de contrôle de Source peut être modifié en définissant un ou plusieurs bits dans une valeur unique. Ces valeurs sont appelées des indicateurs de bits. Les différents indicateurs de bits utilisés par l’API de plug-in de contrôle de Source sont détaillées ici, regroupés par la fonction qui les utilise.
@@ -23,14 +23,14 @@ Le comportement d’un nombre de fonctions dans l’API de plug-in de contrôle 
 ## <a name="checked-out-flag"></a>Extrait d’indicateur
  Cet indicateur peut être défini pour le [SccAdd](../extensibility/sccadd-function.md) ou [SccCheckin](../extensibility/scccheckin-function.md).
 
-|Indicateur|Valeur|Description|
+|Indicateur|Value|Description|
 |----------|-----------|-----------------|
 |`SCC_KEEP_CHECKEDOUT`|0x1000|Conserver le fichier extrait.|
 
 ## <a name="add-flags"></a>Ajoutez des indicateurs
  Ces indicateurs sont utilisés par le [SccAdd](../extensibility/sccadd-function.md).
 
-|Indicateur|Valeur|Description|
+|Indicateur|Value|Description|
 |----------|-----------|-----------------|
 |`SCC_FILETYPE_AUTO`|0x00|Le plug-in de contrôle de code source est prévu pour détecter automatiquement si le fichier est binaire ou texte.|
 |`SCC_FILETYPE_TEXT`|0x01|Type de fichier est texte.|
@@ -40,7 +40,7 @@ Le comportement d’un nombre de fonctions dans l’API de plug-in de contrôle 
 ## <a name="diff-flags"></a>Indicateurs de comparaison
  Le [SccDiff](../extensibility/sccdiff-function.md) utilise ces indicateurs pour définir l’étendue d’une opération de comparaison. Le `SCC_DIFF_QD_xxx` indicateurs sont mutuellement exclusifs. Si l’un d’eux est spécifié, aucun retour visuel n’est accordée. Dans une comparaison « rapide » (QD), le plug-in ne détermine pas comment le fichier est différent, uniquement s’il est différent. Si aucun de ces indicateurs sont spécifiés, qu'un « diff visual » est terminé ; différences entre les fichiers détaillées sont calculées et affichées. Si le QD demandée n’est pas pris en charge, le plug-in déplace vers la meilleure suivant. Par exemple, si l’IDE demande une somme de contrôle et le plug-in ne prend pas en charge cela, le plug-in n’un contenu d’intégral Vérifiez (toujours beaucoup plus rapidement qu’un affichage visuel).
 
-|Indicateur|Valeur|Description|
+|Indicateur|Value|Description|
 |----------|-----------|-----------------|
 |`SCC_DIFF_IGNORECASE`|0x0002|Ignorer les différences de casse.|
 |`SCC_DIFF_IGNORESPACE`|0x0004|Ignorer les différences d’espace blanc. **Remarque :**  Le `SCC_DIFF_IGNORECASE` et `SCC_DIFF_IGNORESPACE` les indicateurs sont des indicateurs de bits facultatif.|
@@ -52,7 +52,7 @@ Le comportement d’un nombre de fonctions dans l’API de plug-in de contrôle 
 ## <a name="populatelist-flag"></a>Indicateur de PopulateList
  Cet indicateur est utilisé par le [SccPopulateList](../extensibility/sccpopulatelist-function.md) dans le `fOptions` paramètre.
 
-|Indicateur|Valeur|Description|
+|Indicateur|Value|Description|
 |----------|-----------|-----------------|
 |`SCC_PL_DIR`|0x00000001L|L’IDE est en passant des répertoires, pas les fichiers.|
 
@@ -76,7 +76,7 @@ Le comportement d’un nombre de fonctions dans l’API de plug-in de contrôle 
 ## <a name="get-flags"></a>Obtenir les indicateurs
  Ces indicateurs sont utilisés par le [SccGet](../extensibility/sccget-function.md) et [SccCheckout](../extensibility/scccheckout-function.md).
 
-|Indicateur|Valeur|Description|
+|Indicateur|Value|Description|
 |----------|-----------|-----------------|
 |`SCC_GET_ALL`|0x00000001L|L’IDE est en passant des répertoires, pas de fichiers : Obtenir tous les fichiers dans ces répertoires.|
 |`SCC_GET_RECURSIVE`|0x00000002L|L’IDE est en passant des répertoires : Obtenez ces répertoires et tous ses sous-répertoires.|
@@ -84,7 +84,7 @@ Le comportement d’un nombre de fonctions dans l’API de plug-in de contrôle 
 ## <a name="noption-values"></a>valeurs nOption
  Ces indicateurs sont utilisés par le [SccSetOption](../extensibility/sccsetoption-function.md) dans le `nOption` paramètre.
 
-|Indicateur|Valeur|Description|
+|Indicateur|Value|Description|
 |----------|-----------|-----------------|
 |`SCC_OPT_EVENTQUEUE`|0x00000001L|Définissez l’état de la file d’attente de l’événement.|
 |`SCC_OPT_USERDATA`|0x00000002L|Spécifier les données utilisateur pour `SCC_OPT_NAMECHANGEPFN`.|
@@ -96,7 +96,7 @@ Le comportement d’un nombre de fonctions dans l’API de plug-in de contrôle 
 ## <a name="dwval-bitflags"></a>indicateurs de bits dwVal
  Ces indicateurs sont utilisés par le [SccSetOption](../extensibility/sccsetoption-function.md) dans le `dwVal` paramètre.
 
-|Indicateur|Valeur|Description|Utilisé par `nOption` valeur|
+|Indicateur|Value|Description|Utilisé par `nOption` valeur|
 |----------|-----------|-----------------|-----------------------------|
 |`SCC_OPT_EQ_DISABLE`|0x00L|Interrompt l’activité de file d’attente d’événements.|`SCC_OPT_EVENTQUEUE`|
 |`SCC_OPT_EQ_ENABLE`|0x01L|Active la journalisation de file d’attente d’événements.|`SCC_OPT_EVENTQUEUE`|

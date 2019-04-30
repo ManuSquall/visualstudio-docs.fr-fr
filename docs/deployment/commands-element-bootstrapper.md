@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5f52c862adcdaf7a95de6a90c2c330c39edcea13
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900342"
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;Commandes&gt; élément (programme d’amorçage)
 Le `Commands` élément implémente les tests décrits par les éléments situés sous le `InstallChecks` élément et déclare le package le [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] programme d’amorçage doit installer si le test échoue.
@@ -81,7 +81,7 @@ Le `Commands` élément implémente les tests décrits par les éléments situé
 |`Arguments`|Optionnel. Un ensemble d’arguments de ligne de commande à passer dans le fichier de package.|
 |`EstimatedInstallSeconds`|Optionnel. La durée estimée, en secondes, il faut pour installer le package. Cette valeur détermine la taille de la barre de progression qu'affiche par le programme d’amorçage pour l’utilisateur. La valeur par défaut est 0, auquel cas, aucune durée estimée est spécifiée.|
 |`EstimatedDiskBytes`|Optionnel. Estimation de la quantité d’espace disque, en octets, que le package occupera après l’installation est terminée. Cette valeur est utilisée dans l’espace disque que le programme d’amorçage affiche à l’utilisateur. La valeur par défaut est 0, dans lequel cas le programme d’amorçage ne s’affiche pas d’espace disque requis.|
-|`EstimatedTempBytes`|Optionnel. Estimation de la quantité d’espace disque temporaire, en octets, ce qui nécessite le package.|
+|`EstimatedTempBytes`|Facultatif. Estimation de la quantité d’espace disque temporaire, en octets, ce qui nécessite le package.|
 |`Log`|Optionnel. Le chemin d’accès au fichier journal généré par le package, relatif au répertoire racine du package.|
 
 ## <a name="installconditions"></a>InstallConditions
@@ -97,7 +97,7 @@ Le `Commands` élément implémente les tests décrits par les éléments situé
 |`Property`|Obligatoire. Le nom de la propriété à tester. La propriété doit avoir été définie précédemment par un enfant de le `InstallChecks` élément. Pour plus d’informations, consultez [ \<InstallChecks > élément](../deployment/installchecks-element-bootstrapper.md).|
 |`Compare`|Obligatoire. Le type de comparaison à effectuer. La liste suivante indique les valeurs valides :<br /><br /> `ValueEqualTo`, `ValueNotEqualTo`, `ValueGreaterThan`, `ValueGreaterThanOrEqualTo`, `ValueLessThan`, `ValueLessThanOrEqualTo`, `VersionEqualTo`, `VersionNotEqualTo`, `VersionGreaterThan`, `VersionGreaterThanOrEqualTo`, `VersionLessThan`, `VersionLessThanOrEqualTo`, `ValueExists`, `ValueNotExists`|
 |`Value`|Obligatoire. Valeur à comparer à la propriété.|
-|`Schedule`|Optionnel. Le nom d’un `Schedule` balise qui définit quand cette règle doit être évaluée.|
+|`Schedule`|Facultatif. Le nom d’un `Schedule` balise qui définit quand cette règle doit être évaluée.|
 
 ## <a name="failif"></a>FailIf
  Le `FailIf` élément est un enfant de le `InstallConditions` élément et décrit une condition positive sous lequel l’installation doit s’arrêter. Chaque `InstallConditions` élément peut avoir zéro ou plusieurs `FailIf` éléments.
@@ -122,8 +122,8 @@ Le `Commands` élément implémente les tests décrits par les éléments situé
 |---------------|-----------------|
 |`Value`|Obligatoire. La valeur de code de sortie auquel ce `ExitCode` élément s’applique.|
 |`Result`|Obligatoire. Manière dont l’installation doit réagir à ce code de sortie. La liste suivante indique les valeurs valides :<br /><br /> `Success`. Marque le package a réussi.<br /><br /> `SuccessReboot`. Marque le package a réussi et prescrit au système de redémarrer.<br /><br /> `Fail`. Signale le package a échoué.<br /><br /> `FailReboot`. Indicateurs de package comme ayant échoué et prescrit au système de redémarrer.|
-|`String`|Optionnel. La valeur à afficher à l’utilisateur en réponse à ce code de sortie.|
-|`FormatMessageFromSystem`|Optionnel. Détermine s’il faut utiliser le message d’erreur fournie par le système correspondant au code de sortie, ou utilisez la valeur fournie dans `String`. Les valeurs valides sont `true`, ce qui signifie qu’utiliser l’erreur fournie par le système, et `false`, ce qui signifie que d’utiliser la chaîne fournie par `String`. La valeur par défaut est `false`. Si cette propriété est `false`, mais `String` n’est pas défini, l’erreur fournie par le système sera utilisé.|
+|`String`|Facultatif. La valeur à afficher à l’utilisateur en réponse à ce code de sortie.|
+|`FormatMessageFromSystem`|Facultatif. Détermine s’il faut utiliser le message d’erreur fournie par le système correspondant au code de sortie, ou utilisez la valeur fournie dans `String`. Les valeurs valides sont `true`, ce qui signifie qu’utiliser l’erreur fournie par le système, et `false`, ce qui signifie que d’utiliser la chaîne fournie par `String`. La valeur par défaut est `false`. Si cette propriété est `false`, mais `String` n’est pas défini, l’erreur fournie par le système sera utilisé.|
 
 ## <a name="example"></a>Exemple
  L’exemple de code suivant définit des commandes pour l’installation de .NET Framework 2.0.

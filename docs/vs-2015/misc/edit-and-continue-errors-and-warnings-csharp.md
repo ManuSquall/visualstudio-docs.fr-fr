@@ -62,11 +62,11 @@ caps.latest.revision: 11
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f83f421203b25edbbccf767c0661ece709dd63c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822953"
 ---
 # <a name="edit-and-continue-errors-and-warnings-c"></a>Erreurs et avertissements de Modifier &amp; Continuer (C#)
 Vous avez modifié une section de code qui n'est pas autorisée en Visual C# dans Modifier & Continuer.  

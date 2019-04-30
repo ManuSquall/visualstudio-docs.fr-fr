@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 09c1e2ac48f12e82d268311c114919c732a44073
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085699"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006494"
 ---
 # <a name="the-number-of-fractional-digits-is-out-of-range"></a>Le nombre de fractions est en dehors de la plage
 Vous avez tenté de passer un argument non valide à la fonction **Number.prototype.toExponential**. L’argument à la fonction **toExponential()** doit être comprise entre 0 et 20 (inclus).  

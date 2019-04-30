@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 08d8b907e4a211b0735f07377c21dec1c0a982c9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950745"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62796902"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812 : Évitez les classes internes non instanciées
 
@@ -53,7 +53,7 @@ Les types suivants ne sont pas examinés par cette règle :
 - Les types qui ne peuvent pas être instanciés et qui ne définissent que des méthodes `static` (`Shared` en Visual Basic).
 Si vous appliquez <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> à l’assembly qui est en cours d’analyse, cette règle ne sera pas vérifiée sur les constructeurs portant la mention `internal` parce que vous ne pouvez pas savoir si un champ est utilisé par une autre assembly `friend`.
 
-Bien que vous ne puissiez pas contourner cette limitation dans Visual Studio Code Analysis, l’outil autonome externe FxCop vérifiera la règle sur les constructeurs internes si chaque assembly `friend` est présente dans l’analyse.
+Si vous appliquez <xref:System.Runtime.CompilerServices.InternalsVisibleToAttribute?displayProperty=fullName> à l’assembly qui est en cours d’analyse, cette règle se produira pas sur les constructeurs portent la mention `internal` parce que vous ne pouvez pas savoir si un champ est utilisé par un autre `friend` assembly.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 

@@ -24,11 +24,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 0554c1494bec757d1baecd78cdc302608e5b6b3e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950790"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62573038"
 ---
 # <a name="debug-hook-function-writing"></a>Écriture de fonctions de raccordement de débogage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

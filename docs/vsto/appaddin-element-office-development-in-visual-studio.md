@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2116576acb06e6291749d9c0176fcf4ebb426739
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944427"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953242"
 ---
 # <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin&gt; élément (développement Office dans Visual Studio)
   Le **appAddin** élément de la `vstov4` espace de noms stocke des informations spécifiques à la personnalisation des Compléments VSTO.
@@ -50,7 +50,7 @@ ms.locfileid: "55944427"
  Le **appAddin** élément possède les éléments enfants suivants.
 
 ### <a name="friendlyname"></a>FriendlyName
- Facultatif. Le **friendlyName** élément est expliqué dans [ &#60;friendlyName&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md).
+ Optionnel. Le **friendlyName** élément est expliqué dans [ &#60;friendlyName&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md).
 
 ### <a name="description"></a>Description
  Facultatif. Le **description** élément est expliqué dans [ &#60;description&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/description-element-office-development-in-visual-studio.md).

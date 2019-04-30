@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f3f3537a56b746c9104898d68e40038fcd545910
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: a01f08d430e9812283c3f5179e08d20f98a687a4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856458"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63003217"
 ---
 # <a name="get-started-with-unit-testing"></a>Bien démarrer avec les tests unitaires
 
@@ -24,10 +24,19 @@ Utilisez Visual Studio pour définir et exécuter des tests unitaires afin de ma
 
 Cette section décrit dans les grandes lignes comment créer un projet de test unitaire.
 
-> [!TIP]
-> Le projet à tester, « HelloWorldCore », est un exemple de projet et son code n’est pas destiné à être montré. Si vous voulez créer un projet « Hello World » à tester, consultez [Créer votre première application console C#](../ide/quickstart-csharp-console.md). Pour un article contenant une procédure pas à pas complète, consultez [Créer et exécuter des tests unitaires pour du code managé](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
-
 1. Ouvrez le projet que vous souhaitez tester dans Visual Studio.
+
+   Dans le cadre de la démonstration d’un exemple de test unitaire, cet article teste un projet « Hello World » simple. L’exemple de code pour un tel projet est comme suit :
+
+   ```csharp
+   public class Program
+   {
+       public static void Main()
+       {
+           Console.WriteLine("Hello World!");
+       }
+   }
+   ```
 
 1. Dans l’**Explorateur de solutions**, sélectionnez le nœud de la solution. Ensuite, dans la barre de menus supérieure, sélectionnez **Fichier** > **Ajouter** > **Nouveau projet**.
 
@@ -62,6 +71,9 @@ Cette section décrit dans les grandes lignes comment créer un projet de test u
 1. Ajoutez du code à la méthode de test unitaire.
 
    ![Ajouter du code à votre méthode de test unitaire dans Visual Studio](media/vs-2019/unit-test-method.png)
+
+> [!TIP]
+> Pour obtenir une description plus détaillée de la création de tests unitaires, consultez [Créer et exécuter des tests unitaires pour le code managé](walkthrough-creating-and-running-unit-tests-for-managed-code.md).
 
 ## <a name="run-unit-tests"></a>Exécuter des tests unitaires
 
@@ -162,7 +174,7 @@ Pour créer des tests unitaires qui utilisent [NUnit](https://nunit.org/) :
 
 ## <a name="see-also"></a>Voir aussi
 
-* [Procédure pas à pas : Créer et exécuter des tests unitaires pour le code managé](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+* [Procédure pas à pas : créer et exécuter des tests unitaires pour du code managé](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
 * [Créer des tests unitaires, commande](create-unit-tests-menu.md)
 * [Générer des tests avec IntelliTest](generate-unit-tests-for-your-code-with-intellitest.md)
 * [Exécuter des tests avec l’Explorateur de tests](run-unit-tests-with-test-explorer.md)

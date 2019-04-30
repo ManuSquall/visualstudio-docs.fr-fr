@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e7eb72f104560991f1bb191e62641041879df071
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965466"
 ---
 # <a name="create-unit-test-method-stubs-with-the-create-unit-tests-command"></a>Créer des stubs de méthodes de tests unitaires avec la commande Créer des tests unitaires
 
@@ -52,5 +52,5 @@ Toutefois, cette fonctionnalité est également applicable quand un développeur
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Créer des stubs de méthodes de tests unitaires avec la commande « Créer des tests unitaires »](https://devblogs.microsoft.com/devops/creating-unit-test-method-stubs-with-create-unit-tests/)
+- [Creating unit test method stubs with "Create Unit Tests"](https://devblogs.microsoft.com/devops/creating-unit-test-method-stubs-with-create-unit-tests/) (Créer des stubs de méthodes de tests unitaires avec la commande « Créer des tests unitaires »)
 - [Billets de blog sur les tests unitaires](https://devblogs.microsoft.com/devops/?s=unit+testing)

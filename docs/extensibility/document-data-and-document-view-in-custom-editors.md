@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6470b7ddb8a28c2aa22a23a55976f1f8831c4363
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683738"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62864142"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>Données de document et les vues de document dans les éditeurs personnalisés
 Un éditeur personnalisé se compose de deux parties : un objet de données de document et un objet de vue de document. Comme leur nom le suggère, l’objet de données représente les données de texte à afficher. De même, l’objet de vue de document (ou « vue ») représente une ou plusieurs fenêtres d’affichage de l’objet de données de document.

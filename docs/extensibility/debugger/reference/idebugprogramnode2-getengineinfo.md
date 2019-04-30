@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 421eea42c169f586657998e5d4cd57c4c797b71e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62916902"
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
 Obtient le nom et l’identificateur du moteur de débogage (DE) un programme en cours d’exécution.
@@ -41,11 +41,11 @@ int GetEngineInfo(
 #### <a name="parameters"></a>Paramètres
  `pbstrEngine`
 
- [out] Retourne le nom de la DE l’exécution du programme (propres à C++ : cela peut être un pointeur null, indiquant que l’appelant n’est pas intéressés par le nom du moteur).
+ [out] Retourne le nom de la DE l’exécution du programme (C++-spécifiques : cela peut être un pointeur null, indiquant que l’appelant n’est pas intéressés par le nom du moteur).
 
  `pguidEngine`
 
- [out] Retourne l’identificateur global unique de la DE l’exécution du programme (propres à C++ : cela peut être un pointeur null, indiquant que l’appelant n’est pas intéressé par le GUID du moteur de données).
+ [out] Retourne l’identificateur global unique de la DE l’exécution du programme (C++-spécifiques : cela peut être un pointeur null, indiquant que l’appelant n’est pas intéressé par le GUID du moteur de données).
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

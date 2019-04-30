@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 421cc23fb807a571b2b36f5f1def5df46a99492b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064802"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946613"
 ---
 # <a name="cant-have-continue-outside-of-loop"></a>Impossible d'utiliser une instruction 'continue' en dehors d'une boucle
 Vous avez tenté d’utiliser le **continuer** instruction en dehors d’une boucle. Le **continuer** instruction peut être utilisée uniquement dans le corps des éléments suivants :  

@@ -17,11 +17,11 @@ dev_langs:
 - VB
 manager: jillfra
 ms.openlocfilehash: d2a1dd9984601afa34e4aac7fa5ddc24061cf6ae
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954502"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797048"
 ---
 # <a name="ca1806-do-not-ignore-method-results"></a>CA1806 : N'ignorez pas les résultats des méthodes
 
@@ -53,7 +53,7 @@ Ignorer les HRESULT ou code d’erreur peut entraîner un comportement inattendu
 
  Si la méthode A appelle la méthode B, mais n’utilise pas la nouvelle instance de chaîne retournée par la méthode B. Passez l’instance comme argument à une autre méthode, assignez l’instance à une variable. Ou supprimez l’appel s’il n’est pas nécessaire.
 
- ou
+ - ou -
 
  Si la méthode A appelle la méthode B, mais n’utilise pas le HRESULT ou code d’erreur que la méthode retourne. Utiliser le résultat dans une instruction conditionnelle, assignez le résultat à une variable ou passez-le en tant qu’argument à une autre méthode.
 

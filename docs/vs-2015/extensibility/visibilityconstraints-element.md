@@ -14,11 +14,11 @@ caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 06f6a74fabfc1bd86f54656c6b30b55690940a0d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62585124"
 ---
 # <a name="visibilityconstraints-element"></a>Élément VisibilityConstraints
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ L’élément VisibilityConstraints détermine la visibilité statique de groupe
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|Condition|Optionnel. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
+|Condition|Facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|  
   
 ### <a name="child-elements"></a>Éléments enfants  
   

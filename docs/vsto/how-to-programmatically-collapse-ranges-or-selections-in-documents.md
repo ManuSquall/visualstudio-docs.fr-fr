@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6174688bbab5655a7a108e1c971e926ee5977ba1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62575427"
 ---
 # <a name="how-to-programmatically-collapse-ranges-or-selections-in-documents"></a>Procédure : Réduire des plages ou des sélections dans des documents par programmation
   Si vous travaillez avec un objet <xref:Microsoft.Office.Interop.Word.Range> ou <xref:Microsoft.Office.Interop.Word.Selection> , vous pouvez remplacer la sélection par un point d’insertion avant d’insérer du texte, afin d’éviter de remplacer le texte existant. À la fois le <xref:Microsoft.Office.Interop.Word.Range> et <xref:Microsoft.Office.Interop.Word.Selection> objets ont une méthode Collapse, qui utilise le <xref:Microsoft.Office.Interop.Word.WdCollapseDirection> valeurs d’énumération :

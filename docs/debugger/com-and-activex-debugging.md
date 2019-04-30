@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b37522fec0438278f8cf063637132b146b3d3748
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609088"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62563905"
 ---
 # <a name="com-and-activex-debugging"></a>Débogage COM et ActiveX
 Cette section réunit des conseils sur le débogage des applications COM et des contrôles ActiveX.
@@ -34,7 +34,7 @@ Cette section réunit des conseils sur le débogage des applications COM et des 
 ## <a name="in-this-section"></a>Dans cette section
  [Serveur COM débogage et conteneurs](../debugger/com-server-and-container-debugging.md) mentionne des considérations particulières lors du débogage des applications COM. Ces points sont notamment le débogage d'un serveur et d'un conteneur COM en utilisant deux projets contenus dans la même solution, le traçage des appels qui dépassent les limites du processus, la définition de points d'arrêt dans les fonctions de rappel et le pas à pas dans les conteneurs et les serveurs.
 
- [Comment : déboguer un contrôle ActiveX](../debugger/how-to-debug-an-activex-control.md) contient des informations sur le débogage des contrôles ActiveX. Ces informations comprennent notamment la spécification d'un conteneur pour la session de débogage pour voir la façon dont le code de votre contrôle ActiveX s'exécute, le débogage d'un contrôle ActiveX lié aux données, la simulation d'un conteneur spécifique et le pas à pas détaillé dans le code du conteneur.
+ [Guide pratique pour Déboguer un contrôle ActiveX](../debugger/how-to-debug-an-activex-control.md) contient des informations sur le débogage des contrôles ActiveX. Ces informations comprennent notamment la spécification d'un conteneur pour la session de débogage pour voir la façon dont le code de votre contrôle ActiveX s'exécute, le débogage d'un contrôle ActiveX lié aux données, la simulation d'un conteneur spécifique et le pas à pas détaillé dans le code du conteneur.
 
  [Outils de débogage COM](../debugger/com-debugging-tools.md) répertorie les explorateurs et les exemples d’applications qui peuvent être utiles pour déboguer votre application COM.
 

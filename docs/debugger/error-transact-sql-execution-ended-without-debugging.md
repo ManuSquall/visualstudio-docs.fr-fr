@@ -16,13 +16,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 71d1f14bef8eb69fa6c6fc4d9c3f669826079c99
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722341"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850164"
 ---
-# <a name="error-transact-sql-execution-ended-without-debugging"></a>Erreur : L'exécution de Transact-SQL s'est terminée sans débogage
+# <a name="error-transact-sql-execution-ended-without-debugging"></a>Erreur : L’exécution de Transact-SQL s’est terminée sans débogage
 
 Cette erreur se produit lorsque vous tentez de déboguer un Transact-SQL ou une procédure SQLCLR et le débogueur ne reçoit les messages de débogage à partir du serveur SQL.
 
@@ -40,7 +40,7 @@ Deux comptes sont concernés :
 
   Pour corriger cette erreur, vous pouvez avoir besoin de :
 
-  - Vérifier vos paramètres d'autorisation. Pour plus d’informations, consultez [Comment : définir des autorisations SQL Server pour le débogage](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).
+  - Vérifier vos paramètres d'autorisation. Pour plus d'informations, voir [Procédure : Définir des autorisations SQL Server pour le débogage](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414).
 
   - Vérifier que le débogage SQL est correctement configuré.
 
@@ -49,6 +49,6 @@ Deux comptes sont concernés :
 ## <a name="see-also"></a>Voir aussi
 
 - [Configuration du débogage SQL](https://docs.microsoft.com/previous-versions/visualstudio/visual-studio-2010/s4sszxst(v=vs.100))
-- [Comment : définir des autorisations SQL Server pour le débogage](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)
+- [Guide pratique pour Définir des autorisations SQL Server pour le débogage](https://msdn.microsoft.com/84e088d0-0409-41d4-841b-f5d4b0fda414)
 - [Paramètres et préparation du débogueur](../debugger/debugger-settings-and-preparation.md)
 - [Remote Debugging](../debugger/remote-debugging.md)

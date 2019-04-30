@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c8d80c4e9a21c29ce7b34a3998e241b11713f355
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918219"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545698"
 ---
 # <a name="ca2106-secure-asserts"></a>CA2106 : Assertions sécurisées
 

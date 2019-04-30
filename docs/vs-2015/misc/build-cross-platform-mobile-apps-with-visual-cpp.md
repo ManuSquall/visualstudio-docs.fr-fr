@@ -10,11 +10,11 @@ author: corob-msft
 ms.author: corob
 manager: jillfra
 ms.openlocfilehash: 860ca971d8c3e42ef6d690c7f55b3ce2716b1c4e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950388"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946815"
 ---
 # <a name="build-cross-platform-mobile-apps-with-visual-c"></a>Créer des applications mobiles multiplateformes avec Visual C++
 Vous pouvez générer du code multiplateforme pour des appareils Android, iOS et Windows à l'aide de Visual for Cross-Platform Mobile Development. Il s’agit d’une fonctionnalité facultative disponible dans Visual Studio 2015, qui permet le développement multiplateforme de code pour iOS, Android et Windows à l’aide de Visual C++.  

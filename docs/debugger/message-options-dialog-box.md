@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 97704675e1135959744e60724e4e3381bccf2b30
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62931322"
 ---
 # <a name="message-options-dialog-box"></a>Options des messages, boîte de dialogue
 Utilisez cette boîte de dialogue pour sélectionner les messages sont répertoriés dans [vue Messages](../debugger/messages-view.md). Pour afficher cette boîte de dialogue, choisissez **Messages du journal** à partir de la **Spy** menu.

@@ -12,15 +12,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7eb83567a7d59dc02779839a5305b9c1c0329912
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62434044"
 ---
 # <a name="switcht-activity-designer"></a>Commutateur\<T > Concepteur d’activités
 
-L’activité <xref:System.Activities.Statements.Switch%601> évalue une expression spécifiée et exécute l’activité à partir d’une collection d’activités dont la clé associée correspond à la valeur obtenue de l’évaluation.
+L'activité <xref:System.Activities.Statements.Switch%601> évalue une expression spécifiée et exécute l'activité à partir d'une collection d'activités dont la clé associée correspond à la valeur obtenue de l'évaluation.
 
 Le **Switch < T\>**  ActivityDesigner est utilisé pour créer et configurer un <xref:System.Activities.Statements.Switch%601> activité dans le Concepteur de flux de travail.
 
@@ -43,7 +43,7 @@ Le tableau suivant répertorie les propriétés de l'activité <xref:System.Acti
 |<xref:System.Activities.Statements.Switch%601.Default%2A>||Spécifie l'activité exécutée si aucune correspondance n'est trouvée. Cliquez sur le **ajouter une activité** bouton sur le concepteur pour ouvrir le **par défaut** zone où l’activité peut être supprimée.|
 |<xref:System.Activities.Statements.Switch%601.Cases%2A>||Spécifie les cas à évaluer. Pour ajouter un cas, cliquez sur le **Ajouter nouveau cas** bouton en bas de **commutateur\<T >** concepteur. Le bouton se transforme en zone de texte (zone de liste déroulante si le type générique sélectionné lors de l’ajout du commutateur\<T > est String ou Enum). Après l’ajout d’une clé dans le **cas valeur** zone, la zone de cas se développe et une activité peut être déposée où le texte d’indication « Déposer l’activité ici » pour définir la logique d’exécution pour le cas.|
 
-Plusieurs cas peuvent être ajoutés tant que les clés de cas ne sont pas dupliquées. Sinon, une boîte de dialogue d'erreur s'affiche pour signaler que la clé de cas spécifiée existe déjà et que vous devez en choisir une autre. Dans le **commutateur\<T >** concepteur, qu’une seule zone de cas peut être développée à la fois. Si une zone de cas est affiché en mode réduit, cliquez dessus pour la développer. Notez que lorsqu‘un cas est affiché en mode réduit, le concepteur place le nom d‘affichage de l‘activité (si elle existe) à l‘intérieur du cas, à droite. Sinon, elle est affichée la **ajouter une activité** bouton qui développe le cas si vous cliquez dessus et vous permet d’ajouter une activité.
+Plusieurs cas peuvent être ajoutés tant que les clés de cas ne sont pas dupliquées. Sinon, une boîte de dialogue d'erreur s'affiche pour signaler que la clé de cas spécifiée existe déjà et que vous devez en choisir une autre. Dans le **commutateur\<T >** concepteur, qu’une seule zone de cas peut être développée à la fois. Si une zone de cas est affiché en mode réduit, cliquez dessus pour la développer. Notez que lorsqu'un cas est affiché en mode réduit, le concepteur place le nom d'affichage de l'activité (si elle existe) à l'intérieur du cas, à droite. Sinon, elle est affichée la **ajouter une activité** bouton qui développe le cas si vous cliquez dessus et vous permet d’ajouter une activité.
 
 Cliquer sur la clé d'un cas existant transforme l'apparence de cette dernière d'étiquette en zone de texte afin que vous puissiez la modifier.
 

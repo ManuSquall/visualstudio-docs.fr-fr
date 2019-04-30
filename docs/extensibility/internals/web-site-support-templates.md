@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fc5370db9c090fe5a7dcd9852d3df94e05f08e1f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116496"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856854"
 ---
 # <a name="web-site-support-templates"></a>Modèles de prise en charge de site web
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Modèles de projet et d’élément de site Web fournissent un site Web réutilisables et personnalisables des stubs qui accélèrent le processus de développement en supprimant la nécessité de créer de nouveaux projets de site Web et des éléments à partir de zéro. Pour plus d’informations sur [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] modèles, consultez [création de projet et modèles d’élément](../../ide/creating-project-and-item-templates.md).

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4e4adb0747ce569bc372daf0d36cfe1719a2ff61
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597749"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830293"
 ---
 # <a name="idiaframedata"></a>IDiaFrameData
 Expose les détails d’un frame de pile.
@@ -52,7 +52,7 @@ Le tableau suivant présente les méthodes de `IDiaFrameData`.
 |[IDiaFrameData::get_functionParent](../../debugger/debug-interface-access/idiaframedata-get-functionparent.md)|Récupère le frame interface de données pour englobante (fonction).|
 |[IDiaFrameData::execute](../../debugger/debug-interface-access/idiaframedata-execute.md)|Effectue le déroulement de pile et retourne l’état actuel des registres dans une interface de frame de parcours de pile.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Les détails disponibles pour un frame sont pour les points d’exécution au sein de la plage d’adresses indiquée par la longueur de l’adresse et le bloc.
 
 ## <a name="notes-for-callers"></a>Notes de publication pour les appelants
@@ -112,8 +112,8 @@ void PrintFrameData(IDiaFrameData* pFrameData){
 }
 ```
 
-## <a name="requirements"></a>Spécifications
-En-tête : Dia2.h
+## <a name="requirements"></a>Configuration requise
+En-tête : Dia2.h
 
 Bibliothèque : diaguids.lib
 

@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: a8e14a53719d4913bcc04bcb2b702ca4ec4a8c55
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927215"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62566740"
 ---
 # <a name="handle-a-concurrency-exception"></a>Gérer une exception d’accès concurrentiel
 
@@ -63,13 +63,13 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
 
        Après une courte période, la requête est terminée en cours d’exécution et la base de données Northwind est créé.
 
-## <a name="create-a-new-project"></a>Créer un projet
+## <a name="create-a-new-project"></a>Créer un nouveau projet
 
 Commencez par créer une application Windows Forms :
 
 1. Dans Visual Studio, sur le **fichier** menu, sélectionnez **New** > **projet**.
 
-2. Développez le **Visual C#**  ou **Visual Basic** dans le volet gauche, puis sélectionnez **Windows Desktop**.
+2. Développez le **Visual C#** ou **Visual Basic** dans le volet gauche, puis sélectionnez **Windows Desktop**.
 
 3. Dans le volet central, sélectionnez le **Windows Forms application** type de projet.
 

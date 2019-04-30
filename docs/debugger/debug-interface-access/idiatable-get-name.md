@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fc5ac9b3892ad9447f413df58d43791b1be1720a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626477"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840474"
 ---
 # <a name="idiatablegetname"></a>IDiaTable::get_name
 Récupère le nom de la table.

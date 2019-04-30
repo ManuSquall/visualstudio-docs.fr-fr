@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a6d2e7ae091964cd810acfcddcc4ea5ab81943c4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56719819"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62872840"
 ---
 # <a name="idebugmodule2"></a>IDebugModule2
 Cette interface représente un module, autrement dit, une unité exécutable d’un programme, comme une DLL.
@@ -49,7 +49,7 @@ IDebugModule2 : IUnknown
 ## <a name="remarks"></a>Notes
  Informations de module peuvent être affichées dans le **Modules** fenêtre de l’IDE.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

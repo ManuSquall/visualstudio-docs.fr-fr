@@ -16,11 +16,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 27aaadfd1d3ff38e9a0382ff1863b73d2bccc325
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58153485"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62539441"
 ---
 # <a name="jspropertyattributes-enumeration"></a>Énumération JS_PROPERTY_ATTRIBUTES
 Indique les attributs d'une propriété.  
@@ -42,7 +42,7 @@ enum JS_PROPERTY_ATTRIBUTES{   JS_PROPERTY_ATTRIBUTE_NONE = 0,   JS_PROPERTY_HAS
 |`JS_PROPERTY_READONLY`|La propriété doit être en lecture seule.|  
 |`JS_PROPERTY_NATIVE_WINRT_POINTER`|La propriété est un pointeur vers un objet WinRT natif.|  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  **En-tête :** jscript9diag.h  
   
 ## <a name="see-also"></a>Voir aussi  

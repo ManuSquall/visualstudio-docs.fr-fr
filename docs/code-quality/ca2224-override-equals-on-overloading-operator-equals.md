@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3fa6bfa5b590d330d791eb8c735099e619ffaf3a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922964"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62541908"
 ---
 # <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224 : Remplacez Equals au moment de surcharger l'opérateur égal
 
@@ -39,7 +39,7 @@ Un type public implémente l’opérateur d’égalité, mais ne remplace pas <x
 
 L’opérateur d’égalité est destinée à être un point de vue syntaxique pour accéder facilement les fonctionnalités de la <xref:System.Object.Equals%2A> (méthode). Si vous implémentez l’opérateur d’égalité, sa logique doit être identique à celle de <xref:System.Object.Equals%2A>.
 
-Le compilateur C# émet un avertissement si votre code ne respecte pas cette règle.
+Le compilateur c# émet un avertissement si votre code ne respecte pas cette règle.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 

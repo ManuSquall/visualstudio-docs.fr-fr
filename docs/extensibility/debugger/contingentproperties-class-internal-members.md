@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 60129950c2311cc94b8573de4cd8ae3c46194e75
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704746"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62925996"
 ---
 # <a name="contingentproperties-class---internal-members"></a>Classe ContingentProperties - membres internes
 Contient des propriétés supplémentaires pour un <xref:System.Threading.Tasks.Task> objet.
@@ -38,7 +38,7 @@ Contient des propriétés supplémentaires pour un <xref:System.Threading.Tasks.
 
 ### <a name="fields"></a>Champs
 
-|Name|Description|
+|Nom|Description|
 |----------|-----------------|
 |[m_children](../../extensibility/debugger/m-children-field.md)|La liste des tâches enfants qui sont inscrits auprès de cette tâche.|
 

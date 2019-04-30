@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 471f0e9b97293bd70457a8f41cb7efddd6acf6c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091822"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564798"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Procédure pas à pas : Créer une application de données multiniveaux
 Les applications de données *multiniveaux* sont des applications qui accèdent aux données et sont divisées en plusieurs couches logiques, ou *niveaux*. La séparation des composants de l'application en couches distinctes favorise la possibilité de tenir à jour et de monter en charge l'application. Cela est possible grâce à une application plus facile des nouvelles technologies sur chaque couche sans avoir à reconcevoir toute la solution. L'architecture multicouche inclut une couche Présentation, une couche intermédiaire et une couche Données. La couche intermédiaire inclut généralement une couche d’accès aux données, une couche logique métier et des composants partagés tels que l’authentification et la validation. La couche Données inclut une base de données relationnelle. Les applications multicouches stockent généralement les informations sensibles dans la couche d'accès aux données de la couche intermédiaire, pour la tenir hors de portée des utilisateurs finaux qui accèdent à la couche Présentation. Pour plus d’informations, consultez [vue d’ensemble des applications de données multicouches](../data-tools/n-tier-data-applications-overview.md).
@@ -92,7 +92,7 @@ Cette procédure pas à pas utilise SQL Server Express LocalDB et la base de don
 
 ### <a name="to-create-a-separate-class-library-for-the-tableadapters"></a>Pour créer une bibliothèque de classes distinct pour les TableAdapters
 
-1. Avec le bouton droit sur la solution dans **l’Explorateur de solutions** et choisissez **ajouter** > **nouveau projet**.
+1. Cliquez avec le bouton droit sur la solution dans l’**Explorateur de solutions**, puis choisissez **Ajouter** > **Nouveau projet**.
 
 2. Dans le **nouveau projet** boîte de dialogue, dans le volet central, sélectionnez **bibliothèque de classes**.
 
@@ -164,7 +164,7 @@ Cette procédure pas à pas montre comment accéder à la couche d’accès aux 
 
 ### <a name="to-create-a-new-wcf-service-application"></a>Pour créer une application de service WCF
 
-1. Avec le bouton droit sur la solution dans **l’Explorateur de solutions** et choisissez **ajouter** > **nouveau projet**.
+1. Cliquez avec le bouton droit sur la solution dans l’**Explorateur de solutions**, puis choisissez **Ajouter** > **Nouveau projet**.
 
 2. Dans le **nouveau projet** boîte de dialogue, dans le volet gauche, sélectionnez **WCF**. Dans le volet central, sélectionnez **bibliothèque du Service WCF**.
 
@@ -288,7 +288,7 @@ Cette procédure pas à pas montre comment accéder à la couche d’accès aux 
 
 ### <a name="to-create-the-presentation-tier-project"></a>Pour créer le projet de couche Présentation
 
-1. Avec le bouton droit sur la solution dans **l’Explorateur de solutions** et choisissez **ajouter** > **nouveau projet**.
+1. Cliquez avec le bouton droit sur la solution dans l’**Explorateur de solutions**, puis choisissez **Ajouter** > **Nouveau projet**.
 
 2. Dans le **nouveau projet** boîte de dialogue, dans le volet gauche, sélectionnez **Windows Desktop**. Dans le volet central, sélectionnez **Windows Forms application**.
 

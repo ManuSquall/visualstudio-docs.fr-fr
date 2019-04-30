@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 34b4ed5dbc0996239e73db38f1d6bea9e43d6de4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640595"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978300"
 ---
 # <a name="trust-office-solutions-by-using-inclusion-lists"></a>Approuver des solutions Office à l’aide de listes d’inclusion
   Les listes d’inclusion permettent aux utilisateurs d’approuver des solutions Office signées avec un certificat qui identifie l’éditeur. Elles sont propres à l’utilisateur et elles peuvent servir aux personnalisations au niveau du document et aux compléments VSTO.

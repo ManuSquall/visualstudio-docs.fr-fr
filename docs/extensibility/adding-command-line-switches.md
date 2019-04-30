@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 376dcee6f23ec2633efe1b23f77552ebf33341f2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891835"
 ---
 # <a name="add-command-line-switches"></a>Ajouter des commutateurs de ligne de commande
 Vous pouvez ajouter des commutateurs de ligne de commande qui s’appliquent à votre VSPackage lorsque *devenv.exe* est exécutée. Utilisez <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> pour déclarer le nom du commutateur et ses propriétés. Dans cet exemple, le commutateur MySwitch est ajouté pour une sous-classe de VSPackage nommé **AddCommandSwitchPackage** avec aucun argument et le VSPackage chargé automatiquement.
@@ -35,7 +35,7 @@ Vous pouvez ajouter des commutateurs de ligne de commande qui s’appliquent à 
 | Arguments | Le nombre d’arguments pour le commutateur. Peut être « * », ou une liste d’arguments. |
 | DemandLoad | Charger le VSPackage automatiquement si la valeur est 1, sinon la valeur 0. |
 | HelpString | La chaîne ou une ressource ID d’aide de la chaîne à afficher avec **devenv / ?**. |
-| Name | Le commutateur. |
+| Nom | Le commutateur. |
 | PackageGuid | Le GUID du package. |
 
  La première valeur d’Arguments est généralement 0 ou 1. Une valeur de ' *' peut être utilisé pour indiquer que le reste entier de la ligne de commande est l’argument. Il se peut que cela peut être utile pour déboguer les scénarios où un utilisateur doit passer dans une chaîne de commande de débogueur.

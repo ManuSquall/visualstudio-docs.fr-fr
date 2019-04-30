@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2fc538b8a13458d82d23fe6039eb9c1e9406be52
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599062"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62562479"
 ---
 # <a name="programming-concepts-and-features-for-sharepoint-tools-extensions"></a>Concepts de programmation et les fonctionnalités des extensions d’outils SharePoint
   Il existe plusieurs concepts de programmation importants et les caractéristiques qui sont associées aux outils SharePoint dans Visual Studio. Ces concepts et fonctionnalités jouent un rôle important dans la plupart des extensions d’outils SharePoint.

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e09f3a9dfcc6c26e9dd575f4a127884e28def1ef
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856085"
 ---
 # <a name="t4-text-template-directives"></a>Directives de modèles de texte T4
 Les directives fournissent des instructions au moteur de transformation de modèle de texte.

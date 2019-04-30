@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 963b11a4760fad8086822f13db129fae76467802
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145757"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979060"
 ---
 # <a name="idebugproperty-interface"></a>IDebugProperty, interface
 Utilisé pour décrire n’importe quelle propriété hiérarchique de l’entité en cours de débogage qui a un nom, le type et la valeur. En règle générale, `IDebugProperty` est utilisé pour décrire le résultat de l’évaluation d’expression, une évaluation de l’instruction ou d’évaluation du Registre.  
@@ -34,5 +34,5 @@ Utilisé pour décrire n’importe quelle propriété hiérarchique de l’entit
 |[IDebugProperty::EnumMembers](../../winscript/reference/idebugproperty-enummembers.md)|Énumère les membres d’une propriété.|  
 |[IDebugProperty::GetParent](../../winscript/reference/idebugproperty-getparent.md)|Obtient le parent d’une propriété.|  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : dbgprop.h

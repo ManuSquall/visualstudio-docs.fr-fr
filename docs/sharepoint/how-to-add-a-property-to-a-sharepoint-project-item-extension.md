@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 20a7abaa8c132b3cd1679ab95ed8154b8ca86502
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068559"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967225"
 ---
 # <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>Procédure : Ajouter une propriété à une extension d’élément de projet SharePoint
   Vous pouvez utiliser une extension d’élément de projet pour ajouter une propriété à n’importe quel élément de projet SharePoint qui est déjà installé dans Visual Studio. La propriété apparaît dans le **propriétés** fenêtre lorsque l’élément de projet est sélectionné dans **l’Explorateur de solutions**.

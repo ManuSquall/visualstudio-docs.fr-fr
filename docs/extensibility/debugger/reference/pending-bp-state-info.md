@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b4c19bed895a04e372f930d347a7caa761d34a56
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717077"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62865362"
 ---
 # <a name="pendingbpstateinfo"></a>PENDING_BP_STATE_INFO
 Contient des informations sur l’état d’un point d’arrêt est prêt à lier à un emplacement de code.
@@ -46,7 +46,7 @@ public struct PENDING_BP_STATE_INFO { 
 ## <a name="remarks"></a>Notes
  Cette structure est passée à la [GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md) méthode où il est renseigné.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

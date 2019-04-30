@@ -11,11 +11,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 724d4d0c4b392a362e702f33ea996df3a6fc0ad6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951807"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555966"
 ---
 # <a name="customizing-the-isolated-shell"></a>Personnalisation du Shell isolé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Vous pouvez personnaliser votre application de shell isolé Visual Studio en mod
  Vous pouvez personnaliser l’icône d’application, qui est l’icône affichée par le nom de l’application dans la barre de titre d’application. Copiez une autre icône dans le répertoire de l’icône. Dans **l’Explorateur de solutions**, ajoutez l’icône dans le dossier de fichiers de ressources. Ensuite, ouvrez le fichier VSShellStub.rc et remplacez la valeur de IDI_STUBPROGRAM par le nom de la nouvelle icône. Pour plus d’informations, consultez [procédure pas à pas : Création d’un base d’Application Shell isolée](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ##### <a name="the-command-line-logo"></a>Le logo de ligne de commande  
- Vous pouvez personnaliser le logo de ligne de commande, qui est le texte qui apparaît lorsque l’application est démarrée à partir de la ligne de commande, en modifiant la valeur de la ligne « CommandLineLogo » dans le *SolutionName*. Fichier de application.pkgdef. Pour plus d’informations, consultez [procédure pas à pas : Création d’une Application Shell isolée de base](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
+ Vous pouvez personnaliser le logo de ligne de commande, qui est le texte qui apparaît lorsque l’application est démarrée à partir de la ligne de commande, en modifiant la valeur de la ligne « CommandLineLogo » dans le *SolutionName*. Fichier de application.pkgdef. Pour plus d’informations, consultez [procédure pas à pas : Création d’une application Shell isolée de base](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
   
 ##### <a name="the-name-of-the-user-files-subfolder"></a>Le nom du sous-dossier fichiers utilisateur  
  Vous pouvez modifier le nom du dossier de votre application tient à jour pour les fichiers utilisateur en modifiant la valeur de la ligne « UserFilesSubFolderName » dans *SolutionName*. Fichier de application.pkgdef.  
@@ -58,7 +58,7 @@ Vous pouvez personnaliser votre application de shell isolé Visual Studio en mod
  Vous pouvez personnaliser la page de navigateur web, qui est la page qui s’affiche lorsque la fenêtre du navigateur web est ouvert, en modifiant la valeur de la ligne « DefaultSearchPage » dans le *SolutionName*. Fichier de application.pkgdef.  
   
 ##### <a name="the-default-home-page"></a>La page d’accueil par défaut  
- Vous pouvez personnaliser la page d’accueil en modifiant la valeur de la ligne « DefaultHomePage » dans le *SolutionName*. Fichier de application.pkgdef. Pour plus d’informations, consultez [procédure pas à pas : Création d’une Application Shell isolée de base](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
+ Vous pouvez personnaliser la page d’accueil en modifiant la valeur de la ligne « DefaultHomePage » dans le *SolutionName*. Fichier de application.pkgdef. Pour plus d’informations, consultez [procédure pas à pas : Création d’une application Shell isolée de base](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
   
 ##### <a name="whether-or-not-to-hide-the-solution-concept"></a>S’il faut masquer le concept de solution  
  Vous pouvez spécifier s’il faut masquer la solution dans votre application en modifiant la valeur de la ligne « HideSolutionConcept » dans le *SolutionName*. Fichier de application.pkgdef. Pour masquer la solution, définissez la valeur `dword:00000001`et pour afficher la solution, définissez la valeur `dword:00000000`.  

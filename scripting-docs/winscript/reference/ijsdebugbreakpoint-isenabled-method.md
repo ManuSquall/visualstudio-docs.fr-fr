@@ -16,11 +16,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: b99df17f73896b4dd04481315b04e1672a56285a
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58159502"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62583091"
 ---
 # <a name="ijsdebugbreakpointisenabled-method"></a>IJsDebugBreakPoint::IsEnabled, méthode
 Détermine si le point d’arrêt est activé.  
@@ -42,7 +42,7 @@ HRESULT IsEnabled(
 ## <a name="remarks"></a>Notes  
  Retourne E_UNEXPECTED si elle est appelée sur un point d’arrêt supprimé.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  **En-tête :** jscript9diag.h  
   
 ## <a name="see-also"></a>Voir aussi  

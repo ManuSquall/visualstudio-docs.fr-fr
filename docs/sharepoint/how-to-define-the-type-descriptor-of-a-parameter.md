@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 18c2d5396b01c238213d494c1452e8919ea9cdd6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048058"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971327"
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>Procédure : Définir le descripteur de type d’un paramètre
   Un descripteur de type contient des propriétés qui décrivent le type de données d'un paramètre. Un descripteur de type peut définir un champ, une entité ou une collection d’entités. Pour plus d’informations, consultez [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\)).

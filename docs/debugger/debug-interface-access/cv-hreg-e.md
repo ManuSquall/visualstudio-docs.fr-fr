@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 37786442124eafea719454ac94c704984f1703f3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623422"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554972"
 ---
 # <a name="cvhrege"></a>CV_HREG_e
 Spécifie un Registre de la cible.
@@ -431,7 +431,7 @@ CV_AM33_ * inscrit utilisé par Matsushita/Panasonic AM33 et liés des processeu
 
 CV_M32R_ * inscrit utilisé par le processeur Mitsubishi M32R.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Chaque type de processeur utilise son propre jeu de registres.
 
 Les valeurs dans cette énumération sont passées aux méthodes suivantes :

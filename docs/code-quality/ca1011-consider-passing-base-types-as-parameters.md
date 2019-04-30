@@ -19,11 +19,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 644c581757a559311b6660a77c4d9190a7361314
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916555"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62779545"
 ---
 # <a name="ca1011-consider-passing-base-types-as-parameters"></a>CA1011 : Si possible, transmettez les types de base en tant que paramètres
 
@@ -40,7 +40,7 @@ Une déclaration de méthode inclut un paramètre formel est un type dérivé, e
 
 ## <a name="rule-description"></a>Description de la règle
 
-Lorsqu’un type de base est spécifié en tant que paramètre dans une déclaration de méthode, tout type dérivé du type de base peut être passé en tant qu’argument correspondant à la méthode. Lorsque l’argument est utilisé à l’intérieur du corps de méthode, la méthode spécifique qui est exécutée dépend du type de l’argument. Si la fonctionnalité supplémentaire fournie par le type dérivé n’est pas obligatoire, utilisation du type de base permet une utilisation plus large de la méthode.
+Lorsqu'un type de base est spécifié en tant que paramètre dans une déclaration de méthode, tout type dérivé du type de base peut être passé en tant qu'argument correspondant à la méthode. Lorsque l’argument est utilisé à l’intérieur du corps de méthode, la méthode spécifique qui est exécutée dépend du type de l’argument. Si la fonctionnalité supplémentaire fournie par le type dérivé n’est pas obligatoire, utilisation du type de base permet une utilisation plus large de la méthode.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 

@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 64f44379c98808cb93fbe51498234a34a695c3d6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564720"
 ---
 # <a name="create-custom-data-visualizers"></a>Créer des visualiseurs de données personnalisées
  Un *visualiseur* fait partie de la [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] interface utilisateur du débogueur qui affiche une variable ou un objet d’une manière adaptée à son type de données. Par exemple, un visualiseur HTML interprète une chaîne HTML et affiche le résultat, telle qu’affichée dans une fenêtre de navigateur. Un visualiseur bitmap interprète une structure bitmap et affiche le graphique représenté. Certains visualiseurs vous permettent de modifier, ainsi que d’afficher les données.

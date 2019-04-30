@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 076b7aa56ec00fda559bbdfdc8b2b9df2be38816
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603129"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62907568"
 ---
 # <a name="web-site-support-attributes"></a>Attributs de prise en charge de site web
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Projet de site Web peut être étendu pour prendre en charge pour le Web, langages de programmation. La langue doit s’inscrire avec [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] afin que les modèles de projet peuvent apparaître dans le **nouveau Site Web** boîte de dialogue lors de la langue sélectionnée.

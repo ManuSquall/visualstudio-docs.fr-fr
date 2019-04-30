@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e7400fc2b635c036f4bf9b2ff3632a20e628b50d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691512"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62800343"
 ---
 # <a name="sccrunscc-function"></a>Fonction SccRunScc
 Cette fonction appelle l’outil d’administration de contrôle source.
@@ -72,6 +72,6 @@ SCCRTN SccRunScc(
 
 ## <a name="see-also"></a>Voir aussi
 - [Fonctions d’API du plug-in de contrôle de code source](../extensibility/source-control-plug-in-api-functions.md)
-- [Guide pratique pour Installer un plug-in de contrôle de code Source](../extensibility/internals/how-to-install-a-source-control-plug-in.md)
+- [Guide pratique pour installer un plug-in de contrôle de code source](../extensibility/internals/how-to-install-a-source-control-plug-in.md)
 - [Indicateurs de capacité](../extensibility/capability-flags.md)
 - [SccInitialize](../extensibility/sccinitialize-function.md)

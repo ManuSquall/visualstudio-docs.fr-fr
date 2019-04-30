@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 2a231818def210f7c88ab031059f8561c67b33d1
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58159151"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62944235"
 ---
 # <a name="iremotedebugapplication-interface"></a>IRemoteDebugApplication, interface
 Représente une application en cours d’exécution. Il n’a pas besoin de correspondre à un processus de système d’exploitation. En règle générale, un débogueur cible une application pour le débogage. Le Gestionnaire de débogage de processus implémente généralement l’objet d’application.  

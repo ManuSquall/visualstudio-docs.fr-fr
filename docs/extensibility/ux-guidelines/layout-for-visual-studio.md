@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e35cb321772354de29b7b8466b6136c96cabf98d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62798507"
 ---
 # <a name="layout-for-visual-studio"></a>Mise en page pour Visual Studio
 La majorité des boîtes de dialogue Visual Studio sont [mise en page de la boîte de dialogue utilitaire](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), qui sont l’unthemed boîtes de dialogue de cette norme suivi [principes de mise en page de boîte de dialogue Windows Desktop](/windows/desktop/uxguide/win-dialog-box). Lorsque Visual Studio s’à actualiser son interface utilisateur, certaines des boîtes de dialogue plus apparents ont une nouvelle conception qui établit les expériences comme définition de produit. Ces [mise en page de boîte de dialogue à thème](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) ont une apparence à thème.

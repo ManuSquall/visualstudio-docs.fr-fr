@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4e877e186538622b3604e850040cbed0b018911d
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54871167"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951890"
 ---
 # <a name="ltentrypointscollectiongt-element-office-development-in-visual-studio"></a>&lt;entryPointsCollection&gt; élément (développement Office dans Visual Studio)
   L’élément `entryPointsCollection` de l’espace de noms `vstav3` contient tous les éléments `entryPoints` associés aux solutions Office.

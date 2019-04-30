@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 327a53a28e5b37d33d44375653c1bffa56c7ddd2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616090"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829022"
 ---
 # <a name="idialinenumber"></a>IDiaLineNumber
 Accéder à des informations qui décrit le processus de mappage d’un bloc d’octets de texte de l’image à un numéro de ligne du fichier source.
@@ -48,7 +48,7 @@ Le tableau suivant présente les méthodes de `IDiaLineNumber`.
 |[IDiaLineNumber::get_statement](../../debugger/debug-interface-access/idialinenumber-get-statement.md)|Récupère un indicateur qui spécifie que les informations de ligne décrivent le début d’une instruction dans la source du programme.|
 |[IDiaLineNumber::get_compilandId](../../debugger/debug-interface-access/idialinenumber-get-compilandid.md)|Récupère l’identificateur unique pour le compiland qui ont contribué à cette ligne.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 ## <a name="notes-for-callers"></a>Notes de publication pour les appelants
 Obtenez cette interface en appelant le [IDiaEnumLineNumbers::Item](../../debugger/debug-interface-access/idiaenumlinenumbers-item.md) ou [IDiaEnumLineNumbers::Next](../../debugger/debug-interface-access/idiaenumlinenumbers-next.md) méthodes.
@@ -134,8 +134,8 @@ void dumpFunctionLines( IDiaSymbol* pSymbol, IDiaSession* pSession )
 }
 ```
 
-## <a name="requirements"></a>Spécifications
-En-tête : Dia2.h
+## <a name="requirements"></a>Configuration requise
+En-tête : Dia2.h
 
 Bibliothèque : diaguids.lib
 

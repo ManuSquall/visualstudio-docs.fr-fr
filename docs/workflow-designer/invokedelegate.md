@@ -12,11 +12,11 @@ ms.workload:
 - multiple
 author: gewarren
 ms.openlocfilehash: 511d73ea2992887f31bc8750cc9ba32934bddd91
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925369"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537086"
 ---
 # <a name="invokedelegate"></a>InvokeDelegate
 
@@ -42,4 +42,4 @@ Le tableau suivant présente les propriétés de <xref:System.Activities.Stateme
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour Définir et utiliser des délégués d’activité dans le Concepteur de flux de travail](../workflow-designer/how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md)
+- [Guide pratique pour définir et utiliser des délégués d’activité dans le concepteur de workflow](../workflow-designer/how-to-define-and-consume-activity-delegates-in-the-workflow-designer.md)

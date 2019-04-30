@@ -10,39 +10,39 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 96064b16e53081e0456ed43275acd5edf7ead468
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a580077528c87e62f81e840ed6dee76ff1eac57f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152952"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968275"
 ---
-# <a name="convert-local-function-to-method"></a>Convertir une fonction locale en méthode
+# <a name="convert-a-local-function-to-a-method"></a>Convertir une fonction locale en méthode
 
 Cette refactorisation s’applique à :
 
 - C#
 - Visual Basic
 
-**Quoi :** Convertir une fonction locale en méthode
+**Quoi :** Convertir une fonction locale en méthode.
 
 **Quand :** Vous souhaitez définir une fonction locale en dehors de votre contexte local actuel.
 
-**Pourquoi :** Vous pouvez convertir une fonction locale en méthode pour pouvoir l’appeler en dehors de votre contexte local. Si votre fonction locale devient trop longue, vous pouvez la convertir en méthode. Le fait de la définir dans une méthode distincte rend votre code plus facile à lire.
+**Pourquoi :** Vous voulez convertir une fonction locale en méthode pour pouvoir l’appeler en dehors de votre contexte local. Si votre fonction locale devient trop longue, vous pouvez la convertir en méthode. Lorsque vous définissez la fonction dans une méthode distincte, votre code est plus facile à lire.
 
 ## <a name="convert-local-function-to-method-refactoring"></a>Convertir une fonction locale en méthode (refactorisation)
 
-1. Placez votre curseur dans une fonction locale.
+1. Placez votre curseur dans la fonction locale.
 
-    ![Convertir une fonction locale en méthode](media/convert-local-function-to-method.png)
+    ![Exemple de code, convertir une fonction locale en méthode](media/convert-local-function-to-method.png)
 
 2. Appuyez sur **Ctrl**+**.** pour afficher le menu **Actions rapides et refactorisations**.
 
-    ![Convertir une fonction locale en méthode (correctif de code)](media/convert-local-function-to-method-codefix.png)
+    ![Exemple, convertir une fonction locale en méthode (correctif de code)](media/convert-local-function-to-method-codefix.png)
 
-2. Appuyez sur **Entrée** pour accepter la refactorisation.
+2. Appuyez sur Entrée pour accepter la refactorisation.
 
-    ![Convertir une fonction locale en méthode (résultat)](media/convert-local-function-to-method-result.png)
+    ![Exemple, convertir une fonction locale en méthode (résultat)](media/convert-local-function-to-method-result.png)
 
 ## <a name="see-also"></a>Voir aussi
 

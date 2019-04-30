@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1a5fc7f15a7fe4ec0f267eef669fc99af38375dc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643884"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63001004"
 ---
 # <a name="how-to-programmatically-delete-appointments"></a>Procédure : Supprimer des rendez-vous par programmation
   Cet exemple supprime une instance d’un rendez-vous périodique. L’exemple part du principe qu’une instance d’un rendez-vous périodique se produit le 28 juin 2006 à 08:00.

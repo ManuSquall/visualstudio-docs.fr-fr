@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f6853d92608859e41fd7d8001ca6e350f5830504
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086999"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006455"
 ---
 # <a name="string-expected"></a>Chaîne attendue
 Vous avez tenté d’appeler le **String.prototype.toString** ou **String.prototype.valueOf** méthode sur un objet d’un type autre que `String`. L’objet de ce type d’appel doit être de type `String`.  

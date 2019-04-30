@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9131ce7950246d878c091f320e22700ba2b1f3ed
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634667"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910672"
 ---
 # <a name="context-parameters"></a>Paramètres de contexte
 Dans le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] l’environnement de développement intégré (IDE), vous pouvez ajouter des Assistants pour le **nouveau projet**, **ajouter un nouvel élément**, ou **ajouter un projet Sub** boîtes de dialogue. Les Assistants d’ajout sont disponibles sur le **fichier** menu ou en double-cliquant sur un projet dans **l’Explorateur de solutions**. L’IDE transmet les paramètres de contexte à l’implémentation de l’Assistant. Les paramètres de contexte définissent l’état du projet lors de l’IDE appelle l’Assistant.

@@ -19,11 +19,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: dd15e582f7654f82e343a0175ccf9ed18254d904
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545868"
 ---
 # <a name="ca1712-do-not-prefix-enum-values-with-type-name"></a>CA1712 : N'ajoutez pas le nom de type en guise de préfixe à des valeurs enum
 
@@ -40,7 +40,7 @@ ms.locfileid: "55921729"
 ## <a name="rule-description"></a>Description de la règle
  Noms des membres de l’énumération ne sont pas préfixés par le nom de type, car les informations de type sont censées être fournis par les outils de développement.
 
- Conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit le temps nécessaire pour apprendre une nouvelle bibliothèque de logiciels, et augmente la confiance des clients que la bibliothèque a été développée par une personne compétente en matière de développement de code managé.
+ Les conventions d’affectation de noms fournissent une apparence commune pour les bibliothèques qui ciblent le common language runtime. Cela réduit le temps nécessaire pour apprendre une nouvelle bibliothèque de logiciels, et augmente la confiance des clients que la bibliothèque a été développée par une personne compétente en matière de développement de code managé.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, supprimez le préfixe de nom de type du membre d’énumération.

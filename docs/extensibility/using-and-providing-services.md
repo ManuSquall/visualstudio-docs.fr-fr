@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 36f49d4e1ebaa6d8e15e43b821af56204739cb07
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687781"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62798976"
 ---
 # <a name="using-and-providing-services"></a>Utilisation et fourniture de services
 Un service est un contrat entre deux VSPackages. Un VSPackage offre un ensemble spécifique d’interfaces pour un autre package Visual Studio consommer. Par exemple, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] offre la <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> service à n’importe quel package VS de charges. Ce service fournit le <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interface, ce qui peut être utilisé pour écrire dans le journal d’activité. Pour plus d'informations, voir [Procédure : Utiliser le journal d’activité](../extensibility/how-to-use-the-activity-log.md).

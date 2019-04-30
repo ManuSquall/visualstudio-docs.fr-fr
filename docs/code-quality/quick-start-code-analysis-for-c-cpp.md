@@ -11,11 +11,11 @@ manager: wpickett
 ms.workload:
 - cplusplus
 ms.openlocfilehash: ecb4f46b238b72c9d83b46122b8567a8636282b8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825401"
 ---
 # <a name="quickstart-code-analysis-for-cc"></a>Démarrage rapide : Analyse du code pour C/C++
 
@@ -71,7 +71,7 @@ Pour exécuter l'analyse du code sur un projet :
 
 ## <a name="analyze-and-resolve-code-analysis-warnings"></a>Analyser et résoudre les avertissements d'analyse du code
 
-Pour analyser un avertissement spécifique, choisissez le titre de l’avertissement dans la liste d’erreurs. L’avertissement se développe pour afficher des informations supplémentaires sur le problème. Dans la mesure du possible, l'analyse du code affiche les numéros de ligne et la logique d'analyse qui a conduit à l'avertissement. Pour plus d’informations sur l’avertissement, y compris les solutions possibles à ce problème, choisissez l’ID d’avertissement pour afficher sa rubrique d’aide en ligne correspondante.
+Pour analyser un avertissement spécifique, choisissez le titre de l’avertissement dans la liste d’erreurs. L'avertissement se développe pour afficher des informations supplémentaires sur le problème. Dans la mesure du possible, l'analyse du code affiche les numéros de ligne et la logique d'analyse qui a conduit à l'avertissement. Pour plus d’informations sur l’avertissement, y compris les solutions possibles à ce problème, choisissez l’ID d’avertissement pour afficher sa rubrique d’aide en ligne correspondante.
 
 Lorsque vous sélectionnez un avertissement, la ligne de code qui a provoqué l’avertissement est mis en surbrillance dans l’éditeur de code Visual Studio.
 
@@ -83,7 +83,7 @@ Vous pouvez décider, dans certaines situations, de ne pas corriger un avertisse
 
 Pour supprimer un avertissement :
 
-1. Si les informations détaillées ne sont pas affichées, choisissez le titre de l’avertissement pour le développer.
+1. Si les informations détaillées ne sont pas affichées, choisissez le titre de l'avertissement pour le développer.
 
 2. Choisissez le lien **Actions** au bas de l’avertissement.
 

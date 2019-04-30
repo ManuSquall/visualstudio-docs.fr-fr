@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8fed7fe9bf9e10bf893159a11d28f991a255791c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691785"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62931296"
 ---
 # <a name="message-search-dialog-box"></a>Boîte de dialogue Recherche d'un message
 Utilisez cette boîte de dialogue pour rechercher et sélectionner le nœud pour un message spécifique dans [vue Messages](../debugger/messages-view.md). Pour afficher cette boîte de dialogue, déplacer le focus vers une fenêtre d’affichage de Messages. Puis choisissez **rechercher le Message** à partir de la **recherche** menu.

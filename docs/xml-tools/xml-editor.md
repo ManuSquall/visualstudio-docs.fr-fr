@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 39e069dfd65294ed3d40342816e871757378a57b
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002483"
 ---
 # <a name="xml-editor"></a>Éditeur XML
 
@@ -46,7 +46,7 @@ L’éditeur XML est invoqué pour les extensions de fichier connue, tel que *.x
 
 [IntelliSense XSLT](../xml-tools/xml-editor-intellisense-features.md) vous permet de noms de jeu d’attributs de saisie semi-automatique, les modes de modèle et les noms et noms de paramètre pour un mode spécifié ou une certaine nommé du modèle.
 
-## <a name="xslt-profiler"></a>Générateur de profils XSLT
+## <a name="xslt-profiler"></a>Profileur XSLT
 
 Le [Générateur de profils XSLT](../xml-tools/xslt-profiler.md) crée de performances XSLT détaillés des rapports qui vous aident à mesurent, évaluent et ciblent les problèmes liés aux performances dans le code XSLT. Le Générateur de profils XSLT inclut également des conseils utiles pour les optimisations de feuille de style XSL et XSLT.
 

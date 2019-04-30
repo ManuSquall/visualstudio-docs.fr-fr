@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 4105a93d4ad459c8bc1cb3a7a20b37c69f311c12
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931635"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62566418"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Outils LINQ to SQL dans Visual Studio
 
@@ -40,7 +40,7 @@ Lorsque vous sélectionnez le *.dbml* de fichiers, Visual Studio affiche la **Co
 ![Concepteur LINQ to SQL](../data-tools/media/raddata-linq-to-sql-designer.png)
 
 > [!IMPORTANT]
-> Le **Concepteur O/R** est un mappeur relationnel objet simple, car il prend en charge uniquement les relations de mappage 1:1. En d'autres termes, une classe d'entité peut uniquement avoir une relation de mappage 1:1 avec une table ou une vue de base de données. Le mappage complexe, tel que le mappage d’une classe d’entité à une table jointe, n’est pas pris en charge ; utiliser Entity Framework pour le mappage complex. En outre, le concepteur est un générateur de code unidirectionnel. Cela signifie que seules les modifications apportées à l'aire du concepteur sont répercutées dans le fichier de code. Les modifications manuelles au fichier de code ne sont pas répercutées dans le **Concepteur O/R**. Les modifications apportées manuellement dans le fichier de code sont remplacées lorsque le concepteur est enregistré et le code régénéré. Pour plus d’informations sur la façon d’ajouter le code utilisateur et d’étendre les classes générées par le **Concepteur O/R**, consultez [Comment : étendre le code généré par le Concepteur O/R](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md).
+> Le **Concepteur O/R** est un mappeur relationnel objet simple, car il prend en charge uniquement les relations de mappage 1:1. En d'autres termes, une classe d'entité peut uniquement avoir une relation de mappage 1:1 avec une table ou une vue de base de données. Le mappage complexe, tel que le mappage d’une classe d’entité à une table jointe, n’est pas pris en charge ; utiliser Entity Framework pour le mappage complex. En outre, le concepteur est un générateur de code unidirectionnel. Cela signifie que seules les modifications apportées à l'aire du concepteur sont répercutées dans le fichier de code. Les modifications manuelles au fichier de code ne sont pas répercutées dans le **Concepteur O/R**. Les modifications apportées manuellement dans le fichier de code sont remplacées lorsque le concepteur est enregistré et le code régénéré. Pour plus d’informations sur la façon d’ajouter le code utilisateur et d’étendre les classes générées par le **Concepteur O/R**, consultez [Comment : Étendre le code généré par le Concepteur O/R](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md).
 
 ## <a name="create-and-configure-the-datacontext"></a>Créer et configurer le DataContext
 
@@ -48,7 +48,7 @@ Après avoir ajouté un **Classes LINQ to SQL** élément à un projet et ouvert
 
 ## <a name="create-entity-classes-that-map-to-database-tables-and-views"></a>Créer des classes d’entité qui mappent aux tables de base de données et des vues
 
-Vous pouvez créer des classes d’entité mappées aux tables et vues en faisant glisser des tables de base de données et les vues de **Explorateur de serveurs** ou **Database Explorer** sur le **Concepteur O/R**. Comme indiqué dans la section précédente, <xref:System.Data.Linq.DataContext> est configuré avec les informations de connexion fournies par le premier élément glissé sur l’aire de conception. Si un élément suivant qui utilise une connexion différente est ajouté à la **Concepteur O/R**, vous pouvez modifier la connexion pour le <xref:System.Data.Linq.DataContext>. Pour plus d’informations, consultez [Comment : créer des classes LINQ to SQL mappées aux tables et vues (Concepteur O/R)](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
+Vous pouvez créer des classes d’entité mappées aux tables et vues en faisant glisser des tables de base de données et les vues de **Explorateur de serveurs** ou **Database Explorer** sur le **Concepteur O/R**. Comme indiqué dans la section précédente, <xref:System.Data.Linq.DataContext> est configuré avec les informations de connexion fournies par le premier élément glissé sur l’aire de conception. Si un élément suivant qui utilise une connexion différente est ajouté à la **Concepteur O/R**, vous pouvez modifier la connexion pour le <xref:System.Data.Linq.DataContext>. Pour plus d'informations, voir [Procédure : créer des classes LINQ to SQL mappées à des tables et à des vues (Concepteur O/R)](../data-tools/how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md).
 
 ## <a name="create-datacontext-methods-that-call-stored-procedures-and-functions"></a>Créer des méthodes DataContext qui appellent des procédures stockées et fonctions
 
@@ -59,15 +59,15 @@ Vous pouvez créer <xref:System.Data.Linq.DataContext> méthodes qui appellent (
 
 ## <a name="configure-a-datacontext-to-use-stored-procedures-to-save-data-between-entity-classes-and-a-database"></a>Configurer un DataContext pour utiliser des procédures stockées pour enregistrer les données entre les classes d’entité et une base de données
 
-Comme mentionné précédemment, vous pouvez créer des méthodes <xref:System.Data.Linq.DataContext> qui appellent des procédures stockées et des fonctions. En outre, vous pouvez également affecter des procédures stockées qui sont utilisées pour la valeur par défaut LINQ au comportement d’exécution SQL, qui effectue des insertions, mises à jour et supprime. Pour plus d’informations, consultez [Comment : assigner des procédures stockées pour effectuer des mises à jour, insertions et suppressions (Concepteur O/R)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
+Comme mentionné précédemment, vous pouvez créer des méthodes <xref:System.Data.Linq.DataContext> qui appellent des procédures stockées et des fonctions. En outre, vous pouvez également affecter des procédures stockées qui sont utilisées pour la valeur par défaut LINQ au comportement d’exécution SQL, qui effectue des insertions, mises à jour et supprime. Pour plus d'informations, voir [Procédure : affecter des procédures stockées pour effectuer des mises à jour, des insertions et des suppressions (Concepteur O/R)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).
 
 ## <a name="inheritance-and-the-or-designer"></a>Héritage et Concepteur O/R
 
-Comme d’autres objets, les classes LINQ to SQL peut utiliser l’héritage et être dérivée d’autres classes. Dans une base de données, les relations d'héritage sont créées de plusieurs façons. Le **Concepteur O/R** prend en charge le concept d’héritage à table unique tel qu’il est souvent implémenté dans les systèmes relationnels. Pour plus d’informations, consultez [Comment : configurer l’héritage à l’aide du Concepteur O/R](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md).
+Comme d’autres objets, les classes LINQ to SQL peut utiliser l’héritage et être dérivée d’autres classes. Dans une base de données, les relations d'héritage sont créées de plusieurs façons. Le **Concepteur O/R** prend en charge le concept d’héritage à table unique tel qu’il est souvent implémenté dans les systèmes relationnels. Pour plus d'informations, voir [Procédure : configurer l’héritage à l’aide du Concepteur O/R](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md).
 
 ## <a name="linq-to-sql-queries"></a>Requêtes LINQ to SQL
 
-Les classes d’entité créées par le **Concepteur O/R** sont conçus pour une utilisation avec [Language-Integrated query (LINQ)](/dotnet/csharp/linq/). Pour plus d’informations, consultez [Comment : demander des informations](/dotnet/framework/data/adonet/sql/linq/how-to-query-for-information).
+Les classes d’entité créées par le **Concepteur O/R** sont conçus pour une utilisation avec [Language-Integrated query (LINQ)](/dotnet/csharp/linq/). Pour plus d'informations, voir [Procédure : Demander des informations](/dotnet/framework/data/adonet/sql/linq/how-to-query-for-information).
 
 ## <a name="separate-the-generated-datacontext-and-entity-class-code-into-different-namespaces"></a>Séparer le code de classe DataContext et d’entité généré dans différents espaces de noms
 

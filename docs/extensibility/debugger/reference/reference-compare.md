@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b518e9bcfd77f489dd38a96eb8e378610841feb5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62913463"
 ---
 # <a name="referencecompare"></a>REFERENCE_COMPARE
 Spécifie le type de comparaison des références.
@@ -51,7 +51,7 @@ public enum enum_REFERENCE_COMPARE { 
 ## <a name="remarks"></a>Notes
  Passé en tant qu’argument à la [comparer](../../../extensibility/debugger/reference/idebugreference2-compare.md) (méthode).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

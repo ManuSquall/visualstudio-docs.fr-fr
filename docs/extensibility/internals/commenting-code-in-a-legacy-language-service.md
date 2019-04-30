@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9c82669ac6d4f32f1525b7e14427ed620a51cfc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102703"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861583"
 ---
 # <a name="comment-code-in-a-legacy-language-service"></a>Code de commentaire dans un service de langage hérité
 En général, les langages de programmation fournissent un moyen d’annoter ou de commenter le code. Un commentaire est une section de texte qui fournit des informations supplémentaires sur le code, mais est ignoré pendant la compilation ou une interprétation.

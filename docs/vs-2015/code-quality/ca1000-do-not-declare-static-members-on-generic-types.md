@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 127a8cf5382e4822ae2a6b52e03b74682f53e2d8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948754"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62562349"
 ---
 # <a name="ca1000-do-not-declare-static-members-on-generic-types"></a>CA1000 : Ne pas déclarer de membres statiques sur les types génériques
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58948754"
  Un type générique extérieurement visible contient un `static` (`Shared` en Visual Basic) membre.
 
 ## <a name="rule-description"></a>Description de la règle
- Quand un `static` membre d’un type générique est appelé, l’argument de type doit être spécifié pour le type. Lorsqu'un membre d'instance générique qui ne prend pas en charge l'inférence est appelé, l'argument de type doit être spécifié pour le membre. La syntaxe de spécification de l’argument de type dans ces deux cas est différent et peut être facilement confondue, comme le montrent les appels suivants :
+ Quand un `static` membre d’un type générique est appelé, l’argument de type doit être spécifié pour le type. Lorsqu’un membre d’instance générique qui ne prend pas en charge l’inférence est appelé, l’argument de type doit être spécifié pour le membre. La syntaxe de spécification de l’argument de type dans ces deux cas est différent et peut être facilement confondue, comme le montrent les appels suivants :
 
 ```vb
 ' Shared method in a generic type.

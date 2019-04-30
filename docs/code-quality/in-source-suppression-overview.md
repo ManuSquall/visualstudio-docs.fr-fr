@@ -15,11 +15,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 6cd61304e150da63d2d461ef364e7039789c71fc
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825817"
 ---
 # <a name="suppress-code-analysis-warnings"></a>Supprimer les avertissements d’analyse du code
 
@@ -27,7 +27,7 @@ Il est souvent utile d’indiquer qu’un avertissement n’est pas applicable. 
 
 Le <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> attribut est un attribut conditionnel, qui est inclus dans les métadonnées de langage intermédiaire de votre assembly de code managé, uniquement si le symbole de compilation CODE_ANALYSIS est défini au moment de la compilation.
 
-En C / c++ / CLI, utilisez les macros autorité de certification\_supprimer\_MESSAGE ou l’autorité de certification\_GLOBAL\_SUPPRESS_MESSAGE dans le fichier d’en-tête pour ajouter l’attribut.
+Dans C++/CLI, utilisez les macros autorité de certification\_supprimer\_MESSAGE ou l’autorité de certification\_GLOBAL\_SUPPRESS_MESSAGE dans le fichier d’en-tête pour ajouter l’attribut.
 
 > [!NOTE]
 > Vous ne devez pas utiliser les suppressions dans la source sur les versions release, pour empêcher les métadonnées de suppression à la source d’expédition accidentellement. En outre, en raison du coût de traitement de la suppression à la source, les performances de votre application peuvent se dégrader.

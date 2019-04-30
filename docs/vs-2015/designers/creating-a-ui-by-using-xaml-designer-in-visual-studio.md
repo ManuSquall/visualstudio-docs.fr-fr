@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c928d9f939db96ae302620952bbb6bbdedc396a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795167"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62580637"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Création d'une interface utilisateur à l'aide du concepteur XAML dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,9 +87,9 @@ Le concepteur XAML dans Visual Studio fournit une interface visuelle pour vous a
 
  **Affichage** : spécifie différentes tailles et résolutions d’affichage pour l’application.
 
- **Orientation** : spécifie différentes orientations pour l’application : **Paysage** ou **Portrait**.
+ **Orientation** Spécifie différentes orientations de l’application : **Paysage** ou **Portrait**.
 
- **Bord** : spécifie différents alignements de bord de votre application : **Les deux**, **Gauche**, **Droit**ou **Aucun**.
+ **Edge** spécifie différents alignements de bord pour votre application : **Les deux**, **Gauche**, **Droit**ou **Aucun**.
 
  **Contraste élevé** : affiche un aperçu de l’application en fonction du paramètre de contraste sélectionné. Ce paramètre, lorsqu'il est défini sur une valeur différente de **Par défaut**, remplace la propriété `RequestedTheme` définie dans App.xaml.
 

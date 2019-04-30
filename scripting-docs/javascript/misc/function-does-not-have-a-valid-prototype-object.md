@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 413f73a53a6d4f698219139a87c449be4c155831
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038677"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007501"
 ---
 # <a name="function-does-not-have-a-valid-prototype-object"></a>La fonction ne possède pas d'objet prototype valide
 Vous avez tenté d’utiliser **instanceof** pour déterminer si un objet a été dérivé d’une classe fonction particulière, mais redéfinie de l’objet `prototype` propriété en tant que `null`, ou un type d’objet externe (les deux non valide [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] objets). Un objet externe peut être un objet à partir du modèle d’objet hôte (par exemple, un document dans Internet Explorer ou objet window) ou un objet COM externe.  

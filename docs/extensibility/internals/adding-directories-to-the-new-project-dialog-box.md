@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9d8e68413795b7004542ee312dcb27492e55e7f0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626191"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910780"
 ---
 # <a name="add-directories-to-the-new-project-dialog-box"></a>Ajouter des répertoires à la boîte de dialogue Nouveau projet
 Lorsque vous créez de nouveaux types de projet, vous pouvez également inscrire un nouveau répertoire dans le **nouveau projet** boîte de dialogue pour les afficher pour une utilisation en tant que modèles. L’exemple de code suivant explique comment inscrire un nouveau répertoire, également appelé un nœud. Dans l’exemple, les modèles exposés par le VSPackage, *CLSID_Package*, sont inscrits. Par conséquent, le côté gauche de la **nouveau projet** boîte de dialogue offre le nœud ajouté, avec un nom déterminé par le *Folder_Label_ResID* ressource. Cette ressource est chargée à partir de la DLL satellite de VSPackage.

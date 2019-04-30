@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a0ba962ba4c18773b5c85480bce62ab728cab307
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095228"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892230"
 ---
 # <a name="access-text-layers-by-using-the-legacy-api"></a>Couches de texte de l’accès à l’aide de l’API héritée
 En règle générale, un calque de texte encapsule certains aspects de la disposition du texte. Par exemple, une couche « fonction-à-à la fois » masque le texte avant et après une fonction contenant le signe insertion (point d’insertion de texte).

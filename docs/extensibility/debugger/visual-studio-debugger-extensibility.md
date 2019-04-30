@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: df9d1bccb2147d8416555099f3493ceac8c21b4b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912905"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Extensibilité du débogueur Visual Studio
 Visual Studio inclut un débogueur de code source totalement interactives, en fournissant un outil puissant et facile à utiliser pour le suivi des bogues dans votre programme. Le débogueur a prise en charge complète Visual Basic, c#, C/C++ et JavaScript. Toutefois, avec la [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)], qui est disponible à partir de la [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=214453), autres langages de programmation peuvent être pris en charge dans le débogueur avec les mêmes fonctionnalités riches.

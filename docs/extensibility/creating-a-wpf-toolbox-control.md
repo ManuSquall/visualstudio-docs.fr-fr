@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 811c87f73d1122b3e97ffdef9b4d3f6c044ce941
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62926417"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>Créer un contrôle de boîte à outils WPF
 
@@ -59,7 +59,7 @@ Le modèle de contrôle de boîte à outils WPF (Windows Presentation Framework)
 
 1. Ouvrez *MyToolboxControl.xaml.cs* en mode code.
 
-2. Rechercher la `MyToolboxControl` classe et renommez-le TestControl. (Le plus rapide pour ce faire consiste à renommer la classe, puis sélectionnez **renommer** dans le menu contextuel et effectuez les étapes. (Pour plus d’informations sur la **renommer** de commande, consultez [renommer refactorisation (C#)](../ide/reference/rename.md).)
+2. Rechercher la `MyToolboxControl` classe et renommez-le TestControl. (Le plus rapide pour ce faire consiste à renommer la classe, puis sélectionnez **renommer** dans le menu contextuel et effectuez les étapes. (Pour plus d’informations sur la **renommer** de commande, consultez [renommer refactorisation (c#)](../ide/reference/rename.md).)
 
 3. Accédez à la `ProvideToolboxControl` d’attribut et modifiez la valeur du premier paramètre à **Test**. Il s’agit du nom du groupe qui contiendra le contrôle dans le **boîte à outils**.
 

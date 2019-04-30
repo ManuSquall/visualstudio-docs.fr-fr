@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df0d6c25bad57550fcfc9ce475dcc9da488f195f
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: 7a464103d38a9ba0d2215f53a593809b6136aa3d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647412"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990261"
 ---
 # <a name="unit-test-basics"></a>Concepts de base des tests unitaires
 
@@ -82,9 +82,12 @@ Il est souvent plus rapide de générer le projet de test unitaire et les stubs 
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>Créer un projet de test unitaire et des stubs de test unitaire
 
-1. Dans la fenêtre de l’éditeur de code, cliquez avec le bouton droit et choisissez **Créer des tests unitaires** dans le menu contextuel.
+1. Dans la fenêtre de l’éditeur de code, cliquez avec le bouton droit et choisissez [**Créer des tests unitaires**](create-unit-tests-menu.md) dans le menu contextuel.
 
-    ![À partir de la fenêtre de l'éditeur, affichez le menu contextuel](../test/media/createunittestsrightclick.png)
+   ![À partir de la fenêtre de l'éditeur, affichez le menu contextuel](../test/media/createunittestsrightclick.png)
+
+   > [!NOTE]
+   > La commande de menu **Créer des tests unitaires** est uniquement disponible pour le code managé qui cible le .NET Framework (mais pas .NET Core).
 
 2. Cliquez sur **OK** pour accepter les valeurs par défaut pour créer vos tests unitaires, ou changez les valeurs utilisées pour créer et nommer le projet de test unitaire et les tests unitaires. Vous pouvez sélectionner le code qui est ajouté par défaut aux méthodes de test unitaire.
 
@@ -127,17 +130,17 @@ Un projet de test unitaire reflète généralement la structure d’un seul proj
 
    Pour créer la référence au projet de code :
 
-   1.  Sélectionnez le projet dans **l’Explorateur de solutions**.
+   1. Sélectionnez le projet dans **l’Explorateur de solutions**.
 
-   2.  Dans le menu **Projet** , choisissez **Ajouter une référence**.
+   2. Dans le menu **Projet** , choisissez **Ajouter une référence**.
 
-   3.  Dans la boîte de dialogue **Gestionnaire de références**, ouvrez le nœud **Solution** et choisissez **Projets**. Sélectionnez le nom du projet de code et fermez la boîte de dialogue.
+   3. Dans la boîte de dialogue **Gestionnaire de références**, ouvrez le nœud **Solution** et choisissez **Projets**. Sélectionnez le nom du projet de code et fermez la boîte de dialogue.
 
 Chaque projet de test unitaire contient les classes qui reflètent les noms des classes du projet de code. Dans notre exemple, le projet `AccountsTests` contient les classes suivantes :
 
--   la classe `AccountInfoTests` contient les méthodes de test unitaire pour la classe `AccountInfo` du projet `Accounts` ;
+- la classe `AccountInfoTests` contient les méthodes de test unitaire pour la classe `AccountInfo` du projet `Accounts` ;
 
--   la classe`CheckingAccountTests` contient les méthodes de test unitaire pour la classe `CheckingAccount` .
+- la classe`CheckingAccountTests` contient les méthodes de test unitaire pour la classe `CheckingAccount` .
 
 ## <a name="write-your-tests"></a>Écrire vos tests
 
@@ -185,11 +188,11 @@ notez que `Withdraw_ValidAmount_ChangesBalance` utilise une instruction `Assert`
 
 Pour plus d’informations sur les infrastructures de tests unitaires Microsoft, consultez l’une des rubriques suivantes :
 
--   [Tests unitaires sur votre code](unit-test-your-code.md)
+- [Tests unitaires sur votre code](unit-test-your-code.md)
 
--   [Écriture de tests unitaires pour C/C++](writing-unit-tests-for-c-cpp.md)
+- [Écriture de tests unitaires pour C/C++](writing-unit-tests-for-c-cpp.md)
 
--   [Utiliser le framework MSTest dans les tests unitaires](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
+- [Utiliser le framework MSTest dans les tests unitaires](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
 
 ## <a name="set-timeouts-for-unit-tests"></a>Définir des délais d’attente pour les tests unitaires
 
@@ -260,12 +263,12 @@ Pour plus d’informations, consultez [Exécuter des tests unitaires avec l’Ex
 
 **R :** Utilisez l’**Explorateur de tests** pour démarrer une session de débogage de vos tests. L’exécution pas à pas de votre code avec le débogueur Visual Studio vous conduit de manière transparente à des allers et retours entre les tests unitaires et le projet testé. Pour démarrer le débogage :
 
-1.  Dans l’éditeur Visual Studio, définissez un point d’arrêt dans une ou plusieurs méthodes de test que vous souhaitez déboguer.
+1. Dans l’éditeur Visual Studio, définissez un point d’arrêt dans une ou plusieurs méthodes de test que vous souhaitez déboguer.
 
     > [!NOTE]
     > Comme les méthodes de test peuvent s'exécuter dans n'importe quel ordre, définissez les points d'arrêt dans toutes les méthodes de test que vous souhaitez déboguer.
 
-2.  Dans **l’explorateur de tests**, sélectionnez les méthodes de test, puis choisissez **Déboguer les tests sélectionnés** dans le menu contextuel.
+2. Dans **l’explorateur de tests**, sélectionnez les méthodes de test, puis choisissez **Déboguer les tests sélectionnés** dans le menu contextuel.
 
 En savoir plus sur le [débogage des tests unitaires](../debugger/debugger-feature-tour.md).
 
@@ -327,9 +330,9 @@ En savoir plus sur la [couverture du code](../test/using-code-coverage-to-determ
 
 Microsoft Fakes utilise deux approches pour créer des classes de substitution pour les dépendances externes :
 
-1.  Les*stubs* génèrent des classes de substitution dérivées de l’interface parente de la classe de dépendance cible. Les méthodes stub peuvent être remplacées par des méthodes virtuelles publiques de la classe cible.
+1. Les*stubs* génèrent des classes de substitution dérivées de l’interface parente de la classe de dépendance cible. Les méthodes stub peuvent être remplacées par des méthodes virtuelles publiques de la classe cible.
 
-2.  Les*shims* utilisent l’instrumentation du runtime pour rediriger les appels à une méthode cible vers une méthode shim de substitution pour les méthodes non virtuelles.
+2. Les*shims* utilisent l’instrumentation du runtime pour rediriger les appels à une méthode cible vers une méthode shim de substitution pour les méthodes non virtuelles.
 
 Dans les deux approches, vous utilisez les délégués générés des appels à la méthode de dépendance pour spécifier le comportement souhaité dans la méthode de test.
 

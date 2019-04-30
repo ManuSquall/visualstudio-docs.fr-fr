@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: feb284657932a0c20cd785b14db5e2b3de9366f1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090834"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62575560"
 ---
 # <a name="how-to-programmatically-check-spelling-in-worksheets"></a>Procédure : Vérifier l’orthographe dans les feuilles de calcul par programmation
   Vous pouvez vérifier par programmation l’orthographe des mots contenus dans une feuille de calcul. La boîte de dialogue **Orthographe** s’affiche automatiquement si des mots mal orthographiés figurent dans la feuille de calcul.

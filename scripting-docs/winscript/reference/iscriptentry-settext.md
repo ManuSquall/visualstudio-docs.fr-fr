@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 17e716a7ad52cc5aeca18d02122edb9c457b14e4
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58147642"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62787630"
 ---
 # <a name="iscriptentrysettext"></a>IScriptEntry::SetText
 Définit le texte qui correspond à un `IScriptEntry` bloc de script ou le code source qui est contenu dans un `IScriptScriptlet` Gestionnaire d’événements.  

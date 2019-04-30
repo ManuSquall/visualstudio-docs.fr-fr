@@ -12,11 +12,11 @@ caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: abbcc1fc1048866ef790a4b6779ed15ef80a9be1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074240"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429520"
 ---
 # <a name="project-persistence"></a>Persistance d’un projet
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,5 +45,5 @@ La persistance est une considération de conception clés pour votre projet. La 
  Les méthodes sur le `IVsPersistHierarchyItem2` interface servent à déterminer si un élément peut être rechargé et, si l’élément peut être, à le recharger. En outre, le <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IgnoreItemFileChanges%2A> méthode peut être implémentée pour les éléments modifiés sont ignorés sans être enregistré.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Liste de vérification : Créer de nouveaux Types de projet](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [Liste de contrôle : Créer de nouveaux Types de projet](../../extensibility/internals/checklist-creating-new-project-types.md)   
  [Création d’instances de projets à l’aide de fabriques de projets](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

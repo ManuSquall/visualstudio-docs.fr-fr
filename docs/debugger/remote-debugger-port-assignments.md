@@ -10,24 +10,24 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 672d54b29e6de9302e88b1b95b4117783b8a0113
-ms.sourcegitcommit: 1024f336dcd8e8a4c50b9a9ad8ec85b6e70073a8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57699614"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62903042"
 ---
 # <a name="remote-debugger-port-assignments"></a>Affectations de port du débogueur distant
 Le débogueur distant de Visual Studio peut s’exécuter comme une application ou un service en arrière-plan. Quand il est exécuté comme une application, il utilise un port qui est affecté par défaut comme suit :
 ::: moniker range=">=vs-2019"
-- Visual Studio 2019 : 4024
+- Visual Studio 2019 : 4024
 ::: moniker-end
-- Visual Studio 2017 : 4022
+- Visual Studio 2017 : 4022
 
-- Visual Studio 2015 : 4020
+- Visual Studio 2015 : 4020
 
-- Visual Studio 2013 : 4018
+- Visual Studio 2013 : 4018
 
-- Visual Studio 2012 : 4016
+- Visual Studio 2012 : 4016
 
   En d’autres termes, le numéro de port attribué au débogueur distant est incrémenté de 2 pour chaque version. Vous pouvez définir un numéro de port différent si vous le souhaitez. Nous expliquerons comment définir des numéros de port dans une section ultérieure.
 
@@ -54,12 +54,12 @@ Le débogueur distant de Visual Studio peut s’exécuter comme une application 
  Au démarrage de la version 64 bits du débogueur distant, il utilise la main le port par défaut (4022).  Si vous déboguez un processus 32 bits, la version 64 bits du débogueur distant démarre une version 32 bits du débogueur distant sur le port 4023 (le numéro de port principal incrémentée de 1). Si vous exécutez le débogueur distant 32 bits, il utilise le port 4022 et 4023 n’est pas utilisé.
 :::moniker-end
 
- Ce port est configurable à partir de la ligne de commande : **Msvsmon /wow64port \<<numéro_de_port>**.
+ Ce port est configurable à partir de la ligne de commande : **Msvsmon /wow64port \<le numéro de port >**.
 
 ## <a name="the-discovery-port"></a>Port de détection
  UDP 3702 est utilisé pour rechercher des instances en cours d’exécution du débogueur distant sur le réseau (par exemple, la boîte de dialogue **Rechercher** dans la boîte de dialogue **Attacher au processus** ). Il est utilisé uniquement pour la découverte d’un ordinateur exécutant le débogueur distant ; il est facultatif si vous disposez d’une autre façon de connaître le nom ou l’adresse IP de l’ordinateur cible. Comme il s’agit d’un port standard pour la détection, le numéro de port ne peut pas être configuré.
 
- Si vous ne souhaitez pas activer la détection, vous pouvez démarrer msvsmon à partir de la ligne de commande avec la détection désactivée :  **Msvsmon /nodiscovery**.
+ Si vous ne souhaitez pas activer la découverte, vous pouvez démarrer msvsmon à partir de la ligne de commande avec la détection désactivée :  **Msvsmon /nodiscovery**.
 
 ## <a name="remote-debugger-ports-on-azure"></a>Port du débogueur distant sur Azure
  Les ports suivants sont utilisés par le débogueur distant sur Azure. Les ports sur le service cloud sont mappés aux ports sur la machine virtuelle individuelle. Tous les ports sont TCP.

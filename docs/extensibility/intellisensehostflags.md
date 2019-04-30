@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 882410d68c671a83b13bd14026e5bea4c31cb37e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861633"
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
 Spécifie les indicateurs d’hôte IntelliSense.
@@ -46,7 +46,7 @@ enum IntellisenseHostFlags
 |`IHF_FORCECOMMITTOCONTEXT`|Comme pour `CanCommitIntoReadOnlyBuffer`.|
 |`IHF_OVERTYPE`|Modification (dans l’objet ou le contexte) doit être effectuée en mode Refrappe.|
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  SingleFileeditor.idl
 
 ## <a name="see-also"></a>Voir aussi

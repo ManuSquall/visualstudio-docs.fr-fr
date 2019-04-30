@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 86498adc4d8bce2a7d428b2951764e5d4b8a96a9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041078"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912393"
 ---
 # <a name="extend-the-output-window"></a>Étendre la fenêtre Sortie
 Le **sortie** fenêtre est un ensemble de volets de texte en lecture/écriture. Visual Studio propose ces volets intégrés : **Build**, dans les projets qui communiquent sur les builds, les messages et **général**, dans lequel [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] communique les messages sur l’IDE. Projets obtenir une référence à la **générer** automatiquement par le biais du volet le <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> méthodes d’interface et Visual Studio offre un accès direct à la **général** volet via le <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> service. Outre les volets intégrés, vous pouvez créer et gérer vos propres volets personnalisés.

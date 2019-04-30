@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e9728346bc4c6d805bb0febd3a0d5bef0ed809a5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62902307"
 ---
 # <a name="view-threads-and-tasks-in-the-parallel-stacks-window-c-visual-basic-c"></a>Afficher les threads et les tâches dans la fenêtre Piles parallèles (C#, Visual Basic, C++)
 
@@ -137,7 +137,7 @@ Si vous basculez vers un nouveau frame de pile, vous faites de cette méthode la
 
 ## <a name="see-also"></a>Voir aussi
 - [Commencer à déboguer une application multithread](../debugger/get-started-debugging-multithreaded-apps.md)
-- [Procédure pas à pas : déboguer une application parallèle](../debugger/walkthrough-debugging-a-parallel-application.md)
+- [Procédure pas à pas : Déboguer une application parallèle](../debugger/walkthrough-debugging-a-parallel-application.md)
 - [Présentation du débogueur](../debugger/debugger-feature-tour.md)
 - [Débogage du code managé](../debugger/debugging-managed-code.md)
 - [Programmation parallèle](/dotnet/standard/parallel-programming/index)

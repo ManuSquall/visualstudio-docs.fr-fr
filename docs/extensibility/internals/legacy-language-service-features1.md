@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d2a1eea79b0ac2d80fb2b75043d4462e73928798
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620835"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909552"
 ---
 # <a name="legacy-language-service-features"></a>Fonctionnalités de Service de langage hérité
 Un service de langage de framework (MPF) package managé peut prendre en charge un ou plusieurs [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fonctionnalités, telles que la coloration syntaxique, IntelliSense et validation de point d’arrêt. Chaque fonctionnalité peut être implémentée indépendant des autres, mais requièrent tous un analyseur et un analyseur à l’exception de la coloration syntaxique, ce qui nécessite uniquement un scanneur.

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: faed38853aa7d0d925a3b1e598627cf1a55166d1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689913"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62919216"
 ---
 # <a name="idebugfunctionposition2"></a>IDebugFunctionPosition2
 Cette interface représente une position abstraite d’une fonction dans un document source.
@@ -45,7 +45,7 @@ IDebugFunctionPosition2 : IUnknown
 ## <a name="remarks"></a>Notes
  La position représentée par cette interface est basée sur le texte, en particulier, un [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) structure.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: c4943d1305c2f25de4eec9e782949a66827de879
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58144873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955089"
 ---
 # <a name="iactivescriptaddtypelib"></a>IActiveScript::AddTypeLib
 Ajoute une bibliothèque de types à l’espace de noms pour le script. Ceci est similaire à la `#include` directive en C/C++. Il permet un ensemble d’éléments prédéfinis tels que des définitions de classe, `typedefs`et des constantes à ajouter à l’environnement d’exécution disponible pour le script nommées.  

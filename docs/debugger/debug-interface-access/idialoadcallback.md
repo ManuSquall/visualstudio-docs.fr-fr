@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 353e7dcbe1bcc44b9e8b7e9c7c417913ef07be35
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618872"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62828415"
 ---
 # <a name="idialoadcallback"></a>IDiaLoadCallback
 Reçoit des rappels du symbole DIA procédure de localisation, ce qui permet une interface utilisateur pour signaler l’avancement de la tentative d’emplacement.
@@ -39,13 +39,13 @@ IDiaLoadCallback : IUnknown
 |[IDiaLoadCallback::RestrictRegistryAccess](../../debugger/debug-interface-access/idialoadcallback-restrictregistryaccess.md)|Détermine si les requêtes de Registre peuvent être utilisées pour localiser les chemins de recherche de symbole.|
 |[IDiaLoadCallback::RestrictSymbolServerAccess](../../debugger/debug-interface-access/idialoadcallback-restrictsymbolserveraccess.md)|Détermine si l’accès est autorisé à un serveur de symboles pour résoudre les symboles.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  L’application cliente implémente cette interface et fournit une référence à celle-ci dans l’appel à la [IDiaDataSource::loadDataForExe](../../debugger/debug-interface-access/idiadatasource-loaddataforexe.md) (méthode).
 
  Pour connaître les restrictions supplémentaires qui peuvent être imposées sur un processus de chargement, consultez la [IDiaLoadCallback2](../../debugger/debug-interface-access/idialoadcallback2.md) interface.
 
-## <a name="requirements"></a>Spécifications
- En-tête : Dia2.h
+## <a name="requirements"></a>Configuration requise
+ En-tête : Dia2.h
 
  Bibliothèque : diaguids.lib
 

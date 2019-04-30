@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8f233e2256fc4baef9ee6ca7f07d3d7b71b68b47
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908430"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>Utilisation de l’infrastructure de package gérée pour implémenter un type de projet (C#)
 Managed Package Framework (MPF) fournit les classes c# vous pouvez utiliser ou hériter pour implémenter vos propres types de projet. MPF implémente la plupart des interfaces de que Visual Studio attend un type de projet pour fournir, en vous laissant permettant de vous concentrer sur l’implémentation de l’exactitude de votre type de projet.

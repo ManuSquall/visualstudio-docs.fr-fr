@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fd2db09937ad76c0ea4c990fcdba5c34a0f8f66c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093876"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898634"
 ---
 # <a name="how-to-include-a-data-file-in-a-clickonce-application"></a>Procédure : Inclure un fichier de données dans une application ClickOnce
 Chaque [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application que vous installez est affectée à un répertoire de données sur le disque local de l’ordinateur de destination dans lequel l’application peut gérer ses propres données. Fichiers de données peuvent inclure n’importe quel type de fichiers : fichiers texte, fichiers XML ou même base de données Microsoft Access (*.mdb*) les fichiers. Les procédures suivantes vous montrent comment ajouter un fichier de données de n’importe quel type dans votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application.

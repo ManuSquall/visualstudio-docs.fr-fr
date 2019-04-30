@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3b20b10a37908e2c9744aeac63bb3eda091da478
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074490"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826403"
 ---
 # <a name="how-to-add-commands-to-shortcut-menus"></a>Procédure : Ajouter des commandes aux menus contextuels
   Cette rubrique montre comment ajouter des commandes à un menu contextuel dans une application Office à l’aide un VSTO Add-in.

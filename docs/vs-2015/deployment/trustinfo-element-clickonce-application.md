@@ -24,11 +24,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: ca7e19925288b1509fec08235f546b84b4afffef
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62420075"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; , élément (Application ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -138,7 +138,7 @@ Décrit les autorisations de sécurité minimales dont doit disposer l’applica
      Obligatoire. Identifie l’ID du jeu d’autorisations dont a besoin cet assembly. Le jeu d’autorisations est déclaré dans l’élément `PermissionSet` .  
   
 ## <a name="requestedprivileges"></a>requestedPrivileges  
- Facultatif. Cet élément est un enfant de l’élément `security` et contient l’élément `requestedExecutionLevel` . Cet élément n’a pas d’attributs.  
+ Optionnel. Cet élément est un enfant de l’élément `security` et contient l’élément `requestedExecutionLevel` . Cet élément n’a pas d’attributs.  
   
 ## <a name="requestedexecutionlevel"></a>requestedExecutionLevel  
  Optionnel. Identifie le niveau de sécurité auquel les demandes d’application doivent être exécutées. Cet élément n’a pas d’enfants et comprend les attributs suivants.  

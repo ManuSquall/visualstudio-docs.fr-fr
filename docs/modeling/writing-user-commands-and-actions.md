@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 00da6f72bfafcc62075bc06739e4daec0fe45994
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951205"
 ---
 # <a name="writing-user-commands-and-actions"></a>Écriture de commandes et d'actions utilisateur
 Vous pouvez personnaliser un langage spécifique à un domaine en ajoutant des commandes au diagramme et en répondant à des mouvements tels que des événements de clic, de double clic et glisser-déplacer.

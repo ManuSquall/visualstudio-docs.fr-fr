@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1ca6f9dc8c2801a36cab5e90227df201f50d3d93
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704213"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62864955"
 ---
 # <a name="portsupplierdescriptionflags"></a>PORT_SUPPLIER_DESCRIPTION_FLAGS
 
@@ -48,7 +48,7 @@ Si sélectionné, l’icône d’avertissement s’affichera dans l’interface 
 
 Cette énumération est retournée par la [GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md) (méthode).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
 En-tête : Msdbg.h
 

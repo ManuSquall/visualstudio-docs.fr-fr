@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 641687dbcfa6bf50ba9e848de589662d282d0c7b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715259"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62864571"
 ---
 # <a name="threadpropertyfields"></a>THREADPROPERTY_FIELDS
 Spécifie les informations sur un thread doit être récupéré.
@@ -71,7 +71,7 @@ public enum enum_THREADPROPERTY_FIELDS { 
 
  Ces indicateurs peuvent être combinées avec un opérateur de bits `OR`.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

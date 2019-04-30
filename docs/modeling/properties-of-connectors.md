@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 754f479b99eef44159994425ddd7a0d812bcf2ee
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909230"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970807"
 ---
 # <a name="properties-of-connectors"></a>Propriétés des connecteurs
 Connecteurs représentent les relations de domaine dans un concepteur généré.
@@ -36,15 +36,15 @@ Connecteurs représentent les relations de domaine dans un concepteur généré.
 |Génère le Double dérivée|Si `True`, une classe de base et une classe partielle (pour prendre en charge la personnalisation via des substitutions) sont générés. Pour plus d’informations, consultez [substitution et extension des Classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|
 |A le constructeur personnalisé|Si `True`, un constructeur personnalisé est fourni dans le code source. Pour plus d’informations, consultez [substitution et extension des Classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|
 |Modificateur d’héritage|Décrit le type d’héritage de la classe de code source qui est générée à partir du connecteur (`none`, `abstract` ou `sealed`).|none|
-|Connecteur de base|La classe de base de ce connecteur.|(aucune)|
-|Name|Le nom de ce connecteur.|Nom actuel|
+|Connecteur de base|La classe de base de ce connecteur.|(aucun)|
+|Nom|Le nom de ce connecteur.|Nom actuel|
 |Espace de noms|L’espace de noms qui est affilié à ce connecteur.|Espace de noms actuel|
 |Type de l’info-bulle|Comment l’info-bulle est définie (fixe, variable, ou aucun). Si fixe, puis la valeur de la `Fixed Tooltip Text` propriété est utilisée en tant que l’info-bulle ; si la variable, l’info-bulle est définie dans du code personnalisé.|\<aucune>|
 |Notes|Remarques informelles associées à ce connecteur.|\<aucune>|
 |Style de routage|Le style qui est utilisé pour router le connecteur. Un `Rectilinear` connecteur établit à angle droit active en fonction des besoins ; un `Straight` n’est pas le cas du connecteur.|Rectiligne|
 |Couleur exposé en tant que propriété<br /><br /> Style de tiret exposé en tant que propriété<br /><br /> Épaisseur exposé en tant que propriété<br /><br /> Expose la couleur du texte|Si `True`, l’utilisateur peut définir la propriété indiquée d’une forme. Pour définir ceci, avec le bouton droit de la définition de forme, puis cliquez sur **ajouter les objets exposés**.|False|
 |Description|Utilisé pour documenter le concepteur généré.|\<aucune>|
-|Nom complet|Le nom qui s’affichera dans le concepteur généré pour ce connecteur.|\<aucune>|
+|Display Name|Le nom qui s’affichera dans le concepteur généré pour ce connecteur.|\<aucune>|
 |Texte d’info-bulle fixe|Le texte qui est utilisé pour une info-bulle fixe.|\<aucune>|
 |Help Keyword|Le mot clé qui est utilisé pour indexer l’aide F1 pour cet élément.|\<aucune>|
 

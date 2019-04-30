@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eada57433b37f759da51ecdb380e530f3fb77fdf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625983"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839470"
 ---
 # <a name="idiasectioncontrib"></a>IDiaSectionContrib
 Récupère des données décrivant une contribution de la section, autrement dit, un bloc contigu de mémoire a contribué à l’image par un compiland.
@@ -58,7 +58,7 @@ Le tableau suivant présente les méthodes de `IDiaSectionContrib`.
 |[IDiaSectionContrib::get_relocationsCrc](../../debugger/debug-interface-access/idiasectioncontrib-get-relocationscrc.md)|Récupère le CRC des informations de réadressage de la section.|
 |[IDiaLineNumber::get_compilandId](../../debugger/debug-interface-access/idialinenumber-get-compilandid.md)|Récupère l’identificateur de compiland pour la section.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 ## <a name="notes-for-callers"></a>Notes de publication pour les appelants
 Cette interface est obtenue en appelant le [IDiaEnumSectionContribs::Item](../../debugger/debug-interface-access/idiaenumsectioncontribs-item.md) et [IDiaEnumSectionContribs::Next](../../debugger/debug-interface-access/idiaenumsectioncontribs-next.md) méthodes. Consultez le [IDiaEnumSectionContribs](../../debugger/debug-interface-access/idiaenumsectioncontribs.md) interface pour obtenir un exemple d’obtention de la `IDiaSectionContrib` interface.
@@ -126,8 +126,8 @@ void PrintSectionContrib(IDiaSectionContrib* pSecContrib, IDiaSession* pSession)
 }
 ```
 
-## <a name="requirements"></a>Spécifications
-En-tête : Dia2.h
+## <a name="requirements"></a>Configuration requise
+En-tête : Dia2.h
 
 Bibliothèque : diaguids.lib
 

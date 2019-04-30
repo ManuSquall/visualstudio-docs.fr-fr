@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 687d46136ad4ed0f043210839e95caf6071f87f2
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317482"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891079"
 ---
 # <a name="create-a-multi-instance-tool-window"></a>Créer une fenêtre d’outil multi-instance
 Vous pouvez programmer une fenêtre outil afin que plusieurs instances de celui-ci peuvent être ouverts simultanément. Par défaut, les fenêtres Outil peuvent avoir qu’une seule instance ouvrir.
