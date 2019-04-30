@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bfaf520658edfdcf5b80fb89f89489a47c7fffa3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695581"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852692"
 ---
 # <a name="debugger-project-settings"></a>Paramètres du projet du débogueur
 Certains paramètres de projet affectent également le débogage. Ces paramètres déterminent des éléments tels que les répertoires de recherche du débogueur, la commande et les arguments de commande utilisés pour démarrer le programme, ainsi que le type d'informations de débogage créées pour le programme. Vous pouvez modifier ces paramètres dans la boîte de dialogue **Pages de propriétés** .
@@ -29,11 +29,11 @@ Certains paramètres de projet affectent également le débogage. Ces paramètre
  Cette section décrit les options disponibles et la manière de les définir.
 
 ## <a name="in-this-section"></a>Dans cette section
- [Comment : spécifier les paramètres du débogueur](../debugger/how-to-specify-debugger-settings.md) décrit les paramètres du débogueur dans le **Options** boîte de dialogue.
+ [Guide pratique pour Spécifiez les paramètres du débogueur](../debugger/how-to-specify-debugger-settings.md) décrit les paramètres du débogueur dans le **Options** boîte de dialogue.
 
- [Comment : jeu de Configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md) décrit le **déboguer** et **version** paramètres et comment passer à l’autre.
+ [Guide pratique pour Définir des Configurations Debug et Release](../debugger/how-to-set-debug-and-release-configurations.md) décrit le **déboguer** et **version** paramètres et comment passer à l’autre.
 
- [Paramètres pour une Configuration Debug C++ du projet](../debugger/project-settings-for-a-cpp-debug-configuration.md) répertorie les propriétés disponibles dans le **Pages de propriétés** boîte de dialogue pour les projets C ou C++.
+ [Paramètres de projets pour un C++ Configuration Debug](../debugger/project-settings-for-a-cpp-debug-configuration.md) répertorie les propriétés disponibles dans le **Pages de propriétés** boîte de dialogue pour C ou C++ projets.
 
  [Paramètres de projet C# déboguer les Configurations](../debugger/project-settings-for-csharp-debug-configurations.md) répertorie les propriétés disponibles dans le **Pages de propriétés** boîte de dialogue C# projets.
 

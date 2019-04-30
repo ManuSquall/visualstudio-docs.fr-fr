@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: df3fd7d46fdcb1f3e86bddd53700d7bce6e21381
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58145250"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000831"
 ---
 # <a name="idispatchex-interface"></a>IDispatchEx, interface
 `IDispatchEx`, une extension de la `IDispatch` interface, des fonctionnalités de prise en charge appropriées pour les langages dynamiques tels que des langages de script. Cette section décrit la `IDispatchEx` les différences entre l’interface proprement dite, `IDispatch` et `IDispatchEx`et la logique pour les extensions. Il est probable que les lecteurs sont familiers avec `IDispatch` et ont accès à la `IDispatch` documentation.  

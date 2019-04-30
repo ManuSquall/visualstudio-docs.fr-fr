@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2fcc2fe575bd6b526f5f66d936625c87e91b0b39
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62999786"
 ---
 # <a name="development-best-practices-for-com-vsto-and-vba-add-ins-in-office"></a>Meilleures pratiques de développement COM, VSTO et VBA des compléments dans Office
   Si vous développez des compléments COM, VSTO ou de VBA pour Office, suivez les meilleures pratiques de développement décrits dans cet article.   Cela permet de s’assurer :

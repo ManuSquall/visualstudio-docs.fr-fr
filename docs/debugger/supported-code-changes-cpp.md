@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 7d029d5cb3deb886faa4423d24ae8d5282f80e6a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114585"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901959"
 ---
 # <a name="supported-code-changes-c"></a>Modifications de code prises en charge (C++)
 Modifier & Continuer pour Visual C++ gère la plupart des types de modifications du code. Toutefois, certaines modifications ne peuvent pas être appliquées pendant l'exécution du programme. Pour appliquer ces modifications, vous devez arrêter l'exécution et générer une nouvelle version du code.

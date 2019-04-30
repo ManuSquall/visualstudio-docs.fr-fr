@@ -8,11 +8,11 @@ ms.author: gregvanl
 ms.workload:
 - vssdk
 ms.openlocfilehash: 99b23c223d91678f03a52910ed4516be0839a338
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113961"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62862568"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Procédure : Utiliser AsyncPackage pour charger des VSPackages en arrière-plan
 E/s disque peuvent entraîner le chargement et l’initialisation d’un package VS. Si ces e/s se produit sur le thread d’interface utilisateur, il peut entraîner des problèmes de réactivité. Pour résoudre ce problème, Visual Studio 2015 introduit le <xref:Microsoft.VisualStudio.Shell.AsyncPackage> classe qui permet le chargement de package sur un thread d’arrière-plan.

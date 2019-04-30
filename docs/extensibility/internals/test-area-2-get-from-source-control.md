@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0d7942aa658208143aea3c3ae3a09eb677568f17
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067181"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908910"
 ---
 # <a name="test-area-2-get-from-source-control"></a>Zone de test 2 : Obtenir à partir du contrôle de code source
 Cette zone de test traite des cas de test pour la récupération des éléments à partir de la banque des versions par le biais de la commande Get. Ces cas de test peuvent être appliquées aux deux types et aux projets Web.

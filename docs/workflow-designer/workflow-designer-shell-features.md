@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4519be8ec5c5d4ba8a611df1880ae770a83cf981
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55919467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433862"
 ---
 # <a name="workflow-designer-shell-features"></a>Fonctionnalités du shell Workflow Designer
 
@@ -31,7 +31,7 @@ Concepteur de workflow est composé de trois zones principales de l’interface 
 > L’interface utilisateur de Concepteur de flux de travail est virtualisé. Les concepteurs d'activités ne sont affichés que s'ils sont nécessaires. Si une partie du flux de travail n'a jamais été dessinée dans l'aire du concepteur, elle apparaît en blanc dans la vue d'ensemble. Le défilement de la vue d'ensemble permet de dessiner l'intégralité du flux de travail.
 
 ## <a name="copying-or-saving-workflows-as-images"></a>Copie ou enregistrement de flux de travail en tant qu'images
- Les flux de travail peuvent être copiés au format bitmap ou enregistrés aux formats bitmap ou vectoriel. La copie ou l’enregistrement d’une image permettent d’exporter vers un autre programme une vue d’activité entière à la racine de la barre de navigation actuelle, notamment tous ses enfants et tous leurs enfants développés.
+ Les flux de travail peuvent être copiés au format bitmap ou enregistrés aux formats bitmap ou vectoriel. La copie ou l'enregistrement d'une image permettent d'exporter vers un autre programme une vue d'activité entière à la racine de la barre de navigation actuelle, notamment tous ses enfants et tous leurs enfants développés.
 
  Pour copier en tant qu’image, avec le bouton droit n’importe où dans le concepteur et sélectionnez **copie comme Image**. Pour enregistrer en tant qu’image, avec le bouton droit n’importe où dans le concepteur et sélectionnez **enregistrer en tant qu’Image**. Les flux de travail peuvent être enregistrés aux formats JPG, PNG, GIF ou XPS. Le format est sélectionné sur la **enregistrer en tant que** boîte de dialogue dans le **enregistrer en tant que Type :** zone de liste en bas de la fenêtre de liste déroulante.
 

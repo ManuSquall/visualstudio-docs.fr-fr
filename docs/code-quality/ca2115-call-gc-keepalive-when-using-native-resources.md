@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 9a74f6313f90a31d43cf39443b1c44d78f0628f8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930985"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545187"
 ---
 # <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115 : Appelez GC.KeepAlive lorsque vous utilisez des ressources natives
 
@@ -42,7 +42,7 @@ Cette règle suppose que <xref:System.IntPtr> et <xref:System.UIntPtr> champs st
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
 
-Pour corriger une violation de cette règle, ajoutez un appel à <xref:System.GC.KeepAlive%2A> à la méthode, en passant l’instance actuelle (`this` en C# et C++) comme argument. Placez l’appel après la dernière ligne de code où l’objet doit être protégé contre le garbage collection. Immédiatement après l’appel à <xref:System.GC.KeepAlive%2A>, l’objet est à nouveau considérées comme prête pour le garbage collection en supposant qu’il n’y aucune référence managée.
+Pour corriger une violation de cette règle, ajoutez un appel à <xref:System.GC.KeepAlive%2A> à la méthode, en passant l’instance actuelle (`this` en c# et C++) comme argument. Placez l’appel après la dernière ligne de code où l’objet doit être protégé contre le garbage collection. Immédiatement après l’appel à <xref:System.GC.KeepAlive%2A>, l’objet est à nouveau considérées comme prête pour le garbage collection en supposant qu’il n’y aucune référence managée.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
 

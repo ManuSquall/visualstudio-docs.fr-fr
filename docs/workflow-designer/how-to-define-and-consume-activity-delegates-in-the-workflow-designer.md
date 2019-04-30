@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: c455f36d17b761fe02b7d78e96fbf2c4582d490d
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
-ms.translationtype: MT
+ms.openlocfilehash: 25f844acefed50b5bb35e3b1d8c6a570e11ca194
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415809"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949515"
 ---
 # <a name="how-to-define-and-consume-activity-delegates-in-the-workflow-designer"></a>Procédure : Définir et utiliser des délégués d’activité dans le concepteur de workflow
 
@@ -70,17 +70,17 @@ ms.locfileid: "58415809"
 
 ## <a name="use-the-custom-activity-in-a-workflow"></a>Utiliser l'activité personnalisée dans un workflow
 
-1.  Générez le projet en appuyant sur **Ctrl**+**MAJ**+**B**.
+1. Générez le projet en appuyant sur **Ctrl**+**MAJ**+**B**.
 
-2.  Dans **l’Explorateur de solutions**, ouvrez **Workflow1.xaml** dans le concepteur.
+2. Dans **l’Explorateur de solutions**, ouvrez **Workflow1.xaml** dans le concepteur.
 
-3.  Faites glisser un **MyForEach** activité à partir de la boîte à outils vers l’aire du concepteur. L’activité est dans une section de la boîte à outils avec le même nom que le projet.
+3. Faites glisser un **MyForEach** activité à partir de la boîte à outils vers l’aire du concepteur. L’activité est dans une section de la boîte à outils avec le même nom que le projet.
 
-4.  Définir le **éléments** propriété de la **MyForEach** activité **new Object [] {1, « abc »}**.
+4. Définir le **éléments** propriété de la **MyForEach** activité **new Object [] {1, « abc »}**.
 
-5.  Faites glisser un <xref:System.Activities.Statements.WriteLine> activité à partir de la **Primitives** section de la boîte à outils vers le **Delegate : Body** section de la **MyForEach** activité.
+5. Faites glisser un <xref:System.Activities.Statements.WriteLine> activité à partir de la **Primitives** section de la boîte à outils vers le **Delegate : Body** section de la **MyForEach** activité.
 
-6.  Définir le **texte** propriété de la <xref:System.Activities.Statements.WriteLine> activité **argument.ToString ()**.
+6. Définir le **texte** propriété de la <xref:System.Activities.Statements.WriteLine> activité **argument.ToString ()**.
 
 Lorsque le workflow est exécuté, la console affiche la sortie suivante :
 

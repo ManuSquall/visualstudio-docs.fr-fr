@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d58ad6ff89d8cf41ec60135cfbfe3deac1382f1e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095267"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977859"
 ---
 # <a name="one-or-more-properties-in-the-ofs-file-are-not-valid-for-the-message-class-selected"></a>Au moins une propriété du fichier .ofs n'est pas valide pour la classe de message sélectionnée
   Cette erreur apparaît lorsque vous importez une zone de formulaire conçue dans Outlook, mais un ou plusieurs champs sur la zone de formulaire ne sont pas compatibles avec les classes de message que vous sélectionnez dans la page finale de le **nouvelle zone de formulaire** Assistant.

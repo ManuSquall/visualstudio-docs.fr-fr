@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8dfb0330f08dab158c298bbc944d8dc6410f719f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839431"
 ---
 # <a name="idiasegment"></a>IDiaSegment
 Mappe les données à partir du numéro de la section à des segments de l’espace d’adressage.
@@ -43,7 +43,7 @@ Le tableau suivant présente les méthodes de `IDiaSegment`.
 |[IDiaSegment::get_relativeVirtualAddress](../../debugger/debug-interface-access/idiasegment-get-relativevirtualaddress.md)|Récupère l’adresse virtuelle relative (RVA) du début de la section.|
 |[IDiaSegment::get_virtualAddress](../../debugger/debug-interface-access/idiasegment-get-virtualaddress.md)|Récupère l’adresse virtuelle (VA) du début de la section.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Étant donné que le SDK DIA effectue déjà traductions à partir du décalage de la section pour les adresses virtuelles relatives, la plupart des applications n’apporte pas utiliser les informations dans le mappage de segments.
 
 ## <a name="notes-for-callers"></a>Notes de publication pour les appelants
@@ -93,8 +93,8 @@ void ShowSegments(IDiaTable *pTable, IDiaSession *pSession)
 }
 ```
 
-## <a name="requirements"></a>Spécifications
-En-tête : Dia2.h
+## <a name="requirements"></a>Configuration requise
+En-tête : Dia2.h
 
 Bibliothèque : diaguids.lib
 

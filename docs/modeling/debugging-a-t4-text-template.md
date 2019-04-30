@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ec82c71a359bed423785cc914c58b97db954f4f5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62994675"
 ---
 # <a name="debugging-a-t4-text-template"></a>Débogage d'un modèle de texte T4
 Vous pouvez définir des points d’arrêt dans les modèles de texte. Pour déboguer un modèle de texte au moment du design, enregistrez le fichier de modèle de texte, puis choisissez **déboguer le modèle T4** dans le menu contextuel du fichier dans l’Explorateur de solutions. Pour déboguer un modèle de texte de l’exécution, simplement déboguer l’application à laquelle il appartient.
@@ -43,7 +43,7 @@ Vous pouvez définir des points d’arrêt dans les modèles de texte. Pour déb
 |L’assembly '{0}'pour le processeur de directive'{1}' n'a pas été accordé le jeu d’autorisations FullTrust. Seuls les assemblys approuvés sont autorisés à fournir des processeurs de directive. Ce processeur de directive ne sera pas chargé.|Se produit lorsque le système n’accorde pas d’autorisations FullTrust à un assembly contenant un processeur de directive. Le message fournit le nom de l’assembly et le nom du processeur de directive.|N’oubliez pas que vous utilisez uniquement des assemblys approuvés sur l’ordinateur local.|
 |Le chemin d’accès '{0}' doit être local sur cet ordinateur ou partie de votre zone de confiance.|Se produit lorsqu’un assembly directive ou fait référence à un fichier qui n’est pas sur votre ordinateur local ou sur la zone de confiance de votre réseau.|N’oubliez pas que le répertoire où se trouvent la directive ou les directives d’assembly est dans votre zone de confiance. Vous pouvez ajouter un répertoire réseau à votre zone de confiance dans Internet Explorer.|
 |Plusieurs erreurs de syntaxe comme « Non valide jeton ' catch' » ou « un espace de noms ne peut pas contenir directement des membres »|Trop d’accolades fermantes dans votre code de modèle. Le compilateur est pas le confondre avec le code de génération standard.|Vérifier le numéro de la fermeture d’accolades et des crochets à l’intérieur des délimiteurs de code.|
-|Boucles ou conditions pas compilé ou exécuté correctement. Par exemple : `<#if (i>10)#> Number is: <#= i #>`.<br /><br /> Ce code affiche toujours la valeur d’i. Uniquement « nombre est : » est conditionnel.|En C#, utilisez toujours des accolades pour entourer les blocs de texte qui sont incorporés dans les instructions de contrôle.|Ajouter des accolades : `<#if (i>10) { #>    Number is: <#= i #><# } #>`.|
+|Boucles ou conditions pas compilé ou exécuté correctement. Par exemple : `<#if (i>10)#> Number is: <#= i #>`.<br /><br /> Ce code affiche toujours la valeur d’i. Uniquement « nombre est : » est conditionnel.|En c#, utilisez toujours des accolades pour entourer les blocs de texte qui sont incorporés dans les instructions de contrôle.|Ajouter des accolades : `<#if (i>10) { #>    Number is: <#= i #><# } #>`.|
 |« Expression trop complexe » lors de la compilation d’un modèle d’exécution (prétraité) ou de traitement d’un modèle au moment du design.<br /><br /> Visual Studio cesse de fonctionner lorsque vous tentez d’inspecter le code généré par un modèle d’exécution.|Bloc de texte est trop long. T4 convertit les blocs de texte en une expression de concaténation de chaîne, avec une chaîne littérale pour chaque ligne du modèle. Blocs de texte très longs peuvent dépasser les limites de taille du compilateur.|Divisez le bloc de texte long avec un bloc d’expression telles que :<br /><br /> `<#= "" #>`|
 
 ## <a name="warning-descriptions-and-fixes"></a>Correctifs et les Descriptions de l’avertissement

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fa79f31fd0fc895c67325a32dcbe12a28ff3afc4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697063"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62876982"
 ---
 # <a name="idebugbreakpointevent2"></a>IDebugBreakpointEvent2
 Le moteur de débogage (dé) envoie cette interface pour le Gestionnaire de session de débogage (SDM) lorsqu’un programme s’arrête au point d’arrêt.
@@ -41,7 +41,7 @@ IDebugBreakpointEvent2 : IUnknown
 |------------|-----------------|
 |[EnumBreakpoints](../../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md)|Crée un énumérateur pour tous les points d’arrêt qui a déclenché à l’emplacement de code actuel.|
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

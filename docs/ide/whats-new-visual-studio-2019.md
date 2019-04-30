@@ -2,7 +2,7 @@
 title: Nouveautés de Visual Studio 2019
 titleSuffix: ''
 description: Découvrez les nouvelles fonctionnalités de Visual Studio 2019.
-ms.date: 04/04/2019
+ms.date: 04/23/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 399207f81ec1f25e6a5169235820989c1b2c34e4
-ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
+ms.openlocfilehash: 3093641ad07ad3ae0f4796c2064c3e6901ae03ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "59477539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432031"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Nouveautés de Visual Studio 2019
 
-**Mis à jour pour la [version 16.0](/visualstudio/releases/2019/release-notes/)**
+**Mis à jour pour la [version 16.0](/visualstudio/releases/2019/release-notes/)**
 
 >[!div class="button"]
 >[Télécharger Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2019)
@@ -84,7 +84,7 @@ Pour plus d’informations sur IntelliCode, consultez le billet de blog [Code mo
 
 Une nouvelle commande de nettoyage de code, associée à un nouvel indicateur d’intégrité de document, vous est proposée. Cette nouvelle commande permet d’identifier et de résoudre les avertissements et les suggestions d’un simple clic sur un bouton.
 
-Le nettoyage peut mettre en forme le code et appliquer les correctifs de code suggérés par les [paramètres actuels](code-styles-and-quick-actions.md), les [fichiers .editorconfig](create-portable-custom-editor-options.md) ou les [analyseurs Roslyn](../code-quality/roslyn-analyzers-overview.md).
+Le nettoyage peut mettre en forme le code et appliquer les correctifs de code suggérés par les [paramètres actuels](code-styles-and-quick-actions.md) et les [fichiers .editorconfig](create-portable-custom-editor-options.md).
 
    ![Capture d’écran de la nouvelle commande de nettoyage de code dans Visual Studio 2019](media/vs-2019/code-cleanup-profile.png)
 
@@ -168,6 +168,12 @@ Nous avons ajouté la prise en charge du ciblage des applications ASP.NET (Core 
 
 Pour plus d’informations, voir la page [Déboguer des applications Azure ASP.NET en production avec le Débogueur de capture instantanée](../debugger/debug-live-azure-applications.md) et le billet de blog [Présentation du débogage avec voyage dans le temps pour Visual Studio Enterprise 2019](https://devblogs.microsoft.com/visualstudio/introducing-time-travel-debugging-for-visual-studio-enterprise-2019/).
 
+## <a name="whats-next"></a>Étapes suivantes
+
+Nous mettons souvent à jour Visual Studio 2019 avec de nouvelles fonctionnalités susceptibles de faciliter l’expérience de développement. Pour en savoir plus sur nos innovations les plus récentes, consultez [Le Blog Visual Studio](https://devblogs.microsoft.com/visualstudio/). Et pour savoir ce que nous avons publié en préversion à ce jour, examinez les [Notes de publication de préversion](/visualstudio/releases/2019/release-notes-preview/).
+
+Vous souhaitez en savoir plus sur les autres fonctionnalités prévues pour Visual Studio 2019 ? Consultez la [Feuille de route Visual Studio](/visualstudio/productinfo/vs-roadmap/).
+
 ## <a name="give-us-feedback"></a>Envoyer vos commentaires
 
 Vous vous demandez peut-être quel est l'intérêt d'envoyer des commentaires à l'équipe Visual Studio. C'est simple : nous prenons très au sérieux les commentaires de nos clients. Ils influencent bon nombre de nos décisions.
@@ -181,5 +187,5 @@ Vous vous demandez peut-être quel est l'intérêt d'envoyer des commentaires à
 * [Annonce de Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-code-faster-work-smarter-create-the-future/)
 * [Notes de publication de Visual Studio 2019](/visualstudio/releases/2019/release-notes/)
 * [Nouveautés du SDK Visual Studio 2019](../extensibility/whats-new-visual-studio-2019-sdk.md)
-* [Visual Studio 2019 pour Mac est disponible](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-for-mac-is-now-available/)
+* [Visual Studio 2019 pour Mac est désormais disponible](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-for-mac-is-now-available/)
 * [Microsoft Connect() ; conférence en 2018](https://www.microsoft.com/connectevent)

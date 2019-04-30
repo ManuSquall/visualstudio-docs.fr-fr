@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5d752626f56c63c5d21777288340c921ec755867
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908943"
 ---
 # <a name="source-control-vspackage-features"></a>Fonctionnalités de VSPackage de contrôle de code source
 Cette section décrit les différentes fonctionnalités d’un VSPackage de contrôle de code source. Il décrit l’inscription et sélection de détails pour un package Visual Studio et traite des trois fonctionnalités liées au contrôle source principal : gestion des événements enregistrer de la requête de modification de la requête (QEQS), de remplacement de glyphe et interface utilisateur personnalisée (interface utilisateur) pour le contrôle de code source fonctions.

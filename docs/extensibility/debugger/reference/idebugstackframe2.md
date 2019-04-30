@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ce4112addee78c4df293bf49e1cb191e4bbcd18b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56703937"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62868716"
 ---
 # <a name="idebugstackframe2"></a>IDebugStackFrame2
 Cette interface représente un frame de pile dans une pile des appels dans un thread particulier.
@@ -53,7 +53,7 @@ IDebugStackFrame2 : IUnknown
 ## <a name="remarks"></a>Notes
  Cette interface est obtenue uniquement lorsque le programme en cours de débogage a été arrêté à un point d’arrêt (soit provoqué par un point d’arrêt défini par l’utilisateur ou une exception). À partir de cette interface, un contexte de l’expression peut être obtenu pour évaluer des expressions, une liste de registres peut être retournée ou la pile des appels peut être obtenue et examinée.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

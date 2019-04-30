@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 426ffcd5d764cf5141fede28ccee74326311a618
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700183"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62863101"
 ---
 # <a name="extensibility-in-visual-studio"></a>Extensibilité de Visual Studio
 Visual Studio vous fournit de nombreuses options d’extensibilité. Vous pouvez créer vos propres kits de développement logiciel, utilisez Windows, Windows Phone, les kits de développement logiciel Azure (qui sont installés dans le cadre de Visual Studio) et étendre Visual Studio lui-même.

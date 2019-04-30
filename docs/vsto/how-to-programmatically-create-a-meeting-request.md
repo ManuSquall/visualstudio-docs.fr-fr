@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 62ccf3b170b05e5954bc217f032480ecd1f8a921
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606509"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62575157"
 ---
 # <a name="how-to-programmatically-create-a-meeting-request"></a>Procédure : Créer par programmation une demande de réunion
   Cet exemple crée une demande de réunion dans Microsoft Office Outlook, et l’envoie au participant nécessaire.

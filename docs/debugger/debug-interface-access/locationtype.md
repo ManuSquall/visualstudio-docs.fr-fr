@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: faff61833cb130902efbd64d60a16f74c507a3e2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627933"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834127"
 ---
 # <a name="locationtype"></a>LocationType
 Indique le type d’informations d’emplacement contenues dans un symbole.
@@ -66,12 +66,12 @@ enum LocationType {
 
 `LocTypeMax` Le nombre de types d’emplacement dans cette énumération.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Les propriétés disponibles pour le [IDiaSymbol](../../debugger/debug-interface-access/idiasymbol.md) interface varient selon l’emplacement du symbole dans le fichier image. Pour plus d’informations, consultez [emplacements de symboles](../../debugger/debug-interface-access/symbol-locations.md).
 
 Les valeurs dans cette énumération sont retournées par un appel à la [IDiaSymbol::get_locationType](../../debugger/debug-interface-access/idiasymbol-get-locationtype.md) (méthode).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : cvconst.h
 
 ## <a name="see-also"></a>Voir aussi

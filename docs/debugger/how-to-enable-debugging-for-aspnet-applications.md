@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: d383c559e605392b01ba2c476fd4ed5ae5d48625
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526657"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848397"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>Déboguer des applications ASP.NET ou ASP.NET Core dans Visual Studio
 
@@ -184,9 +184,9 @@ Il existe différentes façons de publier des applications dans IIS. Ces étapes
 
 ## <a name="see-also"></a>Voir aussi
 - [Débogage ASP.NET : configuration requise](aspnet-debugging-system-requirements.md)
-- [Guide pratique pour exécuter le processus Worker sous un compte d’utilisateur](how-to-run-the-worker-process-under-a-user-account.md)
-- [Guide pratique pour rechercher le nom du processus ASP.NET](how-to-find-the-name-of-the-aspnet-process.md)
+- [Guide pratique pour Exécuter le processus de travail sous un compte d’utilisateur](how-to-run-the-worker-process-under-a-user-account.md)
+- [Guide pratique pour Rechercher le nom du processus ASP.NET](how-to-find-the-name-of-the-aspnet-process.md)
 - [Déboguer des applications web déployées](debugging-deployed-web-applications.md)
-- [Procédure pas à pas : débogage d’un formulaire web](walkthrough-debugging-a-web-form.md)
-- [Guide pratique pour déboguer des exceptions ASP.NET](how-to-debug-aspnet-exceptions.md)
-- [Déboguer des applications web : erreurs et dépannage](debugging-web-applications-errors-and-troubleshooting.md)
+- [Procédure pas à pas : Débogage d’un formulaire web](walkthrough-debugging-a-web-form.md)
+- [Guide pratique pour Déboguer des exceptions ASP.NET](how-to-debug-aspnet-exceptions.md)
+- [Déboguer des applications web : Erreurs et dépannage](debugging-web-applications-errors-and-troubleshooting.md)

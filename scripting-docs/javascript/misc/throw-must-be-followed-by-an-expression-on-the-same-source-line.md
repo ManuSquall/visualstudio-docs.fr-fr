@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 4c8ed951fb30b84f114f8f44a60e94b88f0f1d0f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069521"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63005939"
 ---
 # <a name="throw-must-be-followed-by-an-expression-on-the-same-source-line"></a>'Throw' doit être suivi d'une expression sur la même ligne source
 Vous avez utilisé le `throw` mot clé, mais vous n’avez ne pas suivi il avec une expression sur la même ligne source. Un `throw` instruction se compose de deux parties : le `throw` mot clé, suivi par l’expression devant être levé. Exemple :  

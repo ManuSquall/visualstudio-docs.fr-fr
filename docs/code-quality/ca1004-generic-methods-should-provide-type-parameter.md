@@ -18,11 +18,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 94c21a81a7473e1697609ff3e46eb054ad304540
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955360"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62779887"
 ---
 # <a name="ca1004-generic-methods-should-provide-type-parameter"></a>CA1004 : Les méthodes génériques doivent fournir un paramètre de type
 
@@ -37,7 +37,7 @@ ms.locfileid: "55955360"
  La signature de paramètre d’une méthode générique extérieurement visible ne contient pas de types qui correspondent à tous les paramètres de type de la méthode.
 
 ## <a name="rule-description"></a>Description de la règle
- L’inférence désigne la manière dont l’argument de type d’une méthode générique est déterminé par le type d’argument passé à la méthode, au lieu d’utiliser la spécification explicite de l’argument de type. Pour activer l’inférence, la signature de paramètre d’une méthode générique doit contenir un paramètre du même type que le paramètre de type de la méthode. Dans ce cas, il n’est pas nécessaire de spécifier l’argument de type. Lorsque vous utilisez l’inférence pour tous les paramètres de type, la syntaxe d’appel des méthodes d’instance génériques et non génériques est identique. Cela simplifie l’utilisation des méthodes génériques.
+ L'inférence désigne la manière dont l'argument de type d'une méthode générique est déterminé par le type d'argument passé à la méthode, au lieu d'utiliser la spécification explicite de l'argument de type. Pour activer l’inférence, la signature de paramètre d’une méthode générique doit contenir un paramètre du même type que le paramètre de type de la méthode. Dans ce cas, il n'est pas nécessaire de spécifier l'argument de type. Lorsque vous utilisez l’inférence pour tous les paramètres de type, la syntaxe d’appel des méthodes d’instance génériques et non génériques est identique. Cela simplifie l’utilisation des méthodes génériques.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, modifiez la conception afin que la signature de paramètre contienne le même type pour chaque paramètre de type de la méthode.

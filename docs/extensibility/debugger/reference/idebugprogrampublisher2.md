@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4a7547639fb2f7f3068dd7f738b0c0d10ea926f0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62916682"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
 Cette interface permet à un moteur de débogage (dé) ou des fournisseurs de port personnalisé pour inscrire des programmes pour le débogage.
@@ -48,7 +48,7 @@ Cette interface implémente les méthodes suivantes :
 ## <a name="remarks"></a>Notes
 Cette interface permet de programmes et les nœuds de programme disponible (autrement dit, « » leur publication) pour une utilisation par DEs et le Gestionnaire de session de débogage (SDM). Pour accéder à des programmes publiés et les nœuds de programme, utilisez la [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) interface. Il s’agit de la seule façon de que Visual Studio puisse reconnaître qu’un programme est en cours de débogage.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : msdbg.h
 
 Espace de noms : Microsoft.VisualStudio.Debugger.Interop

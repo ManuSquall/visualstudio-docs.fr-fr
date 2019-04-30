@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4e15692a94e3f1c80d6bd6f12ecb0c2ce7271c8d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56692604"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62876762"
 ---
 # <a name="idebugcodecontext2"></a>IDebugCodeContext2
 Cette interface représente la position de départ d’une instruction de code. Pour la plupart des architectures d’exécution dès aujourd'hui, un contexte de code peut être considéré comme une adresse dans le flux de l’exécution d’un programme.
@@ -45,7 +45,7 @@ IDebugCodeContext2 : IDebugMemoryContext2
 ## <a name="remarks"></a>Notes
  La principale différence entre un `IDebugCodeContext2` interface et un [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) interface est qu’un `IDebugCodeContext2` est toujours instruction aligné. Cela signifie qu’un `IDebugCodeContext2` pointe toujours vers le début d’une instruction, tandis qu’un `IDebugMemoryContext2` peut pointer vers n’importe quel octet de mémoire dans l’architecture de l’exécution. `IDebugCodeContext2` est incrémenté par instructions plutôt que par la taille de stockage de base (généralement octets).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

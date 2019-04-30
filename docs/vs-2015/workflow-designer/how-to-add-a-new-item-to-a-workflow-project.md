@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ecc310896f7b938025d42e06ac5ef0ec8bac3d35
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063623"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62932995"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Procédure : Ajouter un nouvel élément à un projet de workflow
 Après avoir créé un projet de workflow, vous pouvez ajouter à votre projet des activités de workflow, des concepteurs et d'autres éléments [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que vous utilisez habituellement.  

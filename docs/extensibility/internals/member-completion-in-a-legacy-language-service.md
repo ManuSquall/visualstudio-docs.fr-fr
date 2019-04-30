@@ -13,15 +13,15 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 56ad09f2b158c7d23bf40bbafbdba3a9435926e4
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54948386"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909171"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Saisie semi-automatique de membre dans un service de langage hérité
 
-La saisie semi-automatique de membres IntelliSense est une info-bulle qui affiche une liste de membres possibles d’une étendue particulière tel qu’une classe, structure, énumération ou espace de noms. Par exemple, en C#, si l’utilisateur tape « this » suivi d’un point, une liste de tous les membres de la classe ou structure dans la portée actuelle est présentée dans une liste à partir de laquelle l’utilisateur peut sélectionner.
+La saisie semi-automatique de membres IntelliSense est une info-bulle qui affiche une liste de membres possibles d’une étendue particulière tel qu’une classe, structure, énumération ou espace de noms. Par exemple, en c#, si l’utilisateur tape « this » suivi d’un point, une liste de tous les membres de la classe ou structure dans la portée actuelle est présentée dans une liste à partir de laquelle l’utilisateur peut sélectionner.
 
 L’infrastructure de package managé (MPF) fournit la prise en charge pour l’info-bulle et la gestion de la liste dans l’info-bulle ; tout ce qui est nécessaire est coopération à partir de l’analyseur pour fournir les données qui apparaissent dans la liste.
 
@@ -38,13 +38,13 @@ Voici les deux façons dans lequel une liste de membres est indiquée en utilisa
 
 - Le <xref:Microsoft.VisualStudio.Package.IScanner> scanneur détecte un caractère de saisie semi-automatique de membre et définit un déclencheur de jeton de [TokenTriggers.MemberSelect](<xref:Microsoft.VisualStudio.Package.TokenTriggers.MemberSelect>) pour ce caractère.
 
-Un caractère de saisie semi-automatique de membre indique qu’un membre d’une classe, une structure ou une énumération consiste à suivre. Par exemple, en C# ou Visual Basic, le caractère de saisie semi-automatique de membre est un `.`, tandis que dans C++ le caractère est un `.` ou un `->`. La valeur du déclencheur est définie lorsque le caractère de sélection de membre est analysé.
+Un caractère de saisie semi-automatique de membre indique qu’un membre d’une classe, une structure ou une énumération consiste à suivre. Par exemple, en c# ou Visual Basic, le caractère de saisie semi-automatique de membre est un `.`, tandis que dans C++ le caractère est un `.` ou un `->`. La valeur du déclencheur est définie lorsque le caractère de sélection de membre est analysé.
 
 ### <a name="the-intellisense-member-list-command"></a>La commande de liste de membres IntelliSense
 
 Le <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> commande lance un appel à la <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> méthode sur le <xref:Microsoft.VisualStudio.Package.Source> classe et le <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> (méthode), à son tour, appelle le <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> Analyseur de méthode avec le motif de l’analyse de [ParseReason.DisplayMemberList ](<xref:Microsoft.VisualStudio.Package.ParseReason.DisplayMemberList>).
 
-L’analyseur détermine le contexte de la position actuelle, ainsi que le jeton sous ou immédiatement avant la position actuelle. Une liste des déclarations en fonction de ce jeton, est présentée. Par exemple, en C#, si vous positionnez le point d’insertion sur un membre de classe, puis sélectionnez **liste des membres**, vous obtenez une liste de tous les membres de la classe. Si vous placez le signe insertion après une période qui suit une variable objet, vous obtenez une liste de tous les membres de la classe qui représente l’objet. Notez que si le signe insertion est positionné sur un membre lors de l’affichage de la liste des membres, vous sélectionnez un membre dans la liste remplace le membre le signe insertion sur avec celle de la liste.
+L’analyseur détermine le contexte de la position actuelle, ainsi que le jeton sous ou immédiatement avant la position actuelle. Une liste des déclarations en fonction de ce jeton, est présentée. Par exemple, en c#, si vous positionnez le point d’insertion sur un membre de classe, puis sélectionnez **liste des membres**, vous obtenez une liste de tous les membres de la classe. Si vous placez le signe insertion après une période qui suit une variable objet, vous obtenez une liste de tous les membres de la classe qui représente l’objet. Notez que si le signe insertion est positionné sur un membre lors de l’affichage de la liste des membres, vous sélectionnez un membre dans la liste remplace le membre le signe insertion sur avec celle de la liste.
 
 ### <a name="the-token-trigger"></a>Le déclencheur de jeton
 
@@ -103,7 +103,7 @@ Pour la saisie semi-automatique de membres, le <xref:Microsoft.VisualStudio.Pack
 
 L’analyseur est appelé avec [ParseReason.MemberSelect](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelect>) ou [ParseReason.MemberSelectAndHighlightBraces](<xref:Microsoft.VisualStudio.Package.ParseReason.MemberSelectAndHighlightBraces>) quand un caractère de sélection de membre est tapé. L’emplacement indiqué le <xref:Microsoft.VisualStudio.Package.ParseRequest> objet est immédiatement une fois que le membre sélectionné caractère. L’analyseur doit collecter les noms de tous les membres qui peuvent apparaître dans une liste des membres à ce moment précis dans le code source. Puis l’analyseur doit analyser la ligne actuelle pour déterminer la portée de que l’utilisateur veut associé avec le caractère de sélection de membre.
 
-Cette étendue est basée sur le type de l’identificateur avant que le membre Sélectionnez caractère. Par exemple, en C#, étant donné la variable membre `languageService` qui a un type de `LanguageService`, en tapant **languageService.** génère une liste de tous les membres de la `LanguageService` classe. Également dans C#, en tapant **cela.** génère une liste de tous les membres de la classe dans la portée actuelle.
+Cette étendue est basée sur le type de l’identificateur avant que le membre Sélectionnez caractère. Par exemple, en c#, étant donné la variable membre `languageService` qui a un type de `LanguageService`, en tapant **languageService.** génère une liste de tous les membres de la `LanguageService` classe. Également dans c#, en tapant **cela.** génère une liste de tous les membres de la classe dans la portée actuelle.
 
 ### <a name="parser-example"></a>Exemple de l’analyseur
 

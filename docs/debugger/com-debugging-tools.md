@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 181596e7b76dc2288da82e731455710fde0205d8
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54964962"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564741"
 ---
 # <a name="com-debugging-tools"></a>Outils de débogage COM
 
@@ -47,4 +47,4 @@ Les exemples MFC ActiveX OCLIENT et SUPERPAD sont également disponibles pour te
 - [Débogage dans Visual Studio](../debugger/index.md)
 - [Présentation du débogueur](../debugger/debugger-feature-tour.md)
 - [Exemple OCLIENT : Illustre une Application conteneur d’édition visuelle](https://msdn.microsoft.com/library/8cd5c234-9a4e-4934-8f5d-bac189ad92c4)
-- [Exemple SUPERPAD : Illustre un serveur d'édition visuelle qui modifie du texte à l'aide de CEditView](https://msdn.microsoft.com/library/7b14e975-d986-4e6a-8289-226485cfcb72)
+- [Exemple SUPERPAD : Illustre un serveur qui modifie le texte à l’aide de CEditView d’édition visuelle](https://msdn.microsoft.com/library/7b14e975-d986-4e6a-8289-226485cfcb72)

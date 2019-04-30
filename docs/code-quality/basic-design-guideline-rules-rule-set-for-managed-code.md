@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 7c2a9570eeae6d9545bb91f7f1ed0c57df3a9c92
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913848"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62571366"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>Ensemble de règles de règles de conception de base pour le code managé
 Vous pouvez utiliser l’ensemble pour vous concentrer sur ce qui rend votre code plus facile à comprendre et utiliser de règles de règles de conception de base Microsoft. Vous devez inclure cet ensemble de règles si votre projet inclut le code de bibliothèque ou si vous souhaitez appliquer les meilleures pratiques pour le code qui est facile à gérer.

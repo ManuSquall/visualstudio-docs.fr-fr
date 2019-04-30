@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e5373be45884e5229fe03f88f364e75a9cb81f20
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680163"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62918708"
 ---
 # <a name="idebugmethodfield"></a>IDebugMethodField
 Cette interface décrit une méthode.
@@ -51,7 +51,7 @@ IDebugMethodField : IDebugContainerField
 ## <a name="remarks"></a>Notes
  Une méthode peut contenir des paramètres, ainsi que des variables locales.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : sh.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

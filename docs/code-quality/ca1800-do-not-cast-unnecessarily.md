@@ -18,11 +18,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: a13aeeffbc77e4f40ff886c0d890f181697fcc11
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950680"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797177"
 ---
 # <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800 : N'effectuez pas de cast inutilement
 
@@ -41,7 +41,7 @@ Pour l’analyse complète par cette règle, l’assembly testé doit être cons
 ## <a name="rule-description"></a>Description de la règle
 Les casts en doublon font baisser les performances, surtout lorsque les casts sont exécutés au sein d'instructions d'itération compactes. Pour les opérations de casts en doublon explicites, stocker le résultat du cast dans une variable locale et utilisez la variable locale au lieu des opérations de cast en double.
 
-Si C# `is` opérateur est utilisé pour déterminer si le cast va réussir avant l’exécution proprement dite, envisagez de tester le résultat de la `as` opérateur à la place. Cela fournit les mêmes fonctionnalités sans l’opération de cast implicite est effectuée par le `is` opérateur. Ou, dans C# 7.0 et versions ultérieures, utilisez le `is` opérateur avec [critères spéciaux](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is) de vérifier la conversion de type et de convertir l’expression à une variable de ce type en une seule étape.
+Si C# `is` opérateur est utilisé pour déterminer si le cast va réussir avant l’exécution proprement dite, envisagez de tester le résultat de la `as` opérateur à la place. Cela fournit les mêmes fonctionnalités sans l’opération de cast implicite est effectuée par le `is` opérateur. Ou, dans c# 7.0 et versions ultérieures, utilisez le `is` opérateur avec [critères spéciaux](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is) de vérifier la conversion de type et de convertir l’expression à une variable de ce type en une seule étape.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, modifiez l’implémentation de méthode pour réduire le nombre d’opérations de cast.
@@ -61,5 +61,5 @@ Si C# `is` opérateur est utilisé pour déterminer si le cast va réussir avant
 
 ## <a name="see-also"></a>Voir aussi
 
-- [as (référence C#)](/dotnet/csharp/language-reference/keywords/as)
-- [is (référence C#)](/dotnet/csharp/language-reference/keywords/is)
+- [as (référence c#)](/dotnet/csharp/language-reference/keywords/as)
+- [is (référence c#)](/dotnet/csharp/language-reference/keywords/is)

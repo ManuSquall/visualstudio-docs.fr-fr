@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 01af6001bd116fd2b523668eddbdc68d2dd5beab
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194468"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62926430"
 ---
 # <a name="create-custom-project-and-item-templates"></a>Créer des modèles de projet et d’élément personnalisés
 
@@ -80,7 +80,7 @@ Pour les scénarios de création de modèle de base, vous devez utiliser le **Ex
 
 4. Générer la solution, puis appuyez sur **F5**. L’instance expérimentale s’affiche.
 
-5. Pour un projet de modèle de projet, vous devez voir votre modèle de projet répertorié dans le **nouveau projet** boîte de dialogue (**fichier** > **New**  >  **Projet**), dans le nœud Visual Basic ou Visual C#. Pour un projet de modèle d’élément, vous devez voir votre modèle d’élément répertoriée dans le **ajouter un nouvel élément** boîte de dialogue. Pour afficher le **ajouter un nouvel élément** boîte de dialogue, à partir de la **l’Explorateur de solutions**, sélectionnez le nœud du projet, puis cliquez sur **ajouter** > **unnouvelélément**).
+5. Pour un projet de modèle de projet, vous devez voir votre modèle de projet répertorié dans le **nouveau projet** boîte de dialogue (**fichier** > **New**  >  **Projet**), dans le nœud Visual Basic ou Visual c#. Pour un projet de modèle d’élément, vous devez voir votre modèle d’élément répertoriée dans le **ajouter un nouvel élément** boîte de dialogue. Pour afficher le **ajouter un nouvel élément** boîte de dialogue, à partir de la **l’Explorateur de solutions**, sélectionnez le nœud du projet, puis cliquez sur **ajouter** > **unnouvelélément**).
 
 ## <a name="see-also"></a>Voir aussi
 

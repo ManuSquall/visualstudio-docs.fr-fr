@@ -1,5 +1,5 @@
 ---
-title: 'Erreur : Le délai pendant le débogage de Services Web | Microsoft Docs'
+title: 'Erreur : Délai d’attente lors du débogage de Services Web | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 dev_langs:
@@ -16,13 +16,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9979f723a342aaefee80f9410c28aa68047b5e57
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683543"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850207"
 ---
-# <a name="error-timeout-while-debugging-web-services"></a>Erreur : délai d'attente lors du débogage de services Web
+# <a name="error-timeout-while-debugging-web-services"></a>Erreur : expiration du délai d’attente lors du débogage de services web
 Lorsque vous exécutez pas à pas un service web XML à partir du code appelant, l’appel peut parfois dépasser le délai et, par conséquent, vous ne pouvez pas continuer le débogage. Un message d'erreur, tel que celui-ci, peut s'afficher.
 
 ```cmd

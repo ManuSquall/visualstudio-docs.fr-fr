@@ -1,5 +1,5 @@
 ---
-title: 'Comment : déboguer à partir d’un projet de DLL | Microsoft Docs'
+title: 'Procédure : Déboguer à partir d’un projet de DLL | Microsoft Docs'
 ms.date: 10/10/2018
 ms.topic: conceptual
 dev_langs:
@@ -19,17 +19,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a2e4df2028a14281ee2343ad48b4b71812d29fca
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684310"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847989"
 ---
-# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Comment : déboguer à partir d’un projet DLL dans Visual Studio (C#, C++, Visual Basic, F#)
+# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Procédure : Déboguer à partir d’un projet DLL dans Visual Studio (C#, C++, Visual Basic, F#)
 
 Une façon de déboguer un projet de DLL consiste à spécifier l’application appelante dans les propriétés du projet DLL. Vous pouvez ensuite démarrer le débogage à partir du projet DLL lui-même. Pour cette méthode fonctionne, l’application doit appeler la même DLL dans le même emplacement que celui que vous configurez. Si l’application détecte et charge une version différente de la DLL, cette version ne contient pas vos points d’arrêt. Pour d’autres méthodes de débogage de DLL, consultez [projets DLL de débogage](../debugger/debugging-dll-projects.md).
 
-Si votre application managée appelle une DLL native ou votre application native appelle une DLL managée, vous pouvez déboguer la DLL et l’application appelante. Pour plus d’informations, consultez [Guide pratique pour déboguer en mode mixte](../debugger/how-to-debug-in-mixed-mode.md).
+Si votre application managée appelle une DLL native ou votre application native appelle une DLL managée, vous pouvez déboguer la DLL et l’application appelante. Pour plus d'informations, voir [Procédure : Déboguer en mode mixte](../debugger/how-to-debug-in-mixed-mode.md).
 
 Les projets DLL natifs et managés ont des paramètres différents pour spécifier les applications appelantes.
 
@@ -53,7 +53,7 @@ Les projets DLL natifs et managés ont des paramètres différents pour spécifi
 
 ## <a name="specify-a-calling-app-in-a-managed-dll-project"></a>Spécifiez une application appelante dans un projet DLL managée
 
-1. Sélectionnez le C# ou un projet de DLL Visual Basic dans **l’Explorateur de solutions**. Sélectionnez le **propriétés** icône, appuyez sur **Alt**+**entrée**, ou avec le bouton droit et choisissez **propriétés**.
+1. Sélectionnez le projet c# ou Visual Basic DLL dans **l’Explorateur de solutions**. Sélectionnez le **propriétés** icône, appuyez sur **Alt**+**entrée**, ou avec le bouton droit et choisissez **propriétés**.
 
 1. Vérifiez que le champ **Configuration** en haut de la fenêtre est défini sur **Débogage**.
 
@@ -67,7 +67,7 @@ Les projets DLL natifs et managés ont des paramètres différents pour spécifi
 
 1. Ajoutez les arguments de ligne de commande nécessaires dans le **arguments de ligne de commande** ou **arguments Application** champ.
 
-   ![C#Fenêtre de propriétés de débogage](../debugger/media/dbg-debugging-properties-dll-csharp.png " C# fenêtre Propriétés de débogage")
+   ![Fenêtre Propriétés de débogage c#](../debugger/media/dbg-debugging-properties-dll-csharp.png "fenêtre Propriétés de débogage c#")
 
 1. Utilisez **fichier** > **enregistrer les éléments sélectionnés** ou **Ctrl**+**S** pour enregistrer les modifications.
 

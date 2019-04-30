@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ff7a0595da00aa6f575999499c9596ffc1424fc4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691473"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62895623"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>Variante de dimensions de la texture moitié/un quart
 Réduit les dimensions des textures qui ne sont pas des cibles de rendu.
@@ -27,7 +27,7 @@ Réduit les dimensions des textures qui ne sont pas des cibles de rendu.
 
  Si vos textures occupent plus de mémoire GPU que vous n'en disposez, songez à réduire la taille des textures, mais seulement après avoir envisagé de compresser les textures appropriées. Comme les textures de petite taille, les textures compressées occupent moins de mémoire et font moins appel à la pagination en mémoire système, mais elles pâtissent d'une moindre fidélité des couleurs. Si la compression ne convient pas à toutes les textures (par exemple, celles qui présentent une forte variation de couleurs sur une petite surface), ce qui dépend de leur contenu, dans bien des cas, la compression donne de meilleurs résultats en termes de qualité d'image globale que la réduction de la taille.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Les dimensions des textures sont réduites à chaque appel à `ID3D11Device::CreateTexture2D`, qui est chargé de créer une texture source. Plus spécifiquement, les dimensions des textures sont réduites quand l'objet D3D11_TEXTURE2D_DESC passé dans `pDesc` décrit une texture utilisée dans le rendu, à savoir :
 
 - Seul l'indicateur D3D11_BIND_SHADER_RESOURCE du membre BindFlags est défini.

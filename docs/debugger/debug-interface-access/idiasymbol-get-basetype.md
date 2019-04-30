@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e1d38e39fd7687de3ff87737b49972cb389187aa
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640166"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62837605"
 ---
 # <a name="idiasymbolgetbasetype"></a>IDiaSymbol::get_baseType
 Récupère le type de base pour ce symbole<em>.</em>
@@ -41,7 +41,7 @@ En cas de réussite, retourne `S_OK`; sinon, retourne `S_FALSE` ou un code d’e
 > [!NOTE]
 > La valeur de retour `S_FALSE` signifie que la propriété n’est pas disponible pour le symbole.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Le type de base pour un symbole peut être déterminé par tout d’abord obtenir le type du symbole et puis en interrogeant qui a retourné le type pour le type de base. Notez que certains symboles ne peuvent pas avoir un type de base, par exemple, le nom de la structure.
 
 ## <a name="example"></a>Exemple
@@ -59,7 +59,7 @@ if (pType->get_type( &pBaseType ) == S_OK)
 }
 ```
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
 |Spécification|Description|
 |-----------------|-----------------|

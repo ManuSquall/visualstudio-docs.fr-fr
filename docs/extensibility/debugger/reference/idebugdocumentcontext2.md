@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3de9f48109590d6c59a46fd6451a750eecfbaa01
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62921378"
 ---
 # <a name="idebugdocumentcontext2"></a>IDebugDocumentContext2
 Cette interface représente une position dans un document de fichier source.
@@ -48,7 +48,7 @@ IDebugDocumentContext2 : IUnknown
 |[Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md)|Compare ce contexte de document dans un tableau des contextes de document donné.|
 |[Seek](../../../extensibility/debugger/reference/idebugdocumentcontext2-seek.md)|Déplace le contexte de document en un nombre donné d’instructions ou des lignes.|
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

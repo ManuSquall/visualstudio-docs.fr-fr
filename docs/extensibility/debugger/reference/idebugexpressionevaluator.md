@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f74579ba14a99cde35bb12b2a4d320c73802ad75
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62874150"
 ---
 # <a name="idebugexpressionevaluator"></a>IDebugExpressionEvaluator
 > [!IMPORTANT]
@@ -53,7 +53,7 @@ En général, le moteur de débogage (dé) instancie l’évaluateur d’express
 
 Une fois que le EE est instancié, l’Allemagne appelle [analyser](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) pour analyser l’expression et le stocker dans un [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) objet. Plus tard, un appel à [EvaluateSync](../../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) évalue l’expression.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : ee.h
 
 Espace de noms : Microsoft.VisualStudio.Debugger.Interop

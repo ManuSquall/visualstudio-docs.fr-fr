@@ -9,15 +9,15 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 5d63abefc67d54734380e6a1dc7f3364d5400c03
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926201"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62565418"
 ---
 # <a name="the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods"></a>Impossible de supprimer la classe sélectionnée car elle est utilisée comme type de retour pour une ou plusieurs méthodes DataContext
 
-Le type de retour d'une ou plusieurs méthodes <xref:System.Data.Linq.DataContext> est la classe d'entité sélectionnée. Suppression d’une classe d’entité qui est utilisée comme type de retour pour une <xref:System.Data.Linq.DataContext> méthode provoque la compilation du projet échoue. Pour supprimer la classe d'entité sélectionnée, identifiez les méthodes <xref:System.Data.Linq.DataContext> qui l'utilisent et affectez à leurs types de retour une classe d'entité différente.
+Le type de retour d’une ou plusieurs méthodes <xref:System.Data.Linq.DataContext> est la classe d’entité sélectionnée. Suppression d’une classe d’entité qui est utilisée comme type de retour pour une <xref:System.Data.Linq.DataContext> méthode provoque la compilation du projet échoue. Pour supprimer la classe d'entité sélectionnée, identifiez les méthodes <xref:System.Data.Linq.DataContext> qui l'utilisent et affectez à leurs types de retour une classe d'entité différente.
 
 Pour rétablir les types de retour de méthodes <xref:System.Data.Linq.DataContext> à leurs types générés automatiquement d’origine, supprimez en premier la méthode <xref:System.Data.Linq.DataContext> du volet **Méthodes**, puis faites glisser l’objet de l’**Explorateur de serveurs**/**Explorateur de bases de données** vers le **Concepteur O/R**.
 

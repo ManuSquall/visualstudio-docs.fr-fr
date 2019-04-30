@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 629e35e8756be1dfa6df9f21eda02624b4c363de
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691317"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62921903"
 ---
 # <a name="idebugcoreserver3"></a>IDebugCoreServer3
 Cette interface donne accès aux informations sur le serveur, dans que le processus est en cours d’exécution.
@@ -51,7 +51,7 @@ IDebugCoreServer3 : IDebugCoreServer2
 ## <a name="remarks"></a>Notes
  Un fournisseur de port personnalisé reçoit le [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) interface sur un appel à [événement](../../../extensibility/debugger/reference/idebugportevents2-event.md). Le `IDebugCoreServer3` interface peut être obtenue à partir de cette interface.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

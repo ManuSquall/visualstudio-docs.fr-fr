@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 35528f694cf76c1971e07023125706c962e77fe2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708652"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62911818"
 ---
 # <a name="group-element"></a>Élément de groupe
 Définit un groupe de commande VSPackage.
@@ -39,13 +39,13 @@ Définit un groupe de commande VSPackage.
 |guid|Obligatoire. GUID de l’identificateur de commande/ID GUID.|
 |ID|Obligatoire. ID de l’identificateur de commande/ID GUID.|
 |priority|Facultatif. Une valeur numérique qui spécifie la priorité.|
-|Condition|Facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condition|Optionnel. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Éléments enfants
 
 |Élément|Description|
 |-------------|-----------------|
-|Parent|Facultatif. L’élément parent du bouton.|
+|Parent|Optionnel. L’élément parent du bouton.|
 |Annotation|Commentaire facultatif.|
 
 ### <a name="parent-elements"></a>Éléments parents

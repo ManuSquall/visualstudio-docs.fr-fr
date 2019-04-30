@@ -16,11 +16,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: b8103ac689ac812aee2037f0f2e89f1d3a7448c6
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155413"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62583078"
 ---
 # <a name="ijsdebugdatatargetcreatestackframeenumerator-method"></a>IJsDebugDataTarget::CreateStackFrameEnumerator, méthode
 Crée un énumérateur pour les frames de pile.  
@@ -43,7 +43,7 @@ HRESULT CreateStackFrameEnumerator(
   
 ## <a name="return-value"></a>Valeur de retour  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  **En-tête :** jscript9diag.h  
   
 ## <a name="see-also"></a>Voir aussi  

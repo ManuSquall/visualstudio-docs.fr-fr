@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b8027f34b48b4a160c19f14f0d9cbfb8194a506f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688471"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62919981"
 ---
 # <a name="idebugexpression2"></a>IDebugExpression2
 Cette interface représente un prêt de l’expression analysée de liaison et d’évaluation.
@@ -50,7 +50,7 @@ IDebugExpression2 : IUnknown
 
  Dans une implémentation de `IDebugExpressionContext2::ParseText`, l’Allemagne utilise de COM `CoCreateInstance` fonction pour instancier un évaluateur d’expression et obtenir un [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md) interface (consultez l’exemple dans le `IDebugExpressionEvaluator` interface). Le D’appelle ensuite [analyser](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) pour obtenir un [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) interface. Cette interface est utilisée dans l’implémentation de `IDebugExpression2::EvaluateSync` et `IDebugExpression2::EvaluateAsync` pour effectuer l’évaluation.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

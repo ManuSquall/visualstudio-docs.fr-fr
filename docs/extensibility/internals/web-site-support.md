@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ff59be63ef1d6e7120842c936dd64dbb77d7ed70
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62907905"
 ---
 # <a name="web-site-support"></a>Prise en charge de site web
 Un système de projet de site Web est un système de projet qui crée des projets Web. À leur tour, les projets Web créent des applications Web. Un projet de site Web génère un fichier exécutable pour chaque page Web qui est associé à code. Fichiers exécutables supplémentaires sont générés à partir des fichiers de code source dans le dossier/App_Code.

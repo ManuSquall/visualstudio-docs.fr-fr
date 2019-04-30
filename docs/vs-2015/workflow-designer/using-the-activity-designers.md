@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: ce8d963d56a6ad79562db22ab0e59885730c24b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951423"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62858423"
 ---
 # <a name="using-the-activity-designers"></a>Utilisation des concepteurs d'activités
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] inclut plusieurs activités fournies par le système que vous pouvez utiliser lors de la construction de vos activités et workflows. Cette section décrit les catégories d'activités fournies par le système disponibles et leurs concepteurs. Les rubriques relatives aux activités individuelles et à leurs concepteurs respectifs dans chacune de ces catégories décrivent ce que font ces activités et fournissent des indications sur la façon de les utiliser.  

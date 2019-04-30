@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f73b67ac4268c04dfa9ff7ab020891623f528f9b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699247"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851249"
 ---
 # <a name="edit-and-continue-visual-basic"></a>Modifier & Continuer (Visual Basic)
 La fonctionnalité Modifier &amp; Continuer destinée au débogage de [!INCLUDE [vbprvb](../code-quality/includes/vbprvb_md.md)] vous permet d’apporter des modifications à votre code pendant qu’il s’exécute en mode Arrêt. Après avoir modifié le code, vous pouvez continuer son exécution avec les nouvelles modifications en place et observer leurs effets.
@@ -45,7 +45,7 @@ La fonctionnalité Modifier &amp; Continuer destinée au débogage de [!INCLUDE 
  Les rubriques de cette section fournissent des détails supplémentaires sur l’utilisation de cette fonctionnalité et les types de modifications non autorisés.
 
 ## <a name="in-this-section"></a>Dans cette section
- [Comment : appliquer des modifications en Mode arrêt avec Modifier & Continuer](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md) explique comment appliquer des modifications de code en mode arrêt.
+ [Guide pratique pour Appliquer des modifications en Mode arrêt avec Modifier & Continuer](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md) explique comment appliquer des modifications de code en mode arrêt.
 
  [Prise en charge des modifications de Code (C# et Visual Basic)](../debugger/supported-code-changes-csharp.md) décrit les types de modifications ne peut pas être effectuée dans [!INCLUDE [vb_current_short](../debugger/includes/vb_current_short_md.md)] modifier et continuer.
 

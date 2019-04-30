@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3ab7b0617f09b98c9e30c7f198ef0e2aaa301e33
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926305"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62931010"
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;AddIn&gt; élément (développement Office dans Visual Studio)
   Le **addin** élément de la `vstav3` espace de noms contient des informations spécifiques à Microsoft Office VSTO Add-ins et des personnalisations au niveau du document développées avec Visual Studio.
@@ -63,7 +63,7 @@ ms.locfileid: "55926305"
  Obligatoire. Le **mettre à jour** élément est décrit dans [ &#60;mettre à jour&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/update-element-office-development-in-visual-studio.md).
 
 ### <a name="postactions"></a>postActions
- Facultatif. Le **postActions** élément est décrit dans [ &#60;postActions&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/postactions-element-office-development-in-visual-studio.md).
+ Optionnel. Le **postActions** élément est décrit dans [ &#60;postActions&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/postactions-element-office-development-in-visual-studio.md).
 
 ### <a name="application"></a>application
  Obligatoire. Le **application** élément est décrit dans [ &#60;application&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/application-element-office-development-in-visual-studio.md).

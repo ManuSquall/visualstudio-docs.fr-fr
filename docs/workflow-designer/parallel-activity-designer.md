@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 79e1e7e48f7ed7e8cd4084805dfae2018a886a82
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950407"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002775"
 ---
 # <a name="parallel-activity-designer"></a>Concepteur d'activités Parallel
 
-L’activité <xref:System.Activities.Statements.Parallel> exécute simultanément une collection d’activités enfants.
+L'activité <xref:System.Activities.Statements.Parallel> exécute simultanément une collection d'activités enfants.
 
 ## <a name="the-parallel-activity"></a>Activité parallèle
 
@@ -43,7 +43,7 @@ Le tableau suivant répertorie les propriétés des activités parallèles et d�
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Spécifie le nom d'affichage convivial du concepteur d'activités dans l'en-tête. La valeur par défaut est **parallèles**. La valeur peut être modifiée si vous le souhaitez dans le **propriétés** grille ou directement sur l’en-tête du Concepteur d’activité.|
 |<xref:System.Activities.Statements.Parallel.Branches%2A>|True|Contient la collection des activités enfants à exécuter.|
-|<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|False|Évaluée une fois qu’une branche est terminée. Si elle a la valeur **True**, puis planifiées branches en attente sont annulées. Si cette propriété n’est pas définie ou a la valeur **False**, l’activité se termine lorsque toutes ses activités enfants sont terminées. La valeur par défaut est **null**.|
+|<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|False|Évaluée une fois qu'une branche est terminée. Si elle a la valeur **True**, puis planifiées branches en attente sont annulées. Si cette propriété n’est pas définie ou a la valeur **False**, l’activité se termine lorsque toutes ses activités enfants sont terminées. La valeur par défaut est **null**.|
 
 ## <a name="see-also"></a>Voir aussi
 

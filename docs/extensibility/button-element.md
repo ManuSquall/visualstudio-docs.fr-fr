@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1e62436d32d85c76685c86ea0da396dacae1bf3f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694268"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891698"
 ---
 # <a name="button-element"></a>Élément Button
 Définit un élément de l’utilisateur peut interagir avec. Boutons peuvent être de différents types : Bouton, bouton de menu et SplitDropDown.
@@ -49,8 +49,8 @@ Définit un élément de l’utilisateur peut interagir avec. Boutons peuvent ê
 
 |Élément|Description|
 |-------------|-----------------|
-|[Élément parent](../extensibility/parent-element.md)|Facultatif. L’élément parent du bouton.|
-|[Élément Icon](../extensibility/icon-element.md)|Facultatif. L’icône associée au bouton.|
+|[Élément parent](../extensibility/parent-element.md)|Optionnel. L’élément parent du bouton.|
+|[Élément Icon](../extensibility/icon-element.md)|Optionnel. L’icône associée au bouton.|
 |[Élément Command flag](../extensibility/command-flag-element.md)|Obligatoire. Voici les valeurs CommandFlag valides pour un bouton.<br /><br /> - AllowParams<br /><br /> - CommandWellOnly<br /><br /> -DefaultDisabled<br /><br /> -DefaultInvisible<br /><br /> - DontCache<br /><br /> - DynamicItemStart<br /><br /> -DynamicVisibility<br /><br /> - FixMenuController<br /><br /> - IconAndText<br /><br /> -NoButtonCustomize<br /><br /> -NoCustomize<br /><br /> -NoKeyCustomize<br /><br /> - NoShowOnMenuController<br /><br /> -Pict<br /><br /> -PostExec<br /><br /> -ProfferedCmd<br /><br /> - RouteToDocs<br /><br /> - TextCascadeUseBtn<br /><br /> - TextMenuUseButton<br /><br /> -TextChanges<br /><br /> - TextChangesButton<br /><br /> - TextContextUseButton<br /><br /> - TextMenuCtrlUseMenu<br /><br /> - TextMenuUseButton<br /><br /> -TextOnly|
 |[Élément Strings](../extensibility/strings-element.md)|Obligatoire. L’enfant [élément ButtonText](../extensibility/buttontext-element.md) doit être défini.|
 |Annotation|Commentaire facultatif.|

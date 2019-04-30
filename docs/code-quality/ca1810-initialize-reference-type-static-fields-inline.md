@@ -18,11 +18,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 1fca9742a4fe5e778c0b172adad7996dcad58ca4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923484"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62796869"
 ---
 # <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810 : Initialisez les champs statiques de type référence en ligne
 
@@ -37,7 +37,7 @@ ms.locfileid: "55923484"
  Un type référence déclare un constructeur statique explicite.
 
 ## <a name="rule-description"></a>Description de la règle
- Lorsqu’un type déclare un constructeur statique explicite, le compilateur juste-à-temps (JIT, Just-In-Time) ajoute une vérification à chacun des méthodes statiques et constructeurs d’instances du type afin de garantir que le constructeur statique a été appelé précédemment. L’initialisation statique est déclenchée lorsqu’un membre statique est accessible ou lorsqu’une instance du type est créée. Toutefois, l’initialisation statique n’est pas déclenchée si vous déclarez une variable du type, mais ne l’utilisez pas, ce qui peut être important si l’initialisation modifie l’état global.
+ Lorsqu'un type déclare un constructeur statique explicite, le compilateur juste-à-temps (JIT, Just-In-Time) ajoute une vérification à chacun des méthodes statiques et constructeurs d'instances du type afin de garantir que le constructeur statique a été appelé précédemment. L’initialisation statique est déclenchée lorsqu’un membre statique est accessible ou lorsqu’une instance du type est créée. Toutefois, l’initialisation statique n’est pas déclenchée si vous déclarez une variable du type, mais ne l’utilisez pas, ce qui peut être important si l’initialisation modifie l’état global.
 
  Lorsque toutes les données statiques sont initialisées inline et un constructeur statique explicite n’est pas déclaré, les compilateurs Microsoft intermediate language (MSIL) ajoutent le `beforefieldinit` indicateur et un constructeur statique implicit qui initialise les données statiques, pour le type MSIL définition. Lorsque le compilateur JIT rencontre le `beforefieldinit` indicateur, la plupart du temps, les vérifications du constructeur statique ne sont pas ajoutées. L’initialisation statique est garantie à un moment avant que tous les champs statiques sont accessibles, mais pas avant un constructeur d’instance ou méthode statique est appelé. Notez que l’initialisation statique peut se produire à tout moment après la déclaration d’une variable du type.
 

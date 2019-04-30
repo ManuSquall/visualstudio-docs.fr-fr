@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 01b696b2054bc1ec41c7bdbd432371ed937008b3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922197"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433979"
 ---
-# <a name="transaction-activity-designers"></a>Concepteurs d’activités de transaction
+# <a name="transaction-activity-designers"></a>Concepteurs d'activités de transaction
 
 Les concepteurs d’activités de transaction permettent de créer et configurer des activités transactionnelles telles que la compensation et la confirmation. Les rubriques contenues dans cette section et répertoriées dans le tableau suivant fournissent des conseils sur l’utilisation de l’activité du Concepteur de Workflow et les concepteurs de modèles.

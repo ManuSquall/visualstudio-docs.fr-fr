@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: daad54225170366d98a2df3465c7dba952098c4e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62870100"
 ---
 # <a name="idebugprogram2"></a>IDebugProgram2
 Cette interface représente un programme qui s’exécute dans un processus.
@@ -61,7 +61,7 @@ IDebugProgram2 : IUnknown
 |[EnumCodePaths](../../../extensibility/debugger/reference/idebugprogram2-enumcodepaths.md)|Énumère les chemins de code de ce programme.|
 |[WriteDump](../../../extensibility/debugger/reference/idebugprogram2-writedump.md)|Écrit un fichier de vidage dans un fichier.|
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

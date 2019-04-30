@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6a9b480a497953eebeef1918657ed901de10845a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605274"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829919"
 ---
 # <a name="idiaenuminjectedsources"></a>IDiaEnumInjectedSources
 Énumérer les différentes sources injectés contenues dans la source de données.
@@ -41,7 +41,7 @@ Le tableau suivant présente les méthodes de `IDiaEnumInjectedSources`.
 |[IDiaEnumInjectedSources::Reset](../../debugger/debug-interface-access/idiaenuminjectedsources-reset.md)|Réinitialise une séquence d’énumération au début.|
 |[IDiaEnumInjectedSources::Clone](../../debugger/debug-interface-access/idiaenuminjectedsources-clone.md)|Crée un énumérateur qui contient le même état d’énumération que l’énumérateur en cours.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
 ## <a name="notes-for-callers"></a>Notes de publication pour les appelants
 Cette interface est obtenue en appelant le [IDiaSession::findInjectedSource](../../debugger/debug-interface-access/idiasession-findinjectedsource.md) méthode portant le nom d’un fichier source spécifique ou en appelant le [IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md) méthode avec le GUID de la `IDiaEnumInjectedSources` interface.
@@ -105,8 +105,8 @@ void DumpAllInjectedSources( IDiaSession* pSession)
 }
 ```
 
-## <a name="requirements"></a>Spécifications
-En-tête : Dia2.h
+## <a name="requirements"></a>Configuration requise
+En-tête : Dia2.h
 
 Bibliothèque : diaguids.lib
 

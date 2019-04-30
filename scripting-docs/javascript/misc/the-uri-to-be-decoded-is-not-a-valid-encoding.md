@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 8fd8add72d016bc3f2e815f41c29c735505c8817
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108423"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006219"
 ---
 # <a name="the-uri-to-be-decoded-is-not-a-valid-encoding"></a>L'URI à décoder contient un caractère incorrect
 Vous avez tenté de décoder un incorrectement formé URI (Uniform Resource Identifier). URI ont une syntaxe spéciale ; la plupart des caractères non alphanumériques doivent être encodés avant de pouvoir être utilisés dans un URI. Vous pouvez utiliser la `encodeURI` et `encodeURIComponent` méthodes pour créer un URI à partir d’un élément normal [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] chaîne.  

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 75b518e1bf59ebd0e92d7cef311277ccf7d98c82
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096749"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815838"
 ---
 # <a name="how-to-run-code-analysis-manually-for-managed-code"></a>Procédure : Exécuter manuellement l’analyse du Code pour le Code managé
 L’outil d’analyse de code vous fournit des informations sur les erreurs éventuelles dans votre code source. Vous pouvez exécuter l’analyse du code automatiquement avec chaque génération d’un projet de code, et vous pouvez également exécuter l’analyse du code manuellement. Les règles sont vérifiées lors de l’exécution de l’analyse du code sont spécifiées dans la page analyse du Code des pages de propriétés de projet. Pour plus d'informations, voir [Procédure : Configurer l’analyse du Code pour un projet de Code managé](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)

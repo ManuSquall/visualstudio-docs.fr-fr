@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 604c68ef82f66358238f94b43f000fae24a076f1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616831"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834150"
 ---
 # <a name="idiatable"></a>IDiaTable
 Énumère une table de source de données DIA.
@@ -38,7 +38,7 @@ Le tableau suivant présente les méthodes de `IDiaTable`.
 |[IDiaTable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md)|Récupère le nombre d’éléments dans la table.|
 |[IDiaTable::Item](../../debugger/debug-interface-access/idiatable-item.md)|Récupère une référence à un index d’entrée particulier.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Cette interface implémente la `IEnumUnknown` méthodes d’énumération dans l’espace de noms d’assemblys Microsoft.VisualStudio.OLE.Interop. Le `IEnumUnknown` interface d’énumération est beaucoup plus efficace pour itérer sur la table des matières que le [IDiaTable::get_Count](../../debugger/debug-interface-access/idiatable-get-count.md) et [IDiaTable::Item](../../debugger/debug-interface-access/idiatable-item.md) méthodes.
 
 L’interprétation de la `IUnknown` interface retournée à partir de le le `IDiaTable::Item` méthode ou le `Next` (méthode) (dans l’espace de noms d’assemblys Microsoft.VisualStudio.OLE.Interop) est dépendant du type de table. Par exemple, si le `IDiaTable` interface représente une liste des sources injectés, le `IUnknown` interface doit être interrogée pour la [IDiaInjectedSource](../../debugger/debug-interface-access/idiainjectedsource.md) interface.
@@ -130,8 +130,8 @@ void UseTable(IDiaSession *pSession)
 }
 ```
 
-## <a name="requirements"></a>Spécifications
-En-tête : Dia2.h
+## <a name="requirements"></a>Configuration requise
+En-tête : Dia2.h
 
 Bibliothèque : diaguids.lib
 

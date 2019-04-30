@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 77a7138e436002a0fda4e9ab72222821d2c9809e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634563"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909031"
 ---
 # <a name="registering-a-legacy-language-service"></a>L’inscription d’un Service de langage hérité
 Les sections suivantes fournissent des listes d’entrées de Registre pour les différents langages des options de service disponibles dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
@@ -27,7 +27,7 @@ Les sections suivantes fournissent des listes d’entrées de Registre pour les 
 ## <a name="registry-entries-for-language-service-options"></a>Entrées de Registre pour les Options de Service de langage
  Le *VS Reg racine*\Languages\Language Services\\*Nom_langage* clé peut contenir les valeurs suivantes.
 
-|Name|Type|Plage|Description|
+|Nom|Type|Plage|Description|
 |----------|----------|-----------|-----------------|
 |(Default)|REG_SZ|*\<GUID>*|GUID du service de langage.|
 |LangResID|REG_DWORD|0x0-0xffff|Identificateur de ressource (ResID) pour le nom localisé de la langue de la chaîne.|
@@ -64,7 +64,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-debugger-languages-options"></a>Entrées de Registre pour les Options de langages de débogueur
  Le *VS Reg racine*\Languages\Language Services\\*Nom_langage*\Debugger langues\\*GUID*\ clé peut inclure les éléments suivants valeurs.
 
-|Name|Type|Plage|Description|
+|Nom|Type|Plage|Description|
 |----------|----------|-----------|-----------------|
 |(Default)|REG_SZ|ASCII|La valeur par défaut peut être utilisée pour documenter le nom de la langue. Le nom de cette clé est un GUID d’un évaluateur d’expression qui a une entrée correspondante dans  *\<VS Reg racine >* \AD7Metrics\Expression évaluateur.|
 
@@ -83,7 +83,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-tools-options"></a>Entrées de Registre pour les Options des outils de l’éditeur
  Vous pouvez ajouter des clés de Registre sous la clé EditorToolsOptions pour pages de propriétés et les nœuds de la propriété. Ces clés et leurs valeurs identifient les pages de propriétés dans le **Options** boîte de dialogue (sur le **outils** menu) qui sont utilisés pour configurer le service de langage. Dans l’exemple suivant, *nom de la Page* est le nom d’une page de propriété, et *Nom_nœud* est le nom d’un nœud dans l’arborescence sur la **Options** boîte de dialogue. L’entrée de page et de l’entrée de nœud doivent être spécifiés séparément.
 
-|Name|Type|Plage|Description|
+|Nom|Type|Plage|Description|
 |----------|----------|-----------|-----------------|
 |(Default)|REG_SZ|ResID|Le nom complet localisé de cette page d’option. Le nom peut être texte littéral ou #`nnn`, où `nnn` est un ID de ressource de chaîne dans la DLL du VSPackage spécifié satellite.|
 |Package|REG_SZ|*GUID*|Le GUID du VSPackage qui implémente cette page d’options.|
@@ -117,7 +117,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-file-name-extension-options"></a>Entrées de Registre pour les Options d’Extension de nom de fichier
  L’entrée pour l’extension de fichier doit inclure le point, par exemple « .myext ».
 
-|Name|Type|Plage|Description|
+|Nom|Type|Plage|Description|
 |----------|----------|-----------|-----------------|
 |(Default)|REG_SZ|*GUID*|GUID du service pour le service de langage par défaut pour ce type d’extension de nom du fichier.|
 
@@ -134,7 +134,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-options"></a>Entrées de Registre pour les Options de l’éditeur
  Le *VS Reg racine*\Editors clé peut contenir les valeurs suivantes :
 
-|Name|Type|Plage|Description|
+|Nom|Type|Plage|Description|
 |----------|----------|-----------|-----------------|
 |(Default)|REG_SZ|""|Non utilisé ; Vous pouvez placer votre nom ici pour obtenir une documentation.|
 |DefaultToolboxTab|REG_SZ|""|Nom de l’onglet de boîte à outils à utiliser par défaut lors de l’éditeur est actif.|
@@ -159,7 +159,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-logical-view-options"></a>Entrées de Registre pour les Options de vue logique
  Le *VS Reg racine*\Editors\\*GUI de l’éditeur >* \LogicalViews clé peut contenir les valeurs suivantes.
 
-|Name|Type|Plage|Description|
+|Nom|Type|Plage|Description|
 |----------|----------|-----------|-----------------|
 |(Default)|REG_SZ||Non utilisé.|
 |*\<GUID>*|REG_SZ|""|Clé pour les vues logiques prises en charge. Vous pouvez avoir autant que nécessaire. Le nom de l’entrée de Registre est ce qui est important, pas la valeur, qui est toujours une chaîne vide.|
@@ -181,7 +181,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ## <a name="registry-entries-for-editor-extension-options"></a>Entrées de Registre pour les Options de l’Extension de l’éditeur
  Le *VS Reg racine*\Editors\\*GUID d’éditeur*\Extensions clé peut contenir les valeurs suivantes. L’extension de nom de fichier n’inclut pas le point de début.
 
-|Name|Type|Plage|Description|
+|Nom|Type|Plage|Description|
 |----------|----------|-----------|-----------------|
 |(Default)|REG_SZ||Non utilisé.|
 |*\<ext>*|REG_DWORD|0-0xffffffff|Priorité relative des extensions. Si deux ou plusieurs langues partagent la même extension, la langue de priorité plus élevée est choisie.|
@@ -207,7 +207,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\
 
  Ces entrées de Registre sont accessibles via la <xref:Microsoft.VisualStudio.Package.LanguagePreferences> classe.
 
-|Name|Type|Plage|Description|
+|Nom|Type|Plage|Description|
 |----------|----------|-----------|-----------------|
 |CodeSense|REG_DWORD|0-1|Prise en charge pour les opérations IntelliSense.|
 |MatchBraces|REG_DWORD|0-1|Prise en charge pour la correspondance des paires de langages tels que des accolades, parenthèses et crochets.|

@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 3fff0639659f7470b5f4baa69e4038b3544036c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044146"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007464"
 ---
 # <a name="illegal-assignment-javascript"></a>Assignation non conforme (JavaScript)
 Vous avez tenté d’assigner une valeur à un identificateur en lecture seule. Vous ne pouvez pas affecter une valeur à un identificateur en lecture seule. Par exemple, hôte défini des objets et des objets COM externes.  

@@ -9,11 +9,11 @@ manager: viveis
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2bb74703f639848d643f536edf620e30b1836310
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806451"
 ---
 # <a name="open-folder-extensibility"></a>Extensibilité de dossier ouverte
 
@@ -26,7 +26,7 @@ Le [ouvrir le dossier](../ide/develop-code-in-visual-studio-without-projects-or-
 
 Lorsqu’il est utilisé avec les charges de travail par exemple, pour le développement .NET et C++, les utilisateurs obtiennent également :
 
-* Intellisense enrichi
+* Rich Intellisense
 * Fonctionnalités spécifiques au langage
 
 Avec ouvrir le dossier, les auteurs d’extension peuvent créer des fonctionnalités riches pour n’importe quel langage. Il existe des API pour la prise en charge de génération, de débogage et de recherche de symbole de code de base de n’importe quel fichier dans un utilisateur. Les extendeurs actuels peuvent mettre à jour leurs fonctionnalités existantes de Visual Studio pour comprendre le code sans le soutien de projets ou d’une solution.

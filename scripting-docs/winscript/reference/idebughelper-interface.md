@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d1708b742a484a2e7d6d48cf759f15c08711e13d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58148058"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979186"
 ---
 # <a name="idebughelper-interface"></a>IDebugHelper, interface
 Sert de fabrique pour les explorateurs d’objets et les points de connexion simple. Le Gestionnaire de débogage de processus (PDM) implémente cette interface, qui est consommée par les moteurs de script.  

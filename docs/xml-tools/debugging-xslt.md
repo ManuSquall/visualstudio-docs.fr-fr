@@ -10,11 +10,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 23e108e476bfa9cb3ce699a16c77eb3520ed4785
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526384"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838478"
 ---
 # <a name="debugging-xslt"></a>Débogage XSLT
 
@@ -86,7 +86,7 @@ namespace ConsoleApplication
 }
 ```
 
-## <a name="xslt-profiler"></a>Générateur de profils XSLT
+## <a name="xslt-profiler"></a>Profileur XSLT
 
 Le [Générateur de profils XSLT](../xml-tools/xslt-profiler.md) est un outil qui permet aux développeurs de mesurer, évaluer et cibler les problèmes de performances dans le code XSLT en créant des rapports de performances XSLT détaillés. Pour plus d’informations, consultez [Générateur de profils XSLT](../xml-tools/xslt-profiler.md).
 

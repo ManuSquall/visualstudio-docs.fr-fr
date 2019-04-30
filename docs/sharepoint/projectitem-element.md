@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2768a2e55b3e38158f2ef6b856a653a1a2c12dfa
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58322992"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62562401"
 ---
 # <a name="projectitem-element"></a>ProjectItem (élément)
   Représente un élément de projet SharePoint. Cet élément de l’élément racine requis de la *.spdata* fichier.

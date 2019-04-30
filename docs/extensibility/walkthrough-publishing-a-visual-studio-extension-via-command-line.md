@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a2d68554ed982313e631938401f855a47dd9a35a
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983375"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966264"
 ---
 # <a name="walkthrough-publishing-a-visual-studio-extension-via-command-line"></a>Procédure pas à pas : Publication d’une extension de Visual Studio via la ligne de commande
 
@@ -200,7 +200,7 @@ Pour suivre cette procédure pas à pas, vous devez installer le Kit de dévelop
 
 Dans ce cas, nous allons utiliser une extension de package Visual Studio par défaut, mais les mêmes étapes sont valides pour chaque type d’extension.
 
-1. Créer un VSPackage en C# nommé « TestPublish » qui comporte une commande de menu. Pour plus d’informations, consultez [créer votre première Extension : Hello World](../extensibility/extensibility-hello-world.md).
+1. Créer un VSPackage en c# nommé « TestPublish » qui comporte une commande de menu. Pour plus d’informations, consultez [créer votre première Extension : Hello World](../extensibility/extensibility-hello-world.md).
 
 ### <a name="package-your-extension"></a>Votre extension de package
 

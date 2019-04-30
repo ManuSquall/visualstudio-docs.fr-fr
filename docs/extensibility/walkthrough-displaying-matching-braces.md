@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ae1b0f45d119b759d6618630a65353eff4415c78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086531"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62795993"
 ---
 # <a name="walkthrough-display-matching-braces"></a>Procédure pas à pas : Afficher les accolades correspondantes
 Implémenter des fonctionnalités en fonction de langage, par exemple, les accolades correspondantes en définissant les accolades que vous souhaitez faire correspondre et en ajoutant une balise de marqueur de texte pour les accolades correspondantes lorsque le signe insertion se trouve sur un des accolades. Vous pouvez définir des accolades dans le contexte d’une langue, définir votre propre extension de nom de fichier et le type de contenu et appliquer les balises pour juste que tapez, ou appliquent les balises à un type de contenu existant (par exemple, « text »). La procédure suivante montre comment appliquer des balises pour le type de contenu « texte » de la correspondance des accolades.

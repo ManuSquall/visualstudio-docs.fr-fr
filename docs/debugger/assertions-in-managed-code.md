@@ -23,11 +23,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: a2637e801ba0d317e4c0abec8bd12197656dc844
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067402"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564136"
 ---
 # <a name="assertions-in-managed-code"></a>Assertions dans du code managé
 Une assertion, ou instruction `Assert`, teste une condition, que vous spécifiez en tant qu'argument à l'instruction `Assert`. Si la condition a la valeur true, aucune action ne se produit. Si la condition a la valeur false, l'assertion échoue. S'il est exécuté avec une version Debug, votre programme passe en mode arrêt.

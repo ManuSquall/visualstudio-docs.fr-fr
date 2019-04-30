@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: d3fc446207d2f8c2800135154ca435b821a0afd1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825440"
 ---
 # <a name="naming-warnings"></a>avertissements liés à l’affectation de noms
 Avertissements d’affectation de noms prend en charge l’adhésion aux conventions d’affectation de noms de directives de conception .NET Framework.

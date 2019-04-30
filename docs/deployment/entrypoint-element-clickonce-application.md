@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 615a606dc4d04682a9d5a1a69c91b4d2cd67de15
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665257"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928609"
 ---
 # <a name="ltentrypointgt-element-clickonce-application"></a>&lt;point d’entrée&gt; , élément (application ClickOnce)
 Identifie l’assembly qui doit être exécutée lorsque cela [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application est exécutée sur un ordinateur client.
@@ -56,7 +56,7 @@ Identifie l’assembly qui doit être exécutée lorsque cela [!INCLUDE[ndpteccl
 
 |Attribut|Description|
 |---------------|-----------------|
-|`name`|Facultatif. Cette valeur n’est pas utilisée par .NET Framework.|
+|`name`|Optionnel. Cette valeur n’est pas utilisée par .NET Framework.|
 
  `entryPoint` comporte les éléments suivants.
 
@@ -81,7 +81,7 @@ Identifie l’assembly qui doit être exécutée lorsque cela [!INCLUDE[ndpteccl
  Cet élément possède pas d’attributs et aucun enfant.
 
 ## <a name="customux"></a>customUX
- Facultatif. Spécifie que l’application est installée et géré par un programme d’installation personnalisé et ne pas créer une entrée de menu Démarrer, raccourci ou ajouter ou supprimer l’entrée de programmes.
+ Optionnel. Spécifie que l’application est installée et géré par un programme d’installation personnalisé et ne pas créer une entrée de menu Démarrer, raccourci ou ajouter ou supprimer l’entrée de programmes.
 
 ```xml
 <customUX xmlns="urn:schemas-microsoft-com:clickonce.v1" />

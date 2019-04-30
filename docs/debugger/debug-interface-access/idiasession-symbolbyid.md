@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9b58fcf55741975a776e222b2845ae50774e7fc9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645509"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832912"
 ---
 # <a name="idiasessionsymbolbyid"></a>IDiaSession::symbolById
 Récupère un symbole par son identificateur unique.
@@ -43,7 +43,7 @@ HRESULT symbolById (
 ## <a name="return-value"></a>Valeur de retour
 En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 L’identificateur spécifié est une valeur unique utilisée en interne par le SDK DIA pour rendre tous les symboles unique.
 
 Cette méthode peut être utilisée, par exemple, pour récupérer le symbole représentant le type d’un autre symbole (voir l’exemple).

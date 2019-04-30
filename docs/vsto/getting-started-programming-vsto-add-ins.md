@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7b709012dafe0db3dcc0959908a1e6b4d9e07e21
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061985"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788768"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>Commencer à programmer des Compléments VSTO
   Vous pouvez utiliser des compléments VSTO pour automatiser des applications Microsoft Office, étendre les fonctionnalités de l’application et personnaliser son interface utilisateur. Pour plus d’informations sur les différences de compléments VSTO à d’autres types de solutions Office que vous pouvez créer à l’aide de Visual Studio, consultez [présentation du développement de solutions Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).

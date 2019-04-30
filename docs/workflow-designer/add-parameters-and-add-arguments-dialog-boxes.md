@@ -11,11 +11,11 @@ ms.workload:
 - multiple
 author: gewarren
 ms.openlocfilehash: f9ad4828eb3103ebbd014420e71c23f5411d9729
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55953670"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993369"
 ---
 # <a name="add-parameters-and-add-arguments-dialog-boxes"></a>Boîtes de dialogue Ajouter des paramètres et Ajouter des arguments
 
@@ -32,6 +32,6 @@ Le tableau suivant décrit les éléments d’interface utilisateur utilisateur 
 |||
 |-|-|
 |**Name**|Nom de l'argument.|
-|**Direction**|Spécifie si l’argument représente le flux de données dans le délégué, hors du délégué, ou les deux.|
+|**Direction**|Spécifie si l'argument représente le flux de données dans le délégué, hors du délégué, ou les deux.|
 |**Type**|Nom du type du nouvel argument.|
 |**Valeur**|Valeur à utiliser pour cette instance de l’argument de délégué.|

@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 0135d9f782976f1d6ad6e2e09dc95c27cc66d846
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951430"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976732"
 ---
 # <a name="debugging-workflows-with-the-workflow-designer"></a>Débogage de workflows avec Workflow Designer
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] permet de déboguer des workflows et des activités personnalisées. Le processus et le comportement sont semblables à celui du débogueur [!INCLUDE[vs2010](../includes/vs2010-md.md)] par défaut. Les rubriques de cette section expliquent comment exécuter des procédures de débogage traditionnelles ainsi que le débogage de code XAML et d'expressions.  

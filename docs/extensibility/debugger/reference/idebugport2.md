@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 14c21b4f1546b262fb61c0da3ea95adee2aef8fa
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687417"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62918280"
 ---
 # <a name="idebugport2"></a>IDebugPort2
 Cette interface représente un port de débogage sur un ordinateur.
@@ -51,7 +51,7 @@ IDebugPort2 : IUnknown
 ## <a name="remarks"></a>Notes
  Le port local fournit l’accès à tous les processus et les programmes en cours d’exécution sur l’ordinateur local. Autres ports peuvent représenter une connexion de câble série à un périphérique Windows CE, ou une connexion réseau à un ordinateur non-DCOM. Le `IDebugPort2` interface est utilisée pour rechercher le nom et l’identificateur d’un port et énumérer tous les processus en cours d’exécution sur le port. Installations pour lancer et arrêter les processus sur le port sont implémentées dans le `IDebugPortEx2` interface.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

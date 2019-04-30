@@ -24,11 +24,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1105e6c68e1ec9083fd790ad8a38b09870345af2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62580944"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>Créer des composants WebPart pour SharePoint
   À l’aide de composants WebPart, vous pouvez modifier le contenu, l’apparence et comportement des pages d’un site SharePoint à l’aide d’un navigateur. Composants WebPart sont des contrôles côté serveur qui s’exécutent à l’intérieur d’une page WebPart : ils sont les blocs de construction des pages qui s’affichent sur un site SharePoint. Consultez [bloc de construction : Composants WebPart](http://go.microsoft.com/fwlink/?LinkID=182097).

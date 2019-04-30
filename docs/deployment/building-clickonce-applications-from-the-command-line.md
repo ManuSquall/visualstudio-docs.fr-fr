@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fcab7ac3bb2a7983d8500b6f27f910fa33fc1efe
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58567839"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929160"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>Générer des applications ClickOnce à partir de la ligne de commande
 Dans [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)], vous pouvez générer des projets à partir de la ligne de commande, même s’ils sont créés dans l’environnement de développement intégré (IDE). En fait, vous pouvez régénérer un projet créé avec [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] sur un autre ordinateur disposant uniquement le [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] installé. Cela vous permet de reproduire une build à l’aide d’un processus automatisé, par exemple, dans une build centrale laboratoire ou à l’aide de techniques de script avancées dépasse le cadre de la génération du projet lui-même.
@@ -33,9 +33,9 @@ Dans [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md
 
  Une « cible » est un indicateur à MSBuild sur la façon de traiter la commande. Les principales cibles sont la cible « build » et la cible « publier ». La cible de génération est l’équivalent à la sélection de la Build command (ou en appuyant sur F5) dans l’IDE. Si vous souhaitez uniquement générer votre projet, vous pouvez obtenir qui en tapant `msbuild`. Cette commande fonctionne parce que la cible de génération est la cible par défaut pour tous les projets générés par [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]. Cela signifie que vous n’avez pas explicitement besoin spécifier la cible de génération. Par conséquent, en tapant `msbuild` est la même opération que tapant `msbuild /target:build`.
 
- Le `/target:publish` commande indique à MSBuild d’appeler la cible de publication. La cible build dépend de la cible de publication. Cela signifie que l’opération de publication est un sur-ensemble de l’opération de génération. Par exemple, si vous avez apporté une modification à un de vos Visual Basic ou C# fichiers sources, l’assembly correspondant seraient automatiquement régénérés par l’opération de publication.
+ Le `/target:publish` commande indique à MSBuild d’appeler la cible de publication. La cible build dépend de la cible de publication. Cela signifie que l’opération de publication est un sur-ensemble de l’opération de génération. Par exemple, si vous avez apporté une modification à un de vos fichiers sources Visual Basic ou c#, l’assembly correspondant est automatiquement régénéré par l’opération de publication.
 
- Pour plus d’informations sur la génération d’un intégral [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement à l’aide de l’outil de ligne de commande Mage.exe pour créer votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste, consultez [procédure pas à pas : déployer manuellement une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+ Pour plus d’informations sur la génération d’un intégral [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement à l’aide de l’outil de ligne de commande Mage.exe pour créer votre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifeste, consultez [procédure pas à pas : Déployer manuellement une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
 ## <a name="create-and-build-a-basic-clickonce-application-with-msbuild"></a>Créer et générer une application ClickOnce de base avec MSBuild
 
@@ -169,4 +169,4 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 - <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>
 - <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest>
 - [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md)
-- [Procédure pas à pas : déployer manuellement une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
+- [Procédure pas à pas : Déployer manuellement une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

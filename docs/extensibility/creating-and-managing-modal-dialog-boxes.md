@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dfd0fb71aaca9cb3de2d7cc6d3b6229042a4e7fa
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318405"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62926404"
 ---
 # <a name="create-and-manage-modal-dialog-boxes"></a>Créer et gérer des boîtes de dialogue modales
 Lorsque vous créez une boîte de dialogue modale dans Visual Studio, vous devez vous assurer que la fenêtre parente de la boîte de dialogue est désactivée lorsque la boîte de dialogue s’affiche, puis réactiver la fenêtre parente après la fermeture de la boîte de dialogue. Si vous ne le faites pas, vous pouvez recevoir l’erreur : *Microsoft Visual Studio ne peut pas arrêter, car une boîte de dialogue modale est active. Fermez la boîte de dialogue et réessayez.*

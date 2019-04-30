@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 37639068b74b5d99864871355a8b9ef36906f6cd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628726"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62987985"
 ---
 # <a name="api-reference-sharepoint-tools-extensibility"></a>Référence des API (extensibilité des outils SharePoint)
   Cette section contient la documentation de référence des API permettant d’étendre les outils SharePoint dans Visual Studio.
@@ -29,7 +29,7 @@ ms.locfileid: "56628726"
 
  <xref:Microsoft.VisualStudio.SharePoint.Commands>
 
- Contient des types que vous pouvez utiliser pour créer des *commandes SharePoint*. Une commande SharePoint est une méthode qui appelle le modèle objet serveur SharePoint à partir d’une extension des outils SharePoint.
+ Contient des types que vous pouvez utiliser pour créer des *commandes SharePoint*. Une commande SharePoint est une méthode qui appelle le modèle objet serveur SharePoint à partir d'une extension des outils SharePoint.
 
  <xref:Microsoft.VisualStudio.SharePoint.Deployment>
 

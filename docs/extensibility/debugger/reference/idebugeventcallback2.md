@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d8d05ea232513a161b3123e08a20bc0f5b312b89
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56686923"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62920284"
 ---
 # <a name="idebugeventcallback2"></a>IDebugEventCallback2
 Cette interface est utilisée par le moteur de débogage (dé) pour envoyer des événements de débogage pour le Gestionnaire de session de débogage (SDM).
@@ -46,7 +46,7 @@ IDebugEventCallback2 : IUnknown
 
  Si un package implémente [IDebugEventCallback](../../../extensibility/debugger/reference/idebugeventcallback2.md) en code managé, il est fortement recommandé que <xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A> appelée sur les diverses interfaces qui sont passées à [événement](../../../extensibility/debugger/reference/idebugeventcallback2-event.md).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

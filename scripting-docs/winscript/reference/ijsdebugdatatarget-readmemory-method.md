@@ -16,11 +16,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 705fff3bf2d4be78897c18c5a4c61bd74a8c2230
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58147759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62582354"
 ---
 # <a name="ijsdebugdatatargetreadmemory-method"></a>IJsDebugDataTarget::ReadMemory, méthode
 Lit la mémoire du processus cible.  
@@ -58,7 +58,7 @@ HRESULT ReadMemory(
 ## <a name="remarks"></a>Notes  
  Retourne S_OK en cas de réussite et les codes d’échec est utilisés pour une erreur. Retourne E_JsDEBUG_INVALID_MEMORY_ADDRESS si l’adresse n’est pas valide. Pour plus d’informations, consultez JsDebugAllowPartialRead.  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  **En-tête :** jscript9diag.h  
   
 ## <a name="see-also"></a>Voir aussi  

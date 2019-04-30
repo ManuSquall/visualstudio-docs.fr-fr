@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: a6f1ecd427b1c715649bc2118be5ab384a74c585
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967212"
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>Procédure : Ajouter une propriété à des projets SharePoint
   Vous pouvez utiliser une extension de projet pour ajouter une propriété à un projet SharePoint. La propriété apparaît dans le **propriétés** fenêtre lorsque le projet est sélectionné dans **l’Explorateur de solutions**.

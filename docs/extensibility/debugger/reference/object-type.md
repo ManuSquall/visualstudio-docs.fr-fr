@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7f0aafc5b41d9020c80cd2b86c9048db1d333bfd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62865438"
 ---
 # <a name="objecttype"></a>OBJECT_TYPE
 Spécifie le type d’un objet à partir de l’évaluateur d’expression.
@@ -99,7 +99,7 @@ public enum enum_OBJECT_TYPE { 
 ## <a name="remarks"></a>Notes
  Passé en tant qu’argument à la [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) et [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) méthodes.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : ee.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

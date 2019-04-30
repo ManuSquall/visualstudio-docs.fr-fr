@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7fdff9237ef30884d5bfaad424edfffec62a8f58
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613256"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908417"
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>Prise en charge de Fenêtre Automatique dans un service de langage hérité
 Le **automatique** fenêtre affiche des expressions telles que des variables et des paramètres qui sont dans la portée lorsque le programme débogué est suspendu (soit en raison d’un point d’arrêt ou une exception). Les expressions peuvent inclure des variables, locales ou globales et les paramètres qui ont été modifiés dans la portée locale. Le **automatique** fenêtre peut également inclure des instanciations d’une classe, structure ou un autre type. Quoi que ce soit un évaluateur d’expression peut évaluer peut potentiellement être affiché dans le **automatique** fenêtre.

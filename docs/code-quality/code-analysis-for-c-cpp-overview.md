@@ -22,13 +22,13 @@ manager: wpickett
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 07ba2c64be0af987b82c870b89d3451b5d48d28f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55947638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62540822"
 ---
-# <a name="code-analysis-for-cc-overview"></a>Analyse du code pour une vue d’ensemble de C/C++
+# <a name="code-analysis-for-cc-overview"></a>Vue d’ensemble de l’analyse du code C/C++
 
 L’outil d’analyse du Code C/C++ fournit des informations sur les erreurs éventuelles dans votre code source C/C++. Les erreurs de codage courantes signalées par l'outil sont notamment les dépassements de mémoire tampon, une mémoire non initialisée, les déréférencements du pointeur Null et les fuites de mémoire et de ressources. L’outil peut également exécuter des vérifications par rapport à la [C++ Core Guidelines](http://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md).
 

@@ -1,5 +1,5 @@
 ---
-title: Appel d’une transformation de texte dans une extension VS
+title: Appel d'une transformation de texte dans une extension VS
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: gewarren
@@ -8,13 +8,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 43f071d73bef7d7b67988ccffb00b7ae7518b916
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945337"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810565"
 ---
-# <a name="invoking-text-transformation-in-a-vs-extension"></a>Appel d’une transformation de texte dans une extension VS
+# <a name="invoking-text-transformation-in-a-vs-extension"></a>Appel d'une transformation de texte dans une extension VS
 Si vous écrivez une extension de Visual Studio comme une commande de menu ou [langage spécifique à un domaine](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md), vous pouvez utiliser le service de création de modèles de texte pour transformer les modèles de texte. Obtenez le service <xref:Microsoft.VisualStudio.TextTemplating.VSHost.STextTemplating> et effectuez le cast de celui-ci en <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplating>.
 
 ## <a name="getting-the-text-templating-service"></a>Obtention du service de création de modèles de texte
@@ -76,7 +76,7 @@ string result = t4.ProcessTemplate("",
 ## <a name="error-reporting-and-the-output-directive"></a>Rapport d'erreurs et directive de sortie
  Toutes les erreurs qui surviennent pendant le traitement seront affichera dans la fenêtre d’erreurs Visual Studio. De plus, vous pouvez être informé des erreurs en spécifiant un rappel qui implémente <xref:Microsoft.VisualStudio.TextTemplating.VSHost.ITextTemplatingCallback>.
 
- Si vous souhaitez écrire la chaîne de résultat dans un fichier, vous souhaitez peut-être connaître l'extension de fichier et l'encodage spécifiés dans la directive `<#@output#>` dans le modèle. Ces informations seront également passées à votre rappel. Pour plus d’informations, consultez [Directive de sortie T4](../modeling/t4-output-directive.md).
+ Si vous souhaitez écrire la chaîne de résultat dans un fichier, vous souhaitez peut-être connaître l’extension de fichier et l’encodage spécifiés dans la directive `<#@output#>` dans le modèle. Ces informations seront également passées à votre rappel. Pour plus d’informations, consultez [Directive de sortie T4](../modeling/t4-output-directive.md).
 
 ```csharp
 void ProcessMyTemplate(string MyTemplateFile)

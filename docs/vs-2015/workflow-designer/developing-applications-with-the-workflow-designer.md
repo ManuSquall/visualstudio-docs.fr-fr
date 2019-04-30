@@ -18,11 +18,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 71fdd358c03604b196b0a57a9667f40dfb92b049
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073967"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977011"
 ---
 # <a name="developing-applications-with-the-workflow-designer"></a>Développement d'applications avec Workflow Designer
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] est un concepteur visuel et un débogueur pour la construction graphique et le débogage d'applications [!INCLUDE[wf](../includes/wf-md.md)] dans le [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] hébergé dans l'environnement de développement [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Il vous permet de composer une application de workflow composite, une bibliothèque d'activités ou un service [!INCLUDE[indigo1](../includes/indigo1-md.md)] via l'utilisation de modèles et de concepteurs d'activités. [!INCLUDE[crabout](../includes/crabout-md.md)] flux de travail, consultez le [Windows Workflow Foundation &#91;.NET Framework 4&#93;](http://msdn.microsoft.com/library/9a23ea6b-d600-483e-89cd-8889cfec5f66).  

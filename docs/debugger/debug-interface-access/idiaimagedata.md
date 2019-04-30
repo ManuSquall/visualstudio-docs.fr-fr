@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b1e3dd8c395c59bc3255c1c9ee55837466c1cef7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635863"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62828513"
 ---
 # <a name="idiaimagedata"></a>IDiaImageData
 Expose les détails de l’emplacement et la mémoire les décalages base du module ou de l’image.
@@ -37,7 +37,7 @@ Le tableau suivant présente les méthodes de `IDiaImageData`.
 |[IDiaImageData::get_virtualAddress](../../debugger/debug-interface-access/idiaimagedata-get-virtualaddress.md)|Récupère l’emplacement dans la mémoire virtuelle de l’image.|
 |[IDiaImageData::get_imageBase](../../debugger/debug-interface-access/idiaimagedata-get-imagebase.md)|Récupère l’emplacement de mémoire où l’image doit être basée.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Certains flux de débogage (XDATA, PDATA) contiennent des copies de données également stockées dans l’image. Ces flux de données objets peuvent être interrogées pour le `IDiaImageData` interface. Consultez la section « Remarques pour les appelants » dans cette rubrique pour plus d’informations.
 
 ## <a name="notes-for-callers"></a>Notes de publication pour les appelants
@@ -110,8 +110,8 @@ void ShowImageData(IDiaSession *pSession)
 }
 ```
 
-## <a name="requirements"></a>Spécifications
-En-tête : Dia2.h
+## <a name="requirements"></a>Configuration requise
+En-tête : Dia2.h
 
 Bibliothèque : diaguids.lib
 

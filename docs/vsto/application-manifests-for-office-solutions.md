@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 62ad6a8147fc11b8bed34605b6447a1fe8a62a97
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62942921"
 ---
 # <a name="application-manifests-for-office-solutions"></a>Manifestes d’application pour les solutions Office
   Un manifeste d’application est un fichier XML qui décrit les assemblys qui sont chargés dans une solution Microsoft Office. Les outils de développement Microsoft Office dans Visual Studio utilisent le [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] schéma de manifeste d’application défini dans le [manifeste d’application ClickOnce](../deployment/clickonce-application-manifest.md) référence.
@@ -75,15 +75,15 @@ ms.locfileid: "55938018"
 |[&#60;entryPoints&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md)|Obligatoire. Regroupe tous les assemblys pour exécuter une solution Office.|Aucun.|
 |[&#60;point d’entrée&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/entrypoint-element-office-development-in-visual-studio.md)|Obligatoire. Identifie l’assembly à exécuter dans une solution Office.|**class**<br /><br /> **contract**|
 |[&#60;mettre à jour&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/update-element-office-development-in-visual-studio.md)|Obligatoire. Configure les mises à jour pour la solution.|**enabled**<br /><br /> **expiration**|
-|[&#60;postActions&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/postactions-element-office-development-in-visual-studio.md)|Facultatif. Regroupe toutes les actions de post-déploiement qui s’exécutent après l’installation des solutions Office.|Aucun.|
-|[&#60;postAction&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/postaction-element-office-development-in-visual-studio.md)|Facultatif. Identifie une action de post-déploiement.|Aucun.|
+|[&#60;postActions&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/postactions-element-office-development-in-visual-studio.md)|Optionnel. Regroupe toutes les actions de post-déploiement qui s’exécutent après l’installation des solutions Office.|Aucun.|
+|[&#60;postAction&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/postaction-element-office-development-in-visual-studio.md)|Optionnel. Identifie une action de post-déploiement.|Aucun.|
 |[&#60;postActionData&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/postactiondata-element-office-development-in-visual-studio.md)|Facultatif. Configure les données pour une action de post-déploiement.|Aucun.|
 |[&#60;application&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/application-element-office-development-in-visual-studio.md)|Obligatoire. Encapsule les informations spécifiques à l’application dans un même nœud.|Aucun.|
 |[&#60;personnalisations&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/customizations-element-office-development-in-visual-studio.md)|Obligatoire. Stocke toutes les informations spécifiques à l’hôte de l’application dans un espace de noms distinct.|Aucun.|
 |[&#60;personnalisation&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/customization-element-office-development-in-visual-studio.md)|Obligatoire. Stocke les informations spécifiques à l’hôte de l’application dans un espace de noms distinct.|**xmlns**|
 |[&#60;document&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/document-element-office-development-in-visual-studio.md)|Obligatoire uniquement pour les solutions au niveau du document. Stocke les informations spécifiques à la personnalisation.|**solutionId**|
 |[&#60;appAddin&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/appaddin-element-office-development-in-visual-studio.md)|Obligatoire uniquement pour les solutions au niveau de l’application. Stocke les informations spécifiques à la personnalisation.|**application**<br /><br /> **loadBehavior**<br /><br /> **keyName**|
-|[&#60;friendlyName&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md)|Facultatif. Stocke le nom du complément VSTO qui figure dans la liste des compléments VSTO installés.|Aucun.|
+|[&#60;friendlyName&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/friendlyname-element-office-development-in-visual-studio.md)|Optionnel. Stocke le nom du complément VSTO qui figure dans la liste des compléments VSTO installés.|Aucun.|
 |[&#60;Description&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/description-element-office-development-in-visual-studio.md)|Obligatoire uniquement pour les compléments VSTO. Stocke la description qui figure dans la liste des programmes installés.|Aucun.|
 |[&#60;formRegions&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/formregions-element-office-development-in-visual-studio.md)|Obligatoire uniquement pour les compléments VSTO Outlook qui comprennent des zones de formulaire.|Aucun.|
 |[&#60;formRegion&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/formregion-element-office-development-in-visual-studio.md)|Obligatoire uniquement pour les compléments VSTO Outlook qui comprennent des zones de formulaire.|**Name**|

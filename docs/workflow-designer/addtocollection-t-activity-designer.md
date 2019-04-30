@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7e339e2639d85f89d4110c36710ab9c19e0fe333
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945614"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62842083"
 ---
 # <a name="addtocollectiont-activity-designer"></a>AddToCollection\<T > Concepteur d’activités
 
@@ -23,7 +23,7 @@ Le **AddToCollection\<T >** ActivityDesigner est utilisé pour créer et configu
 
 ## <a name="the-addtocollectiont-activity"></a>AddToCollection\<T > activité
 
-L’activité <xref:System.Activities.Statements.AddToCollection%601> ajoute un élément à une collection.
+L'activité <xref:System.Activities.Statements.AddToCollection%601> ajoute un élément à une collection.
 
 ### <a name="using-the-addtocollectiont-activity-designer"></a>À l’aide de AddToCollection\<T > Concepteur d’activités
 
@@ -39,7 +39,7 @@ Le tableau suivant présente les propriétés de <xref:System.Activities.Stateme
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|False|Nom convivial de l'activité <xref:System.Activities.Statements.AddToCollection%601>. La valeur par défaut est AddToCollection < Int32\>. Bien que la valeur de la propriété <xref:System.Activities.Activity.DisplayName%2A> ne soit pas strictement obligatoire, il est recommandé d'en utiliser une.|
 |<xref:System.Activities.Statements.AddToCollection%601.Item%2A>|True|L’élément à ajouter à la Collection\<T >. Cet élément est de type *T*, qui est de type *TypeArgument*. Pour spécifier l'élément, tapez une expression Visual Basic dans la grille des propriétés.|
-|<xref:System.Activities.Statements.AddToCollection%601.Collection%2A>|True|Collection à laquelle l’élément doit être ajouté. Cette collection est de type **ICollection < TypeArgument\>**. Pour spécifier la collection, tapez une expression Visual Basic dans la grille des propriétés.|
+|<xref:System.Activities.Statements.AddToCollection%601.Collection%2A>|True|Collection à laquelle l'élément doit être ajouté. Cette collection est de type **ICollection < TypeArgument\>**. Pour spécifier la collection, tapez une expression Visual Basic dans la grille des propriétés.|
 |*TypeArgument*|True|Type T des éléments contenus dans la collection <xref:System.Collections.Generic.ICollection%601>. Par défaut, cela *TypeArgument* type est défini sur **Int32**. Pour modifier le type, modifiez la valeur de la *TypeArgument* dans la zone de liste déroulante dans la grille des propriétés.|
 
 ## <a name="see-also"></a>Voir aussi

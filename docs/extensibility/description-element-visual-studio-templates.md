@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4f21edd218b815785161e8d68af76b0f6c2594a2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712045"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912714"
 ---
 # <a name="description-element-visual-studio-templates"></a>Description, élément (modèles Visual Studio)
 Spécifie la description du modèle tel qu’il apparaît dans un le **nouveau projet** ou **ajouter un nouvel élément** boîte de dialogue.
@@ -60,7 +60,7 @@ Spécifie la description du modèle tel qu’il apparaît dans un le **nouveau p
  Le texte fournit une description du modèle.
 
 ## <a name="remarks"></a>Notes
- `Description` est un élément enfant obligatoire de l'élément `TemplateData`.
+ `Description` est un élément enfant requis de l'élément `TemplateData`.
 
 ## <a name="example"></a>Exemple
  L’exemple suivant montre les métadonnées d’un modèle de projet pour un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] application.

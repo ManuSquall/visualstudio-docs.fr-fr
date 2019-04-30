@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d8296d28e884c746e09b427914af02213bbbaa7e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813034"
 ---
 # <a name="how-to-programmatically-display-documents-in-print-preview"></a>Procédure : Afficher des documents par programmation dans l’aperçu avant impression
   Si votre solution génère un rapport, vous pouvez afficher ce dernier pour l’utilisateur en mode Aperçu avant impression.

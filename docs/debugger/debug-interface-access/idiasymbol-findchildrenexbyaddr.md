@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e6c434bf85ecbb00373de0f7f3914a6807391f6a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630156"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838013"
 ---
 # <a name="idiasymbolfindchildrenexbyaddr"></a>IDiaSymbol::findChildrenExByAddr
 Récupère les enfants du symbole sont valides à une adresse spécifiée.
@@ -58,11 +58,11 @@ HRESULT findChildrenExByAddr ( 
 ## <a name="return-value"></a>Valeur de retour
  Retourne `S_OK` si au moins un enfant du symbole a été trouvé, ou retourne `S_FALSE` si aucun enfant n’a été trouvé ; sinon, retourne un code d’erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Les symboles locaux qui sont retournées incluent des informations de plage dynamique.
 
-## <a name="requirements"></a>Spécifications
- En-tête : Dia2.h
+## <a name="requirements"></a>Configuration requise
+ En-tête : Dia2.h
 
  Bibliothèque : diaguids.lib
 

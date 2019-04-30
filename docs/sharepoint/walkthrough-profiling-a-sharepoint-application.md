@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3e10c76d40efefe28decd9efd554e928ffea20c5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083417"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834009"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Procédure pas à pas : Profiler une application SharePoint
   Cette procédure pas à pas montre comment utiliser les outils de profilage dans Visual Studio pour optimiser les performances d'une application SharePoint. L'application d'exemple est un récepteur d'événements de fonctionnalité SharePoint qui contient une boucle inactive qui dégrade les performances du récepteur d'événements de fonctionnalité. Le profileur Visual Studio vous permet de définir et supprimer la partie la plus coûteuse (exécution la plus lente) du projet, également connu sous le *chemin réactif*.

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 96628f3b7050a4ce6f14185033e3d59af63a9de5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705597"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62433706"
 ---
 # <a name="menus-element"></a>Élément menus
 Définit l’ensemble des menus et barres d’outils qui implémente un VSPackage.
@@ -37,7 +37,7 @@ Définit l’ensemble des menus et barres d’outils qui implémente un VSPackag
 
 |Attribut|Description|
 |---------------|-----------------|
-|Condition|Facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condition|Optionnel. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Éléments enfants
 

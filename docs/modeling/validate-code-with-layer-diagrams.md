@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 05e09dfc70ae5bc4adf85562f48c5cc8c4874bc6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055819"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971353"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>Valider du code avec des diagrammes de dépendance
 

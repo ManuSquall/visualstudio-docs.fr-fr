@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 371db781cae5c988e6c8ff4c4776c5f43d6f047a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554350"
 ---
 # <a name="idiaaddressmapputrelativevirtualaddressenabled"></a>IDiaAddressMap::put_relativeVirtualAddressEnabled
 Permet au client activer ou désactiver le calcul et l’utilisation d’adresses virtuelles relatives (RVA).
@@ -38,7 +38,7 @@ HRESULT put_relativeVirtualAddressEnabled ( 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Adresses pour les objets de débogage décrites par les interfaces DIA et par rapport à l’image de l’exécutable base, peuvent être récupérés sous forme d’adresses virtuelles relatives.
 
  L’utilisation de RVA est activée lorsque les segments sont initialement chargées à partir d’un fichier PDB. Pour obtenir l’état actuel de l’utilisation des adresses virtuelles relatives, appelez le [IDiaAddressMap::get_relativeVirtualAddressEnabled](../../debugger/debug-interface-access/idiaaddressmap-get-relativevirtualaddressenabled.md) (méthode).

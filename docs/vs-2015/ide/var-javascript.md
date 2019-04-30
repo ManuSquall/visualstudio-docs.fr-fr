@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 98bf86f807874fefe066ed2d1008e31451fbbba0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54802659"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62558409"
 ---
 # <a name="ltvargt-javascript"></a>&lt;var&gt; (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,46 +37,46 @@ Spécifie les informations de documentation pour une variable.
   
 #### <a name="parameters"></a>Paramètres  
  `type`  
- Optionnel. Le type de données de la variable. Le type peut être une des opérations suivantes :  
+ Optionnel. Type de données de la variable. Le type peut être l’un des suivants :  
   
-- Un type de langage ECMAScript qui se trouve dans la spécification ECMAScript 5, tel que `Number` et `Object`.  
+- Type de langage ECMAScript figurant dans la spécification ECMAScript 5, comme `Number` et `Object`.  
   
-- Un modèle DOM de l’objet, tel que `HTMLElement`, `Window`, et `Document`.  
+- Objet DOM, comme `HTMLElement`, `Window` et `Document`.  
   
-- Une fonction de constructeur JavaScript.  
+- Fonction constructeur JavaScript.  
   
   `integer`  
-  Optionnel. Si `type` est `Number`, spécifie si la variable est un entier. La valeur `true` pour indiquer que la variable est un entier ; sinon, la valeur est `false`. Cet attribut n’est pas utilisé par Visual Studio pour fournir des informations IntelliSense.  
+  Optionnel. Si `type` est `Number`, indique si la variable est un entier. Définissez `true` pour indiquer que la variable est un entier ; sinon, définissez `false`. Cet attribut n’est pas utilisé par Visual Studio pour fournir des informations IntelliSense.  
   
   `domElement`  
-  Optionnel. Cet attribut est déconseillé ; le `type` attribut est prioritaire sur cet attribut. Cet attribut spécifie si la variable documentée est un élément DOM. La valeur `true` pour spécifier que la variable est un élément DOM ; sinon, la valeur est `false`. Si le `type` attribut n’est pas défini et `domElement` a la valeur `true`, IntelliSense traite la variable documentée comme un `HTMLElement` lors de l’exécution de saisie semi-automatique des instructions.  
+  Optionnel. Cet attribut est déprécié ; l’attribut `type` a la priorité sur cet attribut. Cet attribut indique si la variable documentée est un élément DOM. Définissez `true` pour indiquer que la variable est un élément DOM ; sinon, définissez `false`. Si l’attribut `type` n’est pas défini et que `domElement` est défini sur `true`, IntelliSense considère la variable documentée en tant que `HTMLElement` au moment de procéder à la complétion des instructions.  
   
   `mayBeNull`  
-  Optionnel. Spécifie si la variable documentée peut être définie sur null. La valeur `true` pour indiquer que la variable peut être définie à null ; sinon, la valeur est `false`. La valeur par défaut est `false`. Cet attribut n’est pas utilisé par Visual Studio pour fournir des informations IntelliSense.  
+  Optionnel. Indique si la variable documentée peut être définie sur null. Définissez `true` pour indiquer que la variable peut être définie sur null ; sinon, définissez `false`. La valeur par défaut est `false`. Cet attribut n’est pas utilisé par Visual Studio pour fournir des informations IntelliSense.  
   
   `elementType`  
-  Optionnel. Si `type` est `Array`, cet attribut spécifie le type des éléments du tableau.  
+  Optionnel. Si `type` est `Array`, cet attribut spécifie le type des éléments contenus dans le tableau.  
   
   `elementInteger`  
-  Optionnel. Si `type` est `Array` et `elementType` est `Number`, cet attribut spécifie si les éléments du tableau sont des entiers. La valeur `true` pour indiquer que les éléments du tableau sont des entiers ; sinon, la valeur est `false`. Cet attribut n’est pas utilisé par Visual Studio pour fournir des informations IntelliSense.  
+  Optionnel. Si `type` est `Array` et que `elementType` est `Number`, cet attribut indique si les éléments contenus dans le tableau sont des entiers. Définissez `true` pour indiquer que les éléments du tableau sont des entiers ; sinon, définissez `false`. Cet attribut n’est pas utilisé par Visual Studio pour fournir des informations IntelliSense.  
   
   `elementDomElement`  
-  Optionnel. Cet attribut est déconseillé ; le `elementType` attribut est prioritaire sur cet attribut. Si `type` est `Array`, cet attribut spécifie si les éléments du tableau sont des éléments DOM. La valeur `true` pour spécifier que les éléments sont des éléments DOM ; sinon, la valeur est `false`. Si le `elementType` attribut n’est pas défini et `elementDomElement` a la valeur `true`, IntelliSense traite chaque élément dans le tableau comme un `HTMLElement` lors de l’exécution de saisie semi-automatique des instructions.  
+  Optionnel. Cet attribut est déprécié ; l’attribut `elementType` a la priorité sur cet attribut. Si `type` est `Array`, cet attribut indique si les éléments contenus dans le tableau sont des éléments DOM. Définissez `true` pour indiquer que les éléments sont des éléments DOM ; sinon, définissez `false`. Si l’attribut `elementType` n’est pas défini et que `elementDomElement` est défini sur `true`, IntelliSense considère chaque élément du tableau en tant que `HTMLElement` au moment de procéder à la complétion des instructions.  
   
   `elementMayBeNull`  
-  Optionnel. Si `type` est `Array`, spécifie si les éléments dans le tableau peuvent être définis sur null. La valeur `true` pour indiquer que les éléments dans le tableau peuvent être définies à null ; sinon, la valeur est `false`. La valeur par défaut est `false`. Cet attribut n’est pas utilisé par Visual Studio pour fournir des informations IntelliSense.  
+  Optionnel. Si `type` est `Array`, indique si les éléments contenus dans le tableau peuvent être définis sur null. Définissez `true` pour indiquer que les éléments contenus dans le tableau peuvent être définis sur null ; sinon, définissez `false`. La valeur par défaut est `false`. Cet attribut n’est pas utilisé par Visual Studio pour fournir des informations IntelliSense.  
   
   `helpKeyword`  
-  Optionnel. Le mot clé d’aide F1.  
+  Optionnel. Mot clé pour l’aide F1.  
   
   `locid`  
-  Optionnel. L’identificateur pour la localisation des informations sur la variable. L’identificateur est un membre ID ou il correspond à la `name` valeur dans un regroupement de message défini par OpenAjax métadonnées d’attribut. Le type d’identificateur varie selon le format spécifié dans le [ \<loc >](../ide/loc-javascript.md) balise.  
+  Optionnel. Identificateur des informations de localisation concernant la variable. L’identificateur est soit un ID de membre soit il correspond à la valeur d’attribut `name` dans un lot de messages défini par des métadonnées OpenAjax. Le type d’identificateur varie selon le format spécifié dans la balise [\<loc>](../ide/loc-javascript.md).  
   
   `description`  
-  Optionnel. Une description de la variable.  
+  Optionnel. Description de la variable.  
   
 ## <a name="example"></a>Exemple  
- L’exemple de code suivant montre comment utiliser le `<var>` élément.  
+ L’exemple de code suivant montre comment utiliser l'élément `<var>`.  
   
 ```javascript  
 /// <var>A rectangle that has a width of 5.</var>  

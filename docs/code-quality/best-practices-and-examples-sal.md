@@ -8,11 +8,11 @@ manager: wpickett
 ms.workload:
 - multiple
 ms.openlocfilehash: 28d17301d81ee5b206feb0c3afefba35e50615cd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62560031"
 ---
 # <a name="best-practices-and-examples-sal"></a>Meilleures pratiques et exemples (SAL)
 Voici quelques méthodes permettant de tirer le meilleur hors de la langue Annotation du Code Source (SAL) et éviter certains problèmes courants.
@@ -238,7 +238,7 @@ Dans cet exemple, `_Out_opt_` indique que le pointeur peut être NULL dans le ca
 
 ## <a name="see-also"></a>Voir aussi
 
-[Utilisation d’Annotations SAL pour réduire les défauts du Code C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
+[Utilisation d’Annotations SAL pour réduire C /C++ les défauts de Code](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)
 [comprendre SAL](../code-quality/understanding-sal.md)
 [annotation des paramètres de fonction et valeurs de retour](../code-quality/annotating-function-parameters-and-return-values.md) 
  [Annotation du comportement de la fonction](../code-quality/annotating-function-behavior.md)

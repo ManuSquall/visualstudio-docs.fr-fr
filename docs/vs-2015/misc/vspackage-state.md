@@ -12,11 +12,11 @@ ms.assetid: 6056a9ea-e7a8-481c-9fc8-340229fa12d9
 caps.latest.revision: 25
 manager: jillfra
 ms.openlocfilehash: f3140b527673f87b1d7c552e99584232494aed7f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953234"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979993"
 ---
 # <a name="vspackage-state"></a>État du VSPackage
 De nombreux facteurs déterminent le jeu de valeurs persistantes ou l’état d’un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] application.  

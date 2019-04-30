@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: b78ba4e1fd2a0e735d70109183b08072b03b3a0d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58156916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963505"
 ---
 # <a name="ienumdebugpropertyinfoclone"></a>IEnumDebugPropertyInfo::Clone
 Crée un énumérateur qui contient le même état d’énumération que l’énumérateur en cours.  

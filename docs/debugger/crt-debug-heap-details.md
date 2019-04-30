@@ -74,11 +74,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f55bd71b2174a03fb44b4512f04997e48d636d12
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103275"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62563757"
 ---
 # <a name="crt-debug-heap-details"></a>Détails du tas de débogage CRT
 Cette rubrique présente en détail le tas de débogage CRT.

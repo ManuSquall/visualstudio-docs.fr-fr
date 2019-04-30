@@ -25,11 +25,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: afcada407060af2072e3cf1c30e86153762890b5
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62905999"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>Vue inscrire des valeurs dans la fenêtre Registres (C#, C++, Visual Basic, F#)
 

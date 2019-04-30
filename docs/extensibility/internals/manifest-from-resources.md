@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ffab5f43bf026bd410c72694716148d4d368c69a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110529"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859942"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 Le manifeste à partir de l’outil de ressources est une application console qui prend une liste de ressources d’images (fichiers .png ou .xaml) et génère un fichier .imagemanifest qui permet à ces images à utiliser avec le Service d’images Visual Studio. En outre, cet outil peut être utilisé pour ajouter des images à un .imagemanifest existant. Cet outil est utile pour ajouter la prise en charge de haute résolution et des thèmes pour les images à une extension Visual Studio. Le fichier .imagemanifest généré doit être inclus dans et déployé dans le cadre d’une extension de Visual Studio (.vsix).

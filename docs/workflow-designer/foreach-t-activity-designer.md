@@ -11,15 +11,15 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e441898973614b6e3e33fc91d5d9688b51aab7fe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928866"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949615"
 ---
 # <a name="foreachlttgt-activity-designer"></a>ForEach&lt;T&gt; Concepteur d’activités
 
-L’activité <xref:System.Activities.Statements.ForEach%601> exécute l’activité contenue dans sa propriété <xref:System.Activities.Statements.ForEach%601.Body%2A> pour chaque élément d’une collection <xref:System.Activities.Statements.ForEach%601.Values%2A> spécifiée.
+L'activité <xref:System.Activities.Statements.ForEach%601> exécute l'activité contenue dans sa propriété <xref:System.Activities.Statements.ForEach%601.Body%2A> pour chaque élément d'une collection <xref:System.Activities.Statements.ForEach%601.Values%2A> spécifiée.
 
 ## <a name="foreacht-properties-in-the-workflow-designer"></a>ForEach < T\> propriétés dans le Concepteur de flux de travail
 

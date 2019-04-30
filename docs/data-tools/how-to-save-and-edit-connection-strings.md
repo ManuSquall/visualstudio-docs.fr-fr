@@ -1,5 +1,5 @@
 ---
-title: 'Comment : enregistrer et modifier des chaînes de connexion'
+title: 'Procédure : Enregistrer et modifier des chaînes de connexion'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f8ef3a2c-029c-423b-9d9e-a4f1add4f640
@@ -9,16 +9,16 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 1f8300043f9a16c7d92d72c4dcb22e4cd0432a06
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62566969"
 ---
-# <a name="how-to-save-and-edit-connection-strings"></a>Guide pratique pour enregistrer et modifier des chaînes de connexion
-Chaînes de connexion dans les applications Visual Studio sont enregistrées dans le fichier de configuration d’application (également appelé paramètres d’application) ou codées en dur directement dans votre application. L’enregistrement des chaînes de connexion dans le fichier de configuration de l’application simplifie la gestion de votre application. Si la chaîne de connexion doit être modifiée, vous pouvez la mettre à jour dans le fichier de paramètres de l’application (au lieu de la modifier dans le code source et de recompiler l’application).
+# <a name="how-to-save-and-edit-connection-strings"></a>Procédure : Enregistrer et modifier des chaînes de connexion
+Chaînes de connexion dans les applications Visual Studio sont enregistrées dans le fichier de configuration d’application (également appelé paramètres d’application) ou codées en dur directement dans votre application. L'enregistrement des chaînes de connexion dans le fichier de configuration de l'application simplifie la gestion de votre application. Si la chaîne de connexion doit être modifiée, vous pouvez la mettre à jour dans le fichier de paramètres de l’application (au lieu de la modifier dans le code source et de recompiler l’application).
 
-Le stockage d'informations sensibles (telles que le mot de passe) dans la chaîne de connexion peut affecter la sécurité de votre application. Les chaînes de connexion enregistrées dans le fichier de configuration de l’application ne sont pas chiffrées ou obfusquées, il est donc possible pour quiconque d’accéder au fichier et d’afficher son contenu. Le recours à la sécurité intégrée de Windows est un moyen plus sûr de contrôler l'accès à une base de données.
+Le stockage d'informations sensibles (telles que le mot de passe) dans la chaîne de connexion peut affecter la sécurité de votre application. Les chaînes de connexion enregistrées dans le fichier de configuration de l'application ne sont pas chiffrées ou obscurcies, il est donc possible pour quiconque d'accéder au fichier et d'afficher son contenu. Le recours à la sécurité intégrée de Windows est un moyen plus sûr de contrôler l'accès à une base de données.
 
 Si vous choisissez de ne pas utiliser la sécurité intégrée de Windows et que votre base de données requiert un nom d'utilisateur et un mot de passe, vous pouvez l'omettre dans la chaîne de connexion, mais votre application devra fournir ces informations pour pouvoir se connecter à la base de données. Par exemple, vous pouvez créer une boîte de dialogue qui invite l'utilisateur à fournir ces informations et génère dynamiquement la chaîne de connexion au moment de l'exécution. La sécurité peut encore être compromise si les informations sont interceptées sur le trajet vers la base de données.
 Pour plus d’informations, consultez [Protection des informations de connexion](/dotnet/framework/data/adonet/protecting-connection-information).

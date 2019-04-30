@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 05c348edfa4665b138ac0f6069b0afaf6735da7a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62999253"
 ---
 # <a name="properties-of-diagrams"></a>Propriétés des diagrammes
 Vous pouvez définir des propriétés qui spécifient la manière dont les diagrammes apparaîtront dans le concepteur généré. Par exemple, vous pouvez spécifier une couleur par défaut pour le texte dans le diagramme.
@@ -34,15 +34,15 @@ Vous pouvez définir des propriétés qui spécifient la manière dont les diagr
 |Génère le Double dérivée|Si `True`, une classe de base et une classe partielle (pour prendre en charge la personnalisation via des substitutions) sont générés. Pour plus d’informations, consultez [remplacer et étendre les classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|
 |A le constructeur personnalisé|Si `True`, un constructeur personnalisé est fourni dans le code source. Pour plus d’informations, consultez [remplacer et étendre les classes générées](../modeling/overriding-and-extending-the-generated-classes.md)...|False|
 |Modificateur d’héritage|Décrit le type d’héritage de la classe de code source qui est générée à partir du diagramme (`none`, `abstract`, ou `sealed`).|Aucun.|
-|Diagramme de base|La classe de base de ce diagramme.|(aucune)|
-|Name|Le nom de ce diagramme.|Nom actuel|
+|Diagramme de base|La classe de base de ce diagramme.|(aucun)|
+|Nom|Le nom de ce diagramme.|Nom actuel|
 |Espace de noms|L’espace de noms qui est affilié à ce diagramme.|Espace de noms actuel|
 |Classe représentée|La classe de domaine racine qui représente ce diagramme.|Classe racine actuelle le cas échéant|
 |Notes|Remarques informelles associées à cet élément.|\<aucune>|
 |Couleur de remplissage expose en tant que propriété|Si `True`, l’utilisateur peut définir la couleur de remplissage du diagramme du concepteur généré. Pour définir cette propriété, avec le bouton droit de la forme de diagramme, puis cliquez sur **ajouter les objets exposés**.|False|
 |Expose la couleur du texte en tant que propriété|Si `True`, l’utilisateur peut définir la couleur du texte du diagramme dans le concepteur généré. Pour définir cette propriété, avec le bouton droit de la forme de diagramme, puis cliquez sur **ajouter les objets exposés**.|False|
 |Description|La description est utilisée pour documenter le concepteur généré.|\<aucune>|
-|Nom complet|Le nom qui s’affichera dans le concepteur généré pour ce diagramme.|\<aucune>|
+|Display Name|Le nom qui s’affichera dans le concepteur généré pour ce diagramme.|\<aucune>|
 |Help Keyword|Le mot clé qui est utilisé pour indexer l’aide F1 pour ce diagramme.|\<aucune>|
 
 ## <a name="see-also"></a>Voir aussi

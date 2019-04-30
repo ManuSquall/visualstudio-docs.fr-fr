@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f164a8f1d1c84725530e7a3afab5e63472ae257e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081565"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967896"
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>Procédure : Commencer la personnalisation du ruban
   Pour personnaliser le ruban d’une application Microsoft Office, ajoutez un **ruban (Concepteur visuel)** ou **ruban (XML)** élément à un projet Office.

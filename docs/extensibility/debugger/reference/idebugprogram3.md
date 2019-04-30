@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dcc1b6071fbe83b6752b1b2b1ac2218979dbc55f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684294"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62917063"
 ---
 # <a name="idebugprogram3"></a>IDebugProgram3
 Cette interface représente un programme qui s’exécute dans un processus et l’étend [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md) en fournissant des informations sur le thread.
@@ -39,7 +39,7 @@ IDebugProgram3 : IDebugProgram3
 |------------|-----------------|
 |[ExecuteOnThread](../../../extensibility/debugger/reference/idebugprogram3-executeonthread.md)|Exécute le programme. Le thread est retourné pour fournir les informations du débogueur threads sur lesquels l’utilisateur visualise lors de l’exécution.|
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

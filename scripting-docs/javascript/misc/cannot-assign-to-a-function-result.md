@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 226056f139e45f432d757aff8f8774b013742de3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076810"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946600"
 ---
 # <a name="cannot-assign-to-a-function-result"></a>Impossible d'affecter à un résultat de fonction
 Vous avez tenté d’assigner une valeur à un résultat de fonction. Le résultat d’une fonction peut être assigné à une variable, mais il ne peut pas être utilisé en tant que variable. Si vous souhaitez affecter une nouvelle valeur à la fonction elle-même, omettre les parenthèses (l’opérateur d’appel de fonction). L’exemple suivant illustre une situation dans laquelle cette erreur est générée.  

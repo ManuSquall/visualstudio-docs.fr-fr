@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7e14086ea395ffe65a52f47d0bfaa320fb19bc8f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623097"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910073"
 ---
 # <a name="elements-of-a-project-model"></a>Éléments d’un modèle de projet
 Les interfaces et les implémentations de tous les projets de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] partagent une structure de base : le modèle de projet pour votre type de projet. Dans votre modèle de projet, qui est le VSPackage que vous développez, vous créez des objets qui sont conformes avec vos décisions de conception et l’implication des fonctionnalités globales fournies par l’IDE. Bien que vous contrôlez le mode de conservation d’un élément de projet, par exemple, vous ne contrôlez pas notification qu’un fichier doit être persistante. Lorsqu’un utilisateur met l’accent sur un élément de projet ouvert et choisit **enregistrer** sur le **fichier** menu sur le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] menu barre, votre code de type de projet doit intercepter la commande à partir de l’IDE, conserve le fichier, et envoyer la notification à l’IDE que le fichier est modifié n’est plus.
@@ -41,7 +41,7 @@ Les interfaces et les implémentations de tous les projets de [!INCLUDE[vsprvs](
   Projets peut prendre en charge les commandes et par conséquent doit implémenter le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface pour participer au routage des commandes via le GUID de contexte de commande.
 
 ## <a name="see-also"></a>Voir aussi
-- [Liste de vérification : Créer des types de projet](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Liste de contrôle : Créer des types de projet](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Utiliser des classes de projet HierUtil7 pour implémenter un type de projet (C++)](https://msdn.microsoft.com/library/a5c16a09-94a2-46ef-87b5-35b815e2f346)
 - [Composants principaux du modèle projet](../../extensibility/internals/project-model-core-components.md)
 - [Créer des instances de projet à l’aide de fabriques de projet](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

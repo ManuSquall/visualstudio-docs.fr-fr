@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8b5b58a5be5321c2f867daa5b46a7671dbae5d8e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62919926"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2"></a>IDebugExpressionEvaluationCompleteEvent2
 Cette interface est envoyée par le moteur de débogage (dé) pour le Gestionnaire de session de débogage (SDM) lors de l’évaluation de l’expression asynchrone est terminée.
@@ -47,7 +47,7 @@ IDebugExpressionEvaluationCompleteEvent2 : IUnknown
 
  Si la version d’évaluation n’a pas réussie, le `DEBUG_PROPINFO_VALUE` et `DEBUG_PROPINFO_ATTRIB` indicateurs ne seront pas définis le [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) structure qui est retournée par [GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) (le [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) objet est créé par l’Allemagne et retournée dans le `IDebugExpressionEvaluationCompleteEvent2` événement en cas d’échec de la version d’évaluation).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

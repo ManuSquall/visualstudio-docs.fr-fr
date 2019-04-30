@@ -21,17 +21,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 762fc8a28b8c5b3f8729ecd728d12ed5cdbbafc6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720183"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846371"
 ---
 # <a name="intellitrace-features-c-visual-basic-c"></a>Fonctionnalités IntelliTrace (C#, Visual Basic, C++)
 
 Vous pouvez utiliser IntelliTrace pour enregistrer les événements et les appels de méthode dans votre application, ce qui vous permet d'examiner son état (pile des appels et valeurs des variables locales) à différents stades de l'exécution. Commencez le débogage comme d’habitude. IntelliTrace est activé par défaut et les informations enregistrées sont affichées dans la nouvelle fenêtre **Outils de diagnostic** sous l’onglet **Événements**. Sélectionnez un événement et cliquez sur **Activer le débogage d’historique** pour afficher la pile des appels et les variables locales enregistrées pour cet événement.
 
-Pour obtenir une description étape par étape, consultez [Procédure pas à pas : utilisation d'IntelliTrace](../debugger/walkthrough-using-intellitrace.md).
+Pour obtenir une description étape par étape, consultez [procédure pas à pas : À l’aide d’IntelliTrace](../debugger/walkthrough-using-intellitrace.md).
 
 IntelliTrace est disponible dans Visual Studio Enterprise Edition, mais pas dans les éditions Visual Studio Professional ou Community.
 

@@ -13,11 +13,11 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 1be7cb6071a0307a56285b8929e52e038c263fdc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546822"
 ---
 # <a name="metadatatype"></a>METADATA_TYPE
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ public struct METADATA_TYPE {
  tokClass  
  ID de jeton de métadonnées de ce type.  
   
- (C++) `_mdToken` est un `typedef` pour 32 bits `int`.  
+ [C++] `_mdToken` est un `typedef` pour 32 bits `int`.  
   
 ## <a name="remarks"></a>Notes  
  Cette structure apparaît dans le cadre de l’union dans le [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) structure lorsque le `dwKind` champ la `TYPE_INFO` structure est définie sur `TYPE_KIND_METADATA` (une valeur comprise entre le [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) énumération).  

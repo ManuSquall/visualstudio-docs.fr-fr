@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a794ea70d6d2fe937afb311e6961d53f22bd7ac2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58159723"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63004830"
 ---
 # <a name="idebugsyncoperationinprogressabort"></a>IDebugSyncOperation::InProgressAbort
 Annule une opération en cours d’exécution sur un autre thread.  

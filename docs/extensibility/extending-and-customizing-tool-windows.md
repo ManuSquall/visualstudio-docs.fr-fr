@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e9d5c45c523263f469df7e89c484c252f1ed843d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699351"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912482"
 ---
 # <a name="extend-and-customize-tool-windows"></a>Étendre et personnaliser les fenêtres Outil
 Visual Studio fournit plusieurs types différents de windows, par exemple les fenêtres Outil, les fenêtres de document et boîte de dialogue windows. Autres fenêtres telles que la **propriétés** fenêtre, le **sortie** fenêtre et le **liste des tâches** fenêtre, sont des types de fenêtres Outil.

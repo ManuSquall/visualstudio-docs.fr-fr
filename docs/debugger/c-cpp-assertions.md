@@ -29,11 +29,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 8e2d416bd932f1334468bfb3d43e050b3e71d2ec
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653721"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564110"
 ---
 # <a name="cc-assertions"></a>Assertions C/C++
 Une instruction d’assertion spécifie une condition que vous prévoyez d’avoir la valeur true à un point dans votre programme. Si cette condition n’est pas remplie, l’assertion échoue, l’exécution de votre programme est interrompue et le [boîte de dialogue Échec de l’Assertion](../debugger/assertion-failed-dialog-box.md) s’affiche.

@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3b61b0f10e4231ce1970a55cf352490cbf02a42d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936679"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816529"
 ---
 # <a name="globalization-warnings"></a>Avertissements liés à la globalisation
 Avertissements de globalisation prennent en charge les applications et les bibliothèques universelles.
@@ -31,7 +31,7 @@ Avertissements de globalisation prennent en charge les applications et les bibli
 |----------|-----------------|
 |[CA1300 : Spécifier MessageBoxOptions](../code-quality/ca1300-specify-messageboxoptions.md)|Pour afficher correctement une boîte de message pour les cultures qui utilisent un sens de lecture de droite à gauche, les membres RightAlign et RtlReading de l'énumération MessageBoxOptions doivent être passés à la méthode Show.|
 |[CA1301 : Éviter les accélérateurs en double](../code-quality/ca1301-avoid-duplicate-accelerators.md)|Une touche d'accès rapide, également connue sous le nom d'accélérateur, autorise l'accès à un contrôle par le biais du clavier, à l'aide de la touche ALT. Lorsque plusieurs contrôles présentent des touches d’accès en double, le comportement de la clé d’accès n’est pas bien défini.|
-|[CA1302 : Ne pas coder en dur les chaînes de spécifiques de paramètres régionaux](../code-quality/ca1302-do-not-hardcode-locale-specific-strings.md)|L’énumération System.Environment.SpecialFolder contient des membres qui font référence à des dossiers système spéciaux. Les emplacements de ces dossiers peuvent avoir des valeurs distinctes selon le système d’exploitation ; l’utilisateur peut modifier certains des emplacements, et ces derniers sont localisés. La méthode Environment.GetFolderPath retourne les emplacements associés à l’énumération Environment.SpecialFolder, localisée et appropriée pour l’ordinateur en cours d’exécution.|
+|[CA1302 : Ne pas coder en dur les chaînes de spécifiques de paramètres régionaux](../code-quality/ca1302-do-not-hardcode-locale-specific-strings.md)|L'énumération System.Environment.SpecialFolder contient des membres qui font référence à des dossiers système spéciaux. Les emplacements de ces dossiers peuvent avoir des valeurs distinctes selon le système d’exploitation ; l’utilisateur peut modifier certains des emplacements, et ces derniers sont localisés. La méthode Environment.GetFolderPath retourne les emplacements associés à l’énumération Environment.SpecialFolder, localisée et appropriée pour l’ordinateur en cours d’exécution.|
 |[CA1303 : Ne pas transmettre des littéraux en tant que paramètres localisés](../code-quality/ca1303-do-not-pass-literals-as-localized-parameters.md)|Une méthode visible de l’extérieur passe une littéral de chaîne en tant que paramètre à un constructeur ou une méthode dans la bibliothèque de classes .NET Framework, et cette chaîne doit être localisable.|
 |[CA1304 : Spécifier CultureInfo](../code-quality/ca1304-specify-cultureinfo.md)|Une méthode ou un constructeur appelle un membre présentant une surcharge qui accepte un paramètre System.Globalization.CultureInfo, et la méthode ou le constructeur n'appelle pas la surcharge qui prend le paramètre CultureInfo. Lorsqu'un objet CultureInfo ou System.IFormatProvider n'est pas fourni, la valeur par défaut fournie par le membre surchargé peut ne pas avoir l'effet escompté selon les différents paramètres régionaux.|
 |[CA1305 : Spécifier IFormatProvider](../code-quality/ca1305-specify-iformatprovider.md)|Une méthode ou un constructeur appelle un ou plusieurs membres présentant des surcharges qui acceptent un paramètre System.IFormatProvider, et la méthode ou le constructeur n'appelle pas la surcharge qui prend le paramètre IFormatProvider. Lorsqu'un objet System.Globalization.CultureInfo ou IFormatProvider n'est pas fourni, la valeur par défaut fournie par le membre surchargé peut ne pas avoir l'effet escompté selon les différents paramètres régionaux.|

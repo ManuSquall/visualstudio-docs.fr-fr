@@ -12,11 +12,11 @@ ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
 ms.openlocfilehash: 27ab6619a4d36fc105a3b8a668a31a33ae4c2a43
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950925"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793732"
 ---
 # <a name="how-to-upgrade-projects-to-the-current-version-of-the-azure-tools-for-visual-studio"></a>Mise à niveau des projets vers la version actuelle d’Azure Tools pour Visual Studio
 ## <a name="overview"></a>Vue d'ensemble

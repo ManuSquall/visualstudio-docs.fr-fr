@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: dd7a90853b22579557078dc0a407873e5401c36d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640699"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62575167"
 ---
 # <a name="how-to-programmatically-create-an-email-item"></a>Procédure : Créer par programmation un élément de courrier électronique
   Cet exemple crée un message électronique dans Microsoft Office Outlook.

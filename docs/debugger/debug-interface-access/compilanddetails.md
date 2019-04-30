@@ -13,19 +13,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 896832ac3e96e499aa564d5bce44dc06185090de
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609226"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555245"
 ---
 # <a name="compilanddetails"></a>CompilandDetails
 Informations de compiland sont réparties entre les symboles avec un `SymTagCompiland` balise (détail faible) et un `SymTagCompilandDetails` balise (beaucoup de détails). `SymTagCompilandDetails` nécessite le chargement de symboles supplémentaires. Toutefois, il fournit une mine d’informations sur le module qui n’est pas disponible avec un `SymTagCompiland` symbole.
 
-## <a name="properties"></a>Propriétés
+## <a name="properties"></a>Properties
  Le tableau suivant présente les propriétés qui sont valides pour ce type de symbole.
 
-|Property|Type de données|Description|
+|Propriété|Type de données|Description|
 |--------------|---------------|-----------------|
 |[IDiaSymbol::get_backEndBuild](../../debugger/debug-interface-access/idiasymbol-get-backendbuild.md)|`DWORD`|Numéro de build de back-end du compilateur.|
 |[IDiaSymbol::get_backEndMajor](../../debugger/debug-interface-access/idiasymbol-get-backendmajor.md)|`DWORD`|Numéro de version principale de back-end du compilateur.|
@@ -50,7 +50,7 @@ Informations de compiland sont réparties entre les symboles avec un `SymTagComp
 |[IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md)|`DWORD`|ID d’index de symbole.|
 |[IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md)|`DWORD`|Retourne `SymTagCompilandDetails` (parmi les [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md) valeurs).|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Les compilateurs utilisent souvent dans un formulaire appelé un compilateur deux passes ; dans certaines versions du compilateur, chaque passage est gérée par un programme distinct. Ceux-ci sont connus comme les compilateurs frontaux et principaux, respectivement, par conséquent, les symboles de propriété pour les numéros de version principal et frontal.
 
 ## <a name="see-also"></a>Voir aussi

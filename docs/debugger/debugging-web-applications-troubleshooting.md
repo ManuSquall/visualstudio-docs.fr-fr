@@ -19,19 +19,19 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9cf25518a5511c0da629c400adfe866789929ea2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708717"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852350"
 ---
-# <a name="debugging-web-applications-troubleshooting"></a>Débogage d'applications Web : dépannage
+# <a name="debugging-web-applications-troubleshooting"></a>Débogage d’applications web : Résolution des problèmes
 Cette section contient des procédures courantes qui peuvent servir à résoudre des erreurs.
 
 ## <a name="in-this-section"></a>Dans cette section
- [Comment : vérifier les paramètres de propriété IIS](../debugger/how-to-verify-iis-property-settings.md) explique comment définir correctement les propriétés dans IIS pour activer le débogage.
+ [Guide pratique pour Vérifiez les paramètres des propriétés IIS](../debugger/how-to-verify-iis-property-settings.md) explique comment définir correctement les propriétés dans IIS pour activer le débogage.
 
 ## <a name="related-sections"></a>Rubriques connexes
- [Débogage d’Applications Web : Erreurs et dépannage](../debugger/debugging-web-applications-errors-and-troubleshooting.md) explique la résolution des problèmes et d’erreurs.
+ [Débogage d’applications web : Erreurs et dépannage](../debugger/debugging-web-applications-errors-and-troubleshooting.md) explique la résolution des problèmes et d’erreurs.
 
  [Débogage des Applications Web et scripts](/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications) vue d’ensemble du débogage d’applications Web telles que [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], services Web XML et les projets ATL server.

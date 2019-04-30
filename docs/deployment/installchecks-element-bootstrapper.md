@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e45a2d0527e1d245a0d034310939bd1601db8adc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666453"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62927905"
 ---
 # <a name="ltinstallchecksgt-element-bootstrapper"></a>&lt;InstallChecks&gt; élément (programme d’amorçage)
 Le `InstallChecks` élément prend en charge le démarrage d’une variété de tests sur l’ordinateur local pour vous assurer que toutes les conditions préalables requises pour une application ont été installés.
@@ -125,7 +125,7 @@ Le `InstallChecks` élément prend en charge le démarrage d’une variété de 
 |---------------|-----------------|
 |`Property`|Obligatoire. Le nom de la propriété pour stocker le résultat. Cette propriété peut être référencée à partir d’un test sous le `InstallConditions` élément, qui est un enfant de le `Command` élément. Pour plus d’informations, consultez [ \<commandes > élément](../deployment/commands-element-bootstrapper.md).|
 |`Key`|Obligatoire. Nom de la clé de Registre.|
-|`Value`|Facultatif. Le nom de la valeur de Registre à récupérer. La valeur par défaut consiste à retourner le texte de la valeur par défaut. `Value` doit être une chaîne ou une valeur DWORD.|
+|`Value`|Optionnel. Le nom de la valeur de Registre à récupérer. La valeur par défaut consiste à retourner le texte de la valeur par défaut. `Value` doit être une chaîne ou une valeur DWORD.|
 
 ## <a name="registryfilecheck"></a>RegistryFileCheck
  Cet élément est un élément enfant facultatif de `InstallChecks`. Pour chaque instance de `RegistryFileCheck`, le programme d’amorçage récupère la version du fichier spécifié, essayant d’abord de récupérer le chemin d’accès au fichier à partir de la clé de Registre spécifiée. Cela est particulièrement utile si vous souhaitez rechercher un fichier dans un répertoire spécifié en tant que valeur dans le Registre.
@@ -136,7 +136,7 @@ Le `InstallChecks` élément prend en charge le démarrage d’une variété de 
 |---------------|-----------------|
 |`Property`|Obligatoire. Le nom de la propriété pour stocker le résultat. Cette propriété peut être référencée à partir d’un test sous le `InstallConditions` élément, qui est un enfant de le `Command` élément. Pour plus d’informations, consultez [ \<commandes > élément](../deployment/commands-element-bootstrapper.md).|
 |`Key`|Obligatoire. Nom de la clé de Registre. Sa valeur est interprétée comme le chemin d’accès vers un fichier, à moins que le `File` attribut est défini. Si cette clé n’existe pas, `Property` n’est pas définie.|
-|`Value`|Facultatif. Le nom de la valeur de Registre à récupérer. La valeur par défaut consiste à retourner le texte de la valeur par défaut. `Value` doit être une chaîne.|
+|`Value`|Optionnel. Le nom de la valeur de Registre à récupérer. La valeur par défaut consiste à retourner le texte de la valeur par défaut. `Value` doit être une chaîne.|
 |`FileName`|Optionnel. Le nom d’un fichier. Si spécifié, la valeur obtenue à partir de la clé de Registre est censée pour être un chemin de répertoire, et ce nom est ajouté à ce dernier. Si non spécifié, la valeur retournée à partir du Registre est censée pour être le chemin complet vers un fichier.|
 |`SearchDepth`|Facultatif. La profondeur à partir duquel rechercher des sous-dossiers pour le fichier nommé. La recherche respecte la profondeur en premier. La valeur par défaut est 0, ce qui limite la recherche sur le dossier de niveau supérieur spécifié par la valeur de la clé de Registre.|
 

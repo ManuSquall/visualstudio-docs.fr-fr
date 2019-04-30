@@ -14,11 +14,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 5a84f0a037df92ff31ce66eb6692367ef1d209f6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649366"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546659"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio Administrator Guide
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,8 +69,8 @@ Par défaut, l’installation de Visual Studio active les commentaires client. V
   
 |Rubrique|Description|  
 |-----------|-----------------|  
-|[Guide pratique pour Installer une version spécifique de Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|Décrit comment installer des configurations spécifiques de la version actuelle de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|[Guide pratique pour Créer et exécuter une Installation sans assistance de Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|Décrit comment installer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en mode sans assistance.|  
-|[Guide pratique pour Appliquer automatiquement les clés de produit lors du déploiement de Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|Décrit comment appliquer des clés de produit lors du déploiement sur plusieurs ordinateurs.|  
+|[Guide pratique pour installer une mise en production spécifique de Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|Décrit comment installer des configurations spécifiques de la version actuelle de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
+|[Guide pratique pour créer et exécuter une installation sans assistance de Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|Décrit comment installer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] en mode sans assistance.|  
+|[Guide pratique pour appliquer automatiquement des clés de produit lors du déploiement de Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|Décrit comment appliquer des clés de produit lors du déploiement sur plusieurs ordinateurs.|  
 |[Guide de l’administrateur Help Viewer](../ide/help-viewer-administrator-guide.md)|Fournit des informations sur la gestion des installations locales d’aide pour les environnements de réseau qui ont ou n’ont pas accès à internet.|  
 |[Installer Visual Studio](../install/install-visual-studio-2015.md)|Fournit des instructions et des liens vers des rubriques qui décrivent comment installer [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|

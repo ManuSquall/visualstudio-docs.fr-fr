@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 53b71471ada55751de301391fdcc70387c1bb6c2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157047"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935677"
 ---
 # <a name="iactivescriptclose"></a>IActiveScript::Close
 Provoque le moteur de script abandonner n’importe quel script actuellement chargé, son état est perdu et libérer les pointeurs d’interface qu’à d’autres objets, donc dans un état fermé. Récepteurs d’événements, le texte de script exécuté immédiatement et appels de macro qui sont déjà en cours d’exécution sont terminés avant les modifications d’état (utilisez [IActiveScript::InterruptScriptThread](../../winscript/reference/iactivescript-interruptscriptthread.md) d’annuler un thread de script en cours d’exécution). Cette méthode doit être appelée par l’hôte de création avant de l’interface est libéré pour éviter les problèmes de référence circulaire.  

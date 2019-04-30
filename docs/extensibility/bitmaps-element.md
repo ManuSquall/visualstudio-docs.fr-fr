@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d247a0df29cb14eec6dffa5e362f23693b59cc99
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699637"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891660"
 ---
 # <a name="bitmaps-element"></a>Élément bitmaps
 Groupes [élément de Bitmap](../extensibility/bitmap-element.md) éléments.
@@ -37,7 +37,7 @@ Groupes [élément de Bitmap](../extensibility/bitmap-element.md) éléments.
 
 |Attribut|Description|
 |---------------|-----------------|
-|Condition|Facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condition|Optionnel. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Éléments enfants
 

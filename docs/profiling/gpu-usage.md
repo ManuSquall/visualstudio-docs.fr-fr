@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f16a518542e8acab636da6e395fdfee8d7a25085
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223466"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969812"
 ---
 # <a name="gpu-usage"></a>Utilisation du GPU
 
@@ -79,7 +79,7 @@ Voici les conditions requises pour l’outil Utilisation du GPU, qui s’ajouten
 
 À compter de Visual Studio 2017, vous pouvez ouvrir ces données avec [GPUView](/windows-hardware/drivers/display/using-gpuview) et [Windows Performance Analyzer](/windows-hardware/test/wpt/windows-performance-analyzer). Sélectionnez simplement les liens **Ouvrir dans GpuView** ou **Ouvrir dans l’outil d’activation de Windows** situés en bas à droite de la session de diagnostic.
 
-![Ouvrir dans…](media/gfx_diag_open_in.png)
+![Ouvrir dans...](media/gfx_diag_open_in.png)
 <!-- /VERSIONLESS -->
 
 ## <a name="using-the-gpu-usage-report"></a>Emploi du rapport Utilisation du GPU

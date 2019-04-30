@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a02848230187eb465d56ed73e44380e4b043b117
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084425"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946626"
 ---
 # <a name="cant-have-break-outside-of-loop"></a>Impossible d'utiliser une instruction 'break' en dehors d'une boucle
 Vous avez tenté d’utiliser le **saut** mot clé en dehors d’une boucle. Le **saut** mot clé est utilisé pour mettre fin à une boucle ou `switch` instruction. Il doit être incorporé dans le corps d’une boucle ou `switch` instruction. Toutefois, un **étiquette** pouvez suivre le mot clé break.  

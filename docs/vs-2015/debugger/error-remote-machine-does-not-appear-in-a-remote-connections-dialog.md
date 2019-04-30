@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 4136a320f53f37377b9f6ffbff5a48a8be746276
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62535591"
 ---
 # <a name="error-remote-machine-does-not-appear-in-a-remote-connections-dialog"></a>Erreur : L’ordinateur distant n’apparaît pas dans une boîte de dialogue Connexions à distance
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]

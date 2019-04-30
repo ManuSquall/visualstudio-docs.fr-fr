@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 74cd564af66532c454d4ec340c6c8c93820cf5c6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56678343"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62907468"
 ---
 # <a name="keybindings-element"></a>Élément KeyBindings
 L’élément KeyBindings regroupe les éléments de la combinaison de touches et autres regroupements de combinaisons de touches.
@@ -39,7 +39,7 @@ L’élément KeyBindings regroupe les éléments de la combinaison de touches e
 
 |Attribut|Description|
 |---------------|-----------------|
-|Condition|Facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condition|Optionnel. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Éléments enfants
 

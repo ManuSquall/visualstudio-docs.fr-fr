@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0df624a27513fa0eb18b2643bb7c680d71d94c0c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722357"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62432419"
 ---
 # <a name="source-control-plug-in-glossary"></a>Glossaire de plug-in de contrôle de code source
 L’utiles termes et définitions ci-après se rapportent à la documentation du SDK de plug-in de contrôle de code Source.

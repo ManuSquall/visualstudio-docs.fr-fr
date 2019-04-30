@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 548396e6393720824c93c07e55046ec2d91797a2
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54862861"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62561463"
 ---
 # <a name="ltpostactionsgt-element-office-development-in-visual-studio"></a>&lt;postActions&gt; élément (développement Office dans Visual Studio)
   L’élément `postActions` de l’espace de noms `vstav3` contient tous les éléments `postAction` qui décrivent des actions de post-déploiement, lesquelles s’exécutent après l’installation des solutions Office.
@@ -45,7 +45,7 @@ ms.locfileid: "54862861"
  `postActions` possède l’élément suivant.
 
 ### <a name="postaction"></a>postAction
- Facultatif. Le rôle de la `postAction` élément dans le `vstav3` espace de noms est défini dans [ &#60;postAction&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/postaction-element-office-development-in-visual-studio.md).
+ Optionnel. Le rôle de la `postAction` élément dans le `vstav3` espace de noms est défini dans [ &#60;postAction&#62; élément &#40;développement Office dans Visual Studio&#41;](../vsto/postaction-element-office-development-in-visual-studio.md).
 
 ## <a name="post-deployment-action-example"></a>Exemple d’action de post-déploiement
 

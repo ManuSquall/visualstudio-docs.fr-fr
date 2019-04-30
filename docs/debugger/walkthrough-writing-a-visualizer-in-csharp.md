@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: b527f959f093f155d74e2a85a1812d7ccb58d1e7
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584530"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62901246"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>Procédure pas à pas : Écriture d’un visualiseur en C\#
 Cette procédure pas à pas explique comment écrire un visualiseur simple à l’aide de C#. Le visualiseur que permet de créer cette procédure pas à pas affiche le contenu d’une chaîne à l’aide d’un message Windows Forms. Ce visualiseur de chaîne simple n’est pas particulièrement utile en soi, mais il montre les étapes de base que vous devez suivre pour créer des visualiseurs plus utiles pour les autres types de données.

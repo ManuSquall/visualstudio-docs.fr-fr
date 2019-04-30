@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 5dbf56278a3987fafa0e0a0263c17460b56fafaf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102638"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939246"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>Appeler du code dans des Compléments VSTO à partir d’autres solutions Office
   Vous pouvez exposer un objet inclus dans votre complément VSTO à d’autres solutions, notamment d’autres solutions Microsoft Office. Cette possibilité s’avère utile si votre complément VSTO propose un service que vous voulez permettre à d’autres solutions d’utiliser. Par exemple, si vous avez un VSTO Add-in pour Microsoft Office Excel qui effectue des calculs sur des données financières à partir d’un service Web, les autres solutions peuvent effectuer ces calculs en appelant le complément VSTO Excel lors de l’exécution.
