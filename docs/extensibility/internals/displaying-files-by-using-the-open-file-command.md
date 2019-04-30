@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9cc24e259ac5aaa8526d5855a1662c146e1438ff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6c4655d251d9020c1b8b4474865126dc98fa982f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420671"
 ---
 # <a name="display-files-by-using-the-open-file-command"></a>Afficher les fichiers à l’aide de la commande Ouvrir un fichier
 Les étapes suivantes décrivent comment l’IDE gère le **ouvrir un fichier** commande, qui est disponible sur le **fichier** menu [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Les étapes décrivent également la façon dont les projets doivent répondre aux appels issus de cette commande.
@@ -31,7 +31,7 @@ Les étapes suivantes décrivent comment l’IDE gère le **ouvrir un fichier** 
     - Si le fichier n’est pas ouvert, l’IDE appelle <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A> pour chaque projet afin de déterminer quel projet peut ouvrir le fichier de requête.
 
         > [!NOTE]
-        >  Dans votre implémentation de projet de <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>, fournir une valeur de priorité qui indique le niveau auquel votre projet s’ouvre le fichier. Les valeurs de priorité sont fournies dans le <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> énumération.
+        > Dans votre implémentation de projet de <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3.IsDocumentInProject%2A>, fournir une valeur de priorité qui indique le niveau auquel votre projet s’ouvre le fichier. Les valeurs de priorité sont fournies dans le <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY> énumération.
 
 2. Chaque projet répond avec un niveau de priorité qui indique l’importance qu’il place sur en cours du projet à ouvrir le fichier.
 

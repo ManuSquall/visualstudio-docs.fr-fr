@@ -12,12 +12,12 @@ ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8a96e6b10b68fc3b3275fbadb07de310c224da8c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e3fa0eaa6a0b301914f0ea908ef1222d1b342f5c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104903"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408451"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Prise en charge des extraits de code dans un service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Un extrait de code est un morceau de code est inséré dans le fichier source. L
  Services de langage hérité sont implémentés en tant que partie d’un VSPackage, mais la plus récente pour implémenter des fonctionnalités de service de langage consiste à utiliser des extensions MEF. Pour plus d’informations, consultez [procédure pas à pas : Implémentation d’extraits de Code](../../extensibility/walkthrough-implementing-code-snippets.md).  
   
 > [!NOTE]
->  Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorer les performances de votre service de langage et vous permettent de tirer parti des nouvelles fonctionnalités de l’éditeur.  
+> Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorer les performances de votre service de langage et vous permettent de tirer parti des nouvelles fonctionnalités de l’éditeur.  
   
 ## <a name="managed-package-framework-support-for-code-snippets"></a>Managed Package Framework prend en charge des extraits de Code  
  L’infrastructure de package managé (MPF) prend en charge la plupart des fonctionnalités de l’extrait de code, de lire le modèle à insérer l’extrait de code et permettant spéciale en mode édition. Prise en charge est gérée via la <xref:Microsoft.VisualStudio.Package.ExpansionProvider> classe.  
@@ -395,4 +395,4 @@ namespace TestLanguagePackage
  [Fonctionnalités de Service de langage hérité](../../extensibility/internals/legacy-language-service-features1.md)   
  [L’inscription d’un Service de langage hérité](../../extensibility/internals/registering-a-legacy-language-service1.md)   
  [Extraits de code](../../ide/code-snippets.md)   
- [Procédure pas à pas : Obtention d’une liste d’extraits de Code installés (implémentation héritée)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
+ [Procédure pas à pas : Obtention d’une liste d’extraits de code installés (implémentation héritée)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)

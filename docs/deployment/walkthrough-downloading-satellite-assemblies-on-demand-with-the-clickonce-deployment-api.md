@@ -21,25 +21,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 515149f6e4e01c27d4076580f7fe405f3c8c5496
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 8a1aa828f0f4a84f1a8dce3055f3719a3c11520e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637540"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405925"
 ---
-# <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Procédure pas à pas : Téléchargement d’assemblys satellites à la demande avec l’API du déploiement ClickOnce
+# <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Procédure pas à pas : Télécharger des assemblys satellites à la demande avec l’API du déploiement ClickOnce
 Les applications Windows Forms peuvent être configurées pour plusieurs cultures à l’aide d’assemblys satellites. Un *assembly satellite* contient des ressources d’application pour une culture autre que la culture par défaut de l’application.
 
  Comme indiqué dans [applications ClickOnce localiser](../deployment/localizing-clickonce-applications.md), vous pouvez inclure plusieurs assemblys satellites pour plusieurs cultures au sein du même [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement. Par défaut, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] télécharge tous les assemblys satellites de votre déploiement sur l’ordinateur client, même si un seul client n’a probablement besoin que d’un assembly satellite.
 
- Cette procédure pas à pas explique comment marquer vos assemblys satellites comme facultatifs et télécharger uniquement l’assembly dont a besoin un ordinateur client pour ses paramètres de culture actuels. La procédure suivante utilise les outils disponibles dans le [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Vous pouvez également effectuer cette tâche dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Consultez également [procédure pas à pas : télécharger des assemblys satellites à la demande avec l’API à l’aide du concepteur du déploiement ClickOnce](/previous-versions/visualstudio/visual-studio-2012/ms366788(v=vs.110)) ou [procédure pas à pas : téléchargement d’assemblys satellites à la demande avec l’API du déploiement ClickOnce à l’aide le concepteur](/previous-versions/visualstudio/visual-studio-2013/ms366788(v=vs.120)).
+ Cette procédure pas à pas explique comment marquer vos assemblys satellites comme facultatifs et télécharger uniquement l’assembly dont a besoin un ordinateur client pour ses paramètres de culture actuels. La procédure suivante utilise les outils disponibles dans le [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Vous pouvez également effectuer cette tâche dans [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].  Consultez également [procédure pas à pas : Télécharger des assemblys satellites à la demande avec l’API à l’aide du concepteur du déploiement ClickOnce](/previous-versions/visualstudio/visual-studio-2012/ms366788(v=vs.110)) ou [procédure pas à pas : Télécharger des assemblys satellites à la demande avec l’API à l’aide du concepteur du déploiement ClickOnce](/previous-versions/visualstudio/visual-studio-2013/ms366788(v=vs.120)).
 
 > [!NOTE]
->  À des fins de test, l’exemple de code suivant affecte par programmation la valeur `ja-JP`à la culture. Consultez la section « Étapes suivantes » plus loin dans cette rubrique pour plus d’informations sur l’adaptation de ce code à un environnement de production.
+> À des fins de test, l’exemple de code suivant affecte par programmation la valeur `ja-JP`à la culture. Consultez la section « Étapes suivantes » plus loin dans cette rubrique pour plus d’informations sur l’adaptation de ce code à un environnement de production.
 
 ## <a name="prerequisites"></a>Prérequis
- Cette rubrique suppose que vous savez comment ajouter des ressources localisées à votre application à l’aide de Visual Studio. Pour obtenir des instructions détaillées, consultez [procédure pas à pas : les formulaires Windows localiser](/previous-versions/visualstudio/visual-studio-2010/y99d1cd3(v=vs.100)).
+ Cette rubrique suppose que vous savez comment ajouter des ressources localisées à votre application à l’aide de Visual Studio. Pour obtenir des instructions détaillées, consultez [procédure pas à pas : Localiser les formulaires Windows](/previous-versions/visualstudio/visual-studio-2010/y99d1cd3(v=vs.100)).
 
 ### <a name="to-download-satellite-assemblies-on-demand"></a>Pour télécharger des assemblys satellites à la demande
 

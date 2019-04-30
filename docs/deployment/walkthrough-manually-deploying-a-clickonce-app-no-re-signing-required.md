@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 773a9f5a990b3432484c1ff13012b173c9fac1cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 50febcb027ec51b62bdde7ea06a7112470cdc247
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076222"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405838"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Procédure pas à pas : Déployer manuellement une application ClickOnce qui ne nécessite pas de nouvelle signature et qui conserve les informations de personnalisation
 Lorsque vous créez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application et puis de lui donner à un client pour publier et le déploiement, le client a généralement mis à jour le manifeste de déploiement et de signer à nouveau. Si qui est toujours la méthode recommandée dans la plupart des cas, le .NET Framework 3.5 vous permet de créer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiements peuvent être déployés par les clients sans avoir à régénérer un nouveau manifeste de déploiement. Pour plus d’informations, consultez [ClickOnce de déployer des applications pour les serveurs de test et de production sans nouvelle signature](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
@@ -35,7 +35,7 @@ Lorsque vous créez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick
  Lorsque vous créez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] application et puis de lui donner à un client pour publier et le déploiement, l’application peut utiliser la personnalisation du client ou conserve la vôtre. Par exemple, si l’application est une application propriétaire unique, vous souhaiterez conserver votre personnalisation. Si l’application est hautement personnalisée pour chaque client, vous souhaiterez probablement utiliser la personnalisation du client. Le .NET Framework 3.5 permet de vous permettent de préserver votre marque, les informations de serveur de publication et signature de sécurité lorsque vous donnez une application à une organisation à déployer. Pour plus d’informations, consultez [applications ClickOnce créer d’autres utilisateurs peuvent déployer](../deployment/creating-clickonce-applications-for-others-to-deploy.md).
 
 > [!NOTE]
->  Dans cette procédure pas à pas vous créez les déploiements manuellement en utilisant l’outil de ligne de commande *Mage.exe* ou l’outil graphique *MageUI.exe*. Pour plus d’informations sur les déploiements manuels, consultez [procédure pas à pas : Déployer manuellement une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+> Dans cette procédure pas à pas vous créez les déploiements manuellement en utilisant l’outil de ligne de commande *Mage.exe* ou l’outil graphique *MageUI.exe*. Pour plus d’informations sur les déploiements manuels, consultez [procédure pas à pas : Déployer manuellement une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
 ## <a name="prerequisites"></a>Prérequis
  Pour effectuer les étapes dans cette procédure pas à pas, vous devez les éléments suivants :
@@ -51,7 +51,7 @@ Lorsque vous créez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick
 2. Créez un répertoire nommé d’après la version actuelle de votre déploiement. S’il s’agit de la première fois que vous déployez l’application, vous choisirez probablement **1.0.0.0**.
 
    > [!NOTE]
-   >  La version de votre déploiement peut être différente de la version de vos fichiers d’application.
+   > La version de votre déploiement peut être différente de la version de vos fichiers d’application.
 
 3. Créez un sous-répertoire nommé **bin** et copier tous vos fichiers d’application, y compris les fichiers exécutables, les assemblys, les ressources et les fichiers de données.
 
@@ -101,7 +101,7 @@ Lorsque vous créez un [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick
 3. Créez un sous-répertoire nommé d’après la version actuelle de votre déploiement. S’il s’agit de la première fois que vous déployez l’application, vous choisirez probablement **1.0.0.0**.
 
    > [!NOTE]
-   >  La version de votre déploiement peut être différente de la version de vos fichiers d’application.
+   > La version de votre déploiement peut être différente de la version de vos fichiers d’application.
 
 4. Déplacer le \\ **bin** répertoire dans le répertoire que vous avez créé à l’étape 2.
 

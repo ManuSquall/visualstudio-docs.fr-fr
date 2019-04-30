@@ -11,12 +11,12 @@ ms.assetid: 9dc6c33f-e6cf-4cf2-9b05-e8f7bfac1cfb
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 935734d3ab21fd4ce69afaaf5fd4eef9ac417089
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 98cd0ec51ead200a904baeb409551cd1084f1f11
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952611"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440830"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>Indicateurs de la ligne de commande du compilateur VSCT
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 ```  
   
 > [!NOTE]
->  Les caractères - (tiret) et / (barre oblique) sont les deux notation acceptées pour ce qui indique les paramètres de ligne de commande.  
+> Les caractères - (tiret) et / (barre oblique) sont les deux notation acceptées pour ce qui indique les paramètres de ligne de commande.  
   
  Indicateurs acceptables et leur signification sont les suivantes.  
   
@@ -61,7 +61,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 |-D|Spécifiez tous les symboles définis supplémentaires.|  
 |-I|Indiquer que le supplémentaires incluent des chemins d’accès qui doivent être utilisés lors de la résolution des références de fichier.|  
 |-L|Spécifiez le <xref:System.Globalization.CultureInfo> nom de culture, par exemple, « en-US ».|  
-|-E|Émettre C# suivie d’objets dans l’espace de noms pour les éléments de la commande, [C&#124;H&#124;N] :*filename*où C = C#, H = en-tête C++, N = espace de noms. L’espace de noms est obligatoire pour C#.|  
+|-E|Émettre C# suivie d’objets dans l’espace de noms pour les éléments de la commande, [C&#124;H&#124;N] :*filename*où C = C#, H = C++ en-tête, N = espace de noms. L’espace de noms est obligatoire pour c#.|  
 |-v|Sortie détaillée.|  
   
  Le commutateur -L indique au compilateur pour sélectionner un groupe de chaînes pour générer le fichier .cto binaire qui correspond à la donnée <xref:System.Globalization.CultureInfo> nom de culture. Le nom de culture spécifié doit correspondre à l’attribut de langue d’un ou plusieurs [élément Strings](../../extensibility/strings-element.md) dans le fichier .vsct. Si un élément de chaînes n’a aucun attribut de langage, il est hérité à partir de la contenant [CommandTable élément](../../extensibility/commandtable-element.md).  
@@ -70,7 +70,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
   
  Si le nom de culture fourni par le commutateur -L ne correspond pas à l’attribut Language de n’importe quel élément de chaînes, le compilateur tente de correspondre à la langue et pas la région. Par exemple, si « en-US » est introuvable, le compilateur essaie « fr » à la place. En cas d’échec, il essaiera de la culture actuelle du système d’exploitation. En cas d’échec, il sera compilé le premier élément de chaînes qu’il trouve.  
   
- Le commutateur -E peut être utilisé pour émettre un fichier d’en-tête C-style qui contient les symboles qui sont utilisés par la table de commande ou d’émettre un fichier C# qui contient des objets pour les symboles de commande.  
+ Le commutateur -E peut être utilisé pour émettre un fichier d’en-tête C-style qui contient les symboles qui sont utilisés par la table de commande ou d’émettre un fichier c# qui contient des objets pour les symboles de commande.  
   
  L’option-D et – je commutateurs ont la syntaxe des indicateurs de préprocesseur Cl.exe C qui portent le même nom. D : définitions qui ont le format X = Y sont utilisées pour l’expansion de basé sur XML \<défini par > tests dans `Condition` attributs. – Je les chemins d’accès include permettent de résoudre \<Include >, \<Extern > et \<Bitmap > références de fichiers. Pour plus d’informations, consultez le [VSCT XML Schema Reference](../../extensibility/vsct-xml-schema-reference.md).  
   

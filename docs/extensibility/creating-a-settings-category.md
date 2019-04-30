@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c757f2ee7dc69e53f492d4dfa37c2ca95b4af70
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 304b2afd734527b80a465fc5074077bf8b0661fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411334"
 ---
 # <a name="create-a-settings-category"></a>Créer une catégorie de paramètres
 
@@ -46,7 +46,7 @@ Pour démarrer cette procédure pas à pas, vous devez tout d’abord effectuer 
      Cela crée les ressources ce nom de la catégorie « My Category », l’objet « mes paramètres » et la description de la catégorie « OptionInteger et OptionFloat ».
 
     > [!NOTE]
-    >  Parmi ces trois, uniquement le nom de catégorie n’apparaît pas dans le **importation et exportation de paramètres** Assistant.
+    > Parmi ces trois, uniquement le nom de catégorie n’apparaît pas dans le **importation et exportation de paramètres** Assistant.
 
 3. Dans *MyToolsOptionsPackage.cs*, ajoutez un `float` propriété nommée `OptionFloat` à la `OptionPageGrid` classe, comme indiqué dans l’exemple suivant.
 
@@ -76,7 +76,7 @@ Pour démarrer cette procédure pas à pas, vous devez tout d’abord effectuer 
     ```
 
     > [!NOTE]
-    >  Le `OptionPageGrid` catégorie nommée « My Category » maintenant se compose des deux propriétés, `OptionInteger` et `OptionFloat`.
+    > Le `OptionPageGrid` catégorie nommée « My Category » maintenant se compose des deux propriétés, `OptionInteger` et `OptionFloat`.
 
 4. Ajouter un <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> à la `MyToolsOptionsPackage` classe et donnez-lui le nom de la catégorie « My Category », attribuez-lui le NomObjet « Mes paramètres », puis isToolsOptionPage la valeur true. Définir categoryResourceID, objectNameResourceID et DescriptionResourceID à la ressource de chaîne correspondant Qu'id créés précédemment.
 

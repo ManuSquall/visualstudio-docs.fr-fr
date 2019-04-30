@@ -27,12 +27,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 92718187fd8c83eb20ce8b39d323d60434f5f48f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2a55b78cfa962abe4a1eecf778be9cdc6de3aa6e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065751"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63384066"
 ---
 # <a name="mfc-debugging-techniques"></a>Techniques de débogage MFC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -236,10 +236,10 @@ Total allocations: 67 bytes
  Dans un programme MFC, vous pouvez utiliser [CMemoryState::DumpAllObjectsSince](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) pour faire un dump une description de tous les objets sur le tas qui n’ont pas été libérés. `DumpAllObjectsSince` permet de faire un dump de tous les objets alloués depuis le dernier [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a). Si aucun appel à `Checkpoint` n'a eu lieu, `DumpAllObjectsSince` fait un dump de tous les objets et non-objets actuellement en mémoire.  
   
 > [!NOTE]
->  Avant de pouvoir utiliser le dump d'objets MFC, vous devez [activer le traçage de diagnostic](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_memory_diagnostics).  
+> Avant de pouvoir utiliser le dump d'objets MFC, vous devez [activer le traçage de diagnostic](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_memory_diagnostics).  
   
 > [!NOTE]
->  MFC fait automatiquement un dump de tous les objets qui ont été perdus lorsque votre programme s'arrête ; il est donc inutile de créer du code pour faire un dump des objets en ce point.  
+> MFC fait automatiquement un dump de tous les objets qui ont été perdus lorsque votre programme s'arrête ; il est donc inutile de créer du code pour faire un dump des objets en ce point.  
   
  Le code suivant recherche une fuite de mémoire en comparant deux états de mémoire et fait un dump de tous les objets si une fuite est détectée.  
   

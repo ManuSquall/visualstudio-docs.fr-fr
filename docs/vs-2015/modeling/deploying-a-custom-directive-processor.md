@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0a440fbd87e85a72b2807ea09c7af61adf9f8af7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c485209f47e2d119fe469a59fe379f7cabe03813
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108358"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422587"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Déploiement d'un processeur de directive personnalisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -148,7 +148,7 @@ Pour utiliser un processeur de directive personnalisé dans [!INCLUDE[vsprvs](..
 ```  
   
 > [!NOTE]
->  Cet attribut est placé sur la classe du package, et non pas sur la classe du processeur de directive.  
+> Cet attribut est placé sur la classe du package, et non pas sur la classe du processeur de directive.  
   
  Le fichier .pkgdef sera généré en même temps que le projet. Lorsque vous installerez le VSPackage, le fichier .pkgdef inscrira le processeur de directive.  
   
@@ -160,7 +160,7 @@ Pour utiliser un processeur de directive personnalisé dans [!INCLUDE[vsprvs](..
  Cette méthode d'installation d'un processeur de directive personnalisé est la moins recommandée. Elle ne permet pas d'activer ni de désactiver facilement le processeur de directive, et ne fournit pas de méthode pour distribuer le processeur de directive aux autres utilisateurs.  
   
 > [!CAUTION]
->  Une modification incorrecte du Registre peut endommager gravement votre système. Avant d'apporter des modifications au Registre, veillez à sauvegarder toutes les données importantes qui se trouvent sur l'ordinateur.  
+> Une modification incorrecte du Registre peut endommager gravement votre système. Avant d'apporter des modifications au Registre, veillez à sauvegarder toutes les données importantes qui se trouvent sur l'ordinateur.  
   
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>Pour inscrire un processeur de directive en définissant une clé de Registre  
   

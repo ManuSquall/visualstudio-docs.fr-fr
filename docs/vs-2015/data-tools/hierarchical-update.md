@@ -24,12 +24,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 17eb5c1ca2ad35b7a510c5a70d3ad5c5f741c69d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 666b5acaae84a1b16c1b4bdfeb7cb1b8f4bcfb64
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063398"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386008"
 ---
 # <a name="hierarchical-update"></a>Mise à jour hiérarchique
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Mise à jour hiérarchique * désigne le processus d’enregistrement des donné
  Définition de l’ordre pour effectuer des mises à jour définit l’ordre de la personne insère, met à jour et les suppressions qui est requis pour enregistrer toutes les données modifiées dans toutes les tables d’un dataset. Lors de la mise à jour hiérarchique est activée, insertions sont exécutées en premier, puis met à jour, puis supprime. Le `TableAdapterManager` fournit un `UpdateOrder` propriété qui peut être ensemble pour effectuer des mises à jour tout d’abord, puis les insertions et suppressions.  
   
 > [!NOTE]
->  Il est important de comprendre que l’ordre de mise à jour est exhaustive. Autrement dit, lorsque les mises à jour sont effectuées, insertions et suppressions sont exécutées pour toutes les tables dans le jeu de données.  
+> Il est important de comprendre que l’ordre de mise à jour est exhaustive. Autrement dit, lorsque les mises à jour sont effectuées, insertions et suppressions sont exécutées pour toutes les tables dans le jeu de données.  
   
  Pour définir le `UpdateOrder` propriété, après avoir fait glisser des éléments à partir de la [fenêtre Sources de données](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) sur un formulaire, sélectionnez le `TableAdapterManager` dans la barre d’état du composant, puis définissez le `UpdateOrder` propriété dans le **propriétés** fenêtre. Pour plus d'informations, voir [Procédure : Définir l’ordre lorsque vous effectuez une mise à jour hiérarchique](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83).  
   
@@ -71,7 +71,7 @@ Mise à jour hiérarchique * désigne le processus d’enregistrement des donné
  Toutefois, vous pouvez parfois restaurer le jeu de données à partir de la copie de sauvegarde. Un exemple de ceci peut se produire lorsque vous utilisez des valeurs incrémentées automatiquement. Par exemple, si un enregistrement opération n’aboutit pas, valeurs incrémentées automatiquement ne sont pas réinitialisées dans le jeu de données, et le jeu de données continue à créer des valeurs à incrémentation automatique. Cela laisse un écart de numérotation qui ne peut pas être acceptable dans votre application. Dans les situations où il s’agit d’un problème, le `TableAdapterManager` fournit un `BackupDataSetBeforeUpdate` propriété qui remplace le jeu de données existant par une copie de sauvegarde si la transaction échoue.  
   
 > [!NOTE]
->  La copie de sauvegarde est uniquement en mémoire lors de la `TableAdapterManager.UpdateAll` méthode est en cours d’exécution. Il n’est donc aucun accès par programmation à ce jeu de données de sauvegarde, car il remplace le jeu de données d’origine ou est hors de portée dès que le `TableAdapterManager.UpdateAll` méthode termine en cours d’exécution.  
+> La copie de sauvegarde est uniquement en mémoire lors de la `TableAdapterManager.UpdateAll` méthode est en cours d’exécution. Il n’est donc aucun accès par programmation à ce jeu de données de sauvegarde, car il remplace le jeu de données d’origine ou est hors de portée dès que le `TableAdapterManager.UpdateAll` méthode termine en cours d’exécution.  
   
 ## <a name="modify-the-generated-save-code-to-perform-the-hierarchical-update"></a>Modifier le texte généré le code pour effectuer la mise à jour hiérarchique d’enregistrement  
  Enregistrez les modifications des tables de données associées du dataset dans la base de données en appelant la méthode `TableAdapterManager.UpdateAll` et en passant le nom du dataset contenant les tables associées. Par exemple, exécutez la méthode `TableAdapterManager.UpdateAll(NorthwindDataset)` pour envoyer les mises à jour de toutes les tables de NorthwindDataset à la base de données principale.  
@@ -81,7 +81,7 @@ Mise à jour hiérarchique * désigne le processus d’enregistrement des donné
  Le code d'enregistrement généré contient également une ligne de code qui appelle la méthode `CustomersBindingSource.EndEdit`. Plus spécifiquement, il appelle le <xref:System.Windows.Forms.BindingSource.EndEdit%2A> méthode du premier <xref:System.Windows.Forms.BindingSource>qui est ajouté au formulaire. En d’autres termes, ce code est généré uniquement pour la première table qui est déplacée de la **des Sources de données** fenêtre vers le formulaire. L'appel de <xref:System.Windows.Forms.BindingSource.EndEdit%2A> valide toutes les modifications en cours de tous les contrôles liés aux données modifiés. Par conséquent, si un contrôle lié aux données a encore le focus et que vous cliquez sur le bouton **Enregistrer**, toutes les modifications en attente dans ce contrôle sont validées avant l’enregistrement réel (la méthode `TableAdapterManager.UpdateAll`).  
   
 > [!NOTE]
->  Le Concepteur de Dataset ajoute uniquement les `BindingSource.EndEdit` code pour la première table qui est déplacée vers le formulaire. Par conséquent, vous devez ajouter une ligne de code pour appeler la méthode `BindingSource.EndEdit` pour chaque table associée dans le formulaire. Dans cette procédure pas à pas, cela signifie que vous devez ajouter un appel à la méthode `OrdersBindingSource.EndEdit`.  
+> Le Concepteur de Dataset ajoute uniquement les `BindingSource.EndEdit` code pour la première table qui est déplacée vers le formulaire. Par conséquent, vous devez ajouter une ligne de code pour appeler la méthode `BindingSource.EndEdit` pour chaque table associée dans le formulaire. Dans cette procédure pas à pas, cela signifie que vous devez ajouter un appel à la méthode `OrdersBindingSource.EndEdit`.  
   
 #### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>Pour mettre à jour le code afin de valider les modifications des tables associées avant l'enregistrement  
   
@@ -95,7 +95,7 @@ Mise à jour hiérarchique * désigne le processus d’enregistrement des donné
    Outre la validation des modifications d'une table enfant associée avant l'enregistrement des données dans une base de données, vous devez aussi peut-être valider les enregistrements parents récemment créés avant d'ajouter de nouveaux enregistrement enfants à un dataset. En d'autres termes, vous devez peut-être ajouter le nouvel enregistrement parent (Customer) au dataset avant que les contraintes de clé étrangère ne permettent d'ajouter de nouveaux enregistrements enfants (Orders) au dataset. Pour ce faire, vous pouvez utiliser l'événement `BindingSource.AddingNew` enfant.  
   
 > [!NOTE]
->  Si vous devez valider les nouveaux enregistrements parents varie selon le type de contrôle qui est utilisé pour lier à votre source de données. Dans cette procédure pas à pas, vous utilisez des contrôles individuels à lier à la table parente. Cela nécessite du code supplémentaire pour valider le nouvel enregistrement parent. Si les enregistrements parents ont été affichés à la place dans un contrôle de liaison complexe tel que le <xref:System.Windows.Forms.DataGridView>ce supplémentaires <xref:System.Windows.Forms.BindingSource.EndEdit%2A> appeler pour l’enregistrement parent ne serait pas nécessaire. En effet, la fonctionnalité sous-jacente de liaison aux données du contrôle gère la validation des nouveaux enregistrements.  
+> Si vous devez valider les nouveaux enregistrements parents varie selon le type de contrôle qui est utilisé pour lier à votre source de données. Dans cette procédure pas à pas, vous utilisez des contrôles individuels à lier à la table parente. Cela nécessite du code supplémentaire pour valider le nouvel enregistrement parent. Si les enregistrements parents ont été affichés à la place dans un contrôle de liaison complexe tel que le <xref:System.Windows.Forms.DataGridView>ce supplémentaires <xref:System.Windows.Forms.BindingSource.EndEdit%2A> appeler pour l’enregistrement parent ne serait pas nécessaire. En effet, la fonctionnalité sous-jacente de liaison aux données du contrôle gère la validation des nouveaux enregistrements.  
   
 #### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>Pour ajouter du code afin de valider les enregistrements parents dans le dataset avant d’ajouter de nouveaux enregistrements enfants  
   

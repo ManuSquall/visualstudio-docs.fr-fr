@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cc1f87ac6ce94a1ef474388f75b33aa963b19f8d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d54fdce78528f348e99436c3a58d15e1cbe861b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046378"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444269"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Procédure pas à pas : objets manquants en raison de Vertex Shader
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Cette procédure pas à pas montre comment utiliser les outils Graphics Diagnost
     Dans la fenêtre **Étapes de canalisation Graphics** , l’étape **Assembleur d’entrée** montre la géométrie de l’objet avant sa transformation tandis que l’étape **Nuanceur de sommets** montre le même objet après sa transformation. Dans ce scénario, vous avez trouvé l’objet manquant quand il s’affiche à l’étape **Assembleur d’entrée** , mais pas à l’étape **Nuanceur de sommets** .  
   
    > [!NOTE]
-   >  Si d’autres étapes de géométrie (par exemple, Nuanceur de coque, Nuanceur de domaine ou Nuanceur de géométrie) traitent l’objet, elles peuvent être la cause du problème. En règle générale, le problème est lié à la première étape durant laquelle le résultat n’est pas affiché ou est affiché de manière inattendue.  
+   > Si d’autres étapes de géométrie (par exemple, Nuanceur de coque, Nuanceur de domaine ou Nuanceur de géométrie) traitent l’objet, elles peuvent être la cause du problème. En règle générale, le problème est lié à la première étape durant laquelle le résultat n’est pas affiché ou est affiché de manière inattendue.  
   
 4. Arrêtez quand vous atteignez l’appel de dessin qui correspond à l’objet manquant. Dans ce scénario, la fenêtre **Étapes de canalisation Graphics** indique que la géométrie a été émise vers le GPU (indiqué par la présence de l’aperçu Assembleur d’entrée), mais elle n’apparaît pas dans la cible de rendu à cause d’une erreur survenue à l’étape du nuanceur de sommets (indiquée par l’aperçu Nuanceur de sommets) :  
   
@@ -107,7 +107,7 @@ Cette procédure pas à pas montre comment utiliser les outils Graphics Diagnost
     ![Le code qui définit la mémoire tampon constante de l’objet](../debugger/media/gfx-diag-demo-missing-object-shader-step-7.png "gfx_diag_demo_missing_object_shader_step_7")  
   
    > [!TIP]
-   >  Si vous déboguez simultanément votre application, vous pouvez définir un point d’arrêt à cet emplacement, qui sera atteint lorsque le frame suivant sera affiché. En examinant ensuite les membres de `m_marbleConstantBufferData` , vous constatez que le membre `projection` a une valeur composée uniquement de zéros quand la mémoire tampon constante est remplie.  
+   > Si vous déboguez simultanément votre application, vous pouvez définir un point d’arrêt à cet emplacement, qui sera atteint lorsque le frame suivant sera affiché. En examinant ensuite les membres de `m_marbleConstantBufferData` , vous constatez que le membre `projection` a une valeur composée uniquement de zéros quand la mémoire tampon constante est remplie.  
   
    Vous avez trouvé l’endroit où la mémoire tampon constante est remplie et découvert que ses valeurs proviennent de la variable `m_marbleConstantBufferData`. Vous devez maintenant trouver l’endroit où le membre `m_marbleConstantBufferData.projection` a une valeur composée de zéros. Vous pouvez utiliser **Rechercher toutes les références** pour rechercher rapidement le code qui modifie la valeur de `m_marbleConstantBufferData.projection`.  
   

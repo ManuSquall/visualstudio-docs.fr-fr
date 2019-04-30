@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 8878e1ce6e9ad05fc94b134a2e71847b67d578d2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151724"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008613"
 ---
 # <a name="idebugdocumenttext-interface"></a>IDebugDocumentText, interface
 Fournit l’accès à une version « texte uniquement » du document de débogage. Cette interface utilise les conventions suivantes :  

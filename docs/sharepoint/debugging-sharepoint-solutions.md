@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cffed1a3905ca1a1aceb9d2cfdcf4abc89f83574
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 60aa38d5042625393132ffceb3cc226f44e67645
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060798"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443487"
 ---
 # <a name="debug-sharepoint-solutions"></a>Déboguer des solutions SharePoint
   Vous pouvez déboguer des solutions SharePoint à l’aide de la [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] débogueur. Lorsque vous démarrez le débogage, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] déploie les fichiers de projet sur le serveur SharePoint, puis ouvre une instance du site SharePoint dans le navigateur Web. Les sections suivantes expliquent comment déboguer des applications SharePoint dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
@@ -103,7 +103,7 @@ ms.locfileid: "60060798"
 8. Pour les workflows, associe le flux de travail à la bibliothèque SharePoint, liste ou le site que vous avez sélectionné dans le **Assistant Personnalisation de SharePoint**.
 
    > [!NOTE]
-   >  Cette association se produit uniquement si vous avez sélectionné **workflow associer automatiquement** dans l’Assistant.
+   > Cette association se produit uniquement si vous avez sélectionné **workflow associer automatiquement** dans l’Assistant.
 
 9. Exécute les commandes de post-déploiement personnalisables.
 
@@ -126,7 +126,7 @@ ms.locfileid: "60060798"
  Lorsque vous déboguez des projets de flux de travail, [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ajoute le modèle de flux de travail (selon son type) dans une bibliothèque ou à une liste. Vous pouvez ensuite démarrer le modèle de flux de travail manuellement ou en ajoutant ou en mettant à jour un élément. Vous pouvez ensuite utiliser [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pour déboguer le flux de travail.
 
 > [!NOTE]
->  Si vous ajoutez des références à d’autres assemblys, assurez-vous que ces assemblys sont installés dans le global assembly cache ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Sinon, la solution de flux de travail risque d’échouer. Pour plus d’informations sur la façon d’installer des assemblys, consultez [démarrer manuellement un flux de travail sur un document ou un élément](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).
+> Si vous ajoutez des références à d’autres assemblys, assurez-vous que ces assemblys sont installés dans le global assembly cache ( [!INCLUDE[TLA2#tla_gac](../sharepoint/includes/tla2sharptla-gac-md.md)]). Sinon, la solution de flux de travail risque d’échouer. Pour plus d’informations sur la façon d’installer des assemblys, consultez [démarrer manuellement un flux de travail sur un document ou un élément](https://support.office.com/article/Manually-start-a-workflow-on-a-document-or-item-5C106E0E-6FF2-4A75-AF99-F01653BC7963).
 
  Toutefois, le processus de déploiement ne démarre pas le flux de travail. Vous devez démarrer le flux de travail à partir du site SharePoint Web. Vous pouvez également démarrer le flux de travail à l’aide d’une application cliente comme Microsoft Office Word 2010 ou à l’aide de code côté serveur distinct. Utilisez une des approches indiquées dans le **Assistant Personnalisation de SharePoint**.
 

@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d34b7a915f2eb2bd1ddf9440c543d652de8eb892
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: b1096755c1647f976b76ab61be1c24b358d4363d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713332"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412625"
 ---
 # <a name="idebugreference2"></a>IDebugReference2
 Cette interface représente une référence à une propriété de frame de pile ou d’une autre propriété.
 
 > [!NOTE]
->  `IDebugReference2` est réservé pour une utilisation ultérieure et toutes ses méthodes doivent retourner `E_NOTIMPL`.
+> `IDebugReference2` est réservé pour une utilisation ultérieure et toutes ses méthodes doivent retourner `E_NOTIMPL`.
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -57,7 +57,7 @@ IDebugReference2 : IUnknown
 ## <a name="remarks"></a>Notes
 
 > [!NOTE]
->  Cette utilisation de « property » ne doit pas être confondue avec cette variable de membre d’une classe, ce qui signifie que même si un `IDebugReference2` peut représenter une telle entité.
+> Cette utilisation de « property » ne doit pas être confondue avec cette variable de membre d’une classe, ce qui signifie que même si un `IDebugReference2` peut représenter une telle entité.
 
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) représente une propriété, tandis que `IDebugReference2` représente une référence à une propriété, en général, une référence à un objet dans le programme en cours de débogage.
 
@@ -65,7 +65,7 @@ IDebugReference2 : IUnknown
 
  Un `IDebugProperty2` interface peut être considérée comme une valeur avec un nom, un type et une adresse. Un `IDebugReference2`, sur l’autre main, peut être considéré comme un type et une adresse.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

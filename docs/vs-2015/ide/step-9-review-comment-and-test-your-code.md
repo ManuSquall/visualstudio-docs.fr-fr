@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f601c9cc404d605d5fb0ddf7ad149a595f77ef77
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c3fec670f7516d28e20b43b0e1968782a496ef49
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059862"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428579"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Étape 9 : Passer en revue, commenter et tester votre code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,10 +55,10 @@ Ensuite, ajoutez un commentaire à votre code. Un commentaire est une annotation
      [!code-vb[VbExpressTutorial1Step9_10#1](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial1step9_10/vb/form1.vb#1)]  
   
     > [!NOTE]
-    >  Le gestionnaire d’événements Click du bouton **showButton** est maintenant terminé, et il fonctionne. Vous avez commencé votre code par une instruction `if`. Une instruction `if` vous permet de dire à votre programme : « Vérifie ceci, et si c'est vrai (true), fais cela ». Ici, vous demandez à votre programme d’ouvrir la boîte de dialogue **Ouvrir un fichier** et, si l’utilisateur sélectionne un fichier et choisit le bouton **OK**, de charger ce fichier dans le contrôle PictureBox.  
+    > Le gestionnaire d’événements Click du bouton **showButton** est maintenant terminé, et il fonctionne. Vous avez commencé votre code par une instruction `if`. Une instruction `if` vous permet de dire à votre programme : « Vérifie ceci, et si c'est vrai (true), fais cela ». Ici, vous demandez à votre programme d’ouvrir la boîte de dialogue **Ouvrir un fichier** et, si l’utilisateur sélectionne un fichier et choisit le bouton **OK**, de charger ce fichier dans le contrôle PictureBox.  
   
     > [!TIP]
-    >  L’IDE est conçu pour vous aider à écrire votre code rapidement, notamment grâce aux *extraits de code*. Un extrait est un raccourci qui se développe en petit bloc de code.  
+    > L’IDE est conçu pour vous aider à écrire votre code rapidement, notamment grâce aux *extraits de code*. Un extrait est un raccourci qui se développe en petit bloc de code.  
     >   
     >  Vous pouvez consulter tous les extraits de code disponibles. Dans la barre de menus, choisissez **Outils**, **Gestionnaire des extraits de code**. Pour Visual C#, l’extrait de code `if` se trouve dans **Visual C#**. Pour Visual Basic, les extraits de code `if` se trouvent dans **Conditions et boucles**, **Modèles de code**. Vous pouvez utiliser ce gestionnaire pour parcourir les extraits existants ou ajouter les vôtres.  
     >   
@@ -83,7 +83,7 @@ Visionneuse d'images
 2. Choisissez le bouton **Afficher une image** pour exécuter le code que vous venez d’écrire. En premier lieu, le programme ouvre une boîte de dialogue **Ouvrir un fichier**. Vérifiez que vos filtres s’affichent dans la liste déroulante **Types de fichiers** en bas de la boîte de dialogue. Ensuite, naviguez jusqu'à une image et ouvrez-la. En général, des échantillons d’images sont fournis avec le système d’exploitation Windows. Ils se trouvent dans votre dossier **Mes documents**, à l’intérieur du dossier **Mes images\Échantillons d’images**.  
   
     > [!NOTE]
-    >  Si vous ne voyez pas d’images affichées dans la boîte de dialogue **Sélectionner un fichier image**, vérifiez que le filtre « Tous les fichiers (*.\*) » est sélectionné dans la liste déroulante figurant en bas à droite de la boîte de dialogue.  
+    > Si vous ne voyez pas d’images affichées dans la boîte de dialogue **Sélectionner un fichier image**, vérifiez que le filtre « Tous les fichiers (*.\*) » est sélectionné dans la liste déroulante figurant en bas à droite de la boîte de dialogue.  
   
 3. Chargez une image et elle s'affiche dans votre PictureBox. Essayez ensuite de redimensionner votre formulaire en faisant glisser ses bordures. Étant donné que votre PictureBox est ancré à l’intérieur d’un TableLayoutPanel (lui-même ancré à l’intérieur du formulaire), votre zone d’image se redimensionne automatiquement à la même largeur que le formulaire, et remplit les 90 pour cent supérieurs du formulaire. C’est pourquoi vous avez utilisé les conteneurs TableLayoutPanel et FlowLayoutPanel : ils permettent à votre formulaire de conserver des dimensions correctes quand l’utilisateur le redimensionne.  
   

@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 8e85d511bfeec2ddda4b68b0297b18ac541949a4
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: eeadf0de5563a4882c067960559414167e729173
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160561"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422232"
 ---
 # <a name="active-script-profiler-interfaces"></a>Profilage de script actif, interfaces
 Interfaces de Profiler de Script actif permettent de recevoir des événements de profilage à partir de la [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] moteur.  
@@ -47,9 +47,9 @@ Interfaces de Profiler de Script actif permettent de recevoir des événements d
 - [Constantes de profileur de script actif, énumerations et structures](../../winscript/reference/active-script-profiler-constants-enumerations-and-structures.md)  
   
 > [!NOTE]
->  Les Interfaces de Profiler de Script Active ont été tout d’abord publiés avec Internet Explorer 8. Le `IActiveScriptProfilerControl2` et `IActiveScriptProfilerCallback2` interfaces ont été tout d’abord publiés avec Internet Explorer 9. Le [Interface IActiveScriptProfilerControl3](../../winscript/reference/iactivescriptprofilercontrol3-interface.md), [Interface IActiveScriptProfilerCallback3](../../winscript/reference/iactivescriptprofilercallback3-interface.md), et [iactivescriptprofilerheapenum, Interface](../../winscript/reference/iactivescriptprofilerheapenum-interface.md) interfaces ont été tout d’abord publié avec Internet Explorer 10. Le [iactivescriptprofilercontrol5, Interface](../../winscript/reference/iactivescriptprofilercontrol5-interface.md) est sorti avec Internet Explorer 11.  
+> Les Interfaces de Profiler de Script Active ont été tout d’abord publiés avec Internet Explorer 8. Le `IActiveScriptProfilerControl2` et `IActiveScriptProfilerCallback2` interfaces ont été tout d’abord publiés avec Internet Explorer 9. Le [Interface IActiveScriptProfilerControl3](../../winscript/reference/iactivescriptprofilercontrol3-interface.md), [Interface IActiveScriptProfilerCallback3](../../winscript/reference/iactivescriptprofilercallback3-interface.md), et [iactivescriptprofilerheapenum, Interface](../../winscript/reference/iactivescriptprofilerheapenum-interface.md) interfaces ont été tout d’abord publié avec Internet Explorer 10. Le [iactivescriptprofilercontrol5, Interface](../../winscript/reference/iactivescriptprofilercontrol5-interface.md) est sorti avec Internet Explorer 11.  
 >   
->  Dans Internet Explorer 8 et Internet Explorer 9, uniquement le [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] langage utilise ces interfaces pour prendre en charge le profilage de script.  
+> Dans Internet Explorer 8 et Internet Explorer 9, uniquement le [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] langage utilise ces interfaces pour prendre en charge le profilage de script.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Référence d’interfaces de script Windows](../../winscript/reference/windows-script-interfaces-reference.md)

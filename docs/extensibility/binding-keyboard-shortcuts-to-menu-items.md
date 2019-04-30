@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d99ff4013b7cdb16cea8b8c3231709d2e5b0aff
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 8dc28a64d42d2184734142c68aef95cbc3b1d245
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705857"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410118"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>Lier des raccourcis clavier aux éléments de menu
 Pour lier un raccourci clavier à une commande de menu personnalisé, il suffit d’ajouter une entrée à la *.vsct* fichier pour le package. Cette rubrique explique comment mapper un raccourci clavier pour un bouton personnalisé, un élément de menu ou une commande de barre d’outils et comment appliquer le mappage du clavier dans l’éditeur par défaut ou de limiter à un éditeur personnalisé.
@@ -42,7 +42,7 @@ Pour lier un raccourci clavier à une commande de menu personnalisé, il suffit 
 4. Essayez différentes combinaisons de touches jusqu'à ce que vous trouvez un qui n’est pas mappé.
 
    > [!NOTE]
-   >  Raccourcis clavier qui utilisent **Alt** peut ouvrir un menu et n’exécute pas directement une commande. Par conséquent, le **raccourci actuellement utilisé par** zone peut être vide lorsque vous tapez un raccourci qui inclut **Alt**. Vous pouvez vérifier que le raccourci ne s’ouvre pas un menu en fermant le **Options** boîte de dialogue et en appuyant sur les clés.
+   > Raccourcis clavier qui utilisent **Alt** peut ouvrir un menu et n’exécute pas directement une commande. Par conséquent, le **raccourci actuellement utilisé par** zone peut être vide lorsque vous tapez un raccourci qui inclut **Alt**. Vous pouvez vérifier que le raccourci ne s’ouvre pas un menu en fermant le **Options** boîte de dialogue et en appuyant sur les clés.
 
    La procédure suivante suppose que vous disposez d’un VSPackage existant avec une commande de menu. Si vous avez besoin d’aide pour y parvenir, jetez un coup de œil à [créer une extension avec une commande de menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
@@ -53,7 +53,7 @@ Pour lier un raccourci clavier à une commande de menu personnalisé, il suffit 
 2. Créer un vide `<KeyBindings>` section après le `<Commands>` si elle n’est pas déjà présent.
 
    > [!WARNING]
-   >  Pour plus d’informations sur les combinaisons de touches, consultez [Keybinding](../extensibility/keybinding-element.md).
+   > Pour plus d’informations sur les combinaisons de touches, consultez [Keybinding](../extensibility/keybinding-element.md).
 
     Dans le `<KeyBindings>` section, créez un `<KeyBinding>` entrée.
 

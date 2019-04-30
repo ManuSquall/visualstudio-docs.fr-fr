@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8ce41d6532a7c389d20872c35a216a96910578
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c2ff6d38ef4fcce400888121ef12883b00bcc0c7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087767"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386706"
 ---
 # <a name="understanding-the-dsl-code"></a>Fonctionnement du code DSL
 
@@ -131,7 +131,7 @@ Appuyez sur **F5** et faire des essais si vous n’êtes pas familiarisé avec c
   Classe qui représente le modèle du domaine. Il est dérivé de <xref:Microsoft.VisualStudio.Modeling.DomainModel>.
 
 > [!NOTE]
->  Elle est différente de la classe racine du modèle.
+> Elle est différente de la classe racine du modèle.
 
  Les fermetures Copier et Supprimer définissent les autres éléments qui doivent être inclus quand un élément est copié ou supprimé. Vous pouvez contrôler ce comportement en définissant le **propage la copie** et **Propagates Delete** propriétés des rôles de chaque côté de chaque relation. Si vous voulez que les valeurs soient déterminées de manière dynamique, vous pouvez écrire du code pour substituer les méthodes des classes Closure.
 
@@ -340,7 +340,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  Pour personnaliser ce fichier, modifiez le fichier `.tt`.
 
 > [!WARNING]
->  Si vous modifiez le fichier .tt pour inclure des ressources telles que des icônes et des images, assurez-vous que la ressource est incluse dans la build VSIX. Dans l’Explorateur de solutions, sélectionnez le fichier et assurez-vous que le **inclure dans VSIX** propriété est `True`.
+> Si vous modifiez le fichier .tt pour inclure des ressources telles que des icônes et des images, assurez-vous que la ressource est incluse dans la build VSIX. Dans l’Explorateur de solutions, sélectionnez le fichier et assurez-vous que le **inclure dans VSIX** propriété est `True`.
 
  Ce fichier contrôle comment la solution DSL est empaquetée dans un fichier VSIX (Visual Studio Integration Extension). Pour plus d’informations, consultez [Déploiement de solutions de langage spécifique à un domaine](../modeling/deploying-domain-specific-language-solutions.md).
 

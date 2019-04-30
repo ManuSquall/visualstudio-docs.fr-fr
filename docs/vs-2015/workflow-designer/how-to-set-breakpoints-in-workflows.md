@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dc428d70e036da311d2cf3050cec9e94a13782e3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 47d53ad2579ce24f6d5fde2503a0acc98b4f7f5c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089976"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444130"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>Procédure : Définir des points d’arrêt dans les workflows
 Lorsque vous utilisez [!INCLUDE[wfd1](../includes/wfd1-md.md)], vous pouvez définir des points d'arrêt sur vos workflows graphiques comme vous le feriez dans du code Visual Basic ou C#. Comme prévu, l'exécution de workflow s'arrête à chaque point d'arrêt que vous définissez.  
@@ -22,13 +22,13 @@ Lorsque vous utilisez [!INCLUDE[wfd1](../includes/wfd1-md.md)], vous pouvez déf
  Un point d’arrêt a trois états : *En attente*, *lié*, et *erreur*. Lorsque vous définissez un point d'arrêt, il a l'état En attente et est représenté par une icône rouge unie. Lorsque l'exécution a chargé le type de workflow, il adopte l'état Lié. Si vous spécifiez un format incorrect pour le point d'arrêt, par exemple en indiquant un nom d'activité non valide, un message d'erreur s'affiche. Le point d'arrêt est ajouté à la fenêtre de points d'arrêt, mais il est marqué d'un petit « x ».  
   
 > [!NOTE]
->  La définition des points d'arrêt sur les workflows appelés n'est pas prise en charge.  
+> La définition des points d'arrêt sur les workflows appelés n'est pas prise en charge.  
 > 
 > [!WARNING]
->  Vérifiez que vous sélectionnez l’option **activer uniquement mon Code (managé uniquement)** à partir de la **outils**, **Options**, **débogage** menu avant déboguer. Si vous avez deux séquences sont imbriquées dans une autre séquence et vous définissez un point d’arrêt sur la première séquence interne, en appuyant sur **F11** ne sera pas déboguer dans la deuxième séquence interne si la <strong>activer uniquement mon Code (managé uniquement)</strong>option n’est pas sélectionnée.  
+> Vérifiez que vous sélectionnez l’option **activer uniquement mon Code (managé uniquement)** à partir de la **outils**, **Options**, **débogage** menu avant déboguer. Si vous avez deux séquences sont imbriquées dans une autre séquence et vous définissez un point d’arrêt sur la première séquence interne, en appuyant sur **F11** ne sera pas déboguer dans la deuxième séquence interne si la <strong>activer uniquement mon Code (managé uniquement)</strong>option n’est pas sélectionnée.  
 > 
 > [!WARNING]
->  Les points d’arrêt dans un workflow ne sont pas atteints si le chemin d’accès complet à la propriété du fichier XAML n’est pas exact. Le chemin d’accès complet au fichier XAML n’est pas précis après avoir déplacé le projet ou la solution vers un autre dossier ou sur un autre ordinateur. Appuyez sur Ctrl+S pour enregistrer et mettre à jour la propriété de chemin complet.  
+> Les points d’arrêt dans un workflow ne sont pas atteints si le chemin d’accès complet à la propriété du fichier XAML n’est pas exact. Le chemin d’accès complet au fichier XAML n’est pas précis après avoir déplacé le projet ou la solution vers un autre dossier ou sur un autre ordinateur. Appuyez sur Ctrl+S pour enregistrer et mettre à jour la propriété de chemin complet.  
   
 ### <a name="to-set-a-breakpoint-on-an-activity-in-the-design-view"></a>Pour définir un point d'arrêt sur une activité en mode Design  
   

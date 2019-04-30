@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8383e82091ec9cc62f5b08dcc89f1e1e74239030
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fd399bb0d18d4a12493530932705b938a5f6dd67
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414856"
 ---
 # <a name="customizing-and-extending-a-domain-specific-language"></a>Personnalisation et extension d'un langage spécifique à un domaine
 Visual Studio de modélisation et de visualisation Kit de développement logiciel (SDK) VISUALIZATION fournit plusieurs niveaux à laquelle vous pouvez définir des outils de modélisation :
@@ -28,7 +28,7 @@ Visual Studio de modélisation et de visualisation Kit de développement logicie
 3. Étendez vos outils de modélisation à l’aide du code de programme. Le Kit VMSDK a été conçu spécifiquement pour simplifier l'intégration à vos extensions avec le code généré à partir de la définition DSL.  Pour plus d’informations, consultez [écriture de Code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
 > [!NOTE]
->  Lorsque vous avez mis à jour le fichier de définitions DSL, n’oubliez pas de cliquer sur **transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions avant de régénérer votre solution.
+> Lorsque vous avez mis à jour le fichier de définitions DSL, n’oubliez pas de cliquer sur **transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions avant de régénérer votre solution.
 
 ## <a name="customShapes"></a> Dans cette Section
 

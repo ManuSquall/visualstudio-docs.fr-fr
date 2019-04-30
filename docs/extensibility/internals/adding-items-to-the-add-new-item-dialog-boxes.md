@@ -10,18 +10,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6c0d6928236c151e182c90056641432e4706952
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 101bc22cd33b3438e0dc82542c20b1bb103cb617
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651295"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418689"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>Ajouter des éléments à la boîte de dialogue Ajouter un nouvel élément
 Le processus d’ajout d’éléments à la **ajouter un nouvel élément** boîte de dialogue commence par les clés de Registre. Comme indiqué dans les entrées de Registre suivantes, le **AddItemTemplates** section contient le chemin d’accès et le nom du répertoire dans lequel les éléments mis à disposition dans le **ajouter un nouvel élément** boîte de dialogue sont placés.
 
 > [!NOTE]
->  Le tableau qui suit immédiatement le segment de code contient des informations supplémentaires sur l’entrée de Registre.
+> Le tableau qui suit immédiatement le segment de code contient des informations supplémentaires sur l’entrée de Registre.
 
  Cette section se trouve sous **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\14.0Exp\Projects**.
 
@@ -42,7 +42,7 @@ Le processus d’ajout d’éléments à la **ajouter un nouvel élément** boî
 | Val SortPriority | REG_DWORD | 100 ([!INCLUDE[vcprx64](../../extensibility/internals/includes/vcprx64_md.md)]) | Détermine l’ordre de tri dans le nœud d’arbre de fichiers affichés dans le **ajouter un nouvel élément** boîte de dialogue. |
 
 > [!NOTE]
->  Les GUID pour les types de projets Visual Basic et Visual c# sont les suivantes :
+> Les GUID pour les types de projets Visual Basic et Visual c# sont les suivantes :
 > - [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]: {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}
 > - [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)]: {F184B08F-C81C-45F6-A57F-5ABD9991F28F}
 
@@ -53,7 +53,7 @@ Le processus d’ajout d’éléments à la **ajouter un nouvel élément** boî
  Toutefois, il est inutile d’avoir tous les éléments dans un *.vsdir* fichier. Vous pouvez avoir un *.vsdir* fichier pour chaque élément dans le répertoire. Pour plus d’informations, consultez [fichier Assistant (.vsz)](../../extensibility/internals/wizard-dot-vsz-file.md) et [fichiers de description (.vsdir) de répertoire de modèle](../../extensibility/internals/template-directory-description-dot-vsdir-files.md).
 
 > [!NOTE]
->  Le *.vsdir* fichiers dans les répertoires de modèle sont facultatifs. Si vous souhaitez simplement placer un élément de projet dans le répertoire et l’afficher dans le **ajouter un nouvel élément** boîte de dialogue, vous pouvez placer ce fichier dans le répertoire de modèles spécifié dans le **TemplatesDir** instruction. Le fichier puis apparaîtront dans le volet droit de la **ajouter un nouvel élément** boîte de dialogue pour ce projet. Toutefois, si vous souhaitez afficher une légende localisée pour le fichier ou une icône, vous devez inclure au moins un *.vsdir* fichier dans le répertoire de modèles.
+> Le *.vsdir* fichiers dans les répertoires de modèle sont facultatifs. Si vous souhaitez simplement placer un élément de projet dans le répertoire et l’afficher dans le **ajouter un nouvel élément** boîte de dialogue, vous pouvez placer ce fichier dans le répertoire de modèles spécifié dans le **TemplatesDir** instruction. Le fichier puis apparaîtront dans le volet droit de la **ajouter un nouvel élément** boîte de dialogue pour ce projet. Toutefois, si vous souhaitez afficher une légende localisée pour le fichier ou une icône, vous devez inclure au moins un *.vsdir* fichier dans le répertoire de modèles.
 
 ## <a name="group-project-items"></a>Regrouper des éléments de projet
  Si vous souhaitez contiennent des groupes de modèles dans les dossiers dans le **ajouter un nouvel élément** arborescence de boîte de dialogue, vous devez disposer des sous-répertoires du répertoire de modèle racine avec les éléments dans les. Lorsque le **ajouter un nouvel élément** boîte de dialogue s’affiche aux utilisateurs, ils seront également voir les sous-dossiers et être en mesure de sélectionner des éléments de projet à partir de celles-ci.

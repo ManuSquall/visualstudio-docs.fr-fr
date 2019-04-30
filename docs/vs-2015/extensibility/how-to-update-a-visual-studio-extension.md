@@ -12,12 +12,12 @@ ms.assetid: 93f79774-7b79-4dd6-94ad-13698f72c257
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 87bfa86585d384c7940d5a5bcf31d07579bc75a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0d1464cdd2be79cd93a3e98bcf8769e8f4b8b89f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064678"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435885"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Procédure : Mettre à jour une extension Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Vous pouvez mettre à jour une extension Visual Studio sur votre système à l�
 1. Dans Visual Studio, ouvrez la solution pour l’extension que vous souhaitez mettre à jour. Apportez les modifications.
 
     > [!IMPORTANT]
-    >  Non signé que toutes les extensions utilisateur ne pas mis à jour automatiquement. Vous devez toujours signer vos extensions.
+    > Non signé que toutes les extensions utilisateur ne pas mis à jour automatiquement. Vous devez toujours signer vos extensions.
 
 2. Dans **l’Explorateur de solutions**, ouvrez source.extension.manifest.
 
@@ -60,7 +60,7 @@ Vous pouvez mettre à jour une extension Visual Studio sur votre système à l�
      Vous pouvez activer ou désactiver la vérification automatique des mises à jour en bas de la **mises à jour** volet (**activer/désactiver la détection automatique des mises à jour disponibles**), les modifications qui le **recherchez mises à jour** définissant dans **Outils / Options / environnement / Extensions et mises à jour**.
 
     > [!NOTE]
-    >  À partir de Visual Studio 2015 Update 2, vous pouvez spécifier (dans **Outils / Options / Environnement / Extensions et mises à jour**) si vous souhaitez des mises à jour automatiques pour les extensions par utilisateur, pour toutes les extensions utilisateur ou pour les deux (le paramètre par défaut).
+    > À partir de Visual Studio 2015 Update 2, vous pouvez spécifier (dans **Outils / Options / Environnement / Extensions et mises à jour**) si vous souhaitez des mises à jour automatiques pour les extensions par utilisateur, pour toutes les extensions utilisateur ou pour les deux (le paramètre par défaut).
 
 ## <a name="see-also"></a>Voir aussi
  [Anatomie d’un Package VSIX](../extensibility/anatomy-of-a-vsix-package.md) [recherche et utilisation des Extensions Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)

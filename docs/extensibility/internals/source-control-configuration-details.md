@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: db9a8abb2b1013a7d11a4013d602e33592beff70
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 59aa3ac36e989b2e2e1af2e36e8360ef53cb8438
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070093"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428994"
 ---
 # <a name="source-control-configuration-details"></a>Détails de configuration du contrôle de code source
 Pour implémenter le contrôle de code source, vous devez configurer correctement votre système de projet ou d’un éditeur pour effectuer les opérations suivantes :
@@ -41,7 +41,7 @@ Pour implémenter le contrôle de code source, vous devez configurer correctemen
  Avant qu’un projet ou un éditeur enregistre un fichier, il doit appeler <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFile%2A> ou <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A>. Pour les fichiers de projet, ces appels sont automatiquement effectuées par la solution, qui sait à quel moment d’enregistrer un fichier de projet. Les éditeurs sont responsables de l’exécution de ces appels, sauf si l’implémentation de l’éditeur de `IVsPersistDocData2` utilise la fonction d’assistance <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.SaveDocDataToFile%2A>. Si votre éditeur implémente `IVsPersistDocData2` de cette façon, puis l’appel à `IVsQueryEditQuerySave2::QuerySaveFile` ou `IVsQueryEditQuerySave2::QuerySaveFiles` est faite pour vous.
 
 > [!NOTE]
->  Toujours effectuer ces appels à titre préventif, autrement dit, à la fois lorsque votre éditeur est en mesure de recevoir une annulation.
+> Toujours effectuer ces appels à titre préventif, autrement dit, à la fois lorsque votre éditeur est en mesure de recevoir une annulation.
 
 ## <a name="request-permission-to-add-remove-or-rename-files-in-the-project"></a>Demander l’autorisation d’ajouter, supprimer ou renommer des fichiers dans le projet
  Avant d’un projet peut ajouter, renommer ou supprimer un fichier ou répertoire, il doit appeler approprié `IVsTrackProjectDocuments2::OnQuery*` méthode pour demander l’autorisation à partir de l’environnement. Si l’autorisation est accordée, le projet doit effectuer l’opération, puis appelez approprié `IVsTrackProjectDocuments2::OnAfter*` méthode pour notifier l’environnement que l’opération est terminée. Le projet doit appeler les méthodes de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> interface pour tous les fichiers (par exemple, des fichiers spéciaux) et pas seulement les fichiers de parent. Appels de fichier sont obligatoires, mais les appels d’annuaire sont facultatifs. Si votre projet comporte des informations d’annuaire, il doit appeler approprié <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> méthodes, mais si elle n’a pas de ces informations, l’environnement sera déduite des informations d’annuaire.

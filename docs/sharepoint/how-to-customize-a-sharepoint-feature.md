@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e54d2dc388ca308e037fb8ff918f521ee16e9092
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e7a00f3c58f917e7355a63ebca71c74127826a2e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067259"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429215"
 ---
 # <a name="how-to-customize-a-sharepoint-feature"></a>Procédure : Personnaliser une fonctionnalité SharePoint
   Vous pouvez créer et personnaliser des fonctionnalités SharePoint à l’aide du Concepteur de fonctionnalités dans Visual Studio. Par exemple, vous pouvez définir l’étendue de fonctionnalité et ajouter d’autres fonctionnalités en tant que dépendances. Par défaut, le Concepteur de fonctionnalités s’ouvre lorsque vous ajoutez une nouvelle fonctionnalité dans l’Explorateur de solutions ou l’Explorateur de Package SharePoint.
@@ -49,7 +49,7 @@ ms.locfileid: "60067259"
 2. Développez des fonctionnalités, développez FeatureName, développez FeatureName.feature, puis ouvrez le  *\<FeatureName >. Template.XML* fichier.
 
     > [!NOTE]
-    >  Lorsque vous ouvrez le fichier XML de manifeste de modèle de fonctionnalité, les fichiers sont validés automatiquement et les avertissements qui apparaissent dans la fenêtre liste d’erreurs peuvent être ignorés.
+    > Lorsque vous ouvrez le fichier XML de manifeste de modèle de fonctionnalité, les fichiers sont validés automatiquement et les avertissements qui apparaissent dans la fenêtre liste d’erreurs peuvent être ignorés.
 
 ## <a name="change-the-manifest-template"></a>Modifier le modèle de manifeste
  Vous pouvez modifier le code XML pour le fichier de manifeste de fonctionnalité dans l’éditeur XML de Visual Studio ou dans le volet modèle de manifeste. Toutes les modifications au code XML est fusionné dans le fichier manifest de package pour la fonctionnalité. Par exemple, vous souhaiterez modifier le modèle de manifeste pour personnaliser une propriété de fonctionnalité.
@@ -70,7 +70,7 @@ ms.locfileid: "60067259"
  Vous pouvez désactiver le Concepteur de fonctionnalités et créer le *feature.xml* fichier manuellement. La première fois que vous procédez ainsi, les paramètres actuels dans le Concepteur de fonctionnalités sont enregistrées au fichier XML de modèle de fonctionnalité. Ensuite, vous pouvez modifier ou remplacer le code XML.
 
 > [!NOTE]
->  Si vous ajoutez ou supprimez les éléments de projet SharePoint dans le fichier XML alors que le Concepteur de fonctionnalités est désactivé, ces éléments de projet ne sont pas compressées.
+> Si vous ajoutez ou supprimez les éléments de projet SharePoint dans le fichier XML alors que le Concepteur de fonctionnalités est désactivé, ces éléments de projet ne sont pas compressées.
 
 #### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>Pour remplacer le fichier manifest de package en désactivant le Concepteur
 

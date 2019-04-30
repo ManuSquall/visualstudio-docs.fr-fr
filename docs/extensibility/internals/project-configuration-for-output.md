@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d030b4a59f2140b99df19e141f2d872c1e8fc394
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: a7ac9c63a8524de17541a46f4fecb9e8d9a5ff69
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616454"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423302"
 ---
 # <a name="project-configuration-for-output"></a>Configuration de projet pour la sortie
 Chaque configuration peut prendre en charge un ensemble de processus de génération qui produisent des éléments de sortie tels que les fichiers exécutables ou des ressources. Ces éléments de sortie sont privés à l’utilisateur et peuvent être placés dans les groupes qui lient les types associés de sortie tels que des fichiers exécutables (.exe, .dll, .lib) et les fichiers sources (.idl, fichiers .h).
@@ -25,7 +25,7 @@ Chaque configuration peut prendre en charge un ensemble de processus de généra
  La construction de développé en implémentant `IVsOutputGroup` permet aux projets de regrouper les sorties en fonction de l’utilisation. Par exemple, une DLL peut être regroupée avec sa base de données du programme (PDB).
 
 > [!NOTE]
->  Un fichier PDB contient des informations de débogage et il est créé lorsque l’option « Générer des informations de débogage » est spécifiée lors de la génération du fichier .dll ou .exe. Le fichier .pdb est généralement généré pour la configuration de projet de débogage uniquement.
+> Un fichier PDB contient des informations de débogage et il est créé lorsque l’option « Générer des informations de débogage » est spécifiée lors de la génération du fichier .dll ou .exe. Le fichier .pdb est généralement généré pour la configuration de projet de débogage uniquement.
 
  Le projet doit retourner le même nombre de groupes pour chaque configuration pris en charge, même si le nombre de sorties contenues dans un groupe peut varier à partir d’une configuration à une configuration. Par exemple, Matt du projet DLL peut inclure des mattd.dll et mattd.pdb dans la configuration Debug, mais uniquement inclure matt.dll dans la configuration de la vente au détail.
 

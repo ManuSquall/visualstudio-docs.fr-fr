@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f73eec788ee21c5e27514d373ad78b8dfc965fce
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: c9685d96c14f3519653025ab1554f1e9e7587e0b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681671"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434642"
 ---
 # <a name="sccgetcommandoptions-function"></a>Fonction SccGetCommandOptions
 Cette fonction invite l’utilisateur pour les options avancées pour une commande donnée.
@@ -77,7 +77,7 @@ SCCRTN SccGetCommandOptions(
  Enfin, lorsque l’utilisateur clique sur **OK** dans l’IDE **obtenir** boîte de dialogue, les appels de l’IDE le [SccGet](../extensibility/sccget-function.md), en passant la structure retournée dans `ppvOptions` qui contient le options avancées.
 
 > [!NOTE]
->  La commande `SCC_COMMAND_OPTIONS` est utilisé lors de l’IDE affiche un **Options** boîte de dialogue qui permet à l’utilisateur de définie les préférences qui contrôlent le fonctionne de l’intégration. Si le plug-in de contrôle de code source souhaite fournir sa propre boîte de dialogue Préférences, il peut afficher à partir une **avancé** bouton dans la boîte de dialogue Préférences de l’IDE. Le plug-in est seul responsable de l’obtention et la persistance de ces informations ; l’IDE ne pas utiliser ou modifier.
+> La commande `SCC_COMMAND_OPTIONS` est utilisé lors de l’IDE affiche un **Options** boîte de dialogue qui permet à l’utilisateur de définie les préférences qui contrôlent le fonctionne de l’intégration. Si le plug-in de contrôle de code source souhaite fournir sa propre boîte de dialogue Préférences, il peut afficher à partir une **avancé** bouton dans la boîte de dialogue Préférences de l’IDE. Le plug-in est seul responsable de l’obtention et la persistance de ces informations ; l’IDE ne pas utiliser ou modifier.
 
 ## <a name="see-also"></a>Voir aussi
 - [Fonctions d’API source contrôle plug-in](../extensibility/source-control-plug-in-api-functions.md)
