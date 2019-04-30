@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e951776df807cae1b66cbc3564b9ee7a3d0165ae
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699858"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62432034"
 ---
 # <a name="usedcommands-element"></a>Élément UsedCommands
 L’élément UsedCommands regroupe les éléments UsedCommand et autres regroupements UsedCommands.
@@ -40,7 +40,7 @@ L’élément UsedCommands regroupe les éléments UsedCommand et autres regroup
 
 |Attribut|Description|
 |---------------|-----------------|
-|Condition|Facultatif. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
+|Condition|Optionnel. Consultez [attributs conditionnels](../extensibility/vsct-xml-schema-conditional-attributes.md).|
 
 ### <a name="child-elements"></a>Éléments enfants
 
