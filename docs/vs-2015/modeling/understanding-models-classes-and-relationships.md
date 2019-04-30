@@ -11,12 +11,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f8de4432f1d0b4ab4bf24159744d20708d732fbd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d4381edb42e2aef53c00aea619eea34ee20060d5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108701"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424332"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Présentation des modèles, des classes et des relations
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +97,7 @@ Un langage spécifique à un domaine (DSL) est défini par son fichier de défin
  Lorsqu’un modèle est enregistré pour le fichier au format XML, les éléments incorporés sont imbriquées dans leurs parents, sauf si vous avez personnalisé la sérialisation.  
   
 > [!NOTE]
->  L'incorporation n'est pas la même chose que l'héritage. Les enfants dans une relation d’incorporation n’héritent pas les propriétés du parent. Une incorporation est un type de lien entre les éléments de modèle. L’héritage est une relation entre les classes et ne crée pas de liens entre éléments de modèle.  
+> L'incorporation n'est pas la même chose que l'héritage. Les enfants dans une relation d’incorporation n’héritent pas les propriétés du parent. Une incorporation est un type de lien entre les éléments de modèle. L’héritage est une relation entre les classes et ne crée pas de liens entre éléments de modèle.  
   
 ### <a name="embedding-rules"></a>Incorporation des règles  
  Chaque élément dans un modèle d’instance doit être la cible d’un seul lien d’incorporation, à l’exception de la racine du modèle.  

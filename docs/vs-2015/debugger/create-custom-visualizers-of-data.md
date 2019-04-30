@@ -23,12 +23,12 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f890277190b9b4d28873e1fe394abdcd95b8a3a6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 50df868f0e01d49d4c49bccae32d743d5291a066
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947603"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434893"
 ---
 # <a name="create-custom-visualizers-of-data"></a>Créer des visualiseurs de données personnalisés
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,14 +38,14 @@ Les visualiseurs sont des composants de la [!INCLUDE[vs_current_short](../includ
  Le débogueur [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] comprend six visualiseurs standard. Il s’agit de texte, les visualiseurs HTML, XML et JSON, qui fonctionnent sur les objets de chaîne ; le visualiseur de l’arborescence WPF, pour afficher les propriétés d’une arborescence d’objets visual WPF ; et le visualiseur dataset, qui fonctionne pour les objets DataSet, DataView et DataTable. Des visualiseurs supplémentaires sont disponibles auprès de tiers et de la communauté. Vous pourrez en télécharger plus tard chez Microsoft Corporation. De plus, vous pouvez écrire vos propres visualiseurs et les installer dans le débogueur [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
   
 > [!NOTE]
->  Dans **Store** applications, seul le texte standard, les visualiseurs HTML, XML et JSON sont pris en charge. Les visualiseurs personnalisés (créés par l'utilisateur) ne sont pas pris en charge.  
+> Dans **Store** applications, seul le texte standard, les visualiseurs HTML, XML et JSON sont pris en charge. Les visualiseurs personnalisés (créés par l'utilisateur) ne sont pas pris en charge.  
   
  Les visualiseurs sont représentés dans le débogueur par une icône de loupe. Lorsque vous voyez l’icône de loupe qui se trouve dans un **DataTip**, dans une fenêtre de variables du débogueur, ou dans le **Espion express** boîte de dialogue, vous pouvez cliquer sur la loupe pour sélectionner un visualiseur approprié au type de données de l’objet correspondant.  
   
  Les visualiseurs ne sont pas pris en charge sur le Compact Framework.  
   
 > [!NOTE]
->  Les visualiseurs de débogueur requièrent des privilèges plus importants que ceux octroyés par une application de confiance partielle. Par conséquent, les visualiseurs ne se chargent pas lorsque vous êtes arrêté dans du code à confiance partielle. Pour déboguer à l'aide d'un visualiseur, vous devez exécuter le code avec la confiance totale.  
+> Les visualiseurs de débogueur requièrent des privilèges plus importants que ceux octroyés par une application de confiance partielle. Par conséquent, les visualiseurs ne se chargent pas lorsque vous êtes arrêté dans du code à confiance partielle. Pour déboguer à l'aide d'un visualiseur, vous devez exécuter le code avec la confiance totale.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Guide pratique pour écrire un visualiseur](../debugger/how-to-write-a-visualizer.md)  

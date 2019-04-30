@@ -14,18 +14,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40de16290e52755ab92d09edf0c90c045ad4dc86
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 120aed577f0365c9d595916e191779793271d90d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061032"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429920"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>Guide de test pour les plug-ins de contrôle de code source
 Cette section fournit des conseils pour tester votre contrôle de source de plug-in avec [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Une vue d’ensemble complète des zones de tests les plus courantes, ainsi que certains domaines plus complexes qui peuvent s’avérer problématiques est fourni. Cette vue d’ensemble n’est pas censée être une liste exhaustive des cas de test.
 
 > [!NOTE]
->  Certains correctifs de bogues et les améliorations apportées à la dernière version [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE peut découvrir des problèmes avec la source contrôle plug-ins existants qui étaient précédemment pas lors de l’utilisation des versions précédentes de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Il est fortement recommandé de tester votre contrôle de code source existant plug-in pour les zones énumérés dans cette section, même si aucune modification n’ont été apportées pour le plug-in depuis la version précédente de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
+> Certains correctifs de bogues et les améliorations apportées à la dernière version [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE peut découvrir des problèmes avec la source contrôle plug-ins existants qui étaient précédemment pas lors de l’utilisation des versions précédentes de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Il est fortement recommandé de tester votre contrôle de code source existant plug-in pour les zones énumérés dans cette section, même si aucune modification n’ont été apportées pour le plug-in depuis la version précédente de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].
 
 ## <a name="common-preparation"></a>Préparation courantes
  Un ordinateur avec [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] et le contrôle de code source cible plug-in installé, est requis. Un deuxième ordinateur configuré de la même façon utilisable pour une partie de l’ouvrir à partir de tests de contrôle de code Source.
@@ -51,7 +51,7 @@ Cette section fournit des conseils pour tester votre contrôle de source de plug
 
 ## <a name="test-areas-covered-in-this-section"></a>Cette Section traités des zones de test
 
-- [Zone de test 1 : Ajouter / Ouvrir à partir du contrôle de code Source](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
+- [Zone de test 1 : Ajouter à/Ouvrir à partir du contrôle de code source](../../extensibility/internals/test-area-1-add-to-open-from-source-control.md)
 
     - Cas 1 : Ajoutez la Solution au contrôle de code Source
 
@@ -59,9 +59,9 @@ Cette section fournit des conseils pour tester votre contrôle de source de plug
 
     - Cas 1c : Ajouter la Solution à partir du contrôle de code Source
 
-- [Zone de test 2 : Obtenir à partir du contrôle de code Source](../../extensibility/internals/test-area-2-get-from-source-control.md)
+- [Zone de test 2 : Obtenir à partir du contrôle de code source](../../extensibility/internals/test-area-2-get-from-source-control.md)
 
-- [Zone de test 3 : Découvrez / annuler l’extraction](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
+- [Zone de test 3 : Extraire/Annuler l’extraction](../../extensibility/internals/test-area-3-check-out-undo-checkout.md)
 
     - Cas 3 : Découvrez / annuler l’extraction
 
@@ -75,7 +75,7 @@ Cette section fournit des conseils pour tester votre contrôle de source de plug
 
     - 3e cas : Annuler l’extraction
 
-- [Zone de test 4 : Date d'arrivée](../../extensibility/internals/test-area-4-check-in.md)
+- [Zone de test 4 : Archiver](../../extensibility/internals/test-area-4-check-in.md)
 
     - 4 a case : Éléments modifiés
 
@@ -83,7 +83,7 @@ Cette section fournit des conseils pour tester votre contrôle de source de plug
 
     - Cas 4c : Ajout de projets
 
-- [Zone de test 5 : Modifier le contrôle de code Source](../../extensibility/internals/test-area-5-change-source-control.md)
+- [Zone de test 5 : Changer le contrôle de code source](../../extensibility/internals/test-area-5-change-source-control.md)
 
     - 5 a case : Lier
 
@@ -91,11 +91,11 @@ Cette section fournit des conseils pour tester votre contrôle de source de plug
 
     - Cas 5c : reliaison
 
-- [Zone de test 6 : Delete](../../extensibility/internals/test-area-6-delete.md)
+- [Zone de test 6 : Supprimer](../../extensibility/internals/test-area-6-delete.md)
 
-- [Zone de test 7 : Partager](../../extensibility/internals/test-area-7-share.md)
+- [Zone de test 7 : Partager](../../extensibility/internals/test-area-7-share.md)
 
-- [Zone de test 8 : Commutation de plug-in](../../extensibility/internals/test-area-8-plug-in-switching.md)
+- [Zone de test 8 : Commutation de plug-in](../../extensibility/internals/test-area-8-plug-in-switching.md)
 
     - 8 a case : Modification automatique
 

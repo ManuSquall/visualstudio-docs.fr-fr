@@ -13,12 +13,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6211e33f8ef14687df3c70841ef61a2f25d10457
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b41f5f6a3d937f23db1039fdab5e1cf7e36960ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062397"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433263"
 ---
 # <a name="customizing-file-storage-and-xml-serialization"></a>Personnalisation du stockage de fichiers et de la sérialisation XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Quand l’utilisateur enregistre une instance, ou *modèle*, d’un langage spé
  Vous pouvez également écrire du code de programme pour une personnalisation avancée.  
   
 > [!NOTE]
->  Si vous souhaitez enregistrer le modèle dans un format particulier, mais vous n’avez pas besoin de le recharger à partir de ce formulaire, envisagez d’utiliser des modèles de texte pour générer la sortie à partir du modèle, au lieu d’un schéma de sérialisation personnalisée. Pour plus d’informations, consultez [génération du Code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md).  
+> Si vous souhaitez enregistrer le modèle dans un format particulier, mais vous n’avez pas besoin de le recharger à partir de ce formulaire, envisagez d’utiliser des modèles de texte pour générer la sortie à partir du modèle, au lieu d’un schéma de sérialisation personnalisée. Pour plus d’informations, consultez [génération du Code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md).  
   
 ## <a name="model-and-diagram-files"></a>Fichiers de modèle et diagramme  
  Chaque modèle est généralement enregistrée dans les deux fichiers :  

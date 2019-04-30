@@ -10,12 +10,12 @@ ms.assetid: 1942245d-7a1d-4a11-b5e7-a3fe29f11c0b
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0cd5c72f8f423ec8ace409cafa82a1e42c6eaf90
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0f3d56ae02718f5dfdf373eeeb6aff774d11931e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112609"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435955"
 ---
 # <a name="how-to-implement-undo-management"></a>Procédure : Gestion d’annulation implémenter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,9 +77,9 @@ L’interface principale utilisée pour la gestion de l’annulation est <xref:M
    Le `OleUndoManager` classe représente une instance de pile d’annulation unique. Par conséquent, il existe un objet de gestionnaire d’annulation par entité de données qui est suivie pour annuler ou rétablir.  
   
 > [!NOTE]
->  Tandis que l’objet de gestionnaire d’annulation est largement utilisé par l’éditeur de texte, il est un composant général qui ne prend en charge spécifique pour l’éditeur de texte. Si vous souhaitez prendre en charge plusieurs niveaux annulation ou rétablissement, vous pouvez utiliser cet objet pour ce faire.  
+> Tandis que l’objet de gestionnaire d’annulation est largement utilisé par l’éditeur de texte, il est un composant général qui ne prend en charge spécifique pour l’éditeur de texte. Si vous souhaitez prendre en charge plusieurs niveaux annulation ou rétablissement, vous pouvez utiliser cet objet pour ce faire.  
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>   
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLifetimeControlledObject>   
- [Guide pratique pour Effacer la pile d’annulation](../extensibility/how-to-clear-the-undo-stack.md)
+ [Guide pratique pour effacer la pile des opérations d’annulation](../extensibility/how-to-clear-the-undo-stack.md)

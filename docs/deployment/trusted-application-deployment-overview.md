@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65b06ada96387ac4bff022c92e4025718b0291d9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8222c6526d54ffb7721c2f2799458fe5c8277cd7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064295"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406636"
 ---
 # <a name="trusted-application-deployment-overview"></a>Vue d’ensemble du déploiement d’applications approuvées
 Cette rubrique offre une vue d’ensemble du déploiement d’applications [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] qui ont des autorisations élevées à l’aide de la technologie de déploiement d’applications approuvées.
@@ -29,7 +29,7 @@ Cette rubrique offre une vue d’ensemble du déploiement d’applications [!INC
  Le déploiement d'applications approuvées, qui fait partie de la technologie de déploiement [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] , permet aux entreprises de toute taille d'accorder des autorisations supplémentaires à une application managée de façon plus sûre et plus sécurisée, sans la confirmation de l'utilisateur. Avec le déploiement d'applications approuvées, une organisation peut simplement configurer un ordinateur client pour avoir une liste d'éditeurs approuvés, identifiés à l'aide de certificats Authenticode. Dès lors, toute application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] signée par un de ces éditeurs approuvés reçoit un niveau de confiance supérieur.
 
 > [!NOTE]
->  Le déploiement d'applications approuvées requiert une configuration unique de l'ordinateur d'un utilisateur. Dans les environnements de postes de travail gérés, cette configuration peut être effectuée à l'aide de la stratégie globale. Si ce n'est pas ce que vous voulez pour votre application, utilisez plutôt l'élévation d'autorisations. Pour plus d’informations, consultez [Sécurisation des applications ClickOnce](../deployment/securing-clickonce-applications.md).
+> Le déploiement d'applications approuvées requiert une configuration unique de l'ordinateur d'un utilisateur. Dans les environnements de postes de travail gérés, cette configuration peut être effectuée à l'aide de la stratégie globale. Si ce n'est pas ce que vous voulez pour votre application, utilisez plutôt l'élévation d'autorisations. Pour plus d’informations, consultez [Sécurisation des applications ClickOnce](../deployment/securing-clickonce-applications.md).
 
 ## <a name="trusted-application-deployment-basics"></a>Concepts de base du déploiement d’applications approuvées
  Le tableau suivant indique les objets et les rôles qui interviennent dans le déploiement d'applications approuvées.
@@ -88,7 +88,7 @@ Vous devez suivre ces étapes pour tirer parti du déploiement d'applications ap
  Après avoir obtenu votre certificat, vous devez l'utiliser pour signer votre déploiement. Si vous déployez votre application à l'aide de l'Assistant Publication de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , ce dernier génère automatiquement un certificat de test pour vous si vous n'avez pas spécifié de certificat. Vous pouvez également utiliser la fenêtre du Concepteur de projets [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] , pour fournir un certificat fourni par une autorité de certification.  Voir également [Guide pratique pour publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
 > [!CAUTION]
->  Nous ne recommandons pas le déploiement de l'application avec un certificat de test.
+> Nous ne recommandons pas le déploiement de l'application avec un certificat de test.
 
  Vous pouvez également signer l’application à l’aide des outils *Mage.exe* ou *MageUI.exe* du SDK. Pour plus d’informations, consultez [Procédure pas à pas : Déployer manuellement une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Pour obtenir une liste complète des options de ligne de commande relatives à la signature de déploiement, consultez [Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
 

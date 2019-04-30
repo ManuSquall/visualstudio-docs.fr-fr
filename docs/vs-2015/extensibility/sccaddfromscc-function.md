@@ -12,12 +12,12 @@ ms.assetid: 902e764d-200e-46e1-8c42-4da7b037f9a0
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 346a036d38c7ee86daf30320c5f454f9e807f7d0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: ccf3a25bda14cf98fdba4a58b0032444badc4c4a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432496"
 ---
 # <a name="sccaddfromscc-function"></a>Fonction SccAddFromScc
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ SCCRTN SccAddFromScc (
  `lplpFileNames` est un `char ***` pointeur. Le plug-in de contrôle de code source place un pointeur vers un tableau de pointeurs vers des noms de fichiers, par conséquent, en passant la liste de la manière standard pour cette API.  
   
 > [!NOTE]
->  Les versions initiales de l’API VSSCI n’a pas fourni un moyen d’indiquer le projet cible pour les fichiers ajoutés. Pour en tenir compte, la sémantique de le `lplpFIleNames` paramètre ont été améliorées pour le rendre un paramètre d’entrée/sortie plutôt que d’un paramètre de sortie. Si seul un seul fichier est spécifié, autrement dit, la valeur vers laquelle pointe `lpnFiles` = 1, le premier élément du `lplpFileNames` contient le dossier cible. Pour utiliser cette nouvelle sémantique, les appels de l’IDE le `SccSetOption` fonctionne avec le `nOption`paramètre défini sur `SCC_OPT_SHARESUBPROJ`. Si un plug-in de contrôle de code source ne prend pas en charge la sémantique, elle retourne `SCC_E_OPTNOTSUPPORTED`. Faire c’est le cas désactive l’utilisation de la **à partir du contrôle de code Source** fonctionnalité. Si un plug-in prend en charge la **à partir du contrôle de code Source** fonctionnalité (`SCC_CAP_ADDFROMSCC`), puis il doit prendre en charge la sémantique de nouveau et retourner `SCC_I_SHARESUBPROJOK`.  
+> Les versions initiales de l’API VSSCI n’a pas fourni un moyen d’indiquer le projet cible pour les fichiers ajoutés. Pour en tenir compte, la sémantique de le `lplpFIleNames` paramètre ont été améliorées pour le rendre un paramètre d’entrée/sortie plutôt que d’un paramètre de sortie. Si seul un seul fichier est spécifié, autrement dit, la valeur vers laquelle pointe `lpnFiles` = 1, le premier élément du `lplpFileNames` contient le dossier cible. Pour utiliser cette nouvelle sémantique, les appels de l’IDE le `SccSetOption` fonctionne avec le `nOption`paramètre défini sur `SCC_OPT_SHARESUBPROJ`. Si un plug-in de contrôle de code source ne prend pas en charge la sémantique, elle retourne `SCC_E_OPTNOTSUPPORTED`. Faire c’est le cas désactive l’utilisation de la **à partir du contrôle de code Source** fonctionnalité. Si un plug-in prend en charge la **à partir du contrôle de code Source** fonctionnalité (`SCC_CAP_ADDFROMSCC`), puis il doit prendre en charge la sémantique de nouveau et retourner `SCC_I_SHARESUBPROJOK`.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonctions d’API de plug-in de contrôle de source](../extensibility/source-control-plug-in-api-functions.md)   

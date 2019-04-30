@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4b188be0a8ff3c8bac6dc8fd2b5474756a1565f3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f6cc62e4ba56cb7be461bbf3cee5435cb404b7fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090020"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439984"
 ---
 # <a name="0x2x4x-msaa-variants"></a>Variantes MSAA 0x/2x/4x
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Substitue les paramètres d‘anticrénelage MSSA (Multi-Sample Anti-Aliasing) s
  Si l'anticrénelage MSAA n'est pas déjà activé dans votre application, les variantes MSAA 2x et MSAA 4x indiquent le coût relatif en termes de performances de leur activation dans votre application. Si le coût est raisonnablement bas, envisagez d'activer MSAA pour améliorer la qualité d'image de votre application.  
   
 > [!NOTE]
->  Il se peut que votre matériel ne prenne pas entièrement en charge MSAA pour tous les formats. Si l'une de ces variantes rencontre une limitation matérielle qu'il n'est pas possible de contourner, sa colonne dans le tableau de résumé des performances est vide et un message d'erreur est généré.  
+> Il se peut que votre matériel ne prenne pas entièrement en charge MSAA pour tous les formats. Si l'une de ces variantes rencontre une limitation matérielle qu'il n'est pas possible de contourner, sa colonne dans le tableau de résumé des performances est vide et un message d'erreur est généré.  
   
 ## <a name="remarks"></a>Notes  
  Ces variantes substituent le nombre d'échantillons et les arguments de qualité d'échantillon dans les appels à `ID3DDevice::CreateTexture2D`, qui sont chargés de créer des cibles de rendu. Plus précisément, ces paramètres sont substitués dans les cas suivants :  

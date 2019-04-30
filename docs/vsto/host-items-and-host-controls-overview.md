@@ -36,12 +36,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2ef2d97b0e3b15accdeb267513b38ef6d5bd729d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e9bd569f41ae15b6e95cc92fe969a4263c760735
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607107"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427973"
 ---
 # <a name="host-items-and-host-controls-overview"></a>Éléments hôtes et la vue d’ensemble des contrôles hôtes
   Les éléments hôtes et les contrôles hôtes sont des types qui fournissent un modèle de programmation pour les solutions Office créées à l’aide des outils de développement Office dans Visual Studio. Les éléments hôtes et les contrôles hôtes apparentent l’interaction avec les modèles objet Microsoft Office Word et Microsoft Office Excel, qui sont basés sur COM, davantage à l’interaction entre des objets managés tels que les contrôles Windows Forms.
@@ -113,7 +113,7 @@ ms.locfileid: "56607107"
   Vous pouvez également utiliser des contrôles Windows Forms dans vos solutions Office en les ajoutant directement à la surface du document Word et Excel. Pour plus d’informations, consultez [des contrôles de Windows Forms dans les documents Office](../vsto/windows-forms-controls-on-office-documents-overview.md).
 
 > [!NOTE]
->  L’ajout de contrôles hôtes ou de contrôles Windows Forms à un sous-document Word n’est pas pris en charge.
+> L’ajout de contrôles hôtes ou de contrôles Windows Forms à un sous-document Word n’est pas pris en charge.
 
 ### <a name="add-host-controls-to-your-documents"></a>Ajouter des contrôles hôtes à vos documents
  Dans les projets au niveau du document, vous pouvez ajouter des contrôles hôtes à vos documents Word ou à vos feuilles de calcul Excel au moment du design, en procédant comme suit :
@@ -148,7 +148,7 @@ ms.locfileid: "56607107"
  Lorsque vous faites glisser un contrôle hôte de la **boîte à outils** vers votre document, le contrôle est nommé automatiquement à l’aide du type de contrôle et d’un nombre incrémentiel à la fin. Par exemple, les signets sont nommés **bookmark1**, **bookmark2**, et ainsi de suite. Si vous utilisez les fonctionnalités natives de Word ou Excel pour ajouter le contrôle, vous pouvez lui attribuer un nom spécifique au moment de sa création. Vous pouvez également renommer vos contrôles en modifiant la valeur de la propriété **Name** dans la fenêtre **Propriétés** .
 
 > [!NOTE]
->  Vous ne pouvez pas utiliser de mots réservés pour nommer des contrôles hôtes. Par exemple, si vous ajoutez un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> à une feuille de calcul et que vous remplacez son nom par **System**, des erreurs se produisent lorsque vous générez le projet.
+> Vous ne pouvez pas utiliser de mots réservés pour nommer des contrôles hôtes. Par exemple, si vous ajoutez un contrôle <xref:Microsoft.Office.Tools.Excel.NamedRange> à une feuille de calcul et que vous remplacez son nom par **System**, des erreurs se produisent lorsque vous générez le projet.
 
 ### <a name="delete-host-controls"></a>Supprimer des contrôles hôtes
  Dans les projets au niveau du document, vous pouvez supprimer des contrôles hôtes au moment du design en sélectionnant le contrôle dans la feuille de calcul Excel ou un document Word et en appuyant sur la **supprimer** clé. Toutefois, vous devez utiliser la boîte de dialogue **Définir un nom** dans Excel pour supprimer les contrôles <xref:Microsoft.Office.Tools.Excel.NamedRange> .
@@ -160,13 +160,13 @@ ms.locfileid: "56607107"
  Si les utilisateurs finaux suppriment un contrôle hôte à partir du document lors de l’exécution, la solution peut échouer de façon inattendue. Vous pouvez utiliser les fonctionnalités de protection de document dans Word et Excel pour empêcher la suppression des contrôles hôtes. Pour plus d’informations, consultez [exemples de développement Office et des procédures pas à pas](../vsto/office-development-samples-and-walkthroughs.md).
 
 > [!NOTE]
->  Ne supprimez pas les contrôles par programmation lorsque le gestionnaire d’événements `Shutdown` du document ou de la feuille de calcul est actif. Les éléments d’interface utilisateur ne sont plus disponibles quand l’événement `Shutdown` se produit. Pour supprimer les contrôles avant la fermeture de l’application, ajoutez votre code à un autre gestionnaire d’événements tel que `BeforeClose` ou `BeforeSave`.
+> Ne supprimez pas les contrôles par programmation lorsque le gestionnaire d’événements `Shutdown` du document ou de la feuille de calcul est actif. Les éléments d’interface utilisateur ne sont plus disponibles quand l’événement `Shutdown` se produit. Pour supprimer les contrôles avant la fermeture de l’application, ajoutez votre code à un autre gestionnaire d’événements tel que `BeforeClose` ou `BeforeSave`.
 
 ### <a name="program-against-host-control-events"></a>Programmer des événements de contrôle hôte
  Pour étendre les objets Office, les contrôles hôtes peuvent, entre autres, ajouter des événements. Par exemple, l’objet <xref:Microsoft.Office.Interop.Excel.Range> dans Excel et l’objet <xref:Microsoft.Office.Interop.Word.Bookmark> dans Word n’ont pas d’événements, mais [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] étend ces objets en ajoutant des événements programmables. Vous pouvez accéder à ces événements et les coder de la même manière que vous accédez aux événements des contrôles sur les Windows Forms : à l’aide de la liste déroulante d’événements en Visual Basic et de la page de propriétés d’événement en C#. Pour plus d’informations, consultez [Procédure pas à pas : Programmer par rapport aux événements d’un contrôle NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).
 
 > [!NOTE]
->  Vous ne devez pas attribuer la valeur <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> à la propriété <xref:Microsoft.Office.Interop.Excel.Application> de l'objet **T:Microsoft.Office.Interop.Excel.Application**. Si cette propriété a la valeur **false** , Excel ne peut pas déclencher d’événements, y compris les événements de contrôles hôtes.
+> Vous ne devez pas attribuer la valeur <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> à la propriété <xref:Microsoft.Office.Interop.Excel.Application> de l'objet **T:Microsoft.Office.Interop.Excel.Application**. Si cette propriété a la valeur **false** , Excel ne peut pas déclencher d’événements, y compris les événements de contrôles hôtes.
 
 ## <a name="see-also"></a>Voir aussi
 - [Limitations de programmation des éléments hôtes et contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

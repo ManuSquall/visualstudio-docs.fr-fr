@@ -10,12 +10,12 @@ ms.assetid: fa3b993b-ab95-47fa-a38b-b788f3a5b2d8
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 56d9ea80054ec3732f62f70a582b95da32fdbe9c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 46ccdd87d44ee90c925992f4d7b997c9bbe09684
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435525"
 ---
 # <a name="creating-an-extension-with-an-editor-item-template"></a>Création d’une extension avec un modèle d’élément d’éditeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ Vous pouvez utiliser des modèles d’éléments qui sont inclus dans le SDK de 
  Le modèle de l’ornement de la fenêtre d’affichage de l’éditeur crée un ornement relatif à la fenêtre d’affichage qui ajoute une zone violette qui a un contour rouge à l’angle supérieur droit de la fenêtre d’affichage.  
   
 > [!NOTE]
->  Le *viewport* est la zone de l’affichage de texte qui est actuellement affiché.  
+> Le *viewport* est la zone de l’affichage de texte qui est actuellement affiché.  
   
 #### <a name="to-create-a-viewport-adornment-extension-by-using-the-editor-viewport-adornment-template"></a>Pour créer une extension d’ornement de la fenêtre d’affichage en utilisant le modèle de l’ornement de la fenêtre d’affichage de l’éditeur  
   

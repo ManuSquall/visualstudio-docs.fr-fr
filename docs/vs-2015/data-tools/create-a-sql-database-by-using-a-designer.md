@@ -25,12 +25,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: acab2df1ff39d5f245baf27642f1ab71104671a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f816095992379748b6d1888b5df54dc5433a8306
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069781"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436968"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Créer une base de données SQL à l’aide d’un concepteur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -180,14 +180,14 @@ Vous pouvez explorer les tâches de base, telles que l’ajout de tables et déf
 6. Ajoutez des données pour au moins trois commandes.  
   
     > [!IMPORTANT]
-    >  Vérifiez que tous les ID de commande et quantités commandées sont des entiers et que chaque ID client correspond à une valeur que vous avez spécifiée dans la colonne CustomerID de la table Customers.  
+    > Vérifiez que tous les ID de commande et quantités commandées sont des entiers et que chaque ID client correspond à une valeur que vous avez spécifiée dans la colonne CustomerID de la table Customers.  
   
 7. Dans la barre de menus, sélectionnez **fichier** > **Enregistrer tout**.  
   
 8. Dans la barre de menus, sélectionnez **fichier** > **fermer la Solution**.  
   
     > [!NOTE]
-    >  Il est recommandé de sauvegarder le fichier de base de données que vous venez de créer en copiant et en collant la copie dans un autre emplacement ou en renommant la copie.  
+    > Il est recommandé de sauvegarder le fichier de base de données que vous venez de créer en copiant et en collant la copie dans un autre emplacement ou en renommant la copie.  
   
 ## <a name="next-steps"></a>Étapes suivantes  
  Maintenant que vous avez un fichier de base de données locale avec des exemples de données, vous pouvez effectuer une des procédures pas à pas montrent comment effectuer les tâches de base de données.

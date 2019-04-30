@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b4873085a4e4508b40b866eee79e79f624f3c01d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 9f3da13858507a3ff176aaa0a44051674fd5285f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443558"
 ---
 # <a name="create-a-business-data-connectivity-model"></a>Créer un modèle de connectivité de données métiers
   Vous pouvez créer un modèle de connectivité de données métiers (BDC) ou personnaliser un modèle BDC existant à l’aide de Visual Studio. Chaque projet SharePoint peut contenir qu’un seul modèle. Pour plus d’informations, consultez [intégrer des données métiers dans SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md).
@@ -29,7 +29,7 @@ ms.locfileid: "56605729"
  Pour créer un nouveau modèle, créez un **modèle de connectivité de données métiers** de projet ou ajouter un **modèle de connectivité de données métiers** d’élément à un **projet SharePoint vide**.
 
 > [!NOTE]
->  Vous devez avoir [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] installé sur votre ordinateur.
+> Vous devez avoir [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] installé sur votre ordinateur.
 
  Visual Studio ajoute un dossier au projet. Ce dossier porte le nom que vous spécifiez pour le **modèle de connectivité de données métiers** d’élément dans le **ajouter un nouvel élément** boîte de dialogue. Si vous créez un nouveau **modèle de connectivité de données métiers** projet, Visual Studio nomme le dossier **BdcModel1**.
 
@@ -47,7 +47,7 @@ ms.locfileid: "56605729"
  Lorsque vous compilez le projet, Visual Studio crée un assembly. Vérifiez que vous n’ajoutez pas d’autres éléments au projet qui ajoutent du code à l’assembly de projet (par exemple : un **Workflow séquentiel** élément ou un **WebPart** élément). Le code pour cet élément ne s’exécutera pas lorsque vous déployez la solution, car le package de solution ne copie pas de l’assembly dans le global assembly cache.  Le package de solution déploie l’assembly sur la base de données BDC dans SharePoint uniquement.
 
 > [!NOTE]
->  Visual Studio copie l’assembly dans les deux emplacements sur votre ordinateur local lorsque vous déboguez le projet.
+> Visual Studio copie l’assembly dans les deux emplacements sur votre ordinateur local lorsque vous déboguez le projet.
 
 ## <a name="add-an-existing-model"></a>Ajouter un modèle existant
  Vous pouvez importer un modèle qui a été créé à l’aide d’autres outils tels que SharePoint Designer. Vous pouvez choisir d’importer un modèle existant à votre projet dans les situations suivantes :

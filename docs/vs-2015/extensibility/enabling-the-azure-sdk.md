@@ -11,12 +11,12 @@ ms.assetid: 1c323afd-fb4e-449a-adaa-bb7a5d3b1468
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3870027762675f4f9791fa720ae932aedf0b5f90
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1830e014a32129b8e63c78d179eed12f3375b035
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061331"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432161"
 ---
 # <a name="enabling-the-azure-sdk"></a>L’activation du SDK Azure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Le Kit de développement pour vous aide à .NET vous créez, configurez, génér
      Suivez les instructions du programme d'installation.  
   
     > [!NOTE]
-    >  Pour installer les outils Azure, vous devez disposer d’Internet Information Services 7.0 et l’installation des composants de développement d’applications ASP.NET. Si ces composants ne sont pas installés, le programme d’installation de Azure Tools vous invitera à les installer.  
+    > Pour installer les outils Azure, vous devez disposer d’Internet Information Services 7.0 et l’installation des composants de développement d’applications ASP.NET. Si ces composants ne sont pas installés, le programme d’installation de Azure Tools vous invitera à les installer.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Azure](https://azure.microsoft.com/)   

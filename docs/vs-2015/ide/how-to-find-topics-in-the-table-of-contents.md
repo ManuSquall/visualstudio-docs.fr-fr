@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e439521d9a81bc418eb403bb87ee9576605b8e66
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8ab015fdfd459dbb13e81deed0fe0cc89f71cd1f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055496"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416686"
 ---
 # <a name="how-to-find-topics-in-the-table-of-contents"></a>Procédure : Rechercher des rubriques dans la table des matières
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60055496"
 Sous l’onglet **Sommaire**, vous pouvez utiliser la table des matières pour rechercher des informations. La table des matières est une liste extensible qui contient toutes les rubriques des livres installés. Pour des informations d’accessibilité relatives à la navigation dans la table des matières, consultez [Touches de raccourci (Help Viewer)](../ide/shortcut-keys-help-viewer.md).  
   
 > [!IMPORTANT]
->  Le nombre de rubriques disponibles dans la table des matières dépend du filtre que vous avez sélectionné.  
+> Le nombre de rubriques disponibles dans la table des matières dépend du filtre que vous avez sélectionné.  
   
 ## <a name="filter-the-toc"></a>Filtrer la table des matières  
  Vous pouvez filtrer la table des matières pour réduire le nombre de rubriques qui s’affichent sous l’onglet **Sommaire**. Les titres apparaissent dans la liste que s'ils contiennent la racine du terme que vous spécifiez. Par exemple, si vous spécifiez le filtre « configurer », seuls les titres qui contiennent « configure » ou « configurer » s'affichent. Les nœuds dont les titres ne contiennent pas le terme sont réduits à un seul nœud avec des points de suspension (...).  
@@ -41,7 +41,7 @@ Sous l’onglet **Sommaire**, vous pouvez utiliser la table des matières pour r
 2. Dans la zone de texte **Filtrer le contenu**, entrez un terme.  
   
 > [!NOTE]
->  Si le filtre met trop longtemps à s’exécuter, vous pouvez afficher les résultats plus rapidement à l’aide de l’opérateur de recherche avancé `title:`.  
+> Si le filtre met trop longtemps à s’exécuter, vous pouvez afficher les résultats plus rapidement à l’aide de l’opérateur de recherche avancé `title:`.  
   
 ## <a name="synchronize-a-topic-with-the-toc"></a>Synchroniser une rubrique avec la table des matières  
  Si vous avez ouvert une rubrique à l'aide des fonctionnalités d'index ou de recherche en texte intégral, vous pouvez localiser cette rubrique dans la table des matières en synchronisant celle-ci avec la fenêtre de la rubrique.  

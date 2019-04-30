@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 994b87de61aaa0b303b0b0bf8454dad716c9978f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b49b1aa1022b12dc2d409037a1241f51b469a14c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114507"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436240"
 ---
 # <a name="code-snippets-schema-reference"></a>Référence de schéma des extraits de code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Les extraits de code IntelliSense sont des parties de code précréées et prêt
  Spécifie le nom de l'assembly référencé par l'extrait de code.  
   
 > [!NOTE]
->  L'élément `Assembly` n'est pris en charge que par les extraits de code Visual Basic.  
+> L'élément `Assembly` n'est pris en charge que par les extraits de code Visual Basic.  
   
  La valeur du texte de l’élément **Assembly** correspond soit au nom convivial de l’assembly, comme `System.dll`, soit à son nom fort, comme `System,Version=1.0.0.1,Culture=neutral,PublicKeyToken=9b35aa323c18d4fb1`.  
   
@@ -240,7 +240,7 @@ is a great color. I love Blue.
  Spécifie une fonction à exécuter lorsque le littéral ou l'objet reçoit le focus dans Visual Studio.  
   
 > [!NOTE]
->  L’élément `Function` n’est pris en charge que par les extraits de code Visual C#.  
+> L’élément `Function` n’est pris en charge que par les extraits de code Visual C#.  
   
 ```xml  
 <Function>  
@@ -289,7 +289,7 @@ is a great color. I love Blue.
  Spécifie une URL qui fournit des informations supplémentaires sur un extrait de code.  
   
 > [!NOTE]
->  Visual Studio n'utilise pas l'élément `HelpUrl`. L'élément fait partie du schéma XML des extraits de code IntelliSense et tout extrait de code contenant l'élément est validé mais la valeur de l'élément n'est jamais utilisée.  
+> Visual Studio n'utilise pas l'élément `HelpUrl`. L'élément fait partie du schéma XML des extraits de code IntelliSense et tout extrait de code contenant l'élément est validé mais la valeur de l'élément n'est jamais utilisée.  
   
 ```xml  
 <HelpUrl>  
@@ -325,7 +325,7 @@ is a great color. I love Blue.
  Spécifie les espaces de noms importés et utilisés par un extrait de code IntelliSense.  
   
 > [!NOTE]
->  L'élément `Import` est uniquement pris en charge pour les projets Visual Basic.  
+> L'élément `Import` est uniquement pris en charge pour les projets Visual Basic.  
   
 ```xml  
 <Import>  
@@ -346,7 +346,7 @@ is a great color. I love Blue.
  Groupe des éléments `Import` individuels.  
   
 > [!NOTE]
->  L'élément `Imports` est uniquement pris en charge pour les projets Visual Basic.  
+> L'élément `Imports` est uniquement pris en charge pour les projets Visual Basic.  
   
 ```xml  
 <Imports>  
@@ -428,7 +428,7 @@ is a great color. I love Blue.
  Spécifie l'espace de noms qui doit être importé pour compiler l'extrait de code et l'exécuter. L'espace de noms spécifié dans l'élément `Namespace` est ajouté automatiquement au début du code à une instruction `Imports`, s'il n'y figure pas déjà.  
   
 > [!NOTE]
->  L'élément `Namespace` est uniquement pris en charge pour les projets Visual Basic.  
+> L'élément `Namespace` est uniquement pris en charge pour les projets Visual Basic.  
   
 ```xml  
 <Namespace>  
@@ -475,7 +475,7 @@ is a great color. I love Blue.
  Spécifie des informations sur les références d'assembly requises par l'extrait de code.  
   
 > [!NOTE]
->  L'élément `Reference` est uniquement pris en charge pour les projets Visual Basic.  
+> L'élément `Reference` est uniquement pris en charge pour les projets Visual Basic.  
   
 ```xml  
 <Reference>  
@@ -497,7 +497,7 @@ is a great color. I love Blue.
  Groupe des éléments `Reference` individuels.  
   
 > [!NOTE]
->  L'élément `References` est uniquement pris en charge pour les projets Visual Basic.  
+> L'élément `References` est uniquement pris en charge pour les projets Visual Basic.  
   
 ```xml  
 <References>  
@@ -517,7 +517,7 @@ is a great color. I love Blue.
  Spécifie le texte de raccourci utilisé pour insérer l'extrait de code. La valeur texte d'un élément `Shortcut` peut contenir uniquement des signes alphanumériques, des traits d'union (-) et des traits de soulignement (_).  
   
 > [!CAUTION]
->  _ et – ne sont pas des caractères pris en charge dans les raccourcis de l'extrait de code C++.  
+> _ et – ne sont pas des caractères pris en charge dans les raccourcis de l'extrait de code C++.  
   
 ```xml  
 <Shortcut>  
@@ -644,7 +644,7 @@ is a great color. I love Blue.
  Spécifie une URL qui fournit des informations supplémentaires sur l'assembly référencé.  
   
 > [!NOTE]
->  L'élément `Url` est uniquement pris en charge pour les projets Visual Basic.  
+> L'élément `Url` est uniquement pris en charge pour les projets Visual Basic.  
   
 ```xml  
 <Url>  

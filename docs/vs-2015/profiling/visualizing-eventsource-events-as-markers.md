@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: edce61d7f5cf8f84c021b759fdaee1c06bf68ccb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ffbd5568d35b59e262577102a9368089fdcac6be
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044919"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431113"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>Visualisation des événements EventSource comme marqueurs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ Le visualiseur concurrentiel peut afficher des événements EventSource comme ma
  Utilisez le champ cvSpanId, un entier, pour faire correspondre des paires d’événements. La valeur de chaque paire d’événements de démarrage et d’arrêt qui représentent un intervalle doit être unique. En général, pour du code concurrent, vous devez utiliser des primitives de synchronisation comme <xref:System.Threading.Interlocked.Exchange%2A> pour que la clé (la valeur utilisée pour CvSpanID) soit correcte.  
   
 > [!NOTE]
->  L’utilisation de l’ID d’intervalle pour imbriquer des intervalles, permettre à des intervalles de se chevaucher partiellement sur le même thread ou permettre à des intervalles de démarrer sur un thread et de se terminer sur un autre n’est pas prise en charge.  
+> L’utilisation de l’ID d’intervalle pour imbriquer des intervalles, permettre à des intervalles de se chevaucher partiellement sur le même thread ou permettre à des intervalles de démarrer sur un thread et de se terminer sur un autre n’est pas prise en charge.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Marqueurs du visualiseur concurrentiel](../profiling/concurrency-visualizer-markers.md)

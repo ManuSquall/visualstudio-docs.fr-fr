@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0accb5165b1aded6318012ffb07755a63222283c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e39168e36e9540ec8c5e23a9030d996b81c4097c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431731"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>Procédure : Rechercher un processus dans la vue Processus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Vous pouvez rechercher un processus spécifique dans la vue processus à l’aid
 4. Effacer tous les champs pour lesquels vous ne souhaitez pas spécifier des valeurs.  
   
    > [!TIP]
-   >  Pour rechercher tous les processus détenus par un module, désactivez le **processus** puis tapez le nom du module dans le **Module** boîte. Utilisez ensuite **suivant** pour poursuivre la recherche pour les processus.  
+   > Pour rechercher tous les processus détenus par un module, désactivez le **processus** puis tapez le nom du module dans le **Module** boîte. Utilisez ensuite **suivant** pour poursuivre la recherche pour les processus.  
   
 5. Choisissez **des** ou **vers le bas** pour la direction de la recherche initiale.  
   

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1a6b131e75e61e319a691a0b132bb57b7d0c227
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 856ea1e59a32a64c6a48b52c3ef1dcad9e0bbb80
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061487"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406824"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Procédure : Créer un package de programme d’amorçage localisé
 Après avoir créé un package de programme d’amorçage, vous pouvez créer des versions localisées de ce dernier en créant deux fichiers de plus pour chacun des paramètres régionaux : un fichier des termes du contrat de licence logiciel (par exemple *eula.rtf*) et un manifeste du package (*package.xml*).
@@ -31,7 +31,7 @@ Après avoir créé un package de programme d’amorçage, vous pouvez créer de
 3. Créez un manifeste du package nommé *package.xml*, mettez à jour les chaînes et la culture, puis placez le fichier dans le nouveau dossier. Si vous avez déjà créé un programme d’amorçage de Visual Studio dans la langue cible, vous pouvez copier le fichier *package.xml* de Visual Studio et le changer durant cette étape.
 
 > [!NOTE]
->  Si vous utilisez un projet d’installation pour déployer les applications, vous pouvez localiser votre application en changeant la propriété **Localization**.
+> Si vous utilisez un projet d’installation pour déployer les applications, vous pouvez localiser votre application en changeant la propriété **Localization**.
 
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 

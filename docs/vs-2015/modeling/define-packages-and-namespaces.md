@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cb0502128b95716b0598b373be81519a06911f06
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 863df1da686e56a8b38c0652baf0aafab7436d08
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052803"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434358"
 ---
 # <a name="define-packages-and-namespaces"></a>Définir des packages et des espaces de noms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ Dans Visual Studio, un *package* est un conteneur pour les définitions des él�
 2. Cliquez avec le bouton droit sur un package ou un modèle auquel vous souhaitez ajouter un nouveau package.  
   
    > [!NOTE]
-   >  Vous pouvez imbriquer un package dans un autre.  
+   > Vous pouvez imbriquer un package dans un autre.  
   
 3. Pointez sur **ajouter** puis cliquez sur **Package**.  
   
@@ -95,7 +95,7 @@ Dans Visual Studio, un *package* est un conteneur pour les définitions des él�
 - Faites glisser le package de l'Explorateur de modèles UML vers le diagramme de classes.  
   
     > [!NOTE]
-    >  Cela crée une vue du package sur ce diagramme, mais ne montre pas nécessairement tous les éléments contenus dans le package. Pour être sûr de voir tout le contenu d'un package, vous devez l'afficher dans l'Explorateur de modèles UML.  
+    > Cela crée une vue du package sur ce diagramme, mais ne montre pas nécessairement tous les éléments contenus dans le package. Pour être sûr de voir tout le contenu d'un package, vous devez l'afficher dans l'Explorateur de modèles UML.  
   
 ## <a name="Elements"></a> Création d’éléments de modèle à l’intérieur des Packages  
  Il existe quatre manières de placer des éléments de modèle à l'intérieur d'un package :  
@@ -123,7 +123,7 @@ Dans Visual Studio, un *package* est un conteneur pour les définitions des él�
 4. Tapez un nom pour le nouvel élément.  
   
     > [!NOTE]
-    >  Le nouvel élément n'apparaît sur aucun diagramme. Pour créer une vue du nouvel élément, vous pouvez le faire glisser de l'Explorateur de modèles UML vers un diagramme. Le diagramme doit être un type qui affichera ce genre d'élément.  
+    > Le nouvel élément n'apparaît sur aucun diagramme. Pour créer une vue du nouvel élément, vous pouvez le faire glisser de l'Explorateur de modèles UML vers un diagramme. Le diagramme doit être un type qui affichera ce genre d'élément.  
   
 #### <a name="to-create-an-element-in-a-package-on-a-uml-class-diagram"></a>Pour créer un élément dans un package sur un diagramme de classes UML  
   
@@ -173,7 +173,7 @@ Dans Visual Studio, un *package* est un conteneur pour les définitions des él�
      Le nom qualifié de l'élément change et indique son nouveau package propriétaire.  
   
     > [!NOTE]
-    >  Si vous faites glisser un élément hors d'un package dans une partie vide du diagramme, son package propriétaire ne change pas. Cela vous permet de créer un diagramme qui montre des éléments de plusieurs packages sans avoir à afficher les packages eux-mêmes.  
+    > Si vous faites glisser un élément hors d'un package dans une partie vide du diagramme, son package propriétaire ne change pas. Cela vous permet de créer un diagramme qui montre des éléments de plusieurs packages sans avoir à afficher les packages eux-mêmes.  
   
 ## <a name="Pasting"></a> Collage d’éléments dans un Package  
  Vous pouvez coller un élément dans un package. Si vous collez un groupe d'éléments associés dans un package, les relations entre ces éléments sont également copiées.  
@@ -185,7 +185,7 @@ Dans Visual Studio, un *package* est un conteneur pour les définitions des él�
 2. Cliquez sur le package, puis cliquez sur **coller**.  
   
     > [!NOTE]
-    >  Le package peut être sur un autre diagramme.  
+    > Le package peut être sur un autre diagramme.  
   
 ## <a name="Import"></a> Importer les relations entre des Packages  
  Vous pouvez définir une relation d’importation entre des packages, à l’aide de la **importer** outil.  

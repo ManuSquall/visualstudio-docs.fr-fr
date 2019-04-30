@@ -17,15 +17,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29659af4fa05c6556656a0a11f13377119f9df9e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 86c69070a6c954ccf01581690e11237fea4e52c7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612905"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406767"
 ---
 # <a name="clickonce-security-and-deployment"></a>Sécurité et déploiement ClickOnce
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] est une technologie de déploiement qui vous permet de créer des applications Windows mise à jour automatique qui peuvent être installées et exécutées avec une intervention minime de l’utilisateur. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Fournit la prise en charge complète pour la publication et la mise à jour des applications déployées avec la technologie ClickOnce si vous avez développé vos projets avec Visual Basic et Visual C#. Pour plus d’informations sur le déploiement d’applications Visual C++, consultez [déploiement ClickOnce pour les Applications Visual C++](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
+[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] est une technologie de déploiement qui vous permet de créer des applications Windows mise à jour automatique qui peuvent être installées et exécutées avec une intervention minime de l’utilisateur. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Fournit la prise en charge complète pour la publication et la mise à jour des applications déployées avec la technologie ClickOnce si vous avez développé vos projets avec Visual Basic et Visual c#. Pour plus d’informations sur le déploiement d’applications Visual C++, consultez [déploiement ClickOnce pour les Applications Visual C++](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] déploiement propose trois problèmes majeurs au déploiement :
 
@@ -54,13 +54,13 @@ ms.locfileid: "56612905"
  Sécurité d’accès du code permet de limiter l’accès dont dispose le code aux ressources protégées. Dans la plupart des cas, vous pouvez choisir les zones Internet ou Intranet Local pour limiter les autorisations. Utilisez le **sécurité** page dans le **ProjectDesigner** pour demander la zone appropriée pour l’application. Vous pouvez également déboguer des applications avec des autorisations restreintes pour émuler l’expérience utilisateur final. Pour plus d’informations, consultez [Sécurité d’accès du code pour les applications ClickOnce](../deployment/code-access-security-for-clickonce-applications.md).
 
 ### <a name="clickonce-trust-prompt"></a>Invite d’approbation ClickOnce
- Si l’application demande plus d’autorisations que vous permet de la zone, l’utilisateur final peut être invité à prendre une décision d’approbation. L’utilisateur final peut décider si les applications ClickOnce telles que les applications Windows Forms, les applications Windows Presentation Foundation, les applications de console, les applications de navigateur XAML et les solutions Office sont approuvées pour exécution. Pour plus d’informations, consultez [Comment : configurer le comportement invite d’approbation ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).
+ Si l’application demande plus d’autorisations que vous permet de la zone, l’utilisateur final peut être invité à prendre une décision d’approbation. L’utilisateur final peut décider si les applications ClickOnce telles que les applications Windows Forms, les applications Windows Presentation Foundation, les applications de console, les applications de navigateur XAML et les solutions Office sont approuvées pour exécution. Pour plus d'informations, voir [Procédure : Configurer le comportement de l’invite d’approbation ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).
 
 ## <a name="how-clickonce-deployment-works"></a>Fonctionnement du déploiement ClickOnce
  Le cœur [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] architecture de déploiement repose sur deux fichiers manifeste XML : un manifeste d’application et un manifeste de déploiement. Les fichiers sont utilisés pour décrire dans lequel les applications ClickOnce sont installées à partir de, comment ils sont mis à jour, et lorsqu’ils sont mis à jour.
 
 ### <a name="publish-clickonce-applications"></a>Publier des applications ClickOnce
- Le manifeste d’application décrit l’application elle-même. Cela inclut les assemblys, les dépendances et les fichiers qui composent l’application, les autorisations requises et l’emplacement où les mises à jour seront disponibles. Le développeur d’applications crée le manifeste d’application en utilisant l’Assistant Publication dans Visual Studio ou Manifest Generation and Editing Tool (*Mage.exe*) dans le [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Pour plus d’informations, consultez [Comment : publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+ Le manifeste d’application décrit l’application elle-même. Cela inclut les assemblys, les dépendances et les fichiers qui composent l’application, les autorisations requises et l’emplacement où les mises à jour seront disponibles. Le développeur d’applications crée le manifeste d’application en utilisant l’Assistant Publication dans Visual Studio ou Manifest Generation and Editing Tool (*Mage.exe*) dans le [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Pour plus d'informations, voir [Procédure : Publier une application ClickOnce à l’aide de l’Assistant Publication](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
  Le manifeste de déploiement décrit la façon dont l’application est déployée. Cela inclut l’emplacement du manifeste d’application et la version de l’application que les clients doivent exécuter.
 
@@ -75,13 +75,13 @@ ms.locfileid: "56612905"
  L’application peut être ajoutée à l’utilisateur **Démarrer** menu et à la **Ajout / Suppression de programmes** groupe dans le **le panneau de configuration**. Contrairement à d’autres technologies de déploiement, rien n’est ajouté à la **Program Files** dossier ou le Registre et aucun droit d’administrateur est requis pour l’installation
 
 > [!NOTE]
->  Il est également possible d’empêcher l’application d’être ajouté à la **Démarrer** menu et **Ajout / Suppression de programmes** groupe en vigueur se comportent comme une application Web. Pour plus d’informations, consultez [choisir une stratégie de déploiement ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).
+> Il est également possible d’empêcher l’application d’être ajouté à la **Démarrer** menu et **Ajout / Suppression de programmes** groupe en vigueur se comportent comme une application Web. Pour plus d’informations, consultez [choisir une stratégie de déploiement ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).
 
 ### <a name="update-clickonce-applications"></a>Mettre à jour des applications ClickOnce
  Lorsque les développeurs d’applications créent une version mise à jour de l’application, ils génèrent un manifeste d’application et que vous copiez des fichiers vers un emplacement de déploiement, généralement un dossier frère au dossier de déploiement de l’application d’origine. L’administrateur met à jour le manifeste de déploiement pour pointer vers l’emplacement de la nouvelle version de l’application.
 
 > [!NOTE]
->  Le **Assistant Publication** dans Visual Studio peut être utilisé pour effectuer ces étapes.
+> Le **Assistant Publication** dans Visual Studio peut être utilisé pour effectuer ces étapes.
 
  Outre l’emplacement de déploiement, le manifeste de déploiement contient également un emplacement de mise à jour (une page Web ou réseau partage de fichiers) où l’application vérifie les versions mises à jour. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] **Publier** propriétés sont utilisées pour spécifier quand et à quelle fréquence l’application doit vérifier les mises à jour. Comportement de mise à jour peut être spécifié dans le manifeste de déploiement, ou il peut être présenté en tant que choix de l’utilisateur dans l’interface utilisateur de l’application par le biais de la [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] API. En outre, les propriétés **Publish** peuvent être utilisées pour rendre les mises à jour obligatoires ou pour restaurer une version antérieure. Pour plus d’informations, consultez [choix d’une stratégie de mise à jour ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
 
@@ -91,11 +91,11 @@ ms.locfileid: "56612905"
 ## <a name="clickonce-tools"></a>Outils ClickOnce
  Le tableau suivant montre les outils que vous pouvez utiliser pour générer, modifier, signer et signer à nouveau les manifestes d’application et de déploiement.
 
-|Outil|Description|
+|Tool|Description|
 |----------|-----------------|
 |[Page Sécurité, Concepteur de projet](../ide/reference/security-page-project-designer.md)|Signe les manifestes d’application et de déploiement.|
-|[Page Publier, Concepteur de projets](../ide/reference/publish-page-project-designer.md)|Génère et modifie les manifestes d’application et de déploiement pour Visual Basic et Visual C# applications.|
-|[*Mage.exe* (outil Manifest Generation and Editing)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)|Génère les manifestes d’application et de déploiement pour Visual Basic, Visual C#et les applications Visual C++.<br /><br /> Signe et signe à nouveau les manifestes d’application et de déploiement.<br /><br /> Peut être exécuté à partir de scripts de commandes et de l’invite de commandes.|
+|[Page Publier, Concepteur de projets](../ide/reference/publish-page-project-designer.md)|Génère et modifie les manifestes d’application et de déploiement pour les applications Visual Basic et Visual c#.|
+|[*Mage.exe* (outil Manifest Generation and Editing)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)|Génère les manifestes d’application et de déploiement pour les applications Visual Basic, Visual c# et Visual C++.<br /><br /> Signe et signe à nouveau les manifestes d’application et de déploiement.<br /><br /> Peut être exécuté à partir de scripts de commandes et de l’invite de commandes.|
 |[*MageUI.exe* (outil Manifest Generation and Editing, client graphique)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)|Génère et modifie les manifestes d’application et de déploiement.<br /><br /> Signe et signe à nouveau les manifestes d’application et de déploiement.|
 |[GenerateApplicationManifest, tâche](../msbuild/generateapplicationmanifest-task.md)|Génère le manifeste d’application.<br /><br /> Peut être exécuté à partir de MSBuild. Pour plus d’informations, consultez [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md).|
 |[Tâche GenerateDeploymentManifest](../msbuild/generatedeploymentmanifest-task.md)|Génère le manifeste de déploiement.<br /><br /> Peut être exécuté à partir de MSBuild. Pour plus d’informations, consultez [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md).|

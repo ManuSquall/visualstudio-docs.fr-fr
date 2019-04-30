@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f4c036cac8fa60e3f0353815cb3790f0f74ddc77
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 0d4fca66296f4437d3c9af55142d9fdbc56f21b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656776"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431946"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Remplir des datasets à l’aide de TableAdapters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "59656776"
 Un composant du TableAdapter remplit un dataset avec des données à partir de la base de données, selon une ou plusieurs requêtes ou des procédures stockées que vous spécifiez. Les TableAdapters peuvent également effectuer ajoute, met à jour et suppressions sur la base de données pour conserver les modifications que vous apportez au jeu de données. Vous pouvez également émettre des commandes globales qui ne sont pas liées à une table spécifique.  
   
 > [!NOTE]
->  Les TableAdapters sont générées par les concepteurs de Visual Studio. Si vous créez des jeux de données par programmation, utilisez DataAdapter, qui est une classe .NET Framework.  
+> Les TableAdapters sont générées par les concepteurs de Visual Studio. Si vous créez des jeux de données par programmation, utilisez DataAdapter, qui est une classe .NET Framework.  
   
  Pour plus d’informations sur les opérations du TableAdapter, vous pouvez ignorer directement à une des rubriques suivantes :  
   
@@ -98,7 +98,7 @@ Un composant du TableAdapter remplit un dataset avec des données à partir de l
  Lorsque vous utilisez un TableAdapter, il effectue les mêmes opérations avec les commandes que vous pourriez effectuer. Par exemple, lorsque vous appelez l’adaptateur `Fill` (méthode), l’adaptateur s’exécute la commande de données son `SelectCommand` propriété et utilise un lecteur de données (par exemple, <xref:System.Data.SqlClient.SqlDataReader>) pour charger le jeu de résultats dans la table de données. De même, lorsque vous appelez l’adaptateur `Update` (méthode), elle s’exécute la commande appropriée (dans le `UpdateCommand`, `InsertCommand`, et `DeleteCommand` propriétés) pour chaque enregistrement dans la table de données modifié.  
   
 > [!NOTE]
->  S’il existe suffisamment d’informations dans la requête principale, le `InsertCommand`, `UpdateCommand`, et `DeleteCommand` commandes sont créés par défaut lors de la génération du TableAdapter. Si la requête principale du TableAdapter est supérieure à une instruction SELECT de table unique, il est possible du concepteur ne pourrez pas générer `InsertCommand`, `UpdateCommand`, et `DeleteCommand`. Si ces commandes ne sont pas générés, vous pouvez recevoir une erreur lors de l’exécution le `TableAdapter.Update` (méthode).  
+> S’il existe suffisamment d’informations dans la requête principale, le `InsertCommand`, `UpdateCommand`, et `DeleteCommand` commandes sont créés par défaut lors de la génération du TableAdapter. Si la requête principale du TableAdapter est supérieure à une instruction SELECT de table unique, il est possible du concepteur ne pourrez pas générer `InsertCommand`, `UpdateCommand`, et `DeleteCommand`. Si ces commandes ne sont pas générés, vous pouvez recevoir une erreur lors de l’exécution le `TableAdapter.Update` (méthode).  
   
 ## <a name="tableadapter-generatedbdirectmethods"></a>GenerateDbDirectMethods de TableAdapter  
  En plus de `InsertCommand`, `UpdateCommand`, et `DeleteCommand`, les TableAdapters sont créés avec des méthodes qui peuvent être exécutées directement sur la base de données. Ces méthodes (`TableAdapter.Insert`, `TableAdapter.Update`, et `TableAdapter.Delete`) peut être appelé directement pour manipuler des données dans la base de données. Cela signifie que vous pouvez appeler ces méthodes individuelles à partir de votre code au lieu d’appeler `TableAdapter.Update` pour gérer les insertions, mises à jour et suppressions en attente pour la table de données associée.  

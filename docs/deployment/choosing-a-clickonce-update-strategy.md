@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edba26d951afb0ba2215af4c0a0eac09b1c31513
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: cbddf759841dbe9626868d6c00f42a0849d70520
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608489"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406816"
 ---
 # <a name="choose-a-clickonce-update-strategy"></a>Choisir une stratégie de mise à jour ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] peut fournir des mises à jour d’application automatiques. Une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] lit périodiquement son fichier manifeste de déploiement pour vérifier si des mises à jour de l’application sont disponibles. Si disponible, la nouvelle version de l'application est téléchargée et exécutée. Pour des raisons d'efficacité, seuls les fichiers modifiés sont téléchargés.
@@ -31,10 +31,10 @@ ms.locfileid: "56608489"
  De plus, vous pouvez déterminer la fréquence de vérification des mises à jour effectuées par l'application et configurer une mise à jour obligatoire.
 
 > [!NOTE]
->  Les mises à jour d'application exigent une connexion au réseau. En l'absence d'une connexion réseau, l'application s'exécute sans vérifier les mises à jour, quelle que soit la stratégie de mise à jour choisie.
+> Les mises à jour d'application exigent une connexion au réseau. En l'absence d'une connexion réseau, l'application s'exécute sans vérifier les mises à jour, quelle que soit la stratégie de mise à jour choisie.
 
 > [!NOTE]
->  Dans .NET Framework 2.0 et .NET Framework 3.0, chaque fois que votre application vérifie les mises à jour, avant ou après le démarrage ou à l’aide de la \<xref:System.Deployment.Application > API, vous devez définir `deploymentProvider` dans le manifeste de déploiement. Dans Visual Studio, l’élément `deploymentProvider` correspond au champ **Emplacement de mise à jour** dans la boîte de dialogue **Mises à jour** de l’onglet **Publier**. Cette règle est assouplie dans .NET Framework 3.5. Pour plus d’informations, consultez [déploiement ClickOnce Applications pour de test et les serveurs de Production sans Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
+> Dans .NET Framework 2.0 et .NET Framework 3.0, chaque fois que votre application vérifie les mises à jour, avant ou après le démarrage ou à l’aide de la \<xref:System.Deployment.Application > API, vous devez définir `deploymentProvider` dans le manifeste de déploiement. Dans Visual Studio, l’élément `deploymentProvider` correspond au champ **Emplacement de mise à jour** dans la boîte de dialogue **Mises à jour** de l’onglet **Publier**. Cette règle est assouplie dans .NET Framework 3.5. Pour plus d’informations, consultez [déploiement ClickOnce Applications pour de test et les serveurs de Production sans Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
 
 ## <a name="check-for-updates-after-application-startup"></a>Recherchez les mises à jour après le démarrage de l’application
  Si vous utilisez cette stratégie, l'application tente de localiser et de lire le fichier manifeste de déploiement en arrière-plan pendant l'exécution de l'application. Si une mise à jour est disponible, lors de la prochaine exécution de l'application, l'utilisateur sera invité à télécharger et à installer la mise à jour.
@@ -76,7 +76,7 @@ ms.locfileid: "56608489"
  Dans certains cas, vous souhaitez obliger les utilisateurs à exécuter une version mise à jour de votre application. Par exemple, vous pouvez apporter une modification à une ressource externe, telle qu'un service Web, qui empêche le fonctionnement correct de la version antérieure de votre application. Dans ce cas, vous souhaitez marquer votre mise à jour comme étant obligatoire et empêcher les utilisateurs d'exécuter la version antérieure.
 
 > [!NOTE]
->  Bien qu’il soit possible d’exiger des mises à jour à l’aide des autres stratégies de mise à jour, la vérification **Avant le démarrage de l’application** est la seule façon d’interdire l’exécution d’une version antérieure. Lorsque la mise à jour obligatoire est détectée au démarrage, l'utilisateur doit accepter la mise à jour ou fermer l'application.
+> Bien qu’il soit possible d’exiger des mises à jour à l’aide des autres stratégies de mise à jour, la vérification **Avant le démarrage de l’application** est la seule façon d’interdire l’exécution d’une version antérieure. Lorsque la mise à jour obligatoire est détectée au démarrage, l'utilisateur doit accepter la mise à jour ou fermer l'application.
 
  Pour marquer une mise à jour comme étant obligatoire, cliquez sur **Spécifiez la version minimale requise pour cette application** dans la boîte de dialogue **Mises à jour des applications**, puis spécifiez la version de publication (**Majeure**, **Mineure**, **Build**, **Révision**) qui spécifie le numéro de version minimal de l’application qui peut être installée.
 
@@ -122,4 +122,4 @@ ms.locfileid: "56608489"
 - [Choisir une stratégie de déploiement ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)
 - [Sécuriser des applications ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Mises à jour des applications par ClickOnce](../deployment/how-clickonce-performs-application-updates.md)
-- [Guide pratique pour gérer les mises à jour pour une application ClickOnce](../deployment/how-to-manage-updates-for-a-clickonce-application.md)
+- [Guide pratique pour gérer les mises à jour d’une application ClickOnce](../deployment/how-to-manage-updates-for-a-clickonce-application.md)

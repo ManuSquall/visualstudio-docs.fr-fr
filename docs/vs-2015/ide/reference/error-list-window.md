@@ -16,18 +16,18 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9dc94abdfb35bc4537f0ba80f96f393157263e63
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 924e4414d668f4cb3a12f5d27b915117da0a7119
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658147"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437227"
 ---
 # <a name="error-list-window"></a>Liste d'erreurs, fenêtre
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 REMARQUE]
->  La liste d'erreurs affiche des informations sur un message d'erreur spécifique. Vous pouvez copier le numéro d'erreur ou le texte de la chaîne d'erreur dans la fenêtre Sortie. Pour afficher la fenêtre Sortie, appuyez sur Ctrl+Alt+O. Consultez [Sortie, fenêtre](../../ide/reference/output-window.md).  
+> La liste d'erreurs affiche des informations sur un message d'erreur spécifique. Vous pouvez copier le numéro d'erreur ou le texte de la chaîne d'erreur dans la fenêtre Sortie. Pour afficher la fenêtre Sortie, appuyez sur Ctrl+Alt+O. Consultez [Sortie, fenêtre](../../ide/reference/output-window.md).  
   
  La fenêtre **Liste d’erreurs** permet d’accélérer le développement des applications. Par exemple, il est possible de réaliser les tâches suivantes :  
   
@@ -50,7 +50,7 @@ REMARQUE]
   Pour trier la liste, cliquez sur n'importe quel en-tête de colonne. Pour trier à nouveau sur une colonne supplémentaire, maintenez la touche Maj enfoncée et cliquez sur un autre en-tête de colonne. Pour sélectionner les colonnes qui doivent être affichées et celles qui doivent être masquées, choisissez **Afficher les colonnes** dans le menu contextuel. Pour modifier l'ordre dans lequel les colonnes sont affichées, faites glisser les en-têtes de votre choix vers la droite ou la gauche.  
   
 > [!NOTE]
->  Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites ici, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, cliquez sur **Outils/Importation et exportation de paramètres**. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites ici, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, cliquez sur **Outils/Importation et exportation de paramètres**. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="error-list-filters"></a>Filtres de la liste d'erreurs  
  Il existe deux types de filtre dans deux zones de liste déroulante, l’un à droite de la barre d’outils, et l’autre à gauche de la barre d’outils. La liste déroulante située à gauche de la barre d’outils spécifie l’ensemble de fichiers de code à utiliser (**Solution complète**, **Documents ouverts**, **Projet actif**, **Document actif**).  
@@ -62,7 +62,7 @@ REMARQUE]
 2. **Projet actif** : afficher les erreurs, les avertissements et les messages du projet du document actuellement sélectionné dans l’**Éditeur** ou du projet sélectionné dans l’**Explorateur de solutions**.  
   
    > [!NOTE]
-   >  La liste filtrée d’erreurs, d’avertissements et de messages est modifiée si le projet du document actuellement sélectionné est différent du projet sélectionné dans l’**Explorateur de solutions**.  
+   > La liste filtrée d’erreurs, d’avertissements et de messages est modifiée si le projet du document actuellement sélectionné est différent du projet sélectionné dans l’**Explorateur de solutions**.  
   
 3. **Document actif** : afficher les erreurs, les avertissements et les messages du document actuellement sélectionné dans l’**Éditeur** ou dans l’**Explorateur de solutions**.  
   

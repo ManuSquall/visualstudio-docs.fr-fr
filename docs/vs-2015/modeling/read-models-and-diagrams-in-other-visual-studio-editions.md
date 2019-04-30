@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 20c449148b98c89f1eb64beb61588661f02ab74a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 21dc0cb7f02639ca6faa89ae4c067f21e083d6d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073525"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387498"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Lire des modèles et des diagrammes dans d'autres éditions de Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,14 +31,14 @@ Quand vous ouvrez un modèle dans une version de Visual Studio qui ne prend pas 
  Pour cette raison, si vous souhaitez lire un diagramme UML ou un diagramme de couche, vous devez aussi avoir accès au projet de modélisation dans lequel il a été créé. Pour cela, vous pouvez soit accéder au projet à partir de [!INCLUDE[esprscc](../includes/esprscc-md.md)], soit obtenir une copie des fichiers du projet.  
   
 > [!NOTE]
->  Cela ne s'applique pas aux cartes de code et aux diagrammes de classe .NET générés à partir du code. Ces diagrammes peuvent être affichés indépendamment d'un projet de modélisation.  
+> Cela ne s'applique pas aux cartes de code et aux diagrammes de classe .NET générés à partir du code. Ces diagrammes peuvent être affichés indépendamment d'un projet de modélisation.  
   
  Pour lire un diagramme UML ou un diagramme de couche, l'ensemble minimal de fichiers dont vous avez besoin est le suivant :  
   
 - Les deux fichiers de diagrammes pour le diagramme que vous souhaitez lire, par exemple, **MyDiagram.classdiagram and MyDiagram.classdiagram.layout**.  
   
     > [!NOTE]
-    >  Des diagrammes de couche, vous devez également avoir le fichier nommé _Mondiagramme_**. layerdiagram.suppressions**.  
+    > Des diagrammes de couche, vous devez également avoir le fichier nommé _Mondiagramme_**. layerdiagram.suppressions**.  
   
 - Fichier de projet de modélisation (**MyModel.modelproj**)  
   

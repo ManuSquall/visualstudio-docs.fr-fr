@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84c7a5194e48e73fbabf60b7c9ef89e6cb04d855
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 03e0f5a294dea1fda1e2d7c320fa0158de9bbb3a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053078"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415400"
 ---
 # <a name="author-vsct-files"></a>Fichiers .vsct auteur
 Ce document montre comment créer un *.vsct* fichier à ajouter des éléments de menu, les barres d’outils et les autres éléments d’interface (UI) à l’environnement de développement intégré (IDE) Visual Studio. Utilisez ces étapes lorsque vous ajoutez des éléments d’interface utilisateur à un package Visual Studio (VSPackage) qui n’a pas déjà un *.vsct* fichier.
@@ -86,7 +86,7 @@ Ce document montre comment créer un *.vsct* fichier à ajouter des éléments d
     Définir le `guid` et `id` attributs de la `Menu` élément, puis définissez le `type` attribut au type de menu de votre choix. Vous pouvez également définir le `priority` attribut pour établir la position relative du menu dans le groupe parent.
 
    > [!NOTE]
-   >  Le `priority` attribut ne s’applique pas aux barres d’outils et des menus contextuels.
+   > Le `priority` attribut ne s’applique pas aux barres d’outils et des menus contextuels.
 
 2. Toutes les commandes dans l’IDE Visual Studio doivent être hébergés par les groupes de commandes, qui sont les enfants directs de menus et barres d’outils. Si vous ajoutez des nouveaux menus ou barres d’outils à l’IDE, il doivent contenir nouveaux groupes de commandes. Vous pouvez également ajouter des groupes de commandes aux menus et aux barres d’outils existant afin que vous pouvez regrouper visuellement vos commandes.
 
@@ -99,14 +99,14 @@ Ce document montre comment créer un *.vsct* fichier à ajouter des éléments d
    1. Définir le `guid` et `id` attributs de chaque `Button` élément, puis définissez la `type` le type de bouton que vous souhaitez que l’attribut. Vous pouvez également définir le `priority` attribut pour établir la position relative de la commande dans le groupe parent.
 
        > [!NOTE]
-       >  Utilisez `type="button"` pour les commandes de menu standard et des boutons des barres d’outils.
+       > Utilisez `type="button"` pour les commandes de menu standard et des boutons des barres d’outils.
 
    2. Dans le `Button` élément, ajoutez un [chaînes](../../extensibility/strings-element.md) élément contenant un [ButtonText](../../extensibility/buttontext-element.md) élément et un [CommandName](../../extensibility/commandname-element.md) élément. Le `ButtonText` élément fournit l’étiquette de texte pour un élément de menu ou de l’info-bulle pour un bouton de barre d’outils. Le `CommandName` élément fournit le nom de la commande à utiliser dans la commande.
 
    3. Si votre commande aura une icône, créez un [icône](../../extensibility/icon-element.md) élément dans le `Button` élément et définissez son `guid` et `id` des attributs pour le `Bitmap` élément pour l’icône.
 
        > [!NOTE]
-       >  Boutons de barre d’outils doivent avoir des icônes.
+       > Boutons de barre d’outils doivent avoir des icônes.
 
    Pour plus d’informations, consultez [MenuCommands et. OleMenuCommands](../../extensibility/menucommands-vs-olemenucommands.md).
 

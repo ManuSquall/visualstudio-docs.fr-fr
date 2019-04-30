@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1be553955abdc42c2a9b4d09ff857e9236b1a002
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6cac959fb4f9c52849e6e121943fd847deb923d0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081904"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427402"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Procédure : Importer une page maître ou un thème
   Vous pouvez attribuer aux pages sur votre site SharePoint une apparence cohérente en créant et en utilisant des thèmes et des pages maîtres. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ne fournit pas les modèles pour ces éléments, mais vous pouvez les créer dans SharePoint Designer et importez-les dans [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Pour plus d’informations, consultez [bloc de construction : Pages et l’Interface utilisateur](http://go.microsoft.com/fwlink/?LinkID=182095) sur le site Web Microsoft.
@@ -48,7 +48,7 @@ ms.locfileid: "60081904"
 8. Si vous avez ajouté une page maître, modifiez son **Deployment Conflict Resolution** à **automatique** dans les propriétés du module.
 
     > [!NOTE]
-    >  Erreurs peuvent se produire si le nom de la page maître est le même que le nom d’une page maître existante qui est marquée comme Page maître par défaut ou Page maître personnalisée. Pour plus d’informations sur la façon de résoudre ce problème, consultez [procédure pas à pas : Importer une page maître personnalisée et la page de site avec une image](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md).
+    > Erreurs peuvent se produire si le nom de la page maître est le même que le nom d’une page maître existante qui est marquée comme Page maître par défaut ou Page maître personnalisée. Pour plus d’informations sur la façon de résoudre ce problème, consultez [procédure pas à pas : Importer une page maître personnalisée et la page de site avec une image](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md).
 
 9. Dans le module, ouvrez *Elements.xml*.
 
@@ -81,7 +81,7 @@ ms.locfileid: "60081904"
      La valeur **Web** signifie que la page maître s’applique uniquement au site Web qui est actuellement spécifié dans le projet. La valeur **Site** signifie que la page maître s’applique à la collection de sites actuelle, qui inclut tous les sous-sites et le site web racine. Les autres valeurs ne s’appliquent pas.
 
     > [!NOTE]
-    >  Étant donné que les thèmes s’appliquent uniquement au niveau de la collection de sites, nous recommandons que vous ne définissez pas la portée d’un thème sur n’importe quelle autre que **Site**. Erreurs peuvent se produire si un thème est utilisé dans un sous-site.
+    > Étant donné que les thèmes s’appliquent uniquement au niveau de la collection de sites, nous recommandons que vous ne définissez pas la portée d’un thème sur n’importe quelle autre que **Site**. Erreurs peuvent se produire si un thème est utilisé dans un sous-site.
 
 12. Dans la barre de menus, choisissez **Build** > **déployer la Solution**.
 

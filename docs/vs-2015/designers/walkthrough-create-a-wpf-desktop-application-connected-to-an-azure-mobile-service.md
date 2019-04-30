@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a4d4d6a8399d3d40eaefe86ed9cbb3105729f08a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 126aa1ad57aa5f8961803b8443365c208f5623ff
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118017"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421251"
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Procédure pas à pas : Créer une Application de bureau WPF connectée à un Service Mobile Azure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,14 +56,14 @@ Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidemen
 3. Dans le volet gauche, choisissez **WindowsAzure.MobileServices**, puis, dans le volet droit, choisissez le bouton **Installer** .  
   
     > [!NOTE]
-    >  Si une boîte de dialogue **Aperçu** s’affiche, passez en revue les modifications proposées, puis choisissez le bouton **OK** .  
+    > Si une boîte de dialogue **Aperçu** s’affiche, passez en revue les modifications proposées, puis choisissez le bouton **OK** .  
   
 4. Dans la boîte de dialogue **Acceptation de la licence** , passez en revue les termes du contrat de licence, puis acceptez-les en choisissant le bouton **J’accepte** .  
   
      Les références nécessaires sont ajoutées à l’ **Explorateur de solutions**.  
   
     > [!NOTE]
-    >  Si vous n’acceptez pas les termes du contrat de licence, cliquez sur le bouton **Je refuse** . Dans ce cas, vous ne pouvez pas terminer le reste de la procédure pas à pas.  
+    > Si vous n’acceptez pas les termes du contrat de licence, cliquez sur le bouton **Je refuse** . Dans ce cas, vous ne pouvez pas terminer le reste de la procédure pas à pas.  
   
 ## <a name="create-the-user-interface"></a>Créer l’interface utilisateur  
  L’étape suivante consiste à créer l’interface utilisateur de l’application. Tout d’abord, vous créez un contrôle utilisateur réutilisable qui affiche une disposition standard de deux volets côte à côte. Vous ajoutez le contrôle utilisateur dans la fenêtre d’application principale ainsi que des contrôles permettant d’entrer et d’afficher les données. Ensuite, vous écrivez du code pour définir l’interaction avec le serveur principal du service mobile.  
@@ -288,7 +288,7 @@ Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidemen
      ![MainWindow dans le concepteur](../designers/media/wpfquickstart2.PNG "WPFQuickStart2")  
   
     > [!NOTE]
-    >  Pendant l’application des procédures suivantes, vous pouvez observer des erreurs dans la **Liste d’erreurs** , si elle est ouverte. Ne vous inquiétez pas, ces erreurs disparaissent à la fin des procédures restantes.  
+    > Pendant l’application des procédures suivantes, vous pouvez observer des erreurs dans la **Liste d’erreurs** , si elle est ouverte. Ne vous inquiétez pas, ces erreurs disparaissent à la fin des procédures restantes.  
   
 6. Dans l’ **Explorateur de solutions**, développez le nœud **MainWindow.xaml** et ouvrez le fichier **MainWindow.xaml.cs** ou **MainWindow.xaml.vb** .  
   
@@ -482,7 +482,7 @@ Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidemen
 3. Dans la boîte de dialogue **Nouveau service mobile** , choisissez la zone de texte **URL** et entrez `wpfquickstart01`.  
   
     > [!NOTE]
-    >  Vous devez peut-être modifier la partie numérique de l’URL. Microsoft Azure nécessite une URL unique pour chaque service mobile.  
+    > Vous devez peut-être modifier la partie numérique de l’URL. Microsoft Azure nécessite une URL unique pour chaque service mobile.  
   
      Cela définit l’URL du service `https://wpfquickstart01.azure-mobile.net/`.  
   
@@ -491,7 +491,7 @@ Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidemen
 5. Dans la liste **Région** , choisissez le centre de données dans lequel déployer le service mobile, puis choisissez le bouton **Suivant** (flèche droite).  
   
     > [!NOTE]
-    >  Pour ce service, vous utilisez le paramètre par défaut **Principal** , **JavaScript**.  
+    > Pour ce service, vous utilisez le paramètre par défaut **Principal** , **JavaScript**.  
   
 6. Si vous créez une base de données, dans la page **Spécifier les paramètres de base de données** , dans la liste **Serveur** , choisissez **Nouveau serveur de base de données SQL**, entrez votre **Nom de connexion SQL** et votre **Mot de passe**, puis choisissez le bouton **Terminé** (coche).  
   

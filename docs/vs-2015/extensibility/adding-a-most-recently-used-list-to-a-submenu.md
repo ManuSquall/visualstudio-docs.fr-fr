@@ -12,12 +12,12 @@ ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3aa3058c20fe0d5697b56adb72769f5f6962da1e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: caccf8923a8614ceedb7198e218ca2bb14bb7ec0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086284"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444861"
 ---
 # <a name="adding-a-most-recently-used-list-to-a-submenu"></a>Ajout d’une liste de fichiers récents à un sous-menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -199,7 +199,7 @@ Cette procédure pas à pas s’appuie sur des démonstrations de [Ajout d’un 
 2. Sur le **TestMenu** menu, cliquez sur **appeler la commande de test**. Cette opération affiche un message qui indique que la commande a été sélectionnée.  
   
     > [!NOTE]
-    >  Cette étape est nécessaire pour forcer le VSPackage pour charger et afficher correctement la liste des derniers fichiers utilisés. Si vous ignorez cette étape, la liste des derniers fichiers utilisés n’est pas affichée.  
+    > Cette étape est nécessaire pour forcer le VSPackage pour charger et afficher correctement la liste des derniers fichiers utilisés. Si vous ignorez cette étape, la liste des derniers fichiers utilisés n’est pas affichée.  
   
 3. Sur le **Menu Test** menu, cliquez sur **sous-menu**. Une liste d’éléments de quatre s’affiche à la fin du sous-menu ci-dessous un séparateur. Lorsque vous cliquez sur **élément 3**, une boîte de message doit apparaître et afficher le texte, « Selected Item 3 ». (Si la liste des quatre éléments n’est pas affichée, vérifiez que vous avez suivi les instructions de l’étape précédente.)  
   

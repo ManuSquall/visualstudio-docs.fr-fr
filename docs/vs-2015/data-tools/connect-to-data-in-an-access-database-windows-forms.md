@@ -20,12 +20,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 10b4efd574dd5829e4717b168dc4e565476e9b52
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4a6909bade36dce15bfae725fbaab60f24236451
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102949"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437006"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Se connecter à des données dans une base de données Access (Windows Forms)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Vous pouvez vous connecter à une base de données Access (un fichier .mdf ou un
      ![Modifier le fournisseur de données OLE DB](../data-tools/media/datachangedatasourceoledb.png "dataChangeDataSourceOLEDB")  
   
     > [!IMPORTANT]
-    >  Bien qu’une source de données de **du fichier de base de données Microsoft Access (OLE DB)** peut sembler être le bon choix, vous utilisez ce type de source de données uniquement pour les fichiers de base de données .mdb.  
+    > Bien qu’une source de données de **du fichier de base de données Microsoft Access (OLE DB)** peut sembler être le bon choix, vous utilisez ce type de source de données uniquement pour les fichiers de base de données .mdb.  
   
 8. Dans **fournisseur OLE DB**, sélectionnez **Microsoft Office 12.0 Access Database Engine fournisseur OLE DB**.  
   
@@ -70,7 +70,7 @@ Vous pouvez vous connecter à une base de données Access (un fichier .mdf ou un
 9. Dans **serveur ou nom de fichier**, spécifiez le chemin d’accès et le nom du fichier .accdb auquel vous souhaitez vous connecter, puis sélectionnez **OK**.  
   
     > [!NOTE]
-    >  Si le fichier de base de données a un nom d’utilisateur et le mot de passe, indiquez-les avant de sélectionner **OK**.  
+    > Si le fichier de base de données a un nom d’utilisateur et le mot de passe, indiquez-les avant de sélectionner **OK**.  
   
 10. Sélectionnez **suivant** sur le **choisir votre connexion de données** page.  
   

@@ -19,12 +19,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cc6c7af3732f2f96ad53651b146898b655b68fdd
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 91b438e8646a215aeed3390e87ce9c20ca923fae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647925"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441280"
 ---
 # <a name="security-page-project-designer"></a>Page Sécurité, Concepteur de projets
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ La page **Sécurité** du **Concepteur de projets** permet de configurer les par
  Détermine si les paramètres de sécurité sont activés au moment du design. Quand cette option est désactivée, aucune autre option de la page **Sécurité** n’est disponible.  
   
 > [!NOTE]
->  Lors de la publication d’une application à l’aide de l’Assistant **Publication**, cette option est automatiquement activée.  
+> Lors de la publication d’une application à l’aide de l’Assistant **Publication**, cette option est automatiquement activée.  
   
  Quand vous sélectionnez cette option, vous pouvez choisir l’une des deux cases d’option suivantes : **Il s’agit d’une application de confiance totale** ou **Il s’agit d’une application de confiance partielle**.  
   

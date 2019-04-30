@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1e99ee6c9570f3bb73bc70f230f31e153a8a0da1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ace8b173eb20b6e628fbb7066ff9010624cca9e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054150"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441961"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>Spécification d'événements de build personnalisés dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ En spécifiant un événement de build personnalisé, vous pouvez automatiquemen
      Exemple : `for %I in (*.txt *.doc *.html) do copy %I c:\`*mon_répertoire*`\`
 
     > [!NOTE]
-    >  `%I` dans le code ci-dessus doit être `%%I` dans les scripts de commandes.
+    > `%I` dans le code ci-dessus doit être `%%I` dans les scripts de commandes.
 
 ## <a name="see-also"></a>Voir aussi
  [Compilation et génération](../ide/compiling-and-building-in-visual-studio.md) [boîte de dialogue ligne de commande/Post-build événement pré-build](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [caractères spéciaux MSBuild](../msbuild/msbuild-special-characters.md) [procédure pas à pas : Génération d’une application](../ide/walkthrough-building-an-application.md)

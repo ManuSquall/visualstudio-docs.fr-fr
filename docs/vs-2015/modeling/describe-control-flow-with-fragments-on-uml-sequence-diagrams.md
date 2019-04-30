@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 829e219056b7c0a74226dd933ab38b8559ebd6b2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c296be2e3a00efcdf48bdd6e4442e88fc32b3695
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107084"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422540"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Décrire le flux de contrôle à l'aide de fragments dans les diagrammes de séquence UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Dans un diagramme de séquence UML, les *fragments combinés* vous permettent d�
  Un fragment combiné se compose d’un ou de plusieurs *opérandes d’interaction*, chacun d’entre eux contenant un ou plusieurs messages, utilisations d’interactions ou encore fragments combinés.  
   
 > [!NOTE]
->  Cette rubrique traite des fragments dans les diagrammes de séquence. Pour plus d’informations sur la lecture des diagrammes de séquence UML, consultez [diagrammes de séquence UML : Référence](../modeling/uml-sequence-diagrams-reference.md). Pour plus d’informations sur la façon de dessiner des diagrammes de séquence UML, consultez [diagrammes de séquence UML : Les instructions](../modeling/uml-sequence-diagrams-guidelines.md).  
+> Cette rubrique traite des fragments dans les diagrammes de séquence. Pour plus d’informations sur la lecture des diagrammes de séquence UML, consultez [diagrammes de séquence UML : Référence](../modeling/uml-sequence-diagrams-reference.md). Pour plus d’informations sur la façon de dessiner des diagrammes de séquence UML, consultez [diagrammes de séquence UML : Les instructions](../modeling/uml-sequence-diagrams-guidelines.md).  
   
  ![Fragment avec deux opérandes d’Interaction combiné](../modeling/media/uml-seqfragments.png "UML_SeqFragments")  
   
@@ -45,7 +45,7 @@ Dans un diagramme de séquence UML, les *fragments combinés* vous permettent d�
 3. Vous pouvez sélectionner chaque opérande d’interaction individuellement en cliquant dessus. Dans cet exemple, l’opérande d’interaction supérieur est sélectionné afin que sa limite puisse être affichée. En règle générale, seule la ligne de séparation entre les opérandes d’interaction est visible.  
   
     > [!NOTE]
-    >  Pour sélectionner l’opérande d’interaction supérieur, vous ne devez pas cliquer trop près de la partie supérieure du fragment combiné.  
+    > Pour sélectionner l’opérande d’interaction supérieur, vous ne devez pas cliquer trop près de la partie supérieure du fragment combiné.  
   
 4. Gardes. Vous pouvez attribuer un garde à chaque opérande d’interaction. Celui-ci décrit la condition sous laquelle les messages contenus dans l’opérande d’interaction sont exécutés.  
   
@@ -57,7 +57,7 @@ Dans un diagramme de séquence UML, les *fragments combinés* vous permettent d�
 1. Sélectionnez un message ou une séquence de messages qui partent tous de la même ligne de vie ou occurrence d’exécution.  
   
    > [!NOTE]
-   >  Si vous sélectionnez plusieurs messages, ceux-ci doivent former une séquence ininterrompue.  
+   > Si vous sélectionnez plusieurs messages, ceux-ci doivent former une séquence ininterrompue.  
   
 2. Cliquez avec le bouton droit sur l’un des messages, pointez sur **Entourer de**, puis cliquez sur le genre de fragment combiné de votre choix tel que **Fragment combiné Alt**.  
   
@@ -100,7 +100,7 @@ Dans un diagramme de séquence UML, les *fragments combinés* vous permettent d�
 - Cliquez avec le bouton droit sur le titre du fragment combiné, puis cliquez sur **Propriétés**.  
   
     > [!NOTE]
-    >  Les différents genres de fragments combinés possèdent des propriétés différentes.  
+    > Les différents genres de fragments combinés possèdent des propriétés différentes.  
   
 ## <a name="KindsOfFragment"></a> Genres de fragments combinés  
   
@@ -109,7 +109,7 @@ Dans un diagramme de séquence UML, les *fragments combinés* vous permettent d�
   
 |Type de fragment|Description|  
 |-------------------|-----------------|  
-|**Opt**|Optionnel. Contient une séquence qui peut ou non se produire. Dans le garde, vous pouvez spécifier la condition sous laquelle elle se produit.|  
+|**Opt**|Facultatif. Contient une séquence qui peut ou non se produire. Dans le garde, vous pouvez spécifier la condition sous laquelle elle se produit.|  
 |**Alt**|Contient une liste des fragments contenant d’autres séquences de messages. Une seule séquence peut se produire à la fois.<br /><br /> Vous pouvez insérer un garde dans chaque fragment pour indiquer la condition sous laquelle il peut s’exécuter. Un garde **else** indique un fragment qui doit s’exécuter si aucun autre garde n’a la valeur True. Si tous les gardes ont la valeur False et qu’il n’existe aucun **else**, aucun des fragments n’est exécuté.|  
 |**Loop**|Le fragment est répété un certain nombre de fois. Dans le garde, vous pouvez indiquer la condition sous laquelle il doit être répété.<br /><br /> Les fragments combinés Loop possèdent des propriétés **Min** et **Max**qui indiquent les nombres minimum et maximum de fois que le fragment peut être répété. Par défaut, il n’y a aucune restriction.|  
 |**Break**|Si ce fragment est exécuté, le reste de la séquence est abandonné. Vous pouvez utiliser le garde pour indiquer la condition dans laquelle l’arrêt se produit.|  

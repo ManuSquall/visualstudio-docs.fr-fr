@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f239da7816f72b9204364303113d32f5e06c4fd8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 70d640b97bae15575689d41c38bd774507276906
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661904"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436874"
 ---
 # <a name="property-pages-javascript"></a>Pages de propriétés (JavaScript)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Les **Pages de propriétés** permettent d’accéder aux paramètres d’un pro
  Utilisez les options suivantes pour définir les propriétés générales du projet.  
   
 > [!NOTE]
->  Certaines options sont disponibles seulement dans les applications du Windows Store.  
+> Certaines options sont disponibles seulement dans les applications du Windows Store.  
   
  **Chemin de sortie**  
  Spécifie l'emplacement des fichiers de sortie pour la configuration du projet. Le chemin d'accès est relatif. Si vous entrez un chemin d'accès absolu, le chemin d'accès absolu est enregistré dans le projet. Le chemin d'accès par défaut est bin\Debug.  
@@ -62,7 +62,7 @@ Les **Pages de propriétés** permettent d’accéder aux paramètres d’un pro
  Utilisez les options suivantes pour définir les propriétés du comportement du débogage dans le projet.  
   
 > [!NOTE]
->  Certaines options sont disponibles seulement dans les applications du Windows Store.  
+> Certaines options sont disponibles seulement dans les applications du Windows Store.  
   
  **Débogueur à lancer**  
  Spécifie l'hôte par défaut pour le débogueur.  

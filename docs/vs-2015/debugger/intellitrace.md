@@ -22,12 +22,12 @@ caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c9097a8c067ce4e04dd54f879a6c1388f854d7ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dfa2d0cb454dba07a036883a296d364cb3182afc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440146"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Vous pouvez consacrer moins de temps au débogage de votre application quand vou
 |**Non pris en charge**|-C++, d’autres langages et d’un script<br />-Windows Services, Silverlight, Xbox ou [!INCLUDE[winmobile](../includes/winmobile-md.md)] applications|  
   
 > [!NOTE]
->  Si vous souhaitez déboguer un processus qui est déjà en cours d'exécution, vous ne pouvez pas utiliser IntelliTrace. Vous devez démarrer IntelliTrace lorsque le processus commence.  
+> Si vous souhaitez déboguer un processus qui est déjà en cours d'exécution, vous ne pouvez pas utiliser IntelliTrace. Vous devez démarrer IntelliTrace lorsque le processus commence.  
   
 ## <a name="IntelliTraceVSTraditional"></a> Pourquoi déboguer à l'aide d'IntelliTrace ?  
  Qu'il soit traditionnel ou *en direct*, le débogage affiche uniquement l'état actuel de votre application avec des données limitées sur les événements passés. Vous devez déduire ces événements en fonction de l'état actuel de l'application ou recréer ces événements en réexécutant votre application.  
@@ -161,7 +161,7 @@ Vous pouvez consacrer moins de temps au débogage de votre application quand vou
 - Pointeurs désignant des objets enfants de premier niveau, mais non leurs valeurs sauf si elles sont nulles ou pas  
   
 > [!NOTE]
->  IntelliTrace collecte uniquement les 256 premiers objets des tableaux et les 256 premiers caractères des chaînes.  
+> IntelliTrace collecte uniquement les 256 premiers objets des tableaux et les 256 premiers caractères des chaînes.  
   
  Consultez [configurer IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   

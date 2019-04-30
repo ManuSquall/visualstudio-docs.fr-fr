@@ -13,12 +13,12 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 67cf59965d47b2a0e29bbe6280d69acf0000a20d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: a992f8512d4927eeb58d6437ccb830abda688b28
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443688"
 ---
 # <a name="iwebappdiagnosticsobjectinitialization-interface"></a>IWebAppDiagnosticsObjectInitialization (interface)
 Cette interface peut être implémentée sur les classes qui implémentent [IWebAppDiagnosticsSetup::CreateObjectWithSiteAtWebApp](../../winscript/reference/iwebappdiagnosticssetup-createobjectwithsiteatwebapp.md). [IWebAppDiagnosticsSetup Interface](../../winscript/reference/iwebappdiagnosticssetup-interface.md) est implémentée par l’objet qui implémente [IDebugApplication Interface](../../winscript/reference/idebugapplication-interface.md). Dans la plupart des cas, cet objet est PDM.  
@@ -26,7 +26,7 @@ Cette interface peut être implémentée sur les classes qui implémentent [IWeb
  Une fois que l’objet a été créé, [IWebAppDiagnosticsObjectInitialization::Initialize](../../winscript/reference/iwebappdiagnosticsobjectinitialization-initialize.md) est appelée avec une référence à l’application de débogage PDM et `hPassToObject` paramètre de `CreateObjectWithSiteAtWebApp`.  
   
 > [!IMPORTANT]
->  `IWebAppDiagnosticsObjectInitialization` est trouvée dans activdbg100.h.  
+> `IWebAppDiagnosticsObjectInitialization` est trouvée dans activdbg100.h.  
   
 ## <a name="methods"></a>Méthodes  
  Cette interface expose les méthodes suivantes.  

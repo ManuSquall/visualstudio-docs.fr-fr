@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f2c79787317c3d759322e5bd7f7beed4a43892a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e39ea4041ab9806c7ca857680af5c5c04510eba9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057730"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430701"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Procédure pas à pas : Créer une colonne de site, le type de contenu et la liste pour SharePoint
   Les procédures suivantes montrent comment créer des colonnes de site SharePoint personnalisées, ou *champs*, ainsi que d’un type de contenu qui utilise les colonnes de site. Il montre également comment créer une liste qui utilise le nouveau type de contenu.
@@ -112,7 +112,7 @@ ms.locfileid: "60057730"
 6. Après le Type de contenu concepteur s’affiche, dans le **colonnes** onglet, ajoutez les trois colonnes que vous avez défini précédemment de site : **Nom du patient**, **ID Patient**, et **nom médecin**. Pour ajouter ces colonnes, choisissez la première zone de liste dans la liste de colonnes de site sous **nom d’affichage**, puis choisissez chaque colonne de site dans la liste un à la fois.
 
     > [!TIP]
-    >  Pour choisir les colonnes de site plus rapidement, filtrer la liste en tapant les premières lettres du nom de la colonne.
+    > Pour choisir les colonnes de site plus rapidement, filtrer la liste en tapant les premières lettres du nom de la colonne.
 
 7. Outre les trois colonnes de site personnalisé, ajoutez le **commentaires** colonne de site à partir de la liste de colonnes de site.
 
@@ -164,7 +164,7 @@ ms.locfileid: "60057730"
      La colonne de liste personnalisée s’applique uniquement à cette liste. Lorsque vous ajoutez une colonne de liste personnalisé à une liste, un nouvelle liste type de contenu, y compris toutes les colonnes ajoutées à la liste, est créé et défini en tant que la liste par défaut.
 
     > [!TIP]
-    >  Si vous choisissez une colonne dans la liste des colonnes de site, une colonne de site existante est utilisée. Toutefois, si vous entrez une valeur de nom de colonne sans choisir toutes les colonnes dans la liste, une colonne de liste personnalisée est créée, même si une colonne portant le même nom existe déjà dans la liste.
+    > Si vous choisissez une colonne dans la liste des colonnes de site, une colonne de site existante est utilisée. Toutefois, si vous entrez une valeur de nom de colonne sans choisir toutes les colonnes dans la liste, une colonne de liste personnalisée est créée, même si une colonne portant le même nom existe déjà dans la liste.
 
      Si vous le souhaitez, au lieu de la définition du type de données de la colonne de liste personnalisée pour **seule ligne de texte**, vous pouvez à la place définir le type de données pour cette colonne de recherche et ses valeurs seraient récupérées à partir d’une table ou une autre liste. Pour plus d’informations sur les colonnes de recherche, consultez [des relations de liste dans SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=224994) et [recherches et des relations de liste](http://go.microsoft.com/fwlink/?LinkID=224995).
 

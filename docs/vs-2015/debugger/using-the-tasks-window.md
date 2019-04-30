@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 934073e5d266c2ddf645acd7dddcfb13711f92de
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: cdf7c5fe724ff4b043ca304eee3e5e0f31b0dd85
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950754"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437708"
 ---
 # <a name="using-the-tasks-window"></a>Utilisation de la fenêtre Tâches
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ La fenêtre **Tâches** ressemble à la fenêtre **Threads**, hormis le fait qu'
  ![Fenêtre Tâches parallèles](../debugger/media/parallel-tasks-window.png "Parallel_Tasks_Window")  
   
 > [!NOTE]
->  En code managé, <xref:System.Threading.Tasks.Task> qui a un état <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus> ou <xref:System.Threading.Tasks.TaskStatus>, ne peut pas s'afficher dans la fenêtre Tâches lorsque les threads managés sont à l'état de veille ou à l'état de jonction.  
+> En code managé, <xref:System.Threading.Tasks.Task> qui a un état <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus> ou <xref:System.Threading.Tasks.TaskStatus>, ne peut pas s'afficher dans la fenêtre Tâches lorsque les threads managés sont à l'état de veille ou à l'état de jonction.  
   
 ## <a name="tasks-column-information"></a>Informations sur les colonnes de la fenêtre Tâches  
  Les colonnes de la fenêtre **Tâches** contiennent les informations suivantes.  

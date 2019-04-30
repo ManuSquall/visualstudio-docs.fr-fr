@@ -10,12 +10,12 @@ ms.assetid: 50081d48-987f-43db-8bf9-51b7cf76e9c0
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fb8ce0938ae79b0fc6108f6f3cdbe80a116f5531
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 5e62be456422b7ee5e9f2828a44a6be05e1211d9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953171"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436348"
 ---
 # <a name="document-windows"></a>Fenêtres de document
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Dans Visual Studio, un *fenêtre de document* est une fenêtre enfant encadré q
  Les fenêtres de document sont créées en implémentant un éditeur. Le <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> interface crée des fenêtres de document dans le cadre de l’instanciation d’un éditeur. Pour plus d’informations, consultez [Interfaces hérité dans l’éditeur](../../extensibility/legacy-interfaces-in-the-editor.md).  
   
 > [!NOTE]
->  Pour fournir en arrière et transférer des points de navigation dans une fenêtre, vous devez implémenter le <xref:Microsoft.VisualStudio.Shell.Interop.IVsBackForwardNavigation> interface. L’éditeur de texte utilise des marqueurs de texte pour identifier les points de navigation dans le document.  
+> Pour fournir en arrière et transférer des points de navigation dans une fenêtre, vous devez implémenter le <xref:Microsoft.VisualStudio.Shell.Interop.IVsBackForwardNavigation> interface. L’éditeur de texte utilise des marqueurs de texte pour identifier les points de navigation dans le document.  
   
 ## <a name="the-running-document-table"></a>La Table de Document en cours d’exécution  
  L’IDE utilise la table de document en cours d’exécution (RDT) pour suivre l’état de chaque fenêtre de document. La RDT est le mécanisme via quel document windows sont informés des événements, tels que lors de la fermeture d’une solution ou un fichier a été modifié. Pour plus d’informations, consultez [Table de Document en cours d’exécution](../../extensibility/internals/running-document-table.md).  

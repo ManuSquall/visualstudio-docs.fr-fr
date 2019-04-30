@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a343cb508933b91f5400ff6bc17c285a54bd2e87
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bd1a9a2a269c173ef9dcb47b39921073802fe1ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438409"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Procédure : Créer une texture de base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Ce document montre comment utiliser l’éditeur d’images pour créer une text
 5. Dans la barre d’outils de l’éditeur d’images, choisissez l’outil **Remplissage**, puis appuyez sur la touche Maj de façon prolongée et choisissez un point de l’image. L’utilisation de la touche Maj provoque le remplacement de la couleur de l’image par la valeur alpha de la couleur de remplissage. Par ailleurs, la valeur alpha permet de fusionner la couleur de remplissage avec la couleur de l’image.  
   
    > [!IMPORTANT]
-   >  Cette étape, associée à la sélection de couleur de l’étape précédente, permet de s’assurer que l’image de base est préparée pour la texture de la cible que vous dessinez. Lorsque l’image est remplie de noir transparent, et parce que la bordure de la cible est noire, il n’existe pas d’artefact de crénelage autour de la cible.  
+   > Cette étape, associée à la sélection de couleur de l’étape précédente, permet de s’assurer que l’image de base est préparée pour la texture de la cible que vous dessinez. Lorsque l’image est remplie de noir transparent, et parce que la bordure de la cible est noire, il n’existe pas d’artefact de crénelage autour de la cible.  
   
 6. Dans la barre d’outils de l’éditeur d’images, choisissez l’outil **Ellipse**.  
   
@@ -70,7 +70,7 @@ Ce document montre comment utiliser l’éditeur d’images pour créer une text
 11. À l’aide de l’outil **Ellipse**, tracez un cercle des coordonnées de pixel `(3, 3)` aux coordonnées de pixel `(508, 508)`. Pour tracer le cercle plus facilement, vous pouvez appuyer sur la touche Maj de façon prolongée tout en effectuant le tracé.  
   
     > [!NOTE]
-    >  Les coordonnées en pixels de l’emplacement actuel du pointeur sont affichées sur la barre d’état [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+    > Les coordonnées en pixels de l’emplacement actuel du pointeur sont affichées sur la barre d’état [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 12. Modifiez la couleur d’arrière-plan. Définissez **R** sur `44`, **V** sur `165`, **B** sur `211`, et **A** sur `255`.  
   

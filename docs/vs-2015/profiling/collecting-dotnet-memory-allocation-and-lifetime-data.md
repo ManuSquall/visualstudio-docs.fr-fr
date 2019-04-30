@@ -12,12 +12,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c40c2f824518ed00dacc41094c1b567f5de248ae
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 68decc73e14f8748d8434e05e50d6d3b48612d40
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112817"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436767"
 ---
 # <a name="collecting-net-memory-allocation-and-lifetime-data"></a>Collecte des données liées à la durée de vie des objets et à l’allocation de mémoire .NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Les outils de profilage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prennent en
 - [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
->  Les fonctionnalités de sécurité renforcée de Windows 8 et Windows Server 2012 ont imposé des changements importants dans la façon dont le profileur Visual Studio collecte les données sur ces plateformes. Les applications Windows Store demandent aussi de nouvelles techniques de collecte. Consultez [Outils d’analyse des performances sur les applications Windows 8 et Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
+> Les fonctionnalités de sécurité renforcée de Windows 8 et Windows Server 2012 ont imposé des changements importants dans la façon dont le profileur Visual Studio collecte les données sur ces plateformes. Les applications Windows Store demandent aussi de nouvelles techniques de collecte. Consultez [Outils d’analyse des performances sur les applications Windows 8 et Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
  Vous pouvez collecter des données à l’aide de la méthode de profilage par échantillonnage ou par instrumentation.  
   
@@ -42,7 +42,7 @@ Les outils de profilage [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prennent en
 - Lorsque vous utilisez la méthode d’instrumentation, le profileur suit uniquement les allocations de mémoire .NET et les objets qui sont générés par les modules instrumentés.  
   
 > [!IMPORTANT]
->  Lorsque vous collectez des données de mémoire .NET (allocations, durées de vie d’objets, ou les deux) à l’aide de la méthode d’échantillonnage, tous les événements d’échantillonnage spécifiés par l’utilisateur sont ignorés, et les événements d’allocation de mémoire appropriés sont utilisés pour collecter des données.  
+> Lorsque vous collectez des données de mémoire .NET (allocations, durées de vie d’objets, ou les deux) à l’aide de la méthode d’échantillonnage, tous les événements d’échantillonnage spécifiés par l’utilisateur sont ignorés, et les événements d’allocation de mémoire appropriés sont utilisés pour collecter des données.  
   
  Si vous activez le profilage de l’allocation de mémoire .NET, vous activez également le mode Allocation. Si vous activez le profilage des données de durée de vie .NET, vous activez également le mode Durée de vie des objets. Pour plus d’informations, consultez [Allocations, vue](../profiling/dotnet-memory-allocations-view.md) et [Durée de vie de l’objet, vue](../profiling/object-lifetime-view.md).  
   

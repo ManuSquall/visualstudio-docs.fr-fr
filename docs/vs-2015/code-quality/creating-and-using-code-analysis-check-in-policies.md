@@ -11,12 +11,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2aef2183cde96bfb5faa1bb62fa341f901dd7018
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 274aa497e004ddafee9a56b028f3001bb8deb630
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437079"
 ---
 # <a name="creating-and-using-code-analysis-check-in-policies"></a>Création et utilisation de stratégies d’archivage de l’analyse du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Lorsque vous utilisez Team Foundation Version Control (TFVC), vous pouvez créer
  La stratégie est passée lorsque la version locale est à jour et d’analyse du code a été exécutée sur les fichiers les plus récents de la source. Au minimum, les règles d’analyse de code qui sont activées dans le projet de code doivent contenir les mêmes règles que celles qui sont définies dans la stratégie projet d’équipe archivage. Les règles qui ont été spécifiés comme des erreurs dans les paramètres de projet d’équipe doivent également être spécifiés comme des erreurs dans le projet de code  
   
 > [!IMPORTANT]
->  Stratégies d’archivage de l’analyse du code ne peut pas être appliqués aux projets de site web. Elles peuvent être appliquées aux projets d’application web.  
+> Stratégies d’archivage de l’analyse du code ne peut pas être appliqués aux projets de site web. Elles peuvent être appliquées aux projets d’application web.  
   
  Vous créez des code de stratégies d’archivage de l’analyse à l’aide des paramètres de projet d’équipe [!INCLUDE[esprscc](../includes/esprscc-md.md)]. Stratégies d’archivage sont spécifiées et appliquées pour un projet d’équipe, mais les exécutions d’analyse du code sont configurées et exécutées pour les projets de code individuels sur les ordinateurs de développement local. Cette section décrit comment spécifier le code analysis stratégies d’archivage pour un projet d’équipe et comment implémenter des stratégies d’analyse du code personnalisé pour le code managé.  
   

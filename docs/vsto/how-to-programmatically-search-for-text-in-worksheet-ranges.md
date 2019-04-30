@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 800dcfaa7ae171d1bf3812bef3a8bedda3f2bd21
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3e0befc61b39030bd7144cef10b54e70dc71e33a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616974"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419543"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>Procédure : Rechercher par programmation pour le texte dans les plages de feuille de calcul
   Le <xref:Microsoft.Office.Interop.Excel.Range.Find%2A> méthode de la <xref:Microsoft.Office.Interop.Excel.Range> objet vous permet de rechercher du texte dans la plage. Ce texte peut également être une des chaînes d’erreur qui peuvent s’afficher dans une cellule de feuille de calcul comme `#NULL!` ou `#VALUE!`. Pour plus d’informations sur les chaînes d’erreur, consultez [les valeurs d’erreur de cellule](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values).
@@ -29,7 +29,7 @@ ms.locfileid: "56616974"
  L’exemple suivant recherche une plage nommée `Fruits` et modifie la police des cellules qui contiennent le mot « apples ». Cette procédure utilise également le <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> (méthode), qui utilise précédemment défini les paramètres pour répéter la recherche de recherche. Vous spécifiez la cellule après laquelle effectuer la recherche et le <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> méthode gère le reste.
 
 > [!NOTE]
->  Le <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> recherche de la méthode reprend au début de la plage de recherche une fois qu’il a atteint la fin de la plage. Votre code doit s’assurer que la recherche ne pas inclure dans un wrapper autour de dans une boucle infinie. L’exemple de procédure montre comment gérer cette situation à l’aide de la <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> propriété.
+> Le <xref:Microsoft.Office.Interop.Excel.Range.FindNext%2A> recherche de la méthode reprend au début de la plage de recherche une fois qu’il a atteint la fin de la plage. Votre code doit s’assurer que la recherche ne pas inclure dans un wrapper autour de dans une boucle infinie. L’exemple de procédure montre comment gérer cette situation à l’aide de la <xref:Microsoft.Office.Interop.Excel.Range.Address%2A> propriété.
 
  ![lien vers la vidéo](../vsto/media/playvideo.gif "lien vers la vidéo") pour une démonstration vidéo connexe, consultez [How do I: Utilisez la méthode Find dans un complément à Excel ? ](http://go.microsoft.com/fwlink/?LinkID=130294).
 

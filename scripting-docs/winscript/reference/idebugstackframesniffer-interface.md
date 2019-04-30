@@ -13,18 +13,18 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0e753261098133eb97f5010dcef5f602d283aac4
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 5c9181b5013a9584a2a686ed0e499698be0b62b9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149482"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432256"
 ---
 # <a name="idebugstackframesniffer-interface"></a>IDebugStackFrameSniffer, interface
 Fournit un moyen pour énumérer les frames de pile logique appelées par un composant. En général, les moteurs de script implémentent cette interface. Le processus débogage Gestionnaire utilise cette interface pour trouver tous les frames de pile associée à un thread donné.  
   
 > [!NOTE]
->  Le débogueur appelle cette interface à partir du thread d’intérêt. Le moteur de script doit identifier le thread actuel et retourne un énumérateur approprié.  
+> Le débogueur appelle cette interface à partir du thread d’intérêt. Le moteur de script doit identifier le thread actuel et retourne un énumérateur approprié.  
   
 ## <a name="methods"></a>Méthodes  
  Outre les méthodes héritées de `IUnknown`, le `IDebugStackFrameSniffer` interface expose les méthodes suivantes.  

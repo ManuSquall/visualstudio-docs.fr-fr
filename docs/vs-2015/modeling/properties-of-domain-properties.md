@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ca7f4e44f1d40256e821091609752b48d8f204d0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 372e19b9ebb1253bda28b4c7723a2366c90b7441
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947664"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412130"
 ---
 # <a name="properties-of-domain-properties"></a>Propriétés des propriétés de domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "58947664"
 Un *de propriété de domaine* est une fonctionnalité d’un élément de modèle qui peut contenir une valeur. Par exemple, la classe de domaine `Person` pourrait avoir des propriétés `Name` et `BirthDate`. Dans la définition DSL, les propriétés de domaine sont énumérées dans la zone de classe de domaine sur le diagramme et sous la classe de domaine dans l'Explorateur DSL. Pour plus d’informations, consultez [comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md).  
   
 > [!NOTE]
->  Le mot « propriété » a deux utilisations. Un *de propriété de domaine* est une fonctionnalité que vous définissez sur une classe de domaine. En revanche, ont de nombreux éléments d’une solution DSL *propriétés*, qui sont répertoriées dans le **propriétés** fenêtre dans la définition DSL. Par exemple, chaque propriété de domaine possède un jeu de propriétés qui sont décrites dans cette rubrique.  
+> Le mot « propriété » a deux utilisations. Un *de propriété de domaine* est une fonctionnalité que vous définissez sur une classe de domaine. En revanche, ont de nombreux éléments d’une solution DSL *propriétés*, qui sont répertoriées dans le **propriétés** fenêtre dans la définition DSL. Par exemple, chaque propriété de domaine possède un jeu de propriétés qui sont décrites dans cette rubrique.  
   
  Au moment de l'exécution, quand un utilisateur crée des instances de la classe de domaine, les valeurs des propriétés de domaine sont visibles dans la fenêtre Propriétés et peuvent être affichées sur les formes.  
   

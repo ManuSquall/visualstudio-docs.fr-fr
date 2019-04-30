@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0799bdff6957e811c365fe153a722d25e306366
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 25365c5599d299189b07ec5c30124aac0004f390
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086674"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444945"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>Procédure pas à pas : Afficher des suggestions ampoule
 Les ampoules sont des icônes dans l’éditeur Visual Studio développent pour afficher un ensemble d’actions, par exemple, des correctifs pour les problèmes identifiés par les analyseurs de code intégrés ou la refactorisation de code.
@@ -177,7 +177,7 @@ Les ampoules sont des icônes dans l’éditeur Visual Studio développent pour 
 6. Implémentez le <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.GetSuggestedActions%2A> (méthode), qui retourne un tableau de <xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet> objets qui contiennent les différentes <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction> objets. Cette méthode est appelée lorsque l’ampoule est développé.
 
     > [!WARNING]
-    >  Vous devez vous assurer que les implémentations de `HasSuggestedActionsAsync()` et `GetSuggestedActions()` sont cohérent ; qui est, si `HasSuggestedActionsAsync()` retourne `true`, puis `GetSuggestedActions()` doit avoir certaines actions à afficher. Dans de nombreux cas, `HasSuggestedActionsAsync()` est appelé juste avant `GetSuggestedActions()`, mais cela n’est pas toujours le cas. Par exemple, si l’utilisateur appelle l’ampoule actions en appuyant sur (**CTRL +** .) uniquement `GetSuggestedActions()` est appelée.
+    > Vous devez vous assurer que les implémentations de `HasSuggestedActionsAsync()` et `GetSuggestedActions()` sont cohérent ; qui est, si `HasSuggestedActionsAsync()` retourne `true`, puis `GetSuggestedActions()` doit avoir certaines actions à afficher. Dans de nombreux cas, `HasSuggestedActionsAsync()` est appelé juste avant `GetSuggestedActions()`, mais cela n’est pas toujours le cas. Par exemple, si l’utilisateur appelle l’ampoule actions en appuyant sur (**CTRL +** .) uniquement `GetSuggestedActions()` est appelée.
 
     ```csharp
     public IEnumerable<SuggestedActionSet> GetSuggestedActions(ISuggestedActionCategorySet requestedActionCategories, SnapshotSpan range, CancellationToken cancellationToken)
@@ -326,7 +326,7 @@ Les ampoules sont des icônes dans l’éditeur Visual Studio développent pour 
     ```
 
     > [!WARNING]
-    >  L’action d’ampoule **Invoke** méthode n’est pas censée afficher l’interface utilisateur. Si votre action qu’apporte de la nouvelle interface utilisateur (par exemple une version préliminaire ou la sélection de boîte de dialogue), ne pas afficher l’interface utilisateur directement depuis le **Invoke** méthode mais au lieu de cela planifier pour afficher votre interface utilisateur après le retour **Invoke**.
+    > L’action d’ampoule **Invoke** méthode n’est pas censée afficher l’interface utilisateur. Si votre action qu’apporte de la nouvelle interface utilisateur (par exemple une version préliminaire ou la sélection de boîte de dialogue), ne pas afficher l’interface utilisateur directement depuis le **Invoke** méthode mais au lieu de cela planifier pour afficher votre interface utilisateur après le retour **Invoke**.
 
 10. Pour terminer l’implémentation, ajoutez le `Dispose()` et `TryGetTelemetryId()` méthodes.
 

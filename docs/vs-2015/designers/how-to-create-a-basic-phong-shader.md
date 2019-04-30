@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 78ff2ecf77d3d8943601b8bd0779fa37811ec2d2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7153c02f5cd3d494edb56b218512ba5de87f318a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438418"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Procédure : Créer un nuanceur Phong de base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Ce document indique comment utiliser le concepteur de nuanceur et DGSL (Directed
    L’illustration suivante présente le graphique du nuanceur terminé ainsi qu’un aperçu du nuanceur appliqué à un modèle de théière.  
   
 > [!NOTE]
->  Pour mettre en évidence l’effet du nuanceur dans cette illustration, une couleur orange a été spécifiée à l’aide du paramètre **MaterialDiffuse** du nuanceur, et un fini d’aspect métallique a été spécifié à l’aide des paramètres **MaterialSpecular** et **MaterialSpecularPower**. Pour plus d’informations sur les paramètres de matériau, consultez la section Aperçu des nuanceurs de l’article [Concepteur de nuanceur](../designers/shader-designer.md).  
+> Pour mettre en évidence l’effet du nuanceur dans cette illustration, une couleur orange a été spécifiée à l’aide du paramètre **MaterialDiffuse** du nuanceur, et un fini d’aspect métallique a été spécifié à l’aide des paramètres **MaterialSpecular** et **MaterialSpecularPower**. Pour plus d’informations sur les paramètres de matériau, consultez la section Aperçu des nuanceurs de l’article [Concepteur de nuanceur](../designers/shader-designer.md).  
   
  ![Graphique du nuanceur et aperçu de son effet](../designers/media/digit-lighting-graph.png "Digit-Lighting-Graph")  
   
@@ -62,9 +62,9 @@ Ce document indique comment utiliser le concepteur de nuanceur et DGSL (Directed
  L’illustration suivante présente le nuanceur, décrit dans ce document, appliqué à un modèle 3D. La propriété **MaterialSpecular** est définie sur (1,00, 0,50, 0,20, 0,00), et sa propriété **MaterialSpecularPower** est définie sur 16.  
   
 > [!NOTE]
->  La propriété **MaterialSpecular** détermine le fini apparent du matériau de surface. Une surface haute brillance comme le verre ou le plastique a tendance à avoir une couleur spéculaire, autrement dit une nuance de blanc lumineuse. Une surface métallique a tendance à avoir une couleur spéculaire proche de sa couleur diffuse. Une surface satinée a tendance à avoir une couleur spéculaire, autrement dit une nuance de gris foncée.  
+> La propriété **MaterialSpecular** détermine le fini apparent du matériau de surface. Une surface haute brillance comme le verre ou le plastique a tendance à avoir une couleur spéculaire, autrement dit une nuance de blanc lumineuse. Une surface métallique a tendance à avoir une couleur spéculaire proche de sa couleur diffuse. Une surface satinée a tendance à avoir une couleur spéculaire, autrement dit une nuance de gris foncée.  
 >   
->  La propriété **MaterialSpecularPower** détermine l’intensité des mises en surbrillance spéculaires. Des puissances très spéculaires simulent des mises en surbrillance plus ternes et plus localisées. Des puissances faiblement spéculaires simulent des mises en surbrillance intenses et de grande envergure qui peuvent saturer et masquer la couleur de la surface totale.  
+> La propriété **MaterialSpecularPower** détermine l’intensité des mises en surbrillance spéculaires. Des puissances très spéculaires simulent des mises en surbrillance plus ternes et plus localisées. Des puissances faiblement spéculaires simulent des mises en surbrillance intenses et de grande envergure qui peuvent saturer et masquer la couleur de la surface totale.  
   
  ![Éclairage Phong appliqué à un modèle](../designers/media/digit-lighting-model.png "Digit-Lighting-Model")  
   

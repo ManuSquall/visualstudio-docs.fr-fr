@@ -20,12 +20,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ba3ee5d8ee04b4a0f2cd360d6b213c69c6f8d1bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: cb1747341de65a5f642790410c35eee35620575e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953611"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442711"
 ---
 # <a name="how-to-stop-code-changes"></a>Procédure : Arrêter des modifications de code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "58953611"
 Pendant que Modifier & Continuer est en train d'appliquer les modifications du code, vous pouvez arrêter l'opération.  
   
 > [!CAUTION]
->  L'arrêt des modifications du code dans du code managé peut produire des résultats inattendus. L'application de modifications à du code managé est normalement un processus rapide ; il est donc rare de devoir arrêter ce type de modifications.  
+> L'arrêt des modifications du code dans du code managé peut produire des résultats inattendus. L'application de modifications à du code managé est normalement un processus rapide ; il est donc rare de devoir arrêter ce type de modifications.  
   
 ### <a name="to-stop-applying-code-changes"></a>Pour arrêter d'appliquer les modifications du code  
   

@@ -11,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
 manager: jillfra
-ms.openlocfilehash: a2b51b8f07a1cc049e4761001bfea754b6ca1819
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 33b4d8f1932429838f701df1f6ffaaceef321c4e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442918"
 ---
 # <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Procédure : Créer un contrôle de boîte à outils qui utilise Windows Forms
 Le modèle de contrôle de boîte à outils Windows Forms inclus dans le [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] vous permet de créer des contrôles Windows Forms qui sont automatiquement ajoutés à la **boîte à outils** au moment où l’extension est installée. Cette rubrique vous montre comment utiliser le modèle pour créer un contrôle de **boîte à outils** que vous pouvez distribuer à d’autres utilisateurs.  
   
 > [!NOTE]
->  Pour savoir comment télécharger le Kit de développement logiciel (SDK) Visual Studio, consultez [Centre de développement d’extensibilité Visual Studio](http://go.microsoft.com/fwlink/?linkid=121964) sur le site web MSDN.  
+> Pour savoir comment télécharger le Kit de développement logiciel (SDK) Visual Studio, consultez [Centre de développement d’extensibilité Visual Studio](http://go.microsoft.com/fwlink/?linkid=121964) sur le site web MSDN.  
   
 ## <a name="creating-a-toolbox-control"></a>Création d’un contrôle de boîte à outils  
  Pour créer le projet, utilisez le modèle de contrôle de boîte à outils Windows Forms, puis générez une interface utilisateur (IU) dans le concepteur.  

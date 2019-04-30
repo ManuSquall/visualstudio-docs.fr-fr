@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 48d70901a2d616031eeed197b639f3a7bb7336c3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 37539ee6c031d88b9db279cc61214ac5e3077e76
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092992"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387669"
 ---
 # <a name="read-a-uml-model-in-program-code"></a>Lire un modèle UML dans le code de programme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
  L'exemple de la section précédente fonctionne dans les extensions Visual Studio. Il est possible de lire un modèle dans une application autonome, mais vous devez ajouter des références à votre projet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 > [!NOTE]
->  Les détails relatifs à la lecture d'un modèle dans une application autonome sont susceptibles de changer dans les versions ultérieures du produit. Certaines fonctionnalités accessibles dans la version actuelle risquent de ne plus être disponibles dans les versions ultérieures.  
+> Les détails relatifs à la lecture d'un modèle dans une application autonome sont susceptibles de changer dans les versions ultérieures du produit. Certaines fonctionnalités accessibles dans la version actuelle risquent de ne plus être disponibles dans les versions ultérieures.  
   
 #### <a name="to-add-references-to-read-a-model-in-a-stand-alone-application"></a>Pour ajouter des références pour lire un modèle dans une application autonome  
   

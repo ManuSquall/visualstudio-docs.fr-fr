@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3fc4083111d704859d07897bd3f54d4bca31d31
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 4a260f0458b6278abc6c515b616345463a0cafef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434738"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>Inscrire des verbes pour les extensions de nom de fichier
 L’association d’une extension de nom de fichier avec une application a généralement une action par défaut qui se produit lorsqu’un utilisateur double-clique sur un fichier. Cette action est liée à un verbe, par exemple ouvrir, qui correspond à l’action de préférence.
@@ -38,7 +38,7 @@ L’association d’une extension de nom de fichier avec une application a gén�
   Si possible, inscrivez un verbe standard. Le choix le plus courant est le verbe Open. Utilisez le verbe de modification uniquement s’il existe une différence entre l’ouverture du fichier et en modifiant le fichier. Par exemple, l’ouverture d’un *.htm* fichier l’affiche dans le navigateur, tandis que la modification une *.htm* fichier démarre un éditeur HTML. Les verbes standards sont localisés avec les paramètres régionaux de système d’exploitation.
 
 > [!NOTE]
->  Lors de l’inscription des verbes standard, ne définissez pas la valeur par défaut pour ouvrir la clé. La valeur par défaut contient la chaîne d’affichage dans le menu. Le système d’exploitation fournit cette chaîne des verbes standard.
+> Lors de l’inscription des verbes standard, ne définissez pas la valeur par défaut pour ouvrir la clé. La valeur par défaut contient la chaîne d’affichage dans le menu. Le système d’exploitation fournit cette chaîne des verbes standard.
 
  Fichiers de projet doivent être inscrits pour démarrer une nouvelle instance de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] lorsqu’un utilisateur ouvre le fichier. L’exemple suivant illustre une inscription de verbe standard pour un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] projet.
 
@@ -109,7 +109,7 @@ L’association d’une extension de nom de fichier avec une application a gén�
  Le verbe par défaut est l’action qui est exécutée quand un utilisateur double-clique sur un fichier dans l’Explorateur Windows. Le verbe par défaut est le verbe spécifié comme valeur par défaut pour le **HKEY_CLASSES_ROOT\\*progid*\Shell** clé. Si aucune valeur n’est spécifiée, le verbe par défaut est le premier verbe spécifié dans le **HKEY_CLASSES_ROOT\\*progid*\Shell** liste de clés.
 
 > [!NOTE]
->  Si vous envisagez de modifier le verbe par défaut pour une extension dans un déploiement côte à côte, envisagez l’impact sur l’installation et la suppression. Lors de l’installation, la valeur par défaut d’origine est remplacée.
+> Si vous envisagez de modifier le verbe par défaut pour une extension dans un déploiement côte à côte, envisagez l’impact sur l’installation et la suppression. Lors de l’installation, la valeur par défaut d’origine est remplacée.
 
 ## <a name="see-also"></a>Voir aussi
 - [Gérer les associations de fichiers de côte à côte](../extensibility/managing-side-by-side-file-associations.md)

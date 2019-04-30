@@ -34,12 +34,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc5dfaa203e3e915075ad819fa859be46b9e2b7a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dd61ea128093735a69ad9b1f30cddc593b5856a4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095345"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440441"
 ---
 # <a name="start-a-debugging-session-for-a-store-app-in-visual-studio-vb-c-c-and-xaml"></a>Démarrer une session de débogage pour une application du Windows Store dans Visual Studio (VB, C#, C++ et XAML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
  Cette rubrique décrit comment démarrer une session de débogage pour les applications Windows Store écrites en XAML et Visual C++, Visual C# ou Visual Basic. Le débogage d'une application implique la configuration de la session de débogage et le choix de la méthode de démarrage de l'application.
 
 > [!NOTE]
->  Pour les applications écrites en JavaScript et HTML, consultez [démarrer une session de débogage (JavaScript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md).
+> Pour les applications écrites en JavaScript et HTML, consultez [démarrer une session de débogage (JavaScript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md).
 
 ## <a name="BKMK_In_this_topic"></a> Dans cette rubrique
  [La méthode simple pour démarrer le débogage](#BKMK_The_easy_way_to_start_debugging)
@@ -152,7 +152,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
     ![Boîte de dialogue de connexion du débogueur distant sélectionnez](../debugger/media/vsrun-selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")
 
   > [!NOTE]
-  >  La boîte de dialogue **Sélectionner une connexion du débogueur distant** affiche les ordinateurs situés sur le sous-réseau et les ordinateurs locaux qui sont directement connectés à l'ordinateur Visual Studio via un câble Ethernet. Pour spécifier un autre ordinateur, entrez le nom dans la zone **Nom de l'ordinateur** .
+  > La boîte de dialogue **Sélectionner une connexion du débogueur distant** affiche les ordinateurs situés sur le sous-réseau et les ordinateurs locaux qui sont directement connectés à l'ordinateur Visual Studio via un câble Ethernet. Pour spécifier un autre ordinateur, entrez le nom dans la zone **Nom de l'ordinateur** .
 
   ![S’applique uniquement à Windows Phone](../debugger/media/phone-only-content.png "phone_only_content")
 
@@ -210,7 +210,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
  Par défaut, vous devez fournir des informations d'identification pour exécuter le débogueur distant.
 
 > [!IMPORTANT]
->  Vous pouvez choisir d'exécuter le débogueur distant en mode Aucune authentification, mais ce mode est fortement déconseillé. Il n'existe aucune sécurité du réseau lorsque vous lancez l'exécution dans ce mode. Sélectionnez le mode Aucune authentification uniquement si vous êtes sûr que le réseau n'est pas exposé à un problème de sécurité lié à des programmes malveillants ou dangereux.
+> Vous pouvez choisir d'exécuter le débogueur distant en mode Aucune authentification, mais ce mode est fortement déconseillé. Il n'existe aucune sécurité du réseau lorsque vous lancez l'exécution dans ce mode. Sélectionnez le mode Aucune authentification uniquement si vous êtes sûr que le réseau n'est pas exposé à un problème de sécurité lié à des programmes malveillants ou dangereux.
 
  Pour annuler la condition d'authentification :
 
@@ -250,7 +250,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
  Procédez comme suit pour configurer une application installée pour s'exécuter en mode débogage :
 
 > [!NOTE]
->  L'application ne doit pas être en cours d'exécution lorsque vous lancez cette procédure.
+> L'application ne doit pas être en cours d'exécution lorsque vous lancez cette procédure.
 
 1. Dans le menu **Débogage** , choisissez **Déboguer le package d'application installé**
 

@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: acba0174fde52886d3be7ec6288148171fe40cca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c45f3ac7cfec727eb0a27fc79e5fe09237e8f8c3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104978"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437589"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Création d'applications en langues bidirectionnelles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60104978"
 Vous pouvez utiliser Visual Studio pour créer des applications qui affichent correctement les langues qui s’écrivent de droite à gauche, comme l’arabe et l’hébreu. Pour certaines fonctionnalités, il suffit de définir des propriétés. Dans d’autres cas, vous devez implémenter des fonctionnalités dans le code.  
   
 > [!NOTE]
->  Pour entrer et afficher des langues bidirectionnelles, vous devez utiliser une version de Windows configurée avec la langue appropriée. Il peut s’agir d’une version anglaise de Windows sur laquelle est installé le module linguistique correspondant, ou d’une version localisée de Windows.  
+> Pour entrer et afficher des langues bidirectionnelles, vous devez utiliser une version de Windows configurée avec la langue appropriée. Il peut s’agir d’une version anglaise de Windows sur laquelle est installé le module linguistique correspondant, ou d’une version localisée de Windows.  
   
 ## <a name="types-of-application-that-support-bi-directional-languages"></a>Types d’applications qui prennent en charge les langues bidirectionnelles  
   
@@ -66,7 +66,7 @@ Vous pouvez utiliser Visual Studio pour créer des applications qui affichent co
 - Contenu des fichiers. Vous pouvez ouvrir ou enregistrer des fichiers avec encodage Unicode ou avec une page de code sélectionnée.  
   
     > [!NOTE]
-    >  L’éditeur de code est un cas particulier. Pour plus de détails, voir ci-dessous.  
+    > L’éditeur de code est un cas particulier. Pour plus de détails, voir ci-dessous.  
   
 - Éléments de données. L’**Explorateur de serveurs** affiche correctement ces éléments et vous permet de les modifier.  
   
@@ -79,10 +79,10 @@ Vous pouvez utiliser Visual Studio pour créer des applications qui affichent co
 - Code et texte littéral. Dans l’éditeur de code (qui est également l’éditeur de texte), vous pouvez utiliser l’arabe ou l’hébreu pour nommer des classes, des fonctions, des variables, des propriétés, des littéraux de chaîne, des attributs; etc. Toutefois, l’éditeur ne prend pas en charge l’ordre de lecture de droite à gauche et le texte commence toujours à la marge de gauche.  
   
     > [!TIP]
-    >  Il est recommandé de placer des littéraux de chaîne dans les fichiers de ressources au lieu de les coder en dur dans vos programmes. Pour plus d’informations, consultez [Procédure pas à pas : Localisation de Windows Forms](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5).  
+    > Il est recommandé de placer des littéraux de chaîne dans les fichiers de ressources au lieu de les coder en dur dans vos programmes. Pour plus d’informations, consultez [Procédure pas à pas : Localisation de Windows Forms](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5).  
   
     > [!NOTE]
-    >  Vous devez être cohérent dans la façon dont vous faites référence aux objets nommés dans ces langues. Par exemple, si vous utilisez des signes kachidé pour nommer une variable en arabe, vous devrez toujours utiliser des signes kachidé dans vos références à cette variable, sinon une erreur se produira.  
+    > Vous devez être cohérent dans la façon dont vous faites référence aux objets nommés dans ces langues. Par exemple, si vous utilisez des signes kachidé pour nommer une variable en arabe, vous devrez toujours utiliser des signes kachidé dans vos références à cette variable, sinon une erreur se produira.  
   
 - Commentaires de code. Vous pouvez créer des commentaires en arabe ou en hébreu. Vous pouvez également utiliser ces langues dans le générateur de commentaires.  
   

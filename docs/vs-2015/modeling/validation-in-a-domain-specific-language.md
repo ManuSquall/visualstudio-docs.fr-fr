@@ -12,12 +12,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cc3890ee8392088592aef16dcc120637da74e285
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 19ba3b3ee9e68a7329c077567136697b3acbe502
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113454"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437474"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Validation dans un langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ En tant qu'auteur d'un langage spécifique à un domaine (DSL), vous pouvez déf
  La validation est particulièrement importante si vous écrivez des modèles de texte ou autres outils qui traitent les modèles de vos utilisateurs. La validation garantit que les modèles remplissent les conditions préalables assumées par ces outils.  
   
 > [!WARNING]
->  Vous pouvez aussi autoriser que les contraintes de validation soient définies dans des extensions distinctes de votre DSL, en même temps que les gestionnaires de mouvements et les commandes de menu de l'extension. Les utilisateurs peuvent choisir d'installer ces extensions en plus de votre DSL. Pour plus d’informations, consultez [étendre votre DSL à l’aide de MEF](../modeling/extend-your-dsl-by-using-mef.md).  
+> Vous pouvez aussi autoriser que les contraintes de validation soient définies dans des extensions distinctes de votre DSL, en même temps que les gestionnaires de mouvements et les commandes de menu de l'extension. Les utilisateurs peuvent choisir d'installer ces extensions en plus de votre DSL. Pour plus d’informations, consultez [étendre votre DSL à l’aide de MEF](../modeling/extend-your-dsl-by-using-mef.md).  
   
 ## <a name="running-validation"></a>Exécution de la validation  
  Quand un utilisateur modifie un modèle, à savoir, une instance de votre langage spécifique à un domaine, les actions suivantes peuvent exécuter la validation :  
@@ -52,7 +52,7 @@ En tant qu'auteur d'un langage spécifique à un domaine (DSL), vous pouvez déf
  Chaque méthode de validation signale les erreurs éventuelles qu'elle détecte.  
   
 > [!NOTE]
->  Les méthodes de validation signalent les erreurs, mais ne modifient pas le modèle. Si vous voulez régler ou empêcher certaines modifications, consultez [Alternatives à la Validation](#alternatives).  
+> Les méthodes de validation signalent les erreurs, mais ne modifient pas le modèle. Si vous voulez régler ou empêcher certaines modifications, consultez [Alternatives à la Validation](#alternatives).  
   
 #### <a name="to-define-a-validation-constraint"></a>Pour définir une contrainte de validation  
   
@@ -320,7 +320,7 @@ private void TestForCircularLinks(ValidationContext context)
 ```  
   
 > [!NOTE]
->  Vous pouvez préfixer une méthode avec autant d'attributs `[ValidationMethod()]` que vous le souhaitez. Vous pouvez ajouter une méthode aussi bien aux catégories personnalisées qu'aux catégories standard.  
+> Vous pouvez préfixer une méthode avec autant d'attributs `[ValidationMethod()]` que vous le souhaitez. Vous pouvez ajouter une méthode aussi bien aux catégories personnalisées qu'aux catégories standard.  
   
  Pour appeler une validation personnalisée :  
   
@@ -342,7 +342,7 @@ validationController.ValidateCustom
  **Annuler la transaction si la tentative de modification non valide.** Vous pouvez également définir une règle à cet effet, mais dans certains cas, il est possible de remplacer un gestionnaire de propriété **OnValueChanging()**, ou pour remplacer une méthode comme `OnDeleted().` pour restaurer une transaction, utilisez `this.Store.TransactionManager.CurrentTransaction.Rollback().` pour en savoir plus plus d’informations, consultez [gestionnaires de modification de valeur de propriété de domaine](../modeling/domain-property-value-change-handlers.md).  
   
 > [!WARNING]
->  Assurez-vous que l'utilisateur sache que la modification a été ajustée ou annulée. Par exemple, utilisez `System.Windows.Forms.MessageBox.Show("message").`  
+> Assurez-vous que l'utilisateur sache que la modification a été ajustée ou annulée. Par exemple, utilisez `System.Windows.Forms.MessageBox.Show("message").`  
   
 ## <a name="see-also"></a>Voir aussi  
  [Navigation et mise à jour d’un modèle dans le Code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md)   

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf8c3a43cfff286e43d099258913b816491527da
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d435ff9970748e8debe5edfd15514cde4f531b86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065650"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63389710"
 ---
 # <a name="capturing-graphics-information"></a>Capture d'informations graphiques
 Capturez les informations graphiques de votre application Direct3D pour pouvoir diagnostiquer les problèmes de performances et de rendu à l'aide de Visual Studio Graphics Analyzer.
@@ -40,7 +40,7 @@ Capturez les informations graphiques de votre application Direct3D pour pouvoir 
 - Sur le clavier, appuyez sur la touche Impr. écran.
 
   > [!NOTE]
-  >  Quand une application s’exécute sous **Graphics Diagnostics**, la touche Impr. écran sert uniquement à capturer un frame d’informations graphiques. Elle n’effectue pas sa fonction habituelle. Cela reste en vigueur jusqu'à ce que vous ayez arrêté de capturer des informations graphiques (en général en arrêtant le débogage ou en quittant l'application normalement) même si une autre application est dans le focus.
+  > Quand une application s’exécute sous **Graphics Diagnostics**, la touche Impr. écran sert uniquement à capturer un frame d’informations graphiques. Elle n’effectue pas sa fonction habituelle. Cela reste en vigueur jusqu'à ce que vous ayez arrêté de capturer des informations graphiques (en général en arrêtant le débogage ou en quittant l'application normalement) même si une autre application est dans le focus.
 
 - Dans l’interface de capture Visual Studio, choisissez le bouton **Capturer le frame** situé sous la chronologie **Session de diagnostic**. Sinon, choisissez le grand bouton **Capturer le frame** situé sous la zone **Frames par seconde** et à la droite des frames précédemment capturés. Les deux boutons sont mis en évidence dans l'image ci-dessous.
 

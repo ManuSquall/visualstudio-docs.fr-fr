@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8773b9f80299c1a46b6a57506d09f9f4ca32b998
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d56a36693d995687a2dddede3d60ada44c8d32bd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060772"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436201"
 ---
 # <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>Débogage ou désactivation de code de projet dans le concepteur XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,12 +80,12 @@ Dans bien des cas, les exceptions non gérées dans le concepteur XAML peuvent �
      Vous pouvez cliquer à nouveau sur le bouton pour réactiver le code de projet.  
   
     > [!NOTE]
-    >  Pour les projets qui ciblent des processeurs ARM ou X64, Visual Studio ne peut pas exécuter le code de projet dans le concepteur. De ce fait, le bouton **Désactiver le code de projet** est désactivé dans le concepteur.  
+    > Pour les projets qui ciblent des processeurs ARM ou X64, Visual Studio ne peut pas exécuter le code de projet dans le concepteur. De ce fait, le bouton **Désactiver le code de projet** est désactivé dans le concepteur.  
   
 - Les deux options ont pour effet de recharger le concepteur et de désactiver l’ensemble du code du projet associé.  
   
     > [!NOTE]
-    >  La désactivation du code de projet peut entraîner une perte de données au moment de la conception. Une autre solution consiste à déboguer le code s’exécutant dans le concepteur.  
+    > La désactivation du code de projet peut entraîner une perte de données au moment de la conception. Une autre solution consiste à déboguer le code s’exécutant dans le concepteur.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Conception XAML dans Visual Studio et Blend pour Visual Studio](../designers/designing-xaml-in-visual-studio.md)

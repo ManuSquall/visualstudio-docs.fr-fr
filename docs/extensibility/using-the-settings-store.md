@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59f26e4e8972f02740db45760e5b2e876c300bd1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ca57c279ceabd03f48ffaa564d42f7d023b39887
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045399"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434183"
 ---
 # <a name="using-the-settings-store"></a>Utilisation de la banque de paramètres
 Il existe deux types de magasins de paramètres :
@@ -82,6 +82,6 @@ Il existe deux types de magasins de paramètres :
 2. Accédez à HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp_Config\InstalledProducts\\.
 
     > [!NOTE]
-    >  Assurez-vous que vous examinez la clé qui contient \14.0Exp_Config\ et pas \14.0_Config\\. Lorsque vous exécutez l’instance expérimentale de Visual Studio, les paramètres de configuration sont dans la ruche de Registre « 14.0Exp_Config ».
+    > Assurez-vous que vous examinez la clé qui contient \14.0Exp_Config\ et pas \14.0_Config\\. Lorsque vous exécutez l’instance expérimentale de Visual Studio, les paramètres de configuration sont dans la ruche de Registre « 14.0Exp_Config ».
 
 3. Développez le nœud \Installed Products\. Si le message dans les étapes précédentes est **Microsoft Windows Phone Developer Tools installé : True**, alors \Installed Products\ doit contenir un nœud d’outils de développement de Microsoft Windows Phone. Si le message est **Microsoft Windows Phone Developer Tools installé : False**, alors \Installed Products\ ne doit pas contenir un nœud d’outils de développement de Microsoft Windows Phone.

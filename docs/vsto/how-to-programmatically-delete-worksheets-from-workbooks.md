@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1ea87ac85ed187becb2f463dfe95fd3dcb812f28
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9ecc39e72a336c390c85f1caf2c80c6643acbb61
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412541"
 ---
 # <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>Procédure : Supprimer par programmation des feuilles de calcul des classeurs
   Vous pouvez supprimer toute feuille de calcul dans un classeur. Pour supprimer une feuille de calcul, utilisez l’élément hôte de feuille de calcul ou accédez à la feuille de calcul à l’aide de la collection Sheets du classeur.
@@ -29,7 +29,7 @@ ms.locfileid: "60066550"
  Si la feuille de calcul a été ajoutée au moment du design dans une personnalisation au niveau du document, utilisez la méthode <xref:Microsoft.Office.Tools.Excel.Worksheet.Delete%2A> pour supprimer une feuille de calcul spécifiée. Le code ci-dessous supprime une feuille de calcul d'un classeur en référençant directement l'élément hôte de feuille de calcul.
 
 > [!IMPORTANT]
->  Ce code s'exécute uniquement dans les projets que vous créez à l'aide des modèles de projet suivants :
+> Ce code s'exécute uniquement dans les projets que vous créez à l'aide des modèles de projet suivants :
 >
 > - Classeur Excel 2013
 > - Modèle Excel 2013
@@ -55,7 +55,7 @@ ms.locfileid: "60066550"
   Le code suivant supprime une feuille de calcul d’un classeur en référençant la feuille avec le numéro d’index de la **feuilles** collection. Ce code suppose qu'une nouvelle feuille de calcul a été créée par programmation.
 
 > [!IMPORTANT]
->  Si vous souhaitez effectuer cette tâche dans n’importe quel autre type de projet, vous devez ajouter une référence à la **Microsoft.Office.Interop.Excel** assembly et que vous devez utiliser des classes de cet assembly pour ouvrir un classeur et supprimer une feuille de calcul. Pour plus d'informations, voir [Procédure : Cibler les applications Office via les assemblys PIA](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) et [référence d’assembly PIA Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).
+> Si vous souhaitez effectuer cette tâche dans n’importe quel autre type de projet, vous devez ajouter une référence à la **Microsoft.Office.Interop.Excel** assembly et que vous devez utiliser des classes de cet assembly pour ouvrir un classeur et supprimer une feuille de calcul. Pour plus d'informations, voir [Procédure : Cibler les applications Office via les assemblys PIA](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) et [référence d’assembly PIA Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).
 
 ### <a name="to-delete-a-worksheet-by-using-the-sheets-collection-of-the-excel-workbook"></a>Pour supprimer une feuille de calcul à l'aide de la collection Sheets du classeur Excel
 

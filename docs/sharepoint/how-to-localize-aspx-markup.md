@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 25768f44ee51ee94d456d0652ab7575def3a259d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4cd3c17a9e771ad9a1aee7526f24e3a8282f208d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057566"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443103"
 ---
 # <a name="how-to-localize-aspx-markup"></a>Procédure : Localiser le balisage ASPX
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] pages (.aspx) utilisent généralement des valeurs de chaîne codées en dur. Pour localiser ces chaînes, remplacez-les par les expressions qui référencent des ressources localisées.
@@ -36,7 +36,7 @@ ms.locfileid: "60057566"
     2. Pour ajouter un fichier de ressources dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour un élément de projet SharePoint, puis choisissez **ajouter** > **un nouvel élément**. Sous le **Visual Basic** ou **Visual C#** nœud, choisissez le **fichier de ressources** modèle.
 
     > [!NOTE]
-    >  Veillez à ajouter les fichiers de ressources à un élément de projet SharePoint pour activer la propriété Type de déploiement. Cette propriété est requise plus loin dans cette procédure. Si votre solution n’a pas un élément de projet SharePoint, vous pouvez ajouter un projet SharePoint vide et supprimer sa valeur par défaut *Elements.xml* fichier.
+    > Veillez à ajouter les fichiers de ressources à un élément de projet SharePoint pour activer la propriété Type de déploiement. Cette propriété est requise plus loin dans cette procédure. Si votre solution n’a pas un élément de projet SharePoint, vous pouvez ajouter un projet SharePoint vide et supprimer sa valeur par défaut *Elements.xml* fichier.
 
 2. Nommez le fichier de ressources de langue par défaut de votre choix, avec un *.resx* extension, par exemple MyAppResources.resx. Utiliser le même nom de base pour chaque fichier de ressources localisé, mais ajouter la culture [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Par exemple, nom un allemand localisé ressource *MyAppResources.de-de.resx*.
 

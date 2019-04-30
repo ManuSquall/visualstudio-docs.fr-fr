@@ -1,5 +1,5 @@
 ---
-title: 'Procédure pas à pas : Objets manquants en raison Vertex Shader | Microsoft Docs'
+title: 'Procédure pas à pas : Objets manquants en raison de Vertex Shader | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e42b54a0-8092-455c-945b-9ecafb129d93
@@ -8,25 +8,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 14a7ffd3542fd9562488b3b442f1efe19f44a869
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: cc3bd288044c9fea1da648b64cabc87148b8463a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691746"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388598"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Procédure pas à pas : objets manquants en raison de Vertex Shader
 Cette procédure pas à pas montre comment utiliser les outils Graphics Diagnostics dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pour examiner un objet qui est manquant à cause d’une erreur survenue à l’étape du nuanceur de sommets.
 
  Cette procédure pas à pas décrit les tâches suivantes :
 
--   Utilisation de la **liste des événements Graphics** pour rechercher les sources potentielles du problème.
+- Utilisation de la **liste des événements Graphics** pour rechercher les sources potentielles du problème.
 
--   Utilisation de la fenêtre **Étapes de canalisation Graphics** pour vérifier l’effet des appels de l’API Direct3D `DrawIndexed` .
+- Utilisation de la fenêtre **Étapes de canalisation Graphics** pour vérifier l’effet des appels de l’API Direct3D `DrawIndexed` .
 
--   Utilisation du **débogueur HLSL** pour examiner le nuanceur de sommets.
+- Utilisation du **débogueur HLSL** pour examiner le nuanceur de sommets.
 
--   Utilisation de la **pile des appels des événements Graphics** pour trouver plus facilement la source d’une constante HLSL incorrecte.
+- Utilisation de la **pile des appels des événements Graphics** pour trouver plus facilement la source d’une constante HLSL incorrecte.
 
 ## <a name="scenario"></a>Scénario
  Une des causes courantes observées quand un objet est manquant dans une application 3D est le nuanceur de sommets qui transforme les sommets de l’objet de manière incorrecte ou inattendue. C’est le cas, par exemple, si l’objet est réduit à une très petite échelle ou s’il est transformé pour s’afficher derrière la caméra, au lieu de devant.
@@ -61,7 +61,7 @@ Cette procédure pas à pas montre comment utiliser les outils Graphics Diagnost
     Dans la fenêtre **Étapes de canalisation Graphics** , l’étape **Assembleur d’entrée** montre la géométrie de l’objet avant sa transformation tandis que l’étape **Nuanceur de sommets** montre le même objet après sa transformation. Dans ce scénario, vous avez trouvé l’objet manquant quand il s’affiche à l’étape **Assembleur d’entrée** , mais pas à l’étape **Nuanceur de sommets** .
 
    > [!NOTE]
-   >  Si d’autres étapes de géométrie (par exemple, Nuanceur de coque, Nuanceur de domaine ou Nuanceur de géométrie) traitent l’objet, elles peuvent être la cause du problème. En règle générale, le problème est lié à la première étape durant laquelle le résultat n’est pas affiché ou est affiché de manière inattendue.
+   > Si d’autres étapes de géométrie (par exemple, Nuanceur de coque, Nuanceur de domaine ou Nuanceur de géométrie) traitent l’objet, elles peuvent être la cause du problème. En règle générale, le problème est lié à la première étape durant laquelle le résultat n’est pas affiché ou est affiché de manière inattendue.
 
 4. Arrêtez quand vous atteignez l’appel de dessin qui correspond à l’objet manquant. Dans ce scénario, la fenêtre **Étapes de canalisation Graphics** indique que la géométrie a été émise vers le GPU (indiqué par la présence de l’aperçu Assembleur d’entrée), mais elle n’apparaît pas dans la cible de rendu à cause d’une erreur survenue à l’étape du nuanceur de sommets (indiquée par l’aperçu Nuanceur de sommets) :
 
@@ -104,7 +104,7 @@ Cette procédure pas à pas montre comment utiliser les outils Graphics Diagnost
     ![Le code qui définit la mémoire tampon constante de l’objet](media/gfx_diag_demo_missing_object_shader_step_7.png "gfx_diag_demo_missing_object_shader_step_7")
 
    > [!TIP]
-   >  Si vous déboguez simultanément votre application, vous pouvez définir un point d’arrêt à cet emplacement, qui sera atteint lorsque le frame suivant sera affiché. En examinant ensuite les membres de `m_marbleConstantBufferData` , vous constatez que le membre `projection` a une valeur composée uniquement de zéros quand la mémoire tampon constante est remplie.
+   > Si vous déboguez simultanément votre application, vous pouvez définir un point d’arrêt à cet emplacement, qui sera atteint lorsque le frame suivant sera affiché. En examinant ensuite les membres de `m_marbleConstantBufferData` , vous constatez que le membre `projection` a une valeur composée uniquement de zéros quand la mémoire tampon constante est remplie.
 
    Vous avez trouvé l’endroit où la mémoire tampon constante est remplie et découvert que ses valeurs proviennent de la variable `m_marbleConstantBufferData`. Vous devez maintenant trouver l’endroit où le membre `m_marbleConstantBufferData.projection` a une valeur composée de zéros. Vous pouvez utiliser **Rechercher toutes les références** pour rechercher rapidement le code qui modifie la valeur de `m_marbleConstantBufferData.projection`.
 

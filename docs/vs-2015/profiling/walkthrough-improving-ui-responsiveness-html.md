@@ -19,12 +19,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ae2bb442edbeb49de25b44056263607fa4f26111
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7224dc1ddcffc203c930a3ead01c2f541af2122f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071640"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433172"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Procédure pas à pas : Amélioration de la réactivité de l’interface utilisateur (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Cette procédure pas à pas vous guide dans le processus d’identification et d
 1. Dans Visual Studio, créez un projet JavaScript Windows universel. (Sélectionnez **Fichier / Nouveau / Projet**. Dans le volet gauche, sélectionnez **JavaScript** , **Windows**, **Windows 10**, puis **Universel** ou **Windows Phone**.)  
   
 2. > [!IMPORTANT]
-    >  Les résultats du diagnostic présentés dans cette rubrique concernent une application Windows 8.  
+    > Les résultats du diagnostic présentés dans cette rubrique concernent une application Windows 8.  
   
 3. Dans le volet central, sélectionnez un des modèles de projet vide, comme **Application vide**.  
   

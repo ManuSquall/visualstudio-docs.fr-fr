@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fcdd4e2253652246e3d0cb3fcd829c8e5d7786bf
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 2b3138e148ea44371c7bd9b5fb82c583cd00e832
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869913"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436423"
 ---
 # <a name="create-sharepoint-solutions"></a>Créer des solutions SharePoint
   Vous pouvez créer des applications SharePoint dans Visual Studio au lieu de les créer dans SharePoint Designer. Visual Studio privilégie un développement SharePoint rapide en fournissant des fonctionnalités telles que des outils de débogage avancés, IntelliSense, la saisie semi-automatique des instructions et des modèles de projet. Visual Studio tire également parti de langages et outils .NET Framework avancés. Vous pouvez développer des projets SharePoint à l'aide de Visual Basic ou de Visual C#, et vous pouvez développer des applications pour les projets SharePoint à l'aide de JavaScript.
@@ -25,7 +25,7 @@ ms.locfileid: "57869913"
  Pour plus d’informations sur SharePoint 2013 et les compléments SharePoint, consultez [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) et [Création d’applications pour SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
 > [!NOTE]
->  Découvrez comment utiliser le nouveau [modèle de complément SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins) pour étendre l’expérience SharePoint de vos utilisateurs. Ces compléments ont une empreinte très faible par rapport aux solutions SharePoint, et vous pouvez les créer en utilisant presque toutes les technologies de programmation web, comme HTML5, JavaScript, CSS3 et XML.
+> Découvrez comment utiliser le nouveau [modèle de complément SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins) pour étendre l’expérience SharePoint de vos utilisateurs. Ces compléments ont une empreinte très faible par rapport aux solutions SharePoint, et vous pouvez les créer en utilisant presque toutes les technologies de programmation web, comme HTML5, JavaScript, CSS3 et XML.
 
 |||
 |-|-|

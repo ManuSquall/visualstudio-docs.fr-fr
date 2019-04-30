@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5114e7b32bd22b341489e15ac354cc24b3c6d7d7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f795928677f4a232c3ae3cec0d3bab9d9266cb35
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113311"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437460"
 ---
 # <a name="validate-your-uml-model"></a>Valider votre modèle UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Certains des modèles UML que vous pouvez dessiner dans Visual Studio peuvent ê
 - **Commande de validation.** Pour appeler la validation à tout moment, cliquez sur **valider le modèle UML** sur le **Architecture** menu.  
   
   > [!NOTE]
-  >  La commande s'affiche uniquement si les contraintes de validation sont installées.  
+  > La commande s'affiche uniquement si les contraintes de validation sont installées.  
   
 - **Sur l’enregistrement d’un modèle.** Les contraintes de validation peuvent être appliquées quand vous enregistrez le modèle. Ces contraintes visent à s'assurer que vous n'enregistrez pas un modèle non valide d'après l'interprétation de votre projet.  
   

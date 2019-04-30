@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 04867207ee8510a99ec19dc3f32175abedb39bf9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 13a26ec22060985705f6a1b54cf691c50ae07f1a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054636"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435209"
 ---
 # <a name="how-to-search-for-topics"></a>Procédure : Rechercher des rubriques
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Vous pouvez utiliser la fonctionnalité de recherche en texte intégral pour tro
 2. Dans la requête de recherche, spécifiez les opérateurs logiques ou de recherche avancée à appliquer à la recherche, le cas échéant. Pour effectuer la recherche dans toute l’aide disponible, n’utilisez pas d’opérateurs.  
   
     > [!NOTE]
-    >  Dans la boîte de dialogue **Options de la visionneuse**, vous pouvez définir des préférences supplémentaires, par exemple, pour spécifier le nombre maximal de résultats de la recherche à afficher et si le contenu en anglais doit être affiché quand votre langue principale n’est pas l’anglais.  
+    > Dans la boîte de dialogue **Options de la visionneuse**, vous pouvez définir des préférences supplémentaires, par exemple, pour spécifier le nombre maximal de résultats de la recherche à afficher et si le contenu en anglais doit être affiché quand votre langue principale n’est pas l’anglais.  
   
 3. Choisissez la touche Entrée.  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ec546997d5c6ff75a3ccba1e60e9fe7a4b5b7c74
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8085864ebdb73e8233322a2f91a044dec95dc126
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60112596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431052"
 ---
 # <a name="how-to-execute-an-xslt-transformation-from-the-xml-editor"></a>Procédure : Exécuter une transformation XSLT à partir de l’éditeur XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ L'Éditeur XML permet d'associer une feuille de style XSLT à un document XML, d
 3. Cliquez sur le **ShowXSL sortie** bouton sur le **éditeur XML** barre d’outils.  
   
     > [!NOTE]
-    >  Si aucune feuille de style n'est associée au document XML, une boîte de dialogue vous invite à la spécifier.  
+    > Si aucune feuille de style n'est associée au document XML, une boîte de dialogue vous invite à la spécifier.  
     >   
     >  Le résultat de la transformation XSLT est affiché dans une nouvelle fenêtre de document.  
   
@@ -51,7 +51,7 @@ L'Éditeur XML permet d'associer une feuille de style XSLT à un document XML, d
 2. Spécifiez un document XML dans le **entrée** champ du document **propriétés** fenêtre.  
   
     > [!NOTE]
-    >  Le document XML est le document d'entrée utilisé pour la transformation. Si un document n’est pas spécifié lors de la transformation XSLT est démarrée, le **ouvrir le fichier** boîte de dialogue s’affiche et vous pouvez spécifier un document à ce moment-là.  
+    > Le document XML est le document d'entrée utilisé pour la transformation. Si un document n’est pas spécifié lors de la transformation XSLT est démarrée, le **ouvrir le fichier** boîte de dialogue s’affiche et vous pouvez spécifier un document à ce moment-là.  
   
 3. Cliquez sur le **ShowXSLT sortie** bouton sur le **éditeur XML** barre d’outils.  
   

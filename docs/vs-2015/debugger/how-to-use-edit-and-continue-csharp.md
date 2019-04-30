@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3095bccd25548e55f750ee11f26d20fdc9fe603d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 39137d5fe60a3c91c8fd3904e797eb83420a8f5d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042777"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63384024"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>Procédure : Utiliser Modifier & Continuer (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Avec Modifier &amp; Continuer pour C#, vous pouvez modifier votre code en mode a
  Modifier & Continuer est appelé automatiquement lorsque vous apportez des modifications en mode arrêt, puis choisissez une débogueur, l’exécution commande, telles que **continuer**, **étape**, ou **définir l’instruction suivante**, ou évaluez une fonction dans une fenêtre du débogueur.  
   
 > [!NOTE]
->  Modifier & Continuer n’est pas pris en charge lorsque le Compact Framework, le code optimisé, le débogage mixte natif/managé ou code de l’intégration SQL Server common language runtime (CLR). Si vous essayez d’appliquer les modifications du code dans un de ces scénarios, le débogueur affiche une boîte de dialogue expliquant que Modifier & Continuer n’est pas compatible.  
+> Modifier & Continuer n’est pas pris en charge lorsque le Compact Framework, le code optimisé, le débogage mixte natif/managé ou code de l’intégration SQL Server common language runtime (CLR). Si vous essayez d’appliquer les modifications du code dans un de ces scénarios, le débogueur affiche une boîte de dialogue expliquant que Modifier & Continuer n’est pas compatible.  
   
 ### <a name="to-invoke-edit-and-continue-automatically"></a>Pour appeler modifier et continuer automatiquement  
   

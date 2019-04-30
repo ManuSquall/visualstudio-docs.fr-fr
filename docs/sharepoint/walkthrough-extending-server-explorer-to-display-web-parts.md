@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 29fcd40a2fc64a12ed7b29845b0a9f0ea3db5589
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5ef444d78e5a486f9e384ea02d1eb88461e3fce2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040570"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430338"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Procédure pas à pas : Étendre l’Explorateur de serveurs pour afficher des WebParts
   Dans Visual Studio, vous pouvez utiliser la **connexions SharePoint** nœud de **Explorateur de serveurs** pour afficher les composants sur les sites SharePoint. Toutefois, **Explorateur de serveurs** n’affiche pas certains composants par défaut. Dans cette procédure pas à pas, vous allez étendre **Explorateur de serveurs** afin qu’il affiche la galerie de composants WebPart sur chacune connectée site SharePoint.
@@ -40,7 +40,7 @@ ms.locfileid: "60040570"
 - Débogage et test de l’extension.
 
 > [!NOTE]
->  Pour une autre version de cette procédure pas à pas qui utilise le modèle objet client pour SharePoint au lieu de son modèle d’objet serveur, consultez [procédure pas à pas : Appeler le modèle d’objet client SharePoint dans une extension de l’Explorateur de serveurs](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).
+> Pour une autre version de cette procédure pas à pas qui utilise le modèle objet client pour SharePoint au lieu de son modèle d’objet serveur, consultez [procédure pas à pas : Appeler le modèle d’objet client SharePoint dans une extension de l’Explorateur de serveurs](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).
 
 ## <a name="prerequisites"></a>Prérequis
  Vous avez besoin des composants suivants sur l’ordinateur de développement pour effectuer cette procédure pas à pas :
@@ -75,7 +75,7 @@ ms.locfileid: "60040570"
 3. Dans le **nouveau projet** boîte de dialogue, développez le **Visual C#** ou **Visual Basic** nœuds, puis choisissez le **extensibilité** nœud.
 
     > [!NOTE]
-    >  Le **extensibilité** nœud est disponible uniquement si vous installez le SDK Visual Studio. Pour plus d’informations, consultez la section conditions préalables plus haut dans cette rubrique.
+    > Le **extensibilité** nœud est disponible uniquement si vous installez le SDK Visual Studio. Pour plus d’informations, consultez la section conditions préalables plus haut dans cette rubrique.
 
 4. En haut de la boîte de dialogue, choisissez **.NET Framework 4.5** dans la liste des versions du .NET Framework.
 
@@ -211,7 +211,7 @@ ms.locfileid: "60040570"
 1. Dans le projet WebPartNodeExtension, ouvrez le fichier de code SiteNodeExtension et puis collez-y le code suivant.
 
     > [!NOTE]
-    >  Après avoir ajouté ce code, le projet aura des erreurs de compilation, mais disparaissent lorsque vous ajoutez code dans les étapes ultérieures.
+    > Après avoir ajouté ce code, le projet aura des erreurs de compilation, mais disparaissent lorsque vous ajoutez code dans les étapes ultérieures.
 
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/sitenodeextension.cs#1)]
      [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]
@@ -266,7 +266,7 @@ ms.locfileid: "60040570"
 1. Dans la barre de menus, choisissez **Générer**  >  **Générer la solution**.
 
     > [!WARNING]
-    >  À ce stade, le projet WebPartNode peut-être une erreur de build, car le fichier de manifeste VSIX n’a pas une valeur pour l’auteur. Cette erreur disparaîtra lorsque vous ajoutez une valeur dans les étapes ultérieures.
+    > À ce stade, le projet WebPartNode peut-être une erreur de build, car le fichier de manifeste VSIX n’a pas une valeur pour l’auteur. Cette erreur disparaîtra lorsque vous ajoutez une valeur dans les étapes ultérieures.
 
 ## <a name="create-a-vsix-package-to-deploy-the-extension"></a>Créer un package VSIX pour déployer l’extension
  Pour déployer l’extension, utilisez le projet VSIX dans votre solution pour créer un package VSIX. Tout d’abord, configurez le package VSIX en modifiant le fichier source.extension.vsixmanifest dans le projet VSIX. Ensuite, créez le package VSIX en générant la solution.
@@ -290,7 +290,7 @@ ms.locfileid: "60040570"
 6. Dans le **Type** , choisissez **Microsoft.VisualStudio.MefComponent**.
 
     > [!NOTE]
-    >  Cette valeur correspond à la `MefComponent` élément dans le fichier extension.vsixmanifest. Cet élément spécifie le nom d’un assembly d’extension dans le package VSIX. Pour plus d’informations, consultez [MEFComponent, élément (schéma VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Cette valeur correspond à la `MefComponent` élément dans le fichier extension.vsixmanifest. Cet élément spécifie le nom d’un assembly d’extension dans le package VSIX. Pour plus d’informations, consultez [MEFComponent, élément (schéma VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 7. Dans le **Source** , choisissez **un projet dans la solution actuelle**.
 
@@ -303,7 +303,7 @@ ms.locfileid: "60040570"
 10. Dans le **Type** , entrez **SharePoint.Commands.v4**.
 
     > [!NOTE]
-    >  Cet élément spécifie une extension personnalisée que vous souhaitez inclure dans l’extension de Visual Studio. Pour plus d’informations, consultez [Asset, élément (schéma VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    > Cet élément spécifie une extension personnalisée que vous souhaitez inclure dans l’extension de Visual Studio. Pour plus d’informations, consultez [Asset, élément (schéma VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
 
 11. Dans le **Source** , choisissez le **un projet dans la solution actuelle** élément de liste.
 

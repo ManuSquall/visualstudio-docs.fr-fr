@@ -12,12 +12,12 @@ ms.assetid: 8b12e223-aae3-4c23-813d-ede1125f5f69
 caps.latest.revision: 55
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8eec2db11d97cec957e16f29838564a729370eeb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e92fa99a266dc1d1b537387f3dae848a6ecb285d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950189"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442280"
 ---
 # <a name="walkthrough-creating-a-basic-isolated-shell-application"></a>Procédure pas à pas : Création d’une Application Shell isolée de base
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,25 +30,25 @@ Cette procédure pas à pas montre comment créer une solution de shell isolé, 
 ## <a name="creating-an-isolated-shell-solution"></a>Création d’une Solution de Shell isolé  
  Cette section montre comment utiliser le modèle de projet Visual Studio Shell isolé pour créer une solution de shell isolé. La solution contient les projets suivants :  
   
--   Le *SolutionName*. Projet AboutBoxPackage, ce qui vous permet de personnaliser l’apparence de l’aide/à propos de la zone.  
+- Le *SolutionName*. Projet AboutBoxPackage, ce qui vous permet de personnaliser l’apparence de l’aide/à propos de la zone.  
   
--   Le projet ShellExtensionsVSIX, qui contient le fichier source.extension.vsixmanifest qui définit les différents composants de l’application de shell isolé.  
+- Le projet ShellExtensionsVSIX, qui contient le fichier source.extension.vsixmanifest qui définit les différents composants de l’application de shell isolé.  
   
--   Le *SolutionName* projet, ce qui génère le fichier exécutable qui appelle l’application de shell isolé. Ce projet contient le dossier de personnalisation du Shell, ce qui permet de vous permettent de personnaliser l’apparence et le comportement de l’application de shell isolé.  
+- Le *SolutionName* projet, ce qui génère le fichier exécutable qui appelle l’application de shell isolé. Ce projet contient le dossier de personnalisation du Shell, ce qui permet de vous permettent de personnaliser l’apparence et le comportement de l’application de shell isolé.  
   
--   Le *SolutionName* projet d’interface utilisateur, ce qui génère un assembly satellite qui définit les commandes de menu active et les chaînes localisables.  
+- Le *SolutionName* projet d’interface utilisateur, ce qui génère un assembly satellite qui définit les commandes de menu active et les chaînes localisables.  
   
 #### <a name="to-create-a-basic-isolated-shell-solution"></a>Pour créer une solution de base de shell isolé  
   
-1.  Ouvrez Visual Studio et créez un projet.  
+1. Ouvrez Visual Studio et créez un projet.  
   
-2.  Dans le **nouveau projet** fenêtre, développez **autres Types de projets** , puis **extensibilité**. Sélectionnez le **Visual Studio Shell isolé** modèle de projet.  
+2. Dans le **nouveau projet** fenêtre, développez **autres Types de projets** , puis **extensibilité**. Sélectionnez le **Visual Studio Shell isolé** modèle de projet.  
   
-3.  Nommez le projet `MyVSShellStub` et spécifiez un emplacement. Assurez-vous que l’option **créer le répertoire pour la solution** est activée, puis cliquez sur **OK**.  
+3. Nommez le projet `MyVSShellStub` et spécifiez un emplacement. Assurez-vous que l’option **créer le répertoire pour la solution** est activée, puis cliquez sur **OK**.  
   
      La nouvelle solution apparaît dans **l’Explorateur de solutions**.  
   
-4.  Générez la solution et démarrez le débogage de l’application de shell isolé.  
+4. Générez la solution et démarrez le débogage de l’application de shell isolé.  
   
      Le shell isolé Visual Studio s’affiche. Lit la barre de titre **MyVSShellStub**. L’icône de barre de titre est généré à partir de \MyVSShellStub\Resource Files\ApplicationIcon.ico.  
   
@@ -57,13 +57,13 @@ Cette procédure pas à pas montre comment créer une solution de shell isolé, 
   
 #### <a name="to-customize-the-application-name-and-icon"></a>Pour personnaliser l’icône et le nom de l’application  
   
-1.  Dans le projet MyVSShellStub, ouvrez \Shell Customization\MyVSShellStub.Application.pkgdef.  
+1. Dans le projet MyVSShellStub, ouvrez \Shell Customization\MyVSShellStub.Application.pkgdef.  
   
-2.  Modifier le `AppName` valeur de l’élément à **« AppName » = « éditeur de musique Fabrikam »**  
+2. Modifier le `AppName` valeur de l’élément à **« AppName » = « éditeur de musique Fabrikam »**  
   
-3.  Pour modifier l’icône d’application, copiez une autre icône dans le répertoire de \MyVSShellStub\MyVSShellStub\MyVSShellStub\. Renommez le fichier ApplicationIcon.ico existant en ApplicationIcon1.ico. Renommez le nouveau fichier à ApplicationIcon.ico.  
+3. Pour modifier l’icône d’application, copiez une autre icône dans le répertoire de \MyVSShellStub\MyVSShellStub\MyVSShellStub\. Renommez le fichier ApplicationIcon.ico existant en ApplicationIcon1.ico. Renommez le nouveau fichier à ApplicationIcon.ico.  
   
-4.  Générez la solution et commencez le débogage. Le shell isolé IDE s’affiche. La barre de titre a votre nouvelle icône à côté de l’option **Fabrikam musique éditeur**.  
+4. Générez la solution et commencez le débogage. Le shell isolé IDE s’affiche. La barre de titre a votre nouvelle icône à côté de l’option **Fabrikam musique éditeur**.  
   
 ## <a name="customizing-the-default-web-browser-home-page"></a>Personnalisation de la Page d’accueil du navigateur Web par défaut  
  Cette section montre comment modifier la page d’accueil par défaut de la **navigateur Web** fenêtre en modifiant le fichier de définition de package.  
@@ -87,46 +87,46 @@ Cette procédure pas à pas montre comment créer une solution de shell isolé, 
   
 #### <a name="to-remove-the-print-command"></a>Pour supprimer la commande d’impression  
   
-1.  Vérifiez que le **impression** commande apparaît dans le **fichier** menu dans l’application de shell isolé.  
+1. Vérifiez que le **impression** commande apparaît dans le **fichier** menu dans l’application de shell isolé.  
   
-2.  Dans le projet MyVSShellStubUI, ouvrez \Resource Files\MyVSShellStubUI.vsct pour la modification.  
+2. Dans le projet MyVSShellStubUI, ouvrez \Resource Files\MyVSShellStubUI.vsct pour la modification.  
   
-3.  Supprimez les commentaires de cette ligne :  
+3. Supprimez les commentaires de cette ligne :  
   
     ```  
     <!-- <Define name="No_PrintChildrenCommand"/> -->  
     ```  
   
-4.  Cette opération supprime la commande d’impression.  
+4. Cette opération supprime la commande d’impression.  
   
-5.  Démarrez le débogage de l’application de shell isolé. Vérifiez que le **fichier / impression** commande a disparu.  
+5. Démarrez le débogage de l’application de shell isolé. Vérifiez que le **fichier / impression** commande a disparu.  
   
 ## <a name="removing-features-from-the-isolated-shell"></a>Suppression de fonctionnalités à partir du Shell isolé  
  Vous pouvez supprimer certains des packages qui sont chargés avec Visual Studio en modifiant le fichier .pkgundef si vous ne souhaitez pas ces fonctionnalités dans votre application de shell isolé personnalisé. Vous spécifiez le package dans une des sous-clés de la clé de Registre \Packages $RootKey$.  
   
 > [!NOTE]
->  Pour rechercher les fonctionnalités de GUID de Visual Studio, consultez [Package GUID de fonctionnalités de Visual Studio](../extensibility/package-guids-of-visual-studio-features.md).  
+> Pour rechercher les fonctionnalités de GUID de Visual Studio, consultez [Package GUID de fonctionnalités de Visual Studio](../extensibility/package-guids-of-visual-studio-features.md).  
   
  La procédure suivante montre comment supprimer le code XML de l’éditeur à partir du shell isolé.  
   
 #### <a name="to-remove-the-xml-editor"></a>Pour supprimer l’éditeur XML  
   
-1.  Ouvrez le fichier MyVSShellStub.pkgundef dans le dossier de personnalisation du Shell du projet MyVSShellStub.  
+1. Ouvrez le fichier MyVSShellStub.pkgundef dans le dossier de personnalisation du Shell du projet MyVSShellStub.  
   
-2.  Supprimez les commentaires de la ligne suivante :  
+2. Supprimez les commentaires de la ligne suivante :  
   
      [$RootKey$\Packages\\{87569308-4813-40a0-9cd0-d7a30838ca3f}]  
   
-3.  Régénérez la solution et démarrez le débogage du shell isolé. Ouvrez un fichier XML, par exemple, \MyVSShellStub\MyVSShellStub\MyVSShellStubUI\MyVSShellStubUI.vsct. Vérifiez que les mots clés XML dans le fichier ne sont pas colorisées et qu’une pression sur « < » sur une ligne n’a pas à rendre des info-bulles XML.  
+3. Régénérez la solution et démarrez le débogage du shell isolé. Ouvrez un fichier XML, par exemple, \MyVSShellStub\MyVSShellStub\MyVSShellStubUI\MyVSShellStubUI.vsct. Vérifiez que les mots clés XML dans le fichier ne sont pas colorisées et qu’une pression sur « < » sur une ligne n’a pas à rendre des info-bulles XML.  
   
 ## <a name="customizing-the-helpabout-box"></a>Personnalisation de l’aide/à propos de la zone  
  Vous pouvez personnaliser l’aide/à propos de la zone, qui est créé en tant que partie du modèle de projet shell isolé.  
   
 #### <a name="to-customize-the-company-name"></a>Pour personnaliser le nom de l’entreprise  
   
-1.  Le nom de la société, les informations de copyright, version du produit et description du produit sont trouvent dans le projet MyVSShellStub.AboutBoxPackage, dans le fichier \Properties\AssemblyInfo.cs. Ouvrez ce fichier.  
+1. Le nom de la société, les informations de copyright, version du produit et description du produit sont trouvent dans le projet MyVSShellStub.AboutBoxPackage, dans le fichier \Properties\AssemblyInfo.cs. Ouvrez ce fichier.  
   
-2.  Modification la `AssemblyCompany` valeur **Fabrikam**, le `AssemblyProduct` et `AssemblyTitle` valeurs **Fabrikam musique éditeur**et le `AssemblyCopyright` valeur **Copyright © Fabrikam 2015**:  
+2. Modification la `AssemblyCompany` valeur **Fabrikam**, le `AssemblyProduct` et `AssemblyTitle` valeurs **Fabrikam musique éditeur**et le `AssemblyCopyright` valeur **Copyright © Fabrikam 2015**:  
   
     ```  
     [assembly: AssemblyTitle("Fabrikam Music Editor")]  
@@ -139,15 +139,15 @@ Cette procédure pas à pas montre comment créer une solution de shell isolé, 
     [assembly: AssemblyCopyright("Copyright © Fabrikam 2015”)]  
     ```  
   
-3.  Pour ajouter une description du produit, modifiez le `AssemblyDescription` valeur **la description de l’éditeur de musique de Fabrikam.**:  
+3. Pour ajouter une description du produit, modifiez le `AssemblyDescription` valeur **la description de l’éditeur de musique de Fabrikam.**:  
   
     ```  
     [assembly: AssemblyDescription("The description of Fabrikam Music editor.”)]  
     ```  
   
-4.  Démarrer le débogage et dans l’application de shell isolé, ouvrez le **vous aider à propos** boîte. Vous devez voir les chaînes modifiées. Le titre de l’aide/à propos de la zone est identique à la `AssemblyTitle` valeur dans AssemblyInfo.cs.  
+4. Démarrer le débogage et dans l’application de shell isolé, ouvrez le **vous aider à propos** boîte. Vous devez voir les chaînes modifiées. Le titre de l’aide/à propos de la zone est identique à la `AssemblyTitle` valeur dans AssemblyInfo.cs.  
   
-5.  Les propriétés de la **aide/à propos** zone elle-même se trouvent dans le fichier MyVSShellStub.AboutBoxPackage\AboutBox.xaml. Pour modifier la largeur de l’aide/à propos de la zone, accédez à la `AboutDialogStyle` bloquer et définir le `Width` propriété à 200 :  
+5. Les propriétés de la **aide/à propos** zone elle-même se trouvent dans le fichier MyVSShellStub.AboutBoxPackage\AboutBox.xaml. Pour modifier la largeur de l’aide/à propos de la zone, accédez à la `AboutDialogStyle` bloquer et définir le `Width` propriété à 200 :  
   
     ```  
     <Style x:Key="AboutDialogStyle" TargetType="Window">  
@@ -160,7 +160,7 @@ Cette procédure pas à pas montre comment créer une solution de shell isolé, 
     </Style>  
     ```  
   
-6.  Régénérez la solution et démarrez le débogage du shell isolé. L’aide/à propos de la zone doit être environ carré.  
+6. Régénérez la solution et démarrez le débogage du shell isolé. L’aide/à propos de la zone doit être environ carré.  
   
 ## <a name="before-you-deploy-the-isolated-shell-application"></a>Avant de déployer l’Application de Shell isolé  
  Votre application de shell isolé peut être installée sur n’importe quel ordinateur sur lequel le Package redistribuable Visual Studio Shell (isolé). Pour plus d’informations sur le package redistribuable, consultez le [téléchargements de Visual Studio Extensibility](http://go.microsoft.com/fwlink/?LinkID=119298) site Web.  
@@ -185,50 +185,50 @@ Cette procédure pas à pas montre comment créer une solution de shell isolé, 
     Si InstallShield Limited Edition n’est pas déjà installé, la page de téléchargement d’InstallShield s’affiche. Suivez les instructions pour télécharger et installer le produit, le choix de la version de InstallShield qui est compatible avec votre version de Visual Studio. Vous devez décider s’il faut inscrire votre installation de InstallShield ou l’utiliser en tant qu’évaluation. Vous devez redémarrer Visual Studio après avoir terminé l’installation.  
   
    > [!IMPORTANT]
-   >  Avant de créer un projet InstallShield, vous devez démarrer Visual Studio en tant qu’administrateur. Si vous ne le faites pas, vous obtiendrez une erreur lorsque vous générez le projet.  
+   > Avant de créer un projet InstallShield, vous devez démarrer Visual Studio en tant qu’administrateur. Si vous ne le faites pas, vous obtiendrez une erreur lorsque vous générez le projet.  
   
    Les étapes suivantes montrent comment configurer le projet d’installation.  
   
 > [!IMPORTANT]
->  Assurez-vous que vous avez créé au moins une fois la configuration release de votre projet de shell isolé avant de configurer le projet d’installation.  
+> Assurez-vous que vous avez créé au moins une fois la configuration release de votre projet de shell isolé avant de configurer le projet d’installation.  
   
 #### <a name="to-configure-the-setup-project"></a>Pour configurer le projet d’installation  
   
-1.  Dans le **l’Explorateur de solutions**, sous le **MySetup** de projet, choisissez **Assistant projet**. Sur la ligne inférieure de la **Assistant projet** fenêtre, choisissez **informations sur l’Application**. Entrez **Fabrikam** en tant que nom de votre société et **Fabrikam musique éditeur** comme nom de votre application. Choisissez la flèche suivant en bas à droite de la **Assistant projet**.  
+1. Dans le **l’Explorateur de solutions**, sous le **MySetup** de projet, choisissez **Assistant projet**. Sur la ligne inférieure de la **Assistant projet** fenêtre, choisissez **informations sur l’Application**. Entrez **Fabrikam** en tant que nom de votre société et **Fabrikam musique éditeur** comme nom de votre application. Choisissez la flèche suivant en bas à droite de la **Assistant projet**.  
   
-2.  Sélectionnez **Oui** sous **votre application nécessite-t-elle un logiciel à installer sur l’ordinateur ?** , puis sélectionnez **Package complet de Microsoft .NET Framework 4.5**.  
+2. Sélectionnez **Oui** sous **votre application nécessite-t-elle un logiciel à installer sur l’ordinateur ?** , puis sélectionnez **Package complet de Microsoft .NET Framework 4.5**.  
   
-3.  Choisissez le **fichiers d’Application** bouton en bas de la fenêtre et vous assurer que le **Fabrikam musique éditeur** dossier est sélectionné.  
+3. Choisissez le **fichiers d’Application** bouton en bas de la fenêtre et vous assurer que le **Fabrikam musique éditeur** dossier est sélectionné.  
   
-4.  Choisissez le **ajouter des fichiers** bouton. Dans le **ajouter des fichiers** boîte de dialogue zone, ajoutez les fichiers suivants à partir de la **MyVSShellStub\Release** dossier :  
+4. Choisissez le **ajouter des fichiers** bouton. Dans le **ajouter des fichiers** boîte de dialogue zone, ajoutez les fichiers suivants à partir de la **MyVSShellStub\Release** dossier :  
   
-    1.  MyVSShellStub.exe.config  
+    1. MyVSShellStub.exe.config  
   
-    2.  DebuggerProxy.dll  
+    2. DebuggerProxy.dll  
   
-    3.  DebuggerProxy.dll.manifest  
+    3. DebuggerProxy.dll.manifest  
   
-    4.  MyVSShellStub.pkgdef  
+    4. MyVSShellStub.pkgdef  
   
-    5.  MyVSShellStub.pkgundef  
+    5. MyVSShellStub.pkgundef  
   
-    6.  MyVSShellStub.winprf  
+    6. MyVSShellStub.winprf  
   
-    7.  Splash.bmp  
+    7. Splash.bmp  
   
-5.  Cliquez sur le **ajouter les sorties du projet** bouton et ajoutez **MyVSShellStub/primaire sortie**. Cliquez sur **OK**.  
+5. Cliquez sur le **ajouter les sorties du projet** bouton et ajoutez **MyVSShellStub/primaire sortie**. Cliquez sur **OK**.  
   
-6.  Dans le volet gauche, sous **ordinateur de Destination**, avec le bouton droit le **Fabrikam musique éditeur [INSTALLDIR]** nœud et ajouter un **nouveau dossier** nommé **Extensions** .  
+6. Dans le volet gauche, sous **ordinateur de Destination**, avec le bouton droit le **Fabrikam musique éditeur [INSTALLDIR]** nœud et ajouter un **nouveau dossier** nommé **Extensions** .  
   
-7.  Cliquez sur le **Extensions** nœud dans le volet gauche et ajoutez un nouveau dossier nommé **Application**.  
+7. Cliquez sur le **Extensions** nœud dans le volet gauche et ajoutez un nouveau dossier nommé **Application**.  
   
-8.  Sélectionnez le **Application** dossier puis cliquez sur le **ajouter les sorties du projet** , puis sélectionnez la sortie principale du projet MyVSShellStub.AboutBoxPackage.  
+8. Sélectionnez le **Application** dossier puis cliquez sur le **ajouter les sorties du projet** , puis sélectionnez la sortie principale du projet MyVSShellStub.AboutBoxPackage.  
   
 9. Cliquez sur le **ajouter des fichiers** bouton et à partir du dossier \MyVSShellStub\Release\Extensions\Application\ ajouter les fichiers suivants :  
   
-    -   MyVSShellStub.AboutBoxPackage.pkgdef  
+    - MyVSShellStub.AboutBoxPackage.pkgdef  
   
-    -   MyVSShellStub.Application.pkgdef  
+    - MyVSShellStub.Application.pkgdef  
   
 10. Avec le bouton droit le **Fabrikam musique éditeur [INSTALLDIR]** nœud dans le volet gauche et ajoutez un nouveau dossier nommé **1033**.  
   

@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8572deb32ea5fab2ce8ad831deeaba783496cbc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3a1e9a3abd6b16ae0365279a6eb9cb067bfeb225
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104328"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430855"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60104328"
 Vous pouvez installer et afficher le contenu de divers produits et technologies sur votre ordinateur local à l’aide de Microsoft Help Viewer.  
   
 > [!WARNING]
->  Quand vous installez Visual Studio, vous obtenez la visionneuse d'aide. Pour commencer à lire les rubriques d'aide dans la visionneuse d’aide plutôt que sur le site de téléchargement MSDN, accédez au menu **Aide** de Visual Studio, sélectionnez **Définir les préférences pour l’aide**, puis **Lancer dans la visionneuse d’aide**. Les rubriques d’aide hors connexion pour une version donnée de Visual Studio sont disponibles uniquement après la version release finale de cette version.  
+> Quand vous installez Visual Studio, vous obtenez la visionneuse d'aide. Pour commencer à lire les rubriques d'aide dans la visionneuse d’aide plutôt que sur le site de téléchargement MSDN, accédez au menu **Aide** de Visual Studio, sélectionnez **Définir les préférences pour l’aide**, puis **Lancer dans la visionneuse d’aide**. Les rubriques d’aide hors connexion pour une version donnée de Visual Studio sont disponibles uniquement après la version release finale de cette version.  
   
  Vous pouvez effectuer les opérations suivantes :  
   

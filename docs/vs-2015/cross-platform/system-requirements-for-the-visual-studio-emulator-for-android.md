@@ -8,12 +8,12 @@ ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: fc09d8570eed04c559e1b94f65319739bbc4ee13
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b1b77dc7e01ae791379dda52b305ebcdbbf68447
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103289"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433914"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>System requirements for the Visual Studio Emulator for Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ L’émulateur Visual Studio pour Android s’exécute en tant que machine virtu
  Le programme d’installation tente de satisfaire à ces conditions préalables de manière silencieuse quand vous installez l’émulateur. Une fois qu’il a configuré correctement les composants requis, l’émulateur fonctionne simplement comme prévu. Dans le cas contraire, vous devrez activer ces composants requis manuellement. Si vous devez configurer manuellement les composants requis, les outils et les étapes sont identiques à ceux décrits [ici](https://msdn.microsoft.com/library/windows/apps/jj863509\(v=vs.105\).aspx) pour l’émulateur Windows Phone.
 
 > [!IMPORTANT]
->  Le programme d’installation de l’émulateur vérifie les conditions préalables pour l’exécution de l’émulateur Visual Studio pour Android. Il affiche des avertissements si les composants requis ne sont pas présents, mais il ne les exige pas.
+> Le programme d’installation de l’émulateur vérifie les conditions préalables pour l’exécution de l’émulateur Visual Studio pour Android. Il affiche des avertissements si les composants requis ne sont pas présents, mais il ne les exige pas.
 
  Cette rubrique contient les sections suivantes.
 

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7069da816d8f693fc38856d1218f5f9f6284dd4c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ddeba1539cf68d53f4b9f931d2bcd18a159028fd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063606"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438695"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>Procédure pas à pas : Lier des données aux contrôles dans un volet actions Word
   Cette procédure pas à pas illustre la liaison de données aux contrôles dans un volet actions dans Word. Les contrôles illustrent une relation Maître/Détail entre des tables dans une base de données SQL Server.
@@ -38,7 +38,7 @@ ms.locfileid: "60063606"
 - Afficher le volet actions lorsque l’application s’ouvre.
 
 > [!NOTE]
->  Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Prérequis
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :
@@ -78,7 +78,7 @@ ms.locfileid: "60063606"
 1. Si le **des Sources de données** fenêtre n’est pas visible, affichez-la en, sur la barre de menus, choisissez **vue** > **Windows autres**  >   **Sources de données**.
 
    > [!NOTE]
-   >  Si **afficher les Sources de données** n’est pas disponible, cliquez sur le document Word, puis vérifiez à nouveau.
+   > Si **afficher les Sources de données** n’est pas disponible, cliquez sur le document Word, puis vérifiez à nouveau.
 
 2. Cliquez sur **ajouter une nouvelle Source de données** pour démarrer le **Assistant de Configuration de Source de données**.
 
@@ -111,7 +111,7 @@ ms.locfileid: "60063606"
 4. Sélectionnez `SuppliersBindingNavigator` dans le **composant** barre d’état, puis appuyez sur **supprimer**. Vous n’allez pas utiliser le `SuppliersBindingNavigator` dans cette procédure pas à pas.
 
     > [!NOTE]
-    >  Suppression de la `SuppliersBindingNavigator` ne supprime pas tout le code qui a été généré pour lui. Vous pouvez supprimer ce code.
+    > Suppression de la `SuppliersBindingNavigator` ne supprime pas tout le code qui a été généré pour lui. Vous pouvez supprimer ce code.
 
 5. Déplacez la zone de liste déroulante afin qu’il soit sous l’étiquette et de modifier le **taille** propriété **171, 21**.
 

@@ -25,12 +25,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a302feda3e6254667df797cdbef5d199886a4c0c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bc537e76e87e519019cfbb1c3f612eb0a4bd6181
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068325"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433359"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>Créer des projets et des diagrammes de modélisation UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Les modèles UML vous aident à comprendre, à expliquer et à concevoir les sys
  Les diagrammes de modélisation UML et les diagrammes de couche ne peuvent exister qu'à l'intérieur d'un projet de modélisation. Chaque projet de modélisation contient un modèle UML partagé et plusieurs diagrammes UML. Chaque diagramme est une vue partielle du modèle. Le modèle UML contient tous les éléments des diagrammes UML et peut être affiché à l'aide de l'Explorateur de modèles UML. Pour plus d’informations sur les modèles et leur relation aux diagrammes, consultez [modèles et diagrammes UML modifier](../modeling/edit-uml-models-and-diagrams.md). Pour plus d’informations sur les projets de modélisation sous contrôle de version, consultez [gérer des modèles et des diagrammes sous contrôle de version](../modeling/manage-models-and-diagrams-under-version-control.md) et [structurer votre solution de modélisation](../modeling/structure-your-modeling-solution.md)  
   
 > [!NOTE]
->  Il existe un autre type de diagramme, le diagramme de classes .NET, qui permet de visualiser le code du programme. Pour plus d’informations, consultez [conception et affichage des Classes et des Types](http://go.microsoft.com/fwlink/?LinkId=142231).  
+> Il existe un autre type de diagramme, le diagramme de classes .NET, qui permet de visualiser le code du programme. Pour plus d’informations, consultez [conception et affichage des Classes et des Types](http://go.microsoft.com/fwlink/?LinkId=142231).  
   
 ## <a name="CreatingModelingDiagrams"></a> Créer un diagramme dans un projet de modélisation  
  Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
@@ -76,7 +76,7 @@ Les modèles UML vous aident à comprendre, à expliquer et à concevoir les sys
 1. Dans **l’Explorateur de solutions**, cliquez sur la modélisation nœud du projet.  
   
     > [!NOTE]
-    >  Le projet de modélisation contient un dossier de définition de modèle nommé **ModelDefinition**.  
+    > Le projet de modélisation contient un dossier de définition de modèle nommé **ModelDefinition**.  
   
 2. Dans le menu **Projet** , cliquez sur **Ajouter un nouvel élément**.  
   
@@ -87,7 +87,7 @@ Les modèles UML vous aident à comprendre, à expliquer et à concevoir les sys
      Le diagramme de modélisation s'ouvre et s'affiche dans le projet de modélisation.  
   
     > [!CAUTION]
-    >  N'ajoutez pas de fichiers de diagramme existants à d'autres projets de modélisation ou à d'autres emplacements de la solution. Il n'est pas possible non plus de les y copier ou de les y faire glisser. De telles actions entraînent la disparition des éléments des diagrammes copiés ou la présence d'erreurs lors de l'ouverture des diagrammes. Vous devez ouvrir le fichier de diagramme à partir du projet de modélisation dans lequel il a été créé. La raison en est qu'un diagramme UML est une vue du modèle appartenant à son projet de modélisation. Pour copier un fichier de diagramme, créez un diagramme et copiez les éléments du diagramme source vers le nouveau diagramme. Pour plus d’informations, consultez [résolution des problèmes des projets de modélisation et des diagrammes](#TroubleshootingModelingProjects).  
+    > N'ajoutez pas de fichiers de diagramme existants à d'autres projets de modélisation ou à d'autres emplacements de la solution. Il n'est pas possible non plus de les y copier ou de les y faire glisser. De telles actions entraînent la disparition des éléments des diagrammes copiés ou la présence d'erreurs lors de l'ouverture des diagrammes. Vous devez ouvrir le fichier de diagramme à partir du projet de modélisation dans lequel il a été créé. La raison en est qu'un diagramme UML est une vue du modèle appartenant à son projet de modélisation. Pour copier un fichier de diagramme, créez un diagramme et copiez les éléments du diagramme source vers le nouveau diagramme. Pour plus d’informations, consultez [résolution des problèmes des projets de modélisation et des diagrammes](#TroubleshootingModelingProjects).  
   
 #### <a name="to-create-a-blank-modeling-project"></a>Pour créer un projet de modélisation vide  
   
@@ -111,7 +111,7 @@ Les modèles UML vous aident à comprendre, à expliquer et à concevoir les sys
      Le diagramme est supprimé du projet et du système de fichiers. Les éléments indiqués sur le diagramme ne sont pas supprimés à partir de **Explorateur de modèles UML**.  
   
     > [!NOTE]
-    >  Chaque diagramme possède deux fichiers, dont un fichier auxiliaire. Par exemple, si vous avez un diagramme de composant intitulé `CD1`, vous devez supprimer le fichier nommé `CD1.componentdiagram`. Son fichier auxiliaire nommé `CD1.componentdiagram.layout` sera automatiquement supprimé.  
+    > Chaque diagramme possède deux fichiers, dont un fichier auxiliaire. Par exemple, si vous avez un diagramme de composant intitulé `CD1`, vous devez supprimer le fichier nommé `CD1.componentdiagram`. Son fichier auxiliaire nommé `CD1.componentdiagram.layout` sera automatiquement supprimé.  
   
 #### <a name="to-temporarily-exclude-a-diagram-from-a-project"></a>Pour exclure temporairement un diagramme d'un projet  
   
@@ -120,14 +120,14 @@ Les modèles UML vous aident à comprendre, à expliquer et à concevoir les sys
      Le diagramme est supprimé du projet. Il n'est pas supprimé du système de fichiers.  
   
     > [!NOTE]
-    >  Les éléments indiqués sur le diagramme ne sont pas supprimés à partir de **Explorateur de modèles UML**.  
+    > Les éléments indiqués sur le diagramme ne sont pas supprimés à partir de **Explorateur de modèles UML**.  
   
 #### <a name="to-restore-a-temporarily-excluded-diagram-to-a-project"></a>Pour restaurer dans un projet un diagramme exclu temporairement  
   
 1. Dans **l’Explorateur de solutions**, cliquez sur la modélisation nœud du projet.  
   
     > [!NOTE]
-    >  Le projet de modélisation contient un dossier de définition de modèle nommé **ModelDefinition**.  
+    > Le projet de modélisation contient un dossier de définition de modèle nommé **ModelDefinition**.  
   
 2. Sur le **projet** menu, cliquez sur **ajouter un élément existant**.  
   
@@ -136,7 +136,7 @@ Les modèles UML vous aident à comprendre, à expliquer et à concevoir les sys
      Le diagramme de modélisation s'ouvre et s'affiche dans le projet de modélisation.  
   
     > [!NOTE]
-    >  Chaque diagramme a une paire de fichiers dans le système de fichiers. Ne sélectionnez pas un fichier ayant l’extension `.layout`. En outre, Visual Studio ne prend pas en charge l'ajout de diagrammes UML existants à plusieurs projets de modélisation. Chaque fichier de diagramme doit être ouvert au sein du projet de modélisation dans lequel il a été créé. La raison en est qu'un diagramme UML est une vue du modèle appartenant à son projet de modélisation.  
+    > Chaque diagramme a une paire de fichiers dans le système de fichiers. Ne sélectionnez pas un fichier ayant l’extension `.layout`. En outre, Visual Studio ne prend pas en charge l'ajout de diagrammes UML existants à plusieurs projets de modélisation. Chaque fichier de diagramme doit être ouvert au sein du projet de modélisation dans lequel il a été créé. La raison en est qu'un diagramme UML est une vue du modèle appartenant à son projet de modélisation.  
   
 ## <a name="NonModelDiagrams"></a> Diagrammes qui ne nécessitent pas de projets de modélisation  
  Les types de diagrammes suivants ne font pas partie d'un projet de modélisation :  

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70d438107b7cbe05b0a1c0049dff8e26c286de89
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 08c30f723c6dbdb7359b1fd1d7648a38e71ab161
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043959"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428815"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Prise en charge des extraits de code dans un service de langage hérité
 Un extrait de code est un morceau de code est inséré dans le fichier source. L’extrait de code est un modèle basé sur XML avec un ensemble de champs. Ces champs sont mis en surbrillance une fois que l’extrait de code est inséré et peut avoir des valeurs différentes en fonction du contexte dans lequel l’extrait de code est inséré. Immédiatement après que l’extrait de code est inséré, le service de langage peut mettre en forme l’extrait de code.
@@ -27,7 +27,7 @@ Un extrait de code est un morceau de code est inséré dans le fichier source. L
  Services de langage hérité sont implémentés en tant que partie d’un VSPackage, mais la plus récente pour implémenter des fonctionnalités de service de langage consiste à utiliser des extensions MEF. Pour plus d’informations, consultez [procédure pas à pas : Implémentation d’extraits de Code](../../extensibility/walkthrough-implementing-code-snippets.md).
 
 > [!NOTE]
->  Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorer les performances de votre service de langage et vous permettent de tirer parti des nouvelles fonctionnalités de l’éditeur.
+> Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorer les performances de votre service de langage et vous permettent de tirer parti des nouvelles fonctionnalités de l’éditeur.
 
 ## <a name="managed-package-framework-support-for-code-snippets"></a>Managed Package Framework prend en charge des extraits de Code
  L’infrastructure de package managé (MPF) prend en charge la plupart des fonctionnalités de l’extrait de code, de lire le modèle à insérer l’extrait de code et permettant spéciale en mode édition. Prise en charge est gérée via la <xref:Microsoft.VisualStudio.Package.ExpansionProvider> classe.
@@ -392,4 +392,4 @@ namespace TestLanguagePackage
 - [Fonctionnalités du service de langage hérité](../../extensibility/internals/legacy-language-service-features1.md)
 - [Inscription d’un service de langage hérité](../../extensibility/internals/registering-a-legacy-language-service1.md)
 - [Extraits de code](../../ide/code-snippets.md)
-- [Procédure pas à pas : Obtention d’une liste d’extraits de Code installés (implémentation héritée)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
+- [Procédure pas à pas : Obtention d’une liste d’extraits de code installés (implémentation héritée)](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)

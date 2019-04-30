@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ea48e1807291e935081f01e821cffafa794104f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8de573e8d5f46988868f18114fdabb07f62690e0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075757"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443162"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Visual C# IntelliSense est disponible quand vous écrivez du code dans l’édi
  Dans Visual C#, la liste de saisie semi-automatique inclut les méthodes d’extension qui sont dans la portée.  
   
 > [!NOTE]
->  La liste de saisie semi-automatique n'affiche pas toutes les méthodes d'extension pour les objets <xref:System.String>.  
+> La liste de saisie semi-automatique n'affiche pas toutes les méthodes d'extension pour les objets <xref:System.String>.  
   
  Les méthodes d’extension utilisent une icône différente de celle des méthodes d’instance. Pour obtenir la liste des icônes de liste, consultez [Icônes de l’Explorateur d’objets et de la fenêtre Affichage de classes](../ide/class-view-and-object-browser-icons.md). Quand une méthode d’instance et une méthode d’extension portant le même nom sont toutes deux dans la portée, la liste de saisie semi-automatique affiche l’icône de la méthode d’extension.  
   
@@ -148,12 +148,12 @@ Visual C# IntelliSense est disponible quand vous écrivez du code dans l’édi
  ![Générer un gestionnaire d’événements](../ide/media/vxgenerateeventhandler.gif "vxGenerateEventHandler")  
   
 > [!NOTE]
->  Si un nouveau délégué créé par IntelliSense fait référence à un gestionnaire d'événements existant, IntelliSense communique cette information dans l'info-bulle. Vous pouvez ensuite modifier cette référence, dans la mesure où le texte est déjà sélectionné dans l'éditeur de code. Sinon, la connexion d'événements automatique se termine à ce stade.  
+> Si un nouveau délégué créé par IntelliSense fait référence à un gestionnaire d'événements existant, IntelliSense communique cette information dans l'info-bulle. Vous pouvez ensuite modifier cette référence, dans la mesure où le texte est déjà sélectionné dans l'éditeur de code. Sinon, la connexion d'événements automatique se termine à ce stade.  
   
  Si vous appuyez sur la touche Tab, IntelliSense choisit une méthode avec la signature appropriée et place le curseur dans le corps de votre gestionnaire d'événements.  
   
 > [!NOTE]
->  Utilisez la commande **Naviguer vers l’arrière** du menu **Affichage** (Ctrl + -) pour revenir à l’instruction de connexion d’événements.  
+> Utilisez la commande **Naviguer vers l’arrière** du menu **Affichage** (Ctrl + -) pour revenir à l’instruction de connexion d’événements.  
   
  La tâche suivante montre comment IntelliSense connecte automatiquement un gestionnaire d'événements nommé `button1_Click` à un champ d'événement nommé `button1.Click`.  
   

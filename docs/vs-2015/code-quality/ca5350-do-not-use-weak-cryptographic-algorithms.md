@@ -8,12 +8,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0f1aee9fb3790a5ba7b766eba22f2ec6420dacfd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 004b09c471ea163a17391a8ad51abcc0aefee1ed
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041767"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430711"
 ---
 # <a name="ca5350-do-not-use-weak-cryptographic-algorithms"></a>CA5350 : N’utilisez pas d’algorithmes de chiffrement faibles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60041767"
 |Modification avec rupture|Sans rupture|  
   
 > [!NOTE]
->  Cet avertissement a été mis à jour pour la dernière fois en novembre 2015.  
+> Cet avertissement a été mis à jour pour la dernière fois en novembre 2015.  
   
 ## <a name="cause"></a>Cause  
  Les algorithmes de chiffrement, tels que <xref:System.Security.Cryptography.TripleDES> , et les algorithmes de hachage, tels que <xref:System.Security.Cryptography.SHA1> et <xref:System.Security.Cryptography.RIPEMD160> , sont considérés comme faibles.  

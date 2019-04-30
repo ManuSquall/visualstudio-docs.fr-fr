@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1d72d3da8adeff7b8280bda84eb92b730679fea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f9696640358626c254f1792fc29a31a41d4bafb3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085842"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427905"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Procédure : Ajouter un volet Actions à des documents Word ou à des classeurs Excel
   Pour ajouter un volet actions à un document Microsoft Office Word ou un classeur Microsoft Excel, tout d’abord créer un contrôle utilisateur Windows Forms. Ensuite, ajoutez le contrôle utilisateur à la <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> propriété de la `ThisDocument.ActionsPane` champ (Word) ou `ThisWorkbook.ActionsPane` champ (Excel) dans votre projet.
@@ -28,7 +28,7 @@ ms.locfileid: "60085842"
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
 > [!NOTE]
->  Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="creating-the-user-control"></a>Création du contrôle utilisateur
  La procédure suivante montre comment créer un mot de contrôle utilisateur ou projet Excel. Il ajoute également un bouton au contrôle utilisateur qui écrit du texte dans le document ou le classeur lorsque vous cliquez dessus.
@@ -42,12 +42,12 @@ ms.locfileid: "60085842"
 3. Dans le **ajouter un nouvel élément** boîte de dialogue, sélectionnez **contrôle de volet Actions**, nommez-le **HelloControl**, puis cliquez sur **ajouter**.
 
     > [!NOTE]
-    >  Vous pouvez également ajouter un **contrôle utilisateur** élément à votre projet. Les classes générées par le **contrôle de volet Actions** et **contrôle utilisateur** éléments sont fonctionnellement équivalents.
+    > Vous pouvez également ajouter un **contrôle utilisateur** élément à votre projet. Les classes générées par le **contrôle de volet Actions** et **contrôle utilisateur** éléments sont fonctionnellement équivalents.
 
 4. À partir de la **Windows Forms** onglet de la **boîte à outils,** faites glisser un **bouton** contrôle sur le contrôle.
 
     > [!NOTE]
-    >  Si le contrôle n’est pas visible dans le concepteur, double-cliquez sur **HelloControl** dans **l’Explorateur de solutions**.
+    > Si le contrôle n’est pas visible dans le concepteur, double-cliquez sur **HelloControl** dans **l’Explorateur de solutions**.
 
 5. Ajoutez le code à la <xref:System.Windows.Forms.Control.Click> Gestionnaire d’événements du bouton. L’exemple suivant montre le code d’un document Microsoft Office Word.
 

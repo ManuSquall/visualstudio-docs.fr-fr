@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9e6ebd09188e737e75c9e5f66ed95411e1a9453d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4ab27c27873fc0addf1dbdbdbca81613d3015cc3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106200"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445547"
 ---
 # <a name="custom-task-panes"></a>Volets de tâches personnalisés
   Les volets de tâches sont des panneaux d'interface utilisateur généralement ancrés à l'un des côtés d'une fenêtre dans une application Microsoft Office. Les volets de tâches personnalisés vous permettent de créer votre propre volet de tâches et de fournir aux utilisateurs une interface familière pour accéder aux fonctionnalités de votre solution. Par exemple, l'interface peut comporter des contrôles exécutant du code pour modifier des documents ou afficher des données à partir d'une source de données.
@@ -38,7 +38,7 @@ ms.locfileid: "60106200"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 > [!NOTE]
->  Un volet de tâches personnalisé diffère du volet Actions. Le volet Actions fait partie des personnalisations au niveau du document pour Microsoft Office Word et Microsoft Office Excel. Pour plus d’informations, consultez [vue d’ensemble du volet Actions](../vsto/actions-pane-overview.md).
+> Un volet de tâches personnalisé diffère du volet Actions. Le volet Actions fait partie des personnalisations au niveau du document pour Microsoft Office Word et Microsoft Office Excel. Pour plus d’informations, consultez [vue d’ensemble du volet Actions](../vsto/actions-pane-overview.md).
 
 ## <a name="benefits-of-custom-task-panes"></a>Avantages des volets de tâches personnalisés
  Les volets de tâches personnalisés vous permettent d'intégrer vos propres fonctionnalités dans une interface utilisateur familière. Vous pouvez créer rapidement un volet de tâches personnalisé à l'aide des outils Visual Studio.

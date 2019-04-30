@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 295db356ea11bb24eb8e121aca0fe54c015ef5e9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 5f9afe4bb5087c7589415a6ae7fc143f5fd01b21
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56721951"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63413219"
 ---
 # <a name="idebugprocess3execute"></a>IDebugProcess3::Execute
 Continue ce processus en cours d’exécution à partir d’un état arrêté. N’importe quel état de l’exécution précédente (par exemple, une étape) est désactivée et le processus commence à s’exécuter à nouveau.
 
 > [!NOTE]
->  Cette méthode doit être utilisée à la place de [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md).
+> Cette méthode doit être utilisée à la place de [Execute](../../../extensibility/debugger/reference/idebugprogram2-execute.md).
 
 ## <a name="syntax"></a>Syntaxe
 
@@ -51,7 +51,7 @@ int Execute(
  Lorsque l’utilisateur commence l’exécution à partir d’un état arrêté dans les threads d’un autre processus, cette méthode est appelée sur ce processus. Cette méthode est également appelée lorsque l’utilisateur sélectionne le **Démarrer** commande à partir de la **déboguer** menu dans l’IDE. L’implémentation de cette méthode peut être aussi simple que si vous appelez le [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) méthode sur le thread actuel dans le processus.
 
 > [!WARNING]
->  Ne pas envoyer un événement d’arrêt ou un événement (synchrone) immédiat [événement](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) lors du traitement de cet appel ; sinon, le débogueur peut se bloquer.
+> Ne pas envoyer un événement d’arrêt ou un événement (synchrone) immédiat [événement](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) lors du traitement de cet appel ; sinon, le débogueur peut se bloquer.
 
 ## <a name="see-also"></a>Voir aussi
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)

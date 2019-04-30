@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6a6c94382bd797b4c24057f623b334b2f2cd2983
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b0e1ea270511a92df96fdb4cc38367074f224060
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431011"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Procédure : génération d'un extrait XML à partir d'un schéma XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ L'éditeur XML permet de générer des extraits XML à partir d'un schéma de la
  Les étapes de cette section expliquent l'utilisation de la fonction d'extrait XML généré par schéma dans l'éditeur XML.  
   
 > [!NOTE]
->  Avant d'entamer ces procédures, enregistrez le fichier de schéma sur votre ordinateur local.  
+> Avant d'entamer ces procédures, enregistrez le fichier de schéma sur votre ordinateur local.  
   
 #### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Pour créer un nouveau fichier XML et l'associer à un schéma XML  
   

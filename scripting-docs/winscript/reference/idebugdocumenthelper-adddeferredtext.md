@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b1219543c438c79ad1add068262d9556dd2d7ce8
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: b2f2a7c134142668613cc38cee9357e42cb95096
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58159333"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433940"
 ---
 # <a name="idebugdocumenthelperadddeferredtext"></a>IDebugDocumentHelper::AddDeferredText
 Notifie l’application d’assistance que le texte donné est disponible, mais il ne fournit pas les caractères.  
@@ -57,7 +57,7 @@ HRESULT AddDeferredText(
  Il est supposé qu’un seul appel à `IDebugDocumentText::GetText` peut obtenir des caractères à partir de plusieurs appels à `AddDeferredText`. Classes d’assistance peuvent également demander la même plage de caractères différées plusieurs fois.  
   
 > [!NOTE]
->  Les appels à `AddDeferredText` ne doivent pas être mélangées avec les appels à `AddUnicodeText` ou `AddDBCSText`. Si cela se produit, `E_FAIL` est retournée.  
+> Les appels à `AddDeferredText` ne doivent pas être mélangées avec les appels à `AddUnicodeText` ou `AddDBCSText`. Si cela se produit, `E_FAIL` est retournée.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Interface IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   

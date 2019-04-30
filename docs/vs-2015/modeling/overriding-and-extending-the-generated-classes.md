@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 34e40863883643955c4517337de5410f0745703d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: a7b9733a47b4763a0f28ee4b24b54fdfd44bf066
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948015"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435004"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Substitution et extension des classes générées
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Votre définition DSL est une plateforme sur laquelle vous pouvez créer un ense
  `} }`  
   
 > [!NOTE]
->  Pour substituer les méthodes dans une classe générée, vous devez toujours écrire votre code dans un fichier séparé à partir des fichiers générés. En règle générale, le fichier se trouve dans un dossier nommé CustomCode. Si vous apportez des modifications au code généré, ils seront perdus lorsque vous régénérez le code à partir de la définition DSL.  
+> Pour substituer les méthodes dans une classe générée, vous devez toujours écrire votre code dans un fichier séparé à partir des fichiers générés. En règle générale, le fichier se trouve dans un dossier nommé CustomCode. Si vous apportez des modifications au code généré, ils seront perdus lorsque vous régénérez le code à partir de la définition DSL.  
   
  Pour découvrir les méthodes que vous pouvez substituer, tapez **remplacer** dans la classe, suivi d’un espace. L’info-bulle IntelliSense vous indique quelles méthodes peuvent être remplacées.  
   
