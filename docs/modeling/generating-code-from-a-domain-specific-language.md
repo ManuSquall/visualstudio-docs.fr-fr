@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3c761fccfafae4af864264cc5b9d103d09b61710
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944518"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62994444"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>Génération de code à partir d'un langage spécifique à un domaine
 Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] offre un moyen puissant pour générer le code, les documents, les fichiers de configuration et les autres artefacts à partir des données représentées dans les modèles. À l’aide de [!INCLUDE[dsl](../modeling/includes/dsl_md.md)], vous pouvez créer un ensemble de classes qui représentent vos données, vous pouvez écrire vos modèles de texte dans les classes dont les noms et propriétés reflètent ces données.
@@ -38,11 +38,11 @@ Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] offre un moyen puissan
 
  Fournit des informations de base sur la référence à un langage spécifique à un domaine dans les modèles de texte.
 
- [Procédure pas à pas : Débogage d’un modèle de texte accédant à un modèle](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)
+ [Procédure pas à pas : Déboguer un modèle de texte accédant à un modèle](../modeling/walkthrough-debugging-a-text-template-that-accesses-a-model.md)
 
  Décrit comment effectuer dépannage et débogage sur un modèle de texte qui fait référence à un langage spécifique à un domaine.
 
- [Procédure pas à pas : Connexion d’un hôte à un processeur de Directive généré](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)
+ [Procédure pas à pas : Connecter un hôte à un processeur de directive généré](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)
 
  Décrit comment vous connecter à un hôte personnalisé à un processeur de directive généré.
 

@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 72b5c30750486d8078fc44b7d49716eb5e8488e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953027"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007338"
 ---
 # <a name="runtime-activity-designers"></a>Concepteurs d'activités d'exécution
 Les concepteurs d'activités d'exécution permettent de rendre persistantes des activités de workflow et de les arrêter. Les rubriques contenues de cette section fournissent des conseils sur la façon d'utiliser les concepteurs d'activités [!INCLUDE[wfd2](../includes/wfd2-md.md)].  

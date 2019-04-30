@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2b130c321e57cdeea6b703b0e439d6b0f15a1a96
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947695"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>Guide pratique pour signaler un problème avec Visual Studio ou Visual Studio Installer
 
@@ -24,8 +24,8 @@ ms.locfileid: "59232539"
 Il est possible de signaler un problème dans Visual Studio ou dans son programme d’installation à l’aide de l’outil Feedback Tool inclus. Ce dernier vous permet d’inclure facilement des informations de diagnostic dans vos commentaires et aide les équipes de Visual Studio à diagnostiquer et à résoudre les problèmes beaucoup plus efficacement. Voici les étapes à suivre pour signaler un problème.
 
 1. **Dans Visual Studio**, sélectionnez l’icône de commentaires en haut à droite et sélectionnez Signaler un problème. Feedback Tool est également accessible dans le menu **Aide** > **Envoyer des commentaires** > **Signaler un problème**.
-![Fenêtre contextuelle Signaler un problème sur la communauté des développeurs Visual Studio](media/vsfeedbackentry.png) Si vous ne parvenez pas à installer Visual Studio ou à accéder à Feedback Tool dans Visual Studio, signalez un problème dans **Visual Studio Installer**.  Dans le programme d’installation, sélectionnez l’icône de commentaires en haut à droite, puis Signaler un problème.
-![Fenêtre contextuelle de signalement de problème sur le site web de la Communauté des développeurs Visual Studio](media/installer.png)
+Fenêtre contextuelle ![Signaler un problème sur la communauté des développeurs Visual Studio](media/vsfeedbackentry.png) Si vous ne parvenez pas à installer Visual Studio ou à accéder à Feedback Tool dans Visual Studio, signalez un problème dans **Visual Studio Installer**.  Dans le programme d’installation, sélectionnez l’icône de commentaires en haut à droite, puis Signaler un problème.
+![Fenêtre contextuelle Signaler un problème sur la communauté des développeurs Visual Studio](media/installer.png)
 
 1. Si ce n’est pas déjà fait, sélectionnez **Se connecter** comme sur la capture d’écran suivante. Suivez les instructions à l’écran pour vous connecter.
 

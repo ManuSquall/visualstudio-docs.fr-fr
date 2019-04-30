@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2e82b884965c5c7362951c7d94199f90c93fbfc3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073694"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955954"
 ---
 # <a name="how-to-programmatically-refer-to-worksheet-ranges-in-code"></a>Procédure : Faire référence par programmation aux plages de feuille de calcul dans le code
   Vous utilisez un processus semblable pour faire référence au contenu d’un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle ou un objet de plage Excel natif.

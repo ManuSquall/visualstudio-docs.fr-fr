@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d8f645d6460ff15734348267b5138b1b6edea071
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149547"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63005876"
 ---
 # <a name="idebugstackframe-interface"></a>IDebugStackFrame, interface
 Représente un frame de pile logique sur la pile des threads. Appelez le `IDebugStackFrame::QueryInterface` méthode pour obtenir le `IDebugExpressionContext` interface, ce qui autorise l’expression d’évaluation et de suivi windows.  

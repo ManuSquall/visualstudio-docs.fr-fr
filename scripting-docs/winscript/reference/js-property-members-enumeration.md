@@ -16,11 +16,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 597764d1e55b895c30e2b00981a7a1be53e16022
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157423"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968657"
 ---
 # <a name="jspropertymembers-enumeration"></a>Énumération JS_PROPERTY_MEMBERS
 Indicateurs pour spécifier le type d'informations à retourner dans une requête pour les membres d'un objet.  
@@ -40,7 +40,7 @@ enum JS_PROPERTY_MEMBERS{   JS_PROPERTY_MEMBERS_ALL = 0,   JS_PROPERTY_MEMBERS_A
 |`JS_PROPERTY_MEMBERS_ALL`|Représente une demande pour énumérer tous les membres.|  
 |`JS_PROPERTY_MEMBERS_ARGUMENTS`|Représente une demande pour énumérer uniquement les arguments.|  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  **En-tête :** jscript9diag.h  
   
 ## <a name="see-also"></a>Voir aussi  

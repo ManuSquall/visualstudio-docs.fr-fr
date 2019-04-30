@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 2440daf99d9dbb69713d1895ffbfaa18965480a4
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58156899"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963470"
 ---
 # <a name="ienumdebugextendedpropertyinfo-interface"></a>IEnumDebugExtendedPropertyInfo, interface
 Énumère les `ExtendedDebugPropertyInfo` structures.  
@@ -38,7 +38,7 @@ ms.locfileid: "58156899"
 |[IEnumDebugExtendedPropertyInfo::Skip](../../winscript/reference/ienumdebugextendedpropertyinfo-skip.md)|Ignore un nombre spécifié de `ExtendedDebugPropertyInfo` structures dans une séquence d’énumération.|  
 |[IEnumDebugExtendedPropertyInfo::Reset](../../winscript/reference/ienumdebugextendedpropertyinfo-reset.md)|Réinitialise la séquence d'énumération au début.|  
   
-## <a name="requirements"></a>Spécifications  
+## <a name="requirements"></a>Configuration requise  
  En-tête : dbgprop.h  
   
 ## <a name="see-also"></a>Voir aussi  

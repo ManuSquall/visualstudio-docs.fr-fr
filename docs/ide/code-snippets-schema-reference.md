@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a57ff548aeb566605802a0e270534df727a7c0f
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 034fd1f31b24dce2d8ecc3d805b78c35c8498d6c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841855"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974980"
 ---
 # <a name="code-snippets-schema-reference"></a>Référence de schéma des extraits de code
 
@@ -320,9 +320,6 @@ Une valeur texte est requise. Ce texte spécifie l'identificateur unique de l'ob
 
 Spécifie les espaces de noms importés et utilisés par un extrait de code IntelliSense.
 
-> [!NOTE]
-> L'élément `Import` est uniquement pris en charge pour les projets Visual Basic.
-
 ```xml
 <Import>
     <Namespace>... </Namespace>
@@ -340,9 +337,6 @@ Spécifie les espaces de noms importés et utilisés par un extrait de code Inte
 ## <a name="imports-element"></a>Imports, élément
 
 Groupe des éléments `Import` individuels.
-
-> [!NOTE]
-> L'élément `Imports` est uniquement pris en charge pour les projets Visual Basic.
 
 ```xml
 <Imports>
@@ -425,10 +419,7 @@ Les littéraux et les objets ne peuvent pas contenir d’élément **ID** avec l
 
 ## <a name="namespace-element"></a>Namespace, élément
 
-Spécifie l'espace de noms qui doit être importé pour compiler l'extrait de code et l'exécuter. L'espace de noms spécifié dans l'élément `Namespace` est ajouté automatiquement au début du code à une instruction `Imports`, s'il n'y figure pas déjà.
-
-> [!NOTE]
-> L'élément `Namespace` est uniquement pris en charge pour les projets Visual Basic.
+Spécifie l'espace de noms qui doit être importé pour compiler l'extrait de code et l'exécuter. L’espace de noms spécifié dans l’élément `Namespace` est ajouté automatiquement au début du code à une directive `using` ou une instruction `Imports`, s’il n’y figure pas déjà.
 
 ```xml
 <Namespace>
@@ -569,11 +560,11 @@ Spécifie la manière dont Visual Studio insère l'extrait de code.
 
 Le texte doit avoir l'une des valeurs suivantes :
 
--   `SurroundsWith` : autorise à placer l'extrait de code autour d'une partie de code sélectionnée.
+- `SurroundsWith` : autorise à placer l'extrait de code autour d'une partie de code sélectionnée.
 
--   `Expansion` : autorise à insérer l'extrait de code au curseur.
+- `Expansion` : autorise à insérer l'extrait de code au curseur.
 
--   `Refactoring` : spécifie que l'extrait de code est utilisé pendant la refactorisation C#. `Refactoring` ne peut pas être utilisé dans les extraits de code personnalisés.
+- `Refactoring` : spécifie que l'extrait de code est utilisé pendant la refactorisation C#. `Refactoring` ne peut pas être utilisé dans les extraits de code personnalisés.
 
 ## <a name="snippettypes-element"></a>SnippetTypes, élément
 
