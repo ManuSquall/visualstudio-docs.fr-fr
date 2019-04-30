@@ -17,11 +17,11 @@ ms.topic: reference
 ms.workload:
 - multiple
 ms.openlocfilehash: 44938c5753491521702867398a514f770cf831fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099388"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793635"
 ---
 # <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Prise en charge par moniteur afin que les extendeurs de Visual Studio
 Versions antérieures à Visual Studio 2019 eu leur contexte de sensibilisation à la résolution définie sur le système prenant en charge, plutôt que des PPP prenant en charge (AVM) par le moniteur. En cours d’exécution dans la sensibilité au système a entraîné un visuel détérioré expérience (par exemple, floues polices ou icônes) chaque fois que Visual Studio devait restituer sur plusieurs écrans à des facteurs d’échelle différente ou à distance sur des machines avec des configurations d’affichage différent, par exemple (différents Windows mise à l’échelle).

@@ -12,13 +12,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: fb7b601c04c73cd1f617e42c848edaf7dc65bde8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429342"
 ---
-# <a name="how-to-create-starter-kits"></a>Comment : créer des Starter Kits
+# <a name="how-to-create-starter-kits"></a>Procédure : Créer des Starter Kits
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Un Starter Kit contient le code d’une application complète et la documentation sur la façon de modifier ou de développer l’application. La création d’un Starter Kit est très similaire à la création d’un modèle de projet normal, la seule différence étant que, lors de la création d’un projet basé sur un Starter Kit, les fichiers de documentation que ce dernier contient s’ouvrent.  

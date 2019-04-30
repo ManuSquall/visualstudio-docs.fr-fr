@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9537b3eef0d5da445d9456b414c89bbaac08ae87
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813970"
 ---
 # <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>Procédure : Déployer et publier une solution SharePoint sur un site SharePoint local
   Vous pouvez déployer ou publier des solutions SharePoint sur un serveur SharePoint local sur votre ordinateur de développement. Les copies de processus de déploiement le *.wsp* fichier sur le serveur SharePoint, installe la solution et activer les fonctionnalités. Le processus de publication copie uniquement la *.wsp* fichier sur le serveur SharePoint et l’installe. Vous devez l’activer manuellement pour l’activer dans SharePoint.

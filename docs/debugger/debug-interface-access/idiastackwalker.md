@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5ad74f92765ee449eab1e3089511a063e70d96a0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62831931"
 ---
 # <a name="idiastackwalker"></a>IDiaStackWalker
 Fournit des méthodes permettant d’effectuer une pile de remonter à l’aide des informations dans le fichier .pdb.
@@ -36,7 +36,7 @@ Le tableau suivant présente les méthodes de `IDiaStackWalker`.
 |[IDiaStackWalker::getEnumFrames](../../debugger/debug-interface-access/idiastackwalker-getenumframes.md)|Récupère un énumérateur de frame de pile pour x86 plateformes.|
 |[IDiaStackWalker::getEnumFrames2](../../debugger/debug-interface-access/idiastackwalker-getenumframes2.md)|Récupère un énumérateur de frame de pile pour un type de plateforme spécifique.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Cette interface est utilisée pour obtenir une liste de frames de pile pour un module chargé. Chacune des méthodes est passé un [IDiaStackWalkHelper](../../debugger/debug-interface-access/idiastackwalkhelper.md) objet (implémenté par l’application cliente), qui fournit les informations nécessaires pour créer la liste de frames de pile.
 
 ## <a name="notes-for-callers"></a>Notes de publication pour les appelants
@@ -59,8 +59,8 @@ if (FAILED(hr))
 }
 ```
 
-## <a name="requirements"></a>Spécifications
-En-tête : Dia2.h
+## <a name="requirements"></a>Configuration requise
+En-tête : Dia2.h
 
 Bibliothèque : diaguids.lib
 

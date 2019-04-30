@@ -1,5 +1,5 @@
 ---
-title: Navigation exemple code débogueur (Xaml et C#) | Microsoft Docs
+title: Navigation exemple code débogueur (Xaml et c#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,16 +15,16 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: 88193fc4ec7061771ebba53139cdc0ecce67dbfb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951438"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62552076"
 ---
 # <a name="debugger-navigation-sample-code-xaml-and-c"></a>Exemple de code de navigation du débogueur (XAML et C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le code dans cette rubrique est l’exemple de fichier pour le [parcourir une session de débogage (Xaml et C#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md) rubrique.  
+Le code dans cette rubrique est l’exemple de fichier pour le [parcourir une session de débogage (Xaml et c#)](../debugger/navigate-a-debugging-session-in-visual-studio-xaml-and-csharp.md) rubrique.  
   
 ## <a name="sample-code"></a>Exemple de code  
   

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: b622fc77884acde5b81d886628afce9f077e86a8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62567971"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Configurer la référence de service (boîte de dialogue)
 
@@ -105,5 +105,5 @@ Pour accéder à la boîte de dialogue **Configurer la référence de service**,
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour ajouter une référence à un service web](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
+- [Guide pratique pour Ajoutez une référence à un service web](how-to-add-update-or-remove-a-wcf-data-service-reference.md)
 - [Services Windows Communication Foundation et WCF Data Services](../data-tools/configure-service-reference-dialog-box.md)

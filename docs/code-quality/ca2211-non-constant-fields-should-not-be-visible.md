@@ -18,11 +18,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: c33db7e5237b8e31011689edb725c8ae0e905522
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911453"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806771"
 ---
 # <a name="ca2211-non-constant-fields-should-not-be-visible"></a>CA2211 : Les champs non constants ne doivent pas être visibles
 
@@ -37,7 +37,7 @@ ms.locfileid: "55911453"
  Un champ statique public ou protégé n’est pas constante ni en lecture seule.
 
 ## <a name="rule-description"></a>Description de la règle
- Les champs static qui ne sont ni constants ni en lecture seule ne sont pas thread-safe. Accès à un tel champ doit être scrupuleusement contrôlé et nécessite des techniques de programmation évoluées pour synchroniser l’accès à l’objet de classe. Étant donné que ces compétences sont difficiles à apprendre et master et le test d’un tel objet pose ses propres difficultés, champs statiques sont mieux utilisés pour stocker les données qui ne changent pas. Cette règle s’applique aux bibliothèques ; les applications ne doivent pas exposer tous les champs.
+ Les champs statiques qui ne sont ni constants ni en lecture seule ne sont pas thread-safe. Accès à un tel champ doit être scrupuleusement contrôlé et nécessite des techniques de programmation évoluées pour synchroniser l’accès à l’objet de classe. Étant donné que ces compétences sont difficiles à apprendre et master et le test d’un tel objet pose ses propres difficultés, champs statiques sont mieux utilisés pour stocker les données qui ne changent pas. Cette règle s’applique aux bibliothèques ; les applications ne doivent pas exposer tous les champs.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, rendez le champ statique constant ou en lecture seule. Si ce n’est pas possible, reconcevoir le type pour utiliser un autre mécanisme, par exemple une propriété de thread-safe qui gère l’accès thread-safe pour le champ sous-jacent. Notez que les problèmes tels que des conflits de verrous et blocages peuvent affecter les performances et le comportement de la bibliothèque.

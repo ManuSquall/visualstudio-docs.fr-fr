@@ -32,11 +32,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b0bf0da5f15bbb59c2898af0dc0bfec1105cbab0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715425"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847658"
 ---
 # <a name="set-debug-and-release-configurations-in-visual-studio"></a>Définir des configurations Debug et Release dans Visual Studio
 
@@ -44,7 +44,7 @@ Les projets Visual Studio ont des configurations Release et Debug distinctes pou
 
 Dans la configuration debug, votre programme est compilé sans informations de débogage symboliques et aucune optimisation. L'optimisation complique le débogage, étant donné que la relation entre le code source et les instructions générées est plus complexe.
 
-La configuration release de votre programme ne possède aucune information de débogage symboliques et est entièrement optimisée. Pour le code managé et le code C++, les informations de débogage peuvent être générées dans les fichiers .pdb, [selon les options du compilateur](#BKMK_symbols_release) qui sont utilisés. Création des fichiers .pdb peut être utile si vous devez ultérieurement déboguer votre version release.
+La configuration release de votre programme ne possède aucune information de débogage symboliques et est entièrement optimisée. Pour le code managé et C++ code, les informations de débogage peuvent être générées dans les fichiers .pdb, [selon les options du compilateur](#BKMK_symbols_release) qui sont utilisés. Création des fichiers .pdb peut être utile si vous devez ultérieurement déboguer votre version release.
 
 Pour plus d’informations sur les configurations de build, consultez [Présentation des configurations de build](../ide/understanding-build-configurations.md).
 
@@ -71,9 +71,9 @@ Vous pouvez choisir de générer des fichiers de symboles (.pdb) et les informat
 
 Chaque type de projet peut avoir une façon différente de la définition de ces options.
 
-### <a name="generate-symbol-files-for-a-c-aspnet-or-visual-basic-project"></a>Générer des fichiers de symboles pour un C#, ASP.NET ou un projet de base Visual
+### <a name="generate-symbol-files-for-a-c-aspnet-or-visual-basic-project"></a>Générer des fichiers de symboles pour un projet c#, ASP.NET ou Visual Basic
 
-Pour plus d’informations sur les paramètres de projet pour les configurations debug dans C# ou Visual Basic, consultez [projet des paramètres pour un C# configuration debug](../debugger/project-settings-for-csharp-debug-configurations.md) ou [paramètres pour un débogage Visual Basic du projet configuration](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).
+Pour plus d’informations sur les paramètres de projet pour les configurations debug en c# ou Visual Basic, consultez [des paramètres de projet pour c# configuration debug](../debugger/project-settings-for-csharp-debug-configurations.md) ou [des paramètres de projet pour Visual Basic configurationdebug](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).
 
 1. Dans l'Explorateur de solutions, sélectionnez le projet.
 
@@ -87,9 +87,9 @@ Pour plus d’informations sur les paramètres de projet pour les configurations
 
 6. Dans le **informations de débogage** liste (ou le **générer des infos de débogage** liste en Visual Basic), choisissez **complète**, **Pdb-only**, ou **Portable**.
 
-   Le format portable est le format inter-plateformes plus récent pour .NET Core. Pour plus d’informations sur les options, consultez [boîte de dialogue Paramètres de génération avancés (C#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md).
+   Le format portable est le format inter-plateformes plus récent pour .NET Core. Pour plus d’informations sur les options, consultez [boîte de dialogue Paramètres de génération avancés (c#)](../ide/reference/advanced-build-settings-dialog-box-csharp.md).
 
-   ![Générer des fichiers PDB pour les builds dans C# ](../debugger/media/dbg_project_properties_pdb_csharp.png "GeneratePDBsForCSharp")
+   ![Générer des fichiers PDB pour les builds en C#](../debugger/media/dbg_project_properties_pdb_csharp.png "GeneratePDBsForCSharp")
 
 7. Générez votre projet.
 

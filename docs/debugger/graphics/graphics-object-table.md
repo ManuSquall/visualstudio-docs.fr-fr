@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 20a78d7bb3e27ddfd0a5a248436b5c5392558410
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713449"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848421"
 ---
 # <a name="graphics-object-table"></a>Table des objets Graphics
 La Table des objets Graphics dans Visual Studio Graphics Analysis vous permet d'identifier les objets Direct3D qui prennent en charge un frame de votre jeu ou application.
@@ -111,4 +111,4 @@ La Table des objets Graphics dans Visual Studio Graphics Analysis vous permet d'
 
 ## <a name="see-also"></a>Voir aussi
 - [Graphics Diagnostics (débogage DirectX Graphics)](visual-studio-graphics-diagnostics.md)
-- [Procédure pas à pas : objets manquants en raison de l’état de l’appareil](walkthrough-missing-objects-due-to-device-state.md)
+- [Procédure pas à pas : objets manquants en raison de l’état du périphérique](walkthrough-missing-objects-due-to-device-state.md)

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: cb9b218935085b04ae1a9931733aeca34766aa5f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641947"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62833684"
 ---
 # <a name="idiadatasourceloaddatafromistream"></a>IDiaDataSource::loadDataFromIStream
 Prépare les données de débogage stockées dans un fichier du programme (.pdb) de la base de données accédé via un flux de données en mémoire.
@@ -44,7 +44,7 @@ HRESULT loadDataFromIStream ( 
 |E_INVALIDARG|Paramètre non valide.|
 |E_UNEXPECTED|Source de données a déjà été préparée.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
  Cette méthode permet des données de débogage pour un fichier exécutable doit être obtenu à partir de la mémoire via un <xref:IStream> objet.
 
  Pour charger un fichier .pdb sans validation, utilisez la [IDiaDataSource::loadDataFromPdb](../../debugger/debug-interface-access/idiadatasource-loaddatafrompdb.md) (méthode).

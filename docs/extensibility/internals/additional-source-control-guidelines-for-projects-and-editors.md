@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3566709819d2023dfd6e38e40f88a454de83e3e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861737"
 ---
 # <a name="additional-source-control-guidelines-for-projects-and-editors"></a>Instructions de contrôle de sources supplémentaires pour les projets et les éditeurs
 Il existe un certain nombre d’instructions qui projets et les éditeurs doivent respecter pour prendre en charge le contrôle de code source.

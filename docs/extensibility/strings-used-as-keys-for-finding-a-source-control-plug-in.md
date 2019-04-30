@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3233bfbfa379fac7be7214431e7a09844b7d65ec
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56704603"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62800101"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>Chaînes utilisées comme clés pour rechercher un plug-in de contrôle de code source
 Les chaînes suivantes sont les clés d’accès au Registre pour trouver des informations sur le contrôle de source de plug-in.
@@ -48,5 +48,5 @@ Les chaînes suivantes sont les clés d’accès au Registre pour trouver des in
 
 ## <a name="see-also"></a>Voir aussi
 - [Plug-ins de contrôle de code source](../extensibility/source-control-plug-ins.md)
-- [Guide pratique pour Installer un plug-in de contrôle de code Source](../extensibility/internals/how-to-install-a-source-control-plug-in.md)
+- [Guide pratique pour installer un plug-in de contrôle de code source](../extensibility/internals/how-to-install-a-source-control-plug-in.md)
 - [Fichier MSSCCPRJ.SCC](../extensibility/mssccprj-scc-file.md)

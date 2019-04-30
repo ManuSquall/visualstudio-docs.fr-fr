@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3252d15ebfb06fa840bfad6bf74dc3b8748776ef
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623240"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838091"
 ---
 # <a name="idiastackframe"></a>IDiaStackFrame
 Expose les propriétés d’un frame de pile.
@@ -50,7 +50,7 @@ Les méthodes suivantes sont prises en charge par cette interface :
 |[IDiaStackFrame::get_systemExceptionHandling](../../debugger/debug-interface-access/idiastackframe-get-systemexceptionhandling.md)|Récupère un indicateur indiquant que la gestion des exceptions de système est en vigueur.|
 |[IDiaStackFrame::get_type](../../debugger/debug-interface-access/idiastackframe-get-type.md)|Récupère le type de trame.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Un frame de pile est une abstraction d’un appel de fonction pendant son exécution.
 
 ## <a name="notes-for-callers"></a>Notes de publication pour les appelants
@@ -100,8 +100,8 @@ void PrintStackFrame(IDiaStackFrame* pFrame)
 }
 ```
 
-## <a name="requirements"></a>Spécifications
-En-tête : Dia2.h
+## <a name="requirements"></a>Configuration requise
+En-tête : Dia2.h
 
 Bibliothèque : diaguids.lib
 

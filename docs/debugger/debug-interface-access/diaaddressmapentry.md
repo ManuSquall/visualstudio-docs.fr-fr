@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 311762f4eafc8dad63da5854870f2836ee68b3ee
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637085"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554894"
 ---
 # <a name="diaaddressmapentry"></a>DiaAddressMapEntry
 Décrit une entrée dans un mappage d’adresses.
@@ -36,7 +36,7 @@ struct DiaAddressMapEntry {
 
 `rvaTo` L’adresse virtuelle relative `rva` est mappé dans l’image B.
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 Un mappage d’adresses fournit une traduction à partir de la disposition d’une image (A) à un autre (B). Un tableau de `DiaAddressMapEntry` structures triés par `rva` définit un mappage d’adresses.
 
 Pour convertir une adresse, `addrA`, dans l’image A une adresse, `addrB`, dans l’image B, procédez comme suit :
@@ -49,7 +49,7 @@ Pour convertir une adresse, `addrA`, dans l’image A une adresse, `addrB`, dans
 
     Un tableau de `DiaAddressMapEntry` structures est passé à la [IDiaAddressMap::set_addressMap](../../debugger/debug-interface-access/idiaaddressmap-set-addressmap.md) (méthode).
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 En-tête : dia2.h
 
 ## <a name="see-also"></a>Voir aussi

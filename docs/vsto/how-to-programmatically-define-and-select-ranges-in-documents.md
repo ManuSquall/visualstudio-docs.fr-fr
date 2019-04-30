@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6cdfe722e957eaae97b587940a1b8fb3db1112c6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078861"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62574853"
 ---
 # <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>Procédure : Définir et sélectionner des plages dans les documents par programmation
   Vous pouvez définir une plage dans un document Microsoft Office Word en utilisant un objet <xref:Microsoft.Office.Interop.Word.Range>. Vous pouvez sélectionner la totalité du document dans une de plusieurs façons, par exemple, à l’aide de la <xref:Microsoft.Office.Interop.Word.Range.Select%2A> méthode de la <xref:Microsoft.Office.Interop.Word.Range> de l’objet, ou en utilisant la propriété de contenu de la <xref:Microsoft.Office.Tools.Word.Document> classe (dans une personnalisation au niveau du document) ou la <xref:Microsoft.Office.Interop.Word.Document> classe (dans un Complément VSTO).

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4f95e8a9321ff7ae518e72496289f8ad0c7b4682
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609642"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829844"
 ---
 # <a name="idiadatasourceloaddataforexe"></a>IDiaDataSource::loadDataForExe
 S’ouvre et prépare les données de débogage associées au fichier.exe/.dll.
@@ -57,7 +57,7 @@ En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur. Le tab
 |E_INVALIDARG|Paramètre non valide.|
 |E_UNEXPECTED|Source de données a déjà été préparée.|
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 L’en-tête de débogage du fichier.exe/.dll désigne l’emplacement des données de débogage.
 
 Cette méthode lit l’en-tête de débogage, puis recherche et prépare les données de débogage. La progression de la recherche peut-être, le cas échéant, être signalée et contrôlée via des rappels. Par exemple, le [IDiaLoadCallback::NotifyDebugDir](../../debugger/debug-interface-access/idialoadcallback-notifydebugdir.md) est appelé lorsque le `IDiaDataSource::loadDataForExe` méthode recherche et traite un répertoire de débogage.

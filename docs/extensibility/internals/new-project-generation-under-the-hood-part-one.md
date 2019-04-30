@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 45d1b74fd492d91104fbf60ffee689b772fea05f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091939"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860266"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>Nouvelle génération de projet : Rouages du système, première partie
 Jamais pensé que sur la façon de créer votre propre type de projet ? Vous vous demandez ce qui se passe réellement lorsque vous créez un nouveau projet ? Prenons un œil en coulisses et voyons ce qui se passe vraiment.
@@ -213,4 +213,4 @@ devenv /installvstemplates
     **MyProjectNode** apparaît sous la forme d’un nœud enfant de Visual C# juste sous le nœud de Windows.
 
 ## <a name="see-also"></a>Voir aussi
-- [Nouvelle génération de projet : Sous le capot, deuxième partie](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)
+- [Nouvelle génération de projet : Rouages du système, seconde partie](../../extensibility/internals/new-project-generation-under-the-hood-part-two.md)

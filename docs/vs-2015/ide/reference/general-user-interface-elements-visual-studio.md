@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 39669408402a12ce8010865606e2a2ec3929569b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756390"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537600"
 ---
 # <a name="general-user-interface-elements-visual-studio"></a>Éléments généraux de l'interface utilisateur (Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,11 +45,11 @@ Cette section décrit quelques éléments de l'interface utilisateur de l'enviro
 
  [Options, éditeur de texte, C/C++, avancé](../../ide/reference/options-text-editor-c-cpp-advanced.md) vous permet de spécifier des options avancées pour les fichiers C ou C++.
 
- [Options, éditeur de texte, C#, mise en forme](../../ide/reference/options-text-editor-csharp-formatting.md) vous permet de spécifier des options de mise en forme pour C# fichiers.
+ [Options, éditeur de texte, c#, mise en forme](../../ide/reference/options-text-editor-csharp-formatting.md) vous permet de spécifier des options de mise en forme pour les fichiers c#.
 
- [Options, éditeur de texte, C#, avancées](../../ide/reference/options-text-editor-csharp-advanced.md) vous permet de spécifier des options avancées pour C# fichiers.
+ [Options, éditeur de texte, c#, avancé](../../ide/reference/options-text-editor-csharp-advanced.md) vous permet de spécifier des options avancées pour les fichiers c#.
 
- [Options, éditeur de texte, C#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) vous permet de spécifier les options IntelliSense pour C# fichiers.
+ [Options, éditeur de texte, c#, IntelliSense](../../ide/reference/options-text-editor-csharp-intellisense.md) vous permet de spécifier les options IntelliSense pour les fichiers c#.
 
  [Options, éditeur de texte, XAML, mise en forme](../../ide/reference/options-text-editor-xaml-formatting.md) vous permet de spécifier des options de mise en forme pour les fichiers XAML.
 
