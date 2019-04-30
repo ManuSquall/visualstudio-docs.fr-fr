@@ -11,18 +11,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0699e3a7ad4a56f7e102ca896359290cd7dbecb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8d6aca6166486d0eda1a4a92167c0e8d6a8a2924
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053128"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415530"
 ---
 # <a name="how-to-use-the-activity-log"></a>Procédure : Utiliser le journal d’activité
 Les VSPackages peuvent écrire des messages dans le journal d’activité. Cette fonctionnalité est particulièrement utile pour déboguer les VSPackages dans les environnements de vente au détail.
 
 > [!TIP]
->  Le journal d’activité est toujours activé. Visual Studio conserve un tampon de substitution des 100 dernières entrées, ainsi que les 10 premières entrées, qui présentent des informations de configuration générales.
+> Le journal d’activité est toujours activé. Visual Studio conserve un tampon de substitution des 100 dernières entrées, ainsi que les 10 premières entrées, qui présentent des informations de configuration générales.
 
 ## <a name="to-write-an-entry-to-the-activity-log"></a>Pour écrire une entrée dans le journal d’activité
 

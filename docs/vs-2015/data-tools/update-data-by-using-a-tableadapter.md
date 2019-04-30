@@ -21,12 +21,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 56b01eb64d38563178d6af947174d0c4d2720bea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 906dd308f4341b89153d7a9acaf79e815422ee16
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424906"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>Mettre à jour les données à l’aide d’un TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60113813"
 Une fois que les données dans votre jeu de données a été modifiées et validées, vous pouvez envoyer les données mises à jour à un appel databaseby le `Update` méthode d’un TableAdapter. Le `Update` méthode met à jour une table de données unique et exécute la commande correcte (INSERT, UPDATE ou DELETE), selon le <xref:System.Data.DataRow.RowState%2A> de chaque ligne de données dans la table. Lorsque les tables sont liées à un jeu de données, Visual Studio génère une classe TableAdapterManager qui vous permet d’effectuer les mises à jour. La classe TableAdapterManager garantit que les mises à jour sont effectuées dans l’ordre approprié selon les contraintes de clé étrangère sont définies dans la base de données. Lorsque vous utilisez des contrôles liés aux données, l’architecture de liaison de données crée une variable de membre de la classe de TableAdapterManager appelée tableAdapterManager. Pour plus d’informations, consultez [vue d’ensemble de mise à jour hiérarchique](http://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6).  
   
 > [!NOTE]
->  Lorsque vous essayez de mettre à jour d’une source de données avec le contenu d’un dataset, vous pouvez obtenir des erreurs. Pour éviter les erreurs, nous vous recommandons d’informer placer le code qui appelle l’adaptateur `Update` méthode à l’intérieur d’un `try` / `catch` bloc.  
+> Lorsque vous essayez de mettre à jour d’une source de données avec le contenu d’un dataset, vous pouvez obtenir des erreurs. Pour éviter les erreurs, nous vous recommandons d’informer placer le code qui appelle l’adaptateur `Update` méthode à l’intérieur d’un `try` / `catch` bloc.  
   
  La procédure exacte de mise à jour d’une source de données peut varier en fonction des besoins de l’entreprise, mais il comprend les étapes suivantes :  
   

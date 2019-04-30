@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58d5fd0bfe1c8d5f5896d365a7b0ecfdb8da25b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 71797d3e080ad4fbbb1256914e98bc3a62f9fb01
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415513"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Procédure : Les polices intégrées d’accès et des couleurs ccheme
 L’environnement de développement intégré (IDE) Visual Studio a un jeu de polices et couleurs qui est associé à la fenêtre d’éditeur. Vous pouvez accéder à ce schéma via les <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interface.
@@ -39,7 +39,7 @@ L’environnement de développement intégré (IDE) Visual Studio a un jeu de po
      Ce GUID est utilisé pour identifier une catégorie. Cette catégorie réutilise la spécification de couleurs et de polices par défaut de l’IDE.
 
     > [!NOTE]
-    >  Lors de la récupération des données de police et de couleur avec la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> ou autres interfaces, les VSPackages utiliser ce GUID pour référencer les informations intégrées.
+    > Lors de la récupération des données de police et de couleur avec la <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> ou autres interfaces, les VSPackages utiliser ce GUID pour référencer les informations intégrées.
 
 2. Nom de la catégorie doit être ajouté à une table de chaînes à l’intérieur les ressources du package Visual Studio (*.rc*) de fichiers, afin qu’elle peut être localisée en fonction des besoins lorsque affichés dans l’IDE.
 

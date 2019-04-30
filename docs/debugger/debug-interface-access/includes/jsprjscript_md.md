@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 0dc08e534fe0d77cc25363c119b2220d159a973b
+ms.openlocfilehash: 021bc563846f4dcfcea07a16dfcbb4023da3e88a
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 04/23/2019
-ms.locfileid: "62820749"
+ms.locfileid: "62855049"
 ---
-Visual Studio 2010
+JScript

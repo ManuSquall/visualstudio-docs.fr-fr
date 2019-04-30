@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4e05eae6339d55d16fb0cf6ba6ebeb9d1f4f296
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9126a0d3bb552f525247cbfb2243504a1effaa92
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435472"
 ---
 # <a name="how-to-create-a-bdc-model"></a>Procédure : Créer un modèle BDC
   Vous pouvez créer un modèle de connectivité de données métiers (BDC) en utilisant le modèle pour ce type d’élément, puis ajouter le modèle à un projet SharePoint. Pour plus d’informations, consultez [créer un modèle de connectivité de données métiers](../sharepoint/creating-a-business-data-connectivity-model.md). Pour plus d’informations sur la façon de concevoir le modèle, consultez [concevoir un modèle de connectivité de données métiers](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -28,7 +28,7 @@ ms.locfileid: "60106655"
 1. Dans la barre de menus, choisissez **Fichier** > **Nouveau** > **Projet**.
 
     > [!NOTE]
-    >  Si votre interface IDE est définie pour utiliser les paramètres de développement Visual Basic, choisissez **fichier** > **nouveau projet**.
+    > Si votre interface IDE est définie pour utiliser les paramètres de développement Visual Basic, choisissez **fichier** > **nouveau projet**.
 
      La boîte de dialogue **Nouveau projet** s'affiche.
 
@@ -43,7 +43,7 @@ ms.locfileid: "60106655"
      Vous allez tester le modèle sur le site SharePoint que vous avez spécifié.
 
     > [!IMPORTANT]
-    >  Étant donné que les modèles BDC prennent en charge uniquement les solutions de batterie de serveurs, vous devez déployer le projet comme une solution de batterie de serveurs.
+    > Étant donné que les modèles BDC prennent en charge uniquement les solutions de batterie de serveurs, vous devez déployer le projet comme une solution de batterie de serveurs.
 
      Un projet SharePoint vide est créé.
 

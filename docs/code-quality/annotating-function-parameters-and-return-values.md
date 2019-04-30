@@ -125,12 +125,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: bda668e457cd144d868680f2dc009580c34ea81b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ace5afbf1c587a2c54c4221469cb7be0d6487c9a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109863"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388546"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Annotation de paramètres de fonction et valeurs de retour
 Cet article décrit les utilisations courantes des annotations pour les paramètres de fonction simple, scalaires et des pointeurs vers des classes et structures et la plupart des types de mémoires tampons.  Cet article montre également les modes d’utilisation courants pour les annotations. Pour des annotations supplémentaires qui sont liées aux fonctions, consultez [annoter le comportement (fonction)](../code-quality/annotating-function-behavior.md)
@@ -315,7 +315,7 @@ Cet article décrit les utilisations courantes des annotations pour les paramèt
   Dans le tableau suivant, les sous-chaînes supplémentaires sont insérées dans le nom de l’annotation à qualifier davantage la signification de l’annotation.  Les sous-chaînes différents sont `_z`, `_COM_`, `_buffer_`, `_bytebuffer_`, et `_to_`.
 
 > [!IMPORTANT]
->  Si l’interface qui vous annotez est COM, utilisez le formulaire de COM de ces annotations. N’utilisez pas les annotations de COM avec toute autre interface de type.
+> Si l’interface qui vous annotez est COM, utilisez le formulaire de COM de ces annotations. N’utilisez pas les annotations de COM avec toute autre interface de type.
 
  **Annotations et Descriptions**
 
@@ -471,7 +471,7 @@ Cet article décrit les utilisations courantes des annotations pour les paramèt
      Le paramètre, le champ ou le résultat est dans la plage (limites incluses) à partir de `low` à `hi`.  Équivalent à `_Satisfies_(_Curr_ >= low && _Curr_ <= hi)` qui est appliqué à l’objet annoté avec les conditions d’états préalable ou post-États appropriées.
 
     > [!IMPORTANT]
-    >  Bien que les noms contiennent « in » et « out », la sémantique de `_In_` et `_Out_` faire **pas** s’appliquent à ces annotations.
+    > Bien que les noms contiennent « in » et « out », la sémantique de `_In_` et `_Out_` faire **pas** s’appliquent à ces annotations.
 
 - `_Pre_equal_to_(expr)`
 

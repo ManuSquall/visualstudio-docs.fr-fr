@@ -10,18 +10,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b7bda175575cf1d48e2f0970bf8202a8041fd16
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1fc518281880923f92caf5c517254dc424b49b5c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415276"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2015"></a>Procédure : Migrer des projets d’extensibilité vers Visual Studio 2015
 Voici comment mettre à niveau de votre extension.
 
 > [!IMPORTANT]
->  Si vous souhaitez maintenir une version de votre solution d’extension pour une version antérieure de Visual Studio, veillez à effectuer une copie avant de vous mettre à niveau. Il peut être difficile de revenir de la version mise à niveau à son état précédent.
+> Si vous souhaitez maintenir une version de votre solution d’extension pour une version antérieure de Visual Studio, veillez à effectuer une copie avant de vous mettre à niveau. Il peut être difficile de revenir de la version mise à niveau à son état précédent.
 
 ### <a name="to-upgrade-an-extensibility-solution"></a>Pour mettre à niveau une solution d’extensibilité
 
@@ -52,4 +52,4 @@ Voici comment mettre à niveau de votre extension.
 5. Vous pouvez également commencer à utiliser la version de NuGet du Kit de développement logiciel Visual Studio des outils de génération. Ce package NuGet est [Microsoft.VSSDK.BuildTools](http://www.nuget.org/packages/Microsoft.VSSDK.BuildTools) et une fois ajouté à votre projet inclut les outils nécessaires et cibler les fichiers pour vous permettre de créer votre projet d’extensibilité sur un ordinateur sans le Kit de développement logiciel Visual Studio installé.
 
 > [!NOTE]
->  Il n’est pas nécessaire que vous mettez à jour vos projets d’extensibilité existants pour utiliser les outils et les assemblys de référence NuGet.  Ils peuvent continuer à générer à l’aide des assemblys de référence et les outils installés avec le SDK de Visual Studio.
+> Il n’est pas nécessaire que vous mettez à jour vos projets d’extensibilité existants pour utiliser les outils et les assemblys de référence NuGet.  Ils peuvent continuer à générer à l’aide des assemblys de référence et les outils installés avec le SDK de Visual Studio.

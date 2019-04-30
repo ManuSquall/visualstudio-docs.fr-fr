@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 587d0a3fb571a0cb5934f56fca1ffa0ad34d3086
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4484ec75cf44fc60c72091fb17cce510efdb9cd4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108787"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417030"
 ---
 # <a name="how-to-create-item-templates"></a>Procédure : Créer des modèles d’élément
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Les étapes de la [première procédure](#to-add-a-custom-project-item-template-
      Les fichiers du modèle sont ajoutés à un fichier .zip et copiés dans le répertoire que vous spécifiez dans la boîte de dialogue. L’emplacement par défaut est le dossier **..\Users\\<nom_utilisateur\>\Documents\Visual Studio \<version>\My Exported Templates\\**.  
   
     > [!WARNING]
-    >  Dans les versions antérieures de Visual Studio, l’emplacement par défaut est **..\Users\\<nom_utilisateur\>\Documents\Visual Studio \<version>\Templates\ItemTemplates**.  
+    > Dans les versions antérieures de Visual Studio, l’emplacement par défaut est **..\Users\\<nom_utilisateur\>\Documents\Visual Studio \<version>\Templates\ItemTemplates**.  
   
 ### <a name="to-enable-the-item-template-to-be-used-in-a-store-project"></a>Pour permettre l'utilisation du modèle d'élément dans un projet Windows Store  
   

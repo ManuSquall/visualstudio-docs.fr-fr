@@ -15,12 +15,12 @@ ms.assetid: 84639d86-dd21-4b35-9988-6bb654162488
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4cce7d5d8e3bff5a759fa0f63f5bb9524511c9df
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d10549867c355018e301afa14cf2ba3a8f113e4d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953991"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436309"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>GUID et ID des menus Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -173,14 +173,14 @@ Cette rubrique énumère les valeurs GUID et l’ID des menus et des groupes dan
 |Regrouper|Id|
 |-----------|--------|
 |Exemples|IDG_VS_HELP_SAMPLES|
-|Support|IDG_VS_HELP_SUPPORT|
+|Assistance|IDG_VS_HELP_SUPPORT|
 |À propos de|IDG_VS_HELP_ABOUT|
 
 ## <a name="submenus-of-visual-studio-menus"></a>Sous-menus des Menus de Visual Studio
  La hiérarchie suivante montre les sous-menus qui sont associés les menus dans la barre de menus de Visual Studio. Comme un seul groupe peut avoir un menu en tant que son parent, chaque sous-menu doit descendent d’un groupe dans un menu, au lieu de directement à partir du menu. Pour plus d’informations sur la relation entre les menus, des groupes et des sous-menus, consultez [Ajout d’un sous-menu à un Menu](../../extensibility/adding-a-submenu-to-a-menu.md).
 
 > [!NOTE]
->  Les noms des menus dans la barre de menus de Visual Studio séparément ne figurent pas dans cette hiérarchie, car ils peuvent être déduits à partir de la convention d’affectation de noms pour les groupes dans l’IDE, comme suit : IDG_VS_*nom de Menu*_*nom du groupe*.
+> Les noms des menus dans la barre de menus de Visual Studio séparément ne figurent pas dans cette hiérarchie, car ils peuvent être déduits à partir de la convention d’affectation de noms pour les groupes dans l’IDE, comme suit : IDG_VS_*nom de Menu*_*nom du groupe*.
 
 |Groupe parent|Sous-menu|Groupes enfants|
 |------------------|-------------|------------------|

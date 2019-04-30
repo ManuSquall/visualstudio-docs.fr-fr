@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9c2b8df3878f67207b22127881722aedd8caae8e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6befa20bcda7f30896fb2b04fadefb0eb5f21f8d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775572"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408406"
 ---
 # <a name="advanced-search-operators-in-search-expressions"></a>Opérateurs de recherche avancée dans les expressions de recherche
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "54775572"
 À l’aide des opérateurs de recherche avancée, vous pouvez affiner votre recherche de contenu en créant des expressions de recherche plus complexes parmi ceux qui sont plus simples. Comme le montre le tableau suivant, ces opérateurs limitent le contexte dans lequel une requête s’exécute.  
   
 > [!WARNING]
->  Vous devez entrer les opérateurs de recherche avancée avec un signe deux-points final et sans espace avant ce signe pour que le moteur de recherche les identifie.  
+> Vous devez entrer les opérateurs de recherche avancée avec un signe deux-points final et sans espace avant ce signe pour que le moteur de recherche les identifie.  
   
 |Pour rechercher|Utilisez|Exemple|Résultat|  
 |-------------------|---------|-------------|------------|  
@@ -43,7 +43,7 @@ ms.locfileid: "54775572"
 |Langage de programmation|Utilisez|  
 |--------------------------|---------|  
 |Visual Basic|code:vb<br /><br /> ou<br /><br /> code:visualbasic|  
-|C#|code:C#<br /><br /> ou<br /><br /> code:csharp|  
+|C#|code:c#<br /><br /> ou<br /><br /> code:csharp|  
 |C++|code:cpp<br /><br /> ou<br /><br /> code:c++<br /><br /> ou<br /><br /> code:cplusplus|  
 |F#|code:f#<br /><br /> ou<br /><br /> code:fsharp|  
 |JavaScript|code:javascript<br /><br /> ou<br /><br /> code:js|  

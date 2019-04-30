@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0530e5547fd17e1db84e7164039b507cb4583703
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 836788e0d9d44c7da5dda44ce80f76ab91642dda
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086311"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423963"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Informations sur les paramètres dans un Service de langage hérité
 L’info-bulle d’informations sur les paramètres IntelliSense fournit aux utilisateurs des indications sur l’endroit où elles se trouvent dans une construction de langage.
@@ -27,7 +27,7 @@ L’info-bulle d’informations sur les paramètres IntelliSense fournit aux uti
  Services de langage hérité sont implémentés en tant que partie d’un VSPackage, mais la plus récente pour implémenter des fonctionnalités de service de langage consiste à utiliser des extensions MEF. Pour plus d’informations, consultez [extension de l’éditeur et les Services de langage](../../extensibility/extending-the-editor-and-language-services.md).
 
 > [!NOTE]
->  Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorer les performances de votre service de langage et vous permettent de tirer parti des nouvelles fonctionnalités de l’éditeur.
+> Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorer les performances de votre service de langage et vous permettent de tirer parti des nouvelles fonctionnalités de l’éditeur.
 
 ## <a name="how-parameter-info-tooltips-work"></a>Fonctionnement des info-bulles des informations de paramètre
  Lorsque vous tapez une instruction dans l’éditeur, le package Visual Studio affiche une fenêtre de petite info-bulle contenant la définition de l’instruction tapée. Par exemple, si vous tapez une instruction de Microsoft Foundation Classes (MFC) (tel que `pMainFrame ->UpdateWindow`) et appuyez sur la parenthèse ouvrante touche pour commencer à répertorier les paramètres, une info-bulle de méthode s’affiche pour confirmer la définition de la `UpdateWindow` (méthode).

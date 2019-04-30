@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 85bdd48f37d8b8d60df6821934980bf46ebf29cd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f7e9aee38208a96ab75318a86810359392b5b8e1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948004"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433358"
 ---
 # <a name="customize-your-model-with-profiles-and-stereotypes"></a>Personnaliser votre modèle avec des profils et des stéréotypes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Dans Visual Studio, vous pouvez adapter les éléments de modèle UML standard, 
  ![Une classe UML avec un stéréotype. ](../modeling/media/uml-class-stereotype.png "UML_class_stereotype")  
   
 > [!NOTE]
->  Si vous utilisez un profil pour créer un modèle et le partager avec un autre utilisateur, ce dernier ne pourra consulter les stéréotypes que s'il a installé le même profil sur son ordinateur.  
+> Si vous utilisez un profil pour créer un modèle et le partager avec un autre utilisateur, ce dernier ne pourra consulter les stéréotypes que s'il a installé le même profil sur son ordinateur.  
   
 ## <a name="related-topics"></a>Rubriques connexes  
   

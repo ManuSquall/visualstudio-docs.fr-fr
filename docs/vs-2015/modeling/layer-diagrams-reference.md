@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c9ea6398ca02291bb9dc11693c98336cd33b14b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d281b0ddb15a2acc455acd037c088c133c74c1f1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061986"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440983"
 ---
 # <a name="layer-diagrams-reference"></a>Diagrammes de couche : Référence
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ Dans Visual Studio, vous pouvez utiliser un *diagramme de couche* pour visualise
      **Explorateur de couches** s’ouvre et affiche les artefacts liés aux couches sélectionnées. **Explorateur de couches** a une colonne qui affiche chacune des propriétés des liens d’artefact.  
   
     > [!NOTE]
-    >  Si vous ne voyez pas toutes ces propriétés, développez le **Explorateur de couches** fenêtre.  
+    > Si vous ne voyez pas toutes ces propriétés, développez le **Explorateur de couches** fenêtre.  
   
     |**Colonne dans l’Explorateur de couches**|**Description**|  
     |----------------------------------|---------------------|  

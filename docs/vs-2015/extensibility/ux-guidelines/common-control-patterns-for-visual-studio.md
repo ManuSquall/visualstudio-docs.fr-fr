@@ -8,12 +8,12 @@ ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9644aeed1df42aa3a73af7d2cd7d7fa81bd27684
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 246464baea7e07e4d97e3483b423d200cf2b960c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040829"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430039"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Modèles de contrôle courants pour Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -325,7 +325,7 @@ ms.locfileid: "60040829"
  Certains boutons doivent toujours utiliser une image graphique et n’incluez jamais de texte pour économiser l’espace et éviter les problèmes de localisation. Ceux-ci sont souvent utilisés dans les sélecteurs de champ et les autres listes pouvant être triés.
 
 > [!NOTE]
->  Les utilisateurs doivent TAB pour accéder à ces boutons (il n’existe aucune clé d’accès), par conséquent, les placer dans un ordre cohérent. Mapper la propriété name du bouton à l’action nécessaire afin que les lecteurs d’écran interprètent correctement l’action du bouton.
+> Les utilisateurs doivent TAB pour accéder à ces boutons (il n’existe aucune clé d’accès), par conséquent, les placer dans un ordre cohérent. Mapper la propriété name du bouton à l’action nécessaire afin que les lecteurs d’écran interprètent correctement l’action du bouton.
 
 |||
 |-|-|

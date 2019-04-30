@@ -10,12 +10,12 @@ ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
 caps.latest.revision: 63
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 204c141fb1bb8021ce1908b9c0db7fcf3e0104bc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7b5897f6c4463cc5a3c7928a722ed5a0a09e42b3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059743"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430580"
 ---
 # <a name="creating-an-options-page"></a>Création d’une page d’options
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +92,7 @@ Cette procédure pas à pas crée une page Outils/Options simple qui utilise une
     ```  
   
     > [!NOTE]
-    >  L’implémentation par défaut de <xref:Microsoft.VisualStudio.Shell.DialogPage> prend en charge les propriétés qui ont des convertisseurs appropriés ou qui sont des structures ou des tableaux qui peuvent être étendus dans les propriétés qui ont des convertisseurs appropriés. Pour obtenir la liste des convertisseurs, consultez la <xref:System.ComponentModel> espace de noms.  
+    > L’implémentation par défaut de <xref:Microsoft.VisualStudio.Shell.DialogPage> prend en charge les propriétés qui ont des convertisseurs appropriés ou qui sont des structures ou des tableaux qui peuvent être étendus dans les propriétés qui ont des convertisseurs appropriés. Pour obtenir la liste des convertisseurs, consultez la <xref:System.ComponentModel> espace de noms.  
   
 6. Générez le projet et commencez le débogage.  
   

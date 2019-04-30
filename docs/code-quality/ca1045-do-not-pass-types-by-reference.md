@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f64a7f7c018863e85900da2b09e018d29da4dfe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: d5174d00593b44d51b5628851039b1d0a37753c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922873"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387496"
 ---
 # <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045 : Ne pas passer de types par référence
 
@@ -43,7 +43,7 @@ ms.locfileid: "55922873"
  Bien que les valeurs de retour soient banales et très utilisées, l’application correcte de `out` et `ref` paramètres nécessite une conception intermédiaire et compétences de codage. Architectes de bibliothèque de conception destiné à une audience générale ne doit pas s’attendre aux utilisateurs de maîtrisent l’utilisation des `out` ou `ref` paramètres.
 
 > [!NOTE]
->  Lorsque vous travaillez avec des paramètres qui sont des structures de grande taille, les ressources supplémentaires qui sont requises pour copier ces structures peut entraîner un effet sur les performances lorsque vous passez par valeur. Dans ce cas, vous pouvez envisager d’utiliser `ref` ou `out` paramètres.
+> Lorsque vous travaillez avec des paramètres qui sont des structures de grande taille, les ressources supplémentaires qui sont requises pour copier ces structures peut entraîner un effet sur les performances lorsque vous passez par valeur. Dans ce cas, vous pouvez envisager d’utiliser `ref` ou `out` paramètres.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle est dû à un type valeur, que la méthode retourne l’objet comme sa valeur de retour. Si la méthode doit retourner plusieurs valeurs, reconcevoir pour retourner une instance unique d’un objet qui contient les valeurs.

@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7ae934de4a9f0dbcf4076d7402abd138eac20268
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f2a89344785f997f3b878df7d827db6e4732860b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104874"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63384007"
 ---
 # <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>Procédure : Utiliser Graphics Diagnostics avec un appareil ARM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Graphics Diagnostics prend en charge le débogage distant des applications Direc
 2. Installer le [les outils de débogage à distance](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015) sur votre appareil ARM.  
   
 > [!IMPORTANT]
->  Pour les appareils Windows Phone 8.1, vous serez peut-être amené à inscrire votre téléphone pour le développement. Pour cela, vous devez être inscrit en tant que développeur. Pour plus d’informations, consultez [comment déployer et exécuter une application pour Windows Phone 8](http://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx).  
+> Pour les appareils Windows Phone 8.1, vous serez peut-être amené à inscrire votre téléphone pour le développement. Pour cela, vous devez être inscrit en tant que développeur. Pour plus d’informations, consultez [comment déployer et exécuter une application pour Windows Phone 8](http://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx).  
   
  Une fois le débogage distant activé sur votre appareil, faites-en votre cible de débogage et démarrez Graphics Diagnostics.  
   

@@ -14,12 +14,12 @@ ms.assetid: e6c0e636-5ec3-450e-b395-fc4bb9d75918
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 350f0c873a0b6692d16dcbc987db32b63f68be72
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 643ffd8dc48eb6b0fc35ea035c8c599efbea85c6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952230"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438955"
 ---
 # <a name="options-and-options-pages"></a>Options et pages Options
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ En cliquant sur **Options** sur le **outils** menu ouvre le **Options** boîte d
 - <xref:System.ComponentModel.DescriptionAttribute> Détermine la description de l’option.  
   
   > [!NOTE]
-  >  Attributs équivalents, SRCategory, LocDisplayName et SRDescription, utilisez les ressources de type chaîne pour la localisation et sont définies dans le [exemple de projet managé](http://go.microsoft.com/fwlink/?LinkId=122774).  
+  > Attributs équivalents, SRCategory, LocDisplayName et SRDescription, utilisez les ressources de type chaîne pour la localisation et sont définies dans le [exemple de projet managé](http://go.microsoft.com/fwlink/?LinkId=122774).  
   
   Prenons le fragment de code suivant :  
   
@@ -86,4 +86,4 @@ En cliquant sur **Options** sur le **outils** menu ouvre le **Options** boîte d
  Le chemin d’accès de Registre de la propriété d’automation est déterminée en combinant <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, le mot, AutomationProperties et les options page catégorie et le nom. Par exemple, si la page d’options possède la catégorie de ma catégorie, le nom de ma Page de grille et le <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp, la propriété d’automation a la clé de Registre HKEY_LOCAL_MACHINE\SOFTWARE\ Page de grille Microsoft\VisualStudio\8.0Exp\AutomationProperties\My catégorie\Ma.  
   
 > [!NOTE]
->  Le nom canonique, ma Page de grille Category.My, est la valeur de la sous-clé de nom de cette clé.
+> Le nom canonique, ma Page de grille Category.My, est la valeur de la sous-clé de nom de cette clé.

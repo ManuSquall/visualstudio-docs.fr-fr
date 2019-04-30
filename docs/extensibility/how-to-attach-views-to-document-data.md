@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa4679b4e9cf9356921be47afb726c45216974ab
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: b53748546633f8944ef0bd47ebc01326b322165e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701392"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417110"
 ---
 # <a name="how-to-attach-views-to-document-data"></a>Procédure : Joindre des vues de données de document
 Si vous avez une nouvelle vue de document, vous pourrez peut-être joindre à un objet de données de document existant.
@@ -37,7 +37,7 @@ Si vous avez une nouvelle vue de document, vous pourrez peut-être joindre à un
 4. Si vous fermez ce document, Visual Studio appelle votre fabrique d’éditeur pour une deuxième fois. Sur cet appel, le `DocDataExisting` paramètre est égal à NULL. Votre implémentation de fabrique d’éditeur permettre ensuite ouvrir l’objet de données dans votre propre éditeur.
 
    > [!NOTE]
-   >  Pour déterminer si vous pouvez travailler avec un objet de données de document existant, vous pouvez également utiliser une connaissance privée de l’implémentation d’interface en effectuant un cast d’un pointeur vers le texte réel [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] classe de votre implémentation privée. Par exemple, tous les éditeurs standards implémentent `IVsPersistFileFormat`, qui hérite de <xref:Microsoft.VisualStudio.OLE.Interop.IPersist>. Par conséquent, vous pouvez appeler `QueryInterface` pour <xref:Microsoft.VisualStudio.OLE.Interop.IPersist.GetClassID%2A>, et si l’ID de classe sur l’objet de données de document existant correspond à votre mise en œuvre des ID de classe, puis vous pouvez travailler avec l’objet de données de document.
+   > Pour déterminer si vous pouvez travailler avec un objet de données de document existant, vous pouvez également utiliser une connaissance privée de l’implémentation d’interface en effectuant un cast d’un pointeur vers le texte réel [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] classe de votre implémentation privée. Par exemple, tous les éditeurs standards implémentent `IVsPersistFileFormat`, qui hérite de <xref:Microsoft.VisualStudio.OLE.Interop.IPersist>. Par conséquent, vous pouvez appeler `QueryInterface` pour <xref:Microsoft.VisualStudio.OLE.Interop.IPersist.GetClassID%2A>, et si l’ID de classe sur l’objet de données de document existant correspond à votre mise en œuvre des ID de classe, puis vous pouvez travailler avec l’objet de données de document.
 
 ## <a name="robust-programming"></a>Programmation fiable
  Lorsque Visual Studio appelle votre implémentation de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> (méthode), il passe à nouveau un pointeur à l’objet de données de document existant dans le `punkDocDataExisting` paramètre, s’il en existe. Examiner l’objet de données de document renvoyé dans `punkDocDataExisting` pour déterminer si l’objet de données est appropriée pour votre éditeur, comme indiqué dans la Remarque à l’étape 4 de la procédure décrite dans cette rubrique. Si c’est approprié, puis votre fabrique d’éditeur doit fournir une deuxième vue pour les données, comme indiqué dans [prendre en charge plusieurs vues de document](../extensibility/supporting-multiple-document-views.md). Si ce n’est pas le cas, puis il doit afficher un message d’erreur approprié.
