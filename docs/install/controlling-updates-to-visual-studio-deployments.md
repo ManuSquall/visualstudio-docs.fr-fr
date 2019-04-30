@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a58ee5350467ae2b2eea74b4f929fac69b75c071
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: d4ce4621fc2fa32f2730c0ce6cdd0618a44386b2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974184"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>Contrôler les mises à jour applicables aux déploiements de Visual Studio à partir du réseau
 
@@ -33,13 +33,17 @@ Par défaut, Visual Studio continue de rechercher en ligne des mises à jour mê
 Si vous souhaitez un contrôle direct sur l’emplacement où Visual Studio recherche les mises à jour, vous pouvez changer l’emplacement où il effectue sa recherche. Vous pouvez également déterminer la version avec laquelle vos utilisateurs sont mis à jour. Pour cela, suivez ces étapes :
 
 1. Créez une disposition en mode hors connexion :
+
    ```cmd
    vs_enterprise.exe --layout C:\vsoffline --lang en-US
    ```
+
 2. Copiez-la dans le partage de fichiers dans lequel vous souhaitez l’héberger :
+
    ```cmd
    xcopy /e C:\vsoffline \\server\share\VS
    ```
+
 3. Modifiez le fichier response.json dans la disposition et modifiez la valeur `channelUri` pour qu’elle pointe vers une copie de channelManifest.json que contrôle l’administrateur.
 
    Veillez à placer une séquence d’échappement avec les barres obliques inverses dans la valeur, comme dans l’exemple suivant :
@@ -49,6 +53,7 @@ Si vous souhaitez un contrôle direct sur l’emplacement où Visual Studio rech
    ```
 
    Les utilisateurs finaux peuvent maintenant exécuter le programme d’installation à partir de ce partage pour installer Visual Studio.
+
    ```cmd
    \\server\share\VS\vs_enterprise.exe
    ```
@@ -56,13 +61,17 @@ Si vous souhaitez un contrôle direct sur l’emplacement où Visual Studio rech
 Quand un administrateur d’entreprise détermine que le moment est venu pour les utilisateurs d’effectuer une mise à jour vers une version plus récente de Visual Studio, il peut [mettre à jour l’emplacement de la disposition](update-a-network-installation-of-visual-studio.md) pour intégrer les fichiers mis à jour, comme suit.
 
 1. Utilisez une commande semblable à la commande suivante :
+
    ```cmd
    vs_enterprise.exe --layout \\server\share\VS --lang en-US
    ```
+
 2. Vérifiez que le fichier response.json de la disposition mise à jour contient toujours vos personnalisations, en particulier la modification de channelUri, comme suit :
+
    ```json
    "channelUri":"\\\\server\\share\\VS\\ChannelManifest.json"
    ```
+
    Les installations existantes de Visual Studio à partir de cette disposition recherchent les mises à jour sur `\\server\share\VS\ChannelManifest.json`. Si le fichier channelManifest.json est plus récent que celui que l’utilisateur a installé, Visual Studio informe l’utilisateur qu’une mise à jour est disponible.
 
    Les nouvelles installations installent automatiquement la version mise à jour de Visual Studio, directement à partir de la disposition.
@@ -94,6 +103,7 @@ Comme Visual Studio 2017 [stocke les entrées de Registre dans un Registre priv
 ```cmd
 vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" HKCU ExtensionManager AutomaticallyCheckForUpdates2Override dword 0
 ```
+
 ::: moniker-end
 
 ::: moniker range="vs-2019"
@@ -119,3 +129,4 @@ vsregedit.exe set "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterpris
 * [Guide de l’administrateur Visual Studio](visual-studio-administrator-guide.md)
 * [Utiliser les paramètres de ligne de commande pour installer Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [Outils de gestion des instances de Visual Studio](tools-for-managing-visual-studio-instances.md)
+* [Cycle de vie et maintenance des produits Visual Studio](/visualstudio/releases/2019/servicing/)

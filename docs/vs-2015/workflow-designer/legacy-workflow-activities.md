@@ -14,11 +14,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: fa5a6da8d45435fc7c755905a19e95e90a98ad57
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953875"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000149"
 ---
 # <a name="legacy-workflow-activities"></a>Activités de workflow héritées
 [!INCLUDE[wf](../includes/wf-md.md)] inclut un ensemble d'activités par défaut qui fournit les fonctionnalités utilisées pour le flux de contrôle, les conditions, la gestion des événements, la gestion des états et pour communiquer avec les applications et les services. Lorsque vous concevez des workflows, vous pouvez utiliser les activités fournies par le système via [!INCLUDE[wfd1](../includes/wfd1-md.md)], ou vous pouvez créer vos propres activités personnalisées.  

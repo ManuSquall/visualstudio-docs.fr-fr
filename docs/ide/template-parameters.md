@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 211b2cef552fb7d079ba7b403b9dafb266b400e2
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 7442eebcd566470616382367fbdaad5cce774155
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355670"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950343"
 ---
 # <a name="template-parameters"></a>Paramètres de modèle
 
@@ -52,12 +52,12 @@ Le tableau suivant liste les paramètres de modèle réservés qui peuvent être
 |clrversion|Version actuelle du Common Language Runtime (CLR).|
 |ext_*|Ajoutez le préfixe `ext_` à n’importe quel paramètre pour référencer les variables du modèle parent. Par exemple, `ext_safeprojectname`.|
 |guid[1-10]|GUID utilisé pour remplacer le GUID du projet dans un fichier projet. Vous pouvez spécifier jusqu’à 10 GUID uniques (par exemple, `guid1`).|
-|itemname|Nom fourni par l’utilisateur dans la boîte de dialogue **Ajouter un nouvel élément**.|
+|itemname|Le nom du fichier dans lequel le paramètre est utilisé.|
 |machinename|Nom de l’ordinateur actuel (par exemple, Ordi01).|
 |projectname|Nom fourni par l’utilisateur quand le projet a été créé.|
 |registeredorganization|Valeur de clé de Registre provenant de HKLM\Software\Microsoft\Windows NT\CurrentVersion\RegisteredOrganization.|
 |rootnamespace|Espace de noms racine du projet actuel. Ce paramètre s’applique uniquement aux modèles d’élément.|
-|safeitemname|Nom fourni par l’utilisateur dans la boîte de dialogue **Ajouter un nouvel élément**, dont tous les caractères et espaces potentiellement dangereux ont été supprimés.|
+|safeitemname|Identique à `itemname`, mais avec tous les caractères et espaces potentiellement dangereux supprimés.|
 |safeprojectname|Nom fourni par l’utilisateur quand le projet a été créé, dont tous les caractères et espaces potentiellement dangereux ont été supprimés.|
 |heure|Date et heure actuelles au format JJ/MM/AAAA 00:00:00.|
 |SpecificSolutionName|Nom du fichier solution. Quand l’option "créer le répertoire de la solution" est cochée, `SpecificSolutionName` porte le nom de la solution. Quand l’option "créer le répertoire de solution" n’est pas cochée, `SpecificSolutionName` est vide.|

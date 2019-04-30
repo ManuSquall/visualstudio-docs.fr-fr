@@ -8,11 +8,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 89436ba28cd47463709fca9b7d6293dab934b549
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993545"
 ---
 # <a name="how-to--with-text-templates"></a>Comment : écrire avec des modèles de texte
 Modèles de texte dans Visual Studio fournissent un moyen utile de génération de texte quelconque. Vous pouvez utiliser des modèles de texte pour générer du texte en cours d’exécution dans le cadre de votre application et au moment du design pour générer une partie de votre code de projet. Cette rubrique récapitule les plus fréquemment posées « Comment faire... ? » questions.

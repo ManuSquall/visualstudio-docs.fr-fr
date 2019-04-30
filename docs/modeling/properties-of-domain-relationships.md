@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a2693994c9ead711f3bb536d0e37f485bc00047b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938174"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62998909"
 ---
 # <a name="properties-of-domain-relationships"></a>Propriétés des relations de domaine
 Les propriétés dans le tableau suivant sont associées à une relation de domaine. Pour plus d’informations sur les relations de domaine, consultez [présentation des modèles, des Classes et des relations](../modeling/understanding-models-classes-and-relationships.md). Pour plus d’informations sur l’utilisation de ces propriétés, consultez [personnalisation et extension d’un langage spécifique à un domaine](../modeling/customizing-and-extending-a-domain-specific-language.md).
@@ -29,11 +29,11 @@ Les propriétés dans le tableau suivant sont associées à une relation de doma
 |Autorise les doublons|Si `True`, des liens en double de la relation de domaine peuvent être créés entre les deux mêmes éléments.|`False`|
 |Relations de base|Si la relation de domaine est dérivée, la relation de base de la relation de domaine.|\<aucune>|
 |Est l’incorporation|Si `True`, la relation de domaine est une relation d’incorporation. Si `False`, la relation est une relation de référence.|\<both>|
-|Name|Le nom de la relation de domaine.|Nom actuel|
+|Nom|Le nom de la relation de domaine.|Nom actuel|
 |Espace de noms|L’espace de noms qui est affilié à la relation de domaine.|Espace de noms actuel|
 |Notes|Remarques informelles associées à la relation de domaine.|\<aucune>|
 |Description|La description qui est utilisée pour documenter le code et est utilisée dans l’interface utilisateur du concepteur généré.|\<aucune>|
-|Nom complet|Le nom qui s’affiche dans le concepteur généré pour la relation de domaine.|\<aucune>|
+|Display Name|Le nom qui s’affiche dans le concepteur généré pour la relation de domaine.|\<aucune>|
 |Help Keyword|Le mot clé facultatif qui est utilisé pour indexer l’aide F1 pour la relation de domaine.|\<aucune>|
 
 ## <a name="see-also"></a>Voir aussi
