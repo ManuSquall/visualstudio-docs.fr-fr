@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 073e62b473ebfcec5f71ae1907e8f9e385333411
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596645"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967544"
 ---
 # <a name="differences-between-sandboxed-and-farm-solutions"></a>Différences entre le bac à sable et les solutions de batterie
   Lorsque vous compilez une solution SharePoint, il déploie sur le serveur SharePoint et un débogueur est attaché pour le déboguer. Le processus utilisé pour déboguer la solution varie selon le paramètre de la propriété Solution bac à sable : solution bac à sable ou la solution de batterie de serveurs.

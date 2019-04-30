@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 090b494e904fbef1c0d3d8b380f7a184a6042788
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58150944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953996"
 ---
 # <a name="active-script-constants-enumerations-and-error-codes"></a>Script actif, constantes, énumérations et codes d'erreur
 Cette section décrit les énumérations et les codes d’erreur utilisés dans les moteurs de script Windows.  

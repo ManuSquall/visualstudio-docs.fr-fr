@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 995b002784c1e76ceed36e51edb1ae893448f448
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628440"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62927537"
 ---
 # <a name="ltpublisheridentitygt-element-clickonce-deployment"></a>&lt;publisherIdentity&gt; , élément (déploiement ClickOnce)
 Contient des informations sur l'éditeur qui a signé ce manifeste de déploiement.
@@ -49,8 +49,8 @@ Contient des informations sur l'éditeur qui a signé ce manifeste de déploieme
 
 ## <a name="exceptions"></a>Exceptions
 
-## <a name="remarks"></a>Remarques
+## <a name="remarks"></a>Notes
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
 
 ## <a name="subhead"></a>Sous-titre
