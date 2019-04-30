@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 12a5f19574974ce8d3928997a6b02bbf59062d89
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0213df05e12ae69b4e24841971a518acc008599f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419414"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>Procédure : Exposer du code à VBA dans un projet Visual Basic
   Vous pouvez exposer du code dans un [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] projet vers Visual Basic pour Applications (VBA), si vous souhaitez que les deux types de code pour interagir avec eux.
@@ -50,7 +50,7 @@ ms.locfileid: "60101318"
      Pour plus d’informations sur les formats de fichier de document qui prennent en charge les macros, consultez [combiner de VBA et de personnalisations au niveau du document](../vsto/combining-vba-and-document-level-customizations.md).
 
     > [!NOTE]
-    >  Cette fonctionnalité ne peut pas être utilisée dans les projets de modèle Word.
+    > Cette fonctionnalité ne peut pas être utilisée dans les projets de modèle Word.
 
 2. Assurez-vous que le code VBA dans le document est autorisé à s’exécuter sans inviter l’utilisateur à activer les macros. Vous pouvez approuver le code VBA à exécuter en ajoutant l'emplacement du projet Office à la liste des emplacements approuvés dans les paramètres du Centre de gestion de la confidentialité pour Word ou Excel.
 
@@ -65,7 +65,7 @@ ms.locfileid: "60101318"
      Une fois que vous définissez cette propriété, Visual Studio définit automatiquement le **ReferenceAssemblyFromVbaProject** propriété **True**.
 
     > [!NOTE]
-    >  Si le classeur ou le document ne contient-elle pas déjà du code VBA, ou si le code VBA dans le document n’est pas approuvé, vous recevrez un message d’erreur lorsque vous définissez la **EnableVbaCallers** propriété **True**. Cela est dû au fait que Visual Studio ne peut pas modifier le projet VBA dans le document dans cette situation.
+    > Si le classeur ou le document ne contient-elle pas déjà du code VBA, ou si le code VBA dans le document n’est pas approuvé, vous recevrez un message d’erreur lorsque vous définissez la **EnableVbaCallers** propriété **True**. Cela est dû au fait que Visual Studio ne peut pas modifier le projet VBA dans le document dans cette situation.
 
 5. Cliquez sur **OK** dans le message qui s'affiche. Ce message vous rappelle que si vous ajoutez du code VBA au classeur ou un document lorsque vous exécutez le projet à partir de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], le code VBA seront perdu lors de la prochaine fois que vous générez le projet. Il s’agit, car le document dans le dossier de sortie de génération est remplacé chaque fois que vous générez le projet.
 
@@ -83,7 +83,7 @@ ms.locfileid: "60101318"
      Pour plus d’informations sur les formats de fichier de document qui prennent en charge les macros, consultez [combiner de VBA et de personnalisations au niveau du document](../vsto/combining-vba-and-document-level-customizations.md).
 
     > [!NOTE]
-    >  Cette fonctionnalité ne peut pas être utilisée dans les projets de modèle Word.
+    > Cette fonctionnalité ne peut pas être utilisée dans les projets de modèle Word.
 
 2. Assurez-vous que le code VBA dans le document est autorisé à s’exécuter sans inviter l’utilisateur à activer les macros. Vous pouvez approuver le code VBA à exécuter en ajoutant l'emplacement du projet Office à la liste des emplacements approuvés dans les paramètres du Centre de gestion de la confidentialité pour Word ou Excel.
 
@@ -109,7 +109,7 @@ ms.locfileid: "60101318"
 7. Dans la fenêtre **Propriétés** , sélectionnez la propriété **ReferenceAssemblyFromVbaProject** et remplacez sa valeur par **True**.
 
     > [!NOTE]
-    >  Si le classeur ou le document ne contient-elle pas déjà du code VBA, ou si le code VBA dans le document n’est pas approuvé, vous recevrez un message d’erreur lorsque vous définissez la **ReferenceAssemblyFromVbaProject** propriété **True** . Cela est dû au fait que Visual Studio ne peut pas modifier le projet VBA dans le document dans cette situation.
+    > Si le classeur ou le document ne contient-elle pas déjà du code VBA, ou si le code VBA dans le document n’est pas approuvé, vous recevrez un message d’erreur lorsque vous définissez la **ReferenceAssemblyFromVbaProject** propriété **True** . Cela est dû au fait que Visual Studio ne peut pas modifier le projet VBA dans le document dans cette situation.
 
 8. Cliquez sur **OK** dans le message qui s'affiche. Ce message vous rappelle que si vous ajoutez du code VBA au classeur ou un document lorsque vous exécutez le projet à partir de [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], le code VBA seront perdu lors de la prochaine fois que vous générez le projet. Il s’agit, car le document dans le dossier de sortie de génération est remplacé chaque fois que vous générez le projet.
 

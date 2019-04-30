@@ -13,12 +13,12 @@ caps.latest.revision: 44
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d0b98d57500ad2115abfcbd229d29009afdda059
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9fbdaf845d780935b238bac2ba2c2e7cb0c53b59
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114224"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437830"
 ---
 # <a name="capturing-graphics-information"></a>Capture d'informations graphiques
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Capturez les informations graphiques de votre application Direct3D pour pouvoir 
 - Appuyez sur la touche Impr. écran du clavier.  
   
   > [!NOTE]
-  >  Quand une application s’exécute sous **Graphics Diagnostics**, la touche Impr. écran sert uniquement à capturer un frame d’informations graphiques. Elle n’effectue pas sa fonction habituelle. Cela reste en vigueur jusqu'à ce que vous ayez arrêté de capturer des informations graphiques (en général en arrêtant le débogage ou en quittant l'application normalement) même si une autre application est dans le focus.  
+  > Quand une application s’exécute sous **Graphics Diagnostics**, la touche Impr. écran sert uniquement à capturer un frame d’informations graphiques. Elle n’effectue pas sa fonction habituelle. Cela reste en vigueur jusqu'à ce que vous ayez arrêté de capturer des informations graphiques (en général en arrêtant le débogage ou en quittant l'application normalement) même si une autre application est dans le focus.  
   
 - Dans l’interface de capture de Visual Studio, choisissez le **capturer le Frame** bouton situé au-dessus de la **session de Diagnostic** chronologie, ou choisissez le grand **capturer le Frame** bouton situé sous le **images par seconde** couloirs et à droite des frames précédemment capturés. Les deux boutons sont mis en évidence dans l'image ci-dessous.  
   

@@ -15,12 +15,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3b2421a8c1002e8fed1830a9de51383c35c01393
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ecfd329e0e5c096e6e0c2011b60cd97dcd1c2937
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059225"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433817"
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>Guide du débutant en profilage des performances
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les 
  Si **l’échantillonnage** ne vous fournit pas les données dont vous avez besoin, les méthodes de collecte d’autres outils de profilage fournissent des types d’informations différents qui peuvent vous être utiles. Pour plus d’informations sur ces autres méthodes, consultez [Guide pratique pour Choisissez les méthodes de collecte](../profiling/how-to-choose-collection-methods.md).  
   
 > [!TIP]
->  Si vous profilez du code qui appelle des fonctions Windows, vous devez vous assurer que vous disposez des fichiers .pdb les plus récents. Sans ces fichiers, vos vues de rapports répertorient des noms de fonctions Windows cryptés et difficiles à comprendre. Pour savoir comment vérifier que vous disposez des fichiers dont vous avez besoin, consultez [Guide pratique pour Informations de symboles de référence Windows](../profiling/how-to-reference-windows-symbol-information.md).  
+> Si vous profilez du code qui appelle des fonctions Windows, vous devez vous assurer que vous disposez des fichiers .pdb les plus récents. Sans ces fichiers, vos vues de rapports répertorient des noms de fonctions Windows cryptés et difficiles à comprendre. Pour savoir comment vérifier que vous disposez des fichiers dont vous avez besoin, consultez [Guide pratique pour Informations de symboles de référence Windows](../profiling/how-to-reference-windows-symbol-information.md).  
   
 ## <a name="Step1"></a> Créer et exécuter une session de performance  
  Pour obtenir les données que vous devez analyser, vous devez d'abord créer une session de performance, puis exécuter cette session. **L’Assistant Performance** vous permet de faire les deux.  
@@ -46,7 +46,7 @@ Vous pouvez utiliser les outils de profilage de Visual Studio pour analyser les 
 1. Ouvrez la solution dans Visual Studio. Définissez la configuration en Release. (Recherchez la zone **Configurations de solutions** de la barre d’outils, qui a par défaut la valeur **Debug**. Remplacez-la par **Release**.)  
   
     > [!IMPORTANT]
-    >  Si vous n'êtes pas administrateur sur l'ordinateur que vous utilisez, vous devez exécuter Visual Studio en tant qu'administrateur lorsque vous utilisez le profileur. Cliquez avec le bouton droit sur l’icône de l’application Visual Studio, puis cliquez sur **Exécuter en tant qu’administrateur**.  
+    > Si vous n'êtes pas administrateur sur l'ordinateur que vous utilisez, vous devez exécuter Visual Studio en tant qu'administrateur lorsque vous utilisez le profileur. Cliquez avec le bouton droit sur l’icône de l’application Visual Studio, puis cliquez sur **Exécuter en tant qu’administrateur**.  
   
 2. Dans le menu **Déboguer**, cliquez sur **Profileur de performances**.  
   

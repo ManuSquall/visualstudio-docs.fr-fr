@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 99fdded48ab720e7b5efbe0e4801926fe4c4c64a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4a13d0b648be87f1378ae74e6f321c1c369d7795
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427065"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Mise en route des langages spécifiques à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ Cette rubrique explique les concepts de base dans la définition et utilisation 
     Une solution contenant deux projets est générée. Ils sont nommés Dsl et DslPackage. Un fichier de diagramme s’ouvre qui est nommé DslDefinition.dsl.  
   
    > [!NOTE]
-   >  La plupart du code que vous pouvez le voir dans les dossiers dans les deux projets est généré à partir de DslDefinition.dsl. Pour cette raison, la plupart des modifications à votre solution DSL sont effectuées dans ce fichier.  
+   > La plupart du code que vous pouvez le voir dans les dossiers dans les deux projets est généré à partir de DslDefinition.dsl. Pour cette raison, la plupart des modifications à votre solution DSL sont effectuées dans ce fichier.  
   
    L'interface utilisateur ressemble maintenant à l'image suivante.  
   
@@ -104,7 +104,7 @@ Cette rubrique explique les concepts de base dans la définition et utilisation 
 1. Cliquez sur **transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions. Cette opération régénère la plupart du code source à partir de DslDefinition.dsl.  
   
    > [!NOTE]
-   >  Chaque fois que vous modifiez DslDefinition.dsl, vous devez cliquer sur **transformer tous les modèles** avant de reconstruire la solution. Vous pouvez automatiser cette étape. Pour plus d’informations, consultez [comment automatiser transformer tous les modèles](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+   > Chaque fois que vous modifiez DslDefinition.dsl, vous devez cliquer sur **transformer tous les modèles** avant de reconstruire la solution. Vous pouvez automatiser cette étape. Pour plus d’informations, consultez [comment automatiser transformer tous les modèles](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 2. Appuyez sur F5, ou sur le **déboguer** menu, cliquez sur **démarrer le débogage**.  
   
@@ -171,7 +171,7 @@ Cette rubrique explique les concepts de base dans la définition et utilisation 
    Vous pouvez ajouter n’importe quel nombre de fichiers de modèle de texte à un projet. Chaque modèle génère un fichier de résultat.  
   
 > [!NOTE]
->  Lorsque vous modifiez la définition DSL, l’exemple de code de modèle de texte ne fonctionne pas, sauf si vous mettez à jour.  
+> Lorsque vous modifiez la définition DSL, l’exemple de code de modèle de texte ne fonctionne pas, sauf si vous mettez à jour.  
   
  Pour plus d’informations, consultez [génération du Code à partir d’un langage spécifique à un domaine](../modeling/generating-code-from-a-domain-specific-language.md) et [écriture du Code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
@@ -179,7 +179,7 @@ Cette rubrique explique les concepts de base dans la définition et utilisation 
  Lorsque vous souhaitez modifier la définition DSL, fermez l’instance expérimentale et mettre à jour de la définition dans le principal [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instance.  
   
 > [!NOTE]
->  Une fois que vous avez modifié la définition DSL, vous risquez de perdre des informations dans les modèles de test que vous avez créé à l’aide de versions antérieures.  Par exemple, la solution de débogage contient un fichier nommé exemple, qui contient des formes et les connecteurs. Une fois que vous commencez à développer votre définition DSL, ils ne seront pas visibles, et ils seront perdus lorsque vous enregistrez le fichier.  
+> Une fois que vous avez modifié la définition DSL, vous risquez de perdre des informations dans les modèles de test que vous avez créé à l’aide de versions antérieures.  Par exemple, la solution de débogage contient un fichier nommé exemple, qui contient des formes et les connecteurs. Une fois que vous commencez à développer votre définition DSL, ils ne seront pas visibles, et ils seront perdus lorsque vous enregistrez le fichier.  
   
  Un large éventail d’extensions possibles pour votre DSL. Les exemples suivants vous donner une impression des possibilités.  
   
@@ -285,7 +285,7 @@ Cette rubrique explique les concepts de base dans la définition et utilisation 
          Définissez son nom, par exemple **Town**.  
   
         > [!NOTE]
-        >  Chaque classe de domaine à l’exception de la racine du modèle doit être la cible d’au moins une relation d’incorporation, ou il doit hériter d’une classe qui est la cible d’une imbrication. Pour cette raison, il est souvent pratique de créer une classe de domaine à l’aide de l’outil de relation d’incorporation.  
+        > Chaque classe de domaine à l’exception de la racine du modèle doit être la cible d’au moins une relation d’incorporation, ou il doit hériter d’une classe qui est la cible d’une imbrication. Pour cette raison, il est souvent pratique de créer une classe de domaine à l’aide de l’outil de relation d’incorporation.  
   
     2. Ajouter une propriété de domaine à la nouvelle classe, par exemple **nom**.  
   
@@ -296,7 +296,7 @@ Cette rubrique explique les concepts de base dans la définition et utilisation 
          ![Fragment de définition DSL : racine d’arbre généalogique](../modeling/media/familyt-root.png "FamilyT_Root")  
   
         > [!NOTE]
-        >  Référence représentent des références croisées à partir d’une partie de l’arborescence du modèle vers un autre.  
+        > Référence représentent des références croisées à partir d’une partie de l’arborescence du modèle vers un autre.  
   
 3. Ajoutez une forme pour représenter des villes sur les diagrammes de modèle.  
   

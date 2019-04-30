@@ -13,12 +13,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3b619421c2d1eb9d8c2a4853c7a6ce5c3fbb7ea7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6b3c2a7e23aba13cbe843c33510a81b66ba2b815
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445414"
 ---
 # <a name="select-rule-set-dialog-box-legacy"></a>Sélectionner l'ensemble de règles, boîte de dialogue (héritée)
 Cette rubrique décrit comment utiliser le **sélectionner l’ensemble de règles** boîte de dialogue dans les anciennes [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -39,7 +39,7 @@ Cette rubrique décrit comment utiliser le **sélectionner l’ensemble de règl
  Pour plus d’informations sur la façon de créer et modifier des ensembles de règles, consultez [règle éditeur de boîte de dialogue (hérité)](../workflow-designer/rule-set-editor-dialog-box-legacy.md).  
   
 > [!WARNING]
->  L'éditeur de règles du [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité utilisé pour cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] ne prend pas en charge le multi-ciblage.  
+> L'éditeur de règles du [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité utilisé pour cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] ne prend pas en charge le multi-ciblage.  
   
  Pour plus d’informations sur les conditions, consultez [à l’aide de Conditions dans les Workflows](http://go.microsoft.com/fwlink?LinkID=65009).  
   

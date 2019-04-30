@@ -19,12 +19,12 @@ caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a6fe3d3f144b192ef14ff52c942c75d9edd1be85
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 41b3e662668967d07e2a304d589d498dd2c7b51d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076209"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446104"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Vous pouvez télécharger les outils à distance directement sur l’appareil ou
 2. Sur la page de téléchargement, choisissez la version des outils qui correspond à votre système d’exploitation (x 86, x64 ou ARM version) et téléchargez les outils à distance.
   
     > [!IMPORTANT]
-    >  Nous vous recommandons de qu'installer la version la plus récente des outils à distance qui correspond à votre version de Visual Studio. Versions incompatibles ne sont pas recommandées.  
+    > Nous vous recommandons de qu'installer la version la plus récente des outils à distance qui correspond à votre version de Visual Studio. Versions incompatibles ne sont pas recommandées.  
     >   
     >  En outre, vous devez installer les outils à distance qui ont la même architecture que le système d’exploitation sur lequel vous souhaitez l’installer. En d’autres termes, si vous souhaitez déboguer une application 32 bits sur un ordinateur distant exécutant un système d’exploitation de 64 bits, vous devez installer la version 64 bits des outils à distance sur l’ordinateur distant.  
   
@@ -145,7 +145,7 @@ Vous pouvez trouver le débogueur distant (**msvsmon.exe**) sur un ordinateur av
    Pour obtenir la liste des numéros de port utilisés par défaut, consultez [Remote Debugger Port Assignments](../debugger/remote-debugger-port-assignments.md).  
   
    > [!WARNING]
-  >  Vous pouvez choisir d'exécuter les outils de contrôle à distance en mode Aucune authentification, mais ce mode est fortement déconseillé. Il n'existe aucune sécurité du réseau lorsque vous lancez l'exécution dans ce mode. Sélectionnez le mode Aucune authentification uniquement si vous êtes sûr que le réseau n’est pas exposé à des failles de sécurité liées à des programmes malveillants ou du trafic dangereux.
+  > Vous pouvez choisir d'exécuter les outils de contrôle à distance en mode Aucune authentification, mais ce mode est fortement déconseillé. Il n'existe aucune sécurité du réseau lorsque vous lancez l'exécution dans ce mode. Sélectionnez le mode Aucune authentification uniquement si vous êtes sûr que le réseau n’est pas exposé à des failles de sécurité liées à des programmes malveillants ou du trafic dangereux.
 
 ## <a name="bkmk_configureService"></a> (Facultatif) Configurer le débogueur distant en tant que service
  Pour déboguer dans ASP.NET et d’autres environnements de serveur, vous devez exécuter le débogueur distant en tant qu’administrateur ou, si vous souhaitez qu’il est toujours en cours d’exécution, exécutez le débogueur distant en tant que service.
@@ -160,7 +160,7 @@ Vous pouvez trouver le débogueur distant (**msvsmon.exe**) sur un ordinateur av
   
 4. Ajoutez le nom du compte d’utilisateur et le mot de passe.  
   
-    Vous devez peut-être ajouter le droit utilisateur **Ouvrir une session en tant que service** pour ce compte. (Recherchez **Stratégie de sécurité locale** (secpol.msc) dans la page ou la fenêtre **Démarrer** (ou tapez **secpol.msc** à l’invite de commande). Quand la fenêtre s’affiche, double-cliquez sur **Attribution des droits utilisateur**, puis recherchez **Ouvrir une session en tant que service** dans le volet droit. Double-cliquez dessus. Ajouter le compte d’utilisateur pour le **propriétés** fenêtre et cliquez sur **OK**.) Cliquez sur **Next**.  
+    Vous devez peut-être ajouter le droit utilisateur **Ouvrir une session en tant que service** pour ce compte. (Recherchez **Stratégie de sécurité locale** (secpol.msc) dans la page ou la fenêtre **Démarrer** (ou tapez **secpol.msc** à l’invite de commande). Quand la fenêtre s’affiche, double-cliquez sur **Attribution des droits utilisateur**, puis recherchez **Ouvrir une session en tant que service** dans le volet droit. Double-cliquez dessus. Ajouter le compte d’utilisateur pour le **propriétés** fenêtre et cliquez sur **OK**.) Cliquez sur **Suivant**.  
   
 5. Sélectionnez le type de réseau avec lesquel vous voulez que les outils de contrôle à distance communiquent. Au moins un type de réseau doit être sélectionné. Si les ordinateurs sont connectés à un domaine, vous devez choisir le premier élément. Si les ordinateurs sont connectés à un groupe de travail ou un groupe résidentiel, vous devez choisir le deuxième ou troisième élément. Cliquez sur **Suivant**.  
   
@@ -221,7 +221,7 @@ Vous pouvez trouver le débogueur distant (**msvsmon.exe**) sur un ordinateur av
 11. Sur l’ordinateur Visual Studio, l’exécution doit être arrêtée au point d’arrêt.  
   
     > [!TIP]
-    >  Le déploiement des fichiers peut également faire l’objet d’une autre étape. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le nœud **mymfc**, puis choisissez **Déployer**.  
+    > Le déploiement des fichiers peut également faire l’objet d’une autre étape. Dans l’**Explorateur de solutions**, cliquez avec le bouton droit sur le nœud **mymfc**, puis choisissez **Déployer**.  
   
     Si vous avez des fichiers autres que des fichiers de code qui doivent être utilisés par l’application, vous devez les inclure dans le projet Visual Studio. Créez un dossier de projet pour les fichiers supplémentaires (dans le **l’Explorateur de solutions**, cliquez sur **Ajouter / nouveau dossier**.) Puis ajoutez les fichiers dans le dossier (dans le **l’Explorateur de solutions**, cliquez sur **Ajouter / existant élément**, puis sélectionnez les fichiers.). Dans la page **Propriétés** de chaque fichier, définissez **Copier dans le répertoire de sortie** sur **Toujours copier**.  
   
@@ -253,7 +253,7 @@ Vous pouvez trouver le débogueur distant (**msvsmon.exe**) sur un ordinateur av
 10. Copiez le fichier exécutable que vous venez de créer à partir de votre ordinateur Visual Studio dans le dossier nouvellement créé sur l’ordinateur distant.
   
     > [!CAUTION]
-    >  Ne pas modifier le code ou la reconstruction (ou vous devez répéter cette étape). Le fichier exécutable que vous avez copié sur l’ordinateur distant doit correspondre exactement à la source et aux symboles locaux.
+    > Ne pas modifier le code ou la reconstruction (ou vous devez répéter cette étape). Le fichier exécutable que vous avez copié sur l’ordinateur distant doit correspondre exactement à la source et aux symboles locaux.
 
     Vous pouvez copier le projet manuellement, utilisez Xcopy, Robocopy, Powershell ou autres options.
   

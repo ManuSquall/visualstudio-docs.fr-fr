@@ -13,12 +13,12 @@ ms.assetid: b5ffc736-efc7-4ca8-964d-5536ff891b0e
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8c02973faf1d65ff8be79cd387666f35651db7bf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 08028f2b03f3ea36cc72172ca8f9de31740b49f3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952028"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417908"
 ---
 # <a name="idebugprogramnode2attachv7"></a>IDebugProgramNode2::Attach_V7
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ int Attach_V7 ( 
 ## <a name="remarks"></a>Notes  
   
 > [!WARNING]
->  En tant que de [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)], cette méthode n’est plus utilisée et doit toujours retourner `E_NOTIMPL`. Consultez le [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md) interface pour une autre approche, si le nœud de programme a besoin indiquer qu’il ne peut pas être attachée à ou si le nœud de programme consiste simplement à définir le programme `GUID`. Sinon, implémenter la [attacher](../../../extensibility/debugger/reference/idebugengine2-attach.md) (méthode).  
+> En tant que de [!INCLUDE[vsprvslong](../../../includes/vsprvslong-md.md)], cette méthode n’est plus utilisée et doit toujours retourner `E_NOTIMPL`. Consultez le [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md) interface pour une autre approche, si le nœud de programme a besoin indiquer qu’il ne peut pas être attachée à ou si le nœud de programme consiste simplement à définir le programme `GUID`. Sinon, implémenter la [attacher](../../../extensibility/debugger/reference/idebugengine2-attach.md) (méthode).  
   
 ## <a name="prior-to-visual-studio-2005"></a>Avant Visual Studio 2005  
  Cette méthode doit être implémentée uniquement si le DE s’exécute dans l’espace d’adressage du programme en cours de débogage. Sinon, cette méthode doit retourner `S_FALSE`.  

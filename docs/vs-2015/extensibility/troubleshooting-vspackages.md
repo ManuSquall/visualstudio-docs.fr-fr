@@ -11,12 +11,12 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f8c230fd2ecd9183b131662a1033be3402859001
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eda92d27781ec26fd33cfd82d18257015b494236
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060499"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430125"
 ---
 # <a name="troubleshooting-vspackages"></a>Dépannage de VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ Voici les problèmes courants que vous pourriez rencontrer avec votre VSPackage 
 4. Ouvrez le **sortie** fenêtre de l’instance de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] qui ne peut pas charger le VSPackage. Plus d’informations sur la raison pour laquelle le VSPackage ne peut pas charger peuvent être affichés dans cette fenêtre.  
   
     > [!NOTE]
-    >  Si vous démarrez la version expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] à partir de la [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] l’environnement de développement intégré (IDE), Inspectez la **sortie** fenêtre des deux versions.  
+    > Si vous démarrez la version expérimentale de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] à partir de la [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] l’environnement de développement intégré (IDE), Inspectez la **sortie** fenêtre des deux versions.  
   
 5. Examinez le journal d’activité.  
   
@@ -87,7 +87,7 @@ Voici les problèmes courants que vous pourriez rencontrer avec votre VSPackage 
     4. Sur le **déboguer** menu, cliquez sur **démarrer le débogage** ou appuyez sur F5.  
   
         > [!NOTE]
-        >  Si vous déboguez un projet, créer ou charger une instance existante de votre projet maintenant.  
+        > Si vous déboguez un projet, créer ou charger une instance existante de votre projet maintenant.  
   
 2. Utiliser le journal d’activité.  
   

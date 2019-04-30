@@ -14,12 +14,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 45e1ad3c89d811a0a2bd715c86d8fcd8006600b0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7a123a42c1a46faf67fb5b63b1ab4ef300735f3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086700"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443458"
 ---
 # <a name="how-to-reference-windows-symbol-information"></a>Procédure : Informations de symbole de référence Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60086700"
 Les outils de profilage Visual Studio utilisent des fichiers de symboles (.pdb) pour résoudre les noms symboliques, tels que les noms de fonctions dans les fichiers binaires d’un programme. Vous pouvez suivre les étapes suivantes pour télécharger et mettre à jour automatiquement les fichiers .pdb correspondant à la version de Windows installée sur l’ordinateur local.  
   
 > [!NOTE]
->  Ce paramètre n’affecte pas les rapports existants. Seuls ceux créés après la spécification du serveur de symboles auront les informations de symboles.  
+> Ce paramètre n’affecte pas les rapports existants. Seuls ceux créés après la spécification du serveur de symboles auront les informations de symboles.  
   
  Pour plus d’informations, consultez [Spécifier les fichiers de symboles (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   

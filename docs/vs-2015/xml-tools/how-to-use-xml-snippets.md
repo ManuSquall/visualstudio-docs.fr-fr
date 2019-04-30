@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a6c48d878f2bacd8317878366980ecc317f7adb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ba4d98a1d6a59a35bf4aa279831036eecec99989
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055260"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440582"
 ---
 # <a name="how-to-use-xml-snippets"></a>Procédure : utilisation d'extraits XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Vous pouvez invoquer des extraits XML en utilisant les deux commandes suivantes 
  Les procédures suivantes expliquent comment accéder à la **insérer un extrait** commande.  
   
 > [!NOTE]
->  Le **insérer un extrait** commande est également disponible via le raccourci clavier (CTRL + K, puis CTRL + X).  
+> Le **insérer un extrait** commande est également disponible via le raccourci clavier (CTRL + K, puis CTRL + X).  
   
 #### <a name="to-insert-snippets-from-the-shortcut-menu"></a>Pour insérer des extraits à partir du menu contextuel  
   
@@ -60,7 +60,7 @@ Vous pouvez invoquer des extraits XML en utilisant les deux commandes suivantes 
 4. Appuyez sur TAB à deux reprises pour invoquer l'extrait XML.  
   
 > [!NOTE]
->  Parfois, l'extrait XML n'est pas invoqué. Par exemple, si vous tentez d'insérer un élément `xs:complexType` dans un nœud `xs:element`, l'éditeur ne génère aucun extrait XML. En effet, lorsqu'un élément `xs:complexType` est utilisé à l'intérieur d'un nœud `xs:element`, aucun attribut ni sous-élément n'est requis, de sorte que l'éditeur n'a aucune donnée à insérer.  
+> Parfois, l'extrait XML n'est pas invoqué. Par exemple, si vous tentez d'insérer un élément `xs:complexType` dans un nœud `xs:element`, l'éditeur ne génère aucun extrait XML. En effet, lorsqu'un élément `xs:complexType` est utilisé à l'intérieur d'un nœud `xs:element`, aucun attribut ni sous-élément n'est requis, de sorte que l'éditeur n'a aucune donnée à insérer.  
   
 #### <a name="to-insert-snippets-using-the-shortcut-name"></a>Pour insérer des extraits à l'aide du nom raccourci  
   
@@ -76,7 +76,7 @@ Vous pouvez invoquer des extraits XML en utilisant les deux commandes suivantes 
  Les procédures suivantes expliquent comment accéder à la **entourer** commande.  
   
 > [!NOTE]
->  Le **entourer** commande est également disponible via le raccourci clavier (CTRL + K, puis CTRL + S).  
+> Le **entourer** commande est également disponible via le raccourci clavier (CTRL + K, puis CTRL + S).  
   
 #### <a name="to-use-surround-with-from-the-context-menu"></a>Pour utiliser la commande Entourer de du menu contextuel  
   

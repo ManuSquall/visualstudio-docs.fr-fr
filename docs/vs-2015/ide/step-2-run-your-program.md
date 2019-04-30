@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6f5b57b4246a7e047f64ca79c9a0021cbfc0766f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7e8a28180270a5093bdeb59f45fde9e6838a6ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058406"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434057"
 ---
 # <a name="step-2-run-your-program"></a>Étape 2 : Exécuter votre programme
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Barre d'outils Débogage
     - Dans l’angle supérieur de la fenêtre **Form1**, choisissez le bouton X.  
   
     > [!NOTE]
-    >  Quand vous exécutez votre programme dans l’IDE, vous effectuez un *débogage*, car vous le faites généralement pour rechercher et résoudre des bogues (erreurs) dans le programme. Bien que ce programme soit petit et ne fasse pas encore grand chose, il n'en reste pas moins un programme. Vous suivez la même procédure pour exécuter et déboguer d'autres programmes. Pour en savoir plus sur le débogage, consultez [Principes de base du débogueur](../debugger/debugger-basics.md).  
+    > Quand vous exécutez votre programme dans l’IDE, vous effectuez un *débogage*, car vous le faites généralement pour rechercher et résoudre des bogues (erreurs) dans le programme. Bien que ce programme soit petit et ne fasse pas encore grand chose, il n'en reste pas moins un programme. Vous suivez la même procédure pour exécuter et déboguer d'autres programmes. Pour en savoir plus sur le débogage, consultez [Principes de base du débogueur](../debugger/debugger-basics.md).  
   
 ### <a name="to-continue-or-review"></a>Pour continuer ou examiner  
   

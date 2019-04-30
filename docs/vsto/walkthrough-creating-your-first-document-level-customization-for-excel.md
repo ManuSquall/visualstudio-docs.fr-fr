@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 81020496c1e80718d1aa0995791762d55ef70a76
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9cc23e140f0bfa2654cef1c3faeb805620a683b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438524"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Procédure pas à pas : Créer votre première personnalisation au niveau du document pour Excel
   Cette procédure pas à pas d'introduction vous indique comment créer une personnalisation au niveau du document pour Microsoft Office Excel. Les fonctionnalités que vous créez dans ce genre de solution sont disponibles uniquement quand un classeur spécifique est ouvert. Vous ne pouvez pas utiliser une personnalisation au niveau du document pour apporter des changements à l'échelle de l'application, par exemple afficher un nouvel onglet de ruban quand un classeur est ouvert.
@@ -106,7 +106,7 @@ ms.locfileid: "60104497"
      **Ce texte a été ajouté à l’aide du concepteur.**
 
 > [!WARNING]
->  Si vous ajoutez cette ligne de texte à la cellule **A2**, elle sera remplacée par un autre code dans cet exemple.
+> Si vous ajoutez cette ligne de texte à la cellule **A2**, elle sera remplacée par un autre code dans cet exemple.
 
 ## <a name="add-text-to-a-worksheet-programmatically"></a>Ajouter du texte à une feuille de calcul par programmation
  L'étape suivante consiste à ajouter du code au fichier de code Feuil1. Le nouveau code utilise le modèle objet d'Excel pour ajouter une deuxième ligne de texte au classeur. Par défaut, le fichier de code Feuil1 contient le code généré suivant :

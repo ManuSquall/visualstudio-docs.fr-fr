@@ -13,18 +13,18 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 589c231afbc149c4eeface784d3cdbd43c4e5e40
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 1757317e9ab148b508bfed95107b5c3b3369b598
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58156344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430023"
 ---
 # <a name="idebugexpression-interface"></a>IDebugExpression, interface
 Représente une expression évaluée de façon asynchrone. En général, les moteurs de script implémentent cette interface. En règle générale, un IDE de débogueur utilise cette interface pour activer une fenêtre de l’exécution immédiate ou de fenêtre Espion.  
   
 > [!NOTE]
->  Le `IDebugExpression` interface est disponible uniquement à partir d’un frame de pile.  
+> Le `IDebugExpression` interface est disponible uniquement à partir d’un frame de pile.  
   
  Outre les méthodes héritées de `IUnknown`, le `IDebugExpression` interface expose les méthodes suivantes.  
   

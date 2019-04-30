@@ -19,12 +19,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2b0ec545defec941d9a59001841d8bea443aa522
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cdfcb6bb07f167ea1da81101ae00613a5b2fac93
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071861"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440956"
 ---
 # <a name="link-model-elements-and-work-items"></a>Lier des éléments de modèle et des éléments de travail
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Suivez les tâches, les cas de test, les bogues, les spécifications, les probl�
  Pour connaître les versions de Visual Studio qui prennent en charge cette fonctionnalité, consultez [Prise en charge des versions pour les outils d'architecture et de modélisation](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!NOTE]
->  Vous devez utiliser Team Explorer pour créer et ouvrir des liens. Vérifiez que votre projet et vos schémas de modélisation sont archivés dans la gestion de version afin que d'autres personnes puissent ouvrir des schémas liés.  
+> Vous devez utiliser Team Explorer pour créer et ouvrir des liens. Vérifiez que votre projet et vos schémas de modélisation sont archivés dans la gestion de version afin que d'autres personnes puissent ouvrir des schémas liés.  
   
  Par exemple, vous pouvez lier :  
   
@@ -61,7 +61,7 @@ Suivez les tâches, les cas de test, les bogues, les spécifications, les probl�
 - les diagrammes. Pour sélectionner un diagramme, choisissez une partie vide du diagramme.  
   
 > [!WARNING]
->  Vous devez être connecté à un contrôle de code source (SSC, Source Code Control) TFS pour créer un élément de travail ou un lien vers celui-ci. Si vous essayez d'ouvrir une connexion à un autre contrôle de code source TFS, Visual Studio ferme automatiquement la solution actuelle. Vérifiez que vous êtes connecté au contrôle de code source TFS approprié avant d'essayer de créer un élément de travail ou un lien vers celui-ci. Dans les versions ultérieures de Visual Studio, les commandes de menu ne sont pas disponibles si vous n'êtes pas connecté à un contrôle de code source.  
+> Vous devez être connecté à un contrôle de code source (SSC, Source Code Control) TFS pour créer un élément de travail ou un lien vers celui-ci. Si vous essayez d'ouvrir une connexion à un autre contrôle de code source TFS, Visual Studio ferme automatiquement la solution actuelle. Vérifiez que vous êtes connecté au contrôle de code source TFS approprié avant d'essayer de créer un élément de travail ou un lien vers celui-ci. Dans les versions ultérieures de Visual Studio, les commandes de menu ne sont pas disponibles si vous n'êtes pas connecté à un contrôle de code source.  
   
 - [Se connecter à un projet d’équipe](#ConnectTFS)  
   
@@ -99,7 +99,7 @@ Suivez les tâches, les cas de test, les bogues, les spécifications, les probl�
      Visual Studio lie l'élément de modèle au nouvel élément de travail. Une icône apparaît sur l'élément de modèle ou près de celui-ci.  
   
 > [!WARNING]
->  Vous devez être connecté à un contrôle de code source (SSC, Source Code Control) TFS pour créer un élément de travail ou un lien vers celui-ci. Si vous essayez d'ouvrir une connexion à un autre contrôle de code source TFS, Visual Studio ferme automatiquement la solution actuelle. Vérifiez que vous êtes connecté au contrôle de code source TFS approprié avant d'essayer de créer un élément de travail ou un lien vers celui-ci. Dans les versions ultérieures de Visual Studio, les commandes de menu ne sont pas disponibles si vous n'êtes pas connecté à un contrôle de code source.  
+> Vous devez être connecté à un contrôle de code source (SSC, Source Code Control) TFS pour créer un élément de travail ou un lien vers celui-ci. Si vous essayez d'ouvrir une connexion à un autre contrôle de code source TFS, Visual Studio ferme automatiquement la solution actuelle. Vérifiez que vous êtes connecté au contrôle de code source TFS approprié avant d'essayer de créer un élément de travail ou un lien vers celui-ci. Dans les versions ultérieures de Visual Studio, les commandes de menu ne sont pas disponibles si vous n'êtes pas connecté à un contrôle de code source.  
   
 ## <a name="LinkExisting"></a> Lier un élément de modèle à un élément de travail existant  
  Quand vous liez des éléments de modèle à des éléments de travail, commencez par l'élément de modèle, et non pas par l'élément de travail.  
@@ -123,7 +123,7 @@ Suivez les tâches, les cas de test, les bogues, les spécifications, les probl�
      Quand vous avez terminé, la propriété **Éléments de travail** de l'élément de modèle affiche un nombre supérieur. Une icône apparaît également sur l'élément de modèle ou près de celui-ci.  
   
 > [!WARNING]
->  Vous devez être connecté à un contrôle de code source (SSC, Source Code Control) TFS pour créer un élément de travail ou un lien vers celui-ci. Si vous essayez d'ouvrir une connexion à un autre contrôle de code source TFS, Visual Studio ferme automatiquement la solution actuelle. Vérifiez que vous êtes connecté au contrôle de code source TFS approprié avant d'essayer de créer un élément de travail ou un lien vers celui-ci. Dans les versions ultérieures de Visual Studio, les commandes de menu ne sont pas disponibles si vous n'êtes pas connecté à un contrôle de code source.  
+> Vous devez être connecté à un contrôle de code source (SSC, Source Code Control) TFS pour créer un élément de travail ou un lien vers celui-ci. Si vous essayez d'ouvrir une connexion à un autre contrôle de code source TFS, Visual Studio ferme automatiquement la solution actuelle. Vérifiez que vous êtes connecté au contrôle de code source TFS approprié avant d'essayer de créer un élément de travail ou un lien vers celui-ci. Dans les versions ultérieures de Visual Studio, les commandes de menu ne sont pas disponibles si vous n'êtes pas connecté à un contrôle de code source.  
   
 ## <a name="OpenWorkItem"></a> Afficher les éléments de travail liés à un élément de modèle  
   
@@ -132,7 +132,7 @@ Suivez les tâches, les cas de test, les bogues, les spécifications, les probl�
 2. Sur le diagramme de modélisation ou dans l' **Explorateur de modèles UML**, ouvrez le menu contextuel de l'élément de modèle. Choisissez **Afficher les éléments de travail** pour afficher la liste des éléments de travail liés.  
   
     > [!NOTE]
-    >  Seuls les éléments de travail du serveur actuellement connecté s'affichent. Si aucun élément de travail n'apparaît, assurez-vous que vous êtes connecté au serveur approprié dans **Team Explorer**.  
+    > Seuls les éléments de travail du serveur actuellement connecté s'affichent. Si aucun élément de travail n'apparaît, assurez-vous que vous êtes connecté au serveur approprié dans **Team Explorer**.  
   
 ## <a name="ViewLinkedModels"></a> Affichage des éléments de modèle lié à un élément de travail  
  Vous pouvez consulter les diagrammes et les éléments de modélisation liés à un élément de travail dans Visual Studio Team Services et dans Team Foundation Server 2012 ou version ultérieure Par exemple, un élément de travail peut être lié aux modèles de classe qui montrent la création de nouvelles classes à implémenter.  
@@ -140,7 +140,7 @@ Suivez les tâches, les cas de test, les bogues, les spécifications, les probl�
 1. Dans **Team Explorer**, vérifiez que vous êtes connecté au projet d'équipe où les éléments de modèle sont liés à l'élément de travail.  
   
     > [!NOTE]
-    >  Pour afficher les éléments de modèles liés, vous pouvez uniquement utiliser Team Explorer. Vous ne pouvez pas utiliser Team Web Access. Vérifiez que votre espace de travail est mappé au projet de modélisation qui contient les diagrammes ou les éléments de modélisation. Si vous n'avez pas d'espace de travail, vous devez en créer un. Consultez [Dépannage](#Troubleshooting) et [Créer et utiliser des espaces de travail](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).  
+    > Pour afficher les éléments de modèles liés, vous pouvez uniquement utiliser Team Explorer. Vous ne pouvez pas utiliser Team Web Access. Vérifiez que votre espace de travail est mappé au projet de modélisation qui contient les diagrammes ou les éléments de modélisation. Si vous n'avez pas d'espace de travail, vous devez en créer un. Consultez [Dépannage](#Troubleshooting) et [Créer et utiliser des espaces de travail](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).  
   
 2. Ouvrez l'élément de travail et choisissez **Liens**. Sous **Lien de modèle**, ouvrez le menu contextuel de l'élément de modèle lié. Choisissez **Ouvrir un élément lié**.  
   
@@ -160,7 +160,7 @@ Suivez les tâches, les cas de test, les bogues, les spécifications, les probl�
     2. Dans la propriété **Éléments de travail** , choisissez le bouton de sélection **[…]**.  
   
         > [!NOTE]
-        >  Seuls les éléments de travail sur le serveur actuel s'affichent. Si la liste est vide, mais que le nombre d'éléments de travail n'est pas nul, vérifiez que vous êtes connecté au serveur approprié dans **Team Explorer**.  
+        > Seuls les éléments de travail sur le serveur actuel s'affichent. Si la liste est vide, mais que le nombre d'éléments de travail n'est pas nul, vérifiez que vous êtes connecté au serveur approprié dans **Team Explorer**.  
   
 3. Sous **Supprimer les liens aux éléments de travail**, désactivez les éléments sélectionnés que vous souhaitez dissocier. Cliquez sur **OK**.  
   

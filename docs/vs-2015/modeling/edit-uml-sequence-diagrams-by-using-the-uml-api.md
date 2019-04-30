@@ -11,12 +11,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c71becfb04115faefe88d5018c238ead38e4c88
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c619ae6efd1de48319bf9c0398ee8ab4e3cd57ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953205"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442955"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>Modifier des diagrammes de séquence à l'aide de l'API UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ public class MySequenceDiagramCommand : ICommandExtension
  Il existe deux types de diagrammes de séquence : ceux créés manuellement dans un projet de modélisation UML et ceux qui ont été générés à partir du code de programme. Utilisez la propriété `UmlMode` pour découvrir le diagramme de séquence que vous avez.  
   
 > [!NOTE]
->  Cette propriété retourne la valeur false uniquement pour les diagrammes de séquence générés à partir du code à l'aide de Visual Studio 2013 et versions antérieures. Cela comprend les diagrammes de séquence générés par du code qui ont été migrés à partir de Visual Studio 2013 et versions antérieures. Cette version de Visual Studio ne prend pas en charge la génération de nouveaux diagrammes de séquence.  
+> Cette propriété retourne la valeur false uniquement pour les diagrammes de séquence générés à partir du code à l'aide de Visual Studio 2013 et versions antérieures. Cela comprend les diagrammes de séquence générés par du code qui ont été migrés à partir de Visual Studio 2013 et versions antérieures. Cette version de Visual Studio ne prend pas en charge la génération de nouveaux diagrammes de séquence.  
   
  Par exemple, si vous souhaitez créer une commande de menu visible uniquement dans les diagrammes de séquence UML, la méthode `QueryStatus()` peut inclure l'instruction suivante :  
   

@@ -17,18 +17,18 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 601f20c530ec5e275139d1e70d3df58fa88cd715
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 95489464128e706e755432bee991c5481f5af8bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58147629"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425825"
 ---
 # <a name="iapplicationdebuggercreateinstanceatdebugger"></a>IApplicationDebugger::CreateInstanceAtDebugger
 Permet la création d’objets dans le processus du débogueur par le code qui est out-of-process au débogueur.  
   
 > [!IMPORTANT]
->  Cette méthode ne doit pas être implémentée, car elle permet de créer des objets arbitraires dans un thread de débogueur de confiance de code non fiable.  
+> Cette méthode ne doit pas être implémentée, car elle permet de créer des objets arbitraires dans un thread de débogueur de confiance de code non fiable.  
   
 ## <a name="syntax"></a>Syntaxe  
   

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d8da1446682c36549440e9b9e38ce110e0b35ba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e2683c3a2ea80aad341b7fab4fb35d13ea5379c7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614821"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429053"
 ---
 # <a name="solution-configuration"></a>Configuration de la solution
 Les configurations de solution stockent des propriétés au niveau de la solution. Ils contrôlent le comportement de la **Démarrer** touche (F5) et **Build** commandes. Par défaut, ces commandes créent et démarrer la configuration debug. Les deux commandes s’exécutent dans le contexte d’une configuration de solution. Cela signifie que l’utilisateur peut attendre F5 pour démarrer et quelle que soit la solution active est configurée via les paramètres de build. L’environnement est conçu pour optimiser pour les solutions plutôt que des projets lorsqu’il s’agit de création et l’exécution.
@@ -23,7 +23,7 @@ Les configurations de solution stockent des propriétés au niveau de la solutio
  La barre d’outils standard de Visual Studio contient un bouton de démarrage et une liste déroulante à droite du bouton Démarrer de configuration de solution. Cette liste permet aux utilisateurs de choisir la configuration à démarrer lorsque vous appuyez sur F5, créer leurs propres configurations de solutions ou modifier une configuration existante.
 
 > [!NOTE]
->  Il n’existe aucune interface d’extensibilité pour créer ou modifier les configurations de solution. Vous devez utiliser `DTE.SolutionBuilder`. Toutefois, il existe API d’extensibilité pour la gestion de la génération de la solution. Pour plus d'informations, consultez <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>.
+> Il n’existe aucune interface d’extensibilité pour créer ou modifier les configurations de solution. Vous devez utiliser `DTE.SolutionBuilder`. Toutefois, il existe API d’extensibilité pour la gestion de la génération de la solution. Pour plus d'informations, consultez <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>.
 
  Voici comment vous pouvez implémenter les configurations de solution prise en charge par votre type de projet :
 

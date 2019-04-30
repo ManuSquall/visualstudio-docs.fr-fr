@@ -23,12 +23,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7161d8115f8cc99f830293cdf5f957a2264f5a0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8d7d4524f1839179ac253265d95f191caf1c50af
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041180"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445676"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procédure : Ajouter ou supprimer des références à l’aide du Gestionnaire de références
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,7 +99,7 @@ Vous pouvez utiliser la boîte de dialogue **Gestionnaire de références** pour
 - Évitez si possible d'ajouter des références de fichier aux sorties d'un autre projet de la même solution, car cela risquerait de provoquer des erreurs de compilation. Utilisez l’onglet **Projets** de la boîte de dialogue **Ajouter une référence** afin de créer des références entre projets. Cela facilite le développement en équipe, en permettant une meilleure gestion des bibliothèques de classes créées dans vos projets. Pour plus d’informations, consultez [Dépannage de références rompues](../ide/troubleshooting-broken-references.md).  
   
 - > [!NOTE]
-    >  Dans Visual Studio 2015, une référence de fichier est créée au lieu d'une référence de projet si la version cible du .NET Framework d'un projet est 4.5 et que la version cible du de l'autre projet est 2, 3, 3.5 ou 4.0.  
+    > Dans Visual Studio 2015, une référence de fichier est créée au lieu d'une référence de projet si la version cible du .NET Framework d'un projet est 4.5 et que la version cible du de l'autre projet est 2, 3, 3.5 ou 4.0.  
   
 #### <a name="to-display-an-assembly-in-the-add-reference-dialog-box"></a>Pour afficher un assembly dans la boîte de dialogue Ajouter une référence  
   
@@ -181,7 +181,7 @@ Vous pouvez utiliser la boîte de dialogue **Gestionnaire de références** pour
  Un kit SDK est une collection de fichiers que Visual Studio traite comme un seul composant. Sous l’onglet Extensions, les SDK qui s’appliquent au projet à partir duquel la boîte de dialogue **Gestionnaire de références** a été appelée sont répertoriés sous forme d’entrées uniques. Une fois ajouté à un projet, tout le contenu du kit SDK est utilisé par Visual Studio afin que l’utilisateur n’ait rien d’autre à faire pour l’exploiter dans IntelliSense, la boîte à outils, les concepteurs, l’Explorateur d’objets, la création, le déploiement, le débogage et l’empaquetage. Pour plus d’informations sur l’affichage du SDK sous l’onglet Extensions, consultez [Création d’un SDK](../extensibility/creating-a-software-development-kit.md).  
   
 > [!NOTE]
->  Si un projet fait référence à un kit SDK qui dépend d’un autre, Visual Studio n’utilise pas le deuxième kit à moins que l’utilisateur y ajoute manuellement une référence. Quand un utilisateur choisit un SDK sous l’onglet **Extensions**, la boîte de dialogue **Gestionnaire de références** l’aide à identifier les dépendances du SDK en répertoriant non seulement le nom et la version du SDK, mais également le nom de toutes les dépendances du SDK dans le volet d’informations. Si un utilisateur ne remarque pas les dépendances et n’ajoute pas ce kit SDK, MSBuild l’invite à ajouter les dépendances.  
+> Si un projet fait référence à un kit SDK qui dépend d’un autre, Visual Studio n’utilise pas le deuxième kit à moins que l’utilisateur y ajoute manuellement une référence. Quand un utilisateur choisit un SDK sous l’onglet **Extensions**, la boîte de dialogue **Gestionnaire de références** l’aide à identifier les dépendances du SDK en répertoriant non seulement le nom et la version du SDK, mais également le nom de toutes les dépendances du SDK dans le volet d’informations. Si un utilisateur ne remarque pas les dépendances et n’ajoute pas ce kit SDK, MSBuild l’invite à ajouter les dépendances.  
   
  Si un type de projet ne prend pas en charge les **Extensions**, l’onglet ne s’affiche pas dans la boîte de dialogue **Gestionnaire de références**.  
   
@@ -207,7 +207,7 @@ Vous pouvez utiliser la boîte de dialogue **Gestionnaire de références** pour
     ```  
   
     > [!NOTE]
-    >  Si vous ajoutez la propriété, la build peut s'exécuter plus lentement.  
+    > Si vous ajoutez la propriété, la build peut s'exécuter plus lentement.  
   
 ## <a name="recent"></a>Récent  
  Les boutons Assemblys, COM, Windows et Parcourir prennent tous en charge un onglet Récent, qui énumère la liste des composants qui ont été récemment ajoutés aux projets.  

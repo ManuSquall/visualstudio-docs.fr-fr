@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e259328b2c9b7e2abcd5decead3560cb184fa930
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d3827ef20ae5eb67c1052b6c7f6147d736013490
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438887"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Éditeur d'ensemble de règles, boîte de dialogue (héritée)
 Cette rubrique décrit comment utiliser le **Éditeur d’ensemble de règles** boîte de dialogue dans les anciennes [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -26,12 +26,12 @@ Cette rubrique décrit comment utiliser le **Éditeur d’ensemble de règles** 
  Le **Éditeur d’ensemble de règles** boîte de dialogue est utilisée pour créer et modifier [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) sérialisés dans un fichier .rules ensembles de règles.  
   
 > [!NOTE]
->  Si vous souhaitez ouvrir le fichier .rules avec le **XML-éditeur avec encodage**, vous devez d’abord fermer la fenêtre du concepteur associée pour l’activité ou le flux de travail.  
+> Si vous souhaitez ouvrir le fichier .rules avec le **XML-éditeur avec encodage**, vous devez d’abord fermer la fenêtre du concepteur associée pour l’activité ou le flux de travail.  
   
  Pour plus d’informations sur l’accès à la **Éditeur d’ensemble de règles** boîte de dialogue, consultez [Comment : Créer un ensemble de règles PolicyActivity (hérité)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).  
   
 > [!WARNING]
->  L'éditeur de règles du [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité utilisé pour cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] ne prend pas en charge le multi-ciblage.  
+> L'éditeur de règles du [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité utilisé pour cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] ne prend pas en charge le multi-ciblage.  
   
  Le tableau suivant décrit les éléments d’interface utilisateur utilisateur de la **Éditeur d’ensemble de règles** boîte de dialogue.  
   

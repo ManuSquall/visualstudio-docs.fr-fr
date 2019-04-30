@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c49de0af6cbb02c441489cbfa7b1d8a7b3881df
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 54d2b83fab24aa3c9deabc979782d9b82ea5c482
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442482"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Étape 7 : Ajouter des composants de boîte de dialogue à votre formulaire
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Pour permettre à votre programme d’ouvrir les fichiers image et de choisir un
 1. Choisissez le Concepteur Windows Forms (Form1.cs [Design] ou Form1.vb [Design]), puis ouvrez le groupe **Boîtes de dialogue** dans la boîte à outils.  
   
     > [!NOTE]
-    >  Le groupe **Boîtes de dialogue** de la boîte à outils contient des composants capables d’ouvrir de nombreuses boîtes de dialogue utiles (pour ouvrir et enregistrer des fichiers, parcourir des dossiers ou choisir des polices et des couleurs). Dans ce projet, vous utilisez deux composants de boîte de dialogue : **OpenFileDialog** et **ColorDialog**.  
+    > Le groupe **Boîtes de dialogue** de la boîte à outils contient des composants capables d’ouvrir de nombreuses boîtes de dialogue utiles (pour ouvrir et enregistrer des fichiers, parcourir des dossiers ou choisir des polices et des couleurs). Dans ce projet, vous utilisez deux composants de boîte de dialogue : **OpenFileDialog** et **ColorDialog**.  
   
 2. Pour ajouter un composant appelé **openFileDialog1** à votre formulaire, double-cliquez sur **OpenFileDialog**. Pour ajouter un composant appelé **colorDialog1** à votre formulaire, double-cliquez sur **ColorDialog** dans la boîte à outils. (Vous l'utiliserez dans la prochaine étape de ce didacticiel.) Une zone, contenant une icône pour chacun des deux composants de boîte de dialogue que vous avez ajoutés, doit s'afficher en bas du Concepteur Windows Forms (sous le formulaire de la visionneuse d'images), comme indiqué dans l'image suivante.  
   
@@ -50,7 +50,7 @@ Composants de la boîte de dialogue
          Les paramètres de la propriété **Filter** spécifient les types de fichiers à afficher dans la boîte de dialogue **Sélectionner un fichier image**.  
   
     > [!NOTE]
-    >  Pour voir un exemple de boîte de dialogue **Ouvrir un fichier** dans une application différente, ouvrez le Bloc-notes ou Paint et, dans la barre de menus, choisissez **Fichier**, **Ouvrir**. Notez la liste déroulante **Types de fichiers** qui se trouve en bas. Pour cette configuration, vous venez d’utiliser la propriété **Filter** dans le composant **OpenFileDialog**. Notez également que les propriétés **Title** et **Filter** sont affichées en gras dans la fenêtre **Propriétés**. L'IDE utilise ce style pour vous montrer toutes les propriétés dont les valeurs par défaut ont été modifiées.  
+    > Pour voir un exemple de boîte de dialogue **Ouvrir un fichier** dans une application différente, ouvrez le Bloc-notes ou Paint et, dans la barre de menus, choisissez **Fichier**, **Ouvrir**. Notez la liste déroulante **Types de fichiers** qui se trouve en bas. Pour cette configuration, vous venez d’utiliser la propriété **Filter** dans le composant **OpenFileDialog**. Notez également que les propriétés **Title** et **Filter** sont affichées en gras dans la fenêtre **Propriétés**. L'IDE utilise ce style pour vous montrer toutes les propriétés dont les valeurs par défaut ont été modifiées.  
   
 ### <a name="to-continue-or-review"></a>Pour continuer ou examiner  
   

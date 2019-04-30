@@ -11,12 +11,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f03c7260899db9e463282e45ef5bc76badb8a483
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b6e77934f8e565800eb4a7a753df4beb3b003fbb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082800"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445583"
 ---
 # <a name="walkthrough-using-msbuild"></a>Procédure pas à pas : Utilisation de MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -132,7 +132,7 @@ MSBuild est la plateforme de génération pour Microsoft et Visual Studio. Cett
  Exécutez MSBuild à partir de l’**Invite de commandes de Visual Studio** pour générer la cible HelloWorld définie précédemment. Utilisez le commutateur de ligne de commande /target ou /t pour sélectionner la cible.  
   
 > [!NOTE]
->  Dans les sections ci-après, nous appellerons l’**Invite de commandes de Visual Studio** **fenêtre Commande**.  
+> Dans les sections ci-après, nous appellerons l’**Invite de commandes de Visual Studio** **fenêtre Commande**.  
   
 #### <a name="to-build-the-target"></a>Pour générer la cible  
   
@@ -154,12 +154,12 @@ MSBuild est la plateforme de génération pour Microsoft et Visual Studio. Cett
     ```  
   
 > [!NOTE]
->  Si vous voyez `The target "HelloWorld" does not exist in the project` à la place, vous avez probablement oublié d’enregistrer le fichier projet dans l’éditeur de code. Enregistrez le fichier et réessayez.  
+> Si vous voyez `The target "HelloWorld" does not exist in the project` à la place, vous avez probablement oublié d’enregistrer le fichier projet dans l’éditeur de code. Enregistrez le fichier et réessayez.  
   
  En alternant entre l’éditeur de code et la fenêtre Commande, vous pouvez modifier le fichier projet et observer rapidement les résultats.  
   
 > [!NOTE]
->  Si vous exécutez msbuild sans le commutateur de commande /t, msbuild génère la cible fournie par l’attribut DefaultTarget de l’élément Project, dans ce cas « Build ». Cette opération génère l’application Windows Forms BuildApp.exe.  
+> Si vous exécutez msbuild sans le commutateur de commande /t, msbuild génère la cible fournie par l’attribut DefaultTarget de l’élément Project, dans ce cas « Build ». Cette opération génère l’application Windows Forms BuildApp.exe.  
   
 ## <a name="build-properties"></a>Propriétés de build  
  Les propriétés de génération sont des paires nom-valeur qui guident la génération. Plusieurs propriétés de génération sont déjà définies en haut du fichier projet :  
@@ -227,7 +227,7 @@ $(PropertyName)
     ```  
   
 > [!NOTE]
->  Si vous ne voyez pas ces lignes, vous avez probablement oublié d’enregistrer le fichier projet dans l’éditeur de code. Enregistrez le fichier et réessayez.  
+> Si vous ne voyez pas ces lignes, vous avez probablement oublié d’enregistrer le fichier projet dans l’éditeur de code. Enregistrez le fichier et réessayez.  
   
 ### <a name="conditional-properties"></a>Propriétés conditionnelles  
  Plusieurs propriétés, comme la propriété Configuration, sont définies de manière conditionnelle, autrement dit, l’attribut Condition s’affiche dans l’élément de propriété. Les propriétés conditionnelles sont définies ou redéfinies uniquement si la condition a la valeur « true ». Notez que les propriétés non définies ont la valeur par défaut d’une chaîne vide. Par exemple :  
@@ -319,7 +319,7 @@ $(PropertyName)
  Pour plus d’informations, consultez l’article [Éléments MSBuild](../msbuild/msbuild-items.md).  
   
 > [!NOTE]
->  Les chemins d’accès aux fichiers sont relatifs au dossier contenant le fichier projet MSBuild.  
+> Les chemins d’accès aux fichiers sont relatifs au dossier contenant le fichier projet MSBuild.  
   
 ## <a name="examining-item-type-values"></a>Examen des valeurs des types d’élément  
  Pour obtenir les valeurs d’un type d’élément, utilisez la syntaxe suivante, où ItemType est le nom du type d’élément :  

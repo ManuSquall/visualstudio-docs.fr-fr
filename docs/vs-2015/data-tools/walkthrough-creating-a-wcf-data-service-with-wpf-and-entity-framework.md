@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 52a2d7c239c9a4f3508f4bdb2077928e44ff802a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 56e39a8ed17cfa99bd8141e2176d42dd7d3d6274
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424850"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Procédure pas à pas : Création d’un service de données WCF avec WPF et Entity Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,12 +89,12 @@ Cette procédure pas à pas montre comment créer un simple [!INCLUDE[ss_data_se
 6. Si la base de données nécessite un mot de passe, choisissez la case d’option **Oui, inclure les données sensibles dans la chaîne de connexion**, puis cliquez sur le bouton **Suivant**.  
   
    > [!NOTE]
-   >  Si une boîte de dialogue s’affiche, choisissez **Oui** pour enregistrer le fichier dans votre projet.  
+   > Si une boîte de dialogue s’affiche, choisissez **Oui** pour enregistrer le fichier dans votre projet.  
   
 7. Dans la page **Choisir votre version**, choisissez la case d’option **Entity Framework 5.0**, puis le bouton **Suivant**.  
   
    > [!NOTE]
-   >  Pour pouvoir utiliser la dernière version d’Entity Framework 6 avec les services WCF, vous devez installer le package NuGet du fournisseur Entity Framework de services de données WCF. Consultez [à l’aide de WCF Data Services 5.6.0 avec Entity Framework 6 +](http://blogs.msdn.com/b/odatateam/archive/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6.aspx).  
+   > Pour pouvoir utiliser la dernière version d’Entity Framework 6 avec les services WCF, vous devez installer le package NuGet du fournisseur Entity Framework de services de données WCF. Consultez [à l’aide de WCF Data Services 5.6.0 avec Entity Framework 6 +](http://blogs.msdn.com/b/odatateam/archive/2013/10/02/using-wcf-data-services-5-6-0-with-entity-framework-6.aspx).  
   
 8. Dans la page **Choisir vos objets de base de données**, développez le nœud **Tables**, cochez la case **Customers**, puis choisissez le bouton **Terminer**.  
   
@@ -129,7 +129,7 @@ Cette procédure pas à pas montre comment créer un simple [!INCLUDE[ss_data_se
     Une représentation XML des données dans la table Customers s'affiche.  
   
    > [!NOTE]
-   >  Dans certains cas, Internet Explorer interprétera par erreur les données comme un flux RSS. Vous devez vous assurer que l'option permettant d'afficher les flux RSS est désactivée. Pour plus d’informations, consultez [dépannage de références de Service](../data-tools/troubleshooting-service-references.md).  
+   > Dans certains cas, Internet Explorer interprétera par erreur les données comme un flux RSS. Vous devez vous assurer que l'option permettant d'afficher les flux RSS est désactivée. Pour plus d’informations, consultez [dépannage de références de Service](../data-tools/troubleshooting-service-references.md).  
   
 8. Fermez la fenêtre du navigateur.  
   

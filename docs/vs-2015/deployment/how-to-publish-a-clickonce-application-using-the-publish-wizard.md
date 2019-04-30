@@ -18,12 +18,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 48b5d8406f5b5c6d43afadf9e544914e6133090c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 430154b1f9b9f652052dc828c921d3ded16a3787
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442699"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Procédure : Publier une application ClickOnce à l’aide de l’Assistant Publication
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,10 +33,10 @@ Pour mettre une application ClickOnce à la disposition des utilisateurs, vous d
  Avant d'exécuter l'Assistant Publication, vous devez correctement définir les propriétés de publication. Par exemple, vous pouvez spécifier une clé pour signer votre application ClickOnce dans la page **Signature** du **Concepteur de projet**. Pour plus d’informations, consultez [Sécurisation des applications ClickOnce](../deployment/securing-clickonce-applications.md).  
   
 > [!NOTE]
->  Quand vous installez plusieurs versions d'une application via ClickOnce, l'installation déplace les versions antérieures de cette application dans un dossier nommé Archive, à l'emplacement de publication que vous avez spécifié. Cet archivage permet d’éviter la présence de dossiers de la version précédente dans le répertoire d’installation.  
+> Quand vous installez plusieurs versions d'une application via ClickOnce, l'installation déplace les versions antérieures de cette application dans un dossier nommé Archive, à l'emplacement de publication que vous avez spécifié. Cet archivage permet d’éviter la présence de dossiers de la version précédente dans le répertoire d’installation.  
   
 > [!NOTE]
->  Selon vos paramètres actifs ou votre édition, les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles qui sont décrites dans l'aide. Pour modifier ces paramètres, cliquez sur **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Selon vos paramètres actifs ou votre édition, les boîtes de dialogue et les commandes de menu affichées peuvent différer de celles qui sont décrites dans l'aide. Pour modifier ces paramètres, cliquez sur **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-publish-to-a-file-share-or-path"></a>Pour publier vers un partage de fichiers ou un chemin d'accès  
   
@@ -83,7 +83,7 @@ Pour mettre une application ClickOnce à la disposition des utilisateurs, vous d
 4. Dans la page **Comment les utilisateurs installeront-ils l’application ?**, cliquez sur **À partir d’un CD-ROM ou DVD-ROM**, puis cliquez sur **Suivant**.  
   
    > [!NOTE]
-   >  Si vous voulez que l’installation s’exécute automatiquement quand le CD-ROM est inséré dans le lecteur, ouvrez la page **Publier** dans le **Concepteur de projet**, puis cliquez sur le bouton **Options** puis, dans l’Assistant **Options de publication**, sélectionnez **Pour les installations depuis un CD-ROM, démarrer automatiquement l’installation dès l’insertion du CD-ROM**.  
+   > Si vous voulez que l’installation s’exécute automatiquement quand le CD-ROM est inséré dans le lecteur, ouvrez la page **Publier** dans le **Concepteur de projet**, puis cliquez sur le bouton **Options** puis, dans l’Assistant **Options de publication**, sélectionnez **Pour les installations depuis un CD-ROM, démarrer automatiquement l’installation dès l’insertion du CD-ROM**.  
   
 5. Si vous distribuez votre application sur CD-ROM, vous souhaitez peut-être fournir des mises à jour à partir d'un site web. Dans la page **Où l’application doit-elle vérifier la disponibilité de mises à jour ?**, choisissez une option de mise à jour :  
   
@@ -98,7 +98,7 @@ Pour mettre une application ClickOnce à la disposition des utilisateurs, vous d
     L'état de publication s'affiche dans la zone de notification d'état.  
   
    > [!NOTE]
-   >  Une fois la publication terminée, vous devez utiliser un graveur de CD ou de DVD pour copier les fichiers depuis l'emplacement spécifié à l'étape 3 sur le CD-ROM ou DVD-ROM.  
+   > Une fois la publication terminée, vous devez utiliser un graveur de CD ou de DVD pour copier les fichiers depuis l'emplacement spécifié à l'étape 3 sur le CD-ROM ou DVD-ROM.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md)   

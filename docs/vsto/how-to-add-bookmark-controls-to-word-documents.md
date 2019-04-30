@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5f4a6a5de3ccd10c7444b03aca2faaa0ae17c4f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7948af3a6a77fd100a6965f9e50cda70ac7b868d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427771"
 ---
 # <a name="how-to-add-bookmark-controls-to-word-documents"></a>Procédure : Ajouter des contrôles Bookmark à des documents Word
   Dans les projets au niveau du document, vous pouvez ajouter <xref:Microsoft.Office.Tools.Word.Bookmark> contrôles au document dans votre projet au moment du design ou lors de l’exécution. Dans les projets de complément VSTO, vous pouvez ajouter <xref:Microsoft.Office.Tools.Word.Bookmark> contrôles à tout document ouvert au moment de l’exécution.
@@ -94,7 +94,7 @@ ms.locfileid: "60104523"
      [!code-vb[Trin_VstcoreHostControlsWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb#1)]
 
     > [!NOTE]
-    >  Si vous souhaitez créer un contrôle <xref:Microsoft.Office.Tools.Word.Bookmark> à partir d'un <xref:Microsoft.Office.Interop.Word.Bookmark>existant, utilisez la méthode <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> et transmettez le <xref:Microsoft.Office.Interop.Word.Bookmark>existant.
+    > Si vous souhaitez créer un contrôle <xref:Microsoft.Office.Tools.Word.Bookmark> à partir d'un <xref:Microsoft.Office.Interop.Word.Bookmark>existant, utilisez la méthode <xref:Microsoft.Office.Tools.Word.ControlCollection.AddBookmark%2A> et transmettez le <xref:Microsoft.Office.Interop.Word.Bookmark>existant.
 
 ## <a name="runtimeaddin"></a> Ajouter des contrôles Bookmark au moment de l’exécution dans un projet de complément VSTO
  Vous pouvez ajouter <xref:Microsoft.Office.Tools.Word.Bookmark> contrôles par programmation à tout document ouvert lors de l’exécution en utilisant un complément, VSTO. Pour ce faire, vous devez générer un élément hôte <xref:Microsoft.Office.Tools.Word.Document> basé sur un document ouvert, puis utiliser les méthodes de la propriété <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> de cet élément hôte. Il existe deux surcharges de méthode qui permettent d'ajouter un contrôle <xref:Microsoft.Office.Tools.Word.Bookmark> de la façon suivante :

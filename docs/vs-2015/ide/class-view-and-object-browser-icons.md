@@ -18,12 +18,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7cb80c7ad81708724750660560d65cfef722af86
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ef14396e681f77eca469f40b2253c8a64296423d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785047"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422841"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Affichage de classes et Explorateur d'objets, icônes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ L’Affichage de classes** et l’**Explorateur d’objets** affichent des icôn
 |----------|-----------------|----------|-----------------|  
 |![Symbole d’espace de noms](../ide/media/vxnamespace-icon.gif "vxNamespace_Icon")|Espace de noms|![Symbole de déclaration](../ide/media/vxmethod-icon.gif "vxMethod_Icon")|Méthode ou fonction|  
 |![Icône de classe](../ide/media/vxclass-icon.gif "vxClass_Icon")|Classe|![Symbole d’opérateur](../ide/media/vxoperator-icon.gif "vxOperator_Icon")|Opérateur|  
-|![Symbole d’interface Lollipop](../ide/media/vxinterface-icon.gif "vxInterface_Icon")|Interface|![Symbole de propriété](../ide/media/vxproperty-icon.gif "vxProperty_Icon")|Property|  
+|![Symbole d’interface Lollipop](../ide/media/vxinterface-icon.gif "vxInterface_Icon")|Interface|![Symbole de propriété](../ide/media/vxproperty-icon.gif "vxProperty_Icon")|Propriété|  
 |![Symbole de structure](../ide/media/vxstruct-icon.gif "vxStruct_Icon")|Structure|![Icône de champ](../ide/media/vxfield-icon.gif "vxField_Icon")|Champ ou variable|  
-|![Symbole Union](../ide/media/vxunion-icon.gif "vxUnion_Icon")|Union|![Symbole d’événement](../ide/media/vxevent-icon.gif "vxEvent_Icon")|événement|  
+|![Symbole Union](../ide/media/vxunion-icon.gif "vxUnion_Icon")|Union|![Symbole d’événement](../ide/media/vxevent-icon.gif "vxEvent_Icon")|Événement|  
 |![Symbole d’énumération](../ide/media/vxenum-icon.gif "vxEnum_Icon")|Enum|![Icône de constante](../ide/media/vxconstant-icon.gif "vxConstant_Icon")|Constante|  
 |![Symbole de définition du type](../ide/media/vxtypedef-icon.gif "vxTypeDef_Icon")|TypeDef|![Symbole d’élément d’énumération](../ide/media/vxenumitem-icon.gif "vxEnumItem_Icon")|Élément enum|  
 |![Symbole du module Visual Studio](../ide/media/vxmodule-icon.gif "vxModule_Icon")|Module|![Symbole d’élément de carte](../ide/media/vxmapitem-icon.gif "vxMapItem_Icon")|Élément Map|  
@@ -50,7 +50,7 @@ L’Affichage de classes** et l’**Explorateur d’objets** affichent des icôn
  Les icônes de signalisation suivantes s’appliquent à toutes les icônes précédentes et indiquent leur accessibilité.  
   
 > [!NOTE]
->  Si votre projet est inclus dans une base de données contenant le contrôle de code source, des icônes de signalisation supplémentaires peuvent s’afficher pour indiquer l’état du contrôle de code source (par exemple, archivé ou extrait).  
+> Si votre projet est inclus dans une base de données contenant le contrôle de code source, des icônes de signalisation supplémentaires peuvent s’afficher pour indiquer l’état du contrôle de code source (par exemple, archivé ou extrait).  
   
 |Icône|Description|  
 |----------|-----------------|  

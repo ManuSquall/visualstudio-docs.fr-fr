@@ -14,18 +14,18 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6c63e20b802ff6c54ba17f8ddc55f390213e9043
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: ed8ff0361396deaaffd46f14ca1fc38869988593
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155392"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422463"
 ---
 # <a name="active-script-debugger-interfaces"></a>Débogueur de script actif, interfaces
 Les fichiers d’en-tête activdbg.h et activdbg100.h fournissent les interfaces, les énumérations et les structures répertoriés dans cette section. Ils sont pour le débogage de script.  
   
 > [!NOTE]
->  Le `IJSDebug*` interfaces et la `IEnumJsStackFrames` interface ont été apparus dans Internet Explorer 11 pour le débogage de code natif avec script. Le fichier d’en-tête pour ces interfaces est jscript9diag.h.  
+> Le `IJSDebug*` interfaces et la `IEnumJsStackFrames` interface ont été apparus dans Internet Explorer 11 pour le débogage de code natif avec script. Le fichier d’en-tête pour ces interfaces est jscript9diag.h.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  Les interfaces suivantes autoriser le débogage de linguistiquement neutre, hôte neutre :  

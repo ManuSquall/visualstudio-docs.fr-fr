@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9efc655997a48e070ee60a1d66dc57be31362403
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6c7746137cf10e0146ff68eeb2cec9005b72a670
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080409"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427625"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>Procédure : Ajouter du contenu des contrôles à des documents Word
   Dans les projets au niveau du document Word, vous pouvez ajouter des contrôles de contenu au document dans votre projet au moment du design ou lors de l’exécution. Dans les projets de complément Word VSTO, vous pouvez ajouter des contrôles de contenu à tout document ouvert au moment de l’exécution.
@@ -78,10 +78,10 @@ ms.locfileid: "60080409"
     - Faites glisser un contrôle de contenu de la **Boîte à outils** vers le document. Le contrôle de contenu est ajouté à la sélection actuelle dans le document, et non à l'emplacement correspondant au pointeur de souris.
 
 > [!NOTE]
->  Vous ne pouvez pas ajouter <xref:Microsoft.Office.Tools.Word.GroupContentControl> à l'aide de la **Boîte à outils**. Vous pouvez uniquement ajouter un <xref:Microsoft.Office.Tools.Word.GroupContentControl> dans Word, ou lors de l’exécution.
+> Vous ne pouvez pas ajouter <xref:Microsoft.Office.Tools.Word.GroupContentControl> à l'aide de la **Boîte à outils**. Vous pouvez uniquement ajouter un <xref:Microsoft.Office.Tools.Word.GroupContentControl> dans Word, ou lors de l’exécution.
 
 > [!NOTE]
->  Visual Studio ne fournit aucun contrôle de contenu de case à cocher dans la boîte à outils. Pour ajouter un contrôle de contenu de case à cocher au document, vous devez créer un objet <xref:Microsoft.Office.Tools.Word.ContentControl> par programmation. Pour plus d’informations, consultez [contrôles de contenu](../vsto/content-controls.md).
+> Visual Studio ne fournit aucun contrôle de contenu de case à cocher dans la boîte à outils. Pour ajouter un contrôle de contenu de case à cocher au document, vous devez créer un objet <xref:Microsoft.Office.Tools.Word.ContentControl> par programmation. Pour plus d’informations, consultez [contrôles de contenu](../vsto/content-controls.md).
 
 #### <a name="to-add-a-content-control-to-a-document-in-word"></a>Pour ajouter un contrôle de contenu à un document dans Word
 
@@ -90,7 +90,7 @@ ms.locfileid: "60080409"
 2. Dans le ruban, cliquez sur l'onglet **Développeur** .
 
     > [!NOTE]
-    >  Si l'onglet **Développeur** n'est pas visible, vous devez tout d'abord l'afficher. Pour plus d'informations, voir [Procédure : Afficher l’onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Si l'onglet **Développeur** n'est pas visible, vous devez tout d'abord l'afficher. Pour plus d'informations, voir [Procédure : Afficher l’onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 3. Dans le groupe **Contrôles** , cliquez sur l'icône du contrôle de contenu à ajouter.
 
@@ -106,7 +106,7 @@ ms.locfileid: "60080409"
   Les contrôles de contenu créés de façon dynamique ne sont pas conservés dans le document quand ce dernier est fermé. Toutefois, un contrôle de contenu natif demeure dans le document. Vous pouvez recréer un contrôle de contenu basé sur un contrôle de contenu natif à la prochaine ouverture du document. Pour plus d’informations, consultez [ajouter des contrôles aux documents Office au moment de l’exécution](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 > [!NOTE]
->  Pour ajouter un contrôle de contenu de case à cocher à un document dans un projet Word 2010, vous devez créer un objet <xref:Microsoft.Office.Tools.Word.ContentControl> . Pour plus d’informations, consultez [contrôles de contenu](../vsto/content-controls.md).
+> Pour ajouter un contrôle de contenu de case à cocher à un document dans un projet Word 2010, vous devez créer un objet <xref:Microsoft.Office.Tools.Word.ContentControl> . Pour plus d’informations, consultez [contrôles de contenu](../vsto/content-controls.md).
 
 ### <a name="to-add-a-content-control-at-the-current-selection"></a>Pour ajouter un contrôle de contenu à la sélection actuelle
 
@@ -149,7 +149,7 @@ ms.locfileid: "60080409"
   Pour plus d’informations sur la génération d’éléments hôtes dans les projets de complément VSTO, consultez [documents Word d’étendre et classeurs Excel dans des Compléments VSTO lors de l’exécution](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
 > [!NOTE]
->  Pour ajouter un contrôle de contenu de case à cocher à un document, vous devez créer un objet <xref:Microsoft.Office.Tools.Word.ContentControl> . Pour plus d’informations, consultez [contrôles de contenu](../vsto/content-controls.md).
+> Pour ajouter un contrôle de contenu de case à cocher à un document, vous devez créer un objet <xref:Microsoft.Office.Tools.Word.ContentControl> . Pour plus d’informations, consultez [contrôles de contenu](../vsto/content-controls.md).
 
 ### <a name="to-add-a-content-control-at-the-current-selection"></a>Pour ajouter un contrôle de contenu à la sélection actuelle
 

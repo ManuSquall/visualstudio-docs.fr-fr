@@ -16,12 +16,12 @@ ms.assetid: 6151ba88-c1c3-41de-a1cc-668f494d48d1
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0a4477249dfad57bb75a83b40d6c3b1a4343a23f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 36ff8335bfaf99b5826d217a48910bfd581321e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953483"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440114"
 ---
 # <a name="developing-a-legacy-language-service"></a>Développement d’un service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Cette section fournit des liens vers des rubriques qui vous aident à créer un 
  Services de langage hérité sont implémentés en tant que partie d’un VSPackage, mais la plus récente pour implémenter des fonctionnalités de service de langage consiste à utiliser des extensions MEF. Pour en savoir plus sur la nouvelle façon d’implémenter un service de langage, consultez [éditeur et les Extensions de Service de langage](../../extensibility/editor-and-language-service-extensions.md).  
   
 > [!NOTE]
->  Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorer les performances de votre service de langage et vous permettent de tirer parti des nouvelles fonctionnalités de l’éditeur.  
+> Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorer les performances de votre service de langage et vous permettent de tirer parti des nouvelles fonctionnalités de l’éditeur.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Modèle d’un service de langage hérité](../../extensibility/internals/model-of-a-legacy-language-service.md)  
@@ -49,7 +49,7 @@ Cette section fournit des liens vers des rubriques qui vous aident à créer un 
  [Prise en charge du service de langage pour le débogage](../../extensibility/internals/language-service-support-for-debugging.md)  
  Décrit comment un service de langage peut fournir des fonctionnalités pour prendre en charge d’un débogueur.  
   
- [Liste de vérification : Création d’un Service de langage hérité](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)  
+ [Liste de contrôle : Création d’un service de langage hérité](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)  
  Fournit des instructions détaillées pour la création et l’intégration d’un service de langage pour l’éditeur principal.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
@@ -62,8 +62,8 @@ Cette section fournit des liens vers des rubriques qui vous aident à créer un 
  [Informations sur les paramètres dans un service de langage hérité](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)  
  Décrit comment fournir des conseils de méthode pour les méthodes et les fonctions surchargées.  
   
- [Guide pratique pour Fournir la prise en charge de texte masqué dans un Service de langage hérité](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
+ [Guide pratique pour fournir la prise en charge de texte masqué dans un service de langage hérité](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
  Explique l’objectif d’une zone de texte masqué et fournit des instructions sur la façon d’implémenter une zone de texte masqué.  
   
- [Guide pratique pour Fournir une prise en charge étendue de mode plan dans un Service de langage hérité](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
+ [Guide pratique pour fournir la prise en charge étendue du mode Plan dans un service de langage hérité](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
  Explique les deux options qui prennent en charge en mode plan pour votre langage au-delà de la prise en charge la *réduire aux définitions* commande.

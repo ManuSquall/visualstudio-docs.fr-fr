@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b022cca2b69c8cb80b24fa34e3b020923cff4022
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 910b4bcb0a3258a6e661421c225121b8f888fcef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689198"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409675"
 ---
 # <a name="notify-the-port"></a>Notifier le port
 Après avoir lancé un programme, le port doit être averti, comme suit :
@@ -31,12 +31,12 @@ Après avoir lancé un programme, le port doit être averti, comme suit :
    Par programmation, lorsqu’un port reçoit tout d’abord un nouveau nœud de programme, il crée un [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) interface pour représenter le programme.
 
 > [!NOTE]
->  Il ne faut pas confondre avec le `IDebugProgram2` interface créée ultérieurement par le moteur de débogage (dé).
+> Il ne faut pas confondre avec le `IDebugProgram2` interface créée ultérieurement par le moteur de débogage (dé).
 
  Le port envoie un [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) événement de création de programme au Gestionnaire de débogage de session (SDM) au moyen d’un COM `IConnectionPoint` interface.
 
 > [!NOTE]
->  Il ne faut pas confondre avec le `IDebugProgramCreateEvent2` interface, qui est envoyée plus tard par l’Allemagne.
+> Il ne faut pas confondre avec le `IDebugProgramCreateEvent2` interface, qui est envoyée plus tard par l’Allemagne.
 
  Avec l’interface d’événement proprement dit, le port envoie le [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md), [IDebugProcess2](../../extensibility/debugger/reference/idebugprocess2.md), et [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) interfaces qui représentent le port, traitement, et programmer, respectivement. Les appels SDM [IDebugProgram2::GetEngineInfo](../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md) pour obtenir le GUID de l’Allemagne qui peut déboguer le programme. Le GUID a été obtenu à l’origine à partir de la [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) interface.
 

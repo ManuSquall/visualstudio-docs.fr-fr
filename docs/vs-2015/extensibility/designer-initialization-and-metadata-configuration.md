@@ -11,12 +11,12 @@ ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7d1bfcfc3176e14900553504a66307ff6e8dcf5a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f3bae21baa0c484f2deeb8406a703b92cadc874b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049255"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439044"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Initialisation du concepteur et configuration des métadonnées
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Manipulation des attributs de métadonnées et de filtre associé à un concepte
 1. Création d’un objet qui implémente le <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> classe.  
   
    > [!NOTE]
-   >  Le <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> classe ne doit jamais être implémentée sur le même objet que la <xref:Microsoft.VisualStudio.Shell.Package> classe.  
+   > Le <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> classe ne doit jamais être implémentée sur le même objet que la <xref:Microsoft.VisualStudio.Shell.Package> classe.  
   
 2. Inscrire la classe implémentant <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> en tant que la prise en charge d’extensions de concepteur du VSPackage en appliquant des instances de <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>, <xref:Microsoft.VisualStudio.Shell.ProvideObjectAttribute> et <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> à la classe d’implémentation du VSPackage de <xref:Microsoft.VisualStudio.Shell.Package> .  
   
@@ -93,7 +93,7 @@ Manipulation des attributs de métadonnées et de filtre associé à un concepte
   `internal class MyPackage : Package {}`  
   
 > [!NOTE]
->  À l’heure actuelle, l’aire de conception prend uniquement en charge la création de composants, et par conséquent seuls les composants peuvent avoir des métadonnées locales. Dans l’exemple ci-dessus, nous étions tente de modifier une propriété, tel que le `Color` propriété d’un objet. Si `false` a été transmise pour l’indicateur global, `CustomBrowser` n’apparaîtrait jamais, car le concepteur crée en fait jamais une instance de `Color`. Définition de l’indicateur global `false` est utile pour les composants, tels que les contrôles, les minuteurs et les boîtes de dialogue.  
+> À l’heure actuelle, l’aire de conception prend uniquement en charge la création de composants, et par conséquent seuls les composants peuvent avoir des métadonnées locales. Dans l’exemple ci-dessus, nous étions tente de modifier une propriété, tel que le `Color` propriété d’un objet. Si `false` a été transmise pour l’indicateur global, `CustomBrowser` n’apparaîtrait jamais, car le concepteur crée en fait jamais une instance de `Color`. Définition de l’indicateur global `false` est utile pour les composants, tels que les contrôles, les minuteurs et les boîtes de dialogue.  
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>   

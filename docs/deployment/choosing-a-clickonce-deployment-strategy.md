@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 52e0dc775e5e9413fb251261a319e529f36393eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6b4ed387d00c96c1d66fdac0bb92a0bfbae7c530
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102183"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406676"
 ---
 # <a name="choose-a-clickonce-deployment-strategy"></a>Choisir une stratégie de déploiement ClickOnce
 Pour déployer une application [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)], trois stratégies sont possibles. Celle que vous choisissez dépend principalement du type d'application que vous déployez. Les trois stratégies de déploiement sont les suivantes :
@@ -32,7 +32,7 @@ Pour déployer une application [!INCLUDE[ndptecclick](../deployment/includes/ndp
 - Démarrage de l'application à partir du Web ou d'un partage réseau
 
     > [!NOTE]
-    >  En plus de choisir une stratégie de déploiement, vous devez également choisir une stratégie de mise à jour de l'application. Pour plus d’informations, consultez [choisir une stratégie de mise à jour ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
+    > En plus de choisir une stratégie de déploiement, vous devez également choisir une stratégie de mise à jour de l'application. Pour plus d’informations, consultez [choisir une stratégie de mise à jour ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
 
 ## <a name="install-from-the-web-or-a-network-share"></a>Installation à partir du web ou d’un partage réseau
  Cette stratégie permet de déployer votre application sur un serveur Web ou un partage de fichiers réseau. Lorsqu'un utilisateur final souhaite installer l'application, il clique sur une icône d'une page Web ou double-clique sur une icône du partage de fichiers. L'application est ensuite téléchargée, installée et démarrée sur l'ordinateur de l'utilisateur final. Des éléments sont ajoutés au menu **Démarrer** et au groupe **Ajout/Suppression de programmes** dans le **Panneau de configuration**.
@@ -49,7 +49,7 @@ Pour déployer une application [!INCLUDE[ndptecclick](../deployment/includes/ndp
  Cette stratégie est similaire à la première, sauf que l'application se comporte comme une application Web. Lorsque l’utilisateur clique sur un lien d’une page web (ou double-clique sur une icône du partage de fichiers), l’application est lancée. Quand les utilisateurs ferment l’application, cette dernière n’est plus disponible sur leur ordinateur local. Aucun élément n’est ajouté au menu **Démarrer** ou au groupe **Ajout/Suppression de programmes** dans le **Panneau de configuration**.
 
 > [!NOTE]
->  Techniquement, l'application est téléchargée et installée dans un cache d'application de l'ordinateur local, de la même façon qu'une application Web est téléchargée vers le cache Web. Comme pour le cache Web, les fichiers sont nettoyés du cache d'application en fin d'utilisation. Toutefois, l'utilisateur a l'impression que l'application est exécutée à partir du Web ou du partage de fichiers.
+> Techniquement, l'application est téléchargée et installée dans un cache d'application de l'ordinateur local, de la même façon qu'une application Web est téléchargée vers le cache Web. Comme pour le cache Web, les fichiers sont nettoyés du cache d'application en fin d'utilisation. Toutefois, l'utilisateur a l'impression que l'application est exécutée à partir du Web ou du partage de fichiers.
 
  Cette stratégie fonctionne mieux avec des applications rarement utilisées, par exemple, un programme de calcul des avantages sociaux des employés, exécuté généralement une fois par an.
 

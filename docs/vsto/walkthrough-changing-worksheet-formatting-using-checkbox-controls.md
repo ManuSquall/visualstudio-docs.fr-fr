@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aba73d5fc6c1609a3347178765ba516840b5176e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e2a7cd6143b9c97bbcd06337d38ae169dfa94305
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061687"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438612"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Procédure pas à pas : Modifier la mise en forme de feuille de calcul à l’aide de contrôles CheckBox
   Cette procédure pas à pas montre les principes fondamentaux de l’utilisation de cases à cocher sur une feuille de calcul Microsoft Office Excel pour modifier la mise en forme. Vous allez utiliser les outils de développement Office dans Visual Studio pour créer et ajouter du code à votre projet. Pour voir le résultat dans un exemple complet, consultez l’exemple des contrôles Excel [exemples de développement Office et des procédures pas à pas](../vsto/office-development-samples-and-walkthroughs.md).
@@ -35,7 +35,7 @@ ms.locfileid: "60061687"
 - Votre projet de test.
 
 > [!NOTE]
->  Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Il est possible que pour certains des éléments de l’interface utilisateur de Visual Studio, votre ordinateur affiche des noms ou des emplacements différents de ceux indiqués dans les instructions suivantes. L’édition de Visual Studio dont vous disposez et les paramètres que vous utilisez déterminent ces éléments. Pour plus d’informations, consultez [Personnaliser l’IDE Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Prérequis
  Pour exécuter cette procédure pas à pas, vous devez disposer des composants suivants :
@@ -94,7 +94,7 @@ ms.locfileid: "60061687"
      Ensuite, vous faites glisser un <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle à la feuille de calcul.
 
     > [!NOTE]
-    >  Vous pouvez également ajouter le <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle en tapant **textFont** dans le **nom** boîte.
+    > Vous pouvez également ajouter le <xref:Microsoft.Office.Tools.Excel.NamedRange> contrôle en tapant **textFont** dans le **nom** boîte.
 
 #### <a name="to-add-text-to-a-namedrange-control"></a>Pour ajouter du texte à un contrôle NamedRange
 

@@ -14,12 +14,12 @@ ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ad9a30f5a54177a9df955cbe78d0ad0bc5d99ac3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7fcea011f78688630a94cff64f9d2a627acea88c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058887"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408483"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Procédure pas à pas : Création et exécution de Tests unitaires pour le Code managé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,10 +47,10 @@ Cette procédure pas à pas décrit la création, l’exécution et la personnal
   [Utiliser les tests unitaires pour améliorer votre code](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Use_unit_tests_to_improve_your_code)  
   
 > [!NOTE]
->  Cette procédure pas à pas utilise le framework de tests unitaires Microsoft pour le code managé. L’explorateur de tests peut également exécuter des tests depuis des frameworks de tests unitaires tiers qui ont des adaptateurs pour l’explorateur de tests. Pour plus d’informations, consultez [Installer des frameworks de tests unitaires tiers](../test/install-third-party-unit-test-frameworks.md)  
+> Cette procédure pas à pas utilise le framework de tests unitaires Microsoft pour le code managé. L’explorateur de tests peut également exécuter des tests depuis des frameworks de tests unitaires tiers qui ont des adaptateurs pour l’explorateur de tests. Pour plus d’informations, consultez [Installer des frameworks de tests unitaires tiers](../test/install-third-party-unit-test-frameworks.md)  
   
 > [!NOTE]
->  Pour plus d’informations sur la façon d’exécuter des tests à partir d’une ligne de commande, consultez [Procédure pas à pas : utilisation de l’utilitaire de test de ligne de commande](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867).  
+> Pour plus d’informations sur la façon d’exécuter des tests à partir d’une ligne de commande, consultez [Procédure pas à pas : utilisation de l’utilitaire de test de ligne de commande](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867).  
   
 ## <a name="prerequisites"></a>Prérequis  
   
@@ -71,12 +71,12 @@ Cette procédure pas à pas décrit la création, l’exécution et la personnal
 5. Dans la zone **Nom** , tapez `Bank` , puis cliquez sur **OK**.  
   
    > [!NOTE]
-   >  Si le nom « Bank » est déjà utilisé, choisissez un autre nom pour le projet.  
+   > Si le nom « Bank » est déjà utilisé, choisissez un autre nom pour le projet.  
   
     Le nouveau projet Bank est créé et affiché dans l’Explorateur de solutions, avec le fichier Class1.cs ouvert dans l’éditeur de code.  
   
    > [!NOTE]
-   >  Si le fichier Class1.cs n’est pas ouvert dans l’éditeur de code, double-cliquez sur ce fichier dans l’Explorateur de solutions pour l’ouvrir.  
+   > Si le fichier Class1.cs n’est pas ouvert dans l’éditeur de code, double-cliquez sur ce fichier dans l’Explorateur de solutions pour l’ouvrir.  
   
 6. Copiez le code source de l’[Exemple de projet pour la création de tests unitaires](../test/sample-project-for-creating-unit-tests.md).  
   

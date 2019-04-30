@@ -22,12 +22,12 @@ caps.latest.revision: 93
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 980b7e0f54c058650a393c35467a73d926ec6638
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c5976f2d701ecf051625c93ab6b70fb88ed15108
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088728"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433332"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Personnaliser des cartes de code en modifiant les fichiers DGML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Pour personnaliser une carte de code, vous pouvez modifier le fichier DGML (Dire
  Modifiez le fichier .dgml de la carte de code dans un éditeur de texte ou un éditeur XML. Si la carte fait partie de votre solution Visual Studio, sélectionnez-le dans **l’Explorateur de solutions**, ouvrez le menu contextuel et choisissez **ouvrir avec**, **éditeur XML (texte)**.  
   
 > [!NOTE]
->  Pour créer des cartes de code, vous devez disposer de Visual Studio Enterprise. Quand vous modifiez une carte de code dans Visual Studio, il nettoie tous les attributs et éléments DGML inutilisés en les supprimant lorsque vous enregistrez le fichier .dgml. Il crée aussi des éléments de code automatiquement quand vous ajoutez manuellement de nouveaux liens. Lorsque vous enregistrez le fichier .dgml, tous les attributs que vous avez ajoutés à un élément peuvent être réorganisés par ordre alphabétique.  
+> Pour créer des cartes de code, vous devez disposer de Visual Studio Enterprise. Quand vous modifiez une carte de code dans Visual Studio, il nettoie tous les attributs et éléments DGML inutilisés en les supprimant lorsque vous enregistrez le fichier .dgml. Il crée aussi des éléments de code automatiquement quand vous ajoutez manuellement de nouveaux liens. Lorsque vous enregistrez le fichier .dgml, tous les attributs que vous avez ajoutés à un élément peuvent être réorganisés par ordre alphabétique.  
   
 ## <a name="OrganizeNodes"></a> Regrouper des éléments de code  
  Vous pouvez ajouter de nouveaux groupes ou convertir des nœuds existants dans un groupe.  
@@ -120,7 +120,7 @@ Pour personnaliser une carte de code, vous pouvez modifier le fichier DGML (Dire
 - groupes d'éléments de code et liens selon certaines conditions.  
   
 > [!TIP]
->  Si vous avez répété des styles sur de nombreux éléments de code ou liens, vous pouvez appliquer une catégorie à ces éléments de code ou à ces liens, puis appliquer un style à cette catégorie. Pour plus d’informations, consultez [assignation de catégories aux éléments de Code et aux liens](#AssignCategories) et [assignation de propriétés aux éléments de Code et aux liens](#AssignProperties).  
+> Si vous avez répété des styles sur de nombreux éléments de code ou liens, vous pouvez appliquer une catégorie à ces éléments de code ou à ces liens, puis appliquer un style à cette catégorie. Pour plus d’informations, consultez [assignation de catégories aux éléments de Code et aux liens](#AssignCategories) et [assignation de propriétés aux éléments de Code et aux liens](#AssignProperties).  
   
 ##### <a name="to-apply-a-custom-style-to-a-single-code-element"></a>Pour appliquer un style personnalisé à un seul élément de code  
   
@@ -558,7 +558,7 @@ Pour personnaliser une carte de code, vous pouvez modifier le fichier DGML (Dire
  Vous pouvez lier des éléments ou des URL à des éléments de code ou à des liens en modifiant le fichier .dgml de la carte et en ajoutant un attribut `Reference` à l'élément `<Node/>` d'un élément de code ou bien l'élément `<Link/>` pour un lien. Vous pouvez ensuite ouvrir et afficher ce contenu à partir de l'élément de code ou du lien. L’attribut `Reference` spécifie le chemin d’accès de ce contenu. Il peut s’agir d’un chemin d’accès relatif par rapport à l’emplacement du fichier .dgml ou d’un chemin d’accès absolu.  
   
 > [!CAUTION]
->  Si vous utilisez des chemins d'accès relatifs, et si le fichier .dgml est déplacé vers un emplacement différent, ces chemins d'accès ne seront plus résolus. Lorsque vous essayez d'ouvrir et d'afficher le contenu lié, une erreur indiquant que le contenu ne peut pas être affiché se produit.  
+> Si vous utilisez des chemins d'accès relatifs, et si le fichier .dgml est déplacé vers un emplacement différent, ces chemins d'accès ne seront plus résolus. Lorsque vous essayez d'ouvrir et d'afficher le contenu lié, une erreur indiquant que le contenu ne peut pas être affiché se produit.  
   
  Par exemple, vous souhaiterez peut-être lier les éléments de code suivants :  
   
@@ -583,7 +583,7 @@ Pour personnaliser une carte de code, vous pouvez modifier le fichier DGML (Dire
    - Dans l'élément `<Node/>` ou `<Link/>`, ajoutez un attribut `Reference` pour spécifier l'emplacement de l'élément de code.  
   
      > [!NOTE]
-     >  Il ne peut exister qu'un seul attribut `Reference` par élément.  
+     > Il ne peut exister qu'un seul attribut `Reference` par élément.  
   
      Exemple :  
   

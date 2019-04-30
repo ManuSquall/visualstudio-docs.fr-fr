@@ -27,12 +27,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6be45876174afa00a58ea9948661f051f8df1ddc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8e6c234b622dcc335a6fe42fd57f1f815a5fd9d9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045705"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447304"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Spécifiez les fichiers de symbole (.pdb) et les fichiers source dans le débogueur Visual Studio.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ Un fichier de base de données du programme (.pdb), également appelé fichier d
 4. Pour améliorer les performances de chargement de symboles, tapez le chemin d'accès d'un répertoire local dans lequel les symboles peuvent être copiés par les serveurs de symboles dans la zone **Mettre en cache les symboles dans ce répertoire** d'un répertoire local dans lequel les symboles peuvent être copiés.
 
    > [!NOTE]
-   >  Ne placez pas votre cache de symboles dans un dossier protégé (tel que le dossier C:\Windows ou un de ses sous-dossiers). Utilisez plutôt un dossier en lecture-écriture.
+   > Ne placez pas votre cache de symboles dans un dossier protégé (tel que le dossier C:\Windows ou un de ses sous-dossiers). Utilisez plutôt un dossier en lecture-écriture.
 
    **Spécifier le comportement de chargement des symboles**
 
@@ -116,7 +116,7 @@ Un fichier de base de données du programme (.pdb), également appelé fichier d
  Les fournisseurs tiers des applications et des bibliothèques Windows peuvent donner accès au serveur de symboles sur Internet. Vous entrez également l'URL de ces serveurs de symboles sur la page **Débogage**/**Symboles** ,
 
 > [!NOTE]
->  Si vous utilisez un serveur de symboles autre que les serveurs de symboles publics Microsoft, assurez-vous que ce serveur et son chemin d'accès sont dignes de confiance. Étant donné que les fichiers de symboles peuvent contenir du code exécutable arbitraire, vous vous exposez à des menaces de sécurité.
+> Si vous utilisez un serveur de symboles autre que les serveurs de symboles publics Microsoft, assurez-vous que ce serveur et son chemin d'accès sont dignes de confiance. Étant donné que les fichiers de symboles peuvent contenir du code exécutable arbitraire, vous vous exposez à des menaces de sécurité.
 
 ### <a name="BKMK_Find_and_load_symbols_while_debugging"></a> Rechercher et charger des symboles pendant le débogage
  Lorsque le débogueur est en mode arrêt, vous pouvez charger des symboles pour un module qui a été précédemment exclu par les options du débogueur ou que le compilateur n'a pas pu trouver. Vous pouvez charger les symboles à partir des menus contextuels des fenêtres Pile des appels, Modules, Variables locales, Automatique et Espion. Si le débogueur s'arrête dans du code qui ne contient pas de fichiers sources ou de symboles disponibles, une fenêtre de document s'affiche. Vous trouverez des informations sur les fichiers manquants et pourrez prendre des mesures pour les localiser et les charger.
@@ -224,7 +224,7 @@ Un fichier de base de données du programme (.pdb), également appelé fichier d
  Lorsqu'il n'y a pas de code source sur l'ordinateur local ou si le fichier .pdb ne correspond pas au code source, le serveur source peut vous aider à déboguer une application. Il prend les demandes de fichiers et retourne les fichiers réels. Le serveur source s'exécute au moyen d'un fichier DLL nommé srcsrv.dll. Le serveur source lit le fichier .pdb de l'application, qui contient des pointeurs vers le référentiel de code source ainsi que des commandes utilisées pour extraire le code source du référentiel. Vous pouvez limiter les commandes dont vous autorisez l'exécution et appartenant au fichier .pdb de l'application en les répertoriant dans un fichier srcsrv.ini qui doit se trouver dans le même répertoire que srcsrv.dll et devenv.exe.
 
 > [!IMPORTANT]
->  Les commandes arbitraires peuvent être incorporées dans le fichier .pdb de l'application, veillez à ne mettre que celles que vous voulez exécuter dans le fichier srcsrv.ini. Toute tentative d'exécution d'une commande ne se trouvant pas dans le fichier srcsvr.ini provoque l'apparition d'une boîte de dialogue de confirmation. Pour plus d’informations, consultez [avertissement de sécurité : le débogueur doit exécuter une commande non approuvée](../debugger/security-warning-debugger-must-execute-untrusted-command.md). Aucune validation n’est effectuée sur les paramètres de commande, soyez donc prudent avec les commandes de confiance. Par exemple, vous avez confiance en cmd.exe, mais un utilisateur malveillant a pu spécifier des paramètres qui rendent la commande dangereuse.
+> Les commandes arbitraires peuvent être incorporées dans le fichier .pdb de l'application, veillez à ne mettre que celles que vous voulez exécuter dans le fichier srcsrv.ini. Toute tentative d'exécution d'une commande ne se trouvant pas dans le fichier srcsvr.ini provoque l'apparition d'une boîte de dialogue de confirmation. Pour plus d’informations, consultez [avertissement de sécurité : le débogueur doit exécuter une commande non approuvée](../debugger/security-warning-debugger-must-execute-untrusted-command.md). Aucune validation n’est effectuée sur les paramètres de commande, soyez donc prudent avec les commandes de confiance. Par exemple, vous avez confiance en cmd.exe, mais un utilisateur malveillant a pu spécifier des paramètres qui rendent la commande dangereuse.
 
  **Pour activer l'utilisation d'un serveur source**
 

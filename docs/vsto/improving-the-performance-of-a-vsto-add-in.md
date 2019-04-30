@@ -10,12 +10,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: df17245a398c71e7ae9ce0077352f47b0b70ab9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2add0dfced6a3b8e8263dafe133ee3a2f86637f5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071819"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420938"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Améliorer les performances d’un complément VSTO
   Vous pouvez offrir aux utilisateurs une meilleure expérience. En effet, en optimisant les compléments VSTO que vous créez pour les applications Office, vous pouvez leur permettre d’être plus rapides pour démarrer, arrêter, ouvrir des éléments et exécuter d’autres tâches. Si vous créez un complément VSTO pour Outlook, vous pouvez également réduire les risques de désactivation du complément VSTO en raison de performances insuffisantes. Pour améliorer les performances du complément VSTO, vous pouvez implémenter les stratégies suivantes :
@@ -93,7 +93,7 @@ ms.locfileid: "60071819"
 - Validation des signatures numériques des manifestes de déploiement
 
   > [!NOTE]
-  >  Cette approche n’est pas nécessaire si vous déployez votre complément, VSTO à un emplacement sécurisé sur les ordinateurs des utilisateurs.
+  > Cette approche n’est pas nécessaire si vous déployez votre complément, VSTO à un emplacement sécurisé sur les ordinateurs des utilisateurs.
 
   Pour plus d’informations, consultez [déployer une solution Office à l’aide du programme d’installation de Windows](../vsto/deploying-an-office-solution-by-using-windows-installer.md).
 
@@ -111,7 +111,7 @@ ms.locfileid: "60071819"
  Prévoyez d'effectuer les tâches qui prennent du temps (par exemple, les tâches longues, les connexions de base de données ou autres sortes d'appels réseau) dans un thread distinct. Pour plus d’informations, consultez [Threading prise en charge dans Office](../vsto/threading-support-in-office.md).
 
 > [!NOTE]
->  Tout le code qui appelle le modèle objet Office doit s'exécuter dans le thread principal.
+> Tout le code qui appelle le modèle objet Office doit s'exécuter dans le thread principal.
 
 ## <a name="see-also"></a>Voir aussi
 

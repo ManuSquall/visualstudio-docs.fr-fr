@@ -14,12 +14,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fa0fac38c79e4c54cb461ef51e016508d043f202
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e53e05d9df5a7bbdca5fd8a9b74dd9325dc7aae5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039793"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426476"
 ---
 # <a name="run-windows-store-apps-on-a-remote-machine"></a>Exécuter des applications du Windows Store sur un ordinateur distant
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ S’applique uniquement à Windows] (.. /Image/windows_only_content.png « wind
  Par défaut, le débogueur distant utilise l'authentification Windows.  
   
 > [!WARNING]
->  Vous pouvez également choisir d'exécuter le débogueur distant en mode Aucune authentification, mais ce mode est fortement déconseillé. Il n'existe aucune sécurité du réseau lorsque vous lancez l'exécution dans ce mode. Sélectionnez le mode Aucune authentification uniquement si vous êtes sûr que le réseau n'est pas exposé à un problème de sécurité lié à des programmes malveillants ou dangereux.  
+> Vous pouvez également choisir d'exécuter le débogueur distant en mode Aucune authentification, mais ce mode est fortement déconseillé. Il n'existe aucune sécurité du réseau lorsque vous lancez l'exécution dans ce mode. Sélectionnez le mode Aucune authentification uniquement si vous êtes sûr que le réseau n'est pas exposé à un problème de sécurité lié à des programmes malveillants ou dangereux.  
   
 ## <a name="BKMK_DirectConnect"></a> Comment se connecter directement à un périphérique distant  
  Pour vous connecter directement à un périphérique distant, connectez l'ordinateur Visual Studio au périphérique à l'aide d'un câble Ethernet standard. Si le périphérique n'est pas équipé de port Ethernet, utilisez un adaptateur USB à Ethernet pour brancher le câble.  
@@ -74,15 +74,15 @@ S’applique uniquement à Windows] (.. /Image/windows_only_content.png « wind
 ## <a name="BKMK_Installing_the_Remote_Tools"></a> Installation des outils de contrôle à distance  
   
 > [!NOTE]
->  **Versions et mises à jour**  
+> **Versions et mises à jour**  
 >   
->  Les **Outils de contrôle à distance de Visual Studio 2015** ne sont pas pris en charge pour les versions antérieures de Visual Studio.  
+> Les **Outils de contrôle à distance de Visual Studio 2015** ne sont pas pris en charge pour les versions antérieures de Visual Studio.  
 >   
->  Nous vous recommandons d'installer la version de mise à jour des Outils de contrôle à distance de Visual Studio 2015 qui correspond à la version de mise à jour de votre installation de Visual Studio.  
+> Nous vous recommandons d'installer la version de mise à jour des Outils de contrôle à distance de Visual Studio 2015 qui correspond à la version de mise à jour de votre installation de Visual Studio.  
 >   
->  Le débogueur VS est compatible avec toute combinaison de versions de VS 2015 et des outils de contrôle à distance pour Visual Studio 2015. Toutefois, les dernières fonctionnalités de Visual Studio nécessitent la version la plus récente de Visual Studio et des outils de contrôle à distance.  
+> Le débogueur VS est compatible avec toute combinaison de versions de VS 2015 et des outils de contrôle à distance pour Visual Studio 2015. Toutefois, les dernières fonctionnalités de Visual Studio nécessitent la version la plus récente de Visual Studio et des outils de contrôle à distance.  
 >   
->  D'autres outils de diagnostic peuvent exiger les mêmes versions des outils de contrôle à distance et de Visual Studio.  
+> D'autres outils de diagnostic peuvent exiger les mêmes versions des outils de contrôle à distance et de Visual Studio.  
   
  **Installation des composants de débogage distant sur un appareil distant**  
   
@@ -101,7 +101,7 @@ S’applique uniquement à Windows] (.. /Image/windows_only_content.png « wind
 ## <a name="BKMK_Starting_the_Remote_Debugger_Monitor"></a> Démarrage de Remote Debugging Monitor  
   
 > [!NOTE]
->  Comme le débogueur distant configure le pare-feu pour autoriser la communication avec l'hôte Visual Studio, vous devez être administrateur sur le périphérique distant lorsque vous démarrez le débogueur distant pour la première fois.  
+> Comme le débogueur distant configure le pare-feu pour autoriser la communication avec l'hôte Visual Studio, vous devez être administrateur sur le périphérique distant lorsque vous démarrez le débogueur distant pour la première fois.  
   
  Après avoir installé les outils de contrôle à distance, choisissez **Remote Debugger** dans l'écran **Démarrer** . La boîte de dialogue **Configuration du débogage distant** apparaît lorsque vous démarrez le débogueur distant pour la première fois.  
   
@@ -125,7 +125,7 @@ S’applique uniquement à Windows] (.. /Image/windows_only_content.png « wind
    2. Choisissez **Autorisations** pour ajouter ou supprimer des utilisateurs disposant d'une autorisation de débogage distant.  
   
        > [!NOTE]
-       >  Les autorisations doivent être accordées à chaque compte d'utilisateur qui effectue un débogage distant.  
+       > Les autorisations doivent être accordées à chaque compte d'utilisateur qui effectue un débogage distant.  
   
    Utilisez l' **Assistant Configuration Remote Debugger** pour définir des options avancées pour le débogueur distant. Pour ouvrir l'assistant, choisissez **Assistant Configuration Remote Debugger** dans l'écran de démarrage.  
   
@@ -141,7 +141,7 @@ S’applique uniquement à Windows] (.. /Image/windows_only_content.png « wind
  La boîte de dialogue répertorie uniquement les appareils qui se trouvent sur le sous-réseau local de l'ordinateur Visual Studio et qui exécutent le débogueur distant.  
   
 > [!TIP]
->  Si vous avez des problèmes pour vous connecter à un périphérique distant, entrez son adresse IP. Pour connaître l'adresse IP d'un périphérique, ouvrez une fenêtre de commande, puis tapez **ipconfig**. L'adresse IP s'affiche comme **IPv4 Address**.  
+> Si vous avez des problèmes pour vous connecter à un périphérique distant, entrez son adresse IP. Pour connaître l'adresse IP d'un périphérique, ouvrez une fenêtre de commande, puis tapez **ipconfig**. L'adresse IP s'affiche comme **IPv4 Address**.  
   
 ### <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> Choix de l'appareil distant pour les projets C# et Visual Basic  
  ![Propriétés du projet pour le débogage distant managé](../debugger/media/vsrun-managed-projprop-remote.png "VSRUN_Managed_ProjProp_Remote")  

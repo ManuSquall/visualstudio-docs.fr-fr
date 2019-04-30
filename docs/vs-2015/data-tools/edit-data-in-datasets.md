@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b1549cf23f87a56f724a0b5e56b7b59f4fa88ac2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9962bb1dbeef089d409cbe100daa37777b45e67d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105004"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425388"
 ---
 # <a name="edit-data-in-datasets"></a>Modifier des données dans des datasets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Pour modifier les données dans les tables de données de la même manière que 
      Cette méthode ne supprime pas physiquement l’enregistrement. Au lieu de cela, il les marque pour suppression.  
   
     > [!NOTE]
-    >  Si vous obtenez la propriété count d’un <xref:System.Data.DataRowCollection>, le résultat inclut les enregistrements qui ont été marqués pour suppression. Pour obtenir un décompte précis d’enregistrements qui ne sont pas marqués pour suppression, vous pouvez parcourir la collection et rechercher la <xref:System.Data.DataRow.RowState%2A> propriété de chaque enregistrement. (Les enregistrements marqués pour suppression ont un <xref:System.Data.DataRow.RowState%2A> de <xref:System.Data.DataRowState>.) Vous pouvez également créer une vue de données d’un dataset filtres basés sur l’état de la ligne et obtenir la propriété count à partir de là.  
+    > Si vous obtenez la propriété count d’un <xref:System.Data.DataRowCollection>, le résultat inclut les enregistrements qui ont été marqués pour suppression. Pour obtenir un décompte précis d’enregistrements qui ne sont pas marqués pour suppression, vous pouvez parcourir la collection et rechercher la <xref:System.Data.DataRow.RowState%2A> propriété de chaque enregistrement. (Les enregistrements marqués pour suppression ont un <xref:System.Data.DataRow.RowState%2A> de <xref:System.Data.DataRowState>.) Vous pouvez également créer une vue de données d’un dataset filtres basés sur l’état de la ligne et obtenir la propriété count à partir de là.  
   
      L’exemple suivant montre comment appeler le <xref:System.Data.DataRow.Delete%2A> méthode pour marquer la première ligne dans le `Customers` comme étant supprimé de la table :  
   

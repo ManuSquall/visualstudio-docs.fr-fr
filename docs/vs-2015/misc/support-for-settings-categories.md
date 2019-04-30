@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
 manager: jillfra
-ms.openlocfilehash: 833783267c70c0a201e4b84bc5031bce517dc0a2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b66724542d45aa6f57b7c2748c7c1cab1ec8c064
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054480"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436561"
 ---
 # <a name="support-for-settings-categories"></a>Prise en charge des catégories de paramètres
 Une catégorie de paramètres se compose d’un groupe d’options qui personnalisent l’environnement de développement intégré (IDE). Par exemple, des paramètres peuvent contrôler la disposition des fenêtres [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et le contenu des menus. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -25,7 +25,7 @@ Une catégorie de paramètres se compose d’un groupe d’options qui personnal
  Le contrôle d’arborescence dans le volet de navigation de cette page répertorie les catégories. Une catégorie est un groupe de paramètres associés qui apparaissent sous la forme d’un « point de paramètres personnalisés », autrement dit sous forme de case à cocher. Vous utilisez ces cases à cocher pour sélectionner les catégories à rendre persistantes dans un fichier .vsettings. L’Assistant vous permet de nommer le fichier .vsettings et de spécifier son chemin.  
   
 > [!NOTE]
->  Les paramètres sont enregistrés ou restaurés en tant que catégorie, et les différents noms des paramètres ne sont pas affichés dans l’Assistant.  
+> Les paramètres sont enregistrés ou restaurés en tant que catégorie, et les différents noms des paramètres ne sont pas affichés dans l’Assistant.  
   
  L’infrastructure MPF (Managed Package Framework) prend en charge la création de catégories de paramètres avec un minimum de code supplémentaire.  
   
@@ -48,7 +48,7 @@ Une catégorie de paramètres se compose d’un groupe d’options qui personnal
  Le chemin de Registre de la catégorie de paramètres est déterminé en combinant <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, le mot, UserSettings, la catégorie de paramètres et le nom du point de paramètres personnalisés. Les noms de la catégorie de paramètres et du point de paramètres personnalisés sont joints et séparés par un trait de soulignement pour former le nom canonique et non localisé qui apparaît dans le Registre. Par exemple, si la catégorie de paramètres est « Ma Catégorie », le nom du point de paramètres personnalisés « Mes paramètres » et l’ApplicationRegistryRoot HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp, la catégorie de paramètres a la clé de Registre HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\UserSettings\Ma Catégorie_Mes paramètres.  
   
 > [!NOTE]
->  Le nom canonique n’apparaît pas dans une interface utilisateur. Il est utilisé pour associer un nom lisible à la catégorie de paramètres, un peu comme un identificateur programmatique (ProgID).  
+> Le nom canonique n’apparaît pas dans une interface utilisateur. Il est utilisé pour associer un nom lisible à la catégorie de paramètres, un peu comme un identificateur programmatique (ProgID).  
   
 ### <a name="settings-category-attribute"></a>Attribut de catégorie de paramètres  
  Le <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> détermine le mappage des catégories aux points de paramètres personnalisés dans le **Assistant Importation et exportation paramètres** en associant une catégorie au VSPackage qui le fournit. Prenons le fragment de code suivant :  

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba6d709dae3b2a20332b3122585ad2060628016e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 7aa01918b8de718fc26c0dc0249615b327150020
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601355"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422874"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Mode Plan dans un service de langage hérité
 Le mode plan permet de réduire un programme complexe dans une vue d’ensemble ou un plan. Par exemple, en c#, toutes les méthodes peuvent être réduits en une seule ligne, en affichant uniquement la signature de méthode. En outre, les structures et les classes peuvent être réduites pour afficher uniquement les noms des classes et structures. À l’intérieur d’une méthode unique, une logique complexe peut être réduite pour afficher le flux global en affichant uniquement la première ligne des instructions telles que `foreach`, `if`, et `while`.
@@ -25,7 +25,7 @@ Le mode plan permet de réduire un programme complexe dans une vue d’ensemble 
  Services de langage hérité sont implémentés en tant que partie d’un VSPackage, mais la plus récente pour implémenter des fonctionnalités de service de langage consiste à utiliser des extensions MEF. Pour plus d’informations, consultez [procédure pas à pas : Mode Plan](../../extensibility/walkthrough-outlining.md).
 
 > [!NOTE]
->  Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorer les performances de votre service de langage et vous permettent de tirer parti des nouvelles fonctionnalités de l’éditeur.
+> Nous vous recommandons de commencer à utiliser le nouvel éditeur API dès que possible. Cela améliorer les performances de votre service de langage et vous permettent de tirer parti des nouvelles fonctionnalités de l’éditeur.
 
 ## <a name="enabling-support-for-outlining"></a>L’activation de la prise en charge pour le mode plan
  Le `AutoOutlining` entrée de Registre est définie sur 1 pour activer le mode plan automatique. Le mode plan automatique configure une analyse de la source entier lorsqu’un fichier est chargé ou modifié afin d’identifier les zones masquées et afficher les glyphes en mode plan. Le mode plan peut également être contrôlé manuellement par l’utilisateur.

@@ -18,28 +18,28 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 674050711e69ae97c7e1faa361122bee0d755ae7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: c7342524d1e7682fd088c4f7ea44037a32c220e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621147"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441752"
 ---
 # <a name="infopath-solutions"></a>solutions InfoPath
   Visual Studio fournit des modèles de projet à l’aide desquels vous pouvez créer des compléments VSTO pour Microsoft Office InfoPath 2013 et InfoPath 2010. InfoPath n’est pas disponible dans Office 2016.
 
 > [!NOTE]
->  Vous pouvez toujours créer un composant logiciel complément VSTO pour InfoPath même si vous avez installé Office 2016. Pour cela, installez simplement InfoPath 2013 ou Office 2013 côte à côte avec Office 2016.
+> Vous pouvez toujours créer un composant logiciel complément VSTO pour InfoPath même si vous avez installé Office 2016. Pour cela, installez simplement InfoPath 2013 ou Office 2013 côte à côte avec Office 2016.
 
  [!INCLUDE[appliesto_infoallapp](../vsto/includes/appliesto-infoallapp-md.md)]
 
 > [!NOTE]
->  Vous souhaitez développer des solutions qui étendent l’expérience Office sur [plusieurs plateformes](https://dev.office.com/add-in-availability)? Découvrez le nouvel [modèle de compléments Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Compléments Office peu encombrantes par rapport aux compléments VSTO et de solutions, et vous pouvez les créer à l’aide de presque toutes les technologies, telles que HTML5, JavaScript, CSS3 et XML de programmation web.
+> Vous souhaitez développer des solutions qui étendent l’expérience Office sur [plusieurs plateformes](https://dev.office.com/add-in-availability)? Découvrez le nouvel [modèle de compléments Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Compléments Office peu encombrantes par rapport aux compléments VSTO et de solutions, et vous pouvez les créer à l’aide de presque toutes les technologies, telles que HTML5, JavaScript, CSS3 et XML de programmation web.
 
  Les compléments VSTO pour InfoPath sont semblables aux compléments VSTO conçus pour les autres applications Microsoft Office. Ces types de solutions se composent d'un assembly chargé par l'application. L'utilisateur final peut accéder aux fonctionnalités de cet assembly quel que soit le formulaire ou le modèle de formulaire ouvert. Pour plus d’informations sur les Compléments VSTO, consultez [commencer à programmer des Compléments VSTO](../vsto/getting-started-programming-vsto-add-ins.md) et [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).
 
 > [!NOTE]
->  Visual Studio 2015 n'inclut pas les projets de modèle de formulaire InfoPath qui étaient disponibles dans les versions antérieures de Visual Studio. Vous ne pouvez pas non plus utiliser Visual Studio 2015 pour ouvrir ou modifier un projet de modèle de formulaire InfoPath qui a été créé dans une version antérieure de Visual Studio. Toutefois, cela est possible en utilisant Visual Studio Tools pour Applications. Pour plus d’informations, consultez [fonctionnent avec les projets VSTO 2008 dans InfoPath 2010.](http://go.microsoft.com/fwlink/?LinkID=218903).
+> Visual Studio 2015 n'inclut pas les projets de modèle de formulaire InfoPath qui étaient disponibles dans les versions antérieures de Visual Studio. Vous ne pouvez pas non plus utiliser Visual Studio 2015 pour ouvrir ou modifier un projet de modèle de formulaire InfoPath qui a été créé dans une version antérieure de Visual Studio. Toutefois, cela est possible en utilisant Visual Studio Tools pour Applications. Pour plus d’informations, consultez [fonctionnent avec les projets VSTO 2008 dans InfoPath 2010.](http://go.microsoft.com/fwlink/?LinkID=218903).
 
 ## <a name="automate-infopath-by-using-an-add-in"></a>Automatiser InfoPath en utilisant un complément
  Pour accéder au modèle objet d’InfoPath à partir d’un complément VSTO Office créé à l’aide des outils de développement Office dans Visual Studio, utilisez le champ `Application` de la classe `ThisAddIn` dans votre projet. Le champ `Application` retourne un objet <xref:Microsoft.Office.Interop.InfoPath.Application> qui représente l'instance actuelle d'InfoPath. Pour plus d’informations, consultez [programme VSTO Add-ins](../vsto/programming-vsto-add-ins.md).

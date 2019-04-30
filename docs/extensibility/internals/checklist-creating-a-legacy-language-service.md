@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0af3634c2aeb851dab580922f8c282824f41626
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7037b49763d4fda844b7692052935a4eee7f7107
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420692"
 ---
 # <a name="checklist-create-a-legacy-language-service"></a>Checklist : Créer un service de langage hérité
 La liste de vérification suivante résume les étapes de base que vous devez prendre afin de créer un service de langage pour la [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] éditeur principal. Pour intégrer votre service de langage dans [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], vous devez créer un évaluateur d’expression de débogage. Pour plus d’informations, consultez [écrire un évaluateur d’expression CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) dans le [extensibilité du débogueur Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md).
@@ -61,7 +61,7 @@ La liste de vérification suivante résume les étapes de base que vous devez pr
     Les commandes qui doivent être gérés dépendent des services qui sont fournis. Pour plus d’informations, consultez [commandes importantes pour le langage de service filtres](../../extensibility/internals/important-commands-for-language-service-filters.md).
 
     > [!NOTE]
-    >  Le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> interface doit être implémentée sur le même objet que le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface.
+    > Le <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> interface doit être implémentée sur le même objet que le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface.
 
 - Compléter automatiquement les instructions
 

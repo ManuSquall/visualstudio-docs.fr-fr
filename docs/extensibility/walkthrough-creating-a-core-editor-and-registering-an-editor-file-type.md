@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd6514ec43cd3180d808c20d5589bf18e3a9b58b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4aac1298c13cb931eba889e6323faff9b1640f8b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411035"
 ---
 # <a name="walkthrough-create-a-core-editor-and-registering-an-editor-file-type"></a>Procédure pas à pas : Créer un éditeur de base et l’inscription d’un type de fichier d’éditeur
 Cette procédure pas à pas montre comment créer un VSPackage qui démarre le [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] éditeur principal lorsqu’un fichier avec le *.myext* extension de nom de fichier est chargée.
@@ -325,7 +325,7 @@ Cette procédure pas à pas montre comment créer un VSPackage qui démarre le [
 3. Ouvrez le **VSPackage.resx** de fichiers, ajouter une nouvelle chaîne, la valeur est le nom **101**et définissez la valeur sur `IDS_EDITORNAME`. Cette étape fournit le package avec un ID de ressource pour accéder à la chaîne que vous avez créé.
 
    > [!NOTE]
-   >  Si le **VSPackage.resx** fichier contient une autre chaîne que le `name` attribut la valeur **101**, remplacez par une autre valeur unique, numeric, ici et dans les étapes suivantes.
+   > Si le **VSPackage.resx** fichier contient une autre chaîne que le `name` attribut la valeur **101**, remplacez par une autre valeur unique, numeric, ici et dans les étapes suivantes.
 
 4. Dans **l’Explorateur de solutions**, ouvrez le **MyPackagePackage.cs** fichier.
 

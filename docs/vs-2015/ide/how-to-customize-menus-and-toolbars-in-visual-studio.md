@@ -28,12 +28,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 69e18d2baabd7bffcf794def593022b898bcd940
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 91223021ce6f05b91d47e7b7019fb0c5c02243db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416786"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Procédure : Personnaliser les menus et les barres d’outils dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "60094526"
 Vous pouvez personnaliser Visual Studio non seulement en ajoutant et en supprimant des barres d'outils et des menus dans la barre de menus, mais aussi en ajoutant et en supprimant des commandes dans une barre d'outils ou un menu quelconques.
 
 > [!WARNING]
->  Après avoir personnalisé une barre d’outils ou un menu, veillez à ce que sa case demeure cochée dans la boîte de dialogue **Personnaliser**. Dans le cas contraire, vos modifications ne seront pas conservées une fois que vous aurez fermé et rouvert Visual Studio.
+> Après avoir personnalisé une barre d’outils ou un menu, veillez à ce que sa case demeure cochée dans la boîte de dialogue **Personnaliser**. Dans le cas contraire, vos modifications ne seront pas conservées une fois que vous aurez fermé et rouvert Visual Studio.
 
  **Dans cette rubrique :**
 
@@ -84,14 +84,14 @@ Vous pouvez personnaliser Visual Studio non seulement en ajoutant et en supprima
     - Pour supprimer une barre d’outils personnalisée, choisissez-la dans la liste **Barres d’outils**, puis choisissez le bouton **Supprimer**.
 
         > [!IMPORTANT]
-        >  Vous pouvez supprimer les barres d'outils que vous créez mais pas les barres d'outils par défaut.
+        > Vous pouvez supprimer les barres d'outils que vous créez mais pas les barres d'outils par défaut.
 
     - Pour déplacer une barre d’outils vers un autre emplacement d’ancrage, choisissez-la dans la liste **Barres d’outils**, choisissez le bouton **Modifier la sélection**, puis choisissez un emplacement dans la liste qui s’affiche.
 
          Vous pouvez également faire glisser le bord gauche d'une barre d'outils pour placer cette dernière n'importe où dans la zone d'ancrage principale.
 
         > [!NOTE]
-        >  Pour plus d’informations sur l’amélioration de l’utilisation et de l’accessibilité des barres d’outils, consultez [Guide pratique pour définir les options d’accessibilité de l’IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
+        > Pour plus d’informations sur l’amélioration de l’utilisation et de l’accessibilité des barres d’outils, consultez [Guide pratique pour définir les options d’accessibilité de l’IDE](../ide/reference/how-to-set-ide-accessibility-options.md).
 
 ## <a name="bkmk_customize"></a> Personnalisation d’un menu ou d’une barre d’outils
 

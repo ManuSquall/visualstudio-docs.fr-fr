@@ -18,12 +18,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 729639c99747ce7f7358ad3c4b0b6374bd64d010
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 04a941ae7aab30825c66ac5d3d81ac12d4b7c7db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437742"
 ---
 # <a name="using-the-debuggerdisplay-attribute"></a>Utilisation de l’attribut DebuggerDisplay
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ La <xref:System.Diagnostics.DebuggerDisplayAttribute> contrôle la façon dont u
  L’évaluation par le débogueur de cet appel `ToString()` implicite dépend d’un paramètre utilisateur dans la boîte de dialogue **Outils / Options / Débogage** . Visual Basic n’implémente pas cette évaluation `ToString()` implicite.  
   
 > [!IMPORTANT]
->  Si la case **Afficher la structure brute des objets dans des fenêtres de variables** est cochée dans la boîte de dialogue **Outils / Options / Débogage** , l’attribut `DebuggerDisplay` est ignoré.  
+> Si la case **Afficher la structure brute des objets dans des fenêtres de variables** est cochée dans la boîte de dialogue **Outils / Options / Débogage** , l’attribut `DebuggerDisplay` est ignoré.  
   
  Le tableau suivant montre quelques-unes des utilisations possibles de l'attribut `DebuggerDisplay` et quelques exemples de sorties.  
   

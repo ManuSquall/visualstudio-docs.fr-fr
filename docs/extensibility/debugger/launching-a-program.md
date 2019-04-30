@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46d35961e1db1acf11d544b7523a264470340de0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: c069e082d4bd9a11278a63d33a68822e528db795
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710875"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409976"
 ---
 # <a name="launch-a-program"></a>Lancer un programme
 Appuyez sur les utilisateurs souhaitant déboguer un programme **F5** d’exécuter le débogueur à partir de l’IDE. Commence une série d’événements qui aboutissent à présent dans l’IDE de la connexion à un moteur de débogage (DE), qui est à son tour connecté, ou attaché, le programme comme suit :
@@ -25,17 +25,17 @@ Appuyez sur les utilisateurs souhaitant déboguer un programme **F5** d’exécu
 
 2. Si un D’est spécifié, l’Allemagne appelle le système d’exploitation pour lancer le programme. Par conséquent le lancement du programme, l’environnement d’exécution du programme charge. Par exemple, si un programme est écrit dans le langage MSIL, le common language runtime est appelé pour exécuter le programme.
 
-    ou
+    - ou -
 
     Si un DE n’est pas spécifié, le port appelle le système d’exploitation pour lancer le programme, ce qui provoque l’environnement d’exécution du programme à charger.
 
    > [!NOTE]
-   >  Si un D’est utilisé pour lancer un programme, il est probable que le même DE sera attaché au programme.
+   > Si un D’est utilisé pour lancer un programme, il est probable que le même DE sera attaché au programme.
 
 3. Selon que l’Allemagne ou le port lancé le programme, l’Allemagne ou l’environnement d’exécution puis crée une description du programme ou un nœud et notifie le port que le programme est en cours d’exécution.
 
    > [!NOTE]
-   >  Il est recommandé que l’environnement d’exécution créer le nœud de programme, car le nœud de programme est une représentation simplifiée d’un programme qui peut être débogué. Il est inutile de charger un ensemble DE simplement pour créer et inscrire un nœud de programme. Si le dé est conçue pour exécuter en cours de l’IDE, mais aucun IDE est en cours d’exécution, il doit exister un composant qui peut ajouter un nœud de programme au port.
+   > Il est recommandé que l’environnement d’exécution créer le nœud de programme, car le nœud de programme est une représentation simplifiée d’un programme qui peut être débogué. Il est inutile de charger un ensemble DE simplement pour créer et inscrire un nœud de programme. Si le dé est conçue pour exécuter en cours de l’IDE, mais aucun IDE est en cours d’exécution, il doit exister un composant qui peut ajouter un nœud de programme au port.
 
    Le programme nouvellement créé, ainsi que d’autres programmes, liés ou non liés, lancé ou joints à partir de l’IDE de même, composer une session de débogage.
 

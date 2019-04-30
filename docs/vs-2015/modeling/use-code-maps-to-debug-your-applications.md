@@ -18,12 +18,12 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9c0fa386d6f6df813cfbed1d4a618414f2810f86
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b7f446d2c9a1b22488746eff9ba04044d2621013
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953863"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439671"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Utiliser des cartes du code pour déboguer vos applications
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Les cartes de code peuvent vous éviter de vous perdre dans les bases de code vo
  ![Carte de code &#45; afficher (méthode) et les champs associés](../modeling/media/codemapstoryboardpaint3.png "CodeMapStoryboardPaint3")  
   
 > [!TIP]
->  Le surlignage vert indique les derniers éléments ajoutés à la carte. La flèche verte indique la position de votre curseur dans le code. Les flèches situées entre les éléments représentent différentes relations. Vous pouvez obtenir plus d'informations sur les éléments qui figurent sur la carte en déplaçant la souris dessus et en examinant leurs info-bulles.  
+> Le surlignage vert indique les derniers éléments ajoutés à la carte. La flèche verte indique la position de votre curseur dans le code. Les flèches situées entre les éléments représentent différentes relations. Vous pouvez obtenir plus d'informations sur les éléments qui figurent sur la carte en déplaçant la souris dessus et en examinant leurs info-bulles.  
   
  ![Carte de code &#45; afficher des info-bulles](../modeling/media/codemapstoryboardpaint4.png "CodeMapStoryboardPaint4")  
   
@@ -65,7 +65,7 @@ Les cartes de code peuvent vous éviter de vous perdre dans les bases de code vo
  ![Carte de code &#45; examiner la définition de champ](../modeling/media/codemapstoryboardpaint5a.png "CodeMapStoryboardPaint5A")  
   
 > [!TIP]
->  Vous pouvez également déplacer la flèche verte sur la table en déplaçant le curseur dans l'éditeur de code.  
+> Vous pouvez également déplacer la flèche verte sur la table en déplaçant le curseur dans l'éditeur de code.  
   
 ## <a name="understand-relationships-between-pieces-of-code"></a>Comprendre les relations entre les éléments de code  
  Vous souhaitez maintenant déterminer quel autre code interagit avec les champs `history` et `paintObjects`. Vous pouvez ajouter toutes les méthodes qui référencent ces champs à la carte. Vous pouvez le faire à partir de la carte ou à partir de l'éditeur de code.  
@@ -75,14 +75,14 @@ Les cartes de code peuvent vous éviter de vous perdre dans les bases de code vo
  ![Ouvrez une carte de code à partir de l’éditeur de code](../modeling/media/codemapstoryboardpaint6a.PNG "CodeMapStoryboardPaint6A")  
   
 > [!NOTE]
->  Si vous ajoutez des éléments à partir d'un projet partagé par plusieurs applications, comme Windows Phone ou Windows Store, ces éléments apparaissent toujours avec le projet d'application actif sur la carte. Ainsi, si vous changez de contexte vers un autre projet d'application, le contexte sur la carte change également pour tout élément récemment ajouté à partir du projet partagé. Les opérations que vous effectuez avec un élément de la carte s’appliquent uniquement aux éléments qui partagent le même contexte.  
+> Si vous ajoutez des éléments à partir d'un projet partagé par plusieurs applications, comme Windows Phone ou Windows Store, ces éléments apparaissent toujours avec le projet d'application actif sur la carte. Ainsi, si vous changez de contexte vers un autre projet d'application, le contexte sur la carte change également pour tout élément récemment ajouté à partir du projet partagé. Les opérations que vous effectuez avec un élément de la carte s’appliquent uniquement aux éléments qui partagent le même contexte.  
   
  Modifiez la disposition pour réorganiser le flux des relations et simplifier la lecture de la carte. Vous pouvez également déplacer des éléments sur la carte en les faisant glisser.  
   
  ![Carte de code &#45; changer de mode](../modeling/media/codemapstoryboardpaint7a.png "CodeMapStoryboardPaint7A")  
   
 > [!TIP]
->  Par défaut, **disposition incrémentielle** est activé. Ainsi, lorsque vous ajoutez de nouveaux éléments, la carte est réorganisée au minimum. Pour réorganiser l’ensemble de la carte chaque fois que vous ajoutez de nouveaux éléments, désactivez **disposition incrémentielle**.  
+> Par défaut, **disposition incrémentielle** est activé. Ainsi, lorsque vous ajoutez de nouveaux éléments, la carte est réorganisée au minimum. Pour réorganiser l’ensemble de la carte chaque fois que vous ajoutez de nouveaux éléments, désactivez **disposition incrémentielle**.  
   
  ![Carte de code &#45; changer de mode](../modeling/media/codemapstoryboardpaint7.png "CodeMapStoryboardPaint7")  
   
@@ -136,7 +136,7 @@ Les cartes de code peuvent vous éviter de vous perdre dans les bases de code vo
  ![Carte de code &#45; mappage mis à jour avec l’appel de méthode](../modeling/media/codemapstoryboardpaint17.png "CodeMapStoryboardPaint17")  
   
 > [!NOTE]
->  Lorsque vous mettez à jour la carte, un message peut s'afficher pour indiquer que l'index de code utilisé pour créer votre carte a été mis à jour. Cela signifie que quelqu'un a modifié le code, ce qui provoque une incompatibilité de votre carte avec le code actuel. Cela ne vous empêche pas de mettre à jour la carte, mais vous devrez peut-être la recréer pour confirmer qu'elle correspond au code.  
+> Lorsque vous mettez à jour la carte, un message peut s'afficher pour indiquer que l'index de code utilisé pour créer votre carte a été mis à jour. Cela signifie que quelqu'un a modifié le code, ce qui provoque une incompatibilité de votre carte avec le code actuel. Cela ne vous empêche pas de mettre à jour la carte, mais vous devrez peut-être la recréer pour confirmer qu'elle correspond au code.  
   
  Vous avez maintenant terminé votre examen. Vous avez trouvé et résolu avec succès le problème en mappant le code. Vous disposez également d'une carte qui vous permet de naviguer dans le code, de vous souvenir de ce que vous avez appris et d'indiquer les mesures prises pour résoudre le problème.  
   

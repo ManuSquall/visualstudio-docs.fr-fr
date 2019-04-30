@@ -8,12 +8,12 @@ ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8de4960548b363c99b9625553c47b2cbad2df2de
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d5e45c91e9dadb0f457e3a2ecfa2e5484fbe0e78
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063684"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412331"
 ---
 # <a name="managing-universal-windows-projects"></a>Gestion de projets Windows universels
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -235,7 +235,7 @@ Les applications Windows universelles sont des applications qui ciblent Windows 
     ```  
   
     > [!IMPORTANT]
-    >  Si l’utilisateur a ouvert un projet d’application Windows universelle C++ dans l’instance expérimentale, le code ci-dessus lève une exception. Il s'agit d'un problème connu. Pour éviter l’exception, remplacez la `foreach` block ci-dessus par le code suivant :  
+    > Si l’utilisateur a ouvert un projet d’application Windows universelle C++ dans l’instance expérimentale, le code ci-dessus lève une exception. Il s'agit d'un problème connu. Pour éviter l’exception, remplacez la `foreach` block ci-dessus par le code suivant :  
   
     ```csharp  
     var importingProjects = sharedAssetsProject.EnumImportingProjects();  
@@ -525,7 +525,7 @@ Les applications Windows universelles sont des applications qui ciblent Windows 
 9. Modifier l’élément partagé. Vous ne pouvez pas modifier les éléments partagés dans un projet de plateforme. au lieu de cela, vous devez les modifier dans le projet partagé qui est le propriétaire réel de ces éléments. Vous pouvez obtenir l’ID d’élément correspondant dans le projet partagé avec <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A>, en lui attribuant un chemin d’accès complet de l’élément partagé. Vous pouvez ensuite modifier l’élément partagé. La modification est propagée vers les projets de plateforme.  
   
     > [!IMPORTANT]
-    >  Vous devez rechercher si un élément de projet est un élément partagé avant de le modifier.  
+    > Vous devez rechercher si un élément de projet est un élément partagé avant de le modifier.  
   
      La méthode suivante modifie le nom d’un fichier d’élément de projet.  
   

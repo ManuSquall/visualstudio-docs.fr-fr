@@ -11,12 +11,12 @@ ms.assetid: 745c2337-cfff-4d02-b49c-3ca7c4945c5e
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9e39dcbcdb3fe8396c3d4d42003a7aa40b5f527a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f980c9d14bc2d0c9728f87374828cf690737429c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953155"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436408"
 ---
 # <a name="getting-a-port"></a>Obtention d’un port
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Un port représente une connexion à un ordinateur sur lequel les processus sont
  Ce fragment de code montre comment utiliser le port fourni à [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) pour inscrire un nœud de programme dans [ResumeProcess](../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md). Pas directement liées à ce concept de paramètres ont été omis par souci de clarté.  
   
 > [!NOTE]
->  Cet exemple utilise le port pour lancer et de reprendre le processus et suppose que le [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md) interface est implémentée sur le port. Il s’agit en aucun cas la seule façon d’effectuer ces tâches, et il est possible que le port pas même impliqué autre que le programme [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) lui donné.  
+> Cet exemple utilise le port pour lancer et de reprendre le processus et suppose que le [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md) interface est implémentée sur le port. Il s’agit en aucun cas la seule façon d’effectuer ces tâches, et il est possible que le port pas même impliqué autre que le programme [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) lui donné.  
   
 ```cpp#  
 // This is an IDebugEngineLaunch2 method.  

@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 5f1585e335fac0072eba48494bf8c27736a47f41
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 3e5f25887d8fdd5b5fb774cc2e8619c1a93432c1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149167"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442774"
 ---
 # <a name="iactivescriptstatsgetstatex"></a>IActiveScriptStats::GetStatEx
 Retourne une statistique de script personnalisé.  
@@ -59,7 +59,7 @@ HRESULT GetStatEx(
  Cette méthode permet un moteur de script personnalisé retourner des statistiques significatives à un hôte personnalisé.  
   
 > [!NOTE]
->  Cette méthode n’est pas implémentée actuellement.  
+> Cette méthode n’est pas implémentée actuellement.  
   
 ## <a name="see-also"></a>Voir aussi  
  [IActiveScriptStats::GetStat](../../winscript/reference/iactivescriptstats-getstat.md)   

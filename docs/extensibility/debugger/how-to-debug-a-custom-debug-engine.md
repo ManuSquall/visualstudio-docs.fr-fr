@@ -11,21 +11,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d07ba77739b4ff9749591405daf12fa66bae94e5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 255d752e09a14e784de276fbed0d86a587bc4512
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411239"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Procédure : Déboguer un moteur de débogage personnalisé
 Un type de projet lance le moteur de débogage (dé) à partir de la <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> (méthode). Cela signifie que l’Allemagne est démarrée sous le contrôle de l’instance de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] contrôle du type de projet. Toutefois, cette instance de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ne peut pas déboguer le DE. Voici les étapes qui vous permettent de déboguer votre DE personnalisé.
 
 > [!NOTE]
->  :     Dans la procédure « Déboguer un moteur de débogage personnalisé », vous devez attendre le DE démarrer avant que vous pouvez attacher à celui-ci. Si vous placez une boîte de message au début de votre DE qui s’affiche au démarrage de l’Allemagne, vous pouvez attacher à ce stade, puis désactivez la boîte de message pour continuer. De cette façon, vous pouvez intercepter tous les événements de l’Allemagne.
+> :     Dans la procédure « Déboguer un moteur de débogage personnalisé », vous devez attendre le DE démarrer avant que vous pouvez attacher à celui-ci. Si vous placez une boîte de message au début de votre DE qui s’affiche au démarrage de l’Allemagne, vous pouvez attacher à ce stade, puis désactivez la boîte de message pour continuer. De cette façon, vous pouvez intercepter tous les événements de l’Allemagne.
 
 > [!WARNING]
->  Vous devez disposer de débogage à distance est installé avant d’essayer les procédures suivantes. Consultez [le débogage à distance](../../debugger/remote-debugging.md) pour plus d’informations.
+> Vous devez disposer de débogage à distance est installé avant d’essayer les procédures suivantes. Consultez [le débogage à distance](../../debugger/remote-debugging.md) pour plus d’informations.
 
 ## <a name="debug-a-custom-debug-engine"></a>Déboguer un moteur de débogage personnalisé
 

@@ -8,12 +8,12 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 58bfe0a2a6c337081ebb96464a701decb73cc022
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 42db6024353e3b26ddcaf6b5fa838ff791d964f4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080694"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445896"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Mise à niveau de tests codés de l'interface utilisateur à partir de Visual Studio 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,19 +25,19 @@ Les projets de test contenant des tests codés de l'interface utilisateur créé
 - Visual Studio Enterprise
 
 > [!NOTE]
->  Visual Studio inclut plusieurs types de projets de test. Si vous créez un test codé de l'interface utilisateur, il le sera dans un type de projet de test codé de l'interface utilisateur. Pour plus d’informations, consultez [Mise à niveau des tests à partir de versions antérieures de Visual Studio](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).
+> Visual Studio inclut plusieurs types de projets de test. Si vous créez un test codé de l'interface utilisateur, il le sera dans un type de projet de test codé de l'interface utilisateur. Pour plus d’informations, consultez [Mise à niveau des tests à partir de versions antérieures de Visual Studio](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).
 
 > [!WARNING]
->  Les projets de test[!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] qui contiennent des tests codés de l'interface utilisateur doivent être régénérés quand vous ouvrez le projet de test dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ou [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] côte à côte avec [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
+> Les projets de test[!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] qui contiennent des tests codés de l'interface utilisateur doivent être régénérés quand vous ouvrez le projet de test dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ou [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] côte à côte avec [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
 
 > [!WARNING]
->  Quand un projet de test qui a été créé dans [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] et qui contient uniquement des tests unitaires est ouvert dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], il n'est pas possible d'y ajouter des tests codés de l'interface utilisateur. De même, vous ne pouvez pas ajouter un test codé de l'interface utilisateur à un projet de test unitaire qui a été créé dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
+> Quand un projet de test qui a été créé dans [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] et qui contient uniquement des tests unitaires est ouvert dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], il n'est pas possible d'y ajouter des tests codés de l'interface utilisateur. De même, vous ne pouvez pas ajouter un test codé de l'interface utilisateur à un projet de test unitaire qui a été créé dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
 
 ## <a name="compatibility-issues-between-visual-studio-2010-and-visual-studio-2012"></a>Problèmes de compatibilité entre Visual Studio 2010 et Visual Studio 2012
  Le tableau suivant répertorie les problèmes à connaître en cas de migration de tests codés de l'interface utilisateur entre [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] et [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
 
 > [!CAUTION]
->  Il existe un problème connu lié aux références dans les projets de test codé de l'interface utilisateur qui n'apparaissent pas dans l'Explorateur de solutions. Pour plus d'informations, consultez le fichier ReadMe inclus dans le support d'installation de [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] .
+> Il existe un problème connu lié aux références dans les projets de test codé de l'interface utilisateur qui n'apparaissent pas dans l'Explorateur de solutions. Pour plus d'informations, consultez le fichier ReadMe inclus dans le support d'installation de [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] .
 
 |Fonctionnalité d'interface utilisateur codée|Problème|Solution|
 |----------------------------|-----------|--------------|

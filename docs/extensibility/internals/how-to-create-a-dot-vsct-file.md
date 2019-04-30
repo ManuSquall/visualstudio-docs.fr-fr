@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8dd2e677cae2e54a8dff716aef72f1d6abc6b40
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 2c671467f220e61de5ca9de56a2515a2e4836020
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418466"
 ---
 # <a name="how-to-create-a-vsct-file"></a>Procédure : Créer un fichier .vsct
 
@@ -80,7 +80,7 @@ Vous pouvez créer une base de XML *.vsct* fichier à partir d’une table exist
     Cette action crée un nouveau *.vsct* fichier de source de table de commande XML. Vous pouvez compiler le fichier à l’aide de *Vsct.exe*, le compilateur VSCT, comme vous le feriez pour n’importe quel autre *.vsct* fichier.
 
    > [!NOTE]
-   >  Vous pouvez améliorer la lisibilité de la *.vsct* fichier en reformatant les commentaires XML.
+   > Vous pouvez améliorer la lisibilité de la *.vsct* fichier en reformatant les commentaires XML.
 
 <a name="how-to-create-a-dot-vsct-file-from-an-existing-dot-cto-file"></a>
 
@@ -90,13 +90,13 @@ Vous pouvez créer une base de XML *.vsct* fichier à partir d’un fichier bina
 
 ### <a name="to-create-a-vsct-file-from-a-cto-file"></a>Pour créer un fichier .vsct à partir d’un fichier .cto
 
-1.  Obtenir des copies de la *.cto* fichier et son *.ctsym* fichier.
+1. Obtenir des copies de la *.cto* fichier et son *.ctsym* fichier.
 
-2.  Placez les fichiers dans le même répertoire que le *vsct.exe* compilateur.
+2. Placez les fichiers dans le même répertoire que le *vsct.exe* compilateur.
 
-3.  À l’invite de commandes Visual Studio, accédez au répertoire qui contient le *.cto* et *.ctsym* fichiers.
+3. À l’invite de commandes Visual Studio, accédez au répertoire qui contient le *.cto* et *.ctsym* fichiers.
 
-4.  Type
+4. Type
 
     ```
     vsct.exe <ctofilename>.cto <vsctfilename>.vsct -S<symfilename>.ctsym
@@ -111,9 +111,9 @@ Vous pouvez créer une base de XML *.vsct* fichier à partir d’un fichier bina
 
 ### <a name="to-add-a-vsct-file-to-project-compilation"></a>Pour ajouter un fichier .vsct à la compilation du projet
 
-1.  Ouvrez votre fichier projet dans l’éditeur. Si le projet est chargé, vous devez tout d’abord le décharger.
+1. Ouvrez votre fichier projet dans l’éditeur. Si le projet est chargé, vous devez tout d’abord le décharger.
 
-2.  Ajouter un [élément ItemGroup](../../msbuild/itemgroup-element-msbuild.md) qui contient un `VSCTCompile` élément, comme indiqué dans l’exemple suivant.
+2. Ajouter un [élément ItemGroup](../../msbuild/itemgroup-element-msbuild.md) qui contient un `VSCTCompile` élément, comme indiqué dans l’exemple suivant.
 
     ```xml
     <ItemGroup>
@@ -126,7 +126,7 @@ Vous pouvez créer une base de XML *.vsct* fichier à partir d’un fichier bina
 
      Le `ResourceName` élément doit toujours être défini sur `Menus.ctmenu`.
 
-3.  Si votre projet contient un *.resx* , ajoutez un `EmbeddedResource` élément contenant un `MergeWithCTO` élément, comme indiqué dans l’exemple suivant :
+3. Si votre projet contient un *.resx* , ajoutez un `EmbeddedResource` élément contenant un `MergeWithCTO` élément, comme indiqué dans l’exemple suivant :
 
     ```xml
     <EmbeddedResource Include="VSPackage.resx">
@@ -138,9 +138,9 @@ Vous pouvez créer une base de XML *.vsct* fichier à partir d’un fichier bina
 
      Ce balisage doit passer à l’intérieur du `ItemGroup` élément qui contient des ressources incorporées.
 
-4.  Ouvrez le fichier de package, généralement nommé  *\<nom_projet\>Package.cs* ou  *\<nom_projet\>Package.vb*, dans l’éditeur.
+4. Ouvrez le fichier de package, généralement nommé  *\<nom_projet\>Package.cs* ou  *\<nom_projet\>Package.vb*, dans l’éditeur.
 
-5.  Ajouter un `ProvideMenuResource` d’attribut à la classe de package, comme illustré dans l’exemple suivant.
+5. Ajouter un `ProvideMenuResource` d’attribut à la classe de package, comme illustré dans l’exemple suivant.
 
     ```csharp
     [ProvideMenuResource("Menus.ctmenu", 1)]

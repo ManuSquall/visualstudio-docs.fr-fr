@@ -12,12 +12,12 @@ ms.assetid: 040b36d6-1f0a-4579-971c-40fbb46ade1d
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 443139194a9be59a26a812bd8026270749105a30
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d41b075111797a12d68b4aa30c23e3cbacd8058a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043758"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432098"
 ---
 # <a name="saving-a-custom-document"></a>Enregistrement d’un document personnalisé
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Enregistrer, enregistrer sous et enregistrer tout gestion des commandes pour un 
      Dans le cas d’un éditeur personnalisé, la communication entre l’objet de données et le projet est privée. Par conséquent, les problèmes de persistance spéciaux sont gérées entre ces deux objets.  
   
     > [!NOTE]
-    >  Si vous implémentez votre propre persistance, veillez à appeler la <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> méthode pour gagner du temps. Cette méthode vérifie qu’il est sûr enregistrer le fichier (par exemple, le fichier n’est pas en lecture seule).  
+    > Si vous implémentez votre propre persistance, veillez à appeler la <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QuerySaveFiles%2A> méthode pour gagner du temps. Cette méthode vérifie qu’il est sûr enregistrer le fichier (par exemple, le fichier n’est pas en lecture seule).  
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>   

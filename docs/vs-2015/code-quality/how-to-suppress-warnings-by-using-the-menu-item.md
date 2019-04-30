@@ -12,18 +12,18 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a8fbc314580b106f5e1e8dae5a0a78d043d3940b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5097ecb0f7458e739def275d616eb344a2a6db0d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080902"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426565"
 ---
 # <a name="how-to-suppress-warnings-by-using-the-menu-item"></a>Procédure : Supprimer des avertissements à l’aide de l’élément de menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 REMARQUE]
->  Dans la source de suppression n’est pas pris en charge pour les projets de site web.  
+> Dans la source de suppression n’est pas pris en charge pour les projets de site web.  
   
  Vous pouvez utiliser la fenêtre analyse du Code pour supprimer les avertissements d’analyse du code. Suppression d’un avertissement n’est pas le même que la désactivation. Lorsque vous supprimez un avertissement, elle s’applique uniquement à une instance particulière de la violation. Autres violations de l’avertissement même seront encore signalées dans la fenêtre liste d’erreurs.  
   
@@ -42,4 +42,4 @@ REMARQUE]
      L’avertissement spécifique est supprimé, et l’avertissement s’affiche dans la fenêtre analyse du Code avec un barré.  
   
 > [!NOTE]
->  Les suppressions qui n’ont pas de cible apparaissent dans le fichier de suppression globale.
+> Les suppressions qui n’ont pas de cible apparaissent dans le fichier de suppression globale.

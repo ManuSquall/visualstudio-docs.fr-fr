@@ -19,12 +19,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d2aefe68761d31f87d84c9215a6187c28e7b471b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 3541dada6167bd2f0a95913d9ccc385dc3e5ccc3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439472"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>Lier des contrôles Windows Forms à des données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Vous pouvez lier des sources de données aux contrôles en faisant glisser des o
  ![Lier la source de données vers les détails](../data-tools/media/raddata-bind-data-source-to-details.png "raddata source de données liée aux détails")  
   
 > [!IMPORTANT]
->  Notez que dans l’illustration précédente, vous faites glisser à partir de la propriété Orders de la table Customers, et non à partir de la table Orders. En le liant à la propriété Customer.Orders, les commandes de navigation dans le contrôle DataGridView sont reflétées immédiatement dans les contrôles de détails. Si vous avez fait glisser à partir de la table Orders, les contrôles seraient toujours liés au jeu de données, mais pas qu’ils ne sont pas synchronisés avec le contrôle DataGridView.  
+> Notez que dans l’illustration précédente, vous faites glisser à partir de la propriété Orders de la table Customers, et non à partir de la table Orders. En le liant à la propriété Customer.Orders, les commandes de navigation dans le contrôle DataGridView sont reflétées immédiatement dans les contrôles de détails. Si vous avez fait glisser à partir de la table Orders, les contrôles seraient toujours liés au jeu de données, mais pas qu’ils ne sont pas synchronisés avec le contrôle DataGridView.  
   
  L’illustration suivante montre la valeur par défaut des contrôles liés aux données qui sont ajoutés au formulaire une fois que la propriété de commandes dans la table Customers est liée à « Détails » dans la **des Sources de données** fenêtre.  
   

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b2be6fbafc1520e190cc52bea839c6cf9e208ca4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9ad16165924a33a25dab2b1cfb49a0a7bbfe0875
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421534"
 ---
 # <a name="xmlnodes-control"></a>XMLNodes (contrôle)
   **Important** les informations mentionnées dans cette rubrique concernant Microsoft Word sont présentée exclusivement pour le bénéfice et l’utilisation des individus et les organisations qui se trouvent en dehors des États-Unis et ses territoires ou qui utilisent ou développement les programmes qui s’exécutent sur des produits de Microsoft Word qui ont été concédés sous licence par Microsoft avant janvier 2010, lorsque Microsoft supprimé une implémentation de fonctionnalités spécifiques liés à XML personnalisé à partir de Microsoft Word. Ces informations concernant Microsoft Word ne peuvent pas être lues ou utilisées par les individus ou organisations dans les États-Unis ou dans ses territoires qui sont à l’aide d’ou de développer des programmes qui s’exécutent sur des produits de Microsoft Word qui ont été concédés sous licence par Microsoft après le 10 janvier 2010 ; ces produits ne comportent pas le même que les produits sous licence avant cette date ou acheté et concédés sous licence pour une utilisation en dehors des États-Unis.
@@ -30,7 +30,7 @@ ms.locfileid: "60090578"
  Une fois que Visual Studio crée la collection de nœuds XML, vous pouvez programmer le contrôle directement, sans devoir parcourir le modèle objet Word. Le <xref:Microsoft.Office.Tools.Word.XMLNodes> contrôle peut être supprimé uniquement en supprimant le mappage d’élément à partir du document.
 
 > [!NOTE]
->  Si vous accédez à un élément enfant de le <xref:Microsoft.Office.Tools.Word.XMLNodes> contrôler via le <xref:Microsoft.Office.Tools.Word.XMLNodes.Item%2A> propriété, elle retourne un <xref:Microsoft.Office.Interop.Word.XMLNode> objet au lieu d’un <xref:Microsoft.Office.Tools.Word.XMLNode> contrôle. Pour plus d’informations, consultez [limitations de programmation des éléments hôtes et contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
+> Si vous accédez à un élément enfant de le <xref:Microsoft.Office.Tools.Word.XMLNodes> contrôler via le <xref:Microsoft.Office.Tools.Word.XMLNodes.Item%2A> propriété, elle retourne un <xref:Microsoft.Office.Interop.Word.XMLNode> objet au lieu d’un <xref:Microsoft.Office.Tools.Word.XMLNode> contrôle. Pour plus d’informations, consultez [limitations de programmation des éléments hôtes et contrôles hôtes](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
 
 ## <a name="bind-data-to-the-control"></a>Lier des données au contrôle
  Un <xref:Microsoft.Office.Tools.Word.XMLNodes> contrôle ne prend pas en charge la liaison de données. Il s’agit, car le <xref:Microsoft.Office.Tools.Word.XMLNodes> contrôle n’a pas de fonctionnalités de liaison de données complexe, et liaison de données simple ne peut pas représenter des données duplicables.

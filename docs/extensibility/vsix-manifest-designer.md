@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85b9d20dd67ff11f5bded7060440f2e768a205a9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 84f82ab6e5cca57a1fabd600cecc7a5ee505c150
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722861"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411093"
 ---
 # <a name="vsix-manifest-designer"></a>Concepteur de manifeste VSIX
 Modifie un fichier de manifeste de package VSIX, qui définit le comportement d’installation pour une extension Visual Studio.
@@ -29,7 +29,7 @@ Modifie un fichier de manifeste de package VSIX, qui définit le comportement d�
  Pour ouvrir le **Concepteur de manifeste VSIX**, recherchez un *source.extension.vsixmanifest* de fichiers dans **l’Explorateur de solutions**et ouvrez le fichier. Si le fichier ne contient pas de fichier XML valide, le Concepteur de manifeste ne s’ouvre.
 
 > [!NOTE]
->  Le *source.extension.vsixmanifest* la sortie de fichier à *extension.vsixmanifest* lorsque la génération du package.
+> Le *source.extension.vsixmanifest* la sortie de fichier à *extension.vsixmanifest* lorsque la génération du package.
 
 ## <a name="uielement-list"></a>Liste UIElement
  Le **Concepteur de manifeste VSIX** contient quatre sections qui correspondent à ces éléments de niveau supérieur du schéma :

@@ -12,12 +12,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 581d6d1f6e5923569f4d98705226d2336978bfc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 29950be152c140a8315f96f8752b1fa906c3f801
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442928"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Propagation de modifications dans le modèle par des règles
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ namespace ExampleNamespace
 ```  
 
 > [!NOTE]
->  Le code d’une règle doit modifier l’état uniquement des éléments à l’intérieur du Store ; Autrement dit, la règle doit modifier uniquement les éléments de modèle, les relations, formes, connecteurs, diagrammes ou leurs propriétés. Si vous souhaitez propager les modifications apportées aux ressources en dehors du magasin, définir des événements Store. Pour plus d’informations, consultez [gestionnaires propager les modifications en dehors le modèle d’événement](../modeling/event-handlers-propagate-changes-outside-the-model.md)  
+> Le code d’une règle doit modifier l’état uniquement des éléments à l’intérieur du Store ; Autrement dit, la règle doit modifier uniquement les éléments de modèle, les relations, formes, connecteurs, diagrammes ou leurs propriétés. Si vous souhaitez propager les modifications apportées aux ressources en dehors du magasin, définir des événements Store. Pour plus d’informations, consultez [gestionnaires propager les modifications en dehors le modèle d’événement](../modeling/event-handlers-propagate-changes-outside-the-model.md)  
 
 ### <a name="to-define-a-rule"></a>Pour définir une règle  
 

@@ -12,12 +12,12 @@ caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aaca69818524df134aa9ad7514ee5e0227b6a812
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b1dd1598d73cdbd77bc6fe0cb35e639c0fb484b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443421"
 ---
 # <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>Procédure pas à pas : Test en premier la prise en charge avec l’utilisation de la fonctionnalité Générer à partir
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ Boîte de dialogue Nouveau projet de test
 2. Recherchez la déclaration de classe `UnitTest1` et renommez-la `AutomobileTest`. En C#, si un constructeur `UnitTest1()` est présent, renommez-le `AutomobileTest()`.  
   
     > [!NOTE]
-    >  IntelliSense offre désormais deux options pour la saisie semi-automatique des instructions IntelliSense : le *mode de saisie semi-automatique* et le *mode de suggestion*. Utilisez le mode de suggestion quand les classes et les membres sont utilisés avant d’être définis. Quand une fenêtre IntelliSense est ouverte, vous pouvez appuyer sur Ctrl+Alt+Espace pour basculer entre le mode de saisie semi-automatique et le mode de suggestion. Pour plus d'informations, voir [Using IntelliSense](../ide/using-intellisense.md) . Le mode de suggestion sera utile lorsque vous taperez `Automobile` à l’étape suivante.  
+    > IntelliSense offre désormais deux options pour la saisie semi-automatique des instructions IntelliSense : le *mode de saisie semi-automatique* et le *mode de suggestion*. Utilisez le mode de suggestion quand les classes et les membres sont utilisés avant d’être définis. Quand une fenêtre IntelliSense est ouverte, vous pouvez appuyer sur Ctrl+Alt+Espace pour basculer entre le mode de saisie semi-automatique et le mode de suggestion. Pour plus d'informations, voir [Using IntelliSense](../ide/using-intellisense.md) . Le mode de suggestion sera utile lorsque vous taperez `Automobile` à l’étape suivante.  
   
 3. Recherchez la méthode `TestMethod1()` et renommez-la `DefaultAutomobileIsInitializedCorrectly()`. Dans cette méthode, créez une instance d’une classe nommée `Automobile`, comme indiqué dans les illustrations suivantes. Un soulignement ondulé indique une erreur de compilation et une balise active apparaît sous le nom de type. L’emplacement exact de la balise active varie selon que vous utilisez [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ou [!INCLUDE[csprcs](../includes/csprcs-md.md)].  
   

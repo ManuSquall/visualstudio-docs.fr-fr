@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed3eeb8e2907eb71a75884a19f174774055783c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6044e9c47a0dcbc95fd1503906cbd81ac8e44526
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062241"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422653"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Définition d'une stratégie de verrouillage pour créer des segments en lecture seule
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ L’API d’immuabilité de la [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Visu
  En outre, en tant qu’auteur d’un DSL, vous pouvez définir un *stratégie de verrouillage.* Une stratégie de verrouillage définit quels verrous sont autorisés, non autorisé ou obligatoire. Par exemple, lorsque vous publiez une solution DSL, vous pouvez encourager les développeurs tiers pour l’étendre avec de nouvelles commandes. Mais vous pouvez également utiliser une stratégie de verrouillage pour les empêcher de modifier l’état en lecture seule des parties spécifiées du modèle.  
   
 > [!NOTE]
->  Une stratégie de verrouillage peut être contournée en utilisant la réflexion. Il fournit une limite pour les développeurs tiers, mais ne fournit pas une sécurité renforcée.  
+> Une stratégie de verrouillage peut être contournée en utilisant la réflexion. Il fournit une limite pour les développeurs tiers, mais ne fournit pas une sécurité renforcée.  
   
  Plus d’informations et exemples sont disponibles sur le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkId=186128) site Web.  
   

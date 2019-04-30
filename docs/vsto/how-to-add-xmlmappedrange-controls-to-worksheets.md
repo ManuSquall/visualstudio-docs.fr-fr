@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cef35cd1aa19ad27e7c47227b726a44756b0fae8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 60f1fe8330e3a40676738c4187273ee60215db6d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427431"
 ---
 # <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>Procédure : Ajouter des contrôles XMLMappedRange aux feuilles de calcul
   Lorsque vous mappez un élément XML à une cellule dans Microsoft Office Excel, Visual Studio ajoute automatiquement un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> contrôle à votre feuille de calcul.
@@ -26,7 +26,7 @@ ms.locfileid: "60085714"
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
 > [!NOTE]
->  Le <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> contrôle n’est pas disponible sur le **boîte à outils** ou **des Sources de données** fenêtre. En outre, vous ne pouvez pas créer <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> par programmation des contrôles.
+> Le <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> contrôle n’est pas disponible sur le **boîte à outils** ou **des Sources de données** fenêtre. En outre, vous ne pouvez pas créer <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> par programmation des contrôles.
 
 ## <a name="to-add-an-xmlmappedrange-control-to-a-worksheet"></a>Pour ajouter un contrôle XMLMappedRange à une feuille de calcul
 
@@ -37,7 +37,7 @@ ms.locfileid: "60085714"
 3. Sur le **développeur** , cliquez sur **Source**.
 
     > [!NOTE]
-    >  Si le **développeur** onglet n’est pas visible sur le ruban, vous devez l’activer. Pour plus d'informations, voir [Procédure : Afficher l’onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Si le **développeur** onglet n’est pas visible sur le ruban, vous devez l’activer. Pour plus d'informations, voir [Procédure : Afficher l’onglet Développeur sur le ruban](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
      Le **Source XML** volet s’affiche.
 
@@ -58,7 +58,7 @@ ms.locfileid: "60085714"
      Un <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> est créé et ajouté au projet.
 
     > [!NOTE]
-    >  Si vous faites glisser un élément parent à partir de la **Source XML** volet des tâches, un <xref:Microsoft.Office.Tools.Excel.ListObject> contrôle est créé.
+    > Si vous faites glisser un élément parent à partir de la **Source XML** volet des tâches, un <xref:Microsoft.Office.Tools.Excel.ListObject> contrôle est créé.
 
 ## <a name="see-also"></a>Voir aussi
 - [XmlMappedRange control](../vsto/xmlmappedrange-control.md)

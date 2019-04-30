@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c9363270593f1d492ec57d119f9a70f8371b0ac
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 2f82ab0b28c1052a0d6a4cb0b2db7e6bbaaba8cc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56685896"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420582"
 ---
 # <a name="send-startup-events-after-a-launch"></a>Envoyer des événements de démarrage après un lancement
 Une fois que le moteur de débogage (dé) est attaché au programme, il renvoie une série d’événements de démarrage à la session de débogage.
@@ -31,7 +31,7 @@ Une fois que le moteur de débogage (dé) est attaché au programme, il renvoie 
 - Un événement complet de chargement, envoyé lorsque le code est chargé et prêt à fonctionner, mais avant l’exécution de n’importe quel code.
 
   > [!NOTE]
-  >  Lorsque cet événement se poursuit, les variables globales sont initialisés et exécuter des routines de démarrage.
+  > Lorsque cet événement se poursuit, les variables globales sont initialisés et exécuter des routines de démarrage.
 
 - Possible d’autres threads de la création et les événements de chargement de module.
 

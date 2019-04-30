@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 11b35534641ec01c9d622b35caacf2e68162e4e1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f08045a83849bdbd5bf6fb51287a66806d3bf4d6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797351"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403499"
 ---
 # <a name="l2dbformxaml-source-code"></a>Code source L2DBForm.xaml
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,7 +87,7 @@ Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
 ### <a name="description"></a>Description  
   
 > [!NOTE]
->  Nous vous recommandons de copier le code ci-dessous dans un éditeur de code, tel que l'éditeur de code source C# fourni avec Visual Studio, afin de faciliter le suivi des numéros de lignes.  
+> Nous vous recommandons de copier le code ci-dessous dans un éditeur de code, tel que l'éditeur de code source C# fourni avec Visual Studio, afin de faciliter le suivi des numéros de lignes.  
   
 ### <a name="code"></a>Code  
   
@@ -242,5 +242,5 @@ Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
  Pour obtenir le code source C# pour les gestionnaires d’événements associés aux éléments d’interface utilisateur WPF, consultez [Code source de L2DBForm.xaml.cs](../designers/l2dbform-xaml-cs-source-code.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédure pas à pas : exemple LinqToXmlDataBinding](../designers/walkthrough-linqtoxmldatabinding-example.md)   
+ [Procédure pas à pas : Exemple LinqToXmlDataBinding](../designers/walkthrough-linqtoxmldatabinding-example.md)   
  [L2DBForm.xaml.cs Source Code](../designers/l2dbform-xaml-cs-source-code.md)

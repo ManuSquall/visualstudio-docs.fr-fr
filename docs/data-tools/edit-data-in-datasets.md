@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d693113db28acc456625f7c22b671006ed17038b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eb6651d788979343752fac30c4570d955b53068c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096983"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402859"
 ---
 # <a name="edit-data-in-datasets"></a>Modifier des données dans des datasets
 Pour modifier les données dans les tables de données de la même manière que vous modifiez les données dans une table dans une base de données. Le processus peut inclure insertion, la mise à jour et suppression d’enregistrements dans la table. Dans un formulaire lié aux données, vous pouvez spécifier quels champs sont modifiables par l’utilisateur. Dans ce cas, l’infrastructure de liaison de données gère tout le suivi des modifications afin que les modifications puissent être envoyées à la base de données plus tard. Si vous apportez des modifications par programme aux données, et que vous avez l’intention de renvoyer ces modifications à la base de données, vous devez utiliser les objets et les méthodes qui effectuent le suivi des modifications pour vous.
@@ -58,7 +58,7 @@ Si votre application n’a pas besoin envoyer des mises à jour à la source de 
      Cette méthode ne supprime pas physiquement l’enregistrement. Au lieu de cela, il les marque pour suppression.
 
     > [!NOTE]
-    >  Si vous obtenez la propriété count d’un <xref:System.Data.DataRowCollection>, le résultat inclut les enregistrements qui ont été marqués pour suppression. Pour obtenir un décompte précis d’enregistrements qui ne sont pas marqués pour suppression, vous pouvez parcourir la collection et rechercher la <xref:System.Data.DataRow.RowState%2A> propriété de chaque enregistrement. (Les enregistrements marqués pour suppression ont un <xref:System.Data.DataRow.RowState%2A> de <xref:System.Data.DataRowState.Deleted>.) Vous pouvez également créer une vue de données d’un dataset filtres basés sur l’état de la ligne et obtenir la propriété count à partir de là.
+    > Si vous obtenez la propriété count d’un <xref:System.Data.DataRowCollection>, le résultat inclut les enregistrements qui ont été marqués pour suppression. Pour obtenir un décompte précis d’enregistrements qui ne sont pas marqués pour suppression, vous pouvez parcourir la collection et rechercher la <xref:System.Data.DataRow.RowState%2A> propriété de chaque enregistrement. (Les enregistrements marqués pour suppression ont un <xref:System.Data.DataRow.RowState%2A> de <xref:System.Data.DataRowState.Deleted>.) Vous pouvez également créer une vue de données d’un dataset filtres basés sur l’état de la ligne et obtenir la propriété count à partir de là.
 
 L’exemple suivant montre comment appeler le <xref:System.Data.DataRow.Delete%2A> méthode pour marquer la première ligne dans le `Customers` comme étant supprimé de la table :
 

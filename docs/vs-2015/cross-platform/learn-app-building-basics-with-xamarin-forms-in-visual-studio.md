@@ -6,12 +6,12 @@ ms.assetid: d22b5186-9e03-4e85-afc9-7cbe28522a6d
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 96a4795d83c4ef4b5bad2d7dc2d5f06f2f3ab4cf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 18ea10e25117ee5bf52c6369e575d70a989435db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097230"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444524"
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Principes fondamentaux de la création d’applications avec Xamarin.Forms dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Une fois que vous avez effectué les étapes dans [Setup and install](../cross-p
 - [Terminer l’interface utilisateur avec une apparence native entre les plateformes](#finish)
 
 > [!TIP]
->  Vous trouverez le code source complet de ce projet dans le [dépôt d’exemples Xamarin.Forms sur GitHub](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather).
+> Vous trouverez le code source complet de ce projet dans le [dépôt d’exemples Xamarin.Forms sur GitHub](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather).
 
 ## <a name="solution"></a> Configurer votre solution
  Les étapes suivantes créent une solution Xamarin.Forms qui contient une bibliothèque PCL pour le code partagé et deux packages NuGet ajoutés.
@@ -59,7 +59,7 @@ Une fois que vous avez effectué les étapes dans [Setup and install](../cross-p
     - **WeatherApp.WinPhone (Windows Phone 8.1)**: le projet qui contient le code Windows Phone natif.
 
     > [!NOTE]
-    >  Vous êtes libre de supprimer tous les projets pour une plateforme que vous ne ciblez pas. Dans le cadre de cette procédure pas à pas, nous ferons référence aux projets Android, iOS et Windows Phone 8.1. Travailler avec les projets UWP et Windows 8.1 ou sur les projets Windows Phone 8.1 est très similaire.
+    > Vous êtes libre de supprimer tous les projets pour une plateforme que vous ne ciblez pas. Dans le cadre de cette procédure pas à pas, nous ferons référence aux projets Android, iOS et Windows Phone 8.1. Travailler avec les projets UWP et Windows 8.1 ou sur les projets Windows Phone 8.1 est très similaire.
 
      Dans chaque projet natif, vous avez accès au concepteur natif pour la plateforme correspondante et pouvez implémenter des écrans et fonctionnalités spécifiques à la plateforme en fonction des besoins.
 

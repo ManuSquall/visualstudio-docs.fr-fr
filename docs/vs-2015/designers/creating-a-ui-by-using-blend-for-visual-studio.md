@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8fe6377de1be51ac0fc48904687b60ed8bbc95b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 78d4f63e2dbe84b878916757d1015e3c6d534258
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082956"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436181"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Création d'une interface utilisateur à l'aide de Blend pour Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Blend pour Visual Studio vous aide à concevoir des applications de bureau Wind
  Si vous débutez avec Blend pour Visual Studio, prenez un moment pour vous familiariser avec les fonctionnalités uniques de l’espace de travail. Cette rubrique vous en livre une présentation rapide.
 
 > [!NOTE]
->  Pour parcourir les fonctionnalités de conception partagées telles que la planche graphique, la fenêtre Structure du document et la fenêtre Périphérique, consultez [Création d’une interface utilisateur à l’aide du concepteur XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
+> Pour parcourir les fonctionnalités de conception partagées telles que la planche graphique, la fenêtre Structure du document et la fenêtre Périphérique, consultez [Création d’une interface utilisateur à l’aide du concepteur XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
  **Dans cette rubrique** :
 

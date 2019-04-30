@@ -11,12 +11,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9591875b525d44e343f8326b7f5a145b04b57cff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 4107a5fb88392f9d02cca8f41b0f53d5844d9490
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422721"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Définir des contraintes de validation pour les modèles UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Vous pouvez définir des contraintes de validation qui vérifient si le modèle 
     Pour plus d’informations, consultez [Évaluation de la contrainte de validation](#Implementing).  
   
    > [!IMPORTANT]
-   >  Assurez-vous que vos fichiers **.cs** contiennent l’instruction `using` suivante :  
+   > Assurez-vous que vos fichiers **.cs** contiennent l’instruction `using` suivante :  
    >   
    >  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`  
   
@@ -223,7 +223,7 @@ using Microsoft.VisualStudio.Uml.Classes;
  La méthode de validation doit déterminer si la contrainte de validation que vous souhaitez appliquer est true ou false. Si la valeur est true, elle ne doit rien faire. Si la valeur est false, elle doit signaler une erreur à l’aide des méthodes fournies par le paramètre `ValidationContext` .  
   
 > [!NOTE]
->  Les méthodes de validation ne doivent pas changer le modèle. Le moment et l’ordre d’exécution des contraintes ne sont pas garantis. Si vous devez passer des informations entre des exécutions consécutives d’une méthode de validation lors d’une série de validation, vous pouvez utiliser le cache de contexte décrit dans [Coordination de plusieurs validations](#ContextCache).  
+> Les méthodes de validation ne doivent pas changer le modèle. Le moment et l’ordre d’exécution des contraintes ne sont pas garantis. Si vous devez passer des informations entre des exécutions consécutives d’une méthode de validation lors d’une série de validation, vous pouvez utiliser le cache de contexte décrit dans [Coordination de plusieurs validations](#ContextCache).  
   
  Par exemple, si vous souhaitez vous assurer que chaque type (classe, interface ou énumérateur) possède un nom comportant au moins trois caractères, vous pouvez utiliser cette méthode :  
   

@@ -24,12 +24,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b56f926006b952b0e92a791e36bb821f3df0197d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 54160bbdfe834a1b3226f4445b862c151bcf35c3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949810"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423280"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Sécurité d'accès du code pour les applications ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Les applications ClickOnce sont basées sur le .NET Framework et sont soumises �
 - Quand une application nécessite des autorisations Confiance totale, l'utilisateur final peut être invité à accorder des autorisations à l'application. Cela signifie que l'application n'est pas réellement une application ClickOnce et que l'invite peut porter à confusion pour les utilisateurs moins expérimentés.  
   
   > [!NOTE]
-  >  Lors de l'installation d'une application à partir d'un média amovible, tel qu'un CD-ROM, l'utilisateur ne reçoit pas d'invite. En outre, un administrateur réseau peut configurer la stratégie réseau pour que les utilisateurs ne reçoivent pas d'invite quand ils installent une application provenant d'une source approuvée. Pour plus d'informations, consultez [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
+  > Lors de l'installation d'une application à partir d'un média amovible, tel qu'un CD-ROM, l'utilisateur ne reçoit pas d'invite. En outre, un administrateur réseau peut configurer la stratégie réseau pour que les utilisateurs ne reçoivent pas d'invite quand ils installent une application provenant d'une source approuvée. Pour plus d'informations, consultez [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
   
   Pour restreindre les autorisations accordées à une application ClickOnce, vous pouvez modifier les autorisations de sécurité d'accès du code de votre application afin de demander la zone la plus appropriée aux autorisations que votre application nécessite. Dans la plupart des cas, vous pouvez choisir la zone à partir de laquelle l'application est déployée. Par exemple, si votre application est une application d'entreprise, utilisez la zone **Intranet local** . S'il s'agit d'une application Internet, utilisez la zone **Internet** .  
   

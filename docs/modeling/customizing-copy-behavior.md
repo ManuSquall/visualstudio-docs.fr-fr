@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a5543805741f1c64627aee15590d61635a89b1c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fcc08f9af3452289b3e0e76fe6970e75e8f854db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109827"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414814"
 ---
 # <a name="customizing-copy-behavior"></a>Personnalisation du comportement de la commande copier
 Dans un langage spécifique à un domaine (DSL) créé avec le Visual Studio Visualization and Modeling SDK, vous pouvez modifier ce qui se passe quand l’utilisateur copie et colle des éléments.
@@ -232,7 +232,7 @@ Voir [Guide pratique pour Ajouter un gestionnaire glisser-déplacer](../modeling
  De nombreux aspects du comportement d'une solution DSL en ce qui concerne la copie, le collage, la création et la suppression d'objets sont régis par une instance de <xref:Microsoft.VisualStudio.Modeling.ElementOperations> couplée au diagramme. Vous pouvez modifier le comportement de votre solution DSL en dérivant votre propre classe de <xref:Microsoft.VisualStudio.Modeling.ElementOperations> et en substituant la propriété <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> de votre classe de diagramme.
 
 > [!TIP]
->  Pour plus d’informations sur la personnalisation du modèle à l’aide du code de programme, consultez [navigation et la mise à jour un modèle dans le Code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md).
+> Pour plus d’informations sur la personnalisation du modèle à l’aide du code de programme, consultez [navigation et la mise à jour un modèle dans le Code de programme](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
  ![Diagramme de séquence de l'opération de copie](../modeling/media/dslcopyseqdiagram.png)
 

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7c53d7bd1264ff21866746796d598b27cfac5984
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 510d923d2503aeb6e07859813537c9094fe25b09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419701"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Procédure : Mettre en cache les données pour une utilisation hors connexion ou sur un serveur
   Vous pouvez marquer un élément de données doit être mis en cache dans le document, afin qu’il soit disponible hors connexion. Cela rend également possible pour les données dans le document pour être manipulée par un autre code lorsque le document est stocké sur un serveur.
@@ -32,7 +32,7 @@ ms.locfileid: "60094539"
  Vous pouvez marquer un élément de données doit être mis en cache lorsque l’élément de données est déclaré dans votre code, ou, si vous utilisez un <xref:System.Data.DataSet>, en définissant une propriété le **propriétés** fenêtre. Si vous mettez en cache un élément de données qui n’est pas un <xref:System.Data.DataSet> ou <xref:System.Data.DataTable>, assurez-vous qu’il remplit les critères de mise en cache dans le document. Pour plus d’informations, consultez [mettre en Cache données](../vsto/caching-data.md).
 
 > [!NOTE]
->  Jeux de données créés à l’aide de Visual Basic qui sont marqués comme **mises en cache** et **WithEvents** (y compris les jeux de données qui est déplacées de la **des Sources de données** fenêtre ou **Boîte à outils** qui ont le **CacheInDocument** propriété définie sur **True**) ont un trait de soulignement comme préfixe à leur nom dans le cache. Par exemple, si vous créez un dataset et nommez **clients**, le <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> nom sera **_Clients** dans le cache. Lorsque vous utilisez <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> pour accéder à cet élément mis en cache, vous devez spécifier **_Clients** au lieu de **clients**.
+> Jeux de données créés à l’aide de Visual Basic qui sont marqués comme **mises en cache** et **WithEvents** (y compris les jeux de données qui est déplacées de la **des Sources de données** fenêtre ou **Boîte à outils** qui ont le **CacheInDocument** propriété définie sur **True**) ont un trait de soulignement comme préfixe à leur nom dans le cache. Par exemple, si vous créez un dataset et nommez **clients**, le <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> nom sera **_Clients** dans le cache. Lorsque vous utilisez <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> pour accéder à cet élément mis en cache, vous devez spécifier **_Clients** au lieu de **clients**.
 
 ### <a name="to-cache-data-in-the-document-using-code"></a>En cache des données dans le document à l’aide de code
 

@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bdee0fadfb1101d7087b7154f231958615aee227
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c3211f72b867063e07e339ff803019cb9699e94a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403461"
 ---
 # <a name="working-with-textures-and-images"></a>Utilisation des textures et des images
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "54795930"
 Vous pouvez utiliser l’Éditeur d’images de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pour créer et modifier des textures et des images. L’Éditeur d’images prend en charge les formats enrichis de textures et d’images, tels que ceux utilisés dans le développement d’applications DirectX.  
   
 > [!NOTE]
->  L’Éditeur d’images ne prend pas en charge les images présentant une couleur faible, comme les icônes ou les curseurs. Pour créer ou modifier ces types d’images, utilisez l’outil [Éditeur d’images pour les icônes](http://msdn.microsoft.com/library/586d2b8b-0348-4883-a85d-1ff0ddbf14dd).  
+> L’Éditeur d’images ne prend pas en charge les images présentant une couleur faible, comme les icônes ou les curseurs. Pour créer ou modifier ces types d’images, utilisez l’outil [Éditeur d’images pour les icônes](http://msdn.microsoft.com/library/586d2b8b-0348-4883-a85d-1ff0ddbf14dd).  
   
 ## <a name="textures-and-images"></a>Textures et images  
  Les textures et les images, à un niveau de base, sont uniquement des tableaux de données procurant des détails visuels dans les applications graphiques. Le type de détail fourni par une texture ou une image dépend de son utilisation. Par exemple, citons les échantillons de couleur, les valeurs alpha (transparentes), les normales à la surface, ou encore les valeurs de hauteur. Quelle est la principale différence entre une texture et une image ? En fait, une texture est conçue pour être utilisée avec une représentation de forme (généralement un modèle 3D) pour exprimer un objet ou une scène complets, tandis qu’une image est une représentation autonome d’un objet ou d’une scène.  

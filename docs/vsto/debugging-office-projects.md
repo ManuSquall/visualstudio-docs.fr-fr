@@ -17,23 +17,23 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 59d9179bb0a3c3c2f08bbccafbca5db0202208e3
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
-ms.translationtype: MT
+ms.openlocfilehash: 8b48335ccaa8bd21cf9f6e108d043ecf706903bb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867960"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441881"
 ---
 # <a name="debug-office-projects"></a>Déboguez des projets Office
   Vous pouvez déboguer des projets Office à l'aide des mêmes outils Microsoft [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] que ceux que vous utilisez pour d'autres projets [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] . Les fonctionnalités du débogueur[!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] telles que la capacité d'insérer des points d'arrêt et d'afficher des variables dans la fenêtre **Variables locales** , sont également disponibles lorsque vous déboguez des projets Office. Pour plus d’informations sur [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] outils de débogage, consultez [déboguer dans Visual Studio](../debugger/debugging-in-visual-studio.md).
 
 > [!TIP]
->  Pour simplifier le débogage, fermez toutes les instances ouvertes de l'application Office avant de la générer et de la déboguer.
+> Pour simplifier le débogage, fermez toutes les instances ouvertes de l'application Office avant de la générer et de la déboguer.
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 > [!NOTE]
->  Vous souhaitez développer des solutions qui étendent l’expérience Office sur [plusieurs plateformes](https://dev.office.com/add-in-availability)? Découvrez le nouvel [modèle de compléments Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Compléments Office peu encombrantes par rapport aux compléments VSTO et de solutions, et vous pouvez les créer à l’aide de presque toutes les technologies, telles que HTML5, JavaScript, CSS3 et XML de programmation web.
+> Vous souhaitez développer des solutions qui étendent l’expérience Office sur [plusieurs plateformes](https://dev.office.com/add-in-availability)? Découvrez le nouvel [modèle de compléments Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Compléments Office peu encombrantes par rapport aux compléments VSTO et de solutions, et vous pouvez les créer à l’aide de presque toutes les technologies, telles que HTML5, JavaScript, CSS3 et XML de programmation web.
 
 ## <a name="start-and-stop-the-debugger"></a>Démarrer et arrêter le débogueur
  Vous pouvez démarrer le débogage d’un projet Office comme vous commencez à déboguer d’autres [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projets ; par exemple, vous pouvez appuyer sur la **F5** clé. Lorsque vous démarrez le débogage d’un projet de complément VSTO, un nouveau processus pour l’application Office cible est démarré et le composant logiciel complément VSTO est chargé.
@@ -52,7 +52,7 @@ ms.locfileid: "54867960"
  Si vous voulez déboguer votre complément VSTO à l’aide d’une autre version d’Office (2013 ou 2016), ouvrez le **Concepteur de projets**, et sous l’onglet **Déboguer** , choisissez la case d’option **Démarrer le programme externe** . Accédez ensuite à l'emplacement de l'exécutable d'application Office approprié.
 
 ## <a name="f10-and-f11-behavior"></a>Comportement des touches F10 et F11
- Lorsque vous démarrez le débogage d’un projet Office, **F10** et **F11** n’ont pas le même comportement que lorsque vous démarrez le débogage des autres projets Visual Basic ou C#. Dans les projets Visual Basic ou C#, le débogueur s'arrête sur la fonction principale (main) ; dans des projets Office, Visual Studio n'a pas le contrôle sur la fonction principale de l'application Office. Toutefois, pendant le débogage, **F10** et **F11** n’ont pas les mêmes fonctions que dans les projets Visual Basic et C#.
+ Lorsque vous démarrez le débogage d’un projet Office, **F10** et **F11** n’ont pas le même comportement que lorsque vous démarrez le débogage des autres projets Visual Basic ou c#. Dans les projets Visual Basic ou C#, le débogueur s'arrête sur la fonction principale (main) ; dans des projets Office, Visual Studio n'a pas le contrôle sur la fonction principale de l'application Office. Toutefois, pendant le débogage, **F10** et **F11** n’ont pas les mêmes fonctions que dans les projets Visual Basic et c#.
 
 ## <a name="display-exceptions"></a>Afficher les exceptions
  En raison de la façon dont le code managé interagit avec le code non managé, Visual Studio n'affiche pas les erreurs générées par les applications Microsoft Office. Par exemple, si un complément VSTO créé à l’aide des outils de développement Office dans Visual Studio lève une exception, l’application Microsoft Office poursuit sans afficher d’erreur. Pour consulter ces erreurs, configurez le débogueur pour qu'il s'arrête sur les exceptions Common Language Runtime. Pour plus d’informations, consultez [gérer les exceptions avec le débogueur](../debugger/managing-exceptions-with-the-debugger.md).

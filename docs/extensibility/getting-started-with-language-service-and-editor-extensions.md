@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 829ceea8f4acf0f884e3345e05053d368489d9ea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: acb18a6471a7d2debbb20107dc780f67857327ad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049020"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415574"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>Bien démarrer avec les extensions d’éditeur et de service de langage
 Vous pouvez utiliser des extensions de l’éditeur pour ajouter des fonctionnalités de service de langage telles que le mode plan, correspondance des accolades, IntelliSense et des ampoules à votre propre langage de programmation ou à n’importe quel type de contenu. Vous pouvez également personnaliser l’apparence et le comportement de l’éditeur Visual Studio, par exemple le texte de coloration, marges, les ornements et les autres éléments visuels. Vous pouvez également définir votre propre type de contenu et spécifier l’apparence et le comportement des vues de texte dans lequel votre contenu s’affiche.
@@ -23,7 +23,7 @@ Vous pouvez utiliser des extensions de l’éditeur pour ajouter des fonctionnal
  Pour commencer à écrire des extensions de l’éditeur, utilisez les modèles de projet d’éditeur qui sont installés dans le cadre du SDK Visual Studio. Le SDK Visual Studio est un ensemble téléchargeable d’outils qui facilitent le développement d’extensions Visual Studio, à l’aide de VSPackages ou à l’aide de Managed Extensibility Framework (MEF).
 
 > [!NOTE]
->  Pour plus d’informations sur le SDK Visual Studio, consultez [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
+> Pour plus d’informations sur le SDK Visual Studio, consultez [Visual Studio SDK](../extensibility/visual-studio-sdk.md).
 
  Nous recommandons que vous en savoir plus sur les concepts suivants et les technologies avant d’écrire vos propres extensions de l’éditeur.
 
@@ -34,7 +34,7 @@ Vous pouvez utiliser des extensions de l’éditeur pour ajouter des fonctionnal
  L’éditeur Visual Studio utilise Managed Extensibility Framework (MEF) pour gérer ses composants et les extensions. MEF permet également aux développeurs plus de créer facilement des extensions pour une application hôte, tel que Visual Studio. Dans cette infrastructure, vous allez définir une extension en fonction d’un contrat MEF et exportez-le en tant que composant MEF. L’application hôte gère les éléments par recherche les, leur inscription et s’assurer qu’elles sont appliquées au contexte correct.
 
 > [!NOTE]
->  Pour plus d’informations sur MEF dans l’éditeur, consultez [Managed Extensibility Framework dans l’éditeur](../extensibility/managed-extensibility-framework-in-the-editor.md).
+> Pour plus d’informations sur MEF dans l’éditeur, consultez [Managed Extensibility Framework dans l’éditeur](../extensibility/managed-extensibility-framework-in-the-editor.md).
 
 ## <a name="visual-studio-editor-extension-points-and-extensions"></a>Extensions et le points d’extension Éditeur visual Studio
  Points d’extension éditeur sont des composants MEF que vous pouvez personnaliser et étendre. Dans certains cas, vous étendez le point d’extension en implémentant une interface et en exportant ainsi que les métadonnées correctes. Dans d’autres cas vous simplement déclarez une extension et exportez en tant qu’un type particulier.
@@ -59,7 +59,7 @@ Vous pouvez utiliser des extensions de l’éditeur pour ajouter des fonctionnal
  Lorsque vous installez une extension sur un ordinateur, inclure les fichiers binaires et le manifeste dans un sous-dossier du dossier qui est connue pour Visual Studio.
 
 > [!WARNING]
->  Vous n’avez pas à vous soucier des détails des manifestes et les emplacements de déploiement si vous utilisez un des modèles d’extensibilité éditeur qui sont inclus dans Visual Studio. Les modèles contiennent tout ce qui est nécessaire pour vous inscrire et déployer une extension.
+> Vous n’avez pas à vous soucier des détails des manifestes et les emplacements de déploiement si vous utilisez un des modèles d’extensibilité éditeur qui sont inclus dans Visual Studio. Les modèles contiennent tout ce qui est nécessaire pour vous inscrire et déployer une extension.
 
 ## <a name="run-extensions-in-the-experimental-instance"></a>Exécuter des extensions dans l’instance expérimentale
  Vous pouvez isoler votre version de travail de Visual Studio pendant que vous développez une extension en le déployant dans le dossier suivant expérimental (sur Windows Vista et Windows 7) :

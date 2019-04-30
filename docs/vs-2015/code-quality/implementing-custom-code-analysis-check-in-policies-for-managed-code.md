@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e27892859dd58add2f505fa04e21faac5576a80b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 91f81036345e647820353911356c01b7c4caff99
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088754"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426548"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Implémentation de stratégies d'archivage de l'analyse du code personnalisées pour le code managé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Une stratégie d’archivage spécifie un ensemble de règles que les membres d�
  Pour créer une règle personnalisée définie pour un projet d’équipe, vous créez tout d’abord un dossier spécial pour la règle de stratégie d’archivage **Explorateur du contrôle de Source**. Ensuite, vous créez le fichier d’ensemble de règles et ajoutez le fichier au contrôle de version. Enfin, vous spécifiez la règle définie en tant que la stratégie de vérification d’analyse du code pour le projet d’équipe.  
   
 > [!NOTE]
->  Pour créer un dossier dans un projet d’équipe, vous devez d’abord mapper la racine de projet d’équipe vers un emplacement sur l’ordinateur local. Pour plus d’informations, consultez [créer et utiliser des espaces de travail (ancien)](http://msdn.microsoft.com/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
+> Pour créer un dossier dans un projet d’équipe, vous devez d’abord mapper la racine de projet d’équipe vers un emplacement sur l’ordinateur local. Pour plus d’informations, consultez [créer et utiliser des espaces de travail (ancien)](http://msdn.microsoft.com/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
   
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>Pour créer le dossier de contrôle de version pour l’ensemble de règles de stratégie d’archivage  
   
@@ -72,7 +72,7 @@ Une stratégie d’archivage spécifie un ensemble de règles que les membres d�
 4. Dans le **archivage** boîte de dialogue, vous pouvez ajouter un commentaire, puis cliquez sur **archiver**.  
   
     > [!NOTE]
-    >  Si vous avez déjà configuré une stratégie d’archivage de l’analyse du code pour votre projet d’équipe et que vous avez sélectionné le **appliquer l’archivage pour qu’il contienne uniquement les fichiers qui font partie de la solution actuelle**, vous déclenchera un avertissement d’échec de stratégie. Dans la boîte de dialogue d’échec de la stratégie, sélectionnez **substituer l’échec de stratégie et poursuivre l’archivage**. Ajouter un commentaire requis, puis cliquez sur **OK**.  
+    > Si vous avez déjà configuré une stratégie d’archivage de l’analyse du code pour votre projet d’équipe et que vous avez sélectionné le **appliquer l’archivage pour qu’il contienne uniquement les fichiers qui font partie de la solution actuelle**, vous déclenchera un avertissement d’échec de stratégie. Dans la boîte de dialogue d’échec de la stratégie, sélectionnez **substituer l’échec de stratégie et poursuivre l’archivage**. Ajouter un commentaire requis, puis cliquez sur **OK**.  
   
 #### <a name="to-specify-the-rule-set-file-as-the-check-in-policy"></a>Pour spécifier la règle de définie le fichier en tant que la stratégie d’archivage  
   
@@ -91,7 +91,7 @@ Une stratégie d’archivage spécifie un ensemble de règles que les membres d�
      **$/** `TeamProjectName` **/** `VersionControlPath`  
   
     > [!NOTE]
-    >  Vous pouvez copier le chemin d’accès en utilisant l’une des procédures suivantes dans **Explorateur du contrôle de Source**:  
+    > Vous pouvez copier le chemin d’accès en utilisant l’une des procédures suivantes dans **Explorateur du contrôle de Source**:  
   
     - Dans le **dossiers** volet, cliquez sur le dossier qui contient le fichier d’ensemble de règles. Copier le chemin d’accès du contrôle de version du dossier qui apparaît dans le **Source** , puis tapez le nom de fichier d’ensemble de la règle manuellement.  
   

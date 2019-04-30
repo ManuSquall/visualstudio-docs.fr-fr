@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c590ed271897ac6aebb875bafcb1b6b50a753629
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 780d794874ae87f3310810f2b46127fdf2eb46c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078017"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419583"
 ---
 # <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>Procédure : Ajouter par programmation des lignes et colonnes à des tableaux Word
   Dans un tableau Microsoft Office Word, les cellules sont organisées en lignes et en colonnes. Vous pouvez utiliser la méthode <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> de l'objet <xref:Microsoft.Office.Interop.Word.Rows> pour ajouter des lignes au tableau et la méthode <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> de l'objet <xref:Microsoft.Office.Interop.Word.Columns> pour ajouter des colonnes.
@@ -30,7 +30,7 @@ ms.locfileid: "60078017"
  Les exemples de code suivants peuvent être utilisés dans une personnalisation au niveau du document. Pour utiliser ces exemples, exécutez-les à partir de la classe `ThisDocument` de votre projet. Ces exemples supposent que le document associé à votre personnalisation possède déjà au moins un tableau.
 
 > [!IMPORTANT]
->  Ce code s'exécute uniquement dans les projets que vous créez à l'aide des modèles de projet suivants :
+> Ce code s'exécute uniquement dans les projets que vous créez à l'aide des modèles de projet suivants :
 >
 > - Document Word 2013
 > - Modèle Word 2013
@@ -57,9 +57,9 @@ ms.locfileid: "60078017"
  Les exemples de code suivants peuvent être utilisés dans un complément VSTO. Pour utiliser les exemples, exécutez-les à partir de la classe `ThisAddIn` de votre projet. Ces exemples supposent que le document actif possède déjà au moins un tableau.
 
 > [!IMPORTANT]
->  Ce code s'exécute uniquement dans les projets que vous créez à l'aide des modèles de complément VSTO Word :
+> Ce code s'exécute uniquement dans les projets que vous créez à l'aide des modèles de complément VSTO Word :
 >
->  Si vous souhaitez effectuer cette tâche dans n’importe quel autre type de projet, vous devez ajouter une référence à la **Microsoft.Office.Interop.Word** assembly et que vous devez utiliser des classes de cet assembly à ajouter des lignes et des colonnes aux tables. Pour plus d'informations, voir [Procédure : Cibler les applications Office via les assemblys PIA](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) et [référence d’assembly PIA Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).
+> Si vous souhaitez effectuer cette tâche dans n’importe quel autre type de projet, vous devez ajouter une référence à la **Microsoft.Office.Interop.Word** assembly et que vous devez utiliser des classes de cet assembly à ajouter des lignes et des colonnes aux tables. Pour plus d'informations, voir [Procédure : Cibler les applications Office via les assemblys PIA](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) et [référence d’assembly PIA Word 2010](http://go.microsoft.com/fwlink/?LinkId=189588).
 
 ### <a name="to-add-a-row-to-a-table"></a>Pour ajouter une ligne à un tableau
 

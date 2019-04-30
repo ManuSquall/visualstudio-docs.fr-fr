@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f2bd66ca5e5cc7e5884e98ddf4d5c2ba5df15742
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d74b989c5615f1fca079b9d8b41fdc7560e4e274
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422445"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Génération de code durant la conception à l'aide de modèles de texte T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Les modèles de texte T4 au moment du design vous permettent de générer du cod
  Par exemple, vous pourriez avoir un modèle qui définit un flux de travail sous la forme d'un tableau ou d'un diagramme. À partir du modèle, vous pouvez générer le logiciel qui exécute le flux de travail. Quand les exigences de vos utilisateurs changent, il est facile de discuter du nouveau flux de travail avec eux. La regénération du code à partir du flux de travail est plus fiable que la mise à jour manuelle du code.  
   
 > [!NOTE]
->  Un *modèle* est une source de données qui décrit un aspect particulier d’une application. Il peut assumer n'importe quelle forme, dans n'importe quel genre de fichier ou de base de données. Il n’est pas obligatoire qu’il soit dans un format spécifique, tel qu’un modèle UML ou un modèle de langage spécifique à un domaine. Les modèles les plus courants assument la forme de tableaux ou de fichiers XML.  
+> Un *modèle* est une source de données qui décrit un aspect particulier d’une application. Il peut assumer n'importe quelle forme, dans n'importe quel genre de fichier ou de base de données. Il n’est pas obligatoire qu’il soit dans un format spécifique, tel qu’un modèle UML ou un modèle de langage spécifique à un domaine. Les modèles les plus courants assument la forme de tableaux ou de fichiers XML.  
   
  Vous connaissez sans doute déjà le concept de génération de code. Lorsque vous définissez des ressources dans un **.resx** de fichiers dans votre [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solution, un ensemble de classes et méthodes est généré automatiquement. Le fichier de ressources simplifie et rend plus fiable la modification des ressources, par rapport à la modification manuelle des classes et des méthodes. Avec les modèles de texte, vous pouvez générer du code de la même façon à partir d'une source que vous avez conçue vous-même.  
   
@@ -74,7 +74,7 @@ Les modèles de texte T4 au moment du design vous permettent de générer du cod
 6. Dans **l’Explorateur de solutions**, développez le nœud de fichier de modèle et vous trouverez un fichier portant l’extension **.txt**. Ce fichier contient le texte généré à partir du modèle.  
   
     > [!NOTE]
-    >  Si votre projet est un projet Visual Basic, vous devez cliquer sur **afficher tous les fichiers** afin de voir le fichier de sortie.  
+    > Si votre projet est un projet Visual Basic, vous devez cliquer sur **afficher tous les fichiers** afin de voir le fichier de sortie.  
   
 ### <a name="regenerating-the-code"></a>Regénération du code  
  Un modèle est exécuté, générant le fichier auxiliaire, dans les cas suivants :  
@@ -141,9 +141,9 @@ Les modèles de texte T4 au moment du design vous permettent de générer du cod
   Le modèle s'exécute et s'arrête aux points d'arrêt. Vous pouvez examiner les variables et parcourir le code de manière normale.  
   
 > [!TIP]
->  Avec `debug="true"`, le mappage du code généré au modèle de texte est plus précis car davantage de directives de numérotation de lignes sont insérées dans le code généré. Si vous ne le spécifiez pas, les points d'arrêt risquent d'arrêter l'exécution dans l'état incorrect.  
+> Avec `debug="true"`, le mappage du code généré au modèle de texte est plus précis car davantage de directives de numérotation de lignes sont insérées dans le code généré. Si vous ne le spécifiez pas, les points d'arrêt risquent d'arrêter l'exécution dans l'état incorrect.  
 >   
->  Mais vous pouvez laisser la clause dans la directive de modèle même quand vous ne déboguez pas. Cela ne provoque qu'une très faible dégradation des performances.  
+> Mais vous pouvez laisser la clause dans la directive de modèle même quand vous ne déboguez pas. Cela ne provoque qu'une très faible dégradation des performances.  
   
 ## <a name="generating-code-or-resources-for-your-solution"></a>Génération de code ou de ressources pour votre solution  
  Vous pouvez générer des fichiers programmes qui varient en fonction d'un modèle. Un modèle est une entrée telle qu'une base de données, un fichier de configuration, un modèle UML, un modèle DSL ou autre source. En général, plusieurs fichiers programmes sont générés à partir du même modèle. Pour cela, vous devez créer un fichier de modèle pour chaque fichier programme généré et faire en sorte que tous les modèles lisent le même modèle.  
@@ -293,7 +293,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 ```  
   
 > [!TIP]
->  Un modèle de texte s'exécute dans son propre domaine d'application et les services sont accessibles par le marshaling. Dans cette circonstance, GetCOMService() est plus fiable que GetService().  
+> Un modèle de texte s'exécute dans son propre domaine d'application et les services sont accessibles par le marshaling. Dans cette circonstance, GetCOMService() est plus fiable que GetService().  
   
 ## <a name="Regenerating"></a> Régénération du code automatiquement  
  En général, plusieurs fichiers d'une solution [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sont générés avec un seul modèle d'entrée. Chaque fichier est généré à partir de son propre modèle, mais les modèles font tous référence au même modèle.  

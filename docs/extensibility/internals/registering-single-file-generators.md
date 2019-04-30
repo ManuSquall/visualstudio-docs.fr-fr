@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f16385452fa0fa0f4e706da1856185355aa95a5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3d5d9e4cd0baa2343a68a3d86a96110c97b6cbb7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047187"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426816"
 ---
 # <a name="registering-single-file-generators"></a>Inscription de générateurs de fichier unique
 Pour mettre à disposition dans un outil personnalisé [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], vous devez l’inscrire donc [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] peut instancier et l’associe à un type de projet particulier.
@@ -51,7 +51,7 @@ Pour mettre à disposition dans un outil personnalisé [!INCLUDE[vsprvs](../../c
         Obligatoire. Indique si les types des fichiers générés par cet outil personnalisé sont rendus disponibles aux concepteurs visuels. La valeur de ce paramètre doit être (zéro) 0 pour les types non disponibles aux concepteurs visuels ou 1 (un) pour les types disponibles aux concepteurs visuels.
 
    > [!NOTE]
-   >  Vous devez inscrire l’outil personnalisé séparément pour chaque langue pour laquelle vous voulez que l’outil personnalisé soit disponible.
+   > Vous devez inscrire l’outil personnalisé séparément pour chaque langue pour laquelle vous voulez que l’outil personnalisé soit disponible.
 
     Par exemple, le MSDataSetGenerator s’inscrit lui-même une seule fois pour chaque langue :
 

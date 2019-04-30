@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 567eba3da4856cd88a583bf614d5afbc13e77b0d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0aa124d25e279b7e44292645d81d80829f5d3f8f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074919"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420198"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package"></a>Procédure : Personnaliser un package de solution SharePoint
   Vous pouvez utiliser le Concepteur de packages pour créer et personnaliser un package (*.wsp*). Par exemple, vous pouvez ajouter des éléments de projet SharePoint et des fonctionnalités, spécifiez si le serveur Web est réinitialisé lorsque la solution est déployée, définissez le type de serveur de déploiement.
@@ -47,7 +47,7 @@ ms.locfileid: "60074919"
 2. Développez le Package, développez le package et ouvrez le *Package.Template.xml* fichier.
 
     > [!NOTE]
-    >  Lorsque vous ouvrez le fichier XML de manifeste pour le modèle de package, les fichiers sont validés automatiquement, et vous pouvez ignorer les avertissements qui apparaissent dans la fenêtre liste d’erreurs.
+    > Lorsque vous ouvrez le fichier XML de manifeste pour le modèle de package, les fichiers sont validés automatiquement, et vous pouvez ignorer les avertissements qui apparaissent dans la fenêtre liste d’erreurs.
 
 ## <a name="change-the-manifest-template"></a>Modifier le modèle de manifeste
  Vous pouvez modifier le code XML du fichier manifest du package dans l’éditeur XML de Visual Studio ou dans le volet modèle de manifeste. Toutes les modifications au code XML sont fusionnées dans le fichier manifest de package pour le package.
@@ -68,7 +68,7 @@ ms.locfileid: "60074919"
  Vous pouvez désactiver le Concepteur de packages et créer le *manifest.xml* fichier manuellement. La première fois que vous procédez ainsi, les paramètres actuels dans le Concepteur de packages sont enregistrés au fichier XML de modèle de package. Ensuite, vous pouvez modifier ou remplacer le code XML.
 
 > [!NOTE]
->  Si vous ajoutez ou supprimez des éléments de projet SharePoint et des fonctionnalités dans le fichier XML tandis que le Concepteur de packages est désactivé, ces éléments de projet et les fonctionnalités ne sont pas empaquetées.
+> Si vous ajoutez ou supprimez des éléments de projet SharePoint et des fonctionnalités dans le fichier XML tandis que le Concepteur de packages est désactivé, ces éléments de projet et les fonctionnalités ne sont pas empaquetées.
 
 #### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>Pour remplacer le fichier manifest de package en désactivant le Concepteur
 

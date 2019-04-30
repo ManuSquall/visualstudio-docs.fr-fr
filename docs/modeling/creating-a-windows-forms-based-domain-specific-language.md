@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5e5d1fec376a1f35a8b2214a7bde4834cc6bd9d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eb5f395952b17b6937dc264f8bec8021e6627d45
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101793"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438178"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Création d'un langage spécifique à un domaine basé sur Windows Forms
 Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de langage spécifique à un domaine (DSL), au lieu d’utiliser un diagramme DSL. Cette rubrique vous guide tout au long de la liaison d’un formulaire Windows à un DSL à l’aide de la Visual Studio Visualization and Modeling SDK.
@@ -80,7 +80,7 @@ Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de lan
      Attribuez-lui des propriétés de domaine supplémentaire nommées `Size` de type **Int32**, et `IsOrganic` de type **booléenne**.
 
     > [!NOTE]
-    >  Si vous supprimez la classe de domaine racine et ensuite créez une nouvelle racine, vous devrez réinitialiser la propriété de la classe racine d’éditeur. Dans **Explorateur DSL**, sélectionnez **éditeur**. Puis, dans la fenêtre Propriétés, définissez **classe racine** à `Farm`.
+    > Si vous supprimez la classe de domaine racine et ensuite créez une nouvelle racine, vous devrez réinitialiser la propriété de la classe racine d’éditeur. Dans **Explorateur DSL**, sélectionnez **éditeur**. Puis, dans la fenêtre Propriétés, définissez **classe racine** à `Farm`.
 
 4. Utilisez le **nommé la classe de domaine** outil pour créer les classes de domaine suivantes :
 
@@ -105,7 +105,7 @@ Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de lan
 10. Générer le **Dsl** projet.
 
     > [!NOTE]
-    >  À ce stade, les autres projets ne seront pas généré sans erreur. Toutefois, nous voulons créer le projet Dsl afin que son assembly est disponible pour l’Assistant Source de données.
+    > À ce stade, les autres projets ne seront pas généré sans erreur. Toutefois, nous voulons créer le projet Dsl afin que son assembly est disponible pour l’Assistant Source de données.
 
 ## <a name="updating-the-ui-project"></a>La mise à jour le projet d’interface utilisateur
  Vous pouvez maintenant créer un nouveau contrôle utilisateur qui affiche les informations qui sont stockées dans le modèle DSL. Pour connecter le contrôle utilisateur au modèle le plus simple est par le biais des liaisons de données. La liaison de type d’adaptateur nommé de données **ModelingBindingSource** est spécialement conçue pour vous connecter DSL pour les interfaces non VMSDK.
@@ -149,7 +149,7 @@ Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de lan
 6. À l’aide de la boîte à outils, créez deux instances de **DataGridView**et nommez-les `AnimalGridView` et `FieldGridView`.
 
    > [!NOTE]
-   >  Une autre étape consiste à faire glisser les éléments de champs et les animaux à partir de la fenêtre Sources de données sur le contrôle. Cette action crée automatiquement des grilles de données et les liaisons entre l’affichage de grille et de la source de données. Toutefois, cette liaison ne fonctionne pas correctement pour le DSL. Par conséquent, il est préférable de créer les grilles de données et les liaisons manuellement.
+   > Une autre étape consiste à faire glisser les éléments de champs et les animaux à partir de la fenêtre Sources de données sur le contrôle. Cette action crée automatiquement des grilles de données et les liaisons entre l’affichage de grille et de la source de données. Toutefois, cette liaison ne fonctionne pas correctement pour le DSL. Par conséquent, il est préférable de créer les grilles de données et les liaisons manuellement.
 
 7. Si la boîte à outils ne contient-elle pas le **ModelingBindingSource** outil, ajoutez-le. Dans le menu contextuel de la **données** , choisir **choisir des éléments de**. Dans le **Choose Toolbox Items** boîte de dialogue, sélectionnez **ModelingBindingSource** à partir de la **onglet .NET Framework**.
 
@@ -221,7 +221,7 @@ Vous pouvez utiliser Windows Forms pour afficher l’état d’un modèle de lan
      `Goat1` s’affiche dans le **animaux** vue.
 
     > [!WARNING]
-    >  Vous devez utiliser le menu contextuel sur le **batterie** nœud, pas le **animaux** nœud.
+    > Vous devez utiliser le menu contextuel sur le **batterie** nœud, pas le **animaux** nœud.
 
 4. Sélectionnez le **batterie** nœud racine et affichez ses propriétés.
 

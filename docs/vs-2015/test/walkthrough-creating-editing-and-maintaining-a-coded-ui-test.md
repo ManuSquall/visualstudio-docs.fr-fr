@@ -8,12 +8,12 @@ ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: 43
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8df705e1e4da6a54f060de45a90aed7c41691683
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 940a7551c83ec9a195ac0d54b430115ed926abf5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428234"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Procédure pas à pas : Création, Édition et gestion d’un Test codé de l’interface utilisateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -123,7 +123,7 @@ Dans cette procédure pas à pas, vous allez créer une simple application WPF (
 2. Créez un raccourci sur le bureau à l'application SimpleWPFApp. Cliquez avec le bouton droit sur SimpleWPFApp.exe et choisissez **Copier**. Sur votre Bureau, cliquez avec le bouton droit et choisissez **Coller le raccourci**.  
   
     > [!TIP]
-    >  Un raccourci vers l'application simplifie l'ajout ou la modification des tests codés de l'interface utilisateur de votre application. Il permet en effet de démarrer l'application rapidement.  
+    > Un raccourci vers l'application simplifie l'ajout ou la modification des tests codés de l'interface utilisateur de votre application. Il permet en effet de démarrer l'application rapidement.  
   
 3. Dans l’Explorateur de solutions, cliquez avec le bouton droit sur la solution, choisissez **Ajouter** puis sélectionnez **Nouveau projet**.  
   
@@ -154,7 +154,7 @@ Dans cette procédure pas à pas, vous allez créer une simple application WPF (
      ![Suspendre l’enregistrement](../test/media/cuit.png "CUIT_")  
   
     > [!WARNING]
-    >  Toutes les actions effectuées sur le Bureau sont enregistrées. Mettez l'enregistrement en pause si vous effectuez des actions susceptibles d'inclure des données confidentielles dans l'enregistrement.  
+    > Toutes les actions effectuées sur le Bureau sont enregistrées. Mettez l'enregistrement en pause si vous effectuez des actions susceptibles d'inclure des données confidentielles dans l'enregistrement.  
   
 9. Démarrez SimpleWPFApp à l'aide du raccourci sur le Bureau.  
   
@@ -203,7 +203,7 @@ Dans cette procédure pas à pas, vous allez créer une simple application WPF (
 3. Pour résoudre ce problème, le test codé de l'interface utilisateur peut attendre que le contrôle CheckBox soit activé avant de continuer sur cette ligne à l'aide de la méthode `WaitForControlEnabled()`.  
   
     > [!WARNING]
-    >  Ne modifiez pas le fichier UIMap.Designer.cs. Toutes les modifications de code que vous effectuées dans le fichier UIMapDesigner.cs seront remplacées chaque fois que vous générez du code dans UIMap - Générateur de test codé de l'interface utilisateur. Si vous devez modifier une méthode enregistrée, vous devez la copier dans le fichier UIMap.cs et la renommer. Le fichier UIMap.cs peut être utilisé pour remplacer les méthodes et les propriétés dans le fichier UIMapDesigner.cs. Vous devez supprimer la référence à la méthode d’origine dans le fichier Coded UITest.cs et la remplacer par le nom de la méthode renommée.  
+    > Ne modifiez pas le fichier UIMap.Designer.cs. Toutes les modifications de code que vous effectuées dans le fichier UIMapDesigner.cs seront remplacées chaque fois que vous générez du code dans UIMap - Générateur de test codé de l'interface utilisateur. Si vous devez modifier une méthode enregistrée, vous devez la copier dans le fichier UIMap.cs et la renommer. Le fichier UIMap.cs peut être utilisé pour remplacer les méthodes et les propriétés dans le fichier UIMapDesigner.cs. Vous devez supprimer la référence à la méthode d’origine dans le fichier Coded UITest.cs et la remplacer par le nom de la méthode renommée.  
   
 4. Dans l’Explorateur de solutions, recherchez **UIMap.uitest** dans votre projet de test codé de l’interface utilisateur.  
   
@@ -224,7 +224,7 @@ Dans cette procédure pas à pas, vous allez créer une simple application WPF (
      Les mises à jour apportées à la méthode de test sont enregistrées dans le fichier UIMap.Designer.  
   
     > [!CAUTION]
-    >  Une fois que vous avez déplacé la méthode, vous ne pouvez plus la modifier à l'aide de l'éditeur de test codé de l'interface utilisateur. Vous devez ajouter le code personnalisé et le gérer à l'aide de l'éditeur de code.  
+    > Une fois que vous avez déplacé la méthode, vous ne pouvez plus la modifier à l'aide de l'éditeur de test codé de l'interface utilisateur. Vous devez ajouter le code personnalisé et le gérer à l'aide de l'éditeur de code.  
   
 10. Renommez la méthode `SimpleAppTest()` en `ModifiedSimpleAppTest()`.  
   

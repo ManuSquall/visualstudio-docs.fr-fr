@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 19f426d60ea8ee3d9326fa9b13adfff115c169d5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 93791cda512ee8d74664e1b8b04890da74e399ad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420619"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Procédure : Exposer des listes de symboles fournis par la bibliothèque pour le Gestionnaire d’objets
 Les outils de consultation de symboles, **affichage de classes**, **Explorateur d’objets**, **Explorateur d’appels** et **résultats**, transmettre les demandes de nouvelles données à le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Gestionnaire d’objets. Le Gestionnaire d’objets détecte que les bibliothèques appropriées et demande les nouvelles listes de symboles. Les bibliothèques de répondent en fournissant les données demandées à le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Gestionnaire d’objets via le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interface. Le [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Gestionnaire d’objets appelle les méthodes dans <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> pour obtenir les données de l’interface et l’utilise pour remplir ou mettre à jour les vues des outils de recherche de symboles.
@@ -27,9 +27,9 @@ Les outils de consultation de symboles, **affichage de classes**, **Explorateur 
  Une bibliothèque peut recevoir des demandes de données en l’outil est appelé, le nœud est développé, ou la vue soit actualisée. Lorsqu’un outil de consultation de symboles est appelé pour la première fois, le Gestionnaire d’objets demande la bibliothèque pour fournir la liste de niveau supérieur. Lorsque l’utilisateur développe un nœud de la liste, la bibliothèque fournit une liste d’enfants sous ce nœud. Chaque consultation de gestionnaire d’objet contient un index de l’élément concerné. Pour afficher une nouvelle liste, le Gestionnaire d’objets doit déterminer combien d’éléments figurent dans la liste, le type d’éléments, leurs noms, d’accessibilité et d’autres propriétés.
 
 > [!NOTE]
->  Les exemples de code managé suivants montrent comment fournir des listes de symboles à implémenter le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interface. Le Gestionnaire d’objets appelle les méthodes dans cette interface et utilise les données obtenues pour remplir ou mettre à jour les outils de recherche de symboles.
+> Les exemples de code managé suivants montrent comment fournir des listes de symboles à implémenter le <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interface. Le Gestionnaire d’objets appelle les méthodes dans cette interface et utilise les données obtenues pour remplir ou mettre à jour les outils de recherche de symboles.
 >
->  Pour l’implémentation de fournisseur de symbole de code natif, utilisez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> interface.
+> Pour l’implémentation de fournisseur de symbole de code natif, utilisez le <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> interface.
 
 ## <a name="to-provide-lists-of-symbols-to-the-object-manager"></a>Pour fournir des listes de symboles pour le Gestionnaire d’objets
 

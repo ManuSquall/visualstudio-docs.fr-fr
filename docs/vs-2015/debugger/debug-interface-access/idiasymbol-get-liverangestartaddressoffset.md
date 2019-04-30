@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0d5c680499da99dfdaadc6ee82f4a16f6cc46652
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 2ea1803e702ba7f133f9194b993464eabfcc24aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953645"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423049"
 ---
 # <a name="idiasymbolgetliverangestartaddressoffset"></a>IDiaSymbol::get_liveRangeStartAddressOffset
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ HRESULT get_liveRangeStartAddressOffset ( 
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.  
   
 > [!NOTE]
->  Un code d’erreur renvoyé signifie que le symbole n’a pas d’informations sur la plage dynamique.  
+> Un code d’erreur renvoyé signifie que le symbole n’a pas d’informations sur la plage dynamique.  
   
 ## <a name="remarks"></a>Notes  
  L’adresse formée par la section et le décalage est le début de la plage dans laquelle le symbole est valide.  
