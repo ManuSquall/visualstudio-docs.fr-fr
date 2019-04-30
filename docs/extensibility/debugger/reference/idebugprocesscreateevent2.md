@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 138112474037ad868fdcea18b8b660274bec95dd
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689029"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62870761"
 ---
 # <a name="idebugprocesscreateevent2"></a>IDebugProcessCreateEvent2
 Cette interface est envoyée quand un processus est exécuté.
@@ -34,7 +34,7 @@ IDebugProcessCreateEvent2 : IUnknown
 ## <a name="notes-for-callers"></a>Notes de publication pour les appelants
  L’Allemagne ou le fournisseur de port personnalisé crée et envoie cet objet d’événement pour signaler la création d’un processus. Le D’envoie cet événement à l’aide de la [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) fonction de rappel qui est fournie par le SDM lorsqu’il est attaché au programme en cours de débogage. Le fournisseur de port personnalisé envoie cet événement à l’aide de la [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md) interface.
 
-## <a name="requirements"></a>Spécifications
+## <a name="requirements"></a>Configuration requise
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

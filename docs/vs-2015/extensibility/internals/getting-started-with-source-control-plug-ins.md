@@ -12,11 +12,11 @@ caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 85aa5727f252ad75c45064d7b885e3d282da36a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62538159"
 ---
 # <a name="getting-started-with-source-control-plug-ins"></a>Bien démarrer avec les plug-ins de contrôle de code source
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Pour créer un contrôle de source de plug-in, vous devez créer une DLL qui imp
  Trois versions de l’API de plug-in de contrôle de Source (versions 1.1, 1.2 et 1.3) sont disponibles pour les plug-ins de contrôle de code source. L’API de plug-in de contrôle Source décrite ici est la version 1.3. Il a été conçu pour être entièrement compatible avec les plug-ins de contrôle de code source prenant en charge les versions 1.1 et 1.2. Le [What ' s New in Version 1.3 des API de plug-in de contrôle Source](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md) section décrit en détail les nouvelles fonctionnalités prises en charge dans la dernière version de l’API de plug-in de contrôle de Source.  
   
 ## <a name="in-this-section"></a>Dans cette section  
- [Guide pratique pour Installer un plug-in de contrôle de code Source](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)  
+ [Guide pratique pour installer un plug-in de contrôle de code source](../../extensibility/internals/how-to-install-a-source-control-plug-in.md)  
  Décrit comment rendre les entrées de Registre qui sont requis pour incorporer dans un DLL de contrôle de code source.  
   
  [Nouveautés dans l’API de plug-in de contrôle de code source version 1.3](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-3.md)  

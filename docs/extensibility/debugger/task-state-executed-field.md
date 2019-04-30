@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7a822a47948df80c84ed6845590d5ec2a8c91ec6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62864335"
 ---
 # <a name="taskstateexecuted-field"></a>Champ TASK_STATE_EXECUTED
-La tâche est en cours d’exécution mais n’est pas encore terminée.
+La tâche est en cours d'exécution mais n'est pas encore terminée.
 
  **Espace de noms :** <xref:System.Threading.Tasks?displayProperty=fullName>
 

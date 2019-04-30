@@ -1,5 +1,5 @@
 ---
-title: Outils de données pour C++
+title: Outils de données pourC++
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,19 +11,19 @@ ms.workload:
 - data-storage
 - cplusplus
 ms.openlocfilehash: 5157f1d6a851e0784e79dfbfe5b94aef0490a026
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62565236"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Outils de données Visual Studio pour C++
 
-C++ natif peuvent souvent offrir les meilleures performances lorsque vous accédez à des sources de données. Toutefois, les données des outils pour les applications C++ dans Visual Studio ne sont pas aussi riches car il s’agit pour les applications .NET. Par exemple, le **des Sources de données** fenêtre ne peut pas être utilisée pour glisser- déposer des sources de données sur une aire de conception de C++. Si vous avez besoin d’une couche objet-relationnel, vous devrez écrire votre propre, ou utiliser un produit tiers. Vaut pour les fonctionnalités de liaison de données, bien que les applications qui utilisent la bibliothèque Microsoft Foundation Class peuvent utiliser des classes de base de données, ainsi que des documents et vues, pour stocker les données en mémoire et les afficher à l’utilisateur. Pour plus d’informations, consultez [accès aux données dans Visual C++](/cpp/data/data-access-in-cpp).
+C++ natif peuvent souvent offrir les meilleures performances lorsque vous accédez à des sources de données. Toutefois, les données des outils pour les applications C++ dans Visual Studio ne sont pas aussi riches car il s’agit pour les applications .NET. Par exemple, le **des Sources de données** fenêtre ne peut pas être utilisée pour glisser- déposer des sources de données sur un C++ aire de conception. Si vous avez besoin d’une couche objet-relationnel, vous devrez écrire votre propre, ou utiliser un produit tiers. Vaut pour les fonctionnalités de liaison de données, bien que les applications qui utilisent la bibliothèque Microsoft Foundation Class peuvent utiliser des classes de base de données, ainsi que des documents et vues, pour stocker les données en mémoire et les afficher à l’utilisateur. Pour plus d’informations, consultez [accès aux données dans Visual C++](/cpp/data/data-access-in-cpp).
 
 Pour vous connecter aux bases de données SQL, les applications C++ natives peuvent utiliser les pilotes ODBC et OLE DB et le fournisseur ADO qui sont inclus avec Windows. Ceux-ci peuvent se connecter aux bases de données qui prend en charge ces interfaces. Le pilote ODBC est la norme. OLE DB est fourni pour la compatibilité descendante. Pour plus d’informations sur ces technologies de données, consultez [Windows Data Access Components](/previous-versions/windows/desktop/ms692897(v=vs.85)).
 
-Pour tirer parti des fonctionnalités personnalisées dans SQL Server 2005 et version ultérieure, utilisez le [SQL Server natif client](/sql/relational-databases/native-client/sql-server-native-client). Le client natif contient également le pilote ODBC de SQL Server et le fournisseur OLE DB pour SQL Server dans une bibliothèque de liens dynamiques (DLL). Il prend en charge des applications à l’aide des API en code natif (ODBC, OLE DB et ADO) pour Microsoft SQL Server. SQL Server Native Client est installé avec SQL Server Data Tools. Le guide de programmation est ici : [programmation du client natif SQL Server](/sql/relational-databases/native-client/sql-server-native-client-programming).
+Pour tirer parti des fonctionnalités personnalisées dans SQL Server 2005 et version ultérieure, utilisez le [SQL Server natif client](/sql/relational-databases/native-client/sql-server-native-client). Le client natif contient également le pilote ODBC de SQL Server et le fournisseur OLE DB pour SQL Server dans une bibliothèque de liens dynamiques (DLL). Il prend en charge des applications à l’aide des API en code natif (ODBC, OLE DB et ADO) pour Microsoft SQL Server. SQL Server Native Client est installé avec SQL Server Data Tools. Le guide de programmation est ici : [Programmation du client natif SQL Server](/sql/relational-databases/native-client/sql-server-native-client-programming).
 
 ## <a name="to-connect-to-localdb-through-odbc-and-sql-native-client-from-a-c-application"></a>Se connecter à la base de données locale via ODBC et SQL Native Client à partir d’une application C++
 

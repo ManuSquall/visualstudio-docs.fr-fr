@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 45c51a6c5496686ef84b17341c97f00680a80bdd
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59366040"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825290"
 ---
 # <a name="security-rules-rule-set-for-managed-code"></a>Ensemble de règles des règles de sécurité pour le code managé
 Vous devez inclure la règle de règles de sécurité Microsoft pour optimiser le nombre de problèmes potentiels de sécurité qui sont signalés.

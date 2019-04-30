@@ -36,11 +36,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 57b66473333bfe5e22c3f5aca47764bb789a33cd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045186"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564824"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Services Windows Communication Foundation et services de données WCF dans Visual Studio
 

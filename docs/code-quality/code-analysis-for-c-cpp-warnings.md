@@ -19,11 +19,11 @@ manager: wpickett
 ms.workload:
 - cplusplus
 ms.openlocfilehash: dc3f09575085039986a0b2fbbf3eb386ee5f5e1b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921391"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62540779"
 ---
 # <a name="code-analysis-for-cc-warnings"></a>Analyse de code pour les avertissements C/C++
 Cette section répertorie les avertissements d’analyse du Code C/C++ à l’exception de ceux qui sont déclenchés par le [C++ Core Guidelines Checkers](code-analysis-for-cpp-corecheck.md). Pour plus d’informations sur l’analyse du Code, consultez [/Analyze (analyse du Code)](/cpp/build/reference/analyze-code-analysis) et [démarrage rapide : Analyse du code pour C/C++](../code-quality/quick-start-code-analysis-for-c-cpp.md).

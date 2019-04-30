@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 63f3bfc9295501d5f9b8f0267037302cdbb04a76
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615843"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970213"
 ---
 # <a name="microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box"></a>Boîte de dialogue Options de clavier Microsoft Office Excel, paramètres du clavier Microsoft Office,
   Microsoft Office Excel et Visual Studio prennent en charge les touches de raccourci. La même combinaison de touches de raccourci peut correspondre à des commandes différentes dans Excel et dans Visual Studio. Quand Excel est ouvert dans un projet au niveau du document dans Visual Studio, qu’une seule application à la fois reçoit les commandes de touches de raccourci. Par défaut, Visual Studio reçoit toutes les commandes de touches de raccourci, mais vous souhaitez qu’Excel les reçoive lorsque le document a le focus en sélectionnant **schéma de clavier dynamique**.

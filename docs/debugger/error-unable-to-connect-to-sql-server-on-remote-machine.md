@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4038f1f65d688ee8d9bbf9ad01eb1698b811bee5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075218"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850119"
 ---
 # <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>Erreur : Impossible de se connecter à SQL Server sur l’ordinateur distant
 Impossible de se connecter à SQL Server sur un ordinateur distant *nom*. Accès refusé. Vérifiez que vous avez installé le débogueur distant sur l'ordinateur distant. Si l'ordinateur distant ne se trouve pas dans un domaine ou si Visual Studio s'exécute en tant que compte local, l'ordinateur distant doit avoir un compte avec les mêmes nom d'utilisateur et mot de passe que le compte local.

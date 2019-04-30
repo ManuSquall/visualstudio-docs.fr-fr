@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 88f7bb81557db813912fe4470e63b8d52c0c9371
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088403"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62981047"
 ---
 # <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>Procédure pas à pas : Mettre à jour d’un graphique dans un document à l’aide de cases d’option
   Cette procédure pas à pas montre comment utiliser des cases d'option dans une personnalisation de document pour Microsoft Office Word dans le but de donner aux utilisateurs la possibilité de sélectionner des styles de graphique dans le document.

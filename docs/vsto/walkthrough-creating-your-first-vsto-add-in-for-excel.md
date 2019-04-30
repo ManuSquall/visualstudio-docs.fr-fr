@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6f5de8be3463ff0e96d516c8dec592d0aff3cfc7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62981427"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>Procédure pas à pas : Créer votre premier complément pour Excel
   Cette procédure pas à pas d'introduction vous indique comment créer un complément de niveau application pour Microsoft Office Excel. Les fonctionnalités que vous créez dans ce type de solution sont accessibles à l'application, quels que soient les classeurs ouverts.

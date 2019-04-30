@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 36ee787ca9762766f8c563ab4b5081ee47355a56
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62535353"
 ---
 # <a name="ca1048-do-not-declare-virtual-members-in-sealed-types"></a>CA1048 : Ne pas déclarer les membres virtuels dans les types sealed
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "58949948"
 ## <a name="rule-description"></a>Description de la règle
  Les types déclarent des méthodes comme étant virtuelles afin d'hériter de types en mesure de substituer l'implémentation de la méthode virtuelle. Par définition, vous ne peut pas hériter d’un type sealed, effectuer une méthode virtuelle sur un type sealed sans signification.
 
- Les compilateurs C# et Visual Basic .NET n’autorisent pas les types de violer cette règle.
+ Les compilateurs c# et Visual Basic .NET n’autorisent pas les types de violer cette règle.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
  Pour corriger une violation de cette règle, rendez la méthode non virtuelle ou rendez le type pouvant être héritées.

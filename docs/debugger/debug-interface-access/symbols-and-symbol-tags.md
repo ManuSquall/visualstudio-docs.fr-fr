@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6affc24a84ef4d008ece5f95e45a11eb70f33b4e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56653994"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62854710"
 ---
 # <a name="symbols-and-symbol-tags"></a>Balises Symbols et Symbol
 Les informations de débogage sur un programme compilé sont stockées dans le fichier de base de données (.pdb) du programme en tant que symboles qui sont accessibles à l’aide de l’API du Kit de développement logiciel Debug Interface Access (DIA). Tous les symboles ont un [IDiaSymbol::get_symTag](../../debugger/debug-interface-access/idiasymbol-get-symtag.md) et un [IDiaSymbol::get_symIndexId](../../debugger/debug-interface-access/idiasymbol-get-symindexid.md) propriété. Le `symTag` propriété indique le type de symbole, tel que défini par le [SymTagEnum (énumération)](../../debugger/debug-interface-access/symtagenum.md) énumération. Le `symIndexId` propriété est un `DWORD` valeur qui contient l’identificateur unique pour chaque instance d’un symbole.

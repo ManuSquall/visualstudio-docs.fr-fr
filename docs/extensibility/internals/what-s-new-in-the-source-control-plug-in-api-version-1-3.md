@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8b61e56fcef8bbbe8e9f36a39580eae14ad582d5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645977"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856710"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>Ce que&#39;s dans la Source de contrôle plug-in API Version 1.3
 L’API de plug-in de contrôle de Source version 1.3 présente les nouvelles fonctions suivantes pour fournir un contrôle plus avancée.

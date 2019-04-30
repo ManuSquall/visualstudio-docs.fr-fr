@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8f4aad26418c61ea450d697e294203b7f844577f
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57324154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62862925"
 ---
 # <a name="how-to-register-editor-file-types"></a>Procédure : Inscrire des types de fichiers de l’éditeur
 Le moyen le plus simple pour inscrire les types de fichiers de l’éditeur est à l’aide des attributs d’inscription fournis dans le cadre de la [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] package framework (MPF) classes managées. Si vous implémentez votre package en mode natif [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)], vous pouvez également écrire un script de Registre qui inscrit votre éditeur et les extensions associées.

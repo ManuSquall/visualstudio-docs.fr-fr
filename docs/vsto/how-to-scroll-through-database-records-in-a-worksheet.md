@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0b3ee44c6666a887552f1babfcbbf028e9215e95
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094708"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961226"
 ---
 # <a name="how-to-scroll-through-database-records-in-a-worksheet"></a>Procédure : Faites défiler les enregistrements de base de données dans une feuille de calcul
   La procédure suivante montre comment utiliser le concepteur pour afficher un champ d’une table de base de données dans une feuille de calcul Microsoft Office Excel, avec des contrôles qui permettent aux utilisateurs finaux de faire défiler tous les enregistrements.

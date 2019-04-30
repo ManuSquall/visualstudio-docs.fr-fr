@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: cf7a68d5d3567305e4f70049d76a1c260ddecf25
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102521"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826932"
 ---
 # <a name="grant-trust-to-office-solutions"></a>Accorder votre confiance à des solutions Office
   Accorder votre confiance aux moyens de solutions Office modification de la stratégie de sécurité de chaque ordinateur cible pour approuver l’assembly de solution, le manifeste d’application, le manifeste de déploiement et le document. Approbation peut être accordée à la solution Office par vous ou l’utilisateur final.

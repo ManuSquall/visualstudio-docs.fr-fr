@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: f5d65ff675329fdc714026ce6fe04ee3bd93086f
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62568659"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Créer une application de données simple avec WPF et Entity Framework 6
 
@@ -58,7 +58,7 @@ Cet exemple utilise SQL Server Express LocalDB et la base de données Northwind.
 
 ## <a name="create-the-model"></a>Créer le modèle
 
-1. Avec le bouton droit sur le nœud de projet dans **l’Explorateur de solutions** et choisissez **ajouter** > **un nouvel élément**. Dans le volet gauche, sous le C# nœud, choisissez **données** et dans le volet central, choisissez **ADO.NET Entity Data Model**.
+1. Avec le bouton droit sur le nœud de projet dans **l’Explorateur de solutions** et choisissez **ajouter** > **un nouvel élément**. Dans le volet gauche, sous le nœud c#, choisissez **données** et dans le volet central, choisissez **ADO.NET Entity Data Model**.
 
    ![Modèle Entity Framework un nouvel élément](../data-tools/media/raddata-ef-new-project-item.png)
 
@@ -72,7 +72,7 @@ Cet exemple utilise SQL Server Express LocalDB et la base de données Northwind.
 
     ![Choisissez les objets de base de données pour le modèle](../data-tools/media/raddata-choose-ef-objects.png)
 
-5. L’Assistant génère le C# classes qui représentent le modèle Entity Framework. Les classes sont simples C# classes et font ce que nous databind à l’interface utilisateur WPF. Le *.edmx* fichier décrit les relations et autres métadonnées qui associe les classes d’objets dans la base de données. Le *.tt* fichiers sont des modèles T4 qui génèrent le code qui fonctionne sur le modèle et enregistrer les modifications apportées à la base de données. Vous pouvez voir tous ces fichiers dans **l’Explorateur de solutions** sous le nœud Northwind_model :
+5. L’Assistant génère les classes c# qui représentent le modèle Entity Framework. Les classes sont plain old classes c# et qui nous sont databind à l’interface utilisateur WPF. Le *.edmx* fichier décrit les relations et autres métadonnées qui associe les classes d’objets dans la base de données. Le *.tt* fichiers sont des modèles T4 qui génèrent le code qui fonctionne sur le modèle et enregistrer les modifications apportées à la base de données. Vous pouvez voir tous ces fichiers dans **l’Explorateur de solutions** sous le nœud Northwind_model :
 
       ![Fichiers de modèle EF de l’Explorateur de solutions](../data-tools/media/raddata-solution-explorer-ef-model-files.png)
 
@@ -353,7 +353,7 @@ Ensuite, remplacez l’intégralité de la grille externe avec ce balisage :
 
 Dans les applications Windows Forms, vous obtenez un objet de BindingNavigator avec des boutons pour parcourir les lignes dans une base de données et effectuer des opérations CRUD de base. WPF ne fournit pas un BindingNavigator, mais il est assez facile de créer un. Vous le faire avec les boutons à l’intérieur d’un StackPanel horizontal et associez les boutons avec les commandes qui sont liés aux méthodes dans le code-behind.
 
-La logique de commande sur quatre parties : (1) les commandes, (2) les liaisons, (3) les boutons et (4) les gestionnaires de commandes dans le code-behind.
+Il existe des parties sur quatre à la logique de commande : (1) les commandes (2) les liaisons, (3) les boutons et (4) les gestionnaires de commandes dans le code-behind.
 
 ### <a name="add-commands-bindings-and-buttons-in-xaml"></a>Ajouter des boutons, les liaisons et les commandes dans XAML
 

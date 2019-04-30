@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3b667a6c6322a925b49290ab3234788a4eee3544
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867953"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856791"
 ---
 # <a name="whats-new-in-source-control-for-the-visual-studio-2015-sdk"></a>Quelles sont les nouveautés dans le contrôle de code Source pour le Kit de développement logiciel Visual Studio 2015
 

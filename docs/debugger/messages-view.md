@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6b20ed28518c9156e82c6fe75ecceda74c66615d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62845848"
 ---
 # <a name="messages-view"></a>Affichage Messages
 Chaque fenêtre a un flux de message associé. Une fenêtre d’affichage de Messages affiche ce flux de message. Le handle de fenêtre, le code de message et le message sont affichés. Vous pouvez créer un affichage de Messages pour un thread ou un processus. Cela vous permet de vous permet d’afficher les messages envoyés à toutes les fenêtres appartenant à un processus spécifique ou un thread, qui est particulièrement utile pour capturer les messages de l’initialisation de fenêtre.

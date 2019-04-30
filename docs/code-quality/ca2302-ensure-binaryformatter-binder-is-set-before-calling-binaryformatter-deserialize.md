@@ -11,11 +11,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: f8f2e98edd0cb1094422576b484be34f4f7ba8de
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047122"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545278"
 ---
 # <a name="ca2302-ensure-binaryformatterbinder-is-set-before-calling-binaryformatterdeserialize"></a>CA2302 : Vérifiez que BinaryFormatter.Binder est défini avant d’appeler BinaryFormatter.Deserialize
 
