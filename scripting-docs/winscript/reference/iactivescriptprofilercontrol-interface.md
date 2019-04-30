@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 86f4fb8dea97930f717800a14a27740b76eb6c2e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993057"
 ---
 # <a name="iactivescriptprofilercontrol-interface"></a>IActiveScriptProfilerControl, interface
 Implémenté par le moteur de script qui prend en charge le profilage. En règle générale, un objet qui implémente le `IActiveScriptProfilerControl` implémente également la [IActiveScript](../../winscript/reference/iactivescript.md) interface. Dans ce cas, vous pouvez obtenir un handle vers la `IActiveScriptProfilerControl` interface en appelant le `IUnknown::QueryInterface` méthode sur l’objet. L’interface fournit les méthodes nécessaires pour arrêter et démarrer le profilage sur le moteur de script.  
