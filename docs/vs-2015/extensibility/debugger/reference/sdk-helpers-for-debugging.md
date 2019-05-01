@@ -14,12 +14,12 @@ ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 16a4fca95380ad00338b2708f48f13f105a86da0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 3296613ffbe3148caa04989dfc9d609334b4c200
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435993"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Programmes d’assistance SDK pour le débogage
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "58948309"
 Ces fonctions et les déclarations sont des fonctions d’assistance globales pour l’implémentation des moteurs de débogage, les évaluateurs d’expression et les fournisseurs de symbole dans C++.  
   
 > [!NOTE]
->  Il n’existe aucune version managée de ces fonctions et les déclarations pour l’instant.  
+> Il n’existe aucune version managée de ces fonctions et les déclarations pour l’instant.  
   
 ## <a name="overview"></a>Vue d'ensemble  
  Dans l’ordre pour les moteurs de débogage, les évaluateurs d’expression et les fournisseurs de symbole à utiliser par Visual Studio, ils doivent être inscrits. Cela est effectué en définissant des sous-clés de Registre et des entrées, également appelées « mesures de paramètre ». Les fonctions globales suivantes sont conçues pour faciliter le processus de mise à jour de ces mesures. Consultez la section sur les emplacements du Registre pour déterminer la disposition de chaque sous-clé de Registre est mis à jour par ces fonctions.  
@@ -239,7 +239,7 @@ HRESULT EnumMetricSections(
  Les mesures sont lues et écrites dans le Registre, en particulier dans le `VisualStudio` sous-clé.  
   
 > [!NOTE]
->  La plupart du temps, les mesures seront écrites à la clé HKEY_LOCAL_MACHINE. Cependant, parfois HKEY_CURRENT_USER sera la clé de destination. Dbgmetric.lib gère les deux clés. Lors de l’obtention d’une mesure, il recherche HKEY_CURRENT_USER en premier, puis HKEY_LOCAL_MACHINE. Lorsqu’il configure une mesure, un paramètre spécifie la clé de niveau supérieur à utiliser.  
+> La plupart du temps, les mesures seront écrites à la clé HKEY_LOCAL_MACHINE. Cependant, parfois HKEY_CURRENT_USER sera la clé de destination. Dbgmetric.lib gère les deux clés. Lors de l’obtention d’une mesure, il recherche HKEY_CURRENT_USER en premier, puis HKEY_LOCAL_MACHINE. Lorsqu’il configure une mesure, un paramètre spécifie la clé de niveau supérieur à utiliser.  
   
  *[registry key]*\  
   
@@ -271,7 +271,7 @@ HRESULT EnumMetricSections(
 |*[valeur métrique]*|La valeur assignée à la métrique. Le type de que la valeur doit être (string), nombre, etc. dépend de la mesure.|  
   
 > [!NOTE]
->  Tous les GUID sont stockés au format `{GUID}`. Par exemple, `{123D150B-FA18-461C-B218-45B3E4589F9B}`.  
+> Tous les GUID sont stockés au format `{GUID}`. Par exemple, `{123D150B-FA18-461C-B218-45B3E4589F9B}`.  
   
 ### <a name="debug-engines"></a>Moteurs de débogage  
  Voici l’organisation des métriques de moteurs de débogage dans le Registre. `Engine` est le nom de type de métrique pour un moteur de débogage et correspond à *[type de métrique]* dans la sous-arborescence de Registre ci-dessus.  
@@ -350,7 +350,7 @@ HRESULT EnumMetricSections(
  Voici l’organisation des métriques d’évaluateur d’expression dans le Registre. `ExpressionEvaluator` est le nom de type de mesure pour l’évaluateur d’expression et correspond à *[type de métrique]*.  
   
 > [!NOTE]
->  Le type de mesure pour `ExpressionEvaluator` n’est pas défini dans dbgmetric.h, il est supposé que toutes les modifications des métriques pour les évaluateurs d’expression passera par les fonctions de métrique évaluateur expression appropriée (la disposition de la `ExpressionEvaluator` sous-clé est quelque peu compliquée, donc les détails sont masqués à l’intérieur de dbgmetric.lib).  
+> Le type de mesure pour `ExpressionEvaluator` n’est pas défini dans dbgmetric.h, il est supposé que toutes les modifications des métriques pour les évaluateurs d’expression passera par les fonctions de métrique évaluateur expression appropriée (la disposition de la `ExpressionEvaluator` sous-clé est quelque peu compliquée, donc les détails sont masqués à l’intérieur de dbgmetric.lib).  
   
  `ExpressionEvaluator`\  
   
