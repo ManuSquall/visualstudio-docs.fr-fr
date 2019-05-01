@@ -8,12 +8,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 404192923d25e3eccc0bb40064569bec3e6c6cec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ef0a8d1867114cd655f1e361cf0401dab6bce1a5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416643"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Personnalisation de l'analyse de couverture du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +69,7 @@ Par défaut, l’outil de couverture de Visual Studio Code 2012 analyse tous le
 ```  
   
 > [!WARNING]
->  La résolution de symboles peut prendre du temps, surtout lorsque vous utilisez un emplacement de fichier distant avec de nombreux assemblys. Par conséquent, envisagez de copier les fichiers distants .pdb au même emplacement local que les fichiers binaires (.dll et .exe).  
+> La résolution de symboles peut prendre du temps, surtout lorsque vous utilisez un emplacement de fichier distant avec de nombreux assemblys. Par conséquent, envisagez de copier les fichiers distants .pdb au même emplacement local que les fichiers binaires (.dll et .exe).  
   
 ### <a name="excluding-and-including"></a>Exclusion et inclusion  
  Vous pouvez exclure les assemblys spécifiés de l'analyse de couverture du code. Exemple :  
@@ -134,7 +134,7 @@ Par défaut, l’outil de couverture de Visual Studio Code 2012 analyse tous le
 ```  
   
 > [!WARNING]
->  S'il existe une erreur dans une expression régulière, telle qu'une séquence d'échappement ou une parenthèse sans correspondance, l'analyse de couverture du code ne fonctionnera pas.  
+> S'il existe une erreur dans une expression régulière, telle qu'une séquence d'échappement ou une parenthèse sans correspondance, l'analyse de couverture du code ne fonctionnera pas.  
   
 ### <a name="other-ways-to-include-or-exclude-elements"></a>Autres façons d'inclure ou d'exclure des éléments  
  Consultez la [section d’exemples à la fin de cette rubrique](#sample) pour obtenir des exemples.  
