@@ -348,7 +348,7 @@ ms.locfileid: "63430039"
  Des liens hypertexte sont bien adaptés aux actions de navigation telles que l’ouverture d’une rubrique d’aide, boîte de dialogue modale ou l’Assistant. Si un lien hypertexte est utilisé pour une commande, il doit toujours afficher une modification visible et sensible à l’interface utilisateur. En règle générale, les actions de validation à une action (par exemple, enregistrer, Annuler et supprimer) sont communiquées mieux à l’aide d’un bouton.
 
 #### <a name="writing-style"></a>Style d’écriture
- Suivez le [conseils Windows Desktop pour le texte de l’interface utilisateur](https://msdn.microsoft.com/library/windows/desktop/dn742478\(v=vs.85\).aspx). N’utilisez pas « En savoir plus à propos, » « Dire me plus sur » ou « Get help avec ce » formulation. Au lieu de cela, une expression texte de lien d’aide en termes de la question principale ayant obtenu une réponse par le contenu d’aide. Par exemple, «**comment ajouter un serveur à l’Explorateur de serveurs ?**»
+ Suivez le [conseils Windows Desktop pour le texte de l’interface utilisateur](https://msdn.microsoft.com/library/windows/desktop/dn742478\(v=vs.85\).aspx). N’utilisez pas « En savoir plus à propos, » « Dire me plus sur » ou « Get help avec ce » formulation. Au lieu de cela, une expression texte de lien d’aide en termes de la question principale ayant obtenu une réponse par le contenu d’aide. Par exemple, « **comment ajouter un serveur à l’Explorateur de serveurs ?** »
 
 #### <a name="visual-style"></a>Style visuel
 
