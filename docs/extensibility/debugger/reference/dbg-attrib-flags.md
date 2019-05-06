@@ -14,7 +14,7 @@ ms.workload:
 - vssdk
 ms.openlocfilehash: 831d1326d88e70ffaba2cc0c242c55d7325be705
 ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: fr-FR
 ms.lasthandoff: 02/22/2019
 ms.locfileid: "56689328"
@@ -254,7 +254,7 @@ public const int DBG_ATTRIB_MULTI_CUSTOM_VIEWERS = 0x0001000000000000
 ## <a name="remarks"></a>Notes
 
 > [!NOTE]
->  Les valeurs dans cette énumération ne sont pas réellement définies dans l’assembly pour c#. Au lieu de cela, vous devez copier les définitions dans votre fichier source.
+>  Les valeurs dans cette énumération ne sont pas réellement définies dans l’assembly pour C#. Au lieu de cela, vous devez copier les définitions dans votre fichier source.
 
  Ces indicateurs sont également utilisés pour filtrer les enfants d’un objet, par exemple, quand il est passé en tant qu’argument à [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md). Les valeurs peuvent être combinées avec un opérateur de bits `OR`.
 
