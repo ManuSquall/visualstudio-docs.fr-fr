@@ -19,15 +19,17 @@
 - name: Guides pratiques
   items:
     - name: "Projets\_R"
-      href: r-projects-in-visual-studio.md
       items:
+        - name: "Projets\_R"
+          href: r-projects-in-visual-studio.md
         - name: Gestionnaire de package
           href: r-package-manager-in-visual-studio.md
         - name: Intégration de SQL Server
           href: integrating-sql-server-with-r.md
     - name: Modification du code
-      href: editing-r-code-in-visual-studio.md
       items:
+        - name: Modification du code
+          href: editing-r-code-in-visual-studio.md
         - name: IntelliSense
           href: r-intellisense.md
         - name: Vérification lint
@@ -35,8 +37,9 @@
         - name: Extraits de code
           href: code-snippets-for-r.md
     - name: Espaces de travail (locaux et distants)
-      href: r-workspaces-in-visual-studio.md
       items:
+        - name: Espaces de travail (locaux et distants)
+          href: r-workspaces-in-visual-studio.md
         - name: Configuration des espaces de travail distants
           href: setting-up-remote-r-workspaces.md
         - name: Service R à distance pour Linux

@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 370ee63ff31bcb0eeba82fbb55fd37166de7ff52
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e800d8d57d34c0ed99cb3cfa9a3f6a7b871a034d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869042"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458608"
 ---
 # <a name="idebugsettingscallback2geteemetricfile"></a>IDebugSettingsCallback2::GetEEMetricFile
 Récupère le fichier de métrique évaluateur expression étant donné le nom ou la mesure.
@@ -40,20 +43,20 @@ private int GetEEMetricFile(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `guidLang`
+## <a name="parameters"></a>Paramètres
+ `guidLang`\
 
  [in] Identificateur unique du langage de programmation.
 
- `guidVendor`
+ `guidVendor`\
 
  [in] Identificateur unique du fournisseur.
 
- `pszMetric`
+ `pszMetric`\
 
  [in] Nom de la mesure.
 
- `pbstrValue`
+ `pbstrValue`\
 
  [out] Retourne le contenu du fichier métrique sous forme de chaîne.
 

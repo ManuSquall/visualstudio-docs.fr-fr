@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a7b28010f117b1bb6616250f1e188bd5acb38cda
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 77306706c15be37a975742be917523095bec587f
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915858"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226440"
 ---
 # <a name="idebugsymbolprovidergetaddressesfromcontext"></a>IDebugSymbolProvider::GetAddressesFromContext
 Cette méthode mappe un contexte de document dans un tableau d’adresses de débogage.
@@ -42,20 +45,20 @@ int GetAddressesFromContext(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pDocContext`
+## <a name="parameters"></a>Paramètres
+ `pDocContext`\
 
  [in] Le contexte du document.
 
- `fStatmentOnly`
+ `fStatmentOnly`\
 
  [in] Si la valeur est TRUE, limite les adresses de débogage à une seule instruction.
 
- `ppEnumBegAddresses`
+ `ppEnumBegAddresses`\
 
  [out] Retourne un énumérateur pour les adresses de débogage début associé à cette instruction ou de la ligne.
 
- `ppEnumEndAddresses`
+ `ppEnumEndAddresses`\
 
  [out] Retourne un [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md) énumérateur pour les adresses de débogage fin associée à cette instruction ou de la ligne.
 

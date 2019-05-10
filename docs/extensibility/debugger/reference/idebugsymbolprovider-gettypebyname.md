@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98ba8c20be22a6f6a9a990f9de042ac2dab4c72a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b1bf9ac39628ff9615e158511a8a1afa0af46c3c
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868501"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226382"
 ---
 # <a name="idebugsymbolprovidergettypebyname"></a>IDebugSymbolProvider::GetTypeByName
 Cette méthode mappe un nom de symbole à un type de symbole.
@@ -40,16 +43,16 @@ int GetTypeByName(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pszClassName`
+## <a name="parameters"></a>Paramètres
+ `pszClassName`\
 
  [in] Le nom du symbole.
 
- `nameMatch`
+ `nameMatch`\
 
  [in] Sélectionne le type de correspondance, par exemple, respect de la casse. Une valeur comprise entre le [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) énumération.
 
- `ppField`
+ `ppField`\
 
  [out] Retourne le type de symbole qu’un [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) objet.
 

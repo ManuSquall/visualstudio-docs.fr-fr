@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22d95914ea3366578cb401c304ac52aa5db5e5a1
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b9cdf108aa196e899da6188212708bacb3e147ff
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916256"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458632"
 ---
 # <a name="idebugsettingscallback2geteelocalobject"></a>IDebugSettingsCallback2::GetEELocalObject
 Récupère un objet local évaluateur d’expression étant donné le nom de la mesure.
@@ -40,20 +43,20 @@ private int GetEELocalObject(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `guidLang`
+## <a name="parameters"></a>Paramètres
+ `guidLang`\
 
  [in] Identificateur unique du langage de programmation.
 
- `guidVendor`
+ `guidVendor`\
 
  [in] Identificateur unique du fournisseur.
 
- `pszMetric`
+ `pszMetric`\
 
  [in] Nom de la mesure.
 
- `ppUnk`
+ `ppUnk`\
 
  [out] Retourne l’expression objet local évaluateur.
 

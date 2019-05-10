@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cfe4b81f455f9efb5ee03b9c3db5f189cf19e176
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: fa66f61c7e72f1c629fe664baf2c2a5dcc9631e2
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869532"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458890"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 Obtient les informations étendues pour la propriété.
@@ -38,12 +41,12 @@ int GetExtendedInfo ( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `guidExtendedInfo`
+## <a name="parameters"></a>Paramètres
+ `guidExtendedInfo`\
 
  [in] GUID qui détermine le type d’informations étendues à récupérer. Pour plus d’informations, consultez la section Notes.
 
- `pExtendedInfo`
+ `pExtendedInfo`\
 
  [out] Retourne un `VARIANT` (C++) ou un objet (C#) qui peut être utilisé pour récupérer les informations de propriété étendue. Par exemple, ce paramètre peut retourner un `IUnknown` interface qui peut être interrogé pour une [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) interface. Pour plus d’informations, consultez la section Notes.
 
@@ -55,7 +58,7 @@ int GetExtendedInfo ( 
 
  Les GUID suivantes sont généralement reconnus par cette méthode (les valeurs GUID sont spécifiés pour c#, car le nom n’est pas disponible dans n’importe quel assembly). GUID supplémentaires peut être créés pour un usage interne.
 
-|Nom|GUID|Description|
+|Name|GUID|Description|
 |----------|----------|-----------------|
 |guidDocument|{3f98de84-fee9-11d0-b47f-00a0244a1dd2}|Retourne un `IUnknown` interface au document. En règle générale, le [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) interface peut être obtenue à partir de ce `IUnknown` interface.|
 |guidCodeContext|{e2fc65e-56ce-11d1-b528-00aax004a8797}|Retourne un `IUnknown` interface pour le contexte du document. En règle générale, le [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) interface peut être obtenue à partir de ce `IUnknown` interface.|

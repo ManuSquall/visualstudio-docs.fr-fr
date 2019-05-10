@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: faa7263c3f5fa86a77c94271dec1b429d2f00543
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 6226463ff16cc1415b99c3b06973ae8f580688a1
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869774"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458964"
 ---
 # <a name="idebugprogrampublisher2setdebuggerpresent"></a>IDebugProgramPublisher2::SetDebuggerPresent
 Indique le serveur de publication du programme qu’un débogueur est présent et en cours d’exécution.
@@ -36,8 +39,8 @@ int SetDebuggerPresent(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `fDebuggerPresent`
+## <a name="parameters"></a>Paramètres
+ `fDebuggerPresent`\
 
  [in] Valeur différente de zéro (`TRUE`) si un débogueur est présent, zéro (`FALSE`) si elle n’est pas.
 

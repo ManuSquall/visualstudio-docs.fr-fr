@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c8c447ce6b202fc3ccca65c6725e9eb3e5f13ecf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 8b0cd5939bf91a3f154cf28434f561ed93b1a597
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62982249"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226672"
 ---
 # <a name="use-wpf-controls-in-office-solutions"></a>Utiliser des contrôles WPF dans les solutions Office
 
@@ -55,7 +55,7 @@ Vous ne pouvez pas ajouter des contrôles WPF directement aux éléments d'inter
 
     - Pour les zones de formulaire, ajoutez un **zone de formulaire Outlook** élément au projet. Pour plus d'informations, voir [Procédure : Ajouter une zone de formulaire à un projet de complément Outlook](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md).
 
-    - Pour les volets actions, ajoutez un **contrôle de volet Actions** ou **contrôle utilisateur** élément au projet. Pour plus d'informations, voir [Procédure : Ajouter un volet actions à des documents Word ou de classeurs Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md) et [Comment : Ajouter un volet actions à des documents Word ou de classeurs Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
+    - Pour les volets actions, ajoutez un **contrôle de volet Actions** ou **contrôle utilisateur** élément au projet. Pour plus d'informations, voir [Procédure : Ajouter un volet actions à des documents Word ou de classeurs Excel](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md).
 
     - Pour les volets de tâches personnalisés, ajoutez un **contrôle utilisateur** élément au projet. Pour plus d'informations, voir [Procédure : Ajouter un volet Office personnalisé à une application](../vsto/how-to-add-a-custom-task-pane-to-an-application.md).
 

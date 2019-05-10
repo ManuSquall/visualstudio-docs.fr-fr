@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d021efe197fcc15c99a1138d75e1343fc092efde
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: d4013cabe43693e52498a3094aee10e4786da43a
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865063"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460804"
 ---
 # <a name="providerprocessdata"></a>PROVIDER_PROCESS_DATA
 Cette structure fournit des informations sur les processus en cours d’exécution sur un ordinateur.
@@ -41,11 +44,14 @@ public struct PROVIDER_PROCESS_DATA {
 ```
 
 ## <a name="members"></a>Membres
- Champs d’une combinaison d’indicateurs de la [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md) énumération, indiquant quels champs sont renseignés.
+ `Fields`\
+ Une combinaison d’indicateurs de la [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md) énumération, indiquant quels champs sont renseignés.
 
- ProgramNodes A [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md) structure qui contient un tableau de nœuds de programme.
+ `ProgramNodes`\
+ Un [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md) structure qui contient un tableau de nœuds de programme.
 
- fIsDebuggerPresent valeur différente de zéro (`TRUE`) si le [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] débogueur est en cours d’exécution, zéro (`FALSE`) si elle n’est pas.
+ `fIsDebuggerPresent`\
+ Différent de zéro (`TRUE`) si le [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] débogueur est en cours d’exécution, zéro (`FALSE`) si elle n’est pas.
 
 ## <a name="remarks"></a>Notes
  Cette structure est passée à la [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) méthode où il est renseigné.

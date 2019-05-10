@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f0aafc5b41d9020c80cd2b86c9048db1d333bfd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 08d50e3d3ddda55a7ff0f3fea333c5408b02878a
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865438"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461030"
 ---
 # <a name="objecttype"></a>OBJECT_TYPE
 Spécifie le type d’un objet à partir de l’évaluateur d’expression.
@@ -65,36 +68,51 @@ public enum enum_OBJECT_TYPE { 
 };
 ```
 
-## <a name="members"></a>Membres
- OBJECT_TYPE_BOOLEAN indique que l’objet est une valeur booléenne.
+## <a name="fields"></a>Champs
+ `OBJECT_TYPE_BOOLEAN`\
+ Indique que l’objet est une valeur booléenne.
 
- OBJECT_TYPE_CHAR indique que l’objet est un caractère.
+ `OBJECT_TYPE_CHAR`\
+ Indique que l’objet est un caractère.
 
- OBJECT_TYPE_I1 indique que l’objet est un entier signé de 1 octet.
+ `OBJECT_TYPE_I1`\
+ Indique que l’objet est un entier signé de 1 octet.
 
- OBJECT_TYPE_U1 indique que l’objet est un entier non signé sur un octet.
+ `OBJECT_TYPE_U1`\
+ Indique que l’objet est un entier non signé sur un octet.
 
- OBJECT_TYPE_I2 indique que l’objet est un entier signé de 2 octets.
+ `OBJECT_TYPE_I2`\
+ Indique que l’objet est un entier signé de 2 octets.
 
- OBJECT_TYPE_U2 indique que l’objet est un entier non signé de 2 octets.
+ `OBJECT_TYPE_U2`\
+ Indique que l’objet est un entier non signé de 2 octets.
 
- OBJECT_TYPE_I4 indique que l’objet est un entier signé de 4 octets.
+ `OBJECT_TYPE_I4`\
+ Indique que l’objet est un entier signé de 4 octets.
 
- OBJECT_TYPE_U4 indique que l’objet est un entier non signé de 4 octets.
+ `OBJECT_TYPE_U4`\
+ Indique que l’objet est un entier non signé de 4 octets.
 
- OBJECT_TYPE_I8 indique que l’objet est un entier signé de 8 octets.
+ `OBJECT_TYPE_I8`\
+ Indique que l’objet est un entier signé de 8 octets.
 
- OBJECT_TYPE_U8 indique que l’objet est un entier non signé de 8 octets.
+ `OBJECT_TYPE_U8`\
+ Indique que l’objet est un entier non signé de 8 octets.
 
- OBJECT_TYPE_R4 indique que l’objet est un nombre à virgule flottante de 4 octets.
+ `OBJECT_TYPE_R4`\
+ Indique que l’objet est un nombre à virgule flottante de 4 octets.
 
- OBJECT_TYPE_R8 indique que l’objet est un nombre à virgule flottante de 8 octets.
+ `OBJECT_TYPE_R8`\
+ Indique que l’objet est un nombre à virgule flottante de 8 octets.
 
- OBJECT_TYPE_OBJECT indique que l’objet est un objet.
+ `OBJECT_TYPE_OBJECT`\
+ Indique que l’objet est un objet.
 
- OBJECT_TYPE_NULL indique que l’objet est NULL.
+ `OBJECT_TYPE_NULL`\
+ Indique que l’objet est NULL.
 
- OBJECT_TYPE_CLASS indique que l’objet est une classe.
+ `OBJECT_TYPE_CLASS`\
+ Indique que l’objet est une classe.
 
 ## <a name="remarks"></a>Notes
  Passé en tant qu’argument à la [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) et [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) méthodes.

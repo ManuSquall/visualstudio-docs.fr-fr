@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56eb23466d0364cbe22046bbb36be593a83a0998
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 00c78b4390d519cb8b37d0af17e1e61a8127d080
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869665"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458927"
 ---
 # <a name="idebugprogrampublisher2unpublishprogramnode"></a>IDebugProgramPublisher2::UnpublishProgramNode
 Supprime un nœud de programme spécifié à partir de la disponibilité pour déboguer les moteurs (DEs) et le Gestionnaire de session de débogage (SDM).
@@ -36,8 +39,8 @@ int UnpublishProgramNode(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pProgramNode`
+## <a name="parameters"></a>Paramètres
+ `pProgramNode`\
 
  [in] Un [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objet qui représente le nœud de programme en cours de suppression.
 

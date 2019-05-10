@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4302a911e58a23bdcd58bb054c1fc90c389fed6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: dba231f173f3828243e284a7d68a877204df1bd0
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865451"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458021"
 ---
 # <a name="moduleinfofields"></a>MODULE_INFO_FIELDS
 Spécifie les indicateurs pour les informations de module de débogage.
@@ -61,32 +64,45 @@ public enum enum_MODULE_INFO_FIELDS { 
 };
 ```
 
-## <a name="members"></a>Membres
- MIF_NONE Initialize/utiliser aucun des champs dans la structure.
+## <a name="fields"></a>Champs
+ `MIF_NONE`\
+ Initialize/utiliser aucun des champs dans la structure.
 
- MIF_NAME Initialize/utiliser le `m_bstrName` champ dans le [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) structure.
+ `MIF_NAME`\
+ Initialize/utiliser le `m_bstrName` champ dans le [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) structure.
 
- MIF_URL Initialize/utiliser le `m_bstrUrl` champ dans le `MODULE_INFO` structure.
+ `MIF_URL`\
+ Initialize/utiliser le `m_bstrUrl` champ dans le `MODULE_INFO` structure.
 
- MIF_VERSION Initialize/utiliser le `m_bstrVersion` champ dans le `MODULE_INFO` structure.
+ `MIF_VERSION`\
+ Initialize/utiliser le `m_bstrVersion` champ dans le `MODULE_INFO` structure.
 
- MIF_DEBUGMESSAGE Initialize/utiliser le `m_bstrDebugMessage` champ dans le `MODULE_INFO` structure.
+ `MIF_DEBUGMESSAGE`\
+ Initialize/utiliser le `m_bstrDebugMessage` champ dans le `MODULE_INFO` structure.
 
- MIF_LOADADDRESS Initialize/utiliser le `m_addrLoadAddress` champ dans le `MODULE_INFO` structure.
+ `MIF_LOADADDRESS`\
+ Initialize/utiliser le `m_addrLoadAddress` champ dans le `MODULE_INFO` structure.
 
- MIF_PREFFEREDADDRESS Initialize/utiliser le `m_addrPreferredLoadAddress` champ dans le `MODULE_INFO` structure.
+ `MIF_PREFFEREDADDRESS`\
+ Initialize/utiliser le `m_addrPreferredLoadAddress` champ dans le `MODULE_INFO` structure.
 
- MIF_SIZE Initialize/utiliser le `m_dwSize` champ dans le `MODULE_INFO` structure.
+ `MIF_SIZE`\
+ Initialize/utiliser le `m_dwSize` champ dans le `MODULE_INFO` structure.
 
- MIF_LOADORDER Initialize/utiliser le `m_dwLoadOrder` champ dans le `MODULE_INFO` structure.
+ `MIF_LOADORDER`\
+ Initialize/utiliser le `m_dwLoadOrder` champ dans le `MODULE_INFO` structure.
 
- MIF_TIMESTAMP Initialize/utiliser le `m_TimeStamp` champ dans le `MODULE_INFO` structure.
+ `MIF_TIMESTAMP`\
+ Initialize/utiliser le `m_TimeStamp` champ dans le `MODULE_INFO` structure.
 
- MIF_URLSYMBOLLOCATION Initialize/utiliser le `m_bstrUrlSymbolLocation` champ dans le `MODULE_INFO` structure.
+ `MIF_URLSYMBOLLOCATION`\
+ Initialize/utiliser le `m_bstrUrlSymbolLocation` champ dans le `MODULE_INFO` structure.
 
- MIF_FLAGS Initialize/utiliser le `m_dwModuleFlags` champ dans le `MODULE_INFO` structure.
+ `MIF_FLAGS`\
+ Initialize/utiliser le `m_dwModuleFlags` champ dans le `MODULE_INFO` structure.
 
- MIF_ALLFIELDS Initialize/utiliser tous les champs dans le `MODULE_INFO` structure.
+ `MIF_ALLFIELDS`\
+ Initialize/utiliser tous les champs dans le `MODULE_INFO` structure.
 
 ## <a name="remarks"></a>Notes
  Ces valeurs sont passées en tant qu’argument à la [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) méthode pour indiquer les champs de la [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) structure doivent être initialisées.

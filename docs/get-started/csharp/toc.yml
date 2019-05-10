@@ -1,6 +1,7 @@
 - name: 'Didacticiels C#'
-  href: index.yml
   items:
+    - name: 'Didacticiels C#'
+      href: index.yml
     - name: Vue d'ensemble
       items:
         - name: À propos de Visual Studio
