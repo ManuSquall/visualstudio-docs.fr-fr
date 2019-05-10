@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d0a24301f7571225ed1002ce4e331f29fd4d77c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7f2e31e74ba89c30cfbacc46d1b72428372191ae
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62824138"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476591"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Scénario : Changer votre conception à l’aide des outils de visualisation et de modélisation
 
@@ -116,7 +116,7 @@ Les deux équipes utilisent également la validation de dépendance pour vous as
 
 Il n’y a pas d’ordre impératif pour l’utilisation des diagrammes de modélisation Visual Studio. Vous pouvez donc les utiliser comme vous le voulez, en fonction de vos besoins ou de votre approche. En règle générale, les équipes revoient leurs modèles de façon répétée et fréquente au cours d’un projet. Chaque diagramme possède ses propres atouts pour vous aider à comprendre, décrire et communiquer différents aspects du système en cours de développement.
 
-Les sociétés Dinner Now et Lucerne communiquent entre elles et avec les parties prenantes des projets en utilisant des diagrammes comme langage commun. Par exemple, Dinner Now utilise des diagrammes pour effectuer ces tâches :
+Dinner Now et Lucerne communiquent entre eux et avec les parties prenantes du projet à l’aide de diagrammes comme langage commun. Par exemple, Dinner Now utilise des diagrammes pour effectuer ces tâches :
 
 - visualiser le code existant ;
 
@@ -172,11 +172,11 @@ Dinner Now doit estimer le coût de réalisation pour remplir le nouveau besoin.
 
 |**Diagramme**|**Éléments décrits**|
 |-|-|
-|*Diagramme de dépendances*<br /><br /> Consultez :<br /><br /> - [Créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagrammes de dépendance : Référence](../modeling/layer-diagrams-reference.md)<br />- [Diagrammes de dépendance : Recommandations](../modeling/layer-diagrams-guidelines.md)<br />- [Valider du code avec des diagrammes de dépendance](../modeling/validate-code-with-layer-diagrams.md)|Architecture logique du code.<br /><br /> Un diagramme de dépendances organise et associe les artefacts dans une solution Visual Studio pour groupes abstraits appelés *couches*. Ces couches identifient les rôles, les tâches ou les fonctions que ces artefacts effectuent dans le système.<br /><br /> Les diagrammes de couche sont utiles pour décrire la conception prévue du système et valider le code en constante évolution par rapport à cette conception.<br /><br /> Pour créer des couches, faites glisser des éléments à partir de l’Explorateur de solutions, des cartes de code, de l’affichage de classes et de l’Explorateur d’objets. Pour dessiner de nouvelles couches, utilisez la boîte à outils ou cliquez avec le bouton droit sur la surface du diagramme.<br /><br /> Pour afficher les dépendances existantes, cliquez avec le bouton droit sur la surface du diagramme de couche, puis cliquez sur **Générer des dépendances**. Pour spécifier les dépendances prévues, dessinez de nouvelles dépendances.|
+|*Diagramme de dépendances*<br /><br /> Consultez :<br /><br /> - [Créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagrammes de dépendance : Référence](../modeling/layer-diagrams-reference.md)<br />- [Diagrammes de dépendance : Recommandations](../modeling/layer-diagrams-guidelines.md)<br />- [Valider du code avec des diagrammes de dépendance](../modeling/validate-code-with-layer-diagrams.md)|Architecture logique du code.<br /><br /> Un diagramme de dépendances organise et associe les artefacts dans une solution Visual Studio pour groupes abstraits appelés *couches*. Ces couches identifient les rôles, les tâches ou les fonctions que ces artefacts effectuent dans le système.<br /><br /> Diagrammes de dépendance sont utiles pour décrire la conception prévue du système et valider du code en constante évolution par rapport à cette conception.<br /><br /> Pour créer des couches, faites glisser des éléments à partir de l’Explorateur de solutions, des cartes de code, de l’affichage de classes et de l’Explorateur d’objets. Pour dessiner de nouvelles couches, utilisez la boîte à outils ou cliquez avec le bouton droit sur la surface du diagramme.<br /><br /> Pour afficher les dépendances existantes, avec le bouton droit de la surface du diagramme dépendance, puis cliquez sur **générer des dépendances**. Pour spécifier les dépendances prévues, dessinez de nouvelles dépendances.|
 
- Par exemple, le diagramme de dépendance suivant décrit les dépendances entre les couches et le nombre d’artefacts qui sont associés à chaque couche :
+Par exemple, le diagramme de dépendance suivant décrit les dépendances entre les couches et le nombre d’artefacts qui sont associés à chaque couche :
 
- ![Diagramme de dépendances de système de paiement intégré](../modeling/media/layer_integrated_dnlucerne.png)
+![Diagramme de dépendances de système de paiement intégré](../modeling/media/layer_integrated_dnlucerne.png)
 
  **Diagramme de dépendances**
 
@@ -194,7 +194,7 @@ Consultez :
 
 - La plupart des diagrammes sont constitués de nœuds connectés par des lignes. Pour chaque type de diagramme, la boîte à outils fournit différents types de nœuds et de lignes.
 
-     Pour ouvrir la boîte à outils, dans le menu **Affichage** , cliquez sur **Boîte à outils**.
+   Pour ouvrir la boîte à outils, dans le menu **Affichage** , cliquez sur **Boîte à outils**.
 
 - Pour créer un nœud, faites-le glisser de la boîte à outils vers le diagramme. Certains types de nœuds doivent être déplacés vers des nœuds existants. Par exemple, sur un diagramme de composant, un nouveau port doit être ajouté à un composant existant.
 
@@ -206,7 +206,7 @@ Des diagrammes de modélisation Visual Studio sont intégrés à Team Foundation
 
 Au fur et à mesure que le travail avance, les équipes mettent à jour leurs éléments de travail pour prendre en compte le temps dévolu à leurs tâches. Elles surveillent et signalent également l’état de leur travail en utilisant les fonctionnalités Team Foundation Server suivantes :
 
-- Des *rapports d’avancement* quotidiens qui indiquent si les équipes vont effectuer le travail planifié dans le temps imparti. Les équipes génèrent d’autres rapports similaires à partir de Team Foundation Server pour suivre la progression des bogues.
+- Quotidienne *rapports d’avancement* qui indiquent si les équipes vont effectuer le travail planifié dans le temps imparti. Les équipes génèrent d’autres rapports similaires à partir de Team Foundation Server pour suivre la progression des bogues.
 
 - Une *feuille de calcul d’itération* qui utilise Microsoft Excel pour aider les équipes à surveiller et équilibrer la charge de travail entre ses membres. Cette feuille de calcul est liée à Team Foundation Server et fournit le thème de discussion lors des réunions d’avancement régulières.
 
@@ -329,7 +329,7 @@ Cette carte montre que la classe PaymentApprover se trouve maintenant dans l’e
 
 |**Diagramme**|**Éléments décrits**|
 |-|-|
-|Diagramme de dépendances|L’architecture logique du système. Utiliser la validation de dépendance pour vous assurer que le code reste cohérent avec la conception.<br /><br /> Pour vous aider à identifier dependencys existantes ou prévues dependencys, créez une carte de code et regroupez les éléments connexes. Pour créer un diagramme de dépendances, consultez :<br /><br /> - [Créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagrammes de dépendance : Recommandations](../modeling/layer-diagrams-guidelines.md)|
+|Diagramme de dépendances|L’architecture logique du système. Utiliser la validation de dépendance pour vous assurer que le code reste cohérent avec la conception.<br /><br /> Pour vous aider à identifier les dépendances existantes ou les dépendances prévues, créez une carte de code et regroupez les éléments connexes. Pour créer un diagramme de dépendances, consultez :<br /><br /> - [Créer des diagrammes de dépendance à partir de votre code](../modeling/create-layer-diagrams-from-your-code.md)<br />- [Diagrammes de dépendance : Recommandations](../modeling/layer-diagrams-guidelines.md)|
 |Diagramme de classes (basé sur le code)|Classes existantes dans le code d’un projet spécifique.<br /><br /> Pour visualiser et modifier une classe existante dans le code, utilisez le Concepteur de classes.<br /><br /> Voir [Guide pratique pour Ajouter des diagrammes de classes aux projets (Concepteur de classes)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md).|
 
 ### <a name="DefineClasses"></a> Définir un glossaire des Types : Diagrammes de classes

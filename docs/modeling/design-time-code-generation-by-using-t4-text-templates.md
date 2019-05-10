@@ -15,24 +15,25 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d1d13c071d8eb291a857dd0afc3da664b0ddca7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 8422b32398c99f33575bb03923e1025207e5956e
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435322"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476705"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Génération de code durant la conception à l'aide de modèles de texte T4
+
 Modèles de texte T4 au moment du design vous permettent de générer du code de programme et d’autres fichiers dans votre projet Visual Studio. En règle générale, vous écrivez les modèles pour qu’ils varient le code qu’ils génèrent en fonction des données à partir d’un *modèle*. Un modèle est un fichier ou une base de données qui contient des informations clés sur les exigences de votre application.
 
- Par exemple, vous pourriez avoir un modèle qui définit un flux de travail sous la forme d'un tableau ou d'un diagramme. À partir du modèle, vous pouvez générer le logiciel qui exécute le flux de travail. Lorsque les besoins de vos utilisateurs changent, il est facile de discuter du nouveau flux de travail avec les utilisateurs. La regénération du code à partir du flux de travail est plus fiable que la mise à jour manuelle du code.
+Par exemple, vous pourriez avoir un modèle qui définit un flux de travail sous la forme d'un tableau ou d'un diagramme. À partir du modèle, vous pouvez générer le logiciel qui exécute le flux de travail. Lorsque les besoins de vos utilisateurs changent, il est facile de discuter du nouveau flux de travail avec les utilisateurs. La regénération du code à partir du flux de travail est plus fiable que la mise à jour manuelle du code.
 
 > [!NOTE]
 > Un *modèle* est une source de données qui décrit un aspect particulier d’une application. Il peut assumer n'importe quelle forme, dans n'importe quel genre de fichier ou de base de données. Il n’est pas obligatoire qu’il soit dans un format spécifique, tel qu’un modèle UML ou un modèle de langage spécifique à un domaine. Les modèles les plus courants assument la forme de tableaux ou de fichiers XML.
 
- Vous connaissez sans doute déjà le concept de génération de code. Lorsque vous définissez des ressources dans un **.resx** fichier dans votre solution Visual Studio, un ensemble de classes et méthodes est généré automatiquement. Le fichier de ressources simplifie et rend plus fiable la modification des ressources, par rapport à la modification manuelle des classes et des méthodes. Avec les modèles de texte, vous pouvez générer du code de la même façon à partir d'une source que vous avez conçue vous-même.
+Vous connaissez sans doute déjà le concept de génération de code. Lorsque vous définissez des ressources dans un **.resx** fichier dans votre solution Visual Studio, un ensemble de classes et méthodes est généré automatiquement. Le fichier de ressources simplifie et rend plus fiable la modification des ressources, par rapport à la modification manuelle des classes et des méthodes. Avec les modèles de texte, vous pouvez générer du code de la même façon à partir d'une source que vous avez conçue vous-même.
 
- Un modèle de texte contient une combinaison du texte que vous souhaitez générer et du code de programme qui génère des parties variables du texte. Le code de programme vous permet de répéter ou omettre les parties du texte généré de manière conditionnelle. Le texte généré peut lui-même être du code de programme qui constituera une partie de votre application.
+Un modèle de texte contient une combinaison du texte que vous souhaitez générer et du code de programme qui génère des parties variables du texte. Le code de programme vous permet de répéter ou omettre les parties du texte généré de manière conditionnelle. Le texte généré peut lui-même être du code de programme qui constituera une partie de votre application.
 
 ## <a name="create-a-design-time-t4-text-template"></a>Créer un modèle de texte T4 au moment du Design
 
@@ -119,7 +120,8 @@ Les modèles de texte vous permettent d'utiliser du code de programme pour varie
    Si vous écrivez le code généré en [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)], la directive `template` doit contenir `language="VB"`. `"C#"` est la valeur par défaut.
 
 ## <a name="debugging-a-design-time-t4-text-template"></a>Débogage d'un modèle de texte T4 au moment de la conception
- Pour déboguer un modèle de texte
+
+Pour déboguer un modèle de texte
 
 - Insérez `debug="true"` dans la directive `template`. Exemple :
 
@@ -129,7 +131,7 @@ Les modèles de texte vous permettent d'utiliser du code de programme pour varie
 
 - Choisissez **déboguer le modèle T4** dans le menu contextuel du fichier de modèle de texte dans l’Explorateur de solutions.
 
-  Le modèle s'exécute et s'arrête aux points d'arrêt. Vous pouvez examiner les variables et parcourir le code de manière normale.
+   Le modèle s’exécute et s’arrête sur les points d’arrêt. Vous pouvez examiner les variables et parcourir le code de manière normale.
 
 > [!TIP]
 > Avec `debug="true"`, le mappage du code généré au modèle de texte est plus précis car davantage de directives de numérotation de lignes sont insérées dans le code généré. Si vous ne le spécifiez pas, les points d'arrêt risquent d'arrêter l'exécution dans l'état incorrect.
@@ -137,9 +139,10 @@ Les modèles de texte vous permettent d'utiliser du code de programme pour varie
 > Mais vous pouvez laisser la clause dans la directive de modèle même quand vous ne déboguez pas. Cela ne provoque qu'une très faible dégradation des performances.
 
 ## <a name="generating-code-or-resources-for-your-solution"></a>Génération de code ou de ressources pour votre solution
- Vous pouvez générer des fichiers programmes qui varient en fonction d'un modèle. Un modèle est une entrée telle qu'une base de données, un fichier de configuration, un modèle UML, un modèle DSL ou autre source. Généralement, vous générez plusieurs fichiers de programme à partir du même modèle. Pour cela, vous devez créer un fichier de modèle pour chaque fichier programme généré et faire en sorte que tous les modèles lisent le même modèle.
 
-#### <a name="to-generate-program-code-or-resources"></a>Pour générer du code de programme ou des ressources
+Vous pouvez générer des fichiers programmes qui varient en fonction d'un modèle. Un modèle est une entrée telle qu'une base de données, un fichier de configuration, un modèle UML, un modèle DSL ou autre source. Généralement, vous générez plusieurs fichiers de programme à partir du même modèle. Pour cela, vous devez créer un fichier de modèle pour chaque fichier programme généré et faire en sorte que tous les modèles lisent le même modèle.
+
+### <a name="to-generate-program-code-or-resources"></a>Pour générer du code de programme ou des ressources
 
 1. Modifiez la directive de sortie pour générer un fichier du type approprié, tel que .cs, .vb, .resx ou .xml.
 
@@ -187,14 +190,16 @@ Les modèles de texte vous permettent d'utiliser du code de programme pour varie
     ```
 
 ### <a name="generating-code-and-generated-text"></a>Génération de code et texte généré
- Quand vous générez du code de programme, vous devez éviter toute confusion entre le code de génération qui s'exécute dans votre modèle et le code généré résultant qui devient partie intégrante de votre solution. Il n'est pas obligatoire que les deux langages soient identiques.
 
- L'exemple précédent comporte deux versions. Dans une version, le code de génération est en C#. Dans l'autre version, le code de génération est en Visual Basic. Mais le texte généré par ces deux versions est identique et il s'agit d'une classe C#.
+Quand vous générez du code de programme, vous devez éviter toute confusion entre le code de génération qui s'exécute dans votre modèle et le code généré résultant qui devient partie intégrante de votre solution. Il n'est pas obligatoire que les deux langages soient identiques.
 
- De la même manière, vous pourriez utiliser un modèle [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] pour générer du code dans n'importe quel langage. Il n'est pas obligatoire que le texte généré soit dans un langage spécifique et il n'est pas obligatoire que ce soit du code de programme.
+L'exemple précédent comporte deux versions. Dans une version, le code de génération est en C#. Dans l'autre version, le code de génération est en Visual Basic. Mais le texte généré par ces deux versions est identique et il s'agit d'une classe C#.
+
+De la même manière, vous pourriez utiliser un modèle [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] pour générer du code dans n'importe quel langage. Il n'est pas obligatoire que le texte généré soit dans un langage spécifique et il n'est pas obligatoire que ce soit du code de programme.
 
 ### <a name="structuring-text-templates"></a>Structuration des modèles de texte
- Une meilleure pratique consiste à séparer le code de modèle en deux parties :
+
+Une meilleure pratique consiste à séparer le code de modèle en deux parties :
 
 - Une partie configuration ou collecte de données, qui définit des valeurs dans des variables mais ne contient pas de blocs de texte. Dans l'exemple précédent, cette partie est l'initialisation de `properties`.
 
@@ -202,10 +207,11 @@ Les modèles de texte vous permettent d'utiliser du code de programme pour varie
 
 - La partie génération de texte (`foreach(...){...}` dans l'exemple), qui utilise les valeurs des variables.
 
-  Cette séparation n'est pas obligatoire, mais elle simplifie la lecture du modèle en réduisant la complexité de la partie qui comprend du texte.
+   Cette séparation n'est pas obligatoire, mais elle simplifie la lecture du modèle en réduisant la complexité de la partie qui comprend du texte.
 
 ## <a name="reading-files-or-other-sources"></a>Lecture de fichiers ou d'autres sources
- Pour accéder à une base de données ou à un fichier de modèle, votre code de modèle peut utiliser des assemblys tels que System.XML. Pour pouvoir accéder à ces assemblys, vous devez insérer des directives telles que celles-ci :
+
+Pour accéder à une base de données ou à un fichier de modèle, votre code de modèle peut utiliser des assemblys tels que System.XML. Pour pouvoir accéder à ces assemblys, vous devez insérer des directives telles que celles-ci :
 
 ```
 <#@ assembly name="System.Xml.dll" #>
@@ -213,9 +219,9 @@ Les modèles de texte vous permettent d'utiliser du code de programme pour varie
 <#@ import namespace="System.IO" #>
 ```
 
- Le `assembly` directive rend l’assembly spécifié disponibles pour votre code de modèle, de la même manière que la section des références d’un projet Visual Studio. Vous n'êtes pas obligé d'inclure une référence à System.dll, car il est référencé automatiquement. La directive `import` vous permet d'utiliser des types sans utiliser leurs noms qualifiés complets, de la même manière que la directive `using` dans un fichier programme ordinaire.
+Le `assembly` directive rend l’assembly spécifié disponibles pour votre code de modèle, de la même manière que la section des références d’un projet Visual Studio. Vous n'êtes pas obligé d'inclure une référence à System.dll, car il est référencé automatiquement. La directive `import` vous permet d'utiliser des types sans utiliser leurs noms qualifiés complets, de la même manière que la directive `using` dans un fichier programme ordinaire.
 
- Par exemple, après l’importation **System.IO**, vous pouvez écrire :
+Par exemple, après l’importation **System.IO**, vous pouvez écrire :
 
 ```csharp
 
@@ -232,13 +238,14 @@ Les modèles de texte vous permettent d'utiliser du code de programme pour varie
 ```
 
 ### <a name="opening-a-file-with-a-relative-pathname"></a>Ouverture d’un fichier avec un nom de chemin d’accès relatif
- Pour charger un fichier à partir d'un emplacement relatif au modèle de texte, vous pouvez utiliser `this.Host.ResolvePath()`. Pour utiliser this.Host, vous devez définir `hostspecific="true"` dans `template` :
+
+Pour charger un fichier à partir d'un emplacement relatif au modèle de texte, vous pouvez utiliser `this.Host.ResolvePath()`. Pour utiliser this.Host, vous devez définir `hostspecific="true"` dans `template` :
 
 ```
 <#@ template debug="false" hostspecific="true" language="C#" #>
 ```
 
- Ensuite, vous pouvez par exemple écrire :
+Ensuite, vous pouvez par exemple écrire :
 
 ```csharp
 <# string fileName = this.Host.ResolvePath("filename.txt");
@@ -259,12 +266,13 @@ Les modèles de texte vous permettent d'utiliser du code de programme pour varie
 #>
 ```
 
- Vous pouvez aussi utiliser `this.Host.TemplateFile`, qui identifie le nom du fichier de modèle actuel.
+Vous pouvez aussi utiliser `this.Host.TemplateFile`, qui identifie le nom du fichier de modèle actuel.
 
- Le type de `this.Host` (en VB, `Me.Host`) est `Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost`.
+Le type de `this.Host` (en VB, `Me.Host`) est `Microsoft.VisualStudio.TextTemplating.ITextTemplatingEngineHost`.
 
 ### <a name="getting-data-from-visual-studio"></a>Obtention de données à partir de Visual Studio
- Pour utiliser les services fournis dans Visual Studio, définissez le `hostSpecific` attribut et charge le `EnvDTE` assembly. Importation `Microsoft.VisualStudio.TextTemplating`, qui contient le `GetCOMService()` méthode d’extension.  Vous pouvez ensuite utiliser IServiceProvider.GetCOMService() pour accéder à DTE et d'autres services. Exemple :
+
+Pour utiliser les services fournis dans Visual Studio, définissez le `hostSpecific` attribut et charge le `EnvDTE` assembly. Importation `Microsoft.VisualStudio.TextTemplating`, qui contient le `GetCOMService()` méthode d’extension.  Vous pouvez ensuite utiliser IServiceProvider.GetCOMService() pour accéder à DTE et d'autres services. Exemple :
 
 ```src
 <#@ template hostspecific="true" language="C#" #>
@@ -329,9 +337,10 @@ Warning("A warning message");
 ```
 
 ## <a name="Converting"></a> Conversion d’un fichier existant à un modèle
- L'un des avantages des modèles, c'est que leur apparence se rapproche des fichiers qu'ils génèrent, avec en plus du code de programme inséré. Cela nous suggère une méthode utile pour créer un modèle. Tout d’abord créer un fichier ordinaire en tant que prototype, comme un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] de fichiers et puis introduisez graduellement du code de génération qui fait varier le fichier résultant.
 
-#### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Pour convertir un fichier existant en modèle au moment de la conception
+L'un des avantages des modèles, c'est que leur apparence se rapproche des fichiers qu'ils génèrent, avec en plus du code de programme inséré. Cela nous suggère une méthode utile pour créer un modèle. Tout d’abord créer un fichier ordinaire en tant que prototype, comme un [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] de fichiers et puis introduisez graduellement du code de génération qui fait varier le fichier résultant.
+
+### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>Pour convertir un fichier existant en modèle au moment de la conception
 
 1. À votre projet Visual Studio, ajoutez un fichier du type que vous souhaitez générer, tel qu’un `.cs`, `.vb`, ou `.resx` fichier.
 
@@ -366,7 +375,8 @@ Warning("A warning message");
 7. Identifiez une partie du fichier que vous souhaitez faire varier. Par exemple, une partie qui apparaît uniquement dans certaines conditions, qui est répétée ou dont les valeurs spécifiques varient. Insérez le code de génération. Enregistrez le fichier et vérifiez que le fichier auxiliaire est généré correctement. Répétez cette étape.
 
 ## <a name="guidelines-for-code-generation"></a>Instructions pour la génération de code
- Consultez [instructions pour l’écriture de modèles de texte T4](../modeling/guidelines-for-writing-t4-text-templates.md).
+
+Consultez [instructions pour l’écriture de modèles de texte T4](../modeling/guidelines-for-writing-t4-text-templates.md).
 
 ## <a name="next-steps"></a>Étapes suivantes
 

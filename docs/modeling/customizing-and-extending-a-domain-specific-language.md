@@ -9,38 +9,37 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd399bb0d18d4a12493530932705b938a5f6dd67
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ebbb18e37356c1ef6ccc47f18afe4736a418c0c3
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63414856"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476576"
 ---
-# <a name="customizing-and-extending-a-domain-specific-language"></a>Personnalisation et extension d'un langage spécifique à un domaine
+# <a name="customize-and-extend-a-domain-specific-language"></a>Personnaliser et étendre un langage spécifique à un domaine
+
 Visual Studio de modélisation et de visualisation Kit de développement logiciel (SDK) VISUALIZATION fournit plusieurs niveaux à laquelle vous pouvez définir des outils de modélisation :
 
-1. Définir un langage spécifique à un domaine (DSL) à l’aide du diagramme de définition DSL. Vous pouvez rapidement créer une solution DSL avec une notation visuelle, un formulaire XML lisible et les outils de base qui sont requises pour générer le code et autres artefacts.
-
-     Pour plus d’informations, consultez [comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md).
+1. Définir un langage spécifique à un domaine (DSL) à l’aide du diagramme de définition DSL. Vous pouvez rapidement créer une solution DSL avec une notation visuelle, un formulaire XML lisible et les outils de base qui sont requises pour générer le code et autres artefacts. Pour plus d’informations, consultez [comment définir un langage spécifique à un domaine](../modeling/how-to-define-a-domain-specific-language.md).
 
 2. Affinez la solution DSL à l’aide de fonctionnalités plus avancées de la définition DSL. Par exemple, vous pouvez ajouter des liens supplémentaires lorsque l’utilisateur crée un élément. Ces techniques sont principalement réalisées dans la définition DSL et certaines nécessitent quelques lignes de code de programme.
 
-3. Étendez vos outils de modélisation à l’aide du code de programme. Le Kit VMSDK a été conçu spécifiquement pour simplifier l'intégration à vos extensions avec le code généré à partir de la définition DSL.  Pour plus d’informations, consultez [écriture de Code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md).
+3. Étendez vos outils de modélisation à l’aide du code de programme. Le Kit VMSDK a été conçu spécifiquement pour simplifier l'intégration à vos extensions avec le code généré à partir de la définition DSL. Pour plus d’informations, consultez [écriture de Code pour personnaliser un langage spécifique à un domaine](../modeling/writing-code-to-customise-a-domain-specific-language.md).
 
 > [!NOTE]
-> Lorsque vous avez mis à jour le fichier de définitions DSL, n’oubliez pas de cliquer sur **transformer tous les modèles** dans la barre d’outils de l’Explorateur de solutions avant de régénérer votre solution.
+> Lorsque vous avez mis à jour le fichier de définitions DSL, n’oubliez pas de cliquer sur **transformer tous les modèles** dans la barre d’outils de **l’Explorateur de solutions** avant la régénération de votre solution.
 
-## <a name="customShapes"></a> Dans cette Section
+## <a name="article-reference"></a>Référence de l’article
 
 |Pour obtenir cet effet|Reportez-vous à cette rubrique|
 |-|-|
-|Autoriser l’utilisateur à définir les propriétés de couleur et le style de la forme.|Avec le bouton droit de la classe de forme ou le lien, pointez sur **ajouter les objets exposés**, cliquez sur un élément.<br /><br /> Consultez [personnaliser la présentation du diagramme](../modeling/customizing-presentation-on-the-diagram.md).|
+|Autoriser l’utilisateur à définir les propriétés de couleur et le style de la forme.|Avec le bouton droit de la classe de forme ou le lien, pointez sur **ajouter les objets exposés**, cliquez sur un élément.|
 |Différentes classes d’élément de modèle se présenter comme sur le diagramme, partage des propriétés telles que la hauteur initiale et la largeur, la couleur, info-bulles.|Utiliser l’héritage entre les formes ou des classes de connecteur. Mappages entre les formes dérivées et les classes de domaine dérivées héritent les détails de mappage des parents.<br /><br /> Ou bien, mapper les classes de domaine différent à la même classe de forme.|
 |Une classe d’élément de modèle est affichée par les contextes de différentes formes.|Mapper plusieurs classes de forme à la même classe de domaine. Lorsque vous générez la solution, suivez le rapport d’erreurs et fournissez le code demandé pour décider quelle forme à utiliser.|
 |Couleur de la forme ou autres fonctionnalités telles que police indiquent l’état actuel.|Consultez [mise à jour des formes et connecteurs pour refléter le modèle](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md).<br /><br /> Créer une règle qui met à jour les propriétés exposées. Consultez [règles de propagent de modifications dans le modèle](../modeling/rules-propagate-changes-within-the-model.md).<br /><br /> Ou bien, utilisez OnAssociatedPropertyChanged() pour mettre à jour non exposé des fonctionnalités telles que les flèches de lien ou de la police.|
 |Icône sur change de forme pour indiquer l’état.|Définir la visibilité du mappage de décorateur dans la fenêtre Détails DSL. Recherchez plusieurs décorateurs d’image sur la même position. Consultez [mise à jour des formes et connecteurs pour refléter le modèle](../modeling/updating-shapes-and-connectors-to-reflect-the-model.md).<br /><br /> Ou substituer `ImageField.GetDisplayImage()`. Consultez l’exemple dans <xref:Microsoft.VisualStudio.Modeling.Diagrams.ImageField>.|
-|Définir une image d’arrière-plan sur n’importe quelle forme|Substituer InitializeInstanceResources() pour ajouter un ImageField ancré. Consultez [personnaliser la présentation du diagramme](../modeling/customizing-presentation-on-the-diagram.md).|
-|Imbriquer des formes à n’importe quelle profondeur|Configurer une récursive incorporation d’arborescence. Définir par BoundsRules pour qu’il contienne les formes. Consultez [personnaliser la présentation du diagramme](../modeling/customizing-presentation-on-the-diagram.md).|
+|Définir une image d’arrière-plan sur n’importe quelle forme|Substituer InitializeInstanceResources() pour ajouter un ImageField ancré.|
+|Imbriquer des formes à n’importe quelle profondeur|Configurer une récursive incorporation d’arborescence. Définir par BoundsRules pour qu’il contienne les formes.|
 |Rattachez des connecteurs à des points fixes sur les limites d’un élément.|Définir les éléments terminal incorporés, représentés par petits ports sur le diagramme. Utilisez BoundsRules pour corriger les ports en place. Consultez l’exemple de diagramme de Circuit dans [Visualization and Modeling SDK](http://go.microsoft.com/fwlink/?LinkID=186128).|
 |Champ de texte affiche une valeur dérivée d’autres valeurs.|Mapper le décorateur de texte à une propriété de domaine calculé ou le stockage personnalisé. Pour plus d’informations, consultez [calculées et les propriétés de stockage personnalisé](../modeling/calculated-and-custom-storage-properties.md).|
 |Propager les modifications entre les éléments de modèle, ou entre les formes|Consultez [Validation dans un langage spécifique à un domaine](../modeling/validation-in-a-domain-specific-language.md).|
