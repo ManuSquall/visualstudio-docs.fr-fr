@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 803d9569c611e3c4cd70f2c82ecd525716d8ddb3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7f6fb974bd5affc89eeacbfccace5c1e89218db5
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913525"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457923"
 ---
 # <a name="providerflags"></a>PROVIDER_FLAGS
 Spécifie les propriétés souhaitées doivent être obtenues à partir d’un fournisseur de programme.
@@ -49,20 +52,27 @@ public enum enum_PROVIDER_FLAGS {
 };
 ```
 
-## <a name="members"></a>Membres
- Indicateurs PFLAG_NONE non spécifiés.
+## <a name="fields"></a>Champs
+ `PFLAG_NONE`\
+ Aucun indicateur n’est spécifié.
 
- PFLAG_REMOTE_PORT appelant veut une liste des programmes sur un ordinateur différent de celui [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
+ `PFLAG_REMOTE_PORT`\
+ L’appelant veut une liste des programmes sur un ordinateur différent de celui [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
 
- PFLAG_DEBUGGEE le processus est en cours de débogage par cette instance de [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
+ `PFLAG_DEBUGGEE`\
+ Le processus est en cours de débogage par cette instance de [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)].
 
- PFLAG_ATTACH_TODEBUGGEE [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] est attaché au programme en cours de débogage, mais ne la démarre pas.
+ `PFLAG_ATTACH_TODEBUGGEE`\
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] n’est attaché au programme en cours de débogage, mais ne la démarre pas.
 
- PFLAG_REASON_WATCH [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] surveille les événements.
+ `PFLAG_REASON_WATCH`\
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] surveille les événements.
 
- PFLAG_GET_PROGRAM_NODES appelant souhaite le `ProgramNodes` champ la [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) structure.
+ `PFLAG_GET_PROGRAM_NODES`\
+ L’appelant veut le `ProgramNodes` champ la [PROVIDER_PROCESS_DATA](../../../extensibility/debugger/reference/provider-process-data.md) structure.
 
- PFLAG_GET_IS_DEBUGGER_PRESENT appelant souhaite le `fIsTheDebuggerPresent` champ la `PROVIDER_PROCESS_DATA` structure.
+ `PFLAG_GET_IS_DEBUGGER_PRESENT`\
+ L’appelant veut le `fIsTheDebuggerPresent` champ la `PROVIDER_PROCESS_DATA` structure.
 
 ## <a name="remarks"></a>Notes
  Ces indicateurs sont passées aux méthodes suivantes :

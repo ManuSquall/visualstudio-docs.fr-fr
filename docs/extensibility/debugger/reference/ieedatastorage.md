@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: eeb34d9574a6070b2d1f658575d345d74aa72972
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 6dbc5228eebb1d70d84c82b4b42f991b84d1f2cb
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915250"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65224122"
 ---
 # <a name="ieedatastorage"></a>IEEDataStorage
 Cette interface représente un tableau d’octets.

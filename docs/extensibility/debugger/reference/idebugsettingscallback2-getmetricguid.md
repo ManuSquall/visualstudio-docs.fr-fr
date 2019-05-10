@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9cd767b0bedc60e62154c3d4f4d834c769a16b4c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 49f30f6b5bb1231f6bcbd77097454ae7a73a7a2c
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868805"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458590"
 ---
 # <a name="idebugsettingscallback2getmetricguid"></a>IDebugSettingsCallback2::GetMetricGuid
 Récupère l’identificateur unique d’une fonction de son nom de métrique.
@@ -40,20 +43,20 @@ private int GetMetricGuid(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pszType`
+## <a name="parameters"></a>Paramètres
+ `pszType`\
 
  [in] Type de la mesure.
 
- `guidSection`
+ `guidSection`\
 
  [in] Identificateur unique de la section.
 
- `pszMetric`
+ `pszMetric`\
 
  [in] Nom de la mesure.
 
- `pguidValue`
+ `pguidValue`\
 
  [out] Retourne l’identificateur unique de la mesure.
 

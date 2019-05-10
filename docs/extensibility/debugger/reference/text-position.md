@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5fcc65201f96966f6946b29a82bbe53bdf75d864
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 960fa95f583ddafdc401432ff551e8597fb956bd
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62864623"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458345"
 ---
 # <a name="textposition"></a>TEXT_POSITION
 Décrit l’emplacement de colonne et de ligne dans le texte donné.
@@ -40,11 +43,11 @@ public struct TEXT_POSITION { 
 
 ## <a name="members"></a>Membres
 
-dwLine
+`dwLine`\
 
 Index de ligne dans le fichier source.
 
-dwColumn
+`dwColumn`\
 
 Offset de caractère dans la ligne.
 

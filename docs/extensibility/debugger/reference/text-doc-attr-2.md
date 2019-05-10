@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20d8a92e7fcd8c02ee659b997bc4530c8570d3fa
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 86dc1e002c4d33ed0ef64abd707ca11f2d1fc492
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63415893"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460665"
 ---
 # <a name="textdocattr2"></a>TEXT_DOC_ATTR_2
 Décrit les attributs d’un document.
@@ -34,7 +37,8 @@ public const uint TEXT_DOC_ATTR_READONLY_2 = 0x00000001;
 ```
 
 ## <a name="members"></a>Membres
- TEXT_DOC_ATTR_READONLY_2 indique que le document est en lecture seule.
+ `TEXT_DOC_ATTR_READONLY_2`\
+ Indique que le document est en lecture seule.
 
 ## <a name="remarks"></a>Notes
 
@@ -43,7 +47,7 @@ public const uint TEXT_DOC_ATTR_READONLY_2 = 0x00000001;
 
  Passé en tant qu’argument à la [onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md) (méthode).
 
-## <a name="requirements"></a>Configuration requise
+## <a name="requirements"></a>Spécifications
  En-tête : msdbg.h
 
  Espace de noms : Microsoft.VisualStudio.Debugger.Interop

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd4494b21d4b5b3aa3f73cbabed771f2fac7280c
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f439928d253aa5e8b500a489ca1a2d184ecbd507
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869004"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457696"
 ---
 # <a name="idebugreference2getmemorycontext"></a>IDebugReference2::GetMemoryContext
 Obtient un contexte de la mémoire d’une référence. Réservé à un usage ultérieur.
@@ -36,8 +39,8 @@ int GetMemoryContext ( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `ppMemory`
+## <a name="parameters"></a>Paramètres
+ `ppMemory`\
 
  [out] Retourne le [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) objet qui représente la mémoire associée à la valeur de la référence.
 
