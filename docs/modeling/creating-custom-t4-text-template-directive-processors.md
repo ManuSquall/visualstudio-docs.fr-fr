@@ -9,14 +9,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c159cd6fbd4f2fbfff414688e2ec865bcc8ddb4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3f9d514178e4b899ca727e17ead260719697b562
+ms.sourcegitcommit: 6a19c5ece38a70731496a38f2ef20676ff18f8a4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63002711"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65476646"
 ---
-# <a name="creating-custom-t4-text-template-directive-processors"></a>Création de processeurs de directives de modèles de texte T4 personnalisés
+# <a name="create-custom-t4-text-template-directive-processors"></a>Créer des processeurs de directives de modèles de texte T4 personnalisés
 
 Le *processus de transformation de modèle de texte* prend un *modèle de texte* fichier comme entrée et produit un fichier texte comme sortie. Le *moteur de transformation de modèle de texte* le processus et le moteur interagit avec un hôte de transformation de modèle de texte et le modèle de texte d’un ou plusieurs des contrôles *processeurs de directive* pour terminer le processus. Pour plus d’informations, consultez [le processus de Transformation de modèle de texte](../modeling/the-text-template-transformation-process.md).
 
