@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c87fc29b24b3c5ab4bd59d9cca25113f82895ff4
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: c8a7c0363ea774206cdf6f1db792ab5e7cbd2454
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62928216"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226411"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Problèmes liés à la sécurité, à la gestion de version et aux manifestes dans les déploiements ClickOnce
 
@@ -97,5 +97,5 @@ Si vous souhaitez déplacer ou copier une application, vous devez également met
 ## <a name="see-also"></a>Voir aussi
 
 [Résoudre les problèmes de déploiements ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)
-[Securw ClickOnce applications](../deployment/securing-clickonce-applications.md)
+[applications ClickOnce Secure](../deployment/securing-clickonce-applications.md)
 [choisir une stratégie de déploiement ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)

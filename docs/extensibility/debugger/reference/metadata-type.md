@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a39ce54d1cb1fb1a3773b4241be35214421f08a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 3541181e0141e20381be7cdd24a45d7c7a0704ec
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62865675"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458040"
 ---
 # <a name="metadatatype"></a>METADATA_TYPE
 Cette structure spécifie des informations sur un type de champ extraites à partir des métadonnées.
@@ -40,16 +43,16 @@ public struct METADATA_TYPE {
 };
 ```
 
-#### <a name="parameters"></a>Paramètres
- ulAppDomainID
+## <a name="parameters"></a>Paramètres
+ `ulAppDomainID`\
 
  ID de l’application d'où provenance le symbole. Cela est utilisé pour identifier de manière unique une instance de l’application.
 
- guidModule
+ `guidModule`\
 
  Le GUID du module qui contient ce champ.
 
- tokClass
+ `tokClass`\
 
  ID de jeton de métadonnées de ce type.
 

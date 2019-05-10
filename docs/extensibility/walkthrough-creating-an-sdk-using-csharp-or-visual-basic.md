@@ -8,12 +8,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b687f9fb705f8f8c8bee7ca611d618e012e8507
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+dev_langs:
+- CSharp
+- VB
+ms.openlocfilehash: 007da4e5e534ce6f9d8563011c0284432e4d9c19
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443851"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226110"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>Procédure pas à pas : Créer un à l’aide du Kit de développement logiciel C# ou Visual Basic
 Dans cette procédure pas à pas, vous allez apprendre à créer un kit de développement de bibliothèque mathématique simple à l’aide de Visual c#, puis d’empaqueter le Kit de développement logiciel en tant qu’une Extension Visual Studio (VSIX). Vous allez effectuer les procédures suivantes :
@@ -28,7 +31,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
 
 ## <a name="createClassLibrary"></a> Pour créer le composant SimpleMath Windows Runtime
 
-1. Dans la barre de menus, choisissez **fichier** > **New** > **nouveau projet**.
+1. Dans la barre de menus, choisissez **Fichier** > **Nouveau** > **Projet**.
 
 2. Dans la liste des modèles, développez **Visual C#** ou **Visual Basic**, choisissez le **Windows Store** nœud, puis choisissez le **composant d’exécution Windows** modèle.
 
@@ -50,7 +53,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
 8. Dans le **Configuration** colonne, vérifiez que **SimpleMath** ligne est définie sur **version**, puis choisissez le **fermer** bouton pour accepter le modifier.
 
    > [!IMPORTANT]
-   > Le Kit de développement pour le composant SimpleMath ne comprend qu’une seule configuration. Cette configuration doit être la version Release, ou les applications qui utilisent le composant ne sont pas passer la certification le[!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].
+   > Le Kit de développement pour le composant SimpleMath ne comprend qu’une seule configuration. Cette configuration doit être la version Release, ou les applications qui utilisent le composant ne sont pas passer la certification le [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)].
 
 9. Dans **l’Explorateur de solutions**, ouvrez le menu contextuel pour le **SimpleMath** nœud de projet, puis choisissez **Build**.
 
@@ -153,7 +156,7 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
 
 ## <a name="createSample"></a> Pour créer un exemple d’application qui utilise la bibliothèque de classes
 
-1. Dans la barre de menus, choisissez **fichier** > **New** > **nouveau projet**.
+1. Dans la barre de menus, choisissez **Fichier** > **Nouveau** > **Projet**.
 
 2. Dans la liste des modèles, développez **Visual C#** ou **Visual Basic**, puis choisissez le **Windows Store** nœud.
 
@@ -163,11 +166,11 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
 
 5. Dans la liste des types référence, développez **Windows**, puis choisissez **Extensions**.
 
-6. Dans le volet de détails, choisissez le **Simple mathématiques SDK** extension.
+6. Dans le volet de détails, choisissez le **WinRT Math Library** extension.
 
     Des informations supplémentaires sur votre Kit de développement logiciel s’affiche. Vous pouvez choisir le **plus d’informations** lien pour ouvrir https://msdn.microsoft.com/, que vous avez spécifié dans le fichier SDKManifest.xml plus haut dans cette procédure pas à pas.
 
-7. Dans le **Gestionnaire de références** boîte de dialogue, sélectionnez le **Simple mathématiques SDK** case à cocher, puis choisissez le **OK** bouton.
+7. Dans le **Gestionnaire de références** boîte de dialogue, sélectionnez le **WinRT Math Library** case à cocher, puis choisissez le **OK** bouton.
 
 8. Dans la barre de menus, choisissez **vue** > **Explorateur d’objets**.
 
@@ -181,11 +184,11 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
 
     ```xml
     <Page
-        x:Class="WinRTMathTestCS.MainPage"
+        x:Class="ArithmeticUI.MainPage"
         IsTabStop="False"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:local="using:WinRTMathTestCS"
+        xmlns:local="using:SimpleMath"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d">
@@ -207,11 +210,11 @@ Dans cette procédure pas à pas, vous allez apprendre à créer un kit de déve
 
     ```xml
     <Page
-        x:Class="WinRTMathTest.MainPage"
+        x:Class="ArithmeticUI.MainPage"
         IsTabStop="False"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:local="using:WinRTMathTest"
+        xmlns:local="using:SimpleMath"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d">

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3ec96c5ba806e6eff735edc8093868b19ebaf5b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: b090fecf532ef862660b26432e930830cdb1d12b
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913833"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65460958"
 ---
 # <a name="moduleflags"></a>MODULE_FLAGS
 Utilisé pour décrire un module.
@@ -47,18 +50,24 @@ public enum enum_MODULE_FLAGS { 
 };
 ```
 
-## <a name="members"></a>Membres
- MODULE_FLAG_NONE ne spécifie aucun module.
+## <a name="fields"></a>Champs
+ `MODULE_FLAG_NONE`\
+ Ne spécifie aucun module.
 
- MODULE_FLAG_SYSTEM spécifie un module de système.
+ `MODULE_FLAG_SYSTEM`\
+ Spécifie un module de système.
 
- MODULE_FLAG_SYMBOLS spécifie un module de symbole.
+ `MODULE_FLAG_SYMBOLS`\
+ Spécifie un module de symbole.
 
- MODULE_FLAG_64BIT spécifie un module 64 bits.
+ `MODULE_FLAG_64BIT`\
+ Spécifie un module 64 bits.
 
- MODULE_FLAG_OPTIMIZED Spécifie que le module a été optimisé. Cet état est reflété dans le **Modules** fenêtre.
+ `MODULE_FLAG_OPTIMIZED`\
+ Spécifie que le module a été optimisé. Cet état est reflété dans le **Modules** fenêtre.
 
- MODULE_FLAG_UNOPTIMIZED Spécifie que le module n’a pas été optimisé. Cet état est reflété dans le **Modules** fenêtre. Il s’agit de l’état par défaut.
+ `MODULE_FLAG_UNOPTIMIZED`\
+ Spécifie que le module n’a pas été optimisé. Cet état est reflété dans le **Modules** fenêtre. Il s’agit de l’état par défaut.
 
 ## <a name="remarks"></a>Notes
  Utilisé pour le `m_dwModuleFlags` membre de la [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) structure.

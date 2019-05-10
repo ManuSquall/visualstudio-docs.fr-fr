@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 302c44b3d4947baa95554966246f15175841257d
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 7ffdf2359b719be0fa3cf0a17ae4ed70bc36b673
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62913921"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65461064"
 ---
 # <a name="launchflags"></a>LAUNCH_FLAGS
 Spécifie les indicateurs de lancement du débogage.
@@ -43,14 +46,18 @@ public enum enum_LAUNCH_FLAGS {
 };
 ```
 
-## <a name="members"></a>Membres
-LAUNCH_DEBUG lance le processus de débogage.
+## <a name="fields"></a>Champs
+`LAUNCH_DEBUG`\
+Lance le processus de débogage.
 
-LAUNCH_NODEBUG lance le processus sans le déboguer.
+`LAUNCH_NODEBUG`\
+Lance le processus sans le déboguer.
 
-LAUNCH_ENABLE_ENC DÉCONSEILLÉE, N’UTILISEZ PAS.
+`LAUNCH_ENABLE_ENC`\
+DÉCONSEILLÉ, N’UTILISEZ PAS.
 
-LAUNCH_MERGE_ENV lance le processus et fusionne l’environnement avec l’hôte de lancement.
+`LAUNCH_MERGE_ENV`\
+Lance le processus et fusionne l’environnement avec l’hôte de lancement.
 
 ## <a name="remarks"></a>Notes
 Ces valeurs sont passées en tant qu’argument à la [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) (méthode).

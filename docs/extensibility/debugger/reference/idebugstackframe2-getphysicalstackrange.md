@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c325ab6cb12813000c981e978e728c251b06c55
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 341a4d2da740d2907172fb7761dc0c18d13d1456
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62868729"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457281"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
 Obtient une représentation sous forme de dépendantes de l’ordinateur de la plage d’adresses physiques associés à un frame de pile.
@@ -38,12 +41,12 @@ int GetPhysicalStackRange ( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `paddrMin`
+## <a name="parameters"></a>Paramètres
+ `paddrMin`\
 
  [out] Retourne l’adresse physique la plus faible associée à ce frame de pile.
 
- `paddrMax`
+ `paddrMax`\
 
  [out] Retourne l’adresse physique le plus élevé associé à ce frame de pile.
 

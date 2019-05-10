@@ -10,12 +10,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85451229b9b34f63150b315521621368c60cb1ac
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f52205cd530e638146abe423890d6477fe62b45d
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916273"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457334"
 ---
 # <a name="idebugsettingscallback2getmetricdword"></a>IDebugSettingsCallback2::GetMetricDword
 Récupère la valeur d’une fonction de son nom de métrique.
@@ -40,20 +43,20 @@ private int GetMetricDword(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pszType`
+## <a name="parameters"></a>Paramètres
+ `pszType`\
 
  [in] Type de la mesure.
 
- `guidSection`
+ `guidSection`\
 
  [in] Identificateur unique de la section.
 
- `pszMetric`
+ `pszMetric`\
 
  [in] Nom de la mesure.
 
- `pdwValue`
+ `pdwValue`\
 
  [out] Retourne la valeur de la mesure.
 

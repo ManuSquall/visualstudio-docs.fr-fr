@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8609452919b5f2c2c3f94a7ef3853e1559b33e77
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: e1c6c70bf93d21953048f2a7e63ec051e5ae2b40
+ms.sourcegitcommit: 6196d0b7fdcb08ba6d28a8151ad36b8d1139f2cc
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62915740"
+ms.lasthandoff: 05/07/2019
+ms.locfileid: "65226677"
 ---
 # <a name="idebugsymbolprovidergetmethodfieldsbyname"></a>IDebugSymbolProvider::GetMethodFieldsByName
 Cette méthode obtient le champ qui représente un nom de méthode qualifié complet.
@@ -40,16 +43,16 @@ int GetMethodFieldsByName(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pszFullName`
+## <a name="parameters"></a>Paramètres
+ `pszFullName`\
 
  [in] Le nom de la méthode.
 
- `nameMatch`
+ `nameMatch`\
 
  [in] Sélectionne le type de correspondance, par exemple, respect de la casse.
 
- `ppEnum`
+ `ppEnum`\
 
  [out] Retourne un [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) énumérateur pour les champs associés à cette méthode.
 
