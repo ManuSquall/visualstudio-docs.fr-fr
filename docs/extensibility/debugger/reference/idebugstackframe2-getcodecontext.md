@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de112b3bba0ca649e333cc990a50284c29b92239
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 12ad4db6583c702115f5c97b2fa2c4485c891298
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62916088"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65458575"
 ---
 # <a name="idebugstackframe2getcodecontext"></a>IDebugStackFrame2::GetCodeContext
 Obtient le contexte de code pour ce frame de pile.
@@ -36,8 +39,8 @@ int GetCodeContext ( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `ppCodeCxt`
+## <a name="parameters"></a>Paramètres
+ `ppCodeCxt`\
 
  [out] Retourne un [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) objet qui représente le pointeur d’instruction en cours dans ce frame de pile.
 

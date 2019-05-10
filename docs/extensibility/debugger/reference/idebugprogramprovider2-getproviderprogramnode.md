@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c468745418c01b638cbc407342820b9127b460b6
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 594fef8a83c01b4bad4d47fdb206d64e445ad515
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869813"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65459014"
 ---
 # <a name="idebugprogramprovider2getproviderprogramnode"></a>IDebugProgramProvider2::GetProviderProgramNode
 Récupère le nœud de programme pour un programme spécifique.
@@ -46,8 +49,8 @@ int GetProviderProgramNode(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `Flags`
+## <a name="parameters"></a>Paramètres
+ `Flags`\
 
  [in] Une combinaison d’indicateurs de la [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) énumération. Les indicateurs suivants sont généralement utilisés pour cet appel :
 
@@ -57,23 +60,23 @@ int GetProviderProgramNode(
 |`PFLAG_DEBUGGEE`|L’appelant est en cours de débogage (informations supplémentaires sur le marshaling seront retournées pour chaque nœud).|
 |`PFLAG_ATTACHED_TO_DEBUGGEE`|L’appelant a été attaché à mais pas lancé par le débogueur.|
 
- `pPort`
+ `pPort`\
 
  [in] Le port, le processus appelant s’exécute sur.
 
- `processId`
+ `processId`\
 
  [in] Un [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) structure qui contient l’ID du processus qui contient le programme en question.
 
- `guidEngine`
+ `guidEngine`\
 
  [in] GUID du moteur de débogage que le programme est attaché au (le cas échéant).
 
- `programId`
+ `programId`\
 
  [in] ID du programme pour lequel obtenir le nœud de programme.
 
- `ppProgramNode`
+ `ppProgramNode`\
 
  [out] Un [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) objet représentant le noeud programme demandé.
 

@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67e3ac6bda70a25baf7546c709849c650372c649
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: 022712c0be8dfb569ba097bc4a86f8b02de93633
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62869015"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65457418"
 ---
 # <a name="idebugreference2setvalueasstring"></a>IDebugReference2::SetValueAsString
 Définit la valeur d’une référence à partir d’une chaîne. Réservé à un usage ultérieur.
@@ -40,16 +43,16 @@ int SetValueAsString ( 
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `pszValue`
+## <a name="parameters"></a>Paramètres
+ `pszValue`\
 
  [in] La valeur sous forme de chaîne.
 
- `dwRadix`
+ `dwRadix`\
 
  [in] La base à utiliser dans toutes les informations numériques de mise en forme.
 
- `dwTimeout`
+ `dwTimeout`\
 
  [in] Durée maximale, en millisecondes, à attendre avant de retourner à partir de cette méthode. Utilisez `INFINITE` pour attendre indéfiniment.
 

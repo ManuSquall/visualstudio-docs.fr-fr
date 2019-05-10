@@ -13,16 +13,16 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 466178015c725242b6bc4a28da1da6ded19b421f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: a17db8fbdb281139ba095070130e6c608954b5a7
+ms.sourcegitcommit: 62f42113ae4dae1ddfff1c4e02445acc09913445
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62820859"
+ms.lasthandoff: 04/29/2019
+ms.locfileid: "64878171"
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Procédure : Configurer l’analyse du code pour un projet de code managé
 
-Dans Visual Studio, vous pouvez choisir parmi une liste de l’analyse du code [ensembles de règles](../code-quality/rule-set-reference.md)) à appliquer à un projet de code managé. Par défaut, le **règles minimales recommandées par Microsoft** ensemble de règles est sélectionné, mais vous pouvez appliquer une autre règle définie si vous le souhaitez. Ensembles de règles peuvent être appliquées à un ou plusieurs projets dans une solution.
+Dans Visual Studio, vous pouvez choisir parmi une liste de l’analyse du code [ensembles de règles](../code-quality/rule-set-reference.md) à appliquer à un projet de code managé. Par défaut, le **règles minimales recommandées par Microsoft** ensemble de règles est sélectionné, mais vous pouvez appliquer une autre règle définie si vous le souhaitez. Ensembles de règles peuvent être appliquées à un ou plusieurs projets dans une solution.
 
 > [!TIP]
 > Pour plus d’informations sur la configuration d’un ensemble de règles pour les applications web ASP.NET, consultez [Comment : Configurer l’analyse du Code pour un site web ASP.NET Application](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).
