@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e643ab6566818df7cdfee2bc4e5b256ecf065b5a
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1e5d335fb6f90e6e93d58013958e94f6d4555c39
+ms.sourcegitcommit: 50f0c3f2763a05de8482b3579026d9c76c0e226c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62955564"
+ms.lasthandoff: 05/09/2019
+ms.locfileid: "65455097"
 ---
 # <a name="sample-xsd-file-relationships"></a>Exemple de fichier XSD : Relations
 
@@ -63,3 +63,6 @@ Le fichier XSD suivant est utilisé dans différents exemples de la documentatio
 
 </xs:schema>
 ```
+
+> [!NOTE]
+> Les noms de sociétés, d'organisations, de produits, de domaines, d'adresses de messagerie, de logos, de personnes, de lieux et d'événements mentionnés dans les exemples sont fictifs. Toute ressemblance avec des noms, des logos, des personnes, des lieux ou des événements réels est purement fortuite et involontaire.

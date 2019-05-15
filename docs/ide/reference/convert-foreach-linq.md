@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: f0b9685ce6d4cf8ee6d4253c79759508cf43915e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 7893ed676372cce94d883353139de91ef639aeb0
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62968472"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531846"
 ---
 # <a name="convert-a-foreach-loop-to-linq"></a>Convertir une boucle foreach en syntaxe LINQ
 
@@ -44,9 +44,9 @@ Cette refactorisation s’applique à :
 3. Sélectionnez **Convertir en LINQ** ou **Convertir en LINQ (formulaire d’appel)**.
 
    ![Exemple, résultat de la requête LINQ](media/convert-foreach-to-LINQ-result.png)
-   
+
    ![Exemple, résultat du formulaire d’appel LINQ](media/convert-foreach-to-LINQ-callform-result.png)
-   
+
 ### <a name="sample-code"></a>Exemple de code
 
 ```csharp
@@ -79,4 +79,4 @@ public class Class1
 
 - [Refactorisation](../refactoring-in-visual-studio.md)
 - [Fenêtre Aperçu des modifications](../../ide/preview-changes.md)
-- [Conseils pour les développeurs .NET](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [Conseils pour les développeurs .NET](../csharp-developer-productivity.md)

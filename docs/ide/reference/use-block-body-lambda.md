@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1f055925a4da916bf88da802e7a4991b0362b057
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5c46506e81e5334efea9060e957269e92e9d49cc
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62789426"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531907"
 ---
 # <a name="use-expression-body-or-block-body-for-lambda-expressions"></a>Utiliser un corps d’expression ou un corps de bloc pour les expressions lambda
 
@@ -24,7 +24,7 @@ Cette refactorisation s’applique à :
 
 **Quoi :** Permet de refactoriser une expression lambda afin d’utiliser un corps d’expression ou un corps de bloc.
 
-**Quand :** Vous souhaitez que vos expressions lambda utilisent un corps d’expression ou un corps de bloc. 
+**Quand :** Vous souhaitez que vos expressions lambda utilisent un corps d’expression ou un corps de bloc.
 
 **Pourquoi :** Vous pouvez refactoriser des expressions lambda pour améliorer la lisibilité selon les préférences de l’utilisateur.
 
@@ -40,4 +40,4 @@ Cette refactorisation s’applique à :
 ## <a name="see-also"></a>Voir aussi
 
 - [Refactorisation](../refactoring-in-visual-studio.md)
-- [Conseils pour les développeurs .NET](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [Conseils pour les développeurs .NET](../csharp-developer-productivity.md)
