@@ -34,12 +34,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f9150a815f424c0b4a7bfe5f2e92ea7cd424ddb
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: a284c3630b60d5fc2211064524d87259b1f8349f
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62902097"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614513"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Utilisez des points d’arrêt dans le débogueur Visual Studio
 Points d’arrêt sont une des techniques de débogage plus importantes dans la boîte à outils du développeur de votre. Vous définissez des points d’arrêt là où vous souhaitez suspendre l’exécution du débogueur. Par exemple, vous souhaitez afficher l’état des variables de code ou examiner la pile des appels à un certain point d’arrêt. Si c’est la première fois que vous essayez de déboguer du code, vous pouvez lire [Débogage pour grands débutants](../debugger/debugging-absolute-beginners.md) avant de poursuivre cet article.
@@ -267,7 +267,7 @@ Lorsque vous sélectionnez **Expression conditionnelle**, vous pouvez choisir en
 
 2. Démarrez le débogage et lors de l’exécution s’arrête au point d’arrêt, sélectionnez **déboguer** > **Windows** > **variables locales** ou **Alt** + **4** pour ouvrir le **variables locales** fenêtre.
 
-   Rechercher le point d’arrêt dans le **variables locales** fenêtre, faites un clic droit, puis sélectionnez **Make Object ID**.
+   Trouver l’instance d’objet spécifique dans le **variables locales** fenêtre, faites un clic droit, puis sélectionnez **Make Object ID**.
 
    Le symbole **$** et un nombre s’affichent alors dans la fenêtre **Variables locales** . Il s’agit de l’ID d’objet.
 

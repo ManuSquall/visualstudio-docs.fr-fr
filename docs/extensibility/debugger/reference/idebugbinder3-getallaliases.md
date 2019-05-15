@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed8545431dc0cb643ba18d415285447f8a66f66e
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: f54ad96b3e6e1832e63e858609a0a1d6ecbcc93e
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62923703"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65614779"
 ---
 # <a name="idebugbinder3getallaliases"></a>IDebugBinder3::GetAllAliases
 Cette méthode récupère une liste d’alias à partir du programme.
@@ -40,18 +43,15 @@ int GetAllAliases(
 );
 ```
 
-#### <a name="parameters"></a>Paramètres
- `uRequest`
+## <a name="parameters"></a>Paramètres
+`uRequest`\
+[in] Le nombre maximal d’alias à retourner (spécifie la longueur du tableau passé dans `ppAliases`).
 
- [in] Le nombre maximal d’alias à retourner (spécifie la longueur du tableau passé dans `ppAliases`).
+`ppAliases`\
+[in, out] Tableau à remplir avec des alias (s’il s’agit d’une valeur null et `uRequest` est 0, le nombre d’alias qui peuvent être retournées est renvoyé par `puFetched`).
 
- `ppAliases`
-
- [in, out] Tableau à remplir avec des alias (s’il s’agit d’une valeur null et `uRequest` est 0, le nombre d’alias qui peuvent être retournées est renvoyé par `puFetched`).
-
- `puFetched`
-
- [out] Retourne le nombre d’alias obtenu.
+`puFetched`\
+[out] Retourne le nombre d’alias obtenu.
 
 ## <a name="return-value"></a>Valeur de retour
  En cas de réussite, retourne `S_OK`; sinon, retourne un code d’erreur.

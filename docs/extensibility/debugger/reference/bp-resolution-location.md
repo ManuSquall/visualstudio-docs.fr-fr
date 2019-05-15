@@ -12,12 +12,15 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6de035568e1c2aebe853d25dc5f769d233da819
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+dev_langs:
+- CPP
+- CSharp
+ms.openlocfilehash: ea1e70c40846b382364067eae473ec27777b5526
+ms.sourcegitcommit: 77b4ca625674658d5c5766e684fa0e2a07cad4da
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662905"
+ms.lasthandoff: 05/14/2019
+ms.locfileid: "65615367"
 ---
 # <a name="bpresolutionlocation"></a>BP_RESOLUTION_LOCATION
 Spécifie la structure de l’emplacement de la résolution de point d’arrêt.
@@ -46,35 +49,29 @@ public struct BP_RESOLUTION_LOCATION {
 ```
 
 ## <a name="members"></a>Membres
-`bpType` Une valeur comprise entre le [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) énumération qui spécifie comment interpréter les `bpResLocation` union ou `unionmemberX` membres.
+`bpType`\
+Une valeur comprise entre le [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) énumération qui spécifie comment interpréter les `bpResLocation` union ou `unionmemberX` membres.
 
-`bpResLocation.bpresCode`
+`bpResLocation.bpresCode`\
+[C++ uniquement] Contient le [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) structure si `bpType`  =  `BPT_CODE`.
 
- [C++ uniquement] Contient le [BP_RESOLUTION_CODE](../../../extensibility/debugger/reference/bp-resolution-code.md) structure si `bpType`  =  `BPT_CODE`.
+`bpResLocation.bpresData`\
+[C++ uniquement] Contient le [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) structure si `bpType`  =  `BPT_DATA`.
 
-`bpResLocation.bpresData`
+`bpResLocation.unused`\
+[C++ uniquement] Un espace réservé.
 
- [C++ uniquement] Contient le [BP_RESOLUTION_DATA](../../../extensibility/debugger/reference/bp-resolution-data.md) structure si `bpType`  =  `BPT_DATA`.
+`unionmember1`\
+[C# uniquement] Consultez la section Notes sur l’interprétation.
 
-`bpResLocation.unused`
+`unionmember2`\
+[C# uniquement] Consultez la section Notes sur l’interprétation.
 
- [C++ uniquement] Un espace réservé.
+`unionmember3`\
+[C# uniquement] Consultez la section Notes sur l’interprétation.
 
-`unionmember1`
-
- [C# uniquement] Consultez la section Notes sur l’interprétation.
-
-`unionmember2`
-
- [C# uniquement] Consultez la section Notes sur l’interprétation.
-
-`unionmember3`
-
- [C# uniquement] Consultez la section Notes sur l’interprétation.
-
-`unionmember4`
-
- [C# uniquement] Consultez la section Notes sur l’interprétation.
+`unionmember4`\
+[C# uniquement] Consultez la section Notes sur l’interprétation.
 
 ## <a name="remarks"></a>Notes
 Cette structure est un membre de la [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) et [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) structures.
