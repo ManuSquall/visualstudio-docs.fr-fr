@@ -9,12 +9,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0ce1b620a6d8aba7e4aea767745891dff6d9f869
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 9124054dec08fde94ec98ca9e3ebdfb6e48d7384
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62790046"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531631"
 ---
 # <a name="generate-usings-in-visual-studio"></a>Générer des instructions using dans Visual Studio
 
@@ -32,7 +32,7 @@ Cette génération de code s’applique à :
 
 1. Copiez le code d’un autre fichier et collez-le dans un nouveau fichier sans inclure les instructions `using` nécessaires. L’erreur qui s’affiche est accompagnée d’un correctif de code qui ajoute les instructions `using` manquantes.
 
-    > [!NOTE] 
+    > [!NOTE]
     > Vous devez activer cette suggestion dans **Outils > Options > Éditeur de texte > C# > Avancé > Directives Using**.
 
 2. Sélectionnez Ctrl+. pour ouvrir le menu **Actions rapides et refactorisations**.
@@ -47,4 +47,4 @@ Cette génération de code s’applique à :
 
 - [Génération de code](../code-generation-in-visual-studio.md)
 - [Aperçu des modifications](../../ide/preview-changes.md)
-- [Conseils pour les développeurs .NET](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [Conseils pour les développeurs .NET](../csharp-developer-productivity.md)

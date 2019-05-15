@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f263be2e26100c7b61bffca35df39b945d88a91
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: aa2c9a4585947fb7d2e21d1eea4e6613cdd33964
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62581979"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531667"
 ---
 # <a name="features-of-the-code-editor"></a>Fonctionnalités de l’éditeur de code
 
@@ -52,7 +52,7 @@ De nombreuses fonctionnalités avancées sont disponibles dans le menu **Éditio
 
 |||
 |-|-|
-|[Mettre le document en forme](code-styles-and-quick-actions.md#format-document-command)|Définit la mise en retrait appropriée des lignes de code et place des accolades pour séparer les lignes dans le document.|
+|Mettre le document en forme|Définit la mise en retrait appropriée des lignes de code et place des accolades pour séparer les lignes dans le document.|
 |Mettre la sélection en forme|Définit la mise en retrait appropriée des lignes de code et place des accolades pour séparer les lignes dans la sélection.|
 |Remplacer les espaces par des tabulations|Remplace les espaces à gauche par des tabulations le cas échéant.|
 |Remplacer les tabulations par des espaces|Remplace les tabulations à gauche par des espaces. Si vous souhaitez convertir tous les espaces de votre fichier en tabulations (ou toutes les tabulations en espaces), vous pouvez utiliser les commandes `Edit.ConvertSpacesToTabs` et `Edit.ConvertTabsToSpaces`. Ces commandes n’apparaissent pas dans les menus de Visual Studio, mais vous pouvez les appeler à partir de la fenêtre **Accès rapide** ou de la fenêtre Commande.|
@@ -84,7 +84,7 @@ Vous pouvez partager vos paramètres Visual Studio avec un autre développeur, r
 
 Pour définir de nouvelles touches d’accès rapide ou en redéfinir d’anciennes, accédez à **Outils** > **Options** > **Environnement** > **Clavier**. Pour plus d’informations sur les touches d’accès rapide, consultez la page [Raccourcis clavier par défaut](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
-Pour plus d’informations sur la personnalisation de l’éditeur, consultez [Personnaliser l’éditeur](../ide/customizing-the-editor.md). Pour connaître les options de l’éditeur propres à JavaScript, consultez la page [Options JavaScript de l’éditeur](../ide/reference/options-text-editor-javascript-formatting.md).
+Pour connaître les options de l’éditeur propres à JavaScript, consultez la page [Options JavaScript de l’éditeur](../ide/reference/options-text-editor-javascript-formatting.md).
 
 ## <a name="see-also"></a>Voir aussi
 

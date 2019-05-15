@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7d59b61cff622a9ba305ebfa86f7c0ebe3c00fe3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 3931ae53fc29b0ffd8b8b6e96951a0f4786ff756
+ms.sourcegitcommit: 614d5b99576ea27a41957cd94062dc95cbd29c1c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62422224"
+ms.lasthandoff: 05/10/2019
+ms.locfileid: "65531674"
 ---
 # <a name="invert-conditional-expressions-and-conditional-andor-operators"></a>Inverser des expressions conditionnelles et des opérateurs AND/OR conditionnels
 
@@ -43,4 +43,4 @@ Cette refactorisation s’applique à :
 ## <a name="see-also"></a>Voir aussi
 
 - [Refactorisation](../refactoring-in-visual-studio.md)
-- [Conseils pour les développeurs .NET](../../ide/visual-studio-2017-for-dotnet-developers.md)
+- [Conseils pour les développeurs .NET](../csharp-developer-productivity.md)
