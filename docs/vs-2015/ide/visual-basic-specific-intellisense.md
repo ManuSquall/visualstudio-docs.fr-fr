@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 629683131b93534350439867e41b97ca3bbf3b5a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f471ed62a3bb53c4779c0b2d80315f10bfc85993
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106876"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696480"
 ---
 # <a name="visual-basic-specific-intellisense"></a>Options IntelliSense spécifiques à Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ L’éditeur de code source de Visual Basic propose les fonctionnalités Intelli
   
 - Conseils de syntaxe  
   
-     Les conseils syntaxiques affichent la syntaxe de l’instruction que vous tapez. Cela est utile pour les instructions telles que [Declare](http://msdn.microsoft.com/library/d3f21fb0-b804-4c99-97ed-583b23894cf1).  
+     Les conseils syntaxiques affichent la syntaxe de l’instruction que vous tapez. Cela est utile pour les instructions telles que [Declare](https://msdn.microsoft.com/library/d3f21fb0-b804-4c99-97ed-583b23894cf1).  
   
 ## <a name="automatic-completion"></a>Saisie semi-automatique  
   

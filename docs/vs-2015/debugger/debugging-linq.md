@@ -20,12 +20,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9a2a7dac47731626407b34e49a3e0085d1a91b4d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0292bf5b62bf150a598b4c750929ba6928216a50
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108566"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691267"
 ---
 # <a name="debugging-linq"></a>Débogage LINQ
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60108566"
 ## <a name="BKMK_ViewingLINQResults"></a> Affichage des résultats LINQ  
  Vous pouvez consulter le résultat d'une instruction LINQ à l'aide des DataTips, de la fenêtre Espion et de la boîte de dialogue Espion express. Lorsque vous utilisez une fenêtre source, vous pouvez suspendre le pointeur sur une requête dans la fenêtre source pour afficher un DataTip. Vous pouvez copier une variable LINQ et la coller dans la fenêtre Espion ou dans la boîte de dialogue Espion express.  
   
- Dans LINQ, une requête n'est pas évaluée lorsqu'elle est créée ou déclarée, mais uniquement lors de son utilisation. Par conséquent, la requête ne possède de valeur que lorsqu'elle est évaluée. Pour obtenir une description complète de la création de requête et d’évaluation, consultez [Introduction aux requêtes LINQ (c#)](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8) ou [écrire votre première requête LINQ](http://msdn.microsoft.com/library/4affb732-3e9b-4479-aa31-1f9bd8183cbe).  
+ Dans LINQ, une requête n'est pas évaluée lorsqu'elle est créée ou déclarée, mais uniquement lors de son utilisation. Par conséquent, la requête ne possède de valeur que lorsqu'elle est évaluée. Pour obtenir une description complète de la création de requête et d’évaluation, consultez [Introduction aux requêtes LINQ (c#)](https://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8) ou [écrire votre première requête LINQ](https://msdn.microsoft.com/library/4affb732-3e9b-4479-aa31-1f9bd8183cbe).  
   
  Pour afficher le résultat d'une requête, le débogueur doit l'évaluer. Cette évaluation implicite, qui se produit lorsque vous consultez le résultat d'une requête LINQ dans le débogueur, entraîne quelques effets dont vous devez tenir compte :  
   
@@ -50,7 +50,7 @@ ms.locfileid: "60108566"
  Dans les requêtes LINQ to SQL, le code de prédicat n’est pas contrôlé par le débogueur. Par conséquent, vous ne pouvez pas effectuer d’exécution pas à pas du code de prédicat. Toute requête compilée en une arborescence de l’expression génère du code qui n’est pas contrôlé par le débogueur.  
   
 ### <a name="stepping-in-visual-basic"></a>Exécution pas à pas dans Visual Basic  
- Lorsque vous exécutez un programme Visual Basic pas à pas, si le débogueur rencontre une déclaration de requête, il n'effectue pas de pas à pas détaillé dans la déclaration, mais met en surbrillance la déclaration entière en tant qu'instruction unique. Ce comportement se produit car la requête n'est évaluée que lorsqu'elle est appelée. Pour plus d’informations, consultez [Introduction à LINQ en Visual Basic](http://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984).  
+ Lorsque vous exécutez un programme Visual Basic pas à pas, si le débogueur rencontre une déclaration de requête, il n'effectue pas de pas à pas détaillé dans la déclaration, mais met en surbrillance la déclaration entière en tant qu'instruction unique. Ce comportement se produit car la requête n'est évaluée que lorsqu'elle est appelée. Pour plus d’informations, consultez [Introduction à LINQ en Visual Basic](https://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984).  
   
  Si vous effectuez un pas à pas dans l'exemple de code suivant, le débogueur met en surbrillance la déclaration de requête (Query creation) en tant qu'instruction unique.  
   
@@ -117,8 +117,8 @@ End Function
  Dans Visual Basic, vous pouvez utiliser Modifier &amp; Continuer dans du code non-LINQ, même dans une méthode contenant une requête LINQ. Vous pouvez ajouter ou supprimer du code avant l'instruction LINQ, même si les modifications apportées concernent le numéro de ligne de la requête LINQ. Votre expérience de débogage Visual Basic pour du code non-LINQ reste telle qu'elle était avant l'introduction de LINQ. Toutefois, vous ne pouvez pas modifier, ajouter ou supprimer une requête LINQ, sauf si vous voulez arrêter le débogage afin d'appliquer les modifications apportées.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Débogage SQL](http://msdn.microsoft.com/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)   
- [Side Effects and Expressions](http://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e)   
+ [Débogage SQL](https://msdn.microsoft.com/f27c17e6-1d90-49f2-9fc0-d02e6a27f109)   
+ [Side Effects and Expressions](https://msdn.microsoft.com/library/e1f8a6ea-9e19-481d-b6bd-df120ad3bf4e)   
  [Gestion des exceptions avec le débogueur](../debugger/managing-exceptions-with-the-debugger.md)   
- [Introduction aux requêtes LINQ (C#)](http://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)   
- [Introduction à LINQ en Visual Basic](http://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984)
+ [Introduction aux requêtes LINQ (C#)](https://msdn.microsoft.com/library/37895c02-268c-41d5-be39-f7d936fa88a8)   
+ [Introduction à LINQ en Visual Basic](https://msdn.microsoft.com/library/3047d86e-0d49-40e2-928b-dc02e46c7984)

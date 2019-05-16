@@ -16,12 +16,12 @@ caps.latest.revision: 9
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 1ebe75fae15069efc5e76ac59e6f16f9ca06d1ae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e5284ae41f961d8e027590b4296037236e7108f6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947296"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699436"
 ---
 # <a name="intrinsic-functions"></a>Fonctions intrinsèques
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,8 +46,8 @@ Une expression dans SAL peut être une expression C/C++ condition qu’il soit u
 |Annotation|Description|  
 |----------------|-----------------|  
 |`_String_length_(param)`|`param` est le nombre d’éléments dans la chaîne jusqu'à mais ne pas y compris une marque de fin null. Cette annotation est réservée pour les types de chaîne de caractères.|  
-|`strlen(param)`|`param` est le nombre d’éléments dans la chaîne jusqu'à mais ne pas y compris une marque de fin null. Cette annotation est réservée pour utilisation sur le caractère tableaux et ressemble à la fonction Runtime C [strlen()](http://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2).|  
-|`wcslen(param)`|`param` est le nombre d’éléments dans la chaîne jusqu'à (mais sans inclure) un terminateur null. Cette annotation est réservée pour utilisation sur le caractère large tableaux et ressemble à la fonction Runtime C [wcslen()](http://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2).|  
+|`strlen(param)`|`param` est le nombre d’éléments dans la chaîne jusqu'à mais ne pas y compris une marque de fin null. Cette annotation est réservée pour utilisation sur le caractère tableaux et ressemble à la fonction Runtime C [strlen()](https://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2).|  
+|`wcslen(param)`|`param` est le nombre d’éléments dans la chaîne jusqu'à (mais sans inclure) un terminateur null. Cette annotation est réservée pour utilisation sur le caractère large tableaux et ressemble à la fonction Runtime C [wcslen()](https://msdn.microsoft.com/library/16462f2a-1e0f-4eb3-be55-bf1c83f374c2).|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Utilisation d’Annotations SAL pour réduire les défauts du Code C/C++](../code-quality/using-sal-annotations-to-reduce-c-cpp-code-defects.md)   

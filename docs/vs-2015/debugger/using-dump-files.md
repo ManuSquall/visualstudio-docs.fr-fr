@@ -25,12 +25,12 @@ caps.latest.revision: 56
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 11a3dc0e144ef49f6dcfbe6d8ea0c6dfbc4bca40
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 3a316006ba8983e00906e041d243d8f7c82d6277
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071770"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684303"
 ---
 # <a name="using-dump-files"></a>À l’aide de fichiers de vidage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,11 +76,11 @@ Fichiers dump avec ou sans tas ; créez un fichier dump ; ouvrez un fichier du
   
 - Visual Studio peut déboguer les fichiers dump des applications natives à partir des périphériques ARM. Visual Studio peut également déboguer les fichiers dump des applications managées à partir des périphériques ARM, mais uniquement dans le débogueur natif.  
   
-- Pour déboguer [en mode noyau](http://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) vider les fichiers dans Visual Studio 2013, téléchargez le [Windows 8.1 Version de débogage outils pour Windows](http://msdn.microsoft.com/windows/hardware/gg463009). Consultez [le débogage du noyau dans Visual Studio](http://msdn.microsoft.com/library/windows/hardware/jj149675.aspx).  
+- Pour déboguer [en mode noyau](https://msdn.microsoft.com/library/windows/hardware/ff551880.aspx) vider les fichiers dans Visual Studio 2013, téléchargez le [Windows 8.1 Version de débogage outils pour Windows](https://msdn.microsoft.com/windows/hardware/gg463009). Consultez [le débogage du noyau dans Visual Studio](https://msdn.microsoft.com/library/windows/hardware/jj149675.aspx).  
   
 - Visual Studio ne peut pas déboguer des fichiers dump enregistrés dans l’ancien format dump appelé un [dump complet en mode utilisateur](/windows-hardware/drivers/debugger/user-mode-dump-files#full). Notez qu'un dump complet en mode utilisateur n'est pas le même qu'un dump avec le tas.  
   
-- Pour déboguer avec le [SOS.dll (Extension de débogage SOS)](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498) dans Visual Studio, vous devez installer le débogage outils pour Windows qui fait partie du Kit WDK (Windows Driver Kit). Consultez [Windows 8.1 Preview : Téléchargez les kits, bits et outils](http://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
+- Pour déboguer avec le [SOS.dll (Extension de débogage SOS)](https://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498) dans Visual Studio, vous devez installer le débogage outils pour Windows qui fait partie du Kit WDK (Windows Driver Kit). Consultez [Windows 8.1 Preview : Téléchargez les kits, bits et outils](https://msdn.microsoft.com/library/windows/hardware/bg127147.aspx).  
   
   ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   
@@ -91,7 +91,7 @@ Fichiers dump avec ou sans tas ; créez un fichier dump ; ouvrez un fichier du
   
 - Avec [débogage juste à temps](../debugger/just-in-time-debugging-in-visual-studio.md) activé, vous pouvez attacher le débogueur à un processus bloqué qui s’exécute en dehors du débogueur, puis enregistrez un fichier de vidage. Consultez [attacher au processus en cours d’exécution](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md)  
   
-  Vous pouvez également créer des fichiers dump avec n'importe quel programme qui prend en charge le format minidump Windows. Par exemple, le **Procdump** utilitaire de ligne de commande à partir de [Windows Sysinternals](http://technet.microsoft.com/sysinternals/default) peut créer des fichiers de vidage sur incident de processus basés sur des déclencheurs ou à la demande. Consultez [spécifications et limitations](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) dans cette rubrique pour plus d’informations sur l’utilisation d’autres outils pour créer des fichiers de vidage.  
+  Vous pouvez également créer des fichiers dump avec n'importe quel programme qui prend en charge le format minidump Windows. Par exemple, le **Procdump** utilitaire de ligne de commande à partir de [Windows Sysinternals](https://technet.microsoft.com/sysinternals/default) peut créer des fichiers de vidage sur incident de processus basés sur des déclencheurs ou à la demande. Consultez [spécifications et limitations](../debugger/using-dump-files.md#BKMK_Requirements_and_limitations) dans cette rubrique pour plus d’informations sur l’utilisation d’autres outils pour créer des fichiers de vidage.  
   
   ![Retour au début](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Sommaire](#BKMK_Contents)  
   

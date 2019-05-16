@@ -16,19 +16,19 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 55b24facd3a9ec935277a42c211a64d824ed6d7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: deb2e446ff051b52e9c34d28abfa99436c064ad6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116743"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65680908"
 ---
 # <a name="extract-interface-refactoring-c"></a>Refactorisation d'extraction d'interface (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Extraire l’Interface est une opération de refactorisation qui offre un moyen facile de créer une nouvelle interface avec des membres qui proviennent d’une classe existante, un struct ou une interface.  
   
- Lorsque plusieurs clients utilisent le même sous-ensemble de membres à partir d’une classe, un struct ou une interface, ou lorsque plusieurs classes, structs ou interfaces ont en commun un sous-ensemble de membres, il peut être utile de mettre le sous-ensemble de membres dans une interface. Pour plus d’informations sur l’utilisation d’interfaces, consultez [Interfaces](http://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37).  
+ Lorsque plusieurs clients utilisent le même sous-ensemble de membres à partir d’une classe, un struct ou une interface, ou lorsque plusieurs classes, structs ou interfaces ont en commun un sous-ensemble de membres, il peut être utile de mettre le sous-ensemble de membres dans une interface. Pour plus d’informations sur l’utilisation d’interfaces, consultez [Interfaces](https://msdn.microsoft.com/library/2feda177-ce11-432d-81b4-d50f5f35fd37).  
   
  Extraire l’Interface génère une interface dans un nouveau fichier et place le curseur au début du nouveau fichier. Vous pouvez spécifier les membres à extraire dans la nouvelle interface, le nom de la nouvelle interface et le nom du fichier généré en utilisant le **extraire l’Interface** boîte de dialogue.  
   

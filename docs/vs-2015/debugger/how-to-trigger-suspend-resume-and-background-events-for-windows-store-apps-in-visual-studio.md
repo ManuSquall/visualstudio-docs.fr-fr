@@ -16,12 +16,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ecf43708b854ebee444d2117bc32df41907118a3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d341f0550cfa3c978e94152fb792c5b73c68cc74
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442726"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685930"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-for-windows-store-apps-in-visual-studio"></a>Comment déclencher des événements de suspension, de reprise et d'arrière-plan pour les applications Windows Store dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Lorsque vous n'effectuez pas de débogage, Windows **Process Lifetime Management
 
  Cette rubrique décrit également comment déboguer les **tâches en arrière-plan**. Les tâches en arrière-plan vous permettent d'effectuer certaines opérations dans un processus en arrière-plan, même lorsque votre application n'est pas en cours d'exécution. Utilisez le débogueur pour placer votre application en mode débogage, puis, sans démarrer l'interface utilisateur, démarrez et déboguez la tâche en arrière-plan.
 
- Pour plus d'informations sur PLM (Process Lifetime Management) et les tâches en arrière-plan, consultez [Launching, resuming, and multitasking](http://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b).
+ Pour plus d'informations sur PLM (Process Lifetime Management) et les tâches en arrière-plan, consultez [Launching, resuming, and multitasking](https://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b).
 
 ## <a name="BKMK_In_this_topic"></a> Dans cette rubrique
  [Déclencher les événements PLM (Process Lifetime Management)](#BKMK_Trigger_Process_Lifecycle_Management_events)
@@ -63,7 +63,7 @@ Lorsque vous n'effectuez pas de débogage, Windows **Process Lifetime Management
      Notez que **Interrompre et quitter** ferme l'application et termine la session de débogage.
 
 ## <a name="BKMK_Trigger_background_tasks"></a> Déclencher les tâches en arrière-plan
- Une application peut enregistrer une tâche en arrière-plan pour répondre à certains événements système, même si l'application n'est pas en cours d'exécution. Les tâches en arrière-plan ne peuvent pas exécuter le code qui met à jour directement l'interface utilisateur; En fait, elles affichent des informations à l'utilisateur avec des mises à jour de mosaïque, des mises à jour de badge et des notifications contextuelles. Pour plus d'informations, consultez [Supporting your app with background tasks](http://msdn.microsoft.com/4c7bb148-eb1f-4640-865e-41f627a46e8e)
+ Une application peut enregistrer une tâche en arrière-plan pour répondre à certains événements système, même si l'application n'est pas en cours d'exécution. Les tâches en arrière-plan ne peuvent pas exécuter le code qui met à jour directement l'interface utilisateur; En fait, elles affichent des informations à l'utilisateur avec des mises à jour de mosaïque, des mises à jour de badge et des notifications contextuelles. Pour plus d'informations, consultez [Supporting your app with background tasks](https://msdn.microsoft.com/4c7bb148-eb1f-4640-865e-41f627a46e8e)
 
  Déclenchez les événements qui démarrent les tâches en arrière-plan pour votre application à partir du débogueur.
 
@@ -125,4 +125,4 @@ Lorsque vous n'effectuez pas de débogage, Windows **Process Lifetime Management
 4. Choisissez le journal **Diagnostic** .
 
 ## <a name="see-also"></a>Voir aussi
- [Test des applications de Store avec Visual Studio](../test/testing-store-apps-with-visual-studio.md) [déboguer des applications dans Visual Studio](../debugger/debug-store-apps-in-visual-studio.md) [cycle de vie des applications](http://msdn.microsoft.com/53cdc987-c547-49d1-a5a4-fd3f96b2259d) [Launching, resuming et multitâche](http://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b)
+ [Test des applications de Store avec Visual Studio](../test/testing-store-apps-with-visual-studio.md) [déboguer des applications dans Visual Studio](../debugger/debug-store-apps-in-visual-studio.md) [cycle de vie des applications](https://msdn.microsoft.com/53cdc987-c547-49d1-a5a4-fd3f96b2259d) [Launching, resuming et multitâche](https://msdn.microsoft.com/04307b1b-05af-46a6-b639-3f35e297f71b)

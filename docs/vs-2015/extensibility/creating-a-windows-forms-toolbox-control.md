@@ -12,12 +12,12 @@ ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 769a2243cd43eb085db081b7087731a8135f839b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 03fcc73c58baa1482c53e104a9946ffaa354f1a0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082215"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698962"
 ---
 # <a name="creating-a-windows-forms-toolbox-control"></a>Création d’un contrôle de boîte à outils Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -214,4 +214,4 @@ Le modèle d’élément de contrôle de boîte à outils Windows Forms qui est 
  [Extension de la boîte à outils](../misc/extending-the-toolbox.md)   
  [Création d’un contrôle de boîte à outils WPF](../extensibility/creating-a-wpf-toolbox-control.md)   
  [Extension d’autres parties de Visual Studio](../extensibility/extending-other-parts-of-visual-studio.md)   
- [Concepts de base du développement de contrôles Windows Forms](http://msdn.microsoft.com/library/6277bb81-90f7-4c5b-9f4b-b02bb42dd316)
+ [Concepts de base du développement de contrôles Windows Forms](https://msdn.microsoft.com/library/6277bb81-90f7-4c5b-9f4b-b02bb42dd316)

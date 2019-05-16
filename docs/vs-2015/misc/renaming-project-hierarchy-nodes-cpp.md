@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: cea5968e-e9f8-41a5-b068-622df542247c
 caps.latest.revision: 12
 manager: jillfra
-ms.openlocfilehash: 3d1d99bd49d7a5fd78b38262725b65c5d1b3aab9
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
-ms.translationtype: HT
+ms.openlocfilehash: c7ad43fe1fd0e22cd94194d3079761de812b6ced
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62978108"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686586"
 ---
 # <a name="renaming-project-hierarchy-nodes-c"></a>Changement de nom des nœuds de hiérarchie de projet (C++)
-Vous pouvez renommer un nœud de hiérarchie de dossier de projet à l’aide de l’infrastructure de projet HierUtil7 pour C++ non managé. Pour plus d’informations, consultez [exemple HierUtil7](http://msdn.microsoft.com/29c15184-a70c-4813-86c2-fb1d47442d11).  
+Vous pouvez renommer un nœud de hiérarchie de dossier de projet à l’aide de l’infrastructure de projet HierUtil7 pour C++ non managé. Pour plus d’informations, consultez [exemple HierUtil7](https://msdn.microsoft.com/29c15184-a70c-4813-86c2-fb1d47442d11).  
   
 ## <a name="expanding-the-hierarchy-node"></a>En développant le nœud de hiérarchie  
   

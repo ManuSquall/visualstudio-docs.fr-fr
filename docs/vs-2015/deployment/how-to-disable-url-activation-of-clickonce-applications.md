@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 345e58b2c2a783bc9ffda8b915bf8baa66ad375a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 75a98706858323693ec01ec3c3420a6d2d25ffef
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046966"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697225"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications"></a>Procédure : Suspendre l’activation des URL des applications ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ En règle générale, une application [!INCLUDE[ndptecclick](../includes/ndptecc
   
  Cette technique peut être utilisée uniquement pour les applications [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] installées sur l'ordinateur de l'utilisateur à partir d'un serveur web. Elle ne peut pas être utilisée pour les applications en ligne uniquement, qui peuvent être lancées uniquement à l'aide de leur URL. Pour plus d’informations sur la différence entre les applications en ligne uniquement et les applications installées, consultez [Choix d’une stratégie de déploiement ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).  
   
- Cette procédure utilise l'outil du [!INCLUDE[winsdklong](../includes/winsdklong-md.md)] MageUI.exe. Pour plus d’informations sur cet outil, consultez [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14). Vous pouvez également effectuer cette procédure avec [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+ Cette procédure utilise l'outil du [!INCLUDE[winsdklong](../includes/winsdklong-md.md)] MageUI.exe. Pour plus d’informations sur cet outil, consultez [MageUI.exe (Manifest Generation and Editing Tool, Graphical Client)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14). Vous pouvez également effectuer cette procédure avec [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="procedure"></a>Procédure  
   

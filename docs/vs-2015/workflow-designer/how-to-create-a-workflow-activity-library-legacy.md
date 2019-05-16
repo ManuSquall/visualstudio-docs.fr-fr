@@ -13,12 +13,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a94fbfd319489df0ac3bcbaf474c6a58cef66868
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9baa358c3728c6cbedc5f8768b29ba7efe64b399
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432375"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703295"
 ---
 # <a name="how-to-create-a-workflow-activity-library-legacy"></a>Procédure : Créer une bibliothèque d’activités de workflow (héritée)
 Suivez ces étapes pour créer un projet de bibliothèque d'activités de workflow à l'aide du [!INCLUDE[wfd1](../includes/wfd1-md.md)] hérité fourni par [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -52,5 +52,5 @@ Suivez ces étapes pour créer un projet de bibliothèque d'activités de workfl
  [Création de projets de flux de travail hérités](../workflow-designer/creating-legacy-workflow-projects.md)   
  [À l’aide du Concepteur d’activités hérité](../workflow-designer/using-the-legacy-activity-designer.md)   
  [Activités de flux de travail hérité](../workflow-designer/legacy-workflow-activities.md)   
- [Développement d’activités de flux de travail](http://msdn.microsoft.com/19876dfc-dfa5-4d52-b1f5-1d087474cc52)   
- [Activités Windows Workflow Foundation](http://msdn.microsoft.com/192c4c1e-afb6-4f58-ab11-2b5bbbc2d2c0)
+ [Développement d’activités de flux de travail](https://msdn.microsoft.com/19876dfc-dfa5-4d52-b1f5-1d087474cc52)   
+ [Activités Windows Workflow Foundation](https://msdn.microsoft.com/192c4c1e-afb6-4f58-ab11-2b5bbbc2d2c0)

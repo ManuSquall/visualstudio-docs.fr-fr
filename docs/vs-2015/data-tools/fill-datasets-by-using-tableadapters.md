@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0d4fca66296f4437d3c9af55142d9fdbc56f21b7
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fb06c1d97c854aae05d993c086069e10e35518f5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431946"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704984"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Remplir des datasets à l’aide de TableAdapters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Un composant du TableAdapter remplit un dataset avec des données à partir de l
  [!code-vb[VbRaddataTableAdapters#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Class1.vb#7)]  
   
 ## <a name="associated-datatable-schema"></a>Schéma du DataTable associé  
- Lorsque vous créez un TableAdapter, vous utilisez la requête initiale ou une procédure stockée pour définir le schéma du TableAdapter associé au <xref:System.Data.DataTable>. Exécutez cette requête initiale ou de la procédure stockée en appelant le TableAdapter `Fill` (méthode) (qui remplit le TableAdapter associé au <xref:System.Data.DataTable>). Toutes les modifications sont apportées à la requête principale du TableAdapter sont répercutées dans le schéma de la table de données associée. Par exemple, la suppression d’une colonne de la requête principale supprime également la colonne à partir de la table de données associée. Si toutes les requêtes supplémentaires sur le TableAdapter utilisent des instructions SQL qui retournent les colonnes qui ne sont pas dans la requête principale, le concepteur tente de synchroniser les modifications de colonne entre la requête principale et les requêtes supplémentaires. Pour plus d'informations, voir [Procédure : Modifier des TableAdapters](http://msdn.microsoft.com/library/ca178745-e35a-45f1-a395-23cddfd8f855).  
+ Lorsque vous créez un TableAdapter, vous utilisez la requête initiale ou une procédure stockée pour définir le schéma du TableAdapter associé au <xref:System.Data.DataTable>. Exécutez cette requête initiale ou de la procédure stockée en appelant le TableAdapter `Fill` (méthode) (qui remplit le TableAdapter associé au <xref:System.Data.DataTable>). Toutes les modifications sont apportées à la requête principale du TableAdapter sont répercutées dans le schéma de la table de données associée. Par exemple, la suppression d’une colonne de la requête principale supprime également la colonne à partir de la table de données associée. Si toutes les requêtes supplémentaires sur le TableAdapter utilisent des instructions SQL qui retournent les colonnes qui ne sont pas dans la requête principale, le concepteur tente de synchroniser les modifications de colonne entre la requête principale et les requêtes supplémentaires. Pour plus d'informations, voir [Procédure : Modifier des TableAdapters](https://msdn.microsoft.com/library/ca178745-e35a-45f1-a395-23cddfd8f855).  
   
 ## <a name="tableadapter-update-commands"></a>Commandes de mise à jour de TableAdapter  
  La fonctionnalité de mise à jour d’un TableAdapter est dépendante de la quantité d’informations est disponible dans la requête principale dans l’Assistant TableAdapter. Par exemple, les TableAdapters configurés pour extraire des valeurs provenant de plusieurs tables (jointures), des valeurs scalaires, vues ou les résultats des fonctions d’agrégation ne sont pas initialement créées avec la possibilité de renvoyer des mises à jour à la base de données sous-jacente. Toutefois, vous pouvez configurer les commandes INSERT, UPDATE et DELETE manuellement dans le **propriétés** fenêtre.  
@@ -106,7 +106,7 @@ Un composant du TableAdapter remplit un dataset avec des données à partir de l
  Si vous ne souhaitez pas créer ces méthodes directes, affectez à la **GenerateDbDirectMethods** propriété `false` (dans le **propriétés** fenêtre). Les requêtes supplémentaires sont ajoutées au TableAdapter sont des requêtes autonomes : ils ne génèrent pas ces méthodes.  
   
 ## <a name="tableadapter-support-for-nullable-types"></a>Prise en charge du TableAdapter pour les types nullables  
- Les TableAdapters prennent en charge les types nullables `Nullable(Of T)` et `T?`. Pour plus d’informations sur les types Nullable dans Visual Basic, consultez [Types valeur Nullable](http://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6). Pour plus d’informations sur les types nullable en c#, consultez [à l’aide des Types Nullable](http://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28).  
+ Les TableAdapters prennent en charge les types nullables `Nullable(Of T)` et `T?`. Pour plus d’informations sur les types Nullable dans Visual Basic, consultez [Types valeur Nullable](https://msdn.microsoft.com/library/9ac3b602-6f96-4e6d-96f7-cd4e81c468a6). Pour plus d’informations sur les types nullable en c#, consultez [à l’aide des Types Nullable](https://msdn.microsoft.com/library/0bacbe72-ce15-4b14-83e1-9c14e6380c28).  
   
 ## <a name="security"></a>Sécurité  
  Lorsque vous utilisez les commandes de données avec un `CommandType` propriété définie sur <xref:System.Data.CommandType>, soigneusement vérifier les informations qui sont envoyées à partir d’un client avant de le transmettre à votre base de données. Des utilisateurs malveillants peuvent tenter d’envoyer (injecter) des instructions SQL modifiées ou supplémentaires afin d’accéder à la base de données ou de l’endommager. Avant de transférer l’entrée utilisateur et une base de données, vérifiez toujours que les informations sont valides. Une bonne pratique consiste à toujours utiliser des requêtes paramétrables ou les procédures stockées lorsque cela est possible.  

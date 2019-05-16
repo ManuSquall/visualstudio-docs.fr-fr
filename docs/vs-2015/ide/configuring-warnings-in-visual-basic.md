@@ -13,12 +13,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5a33e1d4f2ddecdb467929edaae9ba184bfae920
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3fb723097a3b61508d9f9023d3a2ea1dcdb5f8f6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54763231"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701416"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>Configuration d'avertissements en Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -121,9 +121,9 @@ Le compilateur [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] inclut un ensemble d
   
 ## <a name="see-also"></a>Voir aussi  
  [Assistant Exception, boîte de dialogue](../debugger/exception-assistant-dialog-box.md)   
- [Types d’erreurs](http://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)   
- [Try...Catch...Finally (instruction)](http://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b)   
- [/nowarn](http://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83)   
- [/warnaserror (Visual Basic)](http://msdn.microsoft.com/library/49819f1d-a1bd-4201-affe-5afe6d9712e1)   
+ [Types d’erreurs](https://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)   
+ [Try...Catch...Finally (instruction)](https://msdn.microsoft.com/library/d6488026-ccb3-42b8-a810-0d97b9d6472b)   
+ [/nowarn](https://msdn.microsoft.com/library/7ebf2106-0652-4fdc-bf60-70fc86465d83)   
+ [/warnaserror (Visual Basic)](https://msdn.microsoft.com/library/49819f1d-a1bd-4201-affe-5afe6d9712e1)   
  [Page Compiler, Concepteur de projet (Visual Basic)](../ide/reference/compile-page-project-designer-visual-basic.md)   
- [Avertissements du compilateur désactivés par défaut](http://msdn.microsoft.com/library/69809cfb-a38a-4035-b154-283a61938df8)
+ [Avertissements du compilateur désactivés par défaut](https://msdn.microsoft.com/library/69809cfb-a38a-4035-b154-283a61938df8)

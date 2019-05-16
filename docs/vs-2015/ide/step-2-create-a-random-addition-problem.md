@@ -9,12 +9,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07e5c91038013f51199212a3215490bbfdf34257
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: b36897236b71617c6eb36949d307e6b3e1d0204b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442624"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693975"
 ---
 # <a name="step-2-create-a-random-addition-problem"></a>Étape 2 : Créer un problème d’addition aléatoire
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Dans la deuxième partie de ce didacticiel, vous rendez le questionnaire plus di
   
      `Random` est connu en tant qu'objet. Vous avez déjà probablement entendu parler de ce mot et vous en apprendrez davantage sur sa signification pour la programmation dans le didacticiel suivant. Pour le moment, souvenez-vous que vous pouvez utiliser des instructions `new` pour créer des boutons, des étiquettes, des panneaux, des éléments OpenFileDialogs, ColorDialogs, SoundPlayers, Randoms, et même des formulaires, et ces éléments sont appelés objets. Quand vous exécutez votre programme, le formulaire est démarré et le code utilisé crée un objet `Random` et le nomme **randomizer**.  
   
-     Bientôt, vous générerez une méthode pour vérifier les réponses. Votre questionnaire doit donc utiliser des variables pour stocker les nombres aléatoires qu'il génère pour chaque problème. Consultez [Variables](http://msdn.microsoft.com/library/4cfaa06d-4ae3-4307-897b-cf599dc24caa) ou [Types](http://msdn.microsoft.com/library/f782d7cc-035e-4500-b1b1-36a9881130ad). Pour utiliser correctement les variables, vous devez les déclarer, ce qui signifie que vous devez répertorier leurs noms et types de données.  
+     Bientôt, vous générerez une méthode pour vérifier les réponses. Votre questionnaire doit donc utiliser des variables pour stocker les nombres aléatoires qu'il génère pour chaque problème. Consultez [Variables](https://msdn.microsoft.com/library/4cfaa06d-4ae3-4307-897b-cf599dc24caa) ou [Types](https://msdn.microsoft.com/library/f782d7cc-035e-4500-b1b1-36a9881130ad). Pour utiliser correctement les variables, vous devez les déclarer, ce qui signifie que vous devez répertorier leurs noms et types de données.  
   
 4. Ajoutez deux variables de type entier au formulaire et nommez-les **addend1** et **addend2**.  
   

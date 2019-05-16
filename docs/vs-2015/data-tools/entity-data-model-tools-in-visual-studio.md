@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e10279740d590b63bb3781afd3486f7952123664
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: da608c7f937a09d56b25b87625580e5047d560cc
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431936"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705048"
 ---
 # <a name="entity-data-model-tools-in-visual-studio"></a>Entity Data Model Tools dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,8 +53,8 @@ Entity Framework est une technologie de mapping objet-relationnel qui permet aux
 
 |Titre|Description|
 |-----------|-----------------|
-|[ADO.NET Entity Framework](http://msdn.microsoft.com/library/a437041f-6899-4ae7-96ce-aabf528d7205)|Décrit comment utiliser [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] outils, qui [!INCLUDE[adonet_ef](../includes/adonet-ef-md.md)] fournit, pour créer des applications.|
-|[Entity Data Model](http://msdn.microsoft.com/library/2dda3d5b-4582-4ba0-a91d-fcd7a1498137)|Fournit des liens et des informations sur l’utilisation des données qui sont utilisées par les applications basées [!INCLUDE[adonet_ef](../includes/adonet-ef-md.md)].|
+|[ADO.NET Entity Framework](https://msdn.microsoft.com/library/a437041f-6899-4ae7-96ce-aabf528d7205)|Décrit comment utiliser [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] outils, qui [!INCLUDE[adonet_ef](../includes/adonet-ef-md.md)] fournit, pour créer des applications.|
+|[Entity Data Model](https://msdn.microsoft.com/library/2dda3d5b-4582-4ba0-a91d-fcd7a1498137)|Fournit des liens et des informations sur l’utilisation des données qui sont utilisées par les applications basées [!INCLUDE[adonet_ef](../includes/adonet-ef-md.md)].|
 |[Mise en route sur .NET complète (Console, WinForms, WPF, etc.).](/ef/ef6/get-started)|Fournit des didacticiels sur la façon de créer des applications de bureau .NET qui utilisent Entity Framework 7.|
 |[ASP.NET 5 Application de la nouvelle base de données](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html)|Décrit comment créer une application ASP.NET 5 à l’aide d’Entity Framework 7.|
 

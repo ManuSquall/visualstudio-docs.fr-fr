@@ -13,12 +13,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84a2449e9686f71cfd932a2bf6047ed0208da1d0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d8e88bcf67c430bdd24c4338d92a30b6a7c10fef
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114806"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675001"
 ---
 # <a name="managing-application-settings-net"></a>Gestion des paramètres d'une application (.NET)
 
@@ -59,7 +59,7 @@ Lorsque vous créez un paramètre de portée utilisateur (par exemple, une polic
 >
 > Si vous obtenez une information de chaîne de connexion à partir d’une source externe, par exemple un utilisateur qui fournit un ID d’utilisateur et un mot de passe, vous devez veiller à ce que les valeurs utilisées pour construire votre chaîne de connexion ne contiennent pas de paramètres de chaîne de connexion supplémentaires qui modifient le comportement de votre connexion.
 >
-> Envisagez l’utilisation de la fonctionnalité de configuration protégée pour chiffrer les informations sensibles dans le fichier de configuration. Pour plus d’informations, consultez [Protection des informations de connexion](http://msdn.microsoft.com/library/1471f580-bcd4-4046-bdaf-d2541ecda2f4).
+> Envisagez l’utilisation de la fonctionnalité de configuration protégée pour chiffrer les informations sensibles dans le fichier de configuration. Pour plus d’informations, consultez [Protection des informations de connexion](https://msdn.microsoft.com/library/1471f580-bcd4-4046-bdaf-d2541ecda2f4).
 
 > [!NOTE]
 > Étant donné qu’il n’y a aucun modèle de fichier de configuration pour les bibliothèques de classes, les paramètres d’application ne s’appliquent pas aux projets Bibliothèque de classes. L’exception est un projet de DLL Visual Studio Tools pour Office, qui peut avoir un fichier de configuration.
@@ -74,7 +74,7 @@ Le Concepteur de paramètres recherche en premier le fichier Settings.settings q
 
 ## <a name="accessing-or-changing-application-settings-at-run-time-in-visual-basic"></a>Accéder ou modifier les paramètres d’application au moment de l’exécution en Visual Basic
 
-Dans les projets [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] , vous pouvez accéder aux paramètres d’application au moment de l’exécution à l’aide de l’objet `My.Settings` . Dans la page **Paramètres** , cliquez sur le bouton **Afficher le code** pour afficher le fichier Settings.vb. Settings.vb définit la classe `Settings` qui vous permet de gérer ces événements sur la classe de paramètres : <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>, <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>, <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>et <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>. Notez que la classe `Settings` dans Settings.vb est une classe partielle qui affiche uniquement le code appartenant à l’utilisateur, non pas l’intégralité de la classe générée. Pour plus d’informations sur l’accès aux paramètres d’application à l’aide de l’objet `My.Settings` , consultez [Accessing Application Settings](http://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e).
+Dans les projets [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] , vous pouvez accéder aux paramètres d’application au moment de l’exécution à l’aide de l’objet `My.Settings` . Dans la page **Paramètres** , cliquez sur le bouton **Afficher le code** pour afficher le fichier Settings.vb. Settings.vb définit la classe `Settings` qui vous permet de gérer ces événements sur la classe de paramètres : <xref:System.Configuration.ApplicationSettingsBase.SettingChanging>, <xref:System.Configuration.ApplicationSettingsBase.PropertyChanged>, <xref:System.Configuration.ApplicationSettingsBase.SettingsLoaded>et <xref:System.Configuration.ApplicationSettingsBase.SettingsSaving>. Notez que la classe `Settings` dans Settings.vb est une classe partielle qui affiche uniquement le code appartenant à l’utilisateur, non pas l’intégralité de la classe générée. Pour plus d’informations sur l’accès aux paramètres d’application à l’aide de l’objet `My.Settings` , consultez [Accessing Application Settings](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e).
 
 Les valeurs de tous les paramètres de portée utilisateur modifiés par l’utilisateur au moment de l’exécution (par exemple, la position d’un formulaire) sont stockées dans un fichier user.config. Notez que les valeurs par défaut restent enregistrées dans app.config.
 
@@ -98,8 +98,8 @@ Vous devez également appeler explicitement la méthode `Save` de cette classe w
 Properties.Settings.Default.Save();
 ```
 
-Pour obtenir des informations générales sur l’accès aux paramètres d’application à l’aide de la classe `Settings`, consultez [Vue d’ensemble des paramètres d’application](http://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc). Pour plus d’informations sur l’itération au sein de paramètres, consultez ce [message de forum](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
+Pour obtenir des informations générales sur l’accès aux paramètres d’application à l’aide de la classe `Settings`, consultez [Vue d’ensemble des paramètres d’application](https://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc). Pour plus d’informations sur l’itération au sein de paramètres, consultez ce [message de forum](http://social.msdn.microsoft.com/Forums/vstudio/40fbb470-f1e8-4a02-a4a0-9f62b54d0fc4/is-this-possible-propertiessettingsdefault?forum=csharpgeneral).
 
 ## <a name="see-also"></a>Voir aussi
 
-- [Accès aux paramètres d’application](http://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)
+- [Accès aux paramètres d’application](https://msdn.microsoft.com/library/e38d0cc7-247a-46ca-ba04-f2913f0adb2e)

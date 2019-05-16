@@ -16,19 +16,19 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 65e766193838060d4c856b6a530a688ef8cd2d1b
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 5eec821993ec1aef2f8b2ad6ad8f5109c07d1156
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62584694"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674762"
 ---
 # <a name="getting-started-with-visual-c-and-visual-basic"></a>Mises en route de Visual Basic et Visual C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Si vous débutez en Visual C# ou en Microsoft Visual Basic, les didacticiels sont un bon point de départ. L'Aide de Mise en route comprend une suite de leçons qui vous initient à Visual C# et à Visual Basic. Amusez-vous et écrivez une grande application logicielle.  
   
- Pour en savoir plus sur Visual C++, consultez les [ressources Visual C++](http://msdn.microsoft.com/vstudio/hh386302.aspx).  
+ Pour en savoir plus sur Visual C++, consultez les [ressources Visual C++](https://msdn.microsoft.com/vstudio/hh386302.aspx).  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Procédure pas à pas : Créer une application simple](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md)  

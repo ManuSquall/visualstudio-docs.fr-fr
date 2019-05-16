@@ -14,19 +14,19 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c594e3837a4fe2c8b2e5a7b69e5db93377a8dc8d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5673ebf28cc652e3bcd973808db87b5bb058659c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442321"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683524"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>Exécuter des applications Windows Phone dans l'émulateur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L'émulateur Windows Phone fournit un environnement virtualisé dans lequel vous pouvez déboguer et tester des applications Windows Phone sur votre ordinateur, sans appareil physique. Vous pouvez simuler des événements tactiles et de rotation courants, et choisir la taille et la résolution de l'écran physique que vous voulez émuler. Vous pouvez également tester plusieurs fonctionnalités couramment utilisées, comme la géolocalisation, la mise en réseau, les notifications, les capteurs, l’accéléromètre et la carte SD en option.  
   
- Pour plus d’informations sur les fonctionnalités que vous pouvez tester dans l’émulateur, consultez [tester les fonctionnalités de l’application dans l’émulateur de Windows Phone](http://msdn.microsoft.com/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1).  
+ Pour plus d’informations sur les fonctionnalités que vous pouvez tester dans l’émulateur, consultez [tester les fonctionnalités de l’application dans l’émulateur de Windows Phone](https://msdn.microsoft.com/c1b2b0ec-b8cc-4a98-84c1-701428e45cb1).  
   
  Avec Visual Studio, l'émulateur fournit un environnement complet dans lequel vous pouvez concevoir, développer, déboguer et tester des applications Windows Phone.  
   
@@ -103,7 +103,7 @@ L'émulateur Windows Phone fournit un environnement virtualisé dans lequel vous
 ### <a name="BKMK_depltool"></a> Exécuter une application avec l’outil de déploiement d’Application  
  Vous pouvez également utiliser l’outil de déploiement d’applications Windows Phone (**AppDeploy.exe**) pour exécuter votre application dans l’émulateur. Cet outil est une application autonome installée avec les outils de développement Windows Phone.  
   
- Pour plus d’informations, consultez [des applications de déployer Windows Phone 8.1 avec l’outil de déploiement d’applications](http://msdn.microsoft.com/library/23700f82-1399-44d9-bc0c-714be4a48ee6).  
+ Pour plus d’informations, consultez [des applications de déployer Windows Phone 8.1 avec l’outil de déploiement d’applications](https://msdn.microsoft.com/library/23700f82-1399-44d9-bc0c-714be4a48ee6).  
   
 ## <a name="BKMK_toolbar"></a> Configurer l’émulateur Windows Phone avec la barre d’outils de l’émulateur  
  Ce tableau montre les boutons de configuration disponibles dans la barre d'outils de l'émulateur.  

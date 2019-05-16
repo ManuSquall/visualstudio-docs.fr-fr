@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
 manager: jillfra
-ms.openlocfilehash: b66724542d45aa6f57b7c2748c7c1cab1ec8c064
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 15a3896f8a2010a063393d3a11c1ed3453a008d5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436561"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689097"
 ---
 # <a name="support-for-settings-categories"></a>Prise en charge des catégories de paramètres
-Une catégorie de paramètres se compose d’un groupe d’options qui personnalisent l’environnement de développement intégré (IDE). Par exemple, des paramètres peuvent contrôler la disposition des fenêtres [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et le contenu des menus. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+Une catégorie de paramètres se compose d’un groupe d’options qui personnalisent l’environnement de développement intégré (IDE). Par exemple, des paramètres peuvent contrôler la disposition des fenêtres [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] et le contenu des menus. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Dans le menu **Outils** , cliquez sur **Importation et exportation de paramètres** pour démarrer l’ **Assistant Importation et exportation de paramètres**. L’Assistant propose trois options : exporter, importer ou réinitialiser vos paramètres. Par exemple, si vous sélectionnez l’exportation, la page **Choisir les paramètres à exporter** de l’Assistant s’affiche.  
   
@@ -64,4 +64,4 @@ Une catégorie de paramètres se compose d’un groupe d’options qui personnal
  [Création d’une Page d’Options](../extensibility/creating-an-options-page.md)   
  [Exemples d’extensibilité Visual Studio](../misc/vssdk-samples.md)   
  [État du VSPackage](../misc/vspackage-state.md)   
- [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)
+ [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3)

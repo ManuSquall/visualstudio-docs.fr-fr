@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f2a89344785f997f3b878df7d827db6e4732860b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5bbe12449849b656af2658c5bab667b0e611515e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63384007"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685874"
 ---
 # <a name="how-to-use-graphics-diagnostics-with-an-arm-device"></a>Procédure : Utiliser Graphics Diagnostics avec un appareil ARM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,12 +28,12 @@ Graphics Diagnostics prend en charge le débogage distant des applications Direc
   
 #### <a name="to-enable-remote-debugging-on-your-arm-based-device"></a>Pour activer le débogage distant sur votre appareil ARM  
   
-1. Installer le [stratégie de Kits ARM](http://msdn.microsoft.com/windows/desktop/dn469188) sur votre appareil ARM.  
+1. Installer le [stratégie de Kits ARM](https://msdn.microsoft.com/windows/desktop/dn469188) sur votre appareil ARM.  
   
 2. Installer le [les outils de débogage à distance](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015) sur votre appareil ARM.  
   
 > [!IMPORTANT]
-> Pour les appareils Windows Phone 8.1, vous serez peut-être amené à inscrire votre téléphone pour le développement. Pour cela, vous devez être inscrit en tant que développeur. Pour plus d’informations, consultez [comment déployer et exécuter une application pour Windows Phone 8](http://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx).  
+> Pour les appareils Windows Phone 8.1, vous serez peut-être amené à inscrire votre téléphone pour le développement. Pour cela, vous devez être inscrit en tant que développeur. Pour plus d’informations, consultez [comment déployer et exécuter une application pour Windows Phone 8](https://msdn.microsoft.com/library/windowsphone/develop/ff402565.aspx).  
   
  Une fois le débogage distant activé sur votre appareil, faites-en votre cible de débogage et démarrez Graphics Diagnostics.  
   

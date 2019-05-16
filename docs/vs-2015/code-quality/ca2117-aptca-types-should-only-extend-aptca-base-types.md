@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 345a8649561eaadc88616b699fcb9873cfadf292
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 078b7f5535dc80261917ef662b3a2f0069cb33a8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58951755"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687300"
 ---
 # <a name="ca2117-aptca-types-should-only-extend-aptca-base-types"></a>CA2117 : Les types APTCA doivent uniquement étendre des types de base APTCA
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58951755"
  Un type public ou protégé dans un assembly avec le <xref:System.Security.AllowPartiallyTrustedCallersAttribute?displayProperty=fullName> attribut hérite d’un type déclaré dans un assembly qui n’a pas l’attribut.
 
 ## <a name="rule-description"></a>Description de la règle
- Par défaut, les types publics ou protégés dans les assemblys avec noms forts sont implicitement protégés par un [demandes d’héritage](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) pour la confiance totale. Assemblys avec nom fort est marqué avec le <xref:System.Security.AllowPartiallyTrustedCallersAttribute> attribut (APTCA) n’ont pas cette protection. L’attribut désactive la demande d’héritage. Cela rend les types exposés déclarés dans l’assembly pouvant être héritées par les types qui n’ont pas de confiance totale.
+ Par défaut, les types publics ou protégés dans les assemblys avec noms forts sont implicitement protégés par un [demandes d’héritage](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) pour la confiance totale. Assemblys avec nom fort est marqué avec le <xref:System.Security.AllowPartiallyTrustedCallersAttribute> attribut (APTCA) n’ont pas cette protection. L’attribut désactive la demande d’héritage. Cela rend les types exposés déclarés dans l’assembly pouvant être héritées par les types qui n’ont pas de confiance totale.
 
  Lorsque l’attribut APTCA est présent sur un assembly entièrement fiable, et un type dans l’assembly hérite d’un type qui n’autorise pas les appelants partiellement approuvés, une faille de sécurité est possible. Si deux types `T1` et `T2` remplir les conditions suivantes, des appelants malveillants peuvent utiliser le type `T1` pour contourner la demande de l’héritage de confiance totale implicite qui protège `T2`:
 
@@ -84,4 +84,4 @@ ms.locfileid: "58951755"
  [CA2116 : Les méthodes APTCA doivent uniquement appeler des méthodes APTCA](../code-quality/ca2116-aptca-methods-should-only-call-aptca-methods.md)
 
 ## <a name="see-also"></a>Voir aussi
- [Instructions de codage sécurisé](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [assemblys .NET Framework peut être appelés par le Code partiellement fiable](http://msdn.microsoft.com/a417fcd4-d3ca-4884-a308-3a1a080eac8d) [partiellement à l’aide de bibliothèques à partir de Code fiable](http://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74) [demandes d’héritage](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)
+ [Instructions de codage sécurisé](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [assemblys .NET Framework peut être appelés par le Code partiellement fiable](https://msdn.microsoft.com/a417fcd4-d3ca-4884-a308-3a1a080eac8d) [partiellement à l’aide de bibliothèques à partir de Code fiable](https://msdn.microsoft.com/library/dd66cd4c-b087-415f-9c3e-94e3a1835f74) [demandes d’héritage](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)

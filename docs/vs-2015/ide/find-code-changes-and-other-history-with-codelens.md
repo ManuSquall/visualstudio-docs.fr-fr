@@ -9,12 +9,12 @@ caps.latest.revision: 134
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b090833d766e36ba597bb32e8a6c793d674add88
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 100cd424b60ce09db8c62c049b38f4c301ebe26f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383949"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704836"
 ---
 # <a name="find-code-changes-and-other-history-with-codelens"></a>Rechercher les modifications de code et d'autres historiques avec CodeLens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Restez concentré sur votre travail pendant que vous cherchez ce qui est arrivé
   
 - Team Foundation Server 2013 ou version ultérieure, Visual Studio Team Services ou Git  
   
-- [Lync 2010 ou version ultérieure, ou Skype Entreprise](http://technet.microsoft.com/lync), pour contacter votre équipe à partir de l’éditeur de code  
+- [Lync 2010 ou version ultérieure, ou Skype Entreprise](https://technet.microsoft.com/lync), pour contacter votre équipe à partir de l’éditeur de code  
   
   Pour le code Visual C# .NET ou Visual Basic .NET stocké avec la gestion de version Team Foundation (TFVC) ou Git, vous obtenez les détails CodeLens au niveau des classes et des méthodes (indicateurs de*niveau élément de code* ). Si votre dépôt Git est hébergé dans TfGit, vous obtenez également des liens vers les éléments de travail TFS.  
   
@@ -83,7 +83,7 @@ Restez concentré sur votre travail pendant que vous cherchez ce qui est arrivé
   
  ![CodeLens : Get modifier l’historique de votre code dans TFVC](../ide/media/codelenscodechanges.png "CodeLensCodeChanges")  
   
- La période prise en charge par défaut s'étend sur les 12 derniers mois. Si votre code est stocké dans Team Foundation Server, vous pouvez modifier cette période en exécutant la [commande TFSConfig](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62) avec la [commande CodeIndex](../ide/codeindex-command.md) et l'indicateur **/indexHistoryPeriod** .  
+ La période prise en charge par défaut s'étend sur les 12 derniers mois. Si votre code est stocké dans Team Foundation Server, vous pouvez modifier cette période en exécutant la [commande TFSConfig](https://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62) avec la [commande CodeIndex](../ide/codeindex-command.md) et l'indicateur **/indexHistoryPeriod** .  
   
  Pour afficher un historique détaillé de toutes les modifications, y compris celles de plus d'un an, choisissez **Afficher toutes les modifications de fichier**.  
   
@@ -222,7 +222,7 @@ Restez concentré sur votre travail pendant que vous cherchez ce qui est arrivé
   
 - Assurez-vous que CodeLens est activé. Accédez à **Outils**, **Options**, **Éditeur de texte**, **Tous les langages**, **CodeLens**.  
   
-- Si votre code est stocké dans TFS, assurez-vous que l'indexation de code est activée en utilisant la [commande CodeIndex](../ide/codeindex-command.md) avec la [commande TFS Config](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62).  
+- Si votre code est stocké dans TFS, assurez-vous que l'indexation de code est activée en utilisant la [commande CodeIndex](../ide/codeindex-command.md) avec la [commande TFS Config](https://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62).  
   
 - Les indicateurs liés au TFS s'affichent uniquement si des éléments de travail sont liés au code et lorsque vous êtes autorisé à ouvrir les éléments de travail liés. [Confirmez que vous disposez des autorisations de membre de l'équipe.](/azure/devops/organizations/security/view-permissions)  
   
@@ -283,4 +283,4 @@ Restez concentré sur votre travail pendant que vous cherchez ce qui est arrivé
  **R :** Le **Version locale** flèche pointe l’ensemble de modifications les plus récente dans votre version locale de ce fichier. Lorsque le serveur possède des ensembles de modifications plus récents, ils apparaissent au-dessus ou en-dessous de la flèche **Version locale** , selon l'ordre utilisé pour trier les ensembles de modifications.  
   
 ### <a name="q-can-i-manage-how-codelens-processes-code-to-show-history-and-linked-items"></a>Q : Puis-je gérer la façon dont CodeLens traite le code pour afficher l’historique et les éléments liés ?  
- **R :** Oui, si votre code est dans TFS, utilisez le [codeindex, commande](../ide/codeindex-command.md) avec la [commande TFS Config](http://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62).
+ **R :** Oui, si votre code est dans TFS, utilisez le [codeindex, commande](../ide/codeindex-command.md) avec la [commande TFS Config](https://msdn.microsoft.com/94424190-3b6b-4f33-a6b6-5807f4225b62).

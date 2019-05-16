@@ -21,12 +21,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 421360421a732935d452053630c17cda319f4b0d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5269ec74388fa9b09a4cceabad364d19409470df
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434496"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699750"
 ---
 # <a name="handle-a-concurrency-exception"></a>Gérer une exception d’accès concurrentiel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Exceptions d’accès concurrentiel (<xref:System.Data.DBConcurrencyException>) 
   
 4. Remplir un dataset avec des données à partir de la `Customers` table dans la base de données Northwind.  
   
-5. Utilisez le [Visual Database Tools](http://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) dans Visual Studio pour accéder directement à la `Customers` de table de données et modifier un enregistrement.  
+5. Utilisez le [Visual Database Tools](https://msdn.microsoft.com/6b145922-2f00-47db-befc-bf351b4809a1) dans Visual Studio pour accéder directement à la `Customers` de table de données et modifier un enregistrement.  
   
 6. Modifier le même enregistrement à une valeur différente, mettre à jour le jeu de données et essaient d’écrire les modifications dans la base de données, ce qui entraîne le déclenchement d’une erreur d’accès concurrentiel.  
   
@@ -55,7 +55,7 @@ Exceptions d’accès concurrentiel (<xref:System.Data.DBConcurrencyException>) 
 - Accès à la base de données Northwind avec l’autorisation d’effectuer des mises à jour.
   
 > [!NOTE]
-> Les boîtes de dialogue et commandes de menu affichées peuvent différer de celles décrites dans l’aide selon vos paramètres actifs ou de l’édition que vous utilisez. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Les boîtes de dialogue et commandes de menu affichées peuvent différer de celles décrites dans l’aide selon vos paramètres actifs ou de l’édition que vous utilisez. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-new-project"></a>Créer un nouveau projet  
  Pour commencer votre procédure pas à pas en créant une nouvelle application Windows.  
@@ -79,7 +79,7 @@ Exceptions d’accès concurrentiel (<xref:System.Data.DBConcurrencyException>) 
   
 1. Sur le **données** menu, choisissez **ajouter nouvelle source de données**.  
   
-     L’Assistant [Configuration de source de données](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) s’ouvre.  
+     L’Assistant [Configuration de source de données](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) s’ouvre.  
   
 2. Sur le **choisir un Type de Source de données**s’affiche, sélectionnez **base de données**.  
   

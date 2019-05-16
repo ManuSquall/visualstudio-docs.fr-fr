@@ -21,12 +21,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c3fec8fd6bc00199fc2a0d5193d7f7534acca754
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: eccfc06cd48513e7a72eb23bbde11188f2e50dbd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63383938"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696880"
 ---
 # <a name="microsoft-visual-studio-debugger-exception-thrown-dialog-box"></a>Débogueur Microsoft Visual Studio (Exception levée) (boîte de dialogue)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,5 +47,5 @@ Une exception s'est produite dans votre programme. Cette boîte de dialogue indi
   
 ## <a name="see-also"></a>Voir aussi  
  [Gestion des exceptions avec le débogueur](../debugger/managing-exceptions-with-the-debugger.md)   
- [Meilleures pratiques pour les exceptions](http://msdn.microsoft.com/library/f06da765-235b-427a-bfb6-47cd219af539)   
- [Gestion des exceptions](http://msdn.microsoft.com/library/ccb11fe8-6938-41ac-b477-a183e85865b9)
+ [Meilleures pratiques pour les exceptions](https://msdn.microsoft.com/library/f06da765-235b-427a-bfb6-47cd219af539)   
+ [Gestion des exceptions](https://msdn.microsoft.com/library/ccb11fe8-6938-41ac-b477-a183e85865b9)

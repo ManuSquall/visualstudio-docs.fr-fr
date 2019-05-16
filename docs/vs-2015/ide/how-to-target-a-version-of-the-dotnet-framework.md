@@ -12,12 +12,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a815a7ee13b415220c41189b6b060d893e8ef8e8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a1d3d9ca1af5e2c96c497e6c677051c587047097
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435141"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695375"
 ---
 # <a name="how-to-target-a-version-of-the-net-framework"></a>Procédure : Cibler une version de .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "63435141"
 Ce document explique comment cibler une version de .NET Framework lorsque vous créez un projet et comment modifier la version ciblée dans un projet Visual Basic, Visual C# ou Visual F# existant.  
   
 > [!IMPORTANT]
-> Pour plus d’informations sur la modification de la version cible pour les projets C++, consultez [Guide pratique pour modifier le framework cible et l’ensemble d’outils de plateforme](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
+> Pour plus d’informations sur la modification de la version cible pour les projets C++, consultez [Guide pratique pour modifier le framework cible et l’ensemble d’outils de plateforme](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
   
  **Dans cette rubrique**  
   
@@ -62,7 +62,7 @@ Ce document explique comment cibler une version de .NET Framework lorsque vous c
      ![Propriétés de l’Explorateur de solutions dans Visual Studio](../ide/media/vs-slnexplorer-properties.png "vs_slnExplorer_Properties")  
   
     > [!IMPORTANT]
-    > Pour plus d’informations sur la modification de la version cible pour les projets C++, consultez [Guide pratique pour modifier le framework cible et l’ensemble d’outils de plateforme](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
+    > Pour plus d’informations sur la modification de la version cible pour les projets C++, consultez [Guide pratique pour modifier le framework cible et l’ensemble d’outils de plateforme](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe).  
   
 2. Dans la colonne de gauche de la fenêtre Propriétés, choisissez l’onglet **Application**.  
   
@@ -82,9 +82,9 @@ Ce document explique comment cibler une version de .NET Framework lorsque vous c
   
 ## <a name="see-also"></a>Voir aussi  
  [Vue d’ensemble du multiciblage Visual Studio](../ide/visual-studio-multi-targeting-overview.md)   
- [.NET Framework Multi-Targeting pour les projets web ASP.NET](http://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)   
+ [.NET Framework Multi-Targeting pour les projets web ASP.NET](https://msdn.microsoft.com/library/8b8145a9-62f6-4fc4-8a83-47b0487cbe76)   
  [Dépannage des erreurs de ciblage du .NET Framework](../msbuild/troubleshooting-dotnet-framework-targeting-errors.md)   
  [Page Application, Concepteur de projets (C#)](../ide/reference/application-page-project-designer-csharp.md)   
  [Page Application, Concepteur de projets (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
- [Configuration de projets](http://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526)   
- [Guide pratique pour modifier le framework cible et l’ensemble d’outils de plateforme](http://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)
+ [Configuration de projets](https://msdn.microsoft.com/library/a1489abb-6294-4f8f-b71f-2cb126393526)   
+ [Guide pratique pour modifier le framework cible et l’ensemble d’outils de plateforme](https://msdn.microsoft.com/library/031b1d54-e6e1-4da7-9868-3e75a87d9ffe)

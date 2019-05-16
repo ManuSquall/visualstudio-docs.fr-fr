@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 00a5194abfcabac37e49a2e35ed025fd0f85dbe4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2a6993d241f49261131ffad76dc50534ac8e1591
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424816"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694879"
 ---
 # <a name="validate-data-in-datasets"></a>Valider les données dans des datasets
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,24 +38,24 @@ Validation des données est le processus consistant à confirmer que les valeurs
   
  Vous pouvez vérifier que les données sont écrites dans un jeu de données sont valides en créant des contrôles de validation dans le jeu de données. Le jeu de données peut vérifier les données quelle que soit la façon dont la mise à jour est effectuée, que ce soit directement par les contrôles dans un formulaire, au sein d’un composant, ou par d’autres moyens. Étant donné que le jeu de données fait partie de votre application (contrairement à la base de données principale), il est un emplacement logique pour générer une validation spécifique à l’application.  
   
- Le meilleur endroit pour ajouter une validation à votre application est dans un fichier de classe partielle du jeu de données. Dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ou [!INCLUDE[csprcs](../includes/csprcs-md.md)], ouvrez le **Concepteur de Dataset** et double-cliquez sur la colonne ou la table pour laquelle vous souhaitez créer la validation. Cette action crée automatiquement un <xref:System.Data.DataTable.ColumnChanging> ou <xref:System.Data.DataTable.RowChanging> Gestionnaire d’événements. Pour plus d'informations, voir [Procédure : Valider les données lors de la modification de colonne](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5) ou [Comment : Valider les données lors de la modification de la ligne](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc). Pour obtenir un exemple complet, consultez [procédure pas à pas : Ajout d’une Validation à un Dataset](http://msdn.microsoft.com/library/09351fab-d670-45e3-b53a-a944eff717e7).  
+ Le meilleur endroit pour ajouter une validation à votre application est dans un fichier de classe partielle du jeu de données. Dans [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ou [!INCLUDE[csprcs](../includes/csprcs-md.md)], ouvrez le **Concepteur de Dataset** et double-cliquez sur la colonne ou la table pour laquelle vous souhaitez créer la validation. Cette action crée automatiquement un <xref:System.Data.DataTable.ColumnChanging> ou <xref:System.Data.DataTable.RowChanging> Gestionnaire d’événements. Pour plus d'informations, voir [Procédure : Valider les données lors de la modification de colonne](https://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5) ou [Comment : Valider les données lors de la modification de la ligne](https://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc). Pour obtenir un exemple complet, consultez [procédure pas à pas : Ajout d’une Validation à un Dataset](https://msdn.microsoft.com/library/09351fab-d670-45e3-b53a-a944eff717e7).  
   
 ## <a name="validate-data"></a>Valider des données  
  Validation au sein d’un jeu de données est possible de plusieurs manières :  
   
-- En créant votre propre validation spécifique à l’application qui peut vérifier les valeurs dans une colonne de données lors de la modification.  Pour plus d'informations, voir [Procédure : Valider les données lors de la modification de la colonne](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5).  
+- En créant votre propre validation spécifique à l’application qui peut vérifier les valeurs dans une colonne de données lors de la modification.  Pour plus d'informations, voir [Procédure : Valider les données lors de la modification de la colonne](https://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5).  
   
-- En créant votre propre validation spécifique à l’application peut vérifier les données aux valeurs un ensemble de données lors de la ligne change. Pour plus d'informations, voir [Procédure : Valider les données lors de la modification de la ligne](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
+- En créant votre propre validation spécifique à l’application peut vérifier les données aux valeurs un ensemble de données lors de la ligne change. Pour plus d'informations, voir [Procédure : Valider les données lors de la modification de la ligne](https://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
   
-- En créant des clés, des contraintes uniques, et ainsi de suite dans le cadre de la définition de schéma du jeu de données. Pour plus d’informations sur l’incorporation de validation dans la définition de schéma, consultez [contraindre un DataColumn pour contenir des valeurs uniques](http://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df).  
+- En créant des clés, des contraintes uniques, et ainsi de suite dans le cadre de la définition de schéma du jeu de données. Pour plus d’informations sur l’incorporation de validation dans la définition de schéma, consultez [contraindre un DataColumn pour contenir des valeurs uniques](https://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df).  
   
 - En définissant les propriétés de la <xref:System.Data.DataColumn> l’objet, tel que <xref:System.Data.DataColumn.MaxLength%2A>, <xref:System.Data.DataColumn.AllowDBNull%2A>, et <xref:System.Data.DataColumn.Unique%2A>.  
   
   Plusieurs événements sont déclenchés par le <xref:System.Data.DataTable> lorsqu’une modification est apportée à un enregistrement de l’objet :  
   
-- Le <xref:System.Data.DataTable.ColumnChanging> et <xref:System.Data.DataTable.ColumnChanged> sont déclenchés pendant et après chaque modification apportée à une colonne individuelle. Le <xref:System.Data.DataTable.ColumnChanging> événement est utile lorsque vous souhaitez valider les modifications apportées dans des colonnes spécifiques. Plus d’informations sur la modification proposée sont passés en tant qu’argument à l’événement. Pour plus d'informations, voir [Procédure : Valider les données lors de la modification de la colonne](http://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5).  
+- Le <xref:System.Data.DataTable.ColumnChanging> et <xref:System.Data.DataTable.ColumnChanged> sont déclenchés pendant et après chaque modification apportée à une colonne individuelle. Le <xref:System.Data.DataTable.ColumnChanging> événement est utile lorsque vous souhaitez valider les modifications apportées dans des colonnes spécifiques. Plus d’informations sur la modification proposée sont passés en tant qu’argument à l’événement. Pour plus d'informations, voir [Procédure : Valider les données lors de la modification de la colonne](https://msdn.microsoft.com/library/a2680600-67b6-4a40-a77e-b5bc638281c5).  
   
-- Le <xref:System.Data.DataTable.RowChanging> et <xref:System.Data.DataTable.RowChanged> sont déclenchés pendant et après chaque modification d’une ligne. Le <xref:System.Data.DataTable.RowChanging> événement est plus général. Il indique qu’une modification se produit quelque part dans la ligne, mais vous ne savez pas quelle colonne a changé. Pour plus d'informations, voir [Procédure : Valider les données lors de la modification de la ligne](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
+- Le <xref:System.Data.DataTable.RowChanging> et <xref:System.Data.DataTable.RowChanged> sont déclenchés pendant et après chaque modification d’une ligne. Le <xref:System.Data.DataTable.RowChanging> événement est plus général. Il indique qu’une modification se produit quelque part dans la ligne, mais vous ne savez pas quelle colonne a changé. Pour plus d'informations, voir [Procédure : Valider les données lors de la modification de la ligne](https://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
   
   Par défaut, chaque modification apportée à une colonne déclenche donc quatre événements. La première est la <xref:System.Data.DataTable.ColumnChanging> et <xref:System.Data.DataTable.ColumnChanged> événements pour la colonne qui est en cours de modification. Viennent ensuite les <xref:System.Data.DataTable.RowChanging> et <xref:System.Data.DataTable.RowChanged> événements. Si plusieurs modifications sont en cours apportées à la ligne, les événements sont déclenchés pour chaque modification.  
   
@@ -94,16 +94,16 @@ Validation des données est le processus consistant à confirmer que les valeurs
   
 - Refuser la valeur proposée en définissant l’erreur de colonne (<xref:System.Data.DataRow.SetColumnError%2A>) à partir de gestionnaire d’événements de modification de colonne.  
   
-- Vous pouvez également utiliser un <xref:System.Windows.Forms.ErrorProvider> contrôle pour afficher un message d’erreur à l’utilisateur. Pour plus d’informations, consultez [du composant ErrorProvider](http://msdn.microsoft.com/library/c0f2e231-c5c9-413d-a507-75af2db499b6).  
+- Vous pouvez également utiliser un <xref:System.Windows.Forms.ErrorProvider> contrôle pour afficher un message d’erreur à l’utilisateur. Pour plus d’informations, consultez [du composant ErrorProvider](https://msdn.microsoft.com/library/c0f2e231-c5c9-413d-a507-75af2db499b6).  
   
-  La validation peut également être effectuée pendant la <xref:System.Data.DataTable.RowChanging> événement. Pour plus d'informations, voir [Procédure : Valider les données lors de la modification de la ligne](http://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
+  La validation peut également être effectuée pendant la <xref:System.Data.DataTable.RowChanging> événement. Pour plus d'informations, voir [Procédure : Valider les données lors de la modification de la ligne](https://msdn.microsoft.com/library/afc03c77-dfed-4302-9376-929400468ecc).  
   
 ## <a name="validate-data-during-row-changes"></a>Valider les données lors de la modification de ligne  
  Vous pouvez écrire du code pour vérifier que chaque colonne que vous voulez valider contient des données qui répondent aux exigences de votre application. Cela en définissant la colonne pour indiquer qu’il contient une erreur si une valeur proposée est inacceptable. Les exemples suivants définissent une erreur de colonne lorsque la `Quantity` colonne est inférieur ou égal à 0. Les gestionnaires d’événements de modification de ligne doivent se présenter comme les exemples suivants.  
   
 #### <a name="to-validate-data-when-a-row-changes-visual-basic"></a>Pour valider des données lorsqu’une ligne change (Visual Basic)  
   
-1. Ouvrez votre dataset dans le **Concepteur de DataSet**. Pour plus d'informations, voir [Procédure : Ouvrir un jeu de données dans le Concepteur de Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Ouvrez votre dataset dans le **Concepteur de DataSet**. Pour plus d'informations, voir [Procédure : Ouvrir un jeu de données dans le Concepteur de Dataset](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2. Double-cliquez sur la barre de titre de la table que vous souhaitez valider. Cette action crée automatiquement le <xref:System.Data.DataTable.RowChanging> Gestionnaire d’événements de la <xref:System.Data.DataTable> dans le fichier de classe partielle du jeu de données.  
   
@@ -114,7 +114,7 @@ Validation des données est le processus consistant à confirmer que les valeurs
   
 #### <a name="to-validate-data-when-a-row-changes-c"></a>Pour valider des données lorsqu’une ligne change (c#)  
   
-1. Ouvrez votre dataset dans le **Concepteur de DataSet**. Pour plus d'informations, voir [Procédure : Ouvrir un jeu de données dans le Concepteur de Dataset](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Ouvrez votre dataset dans le **Concepteur de DataSet**. Pour plus d'informations, voir [Procédure : Ouvrir un jeu de données dans le Concepteur de Dataset](https://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
 2. Double-cliquez sur la barre de titre de la table que vous souhaitez valider. Cette action crée un fichier de classe partielle pour le <xref:System.Data.DataTable>.  
   
@@ -144,7 +144,7 @@ Validation des données est le processus consistant à confirmer que les valeurs
     ```  
   
 ## <a name="to-retrieve-changed-rows"></a>Pour récupérer des lignes modifiées  
- Chaque ligne dans une table de données a un <xref:System.Data.DataRow.RowState%2A> propriété qui effectue le suivi de l’état actuel de cette ligne en utilisant les valeurs dans le <xref:System.Data.DataRowState> énumération. Vous pouvez retourner des lignes modifiées d’une table de données ou le jeu de données en appelant le `GetChanges` méthode d’un <xref:System.Data.DataSet> ou <xref:System.Data.DataTable>. Vous pouvez vérifier qu’il existe des modifications avant d’appeler `GetChanges` en appelant le <xref:System.Data.DataSet.HasChanges%2A> méthode d’un jeu de données. Pour plus d’informations sur <xref:System.Data.DataSet.HasChanges%2A>, consultez [Guide pratique pour : Rechercher les lignes modifiées](http://msdn.microsoft.com/library/af160d20-472b-4c13-8f15-75480c39a653).  
+ Chaque ligne dans une table de données a un <xref:System.Data.DataRow.RowState%2A> propriété qui effectue le suivi de l’état actuel de cette ligne en utilisant les valeurs dans le <xref:System.Data.DataRowState> énumération. Vous pouvez retourner des lignes modifiées d’une table de données ou le jeu de données en appelant le `GetChanges` méthode d’un <xref:System.Data.DataSet> ou <xref:System.Data.DataTable>. Vous pouvez vérifier qu’il existe des modifications avant d’appeler `GetChanges` en appelant le <xref:System.Data.DataSet.HasChanges%2A> méthode d’un jeu de données. Pour plus d’informations sur <xref:System.Data.DataSet.HasChanges%2A>, consultez [Guide pratique pour : Rechercher les lignes modifiées](https://msdn.microsoft.com/library/af160d20-472b-4c13-8f15-75480c39a653).  
   
 > [!NOTE]
 > Une fois que vous validez des modifications à une table de données ou le jeu de données (en appelant le <xref:System.Data.DataSet.AcceptChanges%2A> méthode), la `GetChanges` méthode ne retourne aucune donnée. Si votre application doit traiter des lignes modifiées, vous devez traiter les modifications avant d’appeler le `AcceptChanges` (méthode).  
@@ -215,5 +215,5 @@ Validation des données est le processus consistant à confirmer que les valeurs
   
 ## <a name="see-also"></a>Voir aussi
 
-- [Guide pratique pour Valider les données dans le contrôle de DataGridView Windows Forms](http://msdn.microsoft.com/library/d10aef35-701e-4a3c-a684-2a2ed1aeaca6)   
-- [Guide pratique pour Afficher des icônes d’erreur pour la Validation de formulaire à l’aide du composant ErrorProvider Windows Forms](http://msdn.microsoft.com/library/3b681a32-9db4-497b-a34b-34980eabee46)
+- [Guide pratique pour Valider les données dans le contrôle de DataGridView Windows Forms](https://msdn.microsoft.com/library/d10aef35-701e-4a3c-a684-2a2ed1aeaca6)   
+- [Guide pratique pour Afficher des icônes d’erreur pour la Validation de formulaire à l’aide du composant ErrorProvider Windows Forms](https://msdn.microsoft.com/library/3b681a32-9db4-497b-a34b-34980eabee46)

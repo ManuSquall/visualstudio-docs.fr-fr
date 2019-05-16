@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 126aa1ad57aa5f8961803b8443365c208f5623ff
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c3f1533df24af802ae0c9950d4765ea0a0bf04da
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421251"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693557"
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Procédure pas à pas : Créer une Application de bureau WPF connectée à un Service Mobile Azure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidemen
   
 - Un compte Microsoft Azure actif.  
   
-    - Vous pouvez créer un compte d’évaluation gratuit [ici](http://azure.microsoft.com/pricing/free-trial/).  
+    - Vous pouvez créer un compte d’évaluation gratuit [ici](https://azure.microsoft.com/pricing/free-trial/).  
   
     - Vous pouvez activer les [avantages pour les abonné MSDN](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/?WT.mc_id=A261C142F). Votre abonnement MSDN vous donne des crédits chaque mois utilisables pour les services Azure payants.  
   
@@ -566,7 +566,7 @@ Vous pouvez utiliser Windows Presentation Foundation (WPF) pour créer rapidemen
   
  Vous pouvez rendre l’interface utilisateur plus attrayante en ajoutant des couleurs, des formes, des graphiques et même des animations. Consultez l’article [Conception XAML dans Visual Studio et Blend pour Visual Studio](../designers/designing-xaml-in-visual-studio.md).  
   
- Vous pouvez vous connecter aux bases de données SQL ou à d’autres sources de données à l’aide d’Azure Mobile Services. Consultez la [Documentation sur Mobile Services](http://azure.microsoft.com/services/app-service/mobile/).  
+ Vous pouvez vous connecter aux bases de données SQL ou à d’autres sources de données à l’aide d’Azure Mobile Services. Consultez la [Documentation sur Mobile Services](https://azure.microsoft.com/services/app-service/mobile/).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Procédure pas à pas : Ma première Application de bureau WPF](../designers/walkthrough-my-first-wpf-desktop-application2.md)   

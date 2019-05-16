@@ -17,19 +17,19 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b3073f79cc58296b6952d610384d06648aa6ce3d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 6864708d3e60898b32ba07b14939a5c3e31d897e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093473"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705161"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Créer et configurer des datasets dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Un *dataset* est un ensemble d’objets de stocker des données à partir d’une base de données en mémoire et prend en charge le suivi des modifications pour activer la créer, lire, mettre à jour et supprimer des opérations sur ces données sans avoir à être toujours connectés à la base de données. Jeux de données ont été conçus pour simple *formulaires sur données* applications métier. Pour les nouvelles applications, envisagez d’utiliser Entity Framework pour stocker et modéliser des données en mémoire. Pour utiliser des jeux de données, vous devez posséder une connaissance base des concepts de base de données.
 
- Vous créez un typé <xref:System.Data.DataSet> classe dans Visual Studio au moment du design à l’aide de la **Assistant de Configuration de Source de données**. Pour plus d’informations sur la création de jeux de données par programmation, consultez [création d’un DataSet](http://msdn.microsoft.com/library/57629d8f-393e-4677-8b83-29ffde27f5fc).
+ Vous créez un typé <xref:System.Data.DataSet> classe dans Visual Studio au moment du design à l’aide de la **Assistant de Configuration de Source de données**. Pour plus d’informations sur la création de jeux de données par programmation, consultez [création d’un DataSet](https://msdn.microsoft.com/library/57629d8f-393e-4677-8b83-29ffde27f5fc).
 
 ## <a name="create-a-new-dataset-by-using-the-data-source-configuration-wizard"></a>Créer un nouveau jeu de données à l’aide de l’Assistant de Configuration de Source de données
 
@@ -90,6 +90,6 @@ Un *dataset* est un ensemble d’objets de stocker des données à partir d’un
 
 2. Faites glisser un <xref:System.Data.DataTable> classe à partir de la **DataSet** onglet de la **boîte à outils** sur le **Concepteur de Dataset**.
 
-3. Ajouter des colonnes pour définir votre table de données. Pour plus d'informations, voir [Procédure : Ajouter des colonnes à un DataTable](http://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df).
+3. Ajouter des colonnes pour définir votre table de données. Pour plus d'informations, voir [Procédure : Ajouter des colonnes à un DataTable](https://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df).
 
-4. Les tables autonomes doivent implémenter `Fill` logique dans les tables autonomes afin que vous pouvez les remplir de données. Pour plus d’informations sur le remplissage des tables de données autonome, consultez [remplissage d’un DataSet à partir d’un DataAdapter](http://msdn.microsoft.com/library/3fa0ac7d-e266-4954-bfac-3fbe2f913153).
+4. Les tables autonomes doivent implémenter `Fill` logique dans les tables autonomes afin que vous pouvez les remplir de données. Pour plus d’informations sur le remplissage des tables de données autonome, consultez [remplissage d’un DataSet à partir d’un DataAdapter](https://msdn.microsoft.com/library/3fa0ac7d-e266-4954-bfac-3fbe2f913153).

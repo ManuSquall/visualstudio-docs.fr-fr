@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 021927c9ff109e74956507b993c1c7192d109852
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3dd28cad3036aaca1445cba7b4531580a2a44812
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756489"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691698"
 ---
 # <a name="performance-rules-by-id"></a>Règles de performance par ID
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Warning|Description|
 |[DA0006 : remplacer Equals() pour les types valeur](../profiling/da0006-override-equals-parens-for-value-types.md)|Les appels à la méthode Equals ou aux opérateurs d’égalité d’un type valeur public représentent une part importante des données de profilage. Implémentez une méthode plus efficace.|  
 |[DA0007 : ne pas utiliser d'exceptions pour le flux de contrôle](../profiling/da0007-avoid-using-exceptions-for-control-flow.md)|Un taux élevé de gestionnaires d’exceptions .NET Framework ont été appelés dans les données de profilage. Utilisez une autre logique de flux de contrôle pour réduire le nombre d’exceptions levées.|  
 |[DA0008 : peu d'échantillons collectés](../profiling/da0008-few-samples-collected.md)|Seuls quelques échantillons ont été collectés pendant l’exécution du profilage. Augmentez la durée d’exécution ou utilisez un taux d’échantillonnage plus rapide pour des résultats plus significatifs.|  
-|[DA0009 : % temps élevé en Jit](http://msdn.microsoft.com/b60c1767-515c-41d9-81c2-c70d0b7024fd)|Un pourcentage important du temps d’exécution de l’application a été passé dans le compilateur JIT.|  
+|[DA0009 : % temps élevé en Jit](https://msdn.microsoft.com/b60c1767-515c-41d9-81c2-c70d0b7024fd)|Un pourcentage important du temps d’exécution de l’application a été passé dans le compilateur JIT.|  
 |[DA0010 : GetHashCode coûteux](../profiling/da0010-expensive-gethashcode.md)|Les appels à la méthode GetHashCode du type représentent une part importante des données de profilage, ou la méthode alloue de la mémoire.|  
 |[DA0011 : CompareTo coûteux](../profiling/da0011-expensive-compareto.md)|La méthode CompareTo du type est coûteuse ou alloue de la mémoire.|  
 |[DA0012 : quantité importante de réflexion](../profiling/da0012-significant-amount-of-reflection.md)|Les appels aux méthodes System.Reflection, telles que InvokeMember et GetMember, ou aux méthodes de type telles que MemberInvoke, représentent une part importante des données de profilage. Quand vous pouvez, envisagez de remplacer ces méthodes par une liaison anticipée aux méthodes des assemblys dépendants.|  

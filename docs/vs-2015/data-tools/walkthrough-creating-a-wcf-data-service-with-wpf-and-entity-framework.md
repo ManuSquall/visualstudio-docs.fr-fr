@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 56e39a8ed17cfa99bd8141e2176d42dd7d3d6274
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 12d7e9c25cdf4e0431a7e4b5e3639dc59b76790c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424850"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703178"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Procédure pas à pas : Création d’un service de données WCF avec WPF et Entity Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Cette procédure pas à pas montre comment créer un simple [!INCLUDE[ss_data_se
   
 - Exemple de base de données Northwind.  
   
-     Si cette base de données n’est pas disponible sur votre ordinateur de développement, vous pouvez la télécharger à partir du [Centre de téléchargement Microsoft](http://go.microsoft.com/fwlink/?LinkID=98088). Pour obtenir des instructions, consultez [téléchargement d’exemples de bases de données](http://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5).  
+     Si cette base de données n’est pas disponible sur votre ordinateur de développement, vous pouvez la télécharger à partir du [Centre de téléchargement Microsoft](http://go.microsoft.com/fwlink/?LinkID=98088). Pour obtenir des instructions, consultez [téléchargement d’exemples de bases de données](https://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5).  
   
 ## <a name="creating-the-service"></a>Création du service  
  Pour créer un [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)], vous devez ajouter un projet Web, créer un [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)], puis créer le service à partir du modèle.  
@@ -82,7 +82,7 @@ Cette procédure pas à pas montre comment créer un simple [!INCLUDE[ss_data_se
   
    - Si une connexion de données à l'exemple de base de données Northwind est disponible dans la liste déroulante, choisissez-la.  
   
-        - ou -  
+        ou  
   
    - Choisissez le bouton **Nouvelle connexion** pour configurer une nouvelle connexion de données. Pour plus d’informations, consultez [ajouter de nouvelles connexions](../data-tools/add-new-connections.md).  
   
@@ -200,7 +200,7 @@ Cette procédure pas à pas montre comment créer un simple [!INCLUDE[ss_data_se
    using NorthwindClient.ServiceReference1;  
    ```  
   
-5. Ajoutez le code suivant au gestionnaire d'événements `Form1_Load` :  
+5. Ajoutez le code suivant au gestionnaire d'événements `Form1_Load` :  
   
    ```vb  
    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load  

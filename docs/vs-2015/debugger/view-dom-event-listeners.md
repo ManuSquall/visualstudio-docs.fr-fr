@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 945edb462b1ba849a3a1b9fd6797c8393b651163
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 64d4892080aaf0cf04e4b208b1a0bdb7a7a4480d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437683"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65693574"
 ---
 # <a name="view-dom-event-listeners"></a>Afficher les écouteurs d'événements DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,9 +76,9 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
      Le **événements** onglet affiche les écouteurs d’événements pour n’importe quel élément que vous choisissez dans la liste hiérarchique.
 
 ### <a name="Tips"></a> Conseils pour résoudre les problèmes liés aux écouteurs d’événements
- Dans certains scénarios d’application, les écouteurs d’événements doivent être explicitement supprimés à l’aide de [removeEventListener](http://msdn.microsoft.com/library/ie/ff975250\(v=vs.85\).aspx). Utilisez le **événements** onglet dans l’Explorateur DOM pour tester si les écouteurs d’événements ont été supprimés à partir d’éléments DOM lors de l’exécution de code. Voici quelques conseils qui vous aideront à résoudre ces types de problèmes :
+ Dans certains scénarios d’application, les écouteurs d’événements doivent être explicitement supprimés à l’aide de [removeEventListener](https://msdn.microsoft.com/library/ie/ff975250\(v=vs.85\).aspx). Utilisez le **événements** onglet dans l’Explorateur DOM pour tester si les écouteurs d’événements ont été supprimés à partir d’éléments DOM lors de l’exécution de code. Voici quelques conseils qui vous aideront à résoudre ces types de problèmes :
 
-- Pour les applications qui utilisent le modèle de navigation de page unique implémentée dans Visual Studio [modèles de projet](http://msdn.microsoft.com/library/windows/apps/hh758331.aspx), il est généralement pas nécessaire supprimer des écouteurs d’événements inscrits pour les objets, tels que les éléments DOM, qui font partie d’une page. Dans ce scénario, un élément DOM et ses écouteurs d'événements associés ont la même durée de vie et peuvent être récupérés par le garbage collector.
+- Pour les applications qui utilisent le modèle de navigation de page unique implémentée dans Visual Studio [modèles de projet](https://msdn.microsoft.com/library/windows/apps/hh758331.aspx), il est généralement pas nécessaire supprimer des écouteurs d’événements inscrits pour les objets, tels que les éléments DOM, qui font partie d’une page. Dans ce scénario, un élément DOM et ses écouteurs d'événements associés ont la même durée de vie et peuvent être récupérés par le garbage collector.
 
 - Si la durée de vie de l'objet ou de l'élément DOM est différente de l'écouteur d'événements associé, il se peut que vous deviez appeler la méthode `removeEventListener`. Par exemple, si vous utilisez l'événement `window.onresize`, vous devrez peut-être supprimer l'écouteur d'événements si vous quittez la page où vous gérez l'événement.
 

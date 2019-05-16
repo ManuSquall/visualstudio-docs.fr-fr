@@ -24,17 +24,17 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b617f0c154c14113370fff257c6837ce8314134a
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 81135546ffa208a4efb96569cd7968dfe560cdf9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439925"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702525"
 ---
 # <a name="allocation-hook-functions"></a>Fonctions de raccordement d'allocation
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Une fonction de raccordement d’allocation, installée à l’aide de [_CrtSetAllocHook](http://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d), est appelée chaque fois la mémoire est allouée, réallouée ou libérée. Ce type de raccordement a de multiples applications. Utilisez-la, par exemple, pour tester la façon dont une application gère les situations de mémoire insuffisante, pour examiner les modèles d'allocation ou pour enregistrer les informations des allocations en vue d'une analyse ultérieure.  
+Une fonction de raccordement d’allocation, installée à l’aide de [_CrtSetAllocHook](https://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d), est appelée chaque fois la mémoire est allouée, réallouée ou libérée. Ce type de raccordement a de multiples applications. Utilisez-la, par exemple, pour tester la façon dont une application gère les situations de mémoire insuffisante, pour examiner les modèles d'allocation ou pour enregistrer les informations des allocations en vue d'une analyse ultérieure.  
   
 > [!NOTE]
 > Tenez compte de la restriction concernant l’utilisation des fonctions de la bibliothèque Runtime C dans une fonction de raccordement d’allocation, décrite dans [Raccordements d’allocation et allocations de la mémoire runtime C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md).  
@@ -47,7 +47,7 @@ int YourAllocHook(int nAllocType, void *pvData,
         const unsigned char * szFileName, int nLine )  
 ```  
   
- Le pointeur passé à [_CrtSetAllocHook](http://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d) est du type **_CRT_ALLOC_HOOK**, comme cela est défini dans CRTDBG.H :  
+ Le pointeur passé à [_CrtSetAllocHook](https://msdn.microsoft.com/library/405df37b-2fd1-42c8-83bc-90887f17f29d) est du type **_CRT_ALLOC_HOOK**, comme cela est défini dans CRTDBG.H :  
   
 ```  
 typedef int (__cdecl * _CRT_ALLOC_HOOK)  
@@ -59,4 +59,4 @@ typedef int (__cdecl * _CRT_ALLOC_HOOK)
 ## <a name="see-also"></a>Voir aussi  
  [Raccordements d’allocation et allocations mémoire Runtime C](../debugger/allocation-hooks-and-c-run-time-memory-allocations.md)   
  [Écriture de fonctions de raccordement de débogage](../debugger/debug-hook-function-writing.md)   
- [crt_dbg2, exemple](http://msdn.microsoft.com/21e1346a-6a17-4f57-b275-c76813089167)
+ [crt_dbg2, exemple](https://msdn.microsoft.com/21e1346a-6a17-4f57-b275-c76813089167)

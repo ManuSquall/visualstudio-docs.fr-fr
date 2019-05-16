@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1fcb0ae81a2f758f548f11bb9875b2275f6ebfe3
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8710ed0a35b483601a166c4644112b1ba7e4feaf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782511"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705760"
 ---
 # <a name="advanced-settings-dialog-box-concurrency-visualizer"></a>Paramètres avancés, boîte de dialogue (visualiseur concurrentiel)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ La boîte de dialogue **Paramètres avancés** du visualiseur concurrentiel vous
  Par défaut, les événements du CLR sont collectés uniquement quand un processus managé est profilé car ils ne sont normalement pas nécessaires pour les processus natifs.  Dans certains cas (par exemple, quand un processus natif héberge le CLR), vous devrez peut-être collecter les événements du CLR pour un processus natif.  Si tel est le cas, cochez la case **Collecter les processus natifs**.  
   
 ### <a name="disable-rundown-events"></a>Désactiver les événements d’arrêt  
- Le CLR génère des événements de deux fournisseurs : runtime et rundown.  Si vous souhaitez collecter les événements du runtime du CLR sans toutefois collecter les événements d’arrêt, cochez la case **Désactiver les événements d’arrêt**.  Cela permet de réduire la taille du fichier de trace généré par la collection, mais il est possible que certaines piles ne soient pas résolues. Pour plus d’informations, consultez [Fournisseurs ETW du CLR](http://msdn.microsoft.com/library/0beafad4-b2c8-47f4-b342-83411d57a51f).  
+ Le CLR génère des événements de deux fournisseurs : runtime et rundown.  Si vous souhaitez collecter les événements du runtime du CLR sans toutefois collecter les événements d’arrêt, cochez la case **Désactiver les événements d’arrêt**.  Cela permet de réduire la taille du fichier de trace généré par la collection, mais il est possible que certaines piles ne soient pas résolues. Pour plus d’informations, consultez [Fournisseurs ETW du CLR](https://msdn.microsoft.com/library/0beafad4-b2c8-47f4-b342-83411d57a51f).  
   
 ### <a name="sample-events"></a>Échantillonner les événements  
  Vous pouvez utiliser des événements d’échantillon pour collecter les piles des appels associées à l’exécution de threads. Ces événements sont collectés environ une fois par milliseconde pour les threads qui s’exécutent dans le processus actif. Si vous désactivez la collecte d’événements d’échantillon, vous réduisez la taille de la trace collectée, mais vous ne pouvez pas afficher les piles des appels associées à l’exécution de threads.  

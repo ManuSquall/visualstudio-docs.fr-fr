@@ -9,17 +9,17 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bca0b07922d1b0b0d1a218fcccfa51e68a64e7e8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 437c6cc7af2b0337b362e14db19deb9584a3d412
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114780"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695533"
 ---
 # <a name="designing-xaml-in-visual-studio"></a>Conception XAML dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Visual Studio et Blend pour Visual Studio fournissent tous deux des outils visuels conçus pour générer des interfaces utilisateur attrayantes et des expériences multimédias élaborées pour les applications de bureau Windows, web, [Windows Phone](http://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx)et [Windows Store](http://msdn.microsoft.com/library/windows/apps/jj129478.aspx) en XAML. Ils partagent tous les deux en commun des fenêtres de conception, des fenêtres Outil et un éditeur XAML. Toutefois, Blend pour Visual Studio propose des outils de conception supplémentaires conçus pour des tâches plus avancées telles que l'animation et les comportements.
+Visual Studio et Blend pour Visual Studio fournissent tous deux des outils visuels conçus pour générer des interfaces utilisateur attrayantes et des expériences multimédias élaborées pour les applications de bureau Windows, web, [Windows Phone](https://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx)et [Windows Store](https://msdn.microsoft.com/library/windows/apps/jj129478.aspx) en XAML. Ils partagent tous les deux en commun des fenêtres de conception, des fenêtres Outil et un éditeur XAML. Toutefois, Blend pour Visual Studio propose des outils de conception supplémentaires conçus pour des tâches plus avancées telles que l'animation et les comportements.
 
 ## <a name="choosing-the-right-tool"></a>Sélection de l'outil approprié
  Votre sélection des outils de conception dépend en grande partie de vos compétences. Si vous êtes davantage orienté code, vous pouvez écrire du code XAML dans Visual Studio même pour accomplir des tâches de conception avancées. Si vous êtes plus orientée conception, Blend pour Visual Studio vous permet d'effectuer des tâches avancées sans écrire de code.
@@ -41,11 +41,11 @@ Visual Studio et Blend pour Visual Studio fournissent tous deux des outils visue
 
      ![Expérience de rechargement de fichiers](../designers/media/blendfilereload.png "BlendFileReload")
 
-- **Dispositions et paramètres synchronisés :** Les dispositions personnalisées vous permettent d’enregistrer et d’appliquer des personnalisations de disposition de fenêtre d’outil. Visual Studio synchronise ces personnalisations et ces préférences à la fois pour Visual Studio et pour Blend pour Visual Studio sur différents ordinateurs lorsque vous vous connectez avec le même compte Microsoft. Consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+- **Dispositions et paramètres synchronisés :** Les dispositions personnalisées vous permettent d’enregistrer et d’appliquer des personnalisations de disposition de fenêtre d’outil. Visual Studio synchronise ces personnalisations et ces préférences à la fois pour Visual Studio et pour Blend pour Visual Studio sur différents ordinateurs lorsque vous vous connectez avec le même compte Microsoft. Consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 - **Un Explorateur de solutions commun :** L’Explorateur de solutions vous donne une vue organisée de vos projets et de leurs fichiers, ainsi qu’un accès aux commandes qui s’y rapportent. Avec l'Explorateur de solutions, il est plus facile de travailler avec des grands projets d'entreprise. Consultez [Projets et solutions](../ide/solutions-and-projects-in-visual-studio.md).
 
-- **Team Explorer :** Team Explorer vous permet de gérer vos projets avec les référentiels GIT ou TFS afin de faciliter la collaboration d’équipe. Consultez [Travailler dans Team Explorer](http://msdn.microsoft.com/library/fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02).
+- **Team Explorer :** Team Explorer vous permet de gérer vos projets avec les référentiels GIT ou TFS afin de faciliter la collaboration d’équipe. Consultez [Travailler dans Team Explorer](https://msdn.microsoft.com/library/fd7a5cf7-7916-4fa0-b5e6-5a83cf377a02).
 
 - **NuGet :** Vous pouvez gérer les packages NuGet aussi bien dans Visual Studio que dans Blend pour Visual Studio. NuGet est un gestionnaire de package pour le .NET Framework qui simplifie l'installation et la suppression de packages d'une solution.
 

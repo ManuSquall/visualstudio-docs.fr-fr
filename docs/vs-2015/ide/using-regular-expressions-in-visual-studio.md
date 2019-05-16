@@ -19,16 +19,16 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6906a351a9d93e566c1a184ed237beb15cbd7b89
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1e57b3f8db5330f7d0778ee53e552c38e8295c62
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669339"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696412"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>Utiliser des expressions régulières dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-Visual Studio utilise les expressions régulières du .NET Framework pour rechercher et remplacer du texte. Pour plus d’informations sur les expressions régulières du .NET, consultez [Expressions régulières du .NET Framework](http://msdn.microsoft.com/library/521b3f6d-f869-42e1-93e5-158c54a6895d).
+Visual Studio utilise les expressions régulières du .NET Framework pour rechercher et remplacer du texte. Pour plus d’informations sur les expressions régulières du .NET, consultez [Expressions régulières du .NET Framework](https://msdn.microsoft.com/library/521b3f6d-f869-42e1-93e5-158c54a6895d).
 
 Avant Visual Studio 2012, Visual Studio utilisait la syntaxe d'expression régulière personnalisée dans les fenêtres Rechercher et remplacer. Pour savoir comment convertir certains des symboles d’expressions régulières personnalisées les plus couramment utilisés dans les versions du .NET Framework, consultez [Conversions des expressions régulières Visual Studio](https://msdn.microsoft.com/library/2k3te2cs\(v=vs.110\).aspx).
 
@@ -36,7 +36,7 @@ Avant Visual Studio 2012, Visual Studio utilisait la syntaxe d'expression régu
 > Dans les systèmes d'exploitation Windows, la plupart des lignes se terminent par « \r\n » (retour chariot suivi d'une nouvelle ligne). Ces caractères ne sont pas visibles, mais sont présents dans l'éditeur et sont transmis au service d'expressions régulières .NET.
 
 > [!TIP]
-> Pour plus d’informations sur les expressions régulières utilisées dans les modèles de remplacement, consultez [Substitutions](http://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e). Pour utiliser un groupe de captures numéroté, la syntaxe est `$1` pour spécifier le groupe numéroté et `(x)` pour spécifier le groupe en question. Par exemple, l’expression régulière groupée `(\d)([a-z])` recherche quatre correspondances dans la chaîne suivante : **1a 2b 3c 4d**. La chaîne de remplacement `z$1` convertit cette chaîne en **z1 z2 z3 z4**.
+> Pour plus d’informations sur les expressions régulières utilisées dans les modèles de remplacement, consultez [Substitutions](https://msdn.microsoft.com/library/d1f52431-1c7d-4dc6-8792-6b988256892e). Pour utiliser un groupe de captures numéroté, la syntaxe est `$1` pour spécifier le groupe numéroté et `(x)` pour spécifier le groupe en question. Par exemple, l’expression régulière groupée `(\d)([a-z])` recherche quatre correspondances dans la chaîne suivante : **1a 2b 3c 4d**. La chaîne de remplacement `z$1` convertit cette chaîne en **z1 z2 z3 z4**.
 
 ## <a name="regular-expression-examples"></a>Exemples d’expressions régulières
 

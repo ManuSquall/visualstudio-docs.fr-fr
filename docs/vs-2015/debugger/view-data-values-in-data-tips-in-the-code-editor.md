@@ -21,12 +21,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 689d01c7e22cca430693a85e6dedcc7706fda41d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: fd2c7bf67b5c2e7f25b4193462883b53cda8db87
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437698"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700105"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>Afficher les valeurs des données dans les conseils de données de l'éditeur de code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -107,7 +107,7 @@ Les DataTips sont un moyen pratique de visualiser des informations sur les varia
   
 - Cliquez sur l'icône en forme de loupe pour sélectionner le visualiseur par défaut du type de données.  
   
-     - ou -  
+     ou  
   
      Cliquez sur la flèche contextuelle à côté du visualiseur pour choisir dans une liste le visualiseur approprié pour ce type de données.  
   
@@ -143,6 +143,6 @@ Les DataTips sont un moyen pratique de visualiser des informations sur les varia
   
 ## <a name="see-also"></a>Voir aussi  
  [Affichage des données dans le débogueur](../debugger/viewing-data-in-the-debugger.md)   
- [Guide pratique pour Utilisez la boîte de dialogue Espion express](http://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
+ [Guide pratique pour Utilisez la boîte de dialogue Espion express](https://msdn.microsoft.com/library/ffaee1dd-e5ce-4ef2-9401-d28329398867)   
  [Créer des visualiseurs personnalisés](../debugger/create-custom-visualizers-of-data.md)   
- [Guide pratique pour Modifier le Format numérique de débogueur Windows](http://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)
+ [Guide pratique pour Modifier le Format numérique de débogueur Windows](https://msdn.microsoft.com/library/cd593847-a625-411d-a430-b798346ef18f)

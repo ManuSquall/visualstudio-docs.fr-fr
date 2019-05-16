@@ -24,19 +24,19 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 666b5acaae84a1b16c1b4bdfeb7cb1b8f4bcfb64
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 521f878c9d4fafa61f8c717f4c9752622ef339d9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63386008"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65699809"
 ---
 # <a name="hierarchical-update"></a>Mise à jour hiérarchique
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Mise à jour hiérarchique * désigne le processus d’enregistrement des données mises à jour (à partir d’un jeu de données avec deux ou plusieurs tables liées) à une base de données tout en conservant les règles d’intégrité référentielle. *L’intégrité référentielle* fait référence aux règles de cohérence fournies par les contraintes dans une base de données qui contrôlent le comportement de l’insertion, la mise à jour et suppression des enregistrements associés. Par exemple, il est l’intégrité référentielle impose la création d’un enregistrement de client avant d’autoriser des commandes doit être créé pour ce client.  Pour plus d’informations sur les relations dans les jeux de données, consultez [relations dans les jeux de données](../data-tools/relationships-in-datasets.md)  
   
- La fonctionnalité de mise à jour hiérarchique utilise un `TableAdapterManager` pour gérer le `TableAdapter`s dans un dataset typé. Le `TableAdapterManager` composant est un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-généré (classe), il est donc pas partie de la [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Lorsque vous faites glisser une table à partir de la fenêtre sources de données à un formulaire de Windows ou d’une page WPF, Visual Studio ajoute une variable de type TableAdapterManager à la page ou le formulaire, et il apparaît dans le concepteur dans la barre d’état du composant. Pour plus d’informations sur la `TableAdapterManager` de classe, consultez la section de référence de TableAdapterManager de [vue d’ensemble de TableAdapterManager](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).  
+ La fonctionnalité de mise à jour hiérarchique utilise un `TableAdapterManager` pour gérer le `TableAdapter`s dans un dataset typé. Le `TableAdapterManager` composant est un [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-généré (classe), il est donc pas partie de la [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Lorsque vous faites glisser une table à partir de la fenêtre sources de données à un formulaire de Windows ou d’une page WPF, Visual Studio ajoute une variable de type TableAdapterManager à la page ou le formulaire, et il apparaît dans le concepteur dans la barre d’état du composant. Pour plus d’informations sur la `TableAdapterManager` de classe, consultez la section de référence de TableAdapterManager de [vue d’ensemble de TableAdapterManager](https://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).  
   
  Par défaut, un jeu de données traite les tables associées « uniquement, pour les relations » ce qui signifie qu’il n’impose pas les contraintes de clé étrangères. Vous pouvez modifier ce paramètre au moment du design en utilisant le Concepteur de Dataset. Sélectionnez la ligne de relation entre deux tables pour afficher le **Relation** boîte de dialogue. Les modifications apportées ici détermine comment le composant TableAdapterManager comporte quand il renvoyer les modifications dans les tables associées à la base de données.  
   
@@ -55,7 +55,7 @@ Mise à jour hiérarchique * désigne le processus d’enregistrement des donné
   
  Par défaut, les tables de données dans un jeu de données sont générées avec des relations (<xref:System.Data.DataRelation>) qui correspondent aux relations dans la base de données. Toutefois, la relation dans le jeu de données n’est pas générée comme une contrainte foreign key. Le <xref:System.Data.DataRelation> est configuré en tant que **Relation uniquement** sans <xref:System.Data.ForeignKeyConstraint.UpdateRule%2A> ou <xref:System.Data.ForeignKeyConstraint.DeleteRule%2A> en vigueur.  
   
- Par défaut, les mises à jour en cascade et les suppressions en cascade sont désactivées même si la relation de base de données est définie avec les mises à jour en cascade et/ou suppressions en cascade sous tension. Par exemple, création d’un nouveau client et une commande et tente d’enregistrer les données peuvent provoquer un conflit avec les contraintes de clé étrangère sont définies dans la base de données. Pour plus d'informations, voir [Procédure : Configurer des contraintes de clé étrangère dans un jeu de données](http://msdn.microsoft.com/library/3954c388-e209-4a67-a34e-5ca106282f8e).  
+ Par défaut, les mises à jour en cascade et les suppressions en cascade sont désactivées même si la relation de base de données est définie avec les mises à jour en cascade et/ou suppressions en cascade sous tension. Par exemple, création d’un nouveau client et une commande et tente d’enregistrer les données peuvent provoquer un conflit avec les contraintes de clé étrangère sont définies dans la base de données. Pour plus d'informations, voir [Procédure : Configurer des contraintes de clé étrangère dans un jeu de données](https://msdn.microsoft.com/library/3954c388-e209-4a67-a34e-5ca106282f8e).  
   
 ## <a name="set-the-order-to-perform-updates"></a>Définir l’ordre pour effectuer des mises à jour  
  Définition de l’ordre pour effectuer des mises à jour définit l’ordre de la personne insère, met à jour et les suppressions qui est requis pour enregistrer toutes les données modifiées dans toutes les tables d’un dataset. Lors de la mise à jour hiérarchique est activée, insertions sont exécutées en premier, puis met à jour, puis supprime. Le `TableAdapterManager` fournit un `UpdateOrder` propriété qui peut être ensemble pour effectuer des mises à jour tout d’abord, puis les insertions et suppressions.  
@@ -63,7 +63,7 @@ Mise à jour hiérarchique * désigne le processus d’enregistrement des donné
 > [!NOTE]
 > Il est important de comprendre que l’ordre de mise à jour est exhaustive. Autrement dit, lorsque les mises à jour sont effectuées, insertions et suppressions sont exécutées pour toutes les tables dans le jeu de données.  
   
- Pour définir le `UpdateOrder` propriété, après avoir fait glisser des éléments à partir de la [fenêtre Sources de données](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) sur un formulaire, sélectionnez le `TableAdapterManager` dans la barre d’état du composant, puis définissez le `UpdateOrder` propriété dans le **propriétés** fenêtre. Pour plus d'informations, voir [Procédure : Définir l’ordre lorsque vous effectuez une mise à jour hiérarchique](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83).  
+ Pour définir le `UpdateOrder` propriété, après avoir fait glisser des éléments à partir de la [fenêtre Sources de données](https://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) sur un formulaire, sélectionnez le `TableAdapterManager` dans la barre d’état du composant, puis définissez le `UpdateOrder` propriété dans le **propriétés** fenêtre. Pour plus d'informations, voir [Procédure : Définir l’ordre lorsque vous effectuez une mise à jour hiérarchique](https://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83).  
   
 ## <a name="create-a-backup-copy-of-a-dataset-before-performing-a-hierarchical-update"></a>Créer une copie de sauvegarde d’un jeu de données avant d’effectuer une mise à jour hiérarchique  
  Lorsque vous enregistrez des données (en appelant le `TableAdapterManager.UpdateAll()` méthode), la `TableAdapterManager` tente de mettre à jour les données pour chaque table dans une transaction unique. Si une partie de la mise à jour pour n’importe quelle table échoue, la transaction entière est annulée. Dans la plupart des cas, la restauration retourne votre application à son état d’origine.  
@@ -120,7 +120,7 @@ Mise à jour hiérarchique * désigne le processus d’enregistrement des donné
 |Méthode `UpdateAll`|Enregistre toutes les données de toutes les tables de données.|  
 |Propriété `BackUpDataSetBeforeUpdate`|Détermine s’il faut créer une copie de sauvegarde du jeu de données avant d’exécuter le `TableAdapterManager.UpdateAll` (méthode). Valeur booléenne.|  
 |*tableName* `TableAdapter` propriété|Représente un `TableAdapter`. Le texte généré `TableAdapterManager` contient une propriété pour chaque `TableAdapter` qu’il gère. Par exemple, un jeu de données avec une table Customers et Orders est généré avec un `TableAdapterManager` contenant `CustomersTableAdapter` et `OrdersTableAdapter` propriétés.|  
-|Propriété `UpdateOrder`|Contrôler l’ordre de l’individuel insert, update et les commandes delete. Définissez ce paramètre à une des valeurs dans le `TableAdapterManager.UpdateOrderOption` énumération.<br /><br /> Par défaut, le `UpdateOrder` a la valeur **InsertUpdateDelete**. Cela signifie que les insertions, puis met à jour et supprime ensuite sont effectuées pour toutes les tables dans le jeu de données. Pour plus d'informations, voir [Procédure : Définir l’ordre lorsque vous effectuez une mise à jour hiérarchique](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83).|  
+|Propriété `UpdateOrder`|Contrôler l’ordre de l’individuel insert, update et les commandes delete. Définissez ce paramètre à une des valeurs dans le `TableAdapterManager.UpdateOrderOption` énumération.<br /><br /> Par défaut, le `UpdateOrder` a la valeur **InsertUpdateDelete**. Cela signifie que les insertions, puis met à jour et supprime ensuite sont effectuées pour toutes les tables dans le jeu de données. Pour plus d'informations, voir [Procédure : Définir l’ordre lorsque vous effectuez une mise à jour hiérarchique](https://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83).|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Enregistrer les données dans la base de données](../data-tools/save-data-back-to-the-database.md)
