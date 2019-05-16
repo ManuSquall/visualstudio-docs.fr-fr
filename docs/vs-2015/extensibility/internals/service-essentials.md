@@ -10,12 +10,12 @@ ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5b659560c7242fa691fe046b5e1628b1e47c2a2d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 407dda2f203b7be20b19c0e296caa9ce1c95b32c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111596"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696079"
 ---
 # <a name="service-essentials"></a>Éléments fondamentaux du service
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Un service est un contrat entre deux VSPackages. Un VSPackage fournit un ensembl
   
 - Pour prendre en charge le chargement à la demande, un fournisseur de services enregistre ses services globaux auprès [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Pour plus d’informations, consultez [enregistrement des Services](../../misc/registering-services.md).  
   
-- Après avoir obtenu un service, utilisez [QueryInterface](http://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) (code non managé) ou d’un transtypage (code managé) pour obtenir l’interface souhaitée, par exemple :  
+- Après avoir obtenu un service, utilisez [QueryInterface](https://msdn.microsoft.com/library/62fce95e-aafa-4187-b50b-e6611b74c3b3) (code non managé) ou d’un transtypage (code managé) pour obtenir l’interface souhaitée, par exemple :  
   
     ```vb  
     TryCast(GetService(GetType(SVsActivityLog)), IVsActivityLog)  
@@ -62,5 +62,5 @@ Un service est un contrat entre deux VSPackages. Un VSPackage fournit un ensembl
 ## <a name="see-also"></a>Voir aussi  
  [Liste des Services disponibles](../../extensibility/internals/list-of-available-services.md)   
  [À l’aide et fourniture de Services](../../extensibility/using-and-providing-services.md)   
- [Cast et conversions de types](http://msdn.microsoft.com/library/568df58a-d292-4b55-93ba-601578722878)   
- [Cast](http://msdn.microsoft.com/library/3dbeb06e-2f4b-4693-832d-624bc8ec95de)
+ [Cast et conversions de types](https://msdn.microsoft.com/library/568df58a-d292-4b55-93ba-601578722878)   
+ [Cast](https://msdn.microsoft.com/library/3dbeb06e-2f4b-4693-832d-624bc8ec95de)

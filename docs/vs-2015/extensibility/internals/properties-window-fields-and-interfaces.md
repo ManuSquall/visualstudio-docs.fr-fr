@@ -10,12 +10,12 @@ ms.assetid: 0328f0e5-2380-4a7a-a872-b547cb775050
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 515540eee455fcf22151e336897dd5f586867a82
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b58314d64536ecf33cc5589609ee5524a9352629
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947976"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700821"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Champs et interfaces de la fenêtre Propriétés
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Le modèle de sélection à déterminer quelles informations sont affichées dan
   
 3. Appel <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> et en lui passant les éléments de la hiérarchie sélectionnée dans le `VSHPROPID_BrowseObject` paramètre remplit le <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> objet.  
   
-4. Objet dérivé de la [IDispatch Interface](http://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) est retournée pour <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> pour l’élément demandé, et l’environnement encapsulé dans un <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> (voir l’étape suivante). Si l’appel échoue, l’environnement, un deuxième appel à `IVsHierarchy::GetProperty`, en lui passant le conteneur de sélection <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> que l’ou les éléments de hiérarchie fournissent.  
+4. Objet dérivé de la [IDispatch Interface](https://msdn.microsoft.com/ebbff4bc-36b2-4861-9efa-ffa45e013eb5) est retournée pour <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> pour l’élément demandé, et l’environnement encapsulé dans un <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> (voir l’étape suivante). Si l’appel échoue, l’environnement, un deuxième appel à `IVsHierarchy::GetProperty`, en lui passant le conteneur de sélection <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> que l’ou les éléments de hiérarchie fournissent.  
   
     Votre projet ne crée pas de VSPackage <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> , car la fenêtre d’environnement fourni VSPackage qui implémente (par exemple, **l’Explorateur de solutions**) construit <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> en son nom.  
   

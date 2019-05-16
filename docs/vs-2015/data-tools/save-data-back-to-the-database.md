@@ -26,12 +26,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbbb730af965b414a907bb230a58291ec53084a3
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 2882434f0638d565133efd9744a94d224d39d121
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63425345"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692535"
 ---
 # <a name="save-data-back-to-the-database"></a>Enregistrer les données dans la base de données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -166,7 +166,7 @@ Processus de mise à jour des deux étapes et le rôle de DataRowVersion dans un
   
  `GetChanges` par elle-même retourne tous les enregistrements modifiés. En revanche, en passant le texte souhaité <xref:System.Data.DataRowState> en tant que paramètre à la `GetChanges` (méthode), vous pouvez spécifier le sous-ensemble d’enregistrements modifiés souhaité : nouvellement ajouté détaché d’enregistrements, enregistrements marqués pour suppression, enregistrements ou des enregistrements modifiés.  
   
- Obtention d’un sous-ensemble des enregistrements modifiés est utile lorsque vous souhaitez envoyer des enregistrements à un autre composant pour traitement. Au lieu d’envoyer l’ensemble du dataset, vous pouvez réduire la surcharge de la communication avec l’autre composant en récupérant uniquement les enregistrements dont le composant a besoin. Pour plus d'informations, voir [Procédure : Récupérer des lignes modifiées](http://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
+ Obtention d’un sous-ensemble des enregistrements modifiés est utile lorsque vous souhaitez envoyer des enregistrements à un autre composant pour traitement. Au lieu d’envoyer l’ensemble du dataset, vous pouvez réduire la surcharge de la communication avec l’autre composant en récupérant uniquement les enregistrements dont le composant a besoin. Pour plus d'informations, voir [Procédure : Récupérer des lignes modifiées](https://msdn.microsoft.com/library/6ff0cbd0-5253-48e7-888a-144d56c2e0a9).  
   
 ## <a name="committing-changes-in-the-dataset"></a>Validation des modifications dans le jeu de données  
  Lorsque des modifications sont apportées dans le jeu de données, le <xref:System.Data.DataRow.RowState%2A> propriété des lignes modifiées est définie. Les versions d’origine et actuelles des enregistrements sont établies, conservées et mises à votre disposition par le <xref:System.Data.DataRowView.RowVersion%2A> propriété. Les métadonnées sont stockées dans les propriétés de ces lignes modifiées ne sont nécessaire pour envoyer les mises à jour correctes à la source de données.  
@@ -219,12 +219,12 @@ Processus de mise à jour des deux étapes et le rôle de DataRowVersion dans un
   
 - Dans la couche métier, en ajoutant du code à votre application pour valider les données. Le jeu de données est un seul endroit, vous pouvez le faire. Le Concepteur de DataSet fournit quelques-uns des avantages de la validation de serveur principal, telles que la capacité à valider les modifications que la modifiant des valeurs de colonne et de ligne. Pour plus d’informations, consultez [valider des données dans les jeux de données](../data-tools/validate-data-in-datasets.md).  
   
-- Dans la couche de présentation, en ajoutant la validation aux formulaires. Pour plus d’informations, consultez [Validation des entrées utilisateur dans les Windows Forms](http://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1).  
+- Dans la couche de présentation, en ajoutant la validation aux formulaires. Pour plus d’informations, consultez [Validation des entrées utilisateur dans les Windows Forms](https://msdn.microsoft.com/library/4ec07681-1dee-4bf9-be5e-718f635a33a1).  
   
 - Dans les données back-end, en envoyant des données à la source de données, par exemple, la base de données et en l’autorisant à accepter ou refuser les données. Si vous travaillez avec une base de données qui a des fonctionnalités évoluées de validation des données et fournir des informations d’erreur, cela peut être une approche pratique, car vous pouvez valider les données, quel que soit l’emplacement d’origine. Toutefois, cette approche ne peut pas satisfaire les exigences de la validation spécifique à l’application. En outre, la source de données valider des données peut entraîner de nombreux allers-retours vers la source de données, en fonction de la façon dont votre application facilite la résolution des erreurs de validation déclenchés par le serveur principal.  
   
   > [!IMPORTANT]
-  > Lorsque vous utilisez les commandes de données avec un <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> propriété a la valeur <xref:System.Data.CommandType>, soigneusement vérifier les informations qui sont envoyées à partir d’un client avant de le transmettre à votre base de données. Des utilisateurs malveillants peuvent tenter d’envoyer (injecter) des instructions SQL modifiées ou supplémentaires afin d’accéder à la base de données ou de l’endommager. Avant de transférer l’entrée utilisateur et une base de données, vérifiez toujours que les informations sont valides. Il est recommandé de toujours utiliser des requêtes paramétrables ou les procédures stockées lorsque cela est possible. Pour plus d’informations, consultez [Vue d’ensemble des attaques de script](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
+  > Lorsque vous utilisez les commandes de données avec un <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> propriété a la valeur <xref:System.Data.CommandType>, soigneusement vérifier les informations qui sont envoyées à partir d’un client avant de le transmettre à votre base de données. Des utilisateurs malveillants peuvent tenter d’envoyer (injecter) des instructions SQL modifiées ou supplémentaires afin d’accéder à la base de données ou de l’endommager. Avant de transférer l’entrée utilisateur et une base de données, vérifiez toujours que les informations sont valides. Il est recommandé de toujours utiliser des requêtes paramétrables ou les procédures stockées lorsque cela est possible. Pour plus d’informations, consultez [Vue d’ensemble des attaques de script](https://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07).  
   
   Une fois que les modifications ont été apportées dans un jeu de données, vous pouvez transmettre les modifications apportées à une source de données. En règle générale, ce faire, appelez le `Update` méthode d’un TableAdapter (ou adaptateur de données). La méthode parcourt chaque enregistrement dans une table de données détermine quel type de mise à jour est nécessaire (update, insert ou delete), le cas échéant, puis exécute la commande appropriée.  
   
@@ -272,6 +272,6 @@ Processus de mise à jour des deux étapes et le rôle de DataRowVersion dans un
   
 ## <a name="see-also"></a>Voir aussi  
  [Mettre à jour des données à l’aide d’un TableAdapter](../data-tools/update-data-by-using-a-tableadapter.md)   
- [Préparation de votre application pour recevoir des données](http://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
+ [Préparation de votre application pour recevoir des données](https://msdn.microsoft.com/library/c17bdb7e-c234-4f2f-9582-5e55c27356ad)   
  [Lier des contrôles à des données dans Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md)   
- [Validation des données](http://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   
+ [Validation des données](https://msdn.microsoft.com/library/b3a9ee4e-5d4d-4411-9c56-c811f2b4ee7e)   

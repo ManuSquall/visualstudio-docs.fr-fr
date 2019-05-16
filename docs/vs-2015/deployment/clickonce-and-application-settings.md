@@ -15,19 +15,19 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 07be583099627bbff4f67a4c040f4c44ddbc6224
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: c8e1ffe6d6f32cfad137d5890715a5a0032a29d7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58947938"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696688"
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce et paramètres d'application
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Paramètres d’application pour Windows Forms rend plus facile à créer, stocker et gérer des applications personnalisées et préférences de l’utilisateur sur le client. Le document suivant explique le fonctionnement des fichiers de paramètres d’application dans une application ClickOnce, et comment ClickOnce migre les paramètres lorsque l’utilisateur met à niveau vers la prochaine version.  
   
- Les informations ci-dessous s’appliquent uniquement à un fournisseur de paramètres d’application par défaut, le <xref:System.Configuration.LocalFileSettingsProvider> classe. Si vous fournissez un fournisseur personnalisé, ce fournisseur détermine comment il stocke ses données et comment il met à niveau ses paramètres entre les versions. Pour plus d’informations sur les fournisseurs de paramètres d’application, consultez [Application Settings Architecture](http://msdn.microsoft.com/library/c8eb2ad0-fac6-4ea2-9140-675a4a44d562).  
+ Les informations ci-dessous s’appliquent uniquement à un fournisseur de paramètres d’application par défaut, le <xref:System.Configuration.LocalFileSettingsProvider> classe. Si vous fournissez un fournisseur personnalisé, ce fournisseur détermine comment il stocke ses données et comment il met à niveau ses paramètres entre les versions. Pour plus d’informations sur les fournisseurs de paramètres d’application, consultez [Application Settings Architecture](https://msdn.microsoft.com/library/c8eb2ad0-fac6-4ea2-9140-675a4a44d562).  
   
 ## <a name="application-settings-files"></a>Fichiers de paramètres d’application  
  Paramètres d’application consomment deux fichiers : *application*. exe.config et user.config, où *application* est le nom de votre application Windows Forms. User.config est créé sur la client la première fois que votre application stocke des paramètres de portée utilisateur. *application*. exe.config, en revanche, existera avant le déploiement si vous définissez les valeurs par défaut pour les paramètres. Visual Studio inclut ce fichier automatiquement lorsque vous utilisez sa **publier** commande. Si vous créez votre application ClickOnce à l’aide de Mage.exe ou MageUI.exe, vous devez vous assurer que ce fichier est inclus avec votre application des autres fichiers de lorsque vous remplissez votre manifeste d’application.  
@@ -53,10 +53,10 @@ Paramètres d’application pour Windows Forms rend plus facile à créer, stock
  Si vous avez créé vos propres paramètres de l’application classe wrapper et que vous souhaitez personnaliser la logique de mise à jour, vous pouvez remplacer le <xref:System.Configuration.ApplicationSettingsBase.Upgrade%2A> (méthode).  
   
 ## <a name="clickonce-and-roaming-settings"></a>ClickOnce et paramètres d’itinérance  
- ClickOnce ne fonctionne pas avec les paramètres d’itinérance, qui permet à votre fichier de paramètres pour vous suivent sur plusieurs ordinateurs sur un réseau. Si vous avez besoin de paramètres d’itinérance, vous devrez soit implémenter un fournisseur de paramètres d’application qui stocke les paramètres sur le réseau ou développer vos propres classes de paramètres personnalisés pour stocker les paramètres sur un ordinateur distant. Pour plus d’informations dans les fournisseurs de paramètres, consultez [Application Settings Architecture](http://msdn.microsoft.com/library/c8eb2ad0-fac6-4ea2-9140-675a4a44d562).  
+ ClickOnce ne fonctionne pas avec les paramètres d’itinérance, qui permet à votre fichier de paramètres pour vous suivent sur plusieurs ordinateurs sur un réseau. Si vous avez besoin de paramètres d’itinérance, vous devrez soit implémenter un fournisseur de paramètres d’application qui stocke les paramètres sur le réseau ou développer vos propres classes de paramètres personnalisés pour stocker les paramètres sur un ordinateur distant. Pour plus d’informations dans les fournisseurs de paramètres, consultez [Application Settings Architecture](https://msdn.microsoft.com/library/c8eb2ad0-fac6-4ea2-9140-675a4a44d562).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md)   
- [Vue d’ensemble des paramètres d’application](http://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc)   
+ [Vue d’ensemble des paramètres d’application](https://msdn.microsoft.com/library/0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc)   
  [Vue d’ensemble du Cache ClickOnce](../deployment/clickonce-cache-overview.md)   
  [Accès aux données locales et distantes dans les applications ClickOnce](../deployment/accessing-local-and-remote-data-in-clickonce-applications.md)

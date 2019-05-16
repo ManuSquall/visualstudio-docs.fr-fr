@@ -13,12 +13,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4d53cdee5d92a92bb7405d1ecfb669e6de25a5a0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 814327befe538bfaa102b198988e76dbd52090bb
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432388"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705692"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Ajout d'une propriété de suivi à une définition de langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Cette procédure pas à pas montre comment ajouter une propriété de suivi à u
   
  Par exemple, dans les outils de langage spécifique à un domaine (outils DSL), le nom d’affichage propriété d’une classe de domaine a la valeur par défaut qui est calculée en utilisant le nom de la classe de domaine, mais un utilisateur peut modifier la valeur au moment du design ou réaffectez-lui la valeur calculée.  
   
- Cette procédure pas à pas, vous allez créer un langage spécifique à un domaine (DSL) qui a une propriété qui a comme valeur par défaut basée sur la propriété Namespace de valeur par défaut du modèle de suivi de Namespace. Pour plus d’informations sur les propriétés de suivi, consultez [définissant les propriétés de suivi](http://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
+ Cette procédure pas à pas, vous allez créer un langage spécifique à un domaine (DSL) qui a une propriété qui a comme valeur par défaut basée sur la propriété Namespace de valeur par défaut du modèle de suivi de Namespace. Pour plus d’informations sur les propriétés de suivi, consultez [définissant les propriétés de suivi](https://msdn.microsoft.com/0538b0e4-6221-4e7d-911a-b92cd622f0be).  
   
 - La prise en charge d’outils DSL suivi des descripteurs de propriété. Toutefois, le concepteur DSL ne peut pas servir à ajouter une propriété de suivi à un langage. Par conséquent, vous devez ajouter un code personnalisé pour définir et implémenter la propriété de suivi.  
   

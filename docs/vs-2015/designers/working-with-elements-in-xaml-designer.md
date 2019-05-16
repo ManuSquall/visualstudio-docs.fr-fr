@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1063a94ad2ff08942ec191e9162b4b2d506bb048
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 7596706fea9447e831d12084c8d390120a9163c7
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63403456"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690027"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Working with elements in XAML Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "63403456"
 Vous pouvez ajouter des éléments (contrôles, dispositions et formes) à votre application en XAML, en code ou en utilisant le concepteur XAML. Cette rubrique décrit comment utiliser des éléments dans le concepteur XAML dans Visual Studio ou Blend pour Visual Studio.  
   
 ## <a name="adding-an-element-to-a-layout"></a>Ajout d'un élément à une disposition  
- La *disposition* est le processus de dimensionnement et de positionnement des éléments dans une interface utilisateur. Pour positionner des éléments visuels, vous devez les placer dans un élément [Panel](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.panel.aspx) de disposition. Un `Panel` a une propriété enfant qui est une collection de types [FrameworkElement](http://msdn.microsoft.com/library/windows/apps/br208706.aspx). Vous pouvez utiliser différents éléments enfants de `Panel`, tels que [Canvas](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.canvas.aspx), [StackPanel](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.stackpanel.aspx) et [Grid](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx), pour servir de conteneurs de disposition, et positionner et organiser les éléments dans une page.  
+ La *disposition* est le processus de dimensionnement et de positionnement des éléments dans une interface utilisateur. Pour positionner des éléments visuels, vous devez les placer dans un élément [Panel](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.panel.aspx) de disposition. Un `Panel` a une propriété enfant qui est une collection de types [FrameworkElement](https://msdn.microsoft.com/library/windows/apps/br208706.aspx). Vous pouvez utiliser différents éléments enfants de `Panel`, tels que [Canvas](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.canvas.aspx), [StackPanel](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.stackpanel.aspx) et [Grid](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.grid.aspx), pour servir de conteneurs de disposition, et positionner et organiser les éléments dans une page.  
   
  Par défaut, un panneau `Grid` est utilisé comme conteneur de disposition de niveau supérieur dans un formulaire ou une page. Vous pouvez ajouter des panneaux de disposition, des contrôles ou d'autres éléments dans la mise en page de niveau supérieur.  
   
@@ -34,7 +34,7 @@ Vous pouvez ajouter des éléments (contrôles, dispositions et formes) à votre
   
     - Faites glisser un élément depuis la **boîte à outils** vers la planche graphique.  
   
-    - Dans la **boîte à outils**, sélectionnez l’un des outils de dessin (par exemple, [Ellipse](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) ou [Rectangle](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)), puis dessinez un élément dans le panneau actif.  
+    - Dans la **boîte à outils**, sélectionnez l’un des outils de dessin (par exemple, [Ellipse](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.ellipse.aspx) ou [Rectangle](https://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.shapes.rectangle.aspx)), puis dessinez un élément dans le panneau actif.  
   
 ## <a name="changing-the-layering-order-of-elements"></a>Modification de l'ordre de superposition des éléments  
  Lorsque deux éléments de la planche graphique sont dans le concepteur XAML, un élément apparaît devant l'autre dans l'ordre de superposition. Sauf si la propriété **ZIndex** d’un élément est définie, l’élément au premier plan se trouve en bas de la liste des éléments dans la fenêtre Structure du document. Quand vous insérez un élément dans une page, un formulaire ou un conteneur de disposition, l'élément est automatiquement placé devant les autres éléments dans l'élément de conteneur actif. Pour modifier l’ordre des éléments, vous pouvez utiliser les commandes **Ordre** ou faire glisser les éléments dans l’arborescence d’objets de la fenêtre Structure du document.  

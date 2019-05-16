@@ -12,12 +12,12 @@ ms.assetid: a1dbe0dc-68da-45d7-8704-5b43ff7e4fc4
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d4e47712df1f76556ced8c69abb8bf5af085d01e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0f3b07068939e34b5c9e9487761177c0e12f5654
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58938610"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700114"
 ---
 # <a name="elements-of-a-project-model"></a>Éléments d’un modèle de projet
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Les interfaces et les implémentations de tous les projets de [!INCLUDE[vsprvs](
   
 - Chaque projet doit avoir un fichier de modèle ou un Assistant pour initialiser le nouveau fichier de projet lorsqu’un utilisateur crée un nouveau projet via la [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] l’interface utilisateur. Par exemple, le [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] modèles initialiser ce que deviennent des fichiers .vcproj.  
   
-  L’illustration suivante montre les interfaces principales, les services et les objets qui composent une implémentation de projet standard. Vous pouvez utiliser l’Assistant application, HierUtil7, pour créer les objets sous-jacents et autres réutilisable de programmation. Pour plus d’informations sur l’application d’assistance de HierUtil7 application, consultez [pas dans la génération : À l’aide des Classes de projet HierUtil7 pour implémenter un Type de projet (C++)](http://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
+  L’illustration suivante montre les interfaces principales, les services et les objets qui composent une implémentation de projet standard. Vous pouvez utiliser l’Assistant application, HierUtil7, pour créer les objets sous-jacents et autres réutilisable de programmation. Pour plus d’informations sur l’application d’assistance de HierUtil7 application, consultez [pas dans la génération : À l’aide des Classes de projet HierUtil7 pour implémenter un Type de projet (C++)](https://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346).  
   
   ![Graphique de Visual Studio projet modèle](../../extensibility/internals/media/vsprojectmodel.gif "vsProjectModel")  
   modèle de projet  
@@ -44,8 +44,8 @@ Les interfaces et les implémentations de tous les projets de [!INCLUDE[vsprvs](
   Projets peut prendre en charge les commandes et par conséquent doit implémenter le <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface pour participer au routage des commandes via le GUID de contexte de commande.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Liste de vérification : Créer de nouveaux Types de projet](../../extensibility/internals/checklist-creating-new-project-types.md)   
- [Pas dans la génération : À l’aide des Classes de projet HierUtil7 pour implémenter un Type de projet (C++)](http://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
+ [Liste de contrôle : Créer de nouveaux Types de projet](../../extensibility/internals/checklist-creating-new-project-types.md)   
+ [Pas dans la génération : À l’aide des Classes de projet HierUtil7 pour implémenter un Type de projet (C++)](https://msdn.microsoft.com/a5c16a09-94a2-46ef-87b5-35b815e2f346)   
  [Composants principaux du modèle projet](../../extensibility/internals/project-model-core-components.md)   
  [Création d’Instances de projet à l’aide de fabriques de projet](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)   
  [Guide pratique pour Bénéficiez d’un Service](../../extensibility/how-to-get-a-service.md)   

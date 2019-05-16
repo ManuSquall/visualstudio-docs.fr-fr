@@ -30,12 +30,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d443a38750904df26fdfffc65104bcde31c8d6fc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 93d001af54a84bdb2cd2ec00f3e8fb80174c6436
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437605"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701210"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Création et configuration de membres de type (Concepteur de classes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Vous pouvez ajouter ces membres aux types dans un diagramme de classes et config
 |Module (VB uniquement)|méthode, propriété, champ, événement, constructeur, constante|  
   
 > [!NOTE]
-> Lorsque les accesseurs get et set d’une propriété ne requièrent aucune logique supplémentaire, simplifiez la déclaration de la propriété en utilisant des propriétés implémentées automatiquement (C# uniquement). Pour afficher la signature complète, dans le menu **Diagramme de classes**, choisissez **Modifier le format des membres**, **Afficher la signature complète**. Pour plus d’informations sur les propriétés implémentées automatiquement, consultez [Propriétés implémentées automatiquement](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7).  
+> Lorsque les accesseurs get et set d’une propriété ne requièrent aucune logique supplémentaire, simplifiez la déclaration de la propriété en utilisant des propriétés implémentées automatiquement (C# uniquement). Pour afficher la signature complète, dans le menu **Diagramme de classes**, choisissez **Modifier le format des membres**, **Afficher la signature complète**. Pour plus d’informations sur les propriétés implémentées automatiquement, consultez [Propriétés implémentées automatiquement](https://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7).  
   
 ## <a name="common-tasks"></a>Tâches courantes  
   
@@ -131,7 +131,7 @@ Vous pouvez ajouter ces membres aux types dans un diagramme de classes et config
      **Remarque :** vous pouvez aussi utiliser les raccourcis clavier pour créer des membres. Pour plus d’informations, consultez [Raccourcis clavier et souris dans le diagramme de classes et dans la fenêtre Détails de classe (Concepteur de classes)](../ide/keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer.md).  
   
 ## <a name="ModifyTypeMembers"></a> Modification des membres de type  
- Le Concepteur de classes permet de modifier les membres de types affichés sur le diagramme. Vous pouvez modifier les membres de n'importe quel type affiché sur un diagramme de classes, à condition que ce type ne soit pas en lecture seule. Consultez [Affichage d’informations en lecture seule (Concepteur de classes)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a). Pour modifier des membres de type, utilisez la modification sur place sur l'aire de conception, la fenêtre Propriétés et la fenêtre Détails de classe.  
+ Le Concepteur de classes permet de modifier les membres de types affichés sur le diagramme. Vous pouvez modifier les membres de n'importe quel type affiché sur un diagramme de classes, à condition que ce type ne soit pas en lecture seule. Consultez [Affichage d’informations en lecture seule (Concepteur de classes)](https://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a). Pour modifier des membres de type, utilisez la modification sur place sur l'aire de conception, la fenêtre Propriétés et la fenêtre Détails de classe.  
   
  Tous les membres affichés dans la fenêtre Détails de classe représentent les membres des types figurant dans le diagramme de classes. Il existe quatre types de membres : les méthodes, les propriétés, les champs et les événements.  
   
@@ -263,7 +263,7 @@ Vous pouvez ajouter ces membres aux types dans un diagramme de classes et config
   
  Toutes les cellules de la fenêtre Détails de classe sont modifiables, à quelques exceptions près :  
   
-- Le type est en lecture seule quand, par exemple, il réside dans un assembly référencé (consultez [Affichage d’informations en lecture seule (Concepteur de classes)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)). Lorsque vous sélectionnez la forme dans le Concepteur de classes, la fenêtre Détails de classe affiche ses détails en lecture seule.  
+- Le type est en lecture seule quand, par exemple, il réside dans un assembly référencé (consultez [Affichage d’informations en lecture seule (Concepteur de classes)](https://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a)). Lorsque vous sélectionnez la forme dans le Concepteur de classes, la fenêtre Détails de classe affiche ses détails en lecture seule.  
   
 - Pour les indexeurs, le nom est en lecture seule et le reste (type, modificateur, résumé) est modifiable.  
   

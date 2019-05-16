@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbd746a52084d2a2fc90a0c6890e20687fe7ee26
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 4ee29fd6309db34d4e0e4a013149e268051ab0e5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63405629"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704393"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Guide pratique pour définir les options d'accessibilité IDE
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,12 +26,12 @@ ms.locfileid: "63405629"
  En outre, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] prend en charge les dispositions de clavier Dvorak, qui rendent plus accessibles les caractères les plus fréquemment tapés. Vous pouvez également personnaliser les touches de raccourci par défaut disponibles dans [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Pour plus d’informations, consultez [Identification et personnalisation des raccourcis clavier](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
   
 > [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="editors-dialogs-and-tool-windows"></a>Éditeurs, boîtes de dialogue et fenêtres d’outils  
  Par défaut, les boîtes de dialogue et les fenêtres d’outils de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] utilisent les mêmes taille de police et couleurs que le système d’exploitation. Les paramètres de couleur pour le cadre de l’IDE, les boîtes de dialogue, les barres d’outils et les fenêtres d’outils sont basés sur un modèle de couleurs : clair ou sombre. Vous pouvez changer le modèle de couleurs actuel dans la [boîte de dialogue Général, Environnement, Options](../../ide/reference/general-environment-options-dialog-box.md).  
   
- Vous pouvez également afficher des fenêtres indépendantes dans le mode Code de l’éditeur. Ces fenêtres peuvent vous demander de fournir des membres disponibles sur l’objet en cours et les paramètres pour exécuter une fonction ou une instruction. Ces fenêtres peuvent être utiles si vous avez des difficultés à taper. Toutefois, elles interfèrent avec le focus dans l’éditeur de code, ce qui peut être problématique pour certains utilisateurs. Vous pouvez désactiver ces fenêtres en ouvrant la boîte de dialogue Options et en décochant **Répertorier automatiquement les membres** et **Informations sur les paramètres** dans la page **Éditeur de texte**, **Toutes les langues**, **Général** de la boîte de dialogue **Options**. Pour plus d’informations, consultez [Guide pratique pour définir les options générales de l’éditeur](http://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  
+ Vous pouvez également afficher des fenêtres indépendantes dans le mode Code de l’éditeur. Ces fenêtres peuvent vous demander de fournir des membres disponibles sur l’objet en cours et les paramètres pour exécuter une fonction ou une instruction. Ces fenêtres peuvent être utiles si vous avez des difficultés à taper. Toutefois, elles interfèrent avec le focus dans l’éditeur de code, ce qui peut être problématique pour certains utilisateurs. Vous pouvez désactiver ces fenêtres en ouvrant la boîte de dialogue Options et en décochant **Répertorier automatiquement les membres** et **Informations sur les paramètres** dans la page **Éditeur de texte**, **Toutes les langues**, **Général** de la boîte de dialogue **Options**. Pour plus d’informations, consultez [Guide pratique pour définir les options générales de l’éditeur](https://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  
   
  Vous pouvez réorganiser les fenêtres dans l’environnement de développement intégré (IDE) pour les adapter au mieux à votre manière de travailler. Vous pouvez ancrer, rendre flottante, masquer ou masquer automatiquement chaque fenêtre Outil.  
   

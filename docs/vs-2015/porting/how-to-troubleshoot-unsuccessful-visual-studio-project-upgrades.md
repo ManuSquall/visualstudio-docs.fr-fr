@@ -18,12 +18,12 @@ caps.latest.revision: 31
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: 194dae93e3a013da366d454582b531a2cc4ff8b6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1fe975fedb8237762d7dadffceff22203dcb899e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096333"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65696392"
 ---
 # <a name="how-to-troubleshoot-unsuccessful-visual-studio-project-upgrades"></a>Procédure : Résoudre les problèmes de mises à niveau du projet Visual Studio échoue
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,4 +57,4 @@ Parfois, Visual Studio ne peut pas convertir complètement un projet à partir d
    Si vous souhaitez que votre projet doit être exécuté dans la mise à niveau [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] version, vous devez mettre à jour les références du projet et également mettre à jour les `Imports` ou `Using` instructions qui appellent les références. Si votre projet se charge dans l’IDE, vous pouvez mettre à jour les références à l’aide de **l’Explorateur de solutions** ou **Gestionnaire de références** boîte de dialogue.
 
 ## <a name="see-also"></a>Voir aussi
- [/ Mise à niveau de (devenv.exe)](../ide/reference/upgrade-devenv-exe.md) [conversion vers ASP.NET 4](http://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)
+ [/ Mise à niveau de (devenv.exe)](../ide/reference/upgrade-devenv-exe.md) [conversion vers ASP.NET 4](https://msdn.microsoft.com/library/790147c6-36c1-41b5-a52d-30b9ccd2bd10)

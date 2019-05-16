@@ -13,12 +13,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cdf4d9657832c2dc1e7691eed5c334e770de5700
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: d91d84b6a763dd3fecfac8a030f8514c91e5ac61
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62976984"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704715"
 ---
 # <a name="creating-a-workflow-project"></a>Création d'un projet de workflow
 Les workflows, services de workflow [!INCLUDE[indigo1](../includes/indigo1-md.md)], activités personnalisées et concepteurs d'activités personnalisées peuvent tous être créés via des modèles de projet [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Cette section décrit comment créer des bibliothèques et des applications avec les modèles de projet disponibles dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
@@ -44,7 +44,7 @@ Les workflows, services de workflow [!INCLUDE[indigo1](../includes/indigo1-md.md
  Décrit comment ajouter des activités de workflow supplémentaires ou des concepteurs et d'autres éléments [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], tels que des activités de code, à un projet existant.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
- [Conception des workflows](http://msdn.microsoft.com/library/41f727b5-b142-4c1b-b046-492b96135ae6)  
+ [Conception des workflows](https://msdn.microsoft.com/library/41f727b5-b142-4c1b-b046-492b96135ae6)  
   
 ## <a name="see-also"></a>Voir aussi  
  [Utilisation du Concepteur de flux de travail](../workflow-designer/using-the-workflow-designer.md)

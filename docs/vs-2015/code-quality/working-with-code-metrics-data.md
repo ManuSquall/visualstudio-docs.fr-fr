@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d4d206785991d37147d9d55d89947776a94b2ac4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b53e6a5c7ce65675037aac8c6fc4812f895d3b7b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111296"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703722"
 ---
 # <a name="working-with-code-metrics-data"></a>Utiliser des données de la métrique du code
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,7 +124,7 @@ Le **résultats de la métrique Code** fenêtre affiche les données qui sont g�
 ## <a name="BKMK_Creating_a_Work_Item_Based_on_Code_Metric_Results"></a> Création d’un élément de travail selon les résultats de métrique du Code  
  Vous pouvez créer un [!INCLUDE[esprfound](../includes/esprfound-md.md)] élément de travail qui est basée sur des résultats dans le **Code Metric Results** fenêtre. Lorsque l’élément de travail est créé, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] entre automatiquement un titre dans le **titre** données de métrique du code et de champ sous la **historique** onglet.  
   
- Pour plus d’informations sur la création d’éléments de travail, consultez [créer un élément de travail &#91;redirigé&#93;](http://msdn.microsoft.com/24b2e064-16ac-4bf0-8de4-98a1f48b8c4b).  
+ Pour plus d’informations sur la création d’éléments de travail, consultez [créer un élément de travail &#91;redirigé&#93;](https://msdn.microsoft.com/24b2e064-16ac-4bf0-8de4-98a1f48b8c4b).  
   
 #### <a name="to-create-a-work-item-based-on-a-result"></a>Pour créer un élément de travail basé sur un résultat  
   

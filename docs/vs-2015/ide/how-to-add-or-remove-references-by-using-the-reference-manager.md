@@ -23,12 +23,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8d7d4524f1839179ac253265d95f191caf1c50af
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 54d64fd59e71b582548aa5efade8d45a24ddb560
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445676"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701157"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Procédure : Ajouter ou supprimer des références à l’aide du Gestionnaire de références
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ Vous pouvez utiliser la boîte de dialogue **Gestionnaire de références** pour
   
 - Un composant qui utilise le [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] est incompatible avec un projet qui cible le [!INCLUDE[net_v45](../includes/net-v45-md.md)].  
   
-     Lorsque vous créez une application, certains projets ciblent le [!INCLUDE[net_v45](../includes/net-v45-md.md)] par défaut. Pour plus d’informations, consultez [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).  
+     Lorsque vous créez une application, certains projets ciblent le [!INCLUDE[net_v45](../includes/net-v45-md.md)] par défaut. Pour plus d’informations, consultez [.NET Framework Client Profile](https://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).  
   
 - Évitez si possible d'ajouter des références de fichier aux sorties d'un autre projet de la même solution, car cela risquerait de provoquer des erreurs de compilation. Utilisez l’onglet **Projets** de la boîte de dialogue **Ajouter une référence** afin de créer des références entre projets. Cela facilite le développement en équipe, en permettant une meilleure gestion des bibliothèques de classes créées dans vos projets. Pour plus d’informations, consultez [Dépannage de références rompues](../ide/troubleshooting-broken-references.md).  
   
@@ -173,7 +173,7 @@ Vous pouvez utiliser la boîte de dialogue **Gestionnaire de références** pour
 </PropertyGroup>  
 ```  
   
- Cochez bien la case **Windows** sur ce sous-groupe. Vous devriez ensuite pouvoir utiliser les éléments Windows Runtime. Toutefois, vous voudrez également ajouter System.Runtime, dans lequel Windows Runtime définit des classes et des interfaces standard, telles que IEnumerable, qui sont utilisées dans toutes les bibliothèques Windows Runtime. Pour plus d’informations sur l’ajout du System.Runtime, consultez [Applications du Bureau managées et Windows Runtime](http://msdn.microsoft.com/library/windows/apps/jj856306.aspx#consuming_standard_windows_runtime_types).  
+ Cochez bien la case **Windows** sur ce sous-groupe. Vous devriez ensuite pouvoir utiliser les éléments Windows Runtime. Toutefois, vous voudrez également ajouter System.Runtime, dans lequel Windows Runtime définit des classes et des interfaces standard, telles que IEnumerable, qui sont utilisées dans toutes les bibliothèques Windows Runtime. Pour plus d’informations sur l’ajout du System.Runtime, consultez [Applications du Bureau managées et Windows Runtime](https://msdn.microsoft.com/library/windows/apps/jj856306.aspx#consuming_standard_windows_runtime_types).  
   
 ### <a name="extensions-subgroup"></a>Sous-groupe Extensions  
  Les extensions indiquent les Kits de développement logiciel utilisateur qui étendent la plateforme Windows ciblée. Cet onglet apparaît pour les projets d'application [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] uniquement. Les projets du Bureau n'indiquent pas cet onglet car ils peuvent utiliser uniquement des fichiers .winmd internes.  
@@ -216,5 +216,5 @@ Vous pouvez utiliser la boîte de dialogue **Gestionnaire de références** pour
  La barre de recherche de la boîte de dialogue **Gestionnaire de références** fonctionne sur l’onglet situé dans le focus. Par exemple, si un utilisateur tape « système » dans la barre de recherche alors que l’onglet **Solution** est affiché, la recherche ne retourne aucun résultat à moins que la solution consiste en un nom de projet contenant « système ».  
   
 ## <a name="see-also"></a>Voir aussi  
- [NIB Comment : Ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter référence](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
+ [NIB Comment : Ajouter ou supprimer des références à l’aide de la boîte de dialogue Ajouter référence](https://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
  [Gestion des références dans un projet](../ide/managing-references-in-a-project.md)

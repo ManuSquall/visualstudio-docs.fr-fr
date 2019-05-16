@@ -12,12 +12,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dcfc73feb762ecc50412ca2dc67818e2fb60a64d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 5880dbeb9f3f49f990a923fd48c27dd6167d59c8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441723"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65692197"
 ---
 # <a name="environment-options-dialog-box"></a>Environnement, boîte de dialogue Options
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,12 +25,12 @@ ms.locfileid: "63441723"
 Vous pouvez utiliser les pages du dossier **Environnement** de la boîte de dialogue **Options** pour définir comment certains éléments de l’environnement de développement intégré (IDE) s’affichent et se comportent. Vous pouvez accéder aux pages Environnement en choisissant **Outils** et **Options** dans la barre de menus, puis en sélectionnant **Environnement**.  
   
 > [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui apparaissent sur votre ordinateur peuvent différer de celles décrites dans l'aide, selon les paramètres actifs et l'édition de Visual Studio utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Les boîtes de dialogue et les commandes de menu qui apparaissent sur votre ordinateur peuvent différer de celles décrites dans l'aide, selon les paramètres actifs et l'édition de Visual Studio utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 |Pour plus d'informations sur|Voir|  
 |----------------------------------|---------|  
 |Personnaliser la personnalisation de la présentation et du comportement des fenêtres, des menus et d'autres éléments de l'environnement de développement intégré (IDE).|[Général, Environnement, boîte de dialogue Options](../../ide/reference/general-environment-options-dialog-box.md)|  
-|Spécifiez la sécurité pour les compléments.|[Sécurité des compléments, Environnement, boîte de dialogue Options](http://msdn.microsoft.com/library/f95aa7af-70a5-4323-abe5-91bd6d264f4e)|  
+|Spécifiez la sécurité pour les compléments.|[Sécurité des compléments, Environnement, boîte de dialogue Options](https://msdn.microsoft.com/library/f95aa7af-70a5-4323-abe5-91bd6d264f4e)|  
 |Modifier les paramètres par défaut d'enregistrement et de restauration automatiques des fichiers.|[Récupération automatique, Environnement, boîte de dialogue Options](../../ide/reference/autorecover-environment-options-dialog-box.md)|  
 |Définir les paramètres de gestion et d'affichage de documents, y compris du comportement des Fichiers divers.|[Documents, Environnement, boîte de dialogue Options](../../ide/reference/documents-environment-options-dialog-box.md)|  
 |Personnalisez le déroulement des mises à jour et la gestion des extensions.|[Extensions et mises à jour, Environnement, boîte de dialogue Options](../../ide/reference/extensions-and-updates-environment-options-dialog-box.md)|  

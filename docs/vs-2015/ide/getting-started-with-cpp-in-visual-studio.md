@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae373742c114129c99e7b3444393e12c6c4dd8dd
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: b80faa2ceb48cfec933d2287b70d304564a8106a
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62585041"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65704451"
 ---
 # <a name="getting-started-with-c-in-visual-studio"></a>Bien démarrer avec C++ dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ En suivant cette procédure pas à pas, vous allez vous familiariser avec la plu
 
      Le message d’erreur s’affiche également dans la fenêtre **Liste d’erreurs** . Vous pouvez afficher la fenêtre en choisissant dans la barre de menus **Affichage**, **Liste d’erreurs**.
 
-     [cout](http://msdn.microsoft.com/library/d87db6c3-e4e1-4d09-9ec5-458f55018257) est inclus dans le fichier d’en-tête \<iostream\>.
+     [cout](https://msdn.microsoft.com/library/d87db6c3-e4e1-4d09-9ec5-458f55018257) est inclus dans le fichier d’en-tête \<iostream\>.
 
 2. Pour inclure l’en-tête iostream, entrez le code suivant après `#include "stdafx.h"`:
 
