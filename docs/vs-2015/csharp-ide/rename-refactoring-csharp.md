@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 971ca4e94f28016335483a03f4b0121de587f00d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 3f1c31d858fbe7a5183456bfc7fcc1e602d4e051
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439957"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686041"
 ---
 # <a name="rename-refactoring-c"></a>Refactorisation de changement de nom (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "63439957"
 |-----------------|----------------------|  
 |Champ|Modifie la déclaration et les utilisations du champ vers le nouveau nom.|  
 |variable locale|Modifie la déclaration et les utilisations de la variable vers le nouveau nom.|  
-|Méthode|Modifie le nom de la méthode et toutes les références à cette méthode pour le nouveau nom. **Remarque :**  Lorsque vous renommez une méthode d’extension, l’opération de changement de nom se propage à toutes les instances de la méthode qui sont dans la portée, même si la méthode d’extension est utilisée comme une méthode statique ou une méthode d’instance. Pour plus d’informations, consultez [Méthodes d’extension](http://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51).|  
+|Méthode|Modifie le nom de la méthode et toutes les références à cette méthode pour le nouveau nom. **Remarque :**  Lorsque vous renommez une méthode d’extension, l’opération de changement de nom se propage à toutes les instances de la méthode qui sont dans la portée, même si la méthode d’extension est utilisée comme une méthode statique ou une méthode d’instance. Pour plus d’informations, consultez [Méthodes d’extension](https://msdn.microsoft.com/library/175ce3ff-9bbf-4e64-8421-faeb81a0bb51).|  
 |Espace de noms|Modifie le nom de l’espace de noms pour le nouveau nom dans la déclaration, toutes les `using` instructions et des noms qualifiés complets. **Remarque :**  Lorsque vous renommez un espace de noms, [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] met également à jour le **Namespace par défaut** propriété sur le **Application** page de la **Concepteur de projet**. Cette propriété ne peut pas être réinitialisée en sélectionnant **Annuler** à partir de la **modifier** menu. Pour réinitialiser le **Namespace par défaut** valeur de propriété, vous devez modifier la propriété dans le **Concepteur de projet**. Pour plus d’informations, consultez [Page Application](../ide/reference/application-page-project-designer-csharp.md).|  
 |Propriété|Modifie la déclaration et les utilisations de la propriété vers le nouveau nom.|  
 |Type|Modifie toutes les déclarations et toutes les utilisations du type vers le nouveau nom, y compris les constructeurs et destructeurs. Pour les types partiels, l’opération de changement de nom se propage à toutes les parties.|  
@@ -170,4 +170,4 @@ var orderIDs =
   
 ## <a name="see-also"></a>Voir aussi  
  [Refactorisation (C#)](../csharp-ide/refactoring-csharp.md)   
- [Types anonymes](http://msdn.microsoft.com/library/59c9d7a4-3b0e-475e-b620-0ab86c088e9b)
+ [Types anonymes](https://msdn.microsoft.com/library/59c9d7a4-3b0e-475e-b620-0ab86c088e9b)

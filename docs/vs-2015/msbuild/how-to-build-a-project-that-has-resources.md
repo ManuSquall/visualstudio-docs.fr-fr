@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0806df31b7e1f225ecefc823cbcbdb0a72ff2058
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: fb77db891e824f5f2900ef191049e65cb2c89a98
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660266"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686514"
 ---
 # <a name="how-to-build-a-project-that-has-resources"></a>Comment : générer un projet qui dispose de ressources
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,18 +31,18 @@ Si vous générez les versions localisées d’un projet, tous les éléments de
   
 #### <a name="to-compile-resources-with-msbuild"></a>Pour compiler des ressources avec MSBuild  
   
-1.  Identifiez les fichiers de ressources du projet et transmettez-les à la tâche `GenerateResource`, en tant que listes d’éléments ou noms de fichiers.  
+1. Identifiez les fichiers de ressources du projet et transmettez-les à la tâche `GenerateResource`, en tant que listes d’éléments ou noms de fichiers.  
   
-2.  Spécifiez le paramètre `OutputResources` de la tâche `GenerateResource`, qui vous permet de définir les noms des fichiers de ressources de sortie.  
+2. Spécifiez le paramètre `OutputResources` de la tâche `GenerateResource`, qui vous permet de définir les noms des fichiers de ressources de sortie.  
   
-3.  Utilisez l’élément `Output` de la tâche pour stocker la valeur du paramètre `OutputResources` dans un élément.  
+3. Utilisez l’élément `Output` de la tâche pour stocker la valeur du paramètre `OutputResources` dans un élément.  
   
-4.  Utilisez l’élément créé à partir de l’élément `Output` en tant qu’entrée d’une autre tâche.  
+4. Utilisez l’élément créé à partir de l’élément `Output` en tant qu’entrée d’une autre tâche.  
   
 ## <a name="example"></a>Exemple  
  L’exemple de code suivant montre comment l’élément `Output` spécifie que l’attribut `OutputResources` de la tâche `GenerateResource` contient les fichiers de ressources compilés `alpha.resources` et `beta.resources` et que ces deux fichiers sont placés dans la liste d’éléments `Resources`. En identifiant ces fichiers .resources comme collection d’éléments du même nom, vous pouvez les utiliser facilement comme entrées d’une autre tâche, par exemple la tâche [Csc](../msbuild/csc-task.md).  
   
- Cette tâche revient à utiliser le commutateur **/compiler** pour [Resgen.exe](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4) :  
+ Cette tâche revient à utiliser le commutateur **/compiler** pour [Resgen.exe](https://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4) :  
   
  `Resgen.exe /compile alpha.resx,alpha.resources /compile beta.txt,beta.resources`  
   
@@ -83,4 +83,4 @@ Si vous générez les versions localisées d’un projet, tous les éléments de
 [MSBuild](msbuild.md)  
  [GenerateResource Task (Tâche GenerateResource)](../msbuild/generateresource-task.md)   
  [Tâche Csc](../msbuild/csc-task.md)   
- [Resgen.exe (Resource File Generator)](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)
+ [Resgen.exe (Resource File Generator)](https://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4)

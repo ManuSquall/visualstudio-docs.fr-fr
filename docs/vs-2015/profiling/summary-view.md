@@ -16,12 +16,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7482fb99114b4a30281d84045faa14d1a6562471
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8c1b8b10234e8b297be471f596cc1739deab317d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110895"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674173"
 ---
 # <a name="summary-view"></a>Vue Résumé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,8 +52,8 @@ La vue Résumé affiche des informations sur les fonctions ou les objets dont le
 |**Afficher une arborescence des appels tronquée**|Affiche les chemins d’exécution les plus consommateurs dans la vue Arborescence des appels. Pour plus d’informations, consultez [Arborescence des appels, vue](../profiling/call-tree-view.md).|  
 |**Afficher les hotlines**|Non disponible pour les données de profilage qui ont été collectées avec la méthode d’instrumentation. Affiche les lignes de code source les plus consommatrices dans la vue Lignes. Pour plus d’informations, consultez [Lignes, vue](../profiling/lines-view.md).|  
 |**Comparer des rapports**|Affiche la boîte de dialogue **Sélectionner des fichiers d’analyse à comparer**, où vous pouvez spécifier un autre fichier de données de profilage à comparer au fichier actif. Pour plus d’informations, consultez [Comparaison des fichiers de données de performances](../profiling/comparing-performance-data-files.md).|  
-|**Exporter les données du rapport**|Affiche la boîte de dialogue **Exporter le rapport**, où vous pouvez spécifier une ou plusieurs vues de rapport à enregistrer comme fichiers .csv (valeurs séparées par des virgules) ou .xml. Pour plus d'informations, voir [Procédure : Rapports des outils de profilage de l’exportation](http://msdn.microsoft.com/174b5bd3-df9b-4fd4-88d4-76032ab90451).|  
-|**Enregistrer le rapport analysé**|Enregistre le fichier de données de profilage actif dans un fichier .vsps, qui s’ouvre plus rapidement dans l’interface pour [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Pour plus d'informations, voir [Procédure : Enregistrer les éléments des fichiers de données de profilage analysés](http://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556).|  
+|**Exporter les données du rapport**|Affiche la boîte de dialogue **Exporter le rapport**, où vous pouvez spécifier une ou plusieurs vues de rapport à enregistrer comme fichiers .csv (valeurs séparées par des virgules) ou .xml. Pour plus d'informations, voir [Procédure : Rapports des outils de profilage de l’exportation](https://msdn.microsoft.com/174b5bd3-df9b-4fd4-88d4-76032ab90451).|  
+|**Enregistrer le rapport analysé**|Enregistre le fichier de données de profilage actif dans un fichier .vsps, qui s’ouvre plus rapidement dans l’interface pour [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Pour plus d'informations, voir [Procédure : Enregistrer les éléments des fichiers de données de profilage analysés](https://msdn.microsoft.com/0340ddde-caf4-48ac-8af3-d15dcdade556).|  
 |**Filtrer les données du rapport**|Affiche le volet de filtrage du rapport de profilage où vous pouvez spécifier des critères pour limiter les données de la vue Rapport. Pour plus d’informations, consultez [Filtre de la vue Rapport de performances](../profiling/performance-report-view-filter.md).|  
 |**Plein écran**|Active ou désactive le mode Plein écran pour la vue Rapport.|  
   

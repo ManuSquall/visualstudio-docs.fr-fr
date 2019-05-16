@@ -27,12 +27,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8e6c234b622dcc335a6fe42fd57f1f815a5fd9d9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 23c570e9d29c2288da32469b524c5e4d9125b097
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63447304"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694913"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Spécifiez les fichiers de symbole (.pdb) et les fichiers source dans le débogueur Visual Studio.
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,10 +94,10 @@ Un fichier de base de données du programme (.pdb), également appelé fichier d
 
    Lorsqu'elle est sélectionnée, cette option charge les tables d'exportation de DLL. Les informations symboliques de tables d'exportation de DLL peuvent être utiles si vous utilisez des messages Windows, des procédures Windows (WindowProcs), des objets COM, le marshaling ou toute DLL pour laquelle vous n'avez pas de symbole. La lecture des informations d'exportation des DLL implique une certaine charge mémoire. Par conséquent, cette fonctionnalité est désactivée par défaut.
 
-   Pour savoir quels symboles sont disponibles dans la table d'exportation d'une DLL, utilisez `dumpbin /exports`. Il existe des symboles pour toutes les DLL système 32 bits. En lisant le résultat de `dumpbin /exports` , vous apprenez le nom exact de la fonction, y compris les caractères non alphanumériques. Cette information peut être utile pour définir un point d'arrêt sur une fonction. Les noms de fonctions provenant de tables d'exportation de DLL peuvent s'afficher sous une forme tronquée dans les autres parties du débogueur. Les appels sont répertoriés dans l'ordre chronologique inverse, la fonction en cours (la plus profondément imbriquée) apparaissant en tête de liste. Pour plus d'informations, consultez [dumpbin /exports](http://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).
+   Pour savoir quels symboles sont disponibles dans la table d'exportation d'une DLL, utilisez `dumpbin /exports`. Il existe des symboles pour toutes les DLL système 32 bits. En lisant le résultat de `dumpbin /exports` , vous apprenez le nom exact de la fonction, y compris les caractères non alphanumériques. Cette information peut être utile pour définir un point d'arrêt sur une fonction. Les noms de fonctions provenant de tables d'exportation de DLL peuvent s'afficher sous une forme tronquée dans les autres parties du débogueur. Les appels sont répertoriés dans l'ordre chronologique inverse, la fonction en cours (la plus profondément imbriquée) apparaissant en tête de liste. Pour plus d'informations, consultez [dumpbin /exports](https://msdn.microsoft.com/library/2971ab7e-4ee6-478b-9c85-cda42a4ce1bf).
 
 ### <a name="BKMK_Use_symbol_servers_to_find_symbol_files_not_on_your_local_machine"></a> Utiliser des serveurs de symboles pour rechercher des fichiers de symboles qui ne sont pas sur votre ordinateur local
- [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] peut télécharger les fichiers de symboles de débogage à partir des serveurs de symboles qui implémentent le protocole symsrv. [Visual Studio Team Foundation Server](http://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6) et les [outils de débogage pour Windows](http://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) sont deux outils qui peuvent implémenter des serveurs de symboles. Vous spécifiez les serveurs de symboles à utiliser dans la boîte de dialogue **Options** de Visual Studio.
+ [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] peut télécharger les fichiers de symboles de débogage à partir des serveurs de symboles qui implémentent le protocole symsrv. [Visual Studio Team Foundation Server](https://msdn.microsoft.com/library/bd6977ca-e30a-491a-a153-671d81222ce6) et les [outils de débogage pour Windows](https://msdn.microsoft.com/library/windows/hardware/ff551063\(v=VS.85\).aspx) sont deux outils qui peuvent implémenter des serveurs de symboles. Vous spécifiez les serveurs de symboles à utiliser dans la boîte de dialogue **Options** de Visual Studio.
 
  Les serveurs de symboles que vous pouvez utiliser sont les suivants :
 
@@ -165,9 +165,9 @@ Un fichier de base de données du programme (.pdb), également appelé fichier d
 
  **Options C++**
 
- Un fichier .pdb (base de données du programme) contient des informations sur l'état du projet et le débogage, qui permettent l'édition des liens incrémentielle pour la configuration Debug de votre programme. Un fichier .pdb est créé lors de la génération à l'aide de [/ZI ou /Zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) (pour C/C++).
+ Un fichier .pdb (base de données du programme) contient des informations sur l'état du projet et le débogage, qui permettent l'édition des liens incrémentielle pour la configuration Debug de votre programme. Un fichier .pdb est créé lors de la génération à l'aide de [/ZI ou /Zi](https://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) (pour C/C++).
 
- Dans [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], l'option [/Fd](http://msdn.microsoft.com/library/3977a9ed-f0ac-45df-bf06-01cedd2ba85a) permet de nommer le fichier .pdb créé par le compilateur. Quand vous créez un projet dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] à l’aide des Assistants, l’option **/Fd** est définie pour créer un fichier .pdb nommé *projet*.pdb.
+ Dans [!INCLUDE[vcprvc](../includes/vcprvc-md.md)], l'option [/Fd](https://msdn.microsoft.com/library/3977a9ed-f0ac-45df-bf06-01cedd2ba85a) permet de nommer le fichier .pdb créé par le compilateur. Quand vous créez un projet dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] à l’aide des Assistants, l’option **/Fd** est définie pour créer un fichier .pdb nommé *projet*.pdb.
 
  Si vous générez votre application C/C++ à l’aide d’un makefile et que vous spécifiez **/ZI** ou **/Zi** sans **/Fd**, vous obtenez finalement deux fichiers .pdb :
 
@@ -183,7 +183,7 @@ Un fichier de base de données du programme (.pdb), également appelé fichier d
 
   **Options du .NET Framework**
 
-  Un fichier .pdb (base de données du programme) contient des informations sur l'état du projet et le débogage, qui permettent l'édition des liens incrémentielle pour la configuration Debug de votre programme. Un fichier .pdb est créé quand vous générez avec **/debug**. Vous pouvez générer des applications avec **/debug:full** ou **/debug:pdbonly**. La génération avec **/debug:full** génère du code pouvant être débogué. La génération avec **/debug:pdbonly** permet d’obtenir des fichiers .pdb mais ne génère pas le `DebuggableAttribute` indiquant au compilateur JIT que des informations de débogage sont disponibles. Utilisez **/debug:pdbonly** si vous souhaitez générer des fichiers .pdb pour une version Release sans qu’elle puisse être déboguée. Pour plus d'informations, consultez [/debug (C# Compiler Options)](http://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969) ou [/debug (Visual Basic)](http://msdn.microsoft.com/library/c2b0bea5-1d5e-499f-9bd5-4f6c6b715ea2).
+  Un fichier .pdb (base de données du programme) contient des informations sur l'état du projet et le débogage, qui permettent l'édition des liens incrémentielle pour la configuration Debug de votre programme. Un fichier .pdb est créé quand vous générez avec **/debug**. Vous pouvez générer des applications avec **/debug:full** ou **/debug:pdbonly**. La génération avec **/debug:full** génère du code pouvant être débogué. La génération avec **/debug:pdbonly** permet d’obtenir des fichiers .pdb mais ne génère pas le `DebuggableAttribute` indiquant au compilateur JIT que des informations de débogage sont disponibles. Utilisez **/debug:pdbonly** si vous souhaitez générer des fichiers .pdb pour une version Release sans qu’elle puisse être déboguée. Pour plus d'informations, consultez [/debug (C# Compiler Options)](https://msdn.microsoft.com/library/e2b48c07-01bc-45cc-a52c-92e9085eb969) ou [/debug (Visual Basic)](https://msdn.microsoft.com/library/c2b0bea5-1d5e-499f-9bd5-4f6c6b715ea2).
 
   Le débogueur [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] utilise le chemin d'accès au fichier .pdb dans le fichier EXE ou DLL pour rechercher le fichier project.pdb. Si le débogueur ne peut pas trouver le fichier .pdb à cet emplacement ou si le chemin d'accès n'est pas valide, le débogueur recherche le chemin d'accès qui contient l'EXE, puis les chemins d'accès aux symboles spécifiés dans la boîte de dialogue **Options** . Ce chemin d'accès est en général le dossier **Débogage** du nœud **Symboles** . Le débogueur ne chargera pas un fichier .pdb qui ne correspond pas au fichier exécutable débogué. Si le débogueur ne trouve aucun fichier .pdb, la boîte de dialogue **Rechercher des symboles** qui s'affiche vous permet de rechercher des symboles ou d'ajouter des emplacements supplémentaires au chemin de recherche.
 
