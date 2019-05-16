@@ -20,12 +20,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4c8b957517a7b539f74a9715b92b8a2945d3fe5c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 73148f8c3f569f3d585f6127b7ec713c766b0f8b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441374"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674250"
 ---
 # <a name="options-text-editor-c-advanced"></a>Options, Éditeur de texte, C#, Avancé
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "63441374"
 Utilisez cette boîte de dialogue pour modifier les paramètres de mise en forme de l’éditeur, la refactorisation de code et les commentaires sur la documentation XML pour Visual C#. Pour accéder à cette boîte de dialogue, dans le menu **Outils**, cliquez sur **Options**, développez le dossier **Éditeur de texte**, développez **C#**, puis cliquez sur **Avancé**.  
   
 > [!NOTE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez **Importation et exportation de paramètres** dans le menu **Outils** . Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="outlining"></a>Mode Plan  
  Passer en mode Plan à l'ouverture des fichiers  
@@ -68,7 +68,7 @@ Utilisez cette boîte de dialogue pour modifier les paramètres de mise en forme
   
 ## <a name="xml-documentation-comments"></a>Commentaires de documentation XML  
  Générer des commentaires de documentation XML pour ///  
- Quand cette option est sélectionnée et que vous tapez l’introduction de commentaires ///, elle insère automatiquement les balises de début et de fin \<summary> pour les commentaires sur la documentation XML. Pour plus d’informations sur la documentation XML, consultez [Commentaires sur la documentation XML](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199).  
+ Quand cette option est sélectionnée et que vous tapez l’introduction de commentaires ///, elle insère automatiquement les balises de début et de fin \<summary> pour les commentaires sur la documentation XML. Pour plus d’informations sur la documentation XML, consultez [Commentaires sur la documentation XML](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199).  
   
 ## <a name="implement-interface"></a>Implémenter l'interface  
  Entourer le code généré avec #region  
@@ -79,6 +79,6 @@ Utilisez cette boîte de dialogue pour modifier les paramètres de mise en forme
  Quand cette option est sélectionnée, des directives using `System` apparaissent avant les autres directives using. Pour plus d’informations, consultez [Trier les instructions Using](../../misc/sort-usings.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Commentaires sur la documentation XML](http://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)   
+ [Commentaires sur la documentation XML](https://msdn.microsoft.com/library/803b7f7b-7428-4725-b5db-9a6cff273199)   
  [Définition d’options d’éditeur spécifiques du langage](../../ide/reference/setting-language-specific-editor-options.md)   
  [Visual C# IntelliSense](../../ide/visual-csharp-intellisense.md)

@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: db946e2dfac035a8e0ddb5581c37e36b0406fb24
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9d604c8505612ff2c33e4b14241288358f920c2c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437782"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684831"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Impossible de se connecter à l'ordinateur Microsoft Visual Studio Remote Debugging Monitor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "63437782"
 Ce message d’erreur apparaît lorsque vous entrez un nom non valide pour Visual Studio Remote Debugging Monitor dans la boîte de dialogue **Attacher au processus** . Le nom Remote Debugging Monitor est généralement le même que celui de l’ordinateur auquel vous tentez de vous connecter pour le débogage distant. Ce message peut survenir, car l’ordinateur distant n’existe pas sur le réseau, Remote Debugging Monitor n’est pas installé correctement sur l’ordinateur distant ou l’ordinateur distant est inaccessible en raison de problèmes de réseau ou de la présence d’un pare-feu.  
   
 > [!IMPORTANT]
-> Si vous pensez avoir reçu ce message en raison d’un bogue présent dans le produit, veuillez signaler ce problème à Visual Studio à l’aide de la fonctionnalité [Envoyer un sourire](http://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b). Si vous avez besoin d’aide supplémentaire, consultez [Talk to Us](../ide/talk-to-us.md) pour savoir comment contacter Microsoft.  
+> Si vous pensez avoir reçu ce message en raison d’un bogue présent dans le produit, veuillez signaler ce problème à Visual Studio à l’aide de la fonctionnalité [Envoyer un sourire](https://msdn.microsoft.com/library/5cc9b67a-54d0-41b0-aa8f-80dff4475a6b). Si vous avez besoin d’aide supplémentaire, consultez [Talk to Us](../ide/talk-to-us.md) pour savoir comment contacter Microsoft.  
   
 ## <a name="i-got-this-message-while-i-was-debugging-locally"></a>J’ai reçu ce message pendant une session de débogage locale  
  Si ce message s’affiche pendant un débogage local, il est possible que le problème provienne de votre antivirus ou d’un pare-feu tiers. Visual Studio étant une application 32 bits, elle utilise la version 64 bits du débogueur distant pour déboguer les applications 64 bits. Les deux processus communiquent à l’aide du réseau local au sein de l’ordinateur local. Aucun trafic réseau ne quitte l’ordinateur, mais il peut arriver que des logiciels de sécurité tiers bloquent la communication.  

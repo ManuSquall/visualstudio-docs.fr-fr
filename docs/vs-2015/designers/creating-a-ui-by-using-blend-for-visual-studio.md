@@ -11,17 +11,17 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 78d4f63e2dbe84b878916757d1015e3c6d534258
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7cd7f14158b7dee83767ee9295c8917cadd30fa5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436181"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695935"
 ---
 # <a name="creating-a-ui-by-using-blend-for-visual-studio"></a>Création d'une interface utilisateur à l'aide de Blend pour Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Blend pour Visual Studio vous aide à concevoir des applications de bureau Windows, web, [Windows Phone](http://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx) et du [Windows Store](http://msdn.microsoft.com/library/windows/apps/jj129478.aspx) basées sur XAML. Il fournit la même expérience de conception XAML de base que Visual Studio et ajoute des concepteurs visuels pour des tâches avancées telles que les animations et les comportements.
+Blend pour Visual Studio vous aide à concevoir des applications de bureau Windows, web, [Windows Phone](https://msdn.microsoft.com/library/windowsphone/develop/jj683071.aspx) et du [Windows Store](https://msdn.microsoft.com/library/windows/apps/jj129478.aspx) basées sur XAML. Il fournit la même expérience de conception XAML de base que Visual Studio et ajoute des concepteurs visuels pour des tâches avancées telles que les animations et les comportements.
 
  Comme Blend pour Visual Studio est inclus dans le cadre de Visual Studio, il est inutile de le télécharger. Toutefois, vous devez le sélectionner dans le programme d’installation de Visual Studio pour l’installer sur votre système.
 

@@ -9,12 +9,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e2b2d4ee5feb0bed25ad41931f151e81db6edd3c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d65d1a758523aaf7652f2d47bec50aa9fdb91884
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442595"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65694012"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>Étape 3 : Affecter une icône aléatoire à chaque contrôle Label
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,9 +47,9 @@ Si les icônes se trouvent dans les mêmes cellules à chaque partie, le jeu ne 
   
      La première ligne convertit la variable `control` en un contrôle Label nommé `iconLabel`. La ligne suivante est une instruction `if` qui vérifie si la conversion a été effectuée. Si tel n'est pas le cas, les instructions figurant dans l'instruction `if` sont exécutées. (Comme nous l'avons vu dans les didacticiels précédents, l'instruction `if` permet d'évaluer toute condition que vous spécifiez.) La première ligne de l'instruction `if` crée une variable nommée `randomNumber`, qui contient un nombre aléatoire correspondant à l'un des éléments de la liste d'icônes. Pour cela, elle utilise la méthode `Next` de l'objet `Random` que vous avez créé précédemment. La méthode `Next` retourne le nombre aléatoire. Cette ligne utilise également la propriété `Count` de la liste `icons` pour déterminer la plage dans laquelle choisir le nombre aléatoire. La ligne suivante affecte un des éléments de la liste d'icônes à la propriété `Text` de l'étiquette. La ligne de commentaire est expliquée plus loin dans cette rubrique. Enfin, la dernière ligne de l'instruction `if` supprime de la liste l'icône ajoutée au formulaire.  
   
-     Rappelez-vous que si vous n'êtes pas sûr de ce que fait une partie du code, vous pouvez placez le pointeur de la souris sur un élément du code et lire l'info-bulle qui s'affiche. Vous pouvez également parcourir pas à pas chaque ligne de code pendant l'exécution du programme en utilisant le débogueur Visual Studio. Consultez [How Do I: Étape avec le débogueur dans Visual Studio ? ](http://msdn.microsoft.com/vstudio/ee672313.aspx) ou [naviguer dans le Code avec le débogueur](../debugger/navigating-through-code-with-the-debugger.md) pour plus d’informations.  
+     Rappelez-vous que si vous n'êtes pas sûr de ce que fait une partie du code, vous pouvez placez le pointeur de la souris sur un élément du code et lire l'info-bulle qui s'affiche. Vous pouvez également parcourir pas à pas chaque ligne de code pendant l'exécution du programme en utilisant le débogueur Visual Studio. Consultez [How Do I: Étape avec le débogueur dans Visual Studio ? ](https://msdn.microsoft.com/vstudio/ee672313.aspx) ou [naviguer dans le Code avec le débogueur](../debugger/navigating-through-code-with-the-debugger.md) pour plus d’informations.  
   
-3. Pour remplir la grille de jeu d'icônes, vous devez appeler la méthode `AssignIconsToSquares()` dès que le programme démarre. Si vous utilisez Visual C#, ajoutez une instruction juste sous l’appel à la méthode `InitializeComponent()` dans le `Form1`*constructeur*, de sorte que votre formulaire appelle votre nouvelle méthode pour se configurer lui-même avant d’être affiché. Les constructeurs sont appelées lorsque vous créez un objet, tel qu'une classe ou un struct. Pour plus d’informations, consultez [Constructeurs (guide de programmation C#)](http://msdn.microsoft.com/library/ace5hbzh.aspx) ou [Utilisation des constructeurs et des destructeurs](http://msdn.microsoft.com/library/2z08e49e%28v=vs.90%29.aspx) (Visual Basic).  
+3. Pour remplir la grille de jeu d'icônes, vous devez appeler la méthode `AssignIconsToSquares()` dès que le programme démarre. Si vous utilisez Visual C#, ajoutez une instruction juste sous l’appel à la méthode `InitializeComponent()` dans le `Form1`*constructeur*, de sorte que votre formulaire appelle votre nouvelle méthode pour se configurer lui-même avant d’être affiché. Les constructeurs sont appelées lorsque vous créez un objet, tel qu'une classe ou un struct. Pour plus d’informations, consultez [Constructeurs (guide de programmation C#)](https://msdn.microsoft.com/library/ace5hbzh.aspx) ou [Utilisation des constructeurs et des destructeurs](https://msdn.microsoft.com/library/2z08e49e%28v=vs.90%29.aspx) (Visual Basic).  
   
      [!code-csharp[VbExpressTutorial4Step2_3_4#13](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/cs/form1.cs#13)]  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5044d499e4568dba73c6db0865f92edcf02be4ca
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c382ff2a16e47f52a33e5c6728f0c57d57e4315b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63443240"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703050"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutoriel 1 : Créer une visionneuse d’images
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Dans ce didacticiel, vous générez un programme qui charge une image à partir 
 >   
 > Pour consulter le code pour Visual Basic, choisissez l’onglet **VB** en haut des blocs de code. Pour visualiser le code pour Visual C#, choisissez l’onglet **C#**. Si vous êtes intéressé par Visual C++, consultez [Bien démarrer](../misc/getting-started-with-visual-cpp-in-visual-studio-2015.md) et [Didacticiel du langage C++](http://www.cplusplus.com/doc/tutorial/).  
 >   
-> Si vous souhaitez savoir comment écrire des applications Visual C# ou Visual Basic pour le Windows Store, consultez [Créer votre première application du Windows Store en C# ou Visual Basic](http://msdn.microsoft.com/library/windows/apps/hh974581.aspx). Pour plus d’informations sur la création d’applications JavaScript pour le Windows Store, consultez [Créer votre première application du Windows Store en JavaScript](http://msdn.microsoft.com/library/windows/apps/br211385.aspx).  
+> Si vous souhaitez savoir comment écrire des applications Visual C# ou Visual Basic pour le Windows Store, consultez [Créer votre première application du Windows Store en C# ou Visual Basic](https://msdn.microsoft.com/library/windows/apps/hh974581.aspx). Pour plus d’informations sur la création d’applications JavaScript pour le Windows Store, consultez [Créer votre première application du Windows Store en JavaScript](https://msdn.microsoft.com/library/windows/apps/br211385.aspx).  
   
 ## <a name="related-topics"></a>Rubriques connexes  
   

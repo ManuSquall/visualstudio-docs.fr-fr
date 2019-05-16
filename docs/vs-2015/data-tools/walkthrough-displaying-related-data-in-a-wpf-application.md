@@ -19,12 +19,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: c7cd8a48092c39048d52a7ebe9cd27163ba32110
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 560852fc25a3e00134e4ed8b6bd06205248b208d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424791"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688427"
 ---
 # <a name="walkthrough-displaying-related-data-in-a-wpf-application"></a>Procédure pas à pas : Affichage de données liées dans une Application WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,11 +50,11 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui affi
   
   La connaissance préalable des concepts suivants s'avère également utile, mais n'est pas obligatoire pour suivre cette procédure pas à pas :  
   
-- Entity Data Models et ADO.NET Entity Framework. Pour plus d’informations, consultez [présentation d’Entity Framework](http://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
+- Entity Data Models et ADO.NET Entity Framework. Pour plus d’informations, consultez [présentation d’Entity Framework](https://msdn.microsoft.com/library/a2166b3d-d8ba-4a0a-8552-6ba1e3eaaee0).  
   
-- Utilisation du Concepteur WPF. Pour plus d’informations, consultez [WPF et Silverlight Designer Overview](http://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).  
+- Utilisation du Concepteur WPF. Pour plus d’informations, consultez [WPF et Silverlight Designer Overview](https://msdn.microsoft.com/570b7a5c-0c86-4326-a371-c9b63378fc62).  
   
-- Liaison de données WPF. Pour plus d’informations, consultez [Vue d’ensemble de la liaison de données](http://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
+- Liaison de données WPF. Pour plus d’informations, consultez [Vue d’ensemble de la liaison de données](https://msdn.microsoft.com/library/c707c95f-7811-401d-956e-2fffd019a211).  
   
 ## <a name="creating-the-project"></a>Création du projet  
  Créer un projet WPF pour afficher les enregistrements de commande.  
@@ -94,7 +94,7 @@ Dans cette procédure pas à pas, vous allez créer une application WPF qui affi
   
    - Si une connexion de données à l'exemple de base de données AdventureWorksLT est disponible dans la liste déroulante, sélectionnez-la.  
   
-      - ou -  
+      ou  
   
    - Cliquez sur **nouvelle connexion** et créer une connexion à la base de données AdventureWorksLT.  
   

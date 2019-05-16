@@ -18,17 +18,17 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 27090998a7afa6f99da9152e1f5bb7407fed6aa0
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 17b906f721bea6e4183575eced962e9ed830cda1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63423268"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675459"
 ---
 # <a name="clickonce-security-and-deployment"></a>Sécurité et déploiement ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] est une technologie de déploiement qui vous permet de créer des applications Windows mise à jour automatique qui peuvent être installées et exécutées avec une intervention minime de l’utilisateur. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Fournit la prise en charge complète pour la publication et la mise à jour des applications déployées avec la technologie ClickOnce si vous avez développé vos projets avec Visual Basic et Visual c#. Pour plus d’informations sur le déploiement d’applications Visual C++, consultez [déploiement ClickOnce pour les Applications Visual C++](http://msdn.microsoft.com/library/9988c546-0936-452c-932f-9c76daa42157).  
+[!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] est une technologie de déploiement qui vous permet de créer des applications Windows mise à jour automatique qui peuvent être installées et exécutées avec une intervention minime de l’utilisateur. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] Fournit la prise en charge complète pour la publication et la mise à jour des applications déployées avec la technologie ClickOnce si vous avez développé vos projets avec Visual Basic et Visual c#. Pour plus d’informations sur le déploiement d’applications Visual C++, consultez [déploiement ClickOnce pour les Applications Visual C++](https://msdn.microsoft.com/library/9988c546-0936-452c-932f-9c76daa42157).  
   
  [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] déploiement propose trois problèmes majeurs au déploiement :  
   
@@ -98,8 +98,8 @@ ms.locfileid: "63423268"
 |----------|-----------------|  
 |[Page Sécurité, Concepteur de projet](../ide/reference/security-page-project-designer.md)|Signe les manifestes d’application et de déploiement.|  
 |[Page Publier, Concepteur de projets](../ide/reference/publish-page-project-designer.md)|Génère et modifie les manifestes d’application et de déploiement pour les applications Visual Basic et Visual c#.|  
-|[Mage.exe (outil Manifest Generation and Editing)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)|Génère les manifestes d’application et de déploiement pour les applications Visual Basic, Visual c# et Visual C++.<br /><br /> Signe et signe à nouveau les manifestes d’application et de déploiement.<br /><br /> Peut être exécuté à partir de scripts de commandes et de l’invite de commandes.|  
-|[MageUI.exe (outil Manifest Generation and Editing, client graphique)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)|Génère et modifie les manifestes d’application et de déploiement.<br /><br /> Signe et signe à nouveau les manifestes d’application et de déploiement.|  
+|[Mage.exe (outil Manifest Generation and Editing)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)|Génère les manifestes d’application et de déploiement pour les applications Visual Basic, Visual c# et Visual C++.<br /><br /> Signe et signe à nouveau les manifestes d’application et de déploiement.<br /><br /> Peut être exécuté à partir de scripts de commandes et de l’invite de commandes.|  
+|[MageUI.exe (outil Manifest Generation and Editing, client graphique)](https://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14)|Génère et modifie les manifestes d’application et de déploiement.<br /><br /> Signe et signe à nouveau les manifestes d’application et de déploiement.|  
 |[GenerateApplicationManifest, tâche](../msbuild/generateapplicationmanifest-task.md)|Génère le manifeste d’application.<br /><br /> Peut être exécuté à partir de MSBuild. Pour plus d’informations, consultez [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md).|  
 |[GenerateDeploymentManifest, tâche](../msbuild/generatedeploymentmanifest-task.md)|Génère le manifeste de déploiement.<br /><br /> Peut être exécuté à partir de MSBuild. Pour plus d’informations, consultez [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md).|  
 |[SignFile, tâche](../msbuild/signfile-task.md)|Signe les manifestes d’application et de déploiement.<br /><br /> Peut être exécuté à partir de MSBuild. Pour plus d’informations, consultez [Informations de référence sur MSBuild](../msbuild/msbuild-reference.md).|  

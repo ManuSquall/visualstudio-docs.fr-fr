@@ -10,12 +10,12 @@ ms.assetid: 6b151891-c06d-40b1-9867-42298caa8492
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a29bb95b4b3e05097f2bf095e9312fe0704c31bc
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4c4278679cabb72e9d06f79c1668e7546f24194d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63421137"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703763"
 ---
 # <a name="getting-started-with-language-service-and-editor-extensions"></a>Bien démarrer avec les extensions du service de langage et de l’éditeur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Vous pouvez utiliser des extensions de l’éditeur pour ajouter des fonctionnal
  Nous recommandons que vous en savoir plus sur les concepts suivants et les technologies avant d’écrire vos propres extensions de l’éditeur.  
   
 ## <a name="the-windows-presentation-foundation-wpf-and-editor-extensions"></a>La Windows Presentation Foundation (WPF) et les Extensions de l’éditeur  
- L’interface utilisateur de l’éditeur Visual Studio (IU) est implémentée à l’aide de Windows Presentation Foundation (WPF). WPF fournit une expérience visuelle riche et un modèle de programmation cohérent qui sépare les aspects visuels du code de la logique métier. Vous pouvez utiliser de nombreux éléments WPF et les fonctionnalités lorsque vous créez des extensions de l’éditeur. Pour plus d’informations, consultez [Windows Presentation Foundation](http://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d).  
+ L’interface utilisateur de l’éditeur Visual Studio (IU) est implémentée à l’aide de Windows Presentation Foundation (WPF). WPF fournit une expérience visuelle riche et un modèle de programmation cohérent qui sépare les aspects visuels du code de la logique métier. Vous pouvez utiliser de nombreux éléments WPF et les fonctionnalités lorsque vous créez des extensions de l’éditeur. Pour plus d’informations, consultez [Windows Presentation Foundation](https://msdn.microsoft.com/library/f667bd15-2134-41e9-b4af-5ced6fafab5d).  
   
 ## <a name="the-managed-extensibility-framework-mef-and-editor-extensions"></a>Managed Extensibility Framework (MEF) et les Extensions de l’éditeur  
  L’éditeur Visual Studio utilise Managed Extensibility Framework (MEF) pour gérer ses composants et les extensions. MEF permet également aux développeurs plus de créer facilement des extensions pour une application hôte, tel que Visual Studio. Dans cette infrastructure, vous allez définir une extension en fonction d’un contrat MEF et exportez-le en tant que composant MEF. L’application hôte gère les éléments par recherche les, leur inscription et s’assurer qu’elles sont appliquées au contexte correct.  

@@ -11,12 +11,12 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: eda92d27781ec26fd33cfd82d18257015b494236
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 62c1847e9ff476e364ed99cabc4b47a970c4c4da
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63430125"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695503"
 ---
 # <a name="troubleshooting-vspackages"></a>Dépannage de VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,7 +117,7 @@ Voici les problèmes courants que vous pourriez rencontrer avec votre VSPackage 
   
    2. Sélectionnez le **références** onglet dans le **Pages de propriétés** boîte de dialogue et assurez-vous que tous les chemins d’accès sont corrects. Vous pouvez également utiliser le **Explorateur d’objets** pour rechercher les objets référencés.  
   
-        Pour le code managé, vous pouvez utiliser la [Fuslogvw.exe (Visionneuse Journal de liaison d’Assembly)](http://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) pour afficher les détails des chargements d’assemblys ayant échoué.  
+        Pour le code managé, vous pouvez utiliser la [Fuslogvw.exe (Visionneuse Journal de liaison d’Assembly)](https://msdn.microsoft.com/library/e32fa443-0778-4cc3-bf36-5c8ea297d296) pour afficher les détails des chargements d’assemblys ayant échoué.  
   
 2. Du code non managé, rechercher le CLSID du VSPackage dans le [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] nœud de Registre CLSID :  
   

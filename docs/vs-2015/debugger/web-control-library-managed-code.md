@@ -17,17 +17,17 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 18f6e72d18154f11866671a3e448d88c91768c7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 031f894eb2e117a213f4f9fbbf08ac57a1512d61
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047096"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688174"
 ---
 # <a name="web-control-library-managed-code"></a>Bibliothèque de contrôles Web (code managé)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Le modèle de projet de bibliothèque de contrôles Web permet de créer une DLL. Étant donné que la bibliothèque de classes est une DLL, vous ne pouvez pas l'exécuter directement. Vous devez créer une page [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] qui incorpore le contrôle. Pour plus d’informations, consultez [modèle de bibliothèque de contrôles Web](http://msdn.microsoft.com/00666b07-71d2-4ace-a13c-cc130a3ce372).  
+Le modèle de projet de bibliothèque de contrôles Web permet de créer une DLL. Étant donné que la bibliothèque de classes est une DLL, vous ne pouvez pas l'exécuter directement. Vous devez créer une page [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] qui incorpore le contrôle. Pour plus d’informations, consultez [modèle de bibliothèque de contrôles Web](https://msdn.microsoft.com/00666b07-71d2-4ace-a13c-cc130a3ce372).  
   
 ### <a name="to-debug-a-web-control-library-method-1"></a>Pour déboguer une bibliothèque de contrôles Web (Méthode 1)  
   

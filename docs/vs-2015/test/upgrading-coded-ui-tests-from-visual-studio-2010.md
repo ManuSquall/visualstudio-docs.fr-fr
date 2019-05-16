@@ -8,12 +8,12 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 42db6024353e3b26ddcaf6b5fa838ff791d964f4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 4ab38f4fc7e0269c1073e71fae9975b240da33f2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445896"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695101"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Mise à niveau de tests codés de l'interface utilisateur à partir de Visual Studio 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Les projets de test contenant des tests codés de l'interface utilisateur créé
 - Visual Studio Enterprise
 
 > [!NOTE]
-> Visual Studio inclut plusieurs types de projets de test. Si vous créez un test codé de l'interface utilisateur, il le sera dans un type de projet de test codé de l'interface utilisateur. Pour plus d’informations, consultez [Mise à niveau des tests à partir de versions antérieures de Visual Studio](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).
+> Visual Studio inclut plusieurs types de projets de test. Si vous créez un test codé de l'interface utilisateur, il le sera dans un type de projet de test codé de l'interface utilisateur. Pour plus d’informations, consultez [Mise à niveau des tests à partir de versions antérieures de Visual Studio](https://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).
 
 > [!WARNING]
 > Les projets de test[!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] qui contiennent des tests codés de l'interface utilisateur doivent être régénérés quand vous ouvrez le projet de test dans [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ou [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] côte à côte avec [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
@@ -64,4 +64,4 @@ Les projets de test contenant des tests codés de l'interface utilisateur créé
 - **Test de charge :** Lorsque vous exécutez un test de charge avec un type de réseau autre que le profil de réseau local (LAN) sur un ordinateur qui exécute Windows 8, le pilote d’émulateur réseau entraîne une défaillance du système d’exploitation. Pour plus d’informations, consultez [l’article 2736182 de la Base de connaissances](http://support.microsoft.com/kb/2736182).
 
 ## <a name="see-also"></a>Voir aussi
- [Portage, migration et la mise à niveau des projets Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [la mise à niveau des Tests à partir de Versions antérieures de Visual Studio](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52) [utiliser UI Automation pour tester votre Code](../test/use-ui-automation-to-test-your-code.md) [générant un Contrôleur de test à partir d’un enregistrement des actions existant](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [prise en charge des plateformes et Configurations pour les Tests codés de l’interface utilisateur t enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)
+ [Portage, migration et la mise à niveau des projets Visual Studio](../porting/porting-migrating-and-upgrading-visual-studio-projects.md) [la mise à niveau des Tests à partir de Versions antérieures de Visual Studio](https://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52) [utiliser UI Automation pour tester votre Code](../test/use-ui-automation-to-test-your-code.md) [générant un Contrôleur de test à partir d’un enregistrement des actions existant](https://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497) [prise en charge des plateformes et Configurations pour les Tests codés de l’interface utilisateur t enregistrements des actions](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)

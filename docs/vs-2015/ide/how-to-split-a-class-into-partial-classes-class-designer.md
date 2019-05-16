@@ -12,12 +12,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f9f42fd4b43ec9aaced9d47d0c5670e6f0b0d711
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 23d344d2f350b5b7a2e376e8856c916d9baa01f2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435170"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702612"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-class-designer"></a>Comment : fractionner une classe en classes partielles (Concepteur de classes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Vous pouvez diviser la déclaration d’une classe ou d’une structure en plusi
 > [!NOTE]
 > Visual Basic utilise des définitions de classe partielle pour séparer le code généré par Visual Studio du code créé par l’utilisateur. Le code est réparti dans des fichiers sources distincts. Par exemple, le **Concepteur Windows Form** définit des classes partielles pour des contrôles tels que `Form`. Vous ne devez pas modifier le code généré dans ces contrôles.  
   
- Pour plus d’informations sur les types partiels en Visual Basic, consultez [Partiel](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448).  
+ Pour plus d’informations sur les types partiels en Visual Basic, consultez [Partiel](https://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448).  
   
 ## <a name="example"></a>Exemple  
  Pour fractionner une définition de classe en Visual Basic, utilisez le mot clé `Partial`, comme indiqué dans l’exemple suivant.  
@@ -76,7 +76,7 @@ public partial class Employee
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Classes et méthodes partielles](http://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1)   
- [partial (type)](http://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334)   
- [partielle, méthode (Référence C#)](http://msdn.microsoft.com/library/43f40242-17e0-4452-8573-090503ad3137)   
- [Partial](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)
+ [Classes et méthodes partielles](https://msdn.microsoft.com/library/804cecb7-62db-4f97-a99f-60975bd59fa1)   
+ [partial (type)](https://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334)   
+ [partielle, méthode (Référence C#)](https://msdn.microsoft.com/library/43f40242-17e0-4452-8573-090503ad3137)   
+ [Partial](https://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448)

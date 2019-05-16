@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 140aaa93272f6c10bb85a405cb2f875f2b6b464a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: e32c50530a33d55f89db6f202eaffd92946c3cef
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60037523"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65689577"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Ressources pour la conception d'applications accessibles
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,15 +28,15 @@ Utilisez les liens suivants pour trouver des informations sur les technologies q
   
 ## <a name="technologies"></a>Technologies  
   
-- **Microsoft Active Accessibility** Technologie COM qui améliore l’intégration des options d’accessibilité aux applications s’exécutant sur Microsoft Windows. Elle fournit des bibliothèques de liens dynamiques qui sont incorporées au système d'exploitation, ainsi qu'une interface COM et des éléments de programmation d'application qui fournissent des méthodes fiables pour exposer des informations sur les éléments d'interface utilisateur. Pour plus d’informations, consultez [http://msdn.microsoft.com/library/windows/desktop/dd373592(v=vs.85).aspx](http://msdn.microsoft.com/library/windows/desktop/dd373592\(v=vs.85\).aspx).  
+- **Microsoft Active Accessibility** Technologie COM qui améliore l’intégration des options d’accessibilité aux applications s’exécutant sur Microsoft Windows. Elle fournit des bibliothèques de liens dynamiques qui sont incorporées au système d'exploitation, ainsi qu'une interface COM et des éléments de programmation d'application qui fournissent des méthodes fiables pour exposer des informations sur les éléments d'interface utilisateur. Pour plus d’informations, consultez [https://msdn.microsoft.com/library/windows/desktop/dd373592(v=vs.85).aspx](https://msdn.microsoft.com/library/windows/desktop/dd373592\(v=vs.85\).aspx).  
   
-- **Technologies Microsoft .NET Speech** Le SDK Microsoft .NET Speech rassemble des contrôles Microsoft [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)], un complément vocal pour Microsoft Internet Explorer, des exemples d’applications et de la documentation permettant aux développeurs web de créer, déboguer et déployer des applications [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)] prenant en charge la reconnaissance vocale. Les outils sont intégrés de façon transparente à Microsoft Visual Studio, ce qui permet aux développeurs de tirer parti d'un environnement de développement familier. Pour plus d’informations, consultez [http://msdn.microsoft.com/library/ms950383.aspx](http://msdn.microsoft.com/library/ms950383.aspx).  
+- **Technologies Microsoft .NET Speech** Le SDK Microsoft .NET Speech rassemble des contrôles Microsoft [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)], un complément vocal pour Microsoft Internet Explorer, des exemples d’applications et de la documentation permettant aux développeurs web de créer, déboguer et déployer des applications [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)] prenant en charge la reconnaissance vocale. Les outils sont intégrés de façon transparente à Microsoft Visual Studio, ce qui permet aux développeurs de tirer parti d'un environnement de développement familier. Pour plus d’informations, consultez [https://msdn.microsoft.com/library/ms950383.aspx](https://msdn.microsoft.com/library/ms950383.aspx).  
   
-- **Présentation de SAMI 1.0** La technologie SAMI (Synchronized Accessible Media Interchange) permet aux développeurs de créer une légende pour le contenu audio des applications multimédias sur PC. Pour plus d’informations, consultez [http://msdn.microsoft.com/library/ms971327.aspx](http://msdn.microsoft.com/library/ms971327.aspx).  
+- **Présentation de SAMI 1.0** La technologie SAMI (Synchronized Accessible Media Interchange) permet aux développeurs de créer une légende pour le contenu audio des applications multimédias sur PC. Pour plus d’informations, consultez [https://msdn.microsoft.com/library/ms971327.aspx](https://msdn.microsoft.com/library/ms971327.aspx).  
   
 ## <a name="windows-applications"></a>Applications Windows  
   
-- [Procédure pas à pas : Création d’une Application Windows Accessible](http://msdn.microsoft.com/library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b) cette rubrique fournit des instructions détaillées pour inclure les cinq critères d’accessibilité pour le logo Certifié pour Windows dans un exemple d’application Windows.  
+- [Procédure pas à pas : Création d’une Application Windows Accessible](https://msdn.microsoft.com/library/654c7f2f-1586-480b-9f12-9d9b8f5cc32b) cette rubrique fournit des instructions détaillées pour inclure les cinq critères d’accessibilité pour le logo Certifié pour Windows dans un exemple d’application Windows.  
   
 - **Recommandations en matière de design de l’interface utilisateur clavier** Cet article technique explique comment concevoir l’interface utilisateur d’une application Windows pour permettre aux utilisateurs de s’en servir à partir du clavier. Pour plus d’informations, consultez [http://msdn2.microsoft.com/library/ms971323.aspx](http://msdn2.microsoft.com/library/ms971323.aspx).  
   
@@ -44,7 +44,7 @@ Utilisez les liens suivants pour trouver des informations sur les technologies q
   
 ## <a name="web-sites"></a>Sites web  
   
-- [Procédure pas à pas : Directives d’accessibilité pour l’aide de contrôles Image, les contrôles Menu et AutoPostBack](http://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) cette rubrique fournit des instructions détaillées pour inclure des contrôles accessibles dans un exemple de page Web, ainsi que des conseils de conception d’accessibilité pour le Web.  
+- [Procédure pas à pas : Directives d’accessibilité pour l’aide de contrôles Image, les contrôles Menu et AutoPostBack](https://msdn.microsoft.com/library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) cette rubrique fournit des instructions détaillées pour inclure des contrôles accessibles dans un exemple de page Web, ainsi que des conseils de conception d’accessibilité pour le Web.  
   
 - **Amélioration de l’accessibilité des pages web** Cet article technique répertorie les éléments HTML 3.2 accessibles, ainsi que les éléments qui peuvent être rendus accessibles dans le cadre du développement de sites web. Pour plus d’informations, consultez [http://msdn2.microsoft.com/library/ms971309.aspx](http://msdn2.microsoft.com/library/ms971309.aspx).  
   

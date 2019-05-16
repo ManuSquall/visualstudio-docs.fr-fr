@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 93ef837da86056acc720abff9ad33cbf457a108f
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: bcb230532da4a0b84ea0102d86534c28afe35558
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780842"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686248"
 ---
 # <a name="profiling-tools"></a>outils de profilage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Les outils de profilage et de diagnostic vous aident à diagnostiquer l’utilis
 ## <a name="memory-usage"></a>Utilisation de la mémoire  
  ![DiagMemorySmall](../profiling/media/diagmemorysmall.png "DiagMemorySmall")  
   
- Identifiez les fuites de mémoire et les utilisations inefficaces de la mémoire pendant le débogage à l’aide de l’outil **Utilisation de la mémoire** . L’outil vous permet de prendre des captures instantanées du tas de mémoire managé et natif. Vous pouvez utiliser cet outil avec les applications de bureau, les applications universelles Windows et les applications ASP.NET. L’outil **Utilisation de la mémoire** peut être exécuté à partir de la fenêtre **Outils de diagnostic** pendant le débogage (**Déboguer / Windows / Afficher les outils de diagnostic**) ou en dehors du débogueur (**Déboguer / Profileur de performances...**). Pour plus d’informations, consultez [Utilisation de la mémoire](../profiling/memory-usage.md) et [Utilisation de la mémoire sans débogage](http://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0) .  
+ Identifiez les fuites de mémoire et les utilisations inefficaces de la mémoire pendant le débogage à l’aide de l’outil **Utilisation de la mémoire** . L’outil vous permet de prendre des captures instantanées du tas de mémoire managé et natif. Vous pouvez utiliser cet outil avec les applications de bureau, les applications universelles Windows et les applications ASP.NET. L’outil **Utilisation de la mémoire** peut être exécuté à partir de la fenêtre **Outils de diagnostic** pendant le débogage (**Déboguer / Windows / Afficher les outils de diagnostic**) ou en dehors du débogueur (**Déboguer / Profileur de performances...**). Pour plus d’informations, consultez [Utilisation de la mémoire](../profiling/memory-usage.md) et [Utilisation de la mémoire sans débogage](https://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0) .  
   
 ## <a name="cpu-usage"></a>Utilisation de l'UC  
  ![DiagCPUSmall](../profiling/media/diagcpusmall.png "DiagCPUSmall")  

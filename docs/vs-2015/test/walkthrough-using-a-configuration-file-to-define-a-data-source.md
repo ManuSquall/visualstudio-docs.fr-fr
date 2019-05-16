@@ -12,12 +12,12 @@ ms.assetid: 95fa5214-b12e-4e1f-84e5-cc4c2d86b0d7
 caps.latest.revision: 34
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7dde910c5622a67ad002a085ace746ebc68e8857
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f078d8a15cbef4c2f17b154af13a997b77da8766
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439227"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695065"
 ---
 # <a name="walkthrough-using-a-configuration-file-to-define-a-data-source"></a>Procédure pas à pas : utilisation d’un fichier config pour définir une source de données
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -219,7 +219,7 @@ Cette procédure pas à pas illustre comment utiliser une source de données dé
   
 1. Ajoutez un test unitaire au projet de test.  
   
-     Pour plus d’informations, consultez [Création et exécution de tests unitaires pour le code existant](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173).  
+     Pour plus d’informations, consultez [Création et exécution de tests unitaires pour le code existant](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173).  
   
 2. Remplacez le contenu généré automatiquement du test unitaire par le code suivant :  
   
@@ -270,6 +270,6 @@ Cette procédure pas à pas illustre comment utiliser une source de données dé
   
 ## <a name="see-also"></a>Voir aussi  
  [Tests unitaires sur votre code](../test/unit-test-your-code.md)   
- [Création et exécution de tests unitaires pour le code existant](http://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
- [Test de l'application](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
+ [Création et exécution de tests unitaires pour le code existant](https://msdn.microsoft.com/e8370b93-085b-41c9-8dec-655bd886f173)   
+ [Test de l'application](https://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac)   
  [Guide pratique pour créer un test unitaire piloté par les données](../test/how-to-create-a-data-driven-unit-test.md)

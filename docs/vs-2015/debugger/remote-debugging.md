@@ -19,12 +19,12 @@ caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 41b3e662668967d07e2a304d589d498dd2c7b51d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: e31d177a8bda5435c2201701241638cb919cf9ec
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446104"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687547"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -160,7 +160,7 @@ Vous pouvez trouver le débogueur distant (**msvsmon.exe**) sur un ordinateur av
   
 4. Ajoutez le nom du compte d’utilisateur et le mot de passe.  
   
-    Vous devez peut-être ajouter le droit utilisateur **Ouvrir une session en tant que service** pour ce compte. (Recherchez **Stratégie de sécurité locale** (secpol.msc) dans la page ou la fenêtre **Démarrer** (ou tapez **secpol.msc** à l’invite de commande). Quand la fenêtre s’affiche, double-cliquez sur **Attribution des droits utilisateur**, puis recherchez **Ouvrir une session en tant que service** dans le volet droit. Double-cliquez dessus. Ajouter le compte d’utilisateur pour le **propriétés** fenêtre et cliquez sur **OK**.) Cliquez sur **Suivant**.  
+    Vous devez peut-être ajouter le droit utilisateur **Ouvrir une session en tant que service** pour ce compte. (Recherchez **Stratégie de sécurité locale** (secpol.msc) dans la page ou la fenêtre **Démarrer** (ou tapez **secpol.msc** à l’invite de commande). Quand la fenêtre s’affiche, double-cliquez sur **Attribution des droits utilisateur**, puis recherchez **Ouvrir une session en tant que service** dans le volet droit. Double-cliquez dessus. Ajouter le compte d’utilisateur pour le **propriétés** fenêtre et cliquez sur **OK**.) Cliquez sur **Next**.  
   
 5. Sélectionnez le type de réseau avec lesquel vous voulez que les outils de contrôle à distance communiquent. Au moins un type de réseau doit être sélectionné. Si les ordinateurs sont connectés à un domaine, vous devez choisir le premier élément. Si les ordinateurs sont connectés à un groupe de travail ou un groupe résidentiel, vous devez choisir le deuxième ou troisième élément. Cliquez sur **Suivant**.  
   
@@ -283,7 +283,7 @@ Vous pouvez trouver le débogueur distant (**msvsmon.exe**) sur un ordinateur av
  Pour plus d’informations, consultez l’aide du débogage distant (appuyez sur **F1** dans la fenêtre du débogueur distant, ou cliquez sur **aide / utilisation**). D’autres informations sont disponibles dans [Modification du chargement des symboles distants .NET dans Visual Studio 2012 et 2013](http://blogs.msdn.com/b/visualstudioalm/archive/2013/10/16/net-remote-symbol-loading-changes-in-visual-studio-2012-and-2013.aspx).  
   
 ## <a name="bkmk_winstoreAzure"></a> Débogage à distance sur les applications Windows Store et Azure  
- Pour plus d’informations sur le débogage distant avec les applications du Windows Store, consultez [déboguer et tester des applications du Windows Store sur un appareil distant à partir de Visual Studio](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx).  
+ Pour plus d’informations sur le débogage distant avec les applications du Windows Store, consultez [déboguer et tester des applications du Windows Store sur un appareil distant à partir de Visual Studio](https://msdn.microsoft.com/library/windows/apps/hh441469.aspx).  
   
  Pour plus d’informations sur le débogage sur Azure, consultez une des rubriques suivantes :  
   
@@ -291,7 +291,7 @@ Vous pouvez trouver le débogueur distant (**msvsmon.exe**) sur un ordinateur av
   
 - [Débogage du serveur principal .NET dans Visual Studio](http://blogs.msdn.com/b/azuremobile/archive/2014/03/14/debugging-net-backend-in-visual-studio.aspx)  
   
-- Introduction au débogage à distance sur Sites Web Azure ([partie 1](http://azure.microsoft.com/blog/2014/05/06/introduction-to-remote-debugging-on-azure-web-sites/), [partie 2](http://azure.microsoft.com/blog/2014/05/07/introduction-to-remote-debugging-azure-web-sites-part-2-inside-remote-debugging/), [partie 3](http://azure.microsoft.com/blog/2014/05/08/introduction-to-remote-debugging-on-azure-web-sites-part-3-multi-instance-environment-and-git/)).  
+- Introduction au débogage à distance sur Sites Web Azure ([partie 1](https://azure.microsoft.com/blog/2014/05/06/introduction-to-remote-debugging-on-azure-web-sites/), [partie 2](https://azure.microsoft.com/blog/2014/05/07/introduction-to-remote-debugging-azure-web-sites-part-2-inside-remote-debugging/), [partie 3](https://azure.microsoft.com/blog/2014/05/08/introduction-to-remote-debugging-on-azure-web-sites-part-3-multi-instance-environment-and-git/)).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Débogage dans Visual Studio](../debugger/debugging-in-visual-studio.md)   

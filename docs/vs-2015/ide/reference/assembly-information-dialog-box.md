@@ -13,17 +13,17 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 616a46b4d8349bd2c385fda0dd36e6dc69fa60af
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: dbcc8f31d00c270cf0eb9af8d3283a8674a639e3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663870"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703706"
 ---
 # <a name="assembly-information-dialog-box"></a>Informations de l’assembly, boîte de dialogue
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-La boîte de dialogue **Informations de l’assembly** permet de spécifier les valeurs des attributs d’assembly globaux [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)], lesquels sont stockés dans le fichier AssemblyInfo créé automatiquement avec votre projet. Dans l’**Explorateur de solutions**, le fichier se trouve dans le nœud **Mon projet** dans [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] (cliquez sur **Afficher tous les fichiers** pour l’afficher) ; il se trouve sous **Propriétés** dans [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. Pour plus d’informations sur les attributs d’assembly, consultez [Attributs](http://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205).  
+La boîte de dialogue **Informations de l’assembly** permet de spécifier les valeurs des attributs d’assembly globaux [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)], lesquels sont stockés dans le fichier AssemblyInfo créé automatiquement avec votre projet. Dans l’**Explorateur de solutions**, le fichier se trouve dans le nœud **Mon projet** dans [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] (cliquez sur **Afficher tous les fichiers** pour l’afficher) ; il se trouve sous **Propriétés** dans [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. Pour plus d’informations sur les attributs d’assembly, consultez [Attributs](https://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205).  
   
  Pour accéder à cette boîte de dialogue, sélectionnez un nœud de projet dans l’**Explorateur de solutions**, puis dans le menu **Projet**, cliquez sur **Propriétés**. Quand le **Concepteur de projet** s’affiche, cliquez sur l’onglet **Application**. Dans la page **Application**, cliquez sur le bouton **Informations de l’assembly**.  
   
@@ -63,4 +63,4 @@ La boîte de dialogue **Informations de l’assembly** permet de spécifier les 
   
 ## <a name="see-also"></a>Voir aussi  
  [Page Application, Concepteur de projets (Visual Basic)](../../ide/reference/application-page-project-designer-visual-basic.md)   
- [Attributs](http://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)
+ [Attributs](https://msdn.microsoft.com/library/ae334cee-d96c-4243-a5e3-06dd7fcaf205)

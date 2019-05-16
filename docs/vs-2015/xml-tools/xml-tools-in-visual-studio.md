@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07cb1a790640d01448b6331986519bf1bef619e9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 906f08c0020eb288c1bcd318327be18dc8d08ca5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651719"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695317"
 ---
 # <a name="xml-tools-in-visual-studio"></a>Outils XML dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,21 +59,21 @@ Langage XML (Extensible Markup) * est un langage de balisage qui fournit un form
 ## <a name="reference"></a>Référence
  [Microsoft.VisualStudio.XmlEditor](http://go.microsoft.com/fwlink/?LinkID=165699) expose le [éditeur XML](http://go.microsoft.com/fwlink/?LinkId=228249) arborescence par le biais d’analyse [System.Xml.Linq](http://go.microsoft.com/fwlink/?LinkId=228250) pour tous les documents XML.
 
- [Référence du standard XML](http://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) fournit des informations sur les technologies XML, notamment XML, définition de Type de Document (DTD), langage de définition de schéma XML (XSD) et XSLT.
+ [Référence du standard XML](https://msdn.microsoft.com/79c78508-c9d0-423a-a00f-672e855de401) fournit des informations sur les technologies XML, notamment XML, définition de Type de Document (DTD), langage de définition de schéma XML (XSD) et XSLT.
 
  <xref:System.Xml?displayProperty=fullName> Décrit les classes et autres éléments qui composent le <xref:System.Xml> espace de noms fournit des liens vers des informations plus détaillées sur chaque élément.
 
  <xref:System.Xml.Serialization?displayProperty=fullName> Décrit les classes et autres éléments qui composent le <xref:System.Xml.Serialization> espace de noms et fournit des liens vers des informations détaillées sur chaque élément.
 
 ## <a name="related-sections"></a>Rubriques connexes
- [Modèle DOM (Document objet Model) XML](http://msdn.microsoft.com/library/b5e52844-4820-47c0-a61d-de2da33e9f54) décrit comment la <xref:System.Xml.XmlDocument> et ses classes associées conformes aux spécifications de prise en charge des espaces de noms de niveau 2 et W3C Document Object Model (Core), niveau 1.
+ [Modèle DOM (Document objet Model) XML](https://msdn.microsoft.com/library/b5e52844-4820-47c0-a61d-de2da33e9f54) décrit comment la <xref:System.Xml.XmlDocument> et ses classes associées conformes aux spécifications de prise en charge des espaces de noms de niveau 2 et W3C Document Object Model (Core), niveau 1.
 
- [Lecture de XML avec XmlReader](http://msdn.microsoft.com/3029834c-a27e-4331-b7aa-711924062182) décrit comment la <xref:System.Xml.XmlReader> fournit un vers l’avant uniquement, en lecture seule accès aux données XML via un flux XML.
+ [Lecture de XML avec XmlReader](https://msdn.microsoft.com/3029834c-a27e-4331-b7aa-711924062182) décrit comment la <xref:System.Xml.XmlReader> fournit un vers l’avant uniquement, en lecture seule accès aux données XML via un flux XML.
 
- [Écriture de XML avec XmlWriter](http://msdn.microsoft.com/ea41f72c-e1d3-4e0a-ab0f-f0eb1c27ab86) décrit comment la <xref:System.Xml.XmlWriter> fournit un avant uniquement, de génération de flux de données XML et vous permet de créer des documents XML conformes à la norme W3C.
+ [Écriture de XML avec XmlWriter](https://msdn.microsoft.com/ea41f72c-e1d3-4e0a-ab0f-f0eb1c27ab86) décrit comment la <xref:System.Xml.XmlWriter> fournit un avant uniquement, de génération de flux de données XML et vous permet de créer des documents XML conformes à la norme W3C.
 
- [Transformations XSLT](http://msdn.microsoft.com/library/202f8820-224c-494f-b61e-cd127eac6e03) décrit comment la <xref:System.Xml.Xsl.XslCompiledTransform> classe implémente la recommandation XSLT 1.0.
+ [Transformations XSLT](https://msdn.microsoft.com/library/202f8820-224c-494f-b61e-cd127eac6e03) décrit comment la <xref:System.Xml.Xsl.XslCompiledTransform> classe implémente la recommandation XSLT 1.0.
 
- [Traiter les données XML à l’aide du modèle de données XPath](http://msdn.microsoft.com/library/536c6fce-1453-4654-9c72-bca54d47e081) décrit comment la <xref:System.Xml.XPath.XPathNavigator> classe peut traiter des données XML stockées dans un <xref:System.Xml.XPath.XPathDocument> ou un <xref:System.Xml.XmlDocument> objet. La classe <xref:System.Xml.XPath.XPathNavigator> est basée sur le modèle de données XQuery 1.0 et XPath 2.0, et peut être utilisée pour parcourir et modifier des données XML.
+ [Traiter les données XML à l’aide du modèle de données XPath](https://msdn.microsoft.com/library/536c6fce-1453-4654-9c72-bca54d47e081) décrit comment la <xref:System.Xml.XPath.XPathNavigator> classe peut traiter des données XML stockées dans un <xref:System.Xml.XPath.XPathDocument> ou un <xref:System.Xml.XmlDocument> objet. La classe <xref:System.Xml.XPath.XPathNavigator> est basée sur le modèle de données XQuery 1.0 et XPath 2.0, et peut être utilisée pour parcourir et modifier des données XML.
 
- [Modèle SOM (Schema Object Model) XML](http://msdn.microsoft.com/library/a897a599-ffd1-43f9-8807-e58c8a7194cd) décrit les classes utilisées pour créer et manipuler des schémas XML, en fournissant un <xref:System.Xml.Schema.XmlSchema> classe pour charger et modifier un schéma.
+ [Modèle SOM (Schema Object Model) XML](https://msdn.microsoft.com/library/a897a599-ffd1-43f9-8807-e58c8a7194cd) décrit les classes utilisées pour créer et manipuler des schémas XML, en fournissant un <xref:System.Xml.Schema.XmlSchema> classe pour charger et modifier un schéma.

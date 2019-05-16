@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: erickson-doug
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f3a00a4ec5a013dc860a05ed48364178e3f23cf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c59b4123a3fbc957a99da7178d0d8ec288a06708
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442874"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686548"
 ---
 # <a name="analyze-visual-basic-and-c-code-quality-in-store-apps-using-visual-studio-static-code-analysis"></a>Analyser la qualité du code Visual Basic et C# dans les applications du Windows Store à l'aide de l'analyse statique du code Visual Studio
 
@@ -27,7 +27,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
  L'outil d'analyse du code dans Visual Studio Express examine votre code à la recherche d'un ensemble d'erreurs courantes et du non-respect d'une bonne approche en matière de programmation. Les avertissements de l'analyse du code diffèrent des erreurs et des avertissements du compilateur parce que l'outil d'analyse du code recherche des modèles de code spécifiques qui sont valides, mais qui peuvent créer des problèmes pour vous ou d'autres utilisateurs de votre code. L'analyse du code peut également trouver des erreurs dans votre code qui seraient difficiles à détecter en testant. L'exécution de l'outil d'analyse du code à intervalles réguliers pendant le processus de développement peut améliorer la qualité de votre application terminée.
 
 > [!NOTE]
-> Dans Visual Studio Ultimate, Visual Studio Premium et Visual Studio Professional, vous pouvez utiliser les fonctionnalités complètes d'analyse du code. Consultez [Analyse de la qualité des applications à l’aide des outils d’analyse du code](http://msdn.microsoft.com/library/dd264897.aspx) dans MSDN Library.
+> Dans Visual Studio Ultimate, Visual Studio Premium et Visual Studio Professional, vous pouvez utiliser les fonctionnalités complètes d'analyse du code. Consultez [Analyse de la qualité des applications à l’aide des outils d’analyse du code](https://msdn.microsoft.com/library/dd264897.aspx) dans MSDN Library.
 
 ## <a name="in-this-topic"></a>Dans cette rubrique
  Vous allez découvrir ce qui suit :
@@ -98,12 +98,12 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 ## <a name="BKMK_Warnings"></a> Avertissements de l’analyse du code Visual Basic et C#
  L'analyse du code génère les avertissements suivants :
 
- [CA1001 : Les types qui possèdent des champs supprimables doivent être supprimables](http://msdn.microsoft.com/library/ms182172.aspx)
+ [CA1001 : Les types qui possèdent des champs supprimables doivent être supprimables](https://msdn.microsoft.com/library/ms182172.aspx)
 
- [CA1821 : Supprimez les finaliseurs vides](http://msdn.microsoft.com/library/bb264476.aspx)
+ [CA1821 : Supprimez les finaliseurs vides](https://msdn.microsoft.com/library/bb264476.aspx)
 
- [CA2213 : Les champs pouvant être supprimés doivent l’être](http://msdn.microsoft.com/library/ms182328.aspx)
+ [CA2213 : Les champs pouvant être supprimés doivent l’être](https://msdn.microsoft.com/library/ms182328.aspx)
 
- [CA2229 : Implémentez des constructeurs de sérialisation](http://msdn.microsoft.com/library/ms182343.aspx)
+ [CA2229 : Implémentez des constructeurs de sérialisation](https://msdn.microsoft.com/library/ms182343.aspx)
 
- [CA2231 : Surchargez l’opérateur égal (equals) en remplaçant ValueType.Equals](http://msdn.microsoft.com/library/ms182359.aspx)
+ [CA2231 : Surchargez l’opérateur égal (equals) en remplaçant ValueType.Equals](https://msdn.microsoft.com/library/ms182359.aspx)

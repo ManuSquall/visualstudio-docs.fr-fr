@@ -17,12 +17,12 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6c4ae0082d76b4eb9e58561daec48d196438bac
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 57a370dd8fd243deba8db9b9a928202d25c7836d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424749"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675628"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Procédure pas à pas : Création d’une application de données multiniveaux
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ N-* de couche données qui sont des applications accèdent aux données et sont 
   
 - Créez un dataset typé à l’aide de l’**Assistant Configuration de source de données**.  
   
-- Séparer le texte généré [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) et le code de jeu de données dans des projets distincts.  
+- Séparer le texte généré [TableAdapters](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364) et le code de jeu de données dans des projets distincts.  
   
 - créer un service WCF (Windows Communication Foundation) pour appeler la couche d'accès aux données ;  
   
@@ -381,7 +381,7 @@ N-* de couche données qui sont des applications accèdent aux données et sont 
 ## <a name="next-steps"></a>Étapes suivantes  
  Selon les spécifications de votre application, vous pouvez exécuter différentes étapes après avoir enregistré les données associées dans l'application Windows. Par exemple, vous pouvez apporter les améliorations suivantes à cette application :  
   
-- Ajouter une validation au dataset. Pour plus d’informations, consultez [procédure pas à pas : Ajout d’une Validation à une Application de données multicouches](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265).  
+- Ajouter une validation au dataset. Pour plus d’informations, consultez [procédure pas à pas : Ajout d’une Validation à une Application de données multicouches](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265).  
   
 - Ajouter des méthodes supplémentaires au service pour la mise à jour des données dans la base de données.  
   

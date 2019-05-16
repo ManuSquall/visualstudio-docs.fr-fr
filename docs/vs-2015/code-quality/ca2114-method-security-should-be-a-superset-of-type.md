@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c9e0024ae6db5af3f1cf23c07fe29fbac8e4827d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b1a360ee4ad35fd48a46f6d866912a05a584a54c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58952093"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687314"
 ---
 # <a name="ca2114-method-security-should-be-a-superset-of-type"></a>CA2114 : La sécurité de la méthode doit être un sur-ensemble du type
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "58952093"
 |Modification avec rupture|Rupture|
 
 ## <a name="cause"></a>Cause
- Un type a la sécurité déclarative et une de ses méthodes présente une sécurité déclarative pour la même action de sécurité, et l’action de sécurité n’est pas [demandes de liaison](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) ou [demandes d’héritage](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)et les autorisations vérifiées par le type ne sont pas un sous-ensemble des autorisations vérifiées par la méthode.
+ Un type a la sécurité déclarative et une de ses méthodes présente une sécurité déclarative pour la même action de sécurité, et l’action de sécurité n’est pas [demandes de liaison](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) ou [demandes d’héritage](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9)et les autorisations vérifiées par le type ne sont pas un sous-ensemble des autorisations vérifiées par la méthode.
 
 ## <a name="rule-description"></a>Description de la règle
  Une méthode ne doit pas avoir à la fois une sécurité déclarative au niveau de la méthode et au niveau du type pour la même action. Les deux contrôles ne sont pas combinés ; uniquement la demande au niveau de la méthode est appliquée. Par exemple, si un type demande une autorisation `X`, et une de ses méthodes demande une autorisation `Y`, code n’a pas d’avoir l’autorisation `X` pour exécuter la méthode.
@@ -62,4 +62,4 @@ ms.locfileid: "58952093"
  **[aucune autorisation d’écriture (exigée par type)] informations personnelles : 6/16/1964 12:00:00 AM**
  **[aucune autorisation de lecture (exigée par méthode)] n’a pas pu accéder à des informations personnelles : Échoué de la requête.**
 ## <a name="see-also"></a>Voir aussi
- [Instructions de codage sécurisé](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [demandes d’héritage](http://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) [demandes de liaison](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [données et modélisation](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
+ [Instructions de codage sécurisé](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [demandes d’héritage](https://msdn.microsoft.com/28b9adbb-8f08-4f10-b856-dbf59eb932d9) [demandes de liaison](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [données et modélisation](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

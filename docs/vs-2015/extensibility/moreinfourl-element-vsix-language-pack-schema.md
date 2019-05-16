@@ -8,17 +8,17 @@ ms.assetid: 3f07b67b-95c5-4ae8-8b7e-d643cbbb0348
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 04168f2e69cb613a00313a45a38b2db2882d6d1d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3b80f1f90f3e661b0bbd09fadf173cb171cd97df
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58953041"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695489"
 ---
 # <a name="moreinfourl-element-vsix-language-pack-schema"></a>Élément MoreInfoURL (schéma du module linguistique VSIX)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Optionnel. Un lien vers des informations localisées sur l’extension.  
+Facultatif. Un lien vers des informations localisées sur l’extension.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -33,13 +33,13 @@ Optionnel. Un lien vers des informations localisées sur l’extension.
   
 |Attribut|Description|  
 |---------------|-----------------|  
-|Aucun.||  
+|None||  
   
 ### <a name="child-elements"></a>Éléments enfants  
   
 |Élément|Description|  
 |-------------|-----------------|  
-|Aucun.||  
+|None||  
   
 ### <a name="parent-elements"></a>Éléments parents  
   
@@ -48,7 +48,7 @@ Optionnel. Un lien vers des informations localisées sur l’extension.
 |[Élément VSIXLanguagePack](../extensibility/vsixlanguagepack-element-vsix-language-pack-schema.md)|Obligatoire. Fournit l’élément racine pour un module linguistique VSIX.|  
   
 ## <a name="text-value"></a>Valeur texte  
- Optionnel. Un lien vers un site Web. Le lien est une chaîne de texte.  
+ Facultatif. Un lien vers un site Web. Le lien est une chaîne de texte.  
   
 ## <a name="element-information"></a>Informations sur les éléments  
   
@@ -62,4 +62,4 @@ Optionnel. Un lien vers des informations localisées sur l’extension.
 ## <a name="see-also"></a>Voir aussi  
  [Référence de schéma du module linguistique VSX](../extensibility/vsx-language-pack-schema-reference.md)   
  [Localisation de Packages VSIX](../extensibility/localizing-vsix-packages.md)   
- [Référence du schéma 1.0 Extension VSIX](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)
+ [Référence du schéma 1.0 Extension VSIX](https://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b)

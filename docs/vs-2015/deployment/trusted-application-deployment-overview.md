@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 869a756b1995a1ae5de3736fcee4ccede6cb46e5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a09f32f90ffca081fb8bf405f5d661160e8d4adf
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63427112"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686370"
 ---
 # <a name="trusted-application-deployment-overview"></a>Vue d'ensemble du déploiement d'applications approuvées
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ Cette rubrique offre une vue d’ensemble du déploiement d’applications [!INC
   
 - Espace de noms <xref:System.Security.Cryptography?displayProperty=fullName> .  
   
-- CertMgr.exe, composant d'Internet Explorer qui, par conséquent, existe sur Windows 98 et toutes les versions ultérieures. Pour plus d’informations, consultez [Certmgr.exe (outil de gestionnaire de certificats)](http://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb).  
+- CertMgr.exe, composant d'Internet Explorer qui, par conséquent, existe sur Windows 98 et toutes les versions ultérieures. Pour plus d’informations, consultez [Certmgr.exe (outil de gestionnaire de certificats)](https://msdn.microsoft.com/library/7e953b43-1374-4bbc-814f-53ca1b6b52bb).  
   
 ### <a name="create-a-clickonce-application"></a>Créer une application ClickOnce  
  Une application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] est une application cliente [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] combinée avec des fichiers manifestes qui décrivent l'application et fournissent les paramètres d'installation. Vous pouvez transformer votre programme en application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] à l'aide de la commande **Publier** dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Vous pouvez également générer tous les fichiers requis pour le déploiement [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] à l'aide des outils inclus dans le [!INCLUDE[winsdklong](../includes/winsdklong-md.md)]. Pour obtenir des instructions détaillées sur [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] déploiement, consultez [procédure pas à pas : déploiement manuel d’une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
@@ -88,12 +88,12 @@ Cette rubrique offre une vue d’ensemble du déploiement d’applications [!INC
  Le déploiement d'applications approuvées est spécifique de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]et peut uniquement être utilisé avec des applications [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] .  
   
 ### <a name="sign-the-deployment"></a>Signer le déploiement  
- Après avoir obtenu votre certificat, vous devez l'utiliser pour signer votre déploiement. Si vous déployez votre application à l'aide de l'Assistant Publication de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , ce dernier génère automatiquement un certificat de test pour vous si vous n'avez pas spécifié de certificat. Vous pouvez également utiliser la fenêtre du Concepteur de projets [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , pour fournir un certificat fourni par une autorité de certification.  Voir également [Guide pratique pour Publier une Application ClickOnce à l’aide de l’Assistant Publication](http://msdn.microsoft.com/library/31kztyey\(v=vs.110\)) ou [Comment : publier une application ClickOnce à l’aide de l’Assistant Publication](http://msdn.microsoft.com/library/31kztyey\(v=vs.110\)).  
+ Après avoir obtenu votre certificat, vous devez l'utiliser pour signer votre déploiement. Si vous déployez votre application à l'aide de l'Assistant Publication de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , ce dernier génère automatiquement un certificat de test pour vous si vous n'avez pas spécifié de certificat. Vous pouvez également utiliser la fenêtre du Concepteur de projets [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] , pour fournir un certificat fourni par une autorité de certification.  Voir également [Guide pratique pour Publier une Application ClickOnce à l’aide de l’Assistant Publication](https://msdn.microsoft.com/library/31kztyey\(v=vs.110\)) ou [Comment : publier une application ClickOnce à l’aide de l’Assistant Publication](https://msdn.microsoft.com/library/31kztyey\(v=vs.110\)).  
   
 > [!CAUTION]
 > Nous ne recommandons pas le déploiement de l'application avec un certificat de test.  
   
- Vous pouvez également signer l'application à l'aide des outils des SDK Mage.exe ou MageUI.exe. Pour plus d’informations, consultez [Procédure pas à pas : déploiement manuel d’une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Pour obtenir une liste complète des options de ligne de commande relatives à la signature de déploiement, consultez [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1).  
+ Vous pouvez également signer l'application à l'aide des outils des SDK Mage.exe ou MageUI.exe. Pour plus d’informations, consultez [Procédure pas à pas : déploiement manuel d’une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Pour obtenir une liste complète des options de ligne de commande relatives à la signature de déploiement, consultez [Mage.exe (Manifest Generation and Editing Tool)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1).  
   
 ### <a name="publish-the-application"></a>Publier l'application  
  Dès que vous avez signé vos manifestes [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] , l'application est prête à être publiée dans votre emplacement d'installation. L'emplacement d'installation peut être un serveur web, un partage de fichiers ou le disque local. Quand un client accède au manifeste de déploiement pour la première fois, le Gestionnaire de confiance doit déterminer si l'application [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] a été autorisée ou non à ne pas s'exécuter à un niveau de confiance supérieur par un éditeur approuvé installé. Le Gestionnaire de confiance fait ce choix en comparant le certificat utilisé pour signer le déploiement aux certificats stockés dans le magasin d'éditeurs approuvés du client. Si le Gestionnaire de confiance trouve une correspondance, l'application s'exécute avec un niveau de confiance élevé.  
@@ -105,5 +105,5 @@ Cette rubrique offre une vue d’ensemble du déploiement d’applications [!INC
  Vous pouvez utiliser le déploiement d'applications approuvées pour accorder une confiance élevée aux applications [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] déployées sur le web ou via un partage de fichiers d'entreprise. Vous n'êtes pas obligé d'utiliser le déploiement d'applications approuvées pour les applications [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] distribuées sur un CD, car, par défaut, ces applications ont un niveau de confiance totale.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Mage.exe (outil Manifest Generation and Editing)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
+ [Mage.exe (outil Manifest Generation and Editing)](https://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1)   
  [Procédure pas à pas : déploiement manuel d'une application ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

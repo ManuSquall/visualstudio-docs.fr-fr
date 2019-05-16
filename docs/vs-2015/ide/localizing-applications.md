@@ -15,12 +15,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a412016f2e51415456ee1a86a1b65fccf4d70a9b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3d735544e034c397a06ba50e04160323c536b3d4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800544"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674995"
 ---
 # <a name="localizing-applications"></a>Localisation d'applications
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ La *localisation* est le processus de personnalisation de votre application pour
  [Introduction aux applications internationales basées sur le .NET Framework](../ide/introduction-to-international-applications-based-on-the-dotnet-framework.md)  
  Décrit les concepts relatifs au développement de logiciels pour un marché international à l’aide de Visual Basic ou de Visual C#.  
   
- [Globalisation des Windows Forms](http://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)  
+ [Globalisation des Windows Forms](https://msdn.microsoft.com/library/72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5)  
  Fournit des liens vers des pages sur la création d’applications Windows qui prennent en charge plusieurs cultures.  
   
- [Globalisation et localisation](http://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)  
+ [Globalisation et localisation](https://msdn.microsoft.com/library/8ef3838e-9d05-4236-9dd0-ceecff9df80d)  
  Fournit des liens vers des pages sur la création d’applications web qui prennent en charge plusieurs cultures.  
   
- [Meilleures pratiques pour développer des applications mondialisables](http://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
+ [Meilleures pratiques pour développer des applications mondialisables](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c)  
  Fournit des informations sur la programmation pour un public international, telles que les problèmes de conception et la terminologie.

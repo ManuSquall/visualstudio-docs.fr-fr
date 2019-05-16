@@ -13,17 +13,17 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b26a152567da3b6285653ba8e14a72bce664ce0d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: bc5c8dbad4d2bb248a3183e2e73d7c2932e7bce4
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434527"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681725"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>Procédure : Ajoutez un fichier de Configuration d’Application à un C# projet
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-En ajoutant un fichier de configuration d’application (fichier app.config) à un projet C#, vous pouvez personnaliser la façon dont le CLR (Common Language Runtime) localise et charge les fichiers d’assembly. Pour plus d’informations sur les fichiers de configuration d’application, consultez [méthode de localisation des assemblys par le Runtime](http://msdn.microsoft.com/library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34).  
+En ajoutant un fichier de configuration d’application (fichier app.config) à un projet C#, vous pouvez personnaliser la façon dont le CLR (Common Language Runtime) localise et charge les fichiers d’assembly. Pour plus d’informations sur les fichiers de configuration d’application, consultez [méthode de localisation des assemblys par le Runtime](https://msdn.microsoft.com/library/772ac6f4-64d2-4cfb-92fd-58096dcd6c34).  
   
 > [!NOTE]
 > Le Windows Store ne prend pas en charge <xref:System.Configuration>. Par conséquent, les applications de Store ne contiennent pas un modèle de fichier app.config.  
@@ -44,7 +44,7 @@ En ajoutant un fichier de configuration d’application (fichier app.config) à 
   
 ## <a name="see-also"></a>Voir aussi  
  [Gestion des paramètres d’application (.NET)](../ide/managing-application-settings-dotnet.md)   
- [Schéma des fichiers de configuration](http://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38)   
- [Configuration d’applications](http://msdn.microsoft.com/library/86bd26d3-737e-4484-9782-19b17f34cd1f)   
- [Guide pratique pour Configurer une application pour cibler une Version du .NET Framework](http://msdn.microsoft.com/5247b307-89ca-417b-8dd0-e8f9bd2f4717)   
+ [Schéma des fichiers de configuration](https://msdn.microsoft.com/library/69003d39-dc8a-460c-a6be-e6d93e690b38)   
+ [Configuration d’applications](https://msdn.microsoft.com/library/86bd26d3-737e-4484-9782-19b17f34cd1f)   
+ [Guide pratique pour Configurer une application pour cibler une Version du .NET Framework](https://msdn.microsoft.com/5247b307-89ca-417b-8dd0-e8f9bd2f4717)   
  [Utilisation de l’environnement de développement Visual Studio pour C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)

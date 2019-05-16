@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eaffdfa5a5caaa9a200f14230a67cac72af96df8
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6f4502bcc439d55e36dad43add4c5b9852be21bd
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435200"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685377"
 ---
 # <a name="how-to-specify-an-application-icon-visual-basic-c"></a>Procédure : Spécifier une icône d’Application (Visual Basic, C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,4 +46,4 @@ La propriété `Icon` d'un projet spécifie le fichier de l'icône (.ico) qui se
  [Page Application, Concepteur de projets (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
  [Page Application, Concepteur de projets (C#)](../ide/reference/application-page-project-designer-csharp.md)   
  [Gestion des propriétés de l’application](../ide/application-properties.md)  
- [Guide pratique pour Ajouter ou supprimer des ressources](http://msdn.microsoft.com/7b77bc06-3952-4799-b029-def3f8f7f88d)
+ [Guide pratique pour Ajouter ou supprimer des ressources](https://msdn.microsoft.com/7b77bc06-3952-4799-b029-def3f8f7f88d)

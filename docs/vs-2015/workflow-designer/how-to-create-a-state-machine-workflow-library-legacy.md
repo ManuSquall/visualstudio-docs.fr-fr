@@ -13,12 +13,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6533ae98e110b3813c6dd7f5520e322ce2cf3496
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: acfa4a979614269c07969e4c01df4e994195cd64
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63433501"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697117"
 ---
 # <a name="how-to-create-a-state-machine-workflow-library-legacy"></a>Procédure : Créer une bibliothèque de workflows de machine à états (héritée)
 Suivez ces étapes pour créer un projet de bibliothèque de workflows d'ordinateur d'état à l'aide du [!INCLUDE[wfd1](../includes/wfd1-md.md)] hérité fourni par [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Utilisez le [!INCLUDE[wfd2](../includes/wfd2-md.md)] hérité lorsque vous devez cibler le [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou le [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -50,4 +50,4 @@ Suivez ces étapes pour créer un projet de bibliothèque de workflows d'ordinat
   
 ## <a name="see-also"></a>Voir aussi  
  [Création de projets de flux de travail hérités](../workflow-designer/creating-legacy-workflow-projects.md)   
- [Workflows de machine à états](http://msdn.microsoft.com/library/344caacd-bf3b-4716-bd5a-eca74fc5a61d)
+ [Workflows de machine à états](https://msdn.microsoft.com/library/344caacd-bf3b-4716-bd5a-eca74fc5a61d)

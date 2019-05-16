@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
 manager: jillfra
-ms.openlocfilehash: b0ad8fce0fc582b42cc64944677f7b680aa96541
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ac95c40b356c542da323a3ea3744827087f2d840
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63436523"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65686926"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Marshaling des paramètres d’assembly PIA Visual Studio
-Les VSPackages sont écrits en code managé peut devoir appeler ou être appelé par du code COM non managé. En règle générale, les arguments de méthode sont transformées ou marshalés, automatiquement par le marshaleur d’interopérabilité. Cependant, parfois arguments ne peuvent pas être transformées de manière simple. Dans ce cas, les paramètres de prototype de méthode assembly d’interopérabilité sont utilisés pour faire correspondre les paramètres de la fonction COM aussi fidèlement que possible. Pour plus d’informations, consultez [Marshaling d’interopérabilité](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
+Les VSPackages sont écrits en code managé peut devoir appeler ou être appelé par du code COM non managé. En règle générale, les arguments de méthode sont transformées ou marshalés, automatiquement par le marshaleur d’interopérabilité. Cependant, parfois arguments ne peuvent pas être transformées de manière simple. Dans ce cas, les paramètres de prototype de méthode assembly d’interopérabilité sont utilisés pour faire correspondre les paramètres de la fonction COM aussi fidèlement que possible. Pour plus d’informations, consultez [Marshaling d’interopérabilité](https://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
   
 ## <a name="general-suggestions"></a>Suggestions d’ordre général  
   
@@ -123,7 +123,7 @@ else
  Les méthodes managées qui appellent les interfaces de ce type doivent extraire le premier élément hors du tableau [out]. Cet élément peut être traité comme s’il s’agissait d’un `retval` valeur de retour à partir de l’interface COM correspondante.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Marshaling d’interopérabilité](http://msdn.microsoft.com/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
- [Marshaling d’interopérabilité](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)   
- [Résolution des problèmes d’interopérabilité](http://msdn.microsoft.com/library/b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37)   
+ [Marshaling d’interopérabilité](https://msdn.microsoft.com/a95fdb76-7c0d-409e-a77e-0349b1ea1490)   
+ [Marshaling d’interopérabilité](https://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a)   
+ [Résolution des problèmes d’interopérabilité](https://msdn.microsoft.com/library/b324cc1e-b03c-4f39-aea6-6a6d5bfd0e37)   
  [VSPackages gérés](../misc/managed-vspackages.md)

@@ -20,12 +20,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 313c189a05ae2a4e338c6f6bb9d7e9341e34284c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a2256dfde39c761258ffb63ec6bbd9473e1be385
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63446119"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687584"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Démarrage rapide : Déboguer du code JavaScript à l’aide de la console
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -283,4 +283,4 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
  [Déboguer un exemple de code HTML, CSS et JavaScript](../debugger/debug-html-css-and-javascript-sample-code.md)   
  [Démarrage rapide : déboguer du code HTML et CSS](../debugger/quickstart-debug-html-and-css.md)   
  [Déboguer un contrôle WebView](../debugger/debug-a-webview-control.md)   
- [Support technique et accessibilité](http://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)
+ [Support technique et accessibilité](https://msdn.microsoft.com/library/tzbxw1af\(VS.120\).aspx)

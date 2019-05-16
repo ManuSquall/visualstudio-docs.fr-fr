@@ -10,19 +10,19 @@ ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bb8270de3635b6a9d28a6bf550b29a014d0fed9f
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: dbd97310163a4eb3ae5502c6341dc73322ca653d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63432549"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685266"
 ---
 # <a name="registering-verbs-for-file-name-extensions"></a>Inscription des verbes pour les extensions de nom de fichier
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 L’association d’une extension de nom de fichier avec une application a généralement une action par défaut qui se produit lorsqu’un utilisateur double-clique sur un fichier. Cette action est liée à un verbe, par exemple ouvrir, qui correspond à l’action de préférence.  
   
- Vous pouvez inscrire les verbes qui sont associés à un identificateur programmatique (ProgID) d’une extension à l’aide de la clé de l’interpréteur de commandes située à HKEY_CLASSES_ROOT\\*progid*\shell. Pour plus d’informations, consultez [Types de fichiers](http://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx).  
+ Vous pouvez inscrire les verbes qui sont associés à un identificateur programmatique (ProgID) d’une extension à l’aide de la clé de l’interpréteur de commandes située à HKEY_CLASSES_ROOT\\*progid*\shell. Pour plus d’informations, consultez [Types de fichiers](https://msdn.microsoft.com/library/windows/desktop/cc144148\(v=vs.85\).aspx).  
   
 ## <a name="registering-standard-verbs"></a>Inscription des verbes Standard  
  Le système d’exploitation reconnaît les verbes standards suivants :  

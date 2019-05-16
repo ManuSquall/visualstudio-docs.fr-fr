@@ -26,17 +26,17 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 86ca63ead6b2014dfe0d90d496ef4b7d7efe7f63
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: e56c48468b6890f9c51e3ac79ac6167fd8647903
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54784798"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675150"
 ---
 # <a name="introduction-to-international-applications-based-on-the-net-framework"></a>Introduction aux applications internationales basées sur le .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], il existe deux parties pour la création d’une application mondialisable : la globalisation (processus de conception d’applications pouvant s’adapter à différentes cultures) et la localisation (processus de traduction de ressources pour une culture spécifique). Pour des informations générales sur la conception d’applications à destination d’un public international, consultez [Bonnes pratiques pour développer des applications mondialisables](http://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c).  
+Dans [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], il existe deux parties pour la création d’une application mondialisable : la globalisation (processus de conception d’applications pouvant s’adapter à différentes cultures) et la localisation (processus de traduction de ressources pour une culture spécifique). Pour des informations générales sur la conception d’applications à destination d’un public international, consultez [Bonnes pratiques pour développer des applications mondialisables](https://msdn.microsoft.com/library/f08169c7-aad8-4ec3-9a21-9ebd3b89986c).  
   
  Le modèle de localisation [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] se compose d’un assembly principal qui contient le code d’application et les ressources de secours : chaînes, images et autres objets pour le langage dans lequel l’application a été initialement développée. Chaque application localisée dispose d’assemblys satellites (assemblys qui contiennent uniquement les ressources localisées). Étant donné que l’assembly principal contient toujours les ressources de secours, si une ressource est introuvable dans l’assembly satellite localisé, le <xref:System.Resources.ResourceManager> tente de la charger de façon hiérarchique, en recourant en dernier ressort à la ressource dans l’assembly principal. Le système de secours de ressources est expliqué en détail dans [Organisation hiérarchique des ressources pour la localisation](../ide/hierarchical-organization-of-resources-for-localization.md).  
   

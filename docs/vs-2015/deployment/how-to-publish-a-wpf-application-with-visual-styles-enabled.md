@@ -9,18 +9,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e2eb9da0913b3ce77ea30fd58d5243d5a380d19f
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
-ms.translationtype: HT
+ms.openlocfilehash: c3691f782f317667b56f6bf3641c0f4c6a703eda
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "59001312"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697572"
 ---
 # <a name="how-to-publish-a-wpf-application-with-visual-styles-enabled"></a>Procédure : Publier une application WPF avec les styles visuels activés
 
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Styles visuels activer l’apparence des contrôles communs à changer en fonction du thème choisi par l’utilisateur. Par défaut, les styles visuels ne sont pas activés pour les applications Windows Presentation Foundation (WPF), vous devez les activer manuellement. Toutefois, l’activation des styles visuels pour une application WPF, puis publiez la solution provoque une erreur. Cette rubrique décrit comment résoudre cette erreur et le processus de publication d’une application WPF avec les styles visuels sont activés. Pour plus d’informations sur les styles visuels, consultez [vue d’ensemble des Styles Visual](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Pour plus d’informations sur le message d’erreur, consultez [dépannage des erreurs spécifiques dans les déploiements ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).
+Styles visuels activer l’apparence des contrôles communs à changer en fonction du thème choisi par l’utilisateur. Par défaut, les styles visuels ne sont pas activés pour les applications Windows Presentation Foundation (WPF), vous devez les activer manuellement. Toutefois, l’activation des styles visuels pour une application WPF, puis publiez la solution provoque une erreur. Cette rubrique décrit comment résoudre cette erreur et le processus de publication d’une application WPF avec les styles visuels sont activés. Pour plus d’informations sur les styles visuels, consultez [vue d’ensemble des Styles Visual](https://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e). Pour plus d’informations sur le message d’erreur, consultez [dépannage des erreurs spécifiques dans les déploiements ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md).
 
  Pour résoudre l’erreur et publiez la solution, vous devez effectuer les tâches suivantes :
 
@@ -66,7 +66,7 @@ Styles visuels activer l’apparence des contrôles communs à changer en foncti
 
          Le fichier App.manifest s’ouvre dans le **éditeur de Code**.
 
-    **Pour ouvrir le fichier manifeste dans un projet C#**
+    **Pour ouvrir le fichier manifeste dans un projet c#**
 
     1. Dans la barre de menus, choisissez **projet**, _nom_projet_**propriétés**, où *nom_projet* est le nom de votre projet WPF.
 
@@ -125,7 +125,7 @@ Styles visuels activer l’apparence des contrôles communs à changer en foncti
 
 1. Ouvrez le **invite de commandes de Visual Studio**.
 
-    Pour plus d’informations sur la façon d’ouvrir le **invite de commandes Visual Studio**, consultez [invites de commandes](http://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219).
+    Pour plus d’informations sur la façon d’ouvrir le **invite de commandes Visual Studio**, consultez [invites de commandes](https://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219).
 
    > [!NOTE]
    > Les étapes restantes des hypothèses suivantes relatives à votre solution :
@@ -193,5 +193,5 @@ Styles visuels activer l’apparence des contrôles communs à changer en foncti
 ## <a name="see-also"></a>Voir aussi
 
 [Dépannage d’erreurs spécifiques dans les déploiements ClickOnce](../deployment/troubleshooting-specific-errors-in-clickonce-deployments.md)
-[vue d’ensemble de Styles visuels](http://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e)
-[invites de commandes](http://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219)
+[vue d’ensemble de Styles visuels](https://msdn.microsoft.com/5b5d7bb6-684f-478d-bf5f-b8d18bbcff2e)
+[invites de commandes](https://msdn.microsoft.com/library/94fcf524-9045-4993-bfb2-e2d8bad44219)

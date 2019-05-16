@@ -15,12 +15,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 45a4dd40e00182084686841279f81eb1de9d8a28
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: c33ae053a605e50aa8d1940fc97f3c0f687b48fa
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63424582"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695338"
 ---
 # <a name="how-to-view-existing-types-class-designer"></a>Procédure : Afficher des types existants (Concepteur de classes)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Pour voir un type existant et ses membres, ajoutez sa forme à un diagramme de c
    Vous pouvez aussi afficher les types du projet en faisant glisser un ou plusieurs nœuds depuis le nœud du projet de l'Affichage de classes vers le diagramme de classes.  
   
 > [!TIP]
-> Si l’Affichage de classes n’est pas ouvert, ouvrez-le depuis le menu **Affichage**. Pour plus d’informations sur l’affichage des classes, consultez [Affichage des classes et de leurs membres](http://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  
+> Si l’Affichage de classes n’est pas ouvert, ouvrez-le depuis le menu **Affichage**. Pour plus d’informations sur l’affichage des classes, consultez [Affichage des classes et de leurs membres](https://msdn.microsoft.com/71e9e8f3-261a-4e0c-87bf-5ec48b8bf333).  
   
  Pour afficher les types à des emplacements par défaut du diagramme, sélectionnez un ou plusieurs types dans l’Affichage de classes, cliquez avec le bouton droit sur les types sélectionnés et choisissez **Afficher le diagramme de classes**.  
   

@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9ee1e1bc8762ae21ea69db5215d4dc472858d720
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: a5ca94c88a1f131065b7d5de57e9cdc200696d58
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63442449"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681427"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Modifier le style des objets dans Blend
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,12 +95,12 @@ Le moyen le plus simple de personnaliser un objet est d’en définir les propri
  **Regardez une courte vidéo :** ![Configurer les fonctionnalités installées](../designers/media/bldadminconsoleinitialconfigicon.PNG "BldAdminConsoleInitialConfigIcon") [créer un style](https://www.youtube.com/watch?v=W8YdXDPeKdc).  
   
 ### <a name="apply-a-style-or-template-to-a-control"></a>Appliquer un style ou un modèle à un contrôle  
- Cliquez avec le bouton droit sur un objet dans le panneau [Objets et chronologie](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57), choisissez **Modifier un modèle**, puis **Appliquer la ressource**.  
+ Cliquez avec le bouton droit sur un objet dans le panneau [Objets et chronologie](https://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57), choisissez **Modifier un modèle**, puis **Appliquer la ressource**.  
   
  ![](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png "dc12debc-7711-47d9-84ce-10322a384397")  
   
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Restaurer le style ou le modèle par défaut d'un contrôle  
- Sélectionnez le contrôle puis, dans le panneau [Propriétés](http://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57), recherchez la propriété **Style** ou **Modèle**. Cliquez ensuite sur **Options avancées** ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb"), puis sur **Réinitialiser** dans le menu contextuel.  
+ Sélectionnez le contrôle puis, dans le panneau [Propriétés](https://msdn.microsoft.com/135a5a5e-ec6d-4f38-8827-60e284cd5f57), recherchez la propriété **Style** ou **Modèle**. Cliquez ensuite sur **Options avancées** ![](../designers/media/12e06962-5d8a-480d-a837-e06b84c545bb.png "12e06962-5d8a-480d-a837-e06b84c545bb"), puis sur **Réinitialiser** dans le menu contextuel.  
   
 ## <a name="Visual"></a> États visuels : modifier l’apparence d’un contrôle en fonction de son état  
  Les contrôles peuvent avoir des apparences visuelles différentes en fonction des interactions de l'utilisateur. Par exemple, vous pouvez faire en sorte qu'un bouton devienne vert quand un utilisateur clique dessus ou qu'il exécute une animation. Vous pouvez raccourcir ou allonger la durée entre les états visuels à l'aide de transitions.  

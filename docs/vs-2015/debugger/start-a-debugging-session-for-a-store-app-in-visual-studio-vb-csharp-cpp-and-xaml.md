@@ -34,12 +34,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dd61ea128093735a69ad9b1f30cddc593b5856a4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: f12d6cde30dec9062dd67a18558bd0571e6fe6b1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63440441"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685214"
 ---
 # <a name="start-a-debugging-session-for-a-store-app-in-visual-studio-vb-c-c-and-xaml"></a>Démarrer une session de débogage pour une application du Windows Store dans Visual Studio (VB, C#, C++ et XAML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -285,7 +285,7 @@ S’applique à Windows et Windows Phone] (.. /Image/windows_and_phone_content.p
 
 #### <a name="BKMK_Set_the_app_to_run_in_debug_mode"></a> Configurer l'application pour l'exécuter en mode débogage
 
-1. Installez les outils de contrôle à distance Visual Studio sur le périphérique où l'application est installée. Consultez la page [Installation des outils de contrôle à distance](http://msdn.microsoft.com/library/windows/apps/hh441469.aspx#BKMK_Installing_the_Remote_Tools).
+1. Installez les outils de contrôle à distance Visual Studio sur le périphérique où l'application est installée. Consultez la page [Installation des outils de contrôle à distance](https://msdn.microsoft.com/library/windows/apps/hh441469.aspx#BKMK_Installing_the_Remote_Tools).
 
 2. Sur l'écran Démarrer, recherchez `Debuggable Package Manager` , puis démarrez-le.
 

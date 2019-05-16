@@ -12,12 +12,12 @@ ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e3fa0eaa6a0b301914f0ea908ef1222d1b342f5c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 33218dd8fe7cee4a6700dcb289719ffae932bbe0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63408451"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691788"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Prise en charge des extraits de code dans un service de langage hérité
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -117,7 +117,7 @@ Un extrait de code est un morceau de code est inséré dans le fichier source. L
 ### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>Insérer un extrait de Code à l’aide d’une commande de Menu  
  Pour utiliser une commande de menu pour afficher le navigateur de l’extrait de code, vous ajoutez une commande de menu et appelez ensuite la <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> méthode dans le <xref:Microsoft.VisualStudio.Package.ExpansionProvider> interface en réponse à cette commande de menu.  
   
-1. Ajouter une commande et un bouton à votre fichier .vsct. Vous trouverez des instructions permettant d’effectuer dans [procédure pas à pas : Création d’une commande de Menu à l’aide du modèle de Package Visual Studio](http://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
+1. Ajouter une commande et un bouton à votre fichier .vsct. Vous trouverez des instructions permettant d’effectuer dans [procédure pas à pas : Création d’une commande de Menu à l’aide du modèle de Package Visual Studio](https://msdn.microsoft.com/library/1985fa7d-aad4-4866-b356-a125b6a246de).  
   
 2. Dérivez une classe de la <xref:Microsoft.VisualStudio.Package.ViewFilter> classe et substituer la <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> méthode pour indiquer la prise en charge de la nouvelle commande de menu. Cet exemple permet toujours de la commande de menu.  
   

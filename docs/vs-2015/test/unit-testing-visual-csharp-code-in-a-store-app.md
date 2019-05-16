@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4ec7d42fe5f1db8a44f17cf3dffdfd6174a58995
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 144097837eba5c8feeb5a424134fec887d51befe
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63445934"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65695258"
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>Test unitaire du code Visual C# dans une application du Windows Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Cette rubrique décrit une méthode permettant de créer des tests unitaires pou
 >   - Exécutez vos tests après chaque build.  
 >   - VS Enterprise contient également Microsoft Fakes, framework d'isolement pour le code managé qui vous permet de concentrer vos tests sur votre propre code en remplaçant le code de test pour les fonctionnalités système et tierces.  
 > 
->   Pour plus d’informations, consultez [Vérification du code à l’aide de tests unitaires](http://msdn.microsoft.com/library/dd264975.aspx) dans MSDN Library.  
+>   Pour plus d’informations, consultez [Vérification du code à l’aide de tests unitaires](https://msdn.microsoft.com/library/dd264975.aspx) dans MSDN Library.  
   
 ## <a name="BKMK_In_this_topic"></a> Dans cette rubrique  
  [Créer la solution et le projet de test unitaire](#BKMK_Create_the_solution_and_the_unit_test_project)  

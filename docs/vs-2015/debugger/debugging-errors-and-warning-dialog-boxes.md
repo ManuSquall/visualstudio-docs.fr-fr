@@ -22,12 +22,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2d5fbd50ec56173d0871aa1096825eabf87cf42e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 337341547891d87b577756350cbb71e13dd230ae
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58948675"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65691181"
 ---
 # <a name="debugging-errors-and-warning-dialog-boxes"></a>Erreur et avertissement, boîtes de dialogue pour le débogage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Vous trouverez ci-après la liste des boîtes de dialogue d'erreur et d'avertiss
   
  [Il n’y a pas de code source disponible pour l’emplacement en cours (boîte de dialogue)](../debugger/no-source-available.md)  
   
- [Aucune information symbolique, boîte de dialogue](http://msdn.microsoft.com/18de4888-9cca-4059-a165-48b135fee4c9)  
+ [Aucune information symbolique, boîte de dialogue](https://msdn.microsoft.com/18de4888-9cca-4059-a165-48b135fee4c9)  
   
  [Résoudre une ambiguïté, boîte de dialogue](../debugger/resolve-ambiguity-dialog-box.md)  
   
@@ -64,9 +64,9 @@ Vous trouverez ci-après la liste des boîtes de dialogue d'erreur et d'avertiss
   
  [Débogage distant, erreurs](../debugger/remote-debugging-errors-and-troubleshooting.md)  
   
- [Erreurs d’attachement](http://msdn.microsoft.com/2820d904-a068-4fcb-bbfb-bbbe5195d6ae)  
+ [Erreurs d’attachement](https://msdn.microsoft.com/2820d904-a068-4fcb-bbfb-bbbe5195d6ae)  
   
- [Dépannage de la configuration du débogage SQL](http://msdn.microsoft.com/b3ec8303-4c0d-449c-8d19-4932c1d820a7)  
+ [Dépannage de la configuration du débogage SQL](https://msdn.microsoft.com/b3ec8303-4c0d-449c-8d19-4932c1d820a7)  
   
  [Forum aux questions sur le débogage Visual C++](../debugger/debugging-native-code-faqs.md)  
   

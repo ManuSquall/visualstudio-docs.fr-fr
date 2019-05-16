@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ea5433fc1dd12c759faa31599be029f1ba569db1
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e3b07c7c1009b4f8c9f3d92ccb611e3b64319d19
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648950"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65703261"
 ---
 # <a name="xml-editor-components"></a>Composants de l'éditeur XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Cette section décrit les fenêtres et boîtes de dialogue de l'éditeur XML. É
  Décrit comment sélectionner le ou les schéma(s) XML à associer au document XML.  
   
 ## <a name="related-sections"></a>Rubriques connexes  
- [Guide pratique pour Définir les Options générales de l’éditeur](http://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2)  
+ [Guide pratique pour Définir les Options générales de l’éditeur](https://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2)  
  Explique comment régler des paramètres généraux tels que l'affichage, le remplissage des instructions, etc.  
   
 ## <a name="see-also"></a>Voir aussi  

@@ -29,12 +29,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2b3cfa5c52b8ddbe53ce127fde60a9b4edfd8ddd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fba5032860e21bbd323b8e49d5f32ab9b6f90540
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950077"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688134"
 ---
 # <a name="when-calling-a-function-hundreds-of-times-how-do-i-know-which-call-failed"></a>Lorsque j'appelle une fonction des centaines de fois, comment puis-je savoir quel appel a échoué ?
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,5 +53,5 @@ CnvtV(int) (no condition) when hit count is equal to 1000 (currently 101)
   
 ## <a name="see-also"></a>Voir aussi  
  [Questions fréquentes (FAQ) sur le débogage du code natif](../debugger/debugging-native-code-faqs.md)   
- [Définition de points d’arrêt](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)   
+ [Définition de points d’arrêt](https://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583)   
  [Débogage du code natif](../debugger/debugging-native-code.md)

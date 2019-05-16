@@ -22,12 +22,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8401a41c479dea70289cd0ebf072fc3b57eff78d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: cd92d75e297055b65d05bef42d497e65c2a996d6
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63434511"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697922"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Créer des tables de recherche dans des applications WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Le terme *table de recherche* (parfois appelé un *liaison de correspondance*) d
 
     - Service de données WCF, service WCF ou service Web. Pour plus d'informations, voir [Procédure : se connecter à des données dans un service](../data-tools/how-to-connect-to-data-in-a-service.md).  
   
-    - Objets. Pour plus d'informations, voir [Procédure : Se connecter aux données dans des objets](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b).  
+    - Objets. Pour plus d'informations, voir [Procédure : Se connecter aux données dans des objets](https://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b).  
   
     > [!NOTE]
     > Avant de pouvoir créer une table de recherche, les deux tables ou objets connexes doivent exister en tant que source de données pour le projet.  

@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1f02018ed9ddb6f91f965d28767cde55e4c3e524
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 7b4061a5bc253782e7ca28478259efb4027c61f9
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437309"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65674740"
 ---
 # <a name="introduction-to-wpf"></a>Présentation de WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -146,7 +146,7 @@ End Namespace
 ## <a name="Controls"></a> Contrôles  
  Les expériences utilisateur fournies par le modèle d’application sont des contrôles construits Dans WPF, « contrôle » est un terme général qui s’applique à une catégorie de classes WPF qui sont hébergées dans une fenêtre ou une page, qui ont une interface utilisateur et qui implémentent un certain comportement.  
   
- Pour plus d’informations, consultez [Contrôles](http://msdn.microsoft.com/library/3f255a8a-35a8-4712-9065-472ff7d75599).  
+ Pour plus d’informations, consultez [Contrôles](https://msdn.microsoft.com/library/3f255a8a-35a8-4712-9065-472ff7d75599).  
   
 ### <a name="wpf-controls-by-function"></a>Contrôles WPF par fonction  
  Les contrôles WPF intégrés sont répertoriés ici.  

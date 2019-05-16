@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9652073b6e5ea58b8206b195f3a99769a1b63a91
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 69ea9c3a41f83b9c06dc18d6da1f859017f12ca5
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58949466"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697808"
 ---
 # <a name="no-source-available"></a>Aucune source disponible
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,4 +44,4 @@ Votre projet ne contient pas de code source pour le code que vous essayez d'affi
 ## <a name="see-also"></a>Voir aussi  
  [Fichiers sources pour le débogage, Propriétés communes, Pages de propriétés de solution, boîte de dialogue](../debugger/debug-source-files-common-properties-solution-property-pages-dialog-box.md)   
  [Spécifier les fichiers de symbole (.pdb) et les fichiers sources](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   
- [SOS.dll (extension de débogage SOS)](http://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498)
+ [SOS.dll (extension de débogage SOS)](https://msdn.microsoft.com/library/9ac1b522-77ab-4cdc-852a-20fcdc9ae498)

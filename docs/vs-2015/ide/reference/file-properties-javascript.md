@@ -26,12 +26,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fc7c3202b26e94736f59561c6c13f8350102d7b6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 00527cf13d978da5a10e7745049df63f24e7a15c
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656480"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688744"
 ---
 # <a name="file-properties-javascript"></a>Propriétés des fichiers, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -96,4 +96,4 @@ Vous pouvez utiliser les propriétés de fichier pour indiquer les actions que l
  Affiche la version de la référence.  
   
 ## <a name="see-also"></a>Voir aussi  
- [NIB : Propriétés du projet (Visual Studio)](http://msdn.microsoft.com/eb4c97ed-f667-4850-98d0-6e2a4d21bbca)
+ [NIB : Propriétés du projet (Visual Studio)](https://msdn.microsoft.com/eb4c97ed-f667-4850-98d0-6e2a4d21bbca)

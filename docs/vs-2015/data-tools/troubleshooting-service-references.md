@@ -17,12 +17,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cff1677ab9209ce2a51b7587c410731a71e27eb0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f1c5886d4ac3efcb906a27f73af6a79fad95a5af
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056717"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65700233"
 ---
 # <a name="troubleshooting-service-references"></a>Dépannage des références de service
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ Cette rubrique répertorie les problèmes courants qui peuvent se produire lorsq
 
 3. Assurez-vous que le **Show advanced les configurations de build** case à cocher est sélectionnée, puis cliquez sur **OK**.
 
-4. Charger le projet de service WCF. Pour plus d’informations, consultez [NIB Comment : Créer des Solutions à projets multiples](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).
+4. Charger le projet de service WCF. Pour plus d’informations, consultez [NIB Comment : Créer des Solutions à projets multiples](https://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).
 
 5. Dans le **Configuration Manager** boîte de dialogue, définissez la **configuration de solution Active** à **déboguer**. Pour plus d'informations, voir [Procédure : Créer et modifier des configurations](../ide/how-to-create-and-edit-configurations.md).
 

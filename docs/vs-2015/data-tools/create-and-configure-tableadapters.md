@@ -20,12 +20,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 759cf18033adb962a6ccb97a31802963e12ba5c4
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: ab802e36a527952a0f0b789445bbdee8224af9d2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63431203"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705018"
 ---
 # <a name="create-and-configure-tableadapters"></a>Créer et configurer des TableAdapters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ Les TableAdapters fournissent la communication entre votre application et une ba
   
  Les TableAdapters sont créés pour vous lorsque vous effectuez l’une des actions suivantes :  
   
-- Exécutez le [Assistant de Configuration de Source de données](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) et sélectionnez le **base de données** ou **Service Web** type de source de données.  
+- Exécutez le [Assistant de Configuration de Source de données](https://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f) et sélectionnez le **base de données** ou **Service Web** type de source de données.  
   
-- Faire glisser des objets de base de données à partir de [Explorateur de serveurs](http://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) dans le **Concepteur de Dataset**.  
+- Faire glisser des objets de base de données à partir de [Explorateur de serveurs](https://msdn.microsoft.com/library/4ea29b3b-bbb2-45e4-9082-eaf635c41c4d) dans le **Concepteur de Dataset**.  
   
   Vous pouvez créer un nouveau TableAdapter et configurez-le avec une source de données en faisant glisser un TableAdapter à partir de la boîte à outils vers une région vide dans le **Concepteur de Dataset** surface.  
   

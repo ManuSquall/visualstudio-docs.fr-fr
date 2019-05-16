@@ -23,12 +23,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b4075340f87b46fd8316b5e30317e9d90108b914
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5019547d2e06684b51f1513445521eca0e5143e1
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58950744"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65702876"
 ---
 # <a name="exception-assistant-dialog-box"></a>Assistant Exception, boîte de dialogue
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,6 +60,6 @@ Le **Assistant Exception** boîte de dialogue s’affiche lorsqu’une exception
   
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité du débogueur](../debugger/debugger-security.md)   
- [Utiliser l’Assistant Exception](http://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)   
- [Guide pratique pour Corrigez les erreurs d’exécution avec l’Assistant Exception](http://msdn.microsoft.com/library/23b08d45-7b20-42c9-bdc9-fb3157ad823b)   
- [Types d’erreurs](http://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)
+ [Utiliser l’Assistant Exception](https://msdn.microsoft.com/library/e0a78c50-7318-4d54-af51-40c00aea8711)   
+ [Guide pratique pour Corrigez les erreurs d’exécution avec l’Assistant Exception](https://msdn.microsoft.com/library/23b08d45-7b20-42c9-bdc9-fb3157ad823b)   
+ [Types d’erreurs](https://msdn.microsoft.com/library/3048aabf-8c97-4e13-9150-853769cb5f6f)

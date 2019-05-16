@@ -15,12 +15,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a986303025460d6ca57cd3aa836a9f61f1804461
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 913594f47288715e0050643f365f9225810f6ded
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62423232"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682350"
 ---
 # <a name="code-snippet-picker"></a>Sélecteur d'extraits de code
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -56,6 +56,6 @@ L’éditeur de code [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] fournit un 
   
 ## <a name="see-also"></a>Voir aussi  
  [Bonnes pratiques pour l’utilisation des extraits de code](../../ide/best-practices-for-using-code-snippets.md)   
- [Extraits de code IntelliSense Visual Basic](http://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   
+ [Extraits de code IntelliSense Visual Basic](https://msdn.microsoft.com/library/ffdde4c9-8141-4906-b09b-15181357a643)   
  [Définition de signets dans le code](../../ide/setting-bookmarks-in-code.md)   
  [Guide pratique pour utiliser des extraits de code Entourer de](../../ide/how-to-use-surround-with-code-snippets.md)

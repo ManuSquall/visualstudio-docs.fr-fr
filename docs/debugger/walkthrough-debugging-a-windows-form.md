@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 663adfbf1858a4da686330813c6fe3c5eed4d098
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: d2f581582acfed38d55a2cfef351856cc0caa945
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63407593"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65678927"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Procédure pas à pas : débogage d’un Windows Form
 Un formulaire Windows est une des applications managées plus courantes. Un formulaire Windows crée une application Windows standard. Vous pouvez effectuer cette procédure pas à pas à l’aide de Visual Basic, c# ou C++.
@@ -165,23 +165,24 @@ Un formulaire Windows est une des applications managées plus courantes. Un form
 
     ```cpp
     textBox1->Text = "Button was clicked!";
+    ```
 
-2. On the **Debug** menu, select **Start Without Debugging**.
+2. Sur le **déboguer** menu, sélectionnez **démarrer sans débogage**.
 
-     The Windows Form starts running under Windows, just as if you had double-clicked its executable. The debugger is not attached.
+     Le Windows Form s’exécute sous Windows, comme si vous aviez double-cliqué sur son exécutable. Le débogueur n’est pas attaché.
 
-3. On the **Debug** menu, select **Attach to Process**. (This command is also available on the **Tools** menu.)
+3. Sur le **déboguer** menu, sélectionnez **attacher au processus**. (Cette commande est également disponible sur le **outils** menu.)
 
-     The **Attach to Process** dialog box appears.
+     La boîte de dialogue **Attacher au processus** s'affiche.
 
-4. In the **Available Processes** pane, find the process name (Walkthrough_SimpleDebug.exe) in the **Process** column and click it.
+4. Dans le **processus disponibles** volet, recherchez le nom du processus (Walkthrough_SimpleDebug.exe) dans le **processus** colonne et cliquez dessus.
 
-5. Click the **Attach** button.
+5. Cliquez sur le **attacher** bouton.
 
-6. In your Windows Form, click the one and only button.
+6. Dans votre formulaire Windows, cliquez sur le seul et unique bouton.
 
-     The debugger breaks execution of the Windows Form at the breakpoint.
+     Le débogueur interrompt l’exécution de l’écran de Windows sur le point d’arrêt.
 
-## See Also
-- [Debugging Managed Code](../debugger/debugging-managed-code.md)
-- [Debugger Security](../debugger/debugger-security.md)
+## <a name="see-also"></a>Voir aussi
+- [Débogage du code managé](../debugger/debugging-managed-code.md)
+- [Sécurité du débogueur](../debugger/debugger-security.md)

@@ -12,12 +12,12 @@ ms.assetid: c4575ac7-82da-4af8-a375-ea756a101fbf
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6175b89db774598463d1f8ffaa03057ecb50a69b
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 9a309779850dd33b77b426beb5627f61c40c2c4f
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441178"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675241"
 ---
 # <a name="uninstalling-a-vspackage-with-windows-installer"></a>Désinstallation d’un VSPackage avec Windows Installer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,5 +41,5 @@ La plupart du temps, le programme d’installation de Windows peut désinstaller
 > `Installed` est la propriété de que programme d’installation de Windows définit lorsqu’elle détecte que votre VSPackage a déjà été installé sur le système.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Programme d’installation de Windows](http://msdn.microsoft.com/187d8965-c79d-4ecb-8689-10930fa8b3b5)   
+ [Programme d’installation de Windows](https://msdn.microsoft.com/187d8965-c79d-4ecb-8689-10930fa8b3b5)   
  [Détection de la configuration système requise](../../extensibility/internals/detecting-system-requirements.md)

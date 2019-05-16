@@ -18,12 +18,12 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ddeb3fa5414208c610a7a21e176d55b0b0f985b5
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 6dbcc6f74d39353ae38b7298851cb1bab5fb0fe0
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435180"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685428"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Procédure : Application de connexion et les manifestes de déploiement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Si vous souhaitez publier une application à l’aide du déploiement ClickOnce,
   
  La signature des manifestes ClickOnce est facultative pour les applications .exe. Pour plus d’informations, consultez la section « Génération de manifestes non signés » de ce document.  
   
- Pour plus d’informations sur la création des fichiers de clés, consultez [Guide pratique pour créer une paire de clés publique/privée](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
+ Pour plus d’informations sur la création des fichiers de clés, consultez [Guide pratique pour créer une paire de clés publique/privée](https://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
   
 > [!NOTE]
 > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] prend uniquement en charge les fichiers de clés PFX (Personal Information Exchange) portant l’extension .pfx. Toutefois, vous pouvez sélectionner d’autres types de certificats à partir du magasin de certificats Windows de l’utilisateur actuel en cliquant sur **Sélectionner dans Store** dans la page **Signature** des propriétés du projet.  
@@ -109,7 +109,7 @@ Si vous souhaitez publier une application à l’aide du déploiement ClickOnce,
 3. Publiez l'application.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Assemblys avec nom fort](http://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
- [Guide pratique pour Créer une paire de clés publique / privée](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)   
+ [Assemblys avec nom fort](https://msdn.microsoft.com/library/d4a80263-f3e0-4d81-9b61-f0cbeae3797b)   
+ [Guide pratique pour Créer une paire de clés publique / privée](https://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114)   
  [Page Signature, Concepteur de projet](../ide/reference/signing-page-project-designer.md)   
  [Sécurité et déploiement ClickOnce](../deployment/clickonce-security-and-deployment.md)

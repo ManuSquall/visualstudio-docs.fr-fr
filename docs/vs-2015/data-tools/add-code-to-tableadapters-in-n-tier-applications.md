@@ -17,17 +17,17 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c3ddcb99163fe3548f020094647566c1779f5d9
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: aa406ab366c9bfb51f506c2dbba0a8408d7ba377
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63444506"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688552"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>Ajouter du code aux TableAdapters dans des applications multiniveaux
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Vous pouvez étendre les fonctionnalités d’un `TableAdapter` en créant un fichier de classe partielle pour le `TableAdapter` et ajoutant du code (au lieu d’ajouter du code pour le *DatasetName*. Fichier DataSet.Designer). Classes partielles permettent au code pour une classe spécifique être réparti entre plusieurs fichiers physiques. Pour plus d’informations, consultez [partielle](http://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448) ou [partial (Type)](http://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334).  
+Vous pouvez étendre les fonctionnalités d’un `TableAdapter` en créant un fichier de classe partielle pour le `TableAdapter` et ajoutant du code (au lieu d’ajouter du code pour le *DatasetName*. Fichier DataSet.Designer). Classes partielles permettent au code pour une classe spécifique être réparti entre plusieurs fichiers physiques. Pour plus d’informations, consultez [partielle](https://msdn.microsoft.com/library/7adaef80-f435-46e1-970a-269fff63b448) ou [partial (Type)](https://msdn.microsoft.com/library/27320743-a22e-4c7b-b0b3-53afe3607334).  
   
  Le code qui définit un `TableAdapter` est généré chaque fois les modifications sont apportées à la `TableAdapter`. Ce code est également généré lorsque des modifications sont apportées pendant l’exécution d’un Assistant qui modifie la configuration de la `TableAdapter`. Pour empêcher votre code d’être supprimé pendant la régénération d’un `TableAdapter`, ajoutez le code au fichier de classe partielle de la `TableAdapter`.  
   
@@ -73,6 +73,6 @@ Vous pouvez étendre les fonctionnalités d’un `TableAdapter` en créant un fi
 ## <a name="see-also"></a>Voir aussi  
  [Vue d’ensemble des Applications de données multicouches](../data-tools/n-tier-data-applications-overview.md)   
  [Ajoutez le code pour les jeux de données dans les applications multicouches](../data-tools/add-code-to-datasets-in-n-tier-applications.md)   
- [TableAdapters](http://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)   
- [Vue d’ensemble de TableAdapterManager](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)   
- [Vue d’ensemble de la mise à jour hiérarchique](http://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6)
+ [TableAdapters](https://msdn.microsoft.com/library/09416de9-134c-4dc7-8262-6c8d81e3f364)   
+ [Vue d’ensemble de TableAdapterManager](https://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650)   
+ [Vue d’ensemble de la mise à jour hiérarchique](https://msdn.microsoft.com/library/c4f8e8b9-e4a5-4a02-8462-d03d1e8222d6)

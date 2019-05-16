@@ -9,12 +9,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8a273e3422c1ab96a0c5fdba8330b218b4b7640f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 8af5414b1c775a17421b87b9c18d58c34f544405
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666765"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698653"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>Développer des applications pour la plateforme Windows universelle (UWP)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Avec la plateforme Windows universelle et notre noyau Windows, vous pouvez exéc
   
  **Qu’est-ce que la plateforme Windows universelle plus précisément ?**  
   
- C’est tout simplement un ensemble de contrats et de versions, qui vous permettent de choisir les cibles d’exécution de votre application. Vous ne ciblez plus un système d’exploitation. À présent, vous ciblez votre application sur une ou plusieurs familles d’appareils. En savoir plus grâce à ce [guide de plateforme](http://msdn.microsoft.com/library/windows/apps/dn894631.aspx).  
+ C’est tout simplement un ensemble de contrats et de versions, qui vous permettent de choisir les cibles d’exécution de votre application. Vous ne ciblez plus un système d’exploitation. À présent, vous ciblez votre application sur une ou plusieurs familles d’appareils. En savoir plus grâce à ce [guide de plateforme](https://msdn.microsoft.com/library/windows/apps/dn894631.aspx).  
   
 ## <a name="requirements"></a>Configuration requise  
  Les outils de développement d’applications Windows universelles sont fournis avec des émulateurs qui vous permettent de vérifier l’apparence de votre application sur différents appareils. Si vous souhaitez utiliser ces émulateurs, vous devez installer ce logiciel sur un ordinateur physique. L’ordinateur physique doit exécuter Windows 8.1 (x64) Professionnel ou une version ultérieure, et être équipé d’un processeur qui prend en charge Hyper-V Client et la conversion SLAT (Second Level Address Translation). Vous ne pouvez pas utiliser les émulateurs quand Visual Studio est installé sur un ordinateur virtuel.  
@@ -55,8 +55,8 @@ Avec la plateforme Windows universelle et notre noyau Windows, vous pouvez exéc
   Vous pouvez utiliser le concepteur XAML uniquement si votre plateforme de développement est Windows 10.  
   
 ## <a name="universal-windows-apps"></a>Applications pour la plateforme Windows universelle  
- Choisissez votre langage de développement préféré entre C#, Visual Basic, C++ ou JavaScript pour [créer une application Windows universelle pour les appareils Windows 10](http://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10). Vous pouvez aussi regarder [cette vidéo de prise en main](http://channel9.msdn.com/Series/ConnectOn-Demand/229).  
+ Choisissez votre langage de développement préféré entre C#, Visual Basic, C++ ou JavaScript pour [créer une application Windows universelle pour les appareils Windows 10](https://msdn.microsoft.com/library/windows/apps/xaml/dn609832.aspx#target_win10). Vous pouvez aussi regarder [cette vidéo de prise en main](http://channel9.msdn.com/Series/ConnectOn-Demand/229).  
   
- Si vous avez des applications Windows Store 8.1, des applications Windows Phone 8.1 ou des applications Windows universelles créées à l’aide de Visual Studio 2015 RC, [portez ces applications existantes](http://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) afin d’utiliser la dernière plateforme Windows universelle.  
+ Si vous avez des applications Windows Store 8.1, des applications Windows Phone 8.1 ou des applications Windows universelles créées à l’aide de Visual Studio 2015 RC, [portez ces applications existantes](https://msdn.microsoft.com/library/windows/apps/xaml/mt238321.aspx) afin d’utiliser la dernière plateforme Windows universelle.  
   
  Après avoir créé votre application Windows universelle, vous devez [l’empaqueter](https://msdn.microsoft.com/library/windows/apps/hh454036.aspx) pour l’installer sur un appareil Windows 10 ou la soumettre au Windows Store.

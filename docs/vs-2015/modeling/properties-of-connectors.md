@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 50e88a37e9d22fa99752864d1acbbeb4d15e6dab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a3673a818f9460b8b40bb3fee2dcd5fe65fd02a8
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58947099"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65701728"
 ---
 # <a name="properties-of-connectors"></a>Propriétés des connecteurs
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,8 +31,8 @@ Connecteurs représentent les relations de domaine dans un concepteur généré.
 |--------------|-----------------|-------------|  
 |Color|La couleur de ce connecteur.|Noir|  
 |Style de ligne|Le style de tiret pour la ligne de ce connecteur (solide, tiret, point, tiret, DashDotDot ou personnalisé).|Unie|  
-|Style de l’extrémité source|Le style de fin de source de ce connecteur (HollowArrow, d’EmptyArrow, FilledArrow, d’EmptyDiamond, FilledDiamond ou aucun).|Aucun.|  
-|Style de l’extrémité cible|Le style de fin de cible de ce connecteur (HollowArrow, d’EmptyArrow, FilledArrow, d’EmptyDiamond, FilledDiamond ou aucun).|Aucun.|  
+|Style de l’extrémité source|Le style de fin de source de ce connecteur (HollowArrow, d’EmptyArrow, FilledArrow, d’EmptyDiamond, FilledDiamond ou aucun).|None|  
+|Style de l’extrémité cible|Le style de fin de cible de ce connecteur (HollowArrow, d’EmptyArrow, FilledArrow, d’EmptyDiamond, FilledDiamond ou aucun).|None|  
 |Couleur du texte|La couleur qui est utilisée pour les éléments décoratifs de texte qui sont associés à ce connecteur.|Noir|  
 |Thickness|L’épaisseur de la ligne de ce connecteur, mesurée en pouces.|0.03125|  
 |Modificateur d'accès|Le niveau d’accès de la classe (`public` ou `internal`).|Public|  
@@ -40,7 +40,7 @@ Connecteurs représentent les relations de domaine dans un concepteur généré.
 |Génère le Double dérivée|Si `True`, une classe de base et une classe partielle (pour prendre en charge la personnalisation via des substitutions) sont générés. Pour plus d’informations, consultez [substitution et extension des Classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |A le constructeur personnalisé|Si `True`, un constructeur personnalisé est fourni dans le code source. Pour plus d’informations, consultez [substitution et extension des Classes générées](../modeling/overriding-and-extending-the-generated-classes.md).|False|  
 |Modificateur d’héritage|Décrit le type d’héritage de la classe de code source qui est générée à partir du connecteur (`none`, `abstract` ou `sealed`).|none|  
-|Connecteur de base|La classe de base de ce connecteur.|(aucune)|  
+|Connecteur de base|La classe de base de ce connecteur.|(aucun)|  
 |Nom|Le nom de ce connecteur.|Nom actuel|  
 |Espace de noms|L’espace de noms qui est affilié à ce connecteur.|Espace de noms actuel|  
 |Type de l’info-bulle|Comment l’info-bulle est définie (fixe, variable, ou aucun). Si fixe, puis la valeur de la `Fixed Tooltip Text` propriété est utilisée en tant que l’info-bulle ; si la variable, l’info-bulle est définie dans du code personnalisé.|\<aucune>|  
@@ -53,4 +53,4 @@ Connecteurs représentent les relations de domaine dans un concepteur généré.
 |Help Keyword|Le mot clé qui est utilisé pour indexer l’aide F1 pour cet élément.|\<aucune>|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Glossaire des Outils Domain-Specific Language](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glossaire des Outils Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

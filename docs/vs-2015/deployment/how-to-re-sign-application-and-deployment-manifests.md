@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: adc2347e6928a841a0a2c24d1d786be8edcbc4ac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d5956ad23fe22c7c36b712fac61df268586142df
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045777"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697562"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Procédure : Re-signer des manifestes d’application et de déploiement
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Une fois que vous apportez des modifications aux propriétés de déploiement da
  Un autre scénario dans lequel vous pouvez signer à nouveau les manifestes est lorsque vos clients souhaitent signer l’application et manifestes de déploiement avec leur propre certificat.  
   
 ## <a name="re-signing-the-application-and-deployment-manifests"></a>Signer à nouveau l’Application et déploiement de manifestes  
- Cette procédure suppose que vous avez déjà modifié votre fichier manifeste d’application (.manifest). Pour plus d'informations, voir [Procédure : Modifier les propriétés de déploiement](http://msdn.microsoft.com/66052a3a-8127-4964-8147-2477ef5d1472).  
+ Cette procédure suppose que vous avez déjà modifié votre fichier manifeste d’application (.manifest). Pour plus d'informations, voir [Procédure : Modifier les propriétés de déploiement](https://msdn.microsoft.com/66052a3a-8127-4964-8147-2477ef5d1472).  
   
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Pour signer à nouveau l’application et déploiement manifestes avec Mage.exe  
   

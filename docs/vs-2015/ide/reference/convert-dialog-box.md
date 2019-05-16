@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e69b9a96ba2529eba2f981ab79e59c5e7936cf97
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.openlocfilehash: 5dfd699c600875cbf2706eb78890b6e89ea92568
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63441436"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65705865"
 ---
 # <a name="convert-dialog-box"></a>Convertir, boîte de dialogue
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,5 +40,5 @@ La boîte de dialogue **Convertir** vous permet de sélectionner un outil de con
 2. Sélectionnez l’outil adapté à votre application.  
   
 ## <a name="see-also"></a>Voir aussi  
- [NOTINBUILD - Guide pratique pour mettre à niveau un projet à partir de Visual Basic 6.0](http://msdn.microsoft.com/c0421e57-5bba-422e-934d-ec42ab9f2af9)   
+ [NOTINBUILD - Guide pratique pour mettre à niveau un projet à partir de Visual Basic 6.0](https://msdn.microsoft.com/c0421e57-5bba-422e-934d-ec42ab9f2af9)   
  [Portage, migration et mise à niveau des projets Visual Studio](../../porting/porting-migrating-and-upgrading-visual-studio-projects.md)

@@ -16,21 +16,21 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a2c8d54b1625a4097d6b5a0acf6555d74fe83001
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0e2ad3b2d89db83d3b9fa38438abdbde61e72bfe
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116600"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65681385"
 ---
 # <a name="encapsulate-field-refactoring-c"></a>Encapsuler le champ (Refactorisation C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Le **encapsuler le champ** opération de refactorisation vous permet de créer rapidement une propriété à partir d’un champ existant et mettre en toute transparence à jour votre code avec des références à la nouvelle propriété.  
   
- Quand un [champ](http://msdn.microsoft.com/library/3cbb2f61-75f8-4cce-b4ef-f5d1b3de0db7) est [public](http://msdn.microsoft.com/library/0ae45d16-a551-4b74-9845-57208de1328e), autres objets ont un accès direct à ce champ et pouvez le modifier, sans être détectés par l’objet qui possède ce champ. À l’aide de [propriétés](http://msdn.microsoft.com/library/e295a8a2-b357-4ee7-a12e-385a44146fa8) pour encapsuler ce champ, vous pouvez interdire l’accès direct aux champs.  
+ Quand un [champ](https://msdn.microsoft.com/library/3cbb2f61-75f8-4cce-b4ef-f5d1b3de0db7) est [public](https://msdn.microsoft.com/library/0ae45d16-a551-4b74-9845-57208de1328e), autres objets ont un accès direct à ce champ et pouvez le modifier, sans être détectés par l’objet qui possède ce champ. À l’aide de [propriétés](https://msdn.microsoft.com/library/e295a8a2-b357-4ee7-a12e-385a44146fa8) pour encapsuler ce champ, vous pouvez interdire l’accès direct aux champs.  
   
- Pour créer la nouvelle propriété, le **encapsuler le champ** opération change le modificateur d’accès pour le champ que vous souhaitez encapsuler en [privé](http://msdn.microsoft.com/library/654c0bb8-e6ac-4086-bf96-7474fa6aa1c8), puis génère [obtenir](http://msdn.microsoft.com/library/a52de048-fbe0-41b0-82ec-8e4ac04d3a71)et [définir](http://msdn.microsoft.com/library/30d7e4e5-cc2e-4635-a597-14a724879619) accesseurs pour ce champ. Dans certains cas, seul un accesseur `get` est généré, comme quand le champ est déclaré en lecture seule.  
+ Pour créer la nouvelle propriété, le **encapsuler le champ** opération change le modificateur d’accès pour le champ que vous souhaitez encapsuler en [privé](https://msdn.microsoft.com/library/654c0bb8-e6ac-4086-bf96-7474fa6aa1c8), puis génère [obtenir](https://msdn.microsoft.com/library/a52de048-fbe0-41b0-82ec-8e4ac04d3a71)et [définir](https://msdn.microsoft.com/library/30d7e4e5-cc2e-4635-a597-14a724879619) accesseurs pour ce champ. Dans certains cas, seul un accesseur `get` est généré, comme quand le champ est déclaré en lecture seule.  
   
  Le moteur de refactorisation met à jour votre code avec des références à la nouvelle propriété dans les zones spécifiées dans le **mise à jour les références** section de la **encapsuler le champ** boîte de dialogue.  
   

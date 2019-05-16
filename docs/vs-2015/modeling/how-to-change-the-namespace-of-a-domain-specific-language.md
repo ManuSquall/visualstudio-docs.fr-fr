@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 57ec75ec116b3b107b01a139621d3c59ca8ecac9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: e86fa8f220cdd31beae12e050a1cbaa592624a74
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094909"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690560"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>Procédure : Modifier l’espace de nom d’un langage spécifique à un domaine
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,4 +56,4 @@ Vous pouvez modifier l’espace de noms d’un langage spécifique à un domaine
 11. Sur le **Build** menu, choisissez **régénérer la Solution**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Glossaire des Outils Domain-Specific Language](http://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)
+ [Glossaire des Outils Domain-Specific Language](https://msdn.microsoft.com/ca5e84cb-a315-465c-be24-76aa3df276aa)

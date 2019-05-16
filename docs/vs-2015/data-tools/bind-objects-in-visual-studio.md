@@ -19,12 +19,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 12cbeca740fd81292109183468a304fc2d3da30c
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 09afb67f0e9431ca8cd520635f243dca70880f09
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439487"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65683148"
 ---
 # <a name="bind-objects-in-visual-studio"></a>Lier des objets dans Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Visual Studio fournit des outils de conception pour travailler avec des objets p
 - Enregistrer les données à partir d’objets dans la base de données.
 
 > [!NOTE]
-> Afin de mieux comprendre et fournir le contexte pour les exemples de cette page, nous vous suggérons d’effectuer ce qui suit : [Procédure pas à pas : Connexion aux données dans des objets (Windows Forms)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05). Cette procédure pas à pas crée les objets présentés ici.
+> Afin de mieux comprendre et fournir le contexte pour les exemples de cette page, nous vous suggérons d’effectuer ce qui suit : [Procédure pas à pas : Connexion aux données dans des objets (Windows Forms)](https://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05). Cette procédure pas à pas crée les objets présentés ici.
 
 ### <a name="loaddata-into-objects"></a>LoadData dans des objets
  Pour cet exemple, vous chargez des données dans vos objets à l’aide de TableAdapters. Par défaut, les TableAdapters sont créés avec deux types de méthodes qui extraire des données à partir d’une base de données et remplissent les tables de données.
@@ -75,7 +75,7 @@ Visual Studio fournit des outils de conception pour travailler avec des objets p
  [!code-vb[VbRaddataConnecting#4](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConnecting/VB/Form1.vb#4)]
 
 ### <a name="create-a-typed-collection-of-objects"></a>Créer une collection typée d’objets
- Vous pouvez créer des classes de collection pour vos objets, ou utiliser les collections typées qui sont fournies automatiquement par le [composant BindingSource](http://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9).
+ Vous pouvez créer des classes de collection pour vos objets, ou utiliser les collections typées qui sont fournies automatiquement par le [composant BindingSource](https://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9).
 
  Lorsque vous créez une classe de collection personnalisée pour les objets, nous vous suggérons de que vous héritez de <xref:System.ComponentModel.BindingList%601>. Cette classe générique fournit des fonctionnalités pour administrer votre collection, ainsi que la possibilité de déclencher des événements qui envoient des notifications à l’infrastructure de liaison de données dans les Windows Forms.
 
@@ -92,9 +92,9 @@ Visual Studio fournit des outils de conception pour travailler avec des objets p
 ### <a name="addobjects-to-a-collection"></a>Addobjects à une collection
  Ajouter des objets à une collection en appelant le `Add` méthode de votre classe de collection personnalisée ou de la <xref:System.Windows.Forms.BindingSource>.
 
- Pour obtenir un exemple d’ajout d’une collection en utilisant un <xref:System.Windows.Forms.BindingSource>, consultez le `LoadCustomers` méthode dans [procédure pas à pas : Connexion aux données dans des objets (Windows Forms)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05).
+ Pour obtenir un exemple d’ajout d’une collection en utilisant un <xref:System.Windows.Forms.BindingSource>, consultez le `LoadCustomers` méthode dans [procédure pas à pas : Connexion aux données dans des objets (Windows Forms)](https://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05).
 
- Pour obtenir un exemple d’ajout d’objets à une collection personnalisée, consultez le `LoadOrders` méthode dans [procédure pas à pas : Connexion aux données dans des objets (Windows Forms)](http://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05).
+ Pour obtenir un exemple d’ajout d’objets à une collection personnalisée, consultez le `LoadOrders` méthode dans [procédure pas à pas : Connexion aux données dans des objets (Windows Forms)](https://msdn.microsoft.com/library/21a7fba2-b38b-4726-8cbe-d22154b75a05).
 
 > [!NOTE]
 > Le `Add` méthode est fournie automatiquement pour votre collection personnalisée lorsque vous héritez de <xref:System.ComponentModel.BindingList%601>.

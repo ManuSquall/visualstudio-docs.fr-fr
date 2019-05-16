@@ -19,12 +19,12 @@ caps.latest.revision: 39
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7d5c716d702716ffb0083279523668eab3e01685
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1eb56d1334eb18dd5872457d032e5780a3f75eb3
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650237"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65698719"
 ---
 # <a name="common-msbuild-project-properties"></a>Propriétés communes des projets MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,7 +114,7 @@ Le tableau ci-dessous répertorie les propriétés fréquemment utilisées qui s
 |Satellite_Version|Spécifie les informations de version concernant l'assembly satellite.|  
 |Satellite_Win32Icon|Insère un fichier icône .ico dans l'assembly satellite.|  
 |Satellite_Win32Resource|Insère une ressource Win32 (fichier .res) dans l'assembly satellite.|  
-|SubsystemVersion|Spécifie la version minimale du sous-système utilisable par le fichier exécutable généré. Cette propriété est équivalente au commutateur `/subsystemversion` du compilateur. Pour plus d’informations sur la valeur par défaut de cette propriété, consultez [/subsystemversion (Visual Basic)](http://msdn.microsoft.com/library/08be22b2-f447-4cd3-8203-120b1b920b54) ou [/subsystemversion (Options du compilateur C#)](http://msdn.microsoft.com/library/a99fce81-9d92-4813-9874-bee777041445).|  
+|SubsystemVersion|Spécifie la version minimale du sous-système utilisable par le fichier exécutable généré. Cette propriété est équivalente au commutateur `/subsystemversion` du compilateur. Pour plus d’informations sur la valeur par défaut de cette propriété, consultez [/subsystemversion (Visual Basic)](https://msdn.microsoft.com/library/08be22b2-f447-4cd3-8203-120b1b920b54) ou [/subsystemversion (Options du compilateur C#)](https://msdn.microsoft.com/library/a99fce81-9d92-4813-9874-bee777041445).|  
 |TargetCompactFramework|Version du .NET Compact Framework requise pour exécuter l'application que vous générez. La spécification de ce paramètre vous permet de référencer certains assemblys Framework que vous ne pourriez peut-être pas référencer autrement.|  
 |TargetFrameworkVersion|Version du [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] nécessaire pour exécuter l’application que vous générez. La spécification de ce paramètre vous permet de référencer certains assemblys Framework que vous ne pourriez peut-être pas référencer autrement.|  
 |TreatWarningsAsErrors|Paramètre booléen qui, s'il a pour valeur `true`, entraîne le traitement de tous les avertissements comme des erreurs. Ce paramètre est équivalent au commutateur `/nowarn` du compilateur.|  

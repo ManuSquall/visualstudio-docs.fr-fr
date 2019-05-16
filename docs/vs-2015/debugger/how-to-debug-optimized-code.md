@@ -23,21 +23,21 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 529fd979912d1743967109a11933140b482c2caf
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 68ce036d420293e8a75bec1b2cac9f9ee8f8fcd2
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63435723"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65675611"
 ---
 # <a name="how-to-debug-optimized-code"></a>Procédure : déboguer du code optimisé
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 REMARQUE]
-> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> Les boîtes de dialogue et les commandes de menu qui s'affichent peuvent être différentes de celles qui sont décrites dans l'aide, en fonction de vos paramètres actifs ou de l'édition utilisée. Pour modifier vos paramètres, choisissez Importation et exportation de paramètres dans le menu Outils. Pour plus d’informations, consultez [Personnalisation des paramètres de développement dans Visual Studio](https://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 > [!NOTE]
-> L’option de compilateur [/Zo (Améliorer le débogage optimisé)](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) (introduite dans Visual Studio Update 3) génère des informations de débogage plus détaillées pour le code optimisé (projets qui ne sont pas générés avec l’option de compilateur **/Od**. Consultez [Options /O (Optimiser le code)](http://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d)). Cela inclut la prise en charge améliorée pour le débogage des variables locales et des fonctions inline.  
+> L’option de compilateur [/Zo (Améliorer le débogage optimisé)](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) (introduite dans Visual Studio Update 3) génère des informations de débogage plus détaillées pour le code optimisé (projets qui ne sont pas générés avec l’option de compilateur **/Od**. Consultez [Options /O (Optimiser le code)](https://msdn.microsoft.com/library/77997af9-5555-4b3d-aa57-6615b27d4d5d)). Cela inclut la prise en charge améliorée pour le débogage des variables locales et des fonctions inline.  
 >   
 > [Modifier et continuer](../debugger/edit-and-continue-visual-csharp.md) est désactivé quand l’option de compilateur **/Zo** est utilisée.  
   
@@ -73,11 +73,11 @@ REMARQUE]
   
 6. Sous le dossier **C++**, sélectionnez `Optimization`.  
   
-7. Dans la liste des propriétés affichée à droite, recherchez `Optimization`. Le paramètre en regard de la propriété indique probablement `Disabled (`[/Od](http://msdn.microsoft.com/library/b1ac31b7-e086-4eeb-be5e-488f7513f5f5)`)`. Sélectionnez une des autres options (`Minimum Size``(`[/O1](http://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`, `Maximum Speed``(`[/O2](http://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`, `Full Optimization``(`[/Ox](http://msdn.microsoft.com/library/3ad7c30b-c615-428c-b1d0-2e024f81c760)`)` ou `Custom`).  
+7. Dans la liste des propriétés affichée à droite, recherchez `Optimization`. Le paramètre en regard de la propriété indique probablement `Disabled (`[/Od](https://msdn.microsoft.com/library/b1ac31b7-e086-4eeb-be5e-488f7513f5f5)`)`. Sélectionnez une des autres options (`Minimum Size``(`[/O1](https://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`, `Maximum Speed``(`[/O2](https://msdn.microsoft.com/library/2d1423f5-53d9-44da-8908-b33a351656c2)`)`, `Full Optimization``(`[/Ox](https://msdn.microsoft.com/library/3ad7c30b-c615-428c-b1d0-2e024f81c760)`)` ou `Custom`).  
   
 8. Si vous avez choisi l'option `Custom` pour `Optimization`, vous pouvez maintenant définir des options pour l'une des autres propriétés affichées dans la liste des propriétés.  
   
-9. Sélectionnez les propriétés de Configuration, C/C++, nœud de ligne de commande de la page de propriétés de projet et ajoutez `(` [/Zo](http://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)` à la **des Options supplémentaires** zone de texte.  
+9. Sélectionnez les propriétés de Configuration, C/C++, nœud de ligne de commande de la page de propriétés de projet et ajoutez `(` [/Zo](https://msdn.microsoft.com/library/eea8d89a-7fe0-4fe1-86b2-7689bbebbd7f) `)` à la **des Options supplémentaires** zone de texte.  
   
     > [!WARNING]
     > `/Zo` nécessite Visual Studio 2013 Update 3 ou une version ultérieure.  
@@ -90,7 +90,7 @@ REMARQUE]
 for (x=0; x<10; x++)  
 ```  
   
- Supposons que vous définissez un point d'arrêt sur cette ligne. Vous pouvez supposer que le point d'arrêt sera atteint 10 fois ; mais si le code est optimisé, il ne sera atteint qu'une seule fois. Cela est dû au fait que la première instruction affecte la valeur 0 à `x`. Le compilateur reconnaît que l'opération doit être effectuée une seule fois et la sort de la boucle. Le point d'arrêt est déplacé en même temps. Les instructions qui comparent et incrémentent `x` restent à l'intérieur de la boucle. Quand vous affichez la fenêtre **Code Machine**, l’[unité de progression](http://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9) est automatiquement définie sur Instruction pour un contrôle renforcé, ce qui est utile quand vous exécutez le code optimisé pas à pas.  
+ Supposons que vous définissez un point d'arrêt sur cette ligne. Vous pouvez supposer que le point d'arrêt sera atteint 10 fois ; mais si le code est optimisé, il ne sera atteint qu'une seule fois. Cela est dû au fait que la première instruction affecte la valeur 0 à `x`. Le compilateur reconnaît que l'opération doit être effectuée une seule fois et la sort de la boucle. Le point d'arrêt est déplacé en même temps. Les instructions qui comparent et incrémentent `x` restent à l'intérieur de la boucle. Quand vous affichez la fenêtre **Code Machine**, l’[unité de progression](https://msdn.microsoft.com/8791dac9-64d1-4bb9-b59e-8d59af1833f9) est automatiquement définie sur Instruction pour un contrôle renforcé, ce qui est utile quand vous exécutez le code optimisé pas à pas.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Sécurité du débogueur](../debugger/debugger-security.md)   

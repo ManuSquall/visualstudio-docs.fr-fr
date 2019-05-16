@@ -12,12 +12,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 31859128aed64ec6a1182f085685b2e82e485f84
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 86aac26819e86455c8ab5c3676c8198bbb482e43
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437080"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65697195"
 ---
 # <a name="enhancing-code-quality-with-team-project-check-in-policies"></a>Amélioration de la qualité du code avec des stratégies d’archivage de projet d’équipe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,17 +41,17 @@ Quand vous utilisez le contrôle de version Team Foundation, vous pouvez créer 
   
 |Tâche|Contenu de support|  
 |----------|------------------------|  
-|**Créer et utiliser des stratégies d’archivage :** Vous créez des stratégies d’archivage à l’aide des paramètres de projet d’équipe [!INCLUDE[esprscc](../includes/esprscc-md.md)].|[Définir et appliquer des critères de qualité](http://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|  
+|**Créer et utiliser des stratégies d’archivage :** Vous créez des stratégies d’archivage à l’aide des paramètres de projet d’équipe [!INCLUDE[esprscc](../includes/esprscc-md.md)].|[Définir et appliquer des critères de qualité](https://msdn.microsoft.com/library/bdc5666e-6cf0-45b2-a0a1-133c3f61e852)|  
 |**Créer et utiliser des stratégies d’archivage de l’analyse du code :** Vous pouvez choisir parmi un ensemble standard de règles d’analyse du code, ou vous pouvez créer un jeu personnalisé.|[Création et utilisation de stratégies d’archivage de l’analyse du code](../code-quality/creating-and-using-code-analysis-check-in-policies.md)|  
   
 ## <a name="related-tasks"></a>Tâches connexes  
   
 |Tâche|Contenu de support|  
 |----------|------------------------|  
-|**Configurer votre environnement de développement :** Avant de pouvoir créer ou modifier le code, vous devez configurer votre développement et environnements de test à l’aide du code source approprié. Si vous utilisez des bases de données, vous devez aussi avoir accès à leur représentation hors connexion.|[Installation d’environnements de développement](http://msdn.microsoft.com/7b686610-d379-4ca0-9608-73ef0e576e3a)|  
+|**Configurer votre environnement de développement :** Avant de pouvoir créer ou modifier le code, vous devez configurer votre développement et environnements de test à l’aide du code source approprié. Si vous utilisez des bases de données, vous devez aussi avoir accès à leur représentation hors connexion.|[Installation d’environnements de développement](https://msdn.microsoft.com/7b686610-d379-4ca0-9608-73ef0e576e3a)|  
 |**Utilisez l’analyse du Code dans le processus de développement :** Membres de l’équipe exécutés l’analyse du code sur leurs ordinateurs de développement. Dans Visual Studio, les développeurs configurent et exécutent des opérations d’analyse du code pour des projets de code individuels, consultent et analysent les problèmes rencontrés dans les opérations et créent des éléments de travail pour les avertissements.|[Analyse de la qualité des applications](../code-quality/analyzing-application-quality-by-using-code-analysis-tools.md)|  
 |**Créer et exécuter des tests unitaires :** Tests unitaires offrent aux développeurs et testeurs un rapide pour rechercher des erreurs de logique dans les méthodes des classes dans C#, Visual Basic .NET et les projets C++. Un test unitaire peut être créé une fois et exécuté à chaque modification du code source pour s’assurer qu’aucun bogue n’a été introduit.|[Tests unitaires sur votre code](../test/unit-test-your-code.md)|  
-|**Suivre des éléments de travail et des défauts :** Vous pouvez utiliser des éléments de travail pour suivre et gérer votre travail et les informations concernant votre projet d’équipe. Un élément de travail est un enregistrement de base de données que [!INCLUDE[esprfound](../includes/esprfound-md.md)] utilise pour effectuer le suivi de l’assignation et de la progression d’un travail. Vous pouvez utiliser différents types d’éléments de travail pour effectuer le suivi de différents types de travaux, par exemple les spécifications du client, les bogues de produits et les tâches de développement.|[Suivre le travail et gérer des flux de travail &#91;redirigé&#93;](http://msdn.microsoft.com/d2d8637d-0ef8-4ca3-874e-a04713344032)|  
+|**Suivre des éléments de travail et des défauts :** Vous pouvez utiliser des éléments de travail pour suivre et gérer votre travail et les informations concernant votre projet d’équipe. Un élément de travail est un enregistrement de base de données que [!INCLUDE[esprfound](../includes/esprfound-md.md)] utilise pour effectuer le suivi de l’assignation et de la progression d’un travail. Vous pouvez utiliser différents types d’éléments de travail pour effectuer le suivi de différents types de travaux, par exemple les spécifications du client, les bogues de produits et les tâches de développement.|[Suivre le travail et gérer des flux de travail &#91;redirigé&#93;](https://msdn.microsoft.com/d2d8637d-0ef8-4ca3-874e-a04713344032)|  
   
 ## <a name="external-resources"></a>Ressources externes  
   

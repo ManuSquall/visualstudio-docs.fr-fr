@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b159e448ae23e67cc2ed1c066cf4b7884ed83a6e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dfb0cd2931c7e07644b62993811ea1aaf0a8e99e
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MTE95
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54757656"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65685698"
 ---
 # <a name="application-properties"></a>Propriétés des applications
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,10 +59,10 @@ Vous pouvez définir les propriétés générales des applications Visual Basic,
 ## <a name="see-also"></a>Voir aussi  
  [Page Application, Concepteur de projets (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)   
  [Page Application, Concepteur de projets (C#)](../ide/reference/application-page-project-designer-csharp.md)   
- [Introduction au Concepteur de projets](http://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
+ [Introduction au Concepteur de projets](https://msdn.microsoft.com/898dd854-c98d-430c-ba1b-a913ce3c73d7)   
  [Publication d’applications ClickOnce](../deployment/publishing-clickonce-applications.md)   
  [Sécurisation des applications ClickOnce](../deployment/securing-clickonce-applications.md)   
- [Gestion des propriétés de débogage](http://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
- [Gestion des propriétés de compilation](http://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
+ [Gestion des propriétés de débogage](https://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
+ [Gestion des propriétés de compilation](https://msdn.microsoft.com/94308881-f10f-4caf-a729-f1028e596a2c)   
  [Gestion des ressources d’une application (.NET)](../ide/managing-application-resources-dotnet.md)   
  [Gestion des paramètres d’une application (.NET)](../ide/managing-application-settings-dotnet.md)

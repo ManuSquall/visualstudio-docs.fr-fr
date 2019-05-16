@@ -11,12 +11,12 @@ ms.assetid: 0ce7c21d-0d3f-47fe-a0bb-eed506e32609
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 30c941fd4f3c281dfe363d284a559bafe055451c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 5e92e965f0efe531f1618be509d0a7c9655c573d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59001642"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65682540"
 ---
 # <a name="authoring-a-windows-installer-package"></a>Création d’un package Windows Installer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Les lecteurs de données du modèle de programme d’installation de Windows. Au
   
 - Intégrer le VSPackage dans [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] en appelant **devenv.exe /setup** (à l’aide de la table CustomAction).  
   
-  Pour plus d’informations, consultez [programme d’installation de Windows](http://msdn.microsoft.com/library/cc185688\(VS.85\).aspx).  
+  Pour plus d’informations, consultez [programme d’installation de Windows](https://msdn.microsoft.com/library/cc185688\(VS.85\).aspx).  
   
 ## <a name="setup-tools"></a>Outils d’installation  
  Une variété d’outils de d’installation tiers fournissent un environnement de développement pour les packages de programme d’installation de Windows. Deux outils gratuits sont les suivantes :  

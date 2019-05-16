@@ -25,12 +25,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 38239bd431f3e66e1a694361f3727c843fbf29d3
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 0459168da627b8e67ad669486b70eb7758118d92
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62558461"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65688195"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>Utilisation de datasets dans des applications multiniveaux
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Applications de données multicouches * sont des applications centrées sur les 
  [Procédure pas à pas : Création d’une application de données multiniveaux](../data-tools/walkthrough-creating-an-n-tier-data-application.md)  
  Fournit des instructions pas à pas pour créer un dataset typé et diviser le code du TableAdapter et du dataset en plusieurs projets.  
   
- [Procédure pas à pas : Ajout d’une Validation à une Application de données multicouches](http://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
+ [Procédure pas à pas : Ajout d’une Validation à une Application de données multicouches](https://msdn.microsoft.com/library/b35d072c-31f0-49ba-a225-69177592c265)  
  Fournit des instructions détaillées pour ajouter une validation à l’application qui a été créée dans la procédure d’application de données multicouche.  
   
 ## <a name="reference"></a>Référence  
@@ -71,4 +71,4 @@ Applications de données multicouches * sont des applications centrées sur les 
 - [Mise à jour hiérarchique](../data-tools/hierarchical-update.md)   
 - [Outils de dataset dans Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)   
 - [Accès aux données dans Visual Studio](../data-tools/accessing-data-in-visual-studio.md)   
-- [Applications multicouches et distantes avec LINQ to SQL](http://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)
+- [Applications multicouches et distantes avec LINQ to SQL](https://msdn.microsoft.com/library/854a1cdd-53cb-45f5-83ca-63962a9b3598)

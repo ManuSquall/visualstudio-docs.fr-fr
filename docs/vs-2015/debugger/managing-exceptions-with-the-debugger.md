@@ -33,12 +33,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6e50f19c4889e5f15c7dc3d458d1347912ecbc1d
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: be15b683a6e173d813ea13eaa0cc400a40e68206
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63439178"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65690505"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Gestion des exceptions avec le débogueur
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -186,5 +186,5 @@ public class GenericException<T> : Exception
  [Guide pratique pour Examiner du Code système après une Exception](../debugger/how-to-examine-system-code-after-an-exception.md)   
  [Guide pratique pour utiliser les vérifications natives à l’exécution](../debugger/how-to-use-native-run-time-checks.md)   
  [Utilisation d’exécution des vérifications sans la bibliothèque Runtime C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)   
- [Assistant Exception](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
+ [Assistant Exception](https://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb)   
  [Principes de base du débogueur](../debugger/debugger-basics.md)
