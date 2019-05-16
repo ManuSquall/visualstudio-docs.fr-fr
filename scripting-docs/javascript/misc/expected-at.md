@@ -22,11 +22,11 @@ ms.lasthandoff: 04/23/2019
 ms.locfileid: "62935248"
 ---
 # <a name="expected-"></a>Attendu '\@'
-Vous avez tenté de créer une variable qui doit être utilisé avec les instructions de compilation conditionnelle à l’aide de la `@set` instruction, mais ne pas placer une arobase «**@**» avant le nom de variable.  
+Vous avez tenté de créer une variable qui doit être utilisé avec les instructions de compilation conditionnelle à l’aide de la `@set` instruction, mais ne pas placer une arobase « **@** » avant le nom de variable.  
   
 ### <a name="to-correct-this-error"></a>Pour corriger cette erreur  
   
-- Ajouter un signe «**@**« juste avant le nom de variable. Exemple :  
+- Ajouter un signe « **@** « juste avant le nom de variable. Exemple :  
   
     ```JavaScript  
     @set @myvar = 1  
