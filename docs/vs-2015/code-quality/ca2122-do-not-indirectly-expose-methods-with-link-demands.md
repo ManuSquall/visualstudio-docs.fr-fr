@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 637fa666dbaba539b39fb3537df49fbd12baef3a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e0b173378194c099b2014093104f814f3454843d
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58939175"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65687262"
 ---
 # <a name="ca2122-do-not-indirectly-expose-methods-with-link-demands"></a>CA2122 : N'exposez pas indirectement des méthodes avec des demandes de liaison
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,13 +33,13 @@ ms.locfileid: "58939175"
 |Modification avec rupture|Sans rupture|
 
 ## <a name="cause"></a>Cause
- Un membre public ou protégé a un [demandes de liaison](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) et est appelée par un membre qui n’effectue pas les vérifications de sécurité.
+ Un membre public ou protégé a un [demandes de liaison](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) et est appelée par un membre qui n’effectue pas les vérifications de sécurité.
 
 ## <a name="rule-description"></a>Description de la règle
  Une demande de liaison vérifie uniquement les autorisations de l’appelant immédiat. Si un membre `X` n’effectue aucune des demandes de sécurité de ses appelants et appelle un code protégé par une demande de liaison, un appelant sans l’autorisation nécessaire peut utiliser `X` pour accéder au membre protégé.
 
 ## <a name="how-to-fix-violations"></a>Comment corriger les violations
- Ajouter une sécurité [données et modélisation](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) ou demande de liaison au membre afin qu’il ne fournit plus accès non sécurisé au membre protégé par demande de liaison.
+ Ajouter une sécurité [données et modélisation](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6) ou demande de liaison au membre afin qu’il ne fournit plus accès non sécurisé au membre protégé par demande de liaison.
 
 ## <a name="when-to-suppress-warnings"></a>Quand supprimer les avertissements
  Pour supprimer sans risque un avertissement de cette règle, il se peut que vous devez vous assurer que votre code n’accorde pas ses appelants accès à des opérations ou des ressources qui peuvent être utilisées dans une action destructrice.
@@ -58,4 +58,4 @@ ms.locfileid: "58939175"
 
  **Valeur de membre : seattle.corp.contoso.com**
 ## <a name="see-also"></a>Voir aussi
- [Instructions de codage sécurisé](http://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [demandes de liaison](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [données et modélisation](http://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)
+ [Instructions de codage sécurisé](https://msdn.microsoft.com/library/4f882d94-262b-4494-b0a6-ba9ba1f5f177) [demandes de liaison](https://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) [données et modélisation](https://msdn.microsoft.com/library/8c37635d-e2c1-4b64-a258-61d9e87405e6)

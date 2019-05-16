@@ -18,21 +18,21 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cdf7c5fe724ff4b043ca304eee3e5e0f31b0dd85
-ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
-ms.translationtype: HT
+ms.openlocfilehash: 267a04e0d717bde311423aae7f35fba07ca6f39b
+ms.sourcegitcommit: 08fc78516f1107b83f46e2401888df4868bb1e40
+ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "63437708"
+ms.lasthandoff: 05/15/2019
+ms.locfileid: "65684036"
 ---
 # <a name="using-the-tasks-window"></a>Utilisation de la fenêtre Tâches
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-La fenêtre **Tâches** ressemble à la fenêtre **Threads**, hormis le fait qu'elle comporte des informations sur les objets <xref:System.Threading.Tasks.Task?displayProperty=fullName> , [task_handle](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7) ou [WinJS.Promise](http://msdn.microsoft.com/library/windows/apps/br211867.aspx), et non pas sur chaque thread. Comme les threads, les tâches représentent des opérations asynchrones qui peuvent s'exécuter simultanément. Toutefois, plusieurs tâches peuvent s'exécuter sur le même thread. Consultez [programmation asynchrone dans JavaScript (applications du Windows Store)](http://msdn.microsoft.com/library/windows/apps/hh700330.aspx) pour plus d’informations.  
+La fenêtre **Tâches** ressemble à la fenêtre **Threads**, hormis le fait qu'elle comporte des informations sur les objets <xref:System.Threading.Tasks.Task?displayProperty=fullName> , [task_handle](https://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7) ou [WinJS.Promise](https://msdn.microsoft.com/library/windows/apps/br211867.aspx), et non pas sur chaque thread. Comme les threads, les tâches représentent des opérations asynchrones qui peuvent s'exécuter simultanément. Toutefois, plusieurs tâches peuvent s'exécuter sur le même thread. Consultez [programmation asynchrone dans JavaScript (applications du Windows Store)](https://msdn.microsoft.com/library/windows/apps/hh700330.aspx) pour plus d’informations.  
   
- Le code managé vous permet d’utiliser la fenêtre **Tâches** lorsque vous travaillez avec des objets <xref:System.Threading.Tasks.Task?displayProperty=fullName> ou avec les mots clés **await** et **async** (**Await** et **Asynchrone** en Visual Basic). Pour plus d’informations sur les tâches en code managé, consultez [à la programmation parallèle](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d).  
+ Le code managé vous permet d’utiliser la fenêtre **Tâches** lorsque vous travaillez avec des objets <xref:System.Threading.Tasks.Task?displayProperty=fullName> ou avec les mots clés **await** et **async** (**Await** et **Asynchrone** en Visual Basic). Pour plus d’informations sur les tâches en code managé, consultez [à la programmation parallèle](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d).  
   
- En code natif, vous pouvez utiliser la fenêtre **Tâches** lorsque vous travaillez avec des [groupes de tâches](http://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077), des [algorithmes parallèles](http://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473), des [agents asynchrones](http://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a) et des [tâches légères](http://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90). Pour plus d’informations sur les tâches en code natif, consultez [Runtime d’accès concurrentiel](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c).  
+ En code natif, vous pouvez utiliser la fenêtre **Tâches** lorsque vous travaillez avec des [groupes de tâches](https://msdn.microsoft.com/library/42f05ac3-2098-494a-ba84-737fcdcad077), des [algorithmes parallèles](https://msdn.microsoft.com/library/045dca7b-4d73-4558-a44c-383b88a28473), des [agents asynchrones](https://msdn.microsoft.com/library/6cf6ccc6-87f1-4e14-af15-ea8ba58fef1a) et des [tâches légères](https://msdn.microsoft.com/library/9aba278c-e0c9-4ede-b7c6-fedf7a365d90). Pour plus d’informations sur les tâches en code natif, consultez [Runtime d’accès concurrentiel](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c).  
   
  En JavaScript, vous pouvez utiliser la fenêtre Tâches lorsque vous utilisez le code .then.  
   
@@ -51,7 +51,7 @@ La fenêtre **Tâches** ressemble à la fenêtre **Threads**, hormis le fait qu'
 |**Indicateurs**|Affiche les tâches avec indicateur et vous permet d’ajouter un indicateur à une tâche ou d’en supprimer un.|  
 |**Icônes**|La flèche jaune indique la tâche actuelle. La tâche actuelle est la tâche supérieure du thread actuel.<br /><br /> Une flèche blanche indique la tâche d’arrêt, autrement dit, celle qui était actuelle lorsque le débogueur a été appelé.<br /><br /> L'icône de pause indique une tâche gelée par l'utilisateur. Vous pouvez geler et libérer une tâche en cliquant dessus avec le bouton droit dans la liste.|  
 |**ID**|Numéro fourni par le système pour la tâche. En code natif, il s’agit de l’adresse de la tâche.|  
-|**État**|État actuel (planifié, actif, bloqué, en attente ou terminé) de la tâche. Une tâche planifiée est une tâche qui n’a pas encore été exécutée et, par conséquent, qui de possède pas encore une pile d’appels, un thread assigné ou des informations connexes.<br /><br /> Une tâche active est une tâche qui était en train d'exécuter du code avant de s'arrêter dans le débogueur.<br /><br /> Une tâche en attente est une tâche bloquée qui attend le signal d'un événement, la libération d'un verrouillage ou la fin d'une autre tâche.<br /><br /> Une tâche bloquée est une tâche en attente dont le thread est bloqué par un autre thread.<br /><br /> Placez le curseur sur le **état** cellule d’une tâche bloquée ou en attente voir plus d’informations sur le bloc. **Avertissement :**  La fenêtre **Tâches** signale les interblocages uniquement pour les tâches bloquées utilisant une primitive de synchronisation prise en charge par le parcours du type d’attente (WCT). Par exemple, pour un interblocage <xref:System.Threading.Tasks.Task> objet, qui utilise le WCT, le débogueur signale **attente bloquée**. Pour une tâche bloquée gérée par le runtime d’accès concurrentiel qui n’utilise pas Wait Chain Traversal, le débogueur signale **En attente**. Pour plus d'informations sur WCT, consultez [Wait Chain Traversal](http://msdn.microsoft.com/library/ms681622\(VS.85\).aspx) (page éventuellement en anglais).|  
+|**État**|État actuel (planifié, actif, bloqué, en attente ou terminé) de la tâche. Une tâche planifiée est une tâche qui n’a pas encore été exécutée et, par conséquent, qui de possède pas encore une pile d’appels, un thread assigné ou des informations connexes.<br /><br /> Une tâche active est une tâche qui était en train d'exécuter du code avant de s'arrêter dans le débogueur.<br /><br /> Une tâche en attente est une tâche bloquée qui attend le signal d'un événement, la libération d'un verrouillage ou la fin d'une autre tâche.<br /><br /> Une tâche bloquée est une tâche en attente dont le thread est bloqué par un autre thread.<br /><br /> Placez le curseur sur le **état** cellule d’une tâche bloquée ou en attente voir plus d’informations sur le bloc. **Avertissement :**  La fenêtre **Tâches** signale les interblocages uniquement pour les tâches bloquées utilisant une primitive de synchronisation prise en charge par le parcours du type d’attente (WCT). Par exemple, pour un interblocage <xref:System.Threading.Tasks.Task> objet, qui utilise le WCT, le débogueur signale **attente bloquée**. Pour une tâche bloquée gérée par le runtime d’accès concurrentiel qui n’utilise pas Wait Chain Traversal, le débogueur signale **En attente**. Pour plus d'informations sur WCT, consultez [Wait Chain Traversal](https://msdn.microsoft.com/library/ms681622\(VS.85\).aspx) (page éventuellement en anglais).|  
 |**Heure de début**|Heure à laquelle la tâche est devenue active.|  
 |**Durée**|Nombre de secondes durant lesquelles la tâche a été active.|  
 |**Heure d'achèvement**|Heure à laquelle la tâche s’est terminée.|  
@@ -61,7 +61,7 @@ La fenêtre **Tâches** ressemble à la fenêtre **Threads**, hormis le fait qu'
 |**Assignation de thread**|ID et nom du thread sur lequel la tâche s'exécute.|  
 |**État de retour**|État de la tâche lorsqu'elle est terminée. Les valeurs de retour d’état sont **réussite**, **Cancelled**, et **erreur**.|  
 |**AppDomain**|Pour du code managé, domaine d’application dans lequel la tâche s’exécute.|  
-|**task_group**|Pour du code natif, adresse de l’objet [task_group](http://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7) qui a planifié la tâche. Pour les agents asynchrones et les tâches légères, cette colonne a la valeur 0.|  
+|**task_group**|Pour du code natif, adresse de l’objet [task_group](https://msdn.microsoft.com/library/b4af5b28-227d-4488-8194-0a0d039173b7) qui a planifié la tâche. Pour les agents asynchrones et les tâches légères, cette colonne a la valeur 0.|  
 |Process|ID du processus que la tâche exécute.|  
 |État asynchrone|En matière de code managé, état de la tâche. Par défaut, cette colonne est masquée. Pour afficher cette colonne, ouvrez le menu contextuel pour l'une des en-têtes de colonnes. Sélectionnez **Colonnes**, **AsyncState**.|  
   
@@ -95,7 +95,7 @@ La fenêtre **Tâches** ressemble à la fenêtre **Threads**, hormis le fait qu'
 ## <a name="see-also"></a>Voir aussi  
  [Principes de base du débogueur](../debugger/debugger-basics.md)   
  [Débogage du code managé](../debugger/debugging-managed-code.md)   
- [Programmation parallèle](http://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
- [Runtime d’accès concurrentiel](http://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
+ [Programmation parallèle](https://msdn.microsoft.com/library/4d83c690-ad2d-489e-a2e0-b85b898a672d)   
+ [Runtime d’accès concurrentiel](https://msdn.microsoft.com/library/874bc58f-8dce-483e-a3a1-4dcc9e52ed2c)   
  [Utilisation de la fenêtre Piles parallèles](../debugger/using-the-parallel-stacks-window.md)   
  [Procédure pas à pas : Débogage d'une application parallèle](../debugger/walkthrough-debugging-a-parallel-application.md)
