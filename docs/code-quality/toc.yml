@@ -103,12 +103,10 @@
           href: using-rule-sets-to-group-code-analysis-rules.md
         - name: Ensembles de règles pour les packages de l’analyseur
           href: analyzer-rule-sets.md
-        - name: Ensembles de règles pour le code managé
-          items:
-            - name: Ensembles de règles pour le code managé
-              href: how-to-configure-code-analysis-for-a-managed-code-project.md
-            - name: Configurer l’analyse du code pour une application web ASP.NET
-              href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
+        - name: Configurer des ensembles de règles pour l’analyse de code statique
+          href: how-to-configure-code-analysis-for-a-managed-code-project.md
+        - name: Configurer l’analyse du code pour une application web ASP.NET
+          href: how-to-configure-code-analysis-for-an-aspnet-web-application.md
         - name: Ensembles de règles pour le code C++
           href: using-rule-sets-to-specify-the-cpp-rules-to-run.md
         - name: Créer un ensemble de règles personnalisé

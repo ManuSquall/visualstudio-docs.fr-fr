@@ -80,8 +80,6 @@
           href: unit-tests-for-generic-methods.md
         - name: Configurer des tests unitaires pour cibler une version antérieure du .NET Framework
           href: how-to-configure-unit-tests-to-target-an-earlier-version-of-the-dotnet-framework.md
-        - name: Exemple de projet pour la création de tests unitaires
-          href: sample-project-for-creating-unit-tests.md
     - name: Tests unitaires pour code C/C++
       items:
         - name: Écrire des tests unitaires pour du code C/C++
@@ -119,6 +117,7 @@
 - name: Live Unit Testing
   items:
     - name: Introduction
+      displayName: Live Unit Testing introduction
       href: live-unit-testing-intro.md
     - name: Nouveautés de Live Unit Testing
       href: live-unit-testing-whats-new.md
@@ -147,6 +146,7 @@
             - name: Modèles de combinaison de tests
               items:
                 - name: Vue d'ensemble
+                  displayName: Test mix models
                   href: emulate-real-world-usage-of-a-web-site-in-a-load-test-using-test-mix-models.md
                 - name: Modifier des modèles de combinaison de tests
                   href: edit-test-mix-models-to-specify-the-probability-of-a-virtual-user-running-a-test.md
@@ -196,8 +196,6 @@
               items:
                 - name: Modifier les paramètres de journalisation
                   href: modify-load-test-logging-settings.md
-                - name: Taille de journal maximale
-                  href: how-to-specify-the-maximum-size-for-the-log-file.md
                 - name: Échecs de tests
                   href: how-to-specify-if-test-failures-are-saved-to-test-logs.md
             - name: Stockage des détails de minuterie
@@ -227,6 +225,7 @@
     - name: Contrôleurs de test et agents de test
       items:
         - name: Vue d'ensemble
+          displayName: Test controllers and test agents
           href: configure-test-agents-and-controllers-for-load-tests.md
         - name: Spécifications
           href: test-controller-and-test-agent-requirements-for-load-testing.md
@@ -348,16 +347,18 @@
               href: how-to-delete-load-test-results-from-a-repository.md
         - name: Créer un complément pour la visionneuse des résultats
           href: how-to-create-an-add-in-for-the-web-performance-test-results-viewer.md
-- name: Automatisation des tests d’interface utilisateur
+- name: Automatisation de l’interface utilisateur avec le test d’interface utilisateur codé
   items:
     - name: Vue d'ensemble
+      displayName: Coded UI test
       href: use-ui-automation-to-test-your-code.md
     - name: "Procédure pas à pas\_: Créer, modifier et gérer un test codé de l’interface utilisateur"
       href: walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md
     - name: Tester des applications UWP avec des tests codés de l’interface utilisateur
       href: test-uwp-app-with-coded-ui-test.md
-    - name: Définir une propriété Automation unique pour les contrôles UWP
-      href: set-a-unique-automation-property-for-windows-store-controls-for-testing.md
+      items:
+        - name: Définir une propriété Automation unique pour les contrôles UWP
+          href: set-a-unique-automation-property-for-windows-store-controls-for-testing.md
     - name: Utiliser des contrôles HTML5 dans des tests codés de l’interface utilisateur
       href: using-html5-controls-in-coded-ui-tests.md
     - name: Créer un test codé de l’interface utilisateur piloté par les données
